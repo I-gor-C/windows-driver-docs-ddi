@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 68ac845e-9b2f-4e35-8e61-83c799b3cd59
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndiscurrentprocessorindex, NdisCurrentProcessorIndex function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_c19efe7e-be4a-4093-bd50-80d3c0588dc6.xml, ndis/NdisCurrentProcessorIndex, NdisCurrentProcessorIndex
+ms.keywords : ndis_processor_group_ref_c19efe7e-be4a-4093-bd50-80d3c0588dc6.xml, NdisCurrentProcessorIndex, netvista.ndiscurrentprocessorindex, ndis/NdisCurrentProcessorIndex, NdisCurrentProcessorIndex function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,20 +69,17 @@ NDIS drivers call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | ">= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564915">NDIS_CURRENT_PROCESSOR_NUMBER</a>
+
+<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
 
  
 

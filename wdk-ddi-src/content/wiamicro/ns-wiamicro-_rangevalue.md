@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 18322d1f-9fc9-43f0-925e-616731845792
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MicroDrv_8569166c-7a4e-47eb-beed-57c715102258.xml, wiamicro/RANGEVALUE, RANGEVALUE structure [Imaging Devices], _RANGEVALUE, PRANGEVALUE, RANGEVALUE, PRANGEVALUE structure pointer [Imaging Devices], *PRANGEVALUE, wiamicro/PRANGEVALUE, image.rangevalue
+ms.keywords : image.rangevalue, PRANGEVALUE structure pointer [Imaging Devices], *PRANGEVALUE, RANGEVALUE, wiamicro/RANGEVALUE, wiamicro/PRANGEVALUE, MicroDrv_8569166c-7a4e-47eb-beed-57c715102258.xml, PRANGEVALUE, _RANGEVALUE, RANGEVALUE structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,5 @@ Specifies the step value for a parameter.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamicro.h (include Wiamicro.h) |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 78c7bdea-cba5-40df-b9d7-09c7d98b0403
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetValue method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::SetValue, IDebugRegisters_f704c31f-5062-47d7-9f44-35bc85e0d0aa.xml, SetValue, debugger.setvalue, IDebugRegisters2 interface [Windows Debugging], SetValue method, IDebugRegisters2::SetValue, IDebugRegisters interface [Windows Debugging], SetValue method, IDebugRegisters::SetValue, dbgeng/IDebugRegisters2::SetValue, SetValue method [Windows Debugging], IDebugRegisters2, SetValue method [Windows Debugging], IDebugRegisters2 interface
+ms.keywords : dbgeng/IDebugRegisters::SetValue, IDebugRegisters interface [Windows Debugging], SetValue method, IDebugRegisters2 interface [Windows Debugging], SetValue method, SetValue, SetValue method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters2::SetValue, IDebugRegisters2::SetValue, SetValue method [Windows Debugging], SetValue method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2, IDebugRegisters::SetValue, debugger.setvalue, IDebugRegisters_f704c31f-5062-47d7-9f44-35bc85e0d0aa.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -118,24 +118,19 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556884">SetValues2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556883">SetValues</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556883">SetValues</a>
+<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ca46be9e-31f6-4118-8958-4eb2c8450e8c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlfreeansistring, RtlFreeAnsiString, RtlFreeAnsiString routine [Kernel-Mode Driver Architecture], k109_0213924f-caca-4411-b5cc-d93282f01948.xml, wdm/RtlFreeAnsiString
+ms.keywords : wdm/RtlFreeAnsiString, kernel.rtlfreeansistring, RtlFreeAnsiString routine [Kernel-Mode Driver Architecture], RtlFreeAnsiString, k109_0213924f-caca-4411-b5cc-d93282f01948.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,12 @@ This routine does not release the Unicode string buffer passed to <b>RtlUnicodeS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

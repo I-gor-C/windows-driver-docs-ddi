@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F6C2D044-E64B-4DA5-A168-20C99F325451
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED, WDI_P2P_CHANNEL_INDICATE_REASON, WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED, WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION, WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED, netvista.wdi_p2p_channel_indicate_reason, _WDI_P2P_CHANNEL_INDICATE_REASON, WDI_P2P_CHANNEL_INDICATE_REASON enumeration [Network Drivers Starting with Windows Vista], wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION
+ms.keywords : netvista.wdi_p2p_channel_indicate_reason, WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION, WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION, WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON, WDI_P2P_CHANNEL_INDICATE_REASON enumeration [Network Drivers Starting with Windows Vista], WDI_P2P_CHANNEL_INDICATE_REASON, _WDI_P2P_CHANNEL_INDICATE_REASON
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,5 @@ typedef enum _WDI_P2P_CHANNEL_INDICATE_REASON {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

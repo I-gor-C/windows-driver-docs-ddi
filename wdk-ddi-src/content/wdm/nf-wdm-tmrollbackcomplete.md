@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 626bae87-8e5c-4d2a-8942-bddb2f6baa6b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.tmrollbackcomplete, TmRollbackComplete routine [Kernel-Mode Driver Architecture], TmRollbackComplete, ktm_ref_57ef03c4-5d49-4871-a1ef-c6083c9680a8.xml, wdm/TmRollbackComplete
+ms.keywords : wdm/TmRollbackComplete, TmRollbackComplete routine [Kernel-Mode Driver Architecture], ktm_ref_57ef03c4-5d49-4871-a1ef-c6083c9680a8.xml, TmRollbackComplete, kernel.tmrollbackcomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,28 +95,26 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
 
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
+<a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
 
 <a href="..\wdm\nf-wdm-zwrollbackcomplete.md">ZwRollbackComplete</a>
 
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
  
 

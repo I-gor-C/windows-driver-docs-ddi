@@ -78,14 +78,8 @@ The bus driver calls the SD card driver's callback routine whenever the card ind
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntddsd.h (include Ntddsd.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 2E65BDF2-9539-402B-AF19-8CBC84F9C018
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/IPrintSchemaTicket::GetFeature, print.iprintschematicket_getfeature, GetFeature method [Print Devices], IPrintSchemaTicket::GetFeature, GetFeature method [Print Devices], IPrintSchemaTicket interface, IPrintSchemaTicket, GetFeature, IPrintSchemaTicket interface [Print Devices], GetFeature method
+ms.keywords : GetFeature, IPrintSchemaTicket interface [Print Devices], GetFeature method, GetFeature method [Print Devices], printerextension/IPrintSchemaTicket::GetFeature, print.iprintschematicket_getfeature, IPrintSchemaTicket, IPrintSchemaTicket::GetFeature, GetFeature method [Print Devices], IPrintSchemaTicket interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -84,26 +84,22 @@ So if the <a href="..\printerextension\nn-printerextension-iprintschematicket.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/AC6434F5-0892-4426-98BB-BC02AD17917B">IPrintSchemaCapabilities::GetFeature</a>
+<a href="https://msdn.microsoft.com/053BFE59-FDC6-42F3-BE14-CE63D5637D62">IPrintSchemaCapabilities::GetFeatureByKeyName</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 
-<a href="https://msdn.microsoft.com/053BFE59-FDC6-42F3-BE14-CE63D5637D62">IPrintSchemaCapabilities::GetFeatureByKeyName</a>
+<a href="..\printerextension\nn-printerextension-iprintschemafeature.md">IPrintSchemaFeature</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
 
-<a href="..\printerextension\nn-printerextension-iprintschemafeature.md">IPrintSchemaFeature</a>
+<a href="https://msdn.microsoft.com/AC6434F5-0892-4426-98BB-BC02AD17917B">IPrintSchemaCapabilities::GetFeature</a>
 
  
 

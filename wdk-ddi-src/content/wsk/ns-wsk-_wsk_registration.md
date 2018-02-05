@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 770c53bb-5e11-4bd4-a175-6ea6ae0bb782
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WSK_REGISTRATION, wsk/WSK_REGISTRATION, wsk/PWSK_REGISTRATION, *PWSK_REGISTRATION, WSK_REGISTRATION, PWSK_REGISTRATION, wskref_1ad5b68d-5a86-476c-aa04-0f11db552a01.xml, netvista.wsk_registration, WSK_REGISTRATION structure [Network Drivers Starting with Windows Vista], PWSK_REGISTRATION structure pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : PWSK_REGISTRATION, WSK_REGISTRATION, PWSK_REGISTRATION structure pointer [Network Drivers Starting with Windows Vista], wsk/WSK_REGISTRATION, wsk/PWSK_REGISTRATION, *PWSK_REGISTRATION, netvista.wsk_registration, _WSK_REGISTRATION, WSK_REGISTRATION structure [Network Drivers Starting with Windows Vista], wskref_1ad5b68d-5a86-476c-aa04-0f11db552a01.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,13 +72,11 @@ This structure is provided by a client application to register or unregister a W
     not update any of the members of this structure.
 
 For more information about attaching a WSK application to the WSK subsystem, see 
-    <mshelp:link keywords="netvista.registering_a_winsock_kernel_application" tabindex="0">Registering a Winsock Kernel
-    Application</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock Kernel
+    Application</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |

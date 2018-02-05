@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1f48a08f-138c-44b4-b13f-efa9b448ce4f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices], DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, display.dxgk_multiplane_overlay_attributes, _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES
+ms.keywords : display.dxgk_multiplane_overlay_attributes, _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -140,28 +140,26 @@ Specifies YUV range and conversion info given as a value from the <a href="..\d3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stretch_quality.md">DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_ycbcr_flags.md">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_flags.md">DXGK_MULTIPLANE_OVERLAY_FLAGS</a>
-
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stereo_format.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
-
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_video_frame_format.md">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_blend.md">DXGK_MULTIPLANE_OVERLAY_BLEND</a>
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
 
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stereo_flip_mode.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_blend.md">DXGK_MULTIPLANE_OVERLAY_BLEND</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_stereo_format.md">DXGK_MULTIPLANE_OVERLAY_STEREO_FORMAT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_ycbcr_flags.md">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
+
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_multiplane_overlay_video_frame_format.md">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_flags.md">DXGK_MULTIPLANE_OVERLAY_FLAGS</a>
 
  
 

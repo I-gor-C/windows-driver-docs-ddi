@@ -69,9 +69,7 @@ The information the IEC-61883 protocol driver returns in the I/O Status Block is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | 61883.h (include 61883.h) |
-| **IRQL** |  |
 
 ## See Also
 

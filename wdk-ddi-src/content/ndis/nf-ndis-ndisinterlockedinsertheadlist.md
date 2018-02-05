@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c6221ce9-682c-453b-b036-f4219c9540da
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInterlockedInsertHeadList macro [Network Drivers Starting with Windows Vista], NdisInterlockedInsertHeadList, ndis_interlocked_ref_14cc728a-07b7-471f-a222-4810d9d79d5a.xml, netvista.ndisinterlockedinsertheadlist, ndis/NdisInterlockedInsertHeadList
+ms.keywords : ndis/NdisInterlockedInsertHeadList, ndis_interlocked_ref_14cc728a-07b7-471f-a222-4810d9d79d5a.xml, NdisInterlockedInsertHeadList macro [Network Drivers Starting with Windows Vista], NdisInterlockedInsertHeadList, netvista.ndisinterlockedinsertheadlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -58,15 +58,15 @@ PLIST_ENTRY NdisInterlockedInsertHeadList(
 
 `_ListHead`
 
-TBD
+A pointer to the head of the doubly linked list into which an entry is to be inserted.
 
 `_ListEntry`
 
-TBD
+A pointer to the entry to be inserted at the head of the list.
 
 `_SpinLock`
 
-TBD
+A pointer to a caller-supplied spin lock, used to synchronize access to the list.
 
 
 ## Return Value
@@ -95,8 +95,8 @@ The caller-supplied spin lock prevents any other function from accessing the dri
 
 Most NDIS drivers process packets in FIFO order, so any driver that uses an interlocked queue tends to
     cal thel 
-    <mshelp:link keywords="netvista.ndisinterlockedinserttaillist" tabindex="0"><b>
-    NdisInterlockedInsertTailList</b></mshelp:link> function far more frequently than 
+    <a href="..\ndis\nf-ndis-ndisinterlockedinserttaillist.md">
+    NdisInterlockedInsertTailList</a> function far more frequently than 
     <b>NdisInterlockedInsertHeadList</b>. Such a driver usually calls 
     <b>NdisInterlockedInsertHeadList</b> only to requeue a packet for a retry operation.
 
@@ -110,28 +110,25 @@ If
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisinterlockedinserttaillist.md">
+   NdisInterlockedInsertTailList</a>
 
-<mshelp:link keywords="netvista.ndisinterlockedinserttaillist" tabindex="0"><b>
-   NdisInterlockedInsertTailList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinterlockedremoveheadlist.md">
+   NdisInterlockedRemoveHeadList</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
 
-<a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a>
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 
-<mshelp:link keywords="netvista.ndisinterlockedremoveheadlist" tabindex="0"><b>
-   NdisInterlockedRemoveHeadList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b8eb6321-928f-4366-9553-c75900fa1ac6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbapiwmi/SM_RemovePort_IN, SM_RemovePort_IN, _SM_RemovePort_IN, *PSM_RemovePort_IN, structs-Fibre_0290cc86-0661-47ae-89db-3a3756c5d681.xml, hbapiwmi/PSM_RemovePort_IN, SM_RemovePort_IN structure [Storage Devices], PSM_RemovePort_IN, PSM_RemovePort_IN structure pointer [Storage Devices], storage.sm_removeport_in
+ms.keywords : hbapiwmi/SM_RemovePort_IN, SM_RemovePort_IN structure [Storage Devices], structs-Fibre_0290cc86-0661-47ae-89db-3a3756c5d681.xml, *PSM_RemovePort_IN, PSM_RemovePort_IN, SM_RemovePort_IN, PSM_RemovePort_IN structure pointer [Storage Devices], storage.sm_removeport_in, _SM_RemovePort_IN, hbapiwmi/PSM_RemovePort_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,7 +66,4 @@ The WMI tool suite generates a declaration of the SM_RemovePort_IN structure in 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 429A5DF5-46A6-4A41-A77B-4D5743C841DC
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SpoolerFindFirstPrinterChangeNotification, winsplp/SpoolerFindFirstPrinterChangeNotification, SpoolerFindFirstPrinterChangeNotification function [Print Devices], print.spoolerfindfirstprinterchangenotification
+ms.keywords : winsplp/SpoolerFindFirstPrinterChangeNotification, print.spoolerfindfirstprinterchangenotification, SpoolerFindFirstPrinterChangeNotification, SpoolerFindFirstPrinterChangeNotification function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,11 +101,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

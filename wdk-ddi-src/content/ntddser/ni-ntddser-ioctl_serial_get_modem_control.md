@@ -77,9 +77,7 @@ For an example layout of a modem control register, see the definition of the MCR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddser.h (include Ntddser.h) |
-| **IRQL** |  |
 
 ## See Also
 

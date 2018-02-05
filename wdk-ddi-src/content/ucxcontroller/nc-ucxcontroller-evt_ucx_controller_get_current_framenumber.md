@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
+req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
 req.product : Windows 10 or later.
 ---
 
@@ -77,14 +77,11 @@ The UCX client driver registers its <i>EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

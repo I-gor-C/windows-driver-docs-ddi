@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : D24D8C90-8F65-42BC-8FBC-308ECC4A73C9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_auth_method, wwan/WwanAuthMethodMax, WwanAuthSim, WWAN_AUTH_METHOD enumeration [Network Drivers Starting with Windows Vista], WwanAuthAka, *PWWAN_AUTH_METHOD, WWAN_AUTH_METHOD, wwan/WwanAuthSim, wwan/WwanAuthAka, wwan/WwanAuthAkaPrime, WwanAuthAkaPrime, WwanAuthMethodMax, wwan/WWAN_AUTH_METHOD, _WWAN_AUTH_METHOD
+ms.keywords : WWAN_AUTH_METHOD enumeration [Network Drivers Starting with Windows Vista], _WWAN_AUTH_METHOD, WwanAuthAka, wwan/WwanAuthMethodMax, netvista.wwan_auth_method, *PWWAN_AUTH_METHOD, wwan/WWAN_AUTH_METHOD, wwan/WwanAuthAkaPrime, WwanAuthAkaPrime, WwanAuthMethodMax, WwanAuthSim, WWAN_AUTH_METHOD, wwan/WwanAuthAka, wwan/WwanAuthSim
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -84,16 +84,14 @@ The <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a> an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a>
-
 <a href="..\wwan\ns-wwan-_wwan_auth_response.md">WWAN_AUTH_RESPONSE</a>
+
+<a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a>
 
  
 

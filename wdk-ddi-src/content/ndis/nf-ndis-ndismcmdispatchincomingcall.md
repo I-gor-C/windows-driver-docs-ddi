@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 24102e1f-375e-4bf4-8a43-6527b90c8564
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmDispatchIncomingCall macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmDispatchIncomingCall, NdisMCmDispatchIncomingCall, condis_mcm_ref_1133faf8-d5a6-4800-8738-94b11bc1d51f.xml, netvista.ndismcmdispatchincomingcall
+ms.keywords : netvista.ndismcmdispatchincomingcall, NdisMCmDispatchIncomingCall macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_1133faf8-d5a6-4800-8738-94b11bc1d51f.xml, NdisMCmDispatchIncomingCall, ndis/NdisMCmDispatchIncomingCall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -107,8 +107,8 @@ Activated the VC with
     which, in turn, calls the MCM driver's 
     <i>ProtocolCmIncomingCallComplete</i> function. If the client accepted the call, the MCM driver next calls
     
-    <mshelp:link keywords="netvista.ndismcmdispatchcallconnected" tabindex="0"><b>
-    NdisMCmDispatchCallConnected</b></mshelp:link>. Otherwise, it deactivates (and possibly deletes) the VC it created,
+    <a href="..\ndis\nf-ndis-ndismcmdispatchcallconnected.md">
+    NdisMCmDispatchCallConnected</a>. Otherwise, it deactivates (and possibly deletes) the VC it created,
     after notifying the remote node that the offered call was rejected.
 
 Only connection-oriented miniport drivers that provide integrated call-management support call 
@@ -119,43 +119,41 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDispatchIncomingCall   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDispatchIncomingCall   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDispatchIncomingCall   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDispatchIncomingCall   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
+
 <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclincomingcallcomplete.md">NdisClIncomingCallComplete</a>
-
-<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
-
-<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
-
-<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
-
-<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
+<a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
 
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 
 <a href="..\ndis\nf-ndis-ndismcmdispatchcallconnected.md">NdisMCmDispatchCallConnected</a>
 
+<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+   ProtocolCmIncomingCallComplete</a>
+
+<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
+
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 
-<mshelp:link keywords="netvista.protocolcmincomingcallcomplete" tabindex="0"><i>
-   ProtocolCmIncomingCallComplete</i></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 
-<a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclincomingcallcomplete.md">NdisClIncomingCallComplete</a>
+
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a5f61a83-43db-4ad7-9b18-0cdf574ea546
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdeviceinitialize_setfilter, SetFilter method, IWDFDeviceInitialize interface, IWDFDeviceInitialize::SetFilter, IWDFDeviceInitialize, SetFilter, UMDFDeviceObjectRef_742df830-2e67-4f03-bdfb-77cef5bc21bf.xml, IWDFDeviceInitialize interface, SetFilter method, wdf.iwdfdeviceinitialize_setfilter, wudfddi/IWDFDeviceInitialize::SetFilter, SetFilter method
+ms.keywords : IWDFDeviceInitialize, wudfddi/IWDFDeviceInitialize::SetFilter, IWDFDeviceInitialize interface, SetFilter method, UMDFDeviceObjectRef_742df830-2e67-4f03-bdfb-77cef5bc21bf.xml, SetFilter, IWDFDeviceInitialize::SetFilter, SetFilter method, IWDFDeviceInitialize interface, SetFilter method, wdf.iwdfdeviceinitialize_setfilter, umdf.iwdfdeviceinitialize_setfilter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -70,20 +70,18 @@ A filter driver calls <b>SetFilter</b> to mark itself as a filter.  When you tel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

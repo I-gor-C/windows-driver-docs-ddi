@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F121A7BC-5504-4CF5-8C8A-0568D6C4F77F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.vmbpacketallocate, vmbuskernelmodeclientlibapi/VmbPacketAllocate, VmbPacketAllocate function [Network Drivers Starting with Windows Vista], VmbPacketAllocate
+ms.keywords : vmbuskernelmodeclientlibapi/VmbPacketAllocate, netvista.vmbpacketallocate, VmbPacketAllocate function [Network Drivers Starting with Windows Vista], VmbPacketAllocate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -73,14 +73,12 @@ client should call the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmod
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |
 
 ## See Also
 

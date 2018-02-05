@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -188,11 +188,6 @@ If the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

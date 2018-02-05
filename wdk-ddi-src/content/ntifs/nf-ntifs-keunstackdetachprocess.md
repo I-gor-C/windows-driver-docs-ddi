@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3dd5b8f7-d8f8-4c02-80d1-76d0dbe06cd3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.keunstackdetachprocess, ntifs/KeUnstackDetachProcess, keref_47d45f58-d264-4633-8808-2172646df566.xml, KeUnstackDetachProcess, KeUnstackDetachProcess routine [Installable File System Drivers]
+ms.keywords : ntifs/KeUnstackDetachProcess, ifsk.keunstackdetachprocess, KeUnstackDetachProcess routine [Installable File System Drivers], keref_47d45f58-d264-4633-8808-2172646df566.xml, KeUnstackDetachProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,32 +80,30 @@ For more information about using system threads and managing synchronization wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
 
-<a href="..\ntifs\nf-ntifs-iothreadtoprocess.md">IoThreadToProcess</a>
-
 <a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\ntifs\nf-ntifs-iothreadtoprocess.md">IoThreadToProcess</a>
+
+<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
 
 <a href="..\ntifs\nf-ntifs-kestackattachprocess.md">KeStackAttachProcess</a>
 
-<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
-
 <a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
+
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 
  
 

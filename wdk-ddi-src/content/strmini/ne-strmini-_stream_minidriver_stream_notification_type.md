@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 13D8152C-FE7E-46EB-9C7F-9CA0135A4B76
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, StreamRequestComplete, SignalMultipleStreamEvents, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, StreamNotificationMaximum, strmini/StreamRequestComplete, strmini/STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, strmini/DeleteStreamEvent, DeleteStreamEvent, PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, strmini/ReadyForNextStreamDataRequest, ReadyForNextStreamControlRequest, strmini/SignalStreamEvent, HardwareStarved, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration [Streaming Media Devices], strmini/HardwareStarved, ReadyForNextStreamDataRequest, strmini/PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration pointer [Streaming Media Devices], strmini/SignalMultipleStreamEvents, strmini/ReadyForNextStreamControlRequest, stream.stream_minidriver_stream_notification_type, strmini/StreamNotificationMaximum, SignalStreamEvent, *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE"
+ms.keywords : "_STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, ReadyForNextStreamDataRequest, strmini/PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, strmini/ReadyForNextStreamControlRequest, PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, strmini/StreamRequestComplete, strmini/HardwareStarved, strmini/ReadyForNextStreamDataRequest, strmini/SignalMultipleStreamEvents, PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration pointer [Streaming Media Devices], ReadyForNextStreamControlRequest, SignalMultipleStreamEvents, strmini/STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, StreamNotificationMaximum, *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, SignalStreamEvent, strmini/SignalStreamEvent, strmini/DeleteStreamEvent, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, strmini/StreamNotificationMaximum, HardwareStarved, DeleteStreamEvent, stream.stream_minidriver_stream_notification_type, StreamRequestComplete, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE enumeration [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE
+req.typenames : "*PSTREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE, STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE"
 req.product : Windows 10 or later.
 ---
 
@@ -105,7 +105,4 @@ typedef enum _STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h |

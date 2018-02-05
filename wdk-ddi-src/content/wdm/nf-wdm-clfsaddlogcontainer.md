@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 05ab9817-3f49-4ab5-b35d-1c89f5fe6e44
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsAddLogContainer, wdm/ClfsAddLogContainer, kernel.clfsaddlogcontainer, Clfs_30478f90-41d2-4a83-8291-83b90601dc11.xml, ClfsAddLogContainer routine [Kernel-Mode Driver Architecture]
+ms.keywords : Clfs_30478f90-41d2-4a83-8291-83b90601dc11.xml, wdm/ClfsAddLogContainer, ClfsAddLogContainer, ClfsAddLogContainer routine [Kernel-Mode Driver Architecture], kernel.clfsaddlogcontainer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,14 +103,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

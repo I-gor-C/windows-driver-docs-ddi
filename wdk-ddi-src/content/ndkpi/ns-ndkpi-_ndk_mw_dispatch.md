@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B35BDBBC-C8AB-4837-8637-30BA2E31831C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDK_MW_DISPATCH, _NDK_MW_DISPATCH, netvista.ndk_mw_dispatch, NDK_MW_DISPATCH structure [Network Drivers Starting with Windows Vista], ndkpi/NDK_MW_DISPATCH, ndkpi/PNDK_MW_DISPATCH, PNDK_MW_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], NDK_MW_DISPATCH
+ms.keywords : "_NDK_MW_DISPATCH, NDK_MW_DISPATCH structure [Network Drivers Starting with Windows Vista], NDK_MW_DISPATCH, netvista.ndk_mw_dispatch, PNDK_MW_DISPATCH, PNDK_MW_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], ndkpi/PNDK_MW_DISPATCH, ndkpi/NDK_MW_DISPATCH"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,20 +71,18 @@ The <b>NDK_MW_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-ndkpi-_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_get_remote_token_from_mw.md">NDK_FN_GET_REMOTE_TOKEN_FROM_MW</a>
-
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>
-
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_get_remote_token_from_mw.md">NDK_FN_GET_REMOTE_TOKEN_FROM_MW</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>
 
  
 

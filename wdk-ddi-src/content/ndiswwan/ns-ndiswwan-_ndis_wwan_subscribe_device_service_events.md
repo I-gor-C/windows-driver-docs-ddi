@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 99A772EF-C67C-48B0-A3F9-0B32A14247D6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_subscribe_device_service_events, *PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, _NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, ndiswwan/NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
+ms.keywords : "*PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, netvista.ndis_wwan_subscribe_device_service_events, PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, _NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, ndiswwan/NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -112,9 +112,7 @@ For more information about these members, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

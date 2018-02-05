@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ca891a21-e7ab-4230-bfc4-adfdb413838b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "*PWDFMEMORY_OFFSET, wdfmemory/WDFMEMORY_OFFSET, kmdf.wdfmemory_offset, WDFMEMORY_OFFSET structure, DFMemoryObjectRef_d6ea5bd1-f672-4624-9663-f1e5f70eb8b2.xml, wdf.wdfmemory_offset, PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET, wdfmemory/PWDFMEMORY_OFFSET, _WDFMEMORY_OFFSET, PWDFMEMORY_OFFSET structure pointer"
+ms.keywords : "_WDFMEMORY_OFFSET, *PWDFMEMORY_OFFSET, wdfmemory/WDFMEMORY_OFFSET, wdf.wdfmemory_offset, DFMemoryObjectRef_d6ea5bd1-f672-4624-9663-f1e5f70eb8b2.xml, PWDFMEMORY_OFFSET structure pointer, PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET structure, wdfmemory/PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET, kmdf.wdfmemory_offset"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,6 @@ The <b>WDFMEMORY_OFFSET</b> structure is used as a member of the <a href="..\wdf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfmemory.h (include Wdf.h) |

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 60E2379E-BF42-4290-98AA-5E6E8DE0A922
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LineDisplaySetDescriptorData, pointofservicedriverinterface/LineDisplaySetDescriptorData, _LineDisplaySetDescriptorData, pointofservicedriverinterface/PLineDisplaySetDescriptorData, pos.linedisplaysetdescriptordata, PLineDisplaySetDescriptorData structure pointer, LineDisplaySetDescriptorData structure, PLineDisplaySetDescriptorData
+ms.keywords : pointofservicedriverinterface/PLineDisplaySetDescriptorData, LineDisplaySetDescriptorData structure, pos.linedisplaysetdescriptordata, pointofservicedriverinterface/LineDisplaySetDescriptorData, LineDisplaySetDescriptorData, PLineDisplaySetDescriptorData, PLineDisplaySetDescriptorData structure pointer, _LineDisplaySetDescriptorData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,7 +63,4 @@ typedef struct _LineDisplaySetDescriptorData {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicecommontypes.h) |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 04e3dfba-3313-4575-9956-5b1861b8212a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFUSBref_3323b24f-da0c-4208-8f88-88d7198e805c.xml, IWDFUsbTargetDevice interface, RetrieveDeviceInformation method, RetrieveDeviceInformation method, RetrieveDeviceInformation, IWDFUsbTargetDevice::RetrieveDeviceInformation, RetrieveDeviceInformation method, IWDFUsbTargetDevice interface, wdf.iwdfusbtargetdevice_retrievedeviceinformation, IWDFUsbTargetDevice, wudfusb/IWDFUsbTargetDevice::RetrieveDeviceInformation, umdf.iwdfusbtargetdevice_retrievedeviceinformation
+ms.keywords : RetrieveDeviceInformation method, IWDFUsbTargetDevice interface, RetrieveDeviceInformation method, IWDFUsbTargetDevice::RetrieveDeviceInformation, IWDFUsbTargetDevice interface, RetrieveDeviceInformation method, IWDFUsbTargetDevice, wdf.iwdfusbtargetdevice_retrievedeviceinformation, wudfusb/IWDFUsbTargetDevice::RetrieveDeviceInformation, RetrieveDeviceInformation, umdf.iwdfusbtargetdevice_retrievedeviceinformation, UMDFUSBref_3323b24f-da0c-4208-8f88-88d7198e805c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -126,14 +126,12 @@ The <b>RetrieveDeviceInformation</b> method generates a UMDF request and synchro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

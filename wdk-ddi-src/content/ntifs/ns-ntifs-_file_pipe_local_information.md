@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], FILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, ntifs/PFILE_PIPE_LOCAL_INFORMATION, ntifs/FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers], PFILE_PIPE_LOCAL_INFORMATION, _FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION
+ms.keywords : ntifs/PFILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], FILE_PIPE_LOCAL_INFORMATION, ntifs/FILE_PIPE_LOCAL_INFORMATION, _FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -188,7 +188,5 @@ For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-ee
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating system. Available in Windows 2000 and later versions of the Windows operating system. |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |

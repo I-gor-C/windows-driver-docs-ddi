@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4522a7d0-d297-4668-bb4e-e4ceae18f52a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UsbdPipeTypeIsochronous, _USBD_PIPE_TYPE, usbstrct_a1fda372-f509-4667-a615-b68936b0a42b.xml, UsbdPipeTypeControl, buses.usbd_pipe_type, usb/UsbdPipeTypeControl, UsbdPipeTypeInterrupt, usb/UsbdPipeTypeBulk, usb/UsbdPipeTypeInterrupt, USBD_PIPE_TYPE, usb/UsbdPipeTypeIsochronous, USBD_PIPE_TYPE enumeration [Buses], UsbdPipeTypeBulk, usb/USBD_PIPE_TYPE
+ms.keywords : usb/UsbdPipeTypeControl, buses.usbd_pipe_type, UsbdPipeTypeIsochronous, USBD_PIPE_TYPE enumeration [Buses], UsbdPipeTypeControl, _USBD_PIPE_TYPE, UsbdPipeTypeBulk, usb/UsbdPipeTypeBulk, usb/UsbdPipeTypeInterrupt, usb/USBD_PIPE_TYPE, usbstrct_a1fda372-f509-4667-a615-b68936b0a42b.xml, USBD_PIPE_TYPE, UsbdPipeTypeInterrupt, usb/UsbdPipeTypeIsochronous
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,9 +81,6 @@ typedef enum _USBD_PIPE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
 ## See Also

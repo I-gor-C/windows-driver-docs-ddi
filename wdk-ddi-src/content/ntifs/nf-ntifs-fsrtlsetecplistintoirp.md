@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 370da53a-3c20-4e45-8732-8f08aa2d96ae
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlsetecplistintoirp, FsRtlSetEcpListIntoIrp routine [Installable File System Drivers], fsrtlref_b292fe42-cbfa-430d-abca-528482cecbed.xml, ntifs/FsRtlSetEcpListIntoIrp, FsRtlSetEcpListIntoIrp
+ms.keywords : fsrtlref_b292fe42-cbfa-430d-abca-528482cecbed.xml, FsRtlSetEcpListIntoIrp routine [Installable File System Drivers], ntifs/FsRtlSetEcpListIntoIrp, ifsk.fsrtlsetecplistintoirp, FsRtlSetEcpListIntoIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,14 +114,12 @@ To retrieve an ECP list that is associated with a given IRP_MJ_CREATE operation,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | FsRtlSetEcpListIntoIrp is available starting with Windows Vista. FsRtlSetEcpListIntoIrp is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

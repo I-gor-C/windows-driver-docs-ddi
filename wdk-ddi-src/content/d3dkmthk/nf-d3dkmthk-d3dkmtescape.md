@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 60b105df-2085-40bc-9d95-0f6b317a565e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTEscape, D3DKMTEscape function [Display Devices], OpenGL_Functions_ad391641-4fb5-425a-839f-7b257f26849a.xml, D3DKMTEscape, display.d3dkmtescape
+ms.keywords : d3dkmthk/D3DKMTEscape, D3DKMTEscape, OpenGL_Functions_ad391641-4fb5-425a-839f-7b257f26849a.xml, D3DKMTEscape function [Display Devices], display.d3dkmtescape
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -147,14 +147,11 @@ Hardware vendors can use <b>D3DKMTEscape</b> in their OpenGL ICDs as an extensio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

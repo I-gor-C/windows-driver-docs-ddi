@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b29d35bd-d27d-4507-9fa7-5648bcb1f825
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlCancellableWaitForSingleObject, ntifs/FsRtlCancellableWaitForSingleObject, FsRtlCancellableWaitForSingleObject routine [Installable File System Drivers], fsrtlref_5515496d-6e38-488c-8fbf-439aa4ac555a.xml, ifsk.fsrtlcancellablewaitforsingleobject
+ms.keywords : FsRtlCancellableWaitForSingleObject routine [Installable File System Drivers], ifsk.fsrtlcancellablewaitforsingleobject, fsrtlref_5515496d-6e38-488c-8fbf-439aa4ac555a.xml, ntifs/FsRtlCancellableWaitForSingleObject, FsRtlCancellableWaitForSingleObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -257,41 +257,39 @@ FunctionCompletionRoutine(
 }</pre>
 </td>
 </tr>
-</table></span></div><b>FsRtlCancellableWaitForSingleObject</b> must be called at IRQL PASSIVE_LEVEL if the optional <i>Irp</i> parameter points to a valid IRP. If the <i>Irp</i> parameter is not used, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545900">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. 
+</table></span></div><b>FsRtlCancellableWaitForSingleObject</b> must be called at IRQL PASSIVE_LEVEL if the optional <i>Irp</i> parameter points to a valid IRP. If the <i>Irp</i> parameter is not used, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545900">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. 
 
 <b>FsRtlCancellableWaitForSingleObject</b> will assert on debug builds if the IRQL is greater or equal to APC_LEVEL and the optional <i>Irp</i> parameter points to a valid IRP.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
-
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-
-<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
-
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-
-<a href="..\ntifs\nf-ntifs-fsrtlcancellablewaitformultipleobjects.md">FsRtlCancellableWaitForMultipleObjects</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
 
 <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 
+<a href="..\ntifs\nf-ntifs-fsrtlcancellablewaitformultipleobjects.md">FsRtlCancellableWaitForMultipleObjects</a>
+
+<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
+
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+
 <a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
+
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
 
  
 

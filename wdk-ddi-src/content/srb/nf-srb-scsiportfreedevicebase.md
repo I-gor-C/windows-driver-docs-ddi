@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 391f3b20-175f-4b27-b30f-34ccc43ca650
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortFreeDeviceBase, ScsiPortFreeDeviceBase routine [Storage Devices], srb/ScsiPortFreeDeviceBase, scsiprt_e74eafd2-bedf-46d2-b71a-fb36b6bba128.xml, storage.scsiportfreedevicebase
+ms.keywords : scsiprt_e74eafd2-bedf-46d2-b71a-fb36b6bba128.xml, srb/ScsiPortFreeDeviceBase, storage.scsiportfreedevicebase, ScsiPortFreeDeviceBase, ScsiPortFreeDeviceBase routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -77,14 +77,9 @@ If a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

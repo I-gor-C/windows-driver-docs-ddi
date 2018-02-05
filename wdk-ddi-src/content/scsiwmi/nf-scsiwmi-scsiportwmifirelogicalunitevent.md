@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f8bfc6cb-78d4-482b-b08b-0d86631ce979
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsiprt_67f96e3c-cc69-44a7-b324-a247a9a928cc.xml, ScsiPortWmiFireLogicalUnitEvent routine [Storage Devices], ScsiPortWmiFireLogicalUnitEvent, scsiwmi/ScsiPortWmiFireLogicalUnitEvent, storage.scsiportwmifirelogicalunitevent
+ms.keywords : scsiprt_67f96e3c-cc69-44a7-b324-a247a9a928cc.xml, scsiwmi/ScsiPortWmiFireLogicalUnitEvent, ScsiPortWmiFireLogicalUnitEvent, ScsiPortWmiFireLogicalUnitEvent routine [Storage Devices], storage.scsiportwmifirelogicalunitevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,14 +109,9 @@ The driver should write event data to the buffer pointed to by <i>EventData</i> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

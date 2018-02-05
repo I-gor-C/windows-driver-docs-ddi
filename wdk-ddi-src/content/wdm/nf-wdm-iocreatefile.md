@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 928f16d4-19cb-4d80-96a6-d25357bfdc30
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateFile routine [Kernel-Mode Driver Architecture], k104_7221dba8-910f-439a-acdf-5a6ca4fcd49a.xml, IoCreateFile, wdm/IoCreateFile, kernel.iocreatefile
+ms.keywords : IoCreateFile, kernel.iocreatefile, IoCreateFile routine [Kernel-Mode Driver Architecture], wdm/IoCreateFile, k104_7221dba8-910f-439a-acdf-5a6ca4fcd49a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -607,20 +607,19 @@ Driver routines that run in a process context other than that of the system proc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 822819CE-DF40-4AFD-966A-DA5C433646D7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dwddm1_3ddi_d3d11_options_data1, D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1, D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1 structure [Display Devices], d3d10umddi/D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
+ms.keywords : D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1 structure [Display Devices], display.d3dwddm1_3ddi_d3d11_options_data1, D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1, d3d10umddi/D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ A value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1_3ddi_tiled_resour
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
 | **Header** | d3d10umddi.h |
 
 ## See Also

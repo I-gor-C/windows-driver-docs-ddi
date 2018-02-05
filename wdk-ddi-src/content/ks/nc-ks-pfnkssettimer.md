@@ -94,22 +94,16 @@ The minidriver supplied <i>KStrSetTimer</i> must have the same characteristics a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
 
 <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
+<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
 
 <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
 

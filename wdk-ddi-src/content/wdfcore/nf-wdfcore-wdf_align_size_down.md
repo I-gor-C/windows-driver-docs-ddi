@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b93c6420-b981-4bfe-b841-921cbe76f643
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFMemoryObjectRef_2b1a76a0-3de8-4cfd-8a87-83a883a6fa95.xml, wdfcore/WDF_ALIGN_SIZE_DOWN, WDF_ALIGN_SIZE_DOWN function, wdf.wdf_align_size_down, kmdf.wdf_align_size_down, WDF_ALIGN_SIZE_DOWN
+ms.keywords : WDF_ALIGN_SIZE_DOWN, wdfcore/WDF_ALIGN_SIZE_DOWN, WDF_ALIGN_SIZE_DOWN function, DFMemoryObjectRef_2b1a76a0-3de8-4cfd-8a87-83a883a6fa95.xml, kmdf.wdf_align_size_down, wdf.wdf_align_size_down
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ Drivers can use <a href="..\wdfcore\nf-wdfcore-wdf_align_size_up.md">WDF_ALIGN_S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfcore.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | Any IRQL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

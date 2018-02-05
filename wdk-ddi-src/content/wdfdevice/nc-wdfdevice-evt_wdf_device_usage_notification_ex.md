@@ -90,11 +90,8 @@ For more information about special files, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

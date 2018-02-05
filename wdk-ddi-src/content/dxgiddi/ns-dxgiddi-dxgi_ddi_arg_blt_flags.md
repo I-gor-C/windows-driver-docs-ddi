@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 812679d2-b05c-4533-b4b2-01b973b0d80f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgi_ddi_arg_blt_flags, DXGI_DDI_ARG_BLT_FLAGS structure [Display Devices], dxgiddi/DXGI_DDI_ARG_BLT_FLAGS, DXGI_DDI_ARG_BLT_FLAGS, UMDisplayDriver_Dx10param_Structs_22ccf0e7-83cc-443e-b4a1-c1a2f3bc24a0.xml
+ms.keywords : dxgiddi/DXGI_DDI_ARG_BLT_FLAGS, DXGI_DDI_ARG_BLT_FLAGS structure [Display Devices], display.dxgi_ddi_arg_blt_flags, UMDisplayDriver_Dx10param_Structs_22ccf0e7-83cc-443e-b4a1-c1a2f3bc24a0.xml, DXGI_DDI_ARG_BLT_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct DXGI_DDI_ARG_BLT_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

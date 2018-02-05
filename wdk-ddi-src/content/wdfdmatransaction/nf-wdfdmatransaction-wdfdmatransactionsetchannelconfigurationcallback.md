@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : B38BD937-5027-4EED-9ECA-3333F56DFFA8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmatransactionsetchannelconfigurationcallback, WdfDmaTransactionSetChannelConfigurationCallback method, PFN_WDFDMATRANSACTIONSETCHANNELCONFIGURATIONCALLBACK, wdfdmatransaction/WdfDmaTransactionSetChannelConfigurationCallback, kmdf.wdfdmatransactionsetchannelconfigurationcallback, WdfDmaTransactionSetChannelConfigurationCallback
+ms.keywords : WdfDmaTransactionSetChannelConfigurationCallback method, wdf.wdfdmatransactionsetchannelconfigurationcallback, wdfdmatransaction/WdfDmaTransactionSetChannelConfigurationCallback, WdfDmaTransactionSetChannelConfigurationCallback, kmdf.wdfdmatransactionsetchannelconfigurationcallback, PFN_WDFDMATRANSACTIONSETCHANNELCONFIGURATIONCALLBACK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,20 +93,19 @@ If your driver calls this method on an operating system earlier than Windows 8,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt_wdf_dma_transaction_configure_dma_channel.md">EvtDmaTransactionConfigureDmaChannel</a>
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionrelease.md">WdfDmaTransactionRelease</a>
+
+<a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt_wdf_dma_transaction_configure_dma_channel.md">EvtDmaTransactionConfigureDmaChannel</a>
 
  
 

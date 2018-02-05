@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6a0eb588-fe64-4f36-8648-8e006e16704e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetrequestorsessionid, FltGetRequestorSessionId routine [Installable File System Drivers], fltkernel/FltGetRequestorSessionId, FltGetRequestorSessionId
+ms.keywords : FltGetRequestorSessionId, FltGetRequestorSessionId routine [Installable File System Drivers], ifsk.fltgetrequestorsessionid, fltkernel/FltGetRequestorSessionId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,9 @@ If the <b>FltGetRequestorSessionId</b> routine returns STATUS_UNSUCCESSFUL, <i>S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 7 and later versions of the Windows operating system. Available in Microsoft Windows 7 and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |

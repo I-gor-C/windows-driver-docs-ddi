@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 057b548a-d9e4-4db4-b34f-d867b7be3971
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamicro/Scan, image.scan, Scan function [Imaging Devices], MicroDrv_ab289619-86b7-47fd-a5f5-e8533da4db31.xml, Scan
+ms.keywords : Scan function [Imaging Devices], Scan, image.scan, MicroDrv_ab289619-86b7-47fd-a5f5-e8533da4db31.xml, wiamicro/Scan
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -124,22 +124,19 @@ If the function succeeds, it returns S_OK. If the function fails, it returns a s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamicro.h (include Wiamicro.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a>
-
-<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
 
  
 

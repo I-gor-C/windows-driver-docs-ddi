@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0b1bc248-6b8e-498c-936d-64f6ff9fa183
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml, RxFsdPostRequest function [Installable File System Drivers], rxprocs/RxFsdPostRequest, RxFsdPostRequest, ifsk.rxfsdpostrequest
+ms.keywords : rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml, RxFsdPostRequest, ifsk.rxfsdpostrequest, rxprocs/RxFsdPostRequest, RxFsdPostRequest function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,14 +114,10 @@ All calls to <b>RxFsdPostRequest</b> are queued to a worker thread to call the <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h, Rxcontx.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -74,6 +74,14 @@ Specifies the final status of the client's request to deregister its SAP, which 
 
 
 
+#### NDIS_STATUS_FAILURE
+
+NDIS had marked the state of the AF as "closing," so the associated SAP represented by the 
+       <i>NdisSapHandle</i> was already released when the client's call to 
+       <a href="..\ndis\nf-ndis-ndisclderegistersap.md">
+       NdisClDeregisterSap</a> occurred.
+
+
 #### NDIS_STATUS_SUCCESS
 
 The SAP was closed. The 
@@ -82,20 +90,12 @@ The SAP was closed. The
        <i>ProtocolSapContext</i> area, is now invalid.
 
 
-#### NDIS_STATUS_FAILURE
-
-NDIS had marked the state of the AF as "closing," so the associated SAP represented by the 
-       <i>NdisSapHandle</i> was already released when the client's call to 
-       <mshelp:link keywords="netvista.ndisclderegistersap" tabindex="0"><b>
-       NdisClDeregisterSap</b></mshelp:link> occurred.
-
-
 #### NDIS_STATUS_XXX
 
 The call manager failed the request to close the SAP for some CM-determined reason, and NDIS
        propagated the status returned by its 
-       <mshelp:link keywords="netvista.protocolcmderegistersap" tabindex="0"><i>
-       ProtocolCmDeregisterSap</i></mshelp:link> function to the client.
+       <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
+       ProtocolCmDeregisterSap</a> function to the client.
 
 `ProtocolSapContext`
 
@@ -157,29 +157,25 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClDeregisterSapComplete (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndismcmderegistersapcomplete.md">NdisMCmDeregisterSapComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
+   NdisFreeToNPagedLookasideList</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">ProtocolCmDeregisterSap</a>
 
-<a href="..\ndis\nf-ndis-ndismcmderegistersapcomplete.md">NdisMCmDeregisterSapComplete</a>
-
 <a href="..\ndis\nf-ndis-ndiscmderegistersapcomplete.md">NdisCmDeregisterSapComplete</a>
 
-<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 
-<mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
-   NdisFreeToNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 177ffc7d-697d-47c5-9692-19cba6734077
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSM_SendRNID_OUT, structs-Fibre_9e6a1fff-df92-4d26-af84-b99b9feecbef.xml, storage.sm_sendrnid_out, *PSM_SendRNID_OUT, SM_SendRNID_OUT, _SM_SendRNID_OUT, hbapiwmi/SM_SendRNID_OUT, PSM_SendRNID_OUT structure pointer [Storage Devices], SM_SendRNID_OUT structure [Storage Devices], hbapiwmi/PSM_SendRNID_OUT
+ms.keywords : PSM_SendRNID_OUT, _SM_SendRNID_OUT, SM_SendRNID_OUT structure [Storage Devices], storage.sm_sendrnid_out, PSM_SendRNID_OUT structure pointer [Storage Devices], *PSM_SendRNID_OUT, hbapiwmi/SM_SendRNID_OUT, hbapiwmi/PSM_SendRNID_OUT, structs-Fibre_9e6a1fff-df92-4d26-af84-b99b9feecbef.xml, SM_SendRNID_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,4 @@ The WMI tool suite generates a declaration of the SM_SendRNID_OUT structure in <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

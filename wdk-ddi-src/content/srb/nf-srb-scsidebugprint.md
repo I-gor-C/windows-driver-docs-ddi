@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bbf3ea14-1802-4433-9043-73bfc0c447bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.scsidebugprint, ScsiDebugPrint routine [Storage Devices], scsiprt_ef011e55-85be-4ec8-8ba3-3838417bcd15.xml, ScsiDebugPrint, srb/ScsiDebugPrint
+ms.keywords : scsiprt_ef011e55-85be-4ec8-8ba3-3838417bcd15.xml, ScsiDebugPrint routine [Storage Devices], storage.scsidebugprint, srb/ScsiDebugPrint, ScsiDebugPrint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -63,7 +63,7 @@ Contains a value between 0 and 3 that specifies the amount of verbosity. A value
 
 Pointer to the message to be printed.
 
-``
+`Arg1`
 
 
 
@@ -131,14 +131,9 @@ To view the message pointed to by <i>DebugMessage </i>from the kernel debugger, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

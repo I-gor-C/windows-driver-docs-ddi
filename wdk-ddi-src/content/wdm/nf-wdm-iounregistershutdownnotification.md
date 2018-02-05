@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b48a38ff-60b9-4c01-ac71-4ae07010db1f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoUnregisterShutdownNotification, IoUnregisterShutdownNotification routine [Kernel-Mode Driver Architecture], wdm/IoUnregisterShutdownNotification, k104_f242a3dc-8338-4d64-bad7-0cca78c30a45.xml, kernel.iounregistershutdownnotification
+ms.keywords : wdm/IoUnregisterShutdownNotification, kernel.iounregistershutdownnotification, IoUnregisterShutdownNotification, k104_f242a3dc-8338-4d64-bad7-0cca78c30a45.xml, IoUnregisterShutdownNotification routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,12 +71,11 @@ Calling <b>IoUnregisterShutdownNotification</b> cancels all shutdown notificatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

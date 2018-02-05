@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8f235fc4-924b-4cc4-858d-5009e69fae47
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT structure [Display Devices], _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT, display.d3dddicb_waitforsynchronizationobject, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT, D3D_param_Structs_170af521-644c-4790-94dc-6836d880d620.xml
+ms.keywords : d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT, D3D_param_Structs_170af521-644c-4790-94dc-6836d880d620.xml, _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dddicb_waitforsynchronizationobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

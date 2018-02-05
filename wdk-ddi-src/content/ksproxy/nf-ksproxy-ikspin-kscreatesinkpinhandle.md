@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 68faba0a-8057-4259-b93d-c19899637356
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateSinkPinHandle method [Streaming Media Devices], ksproxy_8d4ac125-ae14-4abf-97cb-74fd33e5029c.xml, IKsPin, stream.ikspin_kscreatesinkpinhandle, KsCreateSinkPinHandle method [Streaming Media Devices], IKsPin interface, KsCreateSinkPinHandle, IKsPin::KsCreateSinkPinHandle, ksproxy/IKsPin::KsCreateSinkPinHandle, IKsPin interface [Streaming Media Devices], KsCreateSinkPinHandle method
+ms.keywords : IKsPin, KsCreateSinkPinHandle, KsCreateSinkPinHandle method [Streaming Media Devices], IKsPin interface, ksproxy_8d4ac125-ae14-4abf-97cb-74fd33e5029c.xml, stream.ikspin_kscreatesinkpinhandle, IKsPin interface [Streaming Media Devices], KsCreateSinkPinHandle method, ksproxy/IKsPin::KsCreateSinkPinHandle, KsCreateSinkPinHandle method [Streaming Media Devices], IKsPin::KsCreateSinkPinHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -77,14 +77,9 @@ This method is for proxy use and is not recommended for application use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

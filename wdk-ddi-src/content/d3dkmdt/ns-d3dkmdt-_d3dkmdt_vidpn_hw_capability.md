@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8d881133-3ea7-43c4-99cc-d843026573d6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices], display.d3dkmdt_vidpn_hw_capability, DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml, _D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY
+ms.keywords : d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY, DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml, _D3DKMDT_VIDPN_HW_CAPABILITY, display.d3dkmdt_vidpn_hw_capability, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -115,9 +115,7 @@ The following definitions of terms are used in this topic.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

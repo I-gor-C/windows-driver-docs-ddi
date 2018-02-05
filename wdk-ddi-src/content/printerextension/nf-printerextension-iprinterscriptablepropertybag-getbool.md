@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : EEBB916B-0E7B-4523-BB13-A4758F5491BB
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterScriptablePropertyBag::GetBool, GetBool, GetBool method [Print Devices], print.iprinterscriptablepropertybag_getbool, IPrinterScriptablePropertyBag, printerextension/IPrinterScriptablePropertyBag::GetBool, IPrinterScriptablePropertyBag interface [Print Devices], GetBool method, GetBool method [Print Devices], IPrinterScriptablePropertyBag interface
+ms.keywords : IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_getbool, GetBool method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetBool, GetBool method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag::GetBool, IPrinterScriptablePropertyBag interface [Print Devices], GetBool method, GetBool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,14 +74,10 @@ A call to <b>GetBool</b> will throw an exception, if the specified property is n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

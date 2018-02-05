@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 75cf8262-8cb4-428e-b18e-b80121c6390e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_7ac4aba4-0219-4ad2-81bf-028ec989e1f2.xml, kernel.ioreleaseremovelock, wdm/IoReleaseRemoveLock, IoReleaseRemoveLock, IoReleaseRemoveLock routine [Kernel-Mode Driver Architecture]
+ms.keywords : k104_7ac4aba4-0219-4ad2-81bf-028ec989e1f2.xml, kernel.ioreleaseremovelock, IoReleaseRemoveLock, IoReleaseRemoveLock routine [Kernel-Mode Driver Architecture], wdm/IoReleaseRemoveLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -94,12 +94,11 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | RemoveLock, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockMnRemove, RemoveLockMnRemove2, RemoveLockMnSurpriseRemove, RemoveLockQueryMnRemove, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePnp, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite |
 

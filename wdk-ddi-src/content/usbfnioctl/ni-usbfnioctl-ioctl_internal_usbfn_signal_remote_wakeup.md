@@ -74,6 +74,4 @@ The USB function class extension (UFX) determines the endpoints that are remote 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h |
-| **IRQL** |  |

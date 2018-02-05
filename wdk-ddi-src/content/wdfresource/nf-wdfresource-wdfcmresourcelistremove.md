@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f636d85d-f7bb-4ebe-b03f-3b9c3c17bacd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfcmresourcelistremove, WdfCmResourceListRemove method, DFResourceObjectRef_5b1c7fce-45d2-454e-9d21-3f8d460ba99f.xml, WdfCmResourceListRemove, wdfresource/WdfCmResourceListRemove, PFN_WDFCMRESOURCELISTREMOVE, kmdf.wdfcmresourcelistremove
+ms.keywords : PFN_WDFCMRESOURCELISTREMOVE, DFResourceObjectRef_5b1c7fce-45d2-454e-9d21-3f8d460ba99f.xml, wdf.wdfcmresourcelistremove, WdfCmResourceListRemove, WdfCmResourceListRemove method, wdfresource/WdfCmResourceListRemove, kmdf.wdfcmresourcelistremove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -82,12 +82,10 @@ For more information about resource lists, see <a href="https://docs.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

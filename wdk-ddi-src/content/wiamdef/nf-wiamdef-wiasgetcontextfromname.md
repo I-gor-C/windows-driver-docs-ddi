@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : d15bf48e-132d-4f89-8f19-64f57deed500
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamdef/wiasGetContextFromName, wiasFncs_ba1c88a2-aadc-4c2f-bb5f-88433d1e1760.xml, wiasGetContextFromName, image.wiasgetcontextfromname, wiasGetContextFromName function [Imaging Devices]
+ms.keywords : wiasGetContextFromName function [Imaging Devices], wiasGetContextFromName, wiamdef/wiasGetContextFromName, image.wiasgetcontextfromname, wiasFncs_ba1c88a2-aadc-4c2f-bb5f-88433d1e1760.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -86,14 +86,11 @@ This function should be used by minidrivers when they need to move from one appl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 

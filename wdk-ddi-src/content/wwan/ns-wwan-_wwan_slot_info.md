@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F45D253E-E7D7-4600-AF8C-6D4EB096030D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_SLOT_INFO, wwan/PWWAN_SLOT_INFO, _WWAN_SLOT_INFO, wwan/WWAN_SLOT_INFO, PWWAN_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SLOT_INFO, netvista.wwan_slot_info_status, WWAN_SLOT_INFO, WWAN_SLOT_INFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : wwan/WWAN_SLOT_INFO, WWAN_SLOT_INFO, WWAN_SLOT_INFO structure [Network Drivers Starting with Windows Vista], PWWAN_SLOT_INFO, _WWAN_SLOT_INFO, netvista.wwan_slot_info_status, PWWAN_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SLOT_INFO, *PWWAN_SLOT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_SLOT_INFO, *PWWAN_SLOT_INFO
+req.typenames : "*PWWAN_SLOT_INFO, WWAN_SLOT_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -65,20 +65,18 @@ The state of the slot being queried, a member of the  <a href="..\wwan\ne-wwan-_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_slot_info.md">NDIS_WWAN_SLOT_INFO</a>
-
 <a href="https://msdn.microsoft.com/FA1E16E4-56A3-4401-875F-D75DD01FE75D">NDIS_STATUS_WWAN_SLOT_INFO</a>
+
+<a href="https://msdn.microsoft.com/6267D480-5055-4A7A-B2A0-F4DF9154DCD7">OID_WWAN_SLOT_INFO</a>
 
 <a href="..\wwan\ne-wwan-_wwan_uiccslot_state.md">WWAN_UICCSLOT_STATE</a>
 
-<a href="https://msdn.microsoft.com/6267D480-5055-4A7A-B2A0-F4DF9154DCD7">OID_WWAN_SLOT_INFO</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_slot_info.md">NDIS_WWAN_SLOT_INFO</a>
 
  
 

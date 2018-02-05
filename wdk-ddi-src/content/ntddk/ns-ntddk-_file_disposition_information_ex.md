@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : CCFE4B09-F942-4D89-9013-159066D8E37A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FILE_DISPOSITION_INFORMATION_EX, FILE_DISPOSITION_INFORMATION_EX structure [Installable File System Drivers], _FILE_DISPOSITION_INFORMATION_EX, ntddk/PFILE_DISPOSITION_INFORMATION_EX, ntddk/FILE_DISPOSITION_INFORMATION_EX, PFILE_DISPOSITION_INFORMATION_EX structure pointer [Installable File System Drivers], *PFILE_DISPOSITION_INFORMATION_EX, PFILE_DISPOSITION_INFORMATION_EX, ifsk.file_disposition_information_ex
+ms.keywords : PFILE_DISPOSITION_INFORMATION_EX structure pointer [Installable File System Drivers], ifsk.file_disposition_information_ex, FILE_DISPOSITION_INFORMATION_EX structure [Installable File System Drivers], *PFILE_DISPOSITION_INFORMATION_EX, PFILE_DISPOSITION_INFORMATION_EX, ntddk/PFILE_DISPOSITION_INFORMATION_EX, _FILE_DISPOSITION_INFORMATION_EX, FILE_DISPOSITION_INFORMATION_EX, ntddk/FILE_DISPOSITION_INFORMATION_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,9 +98,6 @@ Normally a file marked for deletion is not actually deleted until all open handl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
 ## See Also

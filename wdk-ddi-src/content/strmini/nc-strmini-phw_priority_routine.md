@@ -72,14 +72,8 @@ The minidriver provides a pointer to this routine in the <b>Priority</b> paramet
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

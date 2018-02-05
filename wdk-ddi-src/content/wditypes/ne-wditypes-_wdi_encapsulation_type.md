@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6EDCC69B-F156-416B-9824-5E26F9834D14
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wditypes/WDI_ENCAPSULATION_802_1H, WDI_ENCAPSULATION_RFC_1042, netvista.wdi_encapsulation_type, wditypes/WDI_ENCAPSULATION_TYPE, wditypes/WDI_ENCAPSULATION_RFC_1042, WDI_ENCAPSULATION_802_1H, _WDI_ENCAPSULATION_TYPE, netvista.wifi_encapsulation_type, WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_TYPE enumeration [Device and Driver Installation]
+ms.keywords : netvista.wifi_encapsulation_type, netvista.wdi_encapsulation_type, WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_RFC_1042, _WDI_ENCAPSULATION_TYPE, wditypes/WDI_ENCAPSULATION_RFC_1042, WDI_ENCAPSULATION_802_1H, wditypes/WDI_ENCAPSULATION_802_1H, wditypes/WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_TYPE enumeration [Device and Driver Installation]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,7 +69,5 @@ typedef enum _WDI_ENCAPSULATION_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

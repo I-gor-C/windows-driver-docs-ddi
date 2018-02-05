@@ -71,9 +71,7 @@ See <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_query_points.md">IOCTL_MOUNT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
-| **IRQL** |  |
 
 ## See Also
 

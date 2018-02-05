@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4cb12ac3-7cb6-4773-b680-d77a55b19246
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCancelOidRequest function [Network Drivers Starting with Windows Vista], NdisCancelOidRequest, ndis_request_ref_5f7f8a9a-f773-4ca8-aba3-21fe74431e0c.xml, ndis/NdisCancelOidRequest, netvista.ndiscanceloidrequest
+ms.keywords : NdisCancelOidRequest, ndis/NdisCancelOidRequest, NdisCancelOidRequest function [Network Drivers Starting with Windows Vista], ndis_request_ref_5f7f8a9a-f773-4ca8-aba3-21fe74431e0c.xml, netvista.ndiscanceloidrequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,22 +83,20 @@ Protocol drivers call this function to cancel a previously issued request. The r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_OID_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c4f27011-f198-474e-8d2c-8bf35c3c8c66
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ioref_b3532bdd-87b6-4e6b-91a0-093b8ed5aa6c.xml, IoGetDiskDeviceObject, IoGetDiskDeviceObject routine [Installable File System Drivers], ntifs/IoGetDiskDeviceObject, ifsk.iogetdiskdeviceobject
+ms.keywords : IoGetDiskDeviceObject routine [Installable File System Drivers], ifsk.iogetdiskdeviceobject, ioref_b3532bdd-87b6-4e6b-91a0-093b8ed5aa6c.xml, IoGetDiskDeviceObject, ntifs/IoGetDiskDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,26 +110,24 @@ File system filter drivers typically call <b>IoGetDiskDeviceObject</b> for a fil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
+
+<a href="..\wdm\nf-wdm-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 
 <a href="..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md">IoEnumerateDeviceObjectList</a>
 
 <a href="..\ntifs\nf-ntifs-iogetattacheddevice.md">IoGetAttachedDevice</a>
 
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-
-<a href="..\ntifs\nf-ntifs-iogetattacheddevicereference.md">IoGetAttachedDeviceReference</a>
 
  
 

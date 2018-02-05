@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cea11e84-bff5-4189-9ed4-830049a44a4b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_MOA_INTERRUPTIBLE, d3dkmdt/D3DKMDT_MOA_UNINITIALIZED, D3DKMDT_MOA_INTERRUPTIBLE, DmEnums_d2570bc0-98c7-4402-b167-a4167715cc90.xml, d3dkmdt/D3DKMDT_MONITOR_ORIENTATION_AWARENESS, d3dkmdt/D3DKMDT_MOA_NONE, d3dkmdt/D3DKMDT_MOA_POLLED, D3DKMDT_MOA_UNINITIALIZED, D3DKMDT_MONITOR_ORIENTATION_AWARENESS, _D3DKMDT_MONITOR_ORIENTATION_AWARENESS, D3DKMDT_MONITOR_ORIENTATION_AWARENESS enumeration [Display Devices], display.d3dkmdt_monitor_orientation_awareness, D3DKMDT_MOA_POLLED, D3DKMDT_MOA_NONE
+ms.keywords : D3DKMDT_MONITOR_ORIENTATION_AWARENESS, d3dkmdt/D3DKMDT_MONITOR_ORIENTATION_AWARENESS, d3dkmdt/D3DKMDT_MOA_POLLED, DmEnums_d2570bc0-98c7-4402-b167-a4167715cc90.xml, D3DKMDT_MOA_POLLED, D3DKMDT_MOA_INTERRUPTIBLE, d3dkmdt/D3DKMDT_MOA_NONE, display.d3dkmdt_monitor_orientation_awareness, d3dkmdt/D3DKMDT_MOA_INTERRUPTIBLE, D3DKMDT_MOA_UNINITIALIZED, D3DKMDT_MOA_NONE, _D3DKMDT_MONITOR_ORIENTATION_AWARENESS, d3dkmdt/D3DKMDT_MOA_UNINITIALIZED, D3DKMDT_MONITOR_ORIENTATION_AWARENESS enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,9 +83,7 @@ The <b>ChildCapabilities</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

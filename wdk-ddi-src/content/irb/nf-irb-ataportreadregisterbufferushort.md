@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bd2e8fe0-7daf-4fdd-ac3a-893df6d0f10f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : irb/AtaPortReadRegisterBufferUshort, AtaPortReadRegisterBufferUshort, atartns_4943b97d-90a0-44d9-adfa-d3bce57e88c9.xml, storage.ataportreadregisterbufferushort, AtaPortReadRegisterBufferUshort routine [Storage Devices]
+ms.keywords : AtaPortReadRegisterBufferUshort, storage.ataportreadregisterbufferushort, irb/AtaPortReadRegisterBufferUshort, AtaPortReadRegisterBufferUshort routine [Storage Devices], atartns_4943b97d-90a0-44d9-adfa-d3bce57e88c9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

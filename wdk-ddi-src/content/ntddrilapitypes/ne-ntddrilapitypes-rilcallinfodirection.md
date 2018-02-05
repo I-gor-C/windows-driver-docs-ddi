@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2243fb04-81a9-49d6-9ce2-d06d4a590fb1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILCALLINFODIRECTION, netvista.rilcallinfodirection, RIL_CALLDIR_OUTGOING, RILCALLINFODIRECTION enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_CALLDIR_OUTGOING, ntddrilapitypes/RIL_CALLDIR_MAX, RILCALLINFODIRECTION, RIL_CALLDIR_MAX
+ms.keywords : RILCALLINFODIRECTION, RIL_CALLDIR_OUTGOING, netvista.rilcallinfodirection, ntddrilapitypes/RIL_CALLDIR_OUTGOING, ntddrilapitypes/RIL_CALLDIR_MAX, RILCALLINFODIRECTION enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCALLINFODIRECTION, RIL_CALLDIR_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -73,7 +73,4 @@ typedef enum _RILCALLINFODIRECTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

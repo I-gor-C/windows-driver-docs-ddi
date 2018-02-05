@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f92aebbf-f163-45fa-ad8e-c13a36f08458
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_param_Structs_8a00fe2d-be28-4577-831f-45fbdcfbbb1d.xml, d3dumddi/D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, _D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, display.d3dddiarg_setvideoprocessrendertarget, D3DDDIARG_SETVIDEOPROCESSRENDERTARGET structure [Display Devices], D3DDDIARG_SETVIDEOPROCESSRENDERTARGET
+ms.keywords : "_D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, d3dumddi/D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, UMDisplayDriver_param_Structs_8a00fe2d-be28-4577-831f-45fbdcfbbb1d.xml, display.d3dddiarg_setvideoprocessrendertarget, D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, D3DDDIARG_SETVIDEOPROCESSRENDERTARGET structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,13 @@ typedef struct _D3DDDIARG_SETVIDEOPROCESSRENDERTARGET {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvideoprocessrendertarget.md">SetVideoProcessRenderTarget</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createvideoprocessdevice.md">CreateVideoProcessDevice</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setvideoprocessrendertarget.md">SetVideoProcessRenderTarget</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4ea03ea5-31df-4220-982c-0102d20c2d4a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fcb/RxCreateNetFobx, rxref_851152a8-bc89-44f8-9e74-1621e425dbba.xml, ifsk.rxcreatenetfobx, RxCreateNetFobx function [Installable File System Drivers], RxCreateNetFobx
+ms.keywords : fcb/RxCreateNetFobx, ifsk.rxcreatenetfobx, rxref_851152a8-bc89-44f8-9e74-1621e425dbba.xml, RxCreateNetFobx, RxCreateNetFobx function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,56 +105,52 @@ The <b>Flags</b> member is set to a value based on parameters from the RX_CONTEX
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | fcb.h (include Rxcontx.h, Mrxfcb.h, Fcb.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
-
-<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxfinalizeconnection.md">RxFinalizeConnection</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxforcefinalizeallvnetroots.md">RxForceFinalizeAllVNetRoots</a>
-
 <a href="..\fcb\nf-fcb-rxfinalizenetfobx.md">RxFinalizeNetFobx</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxsetsrvcalldomainname.md">RxSetSrvCallDomainName</a>
-
-<a href="..\fcb\nf-fcb-rxcreatenetroot.md">RxCreateNetRoot</a>
-
-<a href="..\fcb\nf-fcb-rxfinalizevnetroot.md">RxFinalizeVNetRoot</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
-
-<a href="..\fcb\nf-fcb-rxfinalizesrvopen.md">RxFinalizeSrvOpen</a>
-
-<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
-
-<a href="..\fcb\nf-fcb-rxcreatesrvopen.md">RxCreateSrvOpen</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxfinalizenetfcb.md">RxFinalizeNetFcb</a>
-
-<a href="..\fcb\nf-fcb-rxcreatevnetroot.md">RxCreateVNetRoot</a>
 
 <a href="..\fcb\nf-fcb-rxfinishfcbinitialization.md">RxFinishFcbInitialization</a>
 
+<a href="..\fcb\nf-fcb-rxfinalizesrvopen.md">RxFinalizeSrvOpen</a>
+
 <a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
+
+<a href="..\fcb\nf-fcb-rxcreatenetroot.md">RxCreateNetRoot</a>
 
 <a href="..\fcb\nf-fcb-rxfinalizenetroot.md">RxFinalizeNetRoot</a>
 
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxfinalizeconnection.md">RxFinalizeConnection</a>
+
 <a href="..\fcb\nf-fcb-rxcreatenetfcb.md">RxCreateNetFcb</a>
 
+<a href="..\rxprocs\nf-rxprocs-rxsetsrvcalldomainname.md">RxSetSrvCallDomainName</a>
+
+<a href="..\fcb\nf-fcb-rxfinalizevnetroot.md">RxFinalizeVNetRoot</a>
+
+<a href="..\fcb\nf-fcb-rxcreatesrvopen.md">RxCreateSrvOpen</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
+
+<a href="..\fcb\nf-fcb-rxcreatevnetroot.md">RxCreateVNetRoot</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxfinalizenetfcb.md">RxFinalizeNetFcb</a>
+
+<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
+
 <a href="..\fcb\nf-fcb-rxpdereferencenetfcb.md">RxpDereferenceNetFcb</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxforcefinalizeallvnetroots.md">RxForceFinalizeAllVNetRoots</a>
+
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 
  
 

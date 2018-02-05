@@ -69,15 +69,13 @@ If the miniport driver successfully gets or sets the requested information, it s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570173">VIDEOPARAMETERS</a>
-
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570173">VIDEOPARAMETERS</a>
 
  
 

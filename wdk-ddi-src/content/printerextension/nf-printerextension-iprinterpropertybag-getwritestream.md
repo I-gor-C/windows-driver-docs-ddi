@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 47F535C0-57C7-407B-B47B-188EB6434F2E
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/IPrinterPropertyBag::GetWriteStream, GetWriteStream method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag, GetWriteStream method [Print Devices], IPrinterPropertyBag::GetWriteStream, print.iprinterpropertybag_getwritestream, GetWriteStream, IPrinterPropertyBag interface [Print Devices], GetWriteStream method
+ms.keywords : GetWriteStream method [Print Devices], IPrinterPropertyBag interface, GetWriteStream, IPrinterPropertyBag, IPrinterPropertyBag::GetWriteStream, GetWriteStream method [Print Devices], printerextension/IPrinterPropertyBag::GetWriteStream, print.iprinterpropertybag_getwritestream, IPrinterPropertyBag interface [Print Devices], GetWriteStream method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,14 +74,9 @@ This method does not work with non-stream properties.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

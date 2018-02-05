@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e7c50bac-96ca-446d-a865-4ad87ad5b295
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbspec/UsbSuperSpeed, usbspec/UsbFullSpeed, USB_DEVICE_SPEED, UsbSuperSpeed, usbstrct_c458b58d-fcfa-4082-bbcf-34e22d504ab9.xml, _USB_DEVICE_SPEED, buses.usb_device_speed, UsbHighSpeed, UsbLowSpeed, usbspec/USB_DEVICE_SPEED, USB_DEVICE_SPEED enumeration [Buses], UsbFullSpeed, usbspec/UsbHighSpeed, usbspec/UsbLowSpeed
+ms.keywords : UsbSuperSpeed, UsbHighSpeed, usbspec/UsbSuperSpeed, _USB_DEVICE_SPEED, USB_DEVICE_SPEED enumeration [Buses], usbspec/UsbLowSpeed, USB_DEVICE_SPEED, buses.usb_device_speed, UsbLowSpeed, usbspec/UsbFullSpeed, usbstrct_c458b58d-fcfa-4082-bbcf-34e22d504ab9.xml, UsbFullSpeed, usbspec/USB_DEVICE_SPEED, usbspec/UsbHighSpeed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,9 +81,6 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usbspec.h) |
 
 ## See Also

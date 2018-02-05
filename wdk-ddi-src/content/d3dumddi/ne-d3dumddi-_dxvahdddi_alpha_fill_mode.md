@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6b0fdae8-d313-4281-bab0-b3dcc38b19e5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxvahdddi_alpha_fill_mode, DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE, DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION, DXVAHDDDI_ALPHA_FILL_MODE_SOURCE_STREAM, DXVAHDDDI_ALPHA_FILL_MODE enumeration [Display Devices], d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION, DXVA2_Structs_bc53b063-f00e-4589-8bf7-d397925dda55.xml, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE, DXVAHDDDI_ALPHA_FILL_MODE, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_SOURCE_STREAM, _DXVAHDDDI_ALPHA_FILL_MODE, DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND
+ms.keywords : DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION, DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_BACKGROUND, _DXVAHDDDI_ALPHA_FILL_MODE, DXVAHDDDI_ALPHA_FILL_MODE_SOURCE_STREAM, DXVA2_Structs_bc53b063-f00e-4589-8bf7-d397925dda55.xml, DXVAHDDDI_ALPHA_FILL_MODE, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE, DXVAHDDDI_ALPHA_FILL_MODE_DESTINATION, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_OPAQUE, d3dumddi/DXVAHDDDI_ALPHA_FILL_MODE_SOURCE_STREAM, DXVAHDDDI_ALPHA_FILL_MODE enumeration [Display Devices], display.dxvahdddi_alpha_fill_mode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,16 +80,14 @@ typedef enum _DXVAHDDDI_ALPHA_FILL_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_ALPHA_FILL_MODE is supported beginning with the Windows 7 operating system. DXVAHDDDI_ALPHA_FILL_MODE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_alpha_fill_data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_background_color_data.md">DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_blt_state_alpha_fill_data.md">DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA</a>
 
  
 

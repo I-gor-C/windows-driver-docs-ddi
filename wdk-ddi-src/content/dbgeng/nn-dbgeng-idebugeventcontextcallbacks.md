@@ -58,17 +58,14 @@ Set this interface on a debugger client by using the <a href="https://msdn.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **DLL** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/246573DB-5FEB-4068-8DB8-950F5EDFD1A9">IDebugClient6::SetEventContextCallbacks</a>
-
 <a href="https://msdn.microsoft.com/c741777b-dfaf-42b0-9dd7-6678281b6359">IDebugClient::SetEventCallbacks</a>
+
+<a href="https://msdn.microsoft.com/246573DB-5FEB-4068-8DB8-950F5EDFD1A9">IDebugClient6::SetEventContextCallbacks</a>
 
  
 

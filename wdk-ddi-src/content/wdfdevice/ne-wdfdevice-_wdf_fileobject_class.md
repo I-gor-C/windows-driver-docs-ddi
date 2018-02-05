@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e0887061-eafe-4dba-bb7a-58bf949e2d08
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_fileobject_class, WdfFileObjectWdfCannotUseFsContexts, wdf.wdf_fileobject_class, wdfdevice/WdfFileObjectNotRequired, *PWDF_FILEOBJECT_CLASS, WdfFileObjectWdfCanUseFsContext, _WDF_FILEOBJECT_CLASS, WdfFileObjectInvalid, wdfdevice/PWDF_FILEOBJECT_CLASS, DFFileObjectRef_001acbc3-7e2c-4b8b-ab14-024653cefe19.xml, PWDF_FILEOBJECT_CLASS enumeration pointer, WdfFileObjectNotRequired, WDF_FILEOBJECT_CLASS enumeration, wdfdevice/WdfFileObjectWdfCannotUseFsContexts, wdfdevice/WdfFileObjectCanBeOptional, wdfdevice/WdfFileObjectWdfCanUseFsContext2, WdfFileObjectWdfCanUseFsContext2, wdfdevice/WDF_FILEOBJECT_CLASS, WdfFileObjectCanBeOptional, wdfdevice/WdfFileObjectWdfCanUseFsContext, wdfdevice/WdfFileObjectInvalid, PWDF_FILEOBJECT_CLASS, WDF_FILEOBJECT_CLASS
+ms.keywords : wdfdevice/WdfFileObjectWdfCanUseFsContext2, WDF_FILEOBJECT_CLASS, wdfdevice/WDF_FILEOBJECT_CLASS, *PWDF_FILEOBJECT_CLASS, WDF_FILEOBJECT_CLASS enumeration, WdfFileObjectInvalid, wdfdevice/WdfFileObjectWdfCannotUseFsContexts, WdfFileObjectWdfCanUseFsContext2, WdfFileObjectWdfCannotUseFsContexts, _WDF_FILEOBJECT_CLASS, wdfdevice/WdfFileObjectWdfCanUseFsContext, DFFileObjectRef_001acbc3-7e2c-4b8b-ab14-024653cefe19.xml, wdfdevice/PWDF_FILEOBJECT_CLASS, wdfdevice/WdfFileObjectNotRequired, PWDF_FILEOBJECT_CLASS enumeration pointer, wdfdevice/WdfFileObjectCanBeOptional, WdfFileObjectWdfCanUseFsContext, wdf.wdf_fileobject_class, PWDF_FILEOBJECT_CLASS, kmdf.wdf_fileobject_class, WdfFileObjectCanBeOptional, wdfdevice/WdfFileObjectInvalid, WdfFileObjectNotRequired
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -118,7 +118,6 @@ An IRP includes a WDM file object, but the file object is different from the one
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |

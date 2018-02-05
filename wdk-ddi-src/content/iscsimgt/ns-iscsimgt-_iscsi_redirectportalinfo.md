@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 90d9c5e9-4bdf-4c7a-b5ac-54e1f94818bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PISCSI_RedirectPortalInfo structure pointer [Storage Devices], _ISCSI_RedirectPortalInfo, *PISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo, iscsimgt/ISCSI_RedirectPortalInfo, structs-iSCSI_6b7dc6ac-b421-4454-aa8f-48f52c9b4350.xml, ISCSI_RedirectPortalInfo structure [Storage Devices], storage.iscsi_redirectportalinfo, iscsimgt/PISCSI_RedirectPortalInfo, PISCSI_RedirectPortalInfo
+ms.keywords : storage.iscsi_redirectportalinfo, iscsimgt/ISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo structure [Storage Devices], *PISCSI_RedirectPortalInfo, _ISCSI_RedirectPortalInfo, PISCSI_RedirectPortalInfo structure pointer [Storage Devices], PISCSI_RedirectPortalInfo, structs-iSCSI_6b7dc6ac-b421-4454-aa8f-48f52c9b4350.xml, iscsimgt/PISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo"
+req.typenames : ISCSI_RedirectPortalInfo, *PISCSI_RedirectPortalInfo
 ---
 
 # _ISCSI_RedirectPortalInfo structure
@@ -89,9 +89,6 @@ The connection identifier (ID) that the operating system and application softwar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also

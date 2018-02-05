@@ -136,14 +136,8 @@ After the extension DLL is initialized, the engine will use this function to not
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | dbgeng.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

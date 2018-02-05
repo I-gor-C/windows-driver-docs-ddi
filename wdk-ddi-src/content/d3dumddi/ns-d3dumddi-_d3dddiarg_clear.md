@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f437f94c-075e-43e6-bf28-0e7c7bd78c5a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CLEAR, UMDisplayDriver_param_Structs_64efff84-8fe3-40d4-b823-27e4a235fd86.xml, _D3DDDIARG_CLEAR, display.d3dddiarg_clear, D3DDDIARG_CLEAR structure [Display Devices], d3dumddi/D3DDDIARG_CLEAR
+ms.keywords : d3dumddi/D3DDDIARG_CLEAR, UMDisplayDriver_param_Structs_64efff84-8fe3-40d4-b823-27e4a235fd86.xml, D3DDDIARG_CLEAR, display.d3dddiarg_clear, _D3DDDIARG_CLEAR, D3DDDIARG_CLEAR structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -122,9 +122,7 @@ In a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c9f462b2-4b56-4138-a374-9e9d3e1ae295
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PTAPE_SET_POSITION structure pointer [Storage Devices], ntddtape/TAPE_SET_POSITION, PTAPE_SET_POSITION, ntddtape/PTAPE_SET_POSITION, storage.tape_set_position, structs-tape_412b4b85-a0b5-4372-a32c-fa7ac5a6f33a.xml, *PTAPE_SET_POSITION, TAPE_SET_POSITION structure [Storage Devices], _TAPE_SET_POSITION, TAPE_SET_POSITION
+ms.keywords : "_TAPE_SET_POSITION, ntddtape/TAPE_SET_POSITION, structs-tape_412b4b85-a0b5-4372-a32c-fa7ac5a6f33a.xml, TAPE_SET_POSITION, PTAPE_SET_POSITION, *PTAPE_SET_POSITION, ntddtape/PTAPE_SET_POSITION, storage.tape_set_position, PTAPE_SET_POSITION structure pointer [Storage Devices], TAPE_SET_POSITION structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : TAPE_SET_POSITION, *PTAPE_SET_POSITION
+req.typenames : "*PTAPE_SET_POSITION, TAPE_SET_POSITION"
 ---
 
 # _TAPE_SET_POSITION structure
@@ -65,11 +65,6 @@ Indicates the type of positioning to perform. This member must have one of the f
 
 
 
-#### TAPE_REWIND
-
-Positions the tape at the beginning of the partition indicated in <b>Partition</b> if the media is partitioned, and to the beginning of the media if the media is not partitioned. If the media is not partitioned, <b>Partition</b> must be set to zero. The <b>Offset</b> member is ignored. 
-
-
 #### TAPE_ABSOLUTE_BLOCK
 
 Positions the tape at the absolute block address located at the offset from the beginning specified by <b>Offset</b>. The value in the <b>Partition</b> member is ignored. 
@@ -85,14 +80,14 @@ Positions the tape to the logical block address specified by <b>Offset</b>, rela
 Positions the tape to the pseudological block address specified by <b>Offset</b>, relative to the beginning of the partition indicated in <b>Partition</b>. If the media is not partitioned, <b>Partition</b> must be to zero.
 
 
+#### TAPE_REWIND
+
+Positions the tape at the beginning of the partition indicated in <b>Partition</b> if the media is partitioned, and to the beginning of the media if the media is not partitioned. If the media is not partitioned, <b>Partition</b> must be set to zero. The <b>Offset</b> member is ignored. 
+
+
 #### TAPE_SPACE_END_OF_DATA
 
 Positions the tape at the end of the partition indicated in <b>Partition</b>, or if the media is not partitioned, at the end of the tape. The <b>Offset</b> member is ignored. 
-
-
-#### TAPE_SPACE_RELATIVE_BLOCKS
-
-Starting from the current position, positions the tape immediately after the number of blocks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. 
 
 
 #### TAPE_SPACE_FILEMARKS
@@ -100,19 +95,24 @@ Starting from the current position, positions the tape immediately after the num
 Starting from the current position, positions the tape immediately after the number of filemarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. 
 
 
+#### TAPE_SPACE_RELATIVE_BLOCKS
+
+Starting from the current position, positions the tape immediately after the number of blocks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. 
+
+
 #### TAPE_SPACE_SEQUENTIAL_FMKS
 
 Starting from the current position, positions the tape immediately after the next occurrence, if any, of the number of consecutive filemarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. 
 
 
-#### TAPE_SPACE_SETMARKS
-
-Starting from the current position, positions the tape immediately after the number of setmarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. 
-
-
 #### TAPE_SPACE_SEQUENTIAL_SMKS
 
-Starting from the current position, positions the tape immediately after the next occurrence, if any, of the number of consecutive setmarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored.
+Starting from the current position, positions the tape immediately after the next occurrence, if any, of the number of consecutive setmarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored. 
+
+
+#### TAPE_SPACE_SETMARKS
+
+Starting from the current position, positions the tape immediately after the number of setmarks specified by <b>Offset</b>. The <b>Partition</b> member is ignored.
 
 `Offset`
 
@@ -142,16 +142,13 @@ When the offset specifies a number of blocks, filemarks, or setmarks to position
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddtape.h (include Ntddtape.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a>
-
 <a href="..\ntddtape\ni-ntddtape-ioctl_tape_set_position.md">IOCTL_TAPE_SET_POSITION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a>
 
  
 

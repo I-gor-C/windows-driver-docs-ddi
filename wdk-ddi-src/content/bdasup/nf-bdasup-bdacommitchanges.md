@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 89bac523-65f1-462e-a734-285cda9e33ac
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdaref_41fbbc81-4461-47a2-ba7a-725b696329f3.xml, stream.bdacommitchanges, bdasup/BdaCommitChanges, BdaCommitChanges function [Streaming Media Devices], BdaCommitChanges
+ms.keywords : stream.bdacommitchanges, bdaref_41fbbc81-4461-47a2-ba7a-725b696329f3.xml, BdaCommitChanges, bdasup/BdaCommitChanges, BdaCommitChanges function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,28 +82,25 @@ Commit the resources on the underlying device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. BdaCommitChanges is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. BdaCommitChanges is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a>
 
-<a href="..\bdasup\nf-bdasup-bdacheckchanges.md">BdaCheckChanges</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
+
+<a href="..\bdasup\nf-bdasup-bdastartchanges.md">BdaStartChanges</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563409">KSMETHOD_BDA_COMMIT_CHANGES</a>
 
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 
-<a href="..\bdasup\nf-bdasup-bdastartchanges.md">BdaStartChanges</a>
+<a href="..\bdasup\nf-bdasup-bdacheckchanges.md">BdaCheckChanges</a>
 
  
 

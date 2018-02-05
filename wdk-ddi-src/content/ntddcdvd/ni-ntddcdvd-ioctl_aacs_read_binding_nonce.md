@@ -77,6 +77,4 @@ When the CDROM driver receives the IOCTL, it will fail the IOCTL immediately wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

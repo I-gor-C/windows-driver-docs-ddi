@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c8dfc30a-81ac-4342-9996-0c04db80e5e7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSM_SendRPL_OUT, storage.sm_sendrpl_out, hbapiwmi/SM_SendRPL_OUT, hbapiwmi/PSM_SendRPL_OUT, SM_SendRPL_OUT, SM_SendRPL_OUT structure [Storage Devices], PSM_SendRPL_OUT, _SM_SendRPL_OUT, structs-Fibre_831fc75d-cdee-4fba-9dd1-22204e814d50.xml, PSM_SendRPL_OUT structure pointer [Storage Devices]"
+ms.keywords : hbapiwmi/SM_SendRPL_OUT, PSM_SendRPL_OUT, hbapiwmi/PSM_SendRPL_OUT, _SM_SendRPL_OUT, structs-Fibre_831fc75d-cdee-4fba-9dd1-22204e814d50.xml, storage.sm_sendrpl_out, SM_SendRPL_OUT, *PSM_SendRPL_OUT, PSM_SendRPL_OUT structure pointer [Storage Devices], SM_SendRPL_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,4 @@ The WMI tool suite generates a declaration of the SM_SendRPL_OUT structure in <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

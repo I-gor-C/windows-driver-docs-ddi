@@ -164,24 +164,18 @@ The handler is used in conjunction with the <b>AVC_FUNCTION_GET_PIN_DESCRIPTOR</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | avc.h (include Avc.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554160">AVC_FUNCTION_GET_PIN_DESCRIPTOR</a>
+<a href="..\avc\ns-avc-_avc_pin_descriptor.md">AVC_PIN_DESCRIPTOR</a>
 
 <a href="..\ks\nc-ks-pfnksintersecthandlerex.md">AVStrMiniIntersectHandlerEx</a>
 
-<a href="..\avc\ns-avc-_avc_pin_descriptor.md">AVC_PIN_DESCRIPTOR</a>
-
 <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554160">AVC_FUNCTION_GET_PIN_DESCRIPTOR</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 55f06d11-60b7-4dc0-8f78-eb9901d49d1a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_MSGMWITYPE_MULTIMEDIA, rilapitypes/RIL_MSGMWITYPE_FAX, RIL_MSGMWITYPE_PAGER, rilapitypes/RIL_MSGMWITYPE_VIDEOMAIL, RIL_MSGMWITYPE_MULTIMEDIA, RIL_MSGMWITYPE_VIDEOMAIL, RILMSGMWITYPE enumeration [Network Drivers Starting with Windows Vista], RIL_MSGMWITYPE_MAX, rilapitypes/RIL_MSGMWITYPE_TEXT, rilapitypes/RIL_MSGMWITYPE_VOICEMAIL, RIL_MSGMWITYPE_TEXT, RIL_MSGMWITYPE_FAX, rilapitypes/RIL_MSGMWITYPE_MAX, netvista.rilmsgmwitype_2, rilapitypes/RIL_MSGMWITYPE_PAGER, RILMSGMWITYPE, RIL_MSGMWITYPE_VOICEMAIL, rilapitypes/RILMSGMWITYPE
+ms.keywords : rilapitypes/RIL_MSGMWITYPE_FAX, RIL_MSGMWITYPE_VOICEMAIL, RILMSGMWITYPE enumeration [Network Drivers Starting with Windows Vista], RIL_MSGMWITYPE_VIDEOMAIL, RIL_MSGMWITYPE_PAGER, rilapitypes/RIL_MSGMWITYPE_MAX, RIL_MSGMWITYPE_FAX, rilapitypes/RIL_MSGMWITYPE_VIDEOMAIL, rilapitypes/RIL_MSGMWITYPE_TEXT, rilapitypes/RILMSGMWITYPE, rilapitypes/RIL_MSGMWITYPE_PAGER, RILMSGMWITYPE, netvista.rilmsgmwitype_2, RIL_MSGMWITYPE_MULTIMEDIA, rilapitypes/RIL_MSGMWITYPE_MULTIMEDIA, RIL_MSGMWITYPE_TEXT, RIL_MSGMWITYPE_MAX, rilapitypes/RIL_MSGMWITYPE_VOICEMAIL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -104,7 +104,4 @@ typedef enum _RILMSGMWITYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0F5BEDBF-6871-4343-88D1-85E7620171EF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_waitforsynchronizationobjectfromcpu, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, WaitAny, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices]
+ms.keywords : display.d3dddicb_waitforsynchronizationobjectfromcpu, WaitAny, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,9 +107,7 @@ The wait condition is considered to be satisfied when any of the input synchroni
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

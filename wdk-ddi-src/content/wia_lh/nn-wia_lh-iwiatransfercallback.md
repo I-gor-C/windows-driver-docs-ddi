@@ -65,8 +65,5 @@ The methods on this interface depend on the <b>IWiaTransfer</b> and <b>IWiaPrevi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wia_lh.h |
-| **DLL** |  |

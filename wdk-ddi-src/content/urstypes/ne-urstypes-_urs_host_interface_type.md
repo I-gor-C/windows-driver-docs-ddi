@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E019CCED-3511-4B7B-B6C9-09FF31B0547A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : urstypes/UrsHostInterfaceTypeXhci, UrsHostInterfaceTypeEhci, URS_HOST_INTERFACE_TYPE, urstypes/URS_HOST_INTERFACE_TYPE, UrsHostInterfaceTypeXhci, URS_HOST_INTERFACE_TYPE enumeration [Buses], _URS_HOST_INTERFACE_TYPE, urstypes/UrsHostInterfaceTypeOther, UrsHostInterfaceTypeOther, urstypes/UrsHostInterfaceTypeEhci, buses.urs_host_interface_type
+ms.keywords : buses.urs_host_interface_type, UrsHostInterfaceTypeXhci, urstypes/UrsHostInterfaceTypeEhci, UrsHostInterfaceTypeOther, urstypes/UrsHostInterfaceTypeXhci, urstypes/UrsHostInterfaceTypeOther, URS_HOST_INTERFACE_TYPE, _URS_HOST_INTERFACE_TYPE, urstypes/URS_HOST_INTERFACE_TYPE, URS_HOST_INTERFACE_TYPE enumeration [Buses], UrsHostInterfaceTypeEhci
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,6 @@ typedef enum _URS_HOST_INTERFACE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | urstypes.h (include Urscx.h) |

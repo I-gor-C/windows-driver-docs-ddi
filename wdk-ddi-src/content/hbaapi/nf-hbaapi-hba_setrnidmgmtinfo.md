@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0c4fbe80-03f2-4ee0-b766-c1ccaa8e83c2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SetRNIDMgmtInfo, hbaapi/HBA_SetRNIDMgmtInfo, fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml, HBA_SetRNIDMgmtInfo routine [Storage Devices], storage.hba_setrnidmgmtinfo
+ms.keywords : storage.hba_setrnidmgmtinfo, HBA_SetRNIDMgmtInfo, HBA_SetRNIDMgmtInfo routine [Storage Devices], fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml, hbaapi/HBA_SetRNIDMgmtInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,14 +98,10 @@ Returned if an unspecified error occurred that prevented the routine from progra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

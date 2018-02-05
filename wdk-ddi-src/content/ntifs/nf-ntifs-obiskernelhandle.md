@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8ebc3b7f-5b4b-4e92-95fe-1918b51d27ad
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/ObIsKernelHandle, ObIsKernelHandle routine [Installable File System Drivers], ObIsKernelHandle, obref_e80e117f-6001-4c6d-980c-413e538f3bb2.xml, ifsk.obiskernelhandle
+ms.keywords : ObIsKernelHandle routine [Installable File System Drivers], obref_e80e117f-6001-4c6d-980c-413e538f3bb2.xml, ifsk.obiskernelhandle, ntifs/ObIsKernelHandle, ObIsKernelHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,11 @@ You can use kernel handles only in kernel mode.  A driver can mark a handle as a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

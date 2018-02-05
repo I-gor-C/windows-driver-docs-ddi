@@ -102,24 +102,19 @@ BOOLEAN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | DIRQL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a>
-
-<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
-
 <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
 
+<a href="..\storport\nf-storport-storportgetmsiinfo.md">StorPortGetMSIInfo</a>
+
 <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+
+<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 39D3265C-ED32-420F-9216-EFD0EDC27C84
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndkpi/NDK_OBJECT_HEADER_RESERVED_BLOCK, netvista.ndk_object_header_reserved_block, _NDK_OBJECT_HEADER_RESERVED_BLOCK, PNDK_OBJECT_HEADER_RESERVED_BLOCK, ndkpi/PNDK_OBJECT_HEADER_RESERVED_BLOCK, PNDK_OBJECT_HEADER_RESERVED_BLOCK structure pointer [Network Drivers Starting with Windows Vista], NDK_OBJECT_HEADER_RESERVED_BLOCK structure [Network Drivers Starting with Windows Vista], NDK_OBJECT_HEADER_RESERVED_BLOCK
+ms.keywords : netvista.ndk_object_header_reserved_block, NDK_OBJECT_HEADER_RESERVED_BLOCK structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_OBJECT_HEADER_RESERVED_BLOCK, _NDK_OBJECT_HEADER_RESERVED_BLOCK, NDK_OBJECT_HEADER_RESERVED_BLOCK, PNDK_OBJECT_HEADER_RESERVED_BLOCK structure pointer [Network Drivers Starting with Windows Vista], PNDK_OBJECT_HEADER_RESERVED_BLOCK, ndkpi/NDK_OBJECT_HEADER_RESERVED_BLOCK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ The <b>NDK_OBJECT_HEADER_RESERVED_BLOCK</b> structure is used in the <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also

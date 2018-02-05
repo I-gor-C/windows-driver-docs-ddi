@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4108EB7A-F8FB-4FA5-8426-BB434E89AF06
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcCopyReadEx routine [Installable File System Drivers], ifsk.cccopyreadex, ntifs/CcCopyReadEx, CcCopyReadEx
+ms.keywords : ifsk.cccopyreadex, ntifs/CcCopyReadEx, CcCopyReadEx routine [Installable File System Drivers], CcCopyReadEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,24 +106,22 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 
 <a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
-
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-
-<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
 
 <a href="..\ntifs\nf-ntifs-ccfastcopyread.md">CcFastCopyRead</a>
 

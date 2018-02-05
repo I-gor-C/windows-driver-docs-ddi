@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 20d61d23-4151-4a23-8963-6e38a08f391e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxPrefixTableLookupName function [Installable File System Drivers], ifsk.rxprefixtablelookupname, RxPrefixTableLookupName, rxref_e46fe04e-07a6-4733-936e-e70a51009618.xml, prefix/RxPrefixTableLookupName
+ms.keywords : rxref_e46fe04e-07a6-4733-936e-e70a51009618.xml, prefix/RxPrefixTableLookupName, RxPrefixTableLookupName, ifsk.rxprefixtablelookupname, RxPrefixTableLookupName function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSHIMOPTS, SHIMOPTS"
+req.typenames : SHIMOPTS, *PSHIMOPTS
 req.product : Windows 10 or later.
 ---
 
@@ -100,20 +100,16 @@ On checked builds, <b>RxPrefixTableLookupName</b> causes the system to ASSERT if
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | prefix.h (include Prefix.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\prefix\nf-prefix-rxpreleaseprefixtablelock.md">RxpReleasePrefixTableLock</a>
-
 <a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
+
+<a href="..\prefix\nf-prefix-rxpreleaseprefixtablelock.md">RxpReleasePrefixTableLock</a>
 
 <a href="..\prefix\nf-prefix-rxpacquireprefixtablelockshared.md">RxpAcquirePrefixTableLockShared</a>
 

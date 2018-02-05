@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fe00b980-4bb5-4ad7-84c0-99d47d2f7c51
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlOemToUnicodeN, RtlOemToUnicodeN routine [Installable File System Drivers], ifsk.rtloemtounicoden, rtlref_7159eedf-5a97-4dc5-a9e8-c4a7f2ac2ee2.xml, ntifs/RtlOemToUnicodeN
+ms.keywords : RtlOemToUnicodeN routine [Installable File System Drivers], RtlOemToUnicodeN, ntifs/RtlOemToUnicodeN, rtlref_7159eedf-5a97-4dc5-a9e8-c4a7f2ac2ee2.xml, ifsk.rtloemtounicoden
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,14 +96,11 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

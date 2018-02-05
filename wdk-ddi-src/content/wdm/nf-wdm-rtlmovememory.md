@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f6727247-e704-42d7-b4f1-ce7d20e317bb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlMoveMemory, kernel.rtlmovememory, wdm/RtlMoveMemory, k109_5731ba5b-a7a5-4883-87cf-543768a29a93.xml, RtlMoveMemory routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.rtlmovememory, RtlMoveMemory routine [Kernel-Mode Driver Architecture], k109_5731ba5b-a7a5-4883-87cf-543768a29a93.xml, RtlMoveMemory, wdm/RtlMoveMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -83,12 +83,11 @@ Callers of <b>RtlMoveMemory</b> can be running at any IRQL if the source and des
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA |
 

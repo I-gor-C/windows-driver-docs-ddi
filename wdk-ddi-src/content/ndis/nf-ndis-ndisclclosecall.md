@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4d1a7451-8c0f-4df8-85c5-14aaaa9afd94
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisClCloseCall, condis_client_ref_6d047338-0482-4d26-8dfa-4c07502fb8a2.xml, ndis/NdisClCloseCall, NdisClCloseCall function [Network Drivers Starting with Windows Vista], netvista.ndisclclosecall
+ms.keywords : condis_client_ref_6d047338-0482-4d26-8dfa-4c07502fb8a2.xml, NdisClCloseCall function [Network Drivers Starting with Windows Vista], NdisClCloseCall, netvista.ndisclclosecall, ndis/NdisClCloseCall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,8 +88,8 @@ Specifies the size, in bytes, at
 When 
      <b>NdisClCloseCall</b> returns anything other than NDIS_STATUS_PENDING, the client should make an
      internal call to its 
-     <mshelp:link keywords="netvista.protocolclclosecallcomplete" tabindex="0"><i>
-     ProtocolClCloseCallComplete</i></mshelp:link> function. Otherwise, NDIS calls the client's 
+     <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">
+     ProtocolClCloseCallComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClCloseCallComplete</i> function when this operation is completed.
 
 ## Remarks
@@ -101,14 +101,14 @@ Clients usually call
 To close an established call, whether the call was initiated by the client with 
       <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a> or was offered by a remote
       peer and accepted by the client's 
-      <mshelp:link keywords="netvista.protocolclincomingcall" tabindex="0"><i>
-      ProtocolClIncomingCall</i></mshelp:link> function.
+      <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">
+      ProtocolClIncomingCall</a> function.
 
 </li>
 <li>
 From the 
-      <mshelp:link keywords="netvista.protocolclincomingclosecall" tabindex="0"><i>
-      ProtocolClIncomingCloseCall</i></mshelp:link> function to tear down an established call.
+      <a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">
+      ProtocolClIncomingCloseCall</a> function to tear down an established call.
 
 This occurs when the remote party closes an incoming call that the remote party originally initiated
       and that the client accepted. For client-initiated outgoing calls, this occurs either when the remote
@@ -118,8 +118,8 @@ This occurs when the remote party closes an incoming call that the remote party 
 </li>
 <li>
 From the 
-      <mshelp:link keywords="netvista.protocolclmakecallcomplete" tabindex="0"><i>
-      ProtocolClMakeCallComplete</i></mshelp:link> function to tear down a client-initiated attempt to make an outgoing
+      <a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">
+      ProtocolClMakeCallComplete</a> function to tear down a client-initiated attempt to make an outgoing
       call.
 
 This occurs if the call manager has modified the client-specified call parameters passed to 
@@ -136,8 +136,8 @@ This occurs if a QoS change proposed by the other party on the VC is unacceptabl
 </li>
 <li>
 From the 
-      <mshelp:link keywords="netvista.protocolclmodifycallqoscomplete" tabindex="0"><i>
-      ProtocolClModifyCallQoSComplete</i></mshelp:link> function to tear down an established call.
+      <a href="..\ndis\nc-ndis-protocol_cl_modify_call_qos_complete.md">
+      ProtocolClModifyCallQoSComplete</a> function to tear down an established call.
 
 This occurs if a client-proposed QoS change on the VC is not accepted and the CM-modified QoS
       returned to 
@@ -147,8 +147,8 @@ This occurs if a client-proposed QoS change on the VC is not accepted and the CM
 </ul>Before calling 
     <b>NdisClCloseCall</b>, a protocol must ensure that all its outstanding send packets have been returned
     to its 
-    <mshelp:link keywords="netvista.protocolcosendnetbufferlistscomplete" tabindex="0"><i>
-    ProtocolCoSendNetBufferListsComplete</i></mshelp:link> function. (Packets sent via 
+    <a href="..\ndis\nc-ndis-protocol_co_send_net_buffer_lists_complete.md">
+    ProtocolCoSendNetBufferListsComplete</a> function. (Packets sent via 
     <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a> are
     always returned asynchronously to 
     <i>ProtocolCoSendNetBufferListsComplete</i>.) After calling 
@@ -179,8 +179,8 @@ As remote parties to a client-initiated multipoint call request that their conne
     <i>ProtocolClDropParty</i> function as long as more than one outstanding party exists on the
     client-created multipoint VC. When the last remaining remote party closes its connection, NDIS calls the
     client's 
-    <mshelp:link keywords="netvista.protocolclincomingclosecall" tabindex="0"><i>
-    ProtocolClIncomingCloseCall</i></mshelp:link> function instead. Consequently, the 
+    <a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">
+    ProtocolClIncomingCloseCall</a> function instead. Consequently, the 
     <i>ProtocolClIncomingCloseCall</i> function of any client that sets up multipoint connections must
     identify the last remaining party on its multipoint VCs and pass the appropriate 
     <i>NdisPartyHandle</i> to 
@@ -203,45 +203,43 @@ After the client releases an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">ProtocolClIncomingCloseCall</a>
-
-<a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">ProtocolClMakeCallComplete</a>
-
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_close_call.md">ProtocolCmCloseCall</a>
+<a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
 
 <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 
-<mshelp:link keywords="netvista.protocolclmodifycallqoscomplete" tabindex="0"><i>
-   ProtocolClModifyCallQoSComplete</i></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
-<a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
 
-<a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
+<a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">ProtocolClMakeCallComplete</a>
 
-<mshelp:link keywords="netvista.protocolclincomingcallqoschange" tabindex="0"><i>
-   ProtocolClIncomingCallQoSChange</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cl_modify_call_qos_complete.md">
+   ProtocolClModifyCallQoSComplete</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_send_net_buffer_lists_complete.md">
+   ProtocolCoSendNetBufferListsComplete</a>
 
 <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">ProtocolClIncomingCloseCall</a>
 
-<mshelp:link keywords="netvista.protocolcosendnetbufferlistscomplete" tabindex="0"><i>
-   ProtocolCoSendNetBufferListsComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cm_close_call.md">ProtocolCmCloseCall</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_call_qos_change.md">
+   ProtocolClIncomingCallQoSChange</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
+
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 16bde6b6-6e05-4a4d-a0c3-79bb811305d1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwdeletekey, ZwDeleteKey, k111_b55bc28e-3539-424e-86b5-f7457e90cc61.xml, NtDeleteKey, ZwDeleteKey routine [Kernel-Mode Driver Architecture], wdm/NtDeleteKey, wdm/ZwDeleteKey
+ms.keywords : ZwDeleteKey, wdm/ZwDeleteKey, kernel.zwdeletekey, ZwDeleteKey routine [Kernel-Mode Driver Architecture], wdm/NtDeleteKey, k111_b55bc28e-3539-424e-86b5-f7457e90cc61.xml, NtDeleteKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,12 +74,11 @@ For more information about working with registry keys, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport) |
 
@@ -87,9 +86,9 @@ For more information about working with registry keys, see <a href="https://msdn
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-
 <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
  
 

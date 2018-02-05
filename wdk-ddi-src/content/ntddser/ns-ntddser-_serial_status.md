@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : F77EF32F-FAB6-4800-9241-5AAA9885DEF5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_SERIAL_STATUS, *PSERIAL_STATUS, PSERIAL_STATUS, PSERIAL_STATUS structure pointer [Serial Ports], serports.serial_status, SERIAL_STATUS structure [Serial Ports], ntddser/PSERIAL_STATUS, ntddser/SERIAL_STATUS, SERIAL_STATUS"
+ms.keywords : "_SERIAL_STATUS, ntddser/SERIAL_STATUS, *PSERIAL_STATUS, PSERIAL_STATUS structure pointer [Serial Ports], SERIAL_STATUS, PSERIAL_STATUS, ntddser/PSERIAL_STATUS, SERIAL_STATUS structure [Serial Ports], serports.serial_status"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -146,9 +146,6 @@ This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddser.h |
 
 ## See Also

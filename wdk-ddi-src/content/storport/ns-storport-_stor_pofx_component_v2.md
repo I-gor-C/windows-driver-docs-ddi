@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2FF6B375-C213-48AC-9497-6CE3F1170BAA
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTOR_POFX_COMPONENT_V2 structure pointer [Storage Devices], storport/PSTOR_POFX_COMPONENT_V2, storage.stor_pofx_component_v2, _STOR_POFX_COMPONENT_V2, STOR_POFX_COMPONENT_V2 structure [Storage Devices], storport/STOR_POFX_COMPONENT, PSTOR_POFX_COMPONENT_V2, STOR_POFX_COMPONENT_V2, *PSTOR_POFX_COMPONENT_V2
+ms.keywords : STOR_POFX_COMPONENT_V2, _STOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2 structure pointer [Storage Devices], *PSTOR_POFX_COMPONENT_V2, storport/STOR_POFX_COMPONENT, STOR_POFX_COMPONENT_V2 structure [Storage Devices], storport/PSTOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2, storage.stor_pofx_component_v2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTOR_POFX_COMPONENT_V2, STOR_POFX_COMPONENT_V2"
+req.typenames : STOR_POFX_COMPONENT_V2, *PSTOR_POFX_COMPONENT_V2
 req.product : Windows 10 or later.
 ---
 
@@ -105,18 +105,16 @@ For a unit device component, if an additional F-state is included in the <b>FSta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | storport.h |
 
 ## See Also
 
 <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a>
 
-<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
-
 <a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a>
+
+<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
 
  
 

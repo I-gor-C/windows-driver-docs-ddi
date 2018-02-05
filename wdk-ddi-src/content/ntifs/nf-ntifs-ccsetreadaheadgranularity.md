@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3ab0c8b8-1f41-48b7-9c42-ea843ebcd82e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ccsetreadaheadgranularity, CcSetReadAheadGranularity, CcSetReadAheadGranularity routine [Installable File System Drivers], ccref_9b995224-0e59-43c6-b827-c15d9ae6e86c.xml, ntifs/CcSetReadAheadGranularity
+ms.keywords : ccref_9b995224-0e59-43c6-b827-c15d9ae6e86c.xml, ifsk.ccsetreadaheadgranularity, CcSetReadAheadGranularity routine [Installable File System Drivers], ntifs/CcSetReadAheadGranularity, CcSetReadAheadGranularity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,24 +73,20 @@ After <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
-
-<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
 
 <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 
 <a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
+
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
 
  
 

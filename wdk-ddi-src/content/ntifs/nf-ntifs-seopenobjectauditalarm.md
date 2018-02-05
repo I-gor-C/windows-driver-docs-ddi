@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a4310cf8-1518-4d25-b2f9-a232ddd9c535
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/SeOpenObjectAuditAlarm, seref_87dbea09-cd36-40c2-8241-16c8180f1945.xml, SeOpenObjectAuditAlarm routine [Installable File System Drivers], SeOpenObjectAuditAlarm, ifsk.seopenobjectauditalarm
+ms.keywords : seref_87dbea09-cd36-40c2-8241-16c8180f1945.xml, SeOpenObjectAuditAlarm routine [Installable File System Drivers], SeOpenObjectAuditAlarm, ntifs/SeOpenObjectAuditAlarm, ifsk.seopenobjectauditalarm
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,36 +112,33 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-seopenobjectfordeleteauditalarm.md">SeOpenObjectForDeleteAuditAlarm</a>
-
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-
-<a href="..\ntifs\nf-ntifs-sedeleteobjectauditalarm.md">SeDeleteObjectAuditAlarm</a>
 
 <a href="..\ntifs\nf-ntifs-sesetaccessstategenericmapping.md">SeSetAccessStateGenericMapping</a>
 
+<a href="..\ntifs\nf-ntifs-seauditingfileorglobalevents.md">SeAuditingFileOrGlobalEvents</a>
+
+<a href="..\ntifs\nf-ntifs-sedeleteobjectauditalarm.md">SeDeleteObjectAuditAlarm</a>
+
 <a href="..\ntifs\nf-ntifs-seauditingfileevents.md">SeAuditingFileEvents</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\wdm\ns-wdm-_access_state.md">ACCESS_STATE</a>
 
 <a href="..\ntifs\nf-ntifs-selocksubjectcontext.md">SeLockSubjectContext</a>
 
-<a href="..\ntifs\nf-ntifs-seauditingfileorglobalevents.md">SeAuditingFileOrGlobalEvents</a>
-
 <a href="..\ntifs\nf-ntifs-seunlocksubjectcontext.md">SeUnlockSubjectContext</a>
 
-<a href="..\wdm\ns-wdm-_access_state.md">ACCESS_STATE</a>
+<a href="..\ntifs\nf-ntifs-seopenobjectfordeleteauditalarm.md">SeOpenObjectForDeleteAuditAlarm</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

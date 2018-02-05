@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d2ac3147-fe34-4643-b735-c795b6ba4768
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_removecallforwarding, RIL_RemoveCallForwarding, rilapi/RIL_RemoveCallForwarding, RIL_RemoveCallForwarding method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_RemoveCallForwarding method [Network Drivers Starting with Windows Vista], netvista.ril_removecallforwarding, rilapi/RIL_RemoveCallForwarding, RIL_RemoveCallForwarding
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

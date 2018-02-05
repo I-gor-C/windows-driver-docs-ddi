@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a9e2537d-4d67-4495-b391-55f885b7041a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, PcRegisterAdapterPowerManagement function [Audio Devices], PcRegisterAdapterPowerManagement, audio.pcregisteradapterpowermanagement, portcls/PcRegisterAdapterPowerManagement
+ms.keywords : PcRegisterAdapterPowerManagement, PcRegisterAdapterPowerManagement function [Audio Devices], portcls/PcRegisterAdapterPowerManagement, audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, audio.pcregisteradapterpowermanagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,14 +70,11 @@ Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows 2000. Available starting in Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

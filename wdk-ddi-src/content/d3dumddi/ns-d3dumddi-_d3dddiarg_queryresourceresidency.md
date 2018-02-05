@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14c0cb12-3ed0-4c78-befa-6da9e8cd7dbc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_QUERYRESOURCERESIDENCY, UMDisplayDriver_param_Structs_46a460d2-e511-43fd-9906-b9a47762f9a7.xml, D3DDDIARG_QUERYRESOURCERESIDENCY structure [Display Devices], D3DDDIARG_QUERYRESOURCERESIDENCY, display.d3dddiarg_queryresourceresidency, d3dumddi/D3DDDIARG_QUERYRESOURCERESIDENCY"
+ms.keywords : D3DDDIARG_QUERYRESOURCERESIDENCY structure [Display Devices], D3DDDIARG_QUERYRESOURCERESIDENCY, _D3DDDIARG_QUERYRESOURCERESIDENCY, display.d3dddiarg_queryresourceresidency, d3dumddi/D3DDDIARG_QUERYRESOURCERESIDENCY, UMDisplayDriver_param_Structs_46a460d2-e511-43fd-9906-b9a47762f9a7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _D3DDDIARG_QUERYRESOURCERESIDENCY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

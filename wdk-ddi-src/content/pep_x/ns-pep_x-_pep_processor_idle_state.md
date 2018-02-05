@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 10CAB3CA-83BF-421B-81F5-2B42790B8928
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PROCESSOR_IDLE_STATE structure [Kernel-Mode Driver Architecture], kernel.pep_processor_idle_state, PEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE, _PEP_PROCESSOR_IDLE_STATE, pep_x/PPEP_PROCESSOR_IDLE_STATE, PPEP_PROCESSOR_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_STATE, pep_x/PEP_PROCESSOR_IDLE_STATE
+ms.keywords : PPEP_PROCESSOR_IDLE_STATE, _PEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE, kernel.pep_processor_idle_state, pep_x/PEP_PROCESSOR_IDLE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ The <b>IdleStates</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_query_id
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
 ## See Also

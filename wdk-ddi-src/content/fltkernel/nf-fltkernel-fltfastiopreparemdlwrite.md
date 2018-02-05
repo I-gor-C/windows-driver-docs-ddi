@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7C48D179-35FA-44E1-B959-BD857AAA28E1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FsRtlPrepareMdlWriteDev, FltFastIoPrepareMdlWrite, ifsk.fltfastiopreparemdlwrite, FsRtlPrepareMdlWriteDev routine [Installable File System Drivers], FsRtlPrepareMdlWriteDev
+ms.keywords : ifsk.fltfastiopreparemdlwrite, FsRtlPrepareMdlWriteDev routine [Installable File System Drivers], FsRtlPrepareMdlWriteDev, FltFastIoPrepareMdlWrite, fltkernel/FsRtlPrepareMdlWriteDev
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,22 +102,19 @@ Even if the call to <b>FltFastIoPrepareMdlWrite</b> fails, one or more MDLs migh
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\fltkernel\nf-fltkernel-fltfastiomdlwritecomplete.md">FltFastIoMdlWriteComplete</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
 
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md">FsRtlCopyWrite</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltfastiomdlwritecomplete.md">FltFastIoMdlWriteComplete</a>
 
  
 

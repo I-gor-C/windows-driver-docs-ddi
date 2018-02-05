@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 970c725b-4ea0-42b7-a373-83cb463cd80d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : Write method [Windows Debugging], ExtRemoteData class, ExtRemoteData, EngExtCpp_Ref_1288bed4-2f61-4af4-a226-5157a0622f42.xml, ExtRemoteData::Write, Write, debugger.extremotedata_write, Write method [Windows Debugging], ExtRemoteData class [Windows Debugging], Write method
+ms.keywords : ExtRemoteData::Write, ExtRemoteData, ExtRemoteData class [Windows Debugging], Write method, EngExtCpp_Ref_1288bed4-2f61-4af4-a226-5157a0622f42.xml, debugger.extremotedata_write, Write, Write method [Windows Debugging], Write method [Windows Debugging], ExtRemoteData class
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -77,14 +77,9 @@ ext_remote_data.Write();</pre>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |
 
 ## See Also
 

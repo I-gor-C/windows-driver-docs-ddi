@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 7dc42f9a-2e55-4ae5-a951-7d1d3b14564b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : sti/LPSTINOTIFY, *LPSTINOTIFY, stifnc_2cee63fa-a7a5-4a15-be83-e536a504bcb7.xml, _STINOTIFY, STINOTIFY, LPSTINOTIFY, STINOTIFY structure [Imaging Devices], LPSTINOTIFY structure pointer [Imaging Devices], sti/STINOTIFY, image.stinotify
+ms.keywords : image.stinotify, STINOTIFY, stifnc_2cee63fa-a7a5-4a15-be83-e536a504bcb7.xml, _STINOTIFY, sti/LPSTINOTIFY, *LPSTINOTIFY, LPSTINOTIFY structure pointer [Imaging Devices], STINOTIFY structure [Imaging Devices], sti/STINOTIFY, LPSTINOTIFY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,4 @@ GUID of the event. For more information, see <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sti.h (include Sti.h) |

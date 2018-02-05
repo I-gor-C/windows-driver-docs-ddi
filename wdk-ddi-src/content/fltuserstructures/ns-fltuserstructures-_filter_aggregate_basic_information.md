@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c60ac4b8-3e55-42c8-a693-4fc6bbec0de8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_FILTER_AGGREGATE_BASIC_INFORMATION, PFILTER_AGGREGATE_BASIC_INFORMATION structure pointer [Installable File System Drivers], fltuserstructures/PFILTER_AGGREGATE_BASIC_INFORMATION, fltuserstructures/FILTER_AGGREGATE_BASIC_INFORMATION, *PFILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION structure [Installable File System Drivers], PFILTER_AGGREGATE_BASIC_INFORMATION, ifsk.filter_aggregate_basic_information, FILTER_AGGREGATE_BASIC_INFORMATION, FltSystemStructures_b8f9faf4-0b81-4536-8f86-1e3f7938c3a4.xml"
+ms.keywords : FltSystemStructures_b8f9faf4-0b81-4536-8f86-1e3f7938c3a4.xml, ifsk.filter_aggregate_basic_information, *PFILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION structure [Installable File System Drivers], _FILTER_AGGREGATE_BASIC_INFORMATION, fltuserstructures/PFILTER_AGGREGATE_BASIC_INFORMATION, fltuserstructures/FILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION, PFILTER_AGGREGATE_BASIC_INFORMATION, PFILTER_AGGREGATE_BASIC_INFORMATION structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION"
+req.typenames : FILTER_AGGREGATE_BASIC_INFORMATION, *PFILTER_AGGREGATE_BASIC_INFORMATION
 ---
 
 # _FILTER_AGGREGATE_BASIC_INFORMATION structure
@@ -112,28 +112,26 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available starting with Microsoft Windows Server 2003 SP1 and Windows XP SP2 with filter manager rollup.  For more information on the filter manager rollup package for Windows XP SP2, see article 914882, "The filter manager rollup package for Windows XP SP2," in the Microsoft Knowledge Base. This structure is available starting with Microsoft Windows Server 2003 SP1 and Windows XP SP2 with filter manager rollup.  For more information on the filter manager rollup package for Windows XP SP2, see article 914882, "The filter manager rollup package for Windows XP SP2," in the Microsoft Knowledge Base. |
 | **Header** | fltuserstructures.h (include FltUser.h, FltKernel.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540488">FilterFindNext</a>
-
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
-
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md">FILTER_FULL_INFORMATION</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540485">FilterFindFirst</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540481">FilterFindClose</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540500">FilterGetInformation</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md">FILTER_FULL_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540481">FilterFindClose</a>
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540485">FilterFindFirst</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540488">FilterFindNext</a>
 
  
 

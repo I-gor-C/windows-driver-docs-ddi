@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6f714e13-a844-4afa-9002-52a5318a7659
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.feature_data_sector_erasable, FEATURE_DATA_SECTOR_ERASABLE structure [Storage Devices], PFEATURE_DATA_SECTOR_ERASABLE structure pointer [Storage Devices], PFEATURE_DATA_SECTOR_ERASABLE, FEATURE_DATA_SECTOR_ERASABLE, ntddmmc/PFEATURE_DATA_SECTOR_ERASABLE, _FEATURE_DATA_SECTOR_ERASABLE, structs-CD-ROM_e48f2e10-1b6d-4d5a-9e8d-b1fc45fd8509.xml, ntddmmc/FEATURE_DATA_SECTOR_ERASABLE, *PFEATURE_DATA_SECTOR_ERASABLE
+ms.keywords : PFEATURE_DATA_SECTOR_ERASABLE structure pointer [Storage Devices], FEATURE_DATA_SECTOR_ERASABLE structure [Storage Devices], PFEATURE_DATA_SECTOR_ERASABLE, structs-CD-ROM_e48f2e10-1b6d-4d5a-9e8d-b1fc45fd8509.xml, ntddmmc/PFEATURE_DATA_SECTOR_ERASABLE, ntddmmc/FEATURE_DATA_SECTOR_ERASABLE, *PFEATURE_DATA_SECTOR_ERASABLE, FEATURE_DATA_SECTOR_ERASABLE, storage.feature_data_sector_erasable, _FEATURE_DATA_SECTOR_ERASABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,9 +63,6 @@ When queried, devices supporting this feature must return the information indica
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

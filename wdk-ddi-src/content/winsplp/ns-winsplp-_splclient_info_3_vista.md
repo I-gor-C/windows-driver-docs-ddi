@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 076ECB20-CFAD-4A16-9B01-6936E0DD7E50
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.splclient_info_3_vista, SPLCLIENT_INFO_3_VISTA structure [Print Devices], *LPSPLCLIENT_INFO_3, *PSPLCLIENT_INFO_3, _SPLCLIENT_INFO_3_VISTA, SPLCLIENT_INFO_3, winsplp/SPLCLIENT_INFO_3_VISTA, SPLCLIENT_INFO_3_VISTA
+ms.keywords : SPLCLIENT_INFO_3_VISTA, SPLCLIENT_INFO_3, _SPLCLIENT_INFO_3_VISTA, *PSPLCLIENT_INFO_3, winsplp/SPLCLIENT_INFO_3_VISTA, print.splclient_info_3_vista, SPLCLIENT_INFO_3_VISTA structure [Print Devices], *LPSPLCLIENT_INFO_3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -105,7 +105,4 @@ Specifies the client machine architecture.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h |

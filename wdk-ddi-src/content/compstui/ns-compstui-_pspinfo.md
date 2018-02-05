@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 80a15ee4-e160-49fc-9c61-a14b14d19751
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.pspinfo, PPSPINFO, compstui/PPSPINFO, *PPSPINFO, PPSPINFO structure pointer [Print Devices], PSPINFO structure [Print Devices], _PSPINFO, cpsuifnc_0e5bb634-1f21-4e4d-aee9-c45ff0dc1c26.xml, compstui/PSPINFO, PSPINFO
+ms.keywords : PSPINFO, print.pspinfo, cpsuifnc_0e5bb634-1f21-4e4d-aee9-c45ff0dc1c26.xml, PPSPINFO structure pointer [Print Devices], _PSPINFO, compstui/PSPINFO, PPSPINFO, compstui/PPSPINFO, *PPSPINFO, PSPINFO structure [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,7 +98,4 @@ if (Msg == WM_INITDIALOG) {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

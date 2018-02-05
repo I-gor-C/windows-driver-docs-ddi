@@ -86,14 +86,9 @@ On completion of handling the sequence, the client driver notifies the NFC CX th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | nfccx.h (include Ncidef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

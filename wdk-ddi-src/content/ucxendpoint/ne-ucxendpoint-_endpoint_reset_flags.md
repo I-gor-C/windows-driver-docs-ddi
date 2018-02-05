@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3775836D-DC1E-47B4-8186-2AC329825FCE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.endpoint_reset_flags, ENDPOINT_RESET_FLAGS enumeration [Buses], ENDPOINT_RESET_FLAGS, ucxendpoint/ENDPOINT_RESET_FLAGS, _ENDPOINT_RESET_FLAGS, FlagEndpointResetPreserveTransferState, ucxendpoint/FlagEndpointResetPreserveTransferState
+ms.keywords : FlagEndpointResetPreserveTransferState, ENDPOINT_RESET_FLAGS, ucxendpoint/ENDPOINT_RESET_FLAGS, _ENDPOINT_RESET_FLAGS, ucxendpoint/FlagEndpointResetPreserveTransferState, buses.endpoint_reset_flags, ENDPOINT_RESET_FLAGS enumeration [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -63,9 +63,6 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
 ## See Also

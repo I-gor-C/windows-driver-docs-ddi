@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3807BD27-FAE4-4E12-A825-A9FAFB7A6ACA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_SUBMITCOMMANDTOHWQUEUE, d3dkmthk/D3DKMT_SUBMITCOMMANDTOHWQUEUE, D3DKMT_SUBMITCOMMANDTOHWQUEUE, D3DKMT_SUBMITCOMMANDTOHWQUEUE structure [Display Devices], display.d3dkmt_submitcommandtohwqueue"
+ms.keywords : display.d3dkmt_submitcommandtohwqueue, D3DKMT_SUBMITCOMMANDTOHWQUEUE structure [Display Devices], d3dkmthk/D3DKMT_SUBMITCOMMANDTOHWQUEUE, D3DKMT_SUBMITCOMMANDTOHWQUEUE, _D3DKMT_SUBMITCOMMANDTOHWQUEUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,7 +94,4 @@ The array of primaries written by this command buffer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h |

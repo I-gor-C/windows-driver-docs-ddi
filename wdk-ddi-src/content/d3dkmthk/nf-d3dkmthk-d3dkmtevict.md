@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 010F7CB0-F930-47FF-91DF-D95B21FC76A0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTEvict, display.d3dkmtevict, D3DKMTEvict function [Display Devices], d3dkmthk/D3DKMTEvict
+ms.keywords : d3dkmthk/D3DKMTEvict, D3DKMTEvict function [Display Devices], display.d3dkmtevict, D3DKMTEvict
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,14 +96,11 @@ Once the eviction request is queued, it is illegal to access the underlying allo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 

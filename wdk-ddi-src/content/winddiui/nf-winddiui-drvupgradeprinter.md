@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5a8a764d-48bf-48f9-831a-ac22767aeca6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvUpgradePrinter function [Print Devices], winddiui/DrvUpgradePrinter, print_interface-graphics_ab060948-18bc-4b0f-a504-320083fcb173.xml, DrvUpgradePrinter, print.drvupgradeprinter
+ms.keywords : winddiui/DrvUpgradePrinter, DrvUpgradePrinter, DrvUpgradePrinter function [Print Devices], print.drvupgradeprinter, print_interface-graphics_ab060948-18bc-4b0f-a504-320083fcb173.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -110,22 +110,17 @@ For Windows NT 4.0 and previous, when the spooler calls <b>DrvUpgradePrinter</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="..\winddiui\ns-winddiui-_driver_upgrade_info_1.md">DRIVER_UPGRADE_INFO_1</a>
 
 <a href="..\winddiui\ns-winddiui-_driver_upgrade_info_2.md">DRIVER_UPGRADE_INFO_2</a>
 
 <a href="..\winddiui\nf-winddiui-drvprinterevent.md">DrvPrinterEvent</a>
-
-<a href="..\winddiui\ns-winddiui-_driver_upgrade_info_1.md">DRIVER_UPGRADE_INFO_1</a>
 
  
 

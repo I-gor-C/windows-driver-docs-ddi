@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2e0672b6-e692-43c8-8a20-7947c854c4c9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-storport_2aea4a7c-1734-45e0-9aeb-09ffa8923641.xml, storport/StorEventAdapterAssociation, storport/STOR_EVENT_ASSOCIATION_ENUM, storport/StorEventInvalidAssociation, StorEventTargetAssociation, STOR_EVENT_ASSOCIATION_ENUM, StorEventAdapterAssociation, storport/StorEventLunAssociation, StorEventInvalidAssociation, _STOR_EVENT_ASSOCIATION_ENUM, StorEventLunAssociation, storport/StorEventTargetAssociation, storage.stor_event_association_enum, STOR_EVENT_ASSOCIATION_ENUM enumeration [Storage Devices]
+ms.keywords : STOR_EVENT_ASSOCIATION_ENUM enumeration [Storage Devices], structs-storport_2aea4a7c-1734-45e0-9aeb-09ffa8923641.xml, storage.stor_event_association_enum, StorEventLunAssociation, StorEventAdapterAssociation, StorEventInvalidAssociation, _STOR_EVENT_ASSOCIATION_ENUM, storport/StorEventTargetAssociation, storport/StorEventInvalidAssociation, STOR_EVENT_ASSOCIATION_ENUM, StorEventTargetAssociation, storport/StorEventAdapterAssociation, storport/STOR_EVENT_ASSOCIATION_ENUM, storport/StorEventLunAssociation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,4 @@ typedef enum _STOR_EVENT_ASSOCIATION_ENUM {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |

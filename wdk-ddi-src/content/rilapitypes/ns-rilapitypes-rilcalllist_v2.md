@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ecc08fed-deee-4b94-84ae-05159447abf3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcalllist_v2_2, RILCALLLIST_V2, rilapitypes/RILCALLLIST_V2, RILCALLLIST_V2 structure [Network Drivers Starting with Windows Vista], *LPRILCALLLIST_V2
+ms.keywords : "*LPRILCALLLIST_V2, RILCALLLIST_V2 structure [Network Drivers Starting with Windows Vista], rilapitypes/RILCALLLIST_V2, RILCALLLIST_V2, netvista.rilcalllist_v2_2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILCALLLIST_V2, RILCALLLIST_V2"
+req.typenames : RILCALLLIST_V2, *LPRILCALLLIST_V2
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILCALLLIST_V2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : F0ABD318-AC63-40D5-B94E-BD6FEA1A57AC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRB_REQ_CONTROL structure [Buses], _IRB_REQ_CONTROL, IEEE.irb_req_control, 1394/IRB_REQ_CONTROL, IRB_REQ_CONTROL
+ms.keywords : IRB_REQ_CONTROL structure [Buses], IRB_REQ_CONTROL, 1394/IRB_REQ_CONTROL, _IRB_REQ_CONTROL, IEEE.irb_req_control
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,4 @@ Specifies the length of the output buffer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

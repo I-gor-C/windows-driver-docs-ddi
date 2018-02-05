@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f9340f0d-4f70-4751-b339-de11ee13a469
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SendCTPassThru_OUT structure [Storage Devices], storage.sendctpassthru_out, structs-Fibre_f795d452-fb3f-4236-a543-d0f80f94c14f.xml, SendCTPassThru_OUT, PSendCTPassThru_OUT, _SendCTPassThru_OUT, PSendCTPassThru_OUT structure pointer [Storage Devices], *PSendCTPassThru_OUT, hbapiwmi/SendCTPassThru_OUT, hbapiwmi/PSendCTPassThru_OUT
+ms.keywords : PSendCTPassThru_OUT structure pointer [Storage Devices], storage.sendctpassthru_out, SendCTPassThru_OUT, _SendCTPassThru_OUT, SendCTPassThru_OUT structure [Storage Devices], hbapiwmi/PSendCTPassThru_OUT, *PSendCTPassThru_OUT, PSendCTPassThru_OUT, hbapiwmi/SendCTPassThru_OUT, structs-Fibre_f795d452-fb3f-4236-a543-d0f80f94c14f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSendCTPassThru_OUT, SendCTPassThru_OUT"
+req.typenames : SendCTPassThru_OUT, *PSendCTPassThru_OUT
 ---
 
 # _SendCTPassThru_OUT structure
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the SendCTPassThru_OUT structure i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

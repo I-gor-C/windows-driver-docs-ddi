@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d9ca4b9d-dacc-4164-9198-a71a771b145b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture], kernel.ioopendeviceinterfaceregistrykey, wdm/IoOpenDeviceInterfaceRegistryKey, IoOpenDeviceInterfaceRegistryKey, k104_39651647-aa61-4670-b09d-7aaabaae4603.xml
+ms.keywords : wdm/IoOpenDeviceInterfaceRegistryKey, k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, kernel.ioopendeviceinterfaceregistrykey, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture], IoOpenDeviceInterfaceRegistryKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,12 +122,11 @@ Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PAS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

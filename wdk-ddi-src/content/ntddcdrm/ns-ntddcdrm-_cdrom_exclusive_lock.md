@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8c94cdb2-965a-448c-aa97-f7aae9550662
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PCDROM_EXCLUSIVE_LOCK, CDROM_EXCLUSIVE_LOCK structure [Storage Devices], _CDROM_EXCLUSIVE_LOCK, CDROM_EXCLUSIVE_LOCK, structs-CD-ROM_98cdead9-8c28-497a-9ba3-f686e87554ea.xml, PCDROM_EXCLUSIVE_LOCK structure pointer [Storage Devices], ntddcdrm/CDROM_EXCLUSIVE_LOCK, *PCDROM_EXCLUSIVE_LOCK, ntddcdrm/PCDROM_EXCLUSIVE_LOCK, storage.cdrom_exclusive_lock
+ms.keywords : "*PCDROM_EXCLUSIVE_LOCK, storage.cdrom_exclusive_lock, PCDROM_EXCLUSIVE_LOCK, PCDROM_EXCLUSIVE_LOCK structure pointer [Storage Devices], CDROM_EXCLUSIVE_LOCK, ntddcdrm/PCDROM_EXCLUSIVE_LOCK, structs-CD-ROM_98cdead9-8c28-497a-9ba3-f686e87554ea.xml, ntddcdrm/CDROM_EXCLUSIVE_LOCK, _CDROM_EXCLUSIVE_LOCK, CDROM_EXCLUSIVE_LOCK structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ A <b>NULL</b>-terminated string that identifies the application or system compon
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also

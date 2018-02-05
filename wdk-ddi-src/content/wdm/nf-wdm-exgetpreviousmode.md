@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0f4c7bc2-a29d-4b0c-81c3-01cdfefa1322
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExGetPreviousMode routine [Kernel-Mode Driver Architecture], k102_080fbfa6-6261-453d-a2c7-e08818d34b6f.xml, ExGetPreviousMode, wdm/ExGetPreviousMode, kernel.exgetpreviousmode
+ms.keywords : ExGetPreviousMode routine [Kernel-Mode Driver Architecture], k102_080fbfa6-6261-453d-a2c7-e08818d34b6f.xml, kernel.exgetpreviousmode, ExGetPreviousMode, wdm/ExGetPreviousMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ Alternatively, <b>ExGetPreviousMode</b> can be used to determine the previous pr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

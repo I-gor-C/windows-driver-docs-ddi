@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 514a5b40-c9ba-4ed1-871d-fd6ffde583a6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbPrintfExW, RtlStringCbPrintfExW, STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, RtlStringCbPrintfExW function [Kernel-Mode Driver Architecture], safestrings_44a6ae33-3b6e-4de4-893c-4a198dfa75da.xml, STRSAFE_FILL_BEHIND_NULL, kernel.rtlstringcbprintfex, RtlStringCbPrintfExA, STRSAFE_FILL_ON_FAILURE, STRSAFE_NULL_ON_FAILURE, RtlStringCbPrintfEx, ntstrsafe/RtlStringCbPrintfExA
+ms.keywords : ntstrsafe/RtlStringCbPrintfExA, RtlStringCbPrintfExW, RtlStringCbPrintfEx, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, kernel.rtlstringcbprintfex, ntstrsafe/RtlStringCbPrintfExW, RtlStringCbPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, RtlStringCbPrintfExA, STRSAFE_FILL_ON_FAILURE, safestrings_44a6ae33-3b6e-4de4-893c-4a198dfa75da.xml, STRSAFE_FILL_BEHIND_NULL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -144,7 +144,7 @@ If set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the dest
 
 A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="http://msdn.microsoft.com/en-us/library/56e442dc.aspx">formatting directives</a>. The <i>pszFormat</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-``
+`Arg1`
 
 
 
@@ -272,14 +272,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1). Available starting with Windows XP with Service Pack 1 (SP1). |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

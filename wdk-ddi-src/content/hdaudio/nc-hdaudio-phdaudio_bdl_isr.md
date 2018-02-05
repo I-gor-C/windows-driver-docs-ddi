@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT"
+req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 
@@ -58,7 +58,7 @@ void PhdaudioBdlIsr(
 
 `*Context`
 
-
+The HD Audio bus driver calls the ISR with the same context value that the client specified in the context parameter of the preceding SetupDmaEngineWithBdl call. For more information, see <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">PSETUP_DMA_ENGINE_WITH_BDL</a>.
 
 `InterruptBitMask`
 
@@ -148,14 +148,9 @@ The caller must allocate the buffer memory and BDL from the nonpaged pool.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hdaudio.h (include Hdaudio.h) |
-| **Library** |  |
 | **IRQL** | DIRQL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

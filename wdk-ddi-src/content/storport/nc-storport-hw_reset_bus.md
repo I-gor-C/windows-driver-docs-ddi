@@ -94,11 +94,6 @@ In addition to the StartIo spin lock being taken and subsequently released after
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL (See Remarks section.) |
-| **DDI compliance rules** |  |

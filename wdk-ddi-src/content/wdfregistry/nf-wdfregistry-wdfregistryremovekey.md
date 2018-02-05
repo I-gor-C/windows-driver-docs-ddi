@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b23d1c2f-15f0-4b9e-8a10-9b81056fa509
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRegistryRemoveKey method, kmdf.wdfregistryremovekey, WdfRegistryRemoveKey, wdf.wdfregistryremovekey, DFRegKeyObjectRef_448264d5-1720-46e3-b493-b195825db91f.xml, wdfregistry/WdfRegistryRemoveKey
+ms.keywords : wdfregistry/WdfRegistryRemoveKey, WdfRegistryRemoveKey, kmdf.wdfregistryremovekey, wdf.wdfregistryremovekey, DFRegKeyObjectRef_448264d5-1720-46e3-b493-b195825db91f.xml, WdfRegistryRemoveKey method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_QUERY_INTERFACE_CONFIG, WDF_QUERY_INTERFACE_CONFIG"
+req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -121,11 +121,10 @@ For more information about registry-key objects, see <a href="https://docs.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfregistry.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

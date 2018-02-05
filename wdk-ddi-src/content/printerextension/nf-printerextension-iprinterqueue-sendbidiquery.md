@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : E98A121A-514A-4437-A542-E8629697B7EA
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SendBidiQuery, SendBidiQuery method [Print Devices], IPrinterQueue interface, IPrinterQueue, IPrinterQueue::SendBidiQuery, print.iprinterqueue_sendbidiquery, IPrinterQueue interface [Print Devices], SendBidiQuery method, SendBidiQuery method [Print Devices], printerextension/IPrinterQueue::SendBidiQuery
+ms.keywords : printerextension/IPrinterQueue::SendBidiQuery, print.iprinterqueue_sendbidiquery, SendBidiQuery method [Print Devices], IPrinterQueue::SendBidiQuery, IPrinterQueue, IPrinterQueue interface [Print Devices], SendBidiQuery method, SendBidiQuery method [Print Devices], IPrinterQueue interface, SendBidiQuery
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,22 +90,18 @@ All standard Bidi values (as defined by the port monitor’s embedded Bidi files
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/D0CD9950-DF73-4D46-B901-FA45BA88D3CF">IPrinterQueueEvent::OnBidiResponseReceived</a>
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
-
 <a href="http://msdn.microsoft.com/en-us/library/dd183365(v=vs.85)">Bidi Communication Interfaces</a>
+
+<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 
  
 

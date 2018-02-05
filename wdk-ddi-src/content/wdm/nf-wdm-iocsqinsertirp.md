@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ddfc0241-eab0-462b-8e1b-32bb9bcb3671
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoCsqInsertIrp, IoCsqInsertIrp, IoCsqInsertIrp routine [Kernel-Mode Driver Architecture], k104_cecd79a7-3c42-45a2-99f7-54ca2a3e0358.xml, kernel.iocsqinsertirp
+ms.keywords : kernel.iocsqinsertirp, k104_cecd79a7-3c42-45a2-99f7-54ca2a3e0358.xml, IoCsqInsertIrp, wdm/IoCsqInsertIrp, IoCsqInsertIrp routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,44 +103,43 @@ Callers of <b>IoCsqInsertIrp</b> must be running at an IRQL &lt;= DISPATCH_LEVEL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Drivers that must also work in Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine. Available in Windows XP and later versions of Windows. Drivers that must also work in Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | IoAllocateFree, IoReuseIrp, IrpCancelField, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a>
-
-<a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a>
+<a href="..\wdm\nc-wdm-io_csq_acquire_lock.md">CsqAcquireLock</a>
 
 <a href="..\wdm\nc-wdm-io_csq_insert_irp.md">CsqInsertIrp</a>
 
-<a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>
-
-<a href="..\wdm\nc-wdm-io_csq_insert_irp_ex.md">CsqInsertIrpEx</a>
-
-<a href="..\wdm\nc-wdm-io_csq_complete_canceled_irp.md">CsqCompleteCanceledIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550567">IO_CSQ_IRP_CONTEXT</a>
 
 <a href="..\wdm\nf-wdm-iocsqinitializeex.md">IoCsqInitializeEx</a>
 
+<a href="..\wdm\nc-wdm-io_csq_insert_irp_ex.md">CsqInsertIrpEx</a>
+
+<a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a>
+
+<a href="..\wdm\nc-wdm-io_csq_complete_canceled_irp.md">CsqCompleteCanceledIrp</a>
+
 <a href="..\wdm\nf-wdm-iocsqinsertirpex.md">IoCsqInsertIrpEx</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550567">IO_CSQ_IRP_CONTEXT</a>
-
-<a href="..\wdm\nc-wdm-io_csq_remove_irp.md">CsqRemoveIrp</a>
-
 <a href="..\wdm\nc-wdm-io_csq_release_lock.md">CsqReleaseLock</a>
+
+<a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a>
 
 <a href="..\wdm\nc-wdm-io_csq_peek_next_irp.md">CsqPeekNextIrp</a>
 
 <a href="..\wdm\nf-wdm-iocsqremoveirp.md">IoCsqRemoveIrp</a>
 
-<a href="..\wdm\nc-wdm-io_csq_acquire_lock.md">CsqAcquireLock</a>
+<a href="..\wdm\nc-wdm-io_csq_remove_irp.md">CsqRemoveIrp</a>
 
  
 

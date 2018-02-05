@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 053BFE59-FDC6-42F3-BE14-CE63D5637D62
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/IPrintSchemaCapabilities::GetFeatureByKeyName, GetFeatureByKeyName method [Print Devices], print.iprintschemacapabilities_getfeaturebykeyname, IPrintSchemaCapabilities interface [Print Devices], GetFeatureByKeyName method, IPrintSchemaCapabilities, IPrintSchemaCapabilities::GetFeatureByKeyName, GetFeatureByKeyName, GetFeatureByKeyName method [Print Devices], IPrintSchemaCapabilities interface
+ms.keywords : GetFeatureByKeyName method [Print Devices], IPrintSchemaCapabilities interface, GetFeatureByKeyName method [Print Devices], GetFeatureByKeyName, IPrintSchemaCapabilities, IPrintSchemaCapabilities interface [Print Devices], GetFeatureByKeyName method, print.iprintschemacapabilities_getfeaturebykeyname, IPrintSchemaCapabilities::GetFeatureByKeyName, printerextension/IPrintSchemaCapabilities::GetFeatureByKeyName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -149,24 +149,20 @@ So if the <a href="..\printerextension\nn-printerextension-iprintschematicket.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
-
-<a href="..\printerextension\nn-printerextension-iprintschemanupoption.md">IPrintSchemaNUpOption</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemapagemediasizeoption.md">IPrintSchemaPageMediaSizeOption</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
+
+<a href="..\printerextension\nn-printerextension-iprintschemanupoption.md">IPrintSchemaNUpOption</a>
 
  
 

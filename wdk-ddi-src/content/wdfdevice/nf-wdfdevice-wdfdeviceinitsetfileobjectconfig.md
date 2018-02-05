@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e309a741-1f61-4668-8176-baf0c8e26dff
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitsetfileobjectconfig, WdfDeviceInitSetFileObjectConfig method, WdfDeviceInitSetFileObjectConfig, DFDeviceObjectGeneralRef_97ec0f62-e8d2-46f9-b37a-13a632425a77.xml, wdfdevice/WdfDeviceInitSetFileObjectConfig, PFN_WDFDEVICEINITSETFILEOBJECTCONFIG, kmdf.wdfdeviceinitsetfileobjectconfig
+ms.keywords : kmdf.wdfdeviceinitsetfileobjectconfig, DFDeviceObjectGeneralRef_97ec0f62-e8d2-46f9-b37a-13a632425a77.xml, wdf.wdfdeviceinitsetfileobjectconfig, WdfDeviceInitSetFileObjectConfig, wdfdevice/WdfDeviceInitSetFileObjectConfig, PFN_WDFDEVICEINITSETFILEOBJECTCONFIG, WdfDeviceInitSetFileObjectConfig method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,24 +87,23 @@ For more information about framework file objects, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, FileObjectConfigured, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 
 ## See Also
+
+<a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
 
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitseteventcallbacks.md">WdfPdoInitSetEventCallbacks</a>
 
 <a href="..\wdffdo\nf-wdffdo-wdffdoinitseteventcallbacks.md">WdfFdoInitSetEventCallbacks</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdf_fileobject_config_init.md">WDF_FILEOBJECT_CONFIG_INIT</a>
-
-<a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
 
  
 

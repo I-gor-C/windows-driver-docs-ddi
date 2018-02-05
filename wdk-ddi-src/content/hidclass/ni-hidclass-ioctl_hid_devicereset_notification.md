@@ -72,6 +72,4 @@ I<b>rp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is succes
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
-| **IRQL** |  |

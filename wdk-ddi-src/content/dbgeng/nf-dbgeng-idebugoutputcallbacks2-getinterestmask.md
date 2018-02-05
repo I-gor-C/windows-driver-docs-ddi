@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : BA710D92-63F4-4B4B-868A-58074FC052E9
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetInterestMask method [Windows Debugging], IDebugOutputCallbacks2 interface, IDebugOutputCallbacks2::GetInterestMask, debugger.idebugoutputcallbacks2_getinterestmask, DEBUG_OUTCBI_DML, GetInterestMask, DEBUG_OUTCBI_TEXT, GetInterestMask method [Windows Debugging], DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_EXPLICIT_FLUSH, IDebugOutputCallbacks2, IDebugOutputCallbacks2 interface [Windows Debugging], GetInterestMask method, dbgeng/IDebugOutputCallbacks2::GetInterestMask
+ms.keywords : IDebugOutputCallbacks2, dbgeng/IDebugOutputCallbacks2::GetInterestMask, GetInterestMask, IDebugOutputCallbacks2 interface [Windows Debugging], GetInterestMask method, GetInterestMask method [Windows Debugging], GetInterestMask method [Windows Debugging], IDebugOutputCallbacks2 interface, IDebugOutputCallbacks2::GetInterestMask, DEBUG_OUTCBI_EXPLICIT_FLUSH, DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_TEXT, DEBUG_OUTCBI_DML, debugger.idebugoutputcallbacks2_getinterestmask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -120,14 +120,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : f79071e3-7146-49c4-a730-ee13fde4f0d4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_PCIXBUS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], ntddk/WHEA_PCIXBUS_ERROR_SECTION, PWHEA_PCIXBUS_ERROR_SECTION, _WHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR, WHEA_PCIXBUS_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/PWHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR, WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION, whearef_6979fd7e-8c18-443b-b9be-1e78316dcd7d.xml, whea.whea_pcixbus_error_section
+ms.keywords : whearef_6979fd7e-8c18-443b-b9be-1e78316dcd7d.xml, whea.whea_pcixbus_error_section, *PWHEA_PCIXBUS_ERROR_SECTION, ntddk/WHEA_PCIXBUS_ERROR_SECTION, _WHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR, PWHEA_PCIXBUS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR, WHEA_PCIXBUS_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/PWHEA_PCIXBUS_ERROR_SECTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION"
+req.typenames : WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION
 ---
 
 # _WHEA_PCIXBUS_ERROR_SECTION structure
@@ -91,6 +91,11 @@ A WHEA_PCIXBUS_COMMAND union that contains the bus command when the error occurr
 This member contains valid data only if the <b>ValidBits.BusCommand</b> bit is set.
 
 
+#### AsULONGLONG
+
+A ULONGLONG representation of the contents of the WHEA_PCIXBUS_COMMAND union.
+
+
 #### Command
 
 The PCI or PCI-X bus command.
@@ -104,11 +109,6 @@ A single bit that indicates that the command is a PCI-X command.
 #### Reserved
 
 Reserved for system use.
-
-
-#### AsULONGLONG
-
-A ULONGLONG representation of the contents of the WHEA_PCIXBUS_COMMAND union.
 
 `BusData`
 
@@ -139,6 +139,11 @@ A WHEA_PCIXBUS_ID union that identifies the bus where the error occurred. The WH
 This member contains valid data only if the <b>ValidBits.BusId</b> bit is set.
 
 
+#### AsUSHORT
+
+A USHORT representation of the contents of the WHEA_PCIXBUS_ID union.
+
+
 #### BusNumber
 
 The bus number.
@@ -147,11 +152,6 @@ The bus number.
 #### BusSegment
 
 The bus segment.
-
-
-#### AsUSHORT
-
-A USHORT representation of the contents of the WHEA_PCIXBUS_ID union.
 
 `CompleterId`
 
@@ -174,24 +174,9 @@ The type of PCI or PCI-X bus error that occurred. Possible values are:
 This member contains valid data only if the <b>ValidBits.ErrorType</b> bit is set.
 
 
-#### PCIXBUS_ERRTYPE_UNKNOWN
+#### PCIXBUS_ERRTYPE_ADDRESSPARITY
 
-An unknown or platform-specific error.
-
-
-#### PCIXBUS_ERRTYPE_DATAPARITY
-
-A data parity error.
-
-
-#### PCIXBUS_ERRTYPE_SYSTEM
-
-A system error.
-
-
-#### PCIXBUS_ERRTYPE_MASTERABORT
-
-A master abort.
+An address parity error.
 
 
 #### PCIXBUS_ERRTYPE_BUSTIMEOUT
@@ -199,19 +184,34 @@ A master abort.
 A bus timeout, or no device is present.
 
 
+#### PCIXBUS_ERRTYPE_COMMANDPARITY
+
+A command parity error.
+
+
+#### PCIXBUS_ERRTYPE_DATAPARITY
+
+A data parity error.
+
+
+#### PCIXBUS_ERRTYPE_MASTERABORT
+
+A master abort.
+
+
 #### PCIXBUS_ERRTYPE_MASTERDATAPARITY
 
 A master data parity error.
 
 
-#### PCIXBUS_ERRTYPE_ADDRESSPARITY
+#### PCIXBUS_ERRTYPE_SYSTEM
 
-An address parity error.
+A system error.
 
 
-#### PCIXBUS_ERRTYPE_COMMANDPARITY
+#### PCIXBUS_ERRTYPE_UNKNOWN
 
-A command parity error.
+An unknown or platform-specific error.
 
 `RequesterId`
 
@@ -239,9 +239,7 @@ The WHEA_PCIXBUS_ERROR_SECTION structure describes the error data that is contai
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
@@ -250,9 +248,9 @@ The WHEA_PCIXBUS_ERROR_SECTION structure describes the error data that is contai
 
 <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section_validbits.md">WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_status.md">WHEA_ERROR_STATUS</a>
 
  
 

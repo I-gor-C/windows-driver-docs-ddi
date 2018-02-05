@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c85590bb-6489-4675-9008-8c5606d0b889
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_GetCallerIdSettings, netvista.ril_getcalleridsettings, RIL_GetCallerIdSettings, RIL_GetCallerIdSettings method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_GetCallerIdSettings, RIL_GetCallerIdSettings method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetCallerIdSettings, netvista.ril_getcalleridsettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

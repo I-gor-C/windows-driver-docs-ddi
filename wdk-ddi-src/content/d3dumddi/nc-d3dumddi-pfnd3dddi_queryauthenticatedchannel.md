@@ -110,20 +110,15 @@ Except for those situations in which the application incorrectly specifies an ou
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | QueryAuthenticatedChannel is supported beginning with the Windows 7 operating system. QueryAuthenticatedChannel is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_queryauthenicatedchannel.md">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a>
 
  
 

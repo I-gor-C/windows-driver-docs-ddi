@@ -92,8 +92,8 @@ None
 
 <i>ProtocolDirectOidRequestComplete</i> is an optional function. If a protocol driver
     does not use direct OID requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <mshelp:link keywords="netvista.ndisregisterprotocoldriver" tabindex="0"><b>
-    NdisRegisterProtocolDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
+    NdisRegisterProtocolDriver</a> function.
 
 <i>ProtocolDirectOidRequestComplete</i> uses the input value of the 
     <i>Status</i> parameter as follows:
@@ -117,13 +117,13 @@ If the protocol driver made a query,
       <b>Oid</b> member.
 
 For example, if the protocol driver originally initiated an 
-      <mshelp:link keywords="netvista.oid_gen_maximum_send_packets" tabindex="0">
-      OID_GEN_MAXIMUM_SEND_PACKETS</mshelp:link> query, 
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-maximum-send-packets">
+      OID_GEN_MAXIMUM_SEND_PACKETS</a> query, 
       <i>ProtocolDirectOidRequestComplete</i> might set up state variables in the 
       <i>ProtocolBindingContext</i> area to throttle the number of outstanding sends that
       the driver will set up for subsequent calls to the 
-      <mshelp:link keywords="netvista.ndissendnetbufferlists" tabindex="0"><b>
-      NdisSendNetBufferLists</b></mshelp:link> function.
+      <a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">
+      NdisSendNetBufferLists</a> function.
 
 </li>
 <li>
@@ -198,29 +198,25 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-maximum-send-packets">OID_GEN_MAXIMUM_SEND_PACKETS</a>
+
 <a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a>
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
-<mshelp:link keywords="netvista.ndismdirectoidrequestcomplete" tabindex="0"><b>
-   NdisMDirectOidRequestComplete</b></mshelp:link>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-maximum-send-packets">OID_GEN_MAXIMUM_SEND_PACKETS</a>
+<a href="..\ndis\nf-ndis-ndismdirectoidrequestcomplete.md">
+   NdisMDirectOidRequestComplete</a>
 
  
 

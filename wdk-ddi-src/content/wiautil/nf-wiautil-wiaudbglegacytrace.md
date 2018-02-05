@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : ccbcab46-0af9-4c21-896f-14096f1461bc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauFncs_a780f296-5780-4589-9aa6-1e61ebec013e.xml, image.wiaudbglegacytrace, wiauDbgLegacyTrace, wiauDbgLegacyTrace function [Imaging Devices], wiautil/wiauDbgLegacyTrace
+ms.keywords : wiauDbgLegacyTrace function [Imaging Devices], wiauDbgLegacyTrace, wiautil/wiauDbgLegacyTrace, wiauFncs_a780f296-5780-4589-9aa6-1e61ebec013e.xml, image.wiaudbglegacytrace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,7 +57,7 @@ inline void __stdcall wiauDbgLegacyTrace(
 
 TBD
 
-``
+`Arg1`
 
 
 
@@ -73,14 +73,10 @@ The <b>wiauDbgLegacyTrace</b> function is identical to the <a href="..\wiautil\n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This function is available in Windows XP and later. This function is available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2a72d08a-a95b-4d50-a47b-e0e31ad43676
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICECREATE, WdfDeviceCreate method, wdf.wdfdevicecreate, wdfdevice/WdfDeviceCreate, WdfDeviceCreate, DFDeviceObjectGeneralRef_bd1ae89e-0e52-4c30-8ca4-9eaf6994a2f2.xml, kmdf.wdfdevicecreate
+ms.keywords : WdfDeviceCreate method, DFDeviceObjectGeneralRef_bd1ae89e-0e52-4c30-8ca4-9eaf6994a2f2.xml, wdfdevice/WdfDeviceCreate, PFN_WDFDEVICECREATE, WdfDeviceCreate, wdf.wdfdevicecreate, kmdf.wdfdevicecreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -166,32 +166,31 @@ For more information about creating device objects, see <a href="https://docs.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | AccessHardwareKey, AddPdoToStaticChildList, ChangeQueueState, ChildDeviceInitAPI, ChildListConfiguration, ControlDeviceDeleted, ControlDeviceInitAllocate, ControlDeviceInitAPI, CtlDeviceFinishInitDeviceAdd, CtlDeviceFinishInitDrEntry, DeviceCreateFail, DeviceInitAllocate, DeviceInitAPI, DriverCreate, InitFreeDeviceCreate, InitFreeDeviceCreateType2, InitFreeDeviceCreateType4, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCreate, PdoInitFreeDeviceCreateType2, PdoInitFreeDeviceCreateType4 |
 
 ## See Also
 
+<a href="..\wdfdevice\nf-wdfdevice-wdf_pnppower_event_callbacks_init.md">WDF_PNPPOWER_EVENT_CALLBACKS_INIT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitfree.md">WdfDeviceInitFree</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
+
 <a href="..\wdfminiport\nf-wdfminiport-wdfdeviceminiportcreate.md">WdfDeviceMiniportCreate</a>
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_pnppower_event_callbacks_init.md">WDF_PNPPOWER_EVENT_CALLBACKS_INIT</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotype.md">WdfDeviceInitSetIoType</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitfree.md">WdfDeviceInitFree</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6D1AB299-2E26-42AF-9613-CA321173080D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LogJobInfoForBranchOffice, winsplp/LogJobInfoForBranchOffice, print.logjobinfoforbranchoffice, LogJobInfoForBranchOffice function [Print Devices]
+ms.keywords : LogJobInfoForBranchOffice, print.logjobinfoforbranchoffice, LogJobInfoForBranchOffice function [Print Devices], winsplp/LogJobInfoForBranchOffice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ Indicates success or failure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

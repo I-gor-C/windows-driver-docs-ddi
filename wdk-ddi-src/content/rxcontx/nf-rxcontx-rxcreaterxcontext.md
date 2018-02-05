@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ff39aebb-03c0-4ba4-844a-417579ed2bbf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCreateRxContext function [Installable File System Drivers], RxCreateRxContext, ifsk.rxcreaterxcontext, rxcontx/RxCreateRxContext, rxref_ceb498ca-e985-4100-a104-8333abb41fdf.xml
+ms.keywords : RxCreateRxContext function [Installable File System Drivers], rxref_ceb498ca-e985-4100-a104-8333abb41fdf.xml, ifsk.rxcreaterxcontext, RxCreateRxContext, rxcontx/RxCreateRxContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -70,11 +70,6 @@ The set of initial values for the <b>Flags</b> member of the RX_CONTEXT data str
 
 
 
-#### RX_CONTEXT_FLAG_WAIT
-
-When this value is set, the IRP should be not be posted for later execution by the file system process, but should be waited on to complete.
-
-
 #### RX_CONTEXT_FLAG_MUST_SUCCEED
 
 When this value is set, the operation must succeed. This value is not currently used by RDBSS, but it may be used by network mini-redirector drivers. 
@@ -82,7 +77,12 @@ When this value is set, the operation must succeed. This value is not currently 
 
 #### RX_CONTEXT_FLAG_MUST_SUCCEED_NONBLOCKING
 
-When this value is set, the operation must succeed for non-blocking operations. This value is not currently used by RDBSS, but it may be used by network mini-redirector drivers.
+When this value is set, the operation must succeed for non-blocking operations. This value is not currently used by RDBSS, but it may be used by network mini-redirector drivers. 
+
+
+#### RX_CONTEXT_FLAG_WAIT
+
+When this value is set, the IRP should be not be posted for later execution by the file system process, but should be waited on to complete.
 
 
 ## Return Value
@@ -102,36 +102,32 @@ When this value is set, the RX_CONTEXT structure was allocated from non-paged po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxcontx.h (include Rxprocs.h  rxcontx.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
+<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557382">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
 
-<a href="..\rxprocs\nf-rxprocs-rxcompleterequest_real.md">RxCompleteRequest_Real</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
+<a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
 
 <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
 
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest_real.md">RxCompleteRequest_Real</a>
+
 <a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext_real.md">RxDereferenceAndDeleteRxContext_Real</a>
 
-<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 
-<a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
-
 <a href="..\rxcontx\nf-rxcontx-rxresumeblockedoperations_serially.md">RxResumeBlockedOperations_Serially</a>
+
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 
  
 

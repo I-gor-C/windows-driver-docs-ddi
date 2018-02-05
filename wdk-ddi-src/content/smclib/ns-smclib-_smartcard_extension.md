@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : 057d82a8-ce5d-416f-b753-297dcbac27b8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : smartcrd.smartcard_extension, smclib/SMARTCARD_EXTENSION, PSMARTCARD_EXTENSION, _SMARTCARD_EXTENSION, scstruct_399a1231-e161-450e-b5e2-6fc6035c865f.xml, *PSMARTCARD_EXTENSION, SMARTCARD_EXTENSION structure [Smart Card Reader Devices], SMARTCARD_EXTENSION, smclib/PSMARTCARD_EXTENSION, PSMARTCARD_EXTENSION structure pointer [Smart Card Reader Devices]
+ms.keywords : smclib/PSMARTCARD_EXTENSION, scstruct_399a1231-e161-450e-b5e2-6fc6035c865f.xml, *PSMARTCARD_EXTENSION, SMARTCARD_EXTENSION, smclib/SMARTCARD_EXTENSION, PSMARTCARD_EXTENSION structure pointer [Smart Card Reader Devices], SMARTCARD_EXTENSION structure [Smart Card Reader Devices], PSMARTCARD_EXTENSION, smartcrd.smartcard_extension, _SMARTCARD_EXTENSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSMARTCARD_EXTENSION, SMARTCARD_EXTENSION"
+req.typenames : SMARTCARD_EXTENSION, *PSMARTCARD_EXTENSION
 req.product : Windows 10 or later.
 ---
 
@@ -147,7 +147,4 @@ This structure is passed to all callback functions.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | smclib.h (include Smclib.h) |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3ddf62f1-ce5d-4d55-9964-8d1786ac2997
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k102_7b4b6df0-2179-4a6a-941d-5aaa95609cd8.xml, InterlockedXor, kernel.interlockedxor, InterlockedXor routine [Kernel-Mode Driver Architecture], wdm/InterlockedXor
+ms.keywords : k102_7b4b6df0-2179-4a6a-941d-5aaa95609cd8.xml, InterlockedXor routine [Kernel-Mode Driver Architecture], kernel.interlockedxor, wdm/InterlockedXor, InterlockedXor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,10 @@ Interlocked operations cannot be used on non-cached memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

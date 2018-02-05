@@ -84,11 +84,8 @@ The client driver returns completion status in <i>Request</i>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |

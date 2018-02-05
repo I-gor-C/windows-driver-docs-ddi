@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9588ef16-baf7-4e2b-a624-864ae218c385
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kspingetconnectedpindeviceobject, ks/KsPinGetConnectedPinDeviceObject, KsPinGetConnectedPinDeviceObject function [Streaming Media Devices], KsPinGetConnectedPinDeviceObject, avfunc_baa36f5c-d0b9-4c18-9a9d-1a128c7ba8bd.xml
+ms.keywords : avfunc_baa36f5c-d0b9-4c18-9a9d-1a128c7ba8bd.xml, stream.kspingetconnectedpindeviceobject, KsPinGetConnectedPinDeviceObject function [Streaming Media Devices], ks/KsPinGetConnectedPinDeviceObject, KsPinGetConnectedPinDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,10 @@ The returned device object is not necessarily the functional device object (FDO)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

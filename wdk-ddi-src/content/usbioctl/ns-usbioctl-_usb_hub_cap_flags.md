@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4f3f01f2-d5ef-4b41-8733-ac44952dc9a9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USB_HUB_CAP_FLAGS, PUSB_HUB_CAP_FLAGS union pointer [Buses], *PUSB_HUB_CAP_FLAGS, usbioctl/USB_HUB_CAP_FLAGS, _USB_HUB_CAP_FLAGS, buses.usb_hub_cap_flags, usbioctl/PUSB_HUB_CAP_FLAGS, usbstrct_0c0ca119-db83-4486-9b65-f16c70716c14.xml, USB_HUB_CAP_FLAGS union [Buses], PUSB_HUB_CAP_FLAGS
+ms.keywords : USB_HUB_CAP_FLAGS union [Buses], buses.usb_hub_cap_flags, *PUSB_HUB_CAP_FLAGS, usbioctl/PUSB_HUB_CAP_FLAGS, PUSB_HUB_CAP_FLAGS, usbioctl/USB_HUB_CAP_FLAGS, _USB_HUB_CAP_FLAGS, usbstrct_0c0ca119-db83-4486-9b65-f16c70716c14.xml, USB_HUB_CAP_FLAGS, PUSB_HUB_CAP_FLAGS union pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,6 @@ A bitmask that represents the hub capabilities.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -80,14 +80,9 @@ The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIER
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | CommandListExecute is supported beginning with the Windows 7 operating system. CommandListExecute is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -95,9 +90,9 @@ The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIER
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_threading_caps.md">D3D11DDI_THREADING_CAPS</a>
 
  
 

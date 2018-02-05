@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -60,8 +60,5 @@ This method can also convey status information, such as the percentage of data t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wiamindr_lh.h |
-| **DLL** |  |

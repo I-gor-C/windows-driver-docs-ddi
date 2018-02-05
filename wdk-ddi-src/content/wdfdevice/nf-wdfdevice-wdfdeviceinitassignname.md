@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 70b86a0f-a77d-4c79-931d-d0407083e5b0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitassignname, WdfDeviceInitAssignName, wdfdevice/WdfDeviceInitAssignName, kmdf.wdfdeviceinitassignname, PFN_WDFDEVICEINITASSIGNNAME, DFDeviceObjectGeneralRef_1acdbff1-2eb9-425c-91c8-aaa51f585d56.xml, WdfDeviceInitAssignName method
+ms.keywords : PFN_WDFDEVICEINITASSIGNNAME, wdf.wdfdeviceinitassignname, WdfDeviceInitAssignName, wdfdevice/WdfDeviceInitAssignName, WdfDeviceInitAssignName method, DFDeviceObjectGeneralRef_1acdbff1-2eb9-425c-91c8-aaa51f585d56.xml, kmdf.wdfdeviceinitassignname
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,12 +99,10 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |
 

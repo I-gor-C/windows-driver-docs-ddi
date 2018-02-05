@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c2d775b1-364a-4c50-bd5e-dab9d9e07b83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ktm_ref_79b2cde2-5fd0-431f-a776-f4cd6fda1e45.xml, wdm/NtRollforwardTransactionManager, ZwRollforwardTransactionManager routine [Kernel-Mode Driver Architecture], kernel.zwrollforwardtransactionmanager, wdm/ZwRollforwardTransactionManager, NtRollforwardTransactionManager, ZwRollforwardTransactionManager
+ms.keywords : wdm/ZwRollforwardTransactionManager, ZwRollforwardTransactionManager, NtRollforwardTransactionManager, ZwRollforwardTransactionManager routine [Kernel-Mode Driver Architecture], wdm/NtRollforwardTransactionManager, ktm_ref_79b2cde2-5fd0-431f-a776-f4cd6fda1e45.xml, kernel.zwrollforwardtransactionmanager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -147,26 +147,25 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
 <a href="..\wdm\nf-wdm-zwrecovertransactionmanager.md">ZwRecoverTransactionManager</a>
 
 <a href="..\wdm\nf-wdm-tmrecovertransactionmanager.md">TmRecoverTransactionManager</a>
 
+<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
+
 <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

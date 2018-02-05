@@ -79,14 +79,12 @@ On entry to <b>PoFxReportDevicePoweredOn</b>, the device might be in an uninitia
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

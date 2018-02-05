@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f0d4f266-6a43-4523-bf1d-3dda1fc9a5b8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iportwavepcistream_getmapping, GetMapping, GetMapping method [Audio Devices], IPortWavePciStream interface, audmp-routines_e0c71b6a-ec20-47ab-85bc-7a3495e5247e.xml, IPortWavePciStream interface [Audio Devices], GetMapping method, GetMapping method [Audio Devices], IPortWavePciStream, portcls/IPortWavePciStream::GetMapping, IPortWavePciStream::GetMapping
+ms.keywords : GetMapping, GetMapping method [Audio Devices], IPortWavePciStream, IPortWavePciStream::GetMapping, audio.iportwavepcistream_getmapping, portcls/IPortWavePciStream::GetMapping, IPortWavePciStream interface [Audio Devices], GetMapping method, audmp-routines_e0c71b6a-ec20-47ab-85bc-7a3495e5247e.xml, GetMapping method [Audio Devices], IPortWavePciStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -141,30 +141,26 @@ For more information about mappings, see <a href="https://msdn.microsoft.com/6d8
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536726">IMiniportWavePciStream::GetAllocatorFraming</a>
-
-<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
-
-<a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536730">IMiniportWavePciStream::RevokeMappings</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536728">IMiniportWavePciStream::MappingAvailable</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536726">IMiniportWavePciStream::GetAllocatorFraming</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a>
 
 <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
+
+<a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>
+
+<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 271d2b39-53a3-454b-97d0-0bace8504b48
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFTimerObjectRef_6ebc68ca-16c5-4948-ac68-d9247b8074f3.xml, kmdf.wdf_abs_timeout_in_ms, WDF_ABS_TIMEOUT_IN_MS, wdf.wdf_abs_timeout_in_ms, wdfcore/WDF_ABS_TIMEOUT_IN_MS, WDF_ABS_TIMEOUT_IN_MS function
+ms.keywords : wdf.wdf_abs_timeout_in_ms, WDF_ABS_TIMEOUT_IN_MS, WDF_ABS_TIMEOUT_IN_MS function, wdfcore/WDF_ABS_TIMEOUT_IN_MS, kmdf.wdf_abs_timeout_in_ms, DFTimerObjectRef_6ebc68ca-16c5-4948-ac68-d9247b8074f3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,12 @@ An absolute time value is a time value that specifies a specific date and time. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfcore.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | None |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

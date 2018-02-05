@@ -99,11 +99,5 @@ The driver should not spend significant amount of time in this call because the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dkmddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

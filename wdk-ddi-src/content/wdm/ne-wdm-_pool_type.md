@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a3dd0c74-3835-4f03-8b62-08954baaffe7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/NonPagedPoolBaseCacheAlignedMustS, wdm/NonPagedPoolBase, DontUseThisTypeSession, NonPagedPoolBase, DontUseThisType, wdm/PagedPool, wdm/POOL_TYPE, NonPagedPoolCacheAlignedSession, PagedPoolSession, PagedPoolCacheAlignedSession, wdm/PagedPoolSession, wdm/NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolSessionNx, NonPagedPoolBaseCacheAligned, NonPagedPoolSession, NonPagedPoolCacheAlignedMustS, sysenum_90446d42-0e73-4da3-a3df-27efe3daa67b.xml, NonPagedPoolBaseMustSucceed, wdm/NonPagedPoolMustSucceedSession, wdm/NonPagedPoolNxCacheAligned, wdm/MaxPoolType, NonPagedPoolMustSucceed, NonPagedPoolSessionNx, wdm/NonPagedPoolSession, wdm/DontUseThisTypeSession, wdm/NonPagedPoolMustSucceed, kernel.pool_type, NonPagedPoolCacheAlignedMustSSession, PagedPoolCacheAligned, wdm/NonPagedPoolCacheAligned, wdm/PagedPoolCacheAlignedSession, wdm/DontUseThisType, POOL_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/PagedPoolCacheAligned, wdm/NonPagedPoolCacheAlignedMustS, wdm/NonPagedPoolNx, NonPagedPoolMustSucceedSession, NonPagedPoolExecute, wdm/NonPagedPoolBaseCacheAligned, wdm/NonPagedPoolExecute, NonPagedPoolNxCacheAligned, NonPagedPoolNx, PagedPool, NonPagedPool, NonPagedPoolBaseCacheAlignedMustS, wdm/NonPagedPool, wdm/NonPagedPoolBaseMustSucceed, wdm/NonPagedPoolCacheAlignedSession, NonPagedPoolCacheAligned, POOL_TYPE, _POOL_TYPE, MaxPoolType
+ms.keywords : wdm/PagedPoolCacheAlignedSession, NonPagedPoolBaseCacheAlignedMustS, NonPagedPoolMustSucceedSession, wdm/NonPagedPoolBase, NonPagedPoolCacheAlignedMustS, wdm/DontUseThisTypeSession, wdm/PagedPoolCacheAligned, wdm/NonPagedPoolSession, NonPagedPoolSessionNx, NonPagedPoolExecute, wdm/MaxPoolType, wdm/NonPagedPoolCacheAlignedSession, PagedPool, sysenum_90446d42-0e73-4da3-a3df-27efe3daa67b.xml, wdm/NonPagedPoolMustSucceed, MaxPoolType, NonPagedPoolCacheAlignedSession, _POOL_TYPE, kernel.pool_type, NonPagedPoolBase, NonPagedPoolMustSucceed, wdm/PagedPoolSession, wdm/DontUseThisType, NonPagedPoolCacheAligned, NonPagedPoolSession, wdm/NonPagedPoolNxCacheAligned, NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolBaseMustSucceed, wdm/NonPagedPoolSessionNx, NonPagedPool, PagedPoolCacheAligned, wdm/NonPagedPool, PagedPoolSession, wdm/NonPagedPoolCacheAlignedMustS, wdm/NonPagedPoolCacheAligned, NonPagedPoolBaseMustSucceed, wdm/PagedPool, DontUseThisType, wdm/NonPagedPoolBaseCacheAligned, wdm/NonPagedPoolMustSucceedSession, wdm/POOL_TYPE, wdm/NonPagedPoolBaseCacheAlignedMustS, wdm/NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolExecute, POOL_TYPE enumeration [Kernel-Mode Driver Architecture], NonPagedPoolBaseCacheAligned, POOL_TYPE, DontUseThisTypeSession, PagedPoolCacheAlignedSession, NonPagedPoolNxCacheAligned, wdm/NonPagedPoolNx, NonPagedPoolNx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -201,30 +201,27 @@ Nonpaged pool can be accessed from any IRQL, but it is a scarce resource and dri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554322">LookasideListAllocateEx</a>
+
+<a href="..\wdm\nf-wdm-seassignsecurityex.md">SeAssignSecurityEx</a>
+
 <a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
+
+<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtagpriority.md">ExAllocatePoolWithTagPriority</a>
 
 <a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
 
 <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-
-<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
-
-<a href="..\wdm\nf-wdm-seassignsecurityex.md">SeAssignSecurityEx</a>
-
-<a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554322">LookasideListAllocateEx</a>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithtagpriority.md">ExAllocatePoolWithTagPriority</a>
 
  
 

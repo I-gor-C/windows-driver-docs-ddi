@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b6ae3b68-d9a0-45b3-bf5d-00c09b87709f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_RATIONAL structure [Display Devices], D3DDDI_RATIONAL, DmStructs_68540737-a888-46aa-99d7-83a071f3f604.xml, display.d3dddi_rational, d3dukmdt/D3DDDI_RATIONAL, _D3DDDI_RATIONAL
+ms.keywords : DmStructs_68540737-a888-46aa-99d7-83a071f3f604.xml, _D3DDDI_RATIONAL, D3DDDI_RATIONAL, D3DDDI_RATIONAL structure [Display Devices], d3dukmdt/D3DDDI_RATIONAL, display.d3dddi_rational
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,5 @@ For a rational number with a finite fractional sequence, use a denominator of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dukmdt.h) |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d5fa83d6-d733-4fff-89a9-f519ed608e57
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetUncachedExtension, storage.storportgetuncachedextension, storprt_f3acfe04-374f-47d9-8e8f-7f7f8ee8a1d3.xml, storport/StorPortGetUncachedExtension, StorPortGetUncachedExtension routine [Storage Devices]
+ms.keywords : storage.storportgetuncachedextension, storprt_f3acfe04-374f-47d9-8e8f-7f7f8ee8a1d3.xml, StorPortGetUncachedExtension routine [Storage Devices], storport/StorPortGetUncachedExtension, StorPortGetUncachedExtension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,9 @@ Bus-master devices use common buffer space for DMA transfers.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

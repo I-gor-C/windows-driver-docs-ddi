@@ -88,20 +88,16 @@ The changer class driver checks the output buffer length in the I/O stack locati
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddchgr\ns-ntddchgr-_changer_product_data.md">IOCTL_CHANGER_GET_PARAMETERS</a>
-
 <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
+
+<a href="..\ntddchgr\ns-ntddchgr-_changer_product_data.md">IOCTL_CHANGER_GET_PARAMETERS</a>
 
  
 

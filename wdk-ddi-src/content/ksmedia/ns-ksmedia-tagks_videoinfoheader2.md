@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4eb909fe-7ba2-4208-b713-54252022a5cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : vidcapstruct_c789f606-9b19-42b0-8492-3b945141c274.xml, PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2 structure [Streaming Media Devices], tagKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2, ksmedia/PKS_VIDEOINFOHEADER2, PKS_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], stream.ks_videoinfoheader2, ksmedia/KS_VIDEOINFOHEADER2
+ms.keywords : KS_VIDEOINFOHEADER2 structure [Streaming Media Devices], vidcapstruct_c789f606-9b19-42b0-8492-3b945141c274.xml, PKS_VIDEOINFOHEADER2, stream.ks_videoinfoheader2, tagKS_VIDEOINFOHEADER2, PKS_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], ksmedia/KS_VIDEOINFOHEADER2, ksmedia/PKS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2, KS_VIDEOINFOHEADER2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -263,9 +263,6 @@ If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> memb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

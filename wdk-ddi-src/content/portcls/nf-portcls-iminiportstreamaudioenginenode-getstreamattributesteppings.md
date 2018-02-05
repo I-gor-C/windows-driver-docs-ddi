@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2EC0C859-5479-4A55-9180-DB9938400DF7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetStreamAttributeSteppings, audio.iminiportstreamaudioenginenode_getstreamattributesteppings, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamAttributeSteppings method, GetStreamAttributeSteppings method [Audio Devices], GetStreamAttributeSteppings method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, portcls/IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, IMiniportStreamAudioEngineNode
+ms.keywords : IMiniportStreamAudioEngineNode, GetStreamAttributeSteppings method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamAttributeSteppings method, GetStreamAttributeSteppings, portcls/IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, GetStreamAttributeSteppings method [Audio Devices], audio.iminiportstreamaudioenginenode_getstreamattributesteppings, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,20 +77,16 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a>
-
 <a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
+
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a>
 
 <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
 

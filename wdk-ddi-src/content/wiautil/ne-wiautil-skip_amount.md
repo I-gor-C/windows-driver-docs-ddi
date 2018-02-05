@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 4e21b3e9-0383-4464-b87e-beea88123124
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SKIP_FILEHDR, SKIP_AMOUNT enumeration [Imaging Devices], SKIP_AMOUNT, SKIP_OFF, wiautil/SKIP_FILEHDR, wiauFncs_8f521aa0-0663-4f84-a9c9-91747fcb13e8.xml, wiautil/SKIP_BOTHHDR, wiautil/SKIP_OFF, image.skip_amount, wiautil/SKIP_AMOUNT, SKIP_BOTHHDR
+ms.keywords : SKIP_AMOUNT, SKIP_OFF, wiautil/SKIP_BOTHHDR, wiauFncs_8f521aa0-0663-4f84-a9c9-91747fcb13e8.xml, wiautil/SKIP_AMOUNT, image.skip_amount, SKIP_AMOUNT enumeration [Imaging Devices], wiautil/SKIP_OFF, SKIP_BOTHHDR, wiautil/SKIP_FILEHDR, SKIP_FILEHDR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,9 +75,7 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
 
 ## See Also

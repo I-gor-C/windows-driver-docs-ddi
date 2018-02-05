@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f77c20a1-c05c-456b-874b-e07d6edf5982
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateOverlay function [Display Devices], display.d3dkmtcreateoverlay, OpenGL_Functions_3848b4de-9ed0-4e4f-87aa-677bdbbaa7e0.xml, D3DKMTCreateOverlay, d3dkmthk/D3DKMTCreateOverlay
+ms.keywords : d3dkmthk/D3DKMTCreateOverlay, OpenGL_Functions_3848b4de-9ed0-4e4f-87aa-677bdbbaa7e0.xml, display.d3dkmtcreateoverlay, D3DKMTCreateOverlay, D3DKMTCreateOverlay function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,14 +115,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

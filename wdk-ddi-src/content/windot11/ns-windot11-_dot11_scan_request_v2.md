@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fd6dd2f4-ee58-46da-ba87-5aecaff35dd0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_SCAN_REQUEST_V2, windot11/DOT11_SCAN_REQUEST_V2, _DOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2, windot11/PDOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2, PDOT11_SCAN_REQUEST_V2 structure pointer [Network Drivers Starting with Windows Vista], DOT11_SCAN_REQUEST_V2 structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_e7a02ffc-ecf6-4159-ab3d-85c87d844785.xml, netvista.dot11_scan_request_v2
+ms.keywords : DOT11_SCAN_REQUEST_V2 structure [Network Drivers Starting with Windows Vista], *PDOT11_SCAN_REQUEST_V2, windot11/DOT11_SCAN_REQUEST_V2, PDOT11_SCAN_REQUEST_V2 structure pointer [Network Drivers Starting with Windows Vista], PDOT11_SCAN_REQUEST_V2, Native_802.11_data_types_e7a02ffc-ecf6-4159-ab3d-85c87d844785.xml, _DOT11_SCAN_REQUEST_V2, netvista.dot11_scan_request_v2, DOT11_SCAN_REQUEST_V2, windot11/PDOT11_SCAN_REQUEST_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2"
+req.typenames : DOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2
 req.product : Windows 10 or later.
 ---
 
@@ -107,8 +107,8 @@ The 802.11
        <b>dot11MultiDomainCapabilityEnabled</b> management information base (MIB) object is <b>FALSE</b>. For more
        information about the 
        <b>dot11MultiDomainCapabilityEnabled</b> MIB object, see 
-       <mshelp:link keywords="netvista.oid_dot11_multi_domain_capability_enabled" tabindex="0">
-       OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED</mshelp:link>.
+       <a href="https://msdn.microsoft.com/en-us/library/ee486712.aspx">
+       OID_DOT11_MULTI_DOMAIN_CAPABILITY_ENABLED</a>.
 
 </li>
 <li>
@@ -144,8 +144,8 @@ Regardless of the value of
      domain. Also, the 802.11 station must perform a scan type of 
      <b>dot11_scan_type_passive</b> if it does not have a default regulatory domain. For more information
      about regulatory domains, see 
-     <mshelp:link keywords="netvista.oid_dot11_current_reg_domain" tabindex="0">
-     OID_DOT11_CURRENT_REG_DOMAIN</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-current-reg-domain">
+     OID_DOT11_CURRENT_REG_DOMAIN</a>.
 
 If the 
      <b>dot11_scan_type_forced</b> bit is set in the 
@@ -166,16 +166,16 @@ The station transmits an 802.11 Probe Request frame on each channel that it scan
        also receives 802.11 Beacon frames sent on the channel.
 
 
-#### dot11_scan_type_passive
-
-The station does not transmit an 802.11 Probe Request frame on each channel that it scans.
-       Instead, it receives 802.11 Beacon or Probe Request frames sent on the channel.
-
-
 #### dot11_scan_type_auto
 
 The station can perform active or passive scans, or it can use a combination of both scan
        types.
+
+
+#### dot11_scan_type_passive
+
+The station does not transmit an 802.11 Probe Request frame on each channel that it scans.
+       Instead, it receives 802.11 Beacon or Probe Request frames sent on the channel.
 
 `ucBuffer`
 
@@ -261,19 +261,17 @@ The 802.11 station performs explicit scan operations following the OID set reque
     accompanies the set request.
 
 For more information about the scan operations performed by a Native 802.11 miniport driver, see 
-    <mshelp:link keywords="netvista.native_802_11_scan_operations" tabindex="0">Native 802.11 Scan
-    Operations</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-scan-operations">Native 802.11 Scan
+    Operations</a>.
 
 For more information about the ExtSTA operation mode, see 
-    <mshelp:link keywords="netvista.extensible_station_operation_mode" tabindex="0">Extensible Station Operation
-    Mode</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/extensible-station-operation-mode">Extensible Station Operation
+    Mode</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also

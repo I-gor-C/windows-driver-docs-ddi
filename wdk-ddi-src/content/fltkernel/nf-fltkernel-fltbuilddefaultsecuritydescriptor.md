@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0e886c08-38dd-4960-9b79-4c6e68ac488d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltbuilddefaultsecuritydescriptor, fltkernel/FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor function [Installable File System Drivers], FltApiRef_a_to_d_5b763c42-6bea-4c52-8148-60c18a2f2aeb.xml, FltBuildDefaultSecurityDescriptor
+ms.keywords : fltkernel/FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor function [Installable File System Drivers], FltApiRef_a_to_d_5b763c42-6bea-4c52-8148-60c18a2f2aeb.xml, ifsk.fltbuilddefaultsecuritydescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,18 +120,12 @@ Minifilter drivers usually call <b>FltBuildDefaultSecurityDescriptor</b> immedia
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
@@ -141,9 +135,11 @@ Minifilter drivers usually call <b>FltBuildDefaultSecurityDescriptor</b> immedia
 
 <a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltfreesecuritydescriptor.md">FltFreeSecurityDescriptor</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

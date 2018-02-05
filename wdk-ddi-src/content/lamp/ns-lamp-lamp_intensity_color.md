@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : F87AFCA5-651C-4782-9F6F-C0AFB09010CB
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : lamp/LAMP_INTENSITY_COLOR, LAMP_INTENSITY_COLOR structure [Streaming Media Devices], LAMP_INTENSITY_COLOR, stream.lamp_intensity_color
+ms.keywords : LAMP_INTENSITY_COLOR structure [Streaming Media Devices], LAMP_INTENSITY_COLOR, lamp/LAMP_INTENSITY_COLOR, stream.lamp_intensity_color
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ Red light intensity in percentage (0-100).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | lamp.h |

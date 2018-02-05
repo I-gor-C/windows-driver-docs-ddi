@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 40C11C4B-2FFE-452F-AA08-2BCD4B6A4F7F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PGNSS_BREADCRUMB_LIST structure pointer [Sensor Devices], gnssdriver/PGNSS_BREADCRUMB_LIST, *PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST structure [Sensor Devices], sensors.gnss_breadcrumb_list, PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST, gnssdriver/GNSS_BREADCRUMB_LIST
+ms.keywords : PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST structure [Sensor Devices], sensors.gnss_breadcrumb_list, *PGNSS_BREADCRUMB_LIST, gnssdriver/GNSS_BREADCRUMB_LIST, gnssdriver/PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST, PGNSS_BREADCRUMB_LIST structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST"
+req.typenames : GNSS_BREADCRUMB_LIST, *PGNSS_BREADCRUMB_LIST
 ---
 
 # GNSS_BREADCRUMB_LIST structure
@@ -72,7 +72,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

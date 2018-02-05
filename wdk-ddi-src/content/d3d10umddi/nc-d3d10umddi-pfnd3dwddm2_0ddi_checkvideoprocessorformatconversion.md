@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -67,7 +67,7 @@ A handle to a video processor enumeration object that was created through a call
 
 `*pConversion`
 
-
+A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_check_video_processor_format_conversion.md">D3DWDDM2_0DDI_CHECK_VIDEO_PROCESSOR_FORMAT_CONVERSION</a> structure that contains the input and output format/color-space combination.
 
 
 ## Return Value
@@ -78,14 +78,9 @@ This callback function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

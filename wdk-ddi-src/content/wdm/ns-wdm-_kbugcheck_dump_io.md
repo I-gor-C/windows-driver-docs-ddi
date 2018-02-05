@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d1c246bd-314d-475f-9df8-f1bf90355a5a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO structure [Kernel-Mode Driver Architecture], kernel.kbugcheck_dump_io, PKBUGCHECK_DUMP_IO structure pointer [Kernel-Mode Driver Architecture], *PKBUGCHECK_DUMP_IO, _KBUGCHECK_DUMP_IO, PKBUGCHECK_DUMP_IO, wdm/PKBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO, kstruct_c_a6201416-346e-4100-882c-329dd3ae1843.xml
+ms.keywords : PKBUGCHECK_DUMP_IO, kernel.kbugcheck_dump_io, _KBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO, wdm/PKBUGCHECK_DUMP_IO, *PKBUGCHECK_DUMP_IO, kstruct_c_a6201416-346e-4100-882c-329dd3ae1843.xml, PKBUGCHECK_DUMP_IO structure pointer [Kernel-Mode Driver Architecture], KBUGCHECK_DUMP_IO structure [Kernel-Mode Driver Architecture], wdm/KBUGCHECK_DUMP_IO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,16 +77,14 @@ For information about how this structure is used, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_kbugcheck_dump_io_type.md">KBUGCHECK_DUMP_IO_TYPE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
+
+<a href="..\wdm\ne-wdm-_kbugcheck_dump_io_type.md">KBUGCHECK_DUMP_IO_TYPE</a>
 
  
 

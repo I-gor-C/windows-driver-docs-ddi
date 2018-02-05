@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 65B9739B-98C6-441E-B15A-67C32A5FB232
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_wwan_device_service_subscription, PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, _NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION
+ms.keywords : ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_subscription, *PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, _NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -117,16 +117,14 @@ This can be any WWAN_STATUS code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh440096">OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS</a>
+
+<a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a>
 
  
 

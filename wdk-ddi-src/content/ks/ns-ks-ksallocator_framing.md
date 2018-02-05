@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : db96eccd-6747-458b-9a9e-ec909146f3fa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSALLOCATOR_FRAMING structure [Streaming Media Devices], ks-struct_cc2d8d16-75d5-4ef4-b8de-63197e61424b.xml, *PKSALLOCATOR_FRAMING, ks/KSALLOCATOR_FRAMING, PKSALLOCATOR_FRAMING structure pointer [Streaming Media Devices], ks/PKSALLOCATOR_FRAMING, PKSALLOCATOR_FRAMING, stream.ksallocator_framing, KSALLOCATOR_FRAMING
+ms.keywords : KSALLOCATOR_FRAMING structure [Streaming Media Devices], KSALLOCATOR_FRAMING, ks/KSALLOCATOR_FRAMING, PKSALLOCATOR_FRAMING structure pointer [Streaming Media Devices], ks/PKSALLOCATOR_FRAMING, PKSALLOCATOR_FRAMING, stream.ksallocator_framing, ks-struct_cc2d8d16-75d5-4ef4-b8de-63197e61424b.xml, *PKSALLOCATOR_FRAMING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,6 @@ When you specify a value for the <b>FileAlignment</b> member, the smallest alloc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

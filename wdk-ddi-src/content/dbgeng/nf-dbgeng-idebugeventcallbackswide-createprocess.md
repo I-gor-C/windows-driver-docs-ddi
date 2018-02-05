@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d5378b35-da27-419f-a161-0c542aa4a9f9
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacksWide::CreateProcess, CreateProcess, dbgeng/IDebugEventCallbacksWide::CreateProcess, IDebugEventCallbacksWide interface [Windows Debugging], CreateProcess method, CreateProcess method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide, debugger.idebugeventcallbackswide_createprocess, CreateProcess method [Windows Debugging]
+ms.keywords : IDebugEventCallbacksWide::CreateProcess, IDebugEventCallbacksWide, CreateProcess method [Windows Debugging], IDebugEventCallbacksWide interface, CreateProcess method [Windows Debugging], debugger.idebugeventcallbackswide_createprocess, IDebugEventCallbacksWide interface [Windows Debugging], CreateProcess method, dbgeng/IDebugEventCallbacksWide::CreateProcess, CreateProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -120,11 +120,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

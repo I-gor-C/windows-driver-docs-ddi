@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 19a0eec7-1a67-42ad-86d2-20566a2c1268
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OnRemoteInterfaceArrival, UMDFDeviceObjectRef_68b238b1-6614-4217-90ae-12ec291fa7ba.xml, wudfddi/IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival, IPnpCallbackRemoteInterfaceNotification, OnRemoteInterfaceArrival method, OnRemoteInterfaceArrival method, IPnpCallbackRemoteInterfaceNotification interface, IPnpCallbackRemoteInterfaceNotification interface, OnRemoteInterfaceArrival method, wdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival, IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival, umdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival
+ms.keywords : wdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival, IPnpCallbackRemoteInterfaceNotification, IPnpCallbackRemoteInterfaceNotification interface, OnRemoteInterfaceArrival method, OnRemoteInterfaceArrival method, IPnpCallbackRemoteInterfaceNotification interface, wudfddi/IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival, OnRemoteInterfaceArrival, umdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival, UMDFDeviceObjectRef_68b238b1-6614-4217-90ae-12ec291fa7ba.xml, OnRemoteInterfaceArrival method, IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -89,26 +89,23 @@ Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDF
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfremoteinterfaceinitialize.md">IWDFRemoteInterfaceInitialize</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
 
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackremoteinterfacenotification.md">IPnpCallbackRemoteInterfaceNotification</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556925">IWDFDevice2::CreateRemoteInterface</a>
 
  
 

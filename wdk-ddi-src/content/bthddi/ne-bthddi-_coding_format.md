@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 3A97BBAF-47B0-4987-B5EC-2B3A40F2B42D
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bltooth.coding_format, CODING_FORMAT enumeration [Bluetooth Devices], PCODING_FORMAT, *PCODING_FORMAT, CODING_FORMAT, _CODING_FORMAT, PCODING_FORMAT enumeration pointer [Bluetooth Devices], bthddi/, bthddi/PCODING_FORMAT, bthddi/CODING_FORMAT
+ms.keywords : bthddi/, *PCODING_FORMAT, CODING_FORMAT, CODING_FORMAT enumeration [Bluetooth Devices], _CODING_FORMAT, bthddi/PCODING_FORMAT, PCODING_FORMAT enumeration pointer [Bluetooth Devices], bthddi/CODING_FORMAT, bltooth.coding_format, PCODING_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CODING_FORMAT, *PCODING_FORMAT
+req.typenames : "*PCODING_FORMAT, CODING_FORMAT"
 ---
 
 # _CODING_FORMAT Enumeration
@@ -92,7 +92,4 @@ typedef enum _CODING_FORMAT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bthddi.h (include Bthddi.h) |

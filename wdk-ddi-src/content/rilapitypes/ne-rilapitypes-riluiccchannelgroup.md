@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cbb5fbb1-7042-45fe-81eb-2fca0f413572
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILUICCCHANNELGROUP, rilapitypes/RILUICCCHANNELGROUP, RILUICCCHANNELGROUP enumeration [Network Drivers Starting with Windows Vista], netvista.riluiccchannelgroup_2
+ms.keywords : rilapitypes/RILUICCCHANNELGROUP, RILUICCCHANNELGROUP enumeration [Network Drivers Starting with Windows Vista], netvista.riluiccchannelgroup_2, RILUICCCHANNELGROUP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -57,7 +57,4 @@ typedef enum _RILUICCCHANNELGROUP {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 94f6d3a3-7f0d-4f57-8240-3c4a10cf4488
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k110_e014ad32-3cbd-47e6-908b-65357203ee59.xml, kernel.seassignsecurityex, SeAssignSecurityEx routine [Kernel-Mode Driver Architecture], wdm/SeAssignSecurityEx, SeAssignSecurityEx
+ms.keywords : k110_e014ad32-3cbd-47e6-908b-65357203ee59.xml, kernel.seassignsecurityex, wdm/SeAssignSecurityEx, SeAssignSecurityEx routine [Kernel-Mode Driver Architecture], SeAssignSecurityEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -313,22 +313,21 @@ The caller does not have the privilege (<b>SeSecurityPrivilege</b>) necessary to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-sedeassignsecurity.md">SeDeassignSecurity</a>
-
 <a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
 
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="..\wdm\nf-wdm-sedeassignsecurity.md">SeDeassignSecurity</a>
 
 <a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
 

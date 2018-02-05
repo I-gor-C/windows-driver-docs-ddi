@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 44839b9e-f206-49e6-a9f6-14e79d1e0ae2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream::AllocatePagesForMdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, AllocatePagesForMdl, portcls/IPortWaveRTStream::AllocatePagesForMdl, audio.iportwavertstream_allocatepagesformdl, AllocatePagesForMdl method [Audio Devices], AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream interface, IPortWaveRTStream, IPortWaveRTStream interface [Audio Devices], AllocatePagesForMdl method
+ms.keywords : IPortWaveRTStream, IPortWaveRTStream::AllocatePagesForMdl, IPortWaveRTStream interface [Audio Devices], AllocatePagesForMdl method, audio.iportwavertstream_allocatepagesformdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream interface, AllocatePagesForMdl method [Audio Devices], AllocatePagesForMdl, portcls/IPortWaveRTStream::AllocatePagesForMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -81,22 +81,19 @@ Like the <a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
 
  
 

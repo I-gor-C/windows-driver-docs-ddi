@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 79DEDC5B-2A9B-4493-9CB3-7290BEBBD291
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WdmlibRtlInitUnicodeStringEx function [Kernel-Mode Driver Architecture], wdmsec/RtlInitUnicodeString, RtlInitUnicodeString, WdmlibRtlInitUnicodeStringEx, kernel.wdmlibrtlinitunicodestringex, wdmsec/WdmlibRtlInitUnicodeStringEx
+ms.keywords : WdmlibRtlInitUnicodeStringEx function [Kernel-Mode Driver Architecture], RtlInitUnicodeString, wdmsec/WdmlibRtlInitUnicodeStringEx, WdmlibRtlInitUnicodeStringEx, wdmsec/RtlInitUnicodeString, kernel.wdmlibrtlinitunicodestringex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,22 +77,20 @@ The routine copies the <i>SourceString</i> pointer value to the <b>Buffer</b> me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdmsec.h (include Wdmsec.h, Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinitex.md">RtlUnicodeStringInitEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinit.md">RtlUnicodeStringInit</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinitex.md">RtlUnicodeStringInitEx</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

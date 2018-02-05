@@ -83,14 +83,10 @@ To register an <i>EvtSerCxTransmit</i> callback function, the controller driver 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

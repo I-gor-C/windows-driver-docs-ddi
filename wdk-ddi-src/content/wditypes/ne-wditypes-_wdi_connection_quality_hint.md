@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : D83AE2BE-1273-48A1-A42C-C2EADA07D9C0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_CONNECTION_QUALITY_LOW_LATENCY, WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT, wditypes/WDI_CONNECTION_QUALITY_LOW_LATENCY, wditypes/WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY, wditypes/WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE, WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE, WDI_CONNECTION_QUALITY_HINT, wditypes/WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HINT enumeration [Device and Driver Installation], wditypes/WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT, netvista.wdi_connection_quality_hint, WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY, _WDI_CONNECTION_QUALITY_HINT, devinst.wfi_connection_quality_hint
+ms.keywords : WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE, _WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT, WDI_CONNECTION_QUALITY_HINT enumeration [Device and Driver Installation], devinst.wfi_connection_quality_hint, wditypes/WDI_CONNECTION_QUALITY_LOW_LATENCY, WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY, wditypes/WDI_CONNECTION_QUALITY_HIGH_CHANNEL_AVAILABILITY, WDI_CONNECTION_QUALITY_HINT, wditypes/WDI_CONNECTION_QUALITY_AUTO_POWER_SAVE, netvista.wdi_connection_quality_hint, wditypes/WDI_CONNECTION_QUALITY_HINT, wditypes/WDI_CONNECTION_QUALITY_HIGH_THROUGHPUT, WDI_CONNECTION_QUALITY_LOW_LATENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -84,7 +84,5 @@ When in this mode, the port can (optionally) use power saving as long as it can 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

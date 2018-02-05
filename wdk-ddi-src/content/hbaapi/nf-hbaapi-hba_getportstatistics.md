@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 282eccaf-7cb9-4675-9cc3-9261ed1322ca
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetPortStatistics routine [Storage Devices], fibreHBA_rtns_cd33c55b-4c61-4353-ba28-8497e09b49dd.xml, storage.hba_getportstatistics, HBA_GetPortStatistics, hbaapi/HBA_GetPortStatistics
+ms.keywords : HBA_GetPortStatistics, fibreHBA_rtns_cd33c55b-4c61-4353-ba28-8497e09b49dd.xml, storage.hba_getportstatistics, HBA_GetPortStatistics routine [Storage Devices], hbaapi/HBA_GetPortStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,14 +103,10 @@ Returned if an unspecified error occurred that prevented the retrieval of the st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 717BE2D2-2CF3-4A8C-B7DC-41E45C56B02B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxcontroller/UCX_CONTROLLER_STATE, UCX_CONTROLLER_STATE enumeration [Buses], UcxControllerStateLost, UcxControllerStatePreserved, ucxcontroller/UcxControllerStatePreserved, buses.ucx_controller_state, UCX_CONTROLLER_STATE, ucxcontroller/UcxControllerStateLost, _UCX_CONTROLLER_STATE
+ms.keywords : UCX_CONTROLLER_STATE enumeration [Buses], buses.ucx_controller_state, UCX_CONTROLLER_STATE, ucxcontroller/UCX_CONTROLLER_STATE, _UCX_CONTROLLER_STATE, ucxcontroller/UcxControllerStatePreserved, UcxControllerStateLost, UcxControllerStatePreserved, ucxcontroller/UcxControllerStateLost
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,9 +69,6 @@ typedef enum _UCX_CONTROLLER_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 
 ## See Also

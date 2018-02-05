@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 578f7633-307e-4cda-b8fe-ae73a095976f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfusb/IWDFUsbTargetPipe::RetrievePipePolicy, IWDFUsbTargetPipe::RetrievePipePolicy, UMDFUSBref_97c7b2db-213f-4cdd-8901-547af39b087e.xml, RetrievePipePolicy method, IWDFUsbTargetPipe interface, RetrievePipePolicy, RetrievePipePolicy method, IWDFUsbTargetPipe interface, RetrievePipePolicy method, umdf.iwdfusbtargetpipe_retrievepipepolicy, wdf.iwdfusbtargetpipe_retrievepipepolicy, IWDFUsbTargetPipe
+ms.keywords : IWDFUsbTargetPipe::RetrievePipePolicy, IWDFUsbTargetPipe, RetrievePipePolicy, wdf.iwdfusbtargetpipe_retrievepipepolicy, IWDFUsbTargetPipe interface, RetrievePipePolicy method, wudfusb/IWDFUsbTargetPipe::RetrievePipePolicy, RetrievePipePolicy method, IWDFUsbTargetPipe interface, RetrievePipePolicy method, umdf.iwdfusbtargetpipe_retrievepipepolicy, UMDFUSBref_97c7b2db-213f-4cdd-8901-547af39b087e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -128,22 +128,20 @@ The <b>RetrievePipePolicy</b> method generates a UMDF request and synchronously 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560421">IWDFUsbTargetPipe::SetPipePolicy</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540266">WinUsb_GetPipePolicy</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560421">IWDFUsbTargetPipe::SetPipePolicy</a>
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 
  
 

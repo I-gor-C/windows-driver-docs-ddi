@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ba85b333-9a43-421a-8687-9630e792cadf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_DESTROYALLOCATION, display.d3dkmt_destroyallocation, d3dkmthk/D3DKMT_DESTROYALLOCATION, D3DKMT_DESTROYALLOCATION structure [Display Devices], _D3DKMT_DESTROYALLOCATION, OpenGL_Structs_46425135-17f7-4b12-8e01-1247e3e1ab63.xml
+ms.keywords : d3dkmthk/D3DKMT_DESTROYALLOCATION, display.d3dkmt_destroyallocation, D3DKMT_DESTROYALLOCATION, OpenGL_Structs_46425135-17f7-4b12-8e01-1247e3e1ab63.xml, _D3DKMT_DESTROYALLOCATION, D3DKMT_DESTROYALLOCATION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct _D3DKMT_DESTROYALLOCATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

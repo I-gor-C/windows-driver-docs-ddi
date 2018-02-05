@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9EE04529-D322-4498-B802-BB6A53FBC716
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmatransactiongettransferinfo, WdfDmaTransactionGetTransferInfo method, WdfDmaTransactionGetTransferInfo, wdfdmatransaction/WdfDmaTransactionGetTransferInfo, PFN_WDFDMATRANSACTIONGETTRANSFERINFO, kmdf.wdfdmatransactiongettransferinfo
+ms.keywords : wdf.wdfdmatransactiongettransferinfo, WdfDmaTransactionGetTransferInfo method, PFN_WDFDMATRANSACTIONGETTRANSFERINFO, wdfdmatransaction/WdfDmaTransactionGetTransferInfo, WdfDmaTransactionGetTransferInfo, kmdf.wdfdmatransactiongettransferinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,12 +83,10 @@ When using DMA version 3, this method returns an accurate count of the number of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

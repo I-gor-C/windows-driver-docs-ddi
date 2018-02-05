@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 89cb75e4-5e3b-4277-b173-abed00a7360b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PRemovePort_OUT, hbapiwmi/PRemovePort_OUT, RemovePort_OUT structure [Storage Devices], _RemovePort_OUT, storage.removeport_out, hbapiwmi/RemovePort_OUT, PRemovePort_OUT structure pointer [Storage Devices], structs-Fibre_dc8be161-745b-4919-9227-e333933482cf.xml, RemovePort_OUT, *PRemovePort_OUT
+ms.keywords : hbapiwmi/PRemovePort_OUT, hbapiwmi/RemovePort_OUT, storage.removeport_out, RemovePort_OUT structure [Storage Devices], *PRemovePort_OUT, PRemovePort_OUT, structs-Fibre_dc8be161-745b-4919-9227-e333933482cf.xml, RemovePort_OUT, _RemovePort_OUT, PRemovePort_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ The WMI tool suite generates a declaration of the RemovePort_OUT structure in <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

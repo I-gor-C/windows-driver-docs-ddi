@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 46a58007-16bf-422b-8408-30a7b65dbee6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy_04136093-03d0-4490-bf5c-5e83bddc23c7.xml, IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation, KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface [Streaming Media Devices], KsCompleteIoOperation method, stream.iksdatatypehandler_kscompleteiooperation, ksproxy/IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler
+ms.keywords : IKsDataTypeHandler interface [Streaming Media Devices], KsCompleteIoOperation method, stream.iksdatatypehandler_kscompleteiooperation, ksproxy_04136093-03d0-4490-bf5c-5e83bddc23c7.xml, KsCompleteIoOperation, IKsDataTypeHandler, IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation method [Streaming Media Devices], ksproxy/IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -111,14 +111,9 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

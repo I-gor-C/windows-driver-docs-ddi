@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A1029A2D-980F-44F5-B7D6-1C37F97D0368
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : StopState, ResetState, hdaudio/RunState, hdaudio/HDAUDIO_STREAM_STATE, hdaudio/PauseState, HDAUDIO_STREAM_STATE enumeration [Audio Devices], audio.hdaudio_stream_state, PHDAUDIO_STREAM_STATE enumeration pointer [Audio Devices], HDAUDIO_STREAM_STATE, PHDAUDIO_STREAM_STATE, *PHDAUDIO_STREAM_STATE, hdaudio/ResetState, _HDAUDIO_STREAM_STATE, hdaudio/StopState, RunState, hdaudio/PHDAUDIO_STREAM_STATE, PauseState
+ms.keywords : PauseState, hdaudio/PauseState, HDAUDIO_STREAM_STATE enumeration [Audio Devices], hdaudio/RunState, ResetState, audio.hdaudio_stream_state, hdaudio/HDAUDIO_STREAM_STATE, StopState, *PHDAUDIO_STREAM_STATE, _HDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE, hdaudio/StopState, hdaudio/PHDAUDIO_STREAM_STATE, hdaudio/ResetState, PHDAUDIO_STREAM_STATE, PHDAUDIO_STREAM_STATE enumeration pointer [Audio Devices], RunState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,7 +83,4 @@ This enumeration is used by the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hdaudio.h |

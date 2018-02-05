@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c69d03b7-ef07-41b3-9659-79ab05ecd4e9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_DIDS_PROVISIONING, RILDIALEDIDSETTINGSPARAMMASK, rilapitypes/RILDIALEDIDSETTINGSPARAMMASK, RIL_PARAM_DIDS_PROVISIONING, rilapitypes/RIL_PARAM_DIDS_STATUS, RIL_PARAM_DIDS_STATUS, netvista.rildialedidsettingsparammask_2, RIL_PARAM_DIDS_ALL, RILDIALEDIDSETTINGSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_DIDS_ALL
+ms.keywords : RILDIALEDIDSETTINGSPARAMMASK, RILDIALEDIDSETTINGSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_DIDS_PROVISIONING, rilapitypes/RILDIALEDIDSETTINGSPARAMMASK, netvista.rildialedidsettingsparammask_2, RIL_PARAM_DIDS_PROVISIONING, RIL_PARAM_DIDS_ALL, rilapitypes/RIL_PARAM_DIDS_ALL, rilapitypes/RIL_PARAM_DIDS_STATUS, RIL_PARAM_DIDS_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILDIALEDIDSETTINGSPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

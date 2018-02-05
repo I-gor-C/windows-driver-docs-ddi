@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1f6b4d93-fca8-40da-b87e-c95169f142ea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsMoveIrpsOnCancelableQueue function [Streaming Media Devices], stream.ksmoveirpsoncancelablequeue, ks/KsMoveIrpsOnCancelableQueue, ksfunc_e01b21f7-96b7-4a6c-b6cb-3667d7b6b4dc.xml, KsMoveIrpsOnCancelableQueue
+ms.keywords : stream.ksmoveirpsoncancelablequeue, ksfunc_e01b21f7-96b7-4a6c-b6cb-3667d7b6b4dc.xml, KsMoveIrpsOnCancelableQueue, ks/KsMoveIrpsOnCancelableQueue, KsMoveIrpsOnCancelableQueue function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,14 +102,9 @@ The function can be called at DISPATCH_LEVEL or lower.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

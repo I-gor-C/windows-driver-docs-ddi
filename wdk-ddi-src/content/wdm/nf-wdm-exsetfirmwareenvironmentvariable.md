@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 04447D92-EB9E-400B-A018-E70B186EA3DB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExSetFirmwareEnvironmentVariable, ExSetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], kernel.exsetfirmwareenvironmentvariable, wdm/ExSetFirmwareEnvironmentVariable
+ms.keywords : kernel.exsetfirmwareenvironmentvariable, wdm/ExSetFirmwareEnvironmentVariable, ExSetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], ExSetFirmwareEnvironmentVariable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,22 +145,20 @@ If you create a backup datastore, you can use the  <a href="..\wdm\nf-wdm-exgetf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 <a href="..\wdm\nf-wdm-exgetfirmwareenvironmentvariable.md">ExGetFirmwareEnvironmentVariable</a>
 
 <a href="https://msdn.microsoft.com/42117632-61aa-4f83-abe1-c08f40cf3f0a">SetFirmwareEnvironmentVariable</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

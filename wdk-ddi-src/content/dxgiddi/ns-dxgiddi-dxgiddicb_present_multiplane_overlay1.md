@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AA716307-C235-47B2-BEB6-586FD6013280
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1, dxgiddi/DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1, DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1 structure [Display Devices], display.dxgiddicb_present_multiplane_overlay1
+ms.keywords : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1, dxgiddi/DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1, display.dxgiddicb_present_multiplane_overlay1, DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY1 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ The number of planes in the array that the ppPresentPlanes member specifies.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxgiddi.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 054C8E89-D0A6-46D1-A5AA-2BE73931BB7A
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, _CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, storage.cdrom_exception_performance_descriptor, ntddcdrm/CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, ntddcdrm/PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, *PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure [Storage Devices], PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices]
+ms.keywords : storage.cdrom_exception_performance_descriptor, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure [Storage Devices], PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, _CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, ntddcdrm/CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, *PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices], ntddcdrm/PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,16 +67,13 @@ dependent features.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_header.md">CDROM_PERFORMANCE_HEADER</a>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 
  
 

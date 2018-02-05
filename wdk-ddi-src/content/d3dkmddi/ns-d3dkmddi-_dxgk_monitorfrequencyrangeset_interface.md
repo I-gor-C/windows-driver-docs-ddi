@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4a973ecd-341f-4766-9fed-f56e55f8deae
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure [Display Devices], d3dkmddi/DXGK_MONITORFREQUENCYRANGESET_INTERFACE, _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DmStructs_7ff19615-df83-4d5e-91c2-8a94a1cfeea3.xml, DXGK_MONITORFREQUENCYRANGESET_INTERFACE, display.dxgk_monitorfrequencyrangeset_interface
+ms.keywords : DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure [Display Devices], _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, display.dxgk_monitorfrequencyrangeset_interface, d3dkmddi/DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DmStructs_7ff19615-df83-4d5e-91c2-8a94a1cfeea3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,5 @@ A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitorfrequencyranges
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

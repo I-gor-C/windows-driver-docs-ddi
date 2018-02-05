@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,8 @@ Size, in bytes, of the buffer to allocate.
 
 `*ppvBuffer`
 
-
+A pointer to a caller-supplied variable that stores the address of the allocated buffer. The 
+     <i>ppvBuffer</i> parameter has a valid non-null value if the return value is ERROR_SUCCESS.
 
 
 ## Return Value
@@ -113,8 +114,8 @@ The IHV Extensions DLL must call this function when returning any variable-lengt
       the return of the IHV Handler function.
 
 For more information about the IHV Handler functions, see 
-      <mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-      Functions</mshelp:link>.
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+      Functions</a>.
 
 </li>
 <li>
@@ -130,22 +131,17 @@ In this situation, the DLL must free the memory buffer by calling
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
 
-<mshelp:link keywords="netvista.dot11extihvcreatediscoveryprofiles" tabindex="0"><i>
-   Dot11ExtIhvCreateDiscoveryProfiles</i></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_create_discovery_profiles.md">
+   Dot11ExtIhvCreateDiscoveryProfiles</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
 

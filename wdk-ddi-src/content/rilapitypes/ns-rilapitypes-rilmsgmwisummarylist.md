@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 85f07ef4-6306-4995-9c95-9bbae775af1c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILMSGMWISUMMARYLIST, netvista.rilmsgmwisummarylist_2, RILMSGMWISUMMARYLIST structure [Network Drivers Starting with Windows Vista], RILMSGMWISUMMARYLIST, rilapitypes/RILMSGMWISUMMARYLIST"
+ms.keywords : rilapitypes/RILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST, netvista.rilmsgmwisummarylist_2, RILMSGMWISUMMARYLIST structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,7 +95,4 @@ typedef struct _RILMSGMWISUMMARYLIST {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

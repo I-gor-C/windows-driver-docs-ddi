@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 603a5554-2e61-49f1-a4b1-e0f0f3ba36c8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlunicodetomultibytesize, RtlUnicodeToMultiByteSize routine [Installable File System Drivers], rtlref_f0366c3a-b185-45f3-a7e2-541168b842d3.xml, RtlUnicodeToMultiByteSize, ntifs/RtlUnicodeToMultiByteSize
+ms.keywords : RtlUnicodeToMultiByteSize routine [Installable File System Drivers], ntifs/RtlUnicodeToMultiByteSize, RtlUnicodeToMultiByteSize, rtlref_f0366c3a-b185-45f3-a7e2-541168b842d3.xml, ifsk.rtlunicodetomultibytesize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,11 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

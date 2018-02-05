@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : C74E90C5-9876-4CD1-B9A7-1B32A6AAB474
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PFILE_LEVEL_TRIM_RANGE structure pointer [Installable File System Drivers], _FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE, ifsk.file_level_trim_range, ntifs/PFILE_LEVEL_TRIM_RANGE, PFILE_LEVEL_TRIM_RANGE, ntifs/FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE structure [Installable File System Drivers]
+ms.keywords : ntifs/FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE, ifsk.file_level_trim_range, ntifs/PFILE_LEVEL_TRIM_RANGE, PFILE_LEVEL_TRIM_RANGE structure pointer [Installable File System Drivers], FILE_LEVEL_TRIM_RANGE structure [Installable File System Drivers], PFILE_LEVEL_TRIM_RANGE, _FILE_LEVEL_TRIM_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE"
+req.typenames : FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE
 ---
 
 # _FILE_LEVEL_TRIM_RANGE structure
@@ -66,9 +66,6 @@ Due to alignment requirements, the file system may reduce the of the the trim ra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also

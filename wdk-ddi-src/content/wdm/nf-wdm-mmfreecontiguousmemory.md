@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 485c9b03-eb45-4c86-9292-ccd51ba7b080
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.mmfreecontiguousmemory, MmFreeContiguousMemory routine [Kernel-Mode Driver Architecture], wdm/MmFreeContiguousMemory, MmFreeContiguousMemory, k106_1b930a75-7382-4a6c-a638-3e7675f43f83.xml
+ms.keywords : MmFreeContiguousMemory, wdm/MmFreeContiguousMemory, MmFreeContiguousMemory routine [Kernel-Mode Driver Architecture], kernel.mmfreecontiguousmemory, k106_1b930a75-7382-4a6c-a638-3e7675f43f83.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,19 @@ Callers of <b>MmFreeContiguousMemory</b> must be running at IRQL = APC_LEVEL. Fo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | IrqlMmDispatch, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
-
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemory.md">MmAllocateContiguousMemory</a>
+
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 
 <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md">MmAllocateContiguousMemorySpecifyCacheNode</a>
 

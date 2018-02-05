@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2266e816-2060-4071-bf9f-319daefbfc50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/REG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_POST_OPERATION_INFORMATION, *PREG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION, wdm/PREG_POST_OPERATION_INFORMATION, PREG_POST_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_70ca0f06-65d5-4b1b-ab66-cc44361d4e5a.xml, kernel.reg_post_operation_information, PREG_POST_OPERATION_INFORMATION
+ms.keywords : "_REG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_POST_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PREG_POST_OPERATION_INFORMATION, wdm/PREG_POST_OPERATION_INFORMATION, kernel.reg_post_operation_information, kstruct_d_70ca0f06-65d5-4b1b-ab66-cc44361d4e5a.xml, REG_POST_OPERATION_INFORMATION, wdm/REG_POST_OPERATION_INFORMATION, PREG_POST_OPERATION_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : REG_POST_OPERATION_INFORMATION, *PREG_POST_OPERATION_INFORMATION
+req.typenames : "*PREG_POST_OPERATION_INFORMATION, REG_POST_OPERATION_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -94,18 +94,16 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows Server 2003 and later versions of the Windows operating system, but some structure members are available only for Windows Vista and later versions. Available on Microsoft Windows Server 2003 and later versions of the Windows operating system, but some structure members are available only for Windows Vista and later versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-
 <a href="..\wdm\ns-wdm-_reg_query_value_key_information.md">REG_QUERY_VALUE_KEY_INFORMATION</a>
 
 <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4b6d6791-6c13-49ee-a588-a0ed514279b2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwrollbackcomplete, ZwRollbackComplete, wdm/NtRollbackComplete, ZwRollbackComplete routine [Kernel-Mode Driver Architecture], wdm/ZwRollbackComplete, NtRollbackComplete, ktm_ref_0e759f02-d2c1-4759-a5bc-3c3ceca8186c.xml
+ms.keywords : ZwRollbackComplete routine [Kernel-Mode Driver Architecture], kernel.zwrollbackcomplete, wdm/ZwRollbackComplete, wdm/NtRollbackComplete, ZwRollbackComplete, NtRollbackComplete, ktm_ref_0e759f02-d2c1-4759-a5bc-3c3ceca8186c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -132,24 +132,23 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-
 <a href="..\wdm\nf-wdm-tmrollbackcomplete.md">TmRollbackComplete</a>
 
 <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
  
 

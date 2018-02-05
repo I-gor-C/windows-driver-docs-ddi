@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 204a6126-bb69-4a96-acbf-3ad5b8ae0f04
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : Uninitialize, ISensorClassExtension::Uninitialize, sensors.isensorclassextension_uninitialize, Uninitialize method [Sensor Devices], ISensorClassExtension
+ms.keywords : ISensorClassExtension::Uninitialize, Uninitialize method [Sensor Devices], Uninitialize, ISensorClassExtension, sensors.isensorclassextension_uninitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -94,11 +94,6 @@ If you must, for some reason, otherwise release and uninitialize the sensor clas
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

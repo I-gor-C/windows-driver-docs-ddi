@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c6a6f98f-a4e3-47ed-b9e9-7303c824612d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_74b5ec6e-0c62-419f-beb2-676d993c7496.xml, d3dkmddi/DXGK_MAPAPERTUREFLAGS, DXGK_MAPAPERTUREFLAGS, display.dxgk_mapapertureflags, _DXGK_MAPAPERTUREFLAGS, DXGK_MAPAPERTUREFLAGS structure [Display Devices]
+ms.keywords : "_DXGK_MAPAPERTUREFLAGS, DmStructs_74b5ec6e-0c62-419f-beb2-676d993c7496.xml, display.dxgk_mapapertureflags, DXGK_MAPAPERTUREFLAGS structure [Display Devices], d3dkmddi/DXGK_MAPAPERTUREFLAGS, DXGK_MAPAPERTUREFLAGS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ typedef struct _DXGK_MAPAPERTUREFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

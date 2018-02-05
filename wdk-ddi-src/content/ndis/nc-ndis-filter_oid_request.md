@@ -104,8 +104,8 @@ A pointer to an
 <td width="60%">
 Indicates that the filter driver will complete the request asynchronously. After the driver
        completes the request, it must call the 
-       <mshelp:link keywords="netvista.ndisfoidrequestcomplete" tabindex="0"><b>
-       NdisFOidRequestComplete</b></mshelp:link> function to inform NDIS that the request is complete.
+       <a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">
+       NdisFOidRequestComplete</a> function to inform NDIS that the request is complete.
 
 </td>
 </tr>
@@ -291,20 +291,14 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">NdisFOidRequestComplete</a>
-
-<a href="..\ndis\nf-ndis-ndisallocatecloneoidrequest.md">NdisAllocateCloneOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
@@ -312,7 +306,9 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
 
-<a href="..\ndis\nf-ndis-ndiswriteerrorlogentry.md">NdisWriteErrorLogEntry</a>
+<a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">NdisFOidRequestComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatecloneoidrequest.md">NdisAllocateCloneOidRequest</a>
 
  
 

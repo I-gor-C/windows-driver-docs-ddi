@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B357E186-FE99-448A-B242-13A21A729BC9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, netvista.ndis_wwan_device_service_session_info
+ms.keywords : ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_info, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -113,9 +113,7 @@ The status of the device service session state operation.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

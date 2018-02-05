@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 63DB9626-BB05-43C4-BBC0-3A63ED5D6E94
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_NOTIFY_COMPONENT_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_NOTIFY_COMPONENT_IDLE_STATE, PPEP_NOTIFY_COMPONENT_IDLE_STATE, pepfx/PEP_NOTIFY_COMPONENT_IDLE_STATE, *PPEP_NOTIFY_COMPONENT_IDLE_STATE, pepfx/PPEP_NOTIFY_COMPONENT_IDLE_STATE, kernel.pep_notify_component_idle_state, _PEP_NOTIFY_COMPONENT_IDLE_STATE, PEP_NOTIFY_COMPONENT_IDLE_STATE structure [Kernel-Mode Driver Architecture]
+ms.keywords : PPEP_NOTIFY_COMPONENT_IDLE_STATE, pepfx/PEP_NOTIFY_COMPONENT_IDLE_STATE, PPEP_NOTIFY_COMPONENT_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_NOTIFY_COMPONENT_IDLE_STATE structure [Kernel-Mode Driver Architecture], _PEP_NOTIFY_COMPONENT_IDLE_STATE, kernel.pep_notify_component_idle_state, *PPEP_NOTIFY_COMPONENT_IDLE_STATE, PEP_NOTIFY_COMPONENT_IDLE_STATE, pepfx/PPEP_NOTIFY_COMPONENT_IDLE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_NOTIFY_COMPONENT_IDLE_STATE, PEP_NOTIFY_COMPONENT_IDLE_STATE"
+req.typenames : PEP_NOTIFY_COMPONENT_IDLE_STATE, *PPEP_NOTIFY_COMPONENT_IDLE_STATE
 ---
 
 # _PEP_NOTIFY_COMPONENT_IDLE_STATE structure
@@ -83,9 +83,7 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
@@ -94,11 +92,11 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 
 <a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_WORK</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186759">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a>
 
 <a href="..\pepfx\nc-pepfx-pofxcallbackrequestworker.md">RequestWorker</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_WORK</a>
 
  
 

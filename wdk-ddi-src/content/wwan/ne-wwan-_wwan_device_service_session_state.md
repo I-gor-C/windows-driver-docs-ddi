@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E2527150-2F62-4729-BC6A-FE6027BCCA35
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_DEVICE_SERVICE_SESSION_STATE, *PWWAN_DEVICE_SERVICE_SESSION_STATE, wwan/WwanDeviceServiceSessionOpen, WwanDeviceServiceSessionOpen, netvista.wwan_device_service_session_state, _WWAN_DEVICE_SERVICE_SESSION_STATE, WwanDeviceServiceSessionClosed, WWAN_DEVICE_SERVICE_SESSION_STATE enumeration [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_SESSION_STATE, wwan/WwanDeviceServiceSessionClosed
+ms.keywords : wwan/WwanDeviceServiceSessionClosed, _WWAN_DEVICE_SERVICE_SESSION_STATE, wwan/WWAN_DEVICE_SERVICE_SESSION_STATE, WWAN_DEVICE_SERVICE_SESSION_STATE, WWAN_DEVICE_SERVICE_SESSION_STATE enumeration [Network Drivers Starting with Windows Vista], WwanDeviceServiceSessionClosed, wwan/WwanDeviceServiceSessionOpen, netvista.wwan_device_service_session_state, WwanDeviceServiceSessionOpen, *PWWAN_DEVICE_SERVICE_SESSION_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_DEVICE_SERVICE_SESSION_STATE, *PWWAN_DEVICE_SERVICE_SESSION_STATE
+req.typenames : "*PWWAN_DEVICE_SERVICE_SESSION_STATE, WWAN_DEVICE_SERVICE_SESSION_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -72,9 +72,7 @@ The WWAN_DEVICE_SERVICE_SESSION structure uses the WWAN_DEVICE_SERVICE_SESSION_S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8. Available in Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

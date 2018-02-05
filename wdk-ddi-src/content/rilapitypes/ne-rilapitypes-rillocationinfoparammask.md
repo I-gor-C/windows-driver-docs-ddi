@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a7ce7aaf-fd98-4ba6-8c9e-d15419c658f1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_LU_TAC, rilapitypes/RIL_PARAM_LU_CELLID, netvista.rillocationinfoparammask_2, RIL_PARAM_LU_ALL, rilapitypes/RILLOCATIONINFOPARAMMASK, RILLOCATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_LU_CELLID, rilapitypes/RIL_PARAM_LU_ALL, rilapitypes/RIL_PARAM_LU_TAC, RILLOCATIONINFOPARAMMASK, rilapitypes/RIL_PARAM_LU_HUICCAPP, rilapitypes/RIL_PARAM_LU_LAC, RIL_PARAM_LU_LAC, RIL_PARAM_LU_HUICCAPP
+ms.keywords : RIL_PARAM_LU_LAC, rilapitypes/RIL_PARAM_LU_LAC, rilapitypes/RIL_PARAM_LU_CELLID, RIL_PARAM_LU_HUICCAPP, rilapitypes/RILLOCATIONINFOPARAMMASK, rilapitypes/RIL_PARAM_LU_HUICCAPP, RIL_PARAM_LU_CELLID, RILLOCATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rillocationinfoparammask_2, RIL_PARAM_LU_ALL, RIL_PARAM_LU_TAC, rilapitypes/RIL_PARAM_LU_TAC, rilapitypes/RIL_PARAM_LU_ALL, RILLOCATIONINFOPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,4 @@ typedef enum _RILLOCATIONINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

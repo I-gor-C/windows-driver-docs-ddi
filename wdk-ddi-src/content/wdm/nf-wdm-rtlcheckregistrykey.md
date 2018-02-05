@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b752a764-1f7d-4768-9fa2-c8976560f840
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCheckRegistryKey routine [Kernel-Mode Driver Architecture], k109_d4610b64-e689-4734-aca9-4536889ae2b9.xml, RtlCheckRegistryKey, wdm/RtlCheckRegistryKey, kernel.rtlcheckregistrykey
+ms.keywords : k109_d4610b64-e689-4734-aca9-4536889ae2b9.xml, RtlCheckRegistryKey routine [Kernel-Mode Driver Architecture], wdm/RtlCheckRegistryKey, RtlCheckRegistryKey, kernel.rtlcheckregistrykey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -147,14 +147,12 @@ If the given named key exists in the registry along the given relative path, <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

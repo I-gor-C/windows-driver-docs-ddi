@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9890EB61-2CED-41AB-9A87-76D5020D84A0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_submitwaitforsyncobjectstohwqueue, d3dumddi/D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE structure [Display Devices]
+ms.keywords : display.d3dddicb_submitwaitforsyncobjectstohwqueue, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE structure [Display Devices], d3dumddi/D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ Handles to monitored fence synchronization objects to wait on.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dumddi.h |

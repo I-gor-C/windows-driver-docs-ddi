@@ -76,22 +76,17 @@ This function semantics are similar to existing <a href="..\d3dumddi\nc-d3dumddi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<i>pfnWaitForSynchronizationObject2Cb</i>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectcb.md">pfnWaitForSynchronizationObjectCb</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-d3dddicb_waitforsynchronizationobjectfromgpu.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
-
-<i>pfnWaitForSynchronizationObject2Cb</i>
 
  
 

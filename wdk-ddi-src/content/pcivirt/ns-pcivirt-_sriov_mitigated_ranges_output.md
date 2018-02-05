@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : f33f602e-0bce-4ac2-8bd8-8640b2376278
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI.sriov_mitigated_ranges_output, *PSRIOV_MITIGATED_RANGES_OUTPUT, pcivirt/SRIOV_MITIGATED_RANGES_OUTPUT, SRIOV_MITIGATED_RANGES_OUTPUT structure [Buses], _SRIOV_MITIGATED_RANGES_OUTPUT, SRIOV_MITIGATED_RANGES_OUTPUT
+ms.keywords : PCI.sriov_mitigated_ranges_output, SRIOV_MITIGATED_RANGES_OUTPUT, pcivirt/SRIOV_MITIGATED_RANGES_OUTPUT, _SRIOV_MITIGATED_RANGES_OUTPUT, SRIOV_MITIGATED_RANGES_OUTPUT structure [Buses], *PSRIOV_MITIGATED_RANGES_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ Total number of pages.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |

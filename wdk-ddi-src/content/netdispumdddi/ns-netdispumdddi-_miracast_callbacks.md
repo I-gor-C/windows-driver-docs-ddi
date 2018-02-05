@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2168a4d8-a33d-4534-b4e8-126a41e528f5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_MIRACAST_CALLBACKS, MIRACAST_CALLBACKS structure [Display Devices], netdispumdddi/PMIRACAST_CALLBACKS, MIRACAST_CALLBACKS, PMIRACAST_CALLBACKS structure pointer [Display Devices], netdispumdddi/MIRACAST_CALLBACKS, display.miracast_callbacks, *PMIRACAST_CALLBACKS, PMIRACAST_CALLBACKS"
+ms.keywords : PMIRACAST_CALLBACKS structure pointer [Display Devices], display.miracast_callbacks, PMIRACAST_CALLBACKS, netdispumdddi/MIRACAST_CALLBACKS, netdispumdddi/PMIRACAST_CALLBACKS, *PMIRACAST_CALLBACKS, _MIRACAST_CALLBACKS, MIRACAST_CALLBACKS structure [Display Devices], MIRACAST_CALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,5 @@ A pointer to the    <a href="..\netdispumdddi\nc-netdispumdddi-pfn_report_statis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |

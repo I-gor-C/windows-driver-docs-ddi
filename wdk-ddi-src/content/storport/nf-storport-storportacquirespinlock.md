@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 52a877c7-b274-4bec-b948-edb0585a09e1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportacquirespinlock, storprt_a5092ef5-d8ab-4175-8799-df23cfcd4dc8.xml, StorPortAcquireSpinLock, storport/StorPortAcquireSpinLock, StorPortAcquireSpinLock routine [Storage Devices]
+ms.keywords : StorPortAcquireSpinLock routine [Storage Devices], storprt_a5092ef5-d8ab-4175-8799-df23cfcd4dc8.xml, storport/StorPortAcquireSpinLock, storage.storportacquirespinlock, StorPortAcquireSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -138,8 +138,8 @@ Interrupt
 <tr>
 <td>
 
-<mshelp:link keywords="storage.hwstorstartio" tabindex="0"><b>
-        HwStorStartIo</b></mshelp:link>
+<a href="..\storport\nc-storport-hw_startio.md">
+        HwStorStartIo</a>
 
 
 </td>
@@ -329,8 +329,8 @@ None
 <tr>
 <td>
 
-<mshelp:link keywords="storage.hwstorstartio" tabindex="0"><b>
-        HwStorStartIo</b></mshelp:link>
+<a href="..\storport\nc-storport-hw_startio.md">
+        HwStorStartIo</a>
 
 
 </td>
@@ -456,13 +456,9 @@ DPC, StartIo, Interrupt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
+| **Library** | NtosKrnl.exe |
 | **DDI compliance rules** | StorPortSpinLock, StorPortSpinLock3, StorPortSpinLock4 |
 
 ## See Also

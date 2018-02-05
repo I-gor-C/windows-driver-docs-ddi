@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ee51c436-2d1c-49d0-ab76-337317eeeeda
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/IdleAllowUserControl, wudfddi_types/IdleDoNotAllowUserControl, DFDeviceObjectGeneralRef_3d85e623-4e88-4e66-a21d-489aebd13ddf.xml, wdf.wdf_power_policy_s0_idle_user_control, IdleDoNotAllowUserControl, wudfddi_types/IdleAllowUserControl, wudfddi_types/IdleUserControlInvalid, wdfdevice/WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, IdleAllowUserControl, WDF_POWER_POLICY_S0_IDLE_USER_CONTROL enumeration, _WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, IdleUserControlInvalid, WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, wdfdevice/IdleUserControlInvalid, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, kmdf.wdf_power_policy_s0_idle_user_control, wdfdevice/IdleDoNotAllowUserControl
+ms.keywords : wdfdevice/IdleAllowUserControl, wudfddi_types/IdleAllowUserControl, WDF_POWER_POLICY_S0_IDLE_USER_CONTROL enumeration, wdfdevice/IdleUserControlInvalid, kmdf.wdf_power_policy_s0_idle_user_control, WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, wudfddi_types/IdleUserControlInvalid, IdleDoNotAllowUserControl, wdf.wdf_power_policy_s0_idle_user_control, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, IdleUserControlInvalid, _WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, wdfdevice/WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, wudfddi_types/IdleDoNotAllowUserControl, DFDeviceObjectGeneralRef_3d85e623-4e88-4e66-a21d-489aebd13ddf.xml, wdfdevice/IdleDoNotAllowUserControl, IdleAllowUserControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,7 +82,6 @@ Users control a device's idle behavior by modifying information on a <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_types.h (include Wdf.h) |

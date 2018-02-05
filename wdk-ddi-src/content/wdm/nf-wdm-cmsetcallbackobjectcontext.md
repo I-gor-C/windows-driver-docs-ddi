@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 69e85037-5c60-404a-b251-dc1622c7d818
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.cmsetcallbackobjectcontext, wdm/CmSetCallbackObjectContext, ConfigMgrRef_86ecc2b5-c790-4414-973d-6d26475b211d.xml, CmSetCallbackObjectContext routine [Kernel-Mode Driver Architecture], CmSetCallbackObjectContext
+ms.keywords : kernel.cmsetcallbackobjectcontext, CmSetCallbackObjectContext routine [Kernel-Mode Driver Architecture], CmSetCallbackObjectContext, ConfigMgrRef_86ecc2b5-c790-4414-973d-6d26475b211d.xml, wdm/CmSetCallbackObjectContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,30 +91,28 @@ For more information about <b>CmSetCallbackObjectContext</b> and filtering regis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560957">REG_OPEN_KEY_INFORMATION</a>
 
-<a href="..\wdm\ns-wdm-_reg_create_key_information_v1.md">REG_CREATE_KEY_INFORMATION_V1</a>
+<a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
 
 <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
 
+<a href="..\wdm\ns-wdm-_reg_create_key_information.md">REG_CREATE_KEY_INFORMATION</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560959">REG_OPEN_KEY_INFORMATION_V1</a>
 
-<a href="..\wdm\ns-wdm-_reg_create_key_information.md">REG_CREATE_KEY_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_reg_create_key_information_v1.md">REG_CREATE_KEY_INFORMATION_V1</a>
 
  
 

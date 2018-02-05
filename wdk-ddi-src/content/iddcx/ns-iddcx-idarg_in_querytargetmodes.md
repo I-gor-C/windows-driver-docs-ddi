@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4eeadee1-ac2a-46f5-88e0-fe8d3db3dcf1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDARG_IN_QUERYTARGETMODES structure [Display Devices], iddcx/IDARG_IN_QUERYTARGETMODES, IDARG_IN_QUERYTARGETMODES, display.idarg_in_querytargetmodes
+ms.keywords : IDARG_IN_QUERYTARGETMODES structure [Display Devices], IDARG_IN_QUERYTARGETMODES, iddcx/IDARG_IN_QUERYTARGETMODES, display.idarg_in_querytargetmodes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,7 +71,4 @@ typedef struct IDARG_IN_QUERYTARGETMODES {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

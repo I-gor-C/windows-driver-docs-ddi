@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 50860DA0-D42C-4ACB-A574-C0DEA85713BD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SENSOR_COLLECTION_LIST_INIT function [Sensor Devices], SENSOR_COLLECTION_LIST_INIT, sensorsdef/SENSOR_COLLECTION_LIST_INIT, sensors.sensor_collection_list_init
+ms.keywords : sensors.sensor_collection_list_init, SENSOR_COLLECTION_LIST_INIT function [Sensor Devices], SENSOR_COLLECTION_LIST_INIT, sensorsdef/SENSOR_COLLECTION_LIST_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,9 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorsdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

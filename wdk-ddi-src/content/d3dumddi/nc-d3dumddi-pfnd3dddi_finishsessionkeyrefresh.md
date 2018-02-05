@@ -108,14 +108,9 @@ When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system. The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

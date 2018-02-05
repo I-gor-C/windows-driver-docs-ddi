@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 767F7364-07E4-4B64-AEAE-EEAEEADA5DFE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_PEP_PPM_QUERY_PLATFORM_STATE, PPEP_PPM_QUERY_PLATFORM_STATE, PEP_PPM_QUERY_PLATFORM_STATE structure [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_PLATFORM_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_PLATFORM_STATE, pepfx/PEP_PPM_QUERY_PLATFORM_STATE, *PPEP_PPM_QUERY_PLATFORM_STATE, kernel.pep_ppm_query_platform_state, pepfx/PPEP_PPM_QUERY_PLATFORM_STATE"
+ms.keywords : PPEP_PPM_QUERY_PLATFORM_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_PLATFORM_STATE structure [Kernel-Mode Driver Architecture], *PPEP_PPM_QUERY_PLATFORM_STATE, _PEP_PPM_QUERY_PLATFORM_STATE, pepfx/PPEP_PPM_QUERY_PLATFORM_STATE, kernel.pep_ppm_query_platform_state, PPEP_PPM_QUERY_PLATFORM_STATE, PEP_PPM_QUERY_PLATFORM_STATE, pepfx/PEP_PPM_QUERY_PLATFORM_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_PPM_QUERY_PLATFORM_STATE, *PPEP_PPM_QUERY_PLATFORM_STATE
+req.typenames : "*PPEP_PPM_QUERY_PLATFORM_STATE, PEP_PPM_QUERY_PLATFORM_STATE"
 ---
 
 # _PEP_PPM_QUERY_PLATFORM_STATE structure
@@ -68,18 +68,16 @@ The buffer that PoFx allocates to hold the <b>PEP_PPM_QUERY_PLATFORM_STATE</b> s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186826">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE</a>
+
 <a href="..\pepfx\ns-pepfx-_pep_platform_idle_state.md">PEP_PLATFORM_IDLE_STATE</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186827">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186826">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE</a>
 
  
 

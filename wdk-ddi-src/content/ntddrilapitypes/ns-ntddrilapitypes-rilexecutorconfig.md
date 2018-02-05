@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d53c3df2-fd75-4008-a740-0afa293e36eb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG, ntddrilapitypes/RILEXECUTORCONFIG, RILEXECUTORCONFIG structure [Network Drivers Starting with Windows Vista], netvista.rilexecutorconfig
+ms.keywords : RILEXECUTORCONFIG structure [Network Drivers Starting with Windows Vista], *LPRILEXECUTORCONFIG, RILEXECUTORCONFIG, netvista.rilexecutorconfig, ntddrilapitypes/RILEXECUTORCONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ typedef struct _RILEXECUTORCONFIG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -65,7 +65,7 @@ void Pfnd3d111DdiCreatedomainshader(
 
 `*pShaderCode`
 
-
+A pointer to an array of CONST UINT tokens that form the shader code. The first token in the shader code stream is always the version token. The next token in the stream is the length token that determines the end of the shader code stream. For more information about the format of Direct3D version 11 shader code, see the comments inside the D3d11tokenizedprogramformat.hpp header file that is included with the WDK.
 
 `D3D10DDI_HSHADER`
 
@@ -88,14 +88,9 @@ This callback function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

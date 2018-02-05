@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 16a83c46-c183-4dc2-9d98-877976cf5750
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : drmk/PKSP_DRMAUDIOSTREAM_CONTENTID, *PKSP_DRMAUDIOSTREAM_CONTENTID, KSP_DRMAUDIOSTREAM_CONTENTID, aud-prop_f18ac59e-1ebf-4e98-8bab-1f54f76c6a64.xml, audio.ksp_drmaudiostream_contentid, PKSP_DRMAUDIOSTREAM_CONTENTID, KSP_DRMAUDIOSTREAM_CONTENTID structure [Audio Devices], PKSP_DRMAUDIOSTREAM_CONTENTID structure pointer [Audio Devices], drmk/KSP_DRMAUDIOSTREAM_CONTENTID
+ms.keywords : KSP_DRMAUDIOSTREAM_CONTENTID, PKSP_DRMAUDIOSTREAM_CONTENTID, *PKSP_DRMAUDIOSTREAM_CONTENTID, drmk/PKSP_DRMAUDIOSTREAM_CONTENTID, audio.ksp_drmaudiostream_contentid, drmk/KSP_DRMAUDIOSTREAM_CONTENTID, KSP_DRMAUDIOSTREAM_CONTENTID structure [Audio Devices], PKSP_DRMAUDIOSTREAM_CONTENTID structure pointer [Audio Devices], aud-prop_f18ac59e-1ebf-4e98-8bab-1f54f76c6a64.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,30 +101,27 @@ The structure contains function pointers to the DRM library functions in order t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | drmk.h (include Drmk.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
-<a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
-
-<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
-
 <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
-
-<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
-
-<a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
 
 <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
 
-<a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
+
+<a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
+
+<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
+
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
+
+<a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
 
  
 

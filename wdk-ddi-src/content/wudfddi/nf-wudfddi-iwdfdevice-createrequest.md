@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 031ce604-9d6f-4fdd-bacc-d1897f260a14
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : CreateRequest method, umdf.iwdfdevice_createrequest, CreateRequest, IWDFDevice interface, CreateRequest method, wdf.iwdfdevice_createrequest, wudfddi/IWDFDevice::CreateRequest, UMDFDeviceObjectRef_9eb18b05-e5fc-48cf-907b-ed7d188eac4b.xml, IWDFDevice, CreateRequest method, IWDFDevice interface, IWDFDevice::CreateRequest
+ms.keywords : UMDFDeviceObjectRef_9eb18b05-e5fc-48cf-907b-ed7d188eac4b.xml, CreateRequest method, IWDFDevice interface, IWDFDevice interface, CreateRequest method, CreateRequest method, umdf.iwdfdevice_createrequest, CreateRequest, IWDFDevice::CreateRequest, IWDFDevice, wudfddi/IWDFDevice::CreateRequest, wdf.iwdfdevice_createrequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -103,26 +103,24 @@ If <b>NULL</b> is specified in the <i>pParentObject</i> parameter, the device ob
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559233">IWDFIoTarget::FormatRequestForRead</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559236">IWDFIoTarget::FormatRequestForWrite</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559230">IWDFIoTarget::FormatRequestForIoctl</a>
 

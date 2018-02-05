@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : FFA5B3FF-57AF-4701-97FB-E1182CDE8F7A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD_KEYPAD, windot11/DOT11_WPS_CONFIG_METHOD_PUSHBUTTON, DOT11_WPS_CONFIG_METHOD_DISPLAY, DOT11_WPS_CONFIG_METHOD_NULL, windot11/DOT11_WPS_CONFIG_METHOD_DISPLAY, DOT11_WPS_CONFIG_METHOD_PUSHBUTTON, *PDOT11_WPS_CONFIG_METHOD, windot11/DOT11_WPS_CONFIG_METHOD_KEYPAD, windot11/DOT11_WPS_CONFIG_METHOD_NULL, _DOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD enumeration [Network Drivers Starting with Windows Vista], netvista.dot11_wps_config_method, windot11/DOT11_WPS_CONFIG_METHOD
+ms.keywords : DOT11_WPS_CONFIG_METHOD_PUSHBUTTON, windot11/DOT11_WPS_CONFIG_METHOD_NULL, DOT11_WPS_CONFIG_METHOD, windot11/DOT11_WPS_CONFIG_METHOD_PUSHBUTTON, DOT11_WPS_CONFIG_METHOD_DISPLAY, DOT11_WPS_CONFIG_METHOD enumeration [Network Drivers Starting with Windows Vista], windot11/DOT11_WPS_CONFIG_METHOD_KEYPAD, *PDOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD_NULL, netvista.dot11_wps_config_method, windot11/DOT11_WPS_CONFIG_METHOD, _DOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD_KEYPAD, windot11/DOT11_WPS_CONFIG_METHOD_DISPLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD"
+req.typenames : DOT11_WPS_CONFIG_METHOD, *PDOT11_WPS_CONFIG_METHOD
 req.product : Windows 10 or later.
 ---
 
@@ -96,7 +96,5 @@ typedef enum _DOT11_WPS_CONFIG_METHOD {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | windot11.h |

@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : 14775785-27e3-4bfa-ad69-695869ebb5d6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : biometric.winbio_update_firmware, WINBIO_UPDATE_FIRMWARE, PWINBIO_UPDATE_FIRMWARE, PWINBIO_UPDATE_FIRMWARE structure pointer [Biometric Devices], _WINBIO_UPDATE_FIRMWARE, biometric_ref_e4f6a748-a0a4-4dcd-883a-a00e568acf7f.xml, winbio_ioctl/PWINBIO_UPDATE_FIRMWARE, WINBIO_UPDATE_FIRMWARE structure [Biometric Devices], *PWINBIO_UPDATE_FIRMWARE, winbio_ioctl/WINBIO_UPDATE_FIRMWARE
+ms.keywords : PWINBIO_UPDATE_FIRMWARE structure pointer [Biometric Devices], WINBIO_UPDATE_FIRMWARE, *PWINBIO_UPDATE_FIRMWARE, PWINBIO_UPDATE_FIRMWARE, winbio_ioctl/WINBIO_UPDATE_FIRMWARE, biometric_ref_e4f6a748-a0a4-4dcd-883a-a00e568acf7f.xml, biometric.winbio_update_firmware, _WINBIO_UPDATE_FIRMWARE, WINBIO_UPDATE_FIRMWARE structure [Biometric Devices], winbio_ioctl/PWINBIO_UPDATE_FIRMWARE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WINBIO_UPDATE_FIRMWARE, *PWINBIO_UPDATE_FIRMWARE
+req.typenames : "*PWINBIO_UPDATE_FIRMWARE, WINBIO_UPDATE_FIRMWARE"
 req.product : Windows 10 or later.
 ---
 
@@ -65,16 +65,14 @@ Specifies the total size of the payload, which includes the fixed length structu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |
 
 ## See Also
 
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_blank_payload.md">WINBIO_BLANK_PAYLOAD</a>
-
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_update_firmware.md">IOCTL_BIOMETRIC_UPDATE_FIRMWARE</a>
+
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_blank_payload.md">WINBIO_BLANK_PAYLOAD</a>
 
  
 

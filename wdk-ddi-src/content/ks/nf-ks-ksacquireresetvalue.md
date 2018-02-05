@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 80a990e3-3637-4837-8800-42d5848e01cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAcquireResetValue function [Streaming Media Devices], KsAcquireResetValue, stream.ksacquireresetvalue, ks/KsAcquireResetValue, ksfunc_fbfd5f64-6842-4559-9829-05797fda4fa2.xml
+ms.keywords : KsAcquireResetValue, KsAcquireResetValue function [Streaming Media Devices], stream.ksacquireresetvalue, ksfunc_fbfd5f64-6842-4559-9829-05797fda4fa2.xml, ks/KsAcquireResetValue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,6 @@ The <b>KsAcquireResetValue </b>function returns STATUS_SUCCESS if the reset valu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

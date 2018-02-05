@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A0D35ECE-5B7F-4F60-9178-75673C9A945F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtllonglongsub, RtlLongLongSub function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongLongSub, RtlLongLongSub
+ms.keywords : RtlLongLongSub, RtlLongLongSub function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongLongSub, kernel.rtllonglongsub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,11 +94,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

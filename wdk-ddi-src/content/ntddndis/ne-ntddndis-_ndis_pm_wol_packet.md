@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 154a9d3d-4bb9-4c63-a820-816b254c69c2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_PM_WOL_PACKET, NDIS_PM_WOL_PACKET enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisPMWoLPacketUnspecified, ntddndis/NdisPMWoLPacketIPv6TcpSyn, NDIS_PM_WOL_PACKET, ntddndis/NDIS_PM_WOL_PACKET, NdisPMWoLPacketEapolRequestIdMessage, *PNDIS_PM_WOL_PACKET, ntddndis/NdisPMWoLPacketMaximum, ntddndis/PNDIS_PM_WOL_PACKET, PNDIS_PM_WOL_PACKET enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NdisPMWoLPacketEapolRequestIdMessage, ntddndis/NdisPMWoLPacketIPv4TcpSyn, PNDIS_PM_WOL_PACKET, ntddndis/NdisPMWoLPacketMagicPacket, miniport_power_management_ref_4788c1ee-7ed8-49f2-950b-7a820223bc32.xml, NdisPMWoLPacketBitmapPattern, NdisPMWoLPacketIPv4TcpSyn, NdisPMWoLPacketMagicPacket, NdisPMWoLPacketUnspecified, NdisPMWoLPacketIPv6TcpSyn, NdisPMWoLPacketMaximum, ntddndis/NdisPMWoLPacketBitmapPattern, netvista.ndis_pm_wol_packet"
+ms.keywords : NdisPMWoLPacketMagicPacket, NDIS_PM_WOL_PACKET enumeration [Network Drivers Starting with Windows Vista], NdisPMWoLPacketIPv4TcpSyn, PNDIS_PM_WOL_PACKET enumeration pointer [Network Drivers Starting with Windows Vista], NdisPMWoLPacketEapolRequestIdMessage, ntddndis/NdisPMWoLPacketIPv4TcpSyn, ntddndis/NdisPMWoLPacketEapolRequestIdMessage, netvista.ndis_pm_wol_packet, ntddndis/NDIS_PM_WOL_PACKET, *PNDIS_PM_WOL_PACKET, NDIS_PM_WOL_PACKET, NdisPMWoLPacketUnspecified, ntddndis/NdisPMWoLPacketMaximum, ntddndis/NdisPMWoLPacketUnspecified, NdisPMWoLPacketBitmapPattern, ntddndis/NdisPMWoLPacketIPv6TcpSyn, ntddndis/NdisPMWoLPacketMagicPacket, _NDIS_PM_WOL_PACKET, NdisPMWoLPacketMaximum, PNDIS_PM_WOL_PACKET, ntddndis/PNDIS_PM_WOL_PACKET, ntddndis/NdisPMWoLPacketBitmapPattern, miniport_power_management_ref_4788c1ee-7ed8-49f2-950b-7a820223bc32.xml, NdisPMWoLPacketIPv6TcpSyn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_PM_WOL_PACKET, *PNDIS_PM_WOL_PACKET
+req.typenames : "*PNDIS_PM_WOL_PACKET, NDIS_PM_WOL_PACKET"
 ---
 
 # _NDIS_PM_WOL_PACKET Enumeration
@@ -114,9 +114,7 @@ The <b>NDIS_PM_WOL_PACKET</b> enumeration is used in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
 ## See Also

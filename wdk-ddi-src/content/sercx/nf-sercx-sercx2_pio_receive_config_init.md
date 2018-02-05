@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 08FBBC1D-EB2A-4178-9245-C3FF60424F95
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SERCX2_PIO_RECEIVE_CONFIG_INIT function [Serial Ports], SERCX2_PIO_RECEIVE_CONFIG_INIT, serports.sercx2_pio_receive_config_init, 2/SERCX2_PIO_RECEIVE_CONFIG_INIT
+ms.keywords : 2/SERCX2_PIO_RECEIVE_CONFIG_INIT, SERCX2_PIO_RECEIVE_CONFIG_INIT, serports.sercx2_pio_receive_config_init, SERCX2_PIO_RECEIVE_CONFIG_INIT function [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,14 +86,11 @@ Your serial controller driver must use this function to initialize a <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

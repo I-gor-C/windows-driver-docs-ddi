@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7E02DDE0-7D55-4FBD-879E-EFBA6A517D86
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_device_service_event, WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_EVENT, PWWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], _WWAN_DEVICE_SERVICE_EVENT, wwan/PWWAN_DEVICE_SERVICE_EVENT, PWWAN_DEVICE_SERVICE_EVENT, *PWWAN_DEVICE_SERVICE_EVENT, wwan/WWAN_DEVICE_SERVICE_EVENT
+ms.keywords : wwan/WWAN_DEVICE_SERVICE_EVENT, PWWAN_DEVICE_SERVICE_EVENT, WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], _WWAN_DEVICE_SERVICE_EVENT, wwan/PWWAN_DEVICE_SERVICE_EVENT, netvista.wwan_device_service_event, *PWWAN_DEVICE_SERVICE_EVENT, WWAN_DEVICE_SERVICE_EVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,7 @@ The size, in bytes, of the device service event data that follows the structure 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

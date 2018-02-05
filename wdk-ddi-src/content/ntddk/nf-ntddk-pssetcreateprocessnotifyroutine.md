@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eeeea140-e469-476f-adce-4505817bc35e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsSetCreateProcessNotifyRoutine, k108_6ae7797a-ecbe-4665-85d5-e199f13613cd.xml, kernel.pssetcreateprocessnotifyroutine, ntddk/PsSetCreateProcessNotifyRoutine, PsSetCreateProcessNotifyRoutine routine [Kernel-Mode Driver Architecture]
+ms.keywords : ntddk/PsSetCreateProcessNotifyRoutine, kernel.pssetcreateprocessnotifyroutine, PsSetCreateProcessNotifyRoutine routine [Kernel-Mode Driver Architecture], PsSetCreateProcessNotifyRoutine, k108_6ae7797a-ecbe-4665-85d5-e199f13613cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -107,12 +107,11 @@ After a driver-supplied routine is registered, it is called with <i>Create</i> s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -120,13 +119,13 @@ After a driver-supplied routine is registered, it is called with <i>Create</i> s
 
 <a href="..\ntddk\nf-ntddk-pssetcreatethreadnotifyroutine.md">PsSetCreateThreadNotifyRoutine</a>
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
+<a href="..\ntddk\nc-ntddk-pcreate_process_notify_routine.md">PCREATE_PROCESS_NOTIFY_ROUTINE</a>
 
-<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
 
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex.md">PsSetCreateProcessNotifyRoutineEx</a>
 
-<a href="..\ntddk\nc-ntddk-pcreate_process_notify_routine.md">PCREATE_PROCESS_NOTIFY_ROUTINE</a>
+<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
 
  
 

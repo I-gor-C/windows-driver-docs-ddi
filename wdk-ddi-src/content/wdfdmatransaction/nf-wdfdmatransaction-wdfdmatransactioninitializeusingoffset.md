@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 896343A8-0C72-47D4-8465-A029EDCD66A0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionInitializeUsingOffset method, kmdf.wdfdmatransactioninitializeusingoffset, WdfDmaTransactionInitializeUsingOffset, wdfdmatransaction/WdfDmaTransactionInitializeUsingOffset, wdf.wdfdmatransactioninitializeusingoffset
+ms.keywords : WdfDmaTransactionInitializeUsingOffset method, wdfdmatransaction/WdfDmaTransactionInitializeUsingOffset, WdfDmaTransactionInitializeUsingOffset, kmdf.wdfdmatransactioninitializeusingoffset, wdf.wdfdmatransactioninitializeusingoffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,12 +103,10 @@ The driver can specify an MDL chain in the <i>Mdl</i> parameter of this method. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

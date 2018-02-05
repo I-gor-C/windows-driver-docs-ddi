@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a5a003c1-fa35-461d-8a47-a1a7bc2375b4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAcquireDeviceSecurityLock, ks/KsAcquireDeviceSecurityLock, ksfunc_dd097c63-acd6-4de2-b3c9-a50e55e3f3f1.xml, stream.ksacquiredevicesecuritylock, KsAcquireDeviceSecurityLock function [Streaming Media Devices]
+ms.keywords : ksfunc_dd097c63-acd6-4de2-b3c9-a50e55e3f3f1.xml, stream.ksacquiredevicesecuritylock, ks/KsAcquireDeviceSecurityLock, KsAcquireDeviceSecurityLock function [Streaming Media Devices], KsAcquireDeviceSecurityLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,10 @@ A shared lock is acquired when validating access during a create. An exclusive l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

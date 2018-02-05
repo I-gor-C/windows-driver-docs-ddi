@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1EBA2124-F5D3-4683-B967-8179CCCD3102
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ks_h264videoinfo, ksmedia/PKS_H264VIDEOINFO, PKS_H264VIDEOINFO, KS_H264VIDEOINFO structure [Streaming Media Devices], KS_H264VIDEOINFO, ksmedia/KS_H264VIDEOINFO, PKS_H264VIDEOINFO structure pointer [Streaming Media Devices], tagKS_H264VIDEOINFO, *PKS_H264VIDEOINFO
+ms.keywords : ksmedia/KS_H264VIDEOINFO, PKS_H264VIDEOINFO, KS_H264VIDEOINFO, stream.ks_h264videoinfo, PKS_H264VIDEOINFO structure pointer [Streaming Media Devices], tagKS_H264VIDEOINFO, ksmedia/PKS_H264VIDEOINFO, *PKS_H264VIDEOINFO, KS_H264VIDEOINFO structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -537,16 +537,14 @@ The KS_H264VIDEOINFO structure contains the frame and the format descriptor info
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_datarange_h264_video.md">KS_DATARANGE_H264_VIDEO</a>
-
 <a href="..\ksmedia\ns-ksmedia-tagks_dataformat_h264videoinfo.md">KS_DATAFORMAT_H264VIDEOINFO</a>
+
+<a href="..\ksmedia\ns-ksmedia-tagks_datarange_h264_video.md">KS_DATARANGE_H264_VIDEO</a>
 
  
 

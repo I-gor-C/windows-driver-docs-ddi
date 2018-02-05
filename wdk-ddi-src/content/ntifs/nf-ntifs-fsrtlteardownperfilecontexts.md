@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c124c5a4-5187-4474-8896-28c729bc7d07
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlTeardownPerFileContexts, FsRtlTeardownPerFileContexts routine [Installable File System Drivers], ifsk.fsrtlteardownperfilecontexts, fsrtlref_3bd1af9f-ebc1-4cf8-9c7d-415f4bc64eb4.xml, FsRtlTeardownPerFileContexts
+ms.keywords : FsRtlTeardownPerFileContexts, fsrtlref_3bd1af9f-ebc1-4cf8-9c7d-415f4bc64eb4.xml, ntifs/FsRtlTeardownPerFileContexts, ifsk.fsrtlteardownperfilecontexts, FsRtlTeardownPerFileContexts routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,20 +70,18 @@ To avoid conflicts in synchronization, the <b>FsRtlTeardownPerFileContexts</b> r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting withWindows Vista. Available starting withWindows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551123">PFREE_FUNCTION</a>
-
 <a href="https://msdn.microsoft.com/6be3ff10-47e4-47f5-8f15-88a80a16f451">Tracking Per-File Context in a Legacy File System Filter Driver</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551123">PFREE_FUNCTION</a>
 
 <a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FSRTL_PER_FILE_CONTEXT</a>
 

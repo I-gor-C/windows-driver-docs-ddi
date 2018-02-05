@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS"
+req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK IOCTL
@@ -71,6 +71,5 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows Vista and later versions of Windows. Windows Vista and later versions of Windows. |
 | **Header** | acpiioct.h (include Acpiioct.h) |
-| **IRQL** |  |

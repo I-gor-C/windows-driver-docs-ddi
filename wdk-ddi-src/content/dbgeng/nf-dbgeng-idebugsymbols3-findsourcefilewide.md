@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a21be482-7640-4e72-a8af-00bb10216fa8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.findsourcefilewide, FindSourceFileWide method [Windows Debugging], FindSourceFileWide method [Windows Debugging], IDebugSymbols3 interface, FindSourceFileWide, dbgeng/IDebugSymbols3::FindSourceFileWide, IDebugSymbols3 interface [Windows Debugging], FindSourceFileWide method, IDebugSymbols3, IDebugSymbols3::FindSourceFileWide
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], FindSourceFileWide method, FindSourceFileWide method [Windows Debugging], IDebugSymbols3 interface, FindSourceFileWide, FindSourceFileWide method [Windows Debugging], dbgeng/IDebugSymbols3::FindSourceFileWide, debugger.findsourcefilewide, IDebugSymbols3, IDebugSymbols3::FindSourceFileWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -148,26 +148,21 @@ The first match found is returned.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548339">GetSourceFileLineOffsets</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545430">FindSourceFileAndToken</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541495">DEBUG_FIND_SOURCE_XXX</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548367">GetSourcePathElement</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541495">DEBUG_FIND_SOURCE_XXX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545430">FindSourceFileAndToken</a>
 
  
 

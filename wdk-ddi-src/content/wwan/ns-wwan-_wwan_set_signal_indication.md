@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 266ec8f5-f6ec-47e5-b433-4f570f2d43d2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_SET_SIGNAL_INDICATION structure [Network Drivers Starting with Windows Vista], PWWAN_SET_SIGNAL_INDICATION structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SET_SIGNAL_INDICATION, netvista.wwan_set_signal_indication, WWAN_SET_SIGNAL_INDICATION, WwanRef_fa4b9dee-5b46-47f2-8674-d8fa78351d86.xml, PWWAN_SET_SIGNAL_INDICATION, *PWWAN_SET_SIGNAL_INDICATION, wwan/PWWAN_SET_SIGNAL_INDICATION, _WWAN_SET_SIGNAL_INDICATION
+ms.keywords : "_WWAN_SET_SIGNAL_INDICATION, WWAN_SET_SIGNAL_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.wwan_set_signal_indication, WWAN_SET_SIGNAL_INDICATION, PWWAN_SET_SIGNAL_INDICATION, WwanRef_fa4b9dee-5b46-47f2-8674-d8fa78351d86.xml, *PWWAN_SET_SIGNAL_INDICATION, PWWAN_SET_SIGNAL_INDICATION structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SET_SIGNAL_INDICATION, wwan/WWAN_SET_SIGNAL_INDICATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_SET_SIGNAL_INDICATION, *PWWAN_SET_SIGNAL_INDICATION
+req.typenames : "*PWWAN_SET_SIGNAL_INDICATION, WWAN_SET_SIGNAL_INDICATION"
 req.product : Windows 10 or later.
 ---
 
@@ -81,15 +81,13 @@ The miniport driver can always switch to its device-specific default reporting i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_wwan_set_signal_indication" tabindex="0"><b>
-   NDIS_WWAN_SET_SIGNAL_INDICATION</b></mshelp:link>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_signal_indication.md">
+   NDIS_WWAN_SET_SIGNAL_INDICATION</a>
 
  
 

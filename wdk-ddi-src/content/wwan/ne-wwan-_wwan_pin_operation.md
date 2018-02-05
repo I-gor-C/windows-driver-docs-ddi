@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1b21b4b4-a35d-47c4-9cd6-e31e2dfbe59f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanPinOperationChange, wwan/WwanPinOperationChange, WwanPinOperationMax, netvista.wwan_pin_operation, WWAN_PIN_OPERATION, WWAN_PIN_OPERATION enumeration [Network Drivers Starting with Windows Vista], wwan/WwanPinOperationMax, PWWAN_PIN_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_PIN_OPERATION, WwanRef_06404d11-22d3-4b07-9c6f-60771ecfc154.xml, _WWAN_PIN_OPERATION, *PWWAN_PIN_OPERATION, WwanPinOperationEnter, WwanPinOperationEnable, wwan/PWWAN_PIN_OPERATION, wwan/WwanPinOperationEnter, WwanPinOperationDisable, wwan/WWAN_PIN_OPERATION, wwan/WwanPinOperationDisable, wwan/WwanPinOperationEnable
+ms.keywords : netvista.wwan_pin_operation, PWWAN_PIN_OPERATION, WwanRef_06404d11-22d3-4b07-9c6f-60771ecfc154.xml, WWAN_PIN_OPERATION, wwan/PWWAN_PIN_OPERATION, WWAN_PIN_OPERATION enumeration [Network Drivers Starting with Windows Vista], wwan/WwanPinOperationEnter, WwanPinOperationDisable, WwanPinOperationEnter, WwanPinOperationEnable, WwanPinOperationChange, wwan/WwanPinOperationChange, *PWWAN_PIN_OPERATION, wwan/WWAN_PIN_OPERATION, WwanPinOperationMax, wwan/WwanPinOperationEnable, wwan/WwanPinOperationMax, _WWAN_PIN_OPERATION, wwan/WwanPinOperationDisable, PWWAN_PIN_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_PIN_OPERATION, WWAN_PIN_OPERATION"
+req.typenames : WWAN_PIN_OPERATION, *PWWAN_PIN_OPERATION
 req.product : Windows 10 or later.
 ---
 
@@ -94,9 +94,7 @@ If a PIN disable operation for a given PIN type is tried when that PIN type is l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

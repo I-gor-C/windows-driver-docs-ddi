@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 68fbaa04-ca7a-46b4-a7ca-c3d44443c2af
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_01a2309b-8cae-4a38-9e47-68619f422af2.xml, PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORREAD, kmdf.wdfrequestprobeandlockuserbufferforread, wdfrequest/WdfRequestProbeAndLockUserBufferForRead, WdfRequestProbeAndLockUserBufferForRead method, wdf.wdfrequestprobeandlockuserbufferforread, WdfRequestProbeAndLockUserBufferForRead
+ms.keywords : PFN_WDFREQUESTPROBEANDLOCKUSERBUFFERFORREAD, wdf.wdfrequestprobeandlockuserbufferforread, WdfRequestProbeAndLockUserBufferForRead, DFRequestObjectRef_01a2309b-8cae-4a38-9e47-68619f422af2.xml, wdfrequest/WdfRequestProbeAndLockUserBufferForRead, kmdf.wdfrequestprobeandlockuserbufferforread, WdfRequestProbeAndLockUserBufferForRead method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -164,22 +164,20 @@ For more information about <b>WdfRequestProbeAndLockUserBufferForRead</b>, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer.md">WdfRequestRetrieveUnsafeUserInputBuffer</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a>
-
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
 
  
 

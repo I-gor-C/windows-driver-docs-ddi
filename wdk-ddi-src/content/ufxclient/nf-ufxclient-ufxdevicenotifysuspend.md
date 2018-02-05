@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 80786A5A-E585-4092-814F-B940DD6967C6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UfxDeviceNotifySuspend, UfxDeviceNotifySuspend method [Buses], buses.ufxdevicenotifysuspend, ufxclient/UfxDeviceNotifySuspend
+ms.keywords : UfxDeviceNotifySuspend, ufxclient/UfxDeviceNotifySuspend, UfxDeviceNotifySuspend method [Buses], buses.ufxdevicenotifysuspend
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -87,11 +87,8 @@ The client driver typically calls <b>UfxDeviceNotifySuspend</b> from its <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |

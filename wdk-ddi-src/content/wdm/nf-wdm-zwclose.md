@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 35f335db-416b-4a17-b84c-d440b34ed199
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwClose routine [Kernel-Mode Driver Architecture], wdm/ZwClose, wdm/NtClose, ZwClose, k111_6311836b-aa48-46f1-a64b-d94d5bb95f16.xml, NtClose, kernel.zwclose
+ms.keywords : ZwClose, NtClose, wdm/ZwClose, kernel.zwclose, wdm/NtClose, k111_6311836b-aa48-46f1-a64b-d94d5bb95f16.xml, ZwClose routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,18 +78,17 @@ Callers of <b>ZwClose</b> should not assume that this routine automatically wait
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+<a href="..\wdm\nf-wdm-zwcreatedirectoryobject.md">ZwCreateDirectoryObject</a>
 
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
@@ -97,9 +96,9 @@ Callers of <b>ZwClose</b> should not assume that this routine automatically wait
 
 <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
 
-<a href="..\wdm\nf-wdm-zwcreatedirectoryobject.md">ZwCreateDirectoryObject</a>
-
 <a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

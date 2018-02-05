@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 343b230c-08ae-4e05-8ab0-03f4c8748a11
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FWPS_FIELD_IPSEC_KM_DEMUX_V6_QM_MODE, FWPS_FIELDS_IPSEC_KM_DEMUX_V6, FWPS_FIELDS_IPSEC_KM_DEMUX_V6 enumeration [Network Drivers Starting with Windows Vista], wfp_ref_5_const_3_data_fields_3f9c4ab8-b2eb-4663-b4c0-1d0865b94025.xml, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_CURRENT_PROFILE_ID, FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_INTERFACE, FWPS_FIELD_IPSEC_KM_DEMUX_V6_MAX, FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_QM_MODE, FWPS_FIELDS_IPSEC_KM_DEMUX_V6_, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_REMOTE_ADDRESS, FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELDS_IPSEC_KM_DEMUX_V6, netvista.fwps_fields_ipsec_km_demux_v6, FWPS_FIELD_IPSEC_KM_DEMUX_V6_CURRENT_PROFILE_ID, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_MAX
+ms.keywords : FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_INTERFACE, FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_INTERFACE, FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_ADDRESS, wfp_ref_5_const_3_data_fields_3f9c4ab8-b2eb-4663-b4c0-1d0865b94025.xml, FWPS_FIELDS_IPSEC_KM_DEMUX_V6_, FWPS_FIELD_IPSEC_KM_DEMUX_V6_MAX, fwpsk/FWPS_FIELDS_IPSEC_KM_DEMUX_V6, FWPS_FIELDS_IPSEC_KM_DEMUX_V6 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_IP_LOCAL_ADDRESS, FWPS_FIELD_IPSEC_KM_DEMUX_V6_CURRENT_PROFILE_ID, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_MAX, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_CURRENT_PROFILE_ID, fwpsk/FWPS_FIELD_IPSEC_KM_DEMUX_V6_QM_MODE, netvista.fwps_fields_ipsec_km_demux_v6, FWPS_FIELDS_IPSEC_KM_DEMUX_V6, FWPS_FIELD_IPSEC_KM_DEMUX_V6_QM_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -109,7 +109,5 @@ typedef enum FWPS_FIELDS_IPSEC_KM_DEMUX_V6_ {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows Vista. Supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |

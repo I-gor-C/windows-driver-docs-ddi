@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ce068ad0-3826-4f5d-a41c-2c3a40200f30
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateSynchronizationEvent routine [Kernel-Mode Driver Architecture], kernel.iocreatesynchronizationevent, IoCreateSynchronizationEvent, k104_413cbfff-08a2-44b5-acdc-0e23d382a3d3.xml, wdm/IoCreateSynchronizationEvent
+ms.keywords : k104_413cbfff-08a2-44b5-acdc-0e23d382a3d3.xml, IoCreateSynchronizationEvent routine [Kernel-Mode Driver Architecture], IoCreateSynchronizationEvent, wdm/IoCreateSynchronizationEvent, kernel.iocreatesynchronizationevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,12 +90,11 @@ The driver creates a named event object in the \\BaseNamedObjects object directo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -103,11 +102,11 @@ The driver creates a named event object in the \\BaseNamedObjects object directo
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
-<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
-
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
 
  
 

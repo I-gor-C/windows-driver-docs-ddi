@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c4261a83-3c91-4bc1-93bf-d2d04c324e94
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwqueryeafile, ZwQueryEaFile routine [Kernel-Mode Driver Architecture], ZwQueryEaFile, ntifs/ZwQueryEaFile
+ms.keywords : ZwQueryEaFile routine [Kernel-Mode Driver Architecture], ntifs/ZwQueryEaFile, ZwQueryEaFile, kernel.zwqueryeafile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -162,12 +162,11 @@ The <i>EaList</i> parameter is not formatted correctly. This is an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 and later versions of the Windows operating system. Available in Microsoft Windows 2000 and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

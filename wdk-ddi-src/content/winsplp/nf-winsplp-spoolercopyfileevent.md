@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 39e9b596-7726-439c-8ad9-a987fdfd3860
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/SpoolerCopyFileEvent, SpoolerCopyFileEvent, poprfnc_e85f9707-18cf-4cd5-aece-ebcd5fd09270.xml, print.spoolercopyfileevent, SpoolerCopyFileEvent function [Print Devices]
+ms.keywords : poprfnc_e85f9707-18cf-4cd5-aece-ebcd5fd09270.xml, SpoolerCopyFileEvent function [Print Devices], winsplp/SpoolerCopyFileEvent, print.spoolercopyfileevent, SpoolerCopyFileEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -160,14 +160,10 @@ If <i>dwCopyFileEvent</i> is COPYFILE_EVENT_ADD_PRINTER_CONNECTION or COPYFILE_E
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mscms.lib |
+| **DLL** | Mscms.dll |
 
 ## See Also
 

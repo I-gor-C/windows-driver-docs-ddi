@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 51c521fc-e89c-49c9-8110-de31af3bed83
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugRegisters::GetNumberRegisters, dbgeng/IDebugRegisters::GetNumberRegisters, GetNumberRegisters method [Windows Debugging], GetNumberRegisters method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2 interface [Windows Debugging], GetNumberRegisters method, GetNumberRegisters method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_b2fa1d95-0331-4c27-a3af-3cc8e895e88f.xml, GetNumberRegisters, dbgeng/IDebugRegisters2::GetNumberRegisters, IDebugRegisters interface [Windows Debugging], GetNumberRegisters method, IDebugRegisters2::GetNumberRegisters, debugger.getnumberregisters, IDebugRegisters2
+ms.keywords : IDebugRegisters2::GetNumberRegisters, GetNumberRegisters method [Windows Debugging], GetNumberRegisters, GetNumberRegisters method [Windows Debugging], IDebugRegisters2 interface, GetNumberRegisters method [Windows Debugging], IDebugRegisters interface, debugger.getnumberregisters, IDebugRegisters2 interface [Windows Debugging], GetNumberRegisters method, IDebugRegisters2, IDebugRegisters::GetNumberRegisters, dbgeng/IDebugRegisters2::GetNumberRegisters, dbgeng/IDebugRegisters::GetNumberRegisters, IDebugRegisters interface [Windows Debugging], GetNumberRegisters method, IDebugRegisters_b2fa1d95-0331-4c27-a3af-3cc8e895e88f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,11 +85,6 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

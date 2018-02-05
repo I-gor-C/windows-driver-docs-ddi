@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 772ca60b-a957-47de-b95d-486497b295ce
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortConvertUlongToPhysicalAddress, storport/StorPortConvertUlongToPhysicalAddress, storprt_c0da13f0-81f8-48ae-93e2-8af7bcedf4dc.xml, StorPortConvertUlongToPhysicalAddress routine [Storage Devices], storage.storportconvertulongtophysicaladdress
+ms.keywords : storport/StorPortConvertUlongToPhysicalAddress, storprt_c0da13f0-81f8-48ae-93e2-8af7bcedf4dc.xml, storage.storportconvertulongtophysicaladdress, StorPortConvertUlongToPhysicalAddress routine [Storage Devices], StorPortConvertUlongToPhysicalAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -127,11 +127,6 @@ StorPortConvertPhysicalAddressToULong64 uses <b>STOR_PHYSICAL_ADDRESS</b> to rep
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |

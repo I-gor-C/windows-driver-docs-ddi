@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b6780f1c-e093-4d91-8909-dabb1ecaefaa
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects2, GetCurrentProcessHandle, IDebugSystemObjects2::GetCurrentProcessHandle, IDebugSystemObjects, IDebugSystemObjects::GetCurrentProcessHandle, GetCurrentProcessHandle function [Windows Debugging], WdbgExts_Ref_50cc8e27-7f7e-4ec3-ad2d-745f38e87037.xml, wdbgexts/GetCurrentProcessHandle, debugger.getcurrentprocesshandle
+ms.keywords : debugger.getcurrentprocesshandle, WdbgExts_Ref_50cc8e27-7f7e-4ec3-ad2d-745f38e87037.xml, wdbgexts/GetCurrentProcessHandle, IDebugSystemObjects, IDebugSystemObjects2, GetCurrentProcessHandle, IDebugSystemObjects::GetCurrentProcessHandle, GetCurrentProcessHandle function [Windows Debugging], IDebugSystemObjects2::GetCurrentProcessHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,11 +68,6 @@ In kernel-mode debugging, the only process in the target is the virtual process 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

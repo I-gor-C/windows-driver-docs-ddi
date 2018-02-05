@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3a5e151d-2a2d-4477-a736-8a5f3d3820a2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], _NDIS_OID_REQUEST, netvista.ndis_oid_request, ndis/NDIS_OID_REQUEST, *PNDIS_OID_REQUEST, PNDIS_OID_REQUEST, ndis/PNDIS_OID_REQUEST, NDIS_OID_REQUEST, ndis_request_ref_c431d090-b403-40a7-90de-5f47ca6213f4.xml, NDIS_OID_REQUEST structure [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis/PNDIS_OID_REQUEST, ndis/NDIS_OID_REQUEST, _NDIS_OID_REQUEST, PNDIS_OID_REQUEST, netvista.ndis_oid_request, ndis_request_ref_c431d090-b403-40a7-90de-5f47ca6213f4.xml, PNDIS_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], NDIS_OID_REQUEST structure [Network Drivers Starting with Windows Vista], *PNDIS_OID_REQUEST, NDIS_OID_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -181,8 +181,8 @@ The revision of an NDIS structure that was supported by an NDIS 6.0 or later dri
      When the driver succeeds in setting an OID, it must set 
      <b>SupportedRevision</b> to the revision number of the structure that it
      supported. For more information about NDIS version information, see 
-     <mshelp:link keywords="netvista.specifying_ndis_version_information" tabindex="0">Specifying NDIS Version
-     Information</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/specifying-ndis-version-information">Specifying NDIS Version
+     Information</a>.
 
 `SwitchId`
 
@@ -240,22 +240,20 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569641">OID_GEN_SUPPORTED_GUIDS</a>
-
-<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
-
-<a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a>
 
 <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a>
+
+<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
 
  
 

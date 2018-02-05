@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E1A82D24-A981-414A-83D8-E71F97E0301A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : FILE_IS_REMOTE_DEVICE_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_IS_REMOTE_DEVICE_INFORMATION, _FILE_IS_REMOTE_DEVICE_INFORMATION, kernel.file_is_remote_device_information, PFILE_IS_REMOTE_DEVICE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PFILE_IS_REMOTE_DEVICE_INFORMATION, wdm/FILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION, wdm/PFILE_IS_REMOTE_DEVICE_INFORMATION
+ms.keywords : FILE_IS_REMOTE_DEVICE_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_IS_REMOTE_DEVICE_INFORMATION, *PFILE_IS_REMOTE_DEVICE_INFORMATION, PFILE_IS_REMOTE_DEVICE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.file_is_remote_device_information, wdm/PFILE_IS_REMOTE_DEVICE_INFORMATION, _FILE_IS_REMOTE_DEVICE_INFORMATION, wdm/FILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION"
+req.typenames : FILE_IS_REMOTE_DEVICE_INFORMATION, *PFILE_IS_REMOTE_DEVICE_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -60,9 +60,6 @@ A value that indicates whether the file system that contains the file is a remot
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

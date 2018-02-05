@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1e58be94-7a10-4708-a658-9de28e26a465
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmRequestOutcomeEnlistment, wdm/TmRequestOutcomeEnlistment, TmRequestOutcomeEnlistment routine [Kernel-Mode Driver Architecture], ktm_ref_9be6bea7-eae4-4621-8155-f8a06285bb97.xml, kernel.tmrequestoutcomeenlistment
+ms.keywords : TmRequestOutcomeEnlistment, TmRequestOutcomeEnlistment routine [Kernel-Mode Driver Architecture], ktm_ref_9be6bea7-eae4-4621-8155-f8a06285bb97.xml, wdm/TmRequestOutcomeEnlistment, kernel.tmrequestoutcomeenlistment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,12 @@ For more information about <b>TmCreateEnlistment</b>, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -112,15 +110,15 @@ For more information about <b>TmCreateEnlistment</b>, see <a href="https://msdn.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
 
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 
 <a href="..\wdm\nf-wdm-tmpreparecomplete.md">TmPrepareComplete</a>
 
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
 
  
 

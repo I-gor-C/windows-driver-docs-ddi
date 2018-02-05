@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 06be6c3b-cc1a-4e57-8700-03357215d624
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : XSTATE_MASK_GSSE, KeSaveExtendedProcessorState, XSTATE_MASK_LEGACY_FLOATING_POINT, kernel.kesaveextendedprocessorstate, wdm/KeSaveExtendedProcessorState, KeSaveExtendedProcessorState routine [Kernel-Mode Driver Architecture], XSTATE_MASK_LEGACY_SSE, XSTATE_MASK_LEGACY, k105_e03ec6f9-5b9b-48dc-ae77-3c27e6edc910.xml
+ms.keywords : KeSaveExtendedProcessorState, wdm/KeSaveExtendedProcessorState, kernel.kesaveextendedprocessorstate, XSTATE_MASK_GSSE, XSTATE_MASK_LEGACY_SSE, k105_e03ec6f9-5b9b-48dc-ae77-3c27e6edc910.xml, XSTATE_MASK_LEGACY_FLOATING_POINT, XSTATE_MASK_LEGACY, KeSaveExtendedProcessorState routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -149,26 +149,24 @@ The <a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a>
+
 <a href="..\ntddk\nf-ntddk-rtlgetenabledextendedfeatures.md">RtlGetEnabledExtendedFeatures</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a>
-
-<a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a>
+<a href="..\wdm\nf-wdm-kerestoreextendedprocessorstate.md">KeRestoreExtendedProcessorState</a>
 
 <a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>
 
-<a href="..\wdm\nf-wdm-kerestoreextendedprocessorstate.md">KeRestoreExtendedProcessorState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a>
 
  
 

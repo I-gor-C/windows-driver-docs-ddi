@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 44CA5D9D-EF6E-4681-93EB-B803638896F9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSTELEPHONY_CALLCONTROL, KSTELEPHONY_CALLCONTROL structure [Audio Devices], KSTELEPHONY_CALLCONTROL, *PKSTELEPHONY_CALLCONTROL, PKSTELEPHONY_CALLCONTROL structure pointer [Audio Devices], _tagKSTELEPHONY_CALLCONTROL, ksmedia/KSTELEPHONY_CALLCONTROL, audio.kstelephony_callcontrol, ksmedia/PKSTELEPHONY_CALLCONTROL
+ms.keywords : "*PKSTELEPHONY_CALLCONTROL, ksmedia/KSTELEPHONY_CALLCONTROL, ksmedia/PKSTELEPHONY_CALLCONTROL, PKSTELEPHONY_CALLCONTROL structure pointer [Audio Devices], KSTELEPHONY_CALLCONTROL, _tagKSTELEPHONY_CALLCONTROL, audio.kstelephony_callcontrol, PKSTELEPHONY_CALLCONTROL, KSTELEPHONY_CALLCONTROL structure [Audio Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ Specifies the type of phone call (circuit-switched, LTE packet-switched, or WLAN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |

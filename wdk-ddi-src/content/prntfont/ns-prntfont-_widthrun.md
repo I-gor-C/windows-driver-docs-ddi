@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 18cc608e-b94d-4588-98e9-c22a7949a3b6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : prntfont/WIDTHRUN, WIDTHRUN, print.widthrun, prntfont/PWIDTHRUN, PWIDTHRUN structure pointer [Print Devices], _WIDTHRUN, WIDTHRUN structure [Print Devices], PWIDTHRUN, *PWIDTHRUN, print_unidrv-pscript_fonts_68b08066-7503-4496-bfab-001aba659926.xml
+ms.keywords : prntfont/PWIDTHRUN, prntfont/WIDTHRUN, *PWIDTHRUN, PWIDTHRUN, PWIDTHRUN structure pointer [Print Devices], print_unidrv-pscript_fonts_68b08066-7503-4496-bfab-001aba659926.xml, _WIDTHRUN, print.widthrun, WIDTHRUN, WIDTHRUN structure [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWIDTHRUN, WIDTHRUN"
+req.typenames : WIDTHRUN, *PWIDTHRUN
 req.product : Windows 10 or later.
 ---
 
@@ -91,9 +91,6 @@ For East Asian device fonts, the <b>fwdAveCharWidth</b> and <b>fwdMaxCharInc</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also

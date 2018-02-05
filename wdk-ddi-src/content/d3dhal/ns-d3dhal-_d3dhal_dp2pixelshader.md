@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 820e7667-3adf-49c9-ab44-303f6ea7f4b2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2PIXELSHADER structure pointer [Display Devices], _D3DHAL_DP2PIXELSHADER, *LPD3DHAL_DP2PIXELSHADER, D3DHAL_DP2PIXELSHADER, LPD3DHAL_DP2PIXELSHADER, d3dstrct_f9a920b0-9018-4b87-ab28-d0b50753195b.xml, d3dhal/LPD3DHAL_DP2PIXELSHADER, display.d3dhal_dp2pixelshader, d3dhal/D3DHAL_DP2PIXELSHADER, D3DHAL_DP2PIXELSHADER structure [Display Devices]
+ms.keywords : LPD3DHAL_DP2PIXELSHADER structure pointer [Display Devices], d3dhal/D3DHAL_DP2PIXELSHADER, LPD3DHAL_DP2PIXELSHADER, _D3DHAL_DP2PIXELSHADER, d3dstrct_f9a920b0-9018-4b87-ab28-d0b50753195b.xml, D3DHAL_DP2PIXELSHADER, display.d3dhal_dp2pixelshader, D3DHAL_DP2PIXELSHADER structure [Display Devices], *LPD3DHAL_DP2PIXELSHADER, d3dhal/LPD3DHAL_DP2PIXELSHADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ When switching between programmable shaders, any constant register that has a va
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also

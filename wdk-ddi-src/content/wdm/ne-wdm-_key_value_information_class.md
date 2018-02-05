@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 99a34b06-3352-47a6-95bc-051a5dfdd82e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeyValueBasicInformation, wdm/KeyValueBasicInformation, MaxKeyValueInfoClass, wdm/KeyValueFullInformation, KEY_VALUE_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], KeyValueFullInformation, KeyValuePartialInformationAlign64, kernel.key_value_information_class, KeyValuePartialInformation, wdm/KeyValuePartialInformationAlign64, _KEY_VALUE_INFORMATION_CLASS, wdm/KEY_VALUE_INFORMATION_CLASS, wdm/KeyValueFullInformationAlign64, KEY_VALUE_INFORMATION_CLASS, sysenum_ee3730f5-18b6-45ff-bb9b-4ec2e71586fc.xml, KeyValueFullInformationAlign64, wdm/MaxKeyValueInfoClass, wdm/KeyValuePartialInformation
+ms.keywords : KeyValuePartialInformation, wdm/KEY_VALUE_INFORMATION_CLASS, wdm/KeyValueBasicInformation, wdm/KeyValueFullInformation, KeyValuePartialInformationAlign64, wdm/KeyValuePartialInformationAlign64, KEY_VALUE_INFORMATION_CLASS, KeyValueFullInformation, MaxKeyValueInfoClass, wdm/KeyValueFullInformationAlign64, _KEY_VALUE_INFORMATION_CLASS, sysenum_ee3730f5-18b6-45ff-bb9b-4ec2e71586fc.xml, kernel.key_value_information_class, wdm/KeyValuePartialInformation, KeyValueFullInformationAlign64, wdm/MaxKeyValueInfoClass, KEY_VALUE_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], KeyValueBasicInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -101,22 +101,19 @@ Use the <b>KEY_VALUE_INFORMATION_CLASS</b> values to specify the type of data to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
+
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 
 <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
-
 <a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
+<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
 
  
 

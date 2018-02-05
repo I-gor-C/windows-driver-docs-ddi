@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 60ED83BD-4AFA-432F-B918-9006815C8D47
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRB_REQ_ISOCH_DETACH_BUFFERS structure [Buses], _IRB_REQ_ISOCH_DETACH_BUFFERS, IEEE.irb_req_isoch_detach_buffers, 1394/IRB_REQ_ISOCH_DETACH_BUFFERS, IRB_REQ_ISOCH_DETACH_BUFFERS
+ms.keywords : 1394/IRB_REQ_ISOCH_DETACH_BUFFERS, IRB_REQ_ISOCH_DETACH_BUFFERS structure [Buses], IRB_REQ_ISOCH_DETACH_BUFFERS, IEEE.irb_req_isoch_detach_buffers, _IRB_REQ_ISOCH_DETACH_BUFFERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ Points to an array of ISOCH_DESCRIPTOR structures that describe the buffers to b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

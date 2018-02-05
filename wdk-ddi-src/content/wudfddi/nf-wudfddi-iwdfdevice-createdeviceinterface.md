@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0a88cbb6-66be-4ef7-93da-27d7ce169779
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFDevice::CreateDeviceInterface, UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, CreateDeviceInterface method, wdf.iwdfdevice_createdeviceinterface, IWDFDevice, IWDFDevice::CreateDeviceInterface, umdf.iwdfdevice_createdeviceinterface, CreateDeviceInterface method, IWDFDevice interface, IWDFDevice interface, CreateDeviceInterface method, CreateDeviceInterface
+ms.keywords : UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, umdf.iwdfdevice_createdeviceinterface, wdf.iwdfdevice_createdeviceinterface, IWDFDevice::CreateDeviceInterface, IWDFDevice interface, CreateDeviceInterface method, CreateDeviceInterface method, wudfddi/IWDFDevice::CreateDeviceInterface, IWDFDevice, CreateDeviceInterface method, IWDFDevice interface, CreateDeviceInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -80,14 +80,12 @@ For more information about device interfaces, see <a href="https://docs.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

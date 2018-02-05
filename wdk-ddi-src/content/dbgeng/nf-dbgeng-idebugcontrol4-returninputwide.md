@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6e7f0995-14d0-4dd3-b598-2f988a2ec4fd
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], ReturnInputWide method, debugger.returninputwide, ReturnInputWide method [Windows Debugging], IDebugControl4::ReturnInputWide, dbgeng/IDebugControl4::ReturnInputWide, IDebugControl4, ReturnInputWide, ReturnInputWide method [Windows Debugging], IDebugControl4 interface
+ms.keywords : IDebugControl4 interface [Windows Debugging], ReturnInputWide method, dbgeng/IDebugControl4::ReturnInputWide, ReturnInputWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::ReturnInputWide, ReturnInputWide method [Windows Debugging], ReturnInputWide, debugger.returninputwide, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -97,11 +97,6 @@ For an overview of input in the debugger engine, see <a href="https://msdn.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

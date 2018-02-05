@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4cbf6d29-bccd-4629-b282-eb5314f9b4f4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfiorequest_formatusingcurrenttype, wdf.iwdfiorequest_formatusingcurrenttype, UMDFRequestObjectRef_e16e60fe-557d-413c-a483-6bbe602986dc.xml, IWDFIoRequest::FormatUsingCurrentType, wudfddi/IWDFIoRequest::FormatUsingCurrentType, FormatUsingCurrentType method, IWDFIoRequest interface, IWDFIoRequest, FormatUsingCurrentType, IWDFIoRequest interface, FormatUsingCurrentType method, FormatUsingCurrentType method
+ms.keywords : FormatUsingCurrentType method, umdf.iwdfiorequest_formatusingcurrenttype, FormatUsingCurrentType, FormatUsingCurrentType method, IWDFIoRequest interface, wdf.iwdfiorequest_formatusingcurrenttype, UMDFRequestObjectRef_e16e60fe-557d-413c-a483-6bbe602986dc.xml, wudfddi/IWDFIoRequest::FormatUsingCurrentType, IWDFIoRequest interface, FormatUsingCurrentType method, IWDFIoRequest::FormatUsingCurrentType, IWDFIoRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,20 +76,18 @@ Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
 
  
 

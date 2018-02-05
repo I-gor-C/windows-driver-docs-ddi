@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 85dac103-c729-4202-96b1-661891c6a531
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kspinsetpinclocktime, KsPinSetPinClockTime function [Streaming Media Devices], ks/KsPinSetPinClockTime, avfunc_8f1c1b04-c5eb-4aa1-9cdf-84b86da388e9.xml, KsPinSetPinClockTime
+ms.keywords : stream.kspinsetpinclocktime, KsPinSetPinClockTime function [Streaming Media Devices], KsPinSetPinClockTime, ks/KsPinSetPinClockTime, avfunc_8f1c1b04-c5eb-4aa1-9cdf-84b86da388e9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,32 +73,29 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
-
 <a href="..\ks\nf-ks-kspingetconnectedfilterinterface.md">KsPinGetConnectedFilterInterface</a>
 
-<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
+<a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
 
-<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 
-<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
-
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 
 <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a>
 
-<a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
+<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
+
+<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
+
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
 
  
 

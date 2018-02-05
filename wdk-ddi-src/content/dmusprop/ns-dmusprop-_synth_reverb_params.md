@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9537D56C-920E-478E-9061-C4909240D7A0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : dmusprop/PSYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS, *PSYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS structure pointer [Audio Devices], audio.synth_reverb_params, dmusprop/SYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS, _SYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS structure [Audio Devices]
+ms.keywords : SYNTH_REVERB_PARAMS structure [Audio Devices], *PSYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS, audio.synth_reverb_params, dmusprop/SYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS structure pointer [Audio Devices], _SYNTH_REVERB_PARAMS, dmusprop/PSYNTH_REVERB_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ Specifies the reverb delay time in milliseconds.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dmusprop.h |

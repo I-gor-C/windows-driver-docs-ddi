@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BBB9D8F6-0EF8-4B34-B79E-8742BB7575D4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_CPUHOSTAPERTURE, d3dkmddi/DXGK_CPUHOSTAPERTURE, DXGK_CPUHOSTAPERTURE, display.dxgk_cpuhostaperture, DXGK_CPUHOSTAPERTURE structure [Display Devices]"
+ms.keywords : DXGK_CPUHOSTAPERTURE structure [Display Devices], display.dxgk_cpuhostaperture, DXGK_CPUHOSTAPERTURE, d3dkmddi/DXGK_CPUHOSTAPERTURE, _DXGK_CPUHOSTAPERTURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ The size d3ddiin CPU host pages.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

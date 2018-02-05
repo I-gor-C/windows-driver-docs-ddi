@@ -118,24 +118,23 @@ For more information about callback objects, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExPassive, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
-
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
 <a href="..\wdm\nf-wdm-exregistercallback.md">ExRegisterCallback</a>
 
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
+
+<a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
 
  
 

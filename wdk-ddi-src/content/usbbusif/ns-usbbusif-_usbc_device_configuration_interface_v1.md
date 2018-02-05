@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 86e8946f-f87f-40d4-bd02-6e4befe847e0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbbusif/PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, buses.usbc_device_configuration_interface_v1, usbbusif/USBC_DEVICE_CONFIGURATION_INTERFACE_V1, USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure [Buses], USBC_DEVICE_CONFIGURATION_INTERFACE_V1, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure pointer [Buses], *PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, usbinterKR_f3f8ee06-a861-4787-a611-766308347395.xml, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, _USBC_DEVICE_CONFIGURATION_INTERFACE_V1
+ms.keywords : USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure [Buses], usbinterKR_f3f8ee06-a861-4787-a611-766308347395.xml, buses.usbc_device_configuration_interface_v1, _USBC_DEVICE_CONFIGURATION_INTERFACE_V1, USBC_DEVICE_CONFIGURATION_INTERFACE_V1, *PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, usbbusif/PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure pointer [Buses], usbbusif/USBC_DEVICE_CONFIGURATION_INTERFACE_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBC_DEVICE_CONFIGURATION_INTERFACE_V1, *PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1
+req.typenames : "*PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, USBC_DEVICE_CONFIGURATION_INTERFACE_V1"
 req.product : Windows 10 or later.
 ---
 
@@ -95,9 +95,6 @@ The version of the interface.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbbusif.h (include Usbbusif.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E2939DFA-52EC-4AA7-ACC6-63D60603A24D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PROCESSOR_IDLE_CONSTRAINTS, kernel.pep_processor_idle_constraints, *PPEP_PROCESSOR_IDLE_CONSTRAINTS, PPEP_PROCESSOR_IDLE_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], _PEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS structure [Kernel-Mode Driver Architecture], pep_x/PEP_PROCESSOR_IDLE_CONSTRAINTS, PPEP_PROCESSOR_IDLE_CONSTRAINTS, pep_x/PPEP_PROCESSOR_IDLE_CONSTRAINTS
+ms.keywords : PEP_PROCESSOR_IDLE_CONSTRAINTS structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_PROCESSOR_IDLE_CONSTRAINTS, PPEP_PROCESSOR_IDLE_CONSTRAINTS, kernel.pep_processor_idle_constraints, pep_x/PEP_PROCESSOR_IDLE_CONSTRAINTS, *PPEP_PROCESSOR_IDLE_CONSTRAINTS, _PEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,16 +71,14 @@ The <b>Constraints</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_se
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
 ## See Also
 
-<a href="..\pep_x\ne-pep_x-ppep_processor_idle_type.md">PEP_PROCESSOR_IDLE_TYPE</a>
-
 <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_select.md">PEP_PPM_IDLE_SELECT</a>
+
+<a href="..\pep_x\ne-pep_x-ppep_processor_idle_type.md">PEP_PROCESSOR_IDLE_TYPE</a>
 
  
 

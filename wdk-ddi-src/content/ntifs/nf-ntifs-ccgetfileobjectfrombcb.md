@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d30a2ee4-4736-4127-95db-b86e782c3577
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcGetFileObjectFromBcb, CcGetFileObjectFromBcb routine [Installable File System Drivers], ccref_7fdf1d1e-a080-4322-a09c-be0a16543050.xml, ntifs/CcGetFileObjectFromBcb, ifsk.ccgetfileobjectfrombcb
+ms.keywords : ntifs/CcGetFileObjectFromBcb, ifsk.ccgetfileobjectfrombcb, CcGetFileObjectFromBcb, ccref_7fdf1d1e-a080-4322-a09c-be0a16543050.xml, CcGetFileObjectFromBcb routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,22 +68,18 @@ The file object pointer is guaranteed to remain valid as long as the BCB exists.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 
 <a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
 
 <a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
-
-<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 
 <a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
 

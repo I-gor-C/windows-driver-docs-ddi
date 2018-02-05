@@ -50,8 +50,8 @@ The
       <b>AssociatedIrp.SystemBuffer</b> member contains an SDP connection handle from which to remove the SDP
       record. This must be a handle returned from a call to 
       <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record.md">IOCTL_BTH_SDP_SUBMIT_RECORD</a> or 
-      <mshelp:link keywords="bltooth.ioctl_bth_sdp_submit_record_with_info" tabindex="0"><b>
-      IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</b></mshelp:link>. Handles from other sources are invalid in this
+      <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
+      IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>. Handles from other sources are invalid in this
       context.
 
 ### Input Buffer Length
@@ -131,14 +131,14 @@ If the record to be removed was published using IOCTL_BTH_SDP_SUBMIT_RECORD_WITH
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | "<= PASSIVE_LEVEL" |
 
 ## See Also
 
-<mshelp:link keywords="bltooth.ioctl_bth_sdp_submit_record_with_info" tabindex="0"><b>
-   IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</b></mshelp:link>
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
+   IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>
 
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record.md">IOCTL_BTH_SDP_SUBMIT_RECORD</a>
 

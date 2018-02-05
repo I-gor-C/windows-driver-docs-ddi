@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : e0122858-0c9d-4aa8-a394-89d65fb98fda
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GdiPlayPageEMF function [Print Devices], winppi/GdiPlayPageEMF, print.gdiplaypageemf, gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, GdiPlayPageEMF
+ms.keywords : GdiPlayPageEMF function [Print Devices], gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, GdiPlayPageEMF, winppi/GdiPlayPageEMF, print.gdiplaypageemf
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,10 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

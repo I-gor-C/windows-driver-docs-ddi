@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : D94A669E-4293-4235-8BC4-C7883BB0C83C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.removeprintdeviceobject, winsplp/RemovePrintDeviceObject, RemovePrintDeviceObject, RemovePrintDeviceObject function [Print Devices]
+ms.keywords : RemovePrintDeviceObject, RemovePrintDeviceObject function [Print Devices], winsplp/RemovePrintDeviceObject, print.removeprintdeviceobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,10 @@ Call <b>RemovePrintDeviceObject</b> to remove the device object for a printer th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winspool.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | WinSpool.lib |
+| **DLL** | WinSpool.drv |
 
 ## See Also
 

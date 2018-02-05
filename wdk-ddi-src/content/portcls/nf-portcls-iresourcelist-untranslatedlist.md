@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b5b0a540-2730-40ef-8f65-135a19b9a732
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UntranslatedList method [Audio Devices], IResourceList interface, IResourceList interface [Audio Devices], UntranslatedList method, IResourceList::UntranslatedList, audmp-routines_b367743a-b341-49cc-a300-da84b91ec7a5.xml, UntranslatedList method [Audio Devices], UntranslatedList, IResourceList, portcls/IResourceList::UntranslatedList, audio.iresourcelist_untranslatedlist
+ms.keywords : audmp-routines_b367743a-b341-49cc-a300-da84b91ec7a5.xml, audio.iresourcelist_untranslatedlist, UntranslatedList method [Audio Devices], IResourceList interface, IResourceList, IResourceList interface [Audio Devices], UntranslatedList method, UntranslatedList method [Audio Devices], portcls/IResourceList::UntranslatedList, IResourceList::UntranslatedList, UntranslatedList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -62,14 +62,10 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

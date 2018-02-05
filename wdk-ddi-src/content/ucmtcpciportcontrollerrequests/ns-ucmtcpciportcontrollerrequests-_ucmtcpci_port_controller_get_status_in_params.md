@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1b57413b-e1cf-4ec4-80f4-aedffc015b46
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucmtcpci_port_controller_get_status_in_params, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS structure pointer [Buses], UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS structure [Buses], *PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, _UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, ucmtcpciportcontrollerrequests/PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS
+ms.keywords : "_UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS structure [Buses], *PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, ucmtcpciportcontrollerrequests/PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS structure pointer [Buses], buses.ucmtcpci_port_controller_get_status_in_params"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS"
+req.typenames : UCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_STATUS_IN_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -61,7 +61,4 @@ Handle to the port controller object that the client driver received in the prev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontrollerrequests.h |

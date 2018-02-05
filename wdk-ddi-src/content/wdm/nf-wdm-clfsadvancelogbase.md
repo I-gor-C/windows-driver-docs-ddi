@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 00f776f7-83c5-4856-a1d3-8b76122d3986
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : Clfs_d8f1a522-ef50-47fe-bd39-f18f2f176a3b.xml, ClfsAdvanceLogBase routine [Kernel-Mode Driver Architecture], kernel.clfsadvancelogbase, ClfsAdvanceLogBase, wdm/ClfsAdvanceLogBase
+ms.keywords : ClfsAdvanceLogBase routine [Kernel-Mode Driver Architecture], Clfs_d8f1a522-ef50-47fe-bd39-f18f2f176a3b.xml, kernel.clfsadvancelogbase, ClfsAdvanceLogBase, wdm/ClfsAdvanceLogBase
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

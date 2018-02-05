@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 274232FF-573A-47B4-B363-2FA7F810BF84
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbTargetDeviceCreateUrb, WdfUsbTargetDeviceCreateUrb, WdfUsbTargetDeviceCreateUrb method, wdf.wdfusbtargetdevicecreateurb, kmdf.wdfusbtargetdevicecreateurb, PFN_WDFUSBTARGETDEVICECREATEURB
+ms.keywords : wdfusb/WdfUsbTargetDeviceCreateUrb, WdfUsbTargetDeviceCreateUrb method, kmdf.wdfusbtargetdevicecreateurb, wdf.wdfusbtargetdevicecreateurb, WdfUsbTargetDeviceCreateUrb, PFN_WDFUSBTARGETDEVICECREATEURB
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,24 +137,23 @@ The memory object and its buffer are deleted when the parent object is deleted. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows Vista Windows Vista |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 30d060d0-05a3-42b5-b5ff-2f2b12873ca9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_request_ref_b5524732-acaf-4d0d-a261-3f8a8b739ecc.xml, NdisMOidRequestComplete, ndis/NdisMOidRequestComplete, netvista.ndismoidrequestcomplete, NdisMOidRequestComplete function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisMOidRequestComplete, ndis/NdisMOidRequestComplete, netvista.ndismoidrequestcomplete, ndis_request_ref_b5524732-acaf-4d0d-a261-3f8a8b739ecc.xml, NdisMOidRequestComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,8 +61,8 @@ VOID NdisMOidRequestComplete(
 
 A miniport adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of the 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `OidRequest`
 
@@ -101,12 +101,10 @@ A call to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DoubleComplete, DoubleCompleteWorkItem, Irql_OID_Function, NdisMNetPnPEventInOIDRequest, NdisOidComplete, NdisOidDoubleComplete, NdisOidDoubleRequest, NdisTimedOidComplete, WlanAssociation, WlanDisassociation, WlanTimedConnectRequest, WlanTimedLinkQuality, WlanTimedScan |
 
@@ -114,17 +112,17 @@ A call to
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
+<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
+
 <a href="..\ndis\nc-ndis-filter_oid_request_complete.md">FilterOidRequestComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 
 <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">ProtocolOidRequestComplete</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="https://msdn.microsoft.com/2c383523-7d9c-4f1b-8df1-5cb4cc3562d6">ProtocolRequestComplete</a>
-
-<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
-
-<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 
  
 

@@ -79,20 +79,15 @@ The port driver calls the <b>HwStorInterrupt</b> routine at DIRQL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | DIRQL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
-
 <a href="..\storport\nc-storport-hw_dpc_routine.md">HwStorDpcRoutine</a>
+
+<a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
 
  
 

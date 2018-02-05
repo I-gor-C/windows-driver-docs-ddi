@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 30e2e62a-3ae4-4efe-a6e9-6aece6bfbb46
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : drmk/PDRMFORWARD, drmk/DRMFORWARD, DRMFORWARD structure [Audio Devices], PDRMFORWARD, tagDRMFORWARD, *PDRMFORWARD, DRMFORWARD, PDRMFORWARD structure pointer [Audio Devices], audio.drmforward, aud-prop_491c772b-2e17-42c1-b0cd-68d2b0384163.xml
+ms.keywords : drmk/PDRMFORWARD, DRMFORWARD structure [Audio Devices], *PDRMFORWARD, tagDRMFORWARD, aud-prop_491c772b-2e17-42c1-b0cd-68d2b0384163.xml, PDRMFORWARD structure pointer [Audio Devices], DRMFORWARD, drmk/DRMFORWARD, audio.drmforward, PDRMFORWARD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDRMFORWARD, DRMFORWARD"
+req.typenames : DRMFORWARD, *PDRMFORWARD
 ---
 
 # tagDRMFORWARD structure
@@ -95,26 +95,23 @@ For general information about DRM, see <a href="https://msdn.microsoft.com/7ce19
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | drmk.h (include Drmk.h) |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536579">IDrmPort2::ForwardContentToDeviceObject</a>
 
 <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536579">IDrmPort2::ForwardContentToDeviceObject</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
 
 <a href="..\portcls\nf-portcls-pcforwardcontenttodeviceobject.md">PcForwardContentToDeviceObject</a>
 
 <a href="..\drmk\ns-drmk-ksp_drmaudiostream_contentid.md">KSP_DRMAUDIOSTREAM_CONTENTID</a>
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 
  
 

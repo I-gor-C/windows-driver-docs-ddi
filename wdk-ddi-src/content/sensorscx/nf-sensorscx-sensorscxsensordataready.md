@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 9F01D093-226E-4CB4-8085-812115EBA671
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensorscx/SensorsCxSensorDataReady, SensorsCxSensorDataReady, sensors.sensorscxsensordataready, SensorsCxSensorDataReady function [Sensor Devices]
+ms.keywords : SensorsCxSensorDataReady, sensors.sensorscxsensordataready, sensorscx/SensorsCxSensorDataReady, SensorsCxSensorDataReady function [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,22 +91,17 @@ This function is implemented by the class extension and the driver must call it.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt219125">EvtSensorSetBatchLatency</a>
+<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor properties</a>
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt219125">EvtSensorSetBatchLatency</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6007723b-c7db-42da-bc50-328e19f80448
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMFontInstallerDlgProc function [Print Devices], OEMFontInstallerDlgProc, printoem/OEMFontInstallerDlgProc, print.oemfontinstallerdlgproc, print_obsoletefunctions_63eb736f-a9cd-4caf-823e-87b927d09c7a.xml
+ms.keywords : OEMFontInstallerDlgProc function [Print Devices], OEMFontInstallerDlgProc, printoem/OEMFontInstallerDlgProc, print_obsoletefunctions_63eb736f-a9cd-4caf-823e-87b927d09c7a.xml, print.oemfontinstallerdlgproc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

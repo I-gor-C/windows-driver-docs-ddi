@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : dc1c7b8a-1233-4f22-8c5f-273f370a1e06
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetPseudoDescription, IDebugRegisters_7b1f8069-32d0-4fb4-9cee-7fd045bae8d3.xml, GetPseudoDescription method [Windows Debugging], GetPseudoDescription method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging], GetPseudoDescription method, debugger.getpseudodescription, IDebugRegisters2, IDebugRegisters2::GetPseudoDescription, dbgeng/IDebugRegisters2::GetPseudoDescription
+ms.keywords : IDebugRegisters2::GetPseudoDescription, dbgeng/IDebugRegisters2::GetPseudoDescription, GetPseudoDescription method [Windows Debugging], IDebugRegisters2 interface, debugger.getpseudodescription, GetPseudoDescription method [Windows Debugging], IDebugRegisters2, GetPseudoDescription, IDebugRegisters2 interface [Windows Debugging], GetPseudoDescription method, IDebugRegisters_7b1f8069-32d0-4fb4-9cee-7fd045bae8d3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -123,20 +123,15 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548206">GetPseudoIndexByName</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548206">GetPseudoIndexByName</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547957">GetNumberPseudoRegisters</a>
 

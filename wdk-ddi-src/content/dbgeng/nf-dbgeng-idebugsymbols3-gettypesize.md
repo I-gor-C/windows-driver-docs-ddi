@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b6f03eb5-e386-4e88-a729-db08f1fa460c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols::GetTypeSize, GetTypeSize method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetTypeSize method, IDebugSymbols_d1c65bea-0479-4ca8-bdfa-6c7a7376792a.xml, dbgeng/IDebugSymbols::GetTypeSize, GetTypeSize method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetTypeSize, IDebugSymbols3::GetTypeSize, debugger.gettypesize2, GetTypeSize method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetTypeSize method, IDebugSymbols2::GetTypeSize, dbgeng/IDebugSymbols3::GetTypeSize, IDebugSymbols3, GetTypeSize, IDebugSymbols2 interface [Windows Debugging], GetTypeSize method, GetTypeSize method [Windows Debugging], IDebugSymbols interface
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetTypeSize method, dbgeng/IDebugSymbols3::GetTypeSize, IDebugSymbols::GetTypeSize, IDebugSymbols3, dbgeng/IDebugSymbols2::GetTypeSize, debugger.gettypesize2, GetTypeSize method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetTypeSize method, GetTypeSize method [Windows Debugging], IDebugSymbols3::GetTypeSize, IDebugSymbols interface [Windows Debugging], GetTypeSize method, IDebugSymbols_d1c65bea-0479-4ca8-bdfa-6c7a7376792a.xml, IDebugSymbols2::GetTypeSize, GetTypeSize, GetTypeSize method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::GetTypeSize, GetTypeSize method [Windows Debugging], IDebugSymbols3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,24 +95,19 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549408">GetTypeName</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
  
 

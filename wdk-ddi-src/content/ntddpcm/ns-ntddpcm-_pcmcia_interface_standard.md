@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : 3c98fe7b-e60a-4494-b1f0-847a7cbe9d3a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PCMCIA_INTERFACE_STANDARD structure [Buses], PCMCIA_INTERFACE_STANDARD, memcdref_768387a3-0148-4f5e-972a-983b7827a634.xml, PPCMCIA_INTERFACE_STANDARD structure pointer [Buses], *PPCMCIA_INTERFACE_STANDARD, ntddpcm/PCMCIA_INTERFACE_STANDARD, ntddpcm/PPCMCIA_INTERFACE_STANDARD, PCMCIA.pcmcia_interface_standard, PPCMCIA_INTERFACE_STANDARD, _PCMCIA_INTERFACE_STANDARD
+ms.keywords : ntddpcm/PCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD, ntddpcm/PPCMCIA_INTERFACE_STANDARD, PPCMCIA_INTERFACE_STANDARD structure pointer [Buses], *PPCMCIA_INTERFACE_STANDARD, PCMCIA.pcmcia_interface_standard, PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD structure [Buses], _PCMCIA_INTERFACE_STANDARD, memcdref_768387a3-0148-4f5e-972a-983b7827a634.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,16 +94,13 @@ Indicates the version of the returned interface.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537609">PCMCIA_IS_WRITE_PROTECTED</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
 

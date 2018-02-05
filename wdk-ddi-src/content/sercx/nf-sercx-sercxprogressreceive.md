@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : A1773CCB-971E-4439-A11F-82761FF8AF71
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1/SerCxProgressReceive, SerCxProgressReceive method [Serial Ports], SerCxProgressReceive, serports.sercxprogressreceive
+ms.keywords : SerCxProgressReceive method [Serial Ports], 1/SerCxProgressReceive, serports.sercxprogressreceive, SerCxProgressReceive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -125,20 +125,17 @@ If the <b>SerCxProgressReceive</b> does not complete all outstanding work for th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a>
-
 <a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>
+
+<a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 50ef03af-3890-40dd-b0ed-7cf048f8530d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILMSGDCS, rilapitypes/RILMSGDCS, netvista.rilmsgdcs_2, RILMSGDCS, RILMSGDCS structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : rilapitypes/RILMSGDCS, RILMSGDCS, netvista.rilmsgdcs_2, *LPRILMSGDCS, RILMSGDCS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILMSGDCS, *LPRILMSGDCS
+req.typenames : "*LPRILMSGDCS, RILMSGDCS"
 req.product : Windows 10 or later.
 ---
 
@@ -95,7 +95,4 @@ typedef struct _RILMSGDCS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

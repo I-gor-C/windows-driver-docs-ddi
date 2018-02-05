@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a83c6eb9-a29a-4695-99d3-168dff68c4a2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : NewStream method [Audio Devices], IMiniportWaveCyclic interface, IMiniportWaveCyclic::NewStream, audmp-routines_eb476e18-bd94-4665-a3df-3e95f91e1c5b.xml, NewStream method [Audio Devices], IMiniportWaveCyclic interface [Audio Devices], NewStream method, NewStream, audio.iminiportwavecyclic_newstream, IMiniportWaveCyclic, portcls/IMiniportWaveCyclic::NewStream
+ms.keywords : IMiniportWaveCyclic::NewStream, audmp-routines_eb476e18-bd94-4665-a3df-3e95f91e1c5b.xml, portcls/IMiniportWaveCyclic::NewStream, IMiniportWaveCyclic, IMiniportWaveCyclic interface [Audio Devices], NewStream method, NewStream method [Audio Devices], IMiniportWaveCyclic interface, audio.iminiportwavecyclic_newstream, NewStream method [Audio Devices], NewStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -131,14 +131,10 @@ The <i>Stream</i>, <i>OuterUnknown</i>, <i>DmaChannel</i>, and <i>ServiceGroup</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -146,15 +142,15 @@ The <i>Stream</i>, <i>OuterUnknown</i>, <i>DmaChannel</i>, and <i>ServiceGroup</
 
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
-
-<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
+<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
 
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
+<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
+
 <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a>
 
-<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 
  
 

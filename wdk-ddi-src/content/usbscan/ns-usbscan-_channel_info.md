@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 1f1cb952-9a63-461f-b70f-4cc41b8d88f8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PCHANNEL_INFO, PCHANNEL_INFO structure pointer [Imaging Devices], CHANNEL_INFO, _CHANNEL_INFO, CHANNEL_INFO structure [Imaging Devices], *PCHANNEL_INFO, usbscan/CHANNEL_INFO, usbscan/PCHANNEL_INFO, image.channel_info, stifnc_f0aea91c-5d41-43e5-bb8b-139bfb7c3198.xml
+ms.keywords : CHANNEL_INFO, _CHANNEL_INFO, stifnc_f0aea91c-5d41-43e5-bb8b-139bfb7c3198.xml, usbscan/PCHANNEL_INFO, PCHANNEL_INFO, image.channel_info, CHANNEL_INFO structure [Imaging Devices], *PCHANNEL_INFO, usbscan/CHANNEL_INFO, PCHANNEL_INFO structure pointer [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCHANNEL_INFO, CHANNEL_INFO"
+req.typenames : CHANNEL_INFO, *PCHANNEL_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -70,7 +70,4 @@ Maximum packet size for the bulk OUT transfer pipe.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |

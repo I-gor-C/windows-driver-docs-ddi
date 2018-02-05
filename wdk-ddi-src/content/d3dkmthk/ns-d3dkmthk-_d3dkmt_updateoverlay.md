@@ -69,9 +69,7 @@ typedef struct _D3DKMT_UPDATEOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

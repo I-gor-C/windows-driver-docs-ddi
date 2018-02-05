@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 18c5ef8c-de72-4d2e-9bee-5b58bc5482c7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.sesetsessionidtoken, ntifs/SeSetSessionIdToken, seref_3af3660a-a2ba-4262-91bb-dff8533bcdcb.xml, SeSetSessionIdToken function [Installable File System Drivers], SeSetSessionIdToken
+ms.keywords : seref_3af3660a-a2ba-4262-91bb-dff8533bcdcb.xml, SeSetSessionIdToken function [Installable File System Drivers], ntifs/SeSetSessionIdToken, SeSetSessionIdToken, ifsk.sesetsessionidtoken
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

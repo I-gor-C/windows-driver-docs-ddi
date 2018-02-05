@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0096fef7-2a5a-45cd-8e54-dc1ec0e84237
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_memory_ref_a178b0d7-8966-4356-8f63-3293605a6655.xml, NdisFreeMemory, ndis/NdisFreeMemory, netvista.ndisfreememory, NdisFreeMemory function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisFreeMemory, ndis/NdisFreeMemory, NdisFreeMemory function [Network Drivers Starting with Windows Vista], netvista.ndisfreememory, ndis_memory_ref_a178b0d7-8966-4356-8f63-3293605a6655.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,21 +104,19 @@ When releasing memory that is neither contiguous nor noncached, a caller of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | See Remarks section |
 | **DDI compliance rules** | Irql_Miscellaneous_Function, NdisQueryBindInstanceName |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatememorywithtagpriority" tabindex="0"><b>
-   NdisAllocateMemoryWithTagPriority</b></mshelp:link>
-
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
+   NdisAllocateMemoryWithTagPriority</a>
 
  
 

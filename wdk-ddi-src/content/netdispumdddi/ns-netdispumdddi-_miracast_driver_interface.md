@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a3b9695e-b317-471b-91de-e191c1f5cb17
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : MIRACAST_DRIVER_INTERFACE, display.miracast_driver_interface, PMIRACAST_DRIVER_INTERFACE structure pointer [Display Devices], netdispumdddi/MIRACAST_DRIVER_INTERFACE, _MIRACAST_DRIVER_INTERFACE, PMIRACAST_DRIVER_INTERFACE, netdispumdddi/PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE structure [Display Devices], *PMIRACAST_DRIVER_INTERFACE
+ms.keywords : MIRACAST_DRIVER_INTERFACE structure [Display Devices], *PMIRACAST_DRIVER_INTERFACE, netdispumdddi/MIRACAST_DRIVER_INTERFACE, display.miracast_driver_interface, PMIRACAST_DRIVER_INTERFACE structure pointer [Display Devices], MIRACAST_DRIVER_INTERFACE, netdispumdddi/PMIRACAST_DRIVER_INTERFACE, _MIRACAST_DRIVER_INTERFACE, PMIRACAST_DRIVER_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE"
+req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 # _MIRACAST_DRIVER_INTERFACE structure
@@ -84,24 +84,22 @@ A pointer to the driver's   <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
 
 ## See Also
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_handle_kmd_message.md">HandleKernelModeMessage</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-query_miracast_driver_interface.md">QueryMiracastDriverInterface</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
+
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_handle_kmd_message.md">HandleKernelModeMessage</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
-
-<a href="..\netdispumdddi\nc-netdispumdddi-query_miracast_driver_interface.md">QueryMiracastDriverInterface</a>
 
  
 

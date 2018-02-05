@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B6A0F80C-8AE2-4FFE-A3EE-F0260A8774D6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_UNREGISTER_DEVICE structure pointer [Kernel-Mode Driver Architecture], PEP_UNREGISTER_DEVICE, pepfx/PPEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE structure [Kernel-Mode Driver Architecture], kernel.pep_unregister_device, pepfx/PEP_UNREGISTER_DEVICE, _PEP_UNREGISTER_DEVICE, PPEP_UNREGISTER_DEVICE, *PPEP_UNREGISTER_DEVICE
+ms.keywords : "*PPEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE, pepfx/PEP_UNREGISTER_DEVICE, kernel.pep_unregister_device, PPEP_UNREGISTER_DEVICE, _PEP_UNREGISTER_DEVICE, PPEP_UNREGISTER_DEVICE structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE structure [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_UNREGISTER_DEVICE, *PPEP_UNREGISTER_DEVICE
+req.typenames : "*PPEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE"
 ---
 
 # _PEP_UNREGISTER_DEVICE structure
@@ -61,16 +61,14 @@ This structure is used by the <a href="https://docs.microsoft.com/en-us/windows-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_UNREGISTER_DEVICE</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
  
 

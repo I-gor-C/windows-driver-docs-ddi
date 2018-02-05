@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2ca34fb7-72c1-4253-ad5b-bc829a1ba540
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceRetrieveCompanionTarget, wdf.wdfdeviceretrievecompaniontarget, WdfDeviceRetrieveCompanionTarget method, WdfDeviceRetrieveCompanionTarget
+ms.keywords : wdf.wdfdeviceretrievecompaniontarget, WdfDeviceRetrieveCompanionTarget, wdfdevice/WdfDeviceRetrieveCompanionTarget, WdfDeviceRetrieveCompanionTarget method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,8 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.23 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

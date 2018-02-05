@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ded74c48-b9a8-4ee4-8df9-3dc99892d41d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILNITZINFO_V1, *LPRILNITZINFO_V1, rilapitypes/RILNITZINFO_V1, RILNITZINFO_V1 structure [Network Drivers Starting with Windows Vista], netvista.rilnitzinfo_v1_2
+ms.keywords : RILNITZINFO_V1 structure [Network Drivers Starting with Windows Vista], *LPRILNITZINFO_V1, rilapitypes/RILNITZINFO_V1, netvista.rilnitzinfo_v1_2, RILNITZINFO_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILNITZINFO_V1, *LPRILNITZINFO_V1
+req.typenames : "*LPRILNITZINFO_V1, RILNITZINFO_V1"
 req.product : Windows 10 or later.
 ---
 
@@ -85,7 +85,4 @@ typedef struct _RILNITZINFO_V1 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

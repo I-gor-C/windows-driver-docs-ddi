@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 249a77b4-c0da-4445-a669-1c4e2ced5b57
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ioref_e63977d2-a70b-4743-85e2-557458ca89ae.xml, IoCancelFileOpen, ntddk/IoCancelFileOpen, ifsk.iocancelfileopen, IoCancelFileOpen routine [Installable File System Drivers]
+ms.keywords : IoCancelFileOpen, IoCancelFileOpen routine [Installable File System Drivers], ntddk/IoCancelFileOpen, ioref_e63977d2-a70b-4743-85e2-557458ca89ae.xml, ifsk.iocancelfileopen
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,34 +102,32 @@ Minifilters should use <a href="..\fltkernel\nf-fltkernel-fltcancelfileopen.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
-<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
-
-<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
 
 <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>
+
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 
 <a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcancelfileopen.md">FltCancelFileOpen</a>
+
+<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
 
  
 

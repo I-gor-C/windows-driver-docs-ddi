@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a251bf5c-c09b-4097-a9ed-82f2312ac408
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "_WDF_SYNCHRONIZATION_SCOPE, WdfSynchronizationScopeQueue, WdfSynchronizationScopeDevice, wdfobject/WdfSynchronizationScopeDevice, WdfSynchronizationScopeInheritFromParent, wdfobject/WdfSynchronizationScopeQueue, WdfSynchronizationScopeNone, kmdf.wdf_synchronization_scope, WDF_SYNCHRONIZATION_SCOPE enumeration, WdfSynchronizationScopeInvalid, wdfobject/WdfSynchronizationScopeInheritFromParent, wdfobject/WdfSynchronizationScopeNone, DFGenObjectRef_62dd47ff-1d2a-454e-9083-cbf68f1679d2.xml, wdfobject/WDF_SYNCHRONIZATION_SCOPE, wdf.wdf_synchronization_scope, wdfobject/WdfSynchronizationScopeInvalid, WDF_SYNCHRONIZATION_SCOPE"
+ms.keywords : wdfobject/WDF_SYNCHRONIZATION_SCOPE, wdfobject/WdfSynchronizationScopeInheritFromParent, WdfSynchronizationScopeInvalid, WDF_SYNCHRONIZATION_SCOPE enumeration, wdfobject/WdfSynchronizationScopeQueue, wdfobject/WdfSynchronizationScopeInvalid, WdfSynchronizationScopeDevice, WDF_SYNCHRONIZATION_SCOPE, DFGenObjectRef_62dd47ff-1d2a-454e-9083-cbf68f1679d2.xml, kmdf.wdf_synchronization_scope, wdf.wdf_synchronization_scope, wdfobject/WdfSynchronizationScopeNone, WdfSynchronizationScopeQueue, WdfSynchronizationScopeNone, WdfSynchronizationScopeInheritFromParent, _WDF_SYNCHRONIZATION_SCOPE, wdfobject/WdfSynchronizationScopeDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -122,7 +122,6 @@ For more information about synchronization of a driver's event callback function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |

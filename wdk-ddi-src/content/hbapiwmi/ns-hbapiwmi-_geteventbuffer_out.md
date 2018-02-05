@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1ba41017-8c4b-49eb-b0ec-8e58c2673314
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.geteventbuffer_out, GetEventBuffer_OUT, hbapiwmi/PGetEventBuffer_OUT, GetEventBuffer_OUT structure [Storage Devices], _GetEventBuffer_OUT, hbapiwmi/GetEventBuffer_OUT, PGetEventBuffer_OUT structure pointer [Storage Devices], PGetEventBuffer_OUT, structs-Fibre_af1916c9-60f8-4601-b9dd-d4575a100d98.xml, *PGetEventBuffer_OUT
+ms.keywords : hbapiwmi/PGetEventBuffer_OUT, hbapiwmi/GetEventBuffer_OUT, *PGetEventBuffer_OUT, PGetEventBuffer_OUT, structs-Fibre_af1916c9-60f8-4601-b9dd-d4575a100d98.xml, _GetEventBuffer_OUT, storage.geteventbuffer_out, GetEventBuffer_OUT, GetEventBuffer_OUT structure [Storage Devices], PGetEventBuffer_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,9 +73,6 @@ The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

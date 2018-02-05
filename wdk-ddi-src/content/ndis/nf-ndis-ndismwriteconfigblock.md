@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : de7f651b-9847-41e9-9f52-71c2365bac44
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMWriteConfigBlock function [Network Drivers Starting with Windows Vista], NdisMWriteConfigBlock, ndis/NdisMWriteConfigBlock, netvista.ndismwriteconfigblock
+ms.keywords : netvista.ndismwriteconfigblock, ndis/NdisMWriteConfigBlock, NdisMWriteConfigBlock, NdisMWriteConfigBlock function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,20 +122,17 @@ The VBD that runs in a Hyper-V child partition's guest operating system can quer
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451146">GUID_VPCI_INTERFACE_STANDARD</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451609">WriteVfConfigBlock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451146">GUID_VPCI_INTERFACE_STANDARD</a>
 
 <b></b>
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 75c909b1-8eb5-4887-b528-d3ac465ee12b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsAddEvent, avfunc_20b264e1-c7ad-4b24-bff3-996b9d478a44.xml, KsAddEvent function [Streaming Media Devices], stream.ksaddevent, KsAddEvent
+ms.keywords : stream.ksaddevent, KsAddEvent function [Streaming Media Devices], avfunc_20b264e1-c7ad-4b24-bff3-996b9d478a44.xml, KsAddEvent, ks/KsAddEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,26 +75,23 @@ After events have been added to the event list, these events can be generated as
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-
-<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
+<a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
 
 <a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 
+<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
+
 <a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 
-<a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 
  
 

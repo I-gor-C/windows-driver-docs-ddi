@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e7af07ed-f1a7-4f66-8824-2e12492d037a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USB_ID_STRING structure [Buses], USB_ID_STRING, PUSB_ID_STRING, *PUSB_ID_STRING, usbioctl/USB_ID_STRING, buses.usb_id_string, usbioctl/PUSB_ID_STRING, PUSB_ID_STRING structure pointer [Buses], _USB_ID_STRING
+ms.keywords : usbioctl/PUSB_ID_STRING, USB_ID_STRING structure [Buses], USB_ID_STRING, PUSB_ID_STRING structure pointer [Buses], *PUSB_ID_STRING, _USB_ID_STRING, usbioctl/USB_ID_STRING, buses.usb_id_string, PUSB_ID_STRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_ID_STRING, USB_ID_STRING"
+req.typenames : USB_ID_STRING, *PUSB_ID_STRING
 req.product : Windows 10 or later.
 ---
 
@@ -76,9 +76,7 @@ The reserved members of this structure must be treated as opaque and are reserve
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating systems. Available in Windows Vista and later operating systems. |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also

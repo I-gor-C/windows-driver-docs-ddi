@@ -82,16 +82,16 @@ None
 <i>MiniportCancelDirectOidRequest</i> is an optional function. A miniport driver registers this function
     if it handles direct OID requests. A driver specifies the 
     <i>MiniportCancelDirectOidRequest</i> entry point when it calls the 
-    <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-    NdisMRegisterMiniportDriver</b></mshelp:link> function. A miniport driver that registers the 
-    <mshelp:link keywords="netvista.miniportdirectoidrequest" tabindex="0"><i>
-    MiniportDirectOidRequest</i></mshelp:link> function must also register 
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+    NdisMRegisterMiniportDriver</a> function. A miniport driver that registers the 
+    <a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">
+    MiniportDirectOidRequest</a> function must also register 
     <i>MiniportCancelDirectOidRequest</i>.
 
 When NDIS calls 
     <i>MiniportCancelDirectOidRequest</i>, the miniport driver should attempt to call 
-    <mshelp:link keywords="netvista.ndismdirectoidrequestcomplete" tabindex="0"><b>
-    NdisMDirectOidRequestComplete</b></mshelp:link> function as soon as possible.
+    <a href="..\ndis\nf-ndis-ndismdirectoidrequestcomplete.md">
+    NdisMDirectOidRequestComplete</a> function as soon as possible.
 
 NDIS calls 
     <i>MiniportCancelDirectOidRequest</i> when the originator of the request cancels the request. For direct
@@ -105,8 +105,8 @@ If the request processing is still not complete in a miniport driver, the driver
 
 If the request processing is still not complete in an intermediate driver and the request was
     propagated to an underlying driver, the intermediate driver calls the 
-    <mshelp:link keywords="netvista.ndiscanceldirectoidrequest" tabindex="0"><b>
-    NdisCancelDirectOidRequest</b></mshelp:link> function with the 
+    <a href="..\ndis\nf-ndis-ndiscanceldirectoidrequest.md">
+    NdisCancelDirectOidRequest</a> function with the 
     <i>OidRequest</i> parameter set to the value that it sent to the underlying driver.
 
 NDIS calls 
@@ -146,29 +146,25 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscanceldirectoidrequest.md">NdisCancelDirectOidRequest</a>
-
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<mshelp:link keywords="netvista.ndismdirectoidrequestcomplete" tabindex="0"><b>
-   NdisMDirectOidRequestComplete</b></mshelp:link>
 
 <a href="..\ndis\nc-ndis-miniport_direct_oid_request.md">MiniportDirectOidRequest</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+<a href="..\ndis\nf-ndis-ndismdirectoidrequestcomplete.md">
+   NdisMDirectOidRequestComplete</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndiscanceldirectoidrequest.md">NdisCancelDirectOidRequest</a>
 
  
 

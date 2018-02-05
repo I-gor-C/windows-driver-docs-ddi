@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -90,40 +90,36 @@ The <a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a> rout
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nc-wdm-pfree_map_registers.md">FreeMapRegisters</a>
 
+<a href="..\wdm\ne-wdm-_io_allocation_action.md">IO_ALLOCATION_ACTION</a>
+
+<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
+
+<a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
+<a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
+
 <a href="..\wdm\nc-wdm-pfree_adapter_channel.md">FreeAdapterChannel</a>
-
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
-
-<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
 
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 
 <a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
 
-<a href="..\wdm\ne-wdm-_io_allocation_action.md">IO_ALLOCATION_ACTION</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-
-<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
-
-<a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
-
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
 
-<a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a>
+<a href="..\wdm\nc-wdm-driver_control.md">AdapterControl</a>
+
+<a href="..\wdm\nc-wdm-pallocate_adapter_channel_ex.md">AllocateAdapterChannelEx</a>
 
  
 

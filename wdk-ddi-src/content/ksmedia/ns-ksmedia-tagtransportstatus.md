@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2896fd39-5c33-4c79-8adb-f6862b7b4314
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : TRANSPORTSTATUS structure [Streaming Media Devices], tagTRANSPORTSTATUS, PTRANSPORTSTATUS structure pointer [Streaming Media Devices], TRANSPORTSTATUS, stream.transportstatus, PTRANSPORTSTATUS, *PTRANSPORTSTATUS, vidcapstruct_12a98ac2-58b9-47ce-ae09-30c8feeec2f0.xml, ksmedia/PTRANSPORTSTATUS, ksmedia/TRANSPORTSTATUS
+ms.keywords : ksmedia/PTRANSPORTSTATUS, ksmedia/TRANSPORTSTATUS, stream.transportstatus, *PTRANSPORTSTATUS, tagTRANSPORTSTATUS, TRANSPORTSTATUS, PTRANSPORTSTATUS structure pointer [Streaming Media Devices], vidcapstruct_12a98ac2-58b9-47ce-ae09-30c8feeec2f0.xml, PTRANSPORTSTATUS, TRANSPORTSTATUS structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -121,7 +121,4 @@ Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

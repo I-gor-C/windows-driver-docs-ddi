@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E915BF71-F29C-440B-9A56-50389AA8A9CF
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, stream.kscamera_extendedprop_roi_configcapsheader, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure pointer [Streaming Media Devices], ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER
+ms.keywords : KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure pointer [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, stream.kscamera_extendedprop_roi_configcapsheader
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ The size of this header and all <a href="..\ksmedia\ns-ksmedia-tagkscamera_exten
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

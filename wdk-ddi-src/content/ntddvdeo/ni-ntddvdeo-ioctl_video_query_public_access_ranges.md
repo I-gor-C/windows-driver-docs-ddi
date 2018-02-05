@@ -69,9 +69,7 @@ If the miniport driver returns an address range or ranges, it sets the <b>Inform
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 

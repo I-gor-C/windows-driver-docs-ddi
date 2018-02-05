@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 624a0fcb-472f-4a91-934e-02f83d1049c4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.streamclassfilterreenumeratestreams, strclass-routines_972c0c03-67fc-4d5b-b699-08a8bc0a50e2.xml, StreamClassFilterReenumerateStreams function [Streaming Media Devices], strmini/StreamClassFilterReenumerateStreams, StreamClassFilterReenumerateStreams
+ms.keywords : strmini/StreamClassFilterReenumerateStreams, strclass-routines_972c0c03-67fc-4d5b-b699-08a8bc0a50e2.xml, stream.streamclassfilterreenumeratestreams, StreamClassFilterReenumerateStreams, StreamClassFilterReenumerateStreams function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

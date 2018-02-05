@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -81,7 +81,8 @@ A pointer to the resource where the encrypted data is to be written.
 
 `*pEncryptedBlockInfo`
 
-
+A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a> structure that describes the portions of the buffer that are encrypted. 
+<div class="alert"><b>Note</b>  If the entire buffer is encrypted, <i>pEncryptedBlockinfo</i> should be set to NULL.</div><div> </div>
 
 `ContentKeySize`
 
@@ -89,7 +90,11 @@ The size, in bytes, of the content key.
 
 `*pContentKey`
 
+A pointer to a block of memory that contains the content key that is required to decrypt the bit-block transfer (bitblt) data.
 
+If <i>pContentKey</i> is not set to NULL, the buffer data is encrypted by using the specified content key. The data for this key is encrypted by using the session key with the AES-ECB algorithm.
+
+If <i>pContentKey</i> is NULL, the graphics adapter does not require a separate content key to decrypt the data. In this case, the session key is used to decrypt the data.
 
 `IVSize`
 
@@ -97,7 +102,11 @@ The size, in bytes, of the initialization vector (IV).
 
 `*pIV`
 
+A pointer to a block of memory that contains the initialization vector that is required to decrypt the bitblt data. For more information, see the Remarks section.
+<div class="alert"><b>Note</b>  <p class="note">If <i>pIV</i> is NULL, the graphics adapter does not require a separate initialization vector to decrypt the data. That is, the session key is used to decrypt the data. 
 
+
+</div><div> </div>
 
 
 ## Return Value
@@ -118,22 +127,17 @@ For other encryption types, a different structure might be used, or the encrypti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps.md">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_encrypted_block_info.md">D3D11_1DDI_ENCRYPTED_BLOCK_INFO</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3b5cc1af-ab3b-4583-9ef9-39132789e74f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioinitializeirp, IoInitializeIrp, k104_5c9dc7a8-747c-4832-a31b-5936e2d3361d.xml, IoInitializeIrp routine [Kernel-Mode Driver Architecture], wdm/IoInitializeIrp
+ms.keywords : IoInitializeIrp routine [Kernel-Mode Driver Architecture], k104_5c9dc7a8-747c-4832-a31b-5936e2d3361d.xml, kernel.ioinitializeirp, wdm/IoInitializeIrp, IoInitializeIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,32 +85,31 @@ An intermediate or highest-level driver also can call <b>IoBuildDeviceIoControlR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | IoReuseIrp, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+<a href="..\wdm\nf-wdm-iosizeofirp.md">IoSizeOfIrp</a>
+
+<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>
 
 <a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
 
-<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
-
-<a href="..\ntifs\nf-ntifs-iosizeofirp.md">IoSizeOfIrp</a>
-
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
+
+<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+
+<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
 
 <a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
 
 <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
-
-<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 842D7F4A-3352-469A-B7C1-E075432107CA
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1, ntifs/FILE_PROVIDER_EXTERNAL_INFO_V1, ntifs/PFILE_PROVIDER_EXTERNAL_INFO_V1, ifsk.file_provider_external_info_v1, _FILE_PROVIDER_EXTERNAL_INFO_V1, PFILE_PROVIDER_EXTERNAL_INFO_V1, PFILE_PROVIDER_EXTERNAL_INFO_V1 structure pointer [Installable File System Drivers], FILE_PROVIDER_EXTERNAL_INFO_V1 structure [Installable File System Drivers], FILE_PROVIDER_EXTERNAL_INFO"
+ms.keywords : ifsk.file_provider_external_info_v1, PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1 structure [Installable File System Drivers], ntifs/FILE_PROVIDER_EXTERNAL_INFO_V1, PFILE_PROVIDER_EXTERNAL_INFO_V1 structure pointer [Installable File System Drivers], _FILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO, FILE_PROVIDER_EXTERNAL_INFO_V1, *PFILE_PROVIDER_EXTERNAL_INFO_V1, ntifs/PFILE_PROVIDER_EXTERNAL_INFO_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,9 +75,7 @@ The version of the provider to use. Specify FILE_PROVIDER_CURRENT_VERSION.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
 | **Header** | ntifs.h (include Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, Ntifs.h) |
 
 ## See Also

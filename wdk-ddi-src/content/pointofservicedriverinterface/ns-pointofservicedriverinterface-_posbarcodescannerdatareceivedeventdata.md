@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 220713c4-ecfe-43a2-aebf-f1b00b75e49b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/PosBarcodeScannerDataReceivedEventData, PosBarcodeScannerDataReceivedEventData, _PosBarcodeScannerDataReceivedEventData, pos.posbarcodescannerdatareceivedeventdata, PosBarcodeScannerDataReceivedEventData structure
+ms.keywords : pos.posbarcodescannerdatareceivedeventdata, _PosBarcodeScannerDataReceivedEventData, PosBarcodeScannerDataReceivedEventData structure, pointofservicedriverinterface/PosBarcodeScannerDataReceivedEventData, PosBarcodeScannerDataReceivedEventData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,4 @@ Indicates the number of bytes of raw scanned data.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

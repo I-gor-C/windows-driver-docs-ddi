@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0890c352-8722-4108-9b76-60c81179b46b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OnSelfManagedIoCleanup method, IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_32b2f920-2288-4d12-8ecd-a5ea61cc8ebd.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoCleanup method, OnSelfManagedIoCleanup, wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, OnSelfManagedIoCleanup method, IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup
+ms.keywords : OnSelfManagedIoCleanup method, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, umdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, OnSelfManagedIoCleanup, wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, OnSelfManagedIoCleanup method, IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_32b2f920-2288-4d12-8ecd-a5ea61cc8ebd.xml, IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoCleanup method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,22 +71,17 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackselfmanagedio.md">IPnpCallbackSelfManagedIo</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

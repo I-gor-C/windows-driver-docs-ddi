@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1e7af434-a6ad-44c8-a33d-adebb53b8e1d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_GENERIC_OBJECT, PNDIS_GENERIC_OBJECT structure pointer [Network Drivers Starting with Windows Vista], _NDIS_GENERIC_OBJECT, netvista.ndis_generic_object, NDIS_GENERIC_OBJECT structure [Network Drivers Starting with Windows Vista], *PNDIS_GENERIC_OBJECT, ndis_object_ref_19f8706c-633c-4c32-9d86-17edc4e2ad12.xml, ndis/PNDIS_GENERIC_OBJECT, PNDIS_GENERIC_OBJECT, ndis/NDIS_GENERIC_OBJECT
+ms.keywords : NDIS_GENERIC_OBJECT structure [Network Drivers Starting with Windows Vista], PNDIS_GENERIC_OBJECT, *PNDIS_GENERIC_OBJECT, ndis/PNDIS_GENERIC_OBJECT, ndis/NDIS_GENERIC_OBJECT, NDIS_GENERIC_OBJECT, _NDIS_GENERIC_OBJECT, ndis_object_ref_19f8706c-633c-4c32-9d86-17edc4e2ad12.xml, PNDIS_GENERIC_OBJECT structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_generic_object
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_GENERIC_OBJECT, *PNDIS_GENERIC_OBJECT
+req.typenames : "*PNDIS_GENERIC_OBJECT, NDIS_GENERIC_OBJECT"
 ---
 
 # _NDIS_GENERIC_OBJECT structure
@@ -68,8 +68,8 @@ Reserved for NDIS.
 The driver object that is associated with the generic object. If there is no driver object, this
      member is <b>NULL</b>. This is the value passed at the 
      <i>DriverObject</i> parameter of the 
-     <mshelp:link keywords="netvista.ndisallocategenericobject" tabindex="0"><b>
-     NdisAllocateGenericObject</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocategenericobject.md">
+     NdisAllocateGenericObject</a> function.
 
 `Header`
 
@@ -104,18 +104,16 @@ Use the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
 <a href="..\ndis\nf-ndis-ndisfreegenericobject.md">NdisFreeGenericObject</a>
 
 <a href="..\ndis\nf-ndis-ndisallocategenericobject.md">NdisAllocateGenericObject</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 34d25938-5640-4e32-949f-94605ac38fa0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4::OutputVaListWide, OutputVaListWide, dbgeng/IDebugControl4::OutputVaListWide, IDebugControl4 interface [Windows Debugging], OutputVaListWide method, OutputVaListWide method [Windows Debugging], IDebugControl4 interface, debugger.outputvalistwide, IDebugControl4, OutputVaListWide method [Windows Debugging]
+ms.keywords : OutputVaListWide, IDebugControl4 interface [Windows Debugging], OutputVaListWide method, OutputVaListWide method [Windows Debugging], IDebugControl4 interface, OutputVaListWide method [Windows Debugging], debugger.outputvalistwide, IDebugControl4::OutputVaListWide, dbgeng/IDebugControl4::OutputVaListWide, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -267,24 +267,19 @@ When generating very large output strings, it is possible to reach the limits of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Stdarg.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553183">Output</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
 
  
 

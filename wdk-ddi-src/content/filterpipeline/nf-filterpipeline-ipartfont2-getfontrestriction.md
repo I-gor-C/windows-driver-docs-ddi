@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : C6289E38-281A-46A2-8E28-138A20BF6684
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPartFont2, print.ipartfont2_getfontrestriction, GetFontRestriction method [Print Devices], IPartFont2 interface, GetFontRestriction method [Print Devices], GetFontRestriction, IPartFont2::GetFontRestriction, IPartFont2 interface [Print Devices], GetFontRestriction method, filterpipeline/IPartFont2::GetFontRestriction
+ms.keywords : IPartFont2::GetFontRestriction, IPartFont2 interface [Print Devices], GetFontRestriction method, print.ipartfont2_getfontrestriction, GetFontRestriction method [Print Devices], IPartFont2 interface, GetFontRestriction method [Print Devices], GetFontRestriction, filterpipeline/IPartFont2::GetFontRestriction, IPartFont2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |
 
 ## See Also
 

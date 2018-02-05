@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 416DE730-44A6-4BA3-BFC2-C11A179AD422
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateAllocation2 function [Display Devices], d3dkmthk/D3DKMTCreateAllocation2, PFND3DKMT_CREATEALLOCATION2, display.d3dkmtcreateallocation2, D3DKMTCreateAllocation2
+ms.keywords : D3DKMTCreateAllocation2, d3dkmthk/D3DKMTCreateAllocation2, PFND3DKMT_CREATEALLOCATION2, D3DKMTCreateAllocation2 function [Display Devices], display.d3dkmtcreateallocation2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,8 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |

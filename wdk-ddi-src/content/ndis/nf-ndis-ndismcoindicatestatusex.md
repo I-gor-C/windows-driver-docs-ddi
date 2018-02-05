@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e6d5bd94-d9cb-462f-84e4-bf9d70961e95
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismcoindicatestatusex, NdisMCoIndicateStatusEx, NdisMCoIndicateStatusEx function [Network Drivers Starting with Windows Vista], ndis/NdisMCoIndicateStatusEx, condis_status_ref_1a0c27e2-e728-4b1d-8e45-9305869d3bfc.xml
+ms.keywords : NdisMCoIndicateStatusEx, netvista.ndismcoindicatestatusex, NdisMCoIndicateStatusEx function [Network Drivers Starting with Windows Vista], condis_status_ref_1a0c27e2-e728-4b1d-8e45-9305869d3bfc.xml, ndis/NdisMCoIndicateStatusEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -59,8 +59,8 @@ VOID NdisMCoIndicateStatusEx(
 
 The miniport adapter handle that NDIS passed at the 
      <i>MiniportAdapterHandle</i> parameter of the 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `NdisVcHandle`
 
@@ -95,8 +95,8 @@ When a miniport driver calls
 
 A miniport driver can call 
     <b>NdisMCoIndicateStatusEx</b> after setting its registration attributes, by calling the 
-    <mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
-    NdisMSetMiniportAttributes</b></mshelp:link> function from its 
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+    NdisMSetMiniportAttributes</a> function from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function,
     even if the driver is still in the context of the 
     <i>MiniportInitializeEx</i> function. The driver must not call 
@@ -106,28 +106,26 @@ A miniport driver can call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
 ## See Also
 
+<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+
 <a href="..\ndis\nc-ndis-protocol_co_status_ex.md">ProtocolCoStatusEx</a>
-
-<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 
-<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e0d584c4-ec58-4d5f-bddf-86bcfbfa6b97
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsCompleteOperation0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCompleteOperation0, FwpsCompleteOperation0, netvista.fwpscompleteoperation0, wfp_ref_2_funct_3_fwps_C_bfabbf4d-812a-411f-b9ef-c2e6f145404d.xml
+ms.keywords : netvista.fwpscompleteoperation0, FwpsCompleteOperation0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCompleteOperation0, wfp_ref_2_funct_3_fwps_C_bfabbf4d-812a-411f-b9ef-c2e6f145404d.xml, FwpsCompleteOperation0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,14 +99,11 @@ Pended connections are authenticated again after the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

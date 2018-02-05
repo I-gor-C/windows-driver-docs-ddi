@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : F2CE35C8-F3BA-49E3-AE27-2FC5BFEC2D58
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfrequest/WdfRequestGetRequestorProcessId, WdfRequestGetRequestorProcessId method, wdf.wdfrequestgetrequestorprocessid, WdfRequestGetRequestorProcessId
+ms.keywords : wdf.wdfrequestgetrequestorprocessid, WdfRequestGetRequestorProcessId method, WdfRequestGetRequestorProcessId, wdfrequest/WdfRequestGetRequestorProcessId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,13 @@ A handle to a framework request object.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.21 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll; TBD |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : dde09937-14fb-423b-8905-8a398a9c5902
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_INTERFACE_INFORMATION structure [Buses], usb/PUSBD_INTERFACE_INFORMATION, *PUSBD_INTERFACE_INFORMATION, PUSBD_INTERFACE_INFORMATION structure pointer [Buses], PUSBD_INTERFACE_INFORMATION, buses.usbd_interface_information, usb/USBD_INTERFACE_INFORMATION, USBD_INTERFACE_INFORMATION, _USBD_INTERFACE_INFORMATION, usbstrct_1d2a2627-f530-4ccb-8473-0f028ab44acc.xml
+ms.keywords : PUSBD_INTERFACE_INFORMATION structure pointer [Buses], PUSBD_INTERFACE_INFORMATION, _USBD_INTERFACE_INFORMATION, buses.usbd_interface_information, usb/PUSBD_INTERFACE_INFORMATION, usb/USBD_INTERFACE_INFORMATION, usbstrct_1d2a2627-f530-4ccb-8473-0f028ab44acc.xml, *PUSBD_INTERFACE_INFORMATION, USBD_INTERFACE_INFORMATION structure [Buses], USBD_INTERFACE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -109,9 +109,6 @@ The reserved members of this structure must be treated as opaque and are reserve
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
 ## See Also

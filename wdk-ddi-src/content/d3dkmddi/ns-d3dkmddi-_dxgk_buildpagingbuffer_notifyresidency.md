@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0E70F621-03CD-4593-88C7-DF6F2ADC902A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure [Display Devices], DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, display.dxgk_buildpagingbuffer_notifyresidency
+ms.keywords : DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, d3dkmddi/DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure [Display Devices], display.dxgk_buildpagingbuffer_notifyresidency, _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,9 +77,7 @@ Note that the <i>NotifyResidency</i> operation will be issued only once during a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

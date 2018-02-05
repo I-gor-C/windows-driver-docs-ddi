@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7D146DDF-58A5-40C2-BF21-AF785DC7DB18
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmPdConnStateNotSupported, ucmtypes/UcmPdConnStateNotSupported, _UCM_PD_CONN_STATE, buses.ucm_pd_conn_state, ucmtypes/UCM_PD_CONN_STATE, UCM_PD_CONN_STATE enumeration [Buses], UcmPdConnStateInvalid, UcmPdConnStateNegotiationFailed, ucmtypes/UcmPdConnStateNegotiationFailed, ucmtypes/UcmPdConnStateNegotiationSucceeded, ucmtypes/UcmPdConnStateInvalid, UCM_PD_CONN_STATE, UcmPdConnStateNegotiationSucceeded
+ms.keywords : UCM_PD_CONN_STATE enumeration [Buses], ucmtypes/UcmPdConnStateInvalid, ucmtypes/UcmPdConnStateNegotiationSucceeded, UcmPdConnStateInvalid, ucmtypes/UcmPdConnStateNotSupported, UCM_PD_CONN_STATE, ucmtypes/UCM_PD_CONN_STATE, _UCM_PD_CONN_STATE, ucmtypes/UcmPdConnStateNegotiationFailed, UcmPdConnStateNegotiationFailed, UcmPdConnStateNegotiationSucceeded, buses.ucm_pd_conn_state, UcmPdConnStateNotSupported
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,7 @@ typedef enum _UCM_PD_CONN_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |

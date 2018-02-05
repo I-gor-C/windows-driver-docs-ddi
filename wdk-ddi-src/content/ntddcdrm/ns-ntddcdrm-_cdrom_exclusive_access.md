@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 95248a4a-1fc1-4985-baff-2fe77532d398
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PCDROM_EXCLUSIVE_ACCESS, CDROM_EXCLUSIVE_ACCESS, PCDROM_EXCLUSIVE_ACCESS, structs-CD-ROM_f9104134-3d0a-44fd-9a2d-9dd4e8a3636d.xml, storage.cdrom_exclusive_access, CDROM_EXCLUSIVE_ACCESS structure [Storage Devices], ntddcdrm/PCDROM_EXCLUSIVE_ACCESS, PCDROM_EXCLUSIVE_ACCESS structure pointer [Storage Devices], ntddcdrm/CDROM_EXCLUSIVE_ACCESS, _CDROM_EXCLUSIVE_ACCESS"
+ms.keywords : CDROM_EXCLUSIVE_ACCESS, PCDROM_EXCLUSIVE_ACCESS structure pointer [Storage Devices], structs-CD-ROM_f9104134-3d0a-44fd-9a2d-9dd4e8a3636d.xml, PCDROM_EXCLUSIVE_ACCESS, _CDROM_EXCLUSIVE_ACCESS, CDROM_EXCLUSIVE_ACCESS structure [Storage Devices], ntddcdrm/PCDROM_EXCLUSIVE_ACCESS, *PCDROM_EXCLUSIVE_ACCESS, ntddcdrm/CDROM_EXCLUSIVE_ACCESS, storage.cdrom_exclusive_access
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -123,9 +123,6 @@ An <a href="..\ntddcdrm\ne-ntddcdrm-_exclusive_access_request_type.md">EXCLUSIVE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also

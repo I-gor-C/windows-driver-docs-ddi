@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 43c3894c-5568-4cba-80ed-1d4e4388547b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsAllocateObjectCreateItem, KsAllocateObjectCreateItem function [Streaming Media Devices], stream.ksallocateobjectcreateitem, ksfunc_57773cdc-d649-4381-9841-deba5beddf73.xml, KsAllocateObjectCreateItem
+ms.keywords : ks/KsAllocateObjectCreateItem, KsAllocateObjectCreateItem, ksfunc_57773cdc-d649-4381-9841-deba5beddf73.xml, stream.ksallocateobjectcreateitem, KsAllocateObjectCreateItem function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,9 @@ Returns STATUS_SUCCESS if a new item was allocated and attached. Otherwise, it r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

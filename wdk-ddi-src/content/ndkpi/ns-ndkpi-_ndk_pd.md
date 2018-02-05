@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 77D3503A-8544-4E73-AD17-56F9C8603068
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDK_PD, PNDK_PD, netvista.ndk_pd, ndkpi/PNDK_PD, NDK_PD structure [Network Drivers Starting with Windows Vista], ndkpi/NDK_PD, _NDK_PD, PNDK_PD structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : "_NDK_PD, NDK_PD, ndkpi/NDK_PD, PNDK_PD structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_pd, PNDK_PD, NDK_PD structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_PD"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,24 +66,22 @@ An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
-
 <a href="..\ndkpi\ns-ndkpi-_ndk_pd_dispatch.md">NDK_PD_DISPATCH</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
-
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_pd.md">NDK_FN_CREATE_PD</a>
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
 
+<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
+
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_pd.md">NDK_FN_CREATE_PD</a>
 
  
 

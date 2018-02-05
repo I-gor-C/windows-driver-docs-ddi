@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a02a3b53-03fa-49d4-835c-88623c2f4d8b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksgateinitializeor, ks/KsGateInitializeOr, KsGateInitializeOr function [Streaming Media Devices], KsGateInitializeOr, avfunc_6741b878-dfae-4d40-9040-ab78d32243e2.xml
+ms.keywords : KsGateInitializeOr function [Streaming Media Devices], stream.ksgateinitializeor, ks/KsGateInitializeOr, KsGateInitializeOr, avfunc_6741b878-dfae-4d40-9040-ab78d32243e2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,24 +75,21 @@ This function is an inline call to <b>KsGateInitialize</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
 
 <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
 
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
 
 <a href="..\ks\nf-ks-ksgateterminateor.md">KsGateTerminateOr</a>
-
-<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
 
 <a href="..\ks\nf-ks-ksgateinitialize.md">KsGateInitialize</a>
 

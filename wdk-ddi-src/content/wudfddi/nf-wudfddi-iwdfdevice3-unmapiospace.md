@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3, UnmapIoSpace, wudfddi/IWDFDevice3::UnmapIoSpace, umdf.iwdfdevice3_unmapiospace, IWDFDevice3::UnmapIoSpace, UnmapIoSpace method, wdf.iwdfdevice3_unmapiospace, UnmapIoSpace method, IWDFDevice3 interface, IWDFDevice3 interface, UnmapIoSpace method
+ms.keywords : IWDFDevice3::UnmapIoSpace, UnmapIoSpace, UnmapIoSpace method, IWDFDevice3 interface, UnmapIoSpace method, wudfddi/IWDFDevice3::UnmapIoSpace, umdf.iwdfdevice3_unmapiospace, wdf.iwdfdevice3_unmapiospace, IWDFDevice3, IWDFDevice3 interface, UnmapIoSpace method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -78,14 +78,12 @@ For an example, see <a href="https://docs.microsoft.com/en-us/windows-hardware/d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

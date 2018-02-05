@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2652874f-70d0-4eff-a46d-778a68d55cab
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.mpiomovedevice_in, *PMPIOMoveDevice_IN, _MPIOMoveDevice_IN, MPIOMoveDevice_IN structure [Storage Devices], mpiowmi/PMPIOMoveDevice_IN, structs-scsibus_d1c11b7d-5c45-441b-8362-642db610e19e.xml, PMPIOMoveDevice_IN, MPIOMoveDevice_IN, mpiowmi/MPIOMoveDevice_IN, PMPIOMoveDevice_IN structure pointer [Storage Devices]
+ms.keywords : structs-scsibus_d1c11b7d-5c45-441b-8362-642db610e19e.xml, PMPIOMoveDevice_IN structure pointer [Storage Devices], storage.mpiomovedevice_in, _MPIOMoveDevice_IN, MPIOMoveDevice_IN structure [Storage Devices], mpiowmi/MPIOMoveDevice_IN, MPIOMoveDevice_IN, *PMPIOMoveDevice_IN, PMPIOMoveDevice_IN, mpiowmi/PMPIOMoveDevice_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMPIOMoveDevice_IN, MPIOMoveDevice_IN"
+req.typenames : MPIOMoveDevice_IN, *PMPIOMoveDevice_IN
 ---
 
 # _MPIOMoveDevice_IN structure
@@ -69,7 +69,4 @@ A 64-bitfield that specifies the path that is associated with the device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

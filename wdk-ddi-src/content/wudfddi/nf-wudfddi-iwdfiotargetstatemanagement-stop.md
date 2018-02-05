@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c0d5ea59-c1df-403b-9e74-b1ab60761640
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTargetStateManagement interface, Stop method, umdf.iwdfiotargetstatemanagement_stop, IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_e3b5b892-9d72-49ad-8d58-9cf751f831ad.xml, Stop method, IWDFIoTargetStateManagement interface, wdf.iwdfiotargetstatemanagement_stop, Stop, Stop method, IWDFIoTargetStateManagement::Stop, wudfddi/IWDFIoTargetStateManagement::Stop
+ms.keywords : IWDFIoTargetStateManagement::Stop, UMDFIoTargetObjectRef_e3b5b892-9d72-49ad-8d58-9cf751f831ad.xml, Stop method, wudfddi/IWDFIoTargetStateManagement::Stop, umdf.iwdfiotargetstatemanagement_stop, IWDFIoTargetStateManagement, IWDFIoTargetStateManagement interface, Stop method, Stop, Stop method, IWDFIoTargetStateManagement interface, wdf.iwdfiotargetstatemanagement_stop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -95,20 +95,18 @@ For more information about I/O targets, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560289">IWDFRemoteTarget::Stop</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
 
  
 

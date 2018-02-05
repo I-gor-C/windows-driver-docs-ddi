@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 32320f33-2fa8-410b-9aa8-312c2e0da693
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FWPS_TRANSPORT_SEND_PARAMS0_, FWPS_TRANSPORT_SEND_PARAMS0, fwpsk/FWPS_TRANSPORT_SEND_PARAMS0, FWPS_TRANSPORT_SEND_PARAMS0 structure [Network Drivers Starting with Windows Vista], wfp_ref_3_struct_3_fwps_P-Z_31508fdc-7a5c-4b77-9f71-3fe5d8b99c69.xml, netvista.fwps_transport_send_params0
+ms.keywords : fwpsk/FWPS_TRANSPORT_SEND_PARAMS0, wfp_ref_3_struct_3_fwps_P-Z_31508fdc-7a5c-4b77-9f71-3fe5d8b99c69.xml, FWPS_TRANSPORT_SEND_PARAMS0_, netvista.fwps_transport_send_params0, FWPS_TRANSPORT_SEND_PARAMS0, FWPS_TRANSPORT_SEND_PARAMS0 structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,8 +67,8 @@ A pointer to a buffer that specifies the remote IP address to which to send the 
 The buffer can contain an IPv4 address (4 bytes) or an IPv6 address (16 bytes), and the address must
      be specified in network byte order. The IP version must match the 
      <i>AddressFamily</i> parameter specified in the 
-     <mshelp:link keywords="netvista.fwpsinjecttransportsendasync0" tabindex="0"><b>
-     FwpsInjectTransportSendAsync0</b></mshelp:link> function.
+     <a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportsendasync0.md">
+     FwpsInjectTransportSendAsync0</a> function.
 
 The buffer must remain valid until the injection completion function is called.
 
@@ -77,8 +77,8 @@ The buffer must remain valid until the injection completion function is called.
 A <b>SCOPE_ID</b> structure that contains the scope identifier for the remote IP address. The scope
      identifier is provided to a callout through the 
      <b>remoteScopeId</b> member of the 
-     <mshelp:link keywords="netvista.fwps_incoming_metadata_values0" tabindex="0"><b>
-     FWPS_INCOMING_METADATA_VALUES0</b></mshelp:link> structure that is passed to the callout driver's 
+     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
+     FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function. The <b>SCOPE_ID</b>
      structure is defined in 
      Ws2ipdef.h as follows.
@@ -106,24 +106,22 @@ A <b>SCOPE_ID</b> structure that contains the scope identifier for the remote IP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
+   FWPS_INCOMING_METADATA_VALUES0</a>
 
-<a href="..\fwpsk\ns-fwpsk-fwps_transport_send_params1_.md">FWPS_TRANSPORT_SEND_PARAMS1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
 
 <a href="https://msdn.microsoft.com/3b2ba645-6a70-4ba2-b4a2-5bde0c7f8d08">WSASendMsg</a>
 
-<mshelp:link keywords="netvista.fwpsinjecttransportsendasync0" tabindex="0"><b>
-   FwpsInjectTransportSendAsync0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportsendasync0.md">
+   FwpsInjectTransportSendAsync0</a>
 
-<mshelp:link keywords="netvista.fwps_incoming_metadata_values0" tabindex="0"><b>
-   FWPS_INCOMING_METADATA_VALUES0</b></mshelp:link>
+<a href="..\fwpsk\ns-fwpsk-fwps_transport_send_params1_.md">FWPS_TRANSPORT_SEND_PARAMS1</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 

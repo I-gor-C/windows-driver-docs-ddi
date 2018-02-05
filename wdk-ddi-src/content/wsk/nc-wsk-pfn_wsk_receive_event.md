@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -159,7 +159,12 @@ The number of bytes of received data described by the linked list of
 
 `*BytesAccepted`
 
-
+A pointer to a SIZE_T-typed variable which receives the number of bytes of received data that is
+     accepted by the WSK application. This variable needs to be set only if the WSK application accepts a
+     portion of the total number of bytes of received data. If the WSK application accepts all of the
+     received data, it does not have to set this variable. If the 
+     <i>WskReceiveEvent</i> event callback function returns a status other than STATUS_SUCCESS, the WSK
+     subsystem ignores the value of this variable.
 
 
 ## Return Value
@@ -246,8 +251,8 @@ The WSK subsystem calls a WSK application's
     only if the event callback function was previously enabled with the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570834">SO_WSK_EVENT_CALLBACK</a> socket option.
     For more information about enabling a socket's event callback functions, see 
-    <mshelp:link keywords="netvista.enabling_and_disabling_event_callback_functions" tabindex="0">Enabling and
-    Disabling Event Callback Functions</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
+    Disabling Event Callback Functions</a>.
 
 If a WSK application's 
     <i>WskReceiveEvent</i> event callback function is enabled on a connection-oriented socket and the
@@ -277,37 +282,33 @@ A WSK application's <i>WskReceiveEvent</i> event callback function must not wait
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Windows |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a>
-
-<a href="..\wsk\ns-wsk-_wsk_data_indication.md">WSK_DATA_INDICATION</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_send.md">WskSend</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 
-<mshelp:link keywords="netvista.wsk_client_connection_dispatch" tabindex="0"><b>
-   WSK_CLIENT_CONNECTION_DISPATCH</b></mshelp:link>
+<a href="..\wsk\ns-wsk-_wsk_data_indication.md">WSK_DATA_INDICATION</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
+   WSK_CLIENT_CONNECTION_DISPATCH</a>
 
  
 

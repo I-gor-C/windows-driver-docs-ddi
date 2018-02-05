@@ -56,11 +56,8 @@ req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **DLL** |  |
 
 ## See Also
 
@@ -68,9 +65,9 @@ req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c46cdfd3-36c4-420d-9dbf-d6f0bede460e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlfreeextracreateparameter, ntifs/FsRtlFreeExtraCreateParameter, FsRtlFreeExtraCreateParameter, fsrtlref_bbee8298-87e1-4487-bf56-b2dd76913d47.xml, FsRtlFreeExtraCreateParameter routine [Installable File System Drivers]
+ms.keywords : fsrtlref_bbee8298-87e1-4487-bf56-b2dd76913d47.xml, FsRtlFreeExtraCreateParameter, ifsk.fsrtlfreeextracreateparameter, FsRtlFreeExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlFreeExtraCreateParameter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,32 +70,30 @@ If a cleanup callback routine of type <a href="..\ntifs\nc-ntifs-pfsrtl_extra_cr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FsRtlFreeExtraCreateParameter routine is available starting with Windows Vista. The FsRtlFreeExtraCreateParameter routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 
 <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>
 
 <b>FltAllocateExtraCreateParameterFromLookasideList</b>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 
 <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 

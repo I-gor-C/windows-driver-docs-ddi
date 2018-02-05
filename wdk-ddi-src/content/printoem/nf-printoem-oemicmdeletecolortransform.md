@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 820d9e28-fe06-4aa7-91d8-a90340affb94
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMIcmDeleteColorTransform function [Print Devices], print_unidrv-pscript_rendering_bbbce51d-2346-4260-ae70-598d38276d69.xml, print.oemicmdeletecolortransform, printoem/OEMIcmDeleteColorTransform, OEMIcmDeleteColorTransform
+ms.keywords : print.oemicmdeletecolortransform, OEMIcmDeleteColorTransform function [Print Devices], OEMIcmDeleteColorTransform, printoem/OEMIcmDeleteColorTransform, print_unidrv-pscript_rendering_bbbce51d-2346-4260-ae70-598d38276d69.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 15eeeb07-b71f-4868-8854-6a5034d3f8c6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.hardware_counter, _HARDWARE_COUNTER, ntddk/HARDWARE_COUNTER, ntddk/PHARDWARE_COUNTER, PHARDWARE_COUNTER, HARDWARE_COUNTER structure [Kernel-Mode Driver Architecture], PHARDWARE_COUNTER structure pointer [Kernel-Mode Driver Architecture], *PHARDWARE_COUNTER, HARDWARE_COUNTER, kstruct_b_3e230097-13da-4e6b-bb89-baf3563c3570.xml
+ms.keywords : HARDWARE_COUNTER, PHARDWARE_COUNTER structure pointer [Kernel-Mode Driver Architecture], _HARDWARE_COUNTER, ntddk/HARDWARE_COUNTER, kstruct_b_3e230097-13da-4e6b-bb89-baf3563c3570.xml, *PHARDWARE_COUNTER, PHARDWARE_COUNTER, ntddk/PHARDWARE_COUNTER, HARDWARE_COUNTER structure [Kernel-Mode Driver Architecture], kernel.hardware_counter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHARDWARE_COUNTER, HARDWARE_COUNTER"
+req.typenames : HARDWARE_COUNTER, *PHARDWARE_COUNTER
 ---
 
 # _HARDWARE_COUNTER structure
@@ -79,9 +79,7 @@ The <b>Type</b> member specifies the type of hardware counter that is described 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

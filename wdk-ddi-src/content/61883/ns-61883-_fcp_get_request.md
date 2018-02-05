@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4DD05230-E9CA-4067-984B-7F0540FE8079
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883/FCP_GET_REQUEST, FCP_GET_REQUEST, PFCP_GET_REQUEST structure pointer [Buses], 61883/PFCP_GET_REQUEST, PFCP_GET_REQUEST, IEEE.fcp_get_request, *PFCP_GET_REQUEST, _FCP_GET_REQUEST, FCP_GET_REQUEST structure [Buses]
+ms.keywords : IEEE.fcp_get_request, PFCP_GET_REQUEST structure pointer [Buses], 61883/FCP_GET_REQUEST, _FCP_GET_REQUEST, FCP_GET_REQUEST structure [Buses], PFCP_GET_REQUEST, *PFCP_GET_REQUEST, FCP_GET_REQUEST, 61883/PFCP_GET_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFCP_GET_REQUEST, FCP_GET_REQUEST"
+req.typenames : FCP_GET_REQUEST, *PFCP_GET_REQUEST
 ---
 
 # _FCP_GET_REQUEST structure
@@ -77,9 +77,6 @@ If the protocol driver is being used to control a physical device, <b>NodeAddres
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

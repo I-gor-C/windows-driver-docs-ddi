@@ -69,9 +69,7 @@ No status.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountdev.h (include Mountmgr.h) |
-| **IRQL** |  |
 
 ## See Also
 

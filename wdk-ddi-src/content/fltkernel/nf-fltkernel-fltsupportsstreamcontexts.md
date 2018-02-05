@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ea1fd4d5-85c6-40ce-9feb-a2c22e9fe905
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltSupportsStreamContexts, FltSupportsStreamContexts function [Installable File System Drivers], FltSupportsStreamContexts, FltApiRef_p_to_z_a2e2c9ac-1dc0-44cf-b8f0-172ca931a450.xml, ifsk.fltsupportsstreamcontexts
+ms.keywords : FltSupportsStreamContexts function [Installable File System Drivers], ifsk.fltsupportsstreamcontexts, FltApiRef_p_to_z_a2e2c9ac-1dc0-44cf-b8f0-172ca931a450.xml, fltkernel/FltSupportsStreamContexts, FltSupportsStreamContexts
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,30 +78,27 @@ To release a reference on a context, call <a href="..\fltkernel\nf-fltkernel-flt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
+<a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltsupportsstreamhandlecontexts.md">FltSupportsStreamHandleContexts</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
 
  
 

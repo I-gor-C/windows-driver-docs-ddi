@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 225da110-cd59-4803-bde8-26e275b3ddbd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_VideoProcess_AlphaBlendExtended, DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_SubRects, DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_StretchX, dxva/DXVA_VideoProcess_SubStreamsExtended, dxvaref_4298738a-dc13-47b4-bb3d-84e90661542b.xml, DXVA_VideoProcess_StretchY, DXVA_VideoProcessCaps enumeration [Display Devices], DXVA_VideoProcess_SubStreamsExtended, display.dxva_videoprocesscaps, dxva/DXVA_VideoProcess_YUV2RGB, dxva/DXVA_VideoProcess_StretchY, _DXVA_VideoProcessCaps, DXVA_VideoProcess_None, DXVA_VideoProcess_SubStreams, DXVA_VideoProcess_YUV2RGB, dxva/DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcess_None, dxva/DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_SubStreams, DXVA_VideoProcess_YUV2RGBExtended, DXVA_VideoProcess_StretchX, DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcess_YUV2RGBExtended, dxva/DXVA_VideoProcess_AlphaBlendExtended
+ms.keywords : DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_YUV2RGBExtended, dxva/DXVA_VideoProcess_StretchY, DXVA_VideoProcess_StretchY, DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_YUV2RGB, dxva/DXVA_VideoProcess_SubRects, dxva/DXVA_VideoProcess_AlphaBlend, dxva/DXVA_VideoProcess_AlphaBlendExtended, DXVA_VideoProcessCaps, dxva/DXVA_VideoProcess_SubStreamsExtended, display.dxva_videoprocesscaps, DXVA_VideoProcess_YUV2RGB, dxvaref_4298738a-dc13-47b4-bb3d-84e90661542b.xml, _DXVA_VideoProcessCaps, DXVA_VideoProcess_StretchX, DXVA_VideoProcess_AlphaBlendExtended, DXVA_VideoProcess_YUV2RGBExtended, DXVA_VideoProcess_SubStreamsExtended, dxva/DXVA_VideoProcess_None, DXVA_VideoProcessCaps enumeration [Display Devices], DXVA_VideoProcess_None, DXVA_VideoProcess_SubStreams, dxva/DXVA_VideoProcess_StretchX, dxva/DXVA_VideoProcess_SubStreams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -153,9 +153,6 @@ Color space conversion performed by <b>DXVA_VideoProcess_YUV2RGB</b> is particul
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

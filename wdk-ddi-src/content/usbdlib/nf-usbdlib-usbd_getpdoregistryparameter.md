@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f61be32a-2537-4b7f-8f22-4149b00a15a4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_GetPdoRegistryParameter, usbfunc_b85b350e-68ad-4256-b4df-f61ea0367b62.xml, buses.usbd_getpdoregistryparameter, USBD_GetPdoRegistryParameter routine [Buses], usbdlib/USBD_GetPdoRegistryParameter
+ms.keywords : USBD_GetPdoRegistryParameter, USBD_GetPdoRegistryParameter routine [Buses], usbfunc_b85b350e-68ad-4256-b4df-f61ea0367b62.xml, buses.usbd_getpdoregistryparameter, usbdlib/USBD_GetPdoRegistryParameter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -86,14 +86,10 @@ The <b>USBD_GetPdoRegistryParameter</b> returns STATUS_SUCCESS when the operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h |
-| **Library** |  |
+| **Library** | Usbd.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

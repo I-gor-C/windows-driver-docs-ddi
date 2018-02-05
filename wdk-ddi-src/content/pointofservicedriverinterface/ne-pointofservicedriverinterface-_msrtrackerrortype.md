@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 2abd9341-527f-43af-baa2-622b759b47cd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/MsrTrackErrorType_EndSentinelError, MsrTrackErrorType_LrcError, MsrTrackErrorType enumeration, MsrTrackErrorType, _MsrTrackErrorType, pointofservicedriverinterface/MsrTrackErrorType_LrcError, MsrTrackErrorType_ParityError, pos.msrtrackerrortype, pointofservicedriverinterface/MsrTrackErrorType_ParityError, pointofservicedriverinterface/MsrTrackErrorType_StartSentinelError, pointofservicedriverinterface/MsrTrackErrorType_None, MsrTrackErrorType_Unknown, pointofservicedriverinterface/MsrTrackErrorType_Unknown, MsrTrackErrorType_StartSentinelError, MsrTrackErrorType_None, pointofservicedriverinterface/MsrTrackErrorType, MsrTrackErrorType_EndSentinelError
+ms.keywords : MsrTrackErrorType_EndSentinelError, MsrTrackErrorType_StartSentinelError, MsrTrackErrorType_ParityError, pointofservicedriverinterface/MsrTrackErrorType_Unknown, pos.msrtrackerrortype, pointofservicedriverinterface/MsrTrackErrorType_None, pointofservicedriverinterface/MsrTrackErrorType_ParityError, MsrTrackErrorType_None, pointofservicedriverinterface/MsrTrackErrorType_LrcError, MsrTrackErrorType, MsrTrackErrorType_LrcError, pointofservicedriverinterface/MsrTrackErrorType_EndSentinelError, _MsrTrackErrorType, pointofservicedriverinterface/MsrTrackErrorType, pointofservicedriverinterface/MsrTrackErrorType_StartSentinelError, MsrTrackErrorType_Unknown, MsrTrackErrorType enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,4 @@ typedef enum _MsrTrackErrorType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

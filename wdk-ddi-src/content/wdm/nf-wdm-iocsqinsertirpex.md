@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b1eb237d-ad4d-428c-beee-5f24677bd0d3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_5a30f95f-f46d-4f45-a261-a740f33c5327.xml, wdm/IoCsqInsertIrpEx, kernel.iocsqinsertirpex, IoCsqInsertIrpEx, IoCsqInsertIrpEx routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.iocsqinsertirpex, IoCsqInsertIrpEx, k104_5a30f95f-f46d-4f45-a261-a740f33c5327.xml, IoCsqInsertIrpEx routine [Kernel-Mode Driver Architecture], wdm/IoCsqInsertIrpEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,44 +104,43 @@ Callers of <b>IoCsqInsertIrpEx</b> must be running at an IRQL &lt;= DISPATCH_LEV
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of the Windows operating system. The routine is also available in the Csq.lib library that ships with the Windows Driver Kit (WDK) and the Driver Development Kit (DDK) for Windows Server 2003. Drivers that must also work for on Windows XP, Windows 2000, and Windows 98/Me can instead link to Csq.lib to use the routine. Available in Windows Server 2003 and later versions of the Windows operating system. The routine is also available in the Csq.lib library that ships with the Windows Driver Kit (WDK) and the Driver Development Kit (DDK) for Windows Server 2003. Drivers that must also work for on Windows XP, Windows 2000, and Windows 98/Me can instead link to Csq.lib to use the routine. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | IoAllocateFree, IoReuseIrp, IrpCancelField, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a>
-
-<a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a>
+<a href="..\wdm\nc-wdm-io_csq_acquire_lock.md">CsqAcquireLock</a>
 
 <a href="..\wdm\nc-wdm-io_csq_insert_irp.md">CsqInsertIrp</a>
 
-<a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>
-
-<a href="..\wdm\nc-wdm-io_csq_insert_irp_ex.md">CsqInsertIrpEx</a>
-
-<a href="..\wdm\nc-wdm-io_csq_complete_canceled_irp.md">CsqCompleteCanceledIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550567">IO_CSQ_IRP_CONTEXT</a>
 
 <a href="..\wdm\nf-wdm-iocsqinsertirp.md">IoCsqInsertIrp</a>
 
 <a href="..\wdm\nf-wdm-iocsqinitializeex.md">IoCsqInitializeEx</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550567">IO_CSQ_IRP_CONTEXT</a>
+<a href="..\wdm\nc-wdm-io_csq_insert_irp_ex.md">CsqInsertIrpEx</a>
 
-<a href="..\wdm\nc-wdm-io_csq_remove_irp.md">CsqRemoveIrp</a>
+<a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a>
+
+<a href="..\wdm\nc-wdm-io_csq_complete_canceled_irp.md">CsqCompleteCanceledIrp</a>
 
 <a href="..\wdm\nc-wdm-io_csq_release_lock.md">CsqReleaseLock</a>
+
+<a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a>
 
 <a href="..\wdm\nc-wdm-io_csq_peek_next_irp.md">CsqPeekNextIrp</a>
 
 <a href="..\wdm\nf-wdm-iocsqremoveirp.md">IoCsqRemoveIrp</a>
 
-<a href="..\wdm\nc-wdm-io_csq_acquire_lock.md">CsqAcquireLock</a>
+<a href="..\wdm\nc-wdm-io_csq_remove_irp.md">CsqRemoveIrp</a>
 
  
 

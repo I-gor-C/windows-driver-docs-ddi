@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 9f6b06bf-60d3-4ec2-8c49-405bff2ccb5e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaLog_c755ea6c-c312-4b15-be83-a437358b83a9.xml, wiamdef/WIAS_TRACE, WIAS_TRACE macro [Imaging Devices], image.wias_trace, WIAS_TRACE
+ms.keywords : image.wias_trace, wiamdef/WIAS_TRACE, WIAS_TRACE macro [Imaging Devices], IWiaLog_c755ea6c-c312-4b15-be83-a437358b83a9.xml, WIAS_TRACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -82,14 +82,9 @@ The following is an example of how the macro would be used:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamdef.h |
 
 ## See Also
 

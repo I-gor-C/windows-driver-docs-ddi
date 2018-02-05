@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4f868e88-ef5c-4fad-be53-2b5116a6385b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsFilterReleaseControl, KsFilterReleaseControl, avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml, stream.ksfilterreleasecontrol, KsFilterReleaseControl function [Streaming Media Devices]
+ms.keywords : stream.ksfilterreleasecontrol, KsFilterReleaseControl function [Streaming Media Devices], KsFilterReleaseControl, avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml, ks/KsFilterReleaseControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,20 +70,17 @@ For a description of the filter control mutex, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
-
 <a href="..\ks\nf-ks-ksfilteracquirecontrol.md">KsFilterAcquireControl</a>
+
+<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
 
  
 

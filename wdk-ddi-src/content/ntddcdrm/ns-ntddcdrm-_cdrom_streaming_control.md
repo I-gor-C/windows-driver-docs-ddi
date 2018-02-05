@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 71D4008C-1F04-408B-93DF-DDE6FD352701
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PCDROM_STREAMING_CONTROL, PCDROM_STREAMING_CONTROL structure pointer [Storage Devices], ntddcdrm/CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL structure [Storage Devices], _CDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL, storage.cdrom_streaming_control, ntddcdrm/PCDROM_STREAMING_CONTROL
+ms.keywords : PCDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL, _CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL, ntddcdrm/PCDROM_STREAMING_CONTROL, ntddcdrm/CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL structure [Storage Devices], PCDROM_STREAMING_CONTROL structure pointer [Storage Devices], storage.cdrom_streaming_control
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL"
+req.typenames : CDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL
 ---
 
 # _CDROM_STREAMING_CONTROL structure
@@ -59,9 +59,6 @@ The <a href="..\ntddcdrm\ne-ntddcdrm-_streaming_control_request_type.md">STREAMI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 54524c7e-12eb-46c7-b96d-67e49821e7a8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : GENERIC_MAPPING structure [Kernel-Mode Driver Architecture], GENERIC_MAPPING, _GENERIC_MAPPING, wdm/GENERIC_MAPPING, PGENERIC_MAPPING structure pointer [Kernel-Mode Driver Architecture], PGENERIC_MAPPING, kstruct_b_488ee84c-2f22-4682-8b90-56e892f07f7b.xml, *PGENERIC_MAPPING, kernel.generic_mapping, wdm/PGENERIC_MAPPING
+ms.keywords : GENERIC_MAPPING structure [Kernel-Mode Driver Architecture], GENERIC_MAPPING, wdm/GENERIC_MAPPING, PGENERIC_MAPPING, kstruct_b_488ee84c-2f22-4682-8b90-56e892f07f7b.xml, PGENERIC_MAPPING structure pointer [Kernel-Mode Driver Architecture], _GENERIC_MAPPING, wdm/PGENERIC_MAPPING, *PGENERIC_MAPPING, kernel.generic_mapping
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,6 @@ For more information about generic access rights, see the reference page for <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

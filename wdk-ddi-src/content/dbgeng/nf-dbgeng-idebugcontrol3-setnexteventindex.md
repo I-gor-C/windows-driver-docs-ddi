@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : fbff721a-fdd9-4343-b9a9-92f41fb21ba2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.setnexteventindex, IDebugControl3, dbgeng/IDebugControl3::SetNextEventIndex, IDebugControl_9a902b9c-c621-4d71-bae7-d3fd288b1cd8.xml, SetNextEventIndex method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], SetNextEventIndex method, IDebugControl3::SetNextEventIndex, SetNextEventIndex method [Windows Debugging], SetNextEventIndex
+ms.keywords : IDebugControl3 interface [Windows Debugging], SetNextEventIndex method, SetNextEventIndex method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3::SetNextEventIndex, SetNextEventIndex method [Windows Debugging], SetNextEventIndex, debugger.setnexteventindex, IDebugControl_9a902b9c-c621-4d71-bae7-d3fd288b1cd8.xml, dbgeng/IDebugControl3::SetNextEventIndex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -135,22 +135,17 @@ This method is only useful if the target offers a list of events.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547906">GetNumberEvents</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
 
  
 

@@ -59,8 +59,5 @@ A rendering filter should search for the <b>XPS_FP_PROGRESS_REPORT</b> property 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **DLL** |  |

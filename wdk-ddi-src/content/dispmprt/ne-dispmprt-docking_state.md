@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4e051d49-57ae-43c8-a894-a6c2c277dce9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DOCKING_STATE, DmEnums_1a20e5b4-8df9-4298-8661-d7697d99e139.xml, display.docking_state, dispmprt/DockStateUnDocked, dispmprt/DockStateDocked, DockStateUnknown, dispmprt/DockStateUnknown, DOCKING_STATE enumeration [Display Devices], DockStateUnsupported, dispmprt/DockStateUnsupported, DockStateDocked, dispmprt/DOCKING_STATE, DockStateUnDocked
+ms.keywords : display.docking_state, dispmprt/DockStateDocked, DockStateDocked, DmEnums_1a20e5b4-8df9-4298-8661-d7697d99e139.xml, dispmprt/DockStateUnknown, dispmprt/DockStateUnDocked, DockStateUnknown, DockStateUnsupported, DOCKING_STATE enumeration [Display Devices], DOCKING_STATE, dispmprt/DOCKING_STATE, DockStateUnDocked, dispmprt/DockStateUnsupported
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,5 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |

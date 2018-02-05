@@ -45,8 +45,8 @@ req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 An offload target calls the 
   <b>NdisTcpOffloadReceiveComplete</b> function to return posted receive requests (receive buffers) to the
   host stack. The offload target previously received the receive requests in one or more calls to its 
-  <mshelp:link keywords="netvista.miniporttcpoffloadreceive" tabindex="0"><i>
-  MiniportTcpOffloadReceive</i></mshelp:link> function.
+  <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
+  MiniportTcpOffloadReceive</a> function.
 
 ## Syntax
 
@@ -65,8 +65,8 @@ void NdisTcpOffloadReceiveComplete(
 `NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to the 
-     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-     NdisMRegisterMiniportDriver</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a> function.
 
 `NetBufferList`
 
@@ -74,8 +74,8 @@ A pointer to a
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
      can be stand-alone or the first structure in a linked list of NET_BUFFER_LIST structures. The offload
      target obtained these structures in one or more calls to its 
-     <mshelp:link keywords="netvista.miniporttcpoffloadreceive" tabindex="0"><i>
-     MiniportTcpOffloadReceive</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
+     MiniportTcpOffloadReceive</a> function.
 
 
 ## Return Value
@@ -86,14 +86,14 @@ None
 
 An offload target should use and return preposted receive requests in the order in which the requests
     were posted to the 
-    <mshelp:link keywords="netvista.miniporttcpoffloadreceive" tabindex="0"><i>
-    MiniportTcpOffloadReceive</i></mshelp:link> function of the offload target. That is, the offload target should use
+    <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
+    MiniportTcpOffloadReceive</a> function of the offload target. That is, the offload target should use
     and return preposted receive requests in first in, first out (FIFO) order.
 
 An offload target must serialize calls to the 
     <b>NdisTcpOffloadReceiveComplete</b> function and to the 
-    <mshelp:link keywords="netvista.ndistcpoffloadreceivehandler" tabindex="0"><b>
-    NdisTcpOffloadReceiveHandler</b></mshelp:link> function on a per -connection basis.
+    <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">
+    NdisTcpOffloadReceiveHandler</a> function on a per -connection basis.
 
 An offload target's 
     <i>MiniportTcpOffloadReceive</i> function can be called in the context of an offload target's call to the 
@@ -104,8 +104,8 @@ An offload target's
 To improve system performance, an offload target can create a linked list that contains the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures from multiple
     calls to its 
-    <mshelp:link keywords="netvista.miniporttcpoffloadreceive" tabindex="0"><i>
-    MiniportTcpOffloadReceive</i></mshelp:link> function. The offload target can pass such a linked list in a single call
+    <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">
+    MiniportTcpOffloadReceive</a> function. The offload target can pass such a linked list in a single call
     to the 
     <b>NdisTcpOffloadReceiveComplete</b> function. Note that, an offload target can distribute the receive
     requests that were posted in a single call to the 
@@ -156,8 +156,8 @@ The connection on which the buffer was posted is being uploaded.
 <dt><a id="NDIS_STATUS_INVALID_STATE"></a><a id="ndis_status_invalid_state"></a>NDIS_STATUS_INVALID_STATE</dt>
 <dd>
 The receive request was posted after the offload target indicated a disconnect by calling 
-       <mshelp:link keywords="netvista.ndistcpoffloadeventhandler" tabindex="0"><b>
-       NdisTcpOffloadEventHandler</b></mshelp:link>.
+       <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
+       NdisTcpOffloadEventHandler</a>.
 
 </dd>
 </dl>
@@ -172,8 +172,8 @@ Specifies the number of data bytes returned by calling the
 </li>
 <li>
 Calls the 
-      <mshelp:link keywords="netvista.ndisadvancenetbufferdatastart" tabindex="0"><b>
-      NdisAdvanceNetBufferDataStart</b></mshelp:link> function. The 
+      <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+      NdisAdvanceNetBufferDataStart</a> function. The 
       <i>NetBufferList</i> parameter should point to the NET_BUFFER structure that is associated with the
       NET_BUFFER_LIST structure. The 
       <i>DataOffsetDelta</i> parameter should specify the number of data bytes that the offload target placed
@@ -186,27 +186,22 @@ Calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<mshelp:link keywords="netvista.ndisadvancenetbufferdatastart" tabindex="0"><b>
-   NdisAdvanceNetBufferDataStart</b></mshelp:link>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_receive_handler.md">MiniportTcpOffloadReceive</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+   NdisAdvanceNetBufferDataStart</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

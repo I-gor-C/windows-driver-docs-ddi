@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f5c67404-3baf-44f1-8b19-f099cf71c178
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_GAMMA_RAMP_DXGI_1 structure [Display Devices], display.d3dddi_gamma_ramp_dxgi_1, D3DDDI_GAMMA_RAMP_DXGI_1, d3dukmdt/D3DDDI_GAMMA_RAMP_DXGI_1, _D3DDDI_GAMMA_RAMP_DXGI_1, DmStructs_378e6432-010f-453c-8e59-d32f243543f0.xml
+ms.keywords : DmStructs_378e6432-010f-453c-8e59-d32f243543f0.xml, _D3DDDI_GAMMA_RAMP_DXGI_1, d3dukmdt/D3DDDI_GAMMA_RAMP_DXGI_1, display.d3dddi_gamma_ramp_dxgi_1, D3DDDI_GAMMA_RAMP_DXGI_1 structure [Display Devices], D3DDDI_GAMMA_RAMP_DXGI_1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ A <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_dxgi_rgb.md">D3DDDI_DXGI_RGB</a> struc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dukmdt.h) |
 
 ## See Also

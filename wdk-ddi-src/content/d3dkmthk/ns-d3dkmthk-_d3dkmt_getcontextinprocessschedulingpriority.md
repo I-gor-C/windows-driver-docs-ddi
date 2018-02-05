@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a72dd755-efd9-4950-8400-179eb1d63e9a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_getcontextinprocessschedulingpriority, D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY structure [Display Devices], D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY, _D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY, d3dkmthk/D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY
+ms.keywords : d3dkmthk/D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY, display.d3dkmt_getcontextinprocessschedulingpriority, _D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY, D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY, D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,7 +68,5 @@ A value of 1 indicates that the context is scheduled ahead of other contexts wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |

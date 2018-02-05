@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 05057ae7-0f91-4f5a-8c72-652ec04ee3ab
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k111_4e01a648-6ffc-418f-821c-9a4ef821dc3b.xml, kernel.zwopenkeyex, ZwOpenKeyEx routine [Kernel-Mode Driver Architecture], ZwOpenKeyEx, wdm/ZwOpenKeyEx
+ms.keywords : wdm/ZwOpenKeyEx, kernel.zwopenkeyex, ZwOpenKeyEx, ZwOpenKeyEx routine [Kernel-Mode Driver Architecture], k111_4e01a648-6ffc-418f-821c-9a4ef821dc3b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -192,18 +192,15 @@ For more information about working with registry keys in kernel mode, see <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
-
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
@@ -212,6 +209,8 @@ For more information about working with registry keys in kernel mode, see <a hre
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

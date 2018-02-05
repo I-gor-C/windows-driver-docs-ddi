@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0f3ca59b-f7e9-4bd7-a652-f7f0a6075d80
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddcdvd/DvdDiskKeyDescriptor, ntddcdvd/PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT, storage.dvd_structure_format, ntddcdvd/DvdCopyrightDescriptor, PDVD_STRUCTURE_FORMAT enumeration pointer [Storage Devices], structs-DVD_299fec4b-1ed0-43ea-a522-716c1a585d0e.xml, DvdDiskKeyDescriptor, ntddcdvd/DvdPhysicalDescriptor, DvdCopyrightDescriptor, DVD_STRUCTURE_FORMAT enumeration [Storage Devices], *PDVD_STRUCTURE_FORMAT, DvdMaxDescriptor, DvdManufacturerDescriptor, PDVD_STRUCTURE_FORMAT, DvdBCADescriptor, ntddcdvd/DVD_STRUCTURE_FORMAT, ntddcdvd/DvdManufacturerDescriptor, DvdPhysicalDescriptor, ntddcdvd/DvdMaxDescriptor, ntddcdvd/DvdBCADescriptor
+ms.keywords : ntddcdvd/DvdBCADescriptor, DvdMaxDescriptor, PDVD_STRUCTURE_FORMAT enumeration pointer [Storage Devices], ntddcdvd/DvdManufacturerDescriptor, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT, ntddcdvd/DvdDiskKeyDescriptor, DvdManufacturerDescriptor, DVD_STRUCTURE_FORMAT enumeration [Storage Devices], DvdBCADescriptor, DvdPhysicalDescriptor, ntddcdvd/DvdMaxDescriptor, ntddcdvd/PDVD_STRUCTURE_FORMAT, DvdDiskKeyDescriptor, ntddcdvd/DVD_STRUCTURE_FORMAT, structs-DVD_299fec4b-1ed0-43ea-a522-716c1a585d0e.xml, storage.dvd_structure_format, ntddcdvd/DvdCopyrightDescriptor, PDVD_STRUCTURE_FORMAT, DvdCopyrightDescriptor, ntddcdvd/DvdPhysicalDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,16 +92,13 @@ typedef enum DVD_STRUCTURE_FORMAT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
 ## See Also
 
-<a href="..\ntddcdvd\ns-ntddcdvd-dvd_read_structure.md">DVD_READ_STRUCTURE</a>
-
 <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_dvd_read_structure.md">IOCTL_DVD_READ_STRUCTURE</a>
+
+<a href="..\ntddcdvd\ns-ntddcdvd-dvd_read_structure.md">DVD_READ_STRUCTURE</a>
 
  
 

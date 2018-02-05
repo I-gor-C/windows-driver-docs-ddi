@@ -151,8 +151,8 @@ The IOCTL_BTH_HCI_VENDOR_COMMAND request provides a mechanism that allows vendor
     that are specific to their Bluetooth radios.
 
 The manufacturer ID and link management protocol (LMP) version values that are in the 
-    <mshelp:link keywords="bltooth.bth_vendor_specific_command" tabindex="0"><b>
-    BTH_VENDOR_SPECIFIC_COMMAND</b></mshelp:link> structure help to prevent the sending of vendor-specific commands to
+    <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">
+    BTH_VENDOR_SPECIFIC_COMMAND</a> structure help to prevent the sending of vendor-specific commands to
     the wrong radio. The LMP version enables the vendors to send vendor-specific commands to radios that have
     a matching LMP version. If the LMP version is zero, all radios from that vendor will receive the
     vendor-specific command.
@@ -201,7 +201,7 @@ AdjustTokenPrivileges(procToken, FALSE, &amp;tp, sizeof(TOKEN_PRIVILEGES), (PTOK
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Versions:\_Available on Microsoft Windows Vista SP2 and later operating system   versions. Versions:\_Available on Microsoft Windows Vista SP2 and later operating system   versions. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | "<= PASSIVE_LEVEL" |
 
@@ -209,9 +209,9 @@ AdjustTokenPrivileges(procToken, FALSE, &amp;tp, sizeof(TOKEN_PRIVILEGES), (PTOK
 
 <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">BTH_VENDOR_SPECIFIC_COMMAND</a>
 
-<a href="..\bthioctl\ns-bthioctl-_bth_command_header.md">BTH_COMMAND_HEADER</a>
-
 <a href="..\bthioctl\ns-bthioctl-_bth_vendor_pattern.md">BTH_VENDOR_PATTERN</a>
+
+<a href="..\bthioctl\ns-bthioctl-_bth_command_header.md">BTH_COMMAND_HEADER</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : C2D4EB3E-0A39-4458-B0E7-C6D943AB4203
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetGfxState, GetGfxState method [Audio Devices], audio.iminiportaudioenginenode_getgfxstate, IMiniportAudioEngineNode interface [Audio Devices], GetGfxState method, portcls/IMiniportAudioEngineNode::GetGfxState, IMiniportAudioEngineNode, GetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode::GetGfxState
+ms.keywords : GetGfxState method [Audio Devices], portcls/IMiniportAudioEngineNode::GetGfxState, IMiniportAudioEngineNode interface [Audio Devices], GetGfxState method, IMiniportAudioEngineNode, GetGfxState, GetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getgfxstate, IMiniportAudioEngineNode::GetGfxState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,14 +70,10 @@ Pointer to a <b>BOOL</b> data type.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

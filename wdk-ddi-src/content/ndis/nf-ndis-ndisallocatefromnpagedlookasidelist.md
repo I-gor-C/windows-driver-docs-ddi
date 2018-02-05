@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : df690a05-359d-44f0-b063-4fc21d6c4d76
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatefromnpagedlookasidelist, NdisAllocateFromNPagedLookasideList, NdisAllocateFromNPagedLookasideList macro [Network Drivers Starting with Windows Vista], ndis/NdisAllocateFromNPagedLookasideList, ndis_lookaside_ref_455986e8-a34c-44df-b454-87416d8eccf7.xml
+ms.keywords : NdisAllocateFromNPagedLookasideList macro [Network Drivers Starting with Windows Vista], ndis/NdisAllocateFromNPagedLookasideList, NdisAllocateFromNPagedLookasideList, netvista.ndisallocatefromnpagedlookasidelist, ndis_lookaside_ref_455986e8-a34c-44df-b454-87416d8eccf7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -71,8 +71,8 @@ If the lookaside list is not empty,
     <b>NdisAllocateFromNPagedLookasideList</b> either calls the 
     <i>Allocate</i> function, specified in the 
     <i>Allocate</i> parameter of the 
-    <mshelp:link keywords="netvista.ndisinitializenpagedlookasidelist" tabindex="0"><b>
-    NdisInitializeNPagedLookasideList</b></mshelp:link> function, that the caller specified at list initialization, if
+    <a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
+    NdisInitializeNPagedLookasideList</a> function, that the caller specified at list initialization, if
     any, or it allocates an entry on behalf of the caller. 
     <b>NdisAllocateFromNPagedLookasideList</b> returns <b>NULL</b> if the caller-supplied 
     <i>Allocate</i> function, if any, or if this function itself cannot allocate an nonpaged entry.
@@ -84,31 +84,29 @@ All entries that are allocated from a nonpaged lookaside list are of a fixed siz
     demand. For example, any connection-oriented NDIS driver might allocate the VC context areas that it
     needs from a lookaside list as VCs are created and release each such entry back to the lookaside list
     with the 
-    <mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
-    NdisFreeToNPagedLookasideList</b></mshelp:link> function as each VC is torn down.
+    <a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
+    NdisFreeToNPagedLookasideList</a> function as each VC is torn down.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
-   NdisFreeToNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
+   NdisInitializeNPagedLookasideList</a>
 
-<mshelp:link keywords="netvista.ndisinitializenpagedlookasidelist" tabindex="0"><b>
-   NdisInitializeNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisdeletenpagedlookasidelist.md">
+   NdisDeleteNPagedLookasideList</a>
 
-<mshelp:link keywords="netvista.ndisdeletenpagedlookasidelist" tabindex="0"><b>
-   NdisDeleteNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
+   NdisFreeToNPagedLookasideList</a>
 
  
 

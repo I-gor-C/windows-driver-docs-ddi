@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cbabd178-3496-4851-9acf-f0718eaebdcd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdriver/WDF_DRIVER_INIT_FLAGS, WdfDriverInitNonPnpDriver, wdfdriver/WdfDriverInitNonPnpDriver, WdfVerifyOn, WdfDriverInitNoDispatchOverride, _WDF_DRIVER_INIT_FLAGS, wdfdriver/WdfVerifyOn, WDF_DRIVER_INIT_FLAGS enumeration, wdfdriver/WdfDriverInitNoDispatchOverride, DFDriverObjectRef_a77b530c-fd37-4ffe-a006-7deaa8156040.xml, wdf.wdf_driver_init_flags, wdfdriver/WdfVerifierOn, WDF_DRIVER_INIT_FLAGS, kmdf.wdf_driver_init_flags, WdfVerifierOn
+ms.keywords : wdfdriver/WdfDriverInitNonPnpDriver, wdfdriver/WdfVerifierOn, wdfdriver/WDF_DRIVER_INIT_FLAGS, WDF_DRIVER_INIT_FLAGS, WdfDriverInitNoDispatchOverride, WdfVerifyOn, DFDriverObjectRef_a77b530c-fd37-4ffe-a006-7deaa8156040.xml, WdfVerifierOn, kmdf.wdf_driver_init_flags, _WDF_DRIVER_INIT_FLAGS, WdfDriverInitNonPnpDriver, WDF_DRIVER_INIT_FLAGS enumeration, wdf.wdf_driver_init_flags, wdfdriver/WdfVerifyOn, wdfdriver/WdfDriverInitNoDispatchOverride
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -91,16 +91,15 @@ The WDF_DRIVER_INIT_FLAGS enumeration is used to specify the value for the <b>Dr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
 
 ## See Also
 
-<a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a>
-
 <a href="..\wdfminiport\nf-wdfminiport-wdfdriverminiportunload.md">WdfDriverMiniportUnload</a>
+
+<a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a>
 
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 

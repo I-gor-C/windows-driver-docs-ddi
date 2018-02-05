@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 53ac65ff-56fe-411d-b0d1-174fc875a786
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PWHEA_MEMORY_ERROR_VALIDBITS, _WHEA_MEMORY_ERROR_SECTION_VALIDBITS, whearef_49eab340-c05f-4201-a45d-8602ec121ef3.xml, PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, *PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, whea.whea_memory_error_section_validbits, ntddk/PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, WHEA_MEMORY_ERROR_SECTION_VALIDBITS, PWHEA_MEMORY_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], WHEA_MEMORY_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], WHEA_MEMORY_ERROR_VALIDBITS, ntddk/WHEA_MEMORY_ERROR_SECTION_VALIDBITS"
+ms.keywords : PWHEA_MEMORY_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, whea.whea_memory_error_section_validbits, *PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, WHEA_MEMORY_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], *PWHEA_MEMORY_ERROR_VALIDBITS, _WHEA_MEMORY_ERROR_SECTION_VALIDBITS, ntddk/WHEA_MEMORY_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, WHEA_MEMORY_ERROR_VALIDBITS, whearef_49eab340-c05f-4201-a45d-8602ec121ef3.xml, WHEA_MEMORY_ERROR_SECTION_VALIDBITS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, WHEA_MEMORY_ERROR_SECTION_VALIDBITS"
+req.typenames : WHEA_MEMORY_ERROR_SECTION_VALIDBITS, *PWHEA_MEMORY_ERROR_SECTION_VALIDBITS
 ---
 
 # _WHEA_MEMORY_ERROR_SECTION_VALIDBITS structure
@@ -83,9 +83,7 @@ A WHEA_MEMORY_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

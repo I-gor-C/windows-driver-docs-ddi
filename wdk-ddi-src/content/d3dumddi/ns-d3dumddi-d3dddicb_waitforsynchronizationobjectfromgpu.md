@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2A441CEE-C138-4FF0-8865-04ABFB0F029C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices], display.d3dddicb_waitforsynchronizationobjectfromgpu, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
+ms.keywords : d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices], display.d3dddicb_waitforsynchronizationobjectfromgpu, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

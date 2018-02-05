@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4bbd50a8-1f1f-45d9-9b63-6c1576fe7b98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlisansicharacterlegalfat, ntifs/FsRtlIsAnsiCharacterLegalFat, fsrtlref_9d13203c-5fc4-4f4f-9372-09459f053bbc.xml, FsRtlIsAnsiCharacterLegalFat function [Installable File System Drivers], FsRtlIsAnsiCharacterLegalFat
+ms.keywords : FsRtlIsAnsiCharacterLegalFat function [Installable File System Drivers], fsrtlref_9d13203c-5fc4-4f4f-9372-09459f053bbc.xml, ifsk.fsrtlisansicharacterlegalfat, FsRtlIsAnsiCharacterLegalFat, ntifs/FsRtlIsAnsiCharacterLegalFat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -70,22 +70,18 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | ntifs.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md">FsRtlIsAnsiCharacterLegalNtfs</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalhpfs.md">FsRtlIsAnsiCharacterLegalHpfs</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegal.md">FsRtlIsAnsiCharacterLegal</a>
+
+<a href="..\ntifs\nf-ntifs-fsrtlisansicharacterlegalntfs.md">FsRtlIsAnsiCharacterLegalNtfs</a>
 
  
 

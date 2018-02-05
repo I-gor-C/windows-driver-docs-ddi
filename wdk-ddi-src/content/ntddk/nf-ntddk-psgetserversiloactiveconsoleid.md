@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 66b3c35d-681c-464a-86fa-972825bf3e97
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PsGetServerSiloActiveConsoleId, kernel.psgetserversiloactiveconsoleid, PsGetServerSiloActiveConsoleId, PsGetServerSiloActiveConsoleId method [Kernel-Mode Driver Architecture]
+ms.keywords : PsGetServerSiloActiveConsoleId method [Kernel-Mode Driver Architecture], ntddk/PsGetServerSiloActiveConsoleId, PsGetServerSiloActiveConsoleId, kernel.psgetserversiloactiveconsoleid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,9 @@ Returns the session id for the active console session.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : aa1ccffc-c742-415d-8b72-fef247dff03c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PIO_BLOCK, _IO_BLOCK, image.io_block, usbscan/IO_BLOCK, usbscan/PIO_BLOCK, IO_BLOCK structure [Imaging Devices], stifnc_94187a6f-5c01-4d4a-a852-469f93d891b9.xml, IO_BLOCK, *PIO_BLOCK, PIO_BLOCK structure pointer [Imaging Devices]
+ms.keywords : usbscan/IO_BLOCK, PIO_BLOCK, _IO_BLOCK, stifnc_94187a6f-5c01-4d4a-a852-469f93d891b9.xml, usbscan/PIO_BLOCK, image.io_block, *PIO_BLOCK, IO_BLOCK, PIO_BLOCK structure pointer [Imaging Devices], IO_BLOCK structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ Used as the <b>Value</b> field of a USB Device Request.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |

@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 195B9FA2-F7B2-4EA0-9D53-63E438666760
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO_CLX_ReleaseInterruptLock, gpioclx/GPIO_CLX_ReleaseInterruptLock, GPIO_CLX_ReleaseInterruptLock method [Parallel Ports], GPIO.gpio_clx_releaseinterruptlock
+ms.keywords : gpioclx/GPIO_CLX_ReleaseInterruptLock, GPIO_CLX_ReleaseInterruptLock, GPIO_CLX_ReleaseInterruptLock method [Parallel Ports], GPIO.gpio_clx_releaseinterruptlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,11 @@ If the <i>Context</i> parameter is NULL or points to an invalid GPIO device cont
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | gpioclx.h |
-| **Library** |  |
+| **Library** | Msgpioclxstub.lib |
 | **IRQL** | See Remarks. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

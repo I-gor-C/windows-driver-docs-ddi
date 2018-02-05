@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1dd56465-e9e8-4a79-8533-a1777cf4d8a2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2drawprimitive, d3dstrct_2736a73d-52f8-4647-86c3-2c362dc3f669.xml, d3dhal/LPD3DHAL_DP2DRAWPRIMITIVE, d3dhal/D3DHAL_DP2DRAWPRIMITIVE, LPD3DHAL_DP2DRAWPRIMITIVE structure pointer [Display Devices], D3DHAL_DP2DRAWPRIMITIVE structure [Display Devices], LPD3DHAL_DP2DRAWPRIMITIVE, _D3DHAL_DP2DRAWPRIMITIVE, D3DHAL_DP2DRAWPRIMITIVE, *LPD3DHAL_DP2DRAWPRIMITIVE
+ms.keywords : "*LPD3DHAL_DP2DRAWPRIMITIVE, _D3DHAL_DP2DRAWPRIMITIVE, d3dhal/D3DHAL_DP2DRAWPRIMITIVE, LPD3DHAL_DP2DRAWPRIMITIVE structure pointer [Display Devices], D3DHAL_DP2DRAWPRIMITIVE structure [Display Devices], LPD3DHAL_DP2DRAWPRIMITIVE, D3DHAL_DP2DRAWPRIMITIVE, d3dstrct_2736a73d-52f8-4647-86c3-2c362dc3f669.xml, display.d3dhal_dp2drawprimitive, d3dhal/LPD3DHAL_DP2DRAWPRIMITIVE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,20 +74,17 @@ The vertex data can be untransformed (if the hardware supports hardware vertex p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+D3DDP2OP_DRAWPRIMITIVE
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
 
-D3DDP2OP_DRAWPRIMITIVE
-
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

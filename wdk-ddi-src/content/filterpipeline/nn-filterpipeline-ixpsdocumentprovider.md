@@ -58,8 +58,5 @@ The <code>IxpsDocumentProvider</code> interface provides interfaces to consume p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **DLL** |  |

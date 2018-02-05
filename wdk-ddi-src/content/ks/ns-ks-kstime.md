@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e026a539-7aa5-4205-970d-cf452e4471da
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSTIME structure pointer [Streaming Media Devices], stream.kstime, ks-struct_9db70ddb-ae2c-464b-a481-6927adef449c.xml, ks/KSTIME, KSTIME structure [Streaming Media Devices], PKSTIME, *PKSTIME, KSTIME, ks/PKSTIME
+ms.keywords : ks/PKSTIME, KSTIME, *PKSTIME, KSTIME structure [Streaming Media Devices], stream.kstime, PKSTIME structure pointer [Streaming Media Devices], ks/KSTIME, PKSTIME, ks-struct_9db70ddb-ae2c-464b-a481-6927adef449c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSTIME, KSTIME"
+req.typenames : KSTIME, *PKSTIME
 ---
 
 # KSTIME structure
@@ -71,7 +71,4 @@ Unscaled time stamps are in 100-nanosecond units. A data stream can use differen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

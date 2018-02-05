@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 166584fb-8a81-4a5b-93c9-3ad5348e15a7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisAllocateGenericObject, netvista.ndisallocategenericobject, ndis_object_ref_bb08930d-d264-4580-be64-a48061ab8ad4.xml, NdisAllocateGenericObject function [Network Drivers Starting with Windows Vista], NdisAllocateGenericObject
+ms.keywords : ndis/NdisAllocateGenericObject, NdisAllocateGenericObject function [Network Drivers Starting with Windows Vista], NdisAllocateGenericObject, netvista.ndisallocategenericobject, ndis_object_ref_bb08930d-d264-4580-be64-a48061ab8ad4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,20 +90,18 @@ NDIS drivers must call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function, NdisAllocateGenericObject |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfreegenericobject.md">NdisFreeGenericObject</a>
-
 <a href="..\ndis\ns-ndis-_ndis_generic_object.md">NDIS_GENERIC_OBJECT</a>
+
+<a href="..\ndis\nf-ndis-ndisfreegenericobject.md">NdisFreeGenericObject</a>
 
  
 

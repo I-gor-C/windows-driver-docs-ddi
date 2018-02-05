@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 61173af4-5b6f-47e9-b236-6b45bcd83a9f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_24973f17-426f-492f-ac5e-1f2651dcebd1.xml, NDIS_WWAN_RADIO_STATE, *PNDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_radio_state, PNDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_RADIO_STATE, ndiswwan/PNDIS_WWAN_RADIO_STATE, ndiswwan/NDIS_WWAN_RADIO_STATE
+ms.keywords : NDIS_WWAN_RADIO_STATE, ndiswwan/PNDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_RADIO_STATE, ndiswwan/NDIS_WWAN_RADIO_STATE, _NDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_24973f17-426f-492f-ac5e-1f2651dcebd1.xml, netvista.ndis_wwan_radio_state
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_RADIO_STATE, *PNDIS_WWAN_RADIO_STATE
+req.typenames : "*PNDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE"
 ---
 
 # _NDIS_WWAN_RADIO_STATE structure
@@ -174,16 +174,14 @@ Miniport drivers can set the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_radio_state.md">WWAN_RADIO_STATE</a>
 
  
 

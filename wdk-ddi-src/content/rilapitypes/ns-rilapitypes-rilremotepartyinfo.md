@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0ca17e70-1e50-4b62-89ec-0e92ad6e846b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO, rilapitypes/RILREMOTEPARTYINFO, RILREMOTEPARTYINFO structure [Network Drivers Starting with Windows Vista], netvista.rilremotepartyinfo_2
+ms.keywords : RILREMOTEPARTYINFO, RILREMOTEPARTYINFO structure [Network Drivers Starting with Windows Vista], rilapitypes/RILREMOTEPARTYINFO, netvista.rilremotepartyinfo_2, *LPRILREMOTEPARTYINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,7 +100,4 @@ typedef struct _RILREMOTEPARTYINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

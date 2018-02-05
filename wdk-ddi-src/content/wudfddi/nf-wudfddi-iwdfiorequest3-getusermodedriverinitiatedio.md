@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 41C4E9D2-DC1B-4DFC-8C15-E9C21515B5F0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfiorequest3_getusermodedriverinitiatedio, IWDFIoRequest3, wdf.iwdfiorequest3_getusermodedriverinitiatedio, GetUserModeDriverInitiatedIo method, GetUserModeDriverInitiatedIo, IWDFIoRequest3::GetUserModeDriverInitiatedIo, wudfddi/IWDFIoRequest3::GetUserModeDriverInitiatedIo, IWDFIoRequest3 interface, GetUserModeDriverInitiatedIo method, GetUserModeDriverInitiatedIo method, IWDFIoRequest3 interface
+ms.keywords : GetUserModeDriverInitiatedIo method, GetUserModeDriverInitiatedIo, IWDFIoRequest3, wudfddi/IWDFIoRequest3::GetUserModeDriverInitiatedIo, GetUserModeDriverInitiatedIo method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, GetUserModeDriverInitiatedIo method, umdf.iwdfiorequest3_getusermodedriverinitiatedio, IWDFIoRequest3::GetUserModeDriverInitiatedIo, wdf.iwdfiorequest3_getusermodedriverinitiatedio
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -70,20 +70,18 @@ The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
 
  
 

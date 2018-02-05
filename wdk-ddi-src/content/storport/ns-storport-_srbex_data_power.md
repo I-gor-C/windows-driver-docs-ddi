@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 61F5C316-5214-45A6-B4BA-DEE6A224E811
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/PSRBEX_DATA_POWER, PSRBEX_DATA_POWER, storport/SRBEX_DATA_POWER, *PSRBEX_DATA_POWER, SRBEX_DATA_POWER, storage.srbex_data_power, SRBEX_DATA_POWER structure [Storage Devices], PSRBEX_DATA_POWER structure pointer [Storage Devices], _SRBEX_DATA_POWER
+ms.keywords : storport/SRBEX_DATA_POWER, PSRBEX_DATA_POWER structure pointer [Storage Devices], _SRBEX_DATA_POWER, storport/PSRBEX_DATA_POWER, SRBEX_DATA_POWER structure [Storage Devices], storage.srbex_data_power, SRBEX_DATA_POWER, *PSRBEX_DATA_POWER, PSRBEX_DATA_POWER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSRBEX_DATA_POWER, SRBEX_DATA_POWER"
+req.typenames : SRBEX_DATA_POWER, *PSRBEX_DATA_POWER
 req.product : Windows 10 or later.
 ---
 
@@ -76,7 +76,7 @@ This member is reserved. Set to 0.
 
 `SrbPowerFlags`
 
-Indicates that the power request is for the adapter if SRB_POWER_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>SrbPowerFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
+Indicates that the power request is for the adapter if SRB_POWER_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>SrbPowerFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
 
 `Type`
 
@@ -86,18 +86,16 @@ Data type indicator for the bidirectional extended SRB data structure. Set to <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | storport.h (include Storport.h, Srb.h) |
 
 ## See Also
 
 <a href="..\storport\ne-storport-pstor_power_action.md">STOR_POWER_ACTION</a>
 
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
-
 <a href="..\storport\ne-storport-_stor_device_power_state.md">STOR_DEVICE_POWER_STATE</a>
+
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
  
 

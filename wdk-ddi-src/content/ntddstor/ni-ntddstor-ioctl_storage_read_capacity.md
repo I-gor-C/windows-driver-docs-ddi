@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_READ_CAPACITY IOCTL
@@ -71,9 +71,8 @@ A <b>IOCTL_STORAGE_READ_CAPACITY</b> request returns the disk capacity informati
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntddstor.h (include Ntddstor.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a3df8ce0-4414-49d1-a02c-3f5a3efc0de2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PIDEREGISTERS, IDEREGISTERS structure [Storage Devices], IDEREGISTERS, storage.ideregisters, PIDEREGISTERS structure pointer [Storage Devices], _IDEREGISTERS, structs-ATA_8e024553-553c-4a64-9f74-7259f530b3b5.xml, *PIDEREGISTERS, irb/PIDEREGISTERS, irb/IDEREGISTERS
+ms.keywords : IDEREGISTERS, PIDEREGISTERS structure pointer [Storage Devices], _IDEREGISTERS, storage.ideregisters, PIDEREGISTERS, *PIDEREGISTERS, irb/PIDEREGISTERS, structs-ATA_8e024553-553c-4a64-9f74-7259f530b3b5.xml, IDEREGISTERS structure [Storage Devices], irb/IDEREGISTERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PIDEREGISTERS, IDEREGISTERS"
+req.typenames : IDEREGISTERS, *PIDEREGISTERS
 ---
 
 # _IDEREGISTERS structure
@@ -97,9 +97,6 @@ The information reported in the IDEREGISTERS structure is intended to be a super
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
 ## See Also

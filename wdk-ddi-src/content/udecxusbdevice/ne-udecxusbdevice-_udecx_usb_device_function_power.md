@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7EE6D8AE-E001-4BC9-A617-682202A297E7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUDECX_USB_DEVICE_FUNCTION_POWER enumeration pointer [Buses], UdecxUsbDeviceFunctionNotSuspended, udecxusbdevice/UdecxUsbDeviceFunctionNotSuspended, UDECX_USB_DEVICE_FUNCTION_POWER enumeration [Buses], udecxusbdevice/PUDECX_USB_DEVICE_FUNCTION_POWER, UdecxUsbDeviceFunctionSuspendedCannotWake, udecxusbdevice/UdecxUsbDeviceFunctionSuspendedCanWake, udecxusbdevice/UdecxUsbDeviceFunctionSuspendedCannotWake, _UDECX_USB_DEVICE_FUNCTION_POWER, UdecxUsbDeviceFunctionSuspendedCanWake, PUDECX_USB_DEVICE_FUNCTION_POWER, buses.udecx_usb_device_function_power, *PUDECX_USB_DEVICE_FUNCTION_POWER, UDECX_USB_DEVICE_FUNCTION_POWER, udecxusbdevice/UDECX_USB_DEVICE_FUNCTION_POWER
+ms.keywords : PUDECX_USB_DEVICE_FUNCTION_POWER, udecxusbdevice/UDECX_USB_DEVICE_FUNCTION_POWER, *PUDECX_USB_DEVICE_FUNCTION_POWER, UDECX_USB_DEVICE_FUNCTION_POWER, udecxusbdevice/UdecxUsbDeviceFunctionSuspendedCannotWake, UdecxUsbDeviceFunctionSuspendedCanWake, _UDECX_USB_DEVICE_FUNCTION_POWER, udecxusbdevice/UdecxUsbDeviceFunctionSuspendedCanWake, udecxusbdevice/PUDECX_USB_DEVICE_FUNCTION_POWER, UdecxUsbDeviceFunctionSuspendedCannotWake, udecxusbdevice/UdecxUsbDeviceFunctionNotSuspended, buses.udecx_usb_device_function_power, UdecxUsbDeviceFunctionNotSuspended, UDECX_USB_DEVICE_FUNCTION_POWER enumeration [Buses], PUDECX_USB_DEVICE_FUNCTION_POWER enumeration pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,9 +75,6 @@ typedef enum _UDECX_USB_DEVICE_FUNCTION_POWER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
 ## See Also

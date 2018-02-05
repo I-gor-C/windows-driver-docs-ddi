@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ab30d24f-4f14-4a84-a6e1-1a2506b4ba87
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSOBJECTTYPE, KsObjectTypeFilterFactory, ks/KsObjectTypeFilter, stream.ksobjecttype, KsObjectTypePin, ks/KsObjectTypeDevice, ks/KsObjectTypePin, KSOBJECTTYPE enumeration [Streaming Media Devices], ks/KSOBJECTTYPE, ks-struct_b8010334-0906-4d4b-8c65-b3919b7b8257.xml, ks/KsObjectTypeFilterFactory, KsObjectTypeFilter, KsObjectTypeDevice
+ms.keywords : ks/KsObjectTypePin, stream.ksobjecttype, ks/KsObjectTypeDevice, KSOBJECTTYPE enumeration [Streaming Media Devices], KsObjectTypeFilterFactory, ks/KsObjectTypeFilter, ks/KSOBJECTTYPE, KSOBJECTTYPE, KsObjectTypeDevice, ks/KsObjectTypeFilterFactory, KsObjectTypeFilter, ks-struct_b8010334-0906-4d4b-8c65-b3919b7b8257.xml, KsObjectTypePin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,22 +80,19 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetconnectedpinfileobject.md">KsPinGetConnectedPinFileObject</a>
+<a href="..\ks\nf-ks-ksgetfilterfromfileobject.md">KsGetFilterFromFileObject</a>
 
 <a href="..\ks\nf-ks-ksgetobjecttypefromfileobject.md">KsGetObjectTypeFromFileObject</a>
 
-<a href="..\ks\nf-ks-ksgetfilterfromfileobject.md">KsGetFilterFromFileObject</a>
-
-<a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
+<a href="..\ks\nf-ks-kspingetconnectedpinfileobject.md">KsPinGetConnectedPinFileObject</a>
 
 <a href="..\ks\nf-ks-ksgetpinfromfileobject.md">KsGetPinFromFileObject</a>
+
+<a href="..\ks\nf-ks-ksgetobjectfromfileobject.md">KsGetObjectFromFileObject</a>
 
  
 

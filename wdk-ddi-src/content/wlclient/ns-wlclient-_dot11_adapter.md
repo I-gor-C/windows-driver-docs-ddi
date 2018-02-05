@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dae4c499-86c7-4f2b-bd5a-df2a62cdb77f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_0575eb35-d3de-41ad-a956-1714e642b8b5.xml, DOT11_ADAPTER, _DOT11_ADAPTER, wlclient/DOT11_ADAPTER, PDOT11_ADAPTER, PDOT11_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_adapter, wlclient/PDOT11_ADAPTER, DOT11_ADAPTER structure [Network Drivers Starting with Windows Vista], *PDOT11_ADAPTER
+ms.keywords : wlclient/DOT11_ADAPTER, DOT11_ADAPTER, DOT11_ADAPTER structure [Network Drivers Starting with Windows Vista], netvista.dot11_adapter, _DOT11_ADAPTER, PDOT11_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], wlclient/PDOT11_ADAPTER, *PDOT11_ADAPTER, Native_802.11_data_types_0575eb35-d3de-41ad-a956-1714e642b8b5.xml, PDOT11_ADAPTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,8 +60,8 @@ typedef struct _DOT11_ADAPTER {
 The current Native 802.11 operation mode of the miniport driver instance that manages the WLAN
      adapter. The value of 
      <b>Dot11CurrentOpMode</b> is formatted as a 
-     <mshelp:link keywords="netvista.dot11_current_operation_mode" tabindex="0"><b>
-     DOT11_CURRENT_OPERATION_MODE</b></mshelp:link> value.
+     <a href="..\windot11\ns-windot11-_dot11_current_operation_mode.md">
+     DOT11_CURRENT_OPERATION_MODE</a> value.
 
 `gAdapterId`
 
@@ -79,19 +79,17 @@ The operating system calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlclient.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
 
 <a href="..\windot11\ns-windot11-_dot11_current_operation_mode.md">DOT11_CURRENT_OPERATION_MODE</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c1525604-3aee-464d-a7f5-a6a4739a2aa4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/CcMdlReadComplete, CcMdlReadComplete routine [Installable File System Drivers], ifsk.ccmdlreadcomplete, ccref_9739ef62-748c-43c6-ae79-ae54f2358368.xml, CcMdlReadComplete
+ms.keywords : CcMdlReadComplete, ifsk.ccmdlreadcomplete, ccref_9739ef62-748c-43c6-ae79-ae54f2358368.xml, ntifs/CcMdlReadComplete, CcMdlReadComplete routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,11 @@ Each call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff5391
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

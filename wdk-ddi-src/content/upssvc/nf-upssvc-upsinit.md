@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : abcb1f9c-3de3-430c-87e0-6648d60ca420
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UPSInit, upssvc/UPSInit, UPSInit function [Battery Devices], battery.upsinit, UPS_fns_855934b9-5f74-4308-9bed-5fd85d039247.xml
+ms.keywords : UPSInit function [Battery Devices], upssvc/UPSInit, UPSInit, battery.upsinit, UPS_fns_855934b9-5f74-4308-9bed-5fd85d039247.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -146,14 +146,9 @@ Beginning the monitoring of the UPS unit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

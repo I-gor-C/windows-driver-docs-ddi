@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d1ad512e-10ba-4266-9688-2fc8e63bb4c4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_MSGCDMALANG_ENGLISH, RIL_MSGCDMALANG_ENGLISH, rilapitypes/RIL_MSGCDMALANG_CHINESE, RIL_MSGCDMALANG_MAX, rilapitypes/RILMSGCDMALANGUAGE, RILMSGCDMALANGUAGE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_MSGCDMALANG_KOREAN, rilapitypes/RIL_MSGCDMALANG_MAX, RIL_MSGCDMALANG_JAPANESE, rilapitypes/RIL_MSGCDMALANG_JAPANESE, RIL_MSGCDMALANG_HEBREW, rilapitypes/RIL_MSGCDMALANG_HEBREW, rilapitypes/RIL_MSGCDMALANG_FRENCH, RIL_MSGCDMALANG_CHINESE, RILMSGCDMALANGUAGE, netvista.rilmsgcdmalanguage_2, RIL_MSGCDMALANG_FRENCH, RIL_MSGCDMALANG_KOREAN, RIL_MSGCDMALANG_SPANISH, rilapitypes/RIL_MSGCDMALANG_SPANISH
+ms.keywords : RIL_MSGCDMALANG_ENGLISH, rilapitypes/RIL_MSGCDMALANG_FRENCH, RIL_MSGCDMALANG_SPANISH, rilapitypes/RIL_MSGCDMALANG_JAPANESE, rilapitypes/RIL_MSGCDMALANG_CHINESE, netvista.rilmsgcdmalanguage_2, RIL_MSGCDMALANG_FRENCH, RIL_MSGCDMALANG_KOREAN, RIL_MSGCDMALANG_JAPANESE, RIL_MSGCDMALANG_MAX, RILMSGCDMALANGUAGE, RIL_MSGCDMALANG_HEBREW, rilapitypes/RIL_MSGCDMALANG_HEBREW, rilapitypes/RILMSGCDMALANGUAGE, rilapitypes/RIL_MSGCDMALANG_KOREAN, rilapitypes/RIL_MSGCDMALANG_ENGLISH, rilapitypes/RIL_MSGCDMALANG_SPANISH, rilapitypes/RIL_MSGCDMALANG_MAX, RILMSGCDMALANGUAGE enumeration [Network Drivers Starting with Windows Vista], RIL_MSGCDMALANG_CHINESE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -110,7 +110,4 @@ typedef enum _RILMSGCDMALANGUAGE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

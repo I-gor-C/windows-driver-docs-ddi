@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 912DCC1E-2C81-4702-8E12-6331DFB298F0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : "*PFA_ENTRY, FA_ENTRY, debugger.fa_entry, FA_ENTRY structure [Windows Debugging], _FA_ENTRY, extsfns/FA_ENTRY"
+ms.keywords : extsfns/FA_ENTRY, FA_ENTRY structure [Windows Debugging], _FA_ENTRY, *PFA_ENTRY, FA_ENTRY, debugger.fa_entry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ A value in the <a href="https://docs.microsoft.com/en-us/windows-hardware/driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | extsfns.h |
 
 ## See Also

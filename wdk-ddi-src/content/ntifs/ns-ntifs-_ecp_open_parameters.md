@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ecp_open_parameters, ntifs/PECP_OPEN_PARAMETERS, _ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS, ntifs/ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS structure [Installable File System Drivers], PECP_OPEN_PARAMETERS structure pointer [Installable File System Drivers]
+ms.keywords : ntifs/PECP_OPEN_PARAMETERS, ifsk.ecp_open_parameters, *PECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS structure pointer [Installable File System Drivers], ECP_OPEN_PARAMETERS structure [Installable File System Drivers], ntifs/ECP_OPEN_PARAMETERS, _ECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,7 +91,5 @@ Specifies the size of this context structure, in bytes.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntifs.h (include Ntifs.h) |

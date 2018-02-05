@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILALPHAIDENTIFIER, RILALPHAIDENTIFIER"
+req.typenames : RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER
 req.product : Windows 10 or later.
 ---
 
@@ -75,7 +75,4 @@ typedef struct _RILALPHAIDENTIFIER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

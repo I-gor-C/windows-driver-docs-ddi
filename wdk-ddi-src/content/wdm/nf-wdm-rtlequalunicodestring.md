@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ba50fcac-acb1-43de-aacc-b47845f19f44
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlEqualUnicodeString, kernel.rtlequalunicodestring, RtlEqualUnicodeString routine [Kernel-Mode Driver Architecture], RtlEqualUnicodeString, k109_59d7c507-968a-4cf5-b1f0-91c8cd7ccb64.xml
+ms.keywords : k109_59d7c507-968a-4cf5-b1f0-91c8cd7ccb64.xml, RtlEqualUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlequalunicodestring, RtlEqualUnicodeString, wdm/RtlEqualUnicodeString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

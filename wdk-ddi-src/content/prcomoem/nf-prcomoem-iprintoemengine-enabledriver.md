@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 638E4FBE-8F53-4509-BFAE-59C02D2D1C4B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : EnableDriver method [Print Devices], IPrintOemEngine interface, IPrintOemEngine::EnableDriver, EnableDriver method [Print Devices], EnableDriver, IPrintOemEngine interface [Print Devices], EnableDriver method, prcomoem/IPrintOemEngine::EnableDriver, IPrintOemEngine, print.iprintoemengine_enabledriver
+ms.keywords : IPrintOemEngine, EnableDriver method [Print Devices], IPrintOemEngine interface [Print Devices], EnableDriver method, EnableDriver, prcomoem/IPrintOemEngine::EnableDriver, print.iprintoemengine_enabledriver, EnableDriver method [Print Devices], IPrintOemEngine interface, IPrintOemEngine::EnableDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,14 +76,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | prcomoem.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | prcomoem.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E18AD58C-74D0-4CA7-9EE5-F96863F88E26
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_BDCB_STATUS_UPDATE_TYPE, ntddk/BdCbStatusPrepareForDependecyLoad, BdCbStatusPrepareForDependecyLoad, ntddk/BDCB_STATUS_UPDATE_TYPE, kernel.bdcb_status_update_type, BDCB_STATUS_UPDATE_TYPE, BDCB_STATUS_UPDATE_TYPE enumeration [Kernel-Mode Driver Architecture], BdCbStatusPrepareForDriverLoad, ntddk/BdCbStatusPrepareForDriverLoad, ntddk/BdCbStatusPrepareForUnload, *PBDCB_STATUS_UPDATE_TYPE, BdCbStatusPrepareForUnload"
+ms.keywords : BdCbStatusPrepareForUnload, BDCB_STATUS_UPDATE_TYPE enumeration [Kernel-Mode Driver Architecture], BdCbStatusPrepareForDependecyLoad, ntddk/BdCbStatusPrepareForDependecyLoad, BdCbStatusPrepareForDriverLoad, _BDCB_STATUS_UPDATE_TYPE, ntddk/BDCB_STATUS_UPDATE_TYPE, ntddk/BdCbStatusPrepareForDriverLoad, *PBDCB_STATUS_UPDATE_TYPE, BDCB_STATUS_UPDATE_TYPE, ntddk/BdCbStatusPrepareForUnload, kernel.bdcb_status_update_type
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BDCB_STATUS_UPDATE_TYPE, *PBDCB_STATUS_UPDATE_TYPE
+req.typenames : "*PBDCB_STATUS_UPDATE_TYPE, BDCB_STATUS_UPDATE_TYPE"
 ---
 
 # _BDCB_STATUS_UPDATE_TYPE Enumeration
@@ -74,16 +74,14 @@ typedef enum _BDCB_STATUS_UPDATE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">BOOT_DRIVER_CALLBACK_FUNCTION</a>
-
 <a href="..\ntddk\ns-ntddk-_bdcb_status_update_context.md">BDCB_STATUS_UPDATE_CONTEXT</a>
+
+<a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">BOOT_DRIVER_CALLBACK_FUNCTION</a>
 
  
 

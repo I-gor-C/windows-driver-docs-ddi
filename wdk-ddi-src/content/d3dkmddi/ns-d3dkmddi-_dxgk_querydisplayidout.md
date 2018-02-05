@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BF528089-0194-4A3F-B8BA-85F80974C4C2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_querydisplayidout, DXGK_QUERYDISPLAYIDOUT, _DXGK_QUERYDISPLAYIDOUT, DXGK_QUERYDISPLAYIDOUT structure [Display Devices], d3dkmddi/DXGK_QUERYDISPLAYIDOUT
+ms.keywords : "_DXGK_QUERYDISPLAYIDOUT, d3dkmddi/DXGK_QUERYDISPLAYIDOUT, display.dxgk_querydisplayidout, DXGK_QUERYDISPLAYIDOUT, DXGK_QUERYDISPLAYIDOUT structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ A pointer to the descriptor of the ID.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

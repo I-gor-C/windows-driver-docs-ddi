@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3bd11885-2c33-4d4d-b9e8-8eff79eb9c61
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : usbcamdi/USBCAMD_ControlVendorCommand, USBCAMD_ControlVendorCommand, stream.usbcamd_controlvendorcommand, usbcmdpr_71f3fad0-03ef-4328-90cf-d556de6736f5.xml, USBCAMD_ControlVendorCommand function [Streaming Media Devices]
+ms.keywords : stream.usbcamd_controlvendorcommand, usbcmdpr_71f3fad0-03ef-4328-90cf-d556de6736f5.xml, USBCAMD_ControlVendorCommand, usbcamdi/USBCAMD_ControlVendorCommand, USBCAMD_ControlVendorCommand function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,14 +137,10 @@ This function may be called at IRQL &gt;= PASSIVE_LEVEL. If the function is call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
-| **Library** |  |
+| **Library** | Usbcamd2.lib |
 | **IRQL** | ">= PASSIVE_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

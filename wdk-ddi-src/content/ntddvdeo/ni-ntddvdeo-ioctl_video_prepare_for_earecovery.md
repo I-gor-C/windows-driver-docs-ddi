@@ -71,6 +71,4 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
-| **IRQL** |  |

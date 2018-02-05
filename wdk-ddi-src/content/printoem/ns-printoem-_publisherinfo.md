@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6749b2e8-a9db-48a3-96e1-8592bcfa580d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PPUBLISHERINFO, printoem/PUBLISHERINFO, print.publisherinfo, *PPUBLISHERINFO, printoem/PPUBLISHERINFO, PUBLISHERINFO, PPUBLISHERINFO structure pointer [Print Devices], print_unidrv-pscript_rendering_dbd3e74a-00bd-4c21-80e5-80b788f83bb2.xml, _PUBLISHERINFO, PUBLISHERINFO structure [Print Devices]
+ms.keywords : printoem/PPUBLISHERINFO, PPUBLISHERINFO, *PPUBLISHERINFO, _PUBLISHERINFO, print_unidrv-pscript_rendering_dbd3e74a-00bd-4c21-80e5-80b788f83bb2.xml, PUBLISHERINFO, printoem/PUBLISHERINFO, PUBLISHERINFO structure [Print Devices], print.publisherinfo, PPUBLISHERINFO structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PUBLISHERINFO, *PPUBLISHERINFO
+req.typenames : "*PPUBLISHERINFO, PUBLISHERINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -70,9 +70,6 @@ Specifies the minimum font size, in pixels, for which the Pscript5 driver will d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

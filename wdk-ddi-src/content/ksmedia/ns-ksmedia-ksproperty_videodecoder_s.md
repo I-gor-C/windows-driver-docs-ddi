@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9444835d-0290-49e7-8f49-a1506ce282cd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_VIDEODECODER_S, ksmedia/PKSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEODECODER_S, stream.ksproperty_videodecoder_s, PKSPROPERTY_VIDEODECODER_S structure pointer [Streaming Media Devices], *PKSPROPERTY_VIDEODECODER_S, PKSPROPERTY_VIDEODECODER_S, vidcapstruct_fbca2e77-2e08-4a96-932d-706a7e8b9a2a.xml
+ms.keywords : PKSPROPERTY_VIDEODECODER_S structure pointer [Streaming Media Devices], stream.ksproperty_videodecoder_s, KSPROPERTY_VIDEODECODER_S, ksmedia/KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S, PKSPROPERTY_VIDEODECODER_S, ksmedia/PKSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S structure [Streaming Media Devices], vidcapstruct_fbca2e77-2e08-4a96-932d-706a7e8b9a2a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S"
+req.typenames : KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S
 ---
 
 # KSPROPERTY_VIDEODECODER_S structure
@@ -66,20 +66,17 @@ The KSPROPERTY_VIDEODECODER_S structure is shared among the KSPROPERTY_VIDEODECO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566051">KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566058">KSPROPERTY_VIDEODECODER_STANDARD</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566062">KSPROPERTY_VIDEODECODER_VCR_TIMING</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566058">KSPROPERTY_VIDEODECODER_STANDARD</a>
 
  
 

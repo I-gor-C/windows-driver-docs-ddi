@@ -76,6 +76,4 @@ The function controller initiates a transfer in the IN direction on the endpoint
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h |
-| **IRQL** |  |

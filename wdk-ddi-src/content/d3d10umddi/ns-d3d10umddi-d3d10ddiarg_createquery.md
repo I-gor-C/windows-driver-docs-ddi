@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1042f401-fbdd-47ee-8cfc-1bca331ac722
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDIARG_CREATEQUERY, D3D10DDIARG_CREATEQUERY structure [Display Devices], display.d3d10ddiarg_createquery, UMDisplayDriver_Dx10param_Structs_92f45053-c4aa-4bcd-b2ab-570aaf95cfe3.xml, D3D10DDIARG_CREATEQUERY
+ms.keywords : D3D10DDIARG_CREATEQUERY, display.d3d10ddiarg_createquery, D3D10DDIARG_CREATEQUERY structure [Display Devices], d3d10umddi/D3D10DDIARG_CREATEQUERY, UMDisplayDriver_Dx10param_Structs_92f45053-c4aa-4bcd-b2ab-570aaf95cfe3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,18 +66,16 @@ The Direct3D runtime calls the user-mode display driver's <a href="..\d3d10umddi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatequerysize.md">CalcPrivateQuerySize</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
 
  
 

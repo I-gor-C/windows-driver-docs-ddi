@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9ee3d748-f9aa-43d6-b472-7b55d2034fc7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestwdmformatusingstacklocation, WdfRequestWdmFormatUsingStackLocation method, kmdf.wdfrequestwdmformatusingstacklocation, DFRequestObjectRef_a210a31a-e3a5-4bbd-af19-5be5f7651757.xml, wdfrequest/WdfRequestWdmFormatUsingStackLocation, WdfRequestWdmFormatUsingStackLocation, PFN_WDFREQUESTWDMFORMATUSINGSTACKLOCATION
+ms.keywords : wdf.wdfrequestwdmformatusingstacklocation, wdfrequest/WdfRequestWdmFormatUsingStackLocation, WdfRequestWdmFormatUsingStackLocation, PFN_WDFREQUESTWDMFORMATUSINGSTACKLOCATION, DFRequestObjectRef_a210a31a-e3a5-4bbd-af19-5be5f7651757.xml, kmdf.wdfrequestwdmformatusingstacklocation, WdfRequestWdmFormatUsingStackLocation method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,12 +84,10 @@ For more information about <b>WdfRequestWdmFormatUsingStackLocation</b>, see <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, RequestFormattedValid |
 

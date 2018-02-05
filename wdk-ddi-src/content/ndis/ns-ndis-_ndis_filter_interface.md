@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0a765829-3558-48ea-b788-7cce6c4b64c6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/PNDIS_FILTER_INTERFACE, NDIS_FILTER_INTERFACE, PNDIS_FILTER_INTERFACE, *PNDIS_FILTER_INTERFACE, _NDIS_FILTER_INTERFACE, PNDIS_FILTER_INTERFACE structure pointer [Network Drivers Starting with Windows Vista], filter_structures_ref_ec1f81f5-4aac-4e69-a8e1-96bc0c5f9958.xml, NDIS_FILTER_INTERFACE structure [Network Drivers Starting with Windows Vista], netvista.ndis_filter_interface, ndis/NDIS_FILTER_INTERFACE
+ms.keywords : PNDIS_FILTER_INTERFACE structure pointer [Network Drivers Starting with Windows Vista], NDIS_FILTER_INTERFACE, PNDIS_FILTER_INTERFACE, ndis/NDIS_FILTER_INTERFACE, ndis/PNDIS_FILTER_INTERFACE, _NDIS_FILTER_INTERFACE, netvista.ndis_filter_interface, *PNDIS_FILTER_INTERFACE, NDIS_FILTER_INTERFACE structure [Network Drivers Starting with Windows Vista], filter_structures_ref_ec1f81f5-4aac-4e69-a8e1-96bc0c5f9958.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,14 +95,14 @@ The behavior type for the filter. This type must be one of the following values:
 
 
 
-#### NdisFilterTypeMonitoring = 1
-
-A monitoring filter.
-
-
 #### NdisFilterTypeModifying = 2
 
 A modifying filter.
+
+
+#### NdisFilterTypeMonitoring = 1
+
+A monitoring filter.
 
 `Flags`
 
@@ -123,14 +123,15 @@ The filter is implemented in an NDIS 5.1 or earlier filter intermediate driver.
 The filter is implemented in an NDIS 6.0 or later filter driver.
 
 
-#### NDIS_FILTER_INTERFACE_SEND_BYPASS
-
-The filter is currently not attached to the send path.  This flag is only set if <b>Header.Revision</b> is greater than or equal to NDIS_FILTER_INTERFACE_REVISION_2.
-
-
 #### NDIS_FILTER_INTERFACE_RECEIVE_BYPASS
 
 The filter is currently not attached to the receive path.  This flag is only set if <b>Header.Revision</b> is greater than or equal to NDIS_FILTER_INTERFACE_REVISION_2.
+
+
+
+#### NDIS_FILTER_INTERFACE_SEND_BYPASS
+
+The filter is currently not attached to the send path.  This flag is only set if <b>Header.Revision</b> is greater than or equal to NDIS_FILTER_INTERFACE_REVISION_2.
 
 `Header`
 
@@ -159,8 +160,8 @@ The
 
 ## Remarks
 The 
-    <mshelp:link keywords="netvista.ndisenumeratefiltermodules" tabindex="0"><b>
-    NdisEnumerateFilterModules</b></mshelp:link> function returns one NDIS_FILTER_INTERFACE structure for each filter in
+    <a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">
+    NdisEnumerateFilterModules</a> function returns one NDIS_FILTER_INTERFACE structure for each filter in
     the driver stack. The 
     <b>Flags</b> member identifies the filter as an NDIS 5.1 or earlier filter intermediate driver or an NDIS
     6.0 or later NDIS filter module.
@@ -170,18 +171,16 @@ A light-weight filter may dynamically insert or remove itself from the send or r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
 <a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">NdisEnumerateFilterModules</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

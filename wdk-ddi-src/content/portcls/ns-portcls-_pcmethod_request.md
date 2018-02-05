@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : aa48330b-93f0-4fb2-bb36-4e9050f19be5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PPCMETHOD_REQUEST structure pointer [Audio Devices], _PCMETHOD_REQUEST, PCMETHOD_REQUEST structure [Audio Devices], portcls/PPCMETHOD_REQUEST, audio.pcmethod_request, portcls/PCMETHOD_REQUEST, *PPCMETHOD_REQUEST, PPCMETHOD_REQUEST, audpc-struct_08efa6de-5d0e-445b-9402-563604dd8d5d.xml, PCMETHOD_REQUEST
+ms.keywords : PPCMETHOD_REQUEST, PCMETHOD_REQUEST structure [Audio Devices], audio.pcmethod_request, *PPCMETHOD_REQUEST, portcls/PPCMETHOD_REQUEST, audpc-struct_08efa6de-5d0e-445b-9402-563604dd8d5d.xml, PCMETHOD_REQUEST, portcls/PCMETHOD_REQUEST, _PCMETHOD_REQUEST, PPCMETHOD_REQUEST structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -119,16 +119,13 @@ The WDM audio subsystem does not currently support method requests.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
-
 <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_4.md">PCMETHOD_ITEM</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
 
  
 

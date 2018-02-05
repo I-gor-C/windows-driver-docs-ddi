@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E34E8B3E-787D-4C6A-9F40-AD6728063AD9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_COMPONENT_PERF_STATE_REQUEST, pepfx/PEP_COMPONENT_PERF_STATE_REQUEST, pepfx/PPEP_COMPONENT_PERF_STATE_REQUEST, *PPEP_COMPONENT_PERF_STATE_REQUEST, kernel.pep_component_perf_state_request, PPEP_COMPONENT_PERF_STATE_REQUEST structure pointer [Kernel-Mode Driver Architecture], PEP_COMPONENT_PERF_STATE_REQUEST structure [Kernel-Mode Driver Architecture], _PEP_COMPONENT_PERF_STATE_REQUEST, PEP_COMPONENT_PERF_STATE_REQUEST
+ms.keywords : PPEP_COMPONENT_PERF_STATE_REQUEST structure pointer [Kernel-Mode Driver Architecture], PPEP_COMPONENT_PERF_STATE_REQUEST, pepfx/PPEP_COMPONENT_PERF_STATE_REQUEST, pepfx/PEP_COMPONENT_PERF_STATE_REQUEST, kernel.pep_component_perf_state_request, PEP_COMPONENT_PERF_STATE_REQUEST, PEP_COMPONENT_PERF_STATE_REQUEST structure [Kernel-Mode Driver Architecture], *PPEP_COMPONENT_PERF_STATE_REQUEST, _PEP_COMPONENT_PERF_STATE_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_COMPONENT_PERF_STATE_REQUEST, *PPEP_COMPONENT_PERF_STATE_REQUEST
+req.typenames : "*PPEP_COMPONENT_PERF_STATE_REQUEST, PEP_COMPONENT_PERF_STATE_REQUEST"
 ---
 
 # _PEP_COMPONENT_PERF_STATE_REQUEST structure
@@ -65,9 +65,7 @@ The <b>PerfRequests</b> member of the <a href="..\pepfx\ns-pepfx-_pep_request_co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

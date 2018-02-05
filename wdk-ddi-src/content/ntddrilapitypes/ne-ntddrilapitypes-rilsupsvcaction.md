@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 14c9b97d-7f3f-45ef-9be2-c36495c69081
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_SUPSVCACTION_ERASE, netvista.rilsupsvcaction, ntddrilapitypes/RIL_SUPSVCACTION_DEACTIVATE, RIL_SUPSVCACTION_REGISTER_PW, RIL_SUPSVCACTION_INTERROGATE, ntddrilapitypes/RIL_SUPSVCACTION_REGISTER_PW, ntddrilapitypes/RIL_SUPSVCACTION_USSD, ntddrilapitypes/RILSUPSVCACTION, ntddrilapitypes/RIL_SUPSVCACTION_MAX, RIL_SUPSVCACTION_ERASE, RIL_SUPSVCACTION_USSD, RILSUPSVCACTION, RIL_SUPSVCACTION_REGISTER, ntddrilapitypes/RIL_SUPSVCACTION_INTERROGATE, RIL_SUPSVCACTION_MAX, RILSUPSVCACTION enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_SUPSVCACTION_REGISTER, RIL_SUPSVCACTION_DEACTIVATE
+ms.keywords : RIL_SUPSVCACTION_INTERROGATE, ntddrilapitypes/RIL_SUPSVCACTION_MAX, ntddrilapitypes/RIL_SUPSVCACTION_REGISTER_PW, RIL_SUPSVCACTION_REGISTER, RIL_SUPSVCACTION_MAX, ntddrilapitypes/RIL_SUPSVCACTION_DEACTIVATE, RIL_SUPSVCACTION_REGISTER_PW, RIL_SUPSVCACTION_USSD, ntddrilapitypes/RIL_SUPSVCACTION_USSD, netvista.rilsupsvcaction, RIL_SUPSVCACTION_DEACTIVATE, ntddrilapitypes/RIL_SUPSVCACTION_ERASE, RIL_SUPSVCACTION_ERASE, ntddrilapitypes/RILSUPSVCACTION, ntddrilapitypes/RIL_SUPSVCACTION_INTERROGATE, RILSUPSVCACTION, RILSUPSVCACTION enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_SUPSVCACTION_REGISTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -103,7 +103,4 @@ typedef enum _RILSUPSVCACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

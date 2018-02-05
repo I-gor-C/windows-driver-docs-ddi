@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : efb3617d-86be-4380-ad1a-0a333d248168
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFIORESOURCEREQUIREMENTSLISTAPPENDIORESLIST, kmdf.wdfioresourcerequirementslistappendioreslist, WdfIoResourceRequirementsListAppendIoResList, wdf.wdfioresourcerequirementslistappendioreslist, wdfresource/WdfIoResourceRequirementsListAppendIoResList, WdfIoResourceRequirementsListAppendIoResList method, DFResourceObjectRef_1d064295-4660-4112-9512-9c5ff7196485.xml
+ms.keywords : wdf.wdfioresourcerequirementslistappendioreslist, DFResourceObjectRef_1d064295-4660-4112-9512-9c5ff7196485.xml, wdfresource/WdfIoResourceRequirementsListAppendIoResList, WdfIoResourceRequirementsListAppendIoResList method, PFN_WDFIORESOURCEREQUIREMENTSLISTAPPENDIORESLIST, WdfIoResourceRequirementsListAppendIoResList, kmdf.wdfioresourcerequirementslistappendioreslist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -117,12 +117,10 @@ For more information about resource requirements lists, see <a href="https://doc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

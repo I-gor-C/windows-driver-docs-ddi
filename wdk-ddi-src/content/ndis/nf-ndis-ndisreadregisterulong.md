@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 18812c18-ec5e-4e8e-9ecf-c3c2a58ca8a2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisReadRegisterUlong macro [Network Drivers Starting with Windows Vista], ndis/NdisReadRegisterUlong, miniport_register_ref_44b40f81-b21f-4b5c-b875-deb9b4bd62ab.xml, NdisReadRegisterUlong, netvista.ndisreadregisterulong
+ms.keywords : NdisReadRegisterUlong macro [Network Drivers Starting with Windows Vista], NdisReadRegisterUlong, miniport_register_ref_44b40f81-b21f-4b5c-b875-deb9b4bd62ab.xml, netvista.ndisreadregisterulong, ndis/NdisReadRegisterUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -78,18 +78,15 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisreadregisteruchar.md">NdisReadRegisterUchar</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 
 <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 
@@ -97,7 +94,7 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 
 <a href="..\ndis\nf-ndis-ndisreadregisterushort.md">NdisReadRegisterUshort</a>
 
-<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
+<a href="..\ndis\nf-ndis-ndisreadregisteruchar.md">NdisReadRegisterUchar</a>
 
  
 

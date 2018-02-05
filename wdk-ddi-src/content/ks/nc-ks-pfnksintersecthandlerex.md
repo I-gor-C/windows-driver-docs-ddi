@@ -106,28 +106,22 @@ The minidriver specifies this routine's address in the <b>IntersectHandler</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ks.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspindataintersectionex.md">KsPinDataIntersectionEx</a>
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565198">KSPROPERTY_PIN_DATAINTERSECTION</a>
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
-
 <a href="..\ks\ns-ks-ksp_pin.md">KSP_PIN</a>
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="..\ks\nf-ks-kspindataintersectionex.md">KsPinDataIntersectionEx</a>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
 
  
 

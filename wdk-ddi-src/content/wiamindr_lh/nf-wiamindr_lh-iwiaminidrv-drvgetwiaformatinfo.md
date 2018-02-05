@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : f0b7d982-735f-489c-b9f8-81a287f6722a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv::drvGetWiaFormatInfo, MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo, image.iwiaminidrv_drvgetwiaformatinfo
+ms.keywords : MiniDrv_6c0cb527-6884-4b7d-a7cc-0e09c1774b7f.xml, IWiaMiniDrv, IWiaMiniDrv::drvGetWiaFormatInfo, drvGetWiaFormatInfo, drvGetWiaFormatInfo method [Imaging Devices], drvGetWiaFormatInfo method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetwiaformatinfo, IWiaMiniDrv interface [Imaging Devices], drvGetWiaFormatInfo method, wiamindr_lh/IWiaMiniDrv::drvGetWiaFormatInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -93,22 +93,18 @@ The minidriver can define a global array to hold the WIA_FORMAT_INFO structures,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543972">IWiaMiniDrv::drvFreeDrvItemContext</a>
-
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543972">IWiaMiniDrv::drvFreeDrvItemContext</a>
 
  
 

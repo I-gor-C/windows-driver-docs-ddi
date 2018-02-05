@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 019cc9b7-13f7-4925-af98-5df0e8556e1c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeBuildTransport, rxref_8251916d-7a85-4e6d-8ca1-2deacf4a389a.xml, ifsk.rxcebuildtransport, RxCeBuildTransport function [Installable File System Drivers], rxce/RxCeBuildTransport
+ms.keywords : RxCeBuildTransport, ifsk.rxcebuildtransport, rxce/RxCeBuildTransport, RxCeBuildTransport function [Installable File System Drivers], rxref_8251916d-7a85-4e6d-8ca1-2deacf4a389a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -109,14 +109,10 @@ The connection engine routines in RDBSS do not participate in the computation of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

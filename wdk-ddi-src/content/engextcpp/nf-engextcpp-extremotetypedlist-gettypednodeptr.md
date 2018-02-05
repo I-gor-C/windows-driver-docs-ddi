@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3bf50952-7ac9-4c6b-9318-dd64748de9d2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetTypedNodePtr method [Windows Debugging], ExtRemoteTypedList class, GetTypedNodePtr method [Windows Debugging], ExtRemoteTypedList::GetTypedNodePtr, debugger.extremotetypedlist_gettypednodeptr, EngExtCpp_Ref_f007b7c1-89b0-43fa-95e3-792a3272b56d.xml, GetTypedNodePtr, ExtRemoteTypedList, ExtRemoteTypedList class [Windows Debugging], GetTypedNodePtr method
+ms.keywords : GetTypedNodePtr method [Windows Debugging], ExtRemoteTypedList class, ExtRemoteTypedList class [Windows Debugging], GetTypedNodePtr method, GetTypedNodePtr method [Windows Debugging], ExtRemoteTypedList, debugger.extremotetypedlist_gettypednodeptr, ExtRemoteTypedList::GetTypedNodePtr, GetTypedNodePtr, EngExtCpp_Ref_f007b7c1-89b0-43fa-95e3-792a3272b56d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -60,11 +60,6 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |

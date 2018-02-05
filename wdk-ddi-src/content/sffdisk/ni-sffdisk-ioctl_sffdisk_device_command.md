@@ -150,6 +150,4 @@ If the operation fails, <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | sffdisk.h (include Sffdisk.h) |
-| **IRQL** |  |

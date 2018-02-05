@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ec6e75e8-f24a-4d76-b6e1-af35b5402f91
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.nmrwaitforproviderderegistercomplete, nmrref_bd063787-0438-49de-9816-e5a110528d54.xml, NmrWaitForProviderDeregisterComplete function [Network Drivers Starting with Windows Vista], netioddk/NmrWaitForProviderDeregisterComplete, NmrWaitForProviderDeregisterComplete
+ms.keywords : NmrWaitForProviderDeregisterComplete function [Network Drivers Starting with Windows Vista], NmrWaitForProviderDeregisterComplete, netvista.nmrwaitforproviderderegistercomplete, nmrref_bd063787-0438-49de-9816-e5a110528d54.xml, netioddk/NmrWaitForProviderDeregisterComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,14 +137,11 @@ A provider module typically calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

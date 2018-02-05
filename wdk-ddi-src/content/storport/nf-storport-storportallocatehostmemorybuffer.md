@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : B8413B02-32A6-40AE-9DD2-C25AD2D2D45C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortAllocateHostMemoryBuffer, storage.storportallocatehostmemorybuffer, StorPortAllocateHostMemoryBuffer routine [Storage Devices], storport/StorPortAllocateHostMemoryBuffer
+ms.keywords : storage.storportallocatehostmemorybuffer, StorPortAllocateHostMemoryBuffer routine [Storage Devices], storport/StorPortAllocateHostMemoryBuffer, StorPortAllocateHostMemoryBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -174,14 +174,9 @@ The caller should subsequently call <a href="https://msdn.microsoft.com/686D141E
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

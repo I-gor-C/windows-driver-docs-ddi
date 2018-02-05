@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aeafa20c-e4be-4b6d-88b7-22b84ef4cedd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfmemory/WdfMemoryCreateFromLookaside, kmdf.wdfmemorycreatefromlookaside, wdf.wdfmemorycreatefromlookaside, DFMemoryObjectRef_0eabcdc7-a75d-49bf-9fe4-775748fca8bf.xml, WdfMemoryCreateFromLookaside, WdfMemoryCreateFromLookaside method, PFN_WDFMEMORYCREATEFROMLOOKASIDE
+ms.keywords : wdf.wdfmemorycreatefromlookaside, PFN_WDFMEMORYCREATEFROMLOOKASIDE, WdfMemoryCreateFromLookaside, DFMemoryObjectRef_0eabcdc7-a75d-49bf-9fe4-775748fca8bf.xml, kmdf.wdfmemorycreatefromlookaside, wdfmemory/WdfMemoryCreateFromLookaside, WdfMemoryCreateFromLookaside method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,24 +116,22 @@ If lookaside-list buffers are being allocated from the pageable memory pool, the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfmemory.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatepreallocated.md">WdfMemoryCreatePreallocated</a>
-
-<a href="..\wdfmemory\nf-wdfmemory-wdflookasidelistcreate.md">WdfLookasideListCreate</a>
-
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
 
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatepreallocated.md">WdfMemoryCreatePreallocated</a>
+
 <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
+
+<a href="..\wdfmemory\nf-wdfmemory-wdflookasidelistcreate.md">WdfLookasideListCreate</a>
 
  
 

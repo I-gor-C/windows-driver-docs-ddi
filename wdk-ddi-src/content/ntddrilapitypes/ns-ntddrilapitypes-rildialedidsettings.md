@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e68ed118-76c7-44ff-a10f-dc64f1ce2d0e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rildialedidsettings, RILDIALEDIDSETTINGS, ntddrilapitypes/RILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS structure [Network Drivers Starting with Windows Vista], *LPRILDIALEDIDSETTINGS
+ms.keywords : RILDIALEDIDSETTINGS structure [Network Drivers Starting with Windows Vista], netvista.rildialedidsettings, ntddrilapitypes/RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS
+req.typenames : "*LPRILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS"
 ---
 
 # RILDIALEDIDSETTINGS structure
@@ -79,7 +79,4 @@ typedef struct _RILDIALEDIDSETTINGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

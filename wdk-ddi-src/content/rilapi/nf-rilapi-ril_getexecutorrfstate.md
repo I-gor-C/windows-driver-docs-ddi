@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2ef0961b-4f7c-46a8-8cfa-aabbfc213565
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetExecutorRFState, RIL_GetExecutorRFState method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetExecutorRFState, netvista.ril_getexecutorrfstate
+ms.keywords : RIL_GetExecutorRFState method [Network Drivers Starting with Windows Vista], netvista.ril_getexecutorrfstate, RIL_GetExecutorRFState, rilapi/RIL_GetExecutorRFState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FA3365DC-B604-468E-AACD-AC006D2B4EAF
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSCAMERA_METADATA_PHOTOCONFIRMATION, stream.kscamera_metadata_photoconfirmation, PKSCAMERA_METADATA_PHOTOCONFIRMATION, PKSCAMERA_METADATA_PHOTOCONFIRMATION structure pointer [Streaming Media Devices], KSCAMERA_METADATA_PHOTOCONFIRMATION structure [Streaming Media Devices], ksmedia/KSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/PKSCAMERA_METADATA_PHOTOCONFIRMATION, tagKSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION
+ms.keywords : PKSCAMERA_METADATA_PHOTOCONFIRMATION, PKSCAMERA_METADATA_PHOTOCONFIRMATION structure pointer [Streaming Media Devices], KSCAMERA_METADATA_PHOTOCONFIRMATION structure [Streaming Media Devices], KSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/PKSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, tagKSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/KSCAMERA_METADATA_PHOTOCONFIRMATION, stream.kscamera_metadata_photoconfirmation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION
+req.typenames : "*PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION"
 ---
 
 # tagKSCAMERA_METADATA_PHOTOCONFIRMATION structure
@@ -69,7 +69,4 @@ Reserved for future use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

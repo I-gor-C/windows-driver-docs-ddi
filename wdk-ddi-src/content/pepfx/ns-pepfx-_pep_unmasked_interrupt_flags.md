@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A385FBF9-2222-49E0-A708-1638C0D2FF7A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, _PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture]
+ms.keywords : pepfx/PEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture], PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, _PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,7 @@ The <b>Flags</b> member of the <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrup
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

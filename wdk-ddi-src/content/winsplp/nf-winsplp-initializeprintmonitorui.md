@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : baa80f8c-68ed-43a3-8c82-79a4388f9ab6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : InitializePrintMonitorUI function [Print Devices], winsplp/InitializePrintMonitorUI, print.initializeprintmonitorui, InitializePrintMonitorUI, spoolfnc_927446a6-117a-4585-8ce0-9a4b543c4037.xml
+ms.keywords : InitializePrintMonitorUI, spoolfnc_927446a6-117a-4585-8ce0-9a4b543c4037.xml, print.initializeprintmonitorui, InitializePrintMonitorUI function [Print Devices], winsplp/InitializePrintMonitorUI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,9 @@ Port monitor UI DLLs are required to export an <b>InitializePrintMonitorUI</b> f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

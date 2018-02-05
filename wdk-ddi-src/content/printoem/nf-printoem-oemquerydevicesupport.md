@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 38e1bb07-be98-494b-a9c9-a83edef367e0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMQueryDeviceSupport, OEMQueryDeviceSupport function [Print Devices], printoem/OEMQueryDeviceSupport, print_unidrv-pscript_rendering_9bfec781-8785-4ff6-8abf-6e14233827dc.xml, print.oemquerydevicesupport
+ms.keywords : OEMQueryDeviceSupport, printoem/OEMQueryDeviceSupport, print_unidrv-pscript_rendering_9bfec781-8785-4ff6-8abf-6e14233827dc.xml, OEMQueryDeviceSupport function [Print Devices], print.oemquerydevicesupport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,11 +101,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

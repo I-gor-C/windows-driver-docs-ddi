@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 847987d4-f67b-4e88-9a8d-9be4ad9be80d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_HYPERVISOR_INFO, ntddndis/NDIS_HYPERVISOR_INFO, NDIS_HYPERVISOR_INFO structure [Network Drivers Starting with Windows Vista], virtual_machine_queue_ref_c0f9611a-2d20-4757-ba59-16bf6a83549c.xml, NDIS_HYPERVISOR_INFO, PNDIS_HYPERVISOR_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_hypervisor_info, *PNDIS_HYPERVISOR_INFO, _NDIS_HYPERVISOR_INFO, ntddndis/PNDIS_HYPERVISOR_INFO
+ms.keywords : ntddndis/PNDIS_HYPERVISOR_INFO, NDIS_HYPERVISOR_INFO, ntddndis/NDIS_HYPERVISOR_INFO, virtual_machine_queue_ref_c0f9611a-2d20-4757-ba59-16bf6a83549c.xml, PNDIS_HYPERVISOR_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_HYPERVISOR_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_HYPERVISOR_INFO, *PNDIS_HYPERVISOR_INFO, PNDIS_HYPERVISOR_INFO, netvista.ndis_hypervisor_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,8 +88,8 @@ Set the <b>Size</b> member to NDIS_SIZEOF_HYPERVISOR_INFO_REVISION_1.
 `PartitionType`
 
 An 
-     <mshelp:link keywords="netvista.ndis_hypervisor_partition_type" tabindex="0"><b>
-     NDIS_HYPERVISOR_PARTITION_TYPE</b></mshelp:link> enumeration value that specifies the partition type that is running
+     <a href="..\ntddndis\ne-ntddndis-_ndis_hypervisor_partition_type.md">
+     NDIS_HYPERVISOR_PARTITION_TYPE</a> enumeration value that specifies the partition type that is running
      on the hypervisor.
 
 ## Remarks
@@ -102,18 +102,16 @@ NDIS drivers pass this structure to the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_hypervisor_partition_type.md">NDIS_HYPERVISOR_PARTITION_TYPE</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ndis\nf-ndis-ndisgethypervisorinfo.md">NdisGetHypervisorInfo Function</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_hypervisor_partition_type.md">NDIS_HYPERVISOR_PARTITION_TYPE</a>
 
  
 

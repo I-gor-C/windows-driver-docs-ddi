@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A0EB188E-D5C7-4C7B-A462-2C3792825FD8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionCancel method, kmdf.wdfdmatransactioncancel, PFN_WDFDMATRANSACTIONCANCEL, WdfDmaTransactionCancel, wdf.wdfdmatransactioncancel, wdfdmatransaction/WdfDmaTransactionCancel
+ms.keywords : WdfDmaTransactionCancel method, PFN_WDFDMATRANSACTIONCANCEL, WdfDmaTransactionCancel, kmdf.wdfdmatransactioncancel, wdfdmatransaction/WdfDmaTransactionCancel, wdf.wdfdmatransactioncancel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,12 +90,11 @@ A driver must request use of DMA version 3 prior to calling  <b>WdfDmaTransactio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

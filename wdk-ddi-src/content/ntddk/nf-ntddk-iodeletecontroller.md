@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bfab32ea-05fd-44c7-b264-221e4e3a7830
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iodeletecontroller, k104_c4d57e2c-d596-4c3d-a912-48792010837e.xml, IoDeleteController, IoDeleteController routine [Kernel-Mode Driver Architecture], ntddk/IoDeleteController
+ms.keywords : kernel.iodeletecontroller, k104_c4d57e2c-d596-4c3d-a912-48792010837e.xml, ntddk/IoDeleteController, IoDeleteController routine [Kernel-Mode Driver Architecture], IoDeleteController
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,12 +72,11 @@ A driver must release certain resources for which the driver supplied storage in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

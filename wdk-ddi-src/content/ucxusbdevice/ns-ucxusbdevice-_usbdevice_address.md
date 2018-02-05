@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2CD37F1E-B96A-4D18-A756-2B9E3CB8613B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxusbdevice/_USBDEVICE_ADDRESS, buses._usbdevice_address, ucxusbdevice/P_USBDEVICE_ADDRESS, P_USBDEVICE_ADDRESS structure pointer [Buses], USBDEVICE_ADDRESS structure [Buses], USBDEVICE_ADDRESS, P_USBDEVICE_ADDRESS, _USBDEVICE_ADDRESS, *PUSBDEVICE_ADDRESS
+ms.keywords : P_USBDEVICE_ADDRESS structure pointer [Buses], buses._usbdevice_address, ucxusbdevice/P_USBDEVICE_ADDRESS, ucxusbdevice/_USBDEVICE_ADDRESS, *PUSBDEVICE_ADDRESS, USBDEVICE_ADDRESS structure [Buses], P_USBDEVICE_ADDRESS, USBDEVICE_ADDRESS, _USBDEVICE_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,6 @@ Do not use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also

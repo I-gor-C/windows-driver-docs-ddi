@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F0B014F3-AE40-466B-BD9A-0D01DF70DCFF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.udecxurbcomplete, UdecxUrbComplete, UdecxUrbComplete function [Buses], udecxurb/UdecxUrbComplete
+ms.keywords : UdecxUrbComplete, buses.udecxurbcomplete, UdecxUrbComplete function [Buses], udecxurb/UdecxUrbComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
+req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
 req.product : Windows 10 or later.
 ---
 
@@ -71,14 +71,12 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxurb.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -84,14 +84,10 @@ In the <i>DriverEntry</i> routine of the KCS example, the <i>KcsGeometricWaveCal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
-| **Library** |  |
 | **IRQL** | <=APC_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5bbebf1f-ca0f-44b7-a5cd-f06b637aa3de
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/DelayedWorkQueue, WORK_QUEUE_TYPE, kernel.work_queue_type, MaximumWorkQueue, wdm/SuperCriticalWorkQueue, wdm/NormalWorkQueue, wdm/HyperCriticalWorkQueue, DelayedWorkQueue, HyperCriticalWorkQueue, WORK_QUEUE_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/CustomPriorityWorkQueue, sysenum_5bc5bb84-a8c7-46af-982e-37b8ec51723f.xml, _WORK_QUEUE_TYPE, SuperCriticalWorkQueue, RealTimeWorkQueue, wdm/RealTimeWorkQueue, CriticalWorkQueue, NormalWorkQueue, CustomPriorityWorkQueue, wdm/CriticalWorkQueue, BackgroundWorkQueue, wdm/WORK_QUEUE_TYPE, wdm/MaximumWorkQueue, wdm/BackgroundWorkQueue
+ms.keywords : wdm/WORK_QUEUE_TYPE, wdm/BackgroundWorkQueue, WORK_QUEUE_TYPE, kernel.work_queue_type, WORK_QUEUE_TYPE enumeration [Kernel-Mode Driver Architecture], RealTimeWorkQueue, wdm/DelayedWorkQueue, NormalWorkQueue, wdm/SuperCriticalWorkQueue, CustomPriorityWorkQueue, sysenum_5bc5bb84-a8c7-46af-982e-37b8ec51723f.xml, _WORK_QUEUE_TYPE, CriticalWorkQueue, SuperCriticalWorkQueue, BackgroundWorkQueue, wdm/CustomPriorityWorkQueue, wdm/CriticalWorkQueue, wdm/MaximumWorkQueue, MaximumWorkQueue, DelayedWorkQueue, wdm/NormalWorkQueue, HyperCriticalWorkQueue, wdm/HyperCriticalWorkQueue, wdm/RealTimeWorkQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -121,16 +121,13 @@ For more information about system worker threads, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
-
 <a href="..\wdm\nf-wdm-ioqueueworkitemex.md">IoQueueWorkItemEx</a>
+
+<a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn683917">IoTryQueueWorkItem</a>
 

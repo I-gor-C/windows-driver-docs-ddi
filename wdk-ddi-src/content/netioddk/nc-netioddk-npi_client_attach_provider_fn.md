@@ -73,8 +73,8 @@ A pointer to the client module's registration context. The client module passes 
 `ProviderRegistrationInstance`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.npi_registration_instance" tabindex="0"><b>
-     NPI_REGISTRATION_INSTANCE</b></mshelp:link> structure. This structure contains the provider module's registration
+     <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">
+     NPI_REGISTRATION_INSTANCE</a> structure. This structure contains the provider module's registration
      data.
 
 
@@ -161,8 +161,8 @@ If the client module determines that it will not attach to the provider module, 
 </ul>If the client module successfully attaches to the provider module, it must save the handle provided in
     the 
     <i>NmrBindingHandle</i> parameter. The client module passes this handle as a parameter to the 
-    <mshelp:link keywords="netvista.nmrclientdetachprovidercomplete" tabindex="0"><b>
-    NmrClientDetachProviderComplete</b></mshelp:link> function when it detaches from the provider module.
+    <a href="..\netioddk\nf-netioddk-nmrclientdetachprovidercomplete.md">
+    NmrClientDetachProviderComplete</a> function when it detaches from the provider module.
 
 The NMR calls a client module's 
     <i>ClientAttachProvider</i> callback function at IRQL = PASSIVE_LEVEL.
@@ -170,29 +170,25 @@ The NMR calls a client module's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Windows |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
-
-<a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
-
-<mshelp:link keywords="netvista.nmrclientdetachprovidercomplete" tabindex="0"><b>
-   NmrClientDetachProviderComplete</b></mshelp:link>
+<a href="..\netioddk\nf-netioddk-nmrclientdetachprovidercomplete.md">
+   NmrClientDetachProviderComplete</a>
 
 <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">NPI_REGISTRATION_INSTANCE</a>
 
-<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
+<a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
 
 <a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
+
+<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
+
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 
  
 

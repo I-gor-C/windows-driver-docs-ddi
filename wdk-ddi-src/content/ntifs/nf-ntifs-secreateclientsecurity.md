@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 10aadf41-79c4-46d6-a5ae-e8b3b5f338f0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.secreateclientsecurity, SeCreateClientSecurity, ntifs/SeCreateClientSecurity, seref_3b2ae680-788b-4ecb-b747-427f8fd3b4bf.xml, SeCreateClientSecurity routine [Installable File System Drivers]
+ms.keywords : SeCreateClientSecurity, seref_3b2ae680-788b-4ecb-b747-427f8fd3b4bf.xml, SeCreateClientSecurity routine [Installable File System Drivers], ifsk.secreateclientsecurity, ntifs/SeCreateClientSecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,14 +126,11 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

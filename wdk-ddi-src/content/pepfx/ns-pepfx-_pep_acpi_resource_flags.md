@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1BB4933B-2707-4350-8D9C-E0E25A85F5CB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_ACPI_RESOURCE_FLAGS, PPEP_ACPI_RESOURCE_FLAGS, pepfx/PPEP_ACPI_RESOURCE_FLAGS, pepfx/PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, _PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS union [Kernel-Mode Driver Architecture], PPEP_ACPI_RESOURCE_FLAGS union pointer [Kernel-Mode Driver Architecture], kernel.pep_acpi_resource_flags"
+ms.keywords : PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS union [Kernel-Mode Driver Architecture], PPEP_ACPI_RESOURCE_FLAGS union pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS, pepfx/PEP_ACPI_RESOURCE_FLAGS, _PEP_ACPI_RESOURCE_FLAGS, kernel.pep_acpi_resource_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
+req.typenames : "*PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS"
 ---
 
 # _PEP_ACPI_RESOURCE_FLAGS structure
@@ -72,7 +72,5 @@ A structure containing ACPI resource flags.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |

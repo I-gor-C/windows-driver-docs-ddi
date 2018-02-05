@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cb5bfd4f-e45a-4894-acb4-0ece2de91510
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFREQUESTCOMPLETE, WdfRequestComplete method, wdf.wdfrequestcomplete, WdfRequestComplete, kmdf.wdfrequestcomplete, wdfrequest/WdfRequestComplete, DFRequestObjectRef_e723fb4c-f8f2-4eb9-9152-7f7ac74329df.xml
+ms.keywords : wdfrequest/WdfRequestComplete, DFRequestObjectRef_e723fb4c-f8f2-4eb9-9152-7f7ac74329df.xml, WdfRequestComplete, PFN_WDFREQUESTCOMPLETE, wdf.wdfrequestcomplete, kmdf.wdfrequestcomplete, WdfRequestComplete method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,14 +67,14 @@ An <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTS
 
 
 
-#### STATUS_SUCCESS
-
-The driver is successfully completing the request.
-
-
 #### STATUS_CANCELLED
 
 The driver is canceling the request.
+
+
+#### STATUS_SUCCESS
+
+The driver is successfully completing the request.
 
 
 #### STATUS_UNSUCCESSFUL
@@ -107,28 +107,27 @@ For more information about calling <b>WdfRequestComplete</b>, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedReadA, BufAfterReqCompletedWrite, BufAfterReqCompletedWriteA, CompleteCanceledReq, DeferredRequestCompleted, DoubleCompletion, DoubleCompletionLocal, DriverCreate, EvtIoStopCancel, EvtIoStopCompleteOrStopAck, EvtSurpriseRemoveNoRequestComplete, InvalidReqAccess, KmdfIrql, KmdfIrql2, MarkCancOnCancReqLocal, MdlAfterReqCompletedIntIoctl, MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctl, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedRead, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWrite, MdlAfterReqCompletedWriteA, MemAfterReqCompletedIntIoctl, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctl, MemAfterReqCompletedIoctlA, MemAfterReqCompletedRead, MemAfterReqCompletedReadA, MemAfterReqCompletedWrite, MemAfterReqCompletedWriteA, NoCancelFromEvtSurpriseRemove, ReqDelete, ReqIsCancOnCancReq, ReqNotCanceledLocal, ReqSendFail, RequestCompleted, RequestCompletedLocal |
 
 ## See Also
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a>
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithpriorityboost.md">WdfRequestCompleteWithPriorityBoost</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetstatus.md">WdfRequestGetStatus</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetstatus.md">WdfRequestGetStatus</a>
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548758">WdfObjectReference</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithpriorityboost.md">WdfRequestCompleteWithPriorityBoost</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f9d441a5-46b5-4da8-aa7e-f4f45eb733d4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : ddfncs_72fbedfa-d63f-462a-a6c4-862c6815f1c1.xml, DxApiGetVersion, dxapi/DxApiGetVersion, display.dxapigetversion, DxApiGetVersion function [Display Devices]
+ms.keywords : DxApiGetVersion, ddfncs_72fbedfa-d63f-462a-a6c4-862c6815f1c1.xml, DxApiGetVersion function [Display Devices], dxapi/DxApiGetVersion, display.dxapigetversion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRMRIGHTS, *PDRMRIGHTS
+req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 
@@ -62,22 +62,17 @@ Returns the major and minor version numbers of Direct Sound as 4 and 2 respectiv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dxapi.h (include Dxapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Dxapi.lib |
 
 ## See Also
 
-<a href="..\dxapi\nf-dxapi-dxapi.md">DxApi</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550637">DD_DXAPI_GETVERSIONNUMBER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549530">DDGETVERSIONNUMBER</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550637">DD_DXAPI_GETVERSIONNUMBER</a>
+<a href="..\dxapi\nf-dxapi-dxapi.md">DxApi</a>
 
  
 

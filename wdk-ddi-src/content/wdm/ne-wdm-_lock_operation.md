@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25b2dd6a-2e20-4221-bef4-0001bbaae1d5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : LOCK_OPERATION enumeration [Installable File System Drivers], IoReadAccess, IoWriteAccess, wdm/IoWriteAccess, wdm/LOCK_OPERATION, wdm/IoModifyAccess, ifsk.lock_operation, wdm/IoReadAccess, _LOCK_OPERATION, LOCK_OPERATION, IoModifyAccess
+ms.keywords : wdm/IoReadAccess, IoModifyAccess, LOCK_OPERATION, wdm/IoModifyAccess, IoWriteAccess, _LOCK_OPERATION, wdm/IoWriteAccess, IoReadAccess, LOCK_OPERATION enumeration [Installable File System Drivers], ifsk.lock_operation, wdm/LOCK_OPERATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,16 +75,14 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating system. Available in Windows 2000 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
-
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
 
  
 

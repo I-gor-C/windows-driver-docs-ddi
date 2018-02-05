@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fb1bd1dd-feab-4aa4-8b4f-932f0d5ec4ab
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_DEBUG_REPORT_INTERFACE, display.dxgk_debug_report_interface, *PDXGK_DEBUG_REPORT_INTERFACE, dispmprt/PDXGK_DEBUG_REPORT_INTERFACE, PDXGK_DEBUG_REPORT_INTERFACE structure pointer [Display Devices], dispmprt/DXGK_DEBUG_REPORT_INTERFACE, _DXGK_DEBUG_REPORT_INTERFACE, DmStructs_b6b70526-c889-47d8-bfb7-7f961cbcef38.xml, PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE structure [Display Devices]
+ms.keywords : dispmprt/DXGK_DEBUG_REPORT_INTERFACE, display.dxgk_debug_report_interface, DXGK_DEBUG_REPORT_INTERFACE structure [Display Devices], dispmprt/PDXGK_DEBUG_REPORT_INTERFACE, DmStructs_b6b70526-c889-47d8-bfb7-7f961cbcef38.xml, PDXGK_DEBUG_REPORT_INTERFACE structure pointer [Display Devices], *PDXGK_DEBUG_REPORT_INTERFACE, _DXGK_DEBUG_REPORT_INTERFACE, PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE"
+req.typenames : DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE
 ---
 
 # _DXGK_DEBUG_REPORT_INTERFACE structure
@@ -105,7 +105,5 @@ The display miniport driver supplies the <b>Size</b> and <b>Version</b> members 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |

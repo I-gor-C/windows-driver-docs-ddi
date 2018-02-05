@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E55CDAF9-2711-4DC6-8BED-EDB0D78D9158
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CmCallbackGetKeyObjectIDEx routine [Kernel-Mode Driver Architecture], kernel.cmcallbackgetkeyobjectidex, wdm/CmCallbackGetKeyObjectIDEx, CmCallbackGetKeyObjectIDEx
+ms.keywords : wdm/CmCallbackGetKeyObjectIDEx, CmCallbackGetKeyObjectIDEx routine [Kernel-Mode Driver Architecture], CmCallbackGetKeyObjectIDEx, kernel.cmcallbackgetkeyobjectidex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,28 +122,26 @@ For more information about registry filter drivers, see <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
+<a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
+
+<a href="..\wdm\nf-wdm-cmcallbackreleasekeyobjectidex.md">CmCallbackReleaseKeyObjectIDEx</a>
 
 <a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectid.md">CmCallbackGetKeyObjectID</a>
 
-<a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
 
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-<a href="..\wdm\nf-wdm-cmcallbackreleasekeyobjectidex.md">CmCallbackReleaseKeyObjectIDEx</a>
 
  
 

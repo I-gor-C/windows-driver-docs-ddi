@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b9c74a56-3f2c-4b94-8fb2-6b44075ec34b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsRegisterWorker, stream.ksregisterworker, ksfunc_c2cb48b6-6268-4d53-a81b-07c1984f80aa.xml, ks/KsRegisterWorker, KsRegisterWorker function [Streaming Media Devices]
+ms.keywords : stream.ksregisterworker, KsRegisterWorker function [Streaming Media Devices], ksfunc_c2cb48b6-6268-4d53-a81b-07c1984f80aa.xml, KsRegisterWorker, ks/KsRegisterWorker
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,11 +77,6 @@ The <b>KsRegisterWorker</b> function returns STATUS_SUCCESS if a worker was init
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

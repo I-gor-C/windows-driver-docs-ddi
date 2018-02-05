@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2d4ac375-ede9-406e-bac0-9caa2273c91a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SetBindingSupport routine [Storage Devices], storage.hba_setbindingsupport, fibreHBA_rtns_5adce4be-2d9d-4e53-ab21-3a15810153d7.xml, HBA_SetBindingSupport, hbaapi/HBA_SetBindingSupport
+ms.keywords : hbaapi/HBA_SetBindingSupport, HBA_SetBindingSupport, HBA_SetBindingSupport routine [Storage Devices], storage.hba_setbindingsupport, fibreHBA_rtns_5adce4be-2d9d-4e53-ab21-3a15810153d7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,14 +136,10 @@ Returned if an unspecified error occurred that prevented the routine from enabli
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

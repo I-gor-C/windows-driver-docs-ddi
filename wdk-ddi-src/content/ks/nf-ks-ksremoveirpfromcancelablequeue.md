@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6bc23364-07c9-4a01-b475-e4620f62a674
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsRemoveIrpFromCancelableQueue, KsRemoveIrpFromCancelableQueue, ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml, KsRemoveIrpFromCancelableQueue function [Streaming Media Devices], stream.ksremoveirpfromcancelablequeue
+ms.keywords : KsRemoveIrpFromCancelableQueue, KsRemoveIrpFromCancelableQueue function [Streaming Media Devices], stream.ksremoveirpfromcancelablequeue, ks/KsRemoveIrpFromCancelableQueue, ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,14 +102,9 @@ typedef enum {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

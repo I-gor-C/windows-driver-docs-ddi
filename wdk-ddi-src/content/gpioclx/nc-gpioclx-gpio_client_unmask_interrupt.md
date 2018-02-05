@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
+req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 
@@ -80,14 +80,10 @@ The <i>CLIENT_UnmaskInterrupt</i> function is called from the interrupt service 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | gpioclx.h |
-| **Library** |  |
 | **IRQL** | See Remarks. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

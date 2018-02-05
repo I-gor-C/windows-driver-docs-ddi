@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fa9fedc5-cacc-409a-99f5-7103b5424b3c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PAVC_SUBUNIT_ADDR_SPEC, AVC_SUBUNIT_ADDR_SPEC, stream.avc_subunit_addr_spec, avc/AVC_SUBUNIT_ADDR_SPEC, *PAVC_SUBUNIT_ADDR_SPEC, _AVC_SUBUNIT_ADDR_SPEC, PAVC_SUBUNIT_ADDR_SPEC structure pointer [Streaming Media Devices], AVC_SUBUNIT_ADDR_SPEC structure [Streaming Media Devices], avcref_56141f06-dd51-40cb-874a-ec136ec7683f.xml, avc/PAVC_SUBUNIT_ADDR_SPEC
+ms.keywords : PAVC_SUBUNIT_ADDR_SPEC, _AVC_SUBUNIT_ADDR_SPEC, *PAVC_SUBUNIT_ADDR_SPEC, avc/AVC_SUBUNIT_ADDR_SPEC, avcref_56141f06-dd51-40cb-874a-ec136ec7683f.xml, AVC_SUBUNIT_ADDR_SPEC, stream.avc_subunit_addr_spec, AVC_SUBUNIT_ADDR_SPEC structure [Streaming Media Devices], avc/PAVC_SUBUNIT_ADDR_SPEC, PAVC_SUBUNIT_ADDR_SPEC structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,9 +90,6 @@ A Subunit Address encoded according to Section 5.3.3 of the AV/C Digital Interfa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | avc.h (include Avc.h) |
 
 ## See Also

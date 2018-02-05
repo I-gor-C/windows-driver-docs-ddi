@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 82567434-be54-4436-a26e-9a89a532addf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCompareUnicodeString routine [Kernel-Mode Driver Architecture], k109_ddeef320-7510-446b-af6f-756c3999bec1.xml, kernel.rtlcompareunicodestring, wdm/RtlCompareUnicodeString, RtlCompareUnicodeString
+ms.keywords : RtlCompareUnicodeString, kernel.rtlcompareunicodestring, wdm/RtlCompareUnicodeString, k109_ddeef320-7510-446b-af6f-756c3999bec1.xml, RtlCompareUnicodeString routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,20 +115,18 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlequalstring.md">RtlEqualString</a>
-
 <a href="..\ntddk\nf-ntddk-rtlcomparestring.md">RtlCompareString</a>
+
+<a href="..\ntddk\nf-ntddk-rtlequalstring.md">RtlEqualString</a>
 
  
 

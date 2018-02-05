@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 68C7C46B-AFDB-449D-99B5-1F9A5A9AFFA4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/IoSetMasterIrpStatus, kernel.iosetmasterirpstatus, IoSetMasterIrpStatus, IoSetMasterIrpStatus routine [Kernel-Mode Driver Architecture]
+ms.keywords : IoSetMasterIrpStatus routine [Kernel-Mode Driver Architecture], ntddk/IoSetMasterIrpStatus, kernel.iosetmasterirpstatus, IoSetMasterIrpStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,12 @@ As a general rule, <b>IoSetMasterIrpStatus</b> replaces the status code in <i>PI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

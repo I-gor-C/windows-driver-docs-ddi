@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a64645da-e11a-4568-9865-64eb7463892c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl2::GetEngineOptions, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetEngineOptions method, GetEngineOptions method [Windows Debugging], IDebugControl interface, GetEngineOptions method [Windows Debugging], IDebugControl3 interface, GetEngineOptions method [Windows Debugging], IDebugControl3 interface [Windows Debugging], GetEngineOptions method, IDebugControl_75edd4f2-c81d-408d-a61a-3c2fcf5932e6.xml, dbgeng/IDebugControl3::GetEngineOptions, GetEngineOptions, GetEngineOptions method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetEngineOptions, dbgeng/IDebugControl2::GetEngineOptions, IDebugControl::GetEngineOptions, debugger.getengineoptions, dbgeng/IDebugControl::GetEngineOptions, IDebugControl interface [Windows Debugging], GetEngineOptions method
+ms.keywords : GetEngineOptions method [Windows Debugging], IDebugControl2 interface, GetEngineOptions method [Windows Debugging], GetEngineOptions method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], GetEngineOptions method, dbgeng/IDebugControl3::GetEngineOptions, IDebugControl3::GetEngineOptions, IDebugControl_75edd4f2-c81d-408d-a61a-3c2fcf5932e6.xml, IDebugControl3, GetEngineOptions, IDebugControl interface [Windows Debugging], GetEngineOptions method, dbgeng/IDebugControl2::GetEngineOptions, dbgeng/IDebugControl::GetEngineOptions, IDebugControl::GetEngineOptions, debugger.getengineoptions, IDebugControl3 interface [Windows Debugging], GetEngineOptions method, GetEngineOptions method [Windows Debugging], IDebugControl3 interface, IDebugControl2::GetEngineOptions
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,26 +82,21 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554491">RemoveEngineOptions</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537884">AddEngineOptions</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556670">SetEngineOptions</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554491">RemoveEngineOptions</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 

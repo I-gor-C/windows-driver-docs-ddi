@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D5C9EF42-B6FE-4472-8188-2B23F87FA475
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_PERF_STATE, PEP_PERF_STATE structure [Kernel-Mode Driver Architecture], kernel.pep_perf_state, PPEP_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_PERF_STATE, PPEP_PERF_STATE, *PPEP_PERF_STATE, pepfx/PEP_PERF_STATE, _PEP_PERF_STATE
+ms.keywords : pepfx/PEP_PERF_STATE, PEP_PERF_STATE, _PEP_PERF_STATE, *PPEP_PERF_STATE, kernel.pep_perf_state, PPEP_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_PERF_STATE, pepfx/PPEP_PERF_STATE, PEP_PERF_STATE structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,7 @@ Device drivers use the <a href="..\wdm\ns-wdm-_po_fx_perf_state.md">PO_FX_PERF_S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

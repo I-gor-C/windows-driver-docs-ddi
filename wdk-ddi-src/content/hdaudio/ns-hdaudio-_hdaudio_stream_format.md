@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 475b7774-51ce-410d-aba8-a2317f44ce03
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.hdaudio_stream_format, HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, hdaudio/PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT structure [Audio Devices], PHDAUDIO_STREAM_FORMAT, _HDAUDIO_STREAM_FORMAT, hdaudio/HDAUDIO_STREAM_FORMAT, aud-prop2_80d1ef47-903a-4f6e-95c7-e30f07b105fe.xml, PHDAUDIO_STREAM_FORMAT structure pointer [Audio Devices]
+ms.keywords : "*PHDAUDIO_STREAM_FORMAT, hdaudio/HDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT structure pointer [Audio Devices], aud-prop2_80d1ef47-903a-4f6e-95c7-e30f07b105fe.xml, _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT structure [Audio Devices], hdaudio/PHDAUDIO_STREAM_FORMAT, audio.hdaudio_stream_format, PHDAUDIO_STREAM_FORMAT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,20 +78,17 @@ This structure is similar to the <a href="..\ksmedia\ns-ksmedia-waveformatextens
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
 ## See Also
 
-<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_converter_format.md">HDAUDIO_CONVERTER_FORMAT</a>
 
 <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
 
-<a href="..\hdaudio\ns-hdaudio-_hdaudio_converter_format.md">HDAUDIO_CONVERTER_FORMAT</a>
-
 <a href="..\hdaudio\nc-hdaudio-pchange_bandwidth_allocation.md">ChangeBandwidthAllocation</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>
 
  
 

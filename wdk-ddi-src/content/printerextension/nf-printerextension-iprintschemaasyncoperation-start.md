@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 8AEA34AA-1A5E-43F6-8EE1-B1A078B6AEA3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.iprintschemaasyncoperation_start, Start method [Print Devices], IPrintSchemaAsyncOperation interface, printerextension/IPrintSchemaAsyncOperation::Start, Start, IPrintSchemaAsyncOperation, Start method [Print Devices], IPrintSchemaAsyncOperation::Start, IPrintSchemaAsyncOperation interface [Print Devices], Start method
+ms.keywords : IPrintSchemaAsyncOperation interface [Print Devices], Start method, Start method [Print Devices], Start method [Print Devices], IPrintSchemaAsyncOperation interface, print.iprintschemaasyncoperation_start, printerextension/IPrintSchemaAsyncOperation::Start, IPrintSchemaAsyncOperation, Start, IPrintSchemaAsyncOperation::Start
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -63,14 +63,10 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

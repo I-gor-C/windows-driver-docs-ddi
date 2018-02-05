@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b1c97d4f-b305-4c9f-b3fd-06d0ebcb0ed0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsDataTypeHandler::KsSetMediaType, ksproxy_5992cc35-8912-4e1e-8712-ebb6f36f5193.xml, IKsDataTypeHandler interface [Streaming Media Devices], KsSetMediaType method, ksproxy/IKsDataTypeHandler::KsSetMediaType, KsSetMediaType method [Streaming Media Devices], IKsDataTypeHandler interface, stream.iksdatatypehandler_kssetmediatype, KsSetMediaType method [Streaming Media Devices], KsSetMediaType, IKsDataTypeHandler
+ms.keywords : KsSetMediaType method [Streaming Media Devices], ksproxy/IKsDataTypeHandler::KsSetMediaType, KsSetMediaType method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler::KsSetMediaType, ksproxy_5992cc35-8912-4e1e-8712-ebb6f36f5193.xml, IKsDataTypeHandler, stream.iksdatatypehandler_kssetmediatype, KsSetMediaType, IKsDataTypeHandler interface [Streaming Media Devices], KsSetMediaType method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ For more information about <b>CMediaType</b> class, see the Microsoft Windows SD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

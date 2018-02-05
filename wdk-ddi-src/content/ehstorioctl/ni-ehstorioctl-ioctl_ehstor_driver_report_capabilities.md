@@ -103,9 +103,8 @@ IOCTL requests supported by a silo driver are included in an array following <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B95ADBC5-35CC-486D-A5C7-0950ABF4B70A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreatePagingQueue function [Display Devices], D3DKMTCreatePagingQueue, display.d3dkmtcreatepagingqueue, d3dkmthk/D3DKMTCreatePagingQueue
+ms.keywords : d3dkmthk/D3DKMTCreatePagingQueue, D3DKMTCreatePagingQueue function [Display Devices], display.d3dkmtcreatepagingqueue, D3DKMTCreatePagingQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,14 +93,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 

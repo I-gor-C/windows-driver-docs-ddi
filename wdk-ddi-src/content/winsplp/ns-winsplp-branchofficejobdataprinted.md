@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 77737A33-9592-43A3-B12A-5BFDCA0209BE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/PBranchOfficeJobDataPrinted, *PBranchOfficeJobDataPrinted, PBranchOfficeJobDataPrinted, PBranchOfficeJobDataPrinted structure pointer [Print Devices], winsplp/BranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted structure [Print Devices], BranchOfficeJobDataPrinted, print.branchofficejobdataprinted
+ms.keywords : winsplp/PBranchOfficeJobDataPrinted, winsplp/BranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted structure [Print Devices], *PBranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted, PBranchOfficeJobDataPrinted, PBranchOfficeJobDataPrinted structure pointer [Print Devices], print.branchofficejobdataprinted
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,7 +95,4 @@ Specifies the total number of pages in the job.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h |

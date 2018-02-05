@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6f450117-9bd2-4021-b8f1-393db5784136
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ClfsMgmtRegisterManagedClient, ClfsMgmtRegisterManagedClient, ClfsMgmtRegisterManagedClient routine [Kernel-Mode Driver Architecture], Clfs_management_9cd62567-e8c0-4a27-a3fd-153f0cdc9516.xml, kernel.clfsmgmtregistermanagedclient
+ms.keywords : ClfsMgmtRegisterManagedClient routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtRegisterManagedClient, ClfsMgmtRegisterManagedClient, kernel.clfsmgmtregistermanagedclient, Clfs_management_9cd62567-e8c0-4a27-a3fd-153f0cdc9516.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -135,20 +135,18 @@ More than one client can register with a log stream.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
-
 <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
+
+<a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
 
  
 

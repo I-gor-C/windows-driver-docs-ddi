@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9107CC24-48FF-4A2C-AA27-1E9E316B7944
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPARENT_HUB_FLAGS, buses._parent_hub_flags, ucxroothub/_PARENT_HUB_FLAGS, _PARENT_HUB_FLAGS, PARENT_HUB_FLAGS, PARENT_HUB_FLAGS union [Buses]"
+ms.keywords : PARENT_HUB_FLAGS union [Buses], ucxroothub/_PARENT_HUB_FLAGS, _PARENT_HUB_FLAGS, *PPARENT_HUB_FLAGS, PARENT_HUB_FLAGS, buses._parent_hub_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,6 @@ The size of structure represented as a LONG (32-bit) value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
 
 ## See Also

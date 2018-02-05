@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bca1ef90-b574-4ed5-a9ec-c553372490b1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisderegisterdeviceex, ndis_devices_ref_40ed1b6b-39ce-43fc-ae0d-8371eab300d7.xml, NdisDeregisterDeviceEx, NdisDeregisterDeviceEx function [Network Drivers Starting with Windows Vista], ndis/NdisDeregisterDeviceEx
+ms.keywords : NdisDeregisterDeviceEx function [Network Drivers Starting with Windows Vista], netvista.ndisderegisterdeviceex, ndis/NdisDeregisterDeviceEx, ndis_devices_ref_40ed1b6b-39ce-43fc-ae0d-8371eab300d7.xml, NdisDeregisterDeviceEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,12 +76,10 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 

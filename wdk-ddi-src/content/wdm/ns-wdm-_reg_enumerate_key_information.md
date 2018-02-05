@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fdae9130-b33e-4714-9e8c-f4faf21ee8c8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : REG_ENUMERATE_KEY_INFORMATION, kernel.reg_enumerate_key_information, wdm/PREG_ENUMERATE_KEY_INFORMATION, PREG_ENUMERATE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _REG_ENUMERATE_KEY_INFORMATION, PREG_ENUMERATE_KEY_INFORMATION, *PREG_ENUMERATE_KEY_INFORMATION, wdm/REG_ENUMERATE_KEY_INFORMATION, REG_ENUMERATE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_e20923be-cb64-43a0-b3d0-a28290fadc07.xml
+ms.keywords : kstruct_d_e20923be-cb64-43a0-b3d0-a28290fadc07.xml, REG_ENUMERATE_KEY_INFORMATION, PREG_ENUMERATE_KEY_INFORMATION, kernel.reg_enumerate_key_information, _REG_ENUMERATE_KEY_INFORMATION, *PREG_ENUMERATE_KEY_INFORMATION, REG_ENUMERATE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/REG_ENUMERATE_KEY_INFORMATION, wdm/PREG_ENUMERATE_KEY_INFORMATION, PREG_ENUMERATE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : REG_ENUMERATE_KEY_INFORMATION, *PREG_ENUMERATE_KEY_INFORMATION
+req.typenames : "*PREG_ENUMERATE_KEY_INFORMATION, REG_ENUMERATE_KEY_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -104,20 +104,18 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later versions of the Windows operating system. Available on Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
 
 <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
 
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+
+<a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : EE68F14D-F76D-4D98-99FB-BD3FB93B669A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FramingProp_Uninitialized, FRAMING_PROP enumeration [Streaming Media Devices], FramingProp_None, ksproxy/FramingProp_Uninitialized, FramingProp_Old, ksproxy/FramingProp_Old, ksproxy/FRAMING_PROP, *PFRAMING_PROP, ksproxy/FramingProp_None, ksproxy/FramingProp_Ex, FramingProp_Ex, stream.framing_prop, FRAMING_PROP
+ms.keywords : stream.framing_prop, ksproxy/FramingProp_None, FRAMING_PROP, ksproxy/FRAMING_PROP, ksproxy/FramingProp_Ex, ksproxy/FramingProp_Uninitialized, FramingProp_Old, FramingProp_Uninitialized, *PFRAMING_PROP, FramingProp_None, ksproxy/FramingProp_Old, FRAMING_PROP enumeration [Streaming Media Devices], FramingProp_Ex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksproxy.h |

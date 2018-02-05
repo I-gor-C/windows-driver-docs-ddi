@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e7be6f28-b6f0-4b95-9145-abbb98e7f5a5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_ALPHAIDENTIFIERTYPE_PRESENT, ntddrilapitypes/RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT, RIL_ALPHAIDENTIFIERTYPE_MAX, RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT, RIL_ALPHAIDENTIFIERTYPE_PRESENT, RILALPHAIDENTIFIDERTYPE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_ALPHAIDENTIFIERTYPE_MAX, netvista.rilalphaidentifidertype, RILALPHAIDENTIFIDERTYPE, ntddrilapitypes/RILALPHAIDENTIFIDERTYPE
+ms.keywords : ntddrilapitypes/RIL_ALPHAIDENTIFIERTYPE_MAX, netvista.rilalphaidentifidertype, RILALPHAIDENTIFIDERTYPE, ntddrilapitypes/RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT, ntddrilapitypes/RILALPHAIDENTIFIDERTYPE, RIL_ALPHAIDENTIFIERTYPE_MAX, ntddrilapitypes/RIL_ALPHAIDENTIFIERTYPE_PRESENT, RIL_ALPHAIDENTIFIERTYPE_NOTPRESENT, RILALPHAIDENTIFIDERTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_ALPHAIDENTIFIERTYPE_PRESENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -79,7 +79,4 @@ typedef enum _RILALPHAIDENTIFIDERTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

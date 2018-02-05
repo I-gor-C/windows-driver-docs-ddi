@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : DD8E4DAC-A4CA-4F1A-A898-E4A68A2D6715
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrintOemEngine interface [Print Devices], ResetPDEV method, prcomoem/IPrintOemEngine::ResetPDEV, ResetPDEV method [Print Devices], ResetPDEV, ResetPDEV method [Print Devices], IPrintOemEngine interface, IPrintOemEngine, IPrintOemEngine::ResetPDEV, print.iprintoemengine_resetpdev
+ms.keywords : IPrintOemEngine interface [Print Devices], ResetPDEV method, ResetPDEV method [Print Devices], print.iprintoemengine_resetpdev, IPrintOemEngine, prcomoem/IPrintOemEngine::ResetPDEV, IPrintOemEngine::ResetPDEV, ResetPDEV, ResetPDEV method [Print Devices], IPrintOemEngine interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,14 +71,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | prcomoem.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | prcomoem.h |
 
 ## See Also
 

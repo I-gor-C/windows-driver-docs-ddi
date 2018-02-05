@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7f75fbaa-06e8-4c4d-b1ee-c89a55889295
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfusb/IWDFUsbTargetDevice::FormatRequestForControlTransfer, FormatRequestForControlTransfer, FormatRequestForControlTransfer method, IWDFUsbTargetDevice interface, FormatRequestForControlTransfer method, FormatRequestForControlTransfer method, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice::FormatRequestForControlTransfer, UMDFUSBref_01a86f28-7a72-4d7b-a2f5-1e254fb26192.xml, wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, umdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, IWDFUsbTargetDevice
+ms.keywords : UMDFUSBref_01a86f28-7a72-4d7b-a2f5-1e254fb26192.xml, wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, IWDFUsbTargetDevice, umdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, FormatRequestForControlTransfer, IWDFUsbTargetDevice interface, FormatRequestForControlTransfer method, wudfusb/IWDFUsbTargetDevice::FormatRequestForControlTransfer, FormatRequestForControlTransfer method, IWDFUsbTargetDevice interface, FormatRequestForControlTransfer method, IWDFUsbTargetDevice::FormatRequestForControlTransfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -127,24 +127,22 @@ After a UMDF driver calls <b>FormatRequestForControlTransfer</b> to format an I/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
 
  
 

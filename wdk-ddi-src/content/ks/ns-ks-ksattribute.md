@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 985d9f12-11c6-40e6-9cb6-572196bc04f4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks-struct_02cb064e-813f-4d67-8cf3-a33e05af7421.xml, ks/PKSATTRIBUTE, KSATTRIBUTE structure [Streaming Media Devices], *PKSATTRIBUTE, stream.ksattribute, PKSATTRIBUTE, KSATTRIBUTE, ks/KSATTRIBUTE, PKSATTRIBUTE structure pointer [Streaming Media Devices]
+ms.keywords : ks/KSATTRIBUTE, stream.ksattribute, PKSATTRIBUTE structure pointer [Streaming Media Devices], *PKSATTRIBUTE, KSATTRIBUTE structure [Streaming Media Devices], KSATTRIBUTE, ks-struct_02cb064e-813f-4d67-8cf3-a33e05af7421.xml, ks/PKSATTRIBUTE, PKSATTRIBUTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSATTRIBUTE, *PKSATTRIBUTE
+req.typenames : "*PKSATTRIBUTE, KSATTRIBUTE"
 ---
 
 # KSATTRIBUTE structure
@@ -71,9 +71,6 @@ Note that KSATTRIBUTE is used in conjunction with data formats and data ranges; 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

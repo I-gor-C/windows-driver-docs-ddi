@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 722287da-e0ee-41d5-b85a-0ec55eac41b9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_protocol_restart_parameters, _NDIS_PROTOCOL_RESTART_PARAMETERS, ndis/PNDIS_PROTOCOL_RESTART_PARAMETERS, ndis/NDIS_PROTOCOL_RESTART_PARAMETERS, *PNDIS_PROTOCOL_RESTART_PARAMETERS, protocol_structures_ref_1a426da7-b2f9-49b0-9069-24ceddcd8ad1.xml, NDIS_PROTOCOL_RESTART_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PROTOCOL_RESTART_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_PROTOCOL_RESTART_PARAMETERS, PNDIS_PROTOCOL_RESTART_PARAMETERS
+ms.keywords : ndis/PNDIS_PROTOCOL_RESTART_PARAMETERS, PNDIS_PROTOCOL_RESTART_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PROTOCOL_RESTART_PARAMETERS, *PNDIS_PROTOCOL_RESTART_PARAMETERS, protocol_structures_ref_1a426da7-b2f9-49b0-9069-24ceddcd8ad1.xml, NDIS_PROTOCOL_RESTART_PARAMETERS, ndis/NDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_RESTART_PARAMETERS, netvista.ndis_protocol_restart_parameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_PROTOCOL_RESTART_PARAMETERS, *PNDIS_PROTOCOL_RESTART_PARAMETERS
+req.typenames : "*PNDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS"
 ---
 
 # _NDIS_PROTOCOL_RESTART_PARAMETERS structure
@@ -128,16 +128,14 @@ Each name that is specified in the buffer in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
-
 <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a>
+
+<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

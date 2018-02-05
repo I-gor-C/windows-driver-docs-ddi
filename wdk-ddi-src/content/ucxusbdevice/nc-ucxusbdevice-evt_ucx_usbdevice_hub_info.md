@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STREAM_INFO, *PSTREAM_INFO
+req.typenames : "*PSTREAM_INFO, STREAM_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -82,24 +82,21 @@ The client driver returns completion status in <i>Request</i>.  The driver can c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_hub_info.md">USBDEVICE_HUB_INFO</a>
+<a href="..\ucxusbdevice\nf-ucxusbdevice-ucx_usbdevice_event_callbacks_init.md">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_ucx_usbdevice_event_callbacks.md">UCX_USBDEVICE_EVENT_CALLBACKS</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_hub_info.md">USBDEVICE_HUB_INFO</a>
 
 <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
 
-<a href="..\ucxusbdevice\nf-ucxusbdevice-ucx_usbdevice_event_callbacks_init.md">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_ucx_usbdevice_event_callbacks.md">UCX_USBDEVICE_EVENT_CALLBACKS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5cad43c7-00f0-4590-997c-f956afe07e55
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortGetDeviceBase routine [Storage Devices], storage.ataportgetdevicebase, irb/AtaPortGetDeviceBase, AtaPortGetDeviceBase, atartns_94ad1c8e-3a7b-4eeb-97d1-5b57284be6f3.xml
+ms.keywords : AtaPortGetDeviceBase routine [Storage Devices], storage.ataportgetdevicebase, AtaPortGetDeviceBase, irb/AtaPortGetDeviceBase, atartns_94ad1c8e-3a7b-4eeb-97d1-5b57284be6f3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,22 +79,17 @@ Miniport drivers must use logical addresses that have been mapped into system sp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportreadportulong.md">AtaPortReadPortUlong</a>
+<a href="..\irb\nf-irb-ataportreadportuchar.md">AtaPortReadPortUchar</a>
 
 <a href="..\irb\nf-irb-ataportreadportushort.md">AtaPortReadPortUshort</a>
 
-<a href="..\irb\nf-irb-ataportreadportuchar.md">AtaPortReadPortUchar</a>
+<a href="..\irb\nf-irb-ataportreadportulong.md">AtaPortReadPortUlong</a>
 
  
 

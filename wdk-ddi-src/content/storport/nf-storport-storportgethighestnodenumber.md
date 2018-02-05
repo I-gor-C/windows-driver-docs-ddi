@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3e0b85f9-b6e4-4d53-b8dc-7f51e0f74be3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_e9e942e1-6de3-4170-87ec-00660ce9925a.xml, StorPortGetHighestNodeNumber, storport/StorPortGetHighestNodeNumber, StorPortGetHighestNodeNumber routine [Storage Devices], storage.storportgethighestnodenumber
+ms.keywords : storage.storportgethighestnodenumber, StorPortGetHighestNodeNumber, storprt_e9e942e1-6de3-4170-87ec-00660ce9925a.xml, StorPortGetHighestNodeNumber routine [Storage Devices], storport/StorPortGetHighestNodeNumber
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,11 +110,9 @@ The operation fails with this return value if one or more of the parameters are 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

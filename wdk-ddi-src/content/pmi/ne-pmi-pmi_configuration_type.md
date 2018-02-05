@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : d5ffd580-ca3d-46c7-b0ba-1cd9962517f8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PowerMeterRef_6d83a5b7-03d3-4f86-b2ac-9d70a889285e.xml, PmiThresholdConfiguration, pmi/PmiBudgetingConfiguration, pmi/PMI_CONFIGURATION_TYPE, PmiBudgetingConfiguration, pmi/PmiThresholdConfiguration, powermeter.pmi_configuration_type, pmi/PmiConfigurationMax, pmi/PmiMeasurementConfiguration, PmiConfigurationMax, PmiMeasurementConfiguration, PMI_CONFIGURATION_TYPE enumeration [Power Metering and Budgeting Devices], PMI_CONFIGURATION_TYPE
+ms.keywords : pmi/PmiConfigurationMax, PMI_CONFIGURATION_TYPE, PmiMeasurementConfiguration, pmi/PmiBudgetingConfiguration, PmiConfigurationMax, PmiBudgetingConfiguration, pmi/PmiThresholdConfiguration, PMI_CONFIGURATION_TYPE enumeration [Power Metering and Budgeting Devices], powermeter.pmi_configuration_type, pmi/PmiMeasurementConfiguration, pmi/PMI_CONFIGURATION_TYPE, PowerMeterRef_6d83a5b7-03d3-4f86-b2ac-9d70a889285e.xml, PmiThresholdConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,24 +83,22 @@ The <b>ConfigurationType</b> member of the <a href="..\pmi\ns-pmi-_pmi_configura
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
 ## See Also
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
-
 <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a>
-
-<a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
-
-<a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
 
 <a href="..\pmi\ni-pmi-ioctl_pmi_set_configuration.md">IOCTL_PMI_SET_CONFIGURATION</a>
 
 <a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
+
+<a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
+
+<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
+
+<a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
 
  
 

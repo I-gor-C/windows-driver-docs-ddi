@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3606d5f4-760f-4ba1-84ea-218b6c2a2e20
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName, D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function [Display Devices], d3dkmthk/D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName, PFND3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, display.d3dkmtqueryremotevidpnsourcefromgdidisplayname
+ms.keywords : D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function [Display Devices], display.d3dkmtqueryremotevidpnsourcefromgdidisplayname, PFND3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName, d3dkmthk/D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,14 +93,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

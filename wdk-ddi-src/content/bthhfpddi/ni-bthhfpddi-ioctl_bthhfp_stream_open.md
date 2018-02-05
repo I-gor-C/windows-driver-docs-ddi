@@ -74,9 +74,8 @@ While the stream channel is open the target driver attempts to keep the SCO chan
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | bthhfpddi.h |
-| **IRQL** |  |
 
 ## See Also
 

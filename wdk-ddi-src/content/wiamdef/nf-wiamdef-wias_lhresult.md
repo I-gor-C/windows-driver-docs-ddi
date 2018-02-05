@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : dcc02735-632f-4b86-ac4f-833c8dcba1c5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WIAS_LHRESULT, WIAS_LHRESULT macro [Imaging Devices], image.wias_lhresult, IWiaLog_f9693b87-6464-423a-9b50-f715f3b35f36.xml, wiamdef/WIAS_LHRESULT
+ms.keywords : WIAS_LHRESULT macro [Imaging Devices], wiamdef/WIAS_LHRESULT, image.wias_lhresult, IWiaLog_f9693b87-6464-423a-9b50-f715f3b35f36.xml, WIAS_LHRESULT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -86,20 +86,16 @@ if (hr != S_OK)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_HRESULT instead. Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_HRESULT instead. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamdef.h |
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wias_ltrace.md">WIAS_LTRACE</a>
-
 <a href="..\wiamdef\nf-wiamdef-wias_lwarning.md">WIAS_LWARNING</a>
+
+<a href="..\wiamdef\nf-wiamdef-wias_ltrace.md">WIAS_LTRACE</a>
 
 <a href="..\wiamdef\nf-wiamdef-wias_lerror.md">WIAS_LERROR</a>
 

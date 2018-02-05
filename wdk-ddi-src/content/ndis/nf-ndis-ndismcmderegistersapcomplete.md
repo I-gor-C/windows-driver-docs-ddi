@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 69524144-fc55-4721-a753-6452566a8b26
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmDeregisterSapComplete macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmDeregisterSapComplete, NdisMCmDeregisterSapComplete, netvista.ndismcmderegistersapcomplete, condis_mcm_ref_c7c4035b-8227-418a-895d-9b14027ce4c4.xml
+ms.keywords : condis_mcm_ref_c7c4035b-8227-418a-895d-9b14027ce4c4.xml, ndis/NdisMCmDeregisterSapComplete, NdisMCmDeregisterSapComplete macro [Network Drivers Starting with Windows Vista], NdisMCmDeregisterSapComplete, netvista.ndismcmderegistersapcomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -71,13 +71,13 @@ None
 
 <b>NdisMCmDeregisterSapComplete</b> notifies both NDIS and the client that the MCM driver has completed
     the SAP-deregistration request for which its 
-    <mshelp:link keywords="netvista.protocolcmderegistersap" tabindex="0"><i>
-    ProtocolCmDeregisterSap</i></mshelp:link> function previously returned NDIS_STATUS_PENDING.
+    <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">
+    ProtocolCmDeregisterSap</a> function previously returned NDIS_STATUS_PENDING.
 
 A call to 
     <b>NdisMCmDeregisterSapComplete</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclderegistersapcomplete" tabindex="0"><i>
-    ProtocolClDeregisterSapComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_deregister_sap_complete.md">
+    ProtocolClDeregisterSapComplete</a> function.
 
 The MCM driver should consider the 
     <i>NdisSapHandle</i> invalid when 
@@ -91,25 +91,23 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDeregisterSapComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDeregisterSapComplete   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDeregisterSapComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDeregisterSapComplete   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
-
 <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">ProtocolCmDeregisterSap</a>
 
-<mshelp:link keywords="netvista.protocolclderegistersapcomplete" tabindex="0"><i>
-   ProtocolClDeregisterSapComplete</i></mshelp:link>
-
 <a href="..\ndis\nf-ndis-ndiscmderegistersapcomplete.md">NdisCmDeregisterSapComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_deregister_sap_complete.md">
+   ProtocolClDeregisterSapComplete</a>
 
  
 

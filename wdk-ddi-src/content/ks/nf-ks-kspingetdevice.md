@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 965aa806-90cc-4c82-a126-42ae433cba3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kspingetdevice, KsPinGetDevice function [Streaming Media Devices], ks/KsPinGetDevice, KsPinGetDevice, avfunc_09495aa3-2bed-4093-a989-2ae444f1c372.xml
+ms.keywords : stream.kspingetdevice, KsPinGetDevice, avfunc_09495aa3-2bed-4093-a989-2ae444f1c372.xml, ks/KsPinGetDevice, KsPinGetDevice function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,24 +68,21 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetdevice.md">KsG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
 
 <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>
 
  
 

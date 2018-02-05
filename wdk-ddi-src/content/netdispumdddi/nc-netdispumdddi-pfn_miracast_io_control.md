@@ -77,7 +77,7 @@ The size, in bytes, of the input buffer pointed to by <i>pInputBuffer</i>.
 
 `*pInputBuffer`
 
-
+A pointer to the input buffer. The <i>InputBufferSize</i> parameter specifies the size of the buffer.
 
 `OutputBufferSize`
 
@@ -85,11 +85,11 @@ The size, in bytes, of the output buffer pointed to by <i>pOutputBuffer</i>.
 
 `*pOutputBuffer`
 
-
+A driver-supplied pointer to the output buffer. The <i>OutputBufferSize</i> parameter specifies the size of the buffer.
 
 `*pBytesReturned`
 
-
+An optional driver-supplied pointer to a <b>UINT</b>-type variable that holds the number of bytes that the display miniport driver returned.
 
 
 ## Return Value
@@ -105,24 +105,19 @@ If the Miracast user-mode driver calls <b>MiracastIoControl</b> when the operati
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
 
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
+
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
-
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
 
  
 

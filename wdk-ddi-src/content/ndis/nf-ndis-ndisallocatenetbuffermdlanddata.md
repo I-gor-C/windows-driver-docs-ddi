@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cfac9061-a685-4e67-aaa2-ca43b7e36cfa
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisAllocateNetBufferMdlAndData, ndis/NdisAllocateNetBufferMdlAndData, NdisAllocateNetBufferMdlAndData function [Network Drivers Starting with Windows Vista], netvista.ndisallocatenetbuffermdlanddata, ndis_netbuf_functions_ref_4f5d872d-11c1-4d75-889c-0c2157ce5f2e.xml
+ms.keywords : netvista.ndisallocatenetbuffermdlanddata, ndis_netbuf_functions_ref_4f5d872d-11c1-4d75-889c-0c2157ce5f2e.xml, ndis/NdisAllocateNetBufferMdlAndData, NdisAllocateNetBufferMdlAndData, NdisAllocateNetBufferMdlAndData function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,12 +88,10 @@ To free the NET_BUFFER and associated information, call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 

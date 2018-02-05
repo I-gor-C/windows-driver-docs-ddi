@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 92594bdd-a458-4262-ac4c-013cffb7a725
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENT_DEVICE enumeration [Streaming Media Devices], ks/KSEVENT_DEVICE_PREEMPTED, stream.ksevent_device, ks/KSEVENT_DEVICE_LOST, KSEVENT_DEVICE_LOST, ks/KSEVENT_DEVICE, KSEVENT_DEVICE_PREEMPTED, KSEVENT_DEVICE
+ms.keywords : KSEVENT_DEVICE, ks/KSEVENT_DEVICE, ks/KSEVENT_DEVICE_LOST, KSEVENT_DEVICE_PREEMPTED, KSEVENT_DEVICE enumeration [Streaming Media Devices], ks/KSEVENT_DEVICE_PREEMPTED, KSEVENT_DEVICE_LOST, stream.ksevent_device
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -78,9 +78,7 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

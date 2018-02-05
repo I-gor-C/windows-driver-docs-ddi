@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -66,8 +66,8 @@ DWORD Dot11extihvInitService(
 The interface version used by the operating system. The value of this parameter must be between
      the ranges of version numbers returned in the 
      <i>pDot11IHVVersionInfo</i> parameter of the 
-     <mshelp:link keywords="netvista.dot11extihvgetversioninfo" tabindex="0"><i>
-     Dot11ExtIhvGetVersionInfo</i></mshelp:link> IHV Handler function.
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">
+     Dot11ExtIhvGetVersionInfo</a> IHV Handler function.
 
 `pDot11ExtAPI`
 
@@ -100,8 +100,8 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 
 The operating system calls the 
     <i>Dot11ExtIhvInitService</i> function immediately after the call to the 
-    <mshelp:link keywords="netvista.dot11extihvgetversioninfo" tabindex="0"><i>
-    Dot11ExtIhvGetVersionInfo</i></mshelp:link> function. When called, 
+    <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">
+    Dot11ExtIhvGetVersionInfo</a> function. When called, 
     <i>Dot11ExtIhvInitService</i> must initialize the IHV Extensions DLL as necessary. When the function
     returns, the DLL must be prepared to accept additional calls to the IHV Handler function.
 
@@ -130,22 +130,17 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_handlers.md">DOT11EXT_IHV_HANDLERS</a>
+
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a>
 
  
 

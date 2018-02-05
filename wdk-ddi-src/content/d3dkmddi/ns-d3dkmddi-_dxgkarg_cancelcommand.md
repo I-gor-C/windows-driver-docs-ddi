@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c0066718-50d0-4bd2-a1bf-678c3f6b9253
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_cancelcommand, _DXGKARG_CANCELCOMMAND, DXGKARG_CANCELCOMMAND, d3dkmddi/DXGKARG_CANCELCOMMAND, DXGKARG_CANCELCOMMAND structure [Display Devices]
+ms.keywords : d3dkmddi/DXGKARG_CANCELCOMMAND, display.dxgkarg_cancelcommand, _DXGKARG_CANCELCOMMAND, DXGKARG_CANCELCOMMAND structure [Display Devices], DXGKARG_CANCELCOMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -147,20 +147,18 @@ Note that the array can begin with an element that is before the range that is u
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_cancelcommand.md">DxgkDdiCancelCommand</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_cancelcommand.md">DxgkDdiCancelCommand</a>
 
  
 

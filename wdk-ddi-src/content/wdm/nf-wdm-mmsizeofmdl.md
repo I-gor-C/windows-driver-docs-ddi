@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 83e7d4be-df76-4dc8-a8e2-91d279127ef1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmSizeOfMdl routine [Kernel-Mode Driver Architecture], kernel.mmsizeofmdl, wdm/MmSizeOfMdl, k106_7cddc848-8b01-4a6a-b5b1-977f2386fc21.xml, MmSizeOfMdl
+ms.keywords : wdm/MmSizeOfMdl, MmSizeOfMdl, MmSizeOfMdl routine [Kernel-Mode Driver Architecture], kernel.mmsizeofmdl, k106_7cddc848-8b01-4a6a-b5b1-977f2386fc21.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,20 +74,18 @@ Memory for the MDL itself must be allocated from nonpaged pool.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554568">MmInitializeMdl</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554500">MmCreateMdl</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554568">MmInitializeMdl</a>
 
  
 

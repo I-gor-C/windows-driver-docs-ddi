@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b16ba776-a6b2-46d0-9b6f-18ea17cf4fce
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : TypeOther, PDXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE, dispmprt/TypeUninitialized, TypeIntegratedDisplay, DmEnums_afd3654c-ffb4-49d6-ba59-235148e59d2c.xml, TypeVideoOutput, dispmprt/TypeOther, *PDXGK_CHILD_DEVICE_TYPE, dispmprt/TypeVideoOutput, DXGK_CHILD_DEVICE_TYPE enumeration [Display Devices], display.dxgk_child_device_type, TypeUninitialized, dispmprt/TypeIntegratedDisplay, _DXGK_CHILD_DEVICE_TYPE, PDXGK_CHILD_DEVICE_TYPE enumeration pointer [Display Devices], dispmprt/PDXGK_CHILD_DEVICE_TYPE, dispmprt/DXGK_CHILD_DEVICE_TYPE
+ms.keywords : dispmprt/TypeUninitialized, DXGK_CHILD_DEVICE_TYPE, TypeUninitialized, TypeOther, _DXGK_CHILD_DEVICE_TYPE, dispmprt/DXGK_CHILD_DEVICE_TYPE, dispmprt/TypeIntegratedDisplay, dispmprt/TypeVideoOutput, dispmprt/PDXGK_CHILD_DEVICE_TYPE, TypeVideoOutput, DXGK_CHILD_DEVICE_TYPE enumeration [Display Devices], TypeIntegratedDisplay, PDXGK_CHILD_DEVICE_TYPE enumeration pointer [Display Devices], dispmprt/TypeOther, display.dxgk_child_device_type, DmEnums_afd3654c-ffb4-49d6-ba59-235148e59d2c.xml, PDXGK_CHILD_DEVICE_TYPE, *PDXGK_CHILD_DEVICE_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,16 +85,14 @@ For more information about child devices of display adapters, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
-
 <a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
  
 

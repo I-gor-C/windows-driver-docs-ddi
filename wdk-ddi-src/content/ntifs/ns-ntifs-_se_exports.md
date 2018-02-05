@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e6c398b4-f38f-4819-96f9-cefc3a728dbc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeExports, _SE_EXPORTS, *PSE_EXPORTS, PSE_EXPORTS, ifsk.seexports, securitystructures_39c83c22-bf3d-4755-ac4c-6bd31f8829d3.xml, SeExports structure [Installable File System Drivers], ntifs/PSE_EXPORTS, PSE_EXPORTS structure pointer [Installable File System Drivers], SE_EXPORTS, ntifs/SeExports, SE_EXPORTS structure [Installable File System Drivers]
+ms.keywords : PSE_EXPORTS structure pointer [Installable File System Drivers], SeExports, ifsk.seexports, securitystructures_39c83c22-bf3d-4755-ac4c-6bd31f8829d3.xml, PSE_EXPORTS, ntifs/SeExports, SeExports structure [Installable File System Drivers], ntifs/PSE_EXPORTS, SE_EXPORTS structure [Installable File System Drivers], SE_EXPORTS, _SE_EXPORTS, *PSE_EXPORTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SE_EXPORTS, *PSE_EXPORTS
+req.typenames : "*PSE_EXPORTS, SE_EXPORTS"
 ---
 
 # _SE_EXPORTS structure
@@ -653,16 +653,13 @@ The SID that matches everyone.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also
 
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
  
 

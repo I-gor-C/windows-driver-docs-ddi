@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ff20b137-4b3c-4e7b-b464-81e15b536081
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, *PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, ntddndis/NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_vf_serial_number_info
+ms.keywords : "_NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_vf_serial_number_info, PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, ntddndis/NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, *PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, ntddndis/PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, *PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO
+req.typenames : "*PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO"
 ---
 
 # _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure
@@ -81,16 +81,14 @@ The virtualization stack uses the serial number to map the VF network adapter in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451909">OID_SRIOV_VF_SERIAL_NUMBER</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451909">OID_SRIOV_VF_SERIAL_NUMBER</a>
 
 <b></b>
 

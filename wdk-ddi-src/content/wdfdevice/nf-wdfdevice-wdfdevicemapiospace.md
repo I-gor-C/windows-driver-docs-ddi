@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 13ECF87D-13F7-4154-A17E-D49A2BB0F83A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceMapIoSpace, WdfDeviceMapIoSpace function, wdf.wdfdevicemapiospace, WdfDeviceMapIoSpace
+ms.keywords : WdfDeviceMapIoSpace, wdfdevice/WdfDeviceMapIoSpace, wdf.wdfdevicemapiospace, WdfDeviceMapIoSpace function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,14 +110,13 @@ For an example that shows how a driver finds and maps memory-mapped register res
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : beec5516-6191-4b70-8c80-ddbaedbad5c0
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bth_funcs_dce0f01b-3dab-48d4-8230-ad3bb0d1c210.xml, bltooth.sdpappendnodetocontainernode, sdplib/SdpAppendNodeToContainerNode, SdpAppendNodeToContainerNode, SdpAppendNodeToContainerNode function [Bluetooth Devices]
+ms.keywords : SdpAppendNodeToContainerNode function [Bluetooth Devices], bltooth.sdpappendnodetocontainernode, SdpAppendNodeToContainerNode, bth_funcs_dce0f01b-3dab-48d4-8230-ad3bb0d1c210.xml, sdplib/SdpAppendNodeToContainerNode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,8 +80,8 @@ Use the
 Do not use this function to attach attribute nodes to the top level of an SDP record. Call the 
     <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a> function to
     perform that action. For more information about the tree structure, see 
-    <mshelp:link keywords="bltooth.converting_sdp_records_to_a_tree_structure" tabindex="0">Converting SDP Records to a
-    Tree Structure</mshelp:link>.
+    <a href="https://msdn.microsoft.com/762cf68b-0082-4b9e-8f24-ff19ecf6f8bd">Converting SDP Records to a
+    Tree Structure</a>.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
     <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>.
@@ -89,22 +89,19 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
+<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 
  
 

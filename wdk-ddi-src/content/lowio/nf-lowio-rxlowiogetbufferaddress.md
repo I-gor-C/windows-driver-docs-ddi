@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a4d78135-38bc-4a34-98ce-d2712829124a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxLowIoGetBufferAddress function [Installable File System Drivers], ifsk.rxlowiogetbufferaddress, lowio/RxLowIoGetBufferAddress, rxref_b45afb50-cf03-4450-9e96-3d8f08392eb6.xml, RxLowIoGetBufferAddress
+ms.keywords : RxLowIoGetBufferAddress function [Installable File System Drivers], lowio/RxLowIoGetBufferAddress, rxref_b45afb50-cf03-4450-9e96-3d8f08392eb6.xml, ifsk.rxlowiogetbufferaddress, RxLowIoGetBufferAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,26 +72,22 @@ A pointer to the RX_CONTEXT structure for this request.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | lowio.h (include Rxcontx.h, Lowio.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxmapsystembuffer.md">RxMapSystemBuffer</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554591">RxNewMapUserBuffer</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
-
 <a href="..\lowio\nf-lowio-rxlowiocompletion.md">RxLowIoCompletion</a>
+
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1DB17B90-41B7-4DA2-AFB6-3A4B218068F6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pep_query_soc_subsystem_count, *PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT structure [Kernel-Mode Driver Architecture], pepfx/PEP_QUERY_SOC_SUBSYSTEM_COUNT, PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT, PPEP_QUERY_SOC_SUBSYSTEM_COUNT structure pointer [Kernel-Mode Driver Architecture], _PEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PPEP_QUERY_SOC_SUBSYSTEM_COUNT
+ms.keywords : "_PEP_QUERY_SOC_SUBSYSTEM_COUNT, PPEP_QUERY_SOC_SUBSYSTEM_COUNT structure pointer [Kernel-Mode Driver Architecture], *PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT structure [Kernel-Mode Driver Architecture], kernel.pep_query_soc_subsystem_count, PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PPEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PEP_QUERY_SOC_SUBSYSTEM_COUNT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ This member is reserved and should be set to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

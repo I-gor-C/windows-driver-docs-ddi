@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 210e69e7-b3b8-43b5-a0d3-f023c7256438
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasFncs_630b9e1f-49f8-433e-b0f0-19e7e6c32460.xml, wiasSetPropertyAttributes function [Imaging Devices], image.wiassetpropertyattributes, wiasSetPropertyAttributes, wiamdef/wiasSetPropertyAttributes
+ms.keywords : wiasSetPropertyAttributes function [Imaging Devices], wiasSetPropertyAttributes, wiamdef/wiasSetPropertyAttributes, wiasFncs_630b9e1f-49f8-433e-b0f0-19e7e6c32460.xml, image.wiassetpropertyattributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -93,14 +93,11 @@ The PROPSPEC and PROPVARIANT structures are defined in the Windows SDK documenta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 

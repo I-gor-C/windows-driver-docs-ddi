@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f5b2da7f-69b2-4c3d-85dc-2f616c282c5d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_PHY_ID_LIST, *PDOT11_PHY_ID_LIST, PDOT11_PHY_ID_LIST structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_phy_id_list, PDOT11_PHY_ID_LIST, Native_802.11_data_types_e6b82eab-cd00-460f-8956-9b1c8cf86be1.xml, DOT11_PHY_ID_LIST, DOT11_PHY_ID_LIST structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_PHY_ID_LIST
+ms.keywords : DOT11_PHY_ID_LIST, windot11/DOT11_PHY_ID_LIST, PDOT11_PHY_ID_LIST structure pointer [Network Drivers Starting with Windows Vista], PDOT11_PHY_ID_LIST, netvista.dot11_phy_id_list, DOT11_PHY_ID_LIST structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_e6b82eab-cd00-460f-8956-9b1c8cf86be1.xml, *PDOT11_PHY_ID_LIST, windot11/PDOT11_PHY_ID_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_PHY_ID_LIST, DOT11_PHY_ID_LIST"
+req.typenames : DOT11_PHY_ID_LIST, *PDOT11_PHY_ID_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -74,11 +74,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_PHY_ID_LIST_REVISION_1.
@@ -88,6 +83,11 @@ This member must be set to DOT11_PHY_ID_LIST_REVISION_1.
 
 This member must be set to 
        sizeof(DOT11_PHY_ID_LIST).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `uNumOfEntries`
 
@@ -108,8 +108,8 @@ An index into the table of supported PHYs that are defined by the Native 802.11 
       <b>msDot11SupportedPhyTypes</b> management information base (MIB) object. For more information about PHY
       IDs and the 
       <b>msDot11SupportedPhyTypes</b> MIB object, see 
-      <mshelp:link keywords="netvista.oid_dot11_supported_phy_types" tabindex="0">
-      OID_DOT11_SUPPORTED_PHY_TYPES</mshelp:link>.
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">
+      OID_DOT11_SUPPORTED_PHY_TYPES</a>.
 
 </li>
 <li>
@@ -198,18 +198,16 @@ Return NDIS_STATUS_SUCCESS from its
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-active-phy-list">OID_DOT11_ACTIVE_PHY_LIST</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569144">OID_DOT11_DESIRED_PHY_LIST</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-active-phy-list">OID_DOT11_ACTIVE_PHY_LIST</a>
 
  
 

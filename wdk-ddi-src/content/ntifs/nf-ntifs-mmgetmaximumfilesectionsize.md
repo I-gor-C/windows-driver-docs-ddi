@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5B3E5B33-EFED-485A-A62A-7A54322408AC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/MmGetMaximumFileSectionSize, MmGetMaximumFileSectionSize, MmGetMaximumFileSectionSize routine [Installable File System Drivers], ifsk.mmgetmaximumfilesectionsize
+ms.keywords : MmGetMaximumFileSectionSize, ntifs/MmGetMaximumFileSectionSize, ifsk.mmgetmaximumfilesectionsize, MmGetMaximumFileSectionSize routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,11 +60,8 @@ The maximum file section size supported by the current version of Windows.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |

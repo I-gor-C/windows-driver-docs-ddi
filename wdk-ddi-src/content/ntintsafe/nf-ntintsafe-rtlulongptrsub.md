@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E8F9A1B0-5E87-4CB0-8C9E-5C2494F07C39
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlULongPtrSub, kernel.rtlulongptrsub, ntintsafe/RtlULongPtrSub, RtlULongPtrSub function [Kernel-Mode Driver Architecture]
+ms.keywords : RtlULongPtrSub, ntintsafe/RtlULongPtrSub, RtlULongPtrSub function [Kernel-Mode Driver Architecture], kernel.rtlulongptrsub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

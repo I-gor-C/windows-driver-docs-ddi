@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c358220c-1e29-4889-b214-f2892c9ac47d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PBOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX, _BOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX structure [Kernel-Mode Driver Architecture], wdm/BOOTDISK_INFORMATION_EX, wdm/PBOOTDISK_INFORMATION_EX, kstruct_a_abc410ed-6eca-4417-b428-565971e85287.xml, PBOOTDISK_INFORMATION_EX, kernel.bootdisk_information_ex, PBOOTDISK_INFORMATION_EX structure pointer [Kernel-Mode Driver Architecture]"
+ms.keywords : "_BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX, PBOOTDISK_INFORMATION_EX structure pointer [Kernel-Mode Driver Architecture], wdm/PBOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX structure [Kernel-Mode Driver Architecture], PBOOTDISK_INFORMATION_EX, kernel.bootdisk_information_ex, BOOTDISK_INFORMATION_EX, wdm/BOOTDISK_INFORMATION_EX, kstruct_a_abc410ed-6eca-4417-b428-565971e85287.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -97,9 +97,6 @@ On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

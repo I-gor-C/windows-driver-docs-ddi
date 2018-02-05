@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 03ec6323-a3f9-485d-80c8-92ac99d8e73a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetMdl function [Display Devices], VideoPort_Functions_570b04cd-9b69-4d1a-b953-7220d4fc7790.xml, VideoPortGetMdl, video/VideoPortGetMdl, display.videoportgetmdl
+ms.keywords : video/VideoPortGetMdl, VideoPortGetMdl, display.videoportgetmdl, VideoPortGetMdl function [Display Devices], VideoPort_Functions_570b04cd-9b69-4d1a-b953-7220d4fc7790.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,8 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |

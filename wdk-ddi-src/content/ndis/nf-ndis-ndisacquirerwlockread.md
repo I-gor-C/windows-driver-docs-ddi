@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a9c16537-e344-43d4-bae7-fb11487caa0e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_processor_group_ref_0ac3bf44-b94f-4818-af69-79eec8045cc9.xml, NdisAcquireRWLockRead function [Network Drivers Starting with Windows Vista], netvista.ndisacquirerwlockread, NdisAcquireRWLockRead, ndis/NdisAcquireRWLockRead
+ms.keywords : NdisAcquireRWLockRead function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_0ac3bf44-b94f-4818-af69-79eec8045cc9.xml, netvista.ndisacquirerwlockread, NdisAcquireRWLockRead, ndis/NdisAcquireRWLockRead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,12 +112,12 @@ An <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_R
 The driver cannot use a lock to protect resources from read or write access that its other functions
     share with the 
     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> or 
-    <mshelp:link keywords="netvista.miniportdisableinterruptex" tabindex="0"><i>
-    MiniportDisableInterruptEx</i></mshelp:link> function, or both. Instead, the driver must call 
-    <mshelp:link keywords="netvista.ndismsynchronizewithinterruptex" tabindex="0"><b>
-    NdisMSynchronizeWithInterruptEx</b></mshelp:link> so that its 
-    <mshelp:link keywords="netvista.miniportsynchronizeinterrupt" tabindex="0"><i>
-    MiniportSynchronizeInterrupt</i></mshelp:link> function accesses such shared resources at the same DIRQL that its 
+    <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">
+    MiniportDisableInterruptEx</a> function, or both. Instead, the driver must call 
+    <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
+    NdisMSynchronizeWithInterruptEx</a> so that its 
+    <a href="..\ndis\nc-ndis-miniport_synchronize_interrupt.md">
+    MiniportSynchronizeInterrupt</a> function accesses such shared resources at the same DIRQL that its 
     <i>MiniportInterrupt</i> or 
     <i>
     MiniportDisableInterruptEx</i> functions, or both do.
@@ -127,34 +127,31 @@ The driver cannot use a lock to protect resources from read or write access that
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.miniportsynchronizeinterrupt" tabindex="0"><i>
-   MiniportSynchronizeInterrupt</i></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_lock_state_ex.md">LOCK_STATE_EX</a>
-
 <a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>
-
-<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
-
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
-
-<a href="..\ndis\nf-ndis-ndisacquirerwlockwrite.md">NdisAcquireRWLockWrite</a>
 
 <a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a>
 
-<mshelp:link keywords="netvista.ndismsynchronizewithinterruptex" tabindex="0"><b>
-   NdisMSynchronizeWithInterruptEx</b></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_synchronize_interrupt.md">
+   MiniportSynchronizeInterrupt</a>
+
+<a href="..\ndis\ns-ndis-_lock_state_ex.md">LOCK_STATE_EX</a>
+
+<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
+
+<a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
+   NdisMSynchronizeWithInterruptEx</a>
+
+<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
+
+<a href="..\ndis\nf-ndis-ndisacquirerwlockwrite.md">NdisAcquireRWLockWrite</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a>
 

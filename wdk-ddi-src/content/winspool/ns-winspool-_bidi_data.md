@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9e0f3044-01c0-4dec-b34c-0f33ccfe3300
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LPBIDI_DATA, spoolfnc_6e6c0bc2-88f6-43ab-8183-42ee1a91e593.xml, *PBIDI_DATA, LPBIDI_DATA structure pointer [Print Devices], _BIDI_DATA, print.bidi_data, PBIDI_DATA structure pointer [Print Devices], BIDI_DATA structure [Print Devices], PBIDI_DATA, BIDI_DATA, winspool/PBIDI_DATA, winspool/LPBIDI_DATA, winspool/BIDI_DATA, *LPBIDI_DATA
+ms.keywords : winspool/PBIDI_DATA, BIDI_DATA structure [Print Devices], PBIDI_DATA structure pointer [Print Devices], LPBIDI_DATA structure pointer [Print Devices], *LPBIDI_DATA, spoolfnc_6e6c0bc2-88f6-43ab-8183-42ee1a91e593.xml, winspool/LPBIDI_DATA, _BIDI_DATA, PBIDI_DATA, BIDI_DATA, *PBIDI_DATA, winspool/BIDI_DATA, LPBIDI_DATA, print.bidi_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPBIDI_DATA, BIDI_DATA, *PBIDI_DATA"
+req.typenames : "*PBIDI_DATA, *LPBIDI_DATA, BIDI_DATA"
 req.product : Windows 10 or later.
 ---
 
@@ -73,20 +73,18 @@ The <a href="..\winspool\ns-winspool-_bidi_request_data.md">BIDI_REQUEST_DATA</a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available in Windows XP and later. This structure is available in Windows XP and later. |
 | **Header** | winspool.h (include Winspool.h) |
 
 ## See Also
 
-<a href="..\winspool\ns-winspool-_binary_container.md">BINARY_CONTAINER</a>
-
 <a href="..\winspool\ne-winspool-bidi_type.md">BIDI_TYPE</a>
 
-<a href="..\winspool\ns-winspool-_bidi_request_data.md">BIDI_REQUEST_DATA</a>
-
 <a href="..\winspool\ns-winspool-_bidi_response_data.md">BIDI_RESPONSE_DATA</a>
+
+<a href="..\winspool\ns-winspool-_binary_container.md">BINARY_CONTAINER</a>
+
+<a href="..\winspool\ns-winspool-_bidi_request_data.md">BIDI_REQUEST_DATA</a>
 
  
 

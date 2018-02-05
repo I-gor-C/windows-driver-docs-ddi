@@ -81,20 +81,16 @@ Specifies a 4-byte
 Profile drivers obtain a pointer to the 
     <i>BthAllocateBrb</i> function when they query the Bluetooth driver stack for an instance of the
     BTHDDI_PROFILE_DRIVER_INTERFACE driver interface. See 
-    <mshelp:link keywords="bltooth.querying_for_bluetooth_interfaces" tabindex="0">Querying for Bluetooth
-    Interfaces</mshelp:link> for more information about querying the Bluetooth driver stack.
+    <a href="https://msdn.microsoft.com/56db29cd-26ab-4262-9b9f-40d46372ffe9">Querying for Bluetooth
+    Interfaces</a> for more information about querying the Bluetooth driver stack.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | bthddi.h (include Bthddi.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

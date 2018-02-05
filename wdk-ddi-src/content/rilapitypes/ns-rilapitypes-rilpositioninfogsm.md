@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 86b0510b-54ed-463e-b5d4-a34b0a98c00e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILPOSITIONINFOGSM, rilapitypes/RILPOSITIONINFOGSM, RILPOSITIONINFOGSM structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfogsm, RILPOSITIONINFOGSM"
+ms.keywords : RILPOSITIONINFOGSM, rilapitypes/RILPOSITIONINFOGSM, netvista.rilpositioninfogsm, *LPRILPOSITIONINFOGSM, RILPOSITIONINFOGSM structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILPOSITIONINFOGSM, *LPRILPOSITIONINFOGSM
+req.typenames : "*LPRILPOSITIONINFOGSM, RILPOSITIONINFOGSM"
 req.product : Windows 10 or later.
 ---
 
@@ -106,9 +106,6 @@ Timing Advance (0...255) in bit periods, where a bit period is 48/13µs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

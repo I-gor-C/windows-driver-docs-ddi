@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1c2c103b-41a4-48e8-8232-01719c562d62
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMRealizeBrush function [Print Devices], OEMRealizeBrush, print_unidrv-pscript_rendering_ab4f8635-9dda-4f08-b4f9-d70681ec532e.xml, print.oemrealizebrush, printoem/OEMRealizeBrush
+ms.keywords : print_unidrv-pscript_rendering_ab4f8635-9dda-4f08-b4f9-d70681ec532e.xml, OEMRealizeBrush function [Print Devices], print.oemrealizebrush, OEMRealizeBrush, printoem/OEMRealizeBrush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

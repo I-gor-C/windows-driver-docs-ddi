@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 41ba600d-8b89-4e07-950a-a2518c2572a6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrintReadStream::ReadBytes, filterpipeline_92cb33c3-6229-47ca-b3da-2f4c268f8b7b.xml, IPrintReadStream, IPrintReadStream interface [Print Devices], ReadBytes method, ReadBytes method [Print Devices], print.iprintreadstream_readbytes, ReadBytes, filterpipeline/IPrintReadStream::ReadBytes, ReadBytes method [Print Devices], IPrintReadStream interface
+ms.keywords : filterpipeline_92cb33c3-6229-47ca-b3da-2f4c268f8b7b.xml, ReadBytes, ReadBytes method [Print Devices], filterpipeline/IPrintReadStream::ReadBytes, ReadBytes method [Print Devices], IPrintReadStream interface, IPrintReadStream interface [Print Devices], ReadBytes method, IPrintReadStream::ReadBytes, IPrintReadStream, print.iprintreadstream_readbytes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -80,11 +80,6 @@ A pointer to a <b>BOOL</b> value that indicates whether the end of file (EOF) wa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

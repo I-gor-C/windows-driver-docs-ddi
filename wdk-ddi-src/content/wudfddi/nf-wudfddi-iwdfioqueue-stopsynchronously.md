@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ea05cb82-8a50-48d8-a15c-b7ab58c01b30
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, StopSynchronously method, IWDFIoQueue interface, StopSynchronously, IWDFIoQueue::StopSynchronously, wdf.iwdfioqueue_stopsynchronously, UMDFQueueObjectRef_18e42c5a-ade3-4d81-8af1-bd19655650e7.xml, wudfddi/IWDFIoQueue::StopSynchronously, IWDFIoQueue interface, StopSynchronously method, umdf.iwdfioqueue_stopsynchronously, StopSynchronously method
+ms.keywords : StopSynchronously method, wudfddi/IWDFIoQueue::StopSynchronously, umdf.iwdfioqueue_stopsynchronously, StopSynchronously method, IWDFIoQueue interface, UMDFQueueObjectRef_18e42c5a-ade3-4d81-8af1-bd19655650e7.xml, IWDFIoQueue interface, StopSynchronously method, StopSynchronously, IWDFIoQueue::StopSynchronously, IWDFIoQueue, wdf.iwdfioqueue_stopsynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,20 +68,18 @@ The <b>StopSynchronously</b> method enables the queue to receive new requests, e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
 
  
 

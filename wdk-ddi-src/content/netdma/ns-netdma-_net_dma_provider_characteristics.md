@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7ec6d449-fdc2-44d8-976b-5a1d23c76e7b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.net_dma_provider_characteristics, PNET_DMA_PROVIDER_CHARACTERISTICS, netdma_ref_24841207-9eca-483b-9ee5-81e7f24b62e6.xml, *PNET_DMA_PROVIDER_CHARACTERISTICS, netdma/PNET_DMA_PROVIDER_CHARACTERISTICS, PNET_DMA_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NET_DMA_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], _NET_DMA_PROVIDER_CHARACTERISTICS, netdma/NET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
+ms.keywords : "_NET_DMA_PROVIDER_CHARACTERISTICS, netvista.net_dma_provider_characteristics, PNET_DMA_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NET_DMA_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], netdma/PNET_DMA_PROVIDER_CHARACTERISTICS, netdma/NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, netdma_ref_24841207-9eca-483b-9ee5-81e7f24b62e6.xml, PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,8 +77,8 @@ The entry point for the
 `AllocateDmaChannel`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.providerallocatedmachannel" tabindex="0"><b>
-     ProviderAllocateDmaChannel</b></mshelp:link> function.
+     <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
+     ProviderAllocateDmaChannel</a> function.
 
 `AppendDma`
 
@@ -103,8 +103,8 @@ The NetDMA provider supports
 `FreeDmaChannel`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.providerfreedmachannel" tabindex="0"><b>
-     ProviderFreeDmaChannel</b></mshelp:link> function.
+     <a href="..\netdma\nc-netdma-dma_channel_free_handler.md">
+     ProviderFreeDmaChannel</a> function.
 
 `FriendlyName`
 
@@ -145,8 +145,8 @@ The entry point for the
 `SetDmaChannelCpuAffinity`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.providersetdmachannelcpuaffinity" tabindex="0"><b>
-     ProviderSetDmaChannelCpuAffinity</b></mshelp:link> function.
+     <a href="..\netdma\nc-netdma-dma_channels_cpu_affinity_handler.md">
+     ProviderSetDmaChannelCpuAffinity</a> function.
 
 `Size`
 
@@ -177,35 +177,33 @@ The DMA provider driver supplies a NET_DMA_PROVIDER_CHARACTERISTICS structure at
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 2.0 drivers in Windows Server 2008. (Added FriendlyName   member.) Supported for NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in   Windows Server 2008 and Windows Vista. Supported for NetDMA 2.0 drivers in Windows Server 2008. (Added FriendlyName   member.) Supported for NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in   Windows Server 2008 and Windows Vista. |
 | **Header** | netdma.h (include Netdma.h) |
 
 ## See Also
 
-<a href="..\netdma\nc-netdma-dma_channel_free_handler.md">ProviderFreeDmaChannel</a>
-
-<a href="..\netdma\nc-netdma-dma_start_handler.md">ProviderStartDma</a>
-
 <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
-
-<a href="..\netdma\nc-netdma-dma_resume_handler.md">ProviderResumeDma</a>
-
-<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 
-<a href="..\netdma\nc-netdma-dma_append_handler.md">ProviderAppendDma</a>
+<a href="..\netdma\nc-netdma-dma_start_handler.md">ProviderStartDma</a>
 
-<mshelp:link keywords="netvista.providersetdmachannelcpuaffinity" tabindex="0"><b>
-   ProviderSetDmaChannelCpuAffinity</b></mshelp:link>
+<a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
+
+<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
+
+<a href="..\netdma\nc-netdma-dma_channels_cpu_affinity_handler.md">
+   ProviderSetDmaChannelCpuAffinity</a>
 
 <a href="..\netdma\nc-netdma-dma_reset_handler.md">ProviderResetChannel</a>
 
-<a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a>
+<a href="..\netdma\nc-netdma-dma_channel_free_handler.md">ProviderFreeDmaChannel</a>
 
-<a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
+<a href="..\netdma\nc-netdma-dma_append_handler.md">ProviderAppendDma</a>
+
+<a href="..\netdma\nc-netdma-dma_resume_handler.md">ProviderResumeDma</a>
+
+<a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a>
 
  
 

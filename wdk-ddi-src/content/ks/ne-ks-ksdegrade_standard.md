@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5790ce0e-13f8-4700-8b25-a5375dd83758
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSDEGRADE_STANDARD_SAMPLE, KSDEGRADE_STANDARD_COMPUTATION, ks/KSDEGRADE_STANDARD_SKIP, ks/KSDEGRADE_STANDARD, KSDEGRADE_STANDARD_QUALITY, KSDEGRADE_STANDARD_SKIP, KSDEGRADE_STANDARD, ks-struct_933ec08b-6ad6-47dc-8092-357d6bbe1c72.xml, KSDEGRADE_STANDARD enumeration [Streaming Media Devices], ks/KSDEGRADE_STANDARD_QUALITY, ks/KSDEGRADE_STANDARD_COMPUTATION, ks/KSDEGRADE_STANDARD_SAMPLE, stream.ksdegrade_standard
+ms.keywords : ks/KSDEGRADE_STANDARD_SAMPLE, KSDEGRADE_STANDARD_SAMPLE, ks/KSDEGRADE_STANDARD_QUALITY, KSDEGRADE_STANDARD_QUALITY, KSDEGRADE_STANDARD enumeration [Streaming Media Devices], stream.ksdegrade_standard, ks-struct_933ec08b-6ad6-47dc-8092-357d6bbe1c72.xml, ks/KSDEGRADE_STANDARD_COMPUTATION, ks/KSDEGRADE_STANDARD_SKIP, KSDEGRADE_STANDARD_SKIP, ks/KSDEGRADE_STANDARD, KSDEGRADE_STANDARD, KSDEGRADE_STANDARD_COMPUTATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,9 +83,6 @@ For more information, see <a href="https://msdn.microsoft.com/359e6e12-903f-4037
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

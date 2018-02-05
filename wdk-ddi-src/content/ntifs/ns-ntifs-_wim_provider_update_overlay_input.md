@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : FA100AE0-4725-426F-B57B-C32AC9B75477
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure [Installable File System Drivers], WIM_PROVIDER_UPDATE_OVERLAY_INPUT, ntifs/PWIM_PROVIDER_ADD_OVERLAY_INPUT, ifsk.wim_provider_update_overlay_input, PWIM_PROVIDER_ADD_OVERLAY_INPUT structure pointer [Installable File System Drivers], PWIM_PROVIDER_ADD_OVERLAY_INPUT, _WIM_PROVIDER_UPDATE_OVERLAY_INPUT, ntifs/WIM_PROVIDER_ADD_OVERLAY_INPUT, *PWIM_PROVIDER_UPDATE_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT structure [Installable File System Drivers], WIM_PROVIDER_ADD_OVERLAY_INPUT
+ms.keywords : "*PWIM_PROVIDER_UPDATE_OVERLAY_INPUT, WIM_PROVIDER_UPDATE_OVERLAY_INPUT, WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure [Installable File System Drivers], ntifs/PWIM_PROVIDER_ADD_OVERLAY_INPUT, ntifs/WIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT structure [Installable File System Drivers], WIM_PROVIDER_ADD_OVERLAY_INPUT, ifsk.wim_provider_update_overlay_input, _WIM_PROVIDER_UPDATE_OVERLAY_INPUT, PWIM_PROVIDER_ADD_OVERLAY_INPUT, PWIM_PROVIDER_ADD_OVERLAY_INPUT structure pointer [Installable File System Drivers]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWIM_PROVIDER_UPDATE_OVERLAY_INPUT, WIM_PROVIDER_UPDATE_OVERLAY_INPUT"
+req.typenames : WIM_PROVIDER_UPDATE_OVERLAY_INPUT, *PWIM_PROVIDER_UPDATE_OVERLAY_INPUT
 ---
 
 # _WIM_PROVIDER_UPDATE_OVERLAY_INPUT structure
@@ -73,20 +73,18 @@ The WIM file name includes a terminating NULL character. <b>WimFileNameLength</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1 Update. Available starting with Windows 8.1 Update. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt426735">FSCTL_SUSPEND_OVERLAY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632442">FSCTL_REMOVE_OVERLAY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt426735">FSCTL_SUSPEND_OVERLAY</a>
 
  
 

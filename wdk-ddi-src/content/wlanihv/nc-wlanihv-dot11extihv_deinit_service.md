@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -75,8 +75,8 @@ When the
 <ul>
 <li>
 The operating system calls the 
-      <mshelp:link keywords="netvista.dot11extihvdeinitadapter" tabindex="0"><i>
-      Dot11ExtIhvDeinitAdapter</i></mshelp:link> function prior to calling the 
+      <a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">
+      Dot11ExtIhvDeinitAdapter</a> function prior to calling the 
       <i>Dot11ExtIhvDeinitService</i> function. As a result, the 
       <i>Dot11ExtIhvDeinitService</i> function should not initiate any operations on the WLAN adapter.
       Instead, 
@@ -101,14 +101,9 @@ The DLL must free any allocated resources for the DLL itself. In particular, all
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

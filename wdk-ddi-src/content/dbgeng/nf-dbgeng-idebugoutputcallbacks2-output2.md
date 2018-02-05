@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2FFF9B54-6E77-4D46-B6C0-5BADD208BFCC
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugOutputCallbacks2 interface [Windows Debugging], Output2 method, debugger.idebugoutputcallbacks2_output2, dbgeng/IDebugOutputCallbacks2::Output2, Output2 method [Windows Debugging], DEBUG_OUTCBI_DML, Output2, DEBUG_OUTCBI_TEXT, IDebugOutputCallbacks2::Output2, DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_EXPLICIT_FLUSH, IDebugOutputCallbacks2, Output2 method [Windows Debugging], IDebugOutputCallbacks2 interface
+ms.keywords : IDebugOutputCallbacks2, Output2, IDebugOutputCallbacks2::Output2, Output2 method [Windows Debugging], Output2 method [Windows Debugging], IDebugOutputCallbacks2 interface, debugger.idebugoutputcallbacks2_output2, IDebugOutputCallbacks2 interface [Windows Debugging], Output2 method, DEBUG_OUTCBI_EXPLICIT_FLUSH, dbgeng/IDebugOutputCallbacks2::Output2, DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_DML, DEBUG_OUTCBI_TEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -135,14 +135,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

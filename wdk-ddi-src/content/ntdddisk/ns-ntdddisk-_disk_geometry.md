@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f92d1f63-4361-4775-88f8-be1c9bf781ef
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DISK_GEOMETRY, ntdddisk/PDISK_GEOMETRY, storage.disk_geometry, structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml, ntdddisk/DISK_GEOMETRY, DISK_GEOMETRY structure [Storage Devices], PDISK_GEOMETRY, *PDISK_GEOMETRY, PDISK_GEOMETRY structure pointer [Storage Devices], _DISK_GEOMETRY
+ms.keywords : ntdddisk/PDISK_GEOMETRY, structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml, PDISK_GEOMETRY structure pointer [Storage Devices], *PDISK_GEOMETRY, DISK_GEOMETRY structure [Storage Devices], ntdddisk/DISK_GEOMETRY, storage.disk_geometry, PDISK_GEOMETRY, DISK_GEOMETRY, _DISK_GEOMETRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DISK_GEOMETRY, *PDISK_GEOMETRY
+req.typenames : "*PDISK_GEOMETRY, DISK_GEOMETRY"
 ---
 
 # _DISK_GEOMETRY structure
@@ -84,9 +84,6 @@ Indicates the number of tracks in a cylinder.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
 ## See Also

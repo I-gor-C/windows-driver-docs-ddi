@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25f4a9c2-7146-422c-bd55-2520e7d8619b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_TOKEN_OWNER, PTOKEN_OWNER structure pointer [Installable File System Drivers], ifsk.token_owner, ntifs/TOKEN_OWNER, securitystructures_1be454bb-1b55-4fe5-bdbb-85bfcf9dc9c8.xml, TOKEN_OWNER, TOKEN_OWNER structure [Installable File System Drivers], ntifs/PTOKEN_OWNER, PTOKEN_OWNER, *PTOKEN_OWNER"
+ms.keywords : "_TOKEN_OWNER, *PTOKEN_OWNER, TOKEN_OWNER, PTOKEN_OWNER structure pointer [Installable File System Drivers], securitystructures_1be454bb-1b55-4fe5-bdbb-85bfcf9dc9c8.xml, ifsk.token_owner, ntifs/TOKEN_OWNER, ntifs/PTOKEN_OWNER, TOKEN_OWNER structure [Installable File System Drivers], PTOKEN_OWNER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,6 @@ If it is a group SID, the <b>Owner</b> must match a group SID in the token, wher
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also
@@ -78,9 +75,9 @@ If it is a group SID, the <b>Owner</b> must match a group SID in the token, wher
 
 <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
 
-<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
-
 <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
+<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
 
  
 

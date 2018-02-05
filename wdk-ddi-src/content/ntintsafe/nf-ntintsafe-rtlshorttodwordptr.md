@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0ABB3DBF-117D-491D-85A3-68E9280CFC6C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlShortToDWordPtr function [Kernel-Mode Driver Architecture], kernel.rtlshorttodwordptr, ntintsafe/RtlShortToDWordPtr, RtlShortToDWordPtr
+ms.keywords : ntintsafe/RtlShortToDWordPtr, RtlShortToDWordPtr, kernel.rtlshorttodwordptr, RtlShortToDWordPtr function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

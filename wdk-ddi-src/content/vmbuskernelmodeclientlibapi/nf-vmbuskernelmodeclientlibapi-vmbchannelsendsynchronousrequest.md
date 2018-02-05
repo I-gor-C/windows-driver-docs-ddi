@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 312DED8E-570E-4DEC-B084-36894970F49F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.vmbchannelsendsynchronousrequest, VmbChannelSendSynchronousRequest function [Network Drivers Starting with Windows Vista], VmbChannelSendSynchronousRequest, vmbuskernelmodeclientlibapi/VmbChannelSendSynchronousRequest
+ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelSendSynchronousRequest, netvista.vmbchannelsendsynchronousrequest, VmbChannelSendSynchronousRequest, VmbChannelSendSynchronousRequest function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -162,14 +162,12 @@ this if <code>*Timeout == 0</code> and the <b>VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |
 
 ## See Also
 

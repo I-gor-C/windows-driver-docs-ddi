@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f88a31c4-f42c-487d-b6d8-f8f609f2faff
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpmCalloutAdd0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_2_fwpm_b1548682-4f29-467f-916d-fa434260b0ae.xml, netvista.fwpmcalloutadd0, fwpmk/FwpmCalloutAdd0, FwpmCalloutAdd0
+ms.keywords : wfp_ref_2_funct_2_fwpm_b1548682-4f29-467f-916d-fa434260b0ae.xml, FwpmCalloutAdd0 function [Network Drivers Starting with Windows Vista], FwpmCalloutAdd0, netvista.fwpmcalloutadd0, fwpmk/FwpmCalloutAdd0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 
@@ -149,26 +149,23 @@ A callout and filters that specify the callout for the filter's action can be ad
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpmk.h (include Fwpmk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
 
-<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550076">FWPM_CALLOUT0</a>
 
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
 
 <a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>
+
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
 
  
 

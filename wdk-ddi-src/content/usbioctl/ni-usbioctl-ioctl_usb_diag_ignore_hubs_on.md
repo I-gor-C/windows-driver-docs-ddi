@@ -72,6 +72,5 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Supported on Microsoft Windows 2000 only. Supported on Microsoft Windows 2000 only. |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |

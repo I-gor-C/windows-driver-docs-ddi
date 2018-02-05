@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b5295760-7f0e-4973-9ce3-4aa35ea5211b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_RESOURCEMANAGER_BASIC_INFORMATION, wdm/PRESOURCEMANAGER_BASIC_INFORMATION, *PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], RESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION, wdm/RESOURCEMANAGER_BASIC_INFORMATION, ktm_ref_bcc9f19b-2cd4-45da-b5df-1f28e832d48e.xml, kernel.resourcemanager_basic_information, RESOURCEMANAGER_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture]"
+ms.keywords : kernel.resourcemanager_basic_information, _RESOURCEMANAGER_BASIC_INFORMATION, wdm/RESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION, wdm/PRESOURCEMANAGER_BASIC_INFORMATION, *PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], RESOURCEMANAGER_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], ktm_ref_bcc9f19b-2cd4-45da-b5df-1f28e832d48e.xml, RESOURCEMANAGER_BASIC_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RESOURCEMANAGER_BASIC_INFORMATION, *PRESOURCEMANAGER_BASIC_INFORMATION
+req.typenames : "*PRESOURCEMANAGER_BASIC_INFORMATION, RESOURCEMANAGER_BASIC_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -74,9 +74,7 @@ The resource manager's description string, which the <b>Description</b> member r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

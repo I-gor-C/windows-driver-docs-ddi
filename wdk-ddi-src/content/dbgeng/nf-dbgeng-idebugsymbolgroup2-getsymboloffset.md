@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : da3ddebc-109e-43fb-a0e9-fd89d90dbbc7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolOffset method [Windows Debugging], IDebugSymbolGroup2 interface, ComOther_11a91301-541c-4bc3-aa1e-614db8170e03.xml, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolOffset method, IDebugSymbolGroup2::GetSymbolOffset, debugger.getsymboloffset, dbgeng/IDebugSymbolGroup2::GetSymbolOffset, GetSymbolOffset, IDebugSymbolGroup2, GetSymbolOffset method [Windows Debugging]
+ms.keywords : IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolOffset method, IDebugSymbolGroup2, debugger.getsymboloffset, IDebugSymbolGroup2::GetSymbolOffset, ComOther_11a91301-541c-4bc3-aa1e-614db8170e03.xml, GetSymbolOffset method [Windows Debugging], dbgeng/IDebugSymbolGroup2::GetSymbolOffset, GetSymbolOffset, GetSymbolOffset method [Windows Debugging], IDebugSymbolGroup2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -102,14 +102,9 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

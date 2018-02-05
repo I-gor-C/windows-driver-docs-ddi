@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4638905f-cefb-4bf0-aa00-64f2f096dc22
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceAddRemovalRelationsPhysicalDevice method, wdf.wdfdeviceaddremovalrelationsphysicaldevice, PFN_WDFDEVICEADDREMOVALRELATIONSPHYSICALDEVICE, wdfdevice/WdfDeviceAddRemovalRelationsPhysicalDevice, kmdf.wdfdeviceaddremovalrelationsphysicaldevice, DFDeviceObjectGeneralRef_5e16c670-eb46-4c83-88e0-32eb41aeeac3.xml, WdfDeviceAddRemovalRelationsPhysicalDevice
+ms.keywords : WdfDeviceAddRemovalRelationsPhysicalDevice, kmdf.wdfdeviceaddremovalrelationsphysicaldevice, PFN_WDFDEVICEADDREMOVALRELATIONSPHYSICALDEVICE, DFDeviceObjectGeneralRef_5e16c670-eb46-4c83-88e0-32eb41aeeac3.xml, WdfDeviceAddRemovalRelationsPhysicalDevice method, wdf.wdfdeviceaddremovalrelationsphysicaldevice, wdfdevice/WdfDeviceAddRemovalRelationsPhysicalDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,12 +110,10 @@ Your driver can call <b>WdfDeviceAddRemovalRelationsPhysicalDevice</b> multiple 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

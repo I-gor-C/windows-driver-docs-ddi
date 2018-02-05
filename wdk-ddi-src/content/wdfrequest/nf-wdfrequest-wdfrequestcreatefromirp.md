@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7fc67320-6943-4e39-8474-28c24265eae2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfrequest/WdfRequestCreateFromIrp, PFN_WDFREQUESTCREATEFROMIRP, DFRequestObjectRef_fb959453-1aab-4e2d-8877-356ce04b5784.xml, wdf.wdfrequestcreatefromirp, WdfRequestCreateFromIrp method, WdfRequestCreateFromIrp, kmdf.wdfrequestcreatefromirp
+ms.keywords : WdfRequestCreateFromIrp method, kmdf.wdfrequestcreatefromirp, WdfRequestCreateFromIrp, wdfrequest/WdfRequestCreateFromIrp, DFRequestObjectRef_fb959453-1aab-4e2d-8877-356ce04b5784.xml, PFN_WDFREQUESTCREATEFROMIRP, wdf.wdfrequestcreatefromirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,28 +98,26 @@ Framework-based drivers must not use the <b>Tail.Overlay.DriverContext</b> membe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
-
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
-<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
 
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
+
+<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetrequestattributes.md">WdfDeviceInitSetRequestAttributes</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
 
  
 

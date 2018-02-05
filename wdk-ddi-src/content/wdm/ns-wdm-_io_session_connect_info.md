@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f9d7ffae-aa9e-44d6-b659-cb5a9068f1d7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO structure [Kernel-Mode Driver Architecture], PIO_SESSION_CONNECT_INFO structure pointer [Kernel-Mode Driver Architecture], IO_SESSION_CONNECT_INFO, PIO_SESSION_CONNECT_INFO, wdm/IO_SESSION_CONNECT_INFO, kernel.io_session_connect_info, wdm/PIO_SESSION_CONNECT_INFO, kstruct_b_ef736de7-23b2-4d43-837f-ea879d963ef8.xml"
+ms.keywords : IO_SESSION_CONNECT_INFO structure [Kernel-Mode Driver Architecture], wdm/IO_SESSION_CONNECT_INFO, kstruct_b_ef736de7-23b2-4d43-837f-ea879d963ef8.xml, wdm/PIO_SESSION_CONNECT_INFO, PIO_SESSION_CONNECT_INFO structure pointer [Kernel-Mode Driver Architecture], _IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO, PIO_SESSION_CONNECT_INFO, kernel.io_session_connect_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,9 +67,7 @@ If a driver is registered to receive notifications of events in a user session, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
 ## See Also

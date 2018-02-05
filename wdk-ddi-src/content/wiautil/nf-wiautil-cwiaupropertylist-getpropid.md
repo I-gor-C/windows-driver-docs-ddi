@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : a06de368-71a1-49f1-a948-1b69ca359fb6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetPropId method [Imaging Devices], image.cwiaupropertylist_getpropid, wiautil/CWiauPropertyList::GetPropId, GetPropId, CWiauPropertyList::GetPropId, wiauFncs_3463736c-9dd0-4b87-b427-b19a0daf0df9.xml, GetPropId method [Imaging Devices], CWiauPropertyList interface, CWiauPropertyList interface [Imaging Devices], GetPropId method, CWiauPropertyList
+ms.keywords : wiauFncs_3463736c-9dd0-4b87-b427-b19a0daf0df9.xml, GetPropId, CWiauPropertyList interface [Imaging Devices], GetPropId method, GetPropId method [Imaging Devices], CWiauPropertyList, CWiauPropertyList::GetPropId, GetPropId method [Imaging Devices], CWiauPropertyList interface, image.cwiaupropertylist_getpropid, wiautil/CWiauPropertyList::GetPropId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,20 +66,16 @@ The <b>CWiauPropertyList::GetPropId</b> method returns the property ID for the p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540400">CWiauPropertyList::LookupPropId</a>
+
+<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
 
  
 

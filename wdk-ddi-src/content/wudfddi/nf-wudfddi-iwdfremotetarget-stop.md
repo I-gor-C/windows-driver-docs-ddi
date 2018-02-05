@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4aaef251-7387-4e42-a7ae-e08120fc95ff
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfremotetarget_stop, IWDFRemoteTarget interface, Stop method, UMDFIoTargetObjectRef_a7d1be6f-890c-4e06-9544-7bd18876b56e.xml, Stop method, IWDFRemoteTarget interface, Stop, IWDFRemoteTarget::Stop, Stop method, wdf.iwdfremotetarget_stop, IWDFRemoteTarget, wudfddi/IWDFRemoteTarget::Stop
+ms.keywords : wudfddi/IWDFRemoteTarget::Stop, IWDFRemoteTarget interface, Stop method, Stop method, Stop method, IWDFRemoteTarget interface, IWDFRemoteTarget::Stop, wdf.iwdfremotetarget_stop, UMDFIoTargetObjectRef_a7d1be6f-890c-4e06-9544-7bd18876b56e.xml, IWDFRemoteTarget, Stop, umdf.iwdfremotetarget_stop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -73,14 +73,12 @@ For more information about <b>Stop</b>, and how to use remote I/O targets in UMD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

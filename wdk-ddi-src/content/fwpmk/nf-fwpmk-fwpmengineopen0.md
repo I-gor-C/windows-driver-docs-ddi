@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4d805ffe-7cf9-4cbc-9077-e191ddc24ecd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.fwpmengineopen0, FwpmEngineOpen0 function [Network Drivers Starting with Windows Vista], FwpmEngineOpen0, fwpmk/FwpmEngineOpen0, wfp_ref_2_funct_2_fwpm_29969a12-e73c-4b61-b940-e0da4b0be737.xml
+ms.keywords : fwpmk/FwpmEngineOpen0, FwpmEngineOpen0, wfp_ref_2_funct_2_fwpm_29969a12-e73c-4b61-b940-e0da4b0be737.xml, FwpmEngineOpen0 function [Network Drivers Starting with Windows Vista], netvista.fwpmengineopen0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 
@@ -147,32 +147,29 @@ After a callout driver has finished accessing the filter engine, it calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpmk.h (include Fwpmk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a>
 
 <a href="..\fwpmk\nf-fwpmk-fwpmengineclose0.md">FwpmEngineClose0</a>
 
-<a href="..\fwpmk\nf-fwpmk-fwpmbfestateget0.md">FwpmBfeStateGet0</a>
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
 
-<mshelp:link keywords="netvista.fwpmbfestatesubscribechanges0" tabindex="0"><b>
-   FwpmBfeStateSubscribeChanges0</b></mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/calling-other-windows-filtering-platform-functions">Other Windows Filtering
+   Platform Functions</a>
 
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
-
-<mshelp:link keywords="netvista.other_windows_filtering_platform_functions" tabindex="0">Other Windows Filtering
-   Platform Functions</mshelp:link>
+<a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
+   FwpmBfeStateSubscribeChanges0</a>
 
 <a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>
+
+<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 02b4a485-d44b-458c-89f5-1807500b6db8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisifdeleteifstackentry, net_if_functions_ref_dc4a2189-1dc6-43c5-8cef-baf5907d3d60.xml, NdisIfDeleteIfStackEntry, NdisIfDeleteIfStackEntry function [Network Drivers Starting with Windows Vista], ndis/NdisIfDeleteIfStackEntry
+ms.keywords : NdisIfDeleteIfStackEntry, NdisIfDeleteIfStackEntry function [Network Drivers Starting with Windows Vista], netvista.ndisifdeleteifstackentry, net_if_functions_ref_dc4a2189-1dc6-43c5-8cef-baf5907d3d60.xml, ndis/NdisIfDeleteIfStackEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,12 +84,10 @@ NDIS maintains an interface stack table (<i>ifStackTable</i> from
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Interfaces_Function |
 

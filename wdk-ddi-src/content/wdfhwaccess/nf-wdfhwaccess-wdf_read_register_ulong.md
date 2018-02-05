@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 75EBA58B-4EE9-4D7D-A653-93E5E35569BB
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfhwaccess/WDF_READ_REGISTER_ULONG, wdf.wdf_read_register_ulong, WDF_READ_REGISTER_ULONG, WDF_READ_REGISTER_ULONG function
+ms.keywords : wdf.wdf_read_register_ulong, WDF_READ_REGISTER_ULONG function, wdfhwaccess/WDF_READ_REGISTER_ULONG, WDF_READ_REGISTER_ULONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,8 @@ A pointer to the register address, which must be a mapped range in memory space.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

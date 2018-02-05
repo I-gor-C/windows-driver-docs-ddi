@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1113e917-3273-4ba7-8702-fe90a22fb024
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-filter_c9e640bb-9678-4e2f-9341-0d26b36e65e6.xml, *PFILTER_EXTENSION, FILTER_EXTENSION, PFILTER_EXTENSION structure pointer [Storage Devices], ntdddump/FILTER_EXTENSION, PFILTER_EXTENSION, _FILTER_EXTENSION, FILTER_EXTENSION structure [Storage Devices], storage.filter_extension, ntdddump/PFILTER_EXTENSION
+ms.keywords : "*PFILTER_EXTENSION, PFILTER_EXTENSION structure pointer [Storage Devices], storage.filter_extension, PFILTER_EXTENSION, ntdddump/FILTER_EXTENSION, FILTER_EXTENSION structure [Storage Devices], ntdddump/PFILTER_EXTENSION, FILTER_EXTENSION, structs-filter_c9e640bb-9678-4e2f-9341-0d26b36e65e6.xml, _FILTER_EXTENSION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILTER_EXTENSION, *PFILTER_EXTENSION
+req.typenames : "*PFILTER_EXTENSION, FILTER_EXTENSION"
 ---
 
 # _FILTER_EXTENSION structure
@@ -92,9 +92,7 @@ The partition information in <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista and Windows Server 2008. Available starting with Windows Vista and Windows Server 2008. |
 | **Header** | ntdddump.h (include Ntdddump.h) |
 
 ## See Also

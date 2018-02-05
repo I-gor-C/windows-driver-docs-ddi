@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -122,8 +122,8 @@ A WSK application's
 <td width="60%">
 The WSK application accepted the datagrams and retrieved all of the datagrams from the linked
        list of 
-       <mshelp:link keywords="netvista.wsk_datagram_indication" tabindex="0"><b>
-       WSK_DATAGRAM_INDICATION</b></mshelp:link> structures. The WSK subsystem can call the 
+       <a href="..\wsk\ns-wsk-_wsk_datagram_indication.md">
+       WSK_DATAGRAM_INDICATION</a> structures. The WSK subsystem can call the 
        <i>WskReceiveFromEvent</i> event callback function again when new datagrams are received on the
        socket.
 
@@ -138,8 +138,8 @@ The WSK application accepted the datagrams and retrieved all of the datagrams fr
 <td width="60%">
 The WSK application accepted the datagrams but did not retrieve all of the datagrams from the
        linked list of 
-       <mshelp:link keywords="netvista.wsk_datagram_indication" tabindex="0"><b>
-       WSK_DATAGRAM_INDICATION</b></mshelp:link> structures. The WSK application retains the linked list of
+       <a href="..\wsk\ns-wsk-_wsk_datagram_indication.md">
+       WSK_DATAGRAM_INDICATION</a> structures. The WSK application retains the linked list of
        WSK_DATAGRAM_INDICATION structures until all of the datagrams have been retrieved. After the WSK
        application has retrieved all of the datagrams, it calls the 
        <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a> function to release the linked
@@ -180,8 +180,8 @@ If the WSK application enabled the
 <li>
 If the WSK application enabled the 
          <i>WskReceiveFromEvent</i> event callback function by using the 
-         <mshelp:link keywords="netvista.wsk_set_static_event_callbacks" tabindex="0"><b>
-         WSK_SET_STATIC_EVENT_CALLBACKS</b></mshelp:link> client control operation, the WSK subsystem will not disable
+         <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff571181">
+         WSK_SET_STATIC_EVENT_CALLBACKS</a> client control operation, the WSK subsystem will not disable
          the 
          <i>WskReceiveFromEvent</i> event callback function. The WSK subsystem will continue calling the 
          <i>WskReceiveFromEvent</i> event callback function when new datagrams are received on the socket.
@@ -199,8 +199,8 @@ The WSK subsystem calls a WSK application's
     only if the event callback function was previously enabled with the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570834">SO_WSK_EVENT_CALLBACK</a> socket option.
     For more information about enabling a socket's event callback functions, see 
-    <mshelp:link keywords="netvista.enabling_and_disabling_event_callback_functions" tabindex="0">Enabling and
-    Disabling Event Callback Functions</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
+    Disabling Event Callback Functions</a>.
 
 If a WSK application's 
     <i>WskReceiveFromEvent</i> event callback function is enabled on a datagram socket and the application
@@ -229,30 +229,26 @@ A WSK application's <i>WskReceiveFromEvent</i> event callback function must not 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Windows |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_datagram_indication.md">WSK_DATAGRAM_INDICATION</a>
+
+<a href="..\wsk\ns-wsk-_wsk_client_datagram_dispatch.md">WSK_CLIENT_DATAGRAM_DISPATCH</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
 
-<a href="..\wsk\ns-wsk-_wsk_client_datagram_dispatch.md">WSK_CLIENT_DATAGRAM_DISPATCH</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_send_to.md">WskSendTo</a>
-
-<a href="..\wsk\ns-wsk-_wsk_datagram_indication.md">WSK_DATAGRAM_INDICATION</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_receive_from.md">WskReceiveFrom</a>
 

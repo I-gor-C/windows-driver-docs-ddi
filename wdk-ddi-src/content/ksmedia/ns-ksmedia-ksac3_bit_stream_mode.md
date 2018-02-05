@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1395687d-643a-40b5-9ca9-bff34c0dd6d5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PKSAC3_BIT_STREAM_MODE, audio.ksac3_bit_stream_mode, PKSAC3_BIT_STREAM_MODE structure pointer [Audio Devices], ksmedia/KSAC3_BIT_STREAM_MODE, aud-prop_b90587bf-508c-4e01-83ec-6fd925433d17.xml, KSAC3_BIT_STREAM_MODE, ksmedia/PKSAC3_BIT_STREAM_MODE, KSAC3_BIT_STREAM_MODE structure [Audio Devices], PKSAC3_BIT_STREAM_MODE"
+ms.keywords : KSAC3_BIT_STREAM_MODE, aud-prop_b90587bf-508c-4e01-83ec-6fd925433d17.xml, KSAC3_BIT_STREAM_MODE structure [Audio Devices], audio.ksac3_bit_stream_mode, PKSAC3_BIT_STREAM_MODE structure pointer [Audio Devices], ksmedia/PKSAC3_BIT_STREAM_MODE, PKSAC3_BIT_STREAM_MODE, ksmedia/KSAC3_BIT_STREAM_MODE, *PKSAC3_BIT_STREAM_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSAC3_BIT_STREAM_MODE, KSAC3_BIT_STREAM_MODE"
+req.typenames : KSAC3_BIT_STREAM_MODE, *PKSAC3_BIT_STREAM_MODE
 ---
 
 # KSAC3_BIT_STREAM_MODE structure
@@ -151,9 +151,6 @@ For more information about bit stream modes, see the AC-3 specification at the <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

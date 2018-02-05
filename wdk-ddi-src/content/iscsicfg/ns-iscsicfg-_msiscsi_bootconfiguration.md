@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3a4b55b1-977d-43fb-9968-7a734e04b21b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.msiscsi_bootconfiguration, PMSiSCSI_BootConfiguration structure pointer [Storage Devices], structs-iSCSI_eb9ca716-5f5e-4bec-a4e0-e00d5a93b329.xml, MSiSCSI_BootConfiguration structure [Storage Devices], _MSiSCSI_BootConfiguration, PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration, iscsicfg/MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration, iscsicfg/PMSiSCSI_BootConfiguration
+ms.keywords : structs-iSCSI_eb9ca716-5f5e-4bec-a4e0-e00d5a93b329.xml, *PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration structure [Storage Devices], iscsicfg/MSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration, _MSiSCSI_BootConfiguration, iscsicfg/PMSiSCSI_BootConfiguration, storage.msiscsi_bootconfiguration, PMSiSCSI_BootConfiguration structure pointer [Storage Devices], PMSiSCSI_BootConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -106,9 +106,6 @@ The WMI tool suite automatically generates a declaration of the MSiSCSI_BootConf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsicfg.h (include Iscsicfg.h) |
 
 ## See Also

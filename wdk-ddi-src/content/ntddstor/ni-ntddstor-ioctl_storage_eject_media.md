@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_EJECT_MEDIA IOCTL
@@ -69,9 +69,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
-| **IRQL** |  |
 
 ## See Also
 

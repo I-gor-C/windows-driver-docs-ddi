@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a462734c-cac6-4de0-95c1-810766ef1644
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.read_register_ulong, READ_REGISTER_ULONG, k103_c2da9866-18ac-438b-aa32-991d1bda139f.xml, wdm/READ_REGISTER_ULONG, READ_REGISTER_ULONG routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.read_register_ulong, READ_REGISTER_ULONG routine [Kernel-Mode Driver Architecture], READ_REGISTER_ULONG, wdm/READ_REGISTER_ULONG, k103_c2da9866-18ac-438b-aa32-991d1bda139f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,9 @@ Callers of <b>READ_REGISTER_ULONG</b> can be running at any IRQL, assuming the <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F4FDF254-1C36-43DC-B1FD-376AD7658E61
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_CREATEPROCESS structure [Display Devices], DXGKARG_CREATEPROCESS, _DXGKARG_CREATEPROCESS, *INOUT_PDXGKARG_CREATEPROCESS, display.dxgkarg_createprocess, d3dkmddi/DXGKARG_CREATEPROCESS
+ms.keywords : "*INOUT_PDXGKARG_CREATEPROCESS, d3dkmddi/DXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS structure [Display Devices], DXGKARG_CREATEPROCESS, _DXGKARG_CREATEPROCESS, display.dxgkarg_createprocess"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,16 +79,14 @@ typedef struct _DXGKARG_CREATEPROCESS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a>
 
  
 

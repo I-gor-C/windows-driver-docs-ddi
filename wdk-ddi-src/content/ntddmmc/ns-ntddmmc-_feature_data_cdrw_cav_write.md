@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bdd76553-d551-4451-8a34-122bc0639665
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.feature_data_cdrw_cav_write, _FEATURE_DATA_CDRW_CAV_WRITE, FEATURE_DATA_CDRW_CAV_WRITE structure [Storage Devices], ntddmmc/PFEATURE_DATA_CDRW_CAV_WRITE, ntddmmc/FEATURE_DATA_CDRW_CAV_WRITE, PFEATURE_DATA_CDRW_CAV_WRITE structure pointer [Storage Devices], structs-CD-ROM_2ebe5ae8-15be-47a8-9bb8-d638f6033e6b.xml, PFEATURE_DATA_CDRW_CAV_WRITE, *PFEATURE_DATA_CDRW_CAV_WRITE, FEATURE_DATA_CDRW_CAV_WRITE
+ms.keywords : structs-CD-ROM_2ebe5ae8-15be-47a8-9bb8-d638f6033e6b.xml, PFEATURE_DATA_CDRW_CAV_WRITE structure pointer [Storage Devices], ntddmmc/PFEATURE_DATA_CDRW_CAV_WRITE, FEATURE_DATA_CDRW_CAV_WRITE structure [Storage Devices], PFEATURE_DATA_CDRW_CAV_WRITE, *PFEATURE_DATA_CDRW_CAV_WRITE, ntddmmc/FEATURE_DATA_CDRW_CAV_WRITE, _FEATURE_DATA_CDRW_CAV_WRITE, FEATURE_DATA_CDRW_CAV_WRITE, storage.feature_data_cdrw_cav_write
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ This structure holds data for the feature named "CD-RW CAV Write" by the <i>SCSI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

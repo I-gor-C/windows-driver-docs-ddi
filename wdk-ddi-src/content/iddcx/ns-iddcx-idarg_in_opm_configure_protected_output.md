@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 523b904c-c833-40f2-8173-7ec1c6687b26
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.idarg_in_opm_configure_protected_output, IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT structure [Display Devices], iddcx/IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT, IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT
+ms.keywords : IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT, display.idarg_in_opm_configure_protected_output, iddcx/IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT, IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ typedef struct IDARG_IN_OPM_CONFIGURE_PROTECTED_OUTPUT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

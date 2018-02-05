@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b2f318d2-9ee2-4b4b-86ff-4561f1bbe084
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.setcodelevel, IDebugControl interface [Windows Debugging], SetCodeLevel method, IDebugControl::SetCodeLevel, IDebugControl3, IDebugControl3 interface [Windows Debugging], SetCodeLevel method, IDebugControl_40aa5eed-ef3f-4ec4-84eb-0cfec638bc4a.xml, dbgeng/IDebugControl3::SetCodeLevel, dbgeng/IDebugControl2::SetCodeLevel, SetCodeLevel method [Windows Debugging], IDebugControl interface, IDebugControl3::SetCodeLevel, SetCodeLevel method [Windows Debugging], IDebugControl2 interface, IDebugControl2::SetCodeLevel, SetCodeLevel, IDebugControl2 interface [Windows Debugging], SetCodeLevel method, SetCodeLevel method [Windows Debugging], IDebugControl3 interface, SetCodeLevel method [Windows Debugging], dbgeng/IDebugControl::SetCodeLevel
+ms.keywords : IDebugControl3 interface [Windows Debugging], SetCodeLevel method, SetCodeLevel method [Windows Debugging], IDebugControl interface [Windows Debugging], SetCodeLevel method, SetCodeLevel method [Windows Debugging], IDebugControl3 interface, IDebugControl3, dbgeng/IDebugControl::SetCodeLevel, dbgeng/IDebugControl3::SetCodeLevel, IDebugControl2 interface [Windows Debugging], SetCodeLevel method, debugger.setcodelevel, dbgeng/IDebugControl2::SetCodeLevel, SetCodeLevel method [Windows Debugging], IDebugControl interface, SetCodeLevel, IDebugControl2::SetCodeLevel, IDebugControl3::SetCodeLevel, IDebugControl_40aa5eed-ef3f-4ec4-84eb-0cfec638bc4a.xml, SetCodeLevel method [Windows Debugging], IDebugControl2 interface, IDebugControl::SetCodeLevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -111,24 +111,19 @@ For more information about the code level, see <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545670">GetCodeLevel</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545670">GetCodeLevel</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

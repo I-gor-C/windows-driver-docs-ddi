@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ba09333e-84a5-4166-a859-e09c0cf74347
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getoffsetbylinewide, IDebugSymbols3 interface [Windows Debugging], GetOffsetByLineWide method, GetOffsetByLineWide method [Windows Debugging], IDebugSymbols3 interface, GetOffsetByLineWide method [Windows Debugging], GetOffsetByLineWide, IDebugSymbols3, IDebugSymbols3::GetOffsetByLineWide, dbgeng/IDebugSymbols3::GetOffsetByLineWide
+ms.keywords : GetOffsetByLineWide method [Windows Debugging], debugger.getoffsetbylinewide, GetOffsetByLineWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols3::GetOffsetByLineWide, dbgeng/IDebugSymbols3::GetOffsetByLineWide, GetOffsetByLineWide, IDebugSymbols3 interface [Windows Debugging], GetOffsetByLineWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -97,14 +97,9 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

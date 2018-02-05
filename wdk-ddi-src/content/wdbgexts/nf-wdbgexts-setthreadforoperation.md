@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b5bae644-6c8d-4346-87bd-211efcf27748
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.setthreadforoperation, wdbgexts/SetThreadForOperation, SetThreadForOperation, WdbgExts_Ref_62cb59e2-5a16-4bee-936c-6eeaa5126fbc.xml, SetThreadForOperation function [Windows Debugging]
+ms.keywords : SetThreadForOperation, wdbgexts/SetThreadForOperation, WdbgExts_Ref_62cb59e2-5a16-4bee-936c-6eeaa5126fbc.xml, debugger.setthreadforoperation, SetThreadForOperation function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ For a WdbgExts extension, include Wdbgexts.h. For a DbgEng extension, include Wd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

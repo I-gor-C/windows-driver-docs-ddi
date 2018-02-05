@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2517b7a9-76f5-46f6-9225-18081cd1d357
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC, display.d3dddiarg_createvertexshaderfunc, D3DDDIARG_CREATEVERTEXSHADERFUNC, _D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices], UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml
+ms.keywords : d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC, _D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices], D3DDDIARG_CREATEVERTEXSHADERFUNC, UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml, display.d3dddiarg_createvertexshaderfunc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ For more information about programming shader assemblers, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

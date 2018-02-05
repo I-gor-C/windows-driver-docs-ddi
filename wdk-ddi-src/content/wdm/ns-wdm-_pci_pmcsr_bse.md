@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : f65116f6-0a61-4609-993b-d7b2eabf12b5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : pci_struct_8ff8cc6c-91a4-4396-9d4c-8d99967a9417.xml, PPCI_PMCSR_BSE, PCI.pci_pmcsr_bse, PCI_PMCSR_BSE structure [Buses], wdm/PPCI_PMCSR_BSE, wdm/PCI_PMCSR_BSE, *PPCI_PMCSR_BSE, PPCI_PMCSR_BSE structure pointer [Buses], _PCI_PMCSR_BSE, PCI_PMCSR_BSE
+ms.keywords : wdm/PCI_PMCSR_BSE, pci_struct_8ff8cc6c-91a4-4396-9d4c-8d99967a9417.xml, PPCI_PMCSR_BSE, PPCI_PMCSR_BSE structure pointer [Buses], PCI.pci_pmcsr_bse, PCI_PMCSR_BSE, PCI_PMCSR_BSE structure [Buses], *PPCI_PMCSR_BSE, wdm/PPCI_PMCSR_BSE, _PCI_PMCSR_BSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPCI_PMCSR_BSE, PCI_PMCSR_BSE"
+req.typenames : PCI_PMCSR_BSE, *PPCI_PMCSR_BSE
 req.product : Windows 10 or later.
 ---
 
@@ -70,9 +70,6 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also

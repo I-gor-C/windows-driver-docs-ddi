@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 57266CAE-C069-4379-92FD-0F93FECC6EB5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.vmbchannelsavecontinue, VmbChannelSaveContinue, VmbChannelSaveContinue function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelSaveContinue
+ms.keywords : VmbChannelSaveContinue, vmbuskernelmodeclientlibapi/VmbChannelSaveContinue, VmbChannelSaveContinue function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsavecontinue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -140,14 +140,12 @@ If the caller did not allocate enough space in advance, multiple calls may be ne
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

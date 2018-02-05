@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6de3363c-fcf8-4350-acee-b401bb3f82a6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_allocationusageinfo1, _DXGK_ALLOCATIONUSAGEINFO1, DXGK_ALLOCATIONUSAGEINFO1, d3dkmddi/DXGK_ALLOCATIONUSAGEINFO1, DmStructs_262d3b0f-50c6-429b-9b6e-34963d2ae42b.xml, DXGK_ALLOCATIONUSAGEINFO1 structure [Display Devices]
+ms.keywords : display.dxgk_allocationusageinfo1, DXGK_ALLOCATIONUSAGEINFO1 structure [Display Devices], DXGK_ALLOCATIONUSAGEINFO1, DmStructs_262d3b0f-50c6-429b-9b6e-34963d2ae42b.xml, d3dkmddi/DXGK_ALLOCATIONUSAGEINFO1, _DXGK_ALLOCATIONUSAGEINFO1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,20 +110,18 @@ typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusagehint.md">DXGK_ALLOCATIONUSAGEHINT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 
  
 

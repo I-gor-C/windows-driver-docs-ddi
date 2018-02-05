@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1b7b26be-b7be-4dc7-9863-413f7293707c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced3::GetSourceFileInformationWide, debugger.getsourcefileinformationwide, IDebugAdvanced3 interface [Windows Debugging], GetSourceFileInformationWide method, IDebugAdvanced3, dbgeng/IDebugAdvanced3::GetSourceFileInformationWide, GetSourceFileInformationWide, GetSourceFileInformationWide method [Windows Debugging], GetSourceFileInformationWide method [Windows Debugging], IDebugAdvanced3 interface
+ms.keywords : debugger.getsourcefileinformationwide, IDebugAdvanced3, GetSourceFileInformationWide method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3::GetSourceFileInformationWide, dbgeng/IDebugAdvanced3::GetSourceFileInformationWide, GetSourceFileInformationWide, IDebugAdvanced3 interface [Windows Debugging], GetSourceFileInformationWide method, GetSourceFileInformationWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -138,14 +138,9 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6ea2e6dd-9794-4214-8fb1-db563f49b33a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetOpen, PFN_WDFIOTARGETOPEN, wdfiotarget/WdfIoTargetOpen, DFIOTargetRef_72899f0c-58db-461c-b02c-5e99d5a0f875.xml, WdfIoTargetOpen method, kmdf.wdfiotargetopen, wdf.wdfiotargetopen
+ms.keywords : WdfIoTargetOpen method, DFIOTargetRef_72899f0c-58db-461c-b02c-5e99d5a0f875.xml, kmdf.wdfiotargetopen, WdfIoTargetOpen, wdfiotarget/WdfIoTargetOpen, PFN_WDFIOTARGETOPEN, wdf.wdfiotargetopen
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -165,12 +165,11 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
@@ -178,9 +177,7 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetclose.md">WdfIoTargetClose</a>
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
 
 <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
 
@@ -188,7 +185,9 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\wdfiotarget\ns-wdfiotarget-_wdf_io_target_open_params.md">WDF_IO_TARGET_OPEN_PARAMS</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
  
 

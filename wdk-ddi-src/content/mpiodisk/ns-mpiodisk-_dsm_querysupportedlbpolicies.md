@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c9c04601-783a-454d-a80e-be8aa5df519a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PDSM_QuerySupportedLBPolicies structure pointer [Storage Devices], _DSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies, structs-scsibus_44692da4-cfd1-4492-94b5-1f601fa53fd0.xml, *PDSM_QuerySupportedLBPolicies, mpiodisk/PDSM_QuerySupportedLBPolicies, PDSM_QuerySupportedLBPolicies, mpiodisk/DSM_QuerySupportedLBPolicies, storage.dsm_querysupportedlbpolicies, DSM_QuerySupportedLBPolicies structure [Storage Devices]
+ms.keywords : DSM_QuerySupportedLBPolicies structure [Storage Devices], _DSM_QuerySupportedLBPolicies, mpiodisk/PDSM_QuerySupportedLBPolicies, PDSM_QuerySupportedLBPolicies structure pointer [Storage Devices], mpiodisk/DSM_QuerySupportedLBPolicies, structs-scsibus_44692da4-cfd1-4492-94b5-1f601fa53fd0.xml, DSM_QuerySupportedLBPolicies, storage.dsm_querysupportedlbpolicies, PDSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDSM_QuerySupportedLBPolicies, DSM_QuerySupportedLBPolicies"
+req.typenames : DSM_QuerySupportedLBPolicies, *PDSM_QuerySupportedLBPolicies
 ---
 
 # _DSM_QuerySupportedLBPolicies structure
@@ -69,7 +69,4 @@ An unsigned 32-bitfield that returns the number of policies that are supported f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiodisk.h (include Mpiowmi.h) |

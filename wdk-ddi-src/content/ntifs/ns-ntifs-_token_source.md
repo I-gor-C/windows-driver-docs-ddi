@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0820f6f2-bec2-4d38-9a95-cfff6151ef02
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PTOKEN_SOURCE, securitystructures_caf23dc4-0bfe-40e1-9b94-b58bb0eb893e.xml, TOKEN_SOURCE, _TOKEN_SOURCE, *PTOKEN_SOURCE, TOKEN_SOURCE structure [Installable File System Drivers], ntifs/PTOKEN_SOURCE, ifsk.token_source, ntifs/TOKEN_SOURCE, PTOKEN_SOURCE structure pointer [Installable File System Drivers]
+ms.keywords : "*PTOKEN_SOURCE, ntifs/PTOKEN_SOURCE, ifsk.token_source, TOKEN_SOURCE, securitystructures_caf23dc4-0bfe-40e1-9b94-b58bb0eb893e.xml, PTOKEN_SOURCE structure pointer [Installable File System Drivers], ntifs/TOKEN_SOURCE, PTOKEN_SOURCE, _TOKEN_SOURCE, TOKEN_SOURCE structure [Installable File System Drivers]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Specifies an 8-byte character string used to identify the source of an access to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also
@@ -75,11 +72,11 @@ Specifies an 8-byte character string used to identify the source of an access to
 
 <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
 
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 
 <a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
-
-<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 
  
 

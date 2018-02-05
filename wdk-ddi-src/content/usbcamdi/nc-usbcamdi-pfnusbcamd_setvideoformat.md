@@ -113,20 +113,14 @@ Camera minidrivers must handle all SRBs related to video format. Camera minidriv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568201">SRB_SET_DATA_FORMAT</a>
-
 <a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568201">SRB_SET_DATA_FORMAT</a>
 
  
 

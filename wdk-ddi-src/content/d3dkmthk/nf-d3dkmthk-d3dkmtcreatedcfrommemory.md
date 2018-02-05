@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c02f53d9-7cf2-4420-9aea-4dba916be786
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_676f0d3e-5a5a-48d5-9092-88ac897a73b8.xml, D3DKMTCreateDCFromMemory function [Display Devices], display.d3dkmtcreatedcfrommemory, PFND3DKMT_CREATEDCFROMMEMORY, D3DKMTCreateDCFromMemory, d3dkmthk/D3DKMTCreateDCFromMemory
+ms.keywords : D3DKMTCreateDCFromMemory, PFND3DKMT_CREATEDCFROMMEMORY, D3DKMTCreateDCFromMemory function [Display Devices], d3dkmthk/D3DKMTCreateDCFromMemory, OpenGL_Functions_676f0d3e-5a5a-48d5-9092-88ac897a73b8.xml, display.d3dkmtcreatedcfrommemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,11 @@ During the execution of the <b>D3DKMTCreateDCFromMemory</b> function, the kernel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

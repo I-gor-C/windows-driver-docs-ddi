@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8e429a48-4e86-4673-aa32-85b640e2f64f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDefaultAddEventHandler, KsDefaultAddEventHandler function [Streaming Media Devices], avfunc_7e4e393b-c3ab-4538-8790-9fe4c4f964cd.xml, ks/KsDefaultAddEventHandler, stream.ksdefaultaddeventhandler
+ms.keywords : KsDefaultAddEventHandler function [Streaming Media Devices], avfunc_7e4e393b-c3ab-4538-8790-9fe4c4f964cd.xml, stream.ksdefaultaddeventhandler, ks/KsDefaultAddEventHandler, KsDefaultAddEventHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,22 +80,19 @@ This is functionally equivalent to <a href="..\ks\nf-ks-ksaddevent.md">KsAddEven
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 
-<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
-
 <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
+
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
 
 <a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 

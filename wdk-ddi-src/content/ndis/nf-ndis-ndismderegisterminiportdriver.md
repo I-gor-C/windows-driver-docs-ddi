@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c428e30d-ce86-4ca0-bc65-45d84a7c910e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMDeregisterMiniportDriver function [Network Drivers Starting with Windows Vista], miniport_ndis_functions_ref_bd8d7bcd-098a-4367-82d2-6a35753a4a3b.xml, netvista.ndismderegisterminiportdriver, ndis/NdisMDeregisterMiniportDriver, NdisMDeregisterMiniportDriver
+ms.keywords : NdisMDeregisterMiniportDriver, NdisMDeregisterMiniportDriver function [Network Drivers Starting with Windows Vista], miniport_ndis_functions_ref_bd8d7bcd-098a-4367-82d2-6a35753a4a3b.xml, ndis/NdisMDeregisterMiniportDriver, netvista.ndismderegisterminiportdriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,8 +69,8 @@ None
 
 If an error occurs in the miniport driver's 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine after the 
-    <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-    NdisMRegisterMiniportDriver</b></mshelp:link> function returns successfully, the driver must call 
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+    NdisMRegisterMiniportDriver</a> function returns successfully, the driver must call 
     <b>NdisMDeregisterMiniportDriver</b> before 
     <b>DriverEntry</b> returns. If 
     <b>DriverEntry</b> succeeds, the driver must call 
@@ -80,22 +80,20 @@ If an error occurs in the miniport driver's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
 <a href="..\ndis\nc-ndis-miniport_unload.md">MiniportDriverUnload</a>
 
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7cb90d35-53e5-4c73-a1f5-9fc3f99cf1b2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerInitialize function [Storage Devices], ChangerInitialize, storage.changerinitialize, mcd/ChangerInitialize, chgrmini_025ae048-8625-4039-82a2-29d99dcc4972.xml
+ms.keywords : ChangerInitialize, mcd/ChangerInitialize, chgrmini_025ae048-8625-4039-82a2-29d99dcc4972.xml, storage.changerinitialize, ChangerInitialize function [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,10 @@ After <b>ChangerInitialize</b> returns, the changer miniclass driver and the cha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

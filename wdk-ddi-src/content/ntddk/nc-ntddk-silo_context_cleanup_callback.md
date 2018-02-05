@@ -68,11 +68,6 @@ This callback function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

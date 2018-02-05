@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 37cf1552-2cbe-4b80-b220-cfa853674e1b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRequestPowerStateChange, storage.ataportrequestpowerstatechange, AtaPortRequestPowerStateChange routine [Storage Devices], irb/AtaPortRequestPowerStateChange
+ms.keywords : storage.ataportrequestpowerstatechange, AtaPortRequestPowerStateChange, AtaPortRequestPowerStateChange routine [Storage Devices], irb/AtaPortRequestPowerStateChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,9 @@ The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

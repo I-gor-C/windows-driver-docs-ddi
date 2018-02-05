@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ed91d41a-575d-4b26-a7e0-f3ce43db76b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReleaseSpinLock, storprt_5f3bd7a7-ffdd-4d7b-992b-70c2cea3acec.xml, storport/StorPortReleaseSpinLock, StorPortReleaseSpinLock routine [Storage Devices], storage.storportreleasespinlock
+ms.keywords : StorPortReleaseSpinLock routine [Storage Devices], storport/StorPortReleaseSpinLock, StorPortReleaseSpinLock, storage.storportreleasespinlock, storprt_5f3bd7a7-ffdd-4d7b-992b-70c2cea3acec.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,13 +71,9 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
+| **Library** | NtosKrnl.exe |
 | **DDI compliance rules** | StorPortSpinLock, StorPortSpinLock4 |
 
 ## See Also

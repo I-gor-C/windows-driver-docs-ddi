@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ee9b9b6c-c76e-4979-9f23-c411fe1b002a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : Breakpoint method [Windows Debugging], IDebugEventCallbacksWide::Breakpoint, Breakpoint method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging], Breakpoint method, Breakpoint, debugger.idebugeventcallbackswide_breakpoint, dbgeng/IDebugEventCallbacksWide::Breakpoint, IDebugEventCallbacksWide
+ms.keywords : IDebugEventCallbacksWide, dbgeng/IDebugEventCallbacksWide::Breakpoint, debugger.idebugeventcallbackswide_breakpoint, Breakpoint method [Windows Debugging], Breakpoint, IDebugEventCallbacksWide interface [Windows Debugging], Breakpoint method, Breakpoint method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide::Breakpoint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,11 +76,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 10e72834-4866-42f2-842e-0a30278acab8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsiop/RemoveiSNSServer_IN, RemoveiSNSServer_IN structure [Storage Devices], storage.removeisnsserver_in, structs-iSCSI_b79fe0e4-386c-4b5c-9b43-ef8fdb7f4b6a.xml, iscsiop/PRemoveiSNSServer_IN, RemoveiSNSServer_IN, PRemoveiSNSServer_IN, *PRemoveiSNSServer_IN, _RemoveiSNSServer_IN, PRemoveiSNSServer_IN structure pointer [Storage Devices]
+ms.keywords : PRemoveiSNSServer_IN, iscsiop/RemoveiSNSServer_IN, structs-iSCSI_b79fe0e4-386c-4b5c-9b43-ef8fdb7f4b6a.xml, iscsiop/PRemoveiSNSServer_IN, RemoveiSNSServer_IN structure [Storage Devices], PRemoveiSNSServer_IN structure pointer [Storage Devices], *PRemoveiSNSServer_IN, _RemoveiSNSServer_IN, storage.removeisnsserver_in, RemoveiSNSServer_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ It is optional that you implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also

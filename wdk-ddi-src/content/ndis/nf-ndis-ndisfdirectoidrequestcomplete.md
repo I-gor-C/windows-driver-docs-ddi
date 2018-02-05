@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b6b4d4f4-63d5-496c-9082-f2e8d1a174ec
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_request_direct_ref_b61f2fdf-0fb8-4df8-8637-a4db671d008f.xml, NdisFDirectOidRequestComplete, NdisFDirectOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis/NdisFDirectOidRequestComplete, netvista.ndisfdirectoidrequestcomplete
+ms.keywords : ndis_request_direct_ref_b61f2fdf-0fb8-4df8-8637-a4db671d008f.xml, NdisFDirectOidRequestComplete function [Network Drivers Starting with Windows Vista], netvista.ndisfdirectoidrequestcomplete, NdisFDirectOidRequestComplete, ndis/NdisFDirectOidRequestComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,8 +69,8 @@ The NDIS handle that identifies this filter module NDIS passed the handle to the
 A pointer to a buffer that is formatted as an 
      <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure. The filter
      driver obtained this pointer as an input parameter to its 
-     <mshelp:link keywords="netvista.filterdirectoidrequest" tabindex="0"><i>
-     FilterDirectOidRequest</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-filter_direct_oid_request.md">
+     FilterDirectOidRequest</a> function.
 
 `Status`
 
@@ -91,36 +91,33 @@ A filter driver that returns NDIS_STATUS_PENDING from its
 
 If an overlying driver originated the direct OID request, NDIS calls the request complete function
     (see 
-    <mshelp:link keywords="netvista.protocoldirectoidrequestcomplete" tabindex="0"><i>
-    ProtocolDirectOidRequestComplete</i></mshelp:link> and 
-    <mshelp:link keywords="netvista.filterdirectoidrequestcomplete" tabindex="0"><i>
-    FilterDirectOidRequestComplete</i></mshelp:link>) of the overlying driver that originated the request.
+    <a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
+    ProtocolDirectOidRequestComplete</a> and 
+    <a href="..\ndis\nc-ndis-filter_direct_oid_request_complete.md">
+    FilterDirectOidRequestComplete</a>) of the overlying driver that originated the request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<mshelp:link keywords="netvista.protocoldirectoidrequestcomplete" tabindex="0"><i>
-   ProtocolDirectOidRequestComplete</i></mshelp:link>
-
-<a href="..\ndis\nc-ndis-filter_direct_oid_request.md">FilterDirectOidRequest</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
-<mshelp:link keywords="netvista.filterdirectoidrequestcomplete" tabindex="0"><i>
-   FilterDirectOidRequestComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
+   ProtocolDirectOidRequestComplete</a>
+
+<a href="..\ndis\nc-ndis-filter_direct_oid_request_complete.md">
+   FilterDirectOidRequestComplete</a>
+
+<a href="..\ndis\nc-ndis-filter_direct_oid_request.md">FilterDirectOidRequest</a>
 
  
 

@@ -77,14 +77,11 @@ To register the client driver's implementation of the event callback the driver 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

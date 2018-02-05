@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 960186a4-09ca-4636-b704-166137da6113
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PWHEA_NMI_ERROR_SECTION, whearef_295c8b30-1ec5-41a3-ba50-f00c1b1b5524.xml, WHEA_NMI_ERROR_SECTION, PWHEA_NMI_ERROR_SECTION structure pointer [WHEA Drivers and Applications], whea.whea_nmi_error_section, WHEA_NMI_ERROR_SECTION structure [WHEA Drivers and Applications], PWHEA_NMI_ERROR_SECTION, _WHEA_NMI_ERROR_SECTION, ntddk/PWHEA_NMI_ERROR_SECTION, ntddk/WHEA_NMI_ERROR_SECTION"
+ms.keywords : whearef_295c8b30-1ec5-41a3-ba50-f00c1b1b5524.xml, ntddk/PWHEA_NMI_ERROR_SECTION, _WHEA_NMI_ERROR_SECTION, PWHEA_NMI_ERROR_SECTION, WHEA_NMI_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/WHEA_NMI_ERROR_SECTION, *PWHEA_NMI_ERROR_SECTION, whea.whea_nmi_error_section, WHEA_NMI_ERROR_SECTION, PWHEA_NMI_ERROR_SECTION structure pointer [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_NMI_ERROR_SECTION, WHEA_NMI_ERROR_SECTION"
+req.typenames : WHEA_NMI_ERROR_SECTION, *PWHEA_NMI_ERROR_SECTION
 ---
 
 # _WHEA_NMI_ERROR_SECTION structure
@@ -77,6 +77,11 @@ A WHEA_NMI_ERROR__SECTION_FLAGS union that describes the source of the NMI error
 </table></span></div>
 
 
+#### AsULONG
+
+A ULONG representation of the contents of the WHEA_NMI_ERROR_SECTION_FLAGS union.
+
+
 #### HypervisorError
 
 A hypervisor error has occurred.
@@ -86,20 +91,13 @@ A hypervisor error has occurred.
 
 Reserved for system use.
 
-
-#### AsULONG
-
-A ULONG representation of the contents of the WHEA_NMI_ERROR_SECTION_FLAGS union.
-
 ## Remarks
 The WHEA_NMI_ERROR_SECTION structure describes the error data contained in a nonmaskable interrupt (NMI) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains an NMI error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains NMI_SECTION_GUID.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

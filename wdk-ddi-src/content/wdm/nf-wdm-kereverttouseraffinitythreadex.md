@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : effda249-3ba0-40e9-914b-4dd33126518c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.kereverttouseraffinitythreadex, KeRevertToUserAffinityThreadEx routine [Kernel-Mode Driver Architecture], wdm/KeRevertToUserAffinityThreadEx, KeRevertToUserAffinityThreadEx, k105_88dc65fe-5379-4b7c-bfa0-6f2bb943b7cc.xml
+ms.keywords : wdm/KeRevertToUserAffinityThreadEx, kernel.kereverttouseraffinitythreadex, k105_88dc65fe-5379-4b7c-bfa0-6f2bb943b7cc.xml, KeRevertToUserAffinityThreadEx routine [Kernel-Mode Driver Architecture], KeRevertToUserAffinityThreadEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,22 +87,21 @@ If <b>KeRevertToUserAffinityThreadEx</b> is called at IRQL &lt;= APC_LEVEL and t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)." |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>
+<a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 
-<a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a>
+<a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>
 
  
 

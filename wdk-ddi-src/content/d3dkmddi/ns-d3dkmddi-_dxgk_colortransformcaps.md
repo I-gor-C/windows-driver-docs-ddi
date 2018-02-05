@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 83113D6C-44A1-4022-8101-061DEA9868E1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_colortransformcaps_, d3dkmddi/DXGK_COLORTRANSFORMCAPS, d3dkmddi/PDXGK_COLORTRANSFORMCAPS, DXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS structure pointer [Display Devices], DXGK_COLORTRANSFORMCAPS structure [Display Devices], _DXGK_COLORTRANSFORMCAPS
+ms.keywords : d3dkmddi/PDXGK_COLORTRANSFORMCAPS, display.dxgk_colortransformcaps_, DXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS structure pointer [Display Devices], _DXGK_COLORTRANSFORMCAPS, DXGK_COLORTRANSFORMCAPS structure [Display Devices], d3dkmddi/DXGK_COLORTRANSFORMCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _DXGK_COLORTRANSFORMCAPS  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

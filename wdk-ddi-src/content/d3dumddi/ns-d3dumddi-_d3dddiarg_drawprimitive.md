@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b5c3a750-7ccb-42ab-9648-17c43e390ec8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_drawprimitive, d3dumddi/D3DDDIARG_DRAWPRIMITIVE, _D3DDDIARG_DRAWPRIMITIVE, D3DDDIARG_DRAWPRIMITIVE structure [Display Devices], D3DDDIARG_DRAWPRIMITIVE, UMDisplayDriver_param_Structs_19d7b078-8ea3-4b3a-982a-1163643df142.xml
+ms.keywords : D3DDDIARG_DRAWPRIMITIVE, d3dumddi/D3DDDIARG_DRAWPRIMITIVE, D3DDDIARG_DRAWPRIMITIVE structure [Display Devices], display.d3dddiarg_drawprimitive, _D3DDDIARG_DRAWPRIMITIVE, UMDisplayDriver_param_Structs_19d7b078-8ea3-4b3a-982a-1163643df142.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,9 +73,7 @@ When the runtime specifies triangle-edge flags in the value that is pointed to b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a32226bf-4be9-4d0b-8fe9-3ff48a43ca07
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getsystemversionstring, GetSystemVersionString method [Windows Debugging], IDebugControl4 interface, GetSystemVersionString, IDebugControl4::GetSystemVersionString, dbgeng/IDebugControl4::GetSystemVersionString, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetSystemVersionString method, GetSystemVersionString method [Windows Debugging], IDebugControl_4adaed37-7034-4c64-9064-466706a2951e.xml
+ms.keywords : IDebugControl4::GetSystemVersionString, IDebugControl_4adaed37-7034-4c64-9064-466706a2951e.xml, GetSystemVersionString method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetSystemVersionString method, GetSystemVersionString, IDebugControl4, dbgeng/IDebugControl4::GetSystemVersionString, debugger.getsystemversionstring, GetSystemVersionString method [Windows Debugging], IDebugControl4 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -137,22 +137,17 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549258">GetSystemVersionValues</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549234">GetSystemVersion</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549258">GetSystemVersionValues</a>
 
  
 

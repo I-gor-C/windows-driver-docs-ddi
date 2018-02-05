@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E4CE7BE7-021A-4C9A-B467-B63AACEC1266
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanIPTypeIpv4v6, netvista.wwan_ip_type, *PWWAN_IP_TYPE, WWAN_IP_TYPE, WwanIPTypeDefault, wwan/WwanIPTypeIPv4, wwan/WwanIPTypeIpv4v6, wwan/WwanIPTypeDefault, WwanIPTypeIPv6, _WWAN_IP_TYPE, WwanIPTypeIPv4, wwan/WWAN_IP_TYPE, wwan/WwanIPTypeIPv6, WWAN_IP_TYPE enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : wwan/WWAN_IP_TYPE, *PWWAN_IP_TYPE, WWAN_IP_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanIPTypeDefault, _WWAN_IP_TYPE, wwan/WwanIPTypeIpv4v6, WwanIPTypeIPv6, WwanIPTypeIPv4, wwan/WwanIPTypeIPv6, WWAN_IP_TYPE, netvista.wwan_ip_type, wwan/WwanIPTypeDefault, WwanIPTypeIpv4v6, wwan/WwanIPTypeIPv4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_IP_TYPE, WWAN_IP_TYPE"
+req.typenames : WWAN_IP_TYPE, *PWWAN_IP_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -86,9 +86,7 @@ typedef enum _WWAN_IP_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h |
 
 ## See Also

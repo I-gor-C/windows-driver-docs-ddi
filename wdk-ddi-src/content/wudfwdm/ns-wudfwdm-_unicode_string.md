@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b02f29a9-1049-4e29-aac3-72bf0c70a21e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kstruct_d_9f862aaa-4cd6-4420-8255-ad577d8a8c59.xml, PUNICODE_STRING structure pointer [Kernel-Mode Driver Architecture], UNICODE_STRING, PUNICODE_STRING, _UNICODE_STRING, wudfwdm/UNICODE_STRING, wudfwdm/PUNICODE_STRING, *PUNICODE_STRING, kernel.unicode_string, UNICODE_STRING structure [Kernel-Mode Driver Architecture]
+ms.keywords : UNICODE_STRING, *PUNICODE_STRING, wudfwdm/UNICODE_STRING, wudfwdm/PUNICODE_STRING, PUNICODE_STRING structure pointer [Kernel-Mode Driver Architecture], PUNICODE_STRING, kstruct_d_9f862aaa-4cd6-4420-8255-ad577d8a8c59.xml, kernel.unicode_string, _UNICODE_STRING, UNICODE_STRING structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,28 +72,25 @@ The <b>MaximumLength</b> is used to indicate the length of <b>Buffer</b> so that
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wudfwdm.h (include Wdm.h, Ntddk.h, Ntdef.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
+<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
 
 <a href="..\wdm\nf-wdm-rtlansistringtounicodesize.md">RtlAnsiStringToUnicodeSize</a>
 
-<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlunicodestringtoansisize.md">RtlUnicodeStringToAnsiSize</a>
+
+<a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
 
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
-
-<a href="..\wdm\nf-wdm-rtlunicodestringtoansisize.md">RtlUnicodeStringToAnsiSize</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
 
  
 

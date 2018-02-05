@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : df008ee8-352f-4655-b4c0-750eeb281e6a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTarget::CancelSentRequestsForFile, wudfddi/IWDFIoTarget::CancelSentRequestsForFile, wdf.iwdfiotarget_cancelsentrequestsforfile, CancelSentRequestsForFile method, UMDFIoTargetObjectRef_d2a2405f-312e-4e3c-8ffa-8568438805b0.xml, IWDFIoTarget, umdf.iwdfiotarget_cancelsentrequestsforfile, IWDFIoTarget interface, CancelSentRequestsForFile method, CancelSentRequestsForFile, CancelSentRequestsForFile method, IWDFIoTarget interface
+ms.keywords : wdf.iwdfiotarget_cancelsentrequestsforfile, IWDFIoTarget, CancelSentRequestsForFile method, IWDFIoTarget interface, IWDFIoTarget::CancelSentRequestsForFile, CancelSentRequestsForFile method, CancelSentRequestsForFile, IWDFIoTarget interface, CancelSentRequestsForFile method, UMDFIoTargetObjectRef_d2a2405f-312e-4e3c-8ffa-8568438805b0.xml, wudfddi/IWDFIoTarget::CancelSentRequestsForFile, umdf.iwdfiotarget_cancelsentrequestsforfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,20 +68,18 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 
  
 

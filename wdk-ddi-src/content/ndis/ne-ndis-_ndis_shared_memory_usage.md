@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c46102dd-26ea-459b-8cc2-f7e2d2e2f2ad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisSharedMemoryUsageReceiveData, ndis/NdisSharedMemoryUsageMax, netvista.ndis_shared_memory_usage, NDIS_SHARED_MEMORY_USAGE enumeration [Network Drivers Starting with Windows Vista], NdisSharedMemoryUsageReceive, ndis/NdisSharedMemoryUsageReceiveHeader, NdisSharedMemoryUsageXmitHeader, ndis/NdisSharedMemoryUsageReceiveLookahead, ndis/NdisSharedMemoryUsageUndefined, NdisSharedMemoryUsageUndefined, _NDIS_SHARED_MEMORY_USAGE, NdisSharedMemoryUsageXmit, ndis/NdisSharedMemoryUsageXmitData, NdisSharedMemoryUsageMax, NdisSharedMemoryUsageReceivePostLookahead, ndis/NdisSharedMemoryUsageReceive, ndis/NdisSharedMemoryUsageOther, PNDIS_SHARED_MEMORY_USAGE enumeration pointer [Network Drivers Starting with Windows Vista], NdisSharedMemoryUsageOther, NdisSharedMemoryUsageReceiveHeader, PNDIS_SHARED_MEMORY_USAGE, ndis/NdisSharedMemoryUsageXmit, ndis/NdisSharedMemoryUsageXmitHeader, ndis/PNDIS_SHARED_MEMORY_USAGE, ndis/NDIS_SHARED_MEMORY_USAGE, ndis/NdisSharedMemoryUsageReceivePostLookahead, ndis/NdisSharedMemoryUsageReceiveData, NdisSharedMemoryUsageReceiveLookahead, *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE, ndis_shared_memory_ref_fc268c92-4745-4916-8aab-e1e67e12d217.xml, NdisSharedMemoryUsageXmitData
+ms.keywords : ndis/PNDIS_SHARED_MEMORY_USAGE, ndis/NdisSharedMemoryUsageXmit, NdisSharedMemoryUsageUndefined, ndis/NDIS_SHARED_MEMORY_USAGE, ndis/NdisSharedMemoryUsageReceiveHeader, ndis_shared_memory_ref_fc268c92-4745-4916-8aab-e1e67e12d217.xml, NdisSharedMemoryUsageXmitData, ndis/NdisSharedMemoryUsageUndefined, ndis/NdisSharedMemoryUsageReceiveLookahead, ndis/NdisSharedMemoryUsageOther, NdisSharedMemoryUsageReceiveHeader, ndis/NdisSharedMemoryUsageMax, NdisSharedMemoryUsageReceivePostLookahead, NdisSharedMemoryUsageReceiveData, NdisSharedMemoryUsageMax, _NDIS_SHARED_MEMORY_USAGE, ndis/NdisSharedMemoryUsageXmitData, NdisSharedMemoryUsageOther, ndis/NdisSharedMemoryUsageReceiveData, ndis/NdisSharedMemoryUsageXmitHeader, NdisSharedMemoryUsageReceiveLookahead, NDIS_SHARED_MEMORY_USAGE enumeration [Network Drivers Starting with Windows Vista], PNDIS_SHARED_MEMORY_USAGE enumeration pointer [Network Drivers Starting with Windows Vista], NdisSharedMemoryUsageReceive, netvista.ndis_shared_memory_usage, NdisSharedMemoryUsageXmit, PNDIS_SHARED_MEMORY_USAGE, ndis/NdisSharedMemoryUsageReceivePostLookahead, NdisSharedMemoryUsageXmitHeader, *PNDIS_SHARED_MEMORY_USAGE, ndis/NdisSharedMemoryUsageReceive, NDIS_SHARED_MEMORY_USAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -122,25 +122,23 @@ typedef enum _NDIS_SHARED_MEMORY_USAGE {
 ## Remarks
 
 The NDIS_SHARED_MEMORY_USAGE enumeration is used in the 
-    <mshelp:link keywords="netvista.ndis_shared_memory_parameters" tabindex="0"><b>
-    NDIS_SHARED_MEMORY_PARAMETERS</b></mshelp:link> and 
-    <mshelp:link keywords="netvista.ndis_scatter_gather_list_parameters" tabindex="0"><b>
-    NDIS_SCATTER_GATHER_LIST_PARAMETERS</b></mshelp:link> structures.
+    <a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">
+    NDIS_SHARED_MEMORY_PARAMETERS</a> and 
+    <a href="..\ndis\ns-ndis-_ndis_scatter_gather_list_parameters.md">
+    NDIS_SCATTER_GATHER_LIST_PARAMETERS</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_scatter_gather_list_parameters.md">
+   NDIS_SCATTER_GATHER_LIST_PARAMETERS</a>
 
-<mshelp:link keywords="netvista.ndis_scatter_gather_list_parameters" tabindex="0"><b>
-   NDIS_SCATTER_GATHER_LIST_PARAMETERS</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
 
  
 

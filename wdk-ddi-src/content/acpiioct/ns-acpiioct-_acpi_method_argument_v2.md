@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 10DD32ED-96F2-43BF-BBF4-85851BC9A377
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : ACPI_METHOD_ARGUMENT_V2 structure [ACPI Devices], acpi.acpi_method_argument_v2, *PACPI_METHOD_ARGUMENT_V2, acpiioct/PACPI_METHOD_ARGUMENT_V2, _ACPI_METHOD_ARGUMENT_V2, ACPI_METHOD_ARGUMENT_V2, PACPI_METHOD_ARGUMENT_V2 structure pointer [ACPI Devices], PACPI_METHOD_ARGUMENT_V2, acpiioct/ACPI_METHOD_ARGUMENT_V2
+ms.keywords : "*PACPI_METHOD_ARGUMENT_V2, ACPI_METHOD_ARGUMENT_V2 structure [ACPI Devices], acpiioct/ACPI_METHOD_ARGUMENT_V2, PACPI_METHOD_ARGUMENT_V2, acpiioct/PACPI_METHOD_ARGUMENT_V2, PACPI_METHOD_ARGUMENT_V2 structure pointer [ACPI Devices], acpi.acpi_method_argument_v2, ACPI_METHOD_ARGUMENT_V2, _ACPI_METHOD_ARGUMENT_V2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,7 +72,5 @@ Defines the <b>USHORT</b> member <b>Type</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 and later versions. Windows 10, version 1709 and later versions. |
 | **Header** | acpiioct.h (include Acpiioct.h) |

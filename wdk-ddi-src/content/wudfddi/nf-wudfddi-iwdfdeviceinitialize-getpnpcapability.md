@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 64f15528-e934-4bdd-a9f7-6790eef7c7c5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFDeviceInitialize::GetPnpCapability, umdf.iwdfdeviceinitialize_getpnpcapability, IWDFDeviceInitialize, UMDFDeviceObjectRef_1b66d13c-336f-4542-9f44-740679953603.xml, IWDFDeviceInitialize interface, GetPnpCapability method, IWDFDeviceInitialize::GetPnpCapability, GetPnpCapability, wdf.iwdfdeviceinitialize_getpnpcapability, GetPnpCapability method, IWDFDeviceInitialize interface, GetPnpCapability method
+ms.keywords : IWDFDeviceInitialize, GetPnpCapability, IWDFDeviceInitialize interface, GetPnpCapability method, UMDFDeviceObjectRef_1b66d13c-336f-4542-9f44-740679953603.xml, GetPnpCapability method, IWDFDeviceInitialize interface, IWDFDeviceInitialize::GetPnpCapability, GetPnpCapability method, umdf.iwdfdeviceinitialize_getpnpcapability, wdf.iwdfdeviceinitialize_getpnpcapability, wudfddi/IWDFDeviceInitialize::GetPnpCapability
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -107,22 +107,20 @@ The capability is set.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556993">IWDFDeviceInitialize::SetPnpCapability</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAPABILITY</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556993">IWDFDeviceInitialize::SetPnpCapability</a>
 
  
 

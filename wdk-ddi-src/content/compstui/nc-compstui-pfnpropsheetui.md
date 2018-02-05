@@ -154,11 +154,5 @@ Each PFNPROPSHEETUI-typed callback function is called by CPSUI several times. Th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | compstui.h (include Compstui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

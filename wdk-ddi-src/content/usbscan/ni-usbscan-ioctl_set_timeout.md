@@ -79,6 +79,4 @@ For more information, see <a href="https://msdn.microsoft.com/f9216d3c-4930-4c26
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |
-| **IRQL** |  |

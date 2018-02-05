@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 0679406E-091D-4E66-956A-54E3A517BF4C
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : NFC_CX_CLIENT_CONFIG_INIT function [Near-Field Proximity Drivers], nfpdrivers.nfc_cx_client_config_init, NFC_CX_CLIENT_CONFIG_INIT, nfccx/NFC_CX_CLIENT_CONFIG_INIT
+ms.keywords : NFC_CX_CLIENT_CONFIG_INIT function [Near-Field Proximity Drivers], nfccx/NFC_CX_CLIENT_CONFIG_INIT, nfpdrivers.nfc_cx_client_config_init, NFC_CX_CLIENT_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE"
+req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 
@@ -70,14 +70,9 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | nfccx.h (include Ncidef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Nfccxstub.lib |
 
 ## See Also
 

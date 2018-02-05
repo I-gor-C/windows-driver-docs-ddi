@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 67D61FBA-15E9-4157-9286-72D51DE18275
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntPtrToUChar function [Kernel-Mode Driver Architecture], RtlIntPtrToUChar, ntintsafe/RtlIntPtrToUChar, kernel.rtlintptrtouchar
+ms.keywords : kernel.rtlintptrtouchar, ntintsafe/RtlIntPtrToUChar, RtlIntPtrToUChar function [Kernel-Mode Driver Architecture], RtlIntPtrToUChar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

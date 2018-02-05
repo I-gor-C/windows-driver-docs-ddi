@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cf425cd6-88e6-479f-a5c7-364ae896145d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_interlocked_ref_bbf1ad9d-0f18-4746-9fa3-b2b2c4101a41.xml, NdisInterlockedDecrement, netvista.ndisinterlockeddecrement, NdisInterlockedDecrement macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedDecrement
+ms.keywords : netvista.ndisinterlockeddecrement, NdisInterlockedDecrement, NdisInterlockedDecrement macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedDecrement, ndis_interlocked_ref_bbf1ad9d-0f18-4746-9fa3-b2b2c4101a41.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -73,14 +73,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInterlockedDecrement (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInterlockedDecrement (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInterlockedDecrement (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInterlockedDecrement (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

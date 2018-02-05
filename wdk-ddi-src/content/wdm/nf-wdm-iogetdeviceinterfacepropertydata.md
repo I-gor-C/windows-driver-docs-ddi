@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 01113C73-2C79-40F2-9B13-B864148D2C9A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetDeviceInterfacePropertyData, IoGetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], kernel.iogetdeviceinterfacepropertydata, wdm/IoGetDeviceInterfacePropertyData
+ms.keywords : wdm/IoGetDeviceInterfacePropertyData, IoGetDeviceInterfacePropertyData, IoGetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], kernel.iogetdeviceinterfacepropertydata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -147,22 +147,20 @@ Callers of <b>IoGetDeviceInterfacePropertyData</b> must be running at IRQL = PAS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543546">DEVPROPTYPE</a>
 
 <a href="..\wdm\nf-wdm-iosetdeviceinterfacepropertydata.md">IoSetDeviceInterfacePropertyData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn315031">DEVPROPKEY</a>
 
  
 

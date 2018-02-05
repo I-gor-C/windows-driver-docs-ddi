@@ -63,11 +63,8 @@ A filter uses the <b>IFixedPage</b> interface to work with fixed pages in an XPS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **DLL** |  |
 
 ## See Also
 

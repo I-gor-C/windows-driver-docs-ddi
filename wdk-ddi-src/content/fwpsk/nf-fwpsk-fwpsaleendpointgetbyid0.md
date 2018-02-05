@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fa9a5078-d254-4b4a-bbfb-256491beff5f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_A-B_3feb07cf-ae5a-4412-a51a-8e4d4d65c31d.xml, FwpsAleEndpointGetById0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointGetById0, netvista.fwpsaleendpointgetbyid0, FwpsAleEndpointGetById0
+ms.keywords : FwpsAleEndpointGetById0, netvista.fwpsaleendpointgetbyid0, wfp_ref_2_funct_3_fwps_A-B_3feb07cf-ae5a-4412-a51a-8e4d4d65c31d.xml, fwpsk/FwpsAleEndpointGetById0, FwpsAleEndpointGetById0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,8 +70,8 @@ The unique endpoint identifier.
 `properties`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.fwps_ale_endpoint_properties0" tabindex="0"><b>
-     FWPS_ALE_ENDPOINT_PROPERTIES0</b></mshelp:link> structure that contains the properties of the endpoint.
+     <a href="https://msdn.microsoft.com/1dd5dbd1-b7a7-45a3-8cab-ea62c7eff35b">
+     FWPS_ALE_ENDPOINT_PROPERTIES0</a> structure that contains the properties of the endpoint.
 
 
 ## Return Value
@@ -111,24 +111,21 @@ An error occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.fwpsaleendpointsetsecurityinfo0" tabindex="0"><b>
-   FwpsAleEndpointSetSecurityInfo0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetsecurityinfo0.md">
+   FwpsAleEndpointGetSecurityInfo0</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointsetsecurityinfo0.md">
+   FwpsAleEndpointSetSecurityInfo0</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
-
-<mshelp:link keywords="netvista.fwpsaleendpointgetsecurityinfo0" tabindex="0"><b>
-   FwpsAleEndpointGetSecurityInfo0</b></mshelp:link>
 
  
 

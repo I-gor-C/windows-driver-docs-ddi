@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 33711459-70C8-43D2-974D-B90EC0DD8ED6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_SET_UICC_RESET, wwan/PWWAN_SET_UICC_RESET, _WWAN_SET_UICC_RESET, *PWWAN_SET_UICC_RESET, netvista.wwan_set_uicc_reset, WWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], PWWAN_SET_UICC_RESET, PWWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], wwan/WWAN_SET_UICC_RESET, netvista.wwan_set_uicc_reset, PWWAN_SET_UICC_RESET, PWWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET, _WWAN_SET_UICC_RESET, wwan/PWWAN_SET_UICC_RESET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_SET_UICC_RESET, *PWWAN_SET_UICC_RESET
+req.typenames : "*PWWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET"
 req.product : Windows 10 or later.
 ---
 
@@ -60,9 +60,7 @@ The passthrough action specified by the host. For more info, see <a href="..\wwa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

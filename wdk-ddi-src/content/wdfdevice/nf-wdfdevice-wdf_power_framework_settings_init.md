@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 26F872A2-7727-4346-BA80-779D082EAE9D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_POWER_FRAMEWORK_SETTINGS_INIT, wdf.wdf_power_framework_settings_init, wdfdevice/WDF_POWER_FRAMEWORK_SETTINGS_INIT, kmdf.wdf_power_framework_settings_init, WDF_POWER_FRAMEWORK_SETTINGS_INIT function
+ms.keywords : WDF_POWER_FRAMEWORK_SETTINGS_INIT, WDF_POWER_FRAMEWORK_SETTINGS_INIT function, wdf.wdf_power_framework_settings_init, wdfdevice/WDF_POWER_FRAMEWORK_SETTINGS_INIT, kmdf.wdf_power_framework_settings_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,16 @@ The <b>WDF_POWER_FRAMEWORK_SETTINGS_INIT</b> function zeros the specified <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings.md">WdfDeviceWdmAssignPowerFrameworkSettings</a>
-
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_power_framework_settings.md">WDF_POWER_FRAMEWORK_SETTINGS</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings.md">WdfDeviceWdmAssignPowerFrameworkSettings</a>
 
  
 

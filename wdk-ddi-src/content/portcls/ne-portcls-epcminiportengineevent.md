@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6B282CA4-2EE8-48BB-99E2-1A16A92E57A5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : eMINIPORT_IHV_DEFINED, eMINIPORT_PROCESSING_MODE, portcls/eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, portcls/eMINIPORT_PROGRAM_DMA, eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_PIN_STATE, portcls/eMINIPORT_PROCESSING_MODE, eMINIPORT_LAST_BUFFER_RENDERED, portcls/eMINIPORT_IHV_DEFINED, eMINIPORT_PROGRAM_DMA, eMINIPORT_FX_CLSID, eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, EPcMiniportEngineEvent, EPcMiniportEngineEvent enumeration [Audio Devices], portcls/eMINIPORT_MaxValue, portcls/eMINIPORT_LAST_BUFFER_RENDERED, eMINIPORT_BUFFER_COMPLETE, eMINIPORT_PIN_STATE, eMINIPORT_GLITCH_REPORT, portcls/eMINIPORT_BUFFER_COMPLETE, eMINIPORT_GET_PRESENTATION_POS, portcls/eMINIPORT_FX_CLSID, portcls/eMINIPORT_GLITCH_REPORT, portcls/EPcMiniportEngineEvent, audio.epcminiportengineevent, eMINIPORT_MaxValue, portcls/eMINIPORT_GET_PRESENTATION_POS
+ms.keywords : portcls/eMINIPORT_LAST_BUFFER_RENDERED, eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_IHV_DEFINED, eMINIPORT_IHV_DEFINED, eMINIPORT_GLITCH_REPORT, portcls/eMINIPORT_MaxValue, portcls/eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, audio.epcminiportengineevent, eMINIPORT_PIN_STATE, portcls/eMINIPORT_BUFFER_COMPLETE, eMINIPORT_BUFFER_COMPLETE, EPcMiniportEngineEvent, eMINIPORT_PROGRAM_DMA, portcls/eMINIPORT_GET_PRESENTATION_POS, portcls/eMINIPORT_PROCESSING_MODE, eMINIPORT_GET_PRESENTATION_POS, portcls/eMINIPORT_FX_CLSID, eMINIPORT_MaxValue, portcls/EPcMiniportEngineEvent, eMINIPORT_PROCESSING_MODE, portcls/eMINIPORT_PIN_STATE, portcls/eMINIPORT_GLITCH_REPORT, EPcMiniportEngineEvent enumeration [Audio Devices], eMINIPORT_FX_CLSID, portcls/eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_PROGRAM_DMA, eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, eMINIPORT_LAST_BUFFER_RENDERED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -257,16 +257,14 @@ The following table shows the members of the  EPcMiniportEngineEvent enum that w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/9FF2A5D6-9382-4EE6-AA21-DCF47210F73B">Glitch Reporting for Offloaded Audio</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265124">MiniportWriteEtwEvent</a>
+
+<a href="https://msdn.microsoft.com/9FF2A5D6-9382-4EE6-AA21-DCF47210F73B">Glitch Reporting for Offloaded Audio</a>
 
  
 

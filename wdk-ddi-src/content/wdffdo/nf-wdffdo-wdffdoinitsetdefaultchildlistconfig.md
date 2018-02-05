@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 656a0c58-dd12-4417-a781-464d1670592c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdffdoinitsetdefaultchildlistconfig, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, kmdf.wdffdoinitsetdefaultchildlistconfig, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, wdffdo/WdfFdoInitSetDefaultChildListConfig, WdfFdoInitSetDefaultChildListConfig, WdfFdoInitSetDefaultChildListConfig method
+ms.keywords : WdfFdoInitSetDefaultChildListConfig method, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, wdf.wdffdoinitsetdefaultchildlistconfig, WdfFdoInitSetDefaultChildListConfig, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, kmdf.wdffdoinitsetdefaultchildlistconfig, wdffdo/WdfFdoInitSetDefaultChildListConfig
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -83,20 +83,18 @@ For more information about the <b>WdfFdoInitSetDefaultChildListConfig</b> method
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChildListConfiguration, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_config_init.md">WDF_CHILD_LIST_CONFIG_INIT</a>
-
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistcreate.md">WdfChildListCreate</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_config_init.md">WDF_CHILD_LIST_CONFIG_INIT</a>
 
  
 

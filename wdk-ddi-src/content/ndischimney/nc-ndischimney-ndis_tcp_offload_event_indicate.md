@@ -66,8 +66,8 @@ void NdisTcpOffloadEventIndicate(
 A handle that identifies the offloaded TCP connection on which the indication is being made. When
      the connection was offloaded, this handle was supplied in the 
      <b>NdisOffloadHandle</b> member of the 
-     <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure that was associated with the connection state.
+     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.
 
 `EventType`
 
@@ -75,6 +75,12 @@ The event being indicated as one of the following <b>TCP_OFFLOAD_EVENT_TYPE</b> 
      
 
 
+
+
+#### TcpIndicateAbort
+
+Indicates that the remote host has initiated an abortive disconnect by sending an acceptable RST
+       segment on the connection.
 
 
 #### TcpIndicateDisconnect
@@ -89,12 +95,6 @@ Indicates that the offload target is requesting the host stack to terminate the 
        connection.
 
 
-#### TcpIndicateAbort
-
-Indicates that the remote host has initiated an abortive disconnect by sending an acceptable RST
-       segment on the connection.
-
-
 #### TcpIndicateSendBacklogChange
 
 Indicates a change in the preferred send backlog size.
@@ -107,6 +107,11 @@ Specifies additional information about the event being indicated as follows:
 
 
 
+#### TcpIndicateAbort
+
+Not meaningful.
+
+
 #### TcpIndicateDisconnect
 
 Not meaningful.
@@ -116,11 +121,6 @@ Not meaningful.
 
 Indicates the reason for the upload request as a <b>TCP_UPLOAD_REASON</b> value. See the Remarks
        section for more information.
-
-
-#### TcpIndicateAbort
-
-Not meaningful.
 
 
 #### TcpIndicateSendBacklogChange
@@ -170,10 +170,10 @@ Call the
 Complete all outstanding send requests and disconnect requests on the connection with
       NDIS_STATUS_REQUEST_ABORTED. The offload target writes this status value to the 
       <b>Status</b> member of each <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
-      <mshelp:link keywords="netvista.ndistcpoffloadsendcomplete" tabindex="0"><b>
-      NdisTcpOffloadSendComplete</b></mshelp:link> function or to the 
-      <mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-      NdisTcpOffloadDisconnectComplete</b></mshelp:link> function.
+      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">
+      NdisTcpOffloadSendComplete</a> function or to the 
+      <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+      NdisTcpOffloadDisconnectComplete</a> function.
 
 </li>
 </ol>The offload target must not free the resources for the connection until the host stack terminates the
@@ -399,37 +399,32 @@ The offload target should implement a throttling mechanism to ensure that, if th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
+<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
 
 <a href="https://msdn.microsoft.com/98b22b7f-8881-4029-9558-d5d94bb7878e">Indicating TCP Chimney-Specific Events</a>
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/responding-to-the-reception-of-a-fin-or-rst-segment">Responding to
+     the Reception of a FIN or RST Segment</a>
+
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
+
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 
-<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+   NdisTcpOffloadDisconnectComplete</a>
+
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_complete.md">
+   NdisTcpOffloadReceiveComplete</a>
 
 <a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">ProtocolTcpOffloadEvent</a>
 
-<mshelp:link keywords="netvista.ndistcpoffloadreceivecomplete" tabindex="0"><b>
-   NdisTcpOffloadReceiveComplete</b></mshelp:link>
-
 <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>
-
-<mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-   NdisTcpOffloadDisconnectComplete</b></mshelp:link>
-
-<mshelp:link keywords="netvista.responding_to_the_reception_of_a_fin_or_rst_segment" tabindex="0">Responding to
-     the Reception of a FIN or RST Segment</mshelp:link>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 985dcde1-5643-4c35-9096-44b076a1dd51
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetCharacteristics method, DFDeviceObjectGeneralRef_b6e7566f-59b1-46ee-ab3d-45fa7316336e.xml, kmdf.wdfdevicegetcharacteristics, wdf.wdfdevicegetcharacteristics, wdfdevice/WdfDeviceGetCharacteristics, PFN_WDFDEVICEGETCHARACTERISTICS, WdfDeviceGetCharacteristics
+ms.keywords : WdfDeviceGetCharacteristics, kmdf.wdfdevicegetcharacteristics, WdfDeviceGetCharacteristics method, DFDeviceObjectGeneralRef_b6e7566f-59b1-46ee-ab3d-45fa7316336e.xml, wdf.wdfdevicegetcharacteristics, PFN_WDFDEVICEGETCHARACTERISTICS, wdfdevice/WdfDeviceGetCharacteristics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,20 +70,18 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetcharacteristics.md">WdfDeviceSetCharacteristics</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
 
  
 

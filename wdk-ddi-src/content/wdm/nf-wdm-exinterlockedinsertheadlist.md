@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 91640a96-abad-424e-b9bd-301dad2b6aac
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exinterlockedinsertheadlist, wdm/ExInterlockedInsertHeadList, ExInterlockedInsertHeadList, k102_35e48cb9-2d0b-42df-aee0-b391b0ade424.xml, ExInterlockedInsertHeadList routine [Kernel-Mode Driver Architecture]
+ms.keywords : ExInterlockedInsertHeadList routine [Kernel-Mode Driver Architecture], kernel.exinterlockedinsertheadlist, ExInterlockedInsertHeadList, k102_35e48cb9-2d0b-42df-aee0-b391b0ade424.xml, wdm/ExInterlockedInsertHeadList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,26 +83,25 @@ The <b>ExInterlockedInsertHeadList</b> routine can be called at any IRQL. The st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
 | **DDI compliance rules** | IoAllocateFree, IoReuseIrp, MarkingInterlockedQueuedIrps, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-
 <a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 
-<a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
+<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
+
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 
 <a href="..\wdm\nf-wdm-exinterlockedremoveheadlist.md">ExInterlockedRemoveHeadList</a>
 
-<a href="..\wdm\nf-wdm-insertheadlist.md">InsertHeadList</a>
+<a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
 
  
 

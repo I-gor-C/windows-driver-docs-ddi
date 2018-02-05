@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 20EE0017-760E-48A1-8658-2A0278843074
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PCPTABLEINFO, ntnls/CPTABLEINFO, ntnls/PCPTABLEINFO, kernel.cptableinfo, CPTABLEINFO structure [Kernel-Mode Driver Architecture], _CPTABLEINFO, PCPTABLEINFO structure pointer [Kernel-Mode Driver Architecture], CPTABLEINFO, PCPTABLEINFO"
+ms.keywords : CPTABLEINFO structure [Kernel-Mode Driver Architecture], kernel.cptableinfo, CPTABLEINFO, _CPTABLEINFO, PCPTABLEINFO structure pointer [Kernel-Mode Driver Architecture], *PCPTABLEINFO, ntnls/CPTABLEINFO, PCPTABLEINFO, ntnls/PCPTABLEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CPTABLEINFO, *PCPTABLEINFO
+req.typenames : "*PCPTABLEINFO, CPTABLEINFO"
 ---
 
 # _CPTABLEINFO structure
@@ -114,7 +114,4 @@ Specifies a pointer to a WC translation table.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntnls.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fdd53162-b884-4360-b80a-14225abc1185
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILRADIOCONFIGURATIONS, *LPRILRADIOCONFIGURATIONS, netvista.rilradioconfigurations_2, RILRADIOCONFIGURATIONS structure [Network Drivers Starting with Windows Vista], RILRADIOCONFIGURATIONS
+ms.keywords : RILRADIOCONFIGURATIONS, *LPRILRADIOCONFIGURATIONS, rilapitypes/RILRADIOCONFIGURATIONS, netvista.rilradioconfigurations_2, RILRADIOCONFIGURATIONS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILRADIOCONFIGURATIONS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

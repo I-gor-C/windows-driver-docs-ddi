@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 71e4be0a-a5a6-469a-948b-bc5277bc8cbe
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/IKsInterfaceHandler::KsSetPin, ksproxy_3746aba4-11e3-45a5-8495-eda1cad5bf9b.xml, KsSetPin method [Streaming Media Devices], KsSetPin, IKsInterfaceHandler interface [Streaming Media Devices], KsSetPin method, IKsInterfaceHandler, stream.iksinterfacehandler_kssetpin, KsSetPin method [Streaming Media Devices], IKsInterfaceHandler interface, IKsInterfaceHandler::KsSetPin
+ms.keywords : IKsInterfaceHandler interface [Streaming Media Devices], KsSetPin method, KsSetPin method [Streaming Media Devices], IKsInterfaceHandler interface, KsSetPin method [Streaming Media Devices], ksproxy_3746aba4-11e3-45a5-8495-eda1cad5bf9b.xml, IKsInterfaceHandler::KsSetPin, stream.iksinterfacehandler_kssetpin, ksproxy/IKsInterfaceHandler::KsSetPin, IKsInterfaceHandler, KsSetPin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,14 +68,9 @@ The <b>KsSetPin</b> method is called after an instance of the interface handler 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

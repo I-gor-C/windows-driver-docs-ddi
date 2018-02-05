@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 69b0f360-dfe5-4e1f-bdcb-0f908ed129a7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeDeregisterProcessorChangeCallback, KeDeregisterProcessorChangeCallback, kernel.kederegisterprocessorchangecallback, k105_d3e135a0-4eca-4879-97cc-946ad22693db.xml, KeDeregisterProcessorChangeCallback routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/KeDeregisterProcessorChangeCallback, kernel.kederegisterprocessorchangecallback, KeDeregisterProcessorChangeCallback, k105_d3e135a0-4eca-4879-97cc-946ad22693db.xml, KeDeregisterProcessorChangeCallback routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,12 @@ A device driver calls the <a href="..\wdm\nf-wdm-keregisterprocessorchangecallba
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2008 and later versions of Windows. Available in Windows Server 2008 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

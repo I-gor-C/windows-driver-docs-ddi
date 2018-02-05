@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : f6fb2929-177b-44cd-a313-8620ba9b2907
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : UnlinkItemTree method [Imaging Devices], IWiaDrvItem interface, UnlinkItemTree, image.iwiadrvitem_unlinkitemtree, IWiaDrvItem::UnlinkItemTree, wiamindr_lh/IWiaDrvItem::UnlinkItemTree, UnlinkItemTree method [Imaging Devices], IWiaDrvItem, DrvItem_70e5eaf0-4115-4207-9ea2-53ca8c210795.xml, IWiaDrvItem interface [Imaging Devices], UnlinkItemTree method
+ms.keywords : image.iwiadrvitem_unlinkitemtree, DrvItem_70e5eaf0-4115-4207-9ea2-53ca8c210795.xml, UnlinkItemTree method [Imaging Devices], IWiaDrvItem interface, UnlinkItemTree method [Imaging Devices], IWiaDrvItem interface [Imaging Devices], UnlinkItemTree method, IWiaDrvItem, UnlinkItemTree, wiamindr_lh/IWiaDrvItem::UnlinkItemTree, IWiaDrvItem::UnlinkItemTree
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -69,11 +69,7 @@ Minidrivers must call this method on the root item in the driver item tree when 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 789b12db-7f51-426f-8f43-d3a3e43d85b3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsUnregisterWorker, stream.ksunregisterworker, ksfunc_9b3f2185-8ab0-484d-91d7-3b822ce1c4aa.xml, KsUnregisterWorker function [Streaming Media Devices], KsUnregisterWorker
+ms.keywords : KsUnregisterWorker function [Streaming Media Devices], stream.ksunregisterworker, ks/KsUnregisterWorker, ksfunc_9b3f2185-8ab0-484d-91d7-3b822ce1c4aa.xml, KsUnregisterWorker
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,6 @@ The client must ensure that outstanding I/O initiated on any worker thread has b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

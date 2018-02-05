@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : C88B77C3-01CB-4E8C-83A4-EB9AFB122327
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidpddi/HIDP_REPORT_IDS, hid.hidp_report_ids, hidpddi/PHIDP_REPORT_IDS, HIDP_REPORT_IDS, PHIDP_REPORT_IDS, PHIDP_REPORT_IDS structure pointer [Human Input Devices], _HIDP_REPORT_IDS, *PHIDP_REPORT_IDS, HIDP_REPORT_IDS structure [Human Input Devices]
+ms.keywords : HIDP_REPORT_IDS structure [Human Input Devices], PHIDP_REPORT_IDS structure pointer [Human Input Devices], hidpddi/PHIDP_REPORT_IDS, _HIDP_REPORT_IDS, hidpddi/HIDP_REPORT_IDS, hid.hidp_report_ids, *PHIDP_REPORT_IDS, HIDP_REPORT_IDS, PHIDP_REPORT_IDS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHIDP_REPORT_IDS, HIDP_REPORT_IDS"
+req.typenames : HIDP_REPORT_IDS, *PHIDP_REPORT_IDS
 ---
 
 # _HIDP_REPORT_IDS structure
@@ -79,9 +79,6 @@ The report ID of the top-level collection.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 12a8062a-6d4b-4757-a076-56aeb5e4e48c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCompleteDmaTransfer, dma_ref_bd601fef-cf06-42ff-9906-d3bf8edef72f.xml, NdisMCompleteDmaTransfer macro [Network Drivers Starting with Windows Vista], NdisMCompleteDmaTransfer, netvista.ndismcompletedmatransfer
+ms.keywords : netvista.ndismcompletedmatransfer, NdisMCompleteDmaTransfer, NdisMCompleteDmaTransfer macro [Network Drivers Starting with Windows Vista], dma_ref_bd601fef-cf06-42ff-9906-d3bf8edef72f.xml, ndis/NdisMCompleteDmaTransfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -98,12 +98,10 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCompleteDmaTransfer (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCompleteDmaTransfer (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCompleteDmaTransfer (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCompleteDmaTransfer (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
@@ -111,9 +109,9 @@ None
 
 <a href="..\ndis\nf-ndis-ndismsetupdmatransfer.md">NdisMSetupDmaTransfer</a>
 
-<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 
  
 

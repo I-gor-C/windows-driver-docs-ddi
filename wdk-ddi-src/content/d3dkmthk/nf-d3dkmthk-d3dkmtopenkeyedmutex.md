@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 309a43bf-5fad-409f-83e6-e88361b03827
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_6e2179a9-932f-4bd3-b222-4d5f1471636c.xml, display.d3dkmtopenkeyedmutex, D3DKMTOpenKeyedMutex function [Display Devices], d3dkmthk/D3DKMTOpenKeyedMutex, D3DKMTOpenKeyedMutex
+ms.keywords : D3DKMTOpenKeyedMutex function [Display Devices], OpenGL_Functions_6e2179a9-932f-4bd3-b222-4d5f1471636c.xml, D3DKMTOpenKeyedMutex, display.d3dkmtopenkeyedmutex, d3dkmthk/D3DKMTOpenKeyedMutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,14 +115,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTOpenKeyedMutex is supported beginning with the Windows 7 operating system. D3DKMTOpenKeyedMutex is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

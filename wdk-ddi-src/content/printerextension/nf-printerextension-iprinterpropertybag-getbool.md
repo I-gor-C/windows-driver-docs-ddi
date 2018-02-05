@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0C7ED962-F4E2-4F2F-B2CF-96DCFC71C4DD
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetBool method [Print Devices], IPrinterPropertyBag interface, GetBool, GetBool method [Print Devices], print.iprinterpropertybag_getbool, IPrinterPropertyBag, IPrinterPropertyBag::GetBool, printerextension/IPrinterPropertyBag::GetBool, IPrinterPropertyBag interface [Print Devices], GetBool method
+ms.keywords : IPrinterPropertyBag::GetBool, print.iprinterpropertybag_getbool, GetBool method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag, printerextension/IPrinterPropertyBag::GetBool, GetBool method [Print Devices], IPrinterPropertyBag interface [Print Devices], GetBool method, GetBool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,14 +71,9 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : a9233a0f-ac80-46be-9abe-7b87d25736f9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.isensordriver_ongetdatafields, OnGetDataFields method [Sensor Devices], ISensorDriver, ISensorDriver::OnGetDataFields, OnGetDataFields
+ms.keywords : ISensorDriver::OnGetDataFields, OnGetDataFields method [Sensor Devices], ISensorDriver, OnGetDataFields, sensors.isensordriver_ongetdatafields
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -121,11 +121,6 @@ The sensor class extension calls this method only for sensors for which the user
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

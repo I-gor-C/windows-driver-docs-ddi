@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f3fa5212-66c1-45f8-a96f-78d1f2f01fe8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILGEOLOCATIONREQUESTINFO, netvista.rilgeolocationrequestinfo, *LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO structure [Network Drivers Starting with Windows Vista], RILGEOLOCATIONREQUESTINFO
+ms.keywords : netvista.rilgeolocationrequestinfo, RILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO structure [Network Drivers Starting with Windows Vista], *LPRILGEOLOCATIONREQUESTINFO, ntddrilapitypes/RILGEOLOCATIONREQUESTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO
+req.typenames : "*LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO"
 ---
 
 # RILGEOLOCATIONREQUESTINFO structure
@@ -74,7 +74,4 @@ typedef struct _RILGEOLOCATIONREQUESTINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e93649d1-4ad0-4873-99c7-b2f3ed48aac6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, d3d10umddi/D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, display.d3d11_ddi_shader_min_precision_support_data, D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA structure [Display Devices]
+ms.keywords : d3d10umddi/D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, display.d3d11_ddi_shader_min_precision_support_data, D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ A combination of values of type <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

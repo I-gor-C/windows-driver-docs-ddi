@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d0b0ada7-afb1-4cb7-ada6-7c5c7abe7d19
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisIfRegisterInterface function [Network Drivers Starting with Windows Vista], ndis/NdisIfRegisterInterface, NdisIfRegisterInterface, net_if_functions_ref_baca325c-667d-4472-9c91-dbc8fd41d033.xml, netvista.ndisifregisterinterface
+ms.keywords : net_if_functions_ref_baca325c-667d-4472-9c91-dbc8fd41d033.xml, netvista.ndisifregisterinterface, NdisIfRegisterInterface function [Network Drivers Starting with Windows Vista], NdisIfRegisterInterface, ndis/NdisIfRegisterInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,8 +61,8 @@ NDIS_STATUS NdisIfRegisterInterface(
 
 A handle that identifies the network interface provider that is registering the interface. The
      caller obtained this handle from a previous call to the 
-     <mshelp:link keywords="netvista.ndisifregisterprovider" tabindex="0"><b>
-     NdisIfRegisterProvider</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisifregisterprovider.md">
+     NdisIfRegisterProvider</a> function.
 
 `NetLuid`
 
@@ -186,34 +186,32 @@ NDIS might not return the same interface index every time a provider registers a
 
 To indicate that an interface should be removed from the list of known interfaces on the computer, an
     interface provider calls the 
-    <mshelp:link keywords="netvista.ndisifderegisterinterface" tabindex="0"><b>
-    NdisIfDeregisterInterface</b></mshelp:link> function, for example, because the interface has been uninstalled. .
+    <a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">
+    NdisIfDeregisterInterface</a> function, for example, because the interface has been uninstalled. .
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Interfaces_Function |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndisifregisterprovider.md">NdisIfRegisterProvider</a>
+
 <a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">NdisIfDeregisterInterface</a>
+
+<a href="..\ndis\ns-ndis-_net_if_information.md">NET_IF_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 
-<a href="..\ndis\nf-ndis-ndisifregisterprovider.md">NdisIfRegisterProvider</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
-
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<a href="..\ndis\ns-ndis-_net_if_information.md">NET_IF_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 
  
 

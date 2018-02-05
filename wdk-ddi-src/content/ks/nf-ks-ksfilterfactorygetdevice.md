@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e5b7b014-3e06-49f2-8ccd-45d74592e349
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsFilterFactoryGetDevice, KsFilterFactoryGetDevice, stream.ksfilterfactorygetdevice, KsFilterFactoryGetDevice function [Streaming Media Devices], avfunc_1e2ec536-69a1-4606-9d99-ebdebd25c89a.xml
+ms.keywords : KsFilterFactoryGetDevice, ks/KsFilterFactoryGetDevice, avfunc_1e2ec536-69a1-4606-9d99-ebdebd25c89a.xml, KsFilterFactoryGetDevice function [Streaming Media Devices], stream.ksfilterfactorygetdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ For more information about the AVStream object hierarchy, see  <a href="https://
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

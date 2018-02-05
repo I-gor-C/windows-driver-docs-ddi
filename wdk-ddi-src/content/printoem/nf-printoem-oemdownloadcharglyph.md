@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : da9a4058-1a0e-484b-afcd-9d4558810acd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMDownloadCharGlyph, OEMDownloadCharGlyph function [Print Devices], OEMDownloadCharGlyph, print_obsoletefunctions_fb2af04d-799c-419c-b675-3444fd7d3143.xml, print.oemdownloadcharglyph
+ms.keywords : OEMDownloadCharGlyph function [Print Devices], print.oemdownloadcharglyph, OEMDownloadCharGlyph, printoem/OEMDownloadCharGlyph, print_obsoletefunctions_fb2af04d-799c-419c-b675-3444fd7d3143.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

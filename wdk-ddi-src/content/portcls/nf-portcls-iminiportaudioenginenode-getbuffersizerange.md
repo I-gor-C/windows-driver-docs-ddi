@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 75CBDD4F-618F-4618-9D53-4A8DF40992B0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iminiportaudioenginenode_getbuffersizerange, IMiniportAudioEngineNode interface [Audio Devices], GetBufferSizeRange method, IMiniportAudioEngineNode, GetBufferSizeRange, GetBufferSizeRange method [Audio Devices], portcls/IMiniportAudioEngineNode::GetBufferSizeRange, IMiniportAudioEngineNode::GetBufferSizeRange, GetBufferSizeRange method [Audio Devices], IMiniportAudioEngineNode interface
+ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetBufferSizeRange method, IMiniportAudioEngineNode::GetBufferSizeRange, GetBufferSizeRange method [Audio Devices], GetBufferSizeRange method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getbuffersizerange, GetBufferSizeRange, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode::GetBufferSizeRange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,14 +77,10 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6ab6a505-ad02-4dce-8061-bba13081208a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_CHILD_CAPABILITIES, PDXGK_CHILD_CAPABILITIES, dispmprt/PDXGK_CHILD_CAPABILITIES, PDXGK_CHILD_CAPABILITIES structure pointer [Display Devices], DmStructs_886366a4-949a-4171-abcf-e318df848285.xml, display.dxgk_child_capabilities, dispmprt/DXGK_CHILD_CAPABILITIES, _DXGK_CHILD_CAPABILITIES, *PDXGK_CHILD_CAPABILITIES, DXGK_CHILD_CAPABILITIES structure [Display Devices]
+ms.keywords : "*PDXGK_CHILD_CAPABILITIES, dispmprt/PDXGK_CHILD_CAPABILITIES, DXGK_CHILD_CAPABILITIES structure [Display Devices], PDXGK_CHILD_CAPABILITIES, PDXGK_CHILD_CAPABILITIES structure pointer [Display Devices], _DXGK_CHILD_CAPABILITIES, display.dxgk_child_capabilities, DmStructs_886366a4-949a-4171-abcf-e318df848285.xml, DXGK_CHILD_CAPABILITIES, dispmprt/DXGK_CHILD_CAPABILITIES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,18 +76,16 @@ If a child device is of type <b>TypeOther</b>, then <b>Type.Other.MustBeZero</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also
 
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
 <a href="..\dispmprt\ns-dispmprt-_dxgk_video_output_capabilities.md">DXGK_VIDEO_OUTPUT_CAPABILITIES</a>
-
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
 
  
 

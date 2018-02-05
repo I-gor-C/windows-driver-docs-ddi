@@ -111,9 +111,7 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | winsmcrd.h |
-| **IRQL** |  |
 
 ## See Also
 

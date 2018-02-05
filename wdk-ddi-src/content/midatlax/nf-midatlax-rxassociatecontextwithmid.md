@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b2ced4fb-5104-4bf3-8c6c-bf129e3dff97
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : midatlax/RxAssociateContextWithMid, RxAssociateContextWithMid function [Installable File System Drivers], ifsk.rxassociatecontextwithmid, rxref_fdf65b83-9924-4463-bf63-ca28d11f3090.xml, RxAssociateContextWithMid
+ms.keywords : midatlax/RxAssociateContextWithMid, RxAssociateContextWithMid function [Installable File System Drivers], rxref_fdf65b83-9924-4463-bf63-ca28d11f3090.xml, RxAssociateContextWithMid, ifsk.rxassociatecontextwithmid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,16 +108,14 @@ The <i>pContext</i> parameter can be any opaque context but it is commonly an RX
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | midatlax.h (include Midatlax.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\midatlax\nf-midatlax-rxreassociatemid.md">RxReassociateMid</a>
 
 <a href="..\midatlax\nf-midatlax-rxcreatemidatlas.md">RxCreateMidAtlas</a>
 
@@ -126,8 +124,6 @@ The <i>pContext</i> parameter can be any opaque context but it is commonly an RX
 <a href="..\midatlax\nf-midatlax-rxmapanddissociatemidfromcontext.md">RxMapAndDissociateMidFromContext</a>
 
 <a href="..\midatlax\nf-midatlax-rxmapmidtocontext.md">RxMapMidToContext</a>
-
-<a href="..\midatlax\nf-midatlax-rxreassociatemid.md">RxReassociateMid</a>
 
  
 

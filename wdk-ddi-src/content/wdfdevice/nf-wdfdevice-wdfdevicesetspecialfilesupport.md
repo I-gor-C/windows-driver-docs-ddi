@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7648c486-181a-45c8-9c4b-e3158428046a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceSetSpecialFileSupport, wdf.wdfdevicesetspecialfilesupport, WdfDeviceSetSpecialFileSupport, DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, kmdf.wdfdevicesetspecialfilesupport, PFN_WDFDEVICESETSPECIALFILESUPPORT, WdfDeviceSetSpecialFileSupport method
+ms.keywords : WdfDeviceSetSpecialFileSupport, DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, PFN_WDFDEVICESETSPECIALFILESUPPORT, wdfdevice/WdfDeviceSetSpecialFileSupport, WdfDeviceSetSpecialFileSupport method, wdf.wdfdevicesetspecialfilesupport, kmdf.wdfdevicesetspecialfilesupport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,12 +87,10 @@ For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

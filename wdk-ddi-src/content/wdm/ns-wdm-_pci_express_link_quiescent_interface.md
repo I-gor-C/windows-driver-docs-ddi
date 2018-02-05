@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : c57ef3e0-5d4d-4545-9c70-b2e11e5823ec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI.pci_express_link_quiescent_interface_, wdm/, _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE structure [Buses], *PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE
+ms.keywords : wdm/, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, *PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI.pci_express_link_quiescent_interface_, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE structure [Buses], _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -52,7 +52,4 @@ The <b>PCI_EXPRESS_LINK_QUIESCENT_INTERFACE</b>  structure is reserved for syste
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |

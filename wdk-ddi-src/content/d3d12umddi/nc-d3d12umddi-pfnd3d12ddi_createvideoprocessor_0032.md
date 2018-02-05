@@ -63,7 +63,7 @@ The hardware device being processed.
 
 `*pArgs`
 
-
+The arguments used to create a video processor.
 
 `hDrvVideoProcessor`
 
@@ -78,11 +78,6 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

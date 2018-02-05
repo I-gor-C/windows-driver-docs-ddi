@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dca8f82b-f058-4765-890c-973f8462c2f5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NmrClientAttachProvider function [Network Drivers Starting with Windows Vista], NmrClientAttachProvider, netvista.nmrclientattachprovider, nmrref_6d66009c-5262-4a75-986d-1eb91dcc61a2.xml, netioddk/NmrClientAttachProvider
+ms.keywords : nmrref_6d66009c-5262-4a75-986d-1eb91dcc61a2.xml, NmrClientAttachProvider, netioddk/NmrClientAttachProvider, netvista.nmrclientattachprovider, NmrClientAttachProvider function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -172,8 +172,8 @@ If the
     <b>NmrClientAttachProvider</b> function returns STATUS_SUCCESS and the client module dynamically allocated
     the memory for its binding context, the client module should free that allocated memory when the NMR
     calls the client module's 
-    <mshelp:link keywords="netvista.clientcleanupbindingcontext" tabindex="0"><i>
-    ClientCleanupBindingContext</i></mshelp:link> callback function after the client module and provider module are
+    <a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">
+    ClientCleanupBindingContext</a> callback function after the client module and provider module are
     detached from each other.
 
 If the 
@@ -186,22 +186,19 @@ If the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
 
 <a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">ClientCleanupBindingContext</a>
 
 <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
-
-<a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a>
 
  
 

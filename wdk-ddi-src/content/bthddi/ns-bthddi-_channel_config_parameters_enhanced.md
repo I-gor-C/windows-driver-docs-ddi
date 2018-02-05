@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 4C28FD6E-A1DD-4887-95B0-6028ECA18204
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : CHANNEL_CONFIG_PARAMETERS_ENHANCED, CHANNEL_CONFIG_PARAMETERS_ENHANCED structure [Bluetooth Devices], bltooth.channel_config_parameters_enhanced, PCHANNEL_CONFIG_PARAMETERS_ENHANCED structure pointer [Bluetooth Devices], bthddi/PCHANNEL_CONFIG_PARAMETERS_ENHANCED, *PCHANNEL_CONFIG_PARAMETERS_ENHANCED, bthddi/CHANNEL_CONFIG_PARAMETERS_ENHANCED, PCHANNEL_CONFIG_PARAMETERS_ENHANCED, _CHANNEL_CONFIG_PARAMETERS_ENHANCED
+ms.keywords : PCHANNEL_CONFIG_PARAMETERS_ENHANCED structure pointer [Bluetooth Devices], bthddi/PCHANNEL_CONFIG_PARAMETERS_ENHANCED, bthddi/CHANNEL_CONFIG_PARAMETERS_ENHANCED, CHANNEL_CONFIG_PARAMETERS_ENHANCED structure [Bluetooth Devices], _CHANNEL_CONFIG_PARAMETERS_ENHANCED, CHANNEL_CONFIG_PARAMETERS_ENHANCED, bltooth.channel_config_parameters_enhanced, PCHANNEL_CONFIG_PARAMETERS_ENHANCED, *PCHANNEL_CONFIG_PARAMETERS_ENHANCED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,7 +104,5 @@ Retransmission and flow for the direction
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows Versions:\_Supported in Windows 8 and later versions of Windows |
 | **Header** | bthddi.h (include Bthddi.h) |

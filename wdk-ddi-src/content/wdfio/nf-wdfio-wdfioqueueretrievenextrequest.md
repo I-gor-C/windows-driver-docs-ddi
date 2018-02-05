@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1cde2e20-5ce6-4c5b-b40c-0b04da76980c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueRetrieveNextRequest, WdfIoQueueRetrieveNextRequest, WdfIoQueueRetrieveNextRequest method, PFN_WDFIOQUEUERETRIEVENEXTREQUEST, wdf.wdfioqueueretrievenextrequest, kmdf.wdfioqueueretrievenextrequest, DFQueueObjectRef_93fbecf2-1bfa-426c-9739-153d79d0ac27.xml
+ms.keywords : wdfio/WdfIoQueueRetrieveNextRequest, kmdf.wdfioqueueretrievenextrequest, wdf.wdfioqueueretrievenextrequest, DFQueueObjectRef_93fbecf2-1bfa-426c-9739-153d79d0ac27.xml, WdfIoQueueRetrieveNextRequest, PFN_WDFIOQUEUERETRIEVENEXTREQUEST, WdfIoQueueRetrieveNextRequest method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,20 +134,19 @@ For more information about the <b>WdfIoQueueRetrieveNextRequest</b> method, see 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueueretrievenextrequest |
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
-
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
 
  
 

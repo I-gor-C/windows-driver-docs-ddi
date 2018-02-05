@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 71A01647-3415-4F76-A67C-D1022C8A11D9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_ISOLATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_ISOLATION_PARAMETERS, PNDIS_ISOLATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_ISOLATION_PARAMETERS, NDIS_ISOLATION_PARAMETERS, ntddndis/PNDIS_ISOLATION_PARAMETERS, *PNDIS_ISOLATION_PARAMETERS, netvista.ndis_isolation_parameters, _NDIS_ISOLATION_PARAMETERS
+ms.keywords : NDIS_ISOLATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_ISOLATION_PARAMETERS, ntddndis/NDIS_ISOLATION_PARAMETERS, PNDIS_ISOLATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_isolation_parameters, PNDIS_ISOLATION_PARAMETERS, ntddndis/PNDIS_ISOLATION_PARAMETERS, *PNDIS_ISOLATION_PARAMETERS, _NDIS_ISOLATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_ISOLATION_PARAMETERS, NDIS_ISOLATION_PARAMETERS"
+req.typenames : NDIS_ISOLATION_PARAMETERS, *PNDIS_ISOLATION_PARAMETERS
 ---
 
 # _NDIS_ISOLATION_PARAMETERS structure
@@ -96,24 +96,22 @@ A <b>ULONG</b> value that specifies the number of <a href="..\ntddndis\ns-ntddnd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.40 and later. Supported in NDIS 6.40 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_isolation.md">NDIS_SWITCH_PORT_PROPERTY_ISOLATION</a>
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_isolation_mode.md">NDIS_ISOLATION_MODE</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn383680">NDIS_ISOLATION_PARAMETERS_GET_FIRST_ROUTING_DOMAIN_ENTRY</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_routing_domain_entry.md">NDIS_ROUTING_DOMAIN_ENTRY</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn383690">OID_GEN_ISOLATION_PARAMETERS</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_isolation_mode.md">NDIS_ISOLATION_MODE</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn383690">OID_GEN_ISOLATION_PARAMETERS</a>
 
  
 

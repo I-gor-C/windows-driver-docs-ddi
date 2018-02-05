@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9F267427-8D70-45D5-A8E6-67A1C6B73CDB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucx_controller_transport_characteristics, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure [Buses], *PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, ucxcontroller/PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure pointer [Buses], ucxcontroller/UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS
+ms.keywords : "_UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure [Buses], ucxcontroller/PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, *PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, buses.ucx_controller_transport_characteristics, ucxcontroller/UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure pointer [Buses], PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,9 +88,7 @@ is set, <b>MaxPotentialBandwidth</b> contains valid information. Otherwise, it m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 
 ## See Also

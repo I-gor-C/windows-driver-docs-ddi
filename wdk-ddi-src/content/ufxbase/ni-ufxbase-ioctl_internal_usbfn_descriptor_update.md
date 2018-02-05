@@ -74,6 +74,4 @@ UFX sends this IOCTL to the command queue created for the endpoint by <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ufxbase.h |
-| **IRQL** |  |

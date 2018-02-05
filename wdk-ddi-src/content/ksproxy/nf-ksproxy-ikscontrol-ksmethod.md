@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9f9121be-786d-4a1c-bb01-7bf3c1d3b6cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/IKsControl::KsMethod, IKsControl interface [Streaming Media Devices], KsMethod method, IKsControl, KsMethod method [Streaming Media Devices], IKsControl interface, KsMethod method [Streaming Media Devices], stream.ikscontrol_ksmethod, IKsControl::KsMethod, ksproxy_700d1bc3-f01e-4fff-9976-f64cdfd54f82.xml, KsMethod
+ms.keywords : KsMethod method [Streaming Media Devices], KsMethod, ksproxy_700d1bc3-f01e-4fff-9976-f64cdfd54f82.xml, KsMethod method [Streaming Media Devices], IKsControl interface, IKsControl::KsMethod, IKsControl interface [Streaming Media Devices], KsMethod method, IKsControl, stream.ikscontrol_ksmethod, ksproxy/IKsControl::KsMethod
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,14 +90,9 @@ To determine the buffer size that is required for a specific method request, you
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | DesktopMobile |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | DesktopMobile |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

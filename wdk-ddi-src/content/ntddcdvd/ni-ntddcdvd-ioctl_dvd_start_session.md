@@ -69,6 +69,4 @@ The <b>Information</b> field is set to <b>sizeof</b>(DVD_SESSION_ID). The <b>Sta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

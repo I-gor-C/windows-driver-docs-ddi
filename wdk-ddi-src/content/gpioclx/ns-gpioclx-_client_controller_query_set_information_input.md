@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : C4AA60FF-03AD-444F-B897-654B787B5F86
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gpioclx/CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, GPIO.client_controller_query_set_information_input, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure [Parallel Ports], _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure pointer [Parallel Ports], gpioclx/PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
+ms.keywords : "*PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, GPIO.client_controller_query_set_information_input, PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure pointer [Parallel Ports], CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure [Parallel Ports], PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, gpioclx/CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, gpioclx/PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT"
+req.typenames : CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
 ---
 
 # _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure
@@ -87,18 +87,16 @@ The <i>InputBuffer</i> parameter of the <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698241">CLIENT_QuerySetControllerInformation</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
 

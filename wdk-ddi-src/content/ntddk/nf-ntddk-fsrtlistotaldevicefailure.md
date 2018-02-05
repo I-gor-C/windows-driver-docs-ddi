@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6d1a39ea-bdc0-47e2-94a5-69554f4b38c4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIsTotalDeviceFailure routine [Installable File System Drivers], ifsk.fsrtlistotaldevicefailure, FsRtlIsTotalDeviceFailure, fsrtlref_b4ec70b9-8a76-4e47-905a-54238a0b9173.xml, ntddk/FsRtlIsTotalDeviceFailure
+ms.keywords : ntddk/FsRtlIsTotalDeviceFailure, FsRtlIsTotalDeviceFailure routine [Installable File System Drivers], FsRtlIsTotalDeviceFailure, ifsk.fsrtlistotaldevicefailure, fsrtlref_b4ec70b9-8a76-4e47-905a-54238a0b9173.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,20 +72,18 @@ For more information about handling device failure, see <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems. This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlisntstatusexpected.md">FsRtlIsNtstatusExpected</a>
 
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnormalizentstatus~r1.md">FsRtlNormalizeNtstatus</a>
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 354dcd2b-fa63-4574-94d8-149e3f199751
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsDataTypeHandler interface [Streaming Media Devices], KsIsMediaTypeInRanges method, IKsDataTypeHandler::KsIsMediaTypeInRanges, ksproxy/IKsDataTypeHandler::KsIsMediaTypeInRanges, stream.iksdatatypehandler_ksismediatypeinranges, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler interface, KsIsMediaTypeInRanges, ksproxy_ebd4f24e-02a2-4228-b11b-890693ece498.xml, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler
+ms.keywords : ksproxy/IKsDataTypeHandler::KsIsMediaTypeInRanges, KsIsMediaTypeInRanges, ksproxy_ebd4f24e-02a2-4228-b11b-890693ece498.xml, IKsDataTypeHandler interface [Streaming Media Devices], KsIsMediaTypeInRanges method, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler, IKsDataTypeHandler::KsIsMediaTypeInRanges, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler interface, stream.iksdatatypehandler_ksismediatypeinranges
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,14 +68,9 @@ A client first calls the <a href="https://msdn.microsoft.com/library/windows/har
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

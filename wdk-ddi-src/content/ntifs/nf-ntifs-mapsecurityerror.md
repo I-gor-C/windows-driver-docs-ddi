@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 899b7d6e-a17b-4030-9512-591b003ca6b2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : MapSecurityError function [Installable File System Drivers], MapSecurityError, IFSMiscRef_41a163d7-81d1-4877-b1c2-ae90b203177a.xml, ifsk.mapsecurityerror, ntifs/MapSecurityError
+ms.keywords : ntifs/MapSecurityError, ifsk.mapsecurityerror, MapSecurityError, MapSecurityError function [Installable File System Drivers], IFSMiscRef_41a163d7-81d1-4877-b1c2-ae90b203177a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,9 @@ This function maps a security interface status code of type SECURITY_STATUS to a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 and later. Available in Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any. |
-| **DDI compliance rules** |  |

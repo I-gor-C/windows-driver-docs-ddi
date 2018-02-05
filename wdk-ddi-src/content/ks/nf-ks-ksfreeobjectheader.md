@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 59ca5035-f4d8-4a9c-a298-c8dca604f4db
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFreeObjectHeader, ksfunc_11097907-6879-43bb-879b-b74eb13d6109.xml, KsFreeObjectHeader function [Streaming Media Devices], stream.ksfreeobjectheader, ks/KsFreeObjectHeader
+ms.keywords : KsFreeObjectHeader function [Streaming Media Devices], ksfunc_11097907-6879-43bb-879b-b74eb13d6109.xml, ks/KsFreeObjectHeader, KsFreeObjectHeader, stream.ksfreeobjectheader
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

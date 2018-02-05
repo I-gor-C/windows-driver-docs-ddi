@@ -81,8 +81,8 @@ None
 
 A driver specifies the 
     <i>MiniportDevicePnPEventNotify</i> entry point when it calls the 
-    <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-    NdisMRegisterMiniportDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+    NdisMRegisterMiniportDriver</a> function.
 
 NDIS calls the driver's 
     <i>MiniportDevicePnPEventNotify</i> function with the 
@@ -165,12 +165,9 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | NdisOidComplete |
 
@@ -178,11 +175,11 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569780">OID_PNP_SET_POWER</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\ns-ndis-_net_device_pnp_event.md">NET_DEVICE_PNP_EVENT</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E48BDF14-5B56-45AF-9DD2-F019C8B7D7E5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IO_ACCESS_MODE, wdm/IO_ACCESS_MODE, RandomAccess, _IO_ACCESS_MODE, wdm/RandomAccess, wdm/SequentialAccess, SequentialAccess, IO_ACCESS_MODE enumeration [Kernel-Mode Driver Architecture], kernel.io_access_mode
+ms.keywords : IO_ACCESS_MODE, RandomAccess, SequentialAccess, kernel.io_access_mode, wdm/SequentialAccess, wdm/IO_ACCESS_MODE, wdm/RandomAccess, _IO_ACCESS_MODE, IO_ACCESS_MODE enumeration [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,7 +69,4 @@ typedef enum _IO_ACCESS_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |

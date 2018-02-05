@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7d720346-4a68-40bd-816d-c406995b3232
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx11param_Structs_fc1a42ad-2d14-44de-abf1-480810b8d080.xml, display.d3d11ddiarg_createcommandlist, d3d10umddi/D3D11DDIARG_CREATECOMMANDLIST, D3D11DDIARG_CREATECOMMANDLIST, D3D11DDIARG_CREATECOMMANDLIST structure [Display Devices]
+ms.keywords : UMDisplayDriver_Dx11param_Structs_fc1a42ad-2d14-44de-abf1-480810b8d080.xml, D3D11DDIARG_CREATECOMMANDLIST, display.d3d11ddiarg_createcommandlist, D3D11DDIARG_CREATECOMMANDLIST structure [Display Devices], d3d10umddi/D3D11DDIARG_CREATECOMMANDLIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct D3D11DDIARG_CREATECOMMANDLIST {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDIARG_CREATECOMMANDLIST is supported beginning with the Windows 7 operating system. D3D11DDIARG_CREATECOMMANDLIST is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

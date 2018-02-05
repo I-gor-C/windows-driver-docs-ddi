@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : BC8D4FB1-69F4-4FAE-BA90-7CCB57D4A6C4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.magnetometer_accuracy, sensorsdef/MAGNETOMETER_ACCURACY, sensorsdef/MagnetometerAccuracy_Approximate, MagnetometerAccuracy_Unknown, MAGNETOMETER_ACCURACY enumeration [Sensor Devices], MAGNETOMETER_ACCURACY, MagnetometerAccuracy_Unreliable, sensorsdef/MagnetometerAccuracy_High, sensorsdef/MagnetometerAccuracy_Unknown, MagnetometerAccuracy_Approximate, MagnetometerAccuracy_High, sensorsdef/MagnetometerAccuracy_Unreliable
+ms.keywords : MagnetometerAccuracy_Approximate, MAGNETOMETER_ACCURACY enumeration [Sensor Devices], MagnetometerAccuracy_High, sensorsdef/MagnetometerAccuracy_High, sensorsdef/MAGNETOMETER_ACCURACY, MAGNETOMETER_ACCURACY, sensorsdef/MagnetometerAccuracy_Unknown, sensors.magnetometer_accuracy, sensorsdef/MagnetometerAccuracy_Approximate, MagnetometerAccuracy_Unknown, sensorsdef/MagnetometerAccuracy_Unreliable, MagnetometerAccuracy_Unreliable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,5 @@ typedef enum _MAGNETOMETER_ACCURACY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | sensorsdef.h |

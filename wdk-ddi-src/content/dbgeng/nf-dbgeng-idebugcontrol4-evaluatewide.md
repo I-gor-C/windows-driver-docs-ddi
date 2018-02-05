@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1a40e8a7-ba7b-4aaf-975f-4095f9ef7ba7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl4::EvaluateWide, IDebugControl4, EvaluateWide method [Windows Debugging], EvaluateWide method [Windows Debugging], IDebugControl4 interface, debugger.evaluatewide, IDebugControl4::EvaluateWide, IDebugControl4 interface [Windows Debugging], EvaluateWide method, EvaluateWide
+ms.keywords : dbgeng/IDebugControl4::EvaluateWide, debugger.evaluatewide, EvaluateWide method [Windows Debugging], EvaluateWide, IDebugControl4::EvaluateWide, EvaluateWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, IDebugControl4 interface [Windows Debugging], EvaluateWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -115,24 +115,19 @@ If an error occurs while evaluating the expression, returning E_FAIL, the <i>Rem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546701">GetExpressionSyntax</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556696">SetExpressionSyntax</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556697">SetExpressionSyntaxByName</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546701">GetExpressionSyntax</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556697">SetExpressionSyntaxByName</a>
 
  
 

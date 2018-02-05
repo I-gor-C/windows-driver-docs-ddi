@@ -58,17 +58,14 @@ Be careful to implement <a href="https://msdn.microsoft.com/165c83cb-c0be-4a09-9
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **DLL** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/165c83cb-c0be-4a09-9220-a5208f660308">GetInterestMask</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a>
+
+<a href="https://msdn.microsoft.com/165c83cb-c0be-4a09-9220-a5208f660308">GetInterestMask</a>
 
  
 

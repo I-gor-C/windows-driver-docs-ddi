@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d82b4e91-6734-4644-811d-fb64cfb9f5c4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure [Display Devices], D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS, d3d10umddi/D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS, display.d3d11_ddi_query_data_pipeline_statistics, UMDisplayDriver_Dx11param_Structs_68a59a1f-0f02-4be2-b417-5c4064df23fb.xml
+ms.keywords : D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure [Display Devices], UMDisplayDriver_Dx11param_Structs_68a59a1f-0f02-4be2-b417-5c4064df23fb.xml, d3d10umddi/D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS, display.d3d11_ddi_query_data_pipeline_statistics, D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -111,9 +111,7 @@ The driver associates a D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS structure with 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS is supported beginning with the Windows 7 operating system. D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

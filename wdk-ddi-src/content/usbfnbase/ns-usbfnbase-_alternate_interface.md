@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F57FA113-F664-4B10-8457-DF6D266264E9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbfnbase/ALTERNATE_INTERFACE, buses.alternate_interface, PALTERNATE_INTERFACE, ALTERNATE_INTERFACE structure [Buses], PALTERNATE_INTERFACE structure pointer [Buses], usbfnbase/PALTERNATE_INTERFACE, _ALTERNATE_INTERFACE, ALTERNATE_INTERFACE, *PALTERNATE_INTERFACE
+ms.keywords : usbfnbase/ALTERNATE_INTERFACE, PALTERNATE_INTERFACE structure pointer [Buses], PALTERNATE_INTERFACE, *PALTERNATE_INTERFACE, usbfnbase/PALTERNATE_INTERFACE, buses.alternate_interface, _ALTERNATE_INTERFACE, ALTERNATE_INTERFACE, ALTERNATE_INTERFACE structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ALTERNATE_INTERFACE, *PALTERNATE_INTERFACE
+req.typenames : "*PALTERNATE_INTERFACE, ALTERNATE_INTERFACE"
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,6 @@ The index number for theUSB interface setting.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h (include Usbfnbase.h) |
 
 ## See Also

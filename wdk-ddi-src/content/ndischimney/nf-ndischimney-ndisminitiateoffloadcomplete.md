@@ -45,8 +45,8 @@ req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 An offload target calls the 
   <b>NdisMInitiateOffloadComplete</b> function to complete an offload operation that was initiated by a
   previous call to the 
-  <mshelp:link keywords="netvista.miniportinitiateoffload" tabindex="0"><i>
-  MiniportInitiateOffload</i></mshelp:link> function.
+  <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">
+  MiniportInitiateOffload</a> function.
 
 ## Syntax
 
@@ -62,17 +62,17 @@ VOID NdisMInitiateOffloadComplete(
 `NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to 
-     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-     NdisMRegisterMiniportDriver</b></mshelp:link>.
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a>.
 
 `OffloadBlockList`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure. The offload target obtained this pointer as an input
+     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The offload target obtained this pointer as an input
      parameter to its 
-     <mshelp:link keywords="netvista.miniportinitiateoffload" tabindex="0"><i>
-     MiniportInitiateOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">
+     MiniportInitiateOffload</a> function.
 
 
 ## Return Value
@@ -85,8 +85,8 @@ Before calling
     <b>NdisMInitiateOffloadComplete</b>, the offload target must write one of the following NDIS_STATUS
     values to the 
     <b>Status</b> member of each 
-    <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure in the state tree passed to the offload target's 
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure in the state tree passed to the offload target's 
     <i>MiniportInitiateOffload</i> function:
 <ul>
 <li>
@@ -146,35 +146,31 @@ NDIS_STATUS_FAILURE
 
 </li>
 </ul>For more information, see 
-    <mshelp:link keywords="netvista.returning_completion_status_of_an_initiate_offload_operation" tabindex="0">
-    Returning Completion Status of an Initiate Offload Operation</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/returning-completion-status-of-an-initiate-offload-operation">
+    Returning Completion Status of an Initiate Offload Operation</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
+
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
+
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
+
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">NdisTcpOffloadReceiveHandler</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569816">OID_TCP_TASK_OFFLOAD</a>
-
-<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
-
-<mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link>
-
-<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
-
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
  
 

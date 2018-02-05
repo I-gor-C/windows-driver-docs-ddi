@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : C1AF383A-2D9D-4B2F-A925-D138E1B7AA4F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndiswwan/PNDIS_WWAN_GET_VISIBLE_PROVIDERS, PNDIS_WWAN_GET_VISIBLE_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_GET_VISIBLE_PROVIDERS, *PNDIS_WWAN_GET_VISIBLE_PROVIDERS, _NDIS_WWAN_GET_VISIBLE_PROVIDERS, ndiswwan/NDIS_WWAN_GET_VISIBLE_PROVIDERS, netvista.ndis_wwan_get_visible_providers
+ms.keywords : NDIS_WWAN_GET_VISIBLE_PROVIDERS, ndiswwan/NDIS_WWAN_GET_VISIBLE_PROVIDERS, PNDIS_WWAN_GET_VISIBLE_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_GET_VISIBLE_PROVIDERS, ndiswwan/PNDIS_WWAN_GET_VISIBLE_PROVIDERS, PNDIS_WWAN_GET_VISIBLE_PROVIDERS, _NDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_get_visible_providers
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -108,9 +108,7 @@ A formatted WWAN_GET_VISIBLE_PROVIDERS object that provides additional informati
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 717847D7-D7D9-4FEE-B3DC-14B0404FA937
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_P2P_SCAN_TYPE_ACTIVE, wditypes/WDI_P2P_SCAN_TYPE_ACTIVE, _WDI_P2P_SCAN_TYPE, netvista.wdi_p2p_scan_type, wditypes/WDI_P2P_SCAN_TYPE_PASSIVE, WDI_P2P_SCAN_TYPE_AUTO, wditypes/WDI_P2P_SCAN_TYPE, netvista.wifi_p2p_scan_type, WDI_P2P_SCAN_TYPE, wditypes/WDI_P2P_SCAN_TYPE_AUTO, WDI_P2P_SCAN_TYPE_PASSIVE, WDI_P2P_SCAN_TYPE enumeration [Device and Driver Installation]
+ms.keywords : wditypes/WDI_P2P_SCAN_TYPE_ACTIVE, WDI_P2P_SCAN_TYPE_PASSIVE, WDI_P2P_SCAN_TYPE, wditypes/WDI_P2P_SCAN_TYPE, WDI_P2P_SCAN_TYPE_AUTO, netvista.wifi_p2p_scan_type, _WDI_P2P_SCAN_TYPE, wditypes/WDI_P2P_SCAN_TYPE_AUTO, WDI_P2P_SCAN_TYPE enumeration [Device and Driver Installation], wditypes/WDI_P2P_SCAN_TYPE_PASSIVE, netvista.wdi_p2p_scan_type, WDI_P2P_SCAN_TYPE_ACTIVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,5 @@ typedef enum _WDI_P2P_SCAN_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

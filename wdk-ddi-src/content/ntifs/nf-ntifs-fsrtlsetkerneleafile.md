@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlSetKernelEaFile routine [Installable File System Drivers], ifsk.fsrtlsetkerneleafile, ntifs/FsRtlSetKernelEaFile, FsRtlSetKernelEaFile
+ms.keywords : FsRtlSetKernelEaFile routine [Installable File System Drivers], ntifs/FsRtlSetKernelEaFile, FsRtlSetKernelEaFile, ifsk.fsrtlsetkerneleafile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -156,14 +156,10 @@ You delete EA’s by specifying an <b>EAName</b> with an <b>EaValueLength</b> of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

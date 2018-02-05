@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B1DC847C-B596-452D-B96E-3B78C6F995B2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SET_PRESHUTDOWN_STATE structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SET_PRESHUTDOWN_STATE, NDIS_WWAN_SET_PRESHUTDOWN_STATE, ndiswwan/PNDIS_WWAN_SET_PRESHUTDOWN_STATE, netvista.ndis_wwan_set_preshutdown_state, ndiswwan/NDIS_WWAN_SET_PRESHUTDOWN_STATE, PNDIS_WWAN_SET_PRESHUTDOWN_STATE, *PNDIS_WWAN_SET_PRESHUTDOWN_STATE, PNDIS_WWAN_SET_PRESHUTDOWN_STATE structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndis_wwan_set_preshutdown_state, ndiswwan/NDIS_WWAN_SET_PRESHUTDOWN_STATE, ndiswwan/PNDIS_WWAN_SET_PRESHUTDOWN_STATE, PNDIS_WWAN_SET_PRESHUTDOWN_STATE, *PNDIS_WWAN_SET_PRESHUTDOWN_STATE, NDIS_WWAN_SET_PRESHUTDOWN_STATE, PNDIS_WWAN_SET_PRESHUTDOWN_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PRESHUTDOWN_STATE structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SET_PRESHUTDOWN_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_SET_PRESHUTDOWN_STATE, NDIS_WWAN_SET_PRESHUTDOWN_STATE"
+req.typenames : NDIS_WWAN_SET_PRESHUTDOWN_STATE, *PNDIS_WWAN_SET_PRESHUTDOWN_STATE
 ---
 
 # _NDIS_WWAN_SET_PRESHUTDOWN_STATE structure
@@ -99,9 +99,7 @@ For more information about these members, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 10, version 1511. Available starting with  Windows 10, version 1511. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

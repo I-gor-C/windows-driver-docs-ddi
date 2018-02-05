@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d4342c72-6737-4f9a-927a-dbfdd69da38d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, kmdf.wdf_io_queue_forward_progress_policy_default_init, DFQueueObjectRef_bc87904f-0d02-4369-ae30-734766e7335b.xml, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function, wdf.wdf_io_queue_forward_progress_policy_default_init
+ms.keywords : DFQueueObjectRef_bc87904f-0d02-4369-ae30-734766e7335b.xml, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, kmdf.wdf_io_queue_forward_progress_policy_default_init, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, wdf.wdf_io_queue_forward_progress_policy_default_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,22 +76,18 @@ The <b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT</b> function zeros the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_forward_progress_policy_examine_init.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
 
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_forward_progress_policy_pagingio_init.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT</a>
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_forward_progress_policy_examine_init.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT</a>
 
  
 

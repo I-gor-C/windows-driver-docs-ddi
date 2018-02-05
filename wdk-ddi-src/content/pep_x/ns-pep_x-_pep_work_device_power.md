@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5B39DFE1-3830-4650-9BB9-A03A040F1015
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_WORK_DEVICE_POWER, *PPEP_WORK_DEVICE_POWER, pep_x/PPEP_WORK_DEVICE_POWER, pep_x/PEP_WORK_DEVICE_POWER, _PEP_WORK_DEVICE_POWER, PPEP_WORK_DEVICE_POWER structure pointer [Kernel-Mode Driver Architecture], PEP_WORK_DEVICE_POWER, kernel.pep_work_device_power, PEP_WORK_DEVICE_POWER structure [Kernel-Mode Driver Architecture]
+ms.keywords : PPEP_WORK_DEVICE_POWER structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_WORK_DEVICE_POWER, pep_x/PEP_WORK_DEVICE_POWER, PPEP_WORK_DEVICE_POWER, _PEP_WORK_DEVICE_POWER, PEP_WORK_DEVICE_POWER, kernel.pep_work_device_power, *PPEP_WORK_DEVICE_POWER, PEP_WORK_DEVICE_POWER structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ The <b>DevicePower</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_inform
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
 ## See Also

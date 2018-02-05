@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7C1DD018-2EDF-48BB-8DFC-ADAF72A1909D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._ucxiodevicecontrol, ucxcontroller/UcxIoDeviceControl, UcxIoDeviceControl method [Buses], UcxIoDeviceControl
+ms.keywords : buses._ucxiodevicecontrol, UcxIoDeviceControl method [Buses], ucxcontroller/UcxIoDeviceControl, UcxIoDeviceControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,14 +93,11 @@ The client driver can call this method to allow UCX to handle IOCTLs listed in t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 54853C39-FA6C-4F9B-A202-F116C43D3A4E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_UDECX_WDF_DEVICE_CONFIG, buses.udecx_wdf_device_config, udecxwdfdevice/PUDECX_WDF_DEVICE_CONFIG, PUDECX_WDF_DEVICE_CONFIG structure pointer [Buses], UDECX_WDF_DEVICE_CONFIG, PUDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG, udecxwdfdevice/UDECX_WDF_DEVICE_CONFIG, UDECX_WDF_DEVICE_CONFIG structure [Buses]"
+ms.keywords : UDECX_WDF_DEVICE_CONFIG, PUDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG, udecxwdfdevice/UDECX_WDF_DEVICE_CONFIG, _UDECX_WDF_DEVICE_CONFIG, UDECX_WDF_DEVICE_CONFIG structure [Buses], PUDECX_WDF_DEVICE_CONFIG structure pointer [Buses], udecxwdfdevice/PUDECX_WDF_DEVICE_CONFIG, buses.udecx_wdf_device_config
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,16 +85,13 @@ The size of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | udecxwdfdevice.h (include Udecx.h) |
 
 ## See Also
 
-<a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecx_wdf_device_config_init.md">UDECX_WDF_DEVICE_CONFIG_INIT</a>
-
 <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>
+
+<a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecx_wdf_device_config_init.md">UDECX_WDF_DEVICE_CONFIG_INIT</a>
 
  
 

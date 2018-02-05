@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4ebc90e0-328b-4830-9942-027d3f19d186
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml, PFN_WDFWMIINSTANCEGETDEVICE, wdf.wdfwmiinstancegetdevice, wdfwmi/WdfWmiInstanceGetDevice, kmdf.wdfwmiinstancegetdevice, WdfWmiInstanceGetDevice, WdfWmiInstanceGetDevice method
+ms.keywords : WdfWmiInstanceGetDevice method, wdf.wdfwmiinstancegetdevice, wdfwmi/WdfWmiInstanceGetDevice, WdfWmiInstanceGetDevice, kmdf.wdfwmiinstancegetdevice, PFN_WDFWMIINSTANCEGETDEVICE, DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,12 +70,10 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

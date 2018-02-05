@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 0BD6FCB7-1705-4343-AD41-7362FE095ECB
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetStreamChannelVolume method [Audio Devices], IMiniportStreamAudioEngineNode::GetStreamChannelVolume, GetStreamChannelVolume, GetStreamChannelVolume method [Audio Devices], IMiniportStreamAudioEngineNode interface, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelVolume, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamChannelVolume method, audio.iminiportstreamaudioenginenode_getstreamchannelvolume, IMiniportStreamAudioEngineNode
+ms.keywords : IMiniportStreamAudioEngineNode, audio.iminiportstreamaudioenginenode_getstreamchannelvolume, GetStreamChannelVolume method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamChannelVolume method, GetStreamChannelVolume, GetStreamChannelVolume method [Audio Devices], IMiniportStreamAudioEngineNode::GetStreamChannelVolume, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelVolume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -72,14 +72,10 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

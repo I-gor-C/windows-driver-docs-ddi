@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : af182cd5-23b5-4d5b-b3d4-ec65ec087d0b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoWithinStackLimits, IoWithinStackLimits routine [Kernel-Mode Driver Architecture], k104_631648cb-6ba2-47b1-8745-e6314e17be30.xml, IoWithinStackLimits, kernel.iowithinstacklimits
+ms.keywords : IoWithinStackLimits routine [Kernel-Mode Driver Architecture], wdm/IoWithinStackLimits, kernel.iowithinstacklimits, IoWithinStackLimits, k104_631648cb-6ba2-47b1-8745-e6314e17be30.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,22 +75,20 @@ The <b>IoWithinStackLimits</b> routine considers all possible stack segments and
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Windows Vista and later versions of the Windows operating system. Available on Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-iogetremainingstacksize.md">IoGetRemainingStackSize</a>
 
 <a href="..\wdm\nf-wdm-iogetstacklimits.md">IoGetStackLimits</a>
 
 <a href="..\wdm\nf-wdm-iogetinitialstack.md">IoGetInitialStack</a>
+
+<a href="..\wdm\nf-wdm-iogetremainingstacksize.md">IoGetRemainingStackSize</a>
 
  
 

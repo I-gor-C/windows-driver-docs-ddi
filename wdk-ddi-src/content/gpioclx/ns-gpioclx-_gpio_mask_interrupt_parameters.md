@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : E7975BAE-4255-4D07-A747-481D210D1244
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PGPIO_MASK_INTERRUPT_PARAMETERS, GPIO_MASK_INTERRUPT_PARAMETERS structure [Parallel Ports], gpioclx/PGPIO_MASK_INTERRUPT_PARAMETERS, GPIO_MASK_INTERRUPT_PARAMETERS, PGPIO_MASK_INTERRUPT_PARAMETERS structure pointer [Parallel Ports], *PGPIO_MASK_INTERRUPT_PARAMETERS, GPIO.gpio_mask_interrupt_parameters, gpioclx/GPIO_MASK_INTERRUPT_PARAMETERS, _GPIO_MASK_INTERRUPT_PARAMETERS
+ms.keywords : GPIO.gpio_mask_interrupt_parameters, PGPIO_MASK_INTERRUPT_PARAMETERS, gpioclx/PGPIO_MASK_INTERRUPT_PARAMETERS, *PGPIO_MASK_INTERRUPT_PARAMETERS, gpioclx/GPIO_MASK_INTERRUPT_PARAMETERS, GPIO_MASK_INTERRUPT_PARAMETERS, GPIO_MASK_INTERRUPT_PARAMETERS structure [Parallel Ports], _GPIO_MASK_INTERRUPT_PARAMETERS, PGPIO_MASK_INTERRUPT_PARAMETERS structure pointer [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,18 +73,16 @@ GPIO controllers that have memory-mapped registers are expected to always succee
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439380">CLIENT_MaskInterrupts</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
  
 

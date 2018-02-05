@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f3468fe5-31b4-4bf6-b0e3-ee27ecfd8e06
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetExecutionStatus method [Windows Debugging], dbgeng/IDebugControl3::SetExecutionStatus, debugger.setexecutionstatus, IDebugControl::SetExecutionStatus, IDebugControl2 interface [Windows Debugging], SetExecutionStatus method, IDebugControl3 interface [Windows Debugging], SetExecutionStatus method, IDebugControl3, SetExecutionStatus method [Windows Debugging], IDebugControl2 interface, SetExecutionStatus, SetExecutionStatus method [Windows Debugging], IDebugControl interface, SetExecutionStatus method [Windows Debugging], IDebugControl3 interface, IDebugControl3::SetExecutionStatus, IDebugControl interface [Windows Debugging], SetExecutionStatus method, dbgeng/IDebugControl2::SetExecutionStatus, dbgeng/IDebugControl::SetExecutionStatus, IDebugControl_b89bf576-8a07-49a8-8373-0b915300d36a.xml, IDebugControl2::SetExecutionStatus
+ms.keywords : IDebugControl3::SetExecutionStatus, SetExecutionStatus method [Windows Debugging], IDebugControl interface, SetExecutionStatus method [Windows Debugging], IDebugControl2::SetExecutionStatus, SetExecutionStatus, IDebugControl3, dbgeng/IDebugControl2::SetExecutionStatus, IDebugControl2 interface [Windows Debugging], SetExecutionStatus method, IDebugControl_b89bf576-8a07-49a8-8373-0b915300d36a.xml, IDebugControl::SetExecutionStatus, SetExecutionStatus method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::SetExecutionStatus, IDebugControl3 interface [Windows Debugging], SetExecutionStatus method, debugger.setexecutionstatus, SetExecutionStatus method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetExecutionStatus, IDebugControl interface [Windows Debugging], SetExecutionStatus method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -118,14 +118,9 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
@@ -133,9 +128,9 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546675">GetExecutionStatus</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

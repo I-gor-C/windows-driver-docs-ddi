@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c9c46133-a660-46c6-911b-77c2dd2ed2e0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FCPBindingEntry structure [Storage Devices], HBA_FCPBINDINGENTRY, hbaapi/HBA_FCPBindingEntry, structs-Fibre_b3a84cf5-d8d5-41cc-9fe3-d362da586cbc.xml, storage.hba_fcpbindingentry, HBA_FCPBindingEntry, *PHBA_FCPBINDINGENTRY
+ms.keywords : HBA_FCPBINDINGENTRY, HBA_FCPBindingEntry, structs-Fibre_b3a84cf5-d8d5-41cc-9fe3-d362da586cbc.xml, HBA_FCPBindingEntry structure [Storage Devices], storage.hba_fcpbindingentry, *PHBA_FCPBINDINGENTRY, hbaapi/HBA_FCPBindingEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -51,7 +51,4 @@ The HBA_FCPBindingEntry structure is equivalent to <a href="..\hbapiwmi\ns-hbapi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbapiwmi.h) |

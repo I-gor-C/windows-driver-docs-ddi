@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07586be9-a8bc-4149-8037-7b649a75a818
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : ntddvdeo/PVIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION, PVIDEO_POINTER_POSITION structure pointer [Display Devices], ntddvdeo/VIDEO_POINTER_POSITION, PVIDEO_POINTER_POSITION, _VIDEO_POINTER_POSITION, Video_Structs_72aeeda6-58eb-419e-95d2-35c1b66adf36.xml, display.video_pointer_position, VIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION structure [Display Devices]
+ms.keywords : "_VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION structure [Display Devices], display.video_pointer_position, VIDEO_POINTER_POSITION, PVIDEO_POINTER_POSITION structure pointer [Display Devices], PVIDEO_POINTER_POSITION, ntddvdeo/PVIDEO_POINTER_POSITION, Video_Structs_72aeeda6-58eb-419e-95d2-35c1b66adf36.xml, ntddvdeo/VIDEO_POINTER_POSITION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION
+req.typenames : "*PVIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION"
 ---
 
 # _VIDEO_POINTER_POSITION structure
@@ -64,7 +64,4 @@ Specifies the row location of the pointer in pixels, starting from the top left 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |

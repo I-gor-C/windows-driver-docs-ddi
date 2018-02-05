@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c53672b7-fbe7-45f7-b3ff-30cfeefa7d52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : STRSAFE_IGNORE_NULLS, RtlStringCchCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NO_TRUNCATION, RtlStringCchCopyNEx, STRSAFE_NULL_ON_FAILURE, RtlStringCchCopyNExA, safestrings_60ae1ee7-e0ba-407d-8946-a2928d2b9b32.xml, STRSAFE_FILL_BEHIND_NULL, kernel.rtlstringcchcopynex, STRSAFE_FILL_ON_FAILURE, ntstrsafe/RtlStringCchCopyNExW, ntstrsafe/RtlStringCchCopyNExA, RtlStringCchCopyNExW
+ms.keywords : RtlStringCchCopyNExW, RtlStringCchCopyNExA, safestrings_60ae1ee7-e0ba-407d-8946-a2928d2b9b32.xml, kernel.rtlstringcchcopynex, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, RtlStringCchCopyNEx, RtlStringCchCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, ntstrsafe/RtlStringCchCopyNExA, STRSAFE_FILL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, ntstrsafe/RtlStringCchCopyNExW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -252,20 +252,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynexw.md">RtlStringCbCopyNEx</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md">RtlStringCchCopyN</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynexw.md">RtlStringCbCopyNEx</a>
 
  
 

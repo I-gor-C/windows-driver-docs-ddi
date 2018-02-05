@@ -113,14 +113,9 @@ Except for those situations in which the application incorrectly specifies an ou
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system. ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

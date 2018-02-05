@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : ecafa166-356e-48d6-84c4-0f0c339289ac
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : NODE_ADDRESS, NODE_ADDRESS structure [Buses], IEEE.node_address, PNODE_ADDRESS, 1394/NODE_ADDRESS, _NODE_ADDRESS, PNODE_ADDRESS structure pointer [Buses], 1394stct_4b87009c-620b-4840-aea3-52e059d388cd.xml, *PNODE_ADDRESS, 1394/PNODE_ADDRESS
+ms.keywords : PNODE_ADDRESS, 1394stct_4b87009c-620b-4840-aea3-52e059d388cd.xml, PNODE_ADDRESS structure pointer [Buses], *PNODE_ADDRESS, NODE_ADDRESS, _NODE_ADDRESS, IEEE.node_address, NODE_ADDRESS structure [Buses], 1394/PNODE_ADDRESS, 1394/NODE_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNODE_ADDRESS, NODE_ADDRESS"
+req.typenames : NODE_ADDRESS, *PNODE_ADDRESS
 ---
 
 # _NODE_ADDRESS structure
@@ -64,9 +64,6 @@ Specifies the 6-bit node number. This member contains bits 10-15 of the node add
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

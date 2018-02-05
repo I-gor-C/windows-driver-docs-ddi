@@ -85,6 +85,4 @@ The payload type of this IOCTL is a <a href="..\lamp\ns-lamp-lamp_intensity_colo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | lamp.h |
-| **IRQL** |  |

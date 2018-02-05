@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f9166dfa-e895-4aca-8080-af3cfe9c143f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PBLOC_OWNNUMBERS, RILPHONEENTRYSTORELOCATION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PBLOC_UICCPHONEBOOK, rilapitypes/RIL_PBLOC_UICCSERVICEDIALING, RIL_PBLOC_ALL, RIL_PBLOC_UICCSERVICEDIALING, rilapitypes/RILPHONEENTRYSTORELOCATION, netvista.rilphoneentrystorelocation_2, rilapitypes/RIL_PBLOC_ALL, rilapitypes/RIL_PBLOC_UICCFIXDIALING, RIL_PBLOC_OWNNUMBERS, RILPHONEENTRYSTORELOCATION, RIL_PBLOC_UICCFIXDIALING, RIL_PBLOC_UICCPHONEBOOK
+ms.keywords : RIL_PBLOC_UICCSERVICEDIALING, RIL_PBLOC_ALL, RIL_PBLOC_UICCFIXDIALING, netvista.rilphoneentrystorelocation_2, RIL_PBLOC_OWNNUMBERS, RIL_PBLOC_UICCPHONEBOOK, rilapitypes/RIL_PBLOC_UICCPHONEBOOK, rilapitypes/RIL_PBLOC_OWNNUMBERS, rilapitypes/RIL_PBLOC_UICCFIXDIALING, rilapitypes/RIL_PBLOC_UICCSERVICEDIALING, RILPHONEENTRYSTORELOCATION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PBLOC_ALL, RILPHONEENTRYSTORELOCATION, rilapitypes/RILPHONEENTRYSTORELOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,4 @@ typedef enum _RILPHONEENTRYSTORELOCATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

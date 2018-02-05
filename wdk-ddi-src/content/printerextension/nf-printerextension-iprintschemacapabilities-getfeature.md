@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : AC6434F5-0892-4426-98BB-BC02AD17917B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/IPrintSchemaCapabilities::GetFeature, GetFeature method [Print Devices], IPrintSchemaCapabilities interface, print.iprintschemacapabilities_getfeature, GetFeature method [Print Devices], IPrintSchemaCapabilities, GetFeature, IPrintSchemaCapabilities::GetFeature, IPrintSchemaCapabilities interface [Print Devices], GetFeature method
+ms.keywords : GetFeature, printerextension/IPrintSchemaCapabilities::GetFeature, IPrintSchemaCapabilities::GetFeature, GetFeature method [Print Devices], IPrintSchemaCapabilities interface [Print Devices], GetFeature method, IPrintSchemaCapabilities, GetFeature method [Print Devices], IPrintSchemaCapabilities interface, print.iprintschemacapabilities_getfeature
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,22 +82,18 @@ So if the <a href="..\printerextension\nn-printerextension-iprintschematicket.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
+
+<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemafeature.md">IPrintSchemaFeature</a>
-
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
 
  
 

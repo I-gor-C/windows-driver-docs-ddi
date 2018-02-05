@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 0796a1a2-1aaa-4e07-a8f1-7a3c895643e7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_fd2d7813-ebe8-4cf3-8a6c-4ebfccca5826.xml, IMiniportWavePci, portcls/IMiniportWavePci::Init, Init method [Audio Devices], IMiniportWavePci interface, IMiniportWavePci interface [Audio Devices], Init method, audio.iminiportwavepci_init, IMiniportWavePci::Init, Init method [Audio Devices], Init
+ms.keywords : IMiniportWavePci::Init, IMiniportWavePci, Init, Init method [Audio Devices], IMiniportWavePci interface, Init method [Audio Devices], IMiniportWavePci interface [Audio Devices], Init method, portcls/IMiniportWavePci::Init, audmp-routines_fd2d7813-ebe8-4cf3-8a6c-4ebfccca5826.xml, audio.iminiportwavepci_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -85,26 +85,22 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavepci.md">IMiniportWavePci</a>
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
+<a href="..\portcls\nn-portcls-iminiportwavepci.md">IMiniportWavePci</a>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
  
 

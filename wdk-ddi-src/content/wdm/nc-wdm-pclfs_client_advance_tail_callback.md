@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -94,24 +94,20 @@ If the request can be processed, create and queue a work item to perform the act
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= APC_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
 
-<a href="..\wdm\nf-wdm-clfsadvancelogbase.md">ClfsAdvanceLogBase</a>
-
 <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
 
 <a href="..\wdm\nf-wdm-clfsmgmttailadvancefailure.md">ClfsMgmtTailAdvanceFailure</a>
+
+<a href="..\wdm\nf-wdm-clfsadvancelogbase.md">ClfsAdvanceLogBase</a>
 
  
 

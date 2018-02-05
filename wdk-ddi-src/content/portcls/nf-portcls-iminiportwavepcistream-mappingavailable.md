@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 11126cc9-43a1-41b1-adc9-13af57157d74
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : MappingAvailable method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::MappingAvailable, MappingAvailable method [Audio Devices], audio.iminiportwavepcistream_mappingavailable, IMiniportWavePciStream, MappingAvailable, audmp-routines_931efc43-ec71-4b60-905a-47ec374da31e.xml, IMiniportWavePciStream interface [Audio Devices], MappingAvailable method, portcls/IMiniportWavePciStream::MappingAvailable
+ms.keywords : audio.iminiportwavepcistream_mappingavailable, IMiniportWavePciStream interface [Audio Devices], MappingAvailable method, MappingAvailable method [Audio Devices], IMiniportWavePciStream, audmp-routines_931efc43-ec71-4b60-905a-47ec374da31e.xml, MappingAvailable method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::MappingAvailable, portcls/IMiniportWavePciStream::MappingAvailable, MappingAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -69,20 +69,16 @@ See the discussion of allocator framing in <a href="https://msdn.microsoft.com/6
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
-
 <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b3a35769-a98a-40f5-bdc1-db964d2a967c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF::GetBufferSize, audio.iallocatormxf_getbuffersize, GetBufferSize method [Audio Devices], IAllocatorMXF interface, IAllocatorMXF interface [Audio Devices], GetBufferSize method, audmp-routines_5eb7fc90-4f40-4796-9c7c-2086689f1593.xml, dmusicks/IAllocatorMXF::GetBufferSize, GetBufferSize, IAllocatorMXF, GetBufferSize method [Audio Devices]
+ms.keywords : GetBufferSize, GetBufferSize method [Audio Devices], IAllocatorMXF::GetBufferSize, audmp-routines_5eb7fc90-4f40-4796-9c7c-2086689f1593.xml, IAllocatorMXF interface [Audio Devices], GetBufferSize method, dmusicks/IAllocatorMXF::GetBufferSize, GetBufferSize method [Audio Devices], IAllocatorMXF interface, audio.iallocatormxf_getbuffersize, IAllocatorMXF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,20 +65,16 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dmusicks.h (include Dmusicks.h) |
-| **Library** |  |
+| **Library** | dmusicks.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536492">IAllocatorMXF::GetBuffer</a>
-
 <a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536492">IAllocatorMXF::GetBuffer</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 354d09c3-8db4-4af9-b077-8e3bcda7a6f2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamdef/wiasSetItemPropAttribs, wiasFncs_f3e1e830-6569-4b0f-8e0a-deac0a95022b.xml, image.wiassetitempropattribs, wiasSetItemPropAttribs, wiasSetItemPropAttribs function [Imaging Devices]
+ms.keywords : wiamdef/wiasSetItemPropAttribs, wiasFncs_f3e1e830-6569-4b0f-8e0a-deac0a95022b.xml, wiasSetItemPropAttribs function [Imaging Devices], wiasSetItemPropAttribs, image.wiassetitempropattribs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -132,22 +132,19 @@ Reboot the system and repeat the steps necessary to produce this error. There wi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
-
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md">WIA_PROPERTY_INFO</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiassetitempropnames.md">wiasSetItemPropNames</a>
+
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md">WIA_PROPERTY_INFO</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 03ff46cb-dfc5-409a-b652-bef8f2b37b59
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks, ExitThread method [Windows Debugging], IDebugEventCallbacks interface, ExitThread method [Windows Debugging], dbgeng/IDebugEventCallbacks::ExitThread, ExitThread, IDebugEventCallbacks interface [Windows Debugging], ExitThread method, debugger.idebugeventcallbacks_exitthread, IDebugEventCallbacks::ExitThread, ComCallbacks_554f76a8-5f15-4bcc-b3ec-070ecc836ba9.xml
+ms.keywords : IDebugEventCallbacks interface [Windows Debugging], ExitThread method, IDebugEventCallbacks, ComCallbacks_554f76a8-5f15-4bcc-b3ec-070ecc836ba9.xml, ExitThread, dbgeng/IDebugEventCallbacks::ExitThread, debugger.idebugeventcallbacks_exitthread, ExitThread method [Windows Debugging], IDebugEventCallbacks interface, ExitThread method [Windows Debugging], IDebugEventCallbacks::ExitThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,11 +70,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

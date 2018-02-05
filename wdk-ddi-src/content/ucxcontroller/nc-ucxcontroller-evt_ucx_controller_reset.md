@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
+req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
 req.product : Windows 10 or later.
 ---
 
@@ -76,22 +76,19 @@ If the client driver calls <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrol
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerneedsreset.md">UcxControllerNeedsReset</a>
 
 <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
-
-<a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerneedsreset.md">UcxControllerNeedsReset</a>
 
  
 

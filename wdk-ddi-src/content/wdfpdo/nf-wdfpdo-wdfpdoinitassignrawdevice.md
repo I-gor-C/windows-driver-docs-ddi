@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 419912d0-40d0-4fa9-be3b-770875271640
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoInitAssignRawDevice, wdfpdo/WdfPdoInitAssignRawDevice, kmdf.wdfpdoinitassignrawdevice, WdfPdoInitAssignRawDevice method, DFDeviceObjectFdoPdoRef_afe4967c-d7ea-4c78-98ff-9bcfb98f6b80.xml, wdf.wdfpdoinitassignrawdevice
+ms.keywords : WdfPdoInitAssignRawDevice, DFDeviceObjectFdoPdoRef_afe4967c-d7ea-4c78-98ff-9bcfb98f6b80.xml, wdfpdo/WdfPdoInitAssignRawDevice, wdf.wdfpdoinitassignrawdevice, kmdf.wdfpdoinitassignrawdevice, WdfPdoInitAssignRawDevice method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -81,12 +81,10 @@ For more information about using the registry, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2,  PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |
 
@@ -96,9 +94,9 @@ For more information about using the registry, see <a href="https://msdn.microso
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetdevicetype.md">WdfDeviceInitSetDeviceType</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignsddlstring.md">WdfDeviceInitAssignSDDLString</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetdevicetype.md">WdfDeviceInitSetDeviceType</a>
 
  
 

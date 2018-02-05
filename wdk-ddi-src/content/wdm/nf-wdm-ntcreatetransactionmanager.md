@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9c9f0a8b-7add-4ab1-835d-39f508ce32a9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwCreateTransactionManager, ktm_ref_56fad0b5-053d-4d65-bdb3-8c2d09fee541.xml, wdm/NtCreateTransactionManager, wdm/ZwCreateTransactionManager, kernel.zwcreatetransactionmanager, ZwCreateTransactionManager routine [Kernel-Mode Driver Architecture], NtCreateTransactionManager
+ms.keywords : ZwCreateTransactionManager routine [Kernel-Mode Driver Architecture], ZwCreateTransactionManager, kernel.zwcreatetransactionmanager, wdm/ZwCreateTransactionManager, ktm_ref_56fad0b5-053d-4d65-bdb3-8c2d09fee541.xml, NtCreateTransactionManager, wdm/NtCreateTransactionManager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -393,34 +393,33 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwrollforwardtransactionmanager.md">ZwRollforwardTransactionManager</a>
-
 <a href="..\wdm\nf-wdm-zwrecovertransactionmanager.md">ZwRecoverTransactionManager</a>
+
+<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
 
 <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
+
+<a href="..\wdm\nf-wdm-zwrollforwardtransactionmanager.md">ZwRollforwardTransactionManager</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

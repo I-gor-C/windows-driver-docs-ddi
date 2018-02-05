@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 462165e5-2823-4559-bd3e-18850d442cdb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMIExecuteMethod, IoWMIExecuteMethod routine [Kernel-Mode Driver Architecture], wdm/IoWMIExecuteMethod, kernel.iowmiexecutemethod, k104_9625e06a-3c5a-4950-80be-cc3fb536453c.xml
+ms.keywords : wdm/IoWMIExecuteMethod, k104_9625e06a-3c5a-4950-80be-cc3fb536453c.xml, IoWMIExecuteMethod, kernel.iowmiexecutemethod, IoWMIExecuteMethod routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -166,14 +166,12 @@ The WMI GUID is no longer available or was never available.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating system. Available in Windows XP and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

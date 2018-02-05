@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 99330348-bcc2-4a89-96f8-e1b67d9ebe25
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoRequestPowerIrp routine [Kernel-Mode Driver Architecture], portn_d417d88c-2f6d-4af9-b7de-455dfcc1b9df.xml, wdm/PoRequestPowerIrp, PoRequestPowerIrp, kernel.porequestpowerirp
+ms.keywords : kernel.porequestpowerirp, PoRequestPowerIrp, portn_d417d88c-2f6d-4af9-b7de-455dfcc1b9df.xml, PoRequestPowerIrp routine [Kernel-Mode Driver Architecture], wdm/PoRequestPowerIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,34 +145,33 @@ Drivers can use the returned <i>Irp</i> to cancel an <b>IRP_MN_WAIT_WAKE</b> IRP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | MarkDevicePower, PowerDownFail, PowerUpFail, RequestedPowerIrp, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff961906">PowerCompletion</a>
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551644">IRP_MN_POWER_SEQUENCE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551766">IRP_MN_WAIT_WAKE</a>
 
 <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 
 <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 
-<a href="..\ntifs\nf-ntifs-postartnextpowerirp.md">PoStartNextPowerIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff961906">PowerCompletion</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551644">IRP_MN_POWER_SEQUENCE</a>
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551766">IRP_MN_WAIT_WAKE</a>
 
  
 

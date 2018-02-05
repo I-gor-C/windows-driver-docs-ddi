@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 71b48983-af12-4361-8cf9-adec1afffb65
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxce/RxCeTearDownConnection, RxCeTearDownConnection function [Installable File System Drivers], RxCeTearDownConnection, ifsk.rxceteardownconnection, rxref_bf951adb-b63e-49f6-8325-f67adb2cdbf0.xml
+ms.keywords : ifsk.rxceteardownconnection, rxref_bf951adb-b63e-49f6-8325-f67adb2cdbf0.xml, RxCeTearDownConnection, rxce/RxCeTearDownConnection, RxCeTearDownConnection function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -97,14 +97,10 @@ When <b>RxCeTearDownConnection</b> is successful, the data members in the RXCE_C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

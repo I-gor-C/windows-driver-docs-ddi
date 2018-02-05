@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 08CCC4A8-2D85-436D-B18E-77C91A24F59C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PGNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG structure [Sensor Devices], gnssdriver/PGNSS_SUPL_HSLP_CONFIG, sensors.gnss_supl_hslp_config, PGNSS_SUPL_HSLP_CONFIG structure pointer [Sensor Devices], gnssdriver/GNSS_SUPL_HSLP_CONFIG
+ms.keywords : PGNSS_SUPL_HSLP_CONFIG, gnssdriver/GNSS_SUPL_HSLP_CONFIG, PGNSS_SUPL_HSLP_CONFIG structure pointer [Sensor Devices], gnssdriver/PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG, sensors.gnss_supl_hslp_config, GNSS_SUPL_HSLP_CONFIG structure [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG"
+req.typenames : GNSS_SUPL_HSLP_CONFIG, *PGNSS_SUPL_HSLP_CONFIG
 ---
 
 # GNSS_SUPL_HSLP_CONFIG structure
@@ -84,7 +84,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

@@ -70,6 +70,4 @@ The size of a status code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
-| **IRQL** |  |

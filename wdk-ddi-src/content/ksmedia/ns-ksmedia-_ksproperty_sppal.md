@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b6c50f2f-efc7-415f-895b-fcffb2575fe8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSPROPERTY_SPPAL, stream.ksproperty_sppal, ksmedia/PKSPROPERTY_SPPAL, PKSPROPERTY_SPPAL, PKSPROPERTY_SPPAL structure pointer [Streaming Media Devices], *PKSPROPERTY_SPPAL, KSPROPERTY_SPPAL, KSPROPERTY_SPPAL structure [Streaming Media Devices], dvdref_002f96c4-a499-4f93-8c3a-b083ed7a3339.xml, _KSPROPERTY_SPPAL
+ms.keywords : "*PKSPROPERTY_SPPAL, ksmedia/KSPROPERTY_SPPAL, ksmedia/PKSPROPERTY_SPPAL, _KSPROPERTY_SPPAL, PKSPROPERTY_SPPAL, dvdref_002f96c4-a499-4f93-8c3a-b083ed7a3339.xml, KSPROPERTY_SPPAL, PKSPROPERTY_SPPAL structure pointer [Streaming Media Devices], KSPROPERTY_SPPAL structure [Streaming Media Devices], stream.ksproperty_sppal"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ The KSPROPERTY_SPPAL structure is used by the <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

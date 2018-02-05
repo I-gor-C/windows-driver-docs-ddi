@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e7f7068a-5f61-4b7d-818a-72afd7b63266
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT, display.d3d11_1ddi_authenticated_query_protection_output, d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT, D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT structure [Display Devices]
+ms.keywords : d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT, D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT, D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION_OUTPUT structure [Display Devices], display.d3d11_1ddi_authenticated_query_protection_output
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,18 +64,16 @@ A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_protection_flags
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_queryauthenticatedchannel.md">QueryAuthenticatedChannel(D3D11_1)</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_protection_flags.md">D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS</a>
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_query_output.md">D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT</a>
 
  
 

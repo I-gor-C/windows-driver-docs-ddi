@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9caed664-6367-4eb0-9c9f-551f8a5938bc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_pm_wake_reason, NDIS_PM_WAKE_REASON, NDIS_PM_WAKE_REASON structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PM_WAKE_REASON, _NDIS_PM_WAKE_REASON, *PNDIS_PM_WAKE_REASON, ntddndis/NDIS_PM_WAKE_REASON, PNDIS_PM_WAKE_REASON structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PM_WAKE_REASON
+ms.keywords : ntddndis/PNDIS_PM_WAKE_REASON, ntddndis/NDIS_PM_WAKE_REASON, NDIS_PM_WAKE_REASON structure [Network Drivers Starting with Windows Vista], PNDIS_PM_WAKE_REASON structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PM_WAKE_REASON, *PNDIS_PM_WAKE_REASON, NDIS_PM_WAKE_REASON, _NDIS_PM_WAKE_REASON, netvista.ndis_pm_wake_reason
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_PM_WAKE_REASON, NDIS_PM_WAKE_REASON"
+req.typenames : NDIS_PM_WAKE_REASON, *PNDIS_PM_WAKE_REASON
 ---
 
 # _NDIS_PM_WAKE_REASON structure
@@ -96,9 +96,7 @@ For more information about how to issue an <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
 ## See Also

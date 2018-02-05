@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 692e58b5-74ea-48f3-a9c2-81953b7d600d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : wdbgexts/DBGKD_GET_VERSION64, debugger.ig_get_kernel_version, *PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64, PDBGKD_GET_VERSION64 structure pointer [Windows Debugging], PDBGKD_GET_VERSION64, wdbgexts/PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64 structure [Windows Debugging], WdbgExts_Ref_33e7f185-3831-439b-9e92-8d942627f66b.xml, _DBGKD_GET_VERSION64
+ms.keywords : PDBGKD_GET_VERSION64 structure pointer [Windows Debugging], PDBGKD_GET_VERSION64, debugger.ig_get_kernel_version, _DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64, WdbgExts_Ref_33e7f185-3831-439b-9e92-8d942627f66b.xml, DBGKD_GET_VERSION64 structure [Windows Debugging], wdbgexts/DBGKD_GET_VERSION64, wdbgexts/PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64"
+req.typenames : DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64
 req.product : Windows 10 or later.
 ---
 
@@ -277,16 +277,13 @@ This operation is only available in kernel-mode debugging.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
 
 ## See Also
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
-
 <a href="..\wdbgexts\nf-wdbgexts-getdebuggerdata.md">GetDebuggerData</a>
+
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 
  
 

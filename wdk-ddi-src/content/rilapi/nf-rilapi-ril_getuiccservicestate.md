@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8ce53e64-791d-4e52-a383-b9e407b5b332
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_GetUiccServiceState, RIL_GetUiccServiceState, netvista.ril_getuiccservicestate, RIL_GetUiccServiceState method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_GetUiccServiceState method [Network Drivers Starting with Windows Vista], netvista.ril_getuiccservicestate, rilapi/RIL_GetUiccServiceState, RIL_GetUiccServiceState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

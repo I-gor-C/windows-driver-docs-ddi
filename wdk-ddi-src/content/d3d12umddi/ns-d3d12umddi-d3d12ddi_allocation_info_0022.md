@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A600C402-EB77-4C44-8349-96DAF11B807C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_ALLOCATION_INFO_0022 structure [Display Devices], display.d3d12ddi_allocation_info_0022, D3D12DDI_ALLOCATION_INFO_0022, d3d12umddi/D3D12DDI_ALLOCATION_INFO_0022
+ms.keywords : d3d12umddi/D3D12DDI_ALLOCATION_INFO_0022, D3D12DDI_ALLOCATION_INFO_0022 structure [Display Devices], display.d3d12ddi_allocation_info_0022, D3D12DDI_ALLOCATION_INFO_0022
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,9 +99,6 @@ A zero-based ID of the video present source in a path of a video present network
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
 ## See Also

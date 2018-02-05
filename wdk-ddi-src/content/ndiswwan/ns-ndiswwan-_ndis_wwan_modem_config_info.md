@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 07C2BAED-157A-459C-B558-115C0091ECE5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/PNDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/NDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO, netvista.ndis_wwan_modem_config_info"
+ms.keywords : "*PNDIS_WWAN_MODEM_CONFIG_INFO, netvista.ndis_wwan_modem_config_info, NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/NDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/PNDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO"
+req.typenames : NDIS_WWAN_MODEM_CONFIG_INFO, *PNDIS_WWAN_MODEM_CONFIG_INFO
 ---
 
 # _NDIS_WWAN_MODEM_CONFIG_INFO structure
@@ -173,18 +173,16 @@ The operation failed because the device does not support this OID.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a>
 
-<a href="https://msdn.microsoft.com/527B970C-09FC-4E49-A309-44D5C6A39778">OID_WWAN_MODEM_CONFIG_INFO</a>
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-modem-config-info">NDIS_STATUS_WWAN_MODEM_CONFIG_INFO</a>
+
+<a href="https://msdn.microsoft.com/527B970C-09FC-4E49-A309-44D5C6A39778">OID_WWAN_MODEM_CONFIG_INFO</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

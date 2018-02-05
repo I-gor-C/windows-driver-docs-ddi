@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 165eaae5-ce68-462e-902c-64120fba91c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoQueueThreadIrp, ioref_e5906bb2-1a02-4405-92b6-64848786b3f0.xml, ifsk.ioqueuethreadirp, IoQueueThreadIrp function [Installable File System Drivers], ntifs/IoQueueThreadIrp
+ms.keywords : ntifs/IoQueueThreadIrp, IoQueueThreadIrp function [Installable File System Drivers], IoQueueThreadIrp, ioref_e5906bb2-1a02-4405-92b6-64848786b3f0.xml, ifsk.ioqueuethreadirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

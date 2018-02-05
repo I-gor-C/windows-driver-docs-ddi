@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a69eae04-a7e0-4d0c-a3e0-d49905096c8e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_381ec3d0-fcf3-4153-8cc3-f2dda3f9684f.xml, d3dkmdt/DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR, _DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR, DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR structure [Display Devices], display.dxgkmdt_opm_hdcp_key_selection_vector, DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR
+ms.keywords : display.dxgkmdt_opm_hdcp_key_selection_vector, DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR, DmStructs_381ec3d0-fcf3-4153-8cc3-f2dda3f9684f.xml, _DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR, d3dkmdt/DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR, DXGKMDT_OPM_HDCP_KEY_SELECTION_VECTOR structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ For more information about the HDCP KSV, see the <a href="http://go.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

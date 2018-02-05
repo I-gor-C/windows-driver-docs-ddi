@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 54168476-1C55-4343-858C-7FBA863D35D0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsi/RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure [Storage Devices], storage.receive_token_information_response_header, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure pointer [Storage Devices], *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+ms.keywords : PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, storage.receive_token_information_response_header, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure [Storage Devices], RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure pointer [Storage Devices], *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER"
+req.typenames : RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -69,16 +69,14 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | scsi.h (include Scsi.h) |
 
 ## See Also
 
-<a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
-
 <a href="..\scsi\ns-scsi-receive_token_information_header.md">RECEIVE_TOKEN_INFORMATION_HEADER</a>
+
+<a href="..\scsi\ns-scsi-populate_token_header.md">POPULATE_TOKEN_HEADER</a>
 
  
 

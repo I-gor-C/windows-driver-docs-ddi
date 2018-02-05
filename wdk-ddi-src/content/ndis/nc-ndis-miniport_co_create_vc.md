@@ -67,10 +67,10 @@ NDIS_STATUS MiniportCoCreateVc(
 Specifies the handle to a miniport driver-allocated context area in which the miniport driver
      maintains state information about this instance of the adapter. The miniport driver provided this handle
      to NDIS by calling 
-     <mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
-     NdisMSetMiniportAttributes</b></mshelp:link> from its 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+     NdisMSetMiniportAttributes</a> from its 
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `NdisVcHandle`
 
@@ -178,14 +178,10 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5429D886-4CC0-438D-AC9F-739159802062
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddi_devicefuncs, D3D11_1DDI_DEVICEFUNCS, d3d10umddi/D3D11_1DDI_DEVICEFUNCS, D3D11_1DDI_DEVICEFUNCS structure [Display Devices]
+ms.keywords : display.d3d11_1ddi_devicefuncs, D3D11_1DDI_DEVICEFUNCS, D3D11_1DDI_DEVICEFUNCS structure [Display Devices], d3d10umddi/D3D11_1DDI_DEVICEFUNCS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -844,9 +844,7 @@ The <b>pfnResetPrimitiveID</b> and  <b>pfnSetVertexPipelineOutput</b> members (n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

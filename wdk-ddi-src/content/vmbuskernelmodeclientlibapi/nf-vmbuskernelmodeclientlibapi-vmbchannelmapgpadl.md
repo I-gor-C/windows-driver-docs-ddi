@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A7801EE9-BFDB-4F77-9DA4-A6612F63AD48
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VMBUS_CHANNEL_GPADL_FLAG_READ_ONLY, vmbuskernelmodeclientlibapi/VmbChannelMapGpadl, netvista.vmbchannelmapgpadl, VmbChannelMapGpadl, VmbChannelMapGpadl function [Network Drivers Starting with Windows Vista]
+ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelMapGpadl, VmbChannelMapGpadl, VmbChannelMapGpadl function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_GPADL_FLAG_READ_ONLY, netvista.vmbchannelmapgpadl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -115,20 +115,18 @@ function with calls to the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskerne
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelcreategpadlfrombuffer.md">VmbChannelCreateGpadlFromBuffer</a>
-
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelunmapgpadl.md">VmbChannelUnmapGpadl</a>
+
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelcreategpadlfrombuffer.md">VmbChannelCreateGpadlFromBuffer</a>
 
  
 

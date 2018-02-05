@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9a3380d0-2d90-49ec-b97d-be55eb6eaaa5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_rendering_6a896dea-57aa-4fa0-810f-dadb79b13079.xml, print.oemsendpage, printoem/OEMSendPage, OEMSendPage function [Print Devices], OEMSendPage
+ms.keywords : OEMSendPage function [Print Devices], print_unidrv-pscript_rendering_6a896dea-57aa-4fa0-810f-dadb79b13079.xml, print.oemsendpage, printoem/OEMSendPage, OEMSendPage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

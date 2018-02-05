@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : C19C250D-3C8D-4855-A8B3-82E139CE09BB
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DiagnoseLevelDriverStateDump, DiagnoseLevelHardwareRegisters, dot11wdi/DiagnoseLevelNone, dot11wdi/DiagnoseLevelHardwareRegisters, netvista.wdiediagnoselevel, dot11wdi/DiagnoseLevelDriverStateDump, DiagnoseLevelNone, eDiagnoseLevel, eDiagnoseLevel enumeration [Network Drivers Starting with Windows Vista], dot11wdi/eDiagnoseLevel, dot11wdi/DiagnoseLevelFirmwareImageDump, DiagnoseLevelFirmwareImageDump
+ms.keywords : dot11wdi/DiagnoseLevelFirmwareImageDump, eDiagnoseLevel enumeration [Network Drivers Starting with Windows Vista], netvista.wdiediagnoselevel, dot11wdi/eDiagnoseLevel, DiagnoseLevelHardwareRegisters, DiagnoseLevelFirmwareImageDump, eDiagnoseLevel, dot11wdi/DiagnoseLevelHardwareRegisters, DiagnoseLevelNone, DiagnoseLevelDriverStateDump, dot11wdi/DiagnoseLevelNone, dot11wdi/DiagnoseLevelDriverStateDump
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,7 @@ typedef enum _eDiagnoseLevel {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |
 
 ## See Also

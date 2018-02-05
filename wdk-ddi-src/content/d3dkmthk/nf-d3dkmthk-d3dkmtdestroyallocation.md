@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 249ca05c-406d-4d47-a266-222f7be1a883
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTDestroyAllocation, OpenGL_Functions_ecc5579c-3b0a-4c2c-9978-9f2591444c03.xml, D3DKMTDestroyAllocation function [Display Devices], display.d3dkmtdestroyallocation, D3DKMTDestroyAllocation
+ms.keywords : D3DKMTDestroyAllocation function [Display Devices], OpenGL_Functions_ecc5579c-3b0a-4c2c-9978-9f2591444c03.xml, display.d3dkmtdestroyallocation, d3dkmthk/D3DKMTDestroyAllocation, D3DKMTDestroyAllocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

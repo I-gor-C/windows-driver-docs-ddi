@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0130e35f-a6a8-4fa9-9922-1d1d0f43cb2a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAllocateExtraCreateParameterList, fltkernel/FltAllocateExtraCreateParameterList, ifsk.fltallocateextracreateparameterlist, FltApiRef_a_to_d_9caf46c0-e0bb-4a0a-b9dd-f4005664b9ca.xml, FltAllocateExtraCreateParameterList routine [Installable File System Drivers]
+ms.keywords : FltApiRef_a_to_d_9caf46c0-e0bb-4a0a-b9dd-f4005664b9ca.xml, fltkernel/FltAllocateExtraCreateParameterList, ifsk.fltallocateextracreateparameterlist, FltAllocateExtraCreateParameterList, FltAllocateExtraCreateParameterList routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,22 +118,21 @@ While a file system filter driver processes an <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterfromlookasidelist.md">FltAllocateExtraCreateParameterFromLookasideList</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 
@@ -141,15 +140,13 @@ While a file system filter driver processes an <a href="https://msdn.microsoft.c
 
 <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameter.md">FltAllocateExtraCreateParameter</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameter.md">FltAllocateExtraCreateParameter</a>
 
  
 

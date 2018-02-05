@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 89bfe36a-6674-43b7-a889-24fe15771aea
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.setpseudovalues, IDebugRegisters2 interface [Windows Debugging], SetPseudoValues method, IDebugRegisters2::SetPseudoValues, SetPseudoValues, SetPseudoValues method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters2::SetPseudoValues, IDebugRegisters_db4bc070-c017-479f-b9ca-4b2abe513d7f.xml, SetPseudoValues method [Windows Debugging], IDebugRegisters2
+ms.keywords : dbgeng/IDebugRegisters2::SetPseudoValues, IDebugRegisters_db4bc070-c017-479f-b9ca-4b2abe513d7f.xml, IDebugRegisters2::SetPseudoValues, SetPseudoValues method [Windows Debugging], IDebugRegisters2 interface, SetPseudoValues, IDebugRegisters2 interface [Windows Debugging], SetPseudoValues method, debugger.setpseudovalues, SetPseudoValues method [Windows Debugging], IDebugRegisters2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -145,14 +145,9 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

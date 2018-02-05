@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0b9153b3-f379-40c4-87f6-1fa380070e65
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMSetBusData, hardware_configuration_ref_4fd9608c-60b9-4a86-9aa3-02d6ec17da92.xml, NdisMSetBusData function [Network Drivers Starting with Windows Vista], NdisMSetBusData, netvista.ndismsetbusdata
+ms.keywords : NdisMSetBusData, netvista.ndismsetbusdata, ndis/NdisMSetBusData, NdisMSetBusData function [Network Drivers Starting with Windows Vista], hardware_configuration_ref_4fd9608c-60b9-4a86-9aa3-02d6ec17da92.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,26 +89,23 @@ The length, in bytes, of the data to write.
 ## Remarks
 
 This function replaces the NDIS 5.1 
-    <mshelp:link keywords="netxp.ndiswritepcislotinformation" tabindex="0"><b>
-    NdisWritePciSlotInformation</b></mshelp:link> function.
+    <a href="https://msdn.microsoft.com/6783ad54-3382-456b-a59e-3fc2b1f91cd6">
+    NdisWritePciSlotInformation</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>
 

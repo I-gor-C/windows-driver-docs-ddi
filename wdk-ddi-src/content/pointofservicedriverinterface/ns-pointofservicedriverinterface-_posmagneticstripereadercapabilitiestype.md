@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 8f5ad241-a145-468d-bd69-7956985152b5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/PosMagneticStripeReaderCapabilitiesType, pos.posmagneticstripereadercapabilitiestype, _PosMagneticStripeReaderCapabilitiesType, PosMagneticStripeReaderCapabilitiesType, PosMagneticStripeReaderCapabilitiesType structure
+ms.keywords : PosMagneticStripeReaderCapabilitiesType, pointofservicedriverinterface/PosMagneticStripeReaderCapabilitiesType, PosMagneticStripeReaderCapabilitiesType structure, _PosMagneticStripeReaderCapabilitiesType, pos.posmagneticstripereadercapabilitiestype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -109,7 +109,4 @@ The supported encryption algorithm. See <a href="..\pointofservicedriverinterfac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -57,11 +57,11 @@ void EvtUfxDeviceAddressed(
 
 ## Parameters
 
-``
+`Arg1`
 
 
 
-``
+`Arg1`
 
 
 
@@ -79,14 +79,11 @@ The client driver indicates completion of this event by calling the <a href="..\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ufxclient.h |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

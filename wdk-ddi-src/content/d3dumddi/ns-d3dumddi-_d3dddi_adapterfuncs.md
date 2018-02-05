@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bbf4852c-0fa5-47c0-a77e-7114b2a77549
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D_other_Structs_2397321f-704c-4c93-bbd1-b7591134294c.xml, d3dumddi/D3DDDI_ADAPTERFUNCS, D3DDDI_ADAPTERFUNCS structure [Display Devices], D3DDDI_ADAPTERFUNCS, _D3DDDI_ADAPTERFUNCS, display.d3dddi_adapterfuncs
+ms.keywords : d3dumddi/D3DDDI_ADAPTERFUNCS, D3DDDI_ADAPTERFUNCS structure [Display Devices], _D3DDDI_ADAPTERFUNCS, display.d3dddi_adapterfuncs, D3DDDI_ADAPTERFUNCS, D3D_other_Structs_2397321f-704c-4c93-bbd1-b7591134294c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,22 +85,20 @@ typedef HRESULT (APIENTRY *PFND3DDDI_CLOSEADAPTER)(IN HANDLE hAdapter);</pre>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_openadapter.md">D3DDDIARG_OPENADAPTER</a>
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_closeadapter.md">CloseAdapter</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_openadapter.md">OpenAdapter</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_closeadapter.md">CloseAdapter</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_openadapter.md">D3DDDIARG_OPENADAPTER</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 
  
 

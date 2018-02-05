@@ -83,9 +83,7 @@ The <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function takes, as a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 
 ## See Also

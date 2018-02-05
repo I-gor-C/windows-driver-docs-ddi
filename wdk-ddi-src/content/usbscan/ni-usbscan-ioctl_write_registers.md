@@ -208,6 +208,4 @@ CloseHandle(overlapped.hEvent);</pre>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |
-| **IRQL** |  |

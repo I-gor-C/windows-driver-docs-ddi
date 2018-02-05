@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE"
+req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 
@@ -67,8 +67,8 @@ NTSTATUS DmaAppendHandler(
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
      <i>pProviderChannelContext</i> parameter of the 
-     <mshelp:link keywords="netvista.providerallocatedmachannel" tabindex="0"><b>
-     ProviderAllocateDmaChannel</b></mshelp:link> function.
+     <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
+     ProviderAllocateDmaChannel</a> function.
 
 `DescriptorVirtualAddress`
 
@@ -162,14 +162,10 @@ NetDMA calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista. Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista. |
+| **Target Platform** | Windows |
 | **Header** | netdma.h (include Netdma.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

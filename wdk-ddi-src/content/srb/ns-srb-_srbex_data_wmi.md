@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3FFBF258-50C3-4D2D-AFC8-184D2FF85EE4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSRBEX_DATA_WMI, storport/SRBEX_DATA_WMI, storage.srbex_data_wmi, *PSRBEX_DATA_WMI, storport/PSRBEX_DATA_WMI, PSRBEX_DATA_WMI structure pointer [Storage Devices], SRBEX_DATA_WMI structure [Storage Devices], SRBEX_DATA_WMI, _SRBEX_DATA_WMI
+ms.keywords : storage.srbex_data_wmi, storport/PSRBEX_DATA_WMI, SRBEX_DATA_WMI structure [Storage Devices], SRBEX_DATA_WMI, _SRBEX_DATA_WMI, storport/SRBEX_DATA_WMI, PSRBEX_DATA_WMI structure pointer [Storage Devices], PSRBEX_DATA_WMI, *PSRBEX_DATA_WMI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,7 +81,7 @@ Data type indicator for the bidirectional extended SRB data structure. Set to <b
 
 `WMIFlags`
 
-Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>WMIFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
+Indicates that the WMI request is for the adapter if SRB_WMI_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>WMIFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
 
 `WMISubFunction`
 
@@ -91,14 +91,12 @@ Indicates the WMI action to be performed. The subfunction value corresponds to t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available  starting with Windows 8. Available  starting with Windows 8. |
 | **Header** | srb.h (include Storport.h, Srb.h) |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
  
 

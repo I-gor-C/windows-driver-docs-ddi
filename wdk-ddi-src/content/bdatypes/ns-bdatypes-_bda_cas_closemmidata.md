@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : D1AA47FB-A419-4B25-89A8-7481630B108A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PBDA_CAS_CLOSEMMIDATA, bdatypes/BDA_CAS_CLOSEMMIDATA, BDA_CAS_CLOSEMMIDATA, BDA_CAS_CLOSEMMIDATA structure [Streaming Media Devices], PBDA_CAS_CLOSEMMIDATA, bdatypes/PBDA_CAS_CLOSEMMIDATA, stream.bda_cas_closemmidata, PBDA_CAS_CLOSEMMIDATA structure pointer [Streaming Media Devices], _BDA_CAS_CLOSEMMIDATA"
+ms.keywords : BDA_CAS_CLOSEMMIDATA, _BDA_CAS_CLOSEMMIDATA, bdatypes/BDA_CAS_CLOSEMMIDATA, stream.bda_cas_closemmidata, BDA_CAS_CLOSEMMIDATA structure [Streaming Media Devices], PBDA_CAS_CLOSEMMIDATA, PBDA_CAS_CLOSEMMIDATA structure pointer [Streaming Media Devices], *PBDA_CAS_CLOSEMMIDATA, bdatypes/PBDA_CAS_CLOSEMMIDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBDA_CAS_CLOSEMMIDATA, BDA_CAS_CLOSEMMIDATA"
+req.typenames : BDA_CAS_CLOSEMMIDATA, *PBDA_CAS_CLOSEMMIDATA
 ---
 
 # _BDA_CAS_CLOSEMMIDATA structure
@@ -59,7 +59,4 @@ typedef struct _BDA_CAS_CLOSEMMIDATA {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

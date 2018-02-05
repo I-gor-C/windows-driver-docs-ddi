@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
+req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 
@@ -112,20 +112,16 @@ If GpioClx receives an <b>IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</b> request, a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | gpioclx.h |
-| **Library** |  |
 | **IRQL** | Called at PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698248">GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698261">IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698248">GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</a>
 
  
 

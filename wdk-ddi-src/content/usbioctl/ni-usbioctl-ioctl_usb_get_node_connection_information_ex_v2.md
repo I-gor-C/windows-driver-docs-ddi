@@ -94,6 +94,5 @@ In addition, the request also determines whether the port and the attached devic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |

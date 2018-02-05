@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e7fc9290-8f24-4b9f-822a-0bdce50dafb9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k111_81ff5c8c-442c-4ddd-9166-5445b964893a.xml, NtDeleteValueKey, ZwDeleteValueKey routine [Kernel-Mode Driver Architecture], wdm/ZwDeleteValueKey, wdm/NtDeleteValueKey, ZwDeleteValueKey, kernel.zwdeletevaluekey
+ms.keywords : kernel.zwdeletevaluekey, ZwDeleteValueKey routine [Kernel-Mode Driver Architecture], ZwDeleteValueKey, wdm/ZwDeleteValueKey, wdm/NtDeleteValueKey, k111_81ff5c8c-442c-4ddd-9166-5445b964893a.xml, NtDeleteValueKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -129,30 +129,29 @@ Device drivers should not attempt to call <b>ZwDeleteValueKey</b> directly to de
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
 
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
-<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 
-<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
+<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 
 <a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
 
-<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

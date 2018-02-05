@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1f0e8fdc-ae3d-4f5e-b047-b3b7bf73d389
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdasup/BdaMethodCreateTopology, stream.bdamethodcreatetopology, BdaMethodCreateTopology function [Streaming Media Devices], BdaMethodCreateTopology, bdaref_3e082bad-4178-430a-aca0-3af6324a0aa2.xml
+ms.keywords : BdaMethodCreateTopology function [Streaming Media Devices], bdasup/BdaMethodCreateTopology, stream.bdamethodcreatetopology, BdaMethodCreateTopology, bdaref_3e082bad-4178-430a-aca0-3af6324a0aa2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,26 +80,23 @@ If a BDA minidriver must create the template topology between two filter pins wi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
+
+<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 
 <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563413">KSMETHOD_BDA_CREATE_TOPOLOGY</a>
 
 <a href="..\bdasup\nf-bdasup-bdacreatetopology.md">BdaCreateTopology</a>
-
-<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
 
  
 

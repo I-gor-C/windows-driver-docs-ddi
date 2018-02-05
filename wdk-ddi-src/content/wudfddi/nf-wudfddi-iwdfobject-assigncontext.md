@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9b543d5d-ed6d-4440-b5ad-aefca69dd489
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : AssignContext method, AssignContext method, IWDFObject interface, AssignContext, wdf.iwdfobject_assigncontext, umdf.iwdfobject_assigncontext, IWDFObject interface, AssignContext method, IWDFObject::AssignContext, wudfddi/IWDFObject::AssignContext, IWDFObject, UMDFBaseObjectRef_1cc8c14a-66bd-487c-a58d-00f22f52adcc.xml
+ms.keywords : IWDFObject interface, AssignContext method, AssignContext method, IWDFObject interface, UMDFBaseObjectRef_1cc8c14a-66bd-487c-a58d-00f22f52adcc.xml, wudfddi/IWDFObject::AssignContext, AssignContext method, wdf.iwdfobject_assigncontext, IWDFObject, AssignContext, umdf.iwdfobject_assigncontext, IWDFObject::AssignContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -84,20 +84,18 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
-
 <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560218">IWDFObject::RetrieveContext</a>
 

@@ -61,19 +61,17 @@ This interface extends <a href="..\printerextension\nn-printerextension-iprinter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **DLL** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/310E92A9-F751-4346-9B2D-0578A136AD20">Device Maintenance</a>
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
-
 <a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>
+
+<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 
  
 

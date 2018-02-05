@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : f8184ae1-878f-46fc-bddc-66c065bc9e75
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasUpdateScanRect function [Imaging Devices], wiasFncs_ef2b5686-5026-469b-8133-d2c37fddb732.xml, image.wiasupdatescanrect, wiamdef/wiasUpdateScanRect, wiasUpdateScanRect
+ms.keywords : wiasFncs_ef2b5686-5026-469b-8133-d2c37fddb732.xml, wiamdef/wiasUpdateScanRect, image.wiasupdatescanrect, wiasUpdateScanRect function [Imaging Devices], wiasUpdateScanRect
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -84,14 +84,11 @@ This helper method is called to update the properties making up the scan rectang
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 

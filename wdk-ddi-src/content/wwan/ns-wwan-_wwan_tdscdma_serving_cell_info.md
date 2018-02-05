@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5D0DD219-8D81-4F72-B327-119A45CC35B4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_TDSCDMA_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_TDSCDMA_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], *PWWAN_TDSCDMA_SERVING_CELL_INFO, PWWAN_TDSCDMA_SERVING_CELL_INFO, wwan/PWWAN_TDSCDMA_SERVING_CELL_INFO, _WWAN_TDSCDMA_SERVING_CELL_INFO, netvista.wwan_tdscdma_serving_cell_info, WWAN_TDSCDMA_SERVING_CELL_INFO, wwan/WWAN_TDSCDMA_SERVING_CELL_INFO
+ms.keywords : WWAN_TDSCDMA_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_TDSCDMA_SERVING_CELL_INFO, PWWAN_TDSCDMA_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], _WWAN_TDSCDMA_SERVING_CELL_INFO, netvista.wwan_tdscdma_serving_cell_info, WWAN_TDSCDMA_SERVING_CELL_INFO, wwan/WWAN_TDSCDMA_SERVING_CELL_INFO, PWWAN_TDSCDMA_SERVING_CELL_INFO, *PWWAN_TDSCDMA_SERVING_CELL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -105,20 +105,18 @@ The UTRA Absolute Radio Frequency Channel Number for the serving cell (0-16383).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
 <a href="..\wwan\ns-wwan-_wwan_tdscdma_mrl.md">WWAN_TDSCDMA_MRL</a>
 
+<a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
+
 <a href="..\wwan\ns-wwan-_wwan_tdscdma_mrl_info.md">WWAN_TDSCDMA_MRL_INFO</a>
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
-
-<a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
 
  
 

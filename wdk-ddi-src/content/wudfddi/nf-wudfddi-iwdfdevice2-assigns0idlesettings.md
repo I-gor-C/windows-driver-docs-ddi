@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ffe91b9a-3b74-4dd9-b23d-096f1992485e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : AssignS0IdleSettings, AssignS0IdleSettings method, IWDFDevice2 interface, wudfddi/IWDFDevice2::AssignS0IdleSettings, AssignS0IdleSettings method, UMDFDeviceObjectRef_337ed405-40bd-4162-ad50-3ee59e4e6c73.xml, IWDFDevice2 interface, AssignS0IdleSettings method, umdf.iwdfdevice2_assigns0idlesettings, IWDFDevice2::AssignS0IdleSettings, IWDFDevice2, wdf.iwdfdevice2_assigns0idlesettings
+ms.keywords : UMDFDeviceObjectRef_337ed405-40bd-4162-ad50-3ee59e4e6c73.xml, AssignS0IdleSettings method, IWDFDevice2 interface, AssignS0IdleSettings method, IWDFDevice2::AssignS0IdleSettings, wdf.iwdfdevice2_assigns0idlesettings, wudfddi/IWDFDevice2::AssignS0IdleSettings, umdf.iwdfdevice2_assigns0idlesettings, IWDFDevice2, AssignS0IdleSettings, IWDFDevice2 interface, AssignS0IdleSettings method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -187,20 +187,18 @@ For more information about supporting a device's idle capabilities, see <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
-
 <a href="https://msdn.microsoft.com/D020B8AA-7353-47E1-A111-82BFE6F5F03D">IWDFDevice3::AssignS0IdleSettingsEx</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>
 

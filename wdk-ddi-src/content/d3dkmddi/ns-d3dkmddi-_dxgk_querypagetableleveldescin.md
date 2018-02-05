@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1B13BBB1-4184-4166-A61F-CC266D0391BF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_QUERYPAGETABLELEVELDESCIN structure [Display Devices], DXGK_QUERYPAGETABLELEVELDESCIN, _DXGK_QUERYPAGETABLELEVELDESCIN, display.dxgk_querypagetableleveldescin, d3dkmddi/DXGK_QUERYPAGETABLELEVELDESCIN
+ms.keywords : display.dxgk_querypagetableleveldescin, _DXGK_QUERYPAGETABLELEVELDESCIN, DXGK_QUERYPAGETABLELEVELDESCIN, DXGK_QUERYPAGETABLELEVELDESCIN structure [Display Devices], d3dkmddi/DXGK_QUERYPAGETABLELEVELDESCIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,7 +72,5 @@ DXGKARG_QUERYADAPTERINFO::OutputDataSize = sizeof(DXGK_PAGE_TABLE_LEVEL_DESC);
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

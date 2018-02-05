@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b65608f4-de9a-4bed-a966-586e50c50e45
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_f2bbb2e7-eed1-4ffd-93d9-050dcb6b0b60.xml, IDrmPort2::AddContentHandlers, audio.idrmport2_addcontenthandlers, portcls/IDrmPort2::AddContentHandlers, IDrmPort2 interface [Audio Devices], AddContentHandlers method, AddContentHandlers method [Audio Devices], IDrmPort2, AddContentHandlers, AddContentHandlers method [Audio Devices], IDrmPort2 interface
+ms.keywords : AddContentHandlers method [Audio Devices], IDrmPort2 interface, IDrmPort2, AddContentHandlers, AddContentHandlers method [Audio Devices], IDrmPort2 interface [Audio Devices], AddContentHandlers method, audio.idrmport2_addcontenthandlers, portcls/IDrmPort2::AddContentHandlers, IDrmPort2::AddContentHandlers, audmp-routines_f2bbb2e7-eed1-4ffd-93d9-050dcb6b0b60.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -74,14 +74,9 @@ See comments in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContent
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

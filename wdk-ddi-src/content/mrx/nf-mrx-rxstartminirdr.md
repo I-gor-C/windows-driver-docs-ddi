@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d5b091fa-13bf-4761-a03d-1790e7045b69
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxStartMinirdr, ifsk.rxstartminirdr, rxref_0ecf01ed-771f-44e8-a107-6d3a0d2beb02.xml, mrx/RxStartMinirdr, RxStartMinirdr function [Installable File System Drivers]
+ms.keywords : ifsk.rxstartminirdr, rxref_0ecf01ed-771f-44e8-a107-6d3a0d2beb02.xml, mrx/RxStartMinirdr, RxStartMinirdr, RxStartMinirdr function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 
@@ -208,42 +208,38 @@ On an abnormal termination or other failure, <b>RxStartMinirdr</b> will try to u
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mrx.h (include Mrx.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">, RxpUnregisterMinirdr</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550829">MRxStart</a>
-
-<a href="..\mrx\nf-mrx-rxfsddispatch.md">RxFsdDispatch</a>
-
-<a href="..\mrx\nf-mrx-__rxfillandinstallfastiodispatch.md">__RxFillAndInstallFastIoDispatch</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550715">MRxLowIOSubmit[LOWIO_OP_IOCTL]</a>
-
-<a href="..\rxstruc\nf-rxstruc-rxunregisterminirdr.md">RxUnregisterMinirdr</a>
 
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550709">MRxLowIOSubmit[LOWIO_OP_FSCTL]</a>
 
-<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
+<a href="..\mrx\nf-mrx-__rxfillandinstallfastiodispatch.md">__RxFillAndInstallFastIoDispatch</a>
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
-
-<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
+<a href="..\rxstruc\nf-rxstruc-rxunregisterminirdr.md">RxUnregisterMinirdr</a>
 
 <a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMinirdr</a>
 
+<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
+
 <a href="..\mrx\nf-mrx-rxsetdomainformailslotbroadcast.md">RxSetDomainForMailslotBroadcast</a>
+
+<a href="..\mrx\nf-mrx-rxfsddispatch.md">RxFsdDispatch</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550715">MRxLowIOSubmit[LOWIO_OP_IOCTL]</a>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
+
+<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">, RxpUnregisterMinirdr</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550829">MRxStart</a>
+
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 
  
 

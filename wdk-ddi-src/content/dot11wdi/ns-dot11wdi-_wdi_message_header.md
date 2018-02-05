@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 69c3ebf5-8805-47d0-a507-d2e3e1d1b0df
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wdi_message_header, PWDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER, dot11wdi/PWDI_MESSAGE_HEADER, dot11wdi/WDI_MESSAGE_HEADER, PWDI_MESSAGE_HEADER structure pointer [Network Drivers Starting with Windows Vista], WDI_MESSAGE_HEADER structure [Network Drivers Starting with Windows Vista], _WDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER
+ms.keywords : "*PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER, dot11wdi/PWDI_MESSAGE_HEADER, _WDI_MESSAGE_HEADER, PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER structure [Network Drivers Starting with Windows Vista], PWDI_MESSAGE_HEADER structure pointer [Network Drivers Starting with Windows Vista], dot11wdi/WDI_MESSAGE_HEADER, netvista.wdi_message_header"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER
+req.typenames : "*PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER"
 ---
 
 # _WDI_MESSAGE_HEADER structure
@@ -80,7 +80,5 @@ Specifies the transaction ID. This value is used to match host-sent messages wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |

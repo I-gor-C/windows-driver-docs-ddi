@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 37057400-7f4d-4274-b1ef-f03771cae34f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExFreeToLookasideListEx routine [Kernel-Mode Driver Architecture], ExFreeToLookasideListEx, k102_2d275628-4a0f-4da8-a512-60a0998d8c5b.xml, kernel.exfreetolookasidelistex, wdm/ExFreeToLookasideListEx
+ms.keywords : ExFreeToLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exfreetolookasidelistex, ExFreeToLookasideListEx, k102_2d275628-4a0f-4da8-a512-60a0998d8c5b.xml, wdm/ExFreeToLookasideListEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -100,11 +100,9 @@ Currently, the only valid value for the <i>Option</i> parameter is KD_OPTION_SET
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows and Windows Server. Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows and Windows Server. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

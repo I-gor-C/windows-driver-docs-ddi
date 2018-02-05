@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : eb9a89b8-02de-4617-a2f8-f67509ab8987
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4::ControlledOutputWide, IDebugControl4 interface [Windows Debugging], ControlledOutputWide method, ControlledOutputWide method [Windows Debugging], IDebugControl4 interface, ControlledOutputWide method [Windows Debugging], debugger.controlledoutputwide, dbgeng/IDebugControl4::ControlledOutputWide, IDebugControl4, ControlledOutputWide
+ms.keywords : ControlledOutputWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::ControlledOutputWide, ControlledOutputWide, dbgeng/IDebugControl4::ControlledOutputWide, debugger.controlledoutputwide, ControlledOutputWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ControlledOutputWide method, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -401,7 +401,7 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 </tr>
 </table></span></div>
 
-``
+`Arg1`
 
 
 
@@ -434,26 +434,21 @@ When generating very large output strings, it is possible to reach the limits of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
-
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553183">Output</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564716">.printf</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553183">Output</a>
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
 
  
 

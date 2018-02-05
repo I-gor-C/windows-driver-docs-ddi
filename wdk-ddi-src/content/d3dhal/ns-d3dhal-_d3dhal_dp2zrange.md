@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 329e0036-2d67-465f-a049-a36648622003
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2zrange, *LPD3DHAL_DP2ZRANGE, d3dstrct_327e85bf-81c0-420e-b229-e389115fcab3.xml, D3DHAL_DP2ZRANGE, d3dhal/LPD3DHAL_DP2ZRANGE, _D3DHAL_DP2ZRANGE, d3dhal/D3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE structure pointer [Display Devices], LPD3DHAL_DP2ZRANGE, D3DHAL_DP2ZRANGE structure [Display Devices]
+ms.keywords : D3DHAL_DP2ZRANGE, D3DHAL_DP2ZRANGE structure [Display Devices], d3dstrct_327e85bf-81c0-420e-b229-e389115fcab3.xml, d3dhal/D3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE structure pointer [Display Devices], _D3DHAL_DP2ZRANGE, *LPD3DHAL_DP2ZRANGE, display.d3dhal_dp2zrange, d3dhal/LPD3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Specifies the minimum z value for the Mvs matrix described in the <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also

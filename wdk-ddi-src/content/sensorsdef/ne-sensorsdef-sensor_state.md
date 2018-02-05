@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : F1E869AE-2FAF-402F-9C50-58D81E0EFF69
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensorsdef/SensorState_Active, SensorState_Error, sensorsdef/SENSOR_STATE, SensorState_Idle, sensorsdef/SensorState_Error, SensorState_Initializing, sensors.sensor_state, SENSOR_STATE enumeration [Sensor Devices], sensorsdef/SensorState_Idle, sensorsdef/SensorState_Initializing, SensorState_Active, SENSOR_STATE
+ms.keywords : sensorsdef/SENSOR_STATE, sensorsdef/SensorState_Active, SENSOR_STATE, sensorsdef/SensorState_Error, sensorsdef/SensorState_Initializing, SensorState_Active, SensorState_Error, sensors.sensor_state, SensorState_Initializing, SensorState_Idle, SENSOR_STATE enumeration [Sensor Devices], sensorsdef/SensorState_Idle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,5 @@ typedef enum _SENSOR_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | sensorsdef.h |

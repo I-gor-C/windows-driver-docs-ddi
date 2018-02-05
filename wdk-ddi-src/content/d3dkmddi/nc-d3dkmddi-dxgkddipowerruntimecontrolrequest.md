@@ -185,28 +185,24 @@ The operating system guarantees that this function follows the zero level synchr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentlatency.md">DxgkCbSetPowerComponentLatency</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentresidency.md">DxgkCbSetPowerComponentResidency</a>
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentlatency.md">DxgkCbSetPowerComponentLatency</a>
 
  
 

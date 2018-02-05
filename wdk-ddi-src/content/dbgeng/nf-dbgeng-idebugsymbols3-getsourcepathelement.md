@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 69507aed-ff32-46f2-8efb-68c1a7288bfb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetSourcePathElement method, debugger.getsourcepathelement, IDebugSymbols3::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], GetSourcePathElement method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::GetSourcePathElement, IDebugSymbols interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols::GetSourcePathElement, IDebugSymbols2 interface [Windows Debugging], GetSourcePathElement method, GetSourcePathElement, dbgeng/IDebugSymbols3::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols_517435f9-812c-43c2-bf82-5924de7955a2.xml, dbgeng/IDebugSymbols::GetSourcePathElement, dbgeng/IDebugSymbols2::GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols interface
+ms.keywords : GetSourcePathElement method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols2::GetSourcePathElement, dbgeng/IDebugSymbols::GetSourcePathElement, IDebugSymbols2 interface [Windows Debugging], GetSourcePathElement method, GetSourcePathElement method [Windows Debugging], IDebugSymbols3 interface, GetSourcePathElement method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3, GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetSourcePathElement, IDebugSymbols_517435f9-812c-43c2-bf82-5924de7955a2.xml, debugger.getsourcepathelement, IDebugSymbols::GetSourcePathElement, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols3::GetSourcePathElement, dbgeng/IDebugSymbols3::GetSourcePathElement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -113,26 +113,21 @@ For more information about manipulating the source path, see <a href="https://ms
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548358">GetSourcePath</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
  
 

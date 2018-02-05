@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7762bf83-82cc-4eef-9699-d093a8c2b986
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/NetworkOpenLocationAny, ntifs/NETWORK_OPEN_LOCATION_QUALIFIER, NETWORK_OPEN_LOCATION_QUALIFIER enumeration [Installable File System Drivers], ntifs/NetworkOpenLocationLoopback, NetworkOpenLocationAny, NetworkOpenLocationRemote, ifsk.network_open_location_qualifier, NetworkOpenLocationLoopback, ntifs/NetworkOpenLocationRemote, NETWORK_OPEN_LOCATION_QUALIFIER, ECP_Structures_0e589e5b-5266-429b-acab-236c00a75c1c.xml
+ms.keywords : NETWORK_OPEN_LOCATION_QUALIFIER enumeration [Installable File System Drivers], ntifs/NetworkOpenLocationAny, NetworkOpenLocationAny, NETWORK_OPEN_LOCATION_QUALIFIER, ntifs/NetworkOpenLocationRemote, NetworkOpenLocationLoopback, ntifs/NETWORK_OPEN_LOCATION_QUALIFIER, ntifs/NetworkOpenLocationLoopback, NetworkOpenLocationRemote, ECP_Structures_0e589e5b-5266-429b-acab-236c00a75c1c.xml, ifsk.network_open_location_qualifier
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type is available starting with Windows Vista. This enumeration type is available starting with Windows Vista. |
 | **Header** | ntifs.h (include Ntifs.h) |

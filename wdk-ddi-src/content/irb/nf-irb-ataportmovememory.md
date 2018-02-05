@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c9d724bb-cc65-428c-ad48-21b227f3c8b1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortMoveMemory routine [Storage Devices], atartns_9ecea2c5-892f-4d04-9865-30598ac4e5d6.xml, AtaPortMoveMemory, irb/AtaPortMoveMemory, storage.ataportmovememory
+ms.keywords : irb/AtaPortMoveMemory, AtaPortMoveMemory, AtaPortMoveMemory routine [Storage Devices], storage.ataportmovememory, atartns_9ecea2c5-892f-4d04-9865-30598ac4e5d6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ The location pointed to by <i>ReadBuffer</i> and <i>Length</i> can overlap the r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |

@@ -121,6 +121,4 @@ If a received secure element event info is too large to be copied into this IOCT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | nfcsedev.h |
-| **IRQL** |  |

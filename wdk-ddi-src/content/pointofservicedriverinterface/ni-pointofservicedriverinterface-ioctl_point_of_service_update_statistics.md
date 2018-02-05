@@ -73,6 +73,4 @@ To get extended error information, call <a href="http://go.microsoft.com/fwlink/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
-| **IRQL** |  |

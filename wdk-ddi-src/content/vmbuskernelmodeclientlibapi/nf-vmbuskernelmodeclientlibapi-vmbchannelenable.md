@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A0256B3F-C35C-45AB-A825-0A82189F08DC
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelEnable function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelEnable, netvista.vmbchannelenable, VmbChannelEnable
+ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelEnable, VmbChannelEnable function [Network Drivers Starting with Windows Vista], netvista.vmbchannelenable, VmbChannelEnable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -70,11 +70,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |

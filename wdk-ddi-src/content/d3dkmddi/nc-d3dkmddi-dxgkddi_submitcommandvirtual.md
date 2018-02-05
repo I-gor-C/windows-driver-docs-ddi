@@ -117,20 +117,15 @@ All other return values will lead to the OS <i>bugcheck</i>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommandvirtual.md">DXGKARG_SUBMITCOMMANDVIRTUAL</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommandvirtual.md">DXGKARG_SUBMITCOMMANDVIRTUAL</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
 

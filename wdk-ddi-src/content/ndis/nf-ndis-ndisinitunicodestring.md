@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 073feb91-48ae-4ad5-9061-117e6541021c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_string_ref_a25a98b2-f88b-4a56-9bb7-77a4e6dc10a6.xml, NdisInitUnicodeString macro [Network Drivers Starting with Windows Vista], netvista.ndisinitunicodestring, NdisInitUnicodeString, ndis/NdisInitUnicodeString
+ms.keywords : netvista.ndisinitunicodestring, ndis/NdisInitUnicodeString, NdisInitUnicodeString, NdisInitUnicodeString macro [Network Drivers Starting with Windows Vista], ndis_string_ref_a25a98b2-f88b-4a56-9bb7-77a4e6dc10a6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -86,35 +86,33 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitUnicodeString (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | See Remarks section |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndisansistringtounicodestring.md">
+   NdisAnsiStringToUnicodeString</a>
+
+<a href="..\ndis\nf-ndis-ndisunicodestringtoansistring.md">
+   NdisUnicodeStringToAnsiString</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry of NDIS Protocol
+   Drivers</a>
+
+<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
+
 <a href="..\ndis\nf-ndis-ndisinitansistring.md">NdisInitAnsiString</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
-
-<mshelp:link keywords="netvista.ndisansistringtounicodestring" tabindex="0"><b>
-   NdisAnsiStringToUnicodeString</b></mshelp:link>
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-<mshelp:link keywords="netvista.ndisunicodestringtoansistring" tabindex="0"><b>
-   NdisUnicodeStringToAnsiString</b></mshelp:link>
-
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<mshelp:link keywords="netvista.driverentry_of_ndis_protocol_drivers" tabindex="0"><b>DriverEntry of NDIS Protocol
-   Drivers</b></mshelp:link>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

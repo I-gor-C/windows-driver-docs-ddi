@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b66652b7-2e02-49f5-a7e3-60ff35363a19
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_timer_ref_39b68ae4-4fd7-4609-aebc-e2be21bead04.xml, netvista.ndiscanceltimerobject, NdisCancelTimerObject function [Network Drivers Starting with Windows Vista], NdisCancelTimerObject, ndis/NdisCancelTimerObject
+ms.keywords : netvista.ndiscanceltimerobject, ndis/NdisCancelTimerObject, NdisCancelTimerObject, NdisCancelTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_39b68ae4-4fd7-4609-aebc-e2be21bead04.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,8 +57,8 @@ BOOLEAN NdisCancelTimerObject(
 `TimerObject`
 
 A handle to a timer object that NDIS provides when a driver calls the 
-     <mshelp:link keywords="netvista.ndisallocatetimerobject" tabindex="0"><b>
-     NdisAllocateTimerObject</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">
+     NdisAllocateTimerObject</a> function.
 
 
 ## Return Value
@@ -103,22 +103,20 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | See Remarks section |
 | **DDI compliance rules** | Irql_Timer_Function, PeriodicTimer |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
-
 <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a>
 
 <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
+
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 
  
 

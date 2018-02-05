@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a2f83163-4529-4627-8959-2b4cd6b88828
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassGetNextEvent, StreamClassGetNextEvent routine [Streaming Media Devices], stream.streamclassgetnextevent, strmini/StreamClassGetNextEvent, strclass-routines_5a606366-379b-400b-b039-8722f084e3c6.xml
+ms.keywords : StreamClassGetNextEvent, strmini/StreamClassGetNextEvent, strclass-routines_5a606366-379b-400b-b039-8722f084e3c6.xml, stream.streamclassgetnextevent, StreamClassGetNextEvent routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,6 @@ The caller may specify additional search criteria to match events on the event q
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |

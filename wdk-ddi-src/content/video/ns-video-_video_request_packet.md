@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8ccc8c97-4c8c-4278-8eef-a612ce85439e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.video_request_packet, video/VIDEO_REQUEST_PACKET, *PVIDEO_REQUEST_PACKET, Video_Structs_38b404b6-a625-43a4-b2ad-21749c64eee1.xml, VIDEO_REQUEST_PACKET, video/PVIDEO_REQUEST_PACKET, PVIDEO_REQUEST_PACKET structure pointer [Display Devices], _VIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET structure [Display Devices], PVIDEO_REQUEST_PACKET
+ms.keywords : "*PVIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET, video/PVIDEO_REQUEST_PACKET, display.video_request_packet, video/VIDEO_REQUEST_PACKET, Video_Structs_38b404b6-a625-43a4-b2ad-21749c64eee1.xml, _VIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET structure [Display Devices], PVIDEO_REQUEST_PACKET structure pointer [Display Devices], PVIDEO_REQUEST_PACKET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_REQUEST_PACKET, *PVIDEO_REQUEST_PACKET
+req.typenames : "*PVIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET"
 req.product : Windows 10 or later.
 ---
 
@@ -85,18 +85,15 @@ Pointer to a STATUS_BLOCK structure in the <a href="https://msdn.microsoft.com/a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
-
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
 
 <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
 
  
 

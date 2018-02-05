@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 65244091-6089-4d0c-abf4-1178cf0bf1b5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_4a154d39-a344-4f58-8abe-cbf2a0926271.xml, stream.ksfilterfactorygetouterunknown, ks/KsFilterFactoryGetOuterUnknown, KsFilterFactoryGetOuterUnknown, KsFilterFactoryGetOuterUnknown function [Streaming Media Devices]
+ms.keywords : stream.ksfilterfactorygetouterunknown, KsFilterFactoryGetOuterUnknown function [Streaming Media Devices], KsFilterFactoryGetOuterUnknown, ks/KsFilterFactoryGetOuterUnknown, avfunc_4a154d39-a344-4f58-8abe-cbf2a0926271.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,28 +70,25 @@ For more information, see <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 
 <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 
-<a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
-
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
 
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 
-<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
+
+<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 
  
 

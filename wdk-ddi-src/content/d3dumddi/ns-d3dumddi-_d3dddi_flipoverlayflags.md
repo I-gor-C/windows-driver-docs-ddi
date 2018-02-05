@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09146e6b-3ac0-422a-addb-831394a15c08
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDI_FLIPOVERLAYFLAGS, _D3DDDI_FLIPOVERLAYFLAGS, display.d3dddi_flipoverlayflags, D3DDDI_FLIPOVERLAYFLAGS, D3DDDI_FLIPOVERLAYFLAGS structure [Display Devices], D3D_other_Structs_a62b399d-d553-4325-9f5a-ceb08287d4f4.xml
+ms.keywords : D3DDDI_FLIPOVERLAYFLAGS structure [Display Devices], _D3DDDI_FLIPOVERLAYFLAGS, d3dumddi/D3DDDI_FLIPOVERLAYFLAGS, D3D_other_Structs_a62b399d-d553-4325-9f5a-ceb08287d4f4.xml, D3DDDI_FLIPOVERLAYFLAGS, display.d3dddi_flipoverlayflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,9 +62,7 @@ typedef struct _D3DDDI_FLIPOVERLAYFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

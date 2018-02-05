@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 600916e1-37c2-4766-93d9-b7d32a542542
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : RemoveRADIUSServer_IN structure [Storage Devices], PRemoveRADIUSServer_IN structure pointer [Storage Devices], structs-iSCSI_e85b2fed-4691-43c4-b71a-a81905c79564.xml, iscsiop/PRemoveRADIUSServer_IN, storage.removeradiusserver_in, RemoveRADIUSServer_IN, *PRemoveRADIUSServer_IN, iscsiop/RemoveRADIUSServer_IN, PRemoveRADIUSServer_IN, _RemoveRADIUSServer_IN
+ms.keywords : RemoveRADIUSServer_IN, iscsiop/RemoveRADIUSServer_IN, structs-iSCSI_e85b2fed-4691-43c4-b71a-a81905c79564.xml, RemoveRADIUSServer_IN structure [Storage Devices], iscsiop/PRemoveRADIUSServer_IN, *PRemoveRADIUSServer_IN, PRemoveRADIUSServer_IN, storage.removeradiusserver_in, _RemoveRADIUSServer_IN, PRemoveRADIUSServer_IN structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ It is optional that you implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also

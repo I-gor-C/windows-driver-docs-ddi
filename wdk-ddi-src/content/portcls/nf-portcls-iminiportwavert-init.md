@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f25be064-6ad4-42e8-87a5-188978d093fb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRT, audmp-routines_3304baaf-f3bf-43f1-908b-5cf47b084ee1.xml, Init method [Audio Devices], IMiniportWaveRT interface, portcls/IMiniportWaveRT::Init, IMiniportWaveRT interface [Audio Devices], Init method, IMiniportWaveRT::Init, audio.iminiportwavert_init, Init method [Audio Devices], Init
+ms.keywords : audmp-routines_3304baaf-f3bf-43f1-908b-5cf47b084ee1.xml, IMiniportWaveRT interface [Audio Devices], Init method, IMiniportWaveRT, Init, Init method [Audio Devices], IMiniportWaveRT interface, Init method [Audio Devices], IMiniportWaveRT::Init, audio.iminiportwavert_init, portcls/IMiniportWaveRT::Init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -78,20 +78,17 @@ For more information about the <i>ResourceList</i> parameter, see the <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
-
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
+
+<a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
 
  
 

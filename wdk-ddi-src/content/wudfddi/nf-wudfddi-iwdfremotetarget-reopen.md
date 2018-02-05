@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 904904e7-ca59-4dcb-92db-8c7f6a9cbff7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfremotetarget_reopen, wudfddi/IWDFRemoteTarget::Reopen, Reopen, Reopen method, IWDFRemoteTarget interface, UMDFIoTargetObjectRef_13b81124-2d7f-4fed-b4f9-1a5cb647a811.xml, IWDFRemoteTarget interface, Reopen method, IWDFRemoteTarget, wdf.iwdfremotetarget_reopen, Reopen method, IWDFRemoteTarget::Reopen
+ms.keywords : IWDFRemoteTarget::Reopen, Reopen method, IWDFRemoteTarget interface, UMDFIoTargetObjectRef_13b81124-2d7f-4fed-b4f9-1a5cb647a811.xml, Reopen method, wdf.iwdfremotetarget_reopen, umdf.iwdfremotetarget_reopen, IWDFRemoteTarget, wudfddi/IWDFRemoteTarget::Reopen, Reopen, IWDFRemoteTarget interface, Reopen method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -93,14 +93,12 @@ For more information about <b>Reopen</b> and how to use remote I/O targets in UM
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

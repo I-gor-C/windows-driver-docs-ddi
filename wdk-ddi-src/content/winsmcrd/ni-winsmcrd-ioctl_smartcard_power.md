@@ -107,9 +107,7 @@ Virtual power is set to TRUE for COLD_RESET and WARM_RESET; otherwise, virtual p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | winsmcrd.h |
-| **IRQL** |  |
 
 ## See Also
 

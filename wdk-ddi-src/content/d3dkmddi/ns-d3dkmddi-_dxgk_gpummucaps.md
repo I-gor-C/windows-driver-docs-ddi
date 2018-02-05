@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 999820D0-FDEB-49FD-920A-75FD9886492A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_GPUMMUCAPS, display.dxgk_gpummucaps, DXGK_GPUMMUCAPS, d3dkmddi/DXGK_GPUMMUCAPS, DXGK_GPUMMUCAPS structure [Display Devices]"
+ms.keywords : d3dkmddi/DXGK_GPUMMUCAPS, DXGK_GPUMMUCAPS, display.dxgk_gpummucaps, DXGK_GPUMMUCAPS structure [Display Devices], _DXGK_GPUMMUCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,7 +100,5 @@ The number of bits in the GPU virtual address.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ca5caf9d-5c73-4516-bbc9-ee3ff9511e99
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanActivationStateUnknown, WWAN_ACTIVATION_STATE, *PWWAN_ACTIVATION_STATE, wwan/WwanActivationStateDeactivated, wwan/WwanActivationStateActivated, WwanActivationStateDeactivated, _WWAN_ACTIVATION_STATE, wwan/WwanActivationStateMax, WwanActivationStateActivating, PWWAN_ACTIVATION_STATE enumeration pointer [Network Drivers Starting with Windows Vista], WwanActivationStateActivated, WwanRef_d1e0cf59-316c-45a2-8ae3-231c30cae091.xml, WwanActivationStateUnknown, PWWAN_ACTIVATION_STATE, netvista.wwan_activation_state, WwanActivationStateMax, wwan/WWAN_ACTIVATION_STATE, wwan/PWWAN_ACTIVATION_STATE, wwan/WwanActivationStateDeactivating, wwan/WwanActivationStateActivating, WWAN_ACTIVATION_STATE enumeration [Network Drivers Starting with Windows Vista], WwanActivationStateDeactivating
+ms.keywords : WwanActivationStateActivating, WWAN_ACTIVATION_STATE, *PWWAN_ACTIVATION_STATE, wwan/PWWAN_ACTIVATION_STATE, _WWAN_ACTIVATION_STATE, WwanActivationStateUnknown, wwan/WwanActivationStateActivating, wwan/WwanActivationStateDeactivating, WwanActivationStateDeactivated, wwan/WwanActivationStateDeactivated, WwanActivationStateDeactivating, WwanRef_d1e0cf59-316c-45a2-8ae3-231c30cae091.xml, wwan/WwanActivationStateActivated, WwanActivationStateMax, wwan/WWAN_ACTIVATION_STATE, wwan/WwanActivationStateUnknown, netvista.wwan_activation_state, wwan/WwanActivationStateMax, PWWAN_ACTIVATION_STATE enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_ACTIVATION_STATE, WWAN_ACTIVATION_STATE enumeration [Network Drivers Starting with Windows Vista], WwanActivationStateActivated
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_ACTIVATION_STATE, *PWWAN_ACTIVATION_STATE
+req.typenames : "*PWWAN_ACTIVATION_STATE, WWAN_ACTIVATION_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -103,9 +103,7 @@ Miniport drivers use the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 810faf49-faa9-45f2-af94-af576f4c1075
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetFullItemName method [Imaging Devices], IWiaDrvItem interface [Imaging Devices], GetFullItemName method, wiamindr_lh/IWiaDrvItem::GetFullItemName, image.iwiadrvitem_getfullitemname, DrvItem_1b166476-d17a-4953-9c73-6e3d7c9cd0f9.xml, GetFullItemName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem, IWiaDrvItem::GetFullItemName, GetFullItemName
+ms.keywords : GetFullItemName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], GetFullItemName method, GetFullItemName, GetFullItemName method [Imaging Devices], DrvItem_1b166476-d17a-4953-9c73-6e3d7c9cd0f9.xml, IWiaDrvItem, IWiaDrvItem::GetFullItemName, image.iwiadrvitem_getfullitemname, wiamindr_lh/IWiaDrvItem::GetFullItemName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -71,20 +71,16 @@ The name returned in <i>pbstrFullItemName </i>is the name associated with the it
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
-
 <a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
 
  
 

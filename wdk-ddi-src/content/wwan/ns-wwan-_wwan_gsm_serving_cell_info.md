@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 37F6BD26-55F3-4E46-9C39-97A95B6FF5B1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_GSM_SERVING_CELL_INFO, wwan/PWWAN_GSM_SERVING_CELL_INFO, _WWAN_GSM_SERVING_CELL_INFO, PWWAN_GSM_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], PWWAN_GSM_SERVING_CELL_INFO, WWAN_GSM_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], *PWWAN_GSM_SERVING_CELL_INFO, netvista.wwan_gsm_serving_cell_info, WWAN_GSM_SERVING_CELL_INFO
+ms.keywords : "_WWAN_GSM_SERVING_CELL_INFO, wwan/PWWAN_GSM_SERVING_CELL_INFO, WWAN_GSM_SERVING_CELL_INFO, wwan/WWAN_GSM_SERVING_CELL_INFO, PWWAN_GSM_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], PWWAN_GSM_SERVING_CELL_INFO, *PWWAN_GSM_SERVING_CELL_INFO, WWAN_GSM_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], netvista.wwan_gsm_serving_cell_info"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,18 +101,16 @@ The Timing Advance (0-255) in bit periods, where a bit period is 48/13µs. Use 0
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_gsm_nmr_info.md">WWAN_GSM_NMR_INFO</a>
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
 
 <a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
+
+<a href="..\wwan\ns-wwan-_wwan_gsm_nmr_info.md">WWAN_GSM_NMR_INFO</a>
 
 <a href="..\wwan\ns-wwan-_wwan_gsm_nmr.md">WWAN_GSM_NMR</a>
 

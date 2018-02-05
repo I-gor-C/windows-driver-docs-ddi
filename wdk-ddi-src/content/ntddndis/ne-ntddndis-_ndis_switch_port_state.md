@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BEF37F32-036D-4381-93B3-C159ABCFC3F9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SWITCH_PORT_STATE, netvista.ndis_switch_port_state, ntddndis/NdisSwitchPortStateCreated, _NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateDeleted, NDIS_SWITCH_PORT_STATE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchPortStateDeleted, ntddndis/NdisSwitchPortStateUnknown, ntddndis/NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateTeardown, NdisSwitchPortStateCreated, NdisSwitchPortStateTeardown, NdisSwitchPortStateUnknown
+ms.keywords : "_NDIS_SWITCH_PORT_STATE, ntddndis/NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateCreated, NdisSwitchPortStateDeleted, ntddndis/NdisSwitchPortStateDeleted, NdisSwitchPortStateCreated, ntddndis/NdisSwitchPortStateTeardown, NdisSwitchPortStateUnknown, ntddndis/NdisSwitchPortStateUnknown, NDIS_SWITCH_PORT_STATE, NDIS_SWITCH_PORT_STATE enumeration [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_state, NdisSwitchPortStateTeardown"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,9 +86,7 @@ For more information about extensible switch port states, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

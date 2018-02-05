@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : bc348f40-aaa4-4cd4-9dee-c02748d7412c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetNextSiblingItem method [Imaging Devices], GetNextSiblingItem method [Imaging Devices], IWiaDrvItem interface, wiamindr_lh/IWiaDrvItem::GetNextSiblingItem, IWiaDrvItem interface [Imaging Devices], GetNextSiblingItem method, DrvItem_659ed27a-dca2-40de-acb7-f057178e9ab7.xml, GetNextSiblingItem, image.iwiadrvitem_getnextsiblingitem, IWiaDrvItem, IWiaDrvItem::GetNextSiblingItem
+ms.keywords : GetNextSiblingItem method [Imaging Devices], IWiaDrvItem interface [Imaging Devices], GetNextSiblingItem method, image.iwiadrvitem_getnextsiblingitem, GetNextSiblingItem, IWiaDrvItem::GetNextSiblingItem, DrvItem_659ed27a-dca2-40de-acb7-f057178e9ab7.xml, GetNextSiblingItem method [Imaging Devices], IWiaDrvItem interface, wiamindr_lh/IWiaDrvItem::GetNextSiblingItem, IWiaDrvItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -69,20 +69,16 @@ Minidrivers obtain a pointer to the first child item in a folder by calling <a h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543892">IWiaDrvItem::GetParentItem</a>
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>
 

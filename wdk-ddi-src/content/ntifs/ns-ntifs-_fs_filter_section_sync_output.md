@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3378D971-B5D8-485B-8C58-BE5874445407
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FS_FILTER_SECTION_SYNC_OUTPUT, ntifs/FS_FILTER_SECTION_SYNC_OUTPUT, PFS_FILTER_SECTION_SYNC_OUTPUT structure pointer [Installable File System Drivers], PFS_FILTER_SECTION_SYNC_OUTPUT, _FS_FILTER_SECTION_SYNC_OUTPUT, ifsk.fs_filter_section_sync_output_, *PFS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT structure [Installable File System Drivers], ntifs/PFS_FILTER_SECTION_SYNC_OUTPUT
+ms.keywords : "_FS_FILTER_SECTION_SYNC_OUTPUT, ifsk.fs_filter_section_sync_output_, PFS_FILTER_SECTION_SYNC_OUTPUT structure pointer [Installable File System Drivers], *PFS_FILTER_SECTION_SYNC_OUTPUT, ntifs/PFS_FILTER_SECTION_SYNC_OUTPUT, ntifs/FS_FILTER_SECTION_SYNC_OUTPUT, PFS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT structure [Installable File System Drivers], FS_FILTER_SECTION_SYNC_OUTPUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ The size of the structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h |

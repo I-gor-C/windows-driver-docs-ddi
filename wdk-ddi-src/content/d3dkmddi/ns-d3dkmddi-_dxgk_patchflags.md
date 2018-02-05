@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4052b760-70b0-4418-84f9-1e520a551a03
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_e798cfa4-1915-42c8-87ad-709df6a5555f.xml, DXGK_PATCHFLAGS structure [Display Devices], d3dkmddi/DXGK_PATCHFLAGS, _DXGK_PATCHFLAGS, display.dxgk_patchflags, DXGK_PATCHFLAGS
+ms.keywords : display.dxgk_patchflags, DXGK_PATCHFLAGS, DXGK_PATCHFLAGS structure [Display Devices], _DXGK_PATCHFLAGS, d3dkmddi/DXGK_PATCHFLAGS, DmStructs_e798cfa4-1915-42c8-87ad-709df6a5555f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,20 +64,18 @@ typedef struct _DXGK_PATCHFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_patch.md">DxgkDdiPatch</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 1e6b922d-01a2-4a67-91cb-74956d40d769
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : sdplib/SdpCreateNodeAlternative, SdpCreateNodeAlternative, bth_funcs_e54ab424-3fbf-479a-9368-51d824c1fbec.xml, SdpCreateNodeAlternative function [Bluetooth Devices], bltooth.sdpcreatenodealternative
+ms.keywords : bth_funcs_e54ab424-3fbf-479a-9368-51d824c1fbec.xml, sdplib/SdpCreateNodeAlternative, SdpCreateNodeAlternative function [Bluetooth Devices], bltooth.sdpcreatenodealternative, SdpCreateNodeAlternative
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,8 +70,8 @@ If successful, this function returns a pointer to the newly allocated
 
 After an alternative sequence node is created by calling the 
     <b>SdpCreateNodeAlternative</b> function, Bluetooth drivers can call the 
-    <mshelp:link keywords="bltooth.sdpappendnodetocontainernode" tabindex="0"><b>
-    SdpAppendNodeToContainerNode</b></mshelp:link> function to insert other nodes into the alternative sequence node or
+    <a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">
+    SdpAppendNodeToContainerNode</a> function to insert other nodes into the alternative sequence node or
     to add the new alternative sequence node to another alternative sequence node.
 
 An alternative sequence node can be added as a top-level attribute of an SDP record by calling the 
@@ -83,24 +83,21 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 
 <a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">SdpAppendNodeToContainerNode</a>
+
+<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 
  
 

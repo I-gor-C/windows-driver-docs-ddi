@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d7729edf-e92d-4707-83e2-fece90daeacf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFCHILDLISTREQUESTCHILDEJECT, DFDeviceObjectChildListRef_52991ad9-29ef-4ab8-b746-168fcc0b8e99.xml, wdf.wdfchildlistrequestchildeject, kmdf.wdfchildlistrequestchildeject, WdfChildListRequestChildEject method, WdfChildListRequestChildEject, wdfchildlist/WdfChildListRequestChildEject
+ms.keywords : PFN_WDFCHILDLISTREQUESTCHILDEJECT, wdfchildlist/WdfChildListRequestChildEject, WdfChildListRequestChildEject, wdf.wdfchildlistrequestchildeject, kmdf.wdfchildlistrequestchildeject, WdfChildListRequestChildEject method, DFDeviceObjectChildListRef_52991ad9-29ef-4ab8-b746-168fcc0b8e99.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,12 +88,10 @@ For more information about ejectable devices, see <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

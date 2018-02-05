@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f85ef2cf-704a-4a7c-aeeb-483a7b1fdc8f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::GetKernelConnectionOptionsWide, GetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], GetKernelConnectionOptionsWide method, IDebugClient5::GetKernelConnectionOptionsWide, debugger.getkernelconnectionoptionswide, GetKernelConnectionOptionsWide, GetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5
+ms.keywords : IDebugClient5::GetKernelConnectionOptionsWide, GetKernelConnectionOptionsWide, GetKernelConnectionOptionsWide method [Windows Debugging], GetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::GetKernelConnectionOptionsWide, debugger.getkernelconnectionoptionswide, IDebugClient5 interface [Windows Debugging], GetKernelConnectionOptionsWide method, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -121,14 +121,9 @@ For more information about connecting to live kernel-mode targets, see <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

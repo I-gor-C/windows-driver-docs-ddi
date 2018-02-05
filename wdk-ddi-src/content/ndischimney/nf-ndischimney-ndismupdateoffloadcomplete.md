@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aa2c549c-eb16-4d59-9280-1913c8c0266a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismupdateoffloadcomplete, tcp_chim_ndis_func_c525f7d7-2a4d-47ef-8337-85551fb1f7ab.xml, NdisMUpdateOffloadComplete function [Network Drivers Starting with Windows Vista], NdisMUpdateOffloadComplete, ndischimney/NdisMUpdateOffloadComplete
+ms.keywords : NdisMUpdateOffloadComplete, tcp_chim_ndis_func_c525f7d7-2a4d-47ef-8337-85551fb1f7ab.xml, netvista.ndismupdateoffloadcomplete, ndischimney/NdisMUpdateOffloadComplete, NdisMUpdateOffloadComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,17 +62,17 @@ VOID NdisMUpdateOffloadComplete(
 `NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to 
-     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-     NdisMRegisterMiniportDriver</b></mshelp:link>.
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a>.
 
 `OffloadBlockList`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure. The offload target obtained this pointer as an input
+     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The offload target obtained this pointer as an input
      parameter to its 
-     <mshelp:link keywords="netvista.miniportupdateoffload" tabindex="0"><i>
-     MiniportUpdateOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">
+     MiniportUpdateOffload</a> function.
 
 
 ## Return Value
@@ -105,23 +105,19 @@ The update operation did not succeed. The offload target should continue normal 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
-
-<mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link>
-
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
+
+<a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
 
  
 

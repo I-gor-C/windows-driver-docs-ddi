@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C8377EE4-A7A1-4063-A7DC-53D0D8C6E0C3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFdoInitQueryPropertyEx, wdf.wdffdoinitquerypropertyex, WdfFdoInitQueryPropertyEx method, PFN_WDFFDOINITQUERYPROPERTYEX, wdffdo/WdfFdoInitQueryPropertyEx
+ms.keywords : WdfFdoInitQueryPropertyEx method, PFN_WDFFDOINITQUERYPROPERTYEX, wdf.wdffdoinitquerypropertyex, WdfFdoInitQueryPropertyEx, wdffdo/WdfFdoInitQueryPropertyEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -142,14 +142,12 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

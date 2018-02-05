@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4b58a1dc-8a5a-464b-a2a2-deb952febe25
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisRetreatNetBufferDataStart, netvista.ndisretreatnetbufferdatastart, ndis_netbuf_functions_ref_1075cc2e-490a-4b90-93d9-269e226e8dde.xml, NdisRetreatNetBufferDataStart function [Network Drivers Starting with Windows Vista], NdisRetreatNetBufferDataStart
+ms.keywords : NdisRetreatNetBufferDataStart, netvista.ndisretreatnetbufferdatastart, ndis/NdisRetreatNetBufferDataStart, NdisRetreatNetBufferDataStart function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_1075cc2e-490a-4b90-93d9-269e226e8dde.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -144,31 +144,29 @@ If there isn't enough
     driver's design requirements.
 
 Call the 
-    <mshelp:link keywords="netvista.ndisadvancenetbufferdatastart" tabindex="0"><b>
-    NdisAdvanceNetBufferDataStart</b></mshelp:link> function to release the 
+    <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+    NdisAdvanceNetBufferDataStart</a> function to release the 
     <i>used data space</i> that was added with 
     <b>NdisRetreatNetBufferDataStart</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<mshelp:link keywords="netvista.ndisadvancenetbufferdatastart" tabindex="0"><b>
-   NdisAdvanceNetBufferDataStart</b></mshelp:link>
-
 <a href="..\ndis\nc-ndis-net_buffer_allocate_mdl_handler.md">NetAllocateMdl</a>
+
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+   NdisAdvanceNetBufferDataStart</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

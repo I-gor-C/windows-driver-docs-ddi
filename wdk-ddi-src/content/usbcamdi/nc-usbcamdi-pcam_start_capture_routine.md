@@ -84,22 +84,16 @@ This function is required.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md">CamStartCaptureEx</a>
+<a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md">USBCAMD_DEVICE_DATA2</a>
 
 <a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data.md">USBCAMD_DEVICE_DATA</a>
 
-<a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md">USBCAMD_DEVICE_DATA2</a>
+<a href="..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md">CamStartCaptureEx</a>
 
  
 

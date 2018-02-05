@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f15823dd-a9c5-46a8-a376-41b831450b66
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.hba_removeallpersistentbindings, HBA_RemoveAllPersistentBindings, HBA_RemoveAllPersistentBindings routine [Storage Devices], hbaapi/HBA_RemoveAllPersistentBindings, fibreHBA_rtns_1b72392e-f155-41aa-915a-a39da952afec.xml
+ms.keywords : HBA_RemoveAllPersistentBindings routine [Storage Devices], storage.hba_removeallpersistentbindings, fibreHBA_rtns_1b72392e-f155-41aa-915a-a39da952afec.xml, hbaapi/HBA_RemoveAllPersistentBindings, HBA_RemoveAllPersistentBindings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,14 +123,10 @@ The removal of persistent bindings does not change target mappings until the ope
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a618420f-ea69-471d-82a0-1e86f85e270b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlOemStringToCountedUnicodeSize, RtlOemStringToCountedUnicodeSize routine [Installable File System Drivers], ifsk.rtloemstringtocountedunicodesize, ntifs/RtlOemStringToCountedUnicodeSize, rtlref_dc10fcb6-356a-4c09-aea6-c386030039f0.xml
+ms.keywords : RtlOemStringToCountedUnicodeSize, rtlref_dc10fcb6-356a-4c09-aea6-c386030039f0.xml, ntifs/RtlOemStringToCountedUnicodeSize, RtlOemStringToCountedUnicodeSize routine [Installable File System Drivers], ifsk.rtloemstringtocountedunicodesize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -70,22 +70,18 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | ntifs.h |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
 
-<a href="..\ntifs\nf-ntifs-rtloemstringtounicodesize.md">RtlOemStringToUnicodeSize</a>
-
 <a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodestring.md">RtlOemStringToCountedUnicodeString</a>
+
+<a href="..\ntifs\nf-ntifs-rtloemstringtounicodesize.md">RtlOemStringToUnicodeSize</a>
 
  
 

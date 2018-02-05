@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b020b06c-72e2-4322-a5db-fcfc46db429e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY structure [Display Devices], d3dkmthk/D3DKMT_CREATEOVERLAY, OpenGL_Structs_0e2cd78f-0999-48a3-8a7d-329ddb46b46f.xml, display.d3dkmt_createoverlay, _D3DKMT_CREATEOVERLAY
+ms.keywords : d3dkmthk/D3DKMT_CREATEOVERLAY, display.d3dkmt_createoverlay, OpenGL_Structs_0e2cd78f-0999-48a3-8a7d-329ddb46b46f.xml, _D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,16 +74,14 @@ typedef struct _D3DKMT_CREATEOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateoverlay.md">D3DKMTCreateOverlay</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
 
  
 

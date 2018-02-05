@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 9389536e-30c3-4651-bb1e-2c75741694b2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], GetBreakpointByIndex method, IDebugControl3::GetBreakpointByIndex, IDebugControl3, GetBreakpointByIndex method [Windows Debugging], IDebugControl interface, GetBreakpointByIndex, IDebugControl_d290fd1e-da1d-4d02-9503-a3c0f8337cec.xml, IDebugControl::GetBreakpointByIndex, dbgeng/IDebugControl2::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetBreakpointByIndex method, IDebugControl interface [Windows Debugging], GetBreakpointByIndex method, dbgeng/IDebugControl::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetBreakpointByIndex, debugger.getbreakpointbyindex
+ms.keywords : IDebugControl_d290fd1e-da1d-4d02-9503-a3c0f8337cec.xml, debugger.getbreakpointbyindex, IDebugControl3, IDebugControl2::GetBreakpointByIndex, IDebugControl3 interface [Windows Debugging], GetBreakpointByIndex method, IDebugControl3::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl interface, IDebugControl::GetBreakpointByIndex, IDebugControl interface [Windows Debugging], GetBreakpointByIndex method, GetBreakpointByIndex method [Windows Debugging], dbgeng/IDebugControl::GetBreakpointByIndex, dbgeng/IDebugControl2::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl3 interface, GetBreakpointByIndex method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetBreakpointByIndex method, dbgeng/IDebugControl3::GetBreakpointByIndex, GetBreakpointByIndex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,24 +101,19 @@ The index and returned breakpoint are specific to the current process.  The same
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547880">GetNumberBreakpoints</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547880">GetNumberBreakpoints</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

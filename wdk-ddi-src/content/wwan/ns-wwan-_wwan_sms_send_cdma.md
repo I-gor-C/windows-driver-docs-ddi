@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e05b7391-7852-45c7-aed0-36c95b4e475b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_sms_send_cdma, wwan/WWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA, PWWAN_SMS_SEND_CDMA, wwan/PWWAN_SMS_SEND_CDMA, WwanRef_0b4ec978-8685-46a6-b1dd-556606660614.xml, WWAN_SMS_SEND_CDMA structure [Network Drivers Starting with Windows Vista], _WWAN_SMS_SEND_CDMA, PWWAN_SMS_SEND_CDMA structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SMS_SEND_CDMA
+ms.keywords : netvista.wwan_sms_send_cdma, WwanRef_0b4ec978-8685-46a6-b1dd-556606660614.xml, WWAN_SMS_SEND_CDMA structure [Network Drivers Starting with Windows Vista], PWWAN_SMS_SEND_CDMA structure pointer [Network Drivers Starting with Windows Vista], _WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA, wwan/WWAN_SMS_SEND_CDMA, wwan/PWWAN_SMS_SEND_CDMA, PWWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA"
+req.typenames : WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA
 req.product : Windows 10 or later.
 ---
 
@@ -114,18 +114,16 @@ Size of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
-
 <a href="..\wwan\ns-wwan-_wwan_sms_send.md">WWAN_SMS_SEND</a>
 
 <a href="..\wwan\ne-wwan-_wwan_sms_cdma_lang.md">WWAN_SMS_CDMA_LANG</a>
+
+<a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
 
  
 

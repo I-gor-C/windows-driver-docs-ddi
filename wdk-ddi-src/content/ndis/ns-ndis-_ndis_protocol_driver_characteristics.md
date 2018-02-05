@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : db64c160-9db6-4b23-af14-e64acdb9ef57
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, netvista.ndis_protocol_driver_characteristics, protocol_structures_ref_57fab3c7-f838-4a3f-a818-04d26e38cdc0.xml, NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, ndis/NDIS_PROTOCOL_DRIVER_CHARACTERISTICS"
+ms.keywords : NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], ndis/NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, ndis/PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, netvista.ndis_protocol_driver_characteristics, _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, *PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, protocol_structures_ref_57fab3c7-f838-4a3f-a818-04d26e38cdc0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS, NDIS_PROTOCOL_DRIVER_CHARACTERISTICS"
+req.typenames : NDIS_PROTOCOL_DRIVER_CHARACTERISTICS, *PNDIS_PROTOCOL_DRIVER_CHARACTERISTICS
 ---
 
 # _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS structure
@@ -75,20 +75,20 @@ typedef struct _NDIS_PROTOCOL_DRIVER_CHARACTERISTICS {
 `BindAdapterHandlerEx`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.protocolbindadapterex" tabindex="0"><i>
-     ProtocolBindAdapterEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">
+     ProtocolBindAdapterEx</a> function.
 
 `CloseAdapterCompleteHandlerEx`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.protocolcloseadaptercompleteex" tabindex="0"><i>
-     ProtocolCloseAdapterCompleteEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
+     ProtocolCloseAdapterCompleteEx</a> function.
 
 `DirectOidRequestCompleteHandler`
 
 The entry point of the caller's 
-      <mshelp:link keywords="netvista.protocoldirectoidrequestcomplete" tabindex="0"><i>
-      ProtocolDirectOidRequestComplete</i></mshelp:link> function. This is an optional function. Set this entry point to
+      <a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
+      ProtocolDirectOidRequestComplete</a> function. This is an optional function. Set this entry point to
       <b>NULL</b> if the protocol driver does not support the direct OID request interface.
 
 `Flags`
@@ -110,6 +110,15 @@ To indicate the version of the <b>NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</b> struc
 
 
 
+#### NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1
+
+Original version for NDIS 6.0.
+
+Set the 
+        <b>Size</b> member to
+        NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1.
+
+
 #### NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2
 
 Added the 
@@ -118,15 +127,6 @@ Added the
 Set the 
         <b>Size</b> member to
         NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_2.
-
-
-#### NDIS_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1
-
-Original version for NDIS 6.0.
-
-Set the 
-        <b>Size</b> member to
-        NDIS_SIZEOF_PROTOCOL_DRIVER_CHARACTERISTICS_REVISION_1.
 
 `MajorDriverVersion`
 
@@ -264,26 +264,26 @@ The entry point of the caller's
 `OidRequestCompleteHandler`
 
 The entry point of the caller's 
-     <mshelp:link keywords="netvista.protocoloidrequestcomplete" tabindex="0"><i>
-     ProtocolOidRequestComplete</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">
+     ProtocolOidRequestComplete</a> function.
 
 `OpenAdapterCompleteHandlerEx`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.protocolopenadaptercompleteex" tabindex="0"><i>
-     ProtocolOpenAdapterCompleteEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_open_adapter_complete_ex.md">
+     ProtocolOpenAdapterCompleteEx</a> function.
 
 `ReceiveNetBufferListsHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><i>
-     ProtocolReceiveNetBufferLists</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
+     ProtocolReceiveNetBufferLists</a> function.
 
 `SendNetBufferListsCompleteHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.protocolsendnetbufferlistscomplete" tabindex="0"><i>
-     ProtocolSendNetBufferListsComplete</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_send_net_buffer_lists_complete.md">
+     ProtocolSendNetBufferListsComplete</a> function.
 
 `SetOptionsHandler`
 
@@ -299,8 +299,8 @@ The entry point of the caller's
 `UnbindAdapterHandlerEx`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.protocolunbindadapterex" tabindex="0"><i>
-     ProtocolUnbindAdapterEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
+     ProtocolUnbindAdapterEx</a> function.
 
 `UninstallHandler`
 
@@ -310,8 +310,8 @@ The entry point of the caller's
 
 ## Remarks
 A protocol driver calls the 
-    <mshelp:link keywords="netvista.ndisregisterprotocoldriver" tabindex="0"><b>
-    NdisRegisterProtocolDriver</b></mshelp:link> function to register its characteristics, including the default entry
+    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
+    NdisRegisterProtocolDriver</a> function to register its characteristics, including the default entry
     points for its protocol driver functions (<i>ProtocolXxx</i>). The protocol driver initializes an <b>NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</b> structure
     and passes a pointer to this structure in the 
     <i>ProtocolCharacteristics</i> parameter of 
@@ -320,43 +320,41 @@ A protocol driver calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.protocolopenadaptercompleteex" tabindex="0"><i>
-   ProtocolOpenAdapterCompleteEx</i></mshelp:link>
-
-<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
-
 <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
-<mshelp:link keywords="netvista.protocolsendnetbufferlistscomplete" tabindex="0"><i>
-   ProtocolSendNetBufferListsComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
+   ProtocolCloseAdapterCompleteEx</a>
 
-<mshelp:link keywords="netvista.protocoldirectoidrequestcomplete" tabindex="0"><i>
-   ProtocolDirectOidRequestComplete</i></mshelp:link>
-
-<mshelp:link keywords="netvista.protocolcloseadaptercompleteex" tabindex="0"><i>
-   ProtocolCloseAdapterCompleteEx</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
+   ProtocolReceiveNetBufferLists</a>
 
 <a href="..\ndis\nc-ndis-protocol_uninstall.md">ProtocolUninstall</a>
 
+<a href="..\ndis\nc-ndis-protocol_send_net_buffer_lists_complete.md">
+   ProtocolSendNetBufferListsComplete</a>
+
 <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">ProtocolOidRequestComplete</a>
 
-<a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a>
-
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+<a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">
+   ProtocolDirectOidRequestComplete</a>
 
 <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
 
 <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a>
 
-<mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><i>
-   ProtocolReceiveNetBufferLists</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_open_adapter_complete_ex.md">
+   ProtocolOpenAdapterCompleteEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
 
  
 

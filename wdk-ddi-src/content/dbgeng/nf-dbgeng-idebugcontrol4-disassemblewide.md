@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7df1f9e5-dac2-490b-9eed-28f8bc4e677a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : DisassembleWide, IDebugControl4 interface [Windows Debugging], DisassembleWide method, dbgeng/IDebugControl4::DisassembleWide, IDebugControl4, DisassembleWide method [Windows Debugging], IDebugControl4 interface, DisassembleWide method [Windows Debugging], debugger.disassemblewide, IDebugControl4::DisassembleWide
+ms.keywords : DisassembleWide method [Windows Debugging], DisassembleWide method [Windows Debugging], IDebugControl4 interface, DisassembleWide, IDebugControl4::DisassembleWide, debugger.disassemblewide, dbgeng/IDebugControl4::DisassembleWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], DisassembleWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -125,14 +125,9 @@ For an overview of using assembly in debugger applications, see <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
@@ -140,9 +135,9 @@ For an overview of using assembly in debugger applications, see <a href="https:/
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545605">GetAssemblyOptions</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538121">Assemble</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538121">Assemble</a>
 
  
 

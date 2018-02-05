@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c7060b86-8ff6-4229-94e0-7965ae59aa90
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k110_9c1ca048-addd-4343-bfee-34e905b143b3.xml, kernel.sedeassignsecurity, wdm/SeDeassignSecurity, SeDeassignSecurity routine [Kernel-Mode Driver Architecture], SeDeassignSecurity
+ms.keywords : SeDeassignSecurity, wdm/SeDeassignSecurity, kernel.sedeassignsecurity, SeDeassignSecurity routine [Kernel-Mode Driver Architecture], k110_9c1ca048-addd-4343-bfee-34e905b143b3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,20 +67,19 @@ If the deallocation succeeds, <b>SeDeassignSecurity</b> returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-
 <a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
+
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
  
 

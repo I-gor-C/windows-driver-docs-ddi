@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 88378f82-2975-4b53-9dde-53ab81df3c53
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ccref_13ae1f3e-b2ea-4bc6-a1cb-0101afd58d04.xml, CcIsThereDirtyDataEx routine [Installable File System Drivers], ifsk.ccistheredirtydataex, CcIsThereDirtyDataEx, ntifs/CcIsThereDirtyDataEx
+ms.keywords : ntifs/CcIsThereDirtyDataEx, ifsk.ccistheredirtydataex, CcIsThereDirtyDataEx routine [Installable File System Drivers], CcIsThereDirtyDataEx, ccref_13ae1f3e-b2ea-4bc6-a1cb-0101afd58d04.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,22 +73,20 @@ This routine will return <b>TRUE</b> if any dirty pages exist including temporar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-ccistheredirtydata.md">CcIsThereDirtyData</a>
 
-<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
-
 <a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
+
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 
  
 

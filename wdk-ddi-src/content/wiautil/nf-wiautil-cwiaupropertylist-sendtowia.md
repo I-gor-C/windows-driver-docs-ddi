@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 2f7d6975-4c90-4351-bf68-89786bafcc8e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SendToWia, image.cwiaupropertylist_sendtowia, CWiauPropertyList::SendToWia, CWiauPropertyList interface [Imaging Devices], SendToWia method, wiautil/CWiauPropertyList::SendToWia, wiauFncs_d77b66a2-1c98-4608-9269-ab1e09a98405.xml, SendToWia method [Imaging Devices], CWiauPropertyList, SendToWia method [Imaging Devices], CWiauPropertyList interface
+ms.keywords : SendToWia method [Imaging Devices], SendToWia method [Imaging Devices], CWiauPropertyList interface, image.cwiaupropertylist_sendtowia, CWiauPropertyList::SendToWia, wiauFncs_d77b66a2-1c98-4608-9269-ab1e09a98405.xml, wiautil/CWiauPropertyList::SendToWia, SendToWia, CWiauPropertyList, CWiauPropertyList interface [Imaging Devices], SendToWia method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -69,20 +69,16 @@ The <b>CWiauPropertyList::SendToWia</b> method should be called only after all p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544989">IWiaMiniDrv::drvInitItemProperties</a>
-
 <a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544989">IWiaMiniDrv::drvInitItemProperties</a>
 
  
 

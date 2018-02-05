@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bca0f1a1-2951-40c3-85b4-6009176ea574
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], RILGETPREFERREDOPERATORLISTPARAMS, netvista.rilgetpreferredoperatorlistparams_2, *LPRILGETPREFERREDOPERATORLISTPARAMS
+ms.keywords : netvista.rilgetpreferredoperatorlistparams_2, RILGETPREFERREDOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILGETPREFERREDOPERATORLISTPARAMS, rilapitypes/RILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILGETPREFERREDOPERATORLISTPARAMS, *LPRILGETPREFERREDOPERATORLISTPARAMS
+req.typenames : "*LPRILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILGETPREFERREDOPERATORLISTPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

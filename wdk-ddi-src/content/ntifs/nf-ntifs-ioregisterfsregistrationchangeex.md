@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e318e13b-8b6c-4593-93ce-17d2a1056ac2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoRegisterFsRegistrationChangeEx, IoRegisterFsRegistrationChangeEx routine [Installable File System Drivers], ifsk.ioregisterfsregistrationchangeex, ntifs/IoRegisterFsRegistrationChangeEx, ioref_330f3a93-4d81-4a6b-9733-521558d255a6.xml
+ms.keywords : ioref_330f3a93-4d81-4a6b-9733-521558d255a6.xml, IoRegisterFsRegistrationChangeEx routine [Installable File System Drivers], IoRegisterFsRegistrationChangeEx, ifsk.ioregisterfsregistrationchangeex, ntifs/IoRegisterFsRegistrationChangeEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,24 +115,21 @@ If a file system filter driver calls <b>IoRegisterFsRegistrationChangeEx</b> twi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is only available on the Update Rollup for Windows 2000 Service Pack 4 (SP4) operating system. This routine is only available on the Update Rollup for Windows 2000 Service Pack 4 (SP4) operating system. |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
 
+<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
+
 <a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
 
 <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
-
-<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
 
  
 

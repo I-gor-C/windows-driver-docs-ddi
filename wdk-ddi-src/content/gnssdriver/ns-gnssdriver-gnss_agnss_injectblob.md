@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : DAC91C40-C9B3-433C-AA64-CE4C021CD8C5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.gnss_agnss_injectblob, gnssdriver/PGNSS_AGNSS_INJECTBLOB, gnssdriver/GNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB, PGNSS_AGNSS_INJECTBLOB structure pointer [Sensor Devices], GNSS_AGNSS_INJECTBLOB structure [Sensor Devices], PGNSS_AGNSS_INJECTBLOB, *PGNSS_AGNSS_INJECTBLOB
+ms.keywords : gnssdriver/GNSS_AGNSS_INJECTBLOB, *PGNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB structure [Sensor Devices], GNSS_AGNSS_INJECTBLOB, gnssdriver/PGNSS_AGNSS_INJECTBLOB, PGNSS_AGNSS_INJECTBLOB, sensors.gnss_agnss_injectblob, PGNSS_AGNSS_INJECTBLOB structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_AGNSS_INJECTBLOB, *PGNSS_AGNSS_INJECTBLOB
+req.typenames : "*PGNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB"
 ---
 
 # GNSS_AGNSS_INJECTBLOB structure
@@ -91,7 +91,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

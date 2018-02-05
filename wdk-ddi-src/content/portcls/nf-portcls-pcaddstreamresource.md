@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : CADB17C6-07EA-4497-AA73-4AECCC1D0A45
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcAddStreamResource function [Audio Devices], PcAddStreamResource, portcls/PcAddStreamResource, audio.pcaddstreamresource
+ms.keywords : portcls/PcAddStreamResource, audio.pcaddstreamresource, PcAddStreamResource function [Audio Devices], PcAddStreamResource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -100,14 +100,12 @@ Audio drivers that only run in Windows 10 can use  <b>PcAddStreamResource</b> an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | Portcls.lib |
+| **DLL** | NA |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

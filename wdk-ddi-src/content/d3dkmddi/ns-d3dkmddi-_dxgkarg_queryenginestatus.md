@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f7255c97-5c25-4ee2-988b-ff301878fe7c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_QUERYENGINESTATUS, _DXGKARG_QUERYENGINESTATUS, DXGKARG_QUERYENGINESTATUS structure [Display Devices], display.dxgkarg_queryenginestatus, DXGKARG_QUERYENGINESTATUS, *INOUT_PDXGKARG_QUERYENGINESTATUS
+ms.keywords : DXGKARG_QUERYENGINESTATUS, *INOUT_PDXGKARG_QUERYENGINESTATUS, display.dxgkarg_queryenginestatus, DXGKARG_QUERYENGINESTATUS structure [Display Devices], _DXGKARG_QUERYENGINESTATUS, d3dkmddi/DXGKARG_QUERYENGINESTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ For more information, see <a href="https://msdn.microsoft.com/5BC4F94C-2B45-44E2
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

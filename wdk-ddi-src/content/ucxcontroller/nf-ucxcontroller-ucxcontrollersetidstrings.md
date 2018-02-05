@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : FC0F6C02-C53A-4F7E-B718-70788FA807F3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucxcontrollersetidstrings, UcxControllerSetIdStrings function [Buses], ucxcontroller/UcxControllerSetIdStrings, UcxControllerSetIdStrings
+ms.keywords : ucxcontroller/UcxControllerSetIdStrings, UcxControllerSetIdStrings function [Buses], UcxControllerSetIdStrings, buses.ucxcontrollersetidstrings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,11 +82,9 @@ The function returns STATUS_SUCCESS if the operation succeeds. Otherwise, this m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ucxstubs.lib |

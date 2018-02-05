@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : CE485A6F-8480-4535-9145-A8CBF78C804D
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfccx/HostActionStart, HostActionStop, nfccx/HostActionRestart, HostActionUnload, HostActionRestart, NFC_CX_HOST_ACTION enumeration [Near-Field Proximity Drivers], nfpdrivers.nfc_cx_host_action, NFC_CX_HOST_ACTION, nfccx/NFC_CX_HOST_ACTION, _NFC_CX_HOST_ACTION, *PNFC_CX_HOST_ACTION, nfccx/HostActionUnload, nfccx/HostActionStop, HostActionStart
+ms.keywords : HostActionStop, nfccx/HostActionRestart, HostActionUnload, nfpdrivers.nfc_cx_host_action, _NFC_CX_HOST_ACTION, nfccx/HostActionStart, nfccx/NFC_CX_HOST_ACTION, HostActionRestart, NFC_CX_HOST_ACTION, HostActionStart, *PNFC_CX_HOST_ACTION, NFC_CX_HOST_ACTION enumeration [Near-Field Proximity Drivers], nfccx/HostActionUnload, nfccx/HostActionStop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NFC_CX_HOST_ACTION, *PNFC_CX_HOST_ACTION
+req.typenames : "*PNFC_CX_HOST_ACTION, NFC_CX_HOST_ACTION"
 ---
 
 # _NFC_CX_HOST_ACTION Enumeration
@@ -80,9 +80,7 @@ typedef enum _NFC_CX_HOST_ACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h |
 
 ## See Also

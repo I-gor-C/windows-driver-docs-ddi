@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFFileObjectRef_f65433dc-ba63-456e-beff-ef7c9e2dffa8.xml, IWDFFile2::GetRelatedFileObject, umdf.iwdffile2_getrelatedfileobject, wdf.iwdffile2_getrelatedfileobject, GetRelatedFileObject method, wudfddi/IWDFFile2::GetRelatedFileObject, IWDFFile2 interface, GetRelatedFileObject method, GetRelatedFileObject, IWDFFile2, GetRelatedFileObject method, IWDFFile2 interface
+ms.keywords : umdf.iwdffile2_getrelatedfileobject, IWDFFile2::GetRelatedFileObject, IWDFFile2, IWDFFile2 interface, GetRelatedFileObject method, GetRelatedFileObject method, wdf.iwdffile2_getrelatedfileobject, UMDFFileObjectRef_f65433dc-ba63-456e-beff-ef7c9e2dffa8.xml, GetRelatedFileObject, GetRelatedFileObject method, IWDFFile2 interface, wudfddi/IWDFFile2::GetRelatedFileObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -73,14 +73,12 @@ For more information about related file objects, see the <b>GetRelatedFileObject
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

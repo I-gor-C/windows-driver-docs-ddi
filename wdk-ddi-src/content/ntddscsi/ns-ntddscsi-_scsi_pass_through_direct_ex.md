@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FE699F78-99AC-46E0-9C51-6F69A5C4932C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddscsi/PSCSI_PASS_THROUGH_DIRECT_EX, PSCSI_PASS_THROUGH_DIRECT_EX, _SCSI_PASS_THROUGH_DIRECT_EX, *PSCSI_PASS_THROUGH_DIRECT_EX, storage.scsi_pass_through_direct_ex, SCSI_PASS_THROUGH_DIRECT_EX structure [Storage Devices], PSCSI_PASS_THROUGH_DIRECT_EX structure pointer [Storage Devices], ntddscsi/SCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX
+ms.keywords : SCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX structure [Storage Devices], storage.scsi_pass_through_direct_ex, PSCSI_PASS_THROUGH_DIRECT_EX structure pointer [Storage Devices], ntddscsi/SCSI_PASS_THROUGH_DIRECT_EX, *PSCSI_PASS_THROUGH_DIRECT_EX, _SCSI_PASS_THROUGH_DIRECT_EX, PSCSI_PASS_THROUGH_DIRECT_EX, ntddscsi/PSCSI_PASS_THROUGH_DIRECT_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCSI_PASS_THROUGH_DIRECT_EX, *PSCSI_PASS_THROUGH_DIRECT_EX
+req.typenames : "*PSCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX"
 ---
 
 # _SCSI_PASS_THROUGH_DIRECT_EX structure
@@ -77,11 +77,11 @@ Indicates the size in bytes of the SCSI command descriptor block in <b>Cdb</b>.
 
 `DataDirection`
 
+#### 
+
+
+
 ####  This field must have one of these values:
-
-
-
-####
 
 `DataInBuffer`
 
@@ -142,20 +142,18 @@ The <b>SCSI_PASS_THROUGH_DIRECT_EX</b> structure is used with <a href="..\ntddsc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also
 
 <a href="..\storport\ns-storport-_stor_addr_btl8.md">STOR_ADDR_BTL8</a>
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
 
-<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct.md">SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
 
  
 

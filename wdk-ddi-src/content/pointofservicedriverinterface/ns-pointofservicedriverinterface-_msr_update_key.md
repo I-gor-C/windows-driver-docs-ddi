@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 8d7f85d4-af10-4ae5-a891-18dd41192c6a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/PMSR_UPDATE_KEY, _MSR_UPDATE_KEY, pos.msr_update_key, *PMSR_UPDATE_KEY, PMSR_UPDATE_KEY structure pointer, PMSR_UPDATE_KEY, MSR_UPDATE_KEY structure, pointofservicedriverinterface/MSR_UPDATE_KEY, MSR_UPDATE_KEY
+ms.keywords : MSR_UPDATE_KEY, pointofservicedriverinterface/MSR_UPDATE_KEY, PMSR_UPDATE_KEY structure pointer, _MSR_UPDATE_KEY, PMSR_UPDATE_KEY, pos.msr_update_key, *PMSR_UPDATE_KEY, pointofservicedriverinterface/PMSR_UPDATE_KEY, MSR_UPDATE_KEY structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MSR_UPDATE_KEY, *PMSR_UPDATE_KEY
+req.typenames : "*PMSR_UPDATE_KEY, MSR_UPDATE_KEY"
 ---
 
 # _MSR_UPDATE_KEY structure
@@ -74,7 +74,4 @@ Length, in bytes, of the key name stored in <b>KeyName[MSR_KEY_SIZE]</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

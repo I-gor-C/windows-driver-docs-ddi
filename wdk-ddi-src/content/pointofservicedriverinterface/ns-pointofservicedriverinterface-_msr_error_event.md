@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : daab2df5-4d23-4fe3-b357-74b2615e6d1e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PMSR_ERROR_EVENT, pointofservicedriverinterface/MSR_ERROR_EVENT, pointofservicedriverinterface/PMSR_ERROR_EVENT, PMSR_ERROR_EVENT structure pointer, MSR_ERROR_EVENT, MSR_ERROR_EVENT structure, pos.msr_error_event, *PMSR_ERROR_EVENT, _MSR_ERROR_EVENT
+ms.keywords : PMSR_ERROR_EVENT, MSR_ERROR_EVENT structure, _MSR_ERROR_EVENT, *PMSR_ERROR_EVENT, MSR_ERROR_EVENT, pos.msr_error_event, pointofservicedriverinterface/PMSR_ERROR_EVENT, PMSR_ERROR_EVENT structure pointer, pointofservicedriverinterface/MSR_ERROR_EVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MSR_ERROR_EVENT, *PMSR_ERROR_EVENT
+req.typenames : "*PMSR_ERROR_EVENT, MSR_ERROR_EVENT"
 ---
 
 # _MSR_ERROR_EVENT structure
@@ -104,7 +104,4 @@ Track 4 error status.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

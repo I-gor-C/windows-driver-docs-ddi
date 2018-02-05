@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -84,34 +84,29 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 If the WLAN adapter is enabled to exclude unencrypted packets, the station must exempt received
     packets that match an entry in the station's current EtherType exemption list. The IHV Extensions DLL
     specifies the EtherType exemption list through calls to the 
-    <mshelp:link keywords="netvista.dot11extsetethertypehandling" tabindex="0"><b>
-    Dot11ExtSetEtherTypeHandling</b></mshelp:link> function.
+    <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">
+    Dot11ExtSetEtherTypeHandling</a> function.
 
 A call to the 
     <b>Dot11ExtSetExcludeUnencrypted</b> function results in a set request of the 
-    <mshelp:link keywords="netvista.oid_dot11_exclude_unencrypted" tabindex="0">
-    OID_DOT11_EXCLUDE_UNENCRYPTED</mshelp:link> object identifier (OID) to the Native 802.11 miniport driver that
+    <a href="https://msdn.microsoft.com/en-us/library/gg159162.aspx">
+    OID_DOT11_EXCLUDE_UNENCRYPTED</a> object identifier (OID) to the Native 802.11 miniport driver that
     manages the WLAN adapter.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/gg159162.aspx">OID_DOT11_EXCLUDE_UNENCRYPTED</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">Dot11ExtSetEtherTypeHandling</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
  
 

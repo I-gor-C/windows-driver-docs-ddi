@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 07525217-afa5-4fbf-8c84-847ded9556d8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : wdbgexts/GetExpressionEx, GetExpressionEx, WdbgExts_Ref_74af8a17-694a-46ec-827c-fdd2aecbf15c.xml, GetExpressionEx function [Windows Debugging], debugger.getexpressionex
+ms.keywords : debugger.getexpressionex, wdbgexts/GetExpressionEx, WdbgExts_Ref_74af8a17-694a-46ec-827c-fdd2aecbf15c.xml, GetExpressionEx function [Windows Debugging], GetExpressionEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,14 +104,9 @@ An error occurred while attempting to evaluate the expression.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

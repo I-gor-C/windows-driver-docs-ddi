@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 19c08206-cde8-4ec2-bbd1-92eadeecdb90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_GENERATEMIPSUBLEVELS structure [Display Devices], _D3DDDIARG_GENERATEMIPSUBLEVELS, display.d3dddiarg_generatemipsublevels, d3dumddi/D3DDDIARG_GENERATEMIPSUBLEVELS, UMDisplayDriver_param_Structs_4000d18b-18c0-4499-bfbe-a3f5e866553b.xml, D3DDDIARG_GENERATEMIPSUBLEVELS
+ms.keywords : UMDisplayDriver_param_Structs_4000d18b-18c0-4499-bfbe-a3f5e866553b.xml, d3dumddi/D3DDDIARG_GENERATEMIPSUBLEVELS, D3DDDIARG_GENERATEMIPSUBLEVELS structure [Display Devices], _D3DDDIARG_GENERATEMIPSUBLEVELS, D3DDDIARG_GENERATEMIPSUBLEVELS, display.d3dddiarg_generatemipsublevels
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -130,9 +130,7 @@ Four-sample Gaussian filtering.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

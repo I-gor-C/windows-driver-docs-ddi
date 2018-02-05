@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 75CD5462-8382-4E83-ADC1-3E1B811A0D60
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_ACPI_SPB_SPI_RESOURCE, kernel.pep_acpi_spb_spi_resource, pepfx/PEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_SPB_SPI_RESOURCE structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_SPB_SPI_RESOURCE, *PPEP_ACPI_SPB_SPI_RESOURCE, pepfx/PPEP_ACPI_SPB_SPI_RESOURCE
+ms.keywords : PPEP_ACPI_SPB_SPI_RESOURCE, PPEP_ACPI_SPB_SPI_RESOURCE structure pointer [Kernel-Mode Driver Architecture], PEP_ACPI_SPB_SPI_RESOURCE structure [Kernel-Mode Driver Architecture], kernel.pep_acpi_spb_spi_resource, _PEP_ACPI_SPB_SPI_RESOURCE, pepfx/PPEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE, *PPEP_ACPI_SPB_SPI_RESOURCE, pepfx/PEP_ACPI_SPB_SPI_RESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,9 +88,7 @@ A <a href="..\pepfx\ns-pepfx-_pep_acpi_spb_resource.md">PEP_ACPI_SPB_RESOURCE</a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

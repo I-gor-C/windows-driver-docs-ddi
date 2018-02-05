@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 835446D1-EB41-47BC-AA0F-54A9C029EFFE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.psallocsilocontextslot, PsAllocSiloContextSlot, PsAllocSiloContextSlot routine [Kernel-Mode Driver Architecture], ntddk/PsAllocSiloContextSlot
+ms.keywords : PsAllocSiloContextSlot routine [Kernel-Mode Driver Architecture], kernel.psallocsilocontextslot, PsAllocSiloContextSlot, ntddk/PsAllocSiloContextSlot
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,14 +102,10 @@ Use of this API is uncommon because all silo monitors are assigned a storage slo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

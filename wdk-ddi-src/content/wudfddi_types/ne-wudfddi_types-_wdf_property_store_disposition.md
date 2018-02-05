@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 107b55f5-0c06-45cc-9cbb-ba9e2fbca1e4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_property_store_disposition, CreatedNewStore, umdf.wdf_property_store_disposition, wudfddi_types/WDF_PROPERTY_STORE_DISPOSITION, WDF_PROPERTY_STORE_DISPOSITION, _WDF_PROPERTY_STORE_DISPOSITION, OpenedExistingStore, wudfddi_types/CreatedNewStore, wudfddi_types/OpenedExistingStore, umdfstructs_a25f5c08-88c9-41c0-9bab-023ea91d0a22.xml, WDF_PROPERTY_STORE_DISPOSITION enumeration
+ms.keywords : umdfstructs_a25f5c08-88c9-41c0-9bab-023ea91d0a22.xml, umdf.wdf_property_store_disposition, WDF_PROPERTY_STORE_DISPOSITION enumeration, WDF_PROPERTY_STORE_DISPOSITION, wudfddi_types/OpenedExistingStore, wudfddi_types/CreatedNewStore, wudfddi_types/WDF_PROPERTY_STORE_DISPOSITION, CreatedNewStore, wdf.wdf_property_store_disposition, _WDF_PROPERTY_STORE_DISPOSITION, OpenedExistingStore
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,16 +74,13 @@ The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration is used as output from the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
 

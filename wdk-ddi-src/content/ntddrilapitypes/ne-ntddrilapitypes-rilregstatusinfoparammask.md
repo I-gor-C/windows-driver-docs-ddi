@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7857f845-d695-4b0f-9e52-8871c0140a74
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_REGSI_REGREJECTREASON, ntddrilapitypes/RIL_PARAM_REGSI_HUICCAPP, ntddrilapitypes/RIL_PARAM_REGSI_SYSTEMCAPS, RILREGSTATUSINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_REGSI_VOICEDOMAIN, ntddrilapitypes/RILREGSTATUSINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_REGSI_ALL, ntddrilapitypes/RIL_PARAM_REGSI_REGSTATUS, RIL_PARAM_REGSI_SYSTEMCAPS, RIL_PARAM_REGSI_VOICEDOMAIN, RIL_PARAM_REGSI_REGSTATUS, netvista.rilregstatusinfoparammask, ntddrilapitypes/RIL_PARAM_REGSI_NETWORKCODE, RIL_PARAM_REGSI_HUICCAPP, RILREGSTATUSINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_REGSI_ACCESSTECHNOLOGY, RIL_PARAM_REGSI_ALL, ntddrilapitypes/RIL_PARAM_REGSI_CURRENTOPERATOR, RIL_PARAM_REGSI_CURRENTOPERATOR, RIL_PARAM_REGSI_NETWORKCODE, RIL_PARAM_REGSI_ACCESSTECHNOLOGY, ntddrilapitypes/RIL_PARAM_REGSI_REGREJECTREASON
+ms.keywords : ntddrilapitypes/RIL_PARAM_REGSI_REGREJECTREASON, ntddrilapitypes/RIL_PARAM_REGSI_SYSTEMCAPS, ntddrilapitypes/RIL_PARAM_REGSI_REGSTATUS, RIL_PARAM_REGSI_ALL, RIL_PARAM_REGSI_REGREJECTREASON, ntddrilapitypes/RIL_PARAM_REGSI_VOICEDOMAIN, ntddrilapitypes/RIL_PARAM_REGSI_CURRENTOPERATOR, ntddrilapitypes/RIL_PARAM_REGSI_ACCESSTECHNOLOGY, RIL_PARAM_REGSI_NETWORKCODE, ntddrilapitypes/RIL_PARAM_REGSI_ALL, ntddrilapitypes/RILREGSTATUSINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_REGSI_NETWORKCODE, RIL_PARAM_REGSI_SYSTEMCAPS, ntddrilapitypes/RIL_PARAM_REGSI_HUICCAPP, RILREGSTATUSINFOPARAMMASK, RIL_PARAM_REGSI_CURRENTOPERATOR, RILREGSTATUSINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilregstatusinfoparammask, RIL_PARAM_REGSI_ACCESSTECHNOLOGY, RIL_PARAM_REGSI_HUICCAPP, RIL_PARAM_REGSI_VOICEDOMAIN, RIL_PARAM_REGSI_REGSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -115,7 +115,4 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

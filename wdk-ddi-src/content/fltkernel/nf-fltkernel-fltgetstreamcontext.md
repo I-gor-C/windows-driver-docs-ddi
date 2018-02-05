@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c076390d-42b0-4c8f-b9b1-9db910068795
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetStreamContext, FltGetStreamContext routine [Installable File System Drivers], fltkernel/FltGetStreamContext, FltApiRef_e_to_o_e7a12c32-5aec-433e-86e4-46844f56e75a.xml, ifsk.fltgetstreamcontext
+ms.keywords : ifsk.fltgetstreamcontext, FltGetStreamContext, fltkernel/FltGetStreamContext, FltGetStreamContext routine [Installable File System Drivers], FltApiRef_e_to_o_e7a12c32-5aec-433e-86e4-46844f56e75a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,22 +114,19 @@ To delete a stream context, call <a href="..\fltkernel\nf-fltkernel-fltdeletestr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 

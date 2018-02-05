@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c933e219-47bb-4896-b5ee-bd2fd59f4e8c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILCALLDISCONNECTDETAILS, netvista.rilcalldisconnectdetails, RILCALLDISCONNECTDETAILS, ntddrilapitypes/RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : "*LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista], netvista.rilcalldisconnectdetails, RILCALLDISCONNECTDETAILS, ntddrilapitypes/RILCALLDISCONNECTDETAILS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ typedef struct _RILCALLDISCONNECTDETAILS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5247D5F0-8422-48C1-81AF-98C8A3537FAD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCM_MANAGER_CONFIG_INIT function [Buses], UCM_MANAGER_CONFIG_INIT, buses.ucm_manager_config_init, ucmmanager/UCM_MANAGER_CONFIG_INIT
+ms.keywords : UCM_MANAGER_CONFIG_INIT function [Buses], UCM_MANAGER_CONFIG_INIT, ucmmanager/UCM_MANAGER_CONFIG_INIT, buses.ucm_manager_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,12 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

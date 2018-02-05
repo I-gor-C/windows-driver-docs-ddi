@@ -63,8 +63,5 @@ The <code>IMiniportDMus</code> interface provides methods for initializing the m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dmusicks.h (include Dmusicks.h) |
-| **DLL** |  |

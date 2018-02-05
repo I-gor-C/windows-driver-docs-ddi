@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 82fded96-9321-47a8-8bdd-65c5a75951ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_7335a1ee-9d91-4764-aba3-5769351f7aa5.xml, DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, d3dumddi/DXVAHDDDI_FRAME_FORMAT, d3dumddi/DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, DXVAHDDDI_FRAME_FORMAT, DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST, DXVAHDDDI_FRAME_FORMAT enumeration [Display Devices], d3dumddi/DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST, display.dxvahdddi_frame_format, d3dumddi/DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST, DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST, _DXVAHDDDI_FRAME_FORMAT
+ms.keywords : DXVAHDDDI_FRAME_FORMAT enumeration [Display Devices], d3dumddi/DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST, display.dxvahdddi_frame_format, _DXVAHDDDI_FRAME_FORMAT, d3dumddi/DXVAHDDDI_FRAME_FORMAT, d3dumddi/DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST, DXVAHDDDI_FRAME_FORMAT, d3dumddi/DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST, DXVA2_Structs_7335a1ee-9d91-4764-aba3-5769351f7aa5.xml, DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ The <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">FO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_FRAME_FORMAT is supported beginning with the Windows 7 operating system. DXVAHDDDI_FRAME_FORMAT is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

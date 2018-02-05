@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4e8f01af-9279-483a-90f9-d0391122ba5b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilgetimsparams, RILGETIMSPARAMS structure [Network Drivers Starting with Windows Vista], RILGETIMSPARAMS, *LPRILGETIMSPARAMS, ntddrilapitypes/RILGETIMSPARAMS
+ms.keywords : "*LPRILGETIMSPARAMS, netvista.rilgetimsparams, ntddrilapitypes/RILGETIMSPARAMS, RILGETIMSPARAMS, RILGETIMSPARAMS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILGETIMSPARAMS, RILGETIMSPARAMS"
+req.typenames : RILGETIMSPARAMS, *LPRILGETIMSPARAMS
 ---
 
 # RILGETIMSPARAMS structure
@@ -64,7 +64,4 @@ typedef struct _RILGETIMSPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

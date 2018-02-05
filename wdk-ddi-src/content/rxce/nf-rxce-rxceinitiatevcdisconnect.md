@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 978ddc02-9ff0-4798-879c-e4bc99081dcb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxceinitiatevcdisconnect, rxce/RxCeInitiateVCDisconnect, RxCeInitiateVCDisconnect function [Installable File System Drivers], RxCeInitiateVCDisconnect, rxref_1893aa5d-dda4-49f7-b4bb-dc9bdd75154a.xml
+ms.keywords : ifsk.rxceinitiatevcdisconnect, rxref_1893aa5d-dda4-49f7-b4bb-dc9bdd75154a.xml, rxce/RxCeInitiateVCDisconnect, RxCeInitiateVCDisconnect, RxCeInitiateVCDisconnect function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -97,14 +97,10 @@ The <i>pVc</i> parameter passed to this routine was invalid.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

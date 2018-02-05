@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 53efddbc-0e65-487c-b406-c7d093ca5667
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PPCI_EXPRESS_ERROR_SOURCE_ID, PCI.pci_express_error_source_id, PCI_EXPRESS_ERROR_SOURCE_ID, wdm/PPCI_EXPRESS_ERROR_SOURCE_ID, *PPCI_EXPRESS_ERROR_SOURCE_ID, _PCI_EXPRESS_ERROR_SOURCE_ID, pci_struct_f111f61b-46a0-450d-bbce-172f125a6903.xml, PPCI_EXPRESS_ERROR_SOURCE_ID union pointer [Buses], PCI_EXPRESS_ERROR_SOURCE_ID union [Buses], wdm/PCI_EXPRESS_ERROR_SOURCE_ID
+ms.keywords : "_PCI_EXPRESS_ERROR_SOURCE_ID, pci_struct_f111f61b-46a0-450d-bbce-172f125a6903.xml, wdm/PCI_EXPRESS_ERROR_SOURCE_ID, PPCI_EXPRESS_ERROR_SOURCE_ID, *PPCI_EXPRESS_ERROR_SOURCE_ID, PCI.pci_express_error_source_id, PCI_EXPRESS_ERROR_SOURCE_ID union [Buses], PCI_EXPRESS_ERROR_SOURCE_ID, wdm/PPCI_EXPRESS_ERROR_SOURCE_ID, PPCI_EXPRESS_ERROR_SOURCE_ID union pointer [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPCI_EXPRESS_ERROR_SOURCE_ID, PCI_EXPRESS_ERROR_SOURCE_ID"
+req.typenames : PCI_EXPRESS_ERROR_SOURCE_ID, *PPCI_EXPRESS_ERROR_SOURCE_ID
 req.product : Windows 10 or later.
 ---
 
@@ -76,9 +76,6 @@ A PCI_EXPRESS_ERROR_SOURCE_ID structure is contained in the <a href="https://msd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h) |
 
 ## See Also

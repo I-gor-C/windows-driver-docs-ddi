@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 93581775-f523-4e3b-bd90-13ad6e12480e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS structure [Buses], UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, buses.ucmtcpci_port_controller_get_control_in_params, ucmtcpciportcontrollerrequests/PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS structure pointer [Buses]
+ms.keywords : PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS structure pointer [Buses], ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, ucmtcpciportcontrollerrequests/PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, buses.ucmtcpci_port_controller_get_control_in_params, _UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS structure [Buses], UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, *PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS
+req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_GET_CONTROL_IN_PARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -61,9 +61,6 @@ Handle to the port controller object that the client driver received in the prev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontrollerrequests.h |
 
 ## See Also

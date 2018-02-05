@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a172f53c-9993-4d52-ae3f-35a8ab5745f6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetAdapterAttributes routine [Storage Devices], storage.hba_getadapterattributes, fibreHBA_rtns_f7675f0c-2f71-428e-871b-90c51a1b5bc4.xml, HBA_GetAdapterAttributes, hbaapi/HBA_GetAdapterAttributes
+ms.keywords : HBA_GetAdapterAttributes, fibreHBA_rtns_f7675f0c-2f71-428e-871b-90c51a1b5bc4.xml, hbaapi/HBA_GetAdapterAttributes, storage.hba_getadapterattributes, HBA_GetAdapterAttributes routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,10 @@ The <b>HBA_GetAdapterAttributes</b> routine returns a value of type <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

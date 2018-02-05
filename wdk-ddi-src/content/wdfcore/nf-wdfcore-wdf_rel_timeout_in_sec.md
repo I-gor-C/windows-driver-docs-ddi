@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 40d0f5bf-609e-4609-8785-261b087fa372
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_rel_timeout_in_sec, wdf.wdf_rel_timeout_in_sec, wdfcore/WDF_REL_TIMEOUT_IN_SEC, WDF_REL_TIMEOUT_IN_SEC function, DFTimerObjectRef_2c5d8c96-3c4d-484d-9d60-656c4c4a7cc5.xml, WDF_REL_TIMEOUT_IN_SEC
+ms.keywords : wdfcore/WDF_REL_TIMEOUT_IN_SEC, kmdf.wdf_rel_timeout_in_sec, DFTimerObjectRef_2c5d8c96-3c4d-484d-9d60-656c4c4a7cc5.xml, WDF_REL_TIMEOUT_IN_SEC function, wdf.wdf_rel_timeout_in_sec, WDF_REL_TIMEOUT_IN_SEC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,20 +71,18 @@ A relative time is a time value that is relative to the current system time. For
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfcore.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | None |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfcore\nf-wdfcore-wdf_abs_timeout_in_sec.md">WDF_ABS_TIMEOUT_IN_SEC</a>
-
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
+
+<a href="..\wdfcore\nf-wdfcore-wdf_abs_timeout_in_sec.md">WDF_ABS_TIMEOUT_IN_SEC</a>
 
  
 

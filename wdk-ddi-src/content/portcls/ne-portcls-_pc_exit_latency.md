@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9D1DA7D6-4200-4B5A-9EA5-0455DF56D6D8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pc_exit_latency, PC_EXIT_LATENCY, portcls/PcExitLatencyResponsive, PcExitLatencyInstant, portcls/PcExitLatencyFast, _PC_EXIT_LATENCY, PcExitLatencyResponsive, portcls/PC_EXIT_LATENCY, PC_EXIT_LATENCY enumeration [Audio Devices], PcExitLatencyFast, *PPC_EXIT_LATENCY, portcls/PcExitLatencyInstant
+ms.keywords : PcExitLatencyResponsive, portcls/PC_EXIT_LATENCY, audio.pc_exit_latency, *PPC_EXIT_LATENCY, PcExitLatencyFast, portcls/PcExitLatencyFast, PcExitLatencyInstant, portcls/PcExitLatencyResponsive, PC_EXIT_LATENCY enumeration [Audio Devices], _PC_EXIT_LATENCY, portcls/PcExitLatencyInstant, PC_EXIT_LATENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # _PC_EXIT_LATENCY Enumeration
@@ -74,7 +74,5 @@ typedef enum _PC_EXIT_LATENCY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |

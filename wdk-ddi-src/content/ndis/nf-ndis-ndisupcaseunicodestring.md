@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5f735c98-26a6-4644-9fd4-b832ac9379c2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisUpcaseUnicodeString, ndis_string_ref_79578398-7b4c-4741-a39b-5e5e30b2f4b3.xml, netvista.ndisupcaseunicodestring, ndis/NdisUpcaseUnicodeString, NdisUpcaseUnicodeString macro [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis_string_ref_79578398-7b4c-4741-a39b-5e5e30b2f4b3.xml, netvista.ndisupcaseunicodestring, NdisUpcaseUnicodeString, NdisUpcaseUnicodeString macro [Network Drivers Starting with Windows Vista], ndis/NdisUpcaseUnicodeString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -73,22 +73,20 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlUpcaseUnicodeString instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlUpcaseUnicodeString instead. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
 
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

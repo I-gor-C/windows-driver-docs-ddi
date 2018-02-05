@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 4780d0ea-a54a-4125-b3b6-2210a14eff71
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver::OnProcessWpdMessage, OnProcessWpdMessage method [Sensor Devices], ISensorDriver, OnProcessWpdMessage, sensors.isensordriver_onprocesswpdmessage
+ms.keywords : ISensorDriver, sensors.isensordriver_onprocesswpdmessage, OnProcessWpdMessage method [Sensor Devices], OnProcessWpdMessage, ISensorDriver::OnProcessWpdMessage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,11 +74,6 @@ This method enables you to extend the WPD commands and interfaces in a device-sp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

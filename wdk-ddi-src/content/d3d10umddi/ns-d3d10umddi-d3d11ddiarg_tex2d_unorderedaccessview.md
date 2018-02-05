@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2d6a5945-5e30-404c-8ddb-13be781da1b4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW, D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW structure [Display Devices], D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW, display.d3d11ddiarg_tex2d_unorderedaccessview, UMDisplayDriver_Dx11param_Structs_ca281413-3ae7-472c-acd6-76c8ef97b713.xml
+ms.keywords : display.d3d11ddiarg_tex2d_unorderedaccessview, d3d10umddi/D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW, D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW, UMDisplayDriver_Dx11param_Structs_ca281413-3ae7-472c-acd6-76c8ef97b713.xml, D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,18 +69,16 @@ typedef struct D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system. D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createunorderedaccessview.md">D3D11DDIARG_CREATEUNORDEREDACCESSVIEW</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize.md">CalcPrivateUnorderedAccessViewSize</a>
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a>
 
  
 

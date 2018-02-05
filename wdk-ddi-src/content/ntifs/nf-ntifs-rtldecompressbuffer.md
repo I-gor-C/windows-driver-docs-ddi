@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 4f82d094-e6be-4367-9146-1fa3f200ffa0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlDecompressBuffer, rtlref_d19521fb-b086-4ee4-ae65-6354a89aeff9.xml, COMPRESSION_FORMAT_LZNT1, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_XPRESS, RtlDecompressBuffer function [Installable File System Drivers], RtlDecompressBuffer, COMPRESSION_FORMAT_DEFAULT, ifsk.rtldecompressbuffer
+ms.keywords : COMPRESSION_FORMAT_XPRESS, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_DEFAULT, rtlref_d19521fb-b086-4ee4-ae65-6354a89aeff9.xml, ifsk.rtldecompressbuffer, RtlDecompressBuffer function [Installable File System Drivers], RtlDecompressBuffer, COMPRESSION_FORMAT_LZNT1, ntifs/RtlDecompressBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -211,18 +211,18 @@ To compress an uncompressed buffer, use the <a href="..\ntifs\nf-ntifs-rtlcompre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows XP. Available starting in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-rtldecompressfragmentex.md">RtlDecompressFragmentEx</a>
+
+<a href="..\ntifs\nf-ntifs-rtldecompressbufferex.md">RtlDecompressBufferEx</a>
 
 <a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
 
@@ -231,8 +231,6 @@ To compress an uncompressed buffer, use the <a href="..\ntifs\nf-ntifs-rtlcompre
 <a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
 
 <a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>
-
-<a href="..\ntifs\nf-ntifs-rtldecompressbufferex.md">RtlDecompressBufferEx</a>
 
  
 

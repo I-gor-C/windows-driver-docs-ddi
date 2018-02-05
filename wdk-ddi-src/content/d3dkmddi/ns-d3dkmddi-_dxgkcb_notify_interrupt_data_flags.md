@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 69554ec0-3d5e-4a53-8b45-2f821ddbfd3c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, display.dxgkcb_notify_interrupt_data_flags, DmStructs_bfff264e-44a2-458c-ab0d-c103d4b76f71.xml, DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure [Display Devices]
+ms.keywords : d3dkmddi/DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure [Display Devices], display.dxgkcb_notify_interrupt_data_flags, DmStructs_bfff264e-44a2-458c-ab0d-c103d4b76f71.xml, _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,9 +62,7 @@ typedef struct _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

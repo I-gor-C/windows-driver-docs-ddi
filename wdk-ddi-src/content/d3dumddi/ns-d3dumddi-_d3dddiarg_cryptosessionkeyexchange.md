@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 45ff38bf-7640-4b7c-ab26-ae758c9b4696
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE, D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE structure [Display Devices], display.d3dddiarg_cryptosessionkeyexchange, UMDisplayDriver_param_Structs_80a0e3f6-7fa5-444f-9eeb-505a6632af8d.xml, _D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE, d3dumddi/D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE
+ms.keywords : d3dumddi/D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE, D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE structure [Display Devices], D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE, UMDisplayDriver_param_Structs_80a0e3f6-7fa5-444f-9eeb-505a6632af8d.xml, _D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE, display.d3dddiarg_cryptosessionkeyexchange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE is supported beginning with the Windows 7 operating system. D3DDDIARG_CRYPTOSESSIONKEYEXCHANGE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BD976C1A-4776-4A0C-8D3B-72EE628469BC
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, windot11/PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, _DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, netvista.dot11_received_go_negotiation_response_parameters, DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS
+ms.keywords : DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, windot11/PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, netvista.dot11_received_go_negotiation_response_parameters, _DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, windot11/DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS"
+req.typenames : DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -105,9 +105,7 @@ If  <b>RequestContext</b> is a pointer, the data pointed to must remain valid un
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

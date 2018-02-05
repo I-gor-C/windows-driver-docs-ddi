@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4caffdad-569d-4038-9a11-8827c8439189
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iservicegroup_canceldelayedservice, IServiceGroup interface [Audio Devices], CancelDelayedService method, IServiceGroup::CancelDelayedService, audmp-routines_7d31f9ff-5b00-4f74-ad2a-08f901db81ff.xml, IServiceGroup, CancelDelayedService method [Audio Devices], IServiceGroup interface, CancelDelayedService, CancelDelayedService method [Audio Devices], portcls/IServiceGroup::CancelDelayedService
+ms.keywords : IServiceGroup interface [Audio Devices], CancelDelayedService method, CancelDelayedService, CancelDelayedService method [Audio Devices], audmp-routines_7d31f9ff-5b00-4f74-ad2a-08f901db81ff.xml, portcls/IServiceGroup::CancelDelayedService, IServiceGroup, audio.iservicegroup_canceldelayedservice, CancelDelayedService method [Audio Devices], IServiceGroup interface, IServiceGroup::CancelDelayedService
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -62,14 +62,10 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

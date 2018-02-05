@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -66,23 +66,23 @@ A handle to the display device (graphics context). The Direct3D runtime passed t
 
 `*pCryptoType`
 
-
+Indicates the crypto type for which the private input and output size is queried.
 
 `*pDecoderProfile`
 
-
+Indicates the decoder profile for which the private input and output size is queried.
 
 `*pKeyExchangeType`
 
-
+Indicates the key exchange type for which the private input and output size is queried.
 
 `*pPrivateInputSize`
 
-
+Returns the size of private data that the driver needs for input commands.
 
 `*pPrivateOutputSize`
 
-
+Returns the size of private data that the driver needs for output commands.
 
 
 ## Return Value
@@ -118,14 +118,9 @@ When <b>pKeyExchangeType</b> is <b>D3D11_KEY_EXCHANGE_HW_PROTECTION</b>, the fol
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

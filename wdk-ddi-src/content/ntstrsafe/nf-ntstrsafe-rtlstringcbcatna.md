@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 60ecabb1-5607-4962-82c6-8081916b507d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbCatNA, RtlStringCbCatNW, safestrings_3f453d8e-bae5-466f-a55a-2b6a68d5cb57.xml, RtlStringCbCatN, RtlStringCbCatNW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcatn, ntstrsafe/RtlStringCbCatNW, RtlStringCbCatNA
+ms.keywords : RtlStringCbCatNW, safestrings_3f453d8e-bae5-466f-a55a-2b6a68d5cb57.xml, RtlStringCbCatNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatNW, RtlStringCbCatN, ntstrsafe/RtlStringCbCatNA, RtlStringCbCatNA, kernel.rtlstringcbcatn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -187,14 +187,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

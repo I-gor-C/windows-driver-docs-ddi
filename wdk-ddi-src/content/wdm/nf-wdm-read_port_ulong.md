@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8a2f4429-b805-4a36-afdf-8b9c9a886951
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/READ_PORT_ULONG, READ_PORT_ULONG, kernel.read_port_ulong, READ_PORT_ULONG routine [Kernel-Mode Driver Architecture], k103_04794cc7-88eb-4456-8613-6fcf9947ebe4.xml
+ms.keywords : READ_PORT_ULONG routine [Kernel-Mode Driver Architecture], k103_04794cc7-88eb-4456-8613-6fcf9947ebe4.xml, wdm/READ_PORT_ULONG, READ_PORT_ULONG, kernel.read_port_ulong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,8 @@ Callers of <b>READ_PORT_ULONG</b> can be running at any IRQL, assuming the <i>Po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Hal.lib |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |

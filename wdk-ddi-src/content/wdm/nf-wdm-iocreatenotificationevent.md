@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 44be034e-0c82-4980-a246-132d1b50dee1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateNotificationEvent, IoCreateNotificationEvent routine [Kernel-Mode Driver Architecture], kernel.iocreatenotificationevent, wdm/IoCreateNotificationEvent, k104_2b3bf223-0427-40e2-9f95-da5aa12c5da2.xml
+ms.keywords : k104_2b3bf223-0427-40e2-9f95-da5aa12c5da2.xml, kernel.iocreatenotificationevent, wdm/IoCreateNotificationEvent, IoCreateNotificationEvent, IoCreateNotificationEvent routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,24 +104,23 @@ The driver creates a named event object in the \\BaseNamedObjects object directo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive4, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
-
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
 <a href="..\wdm\nf-wdm-iocreatesynchronizationevent.md">IoCreateSynchronizationEvent</a>
+
+<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
 <a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
 

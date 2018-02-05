@@ -87,9 +87,7 @@ If any of the three strings contained within any of the triples is aligned on an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
-| **IRQL** |  |
 
 ## See Also
 

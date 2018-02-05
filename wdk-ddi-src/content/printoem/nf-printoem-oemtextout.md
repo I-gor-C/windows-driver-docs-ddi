@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : cecce6ae-9b26-4b5f-aad3-69630ea340a4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMTextOut, OEMTextOut function [Print Devices], print.oemtextout, OEMTextOut, print_unidrv-pscript_rendering_fda6f01f-5d37-424f-aa4f-bf7849c50c19.xml
+ms.keywords : OEMTextOut, print_unidrv-pscript_rendering_fda6f01f-5d37-424f-aa4f-bf7849c50c19.xml, print.oemtextout, printoem/OEMTextOut, OEMTextOut function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -111,11 +111,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

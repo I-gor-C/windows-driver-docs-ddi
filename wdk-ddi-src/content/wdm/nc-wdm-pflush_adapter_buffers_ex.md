@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -124,30 +124,26 @@ If <b>FlushAdapterBuffersEx</b> is called before the DMA transfer operation fini
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
 
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
-
-<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
+<a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 
-<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
-
 <a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
 
-<a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+
+<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
+
+<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : E93A944E-81D5-4059-ADA6-2760A091C30B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceCreateWithParameters method, kmdf.wdfusbtargetdevicecreatewithconfig, kmdf.wdfusbtargetdevicecreatewithparameters, wdfusb/WdfUsbTargetDeviceCreateWithParameters, wdf.wdfusbtargetdevicecreatewithparameters, WdfUsbTargetDeviceCreateWithParameters
+ms.keywords : kmdf.wdfusbtargetdevicecreatewithconfig, WdfUsbTargetDeviceCreateWithParameters method, WdfUsbTargetDeviceCreateWithParameters, wdfusb/WdfUsbTargetDeviceCreateWithParameters, kmdf.wdfusbtargetdevicecreatewithparameters, wdf.wdfusbtargetdevicecreatewithparameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -157,24 +157,23 @@ If you call this method from a UMDF driver, you must specify the <b>UmdfDispatch
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, RequestForUrbXrb, UsbDeviceCreate, UsbDeviceCreateFail, UsbDeviceCreateTarget |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreate.md">WdfUsbTargetDeviceCreate</a>
 
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_create_config.md">WDF_USB_DEVICE_CREATE_CONFIG</a>
 
-<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreate.md">WdfUsbTargetDeviceCreate</a>
+<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
 
  
 

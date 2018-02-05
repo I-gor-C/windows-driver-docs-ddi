@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3237B68F-838A-4443-89FD-DC7815EAB403
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PoFxRegisterCrashdumpDevice, kernel.pofxregistercrashdumpdevice, PoFxRegisterCrashdumpDevice routine [Kernel-Mode Driver Architecture], PoFxRegisterCrashdumpDevice
+ms.keywords : PoFxRegisterCrashdumpDevice routine [Kernel-Mode Driver Architecture], PoFxRegisterCrashdumpDevice, wdm/PoFxRegisterCrashdumpDevice, kernel.pofxregistercrashdumpdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,14 +105,11 @@ For more information about crash dumps, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Windows |
 | **Header** | wdm.h (include Pepfx.h) |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

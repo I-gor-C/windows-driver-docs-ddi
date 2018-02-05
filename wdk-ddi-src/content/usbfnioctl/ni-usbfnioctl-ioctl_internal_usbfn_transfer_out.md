@@ -74,6 +74,4 @@ This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h |
-| **IRQL** |  |

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 29aeb49a-1647-46ee-a88e-f088f8a2548f
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : BTH_SDP_RECORD, PBTH_SDP_RECORD structure pointer [Bluetooth Devices], PBTH_SDP_RECORD, _BTH_SDP_RECORD, BTH_SDP_RECORD structure [Bluetooth Devices], bthioctl/BTH_SDP_RECORD, bltooth.bth_sdp_record, bth_structs_e77453a7-05d1-403d-9552-972368d7a76c.xml, *PBTH_SDP_RECORD, bthioctl/PBTH_SDP_RECORD
+ms.keywords : "*PBTH_SDP_RECORD, bthioctl/PBTH_SDP_RECORD, bthioctl/BTH_SDP_RECORD, BTH_SDP_RECORD structure [Bluetooth Devices], bth_structs_e77453a7-05d1-403d-9552-972368d7a76c.xml, _BTH_SDP_RECORD, bltooth.bth_sdp_record, BTH_SDP_RECORD, PBTH_SDP_RECORD, PBTH_SDP_RECORD structure pointer [Bluetooth Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBTH_SDP_RECORD, BTH_SDP_RECORD"
+req.typenames : BTH_SDP_RECORD, *PBTH_SDP_RECORD
 ---
 
 # _BTH_SDP_RECORD structure
@@ -203,21 +203,19 @@ The size, in bytes, of the record.
 
 ## Remarks
 This structure is passed as the input buffer and output buffer of 
-    <mshelp:link keywords="bltooth.ioctl_bth_sdp_submit_record_with_info" tabindex="0"><b>
-    IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</b></mshelp:link>.
+    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
+    IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
 ## See Also
 
-<mshelp:link keywords="bltooth.ioctl_bth_sdp_submit_record_with_info" tabindex="0"><b>
-   IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</b></mshelp:link>
+<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
+   IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>
 
  
 

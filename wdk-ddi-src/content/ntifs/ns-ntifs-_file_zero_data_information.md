@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 64F1A14F-2152-4095-A594-B2AE3B87C638
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PFILE_ZERO_DATA_INFORMATION, ifsk.file_zero_data_information, ntifs/FILE_ZERO_DATA_INFORMATION, _FILE_ZERO_DATA_INFORMATION, ntifs/PFILE_ZERO_DATA_INFORMATION, FILE_ZERO_DATA_INFORMATION structure [Installable File System Drivers], PFILE_ZERO_DATA_INFORMATION structure pointer [Installable File System Drivers], FILE_ZERO_DATA_INFORMATION, PFILE_ZERO_DATA_INFORMATION"
+ms.keywords : ntifs/FILE_ZERO_DATA_INFORMATION, FILE_ZERO_DATA_INFORMATION, FILE_ZERO_DATA_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_ZERO_DATA_INFORMATION, PFILE_ZERO_DATA_INFORMATION structure pointer [Installable File System Drivers], _FILE_ZERO_DATA_INFORMATION, *PFILE_ZERO_DATA_INFORMATION, ifsk.file_zero_data_information, PFILE_ZERO_DATA_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_ZERO_DATA_INFORMATION, *PFILE_ZERO_DATA_INFORMATION
+req.typenames : "*PFILE_ZERO_DATA_INFORMATION, FILE_ZERO_DATA_INFORMATION"
 ---
 
 # _FILE_ZERO_DATA_INFORMATION structure
@@ -65,9 +65,7 @@ The file offset of the start of the range to set to zeros, in bytes.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also

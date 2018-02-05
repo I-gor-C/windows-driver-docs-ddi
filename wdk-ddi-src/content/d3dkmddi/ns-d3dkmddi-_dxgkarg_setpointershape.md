@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fcb06620-8a30-4980-8733-35d7aabcc872
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_SETPOINTERSHAPE, DXGKARG_SETPOINTERSHAPE structure [Display Devices], DXGKARG_SETPOINTERSHAPE, d3dkmddi/DXGKARG_SETPOINTERSHAPE, display.dxgkarg_setpointershape, DmStructs_9fab674a-0138-4c55-b17e-87cb85110325.xml"
+ms.keywords : DmStructs_9fab674a-0138-4c55-b17e-87cb85110325.xml, DXGKARG_SETPOINTERSHAPE, d3dkmddi/DXGKARG_SETPOINTERSHAPE, display.dxgkarg_setpointershape, _DXGKARG_SETPOINTERSHAPE, DXGKARG_SETPOINTERSHAPE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -147,16 +147,14 @@ The <b>XHot</b> and <b>YHot</b> members are used by display miniport drivers tha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setpointershape.md">DxgkDdiSetPointerShape</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pointerflags.md">DXGK_POINTERFLAGS</a>
 
  
 

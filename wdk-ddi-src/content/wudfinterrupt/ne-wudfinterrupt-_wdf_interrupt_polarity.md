@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 30E61DCE-D88C-47B5-B5CD-3C43C6157FBA
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfinterrupt/WdfInterruptPolarityUnknown, PWDF_INTERRUPT_POLARITY, *PWDF_INTERRUPT_POLARITY, WdfInterruptPolarityUnknown, _WDF_INTERRUPT_POLARITY, wudfinterrupt/PWDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY, wdf.wdf_interrupt_polarity_umdf, WDF_INTERRUPT_POLARITY enumeration, wudfinterrupt/WdfInterruptActiveHigh, wudfinterrupt/WDF_INTERRUPT_POLARITY, WdfInterruptActiveHigh, wudfinterrupt/WdfInterruptActiveLow, WdfInterruptActiveLow, umdf.wdf_interrupt_polarity, PWDF_INTERRUPT_POLARITY enumeration pointer
+ms.keywords : wudfinterrupt/WDF_INTERRUPT_POLARITY, wudfinterrupt/WdfInterruptActiveHigh, PWDF_INTERRUPT_POLARITY enumeration pointer, umdf.wdf_interrupt_polarity, WdfInterruptActiveHigh, WDF_INTERRUPT_POLARITY enumeration, WdfInterruptActiveLow, wudfinterrupt/PWDF_INTERRUPT_POLARITY, WdfInterruptPolarityUnknown, wudfinterrupt/WdfInterruptPolarityUnknown, wudfinterrupt/WdfInterruptActiveLow, wdf.wdf_interrupt_polarity_umdf, *PWDF_INTERRUPT_POLARITY, PWDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY, _WDF_INTERRUPT_POLARITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,5 @@ The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_I
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |

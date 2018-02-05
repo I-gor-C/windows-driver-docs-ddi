@@ -61,8 +61,5 @@ __STREAMS__ is defined in <i>Stream.h</i>, a header from the DirectX SDK.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h |
-| **DLL** |  |

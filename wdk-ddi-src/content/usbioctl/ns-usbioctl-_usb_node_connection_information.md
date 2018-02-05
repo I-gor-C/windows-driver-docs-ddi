@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1ed92343-c830-4e5e-a2f8-30b20057b1f0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USB_NODE_CONNECTION_INFORMATION, buses.usb_node_connection_information, PUSB_NODE_CONNECTION_INFORMATION structure pointer [Buses], _USB_NODE_CONNECTION_INFORMATION, usbstrct_3c58e495-9552-4e38-81ac-45c23d964825.xml, *PUSB_NODE_CONNECTION_INFORMATION, usbioctl/PUSB_NODE_CONNECTION_INFORMATION, PUSB_NODE_CONNECTION_INFORMATION, USB_NODE_CONNECTION_INFORMATION structure [Buses], usbioctl/USB_NODE_CONNECTION_INFORMATION
+ms.keywords : "*PUSB_NODE_CONNECTION_INFORMATION, USB_NODE_CONNECTION_INFORMATION, PUSB_NODE_CONNECTION_INFORMATION structure pointer [Buses], usbstrct_3c58e495-9552-4e38-81ac-45c23d964825.xml, PUSB_NODE_CONNECTION_INFORMATION, usbioctl/PUSB_NODE_CONNECTION_INFORMATION, USB_NODE_CONNECTION_INFORMATION structure [Buses], _USB_NODE_CONNECTION_INFORMATION, buses.usb_node_connection_information, usbioctl/USB_NODE_CONNECTION_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -106,28 +106,25 @@ The <b>Speed</b> member of the <a href="..\usbioctl\ns-usbioctl-_usb_node_connec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also
 
-<a href="..\usbioctl\ne-usbioctl-_usb_connection_status.md">USB_CONNECTION_STATUS</a>
-
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
-
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION</a>
-
-<a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
+
+<a href="..\usbioctl\ne-usbioctl-_usb_connection_status.md">USB_CONNECTION_STATUS</a>
 
 <a href="..\usbspec\ne-usbspec-_usb_device_speed.md">USB_DEVICE_SPEED</a>
 
 <a href="..\usbioctl\ns-usbioctl-_usb_pipe_info.md">USB_PIPE_INFO</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION</a>
+
+<a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a>
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
 
  
 

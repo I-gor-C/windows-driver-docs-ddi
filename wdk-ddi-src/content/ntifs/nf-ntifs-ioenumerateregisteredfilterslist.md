@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7ac67110-bc92-457a-88f4-a21f2fa38174
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoEnumerateRegisteredFiltersList, ioref_b1530889-7d8a-4fd7-a7d3-954b1c7012ca.xml, IoEnumerateRegisteredFiltersList routine [Installable File System Drivers], ifsk.ioenumerateregisteredfilterslist, IoEnumerateRegisteredFiltersList
+ms.keywords : ioref_b1530889-7d8a-4fd7-a7d3-954b1c7012ca.xml, IoEnumerateRegisteredFiltersList routine [Installable File System Drivers], ifsk.ioenumerateregisteredfilterslist, IoEnumerateRegisteredFiltersList, ntifs/IoEnumerateRegisteredFiltersList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,24 +116,22 @@ Minifilters should call <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows Server 2003 Service Pack 1 (SP1) and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows Server 2003 Service Pack 1 (SP1) and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
 
-<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
 
  
 

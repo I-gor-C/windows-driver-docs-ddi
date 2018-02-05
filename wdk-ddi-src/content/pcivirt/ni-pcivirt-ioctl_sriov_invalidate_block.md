@@ -75,6 +75,5 @@ one or more of the configuration blocks need  to be read again.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pcivirt.h |
 | **IRQL** | PASSIVE_LEVEL |

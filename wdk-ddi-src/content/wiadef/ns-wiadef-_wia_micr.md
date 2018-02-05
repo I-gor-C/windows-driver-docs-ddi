@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : CAD08405-698C-4C3A-A03F-827837199CC8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.wia_micr, WIA_MICR structure [Imaging Devices], wiadef/WIA_MICR, WIA_MICR, _WIA_MICR
+ms.keywords : wiadef/WIA_MICR, _WIA_MICR, image.wia_micr, WIA_MICR structure [Imaging Devices], WIA_MICR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,7 +91,4 @@ The header must be followed by a sequence of MICR information structures, one fo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wiadef.h (include Wiadef.h) |

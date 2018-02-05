@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A107F641-AE30-4F99-9AB6-EC84F52A2B52
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pep_ppm_perf_check_complete, pepfx/PEP_PPM_PERF_CHECK_COMPLETE, PPEP_PPM_PERF_CHECK_COMPLETE, pepfx/PPEP_PPM_PERF_CHECK_COMPLETE, _PEP_PPM_PERF_CHECK_COMPLETE, *PPEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE structure [Kernel-Mode Driver Architecture], PPEP_PPM_PERF_CHECK_COMPLETE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_PERF_CHECK_COMPLETE
+ms.keywords : pepfx/PPEP_PPM_PERF_CHECK_COMPLETE, PPEP_PPM_PERF_CHECK_COMPLETE, kernel.pep_ppm_perf_check_complete, PPEP_PPM_PERF_CHECK_COMPLETE structure pointer [Kernel-Mode Driver Architecture], *PPEP_PPM_PERF_CHECK_COMPLETE, pepfx/PEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE structure [Kernel-Mode Driver Architecture], _PEP_PPM_PERF_CHECK_COMPLETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_PPM_PERF_CHECK_COMPLETE, *PPEP_PPM_PERF_CHECK_COMPLETE
+req.typenames : "*PPEP_PPM_PERF_CHECK_COMPLETE, PEP_PPM_PERF_CHECK_COMPLETE"
 ---
 
 # _PEP_PPM_PERF_CHECK_COMPLETE structure
@@ -59,9 +59,7 @@ typedef struct _PEP_PPM_PERF_CHECK_COMPLETE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

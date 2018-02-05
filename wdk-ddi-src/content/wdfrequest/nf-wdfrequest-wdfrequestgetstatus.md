@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 82f922a1-34c1-475b-b12a-210ae602a4bd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestgetstatus, DFRequestObjectRef_60149f5d-5523-4b88-9bba-464be280b2b7.xml, WdfRequestGetStatus, kmdf.wdfrequestgetstatus, PFN_WDFREQUESTGETSTATUS, WdfRequestGetStatus method, wdfrequest/WdfRequestGetStatus
+ms.keywords : wdfrequest/WdfRequestGetStatus, WdfRequestGetStatus method, DFRequestObjectRef_60149f5d-5523-4b88-9bba-464be280b2b7.xml, wdf.wdfrequestgetstatus, PFN_WDFREQUESTGETSTATUS, kmdf.wdfrequestgetstatus, WdfRequestGetStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,19 @@ For more information about request completion, see <a href="https://docs.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestGetStatusValid |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
-
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 

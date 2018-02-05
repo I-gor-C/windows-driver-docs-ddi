@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 66d5596b-5f5b-46a6-9151-074c4713940f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET, RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET, rilapitypes/RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET, rilapitypes/RIL_UICCAPP_DATACHANGE_MBDN, rilapitypes/RIL_UICCAPP_DATACHANGE_ESNME, rilapitypes/RILUICCAPPDATACHANGEENUM, RIL_UICCAPP_DATACHANGE_MBDN, RILUICCAPPDATACHANGEENUM enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_UICCAPP_DATACHANGE_MAX, netvista.riluiccappdatachangeenum_2, RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET, RILUICCAPPDATACHANGEENUM, RIL_UICCAPP_DATACHANGE_ESNME, RIL_UICCAPP_DATACHANGE_MAX
+ms.keywords : rilapitypes/RIL_UICCAPP_DATACHANGE_MBDN, RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET, RILUICCAPPDATACHANGEENUM, netvista.riluiccappdatachangeenum_2, RIL_UICCAPP_DATACHANGE_MBDN, rilapitypes/RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_UNSET, RIL_UICCAPP_DATACHANGE_ESNME, rilapitypes/RIL_UICCAPP_DATACHANGE_ESNME, rilapitypes/RIL_UICCAPP_DATACHANGE_MAX, rilapitypes/RILUICCAPPDATACHANGEENUM, RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET, RILUICCAPPDATACHANGEENUM enumeration [Network Drivers Starting with Windows Vista], RIL_UICCAPP_DATACHANGE_MAX, rilapitypes/RIL_UICCAPP_DATACHANGE_EF_CSP_PLMN_SET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,4 @@ typedef enum _RILUICCAPPDATACHANGEENUM {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

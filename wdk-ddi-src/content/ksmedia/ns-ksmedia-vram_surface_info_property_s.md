@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9bb24ca3-2684-4873-8136-c560f3374310
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.vram_surface_info_property_s, ksmedia/VRAM_SURFACE_INFO_PROPERTY_S, VRAM_SURFACE_INFO_PROPERTY_S, VRAM_SURFACE_INFO_PROPERTY_S structure [Streaming Media Devices], ksmedia/PVRAM_SURFACE_INFO_PROPERTY_S, avstruct_f0149912-f7c6-4cf5-bc5e-107c03c7823f.xml, PVRAM_SURFACE_INFO_PROPERTY_S, *PVRAM_SURFACE_INFO_PROPERTY_S, PVRAM_SURFACE_INFO_PROPERTY_S structure pointer [Streaming Media Devices]
+ms.keywords : ksmedia/VRAM_SURFACE_INFO_PROPERTY_S, PVRAM_SURFACE_INFO_PROPERTY_S structure pointer [Streaming Media Devices], ksmedia/PVRAM_SURFACE_INFO_PROPERTY_S, VRAM_SURFACE_INFO_PROPERTY_S structure [Streaming Media Devices], VRAM_SURFACE_INFO_PROPERTY_S, *PVRAM_SURFACE_INFO_PROPERTY_S, PVRAM_SURFACE_INFO_PROPERTY_S, stream.vram_surface_info_property_s, avstruct_f0149912-f7c6-4cf5-bc5e-107c03c7823f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,16 +64,13 @@ This member specifies a pointer to a structure of type <a href="..\ksmedia\ns-ks
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="..\ksmedia\ns-ksmedia-vram_surface_info.md">VRAM_SURFACE_INFO</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
  
 

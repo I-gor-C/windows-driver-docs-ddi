@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : dc5dc9f4-53a6-468a-907c-9b271fed83aa
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : AddSyntheticModuleWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AddSyntheticModuleWide, IDebugSymbols3::AddSyntheticModuleWide, debugger.addsyntheticmodulewide, AddSyntheticModuleWide, AddSyntheticModuleWide method [Windows Debugging], IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModuleWide method
+ms.keywords : debugger.addsyntheticmodulewide, AddSyntheticModuleWide method [Windows Debugging], IDebugSymbols3 interface, AddSyntheticModuleWide, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModuleWide method, IDebugSymbols3::AddSyntheticModuleWide, dbgeng/IDebugSymbols3::AddSyntheticModuleWide, IDebugSymbols3, AddSyntheticModuleWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -110,22 +110,17 @@ For more information about synthetic modules, see <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554536">RemoveSyntheticModule</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
 
  
 

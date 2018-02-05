@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : EEE091E4-29D1-4C6F-B543-C54736660CCA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PPCNOTIFICATION_BUFFER, PPCNOTIFICATION_BUFFER, audio.pcnotification_buffer, _PCNOTIFICATION_BUFFER, PPCNOTIFICATION_BUFFER structure pointer [Audio Devices], PCNOTIFICATION_BUFFER structure [Audio Devices], portcls/PPCNOTIFICATION_BUFFER, portcls/PCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER"
+ms.keywords : PCNOTIFICATION_BUFFER, _PCNOTIFICATION_BUFFER, portcls/PPCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER structure [Audio Devices], audio.pcnotification_buffer, PPCNOTIFICATION_BUFFER structure pointer [Audio Devices], PPCNOTIFICATION_BUFFER, portcls/PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ The notification buffer used by <a href="..\portcls\nn-portcls-iportclsnotificat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | portcls.h |
 
 ## See Also

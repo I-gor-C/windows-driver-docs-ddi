@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 416F9A0C-0A86-4FAA-9052-5D37D29C464D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SOC_SUBSYSTEM_FAILURE_DETAILS structure [WHEA Drivers and Applications], *PSOC_SUBSYSTEM_FAILURE_DETAILS, ntddk/SOC_SUBSYSTEM_FAILURE_DETAILS, PSOC_SUBSYSTEM_FAILURE_DETAILS structure pointer [WHEA Drivers and Applications], _SOC_SUBSYSTEM_FAILURE_DETAILS, PSOC_SUBSYSTEM_FAILURE_DETAILS, whea.soc_subsystem_failure_details, SOC_SUBSYSTEM_FAILURE_DETAILS, ntddk/PSOC_SUBSYSTEM_FAILURE_DETAILS
+ms.keywords : "*PSOC_SUBSYSTEM_FAILURE_DETAILS, _SOC_SUBSYSTEM_FAILURE_DETAILS, PSOC_SUBSYSTEM_FAILURE_DETAILS, ntddk/SOC_SUBSYSTEM_FAILURE_DETAILS, SOC_SUBSYSTEM_FAILURE_DETAILS structure [WHEA Drivers and Applications], whea.soc_subsystem_failure_details, ntddk/PSOC_SUBSYSTEM_FAILURE_DETAILS, PSOC_SUBSYSTEM_FAILURE_DETAILS structure pointer [WHEA Drivers and Applications], SOC_SUBSYSTEM_FAILURE_DETAILS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SOC_SUBSYSTEM_FAILURE_DETAILS, *PSOC_SUBSYSTEM_FAILURE_DETAILS
+req.typenames : "*PSOC_SUBSYSTEM_FAILURE_DETAILS, SOC_SUBSYSTEM_FAILURE_DETAILS"
 ---
 
 # _SOC_SUBSYSTEM_FAILURE_DETAILS structure
@@ -90,7 +90,5 @@ The size, in bytes, of the <b>UnifiedFailureRegion</b> string including the <b>N
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ntddk.h |

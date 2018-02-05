@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : dbabd045-4f18-4103-b3c0-5405173628d6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfObjectAllocateContext, kmdf.wdfobjectallocatecontext, WdfObjectAllocateContext method, wdfobject/WdfObjectAllocateContext, DFGenObjectRef_9b172283-f4b6-4ade-9cd2-38f10c0ff9bd.xml, wdf.wdfobjectallocatecontext, PFN_WDFOBJECTALLOCATECONTEXT
+ms.keywords : PFN_WDFOBJECTALLOCATECONTEXT, DFGenObjectRef_9b172283-f4b6-4ade-9cd2-38f10c0ff9bd.xml, wdfobject/WdfObjectAllocateContext, wdf.wdfobjectallocatecontext, WdfObjectAllocateContext method, WdfObjectAllocateContext, kmdf.wdfobjectallocatecontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -156,12 +156,11 @@ For more information about object context space, see <a href="https://docs.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
@@ -169,9 +168,9 @@ For more information about object context space, see <a href="https://docs.micro
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552404">WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE</a>
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
  
 

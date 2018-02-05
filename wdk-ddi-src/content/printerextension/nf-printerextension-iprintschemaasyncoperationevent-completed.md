@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : B1599F21-D6DD-497D-9CD8-6C637ABAA33A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.iprintschemaasyncoperationevent_completed, IPrintSchemaAsyncOperationEvent, printerextension/IPrintSchemaAsyncOperationEvent::Completed, Completed, Completed method [Print Devices], Completed method [Print Devices], IPrintSchemaAsyncOperationEvent interface, IPrintSchemaAsyncOperationEvent interface [Print Devices], Completed method, IPrintSchemaAsyncOperationEvent::Completed
+ms.keywords : IPrintSchemaAsyncOperationEvent::Completed, Completed method [Print Devices], print.iprintschemaasyncoperationevent_completed, Completed, Completed method [Print Devices], IPrintSchemaAsyncOperationEvent interface, IPrintSchemaAsyncOperationEvent interface [Print Devices], Completed method, IPrintSchemaAsyncOperationEvent, printerextension/IPrintSchemaAsyncOperationEvent::Completed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,20 +74,16 @@ The print ticket passed to the <b>Completed</b> method is the final validated, m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
-
 <a href="..\printerextension\nn-printerextension-iprintschemaasyncoperationevent.md">IPrintSchemaAsyncOperationEvent</a>
+
+<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 
  
 

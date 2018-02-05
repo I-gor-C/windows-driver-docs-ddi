@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 102C7CEC-B1DD-49F6-AB7F-0CE0A22EBE54
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : BAND_MANAGEMENT_CAPABILITIES, CAPS_BANDCROSSING_SUPPORTED, PBAND_MANAGEMENT_CAPABILITIES structure pointer [Storage Devices], *PBAND_MANAGEMENT_CAPABILITIES, ehstorbandmgmt/BAND_MANAGEMENT_CAPABILITIES, CAPS_SID_SECURED, MEDIAKEY_PROTECTEDBY_VENDORSCHEME, BAND_MANAGEMENT_CAPABILITIES structure [Storage Devices], MEDIAKEY_PROTECTEDBY_AUTHKEY, storage.band_management_capabilities, CAPS_ACTIVATED, 0, _BAND_MANAGEMENT_CAPABILITIES, PBAND_MANAGEMENT_CAPABILITIES, ehstorbandmgmt/PBAND_MANAGEMENT_CAPABILITIES
+ms.keywords : PBAND_MANAGEMENT_CAPABILITIES structure pointer [Storage Devices], 0, MEDIAKEY_PROTECTEDBY_AUTHKEY, ehstorbandmgmt/PBAND_MANAGEMENT_CAPABILITIES, BAND_MANAGEMENT_CAPABILITIES, *PBAND_MANAGEMENT_CAPABILITIES, CAPS_ACTIVATED, BAND_MANAGEMENT_CAPABILITIES structure [Storage Devices], MEDIAKEY_PROTECTEDBY_VENDORSCHEME, _BAND_MANAGEMENT_CAPABILITIES, PBAND_MANAGEMENT_CAPABILITIES, ehstorbandmgmt/BAND_MANAGEMENT_CAPABILITIES, CAPS_BANDCROSSING_SUPPORTED, storage.band_management_capabilities, CAPS_SID_SECURED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -168,9 +168,7 @@ If <b>CAPS_ACTIVATED</b> is not set in <b>Capabilities</b>, security functionali
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
 ## See Also

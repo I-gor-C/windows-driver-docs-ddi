@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : ee78013c-7660-4017-97ec-eff9068b707a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iminiportmidistream_setstate, SetState method [Audio Devices], SetState method [Audio Devices], IMiniportMidiStream interface, SetState, IMiniportMidiStream::SetState, portcls/IMiniportMidiStream::SetState, audmp-routines_23f064df-faef-4c45-a58e-c5e3e1d7d7a5.xml, IMiniportMidiStream interface [Audio Devices], SetState method, IMiniportMidiStream
+ms.keywords : SetState method [Audio Devices], IMiniportMidiStream interface [Audio Devices], SetState method, SetState method [Audio Devices], IMiniportMidiStream interface, audio.iminiportmidistream_setstate, IMiniportMidiStream, audmp-routines_23f064df-faef-4c45-a58e-c5e3e1d7d7a5.xml, IMiniportMidiStream::SetState, portcls/IMiniportMidiStream::SetState, SetState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -106,24 +106,20 @@ RUN -&gt; PAUSE -&gt; ACQUIRE -&gt; STOP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565110">KSPROPERTY_CONNECTION_STATE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a>
 
 <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 
 <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565110">KSPROPERTY_CONNECTION_STATE</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 66ec7c51-3d2c-4a25-a356-4df06ee1b1f5
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getmodulebymodulenamewide, IDebugSymbols3::GetModuleByModuleNameWide, GetModuleByModuleNameWide, GetModuleByModuleNameWide method [Windows Debugging], GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleNameWide method, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide, IDebugSymbols3
+ms.keywords : IDebugSymbols3::GetModuleByModuleNameWide, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3 interface, GetModuleByModuleNameWide, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide, debugger.getmodulebymodulenamewide, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleNameWide method, GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -113,14 +113,9 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

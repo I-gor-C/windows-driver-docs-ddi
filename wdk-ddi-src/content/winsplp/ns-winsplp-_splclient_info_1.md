@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a9659f77-e84b-471a-a778-a4628d89ce19
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PSPLCLIENT_INFO_1 structure pointer [Print Devices], poprfnc_45237404-33da-4fb0-9405-05c930c5445b.xml, winsplp/SPLCLIENT_INFO_1, LPSPLCLIENT_INFO_1 structure pointer [Print Devices], LPSPLCLIENT_INFO_1, _SPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, PSPLCLIENT_INFO_1, winsplp/LPSPLCLIENT_INFO_1, SPLCLIENT_INFO_1 structure [Print Devices], print.splclient_info_1, winsplp/PSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1
+ms.keywords : LPSPLCLIENT_INFO_1 structure pointer [Print Devices], winsplp/SPLCLIENT_INFO_1, PSPLCLIENT_INFO_1 structure pointer [Print Devices], LPSPLCLIENT_INFO_1, poprfnc_45237404-33da-4fb0-9405-05c930c5445b.xml, SPLCLIENT_INFO_1, SPLCLIENT_INFO_1 structure [Print Devices], winsplp/PSPLCLIENT_INFO_1, winsplp/LPSPLCLIENT_INFO_1, PSPLCLIENT_INFO_1, _SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, print.splclient_info_1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1
+req.typenames : "*PSPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, SPLCLIENT_INFO_1"
 req.product : Windows 10 or later.
 ---
 
@@ -92,7 +92,4 @@ Values for all structure members are supplied by the print spooler before the sp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |

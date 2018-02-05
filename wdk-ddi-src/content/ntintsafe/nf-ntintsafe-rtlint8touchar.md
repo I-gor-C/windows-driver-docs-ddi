@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3E8BF45A-D968-4C9F-8C38-65B39665496B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlInt8ToUChar, kernel.rtlint8touchar, RtlInt8ToUChar, RtlInt8ToUChar function [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.rtlint8touchar, RtlInt8ToUChar, RtlInt8ToUChar function [Kernel-Mode Driver Architecture], ntintsafe/RtlInt8ToUChar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This is one of a set of inline functions designed to provide type conversions an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

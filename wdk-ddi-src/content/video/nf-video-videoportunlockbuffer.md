@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d5d34f32-026b-4c9f-86ae-a835d4e9c381
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortUnlockBuffer, display.videoportunlockbuffer, VideoPort_Functions_2cb5a81f-1956-4431-bf54-7ee6e3d79eab.xml, VideoPortUnlockBuffer function [Display Devices], video/VideoPortUnlockBuffer
+ms.keywords : VideoPortUnlockBuffer function [Display Devices], VideoPortUnlockBuffer, display.videoportunlockbuffer, video/VideoPortUnlockBuffer, VideoPort_Functions_2cb5a81f-1956-4431-bf54-7ee6e3d79eab.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -71,7 +71,7 @@ The configuration of the device.
 
 `*FunctionDescriptorBuffer`
 
-
+Pointer to a buffer that contains an array of function descriptors (<a href="..\usbbusif\ns-usbbusif-_usbc_function_descriptor.md">USBC_FUNCTION_DESCRIPTOR</a>).
 
 `FunctionDescriptorBufferLength`
 
@@ -97,14 +97,8 @@ For a general description of the callback routine mechanism, see <a href="https:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbbusif.h (include Usbbusif.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

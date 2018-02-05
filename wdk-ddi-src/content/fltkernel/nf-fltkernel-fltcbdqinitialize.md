@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a3e089bf-6037-4d85-92ce-db9c865bdc02
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCbdqInitialize function [Installable File System Drivers], FltApiRef_a_to_d_e365fdac-7834-4388-b8ba-65593b045d19.xml, fltkernel/FltCbdqInitialize, ifsk.fltcbdqinitialize, FltCbdqInitialize
+ms.keywords : fltkernel/FltCbdqInitialize, FltApiRef_a_to_d_e365fdac-7834-4388-b8ba-65593b045d19.xml, ifsk.fltcbdqinitialize, FltCbdqInitialize, FltCbdqInitialize function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,14 +87,14 @@ Pointer to a caller-supplied insert callback routine. The Filter Manager calls t
 </table></span></div>
 
 
-#### Cbdq
-
-Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>. 
-
-
 #### Cbd
 
 Pointer to the callback data structure to be inserted into the queue. 
+
+
+#### Cbdq
+
+Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>. 
 
 
 #### InsertContext
@@ -120,14 +120,14 @@ Pointer to a caller-supplied remove callback routine. The Filter Manager calls t
 </table></span></div>
 
 
-#### Cbdq
-
-Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>. 
-
-
 #### Cbd
 
-Pointer to the callback data structure to be removed from the queue.
+Pointer to the callback data structure to be removed from the queue. 
+
+
+#### Cbdq
+
+Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>.
 
 `CbdqPeekNextIo`
 
@@ -149,14 +149,14 @@ Pointer to a caller-supplied peek callback routine. The Filter Manager calls thi
 </table></span></div>
 
 
-#### Cbdq
-
-Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>. 
-
-
 #### Cbd
 
 Pointer to the callback data structure marking the position in the queue to begin searching for a match to <i>PeekContext</i>. If <i>Cbd</i> is <b>NULL</b>, the search begins at the head of the queue. 
+
+
+#### Cbdq
+
+Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>. 
 
 
 #### PeekContext
@@ -238,14 +238,14 @@ Pointer to a caller-supplied cancel routine. The Filter Manager calls this routi
 </table></span></div>
 
 
-#### Cbdq
-
-Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>. 
-
-
 #### Cbd
 
-Pointer to the callback data structure for the canceled I/O operation.
+Pointer to the callback data structure for the canceled I/O operation. 
+
+
+#### Cbdq
+
+Pointer to the minifilter driver's cancel-safe callback data queue. This queue must have been initialized by calling <i>FltCbdqInitialize</i>.
 
 
 ## Return Value
@@ -339,38 +339,34 @@ This routine should complete a canceled I/O operation. Normally, minifilter driv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>
+<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcbdqremoveio.md">FltCbdqRemoveIo</a>
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
-
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data_queue.md">FLT_CALLBACK_DATA_QUEUE</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltcbdqremovenextio.md">FltCbdqRemoveNextIo</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcbdqinsertio.md">FltCbdqInsertIo</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltcbdqenable.md">FltCbdqEnable</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>
+
+<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqremovenextio.md">FltCbdqRemoveNextIo</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 
-<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltcbdqenable.md">FltCbdqEnable</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 889f872a-f4fe-4d7a-b9b6-7fb7335831a5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.nmrderegisterprovider, netioddk/NmrDeregisterProvider, NmrDeregisterProvider, nmrref_581ad526-b42f-4ff3-993c-58558cd281c8.xml, NmrDeregisterProvider function [Network Drivers Starting with Windows Vista]
+ms.keywords : NmrDeregisterProvider function [Network Drivers Starting with Windows Vista], nmrref_581ad526-b42f-4ff3-993c-58558cd281c8.xml, netvista.nmrderegisterprovider, netioddk/NmrDeregisterProvider, NmrDeregisterProvider
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,8 +77,8 @@ The
 </td>
 <td width="60%">
 The NMR initiated the deregistration of the provider module. The provider module must call the 
-       <mshelp:link keywords="netvista.nmrwaitforproviderderegistercomplete" tabindex="0"><b>
-       NmrWaitForProviderDeregisterComplete</b></mshelp:link> function to wait until the deregistration is complete
+       <a href="..\netioddk\nf-netioddk-nmrwaitforproviderderegistercomplete.md">
+       NmrWaitForProviderDeregisterComplete</a> function to wait until the deregistration is complete
        before the provider module can be unloaded.
 
 </td>
@@ -114,8 +114,8 @@ A provider module typically calls the
     client modules to which it is attached before the provider module is unloaded from the system. After
     calling the 
     <b>NmrDeregisterProvider</b> function a provider module must call the 
-    <mshelp:link keywords="netvista.nmrwaitforproviderderegistercomplete" tabindex="0"><b>
-    NmrWaitForProviderDeregisterComplete</b></mshelp:link> function to wait for the deregistration to complete before the
+    <a href="..\netioddk\nf-netioddk-nmrwaitforproviderderegistercomplete.md">
+    NmrWaitForProviderDeregisterComplete</a> function to wait for the deregistration to complete before the
     provider module can be unloaded. A provider module must not return from a call to its 
     <i>Unload</i> function until after deregistration is
     complete.
@@ -133,29 +133,26 @@ A provider module typically calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
-
-<mshelp:link keywords="netvista.nmrwaitforproviderderegistercomplete" tabindex="0"><b>
-   NmrWaitForProviderDeregisterComplete</b></mshelp:link>
-
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a>
-
 <a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
 
 <a href="..\netioddk\nf-netioddk-nmrregisterprovider.md">NmrRegisterProvider</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a>
+
+<a href="..\netioddk\nf-netioddk-nmrwaitforproviderderegistercomplete.md">
+   NmrWaitForProviderDeregisterComplete</a>
+
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 
  
 

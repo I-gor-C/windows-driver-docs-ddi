@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : F3DD5912-46E5-43E5-A920-940FC8FCD83F
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::LaunchAndDebugPlmAppWide, IDebugPlmClient3 interface [Windows Debugging], LaunchAndDebugPlmAppWide method, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3::LaunchAndDebugPlmAppWide, IDebugPlmClient3, debugger.idebugplmclient3_launchanddebugplmappwide
+ms.keywords : IDebugPlmClient3, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3::LaunchAndDebugPlmAppWide, dbgeng/IDebugPlmClient3::LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3 interface [Windows Debugging], LaunchAndDebugPlmAppWide method, debugger.idebugplmclient3_launchanddebugplmappwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,14 +82,9 @@ If a debugger session is not already started, this method starts one.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

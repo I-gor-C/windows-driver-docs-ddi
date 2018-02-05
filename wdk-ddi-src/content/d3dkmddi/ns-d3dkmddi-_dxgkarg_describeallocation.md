@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fd01ff3b-83b7-43d5-bbc6-6959485edd15
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_DESCRIBEALLOCATION, DmStructs_73e3d53a-788b-4c88-980c-df0d2038694f.xml, d3dkmddi/DXGKARG_DESCRIBEALLOCATION, _DXGKARG_DESCRIBEALLOCATION, DXGKARG_DESCRIBEALLOCATION structure [Display Devices], *INOUT_PDXGKARG_DESCRIBEALLOCATION, display.dxgkarg_describeallocation
+ms.keywords : "_DXGKARG_DESCRIBEALLOCATION, DmStructs_73e3d53a-788b-4c88-980c-df0d2038694f.xml, DXGKARG_DESCRIBEALLOCATION structure [Display Devices], d3dkmddi/DXGKARG_DESCRIBEALLOCATION, *INOUT_PDXGKARG_DESCRIBEALLOCATION, DXGKARG_DESCRIBEALLOCATION, display.dxgkarg_describeallocation"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,28 +107,26 @@ Supported starting with Windows 8.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows Vista. Available starting with  Windows Vista. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_describeallocation.md">DxgkDdiDescribeAllocation</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_multisamplingmethod.md">D3DDDI_MULTISAMPLINGMETHOD</a>
-
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_describeallocationflags.md">DXGK_DESCRIBEALLOCATIONFLAGS</a>
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_multisamplingmethod.md">D3DDDI_MULTISAMPLINGMETHOD</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_describeallocationflags.md">DXGK_DESCRIBEALLOCATIONFLAGS</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_describeallocation.md">DxgkDdiDescribeAllocation</a>
 
  
 

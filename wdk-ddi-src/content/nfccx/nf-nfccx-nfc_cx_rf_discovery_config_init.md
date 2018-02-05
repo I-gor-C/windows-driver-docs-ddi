@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : C8A6A286-8F62-4A55-9AED-263317088706
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : NFC_CX_RF_DISCOVERY_CONFIG_INIT function [Near-Field Proximity Drivers], nfccx/NFC_CX_RF_DISCOVERY_CONFIG_INIT, nfpdrivers.nfc_cx_rf_discovery_config_init, NFC_CX_RF_DISCOVERY_CONFIG_INIT
+ms.keywords : nfccx/NFC_CX_RF_DISCOVERY_CONFIG_INIT, NFC_CX_RF_DISCOVERY_CONFIG_INIT, nfpdrivers.nfc_cx_rf_discovery_config_init, NFC_CX_RF_DISCOVERY_CONFIG_INIT function [Near-Field Proximity Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE"
+req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 
@@ -65,14 +65,10 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | nfccx.h (include Ncidef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Nfccxstub.lib |
 
 ## See Also
 

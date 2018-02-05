@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FD5714DF-9D34-4396-86BC-40054C199A0E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, storage.storage_physical_topology_descriptor, STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR structure [Storage Devices], PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR structure pointer [Storage Devices], *PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, ntddstor/STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, _STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR
+ms.keywords : STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, ntddstor/STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, *PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, ntddstor/PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, storage.storage_physical_topology_descriptor, _STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR, STORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR structure [Storage Devices], PSTORAGE_PHYSICAL_TOPOLOGY_DESCRIPTOR structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ The version of the physical topology.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |

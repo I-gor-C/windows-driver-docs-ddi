@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : bd7a8fc6-0d68-4d80-b622-90cd981f9d13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMCopyBits, print_unidrv-pscript_rendering_fbf15e40-01e8-4207-b130-b152a225025e.xml, OEMCopyBits, OEMCopyBits function [Print Devices], print.oemcopybits
+ms.keywords : print_unidrv-pscript_rendering_fbf15e40-01e8-4207-b130-b152a225025e.xml, OEMCopyBits, print.oemcopybits, OEMCopyBits function [Print Devices], printoem/OEMCopyBits
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeBuildConnectionOverMultipleTransports routine [Installable File System Drivers], rxref_813ee01b-f378-4598-813a-4f2f3c47189f.xml, ifsk.rxcebuildconnectionovermultipletransports, rxce/RxCeBuildConnectionOverMultipleTransports, RxCeBuildConnectionOverMultipleTransports
+ms.keywords : rxce/RxCeBuildConnectionOverMultipleTransports, rxref_813ee01b-f378-4598-813a-4f2f3c47189f.xml, RxCeBuildConnectionOverMultipleTransports, RxCeBuildConnectionOverMultipleTransports routine [Installable File System Drivers], ifsk.rxcebuildconnectionovermultipletransports
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -170,22 +170,18 @@ When <b>RxCeBuildConnectionOverMultipleTransports</b> is successful, the virtual
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
 
-<a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
-
 <a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>
+
+<a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
 
  
 

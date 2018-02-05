@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -73,14 +73,10 @@ A handle to a context block associated with a display adapter. The display minip
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | dispmprt.h |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

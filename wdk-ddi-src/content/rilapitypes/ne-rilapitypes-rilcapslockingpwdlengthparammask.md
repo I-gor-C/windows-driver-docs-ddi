@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : da244ee1-abb5-4b3f-8b2c-6726fbf32e76
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_CLPL_PASSWORDLENGTH, RILCAPSLOCKINGPWDLENGTHPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_CLPL_PASSWORDLENGTH, netvista.rilcapslockingpwdlengthparammask_2, rilapitypes/RILCAPSLOCKINGPWDLENGTHPARAMMASK, RIL_PARAM_CLPL_ALL, RILCAPSLOCKINGPWDLENGTHPARAMMASK, rilapitypes/RIL_PARAM_CLPL_ALL
+ms.keywords : RILCAPSLOCKINGPWDLENGTHPARAMMASK, RIL_PARAM_CLPL_PASSWORDLENGTH, RILCAPSLOCKINGPWDLENGTHPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILCAPSLOCKINGPWDLENGTHPARAMMASK, RIL_PARAM_CLPL_ALL, rilapitypes/RIL_PARAM_CLPL_ALL, netvista.rilcapslockingpwdlengthparammask_2, rilapitypes/RIL_PARAM_CLPL_PASSWORDLENGTH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILCAPSLOCKINGPWDLENGTHPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

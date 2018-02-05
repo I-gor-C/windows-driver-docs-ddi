@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 71CDBF47-B32D-4084-B2F6-9F8C037FCB79
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDI_RESOURCE_ALLOCATION_INFO_0022, D3D12DDI_RESOURCE_ALLOCATION_INFO_0022, D3D12DDI_RESOURCE_ALLOCATION_INFO_0022 structure [Display Devices], display.d3d12ddi_resource_allocation_info_0022
+ms.keywords : d3d12umddi/D3D12DDI_RESOURCE_ALLOCATION_INFO_0022, display.d3d12ddi_resource_allocation_info_0022, D3D12DDI_RESOURCE_ALLOCATION_INFO_0022, D3D12DDI_RESOURCE_ALLOCATION_INFO_0022 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,9 +99,6 @@ The data size of  the resource.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
 ## See Also

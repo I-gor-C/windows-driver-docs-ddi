@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 36f14936-8cc6-4488-aa0f-343e4fbb84e3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSetTargetState function [Streaming Media Devices], KsSetTargetState, stream.kssettargetstate, ks/KsSetTargetState, ksfunc_7e05a5c0-2c82-4b20-a199-3955c61c6e40.xml
+ms.keywords : KsSetTargetState, ksfunc_7e05a5c0-2c82-4b20-a199-3955c61c6e40.xml, ks/KsSetTargetState, KsSetTargetState function [Streaming Media Devices], stream.kssettargetstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ Assumes that such a target has been set with <a href="..\ks\nf-ks-kssettargetdev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

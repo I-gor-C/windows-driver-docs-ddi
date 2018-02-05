@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 66A66050-B2BF-47FA-A4E2-BF8816390B16
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbd_assignurbtostacklocation, USBD_AssignUrbToIoStackLocation, usbdlib/USBD_AssignUrbToIoStackLocation, USBD_AssignUrbToIoStackLocation routine [Buses]
+ms.keywords : usbdlib/USBD_AssignUrbToIoStackLocation, USBD_AssignUrbToIoStackLocation, USBD_AssignUrbToIoStackLocation routine [Buses], buses.usbd_assignurbtostacklocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -88,26 +88,23 @@ For a code example, see <a href="https://msdn.microsoft.com/library/windows/hard
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
-| **Library** |  |
+| **Library** | Usbdex.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-usbd_selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>
-
 <a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>
 
 <a href="..\usbdlib\nf-usbdlib-usbd_selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>
 
 <a href="..\usbdlib\nf-usbdlib-usbd_urballocate.md">USBD_UrbAllocate</a>
+
+<a href="..\usbdlib\nf-usbdlib-usbd_selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>
 
  
 

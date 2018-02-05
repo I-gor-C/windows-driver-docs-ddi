@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 304df6fb-8586-454a-a89a-24ac8848d3a1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortPause, StorPortPause, storage.storportpause, storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml, StorPortPause routine [Storage Devices]
+ms.keywords : storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml, StorPortPause, storport/StorPortPause, StorPortPause routine [Storage Devices], storage.storportpause
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,9 @@ All requests to the adapter are held until the time-out expires or the device re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

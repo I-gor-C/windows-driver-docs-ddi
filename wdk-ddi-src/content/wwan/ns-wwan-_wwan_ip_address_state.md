@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 63D3B055-A3B0-4A76-B53C-C5E87C40A52C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_IP_ADDRESS_STATE, *PWWAN_IP_ADDRESS_STATE, wwan/PWWAN_IP_ADDRESS_STATE, PWWAN_IP_ADDRESS_STATE, _WWAN_IP_ADDRESS_STATE, netvista.wwan_ip_address_state, wwan/WWAN_IP_ADDRESS_STATE, PWWAN_IP_ADDRESS_STATE structure pointer [Network Drivers Starting with Windows Vista], WWAN_IP_ADDRESS_STATE structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PWWAN_IP_ADDRESS_STATE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE, WWAN_IP_ADDRESS_STATE structure [Network Drivers Starting with Windows Vista], *PWWAN_IP_ADDRESS_STATE, _WWAN_IP_ADDRESS_STATE, netvista.wwan_ip_address_state, wwan/PWWAN_IP_ADDRESS_STATE, wwan/WWAN_IP_ADDRESS_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -105,16 +105,14 @@ The IPV6 MTU value of the PDP context.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8.1 and later versions of Windows. Available in Windows 8.1 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-wwan_ip_configuration_flags.md">WWAN_IP_CONFIGURATION_FLAGS</a>
-
 <a href="..\wwan\ns-wwan-_wwan_ipaddress_entry.md">WWAN_IPADDRESS_ENTRY</a>
+
+<a href="..\wwan\ns-wwan-wwan_ip_configuration_flags.md">WWAN_IP_CONFIGURATION_FLAGS</a>
 
  
 

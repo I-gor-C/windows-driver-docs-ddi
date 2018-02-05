@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 72229643-1177-4884-94A9-89920A5488A6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : URS_CONFIG_INIT, ursdevice/URS_CONFIG_INIT, URS_CONFIG_INIT function [Buses], buses.urs_config_init
+ms.keywords : URS_CONFIG_INIT function [Buses], buses.urs_config_init, ursdevice/URS_CONFIG_INIT, URS_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,10 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

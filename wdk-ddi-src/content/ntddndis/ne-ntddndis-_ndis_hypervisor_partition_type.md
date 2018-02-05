@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 830460f8-4cd6-4a52-ac32-004dc4a204e3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisHypervisorPartitionTypeUnknown, ntddndis/NdisHypervisorPartitionTypeUnknown, ntddndis/PNDIS_HYPERVISOR_PARTITION_TYPE, netvista.ndis_hypervisor_partition_type, NDIS_HYPERVISOR_PARTITION_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisHypervisorPartitionTypeMax, PNDIS_HYPERVISOR_PARTITION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], PNDIS_HYPERVISOR_PARTITION_TYPE, virtual_machine_queue_ref_582bebe7-e184-4460-8437-b81bcd6dbf8b.xml, *PNDIS_HYPERVISOR_PARTITION_TYPE, _NDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeMax, NDIS_HYPERVISOR_PARTITION_TYPE, NdisHypervisorPartitionMsHvChild, NdisHypervisorPartitionTypeMsHvParent, ntddndis/NdisHypervisorPartitionMsHvChild, ntddndis/NdisHypervisorPartitionTypeMsHvParent, ntddndis/NDIS_HYPERVISOR_PARTITION_TYPE
+ms.keywords : ntddndis/PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NDIS_HYPERVISOR_PARTITION_TYPE, PNDIS_HYPERVISOR_PARTITION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NdisHypervisorPartitionTypeMsHvParent, NdisHypervisorPartitionTypeUnknown, _NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeUnknown, PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeMsHvParent, netvista.ndis_hypervisor_partition_type, NdisHypervisorPartitionTypeMax, ntddndis/NdisHypervisorPartitionMsHvChild, NdisHypervisorPartitionMsHvChild, NDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeMax, virtual_machine_queue_ref_582bebe7-e184-4460-8437-b81bcd6dbf8b.xml, NDIS_HYPERVISOR_PARTITION_TYPE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,9 +92,7 @@ For more information about Hyper-V parent and child partitions, see <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

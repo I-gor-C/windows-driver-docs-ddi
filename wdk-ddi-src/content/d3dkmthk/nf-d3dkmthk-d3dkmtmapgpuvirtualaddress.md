@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6CE8112F-1DDA-4A8B-8D3D-40DC3737976A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTMapGpuVirtualAddress, display.d3dkmtmapgpuvirtualaddress, D3DKMTMapGpuVirtualAddress, D3DKMTMapGpuVirtualAddress function [Display Devices]
+ms.keywords : display.d3dkmtmapgpuvirtualaddress, d3dkmthk/D3DKMTMapGpuVirtualAddress, D3DKMTMapGpuVirtualAddress function [Display Devices], D3DKMTMapGpuVirtualAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,14 +94,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 

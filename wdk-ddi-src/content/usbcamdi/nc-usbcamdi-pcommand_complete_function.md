@@ -88,22 +88,16 @@ USBCAMD_WaitOnDeviceEvent.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568577">USBCAMD_BulkReadWrite</a>
+<a href="..\usbcamdi\nf-usbcamdi-usbcamd_controlvendorcommand.md">USBCAMD_ControlVendorCommand</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568638">USBCAMD_WaitOnDeviceEvent</a>
 
-<a href="..\usbcamdi\nf-usbcamdi-usbcamd_controlvendorcommand.md">USBCAMD_ControlVendorCommand</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568577">USBCAMD_BulkReadWrite</a>
 
  
 

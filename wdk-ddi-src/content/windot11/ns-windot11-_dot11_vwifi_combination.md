@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 05be98a8-dad2-4539-b725-e898db19a789
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PDOT11_VWIFI_COMBINATION, windot11/DOT11_VWIFI_COMBINATION, windot11/PDOT11_VWIFI_COMBINATION, DOT11_VWIFI_COMBINATION, PDOT11_VWIFI_COMBINATION structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_vwifi_combination, PDOT11_VWIFI_COMBINATION, Native_802.11_data_types_6b9469d7-deb2-4681-8f03-5ff6137946b4.xml, _DOT11_VWIFI_COMBINATION, DOT11_VWIFI_COMBINATION structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : PDOT11_VWIFI_COMBINATION, DOT11_VWIFI_COMBINATION structure [Network Drivers Starting with Windows Vista], DOT11_VWIFI_COMBINATION, windot11/DOT11_VWIFI_COMBINATION, Native_802.11_data_types_6b9469d7-deb2-4681-8f03-5ff6137946b4.xml, netvista.dot11_vwifi_combination, *PDOT11_VWIFI_COMBINATION, _DOT11_VWIFI_COMBINATION, windot11/PDOT11_VWIFI_COMBINATION, PDOT11_VWIFI_COMBINATION structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_VWIFI_COMBINATION, DOT11_VWIFI_COMBINATION"
+req.typenames : DOT11_VWIFI_COMBINATION, *PDOT11_VWIFI_COMBINATION
 req.product : Windows 10 or later.
 ---
 
@@ -72,11 +72,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_VWIFI_COMBINATION_REVISION_1.
@@ -86,6 +81,11 @@ This member must be set to DOT11_VWIFI_COMBINATION_REVISION_1.
 
 This member must be set to 
        sizeof(DOT11_VWIFI_COMBINATION).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `uNumAdhoc`
 
@@ -123,9 +123,7 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also

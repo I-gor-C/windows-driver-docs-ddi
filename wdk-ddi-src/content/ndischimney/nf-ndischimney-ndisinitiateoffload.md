@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a1979227-a447-4dd3-8a5d-7986362020cd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInitiateOffload function [Network Drivers Starting with Windows Vista], ndischimney/NdisInitiateOffload, netvista.ndisinitiateoffload, NdisInitiateOffload, tcp_chim_ndis_func_c93e8055-91b1-42d4-a227-6b21086c6e7b.xml
+ms.keywords : ndischimney/NdisInitiateOffload, tcp_chim_ndis_func_c93e8055-91b1-42d4-a227-6b21086c6e7b.xml, netvista.ndisinitiateoffload, NdisInitiateOffload, NdisInitiateOffload function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,8 +67,8 @@ The handle that NDIS provided at the
 `OffloadBlockList`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_protocol_offload_block_list" tabindex="0"><b>
-     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure that can be a stand-alone structure or the root of a
+     <a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
+     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
      linked list of such structures. These structures identify the state that is being offloaded.
 
 
@@ -81,30 +81,25 @@ None
 An intermediate driver calls the 
     <b>NdisInitiateOffload</b> function to propagate an initiate offload operation that was initiated by the
     host stack. For more information, see 
-    <mshelp:link keywords="netvista.propagating_state_manipulation_operations" tabindex="0">Propagating
-    State-Manipulation Operations</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff563771">Propagating
+    State-Manipulation Operations</a>.
 
 From the 
-    <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure that was passed to its 
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was passed to its 
     <i>MiniportInitiateOffload</i> function, the intermediate driver constructs an
     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure. For more information, see 
-    <mshelp:link keywords="netvista.reusing_an_ndis_miniport_offload_block_list_structure" tabindex="0">Reusing an
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST Structure</mshelp:link>. The intermediate driver passes a pointer (the 
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/reusing-an-ndis-miniport-offload-block-list-structure">Reusing an
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST Structure</a>. The intermediate driver passes a pointer (the 
     <i>OffloadBlockList</i> parameter) to this NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure when calling the 
     <b>NdisInitiateOffload</b> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ndis.lib |
 
 ## See Also
 
@@ -112,16 +107,16 @@ From the
 
 <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
 
-<mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link>
+<a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
+   NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a>
 
-<mshelp:link keywords="netvista.ndis_protocol_offload_block_list" tabindex="0"><b>
-   NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</b></mshelp:link>
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 
 <a href="..\ndischimney\nf-ndischimney-ndisminitiateoffloadcomplete.md">NdisMInitiateOffloadComplete</a>
 
-<mshelp:link keywords="netvista.protocolinitiateoffloadcomplete" tabindex="0"><i>
-   ProtocolInitiateOffloadComplete</i></mshelp:link>
+<a href="..\ndischimney\nc-ndischimney-initiate_offload_complete_handler.md">
+   ProtocolInitiateOffloadComplete</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 75dda423-8d5a-4b11-a187-d6703601a366
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, DXGK_RFVR_USERMODE, _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, DXGK_RFVR_HOTKEY, DXGK_RFVR_UNINITIALIZED, display.dxgk_recommendfunctionalvidpn_reason, d3dkmddi/DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, DXGK_RECOMMENDFUNCTIONALVIDPN_REASON enumeration [Display Devices], d3dkmddi/DXGK_RFVR_USERMODE, DXGK_RFVR_FIRMWARE, d3dkmddi/DXGK_RFVR_UNINITIALIZED, DmEnums_bb915c39-0ecd-4b15-8030-6a144173dc90.xml, d3dkmddi/DXGK_RFVR_FIRMWARE, d3dkmddi/DXGK_RFVR_HOTKEY
+ms.keywords : d3dkmddi/DXGK_RFVR_USERMODE, d3dkmddi/DXGK_RFVR_HOTKEY, DXGK_RFVR_HOTKEY, DXGK_RFVR_FIRMWARE, DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, d3dkmddi/DXGK_RFVR_FIRMWARE, DXGK_RECOMMENDFUNCTIONALVIDPN_REASON enumeration [Display Devices], _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, display.dxgk_recommendfunctionalvidpn_reason, DXGK_RFVR_UNINITIALIZED, d3dkmddi/DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, DXGK_RFVR_USERMODE, DmEnums_bb915c39-0ecd-4b15-8030-6a144173dc90.xml, d3dkmddi/DXGK_RFVR_UNINITIALIZED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,9 +83,7 @@ The <b>RequestReason</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

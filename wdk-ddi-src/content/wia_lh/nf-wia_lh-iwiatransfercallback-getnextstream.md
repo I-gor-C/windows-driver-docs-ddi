@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 025c29d3-1167-4aa3-8399-01dab5729267
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaTransferCallback interface [Imaging Devices], GetNextStream method, GetNextStream method [Imaging Devices], GetNextStream method [Imaging Devices], IWiaTransferCallback interface, IWiaTransfercallback_155c3198-1ed9-46a9-b6d8-0d6029bf0803.xml, GetNextStream, IWiaTransferCallback::GetNextStream, wia_lh/IWiaTransferCallback::GetNextStream, IWiaTransferCallback, image.iwiatransfercallback_getnextstream
+ms.keywords : GetNextStream method [Imaging Devices], IWiaTransferCallback interface, IWiaTransferCallback::GetNextStream, IWiaTransferCallback, GetNextStream, image.iwiatransfercallback_getnextstream, wia_lh/IWiaTransferCallback::GetNextStream, GetNextStream method [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], GetNextStream method, IWiaTransfercallback_155c3198-1ed9-46a9-b6d8-0d6029bf0803.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -92,20 +92,15 @@ In its <b>IWiaTransferCallback::GetNextStream</b> implementation, the image proc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wia_lh.h (include Wia.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wia_lh.h |
 
 ## See Also
 
-<a href="..\wia_lh\nn-wia_lh-iwiatransfercallback.md">IWiaTransferCallback</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543916">IWiaImageFilter::InitializeFilter</a>
+
+<a href="..\wia_lh\nn-wia_lh-iwiatransfercallback.md">IWiaTransferCallback</a>
 
  
 

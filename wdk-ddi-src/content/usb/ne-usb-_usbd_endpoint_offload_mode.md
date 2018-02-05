@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 577B2B5E-934E-4354-B6FF-FDFE9D1144D7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usb/UsbdEndpointOffloadHardwareAssisted, usb/UsbdEndpointOffloadModeNotSupported, UsbdEndpointOffloadModeNotSupported, usb/UsbdEndpointOffloadSoftwareAssisted, USBD_ENDPOINT_OFFLOAD_MODE enumeration [Buses], _USBD_ENDPOINT_OFFLOAD_MODE, UsbdEndpointOffloadHardwareAssisted, UsbdEndpointOffloadSoftwareAssisted, USBD_ENDPOINT_OFFLOAD_MODE, buses.usbd_endpoint_offload_mode, usb/USBD_ENDPOINT_OFFLOAD_MODE
+ms.keywords : UsbdEndpointOffloadHardwareAssisted, _USBD_ENDPOINT_OFFLOAD_MODE, usb/UsbdEndpointOffloadModeNotSupported, USBD_ENDPOINT_OFFLOAD_MODE enumeration [Buses], USBD_ENDPOINT_OFFLOAD_MODE, buses.usbd_endpoint_offload_mode, UsbdEndpointOffloadSoftwareAssisted, usb/UsbdEndpointOffloadHardwareAssisted, UsbdEndpointOffloadModeNotSupported, usb/UsbdEndpointOffloadSoftwareAssisted, usb/USBD_ENDPOINT_OFFLOAD_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,9 +75,7 @@ typedef enum _USBD_ENDPOINT_OFFLOAD_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | usb.h |
 
 ## See Also

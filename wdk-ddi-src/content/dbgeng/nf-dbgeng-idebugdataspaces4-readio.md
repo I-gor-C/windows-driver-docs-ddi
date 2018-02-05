@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d690cf53-63a6-487c-a952-07035786d19c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ReadIo method [Windows Debugging], dbgeng/IDebugDataSpaces3::ReadIo, IDebugDataSpaces3 interface [Windows Debugging], ReadIo method, ReadIo method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces::ReadIo, IDebugDataSpaces2 interface [Windows Debugging], ReadIo method, IDebugDataSpaces4 interface [Windows Debugging], ReadIo method, IDebugDataSpaces::ReadIo, IDebugDataSpaces2::ReadIo, ReadIo method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces2::ReadIo, ReadIo, IDebugDataSpaces_a6189a47-dc48-44cf-aadd-61769085ebc5.xml, ReadIo method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces interface [Windows Debugging], ReadIo method, debugger.readio, dbgeng/IDebugDataSpaces4::ReadIo, IDebugDataSpaces4, IDebugDataSpaces4::ReadIo, ReadIo method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces3::ReadIo
+ms.keywords : ReadIo method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces_a6189a47-dc48-44cf-aadd-61769085ebc5.xml, IDebugDataSpaces interface [Windows Debugging], ReadIo method, ReadIo, IDebugDataSpaces2::ReadIo, IDebugDataSpaces3 interface [Windows Debugging], ReadIo method, debugger.readio, dbgeng/IDebugDataSpaces3::ReadIo, dbgeng/IDebugDataSpaces::ReadIo, ReadIo method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadIo method, IDebugDataSpaces3::ReadIo, IDebugDataSpaces2 interface [Windows Debugging], ReadIo method, IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::ReadIo, ReadIo method [Windows Debugging], IDebugDataSpaces4 interface, ReadIo method [Windows Debugging], IDebugDataSpaces4::ReadIo, ReadIo method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces::ReadIo, dbgeng/IDebugDataSpaces2::ReadIo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -116,11 +116,6 @@ This method is only available in kernel-mode debugging.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

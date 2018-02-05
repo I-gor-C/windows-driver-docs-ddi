@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -71,8 +71,8 @@ The handle used by the IHV Extensions DLL to reference the WLAN adapter. This ha
 `indicationType`
 
 The 
-     <mshelp:link keywords="netvista.dot11ext_ihv_indication_type" tabindex="0"><b>
-     DOT11EXT_IHV_INDICATION_TYPE</b></mshelp:link> indication type.
+     <a href="..\wlanihv\ne-wlanihv-_dot11ext_ihv_indication_type.md">
+     DOT11EXT_IHV_INDICATION_TYPE</a> indication type.
 
 `uBufferLength`
 
@@ -94,29 +94,24 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 ## Remarks
 
 When the Native 802.11 miniport driver, which manages the WLAN adapter, makes an 
-    <mshelp:link keywords="netvista.ndis_status_media_specific_indication" tabindex="0"><b>
-    NDIS_STATUS_MEDIA_SPECIFIC_INDICATION</b></mshelp:link> indication, the operating system forwards the notification
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567399">
+    NDIS_STATUS_MEDIA_SPECIFIC_INDICATION</a> indication, the operating system forwards the notification
     data to the IHV Extensions DLL by calling the 
     <i>Dot11ExtIhvReceiveIndication</i> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567399">
+   NDIS_STATUS_MEDIA_SPECIFIC_INDICATION</a>
 
-<mshelp:link keywords="netvista.ndis_status_media_specific_indication" tabindex="0"><b>
-   NDIS_STATUS_MEDIA_SPECIFIC_INDICATION</b></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
 <a href="..\wlanihv\ne-wlanihv-_dot11ext_ihv_indication_type.md">DOT11EXT_IHV_INDICATION_TYPE</a>
 

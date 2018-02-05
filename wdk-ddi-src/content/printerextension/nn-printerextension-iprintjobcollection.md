@@ -62,11 +62,9 @@ The order of print jobs in the enumerated list is the same as the order provided
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **DLL** |  |
 
 ## See Also
 

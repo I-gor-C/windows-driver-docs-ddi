@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5d262012-c4f4-4f86-a3a2-48c2fd7d5216
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_param_Structs_ac18e377-42c2-4c4a-9625-1b0bf29375c2.xml, _D3DDDIARG_FINISHSESSIONKEYREFRESH, D3DDDIARG_FINISHSESSIONKEYREFRESH structure [Display Devices], D3DDDIARG_FINISHSESSIONKEYREFRESH, d3dumddi/D3DDDIARG_FINISHSESSIONKEYREFRESH, display.d3dddiarg_finishsessionkeyrefresh
+ms.keywords : D3DDDIARG_FINISHSESSIONKEYREFRESH, d3dumddi/D3DDDIARG_FINISHSESSIONKEYREFRESH, _D3DDDIARG_FINISHSESSIONKEYREFRESH, display.d3dddiarg_finishsessionkeyrefresh, D3DDDIARG_FINISHSESSIONKEYREFRESH structure [Display Devices], UMDisplayDriver_param_Structs_ac18e377-42c2-4c4a-9625-1b0bf29375c2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DDDIARG_FINISHSESSIONKEYREFRESH {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_FINISHSESSIONKEYREFRESH is supported beginning with the Windows 7 operating system. D3DDDIARG_FINISHSESSIONKEYREFRESH is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

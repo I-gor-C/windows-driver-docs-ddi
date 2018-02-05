@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d9d7327f-a413-4828-b204-e08198d0fe9e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : dmusprop/SYNTHCAPS, PSYNTHCAPS, SYNTHCAPS structure [Audio Devices], SYNTHCAPS, _SYNTHCAPS, *PSYNTHCAPS, dmusprop/PSYNTHCAPS, PSYNTHCAPS structure pointer [Audio Devices], audio.synthcaps, aud-prop_609e484a-6bcb-4ea2-9ca5-fa640c4d9ba8.xml
+ms.keywords : aud-prop_609e484a-6bcb-4ea2-9ca5-fa640c4d9ba8.xml, SYNTHCAPS structure [Audio Devices], audio.synthcaps, dmusprop/SYNTHCAPS, _SYNTHCAPS, PSYNTHCAPS structure pointer [Audio Devices], PSYNTHCAPS, dmusprop/PSYNTHCAPS, SYNTHCAPS, *PSYNTHCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,11 +71,6 @@ Specifies the effects that the rendering device is capable of producing. This me
 If the device supports none of these capabilities, set this member to SYNTH_EFFECT_NONE (zero).
 
 
-#### SYNTH_EFFECT_REVERB
-
-Rendering device can produce reverb effect.
-
-
 #### SYNTH_EFFECT_CHORUS
 
 Rendering device can produce chorus effect.
@@ -84,6 +79,11 @@ Rendering device can produce chorus effect.
 #### SYNTH_EFFECT_DELAY
 
 Rendering device can produce delay effect.
+
+
+#### SYNTH_EFFECT_REVERB
+
+Rendering device can produce reverb effect.
 
 `Flags`
 
@@ -97,19 +97,14 @@ Specifies the general capabilities of the driver. This member is a bitfield whos
 The driver supports downloadable sample collections (DLS Level 1).
 
 
+#### SYNTH_PC_DLS2
+
+The driver supports downloadable sample collections (DLS Level 2).
+
+
 #### SYNTH_PC_EXTERNAL
 
 The synth represents a connection to external hardware.
-
-
-#### SYNTH_PC_SOFTWARESYNTH
-
-The driver implements a software synthesizer.
-
-
-#### SYNTH_PC_MEMORYSIZEFIXED
-
-The memory size given in the <b>MemorySize</b> member is valid and represents the maximum amount of sample memory in bytes. This flag is typically set when the sample memory is not system memory.
 
 
 #### SYNTH_PC_GMINHARDWARE
@@ -122,14 +117,19 @@ The synth supports the General MIDI sound set in hardware.
 The synth supports the Roland GS sound set in hardware.
 
 
+#### SYNTH_PC_MEMORYSIZEFIXED
+
+The memory size given in the <b>MemorySize</b> member is valid and represents the maximum amount of sample memory in bytes. This flag is typically set when the sample memory is not system memory.
+
+
 #### SYNTH_PC_REVERB
 
 The synth supports reverb.
 
 
-#### SYNTH_PC_DLS2
+#### SYNTH_PC_SOFTWARESYNTH
 
-The driver supports downloadable sample collections (DLS Level 2).
+The driver implements a software synthesizer.
 
 
 #### SYNTH_PC_SYSTEMMEMORY
@@ -183,9 +183,6 @@ In the DMusUART sample driver in the Windows Driver Kit (WDK), the KSPROPERTY_SY
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
 ## See Also

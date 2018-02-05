@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 467a8e64-c4ed-4bd0-81f8-b792367d33bf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmPageEntireDriver routine [Kernel-Mode Driver Architecture], MmPageEntireDriver, k106_2e2de4d8-8b4f-4f8b-9451-f4f1ea8a5325.xml, kernel.mmpageentiredriver, wdm/MmPageEntireDriver
+ms.keywords : MmPageEntireDriver routine [Kernel-Mode Driver Architecture], MmPageEntireDriver, wdm/MmPageEntireDriver, kernel.mmpageentiredriver, k106_2e2de4d8-8b4f-4f8b-9451-f4f1ea8a5325.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,24 +73,23 @@ If the driver is already completely pageable, calling <b>MmPageEntireDriver</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlMmApcLte, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmlockpagabledatasection.md">MmLockPagableDataSection</a>
-
 <a href="..\ntddk\nf-ntddk-mmlockpagablesectionbyhandle.md">MmLockPagableSectionByHandle</a>
 
-<a href="..\wdm\nf-wdm-mmlockpagablecodesection.md">MmLockPagableCodeSection</a>
-
 <a href="..\wdm\nf-wdm-mmresetdriverpaging.md">MmResetDriverPaging</a>
+
+<a href="..\wdm\nf-wdm-mmlockpagabledatasection.md">MmLockPagableDataSection</a>
+
+<a href="..\wdm\nf-wdm-mmlockpagablecodesection.md">MmLockPagableCodeSection</a>
 
 <a href="..\wdm\nf-wdm-mmunlockpagableimagesection.md">MmUnlockPagableImageSection</a>
 

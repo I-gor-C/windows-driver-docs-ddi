@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 881363B2-CF4C-4D18-9F45-829771A2D325
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_GeofenceState_Unknown, gnssdriver/GNSS_GeofenceState_Entered, GNSS_GeofenceState_Entered, GNSS_GEOFENCE_STATE enumeration [Sensor Devices], GNSS_GEOFENCE_STATE, GNSS_GeofenceState_Exited, gnssdriver/GNSS_GEOFENCE_STATE, gnssdriver/GNSS_GeofenceState_Exited, sensors.gnss_geofence_state, GNSS_GeofenceState_Unknown
+ms.keywords : GNSS_GeofenceState_Exited, gnssdriver/GNSS_GeofenceState_Entered, GNSS_GeofenceState_Unknown, GNSS_GEOFENCE_STATE, GNSS_GEOFENCE_STATE enumeration [Sensor Devices], GNSS_GeofenceState_Entered, gnssdriver/GNSS_GeofenceState_Exited, sensors.gnss_geofence_state, gnssdriver/GNSS_GEOFENCE_STATE, gnssdriver/GNSS_GeofenceState_Unknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -121,7 +121,4 @@ The GNSS adapter will issue GNSS_ResetGeofenceTracking commands and re-add curre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

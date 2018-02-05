@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0c551de0-970a-4733-b904-27c40cf7b42f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfChildListRetrieveAddressDescription method, kmdf.wdfchildlistretrieveaddressdescription, wdfchildlist/WdfChildListRetrieveAddressDescription, wdf.wdfchildlistretrieveaddressdescription, WdfChildListRetrieveAddressDescription, DFDeviceObjectChildListRef_bd30cd1e-b7ac-40cd-b96f-4071d08bafc1.xml, PFN_WDFCHILDLISTRETRIEVEADDRESSDESCRIPTION
+ms.keywords : WdfChildListRetrieveAddressDescription, kmdf.wdfchildlistretrieveaddressdescription, DFDeviceObjectChildListRef_bd30cd1e-b7ac-40cd-b96f-4071d08bafc1.xml, WdfChildListRetrieveAddressDescription method, PFN_WDFCHILDLISTRETRIEVEADDRESSDESCRIPTION, wdf.wdfchildlistretrieveaddressdescription, wdfchildlist/WdfChildListRetrieveAddressDescription
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,24 +126,22 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
-
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_address_description_header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
+<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_address_description_header_init.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
 
  
 

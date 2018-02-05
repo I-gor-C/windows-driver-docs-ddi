@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : BED8C7F8-AF7A-4C82-BDE2-51C4285FF510
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.pedometer_step_type_count, sensorsdef/PEDOMETER_STEP_TYPE_COUNT, PEDOMETER_STEP_TYPE_COUNT, sensorsdef/PedometerStepTypeCount, PEDOMETER_STEP_TYPE_COUNT enumeration [Sensor Devices], PedometerStepTypeCount
+ms.keywords : sensorsdef/PedometerStepTypeCount, PEDOMETER_STEP_TYPE_COUNT, sensorsdef/PEDOMETER_STEP_TYPE_COUNT, PedometerStepTypeCount, PEDOMETER_STEP_TYPE_COUNT enumeration [Sensor Devices], sensors.pedometer_step_type_count
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -63,9 +63,6 @@ typedef enum _PEDOMETER_STEP_TYPE_COUNT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sensorsdef.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 37fc86b0-de8c-469b-94bb-ad482b9c7202
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFMemoryObjectRef_f5146f3e-a9ae-459c-9361-37a4f33edd67.xml, wdfmemory/WdfLookasideListCreate, WdfLookasideListCreate, kmdf.wdflookasidelistcreate, WdfLookasideListCreate method, wdf.wdflookasidelistcreate
+ms.keywords : wdf.wdflookasidelistcreate, kmdf.wdflookasidelistcreate, wdfmemory/WdfLookasideListCreate, WdfLookasideListCreate method, WdfLookasideListCreate, DFMemoryObjectRef_f5146f3e-a9ae-459c-9361-37a4f33edd67.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -142,22 +142,20 @@ If your driver specifies <b>PagedPool</b> for the <i>PoolType</i> parameter, the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfmemory.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
 
  
 

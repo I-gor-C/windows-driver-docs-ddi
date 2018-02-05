@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b2675395-08b6-44e6-8052-1fdd7b693c31
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILADDITIONALNUMBERSTRINGUPDATE, RILADDITIONALNUMBERSTRINGUPDATE, RILADDITIONALNUMBERSTRINGUPDATE structure [Network Drivers Starting with Windows Vista], netvista.riladditionalnumberstringupdate_2, *LPRILADDITIONALNUMBERSTRINGUPDATE
+ms.keywords : rilapitypes/RILADDITIONALNUMBERSTRINGUPDATE, netvista.riladditionalnumberstringupdate_2, RILADDITIONALNUMBERSTRINGUPDATE structure [Network Drivers Starting with Windows Vista], RILADDITIONALNUMBERSTRINGUPDATE, *LPRILADDITIONALNUMBERSTRINGUPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILADDITIONALNUMBERSTRINGUPDATE, RILADDITIONALNUMBERSTRINGUPDATE"
+req.typenames : RILADDITIONALNUMBERSTRINGUPDATE, *LPRILADDITIONALNUMBERSTRINGUPDATE
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,4 @@ typedef struct _RILADDITIONALNUMBERSTRINGUPDATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

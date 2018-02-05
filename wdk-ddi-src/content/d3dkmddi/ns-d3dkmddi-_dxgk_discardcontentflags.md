@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0a93d3a2-0274-4b14-9c4b-9ed31a48e600
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_DISCARDCONTENTFLAGS structure [Display Devices], DXGK_DISCARDCONTENTFLAGS, _DXGK_DISCARDCONTENTFLAGS, display.dxgk_discardcontentflags, DmStructs_9ff479c6-8592-4ebd-b001-c0a7d58772f2.xml, d3dkmddi/DXGK_DISCARDCONTENTFLAGS
+ms.keywords : "_DXGK_DISCARDCONTENTFLAGS, DmStructs_9ff479c6-8592-4ebd-b001-c0a7d58772f2.xml, d3dkmddi/DXGK_DISCARDCONTENTFLAGS, DXGK_DISCARDCONTENTFLAGS structure [Display Devices], DXGK_DISCARDCONTENTFLAGS, display.dxgk_discardcontentflags"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ typedef struct _DXGK_DISCARDCONTENTFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

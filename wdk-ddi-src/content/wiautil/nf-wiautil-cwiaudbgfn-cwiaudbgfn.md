@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : dbb367a7-d7e6-4081-9618-1c4e38cccd31
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CWiauDbgFn method [Imaging Devices], CWiauDbgFn interface, CWiauDbgFn method [Imaging Devices], wiauFncs_1dfa7486-9ad3-41b8-8724-29165ea0a45b.xml, CWiauDbgFn interface [Imaging Devices], CWiauDbgFn method, CWiauDbgFn::CWiauDbgFn, CWiauDbgFn, wiautil/CWiauDbgFn::CWiauDbgFn, image.cwiaudbgfn_cwiaudbgfn
+ms.keywords : CWiauDbgFn::CWiauDbgFn, CWiauDbgFn method [Imaging Devices], wiauFncs_1dfa7486-9ad3-41b8-8724-29165ea0a45b.xml, CWiauDbgFn method [Imaging Devices], CWiauDbgFn interface, wiautil/CWiauDbgFn::CWiauDbgFn, image.cwiaudbgfn_cwiaudbgfn, CWiauDbgFn interface [Imaging Devices], CWiauDbgFn method, CWiauDbgFn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,20 +66,16 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540356">CWiauDbgFn::~CWiauDbgFn</a>
-
 <a href="..\wiautil\nl-wiautil-cwiaudbgfn.md">CWiauDbgFn</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540356">CWiauDbgFn::~CWiauDbgFn</a>
 
  
 

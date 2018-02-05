@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5a9008eb-86ad-4e3c-85a2-c8fd1b8fb4cb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFSendNetBufferListsComplete, filter_ndis_functions_ref_376e31a2-453d-490e-83bb-b91b728f701f.xml, ndis/NdisFSendNetBufferListsComplete, NdisFSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista], netvista.ndisfsendnetbufferlistscomplete
+ms.keywords : netvista.ndisfsendnetbufferlistscomplete, filter_ndis_functions_ref_376e31a2-453d-490e-83bb-b91b728f701f.xml, ndis/NdisFSendNetBufferListsComplete, NdisFSendNetBufferListsComplete, NdisFSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,8 +96,8 @@ None
 
 A filter driver calls the 
     <b>NdisFSendNetBufferListsComplete</b> function to complete send requests that NDIS made to the driver's 
-    <mshelp:link keywords="netvista.filtersendnetbufferlists" tabindex="0"><i>
-    FilterSendNetBufferLists</i></mshelp:link> function. The filter driver specifies a linked list of 
+    <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">
+    FilterSendNetBufferLists</a> function. The filter driver specifies a linked list of 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that are
     associated with the completed send requests. While the status of the send requests is pending, the filter
     driver retains ownership of the <b>NET_BUFFER_LIST</b> structures and all the resources that are associated with
@@ -117,24 +117,22 @@ The filter driver can complete send requests in any order. For example, the filt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
 <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">FilterSendNetBufferLists</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c23fc5f4-2546-4330-bcdd-8fef59c8219a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksevent_item_irp_storage, KSEVENT_ITEM_IRP_STORAGE macro [Streaming Media Devices], ks/KSEVENT_ITEM_IRP_STORAGE, KSEVENT_ITEM_IRP_STORAGE, ksfunc_dc3f2f9e-fe47-46ac-9f51-9d07b42e5daf.xml
+ms.keywords : ksfunc_dc3f2f9e-fe47-46ac-9f51-9d07b42e5daf.xml, stream.ksevent_item_irp_storage, KSEVENT_ITEM_IRP_STORAGE macro [Streaming Media Devices], KSEVENT_ITEM_IRP_STORAGE, ks/KSEVENT_ITEM_IRP_STORAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ks.h |

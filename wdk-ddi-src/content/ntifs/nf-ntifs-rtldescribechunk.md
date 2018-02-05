@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a59899e7-baa0-476b-b65e-1d464a14b811
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtldescribechunk, RtlDescribeChunk, rtlref_03ffe48d-5d72-4f8b-ac88-e79909151d2f.xml, ntifs/RtlDescribeChunk, RtlDescribeChunk function [Installable File System Drivers]
+ms.keywords : RtlDescribeChunk, ifsk.rtldescribechunk, RtlDescribeChunk function [Installable File System Drivers], ntifs/RtlDescribeChunk, rtlref_03ffe48d-5d72-4f8b-ac88-e79909151d2f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

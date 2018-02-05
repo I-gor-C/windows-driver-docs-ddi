@@ -73,6 +73,4 @@ The AGID is automatically released after the IOCTL_AACS_READ_VOLUME_ID request c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

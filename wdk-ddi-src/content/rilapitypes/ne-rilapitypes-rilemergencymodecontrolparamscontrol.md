@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b169e3a3-141b-4bca-9eaa-ce55f7194e4f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE, RIL_EMC_MAX, RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE, RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE, RILEMERGENCYMODECONTROLPARAMSCONTROL, netvista.rilemergencymodecontrolparamscontrol_2, rilapitypes/RILEMERGENCYMODECONTROLPARAMSCONTROL, rilapitypes/RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE, RILEMERGENCYMODECONTROLPARAMSCONTROL enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_EMC_MAX
+ms.keywords : RILEMERGENCYMODECONTROLPARAMSCONTROL enumeration [Network Drivers Starting with Windows Vista], netvista.rilemergencymodecontrolparamscontrol_2, RIL_EMC_MAX, RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE, RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE, rilapitypes/RIL_EMC_OTHER_MODEM_IN_EMERGECY_MODE, rilapitypes/RIL_EMC_ALL_MODEMS_ARE_IN_NORMAL_MODE, rilapitypes/RIL_EMC_MAX, rilapitypes/RILEMERGENCYMODECONTROLPARAMSCONTROL, RILEMERGENCYMODECONTROLPARAMSCONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILEMERGENCYMODECONTROLPARAMSCONTROL {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

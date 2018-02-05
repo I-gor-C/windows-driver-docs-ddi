@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f5083841-a6d7-4437-9941-bd7dca2f1771
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ataportbuildrequestsenseirb, AtaPortBuildRequestSenseIrb, irb/AtaPortBuildRequestSenseIrb, AtaPortBuildRequestSenseIrb routine [Storage Devices], atartns_82b5c3cd-1956-47a0-9c05-cd18dbb2e2b6.xml
+ms.keywords : AtaPortBuildRequestSenseIrb routine [Storage Devices], AtaPortBuildRequestSenseIrb, irb/AtaPortBuildRequestSenseIrb, atartns_82b5c3cd-1956-47a0-9c05-cd18dbb2e2b6.xml, storage.ataportbuildrequestsenseirb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,9 @@ The miniport driver can have only one outstanding request sense IRB per logical 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8018d52d-4454-4826-933f-a34a70243547
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_GetRNIDMgmtInfo, fibreHBA_rtns_73ba5195-497c-4105-9b4c-eccd637962b9.xml, HBA_GetRNIDMgmtInfo routine [Storage Devices], HBA_GetRNIDMgmtInfo, storage.hba_getrnidmgmtinfo
+ms.keywords : HBA_GetRNIDMgmtInfo, hbaapi/HBA_GetRNIDMgmtInfo, HBA_GetRNIDMgmtInfo routine [Storage Devices], storage.hba_getrnidmgmtinfo, fibreHBA_rtns_73ba5195-497c-4105-9b4c-eccd637962b9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,22 +98,18 @@ Returned if an unspecified error occurred that prevented the retrieval of the ma
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 
-<a href="..\hbaapi\ns-hbaapi-hba_mgmtinfo.md">HBA_MgmtInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="..\hbaapi\ns-hbaapi-hba_mgmtinfo.md">HBA_MgmtInfo</a>
 
  
 

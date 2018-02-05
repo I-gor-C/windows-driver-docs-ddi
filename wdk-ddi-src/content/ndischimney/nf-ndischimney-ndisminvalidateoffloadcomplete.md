@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fd14e983-ea4b-41f2-973d-88b114306e75
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisminvalidateoffloadcomplete, NdisMInvalidateOffloadComplete function [Network Drivers Starting with Windows Vista], NdisMInvalidateOffloadComplete, ndischimney/NdisMInvalidateOffloadComplete, tcp_chim_ndis_func_14e16158-2af9-4901-a986-0bfa329d9ac5.xml
+ms.keywords : ndischimney/NdisMInvalidateOffloadComplete, tcp_chim_ndis_func_14e16158-2af9-4901-a986-0bfa329d9ac5.xml, NdisMInvalidateOffloadComplete function [Network Drivers Starting with Windows Vista], netvista.ndisminvalidateoffloadcomplete, NdisMInvalidateOffloadComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -45,8 +45,8 @@ req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 An offload target calls the 
   <b>NdisMInvalidateOffloadComplete</b> function to complete an invalidate offload operation that was
   initiated by a previous call to the 
-  <mshelp:link keywords="netvista.miniportinvalidateoffload" tabindex="0"><i>
-  MiniportInvalidateOffload</i></mshelp:link> function of the offload target.
+  <a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">
+  MiniportInvalidateOffload</a> function of the offload target.
 
 ## Syntax
 
@@ -62,17 +62,17 @@ VOID NdisMInvalidateOffloadComplete(
 `NdisMiniportHandle`
 
 The handle that the offload target obtained in a previous call to the 
-     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-     NdisMRegisterMiniportDriver</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a> function.
 
 `OffloadBlockList`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure. The ofload target obtained this pointer as an input
+     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The ofload target obtained this pointer as an input
      parameter to its 
-     <mshelp:link keywords="netvista.miniportinvalidateoffload" tabindex="0"><i>
-     MiniportInvalidateOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">
+     MiniportInvalidateOffload</a> function.
 
 
 ## Return Value
@@ -106,23 +106,19 @@ The invalidate operation did not succeed. In this case, the offload target has s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
-<mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link>
-
 <a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">MiniportInvalidateOffload</a>
+
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 
  
 

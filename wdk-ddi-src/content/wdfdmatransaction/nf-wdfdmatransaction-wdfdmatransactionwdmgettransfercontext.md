@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : EB156381-FC0E-40A3-A4AF-341AE70B97FF
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmatransactionwdmgettransfercontext, wdfdmatransaction/WdfDmaTransactionWdmGetTransferContext, kmdf.wdfdmatransactionwdmgettransfercontext, WdfDmaTransactionWdmGetTransferContext method, PFN_WDFDMATRANSACTIONWDMGETTRANSFERCONTEXT, WdfDmaTransactionWdmGetTransferContext
+ms.keywords : WdfDmaTransactionWdmGetTransferContext method, wdfdmatransaction/WdfDmaTransactionWdmGetTransferContext, kmdf.wdfdmatransactionwdmgettransfercontext, PFN_WDFDMATRANSACTIONWDMGETTRANSFERCONTEXT, wdf.wdfdmatransactionwdmgettransfercontext, WdfDmaTransactionWdmGetTransferContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,12 +93,11 @@ Your driver can use the DMA transfer context to call the following WDM DMA libra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 64b55b53-677a-4977-b865-0a07d34d2530
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdaref_919b0c2d-5bb9-4e17-8028-79f669ab7b8c.xml, bdasup/BdaPropertyTemplateConnections, BdaPropertyTemplateConnections function [Streaming Media Devices], stream.bdapropertytemplateconnections, BdaPropertyTemplateConnections
+ms.keywords : bdaref_919b0c2d-5bb9-4e17-8028-79f669ab7b8c.xml, stream.bdapropertytemplateconnections, BdaPropertyTemplateConnections, BdaPropertyTemplateConnections function [Streaming Media Devices], bdasup/BdaPropertyTemplateConnections
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,28 +80,25 @@ The BDA minidriver provided a list of connections to the BDA support library in 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
-<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564386">KSPROPERTY_BDA_TEMPLATE_CONNECTIONS</a>
+<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
 <a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 
-<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564386">KSPROPERTY_BDA_TEMPLATE_CONNECTIONS</a>
+
+<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
 
 <a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>
 

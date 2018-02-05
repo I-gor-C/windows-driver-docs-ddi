@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice, PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercoredevice
+ms.keywords : PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercoredevice, pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
+req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 
@@ -110,20 +110,17 @@ The <b>PoFxRegisterCoreDevice</b> routine should be called at IRQL = PASSIVE_LEV
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Target Platform** | Windows |
 | **Header** | pepfx.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

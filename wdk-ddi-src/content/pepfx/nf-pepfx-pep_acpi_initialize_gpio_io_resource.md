@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D32E24E4-FAF4-401B-85FB-4D522C52093E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE, PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE function [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE, kernel.pep_acpi_initialize_gpio_io_resource
+ms.keywords : pepfx/PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE, PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_gpio_io_resource, PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
+req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 
@@ -131,20 +131,16 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Target Platform** | Windows |
 | **Header** | pepfx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_acpi_gpio_resource.md">PEP_ACPI_GPIO_RESOURCE</a>
+
+<a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a>
 
  
 

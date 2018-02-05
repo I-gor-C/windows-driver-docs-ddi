@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 19e40a1b-fcbf-4510-a7c0-aa9a61f2f651
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PHBA_FCPSCSIENTRY, storage.hba_fcpscsientry, PHBA_FCPSCSIENTRY structure pointer [Storage Devices], HBA_FcpScsiEntry, hbaapi/PHBA_FCPSCSIENTRY, HBA_FCPSCSIENTRY structure [Storage Devices], HBA_FCPSCSIENTRY, HBA_FcpScsiEntry structure [Storage Devices], hbaapi/HBA_FcpScsiEntry, *PHBA_FCPSCSIENTRY, structs-Fibre_32b32b55-43e6-484c-a7fb-5c477864b735.xml
+ms.keywords : HBA_FCPSCSIENTRY, PHBA_FCPSCSIENTRY, hbaapi/PHBA_FCPSCSIENTRY, storage.hba_fcpscsientry, structs-Fibre_32b32b55-43e6-484c-a7fb-5c477864b735.xml, PHBA_FCPSCSIENTRY structure pointer [Storage Devices], HBA_FcpScsiEntry structure [Storage Devices], HBA_FcpScsiEntry, HBA_FCPSCSIENTRY structure [Storage Devices], hbaapi/HBA_FcpScsiEntry, *PHBA_FCPSCSIENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HBA_FCPSCSIENTRY, *PHBA_FCPSCSIENTRY
+req.typenames : "*PHBA_FCPSCSIENTRY, HBA_FCPSCSIENTRY"
 ---
 
 # HBA_FcpScsiEntry structure
@@ -64,9 +64,6 @@ Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_scsiid.md">HBA_Scs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also

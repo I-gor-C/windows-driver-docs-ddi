@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : cda3bfc6-7bdb-4b5a-8845-9a2ca1cc8014
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bthddi/CHANNEL_CONFIG_RESULTS, CHANNEL_CONFIG_RESULTS structure [Bluetooth Devices], CHANNEL_CONFIG_RESULTS, PCHANNEL_CONFIG_RESULTS, bth_structs_9c4ea05f-7bee-473c-a311-e68f49c3013a.xml, _CHANNEL_CONFIG_RESULTS, PCHANNEL_CONFIG_RESULTS structure pointer [Bluetooth Devices], bthddi/PCHANNEL_CONFIG_RESULTS, bltooth.channel_config_results, *PCHANNEL_CONFIG_RESULTS
+ms.keywords : PCHANNEL_CONFIG_RESULTS, bltooth.channel_config_results, bthddi/PCHANNEL_CONFIG_RESULTS, bth_structs_9c4ea05f-7bee-473c-a311-e68f49c3013a.xml, bthddi/CHANNEL_CONFIG_RESULTS, PCHANNEL_CONFIG_RESULTS structure pointer [Bluetooth Devices], _CHANNEL_CONFIG_RESULTS, *PCHANNEL_CONFIG_RESULTS, CHANNEL_CONFIG_RESULTS, CHANNEL_CONFIG_RESULTS structure [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCHANNEL_CONFIG_RESULTS, CHANNEL_CONFIG_RESULTS"
+req.typenames : CHANNEL_CONFIG_RESULTS, *PCHANNEL_CONFIG_RESULTS
 ---
 
 # _CHANNEL_CONFIG_RESULTS structure
@@ -61,8 +61,8 @@ The size, in bytes, required in the buffer to retrieve the current extra options
 `Params`
 
 A 
-     <mshelp:link keywords="bltooth.channel_config_parameters" tabindex="0"><b>
-     CHANNEL_CONFIG_PARAMETERS</b></mshelp:link> structure that contains the parameters for the specified direction of
+     <a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">
+     CHANNEL_CONFIG_PARAMETERS</a> structure that contains the parameters for the specified direction of
      the channel.
 
 ## Remarks
@@ -74,16 +74,14 @@ The CHANNEL_CONFIG_RESULTS structure is passed in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
-
 <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
+
+<a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
 
  
 

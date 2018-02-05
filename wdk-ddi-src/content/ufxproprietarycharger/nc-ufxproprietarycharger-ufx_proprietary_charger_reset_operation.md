@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_ENDPOINT_CALLBACKS, *PUFX_ENDPOINT_CALLBACKS
+req.typenames : "*PUFX_ENDPOINT_CALLBACKS, UFX_ENDPOINT_CALLBACKS"
 req.product : Windows 10 or later.
 ---
 
@@ -72,14 +72,11 @@ To support handling of proprietary chargers, the USB lower filter driver must pu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ufxproprietarycharger.h |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

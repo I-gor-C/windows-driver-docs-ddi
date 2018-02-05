@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 892fe11a-4dfd-43cb-8f9a-b148d81a087f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2drawrectpatch, d3dhal/LPD3DHAL_DP2DRAWRECTPATCH, D3DHAL_DP2DRAWRECTPATCH structure [Display Devices], _D3DHAL_DP2DRAWRECTPATCH, *LPD3DHAL_DP2DRAWRECTPATCH, LPD3DHAL_DP2DRAWRECTPATCH structure pointer [Display Devices], D3DHAL_DP2DRAWRECTPATCH, LPD3DHAL_DP2DRAWRECTPATCH, d3dhal/D3DHAL_DP2DRAWRECTPATCH, d3dstrct_beda6033-07b1-4985-8eac-6bb49bcce07e.xml
+ms.keywords : d3dhal/LPD3DHAL_DP2DRAWRECTPATCH, _D3DHAL_DP2DRAWRECTPATCH, display.d3dhal_dp2drawrectpatch, D3DHAL_DP2DRAWRECTPATCH structure [Display Devices], d3dhal/D3DHAL_DP2DRAWRECTPATCH, LPD3DHAL_DP2DRAWRECTPATCH structure pointer [Display Devices], LPD3DHAL_DP2DRAWRECTPATCH, *LPD3DHAL_DP2DRAWRECTPATCH, d3dstrct_beda6033-07b1-4985-8eac-6bb49bcce07e.xml, D3DHAL_DP2DRAWRECTPATCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,22 +85,19 @@ The driver receives notification that cached patch information is be released vi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2drawtripatch.md">D3DHAL_DP2DRAWTRIPATCH</a>
-
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2drawtripatch.md">D3DHAL_DP2DRAWTRIPATCH</a>
 
 D3DDP2OP_DRAWRECTPATCH
 
 D3DRS_DELETERTPATCH
-
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

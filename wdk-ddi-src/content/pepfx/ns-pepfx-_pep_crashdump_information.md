@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B1F680CB-8F82-4B31-A62E-23804FEB0107
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_CRASHDUMP_INFORMATION structure [Kernel-Mode Driver Architecture], _PEP_CRASHDUMP_INFORMATION, PPEP_CRASHDUMP_INFORMATION, PPEP_CRASHDUMP_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PPEP_CRASHDUMP_INFORMATION, kernel.pep_crashdump_information, PEP_CRASHDUMP_INFORMATION, pepfx/PEP_CRASHDUMP_INFORMATION, pepfx/PPEP_CRASHDUMP_INFORMATION
+ms.keywords : pepfx/PEP_CRASHDUMP_INFORMATION, pepfx/PPEP_CRASHDUMP_INFORMATION, PPEP_CRASHDUMP_INFORMATION, kernel.pep_crashdump_information, PEP_CRASHDUMP_INFORMATION structure [Kernel-Mode Driver Architecture], *PPEP_CRASHDUMP_INFORMATION, PPEP_CRASHDUMP_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _PEP_CRASHDUMP_INFORMATION, PEP_CRASHDUMP_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_CRASHDUMP_INFORMATION, *PPEP_CRASHDUMP_INFORMATION
+req.typenames : "*PPEP_CRASHDUMP_INFORMATION, PEP_CRASHDUMP_INFORMATION"
 ---
 
 # _PEP_CRASHDUMP_INFORMATION structure
@@ -68,18 +68,16 @@ When a fatal system error occurs, the devices in the crash-dump device chain (st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186875">PowerOnDumpDeviceCallback</a>
 
-<a href="..\wdm\nf-wdm-pofxpoweroncrashdumpdevice.md">PoFxPowerOnCrashdumpDevice</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
+<a href="..\wdm\nf-wdm-pofxpoweroncrashdumpdevice.md">PoFxPowerOnCrashdumpDevice</a>
 
  
 

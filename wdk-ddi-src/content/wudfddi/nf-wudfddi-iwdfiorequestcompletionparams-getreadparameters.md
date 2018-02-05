@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8f38616e-498b-485e-84c8-de62477b5871
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequestCompletionParams interface, GetReadParameters method, IWDFIoRequestCompletionParams, GetReadParameters method, IWDFIoRequestCompletionParams interface, umdf.iwdfiorequestcompletionparams_getreadparameters, wudfddi/IWDFIoRequestCompletionParams::GetReadParameters, UMDFRequestObjectRef_008ca4d6-ddbe-4288-9b5d-d6ccb35518db.xml, GetReadParameters, GetReadParameters method, IWDFIoRequestCompletionParams::GetReadParameters, wdf.iwdfiorequestcompletionparams_getreadparameters
+ms.keywords : wdf.iwdfiorequestcompletionparams_getreadparameters, IWDFIoRequestCompletionParams, GetReadParameters, wudfddi/IWDFIoRequestCompletionParams::GetReadParameters, umdf.iwdfiorequestcompletionparams_getreadparameters, IWDFIoRequestCompletionParams::GetReadParameters, GetReadParameters method, IWDFIoRequestCompletionParams interface, UMDFRequestObjectRef_008ca4d6-ddbe-4288-9b5d-d6ccb35518db.xml, IWDFIoRequestCompletionParams interface, GetReadParameters method, GetReadParameters method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -84,14 +84,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

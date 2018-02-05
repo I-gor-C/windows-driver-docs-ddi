@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 466af310-f2a7-4bd7-b927-df644e2e9c24
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_d3c15e61-9df6-4b55-a479-375486383064.xml, IWDFDevice::AssignDeviceInterfaceState, IWDFDevice, AssignDeviceInterfaceState, wdf.iwdfdevice_assigndeviceinterfacestate, IWDFDevice interface, AssignDeviceInterfaceState method, AssignDeviceInterfaceState method, IWDFDevice interface, wudfddi/IWDFDevice::AssignDeviceInterfaceState, umdf.iwdfdevice_assigndeviceinterfacestate, AssignDeviceInterfaceState method
+ms.keywords : umdf.iwdfdevice_assigndeviceinterfacestate, wudfddi/IWDFDevice::AssignDeviceInterfaceState, AssignDeviceInterfaceState method, UMDFDeviceObjectRef_d3c15e61-9df6-4b55-a479-375486383064.xml, wdf.iwdfdevice_assigndeviceinterfacestate, AssignDeviceInterfaceState method, IWDFDevice interface, AssignDeviceInterfaceState, IWDFDevice, IWDFDevice interface, AssignDeviceInterfaceState method, IWDFDevice::AssignDeviceInterfaceState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -87,20 +87,18 @@ For more information about device interfaces, see <a href="https://docs.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557016">IWDFDevice::CreateDeviceInterface</a>
 
  
 

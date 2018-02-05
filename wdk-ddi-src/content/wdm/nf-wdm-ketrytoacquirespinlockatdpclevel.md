@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b7791969-027e-4df7-b720-1eb612597c56
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ketrytoacquirespinlockatdpclevel, k105_416ac5db-d064-4ced-8cf8-311aca8dae7f.xml, KeTryToAcquireSpinLockAtDpcLevel, wdm/KeTryToAcquireSpinLockAtDpcLevel, KeTryToAcquireSpinLockAtDpcLevel routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.ketrytoacquirespinlockatdpclevel, k105_416ac5db-d064-4ced-8cf8-311aca8dae7f.xml, KeTryToAcquireSpinLockAtDpcLevel, KeTryToAcquireSpinLockAtDpcLevel routine [Kernel-Mode Driver Architecture], wdm/KeTryToAcquireSpinLockAtDpcLevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,12 +75,11 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | SpinLock, SpinlockRelease, HwStorPortProhibitedDDIs |
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 993013f1-5026-4c30-b4df-958606adc8fa
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_CALLMEDIATYPE_CUSTOM, netvista.rilcallmediatype, ntddrilapitypes/RIL_CALLMEDIATYPE_AUDIO, RIL_CALLMEDIATYPE_MAX, RILCALLMEDIATYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIATYPE_AUDIO, RIL_CALLMEDIATYPE_VIDEO, RIL_CALLMEDIATYPE_CUSTOM, ntddrilapitypes/RIL_CALLMEDIATYPE_VIDEO, ntddrilapitypes/RILCALLMEDIATYPE, ntddrilapitypes/RIL_CALLMEDIATYPE_MAX, RILCALLMEDIATYPE
+ms.keywords : netvista.rilcallmediatype, RIL_CALLMEDIATYPE_VIDEO, ntddrilapitypes/RIL_CALLMEDIATYPE_AUDIO, ntddrilapitypes/RIL_CALLMEDIATYPE_CUSTOM, RIL_CALLMEDIATYPE_MAX, ntddrilapitypes/RIL_CALLMEDIATYPE_VIDEO, RILCALLMEDIATYPE, ntddrilapitypes/RIL_CALLMEDIATYPE_MAX, RILCALLMEDIATYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIATYPE_AUDIO, ntddrilapitypes/RILCALLMEDIATYPE, RIL_CALLMEDIATYPE_CUSTOM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILCALLMEDIATYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

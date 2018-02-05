@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 
@@ -64,11 +64,12 @@ NTSTATUS FwpsVswitchFilterEngineReorderCallback0(
 
 `*notifyContext`
 
-
+A pointer to a context provided by the callout driver. The driver passed this pointer to the <i>notifyContext</i> parameter of the <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
+ function. This parameter is optional and can be NULL.
 
 `*completionContext`
 
-
+A pointer to a completion context provided by the callout driver. This parameter is optional and can be NULL.
 
 `isInRequiredPosition`
 
@@ -76,7 +77,7 @@ A BOOLEAN value that is set to TRUE if the filter is in the required position in
 
 `*vSwitchExtensionLwfList`
 
-
+An <a href="..\ndis\ns-ndis-_ndis_enum_filters.md">NDIS_ENUM_FILTERS</a> structure that specifies a list of the virtual switch extension NDIS filter drivers.
 
 
 ## Return Value
@@ -137,32 +138,28 @@ A callout driver cannot return STATUS_PENDING from <i>vSwitchFilterEngineReorder
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Windows |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">NdisEnumerateFilterModules</a>
+
+<a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a>
+
+<a href="..\ndis\nf-ndis-ndisfrestartcomplete.md">NdisFRestartComplete</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsvswitchnotifycomplete0.md">FwpsvSwitchNotifyComplete0</a>
 
 <a href="..\ndis\nc-ndis-filter_pause.md">FilterPause</a>
 
-<a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">NdisEnumerateFilterModules</a>
-
-<a href="..\ndis\nf-ndis-ndisfrestartcomplete.md">NdisFRestartComplete</a>
-
-<a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a>
+<a href="..\ndis\ns-ndis-_ndis_enum_filters.md">NDIS_ENUM_FILTERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
-
-<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
-
-<a href="..\ndis\ns-ndis-_ndis_enum_filters.md">NDIS_ENUM_FILTERS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 891F04C5-277B-4197-942E-68ED21019950
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY, storage.storage_read_capacity, STORAGE_READ_CAPACITY structure [Storage Devices], STORAGE_READ_CAPACITY, ntddstor/STORAGE_READ_CAPACITY, ntddstor/PSTORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY structure pointer [Storage Devices]"
+ms.keywords : ntddstor/STORAGE_READ_CAPACITY, ntddstor/PSTORAGE_READ_CAPACITY, storage.storage_read_capacity, PSTORAGE_READ_CAPACITY structure pointer [Storage Devices], STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY, STORAGE_READ_CAPACITY structure [Storage Devices], _STORAGE_READ_CAPACITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STORAGE_READ_CAPACITY, PSTORAGE_READ_CAPACITY
+req.typenames : PSTORAGE_READ_CAPACITY, STORAGE_READ_CAPACITY
 ---
 
 # _STORAGE_READ_CAPACITY structure
@@ -79,9 +79,7 @@ The version of this structure. Set to <b>sizeof</b>(STORAGE_READ_CAPACITY).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E5323A30-5BBE-4084-9F99-91FBDD680C12
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS structure [Display Devices], d3dkmddi/DXGK_TRANSFERVIRTUALFLAGS, _DXGK_TRANSFERVIRTUALFLAGS, display.dxgk_transfervirtualflags
+ms.keywords : "_DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS, d3dkmddi/DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS structure [Display Devices], display.dxgk_transfervirtualflags"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,7 +62,5 @@ typedef struct _DXGK_TRANSFERVIRTUALFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

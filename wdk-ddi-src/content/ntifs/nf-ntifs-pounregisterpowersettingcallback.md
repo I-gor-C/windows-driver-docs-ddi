@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 900db70b-4cdb-41e7-a4cf-0dc435b9fe7d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoUnregisterPowerSettingCallback, portn_52c569d1-68d0-48a4-88e7-c2ffb27aa530.xml, kernel.pounregisterpowersettingcallback, wdm/PoUnregisterPowerSettingCallback, PoUnregisterPowerSettingCallback routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.pounregisterpowersettingcallback, wdm/PoUnregisterPowerSettingCallback, portn_52c569d1-68d0-48a4-88e7-c2ffb27aa530.xml, PoUnregisterPowerSettingCallback, PoUnregisterPowerSettingCallback routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -40,7 +40,7 @@ req.typenames : TOKEN_TYPE
 
 
 # PoUnregisterPowerSettingCallback function
-The <b>PoUnregisterPowerSettingCallback</b> routine unregisters a power-setting callback routine that a driver previously registered by calling the <a href="..\ntifs\nf-ntifs-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a> routine.
+The <b>PoUnregisterPowerSettingCallback</b> routine unregisters a power-setting callback routine that a driver previously registered by calling the <a href="..\wdm\nf-wdm-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a> routine.
 
 ## Syntax
 
@@ -98,18 +98,16 @@ A driver must call <b>PoUnregisterPowerSettingCallback</b> to unregister each ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a>
+<a href="..\wdm\nf-wdm-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 07caa8b0-849c-4ad9-9adb-b1726edc9234
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : STI_DIAG, sti/LPSTI_DIAG, LPSTI_DIAG structure pointer [Imaging Devices], _STI_DIAG, sti/STI_DIAG, LPSTI_DIAG, stifnc_793c0930-51bf-46b5-89c9-9ddaf91a1fee.xml, DIAG, STI_DIAG structure [Imaging Devices], *LPSTI_DIAG, image.sti_diag
+ms.keywords : STI_DIAG, DIAG, image.sti_diag, *LPSTI_DIAG, sti/LPSTI_DIAG, sti/STI_DIAG, _STI_DIAG, LPSTI_DIAG, STI_DIAG structure [Imaging Devices], LPSTI_DIAG structure pointer [Imaging Devices], stifnc_793c0930-51bf-46b5-89c9-9ddaf91a1fee.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,7 +80,4 @@ Structure of type <a href="..\sti\ns-sti-_error_infow.md">STI_ERROR_INFO</a>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sti.h (include Sti.h) |

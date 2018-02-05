@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2a956b25-1cf5-4a51-bc60-c4a7a7f70e2c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilmessageinuicc_2, *LPRILMESSAGEINUICC, rilapitypes/RILMESSAGEINUICC, RILMESSAGEINUICC structure [Network Drivers Starting with Windows Vista], RILMESSAGEINUICC
+ms.keywords : RILMESSAGEINUICC, rilapitypes/RILMESSAGEINUICC, netvista.rilmessageinuicc_2, RILMESSAGEINUICC structure [Network Drivers Starting with Windows Vista], *LPRILMESSAGEINUICC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILMESSAGEINUICC, *LPRILMESSAGEINUICC
+req.typenames : "*LPRILMESSAGEINUICC, RILMESSAGEINUICC"
 req.product : Windows 10 or later.
 ---
 
@@ -75,7 +75,4 @@ typedef struct _RILMESSAGEINUICC {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

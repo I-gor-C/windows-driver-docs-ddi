@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D605A20B-3747-458E-BA9D-F723F884F130
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._endpoints_configure_failure_flags, ENDPOINTS_CONFIGURE_FAILURE_FLAGS structure [Buses], _ENDPOINTS_CONFIGURE_FAILURE_FLAGS, ucxendpoint/_ENDPOINTS_CONFIGURE_FAILURE_FLAGS, P_ENDPOINTS_CONFIGURE_FAILURE_FLAGS structure pointer [Buses], ENDPOINTS_CONFIGURE_FAILURE_FLAGS, ucxendpoint/P_ENDPOINTS_CONFIGURE_FAILURE_FLAGS, P_ENDPOINTS_CONFIGURE_FAILURE_FLAGS
+ms.keywords : P_ENDPOINTS_CONFIGURE_FAILURE_FLAGS structure pointer [Buses], P_ENDPOINTS_CONFIGURE_FAILURE_FLAGS, ENDPOINTS_CONFIGURE_FAILURE_FLAGS, buses._endpoints_configure_failure_flags, _ENDPOINTS_CONFIGURE_FAILURE_FLAGS, ENDPOINTS_CONFIGURE_FAILURE_FLAGS structure [Buses], ucxendpoint/_ENDPOINTS_CONFIGURE_FAILURE_FLAGS, ucxendpoint/P_ENDPOINTS_CONFIGURE_FAILURE_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,9 +75,6 @@ Do not use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
 ## See Also

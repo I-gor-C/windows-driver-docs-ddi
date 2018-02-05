@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1be057dc-6a97-4798-a152-7cc6d6febda5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_allocationlist, DmStructs_ed92f9cf-ad3f-4566-89ff-31d6b162f755.xml, DXGK_ALLOCATIONLIST structure [Display Devices], d3dkmddi/DXGK_ALLOCATIONLIST, _DXGK_ALLOCATIONLIST, DXGK_ALLOCATIONLIST
+ms.keywords : d3dkmddi/DXGK_ALLOCATIONLIST, DXGK_ALLOCATIONLIST structure [Display Devices], DXGK_ALLOCATIONLIST, _DXGK_ALLOCATIONLIST, DmStructs_ed92f9cf-ad3f-4566-89ff-31d6b162f755.xml, display.dxgk_allocationlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,12 +82,14 @@ In the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 
@@ -96,10 +98,6 @@ In the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
  
 

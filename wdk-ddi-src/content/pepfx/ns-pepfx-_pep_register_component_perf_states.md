@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 063ADC0A-3455-4966-A11C-BDD5BA08A685
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pep_register_component_perf_states, *PPEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PEP_REGISTER_COMPONENT_PERF_STATES, PEP_REGISTER_COMPONENT_PERF_STATES, _PEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PPEP_REGISTER_COMPONENT_PERF_STATES, PPEP_REGISTER_COMPONENT_PERF_STATES structure pointer [Kernel-Mode Driver Architecture], PEP_REGISTER_COMPONENT_PERF_STATES structure [Kernel-Mode Driver Architecture], PPEP_REGISTER_COMPONENT_PERF_STATES
+ms.keywords : PPEP_REGISTER_COMPONENT_PERF_STATES structure pointer [Kernel-Mode Driver Architecture], _PEP_REGISTER_COMPONENT_PERF_STATES, *PPEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PEP_REGISTER_COMPONENT_PERF_STATES, kernel.pep_register_component_perf_states, PEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PPEP_REGISTER_COMPONENT_PERF_STATES, PPEP_REGISTER_COMPONENT_PERF_STATES, PEP_REGISTER_COMPONENT_PERF_STATES structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,20 +78,18 @@ If the <b>PerfStateInfo</b> member is not NULL, the device driver has provided P
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
-
-<a href="..\pepfx\ns-pepfx-_pep_component_perf_info.md">PEP_COMPONENT_PERF_INFO</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186848">PEP_DPM_REGISTER_COMPONENT_PERF_STATES</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_component_perf_info.md">PEP_COMPONENT_PERF_INFO</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
 
  
 

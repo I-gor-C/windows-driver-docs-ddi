@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 08DC764B-4410-4D7C-B199-29E38BA09CA6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/IPrintSchemaAsyncOperation::Cancel, Cancel method [Print Devices], Cancel, IPrintSchemaAsyncOperation, print.iprintschemaasyncoperation_cancel, IPrintSchemaAsyncOperation interface [Print Devices], Cancel method, IPrintSchemaAsyncOperation::Cancel, Cancel method [Print Devices], IPrintSchemaAsyncOperation interface
+ms.keywords : print.iprintschemaasyncoperation_cancel, IPrintSchemaAsyncOperation::Cancel, Cancel method [Print Devices], IPrintSchemaAsyncOperation interface, Cancel, printerextension/IPrintSchemaAsyncOperation::Cancel, IPrintSchemaAsyncOperation, IPrintSchemaAsyncOperation interface [Print Devices], Cancel method, Cancel method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -63,14 +63,10 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

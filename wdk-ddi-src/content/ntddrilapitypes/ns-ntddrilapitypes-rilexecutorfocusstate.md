@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 74fc88c0-3edf-4831-a03b-4ace6ca2ec04
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilexecutorfocusstate, RILEXECUTORFOCUSSTATE structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILEXECUTORFOCUSSTATE, *LPRILEXECUTORFOCUSSTATE, RILEXECUTORFOCUSSTATE
+ms.keywords : RILEXECUTORFOCUSSTATE, ntddrilapitypes/RILEXECUTORFOCUSSTATE, *LPRILEXECUTORFOCUSSTATE, RILEXECUTORFOCUSSTATE structure [Network Drivers Starting with Windows Vista], netvista.rilexecutorfocusstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILEXECUTORFOCUSSTATE, *LPRILEXECUTORFOCUSSTATE
+req.typenames : "*LPRILEXECUTORFOCUSSTATE, RILEXECUTORFOCUSSTATE"
 ---
 
 # RILEXECUTORFOCUSSTATE structure
@@ -74,7 +74,4 @@ typedef struct _RILEXECUTORFOCUSSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

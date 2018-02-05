@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 27fb223f-9e6b-42af-b3d8-1018dc5416c2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsGetDevice, KsGetDevice function [Streaming Media Devices], avfunc_8459c499-365e-4cd4-927c-b359792937b0.xml, stream.ksgetdevice, KsGetDevice
+ms.keywords : KsGetDevice, ks/KsGetDevice, stream.ksgetdevice, KsGetDevice function [Streaming Media Devices], avfunc_8459c499-365e-4cd4-927c-b359792937b0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,30 +70,27 @@ Minidrivers typically do not call this function directly. There are a number of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfiltergetdevice.md">KsFilterGetDevice</a>
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
 
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
+<a href="..\ks\nf-ks-ksfiltergetdevice.md">KsFilterGetDevice</a>
+
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+
+<a href="..\ks\nf-ks-ksfilterfactorygetdevice.md">KsFilterFactoryGetDevice</a>
 
 <a href="..\ks\nf-ks-kspingetdevice.md">KsPinGetDevice</a>
 
 <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-
-<a href="..\ks\nf-ks-ksfilterfactorygetdevice.md">KsFilterFactoryGetDevice</a>
-
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 828a5197-eb2d-46d1-9853-0f8b4f288820
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.iocheckfunctionaccess, IoCheckFunctionAccess, IoCheckFunctionAccess function [Installable File System Drivers], ioref_e6c92504-238b-4163-8078-35aee716744e.xml, ntifs/IoCheckFunctionAccess
+ms.keywords : IoCheckFunctionAccess function [Installable File System Drivers], IoCheckFunctionAccess, ntifs/IoCheckFunctionAccess, ioref_e6c92504-238b-4163-8078-35aee716744e.xml, ifsk.iocheckfunctionaccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,11 +85,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

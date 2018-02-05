@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6c4c07ff-5e37-4094-9dc3-57082dec8edf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEKEYEDMUTEX2, _D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2 structure [Display Devices], display.d3dkmt_createkeyedmutex2, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2
+ms.keywords : "_D3DKMT_CREATEKEYEDMUTEX2, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2 structure [Display Devices], D3DKMT_CREATEKEYEDMUTEX2, display.d3dkmt_createkeyedmutex2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,7 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

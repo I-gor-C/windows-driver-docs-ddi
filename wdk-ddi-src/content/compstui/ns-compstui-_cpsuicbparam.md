@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : b5545efa-6cb4-41d0-9338-be9a269fa193
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CPSUICBPARAM, print.cpsuicbparam, *PCPSUICBPARAM, _CPSUICBPARAM, PCPSUICBPARAM, cpsuifnc_9e2d49ae-ecb6-4979-aacd-7dd954034e92.xml, compstui/CPSUICBPARAM, compstui/PCPSUICBPARAM, PCPSUICBPARAM structure pointer [Print Devices], CPSUICBPARAM structure [Print Devices]
+ms.keywords : "*PCPSUICBPARAM, print.cpsuicbparam, CPSUICBPARAM structure [Print Devices], cpsuifnc_9e2d49ae-ecb6-4979-aacd-7dd954034e92.xml, compstui/PCPSUICBPARAM, PCPSUICBPARAM, compstui/CPSUICBPARAM, CPSUICBPARAM, _CPSUICBPARAM, PCPSUICBPARAM structure pointer [Print Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -190,7 +190,4 @@ CPSUI-supplied user data. This is the same value that the application previously
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

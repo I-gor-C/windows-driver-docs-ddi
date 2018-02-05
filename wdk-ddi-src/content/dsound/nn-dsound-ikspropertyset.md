@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRMRIGHTS, *PDRMRIGHTS
+req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 # IKsPropertySet interface
@@ -64,8 +64,5 @@ KS objects include, for example, KS filters, KS pins, and KS clocks.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dsound.h |
-| **DLL** |  |

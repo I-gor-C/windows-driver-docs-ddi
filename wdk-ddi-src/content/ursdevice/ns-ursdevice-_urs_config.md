@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3857CA53-6992-410A-96D1-EEA9CC586EDF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PURS_CONFIG, URS_CONFIG structure [Buses], ursdevice/PURS_CONFIG, _URS_CONFIG, PURS_CONFIG structure pointer [Buses], PURS_CONFIG, ursdevice/URS_CONFIG, URS_CONFIG, buses.urs_config"
+ms.keywords : PURS_CONFIG structure pointer [Buses], PURS_CONFIG, *PURS_CONFIG, URS_CONFIG structure [Buses], buses.urs_config, _URS_CONFIG, ursdevice/URS_CONFIG, URS_CONFIG, ursdevice/PURS_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,16 +75,14 @@ The size of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
 
 ## See Also
 
-<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
-
 <a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
+
+<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
 
  
 

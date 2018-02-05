@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : a9308d66-c8b0-4e0e-8203-e2b3f91b7e27
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauDbgInit, wiautil/wiauDbgInit, wiauDbgInit function [Imaging Devices], image.wiaudbginit, wiauFncs_0f18edab-cbf7-4012-85ea-93f101343ecb.xml
+ms.keywords : wiautil/wiauDbgInit, wiauDbgInit, wiauFncs_0f18edab-cbf7-4012-85ea-93f101343ecb.xml, wiauDbgInit function [Imaging Devices], image.wiaudbginit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,7 @@ If the <b>wiauDbgInit</b> function not called, all DLLs loaded by a process inhe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

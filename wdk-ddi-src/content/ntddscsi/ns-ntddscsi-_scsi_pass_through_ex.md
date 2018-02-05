@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3D00B42C-7320-4044-BA7D-71A9BD05B30E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_SCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX structure [Storage Devices], ntddscsi/PSCSI_PASS_THROUGH_EX, ntddscsi/SCSI_PASS_THROUGH_EX, PSCSI_PASS_THROUGH_EX, PSCSI_PASS_THROUGH_EX structure pointer [Storage Devices], storage.scsi_pass_through_ex, *PSCSI_PASS_THROUGH_EX"
+ms.keywords : PSCSI_PASS_THROUGH_EX structure pointer [Storage Devices], ntddscsi/SCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX structure [Storage Devices], _SCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX, *PSCSI_PASS_THROUGH_EX, storage.scsi_pass_through_ex, ntddscsi/PSCSI_PASS_THROUGH_EX, PSCSI_PASS_THROUGH_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,11 +77,11 @@ Indicates the size in bytes of the SCSI command descriptor block in <b>Cdb</b>.
 
 `DataDirection`
 
+#### 
+
+
+
 ####  This field must have one of these values:
-
-
-
-####
 
 `DataInBufferOffset`
 
@@ -142,18 +142,16 @@ The <b>SCSI_PASS_THROUGH_EX</b> structure is used with the  <a href="..\ntddscsi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also
 
-<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through.md">SCSI_PASS_THROUGH</a>
-
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
+
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through.md">SCSI_PASS_THROUGH</a>
 
  
 

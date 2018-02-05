@@ -67,8 +67,7 @@ The <b>IWDFUsbInterface</b> interface exposes a USB interface that a USB device 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h |
-| **DLL** | WUDFx.dll |

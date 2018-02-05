@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : E6A61B8F-CB43-4858-B5CF-32DD022A569E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : OPLOCK_KEY_FLAG_TARGET_KEY, ifsk.oplock_key_context, OPLOCK_KEY_CONTEXT, _OPLOCK_KEY_CONTEXT, OPLOCK_KEY_CONTEXT structure [Installable File System Drivers], OPLOCK_KEY_VERSION_WIN8, ntddk/OPLOCK_KEY_CONTEXT, ntddk/POPLOCK_KEY_CONTEXT, OPLOCK_KEY_FLAG_PARENT_KEY, OPLOCK_KEY_VERSION_WIN7, POPLOCK_KEY_CONTEXT, *POPLOCK_KEY_CONTEXT, POPLOCK_KEY_CONTEXT structure pointer [Installable File System Drivers]
+ms.keywords : OPLOCK_KEY_CONTEXT structure [Installable File System Drivers], _OPLOCK_KEY_CONTEXT, OPLOCK_KEY_FLAG_TARGET_KEY, *POPLOCK_KEY_CONTEXT, ntddk/POPLOCK_KEY_CONTEXT, POPLOCK_KEY_CONTEXT, POPLOCK_KEY_CONTEXT structure pointer [Installable File System Drivers], OPLOCK_KEY_VERSION_WIN7, OPLOCK_KEY_FLAG_PARENT_KEY, ntddk/OPLOCK_KEY_CONTEXT, OPLOCK_KEY_VERSION_WIN8, OPLOCK_KEY_CONTEXT, ifsk.oplock_key_context
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -132,18 +132,16 @@ If an oplock is requested for a file during an <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available starting in Windows 8. This structure is available starting in Windows 8. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/5cbbfecc-2182-40f6-9f54-a8146c1f663f">Oplock Semantics</a>
+<a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
 
-<a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>
+<a href="https://msdn.microsoft.com/5cbbfecc-2182-40f6-9f54-a8146c1f663f">Oplock Semantics</a>
 
  
 

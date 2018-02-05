@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -109,7 +109,12 @@ A pointer to a
 
 `*AcceptSocketContext`
 
-
+A pointer to a variable that receives a pointer to a WSK application-supplied context for the
+     socket that is being accepted. The WSK subsystem passes this pointer to the accepted socket's event
+     callback functions. The context information is opaque to the WSK subsystem and must be stored in
+     non-paged memory. If the WSK application will not be enabling any event callback functions on the
+     accepted socket, the application should set the variable that is pointed to by the 
+     <i>AcceptSocketContext</i> parameter to <b>NULL</b>.
 
 `**AcceptSocketDispatch`
 
@@ -157,8 +162,8 @@ The WSK subsystem calls a WSK application's
     socket only if the event callback function was previously enabled with the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570834">SO_WSK_EVENT_CALLBACK</a> socket option.
     For more information about enabling a socket's event callback functions, see 
-    <mshelp:link keywords="netvista.enabling_and_disabling_event_callback_functions" tabindex="0">Enabling and
-    Disabling Event Callback Functions</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
+    Disabling Event Callback Functions</a>.
 
 If a WSK application's 
     <i>WskAcceptEvent</i> event callback function is enabled on a listening socket and the application has a
@@ -184,8 +189,8 @@ When the WSK subsystem calls a WSK application's
     callback functions on a listening socket, those event callback functions will be enabled by default on
     all connection-oriented sockets that are accepted on that listening socket. For more information about
     enabling any of the accepted socket's event callback functions, see 
-    <mshelp:link keywords="netvista.enabling_and_disabling_event_callback_functions" tabindex="0">Enabling and
-    Disabling Event Callback Functions</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
+    Disabling Event Callback Functions</a>.
 
 The 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structures that are pointed to by the 
@@ -211,37 +216,33 @@ A WSK application's <i>WskAcceptEvent</i> event callback function must not wait 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Windows |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wsk\nc-wsk-pfn_wsk_get_local_address.md">WskGetLocalAddress</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
-
-<mshelp:link keywords="netvista.wsk_client_connection_dispatch" tabindex="0"><b>
-   WSK_CLIENT_CONNECTION_DISPATCH</b></mshelp:link>
 
 <a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_get_remote_address.md">WskGetRemoteAddress</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
+   WSK_CLIENT_CONNECTION_DISPATCH</a>
 
  
 

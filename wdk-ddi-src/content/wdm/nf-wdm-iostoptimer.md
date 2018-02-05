@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4b903046-8f96-4299-94e7-85900be1bbd4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_dfedf779-1137-44c1-ab06-223c3ce6e9c6.xml, IoStopTimer routine [Kernel-Mode Driver Architecture], wdm/IoStopTimer, IoStopTimer, kernel.iostoptimer
+ms.keywords : IoStopTimer, k104_dfedf779-1137-44c1-ab06-223c3ce6e9c6.xml, wdm/IoStopTimer, IoStopTimer routine [Kernel-Mode Driver Architecture], kernel.iostoptimer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,20 +71,18 @@ Do not call <b>IoStopTimer</b> from within the <i>IoTimer</i> routine.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Windows |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-iostarttimer.md">IoStartTimer</a>
-
 <a href="..\wdm\nf-wdm-ioinitializetimer.md">IoInitializeTimer</a>
+
+<a href="..\wdm\nf-wdm-iostarttimer.md">IoStartTimer</a>
 
  
 

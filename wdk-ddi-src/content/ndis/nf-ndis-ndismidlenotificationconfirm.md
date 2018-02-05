@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 726B392E-3C7F-4F55-B045-CE022C242F0A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMIdleNotificationConfirm, NdisMIdleNotificationConfirm function [Network Drivers Starting with Windows Vista], netvista.ndismidlenotificationconfirm, NdisMIdleNotificationConfirm
+ms.keywords : NdisMIdleNotificationConfirm function [Network Drivers Starting with Windows Vista], netvista.ndismidlenotificationconfirm, ndis/NdisMIdleNotificationConfirm, NdisMIdleNotificationConfirm
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,20 +83,17 @@ For example, when NDIS calls the <a href="..\ndis\nc-ndis-miniport_idle_notifica
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_idle_notification.md">MiniportIdleNotification</a>
-
 <a href="..\ndis\nf-ndis-ndismidlenotificationcomplete.md">NdisMIdleNotificationComplete</a>
+
+<a href="..\ndis\nc-ndis-miniport_idle_notification.md">MiniportIdleNotification</a>
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_submit_idle_notification.md">IOCTL_INTERNAL_USB_SUBMIT_IDLE_NOTIFICATION</a>
 

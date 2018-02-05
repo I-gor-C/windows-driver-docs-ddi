@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe135118-1992-43c7-8492-81f9febd79b9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoWMIRegistrationControl, kernel.iowmiregistrationcontrol, IoWMIRegistrationControl routine [Kernel-Mode Driver Architecture], IoWMIRegistrationControl, k104_69efd10b-fb1a-4d66-939d-6ade4185605d.xml
+ms.keywords : k104_69efd10b-fb1a-4d66-939d-6ade4185605d.xml, IoWMIRegistrationControl, IoWMIRegistrationControl routine [Kernel-Mode Driver Architecture], wdm/IoWMIRegistrationControl, kernel.iowmiregistrationcontrol
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -163,24 +163,23 @@ If a device is removed suddenly (for example, in a surprise removal), causing th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive5, LowerDriverReturn, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
 
  
 

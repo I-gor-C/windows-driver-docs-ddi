@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 93705446-8B87-46DD-9CFE-DD0473DEE6B6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtwaitforsynchronizationobjectfromgpu, D3DKMTWaitForSynchronizationObjectFromGpu function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObjectFromGpu, D3DKMTWaitForSynchronizationObjectFromGpu
+ms.keywords : D3DKMTWaitForSynchronizationObjectFromGpu, display.d3dkmtwaitforsynchronizationobjectfromgpu, D3DKMTWaitForSynchronizationObjectFromGpu function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObjectFromGpu
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,22 +100,19 @@ This function semantics are similar to existing <a href="..\d3dkmthk\nf-d3dkmthk
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject2.md">D3DKMTWaitForSynchronizationObject2</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforsynchronizationobjectfromgpu.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject.md">D3DKMTWaitForSynchronizationObject</a>
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforsynchronizationobjectfromgpu.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject2.md">D3DKMTWaitForSynchronizationObject2</a>
 
  
 

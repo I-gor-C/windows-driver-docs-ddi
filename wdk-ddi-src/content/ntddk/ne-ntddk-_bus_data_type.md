@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a2a2e964-b9ae-4367-85de-f0ebe3c7a952
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.bus_data_type, ntddk/SgiInternalConfiguration, ntddk/BUS_DATA_TYPE, ntddk/CbusConfiguration, NuBusConfiguration, ntddk/PNPISAConfiguration, MaximumBusDataType, sysenum_3f6df31a-39d8-463e-8d44-44e51cd9989d.xml, ntddk/PBUS_DATA_TYPE, EisaConfiguration, ntddk/PCMCIAConfiguration, MPIConfiguration, SgiInternalConfiguration, MPSAConfiguration, BUS_DATA_TYPE, ConfigurationSpaceUndefined, ntddk/MPSAConfiguration, *PBUS_DATA_TYPE, Cmos, VMEConfiguration, BUS_DATA_TYPE enumeration [Kernel-Mode Driver Architecture], ntddk/MPIConfiguration, Pos, ntddk/ConfigurationSpaceUndefined, PNPISAConfiguration, PBUS_DATA_TYPE enumeration pointer [Kernel-Mode Driver Architecture], ntddk/NuBusConfiguration, CbusConfiguration, PCMCIAConfiguration, ntddk/Pos, _BUS_DATA_TYPE, ntddk/EisaConfiguration, ntddk/Cmos, ntddk/PCIConfiguration, ntddk/MaximumBusDataType, PBUS_DATA_TYPE, PCIConfiguration, ntddk/VMEConfiguration
+ms.keywords : PNPISAConfiguration, ntddk/VMEConfiguration, ConfigurationSpaceUndefined, ntddk/SgiInternalConfiguration, VMEConfiguration, Cmos, ntddk/ConfigurationSpaceUndefined, MaximumBusDataType, ntddk/PNPISAConfiguration, kernel.bus_data_type, BUS_DATA_TYPE, ntddk/MPIConfiguration, PCIConfiguration, ntddk/BUS_DATA_TYPE, SgiInternalConfiguration, PBUS_DATA_TYPE, ntddk/Cmos, ntddk/PBUS_DATA_TYPE, ntddk/CbusConfiguration, *PBUS_DATA_TYPE, CbusConfiguration, MPIConfiguration, ntddk/MaximumBusDataType, sysenum_3f6df31a-39d8-463e-8d44-44e51cd9989d.xml, BUS_DATA_TYPE enumeration [Kernel-Mode Driver Architecture], ntddk/MPSAConfiguration, PBUS_DATA_TYPE enumeration pointer [Kernel-Mode Driver Architecture], EisaConfiguration, ntddk/NuBusConfiguration, PCMCIAConfiguration, _BUS_DATA_TYPE, Pos, ntddk/Pos, NuBusConfiguration, ntddk/EisaConfiguration, ntddk/PCIConfiguration, ntddk/PCMCIAConfiguration, MPSAConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -140,20 +140,17 @@ typedef enum _BUS_DATA_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
 
  
 

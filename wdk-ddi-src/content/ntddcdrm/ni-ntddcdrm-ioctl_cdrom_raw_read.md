@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWRITE_ROTATION, WRITE_ROTATION"
+req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_RAW_READ IOCTL
@@ -71,9 +71,7 @@ If the read is successful, the driver sets <b>Status</b> to STATUS_SUCCESS and <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
-| **IRQL** |  |
 
 ## See Also
 

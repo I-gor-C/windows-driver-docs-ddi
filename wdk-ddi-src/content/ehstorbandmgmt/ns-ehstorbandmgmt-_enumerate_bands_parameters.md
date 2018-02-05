@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A493EF45-AA62-43FE-8E19-613B66FA0D83
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/ENUMERATE_BANDS_PARAMETERS, PENUMERATE_BANDS_PARAMETERS, PENUMERATE_BANDS_PARAMETERS structure pointer [Storage Devices], *PENUMERATE_BANDS_PARAMETERS, ENUMERATE_BANDS_PARAMETERS structure [Storage Devices], ENUMBANDS_REPORT_CRYPTO_ALGO, ENUMBANDS_ENUM_ALL_BANDS, ehstorbandmgmt/PENUMERATE_BANDS_PARAMETERS, storage.enumerate_bands_parameters, _ENUMERATE_BANDS_PARAMETERS, ENUMERATE_BANDS_PARAMETERS
+ms.keywords : ENUMBANDS_REPORT_CRYPTO_ALGO, ENUMBANDS_ENUM_ALL_BANDS, *PENUMERATE_BANDS_PARAMETERS, storage.enumerate_bands_parameters, ehstorbandmgmt/PENUMERATE_BANDS_PARAMETERS, PENUMERATE_BANDS_PARAMETERS structure pointer [Storage Devices], PENUMERATE_BANDS_PARAMETERS, _ENUMERATE_BANDS_PARAMETERS, ENUMERATE_BANDS_PARAMETERS structure [Storage Devices], ENUMERATE_BANDS_PARAMETERS, ehstorbandmgmt/ENUMERATE_BANDS_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PENUMERATE_BANDS_PARAMETERS, ENUMERATE_BANDS_PARAMETERS"
+req.typenames : ENUMERATE_BANDS_PARAMETERS, *PENUMERATE_BANDS_PARAMETERS
 ---
 
 # _ENUMERATE_BANDS_PARAMETERS structure
@@ -118,20 +118,18 @@ If <b>BandID</b> == 0 or no bands are configured and <b>Flags</b> is not set to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
 ## See Also
 
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
-
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
 
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table.md">BAND_TABLE</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
 
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table.md">BAND_TABLE</a>
 
  
 

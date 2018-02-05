@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6f62ce8d-058b-4838-bc7a-fae84c1b5111
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_DECODEINPUT, _DXVADDI_DECODEINPUT, display.dxvaddi_decodeinput, d3dumddi/DXVADDI_DECODEINPUT, DXVADDI_DECODEINPUT structure [Display Devices], DXVA2_Structs_9b88e486-0ea5-4fc3-bac9-1f7fcc2f5492.xml
+ms.keywords : d3dumddi/DXVADDI_DECODEINPUT, DXVA2_Structs_9b88e486-0ea5-4fc3-bac9-1f7fcc2f5492.xml, DXVADDI_DECODEINPUT, display.dxvaddi_decodeinput, _DXVADDI_DECODEINPUT, DXVADDI_DECODEINPUT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,22 +66,20 @@ A pointer to the DXVADDI_DECODEINPUT structure is specified in the <b>pInfo</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferinfo.md">DXVADDI_DECODEBUFFERINFO</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferinfo.md">DXVADDI_DECODEBUFFERINFO</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 
  
 

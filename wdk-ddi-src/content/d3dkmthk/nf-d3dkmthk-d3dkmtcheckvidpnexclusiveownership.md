@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 06333989-177c-4c58-b95a-60313c04fe35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtcheckvidpnexclusiveownership, OpenGL_Functions_edc90d51-f7e4-4bb5-be24-1a32b9fb4461.xml, D3DKMTCheckVidPnExclusiveOwnership function [Display Devices], d3dkmthk/D3DKMTCheckVidPnExclusiveOwnership, PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, D3DKMTCheckVidPnExclusiveOwnership
+ms.keywords : display.d3dkmtcheckvidpnexclusiveownership, OpenGL_Functions_edc90d51-f7e4-4bb5-be24-1a32b9fb4461.xml, d3dkmthk/D3DKMTCheckVidPnExclusiveOwnership, PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, D3DKMTCheckVidPnExclusiveOwnership function [Display Devices], D3DKMTCheckVidPnExclusiveOwnership
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -128,14 +128,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTCheckVidPnExclusiveOwnership is supported beginning with the Windows 7 operating system. D3DKMTCheckVidPnExclusiveOwnership is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

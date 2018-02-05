@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bbc26c03-c154-4b1e-883e-2942b59ded02
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPDDPIXELFORMAT structure pointer [Display Devices], LPDDPIXELFORMAT, DDPIXELFORMAT structure [Display Devices], ksmedia/LPDDPIXELFORMAT, DDPIXELFORMAT, ddstrcts_861a4798-418e-492a-b4cb-c4f1ce794a71.xml, display.ddpixelformat, ksmedia/DDPIXELFORMAT, _DDPIXELFORMAT, *LPDDPIXELFORMAT
+ms.keywords : ksmedia/LPDDPIXELFORMAT, _DDPIXELFORMAT, LPDDPIXELFORMAT structure pointer [Display Devices], display.ddpixelformat, LPDDPIXELFORMAT, DDPIXELFORMAT, DDPIXELFORMAT structure [Display Devices], *LPDDPIXELFORMAT, ksmedia/DDPIXELFORMAT, ddstrcts_861a4798-418e-492a-b4cb-c4f1ce794a71.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DDPIXELFORMAT, *LPDDPIXELFORMAT
+req.typenames : "*LPDDPIXELFORMAT, DDPIXELFORMAT"
 ---
 
 # _DDPIXELFORMAT structure
@@ -380,7 +380,4 @@ ddpf.MultiSampleCaps.wBltMSTypes = (1 &lt;&lt; (D3DMULTISAMPLE_4_SAMPLES âˆ’
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ddraw.h) |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5d278cde-3ebe-4fee-86fd-1ec4e79bd837
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfremotetarget_openremoteinterface, UMDFIoTargetObjectRef_e8287a4e-9f63-40e6-9a85-fb881a27d292.xml, IWDFRemoteTarget interface, OpenRemoteInterface method, IWDFRemoteTarget::OpenRemoteInterface, wdf.iwdfremotetarget_openremoteinterface, wudfddi/IWDFRemoteTarget::OpenRemoteInterface, OpenRemoteInterface method, IWDFRemoteTarget, OpenRemoteInterface, OpenRemoteInterface method, IWDFRemoteTarget interface
+ms.keywords : OpenRemoteInterface method, OpenRemoteInterface, IWDFRemoteTarget::OpenRemoteInterface, IWDFRemoteTarget interface, OpenRemoteInterface method, OpenRemoteInterface method, IWDFRemoteTarget interface, wdf.iwdfremotetarget_openremoteinterface, IWDFRemoteTarget, umdf.iwdfremotetarget_openremoteinterface, UMDFIoTargetObjectRef_e8287a4e-9f63-40e6-9a85-fb881a27d292.xml, wudfddi/IWDFRemoteTarget::OpenRemoteInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -113,20 +113,18 @@ For more information about <b>OpenRemoteInterface</b> and how to use device inte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
 
  
 

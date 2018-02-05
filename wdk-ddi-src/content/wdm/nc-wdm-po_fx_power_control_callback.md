@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -108,14 +108,10 @@ For more information about power control requests, see <a href="..\wdm\nf-wdm-po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cae95c4f-0af3-49de-a312-83958896006a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO structure [Network Drivers Starting with Windows Vista], ndis/NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, netvista.ndis_net_buffer_list_media_specific_info, _NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, ndis/PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO"
+ms.keywords : ndis/NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, ndis/PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, netvista.ndis_net_buffer_list_media_specific_info, NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO"
+req.typenames : NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO, *PNDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO
 ---
 
 # _NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO structure
@@ -60,7 +60,4 @@ typedef struct _NDIS_NET_BUFFER_LIST_MEDIA_SPECIFIC_INFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ndis.h (include Ndis.h) |

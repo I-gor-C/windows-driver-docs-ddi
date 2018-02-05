@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 8a25d44b-c83b-4454-858b-117dbb6cc4b7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMGradientFill function [Print Devices], print.oemgradientfill, print_unidrv-pscript_rendering_ddb279ca-c526-4993-94ce-cf8caa0febb4.xml, printoem/OEMGradientFill, OEMGradientFill
+ms.keywords : printoem/OEMGradientFill, print_unidrv-pscript_rendering_ddb279ca-c526-4993-94ce-cf8caa0febb4.xml, OEMGradientFill function [Print Devices], OEMGradientFill, print.oemgradientfill
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -111,11 +111,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

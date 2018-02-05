@@ -73,14 +73,13 @@ Starting in Windows 8, a system component may issue a create on behalf of an ap
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.21 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdffileobject.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

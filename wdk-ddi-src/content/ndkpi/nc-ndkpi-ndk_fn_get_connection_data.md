@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS"
+req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 
@@ -61,15 +61,15 @@ NTSTATUS NdkFnGetConnectionData(
 
 `*pNdkConnector`
 
-
+A pointer to an NDK connector object (<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>).
 
 `*pInboundReadLimit`
 
-
+The maximum number of incoming in-progress read operations to allow on the QP is returned in this location.
 
 `*pOutboundReadLimit`
 
-
+The maximum number of outgoing in-progress read operations to allow on the QP is returned in this location.
 
 `pPrivateData`
 
@@ -77,7 +77,8 @@ A pointer to private data that is returned.
 
 `*pPrivateDataLength`
 
-
+The length, in bytes, of the private data that is provided in the <i>pPrivateData</i> parameter.
+<div class="alert"><b>Note</b>  The output value does not indicate the actual length of private data stored in the buffer. NDK consumers must negotiate the format and length of the actual private data. For more information about private data, see the Remarks section.</div><div> </div>
 
 
 ## Return Value
@@ -144,20 +145,16 @@ If <i>*pPrivateDataLength</i> is greater than or equal to <i>RDS</i>, the provid
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndkpi.h (include Ndkpi.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
-
 <a href="..\ndkpi\ns-ndkpi-_ndk_connector_dispatch.md">NDK_CONNECTOR_DISPATCH</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
 
  
 

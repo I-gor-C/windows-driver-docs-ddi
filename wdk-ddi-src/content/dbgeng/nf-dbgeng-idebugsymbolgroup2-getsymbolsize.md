@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f35bbbeb-585b-47b0-ae36-bd37fe9e1bbc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolSize, IDebugSymbolGroup2::GetSymbolSize, GetSymbolSize method [Windows Debugging], IDebugSymbolGroup2 interface, ComOther_a6e69468-38f9-449d-9bd7-0ef52585f2aa.xml, GetSymbolSize method [Windows Debugging], IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolSize method, debugger.getsymbolsize, dbgeng/IDebugSymbolGroup2::GetSymbolSize
+ms.keywords : dbgeng/IDebugSymbolGroup2::GetSymbolSize, IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolSize method, GetSymbolSize method [Windows Debugging], GetSymbolSize method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2::GetSymbolSize, ComOther_a6e69468-38f9-449d-9bd7-0ef52585f2aa.xml, debugger.getsymbolsize, GetSymbolSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -102,20 +102,15 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/b6f03eb5-e386-4e88-a729-db08f1fa460c">IDebugSymbols::GetTypeSize</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+<a href="https://msdn.microsoft.com/b6f03eb5-e386-4e88-a729-db08f1fa460c">IDebugSymbols::GetTypeSize</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 

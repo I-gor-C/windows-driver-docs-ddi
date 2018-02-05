@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d64abd43-edf2-465a-8d99-8fdce1fcd25f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTLock function [Display Devices], d3dkmthk/D3DKMTLock, display.d3dkmtlock, D3DKMTLock, OpenGL_Functions_ca085861-b8a0-434a-843d-9b8052376df5.xml
+ms.keywords : d3dkmthk/D3DKMTLock, display.d3dkmtlock, D3DKMTLock function [Display Devices], D3DKMTLock, OpenGL_Functions_ca085861-b8a0-434a-843d-9b8052376df5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -139,14 +139,11 @@ The <b>D3DKMTLock</b> function is called to access system memory allocations and
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

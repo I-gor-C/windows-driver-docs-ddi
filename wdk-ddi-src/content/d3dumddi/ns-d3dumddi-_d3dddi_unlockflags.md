@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3c3356c-ec7b-4869-896d-9d3b285f0e87
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDI_UNLOCKFLAGS, _D3DDDI_UNLOCKFLAGS, D3DDDI_UNLOCKFLAGS structure [Display Devices], D3DDDI_UNLOCKFLAGS, display.d3dddi_unlockflags, D3D_other_Structs_c1133d3b-9330-4278-85c7-4083436278cf.xml
+ms.keywords : D3D_other_Structs_c1133d3b-9330-4278-85c7-4083436278cf.xml, d3dumddi/D3DDDI_UNLOCKFLAGS, D3DDDI_UNLOCKFLAGS, _D3DDDI_UNLOCKFLAGS, display.d3dddi_unlockflags, D3DDDI_UNLOCKFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ typedef struct _D3DDDI_UNLOCKFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

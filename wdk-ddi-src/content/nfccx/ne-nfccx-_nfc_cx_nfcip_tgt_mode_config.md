@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : E689992B-C767-4942-871D-D6EEDA35F0E7
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfccx/NFC_CX_NFCIP_DEFAULT, NFC_CX_NFCIP_NFC_ACTIVE_F_424, nfccx/NFC_CX_NFCIP_NFC_F_424, nfccx/NFC_CX_NFCIP_NFC_ACTIVE, NFC_CX_NFCIP_DEFAULT, NFC_CX_NFCIP_NFC_ACTIVE, NFC_CX_NFCIP_NFC_ACTIVE_F_212, *PNFC_CX_NFCIP_TGT_MODE_CONFIG, nfccx/NFC_CX_NFCIP_TGT_MODE_CONFIG, NFC_CX_NFCIP_NFC_F_212, nfccx/NFC_CX_NFCIP_NFC_F_212, _NFC_CX_NFCIP_TGT_MODE_CONFIG, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_F_212, NFC_CX_NFCIP_NFC_A, NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration [Near-Field Proximity Drivers], nfccx/NFC_CX_NFCIP_NFC_ACTIVE_F_424, NFC_CX_NFCIP_NFC_F_424, NFC_CX_NFCIP_TGT_MODE_CONFIG, PNFC_CX_NFCIP_TGT_MODE_CONFIG, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_A, nfccx/NFC_CX_NFCIP_NFC_A, NFC_CX_NFCIP_NFC_ACTIVE_A, nfpdrivers.nfc_cx_nfcip_tgt_mode_config
+ms.keywords : nfccx/NFC_CX_NFCIP_NFC_A, NFC_CX_NFCIP_NFC_F_424, NFC_CX_NFCIP_NFC_F_212, NFC_CX_NFCIP_DEFAULT, NFC_CX_NFCIP_NFC_ACTIVE, nfccx/NFC_CX_NFCIP_NFC_F_212, NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration [Near-Field Proximity Drivers], nfpdrivers.nfc_cx_nfcip_tgt_mode_config, NFC_CX_NFCIP_TGT_MODE_CONFIG, NFC_CX_NFCIP_NFC_A, _NFC_CX_NFCIP_TGT_MODE_CONFIG, nfccx/NFC_CX_NFCIP_NFC_F_424, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_F_424, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_A, PNFC_CX_NFCIP_TGT_MODE_CONFIG, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_F_212, nfccx/NFC_CX_NFCIP_DEFAULT, NFC_CX_NFCIP_NFC_ACTIVE_A, *PNFC_CX_NFCIP_TGT_MODE_CONFIG, nfccx/NFC_CX_NFCIP_NFC_ACTIVE, nfccx/NFC_CX_NFCIP_TGT_MODE_CONFIG, NFC_CX_NFCIP_NFC_ACTIVE_F_212, NFC_CX_NFCIP_NFC_ACTIVE_F_424
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NFC_CX_NFCIP_TGT_MODE_CONFIG, *PNFC_CX_NFCIP_TGT_MODE_CONFIG
+req.typenames : "*PNFC_CX_NFCIP_TGT_MODE_CONFIG, NFC_CX_NFCIP_TGT_MODE_CONFIG"
 ---
 
 # _NFC_CX_NFCIP_TGT_MODE_CONFIG Enumeration
@@ -89,9 +89,7 @@ typedef enum _NFC_CX_NFCIP_TGT_MODE_CONFIG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
 ## See Also

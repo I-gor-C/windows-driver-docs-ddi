@@ -75,6 +75,12 @@ Specifies the final status of the client's original call to
 
 
 
+#### NDIS_STATUS_RESOURCES
+
+NDIS, the call manager, or an underlying driver could not allocate sufficient resources to set
+       up the connection.
+
+
 #### NDIS_STATUS_SUCCESS
 
 The client's attempt to set up a virtual connection succeded. Consequently, the client can
@@ -83,12 +89,6 @@ The client's attempt to set up a virtual connection succeded. Consequently, the 
        <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>, which the client has
        stored in its per-VC context area at 
        <i>ProtocolVcContext</i> .
-
-
-#### NDIS_STATUS_RESOURCES
-
-NDIS, the call manager, or an underlying driver could not allocate sufficient resources to set
-       up the connection.
 
 
 #### NDIS_STATUS_XXX
@@ -232,41 +232,37 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
-<a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">NdisMCmMakeCallComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
+   NdisFreeToNPagedLookasideList</a>
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
+
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
 <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
-
-<mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
-   NdisFreeToNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 
-<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
-
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
-
-<a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
+<a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">NdisMCmMakeCallComplete</a>
 
  
 

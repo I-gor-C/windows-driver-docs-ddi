@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 23a2dd4d-ea30-4646-a4c3-bc90ad60933d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_2eac1d4d-0b8f-4997-8265-4f3e7354f3a1.xml, swenum/KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest, stream.ksservicebusenumcreaterequest, KsServiceBusEnumCreateRequest function [Streaming Media Devices]
+ms.keywords : ksfunc_2eac1d4d-0b8f-4997-8265-4f3e7354f3a1.xml, swenum/KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest function [Streaming Media Devices], stream.ksservicebusenumcreaterequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ Returns STATUS_SUCCESS if successful. Otherwise. it returns STATUS_OBJECT_NAME_N
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | swenum.h (include Swenum.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

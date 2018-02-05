@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : db7b8526-e70a-4589-a128-58641c865d58
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilmessageinfo_2, RILMESSAGEINFO structure [Network Drivers Starting with Windows Vista], *LPRILMESSAGEINFO, RILMESSAGEINFO, rilapitypes/RILMESSAGEINFO
+ms.keywords : rilapitypes/RILMESSAGEINFO, netvista.rilmessageinfo_2, RILMESSAGEINFO structure [Network Drivers Starting with Windows Vista], *LPRILMESSAGEINFO, RILMESSAGEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,7 +85,4 @@ typedef struct _RILMESSAGEINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

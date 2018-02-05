@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cd6797a3-3128-4100-81f0-82e4d6f209b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMSFC_HBAPortAttributesResults, hbapiwmi/MSFC_HBAPortAttributesResults, PMSFC_HBAPortAttributesResults structure pointer [Storage Devices], MSFC_HBAPortAttributesResults, hbapiwmi/PMSFC_HBAPortAttributesResults, structs-Fibre_976d4a28-f7d1-4a94-849c-f917f5bce339.xml, *PMSFC_HBAPortAttributesResults, MSFC_HBAPortAttributesResults structure [Storage Devices], _MSFC_HBAPortAttributesResults, storage.msfc_hbaportattributesresults
+ms.keywords : hbapiwmi/MSFC_HBAPortAttributesResults, hbapiwmi/PMSFC_HBAPortAttributesResults, PMSFC_HBAPortAttributesResults, PMSFC_HBAPortAttributesResults structure pointer [Storage Devices], _MSFC_HBAPortAttributesResults, storage.msfc_hbaportattributesresults, MSFC_HBAPortAttributesResults structure [Storage Devices], MSFC_HBAPortAttributesResults, *PMSFC_HBAPortAttributesResults, structs-Fibre_976d4a28-f7d1-4a94-849c-f917f5bce339.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_HBAPortAttributesResults, MSFC_HBAPortAttributesResults"
+req.typenames : MSFC_HBAPortAttributesResults, *PMSFC_HBAPortAttributesResults
 ---
 
 # _MSFC_HBAPortAttributesResults structure
@@ -387,9 +387,6 @@ Contains a 64 bit world-wide name (WWN) that uniquely identifies the fibre chann
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h, Hbaapi.h, Hbaapi.h) |
 
 ## See Also

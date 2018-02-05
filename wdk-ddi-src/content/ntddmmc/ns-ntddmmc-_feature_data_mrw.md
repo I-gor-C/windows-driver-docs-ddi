@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : af0c8c50-c5a0-4395-a608-fced6ac3cfe5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : FEATURE_DATA_MRW structure [Storage Devices], structs-CD-ROM_54208a52-0bc2-4e97-a3b1-4d57f5192ce4.xml, ntddmmc/PFEATURE_DATA_MRW, storage.feature_data_mrw, FEATURE_DATA_MRW, _FEATURE_DATA_MRW, PFEATURE_DATA_MRW structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_MRW, PFEATURE_DATA_MRW, *PFEATURE_DATA_MRW
+ms.keywords : ntddmmc/PFEATURE_DATA_MRW, FEATURE_DATA_MRW, structs-CD-ROM_54208a52-0bc2-4e97-a3b1-4d57f5192ce4.xml, *PFEATURE_DATA_MRW, storage.feature_data_mrw, ntddmmc/FEATURE_DATA_MRW, PFEATURE_DATA_MRW structure pointer [Storage Devices], FEATURE_DATA_MRW structure [Storage Devices], _FEATURE_DATA_MRW, PFEATURE_DATA_MRW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,6 @@ Indicates, if set to 1, that the device can format discs using the MRW format an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

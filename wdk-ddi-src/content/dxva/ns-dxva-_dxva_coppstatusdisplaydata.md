@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 377845f7-772f-4361-8fcb-10c432fa7abf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_COPPStatusDisplayData, dxva/DXVA_COPPStatusDisplayData, display.dxva_coppstatusdisplaydata, dxvaref_93230a15-ba58-4da6-8577-eb1f2bf8528e.xml, _DXVA_COPPStatusDisplayData, DXVA_COPPStatusDisplayData structure [Display Devices]
+ms.keywords : "_DXVA_COPPStatusDisplayData, DXVA_COPPStatusDisplayData structure [Display Devices], display.dxva_coppstatusdisplaydata, dxvaref_93230a15-ba58-4da6-8577-eb1f2bf8528e.xml, DXVA_COPPStatusDisplayData, dxva/DXVA_COPPStatusDisplayData"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,22 +110,20 @@ The refresh rate of the current display mode is expressed as a numerator/denomin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
-
 <a href="..\dxva\ns-dxva-_dxva_coppstatusoutput.md">DXVA_COPPStatusOutput</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a>
+<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 
 <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
 
-<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539652">COPPQueryStatus</a>
+
+<a href="..\dxva\ns-dxva-_dxva_coppstatusinput.md">DXVA_COPPStatusInput</a>
 
  
 

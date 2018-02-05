@@ -71,8 +71,8 @@ None
 If the NDIS driver specifies an entry point for the 
     <i>NetFreeMdl</i> function at the 
     <i>FreeMdl</i> parameter of the 
-    <mshelp:link keywords="netvista.ndisadvancenetbufferdatastart" tabindex="0"><b>
-    NdisAdvanceNetBufferDataStart</b></mshelp:link> function, NDIS calls 
+    <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+    NdisAdvanceNetBufferDataStart</a> function, NDIS calls 
     <i>NetFreeMdl</i> to free an MDL and memory.
 
 <i>NetFreeMdl</i> frees the MDL and memory that were allocated by the 
@@ -88,21 +88,17 @@ NDIS calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-net_buffer_allocate_mdl_handler.md">NetAllocateMdl</a>
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+   NdisAdvanceNetBufferDataStart</a>
 
-<mshelp:link keywords="netvista.ndisadvancenetbufferdatastart" tabindex="0"><b>
-   NdisAdvanceNetBufferDataStart</b></mshelp:link>
+<a href="..\ndis\nc-ndis-net_buffer_allocate_mdl_handler.md">NetAllocateMdl</a>
 
  
 

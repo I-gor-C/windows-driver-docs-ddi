@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c3df50a0-2388-4760-b6e2-ef6af650d0e2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidmmcaps, DXGK_VIDMMCAPS structure [Display Devices], DXGK_VIDMMCAPS, _DXGK_VIDMMCAPS, d3dkmddi/DXGK_VIDMMCAPS, DmStructs_0ec3e7bb-c14e-41b8-a148-7f77153972e8.xml
+ms.keywords : "_DXGK_VIDMMCAPS, DXGK_VIDMMCAPS structure [Display Devices], DXGK_VIDMMCAPS, display.dxgk_vidmmcaps, d3dkmddi/DXGK_VIDMMCAPS, DmStructs_0ec3e7bb-c14e-41b8-a148-7f77153972e8.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,7 @@ The zero-based index of the node to use for paging operations. If the driver doe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

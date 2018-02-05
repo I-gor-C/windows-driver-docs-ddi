@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 74245a8b-1b52-4336-a744-1aedaca0eef5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgi_ddi_multiplane_overlay_flags, DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS enumeration [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, dxgiddi/DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP
+ms.keywords : DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, display.dxgi_ddi_multiplane_overlay_flags, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, dxgiddi/DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS enumeration [Display Devices], DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |

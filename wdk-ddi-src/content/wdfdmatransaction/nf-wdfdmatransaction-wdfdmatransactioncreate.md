@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9470e4a6-eee4-4a73-80b0-3d45f9d79934
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDmaObjectRef_d7399240-2da3-418f-b21b-8a441e7923d4.xml, WdfDmaTransactionCreate method, WdfDmaTransactionCreate, wdfdmatransaction/WdfDmaTransactionCreate, kmdf.wdfdmatransactioncreate, wdf.wdfdmatransactioncreate, PFN_WDFDMATRANSACTIONCREATE
+ms.keywords : DFDmaObjectRef_d7399240-2da3-418f-b21b-8a441e7923d4.xml, kmdf.wdfdmatransactioncreate, WdfDmaTransactionCreate, PFN_WDFDMATRANSACTIONCREATE, wdfdmatransaction/WdfDmaTransactionCreate, wdf.wdfdmatransactioncreate, WdfDmaTransactionCreate method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,12 +121,10 @@ For more information about DMA transactions, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
@@ -134,13 +132,13 @@ For more information about DMA transactions, see <a href="https://msdn.microsoft
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
-
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a>
-
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
 
  
 

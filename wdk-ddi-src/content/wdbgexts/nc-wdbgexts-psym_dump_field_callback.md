@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
+req.typenames : "*PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT"
 req.product : Windows 10 or later.
 ---
 
@@ -59,7 +59,7 @@ ULONG PsymDumpFieldCallback(
 
 `*pField`
 
-
+Specifies the field for which this callback function is being called.  The debugger engine fills in the contents of this parameter before making the call.  See <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a> for details about the members of this parameter.
 
 `UserContext`
 
@@ -77,20 +77,14 @@ If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
-
 <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
+
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 
 <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>
 

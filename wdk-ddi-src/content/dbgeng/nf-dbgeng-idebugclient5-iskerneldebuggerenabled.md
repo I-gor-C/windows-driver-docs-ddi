@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a6dc4832-6b9b-441e-a57a-6fcb2cafa2c6
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient2 interface [Windows Debugging], IsKernelDebuggerEnabled method, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient3 interface, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient2 interface, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient4 interface, IsKernelDebuggerEnabled, IDebugClient4 interface [Windows Debugging], IsKernelDebuggerEnabled method, dbgeng/IDebugClient2::IsKernelDebuggerEnabled, dbgeng/IDebugClient3::IsKernelDebuggerEnabled, IDebugClient3::IsKernelDebuggerEnabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient5::IsKernelDebuggerEnabled, dbgeng/IDebugClient4::IsKernelDebuggerEnabled, IDebugClient_05c5446d-28b4-4d9b-bb20-7dc1746545d6.xml, IDebugClient3 interface [Windows Debugging], IsKernelDebuggerEnabled method, dbgeng/IDebugClient5::IsKernelDebuggerEnabled, debugger.iskerneldebuggerenabled, IDebugClient5 interface [Windows Debugging], IsKernelDebuggerEnabled method, IDebugClient4::IsKernelDebuggerEnabled, IDebugClient2::IsKernelDebuggerEnabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient5 interface, IDebugClient5
+ms.keywords : IDebugClient2::IsKernelDebuggerEnabled, IDebugClient4::IsKernelDebuggerEnabled, IDebugClient_05c5446d-28b4-4d9b-bb20-7dc1746545d6.xml, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient2 interface, IDebugClient2 interface [Windows Debugging], IsKernelDebuggerEnabled method, IDebugClient5::IsKernelDebuggerEnabled, debugger.iskerneldebuggerenabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::IsKernelDebuggerEnabled, dbgeng/IDebugClient3::IsKernelDebuggerEnabled, dbgeng/IDebugClient5::IsKernelDebuggerEnabled, IDebugClient5 interface [Windows Debugging], IsKernelDebuggerEnabled method, IDebugClient4 interface [Windows Debugging], IsKernelDebuggerEnabled method, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient3 interface, IsKernelDebuggerEnabled method [Windows Debugging], dbgeng/IDebugClient4::IsKernelDebuggerEnabled, IDebugClient3 interface [Windows Debugging], IsKernelDebuggerEnabled method, IsKernelDebuggerEnabled, IsKernelDebuggerEnabled method [Windows Debugging], IDebugClient4 interface, IDebugClient3::IsKernelDebuggerEnabled, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -93,26 +93,21 @@ For more information about connecting to live kernel-mode targets, see <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538145">AttachKernel</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
  
 

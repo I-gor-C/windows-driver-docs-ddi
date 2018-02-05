@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d2f2d2cc-e96b-475c-96eb-d58244a05788
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/PSTORAGE_BUS_RESET_REQUEST, structs-general_ffea4f36-cf98-4961-be14-d8a4cde94fad.xml, _STORAGE_BUS_RESET_REQUEST, PSTORAGE_BUS_RESET_REQUEST structure pointer [Storage Devices], ntddstor/STORAGE_BUS_RESET_REQUEST, STORAGE_BUS_RESET_REQUEST structure [Storage Devices], *PSTORAGE_BUS_RESET_REQUEST, STORAGE_BUS_RESET_REQUEST, PSTORAGE_BUS_RESET_REQUEST, storage.storage_bus_reset_request
+ms.keywords : ntddstor/PSTORAGE_BUS_RESET_REQUEST, structs-general_ffea4f36-cf98-4961-be14-d8a4cde94fad.xml, ntddstor/STORAGE_BUS_RESET_REQUEST, *PSTORAGE_BUS_RESET_REQUEST, PSTORAGE_BUS_RESET_REQUEST structure pointer [Storage Devices], STORAGE_BUS_RESET_REQUEST, storage.storage_bus_reset_request, _STORAGE_BUS_RESET_REQUEST, PSTORAGE_BUS_RESET_REQUEST, STORAGE_BUS_RESET_REQUEST structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,6 @@ Indicates the number of the bus to be reset.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

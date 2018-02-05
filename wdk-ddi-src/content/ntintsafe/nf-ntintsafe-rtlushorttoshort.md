@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 055B5605-2EBB-4B09-9C21-A8288D0DB3CD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUShortToShort function [Kernel-Mode Driver Architecture], kernel.rtlushorttoshort, RtlUShortToShort, ntintsafe/RtlUShortToShort
+ms.keywords : ntintsafe/RtlUShortToShort, RtlUShortToShort function [Kernel-Mode Driver Architecture], RtlUShortToShort, kernel.rtlushorttoshort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This is one of a set of inline functions designed to provide type conversions an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

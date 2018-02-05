@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : aeef74d8-d4a5-4ce4-b7f8-e2a2d263a678
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtladdaccessallowedaceex, RtlAddAccessAllowedAceEx, rtlref_c28640a5-62e2-462a-9c30-b59faedc8386.xml, ntifs/RtlAddAccessAllowedAceEx, RtlAddAccessAllowedAceEx routine [Installable File System Drivers]
+ms.keywords : rtlref_c28640a5-62e2-462a-9c30-b59faedc8386.xml, ntifs/RtlAddAccessAllowedAceEx, RtlAddAccessAllowedAceEx, RtlAddAccessAllowedAceEx routine [Installable File System Drivers], ifsk.rtladdaccessallowedaceex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -176,42 +176,40 @@ For more information about security and access control, see the documentation ab
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available in Microsoft Windows 2000 and later Windows operating systems. This routine is available in Microsoft Windows 2000 and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
-<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
 
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
 <a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
-
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-
-<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
-
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-
 <a href="..\ntifs\ns-ntifs-_access_allowed_ace.md">ACCESS_ALLOWED_ACE</a>
-
-<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
 
 <a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
 <a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 
-<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
+
+<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 

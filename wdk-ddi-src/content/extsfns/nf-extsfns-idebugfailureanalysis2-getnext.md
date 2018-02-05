@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 935E4BAD-2B4E-44DD-8AE6-A0FD1FE9F2BF
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetNext method [Windows Debugging], extsfns/IDebugFailureAnalysis2::GetNext, GetNext method [Windows Debugging], IDebugFailureAnalysis2 interface, debugger.idebugfailureanalysis2_getnext, IDebugFailureAnalysis2::GetNext, IDebugFailureAnalysis2, IDebugFailureAnalysis2 interface [Windows Debugging], GetNext method, GetNext
+ms.keywords : IDebugFailureAnalysis2::GetNext, IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::GetNext, debugger.idebugfailureanalysis2_getnext, GetNext, IDebugFailureAnalysis2 interface [Windows Debugging], GetNext method, GetNext method [Windows Debugging], IDebugFailureAnalysis2 interface, GetNext method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -109,26 +109,21 @@ DEBUG_FLR_FILE_LINE,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | extsfns.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | extsfns.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983422">NextEntry</a>
-
-<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 
 <a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983422">NextEntry</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj983411">Get</a>
+
+<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 
  
 

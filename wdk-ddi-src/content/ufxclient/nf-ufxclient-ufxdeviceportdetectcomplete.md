@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D5F65152-54CD-45FA-99CE-F5B4DF444BB8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxDevicePortDetectComplete, UfxDevicePortDetectComplete method [Buses], buses.ufxdeviceportdetectcomplete, UfxDevicePortDetectComplete
+ms.keywords : ufxclient/UfxDevicePortDetectComplete, UfxDevicePortDetectComplete, UfxDevicePortDetectComplete method [Buses], buses.ufxdeviceportdetectcomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -91,11 +91,8 @@ The client driver typically calls <b>UfxDevicePortDetectComplete</b> from its <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |

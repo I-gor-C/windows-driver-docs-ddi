@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 1c4c3e9c-32a2-405a-b27d-98f8da715626
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, whea.whea_pciexpress_error_section_validbits, whearef_9b6e3f92-4939-401a-9da2-e2ece44b1e98.xml, WHEA_PCIEXPRESS_ERROR_VALIDBITS, ntddk/PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_VALIDBITS, PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications]
+ms.keywords : "*PWHEA_PCIEXPRESS_ERROR_VALIDBITS, ntddk/WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, whea.whea_pciexpress_error_section_validbits, WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], whearef_9b6e3f92-4939-401a-9da2-e2ece44b1e98.xml, WHEA_PCIEXPRESS_ERROR_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ A WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union is contained within the <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

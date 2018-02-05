@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 86ec2e8f-1a89-4c0a-b761-d9bf0d3dc35a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NdisNicSwitchVPortIntModUndefined, ntddndis/NdisNicSwitchVPortIntModMedium, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/NdisNicSwitchVPortIntModAdaptive, NdisNicSwitchVPortIntModAdaptive, ntddndis/NdisNicSwitchVPortIntModHigh, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisNicSwitchVPortIntModLow, NdisNicSwitchVPortIntModHigh, ntddndis/PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, *PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NdisNicSwitchVPortIntModMedium, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration pointer [Network Drivers Starting with Windows Vista], NdisNicSwitchVPortIntModLow, ntddndis/NdisNicSwitchVPortIntModOff, NdisNicSwitchVPortIntModUndefined, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NdisNicSwitchVPortIntModOff, netvista.ndis_nic_switch_vport_interrupt_moderation
+ms.keywords : ntddndis/NdisNicSwitchVPortIntModMedium, ntddndis/NdisNicSwitchVPortIntModAdaptive, ntddndis/NdisNicSwitchVPortIntModOff, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration pointer [Network Drivers Starting with Windows Vista], NdisNicSwitchVPortIntModLow, ntddndis/NdisNicSwitchVPortIntModUndefined, ntddndis/NdisNicSwitchVPortIntModLow, *PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/NdisNicSwitchVPortIntModHigh, _NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, ntddndis/PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, PNDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, NdisNicSwitchVPortIntModOff, NdisNicSwitchVPortIntModUndefined, NdisNicSwitchVPortIntModMedium, NdisNicSwitchVPortIntModAdaptive, ntddndis/NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION, netvista.ndis_nic_switch_vport_interrupt_moderation, NdisNicSwitchVPortIntModHigh, NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,9 +97,7 @@ The <b>InterruptModeration</b> member of the <a href="..\ntddndis\ns-ntddndis-_n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b7756f69-feab-4a28-88d5-0262f86db54b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioreportdetecteddevice, IoReportDetectedDevice, k104_b906486e-318a-49b5-aa6a-683c1889c10b.xml, IoReportDetectedDevice routine [Kernel-Mode Driver Architecture], ntddk/IoReportDetectedDevice
+ms.keywords : kernel.ioreportdetecteddevice, IoReportDetectedDevice routine [Kernel-Mode Driver Architecture], IoReportDetectedDevice, ntddk/IoReportDetectedDevice, k104_b906486e-318a-49b5-aa6a-683c1889c10b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -127,12 +127,11 @@ A driver writer must provide an INF file that matches any of the specified hardw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

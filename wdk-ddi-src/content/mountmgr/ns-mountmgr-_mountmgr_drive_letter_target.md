@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3bbfd3f8-9530-4c9f-99e3-a1fcbb956b51
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : MOUNTMGR_DRIVE_LETTER_TARGET, *PMOUNTMGR_DRIVE_LETTER_TARGET, _MOUNTMGR_DRIVE_LETTER_TARGET, mountmgr/MOUNTMGR_DRIVE_LETTER_TARGET, PMOUNTMGR_DRIVE_LETTER_TARGET, MOUNTMGR_DRIVE_LETTER_TARGET structure [Storage Devices], structs-mntmgr_66751bbf-3c3a-407d-9faf-1ef190c9c7a2.xml, PMOUNTMGR_DRIVE_LETTER_TARGET structure pointer [Storage Devices], mountmgr/PMOUNTMGR_DRIVE_LETTER_TARGET, storage.mountmgr_drive_letter_target
+ms.keywords : MOUNTMGR_DRIVE_LETTER_TARGET, PMOUNTMGR_DRIVE_LETTER_TARGET structure pointer [Storage Devices], PMOUNTMGR_DRIVE_LETTER_TARGET, storage.mountmgr_drive_letter_target, structs-mntmgr_66751bbf-3c3a-407d-9faf-1ef190c9c7a2.xml, MOUNTMGR_DRIVE_LETTER_TARGET structure [Storage Devices], *PMOUNTMGR_DRIVE_LETTER_TARGET, mountmgr/PMOUNTMGR_DRIVE_LETTER_TARGET, _MOUNTMGR_DRIVE_LETTER_TARGET, mountmgr/MOUNTMGR_DRIVE_LETTER_TARGET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMOUNTMGR_DRIVE_LETTER_TARGET, MOUNTMGR_DRIVE_LETTER_TARGET"
+req.typenames : MOUNTMGR_DRIVE_LETTER_TARGET, *PMOUNTMGR_DRIVE_LETTER_TARGET
 ---
 
 # _MOUNTMGR_DRIVE_LETTER_TARGET structure
@@ -68,9 +68,6 @@ Nonpersistent target names must contain the full path of a target object name in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
 
 ## See Also

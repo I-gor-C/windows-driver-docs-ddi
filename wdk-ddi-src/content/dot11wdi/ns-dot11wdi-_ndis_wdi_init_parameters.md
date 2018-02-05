@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 871D266C-55DF-4113-9714-92AB129303E5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_WDI_INIT_PARAMETERS, netvista.ndis_wdi_init_parameters, PNDIS_WDI_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WDI_INIT_PARAMETERS, dot11wdi/PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_WDI_INIT_PARAMETERS, dot11wdi/NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS"
+ms.keywords : "_NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_WDI_INIT_PARAMETERS, dot11wdi/NDIS_WDI_INIT_PARAMETERS, dot11wdi/PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wdi_init_parameters"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,7 +107,5 @@ WDI version 1.0
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h (include Ndis.h) |

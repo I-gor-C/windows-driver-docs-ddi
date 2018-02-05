@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c0404803-d8a5-4698-a725-12c659cbcaab
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PVIDEO_X86_BIOS_ARGUMENTS, Video_Structs_6e82199c-1448-483c-ab53-73590564b165.xml, VIDEO_X86_BIOS_ARGUMENTS structure [Display Devices], _VIDEO_X86_BIOS_ARGUMENTS, VIDEO_x86_BIOS_ARGUMENTS, video/VIDEO_X86_BIOS_ARGUMENTS, PVIDEO_X86_BIOS_ARGUMENTS structure pointer [Display Devices], VIDEO_x86_BIOS_ARGUMENTS structure [Display Devices], *PVIDEO_X86_BIOS_ARGUMENTS, video/PVIDEO_X86_BIOS_ARGUMENTS, display.video_x86_bios_arguments, VIDEO_X86_BIOS_ARGUMENTS
+ms.keywords : PVIDEO_X86_BIOS_ARGUMENTS structure pointer [Display Devices], VIDEO_X86_BIOS_ARGUMENTS, VIDEO_x86_BIOS_ARGUMENTS structure [Display Devices], VIDEO_X86_BIOS_ARGUMENTS structure [Display Devices], video/PVIDEO_X86_BIOS_ARGUMENTS, display.video_x86_bios_arguments, PVIDEO_X86_BIOS_ARGUMENTS, Video_Structs_6e82199c-1448-483c-ab53-73590564b165.xml, _VIDEO_X86_BIOS_ARGUMENTS, *PVIDEO_X86_BIOS_ARGUMENTS, video/VIDEO_X86_BIOS_ARGUMENTS, VIDEO_x86_BIOS_ARGUMENTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,9 +94,6 @@ A miniport driver should <i>not</i> set a segment:offset-type pointer in any mem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ea97cc22-6057-427d-90c1-4f23ced932aa
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : gdifnc_ff066b35-7062-430e-a8b9-bbdef46494a6.xml, print.gdiresetdcemf, GdiResetDCEMF function [Print Devices], winppi/GdiResetDCEMF, GdiResetDCEMF
+ms.keywords : winppi/GdiResetDCEMF, GdiResetDCEMF function [Print Devices], gdifnc_ff066b35-7062-430e-a8b9-bbdef46494a6.xml, print.gdiresetdcemf, GdiResetDCEMF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,7 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |

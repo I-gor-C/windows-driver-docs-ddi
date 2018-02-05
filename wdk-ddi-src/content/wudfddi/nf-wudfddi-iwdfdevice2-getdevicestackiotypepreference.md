@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3a1f6432-3f61-4502-ac98-fa984539f88e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetDeviceStackIoTypePreference method, IWDFDevice2 interface, GetDeviceStackIoTypePreference, wudfddi/IWDFDevice2::GetDeviceStackIoTypePreference, IWDFDevice2 interface, GetDeviceStackIoTypePreference method, GetDeviceStackIoTypePreference method, IWDFDevice2::GetDeviceStackIoTypePreference, wdf.iwdfdevice2_getdevicestackiotypepreference, umdf.iwdfdevice2_getdevicestackiotypepreference, IWDFDevice2, UMDFDeviceObjectRef_f6402826-fe3b-46c7-a4a8-d1d4f74e4b5c.xml
+ms.keywords : IWDFDevice2 interface, GetDeviceStackIoTypePreference method, GetDeviceStackIoTypePreference, GetDeviceStackIoTypePreference method, wdf.iwdfdevice2_getdevicestackiotypepreference, IWDFDevice2::GetDeviceStackIoTypePreference, umdf.iwdfdevice2_getdevicestackiotypepreference, GetDeviceStackIoTypePreference method, IWDFDevice2 interface, UMDFDeviceObjectRef_f6402826-fe3b-46c7-a4a8-d1d4f74e4b5c.xml, wudfddi/IWDFDevice2::GetDeviceStackIoTypePreference, IWDFDevice2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -78,20 +78,18 @@ For more information about how the framework chooses a buffer access method, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a>
 
  
 

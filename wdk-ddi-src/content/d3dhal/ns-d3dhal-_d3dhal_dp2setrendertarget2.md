@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0e7d7093-3b49-4fb1-b7ac-49d366c08ab8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2SETRENDERTARGET2 structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2SETRENDERTARGET2, *LPD3DHAL_DP2SETRENDERTARGET2, LPD3DHAL_DP2SETRENDERTARGET2, display.d3dhal_dp2setrendertarget2, d3dstrct_b2b69c9b-94db-4451-b731-fbe90ba059f0.xml, _D3DHAL_DP2SETRENDERTARGET2, D3DHAL_DP2SETRENDERTARGET2, d3dhal/D3DHAL_DP2SETRENDERTARGET2, D3DHAL_DP2SETRENDERTARGET2 structure [Display Devices]
+ms.keywords : D3DHAL_DP2SETRENDERTARGET2, *LPD3DHAL_DP2SETRENDERTARGET2, _D3DHAL_DP2SETRENDERTARGET2, display.d3dhal_dp2setrendertarget2, d3dhal/D3DHAL_DP2SETRENDERTARGET2, LPD3DHAL_DP2SETRENDERTARGET2 structure pointer [Display Devices], d3dstrct_b2b69c9b-94db-4451-b731-fbe90ba059f0.xml, d3dhal/LPD3DHAL_DP2SETRENDERTARGET2, LPD3DHAL_DP2SETRENDERTARGET2, D3DHAL_DP2SETRENDERTARGET2 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,16 +64,13 @@ Specifies an index into the rendering target.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
 D3DDP2OP_SETRENDERTARGET2
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

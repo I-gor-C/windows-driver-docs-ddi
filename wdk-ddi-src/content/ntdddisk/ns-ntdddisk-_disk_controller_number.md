@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5dc9f04b-8d7c-4ac7-9518-8836d56d5eed
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntdddisk/DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER, PDISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER structure [Storage Devices], _DISK_CONTROLLER_NUMBER, *PDISK_CONTROLLER_NUMBER, storage.disk_controller_number, ntdddisk/PDISK_CONTROLLER_NUMBER, PDISK_CONTROLLER_NUMBER structure pointer [Storage Devices], structs-disk_5cf21b24-f10f-4484-bb76-22dff0b4e32c.xml
+ms.keywords : PDISK_CONTROLLER_NUMBER structure pointer [Storage Devices], *PDISK_CONTROLLER_NUMBER, PDISK_CONTROLLER_NUMBER, structs-disk_5cf21b24-f10f-4484-bb76-22dff0b4e32c.xml, _DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER, storage.disk_controller_number, ntdddisk/PDISK_CONTROLLER_NUMBER, ntdddisk/DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DISK_CONTROLLER_NUMBER, *PDISK_CONTROLLER_NUMBER
+req.typenames : "*PDISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER"
 ---
 
 # _DISK_CONTROLLER_NUMBER structure
@@ -66,9 +66,6 @@ After DISK_CONTROLLER_NUMBER receives the controller number and the disk number,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
 ## See Also

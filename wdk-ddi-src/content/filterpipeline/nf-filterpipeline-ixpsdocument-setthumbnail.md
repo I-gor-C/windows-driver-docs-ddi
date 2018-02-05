@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 47211c8f-e112-47fd-bd9e-57ff7ec586a5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IXpsDocument, IXpsDocument interface [Print Devices], SetThumbnail method, SetThumbnail method [Print Devices], IXpsDocument interface, SetThumbnail method [Print Devices], filterpipeline/IXpsDocument::SetThumbnail, filterpipeline_ee7609e5-4e6f-4619-aa3f-dfa217d5eabc.xml, print.ixpsdocument_setthumbnail, IXpsDocument::SetThumbnail, SetThumbnail
+ms.keywords : SetThumbnail method [Print Devices], IXpsDocument interface, SetThumbnail, filterpipeline_ee7609e5-4e6f-4619-aa3f-dfa217d5eabc.xml, print.ixpsdocument_setthumbnail, SetThumbnail method [Print Devices], IXpsDocument, IXpsDocument::SetThumbnail, IXpsDocument interface [Print Devices], SetThumbnail method, filterpipeline/IXpsDocument::SetThumbnail
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ A pointer to a new thumbnail.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

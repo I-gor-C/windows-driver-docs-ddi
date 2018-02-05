@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : B073D354-14FB-477E-BBD7-8BD282696EF4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetGfxState method [Audio Devices], audio.iminiportaudioenginenode_setgfxstate, SetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices], SetGfxState method, SetGfxState, portcls/IMiniportAudioEngineNode::SetGfxState, IMiniportAudioEngineNode::SetGfxState, IMiniportAudioEngineNode
+ms.keywords : SetGfxState, IMiniportAudioEngineNode interface [Audio Devices], SetGfxState method, portcls/IMiniportAudioEngineNode::SetGfxState, SetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode::SetGfxState, audio.iminiportaudioenginenode_setgfxstate, IMiniportAudioEngineNode, SetGfxState method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,14 +70,9 @@ The state of the GFX node.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

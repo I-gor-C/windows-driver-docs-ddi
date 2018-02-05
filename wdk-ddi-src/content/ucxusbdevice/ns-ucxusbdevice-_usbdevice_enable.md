@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : DC54CC46-6ECC-4D1F-9C8C-5579EE759B6F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._usbdevice_enable, USBDEVICE_ENABLE structure [Buses], P_USBDEVICE_ENABLE structure pointer [Buses], USBDEVICE_ENABLE, _USBDEVICE_ENABLE, ucxusbdevice/_USBDEVICE_ENABLE, P_USBDEVICE_ENABLE, *PUSBDEVICE_ENABLE, ucxusbdevice/P_USBDEVICE_ENABLE
+ms.keywords : "_USBDEVICE_ENABLE, USBDEVICE_ENABLE structure [Buses], buses._usbdevice_enable, USBDEVICE_ENABLE, P_USBDEVICE_ENABLE structure pointer [Buses], P_USBDEVICE_ENABLE, *PUSBDEVICE_ENABLE, ucxusbdevice/P_USBDEVICE_ENABLE, ucxusbdevice/_USBDEVICE_ENABLE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,16 +74,13 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_disable.md">USBDEVICE_DISABLE</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_disable.md">USBDEVICE_DISABLE</a>
 
  
 

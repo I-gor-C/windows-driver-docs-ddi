@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cdea67aa-14fa-45c1-8af0-8db48042b1b2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportbuildscattergatherlist, StorPortBuildScatterGatherList routine [Storage Devices], StorPortBuildScatterGatherList, storport/StorPortBuildScatterGatherList, storprt_ed0a920c-d8f4-44f2-a262-5a74470ec67a.xml
+ms.keywords : storport/StorPortBuildScatterGatherList, StorPortBuildScatterGatherList, storprt_ed0a920c-d8f4-44f2-a262-5a74470ec67a.xml, StorPortBuildScatterGatherList routine [Storage Devices], storage.storportbuildscattergatherlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,6 +102,11 @@ ExecutionRoutine (
 The Storport driver calls a miniport driver's <i>ExecutionRoutine</i> at IRQL = DISPATCH_LEVEL.
 
 
+#### Context
+
+The context value specified in the <b>StorPortBuildScatterGatherList</b> function's <i>Context</i> parameter.
+
+
 #### DeviceObject
 
 Miniport drivers should ignore this parameter.
@@ -115,11 +120,6 @@ Miniport drivers should ignore this parameter.
 #### ScatterGather
 
 A pointer to a <a href="..\storport\ns-storport-_stor_scatter_gather_list.md">STOR_SCATTER_GATHER_LIST</a> structure that contains the scatter/gather list for the specified data buffer.
-
-
-#### Context
-
-The context value specified in the <b>StorPortBuildScatterGatherList</b> function's <i>Context</i> parameter.
 
 `Context`
 
@@ -226,22 +226,18 @@ The miniport driver must call <a href="..\storport\nf-storport-storportputscatte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>
 
 <a href="..\storport\ns-storport-_stor_scatter_gather_list.md">STOR_SCATTER_GATHER_LIST</a>
 
 <a href="..\storport\nf-storport-storportputscattergatherlist.md">StorPortPutScatterGatherList</a>
-
-<a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>
 
  
 

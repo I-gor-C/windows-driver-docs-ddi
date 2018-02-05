@@ -109,8 +109,8 @@ A handle to a context area that the miniport driver allocated in its
 
 A driver specifies the 
     <i>MiniportPause</i> entry point when it calls the 
-    <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-    NdisMRegisterMiniportDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+    NdisMRegisterMiniportDriver</a> function.
 
 NDIS pauses a miniport adapter to stop data flow that could interfere with PnP operations such as
     adding or removing a filter driver, or binding or unbinding a protocol driver.
@@ -125,36 +125,36 @@ For a miniport adapter in the
 <ul>
 <li>
 Waits for all calls to the 
-      <mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-      NdisMIndicateReceiveNetBufferLists</b></mshelp:link> function to return.
+      <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+      NdisMIndicateReceiveNetBufferLists</a> function to return.
 
 </li>
 <li>
 Waits for NDIS to return the ownership of all 
       <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures from
       outstanding receive indications to the miniport driver's 
-      <mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-      MiniportReturnNetBufferLists</i></mshelp:link> function.
+      <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+      MiniportReturnNetBufferLists</a> function.
 
 </li>
 <li>
 Completes all outstanding send requests and calls the 
-      <mshelp:link keywords="netvista.ndismsendnetbufferlistscomplete" tabindex="0"><b>
-      NdisMSendNetBufferListsComplete</b></mshelp:link> function for all the outstanding send requests.
+      <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
+      NdisMSendNetBufferListsComplete</a> function for all the outstanding send requests.
 
 </li>
 <li>
 Rejects all new send requests made to its 
-      <mshelp:link keywords="netvista.miniportsendnetbufferlists" tabindex="0"><i>
-      MiniportSendNetBufferLists</i></mshelp:link> function immediately by calling 
+      <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
+      MiniportSendNetBufferLists</a> function immediately by calling 
       <b>NdisMSendNetBufferListsComplete</b>. It should set the complete status in each NET_BUFFER_LIST to
       NDIS_STATUS_PAUSED.
 
 </li>
 <li>
 Can provide status indications with the 
-      <mshelp:link keywords="netvista.ndismindicatestatusex" tabindex="0"><b>
-      NdisMIndicateStatusEx</b></mshelp:link> function.
+      <a href="..\ndis\nf-ndis-ndismindicatestatusex.md">
+      NdisMIndicateStatusEx</a> function.
 
 </li>
 <li>
@@ -216,8 +216,8 @@ Should handle OID requests in the
 </li>
 <li>
 Should handle requests to change the device power state in the 
-      <mshelp:link keywords="netvista.miniportdevicepnpeventnotify" tabindex="0"><i>
-      MiniportDevicePnPEventNotify</i></mshelp:link> function.
+      <a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
+      MiniportDevicePnPEventNotify</a> function.
 
 </li>
 <li>
@@ -274,53 +274,49 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_ndis_miniport_pause_parameters.md">
+   NDIS_MINIPORT_PAUSE_PARAMETERS</a>
+
 <a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
-
-<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
-
-<mshelp:link keywords="netvista.ndismsendnetbufferlistscomplete" tabindex="0"><b>
-   NdisMSendNetBufferListsComplete</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndismpausecomplete.md">NdisMPauseComplete</a>
 
 <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-<mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-   NdisMIndicateReceiveNetBufferLists</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-
-<mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-   MiniportReturnNetBufferLists</i></mshelp:link>
-
-<a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
-
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
-
-<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
+<a href="..\ndis\nc-ndis-miniport_device_pnp_event_notify.md">
+   MiniportDevicePnPEventNotify</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<mshelp:link keywords="netvista.miniportdevicepnpeventnotify" tabindex="0"><i>
-   MiniportDevicePnPEventNotify</i></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_restart.md">MiniportRestart</a>
+
+<a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
+
+<a href="..\ndis\nf-ndis-ndismpausecomplete.md">NdisMPauseComplete</a>
+
+<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
+
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+   NdisMIndicateReceiveNetBufferLists</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
-<mshelp:link keywords="netvista.ndis_miniport_pause_parameters" tabindex="0"><b>
-   NDIS_MINIPORT_PAUSE_PARAMETERS</b></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+   MiniportReturnNetBufferLists</a>
+
+<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
+<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
+   NdisMSendNetBufferListsComplete</a>
 
  
 

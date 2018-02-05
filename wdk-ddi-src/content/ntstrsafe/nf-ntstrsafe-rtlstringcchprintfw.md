@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e1c04e73-3055-4de8-bd8d-8d0a13541612
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlStringCchPrintfA, ntstrsafe/RtlStringCchPrintfA, safestrings_d1041cf8-bec9-4eef-8de8-7b662d474263.xml, RtlStringCchPrintfW, kernel.rtlstringcchprintf, ntstrsafe/RtlStringCchPrintfW, RtlStringCchPrintfW function [Kernel-Mode Driver Architecture], RtlStringCchPrintf
+ms.keywords : ntstrsafe/RtlStringCchPrintfA, RtlStringCchPrintfA, ntstrsafe/RtlStringCchPrintfW, RtlStringCchPrintfW, safestrings_d1041cf8-bec9-4eef-8de8-7b662d474263.xml, RtlStringCchPrintf, RtlStringCchPrintfW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchprintf
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,7 +67,7 @@ The size of the destination buffer, in characters. The buffer must be large enou
 
 A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="http://msdn.microsoft.com/en-us/library/56e442dc.aspx">formatting directives</a>.
 
-``
+`Arg1`
 
 
 
@@ -189,14 +189,11 @@ Neither <i>pszFormat</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1). Available starting with Windows XP with Service Pack 1 (SP1). |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

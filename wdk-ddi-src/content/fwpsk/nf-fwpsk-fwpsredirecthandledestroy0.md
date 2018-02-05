@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0859c9bb-04f2-4bef-9da7-da72375d05f7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.fwpsredirecthandledestroy0, FwpsRedirectHandleDestroy0, FwpsRedirectHandleDestroy0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsRedirectHandleDestroy0
+ms.keywords : FwpsRedirectHandleDestroy0, netvista.fwpsredirecthandledestroy0, fwpsk/FwpsRedirectHandleDestroy0, FwpsRedirectHandleDestroy0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,11 @@ A callout driver calls the <b>FwpsRedirectHandleDestroy0</b> function to destroy
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -62,7 +62,7 @@ The handler of a device.
 
 `*pArgs`
 
-
+The arguments used to create a video processor.
 
 
 ## Return Value
@@ -76,11 +76,5 @@ The  runtime allocates memory for storing the driver CPU object that represents 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

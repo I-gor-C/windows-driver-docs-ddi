@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2d3717c2-c809-48b9-a84b-1e69a04b767e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_7eee8a99-f7c3-41d3-8b16-1906ef301f47.xml, rxstruc/RxGetRDBSSProcess, RxGetRDBSSProcess function [Installable File System Drivers], ifsk.rxgetrdbssprocess, RxGetRDBSSProcess
+ms.keywords : RxGetRDBSSProcess, RxGetRDBSSProcess function [Installable File System Drivers], rxref_7eee8a99-f7c3-41d3-8b16-1906ef301f47.xml, ifsk.rxgetrdbssprocess, rxstruc/RxGetRDBSSProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,14 +64,10 @@ When <b>RxDriverEntry</b> is called to initialize RDBSS, a pointer to the kernel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxstruc.h (include Rxstruc.h, Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

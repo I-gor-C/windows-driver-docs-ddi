@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3390A01D-BD4B-4399-AA3E-91BB32264A13
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtupdategpuvirtualaddress, d3dkmthk/D3DKMTUpdateGpuVirtualAddress, D3DKMTUpdateGpuVirtualAddress function [Display Devices], D3DKMTUpdateGpuVirtualAddress
+ms.keywords : D3DKMTUpdateGpuVirtualAddress, display.d3dkmtupdategpuvirtualaddress, d3dkmthk/D3DKMTUpdateGpuVirtualAddress, D3DKMTUpdateGpuVirtualAddress function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,14 +108,11 @@ In a single <b>UpdateVirtualAddress</b> call:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 

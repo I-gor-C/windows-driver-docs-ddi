@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 07928837-321C-4501-BDFF-4611BF6912F6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.kstelephony_providerchange, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], ksmedia/KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE, ksmedia/PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices], _tagKSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE
+ms.keywords : ksmedia/KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE, audio.kstelephony_providerchange, *PKSTELEPHONY_PROVIDERCHANGE, _tagKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], ksmedia/PKSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE"
+req.typenames : KSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE
 ---
 
 # _tagKSTELEPHONY_PROVIDERCHANGE structure
@@ -68,7 +68,5 @@ When the provider change operation is TELEPHONY_PROVIDERCHANGEOP_BEGIN, the driv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |

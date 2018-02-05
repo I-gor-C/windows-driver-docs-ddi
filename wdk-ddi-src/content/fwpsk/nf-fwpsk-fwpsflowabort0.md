@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 029dd387-498f-4402-9e61-a46688294949
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsFlowAbort0 function [Network Drivers Starting with Windows Vista], FwpsFlowAbort0, fwpsk/FwpsFlowAbort0, netvista.fwpsflowabort0
+ms.keywords : FwpsFlowAbort0, fwpsk/FwpsFlowAbort0, netvista.fwpsflowabort0, FwpsFlowAbort0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,20 +101,17 @@ A callout driver can call the <b>FwpsFlowAbort0</b> function to abort a data flo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
-
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
  
 

@@ -59,11 +59,9 @@ Completes the given extension event with either a cancellation  or success.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **DLL** |  |
 
 ## See Also
 

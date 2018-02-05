@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : EE7644A9-AA57-4C53-9FA5-F844F2BFB0D7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxWdfDeviceAddUsbDeviceEmulation, udecxwdfdevice/UdecxWdfDeviceAddUsbDeviceEmulation, UdecxWdfDeviceAddUsbDeviceEmulation function [Buses], buses.udecxwdfdeviceaddusbdeviceemulation
+ms.keywords : UdecxWdfDeviceAddUsbDeviceEmulation function [Buses], udecxwdfdevice/UdecxWdfDeviceAddUsbDeviceEmulation, UdecxWdfDeviceAddUsbDeviceEmulation, buses.udecxwdfdeviceaddusbdeviceemulation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,12 @@ The method makes the framework device object capable of performing operations re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxwdfdevice.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

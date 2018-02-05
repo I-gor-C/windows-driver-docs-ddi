@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e281c67a-df97-464e-9996-b15c18172dc4
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint2, IDebugBreakpoint::GetDataParameters, GetDataParameters method [Windows Debugging], IDebugBreakpoint interface, GetDataParameters method [Windows Debugging], IDebugBreakpoint interface [Windows Debugging], GetDataParameters method, IDebugBreakpoint2 interface [Windows Debugging], GetDataParameters method, debugger.getdataparameters, ComOther_297fe316-4a1a-476b-a804-056bb56b6e77.xml, dbgeng/IDebugBreakpoint2::GetDataParameters, GetDataParameters method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2::GetDataParameters, GetDataParameters, dbgeng/IDebugBreakpoint::GetDataParameters
+ms.keywords : GetDataParameters method [Windows Debugging], GetDataParameters method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetDataParameters, IDebugBreakpoint2, debugger.getdataparameters, IDebugBreakpoint2 interface [Windows Debugging], GetDataParameters method, IDebugBreakpoint::GetDataParameters, ComOther_297fe316-4a1a-476b-a804-056bb56b6e77.xml, IDebugBreakpoint interface [Windows Debugging], GetDataParameters method, GetDataParameters method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::GetDataParameters, GetDataParameters, IDebugBreakpoint2::GetDataParameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -104,11 +104,6 @@ For more information about breakpoint properties, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

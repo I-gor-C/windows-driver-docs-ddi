@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 75304f5d-8a07-4db5-9f20-5764ff5d2ef6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdevice_retrievedevicename, IWDFDevice interface, RetrieveDeviceName method, wudfddi/IWDFDevice::RetrieveDeviceName, RetrieveDeviceName, RetrieveDeviceName method, IWDFDevice, wdf.iwdfdevice_retrievedevicename, RetrieveDeviceName method, IWDFDevice interface, UMDFDeviceObjectRef_6d24ee3e-719a-4408-90ea-89cc9315b8cb.xml, IWDFDevice::RetrieveDeviceName
+ms.keywords : IWDFDevice interface, RetrieveDeviceName method, wudfddi/IWDFDevice::RetrieveDeviceName, umdf.iwdfdevice_retrievedevicename, IWDFDevice::RetrieveDeviceName, RetrieveDeviceName, RetrieveDeviceName method, IWDFDevice interface, IWDFDevice, wdf.iwdfdevice_retrievedevicename, RetrieveDeviceName method, UMDFDeviceObjectRef_6d24ee3e-719a-4408-90ea-89cc9315b8cb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -91,14 +91,12 @@ The device name is not the physical device object (PDO) name. Instead, the devic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

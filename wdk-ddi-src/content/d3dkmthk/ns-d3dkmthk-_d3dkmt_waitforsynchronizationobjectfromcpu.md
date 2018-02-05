@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 76091965-D87B-4429-85A8-EC8085C773D7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], display.d3dkmt_waitforsynchronizationobjectfromcpu, WaitAny, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+ms.keywords : display.d3dkmt_waitforsynchronizationobjectfromcpu, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, WaitAny, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -112,9 +112,7 @@ The wait condition is considered to be satisfied when any of the input synchroni
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

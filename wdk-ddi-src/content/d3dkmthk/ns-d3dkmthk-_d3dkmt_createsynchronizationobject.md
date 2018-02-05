@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e4e1fd7-9a36-4c35-8d9d-932a0d2e60a2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATESYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_CREATESYNCHRONIZATIONOBJECT, _D3DKMT_CREATESYNCHRONIZATIONOBJECT, display.d3dkmt_createsynchronizationobject, D3DKMT_CREATESYNCHRONIZATIONOBJECT structure [Display Devices], OpenGL_Structs_918a7c9b-3dba-4af3-aa2c-334861301304.xml
+ms.keywords : OpenGL_Structs_918a7c9b-3dba-4af3-aa2c-334861301304.xml, d3dkmthk/D3DKMT_CREATESYNCHRONIZATIONOBJECT, display.d3dkmt_createsynchronizationobject, _D3DKMT_CREATESYNCHRONIZATIONOBJECT, D3DKMT_CREATESYNCHRONIZATIONOBJECT, D3DKMT_CREATESYNCHRONIZATIONOBJECT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_CREATESYNCHRONIZATIONOBJECT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

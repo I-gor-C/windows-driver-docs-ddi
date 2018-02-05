@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : eb6a50b4-275f-42c9-8121-17677971ebb2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2::GetIndexByNameWide, debugger.getindexbynamewide, dbgeng/IDebugRegisters2::GetIndexByNameWide, GetIndexByNameWide, GetIndexByNameWide method [Windows Debugging], IDebugRegisters2 interface, GetIndexByNameWide method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], GetIndexByNameWide method, IDebugRegisters2
+ms.keywords : IDebugRegisters2::GetIndexByNameWide, dbgeng/IDebugRegisters2::GetIndexByNameWide, IDebugRegisters2 interface [Windows Debugging], GetIndexByNameWide method, debugger.getindexbynamewide, IDebugRegisters2, GetIndexByNameWide method [Windows Debugging], IDebugRegisters2 interface, GetIndexByNameWide method [Windows Debugging], GetIndexByNameWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,11 +101,6 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

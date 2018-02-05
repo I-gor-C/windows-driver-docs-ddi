@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a13b5411-a0dd-4a54-98a8-419e2f0e95b8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kstruct_b_3796aa61-042a-435d-bfa9-c77c6a0dff98.xml, *PFILE_DISPOSITION_INFORMATION, PFILE_DISPOSITION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], ntddk/PFILE_DISPOSITION_INFORMATION, _FILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_DISPOSITION_INFORMATION, kernel.file_disposition_information, ntddk/FILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION
+ms.keywords : PFILE_DISPOSITION_INFORMATION, kernel.file_disposition_information, ntddk/FILE_DISPOSITION_INFORMATION, PFILE_DISPOSITION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PFILE_DISPOSITION_INFORMATION, _FILE_DISPOSITION_INFORMATION, kstruct_b_3796aa61-042a-435d-bfa9-c77c6a0dff98.xml, ntddk/PFILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION structure [Kernel-Mode Driver Architecture], FILE_DISPOSITION_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,9 +63,6 @@ A file marked for deletion is not actually deleted until all open handles for th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
 ## See Also

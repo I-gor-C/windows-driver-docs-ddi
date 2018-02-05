@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b560ce42-3c5c-4766-bb9c-6590b7113ecd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportinitialize, StorPortInitialize routine [Storage Devices], storport/StorPortInitialize, storprt_c60ad9af-507c-42e1-9f8a-04e3378bc37b.xml, StorPortInitialize
+ms.keywords : storprt_c60ad9af-507c-42e1-9f8a-04e3378bc37b.xml, storport/StorPortInitialize, StorPortInitialize, StorPortInitialize routine [Storage Devices], storage.storportinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -159,20 +159,15 @@ Every miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
-
 <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
+
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
  
 

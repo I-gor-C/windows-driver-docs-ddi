@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e4151e72-e0a6-4873-a2e8-c3321941cfd4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure [Display Devices], display.dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, d3dkmdt/DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DmStructs_64a3857d-3c66-4653-980b-72df307eba0f.xml
+ms.keywords : DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure [Display Devices], display.dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters, d3dkmdt/DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DmStructs_64a3857d-3c66-4653-980b-72df307eba0f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,9 +104,7 @@ Reserved. Must be set to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 38e22922-d9de-4dfd-9da9-c131b789f5d6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfiotargetgetstate, WdfIoTargetGetState method, wdfiotarget/WdfIoTargetGetState, DFIOTargetRef_a11b8879-0766-4071-b1bd-c4cd43a0973b.xml, PFN_WDFIOTARGETGETSTATE, wdf.wdfiotargetgetstate, WdfIoTargetGetState
+ms.keywords : WdfIoTargetGetState, kmdf.wdfiotargetgetstate, PFN_WDFIOTARGETGETSTATE, wdfiotarget/WdfIoTargetGetState, DFIOTargetRef_a11b8879-0766-4071-b1bd-c4cd43a0973b.xml, WdfIoTargetGetState method, wdf.wdfiotargetgetstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,20 +75,19 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_target_state.md">WDF_IO_TARGET_STATE</a>
 

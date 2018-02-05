@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c0a2646c-aa0a-4946-999f-a78d1c488752
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_MSGVP_ENHANCED, ntddrilapitypes/RIL_MSGVP_ABSOLUTE, RIL_MSGVP_ABSOLUTE, RILMSGOUTSUBMITVPFORMAT enumeration [Network Drivers Starting with Windows Vista], RIL_MSGVP_MAX, ntddrilapitypes/RIL_MSGVP_ENHANCED, ntddrilapitypes/RIL_MSGVP_MAX, RIL_MSGVP_RELATIVE, ntddrilapitypes/RILMSGOUTSUBMITVPFORMAT, ntddrilapitypes/RIL_MSGVP_RELATIVE, RILMSGOUTSUBMITVPFORMAT, netvista.rilmsgoutsubmitvpformat
+ms.keywords : ntddrilapitypes/RIL_MSGVP_MAX, RILMSGOUTSUBMITVPFORMAT, RIL_MSGVP_RELATIVE, RIL_MSGVP_MAX, ntddrilapitypes/RIL_MSGVP_ENHANCED, ntddrilapitypes/RIL_MSGVP_ABSOLUTE, netvista.rilmsgoutsubmitvpformat, ntddrilapitypes/RIL_MSGVP_RELATIVE, RIL_MSGVP_ABSOLUTE, RILMSGOUTSUBMITVPFORMAT enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILMSGOUTSUBMITVPFORMAT, RIL_MSGVP_ENHANCED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILMSGOUTSUBMITVPFORMAT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

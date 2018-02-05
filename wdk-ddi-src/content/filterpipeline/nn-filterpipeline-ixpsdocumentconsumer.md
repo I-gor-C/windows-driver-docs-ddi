@@ -64,8 +64,5 @@ A filter uses the <code>IXpsDocumentConsumer</code> interface when it generates 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **DLL** |  |

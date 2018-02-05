@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b3bd9b9f-e859-4d7f-9735-5995cb3ef6e8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_1d515511-d1dd-4090-9c9d-b87960d56f5c.xml, RxIsThisACscAgentOpen, ifsk.rxisthisacscagentopen, rxprocs/RxIsThisACscAgentOpen, RxIsThisACscAgentOpen function [Installable File System Drivers]
+ms.keywords : RxIsThisACscAgentOpen, RxIsThisACscAgentOpen function [Installable File System Drivers], rxref_1d515511-d1dd-4090-9c9d-b87960d56f5c.xml, ifsk.rxisthisacscagentopen, rxprocs/RxIsThisACscAgentOpen
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,20 +71,17 @@ The <b>RxIsThisACscAgentOpen</b> routine is called internally by RDBSS when init
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later. The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later. |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxcontx.h, Rxprocs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
-
 <a href="https://msdn.microsoft.com/866eba91-13b6-4b15-93de-4f627a635c92">The V_NET_ROOT Structure</a>
+
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3223a1bb-ab6c-45d7-9f9a-367a3aa7d465
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsMapModuleName, ksfunc_76aec7fa-5e31-46d7-b94d-d7bccac7c3cd.xml, KsMapModuleName function [Streaming Media Devices], KsMapModuleName, stream.ksmapmodulename
+ms.keywords : ksfunc_76aec7fa-5e31-46d7-b94d-d7bccac7c3cd.xml, KsMapModuleName function [Streaming Media Devices], stream.ksmapmodulename, ks/KsMapModuleName, KsMapModuleName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,9 @@ Pointer to a location into which the function returns the value type of the spec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

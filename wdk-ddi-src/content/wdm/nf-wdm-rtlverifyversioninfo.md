@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7c0ca9a0-dfa4-44ab-8d3a-ab43f72c806f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlVerifyVersionInfo, wdm/RtlVerifyVersionInfo, k109_c0301686-a323-499f-ac04-3bc414b016cd.xml, RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], kernel.rtlverifyversioninfo
+ms.keywords : RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], kernel.rtlverifyversioninfo, k109_c0301686-a323-499f-ac04-3bc414b016cd.xml, RtlVerifyVersionInfo, wdm/RtlVerifyVersionInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -184,98 +184,6 @@ Set the <i>TypeBitMask</i> and <i>ComparisonType</i> parameters for each call to
 </ul>
 
 
-#### TypeBitMask
-
-Indicates the <i>VersionInfo</i> member for which the comparison type is set. <i>TypeBitMask</i> can be one of the following values.
-        
-<table>
-<tr>
-<th>Value</th>
-<th>Corresponding member</th>
-</tr>
-<tr>
-<td>
-VER_BUILDNUMBER
-
-</td>
-<td>
-<b>dwBuildNumber</b>
-
-</td>
-</tr>
-<tr>
-<td>
-VER_MAJORVERSION
-
-</td>
-<td>
-<b>dwMajorVersion</b>
-
-</td>
-</tr>
-<tr>
-<td>
-VER_MINORVERSION
-
-</td>
-<td>
-<b>dwMinorVersion</b>
-
-</td>
-</tr>
-<tr>
-<td>
-VER_PLATFORMID
-
-</td>
-<td>
-<b>dwPlatformId</b>
-
-</td>
-</tr>
-<tr>
-<td>
-VER_SERVICEPACKMAJOR
-
-</td>
-<td>
-<b>wServicePackMajor</b>
-
-</td>
-</tr>
-<tr>
-<td>
-VER_SERVICEPACKMINOR
-
-</td>
-<td>
-<b>wServicePackMinor</b>
-
-</td>
-</tr>
-<tr>
-<td>
-VER_SUITENAME
-
-</td>
-<td>
-<b>wSuiteMask</b>
-
-</td>
-</tr>
-<tr>
-<td>
-VER_PRODUCT_TYPE
-
-</td>
-<td>
-<b>wProductType</b>
-
-</td>
-</tr>
-</table> 
-
-
 #### ComparisonType
 
 Specifies the comparison type that <b>RtlVerifyVersionInfo</b> uses to compare the <b>VersionInfo</b> member specified by <i>TypeBitMask</i> with the corresponding attribute of the currently running operating system.
@@ -365,6 +273,98 @@ At least one of the specified product suites must be present in the current syst
 
 </td>
 </tr>
+</table> 
+
+
+#### TypeBitMask
+
+Indicates the <i>VersionInfo</i> member for which the comparison type is set. <i>TypeBitMask</i> can be one of the following values.
+        
+<table>
+<tr>
+<th>Value</th>
+<th>Corresponding member</th>
+</tr>
+<tr>
+<td>
+VER_BUILDNUMBER
+
+</td>
+<td>
+<b>dwBuildNumber</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_MAJORVERSION
+
+</td>
+<td>
+<b>dwMajorVersion</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_MINORVERSION
+
+</td>
+<td>
+<b>dwMinorVersion</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_PLATFORMID
+
+</td>
+<td>
+<b>dwPlatformId</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_SERVICEPACKMAJOR
+
+</td>
+<td>
+<b>wServicePackMajor</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_SERVICEPACKMINOR
+
+</td>
+<td>
+<b>wServicePackMinor</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_SUITENAME
+
+</td>
+<td>
+<b>wSuiteMask</b>
+
+</td>
+</tr>
+<tr>
+<td>
+VER_PRODUCT_TYPE
+
+</td>
+<td>
+<b>wProductType</b>
+
+</td>
+</tr>
 </table>
 
 
@@ -434,22 +434,20 @@ If the major service pack version exceeds the minimum required, then the minor s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
 
 <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
 
 <a href="..\wdm\ns-wdm-_osversioninfow.md">RTL_OSVERSIONINFOW</a>
+
+<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
 
  
 

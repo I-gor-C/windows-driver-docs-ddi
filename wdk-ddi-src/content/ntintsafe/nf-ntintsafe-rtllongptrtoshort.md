@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 934967A0-9CEF-4377-9505-EE4C4E9AF706
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongPtrToShort, kernel.rtllongptrtoshort, RtlLongPtrToShort function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongPtrToShort
+ms.keywords : ntintsafe/RtlLongPtrToShort, kernel.rtllongptrtoshort, RtlLongPtrToShort, RtlLongPtrToShort function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ RtlLongPtrToInt16
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

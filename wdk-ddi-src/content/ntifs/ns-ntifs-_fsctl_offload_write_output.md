@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7293940B-A316-43C5-A5E8-6ED70EC6FDF8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FSCTL_OFFLOAD_WRITE_OUTPUT, ntifs/PFSCTL_OFFLOAD_WRITE_OUTPUT, PFSCTL_OFFLOAD_WRITE_OUTPUT structure pointer [Installable File System Drivers], OFFLOAD_READ_FLAG_FILE_TOO_SMALL, FSCTL_OFFLOAD_WRITE_OUTPUT, ifsk.fsctl_offload_write_output, FSCTL_OFFLOAD_WRITE_OUTPUT structure [Installable File System Drivers], *PFSCTL_OFFLOAD_WRITE_OUTPUT, PFSCTL_OFFLOAD_WRITE_OUTPUT, _FSCTL_OFFLOAD_WRITE_OUTPUT
+ms.keywords : PFSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT, _FSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT, ifsk.fsctl_offload_write_output, OFFLOAD_READ_FLAG_FILE_TOO_SMALL, ntifs/FSCTL_OFFLOAD_WRITE_OUTPUT, ntifs/PFSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT structure [Installable File System Drivers], PFSCTL_OFFLOAD_WRITE_OUTPUT structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,9 +90,7 @@ The resulting length written, <b>LengthWritten</b>, may be smaller than what was
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

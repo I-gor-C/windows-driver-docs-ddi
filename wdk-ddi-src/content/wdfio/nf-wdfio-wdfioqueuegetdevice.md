@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 68f0038d-6c2e-4228-86b2-c96bea789474
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfioqueuegetdevice, PFN_WDFIOQUEUEGETDEVICE, WdfIoQueueGetDevice, kmdf.wdfioqueuegetdevice, WdfIoQueueGetDevice method, DFQueueObjectRef_4f5c8dbb-feb5-4c08-a2ea-06d375d5a6be.xml, wdfio/WdfIoQueueGetDevice
+ms.keywords : DFQueueObjectRef_4f5c8dbb-feb5-4c08-a2ea-06d375d5a6be.xml, wdf.wdfioqueuegetdevice, PFN_WDFIOQUEUEGETDEVICE, WdfIoQueueGetDevice method, kmdf.wdfioqueuegetdevice, WdfIoQueueGetDevice, wdfio/WdfIoQueueGetDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,11 @@ For more information about the <b>WdfIoQueueGetDevice</b> method, see <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F566E078-9446-49E1-9325-AF65F3ABB6B9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE, kernel.pep_acpi_initialize_extended_memory_resource, PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE, PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE function [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.pep_acpi_initialize_extended_memory_resource, PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE function [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE, PEP_ACPI_INITIALIZE_EXTENDED_MEMORY_RESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
+req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 
@@ -249,14 +249,10 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Target Platform** | Windows |
 | **Header** | pepfx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

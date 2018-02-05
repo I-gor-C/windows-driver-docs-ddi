@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 042378f0-aa0f-49be-b881-86558ad33baf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice interface, UnregisterSubdevice, audmp-routines_8fb24a5e-af25-42e0-a96e-2f4728f17cde.xml, portcls/IUnregisterSubdevice::UnregisterSubdevice, audio.iunregistersubdevice_unregistersubdevice, IUnregisterSubdevice interface [Audio Devices], UnregisterSubdevice method, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice
+ms.keywords : audio.iunregistersubdevice_unregistersubdevice, IUnregisterSubdevice, UnregisterSubdevice, IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice interface, audmp-routines_8fb24a5e-af25-42e0-a96e-2f4728f17cde.xml, portcls/IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice interface [Audio Devices], UnregisterSubdevice method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -73,24 +73,20 @@ For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\portcls\nn-portcls-iunregistersubdevice.md">IUnregisterSubdevice</a>
 
-<a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>
-
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>
 
  
 

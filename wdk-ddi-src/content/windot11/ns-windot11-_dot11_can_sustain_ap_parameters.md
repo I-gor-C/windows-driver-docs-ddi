@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8d7995f3-6cc1-4f3c-a016-b31dc69ddd7f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_CAN_SUSTAIN_AP_PARAMETERS, DOT11_CAN_SUSTAIN_AP_PARAMETERS, DOT11_CAN_SUSTAIN_AP_PARAMETERS structure [Network Drivers Starting with Windows Vista], _DOT11_CAN_SUSTAIN_AP_PARAMETERS, windot11/PDOT11_CAN_SUSTAIN_AP_PARAMETERS, PDOT11_CAN_SUSTAIN_AP_PARAMETERS, netvista.dot11_can_sustain_ap_parameters, *PDOT11_CAN_SUSTAIN_AP_PARAMETERS, Native_802.11_data_types_4f647d9c-29f9-4b57-9906-e66d1a76272a.xml, PDOT11_CAN_SUSTAIN_AP_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : Native_802.11_data_types_4f647d9c-29f9-4b57-9906-e66d1a76272a.xml, PDOT11_CAN_SUSTAIN_AP_PARAMETERS, windot11/DOT11_CAN_SUSTAIN_AP_PARAMETERS, *PDOT11_CAN_SUSTAIN_AP_PARAMETERS, windot11/PDOT11_CAN_SUSTAIN_AP_PARAMETERS, _DOT11_CAN_SUSTAIN_AP_PARAMETERS, DOT11_CAN_SUSTAIN_AP_PARAMETERS structure [Network Drivers Starting with Windows Vista], DOT11_CAN_SUSTAIN_AP_PARAMETERS, netvista.dot11_can_sustain_ap_parameters, PDOT11_CAN_SUSTAIN_AP_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,11 +70,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_CAN_SUSTAIN_AP_PARAMETERS_REVISION_1.
@@ -84,6 +79,11 @@ This member must be set to DOT11_CAN_SUSTAIN_AP_PARAMETERS_REVISION_1.
 
 This member must be set to 
        <b>sizeof</b>(DOT11_CAN_SUSTAIN_AP_PARAMETERS).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `ulReason`
 
@@ -110,23 +110,21 @@ The start value of possible IHV-specified reasons.
 ## Remarks
 The Native 802.11 miniport driver includes a DOT11_CAN_SUSTAIN_AP_PARAMETERS structure when the driver
     makes an 
-    <mshelp:link keywords="netvista.ndis_status_dot11_can_sustain_ap" tabindex="0">
-    NDIS_STATUS_DOT11_CAN_SUSTAIN_AP</mshelp:link> status indication.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-can-sustain-ap">
+    NDIS_STATUS_DOT11_CAN_SUSTAIN_AP</a> status indication.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_status_dot11_can_sustain_ap" tabindex="0">
-   NDIS_STATUS_DOT11_CAN_SUSTAIN_AP</mshelp:link>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-can-sustain-ap">
+   NDIS_STATUS_DOT11_CAN_SUSTAIN_AP</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a0749324-8b4e-4b82-8c51-b1b8883d521e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicegetiotarget, DFDeviceObjectGeneralRef_df48e631-f54d-4985-bc74-05c220b735f5.xml, WdfDeviceGetIoTarget, wdfdevice/WdfDeviceGetIoTarget, PFN_WDFDEVICEGETIOTARGET, kmdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget method
+ms.keywords : DFDeviceObjectGeneralRef_df48e631-f54d-4985-bc74-05c220b735f5.xml, kmdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget method, wdfdevice/WdfDeviceGetIoTarget, PFN_WDFDEVICEGETIOTARGET, wdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,11 +77,10 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

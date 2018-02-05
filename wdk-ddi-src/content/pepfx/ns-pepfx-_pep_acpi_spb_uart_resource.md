@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3E8C7E47-EFCD-4261-9258-61C6A262287A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_ACPI_SPB_UART_RESOURCE, PPEP_ACPI_SPB_UART_RESOURCE structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_SPB_UART_RESOURCE, 7, *PPEP_ACPI_SPB_UART_RESOURCE, pepfx/PEP_ACPI_SPB_UART_RESOURCE, 3, PEP_ACPI_SPB_UART_RESOURCE structure [Kernel-Mode Driver Architecture], 6, 5, PPEP_ACPI_SPB_UART_RESOURCE, 0, 1, kernel.pep_acpi_spb_uart_resource, 4, _PEP_ACPI_SPB_UART_RESOURCE, 2
+ms.keywords : PEP_ACPI_SPB_UART_RESOURCE, PEP_ACPI_SPB_UART_RESOURCE structure [Kernel-Mode Driver Architecture], 5, _PEP_ACPI_SPB_UART_RESOURCE, 0, kernel.pep_acpi_spb_uart_resource, 1, 2, PPEP_ACPI_SPB_UART_RESOURCE, 6, 7, PPEP_ACPI_SPB_UART_RESOURCE structure pointer [Kernel-Mode Driver Architecture], *PPEP_ACPI_SPB_UART_RESOURCE, pepfx/PEP_ACPI_SPB_UART_RESOURCE, pepfx/PPEP_ACPI_SPB_UART_RESOURCE, 3, 4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_ACPI_SPB_UART_RESOURCE, PEP_ACPI_SPB_UART_RESOURCE"
+req.typenames : PEP_ACPI_SPB_UART_RESOURCE, *PPEP_ACPI_SPB_UART_RESOURCE
 ---
 
 # _PEP_ACPI_SPB_UART_RESOURCE structure
@@ -231,9 +231,7 @@ The maximum transmit buffer size, in bytes, that is supported by this connection
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

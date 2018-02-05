@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5e257b72-fe16-49a0-9232-9c791a88e903
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iogetremainingstacksize, IoGetRemainingStackSize, IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml, wdm/IoGetRemainingStackSize
+ms.keywords : k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml, IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], kernel.iogetremainingstacksize, IoGetRemainingStackSize, wdm/IoGetRemainingStackSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,11 @@ For Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows, call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : df28ae8f-01f7-42c5-99df-2a3fc7401173
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DxgkPowerStateEvent, dispmprt/DxgkPowerStateEvent, *PDXGK_EVENT_TYPE, PDXGK_EVENT_TYPE, dispmprt/PDXGK_EVENT_TYPE, DmEnums_94bee105-be3f-4268-982e-be8581bb9bc0.xml, IN_DXGK_EVENT_TYPE, DxgkDockingEvent, display.dxgk_event_type, DXGK_EVENT_TYPE enumeration [Display Devices], DxgkUndefinedEvent, dispmprt/DxgkUndefinedEvent, DxgkAcpiEvent, _DXGK_EVENT_TYPE, dispmprt/DxgkAcpiEvent, dispmprt/DxgkDockingEvent, DXGK_EVENT_TYPE, PDXGK_EVENT_TYPE enumeration pointer [Display Devices], dispmprt/DXGK_EVENT_TYPE
+ms.keywords : "*PDXGK_EVENT_TYPE, dispmprt/DxgkUndefinedEvent, DxgkAcpiEvent, dispmprt/PDXGK_EVENT_TYPE, PDXGK_EVENT_TYPE enumeration pointer [Display Devices], display.dxgk_event_type, DxgkDockingEvent, _DXGK_EVENT_TYPE, PDXGK_EVENT_TYPE, DmEnums_94bee105-be3f-4268-982e-be8581bb9bc0.xml, DXGK_EVENT_TYPE, dispmprt/DxgkPowerStateEvent, IN_DXGK_EVENT_TYPE, dispmprt/DxgkAcpiEvent, DxgkUndefinedEvent, DXGK_EVENT_TYPE enumeration [Display Devices], DxgkPowerStateEvent, dispmprt/DXGK_EVENT_TYPE, dispmprt/DxgkDockingEvent"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE
+req.typenames : "*PDXGK_EVENT_TYPE, DXGK_EVENT_TYPE"
 ---
 
 # _DXGK_EVENT_TYPE Enumeration
@@ -85,9 +85,7 @@ typedef enum _DXGK_EVENT_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 51b16308-47a8-42e0-9393-fd93045e4e47
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : dmusprop/PSYNTH_BUFFER, PSYNTH_BUFFER structure pointer [Audio Devices], _SYNTH_BUFFER, SYNTH_BUFFER, audio.synth_buffer, SYNTH_BUFFER structure [Audio Devices], *PSYNTH_BUFFER, dmusprop/SYNTH_BUFFER, aud-prop_297e165a-cb0d-4ea1-b69c-b65bcb4ee69a.xml, PSYNTH_BUFFER
+ms.keywords : aud-prop_297e165a-cb0d-4ea1-b69c-b65bcb4ee69a.xml, dmusprop/SYNTH_BUFFER, audio.synth_buffer, _SYNTH_BUFFER, PSYNTH_BUFFER structure pointer [Audio Devices], *PSYNTH_BUFFER, SYNTH_BUFFER, SYNTH_BUFFER structure [Audio Devices], PSYNTH_BUFFER, dmusprop/PSYNTH_BUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYNTH_BUFFER, SYNTH_BUFFER"
+req.typenames : SYNTH_BUFFER, *PSYNTH_BUFFER
 ---
 
 # _SYNTH_BUFFER structure
@@ -66,9 +66,6 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537396">KSPROPE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
 ## See Also

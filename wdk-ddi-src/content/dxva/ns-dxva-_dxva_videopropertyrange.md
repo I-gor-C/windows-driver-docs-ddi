@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e78fa9ba-7573-47db-b4d8-9b7584d5b432
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPDXVA_VideoPropertyRange, dxva/DXVA_VideoPropertyRange, dxvaref_0e7bc2aa-0404-4025-908a-5d4c528e020b.xml, display.dxva_videopropertyrange, LPDXVA_VideoPropertyRange structure pointer [Display Devices], _DXVA_VideoPropertyRange, DXVA_VideoPropertyRange structure [Display Devices], DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange, dxva/LPDXVA_VideoPropertyRange
+ms.keywords : dxva/LPDXVA_VideoPropertyRange, _DXVA_VideoPropertyRange, LPDXVA_VideoPropertyRange structure pointer [Display Devices], DXVA_VideoPropertyRange, *LPDXVA_VideoPropertyRange, DXVA_VideoPropertyRange structure [Display Devices], LPDXVA_VideoPropertyRange, dxva/DXVA_VideoPropertyRange, dxvaref_0e7bc2aa-0404-4025-908a-5d4c528e020b.xml, display.dxva_videopropertyrange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ Specifies the step size increment for a given property.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DirectX 9.0 and later versions only. DirectX 9.0 and later versions only. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

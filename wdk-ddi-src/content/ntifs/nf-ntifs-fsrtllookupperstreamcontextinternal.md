@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 672fc668-452b-4f37-9526-88bedb4a1ef9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlLookupPerStreamContextInternal, ifsk.fsrtllookupperstreamcontextinternal, ntifs/FsRtlLookupPerStreamContextInternal, fsrtlref_872d7113-0cde-4ac9-a504-fedca6aa51e7.xml, FsRtlLookupPerStreamContextInternal function [Installable File System Drivers]
+ms.keywords : ntifs/FsRtlLookupPerStreamContextInternal, FsRtlLookupPerStreamContextInternal function [Installable File System Drivers], fsrtlref_872d7113-0cde-4ac9-a504-fedca6aa51e7.xml, FsRtlLookupPerStreamContextInternal, ifsk.fsrtllookupperstreamcontextinternal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

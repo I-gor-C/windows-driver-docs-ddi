@@ -74,9 +74,8 @@ The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the reque
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

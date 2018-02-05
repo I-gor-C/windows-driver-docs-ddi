@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY"
+req.typenames : SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -109,26 +109,22 @@ To register an <i>EvtSpbControllerIoOther</i> callback function, call the <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | spbcx.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
-
-<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
+<a href="https://msdn.microsoft.com/605E2353-8C82-4005-BB72-4CB44146A253">SpbControllerSetIoOther</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
 
+<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
+
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_device_control.md">EvtIoDeviceControl</a>
 
-<a href="https://msdn.microsoft.com/605E2353-8C82-4005-BB72-4CB44146A253">SpbControllerSetIoOther</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
 
  
 

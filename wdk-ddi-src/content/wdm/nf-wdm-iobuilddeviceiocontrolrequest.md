@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dde2a45d-9257-4d94-928a-e25f112b2773
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoBuildDeviceIoControlRequest, k104_dca88c92-682a-437e-963b-6fac4e9c39bf.xml, kernel.iobuilddeviceiocontrolrequest, IoBuildDeviceIoControlRequest routine [Kernel-Mode Driver Architecture], IoBuildDeviceIoControlRequest
+ms.keywords : kernel.iobuilddeviceiocontrolrequest, k104_dca88c92-682a-437e-963b-6fac4e9c39bf.xml, IoBuildDeviceIoControlRequest, IoBuildDeviceIoControlRequest routine [Kernel-Mode Driver Architecture], wdm/IoBuildDeviceIoControlRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,12 +121,11 @@ The actual method by which the contents of the <i>InputBuffer</i> and <i>OutputB
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IoAllocateIrpSignalEventInCompletion, IoAllocateIrpSignalEventInCompletion2, IoAllocateIrpSignalEventInCompletion3, IoBuildDeviceControlNoFree, IoBuildDeviceControlWait, IoBuildDeviceControlWaitTimeout, IoBuildDeviceIoControlSetEvent, IrqlIoPassive1, PowerIrpDDis, SignalEventInCompletion, HwStorPortProhibitedDDIs |
 
@@ -134,21 +133,21 @@ The actual method by which the contents of the <i>InputBuffer</i> and <i>OutputB
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
-
-<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
-
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
-
 <a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
+
+<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
 
 <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+
 <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
 
-<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
  
 

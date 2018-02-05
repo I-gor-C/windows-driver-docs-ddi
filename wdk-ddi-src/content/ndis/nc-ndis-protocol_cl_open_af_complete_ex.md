@@ -66,8 +66,8 @@ void ProtocolClOpenAfCompleteEx(
 
 A client-supplied handle to its context area for an address AF. The client allocated this context
      area and passed this handle to NDIS in its call to the 
-     <mshelp:link keywords="netvista.ndisclopenaddressfamilyex" tabindex="0"><b>
-     NdisClOpenAddressFamilyEx</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
+     NdisClOpenAddressFamilyEx</a> function.
 
 `NdisAfHandle`
 
@@ -86,23 +86,6 @@ The final status of the client's call to
      
 
 
-
-
-#### NDIS_STATUS_SUCCESS
-
-The AF has been opened, so the client can initialize its state at 
-       <i>ProtocolAfContext</i> and use the returned handle from 
-       <i>NdisAfHandle</i> in subsequent calls to 
-       <b>NdisCl<i>Xxx</i></b> and 
-       <b>NdisCo<i>Xxx</i></b> functions, such as 
-       <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>.
-
-
-#### NDIS_STATUS_RESOURCES
-
-The requested operation failed because NDIS or the call manager could not allocate sufficient
-       memory or initialize the state that one of them uses to track the client's open of the AF that 
-       <i>ProtocolAfContext</i> specifies.
 
 
 #### NDIS_STATUS_FAILURE
@@ -126,6 +109,22 @@ The call manager that registered the specified AF is closing its binding to the 
 </li>
 </ul>
 
+#### NDIS_STATUS_RESOURCES
+
+The requested operation failed because NDIS or the call manager could not allocate sufficient
+       memory or initialize the state that one of them uses to track the client's open of the AF that 
+       <i>ProtocolAfContext</i> specifies.
+
+
+#### NDIS_STATUS_SUCCESS
+
+The AF has been opened, so the client can initialize its state at 
+       <i>ProtocolAfContext</i> and use the returned handle from 
+       <i>NdisAfHandle</i> in subsequent calls to 
+       <b>NdisCl<i>Xxx</i></b> and 
+       <b>NdisCo<i>Xxx</i></b> functions, such as 
+       <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>.
+
 
 ## Return Value
 
@@ -137,16 +136,16 @@ The
     <i>ProtocolClOpenAfCompleteEx</i> function is required for CoNDIS clients. CoNDIS clients must provide 
     <i>ProtocolClOpenAfCompleteEx</i> to complete the asynchronous operations that the clients initiate by
     calling the 
-    <mshelp:link keywords="netvista.ndisclopenaddressfamilyex" tabindex="0"><b>
-    NdisClOpenAddressFamilyEx</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
+    NdisClOpenAddressFamilyEx</a> function.
 
 NDIS calls 
     <i>ProtocolClOpenAfCompleteEx</i> to indicate that some or all of the following have occurred:
 <ul>
 <li>
 If all of the parameters that the client's 
-      <mshelp:link keywords="netvista.protocolcoafregisternotify" tabindex="0"><i>
-      ProtocolCoAfRegisterNotify</i></mshelp:link> function passed to the 
+      <a href="..\ndis\nc-ndis-protocol_co_af_register_notify.md">
+      ProtocolCoAfRegisterNotify</a> function passed to the 
       <b>NdisClOpenAddressFamilyEx</b> function were valid, NDIS called the 
       <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function of the
       call manager that just registered the specified AF with NDIS.
@@ -217,28 +216,24 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 
-<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
+<a href="..\ndis\nc-ndis-protocol_co_af_register_notify.md">ProtocolCoAfRegisterNotify</a>
+
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 
 <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
-
-<a href="..\ndis\nc-ndis-protocol_co_af_register_notify.md">ProtocolCoAfRegisterNotify</a>
 
  
 

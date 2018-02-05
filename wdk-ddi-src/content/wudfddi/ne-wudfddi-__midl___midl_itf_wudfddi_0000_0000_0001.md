@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0c4a5eb8-d364-4e5d-9d2f-2605c8c34f63
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.power_action, wudfddi/PowerActionNone, PowerActionSleep, wudfddi/PowerActionShutdown, umdfstructs_02db2a83-1907-4aa2-9cdd-af3477e78ddd.xml, __MIDL___MIDL_itf_wudfddi_0000_0000_0001, wdf.power_action, POWER_ACTION enumeration, PowerActionReserved, PowerActionShutdownOff, PowerActionNone, wudfddi/PowerActionWarmEject, PowerActionWarmEject, wudfddi/POWER_ACTION, PowerActionHibernate, wudfddi/PowerActionShutdownOff, wudfddi/PowerActionHibernate, PowerActionShutdown, POWER_ACTION, PPOWER_ACTION, wudfddi/PowerActionSleep, wudfddi/PowerActionShutdownReset, PPOWER_ACTION enumeration pointer, PowerActionShutdownReset, wudfddi/PPOWER_ACTION, wudfddi/PowerActionReserved, *PPOWER_ACTION
+ms.keywords : PPOWER_ACTION enumeration pointer, umdfstructs_02db2a83-1907-4aa2-9cdd-af3477e78ddd.xml, *PPOWER_ACTION, PowerActionShutdownOff, wudfddi/PowerActionReserved, PPOWER_ACTION, wudfddi/PowerActionShutdown, PowerActionWarmEject, wudfddi/PowerActionShutdownOff, wdf.power_action, __MIDL___MIDL_itf_wudfddi_0000_0000_0001, PowerActionHibernate, POWER_ACTION, wudfddi/PowerActionSleep, wudfddi/PPOWER_ACTION, PowerActionShutdown, PowerActionNone, wudfddi/PowerActionWarmEject, wudfddi/POWER_ACTION, POWER_ACTION enumeration, PowerActionShutdownReset, wudfddi/PowerActionNone, PowerActionReserved, PowerActionSleep, wudfddi/PowerActionHibernate, umdf.power_action, wudfddi/PowerActionShutdownReset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -110,8 +110,6 @@ The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h, Ntpoapi.h) |
 

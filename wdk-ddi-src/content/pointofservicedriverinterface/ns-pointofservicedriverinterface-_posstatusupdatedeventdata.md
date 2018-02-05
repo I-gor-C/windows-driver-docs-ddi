@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 382e5441-dce1-428b-90af-d57b5f930abb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PosStatusUpdatedEventData, pos.posstatusupdatedeventdata, PosStatusUpdatedEventData structure, pointofservicedriverinterface/PosStatusUpdatedEventData, _PosStatusUpdatedEventData
+ms.keywords : pos.posstatusupdatedeventdata, _PosStatusUpdatedEventData, pointofservicedriverinterface/PosStatusUpdatedEventData, PosStatusUpdatedEventData structure, PosStatusUpdatedEventData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ Indicates a device-specific enumeration value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

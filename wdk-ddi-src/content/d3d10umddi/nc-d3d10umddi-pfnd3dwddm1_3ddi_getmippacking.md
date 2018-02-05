@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -68,11 +68,15 @@ A handle to the tiled resource.
 
 `*pNumPackedMips`
 
+A pointer to a variable that receives the number of mips that are packed, for a given array slice, including any mips that don't use the standard tile shapes.
 
+If there is no packing, a value of zero should be returned.
 
 `*pNumTilesForPackedMips`
 
+A pointer to a variable that receives the number of tiles that the packed mips fit into, for a given array slice.
 
+This parameter is ignored if *<i>pNumPackedMips</i> returns zero.
 
 
 ## Return Value
@@ -103,14 +107,9 @@ in the packing overall), and thus loses some freedom.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
+| **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

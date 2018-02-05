@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d991a0f6-54ba-4951-8bdb-865a537d797a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILMSGCDMABROADCASTSERVICEID, netvista.rilmsgcdmabroadcastserviceid_2, rilapitypes/RIL_1xBROADCAST_CMAS_EXTREME, rilapitypes/RIL_1xBROADCAST_CMAS_SEVERE, RIL_1xBROADCAST_CMAS_TEST, RILMSGCDMABROADCASTSERVICEID enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILMSGCDMABROADCASTSERVICEID, RIL_1xBROADCAST_CMAS_AMBER, RIL_1xBROADCAST_CMAS_SEVERE, rilapitypes/RIL_1xBROADCAST_CMAS_AMBER, rilapitypes/RIL_1xBROADCAST_CMAS_TEST, RIL_1xBROADCAST_CMAS_EXTREME
+ms.keywords : rilapitypes/RILMSGCDMABROADCASTSERVICEID, RIL_1xBROADCAST_CMAS_SEVERE, RIL_1xBROADCAST_CMAS_EXTREME, RILMSGCDMABROADCASTSERVICEID, RIL_1xBROADCAST_CMAS_TEST, rilapitypes/RIL_1xBROADCAST_CMAS_TEST, RILMSGCDMABROADCASTSERVICEID enumeration [Network Drivers Starting with Windows Vista], RIL_1xBROADCAST_CMAS_AMBER, rilapitypes/RIL_1xBROADCAST_CMAS_EXTREME, rilapitypes/RIL_1xBROADCAST_CMAS_SEVERE, rilapitypes/RIL_1xBROADCAST_CMAS_AMBER, netvista.rilmsgcdmabroadcastserviceid_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

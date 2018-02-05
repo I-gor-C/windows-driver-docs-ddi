@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1025c89f-8d63-4aeb-be7c-16b555cfa58a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_af97a9b7-4bf9-4faa-a728-099daf7d4c96.xml, stream.kspingetconnectedpinfileobject, ks/KsPinGetConnectedPinFileObject, KsPinGetConnectedPinFileObject function [Streaming Media Devices], KsPinGetConnectedPinFileObject
+ms.keywords : stream.kspingetconnectedpinfileobject, avfunc_af97a9b7-4bf9-4faa-a728-099daf7d4c96.xml, ks/KsPinGetConnectedPinFileObject, KsPinGetConnectedPinFileObject function [Streaming Media Devices], KsPinGetConnectedPinFileObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,11 @@ If <i>Pin</i> is a source pin, <b>KsPinGetConnectedPinFileObject</b> returns a p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

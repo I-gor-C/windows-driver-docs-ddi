@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0df38de0-bc05-45a3-8efa-9d7a0fc2a08e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_SendReportLUNs, storage.hba_sendreportluns, HBA_SendReportLUNs routine [Storage Devices], fibreHBA_rtns_aeda6b0e-e4bf-4679-ab57-dbe562864726.xml, hbaapi/HBA_SendReportLUNs
+ms.keywords : HBA_SendReportLUNs, fibreHBA_rtns_aeda6b0e-e4bf-4679-ab57-dbe562864726.xml, hbaapi/HBA_SendReportLUNs, storage.hba_sendreportluns, HBA_SendReportLUNs routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -162,14 +162,10 @@ Returned if an unspecified error occurred that prevented the execution of the SC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

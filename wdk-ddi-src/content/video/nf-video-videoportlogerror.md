@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d013aeb9-43a9-460f-a670-5b7bc9d3753d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportlogerror, VideoPortLogError, VideoPort_Functions_18666bd9-b871-4e4c-9f31-bd5cbd505d52.xml, VideoPortLogError function [Display Devices], video/VideoPortLogError
+ms.keywords : VideoPort_Functions_18666bd9-b871-4e4c-9f31-bd5cbd505d52.xml, VideoPortLogError function [Display Devices], VideoPortLogError, video/VideoPortLogError, display.videoportlogerror
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,14 +88,12 @@ However, miniport drivers should <i>not</i> log errors, such as "failed to detec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | "<= DIRQL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

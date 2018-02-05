@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4af94bc4-9df3-4b37-a810-303748cc4b75
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDisableEvent, stream.ksdisableevent, ks/KsDisableEvent, KsDisableEvent function [Streaming Media Devices], ksfunc_e430d502-c847-43ee-bdea-d53200f45e53.xml
+ms.keywords : ksfunc_e430d502-c847-43ee-bdea-d53200f45e53.xml, KsDisableEvent, stream.ksdisableevent, ks/KsDisableEvent, KsDisableEvent function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,9 @@ It is important that the remove handler synchronize with event generation to ens
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

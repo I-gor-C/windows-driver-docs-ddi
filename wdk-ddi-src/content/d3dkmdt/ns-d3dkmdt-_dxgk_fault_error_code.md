@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 753FC177-D430-40E5-98CD-B3BDFD47ACEF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/DXGK_FAULT_ERROR_CODE, display.dxgk_fault_error_code, DXGK_FAULT_ERROR_CODE structure [Display Devices], _DXGK_FAULT_ERROR_CODE, DXGK_FAULT_ERROR_CODE
+ms.keywords : DXGK_FAULT_ERROR_CODE, display.dxgk_fault_error_code, _DXGK_FAULT_ERROR_CODE, d3dkmdt/DXGK_FAULT_ERROR_CODE, DXGK_FAULT_ERROR_CODE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmdt.h (include D3dkmddi.h) |
 
 ## See Also

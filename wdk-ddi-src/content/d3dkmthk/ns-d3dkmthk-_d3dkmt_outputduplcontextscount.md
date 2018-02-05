@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : db63b984-73da-4b66-8a5e-06704dd7c031
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_outputduplcontextscount, _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT structure [Display Devices], d3dkmthk/D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
+ms.keywords : display.d3dkmt_outputduplcontextscount, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT structure [Display Devices], d3dkmthk/D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ The ID of the video present network (VidPN).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |

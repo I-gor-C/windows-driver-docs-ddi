@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2a09341d-a580-4817-9103-29d8c36b81e3
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSystemObjects3::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, SetImplicitProcessDataOffset, dbgeng/IDebugSystemObjects4::SetImplicitProcessDataOffset, debugger.setimplicitprocessdataoffset, SetImplicitProcessDataOffset method [Windows Debugging], SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4, dbgeng/IDebugSystemObjects2::SetImplicitProcessDataOffset, IDebugSystemObjects2::SetImplicitProcessDataOffset, IDebugSystemObjects4 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects4::SetImplicitProcessDataOffset, IDebugSystemObjects2 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects3::SetImplicitProcessDataOffset, IDebugSystemObjects_10effa04-b87c-4555-9860-c2d5057a2529.xml
+ms.keywords : IDebugSystemObjects4, IDebugSystemObjects3 interface [Windows Debugging], SetImplicitProcessDataOffset method, dbgeng/IDebugSystemObjects2::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], debugger.setimplicitprocessdataoffset, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects4 interface [Windows Debugging], SetImplicitProcessDataOffset method, IDebugSystemObjects4::SetImplicitProcessDataOffset, IDebugSystemObjects2::SetImplicitProcessDataOffset, IDebugSystemObjects3::SetImplicitProcessDataOffset, dbgeng/IDebugSystemObjects4::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, SetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects3::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset, IDebugSystemObjects_10effa04-b87c-4555-9860-c2d5057a2529.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,11 +88,6 @@ In user-mode debugging, the data structure is the process environment block (PEB
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

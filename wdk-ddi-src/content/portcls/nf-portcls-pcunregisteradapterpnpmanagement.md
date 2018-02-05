@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 51BBE9F6-7661-45A1-8416-9AAA307FCA10
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcunregisteradapterpnpmanagement, PcUnregisterAdapterPnpManagement, PcUnregisterAdapterPnpManagement function [Audio Devices], portcls/PcUnregisterAdapterPnpManagement
+ms.keywords : PcUnregisterAdapterPnpManagement function [Audio Devices], portcls/PcUnregisterAdapterPnpManagement, PcUnregisterAdapterPnpManagement, audio.pcunregisteradapterpnpmanagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -75,14 +75,11 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows. Available in Windows 10, version 1511 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

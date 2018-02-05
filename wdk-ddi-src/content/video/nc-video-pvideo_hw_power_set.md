@@ -86,22 +86,16 @@ The driver should check the ID specified in <i>HwId</i> to determine the device 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
 
 <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_POWER_MANAGEMENT</a>
 
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-
-<a href="..\video\nc-video-pvideo_hw_power_get.md">HwVidGetPowerState</a>
 
  
 

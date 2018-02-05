@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 95464DE1-221A-4053-B124-4CFD44557CD3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function [Kernel-Mode Driver Architecture], PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE, kernel.pep_acpi_initialize_extended_io_resource, pepfx/PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE
+ms.keywords : PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE, kernel.pep_acpi_initialize_extended_io_resource, PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
+req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 
@@ -138,14 +138,10 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Target Platform** | Windows |
 | **Header** | pepfx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

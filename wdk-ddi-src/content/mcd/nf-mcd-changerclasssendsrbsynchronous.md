@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6765d7d5-528f-42c5-98c3-0484608a020b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.changerclasssendsrbsynchronous, mcd/ChangerClassSendSrbSynchronous, ChangerClassSendSrbSynchronous, chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, ChangerClassSendSrbSynchronous routine [Storage Devices]
+ms.keywords : mcd/ChangerClassSendSrbSynchronous, chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, ChangerClassSendSrbSynchronous, ChangerClassSendSrbSynchronous routine [Storage Devices], storage.changerclasssendsrbsynchronous
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,14 +92,9 @@ If the IRP fails and the sense request data indicates that the IRP should be ret
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mcd.lib |
 
 ## See Also
 

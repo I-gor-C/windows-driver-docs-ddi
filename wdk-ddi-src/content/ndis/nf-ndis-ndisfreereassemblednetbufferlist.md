@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bcbb0c56-1500-45b2-bd20-03726ef7da77
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFreeReassembledNetBufferList, netvista.ndisfreereassemblednetbufferlist, ndis_netbuf_functions_ref_604900da-90fb-4986-880e-8fea63c240a0.xml, NdisFreeReassembledNetBufferList, NdisFreeReassembledNetBufferList function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisfreereassemblednetbufferlist, NdisFreeReassembledNetBufferList function [Network Drivers Starting with Windows Vista], ndis/NdisFreeReassembledNetBufferList, NdisFreeReassembledNetBufferList, ndis_netbuf_functions_ref_604900da-90fb-4986-880e-8fea63c240a0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,8 +60,8 @@ VOID NdisFreeReassembledNetBufferList(
 `ReassembledNetBufferList`
 
 A pointer to a NET_BUFFER_LIST structure that the driver allocated by calling the 
-     <mshelp:link keywords="netvista.ndisallocatereassemblednetbufferlist" tabindex="0"><b>
-     NdisAllocateReassembledNetBufferList</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocatereassemblednetbufferlist.md">
+     NdisAllocateReassembledNetBufferList</a> function.
 
 `DataOffsetDelta`
 
@@ -86,29 +86,27 @@ None
 <b>NdisFreeReassembledNetBufferList</b> frees a reassembled 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that the caller
     allocated by calling 
-    <mshelp:link keywords="netvista.ndisallocatereassemblednetbufferlist" tabindex="0"><b>
-    NdisAllocateReassembledNetBufferList</b></mshelp:link>.
+    <a href="..\ndis\nf-ndis-ndisallocatereassemblednetbufferlist.md">
+    NdisAllocateReassembledNetBufferList</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndisallocatereassemblednetbufferlist.md">
+   NdisAllocateReassembledNetBufferList</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<mshelp:link keywords="netvista.ndisallocatereassemblednetbufferlist" tabindex="0"><b>
-   NdisAllocateReassembledNetBufferList</b></mshelp:link>
 
  
 

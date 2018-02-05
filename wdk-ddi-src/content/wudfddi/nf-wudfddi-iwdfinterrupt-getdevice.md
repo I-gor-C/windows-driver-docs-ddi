@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 71C4E02F-B58A-46BA-A6A7-133D6CAF2A85
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfinterrupt_getdevice, umdf.iwdfinterrupt_getdevice, GetDevice method, wudfddi/IWDFInterrupt::GetDevice, IWDFInterrupt::GetDevice, GetDevice method, IWDFInterrupt interface, IWDFInterrupt, IWDFInterrupt interface, GetDevice method, GetDevice
+ms.keywords : wdf.iwdfinterrupt_getdevice, GetDevice method, IWDFInterrupt, IWDFInterrupt interface, GetDevice method, umdf.iwdfinterrupt_getdevice, IWDFInterrupt::GetDevice, wudfddi/IWDFInterrupt::GetDevice, GetDevice method, IWDFInterrupt interface, GetDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -66,14 +66,12 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

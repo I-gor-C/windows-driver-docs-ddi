@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5609a2c4-71db-432a-8a39-e407130a6e4c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PREG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_create_key_information, wdm/REG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_OPEN_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PREG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION, wdm/PREG_OPEN_KEY_INFORMATION, *PREG_OPEN_KEY_INFORMATION, wdm/REG_CREATE_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, kstruct_d_08c0de2c-94fb-4c4f-888c-e3485f213224.xml, PREG_OPEN_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _REG_CREATE_KEY_INFORMATION"
+ms.keywords : kstruct_d_08c0de2c-94fb-4c4f-888c-e3485f213224.xml, *PREG_OPEN_KEY_INFORMATION, wdm/PREG_CREATE_KEY_INFORMATION, PREG_OPEN_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_OPEN_KEY_INFORMATION, wdm/PREG_OPEN_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_create_key_information, REG_CREATE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/REG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION, wdm/REG_CREATE_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PREG_CREATE_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION, *PREG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION"
+req.typenames : "*PREG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -139,9 +139,7 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Server 2003, but some structure members are available only in Windows Vista and later versions. Available starting with Windows Server 2003, but some structure members are available only in Windows Vista and later versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
@@ -150,13 +148,13 @@ For more information about registry filtering operations, see <a href="https://m
 
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-
 <a href="..\wdm\ns-wdm-_reg_create_key_information_v1.md">REG_CREATE_KEY_INFORMATION_V1</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\wdm\ns-wdm-_reg_post_operation_information.md">REG_POST_OPERATION_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

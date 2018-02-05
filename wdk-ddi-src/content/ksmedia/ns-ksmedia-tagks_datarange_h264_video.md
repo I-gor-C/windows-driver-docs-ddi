@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E52B252F-0530-4543-A44C-95D4198504CA
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO, PKS_DATARANGE_H264_VIDEO structure pointer [Streaming Media Devices], tagKS_DATARANGE_H264_VIDEO, stream.ks_datarange_h264_video, PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO structure [Streaming Media Devices], ksmedia/KS_DATARANGE_H264_VIDEO, *PKS_DATARANGE_H264_VIDEO
+ms.keywords : ksmedia/KS_DATARANGE_H264_VIDEO, PKS_DATARANGE_H264_VIDEO structure pointer [Streaming Media Devices], *PKS_DATARANGE_H264_VIDEO, PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO, tagKS_DATARANGE_H264_VIDEO, ksmedia/PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO structure [Streaming Media Devices], stream.ks_datarange_h264_video
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,9 +89,7 @@ Specifies the details of the video stream.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

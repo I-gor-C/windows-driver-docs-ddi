@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : FD4A244D-641C-46A7-8777-8F64A5400D23
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_Ni_UserResponseAccept, GNSS_Ni_UserResponseAccept, GNSS_NI_USER_RESPONSE enumeration [Sensor Devices], GNSS_Ni_UserResponseDeny, gnssdriver/GNSS_NI_USER_RESPONSE, GNSS_NI_USER_RESPONSE, gnssdriver/GNSS_Ni_UserResponseTimeout, gnssdriver/GNSS_Ni_UserResponseDeny, sensors.gnss_ni_user_response, GNSS_Ni_UserResponseTimeout
+ms.keywords : GNSS_Ni_UserResponseDeny, GNSS_Ni_UserResponseTimeout, GNSS_NI_USER_RESPONSE enumeration [Sensor Devices], gnssdriver/GNSS_NI_USER_RESPONSE, gnssdriver/GNSS_Ni_UserResponseAccept, gnssdriver/GNSS_Ni_UserResponseTimeout, GNSS_NI_USER_RESPONSE, sensors.gnss_ni_user_response, GNSS_Ni_UserResponseAccept, gnssdriver/GNSS_Ni_UserResponseDeny
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

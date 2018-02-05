@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 283f398e-4162-4c46-847b-834f8f303052
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], d3dkmddi/DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES, display.dxgkarg_recommendmonitormodes, DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, _DXGKARG_RECOMMENDMONITORMODES
+ms.keywords : display.dxgkarg_recommendmonitormodes, DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, _DXGKARG_RECOMMENDMONITORMODES, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ An integer that identifies a video present target on the display adapter.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

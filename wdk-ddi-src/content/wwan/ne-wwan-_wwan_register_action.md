@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8c343094-0927-4cdd-be39-93dcb25f6bf6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_register_action, WWAN_REGISTER_ACTION enumeration [Network Drivers Starting with Windows Vista], WWAN_REGISTER_ACTION, WwanRegisterActionAutomatic, PWWAN_REGISTER_ACTION, wwan/WwanRegisterActionManual, wwan/PWWAN_REGISTER_ACTION, wwan/WwanRegisterActionMax, *PWWAN_REGISTER_ACTION, _WWAN_REGISTER_ACTION, WwanRegisterActionMax, wwan/WwanRegisterActionAutomatic, WwanRef_27e66042-089c-435b-b255-d01e1ddebb5f.xml, WwanRegisterActionManual, PWWAN_REGISTER_ACTION enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_REGISTER_ACTION
+ms.keywords : PWWAN_REGISTER_ACTION enumeration pointer [Network Drivers Starting with Windows Vista], WwanRef_27e66042-089c-435b-b255-d01e1ddebb5f.xml, PWWAN_REGISTER_ACTION, WwanRegisterActionMax, wwan/WwanRegisterActionMax, _WWAN_REGISTER_ACTION, wwan/WWAN_REGISTER_ACTION, wwan/PWWAN_REGISTER_ACTION, wwan/WwanRegisterActionAutomatic, WWAN_REGISTER_ACTION enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_register_action, WwanRegisterActionManual, wwan/WwanRegisterActionManual, WwanRegisterActionAutomatic, WWAN_REGISTER_ACTION, *PWWAN_REGISTER_ACTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -76,9 +76,7 @@ typedef enum _WWAN_REGISTER_ACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

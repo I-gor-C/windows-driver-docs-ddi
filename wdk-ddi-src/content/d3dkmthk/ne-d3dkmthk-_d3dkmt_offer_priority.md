@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fec15098-3130-42d6-b889-579ecab6f162
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_OFFER_PRIORITY_LOW, D3DKMT_OFFER_PRIORITY_NORMAL, _D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_HIGH, D3DKMT_OFFER_PRIORITY enumeration [Display Devices], d3dkmthk/D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_AUTO, d3dkmthk/D3DKMT_OFFER_PRIORITY_NORMAL, d3dkmthk/D3DKMT_OFFER_PRIORITY_HIGH, d3dkmthk/D3DKMT_OFFER_PRIORITY_AUTO, display.d3dkmt_offer_priority, D3DKMT_OFFER_PRIORITY_LOW
+ms.keywords : "_D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_NORMAL, D3DKMT_OFFER_PRIORITY_HIGH, display.d3dkmt_offer_priority, d3dkmthk/D3DKMT_OFFER_PRIORITY_LOW, d3dkmthk/D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_LOW, d3dkmthk/D3DKMT_OFFER_PRIORITY_AUTO, d3dkmthk/D3DKMT_OFFER_PRIORITY_HIGH, D3DKMT_OFFER_PRIORITY_AUTO, D3DKMT_OFFER_PRIORITY enumeration [Display Devices], d3dkmthk/D3DKMT_OFFER_PRIORITY_NORMAL"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,7 @@ typedef enum _D3DKMT_OFFER_PRIORITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

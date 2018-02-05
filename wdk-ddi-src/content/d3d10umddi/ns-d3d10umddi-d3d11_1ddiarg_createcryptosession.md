@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9e63a4eb-050b-4f12-ad43-00e62021abd3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddiarg_createcryptosession, D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION, D3D11_1DDI_CRYPTO_TYPE_PROPRIETARY, D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDI_CRYPTO_TYPE_AES128_CTR, D3D11_1DDI_KEY_EXCHANGE_RSAES_OAEP, d3d10umddi/D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION structure [Display Devices]
+ms.keywords : d3d10umddi/D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION structure [Display Devices], D3D11_1DDI_CRYPTO_TYPE_PROPRIETARY, D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION, D3D11_1DDI_CRYPTO_TYPE_AES128_CTR, D3D11_1DDI_KEY_EXCHANGE_RSAES_OAEP, display.d3d11_1ddiarg_createcryptosession
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -153,7 +153,5 @@ The DRM commands are sent to the user mode driver by calling the <a href="..\d3d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

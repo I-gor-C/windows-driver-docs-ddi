@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5e3f9a29-660e-46f1-bf25-5bad8b91e32c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSystemStructures_35ea4d15-ff73-4562-b150-d7c3e3d0823c.xml, fltkernel/PFLT_OPERATION_REGISTRATION, PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION structure [Installable File System Drivers], fltkernel/FLT_OPERATION_REGISTRATION, PFLT_OPERATION_REGISTRATION structure pointer [Installable File System Drivers], _FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION, ifsk.flt_operation_registration
+ms.keywords : PFLT_OPERATION_REGISTRATION structure pointer [Installable File System Drivers], fltkernel/PFLT_OPERATION_REGISTRATION, fltkernel/FLT_OPERATION_REGISTRATION, ifsk.flt_operation_registration, FLT_OPERATION_REGISTRATION structure [Installable File System Drivers], FltSystemStructures_35ea4d15-ff73-4562-b150-d7c3e3d0823c.xml, *PFLT_OPERATION_REGISTRATION, PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION, _FLT_OPERATION_REGISTRATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -119,20 +119,17 @@ A single preoperation or postoperation callback routine can be used to process m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include Fltkernel.h) |
 
 ## See Also
 
 <a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>
 
-<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 
 <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
 
  
 

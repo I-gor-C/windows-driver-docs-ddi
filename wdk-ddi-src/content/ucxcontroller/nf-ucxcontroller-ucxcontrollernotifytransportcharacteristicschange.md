@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : DB49DF98-8A5B-4528-B312-63CE3DFABEF2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxcontroller/UcxControllerNotifyTransportCharacteristicsChange, UcxControllerNotifyTransportCharacteristicsChange function [Buses], buses.ucxcontrollernotifytransportcharacteristicschange, UcxControllerNotifyTransportCharacteristicsChange
+ms.keywords : ucxcontroller/UcxControllerNotifyTransportCharacteristicsChange, UcxControllerNotifyTransportCharacteristicsChange function [Buses], UcxControllerNotifyTransportCharacteristicsChange, buses.ucxcontrollernotifytransportcharacteristicschange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ucxstubs.lib |
 
 ## See Also
 

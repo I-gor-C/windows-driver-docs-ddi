@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5b1c3cc4-6185-4299-86ed-662a2b445042
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/SecLookupAccountName, SecLookupAccountName, SecLookupAccountName function [Installable File System Drivers], ksecddref_1f4959e5-ea3b-440d-af1b-df05782eefce.xml, ifsk.seclookupaccountname
+ms.keywords : ifsk.seclookupaccountname, SecLookupAccountName, ksecddref_1f4959e5-ea3b-440d-af1b-df05782eefce.xml, SecLookupAccountName function [Installable File System Drivers], ntifs/SecLookupAccountName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -173,22 +173,19 @@ In addition to looking up local accounts, local domain accounts, and explicitly 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The SecLookupAccountName function is only available on Windows XP and later. The SecLookupAccountName function is only available on Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | Ksecdd.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-seclookupwellknownsid.md">SecLookupWellKnownSid</a>
 
-<a href="..\ntifs\ne-ntifs-_sid_name_use.md">SID_NAME_USE</a>
-
 <a href="..\ntifs\nf-ntifs-seclookupaccountsid.md">SecLookupAccountSid</a>
+
+<a href="..\ntifs\ne-ntifs-_sid_name_use.md">SID_NAME_USE</a>
 
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 

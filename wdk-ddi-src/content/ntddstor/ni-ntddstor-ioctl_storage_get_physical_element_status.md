@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_PHYSICAL_ELEMENT_STATUS IOCTL
@@ -89,9 +89,7 @@ To perform this operation, call the <a href="https://msdn.microsoft.com/1d35c087
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddstor.h (include WinIoctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

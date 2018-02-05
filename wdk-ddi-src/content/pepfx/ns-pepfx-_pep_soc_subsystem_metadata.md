@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4FAE15C7-7B2F-47A5-B429-B7FF7D3D018C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_SOC_SUBSYSTEM_METADATA, *PPEP_SOC_SUBSYSTEM_METADATA, kernel.pep_soc_subsystem_metadata, PEP_SOC_SUBSYSTEM_METADATA, _PEP_SOC_SUBSYSTEM_METADATA, pepfx/PPEP_SOC_SUBSYSTEM_METADATA, PPEP_SOC_SUBSYSTEM_METADATA structure pointer [Kernel-Mode Driver Architecture], PEP_SOC_SUBSYSTEM_METADATA structure [Kernel-Mode Driver Architecture], PPEP_SOC_SUBSYSTEM_METADATA
+ms.keywords : kernel.pep_soc_subsystem_metadata, PPEP_SOC_SUBSYSTEM_METADATA, PPEP_SOC_SUBSYSTEM_METADATA structure pointer [Kernel-Mode Driver Architecture], PEP_SOC_SUBSYSTEM_METADATA structure [Kernel-Mode Driver Architecture], pepfx/PPEP_SOC_SUBSYSTEM_METADATA, *PPEP_SOC_SUBSYSTEM_METADATA, PEP_SOC_SUBSYSTEM_METADATA, _PEP_SOC_SUBSYSTEM_METADATA, pepfx/PEP_SOC_SUBSYSTEM_METADATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_SOC_SUBSYSTEM_METADATA, *PPEP_SOC_SUBSYSTEM_METADATA
+req.typenames : "*PPEP_SOC_SUBSYSTEM_METADATA, PEP_SOC_SUBSYSTEM_METADATA"
 ---
 
 # _PEP_SOC_SUBSYSTEM_METADATA structure
@@ -88,9 +88,7 @@ Since this memory is pre-allocated, its size cannot be changed. The PEP is respo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

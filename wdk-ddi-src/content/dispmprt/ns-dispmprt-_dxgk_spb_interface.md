@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 677619d2-86a1-492e-9964-d50624376ef4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_SPB_INTERFACE, _DXGK_SPB_INTERFACE, DXGK_SPB_INTERFACE structure [Display Devices], PDXGK_SPB_INTERFACE structure pointer [Display Devices], dispmprt/PDXGK_SPB_INTERFACE, *PDXGK_SPB_INTERFACE, dispmprt/DXGK_SPB_INTERFACE, PDXGK_SPB_INTERFACE, display.dxgk_spb_interface
+ms.keywords : dispmprt/DXGK_SPB_INTERFACE, PDXGK_SPB_INTERFACE, DXGK_SPB_INTERFACE, DXGK_SPB_INTERFACE structure [Display Devices], *PDXGK_SPB_INTERFACE, PDXGK_SPB_INTERFACE structure pointer [Display Devices], display.dxgk_spb_interface, dispmprt/PDXGK_SPB_INTERFACE, _DXGK_SPB_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_SPB_INTERFACE, DXGK_SPB_INTERFACE"
+req.typenames : DXGK_SPB_INTERFACE, *PDXGK_SPB_INTERFACE
 ---
 
 # _DXGK_SPB_INTERFACE structure
@@ -138,22 +138,20 @@ A pointer to the display miniport driver's <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439925">WriteSpbResource</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406257">CloseSpbResource</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439824">ReadSpbResource</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439861">SpbResourceIoControl</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439925">WriteSpbResource</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451581">OpenSpbResource</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439824">ReadSpbResource</a>
 
  
 

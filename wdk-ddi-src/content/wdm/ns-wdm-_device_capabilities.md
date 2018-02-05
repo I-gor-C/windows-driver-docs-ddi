@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1edae050-8e72-42e7-9dc9-8f449699969c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/DEVICE_CAPABILITIES, kernel.device_capabilities, PDEVICE_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES, _DEVICE_CAPABILITIES, DEVICE_CAPABILITIES structure [Kernel-Mode Driver Architecture], kstruct_a_53ec6d40-84a0-45f6-a78c-73fcc3c12e11.xml, wdm/PDEVICE_CAPABILITIES
+ms.keywords : DEVICE_CAPABILITIES, kernel.device_capabilities, DEVICE_CAPABILITIES structure [Kernel-Mode Driver Architecture], PDEVICE_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], PDEVICE_CAPABILITIES, _DEVICE_CAPABILITIES, wdm/DEVICE_CAPABILITIES, kstruct_a_53ec6d40-84a0-45f6-a78c-73fcc3c12e11.xml, wdm/PDEVICE_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -288,9 +288,6 @@ For more information about using the <b>DEVICE_CAPABILITIES</b> structure to des
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

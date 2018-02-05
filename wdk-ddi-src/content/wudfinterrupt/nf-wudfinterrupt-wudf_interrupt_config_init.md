@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 71011FDF-547E-4FF0-9015-E8E09FDF950E
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wudf_interrupt_config_init, WUDF_INTERRUPT_CONFIG_INIT, WUDF_INTERRUPT_CONFIG_INIT function, umdf.wudf_interrupt_config_init, wudfinterrupt/WUDF_INTERRUPT_CONFIG_INIT
+ms.keywords : wdf.wudf_interrupt_config_init, WUDF_INTERRUPT_CONFIG_INIT, WUDF_INTERRUPT_CONFIG_INIT function, wudfinterrupt/WUDF_INTERRUPT_CONFIG_INIT, umdf.wudf_interrupt_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,8 @@ The <b>WUDF_INTERRUPT_CONFIG_INIT</b> function zeros the specified <a href="..\w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

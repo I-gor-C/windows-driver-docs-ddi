@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0b380597-09dc-414f-b2c6-f541d35540da
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportputscattergatherlist, StorPortPutScatterGatherList routine [Storage Devices], StorPortPutScatterGatherList, storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml, storport/StorPortPutScatterGatherList
+ms.keywords : StorPortPutScatterGatherList routine [Storage Devices], storage.storportputscattergatherlist, StorPortPutScatterGatherList, storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml, storport/StorPortPutScatterGatherList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,12 +131,9 @@ After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | StorPortIrql |
 

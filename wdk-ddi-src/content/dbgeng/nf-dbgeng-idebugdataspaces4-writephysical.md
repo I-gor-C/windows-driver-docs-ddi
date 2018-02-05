@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ec691a7c-a569-49dd-af13-bfbf403be297
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WritePhysical method [Windows Debugging], IDebugDataSpaces4 interface, WritePhysical method [Windows Debugging], IDebugDataSpaces2 interface, WritePhysical method [Windows Debugging], WritePhysical method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces2 interface [Windows Debugging], WritePhysical method, dbgeng/IDebugDataSpaces2::WritePhysical, IDebugDataSpaces3 interface [Windows Debugging], WritePhysical method, IDebugDataSpaces2::WritePhysical, dbgeng/IDebugDataSpaces3::WritePhysical, IDebugDataSpaces_0e781d56-64f8-4518-b748-5afe9f43c429.xml, WritePhysical, IDebugDataSpaces4 interface [Windows Debugging], WritePhysical method, WritePhysical method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces::WritePhysical, dbgeng/IDebugDataSpaces4::WritePhysical, IDebugDataSpaces4, debugger.writephysical3, IDebugDataSpaces interface [Windows Debugging], WritePhysical method, IDebugDataSpaces4::WritePhysical, IDebugDataSpaces3::WritePhysical, IDebugDataSpaces::WritePhysical
+ms.keywords : IDebugDataSpaces interface [Windows Debugging], WritePhysical method, IDebugDataSpaces::WritePhysical, IDebugDataSpaces2 interface [Windows Debugging], WritePhysical method, IDebugDataSpaces2::WritePhysical, IDebugDataSpaces4::WritePhysical, WritePhysical, WritePhysical method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4 interface [Windows Debugging], WritePhysical method, dbgeng/IDebugDataSpaces2::WritePhysical, WritePhysical method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], WritePhysical method, IDebugDataSpaces4, WritePhysical method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces4::WritePhysical, dbgeng/IDebugDataSpaces::WritePhysical, debugger.writephysical3, WritePhysical method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces3::WritePhysical, WritePhysical method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces3::WritePhysical, IDebugDataSpaces_0e781d56-64f8-4518-b748-5afe9f43c429.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,11 +101,6 @@ This method is only available in kernel-mode debugging.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

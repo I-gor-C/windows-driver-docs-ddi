@@ -155,15 +155,15 @@ The IOCTL_BTH_SDP_CONNECT request allows a profile driver to obtain an SDP conne
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | "<= PASSIVE_LEVEL" |
 
 ## See Also
 
-<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
-
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_disconnect.md">IOCTL_BTH_SDP_DISCONNECT</a>
+
+<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
 
  
 

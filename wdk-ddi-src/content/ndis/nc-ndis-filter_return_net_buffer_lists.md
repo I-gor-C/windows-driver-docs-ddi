@@ -71,8 +71,8 @@ A handle to the context area for the filter module. The filter driver created an
 `NetBufferLists`
 
 A linked list of <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that the filter driver indicated by calling the 
-     <mshelp:link keywords="netvista.ndisfindicatereceivenetbufferlists" tabindex="0"><b>
-     NdisFIndicateReceiveNetBufferLists</b></mshelp:link> function. The list can include <b>NET_BUFFER_LIST</b> structures from
+     <a href="..\ndis\nf-ndis-ndisfindicatereceivenetbufferlists.md">
+     NdisFIndicateReceiveNetBufferLists</a> function. The list can include <b>NET_BUFFER_LIST</b> structures from
      multiple calls to 
      <b>NdisFIndicateReceiveNetBufferLists</b>.
 
@@ -105,8 +105,8 @@ None
 ## Remarks
 
 <i>FilterReturnNetBufferLists</i> is an optional function. If a filter driver does not filter receive indications, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> function.
 
 The filter driver can call the 
     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function,
@@ -116,8 +116,8 @@ The filter driver can call the
     <i>FilterReturnNetBufferLists</i> function for a filter module.
 <div class="alert"><b>Note</b>  A filter driver that does not provide a 
     <i>FilterReturnNetBufferLists</i> function cannot call the 
-    <mshelp:link keywords="netvista.ndisfindicatereceivenetbufferlists" tabindex="0"><b>
-    NdisFIndicateReceiveNetBufferLists</b></mshelp:link> function to initiate a receive indication.</div><div> </div><div class="alert"><b>Note</b>  A filter driver that does provide a 
+    <a href="..\ndis\nf-ndis-ndisfindicatereceivenetbufferlists.md">
+    NdisFIndicateReceiveNetBufferLists</a> function to initiate a receive indication.</div><div> </div><div class="alert"><b>Note</b>  A filter driver that does provide a 
     <i>FilterReturnNetBufferLists</i> function must provide a 
     <a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a> function.</div><div> </div>When NDIS calls 
     <i>FilterReturnNetBufferLists</i>, the filter driver regains ownership of the 
@@ -125,8 +125,8 @@ The filter driver can call the
     data.
 
 If an underlying driver initiated the receive indication, the filter driver should call the 
-    <mshelp:link keywords="netvista.ndisfreturnnetbufferlists" tabindex="0"><b>
-    NdisFReturnNetBufferLists</b></mshelp:link> function to complete the receive indication.
+    <a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">
+    NdisFReturnNetBufferLists</a> function to complete the receive indication.
 
 If the filter driver originated the receive indication, 
     <i>FilterReturnNetBufferLists</i> can either release the NET_BUFFER_LIST structures and associated data or
@@ -176,35 +176,31 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a>
-
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-<a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">NdisFReturnNetBufferLists</a>
 
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
+<a href="..\ndis\nf-ndis-ndisfreturnnetbufferlists.md">NdisFReturnNetBufferLists</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+
 <a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a>
 
-<mshelp:link keywords="netvista.ndisfindicatereceivenetbufferlists" tabindex="0"><b>
-   NdisFIndicateReceiveNetBufferLists</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisfindicatereceivenetbufferlists.md">
+   NdisFIndicateReceiveNetBufferLists</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

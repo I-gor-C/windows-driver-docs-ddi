@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 837f5a55-ca07-4462-85d7-203d02df168c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.hardware_counter_type, ntddk/HARDWARE_COUNTER_TYPE, ntddk/PMCCounter, MaxHardwareCounterType, ntddk/MaxHardwareCounterType, sysenum_861db9b8-cd2d-4cfe-ae99-5c292f28c420.xml, *PHARDWARE_COUNTER_TYPE, _HARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE enumeration [Kernel-Mode Driver Architecture], PHARDWARE_COUNTER_TYPE, ntddk/PHARDWARE_COUNTER_TYPE, PHARDWARE_COUNTER_TYPE enumeration pointer [Kernel-Mode Driver Architecture], HARDWARE_COUNTER_TYPE, PMCCounter
+ms.keywords : ntddk/MaxHardwareCounterType, PHARDWARE_COUNTER_TYPE enumeration pointer [Kernel-Mode Driver Architecture], ntddk/HARDWARE_COUNTER_TYPE, ntddk/PHARDWARE_COUNTER_TYPE, kernel.hardware_counter_type, PMCCounter, ntddk/PMCCounter, PHARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE, *PHARDWARE_COUNTER_TYPE, sysenum_861db9b8-cd2d-4cfe-ae99-5c292f28c420.xml, MaxHardwareCounterType, HARDWARE_COUNTER_TYPE enumeration [Kernel-Mode Driver Architecture], _HARDWARE_COUNTER_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE"
+req.typenames : HARDWARE_COUNTER_TYPE, *PHARDWARE_COUNTER_TYPE
 ---
 
 # _HARDWARE_COUNTER_TYPE Enumeration
@@ -71,9 +71,7 @@ The <b>Type</b> member of the <a href="..\ntddk\ns-ntddk-_hardware_counter.md">H
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | ntddk.h (include Winnt.h, Ntddk.h) |
 
 ## See Also

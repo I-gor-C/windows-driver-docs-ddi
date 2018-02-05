@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 843050e1-a1ec-4313-b527-529c4ff6ca07
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmDispatchIncomingCloseCall, condis_mcm_ref_b5a94c5f-7483-44dd-8167-6e64f52cada6.xml, NdisMCmDispatchIncomingCloseCall macro [Network Drivers Starting with Windows Vista], netvista.ndismcmdispatchincomingclosecall, ndis/NdisMCmDispatchIncomingCloseCall
+ms.keywords : netvista.ndismcmdispatchincomingclosecall, condis_mcm_ref_b5a94c5f-7483-44dd-8167-6e64f52cada6.xml, ndis/NdisMCmDispatchIncomingCloseCall, NdisMCmDispatchIncomingCloseCall macro [Network Drivers Starting with Windows Vista], NdisMCmDispatchIncomingCloseCall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -90,8 +90,8 @@ However, an MCM driver also can call
 <ul>
 <li>
 The MCM driver has notified a client of an incoming call offer. When the miniport driver's 
-      <mshelp:link keywords="netvista.protocolcmincomingcallcomplete" tabindex="0"><i>
-      ProtocolCmIncomingCallComplete</i></mshelp:link> function is called with the client's acceptance, it validates the
+      <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+      ProtocolCmIncomingCallComplete</a> function is called with the client's acceptance, it validates the
       input call parameters, which that client has modified. 
       <i>ProtocolCmIncomingCallComplete</i> determines that the client is proposing unsupportable call
       parameters for the connection, so it calls 
@@ -119,8 +119,8 @@ Abormal network conditions force the MCM driver to tear down active calls. For e
 
 A call to 
     <b>NdisMCmDispatchIncomingCloseCall</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclincomingclosecall" tabindex="0"><i>
-    ProtocolClIncomingCloseCall</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">
+    ProtocolClIncomingCloseCall</a> function.
 
 Only connection-oriented miniport drivers that provide call-management support can call 
     <b>NdisMCmDispatchIncomingCall</b>. Stand-alone call managers, which register themselves with NDIS as
@@ -130,33 +130,31 @@ Only connection-oriented miniport drivers that provide call-management support c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmDispatchIncomingCloseCall (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
-
-<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
-
-<mshelp:link keywords="netvista.ndismcmdispatchincomingdropparty" tabindex="0"><b>
-   NdisMCmDispatchIncomingDropParty</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
 <a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 
+<a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
+
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">ProtocolClIncomingCloseCall</a>
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
 
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingdropparty.md">
+   NdisMCmDispatchIncomingDropParty</a>
+
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DEF219B9-115A-4B61-8014-266730CEBD30
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_TRIMRESIDENCYSET, display.d3dddiarg_trimresidencyset, D3DDDIARG_TRIMRESIDENCYSET structure [Display Devices], d3dumddi/D3DDDIARG_TRIMRESIDENCYSET
+ms.keywords : D3DDDIARG_TRIMRESIDENCYSET structure [Display Devices], D3DDDIARG_TRIMRESIDENCYSET, d3dumddi/D3DDDIARG_TRIMRESIDENCYSET, display.d3dddiarg_trimresidencyset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ The trimming behavior flags.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

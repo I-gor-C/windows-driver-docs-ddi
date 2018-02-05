@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6E4ADD86-EFC4-4369-83A1-1D2824235310
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : DeviceThermalState, KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH structure [Streaming Media Devices], PKSDEVICE_THERMAL_DISPATCH structure pointer [Streaming Media Devices], ks/PKSDEVICE_THERMAL_DISPATCH, KsDevice, PKSDEVICE_THERMAL_DISPATCH, Engaged, _KSDEVICE_THERMAL_DISPATCH, Percentage, ks/KSDEVICE_THERMAL_DISPATCH, stream.ksdevice_thermal_dispatch
+ms.keywords : stream.ksdevice_thermal_dispatch, KsDevice, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH structure [Streaming Media Devices], _KSDEVICE_THERMAL_DISPATCH, DeviceThermalState, Percentage, PKSDEVICE_THERMAL_DISPATCH, Engaged, PKSDEVICE_THERMAL_DISPATCH structure pointer [Streaming Media Devices], ks/KSDEVICE_THERMAL_DISPATCH, ks/PKSDEVICE_THERMAL_DISPATCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH
+req.typenames : "*PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH"
 ---
 
 # _KSDEVICE_THERMAL_DISPATCH structure
@@ -73,9 +73,9 @@ void
 </tr>
 </table></span></div>
 
-#### KsDevice
+#### DeviceThermalState
 
-[in] A <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> object representing the device managed by KS.
+[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the <a href="..\poclass\nc-poclass-device_active_cooling.md">ActiveCooling</a> routine.
 
 
 #### Engaged
@@ -83,9 +83,9 @@ void
 [in] Indicates whether to engage or disengage active cooling. If <b>TRUE</b>, the driver must engage active cooling (for example, by turning the fan on). If <b>FALSE</b>, the driver must disengage active cooling (for example, by turning the fan off).
 
 
-#### DeviceThermalState
+#### KsDevice
 
-[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the <a href="..\poclass\nc-poclass-device_active_cooling.md">ActiveCooling</a> routine.
+[in] A <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> object representing the device managed by KS.
 
 `PassiveCooling`
 
@@ -108,6 +108,11 @@ void
 </tr>
 </table></span></div>
 
+#### DeviceThermalState
+
+[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the  <a href="..\poclass\nc-poclass-device_passive_cooling.md">PassiveCooling</a> routine.
+
+
 #### KsDevice
 
 [in] A <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> object representing the device managed by KS.
@@ -118,15 +123,7 @@ void
 [in] The percentage of full performance at which the device is permitted to operate. A parameter value of 100 indicates that the device is under no cooling restrictions and can operate at full performance level. A parameter value of zero indicates that the device must operate at its lowest thermal level. A parameter value between 0 and 100 indicates the degree to which the device's performance must be throttled to reduce heat generation. This parameter value is a threshold that the device must not exceed.
 
 
-#### DeviceThermalState
-
-[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the  <a href="..\poclass\nc-poclass-device_passive_cooling.md">PassiveCooling</a> routine.
-
-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

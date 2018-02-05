@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 11f086af-bda7-4dab-8c4b-0db2e89588d1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfinterrupt/WdfInterruptGetInfo, DFInterruptObjectRef_eb163aa0-1ba3-491d-b215-85c8773dcfc9.xml, wdf.wdfinterruptgetinfo, kmdf.wdfinterruptgetinfo, WdfInterruptGetInfo method, WdfInterruptGetInfo, PFN_WDFINTERRUPTGETINFO
+ms.keywords : wdfinterrupt/WdfInterruptGetInfo, WdfInterruptGetInfo method, kmdf.wdfinterruptgetinfo, DFInterruptObjectRef_eb163aa0-1ba3-491d-b215-85c8773dcfc9.xml, WdfInterruptGetInfo, PFN_WDFINTERRUPTGETINFO, wdf.wdfinterruptgetinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,12 +84,11 @@ For more information about handling interrupts in framework-based drivers, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
@@ -97,9 +96,9 @@ For more information about handling interrupts in framework-based drivers, see <
 
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
 
-<a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
+
+<a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
 
 <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>
 

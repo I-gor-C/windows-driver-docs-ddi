@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 87906511-7bcb-4f4d-9383-44b0501536e3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : MEDIA_ERASEABLE, PDEVICE_MEDIA_INFO structure pointer [Storage Devices], MEDIA_READ_WRITE, _DEVICE_MEDIA_INFO, MEDIA_WRITE_ONCE, MEDIA_READ_ONLY, structs-general_e2c363ff-f053-45be-a807-f90480c0ae1f.xml, *PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO structure [Storage Devices], DEVICE_MEDIA_INFO, ntddstor/PDEVICE_MEDIA_INFO, MEDIA_WRITE_PROTECTED, MEDIA_CURRENTLY_MOUNTED, storage.device_media_info, PDEVICE_MEDIA_INFO, ntddstor/DEVICE_MEDIA_INFO
+ms.keywords : structs-general_e2c363ff-f053-45be-a807-f90480c0ae1f.xml, ntddstor/DEVICE_MEDIA_INFO, ntddstor/PDEVICE_MEDIA_INFO, MEDIA_WRITE_PROTECTED, MEDIA_WRITE_ONCE, storage.device_media_info, MEDIA_ERASEABLE, _DEVICE_MEDIA_INFO, PDEVICE_MEDIA_INFO structure pointer [Storage Devices], MEDIA_READ_WRITE, PDEVICE_MEDIA_INFO, MEDIA_CURRENTLY_MOUNTED, DEVICE_MEDIA_INFO, MEDIA_READ_ONLY, *PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICE_MEDIA_INFO, *PDEVICE_MEDIA_INFO
+req.typenames : "*PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO"
 ---
 
 # _DEVICE_MEDIA_INFO structure
@@ -94,16 +94,13 @@ The driver fills in an array of <b>DEVICE_MEDIA_INFO</b> structures, one for eac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also
 
-<a href="..\ntddstor\ne-ntddstor-_storage_media_type.md">STORAGE_MEDIA_TYPE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567939">TapeMiniGetMediaTypes</a>
+
+<a href="..\ntddstor\ne-ntddstor-_storage_media_type.md">STORAGE_MEDIA_TYPE</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3578eb3a-e9c8-4de3-b959-daff9ac7f1a2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iresourcelist_finduntranslatedentry, FindUntranslatedEntry method [Audio Devices], FindUntranslatedEntry method [Audio Devices], IResourceList interface, portcls/IResourceList::FindUntranslatedEntry, IResourceList::FindUntranslatedEntry, FindUntranslatedEntry, IResourceList interface [Audio Devices], FindUntranslatedEntry method, IResourceList, audmp-routines_d9b98845-63dd-454d-b1de-dd7db8825e27.xml
+ms.keywords : FindUntranslatedEntry method [Audio Devices], IResourceList interface, IResourceList, portcls/IResourceList::FindUntranslatedEntry, FindUntranslatedEntry, IResourceList interface [Audio Devices], FindUntranslatedEntry method, audio.iresourcelist_finduntranslatedentry, audmp-routines_d9b98845-63dd-454d-b1de-dd7db8825e27.xml, IResourceList::FindUntranslatedEntry, FindUntranslatedEntry method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -79,24 +79,20 @@ For more information about translated and untranslated (or "raw") resources, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-
 <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536988">IResourceList::NumberOfEntriesOfType</a>
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536982">IResourceList::FindTranslatedEntry</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536988">IResourceList::NumberOfEntriesOfType</a>
 
  
 

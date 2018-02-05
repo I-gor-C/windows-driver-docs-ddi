@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b07cd86b-a980-478b-832b-484a1b0ca981
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_c7f29624-d08d-437f-8b03-6f6f3b1f27b9.xml, display.videoportwriteportbufferuchar, VideoPortWritePortBufferUchar, VideoPortWritePortBufferUchar function [Display Devices], video/VideoPortWritePortBufferUchar
+ms.keywords : VideoPortWritePortBufferUchar, VideoPort_Functions_c7f29624-d08d-437f-8b03-6f6f3b1f27b9.xml, video/VideoPortWritePortBufferUchar, display.videoportwriteportbufferuchar, VideoPortWritePortBufferUchar function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,12 @@ Callers of <b>VideoPortWritePortBufferUchar</b> can be running at any IRQL, prov
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

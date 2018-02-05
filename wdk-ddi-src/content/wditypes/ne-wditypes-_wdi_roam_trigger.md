@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7AFA084B-5EFC-429B-B6D1-F4E484B16921
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_ROAM_TRIGGER_OTHER, WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST, WDI_ROAM_TRIGGER enumeration [Network Drivers Starting with Windows Vista], wditypes/WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST, _WDI_ROAM_TRIGGER, netvista.wdi_roam_trigger, WDI_ROAM_TRIGGER, wditypes/WDI_ROAM_TRIGGER, wditypes/WDI_ROAM_TRIGGER_OTHER
+ms.keywords : wditypes/WDI_ROAM_TRIGGER, _WDI_ROAM_TRIGGER, wditypes/WDI_ROAM_TRIGGER_OTHER, WDI_ROAM_TRIGGER, WDI_ROAM_TRIGGER_OTHER, WDI_ROAM_TRIGGER enumeration [Network Drivers Starting with Windows Vista], WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST, netvista.wdi_roam_trigger, wditypes/WDI_ROAM_TRIGGER_CRITICAL_BSS_TRANSITION_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,7 +69,5 @@ typedef enum _WDI_ROAM_TRIGGER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

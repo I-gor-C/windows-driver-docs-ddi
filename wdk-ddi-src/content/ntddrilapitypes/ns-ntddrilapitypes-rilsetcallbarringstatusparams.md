@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1e524d3d-d9dc-4d95-ad13-258cd51bc532
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILSETCALLBARRINGSTATUSPARAMS, ntddrilapitypes/RILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS, netvista.rilsetcallbarringstatusparams, RILSETCALLBARRINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : "*LPRILSETCALLBARRINGSTATUSPARAMS, ntddrilapitypes/RILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetcallbarringstatusparams, RILSETCALLBARRINGSTATUSPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSETCALLBARRINGSTATUSPARAMS, *LPRILSETCALLBARRINGSTATUSPARAMS
+req.typenames : "*LPRILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS"
 ---
 
 # RILSETCALLBARRINGSTATUSPARAMS structure
@@ -89,7 +89,4 @@ typedef struct _RILSETCALLBARRINGSTATUSPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

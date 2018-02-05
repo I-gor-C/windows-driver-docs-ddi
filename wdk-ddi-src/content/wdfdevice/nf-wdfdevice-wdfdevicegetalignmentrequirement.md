@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 531f5e99-0e04-47dd-86bb-c35aa549c63a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetAlignmentRequirement, wdf.wdfdevicegetalignmentrequirement, PFN_WDFDEVICEGETALIGNMENTREQUIREMENT, kmdf.wdfdevicegetalignmentrequirement, WdfDeviceGetAlignmentRequirement method, wdfdevice/WdfDeviceGetAlignmentRequirement, DFDeviceObjectGeneralRef_c7135427-9887-44e5-8380-28ebef4174a9.xml
+ms.keywords : wdfdevice/WdfDeviceGetAlignmentRequirement, wdf.wdfdevicegetalignmentrequirement, DFDeviceObjectGeneralRef_c7135427-9887-44e5-8380-28ebef4174a9.xml, PFN_WDFDEVICEGETALIGNMENTREQUIREMENT, WdfDeviceGetAlignmentRequirement method, kmdf.wdfdevicegetalignmentrequirement, WdfDeviceGetAlignmentRequirement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,12 +70,10 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

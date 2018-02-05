@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e8a31f48-bad2-49d1-81be-d345d87a0fd5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.msfc_fibreporthbaattributes, hbapiwmi/PMSFC_FibrePortHBAAttributes, _MSFC_FibrePortHBAAttributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml, PMSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes, PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices], MSFC_FibrePortHBAAttributes structure [Storage Devices], MSFC_FibrePortHBAAttributes, hbapiwmi/MSFC_FibrePortHBAAttributes
+ms.keywords : hbapiwmi/PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml, *PMSFC_FibrePortHBAAttributes, storage.msfc_fibreporthbaattributes, PMSFC_FibrePortHBAAttributes, _MSFC_FibrePortHBAAttributes, hbapiwmi/MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes structure [Storage Devices], PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,13 @@ Unique identifier for the port. This identifier must be unique among all ports o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
 <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
  
 

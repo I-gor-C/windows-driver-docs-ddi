@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWRITE_ROTATION, WRITE_ROTATION"
+req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_CONFIGURATION IOCTL
@@ -75,9 +75,7 @@ The <b>Information</b> field is set to the number of bytes that are returned. Th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
-| **IRQL** |  |
 
 ## See Also
 

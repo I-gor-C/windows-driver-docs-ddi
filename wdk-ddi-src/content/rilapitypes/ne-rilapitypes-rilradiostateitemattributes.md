@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d13c1946-1283-4ed6-953e-626fda91a782
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, RILRADIOSTATEITEMATTRIBUTES enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILRADIOSTATEITEMATTRIBUTES, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, RILRADIOSTATEITEMATTRIBUTES, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, netvista.rilradiostateitemattributes_2, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY
+ms.keywords : RILRADIOSTATEITEMATTRIBUTES enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, rilapitypes/RILRADIOSTATEITEMATTRIBUTES, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, RILRADIOSTATEITEMATTRIBUTES, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, rilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, netvista.rilradiostateitemattributes_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILRADIOSTATEITEMATTRIBUTES {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

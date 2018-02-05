@@ -69,9 +69,7 @@ The driver returns the <a href="..\ntdddisk\ns-ntdddisk-_partition_information.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
+req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_GET_DEVICE_ATTRIBUTES IOCTL
@@ -81,9 +81,7 @@ The HID minidriver sets the following fields of <b>Irp-&gt;IoStatus</b>:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidport.h (include Hidport.h) |
-| **IRQL** |  |
 
 ## See Also
 

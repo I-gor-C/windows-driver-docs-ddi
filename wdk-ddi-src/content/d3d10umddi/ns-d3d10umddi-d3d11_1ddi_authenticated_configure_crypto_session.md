@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 667429cb-0db8-4139-af5a-c3275b68a507
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddi_authenticated_configure_crypto_session, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION, D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION structure [Display Devices], D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION
+ms.keywords : display.d3d11_1ddi_authenticated_configure_crypto_session, D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION, D3D11_1DDI_AUTHENTICATED_CONFIGURE_CRYPTO_SESSION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_configure_input.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

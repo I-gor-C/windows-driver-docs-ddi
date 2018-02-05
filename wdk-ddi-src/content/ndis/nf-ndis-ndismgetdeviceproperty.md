@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : caef96b6-1b94-475d-9f78-66ae6d6ac979
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : miniport_ndis_functions_ref_849a967a-d488-4440-a9b5-9c7fbc247acd.xml, NdisMGetDeviceProperty, netvista.ndismgetdeviceproperty, ndis/NdisMGetDeviceProperty, NdisMGetDeviceProperty function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndismgetdeviceproperty, ndis/NdisMGetDeviceProperty, miniport_ndis_functions_ref_849a967a-d488-4440-a9b5-9c7fbc247acd.xml, NdisMGetDeviceProperty, NdisMGetDeviceProperty function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,8 +62,8 @@ VOID NdisMGetDeviceProperty(
 `MiniportAdapterHandle`
 
 The NDIS handle that identifies the miniport adapter. This handle was originally passed to the 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `PhysicalDeviceObject`
 
@@ -133,20 +133,18 @@ Miniport drivers can call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMGetDeviceProperty (NDIS   5.1). Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMGetDeviceProperty (NDIS   5.1). |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
  
 

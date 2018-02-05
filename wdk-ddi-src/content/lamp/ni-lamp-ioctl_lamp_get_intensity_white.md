@@ -87,6 +87,4 @@ The <b>Value</b> field is the white light intensity in percentage (0 - 100).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | lamp.h |
-| **IRQL** |  |

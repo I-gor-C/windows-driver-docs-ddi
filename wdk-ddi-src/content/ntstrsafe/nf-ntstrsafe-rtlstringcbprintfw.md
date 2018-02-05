@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ff35590f-1834-462a-9a9e-f7a3268776e8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlStringCbPrintfW, ntstrsafe/RtlStringCbPrintfW, kernel.rtlstringcbprintf, ntstrsafe/RtlStringCbPrintfA, RtlStringCbPrintfA, RtlStringCbPrintf, RtlStringCbPrintfW function [Kernel-Mode Driver Architecture], safestrings_066962fd-30e4-4535-b667-bf6f8fa2f2b2.xml
+ms.keywords : ntstrsafe/RtlStringCbPrintfA, RtlStringCbPrintfA, safestrings_066962fd-30e4-4535-b667-bf6f8fa2f2b2.xml, kernel.rtlstringcbprintf, RtlStringCbPrintf, RtlStringCbPrintfW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbPrintfW, RtlStringCbPrintfW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,7 +71,7 @@ For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char
 
 A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="http://msdn.microsoft.com/en-us/library/56e442dc.aspx">formatting directives</a>.
 
-``
+`Arg1`
 
 
 
@@ -195,22 +195,19 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1). Available starting with Windows XP with Service Pack 1 (SP1). |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfexw.md">RtlStringCbPrintfEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md">RtlStringCchPrintf</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfw.md">RtlStringCbVPrintf</a>
-
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfexw.md">RtlStringCbPrintfEx</a>
 
  
 

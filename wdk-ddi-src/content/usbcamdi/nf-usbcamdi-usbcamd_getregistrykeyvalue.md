@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c3512a79-884f-4f38-9942-63a4a464585c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : USBCAMD_GetRegistryKeyValue, stream.usbcamd_getregistrykeyvalue, USBCAMD_GetRegistryKeyValue function [Streaming Media Devices], usbcmdpr_f93ab3a6-f063-4c69-819d-1aed77b8efe6.xml, usbcamdi/USBCAMD_GetRegistryKeyValue
+ms.keywords : usbcamdi/USBCAMD_GetRegistryKeyValue, usbcmdpr_f93ab3a6-f063-4c69-819d-1aed77b8efe6.xml, USBCAMD_GetRegistryKeyValue function [Streaming Media Devices], USBCAMD_GetRegistryKeyValue, stream.usbcamd_getregistrykeyvalue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,11 +103,6 @@ There was insufficient memory to continue.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Usbcamd2.lib |

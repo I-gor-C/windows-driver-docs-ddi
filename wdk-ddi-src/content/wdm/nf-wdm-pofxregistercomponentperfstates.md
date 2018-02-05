@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5A52543B-F0EA-4318-A66F-F9FA60FF94F5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PO_FX_FLAG_PERF_QUERY_ON_F0, PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES, PoFxRegisterComponentPerfStates, PoFxRegisterComponentPerfStates routine [Kernel-Mode Driver Architecture], kernel.pofxregistercomponentperfstates, wdm/PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_PEP_OPTIONAL
+ms.keywords : kernel.pofxregistercomponentperfstates, PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_PEP_OPTIONAL, wdm/PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_QUERY_ON_F0, PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES, PoFxRegisterComponentPerfStates routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -177,24 +177,22 @@ If the driver requires the PEP to provide performance state information, the dri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\ns-wdm-_po_fx_component_perf_info.md">PO_FX_COMPONENT_PERF_INFO</a>
+
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 
 <a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a>
-
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-
-<a href="..\wdm\ns-wdm-_po_fx_component_perf_info.md">PO_FX_COMPONENT_PERF_INFO</a>
 
  
 

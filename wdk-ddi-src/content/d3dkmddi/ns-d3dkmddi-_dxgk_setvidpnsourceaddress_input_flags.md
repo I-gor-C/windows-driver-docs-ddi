@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FBC661AA-B028-45AF-8E3C-7C2472652BD5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS, display.dxgk_setvidpnsourceaddress_input_flags, _DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS structure [Display Devices]
+ms.keywords : display.dxgk_setvidpnsourceaddress_input_flags, DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS structure [Display Devices], d3dkmddi/DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS, _DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ typedef struct _DXGK_SETVIDPNSOURCEADDRESS_INPUT_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

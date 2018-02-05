@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 7ec0dd2d-7be5-4c85-8096-64a45aee01a5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CPST_NONE, CPST_PERCEPTUAL, icm/CPST_CUSTOM_WORKING_SPACE, icm/CPST_RELATIVE_COLORIMETRIC, icm/CPST_NONE, CPST_ABSOLUTE_COLORIMETRIC, CPST_RGB_WORKING_SPACE, icm/CPST_ABSOLUTE_COLORIMETRIC, COLORPROFILESUBTYPE, icm/CPST_SATURATION, print.colorprofilesubtype, CPST_SATURATION, icm/CPST_PERCEPTUAL, CPST_CUSTOM_WORKING_SPACE, colorfnc_10016472-785a-4ef5-95c2-7fd3699a6a81.xml, COLORPROFILESUBTYPE enumeration [Print Devices], icm/COLORPROFILESUBTYPE, CPST_RELATIVE_COLORIMETRIC, *PCOLORPROFILESUBTYPE, icm/CPST_RGB_WORKING_SPACE
+ms.keywords : icm/CPST_PERCEPTUAL, icm/COLORPROFILESUBTYPE, CPST_RELATIVE_COLORIMETRIC, CPST_CUSTOM_WORKING_SPACE, *PCOLORPROFILESUBTYPE, icm/CPST_NONE, colorfnc_10016472-785a-4ef5-95c2-7fd3699a6a81.xml, COLORPROFILESUBTYPE enumeration [Print Devices], icm/CPST_CUSTOM_WORKING_SPACE, CPST_NONE, icm/CPST_RELATIVE_COLORIMETRIC, CPST_ABSOLUTE_COLORIMETRIC, icm/CPST_RGB_WORKING_SPACE, print.colorprofilesubtype, CPST_RGB_WORKING_SPACE, icm/CPST_SATURATION, COLORPROFILESUBTYPE, CPST_SATURATION, CPST_PERCEPTUAL, icm/CPST_ABSOLUTE_COLORIMETRIC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -123,16 +123,14 @@ The PCOLORPROFILESUBTYPE and LPCOLORPROFILESUBTYPE data types are defined as poi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
 | **Header** | icm.h |
 
 ## See Also
 
-<a href="..\icm\nf-icm-wcssetdefaultcolorprofile.md">WcsSetDefaultColorProfile</a>
-
 <a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
+
+<a href="..\icm\nf-icm-wcssetdefaultcolorprofile.md">WcsSetDefaultColorProfile</a>
 
  
 

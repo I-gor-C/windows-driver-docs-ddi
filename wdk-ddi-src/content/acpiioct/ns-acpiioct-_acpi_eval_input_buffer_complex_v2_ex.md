@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 50AEF454-8E36-4348-9340-330094D2FDF8
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : acpi.acpi_eval_input_buffer_complex_v2_ex, acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX structure pointer [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX structure [ACPI Devices]
+ms.keywords : PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX structure pointer [ACPI Devices], acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, acpi.acpi_eval_input_buffer_complex_v2_ex, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX structure [ACPI Devices], *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,5 @@ Defines the <b>ULONG</b> member <b>Size</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 and later versions. Windows 10, version 1709 and later versions. |
 | **Header** | acpiioct.h (include Acpiioct.h) |

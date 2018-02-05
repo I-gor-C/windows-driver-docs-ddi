@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 20897336-e032-4aa7-be5f-47704c6d1d12
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_IDEREGS, PIDEREGS, *LPIDEREGS, ntdddisk/LPIDEREGS, *PIDEREGS, ntdddisk/PIDEREGS, storage.ideregs, LPIDEREGS structure pointer [Storage Devices], IDEREGS, LPIDEREGS, IDEREGS structure [Storage Devices], structs-IDE_aeab294c-9363-4207-bbcb-d9d442ab5c92.xml, PIDEREGS structure pointer [Storage Devices], ntdddisk/IDEREGS"
+ms.keywords : storage.ideregs, IDEREGS, *LPIDEREGS, PIDEREGS, *PIDEREGS, IDEREGS structure [Storage Devices], LPIDEREGS, _IDEREGS, structs-IDE_aeab294c-9363-4207-bbcb-d9d442ab5c92.xml, ntdddisk/IDEREGS, PIDEREGS structure pointer [Storage Devices], ntdddisk/PIDEREGS, LPIDEREGS structure pointer [Storage Devices], ntdddisk/LPIDEREGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPIDEREGS, *PIDEREGS, IDEREGS"
+req.typenames : IDEREGS, *LPIDEREGS, *PIDEREGS
 ---
 
 # _IDEREGS structure
@@ -210,9 +210,6 @@ Holds the contents of the sector number register.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also

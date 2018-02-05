@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 00e5abd6-c2d7-4408-aaf4-27a67dd3ee51
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/CcUninitializeCacheMap, ifsk.ccuninitializecachemap, CcUninitializeCacheMap, CcUninitializeCacheMap routine [Installable File System Drivers], ccref_737f8e52-0bb4-4dfd-8516-16de77410b9a.xml
+ms.keywords : CcUninitializeCacheMap routine [Installable File System Drivers], CcUninitializeCacheMap, ntifs/CcUninitializeCacheMap, ccref_737f8e52-0bb4-4dfd-8516-16de77410b9a.xml, ifsk.ccuninitializecachemap
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,10 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 62E3A714-BA18-4DD5-ACFC-A9EFA37EABB4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WDI_TYPE_NONCE, WDI_TYPE_NONCE, WDI_TYPE_NONCE structure [Network Drivers Starting with Windows Vista], wditypes/WDI_TYPE_NONCE, *PWDI_TYPE_NONCE, PWDI_TYPE_NONCE, netvista.wdi_type_nonce, wditypes/PWDI_TYPE_NONCE, PWDI_TYPE_NONCE structure pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : netvista.wdi_type_nonce, wditypes/WDI_TYPE_NONCE, wditypes/PWDI_TYPE_NONCE, WDI_TYPE_NONCE, PWDI_TYPE_NONCE, PWDI_TYPE_NONCE structure pointer [Network Drivers Starting with Windows Vista], _WDI_TYPE_NONCE, *PWDI_TYPE_NONCE, WDI_TYPE_NONCE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,7 +60,5 @@ The SNonce or ANonce.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 4024d455-2393-481f-8cb5-b33346ca85c7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.wia_dev_cap_drv, wiastrct_111f0703-6db4-4a87-ae12-20a3120219cc.xml, wiamindr_lh/WIA_DEV_CAP_DRV, WIA_DEV_CAP_DRV structure [Imaging Devices], PWIA_DEV_CAP_DRV structure pointer [Imaging Devices], wiamindr_lh/PWIA_DEV_CAP_DRV, WIA_DEV_CAP_DRV, *PWIA_DEV_CAP_DRV, _WIA_DEV_CAP_DRV, PWIA_DEV_CAP_DRV
+ms.keywords : wiamindr_lh/PWIA_DEV_CAP_DRV, WIA_DEV_CAP_DRV, image.wia_dev_cap_drv, _WIA_DEV_CAP_DRV, PWIA_DEV_CAP_DRV structure pointer [Imaging Devices], wiamindr_lh/WIA_DEV_CAP_DRV, WIA_DEV_CAP_DRV structure [Imaging Devices], wiastrct_111f0703-6db4-4a87-ae12-20a3120219cc.xml, *PWIA_DEV_CAP_DRV, PWIA_DEV_CAP_DRV
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WIA_DEV_CAP_DRV, *PWIA_DEV_CAP_DRV
+req.typenames : "*PWIA_DEV_CAP_DRV, WIA_DEV_CAP_DRV"
 req.product : Windows 10 or later.
 ---
 
@@ -112,16 +112,14 @@ When a driver is enumerating event handlers, the only valid value is WIA_IS_DEFA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/639eff56-655d-4b6a-95f0-daa1daf62fae">Driver Capabilities</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
+
+<a href="https://msdn.microsoft.com/639eff56-655d-4b6a-95f0-daa1daf62fae">Driver Capabilities</a>
 
  
 

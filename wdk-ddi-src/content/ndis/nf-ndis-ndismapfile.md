@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 965bb4c7-826d-425b-b10d-2d5a29ca0f91
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMapFile, NdisMapFile function [Network Drivers Starting with Windows Vista], ndis/NdisMapFile, VOID, ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml, netvista.ndismapfile
+ms.keywords : ndis/NdisMapFile, VOID, NdisMapFile, netvista.ndismapfile, NdisMapFile function [Network Drivers Starting with Windows Vista], ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,15 +65,15 @@ A pointer to a caller-supplied variable in which this function returns the statu
 
 
 
+#### NDIS_STATUS_ALREADY_MAPPED
+
+The caller cannot access the file contents at this time.
+
+
 #### NDIS_STATUS_SUCCESS
 
 The caller has exclusive access to the file contents until the 
        <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a> function is called.
-
-
-#### NDIS_STATUS_ALREADY_MAPPED
-
-The caller cannot access the file contents at this time.
 
 `MappedBuffer`
 
@@ -111,22 +111,20 @@ A miniport driver can call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
+
+<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
 
 <a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a>
 

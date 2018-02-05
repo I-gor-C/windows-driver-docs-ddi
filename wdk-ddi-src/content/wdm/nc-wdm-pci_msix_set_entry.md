@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -110,20 +110,16 @@ By default, the operating system assigns the index of the table entry as the mes
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system. Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | "<= DIRQL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
-
 <a href="..\wdm\ns-wdm-_pci_msix_table_config_interface.md">PCI_MSIX_TABLE_CONFIG_INTERFACE</a>
+
+<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 
 <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e48357b2-52dc-48af-aeb1-8d84ea107579
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisClAddParty function [Network Drivers Starting with Windows Vista], NdisClAddParty, ndis/NdisClAddParty, condis_client_ref_90d23e8e-f3a5-4a19-9eeb-b68a28f7f915.xml, netvista.ndiscladdparty
+ms.keywords : netvista.ndiscladdparty, NdisClAddParty, NdisClAddParty function [Network Drivers Starting with Windows Vista], ndis/NdisClAddParty, condis_client_ref_90d23e8e-f3a5-4a19-9eeb-b68a28f7f915.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,8 +81,8 @@ Pointer to a variable to be set by NDIS if the add-party operation succeeds.
 When 
      <b>NdisClAddParty</b> returns anything other than NDIS_STATUS_PENDING, the client should make an internal
      call to its 
-     <mshelp:link keywords="netvista.protocolcladdpartycomplete" tabindex="0"><i>
-     ProtocolClAddPartyComplete</i></mshelp:link> function. Otherwise, NDIS calls the client's 
+     <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
+     ProtocolClAddPartyComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClAddPartyComplete</i> function when this operation is completed.
 
 ## Remarks
@@ -107,8 +107,8 @@ A call to
     <a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a> or 
     <a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>. The
     client's 
-    <mshelp:link keywords="netvista.protocolcladdpartycomplete" tabindex="0"><i>
-    ProtocolClAddPartyComplete</i></mshelp:link> function should check the input 
+    <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
+    ProtocolClAddPartyComplete</a> function should check the input 
     <i>Status</i> argument for NDIS_STATUS_SUCCESS before proceeding further.
 
 The underlying network medium determines whether a client can specify per-party traffic parameters on
@@ -141,8 +141,8 @@ Change the traffic parameters for every party already on the VC when it successf
 
 In turn, NDIS passes the client-supplied 
     <i>ProtocolPartyContext</i> handle in subsequent calls to the client's ProtocolCl<i>Xxx</i> functions that concern this newly added party, including the call to 
-    <mshelp:link keywords="netvista.protocolcladdpartycomplete" tabindex="0"><i>
-    ProtocolClAddPartyComplete</i></mshelp:link>.
+    <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
+    ProtocolClAddPartyComplete</a>.
 
 Whether a multipoint call permits transfers in both directions and/or per-party transfers with
     per-party traffic parameters depends on the medium of the underlying miniport driver to which the client
@@ -157,41 +157,39 @@ Whether a multipoint call permits transfers in both directions and/or per-party 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClAddParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClAddParty (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClAddParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClAddParty (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
-
-<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
-
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-<a href="..\ndis\nf-ndis-ndiscooidrequestcomplete.md">NdisCoOidRequestComplete</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
 <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 
 <a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a>
 
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
+
 <a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
+
+<a href="..\ndis\nf-ndis-ndiscooidrequestcomplete.md">NdisCoOidRequestComplete</a>
 
  
 

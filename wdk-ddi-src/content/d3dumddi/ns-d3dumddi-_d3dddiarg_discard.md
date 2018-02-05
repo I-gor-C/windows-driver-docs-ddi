@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6efee74e-9e82-4631-8360-19061b0c015d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DISCARD, display.d3dddiarg_discard, d3dumddi/D3DDDIARG_DISCARD, _D3DDDIARG_DISCARD, D3DDDIARG_DISCARD structure [Display Devices]
+ms.keywords : D3DDDIARG_DISCARD, d3dumddi/D3DDDIARG_DISCARD, D3DDDIARG_DISCARD structure [Display Devices], display.d3dddiarg_discard, _D3DDDIARG_DISCARD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,7 @@ An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff56923
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

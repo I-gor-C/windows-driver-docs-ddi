@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1f54e8fe-e6a2-4ddd-9451-289d3df21fde
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFreeRWLock, ndis_processor_group_ref_f711221a-f265-446e-86bc-7b5b4d17f7d9.xml, NdisFreeRWLock function [Network Drivers Starting with Windows Vista], netvista.ndisfreerwlock, ndis/NdisFreeRWLock
+ms.keywords : ndis/NdisFreeRWLock, NdisFreeRWLock, ndis_processor_group_ref_f711221a-f265-446e-86bc-7b5b4d17f7d9.xml, netvista.ndisfreerwlock, NdisFreeRWLock function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,20 +82,17 @@ A driver must call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a>
-
 <a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a>
 
 <a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5d860c5c-e29e-4ea2-b6f7-bcaab0d4584d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_592bfe23-7135-4118-9acf-6783691c55ea.xml, stream.ksgetbusenumparentfdofromchildpdo, KsGetBusEnumParentFDOFromChildPDO function [Streaming Media Devices], swenum/KsGetBusEnumParentFDOFromChildPDO, KsGetBusEnumParentFDOFromChildPDO
+ms.keywords : ksfunc_592bfe23-7135-4118-9acf-6783691c55ea.xml, stream.ksgetbusenumparentfdofromchildpdo, KsGetBusEnumParentFDOFromChildPDO, swenum/KsGetBusEnumParentFDOFromChildPDO, KsGetBusEnumParentFDOFromChildPDO function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ Returns STATUS_SUCCESS if successful, or STATUS_INVALID_PARAMETER if <i>DeviceOb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | swenum.h (include Swenum.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

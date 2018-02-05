@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6E1A4A3B-FA8B-4AAC-898F-CCFF77BFA962
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_QUERY_COMPONENT_PERF_CAPABILITIES, _PEP_QUERY_COMPONENT_PERF_CAPABILITIES, *PPEP_QUERY_COMPONENT_PERF_CAPABILITIES, PEP_QUERY_COMPONENT_PERF_CAPABILITIES, PPEP_QUERY_COMPONENT_PERF_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_QUERY_COMPONENT_PERF_CAPABILITIES, kernel.pep_query_component_perf_capabilities, PEP_QUERY_COMPONENT_PERF_CAPABILITIES structure [Kernel-Mode Driver Architecture], PPEP_QUERY_COMPONENT_PERF_CAPABILITIES
+ms.keywords : pepfx/PPEP_QUERY_COMPONENT_PERF_CAPABILITIES, kernel.pep_query_component_perf_capabilities, PPEP_QUERY_COMPONENT_PERF_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], *PPEP_QUERY_COMPONENT_PERF_CAPABILITIES, PPEP_QUERY_COMPONENT_PERF_CAPABILITIES, PEP_QUERY_COMPONENT_PERF_CAPABILITIES structure [Kernel-Mode Driver Architecture], _PEP_QUERY_COMPONENT_PERF_CAPABILITIES, pepfx/PEP_QUERY_COMPONENT_PERF_CAPABILITIES, PEP_QUERY_COMPONENT_PERF_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_QUERY_COMPONENT_PERF_CAPABILITIES, *PPEP_QUERY_COMPONENT_PERF_CAPABILITIES
+req.typenames : "*PPEP_QUERY_COMPONENT_PERF_CAPABILITIES, PEP_QUERY_COMPONENT_PERF_CAPABILITIES"
 ---
 
 # _PEP_QUERY_COMPONENT_PERF_CAPABILITIES structure
@@ -71,18 +71,16 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186839">PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
 
  
 

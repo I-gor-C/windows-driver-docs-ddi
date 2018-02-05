@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : fbd6fa74-eb39-4240-947e-1edec1365a83
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883_structures_271facde-3b80-421f-a3d2-1f0e9b8e1782.xml, POPCR structure pointer [Buses], 61883/POPCR, 61883/OPCR, OPCR, POPCR, _OPCR, IEEE.opcr, OPCR structure [Buses], *POPCR
+ms.keywords : IEEE.opcr, 61883/POPCR, _OPCR, OPCR, 61883/OPCR, POPCR, 61883_structures_271facde-3b80-421f-a3d2-1f0e9b8e1782.xml, *POPCR, POPCR structure pointer [Buses], OPCR structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OPCR, *POPCR
+req.typenames : "*POPCR, OPCR"
 ---
 
 # _OPCR structure
@@ -94,9 +94,6 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
 ## See Also

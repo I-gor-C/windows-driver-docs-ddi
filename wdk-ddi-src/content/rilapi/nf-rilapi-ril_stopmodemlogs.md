@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1d1f092c-e867-49f7-8f17-90fbf73733fb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_stopmodemlogs, RIL_StopModemLogs method [Network Drivers Starting with Windows Vista], RIL_StopModemLogs, rilapi/RIL_StopModemLogs
+ms.keywords : rilapi/RIL_StopModemLogs, netvista.ril_stopmodemlogs, RIL_StopModemLogs method [Network Drivers Starting with Windows Vista], RIL_StopModemLogs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

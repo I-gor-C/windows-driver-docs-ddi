@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fed2c733-5011-4dba-a8ec-3a0742574949
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FcpId, HBA_FcpId structure [Storage Devices], storage.hba_fcpid, *PHBA_FCPID, structs-Fibre_55770ec7-2c28-4db3-b2bb-20f50e232ba4.xml, hbaapi/HBA_FcpId, HBA_FCPID
+ms.keywords : structs-Fibre_55770ec7-2c28-4db3-b2bb-20f50e232ba4.xml, HBA_FcpId structure [Storage Devices], hbaapi/HBA_FcpId, HBA_FCPID, storage.hba_fcpid, *PHBA_FCPID, HBA_FcpId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHBA_FCPID, HBA_FCPID"
+req.typenames : HBA_FCPID, *PHBA_FCPID
 ---
 
 # HBA_FcpId structure
@@ -51,7 +51,4 @@ The HBA_FcpId structure is identical to the <a href="..\hbapiwmi\ns-hbapiwmi-_hb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h |

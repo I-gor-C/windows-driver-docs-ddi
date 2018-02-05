@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e5e3dfa0-49cc-4c2d-828e-fa5c95d3db8c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbRequestCompletionParams, GetPipeReadParameters method, IWDFUsbRequestCompletionParams interface, GetPipeReadParameters method, umdf.iwdfusbrequestcompletionparams_getpipereadparameters, UMDFRequestObjectRef_d98f8b7f-c264-4044-aaef-893c717be50a.xml, IWDFUsbRequestCompletionParams::GetPipeReadParameters, IWDFUsbRequestCompletionParams interface, GetPipeReadParameters method, GetPipeReadParameters, wudfusb/IWDFUsbRequestCompletionParams::GetPipeReadParameters, wdf.iwdfusbrequestcompletionparams_getpipereadparameters
+ms.keywords : IWDFUsbRequestCompletionParams interface, GetPipeReadParameters method, GetPipeReadParameters, wdf.iwdfusbrequestcompletionparams_getpipereadparameters, GetPipeReadParameters method, GetPipeReadParameters method, IWDFUsbRequestCompletionParams interface, wudfusb/IWDFUsbRequestCompletionParams::GetPipeReadParameters, UMDFRequestObjectRef_d98f8b7f-c264-4044-aaef-893c717be50a.xml, umdf.iwdfusbrequestcompletionparams_getpipereadparameters, IWDFUsbRequestCompletionParams::GetPipeReadParameters, IWDFUsbRequestCompletionParams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -78,14 +78,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

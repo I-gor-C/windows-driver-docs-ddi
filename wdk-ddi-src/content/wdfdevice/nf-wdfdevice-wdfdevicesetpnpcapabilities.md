@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fba8bc7d-b776-44e8-a4bf-12de707f2e4f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceSetPnpCapabilities, DFDeviceObjectGeneralRef_5f299c2e-344d-4213-a2fa-8266f056896c.xml, kmdf.wdfdevicesetpnpcapabilities, WdfDeviceSetPnpCapabilities, WdfDeviceSetPnpCapabilities method, PFN_WDFDEVICESETPNPCAPABILITIES, wdf.wdfdevicesetpnpcapabilities
+ms.keywords : WdfDeviceSetPnpCapabilities, WdfDeviceSetPnpCapabilities method, wdf.wdfdevicesetpnpcapabilities, wdfdevice/WdfDeviceSetPnpCapabilities, kmdf.wdfdevicesetpnpcapabilities, DFDeviceObjectGeneralRef_5f299c2e-344d-4213-a2fa-8266f056896c.xml, PFN_WDFDEVICESETPNPCAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,22 +109,21 @@ A driver typically calls <b>WdfDeviceSetPnpCapabilities</b> from within one of t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_pnp_capabilities_init.md">WDF_DEVICE_PNP_CAPABILITIES_INIT</a>
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_capabilities.md">WDF_DEVICE_PNP_CAPABILITIES</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdf_device_pnp_capabilities_init.md">WDF_DEVICE_PNP_CAPABILITIES_INIT</a>
 
  
 

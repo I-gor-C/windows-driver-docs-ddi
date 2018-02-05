@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : B56FEA86-E171-43DA-8207-148298E72313
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 2/SerCx2SystemDmaReceiveCleanupTransactionComplete, serports.sercx2systemdmareceivecleanuptransactioncomplete, SerCx2SystemDmaReceiveCleanupTransactionComplete, SerCx2SystemDmaReceiveCleanupTransactionComplete method [Serial Ports]
+ms.keywords : SerCx2SystemDmaReceiveCleanupTransactionComplete method [Serial Ports], serports.sercx2systemdmareceivecleanuptransactioncomplete, 2/SerCx2SystemDmaReceiveCleanupTransactionComplete, SerCx2SystemDmaReceiveCleanupTransactionComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,11 @@ For more information, see <a href="https://msdn.microsoft.com/0374D1BE-96ED-43D6
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

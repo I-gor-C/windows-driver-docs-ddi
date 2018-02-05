@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 87fbceab-d08c-4da7-a257-1454f84c04b7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_7efacd41-7c8c-4832-b10a-cc7d3dac8982.xml, WdfDeviceSetFailed method, PFN_WDFDEVICESETFAILED, kmdf.wdfdevicesetfailed, wdfdevice/WdfDeviceSetFailed, WdfDeviceSetFailed, wdf.wdfdevicesetfailed
+ms.keywords : WdfDeviceSetFailed method, WdfDeviceSetFailed, kmdf.wdfdevicesetfailed, wdfdevice/WdfDeviceSetFailed, PFN_WDFDEVICESETFAILED, DFDeviceObjectGeneralRef_7efacd41-7c8c-4832-b10a-cc7d3dac8982.xml, wdf.wdfdevicesetfailed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,10 @@ For more information about <b>WdfDeviceSetFailed</b>, see <a href="https://docs.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

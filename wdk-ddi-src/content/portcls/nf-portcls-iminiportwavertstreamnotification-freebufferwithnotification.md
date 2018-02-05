@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2ec9222b-d9e7-4386-ac66-30c5436f549d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : FreeBufferWithNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], FreeBufferWithNotification method, audio.iminiportwavertstreamnotification_freebufferwithnotification, FreeBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification::FreeBufferWithNotification, FreeBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification interface, portcls/IMiniportWaveRTStreamNotification::FreeBufferWithNotification, IMiniportWaveRTStreamNotification, audmp-routines_7b323e6d-c060-4d8a-beb1-88303e45bc0e.xml
+ms.keywords : IMiniportWaveRTStreamNotification, audmp-routines_7b323e6d-c060-4d8a-beb1-88303e45bc0e.xml, audio.iminiportwavertstreamnotification_freebufferwithnotification, portcls/IMiniportWaveRTStreamNotification::FreeBufferWithNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], FreeBufferWithNotification method, FreeBufferWithNotification, FreeBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification interface, IMiniportWaveRTStreamNotification::FreeBufferWithNotification, FreeBufferWithNotification method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -73,22 +73,19 @@ The port driver calls this method to free an audio buffer that was allocated wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536740">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>
 
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
+<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>
 
  
 

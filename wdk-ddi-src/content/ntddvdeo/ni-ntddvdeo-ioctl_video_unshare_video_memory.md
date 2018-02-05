@@ -69,17 +69,15 @@ The miniport driver does not set the <b>Information</b> member of the <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
-
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_share_memory.md">VIDEO_SHARE_MEMORY</a>
 
 <a href="..\video\nf-video-videoportunmapmemory.md">VideoPortUnmapMemory</a>
 
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_share_video_memory.md">IOCTL_VIDEO_SHARE_VIDEO_MEMORY</a>
+
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_share_memory.md">VIDEO_SHARE_MEMORY</a>
 
  
 

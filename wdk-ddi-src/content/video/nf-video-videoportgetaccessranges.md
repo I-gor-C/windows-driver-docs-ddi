@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a858b32-408e-4926-9aba-44046b0266e2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetAccessRanges, video/VideoPortGetAccessRanges, display.videoportgetaccessranges, VideoPort_Functions_a0db7d5d-01be-4c3c-9ea2-2ebd9b8aaca3.xml, VideoPortGetAccessRanges function [Display Devices]
+ms.keywords : VideoPort_Functions_a0db7d5d-01be-4c3c-9ea2-2ebd9b8aaca3.xml, video/VideoPortGetAccessRanges, VideoPortGetAccessRanges function [Display Devices], VideoPortGetAccessRanges, display.videoportgetaccessranges
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,34 +120,32 @@ If the <i>HwVidFindAdapter</i> function claims bus-relative access ranges and po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
-
-<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
+<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
 
 <a href="..\video\nf-video-videoportsetbusdata.md">VideoPortSetBusData</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
+
 <a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
 
-<a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
 
-<a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
+<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
 
 <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
 
-<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
+<a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
+
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 
  
 

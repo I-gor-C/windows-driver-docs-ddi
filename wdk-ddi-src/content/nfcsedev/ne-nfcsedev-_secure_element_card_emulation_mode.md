@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : E8A53836-95D1-4CE4-AF55-5AD732211A55
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfcsedev/EmulationOff, nfcsedev/SECURE_ELEMENT_CARD_EMULATION_MODE, *PSECURE_ELEMENT_CARD_EMULATION_MODE, nfcsedev/EmulationOnPowerDependent, nfpdrivers.secure_element_set_card_emulation_mode, _SECURE_ELEMENT_CARD_EMULATION_MODE, SECURE_ELEMENT_CARD_EMULATION_MODE enumeration [Near-Field Proximity Drivers], EmulationOnPowerDependent, nfcsedev/EmulationOnPowerIndependent, EmulationOff, SECURE_ELEMENT_CARD_EMULATION_MODE, EmulationOnPowerIndependent
+ms.keywords : nfpdrivers.secure_element_set_card_emulation_mode, _SECURE_ELEMENT_CARD_EMULATION_MODE, SECURE_ELEMENT_CARD_EMULATION_MODE, SECURE_ELEMENT_CARD_EMULATION_MODE enumeration [Near-Field Proximity Drivers], nfcsedev/EmulationOnPowerDependent, nfcsedev/EmulationOff, EmulationOnPowerIndependent, nfcsedev/SECURE_ELEMENT_CARD_EMULATION_MODE, EmulationOnPowerDependent, EmulationOff, nfcsedev/EmulationOnPowerIndependent, *PSECURE_ELEMENT_CARD_EMULATION_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _SECURE_ELEMENT_SET_CARD_EMULATION_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | nfcsedev.h |

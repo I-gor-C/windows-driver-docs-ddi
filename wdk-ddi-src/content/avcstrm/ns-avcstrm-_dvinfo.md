@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3afd372f-556f-4c3a-804b-9bf7a8c9a438
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avcsref_9e5ce103-400a-4cfd-b160-5eb99906a80d.xml, avcstrm/PDVINFO, stream.dvinfo, *PDVINFO, PDVINFO, avcstrm/DVINFO, PDVINFO structure pointer [Streaming Media Devices], DVINFO structure [Streaming Media Devices], _DVINFO, DVINFO
+ms.keywords : "_DVINFO, *PDVINFO, avcsref_9e5ce103-400a-4cfd-b160-5eb99906a80d.xml, PDVINFO, avcstrm/DVINFO, avcstrm/PDVINFO, DVINFO, DVINFO structure [Streaming Media Devices], stream.dvinfo, PDVINFO structure pointer [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,7 +89,4 @@ Specifies the Video Auxiliary Data Source Pack as defined in section D.8.1 of Pa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |

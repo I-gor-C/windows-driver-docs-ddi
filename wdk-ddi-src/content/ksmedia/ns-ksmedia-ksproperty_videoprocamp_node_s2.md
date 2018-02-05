@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 767ea5d2-4c11-4ba8-bb1f-c5f6038244f5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_VIDEOPROCAMP_NODE_S2 structure pointer [Streaming Media Devices], vidcapstruct_1876d4f4-15ae-4bcb-9f57-ed08ddf15411.xml, stream.ksproperty_videoprocamp_node_s2, KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure [Streaming Media Devices], PKSPROPERTY_VIDEOPROCAMP_NODE_S2, ksmedia/PKSPROPERTY_VIDEOPROCAMP_NODE_S2, KSPROPERTY_VIDEOPROCAMP_NODE_S2, ksmedia/KSPROPERTY_VIDEOPROCAMP_NODE_S2, *PKSPROPERTY_VIDEOPROCAMP_NODE_S2
+ms.keywords : ksmedia/PKSPROPERTY_VIDEOPROCAMP_NODE_S2, *PKSPROPERTY_VIDEOPROCAMP_NODE_S2, PKSPROPERTY_VIDEOPROCAMP_NODE_S2 structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEOPROCAMP_NODE_S2, vidcapstruct_1876d4f4-15ae-4bcb-9f57-ed08ddf15411.xml, KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure [Streaming Media Devices], KSPROPERTY_VIDEOPROCAMP_NODE_S2, PKSPROPERTY_VIDEOPROCAMP_NODE_S2, stream.ksproperty_videoprocamp_node_s2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -133,7 +133,4 @@ This structure is used by <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

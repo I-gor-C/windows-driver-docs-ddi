@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 54ac7c45-63a1-4003-8250-524e6f9e8d06
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOCEVENT_ESCAPE structure pointer [Print Devices], PDOCEVENT_ESCAPE, *PDOCEVENT_ESCAPE, winddiui/DOCEVENT_ESCAPE, _DOCEVENT_ESCAPE, winddiui/PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE, print.docevent_escape, print_interface-graphics_943033df-71a2-4689-a9fb-abd9feb4ea0d.xml, DOCEVENT_ESCAPE structure [Print Devices]
+ms.keywords : print_interface-graphics_943033df-71a2-4689-a9fb-abd9feb4ea0d.xml, DOCEVENT_ESCAPE structure [Print Devices], winddiui/DOCEVENT_ESCAPE, _DOCEVENT_ESCAPE, print.docevent_escape, *PDOCEVENT_ESCAPE, PDOCEVENT_ESCAPE structure pointer [Print Devices], winddiui/PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE, PDOCEVENT_ESCAPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,16 +76,13 @@ Refer to the Microsoft Windows SDK documentation for a description of the <b>Ext
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winddiui.h (include Winddiui.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>
-
 <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 45022490-8130-449c-8ec9-380be0a3a03d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeDeregisterNmiCallback, KeDeregisterNmiCallback, KeDeregisterNmiCallback routine [Kernel-Mode Driver Architecture], kernel.kederegisternmicallback, k105_407e4af5-fb93-4a7e-bacd-cc1d08935815.xml
+ms.keywords : wdm/KeDeregisterNmiCallback, kernel.kederegisternmicallback, k105_407e4af5-fb93-4a7e-bacd-cc1d08935815.xml, KeDeregisterNmiCallback, KeDeregisterNmiCallback routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,12 +66,11 @@ The <b>KeDeregisterNmiCallback</b> routine returns STATUS_SUCCESS if the callbac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlKeApcLte2, HwStorPortProhibitedDDIs |
 

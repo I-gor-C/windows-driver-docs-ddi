@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 75de51b1-063b-49b2-a390-2bafd44e04b0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.hbafcpbindingentry2, structs-Fibre_b15c2291-b1fc-4f4f-9890-ddf50e3dee9e.xml, HBAFCPBindingEntry2, *PHBAFCPBindingEntry2, HBAFCPBindingEntry2 structure [Storage Devices], _HBAFCPBindingEntry2, PHBAFCPBindingEntry2, hbapiwmi/PHBAFCPBindingEntry2, PHBAFCPBindingEntry2 structure pointer [Storage Devices], hbapiwmi/HBAFCPBindingEntry2
+ms.keywords : storage.hbafcpbindingentry2, HBAFCPBindingEntry2 structure [Storage Devices], structs-Fibre_b15c2291-b1fc-4f4f-9890-ddf50e3dee9e.xml, hbapiwmi/PHBAFCPBindingEntry2, HBAFCPBindingEntry2, _HBAFCPBindingEntry2, PHBAFCPBindingEntry2 structure pointer [Storage Devices], PHBAFCPBindingEntry2, hbapiwmi/HBAFCPBindingEntry2, *PHBAFCPBindingEntry2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HBAFCPBindingEntry2, *PHBAFCPBindingEntry2
+req.typenames : "*PHBAFCPBindingEntry2, HBAFCPBindingEntry2"
 ---
 
 # _HBAFCPBindingEntry2 structure
@@ -138,9 +138,6 @@ For an explanation of the fibre channel protocol (FCP), see the T11 committee's 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h, Hbaapi.h, Hbaapi.h) |
 
 ## See Also

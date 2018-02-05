@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d853643d-d3e8-40cc-a8a8-848f36f3bdae
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PINTERFACE structure pointer [Kernel-Mode Driver Architecture], wdm/INTERFACE, _INTERFACE, INTERFACE structure [Kernel-Mode Driver Architecture], *PINTERFACE, kernel.interface, PINTERFACE, wdm/PINTERFACE, INTERFACE, kstruct_b_667d57fa-a959-4904-a15e-af4d4f44988e.xml
+ms.keywords : wdm/INTERFACE, INTERFACE structure [Kernel-Mode Driver Architecture], INTERFACE, _INTERFACE, *PINTERFACE, PINTERFACE structure pointer [Kernel-Mode Driver Architecture], kernel.interface, PINTERFACE, wdm/PINTERFACE, kstruct_b_667d57fa-a959-4904-a15e-af4d4f44988e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,16 +86,13 @@ Each driver that imports the interface (whether by sending <b>IRP_MN_QUERY_INTER
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
-
 <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
 
 <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2a87655f-8c8c-48c7-982e-dcb70ca600fb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_PARAM_SR_RESPONSE, ntddrilapitypes/RILUICCRESPONSEPARAMMASK, RIL_PARAM_SR_RESPONSE, RILUICCRESPONSEPARAMMASK, netvista.riluiccresponseparammask, ntddrilapitypes/RIL_PARAM_SR_RESPONSESIZE, RIL_PARAM_SR_ALL, RIL_PARAM_SR_RESPONSESIZE, RILUICCRESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_SR_ALL, ntddrilapitypes/RIL_PARAM_SR_STATUSWORD2, RIL_PARAM_SR_STATUSWORD2
+ms.keywords : ntddrilapitypes/RIL_PARAM_SR_RESPONSE, ntddrilapitypes/RILUICCRESPONSEPARAMMASK, RILUICCRESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_SR_ALL, RIL_PARAM_SR_RESPONSESIZE, RILUICCRESPONSEPARAMMASK, RIL_PARAM_SR_STATUSWORD2, RIL_PARAM_SR_ALL, ntddrilapitypes/RIL_PARAM_SR_STATUSWORD2, netvista.riluiccresponseparammask, RIL_PARAM_SR_RESPONSE, ntddrilapitypes/RIL_PARAM_SR_RESPONSESIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILUICCRESPONSEPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

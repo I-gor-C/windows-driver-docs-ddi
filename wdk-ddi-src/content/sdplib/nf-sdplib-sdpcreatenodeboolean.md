@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : d299074f-18db-4eff-b177-4d2d3535e299
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpCreateNodeBoolean, SdpCreateNodeBoolean function [Bluetooth Devices], bltooth.sdpcreatenodeboolean, bth_funcs_06168a9c-1cdc-4c2a-b90d-356c03867d4f.xml, sdplib/SdpCreateNodeBoolean
+ms.keywords : sdplib/SdpCreateNodeBoolean, bltooth.sdpcreatenodeboolean, bth_funcs_06168a9c-1cdc-4c2a-b90d-356c03867d4f.xml, SdpCreateNodeBoolean, SdpCreateNodeBoolean function [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,11 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

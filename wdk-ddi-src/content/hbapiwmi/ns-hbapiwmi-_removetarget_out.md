@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 176dbb0c-227e-48b2-956c-9e2b42f4c68b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.removetarget_out, hbapiwmi/RemoveTarget_OUT, PRemoveTarget_OUT, structs-Fibre_0cab8f87-0c96-4e03-bfd9-495e245850ca.xml, _RemoveTarget_OUT, PRemoveTarget_OUT structure pointer [Storage Devices], RemoveTarget_OUT, RemoveTarget_OUT structure [Storage Devices], hbapiwmi/PRemoveTarget_OUT, *PRemoveTarget_OUT
+ms.keywords : RemoveTarget_OUT, PRemoveTarget_OUT, _RemoveTarget_OUT, hbapiwmi/PRemoveTarget_OUT, PRemoveTarget_OUT structure pointer [Storage Devices], hbapiwmi/RemoveTarget_OUT, storage.removetarget_out, *PRemoveTarget_OUT, structs-Fibre_0cab8f87-0c96-4e03-bfd9-495e245850ca.xml, RemoveTarget_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RemoveTarget_OUT, *PRemoveTarget_OUT
+req.typenames : "*PRemoveTarget_OUT, RemoveTarget_OUT"
 ---
 
 # _RemoveTarget_OUT structure
@@ -61,9 +61,6 @@ The WMI tool suite generates a declaration of the RemoveTarget_OUT structure in 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

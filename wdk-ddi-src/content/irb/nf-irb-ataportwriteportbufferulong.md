@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0ee4ef0a-1b6e-4e94-8a3d-ed5215dc5f31
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortWritePortBufferUlong routine [Storage Devices], irb/AtaPortWritePortBufferUlong, storage.ataportwriteportbufferulong, atartns_877f49af-a38e-4468-896a-0e79a4e9effa.xml, AtaPortWritePortBufferUlong
+ms.keywords : atartns_877f49af-a38e-4468-896a-0e79a4e9effa.xml, AtaPortWritePortBufferUlong, storage.ataportwriteportbufferulong, AtaPortWritePortBufferUlong routine [Storage Devices], irb/AtaPortWritePortBufferUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

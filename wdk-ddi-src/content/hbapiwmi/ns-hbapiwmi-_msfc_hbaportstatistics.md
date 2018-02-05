@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0274b3c7-c17e-45bf-867f-2b0f741b2ecb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.msfc_hbaportstatistics, hbapiwmi/PMSFC_HBAPortStatistics, PMSFC_HBAPortStatistics, _MSFC_HBAPortStatistics, *PMSFC_HBAPortStatistics, MSFC_HBAPortStatistics structure [Storage Devices], MSFC_HBAPortStatistics, hbapiwmi/MSFC_HBAPortStatistics, PMSFC_HBAPortStatistics structure pointer [Storage Devices], structs-Fibre_93c56324-f8c5-4d43-815a-40ca9d44350d.xml
+ms.keywords : hbapiwmi/PMSFC_HBAPortStatistics, structs-Fibre_93c56324-f8c5-4d43-815a-40ca9d44350d.xml, PMSFC_HBAPortStatistics structure pointer [Storage Devices], hbapiwmi/MSFC_HBAPortStatistics, MSFC_HBAPortStatistics, storage.msfc_hbaportstatistics, PMSFC_HBAPortStatistics, _MSFC_HBAPortStatistics, MSFC_HBAPortStatistics structure [Storage Devices], *PMSFC_HBAPortStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_HBAPortStatistics, MSFC_HBAPortStatistics"
+req.typenames : MSFC_HBAPortStatistics, *PMSFC_HBAPortStatistics
 ---
 
 # _MSFC_HBAPortStatistics structure
@@ -129,9 +129,6 @@ Contains the number of total transmitted fibre channel words across all protocol
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

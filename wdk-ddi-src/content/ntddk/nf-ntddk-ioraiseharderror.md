@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 140561ce-e2ad-45be-976a-86fb1d0d1e87
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRaiseHardError routine [Kernel-Mode Driver Architecture], ntddk/IoRaiseHardError, k104_d723a2b6-2fdc-43d2-a7bc-ab356157a040.xml, IoRaiseHardError, kernel.ioraiseharderror
+ms.keywords : IoRaiseHardError routine [Kernel-Mode Driver Architecture], IoRaiseHardError, k104_d723a2b6-2fdc-43d2-a7bc-ab356157a040.xml, kernel.ioraiseharderror, ntddk/IoRaiseHardError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,7 +79,7 @@ Highest-level drivers, particularly file system drivers, call <b>IoRaiseHardErro
      
       uses a normal kernel APC to create a user dialog box, a deadlock can occur if normal kernel APCs are disabled when a device error occurs. For example:</div><div> </div><ol>
 <li>
-An upper-level filter driver calls <a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a> (which disables normal kernel APCs) and sends an I/O request to a file system driver. The filter driver waits on the completion of the request by the file system driver before the filter driver calls <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a> (which reenables normal kernel APCs).
+An upper-level filter driver calls <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> (which disables normal kernel APCs) and sends an I/O request to a file system driver. The filter driver waits on the completion of the request by the file system driver before the filter driver calls <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a> (which reenables normal kernel APCs).
 
 </li>
 <li>
@@ -95,12 +95,11 @@ Deadlock now exists: The normal kernel APC created by <b>IoRaiseHardError</b> to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlIoApcLte, HwStorPortProhibitedDDIs |
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a433aaf-3215-4d11-8989-2d7bdc7f7499
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTQueryResourceInfoFromNtHandle, display.d3dkmtqueryresourceinfofromnthandle, D3DKMTQueryResourceInfoFromNtHandle function [Display Devices], d3dkmthk/D3DKMTQueryResourceInfoFromNtHandle, PFND3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
+ms.keywords : D3DKMTQueryResourceInfoFromNtHandle function [Display Devices], display.d3dkmtqueryresourceinfofromnthandle, D3DKMTQueryResourceInfoFromNtHandle, PFND3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, d3dkmthk/D3DKMTQueryResourceInfoFromNtHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,20 +93,17 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryresourceinfofromnthandle.md">D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryresourceinfo.md">D3DKMTQueryResourceInfo</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryresourceinfofromnthandle.md">D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE</a>
 
  
 

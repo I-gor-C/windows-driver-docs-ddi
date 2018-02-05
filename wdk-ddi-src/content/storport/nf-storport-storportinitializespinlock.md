@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 150B1ED3-572A-4986-BED6-628ED6C54CCF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializeSpinlock routine [Storage Devices], storage.storportinitializespinlock, storport/StorPortInitializeSpinlock, StorPortInitializeSpinlock
+ms.keywords : StorPortInitializeSpinlock, storport/StorPortInitializeSpinlock, StorPortInitializeSpinlock routine [Storage Devices], storage.storportinitializespinlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -117,24 +117,19 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>
 
 <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
 
 <a href="..\storport\nf-storport-storportreleasespinlock.md">StorPortReleaseSpinLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567025">StorPortAcquireSpinLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>
 
  
 

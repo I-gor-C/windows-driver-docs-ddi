@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a48c9543-602f-4f3c-876e-9acc76ca1a6b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS, ntddrilapitypes/RILSENDSUPSERVICEDATAPARAMS, netvista.rilsendsupservicedataparams, RILSENDSUPSERVICEDATAPARAMS structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : RILSENDSUPSERVICEDATAPARAMS, netvista.rilsendsupservicedataparams, RILSENDSUPSERVICEDATAPARAMS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILSENDSUPSERVICEDATAPARAMS, *LPRILSENDSUPSERVICEDATAPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ typedef struct _RILSENDSUPSERVICEDATAPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

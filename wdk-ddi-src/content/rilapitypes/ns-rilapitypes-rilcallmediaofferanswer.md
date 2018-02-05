@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1ba861f5-b790-4e5a-88fa-49e05239219c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER structure [Network Drivers Starting with Windows Vista], *LPRILCALLMEDIAOFFERANSWER, netvista.rilcallmediaofferanswer_2, rilapitypes/RILCALLMEDIAOFFERANSWER
+ms.keywords : RILCALLMEDIAOFFERANSWER structure [Network Drivers Starting with Windows Vista], RILCALLMEDIAOFFERANSWER, netvista.rilcallmediaofferanswer_2, rilapitypes/RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,7 +90,4 @@ typedef struct _RILCALLMEDIAOFFERANSWER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

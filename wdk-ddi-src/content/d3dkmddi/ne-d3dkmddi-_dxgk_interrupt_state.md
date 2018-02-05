@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C72DF96B-5D12-4AC0-8FBB-904E087807DB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_INTERRUPT_STATE, DXGK_INTERRUPT_STATE enumeration [Display Devices], DXGK_INTERRUPT_ENABLE, d3dkmddi/DXGK_INTERRUPT_ENABLE, DXGK_INTERRUPT_STATE, _DXGK_INTERRUPT_STATE, DXGK_INTERRUPT_DISABLE, d3dkmddi/DXGK_INTERRUPT_DISABLE, display.dxgk_interrupt_state
+ms.keywords : DXGK_INTERRUPT_STATE enumeration [Display Devices], DXGK_INTERRUPT_ENABLE, _DXGK_INTERRUPT_STATE, d3dkmddi/DXGK_INTERRUPT_DISABLE, DXGK_INTERRUPT_STATE, display.dxgk_interrupt_state, DXGK_INTERRUPT_DISABLE, d3dkmddi/DXGK_INTERRUPT_ENABLE, d3dkmddi/DXGK_INTERRUPT_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -70,7 +70,5 @@ typedef enum _DXGK_INTERRUPT_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10. Available in Windows 10. |
 | **Header** | d3dkmddi.h |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 6af4161c-7caa-4d80-8938-303380ee3058
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : usbscan/USBSCAN_PIPE_ISOCHRONOUS, USBSCAN_PIPE_INTERRUPT, _RAW_PIPE_TYPE, USBSCAN_PIPE_CONTROL, usbscan/RAW_PIPE_TYPE, USBSCAN_PIPE_ISOCHRONOUS, USBSCAN_PIPE_BULK, RAW_PIPE_TYPE, usbscan/USBSCAN_PIPE_CONTROL, usbscan/USBSCAN_PIPE_BULK, usbscan/USBSCAN_PIPE_INTERRUPT, image.raw_pipe_type, stifnc_6f079c69-737d-4653-9e83-202418853f75.xml, RAW_PIPE_TYPE enumeration [Imaging Devices]
+ms.keywords : "_RAW_PIPE_TYPE, RAW_PIPE_TYPE, USBSCAN_PIPE_CONTROL, usbscan/USBSCAN_PIPE_CONTROL, usbscan/USBSCAN_PIPE_INTERRUPT, usbscan/USBSCAN_PIPE_ISOCHRONOUS, USBSCAN_PIPE_BULK, RAW_PIPE_TYPE enumeration [Imaging Devices], USBSCAN_PIPE_INTERRUPT, usbscan/RAW_PIPE_TYPE, stifnc_6f079c69-737d-4653-9e83-202418853f75.xml, image.raw_pipe_type, USBSCAN_PIPE_ISOCHRONOUS, usbscan/USBSCAN_PIPE_BULK"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,4 @@ typedef enum _RAW_PIPE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |

@@ -62,7 +62,7 @@ Pointer to a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure f
 
 `*Frame`
 
-
+A pointer to a caller-allocated buffer in which the new frame is returned.
 
 
 ## Return Value
@@ -78,14 +78,8 @@ You can pass an instance of this structure as part of a <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

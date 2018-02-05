@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 29b77215-9c7e-47f2-8c94-0bcd733f54a2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFMemory::CopyFromMemory, IWDFMemory, IWDFMemory::CopyFromMemory, UMDFMemoryObjectRef_c5bc961a-62e9-4692-bbd7-6551b268b08b.xml, CopyFromMemory method, wdf.iwdfmemory_copyfrommemory, umdf.iwdfmemory_copyfrommemory, CopyFromMemory, IWDFMemory interface, CopyFromMemory method, CopyFromMemory method, IWDFMemory interface
+ms.keywords : wudfddi/IWDFMemory::CopyFromMemory, umdf.iwdfmemory_copyfrommemory, CopyFromMemory, IWDFMemory::CopyFromMemory, CopyFromMemory method, CopyFromMemory method, IWDFMemory interface, IWDFMemory, UMDFMemoryObjectRef_c5bc961a-62e9-4692-bbd7-6551b268b08b.xml, wdf.iwdfmemory_copyfrommemory, IWDFMemory interface, CopyFromMemory method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -73,14 +73,12 @@ HRESULT CopyFromMemory(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

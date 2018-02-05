@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7127b6ff-164b-4645-a602-3969f87a47d0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtgetprocessdevicelostsupport, D3DKMTGetProcessDeviceLostSupport method [Display Devices], d3dkmthk/D3DKMTGetProcessDeviceLostSupport, D3DKMTGetProcessDeviceLostSupport
+ms.keywords : d3dkmthk/D3DKMTGetProcessDeviceLostSupport, display.d3dkmtgetprocessdevicelostsupport, D3DKMTGetProcessDeviceLostSupport, D3DKMTGetProcessDeviceLostSupport method [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,7 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 9ac85fe9-bc44-4a70-9619-bb13e878bb49
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CWiauFormatConverter::ConvertToBmp, ConvertToBmp method [Imaging Devices], CWiauFormatConverter interface, wiauFncs_2c929e01-3e1f-4a07-9f2f-f50775b39017.xml, image.cwiauformatconverter_converttobmp, CWiauFormatConverter interface [Imaging Devices], ConvertToBmp method, CWiauFormatConverter, ConvertToBmp method [Imaging Devices], wiautil/CWiauFormatConverter::ConvertToBmp, ConvertToBmp
+ms.keywords : ConvertToBmp, image.cwiauformatconverter_converttobmp, wiautil/CWiauFormatConverter::ConvertToBmp, CWiauFormatConverter::ConvertToBmp, ConvertToBmp method [Imaging Devices], CWiauFormatConverter interface, CWiauFormatConverter interface [Imaging Devices], ConvertToBmp method, ConvertToBmp method [Imaging Devices], CWiauFormatConverter, wiauFncs_2c929e01-3e1f-4a07-9f2f-f50775b39017.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,24 +95,20 @@ The caller of this method can pass a result buffer in <i>ppDest</i> and the size
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 
-<a href="..\wiautil\ns-wiautil-_bmp_image_info.md">BMP_IMAGE_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540379">CWiauFormatConverter::IsFormatSupported</a>
 
 <a href="..\wiautil\nl-wiautil-cwiauformatconverter.md">CWiauFormatConverter</a>
 
 <a href="..\wiautil\ne-wiautil-skip_amount.md">SKIP_AMOUNT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540379">CWiauFormatConverter::IsFormatSupported</a>
+<a href="..\wiautil\ns-wiautil-_bmp_image_info.md">BMP_IMAGE_INFO</a>
 
  
 

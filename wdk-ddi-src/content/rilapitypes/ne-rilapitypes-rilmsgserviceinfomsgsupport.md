@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e9e1f353-4501-487d-ba2d-ee1572d93507
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_MSI_SMS_OUTGOING, RIL_MSI_SMS_BROADCAST, netvista.rilmsgserviceinfomsgsupport_2, RILMSGSERVICEINFOMSGSUPPORT enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_MSI_SMS_OUTGOING, rilapitypes/RIL_MSI_SMS_BROADCAST, RILMSGSERVICEINFOMSGSUPPORT, rilapitypes/RILMSGSERVICEINFOMSGSUPPORT
+ms.keywords : RIL_MSI_SMS_OUTGOING, RILMSGSERVICEINFOMSGSUPPORT, RIL_MSI_SMS_BROADCAST, rilapitypes/RIL_MSI_SMS_BROADCAST, netvista.rilmsgserviceinfomsgsupport_2, RILMSGSERVICEINFOMSGSUPPORT enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILMSGSERVICEINFOMSGSUPPORT, rilapitypes/RIL_MSI_SMS_OUTGOING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILMSGSERVICEINFOMSGSUPPORT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

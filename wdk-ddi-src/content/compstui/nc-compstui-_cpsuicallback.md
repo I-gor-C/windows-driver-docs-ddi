@@ -140,11 +140,5 @@ Callback functions specified with this function type cannot be used if the <b>Dl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | compstui.h (include Compstui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

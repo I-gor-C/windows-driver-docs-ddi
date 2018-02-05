@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07c0aeac-0f82-492a-aa98-0ba5a962b9cf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTEnumAdapters, display.d3dkmtenumadapters, PFND3DKMT_ENUMADAPTERS, D3DKMTEnumAdapters function [Display Devices], d3dkmthk/D3DKMTEnumAdapters
+ms.keywords : d3dkmthk/D3DKMTEnumAdapters, display.d3dkmtenumadapters, PFND3DKMT_ENUMADAPTERS, D3DKMTEnumAdapters, D3DKMTEnumAdapters function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,14 +99,11 @@ The operating system enumerates graphics adapters in the same sequence as their 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

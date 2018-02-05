@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0e2d7e78-bdf1-4582-a95c-1cbdd498c200
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_STATESET, display.d3dddiarg_stateset, d3dumddi/D3DDDIARG_STATESET, D3DDDIARG_STATESET structure [Display Devices], UMDisplayDriver_param_Structs_926f9aca-1ecc-4086-88b7-0d07df9a05ae.xml, _D3DDDIARG_STATESET
+ms.keywords : "_D3DDDIARG_STATESET, UMDisplayDriver_param_Structs_926f9aca-1ecc-4086-88b7-0d07df9a05ae.xml, d3dumddi/D3DDDIARG_STATESET, display.d3dddiarg_stateset, D3DDDIARG_STATESET structure [Display Devices], D3DDDIARG_STATESET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -405,9 +405,7 @@ The <b>StateBlockType</b> member is valid only for D3DHAL_STATESETBEGIN, D3DHAL_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

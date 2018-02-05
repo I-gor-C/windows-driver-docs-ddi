@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e0cb14fa-82d0-4ce3-8672-801e7f04d522
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IPnpCallback::OnQueryStop, IPnpCallback::OnQueryStop, OnQueryStop, OnQueryStop method, OnQueryStop method, IPnpCallback interface, UMDFDeviceObjectRef_9215c39e-2cb9-4de6-9fb3-f228dad51f6d.xml, IPnpCallback, wdf.ipnpcallback_onquerystop, IPnpCallback interface, OnQueryStop method, umdf.ipnpcallback_onquerystop
+ms.keywords : umdf.ipnpcallback_onquerystop, OnQueryStop method, IPnpCallback interface, IPnpCallback, IPnpCallback::OnQueryStop, IPnpCallback interface, OnQueryStop method, wdf.ipnpcallback_onquerystop, UMDFDeviceObjectRef_9215c39e-2cb9-4de6-9fb3-f228dad51f6d.xml, OnQueryStop, OnQueryStop method, wudfddi/IPnpCallback::OnQueryStop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -79,22 +79,17 @@ For more information about the <b>OnQueryStop</b> callback method, see <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
 <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

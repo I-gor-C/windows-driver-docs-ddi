@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f0f21d34-21f2-48ac-994f-e050f4447745
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFRemoteTarget::Start, IWDFRemoteTarget interface, Start method, Start method, IWDFRemoteTarget interface, wdf.iwdfremotetarget_start, IWDFRemoteTarget::Start, UMDFIoTargetObjectRef_8e44c1ab-5ce6-4c4a-a7dc-e9de4b10ba12.xml, Start, Start method, IWDFRemoteTarget, umdf.iwdfremotetarget_start
+ms.keywords : Start method, wdf.iwdfremotetarget_start, IWDFRemoteTarget::Start, umdf.iwdfremotetarget_start, UMDFIoTargetObjectRef_8e44c1ab-5ce6-4c4a-a7dc-e9de4b10ba12.xml, wudfddi/IWDFRemoteTarget::Start, Start method, IWDFRemoteTarget interface, IWDFRemoteTarget, Start, IWDFRemoteTarget interface, Start method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -87,14 +87,12 @@ For more information about <b>Start</b>, and how to use remote I/O targets in UM
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

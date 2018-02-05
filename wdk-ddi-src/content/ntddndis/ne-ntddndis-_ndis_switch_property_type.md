@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : baa1b837-6f9b-41f4-acf8-e640f8e9f8da
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisSwitchPropertyTypeMaximum, ntddndis/NdisSwitchPropertyTypeMaximum, PNDIS_SWITCH_PROPERTY_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_property_type, ntddndis/NDIS_SWITCH_PROPERTY_TYPE, NdisSwitchPropertyTypeUndefined, ntddndis/NdisSwitchPropertyTypeUndefined, NDIS_SWITCH_PROPERTY_TYPE enumeration [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_PROPERTY_TYPE, ntddndis/NdisSwitchPropertyTypeCustom, NdisSwitchPropertyTypeCustom, PNDIS_SWITCH_PROPERTY_TYPE, *PNDIS_SWITCH_PROPERTY_TYPE, _NDIS_SWITCH_PROPERTY_TYPE, NDIS_SWITCH_PROPERTY_TYPE
+ms.keywords : ntddndis/PNDIS_SWITCH_PROPERTY_TYPE, ntddndis/NdisSwitchPropertyTypeCustom, NDIS_SWITCH_PROPERTY_TYPE enumeration [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PROPERTY_TYPE, netvista.ndis_switch_property_type, _NDIS_SWITCH_PROPERTY_TYPE, NdisSwitchPropertyTypeMaximum, NdisSwitchPropertyTypeUndefined, PNDIS_SWITCH_PROPERTY_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NdisSwitchPropertyTypeUndefined, ntddndis/NDIS_SWITCH_PROPERTY_TYPE, PNDIS_SWITCH_PROPERTY_TYPE, NDIS_SWITCH_PROPERTY_TYPE, NdisSwitchPropertyTypeCustom, ntddndis/NdisSwitchPropertyTypeMaximum
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SWITCH_PROPERTY_TYPE, NDIS_SWITCH_PROPERTY_TYPE"
+req.typenames : NDIS_SWITCH_PROPERTY_TYPE, *PNDIS_SWITCH_PROPERTY_TYPE
 ---
 
 # _NDIS_SWITCH_PROPERTY_TYPE Enumeration
@@ -99,18 +99,16 @@ The <b>PropertyType</b> member of the following structures is an <b>NDIS_SWITCH_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_delete_parameters.md">NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_parameters.md">NDIS_SWITCH_PROPERTY_PARAMETERS</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_enum_parameters.md">NDIS_SWITCH_PROPERTY_ENUM_PARAMETERS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_parameters.md">NDIS_SWITCH_PROPERTY_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_delete_parameters.md">NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</a>
 
 <b></b>
 

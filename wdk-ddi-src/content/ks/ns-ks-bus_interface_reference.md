@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 17c2c46c-ff79-4c80-82c9-c49b18426789
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PBUS_INTERFACE_REFERENCE, PBUS_INTERFACE_REFERENCE structure pointer [Streaming Media Devices], *PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE structure [Streaming Media Devices], ks-struct_815b7147-1ae1-48d2-bae3-3efce2613b53.xml, ks/BUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE, ks/PBUS_INTERFACE_REFERENCE, stream.bus_interface_reference
+ms.keywords : ks-struct_815b7147-1ae1-48d2-bae3-3efce2613b53.xml, PBUS_INTERFACE_REFERENCE, ks/BUS_INTERFACE_REFERENCE, ks/PBUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE, PBUS_INTERFACE_REFERENCE structure pointer [Streaming Media Devices], BUS_INTERFACE_REFERENCE structure [Streaming Media Devices], stream.bus_interface_reference, BUS_INTERFACE_REFERENCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE
+req.typenames : "*PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE"
 ---
 
 # BUS_INTERFACE_REFERENCE structure
@@ -98,7 +98,4 @@ If your request is successful, the system fills in the BUS_INTERFACE_REFERENCE s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

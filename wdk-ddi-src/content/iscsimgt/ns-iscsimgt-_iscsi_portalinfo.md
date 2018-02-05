@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0ecfed3e-477a-4014-8491-1a8997ac5b90
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ISCSI_PortalInfo, *PISCSI_PortalInfo, storage.iscsi_portalinfo, iscsimgt/PISCSI_PortalInfo, PISCSI_PortalInfo, iscsimgt/ISCSI_PortalInfo, structs-iSCSI_40fc24e8-364d-4698-911c-4128f471cdcd.xml, _ISCSI_PortalInfo, ISCSI_PortalInfo structure [Storage Devices], PISCSI_PortalInfo structure pointer [Storage Devices]
+ms.keywords : iscsimgt/ISCSI_PortalInfo, iscsimgt/PISCSI_PortalInfo, storage.iscsi_portalinfo, _ISCSI_PortalInfo, ISCSI_PortalInfo, PISCSI_PortalInfo structure pointer [Storage Devices], structs-iSCSI_40fc24e8-364d-4698-911c-4128f471cdcd.xml, *PISCSI_PortalInfo, PISCSI_PortalInfo, ISCSI_PortalInfo structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -120,16 +120,13 @@ Reserved for Microsoft use only.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561559">ISCSI_PortalInfo WMI Class</a>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 
  
 

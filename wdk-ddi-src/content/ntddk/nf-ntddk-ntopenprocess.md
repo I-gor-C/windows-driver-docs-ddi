@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 261d7676-9ce7-4e15-a58f-0439434f202b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwopenprocess, k111_cf01d6cd-b10e-46b6-9b78-984aac1ef96d.xml, ZwOpenProcess, NtOpenProcess, ntddk/NtOpenProcess, ZwOpenProcess routine [Kernel-Mode Driver Architecture], ntddk/ZwOpenProcess
+ms.keywords : NtOpenProcess, ntddk/ZwOpenProcess, ntddk/NtOpenProcess, kernel.zwopenprocess, ZwOpenProcess routine [Kernel-Mode Driver Architecture], ZwOpenProcess, k111_cf01d6cd-b10e-46b6-9b78-984aac1ef96d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,12 +136,11 @@ In Windows Server 2003, Windows XP, and Windows 2000, the caller has the option 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -149,9 +148,9 @@ In Windows Server 2003, Windows XP, and Windows 2000, the caller has the option 
 
 <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

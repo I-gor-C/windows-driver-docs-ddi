@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 14F8C0A2-0D19-446E-8C2B-530A3AEDA879
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DeleteJobNamedProperty, print.deletejobnamedproperty, winspool/DeleteJobNamedProperty, DeleteJobNamedProperty function [Print Devices]
+ms.keywords : print.deletejobnamedproperty, winspool/DeleteJobNamedProperty, DeleteJobNamedProperty function [Print Devices], DeleteJobNamedProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If the operation succeeds, the function returns <b>ERROR_SUCCESS.</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winspool.h (include Winspool.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | WinSpool.lib |
+| **DLL** | Spoolss.dll; WinSpool.drv |

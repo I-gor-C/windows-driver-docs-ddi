@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9b48e2c0-bd44-49ed-83e8-1e4895858e9b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMDisableDriver, OEMDisableDriver function [Print Devices], OEMDisableDriver, print_obsoletefunctions_b9594259-f9e5-43bf-b2dd-18ace2ddc25c.xml, print.oemdisabledriver
+ms.keywords : OEMDisableDriver function [Print Devices], OEMDisableDriver, print_obsoletefunctions_b9594259-f9e5-43bf-b2dd-18ace2ddc25c.xml, print.oemdisabledriver, printoem/OEMDisableDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,11 +64,6 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

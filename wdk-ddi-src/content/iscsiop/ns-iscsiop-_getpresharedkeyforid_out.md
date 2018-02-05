@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 21d6378e-b93b-4e97-842a-a3157e081f31
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_GetPresharedKeyForId_OUT, GetPresharedKeyForId_OUT, PGetPresharedKeyForId_OUT, iscsiop/PGetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT, structs-iSCSI_6807c82b-45b4-44c7-a1e0-a99607c1cd4f.xml, GetPresharedKeyForId_OUT structure [Storage Devices], iscsiop/GetPresharedKeyForId_OUT, storage.getpresharedkeyforid_out, PGetPresharedKeyForId_OUT structure pointer [Storage Devices]"
+ms.keywords : structs-iSCSI_6807c82b-45b4-44c7-a1e0-a99607c1cd4f.xml, GetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT, iscsiop/GetPresharedKeyForId_OUT, iscsiop/PGetPresharedKeyForId_OUT, PGetPresharedKeyForId_OUT structure pointer [Storage Devices], GetPresharedKeyForId_OUT structure [Storage Devices], _GetPresharedKeyForId_OUT, PGetPresharedKeyForId_OUT, storage.getpresharedkeyforid_out
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,22 +66,19 @@ You must initiate this method if the initiator supports IKE.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 <a href="..\iscsiop\ns-iscsiop-_getpresharedkeyforid_in.md">GetPresharedKeyForId_IN</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 
  
 

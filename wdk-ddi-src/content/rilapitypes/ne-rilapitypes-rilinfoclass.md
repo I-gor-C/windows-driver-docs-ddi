@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 19927cd1-8afa-4006-a882-d5222c690724
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_INFOCLASS_ALL, RIL_INFOCLASS_DATA, rilapitypes/RIL_INFOCLASS_PACKETACCESS, rilapitypes/RIL_INFOCLASS_DATACIRCUITASYNC, RIL_INFOCLASS_PADACCESS, RILINFOCLASS enumeration [Network Drivers Starting with Windows Vista], RIL_INFOCLASS_SMS, rilapitypes/RIL_INFOCLASS_FAX, RIL_INFOCLASS_DATACIRCUITSYNC, netvista.rilinfoclass_2, RILINFOCLASS, RIL_INFOCLASS_FAX, rilapitypes/RIL_INFOCLASS_VOICE, rilapitypes/RIL_INFOCLASS_PADACCESS, rilapitypes/RIL_INFOCLASS_DATA, rilapitypes/RIL_INFOCLASS_SMS, rilapitypes/RIL_INFOCLASS_DATACIRCUITSYNC, RIL_INFOCLASS_VOICE, rilapitypes/RILINFOCLASS, RIL_INFOCLASS_DATACIRCUITASYNC, RIL_INFOCLASS_PACKETACCESS, rilapitypes/RIL_INFOCLASS_ALL
+ms.keywords : rilapitypes/RIL_INFOCLASS_PACKETACCESS, RIL_INFOCLASS_ALL, RILINFOCLASS, rilapitypes/RIL_INFOCLASS_DATACIRCUITSYNC, rilapitypes/RILINFOCLASS, RIL_INFOCLASS_PACKETACCESS, RILINFOCLASS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_INFOCLASS_ALL, RIL_INFOCLASS_FAX, rilapitypes/RIL_INFOCLASS_PADACCESS, rilapitypes/RIL_INFOCLASS_VOICE, RIL_INFOCLASS_PADACCESS, rilapitypes/RIL_INFOCLASS_DATA, rilapitypes/RIL_INFOCLASS_FAX, netvista.rilinfoclass_2, RIL_INFOCLASS_DATACIRCUITASYNC, RIL_INFOCLASS_VOICE, RIL_INFOCLASS_DATA, RIL_INFOCLASS_DATACIRCUITSYNC, rilapitypes/RIL_INFOCLASS_DATACIRCUITASYNC, RIL_INFOCLASS_SMS, rilapitypes/RIL_INFOCLASS_SMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -116,7 +116,4 @@ typedef enum _RILINFOCLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 614C6E21-00D0-4F57-9E09-D1BAB166BA42
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMResetMiniport, netvista.ndismresetminiport, NdisMResetMiniport, NdisMResetMiniport function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisMResetMiniport, ndis/NdisMResetMiniport, NdisMResetMiniport function [Network Drivers Starting with Windows Vista], netvista.ndismresetminiport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,11 +72,8 @@ As a result, NDIS schedules a work item for calling the miniport driver's <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

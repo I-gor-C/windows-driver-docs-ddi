@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 562e92b4-fe68-4301-af40-f535cc408b9d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfrequest/WdfRequestChangeTarget, DFRequestObjectRef_3d1f75eb-de12-4a8e-8cb8-d5ebe941e70f.xml, wdf.wdfrequestchangetarget, kmdf.wdfrequestchangetarget, WdfRequestChangeTarget method, PFN_WDFREQUESTCHANGETARGET, WdfRequestChangeTarget
+ms.keywords : PFN_WDFREQUESTCHANGETARGET, kmdf.wdfrequestchangetarget, WdfRequestChangeTarget, WdfRequestChangeTarget method, DFRequestObjectRef_3d1f75eb-de12-4a8e-8cb8-d5ebe941e70f.xml, wdf.wdfrequestchangetarget, wdfrequest/WdfRequestChangeTarget
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -127,20 +127,19 @@ For more information about <b>WdfRequestChangeTarget</b>, see <a href="https://d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 

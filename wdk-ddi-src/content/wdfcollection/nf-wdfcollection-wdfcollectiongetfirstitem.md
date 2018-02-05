@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4884de4d-6e5f-4c9f-bd49-2fc58481e9c6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFCOLLECTIONGETFIRSTITEM, kmdf.wdfcollectiongetfirstitem, wdf.wdfcollectiongetfirstitem, wdfcollection/WdfCollectionGetFirstItem, DFCollectionObjectRef_1a816492-f120-48f9-9c10-88f71947008c.xml, WdfCollectionGetFirstItem, WdfCollectionGetFirstItem method
+ms.keywords : PFN_WDFCOLLECTIONGETFIRSTITEM, WdfCollectionGetFirstItem method, WdfCollectionGetFirstItem, DFCollectionObjectRef_1a816492-f120-48f9-9c10-88f71947008c.xml, kmdf.wdfcollectiongetfirstitem, wdf.wdfcollectiongetfirstitem, wdfcollection/WdfCollectionGetFirstItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,11 @@ For more information about object collections, see <a href="https://docs.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfcollection.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

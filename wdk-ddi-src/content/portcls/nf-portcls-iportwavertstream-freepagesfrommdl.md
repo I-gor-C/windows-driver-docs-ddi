@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8839c0ab-08c5-4cc7-a526-aa1ebe2fde15
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream::FreePagesFromMdl, IPortWaveRTStream, IPortWaveRTStream interface [Audio Devices], FreePagesFromMdl method, FreePagesFromMdl, FreePagesFromMdl method [Audio Devices], portcls/IPortWaveRTStream::FreePagesFromMdl, audio.iportwavertstream_freepagesfrommdl, audmp-routines_7e3477c5-08b8-4e7c-bfb9-36945bf765c4.xml, FreePagesFromMdl method [Audio Devices], IPortWaveRTStream interface
+ms.keywords : FreePagesFromMdl method [Audio Devices], IPortWaveRTStream interface, audmp-routines_7e3477c5-08b8-4e7c-bfb9-36945bf765c4.xml, FreePagesFromMdl, portcls/IPortWaveRTStream::FreePagesFromMdl, FreePagesFromMdl method [Audio Devices], audio.iportwavertstream_freepagesfrommdl, IPortWaveRTStream::FreePagesFromMdl, IPortWaveRTStream interface [Audio Devices], FreePagesFromMdl method, IPortWaveRTStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,20 +70,17 @@ The miniport driver must call this method to free an MDL that was previously all
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
-
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
 
 <a href="https://msdn.microsoft.com/976f7e83-9b2a-4e1b-ab76-76d8e9711bff">IPortWaveRTStream::AllocateContiguousPagesForMdl </a>
 

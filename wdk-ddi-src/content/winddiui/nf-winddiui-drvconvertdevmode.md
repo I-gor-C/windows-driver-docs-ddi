@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : eb0402a8-22ce-417f-9b19-25b357451307
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.drvconvertdevmode, winddiui/DrvConvertDevMode, DrvConvertDevMode, print_interface-graphics_ceabaf66-f730-4243-85a7-ffcee065192b.xml, DrvConvertDevMode function [Print Devices]
+ms.keywords : print.drvconvertdevmode, DrvConvertDevMode, DrvConvertDevMode function [Print Devices], winddiui/DrvConvertDevMode, print_interface-graphics_ceabaf66-f730-4243-85a7-ffcee065192b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -122,11 +122,6 @@ When <b>DrvConvertDevMode</b> is called with a <b>NULL</b> DEVMODEW structure po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

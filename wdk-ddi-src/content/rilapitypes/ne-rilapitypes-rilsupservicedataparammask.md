@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 65901068-d45e-4c3a-b1ee-340427506c7f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSUPSERVICEDATAPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_SSDI_STATUS, rilapitypes/RIL_PARAM_SSDI_DATASIZE, RIL_PARAM_SSDI_ALL, rilapitypes/RIL_PARAM_SSDI_SS_ERROR, rilapitypes/RIL_PARAM_SSDI_CC_ERROR, netvista.rilsupservicedataparammask_2, rilapitypes/RIL_PARAM_SSDI_ALL, RIL_PARAM_SSDI_STATUS, rilapitypes/RIL_PARAM_SSDI_DATA, RILSUPSERVICEDATAPARAMMASK, RIL_PARAM_SSDI_SS_ERROR, RIL_PARAM_SSDI_VENDOR_ERROR, rilapitypes/RILSUPSERVICEDATAPARAMMASK, RIL_PARAM_SSDI_DATASIZE, RIL_PARAM_SSDI_DATA, RIL_PARAM_SSDI_CC_ERROR, rilapitypes/RIL_PARAM_SSDI_VENDOR_ERROR
+ms.keywords : RIL_PARAM_SSDI_ALL, rilapitypes/RIL_PARAM_SSDI_STATUS, rilapitypes/RIL_PARAM_SSDI_SS_ERROR, RILSUPSERVICEDATAPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_SSDI_DATASIZE, rilapitypes/RIL_PARAM_SSDI_ALL, RIL_PARAM_SSDI_VENDOR_ERROR, RIL_PARAM_SSDI_DATASIZE, RIL_PARAM_SSDI_STATUS, rilapitypes/RIL_PARAM_SSDI_CC_ERROR, rilapitypes/RIL_PARAM_SSDI_DATA, rilapitypes/RIL_PARAM_SSDI_VENDOR_ERROR, RIL_PARAM_SSDI_DATA, netvista.rilsupservicedataparammask_2, RIL_PARAM_SSDI_CC_ERROR, RILSUPSERVICEDATAPARAMMASK, RIL_PARAM_SSDI_SS_ERROR, rilapitypes/RILSUPSERVICEDATAPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -104,7 +104,4 @@ typedef enum _RILSUPSERVICEDATAPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

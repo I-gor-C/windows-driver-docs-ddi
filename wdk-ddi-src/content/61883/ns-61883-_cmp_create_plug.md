@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4FE3FE9E-9F00-431D-99F0-002B1368CE34
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.cmp_create_plug, PCMP_CREATE_PLUG structure pointer [Buses], PCMP_CREATE_PLUG, 61883/PCMP_CREATE_PLUG, _CMP_CREATE_PLUG, CMP_CREATE_PLUG, 61883/CMP_CREATE_PLUG, *PCMP_CREATE_PLUG, CMP_CREATE_PLUG structure [Buses]
+ms.keywords : CMP_CREATE_PLUG structure [Buses], PCMP_CREATE_PLUG structure pointer [Buses], 61883/PCMP_CREATE_PLUG, CMP_CREATE_PLUG, _CMP_CREATE_PLUG, PCMP_CREATE_PLUG, IEEE.cmp_create_plug, 61883/CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCMP_CREATE_PLUG, CMP_CREATE_PLUG"
+req.typenames : CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
 ---
 
 # _CMP_CREATE_PLUG structure
@@ -94,14 +94,14 @@ On input, the type of plug to create. Can be one of the following:
 
 
 
-#### CMP_PlugOut
-
-An output plug, which transmits data from the device to the bus.
-
-
 #### CMP_PlugIn
 
 An input plug, which receives data sent by the bus to the device.
+
+
+#### CMP_PlugOut
+
+An output plug, which transmits data from the device to the bus.
 
 ## Remarks
 If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
@@ -113,9 +113,6 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

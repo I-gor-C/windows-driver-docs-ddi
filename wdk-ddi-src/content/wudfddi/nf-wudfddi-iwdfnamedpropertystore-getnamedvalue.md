@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9581e3af-f7f8-4365-8bb2-daedcb7a3280
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetNamedValue method, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, GetNamedValue method, UMDFPropertyStoreObjectRef_ba3dd45a-7045-4798-81c6-35cb1a743cc4.xml, IWDFNamedPropertyStore, IWDFNamedPropertyStore::GetNamedValue, wdf.iwdfnamedpropertystore_getnamedvalue, wudfddi/IWDFNamedPropertyStore::GetNamedValue, umdf.iwdfnamedpropertystore_getnamedvalue, GetNamedValue, GetNamedValue method
+ms.keywords : wudfddi/IWDFNamedPropertyStore::GetNamedValue, wdf.iwdfnamedpropertystore_getnamedvalue, IWDFNamedPropertyStore, GetNamedValue, umdf.iwdfnamedpropertystore_getnamedvalue, GetNamedValue method, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, GetNamedValue method, IWDFNamedPropertyStore::GetNamedValue, GetNamedValue method, UMDFPropertyStoreObjectRef_ba3dd45a-7045-4798-81c6-35cb1a743cc4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -179,22 +179,20 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/e86cc279-826d-4767-8d96-fc8280060ea1">PROPVARIANT</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfnamedpropertystore.md">IWDFNamedPropertyStore</a>
 
 <a href="https://msdn.microsoft.com/062b6065-a56f-4ecd-b232-3ba338a6d806">PropVariantClear</a>
+
+<a href="https://msdn.microsoft.com/e86cc279-826d-4767-8d96-fc8280060ea1">PROPVARIANT</a>
 
  
 

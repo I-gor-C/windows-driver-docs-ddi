@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AFDA9D5F-2590-4034-B2CF-07990F4553C8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_lock2, d3dkmthk/D3DKMT_LOCK2, D3DKMT_LOCK2 structure [Display Devices], _D3DKMT_LOCK2, D3DKMT_LOCK2
+ms.keywords : D3DKMT_LOCK2, d3dkmthk/D3DKMT_LOCK2, display.d3dkmt_lock2, _D3DKMT_LOCK2, D3DKMT_LOCK2 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,5 @@ A CPU virtual address pointing a valid memory location pointing to the CPU backi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |

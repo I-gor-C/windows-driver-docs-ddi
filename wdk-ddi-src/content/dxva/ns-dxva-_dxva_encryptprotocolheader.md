@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 924da940-f609-4302-b454-87243200808e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/LPDXVA_EncryptProtocolHeader, LPDXVA_EncryptProtocolHeader structure pointer [Display Devices], LPDXVA_EncryptProtocolHeader, DXVA_EncryptProtocolHeader, display.dxva_encryptprotocolheader, dxva/DXVA_EncryptProtocolHeader, _DXVA_EncryptProtocolHeader, *LPDXVA_EncryptProtocolHeader, dxvaref_19bd4a66-c03f-44c3-98b6-875da968fa50.xml, DXVA_EncryptProtocolHeader structure [Display Devices]
+ms.keywords : LPDXVA_EncryptProtocolHeader, DXVA_EncryptProtocolHeader, display.dxva_encryptprotocolheader, dxva/LPDXVA_EncryptProtocolHeader, dxva/DXVA_EncryptProtocolHeader, _DXVA_EncryptProtocolHeader, DXVA_EncryptProtocolHeader structure [Display Devices], *LPDXVA_EncryptProtocolHeader, dxvaref_19bd4a66-c03f-44c3-98b6-875da968fa50.xml, LPDXVA_EncryptProtocolHeader structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDXVA_EncryptProtocolHeader, DXVA_EncryptProtocolHeader"
+req.typenames : DXVA_EncryptProtocolHeader, *LPDXVA_EncryptProtocolHeader
 ---
 
 # _DXVA_EncryptProtocolHeader structure
@@ -73,7 +73,4 @@ The encryption protocol in use is externally defined and operates as described i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |

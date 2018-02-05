@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1A48FC0F-7ED2-4F9F-8B61-A498B0D13FE8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorageDiagnosticTargetTypeMiniport, ntddscsi/PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddscsi/StorageDiagnosticTargetTypeMax, StorageDiagnosticTargetTypePort, ntddscsi/MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration pointer [Storage Devices], PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddscsi/StorageDiagnosticTargetTypeUndefined, StorageDiagnosticTargetTypeHbaFirmware, storage.mp_storage_diagnostic_target_type, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration [Storage Devices], ntddscsi/StorageDiagnosticTargetTypeHbaFirmware, StorageDiagnosticTargetTypeMax, StorageDiagnosticTargetTypeUndefined, ntddscsi/StorageDiagnosticTargetTypePort, ntddscsi/StorageDiagnosticTargetTypeMiniport
+ms.keywords : ntddscsi/StorageDiagnosticTargetTypeUndefined, ntddscsi/PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddscsi/MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, storage.mp_storage_diagnostic_target_type, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration pointer [Storage Devices], ntddscsi/StorageDiagnosticTargetTypePort, StorageDiagnosticTargetTypeHbaFirmware, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypePort, ntddscsi/StorageDiagnosticTargetTypeHbaFirmware, StorageDiagnosticTargetTypeUndefined, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypeMax, StorageDiagnosticTargetTypeMiniport, ntddscsi/StorageDiagnosticTargetTypeMiniport, ntddscsi/StorageDiagnosticTargetTypeMax, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration [Storage Devices], *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE Enumeration
@@ -81,7 +81,5 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntddscsi.h |

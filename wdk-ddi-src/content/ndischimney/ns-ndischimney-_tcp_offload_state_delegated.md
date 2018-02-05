@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ab16cfa1-24f6-434a-a687-07e19172f185
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_TCP_OFFLOAD_STATE_DELEGATED, ndischimney/TCP_OFFLOAD_STATE_DELEGATED, *PTCP_OFFLOAD_STATE_DELEGATED, TCP_OFFLOAD_STATE_DELEGATED, ndischimney/PTCP_OFFLOAD_STATE_DELEGATED, netvista.tcp_offload_state_delegated, PTCP_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], tcp_chim_struct_e835c163-e154-4b9c-b1bb-b658376fd89d.xml, PTCP_OFFLOAD_STATE_DELEGATED, TCP_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : PTCP_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_STATE_DELEGATED, PTCP_OFFLOAD_STATE_DELEGATED, ndischimney/TCP_OFFLOAD_STATE_DELEGATED, netvista.tcp_offload_state_delegated, TCP_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], *PTCP_OFFLOAD_STATE_DELEGATED, _TCP_OFFLOAD_STATE_DELEGATED, ndischimney/PTCP_OFFLOAD_STATE_DELEGATED, tcp_chim_struct_e835c163-e154-4b9c-b1bb-b658376fd89d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTCP_OFFLOAD_STATE_DELEGATED, TCP_OFFLOAD_STATE_DELEGATED"
+req.typenames : TCP_OFFLOAD_STATE_DELEGATED, *PTCP_OFFLOAD_STATE_DELEGATED
 ---
 
 # _TCP_OFFLOAD_STATE_DELEGATED structure
@@ -197,25 +197,19 @@ The current state of the TCP connection (see RFC 793) as one of the following
      connection regardless of the connection state.
 
 
+#### TcpConnectionCloseWait
+
+Waiting for a connection termination request from the local user.
+
+
 #### TcpConnectionClosed
 
 No connection state.
 
 
-#### TcpConnectionListen
+#### TcpConnectionClosing
 
-Waiting for a connection request from any remote TCP and port.
-
-
-#### TcpConnectionSynSent
-
-Waiting for a matching connection request after having sent a connection request.
-
-
-#### TcpConnectionSynRcvd
-
-Waiting for a confirming connection request acknowledgment after having both received and sent a
-       connection request.
+Waiting for a connection termination request acknowledgment from the remote TCP.
 
 
 #### TcpConnectionEstablished
@@ -235,20 +229,26 @@ Waiting for a connection termination request from the remote TCP, or an acknowle
 Waiting for a connection termination request from the remote TCP.
 
 
-#### TcpConnectionCloseWait
-
-Waiting for a connection termination request from the local user.
-
-
-#### TcpConnectionClosing
-
-Waiting for a connection termination request acknowledgment from the remote TCP.
-
-
 #### TcpConnectionLastAck
 
 Waiting for an acknowledgment of the connection termination request previously sent to the
        remote TCP, which includes an acknowledgment of its connection termination request.
+
+
+#### TcpConnectionListen
+
+Waiting for a connection request from any remote TCP and port.
+
+
+#### TcpConnectionSynRcvd
+
+Waiting for a confirming connection request acknowledgment after having both received and sent a
+       connection request.
+
+
+#### TcpConnectionSynSent
+
+Waiting for a matching connection request after having sent a connection request.
 
 
 #### TcpConnectionTimeWait
@@ -283,13 +283,13 @@ The host stack provides initial values for the TCP delegated variables when it o
     <a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a> function.
     When the host stack terminates the offload of the TCP connection state object by causing NDIS to call the
     offload target's 
-    <mshelp:link keywords="netvista.miniportterminateoffload" tabindex="0"><i>
-    MiniportTerminateOffload</i></mshelp:link> function, the offload target passes the value of the TCP delegated
+    <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">
+    MiniportTerminateOffload</a> function, the offload target passes the value of the TCP delegated
     variables in the terminated TCP connection state object back to the host stack.
 
 When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is associated with an 
-    <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure, which contains a header that is formatted as an 
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure. The
     Revision member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of the
     TCP_OFFLOAD_STATE_DELEGATED structure.
@@ -297,24 +297,21 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is ass
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
 ## See Also
 
-<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-
-<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
-
-<a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
-
-<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_cached.md">TCP_OFFLOAD_STATE_CACHED</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
+
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
+
+<a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
+
+<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
 
  
 

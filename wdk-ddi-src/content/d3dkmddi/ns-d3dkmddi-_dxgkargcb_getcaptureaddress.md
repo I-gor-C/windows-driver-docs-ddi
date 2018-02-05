@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 95f1bbf4-06d8-48b7-a983-bf0b65ec2da3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARGCB_GETCAPTUREADDRESS structure [Display Devices], DXGKARGCB_GETCAPTUREADDRESS, d3dkmddi/DXGKARGCB_GETCAPTUREADDRESS, DmStructs_24ed27a0-7ad3-44d1-aa93-c22733ebfb34.xml, display.dxgkargcb_getcaptureaddress, _DXGKARGCB_GETCAPTUREADDRESS, *INOUT_PDXGKARGCB_GETCAPTUREADDRESS
+ms.keywords : DXGKARGCB_GETCAPTUREADDRESS structure [Display Devices], DmStructs_24ed27a0-7ad3-44d1-aa93-c22733ebfb34.xml, display.dxgkargcb_getcaptureaddress, _DXGKARGCB_GETCAPTUREADDRESS, DXGKARGCB_GETCAPTUREADDRESS, d3dkmddi/DXGKARGCB_GETCAPTUREADDRESS, *INOUT_PDXGKARGCB_GETCAPTUREADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _DXGKARGCB_GETCAPTUREADDRESS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

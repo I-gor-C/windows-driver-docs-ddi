@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fa67207d-cf83-42a5-969b-29379f99883f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTQueryAdapterInfo, D3DKMTQueryAdapterInfo function [Display Devices], OpenGL_Functions_124c9878-58d2-414b-8b3c-392748ca5361.xml, display.d3dkmtqueryadapterinfo, d3dkmthk/D3DKMTQueryAdapterInfo
+ms.keywords : d3dkmthk/D3DKMTQueryAdapterInfo, display.d3dkmtqueryadapterinfo, D3DKMTQueryAdapterInfo function [Display Devices], D3DKMTQueryAdapterInfo, OpenGL_Functions_124c9878-58d2-414b-8b3c-392748ca5361.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,20 +118,17 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetqueuedlimit.md">D3DKMTSetQueuedLimit</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
 
  
 

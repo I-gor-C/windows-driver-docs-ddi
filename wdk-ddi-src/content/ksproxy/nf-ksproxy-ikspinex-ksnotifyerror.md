@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a2526734-c0bf-4f6b-b91e-2f6891c46c69
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPinEx interface [Streaming Media Devices], KsNotifyError method, KsNotifyError method [Streaming Media Devices], KsNotifyError method [Streaming Media Devices], IKsPinEx interface, ksproxy/IKsPinEx::KsNotifyError, IKsPinEx::KsNotifyError, KsNotifyError, stream.ikspinex_ksnotifyerror, ksproxy_41c855aa-58a3-4bf6-bb8a-1eb8dfe2a3e1.xml, IKsPinEx
+ms.keywords : ksproxy_41c855aa-58a3-4bf6-bb8a-1eb8dfe2a3e1.xml, KsNotifyError, ksproxy/IKsPinEx::KsNotifyError, IKsPinEx, stream.ikspinex_ksnotifyerror, KsNotifyError method [Streaming Media Devices], IKsPinEx interface [Streaming Media Devices], KsNotifyError method, IKsPinEx::KsNotifyError, KsNotifyError method [Streaming Media Devices], IKsPinEx interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,14 +75,9 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

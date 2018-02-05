@@ -69,7 +69,7 @@ Specifies a code that identifies the particular device. This is the device ID sp
 
 `*LegacyResourceList`
 
-
+Pointer to an array of <a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a> structures. Each structure describes a device I/O port or memory range for the graphics adapter that is not listed in PCI configuration space.
 
 `LegacyResourceCount`
 
@@ -91,14 +91,8 @@ The resources returned by <i>HwVidLegacyResources </i> are added to the list of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

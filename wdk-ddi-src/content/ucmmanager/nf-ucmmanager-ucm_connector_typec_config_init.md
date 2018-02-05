@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 10E155C2-907D-4D0E-87E9-A6B32E99D133
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCM_CONNECTOR_TYPE_C_CONFIG_INIT function [Buses], ucmmanager/UCM_CONNECTOR_TYPE_C_CONFIG_INIT, UCM_CONNECTOR_TYPE_C_CONFIG_INIT, buses.ucm_connector_type_c_config_init, UCM_CONNECTOR_TYPEC_CONFIG_INIT
+ms.keywords : UCM_CONNECTOR_TYPEC_CONFIG_INIT, ucmmanager/UCM_CONNECTOR_TYPE_C_CONFIG_INIT, UCM_CONNECTOR_TYPE_C_CONFIG_INIT, buses.ucm_connector_type_c_config_init, UCM_CONNECTOR_TYPE_C_CONFIG_INIT function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,11 +77,9 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

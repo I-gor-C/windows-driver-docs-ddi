@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 924e9108-f0cf-4202-905c-04a27c15dfa3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltRemoveExtraCreateParameter routine [Installable File System Drivers], fltkernel/FltRemoveExtraCreateParameter, ifsk.fltremoveextracreateparameter, FltRemoveExtraCreateParameter, FltApiRef_p_to_z_696787f2-1381-451f-aed4-bf307ee58291.xml
+ms.keywords : FltRemoveExtraCreateParameter, fltkernel/FltRemoveExtraCreateParameter, ifsk.fltremoveextracreateparameter, FltApiRef_p_to_z_696787f2-1381-451f-aed4-bf307ee58291.xml, FltRemoveExtraCreateParameter routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,30 +120,28 @@ The <b>FltRemoveExtraCreateParameter</b> routine searches the ECP list given by 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+
 <b>FltAllocateExtraCreateParameterFromLookasideList</b>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 
 <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 

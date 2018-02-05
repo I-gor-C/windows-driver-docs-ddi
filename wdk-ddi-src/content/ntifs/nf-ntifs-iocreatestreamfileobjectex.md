@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1ecf4536-9669-4437-8919-3c7b0e4a9183
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoCreateStreamFileObjectEx, ioref_0c92890a-e4ae-4a25-b1cb-8097361674ee.xml, ifsk.iocreatestreamfileobjectex, IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx routine [Installable File System Drivers]
+ms.keywords : ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx routine [Installable File System Drivers], ifsk.iocreatestreamfileobjectex, IoCreateStreamFileObjectEx, ioref_0c92890a-e4ae-4a25-b1cb-8097361674ee.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,26 +88,24 @@ If a pool allocation failure occurs, <b>IoCreateStreamFileObjectEx</b> raises a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
 <a href="..\ntifs\nf-ntifs-iocreatestreamfileobjectlite.md">IoCreateStreamFileObjectLite</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+<a href="..\ntifs\nf-ntifs-iocreatestreamfileobject.md">IoCreateStreamFileObject</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
-
-<a href="..\ntifs\nf-ntifs-iocreatestreamfileobject.md">IoCreateStreamFileObject</a>
 
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 

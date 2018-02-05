@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f15bd639-0c58-45e1-91e4-dba25fac0686
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILSENDRESTRICTEDUICCCMDPARAMS, netvista.rilsendrestricteduicccmdparams_2
+ms.keywords : RILSENDRESTRICTEDUICCCMDPARAMS, netvista.rilsendrestricteduicccmdparams_2, *LPRILSENDRESTRICTEDUICCCMDPARAMS, rilapitypes/RILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,7 +90,4 @@ typedef struct _RILSENDRESTRICTEDUICCCMDPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

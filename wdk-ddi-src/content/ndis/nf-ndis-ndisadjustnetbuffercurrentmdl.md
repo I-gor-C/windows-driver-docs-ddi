@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5d05793b-cb35-435d-aa59-6ac380668d91
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisAdjustNetBufferCurrentMdl, ndis/NdisAdjustNetBufferCurrentMdl, NdisAdjustNetBufferCurrentMdl function [Network Drivers Starting with Windows Vista], netvista.ndisadjustnetbuffercurrentmdl, ndis_netbuf_functions_ref_a555c8dc-ed71-46b9-8922-32bfad03f2a1.xml
+ms.keywords : ndis/NdisAdjustNetBufferCurrentMdl, NdisAdjustNetBufferCurrentMdl function [Network Drivers Starting with Windows Vista], NdisAdjustNetBufferCurrentMdl, netvista.ndisadjustnetbuffercurrentmdl, ndis_netbuf_functions_ref_a555c8dc-ed71-46b9-8922-32bfad03f2a1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,11 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d1cbd6ee-6625-47bd-bf3e-356b28ff17a5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoPageRead function [Installable File System Drivers], ifsk.iopageread, IoPageRead, ioref_2c5776f2-eef8-49e5-ade1-3ed0edcd6102.xml, ntifs/IoPageRead
+ms.keywords : ntifs/IoPageRead, IoPageRead, IoPageRead function [Installable File System Drivers], ifsk.iopageread, ioref_2c5776f2-eef8-49e5-ade1-3ed0edcd6102.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

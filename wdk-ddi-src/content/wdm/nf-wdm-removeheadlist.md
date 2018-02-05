@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8748451c-3e57-4acf-b1e6-b80fe7f461d8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RemoveHeadList routine [Kernel-Mode Driver Architecture], wdm/RemoveHeadList, RemoveHeadList, kernel.removeheadlist, k109_f16481a9-4fd3-4b81-9fd3-aa77b20f9873.xml
+ms.keywords : wdm/RemoveHeadList, RemoveHeadList, RemoveHeadList routine [Kernel-Mode Driver Architecture], k109_f16481a9-4fd3-4b81-9fd3-aa77b20f9873.xml, kernel.removeheadlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,26 +73,24 @@ Callers of <b>RemoveHeadList</b> can be running at any IRQL. If <b>RemoveHeadLis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
 | **DDI compliance rules** | CancelSpinLock, CompleteRequest, DoubleCompletion, IoAllocateFree, IoReuseIrp, IrpProcessingComplete, MarkingInterlockedQueuedIrps, MarkingQueuedIrps, MarkIrpPending, MarkIrpPending2, PendedCompletedRequest, PendedCompletedRequest2, PendedCompletedRequest3, PendedCompletedRequestEx, RemoveLock, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockMnRemove, RemoveLockMnSurpriseRemove, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePnp, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite, InvalidReqAccessLocal, DoubleExFreePool, Init_NdisAllocateIoWorkItem |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
-
-<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 
 <a href="..\wdm\nf-wdm-removeentrylist.md">RemoveEntryList</a>
 
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
-
 <a href="..\wdm\nf-wdm-exinterlockedremoveheadlist.md">ExInterlockedRemoveHeadList</a>
+
+<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+
+<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d3bf2b1a-22ac-4b37-a442-ecd8a2108b46
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILSENDMSGRESPONSEPARAMMASK, RIL_PARAM_MSGRES_CDMAERRORCLASS, RIL_PARAM_MSGRES_GWLRELAYCODE, RILSENDMSGRESPONSEPARAMMASK, netvista.rilsendmsgresponseparammask, ntddrilapitypes/RIL_PARAM_MSGRES_CDMACAUSECODE, RIL_PARAM_MSGRES_MSGID, ntddrilapitypes/RIL_PARAM_MSGRES_GWLRELAYCODE, RIL_PARAM_MSGRES_GWLTRANSPORTCODE, ntddrilapitypes/RIL_PARAM_MSGRES_MSGID, RIL_PARAM_MSGRES_CDMACAUSECODE, ntddrilapitypes/RIL_PARAM_MSGRES_GWLTRANSPORTCODE, ntddrilapitypes/RIL_PARAM_MSGRES_ALL, RIL_PARAM_MSGRES_ALL, ntddrilapitypes/RIL_PARAM_MSGRES_CDMAERRORCLASS, RILSENDMSGRESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_PARAM_MSGRES_MSGID, ntddrilapitypes/RILSENDMSGRESPONSEPARAMMASK, RILSENDMSGRESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_MSGRES_CDMAERRORCLASS, ntddrilapitypes/RIL_PARAM_MSGRES_CDMAERRORCLASS, RIL_PARAM_MSGRES_GWLTRANSPORTCODE, ntddrilapitypes/RIL_PARAM_MSGRES_MSGID, RIL_PARAM_MSGRES_CDMACAUSECODE, RILSENDMSGRESPONSEPARAMMASK, RIL_PARAM_MSGRES_GWLRELAYCODE, ntddrilapitypes/RIL_PARAM_MSGRES_GWLRELAYCODE, RIL_PARAM_MSGRES_ALL, ntddrilapitypes/RIL_PARAM_MSGRES_CDMACAUSECODE, ntddrilapitypes/RIL_PARAM_MSGRES_ALL, netvista.rilsendmsgresponseparammask, ntddrilapitypes/RIL_PARAM_MSGRES_GWLTRANSPORTCODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ typedef enum _RILSENDMSGRESPONSEPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

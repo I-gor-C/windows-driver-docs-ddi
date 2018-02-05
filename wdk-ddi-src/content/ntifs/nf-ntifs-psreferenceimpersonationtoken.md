@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c72f48a8-ba51-423f-9105-7d78521dcae2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PsReferenceImpersonationToken, psref_150f4e7c-56c2-4108-b5c9-0882f9027252.xml, ntifs/PsReferenceImpersonationToken, ifsk.psreferenceimpersonationtoken, PsReferenceImpersonationToken routine [Installable File System Drivers]
+ms.keywords : PsReferenceImpersonationToken routine [Installable File System Drivers], psref_150f4e7c-56c2-4108-b5c9-0882f9027252.xml, PsReferenceImpersonationToken, ifsk.psreferenceimpersonationtoken, ntifs/PsReferenceImpersonationToken
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,11 @@ If the thread is currently impersonating a client, <b>PsReferenceImpersonationTo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

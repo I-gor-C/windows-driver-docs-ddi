@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2dddd012-9a13-49e4-9392-300938e78609
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortCompleteRequest, atartns_6ed3a9ca-b9b8-4d2f-a2f2-5a57db2071f8.xml, storage.ataportcompleterequest, AtaPortCompleteRequest routine [Storage Devices], irb/AtaPortCompleteRequest
+ms.keywords : irb/AtaPortCompleteRequest, atartns_6ed3a9ca-b9b8-4d2f-a2f2-5a57db2071f8.xml, storage.ataportcompleterequest, AtaPortCompleteRequest, AtaPortCompleteRequest routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,9 @@ The miniport driver uses this routine to indicate to the port driver that the IR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

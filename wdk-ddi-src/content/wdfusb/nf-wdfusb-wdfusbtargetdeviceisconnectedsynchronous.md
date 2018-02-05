@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1e598f83-01ad-4c3e-8044-a66041f6ad96
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceIsConnectedSynchronous method, PFN_WDFUSBTARGETDEVICEISCONNECTEDSYNCHRONOUS, wdf.wdfusbtargetdeviceisconnectedsynchronous, wdfusb/WdfUsbTargetDeviceIsConnectedSynchronous, DFUsbRef_52c60eb0-7e47-4064-9bb5-f2c7ba2e182a.xml, WdfUsbTargetDeviceIsConnectedSynchronous, kmdf.wdfusbtargetdeviceisconnectedsynchronous
+ms.keywords : WdfUsbTargetDeviceIsConnectedSynchronous method, WdfUsbTargetDeviceIsConnectedSynchronous, DFUsbRef_52c60eb0-7e47-4064-9bb5-f2c7ba2e182a.xml, wdfusb/WdfUsbTargetDeviceIsConnectedSynchronous, kmdf.wdfusbtargetdeviceisconnectedsynchronous, wdf.wdfusbtargetdeviceisconnectedsynchronous, PFN_WDFUSBTARGETDEVICEISCONNECTEDSYNCHRONOUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,12 +114,10 @@ For more information about the <b>WdfUsbTargetDeviceIsConnectedSynchronous</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 

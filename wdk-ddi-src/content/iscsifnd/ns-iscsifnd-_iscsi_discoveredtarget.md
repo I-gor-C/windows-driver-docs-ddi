@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0b4a7375-1ee2-4829-92bb-01ed610236de
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsifnd/PISCSI_DiscoveredTarget, storage.iscsi_discoveredtarget, iscsifnd/ISCSI_DiscoveredTarget, *PISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget, PISCSI_DiscoveredTarget, PISCSI_DiscoveredTarget structure pointer [Storage Devices], structs-iSCSI_d53d59a0-bd96-4eb8-b874-5846302ddda2.xml, _ISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget structure [Storage Devices]
+ms.keywords : "*PISCSI_DiscoveredTarget, storage.iscsi_discoveredtarget, structs-iSCSI_d53d59a0-bd96-4eb8-b874-5846302ddda2.xml, ISCSI_DiscoveredTarget, iscsifnd/ISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget structure [Storage Devices], PISCSI_DiscoveredTarget, iscsifnd/PISCSI_DiscoveredTarget, PISCSI_DiscoveredTarget structure pointer [Storage Devices], _ISCSI_DiscoveredTarget"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,6 @@ The WMI tool suite automatically generates a declaration of the ISCSI_Discovered
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsifnd.h (include Iscsifnd.h) |
 
 ## See Also

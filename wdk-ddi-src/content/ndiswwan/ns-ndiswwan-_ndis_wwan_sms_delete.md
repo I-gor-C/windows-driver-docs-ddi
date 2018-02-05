@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ea13c900-40b2-492b-b14b-85e346208ad8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_wwan_sms_delete, WwanRef_aae03f3f-21d1-42d4-b2dd-008fc07c9964.xml, *PNDIS_WWAN_SMS_DELETE, NDIS_WWAN_SMS_DELETE structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SMS_DELETE, PNDIS_WWAN_SMS_DELETE structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_DELETE, ndiswwan/NDIS_WWAN_SMS_DELETE, NDIS_WWAN_SMS_DELETE, ndiswwan/PNDIS_WWAN_SMS_DELETE
+ms.keywords : PNDIS_WWAN_SMS_DELETE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_sms_delete, WwanRef_aae03f3f-21d1-42d4-b2dd-008fc07c9964.xml, ndiswwan/PNDIS_WWAN_SMS_DELETE, PNDIS_WWAN_SMS_DELETE, NDIS_WWAN_SMS_DELETE structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SMS_DELETE, *PNDIS_WWAN_SMS_DELETE, _NDIS_WWAN_SMS_DELETE, ndiswwan/NDIS_WWAN_SMS_DELETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,9 +110,7 @@ A formatted
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

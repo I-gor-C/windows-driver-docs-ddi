@@ -75,9 +75,7 @@ The input buffer size, indicated by <b>InputBufferLength</b>, must be large enou
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
-| **IRQL** |  |
 
 ## See Also
 

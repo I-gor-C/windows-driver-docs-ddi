@@ -69,7 +69,4 @@ The number of profiles to retrieve.  The runtime ensures this value matches the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C30C34BF-F67D-4838-B337-9EF0D85B27DA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_HDR_METADATA_TYPE, display.d3dddi_hdr_metadata_type, D3DDDI_HDR_METADATA_TYPE enumeration [Display Devices], D3DDDI_HDR_METADATA_TYPE_HDR10, d3dukmdt/D3DDDI_HDR_METADATA_TYPE_HDR10, _D3DDDI_HDR_METADATA_TYPE, D3DDDI_HDR_METADATA_TYPE_NONE, d3dukmdt/D3DDDI_HDR_METADATA_TYPE_NONE, d3dukmdt/D3DDDI_HDR_METADATA_TYPE
+ms.keywords : display.d3dddi_hdr_metadata_type, D3DDDI_HDR_METADATA_TYPE_NONE, d3dukmdt/D3DDDI_HDR_METADATA_TYPE, d3dukmdt/D3DDDI_HDR_METADATA_TYPE_NONE, _D3DDDI_HDR_METADATA_TYPE, d3dukmdt/D3DDDI_HDR_METADATA_TYPE_HDR10, D3DDDI_HDR_METADATA_TYPE enumeration [Display Devices], D3DDDI_HDR_METADATA_TYPE_HDR10, D3DDDI_HDR_METADATA_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum _D3DDDI_HDR_METADATA_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h |

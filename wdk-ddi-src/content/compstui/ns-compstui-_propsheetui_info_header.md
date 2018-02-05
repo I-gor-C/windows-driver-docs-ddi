@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 148c463c-a18b-4f24-b3dc-af74c3de97b7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : compstui/PPROPSHEETUI_INFO_HEADER, compstui/PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER structure [Print Devices], cpsuifnc_21dad179-56e1-478c-8a62-628262ca59a8.xml, PROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER, _PROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER structure pointer [Print Devices], print.propsheetui_info_header
+ms.keywords : compstui/PROPSHEETUI_INFO_HEADER, _PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER structure [Print Devices], cpsuifnc_21dad179-56e1-478c-8a62-628262ca59a8.xml, *PPROPSHEETUI_INFO_HEADER, compstui/PPROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER structure pointer [Print Devices], print.propsheetui_info_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -143,7 +143,4 @@ String identifier, representing text to be displayed in the property sheet's tit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

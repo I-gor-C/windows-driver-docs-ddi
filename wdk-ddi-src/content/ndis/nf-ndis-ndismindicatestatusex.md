@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : df857349-4ae1-470b-b41a-ff014f40b79b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_status_ref_73b76336-b2c8-41f9-9d4f-12e5c5988a3d.xml, netvista.ndismindicatestatusex, NdisMIndicateStatusEx, NdisMIndicateStatusEx function [Network Drivers Starting with Windows Vista], ndis/NdisMIndicateStatusEx
+ms.keywords : netvista.ndismindicatestatusex, ndis_status_ref_73b76336-b2c8-41f9-9d4f-12e5c5988a3d.xml, NdisMIndicateStatusEx, ndis/NdisMIndicateStatusEx, NdisMIndicateStatusEx function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -58,8 +58,8 @@ VOID NdisMIndicateStatusEx(
 
 The miniport adapter handle that NDIS passed at the 
      <i>MiniportAdapterHandle</i> parameter of the 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `StatusIndication`
 
@@ -91,12 +91,10 @@ A miniport driver can call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_StatusIndication_Function, NdisMIndicateStatusEx, WlanAssociation, WlanConnectionRoaming, WlanDisassociation, WlanTimedAssociation, WlanTimedConnectionRoaming, WlanTimedConnectRequest, WlanTimedLinkQuality, WlanTimedScan |
 
@@ -104,11 +102,11 @@ A miniport driver can call
 
 <a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a>
 
-<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
 
  
 

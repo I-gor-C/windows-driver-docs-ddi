@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 8a37bce1-762b-4a08-a677-ed2e484c1bba
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.input, IDebugControl interface [Windows Debugging], Input method, dbgeng/IDebugControl::Input, IDebugControl_10615761-d032-439f-955b-220def3835a9.xml, IDebugControl::Input, Input method [Windows Debugging], IDebugControl, Input, Input method [Windows Debugging], IDebugControl interface
+ms.keywords : dbgeng/IDebugControl::Input, debugger.input, IDebugControl interface [Windows Debugging], Input method, IDebugControl_10615761-d032-439f-955b-220def3835a9.xml, Input method [Windows Debugging], IDebugControl interface, IDebugControl, Input, IDebugControl::Input, Input method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -107,14 +107,9 @@ For an overview of input in the debugger engine, see <a href="https://msdn.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8ac8d3ff-68ec-4e23-bbf9-0a9b7fa13ce3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k107_a0c800de-984a-427f-b308-415f831e5d34.xml, wdm/ObGetObjectSecurity, kernel.obgetobjectsecurity, ObGetObjectSecurity routine [Kernel-Mode Driver Architecture], ObGetObjectSecurity
+ms.keywords : k107_a0c800de-984a-427f-b308-415f831e5d34.xml, ObGetObjectSecurity, wdm/ObGetObjectSecurity, ObGetObjectSecurity routine [Kernel-Mode Driver Architecture], kernel.obgetobjectsecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,20 +83,19 @@ If <b>ObGetObjectSecurity</b> returns STATUS_SUCCESS, the caller must save the v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlApcLte, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
 <a href="..\wdm\nf-wdm-obreleaseobjectsecurity.md">ObReleaseObjectSecurity</a>
 

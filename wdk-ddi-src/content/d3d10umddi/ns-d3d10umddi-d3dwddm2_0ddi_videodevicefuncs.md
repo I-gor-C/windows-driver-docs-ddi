@@ -524,7 +524,5 @@ The entry point for the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

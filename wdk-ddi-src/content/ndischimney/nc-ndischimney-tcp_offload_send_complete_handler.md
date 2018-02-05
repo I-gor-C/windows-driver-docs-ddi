@@ -84,8 +84,8 @@ None
 ## Remarks
 
 In response to an underlying driver's or offload target's call to the 
-    <mshelp:link keywords="netvista.ndistcpoffloadsendcomplete" tabindex="0"><b>
-    NdisOffloadTcpSendComplete</b></mshelp:link> function, NDIS calls the overlying protocol driver's or intermediate
+    <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">
+    NdisOffloadTcpSendComplete</a> function, NDIS calls the overlying protocol driver's or intermediate
     driver's 
     <i>ProtocolTcpOffloadSendComplete</i> function.
 
@@ -112,24 +112,18 @@ The PNET_BUFFER_LIST pointer that NDIS passed to the intermediate driver's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
-
-<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpsend.md">NdisOffloadTcpSend</a>
 
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpsend.md">NdisOffloadTcpSend</a>
+
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
 
 <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_send_handler.md">MiniportTcpSendOffload</a>
 

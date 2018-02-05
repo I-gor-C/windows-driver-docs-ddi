@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 56656fc2-785c-4021-9864-e4c152551973
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtopenadapterfromgdidisplayname, D3DKMTOpenAdapterFromGdiDisplayName, OpenGL_Functions_74419d9d-cd33-4fed-8103-3be487c3c7a1.xml, d3dkmthk/D3DKMTOpenAdapterFromGdiDisplayName, D3DKMTOpenAdapterFromGdiDisplayName function [Display Devices]
+ms.keywords : d3dkmthk/D3DKMTOpenAdapterFromGdiDisplayName, D3DKMTOpenAdapterFromGdiDisplayName function [Display Devices], OpenGL_Functions_74419d9d-cd33-4fed-8103-3be487c3c7a1.xml, display.d3dkmtopenadapterfromgdidisplayname, D3DKMTOpenAdapterFromGdiDisplayName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,14 +96,11 @@ A graphics adapter corresponds to a video card. A monitor output corresponds to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

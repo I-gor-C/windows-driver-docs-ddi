@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 49560022-a690-4259-b725-f8927af31804
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ZwEnumerateTransactionObject, ZwEnumerateTransactionObject routine [Kernel-Mode Driver Architecture], NtEnumerateTransactionObject, ZwEnumerateTransactionObject, ktm_ref_f9c45fce-5dbe-4dad-9943-3f31fb692c65.xml, wdm/NtEnumerateTransactionObject, kernel.zwenumeratetransactionobject
+ms.keywords : ZwEnumerateTransactionObject, wdm/ZwEnumerateTransactionObject, ktm_ref_f9c45fce-5dbe-4dad-9943-3f31fb692c65.xml, wdm/NtEnumerateTransactionObject, NtEnumerateTransactionObject, kernel.zwenumeratetransactionobject, ZwEnumerateTransactionObject routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -236,12 +236,11 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2a9108ab-5852-4053-9a7a-266ae1b1dced
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_CREATE_PIPELINE_STATE_0033 structure [Display Devices], display.d3d12ddiarg-create-pipeline-state-0033, d3d12umddi/D3D12DDIARG_CREATE_PIPELINE_STATE_0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033
+ms.keywords : d3d12umddi/D3D12DDIARG_CREATE_PIPELINE_STATE_0033, display.d3d12ddiarg-create-pipeline-state-0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033, D3D12DDIARG_CREATE_PIPELINE_STATE_0033 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -161,7 +161,4 @@ The view instancing description.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h |

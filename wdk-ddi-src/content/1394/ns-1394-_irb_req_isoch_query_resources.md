@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : B9CDFB62-32CF-497A-BF0F-1E4FBCA36E82
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_IRB_REQ_ISOCH_QUERY_RESOURCES, 1394/IRB_REQ_ISOCH_QUERY_RESOURCES, IRB_REQ_ISOCH_QUERY_RESOURCES structure [Buses], IEEE.irb_req_isoch_query_resources, IRB_REQ_ISOCH_QUERY_RESOURCES"
+ms.keywords : IRB_REQ_ISOCH_QUERY_RESOURCES structure [Buses], IRB_REQ_ISOCH_QUERY_RESOURCES, 1394/IRB_REQ_ISOCH_QUERY_RESOURCES, IEEE.irb_req_isoch_query_resources, _IRB_REQ_ISOCH_QUERY_RESOURCES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,7 +107,4 @@ SPEED_FLAGS_400
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

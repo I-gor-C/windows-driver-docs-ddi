@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ef45c368-37b9-4208-81d3-1ecab81268b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_TEXCUBE_SHADERRESOURCEVIEW, d3d10umddi/D3D10DDIARG_TEXCUBE_SHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_69378946-808a-4eb0-bca1-25bd4780405d.xml, display.d3d10ddiarg_texcube_shaderresourceview, D3D10DDIARG_TEXCUBE_SHADERRESOURCEVIEW structure [Display Devices]
+ms.keywords : D3D10DDIARG_TEXCUBE_SHADERRESOURCEVIEW structure [Display Devices], D3D10DDIARG_TEXCUBE_SHADERRESOURCEVIEW, d3d10umddi/D3D10DDIARG_TEXCUBE_SHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_69378946-808a-4eb0-bca1-25bd4780405d.xml, display.d3d10ddiarg_texcube_shaderresourceview
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,18 +66,16 @@ If the <b>MipLevels</b> member is set to -1, the MIP-maps in the texture start f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize</a>
-
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createshaderresourceview.md">D3D10DDIARG_CREATESHADERRESOURCEVIEW</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createshaderresourceview.md">CreateShaderResourceView</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize</a>
 
  
 

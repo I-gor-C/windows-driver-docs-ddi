@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 946e0206-7609-4dc7-91c2-a6aadad91751
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete, wdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, UMDFUSBref_a221433f-9a32-4205-8f12-a0c891dbe8bf.xml, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion, OnReaderCompletion, umdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete interface
+ms.keywords : OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, umdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, OnReaderCompletion, IUsbTargetPipeContinuousReaderCallbackReadComplete, OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, OnReaderCompletion method, wdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, UMDFUSBref_a221433f-9a32-4205-8f12-a0c891dbe8bf.xml, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -114,14 +114,11 @@ For more information about the <b>OnReaderCompletion</b> callback function and U
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
 
 ## See Also
 

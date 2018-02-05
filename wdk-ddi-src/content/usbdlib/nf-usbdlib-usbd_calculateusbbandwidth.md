@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : a54f3fb4-032a-4538-8b6d-20d6834d08c4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_CalculateUsbBandwidth, USBD_CalculateUsbBandwidth, usbfunc_a422b001-17f1-42b4-b10e-3d64d4279530.xml, buses.usbd_calculateusbbandwidth, USBD_CalculateUsbBandwidth routine [Buses]
+ms.keywords : usbfunc_a422b001-17f1-42b4-b10e-3d64d4279530.xml, usbdlib/USBD_CalculateUsbBandwidth, buses.usbd_calculateusbbandwidth, USBD_CalculateUsbBandwidth routine [Buses], USBD_CalculateUsbBandwidth
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -79,20 +79,17 @@ The <b>USBD_CalculateUsbBandwidth</b> routine approximates the bandwidth using t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Deprecated. Deprecated. |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h (include Usbdlib.h) |
-| **Library** |  |
+| **Library** | Usbd.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
-
 <a href="..\usb\ne-usb-_usbd_pipe_type.md">USBD_PIPE_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
 
  
 

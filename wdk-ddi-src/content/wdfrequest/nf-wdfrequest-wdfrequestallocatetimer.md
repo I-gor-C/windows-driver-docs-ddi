@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e77aece7-df27-42d8-8e25-6907a5401ff9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestallocatetimer, WdfRequestAllocateTimer method, wdfrequest/WdfRequestAllocateTimer, DFRequestObjectRef_ae292896-d156-44ae-b0cd-3f807fbc1765.xml, kmdf.wdfrequestallocatetimer, PFN_WDFREQUESTALLOCATETIMER, WdfRequestAllocateTimer
+ms.keywords : DFRequestObjectRef_ae292896-d156-44ae-b0cd-3f807fbc1765.xml, WdfRequestAllocateTimer, kmdf.wdfrequestallocatetimer, wdfrequest/WdfRequestAllocateTimer, WdfRequestAllocateTimer method, PFN_WDFREQUESTALLOCATETIMER, wdf.wdfrequestallocatetimer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,12 +105,11 @@ If a timer is already allocated for the specified request, <b>WdfRequestAllocate
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 

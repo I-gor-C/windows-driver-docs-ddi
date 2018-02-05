@@ -66,10 +66,10 @@ NDIS_STATUS WTcpOffloadReceiveHandler(
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The miniport driver provided this handle to NDIS when it
      called 
-     <mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
-     NdisMSetMiniportAttributes</b></mshelp:link> from its 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+     NdisMSetMiniportAttributes</a> from its 
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `MiniportOffloadContext`
 
@@ -94,8 +94,8 @@ A pointer to a
 
 NDIS_STATUS_PENDING is the only return value that is allowed. An offload target always completes
      (returns) posted receive requests asynchronously by calling 
-     <mshelp:link keywords="netvista.ndistcpoffloadreceivecomplete" tabindex="0"><b>
-     NdisTcpOffloadReceiveComplete</b></mshelp:link>.
+     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_complete.md">
+     NdisTcpOffloadReceiveComplete</a>.
 
 ## Remarks
 
@@ -174,27 +174,22 @@ If data is received on an offloaded connection while the push timer is running, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<mshelp:link keywords="netvista.ndistcpoffloadreceivecomplete" tabindex="0"><b>
-   NdisTcpOffloadReceiveComplete</b></mshelp:link>
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_complete.md">
+   NdisTcpOffloadReceiveComplete</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

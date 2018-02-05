@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ba0f5820-08eb-40c7-9593-7434ee0e29c6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : spoolfnc_d2e14d20-1b34-49f5-a627-7b08ccc79ccf.xml, print.xcvopenport, winsplp/XcvOpenPort, XcvOpenPort function [Print Devices], XcvOpenPort
+ms.keywords : spoolfnc_d2e14d20-1b34-49f5-a627-7b08ccc79ccf.xml, XcvOpenPort, winsplp/XcvOpenPort, XcvOpenPort function [Print Devices], print.xcvopenport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,24 +86,19 @@ The function should save the granted access mask. Later, when the server DLL's <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a>
+<a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
 
-<a href="..\winsplp\nf-winsplp-addportui.md">AddPortUI</a>
+<a href="..\winsplp\nf-winsplp-xcvcloseport.md">XcvClosePort</a>
 
 <a href="..\winsplp\nf-winsplp-xcvdataport.md">XcvDataPort</a>
 
-<a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
+<a href="..\winsplp\nf-winsplp-addportui.md">AddPortUI</a>
 
  
 

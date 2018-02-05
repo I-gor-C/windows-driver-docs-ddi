@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 571ed880-a4c6-4eb1-a254-c1faf2a589d2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_SIGNATURE_ENTRY structure [Display Devices], d3d10umddi/D3D11_1DDIARG_SIGNATURE_ENTRY, display.d3d11_1ddiarg_signature_entry, D3D11_1DDIARG_SIGNATURE_ENTRY
+ms.keywords : d3d10umddi/D3D11_1DDIARG_SIGNATURE_ENTRY, D3D11_1DDIARG_SIGNATURE_ENTRY, D3D11_1DDIARG_SIGNATURE_ENTRY structure [Display Devices], display.d3d11_1ddiarg_signature_entry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -189,7 +189,5 @@ Is front face.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

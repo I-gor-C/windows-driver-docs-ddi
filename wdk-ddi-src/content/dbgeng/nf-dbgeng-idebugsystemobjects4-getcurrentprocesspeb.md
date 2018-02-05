@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : fa1e2915-3cb5-4634-a8fb-0d2d565c1c00
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetCurrentProcessPeb, IDebugSystemObjects2::GetCurrentProcessPeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessPeb method, dbgeng/IDebugSystemObjects2::GetCurrentProcessPeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects4, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects::GetCurrentProcessPeb, IDebugSystemObjects_fd672d78-9254-4f24-9f10-99a91d825f2e.xml, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessPeb method, dbgeng/IDebugSystemObjects4::GetCurrentProcessPeb, IDebugSystemObjects3::GetCurrentProcessPeb, debugger.getcurrentprocesspeb, dbgeng/IDebugSystemObjects::GetCurrentProcessPeb, IDebugSystemObjects4::GetCurrentProcessPeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects3::GetCurrentProcessPeb, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessPeb method, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessPeb method
+ms.keywords : IDebugSystemObjects4::GetCurrentProcessPeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects::GetCurrentProcessPeb, IDebugSystemObjects2::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects2::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects::GetCurrentProcessPeb, debugger.getcurrentprocesspeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessPeb method, dbgeng/IDebugSystemObjects4::GetCurrentProcessPeb, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessPeb method, IDebugSystemObjects_fd672d78-9254-4f24-9f10-99a91d825f2e.xml, IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessPeb method, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects2 interface, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects3::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects3::GetCurrentProcessPeb, GetCurrentProcessPeb, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessPeb method, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,11 +88,6 @@ In kernel-mode debugging, the location returned is that of the PEB structure for
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

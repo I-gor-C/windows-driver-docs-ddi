@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 33B0C9EF-B40A-4BE7-A5AB-81FFF4698F3F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbRequestGetTransferParameters method [Buses], SPB.spbrequestgettransferparameters, SpbRequestGetTransferParameters, spbcx/SpbRequestGetTransferParameters
+ms.keywords : SpbRequestGetTransferParameters method [Buses], SpbRequestGetTransferParameters, spbcx/SpbRequestGetTransferParameters, SPB.spbrequestgettransferparameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -90,26 +90,23 @@ If <i>TransferDescriptor</i> is non-NULL, the caller must call the <a href="http
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | spbcx.h |
-| **Library** |  |
+| **Library** | Spbcxstubs.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406219">SPB_TRANSFER_DESCRIPTOR_INIT</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
 
  
 

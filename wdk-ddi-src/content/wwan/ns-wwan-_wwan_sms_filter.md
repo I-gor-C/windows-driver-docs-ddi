@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 798101da-51be-416d-ac56-2f55a21e8ea8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_SMS_FILTER, *PWWAN_SMS_FILTER, WwanRef_1bec8893-7ce8-4d8c-aea1-d1c76b0013fc.xml, PWWAN_SMS_FILTER, WWAN_SMS_FILTER structure [Network Drivers Starting with Windows Vista], WWAN_SMS_FILTER, netvista.wwan_sms_filter, _WWAN_SMS_FILTER, wwan/PWWAN_SMS_FILTER, PWWAN_SMS_FILTER structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : PWWAN_SMS_FILTER structure pointer [Network Drivers Starting with Windows Vista], PWWAN_SMS_FILTER, WwanRef_1bec8893-7ce8-4d8c-aea1-d1c76b0013fc.xml, WWAN_SMS_FILTER structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_filter, wwan/WWAN_SMS_FILTER, WWAN_SMS_FILTER, wwan/PWWAN_SMS_FILTER, *PWWAN_SMS_FILTER, _WWAN_SMS_FILTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_SMS_FILTER, WWAN_SMS_FILTER"
+req.typenames : WWAN_SMS_FILTER, *PWWAN_SMS_FILTER
 req.product : Windows 10 or later.
 ---
 
@@ -80,9 +80,7 @@ When
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

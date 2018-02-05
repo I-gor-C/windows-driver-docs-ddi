@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 415255A8-4D43-4677-B4B3-0425D6D57933
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_SUBMITCOMMANDFLAGS, _D3DDDICB_SUBMITCOMMANDFLAGS, D3DDDICB_SUBMITCOMMANDFLAGS structure [Display Devices], display.d3dddicb_submitcommandflags, D3DDDICB_SUBMITCOMMANDFLAGS
+ms.keywords : D3DDDICB_SUBMITCOMMANDFLAGS, _D3DDDICB_SUBMITCOMMANDFLAGS, display.d3dddicb_submitcommandflags, d3dumddi/D3DDDICB_SUBMITCOMMANDFLAGS, D3DDDICB_SUBMITCOMMANDFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,7 +61,5 @@ typedef struct _D3DDDICB_SUBMITCOMMANDFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

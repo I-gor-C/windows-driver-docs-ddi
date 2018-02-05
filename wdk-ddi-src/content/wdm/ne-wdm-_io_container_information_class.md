@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 359ed0d2-91b1-46d1-a358-babe7cb993fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoMaxContainerInformationClass, kernel.io_container_information_class, IO_CONTAINER_INFORMATION_CLASS, sysenum_f1533e86-b529-4ef0-b603-e57f4863b740.xml, IoSessionStateInformation, _IO_CONTAINER_INFORMATION_CLASS, wdm/IoSessionStateInformation, IO_CONTAINER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/IO_CONTAINER_INFORMATION_CLASS, wdm/IoMaxContainerInformationClass
+ms.keywords : IO_CONTAINER_INFORMATION_CLASS, wdm/IoSessionStateInformation, IO_CONTAINER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/IO_CONTAINER_INFORMATION_CLASS, IoMaxContainerInformationClass, sysenum_f1533e86-b529-4ef0-b603-e57f4863b740.xml, wdm/IoMaxContainerInformationClass, _IO_CONTAINER_INFORMATION_CLASS, IoSessionStateInformation, kernel.io_container_information_class
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -72,9 +72,7 @@ To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetco
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
 ## See Also

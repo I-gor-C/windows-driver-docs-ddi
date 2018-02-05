@@ -78,6 +78,4 @@ The IOCTL_AACS_READ_MEDIA_KEY_BLOCK request corresponds to one of the steps of t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

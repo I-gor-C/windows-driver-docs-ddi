@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6F1A1545-5B64-4481-B795-0B6433304C06
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUsbDevicePlugIn, UdecxUsbDevicePlugIn function [Buses], udecxusbdevice/UdecxUsbDevicePlugIn, buses.udecxusbdeviceplugin
+ms.keywords : UdecxUsbDevicePlugIn function [Buses], buses.udecxusbdeviceplugin, udecxusbdevice/UdecxUsbDevicePlugIn, UdecxUsbDevicePlugIn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
+req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
 req.product : Windows 10 or later.
 ---
 
@@ -74,14 +74,12 @@ After the client driver calls this method, the class extension sends I/O request
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

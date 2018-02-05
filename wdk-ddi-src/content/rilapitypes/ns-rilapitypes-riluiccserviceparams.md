@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 56fba38d-6c5f-4b75-98b6-213a42f47bbb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILUICCSERVICEPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCSERVICEPARAMS, netvista.riluiccserviceparams_2, RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
+ms.keywords : rilapitypes/RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS structure [Network Drivers Starting with Windows Vista], netvista.riluiccserviceparams_2, *LPRILUICCSERVICEPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS"
+req.typenames : RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -75,7 +75,4 @@ typedef struct _RILUICCSERVICEPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -85,8 +85,8 @@ The IHV Extensions DLL can issue requests to the IHV UI Extensions DLL to intera
     Examples of such requests are thedisplay of notifications during the pre-association operation or the
     input of credentials for the post-association operation. For more information about the IHV UI Extensions
     DLL, see 
-    <mshelp:link keywords="netvista.native_802_11_ihv_ui_extensions_dll" tabindex="0">Native 802.11 IHV UI Extensions
-    DLL</mshelp:link>.
+    <a href="https://msdn.microsoft.com/82f24545-75cb-4fbc-a98a-04dfac231c10">Native 802.11 IHV UI Extensions
+    DLL</a>.
 
 The IHV Extensions DLL initiates these requests for user interaction through calls to the 
     <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">Dot11ExtSendUIRequest</a> function. For
@@ -108,14 +108,9 @@ The operating system can periodically call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

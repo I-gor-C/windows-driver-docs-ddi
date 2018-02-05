@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2714E346-6BDD-49EF-9820-6B82F8F29380
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.band_table, PBAND_TABLE structure pointer [Storage Devices], *PBAND_TABLE, ehstorbandmgmt/PBAND_TABLE, BAND_TABLE, ehstorbandmgmt/BAND_TABLE, PBAND_TABLE, BAND_TABLE structure [Storage Devices], _BAND_TABLE
+ms.keywords : ehstorbandmgmt/PBAND_TABLE, _BAND_TABLE, ehstorbandmgmt/BAND_TABLE, BAND_TABLE, PBAND_TABLE, storage.band_table, *PBAND_TABLE, PBAND_TABLE structure pointer [Storage Devices], BAND_TABLE structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BAND_TABLE, *PBAND_TABLE
+req.typenames : "*PBAND_TABLE, BAND_TABLE"
 ---
 
 # _BAND_TABLE structure
@@ -74,18 +74,16 @@ The size of this structure in bytes. Set to <b>sizeof</b>(BAND_TABLE).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
 
 ## See Also
 
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
+
 <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
 
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
-
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">ENUMERATE_BANDS_PARAMETERS</a>
 
  
 

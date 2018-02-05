@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 05DA619B-B36A-4E14-9F63-E12E90E0BDCD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportAudioEngineNode::SetDeviceChannelVolume, SetDeviceChannelVolume, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], SetDeviceChannelVolume method, SetDeviceChannelVolume method [Audio Devices], IMiniportAudioEngineNode interface, SetDeviceChannelVolume method [Audio Devices], IMiniportAudioEngineNode::SetDeviceChannelVolume, audio.iminiportaudioenginenode_setdevicechannelvolume
+ms.keywords : SetDeviceChannelVolume method [Audio Devices], IMiniportAudioEngineNode interface [Audio Devices], SetDeviceChannelVolume method, audio.iminiportaudioenginenode_setdevicechannelvolume, SetDeviceChannelVolume method [Audio Devices], IMiniportAudioEngineNode interface, SetDeviceChannelVolume, portcls/IMiniportAudioEngineNode::SetDeviceChannelVolume, IMiniportAudioEngineNode, IMiniportAudioEngineNode::SetDeviceChannelVolume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,14 +77,10 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

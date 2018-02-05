@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 98377F8F-62C8-4E8F-838B-A63DC63E4A0C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR structure [Storage Devices], ntddstor/PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, ntddstor/STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, storage.storage_device_io_capability_descriptor
+ms.keywords : ntddstor/STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR structure [Storage Devices], PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, storage.storage_device_io_capability_descriptor, _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,5 @@ The version of this structure. The Size serves as the version.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ntddstor.h |

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : fad8ca8b-1854-4a71-a0f2-60c211ece022
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION structure pointer [Buses], UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION structure [Buses], ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, buses.ucmtcpci_port_controller_identification"
+ms.keywords : buses.ucmtcpci_port_controller_identification, UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION structure [Buses], PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION structure pointer [Buses], _UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, *PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, *PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION
+req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION, UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION"
 req.product : Windows 10 or later.
 ---
 
@@ -92,9 +92,6 @@ Specifies the vendor identifier assigned by the USB specification committee.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontroller.h |
 
 ## See Also

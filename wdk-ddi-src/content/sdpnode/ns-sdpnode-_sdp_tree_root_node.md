@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : bde75364-387b-4f57-8942-1cf32652c02d
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "*PSDP_TREE_ROOT_NODE, bltooth.sdp_tree_root_node, PSDP_TREE_ROOT_NODE, _SDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE structure pointer [Bluetooth Devices], sdpnode/SDP_TREE_ROOT_NODE, bth_structs_b2bdb873-03b0-4c3a-910c-06277f6be663.xml, sdpnode/PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE structure [Bluetooth Devices]"
+ms.keywords : SDP_TREE_ROOT_NODE structure [Bluetooth Devices], _SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE, bth_structs_b2bdb873-03b0-4c3a-910c-06277f6be663.xml, sdpnode/PSDP_TREE_ROOT_NODE, bltooth.sdp_tree_root_node, sdpnode/SDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE structure pointer [Bluetooth Devices], SDP_TREE_ROOT_NODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE"
+req.typenames : SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
 req.product : Windows 10 or later.
 ---
 
@@ -92,24 +92,22 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | sdpnode.h (include Sdpnode.h) |
 
 ## See Also
 
-<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+
+<a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
 
 <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
 
-<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
-
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
-
 <a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>
 
-<a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
+
+<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
 
  
 

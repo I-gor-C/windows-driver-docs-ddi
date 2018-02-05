@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 57384690-9fe0-4fee-a578-5451e57cfc6b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SetSystemSelectionPrefs method [Network Drivers Starting with Windows Vista], netvista.ril_setsystemselectionprefs, rilapi/RIL_SetSystemSelectionPrefs, RIL_SetSystemSelectionPrefs
+ms.keywords : rilapi/RIL_SetSystemSelectionPrefs, RIL_SetSystemSelectionPrefs, netvista.ril_setsystemselectionprefs, RIL_SetSystemSelectionPrefs method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

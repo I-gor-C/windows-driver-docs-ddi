@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 56159F97-82CD-4F0A-ADF0-228E876A0266
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : usbsidebandaudio/PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, audio.usbsidebandaudio_ep_shadow_resources, PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES structure pointer [Audio Devices], PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, usbsidebandaudio/USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES structure [Audio Devices], _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES
+ms.keywords : usbsidebandaudio/PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, audio.usbsidebandaudio_ep_shadow_resources, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES structure pointer [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES structure [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES
+req.typenames : "*PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES"
 req.product : Windows 10 or later.
 ---
 
@@ -77,7 +77,4 @@ typedef struct _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbsidebandaudio.h (include Usbsidebandaudio.h) |

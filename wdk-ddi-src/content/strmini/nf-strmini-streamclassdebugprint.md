@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a8b7efd2-7773-44dc-92de-85b03c31ada8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : strmini/StreamClassDebugPrint, stream.streamclassdebugprint, strclass-routines_858a2dd4-ee74-44de-9293-05bd804c315d.xml, StreamClassDebugPrint routine [Streaming Media Devices], StreamClassDebugPrint
+ms.keywords : strmini/StreamClassDebugPrint, StreamClassDebugPrint, stream.streamclassdebugprint, strclass-routines_858a2dd4-ee74-44de-9293-05bd804c315d.xml, StreamClassDebugPrint routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,7 +63,7 @@ Specifies an enumeration of type <a href="..\strmini\ne-strmini-stream_debug_lev
 
 Points to a <b>NULL</b>-terminated string containing the message to print to the application window and to the Debugger Command window.
 
-``
+`Arg1`
 
 
 
@@ -79,20 +79,15 @@ For more information, see <a href="https://msdn.microsoft.com/544b922b-58e4-4cbb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
-
 <a href="..\strmini\nf-strmini-streamclassdebugassert.md">StreamClassDebugAssert</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
 
  
 

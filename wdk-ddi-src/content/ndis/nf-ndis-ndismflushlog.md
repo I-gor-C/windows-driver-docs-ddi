@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a681b704-80cc-406a-b60f-31ef5f953164
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMFlushLog function [Network Drivers Starting with Windows Vista], NdisMFlushLog, ndis/NdisMFlushLog, netvista.ndismflushlog, miniport_logging_ref_9de3f5b8-80d8-4f98-82ac-c4b490a3c8a4.xml
+ms.keywords : NdisMFlushLog, NdisMFlushLog function [Network Drivers Starting with Windows Vista], ndis/NdisMFlushLog, miniport_logging_ref_9de3f5b8-80d8-4f98-82ac-c4b490a3c8a4.xml, netvista.ndismflushlog
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,12 +72,10 @@ The driver must release any spin lock it is holding before calling
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMFlushLog (NDIS 5.1)) in Windows   XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 

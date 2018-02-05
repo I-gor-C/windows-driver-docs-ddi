@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 636cf517-5ab0-4709-8026-b51425c81118
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcregisterphysicalconnectionfromexternal, audpc-routines_ad19ffe2-ec64-4b2b-b036-cc84a986adfe.xml, portcls/PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal function [Audio Devices], PcRegisterPhysicalConnectionFromExternal
+ms.keywords : audpc-routines_ad19ffe2-ec64-4b2b-b036-cc84a986adfe.xml, audio.pcregisterphysicalconnectionfromexternal, portcls/PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -96,28 +96,25 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcRegisterPhysicalConnectionFromExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRegisterPhysicalConnectionFromExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnectiontoexternal.md">PcRegisterPhysicalConnectionToExternal</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537027">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionFromExternal</a>
 
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnectiontoexternal.md">PcRegisterPhysicalConnectionToExternal</a>
+
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
-
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
 
  
 

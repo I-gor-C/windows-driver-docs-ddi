@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 372d84da-600f-44db-ac76-b59ceac7321d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_OPSTATUS_MAX, ntddrilapitypes/RIL_OPSTATUS_CURRENT, RILOPERATORINFOSTATUS enumeration [Network Drivers Starting with Windows Vista], RIL_OPSTATUS_AVAILABLE, ntddrilapitypes/RIL_OPSTATUS_AVAILABLE, ntddrilapitypes/RILOPERATORINFOSTATUS, RILOPERATORINFOSTATUS, RIL_OPSTATUS_CURRENT, RIL_OPSTATUS_FORBIDDEN, ntddrilapitypes/RIL_OPSTATUS_FORBIDDEN, netvista.riloperatorinfostatus, ntddrilapitypes/RIL_OPSTATUS_MAX
+ms.keywords : ntddrilapitypes/RILOPERATORINFOSTATUS, ntddrilapitypes/RIL_OPSTATUS_CURRENT, RIL_OPSTATUS_CURRENT, RILOPERATORINFOSTATUS, ntddrilapitypes/RIL_OPSTATUS_MAX, RILOPERATORINFOSTATUS enumeration [Network Drivers Starting with Windows Vista], netvista.riloperatorinfostatus, ntddrilapitypes/RIL_OPSTATUS_AVAILABLE, RIL_OPSTATUS_AVAILABLE, RIL_OPSTATUS_MAX, ntddrilapitypes/RIL_OPSTATUS_FORBIDDEN, RIL_OPSTATUS_FORBIDDEN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILOPERATORINFOSTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

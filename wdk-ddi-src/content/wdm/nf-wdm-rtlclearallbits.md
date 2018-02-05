@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8271b13a-a64e-4d5e-b319-283255b8127f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlClearAllBits, RtlClearAllBits routine [Kernel-Mode Driver Architecture], kernel.rtlclearallbits, k109_6fb17a55-6839-411c-9289-720657ba4983.xml, wdm/RtlClearAllBits
+ms.keywords : kernel.rtlclearallbits, k109_6fb17a55-6839-411c-9289-720657ba4983.xml, RtlClearAllBits routine [Kernel-Mode Driver Architecture], RtlClearAllBits, wdm/RtlClearAllBits
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,32 +69,30 @@ Callers of <b>RtlClearAllBits</b> must be running at IRQL &lt;= APC_LEVEL if the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | "<= APC_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+
+<a href="..\wdm\nf-wdm-rtlclearbits.md">RtlClearBits</a>
+
+<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
 
 <a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
 
 <a href="..\wdm\nf-wdm-rtlnumberofsetbits.md">RtlNumberOfSetBits</a>
 
+<a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
+
 <a href="..\wdm\nf-wdm-rtlfindsetbitsandclear.md">RtlFindSetBitsAndClear</a>
 
 <a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
-
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
-
-<a href="..\wdm\nf-wdm-rtlclearbits.md">RtlClearBits</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
-
-<a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
 
  
 

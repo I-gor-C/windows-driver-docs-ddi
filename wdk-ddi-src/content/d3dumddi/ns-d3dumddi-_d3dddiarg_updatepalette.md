@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6637c102-4e77-4030-9bb5-ab9fb4bac2c7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_UPDATEPALETTE, _D3DDDIARG_UPDATEPALETTE, display.d3dddiarg_updatepalette, D3DDDIARG_UPDATEPALETTE, UMDisplayDriver_param_Structs_abbbfa0f-d2f6-4985-a189-56e4592c1c1e.xml, D3DDDIARG_UPDATEPALETTE structure [Display Devices]
+ms.keywords : D3DDDIARG_UPDATEPALETTE structure [Display Devices], d3dumddi/D3DDDIARG_UPDATEPALETTE, display.d3dddiarg_updatepalette, _D3DDDIARG_UPDATEPALETTE, D3DDDIARG_UPDATEPALETTE, UMDisplayDriver_param_Structs_abbbfa0f-d2f6-4985-a189-56e4592c1c1e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ The Microsoft Direct3D runtime passes palette data for updating to the <i>pPalet
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

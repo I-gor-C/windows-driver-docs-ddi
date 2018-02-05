@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9b97deb9-7e64-49a1-8278-08084c8b7c84
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSAC3_ALTERNATE_AUDIO, ksmedia/PKSAC3_ALTERNATE_AUDIO, ksmedia/KSAC3_ALTERNATE_AUDIO, *PKSAC3_ALTERNATE_AUDIO, KSAC3_ALTERNATE_AUDIO structure [Audio Devices], KSAC3_ALTERNATE_AUDIO, PKSAC3_ALTERNATE_AUDIO structure pointer [Audio Devices], audio.ksac3_alternate_audio, aud-prop_172c7e1b-4c53-4836-82c2-37590cf87744.xml
+ms.keywords : KSAC3_ALTERNATE_AUDIO structure [Audio Devices], ksmedia/PKSAC3_ALTERNATE_AUDIO, audio.ksac3_alternate_audio, ksmedia/KSAC3_ALTERNATE_AUDIO, aud-prop_172c7e1b-4c53-4836-82c2-37590cf87744.xml, KSAC3_ALTERNATE_AUDIO, PKSAC3_ALTERNATE_AUDIO structure pointer [Audio Devices], PKSAC3_ALTERNATE_AUDIO, *PKSAC3_ALTERNATE_AUDIO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSAC3_ALTERNATE_AUDIO, *PKSAC3_ALTERNATE_AUDIO
+req.typenames : "*PKSAC3_ALTERNATE_AUDIO, KSAC3_ALTERNATE_AUDIO"
 ---
 
 # KSAC3_ALTERNATE_AUDIO structure
@@ -104,9 +104,6 @@ For more information about the encoding of AC-3 program channels, see the AC-3 s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

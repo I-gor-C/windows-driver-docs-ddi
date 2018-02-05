@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4c17f679-6b01-4c6e-8dda-9aa43dc43dc6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_usb_control_setup_packet_init, DFUsbRef_1789fa32-1646-43f8-9673-c0d935b92a4f.xml, wdf.wdf_usb_control_setup_packet_init, WDF_USB_CONTROL_SETUP_PACKET_INIT function, WDF_USB_CONTROL_SETUP_PACKET_INIT, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT
+ms.keywords : kmdf.wdf_usb_control_setup_packet_init, WDF_USB_CONTROL_SETUP_PACKET_INIT, DFUsbRef_1789fa32-1646-43f8-9673-c0d935b92a4f.xml, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT, WDF_USB_CONTROL_SETUP_PACKET_INIT function, wdf.wdf_usb_control_setup_packet_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -140,18 +140,17 @@ Sets other structure members by using the <b>WDF_USB_CONTROL_SETUP_PACKET_INIT</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
+
+<a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_get_status.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</a>
 
@@ -162,8 +161,6 @@ Sets other structure members by using the <b>WDF_USB_CONTROL_SETUP_PACKET_INIT</
 <a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_direction.md">WDF_USB_BMREQUEST_DIRECTION</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_feature.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</a>
-
-<a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>
 
  
 

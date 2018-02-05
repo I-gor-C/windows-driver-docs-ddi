@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0EA209B7-20B9-418F-AD29-83520ED27DAB
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlSetThreadPlaceholderCompatibilityMode routine [Installable File System Drivers], ntifs/RtlSetThreadPlaceholderCompatibilityMode, RtlSetThreadPlaceholderCompatibilityMode, ifsk.rtlsetthreadplaceholdercompatibilitymode
+ms.keywords : ntifs/RtlSetThreadPlaceholderCompatibilityMode, ifsk.rtlsetthreadplaceholdercompatibilitymode, RtlSetThreadPlaceholderCompatibilityMode, RtlSetThreadPlaceholderCompatibilityMode routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,14 +100,10 @@ Most Windows applications see exposed placeholders by default.  For compatibilit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

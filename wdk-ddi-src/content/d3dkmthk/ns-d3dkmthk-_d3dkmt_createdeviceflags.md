@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90d4ce0a-1f36-4f2e-bdbe-5f80c8dfb92a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_createdeviceflags, D3DKMT_CREATEDEVICEFLAGS, OpenGL_Structs_7cb495c3-44aa-46cb-8bca-87b66c5d422f.xml, _D3DKMT_CREATEDEVICEFLAGS, D3DKMT_CREATEDEVICEFLAGS structure [Display Devices], d3dkmthk/D3DKMT_CREATEDEVICEFLAGS
+ms.keywords : D3DKMT_CREATEDEVICEFLAGS structure [Display Devices], _D3DKMT_CREATEDEVICEFLAGS, D3DKMT_CREATEDEVICEFLAGS, OpenGL_Structs_7cb495c3-44aa-46cb-8bca-87b66c5d422f.xml, d3dkmthk/D3DKMT_CREATEDEVICEFLAGS, display.d3dkmt_createdeviceflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,7 @@ Setting this member is equivalent to setting the second bit of a 32-bit value (0
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

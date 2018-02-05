@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9b916d43-26ab-4354-8537-2d4789c5fb52
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcCreateContentMixed function [Audio Devices], PcCreateContentMixed, audio.pccreatecontentmixed, portcls/PcCreateContentMixed, audpc-routines_40c3dd23-60cb-48dc-a570-1ba007a27bb2.xml
+ms.keywords : PcCreateContentMixed, portcls/PcCreateContentMixed, audpc-routines_40c3dd23-60cb-48dc-a570-1ba007a27bb2.xml, audio.pccreatecontentmixed, PcCreateContentMixed function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -74,14 +74,10 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmcreatecont
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcCreateContentMixed function in Microsoft Windows XP and later operating systems. The PortCls system driver implements the PcCreateContentMixed function in Microsoft Windows XP and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Portcls.lib |
 
 ## See Also
 

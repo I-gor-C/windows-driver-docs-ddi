@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14dcff4a-3295-435b-a1b2-f3aa15117673
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATELIGHT structure [Display Devices], UMDisplayDriver_param_Structs_683ae423-2e77-49e2-8028-3980a2f1a32d.xml, d3dumddi/D3DDDIARG_CREATELIGHT, D3DDDIARG_CREATELIGHT, display.d3dddiarg_createlight, _D3DDDIARG_CREATELIGHT
+ms.keywords : d3dumddi/D3DDDIARG_CREATELIGHT, D3DDDIARG_CREATELIGHT, _D3DDDIARG_CREATELIGHT, UMDisplayDriver_param_Structs_683ae423-2e77-49e2-8028-3980a2f1a32d.xml, display.d3dddiarg_createlight, D3DDDIARG_CREATELIGHT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DDDIARG_CREATELIGHT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b3318695-e9f2-480a-9133-9008ef0002b7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, wdf.iwdfdevice_configurerequestdispatching, ConfigureRequestDispatching method, IWDFDevice interface, IWDFDevice, umdf.iwdfdevice_configurerequestdispatching, ConfigureRequestDispatching method, ConfigureRequestDispatching, IWDFDevice::ConfigureRequestDispatching, IWDFDevice interface, ConfigureRequestDispatching method, wudfddi/IWDFDevice::ConfigureRequestDispatching
+ms.keywords : UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, ConfigureRequestDispatching method, IWDFDevice interface, IWDFDevice interface, ConfigureRequestDispatching method, wudfddi/IWDFDevice::ConfigureRequestDispatching, umdf.iwdfdevice_configurerequestdispatching, wdf.iwdfdevice_configurerequestdispatching, IWDFDevice, ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFDevice::ConfigureRequestDispatching
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -78,22 +78,20 @@ A BOOL value that specifies whether requests of the specified type are queued. <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
 
  
 

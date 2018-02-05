@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0ff7a803-9de4-4b2f-ab5f-3eb5107d5b64
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisSwitchNicTypeExternal, NDIS_SWITCH_NIC_TYPE, ntddndis/NdisSwitchNicTypeInternal, ntddndis/NdisSwitchNicTypeExternal, PNDIS_SWITCH_NIC_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_TYPE, ntddndis/NdisSwitchNicTypeEmulated, NdisSwitchNicTypeInternal, _NDIS_SWITCH_NIC_TYPE, ntddndis/NdisSwitchNicTypeSynthetic, NdisSwitchNicTypeSynthetic, ntddndis/NDIS_SWITCH_NIC_TYPE, NdisSwitchNicTypeEmulated, NDIS_SWITCH_NIC_TYPE enumeration [Network Drivers Starting with Windows Vista], netvista.ndis_switch_nic_type, ntddndis/PNDIS_SWITCH_NIC_TYPE
+ms.keywords : PNDIS_SWITCH_NIC_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_TYPE, _NDIS_SWITCH_NIC_TYPE, NdisSwitchNicTypeExternal, NDIS_SWITCH_NIC_TYPE, ntddndis/NDIS_SWITCH_NIC_TYPE, ntddndis/PNDIS_SWITCH_NIC_TYPE, NdisSwitchNicTypeInternal, ntddndis/NdisSwitchNicTypeExternal, NdisSwitchNicTypeEmulated, ntddndis/NdisSwitchNicTypeSynthetic, ntddndis/NdisSwitchNicTypeInternal, netvista.ndis_switch_nic_type, NdisSwitchNicTypeSynthetic, ntddndis/NdisSwitchNicTypeEmulated, NDIS_SWITCH_NIC_TYPE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -91,9 +91,7 @@ For more information on the types of network adapters that connect to extensible
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

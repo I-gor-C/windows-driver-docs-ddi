@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7679d4f2-55c6-458c-afd3-020c3b7fd7e2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_PRESENT_DISPLAYONLY, _DXGKARG_PRESENT_DISPLAYONLY, DXGKARG_PRESENT_DISPLAYONLY structure [Display Devices], d3dkmddi/DXGKARG_PRESENT_DISPLAYONLY, display.dxgkarg_present_displayonly
+ms.keywords : display.dxgkarg_present_displayonly, DXGKARG_PRESENT_DISPLAYONLY, d3dkmddi/DXGKARG_PRESENT_DISPLAYONLY, DXGKARG_PRESENT_DISPLAYONLY structure [Display Devices], _DXGKARG_PRESENT_DISPLAYONLY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,22 +104,20 @@ The zero-based identification number of the video present source in a path of a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_presentdisplayonly.md">DxgkDdiPresentDisplayOnly</a>
+
+<a href="https://msdn.microsoft.com/8970246b-b46f-464f-93b2-973cc351ed07">DxgkCbPresentDisplayOnlyProgress</a>
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmt_move_rect.md">D3DKMT_MOVE_RECT</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkmt_present_display_only_flags.md">D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_presentdisplayonly.md">DxgkDdiPresentDisplayOnly</a>
-
-<a href="https://msdn.microsoft.com/8970246b-b46f-464f-93b2-973cc351ed07">DxgkCbPresentDisplayOnlyProgress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
  
 

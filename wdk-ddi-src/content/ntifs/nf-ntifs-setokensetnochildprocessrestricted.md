@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : FCFCBF4C-CBAA-4284-A6F4-67630608CF19
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeTokenSetNoChildProcessRestricted, SeTokenSetNoChildProcessRestricted function [Installable File System Drivers], ifsk.setokensetnochildprocessrestricted, ntifs/SeTokenSetNoChildProcessRestricted
+ms.keywords : SeTokenSetNoChildProcessRestricted function [Installable File System Drivers], SeTokenSetNoChildProcessRestricted, ifsk.setokensetnochildprocessrestricted, ntifs/SeTokenSetNoChildProcessRestricted
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,11 @@ Note that both flags cannot be set at the same time
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

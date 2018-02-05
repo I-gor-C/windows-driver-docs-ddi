@@ -177,20 +177,15 @@ For detailed information about constraints on operation regions, see the <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | oprghdlr.h (include Oprghdlr.h) |
-| **Library** |  |
 | **IRQL** | "(See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
-
 <a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
+
+<a href="..\oprghdlr\nf-oprghdlr-deregisteropregionhandler.md">DeRegisterOpRegionHandler</a>
 
  
 

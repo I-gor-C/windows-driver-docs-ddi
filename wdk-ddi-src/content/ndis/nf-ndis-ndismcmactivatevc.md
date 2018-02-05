@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2c2e4f7d-578a-4429-baca-ebe45423afff
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmActivateVc function [Network Drivers Starting with Windows Vista], netvista.ndismcmactivatevc, ndis/NdisMCmActivateVc, condis_mcm_ref_0dd062a7-dc2b-49c1-b319-e0189631e348.xml, NdisMCmActivateVc
+ms.keywords : NdisMCmActivateVc function [Network Drivers Starting with Windows Vista], netvista.ndismcmactivatevc, NdisMCmActivateVc, condis_mcm_ref_0dd062a7-dc2b-49c1-b319-e0189631e348.xml, ndis/NdisMCmActivateVc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,8 +70,8 @@ Pointer to a caller-allocated buffer, formatted as a structure of type
 When 
      <b>NdisMCmActivateVc</b> returns anything other than NDIS_STATUS_PENDING, the MCM driver should make an
      internal call to its 
-     <mshelp:link keywords="netvista.protocolcmactivatevccomplete" tabindex="0"><i>
-     ProtocolCmActivateVcComplete</i></mshelp:link> function. Otherwise, NDIS calls the MCM driver's 
+     <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
+     ProtocolCmActivateVcComplete</a> function. Otherwise, NDIS calls the MCM driver's 
      <i>ProtocolCmActivateVcComplete</i> function when this operation is completed.
 
 ## Remarks
@@ -93,8 +93,8 @@ For a client-initiated outgoing call, an MCM driver usually calls
     <b>NdisMCmActivateVc</b> after it has called 
     <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a> successfully and before it
     calls 
-    <mshelp:link keywords="netvista.ndismcmdispatchincomingcall" tabindex="0"><b>
-    NdisMCmDispatchIncomingCall</b></mshelp:link>.
+    <a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">
+    NdisMCmDispatchIncomingCall</a>.
 
 The driver writer determines whether an MCM driver has an (internal) 
     <i>MiniportCoActivateVc</i> function that the driver calls in the context of setting up connections for
@@ -129,34 +129,32 @@ Restore the call parameters to a previously accepted state, notify the client th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmActivateVc (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 
-<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
+<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 
 <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
-<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
+<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
-
-<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 
  
 

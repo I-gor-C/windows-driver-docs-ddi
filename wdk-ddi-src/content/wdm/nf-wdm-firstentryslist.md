@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 80444a10-91f3-44b5-ad20-3d3d8f49ca60
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_0a6c7f88-35fa-4cc9-ac3d-03bf1e873cf3.xml, kernel.firstentryslist, FirstEntrySList, FirstEntrySList routine [Kernel-Mode Driver Architecture], wdm/FirstEntrySList
+ms.keywords : FirstEntrySList routine [Kernel-Mode Driver Architecture], FirstEntrySList, k109_0a6c7f88-35fa-4cc9-ac3d-03bf1e873cf3.xml, kernel.firstentryslist, wdm/FirstEntrySList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,11 @@ Unlike other sequenced singly linked list routines, the <b>FirstEntrySList</b> r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h, Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

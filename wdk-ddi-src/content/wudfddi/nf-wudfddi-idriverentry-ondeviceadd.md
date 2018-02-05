@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f2953b0d-6745-4804-bcda-47c7ddfb901f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IDriverEntry, umdf.idriverentry_ondeviceadd, OnDeviceAdd, UMDFDriverObjectRef_81d1022a-84b6-4a2e-a227-57f30c515171.xml, IDriverEntry interface, OnDeviceAdd method, OnDeviceAdd method, IDriverEntry interface, wdf.idriverentry_ondeviceadd, wudfddi/IDriverEntry::OnDeviceAdd, IDriverEntry::OnDeviceAdd, OnDeviceAdd method
+ms.keywords : OnDeviceAdd, UMDFDriverObjectRef_81d1022a-84b6-4a2e-a227-57f30c515171.xml, OnDeviceAdd method, umdf.idriverentry_ondeviceadd, IDriverEntry::OnDeviceAdd, IDriverEntry interface, OnDeviceAdd method, wdf.idriverentry_ondeviceadd, IDriverEntry, OnDeviceAdd method, IDriverEntry interface, wudfddi/IDriverEntry::OnDeviceAdd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -82,28 +82,23 @@ For more information, see <a href="https://msdn.microsoft.com/233e3315-3044-42d7
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556768">IPnpCallbackHardware::OnReleaseHardware</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>
+
+<a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556768">IPnpCallbackHardware::OnReleaseHardware</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
-
-<a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a>
 
  
 

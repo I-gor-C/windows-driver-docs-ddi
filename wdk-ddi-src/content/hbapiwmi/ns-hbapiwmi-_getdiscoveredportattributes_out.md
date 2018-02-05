@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7a6ae185-2f91-4285-b540-61130aef464c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PGetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT, storage.getdiscoveredportattributes_out, GetDiscoveredPortAttributes_OUT, structs-Fibre_611d9a0e-b0dc-472e-9bec-3902412e8ec4.xml, hbapiwmi/GetDiscoveredPortAttributes_OUT, GetDiscoveredPortAttributes_OUT structure [Storage Devices], _GetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT structure pointer [Storage Devices], hbapiwmi/PGetDiscoveredPortAttributes_OUT"
+ms.keywords : GetDiscoveredPortAttributes_OUT structure [Storage Devices], hbapiwmi/GetDiscoveredPortAttributes_OUT, _GetDiscoveredPortAttributes_OUT, GetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT structure pointer [Storage Devices], *PGetDiscoveredPortAttributes_OUT, structs-Fibre_611d9a0e-b0dc-472e-9bec-3902412e8ec4.xml, storage.getdiscoveredportattributes_out, hbapiwmi/PGetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ The WMI tool suite generates a declaration of the GetDiscoveredPortAttributes_IN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

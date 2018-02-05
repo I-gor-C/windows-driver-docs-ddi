@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 46655cbe-0483-4897-bd12-ce108af326c6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoIsFileOriginRemote routine [Installable File System Drivers], IoIsFileOriginRemote, ioref_04dab537-9cd7-44be-9592-0682c0bfbd7e.xml, ifsk.ioisfileoriginremote, ntddk/IoIsFileOriginRemote
+ms.keywords : IoIsFileOriginRemote routine [Installable File System Drivers], ntddk/IoIsFileOriginRemote, ioref_04dab537-9cd7-44be-9592-0682c0bfbd7e.xml, IoIsFileOriginRemote, ifsk.ioisfileoriginremote
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,12 @@ File system filter drivers call <b>IoIsFileOriginRemote</b> for a file object to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

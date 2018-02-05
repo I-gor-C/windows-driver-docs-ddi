@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 24c22102-f91d-4ea1-81fb-98052b8d0153
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream interface [Audio Devices], GetPhysicalPageAddress method, audio.iportwavertstream_getphysicalpageaddress, GetPhysicalPageAddress method [Audio Devices], portcls/IPortWaveRTStream::GetPhysicalPageAddress, GetPhysicalPageAddress method [Audio Devices], IPortWaveRTStream interface, audmp-routines_44b6b9ed-368b-4bf1-9a21-e0e0b2b90728.xml, IPortWaveRTStream, GetPhysicalPageAddress, IPortWaveRTStream::GetPhysicalPageAddress
+ms.keywords : GetPhysicalPageAddress, audio.iportwavertstream_getphysicalpageaddress, portcls/IPortWaveRTStream::GetPhysicalPageAddress, GetPhysicalPageAddress method [Audio Devices], IPortWaveRTStream interface, GetPhysicalPageAddress method [Audio Devices], IPortWaveRTStream interface [Audio Devices], GetPhysicalPageAddress method, audmp-routines_44b6b9ed-368b-4bf1-9a21-e0e0b2b90728.xml, IPortWaveRTStream::GetPhysicalPageAddress, IPortWaveRTStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -75,14 +75,11 @@ The miniport typically calls this for each page in the MDL in order to program t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -90,9 +87,9 @@ The miniport typically calls this for each page in the MDL in order to program t
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
 
-<a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
+
+<a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 
  
 

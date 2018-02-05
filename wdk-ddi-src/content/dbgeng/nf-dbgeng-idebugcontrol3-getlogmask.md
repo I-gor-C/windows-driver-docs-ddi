@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 32d36b6d-9887-43ac-9314-fc682705131e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl3::GetLogMask, GetLogMask method [Windows Debugging], IDebugControl interface, GetLogMask method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetLogMask, IDebugControl3, debugger.getlogmask, IDebugControl interface [Windows Debugging], GetLogMask method, dbgeng/IDebugControl::GetLogMask, IDebugControl::GetLogMask, IDebugControl3::GetLogMask, IDebugControl3 interface [Windows Debugging], GetLogMask method, GetLogMask method [Windows Debugging], IDebugControl2::GetLogMask, GetLogMask method [Windows Debugging], IDebugControl3 interface, GetLogMask, IDebugControl_a3ef306a-5134-49c7-b589-65a4afaa90ac.xml, IDebugControl2 interface [Windows Debugging], GetLogMask method
+ms.keywords : GetLogMask method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetLogMask, GetLogMask method [Windows Debugging], IDebugControl3 interface, IDebugControl_a3ef306a-5134-49c7-b589-65a4afaa90ac.xml, GetLogMask method [Windows Debugging], IDebugControl3 interface [Windows Debugging], GetLogMask method, GetLogMask method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetLogMask, IDebugControl3, dbgeng/IDebugControl::GetLogMask, IDebugControl::GetLogMask, GetLogMask, debugger.getlogmask, IDebugControl2 interface [Windows Debugging], GetLogMask method, IDebugControl3::GetLogMask, IDebugControl interface [Windows Debugging], GetLogMask method, IDebugControl2::GetLogMask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,26 +85,21 @@ For more information about log files, see <a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556734">SetLogMask</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556734">SetLogMask</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
 
  
 

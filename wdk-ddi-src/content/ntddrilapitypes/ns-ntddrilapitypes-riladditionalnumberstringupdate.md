@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 43fe1e25-be15-4f7a-8ecf-e4492235c6c2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILADDITIONALNUMBERSTRINGUPDATE, RILADDITIONALNUMBERSTRINGUPDATE structure [Network Drivers Starting with Windows Vista], netvista.riladditionalnumberstringupdate, *LPRILADDITIONALNUMBERSTRINGUPDATE, ntddrilapitypes/RILADDITIONALNUMBERSTRINGUPDATE
+ms.keywords : netvista.riladditionalnumberstringupdate, ntddrilapitypes/RILADDITIONALNUMBERSTRINGUPDATE, RILADDITIONALNUMBERSTRINGUPDATE structure [Network Drivers Starting with Windows Vista], RILADDITIONALNUMBERSTRINGUPDATE, *LPRILADDITIONALNUMBERSTRINGUPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILADDITIONALNUMBERSTRINGUPDATE, RILADDITIONALNUMBERSTRINGUPDATE"
+req.typenames : RILADDITIONALNUMBERSTRINGUPDATE, *LPRILADDITIONALNUMBERSTRINGUPDATE
 ---
 
 # RILADDITIONALNUMBERSTRINGUPDATE structure
@@ -79,7 +79,4 @@ typedef struct _RILADDITIONALNUMBERSTRINGUPDATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f14aa2bc-1eeb-4c17-836a-52046ba388f1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILRANGE, RILRANGE structure [Network Drivers Starting with Windows Vista], *LPRILRANGE, netvista.rilrange_2, rilapitypes/RILRANGE
+ms.keywords : "*LPRILRANGE, RILRANGE structure [Network Drivers Starting with Windows Vista], netvista.rilrange_2, RILRANGE, rilapitypes/RILRANGE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILRANGE, RILRANGE"
+req.typenames : RILRANGE, *LPRILRANGE
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILRANGE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

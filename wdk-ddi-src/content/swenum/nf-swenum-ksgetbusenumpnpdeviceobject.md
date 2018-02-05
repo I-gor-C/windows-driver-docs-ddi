@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8e81a294-9388-467d-8405-472fbe9fe827
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetBusEnumPnpDeviceObject function [Streaming Media Devices], stream.ksgetbusenumpnpdeviceobject, swenum/KsGetBusEnumPnpDeviceObject, ksfunc_246a7c6e-ef5a-4cf4-a05a-70a499a487cb.xml, KsGetBusEnumPnpDeviceObject
+ms.keywords : KsGetBusEnumPnpDeviceObject function [Streaming Media Devices], ksfunc_246a7c6e-ef5a-4cf4-a05a-70a499a487cb.xml, swenum/KsGetBusEnumPnpDeviceObject, stream.ksgetbusenumpnpdeviceobject, KsGetBusEnumPnpDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ Returns STATUS_SUCCESS if successful, or STATUS_INVALID_PARAMETER if <i>DeviceOb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | swenum.h (include Swenum.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

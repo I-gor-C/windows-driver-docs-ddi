@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : aa7d8d32-7bbe-4091-82a2-32ade463dd9e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : COLOR_Yxy, icm/COLOR_7_CHANNEL, icm/COLOR_3_CHANNEL, COLOR_3_CHANNEL, COLOR_Lab, icm/COLOR_5_CHANNEL, COLORTYPE enumeration [Print Devices], icm/COLOR_CMYK, icm/COLOR_GRAY, COLOR_XYZ, icm/COLOR_XYZ, icm/COLOR_NAMED, icm/COLOR_Lab, print.colortype, COLOR_6_CHANNEL, COLOR_7_CHANNEL, COLOR_5_CHANNEL, COLOR_GRAY, icm/COLOR_6_CHANNEL, COLOR_8_CHANNEL, colorfnc_95cb2087-57a1-4d10-87b0-d90cd4da2f57.xml, COLORTYPE, icm/COLORTYPE, *PCOLORTYPE, COLOR_RGB, COLOR_CMYK, icm/COLOR_Yxy, COLOR_NAMED, icm/COLOR_8_CHANNEL, icm/COLOR_RGB
+ms.keywords : COLOR_3_CHANNEL, COLOR_5_CHANNEL, COLOR_6_CHANNEL, icm/COLOR_NAMED, COLOR_Lab, COLOR_NAMED, COLOR_7_CHANNEL, icm/COLOR_6_CHANNEL, icm/COLOR_8_CHANNEL, icm/COLORTYPE, COLOR_CMYK, icm/COLOR_Yxy, icm/COLOR_GRAY, icm/COLOR_CMYK, icm/COLOR_3_CHANNEL, colorfnc_95cb2087-57a1-4d10-87b0-d90cd4da2f57.xml, COLORTYPE, COLOR_8_CHANNEL, print.colortype, icm/COLOR_7_CHANNEL, icm/COLOR_RGB, icm/COLOR_XYZ, COLOR_XYZ, *PCOLORTYPE, COLOR_Yxy, icm/COLOR_Lab, COLOR_GRAY, COLORTYPE enumeration [Print Devices], COLOR_RGB, icm/COLOR_5_CHANNEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -143,7 +143,5 @@ The PCOLORTYPE and LPCOLORTYPE data types are defined as pointers to this enumer
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
 | **Header** | icm.h |

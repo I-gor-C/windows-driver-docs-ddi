@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : a43baab5-26d9-43f7-bc13-3b0864769e68
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidfunc_420188e5-e357-43cc-b195-dea7637fd3c9.xml, HidP_GetCaps routine [Human Input Devices], hidpi/HidP_GetCaps, HidP_GetCaps, hid.hidp_getcaps
+ms.keywords : HidP_GetCaps routine [Human Input Devices], HidP_GetCaps, hid.hidp_getcaps, hidfunc_420188e5-e357-43cc-b195-dea7637fd3c9.xml, hidpi/HidP_GetCaps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,26 +103,23 @@ See also <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac3020995
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidpi.h (include Hidpi.h) |
-| **Library** |  |
+| **Library** | Hidparse.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-<a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a>
-
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
 
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
 
 <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+<a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a>
 
  
 

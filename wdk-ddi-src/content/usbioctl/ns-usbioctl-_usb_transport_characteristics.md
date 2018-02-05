@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 56394A88-7231-4693-8DD1-C5C7586E490C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSB_TRANSPORT_CHARACTERISTICS structure pointer [Buses], _USB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS structure [Buses], PUSB_TRANSPORT_CHARACTERISTICS, usbioctl/USB_TRANSPORT_CHARACTERISTICS, *PUSB_TRANSPORT_CHARACTERISTICS, buses.usb_transport_characteristics
+ms.keywords : PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS, buses.usb_transport_characteristics, _USB_TRANSPORT_CHARACTERISTICS, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS structure [Buses], PUSB_TRANSPORT_CHARACTERISTICS structure pointer [Buses], *PUSB_TRANSPORT_CHARACTERISTICS, usbioctl/USB_TRANSPORT_CHARACTERISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_TRANSPORT_CHARACTERISTICS, *PUSB_TRANSPORT_CHARACTERISTICS
+req.typenames : "*PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS"
 req.product : Windows 10 or later.
 ---
 
@@ -93,9 +93,7 @@ The version is set to  USB_TRANSPORT_CHARACTERISTICS_VERSION_1.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | usbioctl.h |
 
 ## See Also

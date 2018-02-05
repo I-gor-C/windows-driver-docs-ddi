@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5d51ec82-4891-47f1-8fc1-b20cb611d7fe
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfchildlistgetdevice, WdfChildListGetDevice, wdfchildlist/WdfChildListGetDevice, WdfChildListGetDevice method, DFDeviceObjectChildListRef_3126e6d6-e0d4-4ad1-865e-e7ec36e3c593.xml, kmdf.wdfchildlistgetdevice, PFN_WDFCHILDLISTGETDEVICE
+ms.keywords : DFDeviceObjectChildListRef_3126e6d6-e0d4-4ad1-865e-e7ec36e3c593.xml, WdfChildListGetDevice method, WdfChildListGetDevice, kmdf.wdfchildlistgetdevice, PFN_WDFCHILDLISTGETDEVICE, wdf.wdfchildlistgetdevice, wdfchildlist/WdfChildListGetDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,9 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

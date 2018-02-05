@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c2acb40c-cb6e-45b4-b0be-911f6b37094e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_ScsiId structure [Storage Devices], structs-Fibre_855aa506-19ff-469d-8b32-3fc7f9e84ade.xml, storage.hba_scsiid, HBA_SCSIID structure [Storage Devices], *PHBA_SCSIID, hbaapi/HBA_ScsiId, hbaapi/PHBA_SCSIID, PHBA_SCSIID structure pointer [Storage Devices], HBA_SCSIID, PHBA_SCSIID, HBA_ScsiId
+ms.keywords : HBA_SCSIID structure [Storage Devices], storage.hba_scsiid, *PHBA_SCSIID, HBA_ScsiId structure [Storage Devices], hbaapi/HBA_ScsiId, structs-Fibre_855aa506-19ff-469d-8b32-3fc7f9e84ade.xml, PHBA_SCSIID structure pointer [Storage Devices], hbaapi/PHBA_SCSIID, HBA_SCSIID, PHBA_SCSIID, HBA_ScsiId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HBA_SCSIID, *PHBA_SCSIID
+req.typenames : "*PHBA_SCSIID, HBA_SCSIID"
 ---
 
 # HBA_ScsiId structure
@@ -76,9 +76,6 @@ For a detailed discussion of how the data assigned to members of this structure 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also

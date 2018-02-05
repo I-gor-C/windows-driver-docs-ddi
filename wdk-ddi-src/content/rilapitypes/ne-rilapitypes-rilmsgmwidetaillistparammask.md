@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1b0777d4-8977-4dd2-a728-65f0e045efc8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_MWIDETAIL_DETAILITEMS, RIL_PARAM_MWIDETAIL_ALL, RIL_PARAM_MWIDETAIL_NUMDETAILITEMS, netvista.rilmsgmwidetaillistparammask_2, rilapitypes/RILMSGMWIDETAILLISTPARAMMASK, RIL_PARAM_MWIDETAIL_REFNUM, rilapitypes/RIL_PARAM_MWIDETAIL_REFNUM, RILMSGMWIDETAILLISTPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_MWIDETAIL_DETAILITEMS, rilapitypes/RIL_PARAM_MWIDETAIL_ALL, RILMSGMWIDETAILLISTPARAMMASK, rilapitypes/RIL_PARAM_MWIDETAIL_NUMDETAILITEMS
+ms.keywords : RIL_PARAM_MWIDETAIL_DETAILITEMS, rilapitypes/RIL_PARAM_MWIDETAIL_NUMDETAILITEMS, rilapitypes/RIL_PARAM_MWIDETAIL_REFNUM, RIL_PARAM_MWIDETAIL_ALL, rilapitypes/RILMSGMWIDETAILLISTPARAMMASK, rilapitypes/RIL_PARAM_MWIDETAIL_ALL, rilapitypes/RIL_PARAM_MWIDETAIL_DETAILITEMS, RIL_PARAM_MWIDETAIL_NUMDETAILITEMS, RIL_PARAM_MWIDETAIL_REFNUM, RILMSGMWIDETAILLISTPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilmsgmwidetaillistparammask_2, RILMSGMWIDETAILLISTPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILMSGMWIDETAILLISTPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

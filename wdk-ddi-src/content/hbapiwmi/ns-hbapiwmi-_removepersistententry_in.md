@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7019ee37-2080-4ba3-ba39-977e575ec04e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-Fibre_e5e794c3-e43c-4218-af52-3f2d8a96c256.xml, RemovePersistentEntry_IN structure [Storage Devices], _RemovePersistentEntry_IN, storage.removepersistententry_in, hbapiwmi/PRemovePersistentEntry_IN, RemovePersistentEntry_IN, *PRemovePersistentEntry_IN, PRemovePersistentEntry_IN, hbapiwmi/RemovePersistentEntry_IN, PRemovePersistentEntry_IN structure pointer [Storage Devices]
+ms.keywords : PRemovePersistentEntry_IN, PRemovePersistentEntry_IN structure pointer [Storage Devices], hbapiwmi/PRemovePersistentEntry_IN, RemovePersistentEntry_IN, storage.removepersistententry_in, RemovePersistentEntry_IN structure [Storage Devices], *PRemovePersistentEntry_IN, hbapiwmi/RemovePersistentEntry_IN, structs-Fibre_e5e794c3-e43c-4218-af52-3f2d8a96c256.xml, _RemovePersistentEntry_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RemovePersistentEntry_IN, *PRemovePersistentEntry_IN
+req.typenames : "*PRemovePersistentEntry_IN, RemovePersistentEntry_IN"
 ---
 
 # _RemovePersistentEntry_IN structure
@@ -66,9 +66,6 @@ The WMI tool suite generates a declaration of the RemovePersistentEntry_IN struc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

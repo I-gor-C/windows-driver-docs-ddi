@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 878c6565-99f9-4f45-abba-ba4ece5b5743
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kssetinformationfile, ks/KsSetInformationFile, ksfunc_338e56fe-b32d-4c9e-920f-9a5af1c5fdf3.xml, KsSetInformationFile function [Streaming Media Devices], KsSetInformationFile
+ms.keywords : ks/KsSetInformationFile, ksfunc_338e56fe-b32d-4c9e-920f-9a5af1c5fdf3.xml, KsSetInformationFile, KsSetInformationFile function [Streaming Media Devices], stream.kssetinformationfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,6 @@ The <b>KsSetInformationFile</b> function should be used only when the set would 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

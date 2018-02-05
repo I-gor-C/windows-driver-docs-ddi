@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : E602F16A-AFD8-4698-AC90-1686887FFEA6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensorsdef/ActivityState_Walking, sensorsdef/ACTIVITY_STATE, sensorsdef/ActivityState_Stationary, sensorsdef/ActivityState_Idle, sensorsdef/ActivityState_Force_Dword, ACTIVITY_STATE, ActivityState_Biking, sensorsdef/ActivityState_Fidgeting, ActivityState_InVehicle, sensorsdef/ActivityState_InVehicle, ACTIVITY_STATE enumeration [Sensor Devices], ActivityState_Idle, ActivityState_Max, ActivityState_Unknown, sensorsdef/ActivityState_Unknown, ActivityState_Running, sensors.activity_states, ActivityState_Force_Dword, ActivityState_Walking, sensorsdef/ActivityState_Biking, sensorsdef/ActivityState_Max, sensorsdef/ActivityState_Running, ActivityState_Fidgeting, ActivityState_Stationary
+ms.keywords : sensorsdef/ActivityState_Walking, sensorsdef/ActivityState_Running, sensorsdef/ActivityState_Idle, ActivityState_Fidgeting, sensors.activity_states, ActivityState_Stationary, ActivityState_Force_Dword, sensorsdef/ActivityState_Max, ActivityState_Idle, sensorsdef/ActivityState_Fidgeting, sensorsdef/ActivityState_InVehicle, sensorsdef/ActivityState_Force_Dword, sensorsdef/ACTIVITY_STATE, ActivityState_Running, ActivityState_Max, ActivityState_Biking, sensorsdef/ActivityState_Unknown, ActivityState_Unknown, ActivityState_Walking, ACTIVITY_STATE enumeration [Sensor Devices], ActivityState_InVehicle, ACTIVITY_STATE, sensorsdef/ActivityState_Stationary, sensorsdef/ActivityState_Biking
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -120,9 +120,6 @@ For more information about the sensor data fields that use this enumeration, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sensorsdef.h |
 
 ## See Also

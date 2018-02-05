@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4f10abc6-1c86-4401-9af7-26d6c30f6fe8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/CLS_SCAN_CONTEXT, PPCLFS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture], wdm/PCLS_SCAN_CONTEXT, kstruct_a_286b1bd0-bd24-472c-be28-406269b7a687.xml, PCLFS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kernel.clfs_scan_context, *PCLFS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture], wdm/CLFS_SCAN_CONTEXT, CLS_SCAN_CONTEXT structure [Kernel-Mode Driver Architecture], PCLFS_SCAN_CONTEXT, CLFS_SCAN_CONTEXT, wdm/PCLFS_SCAN_CONTEXT, wdm/PPCLFS_SCAN_CONTEXT, PPCLFS_SCAN_CONTEXT, PCLS_SCAN_CONTEXT, CLFS_SCAN_CONTEXT structure [Kernel-Mode Driver Architecture], wdm/PPCLS_SCAN_CONTEXT, _CLS_SCAN_CONTEXT, PCLS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture]
+ms.keywords : CLFS_SCAN_CONTEXT, PCLS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture], PCLFS_SCAN_CONTEXT, kernel.clfs_scan_context, wdm/CLS_SCAN_CONTEXT, wdm/PCLFS_SCAN_CONTEXT, CLFS_SCAN_CONTEXT structure [Kernel-Mode Driver Architecture], wdm/PCLS_SCAN_CONTEXT, *PCLFS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT, PCLFS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture], PPCLS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture], PPCLFS_SCAN_CONTEXT structure pointer [Kernel-Mode Driver Architecture], CLS_SCAN_CONTEXT structure [Kernel-Mode Driver Architecture], CLS_SCAN_CONTEXT, wdm/CLFS_SCAN_CONTEXT, kstruct_a_286b1bd0-bd24-472c-be28-406269b7a687.xml, PCLS_SCAN_CONTEXT, PPCLFS_SCAN_CONTEXT, wdm/PPCLS_SCAN_CONTEXT, _CLS_SCAN_CONTEXT, wdm/PPCLFS_SCAN_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PPCLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT
+req.typenames : "*PCLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -136,7 +136,4 @@ A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> struc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |

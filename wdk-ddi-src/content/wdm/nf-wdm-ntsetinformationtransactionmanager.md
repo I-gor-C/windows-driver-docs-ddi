@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a1e2f40f-5aea-4c8b-8692-95721ad4bc9d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/NtSetInformationTransactionManager, ntx_b4f057ac-bca8-44e6-874e-4f33bd487a20.xml, NtSetInformationTransactionManager, NtSetInformationTransactionManager routine [Kernel-Mode Driver Architecture], kernel.ntsetinformationtransactionmanager
+ms.keywords : NtSetInformationTransactionManager routine [Kernel-Mode Driver Architecture], ntx_b4f057ac-bca8-44e6-874e-4f33bd487a20.xml, kernel.ntsetinformationtransactionmanager, NtSetInformationTransactionManager, wdm/NtSetInformationTransactionManager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,10 @@ The driver must check the return value of the function.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

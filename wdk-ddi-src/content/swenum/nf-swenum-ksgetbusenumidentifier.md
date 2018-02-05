@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 50e14e01-5879-4a84-a8c2-f03c953dbeec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetBusEnumIdentifier function [Streaming Media Devices], ksfunc_c001aace-8c97-48cb-ae8b-9e7075d51960.xml, KsGetBusEnumIdentifier, swenum/KsGetBusEnumIdentifier, stream.ksgetbusenumidentifier
+ms.keywords : KsGetBusEnumIdentifier function [Streaming Media Devices], ksfunc_c001aace-8c97-48cb-ae8b-9e7075d51960.xml, swenum/KsGetBusEnumIdentifier, KsGetBusEnumIdentifier, stream.ksgetbusenumidentifier
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -107,11 +107,6 @@ No buffer was specified (the required buffer size is returned in the Irp).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | swenum.h (include Swenum.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0db68fcd-8661-41d2-ac95-e9b6033e6aa8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_crossbar_route_s, PKSPROPERTY_CROSSBAR_ROUTE_S structure pointer [Streaming Media Devices], PKSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S structure [Streaming Media Devices], vidcapstruct_a1d08316-6a91-4f40-93d2-b371c6e35eff.xml, ksmedia/PKSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/KSPROPERTY_CROSSBAR_ROUTE_S
+ms.keywords : stream.ksproperty_crossbar_route_s, KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/PKSPROPERTY_CROSSBAR_ROUTE_S, PKSPROPERTY_CROSSBAR_ROUTE_S structure pointer [Streaming Media Devices], PKSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/KSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S structure [Streaming Media Devices], vidcapstruct_a1d08316-6a91-4f40-93d2-b371c6e35eff.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S"
+req.typenames : KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S
 ---
 
 # KSPROPERTY_CROSSBAR_ROUTE_S structure
@@ -76,9 +76,6 @@ If the value of <b>IndexInputPin</b> is (-1) on an audio output pin, then the au
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

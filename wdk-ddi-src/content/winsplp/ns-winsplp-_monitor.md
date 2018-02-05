@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0b0dc06f-51c2-429f-a9bb-079f8a61411d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LPMONITOR, _MONITOR, winsplp/LPMONITOR, MONITOR, spoolfnc_c7b3aeed-d00f-4728-967d-bbe1a8512a42.xml, *LPMONITOR, winsplp/MONITOR, LPMONITOR structure pointer [Print Devices], MONITOR structure [Print Devices], print.monitor
+ms.keywords : "_MONITOR, winsplp/MONITOR, MONITOR structure [Print Devices], *LPMONITOR, print.monitor, MONITOR, winsplp/LPMONITOR, spoolfnc_c7b3aeed-d00f-4728-967d-bbe1a8512a42.xml, LPMONITOR structure pointer [Print Devices], LPMONITOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MONITOR, *LPMONITOR
+req.typenames : "*LPMONITOR, MONITOR"
 req.product : Windows 10 or later.
 ---
 
@@ -201,9 +201,6 @@ Pointer to the print monitor's <a href="..\winsplp\nf-winsplp-xcvopenport.md">Xc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also

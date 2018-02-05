@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 37dc9f4a-1e9c-42f2-8894-4972562f5898
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSPROPERTY_SELECTOR_NODE_S, PKSPROPERTY_SELECTOR_NODE_S structure pointer [Streaming Media Devices], *PKSPROPERTY_SELECTOR_NODE_S, KSPROPERTY_SELECTOR_NODE_S, KSPROPERTY_SELECTOR_NODE_S structure [Streaming Media Devices], PKSPROPERTY_SELECTOR_NODE_S, stream.ksproperty_selector_node_s, ksmedia/PKSPROPERTY_SELECTOR_NODE_S, vidcapstruct_f7f566f9-2eea-44f5-8a4b-33769d99576f.xml
+ms.keywords : ksmedia/KSPROPERTY_SELECTOR_NODE_S, ksmedia/PKSPROPERTY_SELECTOR_NODE_S, stream.ksproperty_selector_node_s, *PKSPROPERTY_SELECTOR_NODE_S, vidcapstruct_f7f566f9-2eea-44f5-8a4b-33769d99576f.xml, KSPROPERTY_SELECTOR_NODE_S, PKSPROPERTY_SELECTOR_NODE_S, PKSPROPERTY_SELECTOR_NODE_S structure pointer [Streaming Media Devices], KSPROPERTY_SELECTOR_NODE_S structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,6 @@ Specifies the value of a request. For Set requests, the minidriver should set th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

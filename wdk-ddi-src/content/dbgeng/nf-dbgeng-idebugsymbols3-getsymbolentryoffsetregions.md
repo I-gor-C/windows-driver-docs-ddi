@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 986774F6-5256-4703-990A-EAB4AB09AF55
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSymbolEntryOffsetRegions, debugger.idebugsymbols3_getsymbolentryoffsetregions, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryOffsetRegions method, IDebugSymbols3::GetSymbolEntryOffsetRegions, IDebugSymbols3, GetSymbolEntryOffsetRegions method [Windows Debugging], GetSymbolEntryOffsetRegions method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : GetSymbolEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSymbolEntryOffsetRegions, IDebugSymbols3::GetSymbolEntryOffsetRegions, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryOffsetRegions method, GetSymbolEntryOffsetRegions method [Windows Debugging], IDebugSymbols3 interface, debugger.idebugsymbols3_getsymbolentryoffsetregions, GetSymbolEntryOffsetRegions method [Windows Debugging], IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -93,20 +93,15 @@ The quality of information returned is highly
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/A39FF088-1AA3-4E2F-8EF6-AD7F79FBBC92">IDebugSymbols3::GetSourceEntryOffsetRegions</a>
-
 <a href="..\dbgeng\ns-dbgeng-_debug_module_and_id.md">DEBUG_MODULE_AND_ID</a>
+
+<a href="https://msdn.microsoft.com/A39FF088-1AA3-4E2F-8EF6-AD7F79FBBC92">IDebugSymbols3::GetSourceEntryOffsetRegions</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 

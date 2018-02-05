@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 96786C19-29C4-4030-9429-0B3CB7F3DF11
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExWaitForRundownProtectionRelease routine [Kernel-Mode Driver Architecture], wdm/ExWaitForRundownProtectionRelease, ExWaitForRundownProtectionRelease, kernel.exwaitforrundownprotectionrelease
+ms.keywords : wdm/ExWaitForRundownProtectionRelease, kernel.exwaitforrundownprotectionrelease, ExWaitForRundownProtectionRelease routine [Kernel-Mode Driver Architecture], ExWaitForRundownProtectionRelease
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,24 +77,23 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs, SpNoWait |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializerundownprotection.md">ExInitializeRundownProtection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj569379">EX_RUNDOWN_REF</a>
 
 <a href="..\wdm\nf-wdm-exacquirerundownprotection.md">ExAcquireRundownProtection</a>
 
 <a href="..\wdm\nf-wdm-exreleaserundownprotection.md">ExReleaseRundownProtection</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj569379">EX_RUNDOWN_REF</a>
+<a href="..\wdm\nf-wdm-exinitializerundownprotection.md">ExInitializeRundownProtection</a>
 
  
 

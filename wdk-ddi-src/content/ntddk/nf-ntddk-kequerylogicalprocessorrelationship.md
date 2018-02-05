@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 343d965d-3e85-423e-a46b-894b19d5df4e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryLogicalProcessorRelationship, KeQueryLogicalProcessorRelationship routine [Kernel-Mode Driver Architecture], k105_0db645b1-dfa2-4d90-856f-975997dc09a8.xml, kernel.kequerylogicalprocessorrelationship, wdm/KeQueryLogicalProcessorRelationship
+ms.keywords : kernel.kequerylogicalprocessorrelationship, KeQueryLogicalProcessorRelationship, k105_0db645b1-dfa2-4d90-856f-975997dc09a8.xml, wdm/KeQueryLogicalProcessorRelationship, KeQueryLogicalProcessorRelationship routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,14 +137,12 @@ To determine the buffer size to allocate, initially call <b>KeQueryLogicalProces
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Wdm.h, Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

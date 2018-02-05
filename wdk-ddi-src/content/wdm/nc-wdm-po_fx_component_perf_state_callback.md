@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -91,22 +91,18 @@ If <i>Succeeded</i> is TRUE, the driver should perform whatever work is necessar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechangemultiple.md">PoFxIssueComponentPerfStateChangeMultiple</a>
 
-<a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechange.md">PoFxIssueComponentPerfStateChange</a>
-
 <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+
+<a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechange.md">PoFxIssueComponentPerfStateChange</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 37e111be-5175-40d0-b862-0cc79d77d2bc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_ESCAPE structure [Display Devices], d3dumddi/D3DDDICB_ESCAPE, D3DDDICB_ESCAPE, _D3DDDICB_ESCAPE, display.d3dddicb_escape, D3D_param_Structs_3981c7f8-973d-42c4-abfa-29613731df50.xml
+ms.keywords : "_D3DDDICB_ESCAPE, d3dumddi/D3DDDICB_ESCAPE, D3DDDICB_ESCAPE structure [Display Devices], D3DDDICB_ESCAPE, display.d3dddicb_escape, D3D_param_Structs_3981c7f8-973d-42c4-abfa-29613731df50.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,20 +79,18 @@ typedef struct _D3DDDICB_ESCAPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
-
 <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_escapecb.md">pfnEscapeCb</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_escapecb.md">pfnEscapeCb</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
 
  
 

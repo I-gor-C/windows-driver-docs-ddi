@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d7160747-d81c-407a-bbf0-7ec5b3210c13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PRINTPROCESSOROPENDATA, LPPRINTPROCESSOROPENDATA, PPRINTPROCESSOROPENDATA structure pointer [Print Devices], PPRINTPROCESSOROPENDATA, LPPRINTPROCESSOROPENDATA structure pointer [Print Devices], winsplp/PPRINTPROCESSOROPENDATA, spoolfnc_d24c3eae-da3e-473a-bd25-5ec09d23fe89.xml, _PRINTPROCESSOROPENDATA, winsplp/LPPRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA structure [Print Devices], *PPRINTPROCESSOROPENDATA, print.printprocessoropendata, winsplp/PRINTPROCESSOROPENDATA
+ms.keywords : LPPRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA structure [Print Devices], winsplp/LPPRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA, spoolfnc_d24c3eae-da3e-473a-bd25-5ec09d23fe89.xml, _PRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA, PPRINTPROCESSOROPENDATA, PPRINTPROCESSOROPENDATA structure pointer [Print Devices], LPPRINTPROCESSOROPENDATA structure pointer [Print Devices], winsplp/PRINTPROCESSOROPENDATA, print.printprocessoropendata, *PPRINTPROCESSOROPENDATA, winsplp/PPRINTPROCESSOROPENDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA, *PPRINTPROCESSOROPENDATA
+req.typenames : "*PPRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA"
 req.product : Windows 10 or later.
 ---
 
@@ -90,9 +90,6 @@ Spooler-supplied pointer to a string representing the name of the printer to be 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also

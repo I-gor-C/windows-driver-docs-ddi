@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : PDEBUG_CREATE_PROCESS_OPTIONS structure pointer [Windows Debugging], Structures_2dc7014a-a1c3-4d31-b754-834f5d06c482.xml, DEBUG_CREATE_PROCESS_OPTIONS, debugger.debug_create_process_options, dbgeng/DEBUG_CREATE_PROCESS_OPTIONS, PDEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS structure [Windows Debugging], _DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS, dbgeng/PDEBUG_CREATE_PROCESS_OPTIONS
+ms.keywords : DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS, debugger.debug_create_process_options, DEBUG_CREATE_PROCESS_OPTIONS structure [Windows Debugging], _DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/PDEBUG_CREATE_PROCESS_OPTIONS, PDEBUG_CREATE_PROCESS_OPTIONS, Structures_2dc7014a-a1c3-4d31-b754-834f5d06c482.xml, PDEBUG_CREATE_PROCESS_OPTIONS structure pointer [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS"
+req.typenames : DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
 ---
 
 # _DEBUG_CREATE_PROCESS_OPTIONS structure
@@ -138,7 +138,4 @@ The Application Verifier flags.  Only used if DEBUG_ECREATE_PROCESS_USE_VERIFIER
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dbgeng.h (include DbgEng.h) |

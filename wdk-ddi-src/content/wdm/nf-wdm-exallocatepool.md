@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b5b88a14-3d60-45bf-8340-b78175a55e01
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k102_02ff5510-3d96-4a15-a0da-5da56e14b1b8.xml, ExAllocatePool, kernel.exallocatepool, ExAllocatePool routine [Kernel-Mode Driver Architecture], wdm/ExAllocatePool
+ms.keywords : wdm/ExAllocatePool, k102_02ff5510-3d96-4a15-a0da-5da56e14b1b8.xml, kernel.exallocatepool, ExAllocatePool routine [Kernel-Mode Driver Architecture], ExAllocatePool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,12 +88,11 @@ Callers of <b>ExAllocatePool</b> must be executing at IRQL &lt;= DISPATCH_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Obsolete. This routine is exported only for existing binaries. Use ExAllocatePoolWithTag instead. Obsolete. This routine is exported only for existing binaries. Use ExAllocatePoolWithTag instead. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 
@@ -101,9 +100,9 @@ Callers of <b>ExAllocatePool</b> must be executing at IRQL &lt;= DISPATCH_LEVEL.
 
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
  
 

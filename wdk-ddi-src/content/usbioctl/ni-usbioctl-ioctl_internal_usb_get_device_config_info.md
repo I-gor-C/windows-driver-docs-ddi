@@ -76,15 +76,14 @@ Upon successful completion, the HardwareIds, CompatibleIds, DeviceDescription <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows Vista and later operating systems. Windows Vista and later operating systems. |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a>
-
 <a href="..\usbioctl\ns-usbioctl-_hub_device_config_info_v1.md">HUB_DEVICE_CONFIG_INFO</a>
+
+<a href="..\usbioctl\ns-usbioctl-_usb_id_string.md">USB_ID_STRING</a>
 
  
 

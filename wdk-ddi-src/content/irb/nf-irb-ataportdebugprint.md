@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2a93d30f-4aa0-46b9-b9c7-cc15c62f3053
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortDebugPrint routine [Storage Devices], irb/AtaPortDebugPrint, storage.ataportdebugprint, AtaPortDebugPrint, atartns_57e04fb5-19ac-42fc-9bc5-32645ef61320.xml
+ms.keywords : AtaPortDebugPrint routine [Storage Devices], irb/AtaPortDebugPrint, atartns_57e04fb5-19ac-42fc-9bc5-32645ef61320.xml, storage.ataportdebugprint, AtaPortDebugPrint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,7 +62,7 @@ Determines how much debug information to display.
 
 A pointer to the debug message to display.
 
-``
+`Arg1`
 
 
 
@@ -78,11 +78,6 @@ The verbosity of debug output is determined by <i>DebugPrintLevel</i> and a port
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |

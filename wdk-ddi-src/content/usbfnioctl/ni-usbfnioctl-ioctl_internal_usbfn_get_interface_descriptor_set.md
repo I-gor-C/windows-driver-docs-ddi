@@ -77,9 +77,7 @@ If the length of the entire descriptor set is greater than the  specified output
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h |
-| **IRQL** |  |
 
 ## See Also
 

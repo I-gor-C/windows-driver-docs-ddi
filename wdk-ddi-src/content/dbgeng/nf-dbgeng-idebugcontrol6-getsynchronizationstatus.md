@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 94DD7FBF-2D4F-4DD9-A49E-A9FA494BF995
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSynchronizationStatus method [Windows Debugging], IDebugControl6 interface [Windows Debugging], GetSynchronizationStatus method, GetSynchronizationStatus, IDebugControl6, IDebugControl6::GetSynchronizationStatus, GetSynchronizationStatus method [Windows Debugging], IDebugControl6 interface, debugger.idebugcontrol6_getsynchronizationstatus, dbgeng/IDebugControl6::GetSynchronizationStatus
+ms.keywords : GetSynchronizationStatus method [Windows Debugging], debugger.idebugcontrol6_getsynchronizationstatus, dbgeng/IDebugControl6::GetSynchronizationStatus, IDebugControl6::GetSynchronizationStatus, GetSynchronizationStatus, IDebugControl6 interface [Windows Debugging], GetSynchronizationStatus method, GetSynchronizationStatus method [Windows Debugging], IDebugControl6 interface, IDebugControl6
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,20 +90,15 @@ When the client object connects to a session, the most recent output from the se
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558852">Synchronizing with the Target Computer</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol6.md">IDebugControl6</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558852">Synchronizing with the Target Computer</a>
 
  
 

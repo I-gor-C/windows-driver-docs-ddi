@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5b8ba64e-3147-45b4-9861-da2186c2ba10
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : SeFreePrivileges routine [Kernel-Mode Driver Architecture], seref_e40724d7-f170-4dbd-89a6-2cdcdd13e87d.xml, ntifs/SeFreePrivileges, kernel.sefreeprivileges, SeFreePrivileges
+ms.keywords : SeFreePrivileges, SeFreePrivileges routine [Kernel-Mode Driver Architecture], seref_e40724d7-f170-4dbd-89a6-2cdcdd13e87d.xml, kernel.sefreeprivileges, ntifs/SeFreePrivileges
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,11 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

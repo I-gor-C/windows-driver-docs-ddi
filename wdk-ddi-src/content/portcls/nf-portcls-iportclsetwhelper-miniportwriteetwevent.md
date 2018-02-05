@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7E0C1140-35AA-424F-8229-21B4F4E1EBDF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : MiniportWriteEtwEvent method [Audio Devices], audio.iportclsetwhelper_miniportwriteetwevent, IPortClsEtwHelper::MiniportWriteEtwEvent, MiniportWriteEtwEvent, portcls/IPortClsEtwHelper::MiniportWriteEtwEvent, MiniportWriteEtwEvent method [Audio Devices], IPortClsEtwHelper interface, IPortClsEtwHelper interface [Audio Devices], MiniportWriteEtwEvent method, IPortClsEtwHelper
+ms.keywords : IPortClsEtwHelper::MiniportWriteEtwEvent, audio.iportclsetwhelper_miniportwriteetwevent, MiniportWriteEtwEvent method [Audio Devices], portcls/IPortClsEtwHelper::MiniportWriteEtwEvent, MiniportWriteEtwEvent, MiniportWriteEtwEvent method [Audio Devices], IPortClsEtwHelper interface, IPortClsEtwHelper interface [Audio Devices], MiniportWriteEtwEvent method, IPortClsEtwHelper
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -85,20 +85,16 @@ Data parameter.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportclsetwhelper.md">IPortClsEtwHelper</a>
-
 <a href="..\portcls\ne-portcls-epcminiportengineevent.md">EPcMiniportEngineEvent</a>
+
+<a href="..\portcls\nn-portcls-iportclsetwhelper.md">IPortClsEtwHelper</a>
 
  
 

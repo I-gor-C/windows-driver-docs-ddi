@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c22035a2-8ceb-42e9-9d54-8997ce0dd8da
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICECREATESYMBOLICLINK, DFDeviceObjectGeneralRef_f970bbdf-21d6-497c-abc1-84456c95dc79.xml, WdfDeviceCreateSymbolicLink method, wdf.wdfdevicecreatesymboliclink, WdfDeviceCreateSymbolicLink, kmdf.wdfdevicecreatesymboliclink, wdfdevice/WdfDeviceCreateSymbolicLink
+ms.keywords : WdfDeviceCreateSymbolicLink method, wdfdevice/WdfDeviceCreateSymbolicLink, kmdf.wdfdevicecreatesymboliclink, WdfDeviceCreateSymbolicLink, DFDeviceObjectGeneralRef_f970bbdf-21d6-497c-abc1-84456c95dc79.xml, wdf.wdfdevicecreatesymboliclink, PFN_WDFDEVICECREATESYMBOLICLINK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,12 +99,11 @@ If the device is removed unexpectedly (surprise-removed), the framework removes 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 08cd5b10-725e-4a36-b70d-42a831b79372
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PDMA_ADAPTER, *PADAPTER_OBJECT, PDMA_ADAPTER structure pointer [Kernel-Mode Driver Architecture], kstruct_a_030ef4da-75e2-4427-baf6-cb9a5eb194cf.xml, PDMA_ADAPTER, DMA_ADAPTER, DMA_ADAPTER structure [Kernel-Mode Driver Architecture], kernel.dma_adapter, _DMA_ADAPTER, wdm/PDMA_ADAPTER, wdm/DMA_ADAPTER"
+ms.keywords : wdm/DMA_ADAPTER, PDMA_ADAPTER, kernel.dma_adapter, DMA_ADAPTER, *PADAPTER_OBJECT, PDMA_ADAPTER structure pointer [Kernel-Mode Driver Architecture], DMA_ADAPTER structure [Kernel-Mode Driver Architecture], wdm/PDMA_ADAPTER, *PDMA_ADAPTER, _DMA_ADAPTER, kstruct_a_030ef4da-75e2-4427-baf6-cb9a5eb194cf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,18 +61,15 @@ Drivers for devices that use DMA to transfer data use this structure to obtain t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 
 <a href="..\wdm\ns-wdm-_bus_interface_standard.md">BUS_INTERFACE_STANDARD</a>
+
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 
  
 

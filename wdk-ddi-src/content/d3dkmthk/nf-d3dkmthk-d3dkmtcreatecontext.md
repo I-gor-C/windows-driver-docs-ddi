@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e30fd034-1268-45bf-bc9c-df33e642fd4e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateContext, OpenGL_Functions_ee92f6d8-b9af-4171-a628-e686f190a370.xml, PFND3DKMT_CREATECONTEXT, d3dkmthk/D3DKMTCreateContext, D3DKMTCreateContext function [Display Devices], display.d3dkmtcreatecontext
+ms.keywords : PFND3DKMT_CREATECONTEXT, D3DKMTCreateContext, display.d3dkmtcreatecontext, d3dkmthk/D3DKMTCreateContext, D3DKMTCreateContext function [Display Devices], OpenGL_Functions_ee92f6d8-b9af-4171-a628-e686f190a370.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,14 +115,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9e1f6a57-bc48-41c6-815c-6a44e8d01699
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetProcessId, kernel.psgetprocessid, PsGetProcessId routine [Kernel-Mode Driver Architecture], k108_b0733011-4102-4e10-83e3-e7e9d7172d08.xml, ntddk/PsGetProcessId
+ms.keywords : ntddk/PsGetProcessId, PsGetProcessId, PsGetProcessId routine [Kernel-Mode Driver Architecture], k108_b0733011-4102-4e10-83e3-e7e9d7172d08.xml, kernel.psgetprocessid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ The EPROCESS-typed process object structure is an opaque data structure that the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

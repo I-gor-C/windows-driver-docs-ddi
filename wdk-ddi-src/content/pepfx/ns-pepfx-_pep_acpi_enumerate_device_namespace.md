@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 61315EFB-DEA7-4CF2-97D3-EACD223AFB50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure [Kernel-Mode Driver Architecture], _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, pepfx/PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, pepfx/PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure pointer [Kernel-Mode Driver Architecture], PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, kernel.pep_acpi_enumerate_device_namespace, *PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE
+ms.keywords : "*PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, pepfx/PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, kernel.pep_acpi_enumerate_device_namespace, _PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PPEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE, PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE structure [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,9 +89,7 @@ If N is the number of objects listed in the ACPI namespace under this device, th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

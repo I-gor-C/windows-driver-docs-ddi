@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FA6EA2BA-938C-4377-A85A-2168C4C1F3C6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_SUBMITCOMMAND, display.d3dkmt_submitcommand, d3dkmthk/D3DKMT_SUBMITCOMMAND, D3DKMT_SUBMITCOMMAND, D3DKMT_SUBMITCOMMAND structure [Display Devices]"
+ms.keywords : display.d3dkmt_submitcommand, _D3DKMT_SUBMITCOMMAND, D3DKMT_SUBMITCOMMAND structure [Display Devices], d3dkmthk/D3DKMT_SUBMITCOMMAND, D3DKMT_SUBMITCOMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -114,9 +114,7 @@ Arrays of handle to the primaries and swapchain back buffers being written to by
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

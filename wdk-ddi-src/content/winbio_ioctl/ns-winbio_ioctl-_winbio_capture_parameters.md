@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : 60f35000-c62d-4d1b-8592-862c2d74b7a2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : winbio_ioctl/WINBIO_CAPTURE_PARAMETERS, PWINBIO_CAPTURE_PARAMETERS structure pointer [Biometric Devices], biometric_ref_fbd581b2-ced0-4c0d-b76c-be5a469252fd.xml, *PWINBIO_CAPTURE_PARAMETERS, winbio_ioctl/PWINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS, _WINBIO_CAPTURE_PARAMETERS, PWINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS structure [Biometric Devices], biometric.winbio_capture_parameters
+ms.keywords : biometric.winbio_capture_parameters, winbio_ioctl/WINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS structure [Biometric Devices], PWINBIO_CAPTURE_PARAMETERS, winbio_ioctl/PWINBIO_CAPTURE_PARAMETERS, biometric_ref_fbd581b2-ced0-4c0d-b76c-be5a469252fd.xml, *PWINBIO_CAPTURE_PARAMETERS, _WINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS, PWINBIO_CAPTURE_PARAMETERS structure pointer [Biometric Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS"
+req.typenames : WINBIO_CAPTURE_PARAMETERS, *PWINBIO_CAPTURE_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -118,9 +118,7 @@ An optional WINBIO_UUID vendor GUID.  This indicates the preferred format of the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |
 
 ## See Also

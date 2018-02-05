@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : afc72cdf-ea29-4e78-95a0-fc621e3290a7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltfscontrolfile, FltFsControlFile routine [Installable File System Drivers], fltkernel/FltFsControlFile, FltApiRef_e_to_o_3cad833f-9ece-410a-896d-1b3fe897c251.xml, FltFsControlFile
+ms.keywords : fltkernel/FltFsControlFile, FltApiRef_e_to_o_3cad833f-9ece-410a-896d-1b3fe897c251.xml, FltFsControlFile routine [Installable File System Drivers], FltFsControlFile, ifsk.fltfscontrolfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -151,20 +151,17 @@ For more information about the system-defined FSCTL_<i>XXX</i> codes, see the Re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdeviceiocontrolfile.md">FltDeviceIoControlFile</a>
-
 <a href="..\ntifs\nf-ntifs-zwfscontrolfile.md">ZwFsControlFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeviceiocontrolfile.md">FltDeviceIoControlFile</a>
 
  
 

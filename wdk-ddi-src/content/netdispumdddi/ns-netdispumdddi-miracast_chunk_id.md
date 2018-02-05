@@ -63,7 +63,4 @@ Holds a 64-bit value that identifies the encode chunk.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |

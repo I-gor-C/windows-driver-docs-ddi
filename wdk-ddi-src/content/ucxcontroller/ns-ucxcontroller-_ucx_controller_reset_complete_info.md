@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 72935645-0567-4FC9-962C-3E823C08D001
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PUCX_CONTROLLER_RESET_COMPLETE_INFO, _UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO structure [Buses], ucxcontroller/P_UCX_CONTROLLER_RESET_COMPLETE_INFO, P_UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO, ucxcontroller/_UCX_CONTROLLER_RESET_COMPLETE_INFO, buses._ucx_controller_reset_complete_info, P_UCX_CONTROLLER_RESET_COMPLETE_INFO structure pointer [Buses]"
+ms.keywords : buses._ucx_controller_reset_complete_info, UCX_CONTROLLER_RESET_COMPLETE_INFO, ucxcontroller/_UCX_CONTROLLER_RESET_COMPLETE_INFO, P_UCX_CONTROLLER_RESET_COMPLETE_INFO structure pointer [Buses], P_UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO structure [Buses], ucxcontroller/P_UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO, _UCX_CONTROLLER_RESET_COMPLETE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCX_CONTROLLER_RESET_COMPLETE_INFO, *PUCX_CONTROLLER_RESET_COMPLETE_INFO
+req.typenames : "*PUCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -72,7 +72,4 @@ This structure is populated by a call to <a href="..\ucxcontroller\nf-ucxcontrol
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |

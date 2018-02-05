@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f77a2701-bde2-42c2-8393-88a7e4576f1b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/WdmlibIoConnectInterruptEx, IoConnectInterruptEx routine [Kernel-Mode Driver Architecture], IoConnectInterruptEx, k104_17833453-ee13-4346-9c58-a1c47dccf636.xml, kernel.ioconnectinterruptex, WdmlibIoConnectInterruptEx, wdm/IoConnectInterruptEx
+ms.keywords : wdm/IoConnectInterruptEx, WdmlibIoConnectInterruptEx, kernel.ioconnectinterruptex, IoConnectInterruptEx, wdm/WdmlibIoConnectInterruptEx, k104_17833453-ee13-4346-9c58-a1c47dccf636.xml, IoConnectInterruptEx routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,12 +68,11 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibioconnectinte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Windows Vista and later versions of the Windows operating system. Drivers that must also work on Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine. Available on Windows Vista and later versions of the Windows operating system. Drivers that must also work on Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 

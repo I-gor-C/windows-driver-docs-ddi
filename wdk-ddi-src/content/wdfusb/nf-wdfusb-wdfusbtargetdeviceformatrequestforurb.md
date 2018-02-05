@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 886120f0-da2a-4a00-b440-ce1274c516d4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceFormatRequestForUrb method, kmdf.wdfusbtargetdeviceformatrequestforurb, wdfusb/WdfUsbTargetDeviceFormatRequestForUrb, PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORURB, WdfUsbTargetDeviceFormatRequestForUrb, DFUsbRef_c7b76463-570c-4f0d-b4d5-37ef192ba30f.xml, wdf.wdfusbtargetdeviceformatrequestforurb
+ms.keywords : WdfUsbTargetDeviceFormatRequestForUrb, WdfUsbTargetDeviceFormatRequestForUrb method, DFUsbRef_c7b76463-570c-4f0d-b4d5-37ef192ba30f.xml, wdf.wdfusbtargetdeviceformatrequestforurb, kmdf.wdfusbtargetdeviceformatrequestforurb, wdfusb/WdfUsbTargetDeviceFormatRequestForUrb, PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORURB
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,28 +145,26 @@ For more information about the <b>WdfUsbTargetDeviceFormatRequestForUrb</b> meth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
+
+<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendurbsynchronously.md">WdfUsbTargetDeviceSendUrbSynchronously</a>
+
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendurbsynchronously.md">WdfUsbTargetDeviceSendUrbSynchronously</a>
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
  
 

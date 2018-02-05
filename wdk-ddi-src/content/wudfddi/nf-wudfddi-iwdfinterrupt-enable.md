@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 605C58C2-9A4F-4185-BB5C-95C9F5180C05
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : Enable method, IWDFInterrupt interface, IWDFInterrupt::Enable, Enable, umdf.iwdfinterrupt_enable, IWDFInterrupt, Enable method, wdf.iwdfinterrupt_enable, wudfddi/IWDFInterrupt::Enable, IWDFInterrupt interface, Enable method
+ms.keywords : Enable method, wudfddi/IWDFInterrupt::Enable, wdf.iwdfinterrupt_enable, IWDFInterrupt::Enable, Enable method, IWDFInterrupt interface, IWDFInterrupt interface, Enable method, umdf.iwdfinterrupt_enable, IWDFInterrupt, Enable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -70,20 +70,18 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/D87C868D-9538-4752-AEBD-2A15E53628CF">IWDFInterrupt::Disable</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+
+<a href="https://msdn.microsoft.com/D87C868D-9538-4752-AEBD-2A15E53628CF">IWDFInterrupt::Disable</a>
 
  
 

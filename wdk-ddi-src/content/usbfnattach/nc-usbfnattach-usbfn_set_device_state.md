@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY"
+req.typenames : USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -84,14 +84,11 @@ The lower filter driver might implement  a <i>USBFN_SET_DEVICE_STATE</i> even ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | usbfnattach.h |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 04F6A7B1-1198-4E5F-B6A8-70EEABE7CE83
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PFILE_NETWORK_PHYSICAL_NAME_INFORMATION, ntifs/FILE_NETWORK_PHYSICAL_NAME_INFORMATION, ifsk.file_network_physical_name_information, PFILE_NETWORK_PHYSICAL_NAME_INFORMATION, *PFILE_NETWORK_PHYSICAL_NAME_INFORMATION, _FILE_NETWORK_PHYSICAL_NAME_INFORMATION, FILE_NETWORK_PHYSICAL_NAME_INFORMATION, FILE_NETWORK_PHYSICAL_NAME_INFORMATION structure [Installable File System Drivers], PFILE_NETWORK_PHYSICAL_NAME_INFORMATION structure pointer [Installable File System Drivers]
+ms.keywords : "_FILE_NETWORK_PHYSICAL_NAME_INFORMATION, ifsk.file_network_physical_name_information, PFILE_NETWORK_PHYSICAL_NAME_INFORMATION structure pointer [Installable File System Drivers], *PFILE_NETWORK_PHYSICAL_NAME_INFORMATION, ntifs/FILE_NETWORK_PHYSICAL_NAME_INFORMATION, FILE_NETWORK_PHYSICAL_NAME_INFORMATION, ntifs/PFILE_NETWORK_PHYSICAL_NAME_INFORMATION, FILE_NETWORK_PHYSICAL_NAME_INFORMATION structure [Installable File System Drivers], PFILE_NETWORK_PHYSICAL_NAME_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_NETWORK_PHYSICAL_NAME_INFORMATION, FILE_NETWORK_PHYSICAL_NAME_INFORMATION"
+req.typenames : FILE_NETWORK_PHYSICAL_NAME_INFORMATION, *PFILE_NETWORK_PHYSICAL_NAME_INFORMATION
 ---
 
 # _FILE_NETWORK_PHYSICAL_NAME_INFORMATION structure
@@ -160,18 +160,15 @@ If the physical name is longer than the length set in <b>FileNameLength</b>, the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
+
 <a href="..\wdm\ne-wdm-_file_information_class.md">FILE_INFORMATION_CLASS</a>
 
 <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 14ed4180-9ac1-46dd-af76-8d79a2a1fd2d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.ipparams, print_unidrv-pscript_rendering_a002bc49-f3de-4147-bb33-8766672c8d0c.xml, IPPARAMS structure [Print Devices], IPPARAMS, printoem/PIPPARAMS, printoem/IPPARAMS, PIPPARAMS structure pointer [Print Devices], PIPPARAMS, *PIPPARAMS
+ms.keywords : printoem/PIPPARAMS, PIPPARAMS, print_unidrv-pscript_rendering_a002bc49-f3de-4147-bb33-8766672c8d0c.xml, IPPARAMS, print.ipparams, PIPPARAMS structure pointer [Print Devices], IPPARAMS structure [Print Devices], *PIPPARAMS, printoem/IPPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : IPPARAMS, *PIPPARAMS
+req.typenames : "*PIPPARAMS, IPPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -80,9 +80,6 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5691
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

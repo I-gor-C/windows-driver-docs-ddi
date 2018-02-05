@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 72c6e923-e7c0-4d3d-a115-33e3e11053eb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortAcquireSpinLockAtDpcLevel, video/VideoPortAcquireSpinLockAtDpcLevel, VideoPortAcquireSpinLockAtDpcLevel function [Display Devices], display.videoportacquirespinlockatdpclevel, VideoPort_Functions_fc52bdfd-6f1a-4f5c-93e6-321d2488bcd5.xml
+ms.keywords : VideoPortAcquireSpinLockAtDpcLevel function [Display Devices], video/VideoPortAcquireSpinLockAtDpcLevel, display.videoportacquirespinlockatdpclevel, VideoPort_Functions_fc52bdfd-6f1a-4f5c-93e6-321d2488bcd5.xml, VideoPortAcquireSpinLockAtDpcLevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -58,7 +58,7 @@ VOID VideoPortAcquireSpinLockAtDpcLevel(
 
 Pointer to the miniport driver's device extension.
 
-``
+`Arg1`
 
 
 
@@ -78,14 +78,12 @@ The caller should release the spin lock with <a href="..\video\nf-video-videopor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | DISPATCH_LEVEL (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

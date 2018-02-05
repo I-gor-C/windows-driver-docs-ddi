@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c60f3dd5-2a74-4d7c-8804-35b9dd91dce4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, wdf.wdfrequestsetcompletionroutine, PFN_WDFREQUESTSETCOMPLETIONROUTINE, WdfRequestSetCompletionRoutine method, WdfRequestSetCompletionRoutine, kmdf.wdfrequestsetcompletionroutine, wdfrequest/WdfRequestSetCompletionRoutine
+ms.keywords : kmdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine method, DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, wdf.wdfrequestsetcompletionroutine, WdfRequestSetCompletionRoutine, wdfrequest/WdfRequestSetCompletionRoutine, PFN_WDFREQUESTSETCOMPLETIONROUTINE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,12 +85,11 @@ For more information about <b>WdfRequestSetCompletionRoutine</b>, see <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, ReqCompletionRoutine |
 

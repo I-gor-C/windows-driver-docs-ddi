@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ed16588e-1c63-411d-b5c8-a8151a218328
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSCLOCK_FUNCTIONTABLE, KSCLOCK_FUNCTIONTABLE structure [Streaming Media Devices], ks/KSCLOCK_FUNCTIONTABLE, ks-struct_b86dda38-016f-4116-9770-5b447c664b2e.xml, ks/PKSCLOCK_FUNCTIONTABLE, stream.ksclock_functiontable, PKSCLOCK_FUNCTIONTABLE, *PKSCLOCK_FUNCTIONTABLE, PKSCLOCK_FUNCTIONTABLE structure pointer [Streaming Media Devices]
+ms.keywords : ks/PKSCLOCK_FUNCTIONTABLE, PKSCLOCK_FUNCTIONTABLE, KSCLOCK_FUNCTIONTABLE structure [Streaming Media Devices], PKSCLOCK_FUNCTIONTABLE structure pointer [Streaming Media Devices], ks-struct_b86dda38-016f-4116-9770-5b447c664b2e.xml, stream.ksclock_functiontable, KSCLOCK_FUNCTIONTABLE, ks/KSCLOCK_FUNCTIONTABLE, *PKSCLOCK_FUNCTIONTABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSCLOCK_FUNCTIONTABLE, *PKSCLOCK_FUNCTIONTABLE
+req.typenames : "*PKSCLOCK_FUNCTIONTABLE, KSCLOCK_FUNCTIONTABLE"
 ---
 
 # KSCLOCK_FUNCTIONTABLE structure
@@ -78,9 +78,6 @@ The function pointers returned in this structure are valid until the clock's fil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

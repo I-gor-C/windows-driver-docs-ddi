@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dd3a5f87-21a9-4186-bb74-a49e6751622e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/RtlMapGenericMask, RtlMapGenericMask routine [Kernel-Mode Driver Architecture], k109_f0e498a8-0b75-4fb8-a9c6-3f1ce3eb71f3.xml, RtlMapGenericMask, kernel.rtlmapgenericmask
+ms.keywords : ntddk/RtlMapGenericMask, kernel.rtlmapgenericmask, RtlMapGenericMask routine [Kernel-Mode Driver Architecture], k109_f0e498a8-0b75-4fb8-a9c6-3f1ce3eb71f3.xml, RtlMapGenericMask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

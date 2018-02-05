@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : AF14B883-780E-42BE-9D8F-75C17011425B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_NDK_LOCAL_ENDPOINTS structure [Network Drivers Starting with Windows Vista], netvista.ndis_ndk_local_endpoints, NDIS_NDK_LOCAL_ENDPOINTS, PNDIS_NDK_LOCAL_ENDPOINTS, _NDIS_NDK_LOCAL_ENDPOINTS, ntddndis/NDIS_NDK_LOCAL_ENDPOINTS, ntddndis/PNDIS_NDK_LOCAL_ENDPOINTS, PNDIS_NDK_LOCAL_ENDPOINTS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : ntddndis/PNDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS structure [Network Drivers Starting with Windows Vista], _NDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS, netvista.ndis_ndk_local_endpoints, PNDIS_NDK_LOCAL_ENDPOINTS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NDK_LOCAL_ENDPOINTS, ntddndis/NDIS_NDK_LOCAL_ENDPOINTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,20 +100,18 @@ If the RDMA technology for the NDK provider requires the provider to map ND loca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_local_endpoint_entry.md">NDIS_NDK_LOCAL_ENDPOINT_ENTRY</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451811">OID_NDK_LOCAL_ENDPOINTS</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451811">OID_NDK_LOCAL_ENDPOINTS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : eec0c985-fb59-4190-afb8-5eb62ac1edea
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetGroupAffinity routine [Storage Devices], storprt_9fdfdc84-3e8f-4227-9799-4ccf08f802df.xml, StorPortGetGroupAffinity, storage.storportgetgroupaffinity, storport/StorPortGetGroupAffinity
+ms.keywords : storport/StorPortGetGroupAffinity, storprt_9fdfdc84-3e8f-4227-9799-4ccf08f802df.xml, storage.storportgetgroupaffinity, StorPortGetGroupAffinity, StorPortGetGroupAffinity routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,11 +126,9 @@ The operation fails with this return value if one or more of the parameters are 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

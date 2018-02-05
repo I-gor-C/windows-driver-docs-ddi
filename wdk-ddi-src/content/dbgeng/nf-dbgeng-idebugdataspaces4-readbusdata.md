@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5790b133-dbdc-4f77-a70e-616b0902794e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ReadBusData method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces4::ReadBusData, dbgeng/IDebugDataSpaces4::ReadBusData, ReadBusData, IDebugDataSpaces3 interface [Windows Debugging], ReadBusData method, IDebugDataSpaces4 interface [Windows Debugging], ReadBusData method, ReadBusData method [Windows Debugging], dbgeng/IDebugDataSpaces2::ReadBusData, IDebugDataSpaces::ReadBusData, IDebugDataSpaces interface [Windows Debugging], ReadBusData method, debugger.readbusdata, IDebugDataSpaces2 interface [Windows Debugging], ReadBusData method, ReadBusData method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces3::ReadBusData, IDebugDataSpaces3::ReadBusData, IDebugDataSpaces4, ReadBusData method [Windows Debugging], IDebugDataSpaces2 interface, ReadBusData method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces::ReadBusData, IDebugDataSpaces2::ReadBusData, IDebugDataSpaces_59d5bf3f-7eb5-452c-ace2-4aed701d34a6.xml
+ms.keywords : dbgeng/IDebugDataSpaces::ReadBusData, ReadBusData method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], ReadBusData method, IDebugDataSpaces3::ReadBusData, dbgeng/IDebugDataSpaces4::ReadBusData, IDebugDataSpaces::ReadBusData, ReadBusData, IDebugDataSpaces2::ReadBusData, dbgeng/IDebugDataSpaces2::ReadBusData, IDebugDataSpaces_59d5bf3f-7eb5-452c-ace2-4aed701d34a6.xml, ReadBusData method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces3::ReadBusData, ReadBusData method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces2 interface [Windows Debugging], ReadBusData method, IDebugDataSpaces4::ReadBusData, IDebugDataSpaces4, IDebugDataSpaces interface [Windows Debugging], ReadBusData method, ReadBusData method [Windows Debugging], IDebugDataSpaces3 interface, debugger.readbusdata, ReadBusData method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadBusData method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -118,11 +118,6 @@ The nature of the data read from the bus is system, bus, and slot dependent.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

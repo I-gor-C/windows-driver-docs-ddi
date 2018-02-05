@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 63A3C2AA-6EBF-469D-933A-C51F5EC31C47
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_UICCSLOT_STATE enumeration [Network Drivers Starting with Windows Vista], UICCSlotStateEmpty, UICCSlotStateError, UICCSlotStateOff, UICCSlotStateNotReady, wwan/UICCSlotStateUnknown, wwan/UICCSlotStateOffEmpty, wwan/UICCSlotStateError, wwan/WWAN_UICCSLOT_STATE, UICCSlotStateUnknown, UICCSlotStateActive, netvista.wwan_uiccslot_state, wwan/UICCSlotStateOff, WWAN_UICCSLOT_STATE, wwan/UICCSlotStateNotReady, wwan/UICCSlotStateActive, UICCSlotStateOffEmpty, _WWAN_UICCSLOT_STATE, *PWWAN_UICCSLOT_STATE, wwan/UICCSlotStateEmpty
+ms.keywords : wwan/UICCSlotStateEmpty, wwan/WWAN_UICCSLOT_STATE, WWAN_UICCSLOT_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/UICCSlotStateUnknown, wwan/UICCSlotStateActive, wwan/UICCSlotStateOffEmpty, UICCSlotStateError, *PWWAN_UICCSLOT_STATE, UICCSlotStateOff, UICCSlotStateNotReady, netvista.wwan_uiccslot_state, _WWAN_UICCSLOT_STATE, wwan/UICCSlotStateNotReady, WWAN_UICCSLOT_STATE, wwan/UICCSlotStateOff, UICCSlotStateUnknown, UICCSlotStateEmpty, wwan/UICCSlotStateError, UICCSlotStateActive, UICCSlotStateOffEmpty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_UICCSLOT_STATE, *PWWAN_UICCSLOT_STATE
+req.typenames : "*PWWAN_UICCSLOT_STATE, WWAN_UICCSLOT_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -117,9 +117,7 @@ The set of reported states is constrained by the capability of the slot hardware
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

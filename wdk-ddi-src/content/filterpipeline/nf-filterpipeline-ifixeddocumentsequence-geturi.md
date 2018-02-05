@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 45017249-2ea5-43f6-9712-787f52cb6e4b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : filterpipeline/IFixedDocumentSequence::GetUri, filterpipeline_6d286919-21a8-40e8-8c6b-dd035ffe0ae1.xml, print.ifixeddocumentsequence_geturi, IFixedDocumentSequence interface [Print Devices], GetUri method, IFixedDocumentSequence, GetUri, GetUri method [Print Devices], IFixedDocumentSequence interface, GetUri method [Print Devices], IFixedDocumentSequence::GetUri
+ms.keywords : IFixedDocumentSequence interface [Print Devices], GetUri method, filterpipeline/IFixedDocumentSequence::GetUri, IFixedDocumentSequence::GetUri, IFixedDocumentSequence, GetUri, filterpipeline_6d286919-21a8-40e8-8c6b-dd035ffe0ae1.xml, print.ifixeddocumentsequence_geturi, GetUri method [Print Devices], IFixedDocumentSequence interface, GetUri method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ The URI of the fixed document sequence.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

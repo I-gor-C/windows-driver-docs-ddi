@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5C6D2FFC-DBFF-4C44-8757-ED87593A584F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PBranchOfficeJobDataContainer, LPBranchOfficeJobDataContainer structure pointer [Print Devices], winsplp/LPBranchOfficeJobDataContainer, LPBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, BranchOfficeJobDataContainer structure [Print Devices], PBranchOfficeJobDataContainer, print.branchofficejobdatacontainer, winsplp/BranchOfficeJobDataContainer, winsplp/PBranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer, PBranchOfficeJobDataContainer structure pointer [Print Devices]"
+ms.keywords : PBranchOfficeJobDataContainer, print.branchofficejobdatacontainer, LPBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, winsplp/LPBranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer, LPBranchOfficeJobDataContainer structure pointer [Print Devices], BranchOfficeJobDataContainer structure [Print Devices], *PBranchOfficeJobDataContainer, winsplp/BranchOfficeJobDataContainer, PBranchOfficeJobDataContainer structure pointer [Print Devices], winsplp/PBranchOfficeJobDataContainer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer"
+req.typenames : BranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ Describes the <b>BranchOfficeJobData</b> type member <b>JobData</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c9838b9e-b390-455d-98d6-249a49c9165d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WriteMsr method [Windows Debugging], IDebugDataSpaces4 interface, WriteMsr method [Windows Debugging], IDebugDataSpaces_b0b0220e-66d2-4d96-b4bf-3016b0ed677c.xml, IDebugDataSpaces3::WriteMsr, IDebugDataSpaces interface [Windows Debugging], WriteMsr method, WriteMsr method [Windows Debugging], IDebugDataSpaces3 interface, WriteMsr method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces2::WriteMsr, IDebugDataSpaces4 interface [Windows Debugging], WriteMsr method, IDebugDataSpaces4::WriteMsr, IDebugDataSpaces3 interface [Windows Debugging], WriteMsr method, IDebugDataSpaces2::WriteMsr, dbgeng/IDebugDataSpaces3::WriteMsr, IDebugDataSpaces::WriteMsr, dbgeng/IDebugDataSpaces4::WriteMsr, IDebugDataSpaces4, IDebugDataSpaces2 interface [Windows Debugging], WriteMsr method, debugger.writemsr2, WriteMsr method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces::WriteMsr, WriteMsr
+ms.keywords : IDebugDataSpaces::WriteMsr, dbgeng/IDebugDataSpaces4::WriteMsr, IDebugDataSpaces2::WriteMsr, IDebugDataSpaces interface [Windows Debugging], WriteMsr method, IDebugDataSpaces3 interface [Windows Debugging], WriteMsr method, WriteMsr method [Windows Debugging], IDebugDataSpaces3 interface, debugger.writemsr2, WriteMsr method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces::WriteMsr, IDebugDataSpaces2 interface [Windows Debugging], WriteMsr method, WriteMsr method [Windows Debugging], IDebugDataSpaces4::WriteMsr, IDebugDataSpaces4, IDebugDataSpaces3::WriteMsr, dbgeng/IDebugDataSpaces3::WriteMsr, IDebugDataSpaces4 interface [Windows Debugging], WriteMsr method, WriteMsr, IDebugDataSpaces_b0b0220e-66d2-4d96-b4bf-3016b0ed677c.xml, WriteMsr method [Windows Debugging], IDebugDataSpaces2 interface, WriteMsr method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces2::WriteMsr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -93,11 +93,6 @@ For details on the addresses and values of MSRs, see the processor documentation
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

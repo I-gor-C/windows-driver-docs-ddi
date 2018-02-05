@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5c092cbd-ef05-4b3d-ac9f-20f2fbf2c37c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iportwmiregistration_registerwmiprovider, IPortWMIRegistration interface [Audio Devices], RegisterWMIProvider method, RegisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, IPortWMIRegistration, audmp-routines_3a73bed7-3a9f-4be2-8d15-33f707714c94.xml, IPortWMIRegistration::RegisterWMIProvider, portcls/IPortWMIRegistration::RegisterWMIProvider, RegisterWMIProvider method [Audio Devices], RegisterWMIProvider
+ms.keywords : RegisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, audmp-routines_3a73bed7-3a9f-4be2-8d15-33f707714c94.xml, IPortWMIRegistration, IPortWMIRegistration interface [Audio Devices], RegisterWMIProvider method, portcls/IPortWMIRegistration::RegisterWMIProvider, IPortWMIRegistration::RegisterWMIProvider, RegisterWMIProvider method [Audio Devices], audio.iportwmiregistration_registerwmiprovider, RegisterWMIProvider
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -53,11 +53,11 @@ NTSTATUS RegisterWMIProvider(
 
 ## Parameters
 
-``
+`Arg1`
 
 
 
-``
+`Arg1`
 
 
 
@@ -73,26 +73,23 @@ For more information about ETW, see <a href="http://go.microsoft.com/fwlink/p/?l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=154129">Improve Debugging And Performance Tuning With ETW</a>
-
 <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="http://go.microsoft.com/fwlink/p/?linkid=154129">Improve Debugging And Performance Tuning With ETW</a>
 
 <a href="..\portcls\nn-portcls-iportwmiregistration.md">IPortWMIRegistration</a>
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a>
 
  
 

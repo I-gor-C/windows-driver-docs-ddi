@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : FE76DA51-400E-4F64-B8D9-8738D2F5031A
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetOutputWidth method [Windows Debugging], GetOutputWidth, GetOutputWidth method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::GetOutputWidth, IDebugClient::GetOutputWidth, IDebugClient interface [Windows Debugging], GetOutputWidth method, debugger.idebugclient_getoutputwidth, IDebugClient
+ms.keywords : GetOutputWidth method [Windows Debugging], IDebugClient interface, GetOutputWidth, GetOutputWidth method [Windows Debugging], debugger.idebugclient_getoutputwidth, dbgeng/IDebugClient::GetOutputWidth, IDebugClient::GetOutputWidth, IDebugClient interface [Windows Debugging], GetOutputWidth method, IDebugClient
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -86,14 +86,9 @@ This setting is a suggestion that can be overridden by other settings.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

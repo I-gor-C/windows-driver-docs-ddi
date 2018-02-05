@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 65b64678-09dc-4bc2-8362-d15eba5a828a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wmistr/PWNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM structure [Kernel-Mode Driver Architecture], PWNODE_SINGLE_ITEM, *PWNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM, kstruct_d_49c197d8-c13f-4ca7-b82f-e56282eac847.xml, wmistr/WNODE_SINGLE_ITEM, tagWNODE_SINGLE_ITEM, kernel.wnode_single_item, PWNODE_SINGLE_ITEM structure pointer [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.wnode_single_item, WNODE_SINGLE_ITEM structure [Kernel-Mode Driver Architecture], wmistr/WNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM, *PWNODE_SINGLE_ITEM, tagWNODE_SINGLE_ITEM, kstruct_d_49c197d8-c13f-4ca7-b82f-e56282eac847.xml, PWNODE_SINGLE_ITEM, PWNODE_SINGLE_ITEM structure pointer [Kernel-Mode Driver Architecture], wmistr/PWNODE_SINGLE_ITEM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WNODE_SINGLE_ITEM, *PWNODE_SINGLE_ITEM
+req.typenames : "*PWNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM"
 req.product : Windows 10 or later.
 ---
 
@@ -98,16 +98,13 @@ A driver builds a <b>WNODE_SINGLE_ITEM</b> to generate an event that consists of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wmistr.h (include Wmistr.h) |
 
 ## See Also
 
-<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
-
 <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
+
+<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
 
  
 

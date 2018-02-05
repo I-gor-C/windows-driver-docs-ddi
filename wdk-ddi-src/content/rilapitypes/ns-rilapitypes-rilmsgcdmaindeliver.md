@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0729c3e5-c95d-44fb-9aa4-079833b94619
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER structure [Network Drivers Starting with Windows Vista], netvista.rilmsgcdmaindeliver_2, rilapitypes/RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER"
+ms.keywords : netvista.rilmsgcdmaindeliver_2, RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER, rilapitypes/RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -170,7 +170,4 @@ typedef struct _RILMSGCDMAINDELIVER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

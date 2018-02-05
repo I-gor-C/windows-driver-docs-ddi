@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E0E1CDE7-F1BF-44C8-A320-9BD90788679F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_UPDATEPAGETABLEFLAGS, _DXGK_UPDATEPAGETABLEFLAGS, display.dxgk_updatepagetableflags, DXGK_UPDATEPAGETABLEFLAGS structure [Display Devices], DXGK_UPDATEPAGETABLEFLAGS
+ms.keywords : DXGK_UPDATEPAGETABLEFLAGS structure [Display Devices], DXGK_UPDATEPAGETABLEFLAGS, display.dxgk_updatepagetableflags, d3dkmddi/DXGK_UPDATEPAGETABLEFLAGS, _DXGK_UPDATEPAGETABLEFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,5 @@ Indicates that page table entries  point to page tables pointing to 64 KB pages.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

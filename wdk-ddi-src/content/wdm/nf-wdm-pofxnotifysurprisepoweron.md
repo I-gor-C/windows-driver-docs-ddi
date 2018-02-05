@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : AB9C7D32-D536-4B2B-9C85-DF5A0031798C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pofxnotifysurprisepoweron, PoFxNotifySurprisePowerOn, PoFxNotifySurprisePowerOn routine [Kernel-Mode Driver Architecture], wdm/PoFxNotifySurprisePowerOn
+ms.keywords : PoFxNotifySurprisePowerOn, kernel.pofxnotifysurprisepoweron, wdm/PoFxNotifySurprisePowerOn, PoFxNotifySurprisePowerOn routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,22 +81,20 @@ Call <b>PoFxNotifySurprisePowerOn</b> only if the device was turned on incidenta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
+<a href="..\wdm\nf-wdm-pofxreportdevicepoweredon.md">PoFxReportDevicePoweredOn</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\wdm\nf-wdm-pofxreportdevicepoweredon.md">PoFxReportDevicePoweredOn</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a>
 

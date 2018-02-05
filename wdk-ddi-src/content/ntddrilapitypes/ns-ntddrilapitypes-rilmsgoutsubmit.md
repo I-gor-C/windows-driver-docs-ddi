@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 83d15e40-b93f-4c7a-bfe4-db939c24b94f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILMSGOUTSUBMIT, ntddrilapitypes/RILMSGOUTSUBMIT, netvista.rilmsgoutsubmit, RILMSGOUTSUBMIT structure [Network Drivers Starting with Windows Vista], RILMSGOUTSUBMIT"
+ms.keywords : "*LPRILMSGOUTSUBMIT, RILMSGOUTSUBMIT structure [Network Drivers Starting with Windows Vista], RILMSGOUTSUBMIT, ntddrilapitypes/RILMSGOUTSUBMIT, netvista.rilmsgoutsubmit"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,7 +104,4 @@ typedef struct _RILMSGOUTSUBMIT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

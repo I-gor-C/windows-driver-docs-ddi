@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 676C28C4-E6F3-4190-927B-67D5618F5645
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB.spbrequestgetparameters, SpbRequestGetParameters, SpbRequestGetParameters method [Buses], spbcx/SpbRequestGetParameters
+ms.keywords : SpbRequestGetParameters method [Buses], SPB.spbrequestgetparameters, spbcx/SpbRequestGetParameters, SpbRequestGetParameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -74,24 +74,21 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | spbcx.h |
-| **Library** |  |
+| **Library** | Spbcxstubs.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406210">SPB_REQUEST_PARAMETERS_INIT</a>
 
-<a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
+
+<a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
 
  
 

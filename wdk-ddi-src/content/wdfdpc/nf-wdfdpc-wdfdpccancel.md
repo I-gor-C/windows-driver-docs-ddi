@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6eb56c5b-d198-4542-a239-c54b49561196
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDpcCancel, kmdf.wdfdpccancel, wdf.wdfdpccancel, DFDpcObjectRef_4efcdae1-0c0a-4808-a1d8-640dea3555cb.xml, wdfdpc/WdfDpcCancel, WdfDpcCancel method
+ms.keywords : WdfDpcCancel, DFDpcObjectRef_4efcdae1-0c0a-4808-a1d8-640dea3555cb.xml, kmdf.wdfdpccancel, wdfdpc/WdfDpcCancel, wdf.wdfdpccancel, WdfDpcCancel method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,12 +80,10 @@ If the <i>Wait</i> parameter is <b>TRUE</b>, <b>WdfDpcCancel</b> must be called 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdpc.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

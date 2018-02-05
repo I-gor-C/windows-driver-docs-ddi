@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 79e8cdb8-8c01-4fed-8490-5adeb52c0ea2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAdapterPowerManagement, QueryDeviceCapabilities method [Audio Devices], IAdapterPowerManagement interface, IAdapterPowerManagement interface [Audio Devices], QueryDeviceCapabilities method, QueryDeviceCapabilities method [Audio Devices], audio.iadapterpowermanagement_querydevicecapabilities, QueryDeviceCapabilities, IAdapterPowerManagement::QueryDeviceCapabilities, audmp-routines_e59e3df9-3bfa-4eb0-a7dd-1faa017a48e9.xml, portcls/IAdapterPowerManagement::QueryDeviceCapabilities
+ms.keywords : QueryDeviceCapabilities method [Audio Devices], portcls/IAdapterPowerManagement::QueryDeviceCapabilities, audmp-routines_e59e3df9-3bfa-4eb0-a7dd-1faa017a48e9.xml, audio.iadapterpowermanagement_querydevicecapabilities, QueryDeviceCapabilities method [Audio Devices], IAdapterPowerManagement interface, IAdapterPowerManagement interface [Audio Devices], QueryDeviceCapabilities method, IAdapterPowerManagement::QueryDeviceCapabilities, IAdapterPowerManagement, QueryDeviceCapabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -90,24 +90,19 @@ In order to change the mappings between system power states and device power sta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
-
 <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551664">IRP_MN_QUERY_CAPABILITIES</a>
+<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
 
 <a href="..\portcls\nf-portcls-pcregisteradapterpowermanagement.md">PcRegisterAdapterPowerManagement</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551664">IRP_MN_QUERY_CAPABILITIES</a>
 
  
 

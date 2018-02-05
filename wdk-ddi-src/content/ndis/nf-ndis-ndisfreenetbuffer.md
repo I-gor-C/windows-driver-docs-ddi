@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9b5fe91b-29ae-4c83-b405-4a90e4375b4a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfreenetbuffer, ndis/NdisFreeNetBuffer, ndis_netbuf_functions_ref_623498b1-25e0-48ae-831e-8c1240106bd4.xml, NdisFreeNetBuffer, NdisFreeNetBuffer function [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis/NdisFreeNetBuffer, netvista.ndisfreenetbuffer, ndis_netbuf_functions_ref_623498b1-25e0-48ae-831e-8c1240106bd4.xml, NdisFreeNetBuffer function [Network Drivers Starting with Windows Vista], NdisFreeNetBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,12 +70,10 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function, NdisAllocateNetBuffer |
 

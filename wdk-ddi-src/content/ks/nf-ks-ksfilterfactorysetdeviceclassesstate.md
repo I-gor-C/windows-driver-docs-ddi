@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 66515f08-b652-4aa0-8f22-b5ff0a407d6a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactorySetDeviceClassesState, ks/KsFilterFactorySetDeviceClassesState, avfunc_a88f0816-e755-450f-b8b7-83dee85171f9.xml, KsFilterFactorySetDeviceClassesState function [Streaming Media Devices], stream.ksfilterfactorysetdeviceclassesstate
+ms.keywords : KsFilterFactorySetDeviceClassesState, avfunc_a88f0816-e755-450f-b8b7-83dee85171f9.xml, stream.ksfilterfactorysetdeviceclassesstate, KsFilterFactorySetDeviceClassesState function [Streaming Media Devices], ks/KsFilterFactorySetDeviceClassesState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,8 @@ This function is available in Windows XP and DirectX 8.0 and later.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

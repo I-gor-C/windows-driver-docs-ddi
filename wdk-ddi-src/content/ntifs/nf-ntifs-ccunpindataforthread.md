@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9c29689c-ce5e-4b29-a17b-32d96f8f87e7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ccunpindataforthread, ccref_71102887-ef3b-44b1-8b1f-e2b07dea3392.xml, CcUnpinDataForThread, CcUnpinDataForThread routine [Installable File System Drivers], ntifs/CcUnpinDataForThread
+ms.keywords : ccref_71102887-ef3b-44b1-8b1f-e2b07dea3392.xml, ifsk.ccunpindataforthread, CcUnpinDataForThread routine [Installable File System Drivers], ntifs/CcUnpinDataForThread, CcUnpinDataForThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,11 @@ Each call to <a href="..\ntifs\nf-ntifs-ccsetbcbownerpointer.md">CcSetBcbOwnerPo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

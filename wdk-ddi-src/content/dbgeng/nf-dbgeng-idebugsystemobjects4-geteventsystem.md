@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b0a3ce92-b29a-4c5e-8cab-18fc92787e2e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.geteventsystem, GetEventSystem method [Windows Debugging], GetEventSystem, IDebugSystemObjects4, GetEventSystem method [Windows Debugging], IDebugSystemObjects3 interface, dbgeng/IDebugSystemObjects4::GetEventSystem, IDebugSystemObjects3::GetEventSystem, IDebugSystemObjects3 interface [Windows Debugging], GetEventSystem method, IDebugSystemObjects4::GetEventSystem, IDebugSystemObjects4 interface [Windows Debugging], GetEventSystem method, IDebugSystemObjects_6cb96e5a-e9a5-4ff7-9f36-a7770bc77ef1.xml, dbgeng/IDebugSystemObjects3::GetEventSystem, GetEventSystem method [Windows Debugging], IDebugSystemObjects4 interface
+ms.keywords : IDebugSystemObjects3::GetEventSystem, IDebugSystemObjects3 interface [Windows Debugging], GetEventSystem method, GetEventSystem, dbgeng/IDebugSystemObjects4::GetEventSystem, debugger.geteventsystem, GetEventSystem method [Windows Debugging], dbgeng/IDebugSystemObjects3::GetEventSystem, IDebugSystemObjects4::GetEventSystem, IDebugSystemObjects4 interface [Windows Debugging], GetEventSystem method, IDebugSystemObjects_6cb96e5a-e9a5-4ff7-9f36-a7770bc77ef1.xml, GetEventSystem method [Windows Debugging], IDebugSystemObjects4 interface, GetEventSystem method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,14 +82,9 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
@@ -97,9 +92,9 @@ The method was successful.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 554f03bf-cacd-401b-aa34-fcfe1c31091e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_715031de-7d7e-4e24-8e1c-072c7bc271fb.xml, KsAllocateDeviceHeader function [Streaming Media Devices], stream.ksallocatedeviceheader, KsAllocateDeviceHeader, ks/KsAllocateDeviceHeader
+ms.keywords : stream.ksallocatedeviceheader, KsAllocateDeviceHeader function [Streaming Media Devices], KsAllocateDeviceHeader, ksfunc_715031de-7d7e-4e24-8e1c-072c7bc271fb.xml, ks/KsAllocateDeviceHeader
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,20 +96,16 @@ createBuffer = (PKSOBJECT_CREATE_ITEM)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfreedeviceheader.md">KsFreeDeviceHeader</a>
-
 <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+
+<a href="..\ks\nf-ks-ksfreedeviceheader.md">KsFreeDeviceHeader</a>
 
  
 

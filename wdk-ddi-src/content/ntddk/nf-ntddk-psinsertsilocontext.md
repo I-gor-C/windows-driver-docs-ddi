@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 31C7A629-3B5E-44BA-AE03-3331E3200FC6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PsInsertSiloContext, PsInsertSiloContext, kernel.psinsertsilocontext, PsInsertSiloContext routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.psinsertsilocontext, PsInsertSiloContext, ntddk/PsInsertSiloContext, PsInsertSiloContext routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,11 +114,7 @@ The operation completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

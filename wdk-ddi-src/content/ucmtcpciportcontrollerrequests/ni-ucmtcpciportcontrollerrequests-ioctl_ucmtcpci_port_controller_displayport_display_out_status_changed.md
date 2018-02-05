@@ -74,6 +74,6 @@ The UcmTcpciCx class extension sends this IOCTL request when the display out sta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucmtcpciportcontrollerrequests.h |
 | **IRQL** | PASSIVE_LEVEL |

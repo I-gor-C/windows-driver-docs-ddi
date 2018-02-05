@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 41f7c240-4e50-4d6c-82aa-902ab05bf715
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_SetData routine [Human Input Devices], hidpi/HidP_SetData, HidP_SetData, hidfunc_4b2f18db-e7a2-432d-abd6-51240a0ffc91.xml, hid.hidp_setdata
+ms.keywords : hidpi/HidP_SetData, hid.hidp_setdata, HidP_SetData routine [Human Input Devices], HidP_SetData, hidfunc_4b2f18db-e7a2-432d-abd6-51240a0ffc91.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -217,22 +217,15 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidpi.h (include Hidpi.h) |
-| **Library** |  |
+| **Library** | Hidparse.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\hidpi\ns-hidpi-_hidp_data.md">HIDP_DATA</a>
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 
 <a href="..\hidpi\nf-hidpi-hidp_unsetusages.md">HidP_UnsetUsages</a>
 
@@ -240,9 +233,13 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 <a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>
 
  
 

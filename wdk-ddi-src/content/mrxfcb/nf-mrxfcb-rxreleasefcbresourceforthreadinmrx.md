@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 86b6f18b-4088-4fa3-ace3-f083f61ef0d0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_bed9a8b0-1761-413e-b816-599b51a7f305.xml, ifsk.rxreleasefcbresourceforthreadinmrx, mrxfcb/RxReleaseFcbResourceForThreadInMRx, RxReleaseFcbResourceForThreadInMRx, RxReleaseFcbResourceForThreadInMRx function [Installable File System Drivers]
+ms.keywords : mrxfcb/RxReleaseFcbResourceForThreadInMRx, RxReleaseFcbResourceForThreadInMRx function [Installable File System Drivers], RxReleaseFcbResourceForThreadInMRx, ifsk.rxreleasefcbresourceforthreadinmrx, rxref_bed9a8b0-1761-413e-b816-599b51a7f305.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 
@@ -80,24 +80,21 @@ The <b>RxReleaseFcbResourceForThreadInMRx</b> routine will release an FCB resour
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | RxReleaseFcbResourceForThreadInMRx is only available on Windows Server 2003 SP1 and later. RxReleaseFcbResourceForThreadInMRx is only available on Windows Server 2003 SP1 and later. |
+| **Target Platform** | Desktop |
 | **Header** | mrxfcb.h (include Mrxfcb.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceinmrx.md">RxReleaseFcbResourceInMRx</a>
 
 <a href="..\mrxfcb\nf-mrxfcb-rxacquiresharedfcbresourceinmrx.md">RxAcquireSharedFcbResourceInMRx</a>
 
 <a href="..\mrxfcb\nf-mrxfcb-rxacquiresharedfcbresourceinmrxex.md">RxAcquireSharedFcbResourceInMRxEx</a>
 
 <a href="..\mrxfcb\nf-mrxfcb-rxacquireexclusivefcbresourceinmrx.md">RxAcquireExclusiveFcbResourceInMRx</a>
+
+<a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceinmrx.md">RxReleaseFcbResourceInMRx</a>
 
  
 

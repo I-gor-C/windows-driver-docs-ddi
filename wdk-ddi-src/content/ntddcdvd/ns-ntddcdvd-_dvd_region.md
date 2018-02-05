@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a2e31a1a-59e4-4a83-b866-944ef1693f65
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_REGION, PDVD_REGION, ntddcdvd/DVD_REGION, ntddcdvd/PDVD_REGION, PDVD_REGION structure pointer [Storage Devices], DVD_REGION structure [Storage Devices], storage.dvd_region, structs-DVD_b1569a34-c55e-482b-b87e-30becd20e2c1.xml, *PDVD_REGION, _DVD_REGION
+ms.keywords : ntddcdvd/PDVD_REGION, DVD_REGION, ntddcdvd/DVD_REGION, *PDVD_REGION, PDVD_REGION structure pointer [Storage Devices], PDVD_REGION, DVD_REGION structure [Storage Devices], _DVD_REGION, structs-DVD_b1569a34-c55e-482b-b87e-30becd20e2c1.xml, storage.dvd_region
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,6 @@ Indicates the region code of the DVD player. This is an eight-bit bitmask, with 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
 ## See Also

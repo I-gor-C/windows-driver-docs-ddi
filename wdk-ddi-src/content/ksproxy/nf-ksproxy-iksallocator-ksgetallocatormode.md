@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 47B51B6F-555A-4A1E-AA25-7E94DC0060CC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsAllocator interface [Streaming Media Devices], KsGetAllocatorMode method, KsGetAllocatorMode method [Streaming Media Devices], IKsAllocator interface, IKsAllocator, IKsAllocator::KsGetAllocatorMode, KsGetAllocatorMode method [Streaming Media Devices], stream.iksallocator_ksgetallocatormode, KsGetAllocatorMode, ksproxy/IKsAllocator::KsGetAllocatorMode
+ms.keywords : KsGetAllocatorMode method [Streaming Media Devices], IKsAllocator, ksproxy/IKsAllocator::KsGetAllocatorMode, KsGetAllocatorMode method [Streaming Media Devices], IKsAllocator interface, IKsAllocator::KsGetAllocatorMode, stream.iksallocator_ksgetallocatormode, KsGetAllocatorMode, IKsAllocator interface [Streaming Media Devices], KsGetAllocatorMode method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -64,14 +64,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -120,8 +120,8 @@ If the WSK application calls the
 A WSK application can enable conditional accept mode on a listening socket by enabling the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570829">SO_CONDITIONAL_ACCEPT</a> socket option.
     For more information about conditionally accepting incoming connections, see 
-    <mshelp:link keywords="netvista.listening_for_and_accepting_incoming_connections" tabindex="0">Listening for and
-    Accepting Incoming Connections</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/listening-for-and-accepting-incoming-connections">Listening for and
+    Accepting Incoming Connections</a>.
 
 The WSK subsystem calls a WSK application's 
     <i>WskAbortEvent</i> event callback function at IRQL &lt;= DISPATCH_LEVEL.
@@ -131,26 +131,22 @@ A WSK application's <i>WskAbortEvent</i> event callback function must not wait f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Windows |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_inspect_complete.md">WskInspectComplete</a>
+
+<a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_inspect_complete.md">WskInspectComplete</a>
-
-<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
-
-<a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a>
 

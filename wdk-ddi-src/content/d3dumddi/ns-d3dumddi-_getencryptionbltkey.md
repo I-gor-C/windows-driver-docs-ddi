@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6f481646-b665-46cb-b551-10515b8603c5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_GETENCRYPTIONBLTKEY structure [Display Devices], UMDisplayDriver_param_Structs_ecaf1a03-2c4a-450e-a17a-2cc309e7c2e4.xml, display.d3dddiarg_getencryptionbltkey, _GETENCRYPTIONBLTKEY structure [Display Devices], d3dumddi/_GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY, _GETENCRYPTIONBLTKEY
+ms.keywords : "_GETENCRYPTIONBLTKEY structure [Display Devices], _GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY structure [Display Devices], display.d3dddiarg_getencryptionbltkey, UMDisplayDriver_param_Structs_ecaf1a03-2c4a-450e-a17a-2cc309e7c2e4.xml, d3dumddi/_GETENCRYPTIONBLTKEY"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,14 @@ typedef struct _GETENCRYPTIONBLTKEY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_GETENCRYPTIONBLTKEY is supported beginning with the Windows 7 operating system. D3DDDIARG_GETENCRYPTIONBLTKEY is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getencryptionbltkey.md">GetEncryptionBltKey</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
 
  
 

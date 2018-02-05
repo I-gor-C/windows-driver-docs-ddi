@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b49ea2db-bb1e-4293-bfac-cbb3e62bca91
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddk/IoWritePartitionTableEx, rtns-disk_b84c8b07-5cdc-4e39-964f-a8f6b28e7346.xml, IoWritePartitionTableEx routine [Storage Devices], storage.iowritepartitiontableex, IoWritePartitionTableEx
+ms.keywords : IoWritePartitionTableEx, rtns-disk_b84c8b07-5cdc-4e39-964f-a8f6b28e7346.xml, storage.iowritepartitiontableex, IoWritePartitionTableEx routine [Storage Devices], ntddk/IoWritePartitionTableEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,22 +122,20 @@ In order tot create or delete partitions a full description of the system must b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
-
 <a href="..\ntddk\nf-ntddk-iosetpartitioninformationex.md">IoSetPartitionInformationEx</a>
 
 <a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
+
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 
  
 

@@ -77,9 +77,7 @@ For an example layout of an MCR, see the definition of the MCR bits (SERIAL_MCR_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddser.h (include Ntddser.h) |
-| **IRQL** |  |
 
 ## See Also
 

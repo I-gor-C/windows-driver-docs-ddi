@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TX_METADATA, WDI_TX_METADATA"
+req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 
@@ -73,11 +73,5 @@ This return value is reserved for system use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | drmk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : FF33471A-692B-4568-BF37-1870DEC367D0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetNextStream method [Imaging Devices], IWiaMiniDrvTransferCallback interface, IWiaMiniDrvTransferCallback interface [Imaging Devices], GetNextStream method, GetNextStream method [Imaging Devices], IWiaMiniDrvTransferCallback, GetNextStream, image.iwiaminidrvtransfercallback_getnextstream, wiamindr_lh/IWiaMiniDrvTransferCallback::GetNextStream, IWiaMiniDrvTransferCallback::GetNextStream
+ms.keywords : IWiaMiniDrvTransferCallback interface [Imaging Devices], GetNextStream method, GetNextStream, IWiaMiniDrvTransferCallback::GetNextStream, GetNextStream method [Imaging Devices], IWiaMiniDrvTransferCallback, wiamindr_lh/IWiaMiniDrvTransferCallback::GetNextStream, GetNextStream method [Imaging Devices], IWiaMiniDrvTransferCallback interface, image.iwiaminidrvtransfercallback_getnextstream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -86,26 +86,22 @@ When the current transfer sequence is cancelled, the <b>GetNextStream</b> method
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551561">WIA_IPA_FULL_ITEM_NAME</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551590">WIA_IPA_ITEM_NAME</a>
-
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrvtransfercallback.md">IWiaMiniDrvTransferCallback</a>
 
-<a href="https://msdn.microsoft.com/83817277-3526-4f64-8e7c-7e02c8cd77bd">Data Transfer Between Legacy Application and Windows Vista Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551590">WIA_IPA_ITEM_NAME</a>
 
 <a href="https://msdn.microsoft.com/0cdc02bf-23fe-4122-8d5f-f42c3c07da8b">Cancellation of Data Transfers in Windows Vista</a>
+
+<a href="https://msdn.microsoft.com/83817277-3526-4f64-8e7c-7e02c8cd77bd">Data Transfer Between Legacy Application and Windows Vista Driver</a>
 
  
 

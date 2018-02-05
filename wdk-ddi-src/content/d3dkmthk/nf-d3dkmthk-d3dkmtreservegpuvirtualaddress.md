@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2F8B689C-162C-4C1B-BD45-A154079334D0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTReserveGpuVirtualAddress, d3dkmthk/D3DKMTReserveGpuVirtualAddress, D3DKMTReserveGpuVirtualAddress function [Display Devices], display.d3dkmtreservegpuvirtualaddress
+ms.keywords : d3dkmthk/D3DKMTReserveGpuVirtualAddress, D3DKMTReserveGpuVirtualAddress function [Display Devices], D3DKMTReserveGpuVirtualAddress, display.d3dkmtreservegpuvirtualaddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |

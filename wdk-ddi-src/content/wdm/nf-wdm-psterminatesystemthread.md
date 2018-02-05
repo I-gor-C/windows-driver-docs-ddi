@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 04f9f699-0ca1-4b22-b66f-04fcf53935c4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PsTerminateSystemThread, PsTerminateSystemThread, PsTerminateSystemThread routine [Kernel-Mode Driver Architecture], kernel.psterminatesystemthread, k108_a8e19a60-578c-42a6-b77a-cf6c4098c815.xml
+ms.keywords : k108_a8e19a60-578c-42a6-b77a-cf6c4098c815.xml, kernel.psterminatesystemthread, PsTerminateSystemThread, PsTerminateSystemThread routine [Kernel-Mode Driver Architecture], wdm/PsTerminateSystemThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,12 +69,11 @@ A system thread calls <b>PsTerminateSystemThread</b> to terminate itself. A driv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

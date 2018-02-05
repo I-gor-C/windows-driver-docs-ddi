@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ba78482f-243a-4f60-907e-8d5c4a702ef2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-Fibre_c78b38af-b1e5-4f98-a57c-9c4c81b4a5f3.xml, PSendRLS_IN, hbapiwmi/SendRLS_IN, *PSendRLS_IN, SendRLS_IN structure [Storage Devices], storage.sendrls_in, SendRLS_IN, hbapiwmi/PSendRLS_IN, _SendRLS_IN, PSendRLS_IN structure pointer [Storage Devices]
+ms.keywords : SendRLS_IN structure [Storage Devices], SendRLS_IN, hbapiwmi/SendRLS_IN, *PSendRLS_IN, _SendRLS_IN, PSendRLS_IN, hbapiwmi/PSendRLS_IN, structs-Fibre_c78b38af-b1e5-4f98-a57c-9c4c81b4a5f3.xml, PSendRLS_IN structure pointer [Storage Devices], storage.sendrls_in
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ The WMI tool suite generates a declaration of the SendRLS_IN structure in <i>Hba
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

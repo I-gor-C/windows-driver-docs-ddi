@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e8584c60-57ba-4b9c-949f-041bb37dfb13
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUpcaseUnicodeChar routine [Kernel-Mode Driver Architecture], kernel.rtlupcaseunicodechar, k109_81806669-d742-4cb9-b4dd-d7e40fef171a.xml, RtlUpcaseUnicodeChar, wdm/RtlUpcaseUnicodeChar
+ms.keywords : k109_81806669-d742-4cb9-b4dd-d7e40fef171a.xml, RtlUpcaseUnicodeChar routine [Kernel-Mode Driver Architecture], RtlUpcaseUnicodeChar, kernel.rtlupcaseunicodechar, wdm/RtlUpcaseUnicodeChar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,20 +66,18 @@ Specifies the character to convert.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlupcaseunicodestring.md">RtlUpcaseUnicodeString</a>
-
 <a href="..\ntddk\nf-ntddk-rtlupperchar.md">RtlUpperChar</a>
+
+<a href="..\ntddk\nf-ntddk-rtlupcaseunicodestring.md">RtlUpcaseUnicodeString</a>
 
  
 

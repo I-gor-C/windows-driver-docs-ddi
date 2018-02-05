@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f731c790-4348-4c18-aef1-184c3d4bf258
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilopenuicclogicalchannelinfo_2, RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO, rilapitypes/RILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : rilapitypes/RILOPENUICCLOGICALCHANNELINFO, netvista.rilopenuicclogicalchannelinfo_2, RILOPENUICCLOGICALCHANNELINFO structure [Network Drivers Starting with Windows Vista], RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO
+req.typenames : "*LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,4 @@ typedef struct _RILOPENUICCLOGICALCHANNELINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

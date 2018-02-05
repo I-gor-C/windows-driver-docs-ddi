@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
+req.typenames : "*PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT"
 req.product : Windows 10 or later.
 ---
 
@@ -96,11 +96,5 @@ For more details, see <a href="https://msdn.microsoft.com/library/windows/hardwa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 883c561c-0d1b-4a6c-946e-8ca567b12c9a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1394/PTEXTUAL_LEAF, 1394stct_b63840e2-0a05-49e9-a533-9575f46af648.xml, PTEXTUAL_LEAF, PTEXTUAL_LEAF structure pointer [Buses], IEEE.textual_leaf, *PTEXTUAL_LEAF, _TEXTUAL_LEAF, 1394/TEXTUAL_LEAF, TEXTUAL_LEAF, TEXTUAL_LEAF structure [Buses]
+ms.keywords : 1394/PTEXTUAL_LEAF, PTEXTUAL_LEAF, TEXTUAL_LEAF, 1394stct_b63840e2-0a05-49e9-a533-9575f46af648.xml, _TEXTUAL_LEAF, IEEE.textual_leaf, PTEXTUAL_LEAF structure pointer [Buses], 1394/TEXTUAL_LEAF, TEXTUAL_LEAF structure [Buses], *PTEXTUAL_LEAF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTEXTUAL_LEAF, TEXTUAL_LEAF"
+req.typenames : TEXTUAL_LEAF, *PTEXTUAL_LEAF
 ---
 
 # _TEXTUAL_LEAF structure
@@ -79,9 +79,6 @@ Specifies which specification describes the meaning of the <b>TL_Language_ID</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

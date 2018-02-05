@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 0ab96bc2-a89f-42cf-9ee2-020b47dff4cf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1394stct_83c9e36a-b3d7-46cc-9dc6-1e40095d041b.xml, 1394/CONFIG_ROM, PCONFIG_ROM structure pointer [Buses], _CONFIG_ROM, CONFIG_ROM, *PCONFIG_ROM, 1394/PCONFIG_ROM, PCONFIG_ROM, CONFIG_ROM structure [Buses], IEEE.config_rom
+ms.keywords : PCONFIG_ROM structure pointer [Buses], *PCONFIG_ROM, CONFIG_ROM, 1394/PCONFIG_ROM, PCONFIG_ROM, 1394stct_83c9e36a-b3d7-46cc-9dc6-1e40095d041b.xml, IEEE.config_rom, 1394/CONFIG_ROM, _CONFIG_ROM, CONFIG_ROM structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,7 +81,4 @@ See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |

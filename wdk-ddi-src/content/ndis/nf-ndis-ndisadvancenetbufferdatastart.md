@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 49b69282-137d-4bb5-92f5-4d27cedbb6d4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisAdvanceNetBufferDataStart function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_b03aee2c-859d-425f-9b07-91b324505ff4.xml, ndis/NdisAdvanceNetBufferDataStart, NdisAdvanceNetBufferDataStart, netvista.ndisadvancenetbufferdatastart
+ms.keywords : netvista.ndisadvancenetbufferdatastart, ndis_netbuf_functions_ref_b03aee2c-859d-425f-9b07-91b324505ff4.xml, NdisAdvanceNetBufferDataStart, ndis/NdisAdvanceNetBufferDataStart, NdisAdvanceNetBufferDataStart function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -43,8 +43,8 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 Call the 
   <b>NdisAdvanceNetBufferDataStart</b> function to release the 
   <i>used data space</i> that was added with the 
-  <mshelp:link keywords="netvista.ndisretreatnetbufferdatastart" tabindex="0"><b>
-  NdisRetreatNetBufferDataStart</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
+  NdisRetreatNetBufferDataStart</a> function.
 
 ## Syntax
 
@@ -92,8 +92,8 @@ None
 ## Remarks
 
 If NDIS allocated memory to satisfy a corresponding call to the 
-    <mshelp:link keywords="netvista.ndisretreatnetbufferdatastart" tabindex="0"><b>
-    NdisRetreatNetBufferDataStart</b></mshelp:link> function, then 
+    <a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
+    NdisRetreatNetBufferDataStart</a> function, then 
     <b>NdisAdvanceNetBufferDataStart</b> frees the memory that 
     <b>NdisRetreatNetBufferDataStart</b> allocated. Otherwise, the memory remains in the MDL and only the
     value of the 
@@ -115,25 +115,23 @@ When protocol drivers call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisretreatnetbufferdatastart" tabindex="0"><b>
-   NdisRetreatNetBufferDataStart</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
+   NdisRetreatNetBufferDataStart</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nc-ndis-net_buffer_allocate_mdl_handler.md">NetAllocateMdl</a>
 
 <a href="..\ndis\nc-ndis-net_buffer_free_mdl_handler.md">NetFreeMdl</a>
 
-<a href="..\ndis\nc-ndis-net_buffer_allocate_mdl_handler.md">NetAllocateMdl</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 248C5386-B835-4806-8DD8-39327EDADA0C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_DEVICE_SERVICE_SESSION_READ, *PWWAN_DEVICE_SERVICE_SESSION_READ, _WWAN_DEVICE_SERVICE_SESSION_READ, WWAN_DEVICE_SERVICE_SESSION_READ, WWAN_DEVICE_SERVICE_SESSION_READ structure [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SERVICE_SESSION_READ structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_DEVICE_SERVICE_SESSION_READ, netvista.wwan_device_service_session_read, PWWAN_DEVICE_SERVICE_SESSION_READ
+ms.keywords : PWWAN_DEVICE_SERVICE_SESSION_READ structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_SESSION_READ, PWWAN_DEVICE_SERVICE_SESSION_READ, wwan/WWAN_DEVICE_SERVICE_SESSION_READ, wwan/PWWAN_DEVICE_SERVICE_SESSION_READ, _WWAN_DEVICE_SERVICE_SESSION_READ, WWAN_DEVICE_SERVICE_SESSION_READ structure [Network Drivers Starting with Windows Vista], netvista.wwan_device_service_session_read, *PWWAN_DEVICE_SERVICE_SESSION_READ
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,16 +65,14 @@ The session ID of the device service.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_supported_device_services.md">WWAN_SUPPORTED_DEVICE_SERVICES</a>
-
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_device_service_session_read.md">NDIS_WWAN_DEVICE_SERVICE_SESSION_READ</a>
+
+<a href="..\wwan\ns-wwan-_wwan_supported_device_services.md">WWAN_SUPPORTED_DEVICE_SERVICES</a>
 
  
 

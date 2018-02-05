@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 114a6f0d-22ec-4306-81b4-56cf882f167f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MODE_SCANLINE_ORDER, DXGI_DDI_MODE_SCANLINE_ORDER_UNSPECIFIED, DXGI_DDI_MODE_SCANLINE_ORDER_PROGRESSIVE, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_PROGRESSIVE, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST, DXGI_DDI_MODE_SCANLINE_ORDER enumeration [Display Devices], UMDisplayDriver_Dx10param_Structs_fe7ff8f4-48e3-4ec5-a401-35d729a17440.xml, display.dxgi_ddi_mode_scanline_order, DXGI_DDI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST, DXGI_DDI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_UNSPECIFIED
+ms.keywords : dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_PROGRESSIVE, display.dxgi_ddi_mode_scanline_order, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER, DXGI_DDI_MODE_SCANLINE_ORDER enumeration [Display Devices], DXGI_DDI_MODE_SCANLINE_ORDER, DXGI_DDI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST, UMDisplayDriver_Dx10param_Structs_fe7ff8f4-48e3-4ec5-a401-35d729a17440.xml, DXGI_DDI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST, DXGI_DDI_MODE_SCANLINE_ORDER_UNSPECIFIED, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_UPPER_FIELD_FIRST, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_UNSPECIFIED, DXGI_DDI_MODE_SCANLINE_ORDER_PROGRESSIVE, dxgiddi/DXGI_DDI_MODE_SCANLINE_ORDER_LOWER_FIELD_FIRST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,9 +83,7 @@ The values of the DXGI_DDI_MODE_SCANLINE_ORDER enumeration type indicate whether
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

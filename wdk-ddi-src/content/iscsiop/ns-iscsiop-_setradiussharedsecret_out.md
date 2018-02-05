@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 55be7611-3249-4109-a142-c0115dfebb98
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_SetRADIUSSharedSecret_OUT, storage.setradiussharedsecret_out, iscsiop/PSetRADIUSSharedSecret_OUT, SetRADIUSSharedSecret_OUT structure [Storage Devices], PSetRADIUSSharedSecret_OUT, PSetRADIUSSharedSecret_OUT structure pointer [Storage Devices], SetRADIUSSharedSecret_OUT, structs-iSCSI_497fc66e-8a5d-4390-9229-622b359776bc.xml, *PSetRADIUSSharedSecret_OUT, iscsiop/SetRADIUSSharedSecret_OUT"
+ms.keywords : structs-iSCSI_497fc66e-8a5d-4390-9229-622b359776bc.xml, SetRADIUSSharedSecret_OUT, storage.setradiussharedsecret_out, _SetRADIUSSharedSecret_OUT, iscsiop/SetRADIUSSharedSecret_OUT, *PSetRADIUSSharedSecret_OUT, PSetRADIUSSharedSecret_OUT structure pointer [Storage Devices], SetRADIUSSharedSecret_OUT structure [Storage Devices], PSetRADIUSSharedSecret_OUT, iscsiop/PSetRADIUSSharedSecret_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,18 +61,15 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
 <a href="..\iscsiop\ns-iscsiop-_setradiussharedsecret_in.md">SetRADIUSSharedSecret_IN</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565815">SetRADIUSSharedSecret</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
  
 

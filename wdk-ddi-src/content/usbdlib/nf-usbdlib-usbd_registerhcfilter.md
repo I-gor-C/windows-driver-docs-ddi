@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2cc24024-75ec-45ba-867c-efc8e7da7587
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_RegisterHcFilter routine [Buses], usbfunc_de494163-188c-4356-bd91-c6fa38693d55.xml, USBD_RegisterHcFilter, buses.usbd_registerhcfilter, usbdlib/USBD_RegisterHcFilter
+ms.keywords : usbdlib/USBD_RegisterHcFilter, USBD_RegisterHcFilter routine [Buses], usbfunc_de494163-188c-4356-bd91-c6fa38693d55.xml, buses.usbd_registerhcfilter, USBD_RegisterHcFilter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -76,20 +76,17 @@ USB bus filter drivers must call this routine after attaching their device objec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Deprecated. Deprecated. |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h (include Usbdlib.h) |
-| **Library** |  |
+| **Library** | Usbd.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
-
 <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ce967b15-723f-4ab7-8a79-8234291d1950
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_MS_SMHBA_PORTATTRIBUTES, PMS_SMHBA_PORTATTRIBUTES structure pointer [Storage Devices], PMS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES, hbapiwmi/MS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES structure [Storage Devices], MS_SMHBA_PORTATTRIBUTES, storage.ms_smhba_portattributes, structs-Fibre_66af1ae7-5db4-4dd3-bacc-0665dd757660.xml, hbapiwmi/PMS_SMHBA_PORTATTRIBUTES"
+ms.keywords : MS_SMHBA_PORTATTRIBUTES structure [Storage Devices], *PMS_SMHBA_PORTATTRIBUTES, storage.ms_smhba_portattributes, PMS_SMHBA_PORTATTRIBUTES, structs-Fibre_66af1ae7-5db4-4dd3-bacc-0665dd757660.xml, _MS_SMHBA_PORTATTRIBUTES, hbapiwmi/PMS_SMHBA_PORTATTRIBUTES, PMS_SMHBA_PORTATTRIBUTES structure pointer [Storage Devices], MS_SMHBA_PORTATTRIBUTES, hbapiwmi/MS_SMHBA_PORTATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES
+req.typenames : "*PMS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES"
 ---
 
 # _MS_SMHBA_PORTATTRIBUTES structure
@@ -84,7 +84,4 @@ An integer that indicates the port type of the SMHBA port.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

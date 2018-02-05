@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -99,24 +99,20 @@ To receive notifications of session events, a driver calls the <b>IoRegisterCont
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= APC_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
+
+<a href="..\wdm\ns-wdm-_io_session_state_notification.md">IO_SESSION_STATE_NOTIFICATION</a>
 
 <a href="..\wdm\nf-wdm-ioregistercontainernotification.md">IoRegisterContainerNotification</a>
 
 <a href="..\wdm\ns-wdm-_io_session_connect_info.md">IO_SESSION_CONNECT_INFO</a>
-
-<a href="..\wdm\ns-wdm-_io_session_state_notification.md">IO_SESSION_STATE_NOTIFICATION</a>
-
-<a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
 
 <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
 

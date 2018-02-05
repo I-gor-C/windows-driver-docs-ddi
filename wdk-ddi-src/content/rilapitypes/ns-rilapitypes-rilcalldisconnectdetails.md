@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 57b4d120-e12a-4821-a379-a392b804590c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcalldisconnectdetails_2, *LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, rilapitypes/RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.rilcalldisconnectdetails_2, *LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista], RILCALLDISCONNECTDETAILS, rilapitypes/RILCALLDISCONNECTDETAILS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,7 +90,4 @@ typedef struct _RILCALLDISCONNECTDETAILS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ebfb768a-fa6b-4781-96e1-787278237d5f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILSETSMSCPARAMS, netvista.rilsetsmscparams, RILSETSMSCPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILSETSMSCPARAMS, RILSETSMSCPARAMS
+ms.keywords : ntddrilapitypes/RILSETSMSCPARAMS, RILSETSMSCPARAMS, RILSETSMSCPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetsmscparams, *LPRILSETSMSCPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ typedef struct _RILSETSMSCPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 976e0d67-a03c-4545-b165-4b48062c03b7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanPacketServiceActionAttach, _WWAN_PACKET_SERVICE_ACTION, WwanPacketServiceActionAttach, PWWAN_PACKET_SERVICE_ACTION, WwanRef_6ab5ff1d-9b6c-4018-8d3b-7753ebca12e4.xml, *PWWAN_PACKET_SERVICE_ACTION, wwan/WWAN_PACKET_SERVICE_ACTION, PWWAN_PACKET_SERVICE_ACTION enumeration pointer [Network Drivers Starting with Windows Vista], netvista.wwan_packet_service_action, wwan/PWWAN_PACKET_SERVICE_ACTION, wwan/WwanPacketServiceActionDetach, WwanPacketServiceActionDetach, WWAN_PACKET_SERVICE_ACTION, WWAN_PACKET_SERVICE_ACTION enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : wwan/PWWAN_PACKET_SERVICE_ACTION, PWWAN_PACKET_SERVICE_ACTION, _WWAN_PACKET_SERVICE_ACTION, wwan/WWAN_PACKET_SERVICE_ACTION, *PWWAN_PACKET_SERVICE_ACTION, WWAN_PACKET_SERVICE_ACTION, WwanPacketServiceActionAttach, WWAN_PACKET_SERVICE_ACTION enumeration [Network Drivers Starting with Windows Vista], wwan/WwanPacketServiceActionAttach, WwanPacketServiceActionDetach, wwan/WwanPacketServiceActionDetach, WwanRef_6ab5ff1d-9b6c-4018-8d3b-7753ebca12e4.xml, netvista.wwan_packet_service_action, PWWAN_PACKET_SERVICE_ACTION enumeration pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,9 +69,7 @@ typedef enum _WWAN_PACKET_SERVICE_ACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

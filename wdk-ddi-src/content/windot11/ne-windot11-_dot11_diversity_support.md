@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 64eeb1bf-c18a-4dfa-b6ea-438d9e10fe4a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/dot11_diversity_support_fixedlist, PDOT11_DIVERSITY_SUPPORT, DOT11_DIVERSITY_SUPPORT, Native_802.11_data_types_29b0e3d8-450c-4d41-817b-ba83cc912168.xml, DOT11_DIVERSITY_SUPPORT enumeration [Network Drivers Starting with Windows Vista], netvista.dot11_diversity_support, _DOT11_DIVERSITY_SUPPORT, windot11/DOT11_DIVERSITY_SUPPORT, dot11_diversity_support_fixedlist, windot11/dot11_diversity_support_notsupported, dot11_diversity_support_dynamic, windot11/dot11_diversity_support_dynamic, windot11/PDOT11_DIVERSITY_SUPPORT, dot11_diversity_support_unknown, windot11/dot11_diversity_support_unknown, dot11_diversity_support_notsupported, *PDOT11_DIVERSITY_SUPPORT, PDOT11_DIVERSITY_SUPPORT enumeration pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : windot11/dot11_diversity_support_fixedlist, dot11_diversity_support_fixedlist, windot11/dot11_diversity_support_unknown, *PDOT11_DIVERSITY_SUPPORT, DOT11_DIVERSITY_SUPPORT enumeration [Network Drivers Starting with Windows Vista], PDOT11_DIVERSITY_SUPPORT enumeration pointer [Network Drivers Starting with Windows Vista], windot11/dot11_diversity_support_notsupported, Native_802.11_data_types_29b0e3d8-450c-4d41-817b-ba83cc912168.xml, dot11_diversity_support_unknown, PDOT11_DIVERSITY_SUPPORT, windot11/PDOT11_DIVERSITY_SUPPORT, netvista.dot11_diversity_support, windot11/dot11_diversity_support_dynamic, windot11/DOT11_DIVERSITY_SUPPORT, dot11_diversity_support_notsupported, DOT11_DIVERSITY_SUPPORT, dot11_diversity_support_dynamic, _DOT11_DIVERSITY_SUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_DIVERSITY_SUPPORT, DOT11_DIVERSITY_SUPPORT"
+req.typenames : DOT11_DIVERSITY_SUPPORT, *PDOT11_DIVERSITY_SUPPORT
 req.product : Windows 10 or later.
 ---
 
@@ -69,8 +69,8 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
 <td>The PHY supports antenna diversity that is performed over the fixed list of antennas defined in
      the 
      <b>dot11DiversitySelectionRx</b> MIB object. For more information about this MIB object, see 
-     <mshelp:link keywords="netvista.oid_dot11_diversity_selection_rx" tabindex="0">
-     OID_DOT11_DIVERSITY_SELECTION_RX</mshelp:link>.</td>
+     <a href="https://msdn.microsoft.com/en-us/library/ee483634.aspx">
+     OID_DOT11_DIVERSITY_SELECTION_RX</a>.</td>
 </tr>
 
 <tr>
@@ -88,15 +88,13 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.oid_dot11_diversity_selection_rx" tabindex="0">
-   OID_DOT11_DIVERSITY_SELECTION_RX</mshelp:link>
+<a href="https://msdn.microsoft.com/en-us/library/ee483634.aspx">
+   OID_DOT11_DIVERSITY_SELECTION_RX</a>
 
  
 

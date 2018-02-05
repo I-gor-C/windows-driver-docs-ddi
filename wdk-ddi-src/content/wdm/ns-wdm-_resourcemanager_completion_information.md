@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c3b866c2-5908-418e-8744-9f8f22cdc88a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RESOURCEMANAGER_COMPLETION_INFORMATION structure [Kernel-Mode Driver Architecture], RESOURCEMANAGER_COMPLETION_INFORMATION, ktm_ref_8a799d2d-405f-4ee9-bb2d-010c131666d0.xml, wdm/RESOURCEMANAGER_COMPLETION_INFORMATION, kernel.resourcemanager_completion_information, _RESOURCEMANAGER_COMPLETION_INFORMATION, *PRESOURCEMANAGER_COMPLETION_INFORMATION
+ms.keywords : "*PRESOURCEMANAGER_COMPLETION_INFORMATION, RESOURCEMANAGER_COMPLETION_INFORMATION, RESOURCEMANAGER_COMPLETION_INFORMATION structure [Kernel-Mode Driver Architecture], ktm_ref_8a799d2d-405f-4ee9-bb2d-010c131666d0.xml, wdm/RESOURCEMANAGER_COMPLETION_INFORMATION, _RESOURCEMANAGER_COMPLETION_INFORMATION, kernel.resourcemanager_completion_information"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -52,7 +52,5 @@ The <b>RESOURCEMANAGER_COMPLETION_INFORMATION</b> structure is not used.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h) |

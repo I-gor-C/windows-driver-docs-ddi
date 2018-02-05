@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 58a0cc96-7180-4823-a4af-bf2d5fa49474
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MicroDrv_42f31c58-206a-468e-98ff-794c69b82457.xml, SCANINFO structure [Imaging Devices], *PSCANINFO, _SCANINFO, PSCANINFO structure pointer [Imaging Devices], wiamicro/PSCANINFO, SCANINFO, wiamicro/SCANINFO, PSCANINFO, image.scaninfo
+ms.keywords : MicroDrv_42f31c58-206a-468e-98ff-794c69b82457.xml, *PSCANINFO, SCANINFO, image.scaninfo, PSCANINFO structure pointer [Imaging Devices], _SCANINFO, PSCANINFO, wiamicro/SCANINFO, wiamicro/PSCANINFO, SCANINFO structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -411,16 +411,14 @@ This structure is used as a parameter in the microdriver's <a href="..\wiamicro\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamicro.h (include Wiamicro.h) |
 
 ## See Also
 
-<a href="..\wiamicro\nf-wiamicro-setpixelwindow.md">SetPixelWindow</a>
-
 <a href="..\wiamicro\nf-wiamicro-scan.md">Scan</a>
+
+<a href="..\wiamicro\nf-wiamicro-setpixelwindow.md">SetPixelWindow</a>
 
  
 

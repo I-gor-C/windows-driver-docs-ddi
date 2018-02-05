@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F8D7A87D-FFE6-4846-A902-2A686D78F0C1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020, display.d3d12ddiarg_video_process_output_stream_parameters, D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020, D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 structure [Display Devices]
+ms.keywords : display.d3d12ddiarg_video_process_output_stream_parameters, d3d12umddi/D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020, D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020 structure [Display Devices], D3D12DDIARG_VIDEO_PROCESS_OUTPUT_STREAM_ARGUMENTS_0020
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -121,18 +121,15 @@ The target rectangle, which is the area within the destination surface where the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
 ## See Also
 
 <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_alpha_fill_mode_0020.md">D3D12DDI_VIDEO_PROCESS_ALPHA_FILL_MODE</a>
 
-<a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a>
-
 <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a>
+
+<a href="https://msdn.microsoft.com/E25C933F-0DB3-4BC4-9755-9361B2B9B9CB">DXGI_COLOR_SPACE_TYPE</a>
 
  
 

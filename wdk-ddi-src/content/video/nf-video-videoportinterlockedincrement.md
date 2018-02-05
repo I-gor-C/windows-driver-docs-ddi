@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d3507214-82bc-4d73-8562-2843d7876137
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortInterlockedIncrement function [Display Devices], video/VideoPortInterlockedIncrement, VideoPortInterlockedIncrement, VideoPort_Functions_ae59ee02-e3b2-43f6-8b93-8fe6bcedf248.xml, display.videoportinterlockedincrement
+ms.keywords : VideoPortInterlockedIncrement function [Display Devices], video/VideoPortInterlockedIncrement, VideoPortInterlockedIncrement, display.videoportinterlockedincrement, VideoPort_Functions_ae59ee02-e3b2-43f6-8b93-8fe6bcedf248.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ This function is atomic only with respect to other <b>VideoPortInterlocked</b><i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c5396581-e9f2-47eb-bb82-1e54f5def4d0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_flipoverlay, DXGKARG_FLIPOVERLAY structure [Display Devices], _DXGKARG_FLIPOVERLAY, d3dkmddi/DXGKARG_FLIPOVERLAY, DXGKARG_FLIPOVERLAY, DmStructs_8ff06344-e7f5-44b1-95fc-d3b363428d43.xml
+ms.keywords : DmStructs_8ff06344-e7f5-44b1-95fc-d3b363428d43.xml, display.dxgkarg_flipoverlay, DXGKARG_FLIPOVERLAY, d3dkmddi/DXGKARG_FLIPOVERLAY, _DXGKARG_FLIPOVERLAY, DXGKARG_FLIPOVERLAY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,7 @@ typedef struct _DXGKARG_FLIPOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

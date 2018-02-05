@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2641a446-1890-4b7d-ac28-c72338207f87
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.displayid_detailed_timing_type_i_aspect_ratio, d3dkmdt/DIDDT1_AspectRatio_4x3, DIDDT1_AspectRatio_15x9, d3dkmdt/DIDDT1_AspectRatio_15x9, d3dkmdt/DIDDT1_AspectRatio_16x9, DIDDT1_AspectRatio_5x4, DIDDT1_AspectRatio_4x3, _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO, d3dkmdt/DIDDT1_AspectRatio_5x4, DIDDT1_AspectRatio_1x1, _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO enumeration [Display Devices], DmEnums_234cb76b-4b56-4ae4-b2b4-2eaa56cef4a9.xml, DIDDT1_AspectRatio_16x9, DIDDT1_AspectRatio_16x10, d3dkmdt/DIDDT1_AspectRatio_1x1, d3dkmdt/_DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO, d3dkmdt/DIDDT1_AspectRatio_16x10
+ms.keywords : d3dkmdt/DIDDT1_AspectRatio_16x9, d3dkmdt/_DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO, DmEnums_234cb76b-4b56-4ae4-b2b4-2eaa56cef4a9.xml, d3dkmdt/DIDDT1_AspectRatio_4x3, d3dkmdt/DIDDT1_AspectRatio_15x9, d3dkmdt/DIDDT1_AspectRatio_1x1, DIDDT1_AspectRatio_16x10, d3dkmdt/DIDDT1_AspectRatio_5x4, DIDDT1_AspectRatio_5x4, d3dkmdt/DIDDT1_AspectRatio_16x10, DIDDT1_AspectRatio_4x3, _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO, DIDDT1_AspectRatio_1x1, _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO enumeration [Display Devices], DIDDT1_AspectRatio_15x9, DIDDT1_AspectRatio_16x9, display.displayid_detailed_timing_type_i_aspect_ratio
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -93,7 +93,5 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_ASPECT_RATIO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |

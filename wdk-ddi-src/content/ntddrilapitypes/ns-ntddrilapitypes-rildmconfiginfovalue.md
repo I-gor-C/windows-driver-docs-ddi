@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dda43544-4609-4674-9616-8e09939f0c39
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILDMCONFIGINFOVALUE, *LPRILDMCONFIGINFOVALUE, ntddrilapitypes/RILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE structure [Network Drivers Starting with Windows Vista], netvista.rildmconfiginfovalue
+ms.keywords : netvista.rildmconfiginfovalue, RILDMCONFIGINFOVALUE structure [Network Drivers Starting with Windows Vista], *LPRILDMCONFIGINFOVALUE, ntddrilapitypes/RILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ typedef struct _RILDMCONFIGINFOVALUE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

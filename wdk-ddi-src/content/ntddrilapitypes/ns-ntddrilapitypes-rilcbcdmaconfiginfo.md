@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6f8b19ee-a079-4408-8567-39ad832879f2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCBCDMACONFIGINFO, RILCBCDMACONFIGINFO structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCBCDMACONFIGINFO, *LPRILCBCDMACONFIGINFO, netvista.rilcbcdmaconfiginfo
+ms.keywords : RILCBCDMACONFIGINFO, netvista.rilcbcdmaconfiginfo, *LPRILCBCDMACONFIGINFO, RILCBCDMACONFIGINFO structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILCBCDMACONFIGINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILCBCDMACONFIGINFO, *LPRILCBCDMACONFIGINFO
+req.typenames : "*LPRILCBCDMACONFIGINFO, RILCBCDMACONFIGINFO"
 ---
 
 # RILCBCDMACONFIGINFO structure
@@ -69,7 +69,4 @@ typedef struct _RILCBCDMACONFIGINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

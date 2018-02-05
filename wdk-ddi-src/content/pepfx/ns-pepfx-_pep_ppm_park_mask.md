@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 528576FD-BDB2-4772-9151-A1C855BA953E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK, PPEP_PPM_PARK_MASK structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_PARK_MASK, _PEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_park_mask, *PPEP_PPM_PARK_MASK, pepfx/PEP_PPM_PARK_MASK
+ms.keywords : PPEP_PPM_PARK_MASK, pepfx/PPEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK, kernel.pep_ppm_park_mask, PPEP_PPM_PARK_MASK structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK structure [Kernel-Mode Driver Architecture], PEP_PPM_PARK_MASK, pepfx/PEP_PPM_PARK_MASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,7 @@ Returns the PEP parking preference for each processor.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

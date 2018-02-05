@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f99fc76e-a569-4a7e-9f8d-3f604ccfa6a3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_SLOTINFO_ALL, netvista.riluiccslotinfoparammask, RILUICCSLOTINFOPARAMMASK, RILUICCSLOTINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_SLOTINFO_ALL, ntddrilapitypes/RIL_PARAM_SLOTINFO_SLOTSTATE, ntddrilapitypes/RILUICCSLOTINFOPARAMMASK, RIL_PARAM_SLOTINFO_SLOTSTATE
+ms.keywords : netvista.riluiccslotinfoparammask, ntddrilapitypes/RIL_PARAM_SLOTINFO_SLOTSTATE, ntddrilapitypes/RIL_PARAM_SLOTINFO_ALL, RIL_PARAM_SLOTINFO_ALL, RIL_PARAM_SLOTINFO_SLOTSTATE, RILUICCSLOTINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILUICCSLOTINFOPARAMMASK, RILUICCSLOTINFOPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -73,7 +73,4 @@ typedef enum _RILUICCSLOTINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

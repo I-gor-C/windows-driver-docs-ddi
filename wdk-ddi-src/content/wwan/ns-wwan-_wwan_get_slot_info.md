@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 62955CA4-8631-4A85-8E78-5A91A9DA0069
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_GET_SLOT_INFO, PWWAN_GET_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], _WWAN_GET_SLOT_INFO, netvista.wwan_get_slot_info_status, WWAN_GET_SLOT_INFO, WWAN_GET_SLOT_INFO structure [Network Drivers Starting with Windows Vista], wwan/WWAN_GET_SLOT_INFO, *PWWAN_GET_SLOT_INFO, PWWAN_GET_SLOT_INFO
+ms.keywords : wwan/PWWAN_GET_SLOT_INFO, wwan/WWAN_GET_SLOT_INFO, PWWAN_GET_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_GET_SLOT_INFO, WWAN_GET_SLOT_INFO structure [Network Drivers Starting with Windows Vista], netvista.wwan_get_slot_info_status, _WWAN_GET_SLOT_INFO, *PWWAN_GET_SLOT_INFO, PWWAN_GET_SLOT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_GET_SLOT_INFO, *PWWAN_GET_SLOT_INFO
+req.typenames : "*PWWAN_GET_SLOT_INFO, WWAN_GET_SLOT_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -60,9 +60,7 @@ Represents the index of the SIM slot. <b>SlotIndex</b> can be mapped to either a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

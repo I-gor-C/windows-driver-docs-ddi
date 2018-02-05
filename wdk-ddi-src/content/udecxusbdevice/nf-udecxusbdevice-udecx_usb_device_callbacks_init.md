@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : ACBF5E07-9F36-4DF9-B72B-1BF159CE27A7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UDECX_USB_DEVICE_CALLBACKS_INIT, udecxusbdevice/UDECX_USB_DEVICE_CALLBACKS_INIT, buses.udecx_usb_device_callbacks_init, UDECX_USB_DEVICE_CALLBACKS_INIT method [Buses]
+ms.keywords : UDECX_USB_DEVICE_CALLBACKS_INIT method [Buses], UDECX_USB_DEVICE_CALLBACKS_INIT, udecxusbdevice/UDECX_USB_DEVICE_CALLBACKS_INIT, buses.udecx_usb_device_callbacks_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
+req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
 req.product : Windows 10 or later.
 ---
 
@@ -66,14 +66,12 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

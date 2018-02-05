@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d1f3d510-5b2c-4956-b9e0-cd26b2d818a9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/WRITE_REGISTER_ULONG, k103_af58a3ec-4102-4a89-9c58-e56f99d793d0.xml, WRITE_REGISTER_ULONG routine [Kernel-Mode Driver Architecture], kernel.write_register_ulong, WRITE_REGISTER_ULONG
+ms.keywords : k103_af58a3ec-4102-4a89-9c58-e56f99d793d0.xml, wdm/WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG routine [Kernel-Mode Driver Architecture], kernel.write_register_ulong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,11 +74,9 @@ Callers of <b>WRITE_REGISTER_ULONG</b> can be running at any IRQL, assuming the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |

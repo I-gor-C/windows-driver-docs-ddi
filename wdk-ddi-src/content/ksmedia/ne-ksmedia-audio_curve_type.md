@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : E3CE3385-8744-4E3F-A5EF-41AC4E3E4375
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : AUDIO_CURVE_TYPE, audio.audio_curve_type, AUDIO_CURVE_TYPE_WINDOWS_FADE, ksmedia/AUDIO_CURVE_TYPE_NONE, AUDIO_CURVE_TYPE_NONE, ksmedia/AUDIO_CURVE_TYPE_WINDOWS_FADE, AUDIO_CURVE_TYPE enumeration [Audio Devices], ksmedia/AUDIO_CURVE_TYPE
+ms.keywords : AUDIO_CURVE_TYPE_WINDOWS_FADE, audio.audio_curve_type, AUDIO_CURVE_TYPE_NONE, ksmedia/AUDIO_CURVE_TYPE_NONE, AUDIO_CURVE_TYPE enumeration [Audio Devices], AUDIO_CURVE_TYPE, ksmedia/AUDIO_CURVE_TYPE, ksmedia/AUDIO_CURVE_TYPE_WINDOWS_FADE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -105,9 +105,7 @@ And the following diagram shows a graphical representation of the preceding pseu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h |
 
 ## See Also

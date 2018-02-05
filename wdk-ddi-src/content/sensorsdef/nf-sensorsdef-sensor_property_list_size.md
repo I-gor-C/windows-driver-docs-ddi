@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 17B53AAF-5027-4E45-ABAF-566771DDF1DE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SENSOR_PROPERTY_LIST_SIZE function [Sensor Devices], sensorsdef/SENSOR_PROPERTY_LIST_SIZE, SENSOR_PROPERTY_LIST_SIZE, sensors.sensor_property_list_size
+ms.keywords : SENSOR_PROPERTY_LIST_SIZE, sensors.sensor_property_list_size, SENSOR_PROPERTY_LIST_SIZE function [Sensor Devices], sensorsdef/SENSOR_PROPERTY_LIST_SIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,6 @@ The <b>SENSOR_PROPERTY_LIST_SIZE</b> function returns a ULONG value that represe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorsdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

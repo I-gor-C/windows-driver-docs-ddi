@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8c06da38-6f3b-4cd6-8331-c88758a7f00b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KSMETHOD_ITEM_IRP_STORAGE, KSMETHOD_ITEM_IRP_STORAGE, KSMETHOD_ITEM_IRP_STORAGE macro [Streaming Media Devices], ksfunc_f9a51af4-aa4e-432d-99e3-03052e99b902.xml, stream.ksmethod_item_irp_storage
+ms.keywords : ks/KSMETHOD_ITEM_IRP_STORAGE, KSMETHOD_ITEM_IRP_STORAGE macro [Streaming Media Devices], ksfunc_f9a51af4-aa4e-432d-99e3-03052e99b902.xml, KSMETHOD_ITEM_IRP_STORAGE, stream.ksmethod_item_irp_storage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -71,28 +71,23 @@ The macro is defined as follows:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ks.h |
 
 ## See Also
-
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-
-<a href="..\ks\nf-ks-ksfastmethodhandler.md">KsFastMethodHandler</a>
 
 <a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
 
 <a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
 
+<a href="..\ks\nf-ks-ksmethodhandlerwithallocator.md">KsMethodHandlerWithAllocator</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
 <a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
 
-<a href="..\ks\nf-ks-ksmethodhandlerwithallocator.md">KsMethodHandlerWithAllocator</a>
+<a href="..\ks\nf-ks-ksfastmethodhandler.md">KsFastMethodHandler</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 865349bd-400d-4acf-a2f7-33da128702be
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtRollbackTransaction, ktm_ref_c29e1cd7-ffe0-4dab-be7f-a50a1d430ae3.xml, wdm/NtRollbackTransaction, ZwRollbackTransaction, wdm/ZwRollbackTransaction, kernel.zwrollbacktransaction, ZwRollbackTransaction routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/ZwRollbackTransaction, ktm_ref_c29e1cd7-ffe0-4dab-be7f-a50a1d430ae3.xml, kernel.zwrollbacktransaction, ZwRollbackTransaction, wdm/NtRollbackTransaction, ZwRollbackTransaction routine [Kernel-Mode Driver Architecture], NtRollbackTransaction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -152,26 +152,25 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
+<a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
 
 <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
 
-<a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
-
 <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
+
+<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

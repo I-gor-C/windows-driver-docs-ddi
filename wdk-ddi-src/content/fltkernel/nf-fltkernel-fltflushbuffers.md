@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 269be3a9-7dd8-45e2-8687-99f8ca8f9b8b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFlushBuffers, ifsk.fltflushbuffers, FltFlushBuffers routine [Installable File System Drivers], FltApiRef_e_to_o_cd194ce5-6afd-49f2-84c5-aa93ede9309a.xml, fltkernel/FltFlushBuffers
+ms.keywords : FltFlushBuffers routine [Installable File System Drivers], ifsk.fltflushbuffers, fltkernel/FltFlushBuffers, FltFlushBuffers, FltApiRef_e_to_o_cd194ce5-6afd-49f2-84c5-aa93ede9309a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,14 +101,10 @@ A minifilter driver can call <b>FltFlushBuffers</b> to issue an <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

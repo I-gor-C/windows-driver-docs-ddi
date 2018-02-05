@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0406efa5-26ad-4a3d-829b-d9b03b7c3b26
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : MSiSCSI_InitiatorSessionInfo structure [Storage Devices], storage.msiscsi_initiatorsessioninfo, *PMSiSCSI_InitiatorSessionInfo, _MSiSCSI_InitiatorSessionInfo, MSiSCSI_InitiatorSessionInfo, PMSiSCSI_InitiatorSessionInfo, PMSiSCSI_InitiatorSessionInfo structure pointer [Storage Devices], iscsimgt/MSiSCSI_InitiatorSessionInfo, structs-iSCSI_a3ebb8e8-47ff-4482-b896-7b310216bdf1.xml, iscsimgt/PMSiSCSI_InitiatorSessionInfo
+ms.keywords : MSiSCSI_InitiatorSessionInfo, iscsimgt/PMSiSCSI_InitiatorSessionInfo, PMSiSCSI_InitiatorSessionInfo structure pointer [Storage Devices], storage.msiscsi_initiatorsessioninfo, PMSiSCSI_InitiatorSessionInfo, structs-iSCSI_a3ebb8e8-47ff-4482-b896-7b310216bdf1.xml, iscsimgt/MSiSCSI_InitiatorSessionInfo, _MSiSCSI_InitiatorSessionInfo, MSiSCSI_InitiatorSessionInfo structure [Storage Devices], *PMSiSCSI_InitiatorSessionInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,18 +71,15 @@ You must implement this class.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also
 
-<a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
-
 <a href="..\iscsimgt\ns-iscsimgt-_iscsi_sessionstaticinfo.md">ISCSI_SessionStaticInfo</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563057">MSiSCSI_InitiatorSessionInfo WMI Class</a>
+
+<a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
 
  
 

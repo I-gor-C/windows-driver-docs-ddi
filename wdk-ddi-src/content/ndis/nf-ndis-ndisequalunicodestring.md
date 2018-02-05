@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8f3abf40-bb47-4fa6-862b-6126edb00b36
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisequalunicodestring, NdisEqualUnicodeString macro [Network Drivers Starting with Windows Vista], ndis_string_ref_ccfcf1e6-b983-47a3-a46e-3a6ff1eb7158.xml, ndis/NdisEqualUnicodeString, NdisEqualUnicodeString
+ms.keywords : NdisEqualUnicodeString, NdisEqualUnicodeString macro [Network Drivers Starting with Windows Vista], ndis/NdisEqualUnicodeString, netvista.ndisequalunicodestring, ndis_string_ref_ccfcf1e6-b983-47a3-a46e-3a6ff1eb7158.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -58,11 +58,11 @@ BOOLEAN NdisEqualUnicodeString(
 
 `_String1`
 
-TBD
+A pointer to an NDIS_STRING type that describes the first Unicode string.
 
 `_String2`
 
-TBD
+A pointer to an NDIS_STRING type that describes the second Unicode string.
 
 `_CaseInsensitive`
 
@@ -82,12 +82,10 @@ Starting with Windows 2000 and later drivers, a string of type NDIS_STRING is a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 

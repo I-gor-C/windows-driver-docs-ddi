@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9368846a-b985-40f4-8b02-1bb48431141a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_KsEdit, avfunc_1e902412-8322-4155-9fdb-dfc0fa1b6b37.xml, stream._ksedit, _KsEdit function [Streaming Media Devices], ks/_KsEdit"
+ms.keywords : stream._ksedit, _KsEdit, avfunc_1e902412-8322-4155-9fdb-dfc0fa1b6b37.xml, ks/_KsEdit, _KsEdit function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,11 +105,8 @@ Note that when calling <b>_KsEdit</b>, a caller must hold the mutex associated w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

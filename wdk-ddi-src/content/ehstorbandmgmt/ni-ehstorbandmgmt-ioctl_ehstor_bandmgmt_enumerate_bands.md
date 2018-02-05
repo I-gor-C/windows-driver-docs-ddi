@@ -109,15 +109,14 @@ A driver or application can query for the necessary output buffer size by settin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">BAND_TABLE</a>
-
 <b>ENUMERATE_BANDS_PARAMETERS</b>
+
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_enumerate_bands_parameters.md">BAND_TABLE</a>
 
  
 

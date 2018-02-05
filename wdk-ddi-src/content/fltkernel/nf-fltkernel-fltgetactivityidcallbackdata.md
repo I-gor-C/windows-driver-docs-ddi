@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3DAA2135-768E-4A37-B2FD-9915F16D8A66
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetactivityidcallbackdata, FltGetActivityIdCallbackData routine [Installable File System Drivers], fltkernel/FltGetActivityIdCallbackData, FltGetActivityIdCallbackData
+ms.keywords : ifsk.fltgetactivityidcallbackdata, FltGetActivityIdCallbackData, FltGetActivityIdCallbackData routine [Installable File System Drivers], fltkernel/FltGetActivityIdCallbackData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,20 +109,18 @@ An activity ID was returned in the <b>GUID</b> value pointed to by <i>Guid</i>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltsetactivityidcallbackdata.md">FltSetActivityIdCallbackData</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltpropagateactivityidtothread.md">FltPropagateActivityIdToThread</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetactivityidcallbackdata.md">FltSetActivityIdCallbackData</a>
 
  
 

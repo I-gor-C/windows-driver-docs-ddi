@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 51f2f837-7d67-4a9d-a365-d9d1b24977e5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltuserstructures/FILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION structure pointer [Installable File System Drivers], FltSystemStructures_cf6b475f-0334-4d11-8449-f66c611011bf.xml, PFILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION, ifsk.filter_volume_standard_information, fltuserstructures/PFILTER_VOLUME_STANDARD_INFORMATION, _FILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION structure [Installable File System Drivers]
+ms.keywords : "_FILTER_VOLUME_STANDARD_INFORMATION, FltSystemStructures_cf6b475f-0334-4d11-8449-f66c611011bf.xml, fltuserstructures/FILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION structure pointer [Installable File System Drivers], FILTER_VOLUME_STANDARD_INFORMATION, ifsk.filter_volume_standard_information, fltuserstructures/PFILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION structure [Installable File System Drivers]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION"
+req.typenames : FILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION
 ---
 
 # _FILTER_VOLUME_STANDARD_INFORMATION structure
@@ -106,24 +106,22 @@ A FILTER_VOLUME_STANDARD_INFORMATION structure can be allocated from paged or no
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available starting with Windows Vista. This structure is available starting with Windows Vista. |
 | **Header** | fltuserstructures.h (include FltUser.h, FltKernel.h) |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541522">FilterVolumeFindClose</a>
-
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_basic_information.md">FILTER_VOLUME_BASIC_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541525">FilterVolumeFindFirst</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541530">FilterVolumeFindNext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumes.md">FltEnumerateVolumes</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541525">FilterVolumeFindFirst</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541522">FilterVolumeFindClose</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
 
  
 

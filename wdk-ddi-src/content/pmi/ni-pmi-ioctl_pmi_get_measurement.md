@@ -73,19 +73,18 @@ The <b>IOCTL_PMI_GET_MEASUREMENT</b> request queries the current measurement dat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
+<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
 
 <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+<a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
 
 <a href="..\pmi\ns-pmi-_pmi_measurement_data.md">PMI_MEASUREMENT_DATA</a>
 

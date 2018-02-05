@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 179D61E3-C2EE-4821-93F8-DB763892DD3D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SOC_SUBSYSTEM_TYPE enumeration [WHEA Drivers and Applications], ntddk/SOC_SUBSYS_VENDOR_DEFINED, ntddk/SOC_SUBSYS_SENSORS, SOC_SUBSYS_WIRELSS_CONNECTIVITY, SOC_SUBSYS_SENSORS, ntddk/SOC_SUBSYSTEM_TYPE, _SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE, SOC_SUBSYS_AUDIO_DSP, SOC_SUBSYS_VENDOR_DEFINED, ntddk/SOC_SUBSYS_WIRELSS_CONNECTIVITY, SOC_SUBSYSTEM_WIRELESS_MODEM, *PSOC_SUBSYSTEM_TYPE, whea.soc_sybsystem_type, ntddk/SOC_SUBSYSTEM_WIRELESS_MODEM, ntddk/SOC_SUBSYS_AUDIO_DSP
+ms.keywords : ntddk/SOC_SUBSYSTEM_WIRELESS_MODEM, SOC_SUBSYS_SENSORS, ntddk/SOC_SUBSYS_WIRELSS_CONNECTIVITY, _SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_WIRELESS_MODEM, SOC_SUBSYS_WIRELSS_CONNECTIVITY, SOC_SUBSYS_AUDIO_DSP, ntddk/SOC_SUBSYS_AUDIO_DSP, ntddk/SOC_SUBSYS_SENSORS, SOC_SUBSYS_VENDOR_DEFINED, whea.soc_sybsystem_type, *PSOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYS_VENDOR_DEFINED, SOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE enumeration [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -96,7 +96,5 @@ typedef enum _SOC_SUBSYSTEM_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ntddk.h |

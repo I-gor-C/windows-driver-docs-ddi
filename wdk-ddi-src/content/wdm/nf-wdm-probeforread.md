@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 86b09f5c-6527-447e-b383-b97d45a57ce7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ProbeForRead routine [Kernel-Mode Driver Architecture], k102_a0260886-9f28-408e-91a1-fde07974ef9b.xml, ProbeForRead, wdm/ProbeForRead, kernel.probeforread
+ms.keywords : ProbeForRead, ProbeForRead routine [Kernel-Mode Driver Architecture], k102_a0260886-9f28-408e-91a1-fde07974ef9b.xml, kernel.probeforread, wdm/ProbeForRead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,12 +89,11 @@ If <i>Length</i> = 0, <b>ProbeForRead</b> does no checking of the address. In th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 

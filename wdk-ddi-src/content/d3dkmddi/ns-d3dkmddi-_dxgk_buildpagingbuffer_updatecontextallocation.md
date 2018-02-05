@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DA23251C-E901-48A0-9B58-458622DE8CF0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION structure [Display Devices], display.dxgk_buildpagingbuffer_updatecontextallocation, _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
+ms.keywords : d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION structure [Display Devices], DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, display.dxgk_buildpagingbuffer_updatecontextallocation, _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ A pointer to the driver-private data that was passed in the call to <a href="..\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

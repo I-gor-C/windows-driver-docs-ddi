@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6ebb1955-1ffc-4869-84c8-69d672ac782e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfworkitemgetparentobject, kmdf.wdfworkitemgetparentobject, wdfworkitem/WdfWorkItemGetParentObject, WdfWorkItemGetParentObject, WdfWorkItemGetParentObject method, DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, PFN_WDFWORKITEMGETPARENTOBJECT
+ms.keywords : WdfWorkItemGetParentObject method, wdf.wdfworkitemgetparentobject, DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, WdfWorkItemGetParentObject, kmdf.wdfworkitemgetparentobject, PFN_WDFWORKITEMGETPARENTOBJECT, wdfworkitem/WdfWorkItemGetParentObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,19 @@ For more information about work items, see <a href="https://docs.microsoft.com/e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfworkitem.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>
-
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemcreate.md">WdfWorkItemCreate</a>
 
  
 

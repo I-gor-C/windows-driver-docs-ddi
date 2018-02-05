@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 626cbf2d-2841-4b52-b17d-5377aa2f6264
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_VIDEO_PORT_AGP_INTERFACE_2, Video_Structs_99a2957c-7304-4e59-9609-748a5d7b878b.xml, display.video_port_agp_interface_2, VIDEO_PORT_AGP_INTERFACE_2 structure [Display Devices], video/VIDEO_PORT_AGP_INTERFACE_2, VIDEO_PORT_AGP_INTERFACE_2, *PVIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2, video/PVIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2 structure pointer [Display Devices]"
+ms.keywords : video/PVIDEO_PORT_AGP_INTERFACE_2, Video_Structs_99a2957c-7304-4e59-9609-748a5d7b878b.xml, *PVIDEO_PORT_AGP_INTERFACE_2, VIDEO_PORT_AGP_INTERFACE_2 structure [Display Devices], display.video_port_agp_interface_2, VIDEO_PORT_AGP_INTERFACE_2, _VIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2, video/VIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2 structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_INTERFACE_2, *PVIDEO_PORT_AGP_INTERFACE_2
+req.typenames : "*PVIDEO_PORT_AGP_INTERFACE_2, VIDEO_PORT_AGP_INTERFACE_2"
 req.product : Windows 10 or later.
 ---
 
@@ -134,16 +134,13 @@ This structure is identical to the <a href="..\video\ns-video-_video_port_agp_in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
 ## See Also
 
-<a href="..\video\ns-video-_video_port_agp_interface.md">VIDEO_PORT_AGP_INTERFACE</a>
-
 <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
+
+<a href="..\video\ns-video-_video_port_agp_interface.md">VIDEO_PORT_AGP_INTERFACE</a>
 
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 

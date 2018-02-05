@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 93071B7B-74D8-44A2-984D-A6BABFC07BA3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxendpoint/P_UCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], P_UCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS, _UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS structure [Buses], buses._ucx_endpoint_event_callbacks, ucxendpoint/_UCX_ENDPOINT_EVENT_CALLBACKS
+ms.keywords : UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS structure [Buses], buses._ucx_endpoint_event_callbacks, _UCX_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/_UCX_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/P_UCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS"
+req.typenames : UCX_ENDPOINT_EVENT_CALLBACKS, *PUCX_ENDPOINT_EVENT_CALLBACKS
 req.product : Windows 10 or later.
 ---
 
@@ -115,9 +115,6 @@ The size in bytes of the structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
 ## See Also

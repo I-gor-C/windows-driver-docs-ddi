@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 77ab08ce-96c5-4330-aab2-1bf4ab23cfc4
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetLogFile2, IDebugControl4 interface [Windows Debugging], GetLogFile2 method, GetLogFile2 method [Windows Debugging], debugger.getlogfile2, IDebugControl4, GetLogFile2 method [Windows Debugging], IDebugControl4 interface, IDebugControl_9822bd84-b8ee-4d36-a66f-e38567d23646.xml, dbgeng/IDebugControl4::GetLogFile2, IDebugControl4::GetLogFile2
+ms.keywords : IDebugControl4 interface [Windows Debugging], GetLogFile2 method, GetLogFile2 method [Windows Debugging], IDebugControl4 interface, debugger.getlogfile2, GetLogFile2 method [Windows Debugging], IDebugControl_9822bd84-b8ee-4d36-a66f-e38567d23646.xml, IDebugControl4::GetLogFile2, GetLogFile2, IDebugControl4, dbgeng/IDebugControl4::GetLogFile2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -122,22 +122,17 @@ For more information about log files, see <a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547016">GetLogFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547066">GetLogMask</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
 

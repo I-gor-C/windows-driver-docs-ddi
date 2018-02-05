@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : AC69BCF1-B5C2-4A2F-AEF0-1BC4EBD0BE66
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2::GetDebugFATagControl, GetDebugFATagControl method [Windows Debugging], IDebugFailureAnalysis2 interface, GetDebugFATagControl, IDebugFailureAnalysis2, debugger.idebugfailureanalysis2_getdebugfatagcontrol, extsfns/IDebugFailureAnalysis2::GetDebugFATagControl, IDebugFailureAnalysis2 interface [Windows Debugging], GetDebugFATagControl method, GetDebugFATagControl method [Windows Debugging]
+ms.keywords : GetDebugFATagControl method [Windows Debugging], IDebugFailureAnalysis2, GetDebugFATagControl method [Windows Debugging], IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2::GetDebugFATagControl, GetDebugFATagControl, IDebugFailureAnalysis2 interface [Windows Debugging], GetDebugFATagControl method, debugger.idebugfailureanalysis2_getdebugfatagcontrol, extsfns/IDebugFailureAnalysis2::GetDebugFATagControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | extsfns.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | extsfns.h |
 
 ## See Also
 

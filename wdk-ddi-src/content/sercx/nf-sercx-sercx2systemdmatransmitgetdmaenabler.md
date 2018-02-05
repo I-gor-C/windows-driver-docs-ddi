@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 5B6893D4-51ED-483C-87F4-0404C48E100F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2SystemDmaTransmitGetDmaEnabler, 2/SerCx2SystemDmaTransmitGetDmaEnabler, serports.sercx2systemdmatransmitgetdmaenabler, SerCx2SystemDmaTransmitGetDmaEnabler method [Serial Ports]
+ms.keywords : SerCx2SystemDmaTransmitGetDmaEnabler method [Serial Ports], serports.sercx2systemdmatransmitgetdmaenabler, SerCx2SystemDmaTransmitGetDmaEnabler, 2/SerCx2SystemDmaTransmitGetDmaEnabler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,22 +71,19 @@ For more information about DMA enabler objects, see <a href="https://msdn.micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a>
 
 <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
 
 <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a>
 
  
 

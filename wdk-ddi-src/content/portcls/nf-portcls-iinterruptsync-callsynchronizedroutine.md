@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9895ee9a-4d8c-4cd4-8df4-fedaf864a178
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iinterruptsync_callsynchronizedroutine, IInterruptSync::CallSynchronizedRoutine, IInterruptSync, portcls/IInterruptSync::CallSynchronizedRoutine, CallSynchronizedRoutine method [Audio Devices], IInterruptSync interface, audmp-routines_985e70ee-3e6b-4514-adb5-1b37f92c9ae4.xml, CallSynchronizedRoutine method [Audio Devices], CallSynchronizedRoutine, IInterruptSync interface [Audio Devices], CallSynchronizedRoutine method
+ms.keywords : CallSynchronizedRoutine method [Audio Devices], portcls/IInterruptSync::CallSynchronizedRoutine, IInterruptSync interface [Audio Devices], CallSynchronizedRoutine method, IInterruptSync::CallSynchronizedRoutine, audmp-routines_985e70ee-3e6b-4514-adb5-1b37f92c9ae4.xml, IInterruptSync, CallSynchronizedRoutine method [Audio Devices], IInterruptSync interface, CallSynchronizedRoutine, audio.iinterruptsync_callsynchronizedroutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -75,22 +75,18 @@ Callers of <code>CallSynchronizedRoutine</code> must be running at an IRQL that 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 
 <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>
 
 <a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
-
-<a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 
  
 

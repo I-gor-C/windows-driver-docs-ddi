@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3b3b12b8-05f7-40e6-909c-b99bf18cc299
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeCreateClientSecurityFromSubjectContext, ifsk.secreateclientsecurityfromsubjectcontext, ntifs/SeCreateClientSecurityFromSubjectContext, seref_fac27935-a941-48f6-a27b-7ca56bd1f9e2.xml, SeCreateClientSecurityFromSubjectContext routine [Installable File System Drivers]
+ms.keywords : ifsk.secreateclientsecurityfromsubjectcontext, seref_fac27935-a941-48f6-a27b-7ca56bd1f9e2.xml, SeCreateClientSecurityFromSubjectContext routine [Installable File System Drivers], SeCreateClientSecurityFromSubjectContext, ntifs/SeCreateClientSecurityFromSubjectContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,14 +126,12 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

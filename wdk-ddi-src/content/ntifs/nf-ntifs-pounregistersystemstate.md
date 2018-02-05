@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5d82342e-c800-44ac-8618-468355d14dd0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : portn_b6118bd0-5fe1-4e75-8c17-e81d1f26814c.xml, kernel.pounregistersystemstate, PoUnregisterSystemState, PoUnregisterSystemState routine [Kernel-Mode Driver Architecture], wdm/PoUnregisterSystemState
+ms.keywords : wdm/PoUnregisterSystemState, PoUnregisterSystemState, kernel.pounregistersystemstate, PoUnregisterSystemState routine [Kernel-Mode Driver Architecture], portn_b6118bd0-5fe1-4e75-8c17-e81d1f26814c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -40,7 +40,7 @@ req.typenames : TOKEN_TYPE
 
 
 # PoUnregisterSystemState function
-The <b>PoUnregisterSystemState</b> routine cancels a system state registration created by <a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>.
+The <b>PoUnregisterSystemState</b> routine cancels a system state registration created by <a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>.
 
 ## Syntax
 
@@ -68,18 +68,16 @@ This routine cancels a system busy state registration established by <b>PoRegist
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-poregistersystemstate.md">PoRegisterSystemState</a>
+<a href="..\wdm\nf-wdm-poregistersystemstate.md">PoRegisterSystemState</a>
 
  
 

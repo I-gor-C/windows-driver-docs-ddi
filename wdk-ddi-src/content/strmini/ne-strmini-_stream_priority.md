@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 790A00A5-1107-4686-B690-80D07B69AF62
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : High, strmini/PSTREAM_PRIORITY, LowToHigh, STREAM_PRIORITY, Low, strmini/LowToHigh, strmini/Low, Dispatch, strmini/STREAM_PRIORITY, stream.stream_priority, PSTREAM_PRIORITY enumeration pointer [Streaming Media Devices], strmini/High, _STREAM_PRIORITY, PSTREAM_PRIORITY, *PSTREAM_PRIORITY, STREAM_PRIORITY enumeration [Streaming Media Devices], strmini/Dispatch
+ms.keywords : PSTREAM_PRIORITY enumeration pointer [Streaming Media Devices], High, strmini/Low, strmini/LowToHigh, PSTREAM_PRIORITY, *PSTREAM_PRIORITY, STREAM_PRIORITY enumeration [Streaming Media Devices], Dispatch, strmini/STREAM_PRIORITY, strmini/High, strmini/PSTREAM_PRIORITY, LowToHigh, _STREAM_PRIORITY, Low, stream.stream_priority, strmini/Dispatch, STREAM_PRIORITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,7 +82,4 @@ typedef enum _STREAM_PRIORITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h |

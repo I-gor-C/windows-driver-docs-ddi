@@ -89,20 +89,16 @@ The
 This function has no effect on byte order.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
-    <mshelp:link keywords="bltooth.bthddi_sdp_parse_interface" tabindex="0"><b>
-    BTHDDI_SDP_PARSE_INTERFACE</b></mshelp:link> structure.
+    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_parse_interface.md">
+    BTHDDI_SDP_PARSE_INTERFACE</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | bthsdpddi.h (include BthSdpddi.h) |
-| **Library** |  |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

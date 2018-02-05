@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cab7609e-cf87-46f6-af23-891e19ef1b80
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisenumeratefiltermodules, NdisEnumerateFilterModules, NdisEnumerateFilterModules function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_3caad0fd-b579-4787-bebb-b1a93726cbf0.xml, ndis/NdisEnumerateFilterModules
+ms.keywords : NdisEnumerateFilterModules function [Network Drivers Starting with Windows Vista], ndis/NdisEnumerateFilterModules, NdisEnumerateFilterModules, netvista.ndisenumeratefiltermodules, filter_ndis_functions_ref_3caad0fd-b579-4787-bebb-b1a93726cbf0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -168,12 +168,10 @@ An NDIS miniport driver, protocol driver, or filter driver can call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 

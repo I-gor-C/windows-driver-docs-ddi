@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 71a48c1f-1eca-4f3e-a085-99ffc207a7e0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtwaitforverticalblankevent2, d3dkmthk/D3DKMTWaitForVerticalBlankEvent2, D3DKMTWaitForVerticalBlankEvent2, D3DKMTWaitForVerticalBlankEvent2 function [Display Devices]
+ms.keywords : D3DKMTWaitForVerticalBlankEvent2, D3DKMTWaitForVerticalBlankEvent2 function [Display Devices], display.d3dkmtwaitforverticalblankevent2, d3dkmthk/D3DKMTWaitForVerticalBlankEvent2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,11 +104,7 @@ Parameters were validated and determined to be incorrect.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

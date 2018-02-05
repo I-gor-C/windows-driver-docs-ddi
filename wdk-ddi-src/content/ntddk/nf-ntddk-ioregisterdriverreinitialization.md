@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bdee26f9-e108-4753-b2e5-a1427212bce9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioregisterdriverreinitialization, IoRegisterDriverReinitialization routine [Kernel-Mode Driver Architecture], ntddk/IoRegisterDriverReinitialization, IoRegisterDriverReinitialization, k104_998f1835-132c-49f3-886d-6d78dee35b9d.xml
+ms.keywords : ntddk/IoRegisterDriverReinitialization, k104_998f1835-132c-49f3-886d-6d78dee35b9d.xml, IoRegisterDriverReinitialization routine [Kernel-Mode Driver Architecture], kernel.ioregisterdriverreinitialization, IoRegisterDriverReinitialization
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,20 +86,19 @@ Usually, a driver with a <i>Reinitialize</i> routine is a higher-level driver th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-
 <a href="..\ntddk\nf-ntddk-ioregisterbootdriverreinitialization.md">IoRegisterBootDriverReinitialization</a>
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
  
 

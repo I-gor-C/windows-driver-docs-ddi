@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : AC8EBE07-92D6-4985-A575-8AD3321D29FB
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSTOR_CRYPTO_CAPABILITY, _STOR_CRYPTO_CAPABILITY, storport/STOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY structure pointer [Storage Devices], STOR_CRYPTO_CAPABILITY structure [Storage Devices], STOR_CRYPTO_CAPABILITY, storage.stor_crypto_capability, storport/PSTOR_CRYPTO_CAPABILITY"
+ms.keywords : storport/STOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY, _STOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY structure [Storage Devices], PSTOR_CRYPTO_CAPABILITY structure pointer [Storage Devices], *PSTOR_CRYPTO_CAPABILITY, storport/PSTOR_CRYPTO_CAPABILITY, storage.stor_crypto_capability
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STOR_CRYPTO_CAPABILITY, *PSTOR_CRYPTO_CAPABILITY
+req.typenames : "*PSTOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY"
 req.product : Windows 10 or later.
 ---
 
@@ -56,7 +56,4 @@ typedef struct _STOR_CRYPTO_CAPABILITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h |

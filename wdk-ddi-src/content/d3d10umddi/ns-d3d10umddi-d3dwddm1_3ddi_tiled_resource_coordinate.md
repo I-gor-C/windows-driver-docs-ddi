@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A927CAF9-EF7F-47CC-9BDE-B6E13597368E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dwddm1_3ddi_tiled_resource_coordinate, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE structure [Display Devices], D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
+ms.keywords : d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, display.d3dwddm1_3ddi_tiled_resource_coordinate, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,5 @@ The <i>z</i> coordinate of the tiled resource. Used for 3-D rendering.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

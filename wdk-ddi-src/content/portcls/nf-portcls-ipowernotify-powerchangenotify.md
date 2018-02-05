@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : bbc49675-93d1-4ea2-9a3d-b72d76521de7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPowerNotify interface [Audio Devices], PowerChangeNotify method, PowerChangeNotify method [Audio Devices], IPowerNotify, IPowerNotify::PowerChangeNotify, portcls/IPowerNotify::PowerChangeNotify, audmp-routines_14b6d53d-cf30-47d1-bace-402fe4e5d7ba.xml, PowerChangeNotify method [Audio Devices], IPowerNotify interface, PowerChangeNotify, audio.ipowernotify_powerchangenotify
+ms.keywords : PowerChangeNotify, IPowerNotify, audio.ipowernotify_powerchangenotify, PowerChangeNotify method [Audio Devices], IPowerNotify interface [Audio Devices], PowerChangeNotify method, portcls/IPowerNotify::PowerChangeNotify, audmp-routines_14b6d53d-cf30-47d1-bace-402fe4e5d7ba.xml, IPowerNotify::PowerChangeNotify, PowerChangeNotify method [Audio Devices], IPowerNotify interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -72,14 +72,9 @@ The code for this method must reside in paged memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

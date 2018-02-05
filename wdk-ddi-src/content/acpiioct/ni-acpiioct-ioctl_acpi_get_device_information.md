@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS"
+req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_GET_DEVICE_INFORMATION IOCTL
@@ -117,9 +117,8 @@ IOCTL_ACPI_GET_DEVICE_INFORMATION can be used only at IRQL &lt;= DISPATCH_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 and later versions of Windows. Windows 8 and later versions of Windows. |
 | **Header** | acpiioct.h (include Acpiioct.h) |
-| **IRQL** |  |
 
 ## See Also
 

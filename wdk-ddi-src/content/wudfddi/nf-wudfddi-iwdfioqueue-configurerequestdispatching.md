@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 376b0cc3-8189-499e-ad7f-5844f8cb4221
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfioqueue_configurerequestdispatching, IWDFIoQueue, UMDFQueueObjectRef_8aab2e0a-7864-4a37-abba-2807327dd4dc.xml, ConfigureRequestDispatching method, IWDFIoQueue::ConfigureRequestDispatching, IWDFIoQueue interface, ConfigureRequestDispatching method, wdf.iwdfioqueue_configurerequestdispatching, ConfigureRequestDispatching method, IWDFIoQueue interface, ConfigureRequestDispatching, wudfddi/IWDFIoQueue::ConfigureRequestDispatching
+ms.keywords : ConfigureRequestDispatching method, IWDFIoQueue interface, wudfddi/IWDFIoQueue::ConfigureRequestDispatching, umdf.iwdfioqueue_configurerequestdispatching, IWDFIoQueue, UMDFQueueObjectRef_8aab2e0a-7864-4a37-abba-2807327dd4dc.xml, ConfigureRequestDispatching, IWDFIoQueue interface, ConfigureRequestDispatching method, wdf.iwdfioqueue_configurerequestdispatching, ConfigureRequestDispatching method, IWDFIoQueue::ConfigureRequestDispatching
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,12 @@ The driver can call the <b>ConfigureRequestDispatching</b> method multiple times
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

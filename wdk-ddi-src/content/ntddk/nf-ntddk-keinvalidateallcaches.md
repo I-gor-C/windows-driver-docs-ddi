@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a7971cd1-1e9b-4d81-8422-1ee36651973a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/KeInvalidateAllCaches, kernel.keinvalidateallcaches, KeInvalidateAllCaches routine [Kernel-Mode Driver Architecture], k105_4b59c5bd-70e3-48e1-aa6c-abf4e02925e8.xml, KeInvalidateAllCaches
+ms.keywords : KeInvalidateAllCaches routine [Kernel-Mode Driver Architecture], KeInvalidateAllCaches, kernel.keinvalidateallcaches, k105_4b59c5bd-70e3-48e1-aa6c-abf4e02925e8.xml, ntddk/KeInvalidateAllCaches
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,11 +63,9 @@ The <b>KeInvalidateAllCaches</b> routine flushes each processor's caches and mar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

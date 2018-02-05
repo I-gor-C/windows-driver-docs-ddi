@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7b701e86-ee0b-4a46-a6bf-4a4fe18c371f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLINFO_FLAG_ALIENCALL, netvista.rilcallinfoflags_2, RILCALLINFOFLAGS enumeration [Network Drivers Starting with Windows Vista], RILCALLINFOFLAGS, rilapitypes/RILCALLINFO_FLAG_ALIENCALL, rilapitypes/RILCALLINFO_FLAG_EMERGENCYCALL, RILCALLINFO_FLAG_EMERGENCYCALL, rilapitypes/RILCALLINFOFLAGS
+ms.keywords : RILCALLINFOFLAGS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILCALLINFOFLAGS, rilapitypes/RILCALLINFO_FLAG_EMERGENCYCALL, netvista.rilcallinfoflags_2, RILCALLINFO_FLAG_EMERGENCYCALL, RILCALLINFOFLAGS, rilapitypes/RILCALLINFO_FLAG_ALIENCALL, RILCALLINFO_FLAG_ALIENCALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILCALLINFOFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

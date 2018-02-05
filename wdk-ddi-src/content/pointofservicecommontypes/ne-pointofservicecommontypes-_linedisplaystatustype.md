@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : B3260D6C-F363-4077-BA8C-88BBEDA167D8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicecommontypes/LineDisplayStatusType, LineDisplayStatusType enumeration, PLineDisplayStatusType enumeration pointer, pos.linedisplaystatustype, PLineDisplayStatusType, pointofservicecommontypes/, LineDisplayStatusType, pointofservicecommontypes/PLineDisplayStatusType, _LineDisplayStatusType
+ms.keywords : LineDisplayStatusType enumeration, LineDisplayStatusType, PLineDisplayStatusType, pointofservicecommontypes/LineDisplayStatusType, _LineDisplayStatusType, pointofservicecommontypes/, PLineDisplayStatusType enumeration pointer, pointofservicecommontypes/PLineDisplayStatusType, pos.linedisplaystatustype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,7 +82,4 @@ typedef enum _LineDisplayStatusType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

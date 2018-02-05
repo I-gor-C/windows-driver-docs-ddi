@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D5C7DC47-37F7-4727-AFB6-137F67786001
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSBFN_POWER_FILTER_STATE structure pointer [Buses], USBFN_POWER_FILTER_STATE, PUSBFN_POWER_FILTER_STATE, _USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE, buses.usbfn_power_filter_state, usbfnioctl/USBFN_POWER_FILTER_STATE, usbfnioctl/PUSBFN_POWER_FILTER_STATE, USBFN_POWER_FILTER_STATE structure [Buses]
+ms.keywords : usbfnioctl/USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE, buses.usbfn_power_filter_state, PUSBFN_POWER_FILTER_STATE, _USBFN_POWER_FILTER_STATE, USBFN_POWER_FILTER_STATE structure [Buses], PUSBFN_POWER_FILTER_STATE structure pointer [Buses], usbfnioctl/PUSBFN_POWER_FILTER_STATE, USBFN_POWER_FILTER_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE
+req.typenames : "*PUSBFN_POWER_FILTER_STATE, USBFN_POWER_FILTER_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -64,9 +64,6 @@ Describes the USB device states for the device/controller.  These states corresp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnioctl.h (include Usbfnioctl.h) |
 
 ## See Also

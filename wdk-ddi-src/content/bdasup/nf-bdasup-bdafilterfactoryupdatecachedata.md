@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c4b8220a-bd54-4e41-a00e-3750a3f03cae
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdaref_b384500e-7b80-4413-a950-f7cf7aed3f54.xml, stream.bdafilterfactoryupdatecachedata, bdasup/BdaFilterFactoryUpdateCacheData, BdaFilterFactoryUpdateCacheData function [Streaming Media Devices], BdaFilterFactoryUpdateCacheData
+ms.keywords : bdasup/BdaFilterFactoryUpdateCacheData, BdaFilterFactoryUpdateCacheData function [Streaming Media Devices], BdaFilterFactoryUpdateCacheData, bdaref_b384500e-7b80-4413-a950-f7cf7aed3f54.xml, stream.bdafilterfactoryupdatecachedata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,22 +75,19 @@ The <a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 
 <a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNoKSPins</a>
 
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
-
-<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 

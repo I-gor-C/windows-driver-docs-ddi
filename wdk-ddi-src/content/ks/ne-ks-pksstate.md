@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6f5a3c65-9d6c-4d5f-af99-71aba16eb254
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSSTATE_STOP, ks/KSSTATE_STOP, ks/KSSTATE_PAUSE, PKSSTATE, ks/KSSTATE, KSSTATE_PAUSE, ks/KSSTATE_RUN, ks/PKSSTATE, ks-struct_a5862576-6737-471e-8e31-1bc98fb4b4f9.xml, PKSSTATE enumeration pointer [Streaming Media Devices], *PKSSTATE, KSSTATE_RUN, KSSTATE, KSSTATE_ACQUIRE, stream.ksstate, ks/KSSTATE_ACQUIRE, KSSTATE enumeration [Streaming Media Devices]
+ms.keywords : KSSTATE_RUN, ks/KSSTATE_ACQUIRE, ks/KSSTATE_STOP, PKSSTATE enumeration pointer [Streaming Media Devices], ks/KSSTATE, ks/PKSSTATE, stream.ksstate, KSSTATE enumeration [Streaming Media Devices], ks/KSSTATE_RUN, KSSTATE_ACQUIRE, ks-struct_a5862576-6737-471e-8e31-1bc98fb4b4f9.xml, KSSTATE_PAUSE, KSSTATE_STOP, PKSSTATE, *PKSSTATE, ks/KSSTATE_PAUSE, KSSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSSTATE, KSSTATE"
+req.typenames : KSSTATE, *PKSSTATE
 ---
 
 # *PKSSTATE Enumeration
@@ -80,7 +80,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

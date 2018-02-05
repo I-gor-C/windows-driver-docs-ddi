@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 84d1f438-b6ee-4199-89ae-9384601203b3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvDriverEvent function [Print Devices], print_interface-graphics_41c98198-e5b7-4725-9b93-d467ec38e4c3.xml, print.drvdriverevent, DrvDriverEvent, winddiui/DrvDriverEvent
+ms.keywords : print.drvdriverevent, DrvDriverEvent, winddiui/DrvDriverEvent, DrvDriverEvent function [Print Devices], print_interface-graphics_41c98198-e5b7-4725-9b93-d467ec38e4c3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -154,11 +154,6 @@ Because the <b>DrvDriverEvent</b> function is called in the context of the print
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 74644211-7cf5-48d4-9025-7831cb449979
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbLengthW, RtlStringCbLengthA, kernel.rtlstringcblength, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], RtlStringCbLengthW, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml, RtlStringCbLength, ntstrsafe/RtlStringCbLengthA
+ms.keywords : ntstrsafe/RtlStringCbLengthW, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], RtlStringCbLength, RtlStringCbLengthW, RtlStringCbLengthA, kernel.rtlstringcblength, ntstrsafe/RtlStringCbLengthA, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -149,14 +149,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

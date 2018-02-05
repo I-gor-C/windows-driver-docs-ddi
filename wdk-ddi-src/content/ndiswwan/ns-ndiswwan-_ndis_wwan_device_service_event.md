@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 43205AA6-2B1A-4D04-9AF8-E0EB53253F5B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT, netvista.ndis_wwan_device_service_event, *PNDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : "_NDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT, netvista.ndis_wwan_device_service_event, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_EVENT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT"
+req.typenames : NDIS_WWAN_DEVICE_SERVICE_EVENT, *PNDIS_WWAN_DEVICE_SERVICE_EVENT
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_EVENT structure
@@ -108,9 +108,7 @@ For more information about these members, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

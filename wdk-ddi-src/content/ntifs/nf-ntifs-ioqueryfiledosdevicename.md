@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8574e5cf-5bbf-4606-931f-e27b2aa7b7fa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoQueryFileDosDeviceName, IoQueryFileDosDeviceName routine [Installable File System Drivers], ioref_4bc807ab-ce5e-415c-8f86-50cf3783d233.xml, IoQueryFileDosDeviceName, ifsk.ioqueryfiledosdevicename
+ms.keywords : ntifs/IoQueryFileDosDeviceName, IoQueryFileDosDeviceName, ioref_4bc807ab-ce5e-415c-8f86-50cf3783d233.xml, ifsk.ioqueryfiledosdevicename, IoQueryFileDosDeviceName routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,7 +71,7 @@ A returned pointer to a newly allocated <b>OBJECT_NAME_INFORMATION</b> structure
 } OBJECT_NAME_INFORMATION, *POBJECT_NAME_INFORMATION;</pre>
 </td>
 </tr>
-</table></span></div><div class="alert"><b>Note</b>    This structure must eventually be freed by calling <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>.</div><div> </div>
+</table></span></div><div class="alert"><b>Note</b>    This structure must eventually be freed by calling <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>.</div><div> </div>
 
 
 ## Return Value
@@ -85,14 +85,12 @@ For more information about MS-DOS names, see the Files and I/O section of the Pl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting withWindows XP. This routine is available starting withWindows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

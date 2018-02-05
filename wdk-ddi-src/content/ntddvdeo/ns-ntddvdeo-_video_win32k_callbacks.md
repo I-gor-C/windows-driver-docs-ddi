@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dec6c610-811c-40cb-a099-1a35b91d2ee8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.video_win32k_callbacks, *PVIDEO_WIN32K_CALLBACKS, ntddvdeo/PVIDEO_WIN32K_CALLBACKS, PVIDEO_WIN32K_CALLBACKS structure pointer [Display Devices], ntddvdeo/VIDEO_WIN32K_CALLBACKS, PVIDEO_WIN32K_CALLBACKS, VIDEO_WIN32K_CALLBACKS, VIDEO_WIN32K_CALLBACKS structure [Display Devices], Video_Structs_3c169102-2431-4217-b9e2-80ef23ee8096.xml, _VIDEO_WIN32K_CALLBACKS
+ms.keywords : PVIDEO_WIN32K_CALLBACKS structure pointer [Display Devices], Video_Structs_3c169102-2431-4217-b9e2-80ef23ee8096.xml, VIDEO_WIN32K_CALLBACKS, *PVIDEO_WIN32K_CALLBACKS, ntddvdeo/VIDEO_WIN32K_CALLBACKS, PVIDEO_WIN32K_CALLBACKS, _VIDEO_WIN32K_CALLBACKS, ntddvdeo/PVIDEO_WIN32K_CALLBACKS, display.video_win32k_callbacks, VIDEO_WIN32K_CALLBACKS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_WIN32K_CALLBACKS, *PVIDEO_WIN32K_CALLBACKS
+req.typenames : "*PVIDEO_WIN32K_CALLBACKS, VIDEO_WIN32K_CALLBACKS"
 ---
 
 # _VIDEO_WIN32K_CALLBACKS structure
@@ -79,7 +79,4 @@ Reserved for system use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |

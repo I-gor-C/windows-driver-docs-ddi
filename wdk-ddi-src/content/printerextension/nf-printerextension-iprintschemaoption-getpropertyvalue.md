@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6CD5202C-7852-46AA-90ED-3477E6654188
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrintSchemaOption, GetPropertyValue method [Print Devices], IPrintSchemaOption interface, IPrintSchemaOption interface [Print Devices], GetPropertyValue method, IPrintSchemaOption::GetPropertyValue, GetPropertyValue method [Print Devices], GetPropertyValue, printerextension/IPrintSchemaOption::GetPropertyValue, print.iprintschemaoption_getpropertyvalue
+ms.keywords : print.iprintschemaoption_getpropertyvalue, GetPropertyValue, GetPropertyValue method [Print Devices], IPrintSchemaOption interface, IPrintSchemaOption::GetPropertyValue, printerextension/IPrintSchemaOption::GetPropertyValue, IPrintSchemaOption interface [Print Devices], GetPropertyValue method, IPrintSchemaOption, GetPropertyValue method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -81,22 +81,18 @@ So if the <a href="..\printerextension\nn-printerextension-iprintschematicket.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
-
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
+
+<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 
  
 

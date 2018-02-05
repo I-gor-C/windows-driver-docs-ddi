@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f36beac8-e4fb-49ce-b49d-a1a8f32f19a5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k107_431c6c60-e2bd-4d90-9054-b950195bbec3.xml, kernel.obreferenceobjectbyhandlewithtag, wdm/ObReferenceObjectByHandleWithTag, ObReferenceObjectByHandleWithTag, ObReferenceObjectByHandleWithTag routine [Kernel-Mode Driver Architecture]
+ms.keywords : ObReferenceObjectByHandleWithTag routine [Kernel-Mode Driver Architecture], kernel.obreferenceobjectbyhandlewithtag, k107_431c6c60-e2bd-4d90-9054-b950195bbec3.xml, wdm/ObReferenceObjectByHandleWithTag, ObReferenceObjectByHandleWithTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -258,28 +258,27 @@ To view an object reference trace in the <a href="http://go.microsoft.com/fwlink
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating system. Available in Windows 7 and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>
+
 <a href="..\wdm\nf-wdm-obdereferenceobjectdeferdeletewithtag.md">ObDereferenceObjectDeferDeleteWithTag</a>
 
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
-<a href="..\wdm\nf-wdm-obdereferenceobjectwithtag.md">ObDereferenceObjectWithTag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558675">OBJECT_TYPE</a>
 
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558675">OBJECT_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
  
 

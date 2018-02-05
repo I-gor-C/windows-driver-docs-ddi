@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5dea6764-9ca0-4d38-9900-174637c4f648
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlConvertSidToUnicodeString, rtlref_4b2b8867-c248-49e9-9b38-de3f9449a504.xml, RtlConvertSidToUnicodeString, RtlConvertSidToUnicodeString routine [Installable File System Drivers], ifsk.rtlconvertsidtounicodestring
+ms.keywords : ntifs/RtlConvertSidToUnicodeString, RtlConvertSidToUnicodeString, rtlref_4b2b8867-c248-49e9-9b38-de3f9449a504.xml, ifsk.rtlconvertsidtounicodestring, RtlConvertSidToUnicodeString routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -150,22 +150,20 @@ If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later Windows operating systems. Available in Windows 2000 and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 
 <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

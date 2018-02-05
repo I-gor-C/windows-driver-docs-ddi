@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bce932a6-2f73-4d0e-8616-45fd41abb776
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : CreateSymbolicLinkWithReferenceString method, IWDFDevice2 interface, wdf.iwdfdevice2_createsymboliclinkwithreferencestring, IWDFDevice2 interface, CreateSymbolicLinkWithReferenceString method, umdf.iwdfdevice2_createsymboliclinkwithreferencestring, UMDFDeviceObjectRef_40f806fa-5db7-48db-b3c7-0f338947887e.xml, CreateSymbolicLinkWithReferenceString, wudfddi/IWDFDevice2::CreateSymbolicLinkWithReferenceString, CreateSymbolicLinkWithReferenceString method, IWDFDevice2, IWDFDevice2::CreateSymbolicLinkWithReferenceString
+ms.keywords : CreateSymbolicLinkWithReferenceString method, CreateSymbolicLinkWithReferenceString method, IWDFDevice2 interface, IWDFDevice2 interface, CreateSymbolicLinkWithReferenceString method, wdf.iwdfdevice2_createsymboliclinkwithreferencestring, umdf.iwdfdevice2_createsymboliclinkwithreferencestring, CreateSymbolicLinkWithReferenceString, IWDFDevice2::CreateSymbolicLinkWithReferenceString, wudfddi/IWDFDevice2::CreateSymbolicLinkWithReferenceString, UMDFDeviceObjectRef_40f806fa-5db7-48db-b3c7-0f338947887e.xml, IWDFDevice2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -114,20 +114,18 @@ If you do not need to add a reference string to your device's symbolic link name
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557023">IWDFDevice::CreateSymbolicLink</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557023">IWDFDevice::CreateSymbolicLink</a>
 
  
 

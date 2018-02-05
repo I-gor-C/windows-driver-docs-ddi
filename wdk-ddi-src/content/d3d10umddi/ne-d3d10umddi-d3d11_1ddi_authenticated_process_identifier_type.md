@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a8e7641-c946-4feb-b6d7-54ef63de9e76
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDI_PROCESSIDTYPE_DWM, d3d10umddi/D3D11_1DDI_PROCESSIDTYPE_HANDLE, d3d10umddi/D3D11_1DDI_PROCESSIDTYPE_UNKNOWN, display.d3d11_1ddi_authenticated_process_identifier_type, D3D11_1DDI_PROCESSIDTYPE_UNKNOWN, d3d10umddi/D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE, D3D11_1DDI_PROCESSIDTYPE_HANDLE, D3D11_1DDI_PROCESSIDTYPE_DWM, D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE enumeration [Display Devices], D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE
+ms.keywords : d3d10umddi/D3D11_1DDI_PROCESSIDTYPE_UNKNOWN, d3d10umddi/D3D11_1DDI_PROCESSIDTYPE_HANDLE, D3D11_1DDI_PROCESSIDTYPE_UNKNOWN, d3d10umddi/D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE, d3d10umddi/D3D11_1DDI_PROCESSIDTYPE_DWM, D3D11_1DDI_PROCESSIDTYPE_HANDLE, D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE, display.d3d11_1ddi_authenticated_process_identifier_type, D3D11_1DDI_PROCESSIDTYPE_DWM, D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,9 +74,7 @@ typedef enum D3D11_1DDI_AUTHENTICATED_PROCESS_IDENTIFIER_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

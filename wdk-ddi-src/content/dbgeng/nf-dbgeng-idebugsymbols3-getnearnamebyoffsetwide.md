@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 943a9139-f3b8-468e-9357-26b7b6bfed32
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffsetWide method, GetNearNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetNearNameByOffsetWide, GetNearNameByOffsetWide, GetNearNameByOffsetWide method [Windows Debugging], IDebugSymbols3::GetNearNameByOffsetWide, IDebugSymbols3, debugger.getnearnamebyoffsetwide
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffsetWide method, GetNearNameByOffsetWide method [Windows Debugging], dbgeng/IDebugSymbols3::GetNearNameByOffsetWide, debugger.getnearnamebyoffsetwide, GetNearNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, GetNearNameByOffsetWide, IDebugSymbols3::GetNearNameByOffsetWide, IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -136,22 +136,17 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548035">GetOffsetByName</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548035">GetOffsetByName</a>
 
  
 

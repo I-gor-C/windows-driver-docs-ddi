@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0b11d913-f488-4237-85e3-4469eefc0b91
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfdevice2_createremotetarget, IWDFDevice2 interface, CreateRemoteTarget method, CreateRemoteTarget method, IWDFDevice2 interface, UMDFDeviceObjectRef_877f2d10-92a7-4e04-b07e-683b728c691a.xml, umdf.iwdfdevice2_createremotetarget, CreateRemoteTarget, wudfddi/IWDFDevice2::CreateRemoteTarget, IWDFDevice2::CreateRemoteTarget, CreateRemoteTarget method, IWDFDevice2
+ms.keywords : CreateRemoteTarget, CreateRemoteTarget method, CreateRemoteTarget method, IWDFDevice2 interface, wdf.iwdfdevice2_createremotetarget, wudfddi/IWDFDevice2::CreateRemoteTarget, IWDFDevice2 interface, CreateRemoteTarget method, IWDFDevice2::CreateRemoteTarget, umdf.iwdfdevice2_createremotetarget, UMDFDeviceObjectRef_877f2d10-92a7-4e04-b07e-683b728c691a.xml, IWDFDevice2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -115,22 +115,20 @@ For more information about remote I/O targets, see <a href="https://docs.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
 
  
 

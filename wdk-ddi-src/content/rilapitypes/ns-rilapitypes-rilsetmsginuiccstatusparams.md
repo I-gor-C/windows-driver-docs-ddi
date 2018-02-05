@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 12181c9d-c0bd-48ee-8eaf-64cc66c272f4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilsetmsginuiccstatusparams_2, RILSETMSGINUICCSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILSETMSGINUICCSTATUSPARAMS, RILSETMSGINUICCSTATUSPARAMS, rilapitypes/RILSETMSGINUICCSTATUSPARAMS
+ms.keywords : "*LPRILSETMSGINUICCSTATUSPARAMS, RILSETMSGINUICCSTATUSPARAMS, netvista.rilsetmsginuiccstatusparams_2, RILSETMSGINUICCSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILSETMSGINUICCSTATUSPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,4 @@ typedef struct _RILSETMSGINUICCSTATUSPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

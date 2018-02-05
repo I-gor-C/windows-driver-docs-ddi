@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 656acfd4-6f34-41aa-862e-134a2b95dcab
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS, netvista.ndis_switch_port_property_parameters, ntddndis/NDIS_SWITCH_PORT_PROPERTY_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS
+ms.keywords : netvista.ndis_switch_port_property_parameters, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_PROPERTY_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -162,32 +162,30 @@ For more information about extensible switch policies, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h, Fwpsk.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_security.md">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_custom.md">NDIS_SWITCH_PORT_PROPERTY_CUSTOM</a>
-
-<a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598239">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS_GET_PROPERTY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598275">OID_SWITCH_PORT_PROPERTY_ADD</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_profile.md">NDIS_SWITCH_PORT_PROPERTY_PROFILE</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598239">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS_GET_PROPERTY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_custom.md">NDIS_SWITCH_PORT_PROPERTY_CUSTOM</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_profile.md">NDIS_SWITCH_PORT_PROPERTY_PROFILE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598278">OID_SWITCH_PORT_PROPERTY_UPDATE</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_security.md">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
 
 <b></b>
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2193f73d-c21c-430d-8535-790fdea86366
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE, netvista.rilphonebookreadystate_2, RILPHONEBOOKREADYSTATE structure [Network Drivers Starting with Windows Vista], *LPRILPHONEBOOKREADYSTATE
+ms.keywords : rilapitypes/RILPHONEBOOKREADYSTATE, *LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE, netvista.rilphonebookreadystate_2, RILPHONEBOOKREADYSTATE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,4 @@ typedef struct _RILPHONEBOOKREADYSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

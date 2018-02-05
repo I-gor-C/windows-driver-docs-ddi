@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c8abf741-ea8c-46d3-85f5-0cc38f1a5ea7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, RtlStringCchCopyExA, ntstrsafe/RtlStringCchCopyExW, RtlStringCchCopyExW, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, RtlStringCchCopyExW function [Kernel-Mode Driver Architecture], RtlStringCchCopyEx, ntstrsafe/RtlStringCchCopyExA, kernel.rtlstringcchcopyex, STRSAFE_FILL_ON_FAILURE, safestrings_d4303dc8-8b38-4159-a001-04421ccd2548.xml
+ms.keywords : ntstrsafe/RtlStringCchCopyExW, RtlStringCchCopyExW, STRSAFE_FILL_BEHIND_NULL, RtlStringCchCopyEx, STRSAFE_IGNORE_NULLS, kernel.rtlstringcchcopyex, RtlStringCchCopyExW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCchCopyExA, STRSAFE_FILL_ON_FAILURE, STRSAFE_NULL_ON_FAILURE, RtlStringCchCopyExA, STRSAFE_NO_TRUNCATION, safestrings_d4303dc8-8b38-4159-a001-04421ccd2548.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -251,20 +251,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyexw.md">RtlStringCbCopyEx</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyw.md">RtlStringCchCopy</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyexw.md">RtlStringCbCopyEx</a>
 
  
 

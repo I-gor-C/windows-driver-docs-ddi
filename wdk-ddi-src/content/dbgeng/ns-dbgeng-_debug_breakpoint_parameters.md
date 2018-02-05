@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e5c87c1c-8195-4476-84bc-5f18ad83d149
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : DEBUG_BREAKPOINT_PARAMETERS structure [Windows Debugging], Structures_ad5f0e1f-7d6f-498d-80a0-1275ca3cb016.xml, debugger.debug_breakpoint_parameters, _DEBUG_BREAKPOINT_PARAMETERS, dbgeng/PDEBUG_BREAKPOINT_PARAMETERS, PDEBUG_BREAKPOINT_PARAMETERS structure pointer [Windows Debugging], *PDEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS, dbgeng/DEBUG_BREAKPOINT_PARAMETERS, PDEBUG_BREAKPOINT_PARAMETERS
+ms.keywords : PDEBUG_BREAKPOINT_PARAMETERS, debugger.debug_breakpoint_parameters, DEBUG_BREAKPOINT_PARAMETERS, dbgeng/DEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS structure [Windows Debugging], dbgeng/PDEBUG_BREAKPOINT_PARAMETERS, Structures_ad5f0e1f-7d6f-498d-80a0-1275ca3cb016.xml, *PDEBUG_BREAKPOINT_PARAMETERS, _DEBUG_BREAKPOINT_PARAMETERS, PDEBUG_BREAKPOINT_PARAMETERS structure pointer [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS"
+req.typenames : DEBUG_BREAKPOINT_PARAMETERS, *PDEBUG_BREAKPOINT_PARAMETERS
 ---
 
 # _DEBUG_BREAKPOINT_PARAMETERS structure
@@ -116,7 +116,4 @@ For an overview of how to use breakpoints, and a description of all breakpoint-r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dbgeng.h (include DbgEng.h) |

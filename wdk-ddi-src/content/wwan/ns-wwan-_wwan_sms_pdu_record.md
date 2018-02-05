@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 20200222-8539-497e-891e-2d29c3207c56
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_SMS_PDU_RECORD, *PWWAN_SMS_PDU_RECORD, _WWAN_SMS_PDU_RECORD, WwanRef_b21c5d84-e8d4-4cf4-9942-f6f1a14c23c0.xml, PWWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD, wwan/WWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD structure [Network Drivers Starting with Windows Vista], PWWAN_SMS_PDU_RECORD structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_pdu_record
+ms.keywords : PWWAN_SMS_PDU_RECORD structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_PDU_RECORD, PWWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_pdu_record, WwanRef_b21c5d84-e8d4-4cf4-9942-f6f1a14c23c0.xml, _WWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD, *PWWAN_SMS_PDU_RECORD, wwan/PWWAN_SMS_PDU_RECORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -97,9 +97,7 @@ For CDMA-based devices, this represents the number of bytes in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

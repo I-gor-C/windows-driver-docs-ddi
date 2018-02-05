@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6827df53-f970-4ceb-961d-b4b95fa56cfe
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSQUERYBUFFER structure pointer [Streaming Media Devices], ks-struct_aa45ed01-603d-4452-8862-649a73361c48.xml, *PKSQUERYBUFFER, stream.ksquerybuffer, PKSQUERYBUFFER, KSQUERYBUFFER, ks/KSQUERYBUFFER, ks/PKSQUERYBUFFER, KSQUERYBUFFER structure [Streaming Media Devices]
+ms.keywords : KSQUERYBUFFER structure [Streaming Media Devices], ks/PKSQUERYBUFFER, ks-struct_aa45ed01-603d-4452-8862-649a73361c48.xml, stream.ksquerybuffer, PKSQUERYBUFFER structure pointer [Streaming Media Devices], *PKSQUERYBUFFER, PKSQUERYBUFFER, KSQUERYBUFFER, ks/KSQUERYBUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -131,9 +131,6 @@ life is good.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

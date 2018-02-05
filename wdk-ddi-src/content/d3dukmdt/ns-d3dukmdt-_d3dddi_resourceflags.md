@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a466a158-dacf-42cc-b2ad-8af5b2c6c7d5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_resourceflags, D3DDDI_RESOURCEFLAGS structure [Display Devices], D3D_other_Structs_f00f4222-1c56-4b96-abe4-bf05088b7aa4.xml, D3DDDI_RESOURCEFLAGS, d3dukmdt/D3DDDI_RESOURCEFLAGS, _D3DDDI_RESOURCEFLAGS
+ms.keywords : D3DDDI_RESOURCEFLAGS, _D3DDDI_RESOURCEFLAGS, D3DDDI_RESOURCEFLAGS structure [Display Devices], d3dukmdt/D3DDDI_RESOURCEFLAGS, D3D_other_Structs_f00f4222-1c56-4b96-abe4-bf05088b7aa4.xml, display.d3dddi_resourceflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,16 +91,14 @@ typedef struct _D3DDDI_RESOURCEFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
 
  
 

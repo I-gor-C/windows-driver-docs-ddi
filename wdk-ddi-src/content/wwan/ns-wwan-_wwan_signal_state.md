@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ba5632bb-c1d7-47b1-b6b4-88c67710149f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE, _WWAN_SIGNAL_STATE, WwanRef_6a92457b-8b82-4956-9dce-98e5aeec9091.xml, netvista.wwan_signal_state, wwan/WWAN_SIGNAL_STATE, PWWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SIGNAL_STATE
+ms.keywords : WwanRef_6a92457b-8b82-4956-9dce-98e5aeec9091.xml, PWWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE, _WWAN_SIGNAL_STATE, PWWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SIGNAL_STATE, netvista.wwan_signal_state
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE
+req.typenames : "*PWWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -289,9 +289,7 @@ The current threshold, in threshold units, at which the miniport driver has been
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b1a73ef7-c13a-4627-8eb0-b9285567caec
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiInquiry_IN structure [Storage Devices], _ScsiInquiry_IN, PScsiInquiry_IN, storage.scsiinquiry_in, PScsiInquiry_IN structure pointer [Storage Devices], structs-iSCSI_2129d82b-f03d-49f2-bf1d-8716840d086c.xml, iscsiop/ScsiInquiry_IN, ScsiInquiry_IN, *PScsiInquiry_IN, iscsiop/PScsiInquiry_IN
+ms.keywords : iscsiop/ScsiInquiry_IN, iscsiop/PScsiInquiry_IN, ScsiInquiry_IN, PScsiInquiry_IN structure pointer [Storage Devices], storage.scsiinquiry_in, PScsiInquiry_IN, structs-iSCSI_2129d82b-f03d-49f2-bf1d-8716840d086c.xml, *PScsiInquiry_IN, ScsiInquiry_IN structure [Storage Devices], _ScsiInquiry_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,6 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
@@ -87,9 +84,9 @@ You must implement this method.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a>
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsiinquiry_out.md">ScsiInquiry_OUT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+
+<a href="..\iscsiop\ns-iscsiop-_scsiinquiry_out.md">ScsiInquiry_OUT</a>
 
  
 

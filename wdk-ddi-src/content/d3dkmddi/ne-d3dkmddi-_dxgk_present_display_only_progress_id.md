@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 38023aaf-754a-4b16-96fc-6fd3d48233c3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE, display.dxgk_present_display_only_progress_id, _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, d3dkmddi/DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID enumeration [Display Devices]
+ms.keywords : DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID enumeration [Display Devices], d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, display.dxgk_present_display_only_progress_id, d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE, d3dkmddi/DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,9 +68,7 @@ typedef enum _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6d530cf2-de06-4aa3-9f4d-08619906c9ed
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, wdfio/WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, WdfIoForwardProgressReservedPolicyUseExamine, wdfio/WdfIoForwardProgressReservedPolicyUseExamine, WdfIoForwardProgressReservedPolicyPagingIO, wdf.wdf_io_forward_progress_reserved_policy, kmdf.wdf_io_forward_progress_reserved_policy, wdfio/WdfIoForwardProgressInvalidPolicy, wdfio/WdfIoForwardProgressReservedPolicyPagingIO, DFQueueObjectRef_e035ecd7-f728-4d88-80a8-763ab3eb90ab.xml, _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY enumeration, WdfIoForwardProgressInvalidPolicy, wdfio/WdfIoForwardProgressReservedPolicyAlwaysUseReservedRequest, WdfIoForwardProgressReservedPolicyAlwaysUseReservedRequest
+ms.keywords : "_WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, WdfIoForwardProgressInvalidPolicy, wdfio/WdfIoForwardProgressInvalidPolicy, WdfIoForwardProgressReservedPolicyUseExamine, wdfio/WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, wdfio/WdfIoForwardProgressReservedPolicyUseExamine, wdf.wdf_io_forward_progress_reserved_policy, wdfio/WdfIoForwardProgressReservedPolicyAlwaysUseReservedRequest, kmdf.wdf_io_forward_progress_reserved_policy, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY enumeration, DFQueueObjectRef_e035ecd7-f728-4d88-80a8-763ab3eb90ab.xml, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, WdfIoForwardProgressReservedPolicyAlwaysUseReservedRequest, wdfio/WdfIoForwardProgressReservedPolicyPagingIO, WdfIoForwardProgressReservedPolicyPagingIO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,5 @@ The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a memb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfio.h (include Wdf.h) |

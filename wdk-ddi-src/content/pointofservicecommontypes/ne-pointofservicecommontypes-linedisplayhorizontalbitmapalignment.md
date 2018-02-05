@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 7C5981A5-6156-459E-8405-B178E2D3B487
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LineDisplayHorizontalBitmapAlignment, LineDisplayHorizontalBitmapAlignment enumeration, pos.linedisplayhorizontalbitmapalignment, pointofservicecommontypes/, pointofservicecommontypes/LineDisplayHorizontalBitmapAlignment
+ms.keywords : LineDisplayHorizontalBitmapAlignment, pointofservicecommontypes/LineDisplayHorizontalBitmapAlignment, LineDisplayHorizontalBitmapAlignment enumeration, pointofservicecommontypes/, pos.linedisplayhorizontalbitmapalignment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -72,7 +72,4 @@ typedef enum _LineDisplayHorizontalBitmapAlignment {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

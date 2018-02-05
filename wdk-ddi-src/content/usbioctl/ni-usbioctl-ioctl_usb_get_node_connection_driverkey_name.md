@@ -76,9 +76,7 @@ If the caller allocates an output buffer that is large enough to hold all of the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a7d69bf8-7aa8-46c2-98f9-769ee174757b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsValidateTopologyNodeCreateRequest, KsValidateTopologyNodeCreateRequest, KsValidateTopologyNodeCreateRequest function [Streaming Media Devices], ksfunc_f2b7fc56-1bca-4de5-981b-68364aa96fa7.xml, stream.ksvalidatetopologynodecreaterequest
+ms.keywords : ksfunc_f2b7fc56-1bca-4de5-981b-68364aa96fa7.xml, ks/KsValidateTopologyNodeCreateRequest, KsValidateTopologyNodeCreateRequest function [Streaming Media Devices], stream.ksvalidatetopologynodecreaterequest, KsValidateTopologyNodeCreateRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,6 @@ The <b>KsValidateTopologyNodeCreateRequest</b> function returns a STATUS_SUCCESS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

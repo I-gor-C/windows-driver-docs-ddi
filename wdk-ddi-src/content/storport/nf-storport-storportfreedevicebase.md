@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4feb3bde-c243-493c-a6f9-4accd545955c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportfreedevicebase, storprt_f8c3e4c6-8f38-4189-bdac-70c0c61e0f18.xml, StorPortFreeDeviceBase, storport/StorPortFreeDeviceBase, StorPortFreeDeviceBase function [Storage Devices]
+ms.keywords : StorPortFreeDeviceBase, StorPortFreeDeviceBase function [Storage Devices], storport/StorPortFreeDeviceBase, storage.storportfreedevicebase, storprt_f8c3e4c6-8f38-4189-bdac-70c0c61e0f18.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

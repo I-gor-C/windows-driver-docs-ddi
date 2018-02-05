@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 62cb451d-1170-4462-94ac-0477adc5946b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IInterruptSync::Connect, portcls/IInterruptSync::Connect, Connect, Connect method [Audio Devices], IInterruptSync interface [Audio Devices], Connect method, IInterruptSync, audio.iinterruptsync_connect, audmp-routines_10f66201-af8d-42ff-a854-04f5cb90f2cc.xml, Connect method [Audio Devices], IInterruptSync interface
+ms.keywords : portcls/IInterruptSync::Connect, Connect method [Audio Devices], IInterruptSync interface, IInterruptSync::Connect, Connect, IInterruptSync interface [Audio Devices], Connect method, audmp-routines_10f66201-af8d-42ff-a854-04f5cb90f2cc.xml, Connect method [Audio Devices], IInterruptSync, audio.iinterruptsync_connect
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -65,14 +65,10 @@ This method connects the synchronization object to the interrupt that was specif
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

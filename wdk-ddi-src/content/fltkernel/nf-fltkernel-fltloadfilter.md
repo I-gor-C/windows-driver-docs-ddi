@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : aecf5f5f-c0b7-487a-9db0-d01212aef094
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltLoadFilter, FltLoadFilter routine [Installable File System Drivers], ifsk.fltloadfilter, FltApiRef_e_to_o_3cdd26c1-dc25-4fa0-8ea1-a1458742cd45.xml, fltkernel/FltLoadFilter
+ms.keywords : ifsk.fltloadfilter, fltkernel/FltLoadFilter, FltApiRef_e_to_o_3cdd26c1-dc25-4fa0-8ea1-a1458742cd45.xml, FltLoadFilter routine [Installable File System Drivers], FltLoadFilter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,20 +120,17 @@ To unload the supporting minifilter driver, call <a href="..\fltkernel\nf-fltker
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">FltUnloadFilter</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

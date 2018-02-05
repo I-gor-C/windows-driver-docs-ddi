@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : DAC18721-5747-4D5E-8A25-24B80DE77C99
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UfxDeviceEventComplete method [Buses], ufxclient/UfxDeviceEventComplete, buses.ufxdeviceeventcomplete, UfxDeviceEventComplete
+ms.keywords : UfxDeviceEventComplete method [Buses], ufxclient/UfxDeviceEventComplete, UfxDeviceEventComplete, buses.ufxdeviceeventcomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -129,11 +129,8 @@ The client driver calls <b>UfxDeviceEventComplete</b> to signal completion of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |

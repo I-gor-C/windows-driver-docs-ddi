@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bb82c90d-9bd3-4a23-b171-06a3208e424b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k111_76257300-f41b-4dad-a81f-8ea1b187244a.xml, NtAllocateVirtualMemory, ZwAllocateVirtualMemory, ntifs/ZwAllocateVirtualMemory, ntifs/NtAllocateVirtualMemory, ZwAllocateVirtualMemory routine [Kernel-Mode Driver Architecture], kernel.zwallocatevirtualmemory
+ms.keywords : k111_76257300-f41b-4dad-a81f-8ea1b187244a.xml, ZwAllocateVirtualMemory routine [Kernel-Mode Driver Architecture], ZwAllocateVirtualMemory, NtAllocateVirtualMemory, ntifs/ZwAllocateVirtualMemory, ntifs/NtAllocateVirtualMemory, kernel.zwallocatevirtualmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -322,12 +322,11 @@ For more information about memory management, see <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 

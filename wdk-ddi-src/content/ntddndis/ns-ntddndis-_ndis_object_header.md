@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 59d1a9b0-a4d0-4a24-aa2f-2167b0f53caa
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_OBJECT_HEADER, PNDIS_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], NDIS_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], netvista.ndis_object_header, ndis_object_ref_c4593f06-bd96-4bbe-8e94-d8b7b1cf413b.xml, ntddndis/PNDIS_OBJECT_HEADER, _NDIS_OBJECT_HEADER, ntddndis/NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER, PNDIS_OBJECT_HEADER
+ms.keywords : netvista.ndis_object_header, ntddndis/PNDIS_OBJECT_HEADER, ntddndis/NDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_OBJECT_HEADER, _NDIS_OBJECT_HEADER, PNDIS_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_OBJECT_HEADER, ndis_object_ref_c4593f06-bd96-4bbe-8e94-d8b7b1cf413b.xml, NDIS_OBJECT_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER"
+req.typenames : NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER
 ---
 
 # _NDIS_OBJECT_HEADER structure
@@ -82,7 +82,5 @@ The reference page for every structure, that has an NDIS_OBJECT_HEADER structure
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |

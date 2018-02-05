@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6faeb410-486e-4b79-b942-62d16039d24b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwQueryInformationResourceManager routine [Kernel-Mode Driver Architecture], NtQueryInformationResourceManager, wdm/NtQueryInformationResourceManager, ktm_ref_2232fa2b-badb-4054-8a99-65f55ca1bff5.xml, kernel.zwqueryinformationresourcemanager, wdm/ZwQueryInformationResourceManager, ZwQueryInformationResourceManager
+ms.keywords : wdm/NtQueryInformationResourceManager, wdm/ZwQueryInformationResourceManager, ZwQueryInformationResourceManager, ZwQueryInformationResourceManager routine [Kernel-Mode Driver Architecture], kernel.zwqueryinformationresourcemanager, NtQueryInformationResourceManager, ktm_ref_2232fa2b-badb-4054-8a99-65f55ca1bff5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -167,30 +167,29 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+<a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>
+
+<a href="..\wdm\nf-wdm-zwsetinformationresourcemanager.md">ZwSetInformationResourceManager</a>
 
 <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>
-
-<a href="..\wdm\ne-wdm-_resourcemanager_information_class.md">RESOURCEMANAGER_INFORMATION_CLASS</a>
-
-<a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>
 
 <a href="..\wdm\nf-wdm-zwrecoverresourcemanager.md">ZwRecoverResourceManager</a>
 
 <a href="..\wdm\ns-wdm-_resourcemanager_basic_information.md">RESOURCEMANAGER_BASIC_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-zwsetinformationresourcemanager.md">ZwSetInformationResourceManager</a>
+<a href="..\wdm\ne-wdm-_resourcemanager_information_class.md">RESOURCEMANAGER_INFORMATION_CLASS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

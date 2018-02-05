@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 592553cb-21db-4c8d-b855-d9bc6a2d9579
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_render, DXGKARG_RENDER, *INOUT_PDXGKARG_RENDER, DmStructs_a297ffab-b45d-4c92-820c-0ef11849445e.xml, DXGKARG_RENDER structure [Display Devices], _DXGKARG_RENDER, d3dkmddi/DXGKARG_RENDER
+ms.keywords : "*INOUT_PDXGKARG_RENDER, DXGKARG_RENDER, DmStructs_a297ffab-b45d-4c92-820c-0ef11849445e.xml, DXGKARG_RENDER structure [Display Devices], display.dxgkarg_render, _DXGKARG_RENDER, d3dkmddi/DXGKARG_RENDER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -133,22 +133,20 @@ Support for the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
-
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRenderKm</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6a970bec-c773-498e-b93a-2bd9f625e194
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : icm/WcsGetUsePerUserProfiles, WcsGetUsePerUserProfiles, colorfnc_b80783e5-17c0-4069-90ba-71ea82a2d7d5.xml, print.wcsgetuseperuserprofiles, WcsGetUsePerUserProfiles function [Print Devices]
+ms.keywords : icm/WcsGetUsePerUserProfiles, colorfnc_b80783e5-17c0-4069-90ba-71ea82a2d7d5.xml, print.wcsgetuseperuserprofiles, WcsGetUsePerUserProfiles function [Print Devices], WcsGetUsePerUserProfiles
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,11 @@ This function is executable in Least-Privileged User Account (LUA) context.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
+| **Target Platform** | Universal |
 | **Header** | icm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mscms.lib |
+| **DLL** | Mscms.dll |
 
 ## See Also
 

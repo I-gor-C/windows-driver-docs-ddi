@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 49FE4EC0-B735-48C0-B26E-E165CA840D12
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wditypes/PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, netvista.wifi_ethertype_encapsulation_entry, PWDI_ETHERTYPE_ENCAPSULATION_ENTRY structure pointer [Device and Driver Installation], WDI_ETHERTYPE_ENCAPSULATION_ENTRY, _WDI_ETHERTYPE_ENCAPSULATION_ENTRY, *PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure [Device and Driver Installation], netvista.wdi_ethertype_encapsulation_entry, PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, wditypes/WDI_ETHERTYPE_ENCAPSULATION_ENTRY
+ms.keywords : wditypes/PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, WDI_ETHERTYPE_ENCAPSULATION_ENTRY, netvista.wifi_ethertype_encapsulation_entry, WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure [Device and Driver Installation], PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, wditypes/WDI_ETHERTYPE_ENCAPSULATION_ENTRY, PWDI_ETHERTYPE_ENCAPSULATION_ENTRY structure pointer [Device and Driver Installation], _WDI_ETHERTYPE_ENCAPSULATION_ENTRY, *PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, netvista.wdi_ethertype_encapsulation_entry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, WDI_ETHERTYPE_ENCAPSULATION_ENTRY"
+req.typenames : WDI_ETHERTYPE_ENCAPSULATION_ENTRY, *PWDI_ETHERTYPE_ENCAPSULATION_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -66,7 +66,5 @@ The value of the IEEE EtherType in big-endian byte order.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b2334012-0aeb-43a2-aa5f-ecc51949ac46
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient interface, IDebugClient2 interface [Windows Debugging], GetOtherOutputMask method, dbgeng/IDebugClient::GetOtherOutputMask, dbgeng/IDebugClient4::GetOtherOutputMask, IDebugClient2::GetOtherOutputMask, GetOtherOutputMask, IDebugClient5::GetOtherOutputMask, IDebugClient::GetOtherOutputMask, dbgeng/IDebugClient2::GetOtherOutputMask, IDebugClient_780a02ad-2f51-4142-a0d2-74220bf52623.xml, IDebugClient3 interface [Windows Debugging], GetOtherOutputMask method, GetOtherOutputMask method [Windows Debugging], IDebugClient4 interface, debugger.getotheroutputmask, GetOtherOutputMask method [Windows Debugging], IDebugClient interface [Windows Debugging], GetOtherOutputMask method, IDebugClient3::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient5 interface, GetOtherOutputMask method [Windows Debugging], IDebugClient3 interface, IDebugClient5, GetOtherOutputMask method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], GetOtherOutputMask method, IDebugClient4 interface [Windows Debugging], GetOtherOutputMask method, IDebugClient4::GetOtherOutputMask, dbgeng/IDebugClient3::GetOtherOutputMask
+ms.keywords : GetOtherOutputMask method [Windows Debugging], IDebugClient interface, GetOtherOutputMask, IDebugClient3::GetOtherOutputMask, IDebugClient::GetOtherOutputMask, IDebugClient interface [Windows Debugging], GetOtherOutputMask method, IDebugClient3 interface [Windows Debugging], GetOtherOutputMask method, dbgeng/IDebugClient5::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], GetOtherOutputMask method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient3::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient3 interface, IDebugClient4 interface [Windows Debugging], GetOtherOutputMask method, IDebugClient5 interface [Windows Debugging], GetOtherOutputMask method, dbgeng/IDebugClient::GetOtherOutputMask, IDebugClient5::GetOtherOutputMask, IDebugClient4::GetOtherOutputMask, debugger.getotheroutputmask, IDebugClient2::GetOtherOutputMask, dbgeng/IDebugClient4::GetOtherOutputMask, IDebugClient2 interface [Windows Debugging], GetOtherOutputMask method, GetOtherOutputMask method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient4 interface, IDebugClient_780a02ad-2f51-4142-a0d2-74220bf52623.xml, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,30 +90,25 @@ For an overview of output in the debugger engine, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548080">GetOutputMask</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556750">SetOtherOutputMask</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556750">SetOtherOutputMask</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
  
 

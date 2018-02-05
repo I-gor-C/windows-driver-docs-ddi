@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4F79D820-29D4-4D38-A09C-8A5E968C1479
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PSYSENV_VALUE structure pointer [Kernel-Mode Driver Architecture], ntddsysenv/PSYSENV_VALUE, PSYSENV_VALUE, *PSYSENV_VALUE, kernel.sysenv_value, ntddsysenv/SYSENV_VALUE, SYSENV_VALUE structure [Kernel-Mode Driver Architecture], _SYSENV_VALUE, SYSENV_VALUE
+ms.keywords : SYSENV_VALUE structure [Kernel-Mode Driver Architecture], _SYSENV_VALUE, ntddsysenv/SYSENV_VALUE, PSYSENV_VALUE structure pointer [Kernel-Mode Driver Architecture], ntddsysenv/PSYSENV_VALUE, PSYSENV_VALUE, *PSYSENV_VALUE, kernel.sysenv_value, SYSENV_VALUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,6 @@ The length of the value of the system environment variable.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddsysenv.h |
 
 ## See Also

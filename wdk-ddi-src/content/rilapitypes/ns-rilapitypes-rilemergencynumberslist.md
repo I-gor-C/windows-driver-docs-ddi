@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 06816431-a6fc-4c24-a31d-c486a4ba667f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST structure [Network Drivers Starting with Windows Vista], netvista.rilemergencynumberslist_2, *LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST
+ms.keywords : "*LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, netvista.rilemergencynumberslist_2, rilapitypes/RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST"
+req.typenames : RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
 req.product : Windows 10 or later.
 ---
 
@@ -70,7 +70,4 @@ typedef struct _RILEMERGENCYNUMBERSLIST {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

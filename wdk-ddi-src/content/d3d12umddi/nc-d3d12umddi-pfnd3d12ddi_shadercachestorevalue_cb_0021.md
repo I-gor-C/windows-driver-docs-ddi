@@ -71,11 +71,11 @@ The handle of a PSO.
 
 `*pPrecomputedHash`
 
-
+A hash value.
 
 `*pKey`
 
-
+A pointer to a key.
 
 `KeyLen`
 
@@ -83,7 +83,7 @@ The length of the key.
 
 `*pValue`
 
-
+A pointer to an output value.
 
 `ValueLen`
 
@@ -101,11 +101,5 @@ Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

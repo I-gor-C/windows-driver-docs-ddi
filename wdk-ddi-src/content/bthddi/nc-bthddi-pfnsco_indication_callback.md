@@ -79,8 +79,8 @@ A
 `Parameters`
 
 A 
-     <mshelp:link keywords="bltooth.sco_indication_parameters" tabindex="0"><b>
-     SCO_INDICATION_PARAMETERS</b></mshelp:link> structure that contains parameter information based on the value passed
+     <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">
+     SCO_INDICATION_PARAMETERS</a> structure that contains parameter information based on the value passed
      to the 
      <i>Indication</i> parameter.
 
@@ -111,8 +111,8 @@ In the second case, the profile driver acts as a client and attempts to connect 
     <b>Callback</b> member of the 
     <a href="..\bthddi\ns-bthddi-_brb_sco_open_channel.md">_BRB_SCO_OPEN_CHANNEL</a> structure passed
     with the specified BRB when one of them is submitted through 
-    <mshelp:link keywords="bltooth.ioctl_internal_bth_submit_brb" tabindex="0"><b>
-    IOCTL_INTERNAL_BTH_SUBMIT_BRB</b></mshelp:link>.
+    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">
+    IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>.
 
 After it is registered, the callback function is only associated with the channel that the BRB opened,
     and the function notifies the profile driver of actions that occur over the open channel to the remote
@@ -128,26 +128,22 @@ The SCO_INDICATION_PARAMETERS structure held in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | bthddi.h (include Bthddi.h) |
-| **Library** |  |
 | **IRQL** | Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="..\bthddi\ns-bthddi-_brb_sco_register_server.md">_BRB_SCO_REGISTER_SERVER</a>
 
 <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536626">BRB_SCO_OPEN_CHANNEL</a>
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_register_server.md">_BRB_SCO_REGISTER_SERVER</a>
-
 <a href="..\bthddi\ne-bthddi-_sco_indication_code.md">SCO_INDICATION_CODE</a>
+
+<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 
  
 

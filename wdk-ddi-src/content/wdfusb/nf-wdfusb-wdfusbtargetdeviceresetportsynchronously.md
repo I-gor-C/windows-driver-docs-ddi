@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4f0941ea-ccbb-4345-82c0-ec5d88862b05
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceResetPortSynchronously method, wdf.wdfusbtargetdeviceresetportsynchronously, WdfUsbTargetDeviceResetPortSynchronously, PFN_WDFUSBTARGETDEVICERESETPORTSYNCHRONOUSLY, DFUsbRef_423196d9-8f58-462a-91b3-9d747a12d6df.xml, wdfusb/WdfUsbTargetDeviceResetPortSynchronously, kmdf.wdfusbtargetdeviceresetportsynchronously
+ms.keywords : wdf.wdfusbtargetdeviceresetportsynchronously, wdfusb/WdfUsbTargetDeviceResetPortSynchronously, kmdf.wdfusbtargetdeviceresetportsynchronously, WdfUsbTargetDeviceResetPortSynchronously, WdfUsbTargetDeviceResetPortSynchronously method, DFUsbRef_423196d9-8f58-462a-91b3-9d747a12d6df.xml, PFN_WDFUSBTARGETDEVICERESETPORTSYNCHRONOUSLY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,12 +100,11 @@ For more information about the <b>WdfUsbTargetDeviceResetPortSynchronously</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 

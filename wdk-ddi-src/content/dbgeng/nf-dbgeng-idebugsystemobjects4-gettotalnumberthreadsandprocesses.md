@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 452dc67b-1938-4757-99bd-507a32d9a71a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects_503ce0cc-8781-4a45-aa59-727b41aaf23b.xml, IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects3 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4, IDebugSystemObjects4 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, dbgeng/IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses, GetTotalNumberThreadsAndProcesses, GetTotalNumberThreadsAndProcesses method [Windows Debugging], GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses, debugger.gettotalnumberthreadsandprocesses
+ms.keywords : GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects3 interface, GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, dbgeng/IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects4 interface [Windows Debugging], GetTotalNumberThreadsAndProcesses method, IDebugSystemObjects3::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses, GetTotalNumberThreadsAndProcesses, dbgeng/IDebugSystemObjects4::GetTotalNumberThreadsAndProcesses, IDebugSystemObjects_503ce0cc-8781-4a45-aa59-727b41aaf23b.xml, debugger.gettotalnumberthreadsandprocesses, GetTotalNumberThreadsAndProcesses method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -105,22 +105,17 @@ If no target is found, all the values are set to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsystemobjects4.md">IDebugSystemObjects4</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
 
  
 

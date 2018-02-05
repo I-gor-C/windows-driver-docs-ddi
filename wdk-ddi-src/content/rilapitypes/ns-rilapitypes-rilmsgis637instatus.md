@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 70215db8-52c0-48c5-8e59-c60a61fbd07e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILMSGIS637INSTATUS, RILMSGIS637INSTATUS structure [Network Drivers Starting with Windows Vista], RILMSGIS637INSTATUS, rilapitypes/RILMSGIS637INSTATUS, netvista.rilmsgis637instatus_2"
+ms.keywords : RILMSGIS637INSTATUS, *LPRILMSGIS637INSTATUS, RILMSGIS637INSTATUS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILMSGIS637INSTATUS, netvista.rilmsgis637instatus_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -115,7 +115,4 @@ typedef struct _RILMSGIS637INSTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

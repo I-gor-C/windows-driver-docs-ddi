@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f69328fb-356b-4381-ae6e-df39ac60e032
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : AcquireLock method, umdf.iwdfobject_acquirelock, AcquireLock, wudfddi/IWDFObject::AcquireLock, UMDFBaseObjectRef_3a9b581b-87cd-489d-b945-924489d5c3b9.xml, AcquireLock method, IWDFObject interface, wdf.iwdfobject_acquirelock, IWDFObject, IWDFObject::AcquireLock, IWDFObject interface, AcquireLock method
+ms.keywords : UMDFBaseObjectRef_3a9b581b-87cd-489d-b945-924489d5c3b9.xml, umdf.iwdfobject_acquirelock, wdf.iwdfobject_acquirelock, IWDFObject::AcquireLock, AcquireLock method, AcquireLock, AcquireLock method, IWDFObject interface, IWDFObject, IWDFObject interface, AcquireLock method, wudfddi/IWDFObject::AcquireLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -70,14 +70,12 @@ Unsynchronized code can call <b>AcquireLock</b>. The driver should call on objec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

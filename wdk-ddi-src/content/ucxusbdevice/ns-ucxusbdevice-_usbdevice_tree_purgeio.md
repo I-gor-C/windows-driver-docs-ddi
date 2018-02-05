@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 47C442F5-7D16-4E73-8D05-82D63D5265C1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO structure pointer [Buses], USBDEVICE_TREE_PURGEIO structure [Buses], buses._usbdevice_tree_purgeio, ucxusbdevice/P_USBDEVICE_TREE_PURGEIO, ucxusbdevice/_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO, _USBDEVICE_TREE_PURGEIO
+ms.keywords : "_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO structure pointer [Buses], USBDEVICE_TREE_PURGEIO structure [Buses], ucxusbdevice/P_USBDEVICE_TREE_PURGEIO, ucxusbdevice/_USBDEVICE_TREE_PURGEIO, P_USBDEVICE_TREE_PURGEIO, buses._usbdevice_tree_purgeio, USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBDEVICE_TREE_PURGEIO, USBDEVICE_TREE_PURGEIO"
+req.typenames : USBDEVICE_TREE_PURGEIO, *PUSBDEVICE_TREE_PURGEIO
 req.product : Windows 10 or later.
 ---
 
@@ -64,9 +64,6 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also

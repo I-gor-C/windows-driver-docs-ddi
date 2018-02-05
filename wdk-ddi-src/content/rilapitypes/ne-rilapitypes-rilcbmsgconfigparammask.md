@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ec2a26a0-4325-41d9-a6b4-5b9c2f22dd4e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcbmsgconfigparammask_2, RILCBMSGCONFIGPARAMMASK, rilapitypes/RIL_PARAM_CBMC_GWLINFO, RIL_PARAM_CBMC_CDMASIZE, rilapitypes/RIL_PARAM_CBMC_CDMAINFO, RILCBMSGCONFIGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_CBMC_CDMASIZE, RIL_PARAM_CBMC_ALL, rilapitypes/RIL_PARAM_CBMC_ALL, RIL_PARAM_CBMC_GWLINFO, RIL_PARAM_CBMC_CDMAINFO, rilapitypes/RILCBMSGCONFIGPARAMMASK
+ms.keywords : RILCBMSGCONFIGPARAMMASK, rilapitypes/RIL_PARAM_CBMC_GWLINFO, RIL_PARAM_CBMC_CDMASIZE, rilapitypes/RIL_PARAM_CBMC_CDMASIZE, rilapitypes/RIL_PARAM_CBMC_CDMAINFO, rilapitypes/RIL_PARAM_CBMC_ALL, rilapitypes/RILCBMSGCONFIGPARAMMASK, RILCBMSGCONFIGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_CBMC_ALL, netvista.rilcbmsgconfigparammask_2, RIL_PARAM_CBMC_GWLINFO, RIL_PARAM_CBMC_CDMAINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILCBMSGCONFIGPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

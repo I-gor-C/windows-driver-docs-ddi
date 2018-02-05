@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -87,7 +87,24 @@ A <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> enumer
 
 `*VirtualAddress`
 
-
+A pointer to a variable that receives the address of the beginning of the mapped range. The way that the mapped range is accessed depends on the values of <i>InIoSpace</i> and <i>MapToUserMode</i>. The following table summarizes the different ways that the mapped range is accessed.
+<table>
+<tr>
+<td></td>
+<td><i>MapToUserMode</i> is <b>FALSE</b></td>
+<td><i>MapToUserMode</i> is <b>TRUE</b></td>
+</tr>
+<tr>
+<td><i>InIoSpace</i> is <b>FALSE</b></td>
+<td>READ_REGISTER_X WRITE_REGISTER_X</td>
+<td>User-mode code performs ordinary memory access.</td>
+</tr>
+<tr>
+<td><i>InIoSpace</i> is <b>TRUE</b></td>
+<td>READ_PORT_X WRITE_PORT_X</td>
+<td>Not possible.</td>
+</tr>
+</table>
 
 
 ## Return Value
@@ -101,14 +118,10 @@ The PHYSICAL_ADDRESS data type is defined in <i>Ntdef.h</i>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | dispmprt.h (include Dispmprt.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -64,7 +64,7 @@ A driver-supplied handle to the Miracast display device. This handle was origina
 
 `*pChunkInfo`
 
-
+A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_info.md">DXGK_MIRACAST_CHUNK_INFO</a> structure that contains chunk information that is to be reported by the display miniport driver.
 
 `pPrivateDriverData`
 
@@ -86,24 +86,20 @@ The display miniport driver  calls this function when it wants to report chunk i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | dispmprt.h (include Dispmprt.h) |
-| **Library** |  |
 | **IRQL** | Can be called at any IRQL level. |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_info.md">DXGK_MIRACAST_CHUNK_INFO</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_get_next_chunk_data.md">GetNextChunkData</a>
 
 <a href="..\dispmprt\ns-dispmprt-_dxgk_miracast_display_callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
 
  
 

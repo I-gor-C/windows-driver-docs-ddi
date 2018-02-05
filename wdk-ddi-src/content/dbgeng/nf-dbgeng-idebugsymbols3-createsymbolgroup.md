@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f55aa290-5e57-48d8-9454-370c494bbd65
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : CreateSymbolGroup method [Windows Debugging], IDebugSymbols interface, CreateSymbolGroup method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], CreateSymbolGroup method, IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup method, dbgeng/IDebugSymbols3::CreateSymbolGroup, IDebugSymbols_fe8b31b2-0c5c-4dde-9d60-a353893e3f65.xml, dbgeng/IDebugSymbols2::CreateSymbolGroup, IDebugSymbols3::CreateSymbolGroup, debugger.createsymbolgroup, IDebugSymbols interface [Windows Debugging], CreateSymbolGroup method, CreateSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, CreateSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::CreateSymbolGroup, CreateSymbolGroup, dbgeng/IDebugSymbols::CreateSymbolGroup, IDebugSymbols3, IDebugSymbols::CreateSymbolGroup
+ms.keywords : dbgeng/IDebugSymbols::CreateSymbolGroup, CreateSymbolGroup method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::CreateSymbolGroup, dbgeng/IDebugSymbols3::CreateSymbolGroup, debugger.createsymbolgroup, IDebugSymbols2 interface [Windows Debugging], CreateSymbolGroup method, CreateSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols::CreateSymbolGroup, IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup method, IDebugSymbols3::CreateSymbolGroup, CreateSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols interface [Windows Debugging], CreateSymbolGroup method, IDebugSymbols2::CreateSymbolGroup, CreateSymbolGroup, IDebugSymbols_fe8b31b2-0c5c-4dde-9d60-a353893e3f65.xml, CreateSymbolGroup method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,26 +90,21 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
 <a href="https://msdn.microsoft.com/b77de459-b5ac-4752-89eb-f24fdde36134">IDebugSymbolGroup::AddSymbol</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 
  
 

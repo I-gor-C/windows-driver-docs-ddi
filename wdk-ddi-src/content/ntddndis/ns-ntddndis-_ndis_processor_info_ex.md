@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e4f28f30-32bc-4bbc-8e95-f87dfe80229d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_PROCESSOR_INFO_EX, ndis_processor_group_ref_0a75adfb-c28f-4d9b-8b29-6da14662bda7.xml, NDIS_PROCESSOR_INFO_EX structure [Network Drivers Starting with Windows Vista], netvista.ndis_processor_info_ex, *PNDIS_PROCESSOR_INFO_EX, ntddndis/PNDIS_PROCESSOR_INFO_EX, _NDIS_PROCESSOR_INFO_EX, ntddndis/NDIS_PROCESSOR_INFO_EX, NDIS_PROCESSOR_INFO_EX, PNDIS_PROCESSOR_INFO_EX structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis_processor_group_ref_0a75adfb-c28f-4d9b-8b29-6da14662bda7.xml, *PNDIS_PROCESSOR_INFO_EX, netvista.ndis_processor_info_ex, ntddndis/PNDIS_PROCESSOR_INFO_EX, _NDIS_PROCESSOR_INFO_EX, NDIS_PROCESSOR_INFO_EX, NDIS_PROCESSOR_INFO_EX structure [Network Drivers Starting with Windows Vista], PNDIS_PROCESSOR_INFO_EX structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PROCESSOR_INFO_EX, ntddndis/NDIS_PROCESSOR_INFO_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,8 +73,8 @@ The hyper-threading ID of the processor. The value is in the range from zero thr
 
 The node distance of the processor. If the handle at the 
      <i>NdisHandle</i> parameter that the caller passed to the 
-     <mshelp:link keywords="netvista.ndisgetprocessorinformationex" tabindex="0"><b>
-     NdisGetProcessorInformationEx</b></mshelp:link> function is not <b>NULL</b> and is a miniport adapter handle, this member
+     <a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
+     NdisGetProcessorInformationEx</a> function is not <b>NULL</b> and is a miniport adapter handle, this member
      contains the distance of the corresponding NIC from this processor's NUMA node. Otherwise, this member
      is zero for miniport drivers or USHORT_MAX (0xffff) for other drivers.
 
@@ -96,25 +96,23 @@ The socket identifier for the processor. This is the number that is assigned to 
 
 ## Remarks
 The NDIS_PROCESSOR_INFO_EX structure is used in the 
-    <mshelp:link keywords="netvista.ndis_system_processor_info_ex" tabindex="0"><b>
-    NDIS_SYSTEM_PROCESSOR_INFO_EX</b></mshelp:link> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">
+    NDIS_SYSTEM_PROCESSOR_INFO_EX</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
+
 <a href="..\ndis\ns-ndis-_ndis_processor_info.md">NDIS_PROCESSOR_INFO</a>
 
-<mshelp:link keywords="netvista.ndisgetprocessorinformationex" tabindex="0"><b>
-   NdisGetProcessorInformationEx</b></mshelp:link>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
+<a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
+   NdisGetProcessorInformationEx</a>
 
  
 

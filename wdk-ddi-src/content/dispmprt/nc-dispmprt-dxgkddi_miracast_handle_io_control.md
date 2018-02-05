@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -75,7 +75,9 @@ Supplied by the operating system as the size, in bytes, of the input buffer poin
 
 `*pInputBuffer`
 
+Supplied by the operating system as a pointer to the input buffer. This value originated as the user-mode <a href="..\netdispumdddi\nc-netdispumdddi-pfn_miracast_io_control.md">MiracastIoControl</a> function's <i>InputBufferSize</i> parameter.
 
+<i>InputBufferSize</i> specifies the size of the buffer.
 
 `OutputBufferSize`
 
@@ -83,11 +85,13 @@ Supplied by the operating system as the size, in bytes, of the input buffer poin
 
 `*pOutputBuffer`
 
+Supplied by the operating system as a pointer to the output buffer. This value originated as the user-mode <a href="..\netdispumdddi\nc-netdispumdddi-pfn_miracast_io_control.md">MiracastIoControl</a> function's <i>pOutputBuffer</i> parameter.
 
+<i>OutBufferSize</i> specifies the size of the buffer.
 
 `*BytesReturned`
 
-
+Supplied by the operating system as a pointer to a buffer that holds a <b>ULONG</b>-type value that is the number of bytes that the display miniport driver returned in the buffer pointed to by <i>pOutputBuffer</i>.
 
 
 ## Return Value
@@ -111,26 +115,22 @@ The threading and synchronization level for this function is set by how the user
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | dispmprt.h (include Dispmprt.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
+
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_miracast_io_control.md">MiracastIoControl</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
 
 <a href="..\wdm\nf-wdm-probeforread.md">ProbeForRead</a>
 
-<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
 
  
 

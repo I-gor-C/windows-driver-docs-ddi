@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 946a6ea7-5818-4959-adf2-3568c1b64b1a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv, IWiaMiniDrv::drvGetCapabilities, drvGetCapabilities, image.iwiaminidrv_drvgetcapabilities, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities
+ms.keywords : IWiaMiniDrv, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetcapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, IWiaMiniDrv::drvGetCapabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -93,14 +93,10 @@ The <i>Wiadef.h</i> header lists several predefined commands and events.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 

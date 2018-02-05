@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f22dbf1e-4b40-4294-bca5-3011f0a97644
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortBuildMdlForNonPagedPool, storage.storportbuildmdlfornonpagedpool, StorPortBuildMdlForNonPagedPool, StorPortBuildMdlForNonPagedPool routine [Storage Devices], storprt_98151881-8a9f-4bf9-8365-ec50aecced4f.xml
+ms.keywords : storport/StorPortBuildMdlForNonPagedPool, storprt_98151881-8a9f-4bf9-8365-ec50aecced4f.xml, StorPortBuildMdlForNonPagedPool routine [Storage Devices], StorPortBuildMdlForNonPagedPool, storage.storportbuildmdlfornonpagedpool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,11 +121,8 @@ The call was made at an invalid IRQL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 2585c7ce-6dba-491a-86c1-5ee69f28136f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PTP_VENDOR_DATA_OUT, ptpusd/PTP_VENDOR_DATA_OUT, PPTP_VENDOR_DATA_OUT structure pointer [Imaging Devices], _PTP_VENDOR_DATA_OUT, ptpusd/PPTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT, PPTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT structure [Imaging Devices], wiastrct_032c0aa0-aec8-440d-b528-de1b739d2e1d.xml, image.ptp_vendor_data_out
+ms.keywords : PTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT structure [Imaging Devices], wiastrct_032c0aa0-aec8-440d-b528-de1b739d2e1d.xml, *PPTP_VENDOR_DATA_OUT, image.ptp_vendor_data_out, ptpusd/PTP_VENDOR_DATA_OUT, ptpusd/PPTP_VENDOR_DATA_OUT, PPTP_VENDOR_DATA_OUT structure pointer [Imaging Devices], _PTP_VENDOR_DATA_OUT, PPTP_VENDOR_DATA_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT
+req.typenames : "*PPTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT"
 req.product : Windows 10 or later.
 ---
 
@@ -84,9 +84,7 @@ For more information about the response codes used in the <b>ResponseCode</b> me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | ptpusd.h (include Ptpusd.h) |
 
 ## See Also

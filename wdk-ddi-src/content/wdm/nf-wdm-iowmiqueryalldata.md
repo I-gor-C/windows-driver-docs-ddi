@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d0efae7b-5a53-4f8a-b2d7-c30eefad7c90
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iowmiqueryalldata, IoWMIQueryAllData, wdm/IoWMIQueryAllData, IoWMIQueryAllData routine [Kernel-Mode Driver Architecture], k104_120c73d7-392a-4604-8f6b-11c4e717fcac.xml
+ms.keywords : kernel.iowmiqueryalldata, wdm/IoWMIQueryAllData, IoWMIQueryAllData, IoWMIQueryAllData routine [Kernel-Mode Driver Architecture], k104_120c73d7-392a-4604-8f6b-11c4e717fcac.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,14 +120,12 @@ To query for multiple WMI classes, use <a href="..\wdm\nf-wdm-iowmiqueryalldatam
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later versions of the Windows operating system. Available in Microsoft Windows XP and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

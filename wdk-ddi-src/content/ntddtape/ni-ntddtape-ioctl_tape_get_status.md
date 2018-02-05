@@ -183,9 +183,7 @@ STATUS_CLEANER_CARTRIDGE_INSTALLED
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddtape.h (include Ntddtape.h) |
-| **IRQL** |  |
 
 ## See Also
 

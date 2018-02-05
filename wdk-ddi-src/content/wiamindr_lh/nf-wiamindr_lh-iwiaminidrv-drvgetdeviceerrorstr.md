@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : c34a6834-8875-400c-9634-6c2b9b68164f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, IWiaMiniDrv, drvGetDeviceErrorStr, wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, image.iwiaminidrv_drvgetdeviceerrorstr, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface
+ms.keywords : wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr, IWiaMiniDrv, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, drvGetDeviceErrorStr, image.iwiaminidrv_drvgetdeviceerrorstr, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -84,11 +84,7 @@ To obtain an error string that describes a device-specific minidriver-generated 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |

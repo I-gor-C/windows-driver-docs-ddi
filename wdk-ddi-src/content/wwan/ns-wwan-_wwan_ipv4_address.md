@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : D75EAC9E-8E65-437E-83AA-59B422527C6C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_IPV4_ADDRESS, PWWAN_IPV4_ADDRESS, _WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS, netvista.wwan_ipv4_address, PWWAN_IPV4_ADDRESS structure pointer [Network Drivers Starting with Windows Vista], WWAN_IPV4_ADDRESS, wwan/WWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "_WWAN_IPV4_ADDRESS, netvista.wwan_ipv4_address, WWAN_IPV4_ADDRESS, wwan/PWWAN_IPV4_ADDRESS, PWWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS structure [Network Drivers Starting with Windows Vista], *PWWAN_IPV4_ADDRESS, wwan/WWAN_IPV4_ADDRESS, PWWAN_IPV4_ADDRESS structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS"
+req.typenames : WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,5 @@ The length of the prefix or network part of the IP address of the PDP context.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8.1 and later versions of Windows. Available in Windows 8.1 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |

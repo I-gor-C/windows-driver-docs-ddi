@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4230F7E1-DC36-4265-9E82-907EE82E9DFF
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_MAXVIDEOFPS_FORPHOTORES, KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure [Streaming Media Devices], KSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, stream.kscamera_maxvideofps_forphotores, tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES, ksmedia/PKSCAMERA_MAXVIDEOFPS_FORPHOTORES"
+ms.keywords : stream.kscamera_maxvideofps_forphotores, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES, ksmedia/PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, KSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure pointer [Streaming Media Devices], KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure [Streaming Media Devices], ksmedia/KSCAMERA_MAXVIDEOFPS_FORPHOTORES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, KSCAMERA_MAXVIDEOFPS_FORPHOTORES"
+req.typenames : KSCAMERA_MAXVIDEOFPS_FORPHOTORES, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES
 ---
 
 # tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure
@@ -94,7 +94,5 @@ If <b>KSCAMERA_EXTENDEDPROP_PHOTOMODE_SEQUENCE</b> is supported on the <i>Photo 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | ksmedia.h (include Ksmedia.h) |

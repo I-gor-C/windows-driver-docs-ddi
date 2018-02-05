@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 94A966C4-9FFA-4937-B7D8-D1A3608E4A7F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PSET_FCP_NOTIFY, SET_FCP_NOTIFY structure [Buses], 61883/PSET_FCP_NOTIFY, PSET_FCP_NOTIFY, SET_FCP_NOTIFY, PSET_FCP_NOTIFY structure pointer [Buses], _SET_FCP_NOTIFY, IEEE.set_fcp_notify, 61883/SET_FCP_NOTIFY"
+ms.keywords : "_SET_FCP_NOTIFY, IEEE.set_fcp_notify, 61883/SET_FCP_NOTIFY, PSET_FCP_NOTIFY, SET_FCP_NOTIFY, SET_FCP_NOTIFY structure [Buses], *PSET_FCP_NOTIFY, PSET_FCP_NOTIFY structure pointer [Buses], 61883/PSET_FCP_NOTIFY"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSET_FCP_NOTIFY, SET_FCP_NOTIFY"
+req.typenames : SET_FCP_NOTIFY, *PSET_FCP_NOTIFY
 ---
 
 # _SET_FCP_NOTIFY structure
@@ -72,9 +72,6 @@ If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

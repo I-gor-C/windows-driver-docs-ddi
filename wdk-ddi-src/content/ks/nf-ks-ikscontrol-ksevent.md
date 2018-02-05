@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9e4b86cf-308f-4d9b-be28-966312dc4e43
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ikscontrol_ksevent2, KsEvent method [Streaming Media Devices], IKsControl interface, avintfc_359de56d-5fcc-47ea-838c-cd110493856c.xml, IKsControl::KsEvent, IKsControl, ks/IKsControl::KsEvent, KsEvent method [Streaming Media Devices], KsEvent, IKsControl interface [Streaming Media Devices], KsEvent method
+ms.keywords : IKsControl interface [Streaming Media Devices], KsEvent method, ks/IKsControl::KsEvent, stream.ikscontrol_ksevent2, avintfc_359de56d-5fcc-47ea-838c-cd110493856c.xml, IKsControl::KsEvent, KsEvent method [Streaming Media Devices], IKsControl, KsEvent, KsEvent method [Streaming Media Devices], IKsControl interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,14 +88,9 @@ To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | DesktopMobile |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | DesktopMobile |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ks.h |
 
 ## See Also
 

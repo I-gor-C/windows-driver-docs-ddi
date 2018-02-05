@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2adf102b-52aa-40e4-b3de-9189803339bf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_PHY_FRAME_STATISTICS, *PDOT11_PHY_FRAME_STATISTICS, DOT11_PHY_FRAME_STATISTICS, PDOT11_PHY_FRAME_STATISTICS structure pointer [Network Drivers Starting with Windows Vista], DOT11_PHY_FRAME_STATISTICS structure [Network Drivers Starting with Windows Vista], netvista.dot11_phy_frame_statistics, Native_802.11_data_types_e7446fc8-9a7c-41c5-bf90-7988dfddc950.xml, windot11/PDOT11_PHY_FRAME_STATISTICS, windot11/DOT11_PHY_FRAME_STATISTICS
+ms.keywords : "*PDOT11_PHY_FRAME_STATISTICS, PDOT11_PHY_FRAME_STATISTICS, Native_802.11_data_types_e7446fc8-9a7c-41c5-bf90-7988dfddc950.xml, DOT11_PHY_FRAME_STATISTICS, windot11/DOT11_PHY_FRAME_STATISTICS, windot11/PDOT11_PHY_FRAME_STATISTICS, PDOT11_PHY_FRAME_STATISTICS structure pointer [Network Drivers Starting with Windows Vista], DOT11_PHY_FRAME_STATISTICS structure [Network Drivers Starting with Windows Vista], netvista.dot11_phy_frame_statistics"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_PHY_FRAME_STATISTICS, *PDOT11_PHY_FRAME_STATISTICS
+req.typenames : "*PDOT11_PHY_FRAME_STATISTICS, DOT11_PHY_FRAME_STATISTICS"
 req.product : Windows 10 or later.
 ---
 
@@ -98,16 +98,16 @@ The number of duplicate MPDU frames that the 802.11 station received. The 802.11
 The number if MSDU packets and MMPDU frames that the 802.11 station discarded because of a timeout
      as defined by the IEEE 802.11 
      <b>dot11MaxReceiveLifetime</b> MIB object. For more information about this MIB object, see 
-     <mshelp:link keywords="netvista.oid_dot11_max_receive_lifetime" tabindex="0">
-     OID_DOT11_MAX_RECEIVE_LIFETIME</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-max-receive-lifetime">
+     OID_DOT11_MAX_RECEIVE_LIFETIME</a>.
 
 `ullMaxTXLifetimeExceededCount`
 
 The number of MSDU packets and MMPDU frames that the 802.11 station failed to transmit because of
      a timeout as defined by the IEEE 802.11 
      <b>dot11MaxTransmitMSDULifetime</b> MIB object. For more information about this MIB object, see 
-     <mshelp:link keywords="netvista.oid_dot11_max_transmit_msdu_lifetime" tabindex="0">
-     OID_DOT11_MAX_TRANSMIT_MSDU_LIFETIME</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-max-transmit-msdu-lifetime">
+     OID_DOT11_MAX_TRANSMIT_MSDU_LIFETIME</a>.
 
 `ullMulticastReceivedFrameCount`
 
@@ -251,21 +251,19 @@ The members of this structure are used to record PHY-level statistics for:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/e6bd2abf-faa2-463f-91df-a15924afae96">Native 802.11 Statistics</a>
 
-<mshelp:link keywords="netvista.extensible_station_phy_statistics" tabindex="0">Extensible Station PHY
-   Statistics</mshelp:link>
-
 <a href="..\windot11\ns-windot11-dot11_statistics.md">DOT11_STATISTICS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569420">OID_DOT11_STATISTICS</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/extensible-station-phy-statistics">Extensible Station PHY
+   Statistics</a>
 
  
 

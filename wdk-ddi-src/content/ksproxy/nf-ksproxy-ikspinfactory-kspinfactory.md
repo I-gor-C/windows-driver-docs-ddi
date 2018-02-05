@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 939ea77d-f194-4751-b02b-80d5e83c46f4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ikspinfactory_kspinfactory, ksproxy/IKsPinFactory::KsPinFactory, ksproxy_80504e51-334d-4dd8-a6ce-73de9b3b3729.xml, KsPinFactory method [Streaming Media Devices], IKsPinFactory interface, KsPinFactory, IKsPinFactory, IKsPinFactory::KsPinFactory, IKsPinFactory interface [Streaming Media Devices], KsPinFactory method, KsPinFactory method [Streaming Media Devices]
+ms.keywords : KsPinFactory method [Streaming Media Devices], stream.ikspinfactory_kspinfactory, KsPinFactory method [Streaming Media Devices], IKsPinFactory interface, KsPinFactory, ksproxy/IKsPinFactory::KsPinFactory, ksproxy_80504e51-334d-4dd8-a6ce-73de9b3b3729.xml, IKsPinFactory, IKsPinFactory::KsPinFactory, IKsPinFactory interface [Streaming Media Devices], KsPinFactory method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ Returns NOERROR if successful; otherwise, returns an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

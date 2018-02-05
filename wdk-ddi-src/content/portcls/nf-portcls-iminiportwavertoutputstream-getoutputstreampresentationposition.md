@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8E52A10E-5666-41B5-B342-491E5AF9DD38
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetOutputStreamPresentationPosition, portcls/IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, IMiniportWaveRTOutputStream, audio.iminiportwavertoutputstream_getoutputstreampresentationposition, IMiniportWaveRTOutputStream interface [Audio Devices], GetOutputStreamPresentationPosition method, IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, GetOutputStreamPresentationPosition method [Audio Devices], GetOutputStreamPresentationPosition method [Audio Devices], IMiniportWaveRTOutputStream interface
+ms.keywords : GetOutputStreamPresentationPosition, audio.iminiportwavertoutputstream_getoutputstreampresentationposition, portcls/IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, IMiniportWaveRTOutputStream interface [Audio Devices], GetOutputStreamPresentationPosition method, GetOutputStreamPresentationPosition method [Audio Devices], IMiniportWaveRTOutputStream interface, IMiniportWaveRTOutputStream, GetOutputStreamPresentationPosition method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -74,14 +74,11 @@ This does not mean that GetPacketCount and GetOutputStreamPresentationPosition, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10 and later. Available in Windows 10 and later. |
+| **Target Platform** | Windows |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

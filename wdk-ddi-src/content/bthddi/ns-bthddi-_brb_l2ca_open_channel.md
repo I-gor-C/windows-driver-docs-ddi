@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 16f79360-c8fd-4be9-9c94-7fa2a1d8c6b5
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "_BRB_L2CA_OPEN_CHANNEL structure [Bluetooth Devices], bltooth._brb_l2ca_open_channel, bth_structs_342ad84f-74fb-481f-b549-8f87c375c4d1.xml, _BRB_L2CA_OPEN_CHANNEL, bthddi/_BRB_L2CA_OPEN_CHANNEL"
+ms.keywords : bth_structs_342ad84f-74fb-481f-b549-8f87c375c4d1.xml, _BRB_L2CA_OPEN_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_L2CA_OPEN_CHANNEL, _BRB_L2CA_OPEN_CHANNEL, bltooth._brb_l2ca_open_channel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,8 +95,8 @@ The Bluetooth address of the device for which the connection is intended.
 `Callback`
 
 The 
-     <mshelp:link keywords="bltooth.l2cap_callback_function" tabindex="0"><i>L2CAP Callback
-     Function</i></mshelp:link> implemented by the profile driver, that the Bluetooth driver stack should call to notify
+     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback
+     Function</a> implemented by the profile driver, that the Bluetooth driver stack should call to notify
      the profile driver about any changes to the L2CAP connection.
 
 `CallbackContext`
@@ -306,8 +306,8 @@ The
 To accept or reject an incoming L2CAP connection request initiated by a remote device, profile drivers
     should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
-    <mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
-    BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link> request.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
+    BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request.
 
 A profile driver should build and send a <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b> request when the Bluetooth
     driver stack calls the profile driver's 
@@ -342,33 +342,31 @@ Profile drivers must allocate the memory to store the array that is stored in th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
+<a href="..\bthddi\ns-bthddi-_channel_config_results.md">CHANNEL_CONFIG_RESULTS</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
+   BRB_L2CA_OPEN_CHANNEL_RESPONSE</a>
+
 <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
-
-<mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
-   BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link>
-
-<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
 
-<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
-
 <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
 
-<a href="..\bthddi\ns-bthddi-_channel_config_results.md">CHANNEL_CONFIG_RESULTS</a>
+<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
+
+<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
 
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536618">BRB_L2CA_REGISTER_SERVER</a>
 

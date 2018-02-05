@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3A64DB04-EDAE-419C-947B-67201ECA8068
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDIRANGE, D3DDDIRANGE structure [Display Devices], D3DDDIRANGE, d3dumddi/D3DDDIRANGE, display.d3dddirange"
+ms.keywords : d3dumddi/D3DDDIRANGE, D3DDDIRANGE, display.d3dddirange, D3DDDIRANGE structure [Display Devices], _D3DDDIRANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ The size, in bytes, of a block of memory that begins at the buffer location spec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fa24de4c-de78-49b1-9c8d-ca9a63c8a84f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpmCalloutDeleteById0, wfp_ref_2_funct_2_fwpm_466376ac-f7a1-417e-9de8-9c3a7ff31404.xml, fwpmk/FwpmCalloutDeleteById0, FwpmCalloutDeleteById0 function [Network Drivers Starting with Windows Vista], netvista.fwpmcalloutdeletebyid0
+ms.keywords : FwpmCalloutDeleteById0 function [Network Drivers Starting with Windows Vista], FwpmCalloutDeleteById0, netvista.fwpmcalloutdeletebyid0, wfp_ref_2_funct_2_fwpm_466376ac-f7a1-417e-9de8-9c3a7ff31404.xml, fwpmk/FwpmCalloutDeleteById0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 
@@ -141,14 +141,11 @@ A callout can be deleted from the filter engine only if there are no filters in 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpmk.h (include Fwpmk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

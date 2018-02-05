@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e5a5ac98-171d-4a31-8bc6-400f613b7dc9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_SRIOV_BAR_RESOURCES_INFO, ntddndis/PNDIS_SRIOV_BAR_RESOURCES_INFO, PNDIS_SRIOV_BAR_RESOURCES_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_SRIOV_BAR_RESOURCES_INFO, NDIS_SRIOV_BAR_RESOURCES_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_BAR_RESOURCES_INFO, *PNDIS_SRIOV_BAR_RESOURCES_INFO, PNDIS_SRIOV_BAR_RESOURCES_INFO, netvista.ndis_sriov_bar_resources_info
+ms.keywords : "_NDIS_SRIOV_BAR_RESOURCES_INFO, ntddndis/PNDIS_SRIOV_BAR_RESOURCES_INFO, NDIS_SRIOV_BAR_RESOURCES_INFO, netvista.ndis_sriov_bar_resources_info, PNDIS_SRIOV_BAR_RESOURCES_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_SRIOV_BAR_RESOURCES_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_SRIOV_BAR_RESOURCES_INFO, PNDIS_SRIOV_BAR_RESOURCES_INFO, ntddndis/NDIS_SRIOV_BAR_RESOURCES_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SRIOV_BAR_RESOURCES_INFO, *PNDIS_SRIOV_BAR_RESOURCES_INFO
+req.typenames : "*PNDIS_SRIOV_BAR_RESOURCES_INFO, NDIS_SRIOV_BAR_RESOURCES_INFO"
 ---
 
 # _NDIS_SRIOV_BAR_RESOURCES_INFO structure
@@ -90,9 +90,7 @@ The <b>NDIS_SRIOV_BAR_RESOURCES_INFO</b> structure is used in OID method request
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2f50b228-5565-436f-8c68-8885b8916001
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PWSK_CLIENT_NPI, wsk/PWSK_CLIENT_NPI, WSK_CLIENT_NPI, _WSK_CLIENT_NPI, wskref_e498e50c-695d-4f5c-a1db-0f87f4313d4a.xml, PWSK_CLIENT_NPI structure pointer [Network Drivers Starting with Windows Vista], wsk/WSK_CLIENT_NPI, PWSK_CLIENT_NPI, WSK_CLIENT_NPI structure [Network Drivers Starting with Windows Vista], netvista.wsk_client_npi"
+ms.keywords : WSK_CLIENT_NPI, _WSK_CLIENT_NPI, wsk/WSK_CLIENT_NPI, PWSK_CLIENT_NPI structure pointer [Network Drivers Starting with Windows Vista], wskref_e498e50c-695d-4f5c-a1db-0f87f4313d4a.xml, *PWSK_CLIENT_NPI, PWSK_CLIENT_NPI, netvista.wsk_client_npi, WSK_CLIENT_NPI structure [Network Drivers Starting with Windows Vista], wsk/PWSK_CLIENT_NPI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,14 +35,14 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWSK_CLIENT_NPI, WSK_CLIENT_NPI"
+req.typenames : WSK_CLIENT_NPI, *PWSK_CLIENT_NPI
 req.product : Windows 10 or later.
 ---
 
 # _WSK_CLIENT_NPI structure
 The WSK_CLIENT_NPI structure identifies a 
-  <mshelp:link keywords="netvista.network_programming_interface" tabindex="0">Network Programming Interface
-  (NPI)</mshelp:link> implemented by a WSK client.
+  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">Network Programming Interface
+  (NPI)</a> implemented by a WSK client.
 
 ## Syntax
 ````
@@ -66,15 +66,13 @@ A pointer to a constant
 
 ## Remarks
 For more information about attaching a WSK application to the WSK subsystem, see 
-    <mshelp:link keywords="netvista.registering_a_winsock_kernel_application" tabindex="0">Registering a Winsock Kernel
-    Application</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock Kernel
+    Application</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also

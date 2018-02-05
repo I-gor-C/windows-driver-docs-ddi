@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4ae4dc8d-3502-40c1-8109-6935990a7091
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavepcistream_normalizephysicalposition, NormalizePhysicalPosition method [Audio Devices], portcls/IMiniportWavePciStream::NormalizePhysicalPosition, IMiniportWavePciStream, IMiniportWavePciStream::NormalizePhysicalPosition, audmp-routines_337339ea-4683-4b67-813c-a86e7e43597a.xml, NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream interface [Audio Devices], NormalizePhysicalPosition method
+ms.keywords : IMiniportWavePciStream::NormalizePhysicalPosition, IMiniportWavePciStream, audio.iminiportwavepcistream_normalizephysicalposition, NormalizePhysicalPosition method [Audio Devices], IMiniportWavePciStream interface, NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices], IMiniportWavePciStream interface [Audio Devices], NormalizePhysicalPosition method, audmp-routines_337339ea-4683-4b67-813c-a86e7e43597a.xml, portcls/IMiniportWavePciStream::NormalizePhysicalPosition
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,11 +68,7 @@ Given a physical position based on the actual number of bytes transferred, the <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a13d999-9caf-4750-beba-4e031cd0db81
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSignalSynchronizationObject2 function [Display Devices], display.d3dkmtsignalsynchronizationobject2, OpenGL_Functions_ffc87bcb-e2ab-48ea-8a90-c0b4cf7c8b33.xml, d3dkmthk/D3DKMTSignalSynchronizationObject2, D3DKMTSignalSynchronizationObject2
+ms.keywords : display.d3dkmtsignalsynchronizationobject2, d3dkmthk/D3DKMTSignalSynchronizationObject2, D3DKMTSignalSynchronizationObject2 function [Display Devices], OpenGL_Functions_ffc87bcb-e2ab-48ea-8a90-c0b4cf7c8b33.xml, D3DKMTSignalSynchronizationObject2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,14 +106,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTSignalSynchronizationObject2 is supported beginning with the Windows 7 operating system. D3DKMTSignalSynchronizationObject2 is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

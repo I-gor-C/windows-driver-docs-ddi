@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
+req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 
@@ -80,14 +80,10 @@ GpioClx always calls the <i>CLIENT_EnableInterrupt</i> and <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | gpioclx.h |
-| **Library** |  |
 | **IRQL** | Called at PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -95,9 +91,9 @@ GpioClx always calls the <i>CLIENT_EnableInterrupt</i> and <a href="https://msdn
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439371">CLIENT_DisableInterrupt</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a>
 
  
 

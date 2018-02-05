@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5D1CCF3D-D677-47B0-9C7B-7E35C649A7D5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorageCryptoAlgorithmUnknown, ntddstor/StorageCryptoAlgorithmUnknown, ntddstor/STORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmXTSAES, ntddstor/StorageCryptoAlgorithmAESECB, ntddstor/StorageCryptoAlgorithmESSIVAESCBC, _STORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], ntddstor/StorageCryptoAlgorithmXTSAES, *PSTORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmESSIVAESCBC, STORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmBitlockerAESCBC, storage.storage_crypto_algorithm_id, StorageCryptoAlgorithmBitlockerAESCBC, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmMax, StorageCryptoAlgorithmAESECB, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices]
+ms.keywords : ntddstor/StorageCryptoAlgorithmUnknown, StorageCryptoAlgorithmBitlockerAESCBC, StorageCryptoAlgorithmAESECB, _STORAGE_CRYPTO_ALGORITHM_ID, storage.storage_crypto_algorithm_id, ntddstor/StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmESSIVAESCBC, ntddstor/StorageCryptoAlgorithmESSIVAESCBC, StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], STORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmUnknown, ntddstor/StorageCryptoAlgorithmAESECB, ntddstor/StorageCryptoAlgorithmXTSAES, StorageCryptoAlgorithmXTSAES, ntddstor/STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmBitlockerAESCBC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_CRYPTO_ALGORITHM_ID, STORAGE_CRYPTO_ALGORITHM_ID"
+req.typenames : STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
 ---
 
 # _STORAGE_CRYPTO_ALGORITHM_ID Enumeration
@@ -92,7 +92,4 @@ typedef enum _STORAGE_CRYPTO_ALGORITHM_ID {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h |

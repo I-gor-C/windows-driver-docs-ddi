@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 40E00234-C22B-4F86-AC5D-197223298FD7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_FORMATHISTORYBUFFER, display.dxgkarg_formathistorybuffer, d3dkmddi/DXGKARG_FORMATHISTORYBUFFER, DXGKARG_FORMATHISTORYBUFFER structure [Display Devices], _DXGKARG_FORMATHISTORYBUFFER
+ms.keywords : DXGKARG_FORMATHISTORYBUFFER, display.dxgkarg_formathistorybuffer, _DXGKARG_FORMATHISTORYBUFFER, DXGKARG_FORMATHISTORYBUFFER structure [Display Devices], d3dkmddi/DXGKARG_FORMATHISTORYBUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,16 +99,14 @@ The driver should obtain time stamp entries and the number of usable time stamps
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_formathistorybuffer.md">DxgkDdiFormatHistoryBuffer</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_history_buffer.md">DXGK_HISTORY_BUFFER</a>
 

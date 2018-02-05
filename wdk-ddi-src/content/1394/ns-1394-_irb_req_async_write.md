@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 007E0DDE-0BD1-499D-A6C6-446644BBCE00
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRB_REQ_ASYNC_WRITE, 1394/IRB_REQ_ASYNC_WRITE, _IRB_REQ_ASYNC_WRITE, IEEE.irb_req_async_write, IRB_REQ_ASYNC_WRITE structure [Buses]
+ms.keywords : 1394/IRB_REQ_ASYNC_WRITE, IRB_REQ_ASYNC_WRITE, IRB_REQ_ASYNC_WRITE structure [Buses], _IRB_REQ_ASYNC_WRITE, IEEE.irb_req_async_write
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -155,7 +155,4 @@ Specifies the bus reset generation as known by the device driver that submitted 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

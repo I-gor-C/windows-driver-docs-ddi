@@ -58,11 +58,8 @@ The <b>IPartImage</b> interface is the abstraction for images in an XPS document
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **DLL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 249D8FCF-6B63-467B-AEAA-BCF4900CFA48
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_READ_REGISTER_BUFFER_ULONG function, wdf.wdf_read_register_buffer_ulong, wdfhwaccess/WDF_READ_REGISTER_BUFFER_ULONG, WDF_READ_REGISTER_BUFFER_ULONG
+ms.keywords : WDF_READ_REGISTER_BUFFER_ULONG, wdf.wdf_read_register_buffer_ulong, WDF_READ_REGISTER_BUFFER_ULONG function, wdfhwaccess/WDF_READ_REGISTER_BUFFER_ULONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,8 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ab240a95-6308-4953-95f6-9baa280ecf99
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaPropertyGetPinControl, stream.bdapropertygetpincontrol, BdaPropertyGetPinControl function [Streaming Media Devices], bdasup/BdaPropertyGetPinControl, bdaref_f2db3de1-bfa0-4ad9-a537-6cc46f972984.xml
+ms.keywords : bdaref_f2db3de1-bfa0-4ad9-a537-6cc46f972984.xml, stream.bdapropertygetpincontrol, BdaPropertyGetPinControl, bdasup/BdaPropertyGetPinControl, BdaPropertyGetPinControl function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,24 +78,21 @@ A BDA minidriver calls the <b>BdaPropertyGetPinControl</b> function to retrieve 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564350">KSPROPERTY_BDA_PIN_TYPE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566552">KSPROPSETID_BdaPinControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564348">KSPROPERTY_BDA_PIN_ID</a>
 
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564348">KSPROPERTY_BDA_PIN_ID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566552">KSPROPSETID_BdaPinControl</a>
 
  
 

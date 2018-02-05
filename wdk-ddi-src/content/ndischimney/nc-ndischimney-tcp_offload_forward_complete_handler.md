@@ -45,8 +45,8 @@ req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 NDIS calls a protocol or intermediate driver's 
   <i>ProtocolTcpOffloadForwardComplete</i> function to complete a forward operation that the driver previously
   initiated by calling the 
-  <mshelp:link keywords="netvista.ndisoffloadtcpdisconnect" tabindex="0"><b>
-  NdisOffloadTcpForward</b></mshelp:link> function.
+  <a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpdisconnect.md">
+  NdisOffloadTcpForward</a> function.
 
 ## Syntax
 
@@ -112,27 +112,21 @@ The PNET_BUFFER_LIST pointer that NDIS passed to the intermediate driver's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndistcpoffloadforwardcomplete" tabindex="0"><b>
-   NdisTcpOffloadForwardComplete</b></mshelp:link>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
-<a href="..\ndischimney\nc-ndischimney-w_tcp_offload_forward_handler.md">MiniportTcpOffloadForward</a>
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_forward_complete.md">
+   NdisTcpOffloadForwardComplete</a>
+
+<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpdisconnect.md">NdisOffloadTcpForward</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpdisconnect.md">NdisOffloadTcpForward</a>
+<a href="..\ndischimney\nc-ndischimney-w_tcp_offload_forward_handler.md">MiniportTcpOffloadForward</a>
 
  
 

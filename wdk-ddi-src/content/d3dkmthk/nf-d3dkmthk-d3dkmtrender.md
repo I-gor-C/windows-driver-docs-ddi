@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8720db3f-aafc-4657-a0cd-3068760855a3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_d24fbe14-3271-47f8-9268-8946b599b32a.xml, d3dkmthk/D3DKMTRender, D3DKMTRender function [Display Devices], D3DKMTRender, display.d3dkmtrender
+ms.keywords : OpenGL_Functions_d24fbe14-3271-47f8-9268-8946b599b32a.xml, D3DKMTRender function [Display Devices], D3DKMTRender, display.d3dkmtrender, d3dkmthk/D3DKMTRender
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -215,14 +215,11 @@ If the OpenGL ICD detects that most of the command buffer flushes are because th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

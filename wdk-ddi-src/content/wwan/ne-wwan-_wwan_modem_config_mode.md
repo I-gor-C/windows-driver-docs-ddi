@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1AA3EDCC-EB6E-4118-8081-CA1914140683
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_MODEM_CONFIG_MODE enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_modem_config_mode, wwan/WwanModemConfigModeModemCentric, wwan/PWWAN_MODEM_CONFIG_MODE, _WWAN_MODEM_CONFIG_MODE, wwan/WwanModemConfigModeMax, PWWAN_MODEM_CONFIG_MODE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_MODEM_CONFIG_MODE, WWAN_MODEM_CONFIG_MODE, WwanModemConfigModeHostCentric, wwan/WwanModemConfigModeHostCentric, PWWAN_MODEM_CONFIG_MODE, WwanModemConfigModeModemCentric, *PWWAN_MODEM_CONFIG_MODE, WwanModemConfigModeUnknown, WwanModemConfigModeMax, wwan/WwanModemConfigModeUnknown
+ms.keywords : WwanModemConfigModeHostCentric, wwan/WwanModemConfigModeModemCentric, PWWAN_MODEM_CONFIG_MODE, WwanModemConfigModeUnknown, wwan/WWAN_MODEM_CONFIG_MODE, WwanModemConfigModeModemCentric, WwanModemConfigModeMax, wwan/WwanModemConfigModeMax, PWWAN_MODEM_CONFIG_MODE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_MODE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanModemConfigModeHostCentric, wwan/PWWAN_MODEM_CONFIG_MODE, _WWAN_MODEM_CONFIG_MODE, *PWWAN_MODEM_CONFIG_MODE, wwan/WwanModemConfigModeUnknown, WWAN_MODEM_CONFIG_MODE, netvista.wwan_modem_config_mode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,9 +85,7 @@ The modem configuration mode shall not change during runtime. If a change is det
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

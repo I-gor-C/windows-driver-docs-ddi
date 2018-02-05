@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : FAA39A82-E27E-41BD-9830-03EAE7CFF64F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : charging/BATTERY_INFORMATION, POWERSOURCEUPDATEEX structure [Battery Devices], battery.powersourceupdateex, _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
+ms.keywords : battery.powersourceupdateex, POWERSOURCEUPDATEEX, _POWERSOURCEUPDATEEX, charging/BATTERY_INFORMATION, *PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX structure [Battery Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -51,7 +51,4 @@ This structure is for internal use only.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | charging.h (include Charging.h) |

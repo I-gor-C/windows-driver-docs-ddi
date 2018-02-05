@@ -68,11 +68,11 @@ The video decoder.
 
 `*pOutputStreamParameters`
 
-
+The output arguments for the video decode.
 
 `*pInputStreamParameters`
 
-
+The input arguments for the video decode.
 
 
 ## Return Value
@@ -83,11 +83,5 @@ This callback function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

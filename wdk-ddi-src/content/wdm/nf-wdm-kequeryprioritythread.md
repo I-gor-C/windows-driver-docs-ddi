@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 69a8ad3f-641d-4aaf-9184-e56dee6ca347
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeQueryPriorityThread, KeQueryPriorityThread routine [Kernel-Mode Driver Architecture], kernel.kequeryprioritythread, k105_6a330d84-aa5a-4822-a4d3-7b68aa9e8882.xml, KeQueryPriorityThread
+ms.keywords : KeQueryPriorityThread routine [Kernel-Mode Driver Architecture], k105_6a330d84-aa5a-4822-a4d3-7b68aa9e8882.xml, wdm/KeQueryPriorityThread, kernel.kequeryprioritythread, KeQueryPriorityThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,12 +69,11 @@ Thread priorities range from 0 to 31, where 0 is the lowest priority and 31 is t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -84,7 +83,7 @@ Thread priorities range from 0 to 31, where 0 is the lowest priority and 31 is t
 
 <a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a>
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 
 <a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
 

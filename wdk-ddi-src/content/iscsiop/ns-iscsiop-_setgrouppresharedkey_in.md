@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fe5e1f75-ebd0-4856-bb77-14efb52fbce0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsiop/PSetGroupPresharedKey_IN, PSetGroupPresharedKey_IN structure pointer [Storage Devices], storage.setgrouppresharedkey_in, iscsiop/SetGroupPresharedKey_IN, *PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN, structs-iSCSI_0109dfff-f30e-4f15-ab25-4a290b2fc2f4.xml, PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN structure [Storage Devices], _SetGroupPresharedKey_IN
+ms.keywords : storage.setgrouppresharedkey_in, PSetGroupPresharedKey_IN, PSetGroupPresharedKey_IN structure pointer [Storage Devices], *PSetGroupPresharedKey_IN, iscsiop/SetGroupPresharedKey_IN, SetGroupPresharedKey_IN, structs-iSCSI_0109dfff-f30e-4f15-ab25-4a290b2fc2f4.xml, _SetGroupPresharedKey_IN, iscsiop/PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e6247856-5abf-44ea-afe8-9be3f61271a4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlabsolutetoselfrelativesd, RtlAbsoluteToSelfRelativeSD routine [Installable File System Drivers], RtlAbsoluteToSelfRelativeSD, rtlref_809e562f-be24-43d2-8357-ffd83eac421a.xml, ntifs/RtlAbsoluteToSelfRelativeSD
+ms.keywords : RtlAbsoluteToSelfRelativeSD routine [Installable File System Drivers], ntifs/RtlAbsoluteToSelfRelativeSD, ifsk.rtlabsolutetoselfrelativesd, rtlref_809e562f-be24-43d2-8357-ffd83eac421a.xml, RtlAbsoluteToSelfRelativeSD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,30 +110,28 @@ For more information about security and access control, see the Microsoft Window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows Server 2003 SP1 and later. This routine is available on Microsoft Windows Server 2003 SP1 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
-
-<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
-
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-
-<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 
 <a href="..\ntifs\nf-ntifs-rtlselfrelativetoabsolutesd.md">RtlSelfRelativeToAbsoluteSD</a>
 
-<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-
 <a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 
  
 

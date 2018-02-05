@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 347edff7-b209-4b60-aabc-5ee7963c8164
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_surfaceinfo, D3DDDI_SURFACEINFO, D3D_other_Structs_03e742b5-062c-46d3-bedf-25aee3582dfc.xml, d3dukmdt/D3DDDI_SURFACEINFO, D3DDDI_SURFACEINFO structure [Display Devices], _D3DDDI_SURFACEINFO
+ms.keywords : D3DDDI_SURFACEINFO structure [Display Devices], D3D_other_Structs_03e742b5-062c-46d3-bedf-25aee3582dfc.xml, display.d3dddi_surfaceinfo, D3DDDI_SURFACEINFO, d3dukmdt/D3DDDI_SURFACEINFO, _D3DDDI_SURFACEINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,16 +86,14 @@ Note that this member is valid only if the <b>Pool</b> member of the <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
 
  
 

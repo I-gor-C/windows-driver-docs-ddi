@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a017f0b7-8f4f-4797-96de-10137cb3443e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksopendefaultdevice, ksproxy/KsOpenDefaultDevice, KsOpenDefaultDevice, ksproxy_9c80d462-baaa-497b-a337-5d42e94b9c3f.xml, KsOpenDefaultDevice function [Streaming Media Devices]
+ms.keywords : ksproxy/KsOpenDefaultDevice, stream.ksopendefaultdevice, KsOpenDefaultDevice, KsOpenDefaultDevice function [Streaming Media Devices], ksproxy_9c80d462-baaa-497b-a337-5d42e94b9c3f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ The <b>KsOpenDefaultDevice</b> function passes a pointer to <i>Category</i> in a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ksproxy.lib |

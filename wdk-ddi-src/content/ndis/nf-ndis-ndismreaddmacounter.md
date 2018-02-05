@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bfce0f28-4cca-48a2-8836-2f77f4b6370a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : dma_ref_12d2675f-d576-4a5d-9af0-42dfd63fd1da.xml, ndis/NdisMReadDmaCounter, netvista.ndismreaddmacounter, NdisMReadDmaCounter, NdisMReadDmaCounter function [Network Drivers Starting with Windows Vista]
+ms.keywords : dma_ref_12d2675f-d576-4a5d-9af0-42dfd63fd1da.xml, NdisMReadDmaCounter, netvista.ndismreaddmacounter, ndis/NdisMReadDmaCounter, NdisMReadDmaCounter function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,10 @@ Miniport drivers of devices that use the system DMA controller's auto-initialize
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 

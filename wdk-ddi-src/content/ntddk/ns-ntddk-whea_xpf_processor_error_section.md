@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : e994c778-4a1b-4c7d-a9fb-4481d9edda0d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/PWHEA_XPF_PROCESSOR_ERROR_SECTION, whearef_e3338334-dc16-4242-9c30-0daaab2df957.xml, WHEA_XPF_PROCESSOR_ERROR, ntddk/WHEA_XPF_PROCESSOR_ERROR_SECTION, whea.whea_xpf_processor_error_section, PWHEA_XPF_PROCESSOR_ERROR_SECTION, *PWHEA_XPF_PROCESSOR_ERROR, WHEA_XPF_PROCESSOR_ERROR_SECTION structure [WHEA Drivers and Applications], PWHEA_XPF_PROCESSOR_ERROR_SECTION structure pointer [WHEA Drivers and Applications], WHEA_XPF_PROCESSOR_ERROR_SECTION
+ms.keywords : WHEA_XPF_PROCESSOR_ERROR_SECTION structure [WHEA Drivers and Applications], WHEA_XPF_PROCESSOR_ERROR, whearef_e3338334-dc16-4242-9c30-0daaab2df957.xml, PWHEA_XPF_PROCESSOR_ERROR_SECTION structure pointer [WHEA Drivers and Applications], *PWHEA_XPF_PROCESSOR_ERROR, WHEA_XPF_PROCESSOR_ERROR_SECTION, ntddk/WHEA_XPF_PROCESSOR_ERROR_SECTION, PWHEA_XPF_PROCESSOR_ERROR_SECTION, ntddk/PWHEA_XPF_PROCESSOR_ERROR_SECTION, whea.whea_xpf_processor_error_section
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,18 +63,16 @@ The following diagram shows how the data structures that contain the processor e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
+<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
+
 <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 
 <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section_validbits.md">WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
 
 <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a>
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0715e4d4-665c-42cb-9c74-48c2c558c277
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : spoolfnc_45659d86-d97e-47c5-bbf7-49c990880b52.xml, GetJobAttributesEx, GetJobAttributesEx function [Print Devices], print.getjobattributesex, winsplp/GetJobAttributesEx
+ms.keywords : winsplp/GetJobAttributesEx, GetJobAttributesEx function [Print Devices], print.getjobattributesex, GetJobAttributesEx, spoolfnc_45659d86-d97e-47c5-bbf7-49c990880b52.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -187,24 +187,21 @@ This function first checks whether the driver supports the attribute level that 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This function is available in the Windows Vista operating system. This function is available in the Windows Vista operating system. |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
-
-<a href="..\winsplp\nf-winsplp-getjobattributes.md">GetJobAttributes</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
 
 <a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
 
 <a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
+
+<a href="..\winsplp\nf-winsplp-getjobattributes.md">GetJobAttributes</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
 
  
 

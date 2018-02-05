@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 12029cfd-58d0-4621-8cbc-c07e68db61b8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_RECEIVE_FILTER_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_info, NDIS_RECEIVE_FILTER_INFO, ntddndis/PNDIS_RECEIVE_FILTER_INFO, virtual_machine_queue_ref_4c711292-ce17-4eb9-a051-c32f8ad6f49e.xml, _NDIS_RECEIVE_FILTER_INFO, ntddndis/NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO, PNDIS_RECEIVE_FILTER_INFO
+ms.keywords : PNDIS_RECEIVE_FILTER_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_info, NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO, ntddndis/PNDIS_RECEIVE_FILTER_INFO, PNDIS_RECEIVE_FILTER_INFO, _NDIS_RECEIVE_FILTER_INFO, virtual_machine_queue_ref_4c711292-ce17-4eb9-a051-c32f8ad6f49e.xml, ntddndis/NDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -112,24 +112,22 @@ The driver sets the
 
 ## Remarks
 The <b>NDIS_RECEIVE_FILTER_INFO</b> structure is used with the 
-    <mshelp:link keywords="netvista.ndis_receive_filter_info_array" tabindex="0"><b>
-    NDIS_RECEIVE_FILTER_INFO_ARRAY</b></mshelp:link> structure for the 
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info_array.md">
+    NDIS_RECEIVE_FILTER_INFO_ARRAY</a> structure for the 
     OID request of <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-filters">OID_RECEIVE_FILTER_ENUM_FILTERS</a>. This OID request enumerates receive filters that have been configured on the miniport driver. This includes packet coalescing receive filters or the receive filters configured on a  receive queue that is used in the VMQ or SR-IOV interface.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-filters">OID_RECEIVE_FILTER_ENUM_FILTERS</a>
 
-<mshelp:link keywords="netvista.ndis_receive_filter_info_array" tabindex="0"><b>
-   NDIS_RECEIVE_FILTER_INFO_ARRAY</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info_array.md">
+   NDIS_RECEIVE_FILTER_INFO_ARRAY</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

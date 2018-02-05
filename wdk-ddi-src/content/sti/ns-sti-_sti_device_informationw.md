@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 0c285630-876d-4b06-aace-4a2c4c06c1cb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : sti/STI_DEVICE_INFORMATIONW, stifnc_79a5d8d7-6b7a-4593-a8bf-05026d09e4a5.xml, *PSTI_DEVICE_INFORMATIONW, STI_DEVICE_INFORMATIONW, _STI_DEVICE_INFORMATIONW, image.sti_device_information, STI_DEVICE_INFORMATION structure [Imaging Devices], PSTI_DEVICE_INFORMATION, sti/PSTI_DEVICE_INFORMATION, STI_DEVICE_INFORMATION, PSTI_DEVICE_INFORMATION structure pointer [Imaging Devices]
+ms.keywords : STI_DEVICE_INFORMATIONW, STI_DEVICE_INFORMATION, sti/PSTI_DEVICE_INFORMATION, PSTI_DEVICE_INFORMATION, *PSTI_DEVICE_INFORMATIONW, sti/STI_DEVICE_INFORMATIONW, PSTI_DEVICE_INFORMATION structure pointer [Imaging Devices], _STI_DEVICE_INFORMATIONW, stifnc_79a5d8d7-6b7a-4593-a8bf-05026d09e4a5.xml, STI_DEVICE_INFORMATION structure [Imaging Devices], image.sti_device_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTI_DEVICE_INFORMATIONW, STI_DEVICE_INFORMATIONW"
+req.typenames : STI_DEVICE_INFORMATIONW, *PSTI_DEVICE_INFORMATIONW
 req.product : Windows 10 or later.
 ---
 
@@ -115,7 +115,4 @@ Character array containing the device's internal name string. The string can hav
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sti.h (include Sti.h) |

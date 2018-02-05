@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 7b66ed24-64c2-49bc-a417-05fe11178b9f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.pdev_adjust_imageable_origin_area, printoem/PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, print_unidrv-pscript_rendering_64db57fb-903d-411f-8106-b4c9a4c2a04e.xml, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, printoem/PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure pointer [Print Devices], PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure [Print Devices]
+ms.keywords : PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, printoem/PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, print.pdev_adjust_imageable_origin_area, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, printoem/PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure [Print Devices], print_unidrv-pscript_rendering_64db57fb-903d-411f-8106-b4c9a4c2a04e.xml, PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA"
+req.typenames : PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
 req.product : Windows 10 or later.
 ---
 
@@ -67,7 +67,4 @@ The PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure is available in Windows Vista an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h |

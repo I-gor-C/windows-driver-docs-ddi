@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : DC495EFB-3522-4220-87F8-3DB501831D6E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.magnetometeraccuracy, sensorsclassextension/Unknown, Unreliable, Unknown, sensorsclassextension/Approximate, MagnetometerAccuracy enumeration [Sensor Devices], sensorsclassextension/MagnetometerAccuracy, sensorsclassextension/Unreliable, Approximate, High, sensorsclassextension/High, MagnetometerAccuracy
+ms.keywords : MagnetometerAccuracy, sensorsclassextension/Unknown, High, Unreliable, sensorsclassextension/MagnetometerAccuracy, MagnetometerAccuracy enumeration [Sensor Devices], sensorsclassextension/Approximate, Unknown, sensors.magnetometeraccuracy, Approximate, sensorsclassextension/High, sensorsclassextension/Unreliable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,9 +86,7 @@ Apps that need calibration may periodically ask the user to calibrate the device
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,Available in Windows 8.1. Windows 8.1,Available in Windows 8.1. |
 | **Header** | sensorsclassextension.h |
 
 ## See Also

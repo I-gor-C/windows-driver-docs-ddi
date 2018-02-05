@@ -67,8 +67,8 @@ void ProtocolCoOidRequestComplete(
 
 A handle that identifies an address family (AF) context area. If the driver is a client, it
      supplied this handle when it called the 
-     <mshelp:link keywords="netvista.ndisclopenaddressfamilyex" tabindex="0"><b>
-     NdisClOpenAddressFamilyEx</b></mshelp:link> function to connect itself to the call manager. If the driver is a call
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
+     NdisClOpenAddressFamilyEx</a> function to connect itself to the call manager. If the driver is a call
      manager or miniport call manager (MCM), it supplied this handle from its 
      <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a> function.
 
@@ -113,14 +113,14 @@ NDIS calls the
 
 To register 
     <i>ProtocolCoOidRequestComplete</i> as a client, a driver initializes an 
-    <mshelp:link keywords="netvista.ndis_co_client_optional_handlers" tabindex="0"><b>
-    NDIS_CO_CLIENT_OPTIONAL_HANDLERS</b></mshelp:link> structure and passes it at the 
+    <a href="..\ndis\ns-ndis-_ndis_co_client_optional_handlers.md">
+    NDIS_CO_CLIENT_OPTIONAL_HANDLERS</a> structure and passes it at the 
     <i>OptionalHandlers</i> parameter of the 
     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function.
     To register 
     <i>ProtocolCoOidRequestComplete</i> as a call manager, a driver initializes an 
-    <mshelp:link keywords="netvista.ndis_co_call_manager_optional_handlers" tabindex="0"><b>
-    NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</b></mshelp:link> structure and passes it at the 
+    <a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
+    NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a> structure and passes it at the 
     <i>OptionalHandlers</i> parameter of 
     <b>NdisSetOptionalHandlers</b>.
 
@@ -128,8 +128,8 @@ The target driver is the driver that serviced the OID information request. A tar
     the 
     <a href="..\ndis\nf-ndis-ndismcooidrequestcomplete.md">NdisMCoOidRequestComplete</a>, 
     <a href="..\ndis\nf-ndis-ndiscooidrequestcomplete.md">NdisCoOidRequestComplete</a>, or 
-    <mshelp:link keywords="netvista.ndismcmoidrequestcomplete" tabindex="0"><b>
-    NdisMCmOidRequestComplete</b></mshelp:link> function caused NDIS to call the 
+    <a href="..\ndis\nf-ndis-ndismcmoidrequestcomplete.md">
+    NdisMCmOidRequestComplete</a> function caused NDIS to call the 
     <i>ProtocolCoOidRequestComplete</i> function. NDIS forwards the value of the 
     <i>Status</i> parameter that was passed to these functions as the input 
     <i>Status</i> parameter to 
@@ -231,40 +231,36 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismcmoidrequestcomplete.md">NdisMCmOidRequestComplete</a>
-
-<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
-
-<mshelp:link keywords="netvista.ndis_co_client_optional_handlers" tabindex="0"><b>
-   NDIS_CO_CLIENT_OPTIONAL_HANDLERS</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndiscooidrequestcomplete.md">NdisCoOidRequestComplete</a>
-
-<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
-<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
+<a href="..\ndis\ns-ndis-_ndis_co_client_optional_handlers.md">
+   NDIS_CO_CLIENT_OPTIONAL_HANDLERS</a>
+
+<a href="..\ndis\ns-ndis-_ndis_co_call_manager_optional_handlers.md">
+   NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</a>
 
 <a href="..\ndis\nf-ndis-ndismcooidrequestcomplete.md">NdisMCoOidRequestComplete</a>
 
 <a href="..\ndis\nf-ndis-ndismcmoidrequest.md">NdisMCmOidRequest</a>
 
-<mshelp:link keywords="netvista.ndis_co_call_manager_optional_handlers" tabindex="0"><b>
-   NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
+
+<a href="..\ndis\nf-ndis-ndismcmoidrequestcomplete.md">NdisMCmOidRequestComplete</a>
+
+<a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
+
+<a href="..\ndis\nf-ndis-ndiscooidrequestcomplete.md">NdisCoOidRequestComplete</a>
 
  
 

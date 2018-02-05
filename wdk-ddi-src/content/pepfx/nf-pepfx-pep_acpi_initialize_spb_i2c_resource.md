@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5F1606D8-1E6F-494F-AE70-07A1EC1FEA47
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE, pepfx/PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE, PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_spb_i2c_resource
+ms.keywords : pepfx/PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE, PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE function [Kernel-Mode Driver Architecture], PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE, kernel.pep_acpi_initialize_spb_i2c_resource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
+req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 
@@ -118,14 +118,10 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
+| **Target Platform** | Windows |
 | **Header** | pepfx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

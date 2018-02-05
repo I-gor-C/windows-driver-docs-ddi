@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 64c6ed50-a4b9-4a8c-b38c-b2fcdf5ccee9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.hba_getdiscoveredportattributes, HBA_GetDiscoveredPortAttributes routine [Storage Devices], fibreHBA_rtns_3f74a187-728d-4534-8ad8-29e1a9b0add5.xml, HBA_GetDiscoveredPortAttributes, hbaapi/HBA_GetDiscoveredPortAttributes
+ms.keywords : HBA_GetDiscoveredPortAttributes routine [Storage Devices], hbaapi/HBA_GetDiscoveredPortAttributes, storage.hba_getdiscoveredportattributes, fibreHBA_rtns_3f74a187-728d-4534-8ad8-29e1a9b0add5.xml, HBA_GetDiscoveredPortAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,22 +83,18 @@ The <b>HBA_GetDiscoveredPortAttributes</b> library routine corresponds to the <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
 
 <a href="..\hbaapi\ns-hbaapi-hba_portattributes.md">HBA_PortAttributes</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
  
 

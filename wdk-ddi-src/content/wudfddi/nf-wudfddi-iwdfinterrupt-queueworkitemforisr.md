@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5C6DC011-4032-4DB6-AE17-88E510DF9A3A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFInterrupt::QueueWorkItemForIsr, QueueWorkItemForIsr method, IWDFInterrupt interface, IWDFInterrupt interface, QueueWorkItemForIsr method, IWDFInterrupt::QueueWorkItemForIsr, QueueWorkItemForIsr, wdf.iwdfinterrupt_queueworkitemforisr, umdf.iwdfinterrupt_queueworkitemforisr, IWDFInterrupt, QueueWorkItemForIsr method
+ms.keywords : QueueWorkItemForIsr method, IWDFInterrupt interface, IWDFInterrupt::QueueWorkItemForIsr, QueueWorkItemForIsr, IWDFInterrupt interface, QueueWorkItemForIsr method, wudfddi/IWDFInterrupt::QueueWorkItemForIsr, IWDFInterrupt, wdf.iwdfinterrupt_queueworkitemforisr, QueueWorkItemForIsr method, umdf.iwdfinterrupt_queueworkitemforisr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,22 +68,20 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
+
+<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
 
 <a href="..\wudfinterrupt\nc-wudfinterrupt-wudf_interrupt_workitem.md">OnInterruptWorkItem</a>
 
 <a href="https://msdn.microsoft.com/B34EABF4-C659-4DB4-AEC6-94F544D79221">IWDFDevice3::CreateWorkItem</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
 
  
 

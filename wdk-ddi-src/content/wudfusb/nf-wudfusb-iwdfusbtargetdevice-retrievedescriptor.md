@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c97b399e-fb25-475a-a2a0-0cf4fb24433c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetDevice interface, RetrieveDescriptor method, RetrieveDescriptor method, IWDFUsbTargetDevice interface, umdf.iwdfusbtargetdevice_retrievedescriptor, RetrieveDescriptor method, wudfusb/IWDFUsbTargetDevice::RetrieveDescriptor, IWDFUsbTargetDevice::RetrieveDescriptor, wdf.iwdfusbtargetdevice_retrievedescriptor, RetrieveDescriptor, IWDFUsbTargetDevice, UMDFUSBref_8b9eb5fc-8bd6-4eee-9f54-f1e4d37e5b9e.xml
+ms.keywords : RetrieveDescriptor method, IWDFUsbTargetDevice interface, RetrieveDescriptor method, IWDFUsbTargetDevice::RetrieveDescriptor, IWDFUsbTargetDevice, wdf.iwdfusbtargetdevice_retrievedescriptor, umdf.iwdfusbtargetdevice_retrievedescriptor, wudfusb/IWDFUsbTargetDevice::RetrieveDescriptor, UMDFUSBref_8b9eb5fc-8bd6-4eee-9f54-f1e4d37e5b9e.xml, IWDFUsbTargetDevice interface, RetrieveDescriptor method, RetrieveDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -138,20 +138,18 @@ The <b>RetrieveDescriptor</b> method generates a UMDF request and synchronously 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540257">WinUsb_GetDescriptor</a>
-
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540257">WinUsb_GetDescriptor</a>
 
  
 

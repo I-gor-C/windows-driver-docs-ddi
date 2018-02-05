@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6F5E808C-9E35-4BE8-AE67-FDD354D6FD0E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFastIoMdlReadComplete, FsRtlMdlReadCompleteDev, FsRtlMdlReadCompleteDev routine [Installable File System Drivers], ifsk.fltfastiomdlreadcomplete, fltkernel/FsRtlMdlReadCompleteDev
+ms.keywords : ifsk.fltfastiomdlreadcomplete, FsRtlMdlReadCompleteDev, FltFastIoMdlReadComplete, FsRtlMdlReadCompleteDev routine [Installable File System Drivers], fltkernel/FsRtlMdlReadCompleteDev
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,11 @@ The <b>FltFastIoMdlReadComplete</b> routine unlocks the pages in cache memory th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

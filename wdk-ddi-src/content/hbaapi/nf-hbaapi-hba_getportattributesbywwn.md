@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 79d63b5e-78b0-452a-aa84-695c59a7d4a5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetPortAttributesByWWN, hbaapi/HBA_GetPortAttributesByWWN, storage.hba_getportattributesbywwn, fibreHBA_rtns_2cd8e0da-90d5-41bb-8bd9-ab2ee26ec772.xml, HBA_GetPortAttributesByWWN routine [Storage Devices]
+ms.keywords : HBA_GetPortAttributesByWWN, HBA_GetPortAttributesByWWN routine [Storage Devices], storage.hba_getportattributesbywwn, fibreHBA_rtns_2cd8e0da-90d5-41bb-8bd9-ab2ee26ec772.xml, hbaapi/HBA_GetPortAttributesByWWN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,24 +78,20 @@ The <b>HBA_GetPortAttributesByWWN</b> routine serves a purpose very similar to t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
 
 <a href="..\hbaapi\ns-hbaapi-hba_portattributes.md">HBA_PortAttributes</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f2798729-98a2-44b6-94a6-180bb4db96cb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : OB_PRE_DUPLICATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], _OB_PRE_DUPLICATE_HANDLE_INFORMATION, kernel.ob_pre_duplicate_handle_information, wdm/OB_PRE_DUPLICATE_HANDLE_INFORMATION, kstruct_c_5511a4ac-ea2e-412f-8514-021853d5abfd.xml, OB_PRE_DUPLICATE_HANDLE_INFORMATION, POB_PRE_DUPLICATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/POB_PRE_DUPLICATE_HANDLE_INFORMATION, POB_PRE_DUPLICATE_HANDLE_INFORMATION, *POB_PRE_DUPLICATE_HANDLE_INFORMATION
+ms.keywords : "*POB_PRE_DUPLICATE_HANDLE_INFORMATION, kstruct_c_5511a4ac-ea2e-412f-8514-021853d5abfd.xml, wdm/POB_PRE_DUPLICATE_HANDLE_INFORMATION, OB_PRE_DUPLICATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], OB_PRE_DUPLICATE_HANDLE_INFORMATION, wdm/OB_PRE_DUPLICATE_HANDLE_INFORMATION, kernel.ob_pre_duplicate_handle_information, POB_PRE_DUPLICATE_HANDLE_INFORMATION, POB_PRE_DUPLICATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _OB_PRE_DUPLICATE_HANDLE_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,16 +77,14 @@ You can never add access rights beyond what is specified in the <b>DesiredAccess
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2008 and later versions of the Windows operating system. Available in Windows Server 2008 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
-
 <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
  
 

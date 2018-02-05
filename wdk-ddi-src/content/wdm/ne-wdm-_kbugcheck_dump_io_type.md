@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 928be338-a588-4535-8395-229ec6f3ecb7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KbDumpIoHeader, wdm/KbDumpIoSecondaryData, wdm/KbDumpIoInvalid, KBUGCHECK_DUMP_IO_TYPE enumeration [Kernel-Mode Driver Architecture], _KBUGCHECK_DUMP_IO_TYPE, KbDumpIoSecondaryData, wdm/KBUGCHECK_DUMP_IO_TYPE, kernel.kbugcheck_dump_io_type, wdm/KbDumpIoHeader, wdm/KbDumpIoComplete, KbDumpIoInvalid, KBUGCHECK_DUMP_IO_TYPE, KbDumpIoComplete, wdm/KbDumpIoBody, sysenum_e6f9d577-edd8-43f0-9cc5-33b88e5237aa.xml, KbDumpIoBody
+ms.keywords : wdm/KbDumpIoComplete, KbDumpIoInvalid, sysenum_e6f9d577-edd8-43f0-9cc5-33b88e5237aa.xml, kernel.kbugcheck_dump_io_type, wdm/KbDumpIoHeader, wdm/KbDumpIoBody, KbDumpIoComplete, KbDumpIoSecondaryData, KbDumpIoHeader, wdm/KbDumpIoSecondaryData, wdm/KbDumpIoInvalid, _KBUGCHECK_DUMP_IO_TYPE, KbDumpIoBody, wdm/KBUGCHECK_DUMP_IO_TYPE, KBUGCHECK_DUMP_IO_TYPE, KBUGCHECK_DUMP_IO_TYPE enumeration [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,18 +92,16 @@ For more information about how this enumeration type is used, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
 
 <a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
 
  
 

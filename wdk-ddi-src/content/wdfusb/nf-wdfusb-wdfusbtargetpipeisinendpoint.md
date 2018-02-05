@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 431d8f18-18db-460c-9f2f-454a5378825c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFUsbRef_55ca68a2-c334-47b9-9716-68a492987897.xml, wdf.wdfusbtargetpipeisinendpoint, WdfUsbTargetPipeIsInEndpoint, wdfusb/WdfUsbTargetPipeIsInEndpoint, kmdf.wdfusbtargetpipeisinendpoint, PFN_WDFUSBTARGETPIPEISINENDPOINT, WdfUsbTargetPipeIsInEndpoint method
+ms.keywords : kmdf.wdfusbtargetpipeisinendpoint, wdf.wdfusbtargetpipeisinendpoint, DFUsbRef_55ca68a2-c334-47b9-9716-68a492987897.xml, WdfUsbTargetPipeIsInEndpoint, PFN_WDFUSBTARGETPIPEISINENDPOINT, wdfusb/WdfUsbTargetPipeIsInEndpoint, WdfUsbTargetPipeIsInEndpoint method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,19 @@ For more information about the <b>WdfUsbTargetPipeIsInEndpoint</b> method and US
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeisoutendpoint.md">WdfUsbTargetPipeIsOutEndpoint</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_in.md">WDF_USB_PIPE_DIRECTION_IN</a>
 

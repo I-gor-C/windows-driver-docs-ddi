@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a17a6dfa-c067-4a85-8787-ffb4fb6cb7ad
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetFcpPersistentBinding routine [Storage Devices], HBA_GetFcpPersistentBinding, fibreHBA_rtns_9ab54a28-f020-426e-9ea6-2aba3666884b.xml, storage.hba_getfcppersistentbinding, hbaapi/HBA_GetFcpPersistentBinding
+ms.keywords : HBA_GetFcpPersistentBinding, hbaapi/HBA_GetFcpPersistentBinding, fibreHBA_rtns_9ab54a28-f020-426e-9ea6-2aba3666884b.xml, storage.hba_getfcppersistentbinding, HBA_GetFcpPersistentBinding routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,14 +123,10 @@ The <b>HBA_GetFcpPersistentBinding</b> routine retrieves a set of bindings betwe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

@@ -119,15 +119,13 @@ The video miniport driver sets the <b>Information</b> member of the <a href="..\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
-
 <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
+
+<a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
 
  
 

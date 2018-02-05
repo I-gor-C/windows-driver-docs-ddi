@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e92685f6-031a-464a-b26a-54bebf7d66b6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ioref_4826c2a4-5c95-461d-b21c-7e3fca98c0cb.xml, IoGetTopLevelIrp, ntifs/IoGetTopLevelIrp, IoGetTopLevelIrp routine [Installable File System Drivers], ifsk.iogettoplevelirp
+ms.keywords : ifsk.iogettoplevelirp, ioref_4826c2a4-5c95-461d-b21c-7e3fca98c0cb.xml, IoGetTopLevelIrp routine [Installable File System Drivers], IoGetTopLevelIrp, ntifs/IoGetTopLevelIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -117,14 +117,11 @@ The cache manager is the top-level component for the current thread, and the cur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 61f3839a-f428-4585-a046-edce85d829dd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, netvista.ndis_nic_switch_free_vf_parameters, PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, ntddndis/NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, *PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, _NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, NDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS
+ms.keywords : NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, _NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, ntddndis/NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, NDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, *PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, netvista.ndis_nic_switch_free_vf_parameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,9 +85,7 @@ The <b>NDIS_NIC_SWITCH_FREE_VF_PARAMETERS</b> structure is used in OID set reque
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

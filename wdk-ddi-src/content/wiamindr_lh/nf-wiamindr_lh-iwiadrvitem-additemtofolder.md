@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 3f1cd0bf-13ce-49bc-a48e-dc3d89f3c7d7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.iwiadrvitem_additemtofolder, AddItemToFolder method [Imaging Devices], AddItemToFolder method [Imaging Devices], IWiaDrvItem interface, DrvItem_7979b3e5-dfd3-41bb-ae55-266cbb74866c.xml, IWiaDrvItem interface [Imaging Devices], AddItemToFolder method, IWiaDrvItem, AddItemToFolder, wiamindr_lh/IWiaDrvItem::AddItemToFolder, IWiaDrvItem::AddItemToFolder
+ms.keywords : IWiaDrvItem interface [Imaging Devices], AddItemToFolder method, DrvItem_7979b3e5-dfd3-41bb-ae55-266cbb74866c.xml, AddItemToFolder method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem::AddItemToFolder, IWiaDrvItem, image.iwiadrvitem_additemtofolder, AddItemToFolder, AddItemToFolder method [Imaging Devices], wiamindr_lh/IWiaDrvItem::AddItemToFolder
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -69,20 +69,16 @@ Minidrivers typically use the AddItemToFolder method to add an item to a parent 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
-
 <a href="https://msdn.microsoft.com/f800427e-d6b6-4f4c-aee7-4b2b0d0aa0c4">RemoveItemFromFolder</a>
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
 
  
 

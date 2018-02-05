@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 80576db6-38de-46c6-89f1-a3dde613fed1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/PcNewResourceList, audpc-routines_b9e7a222-20ac-482b-ae30-083765ecf5b7.xml, PcNewResourceList function [Audio Devices], PcNewResourceList, audio.pcnewresourcelist
+ms.keywords : PcNewResourceList, portcls/PcNewResourceList, audpc-routines_b9e7a222-20ac-482b-ae30-083765ecf5b7.xml, PcNewResourceList function [Audio Devices], audio.pcnewresourcelist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -90,14 +90,11 @@ The <i>OutResourceList</i> and <i>OuterUnknown</i> parameters follow the <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcNewResourceList function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcNewResourceList function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

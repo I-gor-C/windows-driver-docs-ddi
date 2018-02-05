@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b25ecc96-1ed2-4d8f-8dc8-0fafe58eca24
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILEMERGENCYMODECONTROLPARAMS, ntddrilapitypes/RILEMERGENCYMODECONTROLPARAMS, netvista.rilemergencymodecontrolparams, RILEMERGENCYMODECONTROLPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILEMERGENCYMODECONTROLPARAMS
+ms.keywords : RILEMERGENCYMODECONTROLPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilemergencymodecontrolparams, ntddrilapitypes/RILEMERGENCYMODECONTROLPARAMS, *LPRILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ typedef struct _RILEMERGENCYMODECONTROLPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : C31681A0-17C6-4255-9068-7486A2101AB7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CreateRasterizer method [Print Devices], IXpsRasterizationFactory2, CreateRasterizer, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, print.ixpsrasterizationfactory2_createrasterizer, IXpsRasterizationFactory2::CreateRasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface
+ms.keywords : CreateRasterizer method [Print Devices], IXpsRasterizationFactory2 interface, xpsrassvc/IXpsRasterizationFactory2::CreateRasterizer, print.ixpsrasterizationfactory2_createrasterizer, CreateRasterizer, CreateRasterizer method [Print Devices], IXpsRasterizationFactory2::CreateRasterizer, IXpsRasterizationFactory2 interface [Print Devices], CreateRasterizer method, IXpsRasterizationFactory2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -145,14 +145,10 @@ If this method succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HRE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | xpsrassvc.h (include Xpsrassvc.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | xpsrassvc.h |
 
 ## See Also
 

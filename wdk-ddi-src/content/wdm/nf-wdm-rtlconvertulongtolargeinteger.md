@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9e0b8d36-0191-4f78-91dd-874346a69072
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlConvertUlongToLargeInteger, RtlConvertUlongToLargeInteger routine [Kernel-Mode Driver Architecture], kernel.rtlconvertulongtolargeinteger, RtlConvertUlongToLargeInteger, k109_442eaa78-8765-4d40-a77d-8a511d18b754.xml
+ms.keywords : RtlConvertUlongToLargeInteger routine [Kernel-Mode Driver Architecture], k109_442eaa78-8765-4d40-a77d-8a511d18b754.xml, RtlConvertUlongToLargeInteger, wdm/RtlConvertUlongToLargeInteger, kernel.rtlconvertulongtolargeinteger
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,9 @@ Specifies a value of type ULONG.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

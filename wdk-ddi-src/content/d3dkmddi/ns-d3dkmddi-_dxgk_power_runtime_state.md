@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f2bfb07c-1493-4a29-9d42-e284af29a376
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_POWER_RUNTIME_STATE, DXGK_POWER_RUNTIME_STATE structure [Display Devices], display.dxgk_power_runtime_state, _DXGK_POWER_RUNTIME_STATE, d3dkmddi/DXGK_POWER_RUNTIME_STATE
+ms.keywords : DXGK_POWER_RUNTIME_STATE structure [Display Devices], d3dkmddi/DXGK_POWER_RUNTIME_STATE, _DXGK_POWER_RUNTIME_STATE, display.dxgk_power_runtime_state, DXGK_POWER_RUNTIME_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,7 +73,5 @@ F-states in hardware must be defined such that a deeper F-state (higher F-value)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h |

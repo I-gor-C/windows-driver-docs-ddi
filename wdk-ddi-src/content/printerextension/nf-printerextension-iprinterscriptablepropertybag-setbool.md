@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 8970833A-7CBA-40EB-85A8-60E7730C052F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SetBool method [Print Devices], IPrinterScriptablePropertyBag interface, SetBool method [Print Devices], printerextension/IPrinterScriptablePropertyBag::SetBool, SetBool, IPrinterScriptablePropertyBag interface [Print Devices], SetBool method, IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag::SetBool, print.iprinterscriptablepropertybag_setbool
+ms.keywords : IPrinterScriptablePropertyBag::SetBool, IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_setbool, IPrinterScriptablePropertyBag interface [Print Devices], SetBool method, SetBool method [Print Devices], IPrinterScriptablePropertyBag interface, SetBool, printerextension/IPrinterScriptablePropertyBag::SetBool, SetBool method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,14 +74,10 @@ A call to <b>SetBool</b> will throw an exception, if the specified property is n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

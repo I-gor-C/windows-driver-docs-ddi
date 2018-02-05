@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 02c0ea87-d25d-4363-85e3-e47c4c5d8a9b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfreegenericobject, ndis/NdisFreeGenericObject, ndis_object_ref_d796ffda-61f1-473d-98ea-5ad3570889e9.xml, NdisFreeGenericObject function [Network Drivers Starting with Windows Vista], NdisFreeGenericObject
+ms.keywords : ndis_object_ref_d796ffda-61f1-473d-98ea-5ad3570889e9.xml, netvista.ndisfreegenericobject, NdisFreeGenericObject function [Network Drivers Starting with Windows Vista], ndis/NdisFreeGenericObject, NdisFreeGenericObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -42,8 +42,8 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisFreeGenericObject function
 Call the 
   <b>NdisFreeGenericObject</b> function to free a generic object that was created with the 
-  <mshelp:link keywords="netvista.ndisallocategenericobject" tabindex="0"><b>
-  NdisAllocateGenericObject</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndisallocategenericobject.md">
+  NdisAllocateGenericObject</a> function.
 
 ## Syntax
 
@@ -75,20 +75,18 @@ An NDIS handle is required to allocate some NDIS resources (for example, buffer 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function, NdisAllocateGenericObject |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisallocategenericobject.md">NdisAllocateGenericObject</a>
-
 <a href="..\ndis\ns-ndis-_ndis_generic_object.md">NDIS_GENERIC_OBJECT</a>
+
+<a href="..\ndis\nf-ndis-ndisallocategenericobject.md">NdisAllocateGenericObject</a>
 
  
 

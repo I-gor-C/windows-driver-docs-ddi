@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5e72aa2e-3aa6-49e5-b49f-339722060d5b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlisunicodecharacterwild, FsRtlIsUnicodeCharacterWild, FsRtlIsUnicodeCharacterWild function [Installable File System Drivers], ntifs/FsRtlIsUnicodeCharacterWild, fsrtlref_90047321-d510-4139-bfcf-d2f48c126834.xml
+ms.keywords : FsRtlIsUnicodeCharacterWild, ifsk.fsrtlisunicodecharacterwild, FsRtlIsUnicodeCharacterWild function [Installable File System Drivers], ntifs/FsRtlIsUnicodeCharacterWild, fsrtlref_90047321-d510-4139-bfcf-d2f48c126834.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -68,14 +68,10 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | ntifs.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

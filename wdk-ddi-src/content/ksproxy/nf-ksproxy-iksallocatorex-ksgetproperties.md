@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 82F2FE7D-D02B-47A1-8FC7-2D5CFC4CADA1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/IKsAllocatorEx::KsGetProperties, KsGetProperties method [Streaming Media Devices], IKsAllocatorEx interface, IKsAllocatorEx, IKsAllocatorEx::KsGetProperties, IKsAllocatorEx interface [Streaming Media Devices], KsGetProperties method, stream.iksallocatorex_ksgetproperties, KsGetProperties, KsGetProperties method [Streaming Media Devices]
+ms.keywords : KsGetProperties method [Streaming Media Devices], IKsAllocatorEx interface, IKsAllocatorEx interface [Streaming Media Devices], KsGetProperties method, ksproxy/IKsAllocatorEx::KsGetProperties, KsGetProperties, KsGetProperties method [Streaming Media Devices], IKsAllocatorEx, IKsAllocatorEx::KsGetProperties, stream.iksallocatorex_ksgetproperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -64,14 +64,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

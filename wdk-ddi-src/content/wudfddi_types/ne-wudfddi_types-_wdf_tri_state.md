@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8ea6e373-225d-4fcd-abcf-c19b07f9f5d8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PWDF_TRI_STATE, WdfTrue, _WDF_TRI_STATE, wdftypes/PWDF_TRI_STATE, WDF_TRI_STATE enumeration, wudfddi_types/WDF_TRI_STATE, WDF_TRI_STATE, wudfddi_types/PWDF_TRI_STATE, wdftypes/WDF_TRI_STATE, WdfUseDefault, wudfddi_types/WdfUseDefault, PWDF_TRI_STATE enumeration pointer, wudfddi_types/WdfTrue, wdftypes/WdfTrue, kmdf.wdf_tri_state, wdftypes/WdfUseDefault, wdftypes/WdfFalse, wdf.wdf_tri_state, WdfFalse, *PWDF_TRI_STATE, wudfddi_types/WdfFalse, DFGenObjectRef_83855649-9d84-4f8c-9685-5e5321209b4d.xml
+ms.keywords : wdftypes/WdfUseDefault, PWDF_TRI_STATE, PWDF_TRI_STATE enumeration pointer, WdfTrue, wdftypes/WdfTrue, wudfddi_types/WdfTrue, kmdf.wdf_tri_state, wudfddi_types/WdfFalse, wudfddi_types/WDF_TRI_STATE, WdfFalse, wdftypes/WDF_TRI_STATE, wdftypes/WdfFalse, WDF_TRI_STATE enumeration, wudfddi_types/WdfUseDefault, wudfddi_types/PWDF_TRI_STATE, DFGenObjectRef_83855649-9d84-4f8c-9685-5e5321209b4d.xml, _WDF_TRI_STATE, *PWDF_TRI_STATE, wdftypes/PWDF_TRI_STATE, WDF_TRI_STATE, wdf.wdf_tri_state, WdfUseDefault
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_TRI_STATE, *PWDF_TRI_STATE
+req.typenames : "*PWDF_TRI_STATE, WDF_TRI_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,6 @@ The WDF_TRI_STATE enumeration type is available in version 1.0 and later version
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_types.h (include Wdf.h) |

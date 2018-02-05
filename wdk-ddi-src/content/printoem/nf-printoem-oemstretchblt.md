@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5a533a68-6bdb-45dc-b5d3-04fa8d3e7129
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.oemstretchblt, OEMStretchBlt function [Print Devices], OEMStretchBlt, printoem/OEMStretchBlt, print_unidrv-pscript_rendering_cbbd51bd-2201-4fd4-9b3e-1e86f3962be8.xml
+ms.keywords : OEMStretchBlt, print.oemstretchblt, OEMStretchBlt function [Print Devices], print_unidrv-pscript_rendering_cbbd51bd-2201-4fd4-9b3e-1e86f3962be8.xml, printoem/OEMStretchBlt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,11 +116,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

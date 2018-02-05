@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : acc56cb0-5f89-413f-9fdc-a051cc4947c0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfchildlist/WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function, wdf.wdf_child_address_description_header_init, kmdf.wdf_child_address_description_header_init, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT, DFDeviceObjectChildListRef_167489bc-617b-440a-a0b2-d5c346b4cf50.xml
+ms.keywords : WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function, DFDeviceObjectChildListRef_167489bc-617b-440a-a0b2-d5c346b4cf50.xml, kmdf.wdf_child_address_description_header_init, wdf.wdf_child_address_description_header_init, wdfchildlist/WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,11 @@ For more information about child address descriptions, see <a href="https://docs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

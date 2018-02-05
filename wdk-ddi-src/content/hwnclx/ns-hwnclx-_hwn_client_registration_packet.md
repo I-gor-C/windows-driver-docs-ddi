@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : bf8ac72b-c3d6-4965-a1e9-2408d2fa2196
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : HWN_CLIENT_REGISTRATION_PACKET structure, *PHWN_CLIENT_REGISTRATION_PACKET, _HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET, hwnclx/HWN_CLIENT_REGISTRATION_PACKET, gpiobtn._hwn_client_registration_packet
+ms.keywords : "_HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET, hwnclx/HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET structure, gpiobtn._hwn_client_registration_packet, *PHWN_CLIENT_REGISTRATION_PACKET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET"
+req.typenames : HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
 ---
 
 # _HWN_CLIENT_REGISTRATION_PACKET structure
@@ -111,9 +111,7 @@ Version of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | hwnclx.h |
 
 ## See Also

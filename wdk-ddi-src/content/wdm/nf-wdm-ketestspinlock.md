@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5386349c-b4b8-43db-8f66-70dc7e71345e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeTestSpinLock routine [Kernel-Mode Driver Architecture], kernel.ketestspinlock, KeTestSpinLock, wdm/KeTestSpinLock, k105_99f18fd9-0242-4939-86ab-016236f9adcb.xml
+ms.keywords : k105_99f18fd9-0242-4939-86ab-016236f9adcb.xml, kernel.ketestspinlock, KeTestSpinLock routine [Kernel-Mode Driver Architecture], KeTestSpinLock, wdm/KeTestSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,11 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 

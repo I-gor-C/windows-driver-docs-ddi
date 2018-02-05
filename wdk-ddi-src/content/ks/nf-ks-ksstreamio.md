@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 74c62a30-42b9-4ea7-b52a-014e263d886e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamIo function [Streaming Media Devices], ks/KsStreamIo, ksfunc_c2f256a3-f01a-45e1-b7de-1eed5bacde7a.xml, KsStreamIo, stream.ksstreamio
+ms.keywords : stream.ksstreamio, ksfunc_c2f256a3-f01a-45e1-b7de-1eed5bacde7a.xml, ks/KsStreamIo, KsStreamIo function [Streaming Media Devices], KsStreamIo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -217,11 +217,6 @@ Similarly, KSSTREAM_WRITE is equivalent to KSPROBE_STREAMWRITE.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

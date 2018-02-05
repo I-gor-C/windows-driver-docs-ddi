@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 53e03b1d-0995-43cf-945a-22834a9e8240
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsGateAddOffInputToAnd, stream.ksgateaddoffinputtoand, KsGateAddOffInputToAnd, KsGateAddOffInputToAnd function [Streaming Media Devices], avfunc_52efe27b-d77a-490d-beba-3a05b3d5ed83.xml
+ms.keywords : KsGateAddOffInputToAnd, stream.ksgateaddoffinputtoand, avfunc_52efe27b-d77a-490d-beba-3a05b3d5ed83.xml, KsGateAddOffInputToAnd function [Streaming Media Devices], ks/KsGateAddOffInputToAnd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,16 +72,15 @@ This function should only be used on gates that were specifically created as AND
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
 
 <a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
 
@@ -90,8 +89,6 @@ This function should only be used on gates that were specifically created as AND
 <a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
 
 <a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
-
-<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
 
  
 

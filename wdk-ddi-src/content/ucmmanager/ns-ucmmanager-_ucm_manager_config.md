@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2B9539D7-6125-4912-9572-13FA7CA671D9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUCM_MANAGER_CONFIG structure pointer [Buses], UCM_MANAGER_CONFIG structure [Buses], buses.ucm_manager_config, _UCM_MANAGER_CONFIG, ucmmanager/UCM_MANAGER_CONFIG, ucmmanager/PUCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG, PUCM_MANAGER_CONFIG
+ms.keywords : buses.ucm_manager_config, ucmmanager/PUCM_MANAGER_CONFIG, PUCM_MANAGER_CONFIG, _UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG structure [Buses], PUCM_MANAGER_CONFIG structure pointer [Buses], ucmmanager/UCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,7 +60,7 @@ Size of the <b>UCM_MANAGER_CONFIG</b> structure. Initialize this structure by ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |

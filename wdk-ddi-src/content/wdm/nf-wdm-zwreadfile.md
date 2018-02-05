@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0f1ec015-bda6-45fe-973d-be414aece918
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwReadFile, kernel.zwreadfile, NtReadFile, k111_5cf3ebe2-7c2f-4998-b441-7d2aa2eb091f.xml, wdm/ZwReadFile, ZwReadFile routine [Kernel-Mode Driver Architecture], wdm/NtReadFile
+ms.keywords : wdm/NtReadFile, wdm/ZwReadFile, ZwReadFile routine [Kernel-Mode Driver Architecture], kernel.zwreadfile, k111_5cf3ebe2-7c2f-4998-b441-7d2aa2eb091f.xml, ZwReadFile, NtReadFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -172,26 +172,25 @@ Callers of <b>ZwReadFile</b> must be running at IRQL = PASSIVE_LEVEL and <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | PowerIrpDDis, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
 <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
-
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
+
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 
  
 

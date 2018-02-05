@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9f2ae88c-34a4-46b3-9571-5f2f023b7d6b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GETINFO_STDVAR structure [Print Devices], _GETINFO_STDVAR, printoem/PGETINFO_STDVAR, *PGETINFO_STDVAR, GETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], PGETINFO_STDVAR, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, print.getinfo_stdvar, printoem/GETINFO_STDVAR
+ms.keywords : print.getinfo_stdvar, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, GETINFO_STDVAR structure [Print Devices], _GETINFO_STDVAR, *PGETINFO_STDVAR, GETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], printoem/PGETINFO_STDVAR, PGETINFO_STDVAR, printoem/GETINFO_STDVAR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -235,9 +235,6 @@ For more information about <a href="https://msdn.microsoft.com/d3f85c0f-7387-430
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

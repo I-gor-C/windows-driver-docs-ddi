@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 8bf1d76a-2e5b-4e9a-85fc-187fea72d38c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauGetValidFormats function [Imaging Devices], wiauGetValidFormats, wiauFncs_f311862b-03fe-4fe6-8b30-46cd9a53513b.xml, image.wiaugetvalidformats, wiautil/wiauGetValidFormats
+ms.keywords : wiauGetValidFormats function [Imaging Devices], wiautil/wiauGetValidFormats, wiauGetValidFormats, image.wiaugetvalidformats, wiauFncs_f311862b-03fe-4fe6-8b30-46cd9a53513b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,11 +89,7 @@ The caller of this function is responsible for freeing the format array, using t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

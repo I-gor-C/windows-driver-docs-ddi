@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a2672bca-5c2e-423d-9ba0-fad610170e88
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaProfileInvalid, wdfdmaenabler/WdfDmaProfilePacket64, WdfDmaProfilePacket, WDF_DMA_PROFILE enumeration, WdfDmaProfileScatterGather, wdfdmaenabler/WdfDmaProfileInvalid, wdfdmaenabler/WdfDmaProfileSystemDuplex, WDF_DMA_PROFILE, wdfdmaenabler/WdfDmaProfileSystem, wdfdmaenabler/WdfDmaProfileScatterGather64Duplex, WdfDmaProfileSystem, WdfDmaProfilePacket64, wdfdmaenabler/WdfDmaProfileScatterGather64, wdfdmaenabler/WDF_DMA_PROFILE, _WDF_DMA_PROFILE, wdfdmaenabler/WdfDmaProfilePacket, WdfDmaProfileScatterGather64Duplex, WdfDmaProfileScatterGatherDuplex, wdfdmaenabler/WdfDmaProfileScatterGatherDuplex, wdfdmaenabler/WdfDmaProfileScatterGather, kmdf.wdf_dma_profile, wdf.wdf_dma_profile, WdfDmaProfileScatterGather64, WdfDmaProfileSystemDuplex, DFDmaObjectRef_24cd95b0-ec51-4af4-a507-04f9a91276cf.xml
+ms.keywords : WdfDmaProfileSystemDuplex, DFDmaObjectRef_24cd95b0-ec51-4af4-a507-04f9a91276cf.xml, wdf.wdf_dma_profile, WdfDmaProfileInvalid, wdfdmaenabler/WdfDmaProfilePacket, wdfdmaenabler/WdfDmaProfileScatterGather64Duplex, wdfdmaenabler/WdfDmaProfileScatterGather64, WdfDmaProfileScatterGather64, wdfdmaenabler/WdfDmaProfileScatterGatherDuplex, WDF_DMA_PROFILE, wdfdmaenabler/WDF_DMA_PROFILE, WdfDmaProfileScatterGather, _WDF_DMA_PROFILE, WDF_DMA_PROFILE enumeration, wdfdmaenabler/WdfDmaProfileInvalid, kmdf.wdf_dma_profile, WdfDmaProfilePacket64, WdfDmaProfileScatterGather64Duplex, wdfdmaenabler/WdfDmaProfileSystemDuplex, WdfDmaProfileScatterGatherDuplex, wdfdmaenabler/WdfDmaProfilePacket64, wdfdmaenabler/WdfDmaProfileScatterGather, wdfdmaenabler/WdfDmaProfileSystem, WdfDmaProfilePacket, WdfDmaProfileSystem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -120,9 +120,7 @@ Kernel-Mode Driver Framework (KMDF) miniport drivers such as NDIS miniport drive
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
 
 ## See Also

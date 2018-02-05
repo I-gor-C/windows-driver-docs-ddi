@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -75,8 +75,8 @@ An optional handle used by the operating system to reference the primary physica
 The handle used by the operating system to reference the current connection session with the basic
      service set (BSS) network. This handle value was received as the 
      <i>hConnectSession</i> parameter through a previous call to the 
-     <mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-     Dot11ExtIhvPerformPreAssociate</i></mshelp:link> IHV Handler function.
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+     Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
 `dwNumProperties`
 
@@ -86,8 +86,8 @@ The number of elements in the array of structures pointed to by the
 `pProperties`
 
 A pointer to an array of 
-     <mshelp:link keywords="netvista.dot11ext_virtual_station_ap_property" tabindex="0"><b>
-     DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</b></mshelp:link> structures that specify the properties of access points (APs)
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_ap_property.md">
+     DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</a> structures that specify the properties of access points (APs)
      that the virtual 802.11 station is attempting to host in the current connection session.
 
 `pvReserved`
@@ -110,8 +110,8 @@ If the current IHV profile connection is an access point (AP), and the IHV Exten
 If the IHV Extensions DLL calls 
     <b>Dot11ExtSetVirtualStationAPProperties</b>, it must do so before it calls the
     
-    <mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-    Dot11ExtIhvPerformPreAssociate</i></mshelp:link> IHV Handler function. If 
+    <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+    Dot11ExtIhvPerformPreAssociate</a> IHV Handler function. If 
     <b>Dot11ExtSetVirtualStationAPProperties</b> is not called before successful
     completion of the pre-association operation, the operating system makes no assumptions about the nature
     of the IHV profile.
@@ -119,24 +119,19 @@ If the IHV Extensions DLL calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+   Dot11ExtIhvPerformPreAssociate</a>
+
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_ap_property.md">
+   DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</a>
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
-<mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-   Dot11ExtIhvPerformPreAssociate</i></mshelp:link>
-
-<mshelp:link keywords="netvista.dot11ext_virtual_station_ap_property" tabindex="0"><b>
-   DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</b></mshelp:link>
 
  
 

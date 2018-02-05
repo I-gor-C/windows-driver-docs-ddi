@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 7EF129C7-25C3-49D2-8FC5-FFA1C4E77935
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SERCX_STATUS, SERCX_STATUS enumeration [Serial Ports], 1/SerCxStatusSuccess, SerCxStatusSuccess, SerCxStatusTimeout, _SERCX_STATUS, *PSERCX_STATUS, SerCxStatusCancelled, 1/SERCX_STATUS, 1/SerCxStatusTimeout, 1/SerCxStatusCancelled, serports.sercx_status
+ms.keywords : "_SERCX_STATUS, 1/SerCxStatusCancelled, SerCxStatusTimeout, 1/SERCX_STATUS, SerCxStatusSuccess, serports.sercx_status, SERCX_STATUS enumeration [Serial Ports], SerCxStatusCancelled, SERCX_STATUS, 1/SerCxStatusTimeout, *PSERCX_STATUS, 1/SerCxStatusSuccess"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -78,18 +78,16 @@ The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | sercx.h |
 
 ## See Also
 
-<a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
-
 <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 
 <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
+
+<a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
 
  
 

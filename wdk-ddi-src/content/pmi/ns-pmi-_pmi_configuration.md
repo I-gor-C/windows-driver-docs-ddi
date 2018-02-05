@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 976b812e-deb2-445f-b69d-e00d10c6e5d8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PPMI_CONFIGURATION, PowerMeterRef_f3279ebc-cd57-40e8-8571-a7d0d6bf3edc.xml, pmi/PMI_CONFIGURATION, PPMI_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PMI_CONFIGURATION structure [Power Metering and Budgeting Devices], powermeter.pmi_configuration, PMI_CONFIGURATION, PPMI_CONFIGURATION, _PMI_CONFIGURATION, pmi/PPMI_CONFIGURATION"
+ms.keywords : PPMI_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], *PPMI_CONFIGURATION, pmi/PPMI_CONFIGURATION, _PMI_CONFIGURATION, pmi/PMI_CONFIGURATION, PowerMeterRef_f3279ebc-cd57-40e8-8571-a7d0d6bf3edc.xml, PMI_CONFIGURATION structure [Power Metering and Budgeting Devices], PPMI_CONFIGURATION, powermeter.pmi_configuration, PMI_CONFIGURATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PMI_CONFIGURATION, *PPMI_CONFIGURATION
+req.typenames : "*PPMI_CONFIGURATION, PMI_CONFIGURATION"
 ---
 
 # _PMI_CONFIGURATION structure
@@ -96,22 +96,20 @@ The <b>Configuration</b> member contains data that is  formatted as a <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
 ## See Also
 
-<a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
-
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
 
 <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
 
+<a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a>
+
 <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
 
-<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
+<a href="..\pmi\ne-pmi-pmi_configuration_type.md">PMI_CONFIGURATION_TYPE</a>
 
  
 

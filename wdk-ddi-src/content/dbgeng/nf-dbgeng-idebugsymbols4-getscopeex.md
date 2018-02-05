@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B91EF786-51F7-406E-BCC2-C917E6881886
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetScopeEx, debugger.idebugsymbols4_getscopeex, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface, IDebugSymbols4, IDebugSymbols4::GetScopeEx, GetScopeEx method [Windows Debugging], dbgeng/IDebugSymbols4::GetScopeEx, IDebugSymbols4 interface [Windows Debugging], GetScopeEx method
+ms.keywords : IDebugSymbols4::GetScopeEx, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface [Windows Debugging], GetScopeEx method, GetScopeEx, IDebugSymbols4, debugger.idebugsymbols4_getscopeex, GetScopeEx method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetScopeEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -80,20 +80,15 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
-
 <a href="..\dbgeng\ns-dbgeng-_debug_stack_frame_ex.md">DEBUG_STACK_FRAME_EX</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
 
  
 

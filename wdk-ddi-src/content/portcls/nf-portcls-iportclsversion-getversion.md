@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : ce1394e5-1d45-4b59-8738-fcb2cbe7cf51
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetVersion method [Audio Devices], IPortClsVersion interface, IPortClsVersion::GetVersion, GetVersion method [Audio Devices], audmp-routines_82b73b24-296b-4b31-88e4-1d1303863c6c.xml, GetVersion, audio.iportclsversion_getversion, IPortClsVersion interface [Audio Devices], GetVersion method, IPortClsVersion, portcls/IPortClsVersion::GetVersion
+ms.keywords : GetVersion method [Audio Devices], IPortClsVersion interface, IPortClsVersion::GetVersion, GetVersion method [Audio Devices], IPortClsVersion interface [Audio Devices], GetVersion method, audmp-routines_82b73b24-296b-4b31-88e4-1d1303863c6c.xml, GetVersion, portcls/IPortClsVersion::GetVersion, IPortClsVersion, audio.iportclsversion_getversion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -287,14 +287,10 @@ The version numbers in the preceding table are listed in roughly chronological o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

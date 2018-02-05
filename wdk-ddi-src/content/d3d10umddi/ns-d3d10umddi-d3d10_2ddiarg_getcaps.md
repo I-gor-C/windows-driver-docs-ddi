@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3a22464f-4e0b-4b14-bdbf-b34b3abf9780
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_2DDIARG_GETCAPS structure [Display Devices], UMDisplayDriver_Dx11param_Structs_0d9c80db-e29f-4e2f-b697-bcf87f29034c.xml, display.d3d10_2ddiarg_getcaps, d3d10umddi/D3D10_2DDIARG_GETCAPS, D3D10_2DDIARG_GETCAPS
+ms.keywords : D3D10_2DDIARG_GETCAPS, d3d10umddi/D3D10_2DDIARG_GETCAPS, display.d3d10_2ddiarg_getcaps, UMDisplayDriver_Dx11param_Structs_0d9c80db-e29f-4e2f-b697-bcf87f29034c.xml, D3D10_2DDIARG_GETCAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct D3D10_2DDIARG_GETCAPS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D10_2DDIARG_GETCAPS is supported beginning with the Windows 7 operating system. D3D10_2DDIARG_GETCAPS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

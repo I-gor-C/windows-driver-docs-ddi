@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 238d0b22-bd35-4e8d-9bb5-283af2bbb75b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.disk_cache_retention_priority, KeepPrefetchedData, ntdddisk/KeepPrefetchedData, KeepReadData, EqualPriority, ntdddisk/EqualPriority, DISK_CACHE_RETENTION_PRIORITY, structs-disk_19939b68-659e-4546-8419-7e1e141b8291.xml, ntdddisk/KeepReadData, DISK_CACHE_RETENTION_PRIORITY enumeration [Storage Devices], ntdddisk/DISK_CACHE_RETENTION_PRIORITY
+ms.keywords : KeepReadData, structs-disk_19939b68-659e-4546-8419-7e1e141b8291.xml, DISK_CACHE_RETENTION_PRIORITY, DISK_CACHE_RETENTION_PRIORITY enumeration [Storage Devices], ntdddisk/EqualPriority, KeepPrefetchedData, EqualPriority, ntdddisk/KeepReadData, ntdddisk/KeepPrefetchedData, ntdddisk/DISK_CACHE_RETENTION_PRIORITY, storage.disk_cache_retention_priority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,16 +74,13 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
-
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_cache_information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
 
  
 

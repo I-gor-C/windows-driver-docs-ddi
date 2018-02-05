@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bcbbddc7-6675-4555-bd05-588762148554
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlcreatesystemvolumeinformationfolder, RtlCreateSystemVolumeInformationFolder, rtlref_f854cbbb-1aa4-4f0a-8d2d-5b160634a155.xml, ntifs/RtlCreateSystemVolumeInformationFolder, RtlCreateSystemVolumeInformationFolder routine [Installable File System Drivers]
+ms.keywords : RtlCreateSystemVolumeInformationFolder routine [Installable File System Drivers], ntifs/RtlCreateSystemVolumeInformationFolder, ifsk.rtlcreatesystemvolumeinformationfolder, RtlCreateSystemVolumeInformationFolder, rtlref_f854cbbb-1aa4-4f0a-8d2d-5b160634a155.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,20 +91,18 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Windows XP and later Windows operating systems. This routine is available on Windows XP and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
  
 

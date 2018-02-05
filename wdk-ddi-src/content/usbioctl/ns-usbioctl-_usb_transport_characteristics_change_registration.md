@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : AC05B79E-D293-4EC7-8BF2-D14E3163FB43
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbioctl/USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, _USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION structure pointer [Buses], USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION structure [Buses], buses.usb_transport_characteristics_change_registration, *PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION
+ms.keywords : USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, *PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION structure pointer [Buses], USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION structure [Buses], PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, buses.usb_transport_characteristics_change_registration, usbioctl/USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, _USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION"
+req.typenames : USB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION, *PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_REGISTRATION
 req.product : Windows 10 or later.
 ---
 
@@ -74,9 +74,6 @@ The registration handle received in this request is valid until the caller sends
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h |
 
 ## See Also

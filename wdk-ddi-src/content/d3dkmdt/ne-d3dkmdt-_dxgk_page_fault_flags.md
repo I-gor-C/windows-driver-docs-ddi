@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3AF0646D-5405-4A35-8352-7E32BCA5DD24
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PAGE_FAULT_FLAGS, d3dkmdt/DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_WRITE, DXGK_PAGE_FAULT_FENCE_INVALID, DXGK_PAGE_FAULT_IOMMU, DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_WRITE, d3dkmdt/DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, d3dkmdt/DXGK_PAGE_FAULT_FENCE_INVALID, d3dkmdt/DXGK_PAGE_FAULT_IOMMU, _DXGK_PAGE_FAULT_FLAGS, display.dxgk_page_fault_flags, DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, DXGK_PAGE_FAULT_FLAGS enumeration [Display Devices]
+ms.keywords : DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, DXGK_PAGE_FAULT_FLAGS, d3dkmdt/DXGK_PAGE_FAULT_FENCE_INVALID, DXGK_PAGE_FAULT_IOMMU, _DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_WRITE, DXGK_PAGE_FAULT_FENCE_INVALID, d3dkmdt/DXGK_PAGE_FAULT_IOMMU, d3dkmdt/DXGK_PAGE_FAULT_WRITE, d3dkmdt/DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, DXGK_PAGE_FAULT_FLAGS enumeration [Display Devices], display.dxgk_page_fault_flags, d3dkmdt/DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, d3dkmdt/DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -104,9 +104,7 @@ When not set, this indicates that the DMA packet submitted with <b>FaultedFenceI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmdt.h (include D3dkmddi.h) |
 
 ## See Also

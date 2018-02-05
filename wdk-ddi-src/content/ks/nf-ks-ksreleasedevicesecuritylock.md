@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b14a4816-2e72-491d-9881-ae532c287e99
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsReleaseDeviceSecurityLock, stream.ksreleasedevicesecuritylock, KsReleaseDeviceSecurityLock, KsReleaseDeviceSecurityLock function [Streaming Media Devices], ksfunc_4f6e594d-1f06-4741-89f2-d153db3a63e7.xml
+ms.keywords : ks/KsReleaseDeviceSecurityLock, KsReleaseDeviceSecurityLock function [Streaming Media Devices], stream.ksreleasedevicesecuritylock, ksfunc_4f6e594d-1f06-4741-89f2-d153db3a63e7.xml, KsReleaseDeviceSecurityLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

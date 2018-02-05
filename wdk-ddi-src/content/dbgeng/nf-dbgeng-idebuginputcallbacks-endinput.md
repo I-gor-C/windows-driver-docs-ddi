@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e22b616c-51f6-4687-95b0-eb833ceb9ec3
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugInputCallbacks interface [Windows Debugging], EndInput method, EndInput method [Windows Debugging], IDebugInputCallbacks, debugger.idebuginputcallbacks_endinput, EndInput, dbgeng/IDebugInputCallbacks::EndInput, EndInput method [Windows Debugging], IDebugInputCallbacks interface, IDebugInputCallbacks::EndInput, ComCallbacks_3e06dd1c-483b-4934-83d5-b00241d9d88b.xml
+ms.keywords : EndInput method [Windows Debugging], ComCallbacks_3e06dd1c-483b-4934-83d5-b00241d9d88b.xml, IDebugInputCallbacks, EndInput, IDebugInputCallbacks interface [Windows Debugging], EndInput method, dbgeng/IDebugInputCallbacks::EndInput, IDebugInputCallbacks::EndInput, debugger.idebuginputcallbacks_endinput, EndInput method [Windows Debugging], IDebugInputCallbacks interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ For more information about debugger engine input, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

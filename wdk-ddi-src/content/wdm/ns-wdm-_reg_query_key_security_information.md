@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8bfe793d-c902-4459-98eb-e134759efc48
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PREG_QUERY_KEY_SECURITY_INFORMATION, kstruct_d_952b1831-9ce9-4f9e-8669-02480c0ad3a0.xml, *PREG_QUERY_KEY_SECURITY_INFORMATION, _REG_QUERY_KEY_SECURITY_INFORMATION, REG_QUERY_KEY_SECURITY_INFORMATION, wdm/REG_QUERY_KEY_SECURITY_INFORMATION, PREG_QUERY_KEY_SECURITY_INFORMATION, PREG_QUERY_KEY_SECURITY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_query_key_security_information, REG_QUERY_KEY_SECURITY_INFORMATION structure [Kernel-Mode Driver Architecture]
+ms.keywords : REG_QUERY_KEY_SECURITY_INFORMATION, kernel.reg_query_key_security_information, *PREG_QUERY_KEY_SECURITY_INFORMATION, kstruct_d_952b1831-9ce9-4f9e-8669-02480c0ad3a0.xml, _REG_QUERY_KEY_SECURITY_INFORMATION, REG_QUERY_KEY_SECURITY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_QUERY_KEY_SECURITY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_QUERY_KEY_SECURITY_INFORMATION, wdm/PREG_QUERY_KEY_SECURITY_INFORMATION, wdm/REG_QUERY_KEY_SECURITY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PREG_QUERY_KEY_SECURITY_INFORMATION, REG_QUERY_KEY_SECURITY_INFORMATION"
+req.typenames : REG_QUERY_KEY_SECURITY_INFORMATION, *PREG_QUERY_KEY_SECURITY_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -94,22 +94,20 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Windows Vista and later versions of the Windows operating system. Available on Windows Vista and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
-
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
-
 <a href="..\ntifs\nf-ntifs-zwquerysecurityobject.md">ZwQuerySecurityObject</a>
+
+<a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
 
  
 

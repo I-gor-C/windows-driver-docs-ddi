@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 26F68B49-8205-4132-93E7-BFE8FE695D9C
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : "_ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure pointer [ACPI Devices], acpi.acpi_eval_input_buffer_simple_integer_v2_ex, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure [ACPI Devices], acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX"
+ms.keywords : PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, acpi.acpi_eval_input_buffer_simple_integer_v2_ex, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX
+req.typenames : "*PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V2_EX structure
@@ -69,7 +69,5 @@ Defines the <b>ULONG</b> member <b>Signature</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 and later versions. Windows 10, version 1709 and later versions. |
 | **Header** | acpiioct.h (include Acpiioct.h) |

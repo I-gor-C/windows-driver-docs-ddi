@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : bca012b4-76ae-4ba5-99b4-92a367774de7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaLog interface [Imaging Devices], Log method, IWiaLog, image.iwialog_log, wia_lh/IWiaLog::Log, Log, IWiaLog::Log, Log method [Imaging Devices], IWiaLog_e3605b5e-0494-46a7-85c1-3a0707a74764.xml, Log method [Imaging Devices], IWiaLog interface
+ms.keywords : IWiaLog, IWiaLog::Log, IWiaLog interface [Imaging Devices], Log method, Log, Log method [Imaging Devices], IWiaLog interface, image.iwialog_log, IWiaLog_e3605b5e-0494-46a7-85c1-3a0707a74764.xml, Log method [Imaging Devices], wia_lh/IWiaLog::Log
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -137,11 +137,7 @@ If the method succeeds, it returns S_OK.  If the method fails, it returns a stan
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros. Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros. |
+| **Target Platform** | Desktop |
 | **Header** | wia_lh.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wia_lh.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : db5ff69f-dcae-4016-a078-c8edb2390c6c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCoActivateVcComplete, NdisMCoActivateVcComplete function [Network Drivers Starting with Windows Vista], condis_miniport_ref_3a81c66b-8e97-4194-bf90-988ac2fd05b5.xml, netvista.ndismcoactivatevccomplete, NdisMCoActivateVcComplete
+ms.keywords : NdisMCoActivateVcComplete, netvista.ndismcoactivatevccomplete, ndis/NdisMCoActivateVcComplete, NdisMCoActivateVcComplete function [Network Drivers Starting with Windows Vista], condis_miniport_ref_3a81c66b-8e97-4194-bf90-988ac2fd05b5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,8 +65,8 @@ VOID NdisMCoActivateVcComplete(
 Specifies the handle identifying the VC. The caller obtained this handle from its per-VC state,
      designated by the 
      <i>MiniportVcContext</i> passed as an input parameter to its 
-     <mshelp:link keywords="netvista.miniportcoactivatevc" tabindex="0"><i>
-     MiniportCoActivateVc</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">
+     MiniportCoActivateVc</a> function.
 
 `CallParameters`
 
@@ -102,34 +102,32 @@ If the miniport driver finds the CM-supplied call parameters unacceptable, it fa
 
 A call to 
     <b>NdisMCoActivateVcComplete</b> causes NDIS to call the 
-    <mshelp:link keywords="netvista.protocolcmactivatevccomplete" tabindex="0"><i>
-    ProtocolCmActivateVcComplete</i></mshelp:link> function of the call manager that originally requested the VC
+    <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
+    ProtocolCmActivateVcComplete</a> function of the call manager that originally requested the VC
     activation.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
+<a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
+   ProtocolCmActivateVcComplete</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
 
-<mshelp:link keywords="netvista.protocolcmactivatevccomplete" tabindex="0"><i>
-   ProtocolCmActivateVcComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
 
 <a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
  
 

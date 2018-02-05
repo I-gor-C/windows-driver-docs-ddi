@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 44792a1f-c6d5-4491-a06d-e00e41e40059
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMDeregisterScatterGatherDma, NdisMDeregisterScatterGatherDma function [Network Drivers Starting with Windows Vista], ndis_sgdma_ref_93a42580-1486-4ec8-90e6-ca6219c54884.xml, netvista.ndismderegisterscattergatherdma, ndis/NdisMDeregisterScatterGatherDma
+ms.keywords : NdisMDeregisterScatterGatherDma, netvista.ndismderegisterscattergatherdma, ndis_sgdma_ref_93a42580-1486-4ec8-90e6-ca6219c54884.xml, ndis/NdisMDeregisterScatterGatherDma, NdisMDeregisterScatterGatherDma function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -42,8 +42,8 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisMDeregisterScatterGatherDma function
 Bus-master miniport drivers call 
   <b>NdisMDeregisterScatterGatherDma</b> to release DMA resources that were allocated with the 
-  <mshelp:link keywords="netvista.ndismregisterscattergatherdma" tabindex="0"><b>
-  NdisMRegisterScatterGatherDma</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
+  NdisMRegisterScatterGatherDma</a> function.
 
 ## Syntax
 
@@ -77,27 +77,25 @@ An NDIS miniport driver calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Init_RegisterSG, Irql_Gather_DMA_Function |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/70b8321b-7b21-4d11-a9c2-46b0caa26ce6">NDIS Scatter/Gather DMA</a>
-
 <a href="https://msdn.microsoft.com/c7e702aa-494f-4b27-a7c3-d42ef8f42a6e">Miniport Driver Scatter/Gather DMA</a>
 
 <a href="https://msdn.microsoft.com/b24e0a56-1864-4f70-a646-c35e8eccd9e3">Registering and Deregistering DMA Channels</a>
 
-<mshelp:link keywords="netvista.ndismregisterscattergatherdma" tabindex="0"><b>
-   NdisMRegisterScatterGatherDma</b></mshelp:link>
+<a href="https://msdn.microsoft.com/70b8321b-7b21-4d11-a9c2-46b0caa26ce6">NDIS Scatter/Gather DMA</a>
 
 <a href="https://msdn.microsoft.com/95463617-65df-4c02-82f4-e3aba44d42fb">Allocating and Freeing Scatter/Gather Lists</a>
+
+<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
+   NdisMRegisterScatterGatherDma</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 

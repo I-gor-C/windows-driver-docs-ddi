@@ -80,9 +80,7 @@ Be aware that when your driver uses the smart card driver library, you should st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | winsmcrd.h |
-| **IRQL** |  |
 
 ## See Also
 

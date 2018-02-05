@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e24a2498-7f33-435c-97ad-e4ae283580c2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSM_SendTEST_OUT, SM_SendTEST_OUT structure [Storage Devices], PSM_SendTEST_OUT structure pointer [Storage Devices], SM_SendTEST_OUT, structs-Fibre_901c8256-fe8d-4194-aaec-8a0557287687.xml, *PSM_SendTEST_OUT, hbapiwmi/PSM_SendTEST_OUT, _SM_SendTEST_OUT, hbapiwmi/SM_SendTEST_OUT, storage.sm_sendtest_out
+ms.keywords : storage.sm_sendtest_out, SM_SendTEST_OUT, structs-Fibre_901c8256-fe8d-4194-aaec-8a0557287687.xml, _SM_SendTEST_OUT, *PSM_SendTEST_OUT, hbapiwmi/PSM_SendTEST_OUT, PSM_SendTEST_OUT, PSM_SendTEST_OUT structure pointer [Storage Devices], hbapiwmi/SM_SendTEST_OUT, SM_SendTEST_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,7 +61,4 @@ The WMI tool suite generates a declaration of the SM_SendTEST_OUT structure in <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

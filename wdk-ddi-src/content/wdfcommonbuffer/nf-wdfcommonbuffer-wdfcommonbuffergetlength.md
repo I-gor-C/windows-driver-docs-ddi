@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7ffb818d-7c58-4c84-997b-1703f480aaf0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFCOMMONBUFFERGETLENGTH, wdfcommonbuffer/WdfCommonBufferGetLength, wdf.wdfcommonbuffergetlength, kmdf.wdfcommonbuffergetlength, WdfCommonBufferGetLength, DFCommonBufferObjectRef_cf0ad31e-c159-4cac-846c-52bb280b3d52.xml, WdfCommonBufferGetLength method
+ms.keywords : wdfcommonbuffer/WdfCommonBufferGetLength, wdf.wdfcommonbuffergetlength, PFN_WDFCOMMONBUFFERGETLENGTH, WdfCommonBufferGetLength method, WdfCommonBufferGetLength, kmdf.wdfcommonbuffergetlength, DFCommonBufferObjectRef_cf0ad31e-c159-4cac-846c-52bb280b3d52.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,10 @@ For more information about common buffers, see <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfcommonbuffer.h (include WdfCommonBuffer.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

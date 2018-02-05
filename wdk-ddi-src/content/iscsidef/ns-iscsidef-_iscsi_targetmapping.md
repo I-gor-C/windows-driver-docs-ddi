@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9b8c5024-5d37-4f85-be00-1a60dd9ab323
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PISCSI_TargetMapping structure pointer [Storage Devices], structs-iSCSI_5512347c-9b89-4d14-9c84-4e7b9191dbfa.xml, _ISCSI_TargetMapping, ISCSI_TargetMapping, iscsidef/ISCSI_TargetMapping, ISCSI_TargetMapping structure [Storage Devices], *PISCSI_TargetMapping, storage.iscsi_targetmapping, iscsidef/PISCSI_TargetMapping, PISCSI_TargetMapping
+ms.keywords : ISCSI_TargetMapping structure [Storage Devices], storage.iscsi_targetmapping, iscsidef/PISCSI_TargetMapping, *PISCSI_TargetMapping, ISCSI_TargetMapping, PISCSI_TargetMapping structure pointer [Storage Devices], structs-iSCSI_5512347c-9b89-4d14-9c84-4e7b9191dbfa.xml, PISCSI_TargetMapping, _ISCSI_TargetMapping, iscsidef/ISCSI_TargetMapping
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PISCSI_TargetMapping, ISCSI_TargetMapping"
+req.typenames : ISCSI_TargetMapping, *PISCSI_TargetMapping
 ---
 
 # _ISCSI_TargetMapping structure
@@ -98,20 +98,17 @@ Management applications can use the ISCSI_TargetMapping structure to specify a l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561573">ISCSI_TargetMapping WMI Class</a>
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_lunlist.md">ISCSI_LUNList</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561573">ISCSI_TargetMapping WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
  
 

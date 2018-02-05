@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : BCF2171C-93CB-4DAC-AA78-C272D5445F99
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.lamp_capabilities_color, lamp/LAMP_CAPABILITIES_COLOR, LAMP_CAPABILITIES_COLOR, LAMP_CAPABILITIES_COLOR structure [Streaming Media Devices]
+ms.keywords : lamp/LAMP_CAPABILITIES_COLOR, stream.lamp_capabilities_color, LAMP_CAPABILITIES_COLOR, LAMP_CAPABILITIES_COLOR structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ If <b>IsSupported</b> evaluates to <b>TRUE</b> (the driver is capable of emittin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | lamp.h |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4fbb4d4b-b98a-4d10-b9b2-7ad8fc4ada6e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k111_72ac4415-d46c-4ea2-9d6c-d66903082808.xml, ZwUnloadDriver, ZwUnloadDriver routine [Kernel-Mode Driver Architecture], wdm/NtUnloadDriver, NtUnloadDriver, kernel.zwunloaddriver, wdm/ZwUnloadDriver
+ms.keywords : wdm/ZwUnloadDriver, NtUnloadDriver, ZwUnloadDriver, k111_72ac4415-d46c-4ea2-9d6c-d66903082808.xml, ZwUnloadDriver routine [Kernel-Mode Driver Architecture], kernel.zwunloaddriver, wdm/NtUnloadDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,26 +76,25 @@ A minifilter should use <a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">F
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+<a href="..\wdm\nf-wdm-zwloaddriver.md">ZwLoadDriver</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltunloadfilter.md">FltUnloadFilter</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 <a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
-<a href="..\wdm\nf-wdm-zwloaddriver.md">ZwLoadDriver</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 483147CF-B15D-435C-B5AA-31723D4C2A85
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxControllerResetComplete, buses._ucxcontrollerresetcomplete, ucxcontroller/UcxControllerResetComplete, UcxControllerResetComplete method [Buses]
+ms.keywords : UcxControllerResetComplete, ucxcontroller/UcxControllerResetComplete, buses._ucxcontrollerresetcomplete, UcxControllerResetComplete method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,13 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

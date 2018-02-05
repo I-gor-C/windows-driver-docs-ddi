@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 03352d5d-122f-4818-965d-f5cc8231d6ed
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDEtwRegister function [Display Devices], umdprovider/UMDEtwRegister, UMDEtwRegister, display.umdetwregister
+ms.keywords : umdprovider/UMDEtwRegister, display.umdetwregister, UMDEtwRegister, UMDEtwRegister function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -151,14 +151,10 @@ FORCEINLINE void UMDEtwRegister(PFNUMDETW_RUNDOWN RundownCb)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | umdprovider.h (include Umdprovider.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

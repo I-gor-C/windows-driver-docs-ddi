@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c8b4fef4-cfbb-4cdd-b762-062b8ae4a423
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSetDefaultClockTime function [Streaming Media Devices], ksfunc_737648d0-8fc4-405c-96c8-61778e6758e9.xml, ks/KsSetDefaultClockTime, KsSetDefaultClockTime, stream.kssetdefaultclocktime
+ms.keywords : ks/KsSetDefaultClockTime, stream.kssetdefaultclocktime, ksfunc_737648d0-8fc4-405c-96c8-61778e6758e9.xml, KsSetDefaultClockTime, KsSetDefaultClockTime function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

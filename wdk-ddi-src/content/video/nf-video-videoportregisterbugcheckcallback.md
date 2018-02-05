@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 55b2d603-f3ac-4a7a-91f5-83d908d1e14b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, video/VideoPortRegisterBugcheckCallback, VideoPortRegisterBugcheckCallback function [Display Devices], display.videoportregisterbugcheckcallback, VideoPortRegisterBugcheckCallback
+ms.keywords : VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, VideoPortRegisterBugcheckCallback, video/VideoPortRegisterBugcheckCallback, display.videoportregisterbugcheckcallback, VideoPortRegisterBugcheckCallback function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,14 +94,12 @@ For more information, see <a href="https://msdn.microsoft.com/181fd4f2-feed-4759
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP SP1 and later versions of the Windows operating systems. Available in Windows XP SP1 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

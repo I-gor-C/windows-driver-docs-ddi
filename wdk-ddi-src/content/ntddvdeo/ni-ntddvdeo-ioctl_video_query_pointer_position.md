@@ -69,9 +69,7 @@ If the miniport driver successfully returns the pointer position, it sets the <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 

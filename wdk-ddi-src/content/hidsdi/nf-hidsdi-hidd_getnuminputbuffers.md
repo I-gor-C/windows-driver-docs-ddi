@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : f9ed28a5-835c-47c8-b9cf-888785013b69
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidfunc_addf7040-0b62-45bc-8b43-1aa0157924e8.xml, hid.hidd_getnuminputbuffers, HidD_GetNumInputBuffers routine [Human Input Devices], hidsdi/HidD_GetNumInputBuffers, HidD_GetNumInputBuffers
+ms.keywords : hid.hidd_getnuminputbuffers, HidD_GetNumInputBuffers, hidfunc_addf7040-0b62-45bc-8b43-1aa0157924e8.xml, hidsdi/HidD_GetNumInputBuffers, HidD_GetNumInputBuffers routine [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,22 +75,19 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidsdi.h (include Hidsdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hid.lib |
+| **DLL** | Hid.dll |
 
 ## See Also
-
-<a href="..\hidsdi\nf-hidsdi-hidd_setnuminputbuffers.md">HidD_SetNumInputBuffers</a>
 
 <a href="..\hidclass\ni-hidclass-ioctl_set_num_device_input_buffers.md">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
 
 <a href="..\hidclass\ni-hidclass-ioctl_get_num_device_input_buffers.md">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a>
+
+<a href="..\hidsdi\nf-hidsdi-hidd_setnuminputbuffers.md">HidD_SetNumInputBuffers</a>
 
  
 

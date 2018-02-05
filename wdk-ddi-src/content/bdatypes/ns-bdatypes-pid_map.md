@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f71045e8-2928-40b8-b8f7-bc954a753aff
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.pid_map, bdaref_54fdf358-1957-4e84-a5a4-9929395f105b.xml, PID_MAP, bdatypes/PID_MAP, PID_MAP structure [Streaming Media Devices]
+ms.keywords : PID_MAP structure [Streaming Media Devices], bdaref_54fdf358-1957-4e84-a5a4-9929395f105b.xml, stream.pid_map, PID_MAP, bdatypes/PID_MAP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Identifier of particular packets.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h (include Bdatypes.h) |
 
 ## See Also

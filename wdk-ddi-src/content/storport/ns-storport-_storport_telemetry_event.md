@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 50A3EB6D-C485-4C04-8E88-9BD7D7ED0A62
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STORPORT_TELEMETRY_EVENT, storage.storport_telemetry_event, storport/STORPORT_TELEMETRY_EVENT, storport/PSTORPORT_TELEMETRY_EVENT, _STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT structure [Storage Devices], PSTORPORT_TELEMETRY_EVENT structure pointer [Storage Devices], PSTORPORT_TELEMETRY_EVENT
+ms.keywords : PSTORPORT_TELEMETRY_EVENT, _STORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT, PSTORPORT_TELEMETRY_EVENT structure pointer [Storage Devices], storport/STORPORT_TELEMETRY_EVENT, storage.storport_telemetry_event, *PSTORPORT_TELEMETRY_EVENT, storport/PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -174,9 +174,7 @@ A <b>STORPORT_TELEMETRY_EVENT</b> structure describes the miniport telemetry dat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

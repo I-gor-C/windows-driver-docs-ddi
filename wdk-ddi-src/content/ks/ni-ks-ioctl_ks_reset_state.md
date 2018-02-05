@@ -79,9 +79,7 @@ When the reset state is terminated, the pin can again accept new data and pass d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ks.h (include Ks.h) |
-| **IRQL** |  |
 
 ## See Also
 
@@ -89,9 +87,9 @@ When the reset state is terminated, the pin can again accept new data and pass d
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556354">AVStrMiniPinReset</a>
 
-<a href="..\ks\nf-ks-ksacquireresetvalue.md">KsAcquireResetValue</a>
-
 <a href="..\ks\nc-ks-pfnksfiltervoid.md">AVStrMiniFilterReset</a>
+
+<a href="..\ks\nf-ks-ksacquireresetvalue.md">KsAcquireResetValue</a>
 
  
 

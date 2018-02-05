@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 00833038-1fff-4103-9508-07cb8cbfa846
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmAddPartyComplete, netvista.ndiscmaddpartycomplete, NdisCmAddPartyComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmAddPartyComplete, condis_call_manager_ref_5a60a49b-5bca-48b4-9659-af4e8bdfd032.xml
+ms.keywords : netvista.ndiscmaddpartycomplete, condis_call_manager_ref_5a60a49b-5bca-48b4-9659-af4e8bdfd032.xml, NdisCmAddPartyComplete, ndis/NdisCmAddPartyComplete, NdisCmAddPartyComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -135,8 +135,8 @@ If the CM sets
 
 A call to 
     <b>NdisCmAddPartyComplete</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolcladdpartycomplete" tabindex="0"><i>
-    ProtocolClAddPartyComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
+    ProtocolClAddPartyComplete</a> function.
 
 Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
     <b>NdisCmAddPartyComplete</b>. Connection-oriented miniport drivers that provide integrated
@@ -146,29 +146,27 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmAddPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmAddPartyComplete (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmAddPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmAddPartyComplete (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
 
 <a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
 
  
 

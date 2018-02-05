@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 288a7b44-b842-41f8-8ece-d14a709b0717
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanVoiceClassMax, WwanVoiceClassNoVoice, WWAN_VOICE_CLASS enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_VOICE_CLASS, WwanVoiceClassSeparateVoiceData, WwanVoiceClassUnknown, wwan/WwanVoiceClassSeparateVoiceData, WwanVoiceClassMax, PWWAN_VOICE_CLASS, WWAN_VOICE_CLASS, wwan/WwanVoiceClassSimultaneousVoiceData, WwanVoiceClassSimultaneousVoiceData, wwan/WwanVoiceClassUnknown, WwanRef_13e9339b-e11b-416b-8335-51c950049c6e.xml, _WWAN_VOICE_CLASS, netvista.wwan_voice_class, PWWAN_VOICE_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_VOICE_CLASS, *PWWAN_VOICE_CLASS, wwan/WwanVoiceClassNoVoice
+ms.keywords : WwanVoiceClassUnknown, PWWAN_VOICE_CLASS, WwanVoiceClassNoVoice, WwanVoiceClassSeparateVoiceData, PWWAN_VOICE_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], _WWAN_VOICE_CLASS, WWAN_VOICE_CLASS, wwan/WwanVoiceClassSimultaneousVoiceData, wwan/WwanVoiceClassNoVoice, wwan/WWAN_VOICE_CLASS, wwan/PWWAN_VOICE_CLASS, WwanRef_13e9339b-e11b-416b-8335-51c950049c6e.xml, *PWWAN_VOICE_CLASS, wwan/WwanVoiceClassSeparateVoiceData, wwan/WwanVoiceClassUnknown, wwan/WwanVoiceClassMax, netvista.wwan_voice_class, WwanVoiceClassMax, WwanVoiceClassSimultaneousVoiceData, WWAN_VOICE_CLASS enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -88,9 +88,7 @@ typedef enum _WWAN_VOICE_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

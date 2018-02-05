@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6c04c3ae-bca4-4235-a76a-2cfd1fbe4db7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortWriteRegisterBufferUchar, storage.scsiportwriteregisterbufferuchar, scsiprt_260290c1-818a-49dd-9705-ea79984fa0af.xml, srb/ScsiPortWriteRegisterBufferUchar, ScsiPortWriteRegisterBufferUchar routine [Storage Devices]
+ms.keywords : scsiprt_260290c1-818a-49dd-9705-ea79984fa0af.xml, ScsiPortWriteRegisterBufferUchar routine [Storage Devices], ScsiPortWriteRegisterBufferUchar, srb/ScsiPortWriteRegisterBufferUchar, storage.scsiportwriteregisterbufferuchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -77,14 +77,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

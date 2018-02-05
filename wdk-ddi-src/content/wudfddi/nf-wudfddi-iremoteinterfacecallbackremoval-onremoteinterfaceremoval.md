@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0dfa2eb8-a7f6-46d9-9599-5e2aaf583f78
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OnRemoteInterfaceRemoval, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, IRemoteInterfaceCallbackRemoval, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, OnRemoteInterfaceRemoval method
+ms.keywords : OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -75,20 +75,17 @@ For more information about a driver's <b>OnRemoteInterfaceRemoval</b> event call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
+
+<a href="..\wudfddi\nn-wudfddi-iremoteinterfacecallbackremoval.md">IRemoteInterfaceCallbackRemoval</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556889">IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent</a>
 

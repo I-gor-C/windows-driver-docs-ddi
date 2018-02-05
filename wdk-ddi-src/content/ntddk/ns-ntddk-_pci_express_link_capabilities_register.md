@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : d49d1deb-cb98-4dc0-9ec5-7015b765c9e4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI.pci_express_link_capabilities_register, pci_struct_22681134-04dc-4d7c-86a0-3d92c21ef8b3.xml, PCI_EXPRESS_LINK_CAPABILITIES_REGISTER, PCI_EXPRESS_LINK_CAPABILITIES_REGISTER union [Buses], ntddk/PCI_EXPRESS_LINK_CAPABILITIES_REGISTER, ntddk/PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER, PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER, _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER, PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER union pointer [Buses], *PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER
+ms.keywords : PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER, pci_struct_22681134-04dc-4d7c-86a0-3d92c21ef8b3.xml, ntddk/PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER, PCI.pci_express_link_capabilities_register, *PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER, PCI_EXPRESS_LINK_CAPABILITIES_REGISTER, _PCI_EXPRESS_LINK_CAPABILITIES_REGISTER, PCI_EXPRESS_LINK_CAPABILITIES_REGISTER union [Buses], PPCI_EXPRESS_LINK_CAPABILITIES_REGISTER union pointer [Buses], ntddk/PCI_EXPRESS_LINK_CAPABILITIES_REGISTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,6 @@ A PCI_EXPRESS_LINK_CAPABILITIES_REGISTER structure is contained in the <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fb7d97d2-8c02-44c8-8cf5-e9c3b3b718bb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsFlushToLsn routine [Kernel-Mode Driver Architecture], wdm/ClfsFlushToLsn, kernel.clfsflushtolsn, Clfs_80676b51-aa14-42bf-92ae-d11cf0a694b5.xml, ClfsFlushToLsn
+ms.keywords : ClfsFlushToLsn routine [Kernel-Mode Driver Architecture], wdm/ClfsFlushToLsn, ClfsFlushToLsn, kernel.clfsflushtolsn, Clfs_80676b51-aa14-42bf-92ae-d11cf0a694b5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

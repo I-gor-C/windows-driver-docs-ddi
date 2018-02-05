@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : CD8427DB-256C-4C34-8D14-2C1AD4C297ED
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, *PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, windot11/PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, netvista.dot11_go_negotiation_confirmation_send_complete_parameters, windot11/DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, _DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS
+ms.keywords : PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, windot11/DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, windot11/PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, _DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, netvista.dot11_go_negotiation_confirmation_send_complete_parameters, PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, *PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS
+req.typenames : "*PDOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_CONFIRMATION_SEND_COMPLETE_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -103,7 +103,4 @@ The offset, in bytes,  of the array of additional information elements (IEs) whi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | windot11.h |

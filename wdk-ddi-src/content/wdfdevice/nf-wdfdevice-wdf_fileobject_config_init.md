@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 87ad817a-4a62-4061-949c-fe45bdfb44d5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WDF_FILEOBJECT_CONFIG_INIT, WDF_FILEOBJECT_CONFIG_INIT, WDF_FILEOBJECT_CONFIG_INIT function, kmdf.wdf_fileobject_config_init, DFDeviceObjectGeneralRef_ad75f4c0-79f7-42d6-8798-947cdcbfd8f1.xml, wdf.wdf_fileobject_config_init
+ms.keywords : kmdf.wdf_fileobject_config_init, WDF_FILEOBJECT_CONFIG_INIT function, DFDeviceObjectGeneralRef_ad75f4c0-79f7-42d6-8798-947cdcbfd8f1.xml, wdfdevice/WDF_FILEOBJECT_CONFIG_INIT, wdf.wdf_fileobject_config_init, WDF_FILEOBJECT_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,9 @@ The <b>WDF_FILEOBJECT_CONFIG_INIT</b> function sets the specified <a href="..\wd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

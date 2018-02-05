@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 46f39e36-8915-4ccf-97ef-45dbacdfbe0a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winddiui/DrvDevicePropertySheets, DrvDevicePropertySheets, print.drvdevicepropertysheets, DrvDevicePropertySheets function [Print Devices], print_interface-graphics_f7a16b0a-c0f3-48c8-83a0-ce44a80ff546.xml
+ms.keywords : DrvDevicePropertySheets, DrvDevicePropertySheets function [Print Devices], winddiui/DrvDevicePropertySheets, print_interface-graphics_f7a16b0a-c0f3-48c8-83a0-ce44a80ff546.xml, print.drvdevicepropertysheets
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -106,20 +106,15 @@ Printer device settings should be stored in the registry. If a user with adminis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a>
+
+<a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>
 
  
 

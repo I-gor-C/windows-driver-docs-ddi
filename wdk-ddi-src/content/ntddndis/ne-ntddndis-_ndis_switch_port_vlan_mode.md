@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 87828768-BE97-4549-AC5B-7CB27D0A9720
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_SWITCH_PORT_VLAN_MODE, NdisSwitchPortVlanModeUnknown, NdisSwitchPortVlanModeAccess, ntddndis/PNDIS_SWITCH_PORT_VLAN_MODE, PNDIS_SWITCH_PORT_VLAN_MODE, ntddndis/NdisSwitchPortVlanModeMax, ntddndis/NDIS_SWITCH_PORT_VLAN_MODE, ntddndis/NdisSwitchPortVlanModePrivate, NDIS_SWITCH_PORT_VLAN_MODE enumeration [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PORT_VLAN_MODE, netvista.ndis_switch_port_vlan_mode, ntddndis/NdisSwitchPortVlanModeAccess, ntddndis/NdisSwitchPortVlanModeTrunk, ntddndis/NdisSwitchPortVlanModeUnknown, NdisSwitchPortVlanModePrivate, NdisSwitchPortVlanModeMax, PNDIS_SWITCH_PORT_VLAN_MODE enumeration pointer [Network Drivers Starting with Windows Vista], NDIS_SWITCH_PORT_VLAN_MODE, NdisSwitchPortVlanModeTrunk"
+ms.keywords : ntddndis/NdisSwitchPortVlanModeMax, ntddndis/NdisSwitchPortVlanModePrivate, netvista.ndis_switch_port_vlan_mode, NDIS_SWITCH_PORT_VLAN_MODE, NdisSwitchPortVlanModeUnknown, ntddndis/NdisSwitchPortVlanModeUnknown, NdisSwitchPortVlanModeTrunk, _NDIS_SWITCH_PORT_VLAN_MODE, ntddndis/PNDIS_SWITCH_PORT_VLAN_MODE, NDIS_SWITCH_PORT_VLAN_MODE enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisSwitchPortVlanModeAccess, ntddndis/NdisSwitchPortVlanModeTrunk, NdisSwitchPortVlanModePrivate, ntddndis/NDIS_SWITCH_PORT_VLAN_MODE, NdisSwitchPortVlanModeMax, PNDIS_SWITCH_PORT_VLAN_MODE enumeration pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_VLAN_MODE, NdisSwitchPortVlanModeAccess, *PNDIS_SWITCH_PORT_VLAN_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SWITCH_PORT_VLAN_MODE, *PNDIS_SWITCH_PORT_VLAN_MODE
+req.typenames : "*PNDIS_SWITCH_PORT_VLAN_MODE, NDIS_SWITCH_PORT_VLAN_MODE"
 ---
 
 # _NDIS_SWITCH_PORT_VLAN_MODE Enumeration
@@ -93,16 +93,14 @@ For more information about extensible switch port policies, see <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
-
 <a href="..\ndis\ns-ndis-_ndis_switch_forwarding_destination_array.md">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
 
 <b></b>
 

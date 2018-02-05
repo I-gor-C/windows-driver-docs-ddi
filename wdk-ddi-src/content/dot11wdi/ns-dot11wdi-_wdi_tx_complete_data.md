@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bf7951de-3368-4faf-9bae-272c6d76d1a0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWDI_TX_COMPLETE_DATA structure pointer [Network Drivers Starting with Windows Vista], netvista.wdi_tx_complete_data, *PWDI_TX_COMPLETE_DATA, netvista.wifi_tx_complete_data, WDI_TX_COMPLETE_DATA structure [Network Drivers Starting with Windows Vista], dot11wdi/WDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA, PWDI_TX_COMPLETE_DATA, _WDI_TX_COMPLETE_DATA, dot11wdi/PWDI_TX_COMPLETE_DATA
+ms.keywords : "_WDI_TX_COMPLETE_DATA, PWDI_TX_COMPLETE_DATA structure pointer [Network Drivers Starting with Windows Vista], *PWDI_TX_COMPLETE_DATA, dot11wdi/PWDI_TX_COMPLETE_DATA, dot11wdi/WDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA structure [Network Drivers Starting with Windows Vista], netvista.wifi_tx_complete_data, WDI_TX_COMPLETE_DATA, PWDI_TX_COMPLETE_DATA, netvista.wdi_tx_complete_data"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA"
+req.typenames : WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA
 ---
 
 # _WDI_TX_COMPLETE_DATA structure
@@ -89,7 +89,5 @@ This member is reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |

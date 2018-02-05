@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2bbf85ee-8541-4d3d-87e5-0633bc35670b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFreeFragmentNetBufferList, ndis_netbuf_functions_ref_e88011a7-4c83-4736-8a3f-3a2d1c3b2e6f.xml, NdisFreeFragmentNetBufferList function [Network Drivers Starting with Windows Vista], NdisFreeFragmentNetBufferList, netvista.ndisfreefragmentnetbufferlist
+ms.keywords : NdisFreeFragmentNetBufferList, ndis_netbuf_functions_ref_e88011a7-4c83-4736-8a3f-3a2d1c3b2e6f.xml, ndis/NdisFreeFragmentNetBufferList, netvista.ndisfreefragmentnetbufferlist, NdisFreeFragmentNetBufferList function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -45,8 +45,8 @@ Call the
   <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure and all associated 
   <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures and MDL chains that were
   previously allocated by the calling 
-  <mshelp:link keywords="netvista.ndisallocatefragmentnetbufferlist" tabindex="0"><b>
-  NdisAllocateFragmentNetBufferList</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndisallocatefragmentnetbufferlist.md">
+  NdisAllocateFragmentNetBufferList</a> function.
 
 ## Syntax
 
@@ -86,23 +86,21 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatefragmentnetbufferlist" tabindex="0"><b>
-   NdisAllocateFragmentNetBufferList</b></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nf-ndis-ndisallocatefragmentnetbufferlist.md">
+   NdisAllocateFragmentNetBufferList</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

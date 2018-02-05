@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 11CDA6DA-6B26-41BC-8F0B-2F18FC03B3C2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxFdoInit, UfxFdoInit method [Buses], buses.ufxfdoinit, UfxFdoInit
+ms.keywords : UfxFdoInit, UfxFdoInit method [Buses], buses.ufxfdoinit, ufxclient/UfxFdoInit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -136,11 +136,8 @@ Return Value:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

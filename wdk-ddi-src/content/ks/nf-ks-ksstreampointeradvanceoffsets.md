@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0377371b-b755-4473-a449-9a85e1ca456c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksstreampointeradvanceoffsets, KsStreamPointerAdvanceOffsets, KsStreamPointerAdvanceOffsets function [Streaming Media Devices], avfunc_31a73e93-c2b5-4867-9bb1-40090d0ea07e.xml, ks/KsStreamPointerAdvanceOffsets
+ms.keywords : KsStreamPointerAdvanceOffsets function [Streaming Media Devices], stream.ksstreampointeradvanceoffsets, ks/KsStreamPointerAdvanceOffsets, KsStreamPointerAdvanceOffsets, avfunc_31a73e93-c2b5-4867-9bb1-40090d0ea07e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,24 +91,21 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 
 <a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
 
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 
-<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 
  
 

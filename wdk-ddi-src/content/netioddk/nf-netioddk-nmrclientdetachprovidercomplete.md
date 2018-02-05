@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e54864de-9558-44b1-9c5a-0f2ecc6516b1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NmrClientDetachProviderComplete function [Network Drivers Starting with Windows Vista], nmrref_7fb0e7ef-62a3-4dc4-a0e2-b38005056317.xml, netvista.nmrclientdetachprovidercomplete, netioddk/NmrClientDetachProviderComplete, NmrClientDetachProviderComplete
+ms.keywords : netvista.nmrclientdetachprovidercomplete, netioddk/NmrClientDetachProviderComplete, NmrClientDetachProviderComplete, nmrref_7fb0e7ef-62a3-4dc4-a0e2-b38005056317.xml, NmrClientDetachProviderComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,20 +82,17 @@ A client module should not call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
-
 <a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
+
+<a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
 
  
 

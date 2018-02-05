@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 68753690-A6DC-46BE-9981-F395B98C3245
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxRegisterPluginEx routine [Kernel-Mode Driver Architecture], pepfx/PoFxRegisterPluginEx, PoFxRegisterPluginEx, kernel.pofxregisterpluginex
+ms.keywords : PoFxRegisterPluginEx, PoFxRegisterPluginEx routine [Kernel-Mode Driver Architecture], kernel.pofxregisterpluginex, pepfx/PoFxRegisterPluginEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
+req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 
@@ -133,14 +133,11 @@ The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Target Platform** | Windows |
 | **Header** | pepfx.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

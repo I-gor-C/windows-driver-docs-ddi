@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B68FD95B-E7B8-4748-A1D0-09A1F9763626
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA structure [Buses], UDECX_USB_ENDPOINT_INIT_AND_METADATA, PUDECX_USB_ENDPOINT_INIT_AND_METADATA structure pointer [Buses], udecxusbdevice/PUDECX_USB_ENDPOINT_INIT_AND_METADATA, _UDECX_USB_ENDPOINT_INIT_AND_METADATA, buses.udecx_usb_endpoint_init_and_metadata, *PUDECX_USB_ENDPOINT_INIT_AND_METADATA, udecxusbdevice/UDECX_USB_ENDPOINT_INIT_AND_METADATA
+ms.keywords : UDECX_USB_ENDPOINT_INIT_AND_METADATA structure [Buses], udecxusbdevice/PUDECX_USB_ENDPOINT_INIT_AND_METADATA, udecxusbdevice/UDECX_USB_ENDPOINT_INIT_AND_METADATA, PUDECX_USB_ENDPOINT_INIT_AND_METADATA, buses.udecx_usb_endpoint_init_and_metadata, UDECX_USB_ENDPOINT_INIT_AND_METADATA, PUDECX_USB_ENDPOINT_INIT_AND_METADATA structure pointer [Buses], *PUDECX_USB_ENDPOINT_INIT_AND_METADATA, _UDECX_USB_ENDPOINT_INIT_AND_METADATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,9 +75,6 @@ A pointer to a <b>UDECXUSBDEVICE_INIT</b> structure that contains initialization
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
 ## See Also

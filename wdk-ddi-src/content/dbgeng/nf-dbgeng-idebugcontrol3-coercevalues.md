@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d5374177-fddd-4f35-8cad-10be762ef4d8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], CoerceValues method, dbgeng/IDebugControl2::CoerceValues, IDebugControl3, CoerceValues method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::CoerceValues, CoerceValues, dbgeng/IDebugControl::CoerceValues, IDebugControl3 interface [Windows Debugging], CoerceValues method, IDebugControl2 interface [Windows Debugging], CoerceValues method, CoerceValues method [Windows Debugging], IDebugControl interface, IDebugControl2::CoerceValues, IDebugControl::CoerceValues, IDebugControl3::CoerceValues, IDebugControl_a17ec845-aaf3-4480-a0fd-79fb515c48d5.xml, debugger.coercevalues, CoerceValues method [Windows Debugging], IDebugControl2 interface, CoerceValues method [Windows Debugging]
+ms.keywords : IDebugControl3 interface [Windows Debugging], CoerceValues method, IDebugControl interface [Windows Debugging], CoerceValues method, debugger.coercevalues, CoerceValues, IDebugControl2::CoerceValues, IDebugControl3, CoerceValues method [Windows Debugging], IDebugControl2 interface, CoerceValues method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], CoerceValues method, dbgeng/IDebugControl2::CoerceValues, IDebugControl3::CoerceValues, IDebugControl_a17ec845-aaf3-4480-a0fd-79fb515c48d5.xml, IDebugControl::CoerceValues, dbgeng/IDebugControl3::CoerceValues, CoerceValues method [Windows Debugging], IDebugControl3 interface, CoerceValues method [Windows Debugging], dbgeng/IDebugControl::CoerceValues
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,26 +101,21 @@ This method converts an array of values of one type into values of another type.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\ns-dbgeng-_debug_value.md">DEBUG_VALUE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539158">CoerceValue</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539158">CoerceValue</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="..\dbgeng\ns-dbgeng-_debug_value.md">DEBUG_VALUE</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 50661fc9-2f1f-4c9a-bc15-1cdf7c1f6d01
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PDOT11_BSS_ENTRY, windot11/PDOT11_BSS_ENTRY, PDOT11_BSS_ENTRY, DOT11_BSS_ENTRY structure [Network Drivers Starting with Windows Vista], netvista.dot11_bss_entry, DOT11_BSS_ENTRY, windot11/DOT11_BSS_ENTRY, Native_802.11_data_types_f884f12d-d267-4ae3-b632-6c318b515880.xml, PDOT11_BSS_ENTRY structure pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : windot11/PDOT11_BSS_ENTRY, netvista.dot11_bss_entry, DOT11_BSS_ENTRY structure [Network Drivers Starting with Windows Vista], PDOT11_BSS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_BSS_ENTRY, PDOT11_BSS_ENTRY, DOT11_BSS_ENTRY, Native_802.11_data_types_f884f12d-d267-4ae3-b632-6c318b515880.xml, *PDOT11_BSS_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_BSS_ENTRY, DOT11_BSS_ENTRY"
+req.typenames : DOT11_BSS_ENTRY, *PDOT11_BSS_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -75,8 +75,8 @@ This member specifies whether the AP or peer station is operating within the reg
 <li>
 If the 802.11 station does not support multiple regulatory domains, set the member to <b>TRUE</b>. For
        more information about multiple regulatory domains, see 
-       <mshelp:link keywords="netvista.oid_dot11_multi_domain_capability_implemented" tabindex="0">
-       OID_DOT11_MULTI_DOMAIN_CAPABILITY_IMPLEMENTED</mshelp:link>.
+       <a href="https://msdn.microsoft.com/en-us/library/ms893670.aspx">
+       OID_DOT11_MULTI_DOMAIN_CAPABILITY_IMPLEMENTED</a>.
 
 </li>
 <li>
@@ -135,8 +135,8 @@ The received signal strength indicator (RSSI) value, in units of decibels refere
 The attributes of the PHY referenced by the 
      <b>uPhyId</b> member. 
      <b>PhySpecificInfo</b> is formatted as a 
-     <mshelp:link keywords="netvista.dot11_bss_entry_phy_specific_info" tabindex="0"><b>
-     DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</b></mshelp:link> union.
+     <a href="..\windot11\ns-windot11-dot11_bss_entry_phy_specific_info.md">
+     DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</a> union.
 
 `uBufferLength`
 
@@ -196,8 +196,8 @@ The value of the Capability Information field from the 802.11 Beacon or Probe Re
 ## Remarks
 When the 802.11 station performs a scan operation, the Native 802.11 miniport driver caches the
     received 802.11 Beacon and Probe Response frames. For more information about the scan operation, see 
-    <mshelp:link keywords="netvista.native_802_11_scan_operations" tabindex="0">Native 802.11 Scan
-    Operations</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-scan-operations">Native 802.11 Scan
+    Operations</a>.
 
 After the 802.11 station completes the scan operation, the miniport driver returns the list of the
     cached Beacon and Probe Response frames when queried by 
@@ -207,28 +207,26 @@ After the 802.11 station completes the scan operation, the miniport driver retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
+<a href="https://msdn.microsoft.com/en-us/library/ms893670.aspx">
+   OID_DOT11_MULTI_DOMAIN_CAPABILITY_IMPLEMENTED</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569360">OID_DOT11_ENUM_BSS_LIST</a>
+<a href="..\windot11\ns-windot11-dot11_bss_entry_phy_specific_info.md">
+   DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</a>
+
+<a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>
+
+<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 
 <a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
 
-<mshelp:link keywords="netvista.dot11_bss_entry_phy_specific_info" tabindex="0"><b>
-   DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</b></mshelp:link>
-
-<mshelp:link keywords="netvista.oid_dot11_multi_domain_capability_implemented" tabindex="0">
-   OID_DOT11_MULTI_DOMAIN_CAPABILITY_IMPLEMENTED</mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569360">OID_DOT11_ENUM_BSS_LIST</a>
 
 <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a>
 

@@ -73,11 +73,6 @@ The size in bytes of the state size.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

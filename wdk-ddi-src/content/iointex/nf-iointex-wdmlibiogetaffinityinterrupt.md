@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E9E80EB4-C20B-4025-957B-32DC6FAE7F38
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetAffinityInterrupt, WdmlibIoGetAffinityInterrupt, kernel.wdmlibiogetaffinityinterrupt, WdmlibIoGetAffinityInterrupt function [Kernel-Mode Driver Architecture], iointex/WdmlibIoGetAffinityInterrupt, iointex/IoGetAffinityInterrupt
+ms.keywords : WdmlibIoGetAffinityInterrupt function [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, iointex/IoGetAffinityInterrupt, kernel.wdmlibiogetaffinityinterrupt, IoGetAffinityInterrupt, iointex/WdmlibIoGetAffinityInterrupt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,26 +94,24 @@ In Windows 7, <a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">Wdml
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Windows |
 | **Header** | iointex.h (include Iointex.h, Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a>
 
 <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550874">IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a>
 
-<a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a>
-
 <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554237">KINTERRUPT</a>
+<a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5868dd01-17ba-4edf-b665-c90d2b1aa2ba
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFWORKITEMFLUSH, wdfworkitem/WdfWorkItemFlush, DFWorkItemObjectRef_620a50e7-1995-4806-b71a-932f7fc7c35a.xml, kmdf.wdfworkitemflush, WdfWorkItemFlush, WdfWorkItemFlush method, wdf.wdfworkitemflush
+ms.keywords : kmdf.wdfworkitemflush, PFN_WDFWORKITEMFLUSH, wdfworkitem/WdfWorkItemFlush, WdfWorkItemFlush, WdfWorkItemFlush method, wdf.wdfworkitemflush, DFWorkItemObjectRef_620a50e7-1995-4806-b71a-932f7fc7c35a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,12 +77,11 @@ For more information about work items, see <a href="https://docs.microsoft.com/e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfworkitem.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

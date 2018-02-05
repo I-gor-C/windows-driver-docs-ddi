@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 3998eed5-398e-4835-b917-54f5ae814ddf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RouterFreeBidiResponseContainer function [Print Devices], print.routerfreebidiresponsecontainer, spoolfnc_065c8a3a-5790-45f5-bf79-3af94fdd0571.xml, winsplp/RouterFreeBidiResponseContainer, RouterFreeBidiResponseContainer
+ms.keywords : spoolfnc_065c8a3a-5790-45f5-bf79-3af94fdd0571.xml, print.routerfreebidiresponsecontainer, RouterFreeBidiResponseContainer function [Print Devices], RouterFreeBidiResponseContainer, winsplp/RouterFreeBidiResponseContainer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,11 @@ Pointer to the BIDI_RESPONSE_CONTAINER structure to be freed.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This function is available in Windows XP and later operating systems. This function is available in Windows XP and later operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | WinSpool.lib |
+| **DLL** | WinSpool.drv |
 
 ## See Also
 

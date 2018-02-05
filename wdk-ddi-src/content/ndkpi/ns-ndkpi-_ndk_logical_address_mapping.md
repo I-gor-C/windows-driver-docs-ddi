@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7FB34813-5F89-4B9C-9594-B23E7D4736C6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDK_LOGICAL_ADDRESS_MAPPING, NDK_LOGICAL_ADDRESS_MAPPING structure [Network Drivers Starting with Windows Vista], _NDK_LOGICAL_ADDRESS_MAPPING, PNDK_LOGICAL_ADDRESS_MAPPING, ndkpi/NDK_LOGICAL_ADDRESS_MAPPING, PNDK_LOGICAL_ADDRESS_MAPPING structure pointer [Network Drivers Starting with Windows Vista], ndkpi/PNDK_LOGICAL_ADDRESS_MAPPING, netvista.ndk_logical_address_mapping
+ms.keywords : NDK_LOGICAL_ADDRESS_MAPPING structure [Network Drivers Starting with Windows Vista], NDK_LOGICAL_ADDRESS_MAPPING, ndkpi/NDK_LOGICAL_ADDRESS_MAPPING, PNDK_LOGICAL_ADDRESS_MAPPING, PNDK_LOGICAL_ADDRESS_MAPPING structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_logical_address_mapping, ndkpi/PNDK_LOGICAL_ADDRESS_MAPPING, _NDK_LOGICAL_ADDRESS_MAPPING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,9 +73,7 @@ The number of entries in the array that is specified in the  <b>AdapterPageArray
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 71e219ff-3ed7-4eb1-bcd7-749b947a9aef
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_TYPE_NAME_POINTER_TYPE, WDF_TYPE_NAME_POINTER_TYPE macro, kmdf.wdf_type_name_pointer_type, wdf.wdf_type_name_pointer_type, wdfobject/WDF_TYPE_NAME_POINTER_TYPE, DFGenObjectRef_07b4c582-4483-4faa-862c-4b92d075289d.xml
+ms.keywords : kmdf.wdf_type_name_pointer_type, wdf.wdf_type_name_pointer_type, wdfobject/WDF_TYPE_NAME_POINTER_TYPE, DFGenObjectRef_07b4c582-4483-4faa-862c-4b92d075289d.xml, WDF_TYPE_NAME_POINTER_TYPE macro, WDF_TYPE_NAME_POINTER_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -66,11 +66,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wdfobject.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |

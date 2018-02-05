@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7932A2BB-DD6D-4DF7-BDF9-4E476B06B0B5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL, netvista.wifi_p2p_go_internal_reset_policy, WDI_P2P_GO_INTERNAL_RESET_POLICY enumeration [Device and Driver Installation], wditypes/WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL, WDI_P2P_GO_INTERNAL_RESET_POLICY, netvista.wdi_p2p_go_internal_reset_policy, WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION, _WDI_P2P_GO_INTERNAL_RESET_POLICY, wditypes/WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION, wditypes/WDI_P2P_GO_INTERNAL_RESET_POLICY
+ms.keywords : WDI_P2P_GO_INTERNAL_RESET_POLICY enumeration [Device and Driver Installation], WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL, WDI_P2P_GO_INTERNAL_RESET_POLICY, _WDI_P2P_GO_INTERNAL_RESET_POLICY, wditypes/WDI_P2P_GO_INTERNAL_RESET_POLICY_USE_LAST_CHANNEL, netvista.wdi_p2p_go_internal_reset_policy, WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION, wditypes/WDI_P2P_GO_INTERNAL_RESET_POLICY_ALLOW_CHANNEL_OPTIMIZATION, wditypes/WDI_P2P_GO_INTERNAL_RESET_POLICY, netvista.wifi_p2p_go_internal_reset_policy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum _WDI_P2P_GO_INTERNAL_RESET_POLICY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

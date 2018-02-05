@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : af697ccd-a748-45f8-97bb-fe595d81b693
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxptrackreference, rxref_12b9266b-6cd9-4011-b764-b62376e0a5fb.xml, fcb/RxpTrackReference, RxpTrackReference function [Installable File System Drivers], RxpTrackReference
+ms.keywords : rxref_12b9266b-6cd9-4011-b764-b62376e0a5fb.xml, RxpTrackReference function [Installable File System Drivers], fcb/RxpTrackReference, ifsk.rxptrackreference, RxpTrackReference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,19 +62,9 @@ The value that determines which reference request type is tracked. This value ca
 
 
 
-#### RDBSS_REF_TRACK_SRVCALL
+#### RDBSS_REF_TRACK_NETFCB
 
-A reference request on a SRV_CALL structure.
-
-
-#### RDBSS_REF_TRACK_NETROOT
-
-A reference request on a NET_ROOT structure.
-
-
-#### RDBSS_REF_TRACK_VNETROOT
-
-A reference request on a V_NET_ROOT structure.
+A reference request on an FCB structure.
 
 
 #### RDBSS_REF_TRACK_NETFOBX
@@ -82,14 +72,24 @@ A reference request on a V_NET_ROOT structure.
 A reference request on an FOBX structure.
 
 
-#### RDBSS_REF_TRACK_NETFCB
+#### RDBSS_REF_TRACK_NETROOT
 
-A reference request on an FCB structure.
+A reference request on a NET_ROOT structure.
+
+
+#### RDBSS_REF_TRACK_SRVCALL
+
+A reference request on a SRV_CALL structure.
 
 
 #### RDBSS_REF_TRACK_SRVOPEN
 
 A reference request on a SRV_OPEN structure.
+
+
+#### RDBSS_REF_TRACK_VNETROOT
+
+A reference request on a V_NET_ROOT structure.
 
 `FileName`
 
@@ -123,26 +123,22 @@ For retail builds, this function does nothing.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | fcb.h (include Fcb.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554385">RxDbgBreakPoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
 
-<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554385">RxDbgBreakPoint</a>
 
 <a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553384">RxAssert</a>
+<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 

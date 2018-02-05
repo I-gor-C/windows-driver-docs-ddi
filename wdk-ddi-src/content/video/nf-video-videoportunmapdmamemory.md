@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3d05263-5e6b-4875-afff-1166928778db
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportunmapdmamemory, video/VideoPortUnmapDmaMemory, VideoPortUnmapDmaMemory, VideoPort_Functions_f2162fff-c7a8-4dde-aa17-94377f0cf716.xml, VideoPortUnmapDmaMemory function [Display Devices]
+ms.keywords : VideoPortUnmapDmaMemory, VideoPortUnmapDmaMemory function [Display Devices], video/VideoPortUnmapDmaMemory, VideoPort_Functions_f2162fff-c7a8-4dde-aa17-94377f0cf716.xml, display.videoportunmapdmamemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,8 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |

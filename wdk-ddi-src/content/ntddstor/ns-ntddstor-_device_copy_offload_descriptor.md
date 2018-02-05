@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 192684D1-3D01-4EAA-989F-2E21E7187B3B
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DEVICE_COPY_OFFLOAD_DESCRIPTOR, ntddstor/DEVICE_COPY_OFFLOAD_DESCRIPTOR, *PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR structure [Storage Devices], PDEVICE_COPY_OFFLOAD_DESCRIPTOR, ntddstor/PDEVICE_COPY_OFFLOAD_DESCRIPTOR, storage.device_copy_offload_descriptor, PDEVICE_COPY_OFFLOAD_DESCRIPTOR structure pointer [Storage Devices], _DEVICE_COPY_OFFLOAD_DESCRIPTOR
+ms.keywords : "*PDEVICE_COPY_OFFLOAD_DESCRIPTOR, ntddstor/PDEVICE_COPY_OFFLOAD_DESCRIPTOR, PDEVICE_COPY_OFFLOAD_DESCRIPTOR structure pointer [Storage Devices], PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR, storage.device_copy_offload_descriptor, DEVICE_COPY_OFFLOAD_DESCRIPTOR structure [Storage Devices], ntddstor/DEVICE_COPY_OFFLOAD_DESCRIPTOR, _DEVICE_COPY_OFFLOAD_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -113,9 +113,7 @@ Contains the size of this structure, in bytes. The value of this member will cha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

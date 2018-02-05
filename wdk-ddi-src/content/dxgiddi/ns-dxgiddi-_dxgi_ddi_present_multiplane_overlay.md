@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 18811f98-df57-43ab-b8f7-26301abeb823
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, display.dxgi_ddi_present_multiplane_overlay, DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY structure [Display Devices], _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
+ms.keywords : DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY structure [Display Devices], DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, dxgiddi/DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, display.dxgi_ddi_present_multiplane_overlay, _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,7 @@ The zero-based index into the resource, which is specified by the handle in the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

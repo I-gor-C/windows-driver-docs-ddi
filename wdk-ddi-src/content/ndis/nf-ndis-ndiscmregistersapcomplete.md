@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0419bbf5-02aa-482f-9e2c-a435302751c4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmRegisterSapComplete, NdisCmRegisterSapComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmRegisterSapComplete, condis_call_manager_ref_1f862b68-070b-40d3-8edd-3830195af73c.xml, netvista.ndiscmregistersapcomplete
+ms.keywords : netvista.ndiscmregistersapcomplete, ndis/NdisCmRegisterSapComplete, NdisCmRegisterSapComplete, condis_call_manager_ref_1f862b68-070b-40d3-8edd-3830195af73c.xml, NdisCmRegisterSapComplete function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,8 +64,8 @@ Specifies the final status of the client's original request to register the SAP,
 
 Specifies the NDIS-supplied handle to the SAP if the registration is successful. The call manager
      obtained this handle as an input parameter to its 
-     <mshelp:link keywords="netvista.protocolcmregistersap" tabindex="0"><i>
-     ProtocolCmRegisterSap</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
+     ProtocolCmRegisterSap</a> function.
 
 `CallMgrSapContext`
 
@@ -87,8 +87,8 @@ A stand-alone call manager must call
     returned NDIS_STATUS_PENDING when it was called with the given 
     <i>NdisSapHandle</i> . The call to 
     <b>NdisCmRegisterSapComplete</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclregistersapcomplete" tabindex="0"><i>
-    ProtocolClRegisterSapComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
+    ProtocolClRegisterSapComplete</a> function.
 
 If the call manager sets 
     <i>Status</i> to anything other than NDIS_STATUS_SUCCESS, it should consider the 
@@ -106,12 +106,10 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmRegisterSapComplete (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
@@ -119,15 +117,15 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 
 <a href="..\ndis\nf-ndis-ndismcmregistersapcomplete.md">NdisMCmRegisterSapComplete</a>
 
-<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
-
-<mshelp:link keywords="netvista.protocolclregistersapcomplete" tabindex="0"><i>
-   ProtocolClRegisterSapComplete</i></mshelp:link>
-
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
+   ProtocolClRegisterSapComplete</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
+
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
 
  
 

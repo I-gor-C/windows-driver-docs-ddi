@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6b20db9e-807d-40f5-844f-f9726e3a854f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.obdereferenceobjectdeferdelete, wdm/ObDereferenceObjectDeferDelete, k107_d20a8bd1-feff-4c48-8c6f-ccf8a119281b.xml, ObDereferenceObjectDeferDelete, ObDereferenceObjectDeferDelete routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/ObDereferenceObjectDeferDelete, kernel.obdereferenceobjectdeferdelete, ObDereferenceObjectDeferDelete routine [Kernel-Mode Driver Architecture], ObDereferenceObjectDeferDelete, k107_d20a8bd1-feff-4c48-8c6f-ccf8a119281b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ To avoid such deadlocks, use <b>ObDereferenceObjectDeferDelete</b> instead of <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows operating systems. Available in Windows Vista and later versions of Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Fltkernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

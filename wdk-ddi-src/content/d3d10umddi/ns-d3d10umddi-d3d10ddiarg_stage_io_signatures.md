@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9639bdc8-9b2f-4911-8a09-d5cf16204cf4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_877fde5f-64e9-455a-b7ed-453e4b6a9e15.xml, d3d10umddi/D3D10DDIARG_STAGE_IO_SIGNATURES, display.d3d10ddiarg_stage_io_signatures, D3D10DDIARG_STAGE_IO_SIGNATURES structure [Display Devices], D3D10DDIARG_STAGE_IO_SIGNATURES
+ms.keywords : UMDisplayDriver_Dx10param_Structs_877fde5f-64e9-455a-b7ed-453e4b6a9e15.xml, display.d3d10ddiarg_stage_io_signatures, d3d10umddi/D3D10DDIARG_STAGE_IO_SIGNATURES, D3D10DDIARG_STAGE_IO_SIGNATURES structure [Display Devices], D3D10DDIARG_STAGE_IO_SIGNATURES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,7 @@ The declarations within the shader code itself also show which registers are act
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

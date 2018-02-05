@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 337E5450-8C90-48B7-B344-FB9420498D4F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlGetSectorSizeInformation, FsRtlGetSectorSizeInformation routine [Installable File System Drivers], ntifs/FsRtlGetSectorSizeInformation, ifsk.fsrtlgetsectorsizeinformation
+ms.keywords : ifsk.fsrtlgetsectorsizeinformation, FsRtlGetSectorSizeInformation routine [Installable File System Drivers], FsRtlGetSectorSizeInformation, ntifs/FsRtlGetSectorSizeInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,24 +92,22 @@ Drivers other than file system drivers, can query sector size information using 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 
 <a href="..\ntddk\ns-ntddk-_file_fs_sector_size_information.md">FILE_FS_SECTOR_SIZE_INFORMATION</a>
 
 <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 
  
 

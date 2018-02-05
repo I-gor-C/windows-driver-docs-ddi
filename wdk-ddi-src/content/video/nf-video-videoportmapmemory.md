@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c1b54ef4-93b5-41df-8a49-8b00cbd4bcee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_53fef559-5fbb-4e9a-9152-b44be67bd63c.xml, video/VideoPortMapMemory, display.videoportmapmemory, VideoPortMapMemory function [Display Devices], VideoPortMapMemory
+ms.keywords : video/VideoPortMapMemory, VideoPort_Functions_53fef559-5fbb-4e9a-9152-b44be67bd63c.xml, display.videoportmapmemory, VideoPortMapMemory, VideoPortMapMemory function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -218,20 +218,18 @@ if(NT_SUCCESS(ntStatus))
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
-
 <a href="..\video\nf-video-videoportunmapmemory.md">VideoPortUnmapMemory</a>
+
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
 
 <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : EE59767B-2504-4E5F-A442-60EEBEE70B59
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTORAGE_DEVICE_FORM_FACTOR enumeration pointer [Storage Devices], FormFactorUnknown, FormFactor1_8, ntddstor/FormFactormSata, FormFactorMemoryCard, FormFactorEmbedded, ntddstor/FormFactor2_5, ntddstor/FormFactorUnknown, ntddstor/FormFactorEmbedded, STORAGE_DEVICE_FORM_FACTOR enumeration [Storage Devices], FormFactor2_5, ntddstor/FormFactorPCIeBoard, FormFactorM_2, PSTORAGE_DEVICE_FORM_FACTOR, STORAGE_DEVICE_FORM_FACTOR, ntddstor/FormFactorM_2, FormFactor1_8Less, FormFactormSata, ntddstor/FormFactor1_8, FormFactorPCIeBoard, _STORAGE_DEVICE_FORM_FACTOR, FormFactor3_5, ntddstor/FormFactor1_8Less, ntddstor/FormFactor3_5, ntddstor/PSTORAGE_DEVICE_FORM_FACTOR, storage.storage_device_form_factor, ntddstor/FormFactorDimm, ntddstor/STORAGE_DEVICE_FORM_FACTOR, ntddstor/FormFactorMemoryCard, *PSTORAGE_DEVICE_FORM_FACTOR, FormFactorDimm
+ms.keywords : FormFactorUnknown, ntddstor/FormFactorMemoryCard, FormFactor2_5, STORAGE_DEVICE_FORM_FACTOR enumeration [Storage Devices], ntddstor/FormFactorM_2, PSTORAGE_DEVICE_FORM_FACTOR enumeration pointer [Storage Devices], FormFactorDimm, ntddstor/PSTORAGE_DEVICE_FORM_FACTOR, FormFactormSata, FormFactorMemoryCard, ntddstor/FormFactorEmbedded, FormFactor1_8, ntddstor/STORAGE_DEVICE_FORM_FACTOR, ntddstor/FormFactorUnknown, *PSTORAGE_DEVICE_FORM_FACTOR, PSTORAGE_DEVICE_FORM_FACTOR, ntddstor/FormFactor1_8Less, ntddstor/FormFactor1_8, FormFactor1_8Less, FormFactorM_2, FormFactor3_5, storage.storage_device_form_factor, FormFactorPCIeBoard, FormFactorEmbedded, ntddstor/FormFactormSata, ntddstor/FormFactorPCIeBoard, ntddstor/FormFactor3_5, STORAGE_DEVICE_FORM_FACTOR, ntddstor/FormFactorDimm, ntddstor/FormFactor2_5, _STORAGE_DEVICE_FORM_FACTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -122,7 +122,4 @@ typedef enum _STORAGE_DEVICE_FORM_FACTOR {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |

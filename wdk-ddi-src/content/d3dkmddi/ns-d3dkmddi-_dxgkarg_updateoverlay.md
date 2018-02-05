@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 077f2df2-c115-4702-9472-b43df02dac42
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_UPDATEOVERLAY structure [Display Devices], display.dxgkarg_updateoverlay, _DXGKARG_UPDATEOVERLAY, d3dkmddi/DXGKARG_UPDATEOVERLAY, DXGKARG_UPDATEOVERLAY, DmStructs_4832993a-6e58-4951-a4ea-a954b8008a6e.xml
+ms.keywords : DmStructs_4832993a-6e58-4951-a4ea-a954b8008a6e.xml, DXGKARG_UPDATEOVERLAY, d3dkmddi/DXGKARG_UPDATEOVERLAY, display.dxgkarg_updateoverlay, _DXGKARG_UPDATEOVERLAY, DXGKARG_UPDATEOVERLAY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _DXGKARG_UPDATEOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

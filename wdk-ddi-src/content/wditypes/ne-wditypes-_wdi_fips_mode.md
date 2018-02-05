@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 88EE4C63-C9D8-41D2-800E-9FFD5EF4962A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_FIPS_MODE_ENABLED, wditypes/WDI_FIPS_MODE_UNKNOWN, wditypes/WDI_FIPS_MODE_ENABLED, wditypes/WDI_FIPS_MODE, WDI_FIPS_MODE_UNKNOWN, WDI_FIPS_MODE enumeration [Network Drivers Starting with Windows Vista], _WDI_FIPS_MODE, wditypes/WDI_FIPS_MODE_DISABLED, netvista.wdi_fips_mode, WDI_FIPS_MODE, WDI_FIPS_MODE_DISABLED
+ms.keywords : WDI_FIPS_MODE enumeration [Network Drivers Starting with Windows Vista], wditypes/WDI_FIPS_MODE, WDI_FIPS_MODE_DISABLED, _WDI_FIPS_MODE, WDI_FIPS_MODE, WDI_FIPS_MODE_UNKNOWN, wditypes/WDI_FIPS_MODE_UNKNOWN, wditypes/WDI_FIPS_MODE_ENABLED, wditypes/WDI_FIPS_MODE_DISABLED, netvista.wdi_fips_mode, WDI_FIPS_MODE_ENABLED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -76,7 +76,5 @@ typedef enum _WDI_FIPS_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

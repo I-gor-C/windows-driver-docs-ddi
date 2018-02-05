@@ -96,9 +96,8 @@ One of the following values can be returned in the <b>Status</b> field.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

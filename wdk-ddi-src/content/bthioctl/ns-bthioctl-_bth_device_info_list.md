@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : ad4888fc-3d90-4920-bf84-aea18841d238
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : BTH_DEVICE_INFO_LIST structure [Bluetooth Devices], bthioctl/PBTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST, PBTH_DEVICE_INFO_LIST, _BTH_DEVICE_INFO_LIST, PBTH_DEVICE_INFO_LIST structure pointer [Bluetooth Devices], BTH_DEVICE_INFO_LIST, bth_structs_230962ed-c458-4c9e-a317-e2508b07c059.xml, bltooth.bth_device_info_list, bthioctl/BTH_DEVICE_INFO_LIST
+ms.keywords : BTH_DEVICE_INFO_LIST structure [Bluetooth Devices], PBTH_DEVICE_INFO_LIST, bthioctl/BTH_DEVICE_INFO_LIST, bthioctl/PBTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST, _BTH_DEVICE_INFO_LIST, bltooth.bth_device_info_list, bth_structs_230962ed-c458-4c9e-a317-e2508b07c059.xml, BTH_DEVICE_INFO_LIST, PBTH_DEVICE_INFO_LIST structure pointer [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : daa7d15f-580a-4668-9159-834e18b28c1f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeContext routine [Installable File System Drivers], FltGetVolumeContext, FltApiRef_e_to_o_8cec5d5c-18c3-4ffe-be18-fffcfc8d0c14.xml, ifsk.fltgetvolumecontext, fltkernel/FltGetVolumeContext
+ms.keywords : FltGetVolumeContext routine [Installable File System Drivers], ifsk.fltgetvolumecontext, FltApiRef_e_to_o_8cec5d5c-18c3-4ffe-be18-fffcfc8d0c14.xml, FltGetVolumeContext, fltkernel/FltGetVolumeContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,24 +101,21 @@ To delete a volume context, call <a href="..\fltkernel\nf-fltkernel-fltdeletevol
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltsetvolumecontext.md">FltSetVolumeContext</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 

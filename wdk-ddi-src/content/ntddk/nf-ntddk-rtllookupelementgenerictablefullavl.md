@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fddb2e23-ddb3-48bc-a94e-0ca9a8580b78
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntddk/RtlLookupElementGenericTableFullAvl, RtlLookupElementGenericTableFullAvl routine [Installable File System Drivers], rtlref_12eb0cb8-ea58-45a8-a88b-ceddc5af12c6.xml, RtlLookupElementGenericTableFullAvl, ifsk.rtllookupelementgenerictablefullavl
+ms.keywords : ifsk.rtllookupelementgenerictablefullavl, RtlLookupElementGenericTableFullAvl routine [Installable File System Drivers], ntddk/RtlLookupElementGenericTableFullAvl, rtlref_12eb0cb8-ea58-45a8-a88b-ceddc5af12c6.xml, RtlLookupElementGenericTableFullAvl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,22 +123,20 @@ The caller-supplied <i>CompareRoutine</i> contains pageable code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
 
 <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
 
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
-
-<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e17ca347-6514-47df-9373-5d33fc7f8e5c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_MAP_FLAG enumeration [Display Devices], D3D10_DDI_MAP_FLAG_DONOTWAIT, d3d10umddi/D3D10_DDI_MAP_FLAG_DONOTWAIT, display.d3d10_ddi_map_flag, d3d10umddi/D3D10_DDI_MAP_FLAG, d3d10umddi/D3D10_DDI_MAP_FLAG_MASK, D3D10_DDI_MAP_FLAG_MASK, D3D10_DDI_MAP_FLAG, UMDisplayDriver_Dx10param_Structs_ff1e6692-48bb-4381-831a-3d090bbb6f3f.xml
+ms.keywords : D3D10_DDI_MAP_FLAG_MASK, D3D10_DDI_MAP_FLAG enumeration [Display Devices], D3D10_DDI_MAP_FLAG, d3d10umddi/D3D10_DDI_MAP_FLAG_MASK, D3D10_DDI_MAP_FLAG_DONOTWAIT, display.d3d10_ddi_map_flag, d3d10umddi/D3D10_DDI_MAP_FLAG_DONOTWAIT, UMDisplayDriver_Dx10param_Structs_ff1e6692-48bb-4381-831a-3d090bbb6f3f.xml, d3d10umddi/D3D10_DDI_MAP_FLAG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,16 +68,14 @@ typedef enum D3D10_DDI_MAP_FLAG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
 
  
 

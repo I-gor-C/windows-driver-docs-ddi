@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : efd2eea8-2b05-49a2-b136-a3e1e3e739c5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRT, audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, NewStream method [Audio Devices], IMiniportWaveRT interface, NewStream method [Audio Devices], NewStream, IMiniportWaveRT::NewStream, audio.iminiportwavert_newstream, portcls/IMiniportWaveRT::NewStream, IMiniportWaveRT interface [Audio Devices], NewStream method
+ms.keywords : portcls/IMiniportWaveRT::NewStream, IMiniportWaveRT, audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, IMiniportWaveRT::NewStream, audio.iminiportwavert_newstream, NewStream method [Audio Devices], IMiniportWaveRT interface, NewStream method [Audio Devices], NewStream, IMiniportWaveRT interface [Audio Devices], NewStream method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -104,14 +104,11 @@ The <i>DataFormat</i> parameter, which specifies the data format of the stream, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -119,9 +116,9 @@ The <i>DataFormat</i> parameter, which specifies the data format of the stream, 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a>
-
 IMiniportWaveRTStream
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a>
 
 <a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
 

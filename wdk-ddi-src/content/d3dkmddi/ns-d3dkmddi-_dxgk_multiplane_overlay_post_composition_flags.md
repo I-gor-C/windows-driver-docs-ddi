@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F7791AB9-6D20-4560-A478-E30F08C6AC3A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, display.dxgk_multiplane_overlay_post_composition_flags, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS structure [Display Devices], d3dkmddi/DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS"
+ms.keywords : DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, display.dxgk_multiplane_overlay_post_composition_flags, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ Applying VerticalFlip and HorizontalFlip simultaneously results in 180 degree ro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

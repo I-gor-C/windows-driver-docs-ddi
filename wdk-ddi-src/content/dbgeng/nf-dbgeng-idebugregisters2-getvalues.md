@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d78c54a7-04a5-4c51-bf33-a5b7fb937897
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2::GetValues, IDebugRegisters interface [Windows Debugging], GetValues method, debugger.getvalues, GetValues, GetValues method [Windows Debugging], IDebugRegisters2 interface, GetValues method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::GetValues, GetValues method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], GetValues method, IDebugRegisters::GetValues, IDebugRegisters_46e390ee-fd0c-4f5f-babc-d76c10ca2780.xml, dbgeng/IDebugRegisters2::GetValues, IDebugRegisters2
+ms.keywords : GetValues method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters::GetValues, IDebugRegisters_46e390ee-fd0c-4f5f-babc-d76c10ca2780.xml, GetValues method [Windows Debugging], GetValues method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::GetValues, IDebugRegisters::GetValues, IDebugRegisters interface [Windows Debugging], GetValues method, GetValues, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], GetValues method, dbgeng/IDebugRegisters2::GetValues, debugger.getvalues
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -130,14 +130,9 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
@@ -145,9 +140,9 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549487">GetValues2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f8645e92-659f-42b8-a850-49a434ec2a67
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExtRemoteData class [Windows Debugging], GetDouble method, ExtRemoteData::GetDouble, GetDouble, GetDouble method [Windows Debugging], ExtRemoteData, EngExtCpp_Ref_8776e6fd-9e13-4502-a445-da65a8fcfe41.xml, debugger.extremotedata_getdouble, GetDouble method [Windows Debugging], ExtRemoteData class
+ms.keywords : ExtRemoteData, GetDouble, debugger.extremotedata_getdouble, GetDouble method [Windows Debugging], ExtRemoteData class, GetDouble method [Windows Debugging], EngExtCpp_Ref_8776e6fd-9e13-4502-a445-da65a8fcfe41.xml, ExtRemoteData::GetDouble, ExtRemoteData class [Windows Debugging], GetDouble method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -63,22 +63,17 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544028">ExtRemoteData::GetFloat</a>
 
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544028">ExtRemoteData::GetFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 
  
 

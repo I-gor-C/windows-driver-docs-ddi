@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a814da0c-3712-4e7b-9349-a446d7b32c90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dispmprt/PDXGK_CHILD_DESCRIPTOR, _DXGK_CHILD_DESCRIPTOR, dispmprt/DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], DXGK_CHILD_DESCRIPTOR structure [Display Devices], DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR, DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, display.dxgk_child_descriptor, *PDXGK_CHILD_DESCRIPTOR
+ms.keywords : DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, DXGK_CHILD_DESCRIPTOR, *PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR structure [Display Devices], PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], _DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR, display.dxgk_child_descriptor, dispmprt/DXGK_CHILD_DESCRIPTOR, dispmprt/PDXGK_CHILD_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,18 +78,16 @@ Each child device of type <b>TypeVideoOutput</b> is associated with a video pres
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also
 
 <a href="..\dispmprt\ne-dispmprt-_dxgk_child_device_type.md">DXGK_CHILD_DEVICE_TYPE</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
 
 <a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a>
 

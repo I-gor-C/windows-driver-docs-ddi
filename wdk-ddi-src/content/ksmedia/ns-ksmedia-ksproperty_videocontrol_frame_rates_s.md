@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fbd45594-a7cb-4376-b05c-d1e09462c78c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure pointer [Streaming Media Devices], vidcapstruct_6f4d2262-8995-4b48-9029-595a7e7c1e15.xml, ksmedia/PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, *PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, stream.ksproperty_videocontrol_frame_rates_s, ksmedia/KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure [Streaming Media Devices]
+ms.keywords : ksmedia/KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure pointer [Streaming Media Devices], vidcapstruct_6f4d2262-8995-4b48-9029-595a7e7c1e15.xml, KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, *PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, ksmedia/PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure [Streaming Media Devices], stream.ksproperty_videocontrol_frame_rates_s
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, *PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S
+req.typenames : "*PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S"
 ---
 
 # KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure
@@ -76,16 +76,13 @@ The minidriver should return a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568120">PROPSETID_VIDCAP_VIDEOCONTROL</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
  
 

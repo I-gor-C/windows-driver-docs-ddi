@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 0CD692E2-B2D6-4786-8C0B-C0DCAFCF6259
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbRequestGetController method [Buses], spbcx/SpbRequestGetController, SPB.spbrequestgetcontroller, SpbRequestGetController
+ms.keywords : SPB.spbrequestgetcontroller, SpbRequestGetController, spbcx/SpbRequestGetController, SpbRequestGetController method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -66,14 +66,11 @@ The <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | spbcx.h |
-| **Library** |  |
+| **Library** | Spbcxstubs.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

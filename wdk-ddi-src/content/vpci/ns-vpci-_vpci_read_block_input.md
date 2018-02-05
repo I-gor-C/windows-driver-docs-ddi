@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d8d68231-017a-42fc-ad09-8e7f5cc743d3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PVPCI_READ_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], VPCI_READ_BLOCK_INPUT, _VPCI_READ_BLOCK_INPUT, PVPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], kernel.vpci_read_block_input, *PVPCI_READ_BLOCK_INPUT, vpci/VPCI_READ_BLOCK_INPUT, vpci/PVPCI_READ_BLOCK_INPUT
+ms.keywords : PVPCI_READ_BLOCK_INPUT, *PVPCI_READ_BLOCK_INPUT, vpci/VPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], kernel.vpci_read_block_input, vpci/PVPCI_READ_BLOCK_INPUT, PVPCI_READ_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], _VPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VPCI_READ_BLOCK_INPUT, *PVPCI_READ_BLOCK_INPUT
+req.typenames : "*PVPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT"
 req.product : Windows 10 or later.
 ---
 
@@ -81,9 +81,6 @@ This operating system runs within the Hyper-V parent partition.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | vpci.h (include Vpci.h) |
 
 ## See Also

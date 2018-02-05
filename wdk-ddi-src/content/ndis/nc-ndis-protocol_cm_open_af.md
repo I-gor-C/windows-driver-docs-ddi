@@ -74,8 +74,8 @@ For an integrated call manager (MCM), <i>CallMgrBindingContext</i> specifies the
 
 Specifies the address family that a client is opening. This address family was registered by the
      call manager when it called 
-     <mshelp:link keywords="netvista.ndiscmregisteraddressfamilyex" tabindex="0"><b>
-     NdisCmRegisterAddressFamilyEx</b></mshelp:link>.
+     <a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
+     NdisCmRegisterAddressFamilyEx</a>.
 
 `NdisAfHandle`
 
@@ -117,8 +117,8 @@ Indicates that the call manager has successfully allocated and initialized any r
 <td width="60%">
 Indicates that the requested operation is being handled asynchronously. The call manager must
        call 
-       <mshelp:link keywords="netvista.ndiscmopenaddressfamilycomplete" tabindex="0"><b>
-       NdisCmOpenAddressFamilyComplete</b></mshelp:link> when it has completed all its open-AF operations to indicate to
+       <a href="..\ndis\nf-ndis-ndiscmopenaddressfamilycomplete.md">
+       NdisCmOpenAddressFamilyComplete</a> when it has completed all its open-AF operations to indicate to
        NDIS (and the client) that the operation(s) has been completed.
 
 </td>
@@ -218,26 +218,22 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmOpenAf (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmOpenAf (NDIS 5.1))   in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmOpenAf (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmOpenAf (NDIS 5.1))   in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndiscmopenaddressfamilycomplete" tabindex="0"><b>
-   NdisCmOpenAddressFamilyComplete</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 
-<mshelp:link keywords="netvista.ndiscmregisteraddressfamilyex" tabindex="0"><b>
-   NdisCmRegisterAddressFamilyEx</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiscmopenaddressfamilycomplete.md">
+   NdisCmOpenAddressFamilyComplete</a>
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
+   NdisCmRegisterAddressFamilyEx</a>
 
  
 

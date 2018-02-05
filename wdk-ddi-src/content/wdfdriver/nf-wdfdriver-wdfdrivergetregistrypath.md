@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5f237d2e-5ffd-40af-8cd8-ea1414807086
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDriverGetRegistryPath method, DFDriverObjectRef_a21bcb6e-2211-4727-bb87-bb912f8a173b.xml, PFN_WDFDRIVERGETREGISTRYPATH, wdfdriver/WdfDriverGetRegistryPath, kmdf.wdfdrivergetregistrypath, WdfDriverGetRegistryPath, wdf.wdfdrivergetregistrypath
+ms.keywords : wdf.wdfdrivergetregistrypath, WdfDriverGetRegistryPath method, DFDriverObjectRef_a21bcb6e-2211-4727-bb87-bb912f8a173b.xml, WdfDriverGetRegistryPath, PFN_WDFDRIVERGETREGISTRYPATH, kmdf.wdfdrivergetregistrypath, wdfdriver/WdfDriverGetRegistryPath
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,24 +73,23 @@ For more information about the registry, see <a href="https://docs.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdriveropenparametersregistrykey.md">WdfDriverOpenParametersRegistryKey</a>
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
 
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-<a href="..\wdfdriver\nf-wdfdriver-wdfdriveropenparametersregistrykey.md">WdfDriverOpenParametersRegistryKey</a>
 
  
 

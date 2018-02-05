@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F7316327-C860-4138-A19B-3326CE9210C0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_HDR_METADATA_HDR10 structure [Display Devices], D3DDDI_HDR_METADATA_HDR10, display.d3dddi_hdr_metadata_hdr10, d3dukmdt/D3DDDI_HDR_METADATA_HDR10, _D3DDDI_HDR_METADATA_HDR10
+ms.keywords : D3DDDI_HDR_METADATA_HDR10 structure [Display Devices], _D3DDDI_HDR_METADATA_HDR10, display.d3dddi_hdr_metadata_hdr10, d3dukmdt/D3DDDI_HDR_METADATA_HDR10, D3DDDI_HDR_METADATA_HDR10
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -93,7 +93,4 @@ The chromaticity coordinates of the 1.0 red value. Index 0 contains the X coordi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h |

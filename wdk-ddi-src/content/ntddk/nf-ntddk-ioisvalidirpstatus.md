@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0A995357-A578-41C6-A1B8-ABD251C16C83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioisvalidirpstatus, IoIsValidIrpStatus routine [Kernel-Mode Driver Architecture], ntddk/IoIsValidIrpStatus, IoIsValidIrpStatus
+ms.keywords : IoIsValidIrpStatus, ntddk/IoIsValidIrpStatus, IoIsValidIrpStatus routine [Kernel-Mode Driver Architecture], kernel.ioisvalidirpstatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ For more information about these fields, see <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

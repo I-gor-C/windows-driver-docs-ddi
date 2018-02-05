@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : DCC7087B-0A1B-4E96-A82F-BDEF09D8CEE2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BDA_BUFFER structure [Streaming Media Devices], *PBDA_BUFFER, bdatypes/PBDA_BUFFER, stream.bda_buffer, PBDA_BUFFER structure pointer [Streaming Media Devices], PBDA_BUFFER, BDA_BUFFER, _BDA_BUFFER, bdatypes/BDA_BUFFER
+ms.keywords : bdatypes/PBDA_BUFFER, PBDA_BUFFER, BDA_BUFFER, bdatypes/BDA_BUFFER, _BDA_BUFFER, *PBDA_BUFFER, PBDA_BUFFER structure pointer [Streaming Media Devices], stream.bda_buffer, BDA_BUFFER structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BDA_BUFFER, *PBDA_BUFFER
+req.typenames : "*PBDA_BUFFER, BDA_BUFFER"
 ---
 
 # _BDA_BUFFER structure
@@ -69,7 +69,4 @@ typedef struct _BDA_BUFFER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

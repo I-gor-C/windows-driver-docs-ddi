@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 81875C20-8E0E-4BAC-B85F-3D275F8B4708
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PepAcpiObjectTypeMethod, PEP_ACPI_OBJECT_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepAcpiObjectTypeMaximum, pepfx/PEP_ACPI_OBJECT_TYPE, PEP_ACPI_OBJECT_TYPE, pepfx/PepAcpiObjectTypeMethod, _PEP_ACPI_OBJECT_TYPE, kernel.pep_acpi_object_type, *PPEP_ACPI_OBJECT_TYPE, PepAcpiObjectTypeMaximum
+ms.keywords : pepfx/PepAcpiObjectTypeMaximum, PepAcpiObjectTypeMethod, PepAcpiObjectTypeMaximum, pepfx/PepAcpiObjectTypeMethod, PEP_ACPI_OBJECT_TYPE enumeration [Kernel-Mode Driver Architecture], _PEP_ACPI_OBJECT_TYPE, kernel.pep_acpi_object_type, pepfx/PEP_ACPI_OBJECT_TYPE, *PPEP_ACPI_OBJECT_TYPE, PEP_ACPI_OBJECT_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -76,9 +76,7 @@ The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

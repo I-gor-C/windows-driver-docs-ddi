@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7A5F39C8-DCA2-4684-801A-A334960AA523
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlULongPtrToLong, RtlULongPtrToLong function [Kernel-Mode Driver Architecture], ntintsafe/RtlULongPtrToLong, kernel.rtlulongptrtolong
+ms.keywords : kernel.rtlulongptrtolong, RtlULongPtrToLong function [Kernel-Mode Driver Architecture], ntintsafe/RtlULongPtrToLong, RtlULongPtrToLong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This is one of a set of inline functions designed to provide type conversions an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

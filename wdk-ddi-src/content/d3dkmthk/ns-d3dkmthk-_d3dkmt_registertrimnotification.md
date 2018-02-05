@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CA5BC76B-539E-4FFF-8E02-C475D18588F6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_REGISTERTRIMNOTIFICATION structure [Display Devices], display.d3dkmt_registertrimnotification, d3dkmthk/D3DKMT_REGISTERTRIMNOTIFICATION, _D3DKMT_REGISTERTRIMNOTIFICATION, D3DKMT_REGISTERTRIMNOTIFICATION
+ms.keywords : d3dkmthk/D3DKMT_REGISTERTRIMNOTIFICATION, display.d3dkmt_registertrimnotification, _D3DKMT_REGISTERTRIMNOTIFICATION, D3DKMT_REGISTERTRIMNOTIFICATION structure [Display Devices], D3DKMT_REGISTERTRIMNOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,7 @@ typedef struct _D3DKMT_REGISTERTRIMNOTIFICATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

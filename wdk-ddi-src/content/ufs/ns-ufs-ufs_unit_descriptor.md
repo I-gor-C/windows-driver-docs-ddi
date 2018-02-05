@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5D76C266-875A-40AC-9B26-F17978971783
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ufs_unit_descriptor, ufs/PUFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR, *PUFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR structure pointer [Storage Devices], ufs/UFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR structure [Storage Devices]
+ms.keywords : UFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR, PUFS_UNIT_DESCRIPTOR structure pointer [Storage Devices], ufs/UFS_UNIT_DESCRIPTOR, storage.ufs_unit_descriptor, ufs/PUFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR structure [Storage Devices], *PUFS_UNIT_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUFS_UNIT_DESCRIPTOR, UFS_UNIT_DESCRIPTOR"
+req.typenames : UFS_UNIT_DESCRIPTOR, *PUFS_UNIT_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -174,9 +174,7 @@ Specifies the number of contexts to be supported in each logical unit.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ufs.h |
 
 ## See Also

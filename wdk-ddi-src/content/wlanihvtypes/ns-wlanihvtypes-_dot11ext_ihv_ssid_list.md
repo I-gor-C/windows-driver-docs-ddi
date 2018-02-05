@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 10ef8868-5a65-4ed9-9f1d-440cda30cba4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11EXT_IHV_SSID_LIST, wlanihvtypes/PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST structure [Network Drivers Starting with Windows Vista], *PDOT11EXT_IHV_SSID_LIST, PDOT11EXT_IHV_SSID_LIST, Native_802.11_data_types_c4e6c252-de57-4173-b6e1-df48dca0404f.xml, wlanihvtypes/DOT11EXT_IHV_SSID_LIST, netvista.dot11ext_ihv_ssid_list, _DOT11EXT_IHV_SSID_LIST, PDOT11EXT_IHV_SSID_LIST structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : PDOT11EXT_IHV_SSID_LIST, Native_802.11_data_types_c4e6c252-de57-4173-b6e1-df48dca0404f.xml, PDOT11EXT_IHV_SSID_LIST structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_ihv_ssid_list, wlanihvtypes/DOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST structure [Network Drivers Starting with Windows Vista], *PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST, wlanihvtypes/PDOT11EXT_IHV_SSID_LIST, _DOT11EXT_IHV_SSID_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11EXT_IHV_SSID_LIST, *PDOT11EXT_IHV_SSID_LIST
+req.typenames : "*PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -64,9 +64,7 @@ An SSID is a string that identifies a set of interconnected basic service sets (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlanihvtypes.h (include Wlanihv.h) |
 
 ## See Also

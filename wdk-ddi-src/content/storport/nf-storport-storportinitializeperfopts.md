@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fbaf864c-d499-456c-be3b-b486c637877e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializePerfOpts function [Storage Devices], StorPortInitializePerfOpts, storage.storportinitializeperfopts, storport/StorPortInitializePerfOpts, storprt_84998f54-51fe-40fd-a8cc-ba0367a592ce.xml
+ms.keywords : storage.storportinitializeperfopts, storprt_84998f54-51fe-40fd-a8cc-ba0367a592ce.xml, storport/StorPortInitializePerfOpts, StorPortInitializePerfOpts, StorPortInitializePerfOpts function [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,13 +145,9 @@ Available performance optimizations depend on the version of <a href="..\storpor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
+| **Library** | NtosKrnl.exe |
 | **DDI compliance rules** | StorPortPerfOpts |
 
 ## See Also

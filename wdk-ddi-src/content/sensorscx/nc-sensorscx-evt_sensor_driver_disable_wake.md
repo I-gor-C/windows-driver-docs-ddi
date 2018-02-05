@@ -73,11 +73,6 @@ This DDSI function does not compulsorily have to be implemented by the driver be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorscx.h |
-| **Library** |  |
 | **IRQL** | "_requires_same_" |
-| **DDI compliance rules** |  |

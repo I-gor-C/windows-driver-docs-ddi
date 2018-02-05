@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4e94c9cc-eaa9-4de1-8f17-d24a5ed19507
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtEnumerateValueKey, kernel.zwenumeratevaluekey, wdm/ZwEnumerateValueKey, k111_bea1b1ab-2cfe-4d17-abd3-1a45652c70a5.xml, ZwEnumerateValueKey, ZwEnumerateValueKey routine [Kernel-Mode Driver Architecture], wdm/NtEnumerateValueKey
+ms.keywords : NtEnumerateValueKey, wdm/ZwEnumerateValueKey, ZwEnumerateValueKey routine [Kernel-Mode Driver Architecture], kernel.zwenumeratevaluekey, ZwEnumerateValueKey, k111_bea1b1ab-2cfe-4d17-abd3-1a45652c70a5.xml, wdm/NtEnumerateValueKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -149,32 +149,31 @@ For more information about working with registry keys, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 
 <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
-<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
 
 <a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
 
  
 

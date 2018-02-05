@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bed68aa8-499d-41fd-997b-a46316913cc8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMRegisterMiniportDriver function [Network Drivers Starting with Windows Vista], NdisMRegisterMiniportDriver, miniport_ndis_functions_ref_d6406d6d-f738-4f65-90af-38038b188cc7.xml, netvista.ndismregisterminiportdriver, ndis/NdisMRegisterMiniportDriver
+ms.keywords : NdisMRegisterMiniportDriver, miniport_ndis_functions_ref_d6406d6d-f738-4f65-90af-38038b188cc7.xml, netvista.ndismregisterminiportdriver, NdisMRegisterMiniportDriver function [Network Drivers Starting with Windows Vista], ndis/NdisMRegisterMiniportDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,8 +63,8 @@ NDIS_STATUS NdisMRegisterMiniportDriver(
 A pointer to an opaque driver object that the miniport driver received in its 
      <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine at the 
      <i>Argument1</i> parameter (see 
-     <mshelp:link keywords="netvista.driverentry_of_ndis_miniport_drivers" tabindex="0"><b>DriverEntry of NDIS
-     Miniport Drivers</b></mshelp:link>).
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548818">DriverEntry of NDIS
+     Miniport Drivers</a>).
 
 `RegistryPath`
 
@@ -80,8 +80,8 @@ A handle to a driver-allocated context area where the driver maintains state and
 `MiniportDriverCharacteristics`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_miniport_driver_characteristics" tabindex="0"><b>
-     NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b></mshelp:link> structure that the caller initialized.
+     <a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">
+     NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure that the caller initialized.
 
 `NdisMiniportDriverHandle`
 
@@ -167,8 +167,8 @@ This is a default error status, returned when none of the preceding errors cause
 An NDIS driver calls 
     <b>NdisMRegisterMiniportDriver</b> from its 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. For more information, see 
-    <mshelp:link keywords="netvista.driverentry_of_ndis_miniport_drivers" tabindex="0"><b>DriverEntry of NDIS
-    Miniport Drivers</b></mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548818">DriverEntry of NDIS
+    Miniport Drivers</a>.
 
 Every miniport driver exports a set of standard 
     <i>MiniportXxx</i> functions by setting up the characteristics structure and calling 
@@ -203,8 +203,8 @@ After a driver calls
 If an error occurs in 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> after 
     <b>NdisMRegisterMiniportDriver</b> returns successfully, the driver must call the 
-    <mshelp:link keywords="netvista.ndismderegisterminiportdriver" tabindex="0"><b>
-    NdisMDeregisterMiniportDriver</b></mshelp:link> function before 
+    <a href="..\ndis\nf-ndis-ndismderegisterminiportdriver.md">
+    NdisMDeregisterMiniportDriver</a> function before 
     <b>DriverEntry</b> returns. If 
     <b>DriverEntry</b> succeeds, the driver must call 
     <b>NdisMDeregisterMiniportDriver</b> from its 
@@ -213,30 +213,28 @@ If an error occurs in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndismderegisterminiportdriver" tabindex="0"><b>
-   NdisMDeregisterMiniportDriver</b></mshelp:link>
-
-<mshelp:link keywords="netvista.ndis_miniport_driver_characteristics" tabindex="0"><b>
-   NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+
+<a href="..\ndis\nc-ndis-miniport_unload.md">MiniportDriverUnload</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a>
 
-<a href="..\ndis\nc-ndis-miniport_unload.md">MiniportDriverUnload</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">
+   NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndismderegisterminiportdriver.md">
+   NdisMDeregisterMiniportDriver</a>
 
  
 

@@ -83,6 +83,4 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | nfcsedev.h |
-| **IRQL** |  |

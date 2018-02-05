@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
+req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
 # IOCTL_BTHX_QUERY_CAPABILITIES IOCTL
@@ -97,6 +97,6 @@ The <b>MaxScoChannels</b> member must be set to 1. The <b>ScoSupport</b> member 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | bthxddi.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |

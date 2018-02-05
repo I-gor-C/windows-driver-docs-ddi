@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B28BE626-5DF1-4B55-8D1A-04B1FF2245EA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_PEP_WORK_COMPLETE_PERF_STATE, kernel.pep_work_complete_perf_state, *PPEP_WORK_COMPLETE_PERF_STATE, PEP_WORK_COMPLETE_PERF_STATE, PPEP_WORK_COMPLETE_PERF_STATE, pepfx/PEP_WORK_COMPLETE_PERF_STATE, PPEP_WORK_COMPLETE_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_WORK_COMPLETE_PERF_STATE structure [Kernel-Mode Driver Architecture], pepfx/PPEP_WORK_COMPLETE_PERF_STATE"
+ms.keywords : PPEP_WORK_COMPLETE_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_COMPLETE_PERF_STATE, pepfx/PPEP_WORK_COMPLETE_PERF_STATE, PEP_WORK_COMPLETE_PERF_STATE structure [Kernel-Mode Driver Architecture], PPEP_WORK_COMPLETE_PERF_STATE, *PPEP_WORK_COMPLETE_PERF_STATE, pepfx/PEP_WORK_COMPLETE_PERF_STATE, kernel.pep_work_complete_perf_state, PEP_WORK_COMPLETE_PERF_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_WORK_COMPLETE_PERF_STATE, *PPEP_WORK_COMPLETE_PERF_STATE
+req.typenames : "*PPEP_WORK_COMPLETE_PERF_STATE, PEP_WORK_COMPLETE_PERF_STATE"
 ---
 
 # _PEP_WORK_COMPLETE_PERF_STATE structure
@@ -71,20 +71,18 @@ The <b>CompletePerfState</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
-
-<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
 
 <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c3391615-963b-4916-9280-ce782269692c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsGetPacketListSecurityInformation0 function [Network Drivers Starting with Windows Vista], netvista.fwpsgetpacketlistsecurityinformation0, FwpsGetPacketListSecurityInformation0, fwpsk/FwpsGetPacketListSecurityInformation0, wfp_ref_2_funct_3_fwps_D-H_1c333aca-c13e-449e-b230-a6d217442a5d.xml
+ms.keywords : FwpsGetPacketListSecurityInformation0, wfp_ref_2_funct_3_fwps_D-H_1c333aca-c13e-449e-b230-a6d217442a5d.xml, netvista.fwpsgetpacketlistsecurityinformation0, FwpsGetPacketListSecurityInformation0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsGetPacketListSecurityInformation0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,24 @@ A UINT32 value that contains a bitwise OR of a combination of the following flag
 
 
 
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_INBOUND
+
+Retrieve all information associated with an inbound packet list.
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_OUTBOUND
+
+Retrieve all information associated with an outbound packet list.
+
+
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_FWP
+
+Retrieve the Windows Filtering Platform information associated with the packet list.
+
+
 #### FWPS_PACKET_LIST_INFORMATION_QUERY_INBOUND
 
 Retrieve information for an inbound packet list.
-
-
-#### FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND
-
-Retrieve information for an outbound packet list.
 
 
 #### FWPS_PACKET_LIST_INFORMATION_QUERY_IPSEC
@@ -89,19 +99,9 @@ Retrieve the IPsec information associated with the packet list. This flag must b
        FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND flag.
 
 
-#### FWPS_PACKET_LIST_INFORMATION_QUERY_FWP
+#### FWPS_PACKET_LIST_INFORMATION_QUERY_OUTBOUND
 
-Retrieve the Windows Filtering Platform information associated with the packet list.
-
-
-#### FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_INBOUND
-
-Retrieve all information associated with an inbound packet list.
-
-
-#### FWPS_PACKET_LIST_INFORMATION_QUERY_ALL_OUTBOUND
-
-Retrieve all information associated with an outbound packet list.
+Retrieve information for an outbound packet list.
 
 `packetInformation`
 
@@ -154,22 +154,19 @@ A callout driver calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
 <a href="..\fwpsk\ns-fwpsk-fwps_packet_list_information0_.md">FWPS_PACKET_LIST_INFORMATION0</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
  
 

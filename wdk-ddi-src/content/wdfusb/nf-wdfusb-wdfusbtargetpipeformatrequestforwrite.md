@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cf880701-d1e9-4bda-8d6c-35f35b707e9b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeFormatRequestForWrite method, WdfUsbTargetPipeFormatRequestForWrite, wdfusb/WdfUsbTargetPipeFormatRequestForWrite, wdf.wdfusbtargetpipeformatrequestforwrite, DFUsbRef_4f71425c-5d39-433c-9820-d736b9f4f531.xml, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORWRITE, kmdf.wdfusbtargetpipeformatrequestforwrite
+ms.keywords : kmdf.wdfusbtargetpipeformatrequestforwrite, WdfUsbTargetPipeFormatRequestForWrite, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORWRITE, wdf.wdfusbtargetpipeformatrequestforwrite, WdfUsbTargetPipeFormatRequestForWrite method, wdfusb/WdfUsbTargetPipeFormatRequestForWrite, DFUsbRef_4f71425c-5d39-433c-9820-d736b9f4f531.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -199,12 +199,11 @@ For more information about the <b>WdfUsbTargetPipeFormatRequestForWrite</b> meth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2 |
 

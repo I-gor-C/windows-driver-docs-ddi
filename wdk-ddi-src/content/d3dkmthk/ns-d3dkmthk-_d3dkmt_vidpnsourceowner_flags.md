@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : acc4e9d9-235f-4605-ae51-5056108843dc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_VIDPNSOURCEOWNER_FLAGS structure [Display Devices], D3DKMT_VIDPNSOURCEOWNER_FLAGS, display.d3dkmt_vidpnsourceowner_flags, d3dkmthk/D3DKMT_VIDPNSOURCEOWNER_FLAGS, _D3DKMT_VIDPNSOURCEOWNER_FLAGS
+ms.keywords : d3dkmthk/D3DKMT_VIDPNSOURCEOWNER_FLAGS, _D3DKMT_VIDPNSOURCEOWNER_FLAGS, display.d3dkmt_vidpnsourceowner_flags, D3DKMT_VIDPNSOURCEOWNER_FLAGS, D3DKMT_VIDPNSOURCEOWNER_FLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ typedef struct _D3DKMT_VIDPNSOURCEOWNER_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : DC4E165B-4D3A-4C5F-9B6F-8CB825BAF4FD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSPB_TRANSFER_LIST, SPB.spb_transfer_list, PSPB_TRANSFER_LIST structure pointer [Buses], spb/SPB_TRANSFER_LIST, spb/PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST structure [Buses], SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST
+ms.keywords : PSPB_TRANSFER_LIST structure pointer [Buses], SPB_TRANSFER_LIST, spb/PSPB_TRANSFER_LIST, spb/SPB_TRANSFER_LIST, PSPB_TRANSFER_LIST, SPB.spb_transfer_list, SPB_TRANSFER_LIST structure [Buses], *PSPB_TRANSFER_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,9 +81,7 @@ If your SPB controller driver supports custom I/O control (IOCTL) requests that 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spb.h |
 
 ## See Also

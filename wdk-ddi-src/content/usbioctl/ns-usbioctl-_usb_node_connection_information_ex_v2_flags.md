@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F066CE0E-3247-4C42-9EF6-8A6EB0C0BC71
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbioctl/USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, usbioctl/PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, buses.usb_node_connection_information_ex_v2_flags, PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union pointer [Buses], *PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union [Buses], _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS
+ms.keywords : PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union [Buses], PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union pointer [Buses], usbioctl/PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, usbioctl/USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, *PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, buses.usb_node_connection_information_ex_v2_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,14 @@ A bitmask that indicates the USB speed of the device that is attached to the por
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
-
 <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2_flags.md">USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS</a>
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
 
  
 

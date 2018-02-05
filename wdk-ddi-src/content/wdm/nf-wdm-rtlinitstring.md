@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 954498b6-f611-4c88-99e1-a1812d512866
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_c0bd87a9-811c-4312-b2b4-e82bdbfa5b8c.xml, RtlInitString, wdm/RtlInitString, RtlInitString routine [Kernel-Mode Driver Architecture], kernel.rtlinitstring
+ms.keywords : RtlInitString, kernel.rtlinitstring, k109_c0bd87a9-811c-4312-b2b4-e82bdbfa5b8c.xml, RtlInitString routine [Kernel-Mode Driver Architecture], wdm/RtlInitString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,14 +99,12 @@ You can use <b>RTL_CONSTANT_STRING</b> to initialize global variables.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

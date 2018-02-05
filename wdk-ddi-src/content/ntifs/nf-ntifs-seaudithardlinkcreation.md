@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f032afe5-da68-4763-a4f0-6e61869223e1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.seaudithardlinkcreation, ntifs/SeAuditHardLinkCreation, seref_da710638-38e7-4305-9102-7cfbc4299f94.xml, SeAuditHardLinkCreation, SeAuditHardLinkCreation function [Installable File System Drivers]
+ms.keywords : SeAuditHardLinkCreation, seref_da710638-38e7-4305-9102-7cfbc4299f94.xml, SeAuditHardLinkCreation function [Installable File System Drivers], ntifs/SeAuditHardLinkCreation, ifsk.seaudithardlinkcreation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

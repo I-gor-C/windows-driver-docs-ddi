@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : CC67993A-99B1-41DC-9278-7A475EF87089
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlNumberGenericTableElementsAvl, ntddk/RtlNumberGenericTableElementsAvl, RtlNumberGenericTableElementsAvl routine [Installable File System Drivers], ifsk.rtlnumbergenerictableelementsavl
+ms.keywords : RtlNumberGenericTableElementsAvl, ntddk/RtlNumberGenericTableElementsAvl, ifsk.rtlnumbergenerictableelementsavl, RtlNumberGenericTableElementsAvl routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ Callers of <b>RtlNumberGenericTableElementsAvl</b> must be running at IRQL &lt; 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

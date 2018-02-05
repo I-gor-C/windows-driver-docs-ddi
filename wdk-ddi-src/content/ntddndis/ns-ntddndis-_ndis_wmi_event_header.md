@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b9e2c393-cf77-4193-ba59-b8eb914ef1e6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WMI_EVENT_HEADER, ntddndis/PNDIS_WMI_EVENT_HEADER, ntddndis/NDIS_WMI_EVENT_HEADER, NDIS_WMI_EVENT_HEADER structure [Network Drivers Starting with Windows Vista], netvista.ndis_wmi_event_header, ndis_wmi_ref_ebe1bff7-7e6d-47e7-b79c-3e53a733ac54.xml, PNDIS_WMI_EVENT_HEADER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_EVENT_HEADER, NDIS_WMI_EVENT_HEADER, *PNDIS_WMI_EVENT_HEADER
+ms.keywords : NDIS_WMI_EVENT_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_EVENT_HEADER, PNDIS_WMI_EVENT_HEADER structure pointer [Network Drivers Starting with Windows Vista], NDIS_WMI_EVENT_HEADER, *PNDIS_WMI_EVENT_HEADER, ntddndis/PNDIS_WMI_EVENT_HEADER, netvista.ndis_wmi_event_header, ndis_wmi_ref_ebe1bff7-7e6d-47e7-b79c-3e53a733ac54.xml, _NDIS_WMI_EVENT_HEADER, ntddndis/NDIS_WMI_EVENT_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WMI_EVENT_HEADER, NDIS_WMI_EVENT_HEADER"
+req.typenames : NDIS_WMI_EVENT_HEADER, *PNDIS_WMI_EVENT_HEADER
 ---
 
 # _NDIS_WMI_EVENT_HEADER structure
@@ -122,9 +122,7 @@ WMI GUID event indications that are specific to NDIS 6.0 and later versions incl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

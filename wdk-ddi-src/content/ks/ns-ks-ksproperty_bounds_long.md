@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 16804ff1-8531-48aa-baf6-b89ccfe25d07
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_BOUNDS_LONG union pointer [Streaming Media Devices], stream.ksproperty_bounds_long, KSPROPERTY_BOUNDS_LONG, ks/PKSPROPERTY_BOUNDS_LONG, PKSPROPERTY_BOUNDS_LONG, *PKSPROPERTY_BOUNDS_LONG, ks-struct_805e1a44-91bb-45be-a99d-174e98639d9e.xml, ks/KSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG union [Streaming Media Devices]
+ms.keywords : stream.ksproperty_bounds_long, PKSPROPERTY_BOUNDS_LONG union pointer [Streaming Media Devices], KSPROPERTY_BOUNDS_LONG, PKSPROPERTY_BOUNDS_LONG, *PKSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG union [Streaming Media Devices], ks-struct_805e1a44-91bb-45be-a99d-174e98639d9e.xml, ks/KSPROPERTY_BOUNDS_LONG, ks/PKSPROPERTY_BOUNDS_LONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG"
+req.typenames : KSPROPERTY_BOUNDS_LONG, *PKSPROPERTY_BOUNDS_LONG
 ---
 
 # KSPROPERTY_BOUNDS_LONG structure
@@ -76,16 +76,13 @@ Also see related information in <a href="https://msdn.microsoft.com/a385929e-193
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
-
 <a href="..\ks\ns-ks-ksproperty_membersheader.md">KSPROPERTY_MEMBERSHEADER</a>
+
+<a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
 
 <a href="..\ks\ns-ks-ksproperty_values.md">KSPROPERTY_VALUES</a>
 

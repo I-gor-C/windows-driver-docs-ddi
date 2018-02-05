@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : EDBCBB37-41A4-4234-BE8C-4C8739BC287B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfinterrupt_setpolicy, SetPolicy method, wudfddi/IWDFInterrupt::SetPolicy, IWDFInterrupt::SetPolicy, wdf.iwdfinterrupt_setpolicy, SetPolicy, IWDFInterrupt, SetPolicy method, IWDFInterrupt interface, IWDFInterrupt interface, SetPolicy method
+ms.keywords : umdf.iwdfinterrupt_setpolicy, SetPolicy method, IWDFInterrupt interface, SetPolicy method, IWDFInterrupt::SetPolicy, wdf.iwdfinterrupt_setpolicy, wudfddi/IWDFInterrupt::SetPolicy, IWDFInterrupt interface, SetPolicy method, IWDFInterrupt, SetPolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -92,24 +92,22 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 
-<a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
 
 <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_policy.md">WDF_INTERRUPT_POLICY</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+<a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a>
 
  
 

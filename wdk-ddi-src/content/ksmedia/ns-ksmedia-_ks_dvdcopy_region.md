@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 159a8dd0-6efa-4f2c-921c-c427e1cf59ec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKS_DVDCOPY_REGION, KS_DVDCOPY_REGION, _KS_DVDCOPY_REGION, stream.ks_dvdcopy_region, PKS_DVDCOPY_REGION structure pointer [Streaming Media Devices], PKS_DVDCOPY_REGION, dvdref_ff087f30-2337-4b0f-8ae1-8a42cacaa5ae.xml, ksmedia/PKS_DVDCOPY_REGION, ksmedia/KS_DVDCOPY_REGION, KS_DVDCOPY_REGION structure [Streaming Media Devices]"
+ms.keywords : dvdref_ff087f30-2337-4b0f-8ae1-8a42cacaa5ae.xml, KS_DVDCOPY_REGION structure [Streaming Media Devices], *PKS_DVDCOPY_REGION, _KS_DVDCOPY_REGION, ksmedia/KS_DVDCOPY_REGION, ksmedia/PKS_DVDCOPY_REGION, PKS_DVDCOPY_REGION structure pointer [Streaming Media Devices], PKS_DVDCOPY_REGION, stream.ks_dvdcopy_region, KS_DVDCOPY_REGION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -139,9 +139,6 @@ For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

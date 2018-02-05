@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 2a42c8b5-acc0-463e-8ecd-179724be27d9
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "_BRB_ACL_ENTER_ACTIVE_MODE structure [Bluetooth Devices], bltooth._brb_acl_enter_active_mode, bthddi/_BRB_ACL_ENTER_ACTIVE_MODE, _BRB_ACL_ENTER_ACTIVE_MODE, bth_structs_1cb3c3f5-063a-4213-98b0-5a2c667f5e40.xml"
+ms.keywords : "_BRB_ACL_ENTER_ACTIVE_MODE structure [Bluetooth Devices], _BRB_ACL_ENTER_ACTIVE_MODE, bthddi/_BRB_ACL_ENTER_ACTIVE_MODE, bltooth._brb_acl_enter_active_mode, bth_structs_1cb3c3f5-063a-4213-98b0-5a2c667f5e40.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,22 +66,20 @@ A
 ## Remarks
 To place a remote device into active mode, profile drivers should 
     <a href="https://msdn.microsoft.com/53a692e7-9c71-4dca-9331-32ac97b94179">build and send</a> a 
-    <mshelp:link keywords="bltooth.brb_acl_enter_active_mode" tabindex="0"><b>
-    BRB_ACL_ENTER_ACTIVE_MODE</b></mshelp:link> request.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536854">
+    BRB_ACL_ENTER_ACTIVE_MODE</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536854">BRB_ACL_ENTER_ACTIVE_MODE</a>
-
 <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536854">BRB_ACL_ENTER_ACTIVE_MODE</a>
 
  
 

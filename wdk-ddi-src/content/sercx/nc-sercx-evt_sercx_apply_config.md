@@ -85,22 +85,18 @@ To register an <i>EvtSerCxApplyConfig</i> callback function, the driver must cal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_apply_default_configuration.md">IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION</a>
 
-<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
-
 <a href="..\sercx\nf-sercx-sercxgetconnectionparameters.md">SerCxGetConnectionParameters</a>
+
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
 
  
 

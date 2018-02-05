@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 19ab8771-2a86-469a-98e4-3d295a458b90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : umdprovider/UMDEtwUnregister, UMDEtwUnregister function [Display Devices], UMDEtwUnregister, display.umdetwunregister
+ms.keywords : umdprovider/UMDEtwUnregister, UMDEtwUnregister, UMDEtwUnregister function [Display Devices], display.umdetwunregister
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,10 @@ FORCEINLINE void UMDEtwUnregister()
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | umdprovider.h (include Umdprovider.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

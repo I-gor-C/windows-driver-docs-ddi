@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : e340eb98-34d4-49e7-92cd-4f57d8b6efb8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WIAS_HRESULT macro [Imaging Devices], WIAS_HRESULT, IWiaLog_3b27b46f-be2e-4fdb-ba65-32fe41c71142.xml, image.wias_hresult, wiamdef/WIAS_HRESULT
+ms.keywords : WIAS_HRESULT, IWiaLog_3b27b46f-be2e-4fdb-ba65-32fe41c71142.xml, WIAS_HRESULT macro [Imaging Devices], wiamdef/WIAS_HRESULT, image.wias_hresult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -70,14 +70,10 @@ This macro is the recommended way to output HRESULTS on Windows Vista.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the operating system. Available in Windows Vista and later versions of the operating system. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamdef.h |
 
 ## See Also
 

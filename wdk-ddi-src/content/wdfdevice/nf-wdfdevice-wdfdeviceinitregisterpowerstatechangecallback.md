@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f3c09dfb-d327-488b-8e5d-77a579d1e1f0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitregisterpowerstatechangecallback, WdfDeviceInitRegisterPowerStateChangeCallback method, DFDeviceObjectGeneralRef_c2199058-308e-4207-b035-30de28c64fa5.xml, kmdf.wdfdeviceinitregisterpowerstatechangecallback, wdfdevice/WdfDeviceInitRegisterPowerStateChangeCallback, WdfDeviceInitRegisterPowerStateChangeCallback, PFN_WDFDEVICEINITREGISTERPOWERSTATECHANGECALLBACK
+ms.keywords : DFDeviceObjectGeneralRef_c2199058-308e-4207-b035-30de28c64fa5.xml, wdf.wdfdeviceinitregisterpowerstatechangecallback, kmdf.wdfdeviceinitregisterpowerstatechangecallback, PFN_WDFDEVICEINITREGISTERPOWERSTATECHANGECALLBACK, WdfDeviceInitRegisterPowerStateChangeCallback, wdfdevice/WdfDeviceInitRegisterPowerStateChangeCallback, WdfDeviceInitRegisterPowerStateChangeCallback method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,11 +116,9 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |

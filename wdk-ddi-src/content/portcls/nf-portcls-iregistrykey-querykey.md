@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1b2642da-1b04-49a8-942e-6eb93afd12f2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey, IRegistryKey interface [Audio Devices], QueryKey method, QueryKey method [Audio Devices], IRegistryKey interface, audio.iregistrykey_querykey, QueryKey method [Audio Devices], QueryKey, audmp-routines_88fe19d0-095e-4f70-b8aa-a0c908600296.xml, IRegistryKey::QueryKey, portcls/IRegistryKey::QueryKey
+ms.keywords : QueryKey, audio.iregistrykey_querykey, IRegistryKey, IRegistryKey interface [Audio Devices], QueryKey method, audmp-routines_88fe19d0-095e-4f70-b8aa-a0c908600296.xml, QueryKey method [Audio Devices], portcls/IRegistryKey::QueryKey, QueryKey method [Audio Devices], IRegistryKey interface, IRegistryKey::QueryKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -114,26 +114,22 @@ If the <i>KeyInformation</i> buffer is too small to hold the requested informati
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
+
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
+
+<a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
 
 <a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
 
 <a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
-
-<a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
-
-<a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 463d6fbd-cbe4-4de1-a01a-52a5002f24b8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, debugger.outputprompt, IDebugControl2::OutputPrompt, OutputPrompt method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], OutputPrompt method, OutputPrompt method [Windows Debugging], IDebugControl3 interface, IDebugControl_bb972181-80f5-4c7a-8705-919273529eee.xml, IDebugControl interface [Windows Debugging], OutputPrompt method, IDebugControl3::OutputPrompt, dbgeng/IDebugControl2::OutputPrompt, IDebugControl3 interface [Windows Debugging], OutputPrompt method, dbgeng/IDebugControl3::OutputPrompt, IDebugControl::OutputPrompt, OutputPrompt method [Windows Debugging], OutputPrompt method [Windows Debugging], IDebugControl2 interface, OutputPrompt, dbgeng/IDebugControl::OutputPrompt
+ms.keywords : dbgeng/IDebugControl3::OutputPrompt, IDebugControl3::OutputPrompt, IDebugControl3 interface [Windows Debugging], OutputPrompt method, IDebugControl2 interface [Windows Debugging], OutputPrompt method, dbgeng/IDebugControl::OutputPrompt, IDebugControl::OutputPrompt, OutputPrompt method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::OutputPrompt, IDebugControl3, IDebugControl_bb972181-80f5-4c7a-8705-919273529eee.xml, OutputPrompt, OutputPrompt method [Windows Debugging], IDebugControl interface, IDebugControl2::OutputPrompt, OutputPrompt method [Windows Debugging], debugger.outputprompt, IDebugControl interface [Windows Debugging], OutputPrompt method, OutputPrompt method [Windows Debugging], IDebugControl3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -236,7 +236,7 @@ String that contains the name of the specified symbol (and displacement, if any)
 
 If <i>Format</i> is <b>NULL</b>, only the standard prompt text is sent to the output callbacks.
 
-``
+`Arg1`
 
 
 
@@ -276,30 +276,25 @@ For more information about prompting the user, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553231">OutputPromptVaList</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553231">OutputPromptVaList</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
 
  
 

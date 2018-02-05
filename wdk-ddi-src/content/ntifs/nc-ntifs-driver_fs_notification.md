@@ -58,7 +58,7 @@ void DriverFsNotification(
 
 `*DeviceObject`
 
-
+A pointer to a file system device object for which the notification was called.
 
 `FsActive`
 
@@ -76,20 +76,16 @@ You must declare the callback function by using the <i>DRIVER_FS_NOTIFICATION</i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 and later versions of the Windows operating system. Available in Microsoft Windows 2000 and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>
-
 <a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
+
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md">IoRegisterFsRegistrationChangeEx</a>
 
 <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
 

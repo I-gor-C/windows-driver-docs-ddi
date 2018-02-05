@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 718431f9-e4cc-4e79-84d3-a59f5399e711
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.hbafcpscsientry, PHBAFCPScsiEntry structure pointer [Storage Devices], PHBAFCPScsiEntry, HBAFCPScsiEntry structure [Storage Devices], hbapiwmi/HBAFCPScsiEntry, structs-Fibre_500172f1-a231-4530-afdf-fa0ba05d4904.xml, hbapiwmi/PHBAFCPScsiEntry, HBAFCPScsiEntry, *PHBAFCPScsiEntry, _HBAFCPScsiEntry
+ms.keywords : structs-Fibre_500172f1-a231-4530-afdf-fa0ba05d4904.xml, *PHBAFCPScsiEntry, hbapiwmi/HBAFCPScsiEntry, _HBAFCPScsiEntry, storage.hbafcpscsientry, HBAFCPScsiEntry structure [Storage Devices], PHBAFCPScsiEntry structure pointer [Storage Devices], PHBAFCPScsiEntry, HBAFCPScsiEntry, hbapiwmi/PHBAFCPScsiEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HBAFCPScsiEntry, *PHBAFCPScsiEntry
+req.typenames : "*PHBAFCPScsiEntry, HBAFCPScsiEntry"
 ---
 
 # _HBAFCPScsiEntry structure
@@ -69,9 +69,6 @@ Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbascsiid.md">HBA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

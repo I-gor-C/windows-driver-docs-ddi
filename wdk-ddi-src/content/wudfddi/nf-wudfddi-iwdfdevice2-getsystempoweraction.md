@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0030d64b-3f88-4bb3-b7d2-fcdc57d4d887
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetSystemPowerAction, wdf.iwdfdevice2_getsystempoweraction, IWDFDevice2::GetSystemPowerAction, umdf.iwdfdevice2_getsystempoweraction, UMDFDeviceObjectRef_a0135e99-c33a-4480-afb3-189d6a89b5d2.xml, GetSystemPowerAction method, IWDFDevice2 interface, IWDFDevice2 interface, GetSystemPowerAction method, GetSystemPowerAction method, wudfddi/IWDFDevice2::GetSystemPowerAction, IWDFDevice2
+ms.keywords : UMDFDeviceObjectRef_a0135e99-c33a-4480-afb3-189d6a89b5d2.xml, GetSystemPowerAction, GetSystemPowerAction method, wdf.iwdfdevice2_getsystempoweraction, umdf.iwdfdevice2_getsystempoweraction, IWDFDevice2 interface, GetSystemPowerAction method, wudfddi/IWDFDevice2::GetSystemPowerAction, GetSystemPowerAction method, IWDFDevice2 interface, IWDFDevice2, IWDFDevice2::GetSystemPowerAction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -92,14 +92,12 @@ If the computer and the device are both in their working states when the driver 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

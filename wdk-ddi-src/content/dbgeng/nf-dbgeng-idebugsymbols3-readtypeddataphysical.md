@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 72562325-27f9-4e80-b03f-8926adad99c1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::ReadTypedDataPhysical, IDebugSymbols::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], ReadTypedDataPhysical method, dbgeng/IDebugSymbols2::ReadTypedDataPhysical, IDebugSymbols3 interface [Windows Debugging], ReadTypedDataPhysical method, IDebugSymbols_d9131c11-5752-4b05-b779-69cb256b8ded.xml, IDebugSymbols interface [Windows Debugging], ReadTypedDataPhysical method, IDebugSymbols2::ReadTypedDataPhysical, ReadTypedDataPhysical, IDebugSymbols3, ReadTypedDataPhysical method [Windows Debugging], debugger.readtypeddataphysical, dbgeng/IDebugSymbols3::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : dbgeng/IDebugSymbols3::ReadTypedDataPhysical, IDebugSymbols::ReadTypedDataPhysical, IDebugSymbols2 interface [Windows Debugging], ReadTypedDataPhysical method, IDebugSymbols3::ReadTypedDataPhysical, IDebugSymbols interface [Windows Debugging], ReadTypedDataPhysical method, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::ReadTypedDataPhysical, IDebugSymbols2::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface, ReadTypedDataPhysical, debugger.readtypeddataphysical, IDebugSymbols_d9131c11-5752-4b05-b779-69cb256b8ded.xml, IDebugSymbols3, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], ReadTypedDataPhysical method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -121,18 +121,13 @@ This method is only available in kernel mode debugging.
 
 The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.
 
-This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="..\dbgeng\nf-dbgeng-idebugdataspaces-readphysical.md">ReadPhysical</a>.
+This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="..\wdbgexts\nf-wdbgexts-readphysical.md">ReadPhysical</a>.
 
 For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

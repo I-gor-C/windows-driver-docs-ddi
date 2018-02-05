@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b3b86cf8-0e0c-4ed1-9d8c-6f2fef00b9cd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILSUPSVCINFO, RILSUPSVCINFO structure [Network Drivers Starting with Windows Vista], RILSUPSVCINFO, netvista.rilsupsvcinfo_2, *LPRILSUPSVCINFO
+ms.keywords : netvista.rilsupsvcinfo_2, *LPRILSUPSVCINFO, RILSUPSVCINFO, rilapitypes/RILSUPSVCINFO, RILSUPSVCINFO structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSUPSVCINFO, *LPRILSUPSVCINFO
+req.typenames : "*LPRILSUPSVCINFO, RILSUPSVCINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -150,7 +150,4 @@ typedef struct _RILSUPSVCINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

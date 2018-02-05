@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0d722f10-d29d-4197-a2c1-5c2a77004abf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_UAPCS_PERSOCHECKSTATE, netvista.riluiccapppersocheckstatusparammask_2, RIL_PARAM_UAPCS_ALL, rilapitypes/RILUICCAPPPERSOCHECKSTATUSPARAMMASK, rilapitypes/RIL_PARAM_UAPCS_PERSOFEATURE, RILUICCAPPPERSOCHECKSTATUSPARAMMASK, RIL_PARAM_UAPCS_PERSOFEATURE, rilapitypes/RIL_PARAM_UAPCS_ALL, RILUICCAPPPERSOCHECKSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_UAPCS_PERSOCHECKSTATE
+ms.keywords : rilapitypes/RIL_PARAM_UAPCS_PERSOFEATURE, RIL_PARAM_UAPCS_PERSOCHECKSTATE, rilapitypes/RIL_PARAM_UAPCS_PERSOCHECKSTATE, RIL_PARAM_UAPCS_PERSOFEATURE, rilapitypes/RILUICCAPPPERSOCHECKSTATUSPARAMMASK, rilapitypes/RIL_PARAM_UAPCS_ALL, RILUICCAPPPERSOCHECKSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILUICCAPPPERSOCHECKSTATUSPARAMMASK, netvista.riluiccapppersocheckstatusparammask_2, RIL_PARAM_UAPCS_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

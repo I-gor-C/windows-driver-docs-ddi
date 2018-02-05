@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7d29fb09-0ddc-4b61-8f85-c0e69d891bc5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeResetSynchronously method, wdfusb/WdfUsbTargetPipeResetSynchronously, WdfUsbTargetPipeResetSynchronously, kmdf.wdfusbtargetpiperesetsynchronously, PFN_WDFUSBTARGETPIPERESETSYNCHRONOUSLY, DFUsbRef_07fcbce0-9754-49c9-988b-0875242739a0.xml, wdf.wdfusbtargetpiperesetsynchronously
+ms.keywords : kmdf.wdfusbtargetpiperesetsynchronously, WdfUsbTargetPipeResetSynchronously, wdfusb/WdfUsbTargetPipeResetSynchronously, DFUsbRef_07fcbce0-9754-49c9-988b-0875242739a0.xml, WdfUsbTargetPipeResetSynchronously method, wdf.wdfusbtargetpiperesetsynchronously, PFN_WDFUSBTARGETPIPERESETSYNCHRONOUSLY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -185,24 +185,23 @@ For more information about the <b>WdfUsbTargetPipeResetSynchronously</b> method 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestForUrbXrb, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeabortsynchronously.md">WdfUsbTargetPipeAbortSynchronously</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeabortsynchronously.md">WdfUsbTargetPipeAbortSynchronously</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
  
 

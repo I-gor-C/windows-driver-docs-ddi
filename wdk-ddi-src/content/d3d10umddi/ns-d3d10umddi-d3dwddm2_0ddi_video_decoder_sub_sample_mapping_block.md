@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FDB38644-AC61-401A-97E2-7CB0ED1C33D4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK, D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK, D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK structure [Display Devices], display.d3dwddm2_0ddi_video_decoder_sub_sample_mapping_block
+ms.keywords : display.d3dwddm2_0ddi_video_decoder_sub_sample_mapping_block, d3d10umddi/D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK, D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK structure [Display Devices], D3DWDDM2_0DDI_VIDEO_DECODER_SUB_SAMPLE_MAPPING_BLOCK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ Values in the sub sample mapping blocks are relative to the start of the decode 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

@@ -75,11 +75,6 @@ The page table size in bytes. The size must be a multiple of the page size of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

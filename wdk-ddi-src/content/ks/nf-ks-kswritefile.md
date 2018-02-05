@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ed66db40-d159-4660-96c0-da52f752a409
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsWriteFile function [Streaming Media Devices], ks/KsWriteFile, stream.kswritefile, ksfunc_4e15871e-8093-4b8e-a1ec-0eda4588e262.xml, KsWriteFile
+ms.keywords : KsWriteFile function [Streaming Media Devices], ksfunc_4e15871e-8093-4b8e-a1ec-0eda4588e262.xml, stream.kswritefile, KsWriteFile, ks/KsWriteFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,11 +100,6 @@ The <b>KsWriteFile</b> function returns STATUS_SUCCESS if successful, STATUS_PEN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

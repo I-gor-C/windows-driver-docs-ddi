@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c49f79cc-6ceb-4379-94ac-983b897d198b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d12ddi-command-list-funcs-video-process-0032, d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032 structure [Display Devices], D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032
+ms.keywords : D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032 structure [Display Devices], d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_PROCESS_0032, display.d3d12ddi-command-list-funcs-video-process-0032
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -116,7 +116,4 @@ Write buffer immediate.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h |

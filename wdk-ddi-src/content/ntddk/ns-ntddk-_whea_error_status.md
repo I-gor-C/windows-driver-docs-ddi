@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 5b11112b-e900-4894-a9ce-6895a4fa1956
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS, whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, *PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], whea.whea_error_status, ntddk/PWHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], _WHEA_ERROR_STATUS
+ms.keywords : ntddk/PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS, whea.whea_error_status, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, PWHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS, _WHEA_ERROR_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS"
+req.typenames : WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
 ---
 
 # _WHEA_ERROR_STATUS structure
@@ -79,9 +79,7 @@ A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_wh
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

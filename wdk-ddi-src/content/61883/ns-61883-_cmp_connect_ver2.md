@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 2A2C1478-0512-4F84-90B9-B9C62B5D44DA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883/CMP_CONNECT_VER2, _CMP_CONNECT_VER2, *PCMP_CONNECT_VER2, IEEE.cmp_connect_ver2, CMP_CONNECT, CMP_CONNECT_VER2 structure, 61883/PCMP_CONNECT_VER2, CMP_CONNECT_VER2, *PCMP_CONNECT, PCMP_CONNECT_VER2, PCMP_CONNECT_VER2 structure pointer
+ms.keywords : 61883/CMP_CONNECT_VER2, 61883/PCMP_CONNECT_VER2, *PCMP_CONNECT_VER2, CMP_CONNECT_VER2, PCMP_CONNECT_VER2 structure pointer, IEEE.cmp_connect_ver2, *PCMP_CONNECT, CMP_CONNECT, PCMP_CONNECT_VER2, CMP_CONNECT_VER2 structure, _CMP_CONNECT_VER2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,9 +101,6 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

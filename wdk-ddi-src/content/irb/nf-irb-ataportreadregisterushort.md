@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a0a9792c-a2a1-4079-9e1c-c41c5b872fa0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ataportreadregisterushort, AtaPortReadRegisterUshort routine [Storage Devices], AtaPortReadRegisterUshort, atartns_4173b6fd-0784-4279-ae9e-d51469a000c6.xml, irb/AtaPortReadRegisterUshort
+ms.keywords : storage.ataportreadregisterushort, AtaPortReadRegisterUshort routine [Storage Devices], irb/AtaPortReadRegisterUshort, atartns_4173b6fd-0784-4279-ae9e-d51469a000c6.xml, AtaPortReadRegisterUshort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,22 +66,17 @@ A pointer to the register to be read. The address value that is assigned to this
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
-
-<a href="..\irb\nf-irb-ataportreadregisterulong.md">AtaPortReadRegisterUlong</a>
 
 <a href="..\irb\nf-irb-ataportreadregisteruchar.md">AtaPortReadRegisterUchar</a>
 
 <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+
+<a href="..\irb\nf-irb-ataportreadregisterulong.md">AtaPortReadRegisterUlong</a>
 
  
 

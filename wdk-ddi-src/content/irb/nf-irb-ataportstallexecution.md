@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5dae484f-fb79-4291-bae5-dba0be7f9b97
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : irb/AtaPortStallExecution, storage.ataportstallexecution, AtaPortStallExecution, atartns_3a78519d-4ee5-4a4a-9564-1d2bbd256300.xml, AtaPortStallExecution function [Storage Devices]
+ms.keywords : storage.ataportstallexecution, AtaPortStallExecution, AtaPortStallExecution function [Storage Devices], irb/AtaPortStallExecution, atartns_3a78519d-4ee5-4a4a-9564-1d2bbd256300.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,9 @@ Miniport drivers should use the <a href="..\irb\nf-irb-ataportrequesttimer.md">A
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

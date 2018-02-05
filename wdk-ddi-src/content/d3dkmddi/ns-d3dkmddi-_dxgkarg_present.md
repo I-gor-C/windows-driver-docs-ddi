@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1bf91677-fa9e-4738-b8ea-efce90a52859
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_PRESENT, d3dkmddi/DXGKARG_PRESENT, _DXGKARG_PRESENT, display.dxgkarg_present, *INOUT_PDXGKARG_PRESENT, DXGKARG_PRESENT structure [Display Devices], DmStructs_cbe9fbba-047c-468e-bb52-0f90c4e2b75c.xml
+ms.keywords : "_DXGKARG_PRESENT, d3dkmddi/DXGKARG_PRESENT, DmStructs_cbe9fbba-047c-468e-bb52-0f90c4e2b75c.xml, DXGKARG_PRESENT, display.dxgkarg_present, *INOUT_PDXGKARG_PRESENT, DXGKARG_PRESENT structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -203,26 +203,24 @@ The driver is not required to perform any clipping. The Microsoft DirectX graphi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
-
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentmultiplaneoverlayinfo.md">DXGK_PRESENTMULTIPLANEOVERLAYINFO</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentflags.md">DXGK_PRESENTFLAGS</a>
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
+
 <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentmultiplaneoverlayinfo.md">DXGK_PRESENTMULTIPLANEOVERLAYINFO</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
  
 

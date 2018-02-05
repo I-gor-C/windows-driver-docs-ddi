@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 26f5e98d-0709-403a-abcf-776c117d4f38
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMOUNTDEV_NAME structure pointer [Storage Devices], mountmgr/PMOUNTDEV_NAME, MOUNTDEV_NAME, PMOUNTDEV_NAME, structs-mntmgr_b7eec4f5-e4fc-4931-82e5-c6ac5cd4b48f.xml, _MOUNTDEV_NAME, MOUNTDEV_NAME structure [Storage Devices], storage.mountdev_name, *PMOUNTDEV_NAME, mountmgr/MOUNTDEV_NAME
+ms.keywords : PMOUNTDEV_NAME structure pointer [Storage Devices], PMOUNTDEV_NAME, structs-mntmgr_b7eec4f5-e4fc-4931-82e5-c6ac5cd4b48f.xml, MOUNTDEV_NAME structure [Storage Devices], mountmgr/PMOUNTDEV_NAME, _MOUNTDEV_NAME, *PMOUNTDEV_NAME, storage.mountdev_name, mountmgr/MOUNTDEV_NAME, MOUNTDEV_NAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,18 +64,15 @@ Contains the length of the name, in bytes.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
 
 ## See Also
 
+<a href="..\mountmgr\ni-mountmgr-ioctl_mountdev_query_device_name.md">IOCTL_MOUNTDEV_QUERY_DEVICE_NAME</a>
+
 <a href="..\mountdev\ni-mountdev-ioctl_mountdev_link_created.md">IOCTL_MOUNTDEV_LINK_CREATED</a>
 
 <a href="..\mountdev\ni-mountdev-ioctl_mountdev_link_deleted.md">IOCTL_MOUNTDEV_LINK_DELETED</a>
-
-<a href="..\mountmgr\ni-mountmgr-ioctl_mountdev_query_device_name.md">IOCTL_MOUNTDEV_QUERY_DEVICE_NAME</a>
 
  
 

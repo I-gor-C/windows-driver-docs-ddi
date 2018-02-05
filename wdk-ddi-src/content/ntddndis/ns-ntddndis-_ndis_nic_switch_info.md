@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0da6927f-c940-4e46-a63a-2127bd7fa63d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_info, ntddndis/NDIS_NIC_SWITCH_INFO, PNDIS_NIC_SWITCH_INFO structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO, ntddndis/PNDIS_NIC_SWITCH_INFO"
+ms.keywords : PNDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_INFO, ntddndis/PNDIS_NIC_SWITCH_INFO, netvista.ndis_nic_switch_info, _NDIS_NIC_SWITCH_INFO, PNDIS_NIC_SWITCH_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO"
+req.typenames : NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO
 ---
 
 # _NDIS_NIC_SWITCH_INFO structure
@@ -161,20 +161,18 @@ For more information about the SR-IOV interface, see 	<a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451815">OID_NIC_SWITCH_CREATE_SWITCH</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info_array.md">NDIS_NIC_SWITCH_INFO_ARRAY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451815">OID_NIC_SWITCH_CREATE_SWITCH</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
 
 <b></b>
 

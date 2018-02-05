@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceQueryUsbCapability method, wdf.wdfusbtargetdevicequeryusbcapability, wdfusb/WdfUsbTargetDeviceQueryUsbCapability, PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY, WdfUsbTargetDeviceQueryUsbCapability, kmdf.wdfusbtargetdevicequeryusbcapability
+ms.keywords : PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY, wdfusb/WdfUsbTargetDeviceQueryUsbCapability, kmdf.wdfusbtargetdevicequeryusbcapability, wdf.wdfusbtargetdevicequeryusbcapability, WdfUsbTargetDeviceQueryUsbCapability, WdfUsbTargetDeviceQueryUsbCapability method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -241,20 +241,20 @@ This GUID applies to KMDF and UMDF drivers.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows Vista Windows Vista |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
 
  
 

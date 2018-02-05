@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5AB55689-66F4-41BD-97B6-1E01899AFE23
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlDecompressBufferEx, COMPRESSION_FORMAT_XPRESS_HUFF, ntifs/RtlDecompressBufferEx, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_XPRESS, COMPRESSION_FORMAT_DEFAULT, RtlDecompressBufferEx function [Installable File System Drivers], ifsk.rtldecompressbufferex, COMPRESSION_FORMAT_LZNT1
+ms.keywords : COMPRESSION_FORMAT_XPRESS, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_DEFAULT, ifsk.rtldecompressbufferex, RtlDecompressBufferEx, RtlDecompressBufferEx function [Installable File System Drivers], ntifs/RtlDecompressBufferEx, COMPRESSION_FORMAT_LZNT1, COMPRESSION_FORMAT_XPRESS_HUFF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -230,22 +230,20 @@ To compress an uncompressed buffer, use the <a href="..\ntifs\nf-ntifs-rtlcompre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting in Windows 8. Available in starting in Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ntifs\nf-ntifs-rtldecompressbuffer.md">RtlDecompressBuffer</a>
 
 <a href="..\ntifs\nf-ntifs-rtldecompressfragmentex.md">RtlDecompressFragmentEx</a>
 
 <a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
-
-<a href="..\ntifs\nf-ntifs-rtldecompressbuffer.md">RtlDecompressBuffer</a>
 
 <a href="..\ntifs\nf-ntifs-rtldecompressbufferex2.md">RtlDecompressBufferEx2</a>
 

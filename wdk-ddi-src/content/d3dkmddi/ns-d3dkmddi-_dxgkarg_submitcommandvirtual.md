@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7BBB4BEC-82F1-44B9-A0C2-1073517A4116
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_SUBMITCOMMANDVIRTUAL, display.dxgkarg_submitcommandvirtual, DXGKARG_SUBMITCOMMANDVIRTUAL structure [Display Devices], d3dkmddi/DXGKARG_SUBMITCOMMANDVIRTUAL, _DXGKARG_SUBMITCOMMANDVIRTUAL
+ms.keywords : "_DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL, display.dxgkarg_submitcommandvirtual, d3dkmddi/DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -114,16 +114,14 @@ The zero-based identification number of the video present source in a path of a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommandvirtual.md">DxgkDdiSubmitCommandVirtual</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a>
 

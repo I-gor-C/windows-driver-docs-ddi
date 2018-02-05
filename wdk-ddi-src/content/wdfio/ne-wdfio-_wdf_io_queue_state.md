@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d89c4d4c-d3c2-47fc-9eb8-e2eb8424d5cc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueDispatchRequests, DFQueueObjectRef_210e9189-4d80-4c0f-930b-319af65697d2.xml, _WDF_IO_QUEUE_STATE, WdfIoQueueDriverNoRequests, wdfio/WdfIoQueueDriverNoRequests, WdfIoQueuePnpHeld, WdfIoQueueDispatchRequests, WDF_IO_QUEUE_STATE enumeration, wdfio/WdfIoQueuePnpHeld, WdfIoQueueAcceptRequests, wdfio/WDF_IO_QUEUE_STATE, WdfIoQueueNoRequests, wdfio/WdfIoQueueAcceptRequests, kmdf.wdf_io_queue_state, wdf.wdf_io_queue_state, WDF_IO_QUEUE_STATE, wdfio/WdfIoQueueNoRequests
+ms.keywords : wdf.wdf_io_queue_state, wdfio/WDF_IO_QUEUE_STATE, wdfio/WdfIoQueueDispatchRequests, WdfIoQueueDriverNoRequests, wdfio/WdfIoQueueDriverNoRequests, wdfio/WdfIoQueueAcceptRequests, kmdf.wdf_io_queue_state, _WDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE enumeration, DFQueueObjectRef_210e9189-4d80-4c0f-930b-319af65697d2.xml, wdfio/WdfIoQueueNoRequests, WdfIoQueuePnpHeld, WdfIoQueueDispatchRequests, wdfio/WdfIoQueuePnpHeld, WDF_IO_QUEUE_STATE, WdfIoQueueNoRequests, WdfIoQueueAcceptRequests
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -96,7 +96,6 @@ The following functions are defined in <i>wdfio.h</i>:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |

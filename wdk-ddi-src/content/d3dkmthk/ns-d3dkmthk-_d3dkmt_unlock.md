@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 397d2ab0-89a0-42a8-a665-ca7e1ed5d8f3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_UNLOCK, display.d3dkmt_unlock, D3DKMT_UNLOCK, D3DKMT_UNLOCK structure [Display Devices], OpenGL_Structs_d4f3b3e8-fddd-41d2-8a7e-ee43f25a1f2d.xml, _D3DKMT_UNLOCK
+ms.keywords : d3dkmthk/D3DKMT_UNLOCK, D3DKMT_UNLOCK, D3DKMT_UNLOCK structure [Display Devices], display.d3dkmt_unlock, _D3DKMT_UNLOCK, OpenGL_Structs_d4f3b3e8-fddd-41d2-8a7e-ee43f25a1f2d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_UNLOCK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

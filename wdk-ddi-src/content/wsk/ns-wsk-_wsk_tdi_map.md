@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4c1407e9-2e4d-41cc-8d50-017c8c2bf20f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WSK_TDI_MAP structure [Network Drivers Starting with Windows Vista], PWSK_TDI_MAP structure pointer [Network Drivers Starting with Windows Vista], wskref_7be2eb13-c9b8-4fc8-bc00-b3d168353ed0.xml, wsk/WSK_TDI_MAP, wsk/PWSK_TDI_MAP, netvista.wsk_tdi_map, PWSK_TDI_MAP, _WSK_TDI_MAP, WSK_TDI_MAP, *PWSK_TDI_MAP
+ms.keywords : PWSK_TDI_MAP structure pointer [Network Drivers Starting with Windows Vista], *PWSK_TDI_MAP, wskref_7be2eb13-c9b8-4fc8-bc00-b3d168353ed0.xml, netvista.wsk_tdi_map, wsk/PWSK_TDI_MAP, wsk/WSK_TDI_MAP, WSK_TDI_MAP, WSK_TDI_MAP structure [Network Drivers Starting with Windows Vista], _WSK_TDI_MAP, PWSK_TDI_MAP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWSK_TDI_MAP, WSK_TDI_MAP"
+req.typenames : WSK_TDI_MAP, *PWSK_TDI_MAP
 req.product : Windows 10 or later.
 ---
 
@@ -91,16 +91,14 @@ The
 For more information about using TDI transports, see 
     <a href="https://msdn.microsoft.com/58fb5e62-e15d-4f15-8eb3-3e302ea08c4f">Using TDI Transports</a>.
 <div class="alert"><b>Note</b>  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use 
-    <mshelp:link keywords="netvista.windows_filtering_platform_callout_drivers" tabindex="0">Windows Filtering
-    Platform</mshelp:link> or 
+    <a href="https://msdn.microsoft.com/b9d88e59-3c4b-4804-8dd9-02c275927a1e">Windows Filtering
+    Platform</a> or 
     <a href="https://msdn.microsoft.com/90264a3d-f002-4205-8e15-9060644117a3">Winsock Kernel</a> instead.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also

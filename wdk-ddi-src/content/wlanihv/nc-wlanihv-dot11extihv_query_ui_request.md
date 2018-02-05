@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -87,20 +87,23 @@ Specifies any connection phase.
 
 Specifies the connection phase before the IHV Extensions DLL initiates a pre-association
        operation. For more information about the pre-association operation, see 
-       <mshelp:link keywords="netvista.pre_association_operations" tabindex="0">Pre-Association
-       Operations</mshelp:link>.
+       <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/pre-association-operation-overview">Pre-Association
+       Operations</a>.
 
 
 #### connection_phase_post_l3_connection
 
 Specifies the connection phase after the IHV Extensions DLL completes a post-association
        operation. For more information about the post-association operation, see 
-       <mshelp:link keywords="netvista.post_association_operations" tabindex="0">Post-Association
-       Operations</mshelp:link>.
+       <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/post-association-operations">Post-Association
+       Operations</a>.
 
 `*ppIhvUIRequest`
 
-
+The address of a pointer to a 
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_ui_request.md">DOT11EXT_IHV_UI_REQUEST</a> structure.
+     The IHV Extensions DLL must allocate a buffer for the DOT11EXT_IHV_UI_REQUEST structure by calling 
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>.
 
 
 ## Return Value
@@ -143,24 +146,19 @@ For example, if
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_ui_request.md">DOT11EXT_IHV_UI_REQUEST</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
  
 

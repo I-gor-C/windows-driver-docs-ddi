@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e82ab7bf-9585-4c8b-9e1f-2082e2c530b1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_OUTPUT, D3D11_1DDI_VIDEO_OUTPUT structure [Display Devices], display.d3d11_1ddi_video_output, D3D11_1DDI_VIDEO_OUTPUT
+ms.keywords : D3D11_1DDI_VIDEO_OUTPUT structure [Display Devices], display.d3d11_1ddi_video_output, d3d10umddi/D3D11_1DDI_VIDEO_OUTPUT, D3D11_1DDI_VIDEO_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ Reserved for system use. Do not use in your driver.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

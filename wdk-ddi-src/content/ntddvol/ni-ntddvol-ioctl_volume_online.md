@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS"
+req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_ONLINE IOCTL
@@ -77,9 +77,8 @@ The <b>Status</b> member is set to STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
 | **Header** | ntddvol.h (include Ntddvol.h) |
-| **IRQL** |  |
 
 ## See Also
 

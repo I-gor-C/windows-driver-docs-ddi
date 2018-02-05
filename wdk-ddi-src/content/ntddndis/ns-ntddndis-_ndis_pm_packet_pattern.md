@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dfda0b5f-06fc-4e94-b14c-6bd32c2c138a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : 212pnpoid_bfc58374-2745-4c29-a2ac-b7ef864aa710.xml, netvista.ndis_pm_packet_pattern, NDIS_PM_PACKET_PATTERN structure [Network Drivers Starting with Windows Vista], *PNDIS_PM_PACKET_PATTERN, ntddndis/PNDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN, ntddndis/NDIS_PM_PACKET_PATTERN, PNDIS_PM_PACKET_PATTERN structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PM_PACKET_PATTERN, _NDIS_PM_PACKET_PATTERN
+ms.keywords : ntddndis/PNDIS_PM_PACKET_PATTERN, _NDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN, PNDIS_PM_PACKET_PATTERN, netvista.ndis_pm_packet_pattern, NDIS_PM_PACKET_PATTERN structure [Network Drivers Starting with Windows Vista], 212pnpoid_bfc58374-2745-4c29-a2ac-b7ef864aa710.xml, PNDIS_PM_PACKET_PATTERN structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PM_PACKET_PATTERN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,8 +101,8 @@ A protocol driver sends this OID to a miniport driver to specify a wake-up patte
 </li>
 <li>
 
-<mshelp:link keywords="netvista.oid_pnp_remove_wake_up_pattern" tabindex="0">
-       OID_PNP_REMOVE_WAKE_UP_PATTERN</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-pnp-remove-wake-up-pattern">
+       OID_PNP_REMOVE_WAKE_UP_PATTERN</a>
 
 
 A protocol driver sends this OID to a miniport driver to delete a wake-up pattern that it previously
@@ -125,20 +125,18 @@ A protocol uses this OID to request a list of the wake-up patterns currently set
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NDIS_PM_PACKET_PATTERN (NDIS   5.1)) in Windows XP. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569773">OID_PNP_ADD_WAKE_UP_PATTERN</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-pnp-remove-wake-up-pattern">OID_PNP_REMOVE_WAKE_UP_PATTERN</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569783">OID_PNP_WAKE_UP_PATTERN_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569773">OID_PNP_ADD_WAKE_UP_PATTERN</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569783">OID_PNP_WAKE_UP_PATTERN_LIST</a>
 
  
 

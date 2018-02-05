@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 60538544-6baf-4d23-a65f-5c5e82bd6f11
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugBreakpoint2::RemoveFlags, IDebugBreakpoint2, IDebugBreakpoint2::RemoveFlags, dbgeng/IDebugBreakpoint::RemoveFlags, RemoveFlags, debugger.removeflags, IDebugBreakpoint2 interface [Windows Debugging], RemoveFlags method, IDebugBreakpoint::RemoveFlags, IDebugBreakpoint interface [Windows Debugging], RemoveFlags method, RemoveFlags method [Windows Debugging], RemoveFlags method [Windows Debugging], IDebugBreakpoint interface, ComOther_15793582-5533-4f63-8278-9556b160e6d2.xml, RemoveFlags method [Windows Debugging], IDebugBreakpoint2 interface
+ms.keywords : IDebugBreakpoint2 interface [Windows Debugging], RemoveFlags method, ComOther_15793582-5533-4f63-8278-9556b160e6d2.xml, IDebugBreakpoint interface [Windows Debugging], RemoveFlags method, dbgeng/IDebugBreakpoint::RemoveFlags, IDebugBreakpoint2, IDebugBreakpoint::RemoveFlags, debugger.removeflags, RemoveFlags, RemoveFlags method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::RemoveFlags, IDebugBreakpoint2::RemoveFlags, RemoveFlags method [Windows Debugging], RemoveFlags method [Windows Debugging], IDebugBreakpoint interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,11 +87,6 @@ For more information about breakpoint properties, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

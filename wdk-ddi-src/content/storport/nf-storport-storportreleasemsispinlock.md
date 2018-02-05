@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5a2cf757-9dca-4717-a775-834a22c02a12
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_212b8090-c4a3-4ea8-8c50-6704a6d0cee7.xml, StorPortReleaseMSISpinLock, StorPortReleaseMSISpinLock routine [Storage Devices], storage.storportreleasemsispinlock, storport/StorPortReleaseMSISpinLock
+ms.keywords : StorPortReleaseMSISpinLock routine [Storage Devices], storage.storportreleasemsispinlock, storprt_212b8090-c4a3-4ea8-8c50-6704a6d0cee7.xml, storport/StorPortReleaseMSISpinLock, StorPortReleaseMSISpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,14 +118,11 @@ Miniport drivers are not required to acquire MSI spin locks for messages unless 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

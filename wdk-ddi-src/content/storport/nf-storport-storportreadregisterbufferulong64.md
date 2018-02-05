@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 585EE323-99EC-4367-8D97-CB554D695C11
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReadRegisterBufferUlong64, storport/StorPortReadRegisterBufferUlong64, StorPortReadRegisterBufferUlong64 routine [Storage Devices], storage.storportreadregisterbufferulong64
+ms.keywords : storage.storportreadregisterbufferulong64, StorPortReadRegisterBufferUlong64, StorPortReadRegisterBufferUlong64 routine [Storage Devices], storport/StorPortReadRegisterBufferUlong64
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -83,14 +83,10 @@ The <b>StorPortReadRegisterBufferUlong64</b> routine is only available on the 64
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | storport.h |
 
 ## See Also
 

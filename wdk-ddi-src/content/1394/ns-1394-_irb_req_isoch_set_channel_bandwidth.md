@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : CBEB68C2-549F-4EB6-9AF4-4DCA6749F75D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH, IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH, IEEE.irb_req_isoch_set_channel_bandwidth, 1394/IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH, IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH structure [Buses]"
+ms.keywords : 1394/IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH, IEEE.irb_req_isoch_set_channel_bandwidth, IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH structure [Buses], _IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH, IRB_REQ_ISOCH_SET_CHANNEL_BANDWIDTH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,7 +71,4 @@ This request does not require the caller to know the bandwidth that was allocate
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

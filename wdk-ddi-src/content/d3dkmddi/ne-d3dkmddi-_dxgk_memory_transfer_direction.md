@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A45411DF-AD08-4349-A134-091343E7989E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_memory_transfer_direction, DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL, d3dkmddi/DXGK_MEMORY_TRANSFER_DIRECTION, d3dkmddi/DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL, DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM, d3dkmddi/DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL, DXGK_MEMORY_TRANSFER_DIRECTION, DXGK_MEMORY_TRANSFER_DIRECTION enumeration [Display Devices], _DXGK_MEMORY_TRANSFER_DIRECTION, d3dkmddi/DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM, DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL
+ms.keywords : d3dkmddi/DXGK_MEMORY_TRANSFER_DIRECTION, DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL, DXGK_MEMORY_TRANSFER_DIRECTION, _DXGK_MEMORY_TRANSFER_DIRECTION, d3dkmddi/DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL, DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM, d3dkmddi/DXGK_MEMORY_TRANSFER_LOCAL_TO_SYSTEM, d3dkmddi/DXGK_MEMORY_TRANSFER_LOCAL_TO_LOCAL, DXGK_MEMORY_TRANSFER_DIRECTION enumeration [Display Devices], DXGK_MEMORY_TRANSFER_SYSTEM_TO_LOCAL, display.dxgk_memory_transfer_direction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum _DXGK_MEMORY_TRANSFER_DIRECTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

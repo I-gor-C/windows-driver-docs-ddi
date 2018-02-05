@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 88d8171f-8ed4-40af-8c05-7421895dca26
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.iddcx_opm_configure_parameters, IDDCX_OPM_CONFIGURE_PARAMETERS, IDDCX_OPM_CONFIGURE_PARAMETERS structure [Display Devices], iddcx/IDDCX_OPM_CONFIGURE_PARAMETERS
+ms.keywords : iddcx/IDDCX_OPM_CONFIGURE_PARAMETERS, IDDCX_OPM_CONFIGURE_PARAMETERS structure [Display Devices], display.iddcx_opm_configure_parameters, IDDCX_OPM_CONFIGURE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ Total size of the structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

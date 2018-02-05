@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f6eec5a1-7d73-415f-84d9-1ec3f512abaf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvQueryColorProfile, print_interface-graphics_fce84759-2add-41bc-b4e5-c2b66e3abf04.xml, print.drvquerycolorprofile, winddiui/DrvQueryColorProfile, DrvQueryColorProfile function [Print Devices]
+ms.keywords : winddiui/DrvQueryColorProfile, DrvQueryColorProfile function [Print Devices], print.drvquerycolorprofile, DrvQueryColorProfile, print_interface-graphics_fce84759-2add-41bc-b4e5-c2b66e3abf04.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -150,11 +150,6 @@ If the output buffer size specified by <i>pcbProfileData</i> is too small, the d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

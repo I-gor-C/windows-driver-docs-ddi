@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 12525F3C-12D6-477E-8C7D-3DE9AAA044AE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelInitSetFlags, VmbChannelInitSetFlags function [Network Drivers Starting with Windows Vista], netvista.vmbchannelinitsetflags, vmbuskernelmodeclientlibapi/VmbChannelInitSetFlags
+ms.keywords : netvista.vmbchannelinitsetflags, VmbChannelInitSetFlags function [Network Drivers Starting with Windows Vista], VmbChannelInitSetFlags, vmbuskernelmodeclientlibapi/VmbChannelInitSetFlags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -101,11 +101,9 @@ The value in <i>Flags</i> has invalid bits.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |

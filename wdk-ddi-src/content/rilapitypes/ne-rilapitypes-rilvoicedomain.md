@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bc0e9ba8-c790-402a-900a-7ae2b4f76060
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_VOICE_DOMAIN_IMS, netvista.rilvoicedomain_2, rilapitypes/RILVOICEDOMAIN, RILVOICEDOMAIN enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_VOICE_DOMAIN_3GPP, RIL_VOICE_DOMAIN_3GPP2, RIL_VOICE_DOMAIN_IMS, rilapitypes/RIL_VOICE_DOMAIN_MAX, rilapitypes/RIL_VOICE_DOMAIN_3GPP2, RIL_VOICE_DOMAIN_3GPP, RIL_VOICE_DOMAIN_MAX, RILVOICEDOMAIN
+ms.keywords : RIL_VOICE_DOMAIN_MAX, rilapitypes/RILVOICEDOMAIN, RILVOICEDOMAIN, netvista.rilvoicedomain_2, RIL_VOICE_DOMAIN_3GPP, RIL_VOICE_DOMAIN_IMS, RIL_VOICE_DOMAIN_3GPP2, rilapitypes/RIL_VOICE_DOMAIN_IMS, rilapitypes/RIL_VOICE_DOMAIN_MAX, RILVOICEDOMAIN enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_VOICE_DOMAIN_3GPP2, rilapitypes/RIL_VOICE_DOMAIN_3GPP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILVOICEDOMAIN {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

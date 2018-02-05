@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e89e9108-28a1-46ac-8694-047a656dcb74
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_DATARANGE_ANALOGVIDEO structure [Streaming Media Devices], ksmedia/KS_DATARANGE_ANALOGVIDEO, stream.ks_datarange_analogvideo, tagKS_DATARANGE_ANALOGVIDEO, KS_DATARANGE_ANALOGVIDEO, PKS_DATARANGE_ANALOGVIDEO, *PKS_DATARANGE_ANALOGVIDEO, PKS_DATARANGE_ANALOGVIDEO structure pointer [Streaming Media Devices], vidcapstruct_43f72b11-2ac7-4b68-b595-c37022d956c7.xml, ksmedia/PKS_DATARANGE_ANALOGVIDEO
+ms.keywords : "*PKS_DATARANGE_ANALOGVIDEO, PKS_DATARANGE_ANALOGVIDEO structure pointer [Streaming Media Devices], tagKS_DATARANGE_ANALOGVIDEO, vidcapstruct_43f72b11-2ac7-4b68-b595-c37022d956c7.xml, ksmedia/PKS_DATARANGE_ANALOGVIDEO, PKS_DATARANGE_ANALOGVIDEO, ksmedia/KS_DATARANGE_ANALOGVIDEO, stream.ks_datarange_analogvideo, KS_DATARANGE_ANALOGVIDEO structure [Streaming Media Devices], KS_DATARANGE_ANALOGVIDEO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,16 +64,13 @@ Specifies the major identifier for the format.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-
 <a href="..\ksmedia\ns-ksmedia-tagks_analogvideoinfo.md">KS_ANALOGVIDEOINFO</a>
+
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
 
  
 

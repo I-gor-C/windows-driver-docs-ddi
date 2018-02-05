@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fba7eb60-0d19-4bfd-b484-2e615d3e9237
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_3_struct_3_fwps_F-O_ee69ce82-24a0-4757-bba4-f1abb3f00c8e.xml, FWPS_L2_INCOMING_FLAG_IS_RAW_IPV6_FRAMING, FWPS_L2_INCOMING_FLAG_IS_RAW_IPV4_FRAMING, fwpsk/FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_METADATA_FIELD_VSWITCH_PACKET_CONTEXT, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_PORT_ID, FWPS_INCOMING_METADATA_VALUES0_, FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_METADATA_FIELD_VSWITCH_DESTINATION_PORT_ID, FWPS_L2_METADATA_FIELD_WIFI_OPERATION_MODE, FWPS_INCOMING_METADATA_VALUES0 structure [Network Drivers Starting with Windows Vista], netvista.fwps_incoming_metadata_values0, FWPS_L2_INCOMING_FLAG_RECLASSIFY_MULTI_DESTINATION, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_NIC_INDEX, FWPS_L2_METADATA_FIELD_ETHERNET_MAC_HEADER_SIZE
+ms.keywords : FWPS_L2_METADATA_FIELD_VSWITCH_PACKET_CONTEXT, wfp_ref_3_struct_3_fwps_F-O_ee69ce82-24a0-4757-bba4-f1abb3f00c8e.xml, fwpsk/FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_METADATA_FIELD_WIFI_OPERATION_MODE, FWPS_INCOMING_METADATA_VALUES0_, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_NIC_INDEX, FWPS_L2_METADATA_FIELD_ETHERNET_MAC_HEADER_SIZE, FWPS_L2_METADATA_FIELD_VSWITCH_DESTINATION_PORT_ID, FWPS_L2_INCOMING_FLAG_IS_RAW_IPV4_FRAMING, FWPS_INCOMING_METADATA_VALUES0 structure [Network Drivers Starting with Windows Vista], FWPS_L2_INCOMING_FLAG_IS_RAW_IPV6_FRAMING, FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_INCOMING_FLAG_RECLASSIFY_MULTI_DESTINATION, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_PORT_ID, netvista.fwps_incoming_metadata_values0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -250,8 +250,8 @@ A handle for the data flow. This member contains valid data only if the
 `fragmentMetadata`
 
 An 
-     <mshelp:link keywords="netvista.fwps_inbound_fragment_metadata0" tabindex="0"><b>
-     FWPS_INBOUND_FRAGMENT_METADATA0</b></mshelp:link> structure that describes the fragment data for a received packet
+     <a href="https://msdn.microsoft.com/9bead001-7ea7-4a51-8a7c-82fe01017dd7">
+     FWPS_INBOUND_FRAGMENT_METADATA0</a> structure that describes the fragment data for a received packet
      fragment. This member contains valid data only if the FWPS_METADATA_FIELD_FRAGMENT_DATA flag is set in
      the 
      <b>currentMetadataValues</b> member.
@@ -574,29 +574,27 @@ The callout driver must follow these guidelines when it inspects the packet:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows Vista. Available starting with  Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.fwps_inbound_fragment_metadata0" tabindex="0"><b>
-   FWPS_INBOUND_FRAGMENT_METADATA0</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551235">FWPS_DISCARD_METADATA0</a>
+<a href="https://msdn.microsoft.com/9bead001-7ea7-4a51-8a7c-82fe01017dd7">
+   FWPS_INBOUND_FRAGMENT_METADATA0</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsqueryconnectionredirectstate0.md">FwpsQueryConnectionRedirectState0</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552427">FWP_BYTE_BLOB</a>
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552433">FWP_DIRECTION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552427">FWP_BYTE_BLOB</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552433">FWP_DIRECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551235">FWPS_DISCARD_METADATA0</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7b81fc29-4906-4095-b197-6b63f5f01ac0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : atartns_30b7c0f0-5636-4d81-b1de-13d8c413f4d6.xml, storage.ataportgetuncachedextension, AtaPortGetUnCachedExtension routine [Storage Devices], AtaPortGetUnCachedExtension, irb/AtaPortGetUnCachedExtension
+ms.keywords : AtaPortGetUnCachedExtension routine [Storage Devices], irb/AtaPortGetUnCachedExtension, storage.ataportgetuncachedextension, AtaPortGetUnCachedExtension, atartns_30b7c0f0-5636-4d81-b1de-13d8c413f4d6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,14 +87,9 @@ The miniport driver must not call <b>AtaPortGetUncachedExtension</b> from any ro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

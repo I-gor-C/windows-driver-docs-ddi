@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 46c6ffd1-4c01-4d1d-b7da-8f97f728ac71
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdpc/WdfDpcCreate, kmdf.wdfdpccreate, WdfDpcCreate method, PFN_WDFDPCCREATE, wdf.wdfdpccreate, WdfDpcCreate, DFDpcObjectRef_865403a4-b5c1-4113-b3b1-1929285bb82d.xml
+ms.keywords : wdf.wdfdpccreate, WdfDpcCreate method, wdfdpc/WdfDpcCreate, kmdf.wdfdpccreate, DFDpcObjectRef_865403a4-b5c1-4113-b3b1-1929285bb82d.xml, PFN_WDFDPCCREATE, WdfDpcCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -154,30 +154,28 @@ For more information about using DPC objects, see <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdpc.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
 
 <a href="..\wdfdpc\nf-wdfdpc-wdfdpcenqueue.md">WdfDpcEnqueue</a>
 
 <a href="..\wdfdpc\ns-wdfdpc-_wdf_dpc_config.md">WDF_DPC_CONFIG</a>
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfdpc\nf-wdfdpc-wdf_dpc_config_init.md">WDF_DPC_CONFIG_INIT</a>
 
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
-<a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
-
-<a href="..\wdfdpc\nf-wdfdpc-wdf_dpc_config_init.md">WDF_DPC_CONFIG_INIT</a>
+<a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a>
 
  
 

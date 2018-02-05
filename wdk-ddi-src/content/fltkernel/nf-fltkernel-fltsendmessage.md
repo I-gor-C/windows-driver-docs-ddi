@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 83e8389f-1960-4fe0-9a33-526311ecba82
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSendMessage, FltApiRef_p_to_z_17d1087d-2a25-4c72-aed4-9246b4610b8b.xml, fltkernel/FltSendMessage, ifsk.fltsendmessage, FltSendMessage function [Installable File System Drivers]
+ms.keywords : FltSendMessage, FltApiRef_p_to_z_17d1087d-2a25-4c72-aed4-9246b4610b8b.xml, ifsk.fltsendmessage, fltkernel/FltSendMessage, FltSendMessage function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -184,24 +184,22 @@ Otherwise, the minifilter driver does not receive a reply, and <b>FltSendMessage
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems. Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541513">FilterSendMessage</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcreatecommunicationport.md">FltCreateCommunicationPort</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540506">FilterGetMessage</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2b3acd3d-b5da-4dd3-89f1-0b8a7d68e54c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddscsi/SCSI_ADDRESS, SCSI_ADDRESS structure [Storage Devices], storage.scsi_address, _SCSI_ADDRESS, PSCSI_ADDRESS, SCSI_ADDRESS, *PSCSI_ADDRESS, ntddscsi/PSCSI_ADDRESS, structs-scsibus_6b7a15bf-09f3-4fe2-bbef-77e1fd6e1744.xml, PSCSI_ADDRESS structure pointer [Storage Devices]
+ms.keywords : SCSI_ADDRESS, structs-scsibus_6b7a15bf-09f3-4fe2-bbef-77e1fd6e1744.xml, PSCSI_ADDRESS, ntddscsi/PSCSI_ADDRESS, storage.scsi_address, _SCSI_ADDRESS, *PSCSI_ADDRESS, SCSI_ADDRESS structure [Storage Devices], PSCSI_ADDRESS structure pointer [Storage Devices], ntddscsi/SCSI_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCSI_ADDRESS, *PSCSI_ADDRESS
+req.typenames : "*PSCSI_ADDRESS, SCSI_ADDRESS"
 ---
 
 # _SCSI_ADDRESS structure
@@ -82,9 +82,6 @@ Legacy class drivers issue the <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_get_a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also

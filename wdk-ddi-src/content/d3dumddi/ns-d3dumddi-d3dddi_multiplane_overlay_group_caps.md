@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6909579F-5387-4A35-B65B-EF77CC50DCC4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, display.d3dddi_multiplane_overlay_group_caps, D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure [Display Devices]
+ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure [Display Devices], D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS, display.d3dddi_multiplane_overlay_group_caps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,7 @@ The overlay capabilities, given as a bitwise <b>OR</b> of values from the <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

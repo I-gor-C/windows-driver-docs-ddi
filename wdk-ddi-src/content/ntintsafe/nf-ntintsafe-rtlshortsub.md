@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F94435C2-A2FC-44F4-8A21-E56CBEB8CC37
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlshortsub, RtlShortSub function [Kernel-Mode Driver Architecture], ntintsafe/RtlShortSub, RtlShortSub
+ms.keywords : RtlShortSub, RtlShortSub function [Kernel-Mode Driver Architecture], kernel.rtlshortsub, ntintsafe/RtlShortSub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

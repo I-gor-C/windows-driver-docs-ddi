@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 971bbd30-5bde-4cf6-9b94-7c21c29590d5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsiop/PMSiSCSI_BootInformation, storage.msiscsi_bootinformation, structs-iSCSI_a33678de-f559-4c7a-8007-55ab0381b613.xml, iscsiop/MSiSCSI_BootInformation, _MSiSCSI_BootInformation, MSiSCSI_BootInformation, PMSiSCSI_BootInformation structure pointer [Storage Devices], MSiSCSI_BootInformation structure [Storage Devices], PMSiSCSI_BootInformation, *PMSiSCSI_BootInformation
+ms.keywords : storage.msiscsi_bootinformation, MSiSCSI_BootInformation, structs-iSCSI_a33678de-f559-4c7a-8007-55ab0381b613.xml, iscsiop/MSiSCSI_BootInformation, _MSiSCSI_BootInformation, MSiSCSI_BootInformation structure [Storage Devices], *PMSiSCSI_BootInformation, iscsiop/PMSiSCSI_BootInformation, PMSiSCSI_BootInformation structure pointer [Storage Devices], PMSiSCSI_BootInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MSiSCSI_BootInformation, *PMSiSCSI_BootInformation
+req.typenames : "*PMSiSCSI_BootInformation, MSiSCSI_BootInformation"
 ---
 
 # _MSiSCSI_BootInformation structure
@@ -71,9 +71,6 @@ You must implement this class if the adapter supports iSCSI boot.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also

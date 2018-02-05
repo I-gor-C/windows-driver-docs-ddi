@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortSetPowerSettingNotificationGuids routine [Storage Devices], storage.storportsetpowersettingnotificationguids, StorPortSetPowerSettingNotificationGuids, Adaptive Setting, storport/StorPortSetPowerSettingNotificationGuids, HIPM/DIPM Setting
+ms.keywords : storport/StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], storage.storportsetpowersettingnotificationguids, StorPortSetPowerSettingNotificationGuids, HIPM/DIPM Setting, Adaptive Setting
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,6 +70,29 @@ An array of power setting GUIDs to register for notification. A typical use for 
 Other miniports may define and register their own power setting GUIDs.
 
 
+#### Adaptive Setting (dab60367-53fe-4fbc-825e-521d069d2456)
+
+The period of AHCI link idle time before the link is put into a slumber state when HIPM or DIPM is enabled.
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>0</td>
+<td>Minimum value in milliseconds (only use Partial state).</td>
+</tr>
+<tr>
+<td>...</td>
+<td>Any intermediate value.</td>
+</tr>
+<tr>
+<td>300000</td>
+<td>Maximum value in milliseconds (5 minutes).</td>
+</tr>
+</table> 
+
+
 #### HIPM/DIPM Setting (0b2d69d7-a2a1-449c-9680-f91c70521c60)
 
 Configures the link power management mode for disk and storage devices that are attached to the system through an AHCI interface.
@@ -93,29 +116,6 @@ Configures the link power management mode for disk and storage devices that are 
 <td>2</td>
 <td>HIPM and DIPM</td>
 <td>HIPM and Device-Initiated Power Management (DIPM) are used.</td>
-</tr>
-</table> 
-
-
-#### Adaptive Setting (dab60367-53fe-4fbc-825e-521d069d2456)
-
-The period of AHCI link idle time before the link is put into a slumber state when HIPM or DIPM is enabled.
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0</td>
-<td>Minimum value in milliseconds (only use Partial state).</td>
-</tr>
-<tr>
-<td>...</td>
-<td>Any intermediate value.</td>
-</tr>
-<tr>
-<td>300000</td>
-<td>Maximum value in milliseconds (5 minutes).</td>
 </tr>
 </table>
 
@@ -163,20 +163,17 @@ The AHCI Link Power management settings are part of the Disk Settings subgroup (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
-
 <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
+
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
  
 

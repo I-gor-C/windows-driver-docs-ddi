@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 16BDC61E-390C-4D79-A8D0-049404974733
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure [Streaming Media Devices], ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure pointer [Streaming Media Devices], *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, ksmedia/KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, stream.kscamera_extendedprop_roi_whitebalance, tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
+ms.keywords : PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, stream.kscamera_extendedprop_roi_whitebalance, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure [Streaming Media Devices], ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE"
+req.typenames : KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure
@@ -64,7 +64,4 @@ See the <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_info.md">KSC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

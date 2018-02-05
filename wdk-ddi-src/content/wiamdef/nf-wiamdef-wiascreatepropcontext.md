@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : b820c19d-a12b-417b-a9a3-6a3d700009c0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasFncs_08d1a910-1036-46c9-a7a2-115a86275d60.xml, wiasCreatePropContext, wiamdef/wiasCreatePropContext, wiasCreatePropContext function [Imaging Devices], image.wiascreatepropcontext
+ms.keywords : wiasCreatePropContext, wiamdef/wiasCreatePropContext, image.wiascreatepropcontext, wiasCreatePropContext function [Imaging Devices], wiasFncs_08d1a910-1036-46c9-a7a2-115a86275d60.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -148,22 +148,19 @@ WIA_IPA_FORMAT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 
 <a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a>
-
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a>
 
  
 

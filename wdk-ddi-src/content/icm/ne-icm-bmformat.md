@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1c29bf1e-e785-48ab-aa2c-3665fd5c0ab0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : icm/BM_CMYKQUADS, icm/BM_R10G10B10A2_XR, icm/BM_16b_XYZ, print.bmformat, BM_xBGRQUADS, icm/BM_16b_Yxy, icm/BM_8CHANNEL, BM_16b_XYZ, BM_565RGB, icm/BM_NAMED_INDEX, icm/BM_YxyTRIPLETS, BM_RGBTRIPLETS, icm/BM_16b_GRAY, icm/BM_565RGB, BM_16b_G3CH, icm/BM_16b_RGB, BM_G3CHTRIPLETS, BM_10b_G3CH, icm/BM_x555Lab, icm/BM_16b_G3CH, icm/BM_10b_Lab, icm/BM_R16G16B16A16_FLOAT, icm/BM_10b_G3CH, BM_YxyTRIPLETS, BM_7CHANNEL, *PBMFORMAT, BM_CMYKQUADS, icm/BMFORMAT, icm/BM_16b_Lab, BM_16b_Lab, BM_GRAY, BM_10b_Lab, icm/BM_xBGRQUADS, BM_BGRTRIPLETS, BMFORMAT, BM_x555Yxy, BM_S2DOT13FIXED_scRGB, BM_x555XYZ, BM_10b_XYZ, icm/BM_XYZTRIPLETS, BM_5CHANNEL, BM_LabTRIPLETS, icm/BM_S2DOT13FIXED_scARGB, BMFORMAT enumeration [Print Devices], BM_S2DOT13FIXED_scARGB, BM_6CHANNEL, icm/BM_32b_scRGB, BM_x555Lab, BM_16b_GRAY, colorfnc_44898765-c0de-41ae-8036-b288ab45b3cb.xml, icm/BM_x555G3CH, BM_10b_RGB, BM_KYMCQUADS, icm/BM_BGRTRIPLETS, BM_32b_scRGB, icm/BM_10b_XYZ, BM_xRGBQUADS, BM_NAMED_INDEX, icm/BM_10b_RGB, icm/BM_xG3CHQUADS, icm/BM_G3CHTRIPLETS, BM_32b_scARGB, icm/BM_GRAY, icm/BM_xRGBQUADS, icm/BM_S2DOT13FIXED_scRGB, icm/BM_32b_scARGB, BM_8CHANNEL, BM_R10G10B10A2, icm/BM_R10G10B10A2, icm/BM_RGBTRIPLETS, icm/BM_7CHANNEL, BM_10b_Yxy, icm/BM_5CHANNEL, BM_xG3CHQUADS, icm/BM_x555RGB, icm/BM_x555XYZ, BM_XYZTRIPLETS, icm/BM_LabTRIPLETS, icm/BM_10b_Yxy, icm/BM_6CHANNEL, BM_x555RGB, BM_R16G16B16A16_FLOAT, icm/BM_x555Yxy, BM_16b_RGB, BM_x555G3CH, icm/BM_KYMCQUADS, BM_16b_Yxy, BM_R10G10B10A2_XR
+ms.keywords : icm/BM_LabTRIPLETS, BM_YxyTRIPLETS, BM_5CHANNEL, BM_R10G10B10A2, BM_6CHANNEL, BM_x555Lab, icm/BM_10b_XYZ, icm/BM_10b_Yxy, BM_10b_XYZ, icm/BM_16b_Lab, icm/BM_7CHANNEL, BM_16b_RGB, BM_16b_XYZ, icm/BM_32b_scARGB, BM_10b_Lab, BM_16b_G3CH, icm/BM_565RGB, icm/BM_S2DOT13FIXED_scARGB, icm/BM_RGBTRIPLETS, BM_R16G16B16A16_FLOAT, BM_10b_G3CH, BM_10b_Yxy, BM_NAMED_INDEX, BM_16b_GRAY, BM_16b_Yxy, icm/BMFORMAT, icm/BM_x555RGB, BM_8CHANNEL, icm/BM_16b_XYZ, BM_KYMCQUADS, icm/BM_10b_G3CH, icm/BM_R16G16B16A16_FLOAT, icm/BM_G3CHTRIPLETS, BM_16b_Lab, BM_S2DOT13FIXED_scARGB, icm/BM_R10G10B10A2, icm/BM_10b_RGB, BM_565RGB, BMFORMAT enumeration [Print Devices], BM_x555G3CH, icm/BM_16b_G3CH, BM_x555Yxy, BM_xRGBQUADS, BMFORMAT, icm/BM_32b_scRGB, icm/BM_xG3CHQUADS, icm/BM_KYMCQUADS, icm/BM_BGRTRIPLETS, icm/BM_CMYKQUADS, *PBMFORMAT, icm/BM_10b_Lab, BM_LabTRIPLETS, icm/BM_8CHANNEL, BM_GRAY, icm/BM_XYZTRIPLETS, icm/BM_6CHANNEL, icm/BM_5CHANNEL, icm/BM_GRAY, icm/BM_16b_GRAY, colorfnc_44898765-c0de-41ae-8036-b288ab45b3cb.xml, BM_32b_scRGB, icm/BM_xRGBQUADS, BM_S2DOT13FIXED_scRGB, BM_RGBTRIPLETS, icm/BM_NAMED_INDEX, icm/BM_x555G3CH, BM_x555RGB, icm/BM_x555XYZ, BM_xG3CHQUADS, icm/BM_x555Lab, BM_x555XYZ, icm/BM_xBGRQUADS, icm/BM_R10G10B10A2_XR, icm/BM_x555Yxy, BM_CMYKQUADS, BM_xBGRQUADS, BM_G3CHTRIPLETS, icm/BM_S2DOT13FIXED_scRGB, BM_BGRTRIPLETS, icm/BM_16b_RGB, icm/BM_YxyTRIPLETS, icm/BM_16b_Yxy, BM_R10G10B10A2_XR, print.bmformat, BM_32b_scARGB, BM_7CHANNEL, BM_XYZTRIPLETS, BM_10b_RGB
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -317,7 +317,5 @@ The PBMFORMAT and LPBMFORMAT data types are defined as pointers to this enumerat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
 | **Header** | icm.h |

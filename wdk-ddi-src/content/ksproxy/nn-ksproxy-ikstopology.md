@@ -59,8 +59,5 @@ The <b>IKsTopology</b> interface is supported by filters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h |
-| **DLL** |  |

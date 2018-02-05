@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : db7277d0-9671-4680-84d4-d3415ce3922f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_netbuf_structures_ref_a19368c6-0bef-4fe6-be52-d76e0c6ea99d.xml, NET_BUFFER_HEADER, PNET_BUFFER_HEADER, ndis/NET_BUFFER_HEADER, ndis/PNET_BUFFER_HEADER, NET_BUFFER_HEADER union [Network Drivers Starting with Windows Vista], netvista.net_buffer_header, _NET_BUFFER_HEADER, *PNET_BUFFER_HEADER, PNET_BUFFER_HEADER union pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis/PNET_BUFFER_HEADER, PNET_BUFFER_HEADER union pointer [Network Drivers Starting with Windows Vista], *PNET_BUFFER_HEADER, PNET_BUFFER_HEADER, ndis/NET_BUFFER_HEADER, NET_BUFFER_HEADER, _NET_BUFFER_HEADER, NET_BUFFER_HEADER union [Network Drivers Starting with Windows Vista], netvista.net_buffer_header, ndis_netbuf_structures_ref_a19368c6-0bef-4fe6-be52-d76e0c6ea99d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,16 +68,14 @@ NDIS maintains the information in the NET_BUFFER_HEADER union.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a>
-
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a>
 
  
 

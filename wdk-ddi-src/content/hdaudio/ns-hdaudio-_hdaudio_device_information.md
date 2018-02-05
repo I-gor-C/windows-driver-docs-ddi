@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 091aee9d-5ecd-481a-b5e2-28b4828b2c2e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : hdaudio/HDAUDIO_DEVICE_INFORMATION, audio.hdaudio_device_information, PHDAUDIO_DEVICE_INFORMATION, PHDAUDIO_DEVICE_INFORMATION structure pointer [Audio Devices], _HDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION structure [Audio Devices], HDAUDIO_DEVICE_INFORMATION, hdaudio/PHDAUDIO_DEVICE_INFORMATION, aud-prop2_3350e3d4-dfbe-4002-b237-2395f4a07c7f.xml, *PHDAUDIO_DEVICE_INFORMATION
+ms.keywords : PHDAUDIO_DEVICE_INFORMATION, hdaudio/PHDAUDIO_DEVICE_INFORMATION, *PHDAUDIO_DEVICE_INFORMATION, _HDAUDIO_DEVICE_INFORMATION, aud-prop2_3350e3d4-dfbe-4002-b237-2395f4a07c7f.xml, HDAUDIO_DEVICE_INFORMATION, hdaudio/HDAUDIO_DEVICE_INFORMATION, audio.hdaudio_device_information, HDAUDIO_DEVICE_INFORMATION structure [Audio Devices], PHDAUDIO_DEVICE_INFORMATION structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,9 +81,6 @@ The <a href="..\hdaudio\nc-hdaudio-pget_device_information.md">GetDeviceInformat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 94d19d5b-8fa5-437d-9359-e35ef103f380
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_5994a030-78ea-42c2-913a-1b2a9fcc2ea4.xml, wwan/PWWAN_SMS_SEND_PDU, _WWAN_SMS_SEND_PDU, *PWWAN_SMS_SEND_PDU, PWWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU structure [Network Drivers Starting with Windows Vista], PWWAN_SMS_SEND_PDU structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_SEND_PDU, netvista.wwan_sms_send_pdu
+ms.keywords : netvista.wwan_sms_send_pdu, PWWAN_SMS_SEND_PDU structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU, WwanRef_5994a030-78ea-42c2-913a-1b2a9fcc2ea4.xml, *PWWAN_SMS_SEND_PDU, _WWAN_SMS_SEND_PDU, PWWAN_SMS_SEND_PDU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -137,9 +137,7 @@ WwanSmsFormatCdma
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

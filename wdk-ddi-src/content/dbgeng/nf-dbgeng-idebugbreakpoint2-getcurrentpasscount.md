@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ff9b9988-6790-48d1-8423-60c63b0a90cf
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint2, GetCurrentPassCount, IDebugBreakpoint2 interface [Windows Debugging], GetCurrentPassCount method, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint interface [Windows Debugging], GetCurrentPassCount method, dbgeng/IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::GetCurrentPassCount, debugger.getcurrentpasscount, ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, IDebugBreakpoint::GetCurrentPassCount, IDebugBreakpoint2::GetCurrentPassCount
+ms.keywords : dbgeng/IDebugBreakpoint2::GetCurrentPassCount, IDebugBreakpoint2::GetCurrentPassCount, ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, IDebugBreakpoint2, IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging], GetCurrentPassCount method, debugger.getcurrentpasscount, IDebugBreakpoint interface [Windows Debugging], GetCurrentPassCount method, GetCurrentPassCount method [Windows Debugging], GetCurrentPassCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -94,11 +94,6 @@ For more information about breakpoint properties, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

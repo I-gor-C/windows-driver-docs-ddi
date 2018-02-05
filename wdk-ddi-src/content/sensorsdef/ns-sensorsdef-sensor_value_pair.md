@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 0D0B06FE-BE88-4FB2-92FC-8B6D396CEFE8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSENSOR_VALUE_PAIR structure pointer [Sensor Devices], sensors.sensor_value_pair, PSENSOR_VALUE_PAIR, sensorsdef/SENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR structure [Sensor Devices], sensorsdef/PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+ms.keywords : SENSOR_VALUE_PAIR structure [Sensor Devices], *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR, sensors.sensor_value_pair, sensorsdef/PSENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR structure pointer [Sensor Devices], sensorsdef/SENSOR_VALUE_PAIR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,7 +83,5 @@ The Value is one of the VT types (VARTYPE) that are supported by the sensor clas
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | sensorsdef.h |

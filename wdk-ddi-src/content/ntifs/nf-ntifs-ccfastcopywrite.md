@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 414d0b36-d7c2-4a01-8ceb-3817a11c422c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcFastCopyWrite routine [Installable File System Drivers], ccref_f5763242-c6f6-4638-8577-a6c65001a8ca.xml, ifsk.ccfastcopywrite, ntifs/CcFastCopyWrite, CcFastCopyWrite
+ms.keywords : CcFastCopyWrite, ntifs/CcFastCopyWrite, CcFastCopyWrite routine [Installable File System Drivers], ccref_f5763242-c6f6-4638-8577-a6c65001a8ca.xml, ifsk.ccfastcopywrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,20 +101,16 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
-
 <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : BA1D5AD2-E3E5-42CB-8E77-627B23078F80
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwPowerInformation routine [Kernel-Mode Driver Architecture], kernel.zwpowerinformation, NtPowerInformation, wdm/NtPowerInformation, wdm/ZwPowerInformation, PlatformInformation, ZwPowerInformation
+ms.keywords : NtPowerInformation, kernel.zwpowerinformation, wdm/NtPowerInformation, PlatformInformation, ZwPowerInformation, wdm/ZwPowerInformation, ZwPowerInformation routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -146,12 +146,11 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

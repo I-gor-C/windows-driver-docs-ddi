@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : de089f63-b2f4-4e8e-b653-15db3259a45e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_ACQUIREKEYEDMUTEX structure [Display Devices], display.d3dkmt_acquirekeyedmutex, D3DKMT_ACQUIREKEYEDMUTEX, d3dkmthk/D3DKMT_ACQUIREKEYEDMUTEX, OpenGL_Structs_114ed313-61ac-4c09-97fa-8b47a0aa40d1.xml, _D3DKMT_ACQUIREKEYEDMUTEX
+ms.keywords : d3dkmthk/D3DKMT_ACQUIREKEYEDMUTEX, OpenGL_Structs_114ed313-61ac-4c09-97fa-8b47a0aa40d1.xml, D3DKMT_ACQUIREKEYEDMUTEX, D3DKMT_ACQUIREKEYEDMUTEX structure [Display Devices], display.d3dkmt_acquirekeyedmutex, _D3DKMT_ACQUIREKEYEDMUTEX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,7 @@ If *<b>pTimeout</b> = 0, <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmute
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMT_ACQUIREKEYEDMUTEX is supported beginning with the Windows 7 operating system. D3DKMT_ACQUIREKEYEDMUTEX is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

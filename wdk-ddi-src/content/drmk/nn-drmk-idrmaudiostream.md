@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TX_METADATA, WDI_TX_METADATA"
+req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # IDrmAudioStream interface
@@ -71,8 +71,5 @@ A stream object created by <a href="https://msdn.microsoft.com/library/windows/h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | drmk.h |
-| **DLL** |  |

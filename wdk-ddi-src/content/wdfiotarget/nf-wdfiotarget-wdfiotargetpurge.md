@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C79492C5-3872-4ED9-9AD7-ABE5C5732D41
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfiotarget/WdfIoTargetPurge, WdfIoTargetPurge, wdf.wdfiotargetpurge, WdfIoTargetPurge method, kmdf.wdfiotargetpurge
+ms.keywords : WdfIoTargetPurge method, kmdf.wdfiotargetpurge, WdfIoTargetPurge, wdf.wdfiotargetpurge, wdfiotarget/WdfIoTargetPurge
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,24 +103,23 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
-
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstop.md">WdfIoTargetStop</a>
 
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
+
 <a href="..\wdfiotarget\ne-wdfiotarget-_wdf_io_target_purge_io_action.md">WDF_IO_TARGET_PURGE_IO_ACTION</a>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
 

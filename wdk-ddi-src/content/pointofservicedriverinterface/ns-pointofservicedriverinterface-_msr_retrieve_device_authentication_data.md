@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : e355ca5b-d396-4748-a0ec-b12294a6dcfa
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, pos.msr_retrieve_device_authentication_data, pointofservicedriverinterface/MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA structure pointer, _MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA structure, MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, pointofservicedriverinterface/PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA"
+ms.keywords : "*PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, pos.msr_retrieve_device_authentication_data, MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA structure, pointofservicedriverinterface/MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, _MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA structure pointer, pointofservicedriverinterface/PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA"
+req.typenames : MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, *PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA
 ---
 
 # _MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA structure
@@ -69,7 +69,4 @@ Unused.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

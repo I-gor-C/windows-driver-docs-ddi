@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 351BC859-E703-4F75-B691-A503C08560CF
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : PLPIT, PLPIT structure pointer [ACPI Devices], *PLPIT, acpi.lpit, acpitabl/PLPIT, _LPIT, acpitabl/LPIT, LPIT, LPIT structure [ACPI Devices]
+ms.keywords : "*PLPIT, LPIT structure [ACPI Devices], acpi.lpit, PLPIT structure pointer [ACPI Devices], acpitabl/LPIT, acpitabl/PLPIT, _LPIT, PLPIT, LPIT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ An array of states.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | acpitabl.h (include Acpitabl.h) |

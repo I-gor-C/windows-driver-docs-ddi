@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1ba8d745-96bf-4d9d-8784-e6594360c632
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILSETCALLWAITINGSTATUSPARAMS, ntddrilapitypes/RILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], RILSETCALLWAITINGSTATUSPARAMS, netvista.rilsetcallwaitingstatusparams"
+ms.keywords : "*LPRILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetcallwaitingstatusparams, ntddrilapitypes/RILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSETCALLWAITINGSTATUSPARAMS, *LPRILSETCALLWAITINGSTATUSPARAMS
+req.typenames : "*LPRILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS"
 ---
 
 # RILSETCALLWAITINGSTATUSPARAMS structure
@@ -74,7 +74,4 @@ typedef struct _RILSETCALLWAITINGSTATUSPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

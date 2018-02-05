@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c233d4e1-285c-4f74-bb37-808cf855b19c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportunlockpages, video/VideoPortUnlockPages, VideoPortUnlockPages function [Display Devices], VideoPort_Functions_f7a233cf-3db5-49db-94e9-d2c6ec96f05d.xml, VideoPortUnlockPages
+ms.keywords : VideoPortUnlockPages function [Display Devices], display.videoportunlockpages, video/VideoPortUnlockPages, VideoPort_Functions_f7a233cf-3db5-49db-94e9-d2c6ec96f05d.xml, VideoPortUnlockPages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,11 @@ This function can be called only within the context of a DMA IOCTL. It cannot be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 
 ## See Also
 

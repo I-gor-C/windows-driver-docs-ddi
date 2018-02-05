@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6aaa4ae9-fd3c-4cdd-ac37-0533c45143af
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisIfGetInterfaceIndexFromNetLuid, NdisIfGetInterfaceIndexFromNetLuid function [Network Drivers Starting with Windows Vista], netvista.ndisifgetinterfaceindexfromnetluid, ndis/NdisIfGetInterfaceIndexFromNetLuid, net_if_functions_ref_d375ff1d-3f7f-4f11-8fd3-c41340276d30.xml
+ms.keywords : ndis/NdisIfGetInterfaceIndexFromNetLuid, net_if_functions_ref_d375ff1d-3f7f-4f11-8fd3-c41340276d30.xml, NdisIfGetInterfaceIndexFromNetLuid, netvista.ndisifgetinterfaceindexfromnetluid, NdisIfGetInterfaceIndexFromNetLuid function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,14 +114,14 @@ For the interfaces that the NDIS proxy provider service manages, NDIS provides t
 <ul>
 <li>
 Miniport drivers can obtain the interface index and NET_LUID for a miniport adapter in the 
-      <mshelp:link keywords="netvista.ndis_miniport_init_parameters" tabindex="0"><b>
-      NDIS_MINIPORT_INIT_PARAMETERS</b></mshelp:link> structure.
+      <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">
+      NDIS_MINIPORT_INIT_PARAMETERS</a> structure.
 
 </li>
 <li>
 Filter drivers can obtain the interface index and NET_LUID for a filter module in the 
-      <mshelp:link keywords="netvista.ndis_filter_attach_parameters" tabindex="0"><b>
-      NDIS_FILTER_ATTACH_PARAMETERS</b></mshelp:link> structure.
+      <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
+      NDIS_FILTER_ATTACH_PARAMETERS</a> structure.
 
 </li>
 <li>
@@ -141,38 +141,36 @@ The interface index value can change without a computer restart. Deregistering a
     not confuse the interface index with the NET_LUID index that persists after a computer restarts.
 
 NDIS provides the 
-    <mshelp:link keywords="netvista.ndisifgetnetluidfrominterfaceindex" tabindex="0"><b>
-    NdisIfGetNetLuidFromInterfaceIndex</b></mshelp:link> function to get the NET_LUID value that is associated with a
+    <a href="..\ndis\nf-ndis-ndisifgetnetluidfrominterfaceindex.md">
+    NdisIfGetNetLuidFromInterfaceIndex</a> function to get the NET_LUID value that is associated with a
     specified interface index.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Interfaces_Function |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
 
-<mshelp:link keywords="netvista.ndisifgetnetluidfrominterfaceindex" tabindex="0"><b>
-   NdisIfGetNetLuidFromInterfaceIndex</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 
-<a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
-
 <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
-
 <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
+
+<a href="..\ndis\nf-ndis-ndisifgetnetluidfrominterfaceindex.md">
+   NdisIfGetNetLuidFromInterfaceIndex</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 
  
 

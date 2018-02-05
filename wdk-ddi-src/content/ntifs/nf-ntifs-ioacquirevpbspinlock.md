@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2a385a7a-e4c9-41ff-aaf2-7a4607fa2b2b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ioacquirevpbspinlock, ntifs/IoAcquireVpbSpinLock, ioref_b5833043-4673-46ff-850c-bd71da7defef.xml, IoAcquireVpbSpinLock, IoAcquireVpbSpinLock routine [Installable File System Drivers]
+ms.keywords : ntifs/IoAcquireVpbSpinLock, IoAcquireVpbSpinLock, ifsk.ioacquirevpbspinlock, IoAcquireVpbSpinLock routine [Installable File System Drivers], ioref_b5833043-4673-46ff-850c-bd71da7defef.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,14 +90,11 @@ After calling <b>IoAcquireVpbSpinLock</b>, the caller executes at IRQL DISPATCH_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

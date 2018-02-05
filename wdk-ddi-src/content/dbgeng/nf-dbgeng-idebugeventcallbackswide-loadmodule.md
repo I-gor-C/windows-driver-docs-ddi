@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 03a76d41-3af1-48a9-832a-1c255a8b0cc4
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugeventcallbackswide_loadmodule, IDebugEventCallbacksWide::LoadModule, LoadModule method [Windows Debugging], IDebugEventCallbacksWide, LoadModule, IDebugEventCallbacksWide interface [Windows Debugging], LoadModule method, LoadModule method [Windows Debugging], IDebugEventCallbacksWide interface, dbgeng/IDebugEventCallbacksWide::LoadModule
+ms.keywords : IDebugEventCallbacksWide, LoadModule method [Windows Debugging], IDebugEventCallbacksWide interface [Windows Debugging], LoadModule method, debugger.idebugeventcallbackswide_loadmodule, LoadModule, dbgeng/IDebugEventCallbacksWide::LoadModule, LoadModule method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide::LoadModule
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -102,11 +102,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

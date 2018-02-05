@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 905BA306-29A5-4AAB-BA30-6B459E0062F6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ursdevice/UrsSetHardwareEventSupport, UrsSetHardwareEventSupport, buses.urssethardwareeventsupport, UrsSetHardwareEventSupport function [Buses]
+ms.keywords : UrsSetHardwareEventSupport, buses.urssethardwareeventsupport, ursdevice/UrsSetHardwareEventSupport, UrsSetHardwareEventSupport function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,12 @@ Otherwise, if the driver supports role detection, it must set  <i>HardwareEventR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
+| **Library** | Urscxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

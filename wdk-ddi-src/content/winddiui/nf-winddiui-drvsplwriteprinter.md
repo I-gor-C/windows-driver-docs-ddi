@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c42bb90a-3c38-4c0c-b523-10e740a027c4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_interface-graphics_a59ea0df-c5d8-4a84-8b57-21dfa4f382c4.xml, winddiui/DrvSplWritePrinter, print.drvsplwriteprinter, DrvSplWritePrinter, DrvSplWritePrinter function [Print Devices]
+ms.keywords : DrvSplWritePrinter, DrvSplWritePrinter function [Print Devices], winddiui/DrvSplWritePrinter, print_interface-graphics_a59ea0df-c5d8-4a84-8b57-21dfa4f382c4.xml, print.drvsplwriteprinter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winddiui.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

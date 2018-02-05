@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 73402b35-85ce-4bb1-8ec5-619805d5a3e0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportreadportulong, VideoPort_Functions_347d0c32-a4b6-4061-bbd5-16325e0e3af6.xml, VideoPortReadPortUlong function [Display Devices], video/VideoPortReadPortUlong, VideoPortReadPortUlong
+ms.keywords : video/VideoPortReadPortUlong, display.videoportreadportulong, VideoPortReadPortUlong, VideoPort_Functions_347d0c32-a4b6-4061-bbd5-16325e0e3af6.xml, VideoPortReadPortUlong function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,22 +71,20 @@ Callers of <b>VideoPortReadPortUlong</b> can be running at any IRQL, provided th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
 
-<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 
  
 

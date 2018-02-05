@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b2ff3d7b-319d-4256-a574-cb32595fd02f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WskDeregister function [Network Drivers Starting with Windows Vista], netvista.wskderegister, wskref_45c2ad8f-a969-4a82-ac5e-67e4d3c96ffb.xml, WskDeregister, wsk/WskDeregister
+ms.keywords : wskref_45c2ad8f-a969-4a82-ac5e-67e4d3c96ffb.xml, netvista.wskderegister, WskDeregister, WskDeregister function [Network Drivers Starting with Windows Vista], wsk/WskDeregister
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -93,20 +93,17 @@ All sockets are closed.
 
 </li>
 </ul>For more information about attaching a WSK application to the WSK subsystem, see 
-    <mshelp:link keywords="netvista.registering_a_winsock_kernel_application" tabindex="0">Registering a Winsock Kernel
-    Application</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock Kernel
+    Application</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

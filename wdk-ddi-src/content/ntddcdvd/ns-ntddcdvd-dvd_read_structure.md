@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fe8c55de-e542-4c0d-a96b-31ad39e11dff
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DVD_READ_STRUCTURE structure [Storage Devices], DVD_READ_STRUCTURE, ntddcdvd/DVD_READ_STRUCTURE, PDVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE structure pointer [Storage Devices], structs-DVD_64ffaf42-815a-4a1e-a712-7027930d099f.xml, storage.dvd_read_structure, ntddcdvd/PDVD_READ_STRUCTURE
+ms.keywords : structs-DVD_64ffaf42-815a-4a1e-a712-7027930d099f.xml, DVD_READ_STRUCTURE, ntddcdvd/DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE, storage.dvd_read_structure, DVD_READ_STRUCTURE structure [Storage Devices], ntddcdvd/PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDVD_READ_STRUCTURE, DVD_READ_STRUCTURE"
+req.typenames : DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE
 ---
 
 # DVD_READ_STRUCTURE structure
@@ -76,9 +76,6 @@ The DVD_READ_STRUCTURE structure contains data such as copyright information, or
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
 ## See Also

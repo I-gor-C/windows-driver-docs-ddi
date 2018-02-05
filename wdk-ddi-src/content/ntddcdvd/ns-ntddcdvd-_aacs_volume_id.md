@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3ad7a253-cc55-4613-8086-b8d08d9bd54f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-DVD_f65fe36a-a9a4-4540-a349-2ac9827b5a91.xml, ntddcdvd/PAACS_VOLUME_ID, PAACS_VOLUME_ID, AACS_VOLUME_ID structure [Storage Devices], *PAACS_VOLUME_ID, storage.aacs_volume_id, AACS_VOLUME_ID, _AACS_VOLUME_ID, ntddcdvd/AACS_VOLUME_ID, PAACS_VOLUME_ID structure pointer [Storage Devices]
+ms.keywords : storage.aacs_volume_id, AACS_VOLUME_ID, PAACS_VOLUME_ID structure pointer [Storage Devices], ntddcdvd/PAACS_VOLUME_ID, structs-DVD_f65fe36a-a9a4-4540-a349-2ac9827b5a91.xml, PAACS_VOLUME_ID, _AACS_VOLUME_ID, AACS_VOLUME_ID structure [Storage Devices], ntddcdvd/AACS_VOLUME_ID, *PAACS_VOLUME_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ Clients retrieve an AACS volume ID with an <a href="..\ntddcdvd\ni-ntddcdvd-ioct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
 ## See Also

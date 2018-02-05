@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 61C425CB-4900-4EB2-8D33-FF235BC03929
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDK_ADAPTER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], ndkpi/PNDK_ADAPTER_DISPATCH, NDK_ADAPTER_DISPATCH, ndkpi/NDK_ADAPTER_DISPATCH, NDK_ADAPTER_DISPATCH structure [Network Drivers Starting with Windows Vista], netvista.ndk_adapter_dispatch, _NDK_ADAPTER_DISPATCH, PNDK_ADAPTER_DISPATCH
+ms.keywords : "_NDK_ADAPTER_DISPATCH, PNDK_ADAPTER_DISPATCH, PNDK_ADAPTER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], NDK_ADAPTER_DISPATCH, ndkpi/NDK_ADAPTER_DISPATCH, NDK_ADAPTER_DISPATCH structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_ADAPTER_DISPATCH, netvista.ndk_adapter_dispatch"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,12 +101,12 @@ The <b>NDK_ADAPTER_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-nd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_create_shared_endpoint.md">NDK_FN_CREATE_SHARED_ENDPOINT</a>
 
@@ -116,17 +116,15 @@ The <b>NDK_ADAPTER_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-nd
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_query_adapter_info.md">NDK_FN_QUERY_ADAPTER_INFO</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
-
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_release_lam.md">NDK_FN_RELEASE_LAM</a>
-
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_pd.md">NDK_FN_CREATE_PD</a>
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_build_lam.md">NDK_FN_BUILD_LAM</a>
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_create_cq.md">NDK_FN_CREATE_CQ</a>
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_build_lam.md">NDK_FN_BUILD_LAM</a>
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_release_lam.md">NDK_FN_RELEASE_LAM</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_query_adapter_info.md">NDK_FN_QUERY_ADAPTER_INFO</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_pd.md">NDK_FN_CREATE_PD</a>
 
  
 

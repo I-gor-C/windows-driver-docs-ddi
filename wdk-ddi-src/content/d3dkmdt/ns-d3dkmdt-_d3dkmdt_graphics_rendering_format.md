@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 954cc3f6-731f-4c55-bf61-63b5d48248c0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmdt_graphics_rendering_format, D3DKMDT_GRAPHICS_RENDERING_FORMAT structure [Display Devices], D3DKMDT_GRAPHICS_RENDERING_FORMAT, _D3DKMDT_GRAPHICS_RENDERING_FORMAT, DmStructs_c51e5886-bbd0-48a2-8be7-98d10b13fc2d.xml, d3dkmdt/D3DKMDT_GRAPHICS_RENDERING_FORMAT
+ms.keywords : D3DKMDT_GRAPHICS_RENDERING_FORMAT, d3dkmdt/D3DKMDT_GRAPHICS_RENDERING_FORMAT, D3DKMDT_GRAPHICS_RENDERING_FORMAT structure [Display Devices], DmStructs_c51e5886-bbd0-48a2-8be7-98d10b13fc2d.xml, display.d3dkmdt_graphics_rendering_format, _D3DKMDT_GRAPHICS_RENDERING_FORMAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,7 @@ A D3DKMDT_2DREGION structure that holds the size of the visible portion of the s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

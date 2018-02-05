@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2807D1D7-DCAF-446C-8DAD-CAF244B52CD2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2 structure [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_IDLE_COMPLETE_V2, kernel.pep_ppm_idle_complete_v2, PPEP_PPM_IDLE_COMPLETE_V2 structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2, pepfx/PEP_PPM_IDLE_COMPLETE_V2, _PEP_PPM_IDLE_COMPLETE_V2"
+ms.keywords : PEP_PPM_IDLE_COMPLETE_V2, *PPEP_PPM_IDLE_COMPLETE_V2, pepfx/PPEP_PPM_IDLE_COMPLETE_V2, PPEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2 structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_IDLE_COMPLETE_V2, PPEP_PPM_IDLE_COMPLETE_V2 structure pointer [Kernel-Mode Driver Architecture], kernel.pep_ppm_idle_complete_v2, _PEP_PPM_IDLE_COMPLETE_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,5 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ufs/UFS_bOutOfOrderDataEn, UFS_bRefClkFreq, UFS_Obsolete, UFS_dPSADataSize, UFS_bBootLunEn, UFS_bMaxDataOutSize, UFS_bMaxNumOfRTT, ufs/UFS_bDeviceFFUStatus, ufs/UFS_bPSAState, ufs/UFS_Reserved01, UFS_bCurrentPowerMode, ufs/UFS_Reserved02, ufs/UFS_Reserved03, ufs/UFS_bPurgeStatus, UFS_bDeviceFFUStatus, ufs/UFS_wExceptionEventControl, UFS_dDynCapNeeded, ufs/UFS_bBootLunEn, UFS_wContextConf, ufs/UFS_bRefClkFreq, UFS_bBackgroundOpStatus, UFS_ATTRIBUTES_DESCRIPTOR, ufs/UFS_bMaxNumOfRTT, UFS_Reserved03, UFS_Reserved02, ufs/UFS_dPSADataSize, ufs/UFS_bBackgroundOpStatus, UFS_wExceptionEventStatus, ufs/UFS_ATTRIBUTES_DESCRIPTOR, ufs/UFS_bActiveICCLevel, UFS_bActiveICCLevel, UFS_bPurgeStatus, UFS_bMaxDataInSize, UFS_bPSAState, UFS_bConfigDescrLock, ufs/UFS_bCurrentPowerMode, ufs/UFS_dSecondsPassed, UFS_dSecondsPassed, ufs/UFS_Obsolete, UFS_bOutOfOrderDataEn, ufs/UFS_wExceptionEventStatus, ufs/UFS_bMaxDataOutSize, ufs/UFS_dDynCapNeeded, ufs/UFS_bMaxDataInSize, UFS_wExceptionEventControl, ufs/UFS_bConfigDescrLock, UFS_ATTRIBUTES_DESCRIPTOR enumeration [Storage Devices], storage.ufs_attributes_descriptor, ufs/UFS_wContextConf, UFS_Reserved01
+ms.keywords : ufs/UFS_bPSAState, UFS_wExceptionEventControl, ufs/UFS_dDynCapNeeded, UFS_bRefClkFreq, UFS_bOutOfOrderDataEn, UFS_bPurgeStatus, UFS_bDeviceFFUStatus, ufs/UFS_bActiveICCLevel, ufs/UFS_wExceptionEventControl, ufs/UFS_bDeviceFFUStatus, ufs/UFS_bBootLunEn, UFS_wContextConf, ufs/UFS_Obsolete, ufs/UFS_bOutOfOrderDataEn, UFS_bMaxDataInSize, ufs/UFS_bConfigDescrLock, UFS_bActiveICCLevel, storage.ufs_attributes_descriptor, UFS_ATTRIBUTES_DESCRIPTOR, ufs/UFS_bMaxNumOfRTT, ufs/UFS_Reserved03, UFS_Reserved02, ufs/UFS_bCurrentPowerMode, ufs/UFS_bBackgroundOpStatus, UFS_bCurrentPowerMode, UFS_bPSAState, UFS_bBootLunEn, ufs/UFS_bMaxDataOutSize, UFS_bMaxDataOutSize, ufs/UFS_bMaxDataInSize, UFS_bBackgroundOpStatus, UFS_dSecondsPassed, ufs/UFS_Reserved01, UFS_dDynCapNeeded, ufs/UFS_Reserved02, UFS_ATTRIBUTES_DESCRIPTOR enumeration [Storage Devices], UFS_Obsolete, UFS_wExceptionEventStatus, ufs/UFS_dSecondsPassed, ufs/UFS_bPurgeStatus, ufs/UFS_wContextConf, UFS_bMaxNumOfRTT, ufs/UFS_wExceptionEventStatus, ufs/UFS_bRefClkFreq, UFS_Reserved01, ufs/UFS_dPSADataSize, UFS_bConfigDescrLock, UFS_dPSADataSize, ufs/UFS_ATTRIBUTES_DESCRIPTOR, UFS_Reserved03
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -393,32 +393,30 @@ microcode activation event occurs.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ufs.h |
 
 ## See Also
 
-<a href="..\ufs\ns-ufs-_ufs_string_descriptor.md">UFS_STRING_DESCRIPTOR</a>
-
-<a href="..\ufs\ns-ufs-ufs_device_health_descriptor.md">UFS_DEVICE_HEALTH_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
 
 <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_power_descriptor.md">UFS_POWER_DESCRIPTOR</a>
-
-<a href="..\ufs\ns-ufs-ufs_unit_descriptor.md">UFS_UNIT_DESCRIPTOR</a>
-
-<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
-
-<a href="..\ufs\ns-ufs-ufs_interconnect_descriptor.md">UFS_INTERCONNECT_DESCRIPTOR</a>
-
 <a href="..\ufs\ns-ufs-ufs_config_descriptor.md">UFS_CONFIG_DESCRIPTOR</a>
+
+<a href="..\ufs\ns-ufs-ufs_device_descriptor.md">UFS_DEVICE_DESCRIPTOR</a>
+
+<a href="..\ufs\ns-ufs-ufs_power_descriptor.md">UFS_POWER_DESCRIPTOR</a>
 
 <a href="..\ufs\ns-ufs-ufs_unit_config_descriptor.md">UFS_UNIT_CONFIG_DESCRIPTOR</a>
 
-<a href="..\ufs\ns-ufs-ufs_device_descriptor.md">UFS_DEVICE_DESCRIPTOR</a>
+<a href="..\ufs\ns-ufs-ufs_device_health_descriptor.md">UFS_DEVICE_HEALTH_DESCRIPTOR</a>
+
+<a href="..\ufs\ns-ufs-_ufs_string_descriptor.md">UFS_STRING_DESCRIPTOR</a>
+
+<a href="..\ufs\ns-ufs-ufs_interconnect_descriptor.md">UFS_INTERCONNECT_DESCRIPTOR</a>
+
+<a href="..\ufs\ns-ufs-ufs_unit_descriptor.md">UFS_UNIT_DESCRIPTOR</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4663cc8e-ce69-4454-afff-03d4a8d82dfb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_PM_REDIRECTED_FLIP, D3DKMT_PM_UNINITIALIZED, D3DKMT_PM_REDIRECTED_VISTABLT, D3DKMT_PRESENT_MODEL, d3dkmthk/D3DKMT_PM_SCREENCAPTUREFENCE, d3dkmthk/D3DKMT_PM_REDIRECTED_VISTABLT, d3dkmthk/D3DKMT_PM_REDIRECTED_FLIP, OpenGL_Structs_b2e4c00b-9072-449d-84c0-7958200e7d9a.xml, D3DKMT_PM_REDIRECTED_GDI, d3dkmthk/D3DKMT_PM_UNINITIALIZED, D3DKMT_PM_REDIRECTED_GDI_SYSMEM, d3dkmthk/D3DKMT_PM_REDIRECTED_BLT, d3dkmthk/D3DKMT_PRESENT_MODEL, d3dkmthk/D3DKMT_PM_REDIRECTED_COMPOSITION, D3DKMT_PM_REDIRECTED_BLT, display.d3dkmt_present_model, D3DKMT_PRESENT_MODEL enumeration [Display Devices], d3dkmthk/D3DKMT_PM_REDIRECTED_GDI, D3DKMT_PM_REDIRECTED_COMPOSITION, d3dkmthk/D3DKMT_PM_REDIRECTED_GDI_SYSMEM, D3DKMT_PM_SCREENCAPTUREFENCE, _D3DKMT_PRESENT_MODEL
+ms.keywords : D3DKMT_PRESENT_MODEL, d3dkmthk/D3DKMT_PM_SCREENCAPTUREFENCE, d3dkmthk/D3DKMT_PM_REDIRECTED_GDI, D3DKMT_PM_SCREENCAPTUREFENCE, d3dkmthk/D3DKMT_PM_UNINITIALIZED, d3dkmthk/D3DKMT_PM_REDIRECTED_BLT, d3dkmthk/D3DKMT_PM_REDIRECTED_GDI_SYSMEM, d3dkmthk/D3DKMT_PRESENT_MODEL, d3dkmthk/D3DKMT_PM_REDIRECTED_COMPOSITION, d3dkmthk/D3DKMT_PM_REDIRECTED_VISTABLT, OpenGL_Structs_b2e4c00b-9072-449d-84c0-7958200e7d9a.xml, _D3DKMT_PRESENT_MODEL, D3DKMT_PM_REDIRECTED_COMPOSITION, D3DKMT_PM_REDIRECTED_VISTABLT, D3DKMT_PM_REDIRECTED_GDI_SYSMEM, D3DKMT_PM_REDIRECTED_GDI, D3DKMT_PM_UNINITIALIZED, D3DKMT_PM_REDIRECTED_FLIP, D3DKMT_PM_REDIRECTED_BLT, d3dkmthk/D3DKMT_PM_REDIRECTED_FLIP, D3DKMT_PRESENT_MODEL enumeration [Display Devices], display.d3dkmt_present_model
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -109,9 +109,7 @@ typedef enum _D3DKMT_PRESENT_MODEL {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMT_PRESENT_MODEL is supported beginning with the Windows 7 operating system. D3DKMT_PRESENT_MODEL is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

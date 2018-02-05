@@ -59,7 +59,7 @@ void DriverReinitialize(
 
 `*DriverObject`
 
-
+Caller-supplied pointer to a <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a> structure. This is the driver's driver object.
 
 `Context`
 
@@ -83,11 +83,6 @@ For more information about implementing a <i>Reinitialize</i> routine, see <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | Called at PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9972BC53-3CFB-4649-9C54-B194039D804F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtluintmult, ntintsafe/RtlUIntMult, RtlUIntMult function [Kernel-Mode Driver Architecture], RtlUIntMult
+ms.keywords : ntintsafe/RtlUIntMult, RtlUIntMult, kernel.rtluintmult, RtlUIntMult function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

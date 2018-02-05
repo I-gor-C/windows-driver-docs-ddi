@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b039609e-d259-44d7-bbde-20993576e18a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/SeImpersonateClient, SeImpersonateClient, ifsk.seimpersonateclient, seref_27996dfe-95b9-4d36-8182-9528fedef7d8.xml, SeImpersonateClient function [Installable File System Drivers]
+ms.keywords : SeImpersonateClient, ifsk.seimpersonateclient, SeImpersonateClient function [Installable File System Drivers], ntifs/SeImpersonateClient, seref_27996dfe-95b9-4d36-8182-9528fedef7d8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

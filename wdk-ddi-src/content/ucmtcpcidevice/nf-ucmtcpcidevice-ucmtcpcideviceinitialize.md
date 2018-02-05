@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f89dd322-520b-41b0-bbe2-6eab0f8a6b70
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucmtcpcideviceinitialize, UcmTcpciDeviceInitialize method [Buses], UcmTcpciDeviceInitialize, ucmtcpcidevice/UcmTcpciDeviceInitialize
+ms.keywords : ucmtcpcidevice/UcmTcpciDeviceInitialize, UcmTcpciDeviceInitialize, buses.ucmtcpcideviceinitialize, UcmTcpciDeviceInitialize method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,14 +103,11 @@ The client driver must call <b>UcmTcpciDeviceInitialize</b> within the driver's 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ucmtcpcidevice.h |
-| **Library** |  |
+| **Library** | Ucmtcpcicxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

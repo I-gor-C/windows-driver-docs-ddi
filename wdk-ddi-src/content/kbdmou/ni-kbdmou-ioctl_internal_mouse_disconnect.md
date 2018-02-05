@@ -69,9 +69,7 @@ The <b>Status</b> member is set to STATUS_NOT_IMPLEMENTED.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | kbdmou.h (include Kbdmou.h) |
-| **IRQL** |  |
 
 ## See Also
 

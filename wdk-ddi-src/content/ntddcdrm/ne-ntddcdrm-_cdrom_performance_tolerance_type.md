@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2369582F-D042-474D-9191-F9E7BDD3725E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_CDROM_PERFORMANCE_TOLERANCE_TYPE, Cdrom10Nominal20Exceptions, CDROM_PERFORMANCE_TOLERANCE_TYPE enumeration [Storage Devices], *PCDROM_PERFORMANCE_TOLERANCE_TYPE, PCDROM_PERFORMANCE_TOLERANCE_TYPE enumeration pointer [Storage Devices], ntddcdrm/CDROM_PERFORMANCE_TOLERANCE_TYPE, PCDROM_PERFORMANCE_TOLERANCE_TYPE, CDROM_PERFORMANCE_TOLERANCE_TYPE, storage.cdrom_performance_tolerance_type, ntddcdrm/PCDROM_PERFORMANCE_TOLERANCE_TYPE, ntddcdrm/ Cdrom10Nominal20Exceptions"
+ms.keywords : "_CDROM_PERFORMANCE_TOLERANCE_TYPE, storage.cdrom_performance_tolerance_type, ntddcdrm/PCDROM_PERFORMANCE_TOLERANCE_TYPE, PCDROM_PERFORMANCE_TOLERANCE_TYPE, CDROM_PERFORMANCE_TOLERANCE_TYPE, Cdrom10Nominal20Exceptions, PCDROM_PERFORMANCE_TOLERANCE_TYPE enumeration pointer [Storage Devices], ntddcdrm/CDROM_PERFORMANCE_TOLERANCE_TYPE, *PCDROM_PERFORMANCE_TOLERANCE_TYPE, ntddcdrm/ Cdrom10Nominal20Exceptions, CDROM_PERFORMANCE_TOLERANCE_TYPE enumeration [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -62,16 +62,13 @@ typedef enum _CDROM_PERFORMANCE_TOLERANCE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 
  
 

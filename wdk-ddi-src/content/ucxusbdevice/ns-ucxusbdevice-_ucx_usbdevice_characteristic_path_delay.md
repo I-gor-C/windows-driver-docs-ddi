@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 135D6C04-3520-46C2-BC64-DF0119578E6F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY structure pointer [Buses], UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY structure [Buses], ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, _UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, *PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, buses.ucx_usbdevice_characteristic_path_delay
+ms.keywords : ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, *PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, buses.ucx_usbdevice_characteristic_path_delay, UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY structure [Buses], _UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,7 @@ The maximum delay in milliseconds from the time the  client driver's isochronous
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also

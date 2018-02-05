@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6dc32dd7-e15b-4c93-92d1-5b7206ed98c0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue::DrainSynchronously, IWDFIoQueue, UMDFQueueObjectRef_35105420-0461-4879-aba2-28c32ece9aab.xml, DrainSynchronously method, umdf.iwdfioqueue_drainsynchronously, wudfddi/IWDFIoQueue::DrainSynchronously, DrainSynchronously method, IWDFIoQueue interface, DrainSynchronously, wdf.iwdfioqueue_drainsynchronously, IWDFIoQueue interface, DrainSynchronously method
+ms.keywords : IWDFIoQueue interface, DrainSynchronously method, DrainSynchronously, DrainSynchronously method, IWDFIoQueue interface, DrainSynchronously method, UMDFQueueObjectRef_35105420-0461-4879-aba2-28c32ece9aab.xml, IWDFIoQueue::DrainSynchronously, umdf.iwdfioqueue_drainsynchronously, wdf.iwdfioqueue_drainsynchronously, IWDFIoQueue, wudfddi/IWDFIoQueue::DrainSynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -66,14 +66,12 @@ The <b>DrainSynchronously</b> method is a synchronous version of the <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

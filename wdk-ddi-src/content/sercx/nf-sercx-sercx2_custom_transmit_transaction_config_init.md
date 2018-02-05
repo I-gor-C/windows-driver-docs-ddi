@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 098A7BB0-B135-4E99-8BDA-1EF29A8C338F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : serports.sercx2_custom_transmit_transaction_config_init, SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT, SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT function [Serial Ports], 2/SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT
+ms.keywords : SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT, serports.sercx2_custom_transmit_transaction_config_init, SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT function [Serial Ports], 2/SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,11 @@ Your serial controller driver must use this function to initialize a <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

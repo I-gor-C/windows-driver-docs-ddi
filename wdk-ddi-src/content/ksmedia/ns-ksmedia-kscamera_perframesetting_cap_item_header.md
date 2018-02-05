@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6E68CACB-4E0E-41E4-BAB6-0B7ECEFA92F6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kscamera_perframesetting_cap_item_header, KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure pointer [Streaming Media Devices], PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, *PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, ksmedia/KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, ksmedia/PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure [Streaming Media Devices]
+ms.keywords : PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure pointer [Streaming Media Devices], PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, ksmedia/KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, *PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, ksmedia/PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure [Streaming Media Devices], stream.kscamera_perframesetting_cap_item_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ The <a href="..\ksmedia\ne-ksmedia-kscamera_perframesetting_item_type.md">KSCAME
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

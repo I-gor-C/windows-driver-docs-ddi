@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 87dc2ef3-047c-4255-832c-508b378ca412
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilsetnotificationfilterstateparams_2, RILSETNOTIFICATIONFILTERSTATEPARAMS, rilapitypes/RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "*LPRILSETNOTIFICATIONFILTERSTATEPARAMS, netvista.rilsetnotificationfilterstateparams_2, RILSETNOTIFICATIONFILTERSTATEPARAMS structure [Network Drivers Starting with Windows Vista], RILSETNOTIFICATIONFILTERSTATEPARAMS, rilapitypes/RILSETNOTIFICATIONFILTERSTATEPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILSETNOTIFICATIONFILTERSTATEPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

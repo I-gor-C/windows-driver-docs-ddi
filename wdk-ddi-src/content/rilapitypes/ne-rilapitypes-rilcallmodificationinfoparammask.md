@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 78726ec3-f777-4165-baec-c2c013e4c86a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_CMI_ADDRESS, rilapitypes/RIL_PARAM_CMI_MODIFICATIONTYPE, RIL_PARAM_CMI_ADDRESS, rilapitypes/RILCALLMODIFICATIONINFOPARAMMASK, netvista.rilcallmodificationinfoparammask_2, rilapitypes/RIL_PARAM_CMI_ID, RIL_PARAM_CMI_ALPHAIDENTIFIER, rilapitypes/RIL_PARAM_CMI_ALPHAIDENTIFIER, RIL_PARAM_CMI_MODIFICATIONTYPE, RIL_PARAM_CMI_OLDCALLTYPE, RILCALLMODIFICATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_CMI_ID, RIL_PARAM_CMI_NEWCALLTYPE, rilapitypes/RIL_PARAM_CMI_NEWCALLTYPE, RIL_PARAM_CMI_ALL, RILCALLMODIFICATIONINFOPARAMMASK, rilapitypes/RIL_PARAM_CMI_ALL, rilapitypes/RIL_PARAM_CMI_OLDCALLTYPE
+ms.keywords : netvista.rilcallmodificationinfoparammask_2, rilapitypes/RILCALLMODIFICATIONINFOPARAMMASK, RIL_PARAM_CMI_NEWCALLTYPE, rilapitypes/RIL_PARAM_CMI_OLDCALLTYPE, RIL_PARAM_CMI_ADDRESS, rilapitypes/RIL_PARAM_CMI_MODIFICATIONTYPE, rilapitypes/RIL_PARAM_CMI_NEWCALLTYPE, rilapitypes/RIL_PARAM_CMI_ADDRESS, RIL_PARAM_CMI_ALPHAIDENTIFIER, RILCALLMODIFICATIONINFOPARAMMASK, RILCALLMODIFICATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_CMI_ID, RIL_PARAM_CMI_ID, rilapitypes/RIL_PARAM_CMI_ALPHAIDENTIFIER, RIL_PARAM_CMI_MODIFICATIONTYPE, rilapitypes/RIL_PARAM_CMI_ALL, RIL_PARAM_CMI_ALL, RIL_PARAM_CMI_OLDCALLTYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -104,7 +104,4 @@ typedef enum _RILCALLMODIFICATIONINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

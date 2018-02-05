@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 06034776-4faf-4918-b9ec-bc095455cf14
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kstruct_a_0ecf5914-f26d-415f-b410-ff2f131b2b08.xml, PCM_EISA_FUNCTION_INFORMATION, wdm/PCM_EISA_FUNCTION_INFORMATION, wdm/CM_EISA_FUNCTION_INFORMATION, PCM_EISA_FUNCTION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _CM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.cm_eisa_function_information, *PCM_EISA_FUNCTION_INFORMATION
+ms.keywords : wdm/PCM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION, PCM_EISA_FUNCTION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.cm_eisa_function_information, CM_EISA_FUNCTION_INFORMATION structure [Kernel-Mode Driver Architecture], PCM_EISA_FUNCTION_INFORMATION, _CM_EISA_FUNCTION_INFORMATION, kstruct_a_0ecf5914-f26d-415f-b410-ff2f131b2b08.xml, wdm/CM_EISA_FUNCTION_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION"
+req.typenames : CM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -207,18 +207,15 @@ The information returned by <b>HalGetBusData</b> or <b>HalGetBusDataByOffset</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_cm_eisa_slot_information.md">CM_EISA_SLOT_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
+<a href="..\wdm\ns-wdm-_cm_eisa_slot_information.md">CM_EISA_SLOT_INFORMATION</a>
 
  
 

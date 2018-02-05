@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX"
+req.typenames : HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 
@@ -75,14 +75,11 @@ Returns STATUS_SUCCESS if function succeeds. Returns STATUS_INVALID_PARAMETER if
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | hwnclx.h |
-| **Library** |  |
+| **Library** | Mshwnclxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

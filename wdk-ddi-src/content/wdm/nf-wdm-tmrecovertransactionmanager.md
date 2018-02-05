@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 67b18170-a17f-44fd-a5ab-12bccf2082fe
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/TmRecoverTransactionManager, TmRecoverTransactionManager, ktm_ref_1917a36a-c7bd-4a00-b054-bb710b7c0e93.xml, kernel.tmrecovertransactionmanager, TmRecoverTransactionManager routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.tmrecovertransactionmanager, TmRecoverTransactionManager routine [Kernel-Mode Driver Architecture], TmRecoverTransactionManager, ktm_ref_1917a36a-c7bd-4a00-b054-bb710b7c0e93.xml, wdm/TmRecoverTransactionManager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,14 +121,12 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

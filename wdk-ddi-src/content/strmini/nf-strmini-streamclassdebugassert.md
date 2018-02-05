@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : df9b3231-4c43-4d4b-b128-e8d6a9f21b17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : strclass-routines_6f9302e6-592f-4097-830c-83b05a54d335.xml, stream.streamclassdebugassert, StreamClassDebugAssert, strmini/StreamClassDebugAssert, StreamClassDebugAssert routine [Streaming Media Devices]
+ms.keywords : StreamClassDebugAssert routine [Streaming Media Devices], strclass-routines_6f9302e6-592f-4097-830c-83b05a54d335.xml, strmini/StreamClassDebugAssert, stream.streamclassdebugassert, StreamClassDebugAssert
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,9 @@ When running a checked version of the class driver, asserts are recognized, and 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |
 
 ## See Also
 

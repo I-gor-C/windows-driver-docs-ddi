@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fa4d523b-4af2-4a6e-aaa6-d84c829b567d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionGetDevice, WdfDmaTransactionGetDevice method, kmdf.wdfdmatransactiongetdevice, wdf.wdfdmatransactiongetdevice, wdfdmatransaction/WdfDmaTransactionGetDevice, DFDmaObjectRef_eb3ef52a-cba0-4754-8dad-d113b200f949.xml, PFN_WDFDMATRANSACTIONGETDEVICE
+ms.keywords : WdfDmaTransactionGetDevice method, WdfDmaTransactionGetDevice, wdfdmatransaction/WdfDmaTransactionGetDevice, kmdf.wdfdmatransactiongetdevice, DFDmaObjectRef_eb3ef52a-cba0-4754-8dad-d113b200f949.xml, wdf.wdfdmatransactiongetdevice, PFN_WDFDMATRANSACTIONGETDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,10 @@ For more information about completing DMA transfers, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

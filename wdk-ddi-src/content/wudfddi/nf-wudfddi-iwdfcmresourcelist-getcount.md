@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 91F88EC2-C0BD-42E1-8C57-437909E2CCA2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfcmresourcelist_getcount, IWDFCmResourceList::GetCount, umdf.iwdfcmresourcelist_getcount, IWDFCmResourceList, GetCount, GetCount method, IWDFCmResourceList interface, IWDFCmResourceList interface, GetCount method, wudfddi/IWDFCmResourceList::GetCount, GetCount method
+ms.keywords : GetCount method, IWDFCmResourceList interface, wudfddi/IWDFCmResourceList::GetCount, umdf.iwdfcmresourcelist_getcount, wdf.iwdfcmresourcelist_getcount, GetCount, IWDFCmResourceList, GetCount method, IWDFCmResourceList::GetCount, IWDFCmResourceList interface, GetCount method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -67,14 +67,12 @@ Typically, a UMDF driver calls the <b>GetCount</b> method from its <a href="http
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

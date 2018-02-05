@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 87C99B3A-EF77-4D87-9953-BBE9628D2A3D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CreatePrinterIC, print.createprinteric, CreatePrinterIC function [Print Devices], winsplp/CreatePrinterIC
+ms.keywords : winsplp/CreatePrinterIC, CreatePrinterIC, print.createprinteric, CreatePrinterIC function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -91,26 +91,22 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
 
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 
 <a href="..\sercx\nf-sercx-sercx2customreceivetransactioninitializecomplete.md">SerCx2CustomReceiveTransactionInitializeComplete</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
  
 

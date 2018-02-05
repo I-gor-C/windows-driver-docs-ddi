@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5D98737C-0986-4DCB-9270-A0DF76CFCB5C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlLongSub, RtlLongSub, kernel.rtllongsub, RtlLongSub function [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.rtllongsub, ntintsafe/RtlLongSub, RtlLongSub function [Kernel-Mode Driver Architecture], RtlLongSub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

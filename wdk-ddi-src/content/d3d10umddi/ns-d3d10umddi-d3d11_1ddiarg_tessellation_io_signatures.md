@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90b9cbba-6a8f-444e-b0eb-cfbabdd57dcf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES, display.d3d11_1ddiarg_tessellation_io_signatures, D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES structure [Display Devices], D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES
+ms.keywords : D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES structure [Display Devices], d3d10umddi/D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES, D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES, display.d3d11_1ddiarg_tessellation_io_signatures
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,9 +80,7 @@ The declarations within the shader code itself also show which registers are act
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

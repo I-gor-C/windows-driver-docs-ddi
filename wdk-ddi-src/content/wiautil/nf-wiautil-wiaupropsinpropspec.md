@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : c376297a-11a6-4e9f-b551-36a573cdb7e0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiautil/wiauPropsInPropSpec, wiauPropsInPropSpec, wiauFncs_2490b5b3-8051-4711-b681-1aef18580182.xml, image.wiaupropsinpropspec, wiauPropsInPropSpec function [Imaging Devices]
+ms.keywords : wiauPropsInPropSpec function [Imaging Devices], image.wiaupropsinpropspec, wiauPropsInPropSpec, wiautil/wiauPropsInPropSpec, wiauFncs_2490b5b3-8051-4711-b681-1aef18580182.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,10 @@ The <b>wiauPropsInPropSpec</b> function finds one or more property specification
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

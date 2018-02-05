@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4b1accd8-5dbe-47d6-822e-1997a6ab5082
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.scsiportwriteportushort, ScsiPortWritePortUshort routine [Storage Devices], ScsiPortWritePortUshort, srb/ScsiPortWritePortUshort, scsiprt_e7e27190-3f51-4ede-9b4d-fcc437f46d17.xml
+ms.keywords : srb/ScsiPortWritePortUshort, storage.scsiportwriteportushort, ScsiPortWritePortUshort routine [Storage Devices], scsiprt_e7e27190-3f51-4ede-9b4d-fcc437f46d17.xml, ScsiPortWritePortUshort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -72,14 +72,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

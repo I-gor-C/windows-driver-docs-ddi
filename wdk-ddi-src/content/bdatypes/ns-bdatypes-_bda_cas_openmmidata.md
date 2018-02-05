@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FAF30768-5DE4-4284-8CB5-2E518A2E37E7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.bda_cas_openmmidata, BDA_CAS_OPENMMIDATA structure [Streaming Media Devices], bdatypes/PBDA_CAS_OPENMMIDATA, bdatypes/BDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA, PBDA_CAS_OPENMMIDATA, _BDA_CAS_OPENMMIDATA, PBDA_CAS_OPENMMIDATA structure pointer [Streaming Media Devices], *PBDA_CAS_OPENMMIDATA
+ms.keywords : bdatypes/PBDA_CAS_OPENMMIDATA, stream.bda_cas_openmmidata, BDA_CAS_OPENMMIDATA structure [Streaming Media Devices], *PBDA_CAS_OPENMMIDATA, bdatypes/BDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA, PBDA_CAS_OPENMMIDATA structure pointer [Streaming Media Devices], PBDA_CAS_OPENMMIDATA, _BDA_CAS_OPENMMIDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBDA_CAS_OPENMMIDATA, BDA_CAS_OPENMMIDATA"
+req.typenames : BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA
 ---
 
 # _BDA_CAS_OPENMMIDATA structure
@@ -79,7 +79,4 @@ typedef struct _BDA_CAS_OPENMMIDATA {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

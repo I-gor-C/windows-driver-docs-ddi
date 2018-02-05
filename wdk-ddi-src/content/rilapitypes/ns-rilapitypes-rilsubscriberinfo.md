@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b05a38c6-afc5-4dc1-8e51-ecf9d47e144e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILSUBSCRIBERINFO, *LPRILSUBSCRIBERINFO, RILSUBSCRIBERINFO structure [Network Drivers Starting with Windows Vista], RILSUBSCRIBERINFO, netvista.rilsubscriberinfo
+ms.keywords : rilapitypes/RILSUBSCRIBERINFO, RILSUBSCRIBERINFO, netvista.rilsubscriberinfo, *LPRILSUBSCRIBERINFO, RILSUBSCRIBERINFO structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILSUBSCRIBERINFO, RILSUBSCRIBERINFO"
+req.typenames : RILSUBSCRIBERINFO, *LPRILSUBSCRIBERINFO
 req.product : Windows 10 or later.
 ---
 
@@ -80,9 +80,6 @@ Text description of the subscriber line.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

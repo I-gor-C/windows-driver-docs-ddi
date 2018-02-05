@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 76701df3-8e7d-43fa-8caf-6cbf89504aad
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.transactionmanager_recovery_information, *PTRANSACTIONMANAGER_RECOVERY_INFORMATION, wdm/PTRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], ktm_ref_9efce7e2-3965-4659-8659-4f8262aad962.xml, TRANSACTIONMANAGER_RECOVERY_INFORMATION structure [Kernel-Mode Driver Architecture], _TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION, wdm/TRANSACTIONMANAGER_RECOVERY_INFORMATION
+ms.keywords : "*PTRANSACTIONMANAGER_RECOVERY_INFORMATION, wdm/PTRANSACTIONMANAGER_RECOVERY_INFORMATION, ktm_ref_9efce7e2-3965-4659-8659-4f8262aad962.xml, kernel.transactionmanager_recovery_information, _TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION"
+req.typenames : TRANSACTIONMANAGER_RECOVERY_INFORMATION, *PTRANSACTIONMANAGER_RECOVERY_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -62,16 +62,14 @@ The TRANSACTIONMANAGER_RECOVERY_INFORMATION structure is used with the <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
-
 <a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>
+
+<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
 
  
 

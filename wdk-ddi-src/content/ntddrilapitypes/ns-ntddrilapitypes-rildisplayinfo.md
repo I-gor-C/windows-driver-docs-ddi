@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6c28e50c-a76a-4a7c-af29-6e58bcfe3f3b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILDISPLAYINFO, RILDISPLAYINFO, netvista.rildisplayinfo, *LPRILDISPLAYINFO, RILDISPLAYINFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "*LPRILDISPLAYINFO, netvista.rildisplayinfo, RILDISPLAYINFO, RILDISPLAYINFO structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILDISPLAYINFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,7 +89,4 @@ typedef struct _RILDISPLAYINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

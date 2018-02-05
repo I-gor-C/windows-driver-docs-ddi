@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5417b821-b51d-4789-8380-f93d113f42d3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisequalmemory, ndis/NdisEqualMemory, NdisEqualMemory, NdisEqualMemory macro [Network Drivers Starting with Windows Vista], ndis_memory_ref_67be2fe2-f491-4b7d-9524-a4e324630f74.xml
+ms.keywords : ndis/NdisEqualMemory, NdisEqualMemory, ndis_memory_ref_67be2fe2-f491-4b7d-9524-a4e324630f74.xml, NdisEqualMemory macro [Network Drivers Starting with Windows Vista], netvista.ndisequalmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -86,25 +86,23 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualMemory instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualMemory instead. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | See Remarks section |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatememorywithtagpriority" tabindex="0"><b>
-   NdisAllocateMemoryWithTagPriority</b></mshelp:link>
-
-<a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a>
-
 <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
 
 <a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
+
+<a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
+   NdisAllocateMemoryWithTagPriority</a>
 
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 

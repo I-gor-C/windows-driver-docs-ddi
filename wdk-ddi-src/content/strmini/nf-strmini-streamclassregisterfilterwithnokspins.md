@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f5ae426a-9d9d-4391-b87f-c4281dc9cadc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassRegisterFilterWithNoKSPins, StreamClassRegisterFilterWithNoKSPins routine [Streaming Media Devices], strclass-routines_d338a3be-7760-46b6-aeba-e9cbac45afe3.xml, strmini/StreamClassRegisterFilterWithNoKSPins, stream.streamclassregisterfilterwithnokspins
+ms.keywords : stream.streamclassregisterfilterwithnokspins, strclass-routines_d338a3be-7760-46b6-aeba-e9cbac45afe3.xml, StreamClassRegisterFilterWithNoKSPins routine [Streaming Media Devices], strmini/StreamClassRegisterFilterWithNoKSPins, StreamClassRegisterFilterWithNoKSPins
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,14 +91,9 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |
 
 ## See Also
 

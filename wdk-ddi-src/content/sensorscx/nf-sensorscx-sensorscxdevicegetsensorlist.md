@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : C1CA7DE4-A54A-478F-9F83-585B528EF345
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : Syntax, sensorscx/Syntax, Syntax function [Sensor Devices], SensorsCxDeviceGetSensorList, sensors.sensorscxdevicegetsensorlist
+ms.keywords : SensorsCxDeviceGetSensorList, Syntax function [Sensor Devices], Syntax, sensorscx/Syntax, sensors.sensorscxdevicegetsensorlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,11 +90,6 @@ STATUS_NOT_FOUND is returned if the controller is not available from the <b>FxDe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

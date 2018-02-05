@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fa725534-ccc3-4e71-a83f-b25fd4c72c14
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dstrct_671f3c02-cad3-47bc-871e-df1388f8cf1a.xml, _D3DPrimCaps, d3dcaps/D3DPRIMCAPS, display.d3dprimcaps, LPD3DPRIMCAPS structure pointer [Display Devices], LPD3DPRIMCAPS, d3dcaps/LPD3DPRIMCAPS, D3DPRIMCAPS structure [Display Devices], D3DPRIMCAPS, *LPD3DPRIMCAPS
+ms.keywords : LPD3DPRIMCAPS structure pointer [Display Devices], LPD3DPRIMCAPS, _D3DPrimCaps, *LPD3DPRIMCAPS, D3DPRIMCAPS, display.d3dprimcaps, d3dcaps/D3DPRIMCAPS, D3DPRIMCAPS structure [Display Devices], d3dcaps/LPD3DPRIMCAPS, d3dstrct_671f3c02-cad3-47bc-871e-df1388f8cf1a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : D3DPRIMCAPS, *LPD3DPRIMCAPS
+req.typenames : "*LPD3DPRIMCAPS, D3DPRIMCAPS"
 ---
 
 # _D3DPrimCaps structure
@@ -677,9 +677,6 @@ This structure is used when a device is created and when the capabilities of a d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dcaps.h (include D3dcaps.h) |
 
 ## See Also

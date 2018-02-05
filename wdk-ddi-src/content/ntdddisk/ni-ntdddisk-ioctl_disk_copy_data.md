@@ -69,9 +69,7 @@ The <b>Status</b> field is set to STATUS_SUCCESS if the operation is successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
-| **IRQL** |  |
 
 ## See Also
 

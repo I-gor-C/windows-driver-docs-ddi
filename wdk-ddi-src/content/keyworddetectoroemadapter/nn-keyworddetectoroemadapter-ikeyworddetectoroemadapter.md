@@ -74,8 +74,5 @@ In fact, internal C++ classes likely do not need any member variables beyond tho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | keyworddetectoroemadapter.h |
-| **DLL** |  |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c9681207-6cdd-40b6-8878-7ea37f383e4f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILUNSOLICITEDSSINFO_V1, netvista.rilunsolicitedssinfo_v1, ntddrilapitypes/RILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1 structure [Network Drivers Starting with Windows Vista], RILUNSOLICITEDSSINFO_V1"
+ms.keywords : "*LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1, netvista.rilunsolicitedssinfo_v1, ntddrilapitypes/RILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1 structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1
+req.typenames : "*LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1"
 ---
 
 # RILUNSOLICITEDSSINFO_V1 structure
@@ -94,7 +94,4 @@ typedef struct _RILUNSOLICITEDSSINFO_V1 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

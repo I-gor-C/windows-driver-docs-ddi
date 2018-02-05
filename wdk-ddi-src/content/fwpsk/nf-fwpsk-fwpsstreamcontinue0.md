@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 26cf2630-9602-4c70-a326-11e72f188ef9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_R-Z_c2e0bb3b-854a-4e88-9378-e78e48cb19f2.xml, fwpsk/FwpsStreamContinue0, FwpsStreamContinue0, netvista.fwpsstreamcontinue0, FwpsStreamContinue0 function [Network Drivers Starting with Windows Vista]
+ms.keywords : wfp_ref_2_funct_3_fwps_R-Z_c2e0bb3b-854a-4e88-9378-e78e48cb19f2.xml, netvista.fwpsstreamcontinue0, fwpsk/FwpsStreamContinue0, FwpsStreamContinue0, FwpsStreamContinue0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,33 +134,30 @@ A callout driver calls the
     deferred. A data stream is deferred when a callout's 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function sets the 
     <b>streamAction</b> member of the 
-    <mshelp:link keywords="netvista.fwps_stream_callout_io_packet0" tabindex="0"><b>
-    FWPS_STREAM_CALLOUT_IO_PACKET0</b></mshelp:link> structure to FWPS_STREAM_ACTION_DEFER. The <b>FwpsStreamContinue0</b> function cannot be called from within a callout's <i>classifyFn</i> context.
+    <a href="..\fwpsk\ns-fwpsk-fwps_stream_callout_io_packet0_.md">
+    FWPS_STREAM_CALLOUT_IO_PACKET0</a> structure to FWPS_STREAM_ACTION_DEFER. The <b>FwpsStreamContinue0</b> function cannot be called from within a callout's <i>classifyFn</i> context.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a>
 
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 
-<mshelp:link keywords="netvista.fwps_stream_callout_io_packet0" tabindex="0"><b>
-   FWPS_STREAM_CALLOUT_IO_PACKET0</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a>
-
 <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
+
+<a href="..\fwpsk\ns-fwpsk-fwps_stream_callout_io_packet0_.md">
+   FWPS_STREAM_CALLOUT_IO_PACKET0</a>
 
  
 

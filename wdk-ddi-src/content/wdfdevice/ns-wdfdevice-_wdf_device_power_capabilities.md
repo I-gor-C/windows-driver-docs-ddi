@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 56bb271f-d69c-4523-87cb-4922b405f808
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_6678d7f5-5de1-473f-a2db-777405225add.xml, PWDF_DEVICE_POWER_CAPABILITIES structure pointer, wdf.wdf_device_power_capabilities, WDF_DEVICE_POWER_CAPABILITIES, *PWDF_DEVICE_POWER_CAPABILITIES, WDF_DEVICE_POWER_CAPABILITIES structure, kmdf.wdf_device_power_capabilities, wdfdevice/PWDF_DEVICE_POWER_CAPABILITIES, PWDF_DEVICE_POWER_CAPABILITIES, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES, _WDF_DEVICE_POWER_CAPABILITIES
+ms.keywords : WDF_DEVICE_POWER_CAPABILITIES structure, PWDF_DEVICE_POWER_CAPABILITIES structure pointer, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES, _WDF_DEVICE_POWER_CAPABILITIES, kmdf.wdf_device_power_capabilities, DFDeviceObjectGeneralRef_6678d7f5-5de1-473f-a2db-777405225add.xml, wdf.wdf_device_power_capabilities, wdfdevice/PWDF_DEVICE_POWER_CAPABILITIES, PWDF_DEVICE_POWER_CAPABILITIES, *PWDF_DEVICE_POWER_CAPABILITIES, WDF_DEVICE_POWER_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DEVICE_POWER_CAPABILITIES, WDF_DEVICE_POWER_CAPABILITIES"
+req.typenames : WDF_DEVICE_POWER_CAPABILITIES, *PWDF_DEVICE_POWER_CAPABILITIES
 req.product : Windows 10 or later.
 ---
 
@@ -147,7 +147,6 @@ When a bus driver calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |

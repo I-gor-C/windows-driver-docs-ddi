@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 877C6641-30F9-44BC-9286-3B1D880482C9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfworkitem/WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG structure, umdf.wudf_workitem_config, PWUDF_WORKITEM_CONFIG structure pointer, _WUDF_WORKITEM_CONFIG, PWUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG, wudfworkitem/PWUDF_WORKITEM_CONFIG, wdf.wudf_workitem_config, WUDF_WORKITEM_CONFIG
+ms.keywords : PWUDF_WORKITEM_CONFIG structure pointer, wudfworkitem/PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG structure, umdf.wudf_workitem_config, wudfworkitem/WUDF_WORKITEM_CONFIG, PWUDF_WORKITEM_CONFIG, _WUDF_WORKITEM_CONFIG, wdf.wudf_workitem_config, *PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WUDF_WORKITEM_CONFIG, *PWUDF_WORKITEM_CONFIG
+req.typenames : "*PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG"
 req.product : Windows 10 or later.
 ---
 
@@ -78,18 +78,16 @@ Setting the <b>AutomaticSerialization</b> member of <b>WUDF_WORKITEM_CONFIG</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfworkitem.h |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/B34EABF4-C659-4DB4-AEC6-94F544D79221">IWDFDevice3::CreateWorkItem</a>
+
 <a href="..\wudfworkitem\nc-wudfworkitem-wudf_workitem_function.md">OnWorkItem</a>
 
 <a href="..\wudfworkitem\nf-wudfworkitem-wudf_workitem_config_init.md">WUDF_WORKITEM_CONFIG_INIT</a>
-
-<a href="https://msdn.microsoft.com/B34EABF4-C659-4DB4-AEC6-94F544D79221">IWDFDevice3::CreateWorkItem</a>
 
  
 

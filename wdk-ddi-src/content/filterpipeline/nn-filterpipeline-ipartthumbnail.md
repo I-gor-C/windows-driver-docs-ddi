@@ -58,11 +58,8 @@ The <b>IPartThumbnail</b> interface is an abstraction for thumbnails in an XPS d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **DLL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 87265ABB-C2B7-468F-83FC-411AD9769517
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "_BTHX_HCI_PACKET_TYPE, bthxddi/HciPacketCommand, bthxddi/HciPacketEvent, BTHX_HCI_PACKET_TYPE enumeration [Bluetooth Devices], HciPacketEvent, HciPacketAclData, bthxddi/BTHX_HCI_PACKET_TYPE, bthxddi/HciPacketAclData, BTHX_HCI_PACKET_TYPE, HciPacketCommand, bltooth.bthx_hci_packet_type"
+ms.keywords : "_BTHX_HCI_PACKET_TYPE, HciPacketAclData, HciPacketCommand, bthxddi/BTHX_HCI_PACKET_TYPE, BTHX_HCI_PACKET_TYPE enumeration [Bluetooth Devices], bthxddi/HciPacketEvent, BTHX_HCI_PACKET_TYPE, HciPacketEvent, bthxddi/HciPacketAclData, bthxddi/HciPacketCommand, bltooth.bthx_hci_packet_type"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,16 +77,14 @@ The IOCTL_BTHX_HCI_READ and IOCTL_BTHX_HCI_WRITE IOCTLs are used to read/write d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported starting with  Windows 8. Versions:\_Supported starting with  Windows 8. |
 | **Header** | bthxddi.h (include BthXDDI.h) |
 
 ## See Also
 
-<a href="..\bthxddi\ni-bthxddi-ioctl_bthx_write_hci.md">IOCTL_BTHX_HCI_WRITE</a>
-
 <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_read_hci.md">IOCTL_BTHX_HCI_READ</a>
+
+<a href="..\bthxddi\ni-bthxddi-ioctl_bthx_write_hci.md">IOCTL_BTHX_HCI_WRITE</a>
 
  
 

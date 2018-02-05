@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 665a9819-d319-414d-9a31-ee565b293197
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPDXVA_TCoefSingle structure pointer [Display Devices], *LPDXVA_TCoefSingle, dxvaref_2b92ced3-3856-466f-b95a-84dd78426a0e.xml, DXVA_TCoefSingle, display.dxva_tcoefsingle, _DXVA_TCoefSingle, dxva/LPDXVA_TCoefSingle, DXVA_TCoefSingle structure [Display Devices], dxva/DXVA_TCoefSingle, LPDXVA_TCoefSingle
+ms.keywords : "_DXVA_TCoefSingle, LPDXVA_TCoefSingle, dxvaref_2b92ced3-3856-466f-b95a-84dd78426a0e.xml, *LPDXVA_TCoefSingle, display.dxva_tcoefsingle, dxva/DXVA_TCoefSingle, DXVA_TCoefSingle, DXVA_TCoefSingle structure [Display Devices], dxva/LPDXVA_TCoefSingle, LPDXVA_TCoefSingle structure pointer [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,6 +63,11 @@ This member contains two fields: <i>TCoefIDX </i>and <i>TCoefEOB</i>.
 
 
 
+#### TCoefEOB
+
+Indicates whether the current coefficient is the last one associated with the current block of transform coefficients. A value of 1 indicates that the current coefficient is the last one for the block and a value of zero indicates that it is not. This field is in the least significant bit of the <b>wIndexWithEOB</b> member. 
+
+
 #### TCoefIDX
 
 Specifies the scan index of the coefficient in the block, as determined from the <b>bConfigHostInverseScan</b> member of the <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure. This field is in the 15 most significant bits of the <b>wIndexWithEOB </b>member.
@@ -79,29 +84,21 @@ Arbitrary ordering: When <b>bConfigHostInverseScan</b> is 1, the <i>MBscanMethod
 </li>
 </ol><i>TCoefIDX</i> must always be less than 64.
 
-
-#### TCoefEOB
-
-Indicates whether the current coefficient is the last one associated with the current block of transform coefficients. A value of 1 indicates that the current coefficient is the last one for the block and a value of zero indicates that it is not. This field is in the least significant bit of the <b>wIndexWithEOB</b> member.
-
 ## Remarks
 The DXVA_TCoefSingle structure is used whenever the <i>HostResidDiff</i> flag (bit 10 in the <b>wMBtype</b> member of the <a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> structure) is 1 and the <b>bConfig4GroupedCoefs</b> member of the <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is zero.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
 
 <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 
-<a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>
+<a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 688f033b-1f0e-4f0a-9ccd-457ba726d728
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlappendunicodetostring, RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], RtlAppendUnicodeToString, wdm/RtlAppendUnicodeToString, k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml
+ms.keywords : wdm/RtlAppendUnicodeToString, RtlAppendUnicodeToString, RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml, kernel.rtlappendunicodetostring
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,14 +106,12 @@ The <i>Destination</i> buffer must be resident if the caller is running at IRQL 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

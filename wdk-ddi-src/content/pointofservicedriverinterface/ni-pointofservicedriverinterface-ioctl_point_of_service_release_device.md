@@ -77,6 +77,4 @@ To use this IOCTL, the client must have previously called <a href="..\pointofser
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
-| **IRQL** |  |

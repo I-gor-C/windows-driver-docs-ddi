@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 28c708b7-82bb-4246-bde8-88d471c8120c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPartFont interface [Print Devices], SetFontOptions method, SetFontOptions, filterpipeline/IPartFont::SetFontOptions, SetFontOptions method [Print Devices], IPartFont interface, SetFontOptions method [Print Devices], filterpipeline_9461a7cc-ee59-4710-ada4-ebea899babaa.xml, print.ipartfont_setfontoptions, IPartFont, IPartFont::SetFontOptions
+ms.keywords : SetFontOptions method [Print Devices], SetFontOptions, print.ipartfont_setfontoptions, filterpipeline_9461a7cc-ee59-4710-ada4-ebea899babaa.xml, IPartFont::SetFontOptions, SetFontOptions method [Print Devices], IPartFont interface, IPartFont interface [Print Devices], SetFontOptions method, IPartFont, filterpipeline/IPartFont::SetFontOptions
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ An <a href="..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

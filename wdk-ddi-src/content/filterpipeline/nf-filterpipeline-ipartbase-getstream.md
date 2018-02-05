@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 83840bca-2e6e-4982-9ec1-e1e278908993
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : filterpipeline_22f13e92-765e-41b8-8404-26aae5a50d02.xml, GetStream method [Print Devices], IPartBase interface, filterpipeline/IPartBase::GetStream, print.ipartbase_getstream, IPartBase, IPartBase interface [Print Devices], GetStream method, GetStream method [Print Devices], GetStream, IPartBase::GetStream
+ms.keywords : IPartBase::GetStream, print.ipartbase_getstream, IPartBase, IPartBase interface [Print Devices], GetStream method, GetStream method [Print Devices], IPartBase interface, GetStream, GetStream method [Print Devices], filterpipeline/IPartBase::GetStream, filterpipeline_22f13e92-765e-41b8-8404-26aae5a50d02.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ The stream object that contains the part data to be read.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

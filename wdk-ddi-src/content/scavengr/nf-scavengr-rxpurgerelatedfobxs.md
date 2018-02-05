@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bb2d56a0-37f4-48bc-8b56-e5250f0f7443
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : scavengr/RxPurgeRelatedFobxs, rxref_56862045-c344-4392-9a25-b4e22c36379f.xml, RxPurgeRelatedFobxs function [Installable File System Drivers], ifsk.rxpurgerelatedfobxs, RxPurgeRelatedFobxs
+ms.keywords : ifsk.rxpurgerelatedfobxs, rxref_56862045-c344-4392-9a25-b4e22c36379f.xml, RxPurgeRelatedFobxs, scavengr/RxPurgeRelatedFobxs, RxPurgeRelatedFobxs function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,24 +109,20 @@ If <i>PFCB</i> is not <b>NULL</b>, and this purging FCB strcuture is not the sam
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | scavengr.h (include Rxprocs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
-
 <a href="..\scavengr\nf-scavengr-rxscavengefobxsfornetroot.md">RxScavengeFobxsForNetRoot</a>
 
-<a href="..\rxprocs\nf-rxprocs-rxscavengeallfobxs.md">RxScavengeAllFobxs</a>
-
 <a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
+
+<a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxscavengeallfobxs.md">RxScavengeAllFobxs</a>
 
  
 

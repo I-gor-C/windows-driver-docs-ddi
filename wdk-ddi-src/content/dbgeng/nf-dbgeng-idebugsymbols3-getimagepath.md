@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 9310dc82-b80f-45bb-9d8a-1239330bc799
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetImagePath method, IDebugSymbols interface [Windows Debugging], GetImagePath method, GetImagePath method [Windows Debugging], GetImagePath method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], GetImagePath method, IDebugSymbols2::GetImagePath, GetImagePath method [Windows Debugging], IDebugSymbols3 interface, debugger.getimagepath, dbgeng/IDebugSymbols3::GetImagePath, dbgeng/IDebugSymbols::GetImagePath, IDebugSymbols::GetImagePath, GetImagePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols_9d38f509-e800-4090-901b-6dc78710c15f.xml, dbgeng/IDebugSymbols2::GetImagePath, IDebugSymbols3, GetImagePath, IDebugSymbols3::GetImagePath
+ms.keywords : dbgeng/IDebugSymbols::GetImagePath, IDebugSymbols2::GetImagePath, GetImagePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols_9d38f509-e800-4090-901b-6dc78710c15f.xml, GetImagePath, GetImagePath method [Windows Debugging], IDebugSymbols::GetImagePath, dbgeng/IDebugSymbols2::GetImagePath, IDebugSymbols2 interface [Windows Debugging], GetImagePath method, IDebugSymbols interface [Windows Debugging], GetImagePath method, debugger.getimagepath, IDebugSymbols3 interface [Windows Debugging], GetImagePath method, GetImagePath method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3::GetImagePath, GetImagePath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetImagePath, IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -108,26 +108,21 @@ The executable image path can consist of several directories separated by semico
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556708">SetImagePath</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538092">AppendImagePath</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556708">SetImagePath</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fd76dfed-2c47-4289-a672-1db8129f5a9e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : MmPrefetchPages routine [Installable File System Drivers], mmref_6e555336-a134-409a-9c8a-a4a217e38599.xml, ntifs/MmPrefetchPages, ifsk.mmprefetchpages, MmPrefetchPages
+ms.keywords : MmPrefetchPages routine [Installable File System Drivers], mmref_6e555336-a134-409a-9c8a-a4a217e38599.xml, ntifs/MmPrefetchPages, MmPrefetchPages, ifsk.mmprefetchpages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,11 +92,9 @@ A temporary buffer required by this function could not be allocated.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

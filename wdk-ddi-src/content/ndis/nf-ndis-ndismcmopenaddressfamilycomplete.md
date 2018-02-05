@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e2d6c7db-09b3-4e5a-a6da-607c67e03054
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismcmopenaddressfamilycomplete, NdisMCmOpenAddressFamilyComplete macro [Network Drivers Starting with Windows Vista], NdisMCmOpenAddressFamilyComplete, ndis/NdisMCmOpenAddressFamilyComplete, condis_mcm_ref_b03ae7ee-6f52-4d98-a7ff-f8b5840b6472.xml
+ms.keywords : NdisMCmOpenAddressFamilyComplete macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_b03ae7ee-6f52-4d98-a7ff-f8b5840b6472.xml, ndis/NdisMCmOpenAddressFamilyComplete, NdisMCmOpenAddressFamilyComplete, netvista.ndismcmopenaddressfamilycomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -84,8 +84,8 @@ An MCM driver must call
     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>,
     cannot carry out further connection-oriented operations on the same binding until 
     <b>NdisMCmOpenAddressFamilyComplete</b> causes a call to that client's 
-    <mshelp:link keywords="netvista.protocolclopenafcompleteex" tabindex="0"><i>
-    ProtocolClOpenAfCompleteEx</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">
+    ProtocolClOpenAfCompleteEx</a> function.
 
 If the caller of 
     <b>NdisMCmOpenAddressFamilyComplete</b> sets 
@@ -112,28 +112,26 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
-
 <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">ProtocolClOpenAfCompleteEx</a>
 
-<mshelp:link keywords="netvista.ndiscmopenaddressfamilycomplete" tabindex="0"><b>
-   NdisCmOpenAddressFamilyComplete</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiscmopenaddressfamilycomplete.md">
+   NdisCmOpenAddressFamilyComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
 
  
 

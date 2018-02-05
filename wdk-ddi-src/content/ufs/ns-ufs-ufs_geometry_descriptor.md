@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ufs/PUFS_GEOMETRY_DESCRIPTOR, storage.ufs_geometry_descriptor, PUFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices], *PUFS_GEOMETRY_DESCRIPTOR, ufs/UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR
+ms.keywords : PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], ufs/PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices], storage.ufs_geometry_descriptor, PUFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, ufs/UFS_GEOMETRY_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -367,7 +367,5 @@ The Capacity Adjustment Factor value for a normal memory type is equal to 1.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ufs.h |

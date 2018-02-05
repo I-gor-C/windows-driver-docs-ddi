@@ -78,9 +78,8 @@ When handling the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | bthhfpddi.h |
-| **IRQL** |  |
 
 ## See Also
 

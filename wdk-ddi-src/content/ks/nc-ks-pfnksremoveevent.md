@@ -62,7 +62,7 @@ Pointer to the file object for which to remove the event.
 
 `*EventEntry`
 
-
+Pointer to an AVStream-generated <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure.
 
 
 ## Return Value
@@ -98,34 +98,29 @@ Specifies an <b>AddHandler</b> that calls <b>Ks</b><i>Xxx</i><b>AddEvent</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
-
 <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 
-<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
-
-<a href="..\ks\nc-ks-pfnksaddevent.md">AVStrMiniAddEvent</a>
+<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 
 <a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a>
-
-<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 
 <a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 
 <a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
 <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
+
+<a href="..\ks\nc-ks-pfnksaddevent.md">AVStrMiniAddEvent</a>
+
+<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
 
  
 

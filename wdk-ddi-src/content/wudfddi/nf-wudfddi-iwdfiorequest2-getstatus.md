@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 20b10edb-3294-4cc7-91bc-07df565a9cf2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2::GetStatus, IWDFIoRequest2, umdf.iwdfiorequest2_getstatus, GetStatus method, IWDFIoRequest2 interface, IWDFIoRequest2 interface, GetStatus method, wudfddi/IWDFIoRequest2::GetStatus, GetStatus method, wdf.iwdfiorequest2_getstatus, GetStatus, UMDFRequestObjectRef_c2efd103-5295-494f-8938-95cf0d76fc3e.xml
+ms.keywords : wdf.iwdfiorequest2_getstatus, UMDFRequestObjectRef_c2efd103-5295-494f-8938-95cf0d76fc3e.xml, IWDFIoRequest2::GetStatus, IWDFIoRequest2, GetStatus method, IWDFIoRequest2 interface, wudfddi/IWDFIoRequest2::GetStatus, GetStatus, GetStatus method, IWDFIoRequest2 interface, GetStatus method, umdf.iwdfiorequest2_getstatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -80,24 +80,22 @@ If a driver's call to <a href="https://msdn.microsoft.com/f916b414-9cd9-4745-a02
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559074">IWDFIoRequest::CompleteWithInformation</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559074">IWDFIoRequest::CompleteWithInformation</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 

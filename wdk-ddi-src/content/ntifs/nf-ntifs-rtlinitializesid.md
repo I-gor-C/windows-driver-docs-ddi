@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6b87483f-8d5e-4e1d-839d-2271990dcbaa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlInitializeSid routine [Installable File System Drivers], ntifs/RtlInitializeSid, ifsk.rtlinitializesid, rtlref_fbcc1ed7-4929-415f-9644-b8d9521a5c1a.xml, RtlInitializeSid
+ms.keywords : ifsk.rtlinitializesid, RtlInitializeSid, ntifs/RtlInitializeSid, rtlref_fbcc1ed7-4929-415f-9644-b8d9521a5c1a.xml, RtlInitializeSid routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,20 +108,18 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
-
 <a href="..\ntifs\ns-ntifs-_sid_identifier_authority.md">SID_IDENTIFIER_AUTHORITY</a>
+
+<a href="..\ntifs\nf-ntifs-rtlsubauthoritysid.md">RtlSubAuthoritySid</a>
 
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 

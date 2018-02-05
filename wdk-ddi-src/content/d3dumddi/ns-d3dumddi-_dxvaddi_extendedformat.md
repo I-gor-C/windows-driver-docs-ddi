@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e4f863bd-12ec-489d-a6e0-6b9242fbb0b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXVADDI_EXTENDEDFORMAT, DXVA2_Structs_31dd9223-b889-4db9-acc0-520c8f16410a.xml, DXVADDI_EXTENDEDFORMAT structure [Display Devices], d3dumddi/DXVADDI_EXTENDEDFORMAT, display.dxvaddi_extendedformat, DXVADDI_EXTENDEDFORMAT"
+ms.keywords : "_DXVADDI_EXTENDEDFORMAT, d3dumddi/DXVADDI_EXTENDEDFORMAT, display.dxvaddi_extendedformat, DXVA2_Structs_31dd9223-b889-4db9-acc0-520c8f16410a.xml, DXVADDI_EXTENDEDFORMAT structure [Display Devices], DXVADDI_EXTENDEDFORMAT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ typedef struct _DXVADDI_EXTENDEDFORMAT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 92c75e9c-ea29-40f5-84b2-bfe406075717
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSetStreamHandleContext, FltApiRef_p_to_z_371045bc-91b4-4695-a44a-7ef4fd5c1bd7.xml, ifsk.fltsetstreamhandlecontext, fltkernel/FltSetStreamHandleContext, FltSetStreamHandleContext routine [Installable File System Drivers]
+ms.keywords : FltSetStreamHandleContext, ifsk.fltsetstreamhandlecontext, FltSetStreamHandleContext routine [Installable File System Drivers], FltApiRef_p_to_z_371045bc-91b4-4695-a44a-7ef4fd5c1bd7.xml, fltkernel/FltSetStreamHandleContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,14 @@ A flag that specifies details of the operation to be performed. This parameter m
 
 
 
-#### FLT_SET_CONTEXT_REPLACE_IF_EXISTS
-
-If a context is already set for this <i>Instance</i>, replace it with <i>NewContext</i>. Otherwise, insert <i>NewContext</i> into the list of contexts for the stream handle. 
-
-
 #### FLT_SET_CONTEXT_KEEP_IF_EXISTS
 
-If a context is already set for this <i>Instance</i>, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, insert <i>NewContext</i> into the list of contexts for the stream handle.
+If a context is already set for this <i>Instance</i>, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, insert <i>NewContext</i> into the list of contexts for the stream handle. 
+
+
+#### FLT_SET_CONTEXT_REPLACE_IF_EXISTS
+
+If a context is already set for this <i>Instance</i>, replace it with <i>NewContext</i>. Otherwise, insert <i>NewContext</i> into the list of contexts for the stream handle.
 
 `NewContext`
 
@@ -193,26 +193,24 @@ For more information about context reference counting, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported on Windows 2000 SP4 and earlier operating systems. Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported on Windows 2000 SP4 and earlier operating systems. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | Fltmgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
 
  
 

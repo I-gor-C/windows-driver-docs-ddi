@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 896919C9-E72E-4C0F-9E3E-9BEE9F55D27D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUFX_DEVICE_CAPABILITIES, _UFX_DEVICE_CAPABILITIES, buses.ufx_device_capabilities, ufxbase/UFX_DEVICE_CAPABILITIES, *PUFX_DEVICE_CAPABILITIES, PUFX_DEVICE_CAPABILITIES structure pointer [Buses], UFX_DEVICE_CAPABILITIES, UFX_DEVICE_CAPABILITIES structure [Buses], ufxbase/PUFX_DEVICE_CAPABILITIES
+ms.keywords : ufxbase/UFX_DEVICE_CAPABILITIES, PUFX_DEVICE_CAPABILITIES structure pointer [Buses], *PUFX_DEVICE_CAPABILITIES, _UFX_DEVICE_CAPABILITIES, UFX_DEVICE_CAPABILITIES, UFX_DEVICE_CAPABILITIES structure [Buses], PUFX_DEVICE_CAPABILITIES, ufxbase/PUFX_DEVICE_CAPABILITIES, buses.ufx_device_capabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,7 +85,4 @@ Size of the <b>UFX_DEVICE_CAPABILITIES</b> structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ufxbase.h |

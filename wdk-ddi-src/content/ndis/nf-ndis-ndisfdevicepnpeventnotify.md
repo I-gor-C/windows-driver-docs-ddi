@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ae5dd48b-7777-4232-89ad-ac4464e03e57
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFDevicePnPEventNotify, NdisFDevicePnPEventNotify, netvista.ndisfdevicepnpeventnotify, NdisFDevicePnPEventNotify function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_56e249ae-0200-4c98-b20c-03cc8d3fdd7d.xml
+ms.keywords : filter_ndis_functions_ref_56e249ae-0200-4c98-b20c-03cc8d3fdd7d.xml, netvista.ndisfdevicepnpeventnotify, NdisFDevicePnPEventNotify function [Network Drivers Starting with Windows Vista], NdisFDevicePnPEventNotify, ndis/NdisFDevicePnPEventNotify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,8 +75,8 @@ None
 ## Remarks
 
 NDIS calls a filter driver's 
-    <mshelp:link keywords="netvista.filterdevicepnpeventnotify" tabindex="0"><i>
-    FilterDevicePnPEventNotify</i></mshelp:link> function to notify the filter driver of device PnP and Power Management
+    <a href="..\ndis\nc-ndis-filter_device_pnp_event_notify.md">
+    FilterDevicePnPEventNotify</a> function to notify the filter driver of device PnP and Power Management
     events that affect an underlying device object.
 
 Filter drivers can forward these notifications to underlying drivers. To forward a request, call the 
@@ -86,20 +86,18 @@ Filter drivers can forward these notifications to underlying drivers. To forward
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
 <a href="..\ndis\ns-ndis-_net_device_pnp_event.md">NET_DEVICE_PNP_EVENT</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 <a href="..\ndis\nc-ndis-filter_device_pnp_event_notify.md">FilterDevicePnPEventNotify</a>
 

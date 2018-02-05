@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7969f683-3426-4863-8afe-d9cbe490a4b5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfrequestretrieveunsafeuseroutputbuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSEROUTPUTBUFFER, wdf.wdfrequestretrieveunsafeuseroutputbuffer, wdfrequest/WdfRequestRetrieveUnsafeUserOutputBuffer, WdfRequestRetrieveUnsafeUserOutputBuffer, WdfRequestRetrieveUnsafeUserOutputBuffer method, DFRequestObjectRef_3f483887-e2fa-413d-b147-9f18fc092800.xml
+ms.keywords : WdfRequestRetrieveUnsafeUserOutputBuffer, kmdf.wdfrequestretrieveunsafeuseroutputbuffer, wdf.wdfrequestretrieveunsafeuseroutputbuffer, DFRequestObjectRef_3f483887-e2fa-413d-b147-9f18fc092800.xml, wdfrequest/WdfRequestRetrieveUnsafeUserOutputBuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSEROUTPUTBUFFER, WdfRequestRetrieveUnsafeUserOutputBuffer method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -152,20 +152,18 @@ For more information about <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b>, see 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedReadA, BufAfterReqCompletedWrite, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, OutputBufferAPI |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer.md">WdfRequestRetrieveUnsafeUserInputBuffer</a>
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer.md">WdfRequestRetrieveUnsafeUserInputBuffer</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a>
 

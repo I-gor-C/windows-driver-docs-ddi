@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A90FCF3C-B648-4E97-887E-FCE58D7FA13A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : RetrieveActivityId method, IWDFIoRequest3 interface, IWDFIoRequest3, IWDFIoRequest3::RetrieveActivityId, wdf.iwdfiorequest3_retrieveactivityid, wudfddi/IWDFIoRequest3::RetrieveActivityId, RetrieveActivityId method, umdf.iwdfiorequest3_retrieveactivityid, IWDFIoRequest3 interface, RetrieveActivityId method, RetrieveActivityId
+ms.keywords : RetrieveActivityId method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, RetrieveActivityId method, wudfddi/IWDFIoRequest3::RetrieveActivityId, IWDFIoRequest3, RetrieveActivityId, RetrieveActivityId method, IWDFIoRequest3::RetrieveActivityId, wdf.iwdfiorequest3_retrieveactivityid, umdf.iwdfiorequest3_retrieveactivityid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -98,20 +98,19 @@ The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
-
 <a href="https://msdn.microsoft.com/57CB3CED-FE46-4A74-9E23-82640B7EF1DC">IWDFIoRequest3::SetActivityId</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
 
  
 

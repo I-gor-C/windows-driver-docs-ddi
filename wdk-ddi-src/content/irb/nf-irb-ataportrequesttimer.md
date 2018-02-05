@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b057ae2e-53ae-4da9-8668-1ebca3c80998
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : atartns_604a8d41-c918-4121-97ef-10d3a7fbf3b4.xml, storage.ataportrequesttimer, irb/AtaPortRequestTimer, AtaPortRequestTimer, AtaPortRequestTimer routine [Storage Devices]
+ms.keywords : storage.ataportrequesttimer, irb/AtaPortRequestTimer, AtaPortRequestTimer routine [Storage Devices], AtaPortRequestTimer, atartns_604a8d41-c918-4121-97ef-10d3a7fbf3b4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,9 @@ The ATA port driver passes a pointer to the channel extension to the timer routi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : CF54D922-8EEE-41CE-8CFC-0628756117BE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PosCxGetDeviceInterfaceTag function, PosCxGetDeviceInterfaceTag, pos.poscxgetdeviceinterfacetag, poscx/PosCxGetDeviceInterfaceTag
+ms.keywords : PosCxGetDeviceInterfaceTag, PosCxGetDeviceInterfaceTag function, poscx/PosCxGetDeviceInterfaceTag, pos.poscxgetdeviceinterfacetag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,9 @@ The device interface tag value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

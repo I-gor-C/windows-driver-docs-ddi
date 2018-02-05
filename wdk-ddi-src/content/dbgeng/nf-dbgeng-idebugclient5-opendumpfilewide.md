@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 56efc94f-ef1e-41f9-ab99-57f0be34a770
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : OpenDumpFileWide method [Windows Debugging], IDebugClient4 interface, IDebugClient4::OpenDumpFileWide, dbgeng/IDebugClient4::OpenDumpFileWide, OpenDumpFileWide, OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::OpenDumpFileWide, IDebugClient_e3280682-6272-4324-bba5-120a95f27b15.xml, OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], OpenDumpFileWide method, IDebugClient5::OpenDumpFileWide, debugger.opendumpfilewide, IDebugClient4 interface [Windows Debugging], OpenDumpFileWide method, IDebugClient5
+ms.keywords : OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], OpenDumpFileWide method, OpenDumpFileWide, OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface, OpenDumpFileWide method [Windows Debugging], IDebugClient4 interface, IDebugClient4::OpenDumpFileWide, IDebugClient_e3280682-6272-4324-bba5-120a95f27b15.xml, dbgeng/IDebugClient4::OpenDumpFileWide, dbgeng/IDebugClient5::OpenDumpFileWide, debugger.opendumpfilewide, IDebugClient4 interface [Windows Debugging], OpenDumpFileWide method, IDebugClient5::OpenDumpFileWide, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -91,28 +91,23 @@ The ASCII version of this method is <a href="https://msdn.microsoft.com/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552322">OpenDumpFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564611">.opendump (Open Dump File)</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537874">AddDumpInformationFileWide</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564611">.opendump (Open Dump File)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552322">OpenDumpFile</a>
 
  
 

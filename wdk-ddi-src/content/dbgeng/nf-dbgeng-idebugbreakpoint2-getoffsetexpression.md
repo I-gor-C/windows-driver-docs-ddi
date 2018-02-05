@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 9fbdfa42-7231-4281-ba19-a33e854cd801
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getoffsetexpression, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpression method, dbgeng/IDebugBreakpoint::GetOffsetExpression, IDebugBreakpoint2, IDebugBreakpoint::GetOffsetExpression, IDebugBreakpoint2::GetOffsetExpression, dbgeng/IDebugBreakpoint2::GetOffsetExpression, ComOther_08bb15b2-f37d-4bd2-b19a-899ab9293f4a.xml, GetOffsetExpression, GetOffsetExpression method [Windows Debugging], GetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint interface [Windows Debugging], GetOffsetExpression method, GetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface
+ms.keywords : IDebugBreakpoint::GetOffsetExpression, GetOffsetExpression method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetOffsetExpression, IDebugBreakpoint2, ComOther_08bb15b2-f37d-4bd2-b19a-899ab9293f4a.xml, GetOffsetExpression method [Windows Debugging], GetOffsetExpression method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetOffsetExpression method, GetOffsetExpression, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpression method, IDebugBreakpoint2::GetOffsetExpression, debugger.getoffsetexpression, dbgeng/IDebugBreakpoint2::GetOffsetExpression
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -111,11 +111,6 @@ For more information about how to use breakpoints, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -106,7 +106,6 @@ In this example, the PF driver generates a unique identifier by calling <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pcivirt.h |
 | **IRQL** | PASSIVE_LEVEL |
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0b617fa4-da0b-4a98-a0e5-ad9fea67d980
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : atartns_6722ff8e-9f8c-4b6a-88d1-305f892250bd.xml, AtaPortWriteRegisterBufferUchar routine [Storage Devices], storage.ataportwriteregisterbufferuchar, irb/AtaPortWriteRegisterBufferUchar, AtaPortWriteRegisterBufferUchar
+ms.keywords : AtaPortWriteRegisterBufferUchar routine [Storage Devices], storage.ataportwriteregisterbufferuchar, atartns_6722ff8e-9f8c-4b6a-88d1-305f892250bd.xml, AtaPortWriteRegisterBufferUchar, irb/AtaPortWriteRegisterBufferUchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9048a568-3369-44eb-8fa8-361ce968a253
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdriver_isversionavailable, IsVersionAvailable method, IWDFDriver interface, UMDFDriverObjectRef_6ad78413-a8c5-4a9f-953d-94bd4eaf3425.xml, IWDFDriver::IsVersionAvailable, wudfddi/IWDFDriver::IsVersionAvailable, IWDFDriver, IsVersionAvailable, IsVersionAvailable method, wdf.iwdfdriver_isversionavailable, IWDFDriver interface, IsVersionAvailable method
+ms.keywords : IWDFDriver, IsVersionAvailable method, IWDFDriver interface, UMDFDriverObjectRef_6ad78413-a8c5-4a9f-953d-94bd4eaf3425.xml, wdf.iwdfdriver_isversionavailable, IWDFDriver interface, IsVersionAvailable method, IsVersionAvailable method, wudfddi/IWDFDriver::IsVersionAvailable, umdf.iwdfdriver_isversionavailable, IsVersionAvailable, IWDFDriver::IsVersionAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,14 +68,12 @@ A pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-umdf_version_data.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

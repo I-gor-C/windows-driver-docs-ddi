@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f7d1af11-c360-4f7f-a47a-cf7a182b2b78
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_releaseswizzlingrange, DmStructs_7ed7a86e-7376-47a8-8198-9c991005fd0a.xml, d3dkmddi/DXGKARG_RELEASESWIZZLINGRANGE, DXGKARG_RELEASESWIZZLINGRANGE, DXGKARG_RELEASESWIZZLINGRANGE structure [Display Devices], _DXGKARG_RELEASESWIZZLINGRANGE
+ms.keywords : DmStructs_7ed7a86e-7376-47a8-8198-9c991005fd0a.xml, DXGKARG_RELEASESWIZZLINGRANGE structure [Display Devices], d3dkmddi/DXGKARG_RELEASESWIZZLINGRANGE, DXGKARG_RELEASESWIZZLINGRANGE, _DXGKARG_RELEASESWIZZLINGRANGE, display.dxgkarg_releaseswizzlingrange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,18 +69,16 @@ typedef struct _DXGKARG_RELEASESWIZZLINGRANGE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_releaseswizzlingrange.md">DxgkDdiReleaseSwizzlingRange</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_releaseswizzlingrange.md">DxgkDdiReleaseSwizzlingRange</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
 
  
 

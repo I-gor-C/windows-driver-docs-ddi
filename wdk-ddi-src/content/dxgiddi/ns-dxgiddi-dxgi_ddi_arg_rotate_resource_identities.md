@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 904b16d1-44dc-4d7a-96cb-3fd82d378b24
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES structure [Display Devices], UMDisplayDriver_Dx10param_Structs_f52f40ab-97f1-4c3f-839f-9da2dc8e7798.xml, DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES, dxgiddi/DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES, display.dxgi_ddi_arg_rotate_resource_identities
+ms.keywords : DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES, DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES structure [Display Devices], display.dxgi_ddi_arg_rotate_resource_identities, dxgiddi/DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES, UMDisplayDriver_Dx10param_Structs_f52f40ab-97f1-4c3f-839f-9da2dc8e7798.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ Beginning in Windows 8, the driver must support rotation of stereo back buffers
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

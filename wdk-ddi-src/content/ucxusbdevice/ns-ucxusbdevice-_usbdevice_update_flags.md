@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 36F009C8-046B-437A-83D6-AE8D5BF51AF3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS structure pointer [Buses], USBDEVICE_UPDATE_FLAGS structure [Buses], _USBDEVICE_UPDATE_FLAGS, ucxusbdevice/_USBDEVICE_UPDATE_FLAGS, ucxusbdevice/P_USBDEVICE_UPDATE_FLAGS, buses._usbdevice_update_flags
+ms.keywords : ucxusbdevice/P_USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS, ucxusbdevice/_USBDEVICE_UPDATE_FLAGS, USBDEVICE_UPDATE_FLAGS structure [Buses], USBDEVICE_UPDATE_FLAGS, buses._usbdevice_update_flags, _USBDEVICE_UPDATE_FLAGS, P_USBDEVICE_UPDATE_FLAGS structure pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,18 +95,15 @@ If set, indicates a request to  update the root port resume time.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_failure_flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
-
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update.md">USBDEVICE_UPDATE</a>
 
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_20_hardware_lpm_parameters.md">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_failure_flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 
  
 

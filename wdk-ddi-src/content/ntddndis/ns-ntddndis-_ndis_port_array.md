@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f77469d3-ce48-4e17-9fff-1af56296f61f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_PORT_ARRAY, PNDIS_PORT_ARRAY, netvista.ndis_port_array, PNDIS_PORT_ARRAY structure pointer [Network Drivers Starting with Windows Vista], NDIS_PORT_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PORT_ARRAY, _NDIS_PORT_ARRAY, *PNDIS_PORT_ARRAY, ndis_ports_ref_1bba9fc6-0cd9-40f7-92ad-20979dcaa400.xml, ntddndis/NDIS_PORT_ARRAY
+ms.keywords : PNDIS_PORT_ARRAY, ntddndis/PNDIS_PORT_ARRAY, _NDIS_PORT_ARRAY, *PNDIS_PORT_ARRAY, NDIS_PORT_ARRAY, PNDIS_PORT_ARRAY structure pointer [Network Drivers Starting with Windows Vista], ndis_ports_ref_1bba9fc6-0cd9-40f7-92ad-20979dcaa400.xml, NDIS_PORT_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PORT_ARRAY, netvista.ndis_port_array
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,8 +88,8 @@ An array that contains the port characteristics for each active NDIS port on a m
      <b>ElementSize</b> member specifies the size of each element in the array. The 
      <b>NumberOfPorts</b> member specifies the number of elements in the array. Each
      element in the array is an 
-     <mshelp:link keywords="netvista.ndis_port_characteristics" tabindex="0"><b>
-     NDIS_PORT_CHARACTERISTICS</b></mshelp:link> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">
+     NDIS_PORT_CHARACTERISTICS</a> structure.
 
 ## Remarks
 The NDIS_PORT_ARRAY structure specifies characteristics, of all of the active NDIS ports on the
@@ -99,18 +99,16 @@ The NDIS_PORT_ARRAY structure specifies characteristics, of all of the active ND
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">NDIS_PORT_CHARACTERISTICS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569583">OID_GEN_ENUMERATE_PORTS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">NDIS_PORT_CHARACTERISTICS</a>
 
  
 

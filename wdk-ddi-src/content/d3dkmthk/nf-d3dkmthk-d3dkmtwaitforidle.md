@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6107da09-3f3d-4a89-91e4-f920061f7704
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtwaitforidle, d3dkmthk/D3DKMTWaitForIdle, D3DKMTWaitForIdle, OpenGL_Functions_80855290-d991-4e03-aa64-f0fb486c57b0.xml, D3DKMTWaitForIdle function [Display Devices]
+ms.keywords : display.d3dkmtwaitforidle, D3DKMTWaitForIdle, D3DKMTWaitForIdle function [Display Devices], OpenGL_Functions_80855290-d991-4e03-aa64-f0fb486c57b0.xml, d3dkmthk/D3DKMTWaitForIdle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

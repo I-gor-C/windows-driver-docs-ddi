@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR, *PWDF_MEMORY_DESCRIPTOR
+req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -162,20 +162,17 @@ EVT_WDF_OBJECT_CONTEXT_CLEANUP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
-| **Library** |  |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a>
-
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a>
 
 <a href="..\wdfworkitem\nf-wdfworkitem-wdfworkitemflush.md">WdfWorkItemFlush</a>
 

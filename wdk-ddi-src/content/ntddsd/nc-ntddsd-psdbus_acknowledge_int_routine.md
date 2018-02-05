@@ -75,14 +75,9 @@ The caller must be running at IRQL &lt;= DISPATCH_LEVEL when it acknowledges tha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntddsd.h (include Ntddsd.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL (See Remarks section.)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

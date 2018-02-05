@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f03f72a8-8dc1-4e27-b89b-1afea16a177a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MONITOREX, MONITOREX structure [Print Devices], spoolfnc_4910913b-826e-4947-8186-7737d7b3c3fa.xml, _MONITOREX, winsplp/MONITOREX, LPMONITOREX structure pointer [Print Devices], LPMONITOREX, *LPMONITOREX, print.monitorex, winsplp/LPMONITOREX
+ms.keywords : winsplp/LPMONITOREX, _MONITOREX, LPMONITOREX, MONITOREX, MONITOREX structure [Print Devices], print.monitorex, spoolfnc_4910913b-826e-4947-8186-7737d7b3c3fa.xml, *LPMONITOREX, winsplp/MONITOREX, LPMONITOREX structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MONITOREX, *LPMONITOREX
+req.typenames : "*LPMONITOREX, MONITOREX"
 req.product : Windows 10 or later.
 ---
 
@@ -69,9 +69,6 @@ Print monitors are responsible for filling in the MONITOREX and MONITOR structur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also

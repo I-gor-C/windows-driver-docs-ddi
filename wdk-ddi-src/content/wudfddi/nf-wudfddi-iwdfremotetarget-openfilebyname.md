@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7f0cef78-3edc-434b-af70-39694776e8a7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OpenFileByName, wudfddi/IWDFRemoteTarget::OpenFileByName, wdf.iwdfremotetarget_openfilebyname, umdf.iwdfremotetarget_openfilebyname, IWDFRemoteTarget interface, OpenFileByName method, OpenFileByName method, OpenFileByName method, IWDFRemoteTarget interface, UMDFIoTargetObjectRef_909b78ee-2d3a-46b2-bfca-f72063ca62f8.xml, IWDFRemoteTarget::OpenFileByName, IWDFRemoteTarget
+ms.keywords : wdf.iwdfremotetarget_openfilebyname, OpenFileByName method, IWDFRemoteTarget interface, OpenFileByName method, UMDFIoTargetObjectRef_909b78ee-2d3a-46b2-bfca-f72063ca62f8.xml, wudfddi/IWDFRemoteTarget::OpenFileByName, IWDFRemoteTarget, IWDFRemoteTarget::OpenFileByName, OpenFileByName, OpenFileByName method, IWDFRemoteTarget interface, umdf.iwdfremotetarget_openfilebyname
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -110,22 +110,20 @@ For more information about the <b>OpenFileByName</b> method and remote I/O targe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
 
  
 

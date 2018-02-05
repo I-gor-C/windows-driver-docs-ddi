@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A45231E0-0807-41AA-B20F-6335067BE99A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDMATRANSACTIONSETDEVICEADDRESSOFFSET, kmdf.wdfdmatransactionsetdeviceaddressoffset, wdfdmatransaction/WdfDmaTransactionSetDeviceAddressOffset, wdf.wdfdmatransactionsetdeviceaddressoffset, WdfDmaTransactionSetDeviceAddressOffset, WdfDmaTransactionSetDeviceAddressOffset method
+ms.keywords : wdf.wdfdmatransactionsetdeviceaddressoffset, WdfDmaTransactionSetDeviceAddressOffset method, PFN_WDFDMATRANSACTIONSETDEVICEADDRESSOFFSET, kmdf.wdfdmatransactionsetdeviceaddressoffset, WdfDmaTransactionSetDeviceAddressOffset, wdfdmatransaction/WdfDmaTransactionSetDeviceAddressOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,12 +88,11 @@ If your driver calls this method on an operating system earlier than Windows 8,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

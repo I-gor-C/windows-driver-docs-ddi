@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b4d01c1f-8267-490e-a808-87d9be666a94
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_ExtendedFormat, DXVA_ExtendedFormat structure [Display Devices], _DXVA_ExtendedFormat, dxva/DXVA_ExtendedFormat, display.dxva_extendedformat, dxvaref_3e46e283-492a-4ec5-8213-ff05215b0676.xml
+ms.keywords : dxvaref_3e46e283-492a-4ec5-8213-ff05215b0676.xml, dxva/DXVA_ExtendedFormat, DXVA_ExtendedFormat, DXVA_ExtendedFormat structure [Display Devices], display.dxva_extendedformat, _DXVA_ExtendedFormat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,26 +89,24 @@ Specifies the conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The 3 bits are
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
-<a href="..\dxva\ne-dxva-_dxva_videotransferfunction.md">DXVA_VideoTransferFunction</a>
+<a href="..\dxva\ne-dxva-_dxva_nominalrange.md">DXVA_NominalRange</a>
 
 <a href="..\dxva\ne-dxva-_dxva_videoprimaries.md">DXVA_VideoPrimaries</a>
-
-<a href="..\dxva\ne-dxva-_dxva_videolighting.md">DXVA_VideoLighting</a>
 
 <a href="..\dxva\ne-dxva-_dxva_videochromasubsampling.md">DXVA_VideoChromaSubsampling</a>
 
 <a href="..\dxva\ne-dxva-_dxva_videotransfermatrix.md">DXVA_VideoTransferMatrix</a>
 
-<a href="..\dxva\ne-dxva-_dxva_nominalrange.md">DXVA_NominalRange</a>
-
 <a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
+
+<a href="..\dxva\ne-dxva-_dxva_videotransferfunction.md">DXVA_VideoTransferFunction</a>
+
+<a href="..\dxva\ne-dxva-_dxva_videolighting.md">DXVA_VideoLighting</a>
 
  
 

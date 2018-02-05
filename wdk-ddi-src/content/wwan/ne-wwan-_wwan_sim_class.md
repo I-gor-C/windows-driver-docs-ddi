@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4d66874b-bb1d-43e5-a4b2-525face7de81
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanSimClassSimRemote, netvista.wwan_sim_class, WwanSimClassSimRemovable, *PWWAN_SIM_CLASS, WwanSimClassSimLogical, wwan/WwanSimClassSimRemote, PWWAN_SIM_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanSimClassSimRemovable, wwan/WwanSimClassSimLogical, PWWAN_SIM_CLASS, WwanSimClassUnknown, _WWAN_SIM_CLASS, wwan/WwanSimClassUnknown, wwan/WwanSimClassMax, WWAN_SIM_CLASS, WwanRef_8c5184eb-4ac5-40a7-bb52-875554517f70.xml, WwanSimClassMax, wwan/WWAN_SIM_CLASS, wwan/PWWAN_SIM_CLASS, WWAN_SIM_CLASS enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : PWWAN_SIM_CLASS, wwan/WWAN_SIM_CLASS, WWAN_SIM_CLASS enumeration [Network Drivers Starting with Windows Vista], WwanSimClassSimLogical, wwan/WwanSimClassSimRemovable, wwan/WwanSimClassSimRemote, WWAN_SIM_CLASS, _WWAN_SIM_CLASS, WwanSimClassSimRemote, WwanSimClassMax, PWWAN_SIM_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], WwanRef_8c5184eb-4ac5-40a7-bb52-875554517f70.xml, wwan/WwanSimClassUnknown, WwanSimClassUnknown, wwan/PWWAN_SIM_CLASS, wwan/WwanSimClassMax, WwanSimClassSimRemovable, netvista.wwan_sim_class, wwan/WwanSimClassSimLogical, *PWWAN_SIM_CLASS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_SIM_CLASS, *PWWAN_SIM_CLASS
+req.typenames : "*PWWAN_SIM_CLASS, WWAN_SIM_CLASS"
 req.product : Windows 10 or later.
 ---
 
@@ -89,9 +89,7 @@ typedef enum _WWAN_SIM_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

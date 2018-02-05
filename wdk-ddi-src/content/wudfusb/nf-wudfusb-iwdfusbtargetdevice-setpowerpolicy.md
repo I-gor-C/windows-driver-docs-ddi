@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e1b31df0-d383-43a3-bf9f-8874689cbf58
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : SetPowerPolicy method, IWDFUsbTargetDevice interface, wudfusb/IWDFUsbTargetDevice::SetPowerPolicy, IWDFUsbTargetDevice::SetPowerPolicy, SetPowerPolicy method, wdf.iwdfusbtargetdevice_setpowerpolicy, SetPowerPolicy, IWDFUsbTargetDevice, IWDFUsbTargetDevice interface, SetPowerPolicy method, umdf.iwdfusbtargetdevice_setpowerpolicy, UMDFUSBref_fb6e31cc-0db6-4733-baea-d73514fb5160.xml
+ms.keywords : umdf.iwdfusbtargetdevice_setpowerpolicy, IWDFUsbTargetDevice::SetPowerPolicy, IWDFUsbTargetDevice, IWDFUsbTargetDevice interface, SetPowerPolicy method, SetPowerPolicy method, IWDFUsbTargetDevice interface, SetPowerPolicy method, wudfusb/IWDFUsbTargetDevice::SetPowerPolicy, SetPowerPolicy, wdf.iwdfusbtargetdevice_setpowerpolicy, UMDFUSBref_fb6e31cc-0db6-4733-baea-d73514fb5160.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -128,20 +128,18 @@ The <b>SetPowerPolicy</b> method generates a UMDF request and synchronously send
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560379">IWDFUsbTargetDevice::RetrievePowerPolicy</a>
-
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560379">IWDFUsbTargetDevice::RetrievePowerPolicy</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540309">WinUsb_SetPowerPolicy</a>
 

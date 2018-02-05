@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 82080353-2252-4BF2-B7F4-F297DCA99FA0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Seek method [Print Devices], IPrinterScriptableStream interface [Print Devices], Seek method, IPrinterScriptableStream, print.iprinterscriptablestream__seek, Seek method [Print Devices], IPrinterScriptableStream interface, IPrinterScriptableStream::Seek, printerextension/IPrinterScriptableStream::Seek, Seek
+ms.keywords : IPrinterScriptableStream::Seek, IPrinterScriptableStream interface [Print Devices], Seek method, IPrinterScriptableStream, print.iprinterscriptablestream__seek, Seek method [Print Devices], IPrinterScriptableStream interface, Seek method [Print Devices], printerextension/IPrinterScriptableStream::Seek, Seek
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,14 +76,10 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

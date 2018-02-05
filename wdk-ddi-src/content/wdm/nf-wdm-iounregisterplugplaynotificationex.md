@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 72545150-5fd8-4770-aab2-b49d80c1e865
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoUnregisterPlugPlayNotificationEx, kernel.iounregisterplugplaynotificationex, k104_ed460118-9610-4e7b-98fe-3b1cfee74e4b.xml, IoUnregisterPlugPlayNotificationEx routine [Kernel-Mode Driver Architecture], IoUnregisterPlugPlayNotificationEx
+ms.keywords : k104_ed460118-9610-4e7b-98fe-3b1cfee74e4b.xml, kernel.iounregisterplugplaynotificationex, IoUnregisterPlugPlayNotificationEx routine [Kernel-Mode Driver Architecture], wdm/IoUnregisterPlugPlayNotificationEx, IoUnregisterPlugPlayNotificationEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,19 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iounregisterplugplaynotification.md">IoUnregisterPlugPlayNotification</a>
-
 <a href="..\wdm\nf-wdm-ioregisterplugplaynotification.md">IoRegisterPlugPlayNotification</a>
+
+<a href="..\wdm\nf-wdm-iounregisterplugplaynotification.md">IoUnregisterPlugPlayNotification</a>
 
  
 

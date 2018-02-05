@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d635d93b-3e69-4ce5-9dc0-60186417d009
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportstallexecution, StorPortStallExecution, storport/StorPortStallExecution, storprt_8cddf62f-d26d-4dd8-85f5-5bf35f74c1de.xml, StorPortStallExecution routine [Storage Devices]
+ms.keywords : storprt_8cddf62f-d26d-4dd8-85f5-5bf35f74c1de.xml, storport/StorPortStallExecution, storage.storportstallexecution, StorPortStallExecution, StorPortStallExecution routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,13 +66,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
+| **Library** | Storport.lib |
 | **DDI compliance rules** | SpNoWait |
 
 ## See Also

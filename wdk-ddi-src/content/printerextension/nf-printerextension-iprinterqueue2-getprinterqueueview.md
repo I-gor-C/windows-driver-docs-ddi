@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : C565288C-B014-4A92-9F50-1641EAA30D22
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, print.iprinterqueue2_getprinterqueueview, printerextension/IPrinterQueue2::GetPrinterQueueView, IPrinterQueue2, GetPrinterQueueView, GetPrinterQueueView method [Print Devices], IPrinterQueue2::GetPrinterQueueView, IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method
+ms.keywords : GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, GetPrinterQueueView method [Print Devices], IPrinterQueue2::GetPrinterQueueView, IPrinterQueue2, IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method, GetPrinterQueueView, print.iprinterqueue2_getprinterqueueview, printerextension/IPrinterQueue2::GetPrinterQueueView
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -99,14 +99,10 @@ However it is possible to move around the single view that you retrieve. In othe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 10AC7347-6C6B-4A37-9298-B773ADCB3FDA
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAcquireAndRemoveOnlySingleItem, stream.ksirp_removal_operation, ks/KsAcquireAndRemove, KSIRP_REMOVAL_OPERATION enumeration [Streaming Media Devices], KsAcquireOnly, KsAcquireOnlySingleItem, ks/KsAcquireOnly, ks/KsAcquireOnlySingleItem, ks/KsAcquireAndRemoveOnlySingleItem, KsAcquireAndRemove, ks/KSIRP_REMOVAL_OPERATION, KSIRP_REMOVAL_OPERATION
+ms.keywords : ks/KSIRP_REMOVAL_OPERATION, KsAcquireAndRemove, ks/KsAcquireOnlySingleItem, stream.ksirp_removal_operation, KsAcquireOnlySingleItem, KSIRP_REMOVAL_OPERATION enumeration [Streaming Media Devices], ks/KsAcquireOnly, ks/KsAcquireAndRemove, KsAcquireAndRemoveOnlySingleItem, ks/KsAcquireAndRemoveOnlySingleItem, KSIRP_REMOVAL_OPERATION, KsAcquireOnly
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h |

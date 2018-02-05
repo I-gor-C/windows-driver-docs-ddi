@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84570bac-63f1-4e34-919f-c150f9f0810e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_DEVICESTATE_EXECUTION, D3DKMT_DEVICESTATE_TYPE, d3dkmthk/D3DKMT_DEVICESTATE_RESET, OpenGL_Structs_7446b76d-102c-4d61-bf39-ce1ca17ea036.xml, _D3DKMT_DEVICESTATE_TYPE, d3dkmthk/D3DKMT_DEVICESTATE_PAGE_FAULT, d3dkmthk/D3DKMT_DEVICESTATE_TYPE, D3DKMT_DEVICESTATE_RESET, d3dkmthk/D3DKMT_DEVICESTATE_PRESENT, D3DKMT_DEVICESTATE_PAGE_FAULT, D3DKMT_DEVICESTATE_PRESENT, D3DKMT_DEVICESTATE_TYPE enumeration [Display Devices], D3DKMT_DEVICESTATE_PRESENT_DWM, display.d3dkmt_devicestate_type, d3dkmthk/, d3dkmthk/D3DKMT_DEVICESTATE_EXECUTION, d3dkmthk/D3DKMT_DEVICESTATE_PRESENT_DWM
+ms.keywords : D3DKMT_DEVICESTATE_PRESENT_DWM, display.d3dkmt_devicestate_type, d3dkmthk/D3DKMT_DEVICESTATE_EXECUTION, d3dkmthk/D3DKMT_DEVICESTATE_PAGE_FAULT, D3DKMT_DEVICESTATE_PAGE_FAULT, D3DKMT_DEVICESTATE_EXECUTION, OpenGL_Structs_7446b76d-102c-4d61-bf39-ce1ca17ea036.xml, d3dkmthk/D3DKMT_DEVICESTATE_PRESENT_DWM, d3dkmthk/, D3DKMT_DEVICESTATE_TYPE, _D3DKMT_DEVICESTATE_TYPE, D3DKMT_DEVICESTATE_TYPE enumeration [Display Devices], d3dkmthk/D3DKMT_DEVICESTATE_RESET, d3dkmthk/D3DKMT_DEVICESTATE_TYPE, D3DKMT_DEVICESTATE_PRESENT, d3dkmthk/D3DKMT_DEVICESTATE_PRESENT, D3DKMT_DEVICESTATE_RESET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -94,9 +94,7 @@ typedef enum _D3DKMT_DEVICESTATE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

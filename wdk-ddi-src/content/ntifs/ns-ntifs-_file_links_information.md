@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : adf1d2f3-4395-43d9-8157-e9f246e2bba8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PFILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION, ntifs/FILE_LINKS_INFORMATION, PFILE_LINKS_INFORMATION structure pointer [Installable File System Drivers], ifsk.file_links_information, PFILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION structure [Installable File System Drivers], _FILE_LINKS_INFORMATION
+ms.keywords : ifsk.file_links_information, PFILE_LINKS_INFORMATION, PFILE_LINKS_INFORMATION structure pointer [Installable File System Drivers], FILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION, _FILE_LINKS_INFORMATION, ntifs/FILE_LINKS_INFORMATION, ntifs/PFILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION
+req.typenames : "*PFILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION"
 ---
 
 # _FILE_LINKS_INFORMATION structure
@@ -73,7 +73,5 @@ The member <b>Entry</b> is the first <a href="..\ntifs\ns-ntifs-_file_link_entry
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e4cebb97-29e4-4979-9fdc-8120850d8a1e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_PBAN_ALL, ntddrilapitypes/RILPHONEBOOKADDITIONALNUMBERPARAMMASK, ntddrilapitypes/RIL_PARAM_PBAN_NUMID, RIL_PARAM_PBAN_NUMID, RILPHONEBOOKADDITIONALNUMBERPARAMMASK, netvista.rilphonebookadditionalnumberparammask, ntddrilapitypes/RIL_PARAM_PBAN_ALL, RILPHONEBOOKADDITIONALNUMBERPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.rilphonebookadditionalnumberparammask, RIL_PARAM_PBAN_ALL, ntddrilapitypes/RILPHONEBOOKADDITIONALNUMBERPARAMMASK, RIL_PARAM_PBAN_NUMID, ntddrilapitypes/RIL_PARAM_PBAN_ALL, ntddrilapitypes/RIL_PARAM_PBAN_NUMID, RILPHONEBOOKADDITIONALNUMBERPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILPHONEBOOKADDITIONALNUMBERPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -73,7 +73,4 @@ typedef enum _RILPHONEBOOKADDITIONALNUMBERPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

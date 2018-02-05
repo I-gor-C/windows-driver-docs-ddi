@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 65E59305-B1D9-4255-926A-A72F3B4887AF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_GEOFENCES_TRACKINGSTATUS_DATA, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, gnssdriver/GNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA structure [Sensor Devices], gnssdriver/PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, PGNSS_GEOFENCES_TRACKINGSTATUS_DATA structure pointer [Sensor Devices], sensors.gnss_geofences_trackingstatus_data
+ms.keywords : GNSS_GEOFENCES_TRACKINGSTATUS_DATA structure [Sensor Devices], sensors.gnss_geofences_trackingstatus_data, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, gnssdriver/PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, PGNSS_GEOFENCES_TRACKINGSTATUS_DATA structure pointer [Sensor Devices], PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA, gnssdriver/GNSS_GEOFENCES_TRACKINGSTATUS_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,7 +83,4 @@ The GNSS engine must not raise  events when it is not tracking any mobile-origin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

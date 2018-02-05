@@ -140,9 +140,8 @@ On successful return from an  <b>IOCTL_EHSTOR_BANDMGMT_REVERT</b> request, the s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
-| **IRQL** |  |
 
 ## See Also
 

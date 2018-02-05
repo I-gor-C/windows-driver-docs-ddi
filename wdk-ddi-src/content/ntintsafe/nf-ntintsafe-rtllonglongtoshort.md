@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F9FCB214-D56A-4BCC-BB7A-40833836D333
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongLongToShort function [Kernel-Mode Driver Architecture], RtlLongLongToShort, kernel.rtllonglongtoshort, ntintsafe/RtlLongLongToShort
+ms.keywords : RtlLongLongToShort function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongLongToShort, kernel.rtllonglongtoshort, RtlLongLongToShort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,11 +88,6 @@ RtlLongLongToInt16
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

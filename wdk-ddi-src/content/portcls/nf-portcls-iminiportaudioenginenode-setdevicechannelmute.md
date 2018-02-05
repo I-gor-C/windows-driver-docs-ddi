@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 272B83D4-AACE-419D-9DD7-A1AE1C8A931A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportAudioEngineNode::SetDeviceChannelMute, SetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, SetDeviceChannelMute method [Audio Devices], SetDeviceChannelMute, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], SetDeviceChannelMute method, IMiniportAudioEngineNode::SetDeviceChannelMute, audio.iminiportaudioenginenode_setdevicechannelmute
+ms.keywords : audio.iminiportaudioenginenode_setdevicechannelmute, IMiniportAudioEngineNode interface [Audio Devices], SetDeviceChannelMute method, SetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, SetDeviceChannelMute method [Audio Devices], portcls/IMiniportAudioEngineNode::SetDeviceChannelMute, SetDeviceChannelMute, IMiniportAudioEngineNode, IMiniportAudioEngineNode::SetDeviceChannelMute
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,14 +77,10 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

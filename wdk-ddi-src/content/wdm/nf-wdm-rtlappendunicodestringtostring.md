@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fb076688-ae8e-430b-ac06-dfef7284591d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_4c17620f-086f-4a0d-aa7a-6bc46d0a0f21.xml, wdm/RtlAppendUnicodeStringToString, kernel.rtlappendunicodestringtostring, RtlAppendUnicodeStringToString, RtlAppendUnicodeStringToString routine [Kernel-Mode Driver Architecture]
+ms.keywords : k109_4c17620f-086f-4a0d-aa7a-6bc46d0a0f21.xml, kernel.rtlappendunicodestringtostring, RtlAppendUnicodeStringToString routine [Kernel-Mode Driver Architecture], RtlAppendUnicodeStringToString, wdm/RtlAppendUnicodeStringToString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,14 +104,12 @@ The <i>Destination</i> and <i>Source</i> buffers must be resident if the caller 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

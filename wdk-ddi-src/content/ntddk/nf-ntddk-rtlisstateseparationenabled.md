@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7c28a82c-e039-4045-94cd-b47a45d15e28
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIsStateSeparationEnabled function [Kernel-Mode Driver Architecture], RtlIsStateSeparationEnabled, kernel.rtlisstateseparationenabled, ntddk/RtlIsStateSeparationEnabled
+ms.keywords : RtlIsStateSeparationEnabled function [Kernel-Mode Driver Architecture], ntddk/RtlIsStateSeparationEnabled, RtlIsStateSeparationEnabled, kernel.rtlisstateseparationenabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,9 @@ TRUE indicates state separation enabled;
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

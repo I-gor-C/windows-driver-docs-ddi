@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4AD156F8-911F-4D70-8B0E-8BB0D0747470
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : CDROM_PERFORMANCE_EXCEPTION_TYPE enumeration [Storage Devices], PCDROM_PERFORMANCE_EXCEPTION_TYPE, CdromEntirePerformanceList, _CDROM_PERFORMANCE_EXCEPTION_TYPE, *PCDROM_PERFORMANCE_EXCEPTION_TYPE, CdromPerformanceExceptionsOnly, PCDROM_PERFORMANCE_EXCEPTION_TYPE enumeration pointer [Storage Devices], storage.cdrom_performance_exception_type, ntddcdrm/CdromNominalPerformance, CdromNominalPerformance, ntddcdrm/CDROM_PERFORMANCE_EXCEPTION_TYPE, CDROM_PERFORMANCE_EXCEPTION_TYPE, ntddcdrm/PCDROM_PERFORMANCE_EXCEPTION_TYPE, ntddcdrm/ CdromPerformanceExceptionsOnly, ntddcdrm/CdromEntirePerformanceList
+ms.keywords : ntddcdrm/CdromNominalPerformance, ntddcdrm/CdromEntirePerformanceList, _CDROM_PERFORMANCE_EXCEPTION_TYPE, CdromPerformanceExceptionsOnly, ntddcdrm/ CdromPerformanceExceptionsOnly, ntddcdrm/PCDROM_PERFORMANCE_EXCEPTION_TYPE, CdromEntirePerformanceList, storage.cdrom_performance_exception_type, ntddcdrm/CDROM_PERFORMANCE_EXCEPTION_TYPE, PCDROM_PERFORMANCE_EXCEPTION_TYPE enumeration pointer [Storage Devices], PCDROM_PERFORMANCE_EXCEPTION_TYPE, CDROM_PERFORMANCE_EXCEPTION_TYPE enumeration [Storage Devices], CdromNominalPerformance, *PCDROM_PERFORMANCE_EXCEPTION_TYPE, CDROM_PERFORMANCE_EXCEPTION_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,16 +74,13 @@ typedef enum _CDROM_PERFORMANCE_EXCEPTION_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
-
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
+
+<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 
  
 

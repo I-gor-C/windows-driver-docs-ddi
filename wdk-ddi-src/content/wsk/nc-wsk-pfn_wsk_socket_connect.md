@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -76,8 +76,8 @@ A pointer to a
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <mshelp:link keywords="netvista.wskcaptureprovidernpi" tabindex="0"><b>
-     WskCaptureProviderNPI</b></mshelp:link> function.
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
+     WskCaptureProviderNPI</a> function.
 
 `SocketType`
 
@@ -91,11 +91,6 @@ For more information about the socket types that are supported for each supporte
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571151">WSK Address Families</a>.
 
 
-#### SOCK_STREAM
-
-Supports reliable connection-oriented byte stream communication.
-
-
 #### SOCK_DGRAM
 
 Supports unreliable connectionless datagram communication.
@@ -104,6 +99,11 @@ Supports unreliable connectionless datagram communication.
 #### SOCK_RAW
 
 Supports raw access to the transport protocol.
+
+
+#### SOCK_STREAM
+
+Supports reliable connection-oriented byte stream communication.
 
 `Protocol`
 
@@ -137,7 +137,13 @@ A pointer to a caller-supplied context for the socket that is being created. The
 
 `*Dispatch`
 
-
+A pointer to a constant 
+     <a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
+     WSK_CLIENT_CONNECTION_DISPATCH</a> structure. This structure is a dispatch table that contains
+     pointers to the event callback functions for the new socket. If the WSK application will not be enabling
+     all of the event callback functions for the new socket, it should set the pointers in the dispatch table
+     to <b>NULL</b> for those event callback functions that it does not enable. If the WSK application will not be
+     enabling any event callback functions on the new socket, it should set this pointer to <b>NULL</b>.
 
 `OwningProcess`
 
@@ -173,8 +179,8 @@ For more information about the SECURITY_DESCRIPTOR structure, see the reference 
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the creation of the
      new socket asynchronously. For more information about using IRPs with WSK functions, see 
-     <mshelp:link keywords="netvista.using_irps_with_winsock_kernel_functions" tabindex="0">Using IRPs with Winsock
-     Kernel Functions</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
+     Kernel Functions</a>.
 
 
 ## Return Value
@@ -253,8 +259,8 @@ If the WSK application needs to set a socket option or issue an I/O control oper
 When a WSK application successfully creates a new socket, all of the event callback functions on the
     new socket are disabled by default. For more information about enabling any of the new socket's event
     callback functions, see 
-    <mshelp:link keywords="netvista.enabling_and_disabling_event_callback_functions" tabindex="0">Enabling and
-    Disabling Event Callback Functions</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363707">Enabling and
+    Disabling Event Callback Functions</a>.
 
 If a WSK application specifies a non-<b>NULL</b> pointer for the 
     <i>SecurityDescriptor</i> parameter, it must not release the cached security descriptor until after the
@@ -267,37 +273,33 @@ The WSK subsystem allocates the memory for the socket object structure (WSK_SOCK
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_npi.md">WSK_PROVIDER_NPI</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
-
-<mshelp:link keywords="netvista.wsk_client_connection_dispatch" tabindex="0"><b>
-   WSK_CLIENT_CONNECTION_DISPATCH</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
-
 <a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
 <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a>
+
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
+   WSK_CLIENT_CONNECTION_DISPATCH</a>
+
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 
  
 

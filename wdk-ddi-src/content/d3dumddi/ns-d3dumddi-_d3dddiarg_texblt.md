@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e236ac2e-24d7-45a4-aa88-b496c8d92764
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_texblt, D3DDDIARG_TEXBLT structure [Display Devices], UMDisplayDriver_param_Structs_4a343a1e-c364-4261-9f86-e179e0fc2f7c.xml, d3dumddi/D3DDDIARG_TEXBLT, D3DDDIARG_TEXBLT, _D3DDDIARG_TEXBLT
+ms.keywords : "_D3DDDIARG_TEXBLT, display.d3dddiarg_texblt, UMDisplayDriver_param_Structs_4a343a1e-c364-4261-9f86-e179e0fc2f7c.xml, D3DDDIARG_TEXBLT structure [Display Devices], d3dumddi/D3DDDIARG_TEXBLT, D3DDDIARG_TEXBLT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,18 +79,16 @@ typedef struct _D3DDDIARG_TEXBLT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_texblt.md">TexBlt</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
 
  
 

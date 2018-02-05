@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 6BFFD014-E9DC-495C-9810-0D23BD93C41A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pos.poscxmarkposapp, PosCxMarkPosApp function, PosCxMarkPosApp, poscx/PosCxMarkPosApp
+ms.keywords : PosCxMarkPosApp function, poscx/PosCxMarkPosApp, pos.poscxmarkposapp, PosCxMarkPosApp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,11 +88,6 @@ Possible return values are:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

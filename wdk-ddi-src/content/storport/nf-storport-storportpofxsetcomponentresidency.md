@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 78DFB17E-5351-419A-9B9B-8CBCD7548910
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortPoFxSetComponentResidency, StorPortPoFxSetComponentResidency routine [Storage Devices], storage.storportpofxsetcomponentresidency, StorPortPoFxSetComponentResidency
+ms.keywords : StorPortPoFxSetComponentResidency routine [Storage Devices], storport/StorPortPoFxSetComponentResidency, StorPortPoFxSetComponentResidency, storage.storportpofxsetcomponentresidency
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,14 +143,11 @@ The current IRQL &gt; DISPATCH_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** |  |
+| **Library** | Storport.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

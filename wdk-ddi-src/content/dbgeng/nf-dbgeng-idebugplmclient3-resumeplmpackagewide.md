@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : CC69357E-425B-440B-93D0-918E8586D5DF
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ResumePlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, ResumePlmPackageWide, dbgeng/IDebugPlmClient3::ResumePlmPackageWide, ResumePlmPackageWide method [Windows Debugging], debugger.idebugplmclient3_resumeplmpackagewide, IDebugPlmClient3 interface [Windows Debugging], ResumePlmPackageWide method, IDebugPlmClient3::ResumePlmPackageWide, IDebugPlmClient3
+ms.keywords : ResumePlmPackageWide method [Windows Debugging], IDebugPlmClient3, dbgeng/IDebugPlmClient3::ResumePlmPackageWide, debugger.idebugplmclient3_resumeplmpackagewide, IDebugPlmClient3::ResumePlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], ResumePlmPackageWide method, ResumePlmPackageWide, ResumePlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

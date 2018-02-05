@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 155604e9-45f6-4dd2-9373-90f689713c1a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInterlockedPushEntrySList macro [Network Drivers Starting with Windows Vista], NdisInterlockedPushEntrySList, netvista.ndisinterlockedpushentryslist, ndis_interlocked_ref_ee1513c8-bb1a-4f3e-981b-7c448b3d1e41.xml, ndis/NdisInterlockedPushEntrySList
+ms.keywords : netvista.ndisinterlockedpushentryslist, NdisInterlockedPushEntrySList macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedPushEntrySList, NdisInterlockedPushEntrySList, ndis_interlocked_ref_ee1513c8-bb1a-4f3e-981b-7c448b3d1e41.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -77,8 +77,8 @@ None
 
 Before the driver's initial call the 
     <b>NdisInterlockedPushEntrySList</b> function, it must initialize the list head with the 
-    <mshelp:link keywords="netvista.ndisinitializeslisthead" tabindex="0"><b>
-    NdisInitializeSListHead</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisinitializeslisthead.md">
+    NdisInitializeSListHead</a> function.
 
 A driver 
     <u>must not</u> be holding the given 
@@ -107,16 +107,17 @@ If
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
+
+<a href="..\ndis\nf-ndis-ndisquerydepthslist.md">NdisQueryDepthSList</a>
 
 <a href="..\ndis\nf-ndis-ndisinitializeslisthead.md">NdisInitializeSListHead</a>
 
@@ -124,11 +125,7 @@ If
 
 <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 
-<a href="..\ndis\nf-ndis-ndisquerydepthslist.md">NdisQueryDepthSList</a>
-
 <a href="..\ndis\nf-ndis-ndisfreespinlock.md">NdisFreeSpinLock</a>
-
-<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f43b702d-37a7-484d-8a18-fa190e9189b2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : OutputAsTypeWide method [Windows Debugging], IDebugSymbolGroup2 interface, OutputAsTypeWide method [Windows Debugging], dbgeng/IDebugSymbolGroup2::OutputAsTypeWide, IDebugSymbolGroup2 interface [Windows Debugging], OutputAsTypeWide method, IDebugSymbolGroup2, OutputAsTypeWide, debugger.outputastypewide, IDebugSymbolGroup2::OutputAsTypeWide
+ms.keywords : IDebugSymbolGroup2::OutputAsTypeWide, OutputAsTypeWide, IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], OutputAsTypeWide method, OutputAsTypeWide method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::OutputAsTypeWide, debugger.outputastypewide, OutputAsTypeWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,22 +95,17 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543271">ExpandSymbol</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543271">ExpandSymbol</a>
 
  
 

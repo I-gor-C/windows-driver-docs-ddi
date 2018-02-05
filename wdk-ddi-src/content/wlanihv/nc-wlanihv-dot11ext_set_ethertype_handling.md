@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -100,8 +100,8 @@ The number of entries within the privacy exemptions array referenced by the
 `pExemption`
 
 A pointer to an array of privacy exemptions. Each entry in the array is formatted as a 
-     <mshelp:link keywords="netvista.dot11_privacy_exemption" tabindex="0"><b>
-     DOT11_PRIVACY_EXEMPTION</b></mshelp:link> structure.
+     <a href="..\windot11\ns-windot11-dot11_privacy_exemption.md">
+     DOT11_PRIVACY_EXEMPTION</a> structure.
 
 `uNumOfRegistration`
 
@@ -113,7 +113,8 @@ Number of entries within the IEEE EtherType registrations array referenced by th
 
 `*pusRegistration`
 
-
+A pointer to an array of IEEE EtherType registrations. Each entry has the EtherType value in
+     big-endian format.
 
 
 ## Return Value
@@ -132,16 +133,16 @@ When calling the
 The IHV Extensions DLL can call 
       <b>Dot11ExtSetEtherTypeHandling</b> from within the calls to either the 
       <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> or 
-      <mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-      Dot11ExtIhvPerformPreAssociate</i></mshelp:link> IHV Handler functions.
+      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+      Dot11ExtIhvPerformPreAssociate</a> IHV Handler functions.
 
 </li>
 <li>
 The IHV Extensions DLL must not call 
       <b>Dot11ExtSetEtherTypeHandling</b> after successfully completing the
       pre-association operation through a call to 
-      <mshelp:link keywords="netvista.dot11extpreassociatecompletion" tabindex="0"><b>
-      Dot11ExtPreAssociateCompletion</b></mshelp:link>.
+      <a href="..\wlanihv\nc-wlanihv-dot11ext_pre_associate_completion.md">
+      Dot11ExtPreAssociateCompletion</a>.
 
 </li>
 </ul>The operating system defaults to an empty list of privacy exemptions and EtherType registrations prior
@@ -152,31 +153,26 @@ The IHV Extensions DLL must not call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\windot11\ns-windot11-dot11_privacy_exemption.md">DOT11_PRIVACY_EXEMPTION</a>
-
-<mshelp:link keywords="netvista.dot11extpreassociatecompletion" tabindex="0"><b>
-   Dot11ExtPreAssociateCompletion</b></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+   Dot11ExtIhvPerformPreAssociate</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a>
 
+<a href="..\windot11\ns-windot11-dot11_privacy_exemption.md">DOT11_PRIVACY_EXEMPTION</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
-
-<mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-   Dot11ExtIhvPerformPreAssociate</i></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11ext_pre_associate_completion.md">
+   Dot11ExtPreAssociateCompletion</a>
 
  
 

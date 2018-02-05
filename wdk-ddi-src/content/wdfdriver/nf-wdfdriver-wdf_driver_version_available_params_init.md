@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aba3844e-745d-4d2c-9855-0535f53d7b0a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDriverObjectRef_9638f416-7d77-45af-8e87-07c51198fb05.xml, wdf.wdf_driver_version_available_params_init, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, kmdf.wdf_driver_version_available_params_init, wdfdriver/WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function
+ms.keywords : wdfdriver/WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function, kmdf.wdf_driver_version_available_params_init, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, wdf.wdf_driver_version_available_params_init, DFDriverObjectRef_9638f416-7d77-45af-8e87-07c51198fb05.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,11 @@ The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function zeros the <a href="..\wdfd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

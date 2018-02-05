@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS"
+req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 
@@ -60,7 +60,8 @@ NTSTATUS NdkFnSrqReceive(
 
 `*pNdkSrq`
 
-
+A pointer to an NDK shared receive queue (SRQ) object
+(<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>).
 
 `RequestContext`
 
@@ -117,20 +118,16 @@ An error occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndkpi.h (include Ndkpi.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
-
 <a href="..\ndkpi\ns-ndkpi-_ndk_sge.md">NDK_SGE</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
 

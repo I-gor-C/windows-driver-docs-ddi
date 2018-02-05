@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 724df793-72cb-4460-bec8-0136b86ff82d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilsetexecutorfocusparams_2, RILSETEXECUTORFOCUSPARAMS, rilapitypes/RILSETEXECUTORFOCUSPARAMS, *LPRILSETEXECUTORFOCUSPARAMS, RILSETEXECUTORFOCUSPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "*LPRILSETEXECUTORFOCUSPARAMS, RILSETEXECUTORFOCUSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetexecutorfocusparams_2, RILSETEXECUTORFOCUSPARAMS, rilapitypes/RILSETEXECUTORFOCUSPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSETEXECUTORFOCUSPARAMS, *LPRILSETEXECUTORFOCUSPARAMS
+req.typenames : "*LPRILSETEXECUTORFOCUSPARAMS, RILSETEXECUTORFOCUSPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILSETEXECUTORFOCUSPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

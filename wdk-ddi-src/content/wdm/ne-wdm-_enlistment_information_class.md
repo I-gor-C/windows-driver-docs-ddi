@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d031e032-66e3-4697-8db1-67655cfc223d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/EnlistmentCrmInformation, EnlistmentRecoveryInformation, kernel.enlistment_information_class, wdm/ENLISTMENT_INFORMATION_CLASS, wdm/EnlistmentBasicInformation, _ENLISTMENT_INFORMATION_CLASS, wdm/EnlistmentRecoveryInformation, ENLISTMENT_INFORMATION_CLASS, ENLISTMENT_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], EnlistmentBasicInformation, ktm_ref_9bf2b9fa-5b9a-47fb-873c-6bd5f1930553.xml, EnlistmentCrmInformation
+ms.keywords : ENLISTMENT_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], ktm_ref_9bf2b9fa-5b9a-47fb-873c-6bd5f1930553.xml, _ENLISTMENT_INFORMATION_CLASS, EnlistmentCrmInformation, EnlistmentBasicInformation, wdm/EnlistmentCrmInformation, wdm/ENLISTMENT_INFORMATION_CLASS, kernel.enlistment_information_class, wdm/EnlistmentBasicInformation, ENLISTMENT_INFORMATION_CLASS, wdm/EnlistmentRecoveryInformation, EnlistmentRecoveryInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,18 +75,16 @@ typedef enum _ENLISTMENT_INFORMATION_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-zwqueryinformationenlistment.md">ZwQueryInformationEnlistment</a>
+
 <a href="..\wdm\nf-wdm-zwsetinformationenlistment.md">ZwSetInformationEnlistment</a>
 
 <a href="..\wdm\ns-wdm-_enlistment_basic_information.md">ENLISTMENT_BASIC_INFORMATION</a>
-
-<a href="..\wdm\nf-wdm-zwqueryinformationenlistment.md">ZwQueryInformationEnlistment</a>
 
  
 

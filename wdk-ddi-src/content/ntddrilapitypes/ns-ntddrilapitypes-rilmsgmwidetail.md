@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 69371414-9f4a-46a6-8622-5750db7a0c5b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilmsgmwidetail, RILMSGMWIDETAIL, *LPRILMSGMWIDETAIL, RILMSGMWIDETAIL structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILMSGMWIDETAIL
+ms.keywords : RILMSGMWIDETAIL structure [Network Drivers Starting with Windows Vista], netvista.rilmsgmwidetail, *LPRILMSGMWIDETAIL, RILMSGMWIDETAIL, ntddrilapitypes/RILMSGMWIDETAIL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,7 +89,4 @@ typedef struct _RILMSGMWIDETAIL {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

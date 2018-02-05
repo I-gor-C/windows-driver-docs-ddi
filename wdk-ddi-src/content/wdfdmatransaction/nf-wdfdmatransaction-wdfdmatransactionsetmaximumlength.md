@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b195c6df-79c4-427d-b722-309f43a4e150
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionSetMaximumLength method, wdf.wdfdmatransactionsetmaximumlength, PFN_WDFDMATRANSACTIONSETMAXIMUMLENGTH, WdfDmaTransactionSetMaximumLength, kmdf.wdfdmatransactionsetmaximumlength, wdfdmatransaction/WdfDmaTransactionSetMaximumLength, DFDmaObjectRef_966c396e-c161-46d6-856e-9bc9aa30c610.xml
+ms.keywords : wdf.wdfdmatransactionsetmaximumlength, DFDmaObjectRef_966c396e-c161-46d6-856e-9bc9aa30c610.xml, PFN_WDFDMATRANSACTIONSETMAXIMUMLENGTH, wdfdmatransaction/WdfDmaTransactionSetMaximumLength, WdfDmaTransactionSetMaximumLength, kmdf.wdfdmatransactionsetmaximumlength, WdfDmaTransactionSetMaximumLength method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,12 +92,10 @@ For information about initializing a DMA transaction, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : b323f803-56fb-44db-9b88-be25062c08ff
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.isensordriver_ongetsupportedevents, ISensorDriver::OnGetSupportedEvents, ISensorDriver, OnGetSupportedEvents, OnGetSupportedEvents method [Sensor Devices]
+ms.keywords : OnGetSupportedEvents, ISensorDriver::OnGetSupportedEvents, ISensorDriver, OnGetSupportedEvents method [Sensor Devices], sensors.isensordriver_ongetsupportedevents
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -81,11 +81,6 @@ You must use CoTaskMemAlloc to create the event ID buffer. The sensor class exte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

@@ -70,11 +70,5 @@ Do not call <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0FB1D72F-B183-408A-BB84-A9D54B6C276F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO structure [Network Drivers Starting with Windows Vista], DOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO, windot11/PDOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_OFFLOAD_NETWORK_LIST_INFO, netvista.dot11_offload_network_list_info, _DOT11_OFFLOAD_NETWORK_LIST_INFO"
+ms.keywords : "_DOT11_OFFLOAD_NETWORK_LIST_INFO, windot11/PDOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO, windot11/DOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO structure [Network Drivers Starting with Windows Vista], DOT11_OFFLOAD_NETWORK_LIST_INFO, netvista.dot11_offload_network_list_info, PDOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO"
+req.typenames : DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -126,7 +126,5 @@ Number of networks in the list of those requested to offload.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |

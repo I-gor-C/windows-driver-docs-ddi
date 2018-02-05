@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : ffe1c550-a7cc-4d27-9a1e-287fdc7e08eb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_IPF_CPE_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_IPF_CPE_DESCRIPTOR, PWHEA_IPF_CPE_DESCRIPTOR, _WHEA_IPF_CPE_DESCRIPTOR, *PWHEA_IPF_CPE_DESCRIPTOR, whearef_b64c919f-4854-4506-b14a-ec31b0a3e67e.xml, WHEA_IPF_CPE_DESCRIPTOR, ntddk/WHEA_IPF_CPE_DESCRIPTOR, PWHEA_IPF_CPE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whea.whea_ipf_cpe_descriptor
+ms.keywords : ntddk/WHEA_IPF_CPE_DESCRIPTOR, *PWHEA_IPF_CPE_DESCRIPTOR, PWHEA_IPF_CPE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_b64c919f-4854-4506-b14a-ec31b0a3e67e.xml, PWHEA_IPF_CPE_DESCRIPTOR, WHEA_IPF_CPE_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_IPF_CPE_DESCRIPTOR, _WHEA_IPF_CPE_DESCRIPTOR, WHEA_IPF_CPE_DESCRIPTOR, whea.whea_ipf_cpe_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ A WHEA_IPF_CPE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

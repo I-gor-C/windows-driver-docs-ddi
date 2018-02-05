@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2d9a6886-aeec-4d61-8c9d-056d1409b905
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ataportrequestworkerroutine, AtaPortRequestWorkerRoutine routine [Storage Devices], irb/AtaPortRequestWorkerRoutine, AtaPortRequestWorkerRoutine, atartns_9edce4ce-1bcf-4e52-81c1-705e645fe5f4.xml
+ms.keywords : AtaPortRequestWorkerRoutine, irb/AtaPortRequestWorkerRoutine, AtaPortRequestWorkerRoutine routine [Storage Devices], atartns_9edce4ce-1bcf-4e52-81c1-705e645fe5f4.xml, storage.ataportrequestworkerroutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,11 +94,6 @@ VOID
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

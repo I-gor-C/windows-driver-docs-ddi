@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 23184d88-2c84-4fba-9d17-c4014d0eaea5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlGetDaclSecurityDescriptor, ifsk.rtlgetdaclsecuritydescriptor, rtlref_c851a07b-d480-47a7-b0f7-a3f21161dfaa.xml, RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor routine [Installable File System Drivers]
+ms.keywords : rtlref_c851a07b-d480-47a7-b0f7-a3f21161dfaa.xml, ntifs/RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlgetdaclsecuritydescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,14 +102,12 @@ For more information about security and access control, see the documentation fo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows Server 2003 SP1 and later. This routine is available on Microsoft Windows Server 2003 SP1 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -117,11 +115,11 @@ For more information about security and access control, see the documentation fo
 
 <a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-
 <a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 
 <a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
 <a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 

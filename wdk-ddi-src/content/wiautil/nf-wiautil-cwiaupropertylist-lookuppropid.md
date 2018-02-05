@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 454e51fc-f81a-49c8-9e07-e32819af2642
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LookupPropId, wiauFncs_087766c2-718f-4d02-be7f-869df198c3a7.xml, CWiauPropertyList interface [Imaging Devices], LookupPropId method, image.cwiaupropertylist_lookuppropid, LookupPropId method [Imaging Devices], CWiauPropertyList interface, wiautil/CWiauPropertyList::LookupPropId, CWiauPropertyList::LookupPropId, LookupPropId method [Imaging Devices], CWiauPropertyList
+ms.keywords : image.cwiaupropertylist_lookuppropid, LookupPropId method [Imaging Devices], wiautil/CWiauPropertyList::LookupPropId, CWiauPropertyList interface [Imaging Devices], LookupPropId method, LookupPropId, LookupPropId method [Imaging Devices], CWiauPropertyList interface, wiauFncs_087766c2-718f-4d02-be7f-869df198c3a7.xml, CWiauPropertyList, CWiauPropertyList::LookupPropId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,14 +66,10 @@ On success, the method returns the index of the property within the property lis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 

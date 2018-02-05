@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b48ba9fe-3b7c-4ca8-8dcb-1e2a586353b9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SetRadioConfiguration method [Network Drivers Starting with Windows Vista], rilapi/RIL_SetRadioConfiguration, RIL_SetRadioConfiguration, netvista.ril_setradioconfiguration
+ms.keywords : RIL_SetRadioConfiguration method [Network Drivers Starting with Windows Vista], netvista.ril_setradioconfiguration, RIL_SetRadioConfiguration, rilapi/RIL_SetRadioConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

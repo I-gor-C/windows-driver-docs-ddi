@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ac1d10dc-d3cb-4a83-9f52-34ea90d2193b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksfilterfactorygetparentdevice, ks/KsFilterFactoryGetParentDevice, KsFilterFactoryGetParentDevice function [Streaming Media Devices], avfunc_35d9d582-f7d6-4c1f-8998-a6664527db2c.xml, KsFilterFactoryGetParentDevice
+ms.keywords : KsFilterFactoryGetParentDevice, KsFilterFactoryGetParentDevice function [Streaming Media Devices], ks/KsFilterFactoryGetParentDevice, avfunc_35d9d582-f7d6-4c1f-8998-a6664527db2c.xml, stream.ksfilterfactorygetparentdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,11 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetparent.md">KsG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 300cdd3b-0c12-45e3-ae45-c26084f3ec12
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeReleaseSpinLock, k105_68224d09-0ef9-4231-af5f-c6f8761889dd.xml, kernel.kereleasespinlock, KeReleaseSpinLock routine [Kernel-Mode Driver Architecture], KeReleaseSpinLock
+ms.keywords : KeReleaseSpinLock, KeReleaseSpinLock routine [Kernel-Mode Driver Architecture], k105_68224d09-0ef9-4231-af5f-c6f8761889dd.xml, kernel.kereleasespinlock, wdm/KeReleaseSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -78,12 +78,10 @@ Callers of this routine are running at IRQL = DISPATCH_LEVEL. On return from <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Hal.lib |
 | **IRQL** | DISPATCH_LEVEL (see Remarks section) |
 | **DDI compliance rules** | IrqlKeReleaseSpinLock, MarkingQueuedIrps, SpinLock, SpinLockDpc, SpinlockRelease, SpinLockSafe, ReqSendWhileSpinlock, Spinlock(kmdf), SpinlockDpc(kmdf), SpinlockRelease(kmdf), HwStorPortProhibitedDDIs, IrqlKeReleaseSpinLock(storport), SpinLock(storport), SpinLockDpc(storport), SpinLockRelease(storport), SpinLockSafe(storport) |
 

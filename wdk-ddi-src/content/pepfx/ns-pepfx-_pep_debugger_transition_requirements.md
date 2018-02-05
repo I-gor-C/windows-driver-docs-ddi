@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5DF830CA-ECC3-404A-AA5F-3DB487BC85B3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_PEP_DEBUGGER_TRANSITION_REQUIREMENTS, PPEP_DEBUGGER_TRANSITION_REQUIREMENTS, kernel.pep_debugger_transition_requirements, PEP_DEBUGGER_TRANSITION_REQUIREMENTS structure [Kernel-Mode Driver Architecture], PEP_DEBUGGER_TRANSITION_REQUIREMENTS, PPEP_DEBUGGER_TRANSITION_REQUIREMENTS structure pointer [Kernel-Mode Driver Architecture], *PPEP_DEBUGGER_TRANSITION_REQUIREMENTS, pepfx/PPEP_DEBUGGER_TRANSITION_REQUIREMENTS, pepfx/PEP_DEBUGGER_TRANSITION_REQUIREMENTS"
+ms.keywords : PEP_DEBUGGER_TRANSITION_REQUIREMENTS, _PEP_DEBUGGER_TRANSITION_REQUIREMENTS, kernel.pep_debugger_transition_requirements, PEP_DEBUGGER_TRANSITION_REQUIREMENTS structure [Kernel-Mode Driver Architecture], PPEP_DEBUGGER_TRANSITION_REQUIREMENTS structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_DEBUGGER_TRANSITION_REQUIREMENTS, pepfx/PPEP_DEBUGGER_TRANSITION_REQUIREMENTS, *PPEP_DEBUGGER_TRANSITION_REQUIREMENTS, PPEP_DEBUGGER_TRANSITION_REQUIREMENTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_DEBUGGER_TRANSITION_REQUIREMENTS, PEP_DEBUGGER_TRANSITION_REQUIREMENTS"
+req.typenames : PEP_DEBUGGER_TRANSITION_REQUIREMENTS, *PPEP_DEBUGGER_TRANSITION_REQUIREMENTS
 ---
 
 # _PEP_DEBUGGER_TRANSITION_REQUIREMENTS structure
@@ -73,18 +73,16 @@ During a debugging session, the debugger component that runs on the target compu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186827">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186709">PEP_DPM_QUERY_DEBUGGER_TRANSITION_REQUIREMENTS</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186827">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
 
  
 

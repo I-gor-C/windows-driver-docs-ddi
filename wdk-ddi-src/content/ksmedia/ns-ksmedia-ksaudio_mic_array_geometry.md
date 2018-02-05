@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 49b8f602-8f82-4445-98f2-a63563689561
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.ksaudio_mic_array_geometry, KSAUDIO_MIC_ARRAY_GEOMETRY structure [Audio Devices], PKSAUDIO_MIC_ARRAY_GEOMETRY structure pointer [Audio Devices], ksmedia/PKSAUDIO_MIC_ARRAY_GEOMETRY, aud-prop_b25763af-a8d5-4335-ae71-f3bc59218201.xml, *PKSAUDIO_MIC_ARRAY_GEOMETRY, PKSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY, ksmedia/KSAUDIO_MIC_ARRAY_GEOMETRY
+ms.keywords : KSAUDIO_MIC_ARRAY_GEOMETRY structure [Audio Devices], PKSAUDIO_MIC_ARRAY_GEOMETRY, aud-prop_b25763af-a8d5-4335-ae71-f3bc59218201.xml, ksmedia/KSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY, PKSAUDIO_MIC_ARRAY_GEOMETRY structure pointer [Audio Devices], *PKSAUDIO_MIC_ARRAY_GEOMETRY, audio.ksaudio_mic_array_geometry, ksmedia/PKSAUDIO_MIC_ARRAY_GEOMETRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY"
+req.typenames : KSAUDIO_MIC_ARRAY_GEOMETRY, *PKSAUDIO_MIC_ARRAY_GEOMETRY
 ---
 
 # KSAUDIO_MIC_ARRAY_GEOMETRY structure
@@ -158,9 +158,6 @@ For more information about how to process a microphone array in Windows Vista, s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

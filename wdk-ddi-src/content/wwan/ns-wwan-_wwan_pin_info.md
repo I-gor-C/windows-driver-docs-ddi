@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0711645f-791b-4643-95c3-604ecce2a5ed
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_aae7d248-25b1-465b-9314-66a16aca4993.xml, WWAN_PIN_INFO structure [Network Drivers Starting with Windows Vista], *PWWAN_PIN_INFO, PWWAN_PIN_INFO, _WWAN_PIN_INFO, wwan/PWWAN_PIN_INFO, netvista.wwan_pin_info, WWAN_PIN_INFO, PWWAN_PIN_INFO structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_PIN_INFO
+ms.keywords : WWAN_PIN_INFO, wwan/WWAN_PIN_INFO, WwanRef_aae7d248-25b1-465b-9314-66a16aca4993.xml, _WWAN_PIN_INFO, *PWWAN_PIN_INFO, PWWAN_PIN_INFO, netvista.wwan_pin_info, PWWAN_PIN_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_PIN_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_PIN_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,9 +75,7 @@ The type of PIN required to unlock the information stored on the device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

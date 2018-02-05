@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f8e65085-6837-4d49-a39e-784942ee39a4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcallaudiomediastate, ntddrilapitypes/RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE structure [Network Drivers Starting with Windows Vista]
+ms.keywords : ntddrilapitypes/RILCALLAUDIOMEDIASTATE, netvista.rilcallaudiomediastate, RILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE structure [Network Drivers Starting with Windows Vista], *LPRILCALLAUDIOMEDIASTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ typedef struct _RILCALLAUDIOMEDIASTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

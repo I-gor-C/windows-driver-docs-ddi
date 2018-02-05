@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : aed86b34-4a9e-4c39-be0f-fa57829fa926
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_5f6cccb8-671c-495a-9c18-c262d4845105.xml, FltCompareInstanceAltitudes, fltkernel/FltCompareInstanceAltitudes, FltCompareInstanceAltitudes function [Installable File System Drivers], ifsk.fltcompareinstancealtitudes
+ms.keywords : FltCompareInstanceAltitudes function [Installable File System Drivers], ifsk.fltcompareinstancealtitudes, FltCompareInstanceAltitudes, fltkernel/FltCompareInstanceAltitudes, FltApiRef_a_to_d_5f6cccb8-671c-495a-9c18-c262d4845105.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,24 +122,20 @@ To detach a minifilter driver instance from a volume, call <a href="..\fltkernel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
+<a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>
 
  
 

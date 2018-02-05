@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2c15c16f-773b-415d-80a1-fd0b3bcf6fbf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SMS_READ, netvista.ndis_wwan_sms_read, ndiswwan/NDIS_WWAN_SMS_READ, _NDIS_WWAN_SMS_READ, PNDIS_WWAN_SMS_READ structure pointer [Network Drivers Starting with Windows Vista], WwanRef_7264d34b-78a0-4537-a386-bd77d210d7ae.xml, *PNDIS_WWAN_SMS_READ, PNDIS_WWAN_SMS_READ
+ms.keywords : NDIS_WWAN_SMS_READ structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_SMS_READ, _NDIS_WWAN_SMS_READ, PNDIS_WWAN_SMS_READ structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ, WwanRef_7264d34b-78a0-4537-a386-bd77d210d7ae.xml, ndiswwan/PNDIS_WWAN_SMS_READ, netvista.ndis_wwan_sms_read, ndiswwan/NDIS_WWAN_SMS_READ
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_SMS_READ, *PNDIS_WWAN_SMS_READ
+req.typenames : "*PNDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ"
 ---
 
 # _NDIS_WWAN_SMS_READ structure
@@ -110,16 +110,14 @@ A formatted
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_sms_read.md">WWAN_SMS_READ</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_sms_read.md">WWAN_SMS_READ</a>
 
  
 

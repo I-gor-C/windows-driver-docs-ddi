@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AF58684E-3516-48F9-B771-63701C00645F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN structure [Display Devices], display.d3dkmt_surfacecomplete_presenthistorytoken, d3dkmthk/D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
+ms.keywords : d3dkmthk/D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN structure [Display Devices], display.d3dkmt_surfacecomplete_presenthistorytoken, D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN, _D3DKMT_SURFACECOMPLETE_PRESENTHISTORYTOKEN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,4 @@ The logical surface that the token is being presented for.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h |

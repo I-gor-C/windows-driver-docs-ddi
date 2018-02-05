@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0FD748D6-F598-44D1-A8D3-E63764CB90C6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSES_CONFIGURATION_DIAGNOSTIC_PAGE, scsi/PSES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE, storage.ses_configuration_diagnostic_page, scsi/SES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE structure pointer [Storage Devices], SES_CONFIGURATION_DIAGNOSTIC_PAGE structure [Storage Devices], _SES_CONFIGURATION_DIAGNOSTIC_PAGE"
+ms.keywords : scsi/SES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE structure [Storage Devices], *PSES_CONFIGURATION_DIAGNOSTIC_PAGE, scsi/PSES_CONFIGURATION_DIAGNOSTIC_PAGE, storage.ses_configuration_diagnostic_page, SES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE structure pointer [Storage Devices], _SES_CONFIGURATION_DIAGNOSTIC_PAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SES_CONFIGURATION_DIAGNOSTIC_PAGE, *PSES_CONFIGURATION_DIAGNOSTIC_PAGE
+req.typenames : "*PSES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE"
 req.product : Windows 10 or later.
 ---
 
@@ -83,7 +83,5 @@ Specifies the length of the diagnostic page, in bytes.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1709 and later versions of Windows. Available in Windows 10, version 1709 and later versions of Windows. |
 | **Header** | scsi.h (include Minitape.h, Storport.h) |

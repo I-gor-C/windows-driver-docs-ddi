@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 92a1c2d7-6a6f-4b5e-be04-b444abe3e1d5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateDevice function [Streaming Media Devices], ks/KsCreateDevice, stream.kscreatedevice, avfunc_3a0ddeb1-7ea0-4e10-bc98-d761bbc5c2f4.xml, KsCreateDevice
+ms.keywords : avfunc_3a0ddeb1-7ea0-4e10-bc98-d761bbc5c2f4.xml, KsCreateDevice function [Streaming Media Devices], KsCreateDevice, ks/KsCreateDevice, stream.kscreatedevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,16 +92,21 @@ If no <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a> is p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+
+<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
+
+<a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 <a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
 
@@ -109,15 +114,7 @@ If no <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a> is p
 
 <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-
-<a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
-
-<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
-
 <a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a>
-
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
  
 

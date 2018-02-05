@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3dd7c317-b77f-4cc1-8513-ed305418e76f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_3GPPTONE_BUSY, RIL3GPPTONE, RIL_3GPPTONE_MAX, ntddrilapitypes/RIL_3GPPTONE_RINGBACK, ntddrilapitypes/RIL3GPPTONE, ntddrilapitypes/RIL_3GPPTONE_BUSY, RIL_3GPPTONE_CALLDROPPED, ntddrilapitypes/RIL_3GPPTONE_MAX, RIL_3GPPTONE_CONGESTION, ntddrilapitypes/RIL_3GPPTONE_NUMBERUNOBTAINABLE, RIL3GPPTONE enumeration [Network Drivers Starting with Windows Vista], netvista.ril3gpptone, ntddrilapitypes/RIL_3GPPTONE_AUTHENTICATIONFAILURE, ntddrilapitypes/RIL_3GPPTONE_CONGESTION, RIL_3GPPTONE_NUMBERUNOBTAINABLE, RIL_3GPPTONE_AUTHENTICATIONFAILURE, ntddrilapitypes/RIL_3GPPTONE_CALLDROPPED, RIL_3GPPTONE_RINGBACK
+ms.keywords : netvista.ril3gpptone, RIL_3GPPTONE_BUSY, ntddrilapitypes/RIL_3GPPTONE_MAX, RIL_3GPPTONE_CONGESTION, RIL_3GPPTONE_NUMBERUNOBTAINABLE, RIL_3GPPTONE_MAX, RIL3GPPTONE enumeration [Network Drivers Starting with Windows Vista], RIL_3GPPTONE_CALLDROPPED, ntddrilapitypes/RIL_3GPPTONE_CONGESTION, RIL3GPPTONE, ntddrilapitypes/RIL3GPPTONE, ntddrilapitypes/RIL_3GPPTONE_CALLDROPPED, RIL_3GPPTONE_AUTHENTICATIONFAILURE, ntddrilapitypes/RIL_3GPPTONE_NUMBERUNOBTAINABLE, ntddrilapitypes/RIL_3GPPTONE_BUSY, RIL_3GPPTONE_RINGBACK, ntddrilapitypes/RIL_3GPPTONE_RINGBACK, ntddrilapitypes/RIL_3GPPTONE_AUTHENTICATIONFAILURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -103,7 +103,4 @@ typedef enum _RIL3GPPTONE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

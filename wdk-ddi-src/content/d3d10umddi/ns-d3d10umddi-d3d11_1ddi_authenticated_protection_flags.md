@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 687eb573-ea7c-4e8a-80df-65339521ec18
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS structure [Display Devices], display.d3d11_1ddi_authenticated_protection_flags, D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS, d3d10umddi/D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS
+ms.keywords : D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS, d3d10umddi/D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS, display.d3d11_1ddi_authenticated_protection_flags, D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,7 +62,5 @@ typedef struct D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

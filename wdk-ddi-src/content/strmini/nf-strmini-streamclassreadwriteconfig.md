@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ae8c1478-b429-4af1-a36d-96145696a990
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.streamclassreadwriteconfig, strmini/StreamClassReadWriteConfig, StreamClassReadWriteConfig, strclass-routines_5bfa9287-1b6a-40d8-abdc-637fe88e6372.xml, StreamClassReadWriteConfig routine [Streaming Media Devices]
+ms.keywords : StreamClassReadWriteConfig routine [Streaming Media Devices], stream.streamclassreadwriteconfig, strclass-routines_5bfa9287-1b6a-40d8-abdc-637fe88e6372.xml, StreamClassReadWriteConfig, strmini/StreamClassReadWriteConfig
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,6 @@ This routine can only be called at PASSIVE_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |

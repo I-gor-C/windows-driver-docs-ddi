@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : afa27127-b427-4831-b5f5-3e293738c275
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_37fc85c2-2317-41a2-9daa-766c3ccf343f.xml, KeExpandKernelStackAndCallout routine [Kernel-Mode Driver Architecture], kernel.keexpandkernelstackandcallout, ntddk/KeExpandKernelStackAndCallout, KeExpandKernelStackAndCallout
+ms.keywords : k105_37fc85c2-2317-41a2-9daa-766c3ccf343f.xml, KeExpandKernelStackAndCallout, KeExpandKernelStackAndCallout routine [Kernel-Mode Driver Architecture], ntddk/KeExpandKernelStackAndCallout, kernel.keexpandkernelstackandcallout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,22 +82,20 @@ The calling thread must not call the <a href="..\wdm\nf-wdm-psterminatesystemthr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Server 2003 on x64-based processors, and starting with Windows Vista on all processors. Available starting with Windows Server 2003 on x64-based processors, and starting with Windows Vista on all processors. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545494">ExpandedStackCall</a>
 
 <a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552036">KeExpandKernelStackAndCalloutEx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545494">ExpandedStackCall</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 28b54f80-9268-4ccb-ac19-b1b4bfef4192
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsimgt/SetLoadBalancePolicy_OUT, _SetLoadBalancePolicy_OUT, storage.setloadbalancepolicy_out, SetLoadBalancePolicy_OUT, SetLoadBalancePolicy_OUT structure [Storage Devices], PSetLoadBalancePolicy_OUT, iscsimgt/PSetLoadBalancePolicy_OUT, structs-iSCSI_32a19db4-8102-4e39-b9be-30a8a03d2732.xml, PSetLoadBalancePolicy_OUT structure pointer [Storage Devices], *PSetLoadBalancePolicy_OUT
+ms.keywords : SetLoadBalancePolicy_OUT structure [Storage Devices], iscsimgt/PSetLoadBalancePolicy_OUT, storage.setloadbalancepolicy_out, SetLoadBalancePolicy_OUT, _SetLoadBalancePolicy_OUT, PSetLoadBalancePolicy_OUT structure pointer [Storage Devices], PSetLoadBalancePolicy_OUT, structs-iSCSI_32a19db4-8102-4e39-b9be-30a8a03d2732.xml, *PSetLoadBalancePolicy_OUT, iscsimgt/SetLoadBalancePolicy_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,16 +61,13 @@ You must implement this class. For a list of possible status qualifiers, see <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563062">MSiSCSI_LB_Operations WMI Class</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563062">MSiSCSI_LB_Operations WMI Class</a>
 
  
 

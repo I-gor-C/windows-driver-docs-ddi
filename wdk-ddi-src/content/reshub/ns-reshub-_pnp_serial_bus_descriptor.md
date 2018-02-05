@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 7516B493-F86E-44C5-ABCD-450B6F66AA15
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PPNP_SERIAL_BUS_DESCRIPTOR, PPNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR structure [Buses], reshub/PNP_SERIAL_BUS_DESCRIPTOR, reshub/PPNP_SERIAL_BUS_DESCRIPTOR, PPNP_SERIAL_BUS_DESCRIPTOR structure pointer [Buses], _PNP_SERIAL_BUS_DESCRIPTOR, SPB.pnp_serial_bus_descriptor"
+ms.keywords : "_PNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR structure [Buses], PPNP_SERIAL_BUS_DESCRIPTOR structure pointer [Buses], reshub/PPNP_SERIAL_BUS_DESCRIPTOR, PPNP_SERIAL_BUS_DESCRIPTOR, *PPNP_SERIAL_BUS_DESCRIPTOR, SPB.pnp_serial_bus_descriptor, reshub/PNP_SERIAL_BUS_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -106,7 +106,5 @@ The <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure definition in the Reshub.h header
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | reshub.h |

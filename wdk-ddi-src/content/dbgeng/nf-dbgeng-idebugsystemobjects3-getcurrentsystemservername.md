@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 4E06AFD0-42D3-479F-B285-34919826F750
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetCurrentSystemServerName method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3, dbgeng/IDebugSystemObjects3::GetCurrentSystemServerName, GetCurrentSystemServerName, debugger.idebugsystemobjects3_getcurrentsystemservername, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServerName method, IDebugSystemObjects3::GetCurrentSystemServerName, GetCurrentSystemServerName method [Windows Debugging]
+ms.keywords : GetCurrentSystemServerName method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServerName method, IDebugSystemObjects3, GetCurrentSystemServerName, dbgeng/IDebugSystemObjects3::GetCurrentSystemServerName, GetCurrentSystemServerName method [Windows Debugging], IDebugSystemObjects3::GetCurrentSystemServerName, debugger.idebugsystemobjects3_getcurrentsystemservername
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -92,20 +92,15 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
 
  
 

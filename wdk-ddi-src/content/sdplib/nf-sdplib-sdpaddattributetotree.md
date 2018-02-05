@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : f5b72de2-c2e9-44ac-a2a7-04271e9253d3
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bltooth.sdpaddattributetotree, bth_funcs_5a46529e-8b1b-474a-a005-16f7a5562d91.xml, SdpAddAttributeToTree, sdplib/SdpAddAttributeToTree, SdpAddAttributeToTree function [Bluetooth Devices]
+ms.keywords : SdpAddAttributeToTree, bth_funcs_5a46529e-8b1b-474a-a005-16f7a5562d91.xml, bltooth.sdpaddattributetotree, sdplib/SdpAddAttributeToTree, SdpAddAttributeToTree function [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,20 +88,17 @@ Bluetooth profile drivers can obtain a pointer to this function through the
     <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>.
 
 For more information about the tree structure, see 
-    <mshelp:link keywords="bltooth.converting_sdp_records_to_a_tree_structure" tabindex="0">Converting SDP Records to a
-    Tree Structure</mshelp:link>.
+    <a href="https://msdn.microsoft.com/762cf68b-0082-4b9e-8f24-ff19ecf6f8bd">Converting SDP Records to a
+    Tree Structure</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

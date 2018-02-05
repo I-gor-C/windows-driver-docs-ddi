@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : b1863604-e8a2-4dc7-9f2f-e0eea9baab1a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : icm/WcsAssociateColorProfileWithDevice, WcsAssociateColorProfileWithDevice function [Print Devices], colorfnc_2d78f2bd-52f8-48c9-a018-30b4fed5746b.xml, print.wcsassociatecolorprofilewithdevice, WcsAssociateColorProfileWithDevice
+ms.keywords : print.wcsassociatecolorprofilewithdevice, colorfnc_2d78f2bd-52f8-48c9-a018-30b4fed5746b.xml, WcsAssociateColorProfileWithDevice function [Print Devices], icm/WcsAssociateColorProfileWithDevice, WcsAssociateColorProfileWithDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,11 @@ This function is executable in Least-Privileged User Account (LUA) context if <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
+| **Target Platform** | Universal |
 | **Header** | icm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mscms.lib |
+| **DLL** | Mscms.dll |
 
 ## See Also
 

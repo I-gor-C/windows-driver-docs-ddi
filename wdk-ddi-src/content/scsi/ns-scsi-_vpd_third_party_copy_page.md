@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E8D9E05C-26C3-474C-854F-9AD12C8834DF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PVPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE, storage.vpd_third_party_copy_page, PVPD_THIRD_PARTY_COPY_PAGE structure pointer [Storage Devices], *PVPD_THIRD_PARTY_COPY_PAGE, scsi/VPD_THIRD_PARTY_COPY_PAGE, _VPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE structure [Storage Devices], scsi/PVPD_THIRD_PARTY_COPY_PAGE
+ms.keywords : scsi/VPD_THIRD_PARTY_COPY_PAGE, storage.vpd_third_party_copy_page, _VPD_THIRD_PARTY_COPY_PAGE, scsi/PVPD_THIRD_PARTY_COPY_PAGE, PVPD_THIRD_PARTY_COPY_PAGE structure pointer [Storage Devices], *PVPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE structure [Storage Devices], PVPD_THIRD_PARTY_COPY_PAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE"
+req.typenames : VPD_THIRD_PARTY_COPY_PAGE, *PVPD_THIRD_PARTY_COPY_PAGE
 req.product : Windows 10 or later.
 ---
 
@@ -82,9 +82,7 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | scsi.h (include Scsi.h) |
 
 ## See Also

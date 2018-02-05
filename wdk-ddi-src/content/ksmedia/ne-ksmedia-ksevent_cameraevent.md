@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FD9483A5-7112-4141-8566-80B8D010366C
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSEVENT_PHOTO_SAMPLE_SCANNED, KSEVENT_CAMERAEVENT, ksmedia/KSEVENT_CAMERAEVENT, KSEVENT_PHOTO_SAMPLE_SCANNED, stream.ksevent_cameraevent, KSEVENT_CAMERAEVENT enumeration [Streaming Media Devices]
+ms.keywords : KSEVENT_PHOTO_SAMPLE_SCANNED, ksmedia/KSEVENT_CAMERAEVENT, stream.ksevent_cameraevent, KSEVENT_CAMERAEVENT enumeration [Streaming Media Devices], KSEVENT_CAMERAEVENT, ksmedia/KSEVENT_PHOTO_SAMPLE_SCANNED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ If the driver implements this event set, the pipeline will only respond to the e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

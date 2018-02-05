@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a36e9d57-c820-43db-a6e0-e935bffca254
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iogetdevicenumanode, k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, IoGetDeviceNumaNode, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceNumaNode
+ms.keywords : kernel.iogetdevicenumanode, IoGetDeviceNumaNode, wdm/IoGetDeviceNumaNode, k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,7 +101,7 @@ In a non-uniform memory access (NUMA) multiprocessor architecture, a node is a c
 
 A device (for example, a network controller or storage controller) that is connected to a particular node can access the memory in this node faster than it can access the memory in other nodes. The <i>Pdo</i> parameter points to a PDO that represents the bus connection between the device and the node.
 
-If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To obtain the highest node number, call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
+If a NUMA multiprocessor system contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To obtain the highest node number, call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
 
 After the system is initialized, the node count remains fixed while the system continues to run. This count might include memory-only nodes, which are nodes that contain memory but no active logical processors. A node in which all the logical processors are inactive is effectively a memory-only node until the first processor in the node starts to run. Do not assume that the node that a device is connected to contains active processors.
 
@@ -110,12 +110,11 @@ If a system does not have a NUMA architecture, the routine writes zero to the lo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -123,7 +122,7 @@ If a system does not have a NUMA architecture, the routine writes zero to the lo
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 
  
 

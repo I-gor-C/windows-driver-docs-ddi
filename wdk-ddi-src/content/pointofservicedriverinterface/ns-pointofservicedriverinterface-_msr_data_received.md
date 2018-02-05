@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : f103724c-25c4-4dec-a7a3-9713440ca833
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/PMSR_DATA_RECEIVED, *PMSR_DATA_RECEIVED, MSR_DATA_RECEIVED structure, PMSR_DATA_RECEIVED structure pointer, pos.msr_data_received, pointofservicedriverinterface/MSR_DATA_RECEIVED, _MSR_DATA_RECEIVED, PMSR_DATA_RECEIVED, MSR_DATA_RECEIVED
+ms.keywords : PMSR_DATA_RECEIVED, pointofservicedriverinterface/MSR_DATA_RECEIVED, PMSR_DATA_RECEIVED structure pointer, pos.msr_data_received, MSR_DATA_RECEIVED, MSR_DATA_RECEIVED structure, _MSR_DATA_RECEIVED, pointofservicedriverinterface/PMSR_DATA_RECEIVED, *PMSR_DATA_RECEIVED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -184,7 +184,4 @@ The amount of masked track 4 data, in bytes, that is stored in <b>Track4MaskedDa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

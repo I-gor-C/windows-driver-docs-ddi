@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 02ca3358-7740-4eda-ab7c-f4b8a88389c2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_4eaa6edb-2297-4454-b4aa-ea69aa5a073c.xml, debugger.readphysical, wdbgexts/ReadPhysical, ReadPhysical, ReadPhysical function [Windows Debugging]
+ms.keywords : debugger.readphysical, WdbgExts_Ref_4eaa6edb-2297-4454-b4aa-ea69aa5a073c.xml, ReadPhysical, wdbgexts/ReadPhysical, ReadPhysical function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5001C27B-EA5F-43C4-AD59-84B42041262E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, ucxendpoint/UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS structure pointer [Buses], ucxendpoint/PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS structure [Buses], *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, buses.ucx_endpoint_isoch_transfer_path_delays"
+ms.keywords : UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS structure [Buses], UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, buses.ucx_endpoint_isoch_transfer_path_delays, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, ucxendpoint/PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS structure pointer [Buses], *PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, ucxendpoint/UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,7 @@ The maximum delay in milliseconds from the time the  client driver's isochronous
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucxendpoint.h (include Ucxclass.h) |
 
 ## See Also

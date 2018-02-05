@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b50be4c2-4575-42b9-953d-9ddb3c3e696c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "*PWDF_KPROCESSOR_MODE, umdf.wdf_kprocessor_mode, wdf.wdf_kprocessor_mode, WDF_KPROCESSOR_MODE, wudfddi_types/WdfUserMode, WdfKProcessorModeInvalid, WdfKernelMode, umdfstructs_581a9b17-c059-4dc8-9784-8dce0d6a4e7d.xml, WdfUserMode, WDF_KPROCESSOR_MODE enumeration, wudfddi_types/WdfKProcessorModeMaximum, PWDF_KPROCESSOR_MODE, _WDF_KPROCESSOR_MODE, wudfddi_types/WDF_KPROCESSOR_MODE, PWDF_KPROCESSOR_MODE enumeration pointer, WdfKProcessorModeMaximum, wudfddi_types/WdfKernelMode, wudfddi_types/PWDF_KPROCESSOR_MODE, wudfddi_types/WdfKProcessorModeInvalid"
+ms.keywords : wudfddi_types/WdfUserMode, PWDF_KPROCESSOR_MODE enumeration pointer, wudfddi_types/WdfKProcessorModeMaximum, _WDF_KPROCESSOR_MODE, wudfddi_types/WdfKProcessorModeInvalid, wudfddi_types/WDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE enumeration, WdfUserMode, WdfKProcessorModeMaximum, wdf.wdf_kprocessor_mode, WdfKProcessorModeInvalid, umdf.wdf_kprocessor_mode, *PWDF_KPROCESSOR_MODE, WdfKernelMode, wudfddi_types/WdfKernelMode, umdfstructs_581a9b17-c059-4dc8-9784-8dce0d6a4e7d.xml, wudfddi_types/PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE, PWDF_KPROCESSOR_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,8 +86,6 @@ The <b>WDF_KPROCESSOR_MODE</b> enumeration type is return type for <a href="http
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 

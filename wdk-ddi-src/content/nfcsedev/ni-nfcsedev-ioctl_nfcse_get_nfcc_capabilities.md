@@ -88,6 +88,4 @@ sizeof(SECURE_ELEMENT_NFCC_CAPABILITIES)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | nfcsedev.h |
-| **IRQL** |  |

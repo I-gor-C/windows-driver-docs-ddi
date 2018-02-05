@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 32896b46-1143-4598-ad15-2eb4dbdea6e8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY, _NDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_FILTER_INFO_ARRAY, NDIS_RECEIVE_FILTER_INFO_ARRAY, ntddndis/NDIS_RECEIVE_FILTER_INFO_ARRAY, virtual_machine_queue_ref_f87d474d-4909-48ed-8891-7213bd4dcbc1.xml, netvista.ndis_receive_filter_info_array, NDIS_RECEIVE_FILTER_INFO_ARRAY structure [Network Drivers Starting with Windows Vista]
+ms.keywords : NDIS_RECEIVE_FILTER_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_FILTER_INFO_ARRAY, virtual_machine_queue_ref_f87d474d-4909-48ed-8891-7213bd4dcbc1.xml, *PNDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY, netvista.ndis_receive_filter_info_array, NDIS_RECEIVE_FILTER_INFO_ARRAY, ntddndis/NDIS_RECEIVE_FILTER_INFO_ARRAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -112,18 +112,18 @@ The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJ
 
 
 
-#### NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2
-
-Added members for NDIS 6.30.
-
-Set the <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2.
-
-
 #### NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_1
 
 Original version for NDIS 6.20.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_1.
+
+
+#### NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2
+
+Added members for NDIS 6.30.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_INFO_ARRAY_REVISION_2.
 
 `NumElements`
 
@@ -160,29 +160,27 @@ A value of NDIS_DEFAULT_VPORT_ID that specifies the default VPort on the NIC swi
 
 ## Remarks
 The <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure is used in the 
-    OID request of <mshelp:link keywords="netvista.oid_receive_filter_enum_filters" tabindex="0">
-    OID_RECEIVE_FILTER_ENUM_FILTERS</mshelp:link>. This OID request enumerates the receive filters on a VMQ  or SR-IOV receive queue. Each
+    OID request of <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-filters">
+    OID_RECEIVE_FILTER_ENUM_FILTERS</a>. This OID request enumerates the receive filters on a VMQ  or SR-IOV receive queue. Each
     element in the array that follows the <b>NDIS_RECEIVE_FILTER_INFO_ARRAY</b> structure is an 
-    <mshelp:link keywords="netvista.ndis_receive_filter_info" tabindex="0"><b>
-    NDIS_RECEIVE_FILTER_INFO</b></mshelp:link> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info.md">
+    NDIS_RECEIVE_FILTER_INFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-filters">OID_RECEIVE_FILTER_ENUM_FILTERS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_info.md">NDIS_RECEIVE_FILTER_INFO</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-filters">OID_RECEIVE_FILTER_ENUM_FILTERS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1AA00E3C-C6FB-49A4-9EFB-DFFEEFF4C0A0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT4_DC_DESTROY_DATA, DOT4_DC_DESTROY_DATA, d4drvif/PDOT4_DC_DESTROY_DATA, PDOT4_DC_DESTROY_DATA structure pointer [Print Devices], _DOT4_DC_DESTROY_DATA, *PDOT4_DC_DESTROY_DATA, d4drvif/DOT4_DC_DESTROY_DATA, print.dot4_dc_destroy_data, DOT4_DC_DESTROY_DATA structure [Print Devices]
+ms.keywords : DOT4_DC_DESTROY_DATA structure [Print Devices], PDOT4_DC_DESTROY_DATA structure pointer [Print Devices], *PDOT4_DC_DESTROY_DATA, print.dot4_dc_destroy_data, d4drvif/DOT4_DC_DESTROY_DATA, d4drvif/PDOT4_DC_DESTROY_DATA, DOT4_DC_DESTROY_DATA, _DOT4_DC_DESTROY_DATA, PDOT4_DC_DESTROY_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT4_DC_DESTROY_DATA, *PDOT4_DC_DESTROY_DATA
+req.typenames : "*PDOT4_DC_DESTROY_DATA, DOT4_DC_DESTROY_DATA"
 ---
 
 # _DOT4_DC_DESTROY_DATA structure
@@ -59,7 +59,4 @@ Specifies the host socket created by CREATE_SOCKET.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d4drvif.h |

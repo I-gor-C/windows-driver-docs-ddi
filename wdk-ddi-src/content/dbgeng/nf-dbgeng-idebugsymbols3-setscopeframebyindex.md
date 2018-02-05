@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7d5105e3-99c6-4800-88a4-af80a61c253e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::SetScopeFrameByIndex, SetScopeFrameByIndex method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols_451c9980-0e6c-4661-bdb6-396c45cc57dd.xml, SetScopeFrameByIndex, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], SetScopeFrameByIndex method, SetScopeFrameByIndex method [Windows Debugging], IDebugSymbols3::SetScopeFrameByIndex, debugger.setscopeframebyindex
+ms.keywords : IDebugSymbols3::SetScopeFrameByIndex, dbgeng/IDebugSymbols3::SetScopeFrameByIndex, debugger.setscopeframebyindex, SetScopeFrameByIndex method [Windows Debugging], SetScopeFrameByIndex, IDebugSymbols3 interface [Windows Debugging], SetScopeFrameByIndex method, IDebugSymbols_451c9980-0e6c-4661-bdb6-396c45cc57dd.xml, IDebugSymbols3, SetScopeFrameByIndex method [Windows Debugging], IDebugSymbols3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,26 +87,21 @@ For more information about scopes, see <a href="https://msdn.microsoft.com/libra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545862">GetCurrentScopeFrameIndex</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563155">.frame (Set Local Context)</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556778">SetScopeFromStoredEvent</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556773">SetScope</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563155">.frame (Set Local Context)</a>
 
  
 

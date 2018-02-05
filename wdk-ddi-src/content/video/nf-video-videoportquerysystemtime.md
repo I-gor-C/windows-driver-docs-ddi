@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d9b54710-6ad2-4959-9172-76c90468d343
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportquerysystemtime, video/VideoPortQuerySystemTime, VideoPortQuerySystemTime function [Display Devices], VideoPort_Functions_18c4e015-b294-40e0-8aef-7642d3a9cb27.xml, VideoPortQuerySystemTime
+ms.keywords : VideoPort_Functions_18c4e015-b294-40e0-8aef-7642d3a9cb27.xml, display.videoportquerysystemtime, VideoPortQuerySystemTime function [Display Devices], VideoPortQuerySystemTime, video/VideoPortQuerySystemTime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,12 @@ System time is a count of 100-nanosecond intervals since January 1, 1601. System
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

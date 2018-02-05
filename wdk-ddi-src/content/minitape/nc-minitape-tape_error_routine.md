@@ -87,18 +87,10 @@ A tape miniclass driver optionally specifies an entry point for its <i>TAPE_ERRO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | minitape.h (include Minitape.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
 
 <a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
 
@@ -107,6 +99,8 @@ A tape miniclass driver optionally specifies an entry point for its <i>TAPE_ERRO
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
+
+<a href="..\minitape\nf-minitape-tapeclassinitialize.md">TapeClassInitialize</a>
 
  
 

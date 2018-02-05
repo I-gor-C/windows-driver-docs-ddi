@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 6b59fa86-3c3b-4ab9-98e2-f62f028d53df
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : acpi-meth-eval-ref_e853be71-ec5f-41d6-82fc-6351a0847be8.xml, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure [ACPI Devices], acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_COMPLEX, acpi.acpi_eval_input_buffer_complex, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX, acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1
+ms.keywords : "*PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, acpi.acpi_eval_input_buffer_complex, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_COMPLEX, acpi-meth-eval-ref_e853be71-ec5f-41d6-82fc-6351a0847be8.xml, acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ACPI_EVAL_INPUT_BUFFER_COMPLEX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1
+req.typenames : "*PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, ACPI_EVAL_INPUT_BUFFER_COMPLEX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure
@@ -106,9 +106,7 @@ Set <b>Argument</b> to the array of ACPI_METHOD_ARGUMENT structures.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 2000 and later versions of Windows. Windows 2000 and later versions of Windows. |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
 ## See Also

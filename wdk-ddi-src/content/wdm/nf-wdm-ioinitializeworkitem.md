@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b7f4370e-75db-4238-8e23-9e48028a03f5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoInitializeWorkItem, wdm/IoInitializeWorkItem, k104_06024bfe-5558-4039-a9b1-327895ba9b74.xml, IoInitializeWorkItem routine [Kernel-Mode Driver Architecture], kernel.ioinitializeworkitem
+ms.keywords : k104_06024bfe-5558-4039-a9b1-327895ba9b74.xml, IoInitializeWorkItem routine [Kernel-Mode Driver Architecture], kernel.ioinitializeworkitem, wdm/IoInitializeWorkItem, IoInitializeWorkItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,24 +82,22 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-ioqueueworkitemex.md">IoQueueWorkItemEx</a>
-
-<a href="..\wdm\nf-wdm-iouninitializeworkitem.md">IoUninitializeWorkItem</a>
 
 <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
 
 <a href="..\wdm\nf-wdm-iosizeofworkitem.md">IoSizeofWorkItem</a>
+
+<a href="..\wdm\nf-wdm-iouninitializeworkitem.md">IoUninitializeWorkItem</a>
+
+<a href="..\wdm\nf-wdm-ioqueueworkitemex.md">IoQueueWorkItemEx</a>
 
 <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
 

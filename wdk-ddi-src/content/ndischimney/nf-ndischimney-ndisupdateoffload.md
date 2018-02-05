@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1e85357d-9fe2-406b-bc1a-69e4357a0f8b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndischimney/NdisUpdateOffload, netvista.ndisupdateoffload, tcp_chim_ndis_func_e33474cc-f963-48b8-8122-14f78bceb38f.xml, NdisUpdateOffload, NdisUpdateOffload function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisUpdateOffload function [Network Drivers Starting with Windows Vista], NdisUpdateOffload, ndischimney/NdisUpdateOffload, netvista.ndisupdateoffload, tcp_chim_ndis_func_e33474cc-f963-48b8-8122-14f78bceb38f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,8 +67,8 @@ The handle that NDIS provided at the
 `OffloadBlockList`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_protocol_offload_block_list" tabindex="0"><b>
-     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure that can be a stand-alone structure or the root of a
+     <a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
+     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
      linked list of such structures. These structures identify the offloaded state objects that are being
      updated.
 
@@ -82,48 +82,43 @@ None
 An intermediate driver calls the 
     <b>NdisUpdateOffload</b> function to propagate an update offload operation that was initiated by the host
     stack. For more information, see 
-    <mshelp:link keywords="netvista.propagating_state_manipulation_operations" tabindex="0">Propagating
-    State-Manipulation Operations</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff563771">Propagating
+    State-Manipulation Operations</a>.
 
 From the 
-    <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure that was passed to its 
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was passed to its 
     <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a> function,
     the intermediate driver constructs an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure. For more information,
     see 
-    <mshelp:link keywords="netvista.reusing_an_ndis_miniport_offload_block_list_structure" tabindex="0">Reusing an
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST Structure</mshelp:link>. The intermediate driver passes a pointer (the 
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/reusing-an-ndis-miniport-offload-block-list-structure">Reusing an
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST Structure</a>. The intermediate driver passes a pointer (the 
     <i>OffloadBlockList</i> parameter) to this NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure when calling the 
     <b>NdisUpdateOffload</b> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ndis.lib |
 
 ## See Also
 
-<a href="..\ndischimney\nf-ndischimney-ndismupdateoffloadcomplete.md">NdisMUpdateOffloadComplete</a>
-
-<mshelp:link keywords="netvista.protocolupdateoffloadcomplete" tabindex="0"><i>
-   ProtocolUpdateOffloadComplete</i></mshelp:link>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
-<mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link>
+<a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
+   NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a>
 
-<mshelp:link keywords="netvista.ndis_protocol_offload_block_list" tabindex="0"><b>
-   NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</b></mshelp:link>
+<a href="..\ndischimney\nc-ndischimney-update_offload_complete_handler.md">
+   ProtocolUpdateOffloadComplete</a>
+
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+   NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 
 <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
+
+<a href="..\ndischimney\nf-ndischimney-ndismupdateoffloadcomplete.md">NdisMUpdateOffloadComplete</a>
 
  
 

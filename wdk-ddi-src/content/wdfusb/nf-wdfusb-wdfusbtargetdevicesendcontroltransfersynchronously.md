@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 95150a1f-e323-4c29-8a4e-12ab4f231bc6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETDEVICESENDCONTROLTRANSFERSYNCHRONOUSLY, wdfusb/WdfUsbTargetDeviceSendControlTransferSynchronously, wdf.wdfusbtargetdevicesendcontroltransfersynchronously, WdfUsbTargetDeviceSendControlTransferSynchronously method, WdfUsbTargetDeviceSendControlTransferSynchronously, kmdf.wdfusbtargetdevicesendcontroltransfersynchronously, DFUsbRef_fe154a84-e5b4-4997-ad1f-6eb7f6829553.xml
+ms.keywords : kmdf.wdfusbtargetdevicesendcontroltransfersynchronously, PFN_WDFUSBTARGETDEVICESENDCONTROLTRANSFERSYNCHRONOUSLY, DFUsbRef_fe154a84-e5b4-4997-ad1f-6eb7f6829553.xml, wdfusb/WdfUsbTargetDeviceSendControlTransferSynchronously, wdf.wdfusbtargetdevicesendcontroltransfersynchronously, WdfUsbTargetDeviceSendControlTransferSynchronously method, WdfUsbTargetDeviceSendControlTransferSynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -250,26 +250,25 @@ For more information about the <b>WdfUsbTargetDeviceSendControlTransferSynchrono
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestForUrbXrb, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
-
 <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendurbsynchronously.md">WdfUsbTargetDeviceSendUrbSynchronously</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_vendor.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_control_setup_packet_init_vendor.md">WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</a>
 
  
 

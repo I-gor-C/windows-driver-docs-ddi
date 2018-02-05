@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ab90ab40-7b45-4658-b11b-cf46f91f8699
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoCheckDesiredAccess, ifsk.iocheckdesiredaccess, IoCheckDesiredAccess, ioref_f8879d66-0bad-4c92-b2a3-853b7eb65ac6.xml, IoCheckDesiredAccess function [Installable File System Drivers]
+ms.keywords : IoCheckDesiredAccess function [Installable File System Drivers], ifsk.iocheckdesiredaccess, IoCheckDesiredAccess, ntifs/IoCheckDesiredAccess, ioref_f8879d66-0bad-4c92-b2a3-853b7eb65ac6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

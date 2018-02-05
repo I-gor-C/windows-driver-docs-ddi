@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 729bd44f-9ac7-4b3d-905d-a78b10fba2a7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfrequest/WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT, wdf.wdf_request_send_options_set_timeout, DFRequestObjectRef_bcbdd786-6d81-45f7-a70b-96e781da0d36.xml, WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT function, kmdf.wdf_request_send_options_set_timeout, WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT
+ms.keywords : wdf.wdf_request_send_options_set_timeout, DFRequestObjectRef_bcbdd786-6d81-45f7-a70b-96e781da0d36.xml, WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT function, wdfrequest/WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT, kmdf.wdf_request_send_options_set_timeout, WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,20 +78,17 @@ The <b>WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT</b> function stores the specified ti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_send_options_init.md">WDF_REQUEST_SEND_OPTIONS_INIT</a>
-
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_send_options_init.md">WDF_REQUEST_SEND_OPTIONS_INIT</a>
 
  
 

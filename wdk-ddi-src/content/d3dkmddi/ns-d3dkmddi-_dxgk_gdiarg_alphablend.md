@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8bb9321c-00a0-4360-9a38-fcef2209028c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_GDIARG_ALPHABLEND, display.dxgk_gdiarg_alphablend, DmStructs_8cbd2c26-3cda-445f-807d-e80038ccc8bd.xml, d3dkmddi/DXGK_GDIARG_ALPHABLEND, DXGK_GDIARG_ALPHABLEND structure [Display Devices], DXGK_GDIARG_ALPHABLEND"
+ms.keywords : DXGK_GDIARG_ALPHABLEND, DmStructs_8cbd2c26-3cda-445f-807d-e80038ccc8bd.xml, _DXGK_GDIARG_ALPHABLEND, d3dkmddi/DXGK_GDIARG_ALPHABLEND, display.dxgk_gdiarg_alphablend, DXGK_GDIARG_ALPHABLEND structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -127,9 +127,7 @@ int Ys = truncate((Yd â€“ DstRect.top + 0.5) * Hs/Hd + SrcRect.top)</code><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

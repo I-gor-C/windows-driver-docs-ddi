@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d58a275a-aaaa-4159-ba00-6998b7a63434
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfcompaniontarget/WdfCompanionTargetSendTaskSynchronously, wdf.wdfcompaniontargetsendtasksynchronously, WdfCompanionTargetSendTaskSynchronously, WdfCompanionTargetSendTaskSynchronously method
+ms.keywords : WdfCompanionTargetSendTaskSynchronously, WdfCompanionTargetSendTaskSynchronously method, wdf.wdfcompaniontargetsendtasksynchronously, wdfcompaniontarget/WdfCompanionTargetSendTaskSynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,8 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.23 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfcompaniontarget.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

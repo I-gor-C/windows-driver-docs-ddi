@@ -121,14 +121,9 @@ If a user-mode display driver exposes a DDI version of 0x0000000B or greater (th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -136,11 +131,11 @@ If a user-mode display driver exposes a DDI version of 0x0000000B or greater (th
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rename.md">Rename</a>
 
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlockasync.md">D3DDDIARG_UNLOCKASYNC</a>
+
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockasync.md">LockAsync</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
-
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlockasync.md">D3DDDIARG_UNLOCKASYNC</a>
 
  
 

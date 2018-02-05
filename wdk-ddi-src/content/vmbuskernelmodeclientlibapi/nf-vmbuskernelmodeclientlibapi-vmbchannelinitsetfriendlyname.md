@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 17FEFFDB-DCCC-4782-9F99-195A03F4901E
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelInitSetFriendlyName function [Network Drivers Starting with Windows Vista], netvista.vmbchannelinitsetfriendlyname, vmbuskernelmodeclientlibapi/VmbChannelInitSetFriendlyName, VmbChannelInitSetFriendlyName
+ms.keywords : netvista.vmbchannelinitsetfriendlyname, VmbChannelInitSetFriendlyName, vmbuskernelmodeclientlibapi/VmbChannelInitSetFriendlyName, VmbChannelInitSetFriendlyName function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -79,11 +79,9 @@ relatively short and easy to understand, for example, Network, SCSI, IDE, or Syn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |

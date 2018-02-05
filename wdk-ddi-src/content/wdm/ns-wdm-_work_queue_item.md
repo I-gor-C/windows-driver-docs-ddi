@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 068ac200-55bb-4d7b-bc69-ad57d466a36b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PWORK_QUEUE_ITEM, wdm/WORK_QUEUE_ITEM, ifsk.work_queue_item, WORK_QUEUE_ITEM, PWORK_QUEUE_ITEM structure pointer [Installable File System Drivers], othersystemstructures_52486f79-e8f4-4fb3-9b41-564bbd78f5d5.xml, wdm/PWORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM structure [Installable File System Drivers], _WORK_QUEUE_ITEM
+ms.keywords : wdm/WORK_QUEUE_ITEM, wdm/PWORK_QUEUE_ITEM, ifsk.work_queue_item, PWORK_QUEUE_ITEM, _WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM, othersystemstructures_52486f79-e8f4-4fb3-9b41-564bbd78f5d5.xml, WORK_QUEUE_ITEM structure [Installable File System Drivers], WORK_QUEUE_ITEM, PWORK_QUEUE_ITEM structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,22 +94,19 @@ To post the initialized work item to a system work queue, call <a href="..\wdm\n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>
-
-<a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a>
-
-<a href="..\wdm\nf-wdm-exqueueworkitem.md">ExQueueWorkItem</a>
-
 <a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
 
 <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
+
+<a href="..\wdm\nf-wdm-exqueueworkitem.md">ExQueueWorkItem</a>
+
+<a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>
+
+<a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a>
 
  
 

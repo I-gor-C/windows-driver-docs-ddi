@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ae9175e5-c1fc-44ae-a7c9-921ac8483e33
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisCoCreateVc, netvista.ndiscocreatevc, condis_protocol_ref_6b168c4f-016d-4fa8-911a-d89fd9de2829.xml, NdisCoCreateVc function [Network Drivers Starting with Windows Vista], NdisCoCreateVc
+ms.keywords : NdisCoCreateVc function [Network Drivers Starting with Windows Vista], netvista.ndiscocreatevc, NdisCoCreateVc, condis_protocol_ref_6b168c4f-016d-4fa8-911a-d89fd9de2829.xml, ndis/NdisCoCreateVc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,8 +70,8 @@ Specifies the handle returned by
      such as a VC to a network switch. When it creates a VC for incoming call notifications, a call manager
      passes the AF handle that it saved in its per-AF state designated by the 
      <i>CallMgrAfContext</i> that was passed as an input parameter to its 
-     <mshelp:link keywords="netvista.protocolcmregistersap" tabindex="0"><i>
-     ProtocolCmRegisterSap</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
+     ProtocolCmRegisterSap</a> function.
 
 `ProtocolVcContext`
 
@@ -177,8 +177,8 @@ To make an outgoing call, a client must call
     <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.
 
 When its 
-    <mshelp:link keywords="netvista.protocolcoreceivenetbufferlists" tabindex="0"><i>
-    ProtocolCoReceiveNetBufferLists</i></mshelp:link> function processes the offer of an incoming call directed to one of
+    <a href="..\ndis\nc-ndis-protocol_co_receive_net_buffer_lists.md">
+    ProtocolCoReceiveNetBufferLists</a> function processes the offer of an incoming call directed to one of
     its registered SAPs, a call manager must call 
     <b>NdisCoCreateVc</b> first. As a synchronous operation, NDIS calls the underlying miniport driver's 
     <i>MiniportCoCreateVc</i> function and the client's 
@@ -187,8 +187,8 @@ When its
     <b>NdisCoCreateVc</b> succeeds, the call manager can proceed in notifying the appropriate client, passing
     the returned value at 
     <i>NdisVcHandle</i> to 
-    <mshelp:link keywords="netvista.ndiscmdispatchincomingcall" tabindex="0"><b>
-    NdisCmDispatchIncomingCall</b></mshelp:link>.
+    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
+    NdisCmDispatchIncomingCall</a>.
 
 Stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
     <b>NdisCoCreateVc</b>. Connection-oriented miniport drivers that provide integrated call-management
@@ -198,36 +198,34 @@ Stand-alone call managers, which register themselves with NDIS as protocol drive
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoCreateVc (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Connection_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
-<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
-
-<mshelp:link keywords="netvista.protocolcoreceivenetbufferlists" tabindex="0"><i>
-   ProtocolCoReceiveNetBufferLists</i></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
-
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
-
 <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
 
-<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
+
+<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
+
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_receive_net_buffer_lists.md">
+   ProtocolCoReceiveNetBufferLists</a>
+
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
  
 

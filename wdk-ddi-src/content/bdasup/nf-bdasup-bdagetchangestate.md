@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fd111e80-fc3e-4f21-97cb-1f75ae34d1e9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.bdagetchangestate, BdaGetChangeState, BdaGetChangeState function [Streaming Media Devices], bdasup/BdaGetChangeState, bdaref_52b39183-4a62-47b2-91d1-41fb76b31606.xml
+ms.keywords : BdaGetChangeState function [Streaming Media Devices], stream.bdagetchangestate, bdasup/BdaGetChangeState, BdaGetChangeState, bdaref_52b39183-4a62-47b2-91d1-41fb76b31606.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,24 +109,21 @@ Return the current change state for both BDA topology and the BDA filter.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a>
-
-<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563417">KSMETHOD_BDA_GET_CHANGE_STATE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
+<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a>
 
  
 

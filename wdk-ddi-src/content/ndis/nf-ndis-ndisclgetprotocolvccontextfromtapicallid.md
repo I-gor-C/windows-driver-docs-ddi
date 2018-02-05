@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5c716207-b093-499a-8fad-344b5ac51e25
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisClGetProtocolVcContextFromTapiCallId function [Network Drivers Starting with Windows Vista], NdisClGetProtocolVcContextFromTapiCallId, netvista.ndisclgetprotocolvccontextfromtapicallid, condis_client_ref_0f7c98a1-306b-40b4-b84c-0e624c936e90.xml, ndis/NdisClGetProtocolVcContextFromTapiCallId
+ms.keywords : NdisClGetProtocolVcContextFromTapiCallId function [Network Drivers Starting with Windows Vista], ndis/NdisClGetProtocolVcContextFromTapiCallId, netvista.ndisclgetprotocolvccontextfromtapicallid, condis_client_ref_0f7c98a1-306b-40b4-b84c-0e624c936e90.xml, NdisClGetProtocolVcContextFromTapiCallId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -125,22 +125,20 @@ See the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1   drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1   drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallId</a>
 
 <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

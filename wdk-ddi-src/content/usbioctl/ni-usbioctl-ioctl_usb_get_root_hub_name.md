@@ -74,9 +74,7 @@ If the root hub is removed or stopped, the request returns STATUS_SUCCESS but th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b81dbad8-0e03-4183-a7b3-32c75a656575
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfchildlistbeginiteration, WdfChildListBeginIteration, wdfchildlist/WdfChildListBeginIteration, DFDeviceObjectChildListRef_98150ed0-3144-4fda-96ca-41573d3013bf.xml, PFN_WDFCHILDLISTBEGINITERATION, WdfChildListBeginIteration method, wdf.wdfchildlistbeginiteration
+ms.keywords : wdf.wdfchildlistbeginiteration, WdfChildListBeginIteration method, WdfChildListBeginIteration, wdfchildlist/WdfChildListBeginIteration, PFN_WDFCHILDLISTBEGINITERATION, kmdf.wdfchildlistbeginiteration, DFDeviceObjectChildListRef_98150ed0-3144-4fda-96ca-41573d3013bf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,12 +86,10 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
@@ -99,17 +97,17 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistrequestchildeject.md">WdfChildListRequestChildEject</a>
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_iterator_init.md">WDF_CHILD_LIST_ITERATOR_INIT</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginscan.md">WdfChildListBeginScan</a>
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginscan.md">WdfChildListBeginScan</a>
+<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a>
+
+<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_iterator_init.md">WDF_CHILD_LIST_ITERATOR_INIT</a>
 
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a>
 
 <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_identification_description_header_init.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</a>
-
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistenditeration.md">WdfChildListEndIteration</a>
 
  
 

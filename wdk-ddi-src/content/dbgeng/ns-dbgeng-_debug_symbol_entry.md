@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 31ffab25-ec34-42ff-bdde-c98fef003bfc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/DEBUG_SYMBOL_ENTRY, _DEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY structure [Windows Debugging], dbgeng/PDEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY, PDEBUG_SYMBOL_ENTRY structure pointer [Windows Debugging], *PDEBUG_SYMBOL_ENTRY, debugger.debug_symbol_entry, PDEBUG_SYMBOL_ENTRY, Structures_5673550e-274a-429f-9a31-88e401bca68e.xml
+ms.keywords : debugger.debug_symbol_entry, _DEBUG_SYMBOL_ENTRY, PDEBUG_SYMBOL_ENTRY structure pointer [Windows Debugging], Structures_5673550e-274a-429f-9a31-88e401bca68e.xml, dbgeng/PDEBUG_SYMBOL_ENTRY, dbgeng/DEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY structure [Windows Debugging], PDEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY
+req.typenames : "*PDEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY"
 ---
 
 # _DEBUG_SYMBOL_ENTRY structure
@@ -114,9 +114,6 @@ The type ID of the symbol.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dbgeng.h (include DbgEng.h, DbgHelp.h, DbgHelp.h) |
 
 ## See Also

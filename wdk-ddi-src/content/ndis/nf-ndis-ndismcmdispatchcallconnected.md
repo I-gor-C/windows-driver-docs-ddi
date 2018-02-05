@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b47976ad-fdde-48cb-bb30-4eaf25489143
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCmDispatchCallConnected, NdisMCmDispatchCallConnected, NdisMCmDispatchCallConnected macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_3d3199be-36e5-445e-986d-984a4f778da0.xml, netvista.ndismcmdispatchcallconnected
+ms.keywords : netvista.ndismcmdispatchcallconnected, NdisMCmDispatchCallConnected, condis_mcm_ref_3d3199be-36e5-445e-986d-984a4f778da0.xml, ndis/NdisMCmDispatchCallConnected, NdisMCmDispatchCallConnected macro [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -66,15 +66,15 @@ None
 ## Remarks
 
 An MCM driver's 
-    <mshelp:link keywords="netvista.protocolcmincomingcallcomplete" tabindex="0"><i>
-    ProtocolCmIncomingCallComplete</i></mshelp:link> function calls 
+    <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+    ProtocolCmIncomingCallComplete</a> function calls 
     <b>NdisMCmDispatchCallConnected</b> to complete the final handshake for an incoming call from a remote
     node, which the local client has already accepted.
 
 A call to 
     <b>NdisMCmDispatchCallConnected</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclcallconnected" tabindex="0"><i>
-    ProtocolClCallConnected</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_call_connected.md">
+    ProtocolClCallConnected</a> function.
 
 Only connection-oriented miniport drivers that provide integrated call-management support can call 
     <b>NdisMCmDispatchCallConnected</b>. Stand-alone call managers, which register themselves with NDIS as
@@ -84,25 +84,23 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDispatchCallConnected   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDispatchCallConnected   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDispatchCallConnected   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDispatchCallConnected   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
+
 <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_call_connected.md">ProtocolClCallConnected</a>
 
-<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
-
-<mshelp:link keywords="netvista.protocolcmincomingcallcomplete" tabindex="0"><i>
-   ProtocolCmIncomingCallComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+   ProtocolCmIncomingCallComplete</a>
 
 <a href="..\ndis\nf-ndis-ndiscmdispatchcallconnected.md">NdisCmDispatchCallConnected</a>
 

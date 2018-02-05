@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1399922d-684c-44a4-8bc7-b9e45ba05086
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : SetBuffer method, SetBuffer, umdf.iwdfmemory_setbuffer, wdf.iwdfmemory_setbuffer, IWDFMemory, wudfddi/IWDFMemory::SetBuffer, IWDFMemory::SetBuffer, IWDFMemory interface, SetBuffer method, UMDFMemoryObjectRef_34339a6a-7426-46fc-8df9-7f5281b03308.xml, SetBuffer method, IWDFMemory interface
+ms.keywords : wdf.iwdfmemory_setbuffer, UMDFMemoryObjectRef_34339a6a-7426-46fc-8df9-7f5281b03308.xml, IWDFMemory interface, SetBuffer method, SetBuffer method, IWDFMemory interface, SetBuffer method, IWDFMemory, IWDFMemory::SetBuffer, wudfddi/IWDFMemory::SetBuffer, SetBuffer, umdf.iwdfmemory_setbuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,12 @@ The <b>SetBuffer</b> method can assign a buffer to a memory object that <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

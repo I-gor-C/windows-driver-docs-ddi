@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5635b99d-c58d-4a17-bb51-2dc38e51421a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDriverObjectRef_56291c91-1c81-486d-89ce-948d037b8bc4.xml, PFN_WDFDRIVERISVERSIONAVAILABLE, WdfDriverIsVersionAvailable method, WdfDriverIsVersionAvailable, kmdf.wdfdriverisversionavailable, wdfdriver/WdfDriverIsVersionAvailable, wdf.wdfdriverisversionavailable
+ms.keywords : WdfDriverIsVersionAvailable method, wdf.wdfdriverisversionavailable, DFDriverObjectRef_56291c91-1c81-486d-89ce-948d037b8bc4.xml, kmdf.wdfdriverisversionavailable, PFN_WDFDRIVERISVERSIONAVAILABLE, wdfdriver/WdfDriverIsVersionAvailable, WdfDriverIsVersionAvailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,22 +80,21 @@ For more information about library versions, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_version_available_params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a>
+
 <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-
-<a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_version_available_params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a>
 
 <a href="..\wdfdriver\nf-wdfdriver-wdfdriverretrieveversionstring.md">WdfDriverRetrieveVersionString</a>
 

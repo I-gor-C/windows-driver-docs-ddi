@@ -74,6 +74,4 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
-| **IRQL** |  |

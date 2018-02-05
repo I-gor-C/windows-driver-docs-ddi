@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3be2ef6c-391e-4d1c-a1a6-e3228f5cc67d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest interface, GetType method, wdf.iwdfiorequest_gettype, UMDFRequestObjectRef_8f8bc7b0-b527-4325-a2dc-a9ef5e73cc28.xml, IWDFIoRequest::GetType, GetType, GetType method, IWDFIoRequest interface, IWDFIoRequest, wudfddi/IWDFIoRequest::GetType, umdf.iwdfiorequest_gettype, GetType method
+ms.keywords : IWDFIoRequest::GetType, GetType method, wudfddi/IWDFIoRequest::GetType, GetType, GetType method, IWDFIoRequest interface, wdf.iwdfiorequest_gettype, IWDFIoRequest interface, GetType method, UMDFRequestObjectRef_8f8bc7b0-b527-4325-a2dc-a9ef5e73cc28.xml, umdf.iwdfiorequest_gettype, IWDFIoRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -63,20 +63,18 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
  
 

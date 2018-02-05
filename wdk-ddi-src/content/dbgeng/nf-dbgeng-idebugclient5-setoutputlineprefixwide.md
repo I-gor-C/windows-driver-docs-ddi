@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B847EE03-65C0-4046-BD0A-0441C487056F
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient5 interface [Windows Debugging], SetOutputLinePrefixWide method, debugger.idebugclient5_setoutputlineprefixwide, SetOutputLinePrefixWide method [Windows Debugging], IDebugClient5::SetOutputLinePrefixWide, dbgeng/IDebugClient5::SetOutputLinePrefixWide, SetOutputLinePrefixWide, SetOutputLinePrefixWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5
+ms.keywords : SetOutputLinePrefixWide, debugger.idebugclient5_setoutputlineprefixwide, dbgeng/IDebugClient5::SetOutputLinePrefixWide, SetOutputLinePrefixWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], SetOutputLinePrefixWide method, IDebugClient5, IDebugClient5::SetOutputLinePrefixWide, SetOutputLinePrefixWide method [Windows Debugging], IDebugClient5 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8D3BD2E0-02EA-4745-AA1C-86D829E6BA81
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SRBEX_DATA_SCSI_CDB_VAR, storport/SRBEX_DATA_SCSI_CDB_VAR, PSRBEX_DATA_SCSI_CDB_VAR structure pointer [Storage Devices], storport/PSRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR structure [Storage Devices], *PSRBEX_DATA_SCSI_CDB_VAR, storage.srbex_data_scsi_cdb_var, _SRBEX_DATA_SCSI_CDB_VAR, PSRBEX_DATA_SCSI_CDB_VAR
+ms.keywords : SRBEX_DATA_SCSI_CDB_VAR structure [Storage Devices], PSRBEX_DATA_SCSI_CDB_VAR structure pointer [Storage Devices], *PSRBEX_DATA_SCSI_CDB_VAR, _SRBEX_DATA_SCSI_CDB_VAR, storport/PSRBEX_DATA_SCSI_CDB_VAR, PSRBEX_DATA_SCSI_CDB_VAR, storage.srbex_data_scsi_cdb_var, SRBEX_DATA_SCSI_CDB_VAR, storport/SRBEX_DATA_SCSI_CDB_VAR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,23 +98,21 @@ The length of the sense information returned in the buffer pointed to by <b>Sens
 Data type indicator for the bidirectional extended SRB data structure. Set to <b>SrbExDataTypeScsiCdbVar</b>.
 
 ## Remarks
-For CDB data sizes less than 32 bytes, the <a href="..\srb\ns-srb-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="..\srb\ns-srb-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.
+For CDB data sizes less than 32 bytes, the <a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure, and possibly the <a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure, may be used instead. The maximum CDB data allowed in the <b>Cdb</b> array is SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MAX - SRBEX_DATA_SCSI_CDB_VAR_LENGTH_MIN + 1. The length specified in <b>CdbLength</b> must be less than or equal to this value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | storport.h (include Storport.h, Srb.h) |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 
-<a href="..\srb\ns-srb-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
 
  
 

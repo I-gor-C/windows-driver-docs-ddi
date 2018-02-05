@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6BE5948B-DAC9-4448-AE22-108805BB364C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, UcmTcpciPortControllerHPDStatusHigh, UcmTcpciPortControllerHPDStatusLow, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, ucmtcpciportcontrollerrequests/UcmTcpciPortControllerHPDStatusHigh, buses.ucmtcpci_port_controller_displayport_hpd_status, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS enumeration [Buses], ucmtcpciportcontrollerrequests/UcmTcpciPortControllerHPDStatusLow"
+ms.keywords : UcmTcpciPortControllerHPDStatusLow, ucmtcpciportcontrollerrequests/UcmTcpciPortControllerHPDStatusLow, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, ucmtcpciportcontrollerrequests/UcmTcpciPortControllerHPDStatusHigh, UcmTcpciPortControllerHPDStatusHigh, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS enumeration [Buses], ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, buses.ucmtcpci_port_controller_displayport_hpd_status
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,9 +69,6 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontrollerrequests.h |
 
 ## See Also

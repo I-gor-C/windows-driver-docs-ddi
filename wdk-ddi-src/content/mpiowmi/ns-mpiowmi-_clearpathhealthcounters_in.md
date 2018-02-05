@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 12c4462a-886b-4446-ace4-128af0af5dc0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PClearPathHealthCounters_IN structure pointer [Storage Devices], storage.clearpathhealthcounters_in, *PClearPathHealthCounters_IN, ClearPathHealthCounters_IN structure [Storage Devices], _ClearPathHealthCounters_IN, structs-scsibus_c1039fbb-d682-4fe8-a1ee-8fe7f7a0d1fc.xml, mpiowmi/PClearPathHealthCounters_IN, mpiowmi/ClearPathHealthCounters_IN, ClearPathHealthCounters_IN, PClearPathHealthCounters_IN
+ms.keywords : PClearPathHealthCounters_IN structure pointer [Storage Devices], structs-scsibus_c1039fbb-d682-4fe8-a1ee-8fe7f7a0d1fc.xml, *PClearPathHealthCounters_IN, mpiowmi/ClearPathHealthCounters_IN, PClearPathHealthCounters_IN, storage.clearpathhealthcounters_in, mpiowmi/PClearPathHealthCounters_IN, ClearPathHealthCounters_IN, _ClearPathHealthCounters_IN, ClearPathHealthCounters_IN structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ClearPathHealthCounters_IN, *PClearPathHealthCounters_IN
+req.typenames : "*PClearPathHealthCounters_IN, ClearPathHealthCounters_IN"
 ---
 
 # _ClearPathHealthCounters_IN structure
@@ -59,7 +59,4 @@ A 64-bitfield that specifies the path that is associated with the device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

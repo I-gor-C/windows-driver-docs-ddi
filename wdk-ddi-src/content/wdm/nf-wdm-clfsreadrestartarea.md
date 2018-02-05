@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d391a7ed-220e-412a-8e32-22b206c7a062
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsReadRestartArea routine [Kernel-Mode Driver Architecture], ClfsReadRestartArea, wdm/ClfsReadRestartArea, Clfs_bce9c012-cc19-472e-a1b3-c2d83435c6c0.xml, kernel.clfsreadrestartarea
+ms.keywords : wdm/ClfsReadRestartArea, ClfsReadRestartArea, kernel.clfsreadrestartarea, ClfsReadRestartArea routine [Kernel-Mode Driver Architecture], Clfs_bce9c012-cc19-472e-a1b3-c2d83435c6c0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,24 +93,22 @@ Read contexts are not thread-safe. Clients are responsible for serializing acces
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
-
-<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
 
 <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
 
-<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
+<a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
 
  
 

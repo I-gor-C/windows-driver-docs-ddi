@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0B5C1BF9-59C3-4AC9-B545-FD7260B75E90
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetSectionContext routine [Installable File System Drivers], ifsk.fltgetsectioncontext, fltkernel/FltGetSectionContext, FltGetSectionContext
+ms.keywords : FltGetSectionContext, fltkernel/FltGetSectionContext, ifsk.fltgetsectioncontext, FltGetSectionContext routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,22 +113,20 @@ To allocate a new context, call <a href="..\fltkernel\nf-fltkernel-fltallocateco
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FltGetSectionContext routine is available starting with  Windows 8. The FltGetSectionContext routine is available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a>
 

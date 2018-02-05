@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cc13d98b-0516-49bf-b92c-5ed6b1c6b5b2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_CALLAUDIO_FLAGS, rilapitypes/RIL_PARAM_CALLAUDIO_QUALITY, rilapitypes/RILCALLAUDIOMEDIASTATEPARAMMASK, RIL_PARAM_CALLAUDIO_ALL, RIL_PARAM_CALLAUDIO_QUALITY, RILCALLAUDIOMEDIASTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilcallaudiomediastateparammask_2, RILCALLAUDIOMEDIASTATEPARAMMASK, RIL_PARAM_CALLAUDIO_FLAGS, rilapitypes/RIL_PARAM_CALLAUDIO_ALL
+ms.keywords : rilapitypes/RILCALLAUDIOMEDIASTATEPARAMMASK, RILCALLAUDIOMEDIASTATEPARAMMASK, rilapitypes/RIL_PARAM_CALLAUDIO_FLAGS, RIL_PARAM_CALLAUDIO_ALL, RIL_PARAM_CALLAUDIO_FLAGS, rilapitypes/RIL_PARAM_CALLAUDIO_ALL, RILCALLAUDIOMEDIASTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilcallaudiomediastateparammask_2, rilapitypes/RIL_PARAM_CALLAUDIO_QUALITY, RIL_PARAM_CALLAUDIO_QUALITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILCALLAUDIOMEDIASTATEPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

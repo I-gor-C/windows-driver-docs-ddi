@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f8a2df5d-426f-4872-8d54-55895c4fe6e3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMStrokeAndFillPath, printoem/OEMStrokeAndFillPath, print_unidrv-pscript_rendering_e370d4e7-4593-46c7-87dd-93c963400290.xml, print.oemstrokeandfillpath, OEMStrokeAndFillPath function [Print Devices]
+ms.keywords : OEMStrokeAndFillPath, print.oemstrokeandfillpath, printoem/OEMStrokeAndFillPath, OEMStrokeAndFillPath function [Print Devices], print_unidrv-pscript_rendering_e370d4e7-4593-46c7-87dd-93c963400290.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -111,11 +111,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

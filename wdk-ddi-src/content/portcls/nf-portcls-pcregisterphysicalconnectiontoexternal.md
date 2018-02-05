@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : ffacfd4e-9ceb-477a-8b2f-17d7c590fd81
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/PcRegisterPhysicalConnectionToExternal, PcRegisterPhysicalConnectionToExternal function [Audio Devices], audio.pcregisterphysicalconnectiontoexternal, audpc-routines_8e03485f-aca9-4e06-981b-fa9593472499.xml, PcRegisterPhysicalConnectionToExternal
+ms.keywords : PcRegisterPhysicalConnectionToExternal, audpc-routines_8e03485f-aca9-4e06-981b-fa9593472499.xml, PcRegisterPhysicalConnectionToExternal function [Audio Devices], audio.pcregisterphysicalconnectiontoexternal, portcls/PcRegisterPhysicalConnectionToExternal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -96,28 +96,25 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcRegisterPhysicalConnectionToExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRegisterPhysicalConnectionToExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537029">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a>
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
-
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537029">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a>
+
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
 
  
 

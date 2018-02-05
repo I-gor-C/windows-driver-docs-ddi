@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : fc93ab8a-01d2-4827-8d89-06f09bf10456
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bth_structs_8cf076cf-a280-49ee-bbe6-cc54e854905e.xml, bltooth.indication_parameters, PINDICATION_PARAMETERS, bthddi/INDICATION_PARAMETERS, PINDICATION_PARAMETERS structure pointer [Bluetooth Devices], bthddi/PINDICATION_PARAMETERS, _INDICATION_PARAMETERS, *PINDICATION_PARAMETERS, INDICATION_PARAMETERS structure [Bluetooth Devices], INDICATION_PARAMETERS
+ms.keywords : bthddi/INDICATION_PARAMETERS, bltooth.indication_parameters, _INDICATION_PARAMETERS, PINDICATION_PARAMETERS, PINDICATION_PARAMETERS structure pointer [Bluetooth Devices], INDICATION_PARAMETERS, bth_structs_8cf076cf-a280-49ee-bbe6-cc54e854905e.xml, bthddi/PINDICATION_PARAMETERS, INDICATION_PARAMETERS structure [Bluetooth Devices], *PINDICATION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : INDICATION_PARAMETERS, *PINDICATION_PARAMETERS
+req.typenames : "*PINDICATION_PARAMETERS, INDICATION_PARAMETERS"
 ---
 
 # _INDICATION_PARAMETERS structure
@@ -141,9 +141,7 @@ When the Bluetooth driver stack passes
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
@@ -152,11 +150,11 @@ When the Bluetooth driver stack passes
 
 <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
 
+<a href="..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md">L2CAP_DISCONNECT_REASON</a>
+
 <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
 
 <a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
-
-<a href="..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md">L2CAP_DISCONNECT_REASON</a>
 
  
 

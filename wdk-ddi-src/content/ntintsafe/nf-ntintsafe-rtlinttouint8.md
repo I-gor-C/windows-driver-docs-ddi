@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : BD5F605A-0E0F-4D68-8905-6FCEC9DD7F15
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntToUInt8 function [Kernel-Mode Driver Architecture], kernel.rtlinttouint8, RtlIntToUInt8, ntintsafe/RtlIntToUInt8
+ms.keywords : RtlIntToUInt8, RtlIntToUInt8 function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntToUInt8, kernel.rtlinttouint8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

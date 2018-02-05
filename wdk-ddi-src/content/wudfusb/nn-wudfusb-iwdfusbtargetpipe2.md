@@ -61,8 +61,7 @@ Drivers obtain the <b>IWDFUsbTargetPipe2</b> interface by calling <b>IWDFUsbTarg
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfusb.h |
-| **DLL** | WUDFx.dll |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1e14bcaf-1454-4930-a3b8-afc044c4be3f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : iddcx/IDARG_IN_SET_GAMMARAMP, IDARG_IN_SET_GAMMARAMP structure [Display Devices], IDARG_IN_SET_GAMMARAMP, display.idarg_in_set_gammaramp
+ms.keywords : IDARG_IN_SET_GAMMARAMP structure [Display Devices], IDARG_IN_SET_GAMMARAMP, iddcx/IDARG_IN_SET_GAMMARAMP, display.idarg_in_set_gammaramp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ typedef struct IDARG_IN_SET_GAMMARAMP {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

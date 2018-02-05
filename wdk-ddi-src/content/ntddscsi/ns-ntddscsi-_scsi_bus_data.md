@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d7baddb5-ad12-4aea-9515-97511dc05fe7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSCSI_BUS_DATA, ntddscsi/PSCSI_BUS_DATA, storage.scsi_bus_data, _SCSI_BUS_DATA, *PSCSI_BUS_DATA, ntddscsi/SCSI_BUS_DATA, SCSI_BUS_DATA, structs-scsibus_8a0f86c6-4011-4c11-90e8-bf3c28a147dc.xml, SCSI_BUS_DATA structure [Storage Devices], PSCSI_BUS_DATA structure pointer [Storage Devices]
+ms.keywords : PSCSI_BUS_DATA structure pointer [Storage Devices], *PSCSI_BUS_DATA, structs-scsibus_8a0f86c6-4011-4c11-90e8-bf3c28a147dc.xml, _SCSI_BUS_DATA, storage.scsi_bus_data, ntddscsi/SCSI_BUS_DATA, SCSI_BUS_DATA, PSCSI_BUS_DATA, ntddscsi/PSCSI_BUS_DATA, SCSI_BUS_DATA structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,6 @@ Contains the number of logical units on the bus for which inquiry data is being 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also

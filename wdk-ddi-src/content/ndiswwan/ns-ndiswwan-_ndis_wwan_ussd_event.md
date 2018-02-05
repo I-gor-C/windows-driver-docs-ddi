@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 11533451-31EC-4C55-9675-5AC7D25B6C9D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_USSD_EVENT structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_USSD_EVENT, *PNDIS_WWAN_USSD_EVENT, netvista.ndis_wwan_ussd_event, NDIS_WWAN_USSD_EVENT structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_USSD_EVENT, NDIS_WWAN_USSD_EVENT, ndiswwan/NDIS_WWAN_USSD_EVENT, ndiswwan/PNDIS_WWAN_USSD_EVENT
+ms.keywords : "*PNDIS_WWAN_USSD_EVENT, ndiswwan/PNDIS_WWAN_USSD_EVENT, _NDIS_WWAN_USSD_EVENT, PNDIS_WWAN_USSD_EVENT, NDIS_WWAN_USSD_EVENT, PNDIS_WWAN_USSD_EVENT structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_USSD_EVENT structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_USSD_EVENT, netvista.ndis_wwan_ussd_event"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_USSD_EVENT, *PNDIS_WWAN_USSD_EVENT
+req.typenames : "*PNDIS_WWAN_USSD_EVENT, NDIS_WWAN_USSD_EVENT"
 ---
 
 # _NDIS_WWAN_USSD_EVENT structure
@@ -196,9 +196,7 @@ Service activation has failed. Subscription has expired. Device does not allow s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

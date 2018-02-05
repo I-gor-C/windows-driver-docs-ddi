@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 881F93B2-999F-4E3A-A71D-731946E8AA97
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_CONTROLINTERRUPT2, _DXGKARG_CONTROLINTERRUPT2, d3dkmddi/DXGKARG_CONTROLINTERRUPT2, DXGKARG_CONTROLINTTERUPT2, display.dxgkarg_controlinterrupt2, DXGKARG_CONTROLINTERRUPT2 structure [Display Devices], DXGKARG_CONTROLINTTERUPT2 structure [Display Devices]
+ms.keywords : DXGKARG_CONTROLINTERRUPT2, DXGKARG_CONTROLINTERRUPT2 structure [Display Devices], DXGKARG_CONTROLINTTERUPT2, display.dxgkarg_controlinterrupt2, DXGKARG_CONTROLINTTERUPT2 structure [Display Devices], d3dkmddi/DXGKARG_CONTROLINTERRUPT2, _DXGKARG_CONTROLINTERRUPT2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,9 +60,7 @@ typedef struct _DXGKARG_CONTROLINTERRUPT2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10 and later versions of the Windows operating systems. Available in Windows 10 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

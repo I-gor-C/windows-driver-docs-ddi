@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : F6F758AC-5C8C-4226-B906-972C5BCD7A3E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensorscx/SensorsCxDeviceInitialize, SensorsCxDeviceInitialize, SensorsCxDeviceInitialize function [Sensor Devices], sensors.sensorscxdeviceinitialize
+ms.keywords : SensorsCxDeviceInitialize, sensors.sensorscxdeviceinitialize, SensorsCxDeviceInitialize function [Sensor Devices], sensorscx/SensorsCxDeviceInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,9 @@ This function returns STATUS_SUCCESS when completed successfully. When an invali
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

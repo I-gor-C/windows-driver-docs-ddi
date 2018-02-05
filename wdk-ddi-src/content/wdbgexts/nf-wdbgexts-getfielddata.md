@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e60c2288-fe25-4da5-9b17-6e95a30e7c1c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : wdbgexts/GetFieldData, debugger.getfielddata, WdbgExts_Ref_898dacb4-308c-4a8f-99e2-030adf2b0eae.xml, GetFieldData function [Windows Debugging], GetFieldData
+ms.keywords : debugger.getfielddata, wdbgexts/GetFieldData, GetFieldData, GetFieldData function [Windows Debugging], WdbgExts_Ref_898dacb4-308c-4a8f-99e2-030adf2b0eae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,11 +90,6 @@ If the function succeeds, the return value is zero. Otherwise, the return value 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

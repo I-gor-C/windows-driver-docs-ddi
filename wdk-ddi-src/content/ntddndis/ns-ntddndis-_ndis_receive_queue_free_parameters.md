@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b67e7929-e6b3-4d0b-aff9-943a7fbae8ee
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_receive_queue_free_parameters, NDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, virtual_machine_queue_ref_6084d20e-050b-4e7c-af0e-6ab23269abb0.xml, _NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, ntddndis/NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, *PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS
+ms.keywords : NDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, *PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, _NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, ntddndis/PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, netvista.ndis_receive_queue_free_parameters, NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, virtual_machine_queue_ref_6084d20e-050b-4e7c-af0e-6ab23269abb0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, NDIS_RECEIVE_QUEUE_FREE_PARAMETERS"
+req.typenames : NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, *PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS
 ---
 
 # _NDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure
@@ -75,22 +75,20 @@ An <b>NDIS_RECEIVE_QUEUE_ID</b> type value that contains a receive queue identif
 
 ## Remarks
 The <b>NDIS_RECEIVE_QUEUE_FREE_PARAMETERS</b> structure is used in the 
-    <mshelp:link keywords="netvista.oid_receive_filter_free_queue" tabindex="0">
-    OID_RECEIVE_FILTER_FREE_QUEUE</mshelp:link> OID.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-free-queue">
+    OID_RECEIVE_FILTER_FREE_QUEUE</a> OID.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-free-queue">OID_RECEIVE_FILTER_FREE_QUEUE</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-free-queue">OID_RECEIVE_FILTER_FREE_QUEUE</a>
 
  
 

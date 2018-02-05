@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c38d7eca-6486-4bb1-b0a8-7f69fe13f7db
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : EXTPUSH structure [Print Devices], _EXTPUSH, compstui/EXTPUSH, PEXTPUSH, *PEXTPUSH, EXTPUSH, cpsuifnc_d8f5e9ba-ef61-4adb-959f-1d0ebf456dad.xml, print.extpush, compstui/PEXTPUSH, PEXTPUSH structure pointer [Print Devices]
+ms.keywords : compstui/EXTPUSH, EXTPUSH, PEXTPUSH structure pointer [Print Devices], print.extpush, cpsuifnc_d8f5e9ba-ef61-4adb-959f-1d0ebf456dad.xml, compstui/PEXTPUSH, *PEXTPUSH, PEXTPUSH, EXTPUSH structure [Print Devices], _EXTPUSH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PEXTPUSH, EXTPUSH"
+req.typenames : EXTPUSH, *PEXTPUSH
 ---
 
 # _EXTPUSH structure
@@ -171,9 +171,6 @@ If you do not need CPSUI to display a dialog box when the user clicks on the but
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |
 
 ## See Also

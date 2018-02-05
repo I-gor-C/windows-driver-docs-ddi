@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : F7692594-DE13-4242-926C-F2706FF95E77
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PrintNamedProperty structure [Print Devices], print.printnamedproperty, PrintNamedProperty, winspool/PrintNamedProperty
+ms.keywords : print.printnamedproperty, PrintNamedProperty structure [Print Devices], PrintNamedProperty, winspool/PrintNamedProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winspool.h |

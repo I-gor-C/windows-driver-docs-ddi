@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6112360C-B74F-4A77-8DE5-3EF1AAF49533
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PepIdleCancelNoCState, PEP_PROCESSOR_IDLE_CANCEL_CODE, pep_x/PepIdleCancelWorkPending, pep_x/PepIdleCancelNoCState, *PPEP_PROCESSOR_IDLE_CANCEL_CODE, kernel.pep_processor_idle_cancel_code, pep_x/PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelMax, PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration [Kernel-Mode Driver Architecture], PepIdleCancelDependencyCheckFailed, pep_x/PEP_PROCESSOR_IDLE_CANCEL_CODE, PepIdleCancelMax, PepIdleCancelWorkPending
+ms.keywords : pep_x/PEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration [Kernel-Mode Driver Architecture], PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelMax, PepIdleCancelNoCState, *PPEP_PROCESSOR_IDLE_CANCEL_CODE, kernel.pep_processor_idle_cancel_code, pep_x/PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelWorkPending, PEP_PROCESSOR_IDLE_CANCEL_CODE, pep_x/PepIdleCancelNoCState, PepIdleCancelMax, PepIdleCancelWorkPending
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,9 +83,7 @@ The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_can
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
 ## See Also

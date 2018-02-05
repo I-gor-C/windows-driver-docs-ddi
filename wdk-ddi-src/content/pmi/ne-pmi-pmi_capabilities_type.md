@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 6857f85b-c79a-4e80-a63f-1414aff61d1f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PmiReportedCapabilities, pmi/PmiMeteredHardware, pmi/PMI_CAPABILITIES_TYPE, PmiCapabilitiesMax, PowerMeterRef_4b81a5dd-357b-4a02-acc6-3a0538cbeffb.xml, PmiMeteredHardware, pmi/PmiReportedCapabilities, PMI_CAPABILITIES_TYPE enumeration [Power Metering and Budgeting Devices], PMI_CAPABILITIES_TYPE, powermeter.pmi_capabilities_type, pmi/PmiCapabilitiesMax
+ms.keywords : PmiCapabilitiesMax, PmiMeteredHardware, pmi/PmiCapabilitiesMax, PmiReportedCapabilities, PMI_CAPABILITIES_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiMeteredHardware, pmi/PmiReportedCapabilities, powermeter.pmi_capabilities_type, PMI_CAPABILITIES_TYPE, pmi/PMI_CAPABILITIES_TYPE, PowerMeterRef_4b81a5dd-357b-4a02-acc6-3a0538cbeffb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,20 +77,18 @@ The <b>CapabilityType</b> member of the <a href="..\pmi\ns-pmi-_pmi_capabilities
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
 ## See Also
 
-<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
-
-<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
-
 <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
 
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
+
+<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
 
  
 

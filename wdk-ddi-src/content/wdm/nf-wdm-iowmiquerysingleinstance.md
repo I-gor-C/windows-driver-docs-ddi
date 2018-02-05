@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 742535da-4726-4320-88ec-f6752ad02fb3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMIQuerySingleInstance routine [Kernel-Mode Driver Architecture], wdm/IoWMIQuerySingleInstance, k104_ef4cfbd8-cca3-4ec0-99cd-3715c2ddf52f.xml, IoWMIQuerySingleInstance, kernel.iowmiquerysingleinstance
+ms.keywords : IoWMIQuerySingleInstance, k104_ef4cfbd8-cca3-4ec0-99cd-3715c2ddf52f.xml, kernel.iowmiquerysingleinstance, IoWMIQuerySingleInstance routine [Kernel-Mode Driver Architecture], wdm/IoWMIQuerySingleInstance
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,24 +136,22 @@ To query for multiple WMI classes and instance names, use the <a href="..\wdm\nf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating system. Available in Windows XP and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
-
-<a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a>
 
 <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a>
+
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a>
+
+<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
 
  
 

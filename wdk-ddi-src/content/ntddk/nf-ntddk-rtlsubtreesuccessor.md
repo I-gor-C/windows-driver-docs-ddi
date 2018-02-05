@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : de592c2a-6f52-48ef-b2ee-253d83cafa80
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlsubtreesuccessor, ntddk/RtlSubtreeSuccessor, RtlSubtreeSuccessor, RtlSubtreeSuccessor routine [Installable File System Drivers], rtlref_65e50284-427f-47d9-92c7-719b8bc1bab5.xml
+ms.keywords : RtlSubtreeSuccessor routine [Installable File System Drivers], rtlref_65e50284-427f-47d9-92c7-719b8bc1bab5.xml, RtlSubtreeSuccessor, ifsk.rtlsubtreesuccessor, ntddk/RtlSubtreeSuccessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,24 +72,22 @@ Callers of <b>RtlSubtreeSuccessor</b> must be running at IRQL &lt;= DISPATCH_LEV
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
+<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
 
 <a href="..\ntddk\nf-ntddk-rtlrealsuccessor.md">RtlRealSuccessor</a>
 
-<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
-
 <a href="..\ntddk\nf-ntddk-rtlsubtreepredecessor.md">RtlSubtreePredecessor</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
 
  
 

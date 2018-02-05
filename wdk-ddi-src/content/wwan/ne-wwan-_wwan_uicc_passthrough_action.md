@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4C9293CB-D92D-4C31-929F-16C1B8918933
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanUiccPassThroughEnable, WwanUiccPassThroughDisable, WWAN_UICC_PASSTHROUGH_ACTION enumeration [Network Drivers Starting with Windows Vista], WwanUiccPassThroughActionMaximum, wwan/WWAN_UICC_PASSTHROUGH_ACTION, netvista.wwan_uicc_passthrough_action, wwan/WwanUiccPassThroughDisable, wwan/WwanUiccPassThroughActionMaximum, _WWAN_UICC_PASSTHROUGH_ACTION, WWAN_UICC_PASSTHROUGH_ACTION, *PWWAN_UICC_PASSTHROUGH_ACTION, WwanUiccPassThroughEnable
+ms.keywords : WWAN_UICC_PASSTHROUGH_ACTION enumeration [Network Drivers Starting with Windows Vista], WwanUiccPassThroughActionMaximum, wwan/WwanUiccPassThroughDisable, wwan/WWAN_UICC_PASSTHROUGH_ACTION, netvista.wwan_uicc_passthrough_action, WWAN_UICC_PASSTHROUGH_ACTION, wwan/WwanUiccPassThroughActionMaximum, WwanUiccPassThroughDisable, wwan/WwanUiccPassThroughEnable, _WWAN_UICC_PASSTHROUGH_ACTION, WwanUiccPassThroughEnable, *PWWAN_UICC_PASSTHROUGH_ACTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_UICC_PASSTHROUGH_ACTION, *PWWAN_UICC_PASSTHROUGH_ACTION
+req.typenames : "*PWWAN_UICC_PASSTHROUGH_ACTION, WWAN_UICC_PASSTHROUGH_ACTION"
 req.product : Windows 10 or later.
 ---
 
@@ -76,16 +76,14 @@ typedef enum _WWAN_UICC_PASSTHROUGH_ACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_set_uicc_reset.md">WWAN_SET_UICC_RESET</a>
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-reset-operations">MB UICC reset operations</a>
+
+<a href="..\wwan\ns-wwan-_wwan_set_uicc_reset.md">WWAN_SET_UICC_RESET</a>
 
  
 

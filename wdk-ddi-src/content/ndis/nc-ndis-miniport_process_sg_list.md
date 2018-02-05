@@ -73,8 +73,8 @@ Miniport drivers should ignore this parameter.
 
 A pointer to a scatter/gather list buffer. This is not necessarily the same buffer as the one the
      driver specified in the call to the 
-     <mshelp:link keywords="netvista.ndismallocatenetbuffersglist" tabindex="0"><b>
-     NdisMAllocateNetBufferSGList</b></mshelp:link> function
+     <a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">
+     NdisMAllocateNetBufferSGList</a> function
 
 `Context`
 
@@ -89,8 +89,8 @@ None
 ## Remarks
 
 Miniport drivers call the 
-    <mshelp:link keywords="netvista.ndismregisterscattergatherdma" tabindex="0"><b>
-    NdisMRegisterScatterGatherDma</b></mshelp:link> function to register a 
+    <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
+    NdisMRegisterScatterGatherDma</a> function to register a 
     <i>MiniportProcessSGList</i> function. When a miniport driver calls 
     <b>NdisMAllocateNetBufferSGList</b> to create a scatter/gather list, NDIS calls HAL to create the list.
     After creating the list, NDIS calls the miniport driver's 
@@ -145,21 +145,17 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
+<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
+   NdisMRegisterScatterGatherDma</a>
 
-<mshelp:link keywords="netvista.ndismregisterscattergatherdma" tabindex="0"><b>
-   NdisMRegisterScatterGatherDma</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
 
  
 

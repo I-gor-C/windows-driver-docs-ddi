@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -149,22 +149,18 @@ On return from <b>DxgkCbQueryServices</b>, your DXGK_TIMED_OPERATION_INTERFACE s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | dispmprt.h (include Dispmprt.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538228">AGP Interface</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report Interface</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report Interface</a>
 
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d816b4d7-cc99-4a83-9fd2-c7c0659d0318
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_QUERYAUTHENICATEDCHANNEL, display.d3dddiarg_queryauthenticatedchannel, D3DDDIARG_QUERYAUTHENTICATEDCHANNEL, D3DDDIARG_QUERYAUTHENTICATEDCHANNEL structure [Display Devices], UMDisplayDriver_param_Structs_5c16c40f-b8b6-41cc-9f83-f204d7213760.xml, d3dumddi/D3DDDIARG_QUERYAUTHENTICATEDCHANNEL"
+ms.keywords : D3DDDIARG_QUERYAUTHENTICATEDCHANNEL structure [Display Devices], display.d3dddiarg_queryauthenticatedchannel, d3dumddi/D3DDDIARG_QUERYAUTHENTICATEDCHANNEL, UMDisplayDriver_param_Structs_5c16c40f-b8b6-41cc-9f83-f204d7213760.xml, _D3DDDIARG_QUERYAUTHENICATEDCHANNEL, D3DDDIARG_QUERYAUTHENTICATEDCHANNEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,9 +88,7 @@ The <b>QueryType</b>, <b>hChannel</b>, and <b>SequenceNumber</b> members from th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_QUERYAUTHENTICATEDCHANNEL is supported beginning with the Windows 7 operating system. D3DDDIARG_QUERYAUTHENTICATEDCHANNEL is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

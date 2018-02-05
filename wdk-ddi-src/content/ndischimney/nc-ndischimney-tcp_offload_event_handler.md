@@ -45,8 +45,8 @@ req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 NDIS calls a protocol driver's or intermediate driver's 
   <i>ProtocolIndicateOffloadEvent</i> function to post an indication that was initiated by an underlying
   driver's or offload target's call to the 
-  <mshelp:link keywords="netvista.ndistcpoffloadeventhandler" tabindex="0"><b>
-  NdisTcpOffloadEventHandler</b></mshelp:link> function.
+  <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
+  NdisTcpOffloadEventHandler</a> function.
 
 ## Syntax
 
@@ -80,6 +80,12 @@ The event being indicated as one of the following TCP_OFFLOAD_EVENT_TYPE values:
 
 
 
+#### TcpIndicateAbort
+
+Indicates that the remote host initiated an abortive disconnect by sending an acceptable RST
+       segment on the connection.
+
+
 #### TcpIndicateDisconnect
 
 Indicates that the remote host initiated a graceful disconnect by sending a FIN segment on the
@@ -90,12 +96,6 @@ Indicates that the remote host initiated a graceful disconnect by sending a FIN 
 
 Indicates that the offload target is requesting the host stack to terminate the offload of a TCP
        connection.
-
-
-#### TcpIndicateAbort
-
-Indicates that the remote host initiated an abortive disconnect by sending an acceptable RST
-       segment on the connection.
 
 
 #### TcpIndicateSendBacklogChange
@@ -110,6 +110,11 @@ Specifies additional information about the event being indicated as follows:
 
 
 
+#### TcpIndicateAbort
+
+Not meaningful.
+
+
 #### TcpIndicateDisconnect
 
 Not meaningful.
@@ -119,13 +124,8 @@ Not meaningful.
 
 Indicates the reason for the upload request as a TCP_UPLOAD_REASON value. For more information,
        see 
-       <mshelp:link keywords="netvista.ndistcpoffloadeventhandler" tabindex="0"><b>
-       NdisTcpOffloadEventHandler</b></mshelp:link>.
-
-
-#### TcpIndicateAbort
-
-Not meaningful.
+       <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
+       NdisTcpOffloadEventHandler</a>.
 
 
 #### TcpIndicateSendBacklogChange
@@ -149,8 +149,8 @@ To propagate the indication to the overlying driver or host stack, the intermedi
 The 
       <b>NdisOffloadHandle</b> that the offload target stored in its context for the offloaded TCP connection.
       For more information, see 
-      <mshelp:link keywords="netvista.referencing_offloaded_state_through_an_intermediate_driver" tabindex="0">
-      Referencing Offloaded State Through an Intermediate Driver</mshelp:link>.
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/referencing-offloaded-state-through-an-intermediate-driver">
+      Referencing Offloaded State Through an Intermediate Driver</a>.
 
 </li>
 <li>
@@ -170,14 +170,8 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

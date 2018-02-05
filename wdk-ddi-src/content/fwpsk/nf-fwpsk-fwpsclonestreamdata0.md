@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 66041ccb-e63a-4843-85ec-d93b924bb335
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsCloneStreamData0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCloneStreamData0, FwpsCloneStreamData0, wfp_ref_2_funct_3_fwps_C_e155a116-043a-43e5-af71-db0552806978.xml, netvista.fwpsclonestreamdata0
+ms.keywords : wfp_ref_2_funct_3_fwps_C_e155a116-043a-43e5-af71-db0552806978.xml, FwpsCloneStreamData0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCloneStreamData0, FwpsCloneStreamData0, netvista.fwpsclonestreamdata0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,8 +78,8 @@ A
 A 
      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> pool handle that was obtained from a
      previous call to the 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferpool" tabindex="0"><b>
-     NdisAllocateNetBufferPool</b></mshelp:link> function. This parameter is optional and can be <b>NULL</b>.
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
+     NdisAllocateNetBufferPool</a> function. This parameter is optional and can be <b>NULL</b>.
 
 `allocateCloneFlags`
 
@@ -139,8 +139,8 @@ The
     existing 
     <a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a> data stream. The
     function trims unused data such that a callout driver can successfully pass the cloned chain to the 
-    <mshelp:link keywords="netvista.fwpsstreaminjectasync0" tabindex="0"><b>
-    FwpsStreamInjectAsync0</b></mshelp:link> function.
+    <a href="..\fwpsk\nf-fwpsk-fwpsstreaminjectasync0.md">
+    FwpsStreamInjectAsync0</a> function.
 
 After stream data in the clone NET_BUFFER_LIST structure chain has been successfully injected into the
     network stack, the 
@@ -156,26 +156,23 @@ A callout should call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a>
-
-<a href="..\fwpsk\nf-fwpsk-fwpsstreaminjectasync0.md">FwpsStreamInjectAsync0</a>
-
 <a href="..\fwpsk\nf-fwpsk-fwpsdiscardclonedstreamdata0.md">FwpsDiscardClonedStreamData0</a>
+
+<a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsstreaminjectasync0.md">FwpsStreamInjectAsync0</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 

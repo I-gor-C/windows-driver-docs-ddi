@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILEMERGENCYNUMBER, *LPRILEMERGENCYNUMBER
+req.typenames : "*LPRILEMERGENCYNUMBER, RILEMERGENCYNUMBER"
 ---
 
 # RILEMERGENCYNUMBER structure
@@ -84,7 +84,4 @@ typedef struct _RILEMERGENCYNUMBER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

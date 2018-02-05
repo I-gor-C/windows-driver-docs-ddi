@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 572A2C38-A990-4225-A3FC-6E899A248B1C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SELFTESTRESULT structure [Sensor Devices], gnssdriver/PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT structure pointer [Sensor Devices], gnssdriver/GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT, sensors.gnss_selftestresult
+ms.keywords : sensors.gnss_selftestresult, PGNSS_SELFTESTRESULT structure pointer [Sensor Devices], gnssdriver/GNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT structure [Sensor Devices], *PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT, gnssdriver/PGNSS_SELFTESTRESULT, PGNSS_SELFTESTRESULT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGNSS_SELFTESTRESULT, GNSS_SELFTESTRESULT"
+req.typenames : GNSS_SELFTESTRESULT, *PGNSS_SELFTESTRESULT
 ---
 
 # GNSS_SELFTESTRESULT structure
@@ -104,7 +104,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

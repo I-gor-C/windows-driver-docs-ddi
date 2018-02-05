@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0a097769-0c74-4465-b339-13696b4dbb6b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_switch_nic_oid_request, NDIS_SWITCH_NIC_OID_REQUEST structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_OID_REQUEST, ntddndis/NDIS_SWITCH_NIC_OID_REQUEST, PNDIS_SWITCH_NIC_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_NIC_OID_REQUEST, _NDIS_SWITCH_NIC_OID_REQUEST, NDIS_SWITCH_NIC_OID_REQUEST, *PNDIS_SWITCH_NIC_OID_REQUEST
+ms.keywords : netvista.ndis_switch_nic_oid_request, _NDIS_SWITCH_NIC_OID_REQUEST, *PNDIS_SWITCH_NIC_OID_REQUEST, NDIS_SWITCH_NIC_OID_REQUEST structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_NIC_OID_REQUEST, ntddndis/NDIS_SWITCH_NIC_OID_REQUEST, PNDIS_SWITCH_NIC_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_OID_REQUEST, NDIS_SWITCH_NIC_OID_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -128,9 +128,7 @@ Query the configuration of an underlying physical network adapter by issuing sta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

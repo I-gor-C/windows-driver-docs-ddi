@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c820ee94-29c2-4478-884c-49dd68cd713a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : gdifnc_f7231fd8-33b0-4047-90ba-e5e2c9c37814.xml, GdiGetSpoolFileHandle, winppi/GdiGetSpoolFileHandle, GdiGetSpoolFileHandle function [Print Devices], print.gdigetspoolfilehandle
+ms.keywords : GdiGetSpoolFileHandle, GdiGetSpoolFileHandle function [Print Devices], gdifnc_f7231fd8-33b0-4047-90ba-e5e2c9c37814.xml, winppi/GdiGetSpoolFileHandle, print.gdigetspoolfilehandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,14 +121,10 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

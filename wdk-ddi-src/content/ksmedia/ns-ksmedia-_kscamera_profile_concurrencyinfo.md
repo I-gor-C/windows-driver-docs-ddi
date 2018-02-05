@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4E0A9CE6-2FA0-46A5-B478-C088E5FF1BAD
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_PROFILE_CONCURRENCYINFO, stream.kscamera_profile_concurrencyinfo, KSCAMERA_PROFILE_CONCURRENCYINFO structure [Streaming Media Devices], _KSCAMERA_PROFILE_CONCURRENCYINFO, ksmedia/KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO, PKSCAMERA_PROFILE_CONCURRENCYINFO structure pointer [Streaming Media Devices], ksmedia/PKSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO
+ms.keywords : ksmedia/KSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO structure [Streaming Media Devices], PKSCAMERA_PROFILE_CONCURRENCYINFO structure pointer [Streaming Media Devices], _KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO, ksmedia/PKSCAMERA_PROFILE_CONCURRENCYINFO, PKSCAMERA_PROFILE_CONCURRENCYINFO, stream.kscamera_profile_concurrencyinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO"
+req.typenames : KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO
 ---
 
 # _KSCAMERA_PROFILE_CONCURRENCYINFO structure
@@ -80,7 +80,4 @@ If both <b>Camera.CountOfConcurrency</b> and the <b>Camera.Concurrency</b> field
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

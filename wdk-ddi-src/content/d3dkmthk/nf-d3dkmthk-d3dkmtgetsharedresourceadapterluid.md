@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 880bf5bd-eadc-480f-a10c-f6d57f670857
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTGetSharedResourceAdapterLuid, D3DKMTGetSharedResourceAdapterLuid, display.d3dkmtgetsharedresourceadapterluid, D3DKMTGetSharedResourceAdapterLuid function [Display Devices]
+ms.keywords : display.d3dkmtgetsharedresourceadapterluid, D3DKMTGetSharedResourceAdapterLuid, D3DKMTGetSharedResourceAdapterLuid function [Display Devices], d3dkmthk/D3DKMTGetSharedResourceAdapterLuid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,14 +92,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 

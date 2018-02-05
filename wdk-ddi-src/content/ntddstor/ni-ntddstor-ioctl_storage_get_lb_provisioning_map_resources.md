@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES IOCTL
@@ -71,9 +71,8 @@ If logical block provisioning is enabled on a LUN, resource mapping counts  may 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | ntddstor.h (include Ntddstor.h) |
-| **IRQL** |  |
 
 ## See Also
 

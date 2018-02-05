@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3676476d-babe-4d68-995b-b7068a587bbc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VIDPN_PRESENT_PATH, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH, DmStructs_7cf350db-f1fa-492f-96d2-9ad806f2b75a.xml, D3DKMDT_VIDPN_PRESENT_PATH structure [Display Devices], display.d3dkmdt_vidpn_present_path, _D3DKMDT_VIDPN_PRESENT_PATH
+ms.keywords : D3DKMDT_VIDPN_PRESENT_PATH, D3DKMDT_VIDPN_PRESENT_PATH structure [Display Devices], d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH, _D3DKMDT_VIDPN_PRESENT_PATH, DmStructs_7cf350db-f1fa-492f-96d2-9ad806f2b75a.xml, display.d3dkmdt_vidpn_present_path
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -111,9 +111,7 @@ A video present path represents a connection between a video present source (vie
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

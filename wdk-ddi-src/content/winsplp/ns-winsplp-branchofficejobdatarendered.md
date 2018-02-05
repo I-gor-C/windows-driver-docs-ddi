@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 67A296B3-5D59-475E-9026-EDAB90C8E3DD
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PBranchOfficeJobDataRendered, BranchOfficeJobDataRendered, PBranchOfficeJobDataRendered structure pointer [Print Devices], BranchOfficeJobDataRendered structure [Print Devices], *PBranchOfficeJobDataRendered, winsplp/PBranchOfficeJobDataRendered, print.branchofficejobdatarendered, winsplp/BranchOfficeJobDataRendered
+ms.keywords : winsplp/PBranchOfficeJobDataRendered, BranchOfficeJobDataRendered structure [Print Devices], *PBranchOfficeJobDataRendered, PBranchOfficeJobDataRendered structure pointer [Print Devices], PBranchOfficeJobDataRendered, winsplp/BranchOfficeJobDataRendered, print.branchofficejobdatarendered, BranchOfficeJobDataRendered
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,7 +90,4 @@ Describes the <b>short</b> type member <b>YResolution</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h |

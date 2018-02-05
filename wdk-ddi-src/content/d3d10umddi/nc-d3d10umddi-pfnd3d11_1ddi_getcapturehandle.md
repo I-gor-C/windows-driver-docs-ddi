@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -62,7 +62,7 @@ A handle to the display device (graphics context).
 
 `*pHandleData`
 
-
+A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-_d3d11_1ddi_getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure that defines the resource allocation.
 
 
 ## Return Value
@@ -77,14 +77,9 @@ Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

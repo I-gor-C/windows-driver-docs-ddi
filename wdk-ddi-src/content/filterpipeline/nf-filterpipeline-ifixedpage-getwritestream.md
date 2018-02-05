@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1a095d51-b727-4d89-aa7c-f43998db4c2e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IFixedPage, GetWriteStream method [Print Devices], filterpipeline/IFixedPage::GetWriteStream, IFixedPage interface [Print Devices], GetWriteStream method, GetWriteStream method [Print Devices], IFixedPage interface, IFixedPage::GetWriteStream, print.ifixedpage_getwritestream, GetWriteStream, filterpipeline_f253c020-8d3d-44c1-a9fb-e5093c29a637.xml
+ms.keywords : IFixedPage, IFixedPage::GetWriteStream, GetWriteStream, print.ifixedpage_getwritestream, filterpipeline/IFixedPage::GetWriteStream, IFixedPage interface [Print Devices], GetWriteStream method, filterpipeline_f253c020-8d3d-44c1-a9fb-e5093c29a637.xml, GetWriteStream method [Print Devices], GetWriteStream method [Print Devices], IFixedPage interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ The stream that the filter should use to write page markup to send data.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

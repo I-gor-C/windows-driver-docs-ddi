@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ec1db013-b630-421b-8d22-385a2d9b9510
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportsetbusdatabyoffset, StorPortSetBusDataByOffset, storport/StorPortSetBusDataByOffset, StorPortSetBusDataByOffset routine [Storage Devices], storprt_ebb2afc1-b190-4674-8ee7-bd61953565ab.xml
+ms.keywords : storage.storportsetbusdatabyoffset, storport/StorPortSetBusDataByOffset, storprt_ebb2afc1-b190-4674-8ee7-bd61953565ab.xml, StorPortSetBusDataByOffset, StorPortSetBusDataByOffset routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,14 +100,9 @@ Indicates the length, in bytes, of the maximum amount of data to return.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

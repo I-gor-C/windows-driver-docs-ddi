@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cb48d1a3-65ef-49f7-b6e5-b3dabf989779
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsiwmi/ScsiPortWmiFireAdapterEvent, ScsiPortWmiFireAdapterEvent, storage.scsiportwmifireadapterevent, ScsiPortWmiFireAdapterEvent macro [Storage Devices], scsiprt_39ab704d-53a4-46d4-9196-f545710692ae.xml
+ms.keywords : ScsiPortWmiFireAdapterEvent macro [Storage Devices], scsiprt_39ab704d-53a4-46d4-9196-f545710692ae.xml, storage.scsiportwmifireadapterevent, scsiwmi/ScsiPortWmiFireAdapterEvent, ScsiPortWmiFireAdapterEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -90,14 +90,9 @@ This routine is a simplified version of the <a href="..\scsiwmi\nf-scsiwmi-scsip
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | scsiwmi.h |
 
 ## See Also
 

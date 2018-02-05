@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 8492CCCB-2BA9-419D-A22F-DE06D08D4CC7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_clx_processadddevicepredevicecreate, gpioclx/GPIO_CLX_ProcessAddDevicePreDeviceCreate, GPIO_CLX_ProcessAddDevicePreDeviceCreate method [Parallel Ports], GPIO_CLX_ProcessAddDevicePreDeviceCreate
+ms.keywords : GPIO_CLX_ProcessAddDevicePreDeviceCreate, GPIO.gpio_clx_processadddevicepredevicecreate, GPIO_CLX_ProcessAddDevicePreDeviceCreate method [Parallel Ports], gpioclx/GPIO_CLX_ProcessAddDevicePreDeviceCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,26 +106,23 @@ Your GPIO controller driver must call this method in its <a href="..\wdfdriver\n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | gpioclx.h |
-| **Library** |  |
+| **Library** | Msgpioclxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
-
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439484">GPIO_CLX_ProcessAddDevicePostDeviceCreate</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
  
 

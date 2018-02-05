@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 75144188-728b-4613-ac69-8cadf0f60233
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetCurrentIrpStackLocation routine [Kernel-Mode Driver Architecture], IoGetCurrentIrpStackLocation, k104_f92e53c7-8a26-4cb0-859b-b0a7be4dce6a.xml, kernel.iogetcurrentirpstacklocation, wdm/IoGetCurrentIrpStackLocation
+ms.keywords : IoGetCurrentIrpStackLocation routine [Kernel-Mode Driver Architecture], kernel.iogetcurrentirpstacklocation, k104_f92e53c7-8a26-4cb0-859b-b0a7be4dce6a.xml, IoGetCurrentIrpStackLocation, wdm/IoGetCurrentIrpStackLocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,22 +71,19 @@ If a driver is passing the same parameters that it received to the next-lower dr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
 
-<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 
 <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a>
 

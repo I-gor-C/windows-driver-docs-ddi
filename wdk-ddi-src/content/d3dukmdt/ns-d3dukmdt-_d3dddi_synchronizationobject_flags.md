@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 57e5ea18-ccdd-40a7-9ff5-4d6b94908e7c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3D_other_Structs_3d266c5b-53c9-47d1-abe9-f492d05660a4.xml, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, display.d3dddi_synchronizationobject_flags, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure [Display Devices], _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
+ms.keywords : "_D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3D_other_Structs_3d266c5b-53c9-47d1-abe9-f492d05660a4.xml, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure [Display Devices], display.d3dddi_synchronizationobject_flags"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -87,20 +87,18 @@ Drivers should follow these guidelines on <b>D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS is supported beginning with the Windows 7 operating system. D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtshareobjects.md">D3DKMTShareObjects</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md">D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS</a>
-
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtshareobjects.md">D3DKMTShareObjects</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocationflags.md">D3DKMT_CREATEALLOCATIONFLAGS</a>
 

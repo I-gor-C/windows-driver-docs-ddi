@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 0a575614-38a7-484c-909c-2e762dc7cbb4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CWiauFormatConverter method [Imaging Devices], image.cwiauformatconverter_cwiauformatconverter, wiautil/CWiauFormatConverter::CWiauFormatConverter, CWiauFormatConverter interface [Imaging Devices], CWiauFormatConverter method, CWiauFormatConverter, CWiauFormatConverter method [Imaging Devices], CWiauFormatConverter interface, wiauFncs_6da3d902-58a2-4507-b565-8dcb0a85cbd7.xml, CWiauFormatConverter::CWiauFormatConverter
+ms.keywords : wiauFncs_6da3d902-58a2-4507-b565-8dcb0a85cbd7.xml, CWiauFormatConverter method [Imaging Devices], CWiauFormatConverter interface, wiautil/CWiauFormatConverter::CWiauFormatConverter, CWiauFormatConverter::CWiauFormatConverter, CWiauFormatConverter method [Imaging Devices], CWiauFormatConverter interface [Imaging Devices], CWiauFormatConverter method, image.cwiauformatconverter_cwiauformatconverter, CWiauFormatConverter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -61,14 +61,10 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 

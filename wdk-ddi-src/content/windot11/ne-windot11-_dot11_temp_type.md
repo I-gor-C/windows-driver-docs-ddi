@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 73275e2e-b738-4adc-b89e-2cd152de6c75
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_TEMP_TYPE, windot11/dot11_temp_type_1, Native_802.11_data_types_5b580f41-75a6-4d16-9ea5-cc3dc3622a84.xml, netvista.dot11_temp_type, dot11_temp_type_unknown, PDOT11_TEMP_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], *PDOT11_TEMP_TYPE, dot11_temp_type_1, dot11_temp_type_2, DOT11_TEMP_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/DOT11_TEMP_TYPE, windot11/dot11_temp_type_2, PDOT11_TEMP_TYPE, DOT11_TEMP_TYPE, _DOT11_TEMP_TYPE, windot11/dot11_temp_type_unknown
+ms.keywords : PDOT11_TEMP_TYPE, DOT11_TEMP_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/DOT11_TEMP_TYPE, windot11/PDOT11_TEMP_TYPE, dot11_temp_type_unknown, windot11/dot11_temp_type_1, Native_802.11_data_types_5b580f41-75a6-4d16-9ea5-cc3dc3622a84.xml, netvista.dot11_temp_type, _DOT11_TEMP_TYPE, windot11/dot11_temp_type_unknown, *PDOT11_TEMP_TYPE, dot11_temp_type_2, dot11_temp_type_1, PDOT11_TEMP_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], DOT11_TEMP_TYPE, windot11/dot11_temp_type_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,7 @@ There are different operating temperature requirements dependent on the anticipa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also

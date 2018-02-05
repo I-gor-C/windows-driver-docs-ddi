@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ee719cbe-0933-4adc-b5c7-62b66f2bf4e1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kocreateinstance, KoCreateInstance, KoCreateInstance function [Streaming Media Devices], kcom/KoCreateInstance, ksfunc_57c8ab23-3163-4ef8-a381-bd81ce01d18e.xml
+ms.keywords : KoCreateInstance function [Streaming Media Devices], KoCreateInstance, stream.kocreateinstance, kcom/KoCreateInstance, ksfunc_57c8ab23-3163-4ef8-a381-bd81ce01d18e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,11 +87,6 @@ Returns STATUS_SUCCESS if the instance was successfully created. Otherwise, it r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | kcom.h (include Kcom.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

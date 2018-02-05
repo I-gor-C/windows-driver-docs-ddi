@@ -99,22 +99,17 @@ Indicates that the miniport driver successfully started the datapath components.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | dot11wdi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\dot11wdi\ns-dot11wdi-_tal_txrx_parameters.md">TAL_TXRX_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/5B40171C-4E5F-4C35-A6E7-1EA5181C02E8">WDI general datapath interfaces</a>
 
 <a href="..\dot11wdi\ns-dot11wdi-_wdi_txrx_target_configuration.md">WDI_TXRX_TARGET_CONFIGURATION</a>
 
-<a href="https://msdn.microsoft.com/5B40171C-4E5F-4C35-A6E7-1EA5181C02E8">WDI general datapath interfaces</a>
+<a href="..\dot11wdi\ns-dot11wdi-_tal_txrx_parameters.md">TAL_TXRX_PARAMETERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt297625">TAL_TXRX_HANDLE</a>
 

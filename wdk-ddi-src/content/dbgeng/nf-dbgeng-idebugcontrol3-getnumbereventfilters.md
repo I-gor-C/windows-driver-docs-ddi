@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6bb80c64-bb2e-4388-b1a8-479bdaa8b635
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetNumberEventFilters method [Windows Debugging], IDebugControl interface, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetNumberEventFilters, IDebugControl3, IDebugControl2::GetNumberEventFilters, IDebugControl3 interface [Windows Debugging], GetNumberEventFilters method, IDebugControl2 interface [Windows Debugging], GetNumberEventFilters method, IDebugControl::GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl_de1a980a-b0cb-486b-a292-1a9463a231c6.xml, GetNumberEventFilters, dbgeng/IDebugControl3::GetNumberEventFilters, IDebugControl interface [Windows Debugging], GetNumberEventFilters method, GetNumberEventFilters method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetNumberEventFilters, dbgeng/IDebugControl::GetNumberEventFilters, debugger.getnumbereventfilters
+ms.keywords : dbgeng/IDebugControl2::GetNumberEventFilters, IDebugControl3 interface [Windows Debugging], GetNumberEventFilters method, dbgeng/IDebugControl::GetNumberEventFilters, dbgeng/IDebugControl3::GetNumberEventFilters, IDebugControl3, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetNumberEventFilters method, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetNumberEventFilters, IDebugControl_de1a980a-b0cb-486b-a292-1a9463a231c6.xml, GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl interface, IDebugControl::GetNumberEventFilters, IDebugControl2::GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetNumberEventFilters method, debugger.getnumbereventfilters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,11 +95,6 @@ For more information about event filters, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

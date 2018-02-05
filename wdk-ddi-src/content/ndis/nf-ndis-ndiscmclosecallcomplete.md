@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : caf248e0-ec9a-4c85-86f7-f35c715c6e39
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmCloseCallComplete, NdisCmCloseCallComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmCloseCallComplete, netvista.ndiscmclosecallcomplete, condis_call_manager_ref_9380a315-f44c-4f6d-914f-480408c8d804.xml
+ms.keywords : NdisCmCloseCallComplete function [Network Drivers Starting with Windows Vista], netvista.ndiscmclosecallcomplete, ndis/NdisCmCloseCallComplete, NdisCmCloseCallComplete, condis_call_manager_ref_9380a315-f44c-4f6d-914f-480408c8d804.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,8 +67,8 @@ Specifies the handle to the VC for the call. This handle was supplied by NDIS wh
      <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>. More recently, the call
      manager obtained this handle from its per-VC state designated by the 
      <i>CallMgrVcContext</i> passed as an input parameter to its 
-     <mshelp:link keywords="netvista.protocolcmclosecall" tabindex="0"><i>
-     ProtocolCmCloseCall</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_cm_close_call.md">
+     ProtocolCmCloseCall</a> function.
 
 `NdisPartyHandle`
 
@@ -90,8 +90,8 @@ If a stand-alone call manager's
     <b>NdisCmCloseCallComplete</b> subsequently to notify the client and NDIS that its attempt to break the
     connection has completed, whether successfully or with an error. A call to 
     <b>NdisCmCloseCallComplete</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclclosecallcomplete" tabindex="0"><i>
-    ProtocolClCloseCallComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">
+    ProtocolClCloseCallComplete</a> function.
 
 If it passes NDIS_STATUS_SUCCESS as the 
     <i>Status</i>, the call manager should consider the 
@@ -114,26 +114,24 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmCloseCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmCloseCallComplete (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmCloseCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmCloseCallComplete (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
 <a href="..\ndis\nf-ndis-ndismcmclosecallcomplete.md">NdisMCmCloseCallComplete</a>
 
-<a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
 <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+<a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
+
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90cec61b-fe49-4fc7-b666-e74f745a00b1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_SampleFieldSingleEven, dxva/DXVA_SampleFieldInterleavedOddFirst, dxva/DXVA_SampleFormat, DXVA_SampleUnknown, DXVA_SamplePreviousFrame, display.dxva_sampleformat, _DXVA_SampleFormat, dxva/DXVA_SampleFieldSingleOdd, dxva/DXVA_SampleProgressiveFrame, dxva/DXVA_SampleFormatMask, DXVA_SampleFormatMask, dxva/DXVA_SamplePreviousFrame, DXVA_SampleFieldInterleavedOddFirst, DXVA_SampleFieldInterleavedEvenFirst, DXVA_SampleProgressiveFrame, DXVA_SampleSubStream, dxva/DXVA_SampleUnknown, dxva/DXVA_SampleSubStream, DXVA_SampleFieldSingleOdd, DXVA_SampleFormat, dxvaref_342ab3ab-8498-4d6f-a052-aff84c407436.xml, DXVA_SampleFormat enumeration [Display Devices], dxva/DXVA_SampleFieldInterleavedEvenFirst, dxva/DXVA_SampleFieldSingleEven
+ms.keywords : dxva/DXVA_SampleFieldInterleavedEvenFirst, DXVA_SampleFormat, display.dxva_sampleformat, DXVA_SampleFieldSingleOdd, dxva/DXVA_SampleFieldSingleEven, DXVA_SampleFieldSingleEven, DXVA_SampleFormatMask, DXVA_SampleUnknown, DXVA_SampleSubStream, dxva/DXVA_SampleSubStream, dxva/DXVA_SampleFormatMask, _DXVA_SampleFormat, DXVA_SampleFieldInterleavedOddFirst, dxvaref_342ab3ab-8498-4d6f-a052-aff84c407436.xml, DXVA_SampleFieldInterleavedEvenFirst, dxva/DXVA_SamplePreviousFrame, dxva/DXVA_SampleFieldInterleavedOddFirst, dxva/DXVA_SampleFormat, dxva/DXVA_SampleFieldSingleOdd, DXVA_SampleFormat enumeration [Display Devices], DXVA_SamplePreviousFrame, dxva/DXVA_SampleProgressiveFrame, dxva/DXVA_SampleUnknown, DXVA_SampleProgressiveFrame
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -112,18 +112,15 @@ Specifies that the sample contains a video substream.</td>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
 
 <a href="..\dxva\ns-dxva-_dxva_videosample.md">DXVA_VideoSample</a>
 
-<a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
+<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
 
  
 

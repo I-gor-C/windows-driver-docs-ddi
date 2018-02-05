@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 29b26400-9b27-4bff-9c7e-d612d250da30
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_PicResample, dxva/DXVA_PicResample, display.dxva_picresample, _DXVA_PicResample, LPDXVA_PicResample structure pointer [Display Devices], dxvaref_523256d7-10ef-4750-a065-bd4bb02c1fbe.xml, LPDXVA_PicResample, DXVA_PicResample structure [Display Devices], *LPDXVA_PicResample, dxva/LPDXVA_PicResample
+ms.keywords : display.dxva_picresample, *LPDXVA_PicResample, _DXVA_PicResample, DXVA_PicResample structure [Display Devices], dxvaref_523256d7-10ef-4750-a065-bd4bb02c1fbe.xml, dxva/DXVA_PicResample, DXVA_PicResample, dxva/LPDXVA_PicResample, LPDXVA_PicResample structure pointer [Display Devices], LPDXVA_PicResample
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDXVA_PicResample, DXVA_PicResample"
+req.typenames : DXVA_PicResample, *LPDXVA_PicResample
 ---
 
 # _DXVA_PicResample structure
@@ -113,7 +113,4 @@ In the case of H.263 Annex O Spatial Scalability, the value of <b>wPicResampleRc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |

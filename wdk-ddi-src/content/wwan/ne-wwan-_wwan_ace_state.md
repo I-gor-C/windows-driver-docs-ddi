@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6BF63894-58D6-4C7C-B3D9-D4D9D19A686B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_ACE_STATE, WWAN_ACE_STATE, WwanAutoOn, *PWWAN_ACE_STATE, WwanAutoOff, wwan/WwanManualOn, WWAN_ACE_STATE enumeration [Network Drivers Starting with Windows Vista], _WWAN_ACE_STATE, WwanManualOn, wwan/WwanAutoOff, WwanManualOff, netvista.wwan_ace_state, wwan/WwanManualOff, wwan/WwanAutoOn
+ms.keywords : WWAN_ACE_STATE enumeration [Network Drivers Starting with Windows Vista], _WWAN_ACE_STATE, netvista.wwan_ace_state, *PWWAN_ACE_STATE, wwan/WwanManualOff, wwan/WWAN_ACE_STATE, WwanManualOff, WWAN_ACE_STATE, wwan/WwanAutoOff, WwanManualOn, wwan/WwanAutoOn, WwanAutoOn, WwanAutoOff, wwan/WwanManualOn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,5 @@ typedef enum _WWAN_ACE_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 20446E2D-94D3-43D6-ABBF-2FA15F089659
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : PushOutputLinePrefix method [Windows Debugging], IDebugClient5 interface, PushOutputLinePrefix, IDebugClient5 interface [Windows Debugging], PushOutputLinePrefix method, IDebugClient5::PushOutputLinePrefix, PushOutputLinePrefix method [Windows Debugging], dbgeng/IDebugClient5::PushOutputLinePrefix, debugger.idebugclient5_pushoutputlineprefix, IDebugClient5
+ms.keywords : PushOutputLinePrefix method [Windows Debugging], PushOutputLinePrefix, IDebugClient5::PushOutputLinePrefix, IDebugClient5 interface [Windows Debugging], PushOutputLinePrefix method, debugger.idebugclient5_pushoutputlineprefix, PushOutputLinePrefix method [Windows Debugging], IDebugClient5 interface, IDebugClient5, dbgeng/IDebugClient5::PushOutputLinePrefix
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

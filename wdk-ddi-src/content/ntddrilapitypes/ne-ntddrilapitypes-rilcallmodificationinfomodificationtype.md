@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 37b18047-7818-4e57-b25a-3c958106e215
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILCALLMODIFICATIONINFOMODIFICATIONTYPE, ntddrilapitypes/RIL_CALLMODIFICATIONTYPE_MODIFIED, RIL_CALLMODIFICATIONTYPE_MAX, ntddrilapitypes/RIL_CALLMODIFICATIONTYPE_BLOCKED, ntddrilapitypes/RIL_CALLMODIFICATIONTYPE_MAX, RILCALLMODIFICATIONINFOMODIFICATIONTYPE, RIL_CALLMODIFICATIONTYPE_BLOCKED, netvista.rilcallmodificationinfomodificationtype, RILCALLMODIFICATIONINFOMODIFICATIONTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMODIFICATIONTYPE_MODIFIED
+ms.keywords : ntddrilapitypes/RIL_CALLMODIFICATIONTYPE_BLOCKED, RIL_CALLMODIFICATIONTYPE_MAX, netvista.rilcallmodificationinfomodificationtype, RIL_CALLMODIFICATIONTYPE_MODIFIED, ntddrilapitypes/RILCALLMODIFICATIONINFOMODIFICATIONTYPE, RIL_CALLMODIFICATIONTYPE_BLOCKED, ntddrilapitypes/RIL_CALLMODIFICATIONTYPE_MAX, RILCALLMODIFICATIONINFOMODIFICATIONTYPE, ntddrilapitypes/RIL_CALLMODIFICATIONTYPE_MODIFIED, RILCALLMODIFICATIONINFOMODIFICATIONTYPE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -79,7 +79,4 @@ typedef enum _RILCALLMODIFICATIONINFOMODIFICATIONTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

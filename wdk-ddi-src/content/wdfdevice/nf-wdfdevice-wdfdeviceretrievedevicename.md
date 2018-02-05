@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 26fdc802-e28b-47a0-b248-5403d024fea3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceRetrieveDeviceName, WdfDeviceRetrieveDeviceName method, wdf.wdfdeviceretrievedevicename, WdfDeviceRetrieveDeviceName, PFN_WDFDEVICERETRIEVEDEVICENAME, DFDeviceObjectGeneralRef_8c3bab28-12f1-456b-a972-37444e81c847.xml, kmdf.wdfdeviceretrievedevicename
+ms.keywords : PFN_WDFDEVICERETRIEVEDEVICENAME, wdf.wdfdeviceretrievedevicename, DFDeviceObjectGeneralRef_8c3bab28-12f1-456b-a972-37444e81c847.xml, WdfDeviceRetrieveDeviceName, wdfdevice/WdfDeviceRetrieveDeviceName, kmdf.wdfdeviceretrievedevicename, WdfDeviceRetrieveDeviceName method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,22 +99,20 @@ To obtain the device name string from the string object, the driver can call <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignname.md">WdfDeviceInitAssignName</a>
 
 <a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignname.md">WdfDeviceInitAssignName</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
 
  
 

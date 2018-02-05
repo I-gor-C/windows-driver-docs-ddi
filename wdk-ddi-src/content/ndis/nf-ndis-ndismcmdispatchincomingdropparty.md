@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4549b6f4-5138-4724-959c-a36b38c319fd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmDispatchIncomingDropParty, ndis/NdisMCmDispatchIncomingDropParty, NdisMCmDispatchIncomingDropParty macro [Network Drivers Starting with Windows Vista], netvista.ndismcmdispatchincomingdropparty, condis_mcm_ref_1a170d75-7913-4068-b047-206b531d42c6.xml
+ms.keywords : NdisMCmDispatchIncomingDropParty, condis_mcm_ref_1a170d75-7913-4068-b047-206b531d42c6.xml, ndis/NdisMCmDispatchIncomingDropParty, netvista.ndismcmdispatchincomingdropparty, NdisMCmDispatchIncomingDropParty macro [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -93,13 +93,13 @@ However, an MCM driver also can call
 
 A call to 
     <b>NdisMCmDispatchIncomingDropParty</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclincomingdropparty" tabindex="0"><i>
-    ProtocolClIncomingDropParty</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">
+    ProtocolClIncomingDropParty</a> function.
 
 If the 
     <i>NdisPartyHandle</i> identifies the last remaining party on the given VC, the MCM driver calls 
-    <mshelp:link keywords="netvista.ndismcmdispatchincomingclosecall" tabindex="0"><b>
-    NdisMCmDispatchIncomingCloseCall</b></mshelp:link>, rather than 
+    <a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
+    NdisMCmDispatchIncomingCloseCall</a>, rather than 
     <b>NdisMCmDispatchIncomingDropParty</b>.
 
 Only connection-oriented miniport drivers that provide integrated call-management support can call 
@@ -110,28 +110,26 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
+   NdisMCmDispatchIncomingCloseCall</a>
+
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
 
-<mshelp:link keywords="netvista.ndiscmdispatchincomingdropparty" tabindex="0"><b>
-   NdisCmDispatchIncomingDropParty</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingdropparty.md">
+   NdisCmDispatchIncomingDropParty</a>
 
 <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-
-<mshelp:link keywords="netvista.ndismcmdispatchincomingclosecall" tabindex="0"><b>
-   NdisMCmDispatchIncomingCloseCall</b></mshelp:link>
 
  
 

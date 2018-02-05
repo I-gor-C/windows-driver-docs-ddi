@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 611bddf9-befd-4d2f-8e7d-7b5fe0744c03
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_URB_PIPE_REQUEST, buses._urb_pipe_request, _URB_PIPE_REQUEST structure [Buses], usbstrct_dfcdbce6-e230-46a8-88df-59a253e6bfa0.xml, usb/_URB_PIPE_REQUEST"
+ms.keywords : usb/_URB_PIPE_REQUEST, _URB_PIPE_REQUEST structure [Buses], _URB_PIPE_REQUEST, buses._urb_pipe_request, usbstrct_dfcdbce6-e230-46a8-88df-59a253e6bfa0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,18 +83,15 @@ The reserved members of this structure must be treated as opaque and are reserve
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
 ## See Also
 
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 
  
 

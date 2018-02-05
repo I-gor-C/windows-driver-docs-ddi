@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : e8b99549-0fe2-4c8a-ad93-6689ebddee40
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iunregisterphysicalconnection_unregisterphysicalconnection, IUnregisterPhysicalConnection, IUnregisterPhysicalConnection interface [Audio Devices], UnregisterPhysicalConnection method, UnregisterPhysicalConnection method [Audio Devices], IUnregisterPhysicalConnection interface, IUnregisterPhysicalConnection::UnregisterPhysicalConnection, audmp-routines_5ecc7a84-6d2c-4514-9de8-cb1e4c60a61c.xml, UnregisterPhysicalConnection method [Audio Devices], portcls/IUnregisterPhysicalConnection::UnregisterPhysicalConnection, UnregisterPhysicalConnection
+ms.keywords : UnregisterPhysicalConnection, audmp-routines_5ecc7a84-6d2c-4514-9de8-cb1e4c60a61c.xml, IUnregisterPhysicalConnection::UnregisterPhysicalConnection, IUnregisterPhysicalConnection interface [Audio Devices], UnregisterPhysicalConnection method, UnregisterPhysicalConnection method [Audio Devices], portcls/IUnregisterPhysicalConnection::UnregisterPhysicalConnection, audio.iunregisterphysicalconnection_unregisterphysicalconnection, UnregisterPhysicalConnection method [Audio Devices], IUnregisterPhysicalConnection interface, IUnregisterPhysicalConnection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -88,14 +88,10 @@ For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -103,9 +99,9 @@ For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
-
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 692d3336-d9cd-438b-a52c-ae4c55070227
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTWaitForSynchronizationObject2 function [Display Devices], D3DKMTWaitForSynchronizationObject2, display.d3dkmtwaitforsynchronizationobject2, OpenGL_Functions_4453dc1e-8824-494e-9a74-2d3628f1ff81.xml, d3dkmthk/D3DKMTWaitForSynchronizationObject2
+ms.keywords : d3dkmthk/D3DKMTWaitForSynchronizationObject2, D3DKMTWaitForSynchronizationObject2, OpenGL_Functions_4453dc1e-8824-494e-9a74-2d3628f1ff81.xml, D3DKMTWaitForSynchronizationObject2 function [Display Devices], display.d3dkmtwaitforsynchronizationobject2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,14 +106,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTWaitForSynchronizationObject2 is supported beginning with the Windows 7 operating system. D3DKMTWaitForSynchronizationObject2 is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

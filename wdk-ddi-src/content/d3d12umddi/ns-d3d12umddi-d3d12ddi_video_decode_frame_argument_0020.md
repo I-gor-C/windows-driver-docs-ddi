@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5651BDA8-256F-4041-A8BB-E3B30DB1870C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020, display.d3d12ddi_video_decode_frame_parameter, d3d12umddi/D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020, D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020 structure [Display Devices]
+ms.keywords : D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020, d3d12umddi/D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020, D3D12DDI_VIDEO_DECODE_FRAME_ARGUMENT_0020 structure [Display Devices], display.d3d12ddi_video_decode_frame_parameter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ The type of the parameter.  For more information, see the <a href="..\d3d12umddi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
 ## See Also

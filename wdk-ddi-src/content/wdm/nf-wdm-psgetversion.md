@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : db3d2e34-3d83-423d-b446-2800d53a8220
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PsGetVersion, kernel.psgetversion, k108_3c73c1e7-3f02-4598-adae-43c378dcfb08.xml, PsGetVersion function [Kernel-Mode Driver Architecture], PsGetVersion
+ms.keywords : PsGetVersion function [Kernel-Mode Driver Architecture], wdm/PsGetVersion, kernel.psgetversion, PsGetVersion, k108_3c73c1e7-3f02-4598-adae-43c378dcfb08.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,11 +116,10 @@ To retrieve the current service-pack number, it is easier and more efficient to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |

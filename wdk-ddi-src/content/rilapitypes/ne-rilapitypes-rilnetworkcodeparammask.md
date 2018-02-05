@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 10842352-4201-477f-b1ea-8ed9181a6012
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILNETWORKCODEPARAMMASK, rilapitypes/RIL_PARAM_NETWORKCODE_SID, RILNETWORKCODEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_NETWORKCODE_MNC, RIL_PARAM_NETWORKCODE_SID, RIL_PARAM_NETWORKCODE_NID, rilapitypes/RIL_PARAM_NETWORKCODE_MCC, rilapitypes/RIL_PARAM_NETWORKCODE_NID, RIL_PARAM_NETWORKCODE_MNC, rilapitypes/RIL_PARAM_NETWORKCODE_ALL, RIL_PARAM_NETWORKCODE_RI, rilapitypes/RIL_PARAM_NETWORKCODE_RI, rilapitypes/RILNETWORKCODEPARAMMASK, RIL_PARAM_NETWORKCODE_EXECUTOR, RIL_PARAM_NETWORKCODE_ALL, netvista.rilnetworkcodeparammask, rilapitypes/RIL_PARAM_NETWORKCODE_EXECUTOR, RIL_PARAM_NETWORKCODE_MCC
+ms.keywords : RIL_PARAM_NETWORKCODE_EXECUTOR, RIL_PARAM_NETWORKCODE_SID, RIL_PARAM_NETWORKCODE_ALL, rilapitypes/RIL_PARAM_NETWORKCODE_ALL, rilapitypes/RIL_PARAM_NETWORKCODE_MCC, rilapitypes/RIL_PARAM_NETWORKCODE_NID, netvista.rilnetworkcodeparammask, RIL_PARAM_NETWORKCODE_NID, RIL_PARAM_NETWORKCODE_MNC, RIL_PARAM_NETWORKCODE_RI, rilapitypes/RIL_PARAM_NETWORKCODE_SID, RILNETWORKCODEPARAMMASK, RIL_PARAM_NETWORKCODE_MCC, rilapitypes/RIL_PARAM_NETWORKCODE_RI, RILNETWORKCODEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_NETWORKCODE_MNC, rilapitypes/RIL_PARAM_NETWORKCODE_EXECUTOR, rilapitypes/RILNETWORKCODEPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -100,9 +100,6 @@ enum RILNETWORKCODEPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6dae69b1-ff48-4d43-bc01-e7ad7bb7acc9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_OPENALLOCATIONFLAGS, display.dxgk_openallocationflags, d3dkmddi/DXGK_OPENALLOCATIONFLAGS, _DXGK_OPENALLOCATIONFLAGS, DmStructs_3b5228f0-93fa-434a-b2ca-9007c372d9ed.xml, DXGK_OPENALLOCATIONFLAGS structure [Display Devices]
+ms.keywords : "_DXGK_OPENALLOCATIONFLAGS, DXGK_OPENALLOCATIONFLAGS structure [Display Devices], display.dxgk_openallocationflags, DmStructs_3b5228f0-93fa-434a-b2ca-9007c372d9ed.xml, DXGK_OPENALLOCATIONFLAGS, d3dkmddi/DXGK_OPENALLOCATIONFLAGS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,9 +62,7 @@ typedef struct _DXGK_OPENALLOCATIONFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

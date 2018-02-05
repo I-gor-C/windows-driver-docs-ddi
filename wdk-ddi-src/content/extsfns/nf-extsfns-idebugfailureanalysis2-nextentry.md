@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B5640B86-D931-4A26-85F2-BBE18620668C
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : NextEntry method [Windows Debugging], extsfns/IDebugFailureAnalysis2::NextEntry, debugger.idebugfailureanalysis2_nextentry, IDebugFailureAnalysis2, IDebugFailureAnalysis2::NextEntry, NextEntry method [Windows Debugging], IDebugFailureAnalysis2 interface, NextEntry, IDebugFailureAnalysis2 interface [Windows Debugging], NextEntry method
+ms.keywords : IDebugFailureAnalysis2, IDebugFailureAnalysis2::NextEntry, NextEntry method [Windows Debugging], NextEntry method [Windows Debugging], IDebugFailureAnalysis2 interface, NextEntry, IDebugFailureAnalysis2 interface [Windows Debugging], NextEntry method, debugger.idebugfailureanalysis2_nextentry, extsfns/IDebugFailureAnalysis2::NextEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,26 +65,21 @@ This method returns a pointer to the next (or first) <a href="..\extsfns\ns-exts
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | extsfns.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | extsfns.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj983418">GetNext</a>
-
-<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 
 <a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983418">GetNext</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj983411">Get</a>
+
+<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
 
  
 

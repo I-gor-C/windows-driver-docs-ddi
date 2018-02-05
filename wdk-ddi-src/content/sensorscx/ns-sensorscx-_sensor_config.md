@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : E21E2FEC-8733-4A8A-A0C4-899F10824F9B
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSENSOR_CONFIG, sensors.sensor_config, SENSOR_CONFIG, _SENSOR_CONFIG, SENSOR_CONFIG structure [Sensor Devices], PSENSOR_CONFIG structure pointer [Sensor Devices], *PSENSOR_CONFIG, sensorscx/PSENSOR_CONFIG, sensorscx/SENSOR_CONFIG
+ms.keywords : PSENSOR_CONFIG, SENSOR_CONFIG, sensorscx/SENSOR_CONFIG, *PSENSOR_CONFIG, _SENSOR_CONFIG, sensors.sensor_config, sensorscx/PSENSOR_CONFIG, SENSOR_CONFIG structure [Sensor Devices], PSENSOR_CONFIG structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,7 +72,5 @@ The SENSOR_CONFIG structure works with the following helper function:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | sensorscx.h |

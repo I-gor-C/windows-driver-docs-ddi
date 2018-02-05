@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : f6d3f95b-7484-4a6b-9b7e-69f6172b7a12
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883/AV_PCR, PAV_PCR, AV_PCR, PAV_PCR structure pointer [Buses], _AV_PCR, 61883_structures_d8602c71-aca5-427d-a8bf-d1da914ebacc.xml, 61883/PAV_PCR, AV_PCR structure [Buses], IEEE.av_pcr, *PAV_PCR
+ms.keywords : "_AV_PCR, 61883/AV_PCR, AV_PCR structure [Buses], *PAV_PCR, AV_PCR, IEEE.av_pcr, 61883/PAV_PCR, PAV_PCR structure pointer [Buses], 61883_structures_d8602c71-aca5-427d-a8bf-d1da914ebacc.xml, PAV_PCR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : AV_PCR, *PAV_PCR
+req.typenames : "*PAV_PCR, AV_PCR"
 ---
 
 # _AV_PCR structure
@@ -59,9 +59,6 @@ typedef struct _AV_PCR {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
 ## See Also

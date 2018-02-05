@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 660aa6f2-03d8-44aa-b263-29a74c912668
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltOplockKeysEqual, FltOplockKeysEqual routine [Installable File System Drivers], fltkernel/FltOplockKeysEqual, ifsk.fltoplockkeysequal, FltApiRef_e_to_o_66634abf-9f0a-44b1-a4e4-85ef958b05f5.xml
+ms.keywords : FltApiRef_e_to_o_66634abf-9f0a-44b1-a4e4-85ef958b05f5.xml, FltOplockKeysEqual routine [Installable File System Drivers], fltkernel/FltOplockKeysEqual, ifsk.fltoplockkeysequal, FltOplockKeysEqual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,12 @@ If no oplock key was provided when the file objects were created, the file objec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FltOplockKeysEqual routine is available starting with Windows 8. The FltOplockKeysEqual routine is available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

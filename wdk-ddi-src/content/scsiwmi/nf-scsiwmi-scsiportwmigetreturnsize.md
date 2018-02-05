@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7cd54ac2-e13b-45eb-a0ac-56a2d60d9057
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortWmiGetReturnSize, storage.scsiportwmigetreturnsize, scsiprt_a9717bc6-2519-4446-8965-47340976a85f.xml, ScsiPortWmiGetReturnSize macro [Storage Devices], scsiwmi/ScsiPortWmiGetReturnSize
+ms.keywords : ScsiPortWmiGetReturnSize macro [Storage Devices], storage.scsiportwmigetreturnsize, scsiprt_a9717bc6-2519-4446-8965-47340976a85f.xml, scsiwmi/ScsiPortWmiGetReturnSize, ScsiPortWmiGetReturnSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -70,22 +70,17 @@ A miniport driver must call <b>ScsiPortWmiGetReturnSize</b> to obtain the value 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | scsiwmi.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | scsiwmi.h |
 
 ## See Also
-
-<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
 
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a>
 
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnstatus.md">ScsiPortWmiGetReturnStatus</a>
+
+<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2dd695c4-ed3e-4278-b82e-6643aaded890
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILEUTRAMRL, RILEUTRAMRL structure [Network Drivers Starting with Windows Vista], netvista.rileutramrl, RILEUTRAMRL, *LPRILEUTRAMRL
+ms.keywords : RILEUTRAMRL, netvista.rileutramrl, RILEUTRAMRL structure [Network Drivers Starting with Windows Vista], *LPRILEUTRAMRL, rilapitypes/RILEUTRAMRL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,9 +100,6 @@ Tracking area code (0...65535).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

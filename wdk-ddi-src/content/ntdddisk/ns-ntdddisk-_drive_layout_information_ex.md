@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e077f9a6-1d94-4d17-9166-b23756df6cc8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_DRIVE_LAYOUT_INFORMATION_EX, storage.drive_layout_information_ex, structs-disk_e6755f07-50a7-48db-a39c-4485f3fb7b93.xml, DRIVE_LAYOUT_INFORMATION_EX structure [Storage Devices], PDRIVE_LAYOUT_INFORMATION_EX, ntdddisk/DRIVE_LAYOUT_INFORMATION_EX, *PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX, PDRIVE_LAYOUT_INFORMATION_EX structure pointer [Storage Devices], ntdddisk/PDRIVE_LAYOUT_INFORMATION_EX"
+ms.keywords : PDRIVE_LAYOUT_INFORMATION_EX, storage.drive_layout_information_ex, *PDRIVE_LAYOUT_INFORMATION_EX, _DRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX structure [Storage Devices], ntdddisk/PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX, PDRIVE_LAYOUT_INFORMATION_EX structure pointer [Storage Devices], structs-disk_e6755f07-50a7-48db-a39c-4485f3fb7b93.xml, ntdddisk/DRIVE_LAYOUT_INFORMATION_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRIVE_LAYOUT_INFORMATION_EX, *PDRIVE_LAYOUT_INFORMATION_EX
+req.typenames : "*PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX"
 ---
 
 # _DRIVE_LAYOUT_INFORMATION_EX structure
@@ -79,22 +79,19 @@ This structure is used for both reading and writing disk partition information. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntddk.h) |
 
 ## See Also
-
-<a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_gpt.md">DRIVE_LAYOUT_INFORMATION_GPT</a>
-
-<a href="..\ntddk\nf-ntddk-iowritepartitiontableex.md">IoWritePartitionTableEx</a>
 
 <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_mbr.md">DRIVE_LAYOUT_INFORMATION_MBR</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">PARTITION_STYLE</a>
 
 <a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
+
+<a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_gpt.md">DRIVE_LAYOUT_INFORMATION_GPT</a>
+
+<a href="..\ntddk\nf-ntddk-iowritepartitiontableex.md">IoWritePartitionTableEx</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 85615799-5AA0-4D83-9246-73F3C7ABFFF6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_ipaddress_entry, *PWWAN_IPADDRESS_ENTRY, PWWAN_IPADDRESS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], WWAN_IPADDRESS_ENTRY structure [Network Drivers Starting with Windows Vista], WWAN_IPADDRESS_ENTRY, _WWAN_IPADDRESS_ENTRY, wwan/PWWAN_IPADDRESS_ENTRY, PWWAN_IPADDRESS_ENTRY, wwan/WWAN_IPADDRESS_ENTRY
+ms.keywords : "_WWAN_IPADDRESS_ENTRY, PWWAN_IPADDRESS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_IPADDRESS_ENTRY, wwan/WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY, netvista.wwan_ipaddress_entry, WWAN_IPADDRESS_ENTRY structure [Network Drivers Starting with Windows Vista], PWWAN_IPADDRESS_ENTRY"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY"
+req.typenames : WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -69,7 +69,5 @@ typedef struct _WWAN_IPADDRESS_ENTRY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8.1 and later versions of Windows. Available in Windows 8.1 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |

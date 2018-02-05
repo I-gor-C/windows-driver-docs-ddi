@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 78942ef8-ecf9-481f-af60-2f1266a9e73f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfpostdeviceinstall, WdfPostDeviceInstall, DFCoinstallerRef_6a05795f-99bb-4f4d-975f-8d2de85adff0.xml, kmdf.wdfpostdeviceinstall, wdfinstaller/WdfPostDeviceInstall, PFN_WDFPOSTDEVICEINSTALL, WdfPostDeviceInstall function
+ms.keywords : DFCoinstallerRef_6a05795f-99bb-4f4d-975f-8d2de85adff0.xml, WdfPostDeviceInstall, wdf.wdfpostdeviceinstall, PFN_WDFPOSTDEVICEINSTALL, wdfinstaller/WdfPostDeviceInstall, WdfPostDeviceInstall function, kmdf.wdfpostdeviceinstall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,10 @@ For more information about the <b>WdfPostDeviceInstall</b> function and installe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfinstaller.h (include Wdfinstaller.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.) |
 
 ## See Also
 

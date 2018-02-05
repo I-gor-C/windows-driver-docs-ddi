@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 5c4bf4c0-c36f-4779-a012-6364c94f37a1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : pci_struct_03c3c722-9aa9-4fff-a50e-4499122d7490.xml, PCI_PMCSR structure [Buses], _PCI_PMCSR, *PPCI_PMCSR, PCI_PMCSR, wdm/PCI_PMCSR, PPCI_PMCSR structure pointer [Buses], wdm/PPCI_PMCSR, PCI.pci_pmcsr, PPCI_PMCSR
+ms.keywords : wdm/PPCI_PMCSR, _PCI_PMCSR, PCI_PMCSR structure [Buses], PCI_PMCSR, wdm/PCI_PMCSR, PPCI_PMCSR structure pointer [Buses], PPCI_PMCSR, *PPCI_PMCSR, PCI.pci_pmcsr, pci_struct_03c3c722-9aa9-4fff-a50e-4499122d7490.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -141,9 +141,6 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also

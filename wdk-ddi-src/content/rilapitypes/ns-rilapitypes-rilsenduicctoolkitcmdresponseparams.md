@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ae203f95-3568-4c78-b799-e1eef6218c7f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilsenduicctoolkitcmdresponseparams_2, rilapitypes/RILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILSENDUICCTOOLKITCMDRESPONSEPARAMS structure [Network Drivers Starting with Windows Vista], RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS, rilapitypes/RILSENDUICCTOOLKITCMDRESPONSEPARAMS, netvista.rilsenduicctoolkitcmdresponseparams_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS
+req.typenames : "*LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -70,7 +70,4 @@ typedef struct _RILSENDUICCTOOLKITCMDRESPONSEPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

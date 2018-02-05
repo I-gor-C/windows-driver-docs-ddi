@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 71e3283c-2dbc-4579-a374-e51e123b852f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxcefreeirp, rxce/RxCeFreeIrp, RxCeFreeIrp, RxCeFreeIrp function [Installable File System Drivers], rxref_93b8da8d-d9fe-41e3-8423-5b3d8102f7a7.xml
+ms.keywords : ifsk.rxcefreeirp, RxCeFreeIrp, rxce/RxCeFreeIrp, RxCeFreeIrp function [Installable File System Drivers], rxref_93b8da8d-d9fe-41e3-8423-5b3d8102f7a7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -69,14 +69,10 @@ An IRP allocated with an associated memory descriptor list allocated with <b>RxC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

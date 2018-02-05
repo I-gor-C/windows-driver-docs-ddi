@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7fd03702-154b-47d4-96cb-6ad9683124ca
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_RefreshInformation, HBA_RefreshInformation, HBA_RefreshInformation routine [Storage Devices], storage.hba_refreshinformation, fibreHBA_rtns_3c486993-5307-42c2-924c-743f635447e8.xml
+ms.keywords : HBA_RefreshInformation, hbaapi/HBA_RefreshInformation, fibreHBA_rtns_3c486993-5307-42c2-924c-743f635447e8.xml, HBA_RefreshInformation routine [Storage Devices], storage.hba_refreshinformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,10 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

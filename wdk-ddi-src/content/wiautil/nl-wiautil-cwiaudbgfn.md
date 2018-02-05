@@ -84,8 +84,5 @@ The CWiauDbgFn constructor method is used for tracing when a function or method 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wiautil.h |
-| **DLL** |  |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 98113BC2-317C-4FBD-B3A6-A14B3783D225
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_SET_UICC_RESET, ndiswwan/NDIS_WWAN_SET_UICC_RESET, NDIS_WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_UICC_RESET, _NDIS_WWAN_SET_UICC_RESET, netvista.ndis_wwan_set_uicc_reset, NDIS_WWAN_SET_UICC_RESET, PNDIS_WWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_UICC_RESET"
+ms.keywords : "*PNDIS_WWAN_SET_UICC_RESET, PNDIS_WWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_UICC_RESET, NDIS_WWAN_SET_UICC_RESET, ndiswwan/NDIS_WWAN_SET_UICC_RESET, netvista.ndis_wwan_set_uicc_reset, PNDIS_WWAN_SET_UICC_RESET, _NDIS_WWAN_SET_UICC_RESET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_SET_UICC_RESET, *PNDIS_WWAN_SET_UICC_RESET
+req.typenames : "*PNDIS_WWAN_SET_UICC_RESET, NDIS_WWAN_SET_UICC_RESET"
 ---
 
 # _NDIS_WWAN_SET_UICC_RESET structure
@@ -108,20 +108,18 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_set_uicc_reset.md">WWAN_SET_UICC_RESE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_set_uicc_reset.md">WWAN_SET_UICC_RESET</a>
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-reset-operations">MB UICC reset operations</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-uicc-reset">OID_WWAN_UICC_RESET</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-uicc-reset-operations">MB UICC reset operations</a>
+
+<a href="..\wwan\ns-wwan-_wwan_set_uicc_reset.md">WWAN_SET_UICC_RESET</a>
 
  
 

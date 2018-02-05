@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9b8601ad-5605-46a3-9dbe-47dc8ed5906c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeGetCurrentNodeNumber routine [Kernel-Mode Driver Architecture], k105_08763d94-700c-4662-aebe-a8aa15a7ed4f.xml, kernel.kegetcurrentnodenumber, KeGetCurrentNodeNumber, wdm/KeGetCurrentNodeNumber
+ms.keywords : wdm/KeGetCurrentNodeNumber, k105_08763d94-700c-4662-aebe-a8aa15a7ed4f.xml, kernel.kegetcurrentnodenumber, KeGetCurrentNodeNumber, KeGetCurrentNodeNumber routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,23 +61,21 @@ This function has no parameters.
 
 In a non-uniform memory access (NUMA) multiprocessor architecture, a node is a collection of processors that share fast access to a region of memory. Memory access is non-uniform because a processor can access the memory in its node faster than it can access the memory in other nodes.
 
-In a NUMA multiprocessor system that contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
+In a NUMA multiprocessor system that contains <i>n</i> nodes, the nodes are numbered from 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h, Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 
  
 

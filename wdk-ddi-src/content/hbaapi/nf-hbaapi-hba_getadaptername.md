@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ec17efca-2cb9-4ab4-b98f-7319f6145e4e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_GetAdapterName, storage.hba_getadaptername, fibreHBA_rtns_f483472a-9b5e-4120-b0bf-e3c5253a3f03.xml, HBA_GetAdapterName routine [Storage Devices], HBA_GetAdapterName
+ms.keywords : hbaapi/HBA_GetAdapterName, HBA_GetAdapterName routine [Storage Devices], fibreHBA_rtns_f483472a-9b5e-4120-b0bf-e3c5253a3f03.xml, HBA_GetAdapterName, storage.hba_getadaptername
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,14 +90,10 @@ The <b>HBA_GetAdapterName</b> routine returns a value of type <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

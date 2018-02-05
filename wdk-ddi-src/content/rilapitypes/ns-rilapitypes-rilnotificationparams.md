@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 25a67292-b6fd-448a-a7bd-2867b3f46f13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILNOTIFICATIONPARAMS, netvista.rilnotificationparams_2, *LPRILNOTIFICATIONPARAMS
+ms.keywords : RILNOTIFICATIONPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS, rilapitypes/RILNOTIFICATIONPARAMS, netvista.rilnotificationparams_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
+req.typenames : "*LPRILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILNOTIFICATIONPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

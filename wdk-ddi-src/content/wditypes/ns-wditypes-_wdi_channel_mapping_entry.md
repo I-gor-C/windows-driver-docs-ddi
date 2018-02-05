@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F05DAD5F-C0A4-46E0-8069-7CEF5B6C5707
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wditypes/PWDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY structure [Device and Driver Installation], PWDI_CHANNEL_MAPPING_ENTRY structure pointer [Device and Driver Installation], PWDI_CHANNEL_MAPPING_ENTRY, *PWDI_CHANNEL_MAPPING_ENTRY, _WDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY, netvista.wdi_channel_mapping_entry, netvista.wifi_channel_mapping_entry, wditypes/WDI_CHANNEL_MAPPING_ENTRY
+ms.keywords : wditypes/PWDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY, netvista.wdi_channel_mapping_entry, netvista.wifi_channel_mapping_entry, _WDI_CHANNEL_MAPPING_ENTRY, PWDI_CHANNEL_MAPPING_ENTRY, wditypes/WDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY structure [Device and Driver Installation], *PWDI_CHANNEL_MAPPING_ENTRY, PWDI_CHANNEL_MAPPING_ENTRY structure pointer [Device and Driver Installation]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,7 +66,5 @@ Specifies the logical channel number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

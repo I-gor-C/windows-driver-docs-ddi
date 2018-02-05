@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a8cddfa1-b15e-4832-8c9c-12d378bc682d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_UnblockUiccLock, RIL_UnblockUiccLock, netvista.ril_unblockuicclock, RIL_UnblockUiccLock method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_UnblockUiccLock method [Network Drivers Starting with Windows Vista], netvista.ril_unblockuicclock, RIL_UnblockUiccLock, rilapi/RIL_UnblockUiccLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

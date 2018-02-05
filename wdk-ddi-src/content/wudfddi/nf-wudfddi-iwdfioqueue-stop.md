@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4ad9410a-f3ec-445a-b509-7666a81e1427
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue::Stop, umdf.iwdfioqueue_stop, wdf.iwdfioqueue_stop, IWDFIoQueue, wudfddi/IWDFIoQueue::Stop, Stop, Stop method, IWDFIoQueue interface, UMDFQueueObjectRef_c45e9686-2484-4c8d-857d-4dc12c8f2fd7.xml, IWDFIoQueue interface, Stop method, Stop method
+ms.keywords : wudfddi/IWDFIoQueue::Stop, IWDFIoQueue interface, Stop method, IWDFIoQueue::Stop, Stop method, umdf.iwdfioqueue_stop, IWDFIoQueue, wdf.iwdfioqueue_stop, Stop, UMDFQueueObjectRef_c45e9686-2484-4c8d-857d-4dc12c8f2fd7.xml, Stop method, IWDFIoQueue interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -93,24 +93,22 @@ The <b>Stop</b> method enables the queue to receive new requests, even if the qu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558962">IWDFIoQueue::Purge</a>
-
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558951">IWDFIoQueue::Drain</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558962">IWDFIoQueue::Purge</a>
+
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
 
  
 

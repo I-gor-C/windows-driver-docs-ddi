@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : da04ef5d-c3e4-4321-8cc8-e20763c5a7db
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE, D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE, display.d3d11_1ddi_authenticated_channel_type, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE, D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE enumeration [Display Devices]
+ms.keywords : d3d10umddi/D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE, D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE enumeration [Display Devices], display.d3d11_1ddi_authenticated_channel_type, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_SOFTWARE, D3D11_1DDI_AUTHENTICATED_CHANNEL_DRIVER_HARDWARE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,5 @@ typedef enum D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9bcd278f-b6eb-4e88-8255-f2724bfca285
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_8ec9aafc-288e-4814-a22b-8b8e973689be.xml, RtlIntPtrToUnicodeString routine [Kernel-Mode Driver Architecture], wdm/RtlIntPtrToUnicodeString, RtlIntPtrToUnicodeString, kernel.rtlintptrtounicodestring
+ms.keywords : wdm/RtlIntPtrToUnicodeString, RtlIntPtrToUnicodeString, k109_8ec9aafc-288e-4814-a22b-8b8e973689be.xml, kernel.rtlintptrtounicodestring, RtlIntPtrToUnicodeString routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -122,24 +122,22 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
 
 <a href="..\wdm\nf-wdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>
 
 <a href="..\wdm\nf-wdm-rtlunicodestringtointeger.md">RtlUnicodeStringToInteger</a>
 
-<a href="..\wdm\nf-wdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

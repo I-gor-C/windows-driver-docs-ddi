@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 18ce5fc5-927c-4261-8966-bb12849b95c9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KSP_TIMEFORMAT, ks/PKSP_TIMEFORMAT, KSP_TIMEFORMAT, KSP_TIMEFORMAT structure [Streaming Media Devices], PKSP_TIMEFORMAT, stream.ksp_timeformat, PKSP_TIMEFORMAT structure pointer [Streaming Media Devices], *PKSP_TIMEFORMAT, ks-struct_086a975b-f249-44e9-b1fa-4a945509722e.xml
+ms.keywords : ks/KSP_TIMEFORMAT, ks/PKSP_TIMEFORMAT, ks-struct_086a975b-f249-44e9-b1fa-4a945509722e.xml, PKSP_TIMEFORMAT structure pointer [Streaming Media Devices], PKSP_TIMEFORMAT, KSP_TIMEFORMAT, *PKSP_TIMEFORMAT, stream.ksp_timeformat, KSP_TIMEFORMAT structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSP_TIMEFORMAT, KSP_TIMEFORMAT"
+req.typenames : KSP_TIMEFORMAT, *PKSP_TIMEFORMAT
 ---
 
 # KSP_TIMEFORMAT structure
@@ -76,9 +76,6 @@ The fields of the structure correspond one to one with DirectShow's IMediaSeekin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

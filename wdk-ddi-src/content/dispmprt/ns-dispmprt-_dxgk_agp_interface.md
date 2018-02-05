@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ebaa2aba-426f-4f5f-b2bf-a8433cdc9205
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_AGP_INTERFACE structure [Display Devices], dispmprt/DXGK_AGP_INTERFACE, dispmprt/PDXGK_AGP_INTERFACE, DmStructs_787b846e-2c2b-4fba-aa99-979a195c4305.xml, PDXGK_AGP_INTERFACE structure pointer [Display Devices], display.dxgk_agp_interface, PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE, _DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE
+ms.keywords : "*PDXGK_AGP_INTERFACE, PDXGK_AGP_INTERFACE structure pointer [Display Devices], _DXGK_AGP_INTERFACE, dispmprt/DXGK_AGP_INTERFACE, display.dxgk_agp_interface, DmStructs_787b846e-2c2b-4fba-aa99-979a195c4305.xml, dispmprt/PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE, PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,7 +96,5 @@ The display miniport driver supplies the <b>Size</b> and <b>Version</b> members 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |

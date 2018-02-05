@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ca4b3154-e1a1-44d1-b085-9cb5d5ed1a4a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/MmQuerySystemSize, kernel.mmquerysystemsize, k106_9456af05-c1ea-43b0-a342-bc88a8de874b.xml, MmQuerySystemSize, MmQuerySystemSize routine [Kernel-Mode Driver Architecture]
+ms.keywords : MmQuerySystemSize routine [Kernel-Mode Driver Architecture], MmQuerySystemSize, k106_9456af05-c1ea-43b0-a342-bc88a8de874b.xml, wdm/MmQuerySystemSize, kernel.mmquerysystemsize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,14 +64,12 @@ This routine can be called during driver initialization to determine how much me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 068232d3-b160-4090-b72c-63d9a31c1567
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : miniport_memory_mapped_ref_b10c4068-0218-4349-8d87-5a9d9a32aac7.xml, NdisMUnmapIoSpace, NdisMUnmapIoSpace function [Network Drivers Starting with Windows Vista], netvista.ndismunmapiospace, ndis/NdisMUnmapIoSpace
+ms.keywords : miniport_memory_mapped_ref_b10c4068-0218-4349-8d87-5a9d9a32aac7.xml, netvista.ndismunmapiospace, NdisMUnmapIoSpace function [Network Drivers Starting with Windows Vista], NdisMUnmapIoSpace, ndis/NdisMUnmapIoSpace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,12 +95,10 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMUnmapIoSpace (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 

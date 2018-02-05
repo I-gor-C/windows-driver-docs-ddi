@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b2723a34-d9c2-40c9-b6c9-6441ead63d2e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : mcd/ChangerGetProductData, ChangerGetProductData, ChangerGetProductData function [Storage Devices], storage.changergetproductdata, chgrmini_05ad3aaa-8975-44ee-ad09-149f288d8eef.xml
+ms.keywords : ChangerGetProductData, storage.changergetproductdata, mcd/ChangerGetProductData, ChangerGetProductData function [Storage Devices], chgrmini_05ad3aaa-8975-44ee-ad09-149f288d8eef.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,10 @@ The changer class driver checks the output buffer length in the I/O stack locati
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

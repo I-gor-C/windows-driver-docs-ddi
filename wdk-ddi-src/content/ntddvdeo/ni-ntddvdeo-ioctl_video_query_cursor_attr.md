@@ -69,9 +69,7 @@ If the miniport driver successfully returns the cursor-attribute data, it sets t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 

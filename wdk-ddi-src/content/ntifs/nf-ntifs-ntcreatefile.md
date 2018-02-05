@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c40b99be-5627-44f3-9853-c3ae31a8035c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ZwCreateFile, ZwCreateFile routine [Kernel-Mode Driver Architecture], kernel.zwcreatefile, k111_80b1882a-8617-45d4-a783-dbc3bfc9aad4.xml, ZwCreateFile, NtCreateFile, wdm/NtCreateFile
+ms.keywords : NtCreateFile, k111_80b1882a-8617-45d4-a783-dbc3bfc9aad4.xml, wdm/NtCreateFile, ZwCreateFile routine [Kernel-Mode Driver Architecture], wdm/ZwCreateFile, ZwCreateFile, kernel.zwcreatefile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -764,38 +764,37 @@ Callers of <b>ZwCreateFile</b> must be running at IRQL = PASSIVE_LEVEL and <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
-<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
-
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-<a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a>
-
-<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 
 <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>
 
+<a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a>
+
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
+
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

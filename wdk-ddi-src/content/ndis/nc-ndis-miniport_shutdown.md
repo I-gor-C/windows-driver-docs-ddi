@@ -73,16 +73,16 @@ The reason why NDIS called the shutdown function. The following values are valid
 
 
 
-#### NdisShutdownPowerOff
-
-Indicates that NDIS called 
-       <i>MiniportShutdownEx</i> because the system is shutting down.
-
-
 #### NdisShutdownBugCheck
 
 Indicates that NDIS called 
        <i>MiniportShutdownEx</i> because of a system error.
+
+
+#### NdisShutdownPowerOff
+
+Indicates that NDIS called 
+       <i>MiniportShutdownEx</i> because the system is shutting down.
 
 
 ## Return Value
@@ -93,8 +93,8 @@ None
 
 A driver specifies the 
     <i>MiniportShutdownEx</i> entry point when it calls the 
-    <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-    NdisMRegisterMiniportDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+    NdisMRegisterMiniportDriver</a> function.
 
 <i>MiniportShutdownEx</i> restores the miniport adapter to a known initial state (the
     state before NDIS called the miniport driver's 
@@ -166,30 +166,26 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | See Remarks section |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/3ca03511-a912-4ee3-bd9f-1bd8e6996c48">Adapter States of a Miniport Driver</a>
+
+<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
+
+<a href="https://msdn.microsoft.com/b47e2cbe-9da3-4600-9afe-b082e60b87fb">Miniport Adapter States and Operations</a>
+
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
 <a href="..\ndis\nf-ndis-ndismsetbusdata.md">NdisMSetBusData</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="https://msdn.microsoft.com/b47e2cbe-9da3-4600-9afe-b082e60b87fb">Miniport Adapter States and Operations</a>
-
-<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
-
 <a href="https://msdn.microsoft.com/57d964f1-03c7-4b54-9d04-1d187c96e052">Miniport Adapter Shutdown</a>
-
-<a href="https://msdn.microsoft.com/3ca03511-a912-4ee3-bd9f-1bd8e6996c48">Adapter States of a Miniport Driver</a>
-
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c40b8f20-65e9-4e43-a402-14bd30f15975
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_GetWrapperLibraryAttributes routine [Storage Devices], fibreHBA_rtns_98e62721-8cee-4799-b25f-bf01b52d966c.xml, HBA_GetWrapperLibraryAttributes, hbaapi/HBA_GetWrapperLibraryAttributes, storage.hba_getwrapperlibraryattributes
+ms.keywords : fibreHBA_rtns_98e62721-8cee-4799-b25f-bf01b52d966c.xml, HBA_GetWrapperLibraryAttributes routine [Storage Devices], hbaapi/HBA_GetWrapperLibraryAttributes, storage.hba_getwrapperlibraryattributes, HBA_GetWrapperLibraryAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,20 +72,16 @@ Microsoft supplies both libraries, so currently they return the same information
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_getvendorlibraryattributes.md">HBA_GetVendorLibraryAttributes</a>
-
 <a href="..\hbaapi\ns-hbaapi-hba_libraryattributes.md">HBA_LibraryAttributes</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_getvendorlibraryattributes.md">HBA_GetVendorLibraryAttributes</a>
 
  
 

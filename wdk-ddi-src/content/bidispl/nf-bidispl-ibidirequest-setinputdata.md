@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 8db7b5cd-b03f-4973-8711-8ac022bfb2b5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : BIDI_FLOAT, BIDI_NULL, gdi.ibidirequest_ibidirequest__setinputdata, BIDI_BLOB, IBidiRequest::IBidiRequest::SetInputData, _win32_IBidiRequest_SetInputData, SetInputData, BIDI_ENUM, print.ibidirequest_ibidirequest__setinputdata, bidispl/IBidiRequest::IBidiRequest::SetInputData, IBidiRequest::SetInputData method [Print Devices], IBidiRequest, IBidiRequest::SetInputData method [Print Devices], IBidiRequest interface, BIDI_STRING, IBidiRequest::SetInputData, IBidiRequest interface [Print Devices], IBidiRequest::SetInputData method, BIDI_TEXT, BIDI_BOOL, BIDI_INT
+ms.keywords : bidispl/IBidiRequest::IBidiRequest::SetInputData, IBidiRequest interface [Print Devices], IBidiRequest::SetInputData method, IBidiRequest::SetInputData, BIDI_BOOL, SetInputData, IBidiRequest::SetInputData method [Print Devices], BIDI_ENUM, BIDI_NULL, BIDI_FLOAT, BIDI_INT, IBidiRequest::IBidiRequest::SetInputData, BIDI_BLOB, _win32_IBidiRequest_SetInputData, BIDI_STRING, IBidiRequest, IBidiRequest::SetInputData method [Print Devices], IBidiRequest interface, gdi.ibidirequest_ibidirequest__setinputdata, print.ibidirequest_ibidirequest__setinputdata, BIDI_TEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -226,22 +226,19 @@ If an application calls <b>SetInputData</b> more than once, only the value of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
-
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
  
 

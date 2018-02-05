@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : dc542e81-9078-4e14-8c8d-9cfaeb5b5495
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pos.posbarcodescannerimageprevieweventdata, PosBarcodeScannerImagePreviewEventData, PosEventDataHeader structure, PosBarcodeScannerImagePreviewEventData structure, pointofservicedriverinterface/PosEventDataHeader, pointofservicedriverinterface/PosBarcodeScannerImagePreviewEventData, PosEventDataHeader, _PosEventDataHeader
+ms.keywords : pointofservicedriverinterface/PosEventDataHeader, pos.posbarcodescannerimageprevieweventdata, pointofservicedriverinterface/PosBarcodeScannerImagePreviewEventData, PosEventDataHeader structure, _PosEventDataHeader, PosBarcodeScannerImagePreviewEventData structure, PosEventDataHeader, PosBarcodeScannerImagePreviewEventData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,7 +66,4 @@ The image preview bitmap data immediately follows after this structure in memory
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

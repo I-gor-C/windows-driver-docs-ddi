@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 45DCE635-6F28-4BE1-8362-568409FA8B1B
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : HceActivated, ApplicationSelected, nfcsedev/Transaction, HceDeactivated, nfcsedev/ExternalReaderDeparture, nfcsedev/ExternalReaderArrival, ExternalReaderDeparture, ExternalReaderArrival, nfcsedev/ApplicationSelected, _SECURE_ELEMENT_EVENT_TYPE, nfcsedev/HceDeactivated, *PSECURE_ELEMENT_EVENT_TYPE, nfcsedev/_SECURE_ELEMENT_EVENT_TYPE, Transaction, SECURE_ELEMENT_EVENT_TYPE, nfcsedev/HceActivated, _SECURE_ELEMENT_EVENT_TYPE enumeration [Near-Field Proximity Drivers], nfpdrivers._secure_element_event_type
+ms.keywords : HceActivated, *PSECURE_ELEMENT_EVENT_TYPE, nfpdrivers._secure_element_event_type, nfcsedev/ApplicationSelected, nfcsedev/Transaction, _SECURE_ELEMENT_EVENT_TYPE enumeration [Near-Field Proximity Drivers], _SECURE_ELEMENT_EVENT_TYPE, ExternalReaderDeparture, HceDeactivated, nfcsedev/ExternalReaderDeparture, ApplicationSelected, nfcsedev/HceDeactivated, Transaction, nfcsedev/_SECURE_ELEMENT_EVENT_TYPE, nfcsedev/HceActivated, SECURE_ELEMENT_EVENT_TYPE, ExternalReaderArrival, nfcsedev/ExternalReaderArrival
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSECURE_ELEMENT_EVENT_TYPE, SECURE_ELEMENT_EVENT_TYPE"
+req.typenames : SECURE_ELEMENT_EVENT_TYPE, *PSECURE_ELEMENT_EVENT_TYPE
 ---
 
 # _SECURE_ELEMENT_EVENT_TYPE Enumeration
@@ -92,7 +92,4 @@ typedef enum _SECURE_ELEMENT_EVENT_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | nfcsedev.h |

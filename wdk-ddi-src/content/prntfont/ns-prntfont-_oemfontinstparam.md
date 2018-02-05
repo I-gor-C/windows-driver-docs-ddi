@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : cdd3ed28-a077-4b89-9222-ba282b9c7205
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : prntfont/OEMFONTINSTPARAM, *POEMFONTINSTPARAM, POEMFONTINSTPARAM, prntfont/POEMFONTINSTPARAM, _OEMFONTINSTPARAM, OEMFONTINSTPARAM, OEMFONTINSTPARAM structure [Print Devices], print.oemfontinstparam, print_unidrv-pscript_ui_d306ca78-7f06-4ccf-a501-7470f33f96cb.xml, POEMFONTINSTPARAM structure pointer [Print Devices]
+ms.keywords : POEMFONTINSTPARAM structure pointer [Print Devices], OEMFONTINSTPARAM, POEMFONTINSTPARAM, OEMFONTINSTPARAM structure [Print Devices], prntfont/OEMFONTINSTPARAM, print_unidrv-pscript_ui_d306ca78-7f06-4ccf-a501-7470f33f96cb.xml, *POEMFONTINSTPARAM, print.oemfontinstparam, _OEMFONTINSTPARAM, prntfont/POEMFONTINSTPARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*POEMFONTINSTPARAM, OEMFONTINSTPARAM"
+req.typenames : OEMFONTINSTPARAM, *POEMFONTINSTPARAM
 req.product : Windows 10 or later.
 ---
 
@@ -85,7 +85,4 @@ Pointer to a string representing the font installer's name. The <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Printoem.h) |

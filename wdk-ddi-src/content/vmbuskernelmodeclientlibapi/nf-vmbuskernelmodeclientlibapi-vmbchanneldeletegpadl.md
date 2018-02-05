@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B1446A29-F2C1-4F08-8B38-5BE9188F5132
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelDeleteGpadl function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelDeleteGpadl, VmbChannelDeleteGpadl, netvista.vmbchanneldeletegpadl
+ms.keywords : netvista.vmbchanneldeletegpadl, VmbChannelDeleteGpadl, VmbChannelDeleteGpadl function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelDeleteGpadl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -74,14 +74,12 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |
 
 ## See Also
 

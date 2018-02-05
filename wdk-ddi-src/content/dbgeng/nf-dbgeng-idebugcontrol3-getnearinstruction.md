@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 76387681-cac6-4c35-9095-28942a856c30
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetNearInstruction method [Windows Debugging], IDebugControl2 interface, IDebugControl3, GetNearInstruction method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetNearInstruction, IDebugControl3 interface [Windows Debugging], GetNearInstruction method, dbgeng/IDebugControl::GetNearInstruction, dbgeng/IDebugControl2::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl interface, debugger.getnearinstruction, dbgeng/IDebugControl3::GetNearInstruction, IDebugControl_2c12e1fe-0f9b-45d6-9ff4-477bc42b2275.xml, IDebugControl interface [Windows Debugging], GetNearInstruction method, GetNearInstruction method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetNearInstruction method, IDebugControl3::GetNearInstruction, GetNearInstruction, IDebugControl2::GetNearInstruction
+ms.keywords : IDebugControl2::GetNearInstruction, dbgeng/IDebugControl::GetNearInstruction, IDebugControl3, IDebugControl::GetNearInstruction, dbgeng/IDebugControl3::GetNearInstruction, debugger.getnearinstruction, IDebugControl interface [Windows Debugging], GetNearInstruction method, GetNearInstruction method [Windows Debugging], GetNearInstruction method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetNearInstruction method, IDebugControl3::GetNearInstruction, IDebugControl2 interface [Windows Debugging], GetNearInstruction method, IDebugControl_2c12e1fe-0f9b-45d6-9ff4-477bc42b2275.xml, GetNearInstruction, GetNearInstruction method [Windows Debugging], IDebugControl interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,11 +95,6 @@ On some architectures, like x86 and x64, the size of an instruction may vary.  O
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

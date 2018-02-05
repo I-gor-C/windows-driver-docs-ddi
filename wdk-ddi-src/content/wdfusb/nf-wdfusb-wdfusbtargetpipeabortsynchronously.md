@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 57d0969f-bc30-4235-93a5-dda51e15b4fc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbTargetPipeAbortSynchronously, PFN_WDFUSBTARGETPIPEABORTSYNCHRONOUSLY, WdfUsbTargetPipeAbortSynchronously method, DFUsbRef_faea6716-3bb7-4f1f-93ce-36fe26bc7875.xml, kmdf.wdfusbtargetpipeabortsynchronously, WdfUsbTargetPipeAbortSynchronously, wdf.wdfusbtargetpipeabortsynchronously
+ms.keywords : wdf.wdfusbtargetpipeabortsynchronously, WdfUsbTargetPipeAbortSynchronously, DFUsbRef_faea6716-3bb7-4f1f-93ce-36fe26bc7875.xml, PFN_WDFUSBTARGETPIPEABORTSYNCHRONOUSLY, wdfusb/WdfUsbTargetPipeAbortSynchronously, kmdf.wdfusbtargetpipeabortsynchronously, WdfUsbTargetPipeAbortSynchronously method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -170,20 +170,19 @@ For more information about the <b>WdfUsbTargetPipeAbortSynchronously</b> method 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestForUrbXrb, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpiperesetsynchronously.md">WdfUsbTargetPipeResetSynchronously</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
 
  
 

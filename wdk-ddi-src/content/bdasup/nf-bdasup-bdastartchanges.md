@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ee54b382-7b69-4d8d-8728-fe2bff7884cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaStartChanges, bdasup/BdaStartChanges, bdaref_16498957-566e-405d-b573-3a2eb75a6bcb.xml, BdaStartChanges function [Streaming Media Devices], stream.bdastartchanges
+ms.keywords : bdaref_16498957-566e-405d-b573-3a2eb75a6bcb.xml, BdaStartChanges function [Streaming Media Devices], BdaStartChanges, stream.bdastartchanges, bdasup/BdaStartChanges
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,26 +70,23 @@ Calling the <b>BdaStartChanges</b> function causes any previously requested topo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563418">KSMETHOD_BDA_START_CHANGES</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
 
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 
 <a href="..\bdasup\nf-bdasup-bdacommitchanges.md">BdaCommitChanges</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563418">KSMETHOD_BDA_START_CHANGES</a>
 
  
 

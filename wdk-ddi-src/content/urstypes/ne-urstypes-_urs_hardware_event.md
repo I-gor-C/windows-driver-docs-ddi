@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 985A7725-1EE1-4419-B8BE-FEE2306E93A7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsHardwareEventDetach, UrsHardwareEventIdFloat, urstypes/UrsHardwareEventNone, UrsHardwareEventPortTypeUfp, urstypes/UrsHardwareEventPortTypeUfp, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT, _URS_HARDWARE_EVENT, buses.urs_hardware_event, urstypes/UrsHardwareEventIdGround, UrsHardwareEventPortTypeDfp, urstypes/UrsHardwareEventDetach, UrsHardwareEventNone, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT enumeration [Buses], *PURS_HARDWARE_EVENT, urstypes/UrsHardwareEventPortTypeDfp, URS_HARDWARE_EVENT, UrsHardwareEventIdGround, urstypes/URS_HARDWARE_EVENT, URS_HARDWARE_EVENT enumeration [Buses], urstypes/UrsHardwareEventIdFloat
+ms.keywords : UrsHardwareEventPortTypeUfp, urstypes/UrsHardwareEventNone, urstypes/UrsHardwareEventPortTypeUfp, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT, URS_HARDWARE_EVENT, _URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT, UrsHardwareEventNone, UrsHardwareEventIdFloat, URS_HARDWARE_EVENT enumeration [Buses], urstypes/UrsHardwareEventIdFloat, URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT enumeration [Buses], UrsHardwareEventIdGround, buses.urs_hardware_event, UrsHardwareEventPortTypeDfp, UrsHardwareEventDetach, urstypes/UrsHardwareEventDetach, urstypes/UrsHardwareEventPortTypeDfp, urstypes/UrsHardwareEventIdGround, urstypes/URS_HARDWARE_EVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT
+req.typenames : "*PURS_HARDWARE_EVENT, URS_HARDWARE_EVENT"
 req.product : Windows 10 or later.
 ---
 
@@ -96,7 +96,6 @@ Values defined for USB Type-C systems should not be directly used by the client 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | urstypes.h (include Urscx.h) |

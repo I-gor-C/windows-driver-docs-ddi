@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fc6b73ac-f86c-4978-9d71-9bd8398c116b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PHBA_EVENTINFO, hbaapi/HBA_EventInfo, storage.hba_eventinfo, HBA_EventInfo structure [Storage Devices], *PHBA_EVENTINFO, hbaapi/PHBA_EVENTINFO, HBA_EventInfo, HBA_EVENTINFO structure [Storage Devices], PHBA_EVENTINFO structure pointer [Storage Devices], structs-Fibre_6885fdc8-d2ce-40b3-ba2a-2e423f287780.xml, HBA_EVENTINFO
+ms.keywords : HBA_EVENTINFO structure [Storage Devices], hbaapi/PHBA_EVENTINFO, HBA_EventInfo structure [Storage Devices], HBA_EventInfo, HBA_EVENTINFO, PHBA_EVENTINFO structure pointer [Storage Devices], structs-Fibre_6885fdc8-d2ce-40b3-ba2a-2e423f287780.xml, *PHBA_EVENTINFO, storage.hba_eventinfo, hbaapi/HBA_EventInfo, PHBA_EVENTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HBA_EVENTINFO, *PHBA_EVENTINFO
+req.typenames : "*PHBA_EVENTINFO, HBA_EVENTINFO"
 ---
 
 # HBA_EventInfo structure
@@ -134,18 +134,15 @@ A proprietary event occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also
 
 <a href="..\hbaapi\ns-hbaapi-hba_link_eventinfo.md">HBA_Link_EventInfo</a>
 
-<a href="..\hbaapi\ns-hbaapi-hba_rscn_eventinfo.md">HBA_RSCN_EventInfo</a>
-
 <a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_rscn_eventinfo.md">HBA_RSCN_EventInfo</a>
 
  
 

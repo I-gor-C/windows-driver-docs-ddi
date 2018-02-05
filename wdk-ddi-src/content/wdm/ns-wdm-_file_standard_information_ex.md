@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 460ADE5A-0302-4695-A9E4-43B309738BE7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : FILE_STANDARD_INFORMATION_EX, *PFILE_STANDARD_INFORMATION_EX, PFILE_STANDARD_INFORMATION_EX structure pointer [Kernel-Mode Driver Architecture], kernel.file_standard_information_ex, wdm/FILE_STANDARD_INFORMATION_EX, wdm/PFILE_STANDARD_INFORMATION_EX, PFILE_STANDARD_INFORMATION_EX, _FILE_STANDARD_INFORMATION_EX, FILE_STANDARD_INFORMATION_EX structure [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.file_standard_information_ex, wdm/FILE_STANDARD_INFORMATION_EX, PFILE_STANDARD_INFORMATION_EX, *PFILE_STANDARD_INFORMATION_EX, FILE_STANDARD_INFORMATION_EX structure [Kernel-Mode Driver Architecture], FILE_STANDARD_INFORMATION_EX, _FILE_STANDARD_INFORMATION_EX, PFILE_STANDARD_INFORMATION_EX structure pointer [Kernel-Mode Driver Architecture], wdm/PFILE_STANDARD_INFORMATION_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_STANDARD_INFORMATION_EX, *PFILE_STANDARD_INFORMATION_EX
+req.typenames : "*PFILE_STANDARD_INFORMATION_EX, FILE_STANDARD_INFORMATION_EX"
 req.product : Windows 10 or later.
 ---
 
@@ -92,18 +92,16 @@ The number of hard links to the file.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
  
 

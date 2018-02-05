@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 10d08e58-cd1f-4585-a93b-fabeb4fcf27c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSEVENT_CAMERACONTROL_FOCUS, KSEVENT_CAMERACONTROL_FOCUS, KSEVENT_CAMERACONTROL_ZOOM, stream.ksevent_cameracontrol, ksmedia/KSEVENT_CAMERACONTROL_ZOOM, KSEVENT_CAMERACONTROL enumeration [Streaming Media Devices], ksmedia/KSEVENT_CAMERACONTROL, KSEVENT_CAMERACONTROL
+ms.keywords : KSEVENT_CAMERACONTROL enumeration [Streaming Media Devices], KSEVENT_CAMERACONTROL_ZOOM, ksmedia/KSEVENT_CAMERACONTROL_ZOOM, stream.ksevent_cameracontrol, ksmedia/KSEVENT_CAMERACONTROL_FOCUS, KSEVENT_CAMERACONTROL, KSEVENT_CAMERACONTROL_FOCUS, ksmedia/KSEVENT_CAMERACONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -71,9 +71,7 @@ For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

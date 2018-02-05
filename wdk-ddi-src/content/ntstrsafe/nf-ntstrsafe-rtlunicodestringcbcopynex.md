@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 08b2e13c-bbd6-4344-83cb-3bb911c5da70
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : safestrings_d890ac48-9708-4149-a023-cc5198393084.xml, RtlUnicodeStringCbCopyNEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCbCopyNEx, kernel.rtlunicodestringcbcopynex, RtlUnicodeStringCbCopyNEx
+ms.keywords : ntstrsafe/RtlUnicodeStringCbCopyNEx, RtlUnicodeStringCbCopyNEx, RtlUnicodeStringCbCopyNEx function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcbcopynex, safestrings_d890ac48-9708-4149-a023-cc5198393084.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,24 +84,24 @@ One or more flags and, optionally, a fill byte. The flags are defined as follows
 If this flag is set and the function succeeds, the low byte of <i>dwFlags</i> is used to fill the portion of the destination buffer that follows the last character in the string.
 
 
-#### STRSAFE_IGNORE_NULLS
-
-If this flag is set, the source or destination pointer, or both, can be <b>NULL</b>. <b>RtlUnicodeStringCbCopyNEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied. <b>NULL</b> destination buffer pointers cannot receive nonempty strings.
-
-
 #### STRSAFE_FILL_ON_FAILURE
 
 If this flag is set and the function fails, the low byte of <i>dwFlags</i> is used to fill the entire destination buffer. This operation overwrites any preexisting buffer contents.
 
 
-#### STRSAFE_NULL_ON_FAILURE
+#### STRSAFE_IGNORE_NULLS
 
-If this flag is set and the function fails, the destination buffer is set to an empty string (TEXT("")). This operation overwrites any preexisting buffer contents.
+If this flag is set, the source or destination pointer, or both, can be <b>NULL</b>. <b>RtlUnicodeStringCbCopyNEx</b> treats <b>NULL</b> source buffer pointers like empty strings (TEXT("")), which can be copied. <b>NULL</b> destination buffer pointers cannot receive nonempty strings.
 
 
 #### STRSAFE_NO_TRUNCATION
 
 If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the destination buffer are not modified.
+
+
+#### STRSAFE_NULL_ON_FAILURE
+
+If this flag is set and the function fails, the destination buffer is set to an empty string (TEXT("")). This operation overwrites any preexisting buffer contents.
 
 
 #### STRSAFE_ZERO_LENGTH_ON_FAILURE
@@ -178,22 +178,19 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1). Available starting with Windows XP with Service Pack 1 (SP1). |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcchcopynex.md">RtlUnicodeStringCchCopyNEx</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcbcopyn.md">RtlUnicodeStringCbCopyN</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcchcopynex.md">RtlUnicodeStringCchCopyNEx</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0400ff8c-a6d5-4fbf-b2fb-eb9fd7aabd7e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::GetNextSymbolMatchWide, IDebugSymbols3::GetNextSymbolMatchWide, GetNextSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatchWide method, debugger.getnextsymbolmatchwide, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : debugger.getnextsymbolmatchwide, dbgeng/IDebugSymbols3::GetNextSymbolMatchWide, GetNextSymbolMatchWide, IDebugSymbols3::GetNextSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatchWide method, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetNextSymbolMatchWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -129,22 +129,17 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543008">EndSymbolMatch</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a>
 
  
 

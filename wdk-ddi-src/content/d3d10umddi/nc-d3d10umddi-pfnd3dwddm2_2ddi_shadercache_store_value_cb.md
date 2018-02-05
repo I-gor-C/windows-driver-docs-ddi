@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 
@@ -66,11 +66,11 @@ The handle of the cache session for the driver to use when it calls back into th
 
 `*pPrecomputedHash`
 
-
+A hash value.
 
 `*pKey`
 
-
+A pointer to a key.
 
 `KeyLen`
 
@@ -78,7 +78,7 @@ The length of the key.
 
 `*pValue`
 
-
+A pointer to an input value.
 
 `ValueLen`
 
@@ -93,11 +93,5 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

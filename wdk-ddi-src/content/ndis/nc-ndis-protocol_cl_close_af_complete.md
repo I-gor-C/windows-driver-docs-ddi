@@ -71,19 +71,19 @@ Specifies the final status of the client-initiated request to close the address 
 
 
 
-#### NDIS_STATUS_SUCCESS
-
-The address family was closed. The 
-       <i>NdisAfHandle</i> that represented the open address family, which the client stored in its 
-       <i>ProtocolAfContext</i> area, is now invalid.
-
-
 #### NDIS_STATUS_FAILURE
 
 Either the AF has associated VC(s) and/or registered SAP(s) that the client must release before
        attempting to close the AF, or the client called 
        <b>NdisClCloseAddressFamily</b> twice because NDIS discovered that the AF state was marked as
        "closing."
+
+
+#### NDIS_STATUS_SUCCESS
+
+The address family was closed. The 
+       <i>NdisAfHandle</i> that represented the open address family, which the client stored in its 
+       <i>ProtocolAfContext</i> area, is now invalid.
 
 `ProtocolAfContext`
 
@@ -146,29 +146,25 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClCloseAfComplete   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
-
-<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
+   NdisFreeToNPagedLookasideList</a>
 
 <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a>
 
-<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
+<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
 
-<mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
-   NdisFreeToNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
 
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 

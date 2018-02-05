@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B887CCD2-0747-483E-A4CF-632471AB19A2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SuspendPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3, IDebugPlmClient3 interface [Windows Debugging], SuspendPlmPackageWide method, dbgeng/IDebugPlmClient3::SuspendPlmPackageWide, SuspendPlmPackageWide, IDebugPlmClient3::SuspendPlmPackageWide, debugger.idebugplmclient3_suspendplmpackagewide, SuspendPlmPackageWide method [Windows Debugging]
+ms.keywords : IDebugPlmClient3 interface [Windows Debugging], SuspendPlmPackageWide method, IDebugPlmClient3, dbgeng/IDebugPlmClient3::SuspendPlmPackageWide, SuspendPlmPackageWide method [Windows Debugging], IDebugPlmClient3::SuspendPlmPackageWide, SuspendPlmPackageWide, SuspendPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, debugger.idebugplmclient3_suspendplmpackagewide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

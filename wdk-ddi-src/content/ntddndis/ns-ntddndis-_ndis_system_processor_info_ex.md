@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ba3c6641-98bc-4c44-9889-7583c4cf61f0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_SYSTEM_PROCESSOR_INFO_EX, PNDIS_SYSTEM_PROCESSOR_INFO_EX structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SYSTEM_PROCESSOR_INFO_EX, ndis_processor_group_ref_754737d7-8279-4786-b89d-4326da949464.xml, ntddndis/PNDIS_SYSTEM_PROCESSOR_INFO_EX, _NDIS_SYSTEM_PROCESSOR_INFO_EX, netvista.ndis_system_processor_info_ex, NDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX structure [Network Drivers Starting with Windows Vista], PNDIS_SYSTEM_PROCESSOR_INFO_EX"
+ms.keywords : "_NDIS_SYSTEM_PROCESSOR_INFO_EX, ntddndis/PNDIS_SYSTEM_PROCESSOR_INFO_EX, *PNDIS_SYSTEM_PROCESSOR_INFO_EX, ntddndis/NDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX structure [Network Drivers Starting with Windows Vista], netvista.ndis_system_processor_info_ex, NDIS_SYSTEM_PROCESSOR_INFO_EX, ndis_processor_group_ref_754737d7-8279-4786-b89d-4326da949464.xml, PNDIS_SYSTEM_PROCESSOR_INFO_EX structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SYSTEM_PROCESSOR_INFO_EX"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX"
+req.typenames : NDIS_SYSTEM_PROCESSOR_INFO_EX, *PNDIS_SYSTEM_PROCESSOR_INFO_EX
 ---
 
 # _NDIS_SYSTEM_PROCESSOR_INFO_EX structure
@@ -119,36 +119,34 @@ The offset, in bytes, from the start of the structure to an array of
 `ProcessorVendor`
 
 The processor vendor specified as one of the values from the 
-     <mshelp:link keywords="netvista.ndis_processor_vendor" tabindex="0"><b>
-     NDIS_PROCESSOR_VENDOR</b></mshelp:link> enumeration.
+     <a href="..\ntddndis\ne-ntddndis-_ndis_processor_vendor.md">
+     NDIS_PROCESSOR_VENDOR</a> enumeration.
 
 ## Remarks
 NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO_EX structure in calls to the 
-    <mshelp:link keywords="netvista.ndisgetprocessorinformationex" tabindex="0"><b>
-    NdisGetProcessorInformationEx</b></mshelp:link> function. After 
+    <a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
+    NdisGetProcessorInformationEx</a> function. After 
     <b>NdisGetProcessorInformationEx</b> returns, this structure contains information about the CPU topology
     of the system.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_processor_info_ex.md">NDIS_PROCESSOR_INFO_EX</a>
+
+<a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
+   NdisGetProcessorInformationEx</a>
 
 <a href="..\ntddndis\ne-ntddndis-_ndis_processor_vendor.md">NDIS_PROCESSOR_VENDOR</a>
 
-<mshelp:link keywords="netvista.ndisgetprocessorinformationex" tabindex="0"><b>
-   NdisGetProcessorInformationEx</b></mshelp:link>
-
 <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

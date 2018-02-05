@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 66fade6b-b1c1-477c-bd44-2809d02271f2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPS_CREATE_NOTIFY_INFO, _PS_CREATE_NOTIFY_INFO, kernel.ps_create_notify_info, ntddk/PPS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO structure pointer [Kernel-Mode Driver Architecture], kstruct_c_489ee208-518d-41f1-af90-a8873f3e7fb0.xml, PS_CREATE_NOTIFY_INFO structure [Kernel-Mode Driver Architecture], ntddk/PS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO"
+ms.keywords : ntddk/PPS_CREATE_NOTIFY_INFO, _PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO, ntddk/PS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO, kstruct_c_489ee208-518d-41f1-af90-a8873f3e7fb0.xml, kernel.ps_create_notify_info, PPS_CREATE_NOTIFY_INFO structure pointer [Kernel-Mode Driver Architecture], PS_CREATE_NOTIFY_INFO structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,18 +110,16 @@ The size, in bytes, of this structure. The operating system uses this size to in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex.md">PsSetCreateProcessNotifyRoutineEx</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff559951">CreateProcessNotifyEx</a>
 
-<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex.md">PsSetCreateProcessNotifyRoutineEx</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

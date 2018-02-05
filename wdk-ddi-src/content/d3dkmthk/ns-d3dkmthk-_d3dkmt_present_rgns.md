@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 90ae3382-0a2d-46cf-89e6-2148f0cbfc83
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_PRESENT_RGNS structure [Display Devices], display.d3dkmt_present_rgns, _D3DKMT_PRESENT_RGNS, d3dkmthk/D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS
+ms.keywords : display.d3dkmt_present_rgns, _D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS structure [Display Devices], d3dkmthk/D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ A pointer to an array of move rectangles (<a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

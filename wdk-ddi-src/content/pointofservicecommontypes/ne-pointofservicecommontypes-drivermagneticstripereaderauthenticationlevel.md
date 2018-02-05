@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 779e750a-70c6-41f3-b680-a9fe833014b5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NotSupported, pointofservicecommontypes/Required, pointofservicecommontypes/NotSupported, Optional, DriverMagneticStripeReaderAuthenticationLevel enumeration, DriverMagneticStripeReaderAuthenticationLevel, pointofservicecommontypes/DriverMagneticStripeReaderAuthenticationLevel, Required, pointofservicecommontypes/Optional, pos.magneticstripereaderauthenticationlevel_handheld_blue_autogen
+ms.keywords : Required, pos.magneticstripereaderauthenticationlevel_handheld_blue_autogen, DriverMagneticStripeReaderAuthenticationLevel enumeration, pointofservicecommontypes/Required, NotSupported, DriverMagneticStripeReaderAuthenticationLevel, Optional, pointofservicecommontypes/Optional, pointofservicecommontypes/DriverMagneticStripeReaderAuthenticationLevel, pointofservicecommontypes/NotSupported
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _DriverMagneticStripeReaderAuthenticationLevel {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

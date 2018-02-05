@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : D832B534-34E2-402F-833A-C072007E3106
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_GEOFENCE_CREATE_RESPONSE, sensors.gnss_geofence_create_response, PGNSS_GEOFENCE_CREATE_RESPONSE structure pointer [Sensor Devices], PGNSS_GEOFENCE_CREATE_RESPONSE, gnssdriver/PGNSS_GEOFENCE_CREATE_RESPONSE, gnssdriver/GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE structure [Sensor Devices]
+ms.keywords : gnssdriver/GNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE structure [Sensor Devices], PGNSS_GEOFENCE_CREATE_RESPONSE, sensors.gnss_geofence_create_response, gnssdriver/PGNSS_GEOFENCE_CREATE_RESPONSE, PGNSS_GEOFENCE_CREATE_RESPONSE structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,7 +83,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

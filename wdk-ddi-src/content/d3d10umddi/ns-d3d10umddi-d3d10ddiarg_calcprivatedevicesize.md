@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 79bb55db-dd4d-4cad-927e-e1126463bded
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_CALCPRIVATEDEVICESIZE, display.d3d10ddiarg_calcprivatedevicesize, d3d10umddi/D3D10DDIARG_CALCPRIVATEDEVICESIZE, UMDisplayDriver_Dx10param_Structs_5d15afa8-1d91-4823-ba91-391e64e9374d.xml, D3D10DDIARG_CALCPRIVATEDEVICESIZE structure [Display Devices]
+ms.keywords : D3D10DDIARG_CALCPRIVATEDEVICESIZE, display.d3d10ddiarg_calcprivatedevicesize, UMDisplayDriver_Dx10param_Structs_5d15afa8-1d91-4823-ba91-391e64e9374d.xml, D3D10DDIARG_CALCPRIVATEDEVICESIZE structure [Display Devices], d3d10umddi/D3D10DDIARG_CALCPRIVATEDEVICESIZE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -106,9 +106,7 @@ The driver is required only to monitor the high 16 bits. The driver should ensur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

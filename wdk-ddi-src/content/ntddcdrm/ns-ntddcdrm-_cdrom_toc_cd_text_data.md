@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 92e87c1d-17c4-4ac8-af9d-08863ce84c9e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PCDROM_TOC_CD_TEXT_DATA, CDROM_TOC_CD_TEXT_DATA, storage.cdrom_toc_cd_text_data, ntddcdrm/PCDROM_TOC_CD_TEXT_DATA, _CDROM_TOC_CD_TEXT_DATA, structs-CD-ROM_7c78a819-dd2b-45bf-ba44-b8115fe1b998.xml, CDROM_TOC_CD_TEXT_DATA structure [Storage Devices], PCDROM_TOC_CD_TEXT_DATA structure pointer [Storage Devices], ntddcdrm/CDROM_TOC_CD_TEXT_DATA, PCDROM_TOC_CD_TEXT_DATA"
+ms.keywords : "_CDROM_TOC_CD_TEXT_DATA, *PCDROM_TOC_CD_TEXT_DATA, PCDROM_TOC_CD_TEXT_DATA structure pointer [Storage Devices], PCDROM_TOC_CD_TEXT_DATA, structs-CD-ROM_7c78a819-dd2b-45bf-ba44-b8115fe1b998.xml, ntddcdrm/CDROM_TOC_CD_TEXT_DATA, ntddcdrm/PCDROM_TOC_CD_TEXT_DATA, storage.cdrom_toc_cd_text_data, CDROM_TOC_CD_TEXT_DATA structure [Storage Devices], CDROM_TOC_CD_TEXT_DATA"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CDROM_TOC_CD_TEXT_DATA, *PCDROM_TOC_CD_TEXT_DATA
+req.typenames : "*PCDROM_TOC_CD_TEXT_DATA, CDROM_TOC_CD_TEXT_DATA"
 ---
 
 # _CDROM_TOC_CD_TEXT_DATA structure
@@ -74,9 +74,6 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also

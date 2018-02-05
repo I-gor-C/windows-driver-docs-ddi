@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 95bf9a47-e121-4432-a28f-5476467f1823
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.extknownstruct, EngExtCpp_Ref_b59346d2-06da-4112-9bed-ce64de0f2807.xml, ExtKnownStruct structure [Windows Debugging], engextcpp/ExtKnownStruct, ExtKnownStruct
+ms.keywords : ExtKnownStruct, engextcpp/ExtKnownStruct, ExtKnownStruct structure [Windows Debugging], EngExtCpp_Ref_b59346d2-06da-4112-9bed-ce64de0f2807.xml, debugger.extknownstruct
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ The name of the structure type.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
 
 ## See Also

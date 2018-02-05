@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5e458e3b-cfe2-4d48-b386-34d2a6c1d15e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.splpromptuiinuserssession, SplPromptUIInUsersSession function [Print Devices], spoolfnc_5b2379b2-c34b-4a98-b148-25a09f55be2b.xml, winsplp/SplPromptUIInUsersSession, SplPromptUIInUsersSession
+ms.keywords : SplPromptUIInUsersSession, spoolfnc_5b2379b2-c34b-4a98-b148-25a09f55be2b.xml, print.splpromptuiinuserssession, winsplp/SplPromptUIInUsersSession, SplPromptUIInUsersSession function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,14 +86,11 @@ If you plan to use this function in a driver intended to run under Windows 2000,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The SplPromptUIInUsersSession function is available in Windows XP and later The SplPromptUIInUsersSession function is available in Windows XP and later |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
 

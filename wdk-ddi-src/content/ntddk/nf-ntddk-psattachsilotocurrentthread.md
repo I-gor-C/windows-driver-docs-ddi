@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1C66E50F-3BD7-4038-9FDF-2F2B712D9B5E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PsAttachSiloToCurrentThread, PsAttachSiloToCurrentThread, PsAttachSiloToCurrentThread routine [Kernel-Mode Driver Architecture], kernel.psattachsilotocurrentthread
+ms.keywords : ntddk/PsAttachSiloToCurrentThread, kernel.psattachsilotocurrentthread, PsAttachSiloToCurrentThread routine [Kernel-Mode Driver Architecture], PsAttachSiloToCurrentThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,10 @@ The thread then operates within the namespace of the attached silo until <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

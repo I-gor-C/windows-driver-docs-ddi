@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 14911610-f2d6-4ad4-884f-3137eab143be
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_RSC_STATISTICS_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RSC_STATISTICS_INFO, PNDIS_RSC_STATISTICS_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RSC_STATISTICS_INFO, *PNDIS_RSC_STATISTICS_INFO, NDIS_RSC_STATISTICS_INFO, ntddndis/PNDIS_RSC_STATISTICS_INFO, PNDIS_RSC_STATISTICS_INFO, netvista.ndis_rsc_statistics_info
+ms.keywords : NDIS_RSC_STATISTICS_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_RSC_STATISTICS_INFO, PNDIS_RSC_STATISTICS_INFO, netvista.ndis_rsc_statistics_info, NDIS_RSC_STATISTICS_INFO, ntddndis/PNDIS_RSC_STATISTICS_INFO, PNDIS_RSC_STATISTICS_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RSC_STATISTICS_INFO, *PNDIS_RSC_STATISTICS_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,16 +90,14 @@ Set the <b>Size</b> member to NDIS_SIZEOF_RSC_STATISTICS_REVISION_1.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451929">OID_TCP_RSC_STATISTICS</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451929">OID_TCP_RSC_STATISTICS</a>
 
  
 

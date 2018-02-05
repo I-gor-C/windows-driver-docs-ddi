@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f3975ad7-8eb8-4f46-8024-6a1decc21c77
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlRandom, RtlRandom routine [Installable File System Drivers], RtlRandom, ifsk.rtlrandom, rtlref_c9c196b4-7335-4320-ae7f-7c565b6f73e6.xml
+ms.keywords : RtlRandom, ntifs/RtlRandom, rtlref_c9c196b4-7335-4320-ae7f-7c565b6f73e6.xml, ifsk.rtlrandom, RtlRandom routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,12 @@ The <b>RtlRandomEx</b> function is an improved version of the <b>RtlRandom</b> f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 and later. Available in Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

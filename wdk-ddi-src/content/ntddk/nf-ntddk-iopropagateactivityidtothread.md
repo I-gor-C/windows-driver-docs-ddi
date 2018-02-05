@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8E824793-53DF-4573-81B0-6FE925CCB4C4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/IoPropagateActivityIdToThread, kernel.iopropagateactivityidtothread, IoPropagateActivityIdToThread, IoPropagateActivityIdToThread routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.iopropagateactivityidtothread, IoPropagateActivityIdToThread, IoPropagateActivityIdToThread routine [Kernel-Mode Driver Architecture], ntddk/IoPropagateActivityIdToThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,11 +97,9 @@ Drivers that use I/O work items do not need to call this routine because the I/O
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

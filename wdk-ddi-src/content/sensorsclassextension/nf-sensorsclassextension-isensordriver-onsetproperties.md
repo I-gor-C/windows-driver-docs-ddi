@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 7c3cca5b-1d08-42dc-8dc4-42eb1160b8bb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : Sensor_IFaces_1b27ccef-2b50-4942-b8fa-9126e2624b27.xml, ISensorDriver::OnSetProperties, ISensorDriver, OnSetProperties method [Sensor Devices], ISensorDriver interface, sensors.isensordriver_onsetproperties, sensorsclassextension/ISensorDriver::OnSetProperties, ISensorDriver interface [Sensor Devices], OnSetProperties method, OnSetProperties method [Sensor Devices], OnSetProperties
+ms.keywords : OnSetProperties method [Sensor Devices], ISensorDriver interface [Sensor Devices], OnSetProperties method, ISensorDriver::OnSetProperties, sensorsclassextension/ISensorDriver::OnSetProperties, OnSetProperties method [Sensor Devices], ISensorDriver interface, ISensorDriver, Sensor_IFaces_1b27ccef-2b50-4942-b8fa-9126e2624b27.xml, OnSetProperties, sensors.isensordriver_onsetproperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -91,14 +91,10 @@ The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> str
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
+| **Target Platform** | Desktop |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |
 
 ## See Also
 

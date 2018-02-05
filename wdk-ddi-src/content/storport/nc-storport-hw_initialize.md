@@ -104,24 +104,19 @@ Set up and initialize all events and DPCs that are used by the miniport driver.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | DIRQL (See Remarks section.) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>
-
 <a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
+
+<a href="..\storport\nc-storport-hw_dpc_routine.md">HwStorDpcRoutine</a>
 
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
-<a href="..\storport\nc-storport-hw_dpc_routine.md">HwStorDpcRoutine</a>
+<a href="..\storport\nc-storport-hw_passive_initialize_routine.md">HwStorPassiveInitializeRoutine</a>
 
  
 

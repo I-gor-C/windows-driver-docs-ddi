@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_PERSISTENT_RESERVE_OUT IOCTL
@@ -131,6 +131,4 @@ The <b>Status</b> field is set to one of the following:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
-| **IRQL** |  |

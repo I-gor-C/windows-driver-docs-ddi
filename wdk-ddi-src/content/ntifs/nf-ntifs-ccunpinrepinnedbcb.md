@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 96a35574-87dc-4a2f-aaef-616096839f3f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcUnpinRepinnedBcb routine [Installable File System Drivers], ccref_72300deb-bf8a-4f2a-b594-69ccb01cff56.xml, ntifs/CcUnpinRepinnedBcb, ifsk.ccunpinrepinnedbcb, CcUnpinRepinnedBcb
+ms.keywords : CcUnpinRepinnedBcb routine [Installable File System Drivers], ifsk.ccunpinrepinnedbcb, CcUnpinRepinnedBcb, ntifs/CcUnpinRepinnedBcb, ccref_72300deb-bf8a-4f2a-b594-69ccb01cff56.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,10 @@ Because <b>CcUnpinRepinnedBcb</b> acquires the BCB resource exclusively, the cal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

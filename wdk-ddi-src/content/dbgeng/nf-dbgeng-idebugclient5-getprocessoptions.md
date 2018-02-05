@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ff2d4da4-5a10-4196-92bd-ac4b244a2257
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient4 interface [Windows Debugging], GetProcessOptions method, IDebugClient5 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient3::GetProcessOptions, dbgeng/IDebugClient5::GetProcessOptions, GetProcessOptions method [Windows Debugging], IDebugClient4 interface, debugger.getprocessoptions, GetProcessOptions method [Windows Debugging], IDebugClient interface, IDebugClient2 interface [Windows Debugging], GetProcessOptions method, dbgeng/IDebugClient::GetProcessOptions, IDebugClient4::GetProcessOptions, IDebugClient::GetProcessOptions, IDebugClient3 interface [Windows Debugging], GetProcessOptions method, dbgeng/IDebugClient2::GetProcessOptions, dbgeng/IDebugClient4::GetProcessOptions, GetProcessOptions method [Windows Debugging], GetProcessOptions method [Windows Debugging], IDebugClient5 interface, GetProcessOptions method [Windows Debugging], IDebugClient3 interface, IDebugClient5, GetProcessOptions, IDebugClient_5d54bc2a-5691-4a3a-b3c9-92fc577cdabb.xml, IDebugClient2::GetProcessOptions, IDebugClient5::GetProcessOptions, IDebugClient3::GetProcessOptions, IDebugClient interface [Windows Debugging], GetProcessOptions method
+ms.keywords : dbgeng/IDebugClient2::GetProcessOptions, GetProcessOptions method [Windows Debugging], IDebugClient4 interface, IDebugClient::GetProcessOptions, IDebugClient5::GetProcessOptions, dbgeng/IDebugClient4::GetProcessOptions, IDebugClient_5d54bc2a-5691-4a3a-b3c9-92fc577cdabb.xml, debugger.getprocessoptions, GetProcessOptions method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], GetProcessOptions method, IDebugClient3 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient5 interface, IDebugClient3::GetProcessOptions, IDebugClient4 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient3 interface, GetProcessOptions, IDebugClient2 interface [Windows Debugging], GetProcessOptions method, IDebugClient2::GetProcessOptions, dbgeng/IDebugClient5::GetProcessOptions, IDebugClient5 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient2 interface, IDebugClient4::GetProcessOptions, dbgeng/IDebugClient3::GetProcessOptions, GetProcessOptions method [Windows Debugging], dbgeng/IDebugClient::GetProcessOptions, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -89,34 +89,29 @@ For more information about creating and attaching to live user-mode targets, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537917">AddProcessOptions</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541534">DEBUG_PROCESS_XXX</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554505">RemoveProcessOptions</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537917">AddProcessOptions</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556765">SetProcessOptions</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
  
 

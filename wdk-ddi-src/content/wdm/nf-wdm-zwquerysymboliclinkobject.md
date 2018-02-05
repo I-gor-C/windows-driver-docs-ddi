@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0294c840-2912-4137-886f-832e9f21bbea
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwQuerySymbolicLinkObject routine [Kernel-Mode Driver Architecture], NtQuerySymbolicLinkObject, ZwQuerySymbolicLinkObject, kernel.zwquerysymboliclinkobject, wdm/ZwQuerySymbolicLinkObject, wdm/NtQuerySymbolicLinkObject, k111_0909b6b6-fa4d-421f-b17f-8201a254990b.xml
+ms.keywords : wdm/ZwQuerySymbolicLinkObject, wdm/NtQuerySymbolicLinkObject, ZwQuerySymbolicLinkObject routine [Kernel-Mode Driver Architecture], ZwQuerySymbolicLinkObject, NtQuerySymbolicLinkObject, kernel.zwquerysymboliclinkobject, k111_0909b6b6-fa4d-421f-b17f-8201a254990b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,20 +82,19 @@ If <b>ZwQuerySymbolicLinkObject</b> returns STATUS_BUFFER_TOO_SMALL drivers shou
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
 <a href="..\wdm\nf-wdm-zwopensymboliclinkobject.md">ZwOpenSymbolicLinkObject</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

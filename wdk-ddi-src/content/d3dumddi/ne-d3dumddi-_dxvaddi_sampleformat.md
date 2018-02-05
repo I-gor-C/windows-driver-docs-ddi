@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 23482cdc-6412-4309-805e-a439d8e81b59
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_SampleSubStream, DXVADDI_SampleProgressiveFrame, d3dumddi/DXVADDI_SAMPLEFORMAT, DXVADDI_SampleFieldInterleavedOddFirst, d3dumddi/DXVADDI_SampleFieldSingleOdd, d3dumddi/DXVADDI_SampleFieldInterleavedEvenFirst, d3dumddi/DXVADDI_SampleUnknown, d3dumddi/DXVADDI_SampleFieldSingleEven, display.dxvaddi_sampleformat, d3dumddi/DXVADDI_SampleProgressiveFrame, DXVADDI_SampleUnknown, DXVADDI_SampleFieldSingleOdd, DXVA2_Structs_70e0302d-16a1-4a48-8f51-943873c20997.xml, DXVADDI_SAMPLEFORMAT enumeration [Display Devices], DXVADDI_SampleFieldSingleEven, DXVADDI_SampleFieldInterleavedEvenFirst, d3dumddi/DXVADDI_SampleFieldInterleavedOddFirst, _DXVADDI_SAMPLEFORMAT, DXVADDI_SampleFormatMask, DXVADDI_SAMPLEFORMAT, d3dumddi/DXVADDI_SampleSubStream, d3dumddi/DXVADDI_SampleFormatMask
+ms.keywords : DXVADDI_SampleFieldSingleEven, DXVADDI_SampleFieldSingleOdd, DXVADDI_SampleSubStream, DXVA2_Structs_70e0302d-16a1-4a48-8f51-943873c20997.xml, d3dumddi/DXVADDI_SAMPLEFORMAT, DXVADDI_SampleProgressiveFrame, d3dumddi/DXVADDI_SampleSubStream, display.dxvaddi_sampleformat, d3dumddi/DXVADDI_SampleProgressiveFrame, d3dumddi/DXVADDI_SampleFieldSingleOdd, DXVADDI_SAMPLEFORMAT, d3dumddi/DXVADDI_SampleFieldSingleEven, d3dumddi/DXVADDI_SampleFieldInterleavedEvenFirst, _DXVADDI_SAMPLEFORMAT, d3dumddi/DXVADDI_SampleFormatMask, DXVADDI_SampleUnknown, DXVADDI_SAMPLEFORMAT enumeration [Display Devices], DXVADDI_SampleFieldInterleavedOddFirst, d3dumddi/DXVADDI_SampleFieldInterleavedOddFirst, DXVADDI_SampleFormatMask, DXVADDI_SampleFieldInterleavedEvenFirst, d3dumddi/DXVADDI_SampleUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -107,9 +107,7 @@ One of the values of DXVADDI_SAMPLEFORMAT can be specified in the <b>SampleForma
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

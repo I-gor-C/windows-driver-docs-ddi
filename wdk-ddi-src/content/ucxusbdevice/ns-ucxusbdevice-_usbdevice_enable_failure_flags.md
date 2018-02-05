@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B239E637-2920-48A5-9F45-D3089140C8A2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBDEVICE_ENABLE_FAILURE_FLAGS structure [Buses], P_USBDEVICE_ENABLE_FAILURE_FLAGS structure pointer [Buses], USBDEVICE_ENABLE_FAILURE_FLAGS, ucxusbdevice/_USBDEVICE_ENABLE_FAILURE_FLAGS, ucxusbdevice/P_USBDEVICE_ENABLE_FAILURE_FLAGS, buses._usbdevice_enable_failure_flags, _USBDEVICE_ENABLE_FAILURE_FLAGS, P_USBDEVICE_ENABLE_FAILURE_FLAGS
+ms.keywords : "_USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS, P_USBDEVICE_ENABLE_FAILURE_FLAGS structure pointer [Buses], P_USBDEVICE_ENABLE_FAILURE_FLAGS, buses._usbdevice_enable_failure_flags, ucxusbdevice/P_USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS structure [Buses], ucxusbdevice/_USBDEVICE_ENABLE_FAILURE_FLAGS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,16 +70,13 @@ Do not use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also
 
-<a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_enable.md">EVT_UCX_USBDEVICE_ENABLE</a>
-
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_enable.md">USBDEVICE_ENABLE</a>
+
+<a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_enable.md">EVT_UCX_USBDEVICE_ENABLE</a>
 
  
 

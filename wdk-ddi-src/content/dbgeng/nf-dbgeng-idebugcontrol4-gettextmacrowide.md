@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5b125041-969e-49bb-96d5-b40cc7285315
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.gettextmacrowide, IDebugControl4, dbgeng/IDebugControl4::GetTextMacroWide, IDebugControl4::GetTextMacroWide, GetTextMacroWide method [Windows Debugging], GetTextMacroWide, GetTextMacroWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetTextMacroWide method
+ms.keywords : IDebugControl4 interface [Windows Debugging], GetTextMacroWide method, GetTextMacroWide method [Windows Debugging], GetTextMacroWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetTextMacroWide, GetTextMacroWide, dbgeng/IDebugControl4::GetTextMacroWide, debugger.gettextmacrowide, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -102,26 +102,21 @@ For an overview of aliases used by the <a href="https://msdn.microsoft.com/fa52a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549280">GetTextReplacement</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556809">SetTextMacro</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556809">SetTextMacro</a>
 
  
 

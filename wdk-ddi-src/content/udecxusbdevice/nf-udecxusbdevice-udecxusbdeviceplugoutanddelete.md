@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 27816655-1FE9-44A0-81BB-59808FE6F064
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.udecxusbdeviceplugoutanddelete, UdecxUsbDevicePlugOutAndDelete, UdecxUsbDevicePlugOutAndDelete function [Buses], udecxusbdevice/UdecxUsbDevicePlugOutAndDelete
+ms.keywords : UdecxUsbDevicePlugOutAndDelete, buses.udecxusbdeviceplugoutanddelete, UdecxUsbDevicePlugOutAndDelete function [Buses], udecxusbdevice/UdecxUsbDevicePlugOutAndDelete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
+req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
 req.product : Windows 10 or later.
 ---
 
@@ -69,14 +69,12 @@ If the USB device needs to be removed at runtime, the client driver can call thi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

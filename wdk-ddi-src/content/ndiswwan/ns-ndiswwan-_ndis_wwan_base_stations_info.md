@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7C0E0903-F564-4F2B-95F9-FA8512FEF61B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_BASE_STATIONS_INFO structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_BASE_STATIONS_INFO, ndiswwan/NDIS_WWAN_BASE_STATIONS_INFO, PNDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_BASE_STATIONS_INFO, _NDIS_WWAN_BASE_STATIONS_INFO, ndiswwan/PNDIS_WWAN_BASE_STATIONS_INFO, netvista.ndis_wwan_base_stations_info
+ms.keywords : "*PNDIS_WWAN_BASE_STATIONS_INFO, PNDIS_WWAN_BASE_STATIONS_INFO, netvista.ndis_wwan_base_stations_info, ndiswwan/NDIS_WWAN_BASE_STATIONS_INFO, _NDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO, PNDIS_WWAN_BASE_STATIONS_INFO structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO"
+req.typenames : NDIS_WWAN_BASE_STATIONS_INFO, *PNDIS_WWAN_BASE_STATIONS_INFO
 ---
 
 # _NDIS_WWAN_BASE_STATIONS_INFO structure
@@ -161,18 +161,16 @@ The operation failed because the device does not support this OID.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
+<a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-base-stations-info">NDIS_STATUS_WWAN_BASE_STATIONS_INFO</a>
 
-<a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-base-stations-info">OID_WWAN_BASE_STATIONS_INFO</a>
 

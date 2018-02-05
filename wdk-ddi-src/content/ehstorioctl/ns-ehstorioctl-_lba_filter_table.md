@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 656A413C-C0EF-4847-93F5-02DCCF40F348
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PLBA_FILTER_TABLE, LBA_FILTER_TABLE structure [Storage Devices], LBA_FILTER_TABLE, _LBA_FILTER_TABLE, storage.lba_filter_table, ehstorioctl/PLBA_FILTER_TABLE, PLBA_FILTER_TABLE, PLBA_FILTER_TABLE structure pointer [Storage Devices], ehstorioctl/LBA_FILTER_TABLE"
+ms.keywords : ehstorioctl/LBA_FILTER_TABLE, _LBA_FILTER_TABLE, storage.lba_filter_table, LBA_FILTER_TABLE structure [Storage Devices], LBA_FILTER_TABLE, ehstorioctl/PLBA_FILTER_TABLE, PLBA_FILTER_TABLE structure pointer [Storage Devices], *PLBA_FILTER_TABLE, PLBA_FILTER_TABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,16 +98,14 @@ Following the <b>LBA_FILTER_TABLE</b> structure is an array of 0 or more <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
 
 ## See Also
 
-<a href="..\ehstorioctl\ns-ehstorioctl-_lba_filter_table_entry.md">LBA_FILTER_TABLE_ENTRY</a>
-
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_update_lba_filter_table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>
+
+<a href="..\ehstorioctl\ns-ehstorioctl-_lba_filter_table_entry.md">LBA_FILTER_TABLE_ENTRY</a>
 
  
 

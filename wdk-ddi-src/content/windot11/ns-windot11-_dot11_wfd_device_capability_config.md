@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 918307D4-0952-4FF0-8591-522C7E92194A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_WFD_DEVICE_CAPABILITY_CONFIG, netvista._dot11_wfd_device_capability_config, DOT11_WFD_DEVICE_CAPABILITY_CONFIG structure [Network Drivers Starting with Windows Vista], _DOT11_WFD_DEVICE_CAPABILITY_CONFIG, PDOT11_WFD_DEVICE_CAPABILITY_CONFIG structure pointer [Network Drivers Starting with Windows Vista], windot11/ DOT11_WFD_DEVICE_CAPABILITY_CONFIG, windot11/PDOT11_WFD_DEVICE_CAPABILITY_CONFIG, DOT11_WFD_DEVICE_CAPABILITY_CONFIG, *PDOT11_WFD_DEVICE_CAPABILITY_CONFIG
+ms.keywords : "*PDOT11_WFD_DEVICE_CAPABILITY_CONFIG, PDOT11_WFD_DEVICE_CAPABILITY_CONFIG, windot11/PDOT11_WFD_DEVICE_CAPABILITY_CONFIG, _DOT11_WFD_DEVICE_CAPABILITY_CONFIG, DOT11_WFD_DEVICE_CAPABILITY_CONFIG, windot11/ DOT11_WFD_DEVICE_CAPABILITY_CONFIG, PDOT11_WFD_DEVICE_CAPABILITY_CONFIG structure pointer [Network Drivers Starting with Windows Vista], netvista._dot11_wfd_device_capability_config, DOT11_WFD_DEVICE_CAPABILITY_CONFIG structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -119,7 +119,5 @@ The versions of WPS enabled for the Wi-Fi Direct Device
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |

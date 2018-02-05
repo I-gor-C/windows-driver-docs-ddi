@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d32c19b6-462e-48e3-b22b-02542dca9cc4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsApplyModifiedLayerData0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_a7adbeec-b234-451e-9da0-d5e5b7cefc90.xml, FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS, FwpsApplyModifiedLayerData0, netvista.fwpsapplymodifiedlayerdata0, fwpsk/FwpsApplyModifiedLayerData0
+ms.keywords : FwpsApplyModifiedLayerData0 function [Network Drivers Starting with Windows Vista], FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS, FwpsApplyModifiedLayerData0, netvista.fwpsapplymodifiedlayerdata0, fwpsk/FwpsApplyModifiedLayerData0, wfp_ref_2_funct_3_fwps_A-B_a7adbeec-b234-451e-9da0-d5e5b7cefc90.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,8 +61,8 @@ void NTAPI FwpsApplyModifiedLayerData0(
 
 The classification handle that identifies the callout driver's processing at the current layer.
      This handle is obtained by calling 
-     <mshelp:link keywords="netvista.fwpsacquireclassifyhandle0" tabindex="0"><b>
-     FwpsAcquireClassifyHandle0</b></mshelp:link>.
+     <a href="..\fwpsk\nf-fwpsk-fwpsacquireclassifyhandle0.md">
+     FwpsAcquireClassifyHandle0</a>.
 
 `modifiedLayerData`
 
@@ -104,31 +104,28 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.fwpsacquirewritablelayerdatapointer0" tabindex="0"><b>
-   FwpsAcquireWritableLayerDataPointer0</b></mshelp:link>
-
-<a href="..\fwpsk\ns-fwpsk-_fwps_connect_request0.md">FWPS_CONNECT_REQUEST0</a>
-
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
+   FwpsAcquireWritableLayerDataPointer0</a>
 
 <a href="..\fwpsk\ns-fwpsk-_fwps_bind_request0.md">FWPS_BIND_REQUEST0</a>
 
+<a href="..\fwpsk\ns-fwpsk-_fwps_connect_request0.md">FWPS_CONNECT_REQUEST0</a>
+
 <a href="..\fwpsk\nf-fwpsk-fwpsacquireclassifyhandle0.md">FwpsAcquireClassifyHandle0</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsreleaseclassifyhandle0.md">FwpsReleaseClassifyHandle0</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsreleaseclassifyhandle0.md">FwpsReleaseClassifyHandle0</a>
 
  
 

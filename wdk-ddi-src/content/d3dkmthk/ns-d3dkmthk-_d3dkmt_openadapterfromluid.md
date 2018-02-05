@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 93f5c1d1-e1df-4536-8b52-db3b4942488c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_OPENADAPTERFROMLUID structure [Display Devices], D3DKMT_OPENADAPTERFROMLUID, d3dkmthk/D3DKMT_OPENADAPTERFROMLUID, _D3DKMT_OPENADAPTERFROMLUID, display.d3dkmt_openadapterfromluid
+ms.keywords : D3DKMT_OPENADAPTERFROMLUID, d3dkmthk/D3DKMT_OPENADAPTERFROMLUID, D3DKMT_OPENADAPTERFROMLUID structure [Display Devices], display.d3dkmt_openadapterfromluid, _D3DKMT_OPENADAPTERFROMLUID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _D3DKMT_OPENADAPTERFROMLUID {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

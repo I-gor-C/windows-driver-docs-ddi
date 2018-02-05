@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f412ff4e-6c65-40f8-9747-dc5059e588f6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.track_data, *PTRACK_DATA, ntddcdrm/TRACK_DATA, structs-CD-ROM_37ea4578-82b7-4b8e-be1b-28c27de349d9.xml, TRACK_DATA structure [Storage Devices], TRACK_DATA, PTRACK_DATA structure pointer [Storage Devices], ntddcdrm/PTRACK_DATA, _TRACK_DATA, PTRACK_DATA
+ms.keywords : ntddcdrm/PTRACK_DATA, ntddcdrm/TRACK_DATA, PTRACK_DATA, TRACK_DATA, storage.track_data, TRACK_DATA structure [Storage Devices], *PTRACK_DATA, _TRACK_DATA, structs-CD-ROM_37ea4578-82b7-4b8e-be1b-28c27de349d9.xml, PTRACK_DATA structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : TRACK_DATA, *PTRACK_DATA
+req.typenames : "*PTRACK_DATA, TRACK_DATA"
 ---
 
 # _TRACK_DATA structure
@@ -86,16 +86,13 @@ This structure contains table of contents information for a track.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>
-
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a>
+
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>
 
  
 

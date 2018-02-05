@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 824E8A5C-7530-4C7B-B093-386DD3D45A6B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PrintPropertiesCollection, winspool/PrintPropertiesCollection, PrintPropertiesCollection structure [Print Devices], print.printpropertiescollection
+ms.keywords : winspool/PrintPropertiesCollection, print.printpropertiescollection, PrintPropertiesCollection structure [Print Devices], PrintPropertiesCollection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winspool.h |

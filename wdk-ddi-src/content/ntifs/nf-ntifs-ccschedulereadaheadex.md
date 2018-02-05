@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8549DAA9-3BD3-4CED-AC2A-EFADF317EF5A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcScheduleReadAheadEx, CcScheduleReadAheadEx routine [Installable File System Drivers], ntifs/CcScheduleReadAheadEx, ifsk.ccschedulereadaheadex
+ms.keywords : CcScheduleReadAheadEx, ntifs/CcScheduleReadAheadEx, ifsk.ccschedulereadaheadex, CcScheduleReadAheadEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,30 +85,28 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a>
 
 <a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>
 
 <a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
-
 <b>CcCopyReadEx</b>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
 
 <a href="..\ntifs\nf-ntifs-ccfastcopyread.md">CcFastCopyRead</a>
 
 <a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a>
 
  
 

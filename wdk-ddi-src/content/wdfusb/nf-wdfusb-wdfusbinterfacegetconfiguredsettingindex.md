@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ca8f1fae-1655-4e0d-baa4-133f11cf246f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbInterfaceGetConfiguredSettingIndex, DFUsbRef_720a2078-a35c-491b-a8d1-7a2b3d5c88f1.xml, wdf.wdfusbinterfacegetconfiguredsettingindex, WdfUsbInterfaceGetConfiguredSettingIndex method, kmdf.wdfusbinterfacegetconfiguredsettingindex, WdfUsbInterfaceGetConfiguredSettingIndex, PFN_WDFUSBINTERFACEGETCONFIGUREDSETTINGINDEX
+ms.keywords : wdfusb/WdfUsbInterfaceGetConfiguredSettingIndex, WdfUsbInterfaceGetConfiguredSettingIndex method, kmdf.wdfusbinterfacegetconfiguredsettingindex, WdfUsbInterfaceGetConfiguredSettingIndex, PFN_WDFUSBINTERFACEGETCONFIGUREDSETTINGINDEX, wdf.wdfusbinterfacegetconfiguredsettingindex, DFUsbRef_720a2078-a35c-491b-a8d1-7a2b3d5c88f1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,11 @@ For more information about the <b>WdfUsbInterfaceGetConfiguredSettingIndex</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 

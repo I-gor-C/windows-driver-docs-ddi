@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6a178ef0-0741-4b0c-a688-cae3923135ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_SETSTREAMSOURCE, UMDisplayDriver_param_Structs_f90eed83-1d01-4502-84e4-22cff72016d6.xml, D3DDDIARG_SETSTREAMSOURCE, D3DDDIARG_SETSTREAMSOURCE structure [Display Devices], display.d3dddiarg_setstreamsource, d3dumddi/D3DDDIARG_SETSTREAMSOURCE"
+ms.keywords : display.d3dddiarg_setstreamsource, UMDisplayDriver_param_Structs_f90eed83-1d01-4502-84e4-22cff72016d6.xml, D3DDDIARG_SETSTREAMSOURCE structure [Display Devices], d3dumddi/D3DDDIARG_SETSTREAMSOURCE, D3DDDIARG_SETSTREAMSOURCE, _D3DDDIARG_SETSTREAMSOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,9 +80,7 @@ The <b>Stride</b> value must be DWORD-aligned.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

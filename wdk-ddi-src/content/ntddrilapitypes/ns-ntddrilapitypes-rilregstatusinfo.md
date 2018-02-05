@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 12471d22-4d5d-411e-bfde-4d13d7a3bcca
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilregstatusinfo, ntddrilapitypes/RILREGSTATUSINFO, RILREGSTATUSINFO structure [Network Drivers Starting with Windows Vista], *LPRILREGSTATUSINFO, RILREGSTATUSINFO
+ms.keywords : RILREGSTATUSINFO structure [Network Drivers Starting with Windows Vista], *LPRILREGSTATUSINFO, RILREGSTATUSINFO, ntddrilapitypes/RILREGSTATUSINFO, netvista.rilregstatusinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -109,7 +109,4 @@ typedef struct _RILREGSTATUSINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

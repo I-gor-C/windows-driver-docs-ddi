@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7320238d-0c7f-423c-8de7-2b22d02d77bd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfcompanion/WdfDeviceInitSetCompanionEventCallbacks, WdfDeviceInitSetCompanionEventCallbacks, WdfDeviceInitSetCompanionEventCallbacks method, wdf.wdfdeviceinitsetcompanioneventcallbacks
+ms.keywords : WdfDeviceInitSetCompanionEventCallbacks, wdfcompanion/WdfDeviceInitSetCompanionEventCallbacks, wdf.wdfdeviceinitsetcompanioneventcallbacks, WdfDeviceInitSetCompanionEventCallbacks method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,8 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
+| **Target Platform** | Windows |
 | **Minimum UMDF version** | 2.23 |
 | **Header** | wdfcompanion.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

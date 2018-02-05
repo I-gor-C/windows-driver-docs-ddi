@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : ae438f89-27b7-423f-9f82-b103ba70b7b5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CLIENT_DEVICE_INFORMATION, gpiobtn._client_device_information, CLIENT_DEVICE_INFORMATION structure, hwnclx/CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION, _CLIENT_DEVICE_INFORMATION
+ms.keywords : CLIENT_DEVICE_INFORMATION structure, *PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION, gpiobtn._client_device_information, hwnclx/CLIENT_DEVICE_INFORMATION, _CLIENT_DEVICE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION"
+req.typenames : CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION
 ---
 
 # _CLIENT_DEVICE_INFORMATION structure
@@ -69,9 +69,7 @@ Specifies the version number of this structure. This value must be provided by t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | hwnclx.h |
 
 ## See Also

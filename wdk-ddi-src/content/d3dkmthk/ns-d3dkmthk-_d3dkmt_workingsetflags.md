@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 05dddebc-2a30-4cc5-b905-9ee4ebf8d00e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, display.d3dkmt_workingsetflags, D3DKMT_WORKINGSETFLAGS structure [Display Devices], _D3DKMT_WORKINGSETFLAGS, d3dkmthk/D3DKMT_WORKINGSETFLAGS, D3DKMT_WORKINGSETFLAGS
+ms.keywords : D3DKMT_WORKINGSETFLAGS structure [Display Devices], D3DKMT_WORKINGSETFLAGS, display.d3dkmt_workingsetflags, d3dkmthk/D3DKMT_WORKINGSETFLAGS, OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, _D3DKMT_WORKINGSETFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ Setting this member is equivalent to setting the first bit of a 32-bit value (0x
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

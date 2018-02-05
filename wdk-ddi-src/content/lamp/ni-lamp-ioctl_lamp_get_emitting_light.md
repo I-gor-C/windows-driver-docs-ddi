@@ -84,6 +84,4 @@ If the device has been acquired by a camera driver, the lamp driver should retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | lamp.h |
-| **IRQL** |  |

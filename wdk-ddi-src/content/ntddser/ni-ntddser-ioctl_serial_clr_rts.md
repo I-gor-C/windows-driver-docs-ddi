@@ -73,9 +73,7 @@ The <b>Information</b> member is set to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddser.h (include Ntddser.h) |
-| **IRQL** |  |
 
 ## See Also
 

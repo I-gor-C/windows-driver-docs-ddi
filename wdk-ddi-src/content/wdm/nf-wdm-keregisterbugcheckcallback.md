@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6a4ab5a4-4d09-4fd5-bc7b-0a8e5a634eb3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeRegisterBugCheckCallback routine [Kernel-Mode Driver Architecture], wdm/KeRegisterBugCheckCallback, kernel.keregisterbugcheckcallback, k105_42736e68-1f5a-47df-976a-df3bfa9a356e.xml, KeRegisterBugCheckCallback
+ms.keywords : wdm/KeRegisterBugCheckCallback, KeRegisterBugCheckCallback, k105_42736e68-1f5a-47df-976a-df3bfa9a356e.xml, kernel.keregisterbugcheckcallback, KeRegisterBugCheckCallback routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,24 +95,22 @@ The <i>Component</i> string is used to identify the driver during crash-dump deb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
-
-<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
 
+<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+
 <a href="..\wdm\nf-wdm-kederegisterbugcheckcallback.md">KeDeregisterBugCheckCallback</a>
+
+<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
 

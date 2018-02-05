@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 26f3cd7b-ae2e-4632-bfb2-e62839346f83
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_offerallocations, d3dumddi/D3DDDICB_OFFERALLOCATIONS, _D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS structure [Display Devices]
+ms.keywords : "_D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS structure [Display Devices], d3dumddi/D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS, display.d3dddicb_offerallocations"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,18 +79,16 @@ If the user-mode driver uses the array specified by <b>HandleList</b> to offer a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a>
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
 
  
 

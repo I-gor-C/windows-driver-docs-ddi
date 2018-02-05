@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : da4074ac-309d-46b9-b630-79d73ed73f36
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_PVAM_SETTABLEPALETTE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration [Display Devices], DmEnums_ac8b4715-9a7c-4698-8f57-e6125f90f75b.xml, display.d3dkmdt_pixel_value_access_mode, d3dkmdt/D3DKMDT_PVAM_UNINITIALIZED, D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_DIRECT, d3dkmdt/D3DKMDT_PVAM_PRESETPALETTE, d3dkmdt/D3DKMDT_PVAM_SETTABLEPALETTE, _D3DKMDT_PIXEL_VALUE_ACCESS_MODE, D3DKMDT_PVAM_UNINITIALIZED, D3DKMDT_PVAM_DIRECT, D3DKMDT_PVAM_PRESETPALETTE
+ms.keywords : d3dkmdt/D3DKMDT_PVAM_UNINITIALIZED, _D3DKMDT_PIXEL_VALUE_ACCESS_MODE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_SETTABLEPALETTE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration [Display Devices], D3DKMDT_PVAM_SETTABLEPALETTE, D3DKMDT_PVAM_DIRECT, display.d3dkmdt_pixel_value_access_mode, D3DKMDT_PVAM_UNINITIALIZED, d3dkmdt/D3DKMDT_PVAM_DIRECT, d3dkmdt/D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_PRESETPALETTE, DmEnums_ac8b4715-9a7c-4698-8f57-e6125f90f75b.xml, D3DKMDT_PVAM_PRESETPALETTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,9 +83,7 @@ The <b>Format.Graphics</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

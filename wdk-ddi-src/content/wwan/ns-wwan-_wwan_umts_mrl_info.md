@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : C1129291-D0E7-48F6-B317-1A0BCB6D25DC
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PWWAN_UMTS_MRL_INFO, WWAN_UMTS_MRL_INFO, wwan/PWWAN_UMTS_MRL_INFO, _WWAN_UMTS_MRL_INFO, netvista.wwan_umts_mrl_info, PWWAN_UMTS_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], PWWAN_UMTS_MRL_INFO, WWAN_UMTS_MRL_INFO structure [Network Drivers Starting with Windows Vista], wwan/WWAN_UMTS_MRL_INFO"
+ms.keywords : netvista.wwan_umts_mrl_info, PWWAN_UMTS_MRL_INFO, _WWAN_UMTS_MRL_INFO, wwan/WWAN_UMTS_MRL_INFO, WWAN_UMTS_MRL_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_UMTS_MRL_INFO, PWWAN_UMTS_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_UMTS_MRL_INFO, *PWWAN_UMTS_MRL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_UMTS_MRL_INFO, WWAN_UMTS_MRL_INFO"
+req.typenames : WWAN_UMTS_MRL_INFO, *PWWAN_UMTS_MRL_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -105,20 +105,18 @@ The UTRA Absolute Radio Frequency Channel Number for the serving cell (0-16383).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_umts_mrl.md">WWAN_UMTS_MRL</a>
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
+<a href="..\wwan\ns-wwan-_wwan_umts_serving_cell_info.md">WWAN_UMTS_SERVING_CELL_INFO</a>
 
 <a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
 
-<a href="..\wwan\ns-wwan-_wwan_umts_serving_cell_info.md">WWAN_UMTS_SERVING_CELL_INFO</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
+
+<a href="..\wwan\ns-wwan-_wwan_umts_mrl.md">WWAN_UMTS_MRL</a>
 
  
 

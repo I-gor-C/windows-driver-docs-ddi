@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 01627E7A-460F-4E49-B98C-0FCCFAB2F8BB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : BdCbClassificationKnownBadImageBootCritical, _BDCB_CLASSIFICATION, *PBDCB_CLASSIFICATION, ntddk/BdCbClassificationEnd, BDCB_CLASSIFICATION enumeration [Kernel-Mode Driver Architecture], BDCB_CLASSIFICATION, BdCbClassificationKnownBadImage, BdCbClassificationUnknownImage, kernel.bdcb_classification, ntddk/BdCbClassificationUnknownImage, ntddk/BdCbClassificationKnownGoodImage, BdCbClassificationKnownGoodImage, ntddk/BdCbClassificationKnownBadImage, ntddk/BdCbClassificationKnownBadImageBootCritical, BdCbClassificationEnd, ntddk/BDCB_CLASSIFICATION
+ms.keywords : BdCbClassificationKnownGoodImage, ntddk/BdCbClassificationEnd, BdCbClassificationUnknownImage, BDCB_CLASSIFICATION enumeration [Kernel-Mode Driver Architecture], ntddk/BDCB_CLASSIFICATION, kernel.bdcb_classification, ntddk/BdCbClassificationUnknownImage, ntddk/BdCbClassificationKnownGoodImage, *PBDCB_CLASSIFICATION, BdCbClassificationKnownBadImageBootCritical, _BDCB_CLASSIFICATION, ntddk/BdCbClassificationKnownBadImage, BdCbClassificationKnownBadImage, ntddk/BdCbClassificationKnownBadImageBootCritical, BDCB_CLASSIFICATION, BdCbClassificationEnd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,9 +86,7 @@ typedef enum _BDCB_CLASSIFICATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

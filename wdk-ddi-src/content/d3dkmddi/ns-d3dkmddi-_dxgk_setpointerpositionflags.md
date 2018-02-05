@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c834080a-1a0a-4327-b80b-6e5eb3728605
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_57c5d8e6-b270-4423-8d85-5db8103e2492.xml, DXGK_SETPOINTERPOSITIONFLAGS, display.dxgk_setpointerpositionflags, _DXGK_SETPOINTERPOSITIONFLAGS, DXGK_SETPOINTERPOSITIONFLAGS structure [Display Devices], d3dkmddi/DXGK_SETPOINTERPOSITIONFLAGS
+ms.keywords : display.dxgk_setpointerpositionflags, DmStructs_57c5d8e6-b270-4423-8d85-5db8103e2492.xml, DXGK_SETPOINTERPOSITIONFLAGS, _DXGK_SETPOINTERPOSITIONFLAGS, DXGK_SETPOINTERPOSITIONFLAGS structure [Display Devices], d3dkmddi/DXGK_SETPOINTERPOSITIONFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,9 +62,7 @@ typedef struct _DXGK_SETPOINTERPOSITIONFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

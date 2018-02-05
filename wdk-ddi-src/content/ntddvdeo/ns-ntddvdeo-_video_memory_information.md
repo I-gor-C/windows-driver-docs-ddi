@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7d580d5c-b97f-4d26-9eec-165c5db66a0b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : Video_Structs_efc1abe7-c8bb-403f-ae5d-136b25881929.xml, PVIDEO_MEMORY_INFORMATION, ntddvdeo/VIDEO_MEMORY_INFORMATION, ntddvdeo/PVIDEO_MEMORY_INFORMATION, VIDEO_MEMORY_INFORMATION, display.video_memory_information, *PVIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION structure pointer [Display Devices], VIDEO_MEMORY_INFORMATION structure [Display Devices], _VIDEO_MEMORY_INFORMATION
+ms.keywords : ntddvdeo/PVIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION, Video_Structs_efc1abe7-c8bb-403f-ae5d-136b25881929.xml, _VIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION structure pointer [Display Devices], VIDEO_MEMORY_INFORMATION structure [Display Devices], display.video_memory_information, VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION, ntddvdeo/VIDEO_MEMORY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVIDEO_MEMORY_INFORMATION, VIDEO_MEMORY_INFORMATION"
+req.typenames : VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION
 ---
 
 # _VIDEO_MEMORY_INFORMATION structure
@@ -80,20 +80,17 @@ In the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_V
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
 ## See Also
 
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a>
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_memory.md">VIDEO_MEMORY</a>
 
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a>
 
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
 
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_memory.md">VIDEO_MEMORY</a>
+<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_unmap_video_memory.md">IOCTL_VIDEO_UNMAP_VIDEO_MEMORY</a>
 
  
 

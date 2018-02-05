@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 29ed998c-d833-496f-a728-0eef2cd49ae6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_ERROR_RECORD, PWHEA_ERROR_RECORD, ntddk/WHEA_ERROR_RECORD, whea.whea_error_record, PWHEA_ERROR_RECORD structure pointer [WHEA Drivers and Applications], *PWHEA_ERROR_RECORD, ntddk/PWHEA_ERROR_RECORD, WHEA_ERROR_RECORD structure [WHEA Drivers and Applications], _WHEA_ERROR_RECORD, whearef_dc309156-feee-4cc2-ba75-d39f3f05fa5f.xml
+ms.keywords : whearef_dc309156-feee-4cc2-ba75-d39f3f05fa5f.xml, *PWHEA_ERROR_RECORD, WHEA_ERROR_RECORD, whea.whea_error_record, PWHEA_ERROR_RECORD, _WHEA_ERROR_RECORD, ntddk/WHEA_ERROR_RECORD, PWHEA_ERROR_RECORD structure pointer [WHEA Drivers and Applications], WHEA_ERROR_RECORD structure [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_RECORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_ERROR_RECORD, WHEA_ERROR_RECORD, PWHEA_ERROR_RECORD"
+req.typenames : WHEA_ERROR_RECORD, PWHEA_ERROR_RECORD, *PWHEA_ERROR_RECORD
 ---
 
 # _WHEA_ERROR_RECORD structure
@@ -70,9 +70,7 @@ A user-mode application can retrieve the error record from the hardware error ev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

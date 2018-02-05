@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 97169CF5-566E-4EF6-88AD-7B68E9FE46EC
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.vmbchannelallocate, VmbChannelAllocate, VmbChannelAllocate function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelAllocate
+ms.keywords : VmbChannelAllocate, VmbChannelAllocate function [Network Drivers Starting with Windows Vista], netvista.vmbchannelallocate, vmbuskernelmodeclientlibapi/VmbChannelAllocate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -84,20 +84,19 @@ it is enabled by using the  <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskern
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
+| **Library** | Vmbkmcl.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelcleanup.md">VmbChannelCleanup</a>
-
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelenable.md">VmbChannelEnable</a>
+
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelcleanup.md">VmbChannelCleanup</a>
 
  
 

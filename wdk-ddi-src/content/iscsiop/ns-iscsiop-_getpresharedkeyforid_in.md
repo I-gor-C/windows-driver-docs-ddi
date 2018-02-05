@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4b3d3c5d-c34c-4ed8-bf62-1d885442ee1e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : GetPresharedKeyForId_IN structure [Storage Devices], structs-iSCSI_2bdada81-7b98-40cd-bc44-e23e53118c60.xml, iscsiop/GetPresharedKeyForId_IN, *PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN, iscsiop/PGetPresharedKeyForId_IN, PGetPresharedKeyForId_IN, storage.getpresharedkeyforid_in, _GetPresharedKeyForId_IN, PGetPresharedKeyForId_IN structure pointer [Storage Devices]
+ms.keywords : structs-iSCSI_2bdada81-7b98-40cd-bc44-e23e53118c60.xml, iscsiop/GetPresharedKeyForId_IN, *PGetPresharedKeyForId_IN, _GetPresharedKeyForId_IN, PGetPresharedKeyForId_IN, storage.getpresharedkeyforid_in, PGetPresharedKeyForId_IN structure pointer [Storage Devices], GetPresharedKeyForId_IN, GetPresharedKeyForId_IN structure [Storage Devices], iscsiop/PGetPresharedKeyForId_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -122,16 +122,13 @@ You must implement this method if the initiator supports IKE.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
 
 <a href="..\iscsiop\ns-iscsiop-_getpresharedkeyforid_out.md">GetPresharedKeyForId_OUT</a>
 

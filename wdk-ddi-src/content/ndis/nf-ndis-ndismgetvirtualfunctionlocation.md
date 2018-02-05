@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 772A7763-67C0-4218-8C5F-23972475D2C9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMGetVirtualFunctionLocation, NdisMGetVirtualFunctionLocation function [Network Drivers Starting with Windows Vista], netvista.ndismgetvirtualfunctionlocation, NdisMGetVirtualFunctionLocation
+ms.keywords : NdisMGetVirtualFunctionLocation function [Network Drivers Starting with Windows Vista], ndis/NdisMGetVirtualFunctionLocation, NdisMGetVirtualFunctionLocation, netvista.ndismgetvirtualfunctionlocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,24 +108,21 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451128">GetLocation</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451557">NDIS_MAKE_RID</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451128">GetLocation</a>
 
 <b></b>
 

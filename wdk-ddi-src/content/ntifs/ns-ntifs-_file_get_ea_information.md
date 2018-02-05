@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2abaf505-b890-43b6-a277-d930417bdcb8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PFILE_GET_EA_INFORMATION, *PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION, PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION structure [Installable File System Drivers], ifsk.file_get_ea_information, ntifs/FILE_GET_EA_INFORMATION, _FILE_GET_EA_INFORMATION, PFILE_GET_EA_INFORMATION structure pointer [Installable File System Drivers], fileinformationstructures_42834ee3-151e-4844-bd66-a20775e364b4.xml
+ms.keywords : ntifs/PFILE_GET_EA_INFORMATION, ntifs/FILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION structure [Installable File System Drivers], FILE_GET_EA_INFORMATION, ifsk.file_get_ea_information, PFILE_GET_EA_INFORMATION, _FILE_GET_EA_INFORMATION, fileinformationstructures_42834ee3-151e-4844-bd66-a20775e364b4.xml, *PFILE_GET_EA_INFORMATION, PFILE_GET_EA_INFORMATION structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,18 +73,15 @@ This structure must be aligned on a LONG (4-byte) boundary.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also
 
 <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
 
-<a href="..\ntifs\nf-ntifs-iocheckeabuffervalidity.md">IoCheckEaBufferValidity</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>
+
+<a href="..\ntifs\nf-ntifs-iocheckeabuffervalidity.md">IoCheckEaBufferValidity</a>
 
  
 

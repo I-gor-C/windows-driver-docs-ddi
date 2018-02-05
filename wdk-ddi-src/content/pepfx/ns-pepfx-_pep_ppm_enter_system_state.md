@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1a398899-b05d-4853-b68d-ae8be958dd91
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PPM_ENTER_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_ENTER_SYSTEM_STATE, PPEP_PPM_ENTER_SYSTEM_STATE, PEP_PPM_ENTER_SYSTEM_STATE, *PPEP_PPM_ENTER_SYSTEM_STATE, kernel.pep_ppm_enter_system_state, _PEP_PPM_ENTER_SYSTEM_STATE, PPEP_PPM_ENTER_SYSTEM_STATE structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_ENTER_SYSTEM_STATE
+ms.keywords : PEP_PPM_ENTER_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_ENTER_SYSTEM_STATE, _PEP_PPM_ENTER_SYSTEM_STATE, *PPEP_PPM_ENTER_SYSTEM_STATE, kernel.pep_ppm_enter_system_state, PPEP_PPM_ENTER_SYSTEM_STATE, PPEP_PPM_ENTER_SYSTEM_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_ENTER_SYSTEM_STATE, pepfx/PPEP_PPM_ENTER_SYSTEM_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_PPM_ENTER_SYSTEM_STATE, *PPEP_PPM_ENTER_SYSTEM_STATE
+req.typenames : "*PPEP_PPM_ENTER_SYSTEM_STATE, PEP_PPM_ENTER_SYSTEM_STATE"
 ---
 
 # _PEP_PPM_ENTER_SYSTEM_STATE structure
@@ -63,9 +63,7 @@ PEP must not queue any work from this notification. The processors will not proc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | pepfx.h |
 
 ## See Also

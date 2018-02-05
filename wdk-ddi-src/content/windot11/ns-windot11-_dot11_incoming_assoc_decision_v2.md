@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E2455BD2-E540-4B81-84D8-E88D740407ED
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PDOT11_INCOMING_ASSOC_DECISION_V2, _DOT11_INCOMING_ASSOC_DECISION_V2, windot11/DOT11_INCOMING_ASSOC_DECISION_V2, windot11/PDOT11_INCOMING_ASSOC_DECISION_V2, DOT11_INCOMING_ASSOC_DECISION_V2, PDOT11_INCOMING_ASSOC_DECISION_V2 structure pointer [Network Drivers Starting with Windows Vista], PDOT11_INCOMING_ASSOC_DECISION_V2, netvista.dot11_incoming_assoc_decision_v2, DOT11_INCOMING_ASSOC_DECISION_V2 structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : PDOT11_INCOMING_ASSOC_DECISION_V2 structure pointer [Network Drivers Starting with Windows Vista], DOT11_INCOMING_ASSOC_DECISION_V2 structure [Network Drivers Starting with Windows Vista], windot11/DOT11_INCOMING_ASSOC_DECISION_V2, windot11/PDOT11_INCOMING_ASSOC_DECISION_V2, netvista.dot11_incoming_assoc_decision_v2, *PDOT11_INCOMING_ASSOC_DECISION_V2, _DOT11_INCOMING_ASSOC_DECISION_V2, DOT11_INCOMING_ASSOC_DECISION_V2, PDOT11_INCOMING_ASSOC_DECISION_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_INCOMING_ASSOC_DECISION_V2, *PDOT11_INCOMING_ASSOC_DECISION_V2
+req.typenames : "*PDOT11_INCOMING_ASSOC_DECISION_V2, DOT11_INCOMING_ASSOC_DECISION_V2"
 req.product : Windows 10 or later.
 ---
 
@@ -108,9 +108,7 @@ The status code to include in the Peer-to-Peer (P2P) IE of the association respo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

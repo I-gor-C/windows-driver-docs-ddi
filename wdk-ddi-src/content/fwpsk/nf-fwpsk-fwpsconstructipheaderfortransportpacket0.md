@@ -125,8 +125,8 @@ Specifies the IPPROTO protocol type of the new IP header to be constructed. For 
 An optional handle that indicates the stack transport endpoint in the send data path into which
      the packet is to be injected. This endpoint handle is provided to a callout through the 
      <b>transportEndpointHandle</b> member of the 
-     <mshelp:link keywords="netvista.fwps_incoming_metadata_values0" tabindex="0"><b>
-     FWPS_INCOMING_METADATA_VALUES0</b></mshelp:link> structure that is passed to the callout driver's 
+     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
+     FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
 `controlData`
@@ -139,8 +139,8 @@ An optional pointer to a buffer that contains socket control data specified by t
 
 If present, socket control data is provided to a callout with the 
      <b>controlData</b> member of the 
-     <mshelp:link keywords="netvista.fwps_incoming_metadata_values0" tabindex="0"><b>
-     FWPS_INCOMING_METADATA_VALUES0</b></mshelp:link> structure that is passed to the callout driver's 
+     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
+     FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
 If socket control data is not <b>NULL</b>, it must be deep-copied in the callout driver's implementation of
@@ -249,8 +249,8 @@ For a header-include session; for example, to filter Generic Routing Encapsulati
 <ol>
 <li>
 Clone the net buffer list by calling the 
-      <mshelp:link keywords="netvista.fwpsallocateclonenetbufferlist0" tabindex="0"><b>
-      FwpsAllocateCloneNetBufferList0</b></mshelp:link> function.
+      <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
+      FwpsAllocateCloneNetBufferList0</a> function.
 
 </li>
 <li>
@@ -284,32 +284,29 @@ Call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Server 2008. Available starting with Windows Server 2008. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>
-
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
-
-<mshelp:link keywords="netvista.fwpsinjecttransportreceiveasync0" tabindex="0"><b>
-   FwpsInjectTransportReceiveAsync0</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a>
-
-<mshelp:link keywords="netvista.fwps_incoming_metadata_values0" tabindex="0"><b>
-   FWPS_INCOMING_METADATA_VALUES0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportreceiveasync0.md">
+   FwpsInjectTransportReceiveAsync0</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
+<a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
+   FWPS_INCOMING_METADATA_VALUES0</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543746">AF_INET6</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a>
 
  
 

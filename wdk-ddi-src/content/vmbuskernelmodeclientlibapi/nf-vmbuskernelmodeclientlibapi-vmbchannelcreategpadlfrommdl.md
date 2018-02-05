@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6C63E250-1A11-45E8-B535-263806DA4A33
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.vmbchannelcreategpadlfrommdl, VmbChannelCreateGpadlFromMdl, vmbuskernelmodeclientlibapi/VmbChannelCreateGpadlFromMdl, VmbChannelCreateGpadlFromMdl function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_GPADL_READ_ONLY
+ms.keywords : VmbChannelCreateGpadlFromMdl, VMBUS_CHANNEL_GPADL_READ_ONLY, vmbuskernelmodeclientlibapi/VmbChannelCreateGpadlFromMdl, VmbChannelCreateGpadlFromMdl function [Network Drivers Starting with Windows Vista], netvista.vmbchannelcreategpadlfrommdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -120,14 +120,12 @@ the GPADL description to the opposite endpoint and received confirmation.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |
 
 ## See Also
 

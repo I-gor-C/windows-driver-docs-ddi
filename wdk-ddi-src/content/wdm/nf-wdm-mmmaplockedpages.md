@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f27b7622-614b-4c9e-8253-51f4638e5eb0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmMapLockedPages, k106_009bdc6a-6bbc-4a7f-927e-ea5c6de8fa95.xml, wdm/MmMapLockedPages, MmMapLockedPages routine [Kernel-Mode Driver Architecture], kernel.mmmaplockedpages
+ms.keywords : wdm/MmMapLockedPages, MmMapLockedPages, kernel.mmmaplockedpages, k106_009bdc6a-6bbc-4a7f-927e-ea5c6de8fa95.xml, MmMapLockedPages routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,26 +80,25 @@ Callers of <b>MmMapLockedPages</b> must be running at IRQL &lt;= DISPATCH_LEVEL 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Obsolete for Windows 2000 and later versions of Windows, and for Windows Me. This routine is supported only for WDM drivers that must run on Windows 98. Otherwise, use MmMapLockedPagesSpecifyCache. Obsolete for Windows 2000 and later versions of Windows, and for Windows Me. This routine is supported only for WDM drivers that must run on Windows 98. Otherwise, use MmMapLockedPagesSpecifyCache. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
 
 <a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
 
 <a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
 <a href="..\wdm\nf-wdm-mmgetsystemaddressformdl.md">MmGetSystemAddressForMdl</a>
+
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
  
 

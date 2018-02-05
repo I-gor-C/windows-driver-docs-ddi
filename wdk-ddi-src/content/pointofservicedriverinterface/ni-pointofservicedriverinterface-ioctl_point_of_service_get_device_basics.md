@@ -75,6 +75,4 @@ Provide the version of the POS WinRT API to inform the driver which version of t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
-| **IRQL** |  |

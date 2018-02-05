@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e3980ac7-b539-4a8f-9869-14d418ebe1e7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.iscsi_redirectsessioninfo, iscsimgt/ISCSI_RedirectSessionInfo, PISCSI_RedirectSessionInfo structure pointer [Storage Devices], iscsimgt/PISCSI_RedirectSessionInfo, _ISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo structure [Storage Devices], PISCSI_RedirectSessionInfo, structs-iSCSI_41ab8376-0e0e-40af-8cab-1be2f63edeed.xml, ISCSI_RedirectSessionInfo
+ms.keywords : iscsimgt/PISCSI_RedirectSessionInfo, storage.iscsi_redirectsessioninfo, PISCSI_RedirectSessionInfo structure pointer [Storage Devices], PISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo, structs-iSCSI_41ab8376-0e0e-40af-8cab-1be2f63edeed.xml, iscsimgt/ISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo, _ISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,6 @@ A 64-bit integer that uniquely identifies the session. The <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also

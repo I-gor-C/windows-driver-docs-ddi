@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 2D11187E-B21B-4211-BAC0-248B93BAB6D5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSERIAL_LINE_CONTROL structure pointer [Serial Ports], PSERIAL_LINE_CONTROL, ntddser/PSERIAL_LINE_CONTROL, serports.serial_line_control, *PSERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL, ntddser/SERIAL_LINE_CONTROL, _SERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL structure [Serial Ports]
+ms.keywords : SERIAL_LINE_CONTROL, PSERIAL_LINE_CONTROL structure pointer [Serial Ports], serports.serial_line_control, *PSERIAL_LINE_CONTROL, PSERIAL_LINE_CONTROL, ntddser/PSERIAL_LINE_CONTROL, ntddser/SERIAL_LINE_CONTROL, _SERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL structure [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -115,16 +115,13 @@ This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddser.h |
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a>
-
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_line_control.md">IOCTL_SERIAL_SET_LINE_CONTROL</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a>
 
  
 

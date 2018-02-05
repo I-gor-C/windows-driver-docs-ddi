@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : DA30F8BA-B920-458E-B7C7-8D7B7081507A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.get_local_host_info8, 1394/PGET_LOCAL_HOST_INFO8, *PGET_LOCAL_HOST_INFO8, 1394/GET_LOCAL_HOST_INFO8, _GET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8 structure [Buses], GET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8 structure pointer [Buses], PGET_LOCAL_HOST_INFO8
+ms.keywords : "*PGET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8 structure pointer [Buses], _GET_LOCAL_HOST_INFO8, IEEE.get_local_host_info8, GET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8 structure [Buses], 1394/PGET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8, 1394/GET_LOCAL_HOST_INFO8"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8"
+req.typenames : GET_LOCAL_HOST_INFO8, *PGET_LOCAL_HOST_INFO8
 ---
 
 # _GET_LOCAL_HOST_INFO8 structure
@@ -94,7 +94,5 @@ successful completion, the new 1394 bus driver (1394ohci.sys bus driver)sets the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions. Available in Windows 7 and later versions. |
 | **Header** | 1394.h (include 1394.h) |

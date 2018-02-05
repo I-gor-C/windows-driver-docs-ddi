@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -85,8 +85,8 @@ A value that specifies whether the WSK application accepts or rejects the incomi
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the resume operation
      asynchronously. For more information about using IRPs with WSK functions, see 
-     <mshelp:link keywords="netvista.using_irps_with_winsock_kernel_functions" tabindex="0">Using IRPs with Winsock
-     Kernel Functions</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
+     Kernel Functions</a>.
 
 
 ## Return Value
@@ -164,8 +164,8 @@ A WSK application can call the
     WSK application can enable conditional accept mode on a listening socket by enabling the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570829">SO_CONDITIONAL_ACCEPT</a> socket option.
     For more information about conditionally accepting incoming connections, see 
-    <mshelp:link keywords="netvista.listening_for_and_accepting_incoming_connections" tabindex="0">Listening for and
-    Accepting Incoming Connections</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/listening-for-and-accepting-incoming-connections">Listening for and
+    Accepting Incoming Connections</a>.
 
 The WSK subsystem passed a pointer to a 
     <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a> structure to the WSK
@@ -209,14 +209,10 @@ If the WSK application calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -224,17 +220,17 @@ If the WSK application calls the
 
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_abort_event.md">WskAbortEvent</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 
 <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_abort_event.md">WskAbortEvent</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a>
 
  
 

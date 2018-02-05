@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 733b8ccc-5335-4c7e-bfc0-4618b0b3a4d8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsendrttdataparams, ntddrilapitypes/RILSENDRTTDATAPARAMS, *LPRILSENDRTTDATAPARAMS
+ms.keywords : netvista.rilsendrttdataparams, ntddrilapitypes/RILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS, *LPRILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ typedef struct _RILSENDRTTDATAPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

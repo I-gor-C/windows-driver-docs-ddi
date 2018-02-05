@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : BC260058-1E33-43BA-B75E-79540E36A08D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionSetImmediateExecution, kmdf.wdfdmatransactionsetimmediateexecution, WdfDmaTransactionSetImmediateExecution method, wdfdmatransaction/WdfDmaTransactionSetImmediateExecution, PFN_WDFDMATRANSACTIONSETIMMEDIATEEXECUTION, wdf.wdfdmatransactionsetimmediateexecution
+ms.keywords : PFN_WDFDMATRANSACTIONSETIMMEDIATEEXECUTION, WdfDmaTransactionSetImmediateExecution method, wdfdmatransaction/WdfDmaTransactionSetImmediateExecution, kmdf.wdfdmatransactionsetimmediateexecution, wdf.wdfdmatransactionsetimmediateexecution, WdfDmaTransactionSetImmediateExecution
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,22 +86,21 @@ If your driver calls this method on an operating system earlier than Windows 8,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionrelease.md">WdfDmaTransactionRelease</a>
+
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionallocateresources.md">WdfDmaTransactionAllocateResources</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
-
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionrelease.md">WdfDmaTransactionRelease</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : D68C24E4-DCFB-44F6-92EE-9FF4A1A52841
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PosCxGetPendingEvent function, PosCxGetPendingEvent, poscx/PosCxGetPendingEvent, pos.poscxgetpendingevent
+ms.keywords : PosCxGetPendingEvent, pos.poscxgetpendingevent, PosCxGetPendingEvent function, poscx/PosCxGetPendingEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,11 +93,6 @@ Possible return values are:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

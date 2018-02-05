@@ -85,20 +85,15 @@ If the marker event type from the  <i>Type</i> parameter of the <a href="..\d3du
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setmarkermode.md">pfnSetMarkerMode</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_setmarker.md">SetMarker</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setmarkermode.md">pfnSetMarkerMode</a>
 
  
 

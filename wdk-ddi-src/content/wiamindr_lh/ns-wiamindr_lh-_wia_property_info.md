@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWIA_PROPERTY_INFO structure pointer [Imaging Devices], wiamindr_lh/PWIA_PROPERTY_INFO, wiamindr_lh/WIA_PROPERTY_INFO, wiastrct_6e0091b3-43a3-473b-88e4-ec41533a5b0e.xml, WIA_PROPERTY_INFO structure [Imaging Devices], _WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO, image.wia_property_info, PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO
+ms.keywords : PWIA_PROPERTY_INFO structure pointer [Imaging Devices], *PWIA_PROPERTY_INFO, _WIA_PROPERTY_INFO, wiamindr_lh/PWIA_PROPERTY_INFO, image.wia_property_info, PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO structure [Imaging Devices], wiastrct_6e0091b3-43a3-473b-88e4-ec41533a5b0e.xml, WIA_PROPERTY_INFO, wiamindr_lh/WIA_PROPERTY_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO"
+req.typenames : WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -179,9 +179,7 @@ Initialization might look like the following example:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 
 ## See Also

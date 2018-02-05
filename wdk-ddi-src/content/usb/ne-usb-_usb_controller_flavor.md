@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : c732fe90-50fb-4f6e-b42e-cb35c1ed0091
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usb/EHCI_Generic, OHCI_NEC, EHCI_NEC, UHCI_VIA_x03, usb/UHCI_Ich5, USB_CONTROLLER_FLAVOR, usb/UHCI_VIA, EHCI_Lucent, USB_CONTROLLER_FLAVOR enumeration [Buses], usb/UHCI_Intel, usb/UHCI_Generic, _USB_CONTROLLER_FLAVOR, usb/UHCI_Ich4, UHCI_Ich6, usb/OHCI_Hydra, UHCI_Generic, usb/UHCI_Piix4, usb/UHCI_Ich1, usb/OHCI_Generic, usb/UHCI_VIA_x02, usb/UHCI_VIA_x04, UHCI_VIA_x0E_FIFO, EHCI_Generic, usb/EHCI_NEC, buses.usb_controller_flavor, usbstrct_a1b79c0b-7ee4-48bd-9793-8f37b9d248f2.xml, OHCI_Generic, usb/EHCI_NVIDIA_Tegra2, UHCI_Intel, UHCI_Piix3, usb/UHCI_Ich3m, UHCI_VIA_x02, usb/USB_CONTROLLER_FLAVOR, usb/UHCI_Ich2, UHCI_Piix4, UHCI_VIA_x04, UHCI_Ich2, EHCI_NVIDIA_Tegra3, EHCI_Intel_Medfield, UHCI_VIA, UHCI_Ich4, usb/UHCI_VIA_x01, EHCI_NVIDIA_Tegra2, USB_HcGeneric, usb/USB_HcGeneric, OHCI_Hydra, UHCI_Ich3m, usb/EHCI_Intel_Medfield, UHCI_Ich5, usb/EHCI_Lucent, usb/UHCI_Ich6, UHCI_VIA_x01, usb/UHCI_VIA_x03, usb/OHCI_NEC, usb/UHCI_VIA_x0E_FIFO, usb/UHCI_Piix3, usb/EHCI_NVIDIA_Tegra3, UHCI_Ich1
+ms.keywords : OHCI_Generic, usb/UHCI_Intel, UHCI_VIA_x0E_FIFO, USB_HcGeneric, usb/UHCI_Ich6, usb/OHCI_Hydra, UHCI_Ich3m, UHCI_Ich1, usb/EHCI_NEC, usbstrct_a1b79c0b-7ee4-48bd-9793-8f37b9d248f2.xml, usb/UHCI_VIA_x02, UHCI_Ich2, usb/EHCI_NVIDIA_Tegra2, usb/UHCI_VIA_x03, usb/UHCI_Generic, usb/UHCI_VIA, UHCI_VIA_x04, usb/EHCI_Lucent, UHCI_Intel, usb/UHCI_Piix4, usb/UHCI_Ich1, UHCI_VIA_x03, usb/USB_CONTROLLER_FLAVOR, EHCI_Intel_Medfield, USB_CONTROLLER_FLAVOR enumeration [Buses], UHCI_Piix4, usb/UHCI_Ich2, usb/UHCI_Ich5, usb/UHCI_VIA_x01, _USB_CONTROLLER_FLAVOR, buses.usb_controller_flavor, OHCI_Hydra, OHCI_NEC, EHCI_Lucent, USB_CONTROLLER_FLAVOR, usb/OHCI_NEC, UHCI_VIA_x02, EHCI_NVIDIA_Tegra2, UHCI_Ich4, UHCI_Ich6, usb/USB_HcGeneric, usb/UHCI_VIA_x0E_FIFO, UHCI_Piix3, usb/UHCI_Ich4, UHCI_Generic, EHCI_Generic, usb/EHCI_Generic, usb/UHCI_Piix3, usb/UHCI_Ich3m, EHCI_NEC, usb/EHCI_Intel_Medfield, usb/OHCI_Generic, usb/EHCI_NVIDIA_Tegra3, UHCI_VIA, EHCI_NVIDIA_Tegra3, usb/UHCI_VIA_x04, UHCI_VIA_x01, UHCI_Ich5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -218,9 +218,6 @@ typedef enum _USB_CONTROLLER_FLAVOR {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
 ## See Also

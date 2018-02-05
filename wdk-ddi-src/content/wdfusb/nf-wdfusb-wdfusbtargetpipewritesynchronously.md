@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5513a245-0417-42f7-9c01-99b8bd5745eb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfusbtargetpipewritesynchronously, PFN_WDFUSBTARGETPIPEWRITESYNCHRONOUSLY, wdf.wdfusbtargetpipewritesynchronously, wdfusb/WdfUsbTargetPipeWriteSynchronously, WdfUsbTargetPipeWriteSynchronously, DFUsbRef_9d78fb7e-eaf6-4d86-8376-4c68a1ab6ab9.xml, WdfUsbTargetPipeWriteSynchronously method
+ms.keywords : WdfUsbTargetPipeWriteSynchronously method, DFUsbRef_9d78fb7e-eaf6-4d86-8376-4c68a1ab6ab9.xml, kmdf.wdfusbtargetpipewritesynchronously, WdfUsbTargetPipeWriteSynchronously, wdfusb/WdfUsbTargetPipeWriteSynchronously, PFN_WDFUSBTARGETPIPEWRITESYNCHRONOUSLY, wdf.wdfusbtargetpipewritesynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -271,26 +271,25 @@ For more information about the <b>WdfUsbTargetPipeWriteSynchronously</b> method 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, InternalIoctlReqs, IoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
+
 <a href="..\wdfmemory\nf-wdfmemory-wdf_memory_descriptor_init_buffer.md">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipereadsynchronously.md">WdfUsbTargetPipeReadSynchronously</a>
 
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
-
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
 
  
 

@@ -70,22 +70,19 @@ The pin control mutex is the same mutex that is used by <i>Pin</i>'s parent. Thi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
+<a href="..\ks\nf-ks-kspinreleasecontrol.md">KsPinReleaseControl</a>
 
 <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
 
-<a href="..\ks\nf-ks-kspinreleasecontrol.md">KsPinReleaseControl</a>
+<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
 
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 

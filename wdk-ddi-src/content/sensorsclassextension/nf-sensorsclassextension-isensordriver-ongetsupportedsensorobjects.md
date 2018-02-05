@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : a8ea63cf-24ba-467b-9c27-ab8e38be1c04
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver::OnGetSupportedSensorObjects, ISensorDriver, sensors.isensordriver_ongetsupportedsensorobjects, OnGetSupportedSensorObjects, OnGetSupportedSensorObjects method [Sensor Devices]
+ms.keywords : OnGetSupportedSensorObjects method [Sensor Devices], OnGetSupportedSensorObjects, ISensorDriver, sensors.isensordriver_ongetsupportedsensorobjects, ISensorDriver::OnGetSupportedSensorObjects
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,11 +66,6 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

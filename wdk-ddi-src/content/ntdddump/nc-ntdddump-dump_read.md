@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVERIFY_INFORMATION, VERIFY_INFORMATION"
+req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 
@@ -83,20 +83,15 @@ Filter drivers can modify the contents of the data buffer contained in <b>Mdl</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | ntdddump.h (include Ntdddump.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntdddump\nc-ntdddump-dump_write.md">Dump_Write</a>
-
 <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
+
+<a href="..\ntdddump\nc-ntdddump-dump_write.md">Dump_Write</a>
 
  
 

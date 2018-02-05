@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8B07B225-D612-47D2-B93C-7F9E3A23ACE1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SWITCH_PORT_PVLAN_MODE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchPortPvlanModePromiscuous, ntddndis/NdisSwitchPortPvlanModeUndefined, netvista.ndis_switch_port_pvlan_mode, ntddndis/PNDIS_SWITCH_PORT_PVLAN_MODE, ntddndis/NdisSwitchPortPvlanModeCommunity, ntddndis/NdisSwitchPortPvlanModeIsolated, NDIS_SWITCH_PORT_PVLAN_MODE, NdisSwitchPortPvlanModeIsolated, ntddndis/NDIS_SWITCH_PORT_PVLAN_MODE, PNDIS_SWITCH_PORT_PVLAN_MODE enumeration pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PVLAN_MODE, _NDIS_SWITCH_PORT_PVLAN_MODE, ntddndis/NdisSwitchPortPvlanModePromiscuous, NdisSwitchPortPvlanModeCommunity, *PNDIS_SWITCH_PORT_PVLAN_MODE, NdisSwitchPortPvlanModeUndefined
+ms.keywords : NdisSwitchPortPvlanModeCommunity, ntddndis/NdisSwitchPortPvlanModeCommunity, NDIS_SWITCH_PORT_PVLAN_MODE, NdisSwitchPortPvlanModeUndefined, netvista.ndis_switch_port_pvlan_mode, ntddndis/NdisSwitchPortPvlanModeUndefined, ntddndis/NdisSwitchPortPvlanModeIsolated, PNDIS_SWITCH_PORT_PVLAN_MODE enumeration pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PVLAN_MODE, *PNDIS_SWITCH_PORT_PVLAN_MODE, NDIS_SWITCH_PORT_PVLAN_MODE enumeration [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PVLAN_MODE, NdisSwitchPortPvlanModePromiscuous, ntddndis/NdisSwitchPortPvlanModePromiscuous, ntddndis/PNDIS_SWITCH_PORT_PVLAN_MODE, ntddndis/NDIS_SWITCH_PORT_PVLAN_MODE, NdisSwitchPortPvlanModeIsolated
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -87,16 +87,14 @@ For more information about extensible switch port policies, see <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
-
 <a href="..\ndis\ns-ndis-_ndis_switch_forwarding_destination_array.md">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
 
 <b></b>
 

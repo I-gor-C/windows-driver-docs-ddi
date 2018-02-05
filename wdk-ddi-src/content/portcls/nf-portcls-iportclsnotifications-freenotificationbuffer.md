@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 93EC2651-3C52-4810-9F7A-A81BC7DA20AF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : FreeNotificationBuffer, audio.iportclsnotifications_freenotification, IPortClsNotifications interface [Audio Devices], FreeNotificationBuffer method, IPortClsNotifications, FreeNotificationBuffer method [Audio Devices], portcls/IPortClsNotifications::FreeNotificationBuffer, FreeNotificationBuffer method [Audio Devices], IPortClsNotifications interface, IPortClsNotifications::FreeNotificationBuffer
+ms.keywords : IPortClsNotifications interface [Audio Devices], FreeNotificationBuffer method, FreeNotificationBuffer method [Audio Devices], IPortClsNotifications::FreeNotificationBuffer, IPortClsNotifications, FreeNotificationBuffer method [Audio Devices], IPortClsNotifications interface, portcls/IPortClsNotifications::FreeNotificationBuffer, audio.iportclsnotifications_freenotification, FreeNotificationBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -67,14 +67,11 @@ This function returns void.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1703 and later versions of Windows. Available in Windows 10, version 1703 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

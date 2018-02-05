@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 99869b20-3458-426a-ad64-c2cc54213290
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisQueryNetBufferPhysicalCount, netvista.ndisquerynetbufferphysicalcount, NdisQueryNetBufferPhysicalCount function [Network Drivers Starting with Windows Vista], ndis/NdisQueryNetBufferPhysicalCount, ndis_netbuf_functions_ref_d041f487-3273-402e-8726-d9a252b1dd45.xml
+ms.keywords : NdisQueryNetBufferPhysicalCount function [Network Drivers Starting with Windows Vista], NdisQueryNetBufferPhysicalCount, ndis/NdisQueryNetBufferPhysicalCount, netvista.ndisquerynetbufferphysicalcount, ndis_netbuf_functions_ref_d041f487-3273-402e-8726-d9a252b1dd45.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,12 +70,10 @@ A pointer to a previously allocated
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 

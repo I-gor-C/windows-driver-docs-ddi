@@ -91,7 +91,7 @@ Specifies the severity of the message being sent. This can be any 32-bit integer
 
 Specifies a pointer to the format string to print. The <i>Format</i> string supports most of the <b>printf</b>-style <a href="http://go.microsoft.com/fwlink/p/?linkid=83949">format specification fields</a>. However, the Unicode format codes (<b>%C</b>, <b>%S</b>, <b>%lc</b>, <b>%ls</b>, <b>%wc</b>, <b>%ws</b>, and <b>%wZ</b>) can only be used with IRQL = PASSIVE_LEVEL. The <b>DbgPrintEx</b> routine does not support any of the floating point types (<b>%f</b>, <b>%e</b>, <b>%E</b>, <b>%g</b>, <b>%G</b>, <b>%a</b>, or <b>%A</b>).
 
-``
+`Arg1`
 
 
 
@@ -115,14 +115,12 @@ There is no upper limit to the size of the <i>Format</i> string or the number of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later. Available in Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |
+| **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
 | **IRQL** | <= DIRQL (see Comments section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

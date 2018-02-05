@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5992c846-93de-4f95-839a-81f14db709f7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_82a38a66-d65c-4b88-be6d-974590e9472a.xml, DXGKARG_QUERYADAPTERINFO structure [Display Devices], d3dkmddi/DXGKARG_QUERYADAPTERINFO, _DXGKARG_QUERYADAPTERINFO, display.dxgkarg_queryadapterinfo, DXGKARG_QUERYADAPTERINFO
+ms.keywords : "_DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO structure [Display Devices], d3dkmddi/DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO, display.dxgkarg_queryadapterinfo, DmStructs_82a38a66-d65c-4b88-be6d-974590e9472a.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -117,28 +117,26 @@ An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout3.md">DXGK_QUERYSEGMENTOUT3</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_component.md">DXGK_POWER_RUNTIME_COMPONENT</a>
 
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_queryadapterinfotype.md">DXGK_QUERYADAPTERINFOTYPE</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout3.md">DXGK_QUERYSEGMENTOUT3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn268634">DXGK_POWER_P_COMPONENT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_component.md">DXGK_POWER_RUNTIME_COMPONENT</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn268634">DXGK_POWER_P_COMPONENT</a>
 
  
 

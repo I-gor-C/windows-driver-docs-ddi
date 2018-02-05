@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : bf466384-bf13-42cc-a02d-ef880cac4c02
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bthddi/PSCO_RETRANSMISSION_EFFORT, bthddi/SCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT enumeration [Bluetooth Devices], bth_enums_00709c56-9596-40d6-a789-840c5c1c7d33.xml, bthddi/SCO_RETRANSMISSION_NONE, PSCO_RETRANSMISSION_EFFORT, PSCO_RETRANSMISSION_EFFORT enumeration pointer [Bluetooth Devices], SCO_RETRANSMISSION_NONE, bthddi/SCO_RETRANSMISSION_MIN1_POWER, bthddi/SCO_RETRANSMISSION_MIN1_QUALITY, SCO_RETRANSMISSION_MIN1_POWER, bthddi/SCO_RETRANSMISSION_DONT_CARE, SCO_RETRANSMISSION_MIN1_QUALITY, _SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_DONT_CARE, bltooth.sco_retransmission_effort, SCO_RETRANSMISSION_EFFORT
+ms.keywords : PSCO_RETRANSMISSION_EFFORT enumeration pointer [Bluetooth Devices], bthddi/SCO_RETRANSMISSION_MIN1_QUALITY, PSCO_RETRANSMISSION_EFFORT, _SCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT enumeration [Bluetooth Devices], SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT, bthddi/SCO_RETRANSMISSION_MIN1_POWER, SCO_RETRANSMISSION_NONE, bthddi/SCO_RETRANSMISSION_NONE, bltooth.sco_retransmission_effort, SCO_RETRANSMISSION_MIN1_QUALITY, bthddi/SCO_RETRANSMISSION_DONT_CARE, bthddi/SCO_RETRANSMISSION_EFFORT, bthddi/PSCO_RETRANSMISSION_EFFORT, bth_enums_00709c56-9596-40d6-a789-840c5c1c7d33.xml, SCO_RETRANSMISSION_DONT_CARE, SCO_RETRANSMISSION_MIN1_POWER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,7 +83,5 @@ typedef enum _SCO_RETRANSMISSION_EFFORT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |

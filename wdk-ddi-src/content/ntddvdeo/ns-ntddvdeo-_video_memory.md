@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3d8b3b45-90d9-4e64-a52d-253c9cb86588
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : ntddvdeo/PVIDEO_MEMORY, VIDEO_MEMORY structure [Display Devices], display.video_memory, PVIDEO_MEMORY structure pointer [Display Devices], PVIDEO_MEMORY, ntddvdeo/VIDEO_MEMORY, VIDEO_MEMORY, Video_Structs_85973586-1583-46cb-93a7-c8d37ba4ef5f.xml, *PVIDEO_MEMORY, _VIDEO_MEMORY
+ms.keywords : PVIDEO_MEMORY, PVIDEO_MEMORY structure pointer [Display Devices], _VIDEO_MEMORY, Video_Structs_85973586-1583-46cb-93a7-c8d37ba4ef5f.xml, ntddvdeo/VIDEO_MEMORY, VIDEO_MEMORY, *PVIDEO_MEMORY, ntddvdeo/PVIDEO_MEMORY, VIDEO_MEMORY structure [Display Devices], display.video_memory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,9 +67,6 @@ For structures used in mapping into user-mode video memory, see <a href="..\ntdd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 140de330-7e6d-4f23-96cb-ea1228c8036c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExConvertExclusiveToSharedLite, wdm/ExConvertExclusiveToSharedLite, k102_3c58f8e7-3da6-413d-9662-89a29928a6c1.xml, kernel.exconvertexclusivetosharedlite, ExConvertExclusiveToSharedLite routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/ExConvertExclusiveToSharedLite, kernel.exconvertexclusivetosharedlite, ExConvertExclusiveToSharedLite, ExConvertExclusiveToSharedLite routine [Kernel-Mode Driver Architecture], k102_3c58f8e7-3da6-413d-9662-89a29928a6c1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,12 +69,11 @@ The caller must have exclusive access to the given resource. During this convers
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte3, HwStorPortProhibitedDDIs |
 

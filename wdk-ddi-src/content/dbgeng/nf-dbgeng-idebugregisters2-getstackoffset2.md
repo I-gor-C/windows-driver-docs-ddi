@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c90119a8-c93b-4432-b164-b1f4c562ef2d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2 interface [Windows Debugging], GetStackOffset2 method, IDebugRegisters_ec4e5846-b785-4b82-9670-04e7087b7d99.xml, GetStackOffset2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::GetStackOffset2, GetStackOffset2 method [Windows Debugging], dbgeng/IDebugRegisters2::GetStackOffset2, IDebugRegisters2, GetStackOffset2, debugger.getstackoffset2
+ms.keywords : dbgeng/IDebugRegisters2::GetStackOffset2, debugger.getstackoffset2, GetStackOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetStackOffset2 method [Windows Debugging], IDebugRegisters2, GetStackOffset2, IDebugRegisters_ec4e5846-b785-4b82-9670-04e7087b7d99.xml, IDebugRegisters2 interface [Windows Debugging], GetStackOffset2 method, IDebugRegisters2::GetStackOffset2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -127,14 +127,9 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

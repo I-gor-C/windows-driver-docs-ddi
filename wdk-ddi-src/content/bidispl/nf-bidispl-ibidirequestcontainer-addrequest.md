@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 69a97816-2994-4eec-b2ab-a545195e3776
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::AddRequest method, gdi.ibidirequestcontainer_ibidirequestcontainer__addrequest, print.ibidirequestcontainer_ibidirequestcontainer__addrequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer::IBidiRequestContainer::AddRequest, IBidiRequestContainer, IBidiRequestContainer::AddRequest, AddRequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer interface, bidispl/IBidiRequestContainer::IBidiRequestContainer::AddRequest, _win32_IBidiRequestContainer_AddRequest
+ms.keywords : AddRequest, gdi.ibidirequestcontainer_ibidirequestcontainer__addrequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer::AddRequest, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::AddRequest method, print.ibidirequestcontainer_ibidirequestcontainer__addrequest, bidispl/IBidiRequestContainer::IBidiRequestContainer::AddRequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer interface, IBidiRequestContainer::IBidiRequestContainer::AddRequest, IBidiRequestContainer, _win32_IBidiRequestContainer_AddRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -108,24 +108,21 @@ This is similar to adding an item in a link list. In this case, <a href="..\bidi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a>
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
-<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
  
 

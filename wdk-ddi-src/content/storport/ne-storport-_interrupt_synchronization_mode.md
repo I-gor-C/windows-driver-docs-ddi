@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 964009ab-5f90-4f23-b22a-4c3e03d2449e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : INTERRUPT_SYNCHRONIZATION_MODE enumeration [Storage Devices], INTERRUPT_SYNCHRONIZATION_MODE, storage.interrupt_synchronization_mode, _INTERRUPT_SYNCHRONIZATION_MODE, InterruptSupportNone, InterruptSynchronizeAll, storport/InterruptSynchronizeAll, structs-storport_036aa424-5b04-4bf5-8418-8da008834c5b.xml, storport/InterruptSupportNone, InterruptSynchronizePerMessage, storport/INTERRUPT_SYNCHRONIZATION_MODE, storport/InterruptSynchronizePerMessage
+ms.keywords : InterruptSynchronizeAll, INTERRUPT_SYNCHRONIZATION_MODE enumeration [Storage Devices], storage.interrupt_synchronization_mode, storport/INTERRUPT_SYNCHRONIZATION_MODE, InterruptSupportNone, storport/InterruptSupportNone, _INTERRUPT_SYNCHRONIZATION_MODE, storport/InterruptSynchronizeAll, InterruptSynchronizePerMessage, storport/InterruptSynchronizePerMessage, structs-storport_036aa424-5b04-4bf5-8418-8da008834c5b.xml, INTERRUPT_SYNCHRONIZATION_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -78,20 +78,17 @@ Miniport drivers define the HBA's interrupt synchronization mode by assigning on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also
-
-<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
 
 <a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
 
 <a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a>
 
 <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+
+<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
 
  
 

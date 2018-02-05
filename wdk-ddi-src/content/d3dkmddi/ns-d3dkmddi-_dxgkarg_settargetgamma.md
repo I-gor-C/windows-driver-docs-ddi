@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 94BA40BD-3B56-44EF-BAD4-49556E68C550
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_SETTARGETGAMMA, display.dxgkarg_settargetgamma, _DXGKARG_SETTARGETGAMMA, DXGKARG_SETTARGETGAMMA, DXGKARG_SETTARGETGAMMA structure [Display Devices], PDXGKARG_SETTARGETGAMMA structure pointer [Display Devices], PDXGKARG_SETTARGETGAMMA, d3dkmddi/PDXGKARG_SETTARGETGAMMA
+ms.keywords : d3dkmddi/DXGKARG_SETTARGETGAMMA, DXGKARG_SETTARGETGAMMA, PDXGKARG_SETTARGETGAMMA structure pointer [Display Devices], d3dkmddi/PDXGKARG_SETTARGETGAMMA, _DXGKARG_SETTARGETGAMMA, PDXGKARG_SETTARGETGAMMA, DXGKARG_SETTARGETGAMMA structure [Display Devices], display.dxgkarg_settargetgamma
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ The identifier of a display adapter's video present target.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

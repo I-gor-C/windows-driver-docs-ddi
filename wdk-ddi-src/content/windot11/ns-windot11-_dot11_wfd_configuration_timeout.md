@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5432EB69-933A-4080-919F-4131DC4044D0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT, _DOT11_WFD_CONFIGURATION_TIMEOUT, netvista.dot11_wfd_configuration_timeout, DOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_CONFIGURATION_TIMEOUT, PDOT11_WFD_CONFIGURATION_TIMEOUT structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_WFD_CONFIGURATION_TIMEOUT
+ms.keywords : PDOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT, windot11/DOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT structure [Network Drivers Starting with Windows Vista], _DOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT, netvista.dot11_wfd_configuration_timeout, PDOT11_WFD_CONFIGURATION_TIMEOUT structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_WFD_CONFIGURATION_TIMEOUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT
+req.typenames : "*PDOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,5 @@ The time, in milliseconds, allowed to configure as a Group Owner (GO). The minip
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |

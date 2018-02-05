@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : D57D356F-DC11-4C27-97D3-DF40BF2AB490
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : DEBUG_FLR_MASK_ALL, DEBUG_FLR_INVALID, extsfns/..., FA_TAG, DEBUG_FLR_RESERVED, _DEBUG_FLR_PARAM_TYPE, debugger.debug_flr_param_type, ..., extsfns/DEBUG_FLR_DRIVER_OBJECT, DEBUG_FLR_DRIVER_OBJECT, DEBUG_FLR_PARAM_TYPE enumeration [Windows Debugging], extsfns/DEBUG_FLR_INVALID, DEBUG_FLR_PARAM_TYPE, extsfns/DEBUG_FLR_MASK_ALL, extsfns/DEBUG_FLR_PARAM_TYPE, extsfns/DEBUG_FLR_RESERVED
+ms.keywords : FA_TAG, ..., DEBUG_FLR_PARAM_TYPE enumeration [Windows Debugging], debugger.debug_flr_param_type, extsfns/DEBUG_FLR_PARAM_TYPE, DEBUG_FLR_INVALID, extsfns/DEBUG_FLR_INVALID, DEBUG_FLR_RESERVED, extsfns/DEBUG_FLR_DRIVER_OBJECT, extsfns/..., DEBUG_FLR_MASK_ALL, DEBUG_FLR_DRIVER_OBJECT, _DEBUG_FLR_PARAM_TYPE, extsfns/DEBUG_FLR_RESERVED, extsfns/DEBUG_FLR_MASK_ALL, DEBUG_FLR_PARAM_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -3720,9 +3720,6 @@ For more information about tags, see <a href="https://msdn.microsoft.com/7648F78
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | extsfns.h |
 
 ## See Also

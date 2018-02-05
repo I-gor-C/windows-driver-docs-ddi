@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d00cb2b1-b579-43c9-9e4d-cbdefd8a343a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_ea63cca7-3efb-4b45-b075-7efbc8138f88.xml, FltIsEcpFromUserMode routine [Installable File System Drivers], fltkernel/FltIsEcpFromUserMode, ifsk.fltisecpfromusermode, FltIsEcpFromUserMode
+ms.keywords : fltkernel/FltIsEcpFromUserMode, FltIsEcpFromUserMode routine [Installable File System Drivers], FltIsEcpFromUserMode, FltApiRef_e_to_o_ea63cca7-3efb-4b45-b075-7efbc8138f88.xml, ifsk.fltisecpfromusermode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,28 +70,26 @@ The routine returns <b>TRUE</b> if the ECP originated in user mode and <b>FALSE<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | FltMgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltacknowledgeecp.md">FltAcknowledgeEcp</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltacknowledgeecp.md">FltAcknowledgeEcp</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f1c70ca5-2caf-4758-99bb-221af0a79211
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : TapeClassInitialize routine [Storage Devices], tapeclas_92bf66d9-2a7b-4853-ad25-b6f854533a4e.xml, minitape/TapeClassInitialize, storage.tapeclassinitialize, TapeClassInitialize
+ms.keywords : minitape/TapeClassInitialize, tapeclas_92bf66d9-2a7b-4853-ad25-b6f854533a4e.xml, TapeClassInitialize routine [Storage Devices], TapeClassInitialize, storage.tapeclassinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTAPE_STATUS, TAPE_STATUS"
+req.typenames : TAPE_STATUS, *PTAPE_STATUS
 ---
 
 
@@ -82,20 +82,15 @@ A tape miniclass driver allocates a TAPE_INIT_DATA_EX structure on the stack, cl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | minitape.h (include Minitape.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tape.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
-
 <a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552656">DriverEntry of Tape Miniclass Driver</a>
 
  
 

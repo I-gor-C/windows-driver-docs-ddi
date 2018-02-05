@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b0fa761c-8e28-4067-ae9e-d39e2853fb05
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILNETWORKCODE, RILNETWORKCODE structure [Network Drivers Starting with Windows Vista], netvista.rilnetworkcode, RILNETWORKCODE, *LPRILNETWORKCODE
+ms.keywords : RILNETWORKCODE, rilapitypes/RILNETWORKCODE, *LPRILNETWORKCODE, RILNETWORKCODE structure [Network Drivers Starting with Windows Vista], netvista.rilnetworkcode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILNETWORKCODE, *LPRILNETWORKCODE
+req.typenames : "*LPRILNETWORKCODE, RILNETWORKCODE"
 req.product : Windows 10 or later.
 ---
 
@@ -95,9 +95,6 @@ System ID, if applicable. This is available only for RIL_SYSTEMTYPE_1XRTT.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

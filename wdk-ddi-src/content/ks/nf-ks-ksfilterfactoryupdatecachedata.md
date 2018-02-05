@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a5c868a5-0e79-482b-9694-02cae2de99ca
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsFilterFactoryUpdateCacheData, avfunc_2fdbd12c-b074-415e-8de3-bfbe61ef198a.xml, stream.ksfilterfactoryupdatecachedata, KsFilterFactoryUpdateCacheData function [Streaming Media Devices], KsFilterFactoryUpdateCacheData
+ms.keywords : KsFilterFactoryUpdateCacheData function [Streaming Media Devices], KsFilterFactoryUpdateCacheData, ks/KsFilterFactoryUpdateCacheData, avfunc_2fdbd12c-b074-415e-8de3-bfbe61ef198a.xml, stream.ksfilterfactoryupdatecachedata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,10 @@ For more information, see <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 9.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 9.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

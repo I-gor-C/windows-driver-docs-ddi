@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c551a376-2148-4fc4-ba4e-9c1ce1eea1d8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PSM_GetLUNStatistics_IN, SM_GetLUNStatistics_IN structure [Storage Devices], _SM_GetLUNStatistics_IN, hbapiwmi/SM_GetLUNStatistics_IN, SM_GetLUNStatistics_IN, PSM_GetLUNStatistics_IN structure pointer [Storage Devices], PSM_GetLUNStatistics_IN, *PSM_GetLUNStatistics_IN, storage.sm_getlunstatistics_in, structs-Fibre_537f91a2-0183-4e6d-a3ef-22474349e6e7.xml
+ms.keywords : storage.sm_getlunstatistics_in, PSM_GetLUNStatistics_IN structure pointer [Storage Devices], PSM_GetLUNStatistics_IN, _SM_GetLUNStatistics_IN, *PSM_GetLUNStatistics_IN, SM_GetLUNStatistics_IN structure [Storage Devices], hbapiwmi/SM_GetLUNStatistics_IN, hbapiwmi/PSM_GetLUNStatistics_IN, structs-Fibre_537f91a2-0183-4e6d-a3ef-22474349e6e7.xml, SM_GetLUNStatistics_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSM_GetLUNStatistics_IN, SM_GetLUNStatistics_IN"
+req.typenames : SM_GetLUNStatistics_IN, *PSM_GetLUNStatistics_IN
 ---
 
 # _SM_GetLUNStatistics_IN structure
@@ -61,7 +61,4 @@ When the WMI tool suite compiles the MS_SM_TargetInformationMethods WMI class, i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

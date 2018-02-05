@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b10c5a4b-fb43-4880-9641-ff2dcf0e5cb3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisAllocateNetBuffer, NdisAllocateNetBuffer function [Network Drivers Starting with Windows Vista], netvista.ndisallocatenetbuffer, ndis_netbuf_functions_ref_2c90427d-c174-48fa-b588-d48e5c099331.xml, NdisAllocateNetBuffer
+ms.keywords : ndis/NdisAllocateNetBuffer, NdisAllocateNetBuffer function [Network Drivers Starting with Windows Vista], netvista.ndisallocatenetbuffer, NdisAllocateNetBuffer, ndis_netbuf_functions_ref_2c90427d-c174-48fa-b588-d48e5c099331.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,8 +61,8 @@ PNET_BUFFER NdisAllocateNetBuffer(
 `PoolHandle`
 
 A <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure pool handle that was previously returned from a call to 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferpool" tabindex="0"><b>
-     NdisAllocateNetBufferPool</b></mshelp:link>.
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
+     NdisAllocateNetBufferPool</a>.
 
 `MdlChain`
 
@@ -135,24 +135,22 @@ NET_BUFFER_CURRENT_MDL_OFFSET(_NB) = Z';</pre>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function, NdisAllocateNetBuffer |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
 <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+<a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
 
  
 

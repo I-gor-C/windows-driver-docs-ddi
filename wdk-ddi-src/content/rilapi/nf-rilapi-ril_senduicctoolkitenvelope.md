@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1e83f7ae-8d7b-4d06-a8f0-5b4c2f04f4a4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SendUiccToolkitEnvelope method [Network Drivers Starting with Windows Vista], rilapi/RIL_SendUiccToolkitEnvelope, RIL_SendUiccToolkitEnvelope, netvista.ril_senduicctoolkitenvelope
+ms.keywords : RIL_SendUiccToolkitEnvelope method [Network Drivers Starting with Windows Vista], RIL_SendUiccToolkitEnvelope, rilapi/RIL_SendUiccToolkitEnvelope, netvista.ril_senduicctoolkitenvelope
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

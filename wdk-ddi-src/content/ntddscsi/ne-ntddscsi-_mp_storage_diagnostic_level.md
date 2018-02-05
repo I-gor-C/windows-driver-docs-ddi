@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : BB05D543-7B99-481E-8CDB-AE350CBCCA2A
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorageDiagnosticLevelMax, _MP_STORAGE_DIAGNOSTIC_LEVEL, PMP_STORAGE_DIAGNOSTIC_LEVEL enumeration pointer [Storage Devices], ntddscsi/StorageDiagnosticLevelDefault, ntddscsi/PMP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL, ntddscsi/MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL, PMP_STORAGE_DIAGNOSTIC_LEVEL, ntddscsi/StorageDiagnosticLevelMax, MP_STORAGE_DIAGNOSTIC_LEVEL enumeration [Storage Devices], storage.mp_storage_diagnostic_level, StorageDiagnosticLevelDefault
+ms.keywords : PMP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL, _MP_STORAGE_DIAGNOSTIC_LEVEL, ntddscsi/PMP_STORAGE_DIAGNOSTIC_LEVEL, StorageDiagnosticLevelMax, PMP_STORAGE_DIAGNOSTIC_LEVEL enumeration pointer [Storage Devices], ntddscsi/StorageDiagnosticLevelDefault, MP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL enumeration [Storage Devices], StorageDiagnosticLevelDefault, ntddscsi/MP_STORAGE_DIAGNOSTIC_LEVEL, storage.mp_storage_diagnostic_level, ntddscsi/StorageDiagnosticLevelMax
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL
+req.typenames : "*PMP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL"
 ---
 
 # _MP_STORAGE_DIAGNOSTIC_LEVEL Enumeration
@@ -68,7 +68,5 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_LEVEL {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntddscsi.h |

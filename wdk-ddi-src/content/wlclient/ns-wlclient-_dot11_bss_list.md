@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e5c31c4d-8c46-4af1-90de-0311cc90c6c0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_DOT11_BSS_LIST, PDOT11_BSS_LIST, Native_802.11_data_types_9b32efe4-bc69-4e6b-9475-449a77c110da.xml, wlclient/PDOT11_BSS_LIST, wlclient/DOT11_BSS_LIST, DOT11_BSS_LIST, netvista.dot11_bss_list, *PDOT11_BSS_LIST, PDOT11_BSS_LIST structure pointer [Network Drivers Starting with Windows Vista], DOT11_BSS_LIST structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : "*PDOT11_BSS_LIST, netvista.dot11_bss_list, DOT11_BSS_LIST structure [Network Drivers Starting with Windows Vista], _DOT11_BSS_LIST, wlclient/DOT11_BSS_LIST, DOT11_BSS_LIST, PDOT11_BSS_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_9b32efe4-bc69-4e6b-9475-449a77c110da.xml, PDOT11_BSS_LIST, wlclient/PDOT11_BSS_LIST"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,32 +63,30 @@ The length, in bytes, of the data within the buffer referenced by the
 The 802.11 Beacon and Probe Response frames within the 
     <b>pucBuffer</b> member were received from the underlying 802.11 station during its previous scan
     operation. For more information about this operation, see 
-    <mshelp:link keywords="netvista.native_802_11_scan_operations" tabindex="0">Native 802.11 Scan
-    Operations</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-scan-operations">Native 802.11 Scan
+    Operations</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlclient.h (include Wlclient.h) |
 
 ## See Also
 
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+   Dot11ExtIhvPerformPreAssociate</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_create_discovery_profiles.md">
+   Dot11ExtIhvCreateDiscoveryProfiles</a>
+
 <a href="..\windot11\ns-windot11-dot11_bss_entry.md">DOT11_BSS_ENTRY</a>
 
-<mshelp:link keywords="netvista.dot11extihvperformcapabilitymatch" tabindex="0"><i>
-   Dot11ExtIhvPerformCapabilityMatch</i></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_capability_match.md">
+   Dot11ExtIhvPerformCapabilityMatch</a>
 
-<mshelp:link keywords="netvista.dot11extihvcreatediscoveryprofiles" tabindex="0"><i>
-   Dot11ExtIhvCreateDiscoveryProfiles</i></mshelp:link>
-
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
-
-<mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-   Dot11ExtIhvPerformPreAssociate</i></mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
 
  
 

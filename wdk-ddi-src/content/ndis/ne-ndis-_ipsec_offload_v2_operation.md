@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bb26c8af-1564-4cf8-ab40-b50b4811466d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/IPSEC_OFFLOAD_V2_OPERATION, IPsecOffloadV2Max, task_offload_IPsecv2_ref_37a1424a-fe40-440d-a071-9483c5bcb516.xml, ndis/PIPSEC_OFFLOAD_V2_OPERATION, IPsecOffloadV2Ah, IPsecOffloadV2Esp, netvista.ipsec_offload_v2_operation, ndis/IPsecOffloadV2Esp, ndis/IPsecOffloadV2Ah, IPSEC_OFFLOAD_V2_OPERATION enumeration [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_OPERATION, PIPSEC_OFFLOAD_V2_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista], PIPSEC_OFFLOAD_V2_OPERATION, *PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Max
+ms.keywords : ndis/PIPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Ah, PIPSEC_OFFLOAD_V2_OPERATION, task_offload_IPsecv2_ref_37a1424a-fe40-440d-a071-9483c5bcb516.xml, IPsecOffloadV2Ah, ndis/IPsecOffloadV2Max, IPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Esp, PIPSEC_OFFLOAD_V2_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_OPERATION, *PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION enumeration [Network Drivers Starting with Windows Vista], netvista.ipsec_offload_v2_operation, IPsecOffloadV2Esp, IPsecOffloadV2Max, ndis/IPSEC_OFFLOAD_V2_OPERATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : IPSEC_OFFLOAD_V2_OPERATION, *PIPSEC_OFFLOAD_V2_OPERATION
+req.typenames : "*PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION"
 ---
 
 # _IPSEC_OFFLOAD_V2_OPERATION Enumeration
@@ -77,21 +77,19 @@ typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
 
 The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an SA is used in the 
     <b>Operation</b> member of the 
-    <mshelp:link keywords="netvista.ipsec_offload_v2_security_association" tabindex="0"><b>
-    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</b></mshelp:link> structure.
+    <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ipsec_offload_v2_security_association" tabindex="0"><b>
-   IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+   IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
 
  
 

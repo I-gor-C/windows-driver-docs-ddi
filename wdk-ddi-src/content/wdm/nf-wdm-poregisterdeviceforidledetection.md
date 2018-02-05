@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f786fa36-1faa-4e12-aec1-872b44c01a85
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoRegisterDeviceForIdleDetection routine [Kernel-Mode Driver Architecture], kernel.poregisterdeviceforidledetection, PoRegisterDeviceForIdleDetection, portn_be0ccb17-9465-4f61-a8ed-fa945f5340d6.xml, wdm/PoRegisterDeviceForIdleDetection
+ms.keywords : kernel.poregisterdeviceforidledetection, PoRegisterDeviceForIdleDetection routine [Kernel-Mode Driver Architecture], PoRegisterDeviceForIdleDetection, portn_be0ccb17-9465-4f61-a8ed-fa945f5340d6.xml, wdm/PoRegisterDeviceForIdleDetection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,14 +110,12 @@ If both <i>ConservationIdleTime</i> and <i>PerformanceIdleTime</i> are zero, thi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

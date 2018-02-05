@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 0157FA09-C227-4BB2-BB75-0AB5802BC150
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ksmedia/KSRTAUDIO_GETREADPACKET_INFO, audio.ksrtaudio_getreadpacket_info, *PKSRTAUDIO_GETREADPACKET_INFO, KSRTAUDIO_GETREADPACKET_INFO structure [Audio Devices], PKSRTAUDIO_GETREADPACKET_INFO structure pointer [Audio Devices], PKSRTAUDIO_GETREADPACKET_INFO, ksmedia/PKSRTAUDIO_GETREADPACKET_INFO, KSRTAUDIO_GETREADPACKET_INFO
+ms.keywords : KSRTAUDIO_GETREADPACKET_INFO structure [Audio Devices], PKSRTAUDIO_GETREADPACKET_INFO, ksmedia/KSRTAUDIO_GETREADPACKET_INFO, KSRTAUDIO_GETREADPACKET_INFO, ksmedia/PKSRTAUDIO_GETREADPACKET_INFO, PKSRTAUDIO_GETREADPACKET_INFO structure pointer [Audio Devices], audio.ksrtaudio_getreadpacket_info, *PKSRTAUDIO_GETREADPACKET_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ Returns the performance counter value corresponding to the sampling instant of t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10 and later Windows operating systems. Available in Windows 10 and later Windows operating systems. |
 | **Header** | ksmedia.h |
 
 ## See Also

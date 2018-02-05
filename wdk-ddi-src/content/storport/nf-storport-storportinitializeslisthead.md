@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E8EF5995-67AE-4F34-B885-CBADDF3D151F
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportinitializeslisthead, storport/StorPortInitializeSListHead, StorPortInitializeSListHead, StorPortInitializeSListHead routine [Storage Devices]
+ms.keywords : StorPortInitializeSListHead routine [Storage Devices], storport/StorPortInitializeSListHead, StorPortInitializeSListHead, storage.storportinitializeslisthead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,24 +115,21 @@ When memory for the list head is freed, any deallocation code must account for t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
 
 <a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
 
 <a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
 
 <a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
+
+<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
 
  
 

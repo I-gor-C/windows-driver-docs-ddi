@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0b5378fa-ab1d-453f-b976-f6cd0d4247de
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/ReplyPrinterChangeNotification, spoolfnc_524073df-9320-46d6-b4fe-6d3b73ccbe5b.xml, ReplyPrinterChangeNotification, print.replyprinterchangenotification, ReplyPrinterChangeNotification function [Print Devices]
+ms.keywords : ReplyPrinterChangeNotification function [Print Devices], winsplp/ReplyPrinterChangeNotification, spoolfnc_524073df-9320-46d6-b4fe-6d3b73ccbe5b.xml, print.replyprinterchangenotification, ReplyPrinterChangeNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,20 +90,16 @@ For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9ce
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
 
-<a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>
-
 <a href="..\winsplp\nf-winsplp-partialreplyprinterchangenotification.md">PartialReplyPrinterChangeNotification</a>
+
+<a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>
 
  
 

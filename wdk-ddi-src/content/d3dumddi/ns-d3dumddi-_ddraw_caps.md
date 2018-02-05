@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 023e3780-bc88-446b-b235-8853807fb05a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DDRAW_CAPS structure [Display Devices], d3dumddi/DDRAW_CAPS, display.ddraw_caps, DDRAW_CAPS, _DDRAW_CAPS, D3D_other_Structs_5e02fa0c-95ae-4b62-aaa3-7530aec9aee5.xml
+ms.keywords : DDRAW_CAPS, _DDRAW_CAPS, D3D_other_Structs_5e02fa0c-95ae-4b62-aaa3-7530aec9aee5.xml, DDRAW_CAPS structure [Display Devices], d3dumddi/DDRAW_CAPS, display.ddraw_caps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -223,18 +223,16 @@ Bit-block transfers (bitblts) that flip the contents of the source surface to th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 
  
 

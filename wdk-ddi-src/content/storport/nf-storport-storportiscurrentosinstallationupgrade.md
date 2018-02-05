@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 68D944D9-1A52-4FB0-B2D7-9680AB1EDABB
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortIsCurrentOsInstallationUpgrade, StorPortIsCurrentOsInstallationUpgrade, storage.storportiscurrentosinstallationupgrade, StorPortIsCurrentOsInstallationUpgrade routine [Storage Devices]
+ms.keywords : StorPortIsCurrentOsInstallationUpgrade, storport/StorPortIsCurrentOsInstallationUpgrade, StorPortIsCurrentOsInstallationUpgrade routine [Storage Devices], storage.storportiscurrentosinstallationupgrade
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,11 +110,8 @@ The current IRQL &gt; PASSIVE_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8.1. Available in starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | IRQL == PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

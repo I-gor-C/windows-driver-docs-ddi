@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : be22fb7f-408a-44ee-ae83-0f1dadcec87f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlNtStatusToDosError, ifsk.rtlntstatustodoserrornoteb, RtlNtStatusToDosError routine [Installable File System Drivers], rtlref_161ea08b-d596-4a3c-ab9b-b66f757e4415.xml, ntifs/RtlNtStatusToDosError, RtlNtStatusToDosErrorNoTeb
+ms.keywords : rtlref_161ea08b-d596-4a3c-ab9b-b66f757e4415.xml, RtlNtStatusToDosError, ntifs/RtlNtStatusToDosError, RtlNtStatusToDosError routine [Installable File System Drivers], RtlNtStatusToDosErrorNoTeb, ifsk.rtlntstatustodoserrornoteb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,9 @@ There is no function that provides the inverse functionality of <b>RtlNtStatusTo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The RtlNtStatusToDosErrorNoTeb routine is available on Microsoft Windows 2000 and later versions of Windows. The RtlNtStatusToDosErrorNoTeb routine is available on Microsoft Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

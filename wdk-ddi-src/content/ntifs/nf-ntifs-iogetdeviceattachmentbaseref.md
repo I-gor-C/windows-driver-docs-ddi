@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e1d31fdd-de4f-4e57-a8e8-0468ab4242f8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoGetDeviceAttachmentBaseRef, IoGetDeviceAttachmentBaseRef routine [Installable File System Drivers], ioref_ab9c898e-74be-48aa-9462-d78d0e34c435.xml, ifsk.iogetdeviceattachmentbaseref, IoGetDeviceAttachmentBaseRef
+ms.keywords : IoGetDeviceAttachmentBaseRef, ioref_ab9c898e-74be-48aa-9462-d78d0e34c435.xml, ntifs/IoGetDeviceAttachmentBaseRef, IoGetDeviceAttachmentBaseRef routine [Installable File System Drivers], ifsk.iogetdeviceattachmentbaseref
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,12 @@ A file system filter driver typically calls <b>IoGetDeviceAttachmentBaseRef</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -87,9 +85,9 @@ A file system filter driver typically calls <b>IoGetDeviceAttachmentBaseRef</b> 
 
 <a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
 
-<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
-
 <a href="..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md">IoEnumerateDeviceObjectList</a>
+
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
 
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 

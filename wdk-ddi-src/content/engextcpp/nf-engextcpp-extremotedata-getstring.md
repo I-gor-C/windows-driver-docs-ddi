@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ff0aa7a7-1efd-4d55-8865-f36c039b27a1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExtRemoteData::GetString, EngExtCpp_Ref_0e8b8a7f-d6d4-4262-a1ed-5829a83ec80d.xml, GetString, ExtRemoteData, ExtRemoteData class [Windows Debugging], GetString method, GetString method [Windows Debugging], debugger.extremotedata_getstring, GetString method [Windows Debugging], ExtRemoteData class
+ms.keywords : GetString method [Windows Debugging], EngExtCpp_Ref_0e8b8a7f-d6d4-4262-a1ed-5829a83ec80d.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], GetString method, GetString method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_getstring, ExtRemoteData::GetString, GetString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -88,14 +88,9 @@ This method can only be used if the region represented by the <a href="..\engext
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |
 
 ## See Also
 

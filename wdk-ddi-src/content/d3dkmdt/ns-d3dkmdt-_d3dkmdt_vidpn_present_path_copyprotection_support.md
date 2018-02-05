@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2b0c7428-bc88-461c-ab72-daccf02606da
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, DmStructs_01eb8f42-1ba1-46e3-9b56-99952e5fedbe.xml, display.d3dkmdt_vidpn_present_path_copyprotection_support, _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure [Display Devices], D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
+ms.keywords : D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure [Display Devices], d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, display.d3dkmdt_vidpn_present_path_copyprotection_support, _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, DmStructs_01eb8f42-1ba1-46e3-9b56-99952e5fedbe.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,5 @@ The <b>CopyProtectionSupport</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 56c7ce80-36da-4991-a640-f87b712f683e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsReferenceSoftwareBusObject, swenum/KsReferenceSoftwareBusObject, stream.ksreferencesoftwarebusobject, ksfunc_38a63d2d-e988-474d-890b-dd9a2aeeaff4.xml, KsReferenceSoftwareBusObject function [Streaming Media Devices]
+ms.keywords : KsReferenceSoftwareBusObject, swenum/KsReferenceSoftwareBusObject, KsReferenceSoftwareBusObject function [Streaming Media Devices], stream.ksreferencesoftwarebusobject, ksfunc_38a63d2d-e988-474d-890b-dd9a2aeeaff4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,9 @@ The device object remains active and enumerated until the reference count return
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | swenum.h (include Swenum.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : E08E2ED1-047B-4190-8A54-79ECC75E860F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltPrepareToReuseEcp routine [Installable File System Drivers], FltPrepareToReuseEcp, ifsk.fltpreparetoreuseecp, fltkernel/FltPrepareToReuseEcp
+ms.keywords : ifsk.fltpreparetoreuseecp, FltPrepareToReuseEcp routine [Installable File System Drivers], fltkernel/FltPrepareToReuseEcp, FltPrepareToReuseEcp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,24 +75,22 @@ The target of an ECP uses <a href="..\fltkernel\nf-fltkernel-fltacknowledgeecp.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\fltkernel\nf-fltkernel-fltisecpacknowledged.md">FltIsEcpAcknowledged</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltlInsertExtraCreateParameter</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltisecpacknowledged.md">FltIsEcpAcknowledged</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 

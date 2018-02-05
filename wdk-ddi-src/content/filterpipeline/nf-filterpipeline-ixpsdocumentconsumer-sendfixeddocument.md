@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 917dd9c3-5552-43d0-b396-9ba236f53132
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SendFixedDocument method [Print Devices], SendFixedDocument, filterpipeline_a6ecc63d-889e-4ae1-8031-16accffa9c2a.xml, filterpipeline/IXpsDocumentConsumer::SendFixedDocument, SendFixedDocument method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer::SendFixedDocument, IXpsDocumentConsumer interface [Print Devices], SendFixedDocument method, IXpsDocumentConsumer, print.ixpsdocumentconsumer_sendfixeddocument
+ms.keywords : SendFixedDocument method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer, print.ixpsdocumentconsumer_sendfixeddocument, IXpsDocumentConsumer::SendFixedDocument, SendFixedDocument method [Print Devices], filterpipeline_a6ecc63d-889e-4ae1-8031-16accffa9c2a.xml, SendFixedDocument, IXpsDocumentConsumer interface [Print Devices], SendFixedDocument method, filterpipeline/IXpsDocumentConsumer::SendFixedDocument
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ A pointer to an XPS fixed document object.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

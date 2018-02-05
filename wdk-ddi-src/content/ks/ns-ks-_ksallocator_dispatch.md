@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6e6e6dde-3b41-44a7-b51d-1b1f06db0853
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSALLOCATOR_DISPATCH, *PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH, ks/KSALLOCATOR_DISPATCH, _KSALLOCATOR_DISPATCH, stream.ksallocator_dispatch, ks/PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH structure pointer [Streaming Media Devices], KSALLOCATOR_DISPATCH structure [Streaming Media Devices], avstruct_73d2c793-a55a-45f3-af31-fc18240ca1df.xml
+ms.keywords : ks/KSALLOCATOR_DISPATCH, _KSALLOCATOR_DISPATCH, KSALLOCATOR_DISPATCH structure [Streaming Media Devices], stream.ksallocator_dispatch, *PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH structure pointer [Streaming Media Devices], KSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH, ks/PKSALLOCATOR_DISPATCH, avstruct_73d2c793-a55a-45f3-af31-fc18240ca1df.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,9 +60,7 @@ By providing a pointer to a KSALLOCATOR_DISPATCH structure in the relevant <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

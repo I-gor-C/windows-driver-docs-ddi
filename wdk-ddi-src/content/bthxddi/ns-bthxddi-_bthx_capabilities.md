@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : BEC06C82-E103-4255-ACDD-9FB28E8E2DE5
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bltooth.bthx_capabilities, _BTHX_CAPABILITIES, BTHX_CAPABILITIES structure [Bluetooth Devices], bthxddi/BTHX_CAPABILITIES, PBTHX_CAPABILITIES, bthxddi/PBTHX_CAPABILITIES, *PBTHX_CAPABILITIES, PBTHX_CAPABILITIES structure pointer [Bluetooth Devices], BTHX_CAPABILITIES
+ms.keywords : BTHX_CAPABILITIES, PBTHX_CAPABILITIES structure pointer [Bluetooth Devices], BTHX_CAPABILITIES structure [Bluetooth Devices], _BTHX_CAPABILITIES, *PBTHX_CAPABILITIES, PBTHX_CAPABILITIES, bltooth.bthx_capabilities, bthxddi/BTHX_CAPABILITIES, bthxddi/PBTHX_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,5 @@ The type of SCO supported. This must be set to <b>ScoSupportHCIBypass</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported starting with  Windows 8. Versions:\_Supported starting with  Windows 8. |
 | **Header** | bthxddi.h (include BthXDDI.h) |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e06bbf6f-f636-4fb1-8195-b74512d4cd13
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSMETHOD_SET structure [Streaming Media Devices], ks/PKSMETHOD_SET, PKSMETHOD_SET, ks-struct_c3d1123f-8d2a-491b-a748-df8d88c7d9bc.xml, *PKSMETHOD_SET, PKSMETHOD_SET structure pointer [Streaming Media Devices], ks/KSMETHOD_SET, stream.ksmethod_set, KSMETHOD_SET
+ms.keywords : ks/PKSMETHOD_SET, *PKSMETHOD_SET, PKSMETHOD_SET structure pointer [Streaming Media Devices], PKSMETHOD_SET, ks-struct_c3d1123f-8d2a-491b-a748-df8d88c7d9bc.xml, KSMETHOD_SET, KSMETHOD_SET structure [Streaming Media Devices], stream.ksmethod_set, ks/KSMETHOD_SET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,9 +81,6 @@ Microsoft provides several system-defined kernel streaming method set GUIDs. Min
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c8c53792-8c1a-466a-9f0f-8c12f9e7b50e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iminiporttopology_init, portcls/IMiniportTopology::Init, audmp-routines_c87a11c3-aed3-4516-b3bf-5d32423fa293.xml, IMiniportTopology::Init, Init method [Audio Devices], IMiniportTopology interface, IMiniportTopology interface [Audio Devices], Init method, IMiniportTopology, Init method [Audio Devices], Init
+ms.keywords : portcls/IMiniportTopology::Init, Init, IMiniportTopology interface [Audio Devices], Init method, Init method [Audio Devices], Init method [Audio Devices], IMiniportTopology interface, IMiniportTopology, audio.iminiporttopology_init, audmp-routines_c87a11c3-aed3-4516-b3bf-5d32423fa293.xml, IMiniportTopology::Init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -80,24 +80,20 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, and <i>Port</i> parameters follo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
 <a href="..\portcls\nn-portcls-iminiporttopology.md">IMiniportTopology</a>
 
-<a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+<a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
 
  
 

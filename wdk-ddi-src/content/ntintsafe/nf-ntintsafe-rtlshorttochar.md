@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : AC7D5479-7C68-445A-9788-F5E96D6BB41E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlShortToChar, RtlShortToChar function [Kernel-Mode Driver Architecture], ntintsafe/RtlShortToChar, kernel.rtlshorttochar
+ms.keywords : kernel.rtlshorttochar, ntintsafe/RtlShortToChar, RtlShortToChar, RtlShortToChar function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,11 +80,6 @@ RtlInt16ToChar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

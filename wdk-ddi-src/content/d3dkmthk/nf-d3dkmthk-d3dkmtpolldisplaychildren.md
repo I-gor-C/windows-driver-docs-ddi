@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 463831c1-d9b2-404d-91f3-78f495668fdf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTPollDisplayChildren, d3dkmthk/D3DKMTPollDisplayChildren, OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, D3DKMTPollDisplayChildren function [Display Devices], display.d3dkmtpolldisplaychildren
+ms.keywords : D3DKMTPollDisplayChildren function [Display Devices], d3dkmthk/D3DKMTPollDisplayChildren, D3DKMTPollDisplayChildren, OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, display.d3dkmtpolldisplaychildren
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,14 +100,11 @@ New child devices are enumerated to the Plug and Play (PnP) manager when PnP det
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

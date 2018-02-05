@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 90726c66-738f-416f-993a-84cbf2eb67d2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k110_7d3f1afa-5728-4ade-8915-aeb77dc3edd3.xml, SeAccessCheck routine [Kernel-Mode Driver Architecture], kernel.seaccesscheck, SeAccessCheck, wdm/SeAccessCheck
+ms.keywords : k110_7d3f1afa-5728-4ade-8915-aeb77dc3edd3.xml, wdm/SeAccessCheck, kernel.seaccesscheck, SeAccessCheck, SeAccessCheck routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,12 +118,11 @@ If this routine returns <b>FALSE</b>, the caller should use the returned <i>Acce
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -131,19 +130,19 @@ If this routine returns <b>FALSE</b>, the caller should use the returned <i>Acce
 
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
-<a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>
-
-<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a>
-
-<a href="..\wdm\nf-wdm-sevalidsecuritydescriptor.md">SeValidSecurityDescriptor</a>
-
-<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
 
 <a href="..\ntddk\nf-ntddk-iogetfileobjectgenericmapping.md">IoGetFileObjectGenericMapping</a>
 
+<a href="..\wdm\nf-wdm-sevalidsecuritydescriptor.md">SeValidSecurityDescriptor</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
+
+<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
+
+<a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>
 
  
 

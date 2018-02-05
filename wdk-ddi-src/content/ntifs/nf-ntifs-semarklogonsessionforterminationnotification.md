@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ca259e03-4770-48ce-a4c0-a26159a172aa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeMarkLogonSessionForTerminationNotification, ifsk.semarklogonsessionforterminationnotification, SeMarkLogonSessionForTerminationNotification routine [Installable File System Drivers], ntifs/SeMarkLogonSessionForTerminationNotification, seref_417d6aa1-b506-463d-9506-3a3651873c4a.xml
+ms.keywords : ifsk.semarklogonsessionforterminationnotification, SeMarkLogonSessionForTerminationNotification, ntifs/SeMarkLogonSessionForTerminationNotification, SeMarkLogonSessionForTerminationNotification routine [Installable File System Drivers], seref_417d6aa1-b506-463d-9506-3a3651873c4a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,22 +97,19 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntifs\nf-ntifs-seunregisterlogonsessionterminatedroutine.md">SeUnregisterLogonSessionTerminatedRoutine</a>
 
 <a href="..\ntifs\nf-ntifs-seregisterlogonsessionterminatedroutine.md">SeRegisterLogonSessionTerminatedRoutine</a>
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+
+<a href="..\ntifs\nf-ntifs-seunregisterlogonsessionterminatedroutine.md">SeUnregisterLogonSessionTerminatedRoutine</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F8BBD279-3694-4559-83B3-9312EF4153C0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSBFN_PIPE_INFORMATION, usbfnbase/PUSBFN_PIPE_INFORMATION, usbfnbase/USBFN_PIPE_INFORMATION, buses.usbfn_pipe_information, USBFN_PIPE_INFORMATION, PUSBFN_PIPE_INFORMATION structure pointer [Buses], *PUSBFN_PIPE_INFORMATION, _USBFN_PIPE_INFORMATION, USBFN_PIPE_INFORMATION structure [Buses]
+ms.keywords : usbfnbase/USBFN_PIPE_INFORMATION, _USBFN_PIPE_INFORMATION, PUSBFN_PIPE_INFORMATION structure pointer [Buses], USBFN_PIPE_INFORMATION structure [Buses], PUSBFN_PIPE_INFORMATION, usbfnbase/PUSBFN_PIPE_INFORMATION, buses.usbfn_pipe_information, USBFN_PIPE_INFORMATION, *PUSBFN_PIPE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,6 @@ The pipe identifier (ID).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h |
 
 ## See Also

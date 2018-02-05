@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F13C7D8D-C134-432A-904B-7435894B07E5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : udecxusbdevice/UdecxEndpointsConfigureTypeInterfaceSettingChange, PUDECX_ENDPOINTS_CONFIGURE_TYPE enumeration pointer [Buses], udecxusbdevice/PUDECX_ENDPOINTS_CONFIGURE_TYPE, UdecxEndpointsConfigureTypeInterfaceSettingChange, PUDECX_ENDPOINTS_CONFIGURE_TYPE, udecxusbdevice/UdecxEndpointsConfigureTypeDeviceConfigurationChange, _UDECX_ENDPOINTS_CONFIGURE_TYPE, UDECX_ENDPOINTS_CONFIGURE_TYPE enumeration [Buses], udecxusbdevice/UDECX_ENDPOINTS_CONFIGURE_TYPE, udecxusbdevice/UdecxEndpointsConfigureTypeDeviceInitialize, UdecxEndpointsConfigureTypeDeviceConfigurationChange, UdecxEndpointsConfigureTypeEndpointsReleasedOnly, udecxusbdevice/UdecxEndpointsConfigureTypeEndpointsReleasedOnly, *PUDECX_ENDPOINTS_CONFIGURE_TYPE, UdecxEndpointsConfigureTypeDeviceInitialize, UDECX_ENDPOINTS_CONFIGURE_TYPE, buses.udecx_endpoints_configure_type
+ms.keywords : PUDECX_ENDPOINTS_CONFIGURE_TYPE, udecxusbdevice/PUDECX_ENDPOINTS_CONFIGURE_TYPE, buses.udecx_endpoints_configure_type, udecxusbdevice/UdecxEndpointsConfigureTypeDeviceConfigurationChange, UdecxEndpointsConfigureTypeEndpointsReleasedOnly, *PUDECX_ENDPOINTS_CONFIGURE_TYPE, PUDECX_ENDPOINTS_CONFIGURE_TYPE enumeration pointer [Buses], udecxusbdevice/UdecxEndpointsConfigureTypeEndpointsReleasedOnly, udecxusbdevice/UdecxEndpointsConfigureTypeInterfaceSettingChange, udecxusbdevice/UdecxEndpointsConfigureTypeDeviceInitialize, _UDECX_ENDPOINTS_CONFIGURE_TYPE, udecxusbdevice/UDECX_ENDPOINTS_CONFIGURE_TYPE, UdecxEndpointsConfigureTypeDeviceInitialize, UdecxEndpointsConfigureTypeDeviceConfigurationChange, UDECX_ENDPOINTS_CONFIGURE_TYPE, UDECX_ENDPOINTS_CONFIGURE_TYPE enumeration [Buses], UdecxEndpointsConfigureTypeInterfaceSettingChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,9 +81,6 @@ typedef enum _UDECX_ENDPOINTS_CONFIGURE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f1c7a13b-511a-4e9d-a0e6-9fb27126b1d2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_64fe17d0-9efb-447c-82f1-19f6d954eb1e.xml, iscsicfg/PISCSI_ENCRYPTION_TYPES, ISCSI_ENCRYPT_NONE, iscsicfg/ISCSI_ENCRYPT_NONE, ISCSI_ENCRYPT_AES_CTR, PISCSI_ENCRYPTION_TYPES enumeration pointer [Storage Devices], ISCSI_ENCRYPTION_TYPES, iscsicfg/ISCSI_ENCRYPT_3DES_HMAC_SHA1, iscsicfg/ISCSI_ENCRYPT_AES_CTR, iscsicfg/ISCSI_ENCRYPTION_TYPES, PISCSI_ENCRYPTION_TYPES, *PISCSI_ENCRYPTION_TYPES, ISCSI_ENCRYPTION_TYPES enumeration [Storage Devices], storage.iscsi_encryption_types, ISCSI_ENCRYPT_3DES_HMAC_SHA1
+ms.keywords : ISCSI_ENCRYPT_3DES_HMAC_SHA1, ISCSI_ENCRYPTION_TYPES enumeration [Storage Devices], ISCSI_ENCRYPT_NONE, iscsicfg/ISCSI_ENCRYPT_3DES_HMAC_SHA1, PISCSI_ENCRYPTION_TYPES enumeration pointer [Storage Devices], iscsicfg/ISCSI_ENCRYPT_AES_CTR, *PISCSI_ENCRYPTION_TYPES, structs-iSCSI_64fe17d0-9efb-447c-82f1-19f6d954eb1e.xml, ISCSI_ENCRYPTION_TYPES, storage.iscsi_encryption_types, ISCSI_ENCRYPT_AES_CTR, PISCSI_ENCRYPTION_TYPES, iscsicfg/PISCSI_ENCRYPTION_TYPES, iscsicfg/ISCSI_ENCRYPT_NONE, iscsicfg/ISCSI_ENCRYPTION_TYPES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,16 +77,13 @@ The ISCSI_ENCRYPTION_TYPES enumeration is used with the <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsicfg.h (include Iscsicfg.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
-
 <a href="..\iscsicfg\ns-iscsicfg-_msiscsi_securitycapabilities.md">MSiSCSI_SecurityCapabilities</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563131">MSiSCSI_SecurityCapabilities WMI Class</a>
 
  
 

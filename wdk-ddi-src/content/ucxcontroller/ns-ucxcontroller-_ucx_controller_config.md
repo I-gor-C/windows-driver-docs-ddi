@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9A4249B6-BFC2-42B4-BBA6-094BD78C98DE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : P_UCX_CONTROLLER_CONFIG structure pointer [Buses], ucxcontroller/P_UCX_CONTROLLER_CONFIG, _UCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG structure [Buses], UCX_CONTROLLER_CONFIG, *PUCX_CONTROLLER_CONFIG, ucxcontroller/_UCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG, buses._ucx_controller_config
+ms.keywords : ucxcontroller/_UCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG structure pointer [Buses], *PUCX_CONTROLLER_CONFIG, P_UCX_CONTROLLER_CONFIG, UCX_CONTROLLER_CONFIG structure [Buses], UCX_CONTROLLER_CONFIG, _UCX_CONTROLLER_CONFIG, ucxcontroller/P_UCX_CONTROLLER_CONFIG, buses._ucx_controller_config
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -165,7 +165,4 @@ The size in bytes of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |

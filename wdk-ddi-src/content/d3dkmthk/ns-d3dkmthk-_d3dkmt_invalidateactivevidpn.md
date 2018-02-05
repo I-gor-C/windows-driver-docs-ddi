@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 51fb1993-b9f3-436a-9a6d-7d4f9bf26083
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_invalidateactivevidpn, OpenGL_Structs_6610529b-39db-4fc4-981a-96a6b3bf7543.xml, _D3DKMT_INVALIDATEACTIVEVIDPN, d3dkmthk/D3DKMT_INVALIDATEACTIVEVIDPN, D3DKMT_INVALIDATEACTIVEVIDPN structure [Display Devices], D3DKMT_INVALIDATEACTIVEVIDPN
+ms.keywords : "_D3DKMT_INVALIDATEACTIVEVIDPN, display.d3dkmt_invalidateactivevidpn, d3dkmthk/D3DKMT_INVALIDATEACTIVEVIDPN, D3DKMT_INVALIDATEACTIVEVIDPN, D3DKMT_INVALIDATEACTIVEVIDPN structure [Display Devices], OpenGL_Structs_6610529b-39db-4fc4-981a-96a6b3bf7543.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_INVALIDATEACTIVEVIDPN {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

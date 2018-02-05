@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CA46EEC4-5F3D-4E4C-8C83-6D91BE301C68
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE, display.d3dddigpuvirtualaddress_protection_type, _D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE, D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE structure [Display Devices], D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE
+ms.keywords : "_D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE, D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE structure [Display Devices], D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE, d3dukmdt/D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE, display.d3dddigpuvirtualaddress_protection_type"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,5 @@ typedef struct _D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |

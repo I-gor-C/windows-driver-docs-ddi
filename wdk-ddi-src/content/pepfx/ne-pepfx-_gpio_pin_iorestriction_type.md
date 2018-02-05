@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 381A59EE-BA1C-4810-842B-1D3E4D964486
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : GPIO_PIN_IORESTRICTION_TYPE, IoRestrictionInputOnly, kernel.gpio_pin_iorestriction_type, pepfx/IoRestrictionNoneAndPreserve, IoRestrictionOutputOnly, pepfx/IoRestrictionOutputOnly, IoRestrictionNone, pepfx/IoRestrictionNone, GPIO_PIN_IORESTRICTION_TYPE enumeration [Kernel-Mode Driver Architecture], IoRestrictionNoneAndPreserve, pepfx/GPIO_PIN_IORESTRICTION_TYPE, _GPIO_PIN_IORESTRICTION_TYPE, pepfx/IoRestrictionInputOnly
+ms.keywords : kernel.gpio_pin_iorestriction_type, IoRestrictionNoneAndPreserve, pepfx/IoRestrictionOutputOnly, GPIO_PIN_IORESTRICTION_TYPE enumeration [Kernel-Mode Driver Architecture], IoRestrictionInputOnly, pepfx/IoRestrictionInputOnly, pepfx/GPIO_PIN_IORESTRICTION_TYPE, pepfx/IoRestrictionNone, _GPIO_PIN_IORESTRICTION_TYPE, GPIO_PIN_IORESTRICTION_TYPE, IoRestrictionNone, IoRestrictionOutputOnly, pepfx/IoRestrictionNoneAndPreserve
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,5 @@ typedef enum _GPIO_PIN_IORESTRICTION_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |

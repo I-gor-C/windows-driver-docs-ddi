@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : caf5d3fc-f9bb-412c-af5f-e0c5e4d45efc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeReadStateMutant, ntifs/KeReadStateMutant, KeReadStateMutant function [Installable File System Drivers], ifsk.kereadstatemutant, keref_71f98f36-f8ae-4ea9-9a54-8fb34694b18c.xml
+ms.keywords : keref_71f98f36-f8ae-4ea9-9a54-8fb34694b18c.xml, ifsk.kereadstatemutant, KeReadStateMutant, ntifs/KeReadStateMutant, KeReadStateMutant function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

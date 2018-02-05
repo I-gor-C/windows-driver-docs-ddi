@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 84441fde-1d66-4f76-86b7-dccd792afd0f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_wwn, *PHBA_WWN, HBA_WWN, storage.hba_wwn, HBA_WWN structure [Storage Devices], HBA_wwn structure [Storage Devices], HBA_wwn, structs-Fibre_89c3be90-1992-4d06-9a26-c3067dc69db8.xml, PHBA_WWN structure pointer [Storage Devices], hbaapi/PHBA_WWN, PHBA_WWN
+ms.keywords : "*PHBA_WWN, HBA_wwn, HBA_WWN structure [Storage Devices], HBA_WWN, hbaapi/PHBA_WWN, hbaapi/HBA_wwn, HBA_wwn structure [Storage Devices], structs-Fibre_89c3be90-1992-4d06-9a26-c3067dc69db8.xml, PHBA_WWN structure pointer [Storage Devices], storage.hba_wwn, PHBA_WWN"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHBA_WWN, HBA_WWN"
+req.typenames : HBA_WWN, *PHBA_WWN
 ---
 
 # HBA_wwn structure
@@ -59,18 +59,15 @@ Contains a 64 bit world-wide name (WWN) that uniquely identifies an HBA. .
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also
 
-<a href="..\hbaapi\ns-hbaapi-hba_mgmtinfo.md">HBA_MgmtInfo</a>
-
 <a href="..\hbaapi\ns-hbaapi-hba_adapterattributes.md">HBA_AdapterAttributes</a>
 
 <a href="..\hbaapi\ns-hbaapi-hba_portattributes.md">HBA_PortAttributes</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_mgmtinfo.md">HBA_MgmtInfo</a>
 
  
 

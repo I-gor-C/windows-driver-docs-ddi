@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_d91d6ab4-677e-4bc0-a0b5-1c252475ecbb.xml, storage.storportallocatecontiguousmemoryspecifycachenode, StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode routine [Storage Devices], storport/StorPortAllocateContiguousMemorySpecifyCacheNode
+ms.keywords : storport/StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode routine [Storage Devices], storprt_d91d6ab4-677e-4bc0-a0b5-1c252475ecbb.xml, storage.storportallocatecontiguousmemoryspecifycachenode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,11 +143,9 @@ If the request fails, <i>BufferPointer</i> will be set to <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

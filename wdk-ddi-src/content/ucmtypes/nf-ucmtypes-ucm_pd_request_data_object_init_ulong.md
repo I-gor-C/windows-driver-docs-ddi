@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 825AA3FC-1D2E-4D71-8F21-C89A249B3F1A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG, buses.ucm_pd_request_data_object_init_ulong, ucmtypes/UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG, UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG function [Buses]
+ms.keywords : ucmtypes/UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG, UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG function [Buses], buses.ucm_pd_request_data_object_init_ulong, UCM_PD_REQUEST_DATA_OBJECT_INIT_ULONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ For information about Request Data Objects, see the Power Delivery specification
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

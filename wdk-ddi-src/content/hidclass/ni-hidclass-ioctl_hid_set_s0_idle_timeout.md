@@ -72,6 +72,4 @@ The <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> member is a pointer to the request
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
-| **IRQL** |  |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0754c362-57b8-40e8-a050-c9dded5180c1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad structure [Display Devices], display.dxva_configalphaload, dxva/LPDXVA_ConfigAlphaLoad, LPDXVA_ConfigAlphaLoad structure pointer [Display Devices], _DXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad, dxva/DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad, dxvaref_c813af12-264d-44c6-bebb-1b93f20c545d.xml
+ms.keywords : DXVA_ConfigAlphaLoad, dxva/DXVA_ConfigAlphaLoad, dxva/LPDXVA_ConfigAlphaLoad, LPDXVA_ConfigAlphaLoad, _DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad structure [Display Devices], LPDXVA_ConfigAlphaLoad structure pointer [Display Devices], dxvaref_c813af12-264d-44c6-bebb-1b93f20c545d.xml, display.dxva_configalphaload
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -121,7 +121,4 @@ Reserved bits used for packing and alignment. These bits are zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |

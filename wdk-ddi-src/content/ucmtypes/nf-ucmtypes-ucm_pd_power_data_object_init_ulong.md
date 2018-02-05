@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F5520F9F-159E-42D9-A7F4-426CB935D29D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function [Buses], ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, buses.ucm_pd_power_data_object_init_ulong
+ms.keywords : buses.ucm_pd_power_data_object_init_ulong, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,12 @@ The  structure is 4 bytes and the client driver can memcopy the Power Data Objec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

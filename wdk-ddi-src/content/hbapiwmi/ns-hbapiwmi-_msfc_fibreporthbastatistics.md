@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8b365e7a-6d52-417f-8c0b-78feac24602f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PMSFC_FibrePortHBAStatistics, storage.msfc_fibreporthbastatistics, PMSFC_FibrePortHBAStatistics structure pointer [Storage Devices], hbapiwmi/MSFC_FibrePortHBAStatistics, PMSFC_FibrePortHBAStatistics, MSFC_FibrePortHBAStatistics, structs-Fibre_d68738f2-ea37-420f-8356-51aa06362829.xml, _MSFC_FibrePortHBAStatistics, *PMSFC_FibrePortHBAStatistics, MSFC_FibrePortHBAStatistics structure [Storage Devices]
+ms.keywords : MSFC_FibrePortHBAStatistics, hbapiwmi/PMSFC_FibrePortHBAStatistics, structs-Fibre_d68738f2-ea37-420f-8356-51aa06362829.xml, MSFC_FibrePortHBAStatistics structure [Storage Devices], storage.msfc_fibreporthbastatistics, _MSFC_FibrePortHBAStatistics, hbapiwmi/MSFC_FibrePortHBAStatistics, PMSFC_FibrePortHBAStatistics structure pointer [Storage Devices], PMSFC_FibrePortHBAStatistics, *PMSFC_FibrePortHBAStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MSFC_FibrePortHBAStatistics, *PMSFC_FibrePortHBAStatistics
+req.typenames : "*PMSFC_FibrePortHBAStatistics, MSFC_FibrePortHBAStatistics"
 ---
 
 # _MSFC_FibrePortHBAStatistics structure
@@ -69,9 +69,6 @@ Contains a unique identifier for the port.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

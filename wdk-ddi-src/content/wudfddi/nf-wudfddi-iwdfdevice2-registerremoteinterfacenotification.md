@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 48e1fc20-03e7-42ef-b57c-9246a56df4ef
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice2, IWDFDevice2 interface, RegisterRemoteInterfaceNotification method, UMDFDeviceObjectRef_2629392c-5f58-4e33-be77-3422267c6a4b.xml, wudfddi/IWDFDevice2::RegisterRemoteInterfaceNotification, wdf.iwdfdevice2_registerremoteinterfacenotification, RegisterRemoteInterfaceNotification method, umdf.iwdfdevice2_registerremoteinterfacenotification, RegisterRemoteInterfaceNotification, RegisterRemoteInterfaceNotification method, IWDFDevice2 interface, IWDFDevice2::RegisterRemoteInterfaceNotification
+ms.keywords : RegisterRemoteInterfaceNotification, RegisterRemoteInterfaceNotification method, IWDFDevice2 interface, wdf.iwdfdevice2_registerremoteinterfacenotification, IWDFDevice2 interface, RegisterRemoteInterfaceNotification method, IWDFDevice2::RegisterRemoteInterfaceNotification, UMDFDeviceObjectRef_2629392c-5f58-4e33-be77-3422267c6a4b.xml, RegisterRemoteInterfaceNotification method, umdf.iwdfdevice2_registerremoteinterfacenotification, wudfddi/IWDFDevice2::RegisterRemoteInterfaceNotification, IWDFDevice2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -80,20 +80,18 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
 
  
 

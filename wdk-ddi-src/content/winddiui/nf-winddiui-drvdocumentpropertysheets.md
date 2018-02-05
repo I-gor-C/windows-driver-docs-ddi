@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : fc7e98ba-5c49-4c2d-af2e-b6c13757f6e6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvDocumentPropertySheets, print.drvdocumentpropertysheets, winddiui/DrvDocumentPropertySheets, print_interface-graphics_00cc0beb-e6f1-41dd-ae0b-fd59a6d14465.xml, DrvDocumentPropertySheets function [Print Devices]
+ms.keywords : DrvDocumentPropertySheets function [Print Devices], winddiui/DrvDocumentPropertySheets, print.drvdocumentpropertysheets, DrvDocumentPropertySheets, print_interface-graphics_00cc0beb-e6f1-41dd-ae0b-fd59a6d14465.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -124,14 +124,9 @@ If the <b>fMode</b> member of the DOCUMENTPROPERTYHEADER structure is not zero, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

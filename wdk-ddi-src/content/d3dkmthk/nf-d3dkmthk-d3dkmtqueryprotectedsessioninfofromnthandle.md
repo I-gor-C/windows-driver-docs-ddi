@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 04eff7e1-1ac3-4622-a837-1ea6aad97329
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTQueryProtectedSessionInfoFromNtHandle, D3DKMTQueryProtectedSessionInfoFromNtHandle, display.d3dkmtqueryprotectedsessioninfofromnthandle, D3DKMTQueryProtectedSessionInfoFromNtHandle method [Display Devices]
+ms.keywords : D3DKMTQueryProtectedSessionInfoFromNtHandle, d3dkmthk/D3DKMTQueryProtectedSessionInfoFromNtHandle, display.d3dkmtqueryprotectedsessioninfofromnthandle, D3DKMTQueryProtectedSessionInfoFromNtHandle method [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,7 @@ Returns STATUS_SUCCESS when completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 61a60e77-387c-42d6-b56b-694ce0c86570
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storduid/DUID_MATCH_STATUS, storduid/DuidExactMatch, DUID_MATCH_STATUS enumeration [Storage Devices], DuidErrorInvalidLayoutSigSize, storduid/DuidErrorMissingDuid, storduid/DuidErrorInvalidDeviceIdDescSize, _DUID_MATCH_STATUS, storduid/DuidErrorInvalidDeviceDescSize, storduid/DuidErrorInvalidLayoutSigSize, DuidErrorInvalidDeviceIdDescSize, storduid/DuidErrorInvalidDuid, storduid/DuidSubIdMatch, storduid/DuidErrorGeneral, structs-general_8e33f54f-7115-42c2-aa06-112c79f9c392.xml, storduid/DuidNoMatch, DuidErrorInvalidLayoutSigVersion, storage.duid_match_status, DuidNoMatch, DuidErrorGeneral, DUID_MATCH_STATUS, DuidErrorMaximum, storduid/DuidErrorVersionMismatch, DuidErrorVersionMismatch, storduid/DuidErrorInvalidLayoutSigVersion, DuidErrorMissingDuid, DuidSubIdMatch, DuidExactMatch, DuidErrorInvalidDuid, storduid/DuidErrorMaximum, DuidErrorInvalidDeviceDescSize
+ms.keywords : storduid/DuidErrorMaximum, DuidNoMatch, storduid/DuidExactMatch, storduid/DuidNoMatch, storduid/DuidErrorGeneral, storduid/DuidSubIdMatch, storduid/DuidErrorInvalidDeviceIdDescSize, storduid/DuidErrorInvalidDuid, _DUID_MATCH_STATUS, DuidErrorInvalidDeviceDescSize, DuidErrorInvalidDuid, storage.duid_match_status, DUID_MATCH_STATUS enumeration [Storage Devices], DuidSubIdMatch, DuidErrorInvalidDeviceIdDescSize, DuidErrorVersionMismatch, DuidErrorGeneral, DuidExactMatch, storduid/DuidErrorMissingDuid, storduid/DuidErrorInvalidDeviceDescSize, structs-general_8e33f54f-7115-42c2-aa06-112c79f9c392.xml, storduid/DuidErrorVersionMismatch, DuidErrorInvalidLayoutSigVersion, DuidErrorMissingDuid, DuidErrorMaximum, DuidErrorInvalidLayoutSigSize, storduid/DuidErrorInvalidLayoutSigVersion, storduid/DUID_MATCH_STATUS, storduid/DuidErrorInvalidLayoutSigSize, DUID_MATCH_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -129,9 +129,6 @@ typedef enum _DUID_MATCH_STATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storduid.h (include Storduid.h) |
 
 ## See Also

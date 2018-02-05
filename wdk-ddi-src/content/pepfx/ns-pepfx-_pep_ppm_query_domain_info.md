@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c608dac0-bb2a-4d89-a2f8-1017254c8a6c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO structure [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_DOMAIN_INFO, pepfx/PEP_PPM_QUERY_DOMAIN_INFO, kernel.pep_ppm_query_domain_info"
+ms.keywords : kernel.pep_ppm_query_domain_info, _PEP_PPM_QUERY_DOMAIN_INFO, *PPEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,9 +90,7 @@ On output, this value indicates the worst case overhead (PEP code execution time
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | pepfx.h |
 
 ## See Also

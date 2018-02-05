@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 06A41593-A052-43A7-B3A7-02185B557FA3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PO_FX_PERF_STATE, PPO_FX_PERF_STATE, PO_FX_PERF_STATE structure [Kernel-Mode Driver Architecture], wdm/PPO_FX_PERF_STATE, *PPO_FX_PERF_STATE, PPO_FX_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], kernel.po_fx_perf_state, PO_FX_PERF_STATE, _PO_FX_PERF_STATE
+ms.keywords : PPO_FX_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PO_FX_PERF_STATE, _PO_FX_PERF_STATE, *PPO_FX_PERF_STATE, PO_FX_PERF_STATE structure [Kernel-Mode Driver Architecture], kernel.po_fx_perf_state, PPO_FX_PERF_STATE, wdm/PO_FX_PERF_STATE, wdm/PPO_FX_PERF_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PO_FX_PERF_STATE, *PPO_FX_PERF_STATE
+req.typenames : "*PPO_FX_PERF_STATE, PO_FX_PERF_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -68,20 +68,18 @@ The <b>States</b> member of the <a href="..\wdm\ns-wdm-_po_fx_component_perf_set
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | wdm.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
-
-<a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
-
 <a href="..\wdm\ne-wdm-_po_fx_perf_state_unit.md">PO_FX_PERF_STATE_UNIT</a>
 
 <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
+
+<a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
+
+<a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
 
  
 

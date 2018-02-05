@@ -57,8 +57,5 @@ Exposes a Print Schema NUp Option element.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **DLL** |  |

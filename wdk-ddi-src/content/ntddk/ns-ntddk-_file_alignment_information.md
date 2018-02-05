@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d3990d67-aa0c-4d17-9126-80fdcebbd306
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.file_alignment_information, kstruct_b_ce42b00c-17a9-4fcf-a6bb-ade557580e81.xml, ntddk/FILE_ALIGNMENT_INFORMATION, ntddk/PFILE_ALIGNMENT_INFORMATION, _FILE_ALIGNMENT_INFORMATION, PFILE_ALIGNMENT_INFORMATION, FILE_ALIGNMENT_INFORMATION, PFILE_ALIGNMENT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_ALIGNMENT_INFORMATION structure [Kernel-Mode Driver Architecture], *PFILE_ALIGNMENT_INFORMATION
+ms.keywords : PFILE_ALIGNMENT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], ntddk/PFILE_ALIGNMENT_INFORMATION, kernel.file_alignment_information, FILE_ALIGNMENT_INFORMATION, PFILE_ALIGNMENT_INFORMATION, ntddk/FILE_ALIGNMENT_INFORMATION, _FILE_ALIGNMENT_INFORMATION, *PFILE_ALIGNMENT_INFORMATION, kstruct_b_ce42b00c-17a9-4fcf-a6bb-ade557580e81.xml, FILE_ALIGNMENT_INFORMATION structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_ALIGNMENT_INFORMATION, FILE_ALIGNMENT_INFORMATION"
+req.typenames : FILE_ALIGNMENT_INFORMATION, *PFILE_ALIGNMENT_INFORMATION
 ---
 
 # _FILE_ALIGNMENT_INFORMATION structure
@@ -59,9 +59,6 @@ The buffer alignment required by the underlying device. For a list of system-def
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
 ## See Also

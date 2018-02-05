@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : E5267F04-D693-453B-BAD2-C61F89B07F6E
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestImpersonate method, wdfrequest/WdfRequestImpersonate, PFN_WDFREQUESTIMPERSONATE, wdf.wdfrequestimpersonate, WdfRequestImpersonate
+ms.keywords : WdfRequestImpersonate method, WdfRequestImpersonate, wdfrequest/WdfRequestImpersonate, wdf.wdfrequestimpersonate, PFN_WDFREQUESTIMPERSONATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,14 +90,13 @@ For more information, see <a href="https://msdn.microsoft.com/02EA93CE-3C4D-4F6F
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll; TBD |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

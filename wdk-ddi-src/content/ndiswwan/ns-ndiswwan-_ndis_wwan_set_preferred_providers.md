@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6741d440-0e17-4b2d-a642-0335d1f936cf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_SET_PREFERRED_PROVIDERS, WwanRef_9e9b42a9-813f-4440-a112-9af4bc172d4e.xml, NDIS_WWAN_SET_PREFERRED_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_PREFERRED_PROVIDERS, NDIS_WWAN_SET_PREFERRED_PROVIDERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_preferred_providers, ndiswwan/NDIS_WWAN_SET_PREFERRED_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_PROVIDERS
+ms.keywords : netvista.ndis_wwan_set_preferred_providers, ndiswwan/NDIS_WWAN_SET_PREFERRED_PROVIDERS, NDIS_WWAN_SET_PREFERRED_PROVIDERS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_PREFERRED_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_PROVIDERS, WwanRef_9e9b42a9-813f-4440-a112-9af4bc172d4e.xml, PNDIS_WWAN_SET_PREFERRED_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PREFERRED_PROVIDERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -115,16 +115,14 @@ A formatted
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a>
 
  
 

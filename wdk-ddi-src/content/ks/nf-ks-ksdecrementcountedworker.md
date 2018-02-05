@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2b38e4df-e5b6-480b-bd4e-62e059e26411
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksdecrementcountedworker, ks/KsDecrementCountedWorker, KsDecrementCountedWorker function [Streaming Media Devices], ksfunc_7ddba520-3deb-4160-87e1-a12d2210b5da.xml, KsDecrementCountedWorker
+ms.keywords : KsDecrementCountedWorker function [Streaming Media Devices], KsDecrementCountedWorker, ksfunc_7ddba520-3deb-4160-87e1-a12d2210b5da.xml, stream.ksdecrementcountedworker, ks/KsDecrementCountedWorker
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,9 @@ Returns the current counter. A count of zero implies that the task list has been
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

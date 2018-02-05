@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bd0defc1-7c06-4b54-b4e3-3c17c49a6c57
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSystemStructures_d43817d6-bc53-407d-8a3f-c6268112eb6e.xml, fltkernel/FLT_CALLBACK_DATA_QUEUE, PFLT_CALLBACK_DATA_QUEUE structure pointer [Installable File System Drivers], ifsk.flt_callback_data_queue, _FLT_CALLBACK_DATA_QUEUE, PFLT_CALLBACK_DATA_QUEUE, fltkernel/PFLT_CALLBACK_DATA_QUEUE, FLT_CALLBACK_DATA_QUEUE, FLT_CALLBACK_DATA_QUEUE structure [Installable File System Drivers], *PFLT_CALLBACK_DATA_QUEUE
+ms.keywords : FLT_CALLBACK_DATA_QUEUE structure [Installable File System Drivers], PFLT_CALLBACK_DATA_QUEUE, _FLT_CALLBACK_DATA_QUEUE, FLT_CALLBACK_DATA_QUEUE, ifsk.flt_callback_data_queue, fltkernel/FLT_CALLBACK_DATA_QUEUE, fltkernel/PFLT_CALLBACK_DATA_QUEUE, PFLT_CALLBACK_DATA_QUEUE structure pointer [Installable File System Drivers], *PFLT_CALLBACK_DATA_QUEUE, FltSystemStructures_d43817d6-bc53-407d-8a3f-c6268112eb6e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -51,9 +51,6 @@ FLT_CALLBACK_DATA_QUEUE is an opaque structure that is used to specify the callb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include FltKernel.h) |
 
 ## See Also
@@ -62,11 +59,11 @@ FLT_CALLBACK_DATA_QUEUE is an opaque structure that is used to specify the callb
 
 <a href="..\fltkernel\nf-fltkernel-fltcbdqremoveio.md">FltCbdqRemoveIo</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltcbdqinsertio.md">FltCbdqInsertIo</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcbdqenable.md">FltCbdqEnable</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcbdqdisable.md">FltCbdqDisable</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcbdqremovenextio.md">FltCbdqRemoveNextIo</a>
 

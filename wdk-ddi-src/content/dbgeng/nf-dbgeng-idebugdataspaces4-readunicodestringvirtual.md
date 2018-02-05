@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 956ad15d-2c90-473a-b9be-8c5023628841
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ReadUnicodeStringVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4, IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtual method, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtual, ReadUnicodeStringVirtual, ReadUnicodeStringVirtual method [Windows Debugging], debugger.readunicodestringvirtual, IDebugDataSpaces4::ReadUnicodeStringVirtual, IDebugDataSpaces_423e591f-3840-4c6c-94e0-67b06a435652.xml
+ms.keywords : IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtual method, ReadUnicodeStringVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4::ReadUnicodeStringVirtual, IDebugDataSpaces_423e591f-3840-4c6c-94e0-67b06a435652.xml, ReadUnicodeStringVirtual, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtual, IDebugDataSpaces4, debugger.readunicodestringvirtual, ReadUnicodeStringVirtual method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -133,22 +133,17 @@ The engine will read up to <i>MaxBytes</i> from the target, looking for a null-t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Winnls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
+
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554357">ReadUnicodeStringVirtualWide</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554300">ReadMultiByteStringVirtual</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
  
 

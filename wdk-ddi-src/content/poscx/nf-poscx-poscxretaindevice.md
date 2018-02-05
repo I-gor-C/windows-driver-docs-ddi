@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 0DF5E1DA-35BA-406A-A708-461534373F12
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : poscx/PosCxRetainDevice, PosCxRetainDevice, pos.poscxretaindevice, PosCxRetainDevice function
+ms.keywords : pos.poscxretaindevice, PosCxRetainDevice function, poscx/PosCxRetainDevice, PosCxRetainDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,11 +85,6 @@ Possible return values are:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

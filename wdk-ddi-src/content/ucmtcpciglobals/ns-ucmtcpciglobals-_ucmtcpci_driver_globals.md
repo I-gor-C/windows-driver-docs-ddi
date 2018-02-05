@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 75a0e9ef-0791-4465-b671-36c86dc9116a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucmtcpci_driver_globals, UCMTCPCI_DRIVER_GLOBALS structure [Buses], ucmtcpciglobals/UCMTCPCI_DRIVER_GLOBALS, _UCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
+ms.keywords : "_UCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, ucmtcpciglobals/UCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS structure [Buses], *PUCMTCPCI_DRIVER_GLOBALS, buses.ucmtcpci_driver_globals"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
+req.typenames : "*PUCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS"
 req.product : Windows 10 or later.
 ---
 
@@ -60,7 +60,4 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucmtcpciglobals.h |

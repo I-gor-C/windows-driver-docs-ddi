@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 293103cc-217c-4dcb-82c1-971adba564a0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_6e2f92a1-beaa-4485-bb27-aff719a693b4.xml, display.dxgk_vidpntopology_interface, d3dkmddi/DXGK_VIDPNTOPOLOGY_INTERFACE, DXGK_VIDPNTOPOLOGY_INTERFACE structure [Display Devices], _DXGK_VIDPNTOPOLOGY_INTERFACE, DXGK_VIDPNTOPOLOGY_INTERFACE
+ms.keywords : d3dkmddi/DXGK_VIDPNTOPOLOGY_INTERFACE, display.dxgk_vidpntopology_interface, DmStructs_6e2f92a1-beaa-4485-bb27-aff719a693b4.xml, _DXGK_VIDPNTOPOLOGY_INTERFACE, DXGK_VIDPNTOPOLOGY_INTERFACE structure [Display Devices], DXGK_VIDPNTOPOLOGY_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -116,7 +116,5 @@ The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

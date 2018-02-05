@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9FF2EC69-0844-4FD7-A2BC-F16C42922212
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtliscloudfilesplaceholder, RtlIsCloudFilesPlaceholder routine [Installable File System Drivers], RtlIsCloudFilesPlaceholder, ntifs/RtlIsCloudFilesPlaceholder
+ms.keywords : RtlIsCloudFilesPlaceholder routine [Installable File System Drivers], ifsk.rtliscloudfilesplaceholder, RtlIsCloudFilesPlaceholder, ntifs/RtlIsCloudFilesPlaceholder
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,11 @@ This function returns <b>TRUE</b> if the file or directory is a CloudFiles parti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
+| **DLL** | Ntdll.dll |
 
 ## See Also
 

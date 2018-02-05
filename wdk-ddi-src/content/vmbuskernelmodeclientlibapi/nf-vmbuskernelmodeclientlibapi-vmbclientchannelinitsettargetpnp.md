@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5525FD48-BE65-48CA-B3D5-C96AFD4ECF56
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbClientChannelInitSetTargetPnp function [Network Drivers Starting with Windows Vista], VmbClientChannelInitSetTargetPnp, vmbuskernelmodeclientlibapi/VmbClientChannelInitSetTargetPnp, netvista.vmbclientchannelinitsettargetpnp
+ms.keywords : VmbClientChannelInitSetTargetPnp, netvista.vmbclientchannelinitsettargetpnp, VmbClientChannelInitSetTargetPnp function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbClientChannelInitSetTargetPnp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -113,11 +113,9 @@ same <i>InterfaceType</i> but different <i>InterfaceInstance</i> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b0f03d83-61d3-4aa1-ae4e-a8bdc9f13a9f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddchgr/CHANGER_EXCHANGE_MEDIUM, ntddchgr/PCHANGER_EXCHANGE_MEDIUM, structs-changer_4af39195-5fe7-42e2-b8bd-3247391fea3f.xml, _CHANGER_EXCHANGE_MEDIUM, CHANGER_EXCHANGE_MEDIUM, PCHANGER_EXCHANGE_MEDIUM structure pointer [Storage Devices], PCHANGER_EXCHANGE_MEDIUM, *PCHANGER_EXCHANGE_MEDIUM, CHANGER_EXCHANGE_MEDIUM structure [Storage Devices], storage.changer_exchange_medium
+ms.keywords : storage.changer_exchange_medium, structs-changer_4af39195-5fe7-42e2-b8bd-3247391fea3f.xml, _CHANGER_EXCHANGE_MEDIUM, *PCHANGER_EXCHANGE_MEDIUM, PCHANGER_EXCHANGE_MEDIUM structure pointer [Storage Devices], CHANGER_EXCHANGE_MEDIUM structure [Storage Devices], CHANGER_EXCHANGE_MEDIUM, ntddchgr/PCHANGER_EXCHANGE_MEDIUM, PCHANGER_EXCHANGE_MEDIUM, ntddchgr/CHANGER_EXCHANGE_MEDIUM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,6 @@ Indicates which transport element to use for the exchange operation. This member
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddchgr.h |
 
 ## See Also

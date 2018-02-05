@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b1462a64-debf-441f-8964-4644074e5e53
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe::GetInformation, wdf.iwdfusbtargetpipe_getinformation, IWDFUsbTargetPipe interface, GetInformation method, GetInformation method, IWDFUsbTargetPipe interface, GetInformation, wudfusb/IWDFUsbTargetPipe::GetInformation, umdf.iwdfusbtargetpipe_getinformation, GetInformation method, UMDFUSBref_4d7b2b77-fa26-45e2-8f3f-e0315d70f937.xml, IWDFUsbTargetPipe
+ms.keywords : IWDFUsbTargetPipe, wudfusb/IWDFUsbTargetPipe::GetInformation, IWDFUsbTargetPipe interface, GetInformation method, UMDFUSBref_4d7b2b77-fa26-45e2-8f3f-e0315d70f937.xml, umdf.iwdfusbtargetpipe_getinformation, GetInformation method, IWDFUsbTargetPipe interface, GetInformation method, IWDFUsbTargetPipe::GetInformation, GetInformation, wdf.iwdfusbtargetpipe_getinformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,14 +71,12 @@ After a UMDF driver calls the <a href="https://msdn.microsoft.com/library/window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

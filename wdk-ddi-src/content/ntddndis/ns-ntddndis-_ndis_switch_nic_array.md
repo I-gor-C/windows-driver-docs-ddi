@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3509a177-d974-45fb-9387-21780483cbe7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_SWITCH_NIC_ARRAY, netvista.ndis_switch_nic_array, *PNDIS_SWITCH_NIC_ARRAY, NDIS_SWITCH_NIC_ARRAY, NDIS_SWITCH_NIC_ARRAY structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_ARRAY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_ARRAY, PNDIS_SWITCH_NIC_ARRAY, ntddndis/NDIS_SWITCH_NIC_ARRAY
+ms.keywords : NDIS_SWITCH_NIC_ARRAY structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_nic_array, PNDIS_SWITCH_NIC_ARRAY, *PNDIS_SWITCH_NIC_ARRAY, PNDIS_SWITCH_NIC_ARRAY structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_NIC_ARRAY, ntddndis/PNDIS_SWITCH_NIC_ARRAY, _NDIS_SWITCH_NIC_ARRAY, NDIS_SWITCH_NIC_ARRAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SWITCH_NIC_ARRAY, *PNDIS_SWITCH_NIC_ARRAY
+req.typenames : "*PNDIS_SWITCH_NIC_ARRAY, NDIS_SWITCH_NIC_ARRAY"
 ---
 
 # _NDIS_SWITCH_NIC_ARRAY structure
@@ -97,20 +97,18 @@ Extensible switch extensions can access individual <a href="..\ntddndis\ns-ntddn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h, Fwpsk.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598213">NDIS_SWITCH_NIC_AT_ARRAY_INDEX</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a>
 
 <b></b>
 

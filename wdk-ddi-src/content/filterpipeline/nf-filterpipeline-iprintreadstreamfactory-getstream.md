@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 47447f00-a57d-4821-b10e-1b2cf7eaad94
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrintReadStreamFactory::GetStream, filterpipeline/IPrintReadStreamFactory::GetStream, print.iprintreadstreamfactory_getstream, GetStream method [Print Devices], IPrintReadStreamFactory interface, GetStream method [Print Devices], GetStream, filterpipeline_0e4b4a26-da03-4719-bbce-2bb160a882e2.xml, IPrintReadStreamFactory interface [Print Devices], GetStream method, IPrintReadStreamFactory
+ms.keywords : GetStream method [Print Devices], IPrintReadStreamFactory interface, IPrintReadStreamFactory, GetStream, IPrintReadStreamFactory interface [Print Devices], GetStream method, filterpipeline_0e4b4a26-da03-4719-bbce-2bb160a882e2.xml, GetStream method [Print Devices], IPrintReadStreamFactory::GetStream, print.iprintreadstreamfactory_getstream, filterpipeline/IPrintReadStreamFactory::GetStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -113,11 +113,6 @@ if (SUCCEEDED(hr))
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

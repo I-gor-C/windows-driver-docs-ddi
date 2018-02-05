@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 455C3FBD-2E0D-4CD7-B753-E53ED58A7F6F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_CREATEPERIODICFRAMENOTIFICATION structure [Display Devices], *INOUT_PDXGKARG_CREATEPERIODICFRAMENOTIFICATION, d3dkmddi/DXGKARG_CREATEPERIODICFRAMENOTIFICATION, display.dxgkarg_createperiodicframenotification, DXGKARG_CREATEPERIODICFRAMENOTIFICATION, _DXGKARG_CREATEPERIODICFRAMENOTIFICATION
+ms.keywords : d3dkmddi/DXGKARG_CREATEPERIODICFRAMENOTIFICATION, DXGKARG_CREATEPERIODICFRAMENOTIFICATION, _DXGKARG_CREATEPERIODICFRAMENOTIFICATION, DXGKARG_CREATEPERIODICFRAMENOTIFICATION structure [Display Devices], *INOUT_PDXGKARG_CREATEPERIODICFRAMENOTIFICATION, display.dxgkarg_createperiodicframenotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ Represents an offset before the VSync. The Time value may not be longer than a V
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

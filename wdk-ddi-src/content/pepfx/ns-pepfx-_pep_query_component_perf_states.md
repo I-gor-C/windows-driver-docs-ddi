@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D14CB726-2576-490E-B3FD-E970F8B3C87F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_QUERY_COMPONENT_PERF_STATES, pepfx/PEP_QUERY_COMPONENT_PERF_STATES, PEP_QUERY_COMPONENT_PERF_STATES, PPEP_QUERY_COMPONENT_PERF_STATES structure pointer [Kernel-Mode Driver Architecture], PEP_QUERY_COMPONENT_PERF_STATES structure [Kernel-Mode Driver Architecture], PPEP_QUERY_COMPONENT_PERF_STATES, kernel.pep_query_component_perf_states, *PPEP_QUERY_COMPONENT_PERF_STATES, _PEP_QUERY_COMPONENT_PERF_STATES
+ms.keywords : kernel.pep_query_component_perf_states, _PEP_QUERY_COMPONENT_PERF_STATES, pepfx/PEP_QUERY_COMPONENT_PERF_STATES, PEP_QUERY_COMPONENT_PERF_STATES, PPEP_QUERY_COMPONENT_PERF_STATES structure pointer [Kernel-Mode Driver Architecture], PPEP_QUERY_COMPONENT_PERF_STATES, PEP_QUERY_COMPONENT_PERF_STATES structure [Kernel-Mode Driver Architecture], pepfx/PPEP_QUERY_COMPONENT_PERF_STATES, *PPEP_QUERY_COMPONENT_PERF_STATES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,18 +76,16 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186842">PEP_DPM_QUERY_COMPONENT_PERF_STATES</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a>
 
 <a href="..\pepfx\ns-pepfx-_pep_perf_state.md">PEP_PERF_STATE</a>
 

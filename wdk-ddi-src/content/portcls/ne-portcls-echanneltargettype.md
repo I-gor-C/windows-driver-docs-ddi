@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 44C5BE49-E8D5-4E6C-BDC5-494F180D580A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : eMuteAttribute, eChannelTargetType enumeration [Audio Devices], portcls/ePeakMeterAttribute, ePeakMeterAttribute, eVolumeAttribute, portcls/eChannelTargetType, portcls/eVolumeAttribute, portcls/eMuteAttribute, audio.echanneltargettype, eChannelTargetType
+ms.keywords : eMuteAttribute, audio.echanneltargettype, eChannelTargetType enumeration [Audio Devices], portcls/eVolumeAttribute, eVolumeAttribute, portcls/eMuteAttribute, portcls/eChannelTargetType, portcls/ePeakMeterAttribute, eChannelTargetType, ePeakMeterAttribute
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum _eChannelTargetType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |

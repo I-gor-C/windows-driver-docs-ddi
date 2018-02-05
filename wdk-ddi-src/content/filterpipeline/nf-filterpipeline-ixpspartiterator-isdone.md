@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 80877e8e-378f-4849-a8ce-b0651fdc2755
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : filterpipeline_c3b7b22e-6a29-463a-a516-d7857413050e.xml, IXpsPartIterator interface [Print Devices], IsDone method, print.ixpspartiterator_isdone, IXpsPartIterator, filterpipeline/IXpsPartIterator::IsDone, IsDone method [Print Devices], IsDone, IsDone method [Print Devices], IXpsPartIterator interface, IXpsPartIterator::IsDone
+ms.keywords : IXpsPartIterator, IsDone, print.ixpspartiterator_isdone, IsDone method [Print Devices], IXpsPartIterator interface, filterpipeline/IXpsPartIterator::IsDone, IXpsPartIterator::IsDone, IsDone method [Print Devices], IXpsPartIterator interface [Print Devices], IsDone method, filterpipeline_c3b7b22e-6a29-463a-a516-d7857413050e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -62,11 +62,6 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

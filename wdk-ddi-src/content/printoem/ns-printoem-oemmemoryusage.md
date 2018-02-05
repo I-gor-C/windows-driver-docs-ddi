@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a7a522b8-7aa2-45b6-9200-407471dca82f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMMEMORYUSAGE, POEMMEMORYUSAGE, POEMMEMORYUSAGE structure pointer [Print Devices], OEMMEMORYUSAGE structure [Print Devices], print_unidrv-pscript_rendering_c6746c1c-f6c5-4acf-bcd3-bc1f69382dae.xml, printoem/OEMMEMORYUSAGE, print.oemmemoryusage, *POEMMEMORYUSAGE, printoem/POEMMEMORYUSAGE
+ms.keywords : print.oemmemoryusage, POEMMEMORYUSAGE structure pointer [Print Devices], printoem/POEMMEMORYUSAGE, OEMMEMORYUSAGE structure [Print Devices], POEMMEMORYUSAGE, *POEMMEMORYUSAGE, print_unidrv-pscript_rendering_c6746c1c-f6c5-4acf-bcd3-bc1f69382dae.xml, printoem/OEMMEMORYUSAGE, OEMMEMORYUSAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OEMMEMORYUSAGE, *POEMMEMORYUSAGE
+req.typenames : "*POEMMEMORYUSAGE, OEMMEMORYUSAGE"
 req.product : Windows 10 or later.
 ---
 
@@ -72,9 +72,6 @@ The Unidrv driver uses the values in the <b>dwFixedMemoryUsage</b> and <b>dwPerc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : aa598c4b-e840-41cb-81a3-719a5b1ee48b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : MmForceSectionClosed routine [Installable File System Drivers], MmForceSectionClosed, ntifs/MmForceSectionClosed, mmref_d2466446-15b8-4152-a7ff-3ebe1f05cd68.xml, ifsk.mmforcesectionclosed
+ms.keywords : ntifs/MmForceSectionClosed, mmref_d2466446-15b8-4152-a7ff-3ebe1f05cd68.xml, MmForceSectionClosed routine [Installable File System Drivers], ifsk.mmforcesectionclosed, MmForceSectionClosed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,11 @@ For more information about creating mapped sections and views of memory, see <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

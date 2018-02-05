@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 
@@ -93,40 +93,34 @@ This remote directory does not exist.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mrx.h (include Mrx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550796">MRxSetFileInfoAtCleanup</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550773">MRxQueryQuotaInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550755">MRxQueryDirectory</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550810">MRxSetVolumeInfo</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550805">MRxSetSdInfo</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550776">MRxQuerySdInfo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550782">MRxQueryVolumeInfo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550786">MRxSetEaInfo</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550790">MRxSetFileInfo</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550782">MRxQueryVolumeInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550773">MRxQueryQuotaInfo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550796">MRxSetFileInfoAtCleanup</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550800">MRxSetQuotaInfo</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550759">MRxQueryEaInfo</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550755">MRxQueryDirectory</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550776">MRxQuerySdInfo</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550786">MRxSetEaInfo</a>
 
  
 

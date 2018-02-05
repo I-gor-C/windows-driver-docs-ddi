@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 81147a47-b5aa-4f00-812d-2c6cf9d5ab8b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_DEPERSOSTATE_PUK_REQUIRED, RIL_DEPERSOSTATE_PUK_REQUIRED, RIL_DEPERSOSTATE_PUK_BLOCKED, RILPERSODEACTIVATIONSTATEDEPERSOSTATE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILPERSODEACTIVATIONSTATEDEPERSOSTATE, RILPERSODEACTIVATIONSTATEDEPERSOSTATE, ntddrilapitypes/RIL_DEPERSOSTATE_CK_REQUIRED, ntddrilapitypes/RIL_DEPERSOSTATE_PUK_BLOCKED, ntddrilapitypes/RIL_DEPERSOSTATE_MAX, RIL_DEPERSOSTATE_MAX, RIL_DEPERSOSTATE_CK_REQUIRED, netvista.rilpersodeactivationstatedepersostate
+ms.keywords : ntddrilapitypes/RILPERSODEACTIVATIONSTATEDEPERSOSTATE, RIL_DEPERSOSTATE_PUK_BLOCKED, RIL_DEPERSOSTATE_PUK_REQUIRED, RIL_DEPERSOSTATE_MAX, ntddrilapitypes/RIL_DEPERSOSTATE_MAX, ntddrilapitypes/RIL_DEPERSOSTATE_PUK_REQUIRED, netvista.rilpersodeactivationstatedepersostate, RILPERSODEACTIVATIONSTATEDEPERSOSTATE, ntddrilapitypes/RIL_DEPERSOSTATE_PUK_BLOCKED, ntddrilapitypes/RIL_DEPERSOSTATE_CK_REQUIRED, RILPERSODEACTIVATIONSTATEDEPERSOSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_DEPERSOSTATE_CK_REQUIRED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILPERSODEACTIVATIONSTATEDEPERSOSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

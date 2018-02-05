@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f26732a7-54b5-4573-ac4f-7b2b6c8db8b0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPropertyStoreRootClassHardwareKey, wudfddi_types/WdfPropertyStoreRootClassHardwareKey, wdf.wdf_property_store_root_class, WdfPropertyStoreRootClassLegacyHardwareKey, WdfPropertyStoreRootClassSoftwareKey, WdfPropertyStoreRootClassDeviceInterfaceKey, wudfddi_types/WdfPropertyStoreRootClassDeviceInterfaceKey, WDF_PROPERTY_STORE_ROOT_CLASS, wudfddi_types/WdfPropertyStoreRootClassSoftwareKey, umdfstructs_4dbaed0a-3a72-4a4c-877e-83176cce54d6.xml, umdf.wdf_property_store_root_class, wudfddi_types/WDF_PROPERTY_STORE_ROOT_CLASS, WDF_PROPERTY_STORE_ROOT_CLASS enumeration, _WDF_PROPERTY_STORE_ROOT_CLASS, wudfddi_types/WdfPropertyStoreRootClassLegacyHardwareKey
+ms.keywords : "_WDF_PROPERTY_STORE_ROOT_CLASS, wudfddi_types/WdfPropertyStoreRootClassSoftwareKey, WDF_PROPERTY_STORE_ROOT_CLASS, umdfstructs_4dbaed0a-3a72-4a4c-877e-83176cce54d6.xml, wudfddi_types/WdfPropertyStoreRootClassDeviceInterfaceKey, wudfddi_types/WDF_PROPERTY_STORE_ROOT_CLASS, WdfPropertyStoreRootClassSoftwareKey, umdf.wdf_property_store_root_class, WdfPropertyStoreRootClassHardwareKey, wudfddi_types/WdfPropertyStoreRootClassLegacyHardwareKey, WDF_PROPERTY_STORE_ROOT_CLASS enumeration, wdf.wdf_property_store_root_class, wudfddi_types/WdfPropertyStoreRootClassHardwareKey, WdfPropertyStoreRootClassLegacyHardwareKey, WdfPropertyStoreRootClassDeviceInterfaceKey"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,8 +86,6 @@ The <b>WDF_PROPERTY_STORE_ROOT_CLASS</b> enumeration is used in the <a href="..\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 

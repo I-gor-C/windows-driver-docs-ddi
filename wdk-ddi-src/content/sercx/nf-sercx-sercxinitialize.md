@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 2837C3BE-71EB-4949-AB46-5333CF4575A8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1/SerCxInitialize, serports.sercxinitialize, SerCxInitialize method [Serial Ports], SerCxInitialize
+ms.keywords : serports.sercxinitialize, SerCxInitialize, 1/SerCxInitialize, SerCxInitialize method [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,14 +108,11 @@ This routine must be called before committing the device (returning from <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

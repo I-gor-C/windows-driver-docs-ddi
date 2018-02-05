@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FF098E63-842F-4D88-A184-BE886E0ED507
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_signalsynchronizationobjectfromgpu, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices]
+ms.keywords : d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, display.d3dddicb_signalsynchronizationobjectfromgpu, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,9 +73,7 @@ typedef struct D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

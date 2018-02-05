@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 181B2619-A8A8-45ED-935B-B4F12A0695E0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2CustomReceiveTransactionNewDataNotification method [Serial Ports], SerCx2CustomReceiveTransactionNewDataNotification, serports.sercx2customreceivetransactionnewdatanotification, 2/SerCx2CustomReceiveTransactionNewDataNotification
+ms.keywords : 2/SerCx2CustomReceiveTransactionNewDataNotification, SerCx2CustomReceiveTransactionNewDataNotification, serports.sercx2customreceivetransactionnewdatanotification, SerCx2CustomReceiveTransactionNewDataNotification method [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,26 +75,23 @@ If a serial controller driver supports new-data notifications for custom-receive
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/C3E446AB-17AA-4FD8-8245-16D95134B0E7">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a>
-
 <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
 
 <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+<a href="https://msdn.microsoft.com/C3E446AB-17AA-4FD8-8245-16D95134B0E7">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a>
 
  
 

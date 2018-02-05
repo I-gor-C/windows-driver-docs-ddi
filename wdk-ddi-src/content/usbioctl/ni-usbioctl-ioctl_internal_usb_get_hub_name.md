@@ -74,9 +74,7 @@ A lower-level driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

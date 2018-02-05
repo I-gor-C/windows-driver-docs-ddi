@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 314eb897-a441-41c7-8b74-a853de70e066
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_a51cb865-4701-4fbc-a075-7bcadd8ee8be.xml, debugger.getpebaddress, GetPebAddress, wdbgexts/GetPebAddress, GetPebAddress function [Windows Debugging]
+ms.keywords : GetPebAddress, GetPebAddress function [Windows Debugging], debugger.getpebaddress, wdbgexts/GetPebAddress, WdbgExts_Ref_a51cb865-4701-4fbc-a075-7bcadd8ee8be.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,20 +80,15 @@ In kernel-mode debugging, if <i>CurrentThread</i> is <b>NULL</b>, the PEB for th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\wdbgexts\nf-wdbgexts-gettebaddress.md">GetTebAddress</a>
-
 <a href="..\wdbgexts\nf-wdbgexts-getcurrentthreadaddr.md">GetCurrentThreadAddr</a>
+
+<a href="..\wdbgexts\nf-wdbgexts-gettebaddress.md">GetTebAddress</a>
 
  
 

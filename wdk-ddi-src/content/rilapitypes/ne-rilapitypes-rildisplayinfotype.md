@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0a1afab7-66e3-4880-9124-abf411682eaa
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILDISPLAYINFOTYPE, netvista.rildisplayinfotype_2, RILDISPLAYINFOTYPE enumeration [Network Drivers Starting with Windows Vista], RILDISPLAYINFOTYPE
+ms.keywords : netvista.rildisplayinfotype_2, rilapitypes/RILDISPLAYINFOTYPE, RILDISPLAYINFOTYPE, RILDISPLAYINFOTYPE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -57,7 +57,4 @@ typedef enum _RILDISPLAYINFOTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

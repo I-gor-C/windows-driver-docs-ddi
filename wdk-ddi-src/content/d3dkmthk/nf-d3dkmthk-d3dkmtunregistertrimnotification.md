@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C90A5200-F6AF-4B7B-BB66-D76D4C3AA8EE
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTUnregisterTrimNotification, display.d3dkmtunregistertrimnotification, d3dkmthk/D3DKMTUnregisterTrimNotification, D3DKMTUnregisterTrimNotification function [Display Devices]
+ms.keywords : D3DKMTUnregisterTrimNotification, d3dkmthk/D3DKMTUnregisterTrimNotification, D3DKMTUnregisterTrimNotification function [Display Devices], display.d3dkmtunregistertrimnotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,20 +94,17 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtregistertrimnotification.md">D3DKMTRegisterTrimNotification</a>
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_unregistertrimnotification.md">D3DKMT_UNREGISTERTRIMNOTIFICATION</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtregistertrimnotification.md">D3DKMTRegisterTrimNotification</a>
 
  
 

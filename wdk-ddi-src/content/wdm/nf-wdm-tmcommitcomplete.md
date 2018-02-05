@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a5f55966-98d9-42ec-9af6-254d2cb9a5bd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmCommitComplete routine [Kernel-Mode Driver Architecture], ktm_ref_e6357c60-303b-4d42-a0a2-1ff3766acbb9.xml, wdm/TmCommitComplete, TmCommitComplete, kernel.tmcommitcomplete
+ms.keywords : wdm/TmCommitComplete, ktm_ref_e6357c60-303b-4d42-a0a2-1ff3766acbb9.xml, TmCommitComplete routine [Kernel-Mode Driver Architecture], kernel.tmcommitcomplete, TmCommitComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,28 +95,26 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
 
-<a href="..\wdm\nf-wdm-zwcommitcomplete.md">ZwCommitComplete</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
 
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
+<a href="..\wdm\nf-wdm-zwcommitcomplete.md">ZwCommitComplete</a>
+
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
  
 

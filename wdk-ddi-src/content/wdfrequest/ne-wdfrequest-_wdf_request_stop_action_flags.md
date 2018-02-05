@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 01f95aee-60aa-4d6f-88a9-c0fa6ea6a09a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestStopActionPurge, wdfrequest/WdfRequestStopActionInvalid, _WDF_REQUEST_STOP_ACTION_FLAGS, wdfrequest/WDF_REQUEST_STOP_ACTION_FLAGS, WdfRequestStopActionSuspend, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, wdfrequest/WdfRequestStopActionPurge, wdfrequest/WdfRequestStopRequestCancelable, DFRequestObjectRef_e291c6a5-1e65-4505-9090-19e6ea66e7b3.xml, wdfrequest/WdfRequestStopActionSuspend, WDF_REQUEST_STOP_ACTION_FLAGS, WdfRequestStopActionInvalid, wdf.wdf_request_stop_action_flags, kmdf.wdf_request_stop_action_flags, WdfRequestStopRequestCancelable
+ms.keywords : DFRequestObjectRef_e291c6a5-1e65-4505-9090-19e6ea66e7b3.xml, WdfRequestStopRequestCancelable, wdfrequest/WdfRequestStopRequestCancelable, wdfrequest/WdfRequestStopActionInvalid, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, wdfrequest/WdfRequestStopActionSuspend, WdfRequestStopActionPurge, WdfRequestStopActionInvalid, _WDF_REQUEST_STOP_ACTION_FLAGS, kmdf.wdf_request_stop_action_flags, wdf.wdf_request_stop_action_flags, WdfRequestStopActionSuspend, WDF_REQUEST_STOP_ACTION_FLAGS, wdfrequest/WdfRequestStopActionPurge, wdfrequest/WDF_REQUEST_STOP_ACTION_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,6 @@ When the framework calls a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |

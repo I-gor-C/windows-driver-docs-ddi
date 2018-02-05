@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e01ef4c9-1374-4d60-9307-32d878759c72
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_BRIGHTNESS_CAPS, d3dkmdt/DXGK_BRIGHTNESS_CAPS, DXGK_BRIGHTNESS_CAPS structure [Display Devices], display.dxgk_brightness_caps, DXGK_BRIGHTNESS_CAPS"
+ms.keywords : DXGK_BRIGHTNESS_CAPS structure [Display Devices], d3dkmdt/DXGK_BRIGHTNESS_CAPS, display.dxgk_brightness_caps, _DXGK_BRIGHTNESS_CAPS, DXGK_BRIGHTNESS_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ Do not assume that the <b>SmoothBrightness</b> members of <a href="..\d3dkmdt\ns
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

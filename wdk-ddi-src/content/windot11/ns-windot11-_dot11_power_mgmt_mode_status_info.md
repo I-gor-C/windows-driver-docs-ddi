@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.dot11_power_mgmt_mode_status_info, PDOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO, _DOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista], _DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO, netvista.dot11_power_mgmt_mode_status_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -117,7 +117,5 @@ At each transition of the mode change, a device should remember the reason it ma
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |

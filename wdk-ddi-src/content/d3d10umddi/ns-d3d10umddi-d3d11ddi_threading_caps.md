@@ -95,9 +95,7 @@ The driver supports command lists. To support D3D11DDICAPS_COMMANDLISTS_BUILD_2,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDI_THREADING_CAPS is supported beginning with the Windows 7 operating system. D3D11DDI_THREADING_CAPS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

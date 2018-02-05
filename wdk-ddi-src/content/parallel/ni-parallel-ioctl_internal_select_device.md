@@ -89,15 +89,13 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | parallel.h (include Parallel.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a>
-
 <a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+
+<a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a>
 
  
 

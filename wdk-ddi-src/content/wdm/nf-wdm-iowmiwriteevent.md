@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6b98861c-b108-4b07-b494-e3647d03de4c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iowmiwriteevent, wdm/IoWMIWriteEvent, IoWMIWriteEvent routine [Kernel-Mode Driver Architecture], k104_ec484b7e-1653-4054-8a54-021a94303ec4.xml, IoWMIWriteEvent
+ms.keywords : IoWMIWriteEvent routine [Kernel-Mode Driver Architecture], k104_ec484b7e-1653-4054-8a54-021a94303ec4.xml, IoWMIWriteEvent, wdm/IoWMIWriteEvent, kernel.iowmiwriteevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,20 +123,18 @@ Callers of this routine must be running at IRQL &lt;= APC_LEVEL, with one except
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
-
 <a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWmiDeviceObjectToProviderId</a>
+
+<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
 
  
 

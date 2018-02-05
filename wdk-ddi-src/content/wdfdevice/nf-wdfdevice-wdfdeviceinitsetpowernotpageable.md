@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c0f39e50-8bf1-4ac9-8610-18915b375797
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_b7acdb97-66a4-497f-b9fb-4335d9147c1a.xml, wdfdevice/WdfDeviceInitSetPowerNotPageable, WdfDeviceInitSetPowerNotPageable method, kmdf.wdfdeviceinitsetpowernotpageable, WdfDeviceInitSetPowerNotPageable, wdf.wdfdeviceinitsetpowernotpageable, PFN_WDFDEVICEINITSETPOWERNOTPAGEABLE
+ms.keywords : wdf.wdfdeviceinitsetpowernotpageable, kmdf.wdfdeviceinitsetpowernotpageable, DFDeviceObjectGeneralRef_b7acdb97-66a4-497f-b9fb-4335d9147c1a.xml, WdfDeviceInitSetPowerNotPageable, PFN_WDFDEVICEINITSETPOWERNOTPAGEABLE, WdfDeviceInitSetPowerNotPageable method, wdfdevice/WdfDeviceInitSetPowerNotPageable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,12 +81,10 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 

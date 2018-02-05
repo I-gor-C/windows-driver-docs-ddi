@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 20ac3122-dece-48de-b29a-9d4f7e22c7e0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILALPHAIDENTIFIERPARAMMASK, RIL_PARAM_AI_REASON, rilapitypes/RIL_PARAM_AI_REASON, netvista.rilalphaidentifierparammask_2, RIL_PARAM_AI_ALL, RILALPHAIDENTIFIERPARAMMASK, rilapitypes/RIL_PARAM_AI_ALL, RILALPHAIDENTIFIERPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : RILALPHAIDENTIFIERPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilalphaidentifierparammask_2, RIL_PARAM_AI_REASON, rilapitypes/RIL_PARAM_AI_ALL, rilapitypes/RILALPHAIDENTIFIERPARAMMASK, rilapitypes/RIL_PARAM_AI_REASON, RILALPHAIDENTIFIERPARAMMASK, RIL_PARAM_AI_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILALPHAIDENTIFIERPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

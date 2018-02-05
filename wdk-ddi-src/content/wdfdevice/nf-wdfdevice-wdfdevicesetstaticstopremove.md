@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b2776618-2585-4a7a-9f8f-536f1d28745b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_9874b784-6344-4336-9753-0b172563f981.xml, wdfdevice/WdfDeviceSetStaticStopRemove, kmdf.wdfdevicesetstaticstopremove, wdf.wdfdevicesetstaticstopremove, PFN_WDFDEVICESETSTATICSTOPREMOVE, WdfDeviceSetStaticStopRemove method, WdfDeviceSetStaticStopRemove
+ms.keywords : kmdf.wdfdevicesetstaticstopremove, DFDeviceObjectGeneralRef_9874b784-6344-4336-9753-0b172563f981.xml, WdfDeviceSetStaticStopRemove method, wdfdevice/WdfDeviceSetStaticStopRemove, PFN_WDFDEVICESETSTATICSTOPREMOVE, WdfDeviceSetStaticStopRemove, wdf.wdfdevicesetstaticstopremove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,10 @@ For more information about how to prevent the operating system from stopping a d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

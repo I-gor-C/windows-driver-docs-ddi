@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 45e4a08d-9615-410a-8f78-a8157802813f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwCreateDirectoryObject routine [Kernel-Mode Driver Architecture], wdm/NtCreateDirectoryObject, ZwCreateDirectoryObject, k111_b1b0f371-6699-42f6-b86d-a0fb57983d9f.xml, NtCreateDirectoryObject, wdm/ZwCreateDirectoryObject, kernel.zwcreatedirectoryobject
+ms.keywords : k111_b1b0f371-6699-42f6-b86d-a0fb57983d9f.xml, NtCreateDirectoryObject, wdm/NtCreateDirectoryObject, ZwCreateDirectoryObject routine [Kernel-Mode Driver Architecture], ZwCreateDirectoryObject, wdm/ZwCreateDirectoryObject, kernel.zwcreatedirectoryobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -142,24 +142,23 @@ Note that the system does <u>not</u> use object directory objects to represent f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

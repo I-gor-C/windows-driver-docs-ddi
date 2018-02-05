@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f4b247e4-65d5-47ec-879d-9718710a7b61
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_CancelSupServiceDataSession, RIL_CancelSupServiceDataSession, RIL_CancelSupServiceDataSession method [Network Drivers Starting with Windows Vista], netvista.ril_cancelsupservicedatasession
+ms.keywords : rilapi/RIL_CancelSupServiceDataSession, RIL_CancelSupServiceDataSession method [Network Drivers Starting with Windows Vista], netvista.ril_cancelsupservicedatasession, RIL_CancelSupServiceDataSession
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

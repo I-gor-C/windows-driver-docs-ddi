@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMOUSE_STATE, MOUSE_STATE"
+req.typenames : MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION IOCTL
@@ -71,9 +71,7 @@ The <b>Status</b> member is set to STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdd8042.h (include Ntdd8042.h) |
-| **IRQL** |  |
 
 ## See Also
 

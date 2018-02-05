@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c3e209b5-9925-4911-8c42-0f15c1c710be
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers], fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, FsRtlFastLock, ifsk.fsrtlfastlock
+ms.keywords : ifsk.fsrtlfastlock, fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ntifs/FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers], FsRtlFastLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -120,14 +120,10 @@ A return value of <b>TRUE</b> indicates that the IO_STATUS_BLOCK structure point
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | ntifs.h |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : A63C115D-7215-422A-B4F9-C88820FC8168
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : prcomoem/OEMPTOPTS, OEMPT_DEFAULT, POEMPTOPTS enumeration pointer [Print Devices], prcomoem/OEMPT_DEFAULT, OEMPT_NOSHAPSHOT, prcomoem/OEMPT_NOSHAPSHOT, *POEMPTOPTS, OEMPTOPTS, tagOEMPTOPTS, print.oemptopts, prcomoem/POEMPTOPTS, POEMPTOPTS, OEMPTOPTS enumeration [Print Devices]
+ms.keywords : POEMPTOPTS, prcomoem/OEMPTOPTS, prcomoem/OEMPT_NOSHAPSHOT, tagOEMPTOPTS, OEMPT_DEFAULT, prcomoem/OEMPT_DEFAULT, *POEMPTOPTS, prcomoem/POEMPTOPTS, POEMPTOPTS enumeration pointer [Print Devices], OEMPTOPTS, OEMPTOPTS enumeration [Print Devices], print.oemptopts, OEMPT_NOSHAPSHOT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,7 +69,4 @@ typedef enum tagOEMPTOPTS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prcomoem.h |

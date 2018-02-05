@@ -82,26 +82,22 @@ To register an <i>EvtSerCxWaitmask</i> callback function, the controller driver 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
 
 <a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
 
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-
-<a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a>
-
-<a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/peripheral-drivers-for-devices-on-sercx2-managed-serial-ports">SERIAL_EV_XXX</a>
 

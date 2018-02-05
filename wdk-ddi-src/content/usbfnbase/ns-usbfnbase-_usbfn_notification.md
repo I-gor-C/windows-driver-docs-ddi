@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 84B66823-F357-44DD-A401-79E27FA6B324
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSBFN_NOTIFICATION, usbfnbase/PUSBFN_NOTIFICATION, PUSBFN_NOTIFICATION structure pointer [Buses], USBFN_NOTIFICATION, usbfnbase/USBFN_NOTIFICATION, buses.usbfn_notification, _USBFN_NOTIFICATION, USBFN_NOTIFICATION structure [Buses], *PUSBFN_NOTIFICATION
+ms.keywords : USBFN_NOTIFICATION structure [Buses], *PUSBFN_NOTIFICATION, _USBFN_NOTIFICATION, PUSBFN_NOTIFICATION structure pointer [Buses], buses.usbfn_notification, PUSBFN_NOTIFICATION, USBFN_NOTIFICATION, usbfnbase/USBFN_NOTIFICATION, usbfnbase/PUSBFN_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,7 +72,4 @@ Bus notification indicated by a <a href="..\usbfnbase\ne-usbfnbase-_usbfn_event.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e43f782-c89c-4926-83db-efe737544065
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDI_OFFER_PRIORITY_HIGH, _D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY_HIGH, d3dukmdt/D3DDDI_OFFER_PRIORITY_AUTO, d3dukmdt/D3DDDI_OFFER_PRIORITY_LOW, D3DDDI_OFFER_PRIORITY enumeration [Display Devices], D3DDDI_OFFER_PRIORITY_LOW, d3dukmdt/D3DDDI_OFFER_PRIORITY_NONE, display.d3dddi_offer_priority, d3dukmdt/D3DDDI_OFFER_PRIORITY_NORMAL, D3DDDI_OFFER_PRIORITY_NORMAL, D3DDDI_OFFER_PRIORITY_AUTO, D3DDDI_OFFER_PRIORITY_NONE
+ms.keywords : D3DDDI_OFFER_PRIORITY_NORMAL, _D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY, display.d3dddi_offer_priority, D3DDDI_OFFER_PRIORITY_NONE, D3DDDI_OFFER_PRIORITY_LOW, D3DDDI_OFFER_PRIORITY_AUTO, d3dukmdt/D3DDDI_OFFER_PRIORITY_LOW, d3dukmdt/D3DDDI_OFFER_PRIORITY_NORMAL, d3dukmdt/D3DDDI_OFFER_PRIORITY_AUTO, D3DDDI_OFFER_PRIORITY_HIGH, D3DDDI_OFFER_PRIORITY enumeration [Display Devices], d3dukmdt/D3DDDI_OFFER_PRIORITY_NONE, D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY_HIGH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -87,9 +87,7 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also

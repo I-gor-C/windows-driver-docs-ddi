@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1ce8a447-6205-44d0-b5d2-b78f01e15bb4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFQueueObjectRef_15829d65-ee6a-455d-a0c6-cf21f5426e31.xml, wdfio/WdfIoQueueStart, WdfIoQueueStart method, wdf.wdfioqueuestart, WdfIoQueueStart, kmdf.wdfioqueuestart, PFN_WDFIOQUEUESTART
+ms.keywords : WdfIoQueueStart method, WdfIoQueueStart, PFN_WDFIOQUEUESTART, wdf.wdfioqueuestart, wdfio/WdfIoQueueStart, DFQueueObjectRef_15829d65-ee6a-455d-a0c6-cf21f5426e31.xml, kmdf.wdfioqueuestart
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,20 +75,19 @@ For more information about the <b>WdfIoQueueStart</b> method, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>
-
 <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>
 
  
 

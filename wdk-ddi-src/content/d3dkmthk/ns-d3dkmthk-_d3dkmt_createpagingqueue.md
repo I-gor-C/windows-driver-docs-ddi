@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F7C2847F-D095-4A79-ADBB-DA0745E3192A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_CREATEPAGINGQUEUE, D3DKMT_CREATEPAGINGQUEUE structure [Display Devices], _D3DKMT_CREATEPAGINGQUEUE, D3DKMT_CREATEPAGINGQUEUE, display.d3dkmt_createpagingqueue
+ms.keywords : D3DKMT_CREATEPAGINGQUEUE, display.d3dkmt_createpagingqueue, D3DKMT_CREATEPAGINGQUEUE structure [Display Devices], d3dkmthk/D3DKMT_CREATEPAGINGQUEUE, _D3DKMT_CREATEPAGINGQUEUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,7 @@ A device can have multiple paging queues created for it. Paging queues can be de
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

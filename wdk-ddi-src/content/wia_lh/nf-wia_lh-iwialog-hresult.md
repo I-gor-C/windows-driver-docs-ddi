@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 74d9b770-c2b6-483d-a6d7-070ac2a55133
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : hResult, hResult method [Imaging Devices], IWiaLog interface, IWiaLog, IWiaLog interface [Imaging Devices], hResult method, image.iwialog_hresult, IWiaLog::hResult, wia_lh/IWiaLog::hResult, IWiaLog_e581a82d-60c1-45e3-9d5a-fcac2b4d9c9c.xml, hResult method [Imaging Devices]
+ms.keywords : hResult method [Imaging Devices], IWiaLog interface, IWiaLog::hResult, IWiaLog, IWiaLog_e581a82d-60c1-45e3-9d5a-fcac2b4d9c9c.xml, wia_lh/IWiaLog::hResult, hResult, hResult method [Imaging Devices], IWiaLog interface [Imaging Devices], hResult method, image.iwialog_hresult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,11 +68,7 @@ If the method succeeds, it returns S_OK. If the method fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros. Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros. |
+| **Target Platform** | Desktop |
 | **Header** | wia_lh.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wia_lh.h |

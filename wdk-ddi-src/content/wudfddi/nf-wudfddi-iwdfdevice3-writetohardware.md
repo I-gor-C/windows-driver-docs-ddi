@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 55FBE72C-E74E-4116-9602-6D491592350F
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3, WriteToHardware method, wdf.iwdfdevice3_writetohardware, IWDFDevice3::WriteToHardware, WriteToHardware method, IWDFDevice3 interface, WriteToHardware, wudfddi/IWDFDevice3::WriteToHardware, IWDFDevice3 interface, WriteToHardware method, umdf.iwdfdevice3_writetohardware
+ms.keywords : IWDFDevice3::WriteToHardware, WriteToHardware method, wdf.iwdfdevice3_writetohardware, WriteToHardware method, IWDFDevice3 interface, wudfddi/IWDFDevice3::WriteToHardware, umdf.iwdfdevice3_writetohardware, WriteToHardware, IWDFDevice3, IWDFDevice3 interface, WriteToHardware method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -93,14 +93,12 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

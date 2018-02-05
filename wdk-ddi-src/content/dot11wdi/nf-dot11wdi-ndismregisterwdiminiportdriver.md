@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 60FE4E6C-38D4-438F-983B-7336926F6FE2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismregisterwdiminiportdriver, NdisMRegisterWdiMiniportDriver function [Network Drivers Starting with Windows Vista], NdisMRegisterWdiMiniportDriver, dot11wdi/NdisMRegisterWdiMiniportDriver
+ms.keywords : NdisMRegisterWdiMiniportDriver, netvista.ndismregisterwdiminiportdriver, dot11wdi/NdisMRegisterWdiMiniportDriver, NdisMRegisterWdiMiniportDriver function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,8 +62,8 @@ NDIS_STATUS NdisMRegisterWdiMiniportDriver(
 A pointer to an opaque driver object that the miniport driver received in its 
      <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine at the 
      <i>Argument1</i> parameter (see 
-     <mshelp:link keywords="netvista.driverentry_of_ndis_miniport_drivers" tabindex="0"><b>DriverEntry of NDIS
-     Miniport Drivers</b></mshelp:link>).
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548818">DriverEntry of NDIS
+     Miniport Drivers</a>).
 
 `RegistryPath`
 
@@ -79,8 +79,8 @@ A handle to a driver-allocated context area where the driver maintains state and
 `MiniportDriverCharacteristics`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_miniport_driver_characteristics" tabindex="0"><b>
-     NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b></mshelp:link> structure that the caller initialized.
+     <a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">
+     NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure that the caller initialized.
 
 `MiniportWdiCharacteristics`
 
@@ -181,22 +181,19 @@ An appropriate NDIS_STATUS code in the case of a failure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | dot11wdi.h |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
 <a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a>
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 
  
 

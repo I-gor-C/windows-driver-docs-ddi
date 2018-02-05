@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0da022d5-7294-4780-bab8-119ff6385abf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_processor_group_ref_167a091b-01dd-4e5d-bee8-01f5aa9f56fd.xml, ndis/NdisGetRssProcessorInformation, netvista.ndisgetrssprocessorinformation, NdisGetRssProcessorInformation, NdisGetRssProcessorInformation function [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis_processor_group_ref_167a091b-01dd-4e5d-bee8-01f5aa9f56fd.xml, NdisGetRssProcessorInformation function [Network Drivers Starting with Windows Vista], netvista.ndisgetrssprocessorinformation, NdisGetRssProcessorInformation, ndis/NdisGetRssProcessorInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -127,8 +127,8 @@ NDIS drivers call the
 
 RSS-capable miniport drivers that support MSI-X call 
     <b>NdisGetRssProcessorInformation</b> in their 
-    <mshelp:link keywords="netvista.miniportfilterresourcerequirements" tabindex="0"><b>
-    MiniportFilterResourceRequirements</b></mshelp:link> function. Miniport drivers set the interrupt affinity of the
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff559452(d=robot)">
+    MiniportFilterResourceRequirements</a> function. Miniport drivers set the interrupt affinity of the
     allocated MSI-X messages to the RSS processors that are specified in the 
     <b>RssProcessors</b> member of the 
     <i>RssProcessorInfo</i> parameter.
@@ -136,27 +136,24 @@ RSS-capable miniport drivers that support MSI-X call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559452(d=robot)">
+   MiniportFilterResourceRequirements</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor_info.md">NDIS_RSS_PROCESSOR_INFO</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
-
-<mshelp:link keywords="netvista.miniportfilterresourcerequirements" tabindex="0"><b>
-   MiniportFilterResourceRequirements</b></mshelp:link>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor_info.md">NDIS_RSS_PROCESSOR_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
 
  
 

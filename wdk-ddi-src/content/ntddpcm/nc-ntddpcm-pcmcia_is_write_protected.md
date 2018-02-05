@@ -73,14 +73,9 @@ Callers of this routine must be running at IRQL &lt;= DISPATCH_LEVEL. To maintai
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL (See Remarks section.)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

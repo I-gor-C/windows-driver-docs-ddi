@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac1a2fae-29f1-4143-9d43-b10db300de03
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVAHDDDI_COLOR, DXVAHDDDI_COLOR, DXVAHDDDI_COLOR union [Display Devices], display.dxvahdddi_color, _DXVAHDDDI_COLOR, DXVA2_Structs_21418f8b-824c-4505-b52a-92437c3ff508.xml
+ms.keywords : d3dumddi/DXVAHDDDI_COLOR, DXVAHDDDI_COLOR union [Display Devices], display.dxvahdddi_color, DXVA2_Structs_21418f8b-824c-4505-b52a-92437c3ff508.xml, DXVAHDDDI_COLOR, _DXVAHDDDI_COLOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,16 +64,14 @@ typedef union _DXVAHDDDI_COLOR {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_COLOR is supported beginning with the Windows 7 operating system. DXVAHDDDI_COLOR is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_rgba.md">DXVAHDDDI_COLOR_RGBA</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_ycbcra.md">DXVAHDDDI_COLOR_YCbCrA</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_color_rgba.md">DXVAHDDDI_COLOR_RGBA</a>
 
  
 

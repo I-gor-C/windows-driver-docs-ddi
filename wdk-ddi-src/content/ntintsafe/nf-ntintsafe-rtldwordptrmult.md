@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E7EEE6D7-19C8-481F-BAEF-15998819D2D0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlDWordPtrMult function [Kernel-Mode Driver Architecture], kernel.rtldwordptrmult, RtlDWordPtrMult, ntintsafe/RtlDWordPtrMult
+ms.keywords : RtlDWordPtrMult, RtlDWordPtrMult function [Kernel-Mode Driver Architecture], ntintsafe/RtlDWordPtrMult, kernel.rtldwordptrmult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

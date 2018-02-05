@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7edcd852-429f-4059-92bb-99c7874a9357
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddiarg_createvideoprocessorenum, D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM, d3d10umddi/D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM, D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM structure [Display Devices]
+ms.keywords : D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM structure [Display Devices], d3d10umddi/D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM, display.d3d11_1ddiarg_createvideoprocessorenum, D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_content_desc.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

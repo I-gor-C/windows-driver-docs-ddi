@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eed57341-0b1a-4697-b05d-680bc17da796
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmOpenAddressFamilyComplete, NdisCmOpenAddressFamilyComplete function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_0b6dfac0-905d-48a8-b547-85bfe047e8f1.xml, netvista.ndiscmopenaddressfamilycomplete, ndis/NdisCmOpenAddressFamilyComplete
+ms.keywords : NdisCmOpenAddressFamilyComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmOpenAddressFamilyComplete, NdisCmOpenAddressFamilyComplete, netvista.ndiscmopenaddressfamilycomplete, condis_call_manager_ref_0b6dfac0-905d-48a8-b547-85bfe047e8f1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,8 +90,8 @@ A stand-alone call manager must call
     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>,
     cannot carry out further connection-oriented operations on the same binding until 
     <b>NdisCmOpenAddressFamilyComplete</b> causes a call to that client's 
-    <mshelp:link keywords="netvista.protocolclopenafcompleteex" tabindex="0"><i>
-    ProtocolClOpenAfCompleteEx</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">
+    ProtocolClOpenAfCompleteEx</a> function.
 
 If the caller of 
     <b>NdisCmOpenAddressFamilyComplete</b> sets 
@@ -114,34 +114,32 @@ For a successful open, the NDIS-supplied
 Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
     <b>NdisCmOpenAddressFamilyComplete</b>. Connection-oriented miniport drivers that provide integrated
     call-management support must call 
-    <mshelp:link keywords="netvista.ndismcmopenaddressfamilycomplete" tabindex="0"><b>
-    NdisMCmOpenAddressFamilyComplete</b></mshelp:link> instead.
+    <a href="..\ndis\nf-ndis-ndismcmopenaddressfamilycomplete.md">
+    NdisMCmOpenAddressFamilyComplete</a> instead.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisCmOpenAddressFamilyComplete (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndismcmopenaddressfamilycomplete" tabindex="0"><b>
-   NdisMCmOpenAddressFamilyComplete</b></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">ProtocolClOpenAfCompleteEx</a>
+
+<a href="..\ndis\nf-ndis-ndismcmopenaddressfamilycomplete.md">
+   NdisMCmOpenAddressFamilyComplete</a>
 
 <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
+
 <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
-
-<a href="..\ndis\nc-ndis-protocol_cl_open_af_complete_ex.md">ProtocolClOpenAfCompleteEx</a>
-
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
 
  
 

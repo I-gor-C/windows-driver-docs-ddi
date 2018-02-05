@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 852b8b71-8a8c-4e9e-b27e-78fc2df8d5bd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fsrtlref_21a21edf-cf20-4c0b-aaef-bc75656238c4.xml, ifsk.fsrtlinsertperfileobjectcontext, ntifs/FsRtlInsertPerFileObjectContext, FsRtlInsertPerFileObjectContext, FsRtlInsertPerFileObjectContext function [Installable File System Drivers]
+ms.keywords : fsrtlref_21a21edf-cf20-4c0b-aaef-bc75656238c4.xml, FsRtlInsertPerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlInsertPerFileObjectContext, ifsk.fsrtlinsertperfileobjectcontext, FsRtlInsertPerFileObjectContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -117,24 +117,22 @@ After a FSRTL_PER_FILEOBJECT_CONTEXT structure or filter-defined per-file-object
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md">FsRtlLookupPerFileObjectContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
 
-<a href="..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md">FsRtlRemovePerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md">FsRtlLookupPerFileObjectContext</a>
 
 <a href="..\ntifs\ns-ntifs-_fsrtl_per_fileobject_context.md">FSRTL_PER_FILEOBJECT_CONTEXT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md">FsRtlRemovePerFileObjectContext</a>
 
  
 

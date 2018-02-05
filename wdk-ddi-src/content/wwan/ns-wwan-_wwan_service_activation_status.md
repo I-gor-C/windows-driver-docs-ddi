@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1bd81e55-6438-4bff-ab50-3de3457d2e99
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_SERVICE_ACTIVATION_STATUS, wwan/WWAN_SERVICE_ACTIVATION_STATUS, wwan/PWWAN_SERVICE_ACTIVATION_STATUS, *PWWAN_SERVICE_ACTIVATION_STATUS, _WWAN_SERVICE_ACTIVATION_STATUS, netvista.wwan_service_activation_status, WwanRef_b9086c08-c7df-46f1-8ce2-c056dd667eac.xml, PWWAN_SERVICE_ACTIVATION_STATUS structure pointer [Network Drivers Starting with Windows Vista], WWAN_SERVICE_ACTIVATION_STATUS, WWAN_SERVICE_ACTIVATION_STATUS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PWWAN_SERVICE_ACTIVATION_STATUS structure pointer [Network Drivers Starting with Windows Vista], _WWAN_SERVICE_ACTIVATION_STATUS, wwan/PWWAN_SERVICE_ACTIVATION_STATUS, *PWWAN_SERVICE_ACTIVATION_STATUS, netvista.wwan_service_activation_status, PWWAN_SERVICE_ACTIVATION_STATUS, wwan/WWAN_SERVICE_ACTIVATION_STATUS, WWAN_SERVICE_ACTIVATION_STATUS, WwanRef_b9086c08-c7df-46f1-8ce2-c056dd667eac.xml, WWAN_SERVICE_ACTIVATION_STATUS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,15 +69,13 @@ The size, in bytes, of the vendor-specific buffer that follows the structure ins
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_wwan_service_activation_status" tabindex="0"><b>
-   NDIS_WWAN_SERVICE_ACTIVATION_STATUS</b></mshelp:link>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_service_activation_status.md">
+   NDIS_WWAN_SERVICE_ACTIVATION_STATUS</a>
 
  
 

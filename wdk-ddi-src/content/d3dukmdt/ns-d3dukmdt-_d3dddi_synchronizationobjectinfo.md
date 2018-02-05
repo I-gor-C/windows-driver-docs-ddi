@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 786934f5-b0ec-4ee9-8bf0-f32b64295b96
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3DDDI_SYNCHRONIZATIONOBJECTINFO, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO, display.d3dddi_synchronizationobjectinfo, D3DDDI_SYNCHRONIZATIONOBJECTINFO structure [Display Devices], D3D_other_Structs_86538364-14f8-4e40-bf0e-2e9f836729b8.xml"
+ms.keywords : d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3DDDI_SYNCHRONIZATIONOBJECTINFO structure [Display Devices], _D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3D_other_Structs_86538364-14f8-4e40-bf0e-2e9f836729b8.xml, display.d3dddi_synchronizationobjectinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ typedef struct _D3DDDI_SYNCHRONIZATIONOBJECTINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also

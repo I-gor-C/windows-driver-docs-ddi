@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 80383159-c2c3-4d05-92e8-9245408e5243
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : strclass-routines_bddec484-f87c-4ebc-b8e1-ea52d265cbc4.xml, StreamClassDeviceNotification, StreamClassDeviceNotification routine [Streaming Media Devices], strmini/StreamClassDeviceNotification, stream.streamclassdevicenotification
+ms.keywords : StreamClassDeviceNotification, strmini/StreamClassDeviceNotification, StreamClassDeviceNotification routine [Streaming Media Devices], strclass-routines_bddec484-f87c-4ebc-b8e1-ea52d265cbc4.xml, stream.streamclassdevicenotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,6 +65,11 @@ This is an enumeration value that contains the type of notification that the min
 
 
 
+#### DeleteDeviceEvent
+
+Deletes the event specified by the <i>EventEntry</i> parameter. 
+
+
 #### DeviceRequestComplete
 
 Indicates that the minidriver has completed its handling of the device stream request block pointed to by the optional third argument of this routine, <i>pSrb</i>. Once the minidriver calls <b>StreamClassDeviceNotification</b> with this value, the relevant SRB is owned by the class driver, which is free to deallocate it.
@@ -84,16 +89,11 @@ Signals that the event specified by the <i>EventEntry</i> parameter has occurred
 
 Signals all events that match the criteria specified in the <i>EventSet</i> and <i>EventId</i> parameters.
 
-
-#### DeleteDeviceEvent
-
-Deletes the event specified by the <i>EventEntry</i> parameter.
-
 `HwDeviceExtension`
 
 Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
-``
+`Arg1`
 
 
 
@@ -109,14 +109,9 @@ The minidriver uses this routine for requests or events that apply to the minidr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |
 
 ## See Also
 

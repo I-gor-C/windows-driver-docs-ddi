@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : F3DA4CBB-5749-4E7D-828F-398714575173
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.vhfstart, VhfStart, vhf/VhfStart, VhfStart method [Human Input Devices]
+ms.keywords : vhf/VhfStart, VhfStart, VhfStart method [Human Input Devices], hid.vhfstart
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,7 @@ Virtual HID Framework (VHF) does not invoke any callback functions implemented b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | vhf.h |
-| **Library** |  |
+| **Library** | VhfKm.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

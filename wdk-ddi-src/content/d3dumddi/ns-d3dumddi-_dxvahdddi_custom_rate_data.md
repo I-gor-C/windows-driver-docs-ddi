@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 828c4c42-a74f-4737-b850-5c8299e5afd6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXVAHDDDI_CUSTOM_RATE_DATA, DXVA2_Structs_98dcb947-954a-4e8d-adea-3451814e89f9.xml, display.dxvahdddi_custom_rate_data, DXVAHDDDI_CUSTOM_RATE_DATA structure [Display Devices], d3dumddi/DXVAHDDDI_CUSTOM_RATE_DATA, DXVAHDDDI_CUSTOM_RATE_DATA"
+ms.keywords : d3dumddi/DXVAHDDDI_CUSTOM_RATE_DATA, DXVA2_Structs_98dcb947-954a-4e8d-adea-3451814e89f9.xml, DXVAHDDDI_CUSTOM_RATE_DATA, display.dxvahdddi_custom_rate_data, _DXVAHDDDI_CUSTOM_RATE_DATA, DXVAHDDDI_CUSTOM_RATE_DATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ The driver can expose custom rates for the frame rate conversion or the inverse 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_CUSTOM_RATE_DATA is supported beginning with the Windows 7 operating system. DXVAHDDDI_CUSTOM_RATE_DATA is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

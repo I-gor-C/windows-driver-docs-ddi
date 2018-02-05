@@ -68,11 +68,7 @@ A handle by the OS to identify the monitor that has an invalid associated swapch
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
 | **IRQL** | "_requires_same_" |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f3de5514-9a7f-4e27-9be0-4aec4b84a5a7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrintPipelinePropertyBag::DeleteProperty, filterpipeline_816db2e4-811c-467f-a7c3-65d2e35c0107.xml, IPrintPipelinePropertyBag interface [Print Devices], DeleteProperty method, print.iprintpipelinepropertybag_deleteproperty, DeleteProperty method [Print Devices], DeleteProperty method [Print Devices], IPrintPipelinePropertyBag interface, DeleteProperty, IPrintPipelinePropertyBag, filterpipeline/IPrintPipelinePropertyBag::DeleteProperty
+ms.keywords : DeleteProperty method [Print Devices], filterpipeline/IPrintPipelinePropertyBag::DeleteProperty, DeleteProperty method [Print Devices], IPrintPipelinePropertyBag interface, IPrintPipelinePropertyBag interface [Print Devices], DeleteProperty method, filterpipeline_816db2e4-811c-467f-a7c3-65d2e35c0107.xml, DeleteProperty, IPrintPipelinePropertyBag::DeleteProperty, print.iprintpipelinepropertybag_deleteproperty, IPrintPipelinePropertyBag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ The name of the property to delete from the property bag.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 50ff8064-b28c-4b2b-89d2-bad5e503b2d6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFQueueObjectRef_c1ac397c-5601-4976-9c42-41b118d429c1.xml, wdfio/WdfIoQueueStop, kmdf.wdfioqueuestop, WdfIoQueueStop method, wdf.wdfioqueuestop, PFN_WDFIOQUEUESTOP, WdfIoQueueStop
+ms.keywords : WdfIoQueueStop, WdfIoQueueStop method, kmdf.wdfioqueuestop, DFQueueObjectRef_c1ac397c-5601-4976-9c42-41b118d429c1.xml, PFN_WDFIOQUEUESTOP, wdf.wdfioqueuestop, wdfio/WdfIoQueueStop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,12 +89,11 @@ For more information about the <b>WdfIoQueueStop</b> method, see <a href="https:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove |
 
@@ -102,9 +101,9 @@ For more information about the <b>WdfIoQueueStop</b> method, see <a href="https:
 
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
-
 <a href="..\wdfio\nf-wdfio-wdfioqueuestopsynchronously.md">WdfIoQueueStopSynchronously</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>
 
  
 

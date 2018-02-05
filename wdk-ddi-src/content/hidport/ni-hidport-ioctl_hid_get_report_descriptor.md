@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
+req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_GET_REPORT_DESCRIPTOR IOCTL
@@ -81,15 +81,13 @@ HID minidrivers that carry out the I/O to the device set the following fields of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidport.h (include Hidport.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\hidclass\ni-hidclass-ioctl_get_physical_descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
-
 <a href="..\hidport\ni-hidport-ioctl_hid_get_device_descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
+
+<a href="..\hidclass\ni-hidclass-ioctl_get_physical_descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
 
  
 

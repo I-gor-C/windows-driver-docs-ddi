@@ -93,22 +93,18 @@ When the main executable image for a newly created process is loaded, the load-i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntddk\ns-ntddk-_image_info.md">IMAGE_INFO</a>
 
 <a href="..\ntddk\ns-ntddk-_image_info_ex.md">IMAGE_INFO_EX</a>
 
 <a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
+
+<a href="..\ntddk\ns-ntddk-_image_info.md">IMAGE_INFO</a>
 
  
 

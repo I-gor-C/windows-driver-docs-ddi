@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3981ab65-2d21-4188-88dc-04eb7aff0869
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltQueryEaFile, FltApiRef_p_to_z_cfb86d4e-84c0-4ab7-a813-094420e437cc.xml, FltQueryEaFile function [Installable File System Drivers], ifsk.fltqueryeafile, FltQueryEaFile
+ms.keywords : FltQueryEaFile, FltQueryEaFile function [Installable File System Drivers], fltkernel/FltQueryEaFile, ifsk.fltqueryeafile, FltApiRef_p_to_z_cfb86d4e-84c0-4ab7-a813-094420e437cc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -149,24 +149,22 @@ The instance or volume is being torn down. This is an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system. Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\fltkernel\nf-fltkernel-fltseteafile.md">FltSetEaFile</a>
 
 <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
 
 <a href="..\ntifs\nf-ntifs-iocheckeabuffervalidity.md">IoCheckEaBufferValidity</a>
 
 <a href="..\ntifs\ns-ntifs-_file_get_ea_information.md">FILE_GET_EA_INFORMATION</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltseteafile.md">FltSetEaFile</a>
 
  
 

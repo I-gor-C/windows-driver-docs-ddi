@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2d629905-49aa-4b66-83f3-0aecb72b73ea
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : BINARY_DATA, ndis/BINARY_DATA, ndis_configuration_ref_50fc50e5-52d2-4e25-a03b-6c581e50fef1.xml, netvista.binary_data, BINARY_DATA structure [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis/BINARY_DATA, ndis_configuration_ref_50fc50e5-52d2-4e25-a03b-6c581e50fef1.xml, netvista.binary_data, BINARY_DATA, BINARY_DATA structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,15 +64,13 @@ The length, in bytes, of the data that the
 ## Remarks
 The BINARY_DATA structure is used in the 
     <b>ParameterData</b> member of the 
-    <mshelp:link keywords="netvista.ndis_configuration_parameter" tabindex="0"><b>
-    NDIS_CONFIGURATION_PARAMETER</b></mshelp:link> structure.
+    <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
+    NDIS_CONFIGURATION_PARAMETER</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also

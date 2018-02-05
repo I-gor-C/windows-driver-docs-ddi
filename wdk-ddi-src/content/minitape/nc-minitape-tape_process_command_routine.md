@@ -256,24 +256,18 @@ The minidriver returns the WMI data in the buffer pointed to by the <b>DataBuffe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | minitape.h (include Minitape.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-
-<a href="..\minitape\nf-minitape-tapeclassallocatesrbbuffer.md">TapeClassAllocateSrbBuffer</a>
+<a href="..\minitape\nf-minitape-tapeclasszeromemory.md">TapeClassZeroMemory</a>
 
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
 
-<a href="..\minitape\nf-minitape-tapeclasszeromemory.md">TapeClassZeroMemory</a>
+<a href="..\minitape\nf-minitape-tapeclassallocatesrbbuffer.md">TapeClassAllocateSrbBuffer</a>
+
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
  
 

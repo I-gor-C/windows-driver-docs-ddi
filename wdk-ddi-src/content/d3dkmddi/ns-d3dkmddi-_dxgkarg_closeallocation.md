@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ccd65750-b4d0-4955-9fd4-9546709c2390
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_0d76b996-7ce8-4471-894f-585cc9f3f225.xml, display.dxgkarg_closeallocation, DXGKARG_CLOSEALLOCATION structure [Display Devices], DXGKARG_CLOSEALLOCATION, _DXGKARG_CLOSEALLOCATION, d3dkmddi/DXGKARG_CLOSEALLOCATION
+ms.keywords : display.dxgkarg_closeallocation, DXGKARG_CLOSEALLOCATION, DXGKARG_CLOSEALLOCATION structure [Display Devices], DmStructs_0d76b996-7ce8-4471-894f-585cc9f3f225.xml, d3dkmddi/DXGKARG_CLOSEALLOCATION, _DXGKARG_CLOSEALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _DXGKARG_CLOSEALLOCATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cc6cbda8-4056-41e7-98f9-927a99e66081
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : mountdev/PMOUNTDEV_UNIQUE_ID, storage.mountdev_unique_id, MOUNTDEV_UNIQUE_ID, structs-mntmgr_424fff73-7b72-4068-b25b-00225f69b159.xml, PMOUNTDEV_UNIQUE_ID structure pointer [Storage Devices], MOUNTDEV_UNIQUE_ID structure [Storage Devices], *PMOUNTDEV_UNIQUE_ID, _MOUNTDEV_UNIQUE_ID, mountdev/MOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID
+ms.keywords : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID structure pointer [Storage Devices], _MOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID structure [Storage Devices], mountdev/MOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID, structs-mntmgr_424fff73-7b72-4068-b25b-00225f69b159.xml, mountdev/PMOUNTDEV_UNIQUE_ID, storage.mountdev_unique_id
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ For a discussion of unique volume IDs and how the mount manager uses them, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mountdev.h (include Mountmgr.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eee2625e-6dc8-4f54-81e9-2d31d25f62d7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCmDispatchIncomingCallQoSChange, condis_call_manager_ref_01f18e60-ebc6-4192-9544-a57b07a4575e.xml, ndis/NdisCmDispatchIncomingCallQoSChange, NdisCmDispatchIncomingCallQoSChange function [Network Drivers Starting with Windows Vista], netvista.ndiscmdispatchincomingcallqoschange
+ms.keywords : condis_call_manager_ref_01f18e60-ebc6-4192-9544-a57b07a4575e.xml, ndis/NdisCmDispatchIncomingCallQoSChange, netvista.ndiscmdispatchincomingcallqoschange, NdisCmDispatchIncomingCallQoSChange, NdisCmDispatchIncomingCallQoSChange function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,35 +102,33 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisCmDispatchIncomingCallQoSChange (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisCmDispatchIncomingCallQoSChange (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisCmDispatchIncomingCallQoSChange (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisCmDispatchIncomingCallQoSChange (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 
 <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcallqoschange.md">
+   NdisMCmDispatchIncomingCallQoSChange</a>
 
-<mshelp:link keywords="netvista.protocolcoreceivenetbufferlists" tabindex="0"><i>
-   ProtocolCoReceiveNetBufferLists</i></mshelp:link>
-
-<mshelp:link keywords="netvista.ndismcmdispatchincomingcallqoschange" tabindex="0"><b>
-   NdisMCmDispatchIncomingCallQoSChange</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
-<mshelp:link keywords="netvista.protocolclincomingcallqoschange" tabindex="0"><i>
-   ProtocolClIncomingCallQosChange</i></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_call_qos_change.md">
+   ProtocolClIncomingCallQosChange</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_receive_net_buffer_lists.md">
+   ProtocolCoReceiveNetBufferLists</a>
 
  
 

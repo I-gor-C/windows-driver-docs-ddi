@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
+req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
 req.product : Windows 10 or later.
 ---
 
@@ -93,14 +93,11 @@ The power request may be completed asynchronously by returning STATUS_PENDING, a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

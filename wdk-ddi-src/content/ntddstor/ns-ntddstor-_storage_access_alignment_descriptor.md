@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 988122bf-d7de-44a3-a059-c984bf636cd0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, storage.storage_access_alignment_descriptor, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure pointer [Storage Devices], ntddstor/PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, structs-general_191220fa-6df5-478b-b60e-af8e3f62d441.xml, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure [Storage Devices]
+ms.keywords : structs-general_191220fa-6df5-478b-b60e-af8e3f62d441.xml, storage.storage_access_alignment_descriptor, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure [Storage Devices], _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure pointer [Storage Devices], ntddstor/STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, ntddstor/PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -108,9 +108,6 @@ Storage class drivers issue a device-control request with the I/O control code  
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

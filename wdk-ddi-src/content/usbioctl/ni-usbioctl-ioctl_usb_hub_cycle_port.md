@@ -76,6 +76,5 @@ The executable for DevCon can be found in the <i>&lt;install_path&gt;</i><b>\Win
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Supported on Windows 8 and later versions of Windows,  if the caller is running as Administrator. Supported on Microsoft Windows Server 2003, Windows XP-based versions of Windows. Not supported on Windows 7, Windows Vista, and Windows Server 2008. Supported on Windows 8 and later versions of Windows,  if the caller is running as Administrator. Supported on Microsoft Windows Server 2003, Windows XP-based versions of Windows. Not supported on Windows 7, Windows Vista, and Windows Server 2008. |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |

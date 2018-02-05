@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f1b9cd2f-fa5b-4f34-a237-06d00badf1d1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DEVICEPROPERTYHEADER, _DEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER structure [Print Devices], print_interface-graphics_7dc4be04-e0ab-43bb-8e6d-f500cc7cf51c.xml, print.devicepropertyheader, *PDEVICEPROPERTYHEADER, PDEVICEPROPERTYHEADER structure pointer [Print Devices], winddiui/PDEVICEPROPERTYHEADER, winddiui/DEVICEPROPERTYHEADER, PDEVICEPROPERTYHEADER
+ms.keywords : "*PDEVICEPROPERTYHEADER, _DEVICEPROPERTYHEADER, winddiui/DEVICEPROPERTYHEADER, print.devicepropertyheader, PDEVICEPROPERTYHEADER, print_interface-graphics_7dc4be04-e0ab-43bb-8e6d-f500cc7cf51c.xml, winddiui/PDEVICEPROPERTYHEADER, PDEVICEPROPERTYHEADER structure pointer [Print Devices], DEVICEPROPERTYHEADER structure [Print Devices], DEVICEPROPERTYHEADER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,7 +91,4 @@ Pointer to a NULL-terminated string representing a printer name.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winddiui.h (include Winddiui.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2cb96d6b-37f1-47dd-8135-66d3ead2dd64
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_QmatrixData, LPDXVA_QmatrixData structure pointer [Display Devices], LPDXVA_QmatrixData, display.dxva_qmatrixdata, dxva/LPDXVA_QmatrixData, dxvaref_96294cc5-1f6c-4632-bb98-df5e56bac34f.xml, DXVA_QmatrixData structure [Display Devices], dxva/DXVA_QmatrixData, _DXVA_QmatrixData, *LPDXVA_QmatrixData
+ms.keywords : LPDXVA_QmatrixData, DXVA_QmatrixData structure [Display Devices], dxvaref_96294cc5-1f6c-4632-bb98-df5e56bac34f.xml, dxva/DXVA_QmatrixData, display.dxva_qmatrixdata, dxva/LPDXVA_QmatrixData, _DXVA_QmatrixData, LPDXVA_QmatrixData structure pointer [Display Devices], *LPDXVA_QmatrixData, DXVA_QmatrixData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXVA_QmatrixData, *LPDXVA_QmatrixData
+req.typenames : "*LPDXVA_QmatrixData, DXVA_QmatrixData"
 ---
 
 # _DXVA_QmatrixData structure
@@ -127,16 +127,13 @@ The order of the data values within the inverse-quantization matrix is as specif
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
-
 <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
+
+<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c611b051-45fe-4509-bf2c-7059d578ea05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rtlref_140e7faa-096a-49df-a2b7-87776cfc5b38.xml, RtlDowncaseUnicodeString routine [Installable File System Drivers], ifsk.rtldowncaseunicodestring, RtlDowncaseUnicodeString, ntifs/RtlDowncaseUnicodeString
+ms.keywords : RtlDowncaseUnicodeString, rtlref_140e7faa-096a-49df-a2b7-87776cfc5b38.xml, RtlDowncaseUnicodeString routine [Installable File System Drivers], ntifs/RtlDowncaseUnicodeString, ifsk.rtldowncaseunicodestring
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,11 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

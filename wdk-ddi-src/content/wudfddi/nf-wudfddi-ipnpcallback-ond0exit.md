@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 39eedeca-269d-4966-be1f-7cc5c9228a5c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IPnpCallback interface, OnD0Exit method, IPnpCallback::OnD0Exit, OnD0Exit method, IPnpCallback interface, OnD0Exit, UMDFDeviceObjectRef_4c9ce2f7-92c8-4e0b-80fe-cfb06d1be83a.xml, IPnpCallback, OnD0Exit method, wudfddi/IPnpCallback::OnD0Exit, umdf.ipnpcallback_ond0exit, wdf.ipnpcallback_ond0exit
+ms.keywords : IPnpCallback interface, OnD0Exit method, wudfddi/IPnpCallback::OnD0Exit, IPnpCallback::OnD0Exit, OnD0Exit method, IPnpCallback interface, IPnpCallback, OnD0Exit method, wdf.ipnpcallback_ond0exit, OnD0Exit, umdf.ipnpcallback_ond0exit, UMDFDeviceObjectRef_4c9ce2f7-92c8-4e0b-80fe-cfb06d1be83a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -77,24 +77,19 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-
-<a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_device_state.md">WDF_POWER_DEVICE_STATE</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+<a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

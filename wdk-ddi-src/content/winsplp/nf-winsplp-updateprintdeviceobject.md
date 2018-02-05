@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 52E8F8BF-0362-4BA9-BABD-7B009B3FFA7F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : UpdatePrintDeviceObject function [Print Devices], winsplp/UpdatePrintDeviceObject, print.updateprintdeviceobject, UpdatePrintDeviceObject
+ms.keywords : print.updateprintdeviceobject, UpdatePrintDeviceObject function [Print Devices], UpdatePrintDeviceObject, winsplp/UpdatePrintDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,10 @@ The <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162845(v=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winspool.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | WinSpool.lib |
+| **DLL** | WinSpool.drv |
 
 ## See Also
 

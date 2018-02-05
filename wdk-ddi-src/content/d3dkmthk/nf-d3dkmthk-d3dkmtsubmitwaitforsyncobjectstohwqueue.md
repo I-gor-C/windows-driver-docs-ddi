@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E068ECD0-059A-46E1-9D9E-64EA81B73BD6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSubmitWaitForSyncObjectsToHwQueue, d3dkmthk/D3DKMTSubmitWaitForSyncObjectsToHwQueue, D3DKMTSubmitWaitForSyncObjectsToHwQueue function [Display Devices], display.d3dkmtsubmitwaitforsyncobjectstohwqueue
+ms.keywords : display.d3dkmtsubmitwaitforsyncobjectstohwqueue, d3dkmthk/D3DKMTSubmitWaitForSyncObjectsToHwQueue, D3DKMTSubmitWaitForSyncObjectsToHwQueue function [Display Devices], D3DKMTSubmitWaitForSyncObjectsToHwQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,7 @@ Returns STATUS_SUCCESS if called successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tbd |
+| **DLL** | Tbd |

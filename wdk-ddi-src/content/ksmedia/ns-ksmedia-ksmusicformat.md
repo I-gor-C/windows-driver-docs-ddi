@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 836e2eb5-b8cf-4c12-a855-f63709622c74
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.ksmusicformat, KSMUSICFORMAT structure [Audio Devices], ksmedia/PKSMUSICFORMAT, *PKSMUSICFORMAT, ksmedia/KSMUSICFORMAT, PKSMUSICFORMAT structure pointer [Audio Devices], PKSMUSICFORMAT, aud-prop_04d08180-a7b6-4b88-aa9d-972e5dc237dd.xml, KSMUSICFORMAT
+ms.keywords : KSMUSICFORMAT structure [Audio Devices], aud-prop_04d08180-a7b6-4b88-aa9d-972e5dc237dd.xml, PKSMUSICFORMAT, ksmedia/KSMUSICFORMAT, ksmedia/PKSMUSICFORMAT, PKSMUSICFORMAT structure pointer [Audio Devices], KSMUSICFORMAT, *PKSMUSICFORMAT, audio.ksmusicformat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -136,9 +136,6 @@ Will be played at 140 milliseconds.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

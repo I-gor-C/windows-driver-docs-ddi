@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b72187de-a2ac-446f-bb06-9ca380454122
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ExDeleteLookasideListEx, k102_35b6c2b4-58a3-4900-b8dc-63ed0a53b80f.xml, ExDeleteLookasideListEx, ExDeleteLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exdeletelookasidelistex
+ms.keywords : ExDeleteLookasideListEx, wdm/ExDeleteLookasideListEx, ExDeleteLookasideListEx routine [Kernel-Mode Driver Architecture], k102_35b6c2b4-58a3-4900-b8dc-63ed0a53b80f.xml, kernel.exdeletelookasidelistex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,12 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

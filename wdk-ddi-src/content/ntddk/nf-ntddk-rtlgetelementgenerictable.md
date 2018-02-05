@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 85b5fce8-eac4-4cd8-9a24-22564aae915a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGetElementGenericTable routine [Installable File System Drivers], rtlref_5127995d-65ea-4a8b-8b5b-ad64c7cc4c0d.xml, ntddk/RtlGetElementGenericTable, RtlGetElementGenericTable, ifsk.rtlgetelementgenerictable
+ms.keywords : ifsk.rtlgetelementgenerictable, RtlGetElementGenericTable, ntddk/RtlGetElementGenericTable, RtlGetElementGenericTable routine [Installable File System Drivers], rtlref_5127995d-65ea-4a8b-8b5b-ad64c7cc4c0d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,28 +85,25 @@ Callers of <b>RtlGetElementGenericTable</b> must be running at IRQL &lt; DISPATC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>
+
 <a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictable.md">RtlInsertElementGenericTable</a>
 
-<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelements.md">RtlNumberGenericTableElements</a>
+<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
 
 <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
 
 <a href="..\ntddk\nf-ntddk-rtllookupelementgenerictable.md">RtlLookupElementGenericTable</a>
 
-<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
-
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>
+<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelements.md">RtlNumberGenericTableElements</a>
 
  
 

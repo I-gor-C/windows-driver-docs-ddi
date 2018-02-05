@@ -63,8 +63,8 @@ void MiniportDisableInterrupt(
 
 A handle to a block of context information. The miniport driver supplied this handle in the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
-     <mshelp:link keywords="netvista.ndismregisterinterruptex" tabindex="0"><b>
-     NdisMRegisterInterruptEx</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
+     NdisMRegisterInterruptEx</a> function.
 
 
 ## Return Value
@@ -126,25 +126,21 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | See Remarks section |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
-
 <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
+
+<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
 
 <a href="..\ndis\nc-ndis-miniport_enable_interrupt.md">MiniportEnableInterruptEx</a>
 
-<mshelp:link keywords="netvista.ndis_miniport_interrupt_characteristics" tabindex="0"><b>
-   NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
+   NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a>
 
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 

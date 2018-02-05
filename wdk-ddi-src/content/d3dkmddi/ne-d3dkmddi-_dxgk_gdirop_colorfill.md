@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1ef99bb0-855a-46d1-9702-5fc3eba5e68e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_GDIROPCF_ROP3, d3dkmddi/DXGK_GDIROPCF_PATAND, d3dkmddi/DXGK_GDIROPCF_PDXN, d3dkmddi/DXGK_GDIROPCF_INVALID, d3dkmddi/DXGK_GDIROPCF_ROP3, display.dxgk_gdirop_colorfill, _DXGK_GDIROP_COLORFILL, DXGK_GDIROPCF_PATINVERT, d3dkmddi/DXGK_GDIROPCF_PATOR, d3dkmddi/DXGK_GDIROP_COLORFILL, DXGK_GDIROP_COLORFILL, DXGK_GDIROPCF_PATCOPY, DXGK_GDIROPCF_PATAND, DXGK_GDIROPCF_PDXN, d3dkmddi/DXGK_GDIROPCF_PATINVERT, DXGK_GDIROPCF_INVALID, DXGK_GDIROPCF_PATOR, DXGK_GDIROPCF_DSTINVERT, DXGK_GDIROP_COLORFILL enumeration [Display Devices], d3dkmddi/DXGK_GDIROPCF_DSTINVERT, DmEnums_eaf6bb81-110e-428b-9dc8-22d152bce5b9.xml, d3dkmddi/DXGK_GDIROPCF_PATCOPY
+ms.keywords : d3dkmddi/DXGK_GDIROPCF_DSTINVERT, DXGK_GDIROPCF_PATOR, DXGK_GDIROP_COLORFILL, DXGK_GDIROPCF_PATINVERT, d3dkmddi/DXGK_GDIROP_COLORFILL, d3dkmddi/DXGK_GDIROPCF_PATAND, DXGK_GDIROPCF_DSTINVERT, DXGK_GDIROPCF_INVALID, _DXGK_GDIROP_COLORFILL, d3dkmddi/DXGK_GDIROPCF_INVALID, d3dkmddi/DXGK_GDIROPCF_PATCOPY, display.dxgk_gdirop_colorfill, d3dkmddi/DXGK_GDIROPCF_PATOR, DXGK_GDIROP_COLORFILL enumeration [Display Devices], d3dkmddi/DXGK_GDIROPCF_PATINVERT, DXGK_GDIROPCF_PATCOPY, DmEnums_eaf6bb81-110e-428b-9dc8-22d152bce5b9.xml, d3dkmddi/DXGK_GDIROPCF_ROP3, d3dkmddi/DXGK_GDIROPCF_PDXN, DXGK_GDIROPCF_ROP3, DXGK_GDIROPCF_PDXN, DXGK_GDIROPCF_PATAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -104,7 +104,5 @@ typedef enum _DXGK_GDIROP_COLORFILL {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

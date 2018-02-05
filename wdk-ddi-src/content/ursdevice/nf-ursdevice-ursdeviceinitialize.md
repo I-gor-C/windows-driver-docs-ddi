@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 8A9C76C0-70F5-4F65-A460-CCFCD236A242
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsDeviceInitialize function [Buses], ursdevice/UrsDeviceInitialize, buses.ursdeviceinitialize, UrsDeviceInitialize
+ms.keywords : ursdevice/UrsDeviceInitialize, UrsDeviceInitialize function [Buses], buses.ursdeviceinitialize, UrsDeviceInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,12 @@ The method creates resource lists for host and function roles and the queues req
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
+| **Library** | Urscxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

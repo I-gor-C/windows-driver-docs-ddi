@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 7FFFB495-7E6A-465C-AE93-B62957179531
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_LIST_INIT, spb/SPB_TRANSFER_LIST_INIT, SPB.spb_transfer_list_init, SPB_TRANSFER_LIST_INIT function [Buses]
+ms.keywords : SPB_TRANSFER_LIST_INIT, SPB_TRANSFER_LIST_INIT function [Buses], SPB.spb_transfer_list_init, spb/SPB_TRANSFER_LIST_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_TRANSFER_DIRECTION, SPB_TRANSFER_DIRECTION"
+req.typenames : SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
 req.product : Windows 10 or later.
 ---
 
@@ -74,22 +74,17 @@ To initialize the elements in the <b>SPB_TRANSFER_LIST</b> structure's <b>Transf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | spb.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406213">SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406202">SPB_TRANSFER_LIST_ENTRY_INIT_BUFFER_LIST</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406214">SPB_TRANSFER_LIST_ENTRY_INIT_SIMPLE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406213">SPB_TRANSFER_LIST_ENTRY_INIT_NON_PAGED</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a>
 

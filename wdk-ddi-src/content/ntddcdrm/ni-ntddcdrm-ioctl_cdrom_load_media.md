@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWRITE_ROTATION, WRITE_ROTATION"
+req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_LOAD_MEDIA IOCTL
@@ -69,6 +69,4 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
-| **IRQL** |  |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -159,18 +159,19 @@ This routine can handle chained MDLs, provided that the total number of map regi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Not supported in Windows 98 or Windows Me. Available in Windows 2000 and later versions of Windows. Not supported in Windows 98 or Windows Me. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | IrqlDispatch, IrqlDispatch(storport) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
 <a href="..\wdm\nc-wdm-pput_scatter_gather_list.md">PutScatterGatherList</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 
@@ -178,11 +179,7 @@ This routine can handle chained MDLs, provided that the total number of map regi
 
 <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
-
 <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
-
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
  
 

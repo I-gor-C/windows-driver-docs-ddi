@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dfeaca74-d34d-4128-bd76-3a1bf1b3f5d6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsAllocateExtraData, ks/KsAllocateExtraData, stream.ksallocateextradata, ksfunc_a6f4b047-cec7-4c0d-850f-c3d3b1d1e33e.xml, KsAllocateExtraData function [Streaming Media Devices]
+ms.keywords : KsAllocateExtraData, stream.ksallocateextradata, KsAllocateExtraData function [Streaming Media Devices], ks/KsAllocateExtraData, ksfunc_a6f4b047-cec7-4c0d-850f-c3d3b1d1e33e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,7 @@ When <b>KsAllocateExtraData</b> completes successfully, a pointer to a block of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

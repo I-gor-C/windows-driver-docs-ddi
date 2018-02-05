@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6137ab93-7128-4e71-ba4f-604c7e025c91
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PREG_DELETE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PREG_FLUSH_KEY_INFORMATION, wdm/REG_DELETE_KEY_INFORMATION, kstruct_d_9069d571-f056-490e-b263-7849fd26b041.xml, *PREG_DELETE_KEY_INFORMATION, REG_FLUSH_KEY_INFORMATION, PREG_DELETE_KEY_INFORMATION, _REG_DELETE_KEY_INFORMATION, wdm/PREG_DELETE_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION, kernel.reg_delete_key_information, REG_DELETE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture]
+ms.keywords : REG_FLUSH_KEY_INFORMATION, _REG_DELETE_KEY_INFORMATION, *PREG_FLUSH_KEY_INFORMATION, wdm/REG_DELETE_KEY_INFORMATION, kstruct_d_9069d571-f056-490e-b263-7849fd26b041.xml, *PREG_DELETE_KEY_INFORMATION, kernel.reg_delete_key_information, wdm/PREG_DELETE_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_DELETE_KEY_INFORMATION, PREG_DELETE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : REG_FLUSH_KEY_INFORMATION, *PREG_FLUSH_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION, *PREG_DELETE_KEY_INFORMATION
+req.typenames : REG_FLUSH_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION, *PREG_DELETE_KEY_INFORMATION, *PREG_FLUSH_KEY_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -79,9 +79,7 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available for Microsoft Windows XP and later versions of the Windows operating system, but some structure members are available only for Windows Vista and later versions. Available for Microsoft Windows XP and later versions of the Windows operating system, but some structure members are available only for Windows Vista and later versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

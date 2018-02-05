@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 978D06FC-B5CC-409C-BE5D-CA4B53005D8C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_PCSTREAMRESOURCE_DESCRIPTOR, PPCSTREAMRESOURCE_DESCRIPTOR structure pointer [Audio Devices], portcls/PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR, PPCSTREAMRESOURCE_DESCRIPTOR, portcls/PCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR structure [Audio Devices], *PPCSTREAMRESOURCE_DESCRIPTOR, audio.pcstreamresource_descriptor"
+ms.keywords : PPCSTREAMRESOURCE_DESCRIPTOR structure pointer [Audio Devices], audio.pcstreamresource_descriptor, PCSTREAMRESOURCE_DESCRIPTOR, portcls/PPCSTREAMRESOURCE_DESCRIPTOR, PPCSTREAMRESOURCE_DESCRIPTOR, _PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR structure [Audio Devices], portcls/PCSTREAMRESOURCE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR
+req.typenames : "*PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR"
 ---
 
 # _PCSTREAMRESOURCE_DESCRIPTOR structure
@@ -88,9 +88,7 @@ Stream resources are any resources used by the audio driver to process audio str
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | portcls.h |
 
 ## See Also

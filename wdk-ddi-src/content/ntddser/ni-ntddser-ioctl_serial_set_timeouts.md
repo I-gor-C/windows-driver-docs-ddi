@@ -73,9 +73,7 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddser.h (include Ntddser.h) |
-| **IRQL** |  |
 
 ## See Also
 

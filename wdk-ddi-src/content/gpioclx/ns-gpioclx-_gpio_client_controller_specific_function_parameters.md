@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 57EE1369-09A5-423F-8025-0863B449A909
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_client_controller_specific_function_parameters, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure [Parallel Ports], gpioclx/GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure pointer [Parallel Ports], gpioclx/PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, *PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS
+ms.keywords : "_GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, *PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, gpioclx/PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, gpioclx/GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure [Parallel Ports], PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure pointer [Parallel Ports], GPIO.gpio_client_controller_specific_function_parameters"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,9 +83,7 @@ The GPIO framework extension (GpioClx) fills in the first four members of the st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
 ## See Also

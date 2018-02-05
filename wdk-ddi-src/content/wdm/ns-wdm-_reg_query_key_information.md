@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 88c64e9a-dbf2-4feb-9ce2-615b5ba98439
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : REG_QUERY_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_5e665782-95c2-4fca-bd49-cb364c449540.xml, wdm/REG_QUERY_KEY_INFORMATION, *PREG_QUERY_KEY_INFORMATION, REG_QUERY_KEY_INFORMATION, kernel.reg_query_key_information, PREG_QUERY_KEY_INFORMATION, _REG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PREG_QUERY_KEY_INFORMATION
+ms.keywords : REG_QUERY_KEY_INFORMATION, _REG_QUERY_KEY_INFORMATION, REG_QUERY_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_query_key_information, *PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION, wdm/PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_5e665782-95c2-4fca-bd49-cb364c449540.xml, wdm/REG_QUERY_KEY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,18 +99,16 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later versions of the Windows operating system. Available on Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
-
 <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
+
+<a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
 
  
 

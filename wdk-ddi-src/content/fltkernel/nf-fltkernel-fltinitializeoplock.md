@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9878f614-89dc-4b23-8095-2a8c2b80c79d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltInitializeOplock, fltkernel/FltInitializeOplock, ifsk.fltinitializeoplock, FltInitializeOplock routine [Installable File System Drivers], FltApiRef_e_to_o_5d9b6a6a-6721-41b4-961c-49904596c916.xml
+ms.keywords : fltkernel/FltInitializeOplock, FltInitializeOplock routine [Installable File System Drivers], FltApiRef_e_to_o_5d9b6a6a-6721-41b4-961c-49904596c916.xml, ifsk.fltinitializeoplock, FltInitializeOplock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,28 +72,25 @@ For detailed information about opportunistic locks, see the Microsoft Windows SD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a>
-
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md">FsRtlInitializeOplock</a>
+<a href="..\fltkernel\nf-fltkernel-fltuninitializeoplock.md">FltUninitializeOplock</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcurrentbatchoplock.md">FltCurrentBatchOplock</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltcheckoplock.md">FltCheckOplock</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltuninitializeoplock.md">FltUninitializeOplock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md">FsRtlInitializeOplock</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltoplockisfastiopossible.md">FltOplockIsFastIoPossible</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltoplockfsctrl.md">FltOplockFsctrl</a>
 
  
 

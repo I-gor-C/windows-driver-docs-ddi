@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a8ea236d-42f9-45c5-b2f6-035e0ba28f75
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvDeviceCapabilities, print.drvdevicecapabilities, print_interface-graphics_cbe99c7b-a94f-47b2-8c51-d99bdcdec7d3.xml, winddiui/DrvDeviceCapabilities, DrvDeviceCapabilities function [Print Devices]
+ms.keywords : DrvDeviceCapabilities, print_interface-graphics_cbe99c7b-a94f-47b2-8c51-d99bdcdec7d3.xml, DrvDeviceCapabilities function [Print Devices], winddiui/DrvDeviceCapabilities, print.drvdevicecapabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -86,11 +86,6 @@ The function's return value is dependent on the value received for the <i>iDevCa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

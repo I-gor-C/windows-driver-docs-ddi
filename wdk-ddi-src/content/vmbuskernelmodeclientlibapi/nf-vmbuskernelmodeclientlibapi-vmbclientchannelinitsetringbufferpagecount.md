@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 560A7CD9-5D9D-434B-ACEE-5852CC9A2CC3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : vmbuskernelmodeclientlibapi/VmbClientChannelInitSetRingBufferPageCount, VmbClientChannelInitSetRingBufferPageCount function [Network Drivers Starting with Windows Vista], VmbClientChannelInitSetRingBufferPageCount, netvista.vmbclientchannelinitsetringbufferpagecount
+ms.keywords : vmbuskernelmodeclientlibapi/VmbClientChannelInitSetRingBufferPageCount, VmbClientChannelInitSetRingBufferPageCount, netvista.vmbclientchannelinitsetringbufferpagecount, VmbClientChannelInitSetRingBufferPageCount function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -85,11 +85,9 @@ buffers, this function can only be invoked on the client endpoint.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |

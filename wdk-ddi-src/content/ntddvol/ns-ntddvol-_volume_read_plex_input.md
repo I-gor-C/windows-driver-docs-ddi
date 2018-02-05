@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1d53c658-9912-4912-a74f-f7b93367b9e2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : VOLUME_READ_PLEX_INPUT, ntddvol/VOLUME_READ_PLEX_INPUT, PVOLUME_READ_PLEX_INPUT structure pointer [Storage Devices], PVOLUME_READ_PLEX_INPUT, storage.volume_read_plex_input, structs-volumemgr_26a6ef07-d18e-45bd-b4c3-532d7daadc5c.xml, ntddvol/PVOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT structure [Storage Devices], *PVOLUME_READ_PLEX_INPUT, _VOLUME_READ_PLEX_INPUT
+ms.keywords : "_VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT structure [Storage Devices], ntddvol/PVOLUME_READ_PLEX_INPUT, PVOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT, ntddvol/VOLUME_READ_PLEX_INPUT, PVOLUME_READ_PLEX_INPUT structure pointer [Storage Devices], storage.volume_read_plex_input, structs-volumemgr_26a6ef07-d18e-45bd-b4c3-532d7daadc5c.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ Supplies the zero-based plex number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvol.h (include Ntddvol.h) |
 
 ## See Also

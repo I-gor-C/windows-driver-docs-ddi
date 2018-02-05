@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1550a35f-2733-4ee8-9715-d82f96eb5da7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ioref_3e18058f-46a0-4345-9d67-2e211bbb84a8.xml, IoReplaceFileObjectName routine [Installable File System Drivers], ntifs/IoReplaceFileObjectName, ifsk.ioreplacefileobjectname, IoReplaceFileObjectName
+ms.keywords : ioref_3e18058f-46a0-4345-9d67-2e211bbb84a8.xml, ifsk.ioreplacefileobjectname, IoReplaceFileObjectName, ntifs/IoReplaceFileObjectName, IoReplaceFileObjectName routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,11 +108,9 @@ This routine should be used to replace the file object name instead of doing so 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

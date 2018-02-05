@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 8c7f378c-b4e6-4074-8b6a-571068b5ab80
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver, OnGetProperties, sensors.isensordriver_ongetproperties, ISensorDriver::OnGetProperties, OnGetProperties method [Sensor Devices]
+ms.keywords : OnGetProperties, ISensorDriver, OnGetProperties method [Sensor Devices], ISensorDriver::OnGetProperties, sensors.isensordriver_ongetproperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -102,11 +102,6 @@ Sensor properties must not contain information that can be used to identify the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

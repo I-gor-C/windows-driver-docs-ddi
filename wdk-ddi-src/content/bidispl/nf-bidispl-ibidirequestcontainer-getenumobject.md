@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1aa7b934-c56b-4bfb-800e-950e1dbd5ba3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiRequestContainer::GetEnumObject method [Print Devices], print.ibidirequestcontainer_ibidirequestcontainer__getenumobject, GetEnumObject, bidispl/IBidiRequestContainer::IBidiRequestContainer::GetEnumObject, IBidiRequestContainer::IBidiRequestContainer::GetEnumObject, IBidiRequestContainer::GetEnumObject method [Print Devices], IBidiRequestContainer interface, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::GetEnumObject method, _win32_IBidiRequestContainer_GetEnumObject, IBidiRequestContainer, IBidiRequestContainer::GetEnumObject, gdi.ibidirequestcontainer_ibidirequestcontainer__getenumobject
+ms.keywords : IBidiRequestContainer::IBidiRequestContainer::GetEnumObject, IBidiRequestContainer::GetEnumObject method [Print Devices], IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::GetEnumObject method, _win32_IBidiRequestContainer_GetEnumObject, IBidiRequestContainer::GetEnumObject method [Print Devices], IBidiRequestContainer interface, GetEnumObject, bidispl/IBidiRequestContainer::IBidiRequestContainer::GetEnumObject, gdi.ibidirequestcontainer_ibidirequestcontainer__getenumobject, IBidiRequestContainer::GetEnumObject, IBidiRequestContainer, print.ibidirequestcontainer_ibidirequestcontainer__getenumobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -108,22 +108,19 @@ An application can call <a href="https://msdn.microsoft.com/en-us/library/window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms683764">IEnumUnknown</a>
 
 <a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a>
+
+<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 

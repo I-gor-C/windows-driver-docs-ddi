@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 23DBA3D8-FC27-4F5D-9F1C-A22B6C2856D2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IPortClsNotifications::AllocNotificationBuffer, AllocNotificationBuffer method [Audio Devices], IPortClsNotifications::AllocNotificationBuffer, audio.iportclsnotifications_allocnotification, IPortClsNotifications interface [Audio Devices], AllocNotificationBuffer method, IPortClsNotifications, AllocNotificationBuffer method [Audio Devices], IPortClsNotifications interface, AllocNotificationBuffer
+ms.keywords : AllocNotificationBuffer method [Audio Devices], AllocNotificationBuffer, portcls/IPortClsNotifications::AllocNotificationBuffer, IPortClsNotifications interface [Audio Devices], AllocNotificationBuffer method, IPortClsNotifications, IPortClsNotifications::AllocNotificationBuffer, AllocNotificationBuffer method [Audio Devices], IPortClsNotifications interface, audio.iportclsnotifications_allocnotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -90,14 +90,11 @@ Callers of <b>AllocNotificationBuffer</b> must be running at IRQL &lt;= DISPATCH
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1703 and later versions of Windows. Available in Windows 10, version 1703 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

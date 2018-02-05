@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d8352a73-6b3e-4890-a4ae-000d453d1143
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.feature_data_write_once, FEATURE_DATA_WRITE_ONCE, structs-CD-ROM_d10e83bf-73ef-43e2-901f-20ca3edea1ac.xml, PFEATURE_DATA_WRITE_ONCE structure pointer [Storage Devices], *PFEATURE_DATA_WRITE_ONCE, FEATURE_DATA_WRITE_ONCE structure [Storage Devices], _FEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE, ntddmmc/FEATURE_DATA_WRITE_ONCE, ntddmmc/PFEATURE_DATA_WRITE_ONCE
+ms.keywords : "_FEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE, structs-CD-ROM_d10e83bf-73ef-43e2-901f-20ca3edea1ac.xml, storage.feature_data_write_once, ntddmmc/PFEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_WRITE_ONCE, *PFEATURE_DATA_WRITE_ONCE, FEATURE_DATA_WRITE_ONCE structure [Storage Devices], FEATURE_DATA_WRITE_ONCE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,6 @@ This structure holds data for the feature named "Write Once" by the <i>MMC-3 </i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

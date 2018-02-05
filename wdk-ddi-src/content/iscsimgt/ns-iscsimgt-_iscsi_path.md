@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : eebc3e2e-41fe-4087-8916-7c8a71929913
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsimgt/PISCSI_Path, PISCSI_Path, ISCSI_Path, PISCSI_Path structure pointer [Storage Devices], ISCSI_Path structure [Storage Devices], structs-iSCSI_fe9f6ee9-2fcd-46eb-a010-98e82dbf8c70.xml, *PISCSI_Path, _ISCSI_Path, iscsimgt/ISCSI_Path, storage.iscsi_path
+ms.keywords : storage.iscsi_path, PISCSI_Path, ISCSI_Path, _ISCSI_Path, *PISCSI_Path, structs-iSCSI_fe9f6ee9-2fcd-46eb-a010-98e82dbf8c70.xml, ISCSI_Path structure [Storage Devices], PISCSI_Path structure pointer [Storage Devices], iscsimgt/PISCSI_Path, iscsimgt/ISCSI_Path
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -122,9 +122,6 @@ The iSCSI headers and MOF are included in the platform SDK and WDK.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A277FC29-AB92-4D67-9E53-F8E8B36053F9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamCurrentWritePosition method, portcls/IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition, audio.iminiportstreamaudioenginenode_setstreamcurrentwriteposition, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition, SetStreamCurrentWritePosition
+ms.keywords : SetStreamCurrentWritePosition, audio.iminiportstreamaudioenginenode_setstreamcurrentwriteposition, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamCurrentWritePosition method, portcls/IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition, SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -65,14 +65,10 @@ The current cursor position in the audio data stream.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

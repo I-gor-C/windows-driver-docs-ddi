@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0515dd76-ef1f-4f0f-a7d7-1b3b07e0523d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.iscsi_digest_types, ISCSI_DIGEST_TYPES, structs-iSCSI_107b48fe-7dd1-41d3-b329-d82ba0cd13d4.xml, ISCSI_DIGEST_TYPES enumeration [Storage Devices], PISCSI_DIGEST_TYPES enumeration pointer [Storage Devices], ISCSI_DIGEST_TYPE_NONE, iscsidef/PISCSI_DIGEST_TYPES, iscsidef/ISCSI_DIGEST_TYPES, iscsidef/ISCSI_DIGEST_TYPE_NONE, PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPE_CRC32C, iscsidef/ISCSI_DIGEST_TYPE_CRC32C, *PISCSI_DIGEST_TYPES
+ms.keywords : ISCSI_DIGEST_TYPE_NONE, ISCSI_DIGEST_TYPES enumeration [Storage Devices], iscsidef/ISCSI_DIGEST_TYPE_CRC32C, PISCSI_DIGEST_TYPES enumeration pointer [Storage Devices], iscsidef/ISCSI_DIGEST_TYPE_NONE, ISCSI_DIGEST_TYPE_CRC32C, iscsidef/ISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES, *PISCSI_DIGEST_TYPES, PISCSI_DIGEST_TYPES, structs-iSCSI_107b48fe-7dd1-41d3-b329-d82ba0cd13d4.xml, storage.iscsi_digest_types, iscsidef/PISCSI_DIGEST_TYPES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |

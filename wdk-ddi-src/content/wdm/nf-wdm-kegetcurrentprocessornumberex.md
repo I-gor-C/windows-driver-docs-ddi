@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eb66a17e-2e85-453c-8b39-091f0dc8c29b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeGetCurrentProcessorNumberEx, k105_3eea6705-7267-452a-88c2-1597c6f19828.xml, kernel.kegetcurrentprocessornumberex, KeGetCurrentProcessorNumberEx routine [Kernel-Mode Driver Architecture], KeGetCurrentProcessorNumberEx
+ms.keywords : k105_3eea6705-7267-452a-88c2-1597c6f19828.xml, KeGetCurrentProcessorNumberEx, KeGetCurrentProcessorNumberEx routine [Kernel-Mode Driver Architecture], wdm/KeGetCurrentProcessorNumberEx, kernel.kegetcurrentprocessornumberex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,22 +73,20 @@ A related routine, <a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">Ke
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h, Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcount.md">KeQueryActiveProcessorCount</a>
 
 <a href="..\miniport\ns-miniport-_processor_number.md">PROCESSOR_NUMBER</a>
 
-<a href="..\wdm\nf-wdm-kequeryactiveprocessorcount.md">KeQueryActiveProcessorCount</a>
+<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumber.md">KeGetCurrentProcessorNumber</a>
 
  
 

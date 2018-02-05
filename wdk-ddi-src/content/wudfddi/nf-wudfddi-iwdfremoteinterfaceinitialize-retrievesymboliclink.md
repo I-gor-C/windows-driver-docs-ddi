@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e3203542-177c-440a-8d41-4d70d77f804d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : RetrieveSymbolicLink, IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, IWDFRemoteInterfaceInitialize interface, RetrieveSymbolicLink method, UMDFIoTargetObjectRef_e76cdd61-351a-43f9-93a6-6991159e3d53.xml, IWDFRemoteInterfaceInitialize, umdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, RetrieveSymbolicLink method, IWDFRemoteInterfaceInitialize interface, wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, wudfddi/IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, RetrieveSymbolicLink method
+ms.keywords : RetrieveSymbolicLink method, IWDFRemoteInterfaceInitialize, RetrieveSymbolicLink method, IWDFRemoteInterfaceInitialize interface, RetrieveSymbolicLink, IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, wudfddi/IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, UMDFIoTargetObjectRef_e76cdd61-351a-43f9-93a6-6991159e3d53.xml, umdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, IWDFRemoteInterfaceInitialize interface, RetrieveSymbolicLink method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -111,20 +111,18 @@ Call <b>RetrieveSymbolicLink</b> again, and set the <i>pSymbolicLink</i> paramet
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560238">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfremoteinterfaceinitialize.md">IWDFRemoteInterfaceInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560238">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
 
  
 

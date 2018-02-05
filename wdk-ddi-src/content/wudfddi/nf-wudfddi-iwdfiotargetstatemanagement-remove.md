@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 28a802b3-f916-4455-a93a-868393a570cf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTargetStateManagement, umdf.iwdfiotargetstatemanagement_remove, Remove method, IWDFIoTargetStateManagement interface, wdf.iwdfiotargetstatemanagement_remove, IWDFIoTargetStateManagement interface, Remove method, Remove method, IWDFIoTargetStateManagement::Remove, wudfddi/IWDFIoTargetStateManagement::Remove, Remove, UMDFIoTargetObjectRef_aad5b1f1-14c0-442f-a289-be006b20816e.xml
+ms.keywords : umdf.iwdfiotargetstatemanagement_remove, Remove method, IWDFIoTargetStateManagement interface, wdf.iwdfiotargetstatemanagement_remove, UMDFIoTargetObjectRef_aad5b1f1-14c0-442f-a289-be006b20816e.xml, IWDFIoTargetStateManagement::Remove, IWDFIoTargetStateManagement, Remove, wudfddi/IWDFIoTargetStateManagement::Remove, IWDFIoTargetStateManagement interface, Remove method, Remove method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,14 +71,12 @@ Although the <b>Remove</b> method is available, drivers do not need to call it. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

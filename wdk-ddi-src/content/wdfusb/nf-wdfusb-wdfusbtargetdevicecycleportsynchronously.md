@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8dee089c-1f1a-4090-8c43-8362bb684139
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceCyclePortSynchronously method, wdfusb/WdfUsbTargetDeviceCyclePortSynchronously, wdf.wdfusbtargetdevicecycleportsynchronously, PFN_WDFUSBTARGETDEVICECYCLEPORTSYNCHRONOUSLY, DFUsbRef_9ef45eea-9dd8-4423-add8-0906374ff620.xml, kmdf.wdfusbtargetdevicecycleportsynchronously, WdfUsbTargetDeviceCyclePortSynchronously
+ms.keywords : wdf.wdfusbtargetdevicecycleportsynchronously, kmdf.wdfusbtargetdevicecycleportsynchronously, DFUsbRef_9ef45eea-9dd8-4423-add8-0906374ff620.xml, PFN_WDFUSBTARGETDEVICECYCLEPORTSYNCHRONOUSLY, WdfUsbTargetDeviceCyclePortSynchronously, WdfUsbTargetDeviceCyclePortSynchronously method, wdfusb/WdfUsbTargetDeviceCyclePortSynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,12 +98,10 @@ For more information about the <b>WdfUsbTargetDeviceCyclePortSynchronously</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 

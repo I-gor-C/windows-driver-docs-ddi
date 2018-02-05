@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 67fe089d-4cde-4caa-a4ad-8e879a30b516
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetBytesUsed, display.videoportgetbytesused, video/VideoPortGetBytesUsed, VideoPortGetBytesUsed function [Display Devices], VideoPort_Functions_315c6ad1-757d-44d3-8059-d94ab407ea69.xml
+ms.keywords : VideoPortGetBytesUsed, VideoPortGetBytesUsed function [Display Devices], VideoPort_Functions_315c6ad1-757d-44d3-8059-d94ab407ea69.xml, display.videoportgetbytesused, video/VideoPortGetBytesUsed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,8 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |

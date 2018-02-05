@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIs32bitProcess, k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess routine [Kernel-Mode Driver Architecture], kernel.iois32bitprocess, wdm/IoIs32bitProcess
+ms.keywords : k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess, IoIs32bitProcess routine [Kernel-Mode Driver Architecture], wdm/IoIs32bitProcess, kernel.iois32bitprocess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,9 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system. Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

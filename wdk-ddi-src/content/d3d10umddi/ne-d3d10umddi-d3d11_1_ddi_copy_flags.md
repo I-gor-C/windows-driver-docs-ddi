@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 044dc1cd-426e-4f6c-b14d-8c366834b5ac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDI_COPY_TILEABLE, d3d10umddi/D3D11_1DDI_COPY_DISCARD, D3D11_1DDI_COPY_TILEABLE, D3D11_1_DDI_COPY_FLAGS enumeration [Display Devices], D3D11_1DDI_COPY_DISCARD, D3D11_1_DDI_COPY_FLAGS, d3d10umddi/D3D11_1DDI_COPY_NO_OVERWRITE, display.d3d11_1_ddi_copy_flags, d3d10umddi/D3D11_1_DDI_COPY_FLAGS, D3D11_1DDI_COPY_NO_OVERWRITE
+ms.keywords : d3d10umddi/D3D11_1_DDI_COPY_FLAGS, D3D11_1DDI_COPY_DISCARD, d3d10umddi/D3D11_1DDI_COPY_DISCARD, d3d10umddi/D3D11_1DDI_COPY_TILEABLE, D3D11_1_DDI_COPY_FLAGS, D3D11_1_DDI_COPY_FLAGS enumeration [Display Devices], d3d10umddi/D3D11_1DDI_COPY_NO_OVERWRITE, D3D11_1DDI_COPY_NO_OVERWRITE, D3D11_1DDI_COPY_TILEABLE, display.d3d11_1_ddi_copy_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum D3D11_1_DDI_COPY_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

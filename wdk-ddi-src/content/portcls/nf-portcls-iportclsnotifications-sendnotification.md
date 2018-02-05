@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 0683C30D-0AAD-4859-BA30-908FA747CC35
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SendNotification method [Audio Devices], IPortClsNotifications interface, IPortClsNotifications interface [Audio Devices], SendNotification method, SendNotification, audio.iportclsnotifications_sendnotification, IPortClsNotifications, IPortClsNotifications::SendNotification, portcls/IPortClsNotifications::SendNotification, SendNotification method [Audio Devices]
+ms.keywords : IPortClsNotifications interface [Audio Devices], SendNotification method, SendNotification method [Audio Devices], SendNotification method [Audio Devices], IPortClsNotifications interface, portcls/IPortClsNotifications::SendNotification, IPortClsNotifications, IPortClsNotifications::SendNotification, audio.iportclsnotifications_sendnotification, SendNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -79,14 +79,11 @@ For more information about audio modules, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1703 and later versions of Windows. Available in Windows 10, version 1703 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

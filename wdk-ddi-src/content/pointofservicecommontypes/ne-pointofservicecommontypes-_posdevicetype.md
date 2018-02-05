@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 1e0b4b66-f9aa-4315-a07d-b6fd47f10371
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PosDeviceType_MagneticStripeReader, pointofservicecommontypes/PosDeviceType_CashDrawer, pointofservicecommontypes/PosDeviceType_BarcodeScanner, PosDeviceType_Max, pointofservicecommontypes/PosDeviceType_Unknown, pos.posdevicetype, PosDeviceType, _PosDeviceType, pointofservicecommontypes/PosDeviceType, PosDeviceType enumeration, PosDeviceType_BarcodeScanner, pointofservicecommontypes/PosDeviceType_Max, PosDeviceType_CashDrawer, pointofservicecommontypes/PosDeviceType_Printer, PosDeviceType_Unknown, PosDeviceType_Printer, pointofservicecommontypes/PosDeviceType_MagneticStripeReader
+ms.keywords : "_PosDeviceType, pointofservicecommontypes/PosDeviceType_Printer, pointofservicecommontypes/PosDeviceType_BarcodeScanner, pointofservicecommontypes/PosDeviceType, PosDeviceType_BarcodeScanner, pos.posdevicetype, PosDeviceType_MagneticStripeReader, PosDeviceType_Printer, PosDeviceType_CashDrawer, pointofservicecommontypes/PosDeviceType_Unknown, PosDeviceType, pointofservicecommontypes/PosDeviceType_MagneticStripeReader, PosDeviceType_Max, PosDeviceType enumeration, pointofservicecommontypes/PosDeviceType_CashDrawer, pointofservicecommontypes/PosDeviceType_Max, PosDeviceType_Unknown"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ typedef enum _PosDeviceType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : C9CF39F2-5081-4B99-BFD1-9F7130B27369
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure pointer [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, ksmedia/KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure [Streaming Media Devices], stream.kscamera_extendedprop_evcompensation, tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, ksmedia/PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION"
+ms.keywords : KSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure pointer [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, ksmedia/PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, stream.kscamera_extendedprop_evcompensation, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION"
+req.typenames : KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure
@@ -81,9 +81,7 @@ EV Compensation in units of steps  selected in the <b>Flags</b> member of <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

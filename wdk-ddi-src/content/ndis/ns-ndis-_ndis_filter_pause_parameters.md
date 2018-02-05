@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 070c6d5d-9942-4bff-8894-9aa69d5e7983
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_FILTER_PAUSE_PARAMETERS, NDIS_FILTER_PAUSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], ndis/PNDIS_FILTER_PAUSE_PARAMETERS, PNDIS_FILTER_PAUSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_FILTER_PAUSE_PARAMETERS, netvista.ndis_filter_pause_parameters, NDIS_FILTER_PAUSE_PARAMETERS, PNDIS_FILTER_PAUSE_PARAMETERS, _NDIS_FILTER_PAUSE_PARAMETERS, filter_structures_ref_78bd5df6-c235-4af1-9b2f-1ddce38a0017.xml
+ms.keywords : ndis/PNDIS_FILTER_PAUSE_PARAMETERS, PNDIS_FILTER_PAUSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_FILTER_PAUSE_PARAMETERS, filter_structures_ref_78bd5df6-c235-4af1-9b2f-1ddce38a0017.xml, NDIS_FILTER_PAUSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], ndis/NDIS_FILTER_PAUSE_PARAMETERS, NDIS_FILTER_PAUSE_PARAMETERS, PNDIS_FILTER_PAUSE_PARAMETERS, netvista.ndis_filter_pause_parameters, *PNDIS_FILTER_PAUSE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_FILTER_PAUSE_PARAMETERS, NDIS_FILTER_PAUSE_PARAMETERS"
+req.typenames : NDIS_FILTER_PAUSE_PARAMETERS, *PNDIS_FILTER_PAUSE_PARAMETERS
 ---
 
 # _NDIS_FILTER_PAUSE_PARAMETERS structure
@@ -79,16 +79,14 @@ To define filter module pause parameters, NDIS passes a pointer to an NDIS_FILTE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_pause.md">FilterPause</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndis\nc-ndis-filter_pause.md">FilterPause</a>
 
  
 

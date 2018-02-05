@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3da05f28-a6de-4dad-a978-0439f3244bbb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_ReadPhonebookEntries, RIL_ReadPhonebookEntries method [Network Drivers Starting with Windows Vista], RIL_ReadPhonebookEntries, netvista.ril_readphonebookentries
+ms.keywords : RIL_ReadPhonebookEntries method [Network Drivers Starting with Windows Vista], RIL_ReadPhonebookEntries, rilapi/RIL_ReadPhonebookEntries, netvista.ril_readphonebookentries
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

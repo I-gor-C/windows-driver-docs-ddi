@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 509f4fa5-37c8-4098-aade-767aad5d6d6a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectDriverDefIntRef_d7e26200-d711-4c81-92d6-d2c2c1f052b0.xml, wdfqueryinterface/WDF_QUERY_INTERFACE_CONFIG_INIT, wdf.wdf_query_interface_config_init, kmdf.wdf_query_interface_config_init, WDF_QUERY_INTERFACE_CONFIG_INIT, WDF_QUERY_INTERFACE_CONFIG_INIT function
+ms.keywords : kmdf.wdf_query_interface_config_init, WDF_QUERY_INTERFACE_CONFIG_INIT function, WDF_QUERY_INTERFACE_CONFIG_INIT, wdfqueryinterface/WDF_QUERY_INTERFACE_CONFIG_INIT, wdf.wdf_query_interface_config_init, DFDeviceObjectDriverDefIntRef_d7e26200-d711-4c81-92d6-d2c2c1f052b0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_PDO_EVENT_CALLBACKS, WDF_PDO_EVENT_CALLBACKS"
+req.typenames : WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
 req.product : Windows 10 or later.
 ---
 
@@ -86,20 +86,16 @@ For more information about driver-defined interfaces, see <a href="https://docs.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfqueryinterface.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a>
-
 <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a>
+
+<a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a>
 
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 

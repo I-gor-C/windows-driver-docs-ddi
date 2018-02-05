@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A6FFC14B-0736-425F-A923-DFF54494887C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode::SetDeviceFormat, SetDeviceFormat method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_setdeviceformat, SetDeviceFormat, IMiniportAudioEngineNode, SetDeviceFormat method [Audio Devices], portcls/IMiniportAudioEngineNode::SetDeviceFormat, IMiniportAudioEngineNode interface [Audio Devices], SetDeviceFormat method
+ms.keywords : SetDeviceFormat, SetDeviceFormat method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_setdeviceformat, IMiniportAudioEngineNode, SetDeviceFormat method [Audio Devices], IMiniportAudioEngineNode interface [Audio Devices], SetDeviceFormat method, IMiniportAudioEngineNode::SetDeviceFormat, portcls/IMiniportAudioEngineNode::SetDeviceFormat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,20 +77,16 @@ returns an appropriate error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
-
 <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
+
+<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
 
  
 

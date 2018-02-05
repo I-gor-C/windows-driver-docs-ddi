@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c0efec37-4897-4ece-9f53-4a62204e5af3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : HW_EVENT_DESCRIPTOR, stream.hw_event_descriptor, strmini/HW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR, strclass-struct_ca0c15b2-17d1-4114-9765-5638dd81ca24.xml, strmini/PHW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR structure pointer [Streaming Media Devices], HW_EVENT_DESCRIPTOR structure [Streaming Media Devices], _HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR
+ms.keywords : strmini/HW_EVENT_DESCRIPTOR, _HW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR, strclass-struct_ca0c15b2-17d1-4114-9765-5638dd81ca24.xml, HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, strmini/PHW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR structure pointer [Streaming Media Devices], HW_EVENT_DESCRIPTOR structure [Streaming Media Devices], stream.hw_event_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,7 +91,4 @@ Pointer to the minidriver's instance extension. The minidriver may use this buff
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 43aa91cb-584e-47b7-a6d4-2e95adf24a28
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PDXGKMDT_OPM_ENCRYPTED_PARAMETERS, PDXGKMDT_OPM_ENCRYPTED_PARAMETERS structure pointer [Display Devices], d3dkmdt/DXGKMDT_OPM_ENCRYPTED_PARAMETERS, display.dxgkmdt_opm_encrypted_parameters, d3dkmdt/PDXGKMDT_OPM_ENCRYPTED_PARAMETERS, _DXGKMDT_OPM_ENCRYPTED_PARAMETERS, PDXGKMDT_OPM_ENCRYPTED_PARAMETERS, DXGKMDT_OPM_ENCRYPTED_PARAMETERS, DXGKMDT_OPM_ENCRYPTED_PARAMETERS structure [Display Devices], DmStructs_760ebc6b-c03b-468d-b4b0-29faabd65cd1.xml"
+ms.keywords : d3dkmdt/PDXGKMDT_OPM_ENCRYPTED_PARAMETERS, PDXGKMDT_OPM_ENCRYPTED_PARAMETERS structure pointer [Display Devices], _DXGKMDT_OPM_ENCRYPTED_PARAMETERS, display.dxgkmdt_opm_encrypted_parameters, DXGKMDT_OPM_ENCRYPTED_PARAMETERS, d3dkmdt/DXGKMDT_OPM_ENCRYPTED_PARAMETERS, PDXGKMDT_OPM_ENCRYPTED_PARAMETERS, DXGKMDT_OPM_ENCRYPTED_PARAMETERS structure [Display Devices], *PDXGKMDT_OPM_ENCRYPTED_PARAMETERS, DmStructs_760ebc6b-c03b-468d-b4b0-29faabd65cd1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXGKMDT_OPM_ENCRYPTED_PARAMETERS, *PDXGKMDT_OPM_ENCRYPTED_PARAMETERS
+req.typenames : "*PDXGKMDT_OPM_ENCRYPTED_PARAMETERS, DXGKMDT_OPM_ENCRYPTED_PARAMETERS"
 ---
 
 # _DXGKMDT_OPM_ENCRYPTED_PARAMETERS structure
@@ -61,9 +61,7 @@ For more information about the certificates and algorithms that are used to encr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

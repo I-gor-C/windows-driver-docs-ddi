@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0B9352EE-C7CE-4F9D-9373-0096222295A4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_provider2, wwan/WWAN_PROVIDER2, *PWWAN_PROVIDER2, PWWAN_PROVIDER2, _WWAN_PROVIDER2, wwan/PWWAN_PROVIDER2, PWWAN_PROVIDER2 structure pointer [Network Drivers Starting with Windows Vista], WWAN_PROVIDER2, WWAN_PROVIDER2 structure [Network Drivers Starting with Windows Vista]
+ms.keywords : wwan/WWAN_PROVIDER2, WWAN_PROVIDER2 structure [Network Drivers Starting with Windows Vista], WWAN_PROVIDER2, netvista.wwan_provider2, _WWAN_PROVIDER2, PWWAN_PROVIDER2, *PWWAN_PROVIDER2, wwan/PWWAN_PROVIDER2, PWWAN_PROVIDER2 structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,16 +75,14 @@ The cellular class that the provider uses.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_provider.md">WWAN_PROVIDER</a>
-
 <a href="..\wwan\ns-wwan-_wwan_signal_state.md">WWAN_SIGNAL_STATE</a>
+
+<a href="..\wwan\ns-wwan-_wwan_provider.md">WWAN_PROVIDER</a>
 
 <a href="..\wwan\ne-wwan-_wwan_cellular_class.md">WWAN_CELLULAR_CLASS</a>
 

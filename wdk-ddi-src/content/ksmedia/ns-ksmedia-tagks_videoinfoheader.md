@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 402f292c-14f8-4ff3-b1b3-b992578cbcc8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKS_VIDEOINFOHEADER structure pointer [Streaming Media Devices], ksmedia/PKS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER, stream.ks_videoinfoheader, vidcapstruct_785a83de-3f90-44f1-b20f-9509032e8a06.xml, tagKS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER structure [Streaming Media Devices], PKS_VIDEOINFOHEADER, ksmedia/KS_VIDEOINFOHEADER
+ms.keywords : ksmedia/KS_VIDEOINFOHEADER, PKS_VIDEOINFOHEADER structure pointer [Streaming Media Devices], ksmedia/PKS_VIDEOINFOHEADER, PKS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER, vidcapstruct_785a83de-3f90-44f1-b20f-9509032e8a06.xml, tagKS_VIDEOINFOHEADER, stream.ks_videoinfoheader, KS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,9 +94,6 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

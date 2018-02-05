@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 04981b68-db32-461b-b24b-8b2bf2e53f78
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-storport_de071b99-aa78-4c21-845e-f47b7d0297c0.xml, SCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK structure [Storage Devices], storport/PSCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK structure pointer [Storage Devices], storport/SCSI_POWER_REQUEST_BLOCK, _SCSI_POWER_REQUEST_BLOCK, *PSCSI_POWER_REQUEST_BLOCK, storage.scsi_power_request_block, PSCSI_POWER_REQUEST_BLOCK
+ms.keywords : "*PSCSI_POWER_REQUEST_BLOCK, storport/SCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK structure [Storage Devices], _SCSI_POWER_REQUEST_BLOCK, storage.scsi_power_request_block, storport/PSCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK, structs-storport_de071b99-aa78-4c21-845e-f47b7d0297c0.xml, SCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK structure pointer [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCSI_POWER_REQUEST_BLOCK, *PSCSI_POWER_REQUEST_BLOCK
+req.typenames : "*PSCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK"
 req.product : Windows 10 or later.
 ---
 
@@ -185,18 +185,15 @@ The miniport can access the adapter's hardware resources.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-
 <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 
 <a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
+
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
  
 

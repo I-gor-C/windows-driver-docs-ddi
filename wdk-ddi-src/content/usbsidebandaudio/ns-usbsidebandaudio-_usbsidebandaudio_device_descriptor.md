@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 66EDD6E5-F6EB-42C9-8B68-3A19DED7DCB8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR structure [Audio Devices], USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, usbsidebandaudio/PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR structure pointer [Audio Devices], *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, usbsidebandaudio/USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, audio.usbsidebandaudio_device_descriptor"
+ms.keywords : USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR structure [Audio Devices], *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, _USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, usbsidebandaudio/PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, audio.usbsidebandaudio_device_descriptor, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, usbsidebandaudio/USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR"
+req.typenames : USBSIDEBANDAUDIO_DEVICE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_DEVICE_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -74,7 +74,4 @@ TBD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbsidebandaudio.h (include Usbsidebandaudio.h) |

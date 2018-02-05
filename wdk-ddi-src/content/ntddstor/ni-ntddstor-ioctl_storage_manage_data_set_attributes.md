@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES IOCTL
@@ -71,7 +71,6 @@ Due to memory pool requirements by the storage driver stack, completion of the I
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 | **IRQL** | IRQL < DISPATCH_LEVEL (See Remarks section.) |
 

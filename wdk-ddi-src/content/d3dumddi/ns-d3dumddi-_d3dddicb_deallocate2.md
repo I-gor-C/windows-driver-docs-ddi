@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C859CB06-3F71-4F6D-9949-0E9AE75CEC20
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_deallocate2, D3DDDICB_DEALLOCATE2 structure [Display Devices], d3dumddi/D3DDDICB_DEALLOCATE2, _D3DDDICB_DEALLOCATE2, D3DDDICB_DEALLOCATE2
+ms.keywords : D3DDDICB_DEALLOCATE2 structure [Display Devices], display.d3dddicb_deallocate2, d3dumddi/D3DDDICB_DEALLOCATE2, D3DDDICB_DEALLOCATE2, _D3DDDICB_DEALLOCATE2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,16 +76,14 @@ If the user-mode display driver sets the handle in the <b>hResource</b> member t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_deallocate2cb.md">pfnDeallocate2Cb</a>
-
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_deallocate2cb.md">pfnDeallocate2Cb</a>
 
  
 

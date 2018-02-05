@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 50063bd0-c9d4-4013-8f83-8f9d92aa87c0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_GETCAPS, display.d3dddiarg_getcaps, d3dumddi/D3DDDIARG_GETCAPS, UMDisplayDriver_param_Structs_05260c15-4f63-4a85-b9c8-db53ed8135cd.xml, D3DDDIARG_GETCAPS structure [Display Devices], _D3DDDIARG_GETCAPS
+ms.keywords : display.d3dddiarg_getcaps, UMDisplayDriver_param_Structs_05260c15-4f63-4a85-b9c8-db53ed8135cd.xml, D3DDDIARG_GETCAPS, d3dumddi/D3DDDIARG_GETCAPS, _D3DDDIARG_GETCAPS, D3DDDIARG_GETCAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,16 +76,14 @@ For information on how to specify <b>D3DDDIARG_GETCAPS</b> member values along w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
  
 

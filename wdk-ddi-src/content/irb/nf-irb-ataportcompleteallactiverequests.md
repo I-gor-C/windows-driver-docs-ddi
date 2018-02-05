@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e17b1a76-ab1e-4263-9e4a-42c6f2066de1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ataportcompleteallactiverequests, AtaPortCompleteAllActiveRequests routine [Storage Devices], AtaPortCompleteAllActiveRequests, atartns_b9f2bdc5-ede8-4a7f-9d9e-df16a9d83634.xml, irb/AtaPortCompleteAllActiveRequests
+ms.keywords : storage.ataportcompleteallactiverequests, AtaPortCompleteAllActiveRequests, irb/AtaPortCompleteAllActiveRequests, atartns_b9f2bdc5-ede8-4a7f-9d9e-df16a9d83634.xml, AtaPortCompleteAllActiveRequests routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,14 +86,9 @@ The miniport driver must not call this routine from the <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

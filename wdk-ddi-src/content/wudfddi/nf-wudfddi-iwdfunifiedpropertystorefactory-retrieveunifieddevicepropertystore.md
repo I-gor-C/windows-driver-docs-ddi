@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A54E56A6-9A6C-435D-83FD-84BB0E072C74
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, umdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory interface, IWDFUnifiedPropertyStoreFactory interface, RetrieveUnifiedDevicePropertyStore method
+ms.keywords : umdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory, wudfddi/IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory interface, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore method, RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -112,14 +112,12 @@ For more information about accessing the registry, see <a href="https://docs.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

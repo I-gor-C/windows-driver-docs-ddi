@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c96d1c81-429f-46de-b56c-6424734ccd7a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IO_PAGING_PRIORITY enumeration [Kernel-Mode Driver Architecture], wdm/IoPagingPriorityNormal, wdm/IoPagingPriorityHigh, wdm/IoPagingPriorityReserved1, IoPagingPriorityHigh, wdm/IO_PAGING_PRIORITY, wdm/IoPagingPriorityReserved2, _IO_PAGING_PRIORITY, sysenum_8e021ebd-f26a-4749-8e76-c540af5dfae1.xml, wdm/IoPagingPriorityInvalid, IO_PAGING_PRIORITY, IoPagingPriorityReserved2, IoPagingPriorityInvalid, IoPagingPriorityNormal, IoPagingPriorityReserved1, kernel.io_paging_priority
+ms.keywords : "_IO_PAGING_PRIORITY, wdm/IoPagingPriorityNormal, IoPagingPriorityReserved2, sysenum_8e021ebd-f26a-4749-8e76-c540af5dfae1.xml, IoPagingPriorityNormal, IoPagingPriorityHigh, IoPagingPriorityReserved1, wdm/IO_PAGING_PRIORITY, wdm/IoPagingPriorityInvalid, wdm/IoPagingPriorityReserved2, IoPagingPriorityInvalid, IO_PAGING_PRIORITY, wdm/IoPagingPriorityReserved1, IO_PAGING_PRIORITY enumeration [Kernel-Mode Driver Architecture], wdm/IoPagingPriorityHigh, kernel.io_paging_priority"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -90,9 +90,6 @@ The <a href="..\ntddk\nf-ntddk-iogetpagingiopriority.md">IoGetPagingIoPriority</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e85fe5fa-b11e-41ff-a355-4da0394377d1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExUuidCreate routine [Kernel-Mode Driver Architecture], ntddk/ExUuidCreate, ExUuidCreate, k102_e7d2044b-4f90-41bd-bac4-819c721e80c8.xml, kernel.exuuidcreate
+ms.keywords : ntddk/ExUuidCreate, ExUuidCreate, kernel.exuuidcreate, ExUuidCreate routine [Kernel-Mode Driver Architecture], k102_e7d2044b-4f90-41bd-bac4-819c721e80c8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,11 +109,10 @@ The caller can iteratively attempt to obtain a new UUID value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |

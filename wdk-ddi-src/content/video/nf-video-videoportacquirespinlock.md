@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e61ffb7-1720-47b2-b943-54ffa596cb08
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortAcquireSpinLock function [Display Devices], VideoPortAcquireSpinLock, VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, display.videoportacquirespinlock, video/VideoPortAcquireSpinLock
+ms.keywords : display.videoportacquirespinlock, VideoPortAcquireSpinLock, VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, video/VideoPortAcquireSpinLock, VideoPortAcquireSpinLock function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -59,7 +59,7 @@ VOID VideoPortAcquireSpinLock(
 
 Pointer to the miniport driver's device extension.
 
-``
+`Arg1`
 
 
 
@@ -97,14 +97,12 @@ The caller should release the spin lock with <b>VideoPortReleaseSpinLock</b> as 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

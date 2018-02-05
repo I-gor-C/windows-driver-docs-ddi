@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 25ca2d81-72a5-47ae-bdfd-0ec63e1ca39a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddscsi/NVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK structure [Storage Devices], ntddscsi/PNVCACHE_REQUEST_BLOCK, *PNVCACHE_REQUEST_BLOCK, PNVCACHE_REQUEST_BLOCK, storage.nvcache_request_block, _NVCACHE_REQUEST_BLOCK, PNVCACHE_REQUEST_BLOCK structure pointer [Storage Devices], structs-nvcache_1886905c-1d48-4cc9-b74c-3b52dc65b279.xml, NVCACHE_REQUEST_BLOCK
+ms.keywords : NVCACHE_REQUEST_BLOCK, PNVCACHE_REQUEST_BLOCK structure pointer [Storage Devices], storage.nvcache_request_block, *PNVCACHE_REQUEST_BLOCK, ntddscsi/PNVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK structure [Storage Devices], PNVCACHE_REQUEST_BLOCK, ntddscsi/NVCACHE_REQUEST_BLOCK, structs-nvcache_1886905c-1d48-4cc9-b74c-3b52dc65b279.xml, _NVCACHE_REQUEST_BLOCK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK"
+req.typenames : NVCACHE_REQUEST_BLOCK, *PNVCACHE_REQUEST_BLOCK
 ---
 
 # _NVCACHE_REQUEST_BLOCK structure
@@ -74,24 +74,9 @@ Specifies the operation to be performed, which can be one of the following value
 
 
 
-#### NRB_FUNCTION_NVCACHE_INFO
+#### NRB_FUNCTION_ADD_LBAS_PINNED_SET
 
-Get NV Cache Manager feature support information from the device. Upon the successful completion of this function, the required data fields are returned to the caller. The return data structure is <a href="..\ntddscsi\ns-ntddscsi-_nv_feature_parameter.md">NV_FEATURE_PARAMETER</a>.
-
-
-#### NRB_FUNCTION_SPINDLE_STATUS
-
-Determine if the device is currently spinning up or spinning down. For an ATA device, a Check Power Mode command is required to obtain the device's spindle status. For a SCSI device, a Mode Sense command can be used to query the device's current power mode.
-
-
-#### NRB_FUNCTION_NVCACHE_POWER_MODE_SET
-
-Turn on the NV Cache Manager power mode.
-
-
-#### NRB_FUNCTION_NVCACHE_POWER_MODE_RESET
-
-Turn off the NV Cache Manager power mode.
+Add the LBAs that are specified in the NV Cache Manager Set Data to the NV Cache Manager Pinned Set if they are not already.
 
 
 #### NRB_FUNCTION_FLUSH_NVCACHE
@@ -99,9 +84,24 @@ Turn off the NV Cache Manager power mode.
 Flush the data that is currently pinned in NV cache memory to make the required NV cache memory space available.
 
 
-#### NRB_FUNCTION_QUERY_PINNED_SET
+#### NRB_FUNCTION_NVCACHE_INFO
 
-Get the Logical Block Address (LBA) ranges currently in the NV Cache Manager pinned set.
+Get NV Cache Manager feature support information from the device. Upon the successful completion of this function, the required data fields are returned to the caller. The return data structure is <a href="..\ntddscsi\ns-ntddscsi-_nv_feature_parameter.md">NV_FEATURE_PARAMETER</a>.
+
+
+#### NRB_FUNCTION_NVCACHE_POWER_MODE_RESET
+
+Turn off the NV Cache Manager power mode.
+
+
+#### NRB_FUNCTION_NVCACHE_POWER_MODE_SET
+
+Turn on the NV Cache Manager power mode.
+
+
+#### NRB_FUNCTION_PASS_HINT_PAYLOAD
+
+Pass IO hints to a SATA device.
 
 
 #### NRB_FUNCTION_QUERY_CACHE_MISS
@@ -109,9 +109,14 @@ Get the Logical Block Address (LBA) ranges currently in the NV Cache Manager pin
 Request that the device report NV Cache Misses in LBA ranges in a single 512-byte block.
 
 
-#### NRB_FUNCTION_ADD_LBAS_PINNED_SET
+#### NRB_FUNCTION_QUERY_HYBRID_DISK_STATUS
 
-Add the LBAs that are specified in the NV Cache Manager Set Data to the NV Cache Manager Pinned Set if they are not already.
+Reserved for future use.
+
+
+#### NRB_FUNCTION_QUERY_PINNED_SET
+
+Get the Logical Block Address (LBA) ranges currently in the NV Cache Manager pinned set.
 
 
 #### NRB_FUNCTION_REMOVE_LBAS_PINNED_SET
@@ -119,14 +124,9 @@ Add the LBAs that are specified in the NV Cache Manager Set Data to the NV Cache
 Remove the LBAs that are specified in the NV Cache Set Data from the NV Cache pinned set.
 
 
-#### NRB_FUNCTION_QUERY_HYBRID_DISK_STATUS
+#### NRB_FUNCTION_SPINDLE_STATUS
 
-Reserved for future use.
-
-
-#### NRB_FUNCTION_PASS_HINT_PAYLOAD
-
-Pass IO hints to a SATA device.
+Determine if the device is currently spinning up or spinning down. For an ATA device, a Check Power Mode command is required to obtain the device's spindle status. For a SCSI device, a Mode Sense command can be used to query the device's current power mode.
 
 `LBA`
 
@@ -147,19 +147,9 @@ Indicates the NV Cache Manager function request status from the driver. There ar
 
 
 
-#### NRB_SUCCESS
-
-No error.
-
-
 #### NRB_ILLEGAL_REQUEST
 
 Illegal request detected by the port driver.
-
-
-#### NRB_INVALID_PARAMETER
-
-Invalid parameter passed to the port driver.
 
 
 #### NRB_INPUT_DATA_OVERRUN
@@ -172,6 +162,11 @@ Too much data provided to the port driver.
 Not enough data provided to the port driver.
 
 
+#### NRB_INVALID_PARAMETER
+
+Invalid parameter passed to the port driver.
+
+
 #### NRB_OUTPUT_DATA_OVERRUN
 
 Too much data returned from the port driver.
@@ -180,6 +175,11 @@ Too much data returned from the port driver.
 #### NRB_OUTPUT_DATA_UNDERRUN
 
 Not enough data returned from the port driver.
+
+
+#### NRB_SUCCESS
+
+No error.
 
 `NVCacheStatus`
 
@@ -195,9 +195,6 @@ For more information on function behavior, see section 7.20 of the <a href="http
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also

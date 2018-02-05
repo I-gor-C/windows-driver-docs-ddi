@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 154EAF9B-4B30-4124-B31D-6C7D09B52674
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializePoFxPower routine [Storage Devices], StorPortInitializePoFxPower, storport/StorPortInitializePoFxPower, storage.storportinitializepofxpower
+ms.keywords : storage.storportinitializepofxpower, StorPortInitializePoFxPower routine [Storage Devices], storport/StorPortInitializePoFxPower, StorPortInitializePoFxPower
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -152,14 +152,10 @@ If the <b>STOR_POFX_DEVICE_FLAG_ENABLE_D3_COLD</b> flag is set in the <b>Flags</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

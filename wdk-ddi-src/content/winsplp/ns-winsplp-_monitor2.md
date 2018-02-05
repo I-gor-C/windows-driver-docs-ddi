@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0bfb5119-2034-4e63-9fbe-e2ff42a352d6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PMONITOR2, *PMONITOR2, MONITOR2 structure [Print Devices], winsplp/MONITOR2, _MONITOR2, PMONITOR2 structure pointer [Print Devices], winsplp/PMONITOR2, print.monitor2, MONITOR2, LPMONITOR2 structure pointer [Print Devices], LPMONITOR2, spoolfnc_db4ec1e7-1368-4695-bae0-91fd5dcd8a1a.xml, winsplp/LPMONITOR2, *LPMONITOR2
+ms.keywords : winsplp/LPMONITOR2, print.monitor2, winsplp/MONITOR2, winsplp/PMONITOR2, *LPMONITOR2, MONITOR2 structure [Print Devices], LPMONITOR2, _MONITOR2, PMONITOR2 structure pointer [Print Devices], *PMONITOR2, spoolfnc_db4ec1e7-1368-4695-bae0-91fd5dcd8a1a.xml, PMONITOR2, MONITOR2, LPMONITOR2 structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MONITOR2, *LPMONITOR2, *PMONITOR2
+req.typenames : "*PMONITOR2, *LPMONITOR2, MONITOR2"
 req.product : Windows 10 or later.
 ---
 
@@ -244,9 +244,6 @@ If a function is not defined, its pointer must be <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also

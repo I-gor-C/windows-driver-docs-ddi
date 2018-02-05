@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 685aad54-03f5-4e3c-83a7-a44745acc4fb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_VOLUMEBLT1 structure [Display Devices], d3dumddi/D3DDDIARG_VOLUMEBLT1, D3DDDIARG_VOLUMEBLT1, _D3DDDIARG_VOLUMEBLT1, display.d3dddiarg_volumeblt1
+ms.keywords : d3dumddi/D3DDDIARG_VOLUMEBLT1, D3DDDIARG_VOLUMEBLT1, D3DDDIARG_VOLUMEBLT1 structure [Display Devices], display.d3dddiarg_volumeblt1, _D3DDDIARG_VOLUMEBLT1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,9 +89,7 @@ A value that specifies characteristics of a copy operation as a bitwise OR of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

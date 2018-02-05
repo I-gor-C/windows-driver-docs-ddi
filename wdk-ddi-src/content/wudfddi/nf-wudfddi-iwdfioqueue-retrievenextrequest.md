@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2d9dbfc8-7563-4c47-9b34-27cce2b847b2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::RetrieveNextRequest, umdf.iwdfioqueue_retrievenextrequest, UMDFQueueObjectRef_d76f57ad-f8d5-4a09-861f-26c6d5e6a709.xml, RetrieveNextRequest, wudfddi/IWDFIoQueue::RetrieveNextRequest, wdf.iwdfioqueue_retrievenextrequest, RetrieveNextRequest method, IWDFIoQueue interface, IWDFIoQueue interface, RetrieveNextRequest method, RetrieveNextRequest method
+ms.keywords : IWDFIoQueue::RetrieveNextRequest, wudfddi/IWDFIoQueue::RetrieveNextRequest, IWDFIoQueue interface, RetrieveNextRequest method, RetrieveNextRequest, wdf.iwdfioqueue_retrievenextrequest, RetrieveNextRequest method, IWDFIoQueue interface, umdf.iwdfioqueue_retrievenextrequest, RetrieveNextRequest method, UMDFQueueObjectRef_d76f57ad-f8d5-4a09-861f-26c6d5e6a709.xml, IWDFIoQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -125,22 +125,20 @@ If a driver configures an I/O queue for sequential dispatching of I/O requests, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
 
  
 

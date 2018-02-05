@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B01039CF-F4AC-4374-BBB8-ACB204BC40E2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_WWAN_HOME_PROVIDER2, NDIS_WWAN_HOME_PROVIDER2 structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_HOME_PROVIDER2 structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_HOME_PROVIDER2, netvista.ndis_wwan_home_provider2, ndiswwan/NDIS_WWAN_HOME_PROVIDER2, NDIS_WWAN_HOME_PROVIDER2, PNDIS_WWAN_HOME_PROVIDER2, *PNDIS_WWAN_HOME_PROVIDER2"
+ms.keywords : NDIS_WWAN_HOME_PROVIDER2, NDIS_WWAN_HOME_PROVIDER2 structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_HOME_PROVIDER2, ndiswwan/PNDIS_WWAN_HOME_PROVIDER2, _NDIS_WWAN_HOME_PROVIDER2, *PNDIS_WWAN_HOME_PROVIDER2, PNDIS_WWAN_HOME_PROVIDER2 structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_HOME_PROVIDER2, netvista.ndis_wwan_home_provider2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -113,9 +113,7 @@ The status of the home provider operation.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

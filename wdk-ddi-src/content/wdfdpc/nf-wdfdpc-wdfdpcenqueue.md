@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 08bc78de-ba04-4845-9d22-c06cd5684f7f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDpcObjectRef_76e257ac-ac8b-4724-8a24-6828bfe93e74.xml, wdfdpc/WdfDpcEnqueue, WdfDpcEnqueue method, PFN_WDFDPCENQUEUE, kmdf.wdfdpcenqueue, wdf.wdfdpcenqueue, WdfDpcEnqueue
+ms.keywords : kmdf.wdfdpcenqueue, wdfdpc/WdfDpcEnqueue, wdf.wdfdpcenqueue, DFDpcObjectRef_76e257ac-ac8b-4724-8a24-6828bfe93e74.xml, WdfDpcEnqueue method, PFN_WDFDPCENQUEUE, WdfDpcEnqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,20 +77,18 @@ For more information about using DPC objects, see <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdpc.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | Any level |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a>
-
 <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a>
+
+<a href="https://msdn.microsoft.com/b934a0da-0709-4427-bbf2-8d53f9511cf1">EvtDpcFunc</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 72D0BEC2-F5D5-4045-AD63-F263993817B0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PepDeviceNotAccepted, PEP_DEVICE_ACCEPTANCE_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepDeviceAcceptedReserved, PepDeviceAcceptedMax, kernel.pep_device_acceptance_type, pepfx/PepDeviceAccepted, PepDeviceNotAccepted, PEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceAccepted, pepfx/PepDeviceAcceptedMax, _PEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceAcceptedReserved"
+ms.keywords : pepfx/PEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PepDeviceAcceptedMax, *PPEP_DEVICE_ACCEPTANCE_TYPE, PEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceNotAccepted, pepfx/PepDeviceAccepted, PepDeviceAcceptedReserved, kernel.pep_device_acceptance_type, PepDeviceAcceptedMax, pepfx/PepDeviceAcceptedReserved, pepfx/PepDeviceNotAccepted, PepDeviceAccepted, PEP_DEVICE_ACCEPTANCE_TYPE enumeration [Kernel-Mode Driver Architecture], _PEP_DEVICE_ACCEPTANCE_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -78,9 +78,7 @@ This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

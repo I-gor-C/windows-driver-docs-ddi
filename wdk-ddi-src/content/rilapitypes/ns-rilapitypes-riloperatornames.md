@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2813c28c-e964-44ee-9995-15aa563c43d0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILOPERATORNAMES, *LPRILOPERATORNAMES, RILOPERATORNAMES structure [Network Drivers Starting with Windows Vista], netvista.riloperatornames, RILOPERATORNAMES
+ms.keywords : "*LPRILOPERATORNAMES, rilapitypes/RILOPERATORNAMES, RILOPERATORNAMES, RILOPERATORNAMES structure [Network Drivers Starting with Windows Vista], netvista.riloperatornames"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILOPERATORNAMES, RILOPERATORNAMES"
+req.typenames : RILOPERATORNAMES, *LPRILOPERATORNAMES
 req.product : Windows 10 or later.
 ---
 
@@ -90,9 +90,6 @@ Mobile country code
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

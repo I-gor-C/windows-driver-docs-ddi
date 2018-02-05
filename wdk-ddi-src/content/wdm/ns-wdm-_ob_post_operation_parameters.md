@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cd0551fc-c276-45c3-a560-bded300a4535
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : POB_POST_OPERATION_PARAMETERS union pointer [Kernel-Mode Driver Architecture], wdm/OB_POST_OPERATION_PARAMETERS, kernel.ob_post_operation_parameters, wdm/POB_POST_OPERATION_PARAMETERS, OB_POST_OPERATION_PARAMETERS, OB_POST_OPERATION_PARAMETERS union [Kernel-Mode Driver Architecture], _OB_POST_OPERATION_PARAMETERS, POB_POST_OPERATION_PARAMETERS, kstruct_c_2395a938-5759-44aa-b854-0df3c04d97ec.xml, *POB_POST_OPERATION_PARAMETERS
+ms.keywords : "*POB_POST_OPERATION_PARAMETERS, OB_POST_OPERATION_PARAMETERS union [Kernel-Mode Driver Architecture], POB_POST_OPERATION_PARAMETERS, kernel.ob_post_operation_parameters, kstruct_c_2395a938-5759-44aa-b854-0df3c04d97ec.xml, wdm/POB_POST_OPERATION_PARAMETERS, _OB_POST_OPERATION_PARAMETERS, wdm/OB_POST_OPERATION_PARAMETERS, OB_POST_OPERATION_PARAMETERS, POB_POST_OPERATION_PARAMETERS union pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OB_POST_OPERATION_PARAMETERS, *POB_POST_OPERATION_PARAMETERS
+req.typenames : "*POB_POST_OPERATION_PARAMETERS, OB_POST_OPERATION_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,7 @@ An <a href="..\wdm\ns-wdm-_ob_post_duplicate_handle_information.md">OB_POST_DUPL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2008 and later versions of the Windows operating system. Available in Windows Server 2008 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

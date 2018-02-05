@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5bb0620e-b271-4af6-b528-b904910b8a6c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_SM_SendTEST_IN, PSM_SendTEST_IN, *PSM_SendTEST_IN, SM_SendTEST_IN structure [Storage Devices], hbapiwmi/PSM_SendTEST_IN, storage.sm_sendtest_in, SM_SendTEST_IN, structs-Fibre_6d12c9e2-88bd-4803-893a-bb4e54604fad.xml, hbapiwmi/SM_SendTEST_IN, PSM_SendTEST_IN structure pointer [Storage Devices]"
+ms.keywords : PSM_SendTEST_IN structure pointer [Storage Devices], SM_SendTEST_IN structure [Storage Devices], hbapiwmi/PSM_SendTEST_IN, PSM_SendTEST_IN, structs-Fibre_6d12c9e2-88bd-4803-893a-bb4e54604fad.xml, hbapiwmi/SM_SendTEST_IN, _SM_SendTEST_IN, *PSM_SendTEST_IN, SM_SendTEST_IN, storage.sm_sendtest_in
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,7 +81,4 @@ The WMI tool suite generates a declaration of the SM_SendTEST_IN structure in <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

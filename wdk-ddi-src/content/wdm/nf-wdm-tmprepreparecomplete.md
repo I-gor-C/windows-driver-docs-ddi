@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2152e174-c02e-425c-a969-83656052078b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmPrePrepareComplete, ktm_ref_8ea6e6df-93c0-4b25-9bfe-3d53fbe1793f.xml, wdm/TmPrePrepareComplete, TmPrePrepareComplete routine [Kernel-Mode Driver Architecture], kernel.tmprepreparecomplete
+ms.keywords : TmPrePrepareComplete, wdm/TmPrePrepareComplete, TmPrePrepareComplete routine [Kernel-Mode Driver Architecture], ktm_ref_8ea6e6df-93c0-4b25-9bfe-3d53fbe1793f.xml, kernel.tmprepreparecomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,28 +95,26 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-zwprepreparecomplete.md">ZwPrePrepareComplete</a>
 
 <a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
 
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-
-<a href="..\wdm\nf-wdm-zwprepreparecomplete.md">ZwPrePrepareComplete</a>
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
  
 

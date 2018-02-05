@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 3F7AE8FE-F975-43AF-9FA0-C494E506D4B1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LineDisplayCursorCapabilities enumeration, pos.linedisplaycursorcapabilities, pointofservicecommontypes/LineDisplayCursorCapabilities, pointofservicecommontypes/, LineDisplayCursorCapabilities
+ms.keywords : pointofservicecommontypes/LineDisplayCursorCapabilities, LineDisplayCursorCapabilities, pos.linedisplaycursorcapabilities, pointofservicecommontypes/, LineDisplayCursorCapabilities enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ typedef enum _LineDisplayCursorCapabilities {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

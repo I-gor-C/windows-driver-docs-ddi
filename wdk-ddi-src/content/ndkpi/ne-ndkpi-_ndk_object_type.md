@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8CB39DF6-00DA-4480-A44E-62CAF1DB35CE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndkpi/NdkObjectTypeMax, NDK_OBJECT_TYPE, NdkObjectTypePd, ndkpi/NdkObjectTypePd, NdkObjectTypeSharedEndpoint, _NDK_OBJECT_TYPE, NdkObjectTypeMr, NdkObjectTypeListener, ndkpi/NdkObjectTypeCq, ndkpi/NdkObjectTypeConnector, NDK_OBJECT_TYPE enumeration [Network Drivers Starting with Windows Vista], NdkObjectTypeUndefined, NdkObjectTypeSrq, ndkpi/NdkObjectTypeMr, NdkObjectTypeAdapter, NdkObjectTypeQp, NdkObjectTypeConnector, NdkObjectTypeCq, netvista.ndk_object_type, ndkpi/NDK_OBJECT_TYPE, ndkpi/NdkObjectTypeAdapter, NdkObjectTypeMax, ndkpi/NdkObjectTypeSharedEndpoint, NdkObjectTypeMw, ndkpi/NdkObjectTypeMw, ndkpi/NdkObjectTypeListener, ndkpi/NdkObjectTypeUndefined, ndkpi/NdkObjectTypeQp, ndkpi/NdkObjectTypeSrq
+ms.keywords : NDK_OBJECT_TYPE enumeration [Network Drivers Starting with Windows Vista], NdkObjectTypeConnector, NdkObjectTypeListener, ndkpi/NdkObjectTypeSharedEndpoint, ndkpi/NdkObjectTypeQp, ndkpi/NdkObjectTypePd, NdkObjectTypeSharedEndpoint, ndkpi/NdkObjectTypeListener, netvista.ndk_object_type, ndkpi/NdkObjectTypeMr, NdkObjectTypeMax, ndkpi/NdkObjectTypeAdapter, ndkpi/NDK_OBJECT_TYPE, ndkpi/NdkObjectTypeConnector, ndkpi/NdkObjectTypeMw, NdkObjectTypeSrq, NdkObjectTypeCq, ndkpi/NdkObjectTypeCq, ndkpi/NdkObjectTypeUndefined, NDK_OBJECT_TYPE, NdkObjectTypeUndefined, NdkObjectTypeMr, NdkObjectTypeMw, NdkObjectTypePd, ndkpi/NdkObjectTypeMax, NdkObjectTypeAdapter, NdkObjectTypeQp, ndkpi/NdkObjectTypeSrq, _NDK_OBJECT_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -131,34 +131,32 @@ NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
-
 <a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
 
+<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
+
 <a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
 
  
 

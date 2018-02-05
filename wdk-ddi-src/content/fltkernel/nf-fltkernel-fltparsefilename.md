@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8d91390b-22a1-4e0b-8c9e-78c0872e7b21
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_57a4d7c0-f653-4c91-a16b-1de79ef56342.xml, FltParseFileName, ifsk.fltparsefilename, FltParseFileName function [Installable File System Drivers], fltkernel/FltParseFileName
+ms.keywords : fltkernel/FltParseFileName, FltParseFileName function [Installable File System Drivers], ifsk.fltparsefilename, FltApiRef_p_to_z_57a4d7c0-f653-4c91-a16b-1de79ef56342.xml, FltParseFileName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,22 +123,20 @@ To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 2 (SP2) and later versions of the Windows operating system. Available in Windows XP with Service Pack 2 (SP2) and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

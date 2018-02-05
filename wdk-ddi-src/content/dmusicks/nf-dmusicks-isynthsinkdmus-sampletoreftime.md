@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b2d54ee9-78aa-4799-a06d-6c79000d3e32
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.isynthsinkdmus_sampletoreftime, dmusicks/ISynthSinkDMus::SampleToRefTime, audmp-routines_acfbec43-3c33-4d78-9d25-57e44afe0033.xml, SampleToRefTime method [Audio Devices], ISynthSinkDMus::SampleToRefTime, ISynthSinkDMus interface [Audio Devices], SampleToRefTime method, SampleToRefTime method [Audio Devices], ISynthSinkDMus interface, ISynthSinkDMus, SampleToRefTime
+ms.keywords : dmusicks/ISynthSinkDMus::SampleToRefTime, audmp-routines_acfbec43-3c33-4d78-9d25-57e44afe0033.xml, audio.isynthsinkdmus_sampletoreftime, SampleToRefTime method [Audio Devices], SampleToRefTime method [Audio Devices], ISynthSinkDMus interface, ISynthSinkDMus::SampleToRefTime, ISynthSinkDMus interface [Audio Devices], SampleToRefTime method, SampleToRefTime, ISynthSinkDMus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,14 +75,9 @@ The calculation of reference time from sample time to reference time depends on 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dmusicks.h (include Dmusicks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dmusicks.h |
 
 ## See Also
 

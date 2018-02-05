@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a09cfc9a-26e8-4984-b5c6-7ead5aa4644e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_setdisplayprivatedriverformat, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DmStructs_adfa4bbe-5e14-4a2a-acee-6d80b408f6ac.xml, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], _DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, d3dkmddi/DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, *IN_CONST_PDXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT
+ms.keywords : "*IN_CONST_PDXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DmStructs_adfa4bbe-5e14-4a2a-acee-6d80b408f6ac.xml, _DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, d3dkmddi/DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], display.dxgkarg_setdisplayprivatedriverformat"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,20 +71,18 @@ If <b>PrimaryAllocation</b> is set to zero, no primary surface is currently asso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setdisplayprivatedriverformat.md">DxgkDdiSetDisplayPrivateDriverFormat</a>
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
  
 

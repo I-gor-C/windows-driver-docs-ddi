@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 94e942a4-de66-47a3-89bf-fbec2a408775
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_SETCLIPPLANE structure [Display Devices], d3dumddi/D3DDDIARG_SETCLIPPLANE, UMDisplayDriver_param_Structs_3371265a-3cb5-4aee-b019-14ef454e9d6d.xml, _D3DDDIARG_SETCLIPPLANE, display.d3dddiarg_setclipplane, D3DDDIARG_SETCLIPPLANE
+ms.keywords : D3DDDIARG_SETCLIPPLANE structure [Display Devices], _D3DDDIARG_SETCLIPPLANE, UMDisplayDriver_param_Structs_3371265a-3cb5-4aee-b019-14ef454e9d6d.xml, display.d3dddiarg_setclipplane, d3dumddi/D3DDDIARG_SETCLIPPLANE, D3DDDIARG_SETCLIPPLANE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ The general plane equation in standard form is A<i>x</i> + B<i>y</i> + C<i>z</i>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 24852B9A-5156-41BB-87F9-81B147A85AC2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlGetSupportedFeatures routine [Installable File System Drivers], SUPPORTED_FS_FEATURES_OFFLOAD_READ, ntifs/FsRtlGetSupportedFeatures, SUPPORTED_FS_FEATURES_OFFLOAD_WRITE, ifsk.fsrtlgetsupportedfeatures, FsRtlGetSupportedFeatures
+ms.keywords : ntifs/FsRtlGetSupportedFeatures, SUPPORTED_FS_FEATURES_OFFLOAD_WRITE, SUPPORTED_FS_FEATURES_OFFLOAD_READ, FsRtlGetSupportedFeatures routine [Installable File System Drivers], FsRtlGetSupportedFeatures, ifsk.fsrtlgetsupportedfeatures
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,11 +131,9 @@ The device object specified by <i>DeviceObject</i> is not in a file system devic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |

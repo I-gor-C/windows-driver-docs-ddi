@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7c4f452e-df7b-401b-a62e-20e0b2164172
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : safestrings_65cec2b6-a948-423e-b7e3-786ae2a9ab1a.xml, ntstrsafe/RtlUnicodeStringValidate, kernel.rtlunicodestringvalidate, RtlUnicodeStringValidate, RtlUnicodeStringValidate function [Kernel-Mode Driver Architecture]
+ms.keywords : ntstrsafe/RtlUnicodeStringValidate, RtlUnicodeStringValidate, safestrings_65cec2b6-a948-423e-b7e3-786ae2a9ab1a.xml, RtlUnicodeStringValidate function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvalidate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -107,20 +107,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvalidateex.md">RtlUnicodeStringValidateEx</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

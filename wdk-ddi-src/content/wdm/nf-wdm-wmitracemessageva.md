@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 57f8006c-defe-4975-9d21-0eaecae5a873
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/WmiTraceMessageVa, WmiTraceMessageVa, kernel.wmitracemessageva, WmiTraceMessageVa routine [Kernel-Mode Driver Architecture], k902_c9c7dd80-d7a8-4b53-bcf1-f64c822e9e6d.xml
+ms.keywords : WmiTraceMessageVa routine [Kernel-Mode Driver Architecture], WmiTraceMessageVa, kernel.wmitracemessageva, wdm/WmiTraceMessageVa, k902_c9c7dd80-d7a8-4b53-bcf1-f64c822e9e6d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -209,26 +209,24 @@ All message buffers allocated to software tracing session are full.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-wmitracemessage.md">WmiTraceMessage</a>
-
 <a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
-
-<a href="..\wdm\ne-wdm-_trace_information_class.md">TRACE_INFORMATION_CLASS</a>
 
 <a href="..\wdm\nf-wdm-wmiquerytraceinformation.md">WmiQueryTraceInformation</a>
 
 <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a>
+
+<a href="..\wdm\nf-wdm-wmitracemessage.md">WmiTraceMessage</a>
+
+<a href="..\wdm\ne-wdm-_trace_information_class.md">TRACE_INFORMATION_CLASS</a>
 
  
 

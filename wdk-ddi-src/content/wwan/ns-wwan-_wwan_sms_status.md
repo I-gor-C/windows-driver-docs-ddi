@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a7ebe58d-8e87-437f-b556-408610fa654e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_5468242f-eb44-4ece-92a2-02524eb0d196.xml, WWAN_SMS_STATUS, wwan/WWAN_SMS_STATUS, PWWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista], _WWAN_SMS_STATUS, netvista.wwan_sms_status, wwan/PWWAN_SMS_STATUS, PWWAN_SMS_STATUS, *PWWAN_SMS_STATUS, WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : wwan/WWAN_SMS_STATUS, _WWAN_SMS_STATUS, *PWWAN_SMS_STATUS, wwan/PWWAN_SMS_STATUS, WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista], WwanRef_5468242f-eb44-4ece-92a2-02524eb0d196.xml, WWAN_SMS_STATUS, PWWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_status, PWWAN_SMS_STATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -121,9 +121,7 @@ Miniport drivers must send an unsolicited event to the MB Service whenever a fla
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

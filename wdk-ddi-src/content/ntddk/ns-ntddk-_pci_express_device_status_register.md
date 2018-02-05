@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : a4c92364-59d4-442c-879b-fba770d8d612
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI_EXPRESS_DEVICE_STATUS_REGISTER union [Buses], PCI.pci_express_device_status_register, PPCI_EXPRESS_DEVICE_STATUS_REGISTER, PCI_EXPRESS_DEVICE_STATUS_REGISTER, *PPCI_EXPRESS_DEVICE_STATUS_REGISTER, PPCI_EXPRESS_DEVICE_STATUS_REGISTER union pointer [Buses], pci_struct_90e0cf73-2c43-444d-bdaa-77fd00d483a7.xml, ntddk/PPCI_EXPRESS_DEVICE_STATUS_REGISTER, _PCI_EXPRESS_DEVICE_STATUS_REGISTER, ntddk/PCI_EXPRESS_DEVICE_STATUS_REGISTER
+ms.keywords : "*PPCI_EXPRESS_DEVICE_STATUS_REGISTER, ntddk/PPCI_EXPRESS_DEVICE_STATUS_REGISTER, PCI_EXPRESS_DEVICE_STATUS_REGISTER union [Buses], PPCI_EXPRESS_DEVICE_STATUS_REGISTER, pci_struct_90e0cf73-2c43-444d-bdaa-77fd00d483a7.xml, PCI_EXPRESS_DEVICE_STATUS_REGISTER, PPCI_EXPRESS_DEVICE_STATUS_REGISTER union pointer [Buses], _PCI_EXPRESS_DEVICE_STATUS_REGISTER, PCI.pci_express_device_status_register, ntddk/PCI_EXPRESS_DEVICE_STATUS_REGISTER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,6 @@ A PCI_EXPRESS_DEVICE_STATUS_REGISTER structure is contained in the <a href="http
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

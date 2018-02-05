@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7e15cbe1-17f7-4df7-9273-9a365d309d03
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.auxklibinitialize, aux_klib_d83fd3ae-3a26-4798-9ef8-1530adb78543.xml, aux_klib/AuxKlibInitialize, AuxKlibInitialize routine [Kernel-Mode Driver Architecture], AuxKlibInitialize
+ms.keywords : aux_klib/AuxKlibInitialize, AuxKlibInitialize, aux_klib_d83fd3ae-3a26-4798-9ef8-1530adb78543.xml, AuxKlibInitialize routine [Kernel-Mode Driver Architecture], kernel.auxklibinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,11 +63,7 @@ Drivers that use the Auxiliary Kernel-Mode Library must call <b>AuxKlibInitializ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 2000. Supported starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | aux_klib.h (include Aux_klib.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Aux_Klib.lib |

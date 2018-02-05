@@ -86,6 +86,4 @@ This IOCTL uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff5
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
-| **IRQL** |  |

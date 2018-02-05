@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 475e352a-b6ea-4e37-ad46-e94284caa105
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeRemoveQueue routine [Installable File System Drivers], ifsk.keremovequeue, keref_99014b0b-5ca1-4cda-8422-fc3819f42d8b.xml, ntifs/KeRemoveQueue, KeRemoveQueue
+ms.keywords : KeRemoveQueue, ifsk.keremovequeue, KeRemoveQueue routine [Installable File System Drivers], ntifs/KeRemoveQueue, keref_99014b0b-5ca1-4cda-8422-fc3819f42d8b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,14 +93,11 @@ For more information about using driver-managed internal queues, see <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

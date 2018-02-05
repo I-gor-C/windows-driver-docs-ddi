@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7f4ac419-a24e-4421-9891-9fea9479e781
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : AddEntry method [Audio Devices], AddEntry method [Audio Devices], IResourceList interface, audmp-routines_6a6091c9-4cb3-40ca-8bb9-39b239c322b7.xml, portcls/IResourceList::AddEntry, IResourceList, audio.iresourcelist_addentry, AddEntry, IResourceList interface [Audio Devices], AddEntry method, IResourceList::AddEntry
+ms.keywords : AddEntry method [Audio Devices], audio.iresourcelist_addentry, AddEntry method [Audio Devices], IResourceList interface, IResourceList, audmp-routines_6a6091c9-4cb3-40ca-8bb9-39b239c322b7.xml, AddEntry, IResourceList interface [Audio Devices], AddEntry method, portcls/IResourceList::AddEntry, IResourceList::AddEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -87,20 +87,16 @@ Indicates there are no free entries in the list.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-
 <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
  
 

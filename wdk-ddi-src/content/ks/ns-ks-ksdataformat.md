@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e39a59f4-6ec2-402d-8f8e-12324d6cbfa8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSDATAFORMAT, ks/KSDATAFORMAT, PKSDATARANGE, *PKSDATARANGE, *PKSDATAFORMAT, stream.ksdataformat, KSDATAFORMAT structure [Streaming Media Devices], KSDATARANGE, ks/PKSDATAFORMAT, PKSDATAFORMAT structure pointer [Streaming Media Devices], KSDATARANGE structure [Streaming Media Devices], ks/PKSDATARANGE, ks-struct_787a73ee-98dd-4e97-b7ea-2ed38ff564c7.xml, ks/KSDATARANGE, PKSDATARANGE structure pointer [Streaming Media Devices], KSDATAFORMAT
+ms.keywords : "*PKSDATAFORMAT, stream.ksdataformat, ks/PKSDATARANGE, KSDATARANGE, ks-struct_787a73ee-98dd-4e97-b7ea-2ed38ff564c7.xml, PKSDATAFORMAT, *PKSDATARANGE, ks/PKSDATAFORMAT, PKSDATARANGE, KSDATAFORMAT structure [Streaming Media Devices], ks/KSDATAFORMAT, PKSDATARANGE structure pointer [Streaming Media Devices], ks/KSDATARANGE, PKSDATAFORMAT structure pointer [Streaming Media Devices], KSDATARANGE structure [Streaming Media Devices], KSDATAFORMAT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSDATARANGE, KSDATAFORMAT, *PKSDATAFORMAT, KSDATARANGE"
+req.typenames : KSDATAFORMAT, *PKSDATARANGE, KSDATARANGE, *PKSDATAFORMAT
 ---
 
 # KSDATAFORMAT structure
@@ -87,9 +87,9 @@ The following specifiers (defined in <i>ks.h</i>) are of general use:
 
 
 
-#### KSDATAFORMAT_SPECIFIER_NONE
+#### KSDATAFORMAT_SPECIFIER_FILEHANDLE
 
-Stands for no specifier. Used for formats that do not support specifiers.
+Indicates that a file handle immediately follows KSDATAFORMAT in memory.  
 
 
 #### KSDATAFORMAT_SPECIFIER_FILENAME
@@ -97,9 +97,9 @@ Stands for no specifier. Used for formats that do not support specifiers.
 Indicates that a null-terminated Unicode string immediately follows the KSDATAFORMAT structure in memory.  
 
 
-#### KSDATAFORMAT_SPECIFIER_FILEHANDLE
+#### KSDATAFORMAT_SPECIFIER_NONE
 
-Indicates that a file handle immediately follows KSDATAFORMAT in memory.
+Stands for no specifier. Used for formats that do not support specifiers.
 
 `SubFormat`
 
@@ -113,9 +113,6 @@ For a list of <b>MajorFormat</b>, <b>SubFormat</b>, and <b>Specifier</b> combina
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

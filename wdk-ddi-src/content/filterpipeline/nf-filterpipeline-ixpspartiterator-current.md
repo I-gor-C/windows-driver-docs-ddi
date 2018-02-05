@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ccc8125a-c571-4267-860a-11fc313e395c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Current method [Print Devices], IXpsPartIterator interface, IXpsPartIterator interface [Print Devices], Current method, print.ixpspartiterator_current, filterpipeline_72cbd5d6-003c-410b-a943-bfd6552df8ee.xml, Current, Current method [Print Devices], filterpipeline/IXpsPartIterator::Current, IXpsPartIterator::Current, IXpsPartIterator
+ms.keywords : Current method [Print Devices], Current method [Print Devices], IXpsPartIterator interface, IXpsPartIterator, filterpipeline/IXpsPartIterator::Current, IXpsPartIterator interface [Print Devices], Current method, print.ixpspartiterator_current, filterpipeline_72cbd5d6-003c-410b-a943-bfd6552df8ee.xml, IXpsPartIterator::Current, Current
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -73,11 +73,6 @@ Filters should call the <a href="https://msdn.microsoft.com/library/windows/hard
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

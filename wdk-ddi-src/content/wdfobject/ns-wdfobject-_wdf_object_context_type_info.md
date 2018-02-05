@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2b56183e-03aa-493a-84ba-03f9bc5daee2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_OBJECT_CONTEXT_TYPE_INFO structure, wdfobject/WDF_OBJECT_CONTEXT_TYPE_INFO, wdf.wdf_object_context_type_info, *PWDF_OBJECT_CONTEXT_TYPE_INFO, _WDF_OBJECT_CONTEXT_TYPE_INFO, DFGenObjectRef_8c3ba75b-eb62-455f-a905-61b715478b5b.xml, WDF_OBJECT_CONTEXT_TYPE_INFO, wdfobject/PWDF_OBJECT_CONTEXT_TYPE_INFO, PWDF_OBJECT_CONTEXT_TYPE_INFO, kmdf.wdf_object_context_type_info, PWDF_OBJECT_CONTEXT_TYPE_INFO structure pointer
+ms.keywords : kmdf.wdf_object_context_type_info, DFGenObjectRef_8c3ba75b-eb62-455f-a905-61b715478b5b.xml, wdfobject/WDF_OBJECT_CONTEXT_TYPE_INFO, wdfobject/PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO, _WDF_OBJECT_CONTEXT_TYPE_INFO, PWDF_OBJECT_CONTEXT_TYPE_INFO structure pointer, wdf.wdf_object_context_type_info, PWDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -90,20 +90,19 @@ For more information about using these macros, see <a href="https://docs.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551250">WDF_DECLARE_CONTEXT_TYPE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551252">WDF_DECLARE_CONTEXT_TYPE_WITH_NAME</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a>
-
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551250">WDF_DECLARE_CONTEXT_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552405">WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 400e2172-803c-4b6c-a41e-3c322077ffa4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SendUiccToolkitCmdResponse method [Network Drivers Starting with Windows Vista], RIL_SendUiccToolkitCmdResponse, rilapi/RIL_SendUiccToolkitCmdResponse, netvista.ril_senduicctoolkitcmdresponse
+ms.keywords : netvista.ril_senduicctoolkitcmdresponse, rilapi/RIL_SendUiccToolkitCmdResponse, RIL_SendUiccToolkitCmdResponse, RIL_SendUiccToolkitCmdResponse method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

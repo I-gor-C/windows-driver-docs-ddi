@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ba65d1b1-a720-4f21-8c6d-af70185c0c24
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortLockBuffer, video/VideoPortLockBuffer, VideoPort_Functions_8c96bd4d-b9fc-4ff7-9d81-1087d6527700.xml, display.videoportlockbuffer, VideoPortLockBuffer function [Display Devices]
+ms.keywords : VideoPortLockBuffer, VideoPortLockBuffer function [Display Devices], VideoPort_Functions_8c96bd4d-b9fc-4ff7-9d81-1087d6527700.xml, display.videoportlockbuffer, video/VideoPortLockBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,12 @@ To unlock the buffer, the video miniport driver should call <a href="..\video\nf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : da348cf9-5694-4e66-990e-bd07f259d97c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_5a8a1a59-b9a8-4b5b-b6d8-7139ddb9b474.xml, VideoPortSetBytesUsed, VideoPortSetBytesUsed function [Display Devices], display.videoportsetbytesused, video/VideoPortSetBytesUsed
+ms.keywords : video/VideoPortSetBytesUsed, VideoPort_Functions_5a8a1a59-b9a8-4b5b-b6d8-7139ddb9b474.xml, VideoPortSetBytesUsed, display.videoportsetbytesused, VideoPortSetBytesUsed function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,20 +76,17 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetbytesused.md">VideoPortGetBytesUsed</a>
-
 <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
+
+<a href="..\video\nf-video-videoportgetbytesused.md">VideoPortGetBytesUsed</a>
 
  
 

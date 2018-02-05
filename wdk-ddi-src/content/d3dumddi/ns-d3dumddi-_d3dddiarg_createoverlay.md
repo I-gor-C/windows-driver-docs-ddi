@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 74252431-5250-408a-91cc-cc529396f720
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATEOVERLAY, _D3DDDIARG_CREATEOVERLAY, d3dumddi/D3DDDIARG_CREATEOVERLAY, display.d3dddiarg_createoverlay, D3DDDIARG_CREATEOVERLAY structure [Display Devices], UMDisplayDriver_param_Structs_3261a00d-4b26-4c64-a5e0-abd453aee84c.xml
+ms.keywords : "_D3DDDIARG_CREATEOVERLAY, D3DDDIARG_CREATEOVERLAY structure [Display Devices], D3DDDIARG_CREATEOVERLAY, d3dumddi/D3DDDIARG_CREATEOVERLAY, display.d3dddiarg_createoverlay, UMDisplayDriver_param_Structs_3261a00d-4b26-4c64-a5e0-abd453aee84c.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,14 @@ typedef struct _D3DDDIARG_CREATEOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlay.md">CreateOverlay</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfo.md">D3DDDI_OVERLAYINFO</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlay.md">CreateOverlay</a>
 
  
 

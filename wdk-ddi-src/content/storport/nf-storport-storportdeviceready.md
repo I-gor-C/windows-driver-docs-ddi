@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6dd3abdb-9037-4cf5-abe7-7776dcf67bd5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportdeviceready, storprt_18a6f185-17dd-446c-9bbe-3937e1003a6b.xml, storport/StorPortDeviceReady, StorPortDeviceReady, StorPortDeviceReady routine [Storage Devices]
+ms.keywords : storage.storportdeviceready, StorPortDeviceReady, storport/StorPortDeviceReady, StorPortDeviceReady routine [Storage Devices], storprt_18a6f185-17dd-446c-9bbe-3937e1003a6b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,9 @@ It is not generally necessary to notify the target device that new requests are 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 72fddd86-6e9f-4e75-af6a-e7f3e1064a8b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ata_address_translation, irb/Lba48BitMode, ATA_ADDRESS_TRANSLATION, ChsMode, Lba48BitMode, structs-ATA_f2a24a19-e6fa-4457-afac-b307d9dcbc76.xml, UnknownMode, irb/UnknownMode, irb/ChsMode, LbaMode, irb/LbaMode, irb/ATA_ADDRESS_TRANSLATION, ATA_ADDRESS_TRANSLATION enumeration [Storage Devices]
+ms.keywords : irb/ChsMode, LbaMode, irb/LbaMode, ATA_ADDRESS_TRANSLATION enumeration [Storage Devices], ATA_ADDRESS_TRANSLATION, UnknownMode, ChsMode, irb/ATA_ADDRESS_TRANSLATION, irb/Lba48BitMode, Lba48BitMode, structs-ATA_f2a24a19-e6fa-4457-afac-b307d9dcbc76.xml, storage.ata_address_translation, irb/UnknownMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f6967f07-564b-4730-9950-4703b541165b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateProtectedSession, display.d3dkmtcreateprotectedsession, d3dkmthk/D3DKMTCreateProtectedSession, D3DKMTCreateProtectedSession method [Display Devices]
+ms.keywords : d3dkmthk/D3DKMTCreateProtectedSession, display.d3dkmtcreateprotectedsession, D3DKMTCreateProtectedSession method [Display Devices], D3DKMTCreateProtectedSession
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,7 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

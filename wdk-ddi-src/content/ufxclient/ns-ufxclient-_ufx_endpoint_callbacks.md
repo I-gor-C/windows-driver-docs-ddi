@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : CED05E15-E141-4A6D-A657-CF0DF9FD1200
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PUFX_ENDPOINT_CALLBACKS, ufxclient/PUFX_ENDPOINT_CALLBACKS, buses.ufx_endpoint_callbacks, _UFX_ENDPOINT_CALLBACKS, ufxclient/UFX_ENDPOINT_CALLBACKS, PUFX_ENDPOINT_CALLBACKS structure pointer [Buses], UFX_ENDPOINT_CALLBACKS, UFX_ENDPOINT_CALLBACKS structure [Buses], PUFX_ENDPOINT_CALLBACKS"
+ms.keywords : UFX_ENDPOINT_CALLBACKS structure [Buses], UFX_ENDPOINT_CALLBACKS, PUFX_ENDPOINT_CALLBACKS, ufxclient/UFX_ENDPOINT_CALLBACKS, _UFX_ENDPOINT_CALLBACKS, *PUFX_ENDPOINT_CALLBACKS, ufxclient/PUFX_ENDPOINT_CALLBACKS, PUFX_ENDPOINT_CALLBACKS structure pointer [Buses], buses.ufx_endpoint_callbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_ENDPOINT_CALLBACKS, *PUFX_ENDPOINT_CALLBACKS
+req.typenames : "*PUFX_ENDPOINT_CALLBACKS, UFX_ENDPOINT_CALLBACKS"
 req.product : Windows 10 or later.
 ---
 
@@ -60,7 +60,4 @@ The size of the <b>UFX_ENDPOINT_CALLBACKS</b>         structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ufxclient.h |

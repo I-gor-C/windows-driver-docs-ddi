@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b872eff3-2d0a-4f01-874d-e00e09195801
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_netbuf_functions_ref_47bf06b7-b76e-42a0-bf16-b3942fde8eb9.xml, ndis/NdisAllocateNetBufferAndNetBufferList, netvista.ndisallocatenetbufferandnetbufferlist, NdisAllocateNetBufferAndNetBufferList function [Network Drivers Starting with Windows Vista], NdisAllocateNetBufferAndNetBufferList
+ms.keywords : NdisAllocateNetBufferAndNetBufferList function [Network Drivers Starting with Windows Vista], NdisAllocateNetBufferAndNetBufferList, netvista.ndisallocatenetbufferandnetbufferlist, ndis/NdisAllocateNetBufferAndNetBufferList, ndis_netbuf_functions_ref_47bf06b7-b76e-42a0-bf16-b3942fde8eb9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,8 +64,8 @@ PNET_BUFFER_LIST NdisAllocateNetBufferAndNetBufferList(
 `PoolHandle`
 
 A NET_BUFFER_LIST structure pool handle that was previously returned from the 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-     NdisAllocateNetBufferListPool</b></mshelp:link> function. The 
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+     NdisAllocateNetBufferListPool</a> function. The 
      <b>fAllocateNetBuffer</b> member of the 
      <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that the caller passed to 
      <b>NdisAllocateNetBufferListPool</b> must have been set to <b>TRUE</b> and the 
@@ -122,8 +122,8 @@ The structures that the
     with preallocated 
     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures. To create such a pool, you
     must call the 
-    <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-    NdisAllocateNetBufferListPool</b></mshelp:link> function with the 
+    <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+    NdisAllocateNetBufferListPool</a> function with the 
     <b>fAllocateNetBuffer</b> member of the 
     <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure set to <b>TRUE</b>, and the 
     <b>DataSize</b> member set to zero.
@@ -169,27 +169,25 @@ NET_BUFFER_CURRENT_MDL_OFFSET(_NB) = Z';</pre>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-   NdisAllocateNetBufferListPool</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+   NdisAllocateNetBufferListPool</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 

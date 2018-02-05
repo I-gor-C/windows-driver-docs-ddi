@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4f9a5f8c-5c7f-4ac5-a6ce-118de2b4a304
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInitializeSListHead macro [Network Drivers Starting with Windows Vista], netvista.ndisinitializeslisthead, ndis/NdisInitializeSListHead, ndis_interlocked_ref_f27e10a0-22f5-48b2-a7d9-c5b4ffc85617.xml, NdisInitializeSListHead
+ms.keywords : NdisInitializeSListHead macro [Network Drivers Starting with Windows Vista], ndis/NdisInitializeSListHead, NdisInitializeSListHead, ndis_interlocked_ref_f27e10a0-22f5-48b2-a7d9-c5b4ffc85617.xml, netvista.ndisinitializeslisthead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -75,10 +75,10 @@ The sequence number in an S-List is incremented each time an entry is inserted t
 All entries in an S-List must be nonpaged.
 
 Any driver that uses an S-List must provide a spin lock to the 
-    <mshelp:link keywords="netvista.ndisinterlockedpushentryslist" tabindex="0"><b>
-    NdisInterlockedPushEntrySList</b></mshelp:link> and 
-    <mshelp:link keywords="netvista.ndisinterlockedpopentryslist" tabindex="0"><b>
-    NdisInterlockedPopEntrySList</b></mshelp:link> functions. Before its initial call to either of these functions, the
+    <a href="..\ndis\nf-ndis-ndisinterlockedpushentryslist.md">
+    NdisInterlockedPushEntrySList</a> and 
+    <a href="..\ndis\nf-ndis-ndisinterlockedpopentryslist.md">
+    NdisInterlockedPopEntrySList</a> functions. Before its initial call to either of these functions, the
     driver must initialize the spin lock with the 
     <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> function. To
     prevent deadlocks, the driver 
@@ -98,28 +98,25 @@ If
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeSListHead (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeSListHead (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeSListHead (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeSListHead (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndisinterlockedpushentryslist.md">
+   NdisInterlockedPushEntrySList</a>
+
 <a href="..\ndis\nf-ndis-ndisqueueioworkitem.md">NdisQueueIoWorkItem</a>
 
-<a href="..\ndis\nf-ndis-ndisinterlockedpopentryslist.md">NdisInterlockedPopEntrySList</a>
-
-<mshelp:link keywords="netvista.ndisinitializenpagedlookasidelist" tabindex="0"><b>
-   NdisInitializeNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
+   NdisInitializeNPagedLookasideList</a>
 
 <a href="..\ndis\nf-ndis-ndisquerydepthslist.md">NdisQueryDepthSList</a>
 
-<mshelp:link keywords="netvista.ndisinterlockedpushentryslist" tabindex="0"><b>
-   NdisInterlockedPushEntrySList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinterlockedpopentryslist.md">NdisInterlockedPopEntrySList</a>
 
  
 

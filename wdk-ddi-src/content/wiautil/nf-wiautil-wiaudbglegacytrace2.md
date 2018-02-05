@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 911a7089-d4ac-4da0-8be6-a3a36567635c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauDbgLegacyTrace2 function [Imaging Devices], wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml, image.wiaudbglegacytrace2, wiautil/wiauDbgLegacyTrace2
+ms.keywords : wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml, wiautil/wiauDbgLegacyTrace2, wiauDbgLegacyTrace2 function [Imaging Devices], image.wiaudbglegacytrace2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,7 +62,7 @@ Specifies the handle to the DLL instance.
 
 TBD
 
-``
+`Arg1`
 
 
 
@@ -78,14 +78,10 @@ The <b>wiauDbgLegacyTrace2</b> function is identical to the <a href="..\wiautil\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

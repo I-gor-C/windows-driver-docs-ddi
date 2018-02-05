@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6D214346-8CE6-4E9C-B054-1C72B928ED2B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeTokenIsNoChildProcessRestrictionEnforced function [Installable File System Drivers], ifsk.setokenisnochildprocessrestrictionenforced, SeTokenIsNoChildProcessRestrictionEnforced, ntifs/SeTokenIsNoChildProcessRestrictionEnforced
+ms.keywords : SeTokenIsNoChildProcessRestrictionEnforced, ifsk.setokenisnochildprocessrestrictionenforced, ntifs/SeTokenIsNoChildProcessRestrictionEnforced, SeTokenIsNoChildProcessRestrictionEnforced function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,11 +72,8 @@ This routine returns <b>TRUE</b> if <i>Token</i> carries the no child process re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : CA517EF6-41EE-4DB0-B628-35902BA34FFB
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.gnss_geofence_create_param, *PGNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM, gnssdriver/PGNSS_GEOFENCE_CREATE_PARAM, gnssdriver/GNSS_GEOFENCE_CREATE_PARAM, GNSS_GEOFENCE_CREATE_PARAM structure [Sensor Devices], PGNSS_GEOFENCE_CREATE_PARAM structure pointer [Sensor Devices], GNSS_GEOFENCE_CREATE_PARAM
+ms.keywords : GNSS_GEOFENCE_CREATE_PARAM structure [Sensor Devices], sensors.gnss_geofence_create_param, GNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM structure pointer [Sensor Devices], gnssdriver/PGNSS_GEOFENCE_CREATE_PARAM, gnssdriver/GNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,7 +96,4 @@ A geographical shape is used to define a geofence.  Windows 10 currently suppor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

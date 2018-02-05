@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : e5c550f0-a466-4d0b-ac6f-bcdce600245f
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidD_GetPreparsedData, hid.hidd_getpreparseddata, HidD_GetPreparsedData routine [Human Input Devices], hidsdi/HidD_GetPreparsedData, hidfunc_e728f2ff-69e2-46d0-8266-7ff011fb8bd5.xml
+ms.keywords : HidD_GetPreparsedData, HidD_GetPreparsedData routine [Human Input Devices], hidfunc_e728f2ff-69e2-46d0-8266-7ff011fb8bd5.xml, hidsdi/HidD_GetPreparsedData, hid.hidd_getpreparseddata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,22 +77,19 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidsdi.h (include Hidsdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hid.lib |
+| **DLL** | Hid.dll |
 
 ## See Also
+
+<a href="..\hidsdi\nf-hidsdi-hidd_freepreparseddata.md">HidD_FreePreparsedData</a>
 
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-<a href="..\hidsdi\nf-hidsdi-hidd_freepreparseddata.md">HidD_FreePreparsedData</a>
 
  
 

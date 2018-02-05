@@ -120,6 +120,4 @@ The <b>Status</b> member is set to one of the values in the status block table.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | winsmcrd.h (include Winsmcrd.h) |
-| **IRQL** |  |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2b8ee9c8-3945-4350-84dd-4709f162c381
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilreadmsgparams_2, *LPRILREADMSGPARAMS, RILREADMSGPARAMS, RILREADMSGPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILREADMSGPARAMS
+ms.keywords : netvista.rilreadmsgparams_2, RILREADMSGPARAMS, *LPRILREADMSGPARAMS, rilapitypes/RILREADMSGPARAMS, RILREADMSGPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILREADMSGPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

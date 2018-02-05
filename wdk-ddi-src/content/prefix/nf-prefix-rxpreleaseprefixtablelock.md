@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 57aef4ed-2ece-4af3-b1ca-e4fe5a306f82
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : prefix/RxpReleasePrefixTableLock, rxref_34f5b33a-efeb-42a0-8e57-6c32c262319a.xml, RxpReleasePrefixTableLock, RxpReleasePrefixTableLock function [Installable File System Drivers], ifsk.rxpreleaseprefixtablelock
+ms.keywords : RxpReleasePrefixTableLock, rxref_34f5b33a-efeb-42a0-8e57-6c32c262319a.xml, RxpReleasePrefixTableLock function [Installable File System Drivers], prefix/RxpReleasePrefixTableLock, ifsk.rxpreleaseprefixtablelock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSHIMOPTS, SHIMOPTS"
+req.typenames : SHIMOPTS, *PSHIMOPTS
 req.product : Windows 10 or later.
 ---
 
@@ -83,30 +83,27 @@ Normal kernel APC delivery should be disabled before calling the <b>RxpAcquirePr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | RxpReleasePrefixTableLock routine is only available on Windows XP and Windows 2000. RxpReleasePrefixTableLock routine is only available on Windows XP and Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | prefix.h (include Prefix.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-keentercriticalregion.md">KeEnterCriticalRegion</a>
-
-<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
-
-<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockshared.md">RxpAcquirePrefixTableLockShared</a>
+<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
 
 <a href="..\prefix\nf-prefix-rxprefixtablelookupname.md">RxPrefixTableLookupName</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
-
 <a href="..\prefix\nf-prefix-rxpacquireprefixtablelockexclusive.md">RxpAcquirePrefixTableLockExclusive</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545908">FsRtlExitFileSystem</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545900">FsRtlEnterFileSystem</a>
+
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
+
+<a href="..\prefix\nf-prefix-rxpacquireprefixtablelockshared.md">RxpAcquirePrefixTableLockShared</a>
 
  
 

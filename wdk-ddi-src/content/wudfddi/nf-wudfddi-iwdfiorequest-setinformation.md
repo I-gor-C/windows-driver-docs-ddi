@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : dc2c907c-1e3b-418c-85f8-9902dc83f7ab
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest_setinformation, SetInformation method, IWDFIoRequest interface, UMDFRequestObjectRef_6b29fa48-7024-44de-ab4f-68907515483a.xml, IWDFIoRequest::SetInformation, umdf.iwdfiorequest_setinformation, SetInformation method, IWDFIoRequest, wudfddi/IWDFIoRequest::SetInformation, IWDFIoRequest interface, SetInformation method, SetInformation
+ms.keywords : wdf.iwdfiorequest_setinformation, UMDFRequestObjectRef_6b29fa48-7024-44de-ab4f-68907515483a.xml, SetInformation, IWDFIoRequest::SetInformation, IWDFIoRequest, umdf.iwdfiorequest_setinformation, SetInformation method, SetInformation method, IWDFIoRequest interface, wudfddi/IWDFIoRequest::SetInformation, IWDFIoRequest interface, SetInformation method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,14 +68,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

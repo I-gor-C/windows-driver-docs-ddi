@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2326130f-7e5f-492f-88a9-9eadeccc4827
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolPathWide, GetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSymbolPathWide, debugger.getsymbolpathwide, dbgeng/IDebugSymbols3::GetSymbolPathWide, GetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetSymbolPathWide method, IDebugSymbols3
+ms.keywords : debugger.getsymbolpathwide, GetSymbolPathWide method [Windows Debugging], GetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolPathWide, IDebugSymbols3, IDebugSymbols3::GetSymbolPathWide, dbgeng/IDebugSymbols3::GetSymbolPathWide, IDebugSymbols3 interface [Windows Debugging], GetSymbolPathWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -106,22 +106,17 @@ For more information about manipulating the symbol path, see <a href="https://ms
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538110">AppendSymbolPath</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556802">SetSymbolPath</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556802">SetSymbolPath</a>
 
  
 

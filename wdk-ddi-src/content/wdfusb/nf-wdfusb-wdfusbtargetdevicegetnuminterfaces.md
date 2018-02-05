@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d81bdeeb-07de-483d-9803-3577f1076e28
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETDEVICEGETNUMINTERFACES, WdfUsbTargetDeviceGetNumInterfaces, wdfusb/WdfUsbTargetDeviceGetNumInterfaces, wdf.wdfusbtargetdevicegetnuminterfaces, kmdf.wdfusbtargetdevicegetnuminterfaces, DFUsbRef_8819241f-cfcd-49de-8775-4f415ab63593.xml, WdfUsbTargetDeviceGetNumInterfaces method
+ms.keywords : DFUsbRef_8819241f-cfcd-49de-8775-4f415ab63593.xml, kmdf.wdfusbtargetdevicegetnuminterfaces, wdf.wdfusbtargetdevicegetnuminterfaces, WdfUsbTargetDeviceGetNumInterfaces method, wdfusb/WdfUsbTargetDeviceGetNumInterfaces, PFN_WDFUSBTARGETDEVICEGETNUMINTERFACES, WdfUsbTargetDeviceGetNumInterfaces
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,11 @@ For more information about the <b>WdfUsbTargetDeviceGetNumInterfaces</b> method 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 

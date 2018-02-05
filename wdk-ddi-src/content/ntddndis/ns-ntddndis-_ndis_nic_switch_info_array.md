@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bff2b133-bbef-4f2a-a7b1-34d7cf364205
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY, _NDIS_NIC_SWITCH_INFO_ARRAY, ntddndis/NDIS_NIC_SWITCH_INFO_ARRAY, netvista.ndis_nic_switch_info_array, NDIS_NIC_SWITCH_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_INFO_ARRAY
+ms.keywords : ntddndis/PNDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_info_array, *PNDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_INFO_ARRAY, _NDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_INFO_ARRAY, *PNDIS_NIC_SWITCH_INFO_ARRAY
+req.typenames : "*PNDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY"
 ---
 
 # _NDIS_NIC_SWITCH_INFO_ARRAY structure
@@ -104,26 +104,24 @@ function, NDIS passes a pointer to an <a href="..\ndis\ns-ndis-_ndis_filter_atta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451819">OID_NIC_SWITCH_ENUM_SWITCHES</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
 
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
+
+<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451819">OID_NIC_SWITCH_ENUM_SWITCHES</a>
 
 <b></b>
 

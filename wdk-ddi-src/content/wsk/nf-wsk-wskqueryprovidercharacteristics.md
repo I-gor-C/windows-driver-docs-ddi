@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b8a81d7e-abab-4343-a044-ac9dd913c7f2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WskQueryProviderCharacteristics, netvista.wskqueryprovidercharacteristics, wsk/WskQueryProviderCharacteristics, WskQueryProviderCharacteristics function [Network Drivers Starting with Windows Vista], wskref_dbe0fc4a-6df6-46aa-a17b-d3835f5d429b.xml
+ms.keywords : WskQueryProviderCharacteristics, WskQueryProviderCharacteristics function [Network Drivers Starting with Windows Vista], wsk/WskQueryProviderCharacteristics, netvista.wskqueryprovidercharacteristics, wskref_dbe0fc4a-6df6-46aa-a17b-d3835f5d429b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -118,14 +118,11 @@ WSK clients can use this function to determine the WSK NPI versions supported by
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

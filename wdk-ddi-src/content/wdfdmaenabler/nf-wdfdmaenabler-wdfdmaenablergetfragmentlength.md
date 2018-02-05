@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f7481655-4413-4937-8a0a-99ca07d5b7b0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmaenablergetfragmentlength, wdfdmaenabler/WdfDmaEnablerGetFragmentLength, DFDmaObjectRef_7c147fef-46f6-49aa-b8a9-9ef1a82ef963.xml, WdfDmaEnablerGetFragmentLength method, kmdf.wdfdmaenablergetfragmentlength, PFN_WDFDMAENABLERGETFRAGMENTLENGTH, WdfDmaEnablerGetFragmentLength
+ms.keywords : WdfDmaEnablerGetFragmentLength method, kmdf.wdfdmaenablergetfragmentlength, wdfdmaenabler/WdfDmaEnablerGetFragmentLength, PFN_WDFDMAENABLERGETFRAGMENTLENGTH, DFDmaObjectRef_7c147fef-46f6-49aa-b8a9-9ef1a82ef963.xml, WdfDmaEnablerGetFragmentLength, wdf.wdfdmaenablergetfragmentlength
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,20 +92,18 @@ Note that if your driver's device supports duplex operation, <b>WdfDmaEnablerGet
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.1 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablergetmaximumlength.md">WdfDmaEnablerGetMaximumLength</a>
+
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
 <a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_direction.md">WDF_DMA_DIRECTION</a>
 

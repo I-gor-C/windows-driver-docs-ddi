@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 025046e2-ffa1-4210-b4aa-ab3d6b211066
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml, wdf.wdfdeviceadddependentusagedeviceobject, wdfdevice/WdfDeviceAddDependentUsageDeviceObject, PFN_WDFDEVICEADDDEPENDENTUSAGEDEVICEOBJECT, WdfDeviceAddDependentUsageDeviceObject method, kmdf.wdfdeviceadddependentusagedeviceobject, WdfDeviceAddDependentUsageDeviceObject
+ms.keywords : PFN_WDFDEVICEADDDEPENDENTUSAGEDEVICEOBJECT, wdfdevice/WdfDeviceAddDependentUsageDeviceObject, WdfDeviceAddDependentUsageDeviceObject, WdfDeviceAddDependentUsageDeviceObject method, wdf.wdfdeviceadddependentusagedeviceobject, kmdf.wdfdeviceadddependentusagedeviceobject, DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,20 +114,18 @@ For more information about special files, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceremovedependentusagedeviceobject.md">WdfDeviceRemoveDependentUsageDeviceObject</a>
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_usage_notification.md">EvtDeviceUsageNotification</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceremovedependentusagedeviceobject.md">WdfDeviceRemoveDependentUsageDeviceObject</a>
 
  
 

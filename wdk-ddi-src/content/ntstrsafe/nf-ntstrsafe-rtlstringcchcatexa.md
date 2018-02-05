@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 868cde94-b086-47bc-8ffb-7cf21a2960a7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCchCatExA, STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, kernel.rtlstringcchcatex, RtlStringCchCatExW, STRSAFE_FILL_BEHIND_NULL, safestrings_8766da59-e5d5-4fc8-af93-73b90c4449ab.xml, RtlStringCchCatEx, ntstrsafe/RtlStringCchCatEx, STRSAFE_FILL_ON_FAILURE, ntstrsafe/RtlStringCchCatExW, STRSAFE_NULL_ON_FAILURE, RtlStringCchCatExA, RtlStringCchCatEx function [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.rtlstringcchcatex, RtlStringCchCatEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCchCatExW, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, safestrings_8766da59-e5d5-4fc8-af93-73b90c4449ab.xml, RtlStringCchCatExA, RtlStringCchCatEx, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_ON_FAILURE, ntstrsafe/RtlStringCchCatExA, STRSAFE_FILL_BEHIND_NULL, ntstrsafe/RtlStringCchCatEx, RtlStringCchCatExW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -253,22 +253,19 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexw.md">RtlStringCbCatEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatw.md">RtlStringCchCat</a>
-
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>
 
  
 

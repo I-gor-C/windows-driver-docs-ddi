@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 28ffe82f-79b6-4a00-b4fa-36df5df303a6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_io_forward_progress_reserved_policy_settings, DFQueueObjectRef_47fb2461-dada-4f4e-aba8-91759b3092ea.xml, _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS structure, kmdf.wdf_io_forward_progress_reserved_policy_settings, wdfio/WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS
+ms.keywords : wdf.wdf_io_forward_progress_reserved_policy_settings, DFQueueObjectRef_47fb2461-dada-4f4e-aba8-91759b3092ea.xml, wdfio/WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS structure, _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS, kmdf.wdf_io_forward_progress_reserved_policy_settings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,7 +68,5 @@ The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure is used as
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfio.h (include Wdf.h) |

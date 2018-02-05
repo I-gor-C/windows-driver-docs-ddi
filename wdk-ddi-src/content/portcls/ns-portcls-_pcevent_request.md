@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b28bd1c2-9fbe-4427-a4ba-5b79a338e913
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/PCEVENT_REQUEST, audio.pcevent_request, PCEVENT_REQUEST, audpc-struct_d60c4cf4-11e2-44b7-842a-65d965c8c422.xml, PCEVENT_REQUEST structure [Audio Devices], *PPCEVENT_REQUEST, PPCEVENT_REQUEST, _PCEVENT_REQUEST, portcls/PPCEVENT_REQUEST, PPCEVENT_REQUEST structure pointer [Audio Devices]
+ms.keywords : "*PPCEVENT_REQUEST, portcls/PCEVENT_REQUEST, PPCEVENT_REQUEST, PCEVENT_REQUEST structure [Audio Devices], audio.pcevent_request, portcls/PPCEVENT_REQUEST, _PCEVENT_REQUEST, audpc-struct_d60c4cf4-11e2-44b7-842a-65d965c8c422.xml, PCEVENT_REQUEST, PPCEVENT_REQUEST structure pointer [Audio Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PCEVENT_REQUEST, *PPCEVENT_REQUEST
+req.typenames : "*PPCEVENT_REQUEST, PCEVENT_REQUEST"
 ---
 
 # _PCEVENT_REQUEST structure
@@ -153,14 +153,11 @@ The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a>
 
@@ -168,7 +165,7 @@ The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
 
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 
  
 

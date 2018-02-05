@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 21a2fa9c-24c1-4964-aaa7-96ac86b8c078
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfiotargetcreate, DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml, PFN_WDFIOTARGETCREATE, WdfIoTargetCreate method, kmdf.wdfiotargetcreate, WdfIoTargetCreate, wdfiotarget/WdfIoTargetCreate
+ms.keywords : WdfIoTargetCreate, PFN_WDFIOTARGETCREATE, DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml, wdfiotarget/WdfIoTargetCreate, kmdf.wdfiotargetcreate, WdfIoTargetCreate method, wdf.wdfiotargetcreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,20 +134,19 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
-
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetopen.md">WdfIoTargetOpen</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cb1fc590-3d3a-4b06-b467-28c3adb43706
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfMemoryCopyToBuffer, kmdf.wdfmemorycopytobuffer, wdf.wdfmemorycopytobuffer, WdfMemoryCopyToBuffer method, DFMemoryObjectRef_8668c3aa-f5f0-4a1a-9290-27cf78fbcd24.xml, wdfmemory/WdfMemoryCopyToBuffer, PFN_WDFMEMORYCOPYTOBUFFER
+ms.keywords : WdfMemoryCopyToBuffer, PFN_WDFMEMORYCOPYTOBUFFER, kmdf.wdfmemorycopytobuffer, wdf.wdfmemorycopytobuffer, WdfMemoryCopyToBuffer method, wdfmemory/WdfMemoryCopyToBuffer, DFMemoryObjectRef_8668c3aa-f5f0-4a1a-9290-27cf78fbcd24.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,12 +122,11 @@ If the source or destination buffer was allocated from the pageable memory pool,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfmemory.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | Any level (see Remarks section) |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA |
 

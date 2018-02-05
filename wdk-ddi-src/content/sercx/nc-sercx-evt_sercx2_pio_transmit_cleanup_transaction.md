@@ -76,14 +76,10 @@ For more information, see <a href="https://msdn.microsoft.com/3BEF9A3D-1FEF-4626
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
 | **IRQL** | Called at IRQL <= DISPATCH_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

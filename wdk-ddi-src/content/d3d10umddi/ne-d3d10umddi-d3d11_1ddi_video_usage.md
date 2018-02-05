@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f107b9a8-d124-4fc3-80b3-dd20a87f9a86
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, D3D11_1DDI_VIDEO_USAGE enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, d3d10umddi/D3D11_1DDI_VIDEO_USAGE, D3D11_1DDI_VIDEO_USAGE, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED, display.d3d11_1ddi_video_usage, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED, D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL
+ms.keywords : D3D11_1DDI_VIDEO_USAGE enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED, display.d3d11_1ddi_video_usage, d3d10umddi/D3D11_1DDI_VIDEO_USAGE, D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, d3d10umddi/D3D11_1DDI_VIDEO_USAGE_PLAYBACK_NORMAL, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_QUALITY, D3D11_1DDI_VIDEO_USAGE_OPTIMAL_SPEED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ A value of type <b>D3D11_1DDI_VIDEO_USAGE</b> is specified in the <b>Usage</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

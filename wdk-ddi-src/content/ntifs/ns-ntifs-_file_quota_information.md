@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f5b17648-cd6e-4a6d-a00e-b4dfdcbcf0ea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FILE_QUOTA_INFORMATION, ntifs/PFILE_QUOTA_INFORMATION, PFILE_QUOTA_INFORMATION structure pointer [Installable File System Drivers], fileinformationstructures_38604040-0780-47f3-88b3-aef3e3eab993.xml, ifsk.file_quota_information, FILE_QUOTA_INFORMATION structure [Installable File System Drivers], *PFILE_QUOTA_INFORMATION, _FILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION, PFILE_QUOTA_INFORMATION
+ms.keywords : "_FILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_QUOTA_INFORMATION, PFILE_QUOTA_INFORMATION structure pointer [Installable File System Drivers], ntifs/FILE_QUOTA_INFORMATION, PFILE_QUOTA_INFORMATION, *PFILE_QUOTA_INFORMATION, ifsk.file_quota_information, fileinformationstructures_38604040-0780-47f3-88b3-aef3e3eab993.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,20 +99,17 @@ On 64-bit platforms, this structure must be aligned on a LONGLONG (8-byte) bound
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
 
 <a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
 
 <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
 
  
 

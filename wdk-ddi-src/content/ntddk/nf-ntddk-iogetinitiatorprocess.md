@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 653B4FD5-4C07-420A-BE8A-CC8C46BC6F0F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iogetinitiatorprocess, IoGetInitiatorProcess function [Kernel-Mode Driver Architecture], IoGetInitiatorProcess, ntddk/IoGetInitiatorProcess
+ms.keywords : IoGetInitiatorProcess function [Kernel-Mode Driver Architecture], kernel.iogetinitiatorprocess, ntddk/IoGetInitiatorProcess, IoGetInitiatorProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,8 @@ A driver normally uses IoGetInitiatorProcess to determine which process has issu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

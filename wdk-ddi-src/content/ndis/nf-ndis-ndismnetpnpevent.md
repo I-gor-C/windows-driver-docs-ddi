@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cbb097c1-dd20-4c6d-b23a-1e7683ac3e94
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismnetpnpevent, NdisMNetPnPEvent function [Network Drivers Starting with Windows Vista], ndis/NdisMNetPnPEvent, miniport_ndis_functions_ref_0f39567c-b58c-438e-936e-36323bbc2ea6.xml, NdisMNetPnPEvent
+ms.keywords : NdisMNetPnPEvent, miniport_ndis_functions_ref_0f39567c-b58c-438e-936e-36323bbc2ea6.xml, ndis/NdisMNetPnPEvent, NdisMNetPnPEvent function [Network Drivers Starting with Windows Vista], netvista.ndismnetpnpevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -246,24 +246,22 @@ For all other propagated events, the intermediate driver's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function, NdisMNetPnPEventInOIDRequest |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
-
-<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
+
+<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
+
+<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
 
  
 

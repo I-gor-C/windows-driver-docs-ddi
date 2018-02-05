@@ -77,9 +77,7 @@ If there is no card in the indicated socket, the <b>Status</b> field is set to S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
-| **IRQL** |  |
 
 ## See Also
 

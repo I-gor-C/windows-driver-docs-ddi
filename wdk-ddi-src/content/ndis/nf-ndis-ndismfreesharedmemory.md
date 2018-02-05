@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6ab11b97-e422-4ce9-b98b-51496974cb47
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMFreeSharedMemory, ndis/NdisMFreeSharedMemory, netvista.ndismfreesharedmemory, miniport_memory_shared_ref_1aab9bae-ae02-40ba-83ec-1dd880e207cf.xml, NdisMFreeSharedMemory function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndismfreesharedmemory, NdisMFreeSharedMemory, miniport_memory_shared_ref_1aab9bae-ae02-40ba-83ec-1dd880e207cf.xml, ndis/NdisMFreeSharedMemory, NdisMFreeSharedMemory function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -42,8 +42,8 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisMFreeSharedMemory function
 <b>NdisMFreeSharedMemory</b> frees memory that was previously allocated by 
   <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> or 
-  <mshelp:link keywords="netvista.ndismallocatesharedmemoryasyncex" tabindex="0"><b>
-  NdisMAllocateSharedMemoryAsyncEx</b></mshelp:link> by the driver of a DMA NIC.
+  <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
+  NdisMAllocateSharedMemoryAsyncEx</a> by the driver of a DMA NIC.
 
 ## Syntax
 
@@ -93,8 +93,8 @@ None
 
 If it has already made a successful call to 
     <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> or 
-    <mshelp:link keywords="netvista.ndismallocatesharedmemoryasyncex" tabindex="0"><b>
-    NdisMAllocateSharedMemoryAsyncEx</b></mshelp:link>, the miniport driver of a DMA device calls 
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
+    NdisMAllocateSharedMemoryAsyncEx</a>, the miniport driver of a DMA device calls 
     <b>NdisMFreeSharedMemory</b> if any of the following occurs:
 <ul>
 <li>
@@ -136,28 +136,26 @@ Microsoft Windows Server 2003, Windows XP Service Pack 1, and later versions of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFreeSharedMemory (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMFreeSharedMemory (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMFreeSharedMemory (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMFreeSharedMemory (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function, NdisMFreeSharedMemory |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndismallocatesharedmemoryasyncex" tabindex="0"><b>
-   NdisMAllocateSharedMemoryAsyncEx</b></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_allocate_shared_mem_complete.md">
+   MiniportSharedMemoryAllocateComplete</a>
 
 <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a>
+
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
+   NdisMAllocateSharedMemoryAsyncEx</a>
 
 <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<mshelp:link keywords="netvista.miniportsharedmemoryallocatecomplete" tabindex="0"><i>
-   MiniportSharedMemoryAllocateComplete</i></mshelp:link>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 

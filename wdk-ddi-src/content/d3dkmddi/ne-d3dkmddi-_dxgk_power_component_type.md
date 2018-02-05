@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fe732082-5aa1-4265-a76a-bd2e5b733557
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_POWER_COMPONENT_TYPE, _DXGK_POWER_COMPONENT_TYPE, d3dkmddi/DXGK_POWER_COMPONENT_MONITOR_REFRESH, d3dkmddi/DXGK_POWER_COMPONENT_MAX, d3dkmddi/DXGK_POWER_COMPONENT_OTHER, DXGK_POWER_COMPONENT_TYPE enumeration [Display Devices], DXGK_POWER_COMPONENT_MONITOR_REFRESH, DXGK_POWER_COMPONENT_MONITOR, d3dkmddi/DXGK_POWER_COMPONENT_MONITOR, d3dkmddi/DXGK_POWER_COMPONENT_ENGINE, DXGK_POWER_COMPONENT_MAX, DXGK_POWER_COMPONENT_OTHER, DXGK_POWER_COMPONENT_ENGINE, display.dxgk_power_component_type, d3dkmddi/DXGK_POWER_COMPONENT_TYPE
+ms.keywords : d3dkmddi/DXGK_POWER_COMPONENT_MAX, DXGK_POWER_COMPONENT_ENGINE, DXGK_POWER_COMPONENT_MAX, d3dkmddi/DXGK_POWER_COMPONENT_MONITOR, display.dxgk_power_component_type, d3dkmddi/DXGK_POWER_COMPONENT_TYPE, DXGK_POWER_COMPONENT_MONITOR_REFRESH, d3dkmddi/DXGK_POWER_COMPONENT_ENGINE, d3dkmddi/DXGK_POWER_COMPONENT_OTHER, DXGK_POWER_COMPONENT_MONITOR, DXGK_POWER_COMPONENT_TYPE enumeration [Display Devices], DXGK_POWER_COMPONENT_TYPE, d3dkmddi/DXGK_POWER_COMPONENT_MONITOR_REFRESH, _DXGK_POWER_COMPONENT_TYPE, DXGK_POWER_COMPONENT_OTHER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -109,7 +109,5 @@ A typical component of this type is a self-refreshing monitor, which can display
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h |

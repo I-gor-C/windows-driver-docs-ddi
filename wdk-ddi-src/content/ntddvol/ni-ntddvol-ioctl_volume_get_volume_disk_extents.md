@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS"
+req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS IOCTL
@@ -83,15 +83,14 @@ If the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is large enough for a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 for volumes on fixed disks, but not for volumes on removable media. Available for use with removable media in Microsoft Windows 2000 SP4 and Windows XP SP1. Available in Microsoft Windows 2000 for volumes on fixed disks, but not for volumes on removable media. Available for use with removable media in Microsoft Windows 2000 SP4 and Windows XP SP1. |
 | **Header** | ntddvol.h (include Ntddvol.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\ntddvol\ns-ntddvol-_disk_extent.md">DISK_EXTENT</a>
-
 <a href="..\ntddvol\ns-ntddvol-_volume_disk_extents.md">VOLUME_DISK_EXTENTS</a>
+
+<a href="..\ntddvol\ns-ntddvol-_disk_extent.md">DISK_EXTENT</a>
 
  
 

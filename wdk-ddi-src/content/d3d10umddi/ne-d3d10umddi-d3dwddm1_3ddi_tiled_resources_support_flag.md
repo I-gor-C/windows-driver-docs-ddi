@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5EEF8C68-0DE7-466B-946F-37157B21C9B7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED, D3DWDDM1_3DDI_TILED_RESOURCES_TIER_2_SUPPORTED, D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG enumeration [Display Devices], d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED, d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCES_TIER_2_SUPPORTED, D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG, display.d3dwddm1_3ddi_tiled_resources_support_flag, d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG
+ms.keywords : d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCES_TIER_2_SUPPORTED, D3DWDDM1_3DDI_TILED_RESOURCES_TIER_2_SUPPORTED, d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG, display.d3dwddm1_3ddi_tiled_resources_support_flag, d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED, D3DWDDM1_3DDI_TILED_RESOURCES_TIER_1_SUPPORTED, D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG enumeration [Display Devices], D3DWDDM1_3DDI_TILED_RESOURCES_SUPPORT_FLAG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,9 +75,7 @@ If this flag is set, the Direct3D runtime assumes that the support level of the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

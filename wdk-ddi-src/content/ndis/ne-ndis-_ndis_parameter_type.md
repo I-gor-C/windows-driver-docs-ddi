@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f17e390a-fa13-4435-ad1e-3fecc035ec41
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_PARAMETER_TYPE, ndis_configuration_ref_05a453df-2660-470b-8eaf-7a59dcb20e04.xml, _NDIS_PARAMETER_TYPE, ndis/NDIS_PARAMETER_TYPE, NdisParameterString, NdisParameterBinary, ndis/NdisParameterBinary, NdisParameterHexInteger, NdisParameterMultiString, ndis/NdisParameterInteger, ndis/PNDIS_PARAMETER_TYPE, NDIS_PARAMETER_TYPE, ndis/NdisParameterHexInteger, ndis/NdisParameterString, NdisParameterInteger, ndis/NdisParameterMultiString, PNDIS_PARAMETER_TYPE, netvista.ndis_parameter_type, NDIS_PARAMETER_TYPE enumeration [Network Drivers Starting with Windows Vista], PNDIS_PARAMETER_TYPE enumeration pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : NDIS_PARAMETER_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisParameterString, PNDIS_PARAMETER_TYPE, _NDIS_PARAMETER_TYPE, ndis/NdisParameterMultiString, ndis/NdisParameterInteger, PNDIS_PARAMETER_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], *PNDIS_PARAMETER_TYPE, ndis/PNDIS_PARAMETER_TYPE, NdisParameterBinary, ndis/NDIS_PARAMETER_TYPE, netvista.ndis_parameter_type, NdisParameterInteger, NdisParameterHexInteger, NDIS_PARAMETER_TYPE, ndis/NdisParameterHexInteger, NdisParameterMultiString, ndis/NdisParameterBinary, ndis/NdisParameterString, ndis_configuration_ref_05a453df-2660-470b-8eaf-7a59dcb20e04.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_PARAMETER_TYPE, NDIS_PARAMETER_TYPE"
+req.typenames : NDIS_PARAMETER_TYPE, *PNDIS_PARAMETER_TYPE
 ---
 
 # _NDIS_PARAMETER_TYPE Enumeration
@@ -85,17 +85,15 @@ typedef enum _NDIS_PARAMETER_TYPE {
 ## Remarks
 
 The NDIS_PARAMETER_TYPE enumeration type is used in the 
-    <mshelp:link keywords="netvista.ndis_configuration_parameter" tabindex="0"><b>
-    NDIS_CONFIGURATION_PARAMETER</b></mshelp:link> structure and in the 
+    <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
+    NDIS_CONFIGURATION_PARAMETER</a> structure and in the 
     <i>ParameterType</i> parameter of the 
     <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also

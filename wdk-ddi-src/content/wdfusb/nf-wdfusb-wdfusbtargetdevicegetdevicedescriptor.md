@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b2c70976-00ce-4563-af60-0bbdd1a65540
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETDEVICEGETDEVICEDESCRIPTOR, WdfUsbTargetDeviceGetDeviceDescriptor, wdf.wdfusbtargetdevicegetdevicedescriptor, kmdf.wdfusbtargetdevicegetdevicedescriptor, WdfUsbTargetDeviceGetDeviceDescriptor method, wdfusb/WdfUsbTargetDeviceGetDeviceDescriptor, DFUsbRef_a59d2f05-4ecf-400f-823e-b2d2533020a2.xml
+ms.keywords : WdfUsbTargetDeviceGetDeviceDescriptor, wdf.wdfusbtargetdevicegetdevicedescriptor, WdfUsbTargetDeviceGetDeviceDescriptor method, wdfusb/WdfUsbTargetDeviceGetDeviceDescriptor, DFUsbRef_a59d2f05-4ecf-400f-823e-b2d2533020a2.xml, kmdf.wdfusbtargetdevicegetdevicedescriptor, PFN_WDFUSBTARGETDEVICEGETDEVICEDESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,20 +78,19 @@ For more information about the <b>WdfUsbTargetDeviceGetDeviceDescriptor</b> meth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-
 <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 
  
 

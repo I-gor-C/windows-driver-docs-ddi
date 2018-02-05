@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 1534B7AC-8968-4AE2-A871-D8F4D4E45CA1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : serports.serial_baud_rate, SERIAL_BAUD_RATE structure [Serial Ports], *PSERIAL_BAUD_RATE, SERIAL_BAUD_RATE, PSERIAL_BAUD_RATE structure pointer [Serial Ports], _SERIAL_BAUD_RATE, PSERIAL_BAUD_RATE, ntddser/PSERIAL_BAUD_RATE, ntddser/SERIAL_BAUD_RATE
+ms.keywords : SERIAL_BAUD_RATE structure [Serial Ports], ntddser/SERIAL_BAUD_RATE, SERIAL_BAUD_RATE, ntddser/PSERIAL_BAUD_RATE, serports.serial_baud_rate, *PSERIAL_BAUD_RATE, PSERIAL_BAUD_RATE, PSERIAL_BAUD_RATE structure pointer [Serial Ports], _SERIAL_BAUD_RATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSERIAL_BAUD_RATE, SERIAL_BAUD_RATE"
+req.typenames : SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE
 ---
 
 # _SERIAL_BAUD_RATE structure
@@ -63,18 +63,16 @@ For more information about some of the possible baud rates that a serial control
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 2000. Supported starting with Windows 2000. |
 | **Header** | ntddser.h |
 
 ## See Also
 
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_baud_rate.md">IOCTL_SERIAL_GET_BAUD_RATE</a>
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a>
-
 <a href="..\ntddser\ns-ntddser-_serial_commprop.md">SERIAL_COMMPROP</a>
+
+<a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a>
 
  
 

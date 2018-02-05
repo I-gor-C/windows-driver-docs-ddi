@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3d1dc600-f7cb-488e-9f92-678e0a6a58f8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.ksrtaudio_hwregister, *PKSRTAUDIO_HWREGISTER, PKSRTAUDIO_HWREGISTER structure pointer [Audio Devices], aud-prop_f94f5b72-e081-48ee-96b9-4649201743d5.xml, PKSRTAUDIO_HWREGISTER, ksmedia/KSRTAUDIO_HWREGISTER, ksmedia/PKSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER structure [Audio Devices]
+ms.keywords : audio.ksrtaudio_hwregister, aud-prop_f94f5b72-e081-48ee-96b9-4649201743d5.xml, PKSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER, ksmedia/PKSRTAUDIO_HWREGISTER, ksmedia/KSRTAUDIO_HWREGISTER, PKSRTAUDIO_HWREGISTER structure pointer [Audio Devices], KSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER structure [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -93,9 +93,7 @@ For position registers, the <i>Accuracy</i> parameter represents the accuracy of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
 | **Header** | ksmedia.h |
 
 ## See Also

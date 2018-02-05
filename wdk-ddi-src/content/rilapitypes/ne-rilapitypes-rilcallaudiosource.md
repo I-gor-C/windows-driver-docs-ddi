@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9da5508a-7397-4260-b5d8-16b0d624b98b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_CALLAUDIOSOURCE_MAX, rilapitypes/RIL_CALLAUDIOSOURCE_PKT_APP, RILCALLAUDIOSOURCE, RIL_CALLAUDIOSOURCE_MAX, RIL_CALLAUDIOSOURCE_PKT_MODEM, RILCALLAUDIOSOURCE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLAUDIOSOURCE_PKT_APP, rilapitypes/RIL_CALLAUDIOSOURCE_PKT_MODEM, rilapitypes/RILCALLAUDIOSOURCE, netvista.rilcallaudiosource_2
+ms.keywords : RIL_CALLAUDIOSOURCE_PKT_MODEM, netvista.rilcallaudiosource_2, RILCALLAUDIOSOURCE, RIL_CALLAUDIOSOURCE_PKT_APP, rilapitypes/RIL_CALLAUDIOSOURCE_MAX, RILCALLAUDIOSOURCE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_CALLAUDIOSOURCE_PKT_MODEM, RIL_CALLAUDIOSOURCE_MAX, rilapitypes/RIL_CALLAUDIOSOURCE_PKT_APP, rilapitypes/RILCALLAUDIOSOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILCALLAUDIOSOURCE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

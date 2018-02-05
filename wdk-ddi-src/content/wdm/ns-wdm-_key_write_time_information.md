@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 44f68a5a-c7ad-4555-b6b2-6461ac17960a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PKEY_WRITE_TIME_INFORMATION, _KEY_WRITE_TIME_INFORMATION, KEY_WRITE_TIME_INFORMATION structure [Kernel-Mode Driver Architecture], PKEY_WRITE_TIME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PKEY_WRITE_TIME_INFORMATION, wdm/KEY_WRITE_TIME_INFORMATION, kstruct_c_373f0047-919b-44c4-8831-181027ba5f2e.xml, kernel.key_write_time_information, *PKEY_WRITE_TIME_INFORMATION, KEY_WRITE_TIME_INFORMATION
+ms.keywords : wdm/KEY_WRITE_TIME_INFORMATION, kstruct_c_373f0047-919b-44c4-8831-181027ba5f2e.xml, KEY_WRITE_TIME_INFORMATION structure [Kernel-Mode Driver Architecture], PKEY_WRITE_TIME_INFORMATION, *PKEY_WRITE_TIME_INFORMATION, KEY_WRITE_TIME_INFORMATION, PKEY_WRITE_TIME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _KEY_WRITE_TIME_INFORMATION, kernel.key_write_time_information, wdm/PKEY_WRITE_TIME_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,9 +60,7 @@ Specifies the last time that the key was changed. This time value is expressed i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later versions of the Windows operating system. Available on Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

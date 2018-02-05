@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5b3ee4f1-5c5a-413f-b927-96293cc87e98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCopyObjectBagItems function [Streaming Media Devices], ks/KsCopyObjectBagItems, stream.kscopyobjectbagitems, avfunc_26fe6218-6e9e-4a1a-93c6-f8f2ca10abbb.xml, KsCopyObjectBagItems
+ms.keywords : KsCopyObjectBagItems, ks/KsCopyObjectBagItems, stream.kscopyobjectbagitems, avfunc_26fe6218-6e9e-4a1a-93c6-f8f2ca10abbb.xml, KsCopyObjectBagItems function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,36 +73,33 @@ Note that mutexes for both bags should be held. If the object bag in question is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
-
-<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
-
 <a href="..\ks\nf-ks-kspingetconnectedfilterinterface.md">KsPinGetConnectedFilterInterface</a>
-
-<a href="..\ks\nf-ks-kspinsetpinclocktime.md">KsPinSetPinClockTime</a>
-
-<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
-
-<a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
-
-<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
-
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 
 <a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
 
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+
+<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
+
+<a href="..\ks\nf-ks-kspinsetpinclocktime.md">KsPinSetPinClockTime</a>
+
+<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
+
+<a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
+
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
+
 <a href="..\ks\nf-ks-_ksedit.md">_KsEdit</a>
+
+<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
 
  
 

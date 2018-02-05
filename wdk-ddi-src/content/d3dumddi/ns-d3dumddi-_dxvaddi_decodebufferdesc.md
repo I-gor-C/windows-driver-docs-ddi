@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 809b4cf8-e4c5-4cb6-b58f-8b6b98111361
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_DECODEBUFFERDESC structure [Display Devices], d3dumddi/DXVADDI_DECODEBUFFERDESC, DXVA2_Structs_0946584e-3d1f-4bb4-95d5-7ae2c669814a.xml, _DXVADDI_DECODEBUFFERDESC, DXVADDI_DECODEBUFFERDESC, display.dxvaddi_decodebufferdesc
+ms.keywords : DXVADDI_DECODEBUFFERDESC, display.dxvaddi_decodebufferdesc, DXVADDI_DECODEBUFFERDESC structure [Display Devices], _DXVADDI_DECODEBUFFERDESC, d3dumddi/DXVADDI_DECODEBUFFERDESC, DXVA2_Structs_0946584e-3d1f-4bb4-95d5-7ae2c669814a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -216,9 +216,7 @@ Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Dir
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
@@ -227,9 +225,9 @@ Because Microsoft DirectX Video Acceleration (VA) version 2.0 uses Microsoft Dir
 
 <a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a>
 
-<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_decodeexecute.md">D3DDDIARG_DECODEEXECUTE</a>
+
+<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
 
  
 

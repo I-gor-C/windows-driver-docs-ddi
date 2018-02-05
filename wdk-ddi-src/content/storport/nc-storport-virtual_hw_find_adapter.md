@@ -176,24 +176,18 @@ VIRTUAL_HW_FIND_ADAPTER (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>
-
 <a href="..\storport\ns-storport-_virtual_hw_initialization_data.md">VIRTUAL_HW_INITIALIZATION_DATA</a>
+
+<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 
-<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0deccfee-34e3-47ee-b141-9758cffcd0c2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface::GetConfiguredSettingIndex, umdf.iwdfusbinterface_getconfiguredsettingindex, GetConfiguredSettingIndex, wdf.iwdfusbinterface_getconfiguredsettingindex, GetConfiguredSettingIndex method, wudfusb/IWDFUsbInterface::GetConfiguredSettingIndex, IWDFUsbInterface interface, GetConfiguredSettingIndex method, UMDFUSBref_5c2cdbd4-d660-4933-b1fb-a99852b5cba8.xml, IWDFUsbInterface, GetConfiguredSettingIndex method, IWDFUsbInterface interface
+ms.keywords : IWDFUsbInterface interface, GetConfiguredSettingIndex method, IWDFUsbInterface, GetConfiguredSettingIndex method, GetConfiguredSettingIndex, wdf.iwdfusbinterface_getconfiguredsettingindex, GetConfiguredSettingIndex method, IWDFUsbInterface interface, IWDFUsbInterface::GetConfiguredSettingIndex, umdf.iwdfusbinterface_getconfiguredsettingindex, UMDFUSBref_5c2cdbd4-d660-4933-b1fb-a99852b5cba8.xml, wudfusb/IWDFUsbInterface::GetConfiguredSettingIndex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,22 +66,20 @@ The <b>GetConfiguredSettingIndex</b> method is provided for convenience because 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560320">IWDFUsbInterface::GetInterfaceDescriptor</a>
 
 <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
 
 <a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560320">IWDFUsbInterface::GetInterfaceDescriptor</a>
 
  
 

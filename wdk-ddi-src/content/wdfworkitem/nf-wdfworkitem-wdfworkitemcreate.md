@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f5bb3af4-c687-47ad-88ce-d56067c78d6d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfworkitemcreate, wdfworkitem/WdfWorkItemCreate, WdfWorkItemCreate method, WdfWorkItemCreate, PFN_WDFWORKITEMCREATE, DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml, kmdf.wdfworkitemcreate
+ms.keywords : wdfworkitem/WdfWorkItemCreate, PFN_WDFWORKITEMCREATE, wdf.wdfworkitemcreate, kmdf.wdfworkitemcreate, DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml, WdfWorkItemCreate, WdfWorkItemCreate method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -154,12 +154,11 @@ For more information about work items, see <a href="https://docs.microsoft.com/e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfworkitem.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e8855baf-ce75-4a4c-bbbe-d1a7e5a65907
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcRemapBcb, ifsk.ccremapbcb, ntifs/CcRemapBcb, ccref_64bd8036-ecdd-48bd-8894-fea7f28cc3be.xml, CcRemapBcb routine [Installable File System Drivers]
+ms.keywords : ntifs/CcRemapBcb, CcRemapBcb, CcRemapBcb routine [Installable File System Drivers], ccref_64bd8036-ecdd-48bd-8894-fea7f28cc3be.xml, ifsk.ccremapbcb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,24 +68,21 @@ Like <a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>, <b>CcRemapBcb</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows 2000 and later. Available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 
 <a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
 
 <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
 
 <a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
-
-<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 
 <a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
 

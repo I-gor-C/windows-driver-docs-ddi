@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : d5da15b9-a020-42bf-8876-cec9edf3119f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6, 1394/PGET_LOCAL_HOST_INFO6, 1394stct_90799b58-816d-4624-a194-6b42d64b903c.xml, PGET_LOCAL_HOST_INFO6 structure pointer [Buses], PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6, IEEE.get_local_host_info6, GET_LOCAL_HOST_INFO6 structure [Buses], 1394/GET_LOCAL_HOST_INFO6"
+ms.keywords : "*PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6 structure [Buses], GET_LOCAL_HOST_INFO6, _GET_LOCAL_HOST_INFO6, 1394/GET_LOCAL_HOST_INFO6, IEEE.get_local_host_info6, PGET_LOCAL_HOST_INFO6, 1394stct_90799b58-816d-4624-a194-6b42d64b903c.xml, 1394/PGET_LOCAL_HOST_INFO6, PGET_LOCAL_HOST_INFO6 structure pointer [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6
+req.typenames : "*PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6"
 ---
 
 # _GET_LOCAL_HOST_INFO6 structure
@@ -99,9 +99,6 @@ When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>CsrDataLength
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

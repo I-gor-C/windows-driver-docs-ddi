@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : DC8A7CE9-7FDE-4FC9-8C71-3F3368E7E5C1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSCLOCKINSTANCE, stream.ksclockinstance, ksi/KSCLOCKINSTANCE, KSCLOCKINSTANCE structure [Streaming Media Devices], PKSCLOCKINSTANCE structure pointer [Streaming Media Devices], KSCLOCKINSTANCE, PKSCLOCKINSTANCE, ksi/PKSCLOCKINSTANCE"
+ms.keywords : PKSCLOCKINSTANCE structure pointer [Streaming Media Devices], ksi/KSCLOCKINSTANCE, KSCLOCKINSTANCE, KSCLOCKINSTANCE structure [Streaming Media Devices], *PKSCLOCKINSTANCE, ksi/PKSCLOCKINSTANCE, stream.ksclockinstance, PKSCLOCKINSTANCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ typedef struct {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksi.h |

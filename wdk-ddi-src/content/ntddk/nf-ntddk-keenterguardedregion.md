@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9a21495e-8a4d-4177-a2c5-b6a928d86fd9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeEnterGuardedRegion, KeEnterGuardedRegion routine [Kernel-Mode Driver Architecture], k105_0f632d64-85dc-4c0f-8a26-8b4710673ab5.xml, KeEnterGuardedRegion, kernel.keenterguardedregion
+ms.keywords : kernel.keenterguardedregion, KeEnterGuardedRegion, wdm/KeEnterGuardedRegion, k105_0f632d64-85dc-4c0f-8a26-8b4710673ab5.xml, KeEnterGuardedRegion routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,18 +65,17 @@ For more information about guarded regions, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | GuardedRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
+<a href="..\wdm\nf-wdm-keleaveguardedregion.md">KeLeaveGuardedRegion</a>
 
  
 

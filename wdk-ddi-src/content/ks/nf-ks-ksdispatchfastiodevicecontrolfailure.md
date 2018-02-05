@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7fb83c8d-e815-46c6-8011-75b25a4c0dd7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsDispatchFastIoDeviceControlFailure, KsDispatchFastIoDeviceControlFailure, ksfunc_f8510e75-1698-4ce9-acd8-d5db73a7c035.xml, KsDispatchFastIoDeviceControlFailure function [Streaming Media Devices], stream.ksdispatchfastiodevicecontrolfailure
+ms.keywords : ksfunc_f8510e75-1698-4ce9-acd8-d5db73a7c035.xml, ks/KsDispatchFastIoDeviceControlFailure, stream.ksdispatchfastiodevicecontrolfailure, KsDispatchFastIoDeviceControlFailure, KsDispatchFastIoDeviceControlFailure function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,11 +108,6 @@ The <b>KsDispatchFastIoDeviceControlFailure</b> function is needed since the dis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

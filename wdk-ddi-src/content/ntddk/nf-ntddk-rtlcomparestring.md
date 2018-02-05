@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 59d023d4-a2b4-4183-9572-cb48621c76fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCompareString routine [Kernel-Mode Driver Architecture], k109_a794007b-a40a-4081-8302-f7426c4ceaef.xml, RtlCompareString, kernel.rtlcomparestring, ntddk/RtlCompareString
+ms.keywords : kernel.rtlcomparestring, k109_a794007b-a40a-4081-8302-f7426c4ceaef.xml, RtlCompareString, RtlCompareString routine [Kernel-Mode Driver Architecture], ntddk/RtlCompareString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,14 +114,12 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

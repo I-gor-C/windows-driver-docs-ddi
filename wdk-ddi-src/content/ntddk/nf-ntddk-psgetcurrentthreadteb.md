@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 822B75D4-A825-4BB1-8265-A1389F4982C7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.psgetcurrentthreadteb, ntddk/PsGetCurrentThreadTeb, PsGetCurrentThreadTeb routine [Kernel-Mode Driver Architecture], PsGetCurrentThreadTeb
+ms.keywords : PsGetCurrentThreadTeb, kernel.psgetcurrentthreadteb, PsGetCurrentThreadTeb routine [Kernel-Mode Driver Architecture], ntddk/PsGetCurrentThreadTeb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,14 +62,11 @@ A pointer to the thread environment block of the current thread. The TEB should 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 07825be3-84a1-4aab-a9f0-22a45f636a04
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols_dc1ccbc7-17e4-4424-8a3d-fbb7f16d3c3b.xml, debugger.removesyntheticsymbol, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3::RemoveSyntheticSymbol, IDebugSymbols3, dbgeng/IDebugSymbols3::RemoveSyntheticSymbol, RemoveSyntheticSymbol, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], RemoveSyntheticSymbol method
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], RemoveSyntheticSymbol method, IDebugSymbols_dc1ccbc7-17e4-4424-8a3d-fbb7f16d3c3b.xml, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3 interface, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3::RemoveSyntheticSymbol, RemoveSyntheticSymbol, dbgeng/IDebugSymbols3::RemoveSyntheticSymbol, IDebugSymbols3, debugger.removesyntheticsymbol
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -99,22 +99,17 @@ For more information about synthetic symbols, see Synthetic Symbols.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554536">RemoveSyntheticModule</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
 
  
 

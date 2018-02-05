@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 4ED5D2DC-8D31-458A-80F2-F681DC375769
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::GetSourceEntryBySourceEntry, GetSourceEntryBySourceEntry method [Windows Debugging], debugger.idebugsymbols3_getsourceentrybysourceentry, IDebugSymbols3::GetSourceEntryBySourceEntry, GetSourceEntryBySourceEntry method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetSourceEntryBySourceEntry, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryBySourceEntry method
+ms.keywords : dbgeng/IDebugSymbols3::GetSourceEntryBySourceEntry, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryBySourceEntry method, IDebugSymbols3, IDebugSymbols3::GetSourceEntryBySourceEntry, GetSourceEntryBySourceEntry method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntryBySourceEntry method [Windows Debugging], GetSourceEntryBySourceEntry, debugger.idebugsymbols3_getsourceentrybysourceentry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,20 +76,15 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
 
  
 

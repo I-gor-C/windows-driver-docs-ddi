@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d6afe946-90cb-4b17-94ed-2e7c508985a3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PHW_CLOCK_OBJECT, PHW_CLOCK_OBJECT, PHW_CLOCK_OBJECT structure pointer [Streaming Media Devices], _HW_CLOCK_OBJECT, HW_CLOCK_OBJECT, stream.hw_clock_object, strmini/HW_CLOCK_OBJECT, HW_CLOCK_OBJECT structure [Streaming Media Devices], strclass-struct_95b6e9db-af87-415b-aad2-b3763c4dd0d9.xml, strmini/PHW_CLOCK_OBJECT"
+ms.keywords : strmini/PHW_CLOCK_OBJECT, HW_CLOCK_OBJECT structure [Streaming Media Devices], _HW_CLOCK_OBJECT, strclass-struct_95b6e9db-af87-415b-aad2-b3763c4dd0d9.xml, *PHW_CLOCK_OBJECT, HW_CLOCK_OBJECT, strmini/HW_CLOCK_OBJECT, PHW_CLOCK_OBJECT structure pointer [Streaming Media Devices], stream.hw_clock_object, PHW_CLOCK_OBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHW_CLOCK_OBJECT, HW_CLOCK_OBJECT"
+req.typenames : HW_CLOCK_OBJECT, *PHW_CLOCK_OBJECT
 req.product : Windows 10 or later.
 ---
 
@@ -82,18 +82,15 @@ Reserved for system use. Do not use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568452">StrMiniClock</a>
 
-<a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>
-
 <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>
+
+<a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>
 
  
 

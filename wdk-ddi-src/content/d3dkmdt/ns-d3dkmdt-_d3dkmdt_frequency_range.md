@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f826f949-b37f-4c48-80d9-b6ef640e1f00
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_FREQUENCY_RANGE, DmStructs_63b22220-c9fc-4eac-a725-caa0f5c38eba.xml, _D3DKMDT_FREQUENCY_RANGE, D3DKMDT_FREQUENCY_RANGE structure [Display Devices], display.d3dkmdt_frequency_range, d3dkmdt/D3DKMDT_FREQUENCY_RANGE
+ms.keywords : d3dkmdt/D3DKMDT_FREQUENCY_RANGE, DmStructs_63b22220-c9fc-4eac-a725-caa0f5c38eba.xml, _D3DKMDT_FREQUENCY_RANGE, D3DKMDT_FREQUENCY_RANGE structure [Display Devices], D3DKMDT_FREQUENCY_RANGE, display.d3dkmdt_frequency_range
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ The <b>RangeLimits</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_mon
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

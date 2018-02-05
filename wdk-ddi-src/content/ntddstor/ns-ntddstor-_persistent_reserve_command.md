@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c7debd93-0fcd-43c5-a950-8154b62175bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PERSISTENT_RESERVE_COMMAND structure [Storage Devices], storage.persistent_reserve_command, PPERSISTENT_RESERVE_COMMAND structure pointer [Storage Devices], structs-general_4fe3d6f6-6e9f-41f5-915c-2636707f429c.xml, *PPERSISTENT_RESERVE_COMMAND, ntddstor/PPERSISTENT_RESERVE_COMMAND, PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND, ntddstor/PERSISTENT_RESERVE_COMMAND, _PERSISTENT_RESERVE_COMMAND
+ms.keywords : "_PERSISTENT_RESERVE_COMMAND, storage.persistent_reserve_command, PERSISTENT_RESERVE_COMMAND structure [Storage Devices], PPERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND, ntddstor/PERSISTENT_RESERVE_COMMAND, PPERSISTENT_RESERVE_COMMAND structure pointer [Storage Devices], structs-general_4fe3d6f6-6e9f-41f5-915c-2636707f429c.xml, ntddstor/PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PERSISTENT_RESERVE_COMMAND, *PPERSISTENT_RESERVE_COMMAND
+req.typenames : "*PPERSISTENT_RESERVE_COMMAND, PERSISTENT_RESERVE_COMMAND"
 ---
 
 # _PERSISTENT_RESERVE_COMMAND structure
@@ -84,9 +84,6 @@ The behavior of the storage device when a SCSI Persistent Reserve In command or 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2e17e480-325a-4a7c-84b8-07775ddd52bc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO, rilapitypes/RILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista], netvista.rilcallmodificationinfo_2
+ms.keywords : RILCALLMODIFICATIONINFO, rilapitypes/RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO, netvista.rilcallmodificationinfo_2, RILCALLMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO
+req.typenames : "*LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -100,7 +100,4 @@ typedef struct _RILCALLMODIFICATIONINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

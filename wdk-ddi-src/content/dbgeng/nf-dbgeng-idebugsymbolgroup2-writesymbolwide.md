@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ed77fddf-c23c-4522-a2c4-875f07d249fb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WriteSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging], WriteSymbolWide method, dbgeng/IDebugSymbolGroup2::WriteSymbolWide, debugger.writesymbolwide, IDebugSymbolGroup2::WriteSymbolWide, IDebugSymbolGroup2, WriteSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface, WriteSymbolWide
+ms.keywords : IDebugSymbolGroup2, debugger.writesymbolwide, WriteSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging], WriteSymbolWide method, dbgeng/IDebugSymbolGroup2::WriteSymbolWide, IDebugSymbolGroup2::WriteSymbolWide, WriteSymbolWide, WriteSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -93,20 +93,15 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549201">GetSymbolValueText</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 

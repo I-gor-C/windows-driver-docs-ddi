@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ffb1493f-6076-4b93-8431-b3ffd4679f96
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltallocatepoolalignedwithtag, FltAllocatePoolAlignedWithTag function [Installable File System Drivers], FltAllocatePoolAlignedWithTag, fltkernel/FltAllocatePoolAlignedWithTag, FltApiRef_a_to_d_b617aed0-5103-4a1e-aa0d-86247d99e803.xml
+ms.keywords : FltApiRef_a_to_d_b617aed0-5103-4a1e-aa0d-86247d99e803.xml, fltkernel/FltAllocatePoolAlignedWithTag, ifsk.fltallocatepoolalignedwithtag, FltAllocatePoolAlignedWithTag, FltAllocatePoolAlignedWithTag function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,22 +103,18 @@ Callers of <b>FltAllocatePoolAlignedWithTag</b> can be running at IRQL DISPATCH_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltfreepoolalignedwithtag.md">FltFreePoolAlignedWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreepoolalignedwithtag.md">FltFreePoolAlignedWithTag</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 

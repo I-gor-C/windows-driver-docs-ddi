@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 31cdb264-89a1-48dc-af0c-b18d4f077d0f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/PKSSTREAM_POINTER, *PKSSTREAM_POINTER, PKSSTREAM_POINTER structure pointer [Streaming Media Devices], avstruct_1856dc7a-3351-4a87-97a5-85b06d12ab30.xml, KSSTREAM_POINTER structure [Streaming Media Devices], stream.ksstream_pointer, KSSTREAM_POINTER, PKSSTREAM_POINTER, ks/KSSTREAM_POINTER, _KSSTREAM_POINTER
+ms.keywords : KSSTREAM_POINTER structure [Streaming Media Devices], *PKSSTREAM_POINTER, stream.ksstream_pointer, avstruct_1856dc7a-3351-4a87-97a5-85b06d12ab30.xml, ks/KSSTREAM_POINTER, KSSTREAM_POINTER, _KSSTREAM_POINTER, PKSSTREAM_POINTER structure pointer [Streaming Media Devices], ks/PKSSTREAM_POINTER, PKSSTREAM_POINTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,30 +64,28 @@ For general information about stream pointers, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
-
-<a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 
 <a href="..\ks\nf-ks-ksstreampointeradvanceoffsets.md">KsStreamPointerAdvanceOffsets</a>
 
 <a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
+
 <a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+
+<a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>
 
 <a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 
-<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
-
-<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
+<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
 
  
 

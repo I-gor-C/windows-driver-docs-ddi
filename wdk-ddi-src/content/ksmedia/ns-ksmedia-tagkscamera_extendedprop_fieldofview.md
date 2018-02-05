@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : CC3FFC63-8404-4EA6-9738-F0A3C52585B8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, stream.kscamera_extendedprop_fieldofview, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure pointer [Streaming Media Devices]
+ms.keywords : PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure pointer [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure [Streaming Media Devices], stream.kscamera_extendedprop_fieldofview
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ Reserved. Set to 0.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f588f59b-5efa-4783-bb45-935b91c69cb5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltParseFileNameInformation, FltParseFileNameInformation, ifsk.fltparsefilenameinformation, FltApiRef_p_to_z_37671009-fb66-4dba-ae61-23801aef9f21.xml, FltParseFileNameInformation function [Installable File System Drivers]
+ms.keywords : FltParseFileNameInformation, ifsk.fltparsefilenameinformation, FltParseFileNameInformation function [Installable File System Drivers], fltkernel/FltParseFileNameInformation, FltApiRef_p_to_z_37671009-fb66-4dba-ae61-23801aef9f21.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,28 +143,26 @@ The caller must not modify the contents of the <i>FileNameInformation</i> struct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP SP2 and later versions of the Windows operating system. Available in Windows XP SP2 and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltparsefilename.md">FltParseFileName</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformation.md">FltGetFileNameInformation</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>
-
-<a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltgettunneledname.md">FltGetTunneledName</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltparsefilename.md">FltParseFileName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetfilenameinformationunsafe.md">FltGetFileNameInformationUnsafe</a>
 
  
 

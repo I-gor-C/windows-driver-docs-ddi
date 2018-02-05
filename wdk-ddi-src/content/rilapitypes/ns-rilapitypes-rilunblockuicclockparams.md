@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7b5245e9-7f25-4697-932a-d7d1416e921c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilunblockuicclockparams_2, rilapitypes/RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILUNBLOCKUICCLOCKPARAMS
+ms.keywords : RILUNBLOCKUICCLOCKPARAMS, rilapitypes/RILUNBLOCKUICCLOCKPARAMS, netvista.rilunblockuicclockparams_2, RILUNBLOCKUICCLOCKPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILUNBLOCKUICCLOCKPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILUNBLOCKUICCLOCKPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

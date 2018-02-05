@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8725868e-00bc-45fe-ab9d-c192abd1a059
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortFreeCommonBuffer function [Display Devices], video/VideoPortFreeCommonBuffer, VideoPortFreeCommonBuffer, display.videoportfreecommonbuffer, VideoPort_Functions_0f1acebf-0fdf-4152-ad91-2cafed40296c.xml
+ms.keywords : video/VideoPortFreeCommonBuffer, display.videoportfreecommonbuffer, VideoPort_Functions_0f1acebf-0fdf-4152-ad91-2cafed40296c.xml, VideoPortFreeCommonBuffer, VideoPortFreeCommonBuffer function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,14 +91,12 @@ Except for <a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4839337b-0328-4919-8f49-d7847743845c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MxdcGetPDEVAdjustment, MxdcGetPDEVAdjustment function [Print Devices], print_xpsdrv_7e324989-1809-44e8-8b5b-c64f83740cd5.xml, mxdc/MxdcGetPDEVAdjustment, print.mxdcgetpdevadjustment
+ms.keywords : mxdc/MxdcGetPDEVAdjustment, print.mxdcgetpdevadjustment, MxdcGetPDEVAdjustment function [Print Devices], MxdcGetPDEVAdjustment, print_xpsdrv_7e324989-1809-44e8-8b5b-c64f83740cd5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -383,20 +383,16 @@ All rotation will be done on the imageable area. If a configuration component (U
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later versions of the Windows operating system. Available in Microsoft Windows XP and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | mxdc.h (include Mxdc.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554157">IPrintOemUIMXDC Interface</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484">GDIINFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554157">IPrintOemUIMXDC Interface</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7f5730d3-6e6c-490f-b2e5-e2d3615b4c3a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfpausecomplete, ndis/NdisFPauseComplete, filter_ndis_functions_ref_2f2cd8ef-a148-49d2-a00d-ec0acef7e310.xml, NdisFPauseComplete, NdisFPauseComplete function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisFPauseComplete function [Network Drivers Starting with Windows Vista], NdisFPauseComplete, ndis/NdisFPauseComplete, filter_ndis_functions_ref_2f2cd8ef-a148-49d2-a00d-ec0acef7e310.xml, netvista.ndisfpausecomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,12 +81,10 @@ After a pending pause operation is complete, the driver calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 

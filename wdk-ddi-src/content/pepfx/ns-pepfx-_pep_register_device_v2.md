@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A1363B34-CC5C-482E-8E8D-62D7263545E3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_REGISTER_DEVICE, PPEP_REGISTER_DEVICE_V2 structure pointer [Kernel-Mode Driver Architecture], kernel.pep_register_device_v2, _PEP_REGISTER_DEVICE_V2, pepfx/PEP_REGISTER_DEVICE_V2, PPEP_REGISTER_DEVICE_V2, pepfx/PPEP_REGISTER_DEVICE_V2, *PPEP_REGISTER_DEVICE, *PPEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE_V2 structure [Kernel-Mode Driver Architecture]
+ms.keywords : PPEP_REGISTER_DEVICE_V2 structure pointer [Kernel-Mode Driver Architecture], kernel.pep_register_device_v2, pepfx/PPEP_REGISTER_DEVICE_V2, PPEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE, PEP_REGISTER_DEVICE_V2, pepfx/PEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE_V2 structure [Kernel-Mode Driver Architecture], *PPEP_REGISTER_DEVICE_V2, *PPEP_REGISTER_DEVICE, _PEP_REGISTER_DEVICE_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE_V2"
+req.typenames : PEP_REGISTER_DEVICE_V2, *PPEP_REGISTER_DEVICE_V2
 ---
 
 # _PEP_REGISTER_DEVICE_V2 structure
@@ -83,9 +83,7 @@ The <b>Register</b> member contains a pointer to an input buffer allocated by Po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

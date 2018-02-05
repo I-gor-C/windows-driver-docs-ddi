@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0d0d793f-c2c1-48ff-9e7f-ef2697255bfa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetInitialStack routine [Kernel-Mode Driver Architecture], kernel.iogetinitialstack, IoGetInitialStack, k104_5e1ac4e5-b51e-4840-86e3-2ce67c634489.xml, wdm/IoGetInitialStack
+ms.keywords : wdm/IoGetInitialStack, IoGetInitialStack routine [Kernel-Mode Driver Architecture], IoGetInitialStack, k104_5e1ac4e5-b51e-4840-86e3-2ce67c634489.xml, kernel.iogetinitialstack
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,20 +64,19 @@ Highest-level drivers can call this routine, particularly file systems attemptin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlIoApcLte, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetremainingstacksize.md">IoGetRemainingStackSize</a>
-
 <a href="..\wdm\nf-wdm-iogetstacklimits.md">IoGetStackLimits</a>
+
+<a href="..\wdm\nf-wdm-iogetremainingstacksize.md">IoGetRemainingStackSize</a>
 
  
 

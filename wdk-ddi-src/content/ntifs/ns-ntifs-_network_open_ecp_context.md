@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 583fe92d-ce81-47b4-bd75-5566a5379790
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PNETWORK_OPEN_ECP_CONTEXT, ntifs/NETWORK_OPEN_ECP_CONTEXT, ntifs/PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT structure [Installable File System Drivers], ifsk.network_open_ecp_context, PNETWORK_OPEN_ECP_CONTEXT, PNETWORK_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], ECP_Structures_9cdb7dab-17df-47f3-b994-fca989b3442e.xml, _NETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT"
+ms.keywords : PNETWORK_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], _NETWORK_OPEN_ECP_CONTEXT, ntifs/PNETWORK_OPEN_ECP_CONTEXT, PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT, ntifs/NETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT structure [Installable File System Drivers], ifsk.network_open_ecp_context, ECP_Structures_9cdb7dab-17df-47f3-b994-fca989b3442e.xml, *PNETWORK_OPEN_ECP_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NETWORK_OPEN_ECP_CONTEXT, *PNETWORK_OPEN_ECP_CONTEXT
+req.typenames : "*PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT"
 ---
 
 # _NETWORK_OPEN_ECP_CONTEXT structure
@@ -88,18 +88,16 @@ Drivers that run on Windows 7 and later versions of Windows and that must interp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available starting with Windows Vista. This structure is available starting with Windows Vista. |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also
 
+<a href="..\ntifs\ne-ntifs-network_open_location_qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>
+
 <a href="..\ntifs\ns-ntifs-_network_open_ecp_context_v0.md">NETWORK_OPEN_ECP_CONTEXT_V0</a>
 
 <a href="..\ntifs\ne-ntifs-network_open_integrity_qualifier.md">NETWORK_OPEN_INTEGRITY_QUALIFIER</a>
-
-<a href="..\ntifs\ne-ntifs-network_open_location_qualifier.md">NETWORK_OPEN_LOCATION_QUALIFIER</a>
 
  
 

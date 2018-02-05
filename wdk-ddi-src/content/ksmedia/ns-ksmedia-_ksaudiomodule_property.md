@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1DE3F065-6F8E-402F-87EF-F9582E31BFFE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.ksaudiomodule_property, PKSAUDIOMODULE_PROPERTY, ksmedia/PKSAUDIOMODULE_PROPERTY, *PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY structure [Audio Devices], PKSAUDIOMODULE_PROPERTY structure pointer [Audio Devices], _KSAUDIOMODULE_PROPERTY, ksmedia/KSAUDIOMODULE_PROPERTY
+ms.keywords : ksmedia/KSAUDIOMODULE_PROPERTY, audio.ksaudiomodule_property, _KSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY structure [Audio Devices], *PKSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY structure pointer [Audio Devices], KSAUDIOMODULE_PROPERTY, ksmedia/PKSAUDIOMODULE_PROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSAUDIOMODULE_PROPERTY, *PKSAUDIOMODULE_PROPERTY
+req.typenames : "*PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY"
 ---
 
 # _KSAUDIOMODULE_PROPERTY structure
@@ -71,9 +71,7 @@ For more information about audio modules, see  <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | ksmedia.h |
 
 ## See Also

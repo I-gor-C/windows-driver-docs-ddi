@@ -120,6 +120,4 @@ When the <b>DeviceloControl</b> function is called with the IOCTL_CANCEL_IO I/O 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |
-| **IRQL** |  |

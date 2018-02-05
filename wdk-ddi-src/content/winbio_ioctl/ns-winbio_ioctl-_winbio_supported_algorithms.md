@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : cb2236f6-409a-4352-a02b-f7763e986d1f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : winbio_ioctl/PWINBIO_SUPPORTED_ALGORITHMS, PWINBIO_SUPPORTED_ALGORITHMS structure pointer [Biometric Devices], WINBIO_SUPPORTED_ALGORITHMS, winbio_ioctl/WINBIO_SUPPORTED_ALGORITHMS, biometric_ref_44bbda1a-1b9b-42d3-9034-9d0c3c4bac88.xml, _WINBIO_SUPPORTED_ALGORITHMS, biometric.winbio_supported_algorithms, *PWINBIO_SUPPORTED_ALGORITHMS, PWINBIO_SUPPORTED_ALGORITHMS, WINBIO_SUPPORTED_ALGORITHMS structure [Biometric Devices]
+ms.keywords : PWINBIO_SUPPORTED_ALGORITHMS, WINBIO_SUPPORTED_ALGORITHMS, biometric.winbio_supported_algorithms, *PWINBIO_SUPPORTED_ALGORITHMS, PWINBIO_SUPPORTED_ALGORITHMS structure pointer [Biometric Devices], WINBIO_SUPPORTED_ALGORITHMS structure [Biometric Devices], _WINBIO_SUPPORTED_ALGORITHMS, winbio_ioctl/PWINBIO_SUPPORTED_ALGORITHMS, biometric_ref_44bbda1a-1b9b-42d3-9034-9d0c3c4bac88.xml, winbio_ioctl/WINBIO_SUPPORTED_ALGORITHMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WINBIO_SUPPORTED_ALGORITHMS, *PWINBIO_SUPPORTED_ALGORITHMS
+req.typenames : "*PWINBIO_SUPPORTED_ALGORITHMS, WINBIO_SUPPORTED_ALGORITHMS"
 req.product : Windows 10 or later.
 ---
 
@@ -75,9 +75,7 @@ Specifies the HRESULT status of the I/O operation.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |
 
 ## See Also

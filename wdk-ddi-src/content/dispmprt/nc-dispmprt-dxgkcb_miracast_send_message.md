@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 
@@ -71,7 +71,9 @@ The size, in bytes, of the input buffer pointed to by <i>pInputBuffer</i>.
 
 `*pInputBuffer`
 
+A pointer to the input buffer. <i>InputBufferSize</i> specifies the size of the buffer.
 
+See Remarks for more info about the input buffer.
 
 `OutputBufferSize`
 
@@ -79,7 +81,9 @@ The size, in bytes, of the input buffer pointed to by <i>pInputBuffer</i>.
 
 `*pOutputBuffer`
 
+A pointer to the output buffer. <i>OutBufferSize</i> specifies the size of the buffer.
 
+See Remarks for more info about the output buffer.
 
 `pCallback`
 
@@ -166,22 +170,18 @@ DriverCallbackFunction(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | dispmprt.h (include Dispmprt.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_miracast_send_message_callback.md">DxgkCbMiracastSendMessageCallback</a>
 
 <a href="..\dispmprt\ns-dispmprt-_dxgk_miracast_display_callbacks.md">DXGK_MIRACAST_DISPLAY_CALLBACKS</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_miracast_create_context.md">DxgkDdiMiracastCreateContext</a>
 
  
 

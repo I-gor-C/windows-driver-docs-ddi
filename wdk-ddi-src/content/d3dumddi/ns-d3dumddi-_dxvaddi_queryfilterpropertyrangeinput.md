@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d073d326-6cc6-4216-b312-809d707aef3b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVA2_Structs_28a2aed9-57a1-4bd6-b8dc-c09bb9e821b0.xml, display.dxvaddi_queryfilterpropertyrangeinput, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure [Display Devices], DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, d3dumddi/DXVADDI_QUERYFILTERPROPERTYRANGEINPUT"
+ms.keywords : d3dumddi/DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure [Display Devices], display.dxvaddi_queryfilterpropertyrangeinput, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVA2_Structs_28a2aed9-57a1-4bd6-b8dc-c09bb9e821b0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -124,22 +124,20 @@ DXVADDI_DETAILFILTER_CHROMARADIUS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_valuerange.md">DXVADDI_VALUERANGE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
-
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_valuerange.md">DXVADDI_VALUERANGE</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 
  
 

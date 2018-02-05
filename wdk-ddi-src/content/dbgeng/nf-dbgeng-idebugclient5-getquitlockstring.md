@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 986C866E-D5AC-47CD-A666-EDF739E91761
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugclient5_getquitlockstring, IDebugClient5 interface [Windows Debugging], GetQuitLockString method, dbgeng/IDebugClient5::GetQuitLockString, GetQuitLockString, GetQuitLockString method [Windows Debugging], GetQuitLockString method [Windows Debugging], IDebugClient5 interface, IDebugClient5::GetQuitLockString, IDebugClient5
+ms.keywords : GetQuitLockString method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], GetQuitLockString method, dbgeng/IDebugClient5::GetQuitLockString, IDebugClient5::GetQuitLockString, GetQuitLockString method [Windows Debugging], GetQuitLockString, IDebugClient5, debugger.idebugclient5_getquitlockstring
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,14 +82,9 @@ The quit lock string
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

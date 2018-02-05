@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : a13bec15-67e1-45f9-be90-dee5c555ad64
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_USBSCAN_PIPE_INFORMATION, PUSBSCAN_PIPE_INFORMATION structure pointer [Imaging Devices], usbscan/USBSCAN_PIPE_INFORMATION, stifnc_3a31b5a2-4bd9-4e95-b10d-959c6caa8754.xml, *PUSBSCAN_PIPE_INFORMATION, usbscan/PUSBSCAN_PIPE_INFORMATION, image.usbscan_pipe_information, PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION structure [Imaging Devices]"
+ms.keywords : USBSCAN_PIPE_INFORMATION structure [Imaging Devices], *PUSBSCAN_PIPE_INFORMATION, usbscan/USBSCAN_PIPE_INFORMATION, _USBSCAN_PIPE_INFORMATION, PUSBSCAN_PIPE_INFORMATION, image.usbscan_pipe_information, PUSBSCAN_PIPE_INFORMATION structure pointer [Imaging Devices], usbscan/PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION, stifnc_3a31b5a2-4bd9-4e95-b10d-959c6caa8754.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -117,9 +117,6 @@ A <a href="..\usbscan\ne-usbscan-_raw_pipe_type.md">RAW_PIPE_TYPE</a>-typed valu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |
 
 ## See Also

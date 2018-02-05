@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 421bd075-e919-4389-af38-e0dd686f7c05
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortWritePortUchar routine [Storage Devices], StorPortWritePortUchar, storage.storportwriteportuchar, storport/StorPortWritePortUchar, storprt_602c6d78-179c-4eaa-8131-ec2be13b2050.xml
+ms.keywords : StorPortWritePortUchar, storprt_602c6d78-179c-4eaa-8131-ec2be13b2050.xml, storage.storportwriteportuchar, StorPortWritePortUchar routine [Storage Devices], storport/StorPortWritePortUchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,9 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportuchar.md">Scsi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

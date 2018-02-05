@@ -121,22 +121,18 @@ Return STATUS_SUCCESS or STATUS_PENDING. If a minidriver returns STATUS_PENDING,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL (See Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
 
 <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
 
 <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>
-
-<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
 
  
 

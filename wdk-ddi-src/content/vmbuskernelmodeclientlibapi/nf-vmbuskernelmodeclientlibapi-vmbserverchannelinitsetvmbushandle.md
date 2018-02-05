@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0ECF76C7-9475-439E-8E59-B2B7CD350D24
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbServerChannelInitSetVmbusHandle, VmbServerChannelInitSetVmbusHandle function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbServerChannelInitSetVmbusHandle, netvista.vmbserverchannelinitsetvmbushandle
+ms.keywords : vmbuskernelmodeclientlibapi/VmbServerChannelInitSetVmbusHandle, netvista.vmbserverchannelinitsetvmbushandle, VmbServerChannelInitSetVmbusHandle function [Network Drivers Starting with Windows Vista], VmbServerChannelInitSetVmbusHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -82,14 +82,12 @@ This function can be called while running in any thread context.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

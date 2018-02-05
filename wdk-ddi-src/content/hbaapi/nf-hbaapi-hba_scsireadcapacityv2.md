@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8347e1ef-1285-43a9-bea7-a9a59ec0dfd0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.hba_scsireadcapacityv2, HBA_ScsiReadCapacityV2, hbaapi/HBA_ScsiReadCapacityV2, fibreHBA_rtns_8ac08e6d-79aa-4eee-a352-aa8ff51ec85f.xml, HBA_ScsiReadCapacityV2 routine [Storage Devices]
+ms.keywords : storage.hba_scsireadcapacityv2, HBA_ScsiReadCapacityV2 routine [Storage Devices], HBA_ScsiReadCapacityV2, hbaapi/HBA_ScsiReadCapacityV2, fibreHBA_rtns_8ac08e6d-79aa-4eee-a352-aa8ff51ec85f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -177,14 +177,10 @@ Returned if an unspecified error occurred that prevented the execution of the SC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 68523fcb-bb0d-492f-b6ae-3dab4f6aa637
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_iscanceled, IWDFIoRequest2, IWDFIoRequest2::IsCanceled, IsCanceled, IWDFIoRequest2 interface, IsCanceled method, wudfddi/IWDFIoRequest2::IsCanceled, IsCanceled method, UMDFRequestObjectRef_7fdd0046-2e99-4221-9e73-c1bebf6251aa.xml, umdf.iwdfiorequest2_iscanceled, IsCanceled method, IWDFIoRequest2 interface
+ms.keywords : wdf.iwdfiorequest2_iscanceled, IWDFIoRequest2, UMDFRequestObjectRef_7fdd0046-2e99-4221-9e73-c1bebf6251aa.xml, IsCanceled, umdf.iwdfiorequest2_iscanceled, IsCanceled method, IWDFIoRequest2::IsCanceled, IsCanceled method, IWDFIoRequest2 interface, IWDFIoRequest2 interface, IsCanceled method, wudfddi/IWDFIoRequest2::IsCanceled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -80,24 +80,22 @@ For more information about <b>IsCanceled</b>, see <a href="https://docs.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559146">IWDFIoRequest::MarkCancelable</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559163">IWDFIoRequest::UnmarkCancelable</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F4F5005F-2BDA-4E58-A06A-2A4F1D34776D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsReferencevSwitchPacketContext0, FwpsReferencevSwitchPacketContext0 function [Network Drivers Starting with Windows Vista], netvista.fwpsreferencevswitchpacketcontext0, fwpsk/FwpsReferencevSwitchPacketContext0
+ms.keywords : FwpsReferencevSwitchPacketContext0 function [Network Drivers Starting with Windows Vista], FwpsReferencevSwitchPacketContext0, netvista.fwpsreferencevswitchpacketcontext0, fwpsk/FwpsReferencevSwitchPacketContext0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,20 +68,17 @@ The  <b>FwpsReferencevSwitchPacketContext0</b> function processes the <b>vSwitch
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsdereferencevswitchpacketcontext0.md">FwpsDereferencevSwitchPacketContext0</a>
-
 <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">FWPS_INCOMING_METADATA_VALUES0</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsdereferencevswitchpacketcontext0.md">FwpsDereferencevSwitchPacketContext0</a>
 
  
 

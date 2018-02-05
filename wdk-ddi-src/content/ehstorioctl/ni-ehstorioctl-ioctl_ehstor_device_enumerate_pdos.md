@@ -123,6 +123,4 @@ STATUS_INVALID_BUFFER_SIZE - The output buffer length supplied is insufficient t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
-| **IRQL** |  |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5429b533-1b85-426e-8540-6c72034d42dd
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4, IDebugDataSpaces4 interface [Windows Debugging], ReadMultiByteStringVirtualWide method, IDebugDataSpaces4::ReadMultiByteStringVirtualWide, ReadMultiByteStringVirtualWide, debugger.readmultibytestringvirtualwide, IDebugDataSpaces_c5a99b4a-a468-459e-acc1-f3a4f224f645.xml, ReadMultiByteStringVirtualWide method [Windows Debugging], ReadMultiByteStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::ReadMultiByteStringVirtualWide
+ms.keywords : ReadMultiByteStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4::ReadMultiByteStringVirtualWide, ReadMultiByteStringVirtualWide method [Windows Debugging], dbgeng/IDebugDataSpaces4::ReadMultiByteStringVirtualWide, IDebugDataSpaces4 interface [Windows Debugging], ReadMultiByteStringVirtualWide method, IDebugDataSpaces4, IDebugDataSpaces_c5a99b4a-a468-459e-acc1-f3a4f224f645.xml, ReadMultiByteStringVirtualWide, debugger.readmultibytestringvirtualwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -135,22 +135,17 @@ Note that even if S_OK is returned, the buffer may not have been large enough to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Winnls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
+
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554357">ReadUnicodeStringVirtualWide</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554300">ReadMultiByteStringVirtual</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
  
 

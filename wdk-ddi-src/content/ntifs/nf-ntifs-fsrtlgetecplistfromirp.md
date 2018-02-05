@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9e225f00-f830-488f-8bf0-666290dc40b0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlGetEcpListFromIrp routine [Installable File System Drivers], ntifs/FsRtlGetEcpListFromIrp, ifsk.fsrtlgetecplistfromirp, FsRtlGetEcpListFromIrp, fsrtlref_85b1fc72-e8ce-4909-a0d4-1eab35b3a0cb.xml
+ms.keywords : FsRtlGetEcpListFromIrp, fsrtlref_85b1fc72-e8ce-4909-a0d4-1eab35b3a0cb.xml, FsRtlGetEcpListFromIrp routine [Installable File System Drivers], ntifs/FsRtlGetEcpListFromIrp, ifsk.fsrtlgetecplistfromirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,14 +90,12 @@ To attach an ECP context structure list to an IRP, use the <a href="..\ntifs\nf-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 070ee8e2-80ed-4380-89ac-bfb5db2bcf7e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_pm_counted_string, ntddndis/NDIS_PM_COUNTED_STRING, NDIS_PM_COUNTED_STRING structure [Network Drivers Starting with Windows Vista], _NDIS_PM_COUNTED_STRING, *PNDIS_PM_COUNTED_STRING, PNDIS_PM_COUNTED_STRING structure pointer [Network Drivers Starting with Windows Vista], NDIS_PM_COUNTED_STRING, PNDIS_PM_COUNTED_STRING, miniport_power_management_ref_baaff596-1c2a-4cfc-865a-bb3f55988218.xml, ntddndis/PNDIS_PM_COUNTED_STRING
+ms.keywords : PNDIS_PM_COUNTED_STRING, PNDIS_PM_COUNTED_STRING structure pointer [Network Drivers Starting with Windows Vista], miniport_power_management_ref_baaff596-1c2a-4cfc-865a-bb3f55988218.xml, NDIS_PM_COUNTED_STRING structure [Network Drivers Starting with Windows Vista], _NDIS_PM_COUNTED_STRING, netvista.ndis_pm_counted_string, ntddndis/PNDIS_PM_COUNTED_STRING, ntddndis/NDIS_PM_COUNTED_STRING, NDIS_PM_COUNTED_STRING, *PNDIS_PM_COUNTED_STRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_PM_COUNTED_STRING, NDIS_PM_COUNTED_STRING"
+req.typenames : NDIS_PM_COUNTED_STRING, *PNDIS_PM_COUNTED_STRING
 ---
 
 # _NDIS_PM_COUNTED_STRING structure
@@ -71,9 +71,7 @@ The NDIS_PM_COUNTED_STRING structure specifies a limited size string that is use
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ECAB84B8-1C39-473C-A6AE-41D1EBDB1FF4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfinterrupt/WdfIrqPriorityNormal, WdfIrqPriorityHigh, wudfinterrupt/WdfIrqPriorityHigh, wdf.wdf_interrupt_priority_umdf, WdfIrqPriorityNormal, WdfIrqPriorityUndefined, *PWDF_INTERRUPT_PRIORITY, PWDF_INTERRUPT_PRIORITY, PWDF_INTERRUPT_PRIORITY enumeration pointer, _WDF_INTERRUPT_PRIORITY, wudfinterrupt/WDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityUndefined, WDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY enumeration, wudfinterrupt/WdfIrqPriorityLow, WdfIrqPriorityLow, wudfinterrupt/PWDF_INTERRUPT_PRIORITY, umdf.wdf_interrupt_priority
+ms.keywords : wudfinterrupt/WdfIrqPriorityUndefined, wdf.wdf_interrupt_priority_umdf, WDF_INTERRUPT_PRIORITY, WdfIrqPriorityHigh, umdf.wdf_interrupt_priority, WdfIrqPriorityUndefined, wudfinterrupt/WDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityNormal, wudfinterrupt/WdfIrqPriorityHigh, PWDF_INTERRUPT_PRIORITY, PWDF_INTERRUPT_PRIORITY enumeration pointer, _WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityLow, WdfIrqPriorityLow, WDF_INTERRUPT_PRIORITY enumeration, WdfIrqPriorityNormal, wudfinterrupt/PWDF_INTERRUPT_PRIORITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -87,8 +87,6 @@ The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_I
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
 

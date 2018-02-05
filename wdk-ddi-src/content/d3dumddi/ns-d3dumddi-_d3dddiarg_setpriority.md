@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d3dd52de-6d28-4d71-9b64-ba79e17bd9ee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_setpriority, UMDisplayDriver_param_Structs_e416cff1-5cad-4488-a3e2-ea0b42a7cd81.xml, D3DDDIARG_SETPRIORITY structure [Display Devices], _D3DDDIARG_SETPRIORITY, d3dumddi/D3DDDIARG_SETPRIORITY, D3DDDIARG_SETPRIORITY
+ms.keywords : display.d3dddiarg_setpriority, D3DDDIARG_SETPRIORITY, _D3DDDIARG_SETPRIORITY, UMDisplayDriver_param_Structs_e416cff1-5cad-4488-a3e2-ea0b42a7cd81.xml, d3dumddi/D3DDDIARG_SETPRIORITY, D3DDDIARG_SETPRIORITY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,7 @@ The priority level at which a texture is set determines its eviction order from 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

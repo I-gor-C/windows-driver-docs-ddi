@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E1CD6911-A54F-4B24-B9BE-59EF9F2C30E5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.vmbchannelinitsetmaximumpacketsize, VmbChannelInitSetMaximumPacketSize, VmbChannelInitSetMaximumPacketSize function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelInitSetMaximumPacketSize
+ms.keywords : netvista.vmbchannelinitsetmaximumpacketsize, VmbChannelInitSetMaximumPacketSize function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelInitSetMaximumPacketSize, VmbChannelInitSetMaximumPacketSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -118,14 +118,12 @@ the ring buffers is, in part, based on this maximum packet size.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |
 
 ## See Also
 

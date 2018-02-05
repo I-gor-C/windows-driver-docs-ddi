@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9cd17a86-6652-414d-a80d-2e61c0ac99b6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsiprt_be6690c0-6cfa-4a71-9877-176ed2c742e8.xml, ScsiPortCompleteRequest routine [Storage Devices], storage.scsiportcompleterequest, ScsiPortCompleteRequest, srb/ScsiPortCompleteRequest
+ms.keywords : ScsiPortCompleteRequest routine [Storage Devices], scsiprt_be6690c0-6cfa-4a71-9877-176ed2c742e8.xml, srb/ScsiPortCompleteRequest, storage.scsiportcompleterequest, ScsiPortCompleteRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -90,20 +90,15 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-
 <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
+
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
  
 

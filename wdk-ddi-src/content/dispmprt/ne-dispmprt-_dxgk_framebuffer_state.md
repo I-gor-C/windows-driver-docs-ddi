@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 911E04E4-A9B9-4354-8EAB-CEEF87D56852
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_framebuffer_state, FrameBufferStateUnknown, DXGK_FRAMEBUFFER_STATE, FrameBufferStateInitializedByDriver, FrameBufferStateInitializedByFirmware, dispmprt/DXGK_FRAMEBUFFER_STATE, DXGK_FRAMEBUFFER_STATE enumeration [Display Devices], dispmprt/FrameBufferStateInitializedByFirmware, dispmprt/FrameBufferStateUnknown, dispmprt/FrameBufferStateInitializedByDriver, _DXGK_FRAMEBUFFER_STATE
+ms.keywords : DXGK_FRAMEBUFFER_STATE, dispmprt/DXGK_FRAMEBUFFER_STATE, FrameBufferStateInitializedByDriver, FrameBufferStateUnknown, FrameBufferStateInitializedByFirmware, _DXGK_FRAMEBUFFER_STATE, display.dxgk_framebuffer_state, dispmprt/FrameBufferStateInitializedByFirmware, dispmprt/FrameBufferStateUnknown, DXGK_FRAMEBUFFER_STATE enumeration [Display Devices], dispmprt/FrameBufferStateInitializedByDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,7 +77,4 @@ FrameBufferStateUnknown will be reported if the frame buffer state is undefined,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dispmprt.h |

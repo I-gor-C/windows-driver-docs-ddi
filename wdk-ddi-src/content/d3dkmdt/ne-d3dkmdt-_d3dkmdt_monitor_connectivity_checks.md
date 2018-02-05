@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8a32fef1-e404-478d-8b99-064ed456e37c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_MCC_ENFORCE, DmEnums_ac54453d-cc4d-4ea7-ad10-943389a837d7.xml, D3DKMDT_MONITOR_CONNECTIVITY_CHECKS enumeration [Display Devices], D3DKMDT_MCC_UNINITIALIZED, d3dkmdt/D3DKMDT_MCC_ENFORCE, d3dkmdt/D3DKMDT_MCC_IGNORE, d3dkmdt/D3DKMDT_MCC_UNINITIALIZED, D3DKMDT_MCC_IGNORE, _D3DKMDT_MONITOR_CONNECTIVITY_CHECKS, display.d3dkmdt_monitor_connectivity_checks, d3dkmdt/D3DKMDT_MONITOR_CONNECTIVITY_CHECKS, D3DKMDT_MONITOR_CONNECTIVITY_CHECKS
+ms.keywords : d3dkmdt/D3DKMDT_MCC_UNINITIALIZED, display.d3dkmdt_monitor_connectivity_checks, d3dkmdt/D3DKMDT_MONITOR_CONNECTIVITY_CHECKS, D3DKMDT_MCC_IGNORE, D3DKMDT_MONITOR_CONNECTIVITY_CHECKS enumeration [Display Devices], _D3DKMDT_MONITOR_CONNECTIVITY_CHECKS, DmEnums_ac54453d-cc4d-4ea7-ad10-943389a837d7.xml, D3DKMDT_MCC_UNINITIALIZED, D3DKMDT_MONITOR_CONNECTIVITY_CHECKS, d3dkmdt/D3DKMDT_MCC_IGNORE, d3dkmdt/D3DKMDT_MCC_ENFORCE, D3DKMDT_MCC_ENFORCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ The <b>MonitorConnectivityChecks</b> member of the <a href="..\d3dkmddi\ns-d3dkm
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

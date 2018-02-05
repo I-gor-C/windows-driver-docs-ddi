@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e1f5dde2-8e45-4904-bbf3-bd2358f95a5b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_IMSSYSTEMTYPE_MAX, rilapitypes/RIL_IMSSYSTEMTYPE_WIFI, rilapitypes/RIL_IMSSYSTEMTYPE_LTE, RIL_IMSSYSTEMTYPE_MAX, RILIMSSYSTEMTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_IMSSYSTEMTYPE_UNKNOWN, RILIMSSYSTEMTYPE, rilapitypes/RIL_IMSSYSTEMTYPE_UNKNOWN, RIL_IMSSYSTEMTYPE_WIFI, RIL_IMSSYSTEMTYPE_LTE, rilapitypes/RILIMSSYSTEMTYPE, netvista.rilimssystemtype
+ms.keywords : rilapitypes/RILIMSSYSTEMTYPE, rilapitypes/RIL_IMSSYSTEMTYPE_LTE, RILIMSSYSTEMTYPE, netvista.rilimssystemtype, rilapitypes/RIL_IMSSYSTEMTYPE_WIFI, RIL_IMSSYSTEMTYPE_LTE, rilapitypes/RIL_IMSSYSTEMTYPE_MAX, rilapitypes/RIL_IMSSYSTEMTYPE_UNKNOWN, RILIMSSYSTEMTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_IMSSYSTEMTYPE_UNKNOWN, RIL_IMSSYSTEMTYPE_WIFI, RIL_IMSSYSTEMTYPE_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,9 +82,6 @@ enum RILIMSSYSTEMTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

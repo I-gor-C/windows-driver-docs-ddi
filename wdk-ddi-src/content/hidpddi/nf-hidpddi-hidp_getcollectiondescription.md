@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : F8FD0C10-115D-4ACF-8C7F-127D342EA9CD
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidpddi/HidP_GetCollectionDescription, HidP_GetCollectionDescription function [Human Input Devices], hid.hidp_getcollectiondescription, HidP_GetCollectionDescription
+ms.keywords : hidpddi/HidP_GetCollectionDescription, HidP_GetCollectionDescription, HidP_GetCollectionDescription function [Human Input Devices], hid.hidp_getcollectiondescription
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHID_XFER_PACKET, HID_XFER_PACKET"
+req.typenames : HID_XFER_PACKET, *PHID_XFER_PACKET
 ---
 
 
@@ -183,11 +183,8 @@ For a raw report descriptor that is specified by the <i>ReportDesc</i> parameter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidpddi.h (include Hidpddi.h) |
-| **Library** |  |
+| **Library** | Hidparse.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

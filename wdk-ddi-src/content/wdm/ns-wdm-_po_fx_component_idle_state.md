@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4F0BF45D-F854-480C-B0AC-8134C6BF3266
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPO_FX_COMPONENT_IDLE_STATE, wdm/PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE, PPO_FX_COMPONENT_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_IDLE_STATE structure [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_IDLE_STATE, wdm/PPO_FX_COMPONENT_IDLE_STATE, PPO_FX_COMPONENT_IDLE_STATE, kernel.po_fx_component_idle_state"
+ms.keywords : PPO_FX_COMPONENT_IDLE_STATE, wdm/PPO_FX_COMPONENT_IDLE_STATE, *PPO_FX_COMPONENT_IDLE_STATE, PPO_FX_COMPONENT_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE, wdm/PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE structure [Kernel-Mode Driver Architecture], kernel.po_fx_component_idle_state
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PO_FX_COMPONENT_IDLE_STATE, *PPO_FX_COMPONENT_IDLE_STATE
+req.typenames : "*PPO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -76,9 +76,7 @@ Do not set <b>TransitionLatency</b> and <b>ResidencyRequirement</b> to <b>PO_FX_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | wdm.h |
 
 ## See Also

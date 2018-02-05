@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9677C044-354B-4575-B2EC-187D1B4E8C61
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTOR_UNIT_ATTRIBUTES structure pointer [Storage Devices], storport/PSTOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES, _STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, storport/STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES structure [Storage Devices], storage.stor_unit_attributes, PSTOR_UNIT_ATTRIBUTES
+ms.keywords : storport/STOR_UNIT_ATTRIBUTES, PSTOR_UNIT_ATTRIBUTES structure pointer [Storage Devices], _STOR_UNIT_ATTRIBUTES, storport/PSTOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, PSTOR_UNIT_ATTRIBUTES, storage.stor_unit_attributes, STOR_UNIT_ATTRIBUTES structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,7 @@ If the miniport driver supports asynchronous notifications, the <b>AsyncNotifica
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

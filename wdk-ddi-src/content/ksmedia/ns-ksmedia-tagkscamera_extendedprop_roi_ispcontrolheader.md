@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : F57B0E44-A6A1-4C43-83EE-8DF4A605C0D0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure pointer [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, ksmedia/KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, stream.kscamera_extendedprop_roi_ispcontrolheader
+ms.keywords : stream.kscamera_extendedprop_roi_ispcontrolheader, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure pointer [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, ksmedia/KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
+req.typenames : "*PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure
@@ -69,7 +69,4 @@ The sum of this structure size, all <a href="..\ksmedia\ns-ksmedia-tagkscamera_e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

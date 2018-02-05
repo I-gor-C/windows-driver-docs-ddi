@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 1ab9caa3-344a-49c8-8f40-75d9c251be04
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_BATTERY_MANUFACTURE_DATE, *PBATTERY_MANUFACTURE_DATE, bat-struct_7c707930-4017-4761-94fc-e4322cd6ead9.xml, poclass/PBATTERY_MANUFACTURE_DATE, BATTERY_MANUFACTURE_DATE structure [Battery Devices], PBATTERY_MANUFACTURE_DATE, poclass/BATTERY_MANUFACTURE_DATE, battery.battery_manufacture_date, BATTERY_MANUFACTURE_DATE, PBATTERY_MANUFACTURE_DATE structure pointer [Battery Devices]"
+ms.keywords : poclass/BATTERY_MANUFACTURE_DATE, PBATTERY_MANUFACTURE_DATE, bat-struct_7c707930-4017-4761-94fc-e4322cd6ead9.xml, _BATTERY_MANUFACTURE_DATE, PBATTERY_MANUFACTURE_DATE structure pointer [Battery Devices], poclass/PBATTERY_MANUFACTURE_DATE, battery.battery_manufacture_date, BATTERY_MANUFACTURE_DATE structure [Battery Devices], BATTERY_MANUFACTURE_DATE, *PBATTERY_MANUFACTURE_DATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ Specifies a value &gt;= 1996.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | poclass.h (include Batclass.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : af655cd2-2e1f-4d78-aff3-3875106b50bc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetModuleVersionInformation method [Windows Debugging], GetModuleVersionInformation method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetModuleVersionInformation, IDebugSymbols2::GetModuleVersionInformation, GetModuleVersionInformation method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleVersionInformation method, dbgeng/IDebugSymbols3::GetModuleVersionInformation, GetModuleVersionInformation, IDebugSymbols2 interface [Windows Debugging], GetModuleVersionInformation method, debugger.getmoduleversioninformation, IDebugSymbols3, IDebugSymbols3::GetModuleVersionInformation, IDebugSymbols_a325db82-91a3-48d9-b189-8971cd5eaf75.xml
+ms.keywords : GetModuleVersionInformation method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], GetModuleVersionInformation method, GetModuleVersionInformation method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols_a325db82-91a3-48d9-b189-8971cd5eaf75.xml, dbgeng/IDebugSymbols2::GetModuleVersionInformation, GetModuleVersionInformation, debugger.getmoduleversioninformation, GetModuleVersionInformation method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3::GetModuleVersionInformation, IDebugSymbols3 interface [Windows Debugging], GetModuleVersionInformation method, IDebugSymbols3, dbgeng/IDebugSymbols3::GetModuleVersionInformation, IDebugSymbols2::GetModuleVersionInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -134,26 +134,21 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547080">GetModuleByIndex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547927">GetNumberModules</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547138">GetModuleByOffset2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547927">GetNumberModules</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547080">GetModuleByIndex</a>
 
  
 

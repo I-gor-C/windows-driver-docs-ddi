@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d9d79c58-6ef6-4917-b499-fd5a70dc8829
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_SEGMENTDESCRIPTOR, DmStructs_129432bb-660c-4779-9860-dcc97f3a6ee4.xml, _DXGK_SEGMENTDESCRIPTOR, display.dxgk_segmentdescriptor, d3dkmddi/DXGK_SEGMENTDESCRIPTOR, DXGK_SEGMENTDESCRIPTOR structure [Display Devices]
+ms.keywords : display.dxgk_segmentdescriptor, _DXGK_SEGMENTDESCRIPTOR, DXGK_SEGMENTDESCRIPTOR, d3dkmddi/DXGK_SEGMENTDESCRIPTOR, DmStructs_129432bb-660c-4779-9860-dcc97f3a6ee4.xml, DXGK_SEGMENTDESCRIPTOR structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -117,28 +117,26 @@ For AGP-type aperture segments (where the <b>Agp</b> bit-field flag is specified
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
 
  
 

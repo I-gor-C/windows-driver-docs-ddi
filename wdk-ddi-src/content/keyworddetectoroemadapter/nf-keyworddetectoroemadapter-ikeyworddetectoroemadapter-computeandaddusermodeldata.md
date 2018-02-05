@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4E810EAD-3864-44C1-9845-60DAB288BB48
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, IKeywordDetectorOemAdapter, audio.ikeyworddetectoroemadapter_computeandaddusermodeldata, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface [Audio Devices], ComputeAndAddUserModelData method, ComputeAndAddUserModelData, IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface
+ms.keywords : audio.ikeyworddetectoroemadapter_computeandaddusermodeldata, IKeywordDetectorOemAdapter, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface [Audio Devices], ComputeAndAddUserModelData method, IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface, ComputeAndAddUserModelData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -135,14 +135,10 @@ The processing was unable to complete.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | keyworddetectoroemadapter.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | keyworddetectoroemadapter.h |
 
 ## See Also
 

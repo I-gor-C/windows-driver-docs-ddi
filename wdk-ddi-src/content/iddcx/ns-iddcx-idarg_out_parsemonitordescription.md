@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 30f4c178-5ef8-4650-b396-1e4bc9cc9125
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : iddcx/IDARG_OUT_PARSEMONITORDESCRIPTION, display.idarg_out_parsemonitordescription, IDARG_OUT_PARSEMONITORDESCRIPTION, IDARG_OUT_PARSEMONITORDESCRIPTION structure [Display Devices]
+ms.keywords : display.idarg_out_parsemonitordescription, IDARG_OUT_PARSEMONITORDESCRIPTION, iddcx/IDARG_OUT_PARSEMONITORDESCRIPTION, IDARG_OUT_PARSEMONITORDESCRIPTION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ typedef struct IDARG_OUT_PARSEMONITORDESCRIPTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

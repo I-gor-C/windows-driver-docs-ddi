@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 545a5014-aa07-49ee-92b7-2ae95f4ce785
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_processor_group_ref_6bee6183-d82f-4512-a05d-134a95e898ae.xml, NdisGroupMaxProcessorCount function [Network Drivers Starting with Windows Vista], ndis/NdisGroupMaxProcessorCount, netvista.ndisgroupmaxprocessorcount, NdisGroupMaxProcessorCount
+ms.keywords : netvista.ndisgroupmaxprocessorcount, NdisGroupMaxProcessorCount function [Network Drivers Starting with Windows Vista], NdisGroupMaxProcessorCount, ndis/NdisGroupMaxProcessorCount, ndis_processor_group_ref_6bee6183-d82f-4512-a05d-134a95e898ae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,25 +77,22 @@ An NDIS driver might call the
     <a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a> function
     because it only returns the processor count for processor group 0.</div><div> </div>The processor count can change at runtime on SKUs that support hot-add functionality for CPUs. To
     obtain an active processor count, call the 
-    <mshelp:link keywords="netvista.ndisgroupactiveprocessorcount" tabindex="0"><b>
-    NdisGroupActiveProcessorCount</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisgroupactiveprocessorcount.md">
+    NdisGroupActiveProcessorCount</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisgroupactiveprocessorcount" tabindex="0"><b>
-   NdisGroupActiveProcessorCount</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisgroupactiveprocessorcount.md">
+   NdisGroupActiveProcessorCount</a>
 
 <a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a>
 

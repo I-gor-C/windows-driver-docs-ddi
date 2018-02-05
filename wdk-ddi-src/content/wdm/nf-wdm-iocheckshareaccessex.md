@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E6CDE415-FCC2-4039-B6DD-168113D9A490
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCheckShareAccessEx, wdm/IoCheckShareAccessEx, IoCheckShareAccessEx routine [Kernel-Mode Driver Architecture], kernel.iocheckshareaccessex
+ms.keywords : IoCheckShareAccessEx, wdm/IoCheckShareAccessEx, kernel.iocheckshareaccessex, IoCheckShareAccessEx routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,10 @@ The <b>IoCheckShareAccessEx</b> routine returns STATUS_SUCCESS if the requester'
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ntoskrnl.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1d3c1084-8f51-4c8a-813e-6700d60c3dab
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_783d82e8-71ad-488c-be54-4bd316b949d7.xml, PNDIS_WWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_pin_list, ndiswwan/NDIS_WWAN_PIN_LIST, _NDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST, ndiswwan/PNDIS_WWAN_PIN_LIST, *PNDIS_WWAN_PIN_LIST, PNDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "_NDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_PIN_LIST, *PNDIS_WWAN_PIN_LIST, netvista.ndis_wwan_pin_list, NDIS_WWAN_PIN_LIST, WwanRef_783d82e8-71ad-488c-be54-4bd316b949d7.xml, PNDIS_WWAN_PIN_LIST, ndiswwan/NDIS_WWAN_PIN_LIST, PNDIS_WWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -185,16 +185,14 @@ The operation failed because a bad SIM card was detected.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_pin_list.md">WWAN_PIN_LIST</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_pin_list.md">WWAN_PIN_LIST</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dd6d436c-6166-4baf-b180-67f7aa7238e3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsQueryObjectCreateItem, stream.ksqueryobjectcreateitem, ksfunc_57cde673-cd08-4018-b01e-45214058b435.xml, KsQueryObjectCreateItem function [Streaming Media Devices], KsQueryObjectCreateItem
+ms.keywords : KsQueryObjectCreateItem, KsQueryObjectCreateItem function [Streaming Media Devices], ks/KsQueryObjectCreateItem, stream.ksqueryobjectcreateitem, ksfunc_57cde673-cd08-4018-b01e-45214058b435.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ The <b>KsQueryObjectCreateItem</b> function returns a pointer to a create item.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

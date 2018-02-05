@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8a6fd914-94f9-4ccf-9b0a-cc102fd90965
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : miniport/GROUP_AFFINITY, kernel.group_affinity, kstruct_b_9d437322-c6bb-4579-8d7b-144a7513bbd9.xml, PGROUP_AFFINITY structure pointer [Kernel-Mode Driver Architecture], GROUP_AFFINITY structure [Kernel-Mode Driver Architecture], GROUP_AFFINITY, miniport/PGROUP_AFFINITY, PGROUP_AFFINITY, *PGROUP_AFFINITY, _GROUP_AFFINITY
+ms.keywords : kernel.group_affinity, PGROUP_AFFINITY, miniport/PGROUP_AFFINITY, _GROUP_AFFINITY, GROUP_AFFINITY, kstruct_b_9d437322-c6bb-4579-8d7b-144a7513bbd9.xml, miniport/GROUP_AFFINITY, PGROUP_AFFINITY structure pointer [Kernel-Mode Driver Architecture], *PGROUP_AFFINITY, GROUP_AFFINITY structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGROUP_AFFINITY, GROUP_AFFINITY"
+req.typenames : GROUP_AFFINITY, *PGROUP_AFFINITY
 ---
 
 # _GROUP_AFFINITY structure
@@ -75,20 +75,18 @@ A <b>GROUP_AFFINITY</b> structure can describe an interrupt affinity, which is a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | miniport.h (include Winnt.h, Ntdef.h, Windef.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
+<a href="..\wdm\nf-wdm-iogetdevicenumanode.md">IoGetDeviceNumaNode</a>
 
-<a href="..\wdm\nf-wdm-kesetsystemgroupaffinitythread.md">KeSetSystemGroupAffinityThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 
 <a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a>
 
-<a href="..\wdm\nf-wdm-iogetdevicenumanode.md">IoGetDeviceNumaNode</a>
+<a href="..\wdm\nf-wdm-kesetsystemgroupaffinitythread.md">KeSetSystemGroupAffinityThread</a>
 
  
 

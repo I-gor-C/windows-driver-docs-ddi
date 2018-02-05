@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4a0d0b10-9773-40d7-962c-cf2acffcee47
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsiprt_946bea8c-eb6d-4614-9dc0-004ee2501457.xml, srb/ScsiPortGetPhysicalAddress, ScsiPortGetPhysicalAddress routine [Storage Devices], storage.scsiportgetphysicaladdress, ScsiPortGetPhysicalAddress
+ms.keywords : storage.scsiportgetphysicaladdress, ScsiPortGetPhysicalAddress, srb/ScsiPortGetPhysicalAddress, ScsiPortGetPhysicalAddress routine [Storage Devices], scsiprt_946bea8c-eb6d-4614-9dc0-004ee2501457.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -105,26 +105,21 @@ Due to constraints on some buses, such as ISA, the address returned by this rout
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
+
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
 
 <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
 <a href="..\srb\nf-srb-scsiportgetvirtualaddress.md">ScsiPortGetVirtualAddress</a>
 
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
+<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6C86A931-C87C-4273-9409-A45A3FDB8B4C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/ZonesAttributeTypeAndLengthMayDifferent, ZonesAttributeTypeAndLengthMayDifferent, PSTORAGE_ZONES_ATTRIBUTES enumeration pointer [Storage Devices], *PSTORAGE_ZONES_ATTRIBUTES, PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES enumeration [Storage Devices], ntddstor/STORAGE_ZONES_ATTRIBUTES, ZonesAttributeTypeSameLengthSame, ntddstor/ZonesAttributeTypeSameLastZoneLengthDifferent, STORAGE_ZONES_ATTRIBUTES, ZonesAttributeTypeMayDifferentLengthSame, ZonesAttributeTypeSameLastZoneLengthDifferent, ntddstor/ZonesAttributeTypeMayDifferentLengthSame, storage.storage_zones_attributes, ntddstor/PSTORAGE_ZONES_ATTRIBUTES, ntddstor/ZonesAttributeTypeSameLengthSame, _STORAGE_ZONES_ATTRIBUTES
+ms.keywords : ZonesAttributeTypeAndLengthMayDifferent, ntddstor/ZonesAttributeTypeMayDifferentLengthSame, PSTORAGE_ZONES_ATTRIBUTES, ntddstor/ZonesAttributeTypeAndLengthMayDifferent, ntddstor/ZonesAttributeTypeSameLengthSame, ntddstor/PSTORAGE_ZONES_ATTRIBUTES, storage.storage_zones_attributes, ntddstor/ZonesAttributeTypeSameLastZoneLengthDifferent, _STORAGE_ZONES_ATTRIBUTES, ZonesAttributeTypeMayDifferentLengthSame, ntddstor/STORAGE_ZONES_ATTRIBUTES, PSTORAGE_ZONES_ATTRIBUTES enumeration pointer [Storage Devices], ZonesAttributeTypeSameLastZoneLengthDifferent, ZonesAttributeTypeSameLengthSame, *PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES enumeration [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES"
+req.typenames : STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES
 ---
 
 # _STORAGE_ZONES_ATTRIBUTES Enumeration
@@ -81,7 +81,4 @@ typedef enum _STORAGE_ZONES_ATTRIBUTES {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h |

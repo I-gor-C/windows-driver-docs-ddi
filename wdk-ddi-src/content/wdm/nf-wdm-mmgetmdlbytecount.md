@@ -8,7 +8,7 @@ old-project : Benchmark
 ms.assetid : a0493418-2ce2-4917-bf9f-e4dc726a3847
 ms.author : windowsdriverdev
 ms.date : 1/12/2018
-ms.keywords : wdm/MmGetMdlByteCount, k106_f750d750-c5ca-44cf-b8f1-f52d2eb8bc27.xml, MmGetMdlByteCount, MmGetMdlByteCount macro [Tools], kernel.mmgetmdlbytecount
+ms.keywords : k106_f750d750-c5ca-44cf-b8f1-f52d2eb8bc27.xml, MmGetMdlByteCount, MmGetMdlByteCount macro [Tools], kernel.mmgetmdlbytecount, wdm/MmGetMdlByteCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -69,17 +69,15 @@ Callers of <b>MmGetMdlByteCount</b> can be running at any IRQL. Usually, callers
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | wdm.h |
 | **IRQL** | Any level (see Remarks section) |
 | **DDI compliance rules** | MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
-
 <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>

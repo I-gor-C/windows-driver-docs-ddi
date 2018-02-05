@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c29aa1f0-d274-4782-9b56-31a84e2686e4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILSETUICCLOCKENABLEDPARAMS, netvista.rilsetuicclockenabledparams_2, *LPRILSETUICCLOCKENABLEDPARAMS
+ms.keywords : netvista.rilsetuicclockenabledparams_2, rilapitypes/RILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS, *LPRILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILSETUICCLOCKENABLEDPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

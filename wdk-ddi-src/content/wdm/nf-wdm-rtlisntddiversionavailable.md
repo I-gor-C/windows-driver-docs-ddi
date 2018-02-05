@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 54017f67-b01f-48bd-a5bb-598902672c4f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIsNtDdiVersionAvailable routine [Kernel-Mode Driver Architecture], kernel.rtlisntddiversionavailable, wdm/RtlIsNtDdiVersionAvailable, k109_62b3efdd-6678-4e88-92cb-eaacff80bfab.xml, RtlIsNtDdiVersionAvailable
+ms.keywords : k109_62b3efdd-6678-4e88-92cb-eaacff80bfab.xml, RtlIsNtDdiVersionAvailable, wdm/RtlIsNtDdiVersionAvailable, RtlIsNtDdiVersionAvailable routine [Kernel-Mode Driver Architecture], kernel.rtlisntddiversionavailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -165,14 +165,11 @@ For more information about <b>RtlIsNtDdiVersionAvailable</b> and <b>RtlIsService
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. A compatibility library supports this routine in earlier versions of Windows (see Remarks section). Available starting with Windows Vista. A compatibility library supports this routine in earlier versions of Windows (see Remarks section). |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Rtlver.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

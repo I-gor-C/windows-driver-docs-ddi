@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 70214b6e-92d2-418a-ad8a-8701df02fdc3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : IOMEGA_JAZ, ntddstor/DVD_RW, ntddstor/DVD_R, IBM_3480, ntddstor/SONY_12_WO, CD_RW, ntddstor/VXATape_2, ntddstor/ABL_5_WO, storage.storage_media_type, ntddstor/AIT_8mm, ABL_5_WO, ntddstor/DVD_RAM, MO_3_RW, ntddstor/IBM_Magstar_3590, ntddstor/MP2_8mm, IOMEGA_ZIP, ntddstor/PSTORAGE_MEDIA_TYPE, PSTORAGE_MEDIA_TYPE, ntddstor/PC_5_WO, HITACHI_12_WO, ntddstor/ADR_1, DST_S, ntddstor/DV_6mm, ntddstor/SONY_DTF, ntddstor/SYQUEST_EZ135, MP_8mm, ntddstor/IBM_3490E, ntddstor/AME_8mm, SYQUEST_SYJET, STORAGE_MEDIA_TYPE, ntddstor/MO_5_LIMDOW, ntddstor/MO_NFR_525, AIT_8mm, ntddstor/ADR_2, PD_5_RW, ntddstor/DDS_4mm, DST_M, PSTORAGE_MEDIA_TYPE enumeration pointer [Storage Devices], ntddstor/PC_5_RW, ntddstor/PD_5_RW, ntddstor/SAIT, IBM_Magstar_3590, ntddstor/PINNACLE_APEX_5_RW, STK_9940, ntddstor/STK_9940, CD_ROM, ntddstor/DMI, ntddstor/MiniQic, MO_5_RW, ntddstor/HITACHI_12_WO, STK_DATA_D3, MiniQic, ntddstor/NIKON_12_RW, DDS_4mm, LTO_Accelis, ntddstor/MP_8mm, ntddstor/NCTP, MO_5_WO, VXATape, IBM_Magstar_MP, ntddstor/QIC, LTO_Ultrium, ntddstor/VXATape_1, ntddstor/CLEANER_CARTRIDGE, Travan, ntddstor/IOMEGA_ZIP, ntddstor/SONY_D2, DVD_RW, ADR_1, structs-general_d1e0e1bc-5ce9-49d0-9ab5-94b5e495d124.xml, ntddstor/CYGNET_12_WO, PC_5_WO, ntddstor/MO_3_RW, SYQUEST_EZ135, ntddstor/STK_9840, _STORAGE_MEDIA_TYPE, KODAK_14_WO, IBM_3490E, ntddstor/CD_R, ntddstor/AVATAR_F2, DST_L, STORAGE_MEDIA_TYPE enumeration [Storage Devices], SONY_DTF, ntddstor/DST_L, PC_5_RW, SYQUEST_EZFLYER, ntddstor/SYQUEST_SYJET, SAIT, VXATape_2, DVD_R, ntddstor/DLT, ntddstor/LTO_Accelis, ntddstor/AIT1_8mm, *PSTORAGE_MEDIA_TYPE, CLEANER_CARTRIDGE, ntddstor/MO_5_WO, ntddstor/IBM_Magstar_MP, SONY_D2, ntddstor/SYQUEST_EZFLYER, ntddstor/KODAK_14_WO, PINNACLE_APEX_5_RW, AIT1_8mm, DVD_RAM, AME_8mm, NIKON_12_RW, NCTP, ntddstor/LTO_Ultrium, ntddstor/MO_5_RW, SONY_12_WO, DMI, ntddstor/STK_DATA_D3, ntddstor/IBM_3480, AVATAR_F2, ntddstor/PHILIPS_12_WO, ntddstor/VXATape, ntddstor/Travan, ADR_2, STK_9840, ntddstor/DST_S, MO_5_LIMDOW, DV_6mm, MP2_8mm, ntddstor/CD_ROM, DVD_ROM, PHILIPS_12_WO, ntddstor/DVD_ROM, QIC, CD_R, ntddstor/STORAGE_MEDIA_TYPE, ntddstor/CD_RW, ntddstor/DST_M, CYGNET_12_WO, DLT, ntddstor/IOMEGA_JAZ, VXATape_1, MO_NFR_525
+ms.keywords : ntddstor/DVD_RAM, ntddstor/MO_5_RW, PSTORAGE_MEDIA_TYPE enumeration pointer [Storage Devices], ntddstor/STK_9840, IBM_3480, ntddstor/PHILIPS_12_WO, ntddstor/VXATape, Travan, SYQUEST_EZFLYER, ntddstor/MP2_8mm, ntddstor/STK_DATA_D3, CD_ROM, ntddstor/SYQUEST_SYJET, ntddstor/QIC, ntddstor/MP_8mm, DMI, ntddstor/AME_8mm, CLEANER_CARTRIDGE, MO_3_RW, DST_M, ntddstor/DST_M, ntddstor/MiniQic, ntddstor/DST_L, LTO_Ultrium, ntddstor/Travan, ntddstor/PC_5_WO, ntddstor/SYQUEST_EZFLYER, LTO_Accelis, ntddstor/PINNACLE_APEX_5_RW, ntddstor/AIT_8mm, ntddstor/CD_RW, ntddstor/ADR_1, ntddstor/SONY_DTF, STK_DATA_D3, MP2_8mm, AME_8mm, ntddstor/DV_6mm, ntddstor/MO_NFR_525, MO_NFR_525, VXATape_1, ADR_2, SONY_D2, DV_6mm, NCTP, SONY_12_WO, CD_RW, PHILIPS_12_WO, *PSTORAGE_MEDIA_TYPE, ntddstor/MO_5_LIMDOW, PINNACLE_APEX_5_RW, ntddstor/SONY_12_WO, ntddstor/DVD_ROM, ntddstor/IOMEGA_JAZ, ntddstor/LTO_Accelis, ntddstor/ADR_2, ntddstor/IBM_Magstar_MP, SYQUEST_SYJET, IBM_Magstar_MP, CD_R, ntddstor/IBM_Magstar_3590, ntddstor/MO_5_WO, ntddstor/SAIT, SONY_DTF, ntddstor/SYQUEST_EZ135, ntddstor/VXATape_2, AIT_8mm, ntddstor/STORAGE_MEDIA_TYPE, NIKON_12_RW, ntddstor/VXATape_1, _STORAGE_MEDIA_TYPE, ADR_1, ntddstor/PD_5_RW, ntddstor/DVD_R, SYQUEST_EZ135, MiniQic, STK_9940, ntddstor/DST_S, AIT1_8mm, MO_5_LIMDOW, MO_5_RW, SAIT, storage.storage_media_type, ntddstor/LTO_Ultrium, PSTORAGE_MEDIA_TYPE, ntddstor/HITACHI_12_WO, IBM_Magstar_3590, ntddstor/NCTP, PD_5_RW, ntddstor/ABL_5_WO, STORAGE_MEDIA_TYPE, IOMEGA_ZIP, ntddstor/IOMEGA_ZIP, DVD_RAM, HITACHI_12_WO, PC_5_WO, CYGNET_12_WO, STORAGE_MEDIA_TYPE enumeration [Storage Devices], MP_8mm, ntddstor/MO_3_RW, ntddstor/DLT, ntddstor/IBM_3490E, PC_5_RW, ntddstor/CLEANER_CARTRIDGE, ntddstor/CD_R, ntddstor/CYGNET_12_WO, ntddstor/DMI, ABL_5_WO, ntddstor/SONY_D2, VXATape, AVATAR_F2, DST_S, IBM_3490E, DVD_R, ntddstor/AVATAR_F2, DVD_ROM, ntddstor/KODAK_14_WO, ntddstor/NIKON_12_RW, DVD_RW, DLT, DDS_4mm, DST_L, ntddstor/DVD_RW, ntddstor/STK_9940, ntddstor/AIT1_8mm, IOMEGA_JAZ, ntddstor/DDS_4mm, QIC, STK_9840, structs-general_d1e0e1bc-5ce9-49d0-9ab5-94b5e495d124.xml, ntddstor/PSTORAGE_MEDIA_TYPE, KODAK_14_WO, ntddstor/IBM_3480, MO_5_WO, VXATape_2, ntddstor/CD_ROM, ntddstor/PC_5_RW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -434,18 +434,15 @@ typedef enum _STORAGE_MEDIA_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also
 
-<a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
 
 <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
+<a href="..\ntddstor\ns-ntddstor-_get_media_types.md">GET_MEDIA_TYPES</a>
 
  
 

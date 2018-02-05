@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5a77a8bc-b477-41b3-bc4e-07c6c14291a1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsReferenceClock, avintfc_e2017894-2e83-4091-84b7-5ea793076b29.xml, stream.iksreferenceclock_getstate, IKsReferenceClock interface [Streaming Media Devices], GetState method, IKsReferenceClock::GetState, GetState, GetState method [Streaming Media Devices], GetState method [Streaming Media Devices], IKsReferenceClock interface, ks/IKsReferenceClock::GetState
+ms.keywords : stream.iksreferenceclock_getstate, IKsReferenceClock::GetState, IKsReferenceClock interface [Streaming Media Devices], GetState method, IKsReferenceClock, GetState, GetState method [Streaming Media Devices], GetState method [Streaming Media Devices], IKsReferenceClock interface, ks/IKsReferenceClock::GetState, avintfc_e2017894-2e83-4091-84b7-5ea793076b29.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ks.h |
 
 ## See Also
 

@@ -100,9 +100,7 @@ Bytes buffer contains the result of the transmission. The buffer points to the S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | winsmcrd.h |
-| **IRQL** |  |
 
 ## See Also
 

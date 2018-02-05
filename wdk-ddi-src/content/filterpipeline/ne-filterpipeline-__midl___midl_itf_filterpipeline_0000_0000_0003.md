@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9fab1cba-fe67-4654-ae33-3de41f0427f7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "__MIDL___MIDL_itf_filterpipeline_0000_0000_0003, XpsJob_DocumentSequenceAdded, filterpipeline/XpsJob_DocumentSequenceAdded, filterpipeline_67998379-96d5-4e6f-abc3-602526b12276.xml, print.expsjobconsumption, filterpipeline/XpsJob_FixedDocumentAdded, filterpipeline/XpsJob_FixedPageAdded, EXpsJobConsumption, EXpsJobConsumption enumeration [Print Devices], filterpipeline/EXpsJobConsumption, XpsJob_FixedDocumentAdded, XpsJob_FixedPageAdded"
+ms.keywords : "__MIDL___MIDL_itf_filterpipeline_0000_0000_0003, EXpsJobConsumption enumeration [Print Devices], XpsJob_DocumentSequenceAdded, filterpipeline/EXpsJobConsumption, XpsJob_FixedDocumentAdded, filterpipeline/XpsJob_FixedDocumentAdded, XpsJob_FixedPageAdded, EXpsJobConsumption, filterpipeline/XpsJob_FixedPageAdded, filterpipeline_67998379-96d5-4e6f-abc3-602526b12276.xml, filterpipeline/XpsJob_DocumentSequenceAdded, print.expsjobconsumption"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,4 @@ A pipeline does not necessarily need one of the EXpsJobConsumption enumeration v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |

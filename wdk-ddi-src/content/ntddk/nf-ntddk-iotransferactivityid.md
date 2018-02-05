@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : BA6EBD60-B7D8-4EDE-A655-2F18F27E6299
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/IoTransferActivityId, IoTransferActivityId routine [Kernel-Mode Driver Architecture], IoTransferActivityId, kernel.iotransferactivityid
+ms.keywords : ntddk/IoTransferActivityId, IoTransferActivityId, IoTransferActivityId routine [Kernel-Mode Driver Architecture], kernel.iotransferactivityid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,9 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

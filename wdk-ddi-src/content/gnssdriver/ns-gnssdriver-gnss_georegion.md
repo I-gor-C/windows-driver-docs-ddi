@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 70FC3BCE-3869-4263-8870-BB97438CB5F1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PGNSS_GEOREGION structure pointer [Sensor Devices], GNSS_GEOREGION, gnssdriver/GNSS_GEOREGION, PGNSS_GEOREGION, sensors.gnss_georegion, gnssdriver/PGNSS_GEOREGION, *PGNSS_GEOREGION, GNSS_GEOREGION structure [Sensor Devices]
+ms.keywords : gnssdriver/PGNSS_GEOREGION, sensors.gnss_georegion, GNSS_GEOREGION structure [Sensor Devices], gnssdriver/GNSS_GEOREGION, PGNSS_GEOREGION, *PGNSS_GEOREGION, GNSS_GEOREGION, PGNSS_GEOREGION structure pointer [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_GEOREGION, *PGNSS_GEOREGION
+req.typenames : "*PGNSS_GEOREGION, GNSS_GEOREGION"
 ---
 
 # GNSS_GEOREGION structure
@@ -75,7 +75,4 @@ A geographical shape is used to define a geofence.  Windows 10 currently suppor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

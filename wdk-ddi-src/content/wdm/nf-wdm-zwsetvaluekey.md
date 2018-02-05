@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5e0bcf87-5776-4465-849c-6d4c06832797
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ZwSetValueKey, kernel.zwsetvaluekey, ZwSetValueKey, NtSetValueKey, ZwSetValueKey routine [Kernel-Mode Driver Architecture], k111_08954f01-0f74-4054-a52a-b00fff0dc166.xml, wdm/NtSetValueKey
+ms.keywords : ZwSetValueKey routine [Kernel-Mode Driver Architecture], ZwSetValueKey, k111_08954f01-0f74-4054-a52a-b00fff0dc166.xml, NtSetValueKey, kernel.zwsetvaluekey, wdm/NtSetValueKey, wdm/ZwSetValueKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -226,12 +226,11 @@ For more information about working with registry keys, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport) |
 
@@ -239,21 +238,21 @@ For more information about working with registry keys, see <a href="https://msdn
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546580">HalAssignSlotResources</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwflushkey.md">ZwFlushKey</a>
-
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
 
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+<a href="..\wdm\nf-wdm-zwflushkey.md">ZwFlushKey</a>
+
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c584e508-b0f1-4809-808e-089e9a7fbcf9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILUICCRESPONSE, *LPRILUICCRESPONSE, netvista.riluiccresponse, ntddrilapitypes/RILUICCRESPONSE, RILUICCRESPONSE structure [Network Drivers Starting with Windows Vista]
+ms.keywords : ntddrilapitypes/RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE, RILUICCRESPONSE structure [Network Drivers Starting with Windows Vista], netvista.riluiccresponse
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILUICCRESPONSE, *LPRILUICCRESPONSE
+req.typenames : "*LPRILUICCRESPONSE, RILUICCRESPONSE"
 ---
 
 # RILUICCRESPONSE structure
@@ -84,7 +84,4 @@ typedef struct _RILUICCRESPONSE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

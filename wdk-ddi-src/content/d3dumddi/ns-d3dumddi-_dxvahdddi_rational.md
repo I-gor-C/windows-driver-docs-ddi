@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4560fb48-24c3-4beb-acc3-b8d2ed3a81d3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXVAHDDDI_RATIONAL, d3dumddi/DXVAHDDDI_RATIONAL, DXVAHDDDI_RATIONAL structure [Display Devices], display.dxvahdddi_rational, DXVA2_Structs_9e1313ee-e48b-4e3d-9f13-40af1babef82.xml, DXVAHDDDI_RATIONAL"
+ms.keywords : DXVAHDDDI_RATIONAL structure [Display Devices], DXVA2_Structs_9e1313ee-e48b-4e3d-9f13-40af1babef82.xml, DXVAHDDDI_RATIONAL, d3dumddi/DXVAHDDDI_RATIONAL, _DXVAHDDDI_RATIONAL, display.dxvahdddi_rational
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,7 +68,5 @@ The NTSC frame rate is 30000/1001, and the PAL frame rate is 25/1.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_RATIONAL is supported beginning with the Windows 7 operating system. DXVAHDDDI_RATIONAL is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

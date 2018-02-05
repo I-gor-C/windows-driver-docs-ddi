@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3f53a22f-b5d6-4e3d-987d-989bd5840b2a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fsrtlref_d1eb1778-7643-44df-8f68-edc995b22246.xml, ifsk.fsrtlderegisteruncprovider, FsRtlDeregisterUncProvider, ntifs/FsRtlDeregisterUncProvider, FsRtlDeregisterUncProvider routine [Installable File System Drivers]
+ms.keywords : fsrtlref_d1eb1778-7643-44df-8f68-edc995b22246.xml, FsRtlDeregisterUncProvider, ifsk.fsrtlderegisteruncprovider, FsRtlDeregisterUncProvider routine [Installable File System Drivers], ntifs/FsRtlDeregisterUncProvider
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,11 @@ For more information, see the following sections in the Design Guide:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

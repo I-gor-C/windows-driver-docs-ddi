@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 397d882d-c82a-4686-b9ca-58a2fade5256
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilgsmnmr, RILGSMNMR, *LPRILGSMNMR, RILGSMNMR structure [Network Drivers Starting with Windows Vista], rilapitypes/RILGSMNMR
+ms.keywords : RILGSMNMR, rilapitypes/RILGSMNMR, *LPRILGSMNMR, netvista.rilgsmnmr, RILGSMNMR structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILGSMNMR, *LPRILGSMNMR
+req.typenames : "*LPRILGSMNMR, RILGSMNMR"
 req.product : Windows 10 or later.
 ---
 
@@ -101,9 +101,6 @@ x=63, RSS &gt; -49dBm
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

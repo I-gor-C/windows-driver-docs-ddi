@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 56a0e888-8048-4774-a46f-8a0beebfb9f2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883_structures_760d5112-e681-4c00-b178-66aadbe95b62.xml, PFCP_FRAME structure pointer [Buses], FCP_FRAME, _FCP_FRAME, FCP_FRAME structure [Buses], 61883/FCP_FRAME, *PFCP_FRAME, PFCP_FRAME, IEEE.fcp_frame, 61883/PFCP_FRAME
+ms.keywords : 61883/PFCP_FRAME, PFCP_FRAME, *PFCP_FRAME, IEEE.fcp_frame, PFCP_FRAME structure pointer [Buses], FCP_FRAME structure [Buses], 61883/FCP_FRAME, FCP_FRAME, _FCP_FRAME, 61883_structures_760d5112-e681-4c00-b178-66aadbe95b62.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,20 +69,17 @@ The FCP request for this frame.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536974">Av61883_GetFcpRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536989">Av61883_SendFcpRequest</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536974">Av61883_GetFcpRequest</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536989">Av61883_SendFcpRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>
 
  
 

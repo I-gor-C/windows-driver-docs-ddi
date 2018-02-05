@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : DD614794-5E54-4538-91C5-8777B244143C
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENT_STREAMALLOCATOR_FREEFRAME, ks/KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME, ks/KSEVENT_STREAMALLOCATOR_FREEFRAME, ks/KSEVENT_STREAMALLOCATOR, KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME, KSEVENT_STREAMALLOCATOR enumeration [Streaming Media Devices], KSEVENT_STREAMALLOCATOR, stream.ksevent_streamallocator
+ms.keywords : ks/KSEVENT_STREAMALLOCATOR, KSEVENT_STREAMALLOCATOR, stream.ksevent_streamallocator, KSEVENT_STREAMALLOCATOR_FREEFRAME, KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME, ks/KSEVENT_STREAMALLOCATOR_FREEFRAME, ks/KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME, KSEVENT_STREAMALLOCATOR enumeration [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h |

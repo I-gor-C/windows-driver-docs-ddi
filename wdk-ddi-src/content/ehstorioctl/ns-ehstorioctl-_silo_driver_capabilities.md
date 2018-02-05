@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E2CD35A6-0FF2-4ABA-850E-12683C5F0D8D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ehstorioctl/SILO_DRIVER_CAPABILITIES, _SILO_DRIVER_CAPABILITIES, CAP_BANDING_SUPPORT, SILO_DRIVER_CAPABILITIES structure [Storage Devices], PSILO_DRIVER_CAPABILITIES structure pointer [Storage Devices], CAP_ON_DEMAND_AUTHENTICATION, *PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES, storage.silo_driver_capabilities, PSILO_DRIVER_CAPABILITIES, ehstorioctl/PSILO_DRIVER_CAPABILITIES
+ms.keywords : storage.silo_driver_capabilities, SILO_DRIVER_CAPABILITIES, CAP_ON_DEMAND_AUTHENTICATION, *PSILO_DRIVER_CAPABILITIES, PSILO_DRIVER_CAPABILITIES, ehstorioctl/SILO_DRIVER_CAPABILITIES, ehstorioctl/PSILO_DRIVER_CAPABILITIES, CAP_BANDING_SUPPORT, _SILO_DRIVER_CAPABILITIES, PSILO_DRIVER_CAPABILITIES structure pointer [Storage Devices], SILO_DRIVER_CAPABILITIES structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # _SILO_DRIVER_CAPABILITIES structure
@@ -109,18 +109,16 @@ To receive band management requests from the enhanced storage class driver, a si
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
 
 ## See Also
 
-<a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_perform_authz.md">IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ</a>
-
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_update_lba_filter_table.md">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>
 
 <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_report_capabilities.md">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a>
+
+<a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_driver_perform_authz.md">IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ</a>
 
  
 

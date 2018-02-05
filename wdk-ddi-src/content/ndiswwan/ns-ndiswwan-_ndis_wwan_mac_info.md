@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : C55DC50B-5A1B-496E-BBB8-8EB94A9CFD2F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_MAC_INFO, netvista.ndis_wwan_mac_info, _NDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO, ndiswwan/NDIS_WWAN_MAC_INFO, PNDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_MAC_INFO structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_MAC_INFO"
+ms.keywords : PNDIS_WWAN_MAC_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_MAC_INFO, _NDIS_WWAN_MAC_INFO, PNDIS_WWAN_MAC_INFO, netvista.ndis_wwan_mac_info, ndiswwan/NDIS_WWAN_MAC_INFO, ndiswwan/PNDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_MAC_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO"
+req.typenames : NDIS_WWAN_MAC_INFO, *PNDIS_WWAN_MAC_INFO
 ---
 
 # _NDIS_WWAN_MAC_INFO structure
@@ -69,7 +69,5 @@ Reserved. Do not use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8.1 and later versions of Windows. Available in Windows 8.1 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |

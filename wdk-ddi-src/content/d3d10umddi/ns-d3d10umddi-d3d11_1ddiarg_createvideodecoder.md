@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c309e9b1-b2bc-40bc-90b9-5c070ba48957
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_CREATEVIDEODECODER, display.d3d11_1ddiarg_createvideodecoder, d3d10umddi/D3D11_1DDIARG_CREATEVIDEODECODER, D3D11_1DDIARG_CREATEVIDEODECODER structure [Display Devices]
+ms.keywords : D3D11_1DDIARG_CREATEVIDEODECODER structure [Display Devices], display.d3d11_1ddiarg_createvideodecoder, D3D11_1DDIARG_CREATEVIDEODECODER, d3d10umddi/D3D11_1DDIARG_CREATEVIDEODECODER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md">D3D11_1
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

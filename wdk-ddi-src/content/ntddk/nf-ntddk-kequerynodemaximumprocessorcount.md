@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 56688002-d481-45a6-bfb0-e7761f9ae055
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_15c5df15-b04a-41bd-9aec-2e402e2824a9.xml, KeQueryNodeMaximumProcessorCount routine [Kernel-Mode Driver Architecture], KeQueryNodeMaximumProcessorCount, wdm/KeQueryNodeMaximumProcessorCount, kernel.kequerynodemaximumprocessorcount
+ms.keywords : kernel.kequerynodemaximumprocessorcount, KeQueryNodeMaximumProcessorCount routine [Kernel-Mode Driver Architecture], wdm/KeQueryNodeMaximumProcessorCount, KeQueryNodeMaximumProcessorCount, k105_15c5df15-b04a-41bd-9aec-2e402e2824a9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -54,7 +54,7 @@ USHORT KeQueryNodeMaximumProcessorCount(
 
 `NodeNumber`
 
-The node number. If a NUMA multiprocessor system contains <i>n</i> nodes, valid node numbers are in the range 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
+The node number. If a NUMA multiprocessor system contains <i>n</i> nodes, valid node numbers are in the range 0 to <i>n</i>-1. To get the highest node number (<i>n</i>-1) in the system, call the <a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a> routine.
 
 
 ## Return Value
@@ -70,18 +70,16 @@ The count returned by this routine includes any logical processors that can be d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
+<a href="..\wdm\nf-wdm-kequeryhighestnodenumber.md">KeQueryHighestNodeNumber</a>
 
  
 

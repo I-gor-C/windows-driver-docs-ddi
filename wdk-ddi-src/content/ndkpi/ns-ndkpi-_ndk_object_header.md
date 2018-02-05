@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 12E3ED4A-F078-4489-BC84-69EE735CAEF8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDK_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], _NDK_OBJECT_HEADER, PNDK_OBJECT_HEADER, ndkpi/PNDK_OBJECT_HEADER, PNDK_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], ndkpi/NDK_OBJECT_HEADER, NDK_OBJECT_HEADER, netvista.ndk_object_header
+ms.keywords : ndkpi/NDK_OBJECT_HEADER, NDK_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], PNDK_OBJECT_HEADER, PNDK_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], NDK_OBJECT_HEADER, ndkpi/PNDK_OBJECT_HEADER, _NDK_OBJECT_HEADER, netvista.ndk_object_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -93,32 +93,34 @@ Set the  <b>NdkReserved</b> member to zero. The NDK provider must not modify thi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header_reserved_block.md">NDK_OBJECT_HEADER_RESERVED_BLOCK</a>
-
 <a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
-
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_object_header_reserved_block.md">NDK_OBJECT_HEADER_RESERVED_BLOCK</a>
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
 
+<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
+
 <a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>
+
+<a href="..\ndkpi\ne-ndkpi-_ndk_object_type.md">NDK_OBJECT_TYPE</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_invalidate.md">NDK_FN_INVALIDATE</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
 
@@ -128,11 +130,7 @@ Set the  <b>NdkReserved</b> member to zero. The NDK provider must not modify thi
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
-
-<a href="..\ndkpi\ne-ndkpi-_ndk_object_type.md">NDK_OBJECT_TYPE</a>
-
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_invalidate.md">NDK_FN_INVALIDATE</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>
 
  
 

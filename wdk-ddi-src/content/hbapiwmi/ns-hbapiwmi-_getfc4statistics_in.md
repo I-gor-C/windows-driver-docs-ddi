@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 10e3c823-97e3-47e9-8545-94cd186e5b59
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PGetFC4Statistics_IN, PGetFC4Statistics_IN structure pointer [Storage Devices], hbapiwmi/GetFC4Statistics_IN, *PGetFC4Statistics_IN, _GetFC4Statistics_IN, storage.getfc4statistics_in, GetFC4Statistics_IN structure [Storage Devices], hbapiwmi/PGetFC4Statistics_IN, structs-Fibre_17ea3e0e-1cf9-4cf8-9128-1152e610847c.xml, GetFC4Statistics_IN
+ms.keywords : hbapiwmi/PGetFC4Statistics_IN, GetFC4Statistics_IN, PGetFC4Statistics_IN structure pointer [Storage Devices], _GetFC4Statistics_IN, structs-Fibre_17ea3e0e-1cf9-4cf8-9128-1152e610847c.xml, *PGetFC4Statistics_IN, storage.getfc4statistics_in, PGetFC4Statistics_IN, hbapiwmi/GetFC4Statistics_IN, GetFC4Statistics_IN structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GetFC4Statistics_IN, *PGetFC4Statistics_IN
+req.typenames : "*PGetFC4Statistics_IN, GetFC4Statistics_IN"
 ---
 
 # _GetFC4Statistics_IN structure
@@ -70,9 +70,6 @@ For a definition of Nx_Port, see the T11 committee's specification for <i>Fibre 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

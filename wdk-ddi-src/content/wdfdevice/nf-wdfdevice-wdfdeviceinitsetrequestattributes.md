@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ac705ff9-8019-47f9-8842-05f9152af29c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetRequestAttributes method, kmdf.wdfdeviceinitsetrequestattributes, WdfDeviceInitSetRequestAttributes, wdfdevice/WdfDeviceInitSetRequestAttributes, wdf.wdfdeviceinitsetrequestattributes, PFN_WDFDEVICEINITSETREQUESTATTRIBUTES, DFDeviceObjectGeneralRef_30c50afa-81a1-4f3c-a2b0-987920922a4f.xml
+ms.keywords : wdf.wdfdeviceinitsetrequestattributes, WdfDeviceInitSetRequestAttributes method, kmdf.wdfdeviceinitsetrequestattributes, WdfDeviceInitSetRequestAttributes, wdfdevice/WdfDeviceInitSetRequestAttributes, PFN_WDFDEVICEINITSETREQUESTATTRIBUTES, DFDeviceObjectGeneralRef_30c50afa-81a1-4f3c-a2b0-987920922a4f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,12 +80,11 @@ Your driver must call <b>WdfDeviceInitSetRequestAttributes</b> from within its <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1A205DD3-FCE2-4EA1-A6B3-CE60300EC651
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_READ_PORT_BUFFER_UCHAR function, wdfhwaccess/WDF_READ_PORT_BUFFER_UCHAR, WDF_READ_PORT_BUFFER_UCHAR, wdf.wdf_read_port_buffer_uchar
+ms.keywords : wdf.wdf_read_port_buffer_uchar, WDF_READ_PORT_BUFFER_UCHAR function, wdfhwaccess/WDF_READ_PORT_BUFFER_UCHAR, WDF_READ_PORT_BUFFER_UCHAR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,8 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

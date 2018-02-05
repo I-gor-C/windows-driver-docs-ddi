@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0C1862D6-1252-4CF7-926A-C4647D545255
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_AUTH_AKAP_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_AKAP_CHALLENGE, wwan/PWWAN_AUTH_AKAP_CHALLENGE, *PWWAN_AUTH_AKAP_CHALLENGE, netvista.wwan_auth_akap_challenge, WWAN_AUTH_AKAP_CHALLENGE structure [Network Drivers Starting with Windows Vista], PWWAN_AUTH_AKAP_CHALLENGE, _WWAN_AUTH_AKAP_CHALLENGE, WWAN_AUTH_AKAP_CHALLENGE
+ms.keywords : WWAN_AUTH_AKAP_CHALLENGE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_AKAP_CHALLENGE, netvista.wwan_auth_akap_challenge, PWWAN_AUTH_AKAP_CHALLENGE, wwan/PWWAN_AUTH_AKAP_CHALLENGE, *PWWAN_AUTH_AKAP_CHALLENGE, _WWAN_AUTH_AKAP_CHALLENGE, WWAN_AUTH_AKAP_CHALLENGE, PWWAN_AUTH_AKAP_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_AUTH_AKAP_CHALLENGE, WWAN_AUTH_AKAP_CHALLENGE"
+req.typenames : WWAN_AUTH_AKAP_CHALLENGE, *PWWAN_AUTH_AKAP_CHALLENGE
 req.product : Windows 10 or later.
 ---
 
@@ -77,9 +77,7 @@ The <a href="..\wwan\ns-wwan-_wwan_auth_challenge.md">WWAN_AUTH_CHALLENGE</a> st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

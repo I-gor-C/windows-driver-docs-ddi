@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e1c77758-0249-4ec6-9244-329c0b823e44
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], RemoveBreakpoint2 method, debugger.removebreakpoint2, RemoveBreakpoint2 method [Windows Debugging], IDebugControl4, IDebugControl4::RemoveBreakpoint2, dbgeng/IDebugControl4::RemoveBreakpoint2, RemoveBreakpoint2, RemoveBreakpoint2 method [Windows Debugging], IDebugControl4 interface
+ms.keywords : debugger.removebreakpoint2, IDebugControl4::RemoveBreakpoint2, RemoveBreakpoint2 method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], RemoveBreakpoint2 method, dbgeng/IDebugControl4::RemoveBreakpoint2, RemoveBreakpoint2, IDebugControl4, RemoveBreakpoint2 method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,22 +87,17 @@ After <b>RemoveBreakpoint</b> and <b>RemoveBreakpoint2</b> are called, the break
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537856">AddBreakpoint</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a>
 
  
 

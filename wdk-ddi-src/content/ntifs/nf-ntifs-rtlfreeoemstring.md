@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cd9bc03d-1f57-420c-9430-d2d742f654e1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFreeOemString, rtlref_ffc98e3c-a96f-4250-a527-bcd1ba2ce506.xml, ifsk.rtlfreeoemstring, RtlFreeOemString routine [Installable File System Drivers], ntifs/RtlFreeOemString
+ms.keywords : rtlref_ffc98e3c-a96f-4250-a527-bcd1ba2ce506.xml, RtlFreeOemString, ifsk.rtlfreeoemstring, ntifs/RtlFreeOemString, RtlFreeOemString routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,26 +70,23 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlupcaseunicodestringtocountedoemstring.md">RtlUpcaseUnicodeStringToCountedOemString</a>
-
-<a href="..\ntifs\nf-ntifs-rtlunicodestringtooemstring.md">RtlUnicodeStringToOemString</a>
-
-<a href="..\ntifs\nf-ntifs-rtlupcaseunicodestringtooemstring.md">RtlUpcaseUnicodeStringToOemString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
 
 <a href="..\ntifs\nf-ntifs-rtlunicodestringtocountedoemstring.md">RtlUnicodeStringToCountedOemString</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+<a href="..\ntifs\nf-ntifs-rtlupcaseunicodestringtocountedoemstring.md">RtlUpcaseUnicodeStringToCountedOemString</a>
+
+<a href="..\ntifs\nf-ntifs-rtlupcaseunicodestringtooemstring.md">RtlUpcaseUnicodeStringToOemString</a>
+
+<a href="..\ntifs\nf-ntifs-rtlunicodestringtooemstring.md">RtlUnicodeStringToOemString</a>
 
  
 

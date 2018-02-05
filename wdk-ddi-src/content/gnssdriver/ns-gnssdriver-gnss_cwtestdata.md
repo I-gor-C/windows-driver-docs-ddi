@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 7F1C8574-8891-4ACB-BB25-2666148E3D02
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.gnss_cwtestdata, gnssdriver/PGNSS_CWTESTDATA, GNSS_CWTESTDATA structure [Sensor Devices], PGNSS_CWTESTDATA structure pointer [Sensor Devices], *PGNSS_CWTESTDATA, gnssdriver/GNSS_CWTESTDATA, PGNSS_CWTESTDATA, GNSS_CWTESTDATA
+ms.keywords : sensors.gnss_cwtestdata, GNSS_CWTESTDATA structure [Sensor Devices], gnssdriver/GNSS_CWTESTDATA, PGNSS_CWTESTDATA structure pointer [Sensor Devices], GNSS_CWTESTDATA, gnssdriver/PGNSS_CWTESTDATA, PGNSS_CWTESTDATA, *PGNSS_CWTESTDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGNSS_CWTESTDATA, GNSS_CWTESTDATA"
+req.typenames : GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
 ---
 
 # GNSS_CWTESTDATA structure
@@ -96,7 +96,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

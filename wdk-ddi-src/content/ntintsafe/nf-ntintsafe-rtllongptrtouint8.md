@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1E7BB805-1A91-4DA6-A7E9-E60DD8D4AAF3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongPtrToUInt8, kernel.rtllongptrtouint8, RtlLongPtrToUInt8 function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongPtrToUInt8
+ms.keywords : kernel.rtllongptrtouint8, ntintsafe/RtlLongPtrToUInt8, RtlLongPtrToUInt8, RtlLongPtrToUInt8 function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

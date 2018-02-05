@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1398056B-6AC3-4F92-8981-58C193907D6F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoIsFileObjectIgnoringSharing routine [Installable File System Drivers], IoIsFileObjectIgnoringSharing, ntddk/IoIsFileObjectIgnoringSharing, ifsk.ioisfileobjectignoringsharing
+ms.keywords : ifsk.ioisfileobjectignoringsharing, ntddk/IoIsFileObjectIgnoringSharing, IoIsFileObjectIgnoringSharing, IoIsFileObjectIgnoringSharing routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,12 @@ Pointer to a file object for the file.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any |
-| **DDI compliance rules** |  |
 
 ## See Also
 

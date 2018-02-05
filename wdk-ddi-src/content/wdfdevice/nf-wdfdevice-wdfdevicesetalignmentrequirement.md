@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 47e857d0-1423-45e5-a5a5-54507b8fa315
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicesetalignmentrequirement, WdfDeviceSetAlignmentRequirement, wdfdevice/WdfDeviceSetAlignmentRequirement, PFN_WDFDEVICESETALIGNMENTREQUIREMENT, WdfDeviceSetAlignmentRequirement method, DFDeviceObjectGeneralRef_9648c639-95b8-4dd9-8d30-8fb6352fe5f6.xml, kmdf.wdfdevicesetalignmentrequirement
+ms.keywords : PFN_WDFDEVICESETALIGNMENTREQUIREMENT, WdfDeviceSetAlignmentRequirement method, wdfdevice/WdfDeviceSetAlignmentRequirement, DFDeviceObjectGeneralRef_9648c639-95b8-4dd9-8d30-8fb6352fe5f6.xml, kmdf.wdfdevicesetalignmentrequirement, WdfDeviceSetAlignmentRequirement, wdf.wdfdevicesetalignmentrequirement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,22 +90,20 @@ For more information about calling <b>WdfDeviceSetAlignmentRequirement</b>, see 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
+
 <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedlogicaladdress.md">WdfCommonBufferGetAlignedLogicalAddress</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetalignmentrequirement.md">WdfDeviceGetAlignmentRequirement</a>
-
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
 
  
 

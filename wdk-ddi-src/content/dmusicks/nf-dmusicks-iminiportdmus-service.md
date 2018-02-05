@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a3f8d3f2-180c-454b-8e15-57c479c00db9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportDMus, Service, Service method [Audio Devices], IMiniportDMus interface, dmusicks/IMiniportDMus::Service, IMiniportDMus interface [Audio Devices], Service method, IMiniportDMus::Service, audmp-routines_0c872bc5-12b7-4e9d-b6ea-0da47cd41483.xml, audio.iminiportdmus_service, Service method [Audio Devices]
+ms.keywords : Service method [Audio Devices], IMiniportDMus, Service, IMiniportDMus::Service, Service method [Audio Devices], IMiniportDMus interface, IMiniportDMus interface [Audio Devices], Service method, audmp-routines_0c872bc5-12b7-4e9d-b6ea-0da47cd41483.xml, audio.iminiportdmus_service, dmusicks/IMiniportDMus::Service
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,22 +65,17 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dmusicks.h (include Dmusicks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dmusicks.h |
 
 ## See Also
+
+<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
-
-<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
 
  
 

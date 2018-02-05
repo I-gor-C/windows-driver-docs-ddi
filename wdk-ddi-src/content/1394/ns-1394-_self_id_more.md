@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : d3c164a6-4830-4f1f-9fa5-5cd61e796e31
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSELF_ID_MORE, 1394/SELF_ID_MORE, SELF_ID_MORE structure [Buses], 1394stct_cbfa017d-065b-45ce-ae08-6a6589c6b477.xml, IEEE.self_id_more, 1394/PSELF_ID_MORE, SELF_ID_MORE, *PSELF_ID_MORE, _SELF_ID_MORE, PSELF_ID_MORE structure pointer [Buses]
+ms.keywords : IEEE.self_id_more, _SELF_ID_MORE, 1394/SELF_ID_MORE, 1394/PSELF_ID_MORE, PSELF_ID_MORE, PSELF_ID_MORE structure pointer [Buses], *PSELF_ID_MORE, 1394stct_cbfa017d-065b-45ce-ae08-6a6589c6b477.xml, SELF_ID_MORE structure [Buses], SELF_ID_MORE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSELF_ID_MORE, SELF_ID_MORE"
+req.typenames : SELF_ID_MORE, *PSELF_ID_MORE
 ---
 
 # _SELF_ID_MORE structure
@@ -211,9 +211,6 @@ This structure corresponds to self ID packet 1, as described in the <i>P1394a</i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

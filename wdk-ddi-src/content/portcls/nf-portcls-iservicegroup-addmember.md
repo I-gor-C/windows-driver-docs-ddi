@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1eddb631-db85-4243-89a4-a4ab042cee28
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_0d318d56-28e9-4e42-84b3-1d0eb4110f71.xml, IServiceGroup interface [Audio Devices], AddMember method, AddMember method [Audio Devices], portcls/IServiceGroup::AddMember, audio.iservicegroup_addmember, IServiceGroup, AddMember, AddMember method [Audio Devices], IServiceGroup interface, IServiceGroup::AddMember
+ms.keywords : IServiceGroup interface [Audio Devices], AddMember method, AddMember method [Audio Devices], AddMember method [Audio Devices], IServiceGroup interface, audio.iservicegroup_addmember, portcls/IServiceGroup::AddMember, IServiceGroup, audmp-routines_0d318d56-28e9-4e42-84b3-1d0eb4110f71.xml, IServiceGroup::AddMember, AddMember
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,20 +68,16 @@ The <code>AddMember</code> method calls <b>AddRef</b> on the <i>pServiceSink</i>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
-
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e498a907-8d20-4d00-9411-8e82030af223
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinRegisterPowerCallbacks function [Streaming Media Devices], ks/KsPinRegisterPowerCallbacks, KsPinRegisterPowerCallbacks, stream.kspinregisterpowercallbacks, avfunc_2e133cdb-6afa-47a7-8d3b-8293b63428b5.xml
+ms.keywords : stream.kspinregisterpowercallbacks, KsPinRegisterPowerCallbacks, ks/KsPinRegisterPowerCallbacks, avfunc_2e133cdb-6afa-47a7-8d3b-8293b63428b5.xml, KsPinRegisterPowerCallbacks function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,20 +78,16 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
-
 <a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>
+
+<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
 
  
 

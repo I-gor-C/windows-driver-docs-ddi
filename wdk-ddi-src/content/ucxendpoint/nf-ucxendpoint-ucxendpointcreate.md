@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2BB3B2CE-FD15-4D28-BBDA-29C3BB523874
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxEndpointCreate method [Buses], UcxEndpointCreate, ucxendpoint/UcxEndpointCreate, buses._ucxendpointcreate
+ms.keywords : ucxendpoint/UcxEndpointCreate, UcxEndpointCreate, buses._ucxendpointcreate, UcxEndpointCreate method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,11 +90,10 @@ For a code example, see <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

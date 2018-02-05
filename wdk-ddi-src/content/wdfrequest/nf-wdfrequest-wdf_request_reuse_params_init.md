@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a77d77c5-5c8a-439a-93a3-fe29b15c6ed0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_request_reuse_params_init, WDF_REQUEST_REUSE_PARAMS_INIT function, kmdf.wdf_request_reuse_params_init, DFRequestObjectRef_e43a091a-a926-4705-8241-0620b6ef3096.xml, wdfrequest/WDF_REQUEST_REUSE_PARAMS_INIT, WDF_REQUEST_REUSE_PARAMS_INIT
+ms.keywords : kmdf.wdf_request_reuse_params_init, DFRequestObjectRef_e43a091a-a926-4705-8241-0620b6ef3096.xml, wdf.wdf_request_reuse_params_init, WDF_REQUEST_REUSE_PARAMS_INIT function, WDF_REQUEST_REUSE_PARAMS_INIT, wdfrequest/WDF_REQUEST_REUSE_PARAMS_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,22 +85,19 @@ For a code example that uses <b>WDF_REQUEST_REUSE_PARAMS_INIT</b>, see <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
-
-<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_set_new_irp.md">WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</a>
 
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_reuse_params_set_new_irp.md">WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</a>
 
  
 

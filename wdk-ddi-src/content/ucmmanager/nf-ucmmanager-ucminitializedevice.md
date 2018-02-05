@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9159A6ED-0D85-422D-936A-13D7EC907A7C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmInitializeDevice method [Buses], buses.ucminitializedevice, UcmInitializeDevice, ucmmanager/UcmInitializeDevice
+ms.keywords : buses.ucminitializedevice, ucmmanager/UcmInitializeDevice, UcmInitializeDevice method [Buses], UcmInitializeDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,13 @@ This method initializes UcmCx and allocates resources required, registers for Pn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
+| **Library** | UcmCxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

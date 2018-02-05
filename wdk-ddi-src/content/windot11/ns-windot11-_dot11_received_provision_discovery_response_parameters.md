@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5D084A9F-B0B1-4DB6-91CF-8185063A1D65
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.dot11_received_provision_discovery_response_parameters, _DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, windot11/PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, windot11/DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS
+ms.keywords : DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], _DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, windot11/PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, windot11/DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, netvista.dot11_received_provision_discovery_response_parameters, PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS"
+req.typenames : DOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_PROVISION_DISCOVERY_RESPONSE_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -103,9 +103,7 @@ The offset, in bytes,  of the array of additional information elements (IEs) rec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

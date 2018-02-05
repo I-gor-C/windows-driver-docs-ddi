@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B8CEBCEA-7F1F-4E4B-B04E-D914D5875027
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_CONTROLLER_USB_20_HARDWARE_LPM_FLAGS, ucxroothub/_CONTROLLER_USB_20_HARDWARE_LPM_FLAGS, buses._controller_usb_20_hardware_lpm_flags, *PCONTROLLER_USB_20_HARDWARE_LPM_FLAGS, CONTROLLER_USB_20_HARDWARE_LPM_FLAGS union [Buses], CONTROLLER_USB_20_HARDWARE_LPM_FLAGS"
+ms.keywords : ucxroothub/_CONTROLLER_USB_20_HARDWARE_LPM_FLAGS, CONTROLLER_USB_20_HARDWARE_LPM_FLAGS union [Buses], CONTROLLER_USB_20_HARDWARE_LPM_FLAGS, buses._controller_usb_20_hardware_lpm_flags, *PCONTROLLER_USB_20_HARDWARE_LPM_FLAGS, _CONTROLLER_USB_20_HARDWARE_LPM_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,6 @@ The size of structure represented as a char (8-bit) value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
 
 ## See Also

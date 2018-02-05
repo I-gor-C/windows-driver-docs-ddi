@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7470af45-3ebe-44d4-8066-62a69636c20e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SCSI_PASS_THROUGH structure [Storage Devices], *PSCSI_PASS_THROUGH, structs-scsibus_6d017ae1-d61d-49b8-bfaf-b6b15341732b.xml, _SCSI_PASS_THROUGH, PSCSI_PASS_THROUGH structure pointer [Storage Devices], storage.scsi_pass_through, ntddscsi/SCSI_PASS_THROUGH, ntddscsi/PSCSI_PASS_THROUGH, PSCSI_PASS_THROUGH, SCSI_PASS_THROUGH
+ms.keywords : storage.scsi_pass_through, SCSI_PASS_THROUGH structure [Storage Devices], PSCSI_PASS_THROUGH, SCSI_PASS_THROUGH, _SCSI_PASS_THROUGH, *PSCSI_PASS_THROUGH, ntddscsi/SCSI_PASS_THROUGH, ntddscsi/PSCSI_PASS_THROUGH, PSCSI_PASS_THROUGH structure pointer [Storage Devices], structs-scsibus_6d017ae1-d61d-49b8-bfaf-b6b15341732b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCSI_PASS_THROUGH, *PSCSI_PASS_THROUGH
+req.typenames : "*PSCSI_PASS_THROUGH, SCSI_PASS_THROUGH"
 ---
 
 # _SCSI_PASS_THROUGH structure
@@ -78,11 +78,11 @@ Contains an offset from the beginning of this structure to the data buffer. The 
 
 `DataIn`
 
+#### 
+
+
+
 ####  This field must have one of three values:
-
-
-
-####
 
 `DataTransferLength`
 
@@ -128,20 +128,17 @@ The members of SCSI_PASS_THROUGH correspond roughly to the members of a <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct.md">SCSI_PASS_THROUGH_DIRECT</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through.md">IOCTL_SCSI_PASS_THROUGH</a>
 
-<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct.md">SCSI_PASS_THROUGH_DIRECT</a>
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct.md">IOCTL_SCSI_PASS_THROUGH_DIRECT</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F4B06D2E-A024-4F0B-91A2-7A7775AD99DC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdmsec/IoCreateDeviceSecure, WdmlibIoCreateDeviceSecure, kernel.wdmlibiocreatedevicesecure, WdmlibIoCreateDeviceSecure function [Kernel-Mode Driver Architecture], IoCreateDeviceSecure, wdmsec/WdmlibIoCreateDeviceSecure
+ms.keywords : wdmsec/WdmlibIoCreateDeviceSecure, kernel.wdmlibiocreatedevicesecure, WdmlibIoCreateDeviceSecure function [Kernel-Mode Driver Architecture], WdmlibIoCreateDeviceSecure, IoCreateDeviceSecure, wdmsec/IoCreateDeviceSecure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -130,28 +130,26 @@ If a driver's call to <b>WdmlibIoCreateDeviceSecure</b> returns an error, the dr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | See Remarks section. See Remarks section. |
+| **Target Platform** | Desktop |
 | **Header** | wdmsec.h (include Wdmsec.h) |
-| **Library** |  |
+| **Library** | Wdmsec.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | MiniportOnlyWdmDevice, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
+<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
 
 <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 
-<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
+<a href="..\wdm\nf-wdm-iodeletedevice.md">IoDeleteDevice</a>
 
 <a href="..\wdm\nf-wdm-iocreatesymboliclink.md">IoCreateSymbolicLink</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\wdm\nf-wdm-iodeletedevice.md">IoDeleteDevice</a>
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
 
  
 

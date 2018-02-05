@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0d761b64-d405-4c19-9fd8-e4bf371515a1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMSiSCSI_InitiatorNodeFailureEvent structure pointer [Storage Devices], MSiSCSI_InitiatorNodeFailureEvent structure [Storage Devices], iscsimgt/MSiSCSI_InitiatorNodeFailureEvent, storage.msiscsi_initiatornodefailureevent, _MSiSCSI_InitiatorNodeFailureEvent, iscsimgt/PMSiSCSI_InitiatorNodeFailureEvent, PMSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent, *PMSiSCSI_InitiatorNodeFailureEvent, structs-iSCSI_0d1bb4bf-74a0-4d99-9bf8-1545faaff14d.xml
+ms.keywords : iscsimgt/MSiSCSI_InitiatorNodeFailureEvent, iscsimgt/PMSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent, PMSiSCSI_InitiatorNodeFailureEvent structure pointer [Storage Devices], PMSiSCSI_InitiatorNodeFailureEvent, storage.msiscsi_initiatornodefailureevent, structs-iSCSI_0d1bb4bf-74a0-4d99-9bf8-1545faaff14d.xml, *PMSiSCSI_InitiatorNodeFailureEvent, _MSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -132,16 +132,13 @@ It is optional that you implement this class.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563049">MSiSCSI_InitiatorNodeFailureEvent WMI Class</a>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 
  
 

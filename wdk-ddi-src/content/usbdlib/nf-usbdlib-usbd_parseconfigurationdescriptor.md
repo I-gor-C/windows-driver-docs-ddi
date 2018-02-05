@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : a82816d8-2516-4bba-a5aa-0154cd079d5b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbd_parseconfigurationdescriptor, USBD_ParseConfigurationDescriptor routine [Buses], USBD_ParseConfigurationDescriptor, usbfunc_e0bfa26f-42a8-47a2-bf0e-5f8c97c5e9eb.xml, usbdlib/USBD_ParseConfigurationDescriptor
+ms.keywords : USBD_ParseConfigurationDescriptor, usbfunc_e0bfa26f-42a8-47a2-bf0e-5f8c97c5e9eb.xml, USBD_ParseConfigurationDescriptor routine [Buses], usbdlib/USBD_ParseConfigurationDescriptor, buses.usbd_parseconfigurationdescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -76,20 +76,16 @@ Specifies the device-defined alternate-setting index of the interface to be retr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Deprecated. Use USBD_ParseConfigurationDescriptorEx instead. Deprecated. Use USBD_ParseConfigurationDescriptorEx instead. |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Usbd.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
-
 <a href="..\usbdlib\nf-usbdlib-usbd_parseconfigurationdescriptorex.md">USBD_ParseConfigurationDescriptorEx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
 
  
 

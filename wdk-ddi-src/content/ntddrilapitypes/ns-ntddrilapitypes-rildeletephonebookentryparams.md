@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1a372468-2bad-44d4-a19a-d3b517b7ed7b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILDELETEPHONEBOOKENTRYPARAMS, ntddrilapitypes/RILDELETEPHONEBOOKENTRYPARAMS, *LPRILDELETEPHONEBOOKENTRYPARAMS, netvista.rildeletephonebookentryparams, RILDELETEPHONEBOOKENTRYPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "*LPRILDELETEPHONEBOOKENTRYPARAMS, ntddrilapitypes/RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rildeletephonebookentryparams"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ typedef struct _RILDELETEPHONEBOOKENTRYPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

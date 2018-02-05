@@ -75,9 +75,7 @@ If <b>OutputBufferLength</b> is less than the total length of output data, the <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountdev.h (include Mountdev.h) |
-| **IRQL** |  |
 
 ## See Also
 

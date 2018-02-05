@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : DC6353BB-98C0-4647-9180-F099CD95348E
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "_WDF_EVENT_TYPE, WdfEventReserved, WDF_EVENT_TYPE enumeration, wdfdevice/WDF_EVENT_TYPE, wdfdevice/WdfEventMaximum, wdfdevice/WdfEventReserved, wudfddi_types/WDF_EVENT_TYPE, wdf.wdf_event_type, wudfddi_types/WdfEventReserved, wudfddi_types/WdfEventMaximum, WdfEventBroadcast, wudfddi_types/WdfEventBroadcast, WdfEventMaximum, wdfdevice/WdfEventBroadcast, WDF_EVENT_TYPE"
+ms.keywords : wdfdevice/WdfEventReserved, wudfddi_types/WdfEventReserved, wdfdevice/WdfEventBroadcast, WdfEventReserved, wudfddi_types/WDF_EVENT_TYPE, wdfdevice/WdfEventMaximum, WDF_EVENT_TYPE, wdf.wdf_event_type, wdfdevice/WDF_EVENT_TYPE, wudfddi_types/WdfEventBroadcast, WDF_EVENT_TYPE enumeration, WdfEventMaximum, _WDF_EVENT_TYPE, wudfddi_types/WdfEventMaximum, WdfEventBroadcast
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,16 +77,15 @@ typedef enum _WDF_EVENT_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_types.h (include Wdf.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558835">IWDFDevice::PostEvent</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558835">IWDFDevice::PostEvent</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 11F9FFC6-D2F6-4CCA-9459-CF2639AE652D
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PFSCTL_OFFLOAD_READ_INPUT, ntifs/FSCTL_OFFLOAD_READ_INPUT, ntifs/PFSCTL_OFFLOAD_READ_INPUT, FSCTL_OFFLOAD_READ_INPUT structure [Installable File System Drivers], PFSCTL_OFFLOAD_READ_INPUT, _FSCTL_OFFLOAD_READ_INPUT, PFSCTL_OFFLOAD_READ_INPUT structure pointer [Installable File System Drivers], ifsk.fsctl_offload_read_input, FSCTL_OFFLOAD_READ_INPUT"
+ms.keywords : ifsk.fsctl_offload_read_input, PFSCTL_OFFLOAD_READ_INPUT, _FSCTL_OFFLOAD_READ_INPUT, FSCTL_OFFLOAD_READ_INPUT, *PFSCTL_OFFLOAD_READ_INPUT, ntifs/PFSCTL_OFFLOAD_READ_INPUT, PFSCTL_OFFLOAD_READ_INPUT structure pointer [Installable File System Drivers], ntifs/FSCTL_OFFLOAD_READ_INPUT, FSCTL_OFFLOAD_READ_INPUT structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,7 @@ The  storage device's copy provider retains the data read for the duration in <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

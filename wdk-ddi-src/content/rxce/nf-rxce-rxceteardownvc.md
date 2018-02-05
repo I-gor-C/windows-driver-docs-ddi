@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d4b3af4d-8bb2-42a4-a8d9-baa643a90418
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeTearDownVC, ifsk.rxceteardownvc, rxce/RxCeTearDownVC, rxref_12c4b02d-b629-4543-bf74-aeaa14f6f05d.xml, RxCeTearDownVC function [Installable File System Drivers]
+ms.keywords : RxCeTearDownVC function [Installable File System Drivers], RxCeTearDownVC, ifsk.rxceteardownvc, rxref_12c4b02d-b629-4543-bf74-aeaa14f6f05d.xml, rxce/RxCeTearDownVC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -90,14 +90,10 @@ Note that <b>RxCeTearDownVC</b> will wait for the clean up of connections over o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

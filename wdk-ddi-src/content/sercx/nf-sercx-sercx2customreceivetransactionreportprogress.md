@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : FBC776FE-1056-4D3B-BECB-124FC41DD68F
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2CustomReceiveTransactionReportProgress method [Serial Ports], SerCx2CustomReceiveTransactionReportProgress, 2/SerCx2CustomReceiveTransactionReportProgress, serports.sercx2customreceivetransactionreportprogress
+ms.keywords : SerCx2CustomReceiveTransactionReportProgress, SerCx2CustomReceiveTransactionReportProgress method [Serial Ports], 2/SerCx2CustomReceiveTransactionReportProgress, serports.sercx2customreceivetransactionreportprogress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,24 +84,21 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
-
-<a href="..\sercx\ne-sercx-_sercx2_custom_receive_transaction_progress.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS</a>
 
 <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
 
 <a href="https://msdn.microsoft.com/B0B08257-E867-4E22-949E-555AD44C2DDE">EvtSerCx2CustomReceiveTransactionQueryProgress</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
+
+<a href="..\sercx\ne-sercx-_sercx2_custom_receive_transaction_progress.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS</a>
 
  
 

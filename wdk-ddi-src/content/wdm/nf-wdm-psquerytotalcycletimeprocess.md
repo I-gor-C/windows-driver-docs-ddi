@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4DA34F96-A69A-46BE-B3D8-D542794052DE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess routine [Kernel-Mode Driver Architecture], kernel.psquerytotalcycletimeprocess
+ms.keywords : PsQueryTotalCycleTimeProcess, wdm/PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess routine [Kernel-Mode Driver Architecture], kernel.psquerytotalcycletimeprocess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,11 @@ This routine uses the time stamp counter to get the number of processor clock cy
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

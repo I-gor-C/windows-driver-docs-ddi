@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0587E952-8B51-44C3-8E23-2981C00ADB43
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSetPipeAllocatorFlag, stream.ikspinpipe_kssetpipeallocatorflag, KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe interface [Streaming Media Devices], KsSetPipeAllocatorFlag method, IKsPinPipe, KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsSetPipeAllocatorFlag, IKsPinPipe::KsSetPipeAllocatorFlag
+ms.keywords : KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsSetPipeAllocatorFlag method, IKsPinPipe::KsSetPipeAllocatorFlag, KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsSetPipeAllocatorFlag, KsSetPipeAllocatorFlag, stream.ikspinpipe_kssetpipeallocatorflag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -67,14 +67,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

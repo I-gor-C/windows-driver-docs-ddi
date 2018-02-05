@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4D350666-B103-4421-A25A-22A7BF41558E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MIRACAST_CHUNK_ID union [Display Devices], display.dxgk_miracast_chunk_id, DXGK_MIRACAST_CHUNK_ID, d3dukmdt/DXGK_MIRACAST_CHUNK_ID
+ms.keywords : DXGK_MIRACAST_CHUNK_ID union [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_ID, display.dxgk_miracast_chunk_id, DXGK_MIRACAST_CHUNK_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,7 +63,5 @@ Holds a 64-bit value that identifies the encode chunk.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dukmdt.h (include D3dukmdt.h, D3dkmddi.h) |

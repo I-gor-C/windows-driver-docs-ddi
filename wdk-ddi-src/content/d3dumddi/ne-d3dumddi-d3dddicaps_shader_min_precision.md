@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 98856726-b426-42e4-9560-f6b56164824a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT, D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT, D3DDDICAPS_SHADER_MIN_PRECISION, display.d3dddicaps_shader_min_precision, D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT, d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION, D3DDDICAPS_SHADER_MIN_PRECISION enumeration [Display Devices], d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT
+ms.keywords : d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT, d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION, display.d3dddicaps_shader_min_precision, d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT, D3DDDICAPS_SHADER_MIN_PRECISION enumeration [Display Devices], D3DDDICAPS_SHADER_MIN_PRECISION_10_BIT, D3DDDICAPS_SHADER_MIN_PRECISION_16_BIT, D3DDDICAPS_SHADER_MIN_PRECISION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,5 @@ typedef enum D3DDDICAPS_SHADER_MIN_PRECISION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

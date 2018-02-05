@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a31a8688-6002-4ad7-b135-0a8111e2c849
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_MSiSCSI_Eventlog, PMSiSCSI_EventLog, *PMSiSCSI_Eventlog, storage.msiscsi_eventlog, structs-iSCSI_d2419ba1-4f36-42c6-8a21-164dadb50263.xml, MSiSCSI_EventLog structure [Storage Devices], iscsimgt/MSiSCSI_EventLog, PMSiSCSI_EventLog structure pointer [Storage Devices], MSiSCSI_EventLog, MSiSCSI_Eventlog, iscsimgt/PMSiSCSI_EventLog"
+ms.keywords : "*PMSiSCSI_Eventlog, _MSiSCSI_Eventlog, MSiSCSI_Eventlog, MSiSCSI_EventLog structure [Storage Devices], PMSiSCSI_EventLog structure pointer [Storage Devices], storage.msiscsi_eventlog, PMSiSCSI_EventLog, iscsimgt/PMSiSCSI_EventLog, MSiSCSI_EventLog, structs-iSCSI_d2419ba1-4f36-42c6-8a21-164dadb50263.xml, iscsimgt/MSiSCSI_EventLog"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,4 @@ We recommend that you implement this class.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |

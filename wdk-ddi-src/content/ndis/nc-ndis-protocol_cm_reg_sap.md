@@ -114,8 +114,8 @@ Indicates that the call manager successfully allocated and/or initialized any ne
 <td width="60%">
 Indicates that the call manager will complete the processing of this request asynchronously.
        Call managers must call 
-       <mshelp:link keywords="netvista.ndiscmregistersapcomplete" tabindex="0"><b>
-       NdisCmRegisterSapComplete</b></mshelp:link> when all processing has been completed to signal NDIS that the
+       <a href="..\ndis\nf-ndis-ndiscmregistersapcomplete.md">
+       NdisCmRegisterSapComplete</a> when all processing has been completed to signal NDIS that the
        registration is finished.
 
 </td>
@@ -203,8 +203,8 @@ If
 
 After a call manager has registered a SAP on behalf of a connection-oriented client, it notifies that
     client of an incoming call offer directed to that SAP by calling 
-    <mshelp:link keywords="netvista.ndiscmdispatchincomingcall" tabindex="0"><b>
-    NdisCmDispatchIncomingCall</b></mshelp:link>.
+    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
+    NdisCmDispatchIncomingCall</a>.
 <h3><a id="Examples"></a><a id="examples"></a><a id="EXAMPLES"></a>Examples</h3>To define a <i>ProtocolCmRegisterSap</i> function, you must first provide a function declaration that identifies the type of function you're defining. Windows provides a set of function types for drivers. Declaring a function using the function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
 
 For example, to define a <i>ProtocolCmRegisterSap</i> function that is named "MyCmRegisterSap", use the <b>PROTOCOL_CM_REG_SAP</b> type as shown in this code example:
@@ -242,26 +242,22 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
+
 <a href="..\ndis\nc-ndis-protocol_cm_deregister_sap.md">ProtocolCmDeregisterSap</a>
 
-<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
-
-<a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiscmregistersapcomplete.md">NdisCmRegisterSapComplete</a>
 
 <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 
-<a href="..\ndis\nf-ndis-ndiscmregistersapcomplete.md">NdisCmRegisterSapComplete</a>
+<a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
 
  
 

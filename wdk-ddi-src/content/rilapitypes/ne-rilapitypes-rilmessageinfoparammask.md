@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 598880f6-0466-4cc1-9f14-3c2e4dda3ba1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilmessageinfoparammask_2, RIL_PARAM_MI_STATUS, RIL_PARAM_MI_MESSAGE, rilapitypes/RIL_PARAM_MI_STATUS, RIL_PARAM_MI_ALL, RILMESSAGEINFOPARAMMASK, rilapitypes/RIL_PARAM_MI_ALL, RILMESSAGEINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_MI_MESSAGE, rilapitypes/RILMESSAGEINFOPARAMMASK
+ms.keywords : RILMESSAGEINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_MI_MESSAGE, RIL_PARAM_MI_ALL, RIL_PARAM_MI_MESSAGE, rilapitypes/RIL_PARAM_MI_ALL, RILMESSAGEINFOPARAMMASK, RIL_PARAM_MI_STATUS, rilapitypes/RIL_PARAM_MI_STATUS, netvista.rilmessageinfoparammask_2, rilapitypes/RILMESSAGEINFOPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILMESSAGEINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

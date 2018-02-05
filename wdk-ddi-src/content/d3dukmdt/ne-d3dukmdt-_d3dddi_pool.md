@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b3f34183-7595-47b6-a2f1-c32650734a04
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_POOL enumeration [Display Devices], d3dukmdt/D3DDDIPOOL_STAGINGMEM, d3dukmdt/D3DDDIPOOL_NONLOCALVIDMEM, D3DDDIPOOL_NONLOCALVIDMEM, D3DDDIPOOL_VIDEOMEMORY, d3dukmdt/D3DDDI_POOL, D3DDDIPOOL_LOCALVIDMEM, d3dukmdt/D3DDDIPOOL_VIDEOMEMORY, D3DDDI_POOL, _D3DDDI_POOL, D3DDDIPOOL_STAGINGMEM, display.d3dddi_pool, D3DDDIPOOL_SYSTEMMEM, d3dukmdt/D3DDDIPOOL_LOCALVIDMEM, D3D_other_Structs_859cbea4-6000-4906-a3f4-3ff6ea4caa7b.xml, d3dukmdt/D3DDDIPOOL_SYSTEMMEM
+ms.keywords : D3DDDIPOOL_STAGINGMEM, D3DDDI_POOL, d3dukmdt/D3DDDIPOOL_SYSTEMMEM, D3DDDI_POOL enumeration [Display Devices], d3dukmdt/D3DDDIPOOL_STAGINGMEM, d3dukmdt/D3DDDI_POOL, D3D_other_Structs_859cbea4-6000-4906-a3f4-3ff6ea4caa7b.xml, D3DDDIPOOL_SYSTEMMEM, D3DDDIPOOL_NONLOCALVIDMEM, d3dukmdt/D3DDDIPOOL_LOCALVIDMEM, D3DDDIPOOL_LOCALVIDMEM, display.d3dddi_pool, d3dukmdt/D3DDDIPOOL_VIDEOMEMORY, d3dukmdt/D3DDDIPOOL_NONLOCALVIDMEM, D3DDDIPOOL_VIDEOMEMORY, _D3DDDI_POOL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -95,9 +95,7 @@ Note that the D3DDDIPOOL_LOCALVIDMEM and D3DDDIPOOL_NONLOCALVIDMEM values are pr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also

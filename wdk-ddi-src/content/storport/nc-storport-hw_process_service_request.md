@@ -92,20 +92,14 @@ HW_PROCESS_SERVICE_REQUEST (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportcompleteserviceirp.md">StorPortCompleteServiceIrp</a>
-
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_miniport_process_service_irp.md">IOCTL_MINIPORT_PROCESS_SERVICE_IRP</a>
+
+<a href="..\storport\nf-storport-storportcompleteserviceirp.md">StorPortCompleteServiceIrp</a>
 
  
 

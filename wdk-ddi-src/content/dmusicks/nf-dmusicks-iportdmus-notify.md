@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 64158ea5-23ca-42a3-9284-2b1523e616b8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortDMus, dmusicks/IPortDMus::Notify, audmp-routines_cc818dda-ae0e-435e-8d94-f1632a4c4319.xml, Notify, audio.iportdmus_notify, IPortDMus::Notify, Notify method [Audio Devices], Notify method [Audio Devices], IPortDMus interface, IPortDMus interface [Audio Devices], Notify method
+ms.keywords : IPortDMus::Notify, audio.iportdmus_notify, dmusicks/IPortDMus::Notify, IPortDMus interface [Audio Devices], Notify method, Notify, IPortDMus, Notify method [Audio Devices], IPortDMus interface, audmp-routines_cc818dda-ae0e-435e-8d94-f1632a4c4319.xml, Notify method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -89,14 +89,10 @@ The <i>pServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dmusicks.h (include Dmusicks.h) |
-| **Library** |  |
+| **Library** | dmusicks.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -104,13 +100,13 @@ The <i>pServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.c
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536700">IMiniportDMus::Init</a>
+<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
 
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536882">IPortDMus::RegisterServiceGroup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536700">IMiniportDMus::Init</a>
 
-<a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536882">IPortDMus::RegisterServiceGroup</a>
 
  
 

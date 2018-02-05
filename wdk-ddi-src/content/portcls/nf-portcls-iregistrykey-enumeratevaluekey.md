@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4f90b553-f652-413f-9723-a5a578de9f8d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey interface [Audio Devices], EnumerateValueKey method, EnumerateValueKey method [Audio Devices], EnumerateValueKey method [Audio Devices], IRegistryKey interface, audmp-routines_8b4fc752-24a3-4331-b90b-85642dc2121a.xml, IRegistryKey::EnumerateValueKey, EnumerateValueKey, portcls/IRegistryKey::EnumerateValueKey, audio.iregistrykey_enumeratevaluekey, IRegistryKey
+ms.keywords : audmp-routines_8b4fc752-24a3-4331-b90b-85642dc2121a.xml, EnumerateValueKey method [Audio Devices], IRegistryKey interface, EnumerateValueKey method [Audio Devices], EnumerateValueKey, IRegistryKey, portcls/IRegistryKey::EnumerateValueKey, IRegistryKey::EnumerateValueKey, IRegistryKey interface [Audio Devices], EnumerateValueKey method, audio.iregistrykey_enumeratevaluekey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -138,26 +138,22 @@ Indicates that no more value keys are available (the <i>Index</i> parameter is g
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
 
-<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
+<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 
 <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
-
 <a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
 
  
 

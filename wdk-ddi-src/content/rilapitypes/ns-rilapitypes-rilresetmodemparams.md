@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5888ba1d-b9f2-41c3-a39d-6a2fffc593fd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilresetmodemparams_2, rilapitypes/RILRESETMODEMPARAMS, RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS, RILRESETMODEMPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.rilresetmodemparams_2, rilapitypes/RILRESETMODEMPARAMS, RILRESETMODEMPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILRESETMODEMPARAMS, RILRESETMODEMPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS
+req.typenames : "*LPRILRESETMODEMPARAMS, RILRESETMODEMPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -70,7 +70,4 @@ typedef struct _RILRESETMODEMPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e5e2061f-5133-4645-8e07-659f08473a51
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExtRemoteData class [Windows Debugging], GetUshort method, ExtRemoteData, GetUshort method [Windows Debugging], GetUshort, EngExtCpp_Ref_5429785d-2f76-434d-96c6-4fa7298aa32e.xml, GetUshort method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_getushort, ExtRemoteData::GetUshort
+ms.keywords : ExtRemoteData, debugger.extremotedata_getushort, GetUshort method [Windows Debugging], ExtRemoteData::GetUshort, EngExtCpp_Ref_5429785d-2f76-434d-96c6-4fa7298aa32e.xml, GetUshort, GetUshort method [Windows Debugging], ExtRemoteData class, ExtRemoteData class [Windows Debugging], GetUshort method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -63,22 +63,17 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544044">ExtRemoteData::GetShort</a>
+<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544044">ExtRemoteData::GetShort</a>
 
  
 

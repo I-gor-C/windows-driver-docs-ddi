@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7cb249d3-b39f-4b6b-8023-bb0c0ef8f9e1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_ResetModem, netvista.ril_resetmodem, rilapi/RIL_ResetModem, RIL_ResetModem method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_ResetModem, RIL_ResetModem method [Network Drivers Starting with Windows Vista], rilapi/RIL_ResetModem, netvista.ril_resetmodem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

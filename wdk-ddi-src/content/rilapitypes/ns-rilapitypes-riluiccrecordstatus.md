@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 073fe700-ea6d-4d29-8751-66b27714f72d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILUICCRECORDSTATUS, *LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS, netvista.riluiccrecordstatus, RILUICCRECORDSTATUS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILUICCRECORDSTATUS structure [Network Drivers Starting with Windows Vista], *LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS, rilapitypes/RILUICCRECORDSTATUS, netvista.riluiccrecordstatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILUICCRECORDSTATUS, *LPRILUICCRECORDSTATUS
+req.typenames : "*LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -85,9 +85,6 @@ An array of type <a href="..\rilapitypes\ns-rilapitypes-riluiccfilelockstatus.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

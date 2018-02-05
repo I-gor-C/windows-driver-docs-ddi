@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 641DE2B5-7903-4D25-A280-F2BCCE8B1500
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO structure [Audio Devices], PKSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO, ksmedia/PKSRTAUDIO_SETWRITEPACKET_INFO, audio.ksrtaudio_setwritepacket_info, ksmedia/KSRTAUDIO_SETWRITEPACKET_INFO, PKSRTAUDIO_SETWRITEPACKET_INFO structure pointer [Audio Devices]
+ms.keywords : ksmedia/KSRTAUDIO_SETWRITEPACKET_INFO, audio.ksrtaudio_setwritepacket_info, PKSRTAUDIO_SETWRITEPACKET_INFO structure pointer [Audio Devices], PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO structure [Audio Devices], ksmedia/PKSRTAUDIO_SETWRITEPACKET_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,9 +73,7 @@ The number of the packet written by the OS to the WaveRT buffer. Depending on th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10 and later Windows operating systems. Available in Windows 10 and later Windows operating systems. |
 | **Header** | ksmedia.h |
 
 ## See Also

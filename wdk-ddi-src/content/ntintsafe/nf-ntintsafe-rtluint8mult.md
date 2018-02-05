@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3F9E47F5-1DE3-4949-BE92-8C8F571BFD3D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUInt8Mult, kernel.rtluint8mult, ntintsafe/RtlUInt8Mult, RtlUInt8Mult function [Kernel-Mode Driver Architecture]
+ms.keywords : RtlUInt8Mult function [Kernel-Mode Driver Architecture], RtlUInt8Mult, kernel.rtluint8mult, ntintsafe/RtlUInt8Mult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

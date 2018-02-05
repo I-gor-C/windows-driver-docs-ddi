@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4C6D85F2-C9B8-425D-A307-5609E1C1465B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.psishostsilo, ntddk/PsIsHostSilo, PsIsHostSilo, PsIsHostSilo routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.psishostsilo, PsIsHostSilo routine [Kernel-Mode Driver Architecture], ntddk/PsIsHostSilo, PsIsHostSilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,7 @@ Returns <b>true</b> if the specified silo is the host silo; otherwise, <b>false<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

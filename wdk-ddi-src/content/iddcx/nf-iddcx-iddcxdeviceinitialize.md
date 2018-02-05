@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4967e897-1a71-4f17-ad5b-9cc9916b0087
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxDeviceInitialize method [Display Devices], iddcx/IddCxDeviceInitialize, IddCxDeviceInitialize, display.iddcxdeviceinitialize
+ms.keywords : IddCxDeviceInitialize method [Display Devices], display.iddcxdeviceinitialize, iddcx/IddCxDeviceInitialize, IddCxDeviceInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,8 @@ The WDF device that is being initialized.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |
-| **DDI compliance rules** |  |

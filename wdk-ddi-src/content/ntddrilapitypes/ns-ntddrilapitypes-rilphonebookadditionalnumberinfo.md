@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bc4026e5-6613-4787-9218-22d1d3e447c3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILPHONEBOOKADDITIONALNUMBERINFO, *LPRILPHONEBOOKADDITIONALNUMBERINFO, netvista.rilphonebookadditionalnumberinfo, RILPHONEBOOKADDITIONALNUMBERINFO, RILPHONEBOOKADDITIONALNUMBERINFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.rilphonebookadditionalnumberinfo, RILPHONEBOOKADDITIONALNUMBERINFO, RILPHONEBOOKADDITIONALNUMBERINFO structure [Network Drivers Starting with Windows Vista], *LPRILPHONEBOOKADDITIONALNUMBERINFO, ntddrilapitypes/RILPHONEBOOKADDITIONALNUMBERINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILPHONEBOOKADDITIONALNUMBERINFO, RILPHONEBOOKADDITIONALNUMBERINFO"
+req.typenames : RILPHONEBOOKADDITIONALNUMBERINFO, *LPRILPHONEBOOKADDITIONALNUMBERINFO
 ---
 
 # RILPHONEBOOKADDITIONALNUMBERINFO structure
@@ -69,7 +69,4 @@ typedef struct _RILPHONEBOOKADDITIONALNUMBERINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

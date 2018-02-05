@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E5B7FDB6-3351-489E-B0BB-8B8DD605FCF4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDI_CORELAYER_DEVICECALLBACKS_0022, D3D12DDI_CORELAYER_DEVICECALLBACKS_0022, D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 structure [Display Devices], display.d3d12ddi_corelayer_devicecallbacks_0022
+ms.keywords : d3d12umddi/D3D12DDI_CORELAYER_DEVICECALLBACKS_0022, display.d3d12ddi_corelayer_devicecallbacks_0022, D3D12DDI_CORELAYER_DEVICECALLBACKS_0022 structure [Display Devices], D3D12DDI_CORELAYER_DEVICECALLBACKS_0022
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -124,7 +124,4 @@ A pointer to the pfnSetErrorCb function.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |

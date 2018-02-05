@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2dc32517-3730-4a1c-a59a-f5036d6f54ef
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.keremoveentrydevicequeue, KeRemoveEntryDeviceQueue routine [Kernel-Mode Driver Architecture], wdm/KeRemoveEntryDeviceQueue, k105_351b5540-c341-46d1-b2da-1ea88f78b7b2.xml, KeRemoveEntryDeviceQueue
+ms.keywords : k105_351b5540-c341-46d1-b2da-1ea88f78b7b2.xml, KeRemoveEntryDeviceQueue routine [Kernel-Mode Driver Architecture], KeRemoveEntryDeviceQueue, kernel.keremoveentrydevicequeue, wdm/KeRemoveEntryDeviceQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,26 +78,25 @@ The specified <i>DeviceQueue</i> spin lock is released and IRQL is restored to i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | IrqlKeDispatchLte, HwStorPortProhibitedDDIs |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keinitializedevicequeue.md">KeInitializeDeviceQueue</a>
+
 <a href="..\wdm\nf-wdm-keremovedevicequeue.md">KeRemoveDeviceQueue</a>
 
 <a href="..\wdm\nf-wdm-keinsertdevicequeue.md">KeInsertDeviceQueue</a>
 
-<a href="..\wdm\nf-wdm-keinsertbykeydevicequeue.md">KeInsertByKeyDeviceQueue</a>
-
 <a href="..\wdm\nf-wdm-keremovebykeydevicequeue.md">KeRemoveByKeyDeviceQueue</a>
 
-<a href="..\wdm\nf-wdm-keinitializedevicequeue.md">KeInitializeDeviceQueue</a>
+<a href="..\wdm\nf-wdm-keinsertbykeydevicequeue.md">KeInsertByKeyDeviceQueue</a>
 
  
 

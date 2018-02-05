@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 41df2847-7cfa-4746-82bd-d0b8b482a0d4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PDRIVE_LAYOUT_INFORMATION_MBR, PDRIVE_LAYOUT_INFORMATION_MBR structure pointer [Storage Devices], ntdddisk/DRIVE_LAYOUT_INFORMATION_MBR, DRIVE_LAYOUT_INFORMATION_MBR, DRIVE_LAYOUT_INFORMATION_MBR structure [Storage Devices], structs-disk_766d8fbf-64c1-4b4e-b0ce-421c8892b0d4.xml, ntdddisk/PDRIVE_LAYOUT_INFORMATION_MBR, PDRIVE_LAYOUT_INFORMATION_MBR, storage.drive_layout_information_mbr, _DRIVE_LAYOUT_INFORMATION_MBR"
+ms.keywords : "*PDRIVE_LAYOUT_INFORMATION_MBR, PDRIVE_LAYOUT_INFORMATION_MBR, DRIVE_LAYOUT_INFORMATION_MBR structure [Storage Devices], storage.drive_layout_information_mbr, structs-disk_766d8fbf-64c1-4b4e-b0ce-421c8892b0d4.xml, ntdddisk/DRIVE_LAYOUT_INFORMATION_MBR, ntdddisk/PDRIVE_LAYOUT_INFORMATION_MBR, _DRIVE_LAYOUT_INFORMATION_MBR, DRIVE_LAYOUT_INFORMATION_MBR, PDRIVE_LAYOUT_INFORMATION_MBR structure pointer [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,6 @@ This structure contains the drive layout information that is specific to a drive
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntddk.h) |
 
 ## See Also

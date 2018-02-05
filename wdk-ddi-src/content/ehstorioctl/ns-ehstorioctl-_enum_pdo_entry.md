@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c3f5cc8e-a600-4ca1-8745-d74943feb2c7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ENUM_PDO_ENTRY structure [Storage Devices], PENUM_PDO_ENTRY structure pointer [Storage Devices], ehstorioctl/ENUM_PDO_ENTRY, storage.enum_pdo_entry, ENUM_PDO_ENTRY, PENUM_PDO_ENTRY, structs-silo_8303b6a6-8f4f-4f0c-91ce-9d70ea72f4f2.xml, ehstorioctl/PENUM_PDO_ENTRY, _ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY
+ms.keywords : structs-silo_8303b6a6-8f4f-4f0c-91ce-9d70ea72f4f2.xml, PENUM_PDO_ENTRY, _ENUM_PDO_ENTRY, *PENUM_PDO_ENTRY, storage.enum_pdo_entry, ehstorioctl/PENUM_PDO_ENTRY, PENUM_PDO_ENTRY structure pointer [Storage Devices], ENUM_PDO_ENTRY, ENUM_PDO_ENTRY structure [Storage Devices], ehstorioctl/ENUM_PDO_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,9 +99,6 @@ The string contained in this member is the device instance path in a form suitab
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 62492c9b-ace0-48be-ae8b-bb681dbca8b7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_60fafeb4-de69-40e4-8942-907fe14fe8a4.xml, storage.hba_openadapterbywwn, HBA_OpenAdapterByWWN, hbaapi/HBA_OpenAdapterByWWN, HBA_OpenAdapterByWWN routine [Storage Devices]
+ms.keywords : storage.hba_openadapterbywwn, fibreHBA_rtns_60fafeb4-de69-40e4-8942-907fe14fe8a4.xml, HBA_OpenAdapterByWWN routine [Storage Devices], hbaapi/HBA_OpenAdapterByWWN, HBA_OpenAdapterByWWN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,14 +120,10 @@ Returned if an unspecified error occurred that prevented the opening of the adap
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

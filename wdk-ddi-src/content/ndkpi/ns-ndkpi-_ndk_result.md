@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B7898C81-E90D-4210-BEAE-1E629FCD7195
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndk_result, _NDK_RESULT, ndkpi/NDK_RESULT, NDK_RESULT, NDK_RESULT structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "_NDK_RESULT, NDK_RESULT, netvista.ndk_result, NDK_RESULT structure [Network Drivers Starting with Windows Vista], ndkpi/NDK_RESULT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ The <i>NdkGetCqResults</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_get_cq_results.md"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also

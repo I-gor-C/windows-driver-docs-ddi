@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4B01E62F-5E5B-4316-B237-EADAA3C72242
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_QUERYPHYSICALADAPTERCAPSIN, display.dxgk_queryphysicaladaptercapsin, DXGK_QUERYPHYSICALADAPTERCAPSIN structure [Display Devices], d3dkmddi/DXGK_QUERYPHYSICALADAPTERCAPSIN, _DXGK_QUERYPHYSICALADAPTERCAPSIN
+ms.keywords : d3dkmddi/DXGK_QUERYPHYSICALADAPTERCAPSIN, DXGK_QUERYPHYSICALADAPTERCAPSIN, _DXGK_QUERYPHYSICALADAPTERCAPSIN, display.dxgk_queryphysicaladaptercapsin, DXGK_QUERYPHYSICALADAPTERCAPSIN structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ Index of a physical adapter in a link.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

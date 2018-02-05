@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : DD5EB79D-122B-4D17-9109-37473AC49C4A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CIP_TALK structure [Buses], IEEE.cip_talk, PCIP_TALK, _CIP_TALK, *PCIP_TALK, PCIP_TALK structure pointer [Buses], CIP_TALK, 61883/PCIP_TALK, 61883/CIP_TALK
+ms.keywords : PCIP_TALK structure pointer [Buses], PCIP_TALK, 61883/CIP_TALK, *PCIP_TALK, CIP_TALK, _CIP_TALK, 61883/PCIP_TALK, CIP_TALK structure [Buses], IEEE.cip_talk
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCIP_TALK, CIP_TALK"
+req.typenames : CIP_TALK, *PCIP_TALK
 ---
 
 # _CIP_TALK structure
@@ -84,9 +84,6 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoSta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

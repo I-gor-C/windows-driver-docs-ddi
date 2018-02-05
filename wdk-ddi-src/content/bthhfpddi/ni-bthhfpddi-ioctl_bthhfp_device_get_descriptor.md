@@ -76,17 +76,16 @@ The audio driver sends this request once with an output buffer size of zero (0) 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | bthhfpddi.h |
-| **IRQL** |  |
 
 ## See Also
-
-<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_containerid.md">IOCTL_BTHHFP_DEVICE_GET_CONTAINERID</a>
 
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_ksnodetypes.md">IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
+
+<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_containerid.md">IOCTL_BTHHFP_DEVICE_GET_CONTAINERID</a>
 
  
 

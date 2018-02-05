@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7f5bdf39-68a7-4466-b4d9-3620b638db62
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DECODEEXECUTE structure [Display Devices], display.d3dddiarg_decodeexecute, d3dumddi/D3DDDIARG_DECODEEXECUTE, UMDisplayDriver_param_Structs_bd4aee7e-91f5-41dc-bb63-0fed88e04c7d.xml, _D3DDDIARG_DECODEEXECUTE, D3DDDIARG_DECODEEXECUTE
+ms.keywords : D3DDDIARG_DECODEEXECUTE, _D3DDDIARG_DECODEEXECUTE, display.d3dddiarg_decodeexecute, D3DDDIARG_DECODEEXECUTE structure [Display Devices], d3dumddi/D3DDDIARG_DECODEEXECUTE, UMDisplayDriver_param_Structs_bd4aee7e-91f5-41dc-bb63-0fed88e04c7d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,18 +69,16 @@ typedef struct _D3DDDIARG_DECODEEXECUTE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decodeexecute.md">DecodeExecute</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a>
 
  
 

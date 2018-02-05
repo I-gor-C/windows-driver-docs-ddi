@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 76040e0d-a43c-4e3d-aaaa-b84fc2613603
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsValidOemCharacter, ifsk.rtlisvalidoemcharacter, ntifs/RtlIsValidOemCharacter, RtlIsValidOemCharacter routine [Installable File System Drivers], rtlref_ebbaa5fc-63da-4eef-b8ac-be10a6e062a0.xml
+ms.keywords : ifsk.rtlisvalidoemcharacter, ntifs/RtlIsValidOemCharacter, rtlref_ebbaa5fc-63da-4eef-b8ac-be10a6e062a0.xml, RtlIsValidOemCharacter, RtlIsValidOemCharacter routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

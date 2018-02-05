@@ -69,6 +69,4 @@ If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
-| **IRQL** |  |

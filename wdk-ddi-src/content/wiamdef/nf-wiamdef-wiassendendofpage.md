@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 107cd468-bc39-4672-9356-e5329b36277b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasFncs_c8a81130-c832-40d8-8a62-619d04d8d3dc.xml, wiasSendEndOfPage function [Imaging Devices], image.wiassendendofpage, wiasSendEndOfPage, wiamdef/wiasSendEndOfPage
+ms.keywords : wiasSendEndOfPage, image.wiassendendofpage, wiamdef/wiasSendEndOfPage, wiasFncs_c8a81130-c832-40d8-8a62-619d04d8d3dc.xml, wiasSendEndOfPage function [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,11 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 

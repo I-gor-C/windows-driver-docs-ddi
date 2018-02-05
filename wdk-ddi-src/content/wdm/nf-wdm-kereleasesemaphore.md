@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 357a97e6-cb19-43df-9b90-db199c712878
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.kereleasesemaphore, KeReleaseSemaphore routine [Kernel-Mode Driver Architecture], wdm/KeReleaseSemaphore, KeReleaseSemaphore, k105_43c9caa4-267a-43c4-8b48-f030e1c2f0d5.xml
+ms.keywords : KeReleaseSemaphore routine [Kernel-Mode Driver Architecture], wdm/KeReleaseSemaphore, KeReleaseSemaphore, k105_43c9caa4-267a-43c4-8b48-f030e1c2f0d5.xml, kernel.kereleasesemaphore
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,12 +98,11 @@ Callers of <b>KeReleaseSemaphore</b> must be running at IRQL &lt;= DISPATCH_LEVE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
@@ -111,13 +110,13 @@ Callers of <b>KeReleaseSemaphore</b> must be running at IRQL &lt;= DISPATCH_LEVE
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 
 <a href="..\wdm\nf-wdm-kereadstatesemaphore.md">KeReadStateSemaphore</a>
 
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-
 <a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
 
  
 

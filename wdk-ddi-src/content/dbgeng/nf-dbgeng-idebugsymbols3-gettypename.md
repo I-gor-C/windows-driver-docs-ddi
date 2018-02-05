@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 09aa3ba9-d5b6-4c08-93f1-f7beca9350a1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetTypeName method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols3::GetTypeName, IDebugSymbols_01f0496a-ce0e-442b-88c9-2a92c15a1237.xml, IDebugSymbols3 interface [Windows Debugging], GetTypeName method, GetTypeName, IDebugSymbols::GetTypeName, IDebugSymbols2 interface [Windows Debugging], GetTypeName method, IDebugSymbols2::GetTypeName, GetTypeName method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetTypeName, GetTypeName method [Windows Debugging], IDebugSymbols3, IDebugSymbols interface [Windows Debugging], GetTypeName method, dbgeng/IDebugSymbols2::GetTypeName, GetTypeName method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::GetTypeName, debugger.gettypename
+ms.keywords : IDebugSymbols2::GetTypeName, GetTypeName method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetTypeName method, dbgeng/IDebugSymbols2::GetTypeName, IDebugSymbols3::GetTypeName, GetTypeName method [Windows Debugging], IDebugSymbols3, debugger.gettypename, IDebugSymbols_01f0496a-ce0e-442b-88c9-2a92c15a1237.xml, IDebugSymbols::GetTypeName, dbgeng/IDebugSymbols::GetTypeName, GetTypeName method [Windows Debugging], IDebugSymbols2 interface, GetTypeName, dbgeng/IDebugSymbols3::GetTypeName, GetTypeName method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], GetTypeName method, IDebugSymbols interface [Windows Debugging], GetTypeName method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -127,14 +127,9 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
@@ -142,9 +137,9 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a>
 
  
 

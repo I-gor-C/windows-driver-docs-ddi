@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 07b04bad-9d52-4a32-8834-48cd5803844c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.mpio_disk_health_class, MPIO_DISK_HEALTH_CLASS, mpiowmi/MPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS structure pointer [Storage Devices], PMPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS structure [Storage Devices], structs-scsibus_b3dfb95d-08eb-4eb6-80bb-3437282a65d6.xml, mpiowmi/PMPIO_DISK_HEALTH_CLASS, _MPIO_DISK_HEALTH_CLASS
+ms.keywords : mpiowmi/PMPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS structure pointer [Storage Devices], structs-scsibus_b3dfb95d-08eb-4eb6-80bb-3437282a65d6.xml, *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS structure [Storage Devices], storage.mpio_disk_health_class, mpiowmi/MPIO_DISK_HEALTH_CLASS, _MPIO_DISK_HEALTH_CLASS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS"
+req.typenames : MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
 ---
 
 # _MPIO_DISK_HEALTH_CLASS structure
@@ -134,7 +134,4 @@ A 64-bit integer that specifies the total number of path failures for this multi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

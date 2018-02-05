@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ff96ea2b-a1f9-417c-98e6-fbf9cc9f6827
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfobject/WdfObjectDereferenceActual, WdfObjectDereferenceActual, wdf.wdfobjectdereferenceactual, kmdf.wdfobjectdereferenceactual, DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml, WdfObjectDereferenceActual method
+ms.keywords : wdf.wdfobjectdereferenceactual, wdfobject/WdfObjectDereferenceActual, WdfObjectDereferenceActual method, kmdf.wdfobjectdereferenceactual, WdfObjectDereferenceActual, DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,20 +94,19 @@ For more information about object reference counts, see <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>
-
 <a href="..\wdfobject\nf-wdfobject-wdfobjectreferenceactual.md">WdfObjectReferenceActual</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>
 
  
 

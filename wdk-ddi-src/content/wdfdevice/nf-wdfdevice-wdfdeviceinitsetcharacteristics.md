@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2937d9f1-f838-4ec4-972d-21ff43097590
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_7dd76de2-8621-45ed-a309-c958ac1c365d.xml, PFN_WDFDEVICEINITSETCHARACTERISTICS, WdfDeviceInitSetCharacteristics method, WdfDeviceInitSetCharacteristics, wdf.wdfdeviceinitsetcharacteristics, kmdf.wdfdeviceinitsetcharacteristics, wdfdevice/WdfDeviceInitSetCharacteristics
+ms.keywords : WdfDeviceInitSetCharacteristics method, WdfDeviceInitSetCharacteristics, wdf.wdfdeviceinitsetcharacteristics, DFDeviceObjectGeneralRef_7dd76de2-8621-45ed-a309-c958ac1c365d.xml, wdfdevice/WdfDeviceInitSetCharacteristics, PFN_WDFDEVICEINITSETCHARACTERISTICS, kmdf.wdfdeviceinitsetcharacteristics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,12 +87,10 @@ Each call to <b>WdfDeviceInitSetCharacteristics</b> overwrites the settings of a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 

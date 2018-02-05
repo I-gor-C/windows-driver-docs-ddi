@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : ad8b8740-35bc-4aa4-a190-00d1a78e447a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure pointer [Buses], pci_struct_0d9ab097-6980-40b4-8c25-02ad8239588b.xml, PCI.pci_express_serial_number_capability, PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure [Buses], wdm/PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, wdm/PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, *PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, _PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY
+ms.keywords : PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, wdm/PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, pci_struct_0d9ab097-6980-40b4-8c25-02ad8239588b.xml, wdm/PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, _PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, *PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure [Buses], PCI.pci_express_serial_number_capability, PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure pointer [Buses], PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,6 @@ The PCIe device serial number capability is an optional extended capability that
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h) |
 
 ## See Also

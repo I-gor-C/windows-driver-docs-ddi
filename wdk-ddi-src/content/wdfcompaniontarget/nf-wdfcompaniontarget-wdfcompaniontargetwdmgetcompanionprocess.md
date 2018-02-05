@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 589c5076-e283-4cf4-bd9f-52a465794b06
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfcompaniontargetwdmgetcompanionprocess, WdfCompanionTargetWdmGetCompanionProcess method, wdfcompaniontarget/WdfCompanionTargetWdmGetCompanionProcess, WdfCompanionTargetWdmGetCompanionProcess
+ms.keywords : wdf.wdfcompaniontargetwdmgetcompanionprocess, WdfCompanionTargetWdmGetCompanionProcess, WdfCompanionTargetWdmGetCompanionProcess method, wdfcompaniontarget/WdfCompanionTargetWdmGetCompanionProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,8 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.23 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfcompaniontarget.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

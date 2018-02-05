@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 874FB2E1-7A2F-4C91-BA72-D67DA2EE84E1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/BoundExceptionHandled, wdm/BOUND_CALLBACK_STATUS, _BOUND_CALLBACK_STATUS, *PBOUND_CALLBACK_STATUS, BoundExceptionHandled, BoundExceptionContinueSearch, wdm/BoundExceptionMaximum, BoundExceptionError, kernel.bound_callback_status, wdm/BoundExceptionContinueSearch, BOUND_CALLBACK_STATUS enumeration [Kernel-Mode Driver Architecture], wdm/BoundExceptionError, BOUND_CALLBACK_STATUS, BoundExceptionMaximum
+ms.keywords : wdm/BoundExceptionHandled, BOUND_CALLBACK_STATUS enumeration [Kernel-Mode Driver Architecture], BoundExceptionError, wdm/BoundExceptionContinueSearch, wdm/BoundExceptionMaximum, *PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS, _BOUND_CALLBACK_STATUS, wdm/BOUND_CALLBACK_STATUS, BoundExceptionHandled, kernel.bound_callback_status, wdm/BoundExceptionError, BoundExceptionContinueSearch, BoundExceptionMaximum
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BOUND_CALLBACK_STATUS, *PBOUND_CALLBACK_STATUS
+req.typenames : "*PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -84,9 +84,7 @@ The return value of the <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
 | **Header** | wdm.h |
 
 ## See Also

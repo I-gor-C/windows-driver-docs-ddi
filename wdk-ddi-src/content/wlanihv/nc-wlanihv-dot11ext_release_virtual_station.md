@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -43,8 +43,8 @@ req.product : Windows 10 or later.
 # DOT11EXT_RELEASE_VIRTUAL_STATION callback function
 <div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The IHV Extensions DLL calls the 
   <b>Dot11ExtReleaseVirtualStation</b> function to release a prior 
-  <mshelp:link keywords="netvista.dot11extrequestvirtualstation" tabindex="0"><b>
-  Dot11ExtRequestVirtualStation</b></mshelp:link> request to create an 802.11 virtual station.
+  <a href="..\wlanihv\nc-wlanihv-dot11ext_request_virtual_station.md">
+  Dot11ExtRequestVirtualStation</a> request to create an 802.11 virtual station.
 
 ## Syntax
 
@@ -68,8 +68,8 @@ The handle used by the operating system to reference the primary physical wirele
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function. It is also the 
      <i>hDot11PrimaryHandle</i> parameter that the IHV Extension DLL used in a previous call to 
-     <mshelp:link keywords="netvista.dot11extrequestvirtualstation" tabindex="0"><b>
-     Dot11ExtRequestVirtualStation</b></mshelp:link>.
+     <a href="..\wlanihv\nc-wlanihv-dot11ext_request_virtual_station.md">
+     Dot11ExtRequestVirtualStation</a>.
 
 `pvReserved`
 
@@ -101,19 +101,14 @@ A call to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 Available in Windows 7 |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.dot11extrequestvirtualstation" tabindex="0"><b>
-   Dot11ExtRequestVirtualStation</b></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11ext_request_virtual_station.md">
+   Dot11ExtRequestVirtualStation</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 

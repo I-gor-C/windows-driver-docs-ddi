@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f5aecd1f-e0f2-47a9-aa70-767a42fefdff
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetEventCallbacksWide method [Windows Debugging], IDebugClient5 interface, SetEventCallbacksWide, IDebugClient5 interface [Windows Debugging], SetEventCallbacksWide method, debugger.seteventcallbackswide, SetEventCallbacksWide method [Windows Debugging], IDebugClient5::SetEventCallbacksWide, dbgeng/IDebugClient5::SetEventCallbacksWide, IDebugClient5
+ms.keywords : SetEventCallbacksWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], SetEventCallbacksWide method, dbgeng/IDebugClient5::SetEventCallbacksWide, SetEventCallbacksWide, SetEventCallbacksWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::SetEventCallbacksWide, debugger.seteventcallbackswide, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -91,14 +91,9 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

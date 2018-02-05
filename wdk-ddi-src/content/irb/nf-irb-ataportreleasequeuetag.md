@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 54399050-740f-4af8-ad85-cd3060f14af4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : irb/AtaPortReleaseQueueTag, AtaPortReleaseQueueTag routine [Storage Devices], AtaPortReleaseQueueTag, storage.ataportreleasequeuetag, atartns_cfdd9be6-53b5-4c4a-ac61-bc6a3cf48ea5.xml
+ms.keywords : storage.ataportreleasequeuetag, irb/AtaPortReleaseQueueTag, AtaPortReleaseQueueTag, AtaPortReleaseQueueTag routine [Storage Devices], atartns_cfdd9be6-53b5-4c4a-ac61-bc6a3cf48ea5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,9 @@ The miniport driver should call <b>AtaPortReleaseQueueTag</b> to free allocated 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

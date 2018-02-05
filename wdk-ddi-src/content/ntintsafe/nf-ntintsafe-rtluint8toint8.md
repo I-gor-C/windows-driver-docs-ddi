@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 92666A78-DC2C-4B0B-B5D3-E724F342D151
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlUInt8ToInt8, RtlUInt8ToInt8, RtlUInt8ToInt8 function [Kernel-Mode Driver Architecture], kernel.rtluint8toint8
+ms.keywords : RtlUInt8ToInt8 function [Kernel-Mode Driver Architecture], kernel.rtluint8toint8, RtlUInt8ToInt8, ntintsafe/RtlUInt8ToInt8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This is one of a set of inline functions designed to provide type conversions an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

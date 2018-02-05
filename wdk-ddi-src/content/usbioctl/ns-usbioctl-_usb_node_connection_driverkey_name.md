@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : b5939a5b-2856-494c-9673-d32e2fc93384
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbstrct_561b9eb1-d580-48c5-ac16-c87647f7a342.xml, _USB_NODE_CONNECTION_DRIVERKEY_NAME, PUSB_NODE_CONNECTION_DRIVERKEY_NAME structure pointer [Buses], USB_NODE_CONNECTION_DRIVERKEY_NAME, *PUSB_NODE_CONNECTION_DRIVERKEY_NAME, buses.usb_node_connection_driverkey_name, usbioctl/USB_NODE_CONNECTION_DRIVERKEY_NAME, USB_NODE_CONNECTION_DRIVERKEY_NAME structure [Buses], usbioctl/PUSB_NODE_CONNECTION_DRIVERKEY_NAME, PUSB_NODE_CONNECTION_DRIVERKEY_NAME
+ms.keywords : USB_NODE_CONNECTION_DRIVERKEY_NAME structure [Buses], usbioctl/USB_NODE_CONNECTION_DRIVERKEY_NAME, usbioctl/PUSB_NODE_CONNECTION_DRIVERKEY_NAME, PUSB_NODE_CONNECTION_DRIVERKEY_NAME, USB_NODE_CONNECTION_DRIVERKEY_NAME, _USB_NODE_CONNECTION_DRIVERKEY_NAME, PUSB_NODE_CONNECTION_DRIVERKEY_NAME structure pointer [Buses], buses.usb_node_connection_driverkey_name, *PUSB_NODE_CONNECTION_DRIVERKEY_NAME, usbstrct_561b9eb1-d580-48c5-ac16-c87647f7a342.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_NODE_CONNECTION_DRIVERKEY_NAME, *PUSB_NODE_CONNECTION_DRIVERKEY_NAME
+req.typenames : "*PUSB_NODE_CONNECTION_DRIVERKEY_NAME, USB_NODE_CONNECTION_DRIVERKEY_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -70,9 +70,6 @@ On output, the driver key name for the device that is attached to the port that 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 598d2b4f-9b49-480a-9cf8-25661c24483f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfchildlistupdateallchilddescriptionsaspresent, wdfchildlist/WdfChildListUpdateAllChildDescriptionsAsPresent, DFDeviceObjectChildListRef_55956590-2843-4486-acfb-0e85c01702a0.xml, WdfChildListUpdateAllChildDescriptionsAsPresent method, PFN_WDFCHILDLISTUPDATEALLCHILDDESCRIPTIONSASPRESENT, WdfChildListUpdateAllChildDescriptionsAsPresent, wdf.wdfchildlistupdateallchilddescriptionsaspresent
+ms.keywords : kmdf.wdfchildlistupdateallchilddescriptionsaspresent, wdfchildlist/WdfChildListUpdateAllChildDescriptionsAsPresent, PFN_WDFCHILDLISTUPDATEALLCHILDDESCRIPTIONSASPRESENT, WdfChildListUpdateAllChildDescriptionsAsPresent, WdfChildListUpdateAllChildDescriptionsAsPresent method, wdf.wdfchildlistupdateallchilddescriptionsaspresent, DFDeviceObjectChildListRef_55956590-2843-4486-acfb-0e85c01702a0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,9 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

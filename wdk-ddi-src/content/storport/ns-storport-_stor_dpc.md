@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bb73217c-b159-4fd8-8cb3-334326a651ba
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-general_e1bef2e1-9703-433c-b8a1-daf30db1aaf6.xml, _STOR_DPC, STOR_DPC, *PSTOR_DPC, STOR_DPC structure [Storage Devices], storport/STOR_DPC, storage.stor_dpc
+ms.keywords : storage.stor_dpc, *PSTOR_DPC, storport/STOR_DPC, _STOR_DPC, structs-general_e1bef2e1-9703-433c-b8a1-daf30db1aaf6.xml, STOR_DPC structure [Storage Devices], STOR_DPC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -52,9 +52,6 @@ The STOR_DPC structure is an opaque structure that represents a DPC object. Do n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

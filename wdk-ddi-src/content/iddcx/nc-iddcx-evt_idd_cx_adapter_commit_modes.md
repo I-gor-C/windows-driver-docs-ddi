@@ -79,11 +79,7 @@ The OS always provides the IDDCX_PATH for every connected monitor even if it is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
 | **IRQL** | "_requires_same_" |
-| **DDI compliance rules** |  |

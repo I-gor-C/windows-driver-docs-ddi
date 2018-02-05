@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 9c9cf520-3249-4c1e-9d0d-e07f7127117e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamicro/PVAL, PVAL structure pointer [Imaging Devices], VAL, MicroDrv_397b66fc-2f8e-434e-88ac-24b5cdd415d5.xml, VAL structure [Imaging Devices], *PVAL, PVAL, image.val, wiamicro/VAL
+ms.keywords : "*PVAL, PVAL structure pointer [Imaging Devices], VAL, image.val, wiamicro/VAL, PVAL, MicroDrv_397b66fc-2f8e-434e-88ac-24b5cdd415d5.xml, wiamicro/PVAL, VAL structure [Imaging Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,7 +100,5 @@ Specifies the device name in ASCII form. If needed for interrupt checking, the m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamicro.h (include Wiamicro.h) |

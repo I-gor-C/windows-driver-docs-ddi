@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : e0263969-1c6a-4805-a647-d4b9df83ef71
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DriverUnifiedPosPowerReportingType, pos.unifiedpospowerreportingtype, UnknownPowerReportingType, DriverUnifiedPosPowerReportingType enumeration, Standard, pointofservicecommontypes/Advanced, pointofservicecommontypes/Standard, pointofservicecommontypes/UnknownPowerReportingType, Advanced, pointofservicecommontypes/DriverUnifiedPosPowerReportingType
+ms.keywords : UnknownPowerReportingType, pointofservicecommontypes/Standard, Standard, Advanced, pointofservicecommontypes/UnknownPowerReportingType, pointofservicecommontypes/DriverUnifiedPosPowerReportingType, pos.unifiedpospowerreportingtype, DriverUnifiedPosPowerReportingType, pointofservicecommontypes/Advanced, DriverUnifiedPosPowerReportingType enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _DriverUnifiedPosPowerReportingType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

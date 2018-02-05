@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : bad50869-472c-4eb7-9bc0-0fa2d27ee753
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], GetExtensionFunction method, IDebugControl3, IDebugControl::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], debugger.getextensionfunction, GetExtensionFunction method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], GetExtensionFunction method, dbgeng/IDebugControl3::GetExtensionFunction, IDebugControl2::GetExtensionFunction, GetExtensionFunction, IDebugControl interface [Windows Debugging], GetExtensionFunction method, IDebugControl3::GetExtensionFunction, IDebugControl_9f227e3a-ee1e-44d0-9675-ec773e3391e5.xml
+ms.keywords : IDebugControl3::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetExtensionFunction method, IDebugControl_9f227e3a-ee1e-44d0-9675-ec773e3391e5.xml, IDebugControl3, dbgeng/IDebugControl::GetExtensionFunction, IDebugControl3 interface [Windows Debugging], GetExtensionFunction method, GetExtensionFunction, debugger.getextensionfunction, GetExtensionFunction method [Windows Debugging], IDebugControl2 interface, IDebugControl::GetExtensionFunction, GetExtensionFunction method [Windows Debugging], dbgeng/IDebugControl2::GetExtensionFunction, IDebugControl2 interface [Windows Debugging], GetExtensionFunction method, GetExtensionFunction method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::GetExtensionFunction, IDebugControl2::GetExtensionFunction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -99,28 +99,23 @@ For more information on using extension functions, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546717">GetExtensionByPath</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537892">AddExtension</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539023">CallExtension</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539023">CallExtension</a>
 
  
 

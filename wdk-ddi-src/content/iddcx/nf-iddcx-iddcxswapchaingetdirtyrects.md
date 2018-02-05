@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4ffe3c46-f729-4088-b69e-f39bc00f40a6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : iddcx/IddCxSwapChainGetDirtyRects, IddCxSwapChainGetDirtyRects, display.iddcxswapchaingetdirtyrects, IddCxSwapChainGetDirtyRects method [Display Devices]
+ms.keywords : IddCxSwapChainGetDirtyRects, IddCxSwapChainGetDirtyRects method [Display Devices], iddcx/IddCxSwapChainGetDirtyRects, display.iddcxswapchaingetdirtyrects
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,8 @@ Output  arguments of the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |
-| **DDI compliance rules** |  |

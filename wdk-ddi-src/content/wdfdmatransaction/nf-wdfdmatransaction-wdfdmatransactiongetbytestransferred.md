@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 32cc50bc-a93b-43ec-98c7-bfaaebbe6c28
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdmatransactiongetbytestransferred, WdfDmaTransactionGetBytesTransferred, PFN_WDFDMATRANSACTIONGETBYTESTRANSFERRED, DFDmaObjectRef_a8d61436-75d3-4c14-a81b-6ba7adb3c442.xml, wdfdmatransaction/WdfDmaTransactionGetBytesTransferred, wdf.wdfdmatransactiongetbytestransferred, WdfDmaTransactionGetBytesTransferred method
+ms.keywords : wdfdmatransaction/WdfDmaTransactionGetBytesTransferred, PFN_WDFDMATRANSACTIONGETBYTESTRANSFERRED, WdfDmaTransactionGetBytesTransferred, DFDmaObjectRef_a8d61436-75d3-4c14-a81b-6ba7adb3c442.xml, WdfDmaTransactionGetBytesTransferred method, kmdf.wdfdmatransactiongetbytestransferred, wdf.wdfdmatransactiongetbytestransferred
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,18 @@ Framework-based drivers typically call <b>WdfDmaTransactionGetBytesTransferred</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
 

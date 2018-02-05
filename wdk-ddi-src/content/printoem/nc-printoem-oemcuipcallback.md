@@ -104,11 +104,5 @@ These return values are listed in order of decreasing priority. If multiple user
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printoem.h (include Printoem.h, Compstui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

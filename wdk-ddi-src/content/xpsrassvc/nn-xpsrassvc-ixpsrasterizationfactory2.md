@@ -58,8 +58,5 @@ In Windows 10, the <b>IXpsRasterizationFactory2</b> interface represents an obj
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | xpsrassvc.h |
-| **DLL** |  |

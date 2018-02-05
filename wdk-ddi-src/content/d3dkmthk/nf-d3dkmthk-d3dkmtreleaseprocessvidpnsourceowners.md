@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 65fa0654-25b5-4ead-ac9e-0eb0f404259a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_8c1e2870-c803-4ca4-99f1-8f39a00983c8.xml, D3DKMTReleaseProcessVidPnSourceOwners, d3dkmthk/D3DKMTReleaseProcessVidPnSourceOwners, D3DKMTReleaseProcessVidPnSourceOwners function [Display Devices], display.d3dkmtreleaseprocessvidpnsourceowners
+ms.keywords : D3DKMTReleaseProcessVidPnSourceOwners, D3DKMTReleaseProcessVidPnSourceOwners function [Display Devices], d3dkmthk/D3DKMTReleaseProcessVidPnSourceOwners, OpenGL_Functions_8c1e2870-c803-4ca4-99f1-8f39a00983c8.xml, display.d3dkmtreleaseprocessvidpnsourceowners
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,11 +92,8 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |

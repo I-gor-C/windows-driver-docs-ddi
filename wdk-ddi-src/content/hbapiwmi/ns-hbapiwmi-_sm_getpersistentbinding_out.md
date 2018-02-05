@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : aa80e05c-e322-4350-80e7-28d53821c510
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SM_GetPersistentBinding_OUT structure [Storage Devices], PSM_GetPersistentBinding_OUT structure pointer [Storage Devices], structs-Fibre_51ba485a-c18a-4d45-a77a-859d55acc4c6.xml, *PSM_GetPersistentBinding_OUT, _SM_GetPersistentBinding_OUT, PSM_GetPersistentBinding_OUT, storage.sm_getpersistentbinding_out, hbapiwmi/PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT, hbapiwmi/SM_GetPersistentBinding_OUT
+ms.keywords : SM_GetPersistentBinding_OUT structure [Storage Devices], _SM_GetPersistentBinding_OUT, hbapiwmi/PSM_GetPersistentBinding_OUT, PSM_GetPersistentBinding_OUT structure pointer [Storage Devices], *PSM_GetPersistentBinding_OUT, structs-Fibre_51ba485a-c18a-4d45-a77a-859d55acc4c6.xml, storage.sm_getpersistentbinding_out, hbapiwmi/SM_GetPersistentBinding_OUT, PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,4 @@ The WMI tool suite generates a declaration of the SM_GetPersistentBinding_OUT st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

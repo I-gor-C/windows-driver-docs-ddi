@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0fce82e9-0932-4838-b247-af0b2b8642d3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_0bf70816-64a3-44cb-864a-ad94d3c9fce9.xml, d3dumddi/DXVADDI_AYUVSAMPLE8, _DXVADDI_AYUVSAMPLE8, DXVADDI_AYUVSAMPLE8 structure [Display Devices], display.dxvaddi_ayuvsample8, DXVADDI_AYUVSAMPLE8
+ms.keywords : DXVADDI_AYUVSAMPLE8, d3dumddi/DXVADDI_AYUVSAMPLE8, display.dxvaddi_ayuvsample8, _DXVADDI_AYUVSAMPLE8, DXVA2_Structs_0bf70816-64a3-44cb-864a-ad94d3c9fce9.xml, DXVADDI_AYUVSAMPLE8 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,16 +91,14 @@ The color value is scaled according to ITU-R Rec. BT.601, which you can learn ab
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodebufferdesc.md">DXVADDI_DECODEBUFFERDESC</a>
 
  
 

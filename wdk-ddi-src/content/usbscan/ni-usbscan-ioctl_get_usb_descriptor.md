@@ -80,6 +80,4 @@ For more information about USB descriptors, see the <i>Universal Serial Bus Spec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |
-| **IRQL** |  |

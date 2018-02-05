@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 22ba50eb-e428-433f-aca0-1d61f31fcd0c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dispmprt/PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE structure [Display Devices], PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE, *PDXGK_FIRMWARE_TABLE_INTERFACE, dispmprt/DXGK_FIRMWARE_TABLE_INTERFACE, _DXGK_FIRMWARE_TABLE_INTERFACE, PDXGK_FIRMWARE_TABLE_INTERFACE structure pointer [Display Devices], display.dxgk_firmware_table_interface
+ms.keywords : display.dxgk_firmware_table_interface, *PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE structure [Display Devices], dispmprt/PDXGK_FIRMWARE_TABLE_INTERFACE, PDXGK_FIRMWARE_TABLE_INTERFACE structure pointer [Display Devices], _DXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE, dispmprt/DXGK_FIRMWARE_TABLE_INTERFACE, PDXGK_FIRMWARE_TABLE_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,9 +100,7 @@ The version number of the System Firmware Table interface. Version number consta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also

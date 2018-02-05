@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4d63c908-8ae3-4df4-826f-9d87ea6c24ad
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoForwardProgressActionInvalid, WdfIoForwardProgressActionFailRequest, wdfio/WDF_IO_FORWARD_PROGRESS_ACTION, wdf.wdf_io_forward_progress_action, WDF_IO_FORWARD_PROGRESS_ACTION enumeration, wdfio/WdfIoForwardProgressActionInvalid, wdfio/WdfIoForwardProgressActionFailRequest, WdfIoForwardProgressActionUseReservedRequest, kmdf.wdf_io_forward_progress_action, wdfio/WdfIoForwardProgressActionUseReservedRequest, DFQueueObjectRef_d1ee566a-9887-44de-aef5-a13f64e7603c.xml, WDF_IO_FORWARD_PROGRESS_ACTION, _WDF_IO_FORWARD_PROGRESS_ACTION
+ms.keywords : wdfio/WdfIoForwardProgressActionInvalid, wdfio/WdfIoForwardProgressActionUseReservedRequest, DFQueueObjectRef_d1ee566a-9887-44de-aef5-a13f64e7603c.xml, wdf.wdf_io_forward_progress_action, _WDF_IO_FORWARD_PROGRESS_ACTION, WdfIoForwardProgressActionFailRequest, wdfio/WdfIoForwardProgressActionFailRequest, WDF_IO_FORWARD_PROGRESS_ACTION, kmdf.wdf_io_forward_progress_action, WdfIoForwardProgressActionUseReservedRequest, WdfIoForwardProgressActionInvalid, WDF_IO_FORWARD_PROGRESS_ACTION enumeration, wdfio/WDF_IO_FORWARD_PROGRESS_ACTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,7 @@ The <b>WDF_IO_FORWARD_PROGRESS_ACTION</b> enumeration is used as the return valu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfio.h (include Wdf.h) |
 
 ## See Also

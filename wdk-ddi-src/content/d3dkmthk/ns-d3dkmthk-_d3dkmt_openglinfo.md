@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d8e571dd-b823-4cad-96b6-c7841a1234c4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_OPENGLINFO, _D3DKMT_OPENGLINFO, display.d3dkmt_openglinfo, D3DKMT_OPENGLINFO structure [Display Devices], OpenGL_Structs_93ba7fd7-969f-4edf-a6ce-38a135bcda83.xml, D3DKMT_OPENGLINFO
+ms.keywords : d3dkmthk/D3DKMT_OPENGLINFO, D3DKMT_OPENGLINFO, _D3DKMT_OPENGLINFO, display.d3dkmt_openglinfo, D3DKMT_OPENGLINFO structure [Display Devices], OpenGL_Structs_93ba7fd7-969f-4edf-a6ce-38a135bcda83.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_OPENGLINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

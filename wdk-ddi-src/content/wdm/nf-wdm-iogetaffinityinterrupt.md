@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : aec1ace6-9945-4e7a-b0f6-81591670ecfe
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/WdmlibIoGetAffinityInterrupt, wdm/IoGetAffinityInterrupt, k104_39247b69-50e1-4162-b26e-81b5358738de.xml, IoGetAffinityInterrupt, WdmlibIoGetAffinityInterrupt, kernel.iogetaffinityinterrupt, IoGetAffinityInterrupt routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/IoGetAffinityInterrupt, IoGetAffinityInterrupt routine [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, kernel.iogetaffinityinterrupt, wdm/WdmlibIoGetAffinityInterrupt, IoGetAffinityInterrupt, k104_39247b69-50e1-4162-b26e-81b5358738de.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,12 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinity
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

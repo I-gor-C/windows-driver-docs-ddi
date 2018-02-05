@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b57661c3-a18f-45ed-b7fc-f6471753566e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : Output method [Windows Debugging], IDebugOutputCallbacksWide interface, dbgeng/IDebugOutputCallbacksWide::Output, IDebugOutputCallbacksWide, Output, debugger.idebugoutputcallbackswide_output, IDebugOutputCallbacksWide::Output, IDebugOutputCallbacksWide interface [Windows Debugging], Output method, Output method [Windows Debugging]
+ms.keywords : Output method [Windows Debugging], IDebugOutputCallbacksWide interface, IDebugOutputCallbacksWide interface [Windows Debugging], Output method, dbgeng/IDebugOutputCallbacksWide::Output, Output method [Windows Debugging], IDebugOutputCallbacksWide::Output, debugger.idebugoutputcallbackswide_output, Output, IDebugOutputCallbacksWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,11 +75,6 @@ For more information about debugger engine output, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

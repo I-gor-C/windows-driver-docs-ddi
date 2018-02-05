@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 830D706A-016C-4637-829F-2014AD1A1309
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.ipnpcallbackhardware2_onpreparehardware, IPnpCallbackHardware2::OnPrepareHardware, OnPrepareHardware method, IPnpCallbackHardware2 interface, OnPrepareHardware method, wdf.ipnpcallbackhardware2_onpreparehardware, OnPrepareHardware, IPnpCallbackHardware2, OnPrepareHardware method, IPnpCallbackHardware2 interface, wudfddi/IPnpCallbackHardware2::OnPrepareHardware
+ms.keywords : umdf.ipnpcallbackhardware2_onpreparehardware, wudfddi/IPnpCallbackHardware2::OnPrepareHardware, OnPrepareHardware method, OnPrepareHardware method, IPnpCallbackHardware2 interface, wdf.ipnpcallbackhardware2_onpreparehardware, OnPrepareHardware, IPnpCallbackHardware2 interface, OnPrepareHardware method, IPnpCallbackHardware2::OnPrepareHardware, IPnpCallbackHardware2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -86,14 +86,11 @@ For information about parsing hardware resources, see <a href="https://docs.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 

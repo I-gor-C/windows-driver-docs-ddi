@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1C1AE0F6-2CAB-4983-B1A7-E6C8BA822754
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceAllocAndQueryPropertyEx method, wdf.wdfdeviceallocandquerypropertyex, PFN_WDFDEVICEALLOCANDQUERYPROPERTYEX, wdfdevice/WdfDeviceAllocAndQueryPropertyEx, WdfDeviceAllocAndQueryPropertyEx
+ms.keywords : WdfDeviceAllocAndQueryPropertyEx, PFN_WDFDEVICEALLOCANDQUERYPROPERTYEX, WdfDeviceAllocAndQueryPropertyEx method, wdf.wdfdeviceallocandquerypropertyex, wdfdevice/WdfDeviceAllocAndQueryPropertyEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -124,14 +124,12 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | APC_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e8845b15-4427-45ea-9192-352d82c89c6a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_ee32329f-3111-4ee6-869f-2b8e21d6696c.xml, ifsk.rxcebuildaddress, RxCeBuildAddress function [Installable File System Drivers], rxce/RxCeBuildAddress, RxCeBuildAddress
+ms.keywords : rxce/RxCeBuildAddress, rxref_ee32329f-3111-4ee6-869f-2b8e21d6696c.xml, ifsk.rxcebuildaddress, RxCeBuildAddress, RxCeBuildAddress function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -117,14 +117,10 @@ When <b>RxCeBuildAddress</b> is successful, the data members in the RXCE_ADDRESS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

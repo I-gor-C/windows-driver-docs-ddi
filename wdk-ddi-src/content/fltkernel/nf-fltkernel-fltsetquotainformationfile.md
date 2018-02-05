@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 89EC9F5C-24AE-4340-99CF-05323F99B465
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltSetQuotaInformationFile, ifsk.fltsetquotainformationfile, FltSetQuotaInformationFile function [Installable File System Drivers], FltSetQuotaInformationFile
+ms.keywords : ifsk.fltsetquotainformationfile, FltSetQuotaInformationFile, FltSetQuotaInformationFile function [Installable File System Drivers], fltkernel/FltSetQuotaInformationFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,20 +97,18 @@ The instance or volume is being torn down. This is an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
-
 <a href="..\ntifs\nf-ntifs-zwsetquotainformationfile.md">ZwSetQuotaInformationFile</a>
+
+<a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltqueryquotainformationfile.md">FltQueryQuotaInformationFile</a>
 

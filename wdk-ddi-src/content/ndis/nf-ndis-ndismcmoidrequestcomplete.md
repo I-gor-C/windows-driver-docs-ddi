@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4c45be9f-3d07-4150-830a-3aa6d74531ff
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : condis_request_ref_fc46ea1a-b820-4f1d-b986-e879adb27ad6.xml, NdisMCmOidRequestComplete macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmOidRequestComplete, netvista.ndismcmoidrequestcomplete, NdisMCmOidRequestComplete
+ms.keywords : ndis/NdisMCmOidRequestComplete, NdisMCmOidRequestComplete macro [Network Drivers Starting with Windows Vista], netvista.ndismcmoidrequestcomplete, NdisMCmOidRequestComplete, condis_request_ref_fc46ea1a-b820-4f1d-b986-e879adb27ad6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -94,8 +94,8 @@ A CoNDIS MCM that returns NDIS_STATUS_PENDING from its
 
 After the MCM calls 
     <b>NdisMCmOidRequestComplete</b>, NDIS calls the 
-    <mshelp:link keywords="netvista.protocolcooidrequestcomplete" tabindex="0"><i>
-    ProtocolCoOidRequestComplete</i></mshelp:link> function of the CoNDIS client that originally called the 
+    <a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
+    ProtocolCoOidRequestComplete</a> function of the CoNDIS client that originally called the 
     <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a> function.
 
 For more information about the OIDs defined to use with CONDIS drivers, see 
@@ -104,12 +104,10 @@ For more information about the OIDs defined to use with CONDIS drivers, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
@@ -117,12 +115,12 @@ For more information about the OIDs defined to use with CONDIS drivers, see
 
 <a href="..\ndis\nc-ndis-protocol_co_oid_request.md">ProtocolCoOidRequest</a>
 
-<mshelp:link keywords="netvista.protocolcooidrequestcomplete" tabindex="0"><i>
-   ProtocolCoOidRequestComplete</i></mshelp:link>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_oid_request_complete.md">
+   ProtocolCoOidRequestComplete</a>
 
 <a href="..\ndis\nf-ndis-ndiscooidrequest.md">NdisCoOidRequest</a>
-
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
  
 

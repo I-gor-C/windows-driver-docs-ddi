@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0D279F79-FFA8-4661-A9E9-EFA62A97EEC7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint3 interface [Windows Debugging], GetGuid method, GetGuid, debugger.idebugbreakpoint3_getguid, GetGuid method [Windows Debugging], IDebugBreakpoint3::GetGuid, dbgeng/IDebugBreakpoint3::GetGuid, IDebugBreakpoint3, GetGuid method [Windows Debugging], IDebugBreakpoint3 interface
+ms.keywords : GetGuid, dbgeng/IDebugBreakpoint3::GetGuid, GetGuid method [Windows Debugging], IDebugBreakpoint3 interface [Windows Debugging], GetGuid method, debugger.idebugbreakpoint3_getguid, IDebugBreakpoint3::GetGuid, IDebugBreakpoint3, GetGuid method [Windows Debugging], IDebugBreakpoint3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

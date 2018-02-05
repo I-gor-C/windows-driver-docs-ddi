@@ -75,6 +75,4 @@ This IOCTL is handled by the PosCx library. The driver writer does not need to h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
-| **IRQL** |  |

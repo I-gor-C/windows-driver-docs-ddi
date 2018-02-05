@@ -82,14 +82,10 @@ GpioClx calls the <i>CLIENT_ClearActiveInterrupts</i> callback function at eithe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | gpioclx.h |
-| **Library** |  |
 | **IRQL** | See Remarks. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2167504e-ca92-4427-9101-04a2c2bf66df
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFWMIRef_4e04e7da-3a14-4bd4-a430-8f5f3624b61a.xml, wdfwmi/WdfWmiInstanceDeregister, WdfWmiInstanceDeregister method, wdf.wdfwmiinstancederegister, kmdf.wdfwmiinstancederegister, WdfWmiInstanceDeregister, PFN_WDFWMIINSTANCEDEREGISTER
+ms.keywords : WdfWmiInstanceDeregister method, DFWMIRef_4e04e7da-3a14-4bd4-a430-8f5f3624b61a.xml, WdfWmiInstanceDeregister, wdfwmi/WdfWmiInstanceDeregister, wdf.wdfwmiinstancederegister, kmdf.wdfwmiinstancederegister, PFN_WDFWMIINSTANCEDEREGISTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,12 +76,10 @@ For more information about the <b>WdfWmiInstanceDeregister</b> method, see <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0aed2613-b40f-4328-91c4-c8e945c6ef17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDispatchQuerySecurity, stream.ksdispatchquerysecurity, ks/KsDispatchQuerySecurity, KsDispatchQuerySecurity function [Streaming Media Devices], ksfunc_9bf0ae3b-19d0-455d-9d58-2d7b7c515f30.xml
+ms.keywords : KsDispatchQuerySecurity, ksfunc_9bf0ae3b-19d0-455d-9d58-2d7b7c515f30.xml, KsDispatchQuerySecurity function [Streaming Media Devices], stream.ksdispatchquerysecurity, ks/KsDispatchQuerySecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,6 @@ The <b>KsDispatchQuerySecurity</b> function returns the security query status an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

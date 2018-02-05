@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f6f50bba-cda5-41ed-9e0b-1aea5113a22b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_timer_ref_1f787022-10cd-4ae1-97d9-f40bae70a844.xml, NdisSetCoalescableTimerObject, ndis/NdisSetCoalescableTimerObject, netvista.ndissetcoalescabletimerobject, NdisSetCoalescableTimerObject function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisSetCoalescableTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_1f787022-10cd-4ae1-97d9-f40bae70a844.xml, ndis/NdisSetCoalescableTimerObject, netvista.ndissetcoalescabletimerobject, NdisSetCoalescableTimerObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,8 +62,8 @@ BOOLEAN NdisSetCoalescableTimerObject(
 `TimerObject`
 
 A handle to a timer object that NDIS provides when a driver calls the 
-     <mshelp:link keywords="netvista.ndisallocatetimerobject" tabindex="0"><b>
-     NdisAllocateTimerObject</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">
+     NdisAllocateTimerObject</a> function.
 
 `DueTime`
 
@@ -86,8 +86,8 @@ The optional periodic time interval, in milliseconds, that elapses between every
 A pointer to a caller-supplied context area that NDIS passes to the associated 
      <i>NetTimerCallback</i> function when a timer fires. If this parameter is <b>NULL</b>, NDIS uses the default
      value that is specified in the 
-     <mshelp:link keywords="netvista.ndis_timer_characteristics" tabindex="0"><b>
-     NDIS_TIMER_CHARACTERISTICS</b></mshelp:link> structure.
+     <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">
+     NDIS_TIMER_CHARACTERISTICS</a> structure.
 
 `Tolerance`
 
@@ -172,28 +172,25 @@ To cancel a timer, call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
+
+<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
 
 <a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 
 <a href="..\ndis\nf-ndis-ndisallocatetimerobject.md">NdisAllocateTimerObject</a>
 
-<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
-
-<a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 
 <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
-
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 
  
 

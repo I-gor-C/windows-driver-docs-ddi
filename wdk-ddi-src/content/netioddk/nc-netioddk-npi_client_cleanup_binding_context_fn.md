@@ -87,8 +87,8 @@ If the client module does not dynamically allocate the memory for its binding co
     <i>ClientCleanupBindingContext</i> callback function. If the client module does not implement a 
     <i>ClientCleanupBindingContext</i> callback function, then it must set the 
     <i>ClientCleanupBindingContext</i> member of the 
-    <mshelp:link keywords="netvista.npi_client_characteristics" tabindex="0"><b>
-    NPI_CLIENT_CHARACTERISTICS</b></mshelp:link> structure to <b>NULL</b> when it calls the 
+    <a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">
+    NPI_CLIENT_CHARACTERISTICS</a> structure to <b>NULL</b> when it calls the 
     <a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a> function to register
     itself with the NMR.
 
@@ -98,26 +98,22 @@ The NMR calls a client module's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Windows |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
-
-<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 
 <a href="..\netioddk\nc-netioddk-npi_provider_detach_client_fn.md">ProviderDetachClient</a>
 
 <a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
 
 <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
+
+<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
+
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 
  
 

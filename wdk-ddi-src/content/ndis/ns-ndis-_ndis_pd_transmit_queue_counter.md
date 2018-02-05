@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 944E824D-8092-4165-97A6-A35858EA0CEB
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_PD_TRANSMIT_QUEUE_COUNTER, NDIS_PD_TRANSMIT_QUEUE_COUNTER, _NDIS_PD_TRANSMIT_QUEUE_COUNTER, NDIS_PD_TRANSMIT_QUEUE_COUNTER structure [Network Drivers Starting with Windows Vista], netvista.ndis_pd_transmit_queue_counter, ndis/PNDIS_PD_TRANSMIT_QUEUE_COUNTER, PNDIS_PD_TRANSMIT_QUEUE_COUNTER structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PD_TRANSMIT_QUEUE_COUNTER
+ms.keywords : ndis/NDIS_PD_TRANSMIT_QUEUE_COUNTER, PNDIS_PD_TRANSMIT_QUEUE_COUNTER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PD_TRANSMIT_QUEUE_COUNTER, PNDIS_PD_TRANSMIT_QUEUE_COUNTER, netvista.ndis_pd_transmit_queue_counter, ndis/PNDIS_PD_TRANSMIT_QUEUE_COUNTER, NDIS_PD_TRANSMIT_QUEUE_COUNTER structure [Network Drivers Starting with Windows Vista], NDIS_PD_TRANSMIT_QUEUE_COUNTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ The amount of packets transmitted.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ndis.h |

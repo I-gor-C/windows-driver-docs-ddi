@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6DCD1F8A-45E3-4084-9688-AE59597D65AF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/PSTOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX structure [Storage Devices], STOR_DEVICE_CAPABILITIES_EX, _STOR_DEVICE_CAPABILITIES_EX, PSTOR_DEVICE_CAPABILITIES_EX structure pointer [Storage Devices], PSTOR_DEVICE_CAPABILITIES_EX, *PSTOR_DEVICE_CAPABILITIES_EX, storage.stor_device_capabilities_ex, storport/STOR_DEVICE_CAPABILITIES_EX
+ms.keywords : PSTOR_DEVICE_CAPABILITIES_EX structure pointer [Storage Devices], storport/PSTOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX structure [Storage Devices], *PSTOR_DEVICE_CAPABILITIES_EX, _STOR_DEVICE_CAPABILITIES_EX, storport/STOR_DEVICE_CAPABILITIES_EX, PSTOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX, storage.stor_device_capabilities_ex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX"
+req.typenames : STOR_DEVICE_CAPABILITIES_EX, *PSTOR_DEVICE_CAPABILITIES_EX
 req.product : Windows 10 or later.
 ---
 
@@ -151,20 +151,18 @@ The eject, removal, and install characteristics for the device are set in the <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
 
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
 
 <a href="..\storport\ns-storport-_scsi_pnp_request_block.md">SCSI_PNP_REQUEST_BLOCK</a>
 
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
 
  
 

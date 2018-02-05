@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 84c3937f-8042-4b15-b5bb-884d14a97a8c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.removeentrylist, wdm/RemoveEntryList, k109_138ddf01-d13f-4e36-9b66-c2e58914c170.xml, RemoveEntryList, RemoveEntryList routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.removeentrylist, RemoveEntryList routine [Kernel-Mode Driver Architecture], k109_138ddf01-d13f-4e36-9b66-c2e58914c170.xml, RemoveEntryList, wdm/RemoveEntryList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,24 +77,22 @@ Callers of <b>RemoveEntryList</b> can be running at any IRQL. If <b>RemoveEntryL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
 | **DDI compliance rules** | DoubleExFreePool |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
 
 <a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
 
 <a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 
 <a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
-
-<a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
 
  
 

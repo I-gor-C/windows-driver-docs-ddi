@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 83271c19-911b-481a-bc25-c0b3816cf800
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassScheduleTimer routine [Streaming Media Devices], StreamClassScheduleTimer, strmini/StreamClassScheduleTimer, stream.streamclassscheduletimer, strclass-routines_73f92fc4-e9bf-40af-8dff-9c2e740dba20.xml
+ms.keywords : strclass-routines_73f92fc4-e9bf-40af-8dff-9c2e740dba20.xml, strmini/StreamClassScheduleTimer, StreamClassScheduleTimer, stream.streamclassscheduletimer, StreamClassScheduleTimer routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |

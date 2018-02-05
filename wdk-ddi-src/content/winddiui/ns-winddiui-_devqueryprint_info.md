@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c46193f2-4c69-4aed-a063-2225faba9ee1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DEVQUERYPRINT_INFO structure [Print Devices], winddiui/DEVQUERYPRINT_INFO, winddiui/PDEVQUERYPRINT_INFO, *PDEVQUERYPRINT_INFO, PDEVQUERYPRINT_INFO, print.devqueryprint_info, print_interface-graphics_f968cd94-5290-4aab-908b-c0c01d3038a6.xml, DEVQUERYPRINT_INFO, PDEVQUERYPRINT_INFO structure pointer [Print Devices], _DEVQUERYPRINT_INFO
+ms.keywords : PDEVQUERYPRINT_INFO structure pointer [Print Devices], print_interface-graphics_f968cd94-5290-4aab-908b-c0c01d3038a6.xml, winddiui/DEVQUERYPRINT_INFO, DEVQUERYPRINT_INFO structure [Print Devices], *PDEVQUERYPRINT_INFO, print.devqueryprint_info, DEVQUERYPRINT_INFO, PDEVQUERYPRINT_INFO, _DEVQUERYPRINT_INFO, winddiui/PDEVQUERYPRINT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,9 +90,6 @@ Spooler-supplied pointer to a buffer to receive a NULL-terminated error text str
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winddiui.h (include Winddiui.h) |
 
 ## See Also

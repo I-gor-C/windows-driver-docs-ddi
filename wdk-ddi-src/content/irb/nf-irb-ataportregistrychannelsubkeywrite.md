@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4072f369-992e-4144-b3b9-1e05bb2127f2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : atartns_0281129c-7789-44f3-b26d-d3725e7ff165.xml, irb/AtaPortRegistryChannelSubkeyWrite, AtaPortRegistryChannelSubkeyWrite, AtaPortRegistryChannelSubkeyWrite routine [Storage Devices], storage.ataportregistrychannelsubkeywrite
+ms.keywords : irb/AtaPortRegistryChannelSubkeyWrite, AtaPortRegistryChannelSubkeyWrite, AtaPortRegistryChannelSubkeyWrite routine [Storage Devices], atartns_0281129c-7789-44f3-b26d-d3725e7ff165.xml, storage.ataportregistrychannelsubkeywrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,24 +134,19 @@ The miniport driver must call <b>AtaPortRegistryChannelSubKeyWrite</b> either du
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 
-<a href="..\irb\nf-irb-ataportregistrychannelsubkeywritedeferred.md">AtaPortRegistryChannelSubKeyWriteDeferred</a>
-
 <a href="..\irb\nf-irb-ataportregistrychannelsubkeyread.md">AtaPortRegistryChannelSubKeyRead</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
+
+<a href="..\irb\nf-irb-ataportregistrychannelsubkeywritedeferred.md">AtaPortRegistryChannelSubKeyWriteDeferred</a>
 
  
 

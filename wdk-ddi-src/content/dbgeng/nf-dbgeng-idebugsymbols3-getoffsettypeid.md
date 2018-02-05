@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : cf533f21-90eb-46ec-860f-d12a8d40c430
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols::GetOffsetTypeId, GetOffsetTypeId method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetOffsetTypeId, GetOffsetTypeId method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging], GetOffsetTypeId method, IDebugSymbols_3f41981b-8ed2-4828-8bfb-a50b934a65ee.xml, GetOffsetTypeId, dbgeng/IDebugSymbols3::GetOffsetTypeId, GetOffsetTypeId method [Windows Debugging], IDebugSymbols3::GetOffsetTypeId, IDebugSymbols2 interface [Windows Debugging], GetOffsetTypeId method, IDebugSymbols2::GetOffsetTypeId, dbgeng/IDebugSymbols::GetOffsetTypeId, GetOffsetTypeId method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3, debugger.getoffsettypeid, IDebugSymbols3 interface [Windows Debugging], GetOffsetTypeId method
+ms.keywords : GetOffsetTypeId method [Windows Debugging], dbgeng/IDebugSymbols::GetOffsetTypeId, GetOffsetTypeId method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetOffsetTypeId method, IDebugSymbols2::GetOffsetTypeId, dbgeng/IDebugSymbols2::GetOffsetTypeId, GetOffsetTypeId method [Windows Debugging], IDebugSymbols3 interface, debugger.getoffsettypeid, IDebugSymbols3 interface [Windows Debugging], GetOffsetTypeId method, IDebugSymbols3::GetOffsetTypeId, IDebugSymbols_3f41981b-8ed2-4828-8bfb-a50b934a65ee.xml, GetOffsetTypeId, GetOffsetTypeId method [Windows Debugging], IDebugSymbols interface, IDebugSymbols::GetOffsetTypeId, IDebugSymbols3, dbgeng/IDebugSymbols3::GetOffsetTypeId, IDebugSymbols interface [Windows Debugging], GetOffsetTypeId method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,26 +95,21 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549376">GetTypeId</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549173">GetSymbolTypeId</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549376">GetTypeId</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 73a18050-fc89-41df-82ce-0f29c5716496
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanContextTypeMax, WwanContextTypeVideoShare, wwan/WwanContextTypeVideoShare, wwan/WwanContextTypeInternet, WWAN_CONTEXT_TYPE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanContextTypeNone, *PWWAN_CONTEXT_TYPE, PWWAN_CONTEXT_TYPE, wwan/WwanContextTypeVpn, WwanContextTypeCustom, wwan/WwanContextTypePurchase, _WWAN_CONTEXT_TYPE, WwanContextTypeVoice, netvista.wwan_context_type, WWAN_CONTEXT_TYPE, wwan/WwanContextTypeVoice, wwan/WWAN_CONTEXT_TYPE, WwanContextTypeInternet, WwanRef_2f94e3ef-ec5c-47cc-8fe0-295c517ad43a.xml, PWWAN_CONTEXT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanContextTypeCustom, wwan/PWWAN_CONTEXT_TYPE, WwanContextTypeNone, WwanContextTypePurchase, WwanContextTypeVpn, WwanContextTypeMax
+ms.keywords : wwan/WwanContextTypeVoice, WwanContextTypeCustom, wwan/WwanContextTypeCustom, WwanRef_2f94e3ef-ec5c-47cc-8fe0-295c517ad43a.xml, WwanContextTypePurchase, *PWWAN_CONTEXT_TYPE, WwanContextTypeVoice, wwan/WWAN_CONTEXT_TYPE, WwanContextTypeInternet, netvista.wwan_context_type, wwan/WwanContextTypePurchase, wwan/WwanContextTypeMax, WWAN_CONTEXT_TYPE enumeration [Network Drivers Starting with Windows Vista], PWWAN_CONTEXT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], WwanContextTypeMax, WwanContextTypeVpn, wwan/WwanContextTypeInternet, WwanContextTypeVideoShare, wwan/WwanContextTypeVpn, wwan/PWWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE, wwan/WwanContextTypeVideoShare, _WWAN_CONTEXT_TYPE, wwan/WwanContextTypeNone, PWWAN_CONTEXT_TYPE, WwanContextTypeNone
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -152,9 +152,7 @@ This enumeration indicates the usage of the provisioned context. For example, wh
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

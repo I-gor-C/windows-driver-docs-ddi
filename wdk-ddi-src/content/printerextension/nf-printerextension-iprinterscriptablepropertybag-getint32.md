@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0E1089E4-5FE4-4769-A244-3E1979E4DE46
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/IPrinterScriptablePropertyBag::GetInt32, GetInt32 method [Print Devices], IPrinterScriptablePropertyBag interface [Print Devices], GetInt32 method, GetInt32, IPrinterScriptablePropertyBag::GetInt32, print.iprinterscriptablepropertybag_getint32, IPrinterScriptablePropertyBag, GetInt32 method [Print Devices], IPrinterScriptablePropertyBag interface
+ms.keywords : GetInt32 method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetInt32, IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_getint32, IPrinterScriptablePropertyBag interface [Print Devices], GetInt32 method, IPrinterScriptablePropertyBag::GetInt32, GetInt32, GetInt32 method [Print Devices], IPrinterScriptablePropertyBag interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,14 +74,10 @@ A call to <b>GetInt32</b> will throw an exception, if the specified property is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

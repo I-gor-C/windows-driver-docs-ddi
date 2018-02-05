@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1adb1dbf-3ec4-4e32-bfe8-cfcf992f67ca
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsidef/ISCSI_TargetPortal, storage.iscsi_targetportal, PISCSI_TargetPortal, _ISCSI_TargetPortal, structs-iSCSI_fcbc99fd-e52d-45f4-b525-03c2d925f382.xml, ISCSI_TargetPortal structure [Storage Devices], *PISCSI_TargetPortal, iscsidef/PISCSI_TargetPortal, ISCSI_TargetPortal, PISCSI_TargetPortal structure pointer [Storage Devices]
+ms.keywords : iscsidef/ISCSI_TargetPortal, PISCSI_TargetPortal structure pointer [Storage Devices], ISCSI_TargetPortal structure [Storage Devices], ISCSI_TargetPortal, structs-iSCSI_fcbc99fd-e52d-45f4-b525-03c2d925f382.xml, PISCSI_TargetPortal, *PISCSI_TargetPortal, iscsidef/PISCSI_TargetPortal, _ISCSI_TargetPortal, storage.iscsi_targetportal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PISCSI_TargetPortal, ISCSI_TargetPortal"
+req.typenames : ISCSI_TargetPortal, *PISCSI_TargetPortal
 ---
 
 # _ISCSI_TargetPortal structure
@@ -69,9 +69,6 @@ Socket number associated with the target.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
 ## See Also

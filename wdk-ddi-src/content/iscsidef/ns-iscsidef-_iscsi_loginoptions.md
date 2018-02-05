@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2440999a-e10c-4a27-b076-a0b640c2ca7f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ISCSI_LoginOptions, iscsidef/PISCSI_LoginOptions, storage.iscsi_loginoptions, PISCSI_LoginOptions, *PISCSI_LoginOptions, ISCSI_LoginOptions structure [Storage Devices], iscsidef/ISCSI_LoginOptions, PISCSI_LoginOptions structure pointer [Storage Devices], structs-iSCSI_d6ba6d7e-95c3-42a4-bed9-c038c1702d59.xml, _ISCSI_LoginOptions
+ms.keywords : "_ISCSI_LoginOptions, ISCSI_LoginOptions, structs-iSCSI_d6ba6d7e-95c3-42a4-bed9-c038c1702d59.xml, PISCSI_LoginOptions structure pointer [Storage Devices], PISCSI_LoginOptions, storage.iscsi_loginoptions, iscsidef/ISCSI_LoginOptions, *PISCSI_LoginOptions, iscsidef/PISCSI_LoginOptions, ISCSI_LoginOptions structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ISCSI_LoginOptions, *PISCSI_LoginOptions
+req.typenames : "*PISCSI_LoginOptions, ISCSI_LoginOptions"
 ---
 
 # _ISCSI_LoginOptions structure
@@ -246,18 +246,15 @@ A value between 1 and 65535 that specifies the maximum number of connections to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561543">ISCSI_LoginOptions WMI Class</a>
+
 <a href="..\iscsidef\ne-iscsidef-piscsi_digest_types.md">ISCSI_DIGEST_TYPES</a>
 
 <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561543">ISCSI_LoginOptions WMI Class</a>
 
  
 

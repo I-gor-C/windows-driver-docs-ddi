@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : BB5C69FF-166A-4A38-BF5E-FD644FCD1285
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCX_CONTROLLER_ACPI_INFORMATION, _UCX_CONTROLLER_ACPI_INFORMATION, P_UCX_CONTROLLER_ACPI_INFORMATION structure pointer [Buses], P_UCX_CONTROLLER_ACPI_INFORMATION, buses._ucx_controller_acpi_information, *PUCX_CONTROLLER_ACPI_INFORMATION, ucxcontroller/_UCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION structure [Buses], ucxcontroller/P_UCX_CONTROLLER_ACPI_INFORMATION
+ms.keywords : UCX_CONTROLLER_ACPI_INFORMATION structure [Buses], ucxcontroller/P_UCX_CONTROLLER_ACPI_INFORMATION, buses._ucx_controller_acpi_information, P_UCX_CONTROLLER_ACPI_INFORMATION structure pointer [Buses], _UCX_CONTROLLER_ACPI_INFORMATION, *PUCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION, P_UCX_CONTROLLER_ACPI_INFORMATION, ucxcontroller/_UCX_CONTROLLER_ACPI_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION"
+req.typenames : UCX_CONTROLLER_ACPI_INFORMATION, *PUCX_CONTROLLER_ACPI_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -70,9 +70,6 @@ The vendor ID of the ACPI USB controller.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 
 ## See Also

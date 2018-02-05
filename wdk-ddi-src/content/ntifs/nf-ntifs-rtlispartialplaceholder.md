@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : FB47F5BE-76B4-4A99-A15F-DE3E11D1DA2B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsPartialPlaceholder, ifsk.rtlispartialplaceholder, ntifs/RtlIsPartialPlaceholder, RtlIsPartialPlaceholder routine [Installable File System Drivers]
+ms.keywords : ifsk.rtlispartialplaceholder, RtlIsPartialPlaceholder routine [Installable File System Drivers], RtlIsPartialPlaceholder, ntifs/RtlIsPartialPlaceholder
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,10 @@ This function returns <b>TRUE</b> if the file or directory is a partial placehol
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

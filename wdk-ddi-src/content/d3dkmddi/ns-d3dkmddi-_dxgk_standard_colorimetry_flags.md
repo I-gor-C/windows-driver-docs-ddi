@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 473C5D7B-8FDD-49E2-981A-00ECCA67671A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PDXGK_STANDARD_COLORIMETRY_FLAGS, PDXGK_STANDARD_COLORIMETRY_FLAGS union pointer [Display Devices], d3dkmddi/DXGK_STANDARD_COLORIMETRY_FLAGS, d3dkmddi/PDXGK_STANDARD_COLORIMETRY_FLAGS, DXGK_STANDARD_COLORIMETRY_FLAGS, DXGK_STANDARD_COLORIMETRY_FLAGS union [Display Devices], _DXGK_STANDARD_COLORIMETRY_FLAGS, PDXGK_STANDARD_COLORIMETRY_FLAGS, display.dxgk_standard_colorimetry_flags"
+ms.keywords : DXGK_STANDARD_COLORIMETRY_FLAGS, PDXGK_STANDARD_COLORIMETRY_FLAGS, DXGK_STANDARD_COLORIMETRY_FLAGS union [Display Devices], d3dkmddi/PDXGK_STANDARD_COLORIMETRY_FLAGS, d3dkmddi/DXGK_STANDARD_COLORIMETRY_FLAGS, PDXGK_STANDARD_COLORIMETRY_FLAGS union pointer [Display Devices], _DXGK_STANDARD_COLORIMETRY_FLAGS, display.dxgk_standard_colorimetry_flags, *PDXGK_STANDARD_COLORIMETRY_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ The combined value that is operated on.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

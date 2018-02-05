@@ -96,22 +96,16 @@ The port driver calls the <b><i>AtaAdapterControl</i></b> routine by using contr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportinitializeex.md">AtaPortInitializeEx</a>
+<a href="..\irb\ns-irb-_ide_channel_interface.md">IDE_CHANNEL_INTERFACE</a>
 
 <a href="..\irb\ns-irb-_ide_controller_interface.md">IDE_CONTROLLER_INTERFACE</a>
 
-<a href="..\irb\ns-irb-_ide_channel_interface.md">IDE_CHANNEL_INTERFACE</a>
+<a href="..\irb\nf-irb-ataportinitializeex.md">AtaPortInitializeEx</a>
 
  
 

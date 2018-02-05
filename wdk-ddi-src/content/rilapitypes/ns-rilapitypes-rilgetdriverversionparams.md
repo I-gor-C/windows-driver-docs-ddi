@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b396b12e-f8c4-4e5e-b3c4-9822bcd996a4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILGETDRIVERVERSIONPARAMS, rilapitypes/RILGETDRIVERVERSIONPARAMS, netvista.rilgetdriverversionparams_2, RILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : "*LPRILGETDRIVERVERSIONPARAMS, netvista.rilgetdriverversionparams_2, rilapitypes/RILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS structure [Network Drivers Starting with Windows Vista], RILGETDRIVERVERSIONPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILGETDRIVERVERSIONPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

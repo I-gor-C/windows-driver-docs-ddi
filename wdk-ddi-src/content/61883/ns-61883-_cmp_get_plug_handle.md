@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4EDEE2EE-7B42-4CC9-8CFC-4690193C5D4D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883/CMP_GET_PLUG_HANDLE, IEEE.cmp_get_plug_handle, 61883/PCMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE structure [Buses], *PCMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE structure pointer [Buses], CMP_GET_PLUG_HANDLE, _CMP_GET_PLUG_HANDLE
+ms.keywords : 61883/PCMP_GET_PLUG_HANDLE, IEEE.cmp_get_plug_handle, _CMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE, 61883/CMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE structure pointer [Buses], CMP_GET_PLUG_HANDLE structure [Buses], *PCMP_GET_PLUG_HANDLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,9 +73,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

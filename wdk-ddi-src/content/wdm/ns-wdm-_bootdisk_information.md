@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dd2a525d-fb9d-4fea-b9d7-64b1f498550c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.bootdisk_information, wdm/BOOTDISK_INFORMATION, BOOTDISK_INFORMATION structure [Kernel-Mode Driver Architecture], PBOOTDISK_INFORMATION, _BOOTDISK_INFORMATION, kstruct_a_61cd1024-0bb4-4601-a458-4bf52a2339d5.xml, wdm/PBOOTDISK_INFORMATION, PBOOTDISK_INFORMATION structure pointer [Kernel-Mode Driver Architecture], BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION
+ms.keywords : PBOOTDISK_INFORMATION, BOOTDISK_INFORMATION, _BOOTDISK_INFORMATION, wdm/BOOTDISK_INFORMATION, PBOOTDISK_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PBOOTDISK_INFORMATION, kstruct_a_61cd1024-0bb4-4601-a458-4bf52a2339d5.xml, *PBOOTDISK_INFORMATION, kernel.bootdisk_information, BOOTDISK_INFORMATION structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBOOTDISK_INFORMATION, BOOTDISK_INFORMATION"
+req.typenames : BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -77,9 +77,7 @@ Specifies the offset, in bytes, on the system disk where the system partition be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Drivers on Microsoft Windows XP and later versions of the Windows operating system should use the BOOTDISK_INFORMATION_EX structure instead. Drivers on Microsoft Windows XP and later versions of the Windows operating system should use the BOOTDISK_INFORMATION_EX structure instead. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

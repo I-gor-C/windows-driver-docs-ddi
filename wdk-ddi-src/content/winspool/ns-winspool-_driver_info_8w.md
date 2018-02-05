@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 95f62d57-300a-4179-868b-f14f29c58b4d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_ticket-package_dba844e8-6e97-4eaf-8de4-1003562e01d5.xml, _DRIVER_INFO_8W, LPDRIVER_INFO_8, *PDRIVER_INFO_8W, LPDRIVER_INFO_8 structure pointer [Print Devices], DRIVER_INFO_8 structure [Print Devices], winspool/PDRIVER_INFO_8, *LPDRIVER_INFO_8A, print.driver_info_8, DRIVER_INFO_8A, winspool/DRIVER_INFO_8, DRIVER_INFO_8, winspool/LPDRIVER_INFO_8, PDRIVER_INFO_8 structure pointer [Print Devices], *LPDRIVER_INFO_8W, DRIVER_INFO_8W, PDRIVER_INFO_8, *PDRIVER_INFO_8A, _DRIVER_INFO_8A
+ms.keywords : winspool/DRIVER_INFO_8, PDRIVER_INFO_8 structure pointer [Print Devices], *PDRIVER_INFO_8W, DRIVER_INFO_8, print.driver_info_8, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8A, *LPDRIVER_INFO_8A, LPDRIVER_INFO_8, DRIVER_INFO_8 structure [Print Devices], PDRIVER_INFO_8, LPDRIVER_INFO_8 structure pointer [Print Devices], DRIVER_INFO_8W, winspool/LPDRIVER_INFO_8, print_ticket-package_dba844e8-6e97-4eaf-8de4-1003562e01d5.xml, _DRIVER_INFO_8W, DRIVER_INFO_8A, winspool/PDRIVER_INFO_8, _DRIVER_INFO_8A
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -388,7 +388,4 @@ This structure is available in Windows Vista.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winspool.h (include Winspool.h) |

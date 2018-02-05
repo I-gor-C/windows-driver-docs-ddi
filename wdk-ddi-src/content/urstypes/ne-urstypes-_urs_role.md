@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : A1ED9DBD-67FF-4AE7-8E5E-016C2C89A79E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_URS_ROLE, buses.urs_role, *PURS_ROLE, urstypes/URS_ROLE, URS_ROLE, UrsRoleHost, urstypes/UrsRoleNone, URS_ROLE, *PURS_ROLE, urstypes/UrsRoleFunction, URS_ROLE enumeration [Buses], URS_ROLE, *PURS_ROLE enumeration [Buses], UrsRoleFunction, UrsRoleNone, urstypes/UrsRoleHost"
+ms.keywords : UrsRoleNone, UrsRoleHost, URS_ROLE enumeration [Buses], _URS_ROLE, urstypes/URS_ROLE, urstypes/UrsRoleFunction, URS_ROLE, *PURS_ROLE enumeration [Buses], UrsRoleFunction, urstypes/UrsRoleNone, *PURS_ROLE, buses.urs_role, URS_ROLE, *PURS_ROLE, urstypes/UrsRoleHost, URS_ROLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,6 @@ typedef enum _URS_ROLE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | urstypes.h (include Urstypes.h) |

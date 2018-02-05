@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a101e0c8-7121-42b6-aa0e-299f37af8e47
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/PFLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER, FltSystemStructures_47092b0b-5a4b-40eb-8b5f-f0a182d5e509.xml, _FLT_TAG_DATA_BUFFER, fltkernel/FLT_TAG_DATA_BUFFER, PFLT_TAG_DATA_BUFFER structure pointer [Installable File System Drivers], PFLT_TAG_DATA_BUFFER, ifsk.flt_tag_data_buffer, FLT_TAG_DATA_BUFFER structure [Installable File System Drivers]
+ms.keywords : FltSystemStructures_47092b0b-5a4b-40eb-8b5f-f0a182d5e509.xml, PFLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER structure [Installable File System Drivers], fltkernel/FLT_TAG_DATA_BUFFER, _FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER, fltkernel/PFLT_TAG_DATA_BUFFER, PFLT_TAG_DATA_BUFFER structure pointer [Installable File System Drivers], FLT_TAG_DATA_BUFFER, ifsk.flt_tag_data_buffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,20 +99,17 @@ The FLT_TAG_DATA_BUFFER_HEADER_SIZE macro returns the size of the fixed portion 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | fltkernel.h (include FltKernel.h) |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
-
-<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
-
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 
+<a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
+
 <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+
+<a href="..\fltkernel\nf-fltkernel-flttagfile.md">FltTagFile</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 946b1630-844a-43ac-8c26-fdfa2ee7866a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RouterFreeBidiMem, winsplp/RouterFreeBidiMem, RouterFreeBidiMem function [Print Devices], print.routerfreebidimem, spoolfnc_cc4cfcb8-c020-4112-9774-a2961e8a4ba2.xml
+ms.keywords : winsplp/RouterFreeBidiMem, RouterFreeBidiMem, spoolfnc_cc4cfcb8-c020-4112-9774-a2961e8a4ba2.xml, RouterFreeBidiMem function [Print Devices], print.routerfreebidimem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This function is available in Windows XP and later operating systems. This function is available in Windows XP and later operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b91d87e8-3f63-45ac-919f-3597957ea497
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDI_MULTIPLANE_OVERLAY_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_FLAGS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_FLAGS enumeration [Display Devices], d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, display.d3dddi_multiplane_overlay_flags"
+ms.keywords : d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, D3DDDI_MULTIPLANE_OVERLAY_FLAGS enumeration [Display Devices], d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAGS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, _D3DDDI_MULTIPLANE_OVERLAY_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, display.d3dddi_multiplane_overlay_flags, D3DDDI_MULTIPLANE_OVERLAY_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,5 @@ typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

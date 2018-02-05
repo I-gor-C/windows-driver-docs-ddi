@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9d0e9762-060e-40bb-9914-3577a086e8e0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_SETDEPTHSTENCIL structure [Display Devices], D3DDDIARG_SETDEPTHSTENCIL, UMDisplayDriver_param_Structs_8e3b527c-b594-4bed-9fe1-c8f3a410746d.xml, display.d3dddiarg_setdepthstencil, _D3DDDIARG_SETDEPTHSTENCIL, d3dumddi/D3DDDIARG_SETDEPTHSTENCIL
+ms.keywords : D3DDDIARG_SETDEPTHSTENCIL structure [Display Devices], _D3DDDIARG_SETDEPTHSTENCIL, display.d3dddiarg_setdepthstencil, d3dumddi/D3DDDIARG_SETDEPTHSTENCIL, UMDisplayDriver_param_Structs_8e3b527c-b594-4bed-9fe1-c8f3a410746d.xml, D3DDDIARG_SETDEPTHSTENCIL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DDDIARG_SETDEPTHSTENCIL {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

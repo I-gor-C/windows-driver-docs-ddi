@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 21d04633-3b68-4c89-a0b9-81507a1bb6d3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_reuse, IWDFIoRequest2 interface, Reuse method, UMDFRequestObjectRef_887853e7-3603-4793-b1b2-0b72e63b0d5a.xml, Reuse method, IWDFIoRequest2, wudfddi/IWDFIoRequest2::Reuse, Reuse method, IWDFIoRequest2 interface, IWDFIoRequest2::Reuse, umdf.iwdfiorequest2_reuse, Reuse
+ms.keywords : wudfddi/IWDFIoRequest2::Reuse, IWDFIoRequest2, Reuse method, umdf.iwdfiorequest2_reuse, Reuse, UMDFRequestObjectRef_887853e7-3603-4793-b1b2-0b72e63b0d5a.xml, wdf.iwdfiorequest2_reuse, IWDFIoRequest2::Reuse, IWDFIoRequest2 interface, Reuse method, Reuse method, IWDFIoRequest2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -77,22 +77,20 @@ For more information about <b>Reuse</b>, see <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
 
  
 

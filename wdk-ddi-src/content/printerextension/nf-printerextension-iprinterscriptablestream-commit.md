@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5BA1417B-B78B-4582-9DDC-D542413B4BD8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.iprinterscriptablestream__commit, IPrinterScriptableStream, IPrinterScriptableStream interface [Print Devices], Commit method, Commit method [Print Devices], IPrinterScriptableStream interface, Commit, IPrinterScriptableStream::Commit, printerextension/IPrinterScriptableStream::Commit, Commit method [Print Devices]
+ms.keywords : print.iprinterscriptablestream__commit, Commit method [Print Devices], IPrinterScriptableStream::Commit, Commit method [Print Devices], IPrinterScriptableStream interface, IPrinterScriptableStream, printerextension/IPrinterScriptableStream::Commit, Commit, IPrinterScriptableStream interface [Print Devices], Commit method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -63,14 +63,10 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

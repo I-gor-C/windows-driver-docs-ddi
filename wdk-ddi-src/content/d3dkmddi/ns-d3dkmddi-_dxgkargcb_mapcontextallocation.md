@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F26E382F-D9F8-4452-983E-4523A77ADC35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARGCB_MAPCONTEXTALLOCATION structure [Display Devices], d3dkmddi/DXGKARGCB_MAPCONTEXTALLOCATION, _DXGKARGCB_MAPCONTEXTALLOCATION, DXGKARGCB_MAPCONTEXTALLOCATION, display.dxgkargcb_mapcontextallocation
+ms.keywords : DXGKARGCB_MAPCONTEXTALLOCATION structure [Display Devices], DXGKARGCB_MAPCONTEXTALLOCATION, _DXGKARGCB_MAPCONTEXTALLOCATION, d3dkmddi/DXGKARGCB_MAPCONTEXTALLOCATION, display.dxgkargcb_mapcontextallocation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,16 +104,14 @@ Specifies the size of the range to map in number of 4KB pages.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_mapcontextallocation.md">DxgkCbMapContextAllocation</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
 
  
 

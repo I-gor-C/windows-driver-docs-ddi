@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 00772a37-ef1b-446b-b7bd-1a6aa27d1dad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT, PWWAN_SET_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], _WWAN_SET_CONTEXT, WWAN_SET_CONTEXT structure [Network Drivers Starting with Windows Vista], WwanRef_08361ced-712a-464d-b374-7b18a096b8e5.xml, wwan/PWWAN_SET_CONTEXT, netvista.wwan_set_context, *PWWAN_SET_CONTEXT, wwan/WWAN_SET_CONTEXT
+ms.keywords : PWWAN_SET_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_CONTEXT structure [Network Drivers Starting with Windows Vista], WwanRef_08361ced-712a-464d-b374-7b18a096b8e5.xml, WWAN_SET_CONTEXT, netvista.wwan_set_context, _WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT, wwan/PWWAN_SET_CONTEXT, PWWAN_SET_CONTEXT, wwan/WWAN_SET_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_SET_CONTEXT, *PWWAN_SET_CONTEXT
+req.typenames : "*PWWAN_SET_CONTEXT, WWAN_SET_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -118,7 +118,5 @@ The username to use for authentication. This member can be <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |

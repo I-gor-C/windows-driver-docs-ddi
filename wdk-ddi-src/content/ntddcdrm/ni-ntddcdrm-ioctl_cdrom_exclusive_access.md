@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWRITE_ROTATION, WRITE_ROTATION"
+req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_EXCLUSIVE_ACCESS IOCTL
@@ -102,13 +102,11 @@ If the request fails, the <b>Status</b> field might be set to one of the followi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\ntddcdrm\ne-ntddcdrm-_exclusive_access_request_type.md">EXCLUSIVE_ACCESS_REQUEST_TYPE</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_exclusive_lock.md">CDROM_EXCLUSIVE_LOCK</a>
 
 <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 
@@ -116,7 +114,7 @@ If the request fails, the <b>Status</b> field might be set to one of the followi
 
 <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_exclusive_access.md">CDROM_EXCLUSIVE_ACCESS</a>
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_exclusive_lock.md">CDROM_EXCLUSIVE_LOCK</a>
+<a href="..\ntddcdrm\ne-ntddcdrm-_exclusive_access_request_type.md">EXCLUSIVE_ACCESS_REQUEST_TYPE</a>
 
  
 

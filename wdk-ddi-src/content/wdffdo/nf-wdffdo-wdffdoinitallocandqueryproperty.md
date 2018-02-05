@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9c275d89-e01d-445b-8c60-ae5268cd28c3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdffdoinitallocandqueryproperty, PFN_WDFFDOINITALLOCANDQUERYPROPERTY, WdfFdoInitAllocAndQueryProperty, wdf.wdffdoinitallocandqueryproperty, wdffdo/WdfFdoInitAllocAndQueryProperty, WdfFdoInitAllocAndQueryProperty method, DFDeviceObjectFdoPdoRef_2de90bea-c2df-4aa7-b64f-b17df042268c.xml
+ms.keywords : WdfFdoInitAllocAndQueryProperty method, kmdf.wdffdoinitallocandqueryproperty, WdfFdoInitAllocAndQueryProperty, DFDeviceObjectFdoPdoRef_2de90bea-c2df-4aa7-b64f-b17df042268c.xml, PFN_WDFFDOINITALLOCANDQUERYPROPERTY, wdffdo/WdfFdoInitAllocAndQueryProperty, wdf.wdffdoinitallocandqueryproperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -127,20 +127,19 @@ Alternatively, you can use <a href="..\wdffdo\nf-wdffdo-wdffdoinitallocandqueryp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdffdo\nf-wdffdo-wdffdoinitqueryproperty.md">WdfFdoInitQueryProperty</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryproperty.md">WdfDeviceAllocAndQueryProperty</a>
+
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitqueryproperty.md">WdfFdoInitQueryProperty</a>
 
  
 

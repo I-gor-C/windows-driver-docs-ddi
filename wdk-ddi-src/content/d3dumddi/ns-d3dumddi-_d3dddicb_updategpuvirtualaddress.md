@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6D460EBF-1D5D-4A99-90EE-FCBBC56B8EA4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_UPDATEGPUVIRTUALADDRESS structure [Display Devices], display.d3dddicb_updategpuvirtualaddress, _D3DDDICB_UPDATEGPUVIRTUALADDRESS, d3dumddi/D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS
+ms.keywords : D3DDDICB_UPDATEGPUVIRTUALADDRESS structure [Display Devices], _D3DDDICB_UPDATEGPUVIRTUALADDRESS, display.d3dddicb_updategpuvirtualaddress, D3DDDICB_UPDATEGPUVIRTUALADDRESS, d3dumddi/D3DDDICB_UPDATEGPUVIRTUALADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,16 +100,14 @@ This member is reserved and should be set to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md">D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</a>
 
  
 

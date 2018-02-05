@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 00c5f766-299e-4c07-a3e0-61077518a37a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_DsmSetLoadBalancePolicyALUA_OUT, mpiodisk/DsmSetLoadBalancePolicyALUA_OUT, storage.dsmsetloadbalancepolicyalua_out, DsmSetLoadBalancePolicyALUA_OUT structure [Storage Devices], mpiodisk/PDsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT structure pointer [Storage Devices], *PDsmSetLoadBalancePolicyALUA_OUT, structs-scsibus_59bfe47a-52c1-4a7c-95c4-784f0e8ae92e.xml"
+ms.keywords : "*PDsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT, mpiodisk/PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT, structs-scsibus_59bfe47a-52c1-4a7c-95c4-784f0e8ae92e.xml, mpiodisk/DsmSetLoadBalancePolicyALUA_OUT, _DsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT structure pointer [Storage Devices], storage.dsmsetloadbalancepolicyalua_out, DsmSetLoadBalancePolicyALUA_OUT structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DsmSetLoadBalancePolicyALUA_OUT, *PDsmSetLoadBalancePolicyALUA_OUT
+req.typenames : "*PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT"
 ---
 
 # _DsmSetLoadBalancePolicyALUA_OUT structure
@@ -59,7 +59,4 @@ The status of the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiodisk.h (include Mpiowmi.h) |

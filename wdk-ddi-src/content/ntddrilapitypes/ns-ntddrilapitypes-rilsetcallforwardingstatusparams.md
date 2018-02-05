@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7863a72d-e3cc-4627-a956-7e5a080c4aad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSETCALLFORWARDINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILSETCALLFORWARDINGSTATUSPARAMS, ntddrilapitypes/RILSETCALLFORWARDINGSTATUSPARAMS, RILSETCALLFORWARDINGSTATUSPARAMS, netvista.rilsetcallforwardingstatusparams
+ms.keywords : "*LPRILSETCALLFORWARDINGSTATUSPARAMS, netvista.rilsetcallforwardingstatusparams, RILSETCALLFORWARDINGSTATUSPARAMS, ntddrilapitypes/RILSETCALLFORWARDINGSTATUSPARAMS, RILSETCALLFORWARDINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ typedef struct _RILSETCALLFORWARDINGSTATUSPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

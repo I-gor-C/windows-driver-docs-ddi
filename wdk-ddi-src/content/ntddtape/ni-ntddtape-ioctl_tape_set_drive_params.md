@@ -69,9 +69,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddtape.h (include Ntddtape.h) |
-| **IRQL** |  |
 
 ## See Also
 

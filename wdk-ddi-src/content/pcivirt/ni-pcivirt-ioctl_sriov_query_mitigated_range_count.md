@@ -80,6 +80,5 @@ within those pages to the PF driver.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pcivirt.h |
 | **IRQL** | PASSIVE_LEVEL |

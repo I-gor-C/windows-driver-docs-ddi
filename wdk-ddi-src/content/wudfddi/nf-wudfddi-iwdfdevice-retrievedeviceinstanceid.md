@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 224277b4-447f-4981-aabf-90a10322c0df
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : RetrieveDeviceInstanceId method, IWDFDevice interface, wdf.iwdfdevice_retrievedeviceinstanceid, RetrieveDeviceInstanceId method, IWDFDevice::RetrieveDeviceInstanceId, UMDFDeviceObjectRef_fef96c70-8877-4c1f-9e05-d4caf9a8ea28.xml, umdf.iwdfdevice_retrievedeviceinstanceid, IWDFDevice, wudfddi/IWDFDevice::RetrieveDeviceInstanceId, IWDFDevice interface, RetrieveDeviceInstanceId method, RetrieveDeviceInstanceId
+ms.keywords : IWDFDevice interface, RetrieveDeviceInstanceId method, RetrieveDeviceInstanceId, umdf.iwdfdevice_retrievedeviceinstanceid, UMDFDeviceObjectRef_fef96c70-8877-4c1f-9e05-d4caf9a8ea28.xml, IWDFDevice, RetrieveDeviceInstanceId method, RetrieveDeviceInstanceId method, IWDFDevice interface, wdf.iwdfdevice_retrievedeviceinstanceid, wudfddi/IWDFDevice::RetrieveDeviceInstanceId, IWDFDevice::RetrieveDeviceInstanceId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -88,14 +88,12 @@ If <i>Buffer</i> is non-<b>NULL</b>, the framework returns the size, in characte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

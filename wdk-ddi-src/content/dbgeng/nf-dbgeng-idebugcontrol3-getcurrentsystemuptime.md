@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0009e11d-73d0-4ca2-afbc-5f2999e829ac
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, IDebugControl2 interface [Windows Debugging], GetCurrentSystemUpTime method, GetCurrentSystemUpTime method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetCurrentSystemUpTime, IDebugControl3 interface [Windows Debugging], GetCurrentSystemUpTime method, IDebugControl_e10ddd31-60fe-4353-befe-45a04154615b.xml, dbgeng/IDebugControl2::GetCurrentSystemUpTime, GetCurrentSystemUpTime, dbgeng/IDebugControl3::GetCurrentSystemUpTime, IDebugControl2::GetCurrentSystemUpTime, GetCurrentSystemUpTime method [Windows Debugging], IDebugControl2 interface, debugger.getcurrentsystemuptime, GetCurrentSystemUpTime method [Windows Debugging]
+ms.keywords : GetCurrentSystemUpTime method [Windows Debugging], IDebugControl3 interface, GetCurrentSystemUpTime method [Windows Debugging], dbgeng/IDebugControl2::GetCurrentSystemUpTime, GetCurrentSystemUpTime method [Windows Debugging], IDebugControl2 interface, GetCurrentSystemUpTime, IDebugControl_e10ddd31-60fe-4353-befe-45a04154615b.xml, IDebugControl2 interface [Windows Debugging], GetCurrentSystemUpTime method, IDebugControl3, debugger.getcurrentsystemuptime, IDebugControl3::GetCurrentSystemUpTime, IDebugControl3 interface [Windows Debugging], GetCurrentSystemUpTime method, IDebugControl2::GetCurrentSystemUpTime, dbgeng/IDebugControl3::GetCurrentSystemUpTime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,22 +85,17 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546553">GetCurrentTimeDate</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

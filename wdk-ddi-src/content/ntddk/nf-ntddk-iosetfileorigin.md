@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 98d38c84-ed3a-4119-9a05-f8211f220467
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoSetFileOrigin, ntddk/IoSetFileOrigin, ifsk.iosetfileorigin, ioref_782eeed5-9c44-4572-b929-4e1fb82d8e03.xml, IoSetFileOrigin routine [Installable File System Drivers]
+ms.keywords : ioref_782eeed5-9c44-4572-b929-4e1fb82d8e03.xml, IoSetFileOrigin routine [Installable File System Drivers], IoSetFileOrigin, ntddk/IoSetFileOrigin, ifsk.iosetfileorigin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,12 @@ File system filter drivers should not call <b>IoSetFileOrigin</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

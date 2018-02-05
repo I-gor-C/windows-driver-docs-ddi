@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d329069d-5455-4c37-b190-02a7bd1e789a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILADDRESS, RILADDRESS structure [Network Drivers Starting with Windows Vista], netvista.riladdress, RILADDRESS, rilapitypes/RILADDRESS"
+ms.keywords : netvista.riladdress, *LPRILADDRESS, RILADDRESS, RILADDRESS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILADDRESS, RILADDRESS"
+req.typenames : RILADDRESS, *LPRILADDRESS
 req.product : Windows 10 or later.
 ---
 
@@ -487,9 +487,6 @@ In the case of the control digits separator, either uppercase or lowercase 'P' m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

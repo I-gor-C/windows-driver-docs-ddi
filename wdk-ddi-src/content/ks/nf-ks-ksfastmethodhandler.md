@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 829e96e7-7063-4de3-b13a-0b0d12ba1f44
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_4c9fb7a6-5297-4b74-a865-14a774f728a5.xml, KsFastMethodHandler function [Streaming Media Devices], stream.ksfastmethodhandler, ks/KsFastMethodHandler, KsFastMethodHandler
+ms.keywords : KsFastMethodHandler, stream.ksfastmethodhandler, KsFastMethodHandler function [Streaming Media Devices], ksfunc_4c9fb7a6-5297-4b74-a865-14a774f728a5.xml, ks/KsFastMethodHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,14 +103,9 @@ The owner of a method set can perform prefiltering or postfiltering of the metho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

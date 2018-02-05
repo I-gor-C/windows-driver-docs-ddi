@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2ed04fd0-685d-4b5a-a23f-337a14506f8b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_VideoTransFunc_10, dxva/DXVA_VideoTransFunc_28, _DXVA_VideoTransferFunction, dxva/DXVA_VideoTransFunc_22_709, DXVA_VideoTransFuncMask, DXVA_VideoTransferFunction enumeration [Display Devices], dxva/DXVA_VideoTransFuncMask, dxva/DXVA_VideoTransFunc_22_8bit_sRGB, DXVA_VideoTransFunc_22_240M, DXVA_VideoTransFunc_28, DXVA_VideoTransFunc_18, dxva/DXVA_VideoTransFunc_22, dxva/DXVA_VideoTransFuncShift, DXVA_VideoTransFunc_22, DXVA_VideoTransFuncShift, DXVA_VideoTransferFunction, dxva/DXVA_VideoTransferFunction, dxvaref_67be6e0a-79c6-4821-b3c3-899c2a2f9234.xml, dxva/DXVA_VideoTransFunc_22_240M, DXVA_VideoTransFunc_20, display.dxva_videotransferfunction, DXVA_VideoTransFunc_22_8bit_sRGB, DXVA_VideoTransFunc_22_709, DXVA_VideoTransFunc_10, DXVA_VideoTransFunc_Unknown, dxva/DXVA_VideoTransFunc_Unknown, dxva/DXVA_VideoTransFunc_18, dxva/DXVA_VideoTransFunc_20
+ms.keywords : dxva/DXVA_VideoTransferFunction, display.dxva_videotransferfunction, dxva/DXVA_VideoTransFunc_22_240M, dxvaref_67be6e0a-79c6-4821-b3c3-899c2a2f9234.xml, dxva/DXVA_VideoTransFunc_10, dxva/DXVA_VideoTransFunc_18, DXVA_VideoTransFunc_Unknown, DXVA_VideoTransFunc_22_709, dxva/DXVA_VideoTransFuncMask, DXVA_VideoTransFunc_18, DXVA_VideoTransferFunction, dxva/DXVA_VideoTransFunc_22, DXVA_VideoTransFunc_22_240M, dxva/DXVA_VideoTransFuncShift, DXVA_VideoTransferFunction enumeration [Display Devices], _DXVA_VideoTransferFunction, dxva/DXVA_VideoTransFunc_28, dxva/DXVA_VideoTransFunc_Unknown, dxva/DXVA_VideoTransFunc_22_709, DXVA_VideoTransFuncMask, DXVA_VideoTransFunc_28, dxva/DXVA_VideoTransFunc_22_8bit_sRGB, DXVA_VideoTransFuncShift, DXVA_VideoTransFunc_10, DXVA_VideoTransFunc_22_8bit_sRGB, DXVA_VideoTransFunc_20, DXVA_VideoTransFunc_22, dxva/DXVA_VideoTransFunc_20
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -139,9 +139,7 @@ DXVA_VideoTransferFunction corresponds to the gamma function of the data. Some t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : af25d03f-32c5-4e2c-930f-1b905edc566b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceassignsxwakesettings, kmdf.wdfdeviceassignsxwakesettings, PFN_WDFDEVICEASSIGNSXWAKESETTINGS, wdfdevice/WdfDeviceAssignSxWakeSettings, WdfDeviceAssignSxWakeSettings method, DFDeviceObjectGeneralRef_1a9b9467-862d-422a-9cf6-501d1ddefe5e.xml, WdfDeviceAssignSxWakeSettings
+ms.keywords : WdfDeviceAssignSxWakeSettings, wdfdevice/WdfDeviceAssignSxWakeSettings, DFDeviceObjectGeneralRef_1a9b9467-862d-422a-9cf6-501d1ddefe5e.xml, WdfDeviceAssignSxWakeSettings method, kmdf.wdfdeviceassignsxwakesettings, PFN_WDFDEVICEASSIGNSXWAKESETTINGS, wdf.wdfdeviceassignsxwakesettings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -132,20 +132,19 @@ For more information, see <a href="https://msdn.microsoft.com/519dcd1a-9975-48b1
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI |
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigns0idlesettings.md">WdfDeviceAssignS0IdleSettings</a>
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a>
 
  
 

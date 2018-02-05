@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 44dcfd41-7f0e-487e-8b08-5f301f17e7c1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PMI_METERED_HARDWARE_INFORMATION structure [Power Metering and Budgeting Devices], PMI_METERED_HARDWARE_INFORMATION, PPMI_METERED_HARDWARE_INFORMATION structure pointer [Power Metering and Budgeting Devices], *PPMI_METERED_HARDWARE_INFORMATION, PowerMeterRef_34a15685-680d-467d-bd78-2c933d614214.xml, PPMI_METERED_HARDWARE_INFORMATION, powermeter.pmi_metered_hardware_information, pmi/PMI_METERED_HARDWARE_INFORMATION, pmi/PPMI_METERED_HARDWARE_INFORMATION, _PMI_METERED_HARDWARE_INFORMATION
+ms.keywords : pmi/PPMI_METERED_HARDWARE_INFORMATION, PowerMeterRef_34a15685-680d-467d-bd78-2c933d614214.xml, _PMI_METERED_HARDWARE_INFORMATION, PPMI_METERED_HARDWARE_INFORMATION structure pointer [Power Metering and Budgeting Devices], PMI_METERED_HARDWARE_INFORMATION structure [Power Metering and Budgeting Devices], PPMI_METERED_HARDWARE_INFORMATION, PMI_METERED_HARDWARE_INFORMATION, powermeter.pmi_metered_hardware_information, pmi/PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ If the query request completes successfully, the request returns a <a href="..\p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
 ## See Also

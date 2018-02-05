@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : B920E5D1-D565-4626-A15E-8500DFFBC9FF
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/IPrintJobCollection::GetAt, GetAt, GetAt method [Print Devices], IPrintJobCollection interface [Print Devices], GetAt method, IPrintJobCollection::GetAt, print.iprintjobcollection_getat, IPrintJobCollection, GetAt method [Print Devices], IPrintJobCollection interface
+ms.keywords : printerextension/IPrintJobCollection::GetAt, IPrintJobCollection, print.iprintjobcollection_getat, IPrintJobCollection interface [Print Devices], GetAt method, GetAt, IPrintJobCollection::GetAt, GetAt method [Print Devices], IPrintJobCollection interface, GetAt method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,14 +71,10 @@ Returns an <b>HRESULT</b> value. If the method call was not successful, it retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

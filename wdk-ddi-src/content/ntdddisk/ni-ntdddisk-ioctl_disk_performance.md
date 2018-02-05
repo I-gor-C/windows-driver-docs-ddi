@@ -69,7 +69,6 @@ The <b>Information</b> field is set to <b>sizeof</b>(DISK_PERFORMANCE) when the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** | PASSIVE_LEVEL |
 

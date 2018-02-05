@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 9418ac12-3de0-4477-a725-437700c4d83c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, IDebugControl_92a4c34c-aa39-43e5-ad31-0ce26e45c246.xml, debugger.getsystemversion, IDebugControl2 interface [Windows Debugging], GetSystemVersion method, GetSystemVersion method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetSystemVersion, IDebugControl3::GetSystemVersion, GetSystemVersion method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::GetSystemVersion, GetSystemVersion method [Windows Debugging], IDebugControl3 interface [Windows Debugging], GetSystemVersion method, IDebugControl2::GetSystemVersion, dbgeng/IDebugControl3::GetSystemVersion, GetSystemVersion, IDebugControl interface [Windows Debugging], GetSystemVersion method, dbgeng/IDebugControl2::GetSystemVersion, GetSystemVersion method [Windows Debugging], IDebugControl2 interface
+ms.keywords : IDebugControl3 interface [Windows Debugging], GetSystemVersion method, dbgeng/IDebugControl2::GetSystemVersion, IDebugControl3::GetSystemVersion, dbgeng/IDebugControl3::GetSystemVersion, IDebugControl3, debugger.getsystemversion, GetSystemVersion method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], GetSystemVersion method, IDebugControl::GetSystemVersion, dbgeng/IDebugControl::GetSystemVersion, IDebugControl2::GetSystemVersion, GetSystemVersion, GetSystemVersion method [Windows Debugging], IDebugControl interface, GetSystemVersion method [Windows Debugging], IDebugControl_92a4c34c-aa39-43e5-ad31-0ce26e45c246.xml, IDebugControl2 interface [Windows Debugging], GetSystemVersion method, GetSystemVersion method [Windows Debugging], IDebugControl3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -141,26 +141,21 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Ntddk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549245">GetSystemVersionString</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549258">GetSystemVersionValues</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549245">GetSystemVersionString</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549258">GetSystemVersionValues</a>
 
  
 

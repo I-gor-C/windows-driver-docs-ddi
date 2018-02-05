@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9b774f05-f2f6-4148-8fee-0efe209f7e4d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortDeviceBusy, storprt_c1496cbe-e4b0-4b2b-8947-587b2467c57f.xml, StorPortDeviceBusy routine [Storage Devices], storage.storportdevicebusy, storport/StorPortDeviceBusy
+ms.keywords : storport/StorPortDeviceBusy, StorPortDeviceBusy routine [Storage Devices], storprt_c1496cbe-e4b0-4b2b-8947-587b2467c57f.xml, storage.storportdevicebusy, StorPortDeviceBusy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,20 +91,15 @@ The port driver will not issue any new requests to the logical unit until the lo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportready.md">StorPortReady</a>
-
 <a href="..\storport\nf-storport-storportbusy.md">StorPortBusy</a>
+
+<a href="..\storport\nf-storport-storportready.md">StorPortReady</a>
 
  
 

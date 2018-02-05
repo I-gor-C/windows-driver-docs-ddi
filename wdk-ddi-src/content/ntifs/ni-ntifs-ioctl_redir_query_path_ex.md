@@ -207,19 +207,18 @@ For more information, see the following sections in the Design Guide:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | This IOCTL is available on Windows Vista and later versions. This IOCTL is available on Windows Vista and later versions. |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a>
+<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
 
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex~r3.md">FsRtlRegisterUncProviderEx</a>
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
+<a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a>
 
-<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
 
  
 

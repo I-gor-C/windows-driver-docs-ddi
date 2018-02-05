@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f0213dc9-7299-4cf7-b2c9-27e5d1caea00
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsimgt/PMSiSCSI_InitiatorInstanceFailureEvent, MSiSCSI_InitiatorInstanceFailureEvent, PMSiSCSI_InitiatorInstanceFailureEvent structure pointer [Storage Devices], structs-iSCSI_189ce06c-9fb3-49f5-9921-31c400c4ae23.xml, *PMSiSCSI_InitiatorInstanceFailureEvent, PMSiSCSI_InitiatorInstanceFailureEvent, iscsimgt/MSiSCSI_InitiatorInstanceFailureEvent, _MSiSCSI_InitiatorInstanceFailureEvent, storage.msiscsi_initiatorinstancefailureevent, MSiSCSI_InitiatorInstanceFailureEvent structure [Storage Devices]
+ms.keywords : MSiSCSI_InitiatorInstanceFailureEvent structure [Storage Devices], PMSiSCSI_InitiatorInstanceFailureEvent, PMSiSCSI_InitiatorInstanceFailureEvent structure pointer [Storage Devices], _MSiSCSI_InitiatorInstanceFailureEvent, storage.msiscsi_initiatorinstancefailureevent, *PMSiSCSI_InitiatorInstanceFailureEvent, iscsimgt/MSiSCSI_InitiatorInstanceFailureEvent, MSiSCSI_InitiatorInstanceFailureEvent, iscsimgt/PMSiSCSI_InitiatorInstanceFailureEvent, structs-iSCSI_189ce06c-9fb3-49f5-9921-31c400c4ae23.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ We recommend that you implement this class.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also

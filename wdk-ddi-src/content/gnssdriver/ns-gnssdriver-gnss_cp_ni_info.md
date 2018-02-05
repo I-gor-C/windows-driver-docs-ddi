@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : FC05C59C-F8B5-4573-A1F0-722A25BDA151
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_CP_NI_INFO, GNSS_CP_NI_INFO structure [Sensor Devices], gnssdriver/PGNSS_CP_NI_INFO, GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO, PGNSS_CP_NI_INFO structure pointer [Sensor Devices], PGNSS_CP_NI_INFO, sensors.gnss_cp_ni_info
+ms.keywords : PGNSS_CP_NI_INFO, GNSS_CP_NI_INFO structure [Sensor Devices], gnssdriver/GNSS_CP_NI_INFO, PGNSS_CP_NI_INFO structure pointer [Sensor Devices], *PGNSS_CP_NI_INFO, gnssdriver/PGNSS_CP_NI_INFO, GNSS_CP_NI_INFO, sensors.gnss_cp_ni_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 68967a4f-9192-4716-85bd-1bcbc022c445
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2::RemoveTypeOptions, IDebugSymbols3::RemoveTypeOptions, RemoveTypeOptions method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], RemoveTypeOptions method, dbgeng/IDebugSymbols2::RemoveTypeOptions, dbgeng/IDebugSymbols3::RemoveTypeOptions, RemoveTypeOptions, RemoveTypeOptions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols_e5b88999-5c49-49cc-a3b8-2dea953b4fc1.xml, debugger.removetypeoptions, IDebugSymbols3 interface [Windows Debugging], RemoveTypeOptions method, RemoveTypeOptions method [Windows Debugging]
+ms.keywords : dbgeng/IDebugSymbols2::RemoveTypeOptions, dbgeng/IDebugSymbols3::RemoveTypeOptions, debugger.removetypeoptions, IDebugSymbols2::RemoveTypeOptions, IDebugSymbols3, RemoveTypeOptions, IDebugSymbols2 interface [Windows Debugging], RemoveTypeOptions method, IDebugSymbols3 interface [Windows Debugging], RemoveTypeOptions method, RemoveTypeOptions method [Windows Debugging], IDebugSymbols3 interface, RemoveTypeOptions method [Windows Debugging], IDebugSymbols_e5b88999-5c49-49cc-a3b8-2dea953b4fc1.xml, IDebugSymbols3::RemoveTypeOptions, RemoveTypeOptions method [Windows Debugging], IDebugSymbols2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,26 +88,21 @@ For more information about types, see <a href="https://msdn.microsoft.com/librar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556874">SetTypeOptions</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549428">GetTypeOptions</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537949">AddTypeOptions</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549428">GetTypeOptions</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556874">SetTypeOptions</a>
 
  
 

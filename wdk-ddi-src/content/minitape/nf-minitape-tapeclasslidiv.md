@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 13c449c6-6e2b-434e-8948-62c8af237173
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : TapeClassLiDiv, TapeClassLiDiv routine [Storage Devices], tapeclas_8c5ecef8-fdd0-4889-8e3f-1bd80fe5b5c6.xml, minitape/TapeClassLiDiv, storage.tapeclasslidiv
+ms.keywords : storage.tapeclasslidiv, TapeClassLiDiv, minitape/TapeClassLiDiv, TapeClassLiDiv routine [Storage Devices], tapeclas_8c5ecef8-fdd0-4889-8e3f-1bd80fe5b5c6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTAPE_STATUS, TAPE_STATUS"
+req.typenames : TAPE_STATUS, *PTAPE_STATUS
 ---
 
 
@@ -70,11 +70,6 @@ Contains the divisor.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | minitape.h (include Minitape.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tape.lib |

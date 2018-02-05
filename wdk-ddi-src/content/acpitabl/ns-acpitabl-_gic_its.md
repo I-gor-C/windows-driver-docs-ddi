@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : C0DA1B09-230E-4DE6-98CD-F80243D63B95
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : "_GIC_ITS, GIC_ITS structure [ACPI Devices], acpitabl/GIC_ITS, *PGIC_ITS, acpi.gic_its, GIC_ITS"
+ms.keywords : "*PGIC_ITS, _GIC_ITS, acpitabl/GIC_ITS, GIC_ITS structure [ACPI Devices], GIC_ITS, acpi.gic_its"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,5 @@ Defines the <b>UCHAR</b> member <b>Type</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 and later versions. Windows 10, version 1709 and later versions. |
 | **Header** | acpitabl.h (include Acpitabl.h) |

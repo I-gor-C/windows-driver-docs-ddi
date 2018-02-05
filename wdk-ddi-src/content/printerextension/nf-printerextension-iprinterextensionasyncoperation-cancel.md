@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : B5E1F3C4-A131-411B-BBAB-6E8B69433E13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterExtensionAsyncOperation::Cancel, Cancel method [Print Devices], Cancel, IPrinterExtensionAsyncOperation interface [Print Devices], Cancel method, IPrinterExtensionAsyncOperation, Cancel method [Print Devices], IPrinterExtensionAsyncOperation interface, printerextension/IPrinterExtensionAsyncOperation::Cancel, print.iprinterextensionasyncoperation_cancel
+ms.keywords : printerextension/IPrinterExtensionAsyncOperation::Cancel, Cancel method [Print Devices], IPrinterExtensionAsyncOperation interface, Cancel, print.iprinterextensionasyncoperation_cancel, Cancel method [Print Devices], IPrinterExtensionAsyncOperation::Cancel, IPrinterExtensionAsyncOperation, IPrinterExtensionAsyncOperation interface [Print Devices], Cancel method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -67,14 +67,10 @@ Also, note that this method does not wait for the cancellation to be processed -
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

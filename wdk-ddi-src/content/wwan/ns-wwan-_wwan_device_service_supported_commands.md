@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2AFE312D-8CCE-4A91-A23E-D5C6D2B0B01A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, _WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, wwan/WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, wwan/PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, netvista.wwan_device_service_supported_commands
+ms.keywords : PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, wwan/PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure [Network Drivers Starting with Windows Vista], netvista.wwan_device_service_supported_commands, _WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, wwan/WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
+req.typenames : "*PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS"
 req.product : Windows 10 or later.
 ---
 
@@ -67,9 +67,7 @@ A formatted
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

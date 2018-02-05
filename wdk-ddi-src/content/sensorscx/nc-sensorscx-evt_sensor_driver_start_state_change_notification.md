@@ -69,11 +69,6 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorscx.h |
-| **Library** |  |
 | **IRQL** | "_requires_same_" |
-| **DDI compliance rules** |  |

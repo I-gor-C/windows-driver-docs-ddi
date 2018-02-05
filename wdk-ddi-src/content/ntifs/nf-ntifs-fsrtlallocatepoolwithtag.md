@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a9ea59d1-1d51-4332-b497-7d2b7f39e686
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlAllocatePoolWithTag, ntifs/FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag routine [Installable File System Drivers], ifsk.fsrtlallocatepoolwithtag, fsrtlref_1137174c-fe54-4575-98a6-64a569f91b96.xml
+ms.keywords : fsrtlref_1137174c-fe54-4575-98a6-64a569f91b96.xml, ntifs/FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag, FsRtlAllocatePoolWithTag routine [Installable File System Drivers], ifsk.fsrtlallocatepoolwithtag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -94,20 +94,17 @@ Callers of <b>FsRtlAllocatePoolWithTag</b> must be running at IRQL &lt;= DISPATC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
  
 

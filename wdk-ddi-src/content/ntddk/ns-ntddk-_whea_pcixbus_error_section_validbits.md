@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 85f14500-9cf6-42a6-a302-0990b99ddb5f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, whearef_a01d7635-52ac-4b47-98f9-b09601dce4ff.xml, _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, ntddk/WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], whea.whea_pcixbus_error_section_validbits, WHEA_PCIXBUS_ERROR_VALIDBITS
+ms.keywords : PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, WHEA_PCIXBUS_ERROR_VALIDBITS, whearef_a01d7635-52ac-4b47-98f9-b09601dce4ff.xml, ntddk/WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, whea.whea_pcixbus_error_section_validbits
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,9 +77,7 @@ A WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union is contained within the <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09adfa3f-443b-4500-bb08-27f91da20778
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_VideoLighting_office, DXVA_VideoLightingMask, DXVA_VideoLighting_Unknown, DXVA_VideoLightingShift, display.dxva_videolighting, DXVA_VideoLighting_dark, dxva/DXVA_VideoLighting, DXVA_VideoLighting_dim, dxva/DXVA_VideoLighting_dark, DXVA_VideoLighting_office, dxva/DXVA_VideoLighting_bright, dxvaref_c223ad8d-6e70-4672-b286-292a7e36d6f7.xml, dxva/DXVA_VideoLighting_dim, _DXVA_VideoLighting, dxva/DXVA_VideoLighting_Unknown, DXVA_VideoLighting enumeration [Display Devices], DXVA_VideoLighting, dxva/DXVA_VideoLightingMask, DXVA_VideoLighting_bright, dxva/DXVA_VideoLightingShift
+ms.keywords : dxva/DXVA_VideoLighting_Unknown, DXVA_VideoLighting_dim, _DXVA_VideoLighting, DXVA_VideoLighting, display.dxva_videolighting, DXVA_VideoLighting_dark, DXVA_VideoLighting enumeration [Display Devices], dxvaref_c223ad8d-6e70-4672-b286-292a7e36d6f7.xml, DXVA_VideoLighting_office, dxva/DXVA_VideoLighting, dxva/DXVA_VideoLightingShift, dxva/DXVA_VideoLighting_dark, dxva/DXVA_VideoLighting_dim, DXVA_VideoLightingShift, DXVA_VideoLighting_Unknown, DXVA_VideoLightingMask, dxva/DXVA_VideoLightingMask, DXVA_VideoLighting_bright, dxva/DXVA_VideoLighting_bright, dxva/DXVA_VideoLighting_office
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -103,9 +103,7 @@ The video lighting enumerators can be used to alter the gamma to generate a comp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 634398E9-7AAA-424C-8C81-287F70CE3578
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._roothub_info, ROOTHUB_INFO, *PROOTHUB_INFO, ROOTHUB_INFO structure [Buses], ucxroothub/_ROOTHUB_INFO, P_ROOTHUB_INFO structure pointer [Buses], P_ROOTHUB_INFO, _ROOTHUB_INFO, ucxroothub/P_ROOTHUB_INFO
+ms.keywords : buses._roothub_info, P_ROOTHUB_INFO structure pointer [Buses], P_ROOTHUB_INFO, ROOTHUB_INFO, ucxroothub/P_ROOTHUB_INFO, ROOTHUB_INFO structure [Buses], *PROOTHUB_INFO, ucxroothub/_ROOTHUB_INFO, _ROOTHUB_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ROOTHUB_INFO, *PROOTHUB_INFO
+req.typenames : "*PROOTHUB_INFO, ROOTHUB_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -85,9 +85,6 @@ The size in bytes of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
 
 ## See Also

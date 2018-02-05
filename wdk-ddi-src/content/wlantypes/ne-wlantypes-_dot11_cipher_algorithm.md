@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5fc1af01-7dd5-43dd-aefe-99dec0b5aa6a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wlantypes/DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], wlantypes/DOT11_CIPHER_ALGO_RSN_USE_GROUP, PDOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_IHV_END, wlantypes/DOT11_CIPHER_ALGO_IHV_START, wlantypes/DOT11_CIPHER_ALGO_NONE, DOT11_CIPHER_ALGO_NONE, DOT11_CIPHER_ALGO_WEP104, wlantypes/DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGO_WEP40, _DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WPA_USE_GROUP, DOT11_CIPHER_ALGO_IHV_END, wlantypes/DOT11_CIPHER_ALGO_WEP40, wlantypes/PDOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_WEP104, wlantypes/DOT11_CIPHER_ALGO_WPA_USE_GROUP, *PDOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGO_IHV_START, DOT11_CIPHER_ALGO_CCMP, netvista.dot11_cipher_algorithm, DOT11_CIPHER_ALGO_RSN_USE_GROUP, DOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WEP, wlantypes/DOT11_CIPHER_ALGO_CCMP, PDOT11_CIPHER_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], wlantypes/DOT11_CIPHER_ALGO_WEP, Native_802.11_data_types_f6b802d4-cd15-49ca-9518-5dceb9c2b651.xml
+ms.keywords : wlantypes/DOT11_CIPHER_ALGO_WEP40, wlantypes/DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], wlantypes/DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGO_NONE, _DOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_NONE, DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGO_IHV_START, wlantypes/DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WEP104, *PDOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WEP, wlantypes/DOT11_CIPHER_ALGO_CCMP, wlantypes/PDOT11_CIPHER_ALGORITHM, PDOT11_CIPHER_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], netvista.dot11_cipher_algorithm, wlantypes/DOT11_CIPHER_ALGO_IHV_END, wlantypes/DOT11_CIPHER_ALGO_IHV_START, wlantypes/DOT11_CIPHER_ALGO_RSN_USE_GROUP, DOT11_CIPHER_ALGO_WEP40, DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGO_WPA_USE_GROUP, DOT11_CIPHER_ALGO_IHV_END, DOT11_CIPHER_ALGO_RSN_USE_GROUP, wlantypes/DOT11_CIPHER_ALGO_WEP, Native_802.11_data_types_f6b802d4-cd15-49ca-9518-5dceb9c2b651.xml, wlantypes/DOT11_CIPHER_ALGO_WEP104, PDOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_WPA_USE_GROUP, DOT11_CIPHER_ALGO_CCMP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_CIPHER_ALGORITHM, *PDOT11_CIPHER_ALGORITHM
+req.typenames : "*PDOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGORITHM"
 req.product : Windows 10 or later.
 ---
 
@@ -198,8 +198,8 @@ If the miniport driver supports IHV-defined cipher algorithms, the miniport driv
 
 Starting with Windows 7, an 802.11 miniport driver can report any combination of supported
     authentication and cipher algorithm pairs in the 
-    <mshelp:link keywords="netvista.dot11_auth_cipher_pair_list" tabindex="0"><b>
-    DOT11_AUTH_CIPHER_PAIR_LIST</b></mshelp:link> structure. However, if the operating system starts Soft AP, it enables
+    <a href="..\windot11\ns-windot11-dot11_auth_cipher_pair_list.md">
+    DOT11_AUTH_CIPHER_PAIR_LIST</a> structure. However, if the operating system starts Soft AP, it enables
     only the 
     <b>DOT11_AUTH_ALGO_RSNA_PSK</b> authentication algorithm and the 
     <b>DOT11_CIPHER_ALGO_CCMP</b> cipher algorithm. To support Soft AP, the miniport driver must support this
@@ -215,26 +215,24 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of the Windows operating   systems. Available in Windows 8 and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-cipher-default-key-id">OID_DOT11_CIPHER_DEFAULT_KEY</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-cipher-key-mapping-key">
+   OID_DOT11_CIPHER_KEY_MAPPING_KEY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569135">OID_DOT11_CURRENT_PHY_ID</a>
 
 <a href="..\windot11\ns-windot11-dot11_auth_cipher_pair_list.md">DOT11_AUTH_CIPHER_PAIR_LIST</a>
 
 <a href="..\windot11\ns-windot11-dot11_cipher_algorithm_list.md">DOT11_CIPHER_ALGORITHM_LIST</a>
 
-<mshelp:link keywords="netvista.dot11_association_completion_parameters" tabindex="0"><b>
-   DOT11_ASSOCIATION_COMPLETION_PARAMETERS</b></mshelp:link>
+<a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
+   DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569135">OID_DOT11_CURRENT_PHY_ID</a>
-
-<mshelp:link keywords="netvista.oid_dot11_cipher_key_mapping_key" tabindex="0">
-   OID_DOT11_CIPHER_KEY_MAPPING_KEY</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-cipher-default-key-id">OID_DOT11_CIPHER_DEFAULT_KEY</a>
 
  
 

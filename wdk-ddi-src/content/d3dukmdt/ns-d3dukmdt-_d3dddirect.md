@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7dcb4b17-3aac-46df-9aed-d2145ed3034a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D_other_Structs_0b4f8354-6a1e-49fa-85aa-681b20e7d072.xml, D3DDDIRECT structure [Display Devices], d3dukmdt/D3DDDIRECT, _D3DDDIRECT, D3DDDIRECT, display.d3dddirect
+ms.keywords : d3dukmdt/D3DDDIRECT, _D3DDDIRECT, display.d3dddirect, D3DDDIRECT, D3D_other_Structs_0b4f8354-6a1e-49fa-85aa-681b20e7d072.xml, D3DDDIRECT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct _D3DDDIRECT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dukmdt.h) |
 
 ## See Also

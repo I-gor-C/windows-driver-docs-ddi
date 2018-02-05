@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : dd981cc1-ab82-49de-8cf1-ba2b7451c7ef
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddcdvd/DVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR structure pointer [Storage Devices], *PDVD_LAYER_DESCRIPTOR, storage.dvd_layer_descriptor, structs-DVD_94f08da1-fe98-47cd-989a-b3f574874d6b.xml, _DVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR structure [Storage Devices], ntddcdvd/PDVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR
+ms.keywords : PDVD_LAYER_DESCRIPTOR structure pointer [Storage Devices], DVD_LAYER_DESCRIPTOR structure [Storage Devices], ntddcdvd/PDVD_LAYER_DESCRIPTOR, storage.dvd_layer_descriptor, structs-DVD_94f08da1-fe98-47cd-989a-b3f574874d6b.xml, DVD_LAYER_DESCRIPTOR, ntddcdvd/DVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR, _DVD_LAYER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR
+req.typenames : "*PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR"
 ---
 
 # _DVD_LAYER_DESCRIPTOR structure
@@ -397,9 +397,6 @@ For more information, see the <i>SCSI Multimedia Commands - 3 (MMC-3) </i>specif
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
 ## See Also

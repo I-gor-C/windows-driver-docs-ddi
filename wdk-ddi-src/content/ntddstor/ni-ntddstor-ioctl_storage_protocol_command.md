@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_PROTOCOL_COMMAND IOCTL
@@ -69,9 +69,8 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ntddstor.h (include Ntddstor.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a1625eb2-a38b-4517-b873-f33b5ced8705
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avstruct_a374bc58-a61f-4d3b-9b20-de14b7cc423f.xml, ks/KSPROCESSPIN, stream.ksprocesspin, *PKSPROCESSPIN, PKSPROCESSPIN structure pointer [Streaming Media Devices], _KSPROCESSPIN, ks/PKSPROCESSPIN, PKSPROCESSPIN, KSPROCESSPIN, KSPROCESSPIN structure [Streaming Media Devices]
+ms.keywords : avstruct_a374bc58-a61f-4d3b-9b20-de14b7cc423f.xml, _KSPROCESSPIN, PKSPROCESSPIN, ks/PKSPROCESSPIN, PKSPROCESSPIN structure pointer [Streaming Media Devices], KSPROCESSPIN structure [Streaming Media Devices], ks/KSPROCESSPIN, KSPROCESSPIN, *PKSPROCESSPIN, stream.ksprocesspin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROCESSPIN, KSPROCESSPIN"
+req.typenames : KSPROCESSPIN, *PKSPROCESSPIN
 ---
 
 # _KSPROCESSPIN structure
@@ -70,20 +70,18 @@ Most clients are concerned with the members <b>Pin</b>, <b>Data</b>, <b>BytesAva
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
+
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 <a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
 
 <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
 
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
-
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
  
 

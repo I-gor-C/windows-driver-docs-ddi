@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 81e5b26d-78b5-4ee7-a47c-fc92d01752d1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortBusy, storprt_b4765f8e-c48f-4920-bd1a-1ff9dbdd8656.xml, storport/StorPortBusy, storage.storportbusy, StorPortBusy routine [Storage Devices]
+ms.keywords : storage.storportbusy, StorPortBusy, storprt_b4765f8e-c48f-4920-bd1a-1ff9dbdd8656.xml, StorPortBusy routine [Storage Devices], storport/StorPortBusy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ The library of support routines provided by the SCSI Port driver does not includ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

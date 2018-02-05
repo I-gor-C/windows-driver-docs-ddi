@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 25875f28-292f-40d9-8b29-ec9af49b0bc0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsClockPropertySet, ksproxy/IKsClockPropertySet::KsGetPhysicalTime, KsGetPhysicalTime, KsGetPhysicalTime method [Streaming Media Devices], ksproxy_d242cd7a-c210-41b2-9c3c-59900c79e351.xml, IKsClockPropertySet interface [Streaming Media Devices], KsGetPhysicalTime method, IKsClockPropertySet::KsGetPhysicalTime, stream.iksclockpropertyset_ksgetphysicaltime, KsGetPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface
+ms.keywords : IKsClockPropertySet, KsGetPhysicalTime method [Streaming Media Devices], KsGetPhysicalTime, IKsClockPropertySet interface [Streaming Media Devices], KsGetPhysicalTime method, IKsClockPropertySet::KsGetPhysicalTime, KsGetPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsGetPhysicalTime, ksproxy_d242cd7a-c210-41b2-9c3c-59900c79e351.xml, stream.iksclockpropertyset_ksgetphysicaltime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,20 +70,15 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559760">IKsClockPropertySet::KsSetPhysicalTime</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565088">KSPROPERTY_CLOCK_PHYSICALTIME</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559760">IKsClockPropertySet::KsSetPhysicalTime</a>
 
  
 

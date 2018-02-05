@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2feff5f5-a104-4738-94be-add08fd99037
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDIARG_TEX3D_RENDERTARGETVIEW, D3D10DDIARG_TEX3D_RENDERTARGETVIEW, display.d3d10ddiarg_tex3d_rendertargetview, D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure [Display Devices], UMDisplayDriver_Dx10param_Structs_705e661d-890a-45db-a805-60d2c2cbde6f.xml
+ms.keywords : d3d10umddi/D3D10DDIARG_TEX3D_RENDERTARGETVIEW, D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure [Display Devices], D3D10DDIARG_TEX3D_RENDERTARGETVIEW, UMDisplayDriver_Dx10param_Structs_705e661d-890a-45db-a805-60d2c2cbde6f.xml, display.d3d10ddiarg_tex3d_rendertargetview
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,18 +69,16 @@ typedef struct D3D10DDIARG_TEX3D_RENDERTARGETVIEW {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivaterendertargetviewsize.md">CalcPrivateRenderTargetViewSize</a>
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createrendertargetview.md">D3D10DDIARG_CREATERENDERTARGETVIEW</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createrendertargetview.md">CreateRenderTargetView</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createrendertargetview.md">D3D10DDIARG_CREATERENDERTARGETVIEW</a>
 
  
 

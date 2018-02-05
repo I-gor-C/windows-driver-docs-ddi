@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : aeed8086-b413-428c-b275-d555523b5503
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsCreateTopologyNode, ksfunc_15092cdb-3f97-4f13-a10e-9dbc92d20776.xml, KsCreateTopologyNode function [Streaming Media Devices], KsCreateTopologyNode, stream.kscreatetopologynode
+ms.keywords : ks/KsCreateTopologyNode, stream.kscreatetopologynode, KsCreateTopologyNode, ksfunc_15092cdb-3f97-4f13-a10e-9dbc92d20776.xml, KsCreateTopologyNode function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,9 @@ The <a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a> structure describes
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b6d96a82-f744-4663-8373-886f4245c106
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.dot11_cipher_algorithm_list, DOT11_CIPHER_ALGORITHM_LIST structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_CIPHER_ALGORITHM_LIST, Native_802.11_data_types_704d7a5a-0cf5-459f-af0c-06dfdc936a9e.xml, PDOT11_CIPHER_ALGORITHM_LIST structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST, PDOT11_CIPHER_ALGORITHM_LIST, *PDOT11_CIPHER_ALGORITHM_LIST
+ms.keywords : PDOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST structure [Network Drivers Starting with Windows Vista], DOT11_CIPHER_ALGORITHM_LIST, netvista.dot11_cipher_algorithm_list, windot11/PDOT11_CIPHER_ALGORITHM_LIST, windot11/DOT11_CIPHER_ALGORITHM_LIST, PDOT11_CIPHER_ALGORITHM_LIST structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_CIPHER_ALGORITHM_LIST, Native_802.11_data_types_704d7a5a-0cf5-459f-af0c-06dfdc936a9e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_CIPHER_ALGORITHM_LIST, *PDOT11_CIPHER_ALGORITHM_LIST
+req.typenames : "*PDOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -83,11 +83,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_CIPHER_ALGORITHM_LIST_REVISION_1.
@@ -97,6 +92,11 @@ This member must be set to DOT11_CIPHER_ALGORITHM_LIST_REVISION_1.
 
 This member must be set to 
        sizeof(DOT11_CIPHER_ALGORITHM_LIST).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `uNumOfEntries`
 
@@ -110,10 +110,10 @@ The maximum number of entries that the
 
 ## Remarks
 A miniport driver returns the DOT11_CIPHER_ALGORITHM_LIST structure when it is queried by either 
-    <mshelp:link keywords="netvista.oid_dot11_supported_unicast_algorithm_pair" tabindex="0">
-    OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</mshelp:link> or 
-    <mshelp:link keywords="netvista.oid_dot11_supported_multicast_algorithm_pair" tabindex="0">
-    OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/gg157261.aspx">
+    OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</a> or 
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-multicast-algorithm-pair">
+    OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</a>.
 
 When these OIDs are queried, the miniport driver must verify that the 
     <b>InformationBuffer</b> member of the 
@@ -181,22 +181,20 @@ Return NDIS_STATUS_SUCCESS from its
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.oid_dot11_supported_multicast_algorithm_pair" tabindex="0">
-   OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</mshelp:link>
-
 <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 
-<mshelp:link keywords="netvista.oid_dot11_supported_unicast_algorithm_pair" tabindex="0">
-   OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</mshelp:link>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/gg157261.aspx">
+   OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-multicast-algorithm-pair">
+   OID_DOT11_SUPPORTED_MULTICAST_ALGORITHM_PAIR</a>
 
  
 

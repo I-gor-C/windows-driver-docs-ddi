@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f57514ed-33b2-4895-aaba-5866b6fc01d2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : prntfont/UNIDRVINFO, PUNIDRVINFO structure pointer [Print Devices], UNIDRVINFO, PUNIDRVINFO, prntfont/PUNIDRVINFO, print.unidrvinfo, UNIDRVINFO structure [Print Devices], *PUNIDRVINFO, print_unidrv-pscript_fonts_b956aa02-1966-47c6-aec1-8ef8b98f4e57.xml, _UNIDRVINFO
+ms.keywords : prntfont/PUNIDRVINFO, prntfont/UNIDRVINFO, PUNIDRVINFO structure pointer [Print Devices], *PUNIDRVINFO, print_unidrv-pscript_fonts_b956aa02-1966-47c6-aec1-8ef8b98f4e57.xml, _UNIDRVINFO, UNIDRVINFO, PUNIDRVINFO, UNIDRVINFO structure [Print Devices], print.unidrvinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UNIDRVINFO, *PUNIDRVINFO
+req.typenames : "*PUNIDRVINFO, UNIDRVINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -302,9 +302,6 @@ A .ufm (Unidrv Font Metrics) file's UNIDRVINFO structure is accessed by a pointe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also

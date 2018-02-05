@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7f75ab1e-8aeb-4e49-9c18-c7a10ce3cbd3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_PEER_INFO_LIST, windot11/DOT11_PEER_INFO_LIST, PDOT11_PEER_INFO_LIST structure pointer [Network Drivers Starting with Windows Vista], PDOT11_PEER_INFO_LIST, *PDOT11_PEER_INFO_LIST, netvista.dot11_peer_info_list, Native_802.11_data_types_c969625e-444f-4741-a284-6bd77253c8b9.xml, DOT11_PEER_INFO_LIST structure [Network Drivers Starting with Windows Vista], DOT11_PEER_INFO_LIST, _DOT11_PEER_INFO_LIST
+ms.keywords : PDOT11_PEER_INFO_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_c969625e-444f-4741-a284-6bd77253c8b9.xml, netvista.dot11_peer_info_list, windot11/DOT11_PEER_INFO_LIST, DOT11_PEER_INFO_LIST structure [Network Drivers Starting with Windows Vista], DOT11_PEER_INFO_LIST, PDOT11_PEER_INFO_LIST, *PDOT11_PEER_INFO_LIST, _DOT11_PEER_INFO_LIST, windot11/PDOT11_PEER_INFO_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_PEER_INFO_LIST, DOT11_PEER_INFO_LIST"
+req.typenames : DOT11_PEER_INFO_LIST, *PDOT11_PEER_INFO_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -74,11 +74,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_PEER_INFO_LIST_REVISION_1.
@@ -88,6 +83,11 @@ This member must be set to DOT11_PEER_INFO_LIST_REVISION_1.
 
 This member must be set to 
        sizeof(DOT11_PEER_INFO_LIST).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `PeerInfo`
 
@@ -113,18 +113,16 @@ This structure is used with
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\windot11\ns-windot11-_dot11_peer_info.md">DOT11_PEER_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569361">OID_DOT11_ENUM_PEER_INFO</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\windot11\ns-windot11-_dot11_peer_info.md">DOT11_PEER_INFO</a>
 
  
 

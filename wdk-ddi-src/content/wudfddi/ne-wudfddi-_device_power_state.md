@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7dd4d0ae-876a-4156-8a09-2ebc82a25117
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DEVICE_POWER_STATE, _DEVICE_POWER_STATE, PowerDeviceD3, wudfddi/PowerDeviceD3, PDEVICE_POWER_STATE enumeration pointer, wudfddi/PowerDeviceD0, PowerDeviceD0, wudfddi/DEVICE_POWER_STATE, wudfddi/PowerDeviceD1, wudfddi/PDEVICE_POWER_STATE, PowerDeviceD1, wudfddi/PowerDeviceMaximum, DEVICE_POWER_STATE enumeration, umdf.device_power_state, PowerDeviceD2, PowerDeviceMaximum, wdf.device_power_state, umdfstructs_6dca1ebb-421e-446b-b2b6-cc7b87afcf58.xml, PowerDeviceUnspecified, wudfddi/PowerDeviceUnspecified, PDEVICE_POWER_STATE, wudfddi/PowerDeviceD2, *PDEVICE_POWER_STATE
+ms.keywords : wudfddi/DEVICE_POWER_STATE, *PDEVICE_POWER_STATE, wudfddi/PowerDeviceUnspecified, PowerDeviceD3, PowerDeviceMaximum, wudfddi/PowerDeviceD2, PowerDeviceUnspecified, wudfddi/PowerDeviceD0, wdf.device_power_state, wudfddi/PowerDeviceMaximum, umdf.device_power_state, PowerDeviceD2, PDEVICE_POWER_STATE enumeration pointer, wudfddi/PDEVICE_POWER_STATE, wudfddi/PowerDeviceD3, umdfstructs_6dca1ebb-421e-446b-b2b6-cc7b87afcf58.xml, DEVICE_POWER_STATE, PowerDeviceD0, DEVICE_POWER_STATE enumeration, PDEVICE_POWER_STATE, _DEVICE_POWER_STATE, wudfddi/PowerDeviceD1, PowerDeviceD1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICE_POWER_STATE, *PDEVICE_POWER_STATE
+req.typenames : "*PDEVICE_POWER_STATE, DEVICE_POWER_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -98,16 +98,14 @@ The <b>DEVICE_POWER_STATE</b> enumeration is used as input to <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
 
  
 

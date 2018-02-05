@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8cde623d-a255-45ff-ab1e-bdd0c14a02a0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPreDeviceRemove, wdf.wdfpredeviceremove, wdfinstaller/WdfPreDeviceRemove, WdfPreDeviceRemove function, PFN_WDFPREDEVICEREMOVE, DFCoinstallerRef_6eeb3b62-08ef-4d17-a6af-9945a3737f0d.xml, kmdf.wdfpredeviceremove
+ms.keywords : wdfinstaller/WdfPreDeviceRemove, WdfPreDeviceRemove, wdf.wdfpredeviceremove, DFCoinstallerRef_6eeb3b62-08ef-4d17-a6af-9945a3737f0d.xml, WdfPreDeviceRemove function, kmdf.wdfpredeviceremove, PFN_WDFPREDEVICEREMOVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,10 @@ For more information about the <b>WdfPreDeviceRemove</b> function and installers
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfinstaller.h (include Wdfinstaller.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.) |
 
 ## See Also
 

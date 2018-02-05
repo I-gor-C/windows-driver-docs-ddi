@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5f15743a-1ea7-4260-b2cb-f2871acb27f9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.ddicheckoverlaysupportinput, D3D_other_Structs_194edebf-9bbd-465b-a731-ad3e10f6e809.xml, DDICHECKOVERLAYSUPPORTINPUT structure [Display Devices], d3dumddi/DDICHECKOVERLAYSUPPORTINPUT, _DDICHECKOVERLAYSUPPORTINPUT, DDICHECKOVERLAYSUPPORTINPUT
+ms.keywords : DDICHECKOVERLAYSUPPORTINPUT, d3dumddi/DDICHECKOVERLAYSUPPORTINPUT, display.ddicheckoverlaysupportinput, DDICHECKOVERLAYSUPPORTINPUT structure [Display Devices], D3D_other_Structs_194edebf-9bbd-465b-a731-ad3e10f6e809.xml, _DDICHECKOVERLAYSUPPORTINPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,20 +101,18 @@ The runtime specifies a pointer to a DDICHECKOVERLAYSUPPORTINPUT structure in th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DDICHECKOVERLAYSUPPORTINPUT is supported beginning with the Windows 7 operating system. DDICHECKOVERLAYSUPPORTINPUT is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_scanlineordering.md">D3DDDI_SCANLINEORDERING</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_scanlineordering.md">D3DDDI_SCANLINEORDERING</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 

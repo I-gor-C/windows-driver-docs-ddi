@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ce3610ab-a927-45e7-8ceb-3f38b5f50f00
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTIPLANE_ALLOCATION_INFO, d3dumddi/D3DDDI_MULTIPLANE_ALLOCATION_INFO, display.d3dddi_multiplane_allocation_info, D3DDDI_MULTIPLANE_ALLOCATION_INFO structure [Display Devices], D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO
+ms.keywords : d3dumddi/D3DDDI_MULTIPLANE_ALLOCATION_INFO, D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO, D3DDDI_MULTIPLANE_ALLOCATION_INFO structure [Display Devices], display.d3dddi_multiplane_allocation_info, D3DDDI_MULTIPLANE_ALLOCATION_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

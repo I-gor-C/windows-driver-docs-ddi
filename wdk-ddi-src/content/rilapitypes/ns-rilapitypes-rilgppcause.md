@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 33e54af8-4ff1-44e2-926f-8f045e15b000
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILGPPCAUSE, RILGPPCAUSE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILGPPCAUSE, RILGPPCAUSE, netvista.rilgppcause_2"
+ms.keywords : RILGPPCAUSE structure [Network Drivers Starting with Windows Vista], netvista.rilgppcause_2, *LPRILGPPCAUSE, rilapitypes/RILGPPCAUSE, RILGPPCAUSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILGPPCAUSE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

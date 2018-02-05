@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6d25f2fb-be77-480f-b07c-294ab8a4272e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetDeviceBase, storport/StorPortGetDeviceBase, StorPortGetDeviceBase routine [Storage Devices], storage.storportgetdevicebase, storprt_8be3e3d9-dae5-49cb-aa44-31d3be745045.xml
+ms.keywords : StorPortGetDeviceBase, storprt_8be3e3d9-dae5-49cb-aa44-31d3be745045.xml, storport/StorPortGetDeviceBase, storage.storportgetdevicebase, StorPortGetDeviceBase routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,14 +96,9 @@ This routine supports only those addresses that were assigned to the driver by t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

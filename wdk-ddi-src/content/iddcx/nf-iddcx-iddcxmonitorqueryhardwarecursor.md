@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e954b7e7-9e4a-47ae-9b0f-8c7e051cc00e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxMonitorQueryHardwareCursor method [Display Devices], iddcx/IddCxMonitorQueryHardwareCursor, display.iddcxmonitorqueryhardwarecursor, IddCxMonitorQueryHardwareCursor
+ms.keywords : display.iddcxmonitorqueryhardwarecursor, IddCxMonitorQueryHardwareCursor, iddcx/IddCxMonitorQueryHardwareCursor, IddCxMonitorQueryHardwareCursor method [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,8 @@ Output arguments of the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |
-| **DDI compliance rules** |  |

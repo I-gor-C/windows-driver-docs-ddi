@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 28a94e25-9beb-46a1-9e9d-9fe4823372be
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PMESSAGEBOX_PARAMS structure pointer [Print Devices], winsplp/MESSAGEBOX_PARAMS, print.messagebox_params, winsplp/PMESSAGEBOX_PARAMS, *PMESSAGEBOX_PARAMS, MESSAGEBOX_PARAMS structure [Print Devices], PMESSAGEBOX_PARAMS, spoolfnc_c70908b4-e8de-4e3e-810d-d76cf2104d91.xml, MESSAGEBOX_PARAMS
+ms.keywords : PMESSAGEBOX_PARAMS, *PMESSAGEBOX_PARAMS, print.messagebox_params, spoolfnc_c70908b4-e8de-4e3e-810d-d76cf2104d91.xml, PMESSAGEBOX_PARAMS structure pointer [Print Devices], winsplp/MESSAGEBOX_PARAMS, winsplp/PMESSAGEBOX_PARAMS, MESSAGEBOX_PARAMS structure [Print Devices], MESSAGEBOX_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -87,9 +87,7 @@ One member of the <a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available in Windows XP and later operating systems. This structure is available in Windows XP and later operating systems. |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also

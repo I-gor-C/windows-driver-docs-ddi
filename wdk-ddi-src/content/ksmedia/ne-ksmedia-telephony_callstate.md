@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8191418A-7139-4BF4-9869-F21AA54EA8B3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : TELEPHONY_CALLSTATE, ksmedia/TELEPHONY_CALLSTATE, TELEPHONY_CALLSTATE_ENABLED, TELEPHONY_CALLSTATE enumeration [Audio Devices], TELEPHONY_CALLSTATE_PROVIDERTRANSITION, ksmedia/TELEPHONY_CALLSTATE_DISABLED, ksmedia/TELEPHONY_CALLSTATE_PROVIDERTRANSITION, TELEPHONY_CALLSTATE_HOLD, audio.telephony_callstate, ksmedia/TELEPHONY_CALLSTATE_HOLD, TELEPHONY_CALLSTATE_DISABLED, ksmedia/TELEPHONY_CALLSTATE_ENABLED
+ms.keywords : ksmedia/TELEPHONY_CALLSTATE_PROVIDERTRANSITION, TELEPHONY_CALLSTATE_PROVIDERTRANSITION, TELEPHONY_CALLSTATE enumeration [Audio Devices], TELEPHONY_CALLSTATE, audio.telephony_callstate, ksmedia/TELEPHONY_CALLSTATE_HOLD, TELEPHONY_CALLSTATE_DISABLED, ksmedia/TELEPHONY_CALLSTATE_DISABLED, ksmedia/TELEPHONY_CALLSTATE, TELEPHONY_CALLSTATE_ENABLED, ksmedia/TELEPHONY_CALLSTATE_ENABLED, TELEPHONY_CALLSTATE_HOLD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,7 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |
 
 ## See Also

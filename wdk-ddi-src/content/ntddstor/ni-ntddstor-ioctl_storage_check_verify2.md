@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_CHECK_VERIFY2 IOCTL
@@ -69,9 +69,7 @@ I/O status is identical to the I/O status for <a href="..\ntddstor\ni-ntddstor-i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
-| **IRQL** |  |
 
 ## See Also
 

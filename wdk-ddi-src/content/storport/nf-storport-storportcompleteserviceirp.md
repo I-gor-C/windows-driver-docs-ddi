@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 359b1096-f987-4884-ab67-2290bf5196b5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_439990ea-8133-4114-b417-1c88e53cce14.xml, storport/StorPortCompleteServiceIrp, StorPortCompleteServiceIrp routine [Storage Devices], StorPortCompleteServiceIrp, storage.storportcompleteserviceirp
+ms.keywords : storage.storportcompleteserviceirp, StorPortCompleteServiceIrp routine [Storage Devices], StorPortCompleteServiceIrp, storprt_439990ea-8133-4114-b417-1c88e53cce14.xml, storport/StorPortCompleteServiceIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,14 +113,9 @@ The Storport virtual miniport driver's <a href="https://msdn.microsoft.com/libra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 835DC1E4-2D49-4D43-A545-5D4288412EC6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : poscx/POS_CX_EVENT_PRIORITY, poscx/POS_CX_EVENT_PRIORITY_INVALID, POS_CX_EVENT_PRIORITY, POS_CX_EVENT_PRIORITY_INVALID, poscx/POS_CX_EVENT_PRIORITY_DATA, POS_CX_EVENT_PRIORITY enumeration, poscx/POS_CX_EVENT_PRIORITY_CONTROL, _POS_CX_EVENT_PRIORITY, pos.pos_cx_event_priority, POS_CX_EVENT_PRIORITY_CONTROL, POS_CX_EVENT_PRIORITY_DATA
+ms.keywords : pos.pos_cx_event_priority, _POS_CX_EVENT_PRIORITY, poscx/POS_CX_EVENT_PRIORITY_DATA, poscx/POS_CX_EVENT_PRIORITY_CONTROL, POS_CX_EVENT_PRIORITY_INVALID, POS_CX_EVENT_PRIORITY_DATA, poscx/POS_CX_EVENT_PRIORITY_INVALID, poscx/POS_CX_EVENT_PRIORITY, POS_CX_EVENT_PRIORITY enumeration, POS_CX_EVENT_PRIORITY, POS_CX_EVENT_PRIORITY_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,7 +83,4 @@ typedef enum _POS_CX_EVENT_PRIORITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | poscx.h (include Poscx.h) |

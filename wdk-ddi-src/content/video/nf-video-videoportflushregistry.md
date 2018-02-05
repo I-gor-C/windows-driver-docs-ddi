@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8b940eec-dac6-4a01-afc8-73115bf994c3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : video/VideoPortFlushRegistry, VideoPort_Functions_fe7df781-6130-484d-b582-55446711fef6.xml, VideoPortFlushRegistry function [Display Devices], VideoPortFlushRegistry, display.videoportflushregistry
+ms.keywords : VideoPort_Functions_fe7df781-6130-484d-b582-55446711fef6.xml, VideoPortFlushRegistry function [Display Devices], video/VideoPortFlushRegistry, VideoPortFlushRegistry, display.videoportflushregistry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,20 +66,18 @@ Pointer to the miniport driver's device extension.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of the Windows operating systems. Available in Windows Server 2003 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
-
 <a href="..\video\nf-video-videoportsetregistryparameters.md">VideoPortSetRegistryParameters</a>
+
+<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
 
  
 

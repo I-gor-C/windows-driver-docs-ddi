@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bfaad47a-44eb-471d-9ed9-e1adf845ab9c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS structure [Network Drivers Starting with Windows Vista], RILSETCELLBROADCASTMSGCONFIGPARAMS, netvista.rilsetcellbroadcastmsgconfigparams, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS
+ms.keywords : "*LPRILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetcellbroadcastmsgconfigparams, ntddrilapitypes/RILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSETCELLBROADCASTMSGCONFIGPARAMS, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS
+req.typenames : "*LPRILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS"
 ---
 
 # RILSETCELLBROADCASTMSGCONFIGPARAMS structure
@@ -64,7 +64,4 @@ typedef struct _RILSETCELLBROADCASTMSGCONFIGPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

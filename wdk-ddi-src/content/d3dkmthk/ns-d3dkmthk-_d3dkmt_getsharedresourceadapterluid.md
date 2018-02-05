@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b7f9413b-3d57-47c4-a8a4-3288cb03af21
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_GETSHAREDRESOURCEADAPTERLUID, D3DKMT_GETSHAREDRESOURCEADAPTERLUID, d3dkmthk/D3DKMT_GETSHAREDRESOURCEADAPTERLUID, display.d3dkmt_getsharedresourceadapterluid, D3DKMT_GETSHAREDRESOURCEADAPTERLUID structure [Display Devices]"
+ms.keywords : D3DKMT_GETSHAREDRESOURCEADAPTERLUID structure [Display Devices], d3dkmthk/D3DKMT_GETSHAREDRESOURCEADAPTERLUID, display.d3dkmt_getsharedresourceadapterluid, _D3DKMT_GETSHAREDRESOURCEADAPTERLUID, D3DKMT_GETSHAREDRESOURCEADAPTERLUID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,5 @@ typedef struct _D3DKMT_GETSHAREDRESOURCEADAPTERLUID {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |

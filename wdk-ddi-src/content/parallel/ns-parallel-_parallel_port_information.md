@@ -8,7 +8,7 @@ old-project : parports
 ms.assetid : 9f170425-2c65-469e-adae-e845b11b9c8e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PPARALLEL_PORT_INFORMATION structure pointer [Parallel Ports], parallel/PARALLEL_PORT_INFORMATION, parports.parallel_port_information, PARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION, _PARALLEL_PORT_INFORMATION, parallel/PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION structure [Parallel Ports], cisspd_ca857237-0c57-46e9-aedf-f6d40a25dbf8.xml, *PPARALLEL_PORT_INFORMATION
+ms.keywords : cisspd_ca857237-0c57-46e9-aedf-f6d40a25dbf8.xml, parallel/PPARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION structure [Parallel Ports], PARALLEL_PORT_INFORMATION, parports.parallel_port_information, parallel/PARALLEL_PORT_INFORMATION, _PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION structure pointer [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION"
+req.typenames : PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION
 ---
 
 # _PARALLEL_PORT_INFORMATION structure
@@ -93,30 +93,27 @@ For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | parallel.h (include Parallel.h) |
 
 ## See Also
 
-<a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a>
-
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
-
-<a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
-
-<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
-
-<a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
+<a href="..\parallel\nc-parallel-pparallel_try_allocate_routine.md">PPARALLEL_TRY_ALLOCATE_ROUTINE</a>
 
 <a href="..\parallel\ni-parallel-ioctl_internal_get_more_parallel_port_info.md">IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</a>
 
-<a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
 
-<a href="..\parallel\nc-parallel-pparallel_try_allocate_routine.md">PPARALLEL_TRY_ALLOCATE_ROUTINE</a>
+<a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_port_info.md">IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</a>
+
+<a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a>
+
+<a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
+
+<a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
+
+<a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
 
  
 

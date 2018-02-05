@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2b5aee65-ccf6-42c6-9bb3-dff93cb53cf0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.removepersistentlogin_out, _RemovePersistentLogin_OUT, *PRemovePersistentLogin_OUT, iscsiop/PRemovePersistentLogin_OUT, PRemovePersistentLogin_OUT structure pointer [Storage Devices], structs-iSCSI_59f0b686-33c3-47be-9bd7-89d14f3ffc7b.xml, RemovePersistentLogin_OUT, PRemovePersistentLogin_OUT, RemovePersistentLogin_OUT structure [Storage Devices], iscsiop/RemovePersistentLogin_OUT
+ms.keywords : RemovePersistentLogin_OUT, storage.removepersistentlogin_out, PRemovePersistentLogin_OUT structure pointer [Storage Devices], _RemovePersistentLogin_OUT, iscsiop/PRemovePersistentLogin_OUT, RemovePersistentLogin_OUT structure [Storage Devices], *PRemovePersistentLogin_OUT, PRemovePersistentLogin_OUT, iscsiop/RemovePersistentLogin_OUT, structs-iSCSI_59f0b686-33c3-47be-9bd7-89d14f3ffc7b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,18 +61,15 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
 <a href="..\iscsiop\ns-iscsiop-_removepersistentlogin_in.md">RemovePersistentLogin_IN</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563995">RemovePersistentLogin</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563995">RemovePersistentLogin</a>
 
  
 

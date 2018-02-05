@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 35d70d0b-c1b9-433f-941d-6cb61ddf0b62
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NetDmaRegisterProvider function [Network Drivers Starting with Windows Vista], netdma/NetDmaRegisterProvider, netvista.netdmaregisterprovider, netdma_ref_5267288c-9502-40f7-9af1-557babf3f840.xml, NetDmaRegisterProvider
+ms.keywords : NetDmaRegisterProvider, netvista.netdmaregisterprovider, netdma_ref_5267288c-9502-40f7-9af1-557babf3f840.xml, NetDmaRegisterProvider function [Network Drivers Starting with Windows Vista], netdma/NetDmaRegisterProvider
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
+req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 
@@ -73,8 +73,8 @@ A pointer to a value that is a handle that
 `ProviderCharacteristics`
 
 A pointer to a 
-     <mshelp:link keywords="netvista.net_dma_provider_characteristics" tabindex="0"><b>
-     NET_DMA_PROVIDER_CHARACTERISTICS</b></mshelp:link> structure that defines the characteristics of the DMA
+     <a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
+     NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that defines the characteristics of the DMA
      provider.
 
 
@@ -135,8 +135,8 @@ In the
     <b>NetDmaRegisterProvider</b> to register the associated DMA provider.
 
 The DMA provider driver supplies a 
-    <mshelp:link keywords="netvista.net_dma_provider_characteristics" tabindex="0"><b>
-    NET_DMA_PROVIDER_CHARACTERISTICS</b></mshelp:link> structure at the 
+    <a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
+    NET_DMA_PROVIDER_CHARACTERISTICS</a> structure at the 
     <i>ProviderCharacteristics</i> parameter of 
     <b>NetDmaRegisterProvider</b>. The NET_DMA_PROVIDER_CHARACTERISTICS structure specifies the
     characteristics for a NetDMA provider, including the entry points for the 
@@ -156,14 +156,14 @@ When
 
 If a computer supports MSI-X, the NetDMA interface, while in the context of the 
     <b>NetDmaRegisterProvider</b> function, calls the DMA provider driver's 
-    <mshelp:link keywords="netvista.providersetdmachannelcpuaffinity" tabindex="0"><b>
-    ProviderSetDmaChannelCpuAffinity</b></mshelp:link> function to specify the CPU affinity of the interrupt for each DMA
+    <a href="..\netdma\nc-netdma-dma_channels_cpu_affinity_handler.md">
+    ProviderSetDmaChannelCpuAffinity</a> function to specify the CPU affinity of the interrupt for each DMA
     channel.
 
 If a computer supports MSI-X, the DMA provider driver can specify interrupt affinities while handling
     the 
-    <mshelp:link keywords="kernel.irp_mn_filter_resource_requirements" tabindex="0"><b>
-    IRP_MN_FILTER_RESOURCE_REQUIREMENTS</b></mshelp:link> IRP. After the 
+    <a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
+    IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a> IRP. After the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine successfully returns, the Plug
     and Play (PnP) manager sends the IRP_MN_FILTER_RESOURCE_REQUIREMENTS IRP for the DMA provider. The DMA
     provider driver must attempt to allocate MSI-X interrupt resources according to affinity parameters that
@@ -171,37 +171,34 @@ If a computer supports MSI-X, the DMA provider driver can specify interrupt affi
     <i>ProviderSetDmaChannelCpuAffinity</i>.
 
 To deregister a DMA provider, a DMA provider driver calls the 
-    <mshelp:link keywords="netvista.netdmaderegisterprovider" tabindex="0"><b>
-    NetDmaDeregisterProvider</b></mshelp:link> function.
+    <a href="..\netdma\nf-netdma-netdmaderegisterprovider.md">
+    NetDmaDeregisterProvider</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 1.0 drivers in Windows Vista. Supported for NetDMA 1.0 drivers in Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | netdma.h (include Netdma.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.net_dma_provider_characteristics" tabindex="0"><b>
-   NET_DMA_PROVIDER_CHARACTERISTICS</b></mshelp:link>
-
-<a href="..\netdma\nf-netdma-netdmaderegisterprovider.md">NetDmaDeregisterProvider</a>
-
-<mshelp:link keywords="kernel.irp_mn_filter_resource_requirements" tabindex="0"><b>
-   IRP_MN_FILTER_RESOURCE_REQUIREMENTS</b></mshelp:link>
-
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+<a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
+   NET_DMA_PROVIDER_CHARACTERISTICS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 
-<mshelp:link keywords="netvista.providersetdmachannelcpuaffinity" tabindex="0"><b>
-   ProviderSetDmaChannelCpuAffinity</b></mshelp:link>
+<a href="..\netdma\nf-netdma-netdmaderegisterprovider.md">NetDmaDeregisterProvider</a>
+
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+
+<a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
+   IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a>
+
+<a href="..\netdma\nc-netdma-dma_channels_cpu_affinity_handler.md">
+   ProviderSetDmaChannelCpuAffinity</a>
 
  
 

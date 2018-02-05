@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 74b3894e-972f-430b-bb8f-20fa46bf8b7d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsRoot routine [Installable File System Drivers], RtlIsRoot, ntddk/RtlIsRoot, rtlref_d7c73e66-d8b8-4a18-a987-d61f13f48dc4.xml, ifsk.rtlisroot
+ms.keywords : RtlIsRoot routine [Installable File System Drivers], ifsk.rtlisroot, RtlIsRoot, rtlref_d7c73e66-d8b8-4a18-a987-d61f13f48dc4.xml, ntddk/RtlIsRoot
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -70,22 +70,18 @@ Callers of <b>RtlIsRoot</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | ntddk.h |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
 
 <a href="..\ntddk\nf-ntddk-rtlisrightchild.md">RtlIsRightChild</a>
 
 <a href="..\ntddk\nf-ntddk-rtlisleftchild.md">RtlIsLeftChild</a>
+
+<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
 
  
 

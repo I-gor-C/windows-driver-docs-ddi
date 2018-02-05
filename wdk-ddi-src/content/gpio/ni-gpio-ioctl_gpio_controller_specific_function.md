@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
+req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 # IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION IOCTL
@@ -85,9 +85,8 @@ The peripheral device driver sends this I/O control request to the file object f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpio.h |
-| **IRQL** |  |
 
 ## See Also
 

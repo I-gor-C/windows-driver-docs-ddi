@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 33087a37-e6fc-4b21-aa9e-e4617eeccd29
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExAllocatePoolWithTagPriority, kernel.exallocatepoolwithtagpriority, wdm/ExAllocatePoolWithTagPriority, ExAllocatePoolWithTagPriority routine [Kernel-Mode Driver Architecture], k102_cca6adc7-0f37-4565-858d-a191062f4fbd.xml
+ms.keywords : kernel.exallocatepoolwithtagpriority, k102_cca6adc7-0f37-4565-858d-a191062f4fbd.xml, wdm/ExAllocatePoolWithTagPriority, ExAllocatePoolWithTagPriority routine [Kernel-Mode Driver Architecture], ExAllocatePoolWithTagPriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -132,12 +132,11 @@ In a non-uniform memory access (NUMA) multiprocessor architecture, <b>ExAllocate
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | IrqlExAllocatePool, IrqlExFree2, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 
@@ -145,9 +144,9 @@ In a non-uniform memory access (NUMA) multiprocessor architecture, <b>ExAllocate
 
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
  
 

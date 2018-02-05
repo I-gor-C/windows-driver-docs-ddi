@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : f48bbf84-027f-4579-b83c-7dfb1cbe6b65
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.hidp_data, _HIDP_DATA, *PHIDP_DATA, PHIDP_DATA, hidpi/PHIDP_DATA, hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, hidpi/HIDP_DATA, HIDP_DATA structure [Human Input Devices], PHIDP_DATA structure pointer [Human Input Devices], HIDP_DATA
+ms.keywords : "_HIDP_DATA, *PHIDP_DATA, HIDP_DATA structure [Human Input Devices], PHIDP_DATA, PHIDP_DATA structure pointer [Human Input Devices], hidpi/HIDP_DATA, hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, hidpi/PHIDP_DATA, hid.hidp_data, HIDP_DATA"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HIDP_DATA, *PHIDP_DATA
+req.typenames : "*PHIDP_DATA, HIDP_DATA"
 ---
 
 # _HIDP_DATA structure
@@ -70,9 +70,6 @@ See <a href="https://msdn.microsoft.com/d26d169f-4116-4d81-94c7-63c92d22877d">Ex
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hidpi.h (include Hidpi.h) |
 
 ## See Also

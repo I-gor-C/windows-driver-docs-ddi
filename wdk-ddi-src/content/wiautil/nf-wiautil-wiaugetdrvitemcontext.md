@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 6d4b7a25-436f-4547-8969-66dd45fa46fd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauGetDrvItemContext, wiauGetDrvItemContext function [Imaging Devices], image.wiaugetdrvitemcontext, wiautil/wiauGetDrvItemContext, wiauFncs_3928edcb-8885-456a-a27d-62612fcb2d1a.xml
+ms.keywords : wiauFncs_3928edcb-8885-456a-a27d-62612fcb2d1a.xml, wiauGetDrvItemContext, wiauGetDrvItemContext function [Imaging Devices], wiautil/wiauGetDrvItemContext, image.wiaugetdrvitemcontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 11181574-b329-4182-8d17-93d44cb3b839
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortGetScatterGatherList routine [Storage Devices], irb/AtaPortGetScatterGatherList, atartns_ef8ff0f5-2d1c-47e1-bf1a-2b554de3969d.xml, storage.ataportgetscattergatherlist, AtaPortGetScatterGatherList
+ms.keywords : AtaPortGetScatterGatherList routine [Storage Devices], AtaPortGetScatterGatherList, storage.ataportgetscattergatherlist, atartns_ef8ff0f5-2d1c-47e1-bf1a-2b554de3969d.xml, irb/AtaPortGetScatterGatherList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ The miniport driver must not modify the scatter/gather list.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : ae59daf6-da7b-4b04-bb5c-dfd353b937a0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_QueryBusTime, buses.usbd_querybustime, usbfunc_2911ce15-3106-4c66-95c8-52ff57318131.xml, USBD_QueryBusTime, USBD_QueryBusTime routine [Buses]
+ms.keywords : usbdlib/USBD_QueryBusTime, buses.usbd_querybustime, usbfunc_2911ce15-3106-4c66-95c8-52ff57318131.xml, USBD_QueryBusTime routine [Buses], USBD_QueryBusTime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -73,20 +73,16 @@ This routine does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Deprecated. Deprecated. |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Usbd.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
-
 <a href="..\usb\ns-usb-_urb_get_current_frame_number.md">URB_GET_CURRENT_FRAME_NUMBER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
 
  
 

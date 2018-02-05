@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8d14604f-c9e5-4a2d-bb51-ef1925b39118
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxLockEnumerator, RxLockEnumerator function [Installable File System Drivers], ifsk.rxlockenumerator, rxprocs/RxLockEnumerator, rxref_62372da9-aa80-447e-8e79-6bc1f1c5cf54.xml
+ms.keywords : ifsk.rxlockenumerator, RxLockEnumerator, rxref_62372da9-aa80-447e-8e79-6bc1f1c5cf54.xml, rxprocs/RxLockEnumerator, RxLockEnumerator function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,20 +91,16 @@ The <b>RxLockEnumerator</b> routine needs to allocate non-paged pool memory in o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h, Mrxfcb.h, Fcb.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/6cf4c6f6-a21f-4919-92b5-2403b650d8d0">The SRV_OPEN Structure</a>
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/the-fcb-structure">The FCB Structure</a>
+
+<a href="https://msdn.microsoft.com/6cf4c6f6-a21f-4919-92b5-2403b650d8d0">The SRV_OPEN Structure</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 94cc33bf-cd44-4892-a4e1-991eb6339cc3
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetStoredEventInformation method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetStoredEventInformation method, GetStoredEventInformation, IDebugControl4, GetStoredEventInformation method [Windows Debugging], IDebugControl4::GetStoredEventInformation, IDebugControl_2d615fc9-52f1-4169-9265-430a1ce0f940.xml, dbgeng/IDebugControl4::GetStoredEventInformation, debugger.getstoredeventinformation
+ms.keywords : debugger.getstoredeventinformation, IDebugControl4::GetStoredEventInformation, GetStoredEventInformation method [Windows Debugging], dbgeng/IDebugControl4::GetStoredEventInformation, IDebugControl4 interface [Windows Debugging], GetStoredEventInformation method, GetStoredEventInformation, IDebugControl_2d615fc9-52f1-4169-9265-430a1ce0f940.xml, GetStoredEventInformation method [Windows Debugging], IDebugControl4 interface, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -129,20 +129,15 @@ For more information, see the topic <a href="https://msdn.microsoft.com/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Ntddk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546982">GetLastEventInformation</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546982">GetLastEventInformation</a>
 
  
 

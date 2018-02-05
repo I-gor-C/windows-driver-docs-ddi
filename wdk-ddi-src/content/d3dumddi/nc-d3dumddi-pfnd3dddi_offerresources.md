@@ -109,24 +109,19 @@ If the driver uses the <a href="https://msdn.microsoft.com/f22e19ba-9ff3-4aa1-a3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_present.md">Present</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">D3DDDIARG_OFFERRESOURCES</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reclaimresources.md">ReclaimResources</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reclaimresources.md">ReclaimResources</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">D3DDDIARG_OFFERRESOURCES</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_flush.md">Flush</a>
 

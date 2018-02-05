@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C2AE51AE-EEB6-49BB-A6E4-BBCE6A25C905
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : udecxurb/UdecxUrbRetrieveBuffer, buses.udecxurbretrievebuffer, UdecxUrbRetrieveBuffer, UdecxUrbRetrieveBuffer function [Buses]
+ms.keywords : UdecxUrbRetrieveBuffer, buses.udecxurbretrievebuffer, UdecxUrbRetrieveBuffer function [Buses], udecxurb/UdecxUrbRetrieveBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
+req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
 req.product : Windows 10 or later.
 ---
 
@@ -104,22 +104,20 @@ The transfer buffer MDL was not valid.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxurb.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
 <a href="..\udecxurb\nf-udecxurb-udecxurbsetbytescompleted.md">UdecxUrbSetBytesCompleted</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
  
 

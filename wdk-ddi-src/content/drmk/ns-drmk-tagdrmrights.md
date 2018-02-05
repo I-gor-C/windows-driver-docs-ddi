@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 890f996c-9216-4148-b198-538963101c2a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.drmrights, drmk/DRMRIGHTS, PDRMRIGHTS, DRMRIGHTS structure [Audio Devices], DRMRIGHTS, *PDRMRIGHTS, tagDRMRIGHTS, drmk/PDRMRIGHTS, PDRMRIGHTS structure pointer [Audio Devices], aud-prop_75bfd78f-d56f-4e12-ba99-c4b5904b4da2.xml
+ms.keywords : audio.drmrights, drmk/DRMRIGHTS, PDRMRIGHTS structure pointer [Audio Devices], PDRMRIGHTS, DRMRIGHTS structure [Audio Devices], drmk/PDRMRIGHTS, tagDRMRIGHTS, *PDRMRIGHTS, DRMRIGHTS, aud-prop_75bfd78f-d56f-4e12-ba99-c4b5904b4da2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRMRIGHTS, *PDRMRIGHTS
+req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 # tagDRMRIGHTS structure
@@ -64,6 +64,11 @@ Specifies one of the following copy-protection values:
 For more information about <b>CopyProtect</b>, see the Remarks section.
 
 
+#### FALSE
+
+Disables copy protection. Content can be copied without restrictions.
+
+
 #### TRUE
 
 Enables copy protection. An audio application must not do the following:
@@ -80,10 +85,6 @@ Pass the content by reference or by value to any other component within the host
 </li>
 </ul>
 
-#### FALSE
-
-Disables copy protection. Content can be copied without restrictions.
-
 `DigitalOutputDisable`
 
 Specifies one of the following digital output protection values:
@@ -93,14 +94,14 @@ Specifies one of the following digital output protection values:
 For more information about <b>DigitalOutputDisable</b>, see the Remarks section.
 
 
-#### TRUE
-
-Disable digital outputs. A software component must not transfer the content out of the host system through any type of digital interface. Note that digital output protection does not affect USB devices because the host system includes USB devices.
-
-
 #### FALSE
 
 Enables digital outputs. Content can be transferred from the host system to an external component without restrictions.
+
+
+#### TRUE
+
+Disable digital outputs. A software component must not transfer the content out of the host system through any type of digital interface. Note that digital output protection does not affect USB devices because the host system includes USB devices.
 
 `Reserved`
 
@@ -230,22 +231,19 @@ This macro does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | drmk.h (include Drmk.h) |
 
 ## See Also
 
-<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
+<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
+
+<a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
 
 <a href="http://go.microsoft.com/fwlink/p/?linkid=158256">IEC 60958</a>
 
 <a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
 
-<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
-
-<a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
 
 <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
 

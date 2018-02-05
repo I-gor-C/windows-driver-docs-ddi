@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : adab4c0f-b879-409c-97a3-f161a50514f5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_presentflags, D3DDDI_PRESENTFLAGS, _D3DDDI_PRESENTFLAGS, D3D_other_Structs_4650db5e-637b-4032-a5d2-ded887a883dc.xml, d3dumddi/D3DDDI_PRESENTFLAGS, D3DDDI_PRESENTFLAGS structure [Display Devices]
+ms.keywords : "_D3DDDI_PRESENTFLAGS, D3D_other_Structs_4650db5e-637b-4032-a5d2-ded887a883dc.xml, D3DDDI_PRESENTFLAGS structure [Display Devices], display.d3dddi_presentflags, d3dumddi/D3DDDI_PRESENTFLAGS, D3DDDI_PRESENTFLAGS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,9 +63,7 @@ typedef struct _D3DDDI_PRESENTFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

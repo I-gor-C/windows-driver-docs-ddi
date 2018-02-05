@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f57fe6ac-87ad-4db8-a715-816885b87d68
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfMemoryAssignBuffer method, WdfMemoryAssignBuffer, wdf.wdfmemoryassignbuffer, DFMemoryObjectRef_c2bf3437-5c1e-44d6-97ab-6ede16f7bc53.xml, kmdf.wdfmemoryassignbuffer, PFN_WDFMEMORYASSIGNBUFFER, wdfmemory/WdfMemoryAssignBuffer
+ms.keywords : kmdf.wdfmemoryassignbuffer, WdfMemoryAssignBuffer method, wdf.wdfmemoryassignbuffer, DFMemoryObjectRef_c2bf3437-5c1e-44d6-97ab-6ede16f7bc53.xml, WdfMemoryAssignBuffer, PFN_WDFMEMORYASSIGNBUFFER, wdfmemory/WdfMemoryAssignBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,12 +106,11 @@ For more information about framework memory objects, see <a href="https://docs.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfmemory.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | Any level |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA |
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 696d0870-966e-44ac-859e-d530dd6c76b8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisIfDeregisterInterface function [Network Drivers Starting with Windows Vista], net_if_functions_ref_dc1bdf3d-3cca-4d4a-b0f9-4bdef32bcdb0.xml, netvista.ndisifderegisterinterface, NdisIfDeregisterInterface, ndis/NdisIfDeregisterInterface
+ms.keywords : ndis/NdisIfDeregisterInterface, NdisIfDeregisterInterface function [Network Drivers Starting with Windows Vista], NdisIfDeregisterInterface, net_if_functions_ref_dc1bdf3d-3cca-4d4a-b0f9-4bdef32bcdb0.xml, netvista.ndisifderegisterinterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -43,8 +43,8 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 The 
   <b>NdisIfDeregisterInterface</b> function deregisters an NDIS network interface that was previously
   registered by a call to the 
-  <mshelp:link keywords="netvista.ndisifregisterinterface" tabindex="0"><b>
-  NdisIfRegisterInterface</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">
+  NdisIfRegisterInterface</a> function.
 
 ## Syntax
 
@@ -84,12 +84,10 @@ An interface provider calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Interfaces_Function |
 

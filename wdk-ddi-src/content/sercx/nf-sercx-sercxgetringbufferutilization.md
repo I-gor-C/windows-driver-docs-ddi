@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 8D4B8682-5713-47D6-A18E-F2EE44614DFB
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCxGetRingBufferUtilization method [Serial Ports], 1/SerCxGetRingBufferUtilization, serports.sercxgetringbufferutilization, SerCxGetRingBufferUtilization
+ms.keywords : 1/SerCxGetRingBufferUtilization, SerCxGetRingBufferUtilization, serports.sercxgetringbufferutilization, SerCxGetRingBufferUtilization method [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,11 @@ SerCx evaluates the available space in the type-ahead ring buffer in the context
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

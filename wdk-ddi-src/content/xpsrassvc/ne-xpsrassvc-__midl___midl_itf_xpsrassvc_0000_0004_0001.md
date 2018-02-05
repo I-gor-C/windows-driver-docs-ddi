@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0B4C1BAC-173E-42E9-8805-028FE165D49D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : xpsrassvc/XPSRAS_BACKGROUND_COLOR_OPAQUE, xpsrassvc/XPSRAS_BACKGROUND_COLOR_TRANSPARENT, XPSRAS_BACKGROUND_COLOR_TRANSPARENT, XPSRAS_BACKGROUND_COLOR, xpsrassvc/XPSRAS_BACKGROUND_COLOR, print.xpsras_background_color, __MIDL___MIDL_itf_xpsrassvc_0000_0004_0001, XPSRAS_BACKGROUND_COLOR_OPAQUE, XPSRAS_BACKGROUND_COLOR enumeration [Print Devices]
+ms.keywords : XPSRAS_BACKGROUND_COLOR enumeration [Print Devices], xpsrassvc/XPSRAS_BACKGROUND_COLOR, __MIDL___MIDL_itf_xpsrassvc_0000_0004_0001, XPSRAS_BACKGROUND_COLOR_OPAQUE, xpsrassvc/XPSRAS_BACKGROUND_COLOR_OPAQUE, xpsrassvc/XPSRAS_BACKGROUND_COLOR_TRANSPARENT, print.xpsras_background_color, XPSRAS_BACKGROUND_COLOR, XPSRAS_BACKGROUND_COLOR_TRANSPARENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,9 +69,7 @@ typedef enum _XPSRAS_BACKGROUND_COLOR {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | xpsrassvc.h (include Xpsrassvc.h) |
 
 ## See Also

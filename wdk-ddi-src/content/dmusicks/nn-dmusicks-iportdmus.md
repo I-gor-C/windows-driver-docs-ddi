@@ -60,8 +60,5 @@ An adapter driver forms a miniport/port driver pair by binding an <b>IMiniportDM
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dmusicks.h |
-| **DLL** |  |

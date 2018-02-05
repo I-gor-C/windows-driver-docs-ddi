@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 535D7611-8C86-44CF-964C-731882A3AF69
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetCurrentSilo, kernel.psgetcurrentsilo, ntddk/PsGetCurrentSilo, PsGetCurrentSilo routine [Kernel-Mode Driver Architecture]
+ms.keywords : PsGetCurrentSilo routine [Kernel-Mode Driver Architecture], kernel.psgetcurrentsilo, PsGetCurrentSilo, ntddk/PsGetCurrentSilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,11 +60,8 @@ A pointer to the <b>ESILO</b> object.  This pointer is valid for the current thr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_IRQL_requires_max_(DISPATCH_LEVEL)" |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 69720940-4D3E-43E6-B587-427ED2049FCC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxusbdevice/_USBDEVICE_ABORTIO, buses._usbdevice_abortio, USBDEVICE_ABORTIO, _USBDEVICE_ABORTIO, P_USBDEVICE_ABORTIO structure pointer [Buses], ucxusbdevice/P_USBDEVICE_ABORTIO, P_USBDEVICE_ABORTIO, *PUSBDEVICE_ABORTIO, USBDEVICE_ABORTIO structure [Buses]
+ms.keywords : USBDEVICE_ABORTIO, USBDEVICE_ABORTIO structure [Buses], P_USBDEVICE_ABORTIO structure pointer [Buses], _USBDEVICE_ABORTIO, ucxusbdevice/_USBDEVICE_ABORTIO, ucxusbdevice/P_USBDEVICE_ABORTIO, *PUSBDEVICE_ABORTIO, buses._usbdevice_abortio, P_USBDEVICE_ABORTIO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBDEVICE_ABORTIO, *PUSBDEVICE_ABORTIO
+req.typenames : "*PUSBDEVICE_ABORTIO, USBDEVICE_ABORTIO"
 req.product : Windows 10 or later.
 ---
 
@@ -64,18 +64,15 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also
 
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_startio.md">USBDEVICE_STARTIO</a>
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_purgeio.md">USBDEVICE_PURGEIO</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_purgeio.md">USBDEVICE_PURGEIO</a>
 
  
 

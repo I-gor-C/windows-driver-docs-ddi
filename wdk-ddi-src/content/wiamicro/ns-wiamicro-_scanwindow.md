@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : c4b507ac-af32-4949-add0-e19c00e328fe
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamicro/SCANWINDOW, *PSCANWINDOW, PSCANWINDOW, MicroDrv_b89f7f9d-a1e6-4a61-83e3-659c6f3a9d13.xml, _SCANWINDOW, SCANWINDOW, PSCANWINDOW structure pointer [Imaging Devices], SCANWINDOW structure [Imaging Devices], wiamicro/PSCANWINDOW, image.scanwindow
+ms.keywords : SCANWINDOW structure [Imaging Devices], image.scanwindow, SCANWINDOW, *PSCANWINDOW, PSCANWINDOW, PSCANWINDOW structure pointer [Imaging Devices], _SCANWINDOW, MicroDrv_b89f7f9d-a1e6-4a61-83e3-659c6f3a9d13.xml, wiamicro/SCANWINDOW, wiamicro/PSCANWINDOW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -75,7 +75,5 @@ Specifies the vertical position of the top edge of the scan window in pixels.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamicro.h (include Wiamicro.h) |

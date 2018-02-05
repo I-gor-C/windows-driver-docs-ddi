@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : c3b5622d-9d51-4008-abb0-c8a60c4a6b16
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaErrorHandler interface [Imaging Devices], GetStatusDescription method, wia_lh/IWiaErrorHandler::GetStatusDescription, IWiaErrorHandler_4bd0cba6-d729-4942-b56a-588af88ef913.xml, GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface, IWiaErrorHandler::GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler, image.iwiaerrorhandler_getstatusdescription
+ms.keywords : IWiaErrorHandler, wia_lh/IWiaErrorHandler::GetStatusDescription, image.iwiaerrorhandler_getstatusdescription, IWiaErrorHandler::GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface, IWiaErrorHandler_4bd0cba6-d729-4942-b56a-588af88ef913.xml, GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface [Imaging Devices], GetStatusDescription method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -114,14 +114,10 @@ The implementation of <b>IWiaErrorHandler::GetStatusDescription</b> should retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wia_lh.h (include Wia.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wia_lh.h |
 
 ## See Also
 

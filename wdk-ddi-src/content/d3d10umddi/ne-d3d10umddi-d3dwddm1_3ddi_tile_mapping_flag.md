@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1149547D-9165-42AA-B12A-5C7681A8EAC1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dwddm1_3ddi_tile_mapping_flag, D3DWDDM1_3DDI_TILE_MAPPING_FLAG, D3DWDDM1_3DDI_TILE_MAPPING_NO_OVERWRITE, d3d10umddi/D3DWDDM1_3DDI_TILE_MAPPING_NO_OVERWRITE, d3d10umddi/D3DWDDM1_3DDI_TILE_MAPPING_FLAG, D3DWDDM1_3DDI_TILE_MAPPING_FLAG enumeration [Display Devices]
+ms.keywords : D3DWDDM1_3DDI_TILE_MAPPING_FLAG, D3DWDDM1_3DDI_TILE_MAPPING_FLAG enumeration [Display Devices], D3DWDDM1_3DDI_TILE_MAPPING_NO_OVERWRITE, display.d3dwddm1_3ddi_tile_mapping_flag, d3d10umddi/D3DWDDM1_3DDI_TILE_MAPPING_NO_OVERWRITE, d3d10umddi/D3DWDDM1_3DDI_TILE_MAPPING_FLAG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -65,7 +65,5 @@ This allows the device to avoid having to flush previously submitted work in ord
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5c4e44cd-94a3-4265-b195-7a5711d8035d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_605cddb8-470b-4d71-8a6e-295e060ea3e3.xml, PFN_WDFDEVICEGETSYSTEMPOWERACTION, kmdf.wdfdevicegetsystempoweraction, WdfDeviceGetSystemPowerAction, wdfdevice/WdfDeviceGetSystemPowerAction, WdfDeviceGetSystemPowerAction method, wdf.wdfdevicegetsystempoweraction
+ms.keywords : wdfdevice/WdfDeviceGetSystemPowerAction, WdfDeviceGetSystemPowerAction, kmdf.wdfdevicegetsystempoweraction, PFN_WDFDEVICEGETSYSTEMPOWERACTION, wdf.wdfdevicegetsystempoweraction, WdfDeviceGetSystemPowerAction method, DFDeviceObjectGeneralRef_605cddb8-470b-4d71-8a6e-295e060ea3e3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,11 +99,10 @@ If the computer and the device are both in their working states when the driver 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

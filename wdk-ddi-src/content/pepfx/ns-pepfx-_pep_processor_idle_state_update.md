@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A05617FB-5105-4FCA-807F-C49F32BD1399
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PROCESSOR_IDLE_STATE_UPDATE structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PPEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PEP_PROCESSOR_IDLE_STATE_UPDATE, kernel.pep_processor_idle_state_update, PPEP_PROCESSOR_IDLE_STATE_UPDATE structure pointer [Kernel-Mode Driver Architecture], PEP_PROCESSOR_IDLE_STATE_UPDATE, _PEP_PROCESSOR_IDLE_STATE_UPDATE
+ms.keywords : kernel.pep_processor_idle_state_update, PEP_PROCESSOR_IDLE_STATE_UPDATE structure [Kernel-Mode Driver Architecture], _PEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PPEP_PROCESSOR_IDLE_STATE_UPDATE, PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE, PPEP_PROCESSOR_IDLE_STATE_UPDATE structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE
+req.typenames : "*PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE"
 ---
 
 # _PEP_PROCESSOR_IDLE_STATE_UPDATE structure
@@ -71,9 +71,7 @@ The <i>Update</i> parameter to the <a href="..\pepfx\nc-pepfx-pofxcallbackupdate
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

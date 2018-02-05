@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d5a66102-782a-482e-8119-48015820d0c7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PFND3DKMT_OPENRESOURCEFROMNTHANDLE, display.d3dkmtopenresourcefromnthandle, D3DKMTOpenResourceFromNtHandle, d3dkmthk/D3DKMTOpenResourceFromNtHandle, D3DKMTOpenResourceFromNtHandle function [Display Devices]
+ms.keywords : D3DKMTOpenResourceFromNtHandle function [Display Devices], display.d3dkmtopenresourcefromnthandle, PFND3DKMT_OPENRESOURCEFROMNTHANDLE, d3dkmthk/D3DKMTOpenResourceFromNtHandle, D3DKMTOpenResourceFromNtHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,22 +96,19 @@ The NT handle to the process, which is used as the <b>hNtHandle</b> member of th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtshareobjects.md">D3DKMTShareObjects</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_openresourcefromnthandle.md">D3DKMT_OPENRESOURCEFROMNTHANDLE</a>
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopennthandlefromname.md">D3DKMTOpenNtHandleFromName</a>
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_openresourcefromnthandle.md">D3DKMT_OPENRESOURCEFROMNTHANDLE</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtshareobjects.md">D3DKMTShareObjects</a>
 
  
 

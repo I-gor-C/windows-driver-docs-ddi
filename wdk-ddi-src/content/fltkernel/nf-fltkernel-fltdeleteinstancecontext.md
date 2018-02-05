@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 910b62d7-2ef3-4eb2-97c3-9b920fdb0558
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_2ccc7fef-0bff-4df4-b617-fb4749bb3ed6.xml, FltDeleteInstanceContext function [Installable File System Drivers], fltkernel/FltDeleteInstanceContext, FltDeleteInstanceContext, ifsk.fltdeleteinstancecontext
+ms.keywords : FltDeleteInstanceContext, fltkernel/FltDeleteInstanceContext, FltApiRef_a_to_d_2ccc7fef-0bff-4df4-b617-fb4749bb3ed6.xml, FltDeleteInstanceContext function [Installable File System Drivers], ifsk.fltdeleteinstancecontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,24 +109,20 @@ To set an instance context, call <a href="..\fltkernel\nf-fltkernel-fltsetinstan
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltsetinstancecontext.md">FltSetInstanceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinstancecontext.md">FltSetInstanceContext</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 

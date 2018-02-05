@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : C01071FD-7D1D-4D6F-AFDD-355FFDA699EA
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : AddPrintDeviceObject, AddPrintDeviceObject function [Print Devices], print.addprintdeviceobject, winsplp/AddPrintDeviceObject
+ms.keywords : print.addprintdeviceobject, winsplp/AddPrintDeviceObject, AddPrintDeviceObject, AddPrintDeviceObject function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,14 +98,10 @@ The print provider should call this function for each previously-installed Print
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winspool.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | WinSpool.lib |
+| **DLL** | WinSpool.drv |
 
 ## See Also
 

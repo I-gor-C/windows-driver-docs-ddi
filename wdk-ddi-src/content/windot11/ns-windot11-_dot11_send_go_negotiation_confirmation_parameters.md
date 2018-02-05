@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : CBEDFDCA-A43D-47E3-AE3F-2C25E50D7A70
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, windot11/DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, windot11/PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, *PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_send_go_negotiation_confirmation_parameters, PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
+ms.keywords : "_DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, windot11/DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, *PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, netvista.dot11_send_go_negotiation_confirmation_parameters, windot11/PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_CONFIRMATION_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -128,9 +128,7 @@ The maximum time, in milliseconds, allowed to send the GO negotiation response. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

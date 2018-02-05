@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : CE450017-1792-4B69-8289-902396D0D7B1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksgeneratethermalevent, KsGenerateThermalEvent, KsGenerateThermalEvent function [Streaming Media Devices], ks/KsGenerateThermalEvent
+ms.keywords : ks/KsGenerateThermalEvent, KsGenerateThermalEvent, stream.ksgeneratethermalevent, KsGenerateThermalEvent function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,11 +72,6 @@ Returns STATUS_SUCCESS for success and STATUS_INVALID_DEVICE_REQUEST if the para
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

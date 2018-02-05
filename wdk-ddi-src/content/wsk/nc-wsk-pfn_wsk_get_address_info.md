@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -73,8 +73,8 @@ NTSTATUS PfnWskGetAddressInfo(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <mshelp:link keywords="netvista.wskcaptureprovidernpi" tabindex="0"><b>
-     WskCaptureProviderNPI</b></mshelp:link> function.
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
+     WskCaptureProviderNPI</a> function.
 
 `NodeName`
 
@@ -97,7 +97,7 @@ NTSTATUS PfnWskGetAddressInfo(
 
 `*Provider`
 
-
+[in] An optional pointer to a GUID of a specific namespace provider to be queried.
 
 `Hints`
 
@@ -115,7 +115,18 @@ The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">AD
 
 `*Result`
 
-
+[out] A pointer to a caller-allocated buffer that receives a linked list of one or more
+     <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structures that represent response information about the host.
+     
+<div class="alert"><b>Note</b>  The caller must call the 
+     <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a> function to free
+     this pointer.</div><div> </div>The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
+     Ws2def.h header. It is identical to the 
+     <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
+<div class="alert"><b>Important</b>  The 
+     Ws2def.h header file is automatically included in 
+     Wsk.h. Do not use 
+     Ws2def.h directly.</div><div> </div>
 
 `OwningProcess`
 
@@ -229,14 +240,10 @@ The process to which the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -244,9 +251,9 @@ The process to which the
 
 <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

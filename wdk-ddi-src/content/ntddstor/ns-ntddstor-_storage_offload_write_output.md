@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 95EF1722-5171-4A09-8676-7910E53E3868
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSTORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT structure [Storage Devices], storage.storage_offload_write_output, STORAGE_OFFLOAD_TOKEN_INVALID, ntddstor/STORAGE_OFFLOAD_WRITE_OUTPUT, PSTORAGE_OFFLOAD_WRITE_OUTPUT structure pointer [Storage Devices], PSTORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_RANGE_TRUNCATED, ntddstor/PSTORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT, _STORAGE_OFFLOAD_WRITE_OUTPUT"
+ms.keywords : STORAGE_OFFLOAD_TOKEN_INVALID, ntddstor/PSTORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_RANGE_TRUNCATED, storage.storage_offload_write_output, ntddstor/STORAGE_OFFLOAD_WRITE_OUTPUT, _STORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT structure [Storage Devices], PSTORAGE_OFFLOAD_WRITE_OUTPUT structure pointer [Storage Devices], *PSTORAGE_OFFLOAD_WRITE_OUTPUT, PSTORAGE_OFFLOAD_WRITE_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,9 +99,7 @@ The <b>STORAGE_OFFLOAD_WRITE_OUTPUT</b> structure is returned at the beginning o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

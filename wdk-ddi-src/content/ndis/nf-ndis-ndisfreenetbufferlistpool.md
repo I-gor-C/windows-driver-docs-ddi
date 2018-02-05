@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 811df5ea-f5e6-4986-adc0-c5fa95e5f072
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFreeNetBufferListPool, NdisFreeNetBufferListPool, NdisFreeNetBufferListPool function [Network Drivers Starting with Windows Vista], netvista.ndisfreenetbufferlistpool, ndis_netbuf_functions_ref_c2efb4b4-41de-4493-92a2-42e3fa78628b.xml
+ms.keywords : ndis_netbuf_functions_ref_c2efb4b4-41de-4493-92a2-42e3fa78628b.xml, NdisFreeNetBufferListPool, netvista.ndisfreenetbufferlistpool, ndis/NdisFreeNetBufferListPool, NdisFreeNetBufferListPool function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,8 +57,8 @@ VOID NdisFreeNetBufferListPool(
 `PoolHandle`
 
 A handle that was obtained from a call to the 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-     NdisAllocateNetBufferListPool</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+     NdisAllocateNetBufferListPool</a> function.
 
 
 ## Return Value
@@ -75,19 +75,18 @@ Before freeing a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
+| **DLL** | Ndis.sys |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-   NdisAllocateNetBufferListPool</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+   NdisAllocateNetBufferListPool</a>
 
 <a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a>
 

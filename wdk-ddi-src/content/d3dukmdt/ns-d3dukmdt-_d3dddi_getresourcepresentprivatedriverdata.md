@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4473E808-D22E-47C4-8619-7427C8BA682E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA structure [Display Devices], _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, display.d3dddi_getresourcepresentprivatedriverdata, d3dukmdt/D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA
+ms.keywords : display.d3dddi_getresourcepresentprivatedriverdata, _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA structure [Display Devices], D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, d3dukmdt/D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,7 @@ typedef struct _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also

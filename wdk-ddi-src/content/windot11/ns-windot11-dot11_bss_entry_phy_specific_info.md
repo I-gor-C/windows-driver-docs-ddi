@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 85bcd355-633b-4d3f-a387-1e3b2ac3a013
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union pointer [Network Drivers Starting with Windows Vista], PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, windot11/PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, windot11/DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, netvista.dot11_bss_entry_phy_specific_info, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union [Network Drivers Starting with Windows Vista], Native_802.11_data_types_bd52a4e6-211b-4bb7-9398-22545a3a70c3.xml, *PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
+ms.keywords : Native_802.11_data_types_bd52a4e6-211b-4bb7-9398-22545a3a70c3.xml, *PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, netvista.dot11_bss_entry_phy_specific_info, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union pointer [Network Drivers Starting with Windows Vista], DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union [Network Drivers Starting with Windows Vista], windot11/PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, windot11/DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,7 @@ The DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union is a member of the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Wlclient.h) |
 
 ## See Also

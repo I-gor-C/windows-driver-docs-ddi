@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2C82743C-2675-4196-839D-885EE17B2A7A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbioctl/PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, *PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, _USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION structure [Buses], usbioctl/USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION structure pointer [Buses], USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, buses.usb_start_tracking_for_time_sync_information
+ms.keywords : PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION structure [Buses], PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION structure pointer [Buses], USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, _USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, buses.usb_start_tracking_for_time_sync_information, usbioctl/USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, usbioctl/PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, *PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION"
+req.typenames : USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, *PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,6 @@ Registration handle for time sync tracking retrieved through the <a href="..\usb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h |
 
 ## See Also

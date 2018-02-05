@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c652268f-4a31-4ec1-a668-8700cb7f4e1b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo, storage.iscsi_sessionstaticinfo, structs-iSCSI_94ec0954-b409-4acf-8935-7c8dc6b0d095.xml, iscsimgt/ISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo structure pointer [Storage Devices], ISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo, iscsimgt/PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo structure [Storage Devices]"
+ms.keywords : iscsimgt/ISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo, structs-iSCSI_94ec0954-b409-4acf-8935-7c8dc6b0d095.xml, _ISCSI_SessionStaticInfo, storage.iscsi_sessionstaticinfo, ISCSI_SessionStaticInfo structure [Storage Devices], *PISCSI_SessionStaticInfo, iscsimgt/PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo
+req.typenames : "*PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo"
 ---
 
 # _ISCSI_SessionStaticInfo structure
@@ -187,20 +187,17 @@ A 64-bit integer that uniquely identifies the session. The <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 
-<a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a>
-
 <a href="..\iscsiop\ne-iscsiop-ploginsessiontype.md">LOGINSESSIONTYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
  
 

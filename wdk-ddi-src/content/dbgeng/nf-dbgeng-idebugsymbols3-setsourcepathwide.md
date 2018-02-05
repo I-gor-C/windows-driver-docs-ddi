@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1fdb4e2c-ece7-407e-840c-fbd6dfe46d78
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetSourcePathWide, debugger.setsourcepathwide, SetSourcePathWide method [Windows Debugging], IDebugSymbols3, dbgeng/IDebugSymbols3::SetSourcePathWide, IDebugSymbols3::SetSourcePathWide, IDebugSymbols3 interface [Windows Debugging], SetSourcePathWide method, SetSourcePathWide method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : SetSourcePathWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSourcePathWide, SetSourcePathWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], SetSourcePathWide method, debugger.setsourcepathwide, IDebugSymbols3::SetSourcePathWide, SetSourcePathWide, IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,22 +87,17 @@ For more information about manipulating the source path, see <a href="https://ms
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548358">GetSourcePath</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
 
  
 

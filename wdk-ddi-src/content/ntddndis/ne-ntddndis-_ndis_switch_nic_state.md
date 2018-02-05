@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 06FFECB3-0883-41CA-9BD3-A6A1D95D5F8C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisSwitchNicStateConnected, NDIS_SWITCH_NIC_STATE enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisSwitchNicStateDisconnected, NdisSwitchNicStateDeleted, netvista.ndis_switch_nic_state, ntddndis/NdisSwitchNicStateCreated, ntddndis/NdisSwitchNicStateUnknown, NDIS_SWITCH_NIC_STATE, NdisSwitchNicStateCreated, ntddndis/NDIS_SWITCH_NIC_STATE, NdisSwitchNicStateDisconnected, NdisSwitchNicStateUnknown, ntddndis/NdisSwitchNicStateDeleted, _NDIS_SWITCH_NIC_STATE, ntddndis/NdisSwitchNicStateConnected
+ms.keywords : NdisSwitchNicStateDisconnected, ntddndis/NdisSwitchNicStateDisconnected, ntddndis/NDIS_SWITCH_NIC_STATE, NDIS_SWITCH_NIC_STATE, NdisSwitchNicStateConnected, ntddndis/NdisSwitchNicStateUnknown, NdisSwitchNicStateCreated, ntddndis/NdisSwitchNicStateCreated, _NDIS_SWITCH_NIC_STATE, ntddndis/NdisSwitchNicStateConnected, NdisSwitchNicStateUnknown, ntddndis/NdisSwitchNicStateDeleted, netvista.ndis_switch_nic_state, NDIS_SWITCH_NIC_STATE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchNicStateDeleted
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,9 +92,7 @@ For more information about extensible switch port states, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

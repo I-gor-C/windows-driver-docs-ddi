@@ -132,6 +132,5 @@ If the vendor-supplied driver passes back the entire payload, it should fill in 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |
-| **IRQL** |  |

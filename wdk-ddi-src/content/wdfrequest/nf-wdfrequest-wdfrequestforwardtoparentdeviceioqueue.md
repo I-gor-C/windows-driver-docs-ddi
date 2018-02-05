@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 81511d81-206c-420b-a956-42cf68b57fc4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfrequestforwardtoparentdeviceioqueue, WdfRequestForwardToParentDeviceIoQueue method, DFRequestObjectRef_0bfa4a8a-7b79-4256-84df-5bdabfff234b.xml, PFN_WDFREQUESTFORWARDTOPARENTDEVICEIOQUEUE, wdfrequest/WdfRequestForwardToParentDeviceIoQueue, wdf.wdfrequestforwardtoparentdeviceioqueue, WdfRequestForwardToParentDeviceIoQueue
+ms.keywords : WdfRequestForwardToParentDeviceIoQueue, DFRequestObjectRef_0bfa4a8a-7b79-4256-84df-5bdabfff234b.xml, wdfrequest/WdfRequestForwardToParentDeviceIoQueue, PFN_WDFREQUESTFORWARDTOPARENTDEVICEIOQUEUE, WdfRequestForwardToParentDeviceIoQueue method, wdf.wdfrequestforwardtoparentdeviceioqueue, kmdf.wdfrequestforwardtoparentdeviceioqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -170,12 +170,10 @@ For more information about <b>WdfRequestForwardToParentDeviceIoQueue</b>, see <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

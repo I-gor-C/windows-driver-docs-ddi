@@ -71,9 +71,7 @@ The HID class driver sets the <b>Status</b> member of <b>Irp-&gt;IoStatus</b> to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
-| **IRQL** |  |
 
 ## See Also
 

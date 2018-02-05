@@ -124,22 +124,19 @@ In its <i>EvtDeviceWdmIrpDispatch</i> callback function, a driver should not set
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.17 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurewdmirpdispatchcallback.md">WdfDeviceConfigureWdmIrpDispatchCallback</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirp.md">WdfDeviceWdmDispatchIrp</a>
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurewdmirpdispatchcallback.md">WdfDeviceConfigureWdmIrpDispatchCallback</a>
 
  
 

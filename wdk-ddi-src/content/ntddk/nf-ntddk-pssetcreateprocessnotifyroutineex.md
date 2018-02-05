@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e982200c-f30c-423e-bd85-03365850c996
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pssetcreateprocessnotifyroutineex, PsSetCreateProcessNotifyRoutineEx, PsSetCreateProcessNotifyRoutineEx routine [Kernel-Mode Driver Architecture], ntddk/PsSetCreateProcessNotifyRoutineEx, k108_b68156fb-55d5-4192-a4d0-d74603647f42.xml
+ms.keywords : k108_b68156fb-55d5-4192-a4d0-d74603647f42.xml, ntddk/PsSetCreateProcessNotifyRoutineEx, PsSetCreateProcessNotifyRoutineEx, PsSetCreateProcessNotifyRoutineEx routine [Kernel-Mode Driver Architecture], kernel.pssetcreateprocessnotifyroutineex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,22 +116,21 @@ The operating system calls the driver's process-notify routine at PASSIVE_LEVEL 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista with SP1 and Windows Server 2008. Available starting with Windows Vista with SP1 and Windows Server 2008. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
+<a href="..\ntddk\nc-ntddk-pcreate_process_notify_routine_ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a>
+
 <a href="..\ntddk\ns-ntddk-_ps_create_notify_info.md">PS_CREATE_NOTIFY_INFO</a>
 
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
-
-<a href="..\ntddk\nc-ntddk-pcreate_process_notify_routine_ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 548C850F-87AF-43E0-BD87-5531D9874D4D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : aux_klib/AuxKlibGetSystemFirmwareTable, AuxKlibGetSystemFirmwareTable routine [Kernel-Mode Driver Architecture], AuxKlibGetSystemFirmwareTable, kernel.auxklibgetsystemfirmwaretable
+ms.keywords : AuxKlibGetSystemFirmwareTable routine [Kernel-Mode Driver Architecture], AuxKlibGetSystemFirmwareTable, aux_klib/AuxKlibGetSystemFirmwareTable, kernel.auxklibgetsystemfirmwaretable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -186,20 +186,17 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows Vista. Supported starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | aux_klib.h (include Aux_klib.h) |
-| **Library** |  |
+| **Library** | Aux_Klib.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\aux_klib\nf-aux_klib-auxklibenumeratesystemfirmwaretables.md">AuxKlibEnumerateSystemFirmwareTables</a>
-
 <a href="https://msdn.microsoft.com/3bfe81ca-6d04-4da1-9579-6b0b48faa4a2">GetSystemFirmwareTable</a>
+
+<a href="..\aux_klib\nf-aux_klib-auxklibenumeratesystemfirmwaretables.md">AuxKlibEnumerateSystemFirmwareTables</a>
 
 <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
 

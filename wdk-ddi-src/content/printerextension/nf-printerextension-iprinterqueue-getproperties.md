@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 87EED8B5-676C-4056-812B-B0424148FCFA
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetProperties method [Print Devices], print.iprinterqueue_getproperties, IPrinterQueue::GetProperties, printerextension/IPrinterQueue::GetProperties, IPrinterQueue, GetProperties method [Print Devices], IPrinterQueue interface, GetProperties, IPrinterQueue interface [Print Devices], GetProperties method
+ms.keywords : IPrinterQueue::GetProperties, GetProperties, print.iprinterqueue_getproperties, IPrinterQueue, GetProperties method [Print Devices], printerextension/IPrinterQueue::GetProperties, GetProperties method [Print Devices], IPrinterQueue interface, IPrinterQueue interface [Print Devices], GetProperties method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,20 +66,16 @@ This method returns and <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
-
 <a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+
+<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
 
  
 

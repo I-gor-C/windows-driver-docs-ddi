@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 99eab339-d93c-4afa-95f2-899ceb2e7828
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_NONE, d3d12umddi/D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_CENC_AES_CTR_128, D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030, d3d12umddi/D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_NONE, d3d12umddi/D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030, D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030 enumeration [Display Devices], display.d3d12ddi-bitstream-encryption-type-0030, D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_CENC_AES_CTR_128
+ms.keywords : D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_NONE, D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030, D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_CENC_AES_CTR_128, d3d12umddi/D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030, display.d3d12ddi-bitstream-encryption-type-0030, d3d12umddi/D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_CENC_AES_CTR_128, d3d12umddi/D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030_NONE, D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030 enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum _D3D12DDI_BITSTREAM_ENCRYPTION_TYPE_0030 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h |

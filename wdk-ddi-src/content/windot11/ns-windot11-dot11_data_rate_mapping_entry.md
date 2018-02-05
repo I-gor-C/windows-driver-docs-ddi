@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d2772a9e-655a-4e3e-8b48-65d58b0a659d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PDOT11_DATA_RATE_MAPPING_ENTRY, windot11/PDOT11_DATA_RATE_MAPPING_ENTRY, windot11/DOT11_DATA_RATE_MAPPING_ENTRY, Native_802.11_data_types_465aabe5-c790-4e3d-ae63-3313dd487eb5.xml, netvista.dot11_data_rate_mapping_entry, PDOT11_DATA_RATE_MAPPING_ENTRY, DOT11_DATA_RATE_MAPPING_ENTRY, DOT11_DATA_RATE_MAPPING_ENTRY structure [Network Drivers Starting with Windows Vista], PDOT11_DATA_RATE_MAPPING_ENTRY structure pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : netvista.dot11_data_rate_mapping_entry, DOT11_DATA_RATE_MAPPING_ENTRY structure [Network Drivers Starting with Windows Vista], DOT11_DATA_RATE_MAPPING_ENTRY, PDOT11_DATA_RATE_MAPPING_ENTRY structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_DATA_RATE_MAPPING_ENTRY, PDOT11_DATA_RATE_MAPPING_ENTRY, Native_802.11_data_types_465aabe5-c790-4e3d-ae63-3313dd487eb5.xml, windot11/PDOT11_DATA_RATE_MAPPING_ENTRY, windot11/DOT11_DATA_RATE_MAPPING_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_DATA_RATE_MAPPING_ENTRY, DOT11_DATA_RATE_MAPPING_ENTRY"
+req.typenames : DOT11_DATA_RATE_MAPPING_ENTRY, *PDOT11_DATA_RATE_MAPPING_ENTRY
 req.product : Windows 10 or later.
 ---
 
@@ -393,17 +393,15 @@ The following table shows the IEEE 802.11 standard data rates, in units of megab
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-data-rate-mapping-table">
+   OID_DOT11_DATA_RATE_MAPPING_TABLE</a>
 
-<mshelp:link keywords="netvista.oid_dot11_data_rate_mapping_table" tabindex="0">
-   OID_DOT11_DATA_RATE_MAPPING_TABLE</mshelp:link>
+<a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
 
  
 

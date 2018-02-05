@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e5a80021-1d9d-42f4-9344-9dd8d9524d0b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, wdf.wdf_device_power_policy_idle_settings_init, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, kmdf.wdf_device_power_policy_idle_settings_init, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function, DFDeviceObjectGeneralRef_1aaae0d7-3b13-43f6-b7e4-7c105b2e41b2.xml
+ms.keywords : wdf.wdf_device_power_policy_idle_settings_init, kmdf.wdf_device_power_policy_idle_settings_init, DFDeviceObjectGeneralRef_1aaae0d7-3b13-43f6-b7e4-7c105b2e41b2.xml, wdfdevice/WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,14 +86,11 @@ Finally, if the <i>IdleCaps</i> parameter specifies <b>IdleUsbSelectiveSuspend</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

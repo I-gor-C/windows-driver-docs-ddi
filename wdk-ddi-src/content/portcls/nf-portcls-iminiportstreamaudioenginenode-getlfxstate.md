@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2810D8B3-DDB7-4B55-839B-B2D079BDC0FC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetLfxState method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode::GetLfxState, IMiniportStreamAudioEngineNode, GetLfxState method [Audio Devices], audio.iminiportstreamaudioenginenode_getlfxstate, portcls/IMiniportStreamAudioEngineNode::GetLfxState, IMiniportStreamAudioEngineNode interface [Audio Devices], GetLfxState method, GetLfxState
+ms.keywords : GetLfxState, IMiniportStreamAudioEngineNode interface [Audio Devices], GetLfxState method, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::GetLfxState, portcls/IMiniportStreamAudioEngineNode::GetLfxState, GetLfxState method [Audio Devices], IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_getlfxstate, GetLfxState method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -67,14 +67,10 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

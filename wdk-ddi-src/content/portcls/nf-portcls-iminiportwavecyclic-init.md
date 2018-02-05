@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2f0147d0-9c1d-4f3e-890f-941568220605
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportWavweCyclic::Init, audio.iminiportwavecyclic_init, IMiniportWavweCyclic::Init, Init method [Audio Devices], IMiniportWavweCyclic interface, IMiniportWaveCyclic::Init, IMiniportWaveCyclic, IMiniportWavweCyclic interface [Audio Devices], Init method, Init method [Audio Devices], Init, audmp-routines_d18e9242-160d-4f55-9204-2e425b1f1669.xml
+ms.keywords : IMiniportWavweCyclic::Init, IMiniportWavweCyclic interface [Audio Devices], Init method, Init method [Audio Devices], IMiniportWavweCyclic interface, IMiniportWaveCyclic, Init, IMiniportWaveCyclic::Init, audio.iminiportwavecyclic_init, Init method [Audio Devices], audmp-routines_d18e9242-160d-4f55-9204-2e425b1f1669.xml, portcls/IMiniportWavweCyclic::Init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -80,24 +80,20 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, and <i>Port</i> parameters follo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 
 <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWavweCyclic</a>
-
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-
-<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 
  
 

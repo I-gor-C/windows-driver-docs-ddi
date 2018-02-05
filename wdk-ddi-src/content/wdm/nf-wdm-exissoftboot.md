@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ff67bc75-b424-4278-b979-f67d118232aa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExIsSoftBoot, ExIsSoftBoot function [Kernel-Mode Driver Architecture], kernel.exissoftboot, wdm/ExIsSoftBoot
+ms.keywords : wdm/ExIsSoftBoot, ExIsSoftBoot, ExIsSoftBoot function [Kernel-Mode Driver Architecture], kernel.exissoftboot
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,11 +63,9 @@ TRUE indicates a soft restart; FALSE otherwise.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode) |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |

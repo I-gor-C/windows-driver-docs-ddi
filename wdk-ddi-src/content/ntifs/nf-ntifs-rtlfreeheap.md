@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5e8b6bd7-71e7-45ad-985c-fe197693ce05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlFreeHeap, RtlFreeHeap, ifsk.rtlfreeheap, rtlref_02e7cb93-ec45-41c9-8e58-72c221cece37.xml, RtlFreeHeap routine [Installable File System Drivers]
+ms.keywords : RtlFreeHeap, RtlFreeHeap routine [Installable File System Drivers], rtlref_02e7cb93-ec45-41c9-8e58-72c221cece37.xml, ntifs/RtlFreeHeap, ifsk.rtlfreeheap
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,22 +95,20 @@ TBD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows XP. Available starting in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
 
 <a href="..\ntifs\nf-ntifs-rtldestroyheap.md">RtlDestroyHeap</a>
 
-<a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cbde31fe-06c1-44af-8940-b66e8044a5cd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_COLLECTDBGINFO_EXT structure [Display Devices], DXGKARG_COLLECTDBGINFO_EXT, _DXGKARG_COLLECTDBGINFO_EXT, DmStructs_3c280734-d3c8-4970-a6d8-8ad2b3dce913.xml, d3dkmddi/DXGKARG_COLLECTDBGINFO_EXT, display.dxgkarg_collectdbginfo_ext
+ms.keywords : "_DXGKARG_COLLECTDBGINFO_EXT, d3dkmddi/DXGKARG_COLLECTDBGINFO_EXT, DmStructs_3c280734-d3c8-4970-a6d8-8ad2b3dce913.xml, DXGKARG_COLLECTDBGINFO_EXT, display.dxgkarg_collectdbginfo_ext, DXGKARG_COLLECTDBGINFO_EXT structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,9 +94,7 @@ Reserved for future use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

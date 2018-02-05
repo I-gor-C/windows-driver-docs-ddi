@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 301b4b63-0337-4f78-a4f8-6b2d2b168663
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_ade75e55-accb-4fe0-a1be-b5acd9e4c34b.xml, WDF_REQUEST_FORWARD_OPTIONS_INIT function, wdf.wdf_request_forward_options_init, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_INIT, WDF_REQUEST_FORWARD_OPTIONS_INIT, kmdf.wdf_request_forward_options_init
+ms.keywords : wdf.wdf_request_forward_options_init, WDF_REQUEST_FORWARD_OPTIONS_INIT, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_INIT, DFRequestObjectRef_ade75e55-accb-4fe0-a1be-b5acd9e4c34b.xml, WDF_REQUEST_FORWARD_OPTIONS_INIT function, kmdf.wdf_request_forward_options_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,10 @@ For a code example that uses <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b>, see <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

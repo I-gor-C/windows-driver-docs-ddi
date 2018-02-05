@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3d5dd27f-8d0e-46e8-adbd-139db322cf6e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : netdispumdddi/MIRACAST_WFD_CONNECTION_STATS, MIRACAST_WFD_CONNECTION_STATS structure [Display Devices], MIRACAST_WFD_CONNECTION_STATS, display.miracast_wfd_connection_stats
+ms.keywords : netdispumdddi/MIRACAST_WFD_CONNECTION_STATS, display.miracast_wfd_connection_stats, MIRACAST_WFD_CONNECTION_STATS structure [Display Devices], MIRACAST_WFD_CONNECTION_STATS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,5 @@ The maximum bit rate, in bits per second, that the Miracast sink hardware can su
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 02fe418f-1793-4585-9891-1274a4ddba74
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolEntryInformation method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetSymbolEntryInformation, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryInformation method, dbgeng/IDebugSymbols3::GetSymbolEntryInformation, GetSymbolEntryInformation, GetSymbolEntryInformation method [Windows Debugging], IDebugSymbols3, IDebugSymbols_a1ac4d9f-172c-4697-937d-a59c88bb8778.xml, debugger.getsymbolentryinformation
+ms.keywords : GetSymbolEntryInformation method [Windows Debugging], debugger.getsymbolentryinformation, GetSymbolEntryInformation, GetSymbolEntryInformation method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetSymbolEntryInformation, IDebugSymbols3::GetSymbolEntryInformation, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryInformation method, IDebugSymbols3, IDebugSymbols_a1ac4d9f-172c-4697-937d-a59c88bb8778.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,14 +90,9 @@ For details on the symbol entry information, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

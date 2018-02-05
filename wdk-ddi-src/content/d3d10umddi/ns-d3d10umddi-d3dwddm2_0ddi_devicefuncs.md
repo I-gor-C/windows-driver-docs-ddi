@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9A41512A-91C4-4053-9C60-5B485E93D14B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3DWDDM2_0DDI_DEVICEFUNCS, display.d3dwddm2_0ddi_devicefuncs, D3DWDDM2_0DDI_DEVICEFUNCS structure [Display Devices], D3DWDDM2_0DDI_DEVICEFUNCS
+ms.keywords : d3d10umddi/D3DWDDM2_0DDI_DEVICEFUNCS, D3DWDDM2_0DDI_DEVICEFUNCS, display.d3dwddm2_0ddi_devicefuncs, D3DWDDM2_0DDI_DEVICEFUNCS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -914,7 +914,5 @@ A pointer to the <a href="https://msdn.microsoft.com/cc360e57-8c0a-441a-a072-7dc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

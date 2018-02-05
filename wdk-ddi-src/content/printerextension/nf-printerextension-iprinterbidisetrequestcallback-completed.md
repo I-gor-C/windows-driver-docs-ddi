@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : F086903F-2FCA-4B9F-948B-0F40F114E11D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterBidiSetRequestCallback interface [Print Devices], Completed method, IPrinterBidiSetRequestCallback::Completed, Completed method [Print Devices], IPrinterBidiSetRequestCallback interface, IPrinterBidiSetRequestCallback, print.iprinterbidisetrequestcallback_completed, Completed method [Print Devices], Completed, printerextension/IPrinterBidiSetRequestCallback::Completed
+ms.keywords : print.iprinterbidisetrequestcallback_completed, printerextension/IPrinterBidiSetRequestCallback::Completed, IPrinterBidiSetRequestCallback::Completed, Completed method [Print Devices], IPrinterBidiSetRequestCallback interface [Print Devices], Completed method, Completed method [Print Devices], IPrinterBidiSetRequestCallback interface, Completed, IPrinterBidiSetRequestCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,14 +71,10 @@ This method returns the appropriate <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

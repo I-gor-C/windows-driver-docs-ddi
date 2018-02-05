@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bedb6399-8f79-477a-9a90-4a7dec5c5dae
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetThreadHardErrorMode routine [Kernel-Mode Driver Architecture], IoSetThreadHardErrorMode, kernel.iosetthreadharderrormode, k104_6e0a2c29-8edf-4d7e-b672-11309231c45e.xml, ntddk/IoSetThreadHardErrorMode
+ms.keywords : IoSetThreadHardErrorMode routine [Kernel-Mode Driver Architecture], ntddk/IoSetThreadHardErrorMode, k104_6e0a2c29-8edf-4d7e-b672-11309231c45e.xml, kernel.iosetthreadharderrormode, IoSetThreadHardErrorMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ If hard errors are disabled for a given thread, calls to <b>IoRaiseHardError</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 and later versions of Windows. Available in Microsoft Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

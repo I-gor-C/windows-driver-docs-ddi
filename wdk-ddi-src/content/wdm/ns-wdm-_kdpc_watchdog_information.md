@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8b0d3fd8-0952-4cfa-81e1-255145fd27dd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PKDPC_WATCHDOG_INFORMATION, PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION structure [Kernel-Mode Driver Architecture], KDPC_WATCHDOG_INFORMATION, _KDPC_WATCHDOG_INFORMATION, wdm/KDPC_WATCHDOG_INFORMATION, wdm/PKDPC_WATCHDOG_INFORMATION, kstruct_a_22042f11-ce6d-481a-949a-d6370ab442ad.xml, PKDPC_WATCHDOG_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.dpc_watchdog_information"
+ms.keywords : kstruct_a_22042f11-ce6d-481a-949a-d6370ab442ad.xml, KDPC_WATCHDOG_INFORMATION structure [Kernel-Mode Driver Architecture], _KDPC_WATCHDOG_INFORMATION, wdm/PKDPC_WATCHDOG_INFORMATION, PKDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION, wdm/KDPC_WATCHDOG_INFORMATION, kernel.dpc_watchdog_information, PKDPC_WATCHDOG_INFORMATION structure pointer [Kernel-Mode Driver Architecture], KDPC_WATCHDOG_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,7 @@ Time figures stored in each member are dimensionless.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

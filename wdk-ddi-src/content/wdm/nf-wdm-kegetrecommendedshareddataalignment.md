@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2faf5e30-bfbb-4b23-9cb9-bf9dd81a56c2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeGetRecommendedSharedDataAlignment routine [Kernel-Mode Driver Architecture], kernel.kegetrecommendedshareddataalignment, wdm/KeGetRecommendedSharedDataAlignment, k105_537a55c5-9c7e-49cb-8a27-de61e92b78e2.xml, KeGetRecommendedSharedDataAlignment
+ms.keywords : wdm/KeGetRecommendedSharedDataAlignment, KeGetRecommendedSharedDataAlignment, k105_537a55c5-9c7e-49cb-8a27-de61e92b78e2.xml, kernel.kegetrecommendedshareddataalignment, KeGetRecommendedSharedDataAlignment routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,11 +64,9 @@ Use <b>KeGetRecommendedSharedDataAlignment</b> to determine the best alignment f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

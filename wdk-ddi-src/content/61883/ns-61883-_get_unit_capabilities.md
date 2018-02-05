@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 7fe180c2-cf0b-4658-86e3-fed5e270db8c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883/PGET_UNIT_CAPABILITIES, 61883_structures_d0aac9e5-5600-4552-b06a-7526e6c87336.xml, _GET_UNIT_CAPABILITIES, PGET_UNIT_CAPABILITIES, 61883/GET_UNIT_CAPABILITIES, GET_UNIT_CAPABILITIES structure [Buses], GET_UNIT_CAPABILITIES, IEEE.get_unit_capabilities, PGET_UNIT_CAPABILITIES structure pointer [Buses], *PGET_UNIT_CAPABILITIES
+ms.keywords : "*PGET_UNIT_CAPABILITIES, 61883/GET_UNIT_CAPABILITIES, 61883_structures_d0aac9e5-5600-4552-b06a-7526e6c87336.xml, PGET_UNIT_CAPABILITIES, GET_UNIT_CAPABILITIES structure [Buses], 61883/PGET_UNIT_CAPABILITIES, PGET_UNIT_CAPABILITIES structure pointer [Buses], GET_UNIT_CAPABILITIES, IEEE.get_unit_capabilities, _GET_UNIT_CAPABILITIES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,9 +85,6 @@ The number of output plugs supported by the device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
 ## See Also

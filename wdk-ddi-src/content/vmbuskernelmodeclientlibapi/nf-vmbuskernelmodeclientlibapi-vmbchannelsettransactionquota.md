@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : C88F03BE-96D3-46A7-8269-1ECBFA539111
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelSetTransactionQuota, VmbChannelSetTransactionQuota, netvista.vmbchannelsettransactionquota, VmbChannelSetTransactionQuota function [Network Drivers Starting with Windows Vista]
+ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelSetTransactionQuota, netvista.vmbchannelsettransactionquota, VmbChannelSetTransactionQuota function [Network Drivers Starting with Windows Vista], VmbChannelSetTransactionQuota
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -81,11 +81,9 @@ the queue until sufficient packets have been completed.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |

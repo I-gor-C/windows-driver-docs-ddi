@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a673bcea-1a56-48dc-9c63-67583e953571
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PDXGK_VIDEO_OUTPUT_CAPABILITIES, dispmprt/DXGK_VIDEO_OUTPUT_CAPABILITIES, _DXGK_VIDEO_OUTPUT_CAPABILITIES, DXGK_VIDEO_OUTPUT_CAPABILITIES structure [Display Devices], PDXGK_VIDEO_OUTPUT_CAPABILITIES structure pointer [Display Devices], display.dxgk_video_output_capabilities, DXGK_VIDEO_OUTPUT_CAPABILITIES, DmStructs_018a3f8f-c9bd-4000-b27d-b3dc3e46f14a.xml, dispmprt/PDXGK_VIDEO_OUTPUT_CAPABILITIES, *PDXGK_VIDEO_OUTPUT_CAPABILITIES
+ms.keywords : DXGK_VIDEO_OUTPUT_CAPABILITIES structure [Display Devices], dispmprt/PDXGK_VIDEO_OUTPUT_CAPABILITIES, _DXGK_VIDEO_OUTPUT_CAPABILITIES, DXGK_VIDEO_OUTPUT_CAPABILITIES, *PDXGK_VIDEO_OUTPUT_CAPABILITIES, display.dxgk_video_output_capabilities, DmStructs_018a3f8f-c9bd-4000-b27d-b3dc3e46f14a.xml, dispmprt/DXGK_VIDEO_OUTPUT_CAPABILITIES, PDXGK_VIDEO_OUTPUT_CAPABILITIES, PDXGK_VIDEO_OUTPUT_CAPABILITIES structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_VIDEO_OUTPUT_CAPABILITIES, DXGK_VIDEO_OUTPUT_CAPABILITIES"
+req.typenames : DXGK_VIDEO_OUTPUT_CAPABILITIES, *PDXGK_VIDEO_OUTPUT_CAPABILITIES
 ---
 
 # _DXGK_VIDEO_OUTPUT_CAPABILITIES structure
@@ -73,18 +73,16 @@ The <b>ChildCapabilities</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also
 
+<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
+
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
 <a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a>
-
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_descriptor.md">DXGK_CHILD_DESCRIPTOR</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7479d5d0-69d0-42b8-9aa1-5eab8b71b118
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlUnicodeStringToCountedOemString, ntifs/RtlUnicodeStringToCountedOemString, RtlUnicodeStringToCountedOemString routine [Installable File System Drivers], rtlref_dbc62228-043f-43f1-bd19-464adf37b693.xml, ifsk.rtlunicodestringtocountedoemstring
+ms.keywords : ifsk.rtlunicodestringtocountedoemstring, ntifs/RtlUnicodeStringToCountedOemString, rtlref_dbc62228-043f-43f1-bd19-464adf37b693.xml, RtlUnicodeStringToCountedOemString routine [Installable File System Drivers], RtlUnicodeStringToCountedOemString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,30 +82,27 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlunicodetooemn.md">RtlUnicodeToOemN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
 
 <a href="..\ntifs\nf-ntifs-rtlupcaseunicodestringtocountedoemstring.md">RtlUpcaseUnicodeStringToCountedOemString</a>
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodetooemn.md">RtlUnicodeToOemN</a>
 
-<a href="..\ntifs\nf-ntifs-rtlunicodestringtooemstring.md">RtlUnicodeStringToOemString</a>
+<a href="..\ntifs\nf-ntifs-rtlfreeoemstring.md">RtlFreeOemString</a>
 
 <a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodestring.md">RtlOemStringToCountedUnicodeString</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodestringtooemstring.md">RtlUnicodeStringToOemString</a>
 
-<a href="..\ntifs\nf-ntifs-rtlfreeoemstring.md">RtlFreeOemString</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

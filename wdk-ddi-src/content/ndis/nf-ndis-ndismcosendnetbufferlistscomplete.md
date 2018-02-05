@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c4978122-6d13-4e9b-8eb7-d06cd7372268
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : condis_sendrcv_ref_49470611-47cb-4778-8723-4acc2ebbfb81.xml, NdisMCoSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista], netvista.ndismcosendnetbufferlistscomplete, NdisMCoSendNetBufferListsComplete, ndis/NdisMCoSendNetBufferListsComplete
+ms.keywords : NdisMCoSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista], netvista.ndismcosendnetbufferlistscomplete, ndis/NdisMCoSendNetBufferListsComplete, condis_sendrcv_ref_49470611-47cb-4778-8723-4acc2ebbfb81.xml, NdisMCoSendNetBufferListsComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,8 +70,8 @@ A handle that identifies a virtual connection (VC). The miniport driver obtained
 A pointer to a linked list of 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures. The miniport
      driver received the NET_BUFFER_LIST structures in previous calls to its 
-     <mshelp:link keywords="netvista.miniportcosendnetbufferlists" tabindex="0"><i>
-     MiniportCoSendNetBufferLists</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
+     MiniportCoSendNetBufferLists</a> function.
 
 `SendCompleteFlags`
 
@@ -91,8 +91,8 @@ None
 
 A miniport driver calls 
     <b>NdisMCoSendNetBufferListsComplete</b> to complete send requests that NDIS made to the driver's 
-    <mshelp:link keywords="netvista.miniportcosendnetbufferlists" tabindex="0"><i>
-    MiniportCoSendNetBufferLists</i></mshelp:link> function. The miniport driver specifies a linked list of 
+    <a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
+    MiniportCoSendNetBufferLists</a> function. The miniport driver specifies a linked list of 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that are
     associated with the completed send requests.
 
@@ -123,27 +123,25 @@ A miniport driver's call to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_cancel_send.md">MiniportCancelSend</a>
-
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<mshelp:link keywords="netvista.miniportcosendnetbufferlists" tabindex="0"><i>
-   MiniportCoSendNetBufferLists</i></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
+   MiniportCoSendNetBufferLists</a>
 
 <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+
+<a href="..\ndis\nc-ndis-miniport_cancel_send.md">MiniportCancelSend</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

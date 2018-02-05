@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1e185734-21d9-4047-9e74-cf5a765857ed
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILRFSTATE, netvista.rilrfstate_2, RILRFSTATE structure [Network Drivers Starting with Windows Vista], RILRFSTATE, rilapitypes/RILRFSTATE"
+ms.keywords : netvista.rilrfstate_2, *LPRILRFSTATE, RILRFSTATE, RILRFSTATE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILRFSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILRFSTATE, RILRFSTATE"
+req.typenames : RILRFSTATE, *LPRILRFSTATE
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,4 @@ typedef struct _RILRFSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

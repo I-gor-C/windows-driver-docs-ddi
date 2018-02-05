@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 16688917-77d4-4ca1-a4e0-357da16b55c0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_CALLTYPE_IMS, rilapitypes/RIL_CALLTYPE_SUPSVC, rilapitypes/RIL_CALLTYPE_VT, netvista.rilcalltype_2, rilapitypes/RIL_CALLTYPE_FAX, RILCALLTYPE, RIL_CALLTYPE_IMS, rilapitypes/RIL_CALLTYPE_VOICE, RIL_CALLTYPE_VOICE, RIL_CALLTYPE_PTT, rilapitypes/RILCALLTYPE, rilapitypes/RIL_CALLTYPE_MAX, rilapitypes/RIL_CALLTYPE_USSD, RIL_CALLTYPE_SUPSVC, rilapitypes/RIL_CALLTYPE_DATA, rilapitypes/RIL_CALLTYPE_PTT, RILCALLTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLTYPE_FAX, RIL_CALLTYPE_USSD, RIL_CALLTYPE_MAX, RIL_CALLTYPE_VT, RIL_CALLTYPE_DATA
+ms.keywords : RIL_CALLTYPE_MAX, RIL_CALLTYPE_IMS, rilapitypes/RIL_CALLTYPE_VOICE, RIL_CALLTYPE_USSD, rilapitypes/RIL_CALLTYPE_FAX, rilapitypes/RIL_CALLTYPE_PTT, RIL_CALLTYPE_DATA, rilapitypes/RIL_CALLTYPE_MAX, RIL_CALLTYPE_VOICE, RIL_CALLTYPE_VT, RIL_CALLTYPE_FAX, rilapitypes/RILCALLTYPE, RILCALLTYPE, netvista.rilcalltype_2, rilapitypes/RIL_CALLTYPE_VT, rilapitypes/RIL_CALLTYPE_DATA, rilapitypes/RIL_CALLTYPE_USSD, RILCALLTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLTYPE_SUPSVC, rilapitypes/RIL_CALLTYPE_SUPSVC, RIL_CALLTYPE_PTT, rilapitypes/RIL_CALLTYPE_IMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -116,7 +116,4 @@ typedef enum _RILCALLTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

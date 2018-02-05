@@ -69,9 +69,8 @@ The <b>Information</b> field is set to the size, in bytes, of the returned data.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Supported in Windows XP and later operating systems. Supported in Windows XP and later operating systems. |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
-| **IRQL** |  |
 
 ## See Also
 

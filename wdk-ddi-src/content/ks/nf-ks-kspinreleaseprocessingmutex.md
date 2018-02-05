@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9a117c5b-26a4-4fdb-b51e-933b8f105a81
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsPinReleaseProcessingMutex, KsPinReleaseProcessingMutex function [Streaming Media Devices], stream.kspinreleaseprocessingmutex, avfunc_22421ea0-8973-4921-a0cb-f1d824f76357.xml, KsPinReleaseProcessingMutex
+ms.keywords : stream.kspinreleaseprocessingmutex, ks/KsPinReleaseProcessingMutex, KsPinReleaseProcessingMutex, avfunc_22421ea0-8973-4921-a0cb-f1d824f76357.xml, KsPinReleaseProcessingMutex function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,11 @@ Minidrivers that must suspend processing for a long time should not use this mut
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

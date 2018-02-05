@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0f590f5f-5ffe-4d83-86b0-e8dd0bfa5b8f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_99c47b61-1104-476f-bf7e-312d7cd0ec02.xml, _D3DKMT_WAITFORIDLE, display.d3dkmt_waitforidle, d3dkmthk/D3DKMT_WAITFORIDLE, D3DKMT_WAITFORIDLE, D3DKMT_WAITFORIDLE structure [Display Devices]
+ms.keywords : OpenGL_Structs_99c47b61-1104-476f-bf7e-312d7cd0ec02.xml, d3dkmthk/D3DKMT_WAITFORIDLE, _D3DKMT_WAITFORIDLE, D3DKMT_WAITFORIDLE structure [Display Devices], display.d3dkmt_waitforidle, D3DKMT_WAITFORIDLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DKMT_WAITFORIDLE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

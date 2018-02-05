@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d65ad0fa-1dd8-42b4-866b-cb2522080cde
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : "*PDEBUG_MODULE_AND_ID, PDEBUG_MODULE_AND_ID structure pointer [Windows Debugging], DEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID structure [Windows Debugging], PDEBUG_MODULE_AND_ID, dbgeng/DEBUG_MODULE_AND_ID, debugger.debug_module_and_id, dbgeng/PDEBUG_MODULE_AND_ID, _DEBUG_MODULE_AND_ID, Structures_d53c2a34-f855-45a0-918b-0a8dfb936828.xml"
+ms.keywords : debugger.debug_module_and_id, DEBUG_MODULE_AND_ID, Structures_d53c2a34-f855-45a0-918b-0a8dfb936828.xml, dbgeng/DEBUG_MODULE_AND_ID, PDEBUG_MODULE_AND_ID structure pointer [Windows Debugging], _DEBUG_MODULE_AND_ID, dbgeng/PDEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID structure [Windows Debugging], *PDEBUG_MODULE_AND_ID, PDEBUG_MODULE_AND_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
+req.typenames : "*PDEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID"
 ---
 
 # _DEBUG_MODULE_AND_ID structure
@@ -64,7 +64,4 @@ The location in the target's virtual address space of the module's base address.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dbgeng.h (include DbgEng.h) |

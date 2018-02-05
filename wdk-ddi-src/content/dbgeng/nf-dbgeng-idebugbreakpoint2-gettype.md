@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c6aa6560-3183-4e3a-a625-80d1c5072af5
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint2, GetType method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint::GetType, debugger.gettype, dbgeng/IDebugBreakpoint::GetType, IDebugBreakpoint2::GetType, dbgeng/IDebugBreakpoint2::GetType, ComOther_3305c400-f816-463b-a643-4495bf546460.xml, GetType, GetType method [Windows Debugging], GetType method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetType method, IDebugBreakpoint2 interface [Windows Debugging], GetType method
+ms.keywords : dbgeng/IDebugBreakpoint::GetType, ComOther_3305c400-f816-463b-a643-4495bf546460.xml, IDebugBreakpoint2::GetType, debugger.gettype, GetType method [Windows Debugging], IDebugBreakpoint2, GetType, GetType method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint2::GetType, IDebugBreakpoint::GetType, GetType method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetType method, IDebugBreakpoint2 interface [Windows Debugging], GetType method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -121,11 +121,6 @@ For more information about breakpoint types, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 90526705-069d-432f-87b1-1efc247aee05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SeSetSecurityDescriptorInfoEx routine [Installable File System Drivers], ifsk.sesetsecuritydescriptorinfoex, ntifs/SeSetSecurityDescriptorInfoEx, SeSetSecurityDescriptorInfoEx, seref_d3965072-a36e-478c-9c57-5614920d69c8.xml
+ms.keywords : seref_d3965072-a36e-478c-9c57-5614920d69c8.xml, SeSetSecurityDescriptorInfoEx routine [Installable File System Drivers], SeSetSecurityDescriptorInfoEx, ifsk.sesetsecuritydescriptorinfoex, ntifs/SeSetSecurityDescriptorInfoEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -236,42 +236,40 @@ For more information about access control and ACE inheritance, see the Security 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
-
-<a href="..\ntifs\nf-ntifs-sequerysecuritydescriptorinfo.md">SeQuerySecurityDescriptorInfo</a>
-
-<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
-
-<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="..\ntifs\nf-ntifs-sesetsecuritydescriptorinfo.md">SeSetSecurityDescriptorInfo</a>
 
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
-<a href="..\ntifs\nf-ntifs-sesetsecuritydescriptorinfo.md">SeSetSecurityDescriptorInfo</a>
+<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
+
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+
+<a href="..\ntifs\nf-ntifs-sequerysecuritydescriptorinfo.md">SeQuerySecurityDescriptorInfo</a>
+
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
+
+<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
 
 <a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
-
-<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
-
-<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-
-<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
-
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
  
 

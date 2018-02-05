@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8a5d3fba-ffd5-4fbc-973a-d5bfec6bb6e3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DIDDT1_Progressive, _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE, d3dkmdt/_DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE, DIDDT1_Interlaced, d3dkmdt/DIDDT1_Progressive, d3dkmdt/DIDDT1_Interlaced, _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE enumeration [Display Devices], DmEnums_62dac0af-5d16-4943-ad25-71a00d0d4e9e.xml, display.displayid_detailed_timing_type_i_scanning_mode
+ms.keywords : d3dkmdt/DIDDT1_Progressive, d3dkmdt/DIDDT1_Interlaced, _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE enumeration [Display Devices], d3dkmdt/_DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE, DmEnums_62dac0af-5d16-4943-ad25-71a00d0d4e9e.xml, DIDDT1_Progressive, DIDDT1_Interlaced, _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE, display.displayid_detailed_timing_type_i_scanning_mode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,7 +69,5 @@ enum _DISPLAYID_DETAILED_TIMING_TYPE_I_SCANNING_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 00322dbf-0099-439a-8d65-bf530129cea1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_R-Z_354e1536-de02-474d-b99f-b5d81875aecd.xml, netvista.fwpsreassembleforwardfragmentgroup0, FwpsReassembleForwardFragmentGroup0, FwpsReassembleForwardFragmentGroup0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsReassembleForwardFragmentGroup0
+ms.keywords : netvista.fwpsreassembleforwardfragmentgroup0, FwpsReassembleForwardFragmentGroup0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_R-Z_354e1536-de02-474d-b99f-b5d81875aecd.xml, FwpsReassembleForwardFragmentGroup0, fwpsk/FwpsReassembleForwardFragmentGroup0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,8 +89,8 @@ A pointer to the
 An optional 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure pool handle that
      was previously returned from the 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-     NdisAllocateNetBufferListPool</b></mshelp:link> function. The 
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+     NdisAllocateNetBufferListPool</a> function. The 
      <b>fAllocateNetBuffer</b> member of the 
      <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that the caller passed to 
      <b>NdisAllocateNetBufferListPool</b> must have been set to <b>TRUE</b>, and the 
@@ -195,29 +195,26 @@ Because
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Server 2008. Available starting with Windows Server 2008. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-   NdisAllocateNetBufferListPool</b></mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
-
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
 
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+   NdisAllocateNetBufferListPool</a>
 
-<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : BAC5B134-22F5-4BC9-BBD6-6AF3C934510B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure [Streaming Media Devices], *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure pointer [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, stream.kscamera_extendedprop_roi_configcaps
+ms.keywords : PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure [Streaming Media Devices], stream.kscamera_extendedprop_roi_configcaps, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,7 +83,4 @@ The maximum ROIs supported for this ISO control.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

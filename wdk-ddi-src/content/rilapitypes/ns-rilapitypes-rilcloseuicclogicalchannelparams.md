@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4e7d2a46-b31e-4ead-8918-b6da970eb7c9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILCLOSEUICCLOGICALCHANNELPARAMS, netvista.rilcloseuicclogicalchannelparams_2, RILCLOSEUICCLOGICALCHANNELPARAMS"
+ms.keywords : rilapitypes/RILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS, netvista.rilcloseuicclogicalchannelparams_2, *LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILCLOSEUICCLOGICALCHANNELPARAMS, *LPRILCLOSEUICCLOGICALCHANNELPARAMS
+req.typenames : "*LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

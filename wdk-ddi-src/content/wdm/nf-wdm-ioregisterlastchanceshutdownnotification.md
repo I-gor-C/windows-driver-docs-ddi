@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9ee590ce-e822-4c15-bb01-6f726268f163
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoRegisterLastChanceShutdownNotification, k104_233a75d7-252b-45e3-a980-bda55edd3fdc.xml, IoRegisterLastChanceShutdownNotification, kernel.ioregisterlastchanceshutdownnotification, IoRegisterLastChanceShutdownNotification routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/IoRegisterLastChanceShutdownNotification, IoRegisterLastChanceShutdownNotification routine [Kernel-Mode Driver Architecture], IoRegisterLastChanceShutdownNotification, kernel.ioregisterlastchanceshutdownnotification, k104_233a75d7-252b-45e3-a980-bda55edd3fdc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,20 +91,19 @@ The registered <i>DispatchShutdown</i> routine is called before the power manage
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me. Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
+
+<a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
 
 <a href="..\wdm\nf-wdm-ioregistershutdownnotification.md">IoRegisterShutdownNotification</a>
 

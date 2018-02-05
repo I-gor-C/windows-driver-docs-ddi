@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d5846165-f58d-44a8-9242-02a2f85d3a8d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PFND3DKMT_OUTPUTDUPLPRESENT, d3dkmthk/D3DKMTOutputDuplPresent, D3DKMTOutputDuplPresent function [Display Devices], D3DKMTOutputDuplPresent, display.d3dkmtoutputduplpresent
+ms.keywords : d3dkmthk/D3DKMTOutputDuplPresent, PFND3DKMT_OUTPUTDUPLPRESENT, D3DKMTOutputDuplPresent function [Display Devices], display.d3dkmtoutputduplpresent, D3DKMTOutputDuplPresent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -142,20 +142,17 @@ For example, the DirectX graphics kernel subsystem puts a device into an error s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_outputduplpresent.md">D3DKMT_OUTPUTDUPLPRESENT</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
 
  
 

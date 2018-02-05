@@ -63,11 +63,11 @@ A handle to the current Miracast display device, supplied by the operating syste
 
 `*pMiracastCallbacks`
 
-
+A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-_miracast_callbacks.md">MIRACAST_CALLBACKS</a> structure that has pointers to callback functions, supplied by the operating system,  that the Miracast user-mode driver can call.
 
 `*ppMiracastContext`
 
-
+A pointer to a buffer, supplied by the operating system, that holds the Miracast context that the Miracast user-mode driver returns.
 
 
 ## Return Value
@@ -83,24 +83,19 @@ The driver can call the callback functions pointed to by <i>pMiracastCallbacks</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netdispumdddi\ns-netdispumdddi-_miracast_callbacks.md">MIRACAST_CALLBACKS</a>
-
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
-
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
+
+<a href="..\netdispumdddi\ns-netdispumdddi-_miracast_callbacks.md">MIRACAST_CALLBACKS</a>
+
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
 
  
 

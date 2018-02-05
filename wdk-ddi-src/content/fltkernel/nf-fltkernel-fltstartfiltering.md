@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fc24e764-d584-4927-942f-3b8b4b83af79
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltStartFiltering, fltkernel/FltStartFiltering, FltStartFiltering function [Installable File System Drivers], FltApiRef_p_to_z_f88abc20-f8b7-4399-85be-bd43674fe536.xml, ifsk.fltstartfiltering
+ms.keywords : FltApiRef_p_to_z_f88abc20-f8b7-4399-85be-bd43674fe536.xml, FltStartFiltering, FltStartFiltering function [Installable File System Drivers], fltkernel/FltStartFiltering, ifsk.fltstartfiltering
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,11 @@ A minifilter driver typically calls <b>FltStartFiltering</b> from its <b>DriverE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

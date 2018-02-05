@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f8abff30-b641-4581-8532-8292993ca9f6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisOffloadTcpDisconnect, netvista.ndisoffloadtcpdisconnect, NdisOffloadTcpDisconnect function [Network Drivers Starting with Windows Vista], ndischimney/NdisOffloadTcpDisconnect, tcp_chim_ndis_func_7b795689-321d-4d4f-992f-668d53bcf11b.xml
+ms.keywords : NdisOffloadTcpDisconnect function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_7b795689-321d-4d4f-992f-668d53bcf11b.xml, netvista.ndisoffloadtcpdisconnect, ndischimney/NdisOffloadTcpDisconnect, NdisOffloadTcpDisconnect
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,8 +65,8 @@ NDIS_STATUS NdisOffloadTcpDisconnect(
 A pointer to an 
      <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a> structure in the
      caller's context for the offloaded TCP connection. For more information, see 
-     <mshelp:link keywords="netvista.referencing_offloaded_state_through_an_intermediate_driver" tabindex="0">
-     Referencing Offloaded State Through an Intermediate Driver</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/referencing-offloaded-state-through-an-intermediate-driver">
+     Referencing Offloaded State Through an Intermediate Driver</a>.
 
 `NetBufferList`
 
@@ -103,8 +103,8 @@ The
 ## Remarks
 
 In response to a call to its 
-    <mshelp:link keywords="netvista.miniporttcpoffloaddisconnect" tabindex="0"><i>
-    MiniportTcpOffloadDisconnect</i></mshelp:link> function, an intermediate driver calls the 
+    <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
+    MiniportTcpOffloadDisconnect</a> function, an intermediate driver calls the 
     <b>NdisOffloadTcpDisconnect</b> function to propagate the disconnect operation to the underlying
     intermediate driver or offload target. For more information, see 
     <a href="https://msdn.microsoft.com/009159ad-81c0-4555-8e6b-a4fec2c7f1d5">Propagating I/O Operations</a>.
@@ -117,8 +117,8 @@ To the
 An 
       <i>NdisOffloadHandle</i> function that references the NDIS_OFFLOAD_HANDLE structure stored in the
       intermediate driver's context for the offloaded TCP connection. For more information, see 
-      <mshelp:link keywords="netvista.referencing_offloaded_state_through_an_intermediate_driver" tabindex="0">
-      Referencing Offloaded State Through an Intermediate Driver</mshelp:link>.
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/referencing-offloaded-state-through-an-intermediate-driver">
+      Referencing Offloaded State Through an Intermediate Driver</a>.
 
 </li>
 <li>
@@ -142,31 +142,26 @@ The same
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ndis.lib |
 
 ## See Also
 
-<mshelp:link keywords="netvista.miniporttcpoffloaddisconnect" tabindex="0"><i>
-   MiniportTcpOffloadDisconnect</i></mshelp:link>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndischimney\nc-ndischimney-tcp_offload_disconnect_complete_handler.md">
+   ProtocolTcpOffloadDisconnectComplete</a>
+
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+   NdisTcpOffloadDisconnectComplete</a>
 
 <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-<mshelp:link keywords="netvista.protocoltcpoffloaddisconnectcomplete" tabindex="0"><i>
-   ProtocolTcpOffloadDisconnectComplete</i></mshelp:link>
+<a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
+   MiniportTcpOffloadDisconnect</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-   NdisTcpOffloadDisconnectComplete</b></mshelp:link>
 
  
 

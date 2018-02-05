@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fd5f29f7-e9c6-48c4-8704-5db37b8c6337
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_ea947de9-aea4-4e66-8686-f4ca5a1385c4.xml, wdf.wdfrequestgetinformation, WdfRequestGetInformation, kmdf.wdfrequestgetinformation, wdfrequest/WdfRequestGetInformation, WdfRequestGetInformation method, PFN_WDFREQUESTGETINFORMATION
+ms.keywords : PFN_WDFREQUESTGETINFORMATION, wdf.wdfrequestgetinformation, WdfRequestGetInformation, kmdf.wdfrequestgetinformation, wdfrequest/WdfRequestGetInformation, WdfRequestGetInformation method, DFRequestObjectRef_ea947de9-aea4-4e66-8686-f4ca5a1385c4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,12 +77,11 @@ For more information about <b>WdfRequestGetInformation</b>, see <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 

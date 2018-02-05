@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 71e59c73-d77d-4b10-9d13-f5d21338eb94
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSFASTMETHOD_ITEM structure pointer [Streaming Media Devices], PKSFASTMETHOD_ITEM, stream.ksfastmethod_item, KSFASTMETHOD_ITEM structure [Streaming Media Devices], ks/PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM, *PKSFASTMETHOD_ITEM, ks-struct_1280212d-776c-4f9d-a00b-d880785c4cdf.xml, ks/KSFASTMETHOD_ITEM
+ms.keywords : stream.ksfastmethod_item, KSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM, ks-struct_1280212d-776c-4f9d-a00b-d880785c4cdf.xml, ks/PKSFASTMETHOD_ITEM, ks/KSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM structure pointer [Streaming Media Devices], *PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSFASTMETHOD_ITEM, *PKSFASTMETHOD_ITEM
+req.typenames : "*PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM"
 ---
 
 # KSFASTMETHOD_ITEM structure
@@ -63,9 +63,6 @@ Contains the identifier of the method and the flags describing the type of metho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

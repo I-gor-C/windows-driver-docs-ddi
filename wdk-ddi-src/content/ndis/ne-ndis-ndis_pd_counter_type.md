@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 36DA5A61-2DA4-4CD1-8BA5-74444DC002F0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/PDCounterTypeTransmitQueue, netvista.ndis_pd_counter_type, NDIS_PD_COUNTER_TYPE, PDCounterTypeTransmitQueue, NDIS_PD_COUNTER_TYPE enumeration [Network Drivers Starting with Windows Vista], ndis/PDCounterTypeReceiveFilter, ndis/PDCounterTypeUnknown, PDCounterTypeMax, PDCounterTypeUnknown, PDCounterTypeReceiveFilter, ndis/PDCounterTypeReceiveQueue, PDCounterTypeReceiveQueue, ndis/PDCounterTypeMax, ndis/NDIS_PD_COUNTER_TYPE
+ms.keywords : ndis/PDCounterTypeUnknown, NDIS_PD_COUNTER_TYPE enumeration [Network Drivers Starting with Windows Vista], PDCounterTypeUnknown, netvista.ndis_pd_counter_type, ndis/PDCounterTypeReceiveQueue, ndis/NDIS_PD_COUNTER_TYPE, PDCounterTypeReceiveQueue, ndis/PDCounterTypeTransmitQueue, PDCounterTypeReceiveFilter, ndis/PDCounterTypeReceiveFilter, PDCounterTypeTransmitQueue, ndis/PDCounterTypeMax, NDIS_PD_COUNTER_TYPE, PDCounterTypeMax
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,9 +86,7 @@ typedef enum _NDIS_PD_COUNTER_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ndis.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e791900a-06a8-4c8b-8ca8-c4e73d94f609
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwSetEaFile routine [Kernel-Mode Driver Architecture], ntifs/ZwSetEaFile, ZwSetEaFile, kernel.zwseteafile
+ms.keywords : kernel.zwseteafile, ZwSetEaFile routine [Kernel-Mode Driver Architecture], ntifs/ZwSetEaFile, ZwSetEaFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,20 +97,19 @@ The EaList parameter is not formatted correctly. This is an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000   and later versions of the Windows operating system. Available in Microsoft Windows 2000   and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
-
 <a href="..\ntifs\nf-ntifs-zwqueryeafile.md">ZwQueryEaFile</a>
+
+<a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
 
  
 

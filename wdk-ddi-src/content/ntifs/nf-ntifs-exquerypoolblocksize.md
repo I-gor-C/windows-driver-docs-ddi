@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0be3f5da-3fe6-45a2-b44a-b1634d74ede3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/ExQueryPoolBlockSize, ExQueryPoolBlockSize function [Installable File System Drivers], ExQueryPoolBlockSize, ifsk.exquerypoolblocksize, exref_c8686b81-2d69-4bbf-a1fb-143574579cff.xml
+ms.keywords : exref_c8686b81-2d69-4bbf-a1fb-143574579cff.xml, ntifs/ExQueryPoolBlockSize, ExQueryPoolBlockSize function [Installable File System Drivers], ExQueryPoolBlockSize, ifsk.exquerypoolblocksize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

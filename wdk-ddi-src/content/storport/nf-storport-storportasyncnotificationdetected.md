@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 558F652C-6D1A-4BAF-9C2C-3F4FE24651D2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, StorPortAsyncNotificationDetected routine [Storage Devices], StorPortAsyncNotificationDetected, RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION, storport/StorPortAsyncNotificationDetected, storage.storportasyncnotificationdetected
+ms.keywords : RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, storage.storportasyncnotificationdetected, RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION, storport/StorPortAsyncNotificationDetected, StorPortAsyncNotificationDetected routine [Storage Devices], StorPortAsyncNotificationDetected
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -188,11 +188,8 @@ If the <i>Flags</i> parameter is 0, Storport will indicate all status values in 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |
-| **DDI compliance rules** |  |

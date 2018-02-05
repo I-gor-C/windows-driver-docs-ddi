@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c0122c96-5bd3-4c1f-85d3-5d4ead5c0c86
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.ksds3d_hrtf_filter_format_msg, KSDS3D_HRTF_FILTER_FORMAT_MSG structure [Audio Devices], aud-prop_5ad5b67d-5302-44e1-b4e0-16d66334f57b.xml, PKSDS3D_HRTF_FILTER_FORMAT_MSG structure pointer [Audio Devices], PKSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG, ksmedia/PKSDS3D_HRTF_FILTER_FORMAT_MSG, ksmedia/KSDS3D_HRTF_FILTER_FORMAT_MSG
+ms.keywords : ksmedia/KSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG, audio.ksds3d_hrtf_filter_format_msg, KSDS3D_HRTF_FILTER_FORMAT_MSG structure [Audio Devices], PKSDS3D_HRTF_FILTER_FORMAT_MSG, ksmedia/PKSDS3D_HRTF_FILTER_FORMAT_MSG, aud-prop_5ad5b67d-5302-44e1-b4e0-16d66334f57b.xml, PKSDS3D_HRTF_FILTER_FORMAT_MSG structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,9 +98,6 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

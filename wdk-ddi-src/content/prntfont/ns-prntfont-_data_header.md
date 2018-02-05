@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 8c7b6d2f-d2d9-49a5-8137-13d71dfd2611
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_fonts_7b54b761-a2d8-419d-9726-628cfd33dae6.xml, PDATA_HEADER structure pointer [Print Devices], PDATA_HEADER, *PDATA_HEADER, DATA_HEADER structure [Print Devices], DATA_HEADER, prntfont/DATA_HEADER, prntfont/PDATA_HEADER, _DATA_HEADER, print.data_header
+ms.keywords : prntfont/DATA_HEADER, PDATA_HEADER, _DATA_HEADER, DATA_HEADER, *PDATA_HEADER, PDATA_HEADER structure pointer [Print Devices], print.data_header, DATA_HEADER structure [Print Devices], prntfont/PDATA_HEADER, print_unidrv-pscript_fonts_7b54b761-a2d8-419d-9726-628cfd33dae6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDATA_HEADER, DATA_HEADER"
+req.typenames : DATA_HEADER, *PDATA_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -144,9 +144,6 @@ Each DATA_HEADER structure must be DWORD-aligned.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also

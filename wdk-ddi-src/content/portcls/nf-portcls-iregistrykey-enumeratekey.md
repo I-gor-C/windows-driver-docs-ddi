@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2438c994-a283-49fe-a39b-99de678df2e2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : EnumerateKey method [Audio Devices], IRegistryKey interface, portcls/IRegistryKey::EnumerateKey, IRegistryKey::EnumerateKey, audmp-routines_ef31b848-c963-4327-ba86-bca98383ad90.xml, EnumerateKey, IRegistryKey interface [Audio Devices], EnumerateKey method, EnumerateKey method [Audio Devices], audio.iregistrykey_enumeratekey, IRegistryKey
+ms.keywords : IRegistryKey interface [Audio Devices], EnumerateKey method, audmp-routines_ef31b848-c963-4327-ba86-bca98383ad90.xml, portcls/IRegistryKey::EnumerateKey, EnumerateKey method [Audio Devices], EnumerateKey, IRegistryKey, IRegistryKey::EnumerateKey, EnumerateKey method [Audio Devices], IRegistryKey interface, audio.iregistrykey_enumeratekey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -127,26 +127,22 @@ Indicates that no more subkeys are available (subkey index is larger than or equ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 
-<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
-
 <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
 
-<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
-
 <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
 
  
 

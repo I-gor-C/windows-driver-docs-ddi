@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b80efaf0-ecee-40cd-befb-2139a20840a5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSRTAUDIO_BUFFER, ksmedia/KSRTAUDIO_BUFFER, PKSRTAUDIO_BUFFER structure pointer [Audio Devices], *PKSRTAUDIO_BUFFER, audio.ksrtaudio_buffer, aud-prop_50b4ab60-2e9a-444b-98d3-984d9084ab0b.xml, KSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER structure [Audio Devices], ksmedia/PKSRTAUDIO_BUFFER
+ms.keywords : audio.ksrtaudio_buffer, aud-prop_50b4ab60-2e9a-444b-98d3-984d9084ab0b.xml, ksmedia/PKSRTAUDIO_BUFFER, PKSRTAUDIO_BUFFER structure pointer [Audio Devices], PKSRTAUDIO_BUFFER, ksmedia/KSRTAUDIO_BUFFER, *PKSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER structure [Audio Devices], KSRTAUDIO_BUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER"
+req.typenames : KSRTAUDIO_BUFFER, *PKSRTAUDIO_BUFFER
 ---
 
 # KSRTAUDIO_BUFFER structure
@@ -71,18 +71,16 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537370">KSPRO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
 | **Header** | ksmedia.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537370">KSPROPERTY_RTAUDIO_BUFFER</a>
 
-<a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537494">KSRTAUDIO_BUFFER_PROPERTY</a>
+
+<a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
 
  
 

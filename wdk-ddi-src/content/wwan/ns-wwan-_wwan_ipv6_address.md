@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3DAC7E30-B938-429C-B389-59F924216B04
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_IPV6_ADDRESS structure [Network Drivers Starting with Windows Vista], PWWAN_IPV6_ADDRESS, wwan/WWAN_IPV6_ADDRESS, WWAN_IPV6_ADDRESS, _WWAN_IPV6_ADDRESS, PWWAN_IPV6_ADDRESS structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_ipv6_address, wwan/PWWAN_IPV6_ADDRESS, *PWWAN_IPV6_ADDRESS
+ms.keywords : WWAN_IPV6_ADDRESS structure [Network Drivers Starting with Windows Vista], _WWAN_IPV6_ADDRESS, wwan/PWWAN_IPV6_ADDRESS, netvista.wwan_ipv6_address, PWWAN_IPV6_ADDRESS, *PWWAN_IPV6_ADDRESS, WWAN_IPV6_ADDRESS, PWWAN_IPV6_ADDRESS structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_IPV6_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,5 @@ The length of the prefix or network part of the IP address.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8.1 and later versions of Windows. Available in Windows 8.1 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : ab49643b-ab77-49ea-9a3b-e3a184cd29d0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : drvAcquireItemData method [Imaging Devices], IWiaMiniDrv::drvAcquireItemData, IWiaMiniDrv, image.iwiaminidrv_drvacquireitemdata, IWiaMiniDrv interface [Imaging Devices], drvAcquireItemData method, wiamindr_lh/IWiaMiniDrv::drvAcquireItemData, drvAcquireItemData, drvAcquireItemData method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_fb4ad9e4-6648-4038-9b72-4e521d4dd5f2.xml
+ms.keywords : image.iwiaminidrv_drvacquireitemdata, wiamindr_lh/IWiaMiniDrv::drvAcquireItemData, drvAcquireItemData method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv, drvAcquireItemData method [Imaging Devices], drvAcquireItemData, MiniDrv_fb4ad9e4-6648-4038-9b72-4e521d4dd5f2.xml, IWiaMiniDrv::drvAcquireItemData, IWiaMiniDrv interface [Imaging Devices], drvAcquireItemData method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -156,24 +156,20 @@ Other error code
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
 
  
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ELEMENT_TYPE, *PELEMENT_TYPE
+req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_GET_STATUS IOCTL
@@ -69,6 +69,4 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddchgr.h (include Ntddchgr.h) |
-| **IRQL** |  |

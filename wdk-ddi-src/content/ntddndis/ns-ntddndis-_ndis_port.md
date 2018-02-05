@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aef1b7b2-73d3-49ad-a3f2-c06fa1f34839
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_PORT, ndis_ports_ref_df9a02e1-4a6b-4901-8794-37a5e30ececb.xml, netvista.ndis_port, _NDIS_PORT, ntddndis/NDIS_PORT, ntddndis/PNDIS_PORT, NDIS_PORT structure [Network Drivers Starting with Windows Vista], PNDIS_PORT structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PORT, *PNDIS_PORT
+ms.keywords : ndis_ports_ref_df9a02e1-4a6b-4901-8794-37a5e30ececb.xml, _NDIS_PORT, *PNDIS_PORT, ntddndis/NDIS_PORT, netvista.ndis_port, PNDIS_PORT, PNDIS_PORT structure pointer [Network Drivers Starting with Windows Vista], NDIS_PORT structure [Network Drivers Starting with Windows Vista], NDIS_PORT, ntddndis/PNDIS_PORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,8 +71,8 @@ A pointer to the next port in the linked list of ports.
 `PortCharacteristics`
 
 An 
-     <mshelp:link keywords="netvista.ndis_port_characteristics" tabindex="0"><b>
-     NDIS_PORT_CHARACTERISTICS</b></mshelp:link> structure that specifies the characteristics of the port.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">
+     NDIS_PORT_CHARACTERISTICS</a> structure that specifies the characteristics of the port.
 
 `ProtocolReserved`
 
@@ -85,9 +85,7 @@ The NDIS_PORT structure is used to create a linked list of ports. Such a linked 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

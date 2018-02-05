@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5294ce07-a4eb-4c21-88f1-04889dfbc1a1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PWWAN_SMS_CDMA_LANG, WwanRef_21c9fcf4-07b0-43b3-86df-a2de613f5018.xml, WwanSmsCdmaLangSpanish, WwanSmsCdmaLangEnglish, WWAN_SMS_CDMA_LANG, WwanSmsCdmaLangHebrew, wwan/WwanSmsCdmaLangJapanese, wwan/WwanSmsCdmaLangMax, netvista.wwan_sms_cdma_lang, wwan/WwanSmsCdmaLangSpanish, _WWAN_SMS_CDMA_LANG, wwan/WwanSmsCdmaLangHebrew, wwan/WwanSmsCdmaLangFrench, wwan/PWWAN_SMS_CDMA_LANG, wwan/WwanSmsCdmaLangUnknown, WwanSmsCdmaLangUnknown, wwan/WwanSmsCdmaLangEnglish, WwanSmsCdmaLangJapanese, WWAN_SMS_CDMA_LANG enumeration [Network Drivers Starting with Windows Vista], WwanSmsCdmaLangKorean, wwan/WwanSmsCdmaLangChinese, wwan/WWAN_SMS_CDMA_LANG, wwan/WwanSmsCdmaLangKorean, PWWAN_SMS_CDMA_LANG enumeration pointer [Network Drivers Starting with Windows Vista], WwanSmsCdmaLangChinese, PWWAN_SMS_CDMA_LANG, WwanSmsCdmaLangMax, WwanSmsCdmaLangFrench"
+ms.keywords : netvista.wwan_sms_cdma_lang, wwan/WwanSmsCdmaLangJapanese, wwan/WwanSmsCdmaLangHebrew, WWAN_SMS_CDMA_LANG, WwanSmsCdmaLangHebrew, wwan/WwanSmsCdmaLangMax, PWWAN_SMS_CDMA_LANG enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_SMS_CDMA_LANG, WwanSmsCdmaLangEnglish, WwanSmsCdmaLangChinese, wwan/WwanSmsCdmaLangChinese, wwan/WwanSmsCdmaLangEnglish, *PWWAN_SMS_CDMA_LANG, wwan/WWAN_SMS_CDMA_LANG, wwan/PWWAN_SMS_CDMA_LANG, wwan/WwanSmsCdmaLangFrench, WwanSmsCdmaLangFrench, WwanSmsCdmaLangJapanese, wwan/WwanSmsCdmaLangSpanish, WWAN_SMS_CDMA_LANG enumeration [Network Drivers Starting with Windows Vista], _WWAN_SMS_CDMA_LANG, WwanSmsCdmaLangKorean, wwan/WwanSmsCdmaLangUnknown, WwanSmsCdmaLangUnknown, WwanSmsCdmaLangSpanish, WwanSmsCdmaLangMax, wwan/WwanSmsCdmaLangKorean, WwanRef_21c9fcf4-07b0-43b3-86df-a2de613f5018.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -112,16 +112,14 @@ typedef enum _WWAN_SMS_CDMA_LANG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_sms_send_cdma.md">WWAN_SMS_SEND_CDMA</a>
-
 <a href="..\wwan\ns-wwan-_wwan_sms_cdma_record.md">WWAN_SMS_CDMA_RECORD</a>
+
+<a href="..\wwan\ns-wwan-_wwan_sms_send_cdma.md">WWAN_SMS_SEND_CDMA</a>
 
  
 

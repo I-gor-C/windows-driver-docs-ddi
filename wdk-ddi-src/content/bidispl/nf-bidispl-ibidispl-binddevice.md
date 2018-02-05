@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 880ff314-c79d-4395-83ad-ce61bb8da5b5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.ibidispl_ibidispl__binddevice, bidispl/IBidiSpl::IBidiSpl::BindDevice, IBidiSpl, IBidiSpl interface [Print Devices], IBidiSpl::BindDevice method, BIDI_ACCESS_USER, BindDevice, BIDI_ACCESS_ADMINISTRATOR, _win32_IBidiSpl_BindDevice, IBidiSpl::BindDevice method [Print Devices], IBidiSpl interface, IBidiSpl::BindDevice method [Print Devices], IBidiSpl::IBidiSpl::BindDevice, IBidiSpl::BindDevice, gdi.ibidispl_ibidispl__binddevice
+ms.keywords : IBidiSpl interface [Print Devices], IBidiSpl::BindDevice method, IBidiSpl, IBidiSpl::BindDevice method [Print Devices], IBidiSpl::BindDevice, print.ibidispl_ibidispl__binddevice, gdi.ibidispl_ibidispl__binddevice, bidispl/IBidiSpl::IBidiSpl::BindDevice, _win32_IBidiSpl_BindDevice, BIDI_ACCESS_USER, BIDI_ACCESS_ADMINISTRATOR, IBidiSpl::BindDevice method [Print Devices], IBidiSpl interface, BindDevice, IBidiSpl::IBidiSpl::BindDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -136,24 +136,21 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+<a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a>
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
-<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 
-<a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a>
+<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
 
  
 

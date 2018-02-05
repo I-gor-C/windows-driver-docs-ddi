@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2CF2C69B-A5DF-4A78-BC15-EB80FAC51831
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanModemConfigReasonSIMRemoved, PWWAN_MODEM_CONFIG_REASON, _WWAN_MODEM_CONFIG_REASON, WwanModemConfigReasonIMSIReset, wwan/PWWAN_MODEM_CONFIG_REASON, wwan/WwanModemConfigReasonModemReset, wwan/WwanModemConfigReasonIMSIReset, WwanModemConfigReasonModemRecovery, WwanModemConfigReasonActivationFailure, *PWWAN_MODEM_CONFIG_REASON, wwan/WwanModemConfigReasonSIMDetected, WwanModemConfigReasonConfigFileUpdate, WWAN_MODEM_CONFIG_REASON enumeration [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_REASON, WwanModemConfigReasonModemReset, PWWAN_MODEM_CONFIG_REASON enumeration pointer [Network Drivers Starting with Windows Vista], WwanModemConfigReasonNOSIM, wwan/WWAN_MODEM_CONFIG_REASON, WwanModemConfigReasonSIMDetected, wwan/WwanModemConfigReasonNone, WwanModemConfigReasonNone, wwan/WwanModemConfigReasonActivationFailure, WwanModemConfigReasonSIMRemoved, netvista.wwan_modem_config_reason, WwanModemConfigReasonMax, wwan/WwanModemConfigReasonNOSIM, wwan/WwanModemConfigReasonMax, wwan/WwanModemConfigReasonModemRecovery, wwan/WwanModemConfigReasonConfigFileUpdate
+ms.keywords : PWWAN_MODEM_CONFIG_REASON enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanModemConfigReasonSIMRemoved, netvista.wwan_modem_config_reason, wwan/WwanModemConfigReasonModemRecovery, wwan/WwanModemConfigReasonIMSIReset, wwan/WwanModemConfigReasonNone, wwan/PWWAN_MODEM_CONFIG_REASON, wwan/WwanModemConfigReasonNOSIM, WwanModemConfigReasonSIMRemoved, WwanModemConfigReasonNone, WwanModemConfigReasonNOSIM, wwan/WWAN_MODEM_CONFIG_REASON, WwanModemConfigReasonIMSIReset, WwanModemConfigReasonModemRecovery, _WWAN_MODEM_CONFIG_REASON, wwan/WwanModemConfigReasonModemReset, wwan/WwanModemConfigReasonActivationFailure, WwanModemConfigReasonConfigFileUpdate, wwan/WwanModemConfigReasonSIMDetected, PWWAN_MODEM_CONFIG_REASON, *PWWAN_MODEM_CONFIG_REASON, WwanModemConfigReasonActivationFailure, WWAN_MODEM_CONFIG_REASON, wwan/WwanModemConfigReasonMax, WWAN_MODEM_CONFIG_REASON enumeration [Network Drivers Starting with Windows Vista], WwanModemConfigReasonMax, WwanModemConfigReasonSIMDetected, wwan/WwanModemConfigReasonConfigFileUpdate, WwanModemConfigReasonModemReset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -118,9 +118,7 @@ typedef enum _WWAN_MODEM_CONFIG_REASON {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWERSOURCEID, POWERSOURCEID"
+req.typenames : POWERSOURCEID, *PPOWERSOURCEID
 ---
 
 # IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY IOCTL
@@ -70,7 +70,7 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 and later operating systems. Windows 10 and later operating systems. |
 | **Header** | charging.h (include Charging.h) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 

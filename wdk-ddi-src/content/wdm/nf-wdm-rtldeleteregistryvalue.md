@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4bbedc96-a7e2-40bd-98f3-c1136f70564d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlDeleteRegistryValue, RtlDeleteRegistryValue, kernel.rtldeleteregistryvalue, RtlDeleteRegistryValue routine [Kernel-Mode Driver Architecture], k109_ad2e98c7-7787-49b2-b2af-1782d7f64e0d.xml
+ms.keywords : RtlDeleteRegistryValue routine [Kernel-Mode Driver Architecture], kernel.rtldeleteregistryvalue, RtlDeleteRegistryValue, k109_ad2e98c7-7787-49b2-b2af-1782d7f64e0d.xml, wdm/RtlDeleteRegistryValue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -164,12 +164,11 @@ On Windows 2000 and later versions of Windows, the routine leaves the handle ope
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlRtlPassive, HwStorPortProhibitedDDIs |
 
@@ -179,11 +178,11 @@ On Windows 2000 and later versions of Windows, the routine leaves the handle ope
 
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-
 <a href="..\wdm\nf-wdm-rtlwriteregistryvalue.md">RtlWriteRegistryValue</a>
 
 <a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
+
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
 
  
 

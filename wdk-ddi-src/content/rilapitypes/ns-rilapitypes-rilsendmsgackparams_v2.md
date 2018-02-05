@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 10bd2f88-ad1e-4d48-a338-e49c82a66d7a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSENDMSGACKPARAMS_V2, netvista.rilsendmsgackparams_v2_2, RILSENDMSGACKPARAMS, rilapitypes/RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2 structure [Network Drivers Starting with Windows Vista], *LPRILSENDMSGACKPARAMS
+ms.keywords : netvista.rilsendmsgackparams_v2_2, rilapitypes/RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2 structure [Network Drivers Starting with Windows Vista], RILSENDMSGACKPARAMS_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,7 +90,4 @@ typedef struct _RILSENDMSGACKPARAMS_V2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

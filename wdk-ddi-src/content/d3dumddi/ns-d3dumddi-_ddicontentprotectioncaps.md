@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d223712d-2c77-4bec-b8c0-d677d4caeac2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D_other_Structs_15111323-4ebe-49be-8ce6-d43a896533ee.xml, DDICONTENTPROTECTIONCAPS, display.ddicontentprotectioncaps, DDICONTENTPROTECTIONCAPS structure [Display Devices], _DDICONTENTPROTECTIONCAPS, d3dumddi/DDICONTENTPROTECTIONCAPS
+ms.keywords : "_DDICONTENTPROTECTIONCAPS, D3D_other_Structs_15111323-4ebe-49be-8ce6-d43a896533ee.xml, d3dumddi/DDICONTENTPROTECTIONCAPS, DDICONTENTPROTECTIONCAPS structure [Display Devices], DDICONTENTPROTECTIONCAPS, display.ddicontentprotectioncaps"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,16 +86,14 @@ If the runtime specifies NULL_GUID in the <b>CryptoType</b> member, the driver s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DDICONTENTPROTECTIONCAPS is supported beginning with the Windows 7 operating system. DDICONTENTPROTECTIONCAPS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 
  
 

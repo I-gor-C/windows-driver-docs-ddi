@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 82f36886-20bf-4981-b0f0-3871a87b6c4e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_MSGFLAG_REPLYPATH, netvista.rilmessageflags, RIL_MSGFLAG_REPLYPATH, ntddrilapitypes/RIL_MSGFLAG_CAUSEDBYCOMMAND, RILMESSAGEFLAGS, RIL_MSGFLAG_STATUSREPORTREQUESTED, RIL_MSGFLAG_ALL, ntddrilapitypes/RIL_MSGFLAG_REJECTDUPS, ntddrilapitypes/RIL_MSGFLAG_ALL, ntddrilapitypes/RIL_MSGFLAG_STATUSREPORTREQUESTED, RIL_MSGFLAG_CAUSEDBYCOMMAND, RIL_MSGFLAG_REJECTDUPS, ntddrilapitypes/RIL_MSGFLAG_HEADER, RIL_MSGFLAG_MORETOSEND, RIL_MSGFLAG_HEADER, RIL_MSGFLAG_STATUSREPORTRETURNED, ntddrilapitypes/RIL_MSGFLAG_STATUSREPORTRETURNED, ntddrilapitypes/RILMESSAGEFLAGS, ntddrilapitypes/RIL_MSGFLAG_MORETOSEND, RILMESSAGEFLAGS enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_MSGFLAG_REJECTDUPS, ntddrilapitypes/RIL_MSGFLAG_STATUSREPORTREQUESTED, RIL_MSGFLAG_REPLYPATH, ntddrilapitypes/RIL_MSGFLAG_HEADER, ntddrilapitypes/RIL_MSGFLAG_MORETOSEND, ntddrilapitypes/RIL_MSGFLAG_STATUSREPORTRETURNED, ntddrilapitypes/RIL_MSGFLAG_REJECTDUPS, ntddrilapitypes/RILMESSAGEFLAGS, RIL_MSGFLAG_CAUSEDBYCOMMAND, RIL_MSGFLAG_STATUSREPORTRETURNED, ntddrilapitypes/RIL_MSGFLAG_CAUSEDBYCOMMAND, ntddrilapitypes/RIL_MSGFLAG_REPLYPATH, RIL_MSGFLAG_ALL, ntddrilapitypes/RIL_MSGFLAG_ALL, RIL_MSGFLAG_HEADER, RIL_MSGFLAG_MORETOSEND, RILMESSAGEFLAGS enumeration [Network Drivers Starting with Windows Vista], RILMESSAGEFLAGS, netvista.rilmessageflags, RIL_MSGFLAG_STATUSREPORTREQUESTED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -109,7 +109,4 @@ typedef enum _RILMESSAGEFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 2959c470-1da7-4396-a591-7a356379f9de
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, WIAS_LWARNING macro [Imaging Devices], image.wias_lwarning, wiamdef/WIAS_LWARNING, WIAS_LWARNING
+ms.keywords : WIAS_LWARNING macro [Imaging Devices], IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, WIAS_LWARNING, image.wias_lwarning, wiamdef/WIAS_LWARNING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -92,14 +92,10 @@ The following is an example of how the macro can be used:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamdef.h |
 
 ## See Also
 

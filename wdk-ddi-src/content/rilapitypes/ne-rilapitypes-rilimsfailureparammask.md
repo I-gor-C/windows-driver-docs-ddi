@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 07d651cd-b890-49cf-a543-2fc2fbf52412
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_IMSFAILURE_ALL, rilapitypes/RILIMSFAILUREPARAMMASK, RILIMSFAILUREPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_IMSFAILURE_MESSAGETYPE, rilapitypes/RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, RIL_PARAM_IMSFAILURE_ERRORCODE, rilapitypes/RIL_PARAM_IMSFAILURE_ERRORSTRING, netvista.rilimsfailureparammask_2, RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, RIL_PARAM_IMSFAILURE_MESSAGETYPE, RIL_PARAM_IMSFAILURE_ERRORSTRING, rilapitypes/RIL_PARAM_IMSFAILURE_ERRORCODE, RILIMSFAILUREPARAMMASK, rilapitypes/RIL_PARAM_IMSFAILURE_ALL
+ms.keywords : RILIMSFAILUREPARAMMASK, rilapitypes/RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, RIL_PARAM_IMSFAILURE_ERRORCODE, RIL_PARAM_IMSFAILURE_ERRORSTRING, rilapitypes/RIL_PARAM_IMSFAILURE_ERRORSTRING, rilapitypes/RIL_PARAM_IMSFAILURE_ALL, rilapitypes/RILIMSFAILUREPARAMMASK, rilapitypes/RIL_PARAM_IMSFAILURE_MESSAGETYPE, RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, RIL_PARAM_IMSFAILURE_ALL, netvista.rilimsfailureparammask_2, RILIMSFAILUREPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_IMSFAILURE_MESSAGETYPE, rilapitypes/RIL_PARAM_IMSFAILURE_ERRORCODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,4 @@ typedef enum _RILIMSFAILUREPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

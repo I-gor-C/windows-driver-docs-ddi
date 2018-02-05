@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 2C47165D-9D04-46C8-A1EC-04E6F32AE516
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PCMP_SET_PLUG, CMP_SET_PLUG, PCMP_SET_PLUG, 61883/CMP_SET_PLUG, CMP_SET_PLUG structure [Buses], _CMP_SET_PLUG, 61883/PCMP_SET_PLUG, PCMP_SET_PLUG structure pointer [Buses], IEEE.cmp_set_plug"
+ms.keywords : 61883/CMP_SET_PLUG, PCMP_SET_PLUG, IEEE.cmp_set_plug, _CMP_SET_PLUG, 61883/PCMP_SET_PLUG, CMP_SET_PLUG, PCMP_SET_PLUG structure pointer [Buses], CMP_SET_PLUG structure [Buses], *PCMP_SET_PLUG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,6 @@ If a driver attempts to set the contents of a plug register it did not create, t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

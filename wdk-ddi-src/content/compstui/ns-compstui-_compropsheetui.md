@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 7ebf46b7-5c31-482e-8644-a3d81f7dc5cc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PCOMPROPSHEETUI, compstui/COMPROPSHEETUI, COMPROPSHEETUI, cpsuifnc_9b1aab20-fcd7-41b5-8bc5-959ae606d6b8.xml, COMPROPSHEETUI structure [Print Devices], compstui/PCOMPROPSHEETUI, print.compropsheetui, *PCOMPROPSHEETUI, _COMPROPSHEETUI, PCOMPROPSHEETUI structure pointer [Print Devices]
+ms.keywords : COMPROPSHEETUI structure [Print Devices], compstui/COMPROPSHEETUI, PCOMPROPSHEETUI structure pointer [Print Devices], cpsuifnc_9b1aab20-fcd7-41b5-8bc5-959ae606d6b8.xml, *PCOMPROPSHEETUI, PCOMPROPSHEETUI, _COMPROPSHEETUI, print.compropsheetui, compstui/PCOMPROPSHEETUI, COMPROPSHEETUI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : COMPROPSHEETUI, *PCOMPROPSHEETUI
+req.typenames : "*PCOMPROPSHEETUI, COMPROPSHEETUI"
 ---
 
 # _COMPROPSHEETUI structure
@@ -223,7 +223,4 @@ Optional caller-supplied value, which CPSUI places in a <a href="..\compstui\ns-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

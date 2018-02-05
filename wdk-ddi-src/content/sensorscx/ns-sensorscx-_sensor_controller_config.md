@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_SENSOR_CONTROLLER_CONFIG, sensors.sensor_controller_config, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], *PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], sensorscx/SENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG, sensorscx/PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG"
+ms.keywords : PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], sensorscx/PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], sensorscx/SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, sensors.sensor_controller_config, _SENSOR_CONTROLLER_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -130,25 +130,6 @@ This callback function handles IOCTLs outside of the class extension.<div class=
 
 
 
-#### Sensor
-
-A reference to a sensor object.
-
-
-
-
-#### Request
-
-A handle to a framework request object that represents the I/O request.
-
-
-#### OutputBufferLength
-
-The length of the output buffer (in bytes).
-
-
-
-
 #### InputBufferLength
 
 The length of the input buffer (in bytes).
@@ -159,6 +140,25 @@ The length of the input buffer (in bytes).
 #### IoControlCode
 
 The code that indicates which device I/O control function is to be executed.
+
+
+
+
+#### OutputBufferLength
+
+The length of the output buffer (in bytes).
+
+
+
+
+#### Request
+
+A handle to a framework request object that represents the I/O request.
+
+
+#### Sensor
+
+A reference to a sensor object.
 
 `EvtSensorDisableWake`
 
@@ -243,14 +243,14 @@ A reference to a sensor object.
 
 
 
-#### pThresholds
-
-A list of threshold properties and their values associated with the sensor.
-
-
 #### pSize
 
 The size of pThresholds.
+
+
+#### pThresholds
+
+A list of threshold properties and their values associated with the sensor.
 
 `EvtSensorGetProperties`
 
@@ -319,14 +319,14 @@ typedef EVT_SENSOR_DRIVER_SET_BATCH_LATENCY *PFN_SENSOR_DRIVER_SET_BATCH_LATENCY
 
 
 
-#### Sensor
-
-A reference to a sensor object.
-
-
 #### BatchLatencyMs
 
 The batch latency, expressed in milliseconds.
+
+
+#### Sensor
+
+A reference to a sensor object.
 
 `EvtSensorSetDataInterval`
 
@@ -339,16 +339,14 @@ This callback function sets the data interval for a specified sensor.
 
 
 
-#### Sensor
-
-A reference to a sensor object.
-
-
-
-
 #### DataRateMs
 
 The data interval for to set for the sensor.
+
+
+#### Sensor
+
+A reference to a sensor object.
 
 `EvtSensorSetDataThresholds`
 
@@ -446,7 +444,5 @@ This structure is given to the class extension using the <a href="..\sensorscx\n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | sensorscx.h |

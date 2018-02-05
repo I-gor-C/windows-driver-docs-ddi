@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 87767b2b-8ca3-4d19-8719-673562246a41
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerPerformDiagnostics function [Storage Devices], chgrmini_dd38573a-a1cc-4b7b-abdf-0a200ba11d88.xml, storage.changerperformdiagnostics, mcd/ChangerPerformDiagnostics, ChangerPerformDiagnostics
+ms.keywords : chgrmini_dd38573a-a1cc-4b7b-abdf-0a200ba11d88.xml, ChangerPerformDiagnostics function [Storage Devices], mcd/ChangerPerformDiagnostics, storage.changerperformdiagnostics, ChangerPerformDiagnostics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,9 @@ STATUS_BUFFER_TOO_SMALL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

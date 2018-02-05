@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : C88A1F30-FC6B-4EC4-8F10-F507E17CF01D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRB_REQ_ASYNC_READ structure [Buses], _IRB_REQ_ASYNC_READ, IRB_REQ_ASYNC_READ, IEEE.irb_req_async_read, 1394/IRB_REQ_ASYNC_READ
+ms.keywords : IEEE.irb_req_async_read, 1394/IRB_REQ_ASYNC_READ, _IRB_REQ_ASYNC_READ, IRB_REQ_ASYNC_READ structure [Buses], IRB_REQ_ASYNC_READ
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -145,7 +145,4 @@ Specifies the bus reset generation as known by the device driver that submits th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

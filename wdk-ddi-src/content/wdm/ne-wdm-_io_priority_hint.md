@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 38d19398-b34f-4934-b643-df119ebd9711
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_IO_PRIORITY_HINT, IoPriorityVeryLow, wdm/IoPriorityCritical, wdm/IoPriorityLow, wdm/IO_PRIORITY_HINT, IO_PRIORITY_HINT enumeration [Kernel-Mode Driver Architecture], wdm/IoPriorityNormal, wdm/IoPriorityHigh, IoPriorityHigh, IoPriorityLow, IoPriorityCritical, wdm/MaxIoPriorityTypes, MaxIoPriorityTypes, kernel.io_priority_hint, wdm/IoPriorityVeryLow, sysenum_0b8187d9-c762-45d2-a310-294c3c696608.xml, IO_PRIORITY_HINT, IoPriorityNormal"
+ms.keywords : wdm/IoPriorityVeryLow, sysenum_0b8187d9-c762-45d2-a310-294c3c696608.xml, wdm/IO_PRIORITY_HINT, wdm/IoPriorityCritical, _IO_PRIORITY_HINT, wdm/IoPriorityLow, IoPriorityHigh, wdm/IoPriorityHigh, IoPriorityNormal, wdm/IoPriorityNormal, MaxIoPriorityTypes, IoPriorityVeryLow, IO_PRIORITY_HINT enumeration [Kernel-Mode Driver Architecture], wdm/MaxIoPriorityTypes, IoPriorityCritical, IO_PRIORITY_HINT, IoPriorityLow, kernel.io_priority_hint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -96,9 +96,6 @@ For more information about priority hints, see <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

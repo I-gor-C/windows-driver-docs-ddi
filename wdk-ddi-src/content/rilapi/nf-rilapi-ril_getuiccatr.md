@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7518f018-5ece-43e6-8aad-02038c0e94fc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_getuiccatr, rilapi/RIL_GetUiccATR, RIL_GetUiccATR, RIL_GetUiccATR method [Network Drivers Starting with Windows Vista]
+ms.keywords : rilapi/RIL_GetUiccATR, RIL_GetUiccATR method [Network Drivers Starting with Windows Vista], RIL_GetUiccATR, netvista.ril_getuiccatr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

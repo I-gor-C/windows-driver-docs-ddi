@@ -114,20 +114,14 @@ The worker routine must clear the interrupt on the HBA before it returns <b>TRUE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
-
 <a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
+
+<a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
 
 <a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
 

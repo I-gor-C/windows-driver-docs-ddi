@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : b50a63cd-69eb-46a8-9d0b-660795c7047f
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : DeRegisterOpRegionHandler, DeRegisterOpRegionHandler routine [ACPI Devices], opregref_e991e152-6162-4d45-9418-282afb447d18.xml, acpi.deregisteropregionhandler, oprghdlr/DeRegisterOpRegionHandler
+ms.keywords : DeRegisterOpRegionHandler routine [ACPI Devices], acpi.deregisteropregionhandler, opregref_e991e152-6162-4d45-9418-282afb447d18.xml, oprghdlr/DeRegisterOpRegionHandler, DeRegisterOpRegionHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,20 +114,16 @@ For more information about operation regions, see <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | oprghdlr.h (include Oprghdlr.h) |
-| **Library** |  |
+| **Library** | Oprghdlr.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
-
 <a href="..\oprghdlr\nc-oprghdlr-acpi_op_region_handler.md">ACPI_OP_REGION_HANDLER</a>
+
+<a href="..\oprghdlr\nf-oprghdlr-registeropregionhandler.md">RegisterOpRegionHandler</a>
 
  
 

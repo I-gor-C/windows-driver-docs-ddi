@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8c598cb8-083a-459d-b94b-958b7d625c88
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbTargetDeviceGetIoTarget, kmdf.wdfusbtargetdevicegetiotarget, WdfUsbTargetDeviceGetIoTarget, WdfUsbTargetDeviceGetIoTarget method, PFN_WDFUSBTARGETDEVICEGETIOTARGET, DFUsbRef_d65932cf-8891-4687-a784-eb6f794759fd.xml, wdf.wdfusbtargetdevicegetiotarget
+ms.keywords : kmdf.wdfusbtargetdevicegetiotarget, WdfUsbTargetDeviceGetIoTarget, wdf.wdfusbtargetdevicegetiotarget, wdfusb/WdfUsbTargetDeviceGetIoTarget, PFN_WDFUSBTARGETDEVICEGETIOTARGET, DFUsbRef_d65932cf-8891-4687-a784-eb6f794759fd.xml, WdfUsbTargetDeviceGetIoTarget method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,12 @@ For more information about the <b>WdfUsbTargetDeviceGetIoTarget</b> method and U
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

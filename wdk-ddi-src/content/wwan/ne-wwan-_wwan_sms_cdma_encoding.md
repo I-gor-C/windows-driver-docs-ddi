@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1f632da2-36bb-491e-b445-5c320277a446
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_a106195c-4a1c-4f95-9c38-91390dadf046.xml, wwan/WwanSmsCdmaEncoding7BitAscii, wwan/WwanSmsCdmaEncodingLatin, WwanSmsCdmaEncodingGsm7Bit, WwanSmsCdmaEncodingMax, WwanSmsCdmaEncodingIa5, *PWWAN_SMS_CDMA_ENCODING, WwanSmsCdmaEncodingShiftJis, wwan/WwanSmsCdmaEncodingMax, WwanSmsCdmaEncodingUnicode, WWAN_SMS_CDMA_ENCODING enumeration [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_CDMA_ENCODING, wwan/WwanSmsCdmaEncodingUnicode, PWWAN_SMS_CDMA_ENCODING, wwan/WwanSmsCdmaEncodingEpm, WwanSmsCdmaEncodingKorean, WwanSmsCdmaEncodingOctet, wwan/WwanSmsCdmaEncodingIa5, WwanSmsCdmaEncodingLatinHebrew, WWAN_SMS_CDMA_ENCODING, WwanSmsCdmaEncodingEpm, wwan/WwanSmsCdmaEncodingOctet, PWWAN_SMS_CDMA_ENCODING enumeration pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SMS_CDMA_ENCODING, wwan/WwanSmsCdmaEncodingGsm7Bit, WwanSmsCdmaEncoding7BitAscii, WwanSmsCdmaEncodingLatin, wwan/WwanSmsCdmaEncodingShiftJis, wwan/WwanSmsCdmaEncodingKorean, netvista.wwan_sms_cdma_encoding, wwan/WwanSmsCdmaEncodingLatinHebrew, _WWAN_SMS_CDMA_ENCODING
+ms.keywords : WwanRef_a106195c-4a1c-4f95-9c38-91390dadf046.xml, WWAN_SMS_CDMA_ENCODING enumeration [Network Drivers Starting with Windows Vista], wwan/WwanSmsCdmaEncodingShiftJis, WwanSmsCdmaEncodingGsm7Bit, _WWAN_SMS_CDMA_ENCODING, wwan/WwanSmsCdmaEncodingEpm, WwanSmsCdmaEncodingLatinHebrew, WwanSmsCdmaEncodingShiftJis, wwan/WwanSmsCdmaEncoding7BitAscii, wwan/WwanSmsCdmaEncodingLatin, WwanSmsCdmaEncodingIa5, PWWAN_SMS_CDMA_ENCODING, WwanSmsCdmaEncoding7BitAscii, wwan/WwanSmsCdmaEncodingKorean, WwanSmsCdmaEncodingLatin, WwanSmsCdmaEncodingUnicode, wwan/WwanSmsCdmaEncodingIa5, WwanSmsCdmaEncodingEpm, wwan/WwanSmsCdmaEncodingMax, *PWWAN_SMS_CDMA_ENCODING, wwan/WWAN_SMS_CDMA_ENCODING, wwan/WwanSmsCdmaEncodingUnicode, wwan/WwanSmsCdmaEncodingGsm7Bit, PWWAN_SMS_CDMA_ENCODING enumeration pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_cdma_encoding, WWAN_SMS_CDMA_ENCODING, WwanSmsCdmaEncodingMax, WwanSmsCdmaEncodingOctet, wwan/WwanSmsCdmaEncodingOctet, WwanSmsCdmaEncodingKorean, wwan/WwanSmsCdmaEncodingLatinHebrew, wwan/PWWAN_SMS_CDMA_ENCODING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_SMS_CDMA_ENCODING, *PWWAN_SMS_CDMA_ENCODING
+req.typenames : "*PWWAN_SMS_CDMA_ENCODING, WWAN_SMS_CDMA_ENCODING"
 req.product : Windows 10 or later.
 ---
 
@@ -124,16 +124,14 @@ typedef enum _WWAN_SMS_CDMA_ENCODING {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_sms_send_cdma.md">WWAN_SMS_SEND_CDMA</a>
-
 <a href="..\wwan\ns-wwan-_wwan_sms_cdma_record.md">WWAN_SMS_CDMA_RECORD</a>
+
+<a href="..\wwan\ns-wwan-_wwan_sms_send_cdma.md">WWAN_SMS_SEND_CDMA</a>
 
  
 

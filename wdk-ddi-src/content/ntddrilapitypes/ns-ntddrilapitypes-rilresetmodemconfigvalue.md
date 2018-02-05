@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 48068d1d-3fe7-4bd6-8c91-094e4187ca1f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILRESETMODEMCONFIGVALUE, ntddrilapitypes/RILRESETMODEMCONFIGVALUE, netvista.rilresetmodemconfigvalue, RILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : ntddrilapitypes/RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE structure [Network Drivers Starting with Windows Vista], RILRESETMODEMCONFIGVALUE, netvista.rilresetmodemconfigvalue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILRESETMODEMCONFIGVALUE, *LPRILRESETMODEMCONFIGVALUE
+req.typenames : "*LPRILRESETMODEMCONFIGVALUE, RILRESETMODEMCONFIGVALUE"
 ---
 
 # RILRESETMODEMCONFIGVALUE structure
@@ -77,7 +77,4 @@ typedef struct _RILRESETMODEMCONFIGVALUE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

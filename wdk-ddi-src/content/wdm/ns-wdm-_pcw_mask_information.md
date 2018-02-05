@@ -81,7 +81,5 @@ A Unicode string that contains a wildcard specification of the instance. That is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 77101494-97bb-4049-8c6c-cdb4ee82f312
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_BITMAPINFOHEADER, PKS_BITMAPINFOHEADER, tagKS_BITMAPINFOHEADER, stream.ks_bitmapinfoheader, ksmedia/PKS_BITMAPINFOHEADER, PKS_BITMAPINFOHEADER structure pointer [Streaming Media Devices], vidcapstruct_14e65a26-c943-4fad-949a-87aaf584e50c.xml, ksmedia/KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER structure [Streaming Media Devices]
+ms.keywords : "*PKS_BITMAPINFOHEADER, ksmedia/KS_BITMAPINFOHEADER, vidcapstruct_14e65a26-c943-4fad-949a-87aaf584e50c.xml, ksmedia/PKS_BITMAPINFOHEADER, PKS_BITMAPINFOHEADER, stream.ks_bitmapinfoheader, PKS_BITMAPINFOHEADER structure pointer [Streaming Media Devices], tagKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER structure [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER
+req.typenames : "*PKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER"
 ---
 
 # tagKS_BITMAPINFOHEADER structure
@@ -111,7 +111,4 @@ This is the same structure as the user-mode GDI bitmap header (BITMAPINFOHEADER)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

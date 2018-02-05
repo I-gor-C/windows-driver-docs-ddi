@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e2a19bb1-631d-4160-9980-f3cbeb0b085a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : strmini/HW_STREAM_REQUEST_BLOCK, strclass-struct_4b0da124-b08a-49fe-acbc-9457db500b26.xml, HW_STREAM_REQUEST_BLOCK, strmini/PHW_STREAM_REQUEST_BLOCK, _HW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK structure [Streaming Media Devices], PHW_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], *PHW_STREAM_REQUEST_BLOCK, stream.hw_stream_request_block, PHW_STREAM_REQUEST_BLOCK
+ms.keywords : strmini/HW_STREAM_REQUEST_BLOCK, strmini/PHW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], HW_STREAM_REQUEST_BLOCK, _HW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK, strclass-struct_4b0da124-b08a-49fe-acbc-9457db500b26.xml, *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK structure [Streaming Media Devices], stream.hw_stream_request_block
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,7 +89,7 @@ typedef struct _HW_STREAM_REQUEST_BLOCK {
 
 `_CommandData`
 
-
+<b>CommandData</b> is a union of members provided for command-code-specific data.
 
 `_HW_STREAM_REQUEST_BLOCK`
 
@@ -234,7 +234,4 @@ If the class driver times out the request, it will call the minidriver's <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |

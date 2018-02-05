@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 333f54e8-738e-4d1f-8fd7-93f282d9b9d8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtCreateKey, kernel.zwcreatekey, wdm/NtCreateKey, ZwCreateKey, k111_1ab9fba3-0c39-45b8-9a79-d33ad73c0642.xml, wdm/ZwCreateKey, ZwCreateKey routine [Kernel-Mode Driver Architecture]
+ms.keywords : ZwCreateKey, ZwCreateKey routine [Kernel-Mode Driver Architecture], kernel.zwcreatekey, k111_1ab9fba3-0c39-45b8-9a79-d33ad73c0642.xml, wdm/NtCreateKey, NtCreateKey, wdm/ZwCreateKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -310,40 +310,39 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport) |
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwflushkey.md">ZwFlushKey</a>
-
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
-<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
+<a href="..\ntifs\nf-ntifs-zwnotifychangekey.md">ZwNotifyChangeKey</a>
 
 <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
 
-<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
 <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 
-<a href="..\ntifs\nf-ntifs-zwnotifychangekey.md">ZwNotifyChangeKey</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
+<a href="..\wdm\nf-wdm-zwflushkey.md">ZwFlushKey</a>
+
+<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
+
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

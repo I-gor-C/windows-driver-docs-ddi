@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3f95caad-92e5-4d0f-bd9e-8873b05f2aaa
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestretrieveoutputwdmmdl, PFN_WDFREQUESTRETRIEVEOUTPUTWDMMDL, kmdf.wdfrequestretrieveoutputwdmmdl, DFRequestObjectRef_e3ef5371-4d09-406c-9a72-c420822e9fdd.xml, wdfrequest/WdfRequestRetrieveOutputWdmMdl, WdfRequestRetrieveOutputWdmMdl, WdfRequestRetrieveOutputWdmMdl method
+ms.keywords : kmdf.wdfrequestretrieveoutputwdmmdl, PFN_WDFREQUESTRETRIEVEOUTPUTWDMMDL, wdfrequest/WdfRequestRetrieveOutputWdmMdl, WdfRequestRetrieveOutputWdmMdl method, WdfRequestRetrieveOutputWdmMdl, DFRequestObjectRef_e3ef5371-4d09-406c-9a72-c420822e9fdd.xml, wdf.wdfrequestretrieveoutputwdmmdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -152,12 +152,10 @@ For more information about <b>WdfRequestRetrieveOutputWdmMdl</b>, see <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, MdlAfterReqCompletedIntIoctl, MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctl, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedRead, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWrite, OutputBufferAPI |
 

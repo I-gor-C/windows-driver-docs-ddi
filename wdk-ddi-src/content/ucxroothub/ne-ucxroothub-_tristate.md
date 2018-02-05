@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 16D8981B-53D3-4886-A85F-B487701ED172
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.tristate, ucxroothub/TRISTATE, TriStateTrue, _TRISTATE, TRISTATE enumeration [Buses], ucxroothub/TriStateTrue, ucxroothub/TriStateFalse, TRISTATE, TriStateUnknown, ucxroothub/TriStateUnknown, TriStateFalse
+ms.keywords : ucxroothub/TriStateFalse, _TRISTATE, TriStateTrue, ucxroothub/TRISTATE, TriStateFalse, TRISTATE enumeration [Buses], ucxroothub/TriStateTrue, buses.tristate, ucxroothub/TriStateUnknown, TRISTATE, TriStateUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,4 @@ typedef enum _TRISTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxroothub.h (include Ucxclass.h) |

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 56b9cdb5-2734-45b5-aeaf-ae6d606d1a5c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.hdaudio_codec_response, hdaudio/PHDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE structure [Audio Devices], PHDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE structure pointer [Audio Devices], _HDAUDIO_CODEC_RESPONSE, hdaudio/HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE, aud-prop2_2cf51d01-4493-439c-9a5f-30b86d76502b.xml
+ms.keywords : HDAUDIO_CODEC_RESPONSE, hdaudio/HDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE structure pointer [Audio Devices], aud-prop2_2cf51d01-4493-439c-9a5f-30b86d76502b.xml, hdaudio/PHDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE, audio.hdaudio_codec_response, _HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE structure [Audio Devices], *PHDAUDIO_CODEC_RESPONSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE"
+req.typenames : HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE
 ---
 
 # _HDAUDIO_CODEC_RESPONSE structure
@@ -90,18 +90,15 @@ If <b>HasFifoOverrun</b>=0, the codec failed to respond.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
 ## See Also
 
-<a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
+<a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a>
 
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a>
 
-<a href="..\hdaudio\nc-hdaudio-pregister_event_callback.md">RegisterEventCallback</a>
+<a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
 
  
 

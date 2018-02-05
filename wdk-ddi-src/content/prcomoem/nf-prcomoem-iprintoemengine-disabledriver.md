@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1BCE08D6-B25E-4C1B-B0F7-A53BE0E705A1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrintOemEngine::DisableDriver, DisableDriver method [Print Devices], IPrintOemEngine interface [Print Devices], DisableDriver method, DisableDriver, print.iprintoemengine_disabledriver, prcomoem/IPrintOemEngine::DisableDriver, IPrintOemEngine, DisableDriver method [Print Devices], IPrintOemEngine interface
+ms.keywords : print.iprintoemengine_disabledriver, IPrintOemEngine, IPrintOemEngine interface [Print Devices], DisableDriver method, DisableDriver method [Print Devices], DisableDriver method [Print Devices], IPrintOemEngine interface, prcomoem/IPrintOemEngine::DisableDriver, DisableDriver, IPrintOemEngine::DisableDriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -63,14 +63,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | prcomoem.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | prcomoem.h |
 
 ## See Also
 

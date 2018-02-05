@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b5de2450-8003-4866-86e8-1fd251e1552c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolNameWide, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2::GetSymbolNameWide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, IDebugSymbolGroup2, debugger.getsymbolnamewide, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide
+ms.keywords : GetSymbolNameWide, IDebugSymbolGroup2, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolNameWide method [Windows Debugging], debugger.getsymbolnamewide, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, IDebugSymbolGroup2::GetSymbolNameWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -112,14 +112,9 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

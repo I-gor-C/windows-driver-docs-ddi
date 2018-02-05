@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 328f9ffe-67ae-4ba5-98e4-b3b00068eb0e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/MmIsAddressValid, MmIsAddressValid, kernel.mmisaddressvalid, MmIsAddressValid routine [Kernel-Mode Driver Architecture], k106_5f0349a5-5fdb-4263-b91a-d00667729901.xml
+ms.keywords : MmIsAddressValid, kernel.mmisaddressvalid, ntddk/MmIsAddressValid, k106_5f0349a5-5fdb-4263-b91a-d00667729901.xml, MmIsAddressValid routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,12 @@ Even if <b>MmIsAddressValid</b> returns <b>TRUE</b>, accessing the address can c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

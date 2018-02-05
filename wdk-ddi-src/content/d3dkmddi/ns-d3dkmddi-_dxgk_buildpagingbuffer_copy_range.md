@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BA35F50C-7399-41DC-A10B-2F5E4BB24B49
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_BUILDPAGINGBUFFER_COPY_RANGE, DXGK_BUILDPAGINGBUFFER_COPY_RANGE structure [Display Devices], _DXGK_BUILDPAGINGBUFFER_COPY_RANGE, display.dxgk_buildpagingbuffer_copy_range, d3dkmddi/DXGK_BUILDPAGINGBUFFER_COPY_RANGE
+ms.keywords : DXGK_BUILDPAGINGBUFFER_COPY_RANGE structure [Display Devices], d3dkmddi/DXGK_BUILDPAGINGBUFFER_COPY_RANGE, display.dxgk_buildpagingbuffer_copy_range, DXGK_BUILDPAGINGBUFFER_COPY_RANGE, _DXGK_BUILDPAGINGBUFFER_COPY_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,16 +79,14 @@ The index of the first page table entry in the source page table for the range.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_copypagetableentries.md">DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 
  
 

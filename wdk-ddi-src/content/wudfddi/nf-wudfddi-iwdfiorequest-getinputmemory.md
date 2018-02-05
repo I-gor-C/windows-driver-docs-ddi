@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : be3f965b-69fe-4d5e-b1b6-3a370603cd7b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoRequest::GetInputMemory, UMDFRequestObjectRef_80c18660-b423-42b0-879d-a8732d2e7796.xml, GetInputMemory method, IWDFIoRequest interface, IWDFIoRequest interface, GetInputMemory method, wdf.iwdfiorequest_getinputmemory, IWDFIoRequest::GetInputMemory, GetInputMemory, IWDFIoRequest, GetInputMemory method, umdf.iwdfiorequest_getinputmemory
+ms.keywords : UMDFRequestObjectRef_80c18660-b423-42b0-879d-a8732d2e7796.xml, IWDFIoRequest::GetInputMemory, wdf.iwdfiorequest_getinputmemory, wudfddi/IWDFIoRequest::GetInputMemory, IWDFIoRequest interface, GetInputMemory method, GetInputMemory, umdf.iwdfiorequest_getinputmemory, GetInputMemory method, GetInputMemory method, IWDFIoRequest interface, IWDFIoRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -79,22 +79,20 @@ For more information about accessing an I/O request's data buffers, see <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560152">IWDFMemory::GetDataBuffer</a>
 

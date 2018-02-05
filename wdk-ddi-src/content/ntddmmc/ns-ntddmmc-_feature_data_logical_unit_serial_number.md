@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 74917f45-5a76-4112-ade2-992249500dc3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure pointer [Storage Devices], PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, structs-CD-ROM_c7f48548-00ff-49a8-93ac-2cab0e838e14.xml, *PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, ntddmmc/FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, ntddmmc/PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, _FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, storage.feature_data_logical_unit_serial_number, FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure [Storage Devices]
+ms.keywords : FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure [Storage Devices], PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, *PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, structs-CD-ROM_c7f48548-00ff-49a8-93ac-2cab0e838e14.xml, _FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, storage.feature_data_logical_unit_serial_number, ntddmmc/PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ This structure holds data for the feature named "Device Serial Number" by the <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9bb18fd3-e803-4f51-822e-88c06d3385cc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInterfaceReferenceNoOp method, DFDeviceObjectDriverDefIntRef_8acb0e5a-ff60-4779-ae97-c6a3c0214365.xml, PFN_WDFDEVICEINTERFACEREFERENCENOOP, wdfqueryinterface/WdfDeviceInterfaceReferenceNoOp, WdfDeviceInterfaceReferenceNoOp, wdf.wdfdeviceinterfacereferencenoop, kmdf.wdfdeviceinterfacereferencenoop
+ms.keywords : PFN_WDFDEVICEINTERFACEREFERENCENOOP, WdfDeviceInterfaceReferenceNoOp, WdfDeviceInterfaceReferenceNoOp method, DFDeviceObjectDriverDefIntRef_8acb0e5a-ff60-4779-ae97-c6a3c0214365.xml, wdf.wdfdeviceinterfacereferencenoop, wdfqueryinterface/WdfDeviceInterfaceReferenceNoOp, kmdf.wdfdeviceinterfacereferencenoop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_PDO_EVENT_CALLBACKS, WDF_PDO_EVENT_CALLBACKS"
+req.typenames : WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
 req.product : Windows 10 or later.
 ---
 
@@ -73,14 +73,11 @@ For more information about interface reference counts and the <b>WdfDeviceInterf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfqueryinterface.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : abb8d45a-a698-41b0-94b3-c658fe3105bb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SecMakeSPNEx2 function [Installable File System Drivers], SecMakeSPNEx2, ksecddref_be331d16-cc90-4e80-85cd-c2faaecca843.xml, ntifs/SecMakeSPNEx2, ifsk.secmakespnex2
+ms.keywords : SecMakeSPNEx2, ifsk.secmakespnex2, ksecddref_be331d16-cc90-4e80-85cd-c2faaecca843.xml, SecMakeSPNEx2 function [Installable File System Drivers], ntifs/SecMakeSPNEx2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -156,14 +156,11 @@ The <i>Allocate</i> parameter was set to <b>TRUE</b>, but the memory allocation 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This function is available on Windows Vista, Windows Server 2008, and later versions of the Windows operating systems. This function is available on Windows Vista, Windows Server 2008, and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | Ksecdd.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

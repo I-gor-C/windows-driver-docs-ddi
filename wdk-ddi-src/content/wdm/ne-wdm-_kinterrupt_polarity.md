@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2fcc4597-b169-43a8-b2bb-dd2dd66f29dc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PKINTERRUPT_POLARITY enumeration pointer [Kernel-Mode Driver Architecture], KINTERRUPT_POLARITY enumeration [Kernel-Mode Driver Architecture], wdm/PKINTERRUPT_POLARITY, wdm/InterruptFallingEdge, PKINTERRUPT_POLARITY, InterruptPolarityUnknown, InterruptActiveBoth, kernel.kinterrupt_polarity, KINTERRUPT_POLARITY, InterruptFallingEdge, wdm/InterruptPolarityUnknown, wdm/InterruptActiveLow, sysenum_56e5681d-ea77-4385-bd47-4add306a4fe8.xml, wdm/KINTERRUPT_POLARITY, *PKINTERRUPT_POLARITY, InterruptActiveBothTriggerHigh, wdm/InterruptRisingEdge, InterruptActiveLow, InterruptRisingEdge, wdm/InterruptActiveBoth, wdm/InterruptActiveBothTriggerLow, InterruptActiveBothTriggerLow, wdm/InterruptActiveBothTriggerHigh, wdm/InterruptActiveHigh, _KINTERRUPT_POLARITY, InterruptActiveHigh
+ms.keywords : InterruptActiveBothTriggerHigh, wdm/InterruptActiveHigh, wdm/InterruptRisingEdge, wdm/PKINTERRUPT_POLARITY, InterruptActiveLow, InterruptActiveBoth, InterruptPolarityUnknown, *PKINTERRUPT_POLARITY, wdm/InterruptActiveBothTriggerLow, InterruptFallingEdge, InterruptActiveHigh, PKINTERRUPT_POLARITY, wdm/InterruptFallingEdge, KINTERRUPT_POLARITY enumeration [Kernel-Mode Driver Architecture], InterruptRisingEdge, PKINTERRUPT_POLARITY enumeration pointer [Kernel-Mode Driver Architecture], wdm/InterruptPolarityUnknown, InterruptActiveBothTriggerLow, wdm/InterruptActiveBothTriggerHigh, kernel.kinterrupt_polarity, wdm/InterruptActiveBoth, wdm/KINTERRUPT_POLARITY, sysenum_56e5681d-ea77-4385-bd47-4add306a4fe8.xml, _KINTERRUPT_POLARITY, wdm/InterruptActiveLow, KINTERRUPT_POLARITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -108,9 +108,6 @@ A <b>KINTERRUPT_POLARITY</b> enumeration constant is frequently used in conjunct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

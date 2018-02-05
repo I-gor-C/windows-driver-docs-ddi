@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8a0e1e46-8bb1-4292-bd33-17ed4cc33c60
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_DEVICE_CAPS, _NDIS_WWAN_DEVICE_CAPS, ndiswwan/PNDIS_WWAN_DEVICE_CAPS, WwanRef_fb40a6ef-20ae-4623-91e6-b69196e6e518.xml, *PNDIS_WWAN_DEVICE_CAPS, PNDIS_WWAN_DEVICE_CAPS, NDIS_WWAN_DEVICE_CAPS, netvista.ndis_wwan_device_caps, NDIS_WWAN_DEVICE_CAPS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_CAPS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : ndiswwan/NDIS_WWAN_DEVICE_CAPS, NDIS_WWAN_DEVICE_CAPS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_caps, ndiswwan/PNDIS_WWAN_DEVICE_CAPS, WwanRef_fb40a6ef-20ae-4623-91e6-b69196e6e518.xml, *PNDIS_WWAN_DEVICE_CAPS, PNDIS_WWAN_DEVICE_CAPS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_CAPS, PNDIS_WWAN_DEVICE_CAPS, _NDIS_WWAN_DEVICE_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_DEVICE_CAPS, *PNDIS_WWAN_DEVICE_CAPS
+req.typenames : "*PNDIS_WWAN_DEVICE_CAPS, NDIS_WWAN_DEVICE_CAPS"
 ---
 
 # _NDIS_WWAN_DEVICE_CAPS structure
@@ -154,16 +154,14 @@ The operation failed because the device is in the process of initializing. Retry
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 61dd30b9-5290-4c72-b053-586066c58108
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_XPF_CACHE_CHECK, ntddk/PWHEA_XPF_CACHE_CHECK, PWHEA_XPF_CACHE_CHECK union pointer [WHEA Drivers and Applications], whearef_354fb32d-8724-4d6e-acc4-6d1a4cfd77a0.xml, whea.whea_xpf_cache_check, WHEA_XPF_CACHE_CHECK, WHEA_XPF_CACHE_CHECK union [WHEA Drivers and Applications], _WHEA_XPF_CACHE_CHECK, *PWHEA_XPF_CACHE_CHECK, ntddk/WHEA_XPF_CACHE_CHECK
+ms.keywords : WHEA_XPF_CACHE_CHECK, PWHEA_XPF_CACHE_CHECK union pointer [WHEA Drivers and Applications], PWHEA_XPF_CACHE_CHECK, whea.whea_xpf_cache_check, WHEA_XPF_CACHE_CHECK union [WHEA Drivers and Applications], ntddk/PWHEA_XPF_CACHE_CHECK, *PWHEA_XPF_CACHE_CHECK, _WHEA_XPF_CACHE_CHECK, ntddk/WHEA_XPF_CACHE_CHECK, whearef_354fb32d-8724-4d6e-acc4-6d1a4cfd77a0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,9 +85,7 @@ If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_proci
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

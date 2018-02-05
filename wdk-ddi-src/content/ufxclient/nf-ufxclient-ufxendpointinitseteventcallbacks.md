@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D3D8D948-400A-47A0-98E9-ECF5643DB5D2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxEndpointInitSetEventCallbacks, UfxEndpointInitSetEventCallbacks, UfxEndpointInitSetEventCallbacks method [Buses], buses.ufxendpointinitseteventcallbacks
+ms.keywords : UfxEndpointInitSetEventCallbacks method [Buses], UfxEndpointInitSetEventCallbacks, ufxclient/UfxEndpointInitSetEventCallbacks, buses.ufxendpointinitseteventcallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -78,11 +78,8 @@ For an code example that shows how to create a UFXENDPOINT object and initialize
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

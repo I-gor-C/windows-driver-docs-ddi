@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : baa0292a-b327-4fc0-9235-b1b977f93bf9
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : ACPI_ENUM_CHILD structure [ACPI Devices], *PACPI_ENUM_CHILD, acpiioct/ACPI_ENUM_CHILD, _ACPI_ENUM_CHILD, acpi-meth-eval-ref_7ffcb8d5-da55-4ed9-88db-8f954d01852b.xml, ACPI_ENUM_CHILD, acpi.acpi_enum_child
+ms.keywords : ACPI_ENUM_CHILD structure [ACPI Devices], _ACPI_ENUM_CHILD, acpi-meth-eval-ref_7ffcb8d5-da55-4ed9-88db-8f954d01852b.xml, ACPI_ENUM_CHILD, acpiioct/ACPI_ENUM_CHILD, *PACPI_ENUM_CHILD, acpi.acpi_enum_child
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,16 +75,14 @@ For information about how to enumerate child objects of a device, see <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows Vista and later versions of Windows. Windows Vista and later versions of Windows. |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
 ## See Also
 
-<a href="..\acpiioct\ns-acpiioct-_acpi_enum_children_output_buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
-
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_enum_children.md">IOCTL_ACPI_ENUM_CHILDREN</a>
+
+<a href="..\acpiioct\ns-acpiioct-_acpi_enum_children_output_buffer.md">ACPI_ENUM_CHILDREN_OUTPUT_BUFFER</a>
 
  
 

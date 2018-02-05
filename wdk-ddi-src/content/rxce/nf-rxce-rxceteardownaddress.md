@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 76fd7c35-fef1-43c2-aedd-d09d18ab27a4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeTearDownAddress function [Installable File System Drivers], ifsk.rxceteardownaddress, rxce/RxCeTearDownAddress, rxref_99fcdd00-8c1a-4a0b-8007-5b7f01a725bb.xml, RxCeTearDownAddress
+ms.keywords : RxCeTearDownAddress function [Installable File System Drivers], rxref_99fcdd00-8c1a-4a0b-8007-5b7f01a725bb.xml, rxce/RxCeTearDownAddress, ifsk.rxceteardownaddress, RxCeTearDownAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -86,14 +86,10 @@ When <b>RxCeTearDownAddress</b> is successful, the data members in the RXCE_ADDR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

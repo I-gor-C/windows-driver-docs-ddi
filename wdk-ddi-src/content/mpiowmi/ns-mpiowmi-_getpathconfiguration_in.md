@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 38396f75-6bcf-493e-9aab-661db59637ae
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PGetPathConfiguration_IN, mpiowmi/GetPathConfiguration_IN, PGetPathConfiguration_IN structure pointer [Storage Devices], *PGetPathConfiguration_IN, GetPathConfiguration_IN, _GetPathConfiguration_IN, GetPathConfiguration_IN structure [Storage Devices], storage.getpathconfiguration_in, mpiowmi/PGetPathConfiguration_IN, structs-scsibus_28444162-ae96-47fb-8857-562d52191bfe.xml
+ms.keywords : structs-scsibus_28444162-ae96-47fb-8857-562d52191bfe.xml, mpiowmi/GetPathConfiguration_IN, PGetPathConfiguration_IN, PGetPathConfiguration_IN structure pointer [Storage Devices], GetPathConfiguration_IN, GetPathConfiguration_IN structure [Storage Devices], mpiowmi/PGetPathConfiguration_IN, storage.getpathconfiguration_in, *PGetPathConfiguration_IN, _GetPathConfiguration_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GetPathConfiguration_IN, *PGetPathConfiguration_IN
+req.typenames : "*PGetPathConfiguration_IN, GetPathConfiguration_IN"
 ---
 
 # _GetPathConfiguration_IN structure
@@ -59,7 +59,4 @@ A 64-bitfield that specifies the path that is associated with the device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

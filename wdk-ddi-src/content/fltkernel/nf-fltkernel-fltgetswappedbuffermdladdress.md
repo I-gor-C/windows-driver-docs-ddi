@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 804263ec-8b3b-4a7c-9db4-ad524b807313
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetSwappedBufferMdlAddress, fltkernel/FltGetSwappedBufferMdlAddress, FltApiRef_e_to_o_7ebd2be1-79a1-4a5a-a9ab-7ca5023eb8fc.xml, ifsk.fltgetswappedbuffermdladdress, FltGetSwappedBufferMdlAddress routine [Installable File System Drivers]
+ms.keywords : ifsk.fltgetswappedbuffermdladdress, fltkernel/FltGetSwappedBufferMdlAddress, FltApiRef_e_to_o_7ebd2be1-79a1-4a5a-a9ab-7ca5023eb8fc.xml, FltGetSwappedBufferMdlAddress routine [Installable File System Drivers], FltGetSwappedBufferMdlAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,20 +83,17 @@ The MDL for the buffer that was swapped in by the caller is automatically freed 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltretainswappedbuffermdladdress.md">FltRetainSwappedBufferMdlAddress</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
 
  
 

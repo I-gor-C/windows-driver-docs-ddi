@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4c02da7e-2d93-4e0c-9666-acb380c6d39a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : LPSENDCMDINPARAMS, ntdddisk/PSENDCMDINPARAMS, _SENDCMDINPARAMS, structs-IDE_b80faf9d-dfcf-4eac-b0be-fb18964c4c2b.xml, *PSENDCMDINPARAMS, *LPSENDCMDINPARAMS, storage.sendcmdinparams, PSENDCMDINPARAMS, ntdddisk/SENDCMDINPARAMS, LPSENDCMDINPARAMS structure pointer [Storage Devices], PSENDCMDINPARAMS structure pointer [Storage Devices], ntdddisk/LPSENDCMDINPARAMS, SENDCMDINPARAMS, SENDCMDINPARAMS structure [Storage Devices]
+ms.keywords : structs-IDE_b80faf9d-dfcf-4eac-b0be-fb18964c4c2b.xml, storage.sendcmdinparams, ntdddisk/SENDCMDINPARAMS, *LPSENDCMDINPARAMS, *PSENDCMDINPARAMS, PSENDCMDINPARAMS structure pointer [Storage Devices], PSENDCMDINPARAMS, _SENDCMDINPARAMS, ntdddisk/PSENDCMDINPARAMS, SENDCMDINPARAMS structure [Storage Devices], LPSENDCMDINPARAMS structure pointer [Storage Devices], SENDCMDINPARAMS, LPSENDCMDINPARAMS, ntdddisk/LPSENDCMDINPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSENDCMDINPARAMS, *LPSENDCMDINPARAMS, SENDCMDINPARAMS"
+req.typenames : SENDCMDINPARAMS, *LPSENDCMDINPARAMS, *PSENDCMDINPARAMS
 ---
 
 # _SENDCMDINPARAMS structure
@@ -88,18 +88,15 @@ The SENDCMDINPARAMS structure is also used with the <a href="https://msdn.micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
+<a href="..\ntdddisk\ns-ntdddisk-_sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
 
  
 

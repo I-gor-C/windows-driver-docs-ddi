@@ -73,11 +73,11 @@ Optional. Pointer to a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM<
 
 `*DataRange`
 
-
+Pointer to a <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structure. The data range for the new format.
 
 `*AttributeRange`
 
-
+Optional. The attribute range for the new format.
 
 
 ## Return Value
@@ -99,14 +99,10 @@ This routine is optional.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -114,11 +110,11 @@ This routine is optional.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+
 <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
 
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
-
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
 

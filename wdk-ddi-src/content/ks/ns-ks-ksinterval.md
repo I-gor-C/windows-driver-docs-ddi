@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9e363bd1-3bfd-48cc-adc1-a14d23868a57
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksinterval, ks/KSINTERVAL, ks/PKSINTERVAL, KSINTERVAL, PKSINTERVAL, *PKSINTERVAL, ks-struct_56fded71-9af4-46a7-b872-1660582179ad.xml, PKSINTERVAL structure pointer [Streaming Media Devices], KSINTERVAL structure [Streaming Media Devices]
+ms.keywords : KSINTERVAL, KSINTERVAL structure [Streaming Media Devices], ks/KSINTERVAL, stream.ksinterval, *PKSINTERVAL, PKSINTERVAL structure pointer [Streaming Media Devices], ks-struct_56fded71-9af4-46a7-b872-1660582179ad.xml, PKSINTERVAL, ks/PKSINTERVAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Specifies a 64-bit time base.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : c213d811-a690-41b4-bed1-ec9890e8be46
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbioctl/PUSB_HUB_NAME, USB_HUB_NAME, usbstrct_d20b3e12-7b5c-408d-929e-2d781a765f56.xml, *PUSB_HUB_NAME, PUSB_HUB_NAME structure pointer [Buses], buses.usb_hub_name, usbioctl/USB_HUB_NAME, _USB_HUB_NAME, PUSB_HUB_NAME, USB_HUB_NAME structure [Buses]
+ms.keywords : usbioctl/PUSB_HUB_NAME, USB_HUB_NAME, PUSB_HUB_NAME structure pointer [Buses], usbstrct_d20b3e12-7b5c-408d-929e-2d781a765f56.xml, *PUSB_HUB_NAME, PUSB_HUB_NAME, _USB_HUB_NAME, usbioctl/USB_HUB_NAME, USB_HUB_NAME structure [Buses], buses.usb_hub_name
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_HUB_NAME, *PUSB_HUB_NAME
+req.typenames : "*PUSB_HUB_NAME, USB_HUB_NAME"
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,6 @@ A NULL-terminated Unicode string that contains the hub's symbolic device name.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also

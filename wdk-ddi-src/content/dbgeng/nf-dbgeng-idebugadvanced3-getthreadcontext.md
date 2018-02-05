@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6fe12f3b-b241-42e4-b35d-c8a485a5cfa8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugAdvanced2::GetThreadContext, GetThreadContext method [Windows Debugging], IDebugAdvanced interface, IDebugAdvanced3 interface [Windows Debugging], GetThreadContext method, IDebugAdvanced3, debugger.getthreadcontext, IDebugAdvanced3::GetThreadContext, GetThreadContext method [Windows Debugging], IDebugAdvanced3 interface, GetThreadContext method [Windows Debugging], IDebugAdvanced_1a044a89-612f-4a3c-b3cd-0a715ae6af92.xml, IDebugAdvanced::GetThreadContext, IDebugAdvanced2 interface [Windows Debugging], GetThreadContext method, GetThreadContext, dbgeng/IDebugAdvanced3::GetThreadContext, dbgeng/IDebugAdvanced::GetThreadContext, GetThreadContext method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced2::GetThreadContext, IDebugAdvanced interface [Windows Debugging], GetThreadContext method
+ms.keywords : IDebugAdvanced_1a044a89-612f-4a3c-b3cd-0a715ae6af92.xml, GetThreadContext method [Windows Debugging], IDebugAdvanced interface, dbgeng/IDebugAdvanced::GetThreadContext, IDebugAdvanced2 interface [Windows Debugging], GetThreadContext method, IDebugAdvanced3, IDebugAdvanced2::GetThreadContext, GetThreadContext method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3::GetThreadContext, IDebugAdvanced interface [Windows Debugging], GetThreadContext method, dbgeng/IDebugAdvanced2::GetThreadContext, IDebugAdvanced3 interface [Windows Debugging], GetThreadContext method, debugger.getthreadcontext, GetThreadContext method [Windows Debugging], GetThreadContext method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced::GetThreadContext, GetThreadContext, dbgeng/IDebugAdvanced3::GetThreadContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -91,24 +91,19 @@ For more information about the thread context, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Ntddk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556829">SetThreadContext</a>
+<a href="..\dbgeng\nn-dbgeng-idebugadvanced.md">IDebugAdvanced</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced.md">IDebugAdvanced</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548270">GetScope</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556829">SetThreadContext</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
 

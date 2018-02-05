@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e0ccc6e8-9351-4440-808b-e0b8eef48bc2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k106_b2a56ec8-cfee-4547-b1c2-6f817ecbfaad.xml, MmProtectMdlSystemAddress, wdm/MmProtectMdlSystemAddress, kernel.mmprotectmdlsystemaddress, MmProtectMdlSystemAddress routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.mmprotectmdlsystemaddress, MmProtectMdlSystemAddress, k106_b2a56ec8-cfee-4547-b1c2-6f817ecbfaad.xml, wdm/MmProtectMdlSystemAddress, MmProtectMdlSystemAddress routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,21 +65,6 @@ Specifies the new protection setting for the memory pages. Drivers should specif
 
 
 
-#### PAGE_NOACCESS
-
-The underlying memory pages cannot be read or written. 
-
-
-#### PAGE_READONLY
-
-The underlying memory pages can only be read, not written. 
-
-
-#### PAGE_READWRITE
-
-The underlying memory pages can be read or written. 
-
-
 #### PAGE_EXECUTE
 
 The underlying memory pages can be executed, but not read or written.
@@ -93,6 +78,21 @@ The underlying memory pages can be executed or read, but not written.
 #### PAGE_EXECUTE_READWRITE
 
 The underlying memory pages can be executed, read, or written.
+
+
+#### PAGE_NOACCESS
+
+The underlying memory pages cannot be read or written. 
+
+
+#### PAGE_READONLY
+
+The underlying memory pages can only be read, not written. 
+
+
+#### PAGE_READWRITE
+
+The underlying memory pages can be read or written.
 
 
 ## Return Value
@@ -145,14 +145,12 @@ The <b>MmProtectMdlSystemAddress</b> routine can only be called on an MDL that h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

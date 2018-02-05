@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5efe0ede-b55f-499e-9f95-66652cd8a872
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PMSFC_FCAdapterHBAAttributes, storage.msfc_fcadapterhbaattributes, structs-Fibre_07d902b9-2da0-4bca-94ab-db837beff481.xml, *PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes, hbapiwmi/MSFC_FCAdapterHBAAttributes, _MSFC_FCAdapterHBAAttributes, PMSFC_FCAdapterHBAAttributes structure pointer [Storage Devices], MSFC_FCAdapterHBAAttributes structure [Storage Devices], PMSFC_FCAdapterHBAAttributes
+ms.keywords : MSFC_FCAdapterHBAAttributes structure [Storage Devices], PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes, hbapiwmi/PMSFC_FCAdapterHBAAttributes, _MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes, structs-Fibre_07d902b9-2da0-4bca-94ab-db837beff481.xml, storage.msfc_fcadapterhbaattributes, hbapiwmi/MSFC_FCAdapterHBAAttributes, PMSFC_FCAdapterHBAAttributes structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes"
+req.typenames : MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes
 ---
 
 # _MSFC_FCAdapterHBAAttributes structure
@@ -134,16 +134,13 @@ Indicates a vendor-specific ID.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562497">MSFC_FCAdapterHBAAttributes WMI Class</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
  
 

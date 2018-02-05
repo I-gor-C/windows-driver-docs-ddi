@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a08cb12a-c574-4871-9bba-f8f3a766f377
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/RtlCharToInteger, k109_0c8d9b78-6363-4884-a475-4f402ea3643a.xml, kernel.rtlchartointeger, RtlCharToInteger routine [Kernel-Mode Driver Architecture], RtlCharToInteger
+ms.keywords : RtlCharToInteger, RtlCharToInteger routine [Kernel-Mode Driver Architecture], kernel.rtlchartointeger, k109_0c8d9b78-6363-4884-a475-4f402ea3643a.xml, ntddk/RtlCharToInteger
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,12 @@ Pointer to a location to which the converted value is returned.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 26d0aad9-86d0-4d97-978a-1e15285d3369
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_DEVICEINFOFLAGS, DmStructs_69e769da-b68e-4df6-94dd-95e11bc88b0c.xml, DXGK_DEVICEINFOFLAGS structure [Display Devices], display.dxgk_deviceinfoflags, _DXGK_DEVICEINFOFLAGS, d3dkmddi/DXGK_DEVICEINFOFLAGS
+ms.keywords : DXGK_DEVICEINFOFLAGS, DmStructs_69e769da-b68e-4df6-94dd-95e11bc88b0c.xml, _DXGK_DEVICEINFOFLAGS, display.dxgk_deviceinfoflags, DXGK_DEVICEINFOFLAGS structure [Display Devices], d3dkmddi/DXGK_DEVICEINFOFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,16 +61,14 @@ typedef struct _DXGK_DEVICEINFOFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
-
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_deviceinfo.md">DXGK_DEVICEINFO</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
 
  
 

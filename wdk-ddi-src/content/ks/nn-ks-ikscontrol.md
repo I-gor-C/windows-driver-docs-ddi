@@ -40,7 +40,7 @@ req.typenames :
 
 # IKsControl interface
 
-The <b>IKsControl</b> interface is a COM-style interface implemented on AVStream filters and pins. It enables clients in kernel mode to access AVStream automation objects (properties, methods, and events). See the <a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a> kernel-streaming proxy COM interface for information about the kernel-mode equivalent of this interface.
+The <b>IKsControl</b> interface is a COM-style interface implemented on AVStream filters and pins. It enables clients in kernel mode to access AVStream automation objects (properties, methods, and events). See the <a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a> kernel-streaming proxy COM interface for information about the kernel-mode equivalent of this interface.
 
 ## Methods
 
@@ -104,19 +104,16 @@ A client that is written in C++ does the following:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ks.h (include Ks.h) |
-| **DLL** |  |
 
 ## See Also
 
 <a href="..\ks\nf-ks-kspingetconnectedfilterinterface.md">KsPinGetConnectedFilterInterface</a>
 
-<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl (Kernel Streaming Proxy)</a>
 
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl (Kernel Streaming Proxy)</a>
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
 
  
 

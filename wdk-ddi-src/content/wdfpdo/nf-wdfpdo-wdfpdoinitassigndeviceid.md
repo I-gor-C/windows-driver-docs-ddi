@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f8992245-42db-4ca8-afdc-e123adc0a40d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoInitAssignDeviceID method, kmdf.wdfpdoinitassigndeviceid, PFN_WDFPDOINITASSIGNDEVICEID, DFDeviceObjectFdoPdoRef_c0885107-9e40-4c57-ab50-c757ea58b2f9.xml, wdfpdo/WdfPdoInitAssignDeviceID, WdfPdoInitAssignDeviceID, wdf.wdfpdoinitassigndeviceid
+ms.keywords : DFDeviceObjectFdoPdoRef_c0885107-9e40-4c57-ab50-c757ea58b2f9.xml, kmdf.wdfpdoinitassigndeviceid, PFN_WDFPDOINITASSIGNDEVICEID, WdfPdoInitAssignDeviceID, wdf.wdfpdoinitassigndeviceid, wdfpdo/WdfPdoInitAssignDeviceID, WdfPdoInitAssignDeviceID method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -108,22 +108,20 @@ The driver must call <b>WdfPdoInitAssignDeviceID</b> before calling <a href="..\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |
 
 ## See Also
 
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassigninstanceid.md">WdfPdoInitAssignInstanceID</a>
+
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitaddhardwareid.md">WdfPdoInitAddHardwareID</a>
 
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitaddcompatibleid.md">WdfPdoInitAddCompatibleID</a>
-
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassigninstanceid.md">WdfPdoInitAssignInstanceID</a>
 
  
 

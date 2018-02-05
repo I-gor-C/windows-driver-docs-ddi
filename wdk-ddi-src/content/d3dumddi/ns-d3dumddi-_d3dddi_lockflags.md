@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b9bc6607-3222-45d0-a0d8-18c815a41771
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_LOCKFLAGS, D3D_other_Structs_1bff30dd-936f-4753-bcbe-e656c454e675.xml, D3DDDI_LOCKFLAGS structure [Display Devices], display.d3dddi_lockflags, _D3DDDI_LOCKFLAGS, d3dumddi/D3DDDI_LOCKFLAGS
+ms.keywords : "_D3DDDI_LOCKFLAGS, D3DDDI_LOCKFLAGS, d3dumddi/D3DDDI_LOCKFLAGS, D3D_other_Structs_1bff30dd-936f-4753-bcbe-e656c454e675.xml, display.d3dddi_lockflags, D3DDDI_LOCKFLAGS structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,7 @@ typedef struct _D3DDDI_LOCKFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

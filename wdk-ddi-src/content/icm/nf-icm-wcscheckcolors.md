@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1254b0d4-cb72-4171-b09d-f0bca58a137a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WcsCheckColors, print.wcscheckcolors, colorfnc_abd03c7d-c516-4c81-a0ff-df351cac753e.xml, WcsCheckColors function [Print Devices], icm/WcsCheckColors
+ms.keywords : WcsCheckColors, colorfnc_abd03c7d-c516-4c81-a0ff-df351cac753e.xml, icm/WcsCheckColors, print.wcscheckcolors, WcsCheckColors function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,11 +100,8 @@ This function will fail if an ICC transform is used.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
+| **Target Platform** | Universal |
 | **Header** | icm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mscms.lib |
+| **DLL** | Mscms.dll |

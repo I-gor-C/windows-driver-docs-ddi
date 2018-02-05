@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0d48dce1-252f-4dc2-85a8-6c25e99ce0ba
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueReadyNotify, WdfIoQueueReadyNotify method, WdfIoQueueReadyNotify, wdf.wdfioqueuereadynotify, PFN_WDFIOQUEUEREADYNOTIFY, kmdf.wdfioqueuereadynotify, DFQueueObjectRef_4816d999-fba0-46f6-8fbf-e1421d3d87e2.xml
+ms.keywords : wdfio/WdfIoQueueReadyNotify, DFQueueObjectRef_4816d999-fba0-46f6-8fbf-e1421d3d87e2.xml, kmdf.wdfioqueuereadynotify, WdfIoQueueReadyNotify, WdfIoQueueReadyNotify method, PFN_WDFIOQUEUEREADYNOTIFY, wdf.wdfioqueuereadynotify
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -139,24 +139,23 @@ For more information about the <b>WdfIoQueueReadyNotify</b> method, see <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
-
-<a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a>
-
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
 
 <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
+
+<a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
 
  
 

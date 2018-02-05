@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2ce7a843-0053-4351-ba79-161d83e245ac
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeSendUrbSynchronously method, WdfUsbTargetPipeSendUrbSynchronously, DFUsbRef_3e797ee4-f454-4520-b4a0-84565515622f.xml, wdf.wdfusbtargetpipesendurbsynchronously, wdfusb/WdfUsbTargetPipeSendUrbSynchronously, PFN_WDFUSBTARGETPIPESENDURBSYNCHRONOUSLY, kmdf.wdfusbtargetpipesendurbsynchronously
+ms.keywords : wdfusb/WdfUsbTargetPipeSendUrbSynchronously, kmdf.wdfusbtargetpipesendurbsynchronously, wdf.wdfusbtargetpipesendurbsynchronously, WdfUsbTargetPipeSendUrbSynchronously, PFN_WDFUSBTARGETPIPESENDURBSYNCHRONOUSLY, WdfUsbTargetPipeSendUrbSynchronously method, DFUsbRef_3e797ee4-f454-4520-b4a0-84565515622f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -188,22 +188,20 @@ For more information about the <b>WdfUsbTargetPipeSendUrbSynchronously</b> metho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, IoctlReqs, KmdfIrql, KmdfIrql2, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
 
  
 

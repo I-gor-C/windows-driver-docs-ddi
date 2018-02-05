@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 21ca4ec1-fd5f-46bb-9760-3bb0cdb761b9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iocreateunprotectedsymboliclink, IoCreateUnprotectedSymbolicLink routine [Kernel-Mode Driver Architecture], IoCreateUnprotectedSymbolicLink, wdm/IoCreateUnprotectedSymbolicLink, k104_72bb6571-da2d-4027-bfcd-24438e3bd08a.xml
+ms.keywords : k104_72bb6571-da2d-4027-bfcd-24438e3bd08a.xml, IoCreateUnprotectedSymbolicLink, IoCreateUnprotectedSymbolicLink routine [Kernel-Mode Driver Architecture], wdm/IoCreateUnprotectedSymbolicLink, kernel.iocreateunprotectedsymboliclink
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,12 +80,11 @@ For more information about when to use <b>IoCreateSymbolicLink</b>, see <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

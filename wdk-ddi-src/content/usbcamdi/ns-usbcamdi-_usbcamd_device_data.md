@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1841be02-e30f-4685-82ea-2d9c02ce7277
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PUSBCAMD_DEVICE_DATA, _USBCAMD_DEVICE_DATA, *PUSBCAMD_DEVICE_DATA, stream.usbcamd_device_data, PUSBCAMD_DEVICE_DATA structure pointer [Streaming Media Devices], usbcmdpr_1e4ea0e1-71e0-4c0e-a2bd-668f8fac9b02.xml, USBCAMD_DEVICE_DATA structure [Streaming Media Devices], usbcamdi/USBCAMD_DEVICE_DATA, USBCAMD_DEVICE_DATA, usbcamdi/PUSBCAMD_DEVICE_DATA
+ms.keywords : usbcamdi/PUSBCAMD_DEVICE_DATA, USBCAMD_DEVICE_DATA structure [Streaming Media Devices], _USBCAMD_DEVICE_DATA, USBCAMD_DEVICE_DATA, usbcamdi/USBCAMD_DEVICE_DATA, PUSBCAMD_DEVICE_DATA structure pointer [Streaming Media Devices], PUSBCAMD_DEVICE_DATA, *PUSBCAMD_DEVICE_DATA, usbcmdpr_1e4ea0e1-71e0-4c0e-a2bd-668f8fac9b02.xml, stream.usbcamd_device_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA, *PUSBCAMD_DEVICE_DATA
+req.typenames : "*PUSBCAMD_DEVICE_DATA, USBCAMD_DEVICE_DATA"
 req.product : Windows 10 or later.
 ---
 
@@ -124,9 +124,6 @@ A camera minidriver passes a USBCAMD_DEVICE_DATA structure to USBCAMD as a param
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
 
 ## See Also

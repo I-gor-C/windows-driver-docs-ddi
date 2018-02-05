@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6CCBDECB-D52A-409D-91CA-6635E6D02545
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlShortAdd function [Kernel-Mode Driver Architecture], ntintsafe/RtlShortAdd, kernel.rtlshortadd, RtlShortAdd
+ms.keywords : RtlShortAdd function [Kernel-Mode Driver Architecture], ntintsafe/RtlShortAdd, RtlShortAdd, kernel.rtlshortadd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

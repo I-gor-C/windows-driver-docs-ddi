@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1805d174-ac10-4e76-9e3f-e9e156b769ec
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : WNODE_EVENT_ITEM structure [Kernel-Mode Driver Architecture], *PWNODE_EVENT_ITEM, kernel.wnode_event_item, wmistr/WNODE_EVENT_ITEM, wmistr/PWNODE_EVENT_ITEM, PWNODE_EVENT_ITEM structure pointer [Kernel-Mode Driver Architecture], tagWNODE_EVENT_ITEM, kstruct_d_f4a86459-f5b4-4c9f-a266-d73c9bcba0ac.xml, WNODE_EVENT_ITEM, PWNODE_EVENT_ITEM
+ms.keywords : kstruct_d_f4a86459-f5b4-4c9f-a266-d73c9bcba0ac.xml, PWNODE_EVENT_ITEM, WNODE_EVENT_ITEM structure [Kernel-Mode Driver Architecture], tagWNODE_EVENT_ITEM, PWNODE_EVENT_ITEM structure pointer [Kernel-Mode Driver Architecture], wmistr/WNODE_EVENT_ITEM, wmistr/PWNODE_EVENT_ITEM, *PWNODE_EVENT_ITEM, WNODE_EVENT_ITEM, kernel.wnode_event_item
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,24 +72,21 @@ For best performance, events should be small in size. However, if the amount of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wmistr.h (include Wmistr.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>
-
 <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
-
-<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a>
 
 <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a>
 
+<a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a>
+
+<a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>
+
 <a href="..\wmistr\ns-wmistr-tagwnode_event_reference.md">WNODE_EVENT_REFERENCE</a>
 
-<a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a>
+<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a>
 
 <a href="..\wmistr\ns-wmistr-tagwnode_single_item.md">WNODE_SINGLE_ITEM</a>
 

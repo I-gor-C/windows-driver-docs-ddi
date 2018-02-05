@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fb67b116-12f5-4eef-ab05-f2056ccec4e3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlValidateReparsePointBuffer, ntifs/FsRtlValidateReparsePointBuffer, FsRtlValidateReparsePointBuffer routine [Installable File System Drivers], fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml, ifsk.fsrtlvalidatereparsepointbuffer
+ms.keywords : FsRtlValidateReparsePointBuffer routine [Installable File System Drivers], ntifs/FsRtlValidateReparsePointBuffer, ifsk.fsrtlvalidatereparsepointbuffer, FsRtlValidateReparsePointBuffer, fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,14 +114,12 @@ Reparse tags contain several bits that cannot be set except by system components
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

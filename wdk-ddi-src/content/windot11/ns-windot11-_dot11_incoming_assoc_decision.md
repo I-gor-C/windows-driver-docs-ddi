@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aaddff8c-71da-475b-a395-ac40b3b787ae
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_INCOMING_ASSOC_DECISION, *PDOT11_INCOMING_ASSOC_DECISION, DOT11_INCOMING_ASSOC_DECISION structure [Network Drivers Starting with Windows Vista], netvista.dot11_incoming_assoc_decision, PDOT11_INCOMING_ASSOC_DECISION, Revision, _DOT11_INCOMING_ASSOC_DECISION, Native_802.11_data_types_d6449324-f2b1-492f-849b-d4510b44e94f.xml, PDOT11_INCOMING_ASSOC_DECISION structure pointer [Network Drivers Starting with Windows Vista], Type, Size, windot11/DOT11_INCOMING_ASSOC_DECISION, DOT11_INCOMING_ASSOC_DECISION
+ms.keywords : DOT11_INCOMING_ASSOC_DECISION, windot11/PDOT11_INCOMING_ASSOC_DECISION, Type, Size, *PDOT11_INCOMING_ASSOC_DECISION, netvista.dot11_incoming_assoc_decision, Revision, Native_802.11_data_types_d6449324-f2b1-492f-849b-d4510b44e94f.xml, _DOT11_INCOMING_ASSOC_DECISION, PDOT11_INCOMING_ASSOC_DECISION structure pointer [Network Drivers Starting with Windows Vista], DOT11_INCOMING_ASSOC_DECISION structure [Network Drivers Starting with Windows Vista], PDOT11_INCOMING_ASSOC_DECISION, windot11/DOT11_INCOMING_ASSOC_DECISION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -139,23 +139,21 @@ A USHORT value that represents a reason code to include in the NIC's association
 
 ## Remarks
 This structure is used with 
-    <mshelp:link keywords="netvista.oid_dot11_incoming_association_decision" tabindex="0">
-    OID_DOT11_INCOMING_ASSOCIATION_DECISION</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/hh406480">
+    OID_DOT11_INCOMING_ASSOCIATION_DECISION</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.oid_dot11_incoming_association_decision" tabindex="0">
-   OID_DOT11_INCOMING_ASSOCIATION_DECISION</mshelp:link>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/hh406480">
+   OID_DOT11_INCOMING_ASSOCIATION_DECISION</a>
 
  
 

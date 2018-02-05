@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d99180e0-d989-470c-b330-23372938ab25
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntdddisk/PDRIVE_LAYOUT_INFORMATION_GPT, *PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT structure [Storage Devices], PDRIVE_LAYOUT_INFORMATION_GPT, storage.drive_layout_information_gpt, _DRIVE_LAYOUT_INFORMATION_GPT, structs-disk_eca2e047-5de8-4960-9066-28eb0dfedb95.xml, ntdddisk/DRIVE_LAYOUT_INFORMATION_GPT, PDRIVE_LAYOUT_INFORMATION_GPT structure pointer [Storage Devices], DRIVE_LAYOUT_INFORMATION_GPT
+ms.keywords : DRIVE_LAYOUT_INFORMATION_GPT structure [Storage Devices], *PDRIVE_LAYOUT_INFORMATION_GPT, ntdddisk/PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT, storage.drive_layout_information_gpt, PDRIVE_LAYOUT_INFORMATION_GPT structure pointer [Storage Devices], _DRIVE_LAYOUT_INFORMATION_GPT, structs-disk_eca2e047-5de8-4960-9066-28eb0dfedb95.xml, PDRIVE_LAYOUT_INFORMATION_GPT, ntdddisk/DRIVE_LAYOUT_INFORMATION_GPT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRIVE_LAYOUT_INFORMATION_GPT, *PDRIVE_LAYOUT_INFORMATION_GPT
+req.typenames : "*PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT"
 ---
 
 # _DRIVE_LAYOUT_INFORMATION_GPT structure
@@ -76,9 +76,6 @@ This structure contains the drive layout information that is specific to a drive
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntddk.h) |
 
 ## See Also

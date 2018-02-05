@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2e38d297-1e26-4605-a242-3f0180ac0360
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_c9e05691-f605-4946-bb8c-ab317464523a.xml, HBA_SendLIRR routine [Storage Devices], storage.hba_sendlirr, hbaapi/HBA_SendLIRR, HBA_SendLIRR
+ms.keywords : storage.hba_sendlirr, fibreHBA_rtns_c9e05691-f605-4946-bb8c-ab317464523a.xml, hbaapi/HBA_SendLIRR, HBA_SendLIRR routine [Storage Devices], HBA_SendLIRR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -216,14 +216,10 @@ Returned if an unspecified error occurred that prevented the execution of the LI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

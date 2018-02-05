@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fc95f5c8-2892-479d-ac25-32c07e9c7aab
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : tapeclas_94d20234-ee4d-4096-b856-f5196b606e2d.xml, minitape/TapeClassPhysicalBlockToLogicalBlock, TapeClassPhysicalBlockToLogicalBlock, storage.tapeclassphysicalblocktologicalblock, TapeClassPhysicalBlockToLogicalBlock routine [Storage Devices]
+ms.keywords : TapeClassPhysicalBlockToLogicalBlock routine [Storage Devices], TapeClassPhysicalBlockToLogicalBlock, tapeclas_94d20234-ee4d-4096-b856-f5196b606e2d.xml, minitape/TapeClassPhysicalBlockToLogicalBlock, storage.tapeclassphysicalblocktologicalblock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTAPE_STATUS, TAPE_STATUS"
+req.typenames : TAPE_STATUS, *PTAPE_STATUS
 ---
 
 
@@ -85,14 +85,9 @@ If a tape miniclass driver calls this routine with an unsupported tape density c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | minitape.h (include Minitape.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tape.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d3f828bf-854f-4d2d-a869-ee5c002a1728
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Close method [Print Devices], Close, IPrintWriteStream::Close, IPrintWriteStream interface [Print Devices], Close method, filterpipeline/IPrintWriteStream::Close, print.iprintwritestream_close, IPrintWriteStream, Close method [Print Devices], IPrintWriteStream interface, filterpipeline_68b1e38f-f42a-4fa1-92f1-2181ac15033e.xml
+ms.keywords : print.iprintwritestream_close, Close method [Print Devices], IPrintWriteStream interface, filterpipeline_68b1e38f-f42a-4fa1-92f1-2181ac15033e.xml, Close method [Print Devices], IPrintWriteStream interface [Print Devices], Close method, IPrintWriteStream::Close, filterpipeline/IPrintWriteStream::Close, IPrintWriteStream, Close
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -62,11 +62,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

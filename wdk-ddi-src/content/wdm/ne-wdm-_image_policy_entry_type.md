@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f8ce3297-5a57-4ece-a74c-ae5e4e15ce3e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ImagePolicyEntryTypeAnsiString, wdm/IMAGE_POLICY_ENTRY_TYPE, ImagePolicyEntryTypeBool, wdm/ImagePolicyEntryTypeInt64, ImagePolicyEntryTypeMaximum, _IMAGE_POLICY_ENTRY_TYPE, wdm/ImagePolicyEntryTypeBool, IMAGE_POLICY_ENTRY_TYPE enumeration [Kernel-Mode Driver Architecture], ImagePolicyEntryTypeInt8, wdm/ImagePolicyEntryTypeUInt16, ImagePolicyEntryTypeUInt8, wdm/ImagePolicyEntryTypeInt16, wdm/ImagePolicyEntryTypeMaximum, wdm/ImagePolicyEntryTypeInt32, ImagePolicyEntryTypeInt16, ImagePolicyEntryTypeInt32, wdm/ImagePolicyEntryTypeInt8, ImagePolicyEntryTypeInt64, ImagePolicyEntryTypeUInt16, ImagePolicyEntryTypeUnicodeString, ImagePolicyEntryTypeUInt32, wdm/ImagePolicyEntryTypeUInt32, wdm/ImagePolicyEntryTypeUnicodeString, wdm/ImagePolicyEntryTypeAnsiString, wdm/ImagePolicyEntryTypeUInt8, ImagePolicyEntryTypeUInt64, IMAGE_POLICY_ENTRY_TYPE, wdm/ImagePolicyEntryTypeUInt64, kernel._image_policy_entry_type
+ms.keywords : kernel._image_policy_entry_type, wdm/ImagePolicyEntryTypeInt8, wdm/ImagePolicyEntryTypeUInt32, ImagePolicyEntryTypeUInt8, ImagePolicyEntryTypeInt64, wdm/IMAGE_POLICY_ENTRY_TYPE, wdm/ImagePolicyEntryTypeBool, IMAGE_POLICY_ENTRY_TYPE, wdm/ImagePolicyEntryTypeInt32, ImagePolicyEntryTypeUnicodeString, _IMAGE_POLICY_ENTRY_TYPE, ImagePolicyEntryTypeUInt64, wdm/ImagePolicyEntryTypeMaximum, ImagePolicyEntryTypeAnsiString, IMAGE_POLICY_ENTRY_TYPE enumeration [Kernel-Mode Driver Architecture], ImagePolicyEntryTypeInt8, wdm/ImagePolicyEntryTypeInt64, ImagePolicyEntryTypeMaximum, wdm/ImagePolicyEntryTypeUInt16, ImagePolicyEntryTypeInt16, ImagePolicyEntryTypeBool, ImagePolicyEntryTypeInt32, wdm/ImagePolicyEntryTypeUnicodeString, ImagePolicyEntryTypeUInt32, wdm/ImagePolicyEntryTypeInt16, wdm/ImagePolicyEntryTypeUInt64, wdm/ImagePolicyEntryTypeAnsiString, wdm/ImagePolicyEntryTypeUInt8, ImagePolicyEntryTypeUInt16
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -134,7 +134,4 @@ typedef enum _IMAGE_POLICY_ENTRY_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |

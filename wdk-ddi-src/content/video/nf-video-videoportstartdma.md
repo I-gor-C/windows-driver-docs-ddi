@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cb78e871-6177-4141-b713-25a39c928701
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_b568d7ff-2e88-4afe-827b-4e54e075718c.xml, VideoPortStartDma, video/VideoPortStartDma, VideoPortStartDma function [Display Devices], display.videoportstartdma
+ms.keywords : VideoPort_Functions_b568d7ff-2e88-4afe-827b-4e54e075718c.xml, display.videoportstartdma, VideoPortStartDma function [Display Devices], VideoPortStartDma, video/VideoPortStartDma
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -146,24 +146,22 @@ Calls the video miniport driver's <a href="..\video\nc-video-pexecute_dma.md">Hw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
-
-<a href="..\video\nc-video-pexecute_dma.md">HwVidExecuteDma</a>
-
 <a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
+
 <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
+
+<a href="..\video\nc-video-pexecute_dma.md">HwVidExecuteDma</a>
 
  
 

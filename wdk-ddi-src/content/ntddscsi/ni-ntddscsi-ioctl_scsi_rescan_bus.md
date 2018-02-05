@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_RESCAN_BUS IOCTL
@@ -76,9 +76,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field indicates t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
-| **IRQL** |  |
 
 ## See Also
 

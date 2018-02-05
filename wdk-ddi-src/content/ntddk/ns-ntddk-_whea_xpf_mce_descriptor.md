@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : cdf52fe7-40ac-4baf-aaa0-c23b40574376
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_XPF_MCE_DESCRIPTOR, PWHEA_XPF_MCE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_77725c63-dffe-45f9-9a52-cef3fb8d124e.xml, _WHEA_XPF_MCE_DESCRIPTOR, *PWHEA_XPF_MCE_DESCRIPTOR, ntddk/WHEA_XPF_MCE_DESCRIPTOR, ntddk/PWHEA_XPF_MCE_DESCRIPTOR, whea.whea_xpf_mce_descriptor, WHEA_XPF_MCE_DESCRIPTOR structure [WHEA Drivers and Applications], WHEA_XPF_MCE_DESCRIPTOR
+ms.keywords : WHEA_XPF_MCE_DESCRIPTOR, *PWHEA_XPF_MCE_DESCRIPTOR, ntddk/WHEA_XPF_MCE_DESCRIPTOR, whearef_77725c63-dffe-45f9-9a52-cef3fb8d124e.xml, _WHEA_XPF_MCE_DESCRIPTOR, ntddk/PWHEA_XPF_MCE_DESCRIPTOR, PWHEA_XPF_MCE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], WHEA_XPF_MCE_DESCRIPTOR structure [WHEA Drivers and Applications], PWHEA_XPF_MCE_DESCRIPTOR, whea.whea_xpf_mce_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -87,6 +87,11 @@ An XPF_MCE_FLAGS union that indicates which of the members of the WHEA_XPF_MCE_D
 </table></span></div>
 
 
+#### AsULONG
+
+A ULONG representation of the contents of the XPF_MCE_FLAGS union.
+
+
 #### MCG_CapabilityRW
 
 A single bit that indicates that the operating system can write to the <b>MCG_Capability</b> member of the WHEA_XPF_MCE_DESCRIPTOR structure.
@@ -100,11 +105,6 @@ A single bit that indicates that the operating system can write to the <b>MCG_Gl
 #### Reserved
 
 Reserved for system use.
-
-
-#### AsULONG
-
-A ULONG representation of the contents of the XPF_MCE_FLAGS union.
 
 `MCG_Capability`
 
@@ -128,9 +128,7 @@ A WHEA_XPF_MCE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

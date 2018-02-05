@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 70B74088-C537-4104-A535-F41A24BB72A5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usb/_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS, _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure [Buses], buses._urb_get_isoch_pipe_transfer_path_delays, _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS
+ms.keywords : "_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure [Buses], _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS, buses._urb_get_isoch_pipe_transfer_path_delays, usb/_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,5 @@ Specifies an opaque handle to pipe associated with the endpoint. The host contro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | usb.h |

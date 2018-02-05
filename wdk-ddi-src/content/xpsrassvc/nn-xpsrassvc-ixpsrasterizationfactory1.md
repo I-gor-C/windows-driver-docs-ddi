@@ -57,8 +57,5 @@ In Windows 8, the improvement of XPSRas to handle high precision colors has led
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | xpsrassvc.h |
-| **DLL** |  |

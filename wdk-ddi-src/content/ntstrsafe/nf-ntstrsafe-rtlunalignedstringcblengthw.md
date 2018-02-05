@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 03f49658-ec51-4869-bba8-832c6856c4b0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnalignedStringCbLength, safestrings_6724eedb-4d8d-490a-aac8-81c5c95ca3df.xml, RtlUnalignedStringCbLengthW, RtlUnalignedStringCbLengthW function [Kernel-Mode Driver Architecture], kernel.rtlunalignedstringcblength, ntstrsafe/RtlUnalignedStringCbLengthW
+ms.keywords : ntstrsafe/RtlUnalignedStringCbLengthW, RtlUnalignedStringCbLength, safestrings_6724eedb-4d8d-490a-aac8-81c5c95ca3df.xml, RtlUnalignedStringCbLengthW, kernel.rtlunalignedstringcblength, RtlUnalignedStringCbLengthW function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,14 +110,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

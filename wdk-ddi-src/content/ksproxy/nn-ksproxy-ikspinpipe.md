@@ -69,8 +69,5 @@ The IID for this interface is IID_IKsPinPipe.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **DLL** |  |

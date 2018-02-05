@@ -120,22 +120,17 @@ The function fails if the driver attempts to register while it is already regist
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_datarate_notification.md">pfnDataRateNotify</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
 
 <a href="..\netdispumdddi\ns-netdispumdddi-miracast_wfd_connection_stats.md">MIRACAST_WFD_CONNECTION_STATS</a>
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_datarate_notification.md">pfnDataRateNotify</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
 

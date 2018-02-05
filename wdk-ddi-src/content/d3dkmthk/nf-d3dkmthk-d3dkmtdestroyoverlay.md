@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8a5eef07-97b7-43ca-b8e0-15af89aa7d82
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyOverlay function [Display Devices], D3DKMTDestroyOverlay, OpenGL_Functions_57efc2f4-dbbe-4f91-b724-036b5231c058.xml, d3dkmthk/D3DKMTDestroyOverlay, display.d3dkmtdestroyoverlay
+ms.keywords : OpenGL_Functions_57efc2f4-dbbe-4f91-b724-036b5231c058.xml, D3DKMTDestroyOverlay function [Display Devices], display.d3dkmtdestroyoverlay, D3DKMTDestroyOverlay, d3dkmthk/D3DKMTDestroyOverlay
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

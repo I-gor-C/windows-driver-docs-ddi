@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 18be278c-2d69-472b-9baf-7c35f8abe879
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATEDEVICE structure [Display Devices], display.d3dddiarg_createdevice, d3dumddi/D3DDDIARG_CREATEDEVICE, UMDisplayDriver_param_Structs_42cad924-5200-4737-9d17-4464767f9e93.xml, D3DDDIARG_CREATEDEVICE, _D3DDDIARG_CREATEDEVICE
+ms.keywords : D3DDDIARG_CREATEDEVICE, _D3DDDIARG_CREATEDEVICE, D3DDDIARG_CREATEDEVICE structure [Display Devices], display.d3dddiarg_createdevice, d3dumddi/D3DDDIARG_CREATEDEVICE, UMDisplayDriver_param_Structs_42cad924-5200-4737-9d17-4464767f9e93.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -125,20 +125,18 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_createdeviceflags.md">D3DDDI_CREATEDEVICEFLAGS</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 

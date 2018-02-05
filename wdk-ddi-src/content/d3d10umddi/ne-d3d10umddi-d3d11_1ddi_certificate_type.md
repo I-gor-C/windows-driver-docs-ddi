@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e95573c9-0ea7-4ad2-9e7e-d75761e98be6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_CERTIFICATE_TYPE enumeration [Display Devices], d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE, D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, display.d3d11_1ddi_certificate_type, D3D11_1DDI_CERTIFICATE_TYPE, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL
+ms.keywords : D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE, D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL, D3D11_1DDI_CERTIFICATE_TYPE, display.d3d11_1ddi_certificate_type, D3D11_1DDI_CERTIFICATE_TYPE enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,9 +68,7 @@ typedef enum D3D11_1DDI_CERTIFICATE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

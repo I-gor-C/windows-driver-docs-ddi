@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5556BD5E-6489-4CCF-8C62-DDA53AD9F368
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetCapabilities, IPrintSchemaTicket::GetCapabilities, IPrintSchemaTicket interface [Print Devices], GetCapabilities method, printerextension/IPrintSchemaTicket::GetCapabilities, IPrintSchemaTicket, print.iprintschematicket_getcapabilities, GetCapabilities method [Print Devices], IPrintSchemaTicket interface, GetCapabilities method [Print Devices]
+ms.keywords : GetCapabilities, print.iprintschematicket_getcapabilities, IPrintSchemaTicket interface [Print Devices], GetCapabilities method, GetCapabilities method [Print Devices], IPrintSchemaTicket::GetCapabilities, GetCapabilities method [Print Devices], IPrintSchemaTicket interface, IPrintSchemaTicket, printerextension/IPrintSchemaTicket::GetCapabilities
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -69,26 +69,21 @@ Because this method retrieves a new PrintCapabilities document every time it is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/DF788C8F-DA60-47F1-83DB-2E1947E41142">IPrintSchemaTicket::put_JobCopiesAllDocuments</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
 
 <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
 
-<a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
-
 <a href="https://msdn.microsoft.com/C22BC037-05D2-4F44-8704-D1D56909B603">IPrintSchemaFeature::SelectedOption</a>
+
+<a href="https://msdn.microsoft.com/DF788C8F-DA60-47F1-83DB-2E1947E41142">IPrintSchemaTicket::put_JobCopiesAllDocuments</a>
+
+<a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
 
  
 

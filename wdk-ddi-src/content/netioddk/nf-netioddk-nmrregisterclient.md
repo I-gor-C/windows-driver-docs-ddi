@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9a8d2bc1-a75a-449d-8cfe-9d1f16a9dbb7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : nmrref_245036b1-3c92-46e6-bc7d-763e91e8b9f3.xml, netvista.nmrregisterclient, NmrRegisterClient function [Network Drivers Starting with Windows Vista], netioddk/NmrRegisterClient, NmrRegisterClient
+ms.keywords : netioddk/NmrRegisterClient, NmrRegisterClient, nmrref_245036b1-3c92-46e6-bc7d-763e91e8b9f3.xml, NmrRegisterClient function [Network Drivers Starting with Windows Vista], netvista.nmrregisterclient
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -58,8 +58,8 @@ NTSTATUS NmrRegisterClient(
 `ClientCharacteristics`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.npi_client_characteristics" tabindex="0"><b>
-     NPI_CLIENT_CHARACTERISTICS</b></mshelp:link> structure that describes the characteristics of the client module. The
+     <a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">
+     NPI_CLIENT_CHARACTERISTICS</a> structure that describes the characteristics of the client module. The
      client module must make sure that this structure remains valid and resident in memory as long as the
      client module is registered with the NMR.
 
@@ -145,22 +145,19 @@ A client module typically calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
 <a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
 
 <a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a>
+
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
  
 

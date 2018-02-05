@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1bc6eed2-c6bd-448f-8f78-630cca4cd29a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoRequest::GetCreateParameters, UMDFRequestObjectRef_ac352dd9-a9e0-4741-abfe-92482dd25112.xml, GetCreateParameters method, IWDFIoRequest interface, IWDFIoRequest interface, GetCreateParameters method, IWDFIoRequest, IWDFIoRequest::GetCreateParameters, GetCreateParameters method, umdf.iwdfiorequest_getcreateparameters, GetCreateParameters, wdf.iwdfiorequest_getcreateparameters
+ms.keywords : GetCreateParameters method, wudfddi/IWDFIoRequest::GetCreateParameters, GetCreateParameters, IWDFIoRequest interface, GetCreateParameters method, wdf.iwdfiorequest_getcreateparameters, umdf.iwdfiorequest_getcreateparameters, UMDFRequestObjectRef_ac352dd9-a9e0-4741-abfe-92482dd25112.xml, IWDFIoRequest::GetCreateParameters, GetCreateParameters method, IWDFIoRequest interface, IWDFIoRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -91,20 +91,18 @@ Although the driver can optionally specify <b>NULL</b> for each of the <i>pOptio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
  
 

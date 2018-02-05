@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E6AD21CE-C218-439F-A8F7-8E1AAF307A57
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsInitializeDeviceProfile function [Streaming Media Devices], KsInitializeDeviceProfile, stream.ksinitializedeviceprofile, ks/KsInitializeDeviceProfile
+ms.keywords : KsInitializeDeviceProfile, KsInitializeDeviceProfile function [Streaming Media Devices], ks/KsInitializeDeviceProfile, stream.ksinitializedeviceprofile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,6 @@ To delete all profiles from the profile store associated with the device interfa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ksmedia.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

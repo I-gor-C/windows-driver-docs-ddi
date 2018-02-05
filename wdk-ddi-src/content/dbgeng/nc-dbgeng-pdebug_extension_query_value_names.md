@@ -133,26 +133,20 @@ Value names must start with <b>$$</b> and have a terminating NULL character. The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <i>KnownStructOutput</i>
 
-<i>DebugExtensionNotify</i>
-
-<i>DebugExtensionProvideValue</i>
+<i>DebugExtensionUninitialize</i>
 
 <a href="..\dbgeng\nc-dbgeng-pdebug_extension_initialize.md">DebugExtensionInitialize</a>
 
-<i>DebugExtensionUninitialize</i>
+<i>DebugExtensionProvideValue</i>
+
+<i>DebugExtensionNotify</i>
 
  
 

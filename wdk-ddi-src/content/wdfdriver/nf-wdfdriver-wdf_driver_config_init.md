@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d7520300-9345-4681-a10d-acf34838199a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_DRIVER_CONFIG_INIT function, wdf.wdf_driver_config_init, DFDriverObjectRef_c8331742-9717-476d-8a48-f9e472cb3128.xml, wdfdriver/WDF_DRIVER_CONFIG_INIT, WDF_DRIVER_CONFIG_INIT, kmdf.wdf_driver_config_init
+ms.keywords : kmdf.wdf_driver_config_init, WDF_DRIVER_CONFIG_INIT function, wdfdriver/WDF_DRIVER_CONFIG_INIT, DFDriverObjectRef_c8331742-9717-476d-8a48-f9e472cb3128.xml, WDF_DRIVER_CONFIG_INIT, wdf.wdf_driver_config_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,11 @@ The WDF_DRIVER_CONFIG_INIT function is available in version 1.0 and later versio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

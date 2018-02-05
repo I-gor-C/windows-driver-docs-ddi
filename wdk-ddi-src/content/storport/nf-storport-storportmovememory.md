@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5481ae5e-c28a-478e-96be-c6ec8d7f163e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportmovememory, StorPortMoveMemory, StorPortMoveMemory routine [Storage Devices], storprt_7af1ec0d-f1c4-4335-9b80-1aaef26afa35.xml, storport/StorPortMoveMemory
+ms.keywords : storport/StorPortMoveMemory, storage.storportmovememory, StorPortMoveMemory routine [Storage Devices], StorPortMoveMemory, storprt_7af1ec0d-f1c4-4335-9b80-1aaef26afa35.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 99C87D65-C633-4AA2-95DF-6AE74428C71D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/UI_TYPE, winsplp/kMessageBox, UI_TYPE enumeration [Print Devices], UI_TYPE, kMessageBox, print.ui_type
+ms.keywords : kMessageBox, winsplp/UI_TYPE, winsplp/kMessageBox, UI_TYPE, print.ui_type, UI_TYPE enumeration [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -63,7 +63,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 224c8483-56b8-4341-8347-fa119ec04024
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortUnmapMemory, display.videoportunmapmemory, VideoPort_Functions_394a66fa-47cd-4e0e-8467-3c3562d27822.xml, video/VideoPortUnmapMemory, VideoPortUnmapMemory function [Display Devices]
+ms.keywords : video/VideoPortUnmapMemory, display.videoportunmapmemory, VideoPort_Functions_394a66fa-47cd-4e0e-8467-3c3562d27822.xml, VideoPortUnmapMemory, VideoPortUnmapMemory function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,12 @@ A miniport driver cannot release a subrange of the mapping between a logical dev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

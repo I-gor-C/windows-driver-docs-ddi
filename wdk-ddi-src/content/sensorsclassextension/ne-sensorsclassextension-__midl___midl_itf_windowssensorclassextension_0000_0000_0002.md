@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 63df4f99-ddc2-4a0b-b19b-63390771d529
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.sensorconnectiontype, SENSOR_CONNECTION_TYPE_PC_INTEGRATED, SENSOR_CONNECTION_TYPE_PC_ATTACHED, Sensor_Enums_bca4556b-94f3-4213-9daa-3571f403d556.xml, __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002, sensorsclassextension/SensorConnectionType, sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_INTEGRATED, sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_EXTERNAL, SensorConnectionType enumeration [Sensor Devices], SensorConnectionType, sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_ATTACHED, SENSOR_CONNECTION_TYPE_PC_EXTERNAL
+ms.keywords : sensors.sensorconnectiontype, SENSOR_CONNECTION_TYPE_PC_EXTERNAL, SensorConnectionType enumeration [Sensor Devices], sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_EXTERNAL, Sensor_Enums_bca4556b-94f3-4213-9daa-3571f403d556.xml, SensorConnectionType, SENSOR_CONNECTION_TYPE_PC_ATTACHED, sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_ATTACHED, __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002, SENSOR_CONNECTION_TYPE_PC_INTEGRATED, sensorsclassextension/SENSOR_CONNECTION_TYPE_PC_INTEGRATED, sensorsclassextension/SensorConnectionType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -76,9 +76,7 @@ enum SensorConnectionType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
 | **Header** | sensorsclassextension.h |
 
 ## See Also

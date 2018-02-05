@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4bbcf4d3-e1f9-4e13-ac56-92ffddea1f67
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceInitSetExclusive, WdfDeviceInitSetExclusive, DFDeviceObjectGeneralRef_fb2fbd3a-e78a-4632-b84f-b3e62a6efc94.xml, kmdf.wdfdeviceinitsetexclusive, WdfDeviceInitSetExclusive method, wdf.wdfdeviceinitsetexclusive, PFN_WDFDEVICEINITSETEXCLUSIVE
+ms.keywords : PFN_WDFDEVICEINITSETEXCLUSIVE, kmdf.wdfdeviceinitsetexclusive, wdf.wdfdeviceinitsetexclusive, wdfdevice/WdfDeviceInitSetExclusive, DFDeviceObjectGeneralRef_fb2fbd3a-e78a-4632-b84f-b3e62a6efc94.xml, WdfDeviceInitSetExclusive method, WdfDeviceInitSetExclusive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,20 +83,18 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 
 ## See Also
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
  
 

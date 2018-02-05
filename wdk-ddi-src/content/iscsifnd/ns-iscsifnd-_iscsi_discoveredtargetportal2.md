@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 68128d39-2490-4c6b-8780-e5aa542a4e3d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ISCSI_DiscoveredTargetPortal2 structure [Storage Devices], storage.iscsi_discoveredtargetportal2, _ISCSI_DiscoveredTargetPortal2, *PISCSI_DiscoveredTargetPortal2, iscsifnd/PISCSI_DiscoveredTargetPortal2, PISCSI_DiscoveredTargetPortal2, PISCSI_DiscoveredTargetPortal2 structure pointer [Storage Devices], iscsifnd/ISCSI_DiscoveredTargetPortal2, structs-iSCSI_bbb760ce-7dc5-4f04-880e-3ff53921ed78.xml, ISCSI_DiscoveredTargetPortal2
+ms.keywords : "*PISCSI_DiscoveredTargetPortal2, _ISCSI_DiscoveredTargetPortal2, PISCSI_DiscoveredTargetPortal2 structure pointer [Storage Devices], iscsifnd/PISCSI_DiscoveredTargetPortal2, ISCSI_DiscoveredTargetPortal2 structure [Storage Devices], iscsifnd/ISCSI_DiscoveredTargetPortal2, PISCSI_DiscoveredTargetPortal2, ISCSI_DiscoveredTargetPortal2, storage.iscsi_discoveredtargetportal2, structs-iSCSI_bbb760ce-7dc5-4f04-880e-3ff53921ed78.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -167,18 +167,15 @@ The WMI tool suite automatically generates a declaration of the ISCSI_Discovered
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsifnd.h (include Iscsifnd.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561524">ISCSI_DiscoveredTargetPortal WMI Class</a>
+<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a>
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
 
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportal.md">ISCSI_DiscoveredTargetPortal</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561524">ISCSI_DiscoveredTargetPortal WMI Class</a>
 
  
 

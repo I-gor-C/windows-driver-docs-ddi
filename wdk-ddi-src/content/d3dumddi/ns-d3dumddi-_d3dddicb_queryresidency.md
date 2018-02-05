@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 43dafaea-06cd-49bb-99ab-99708b1a93cb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_QUERYRESIDENCY, D3DDDICB_QUERYRESIDENCY structure [Display Devices], D3D_param_Structs_196c35e7-414d-465f-b5e5-695848a4c642.xml, D3DDDICB_QUERYRESIDENCY, d3dumddi/D3DDDICB_QUERYRESIDENCY, display.d3dddicb_queryresidency"
+ms.keywords : display.d3dddicb_queryresidency, D3DDDICB_QUERYRESIDENCY structure [Display Devices], d3dumddi/D3DDDICB_QUERYRESIDENCY, _D3DDDICB_QUERYRESIDENCY, D3DDDICB_QUERYRESIDENCY, D3D_param_Structs_196c35e7-414d-465f-b5e5-695848a4c642.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -114,9 +114,7 @@ The resource or list of allocations is nonresident, which is the lowest residenc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

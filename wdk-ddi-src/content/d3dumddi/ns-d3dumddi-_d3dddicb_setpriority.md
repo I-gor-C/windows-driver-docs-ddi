@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8d828d7b-2f86-4fe9-864c-9d0ac4b0ed65
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D_param_Structs_38d8110c-0d63-4409-9576-ef9892dae2b7.xml, D3DDDICB_SETPRIORITY structure [Display Devices], _D3DDDICB_SETPRIORITY, d3dumddi/D3DDDICB_SETPRIORITY, D3DDDICB_SETPRIORITY, display.d3dddicb_setpriority
+ms.keywords : D3DDDICB_SETPRIORITY structure [Display Devices], D3D_param_Structs_38d8110c-0d63-4409-9576-ef9892dae2b7.xml, _D3DDDICB_SETPRIORITY, d3dumddi/D3DDDICB_SETPRIORITY, display.d3dddicb_setpriority, D3DDDICB_SETPRIORITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,7 @@ If <b>hResource</b> is non-<b>NULL</b>, all of the allocations that belong to th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

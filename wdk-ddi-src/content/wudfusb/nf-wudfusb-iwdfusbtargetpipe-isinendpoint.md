@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c1cba1fa-3952-4f2f-829f-2f5983349df8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFUSBref_07580c26-1173-4624-9199-c8dc8ef59edf.xml, wdf.iwdfusbtargetpipe_isinendpoint, IWDFUsbTargetPipe interface, IsInEndPoint method, IsInEndPoint method, IWDFUsbTargetPipe interface, wudfusb/IWDFUsbTargetPipe::IsInEndPoint, umdf.iwdfusbtargetpipe_isinendpoint, IsInEndPoint method, IsInEndPoint, IWDFUsbTargetPipe::IsInEndPoint, IWDFUsbTargetPipe
+ms.keywords : IWDFUsbTargetPipe, UMDFUSBref_07580c26-1173-4624-9199-c8dc8ef59edf.xml, wdf.iwdfusbtargetpipe_isinendpoint, IWDFUsbTargetPipe::IsInEndPoint, umdf.iwdfusbtargetpipe_isinendpoint, IsInEndPoint, wudfusb/IWDFUsbTargetPipe::IsInEndPoint, IWDFUsbTargetPipe interface, IsInEndPoint method, IsInEndPoint method, IsInEndPoint method, IWDFUsbTargetPipe interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -67,20 +67,18 @@ If the USB pipe is an IN pipe, a UMDF driver can call the <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559233">IWDFIoTarget::FormatRequestForRead</a>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 
  
 

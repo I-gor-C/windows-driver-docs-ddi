@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7bb5c2ff-9bdb-4958-b290-9edb18d02668
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-disk_fbed0038-effc-40d8-8814-921dfd627a94.xml, VERIFY_INFORMATION, *PVERIFY_INFORMATION, VERIFY_INFORMATION structure [Storage Devices], storage.verify_information, ntdddisk/VERIFY_INFORMATION, ntdddisk/PVERIFY_INFORMATION, PVERIFY_INFORMATION, PVERIFY_INFORMATION structure pointer [Storage Devices], _VERIFY_INFORMATION
+ms.keywords : ntdddisk/VERIFY_INFORMATION, storage.verify_information, PVERIFY_INFORMATION structure pointer [Storage Devices], structs-disk_fbed0038-effc-40d8-8814-921dfd627a94.xml, *PVERIFY_INFORMATION, _VERIFY_INFORMATION, PVERIFY_INFORMATION, ntdddisk/PVERIFY_INFORMATION, VERIFY_INFORMATION structure [Storage Devices], VERIFY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVERIFY_INFORMATION, VERIFY_INFORMATION"
+req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 # _VERIFY_INFORMATION structure
@@ -66,9 +66,6 @@ VERIFY_INFORMATION is the output buffer for the <a href="..\ntdddisk\ni-ntdddisk
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also

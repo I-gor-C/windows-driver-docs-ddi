@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b30b868d-3012-4bdc-80f4-ffae2ebaa4d6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml, _DOT11_VWIFI_COMBINATION_V2, windot11/PDOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2, windot11/DOT11_VWIFI_COMBINATION_V2, *PDOT11_VWIFI_COMBINATION_V2, netvista.dot11_vwifi_combination_v2, DOT11_VWIFI_COMBINATION_V2
+ms.keywords : netvista.dot11_vwifi_combination_v2, windot11/DOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2, Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml, PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_COMBINATION_V2, windot11/PDOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], DOT11_VWIFI_COMBINATION_V2, _DOT11_VWIFI_COMBINATION_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_VWIFI_COMBINATION_V2, *PDOT11_VWIFI_COMBINATION_V2
+req.typenames : "*PDOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2"
 req.product : Windows 10 or later.
 ---
 
@@ -73,11 +73,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_VWIFI_COMBINATION_REVISION_2.
@@ -87,6 +82,11 @@ This member must be set to DOT11_VWIFI_COMBINATION_REVISION_2.
 
 This member must be set to 
        sizeof(DOT11_VWIFI_COMBINATION_V2).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `uNumAdhoc`
 
@@ -155,9 +155,7 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also

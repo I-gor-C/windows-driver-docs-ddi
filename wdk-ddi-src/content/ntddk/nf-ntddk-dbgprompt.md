@@ -78,11 +78,8 @@ The following code example asks if the user wants to continue and accepts the le
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |
+| **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
 | **IRQL** | <= DIRQL |
-| **DDI compliance rules** |  |

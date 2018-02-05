@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 30c3fc44-e94a-47ca-a25b-33857b485817
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : READ_REGISTER_BUFFER_USHORT routine [Kernel-Mode Driver Architecture], k103_a4ed8007-394e-4090-bcdb-63ad37431377.xml, kernel.read_register_buffer_ushort, wdm/READ_REGISTER_BUFFER_USHORT, READ_REGISTER_BUFFER_USHORT
+ms.keywords : wdm/READ_REGISTER_BUFFER_USHORT, kernel.read_register_buffer_ushort, READ_REGISTER_BUFFER_USHORT, k103_a4ed8007-394e-4090-bcdb-63ad37431377.xml, READ_REGISTER_BUFFER_USHORT routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,9 @@ Callers of <b>READ_REGISTER_BUFFER_USHORT</b> can be running at any IRQL, assumi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |

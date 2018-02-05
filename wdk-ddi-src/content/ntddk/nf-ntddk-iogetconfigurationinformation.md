@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1d577588-72cf-44f2-b1bb-ebab0ee52fd6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoGetConfigurationInformation routine [Kernel-Mode Driver Architecture], kernel.iogetconfigurationinformation, k104_5f9c4d01-9724-4e1d-8154-3737f0809068.xml, ntddk/IoGetConfigurationInformation, IoGetConfigurationInformation
+ms.keywords : ntddk/IoGetConfigurationInformation, IoGetConfigurationInformation, kernel.iogetconfigurationinformation, k104_5f9c4d01-9724-4e1d-8154-3737f0809068.xml, IoGetConfigurationInformation routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -119,12 +119,11 @@ The configuration information structure also contains a value indicating whether
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -132,15 +131,15 @@ The configuration information structure also contains a value indicating whether
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546580">HalAssignSlotResources</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546599">HalGetBusData</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548285">IoAssignResources</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546606">HalGetBusDataByOffset</a>
 
  
 

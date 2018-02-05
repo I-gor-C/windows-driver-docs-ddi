@@ -73,14 +73,10 @@ If this routine succeeds, it returns <b>NTSTATUS_SUCCESS</b>. The driver should 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
-| **Library** |  |
 | **IRQL** | INTERRUPT_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

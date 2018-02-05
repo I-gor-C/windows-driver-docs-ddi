@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bcf20a21-46a8-41e6-ae6e-bef8d6735c82
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, _NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, *PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, ntddndis/NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_write_vf_config_block_parameters, NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, ntddndis/PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS
+ms.keywords : "*PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, _NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, ntddndis/NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, NDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS, PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_write_vf_config_block_parameters, PNDIS_SRIOV_WRITE_VF_CONFIG_BLOCK_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -114,9 +114,7 @@ This operating system runs within the Hyper-V parent partition.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b812cd5d-73a1-42bc-a1ae-1c1494369288
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE structure [Network Drivers Starting with Windows Vista], netvista.riluiccappdatachange_2, rilapitypes/RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE
+ms.keywords : RILUICCAPPDATACHANGE structure [Network Drivers Starting with Windows Vista], *LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE, netvista.riluiccappdatachange_2, rilapitypes/RILUICCAPPDATACHANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE
+req.typenames : "*LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE"
 req.product : Windows 10 or later.
 ---
 
@@ -70,7 +70,4 @@ typedef struct _RILUICCAPPDATACHANGE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

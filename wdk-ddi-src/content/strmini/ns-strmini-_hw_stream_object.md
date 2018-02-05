@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0cb2041a-844d-4ddb-9dab-e1c77c28835a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PHW_STREAM_OBJECT, strmini/HW_STREAM_OBJECT, PHW_STREAM_OBJECT, _HW_STREAM_OBJECT, PHW_STREAM_OBJECT structure pointer [Streaming Media Devices], HW_STREAM_OBJECT, strmini/PHW_STREAM_OBJECT, HW_STREAM_OBJECT structure [Streaming Media Devices], stream.hw_stream_object, strclass-struct_c409633a-dccd-4f70-a412-0da08feeae43.xml"
+ms.keywords : HW_STREAM_OBJECT structure [Streaming Media Devices], strmini/HW_STREAM_OBJECT, strmini/PHW_STREAM_OBJECT, stream.hw_stream_object, _HW_STREAM_OBJECT, PHW_STREAM_OBJECT, PHW_STREAM_OBJECT structure pointer [Streaming Media Devices], strclass-struct_c409633a-dccd-4f70-a412-0da08feeae43.xml, HW_STREAM_OBJECT, *PHW_STREAM_OBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HW_STREAM_OBJECT, *PHW_STREAM_OBJECT
+req.typenames : "*PHW_STREAM_OBJECT, HW_STREAM_OBJECT"
 req.product : Windows 10 or later.
 ---
 
@@ -129,9 +129,6 @@ When the class driver opens the stream and issues the SRB_OPEN_STREAM request to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |
 
 ## See Also

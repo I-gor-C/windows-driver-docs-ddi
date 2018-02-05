@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : BB18925D-ACFA-426D-ADD3-33C1D8A99396
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortUpdateAdapterMaxIO, StorPortUpdateAdapterMaxIO function [Storage Devices], storage.storportupdateadaptermaxio, storport/StorPortUpdateAdapterMaxIO
+ms.keywords : StorPortUpdateAdapterMaxIO, storport/StorPortUpdateAdapterMaxIO, storage.storportupdateadaptermaxio, StorPortUpdateAdapterMaxIO function [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,10 @@ This function returns of the following values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | storport.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

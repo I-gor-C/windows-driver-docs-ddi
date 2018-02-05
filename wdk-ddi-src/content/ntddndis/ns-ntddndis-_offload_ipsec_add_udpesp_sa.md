@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4d3f554f-2733-4896-827c-14e92e8034ce
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/POFFLOAD_IPSEC_ADD_UDPESP_SA, ntddndis/OFFLOAD_IPSEC_ADD_UDPESP_SA, POFFLOAD_IPSEC_ADD_UDPESP_SA, POFFLOAD_IPSEC_ADD_UDPESP_SA structure pointer [Network Drivers Starting with Windows Vista], OFFLOAD_IPSEC_ADD_UDPESP_SA structure [Network Drivers Starting with Windows Vista], netvista.offload_ipsec_add_udpesp_sa, _OFFLOAD_IPSEC_ADD_UDPESP_SA, *POFFLOAD_IPSEC_ADD_UDPESP_SA, 216offload_081b17de-1f16-44c7-9888-5d0388c081d9.xml, OFFLOAD_IPSEC_ADD_UDPESP_SA
+ms.keywords : POFFLOAD_IPSEC_ADD_UDPESP_SA, netvista.offload_ipsec_add_udpesp_sa, OFFLOAD_IPSEC_ADD_UDPESP_SA structure [Network Drivers Starting with Windows Vista], _OFFLOAD_IPSEC_ADD_UDPESP_SA, ntddndis/OFFLOAD_IPSEC_ADD_UDPESP_SA, *POFFLOAD_IPSEC_ADD_UDPESP_SA, 216offload_081b17de-1f16-44c7-9888-5d0388c081d9.xml, POFFLOAD_IPSEC_ADD_UDPESP_SA structure pointer [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_IPSEC_ADD_UDPESP_SA, OFFLOAD_IPSEC_ADD_UDPESP_SA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OFFLOAD_IPSEC_ADD_UDPESP_SA, *POFFLOAD_IPSEC_ADD_UDPESP_SA
+req.typenames : "*POFFLOAD_IPSEC_ADD_UDPESP_SA, OFFLOAD_IPSEC_ADD_UDPESP_SA"
 ---
 
 # _OFFLOAD_IPSEC_ADD_UDPESP_SA structure
@@ -96,8 +96,8 @@ The IP address for the destination endpoint, such as a connector, of a tunnel. T
 
 The UDP-ESP encapsulation type and destination port of a parser entry. This information is
      formatted as an 
-     <mshelp:link keywords="netvista.offload_ipsec_udpesp_encaptype_entry" tabindex="0"><b>
-     OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY</b></mshelp:link> structure.
+     <a href="..\ntddndis\ns-ntddndis-_offload_ipsec_udpesp_encaptype_entry.md">
+     OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY</a> structure.
 
 `EncapTypeEntryOffldHandle`
 
@@ -160,8 +160,8 @@ A variable-length array that contains keys for the SAs specified at
      an integrity (authentication) algorithm are specified by the 
      <b>ConfAlgo</b> and 
      <b>IntegrityAlgo</b> of an 
-     <mshelp:link keywords="netvista.offload_security_association" tabindex="0"><b>
-     OFFLOAD_SECURITY_ASSOCIATION</b></mshelp:link> structure, the buffer at 
+     <a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">
+     OFFLOAD_SECURITY_ASSOCIATION</a> structure, the buffer at 
      <b>KeyMat</b> contains key information for the confirmation algorithm first,
      followed immediately by key information for the integrity algorithm.
      
@@ -177,8 +177,8 @@ The length of each key in the buffer at
 
 The number of elements in the 
      <b>SecAssoc</b> array. Each element in the array is an 
-     <mshelp:link keywords="netvista.offload_security_association" tabindex="0"><b>
-     OFFLOAD_SECURITY_ASSOCIATION</b></mshelp:link> structure.
+     <a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">
+     OFFLOAD_SECURITY_ASSOCIATION</a> structure.
 
 `OffloadHandle`
 
@@ -189,8 +189,8 @@ The handle to the newly created SA. The miniport driver supplies this handle bef
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a> structure before
      passing a send packet to the miniport driver. The TCP/IP transport must also specify this handle when
      deleting the SA with an 
-     <mshelp:link keywords="netvista.oid_tcp_task_ipsec_delete_sa" tabindex="0">
-     OID_TCP_TASK_IPSEC_DELETE_SA</mshelp:link> request.
+     <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">
+     OID_TCP_TASK_IPSEC_DELETE_SA</a> request.
 
 `Protocol`
 
@@ -238,8 +238,8 @@ The IP address for the source endpoint, such as a connector, of a tunnel. The mi
 
 ## Remarks
 The OFFLOAD_IPSEC_ADD_UDPESP_SA structure is used with the 
-    <mshelp:link keywords="netvista.oid_tcp_task_ipsec_add_udpesp_sa" tabindex="0">
-    OID_TCP_TASK_IPSEC_ADD_UDPESP_SA</mshelp:link> OID.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-add-udpesp-sa">
+    OID_TCP_TASK_IPSEC_ADD_UDPESP_SA</a> OID.
 
 Note that the OFFLOAD_IPSEC_ADD_UDPESP_SA structure is almost identical to the 
     <a href="..\ntddndis\ns-ntddndis-_offload_ipsec_add_sa.md">OFFLOAD_IPSEC_ADD_SA</a> structure used in
@@ -252,30 +252,27 @@ Note that the OFFLOAD_IPSEC_ADD_UDPESP_SA structure is almost identical to the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
+<a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">OID_TCP_TASK_IPSEC_DELETE_SA</a>
 
-<a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a>
 
-<mshelp:link keywords="netvista.offload_ipsec_udpesp_encaptype_entry" tabindex="0"><b>
-   OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_offload_ipsec_udpesp_encaptype_entry.md">
+   OFFLOAD_IPSEC_UDPESP_ENCAPTYPE_ENTRY</a>
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_add_udpesp_sa" tabindex="0">
-   OID_TCP_TASK_IPSEC_ADD_UDPESP_SA</mshelp:link>
-
-<a href="..\ntddndis\ns-ntddndis-_offload_ipsec_add_sa.md">OFFLOAD_IPSEC_ADD_SA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
 
 <a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-add-udpesp-sa">
+   OID_TCP_TASK_IPSEC_ADD_UDPESP_SA</a>
+
+<a href="..\ntddndis\ns-ntddndis-_offload_ipsec_add_sa.md">OFFLOAD_IPSEC_ADD_SA</a>
 
  
 

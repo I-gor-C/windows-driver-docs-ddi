@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 744189F3-07D1-42F2-986C-70BEBE760123
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_write_port_buffer_uchar, WDF_WRITE_PORT_BUFFER_UCHAR, WDF_WRITE_PORT_BUFFER_UCHAR function, wdfhwaccess/WDF_WRITE_PORT_BUFFER_UCHAR
+ms.keywords : WDF_WRITE_PORT_BUFFER_UCHAR, wdf.wdf_write_port_buffer_uchar, wdfhwaccess/WDF_WRITE_PORT_BUFFER_UCHAR, WDF_WRITE_PORT_BUFFER_UCHAR function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,8 @@ The size of the buffer must be large enough to contain at least the specified nu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

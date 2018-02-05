@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : DAE013B7-7715-4B03-99F7-807306736C14
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO structure [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_ROI_INFO, tagKSCAMERA_EXTENDEDPROP_ROI_INFO, stream.kscamera_extendedprop_roi_info, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_INFO, ksmedia/KSCAMERA_EXTENDEDPROP_ROI_INFO, PKSCAMERA_EXTENDEDPROP_ROI_INFO structure pointer [Streaming Media Devices]"
+ms.keywords : "*PKSCAMERA_EXTENDEDPROP_ROI_INFO, PKSCAMERA_EXTENDEDPROP_ROI_INFO structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_INFO, stream.kscamera_extendedprop_roi_info, PKSCAMERA_EXTENDEDPROP_ROI_INFO, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO, tagKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO structure [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSCAMERA_EXTENDEDPROP_ROI_INFO, *PKSCAMERA_EXTENDEDPROP_ROI_INFO
+req.typenames : "*PKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_INFO structure
@@ -74,7 +74,4 @@ This is the weight of the region (0-100).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 14d4464e-d4e8-446c-8822-0b16c984313c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PISCSI_ConnectionStaticInfo, ISCSI_ConnectionStaticInfo structure [Storage Devices], iscsimgt/ISCSI_ConnectionStaticInfo, structs-iSCSI_ef0dc102-31e4-466e-b094-d4a6b6a01ce6.xml, ISCSI_ConnectionStaticInfo, iscsimgt/PISCSI_ConnectionStaticInfo, storage.iscsi_connectionstaticinfo, _ISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo structure pointer [Storage Devices]"
+ms.keywords : "*PISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo, ISCSI_ConnectionStaticInfo structure [Storage Devices], iscsimgt/ISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo structure pointer [Storage Devices], ISCSI_ConnectionStaticInfo, storage.iscsi_connectionstaticinfo, iscsimgt/PISCSI_ConnectionStaticInfo, structs-iSCSI_ef0dc102-31e4-466e-b094-d4a6b6a01ce6.xml, _ISCSI_ConnectionStaticInfo"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PISCSI_ConnectionStaticInfo, ISCSI_ConnectionStaticInfo"
+req.typenames : ISCSI_ConnectionStaticInfo, *PISCSI_ConnectionStaticInfo
 ---
 
 # _ISCSI_ConnectionStaticInfo structure
@@ -217,22 +217,19 @@ The connection identifier (ID) that the operating system and application softwar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
-
 <a href="..\iscsidef\ne-iscsidef-piscsi_auth_types.md">ISCSI_AUTH_TYPES</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561490">ISCSI_ConnectionStaticInfo WMI Class</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561494">ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561490">ISCSI_ConnectionStaticInfo WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 

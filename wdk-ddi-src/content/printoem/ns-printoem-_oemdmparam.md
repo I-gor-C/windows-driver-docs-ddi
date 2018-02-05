@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 625980d1-47eb-4427-a9e8-967b1873bbd6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/POEMDMPARAM, OEMDMPARAM, POEMDMPARAM structure pointer [Print Devices], POEMDMPARAM, printoem/OEMDMPARAM, *POEMDMPARAM, _OEMDMPARAM, print.oemdmparam, print_unidrv-pscript_ui_49535272-ec29-4133-8105-0ce9b31808a2.xml, OEMDMPARAM structure [Print Devices]
+ms.keywords : OEMDMPARAM structure [Print Devices], printoem/POEMDMPARAM, _OEMDMPARAM, print.oemdmparam, POEMDMPARAM structure pointer [Print Devices], OEMDMPARAM, *POEMDMPARAM, print_unidrv-pscript_ui_49535272-ec29-4133-8105-0ce9b31808a2.xml, printoem/OEMDMPARAM, POEMDMPARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OEMDMPARAM, *POEMDMPARAM
+req.typenames : "*POEMDMPARAM, OEMDMPARAM"
 req.product : Windows 10 or later.
 ---
 
@@ -111,7 +111,4 @@ For more information about the use of OEMDMPARAM structure members, see the desc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |

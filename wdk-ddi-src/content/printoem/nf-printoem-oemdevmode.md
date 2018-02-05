@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 491217e9-8cc1-47de-af37-92db377a8c2d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMDevMode, OEMDevMode function [Print Devices], print.oemdevmode, print_obsoletefunctions_7a402f29-f8ab-48cc-951f-89b21f45aebd.xml, OEMDevMode
+ms.keywords : print_obsoletefunctions_7a402f29-f8ab-48cc-951f-89b21f45aebd.xml, OEMDevMode, print.oemdevmode, OEMDevMode function [Print Devices], printoem/OEMDevMode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

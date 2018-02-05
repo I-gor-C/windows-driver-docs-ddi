@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DA9C020F-18E7-4C6C-AEBB-81B099C80CD0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PPO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO, kernel.po_fx_component_perf_info, _PO_FX_COMPONENT_PERF_INFO, PPO_FX_COMPONENT_PERF_INFO structure pointer [Kernel-Mode Driver Architecture], wdm/PO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO structure [Kernel-Mode Driver Architecture], *PPO_FX_COMPONENT_PERF_INFO, PPO_FX_COMPONENT_PERF_INFO
+ms.keywords : "*PPO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO structure [Kernel-Mode Driver Architecture], kernel.po_fx_component_perf_info, wdm/PPO_FX_COMPONENT_PERF_INFO, _PO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO, wdm/PO_FX_COMPONENT_PERF_INFO, PPO_FX_COMPONENT_PERF_INFO structure pointer [Kernel-Mode Driver Architecture], PPO_FX_COMPONENT_PERF_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPO_FX_COMPONENT_PERF_INFO, PO_FX_COMPONENT_PERF_INFO"
+req.typenames : PO_FX_COMPONENT_PERF_INFO, *PPO_FX_COMPONENT_PERF_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -69,9 +69,7 @@ Most drivers are expected to define a single set of performance states per compo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | wdm.h |
 
 ## See Also

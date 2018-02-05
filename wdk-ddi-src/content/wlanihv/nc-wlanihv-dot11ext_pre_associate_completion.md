@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -44,8 +44,8 @@ req.product : Windows 10 or later.
 <div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The IHV Extensions DLL calls the 
   <b>Dot11ExtPreAssociateCompletion</b> function to asynchronously complete a
   pre-association operation initiated through a call to the 
-  <mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-  Dot11ExtIhvPerformPreAssociate</i></mshelp:link> IHV Handler function.
+  <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+  Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
 ## Syntax
 
@@ -74,8 +74,8 @@ The handle used by the operating system to reference the wireless LAN (WLAN) ada
 
 The handle used by the operating system to reference the connection session with the basic service
      set (BSS) network. This handle value was specified through a previous call to the 
-     <mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-     Dot11ExtIhvPerformPreAssociate</i></mshelp:link> IHV Handler function.
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+     Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
 `dwReasonCode`
 
@@ -165,26 +165,21 @@ The IHV Extensions DLL must call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+   Dot11ExtIhvPerformPreAssociate</a>
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_deinit_adapter.md">Dot11ExtIhvDeinitAdapter</a>
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
-
-<mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-   Dot11ExtIhvPerformPreAssociate</i></mshelp:link>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_adapter_reset.md">Dot11ExtIhvAdapterReset</a>
 

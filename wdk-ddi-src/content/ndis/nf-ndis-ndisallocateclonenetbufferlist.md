@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 357605a1-5c57-44ed-97b3-f466f9a7182c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisAllocateCloneNetBufferList, netvista.ndisallocateclonenetbufferlist, NdisAllocateCloneNetBufferList, NdisAllocateCloneNetBufferList function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_52fbbc8b-cf3c-4df8-8e02-053946be8136.xml
+ms.keywords : NdisAllocateCloneNetBufferList function [Network Drivers Starting with Windows Vista], NdisAllocateCloneNetBufferList, ndis_netbuf_functions_ref_52fbbc8b-cf3c-4df8-8e02-053946be8136.xml, netvista.ndisallocateclonenetbufferlist, ndis/NdisAllocateCloneNetBufferList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,16 +64,16 @@ A pointer to an existing <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFE
 `NetBufferListPoolHandle`
 
 A handle that was obtained from a call to the 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-     NdisAllocateNetBufferListPool</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+     NdisAllocateNetBufferListPool</a> function.
 
 `NetBufferPoolHandle`
 
 A 
      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure pool handle that was
      previously returned from a call to 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferpool" tabindex="0"><b>
-     NdisAllocateNetBufferPool</b></mshelp:link>.
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
+     NdisAllocateNetBufferPool</a>.
 
 `AllocateCloneFlags`
 
@@ -121,39 +121,37 @@ The clone <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> stru
     <i>OriginalNetBufferList</i>. NDIS does not copy the data that is described by the original MDLs to new
     data buffers. Instead, the cloned structures reference the original data buffers. The clone
     <b>NET_BUFFER_LIST</b> structure does not include an initial 
-    <mshelp:link keywords="netvista.net_buffer_list_context" tabindex="0"><b>
-    NET_BUFFER_LIST_CONTEXT</b></mshelp:link> structure.
+    <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">
+    NET_BUFFER_LIST_CONTEXT</a> structure.
 
 Call the 
-    <mshelp:link keywords="netvista.ndisfreeclonenetbufferlist" tabindex="0"><b>
-    NdisFreeCloneNetBufferList</b></mshelp:link> function to free a <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure and all of the associated
+    <a href="..\ndis\nf-ndis-ndisfreeclonenetbufferlist.md">
+    NdisFreeCloneNetBufferList</a> function to free a <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure and all of the associated
     structures and MDL chains that were allocated by calling 
     <b>NdisAllocateCloneNetBufferList</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-   NdisAllocateNetBufferListPool</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisfreeclonenetbufferlist.md">NdisFreeCloneNetBufferList</a>
-
-<a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
-
 <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\nf-ndis-ndisfreeclonenetbufferlist.md">NdisFreeCloneNetBufferList</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+   NdisAllocateNetBufferListPool</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 

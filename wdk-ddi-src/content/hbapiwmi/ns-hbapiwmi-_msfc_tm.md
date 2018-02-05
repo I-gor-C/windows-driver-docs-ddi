@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7e27f53f-350e-4315-9de6-60835bddcbfb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PMSFC_TM, MSFC_TM, *PMSFC_TM, hbapiwmi/MSFC_TM, storage.msfc_tm, PMSFC_TM structure pointer [Storage Devices], structs-Fibre_5cca5127-bbcc-4a2f-9ad2-2daeecac1448.xml, MSFC_TM structure [Storage Devices], PMSFC_TM, _MSFC_TM
+ms.keywords : hbapiwmi/PMSFC_TM, storage.msfc_tm, hbapiwmi/MSFC_TM, structs-Fibre_5cca5127-bbcc-4a2f-9ad2-2daeecac1448.xml, *PMSFC_TM, _MSFC_TM, PMSFC_TM structure pointer [Storage Devices], MSFC_TM structure [Storage Devices], MSFC_TM, PMSFC_TM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_TM, MSFC_TM"
+req.typenames : MSFC_TM, *PMSFC_TM
 ---
 
 # _MSFC_TM structure
@@ -99,9 +99,6 @@ Indicates the number of years since 1900.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

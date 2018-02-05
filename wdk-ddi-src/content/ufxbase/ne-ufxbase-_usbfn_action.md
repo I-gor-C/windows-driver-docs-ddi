@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9E9AB3E0-EBDC-4EC3-BFBF-C78EE56BD699
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbfn_action, UsbfnActionNone, USBFN_ACTION, UsbfnActionDetectProprietaryCharger, ufxbase/USBFN_ACTION, ufxbase/UsbfnActionNoCad, ufxbase/UsbfnActionDetectProprietaryCharger, *PUSBFN_ACTION, USBFN_ACTION enumeration [Buses], ufxbase/UsbfnActionNone, UsbfnActionNoCad, _USBFN_ACTION
+ms.keywords : ufxbase/USBFN_ACTION, UsbfnActionNoCad, UsbfnActionDetectProprietaryCharger, buses.usbfn_action, USBFN_ACTION, ufxbase/UsbfnActionNone, ufxbase/UsbfnActionDetectProprietaryCharger, *PUSBFN_ACTION, _USBFN_ACTION, UsbfnActionNone, ufxbase/UsbfnActionNoCad, USBFN_ACTION enumeration [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,4 @@ typedef enum _USBFN_ACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ufxbase.h |

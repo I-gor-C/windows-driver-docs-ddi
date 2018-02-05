@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a38c089b-a5f4-4fd2-ab94-ead53228c5e9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_ReadMsg, RIL_ReadMsg, netvista.ril_readmsg, RIL_ReadMsg method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_ReadMsg, netvista.ril_readmsg, rilapi/RIL_ReadMsg, RIL_ReadMsg method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

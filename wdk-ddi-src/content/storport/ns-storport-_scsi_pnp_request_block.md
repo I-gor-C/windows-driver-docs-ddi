@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0627065b-62c2-4df8-973c-b4fb5811296e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-storport_d08ea849-f1d6-4584-b6a4-df7127f6873d.xml, StorQueryCapabilities, storport/SCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK structure [Storage Devices], StorRemoveDevice, StorFilterResourceRequirements, storport/PSCSI_PNP_REQUEST_BLOCK, PSCSI_PNP_REQUEST_BLOCK, PSCSI_PNP_REQUEST_BLOCK structure pointer [Storage Devices], StorStartDevice, StorSupriseRemoval, *PSCSI_PNP_REQUEST_BLOCK, StorQueryResourceRequirements, StorStopDevice, _SCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK, storage.scsi_pnp_request_block
+ms.keywords : storport/PSCSI_PNP_REQUEST_BLOCK, *PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK, StorStartDevice, storport/SCSI_PNP_REQUEST_BLOCK, StorStopDevice, storage.scsi_pnp_request_block, SCSI_PNP_REQUEST_BLOCK structure [Storage Devices], StorQueryCapabilities, _SCSI_PNP_REQUEST_BLOCK, PSCSI_PNP_REQUEST_BLOCK, StorRemoveDevice, StorFilterResourceRequirements, StorSupriseRemoval, PSCSI_PNP_REQUEST_BLOCK structure pointer [Storage Devices], structs-storport_d08ea849-f1d6-4584-b6a4-df7127f6873d.xml, StorQueryResourceRequirements
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCSI_PNP_REQUEST_BLOCK, *PSCSI_PNP_REQUEST_BLOCK
+req.typenames : "*PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK"
 req.product : Windows 10 or later.
 ---
 
@@ -244,18 +244,15 @@ The Storport driver calls <a href="..\storport\nc-storport-hw_buildio.md">HwStor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-
 <a href="..\storport\nf-storport-storportnotification.md">StorPortNotification</a>
 
 <a href="..\storport\nc-storport-hw_buildio.md">HwStorBuildIo</a>
+
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 
  
 

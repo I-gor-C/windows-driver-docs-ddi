@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 83B5C54F-182B-4D2F-8ED2-7A0B529F1D2E
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugFAEntryTags interface [Windows Debugging], IsValidTagToSet method, IsValidTagToSet, IsValidTagToSet method [Windows Debugging], debugger.idebugfaentrytags_isvalidtagtoset, IDebugFAEntryTags, extsfns/IDebugFAEntryTags::IsValidTagToSet, IDebugFAEntryTags::IsValidTagToSet, IsValidTagToSet method [Windows Debugging], IDebugFAEntryTags interface
+ms.keywords : IDebugFAEntryTags interface [Windows Debugging], IsValidTagToSet method, IsValidTagToSet, IDebugFAEntryTags::IsValidTagToSet, debugger.idebugfaentrytags_isvalidtagtoset, extsfns/IDebugFAEntryTags::IsValidTagToSet, IsValidTagToSet method [Windows Debugging], IsValidTagToSet method [Windows Debugging], IDebugFAEntryTags interface, IDebugFAEntryTags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ This method returns TRUE if it is OK to set the data of the specified tag. Other
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | extsfns.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | extsfns.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a0ffa493-4490-440b-9f67-426a7b5d4442
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFWAITLOCKCREATE, DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, WdfWaitLockCreate, WdfWaitLockCreate method, kmdf.wdfwaitlockcreate, wdfsync/WdfWaitLockCreate, wdf.wdfwaitlockcreate
+ms.keywords : WdfWaitLockCreate, DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, WdfWaitLockCreate method, wdfsync/WdfWaitLockCreate, wdf.wdfwaitlockcreate, PFN_WDFWAITLOCKCREATE, kmdf.wdfwaitlockcreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -84,24 +84,23 @@ For more information about wait locks, see <a href="https://docs.microsoft.com/e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfsync.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheckLock |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556116">WdfWaitLockRelease</a>
-
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-
 <a href="..\wdfsync\nf-wdfsync-wdfwaitlockacquire.md">WdfWaitLockAcquire</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556116">WdfWaitLockRelease</a>
+
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
 
  
 

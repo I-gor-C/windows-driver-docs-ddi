@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4434e2cb-af36-446b-b84e-f303ba315cd3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.ddraw_mode_specific_caps, DDRAW_MODE_SPECIFIC_CAPS, d3dumddi/DDRAW_MODE_SPECIFIC_CAPS, DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices], _DDRAW_MODE_SPECIFIC_CAPS, D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml
+ms.keywords : DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices], D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml, DDRAW_MODE_SPECIFIC_CAPS, display.ddraw_mode_specific_caps, d3dumddi/DDRAW_MODE_SPECIFIC_CAPS, _DDRAW_MODE_SPECIFIC_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -309,18 +309,16 @@ Capabilities can change between heads of a multiple-headed graphics card and can
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 
  
 

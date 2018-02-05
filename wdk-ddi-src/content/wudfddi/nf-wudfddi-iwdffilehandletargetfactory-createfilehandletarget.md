@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 579a2cef-1e37-426c-9f69-8766dc9011ba
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFFileHandleTargetFactory, wudfddi/IWDFFileHandleTargetFactory::CreateFileHandleTarget, CreateFileHandleTarget method, IWDFFileHandleTargetFactory interface, umdf.iwdffilehandletargetfactory_createfilehandletarget, CreateFileHandleTarget, IWDFFileHandleTargetFactory::CreateFileHandleTarget, CreateFileHandleTarget method, UMDFDeviceObjectRef_4a3fcfeb-e1a1-4375-8bd5-bdd75c36c454.xml, wdf.iwdffilehandletargetfactory_createfilehandletarget, IWDFFileHandleTargetFactory interface, CreateFileHandleTarget method
+ms.keywords : CreateFileHandleTarget method, IWDFFileHandleTargetFactory, CreateFileHandleTarget, wdf.iwdffilehandletargetfactory_createfilehandletarget, IWDFFileHandleTargetFactory::CreateFileHandleTarget, UMDFDeviceObjectRef_4a3fcfeb-e1a1-4375-8bd5-bdd75c36c454.xml, umdf.iwdffilehandletargetfactory_createfilehandletarget, wudfddi/IWDFFileHandleTargetFactory::CreateFileHandleTarget, IWDFFileHandleTargetFactory interface, CreateFileHandleTarget method, CreateFileHandleTarget method, IWDFFileHandleTargetFactory interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -118,22 +118,20 @@ For more information about <b>CreateFileHandleTarget</b> and I/O targets, see <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdffilehandletargetfactory.md">IWDFFileHandleTargetFactory</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
 
  
 

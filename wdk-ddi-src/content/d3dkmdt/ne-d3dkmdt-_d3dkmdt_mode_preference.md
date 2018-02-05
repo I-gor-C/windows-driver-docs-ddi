@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5d18431d-ca35-4757-8bbe-9397abd31568
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_MP_PREFERRED, display.d3dkmdt_mode_preference, D3DKMDT_MP_UNINITIALIZED, d3dkmdt/D3DKMDT_MP_NOTPREFERRED, d3dkmdt/D3DKMDT_MODE_PREFERENCE, d3dkmdt/D3DKMDT_MP_PREFERRED, D3DKMDT_MODE_PREFERENCE, d3dkmdt/D3DKMDT_MP_UNINITIALIZED, _D3DKMDT_MODE_PREFERENCE, D3DKMDT_MODE_PREFERENCE enumeration [Display Devices], D3DKMDT_MP_NOTPREFERRED, DmEnums_b5bdbc2e-4abe-4db7-8700-e34fc0125472.xml
+ms.keywords : D3DKMDT_MP_NOTPREFERRED, DmEnums_b5bdbc2e-4abe-4db7-8700-e34fc0125472.xml, d3dkmdt/D3DKMDT_MP_PREFERRED, display.d3dkmdt_mode_preference, D3DKMDT_MODE_PREFERENCE enumeration [Display Devices], D3DKMDT_MP_UNINITIALIZED, d3dkmdt/D3DKMDT_MP_UNINITIALIZED, d3dkmdt/D3DKMDT_MP_NOTPREFERRED, D3DKMDT_MODE_PREFERENCE, _D3DKMDT_MODE_PREFERENCE, D3DKMDT_MP_PREFERRED, d3dkmdt/D3DKMDT_MODE_PREFERENCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ The <b>Info</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_so
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 00a79e57-5915-49a3-b11f-223cc93c2e99
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfioresourcerequirementslistgetcount, WdfIoResourceRequirementsListGetCount method, wdfresource/WdfIoResourceRequirementsListGetCount, wdf.wdfioresourcerequirementslistgetcount, WdfIoResourceRequirementsListGetCount, PFN_WDFIORESOURCEREQUIREMENTSLISTGETCOUNT, DFResourceObjectRef_927d5729-0c1e-4363-9f2d-b5fefba8e2f6.xml
+ms.keywords : wdfresource/WdfIoResourceRequirementsListGetCount, WdfIoResourceRequirementsListGetCount, wdf.wdfioresourcerequirementslistgetcount, WdfIoResourceRequirementsListGetCount method, PFN_WDFIORESOURCEREQUIREMENTSLISTGETCOUNT, DFResourceObjectRef_927d5729-0c1e-4363-9f2d-b5fefba8e2f6.xml, kmdf.wdfioresourcerequirementslistgetcount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -73,11 +73,9 @@ For more information about resource requirements lists, see <a href="https://doc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

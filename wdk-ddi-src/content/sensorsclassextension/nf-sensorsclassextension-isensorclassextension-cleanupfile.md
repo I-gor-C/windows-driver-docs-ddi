@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : eeade123-fb83-478f-99e3-e79bbbb1919b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CleanupFile method [Sensor Devices], sensors.isensorclassextension_cleanupfile, ISensorClassExtension::CleanupFile, ISensorClassExtension, CleanupFile
+ms.keywords : ISensorClassExtension::CleanupFile, sensors.isensorclassextension_cleanupfile, ISensorClassExtension, CleanupFile method [Sensor Devices], CleanupFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -110,11 +110,6 @@ When finished, the sensor class extension calls the driver in <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

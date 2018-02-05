@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9acd83c1-7e9e-4906-bb07-4f9699f76e96
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_3D_0032, D3D12DDI_COMMAND_LIST_FUNCS_3D_0032, display.d3d12ddi-command-list-funcs-3d-0032, D3D12DDI_COMMAND_LIST_FUNCS_3D_0032 structure [Display Devices]
+ms.keywords : D3D12DDI_COMMAND_LIST_FUNCS_3D_0032, D3D12DDI_COMMAND_LIST_FUNCS_3D_0032 structure [Display Devices], d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_3D_0032, display.d3d12ddi-command-list-funcs-3d-0032
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -339,7 +339,4 @@ Write buffer immediate.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h |

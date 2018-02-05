@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3f4d8c5c-3a83-4027-8d9e-5ff7db4a6853
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlmupgetproviderinfofromfileobject, fsrtlref_7ad681c5-3f7c-42d1-8644-7cd677101413.xml, FsRtlMupGetProviderInfoFromFileObject routine [Installable File System Drivers], ntifs/FsRtlMupGetProviderInfoFromFileObject, FsRtlMupGetProviderInfoFromFileObject
+ms.keywords : FsRtlMupGetProviderInfoFromFileObject routine [Installable File System Drivers], FsRtlMupGetProviderInfoFromFileObject, ifsk.fsrtlmupgetproviderinfofromfileobject, ntifs/FsRtlMupGetProviderInfoFromFileObject, fsrtlref_7ad681c5-3f7c-42d1-8644-7cd677101413.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -177,14 +177,12 @@ To get the UNC provider identifier of a network redirector from the device name 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FsRtlMupGetProviderInfoFromFileObject function is available in Windows Vista and later versions of Windows. The FsRtlMupGetProviderInfoFromFileObject function is available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

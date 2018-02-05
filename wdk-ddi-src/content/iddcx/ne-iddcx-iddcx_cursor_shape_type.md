@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8aced7c9-e1be-4ec0-8b59-77cee011a71e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_CURSOR_SHAPE_TYPE_ALPHA, IDDCX_CURSOR_SHAPE_TYPE enumeration [Display Devices], iddcx/IDDCX_CURSOR_SHAPE_TYPE_ALPHA, iddcx/IDDCX_CURSOR_SHAPE_TYPE, IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR, iddcx/IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR, iddcx/IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED, display.iddcx_cursor_shape_type, IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED, IDDCX_CURSOR_SHAPE_TYPE
+ms.keywords : iddcx/IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED, IDDCX_CURSOR_SHAPE_TYPE_UNINITIALIZED, IDDCX_CURSOR_SHAPE_TYPE_ALPHA, display.iddcx_cursor_shape_type, iddcx/IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR, iddcx/IDDCX_CURSOR_SHAPE_TYPE, IDDCX_CURSOR_SHAPE_TYPE, IDDCX_CURSOR_SHAPE_TYPE_MASKED_COLOR, IDDCX_CURSOR_SHAPE_TYPE enumeration [Display Devices], iddcx/IDDCX_CURSOR_SHAPE_TYPE_ALPHA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -79,7 +79,4 @@ typedef enum _IDDCX_CURSOR_SHAPE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

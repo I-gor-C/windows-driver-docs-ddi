@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 64e5ea3d-a002-45df-b3ad-c8f723cbe54d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista], *LPRILSMSMODIFICATIONINFO, rilapitypes/RILSMSMODIFICATIONINFO, netvista.rilsmsmodificationinfo_2
+ms.keywords : rilapitypes/RILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO structure [Network Drivers Starting with Windows Vista], netvista.rilsmsmodificationinfo_2, *LPRILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,7 +85,4 @@ typedef struct _RILSMSMODIFICATIONINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

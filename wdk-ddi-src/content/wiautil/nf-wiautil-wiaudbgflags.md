@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 2185a1c0-e952-4dbd-b1a9-82339e417774
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauDbgFlags, wiautil/wiauDbgFlags, wiauFncs_db71e773-84d8-40b9-9688-9fa33aad9182.xml, wiauDbgFlags function [Imaging Devices], image.wiaudbgflags
+ms.keywords : wiauDbgFlags, wiauDbgFlags function [Imaging Devices], wiautil/wiauDbgFlags, wiauFncs_db71e773-84d8-40b9-9688-9fa33aad9182.xml, image.wiaudbgflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,7 +72,7 @@ Pointer to a string containing the name of the function or method into which the
 
 TBD
 
-``
+`Arg1`
 
 
 
@@ -88,14 +88,10 @@ If message logging to log file, or debugger, or both is enabled and the particul
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

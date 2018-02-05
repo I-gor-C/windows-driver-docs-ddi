@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8891641a-392c-4c2b-aa5a-9464774d8610
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rtlref_cc6170fe-7f41-45ac-909c-75e341ad8d9c.xml, ntifs/RtlInitializeUnicodePrefix, RtlInitializeUnicodePrefix, ifsk.rtlinitializeunicodeprefix, RtlInitializeUnicodePrefix routine [Installable File System Drivers]
+ms.keywords : ntifs/RtlInitializeUnicodePrefix, RtlInitializeUnicodePrefix routine [Installable File System Drivers], RtlInitializeUnicodePrefix, rtlref_cc6170fe-7f41-45ac-909c-75e341ad8d9c.xml, ifsk.rtlinitializeunicodeprefix
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,24 +72,22 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
-
-<a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
-
 <a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
 
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+
 <a href="..\ntifs\nf-ntifs-rtlnextunicodeprefix.md">RtlNextUnicodePrefix</a>
+
+<a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
 
 <a href="..\ntifs\nf-ntifs-rtlremoveunicodeprefix.md">RtlRemoveUnicodePrefix</a>
 

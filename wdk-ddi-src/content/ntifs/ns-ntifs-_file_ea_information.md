@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1b27f26f-c98d-4979-b60e-0ed5965f637c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PFILE_EA_INFORMATION, ntifs/PFILE_EA_INFORMATION, PFILE_EA_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_EA_INFORMATION structure [Kernel-Mode Driver Architecture], ntifs/FILE_EA_INFORMATION, PFILE_EA_INFORMATION, kernel.file_ea_information, _FILE_EA_INFORMATION, FILE_EA_INFORMATION, kstruct_b_f78f051a-aa8f-4611-a699-1f706ac74f1f.xml"
+ms.keywords : "_FILE_EA_INFORMATION, *PFILE_EA_INFORMATION, PFILE_EA_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_EA_INFORMATION, ntifs/PFILE_EA_INFORMATION, kernel.file_ea_information, ntifs/FILE_EA_INFORMATION, FILE_EA_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_b_f78f051a-aa8f-4611-a699-1f706ac74f1f.xml, PFILE_EA_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,9 +63,7 @@ An extended attribute is a piece of application-specific metadata that an applic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows XP and later versions of Windows. Supported in Windows XP and later versions of Windows. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c3739a08-f4ea-4cc5-8f62-7d4a5cd3ed43
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_2a344216-b18f-41d6-8a11-dac6cb24de69.xml, WWAN_SET_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], netvista.wwan_set_sms_configuration, WWAN_SET_SMS_CONFIGURATION, wwan/WWAN_SET_SMS_CONFIGURATION, PWWAN_SET_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SET_SMS_CONFIGURATION, _WWAN_SET_SMS_CONFIGURATION, *PWWAN_SET_SMS_CONFIGURATION, PWWAN_SET_SMS_CONFIGURATION
+ms.keywords : "_WWAN_SET_SMS_CONFIGURATION, wwan/PWWAN_SET_SMS_CONFIGURATION, WWAN_SET_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], PWWAN_SET_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SET_SMS_CONFIGURATION, WwanRef_2a344216-b18f-41d6-8a11-dac6cb24de69.xml, netvista.wwan_set_sms_configuration, wwan/WWAN_SET_SMS_CONFIGURATION, PWWAN_SET_SMS_CONFIGURATION, WWAN_SET_SMS_CONFIGURATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,17 +86,15 @@ The SMS message format that should be used for the unsolicited indication of new
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ne-wwan-_wwan_sms_format.md">WWAN_SMS_FORMAT</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_sms_configuration.md">
+   NDIS_WWAN_SET_SMS_CONFIGURATION</a>
 
-<mshelp:link keywords="netvista.ndis_wwan_set_sms_configuration" tabindex="0"><b>
-   NDIS_WWAN_SET_SMS_CONFIGURATION</b></mshelp:link>
+<a href="..\wwan\ne-wwan-_wwan_sms_format.md">WWAN_SMS_FORMAT</a>
 
  
 

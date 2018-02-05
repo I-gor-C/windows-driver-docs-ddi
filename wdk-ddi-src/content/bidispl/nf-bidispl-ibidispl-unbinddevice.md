@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4c294d1d-5a37-4ea4-b50f-447260e885b1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiSpl::IBidiSpl::UnbindDevice, IBidiSpl::UnbindDevice method [Print Devices], IBidiSpl interface, IBidiSpl, UnbindDevice, IBidiSpl::UnbindDevice method [Print Devices], print.ibidispl_ibidispl__unbinddevice, IBidiSpl::UnbindDevice, gdi.ibidispl_ibidispl__unbinddevice, bidispl/IBidiSpl::IBidiSpl::UnbindDevice, _win32_IBidiSpl_UnbindDevice, IBidiSpl interface [Print Devices], IBidiSpl::UnbindDevice method
+ms.keywords : bidispl/IBidiSpl::IBidiSpl::UnbindDevice, IBidiSpl, IBidiSpl::UnbindDevice method [Print Devices], IBidiSpl interface [Print Devices], IBidiSpl::UnbindDevice method, _win32_IBidiSpl_UnbindDevice, gdi.ibidispl_ibidispl__unbinddevice, print.ibidispl_ibidispl__unbinddevice, IBidiSpl::IBidiSpl::UnbindDevice, UnbindDevice, IBidiSpl::UnbindDevice method [Print Devices], IBidiSpl interface, IBidiSpl::UnbindDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -100,22 +100,19 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
-<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
 
  
 

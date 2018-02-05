@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : FC12EA01-9DE1-4C07-80F3-15D039F38E06
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntPtrToUInt, ntintsafe/RtlIntPtrToUInt, RtlIntPtrToUInt function [Kernel-Mode Driver Architecture], kernel.rtlintptrtouint
+ms.keywords : RtlIntPtrToUInt function [Kernel-Mode Driver Architecture], kernel.rtlintptrtouint, RtlIntPtrToUInt, ntintsafe/RtlIntPtrToUInt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

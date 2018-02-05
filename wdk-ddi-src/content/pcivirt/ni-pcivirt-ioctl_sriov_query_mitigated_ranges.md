@@ -75,6 +75,5 @@ The request  is sent to the physical function (PF) by virtualization stack to ge
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pcivirt.h |
 | **IRQL** | PASSIVE_LEVEL |

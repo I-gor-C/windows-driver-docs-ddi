@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2984b246-3e3c-4121-b7a0-d9509a1717a3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.obinsertobject, obref_9ecb8aa6-496e-4daf-96cf-d68ec5863e94.xml, ntifs/ObInsertObject, ObInsertObject, ObInsertObject function [Installable File System Drivers]
+ms.keywords : ifsk.obinsertobject, ntifs/ObInsertObject, obref_9ecb8aa6-496e-4daf-96cf-d68ec5863e94.xml, ObInsertObject function [Installable File System Drivers], ObInsertObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,11 +85,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

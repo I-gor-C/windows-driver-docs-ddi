@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 14aaf96a-4d1f-4e4a-9fed-e493090157b8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsDiscardEvent, KsDiscardEvent, KsDiscardEvent function [Streaming Media Devices], stream.ksdiscardevent, ksfunc_553391e5-343a-4cc7-9bc5-99971cff2fcd.xml
+ms.keywords : KsDiscardEvent function [Streaming Media Devices], KsDiscardEvent, ksfunc_553391e5-343a-4cc7-9bc5-99971cff2fcd.xml, stream.ksdiscardevent, ks/KsDiscardEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,9 @@ Typically, the <b>KsDiscardEvent</b> function is automatically called by the <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

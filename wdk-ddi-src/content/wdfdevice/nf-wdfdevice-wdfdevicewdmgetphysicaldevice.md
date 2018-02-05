@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 88bd9cc7-6769-4fdf-b149-2193d765fc6c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceWdmGetPhysicalDevice, wdf.wdfdevicewdmgetphysicaldevice, kmdf.wdfdevicewdmgetphysicaldevice, WdfDeviceWdmGetPhysicalDevice method, PFN_WDFDEVICEWDMGETPHYSICALDEVICE, DFDeviceObjectGeneralRef_07f321bf-b857-4b36-81c0-452dc8acfc9a.xml, WdfDeviceWdmGetPhysicalDevice
+ms.keywords : WdfDeviceWdmGetPhysicalDevice, DFDeviceObjectGeneralRef_07f321bf-b857-4b36-81c0-452dc8acfc9a.xml, wdf.wdfdevicewdmgetphysicaldevice, kmdf.wdfdevicewdmgetphysicaldevice, wdfdevice/WdfDeviceWdmGetPhysicalDevice, WdfDeviceWdmGetPhysicalDevice method, PFN_WDFDEVICEWDMGETPHYSICALDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,9 @@ The pointer that the <b>WdfDeviceWdmGetPhysicalDevice</b> method returns is vali
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

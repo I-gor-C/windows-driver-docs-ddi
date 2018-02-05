@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E7F76E93-79B8-48AE-A1D1-E3215E2402F8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : dot11_wfd_scan_type_passive, *PDOT11_WFD_SCAN_TYPE, dot11_wfd_scan_type_active, windot11/dot11_wfd_scan_type_active, DOT11_WFD_SCAN_TYPE, DOT11_WFD_SCAN_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/dot11_wfd_scan_type_passive, dot11_wfd_scan_type_auto, netvista.dot11_wfd_scan_type, _DOT11_WFD_SCAN_TYPE, windot11/DOT11_WFD_SCAN_TYPE, windot11/dot11_wfd_scan_type_auto
+ms.keywords : windot11/DOT11_WFD_SCAN_TYPE, *PDOT11_WFD_SCAN_TYPE, DOT11_WFD_SCAN_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/dot11_wfd_scan_type_auto, windot11/dot11_wfd_scan_type_active, dot11_wfd_scan_type_auto, netvista.dot11_wfd_scan_type, dot11_wfd_scan_type_active, dot11_wfd_scan_type_passive, _DOT11_WFD_SCAN_TYPE, windot11/dot11_wfd_scan_type_passive, DOT11_WFD_SCAN_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_WFD_SCAN_TYPE, DOT11_WFD_SCAN_TYPE"
+req.typenames : DOT11_WFD_SCAN_TYPE, *PDOT11_WFD_SCAN_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -78,16 +78,14 @@ The system will set only one scan type at a time. The driver should use this set
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | windot11.h |
 
 ## See Also
 
-<a href="..\windot11\ns-windot11-_dot11_wfd_discover_request.md">DOT11_WFD_DISCOVER_REQUEST</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
+
+<a href="..\windot11\ns-windot11-_dot11_wfd_discover_request.md">DOT11_WFD_DISCOVER_REQUEST</a>
 
  
 

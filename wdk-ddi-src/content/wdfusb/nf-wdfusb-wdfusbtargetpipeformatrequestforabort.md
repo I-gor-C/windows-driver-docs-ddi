@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 79cf94e4-c362-4ed4-882e-771cd4f6ed48
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeFormatRequestForAbort method, kmdf.wdfusbtargetpipeformatrequestforabort, wdfusb/WdfUsbTargetPipeFormatRequestForAbort, wdf.wdfusbtargetpipeformatrequestforabort, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORABORT, DFUsbRef_d99442d6-818c-4c46-8df2-dd5e2346aa5f.xml, WdfUsbTargetPipeFormatRequestForAbort
+ms.keywords : WdfUsbTargetPipeFormatRequestForAbort method, WdfUsbTargetPipeFormatRequestForAbort, wdf.wdfusbtargetpipeformatrequestforabort, DFUsbRef_d99442d6-818c-4c46-8df2-dd5e2346aa5f.xml, kmdf.wdfusbtargetpipeformatrequestforabort, wdfusb/WdfUsbTargetPipeFormatRequestForAbort, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORABORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -135,12 +135,11 @@ For more information about the <b>WdfUsbTargetPipeFormatRequestForAbort</b> meth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestForUrbXrb, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2 |
 

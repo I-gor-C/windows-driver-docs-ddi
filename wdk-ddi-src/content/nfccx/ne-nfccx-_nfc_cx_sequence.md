@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 752451F9-74FC-48A8-B9B8-2CBD381B91D9
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : SequenceNfceeDiscComplete, nfccx/SequenceRfDiscStartComplete, nfpdrivers.nfc_cx_sequence, nfccx/SequenceMaximum, nfccx/SequenceShutdownComplete, SequenceMaximum, _NFC_CX_SEQUENCE, nfccx/SequencePreRecovery, PNFC_CX_SEQUENCE, SequencePreRfDiscStop, SequencePreShutdown, SequenceRecoveryComplete, nfccx/SequencePreRfDiscStop, nfccx/SequencePreInit, nfccx/SequenceRfDiscStopComplete, nfccx/SequencePreNfceeDisc, nfccx/SequencePreRfDiscStart, *PNFC_CX_SEQUENCE, NFC_CX_SEQUENCE, SequencePreNfceeDisc, SequencePreRecovery, SequenceShutdownComplete, nfccx/NFC_CX_SEQUENCE, SequenceRfDiscStartComplete, nfccx/SequenceNfceeDiscComplete, NFC_CX_SEQUENCE enumeration [Near-Field Proximity Drivers], SequencePreInit, nfccx/SequenceInitComplete, nfccx/SequencePreShutdown, nfccx/SequenceRecoveryComplete, SequenceInitComplete, SequencePreRfDiscStart, SequenceRfDiscStopComplete
+ms.keywords : SequencePreRfDiscStart, SequencePreNfceeDisc, SequencePreShutdown, SequencePreRecovery, _NFC_CX_SEQUENCE, nfccx/SequencePreRfDiscStart, nfccx/SequenceInitComplete, nfccx/SequencePreInit, NFC_CX_SEQUENCE, SequenceRecoveryComplete, SequenceRfDiscStartComplete, nfccx/SequenceRfDiscStopComplete, PNFC_CX_SEQUENCE, nfccx/NFC_CX_SEQUENCE, nfpdrivers.nfc_cx_sequence, SequenceInitComplete, SequencePreRfDiscStop, *PNFC_CX_SEQUENCE, SequenceRfDiscStopComplete, SequenceShutdownComplete, SequenceNfceeDiscComplete, nfccx/SequenceNfceeDiscComplete, SequencePreInit, nfccx/SequenceRfDiscStartComplete, nfccx/SequencePreRfDiscStop, nfccx/SequencePreRecovery, nfccx/SequencePreNfceeDisc, nfccx/SequenceRecoveryComplete, SequenceMaximum, nfccx/SequenceMaximum, nfccx/SequencePreShutdown, NFC_CX_SEQUENCE enumeration [Near-Field Proximity Drivers], nfccx/SequenceShutdownComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NFC_CX_SEQUENCE, *PNFC_CX_SEQUENCE
+req.typenames : "*PNFC_CX_SEQUENCE, NFC_CX_SEQUENCE"
 ---
 
 # _NFC_CX_SEQUENCE Enumeration
@@ -134,9 +134,7 @@ typedef enum _NFC_CX_SEQUENCE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
 ## See Also

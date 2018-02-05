@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4fb0b803-1fe2-409b-8543-dddc5df67fe4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisStoreUlong, ndis_memory_ref_99349378-c2ab-4f96-82a3-7d76b15aaca3.xml, NdisStoreUlong macro [Network Drivers Starting with Windows Vista], netvista.ndisstoreulong, ndis/NdisStoreUlong
+ms.keywords : NdisStoreUlong macro [Network Drivers Starting with Windows Vista], NdisStoreUlong, netvista.ndisstoreulong, ndis/NdisStoreUlong, ndis_memory_ref_99349378-c2ab-4f96-82a3-7d76b15aaca3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -78,14 +78,11 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlStoreUlong instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlStoreUlong instead. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | See Remarks section |
-| **DDI compliance rules** |  |
 
 ## See Also
 

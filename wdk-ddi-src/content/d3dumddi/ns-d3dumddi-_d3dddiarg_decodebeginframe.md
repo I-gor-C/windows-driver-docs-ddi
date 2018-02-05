@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8219beee-b27c-4f81-aef7-8d38363d4645
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_param_Structs_fdee5664-6d7b-4d54-ac34-69d216f05896.xml, _D3DDDIARG_DECODEBEGINFRAME, D3DDDIARG_DECODEBEGINFRAME structure [Display Devices], display.d3dddiarg_decodebeginframe, D3DDDIARG_DECODEBEGINFRAME, d3dumddi/D3DDDIARG_DECODEBEGINFRAME
+ms.keywords : D3DDDIARG_DECODEBEGINFRAME structure [Display Devices], d3dumddi/D3DDDIARG_DECODEBEGINFRAME, D3DDDIARG_DECODEBEGINFRAME, _D3DDDIARG_DECODEBEGINFRAME, UMDisplayDriver_param_Structs_fdee5664-6d7b-4d54-ac34-69d216f05896.xml, display.d3dddiarg_decodebeginframe
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,18 +64,16 @@ A pointer to the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_setkey.md">DXVADD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_setkey.md">DXVADDI_PVP_SETKEY</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdecodedevice.md">CreateDecodeDevice</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decodebeginframe.md">DecodeBeginFrame</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_setkey.md">DXVADDI_PVP_SETKEY</a>
 
  
 

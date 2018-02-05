@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 94e24172-a149-4e74-9600-2fcb7396ef34
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILGETCALLFORWARDINGPARAMS, RILGETCALLFORWARDINGPARAMS, netvista.rilgetcallforwardingparams, RILGETCALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILGETCALLFORWARDINGPARAMS
+ms.keywords : netvista.rilgetcallforwardingparams, RILGETCALLFORWARDINGPARAMS, RILGETCALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILGETCALLFORWARDINGPARAMS, *LPRILGETCALLFORWARDINGPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ typedef struct _RILGETCALLFORWARDINGPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

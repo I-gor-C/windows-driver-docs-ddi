@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3d6ad381-0bd9-47d8-a4dd-e434b62bf5a1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_42f55ca4-ed73-4ea2-9f33-462d9d13e3e3.xml, stream.ksterminatedevice, KsTerminateDevice function [Streaming Media Devices], ks/KsTerminateDevice, KsTerminateDevice
+ms.keywords : stream.ksterminatedevice, KsTerminateDevice, ks/KsTerminateDevice, KsTerminateDevice function [Streaming Media Devices], avfunc_42f55ca4-ed73-4ea2-9f33-462d9d13e3e3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,30 +68,27 @@ Normally, AVStream calls <b>KsTerminateDevice</b> upon receipt of a PnP remove d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
-
-<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
-
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
 <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
 <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
 
-<a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a>
+<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+
+<a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a>
 
  
 

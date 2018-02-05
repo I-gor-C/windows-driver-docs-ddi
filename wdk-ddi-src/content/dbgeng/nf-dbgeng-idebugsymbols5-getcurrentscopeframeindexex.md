@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0D8198BB-583F-4828-8131-61EB17621F32
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols5::GetCurrentScopeFrameIndexEx, IDebugSymbols5, GetCurrentScopeFrameIndexEx, GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5 interface [Windows Debugging], GetCurrentScopeFrameIndexEx method, debugger.idebugsymbols5_getcurrentscopeframeindexex, GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5 interface, dbgeng/IDebugSymbols5::GetCurrentScopeFrameIndexEx
+ms.keywords : GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5, IDebugSymbols5 interface [Windows Debugging], GetCurrentScopeFrameIndexEx method, IDebugSymbols5::GetCurrentScopeFrameIndexEx, dbgeng/IDebugSymbols5::GetCurrentScopeFrameIndexEx, GetCurrentScopeFrameIndexEx, GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5 interface, debugger.idebugsymbols5_getcurrentscopeframeindexex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

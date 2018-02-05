@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2B27E92C-8781-4499-A1E0-7C1BBFFAA2DF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iminiportaudioenginenode_getsupporteddeviceformats, IMiniportAudioEngineNode::GetSupportedDeviceFormats, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], GetSupportedDeviceFormats method, GetSupportedDeviceFormats method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetSupportedDeviceFormats, GetSupportedDeviceFormats, GetSupportedDeviceFormats method [Audio Devices]
+ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetSupportedDeviceFormats method, GetSupportedDeviceFormats method [Audio Devices], IMiniportAudioEngineNode interface, GetSupportedDeviceFormats method [Audio Devices], portcls/IMiniportAudioEngineNode::GetSupportedDeviceFormats, IMiniportAudioEngineNode::GetSupportedDeviceFormats, audio.iminiportaudioenginenode_getsupporteddeviceformats, IMiniportAudioEngineNode, GetSupportedDeviceFormats
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,14 +77,10 @@ returns an appropriate error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

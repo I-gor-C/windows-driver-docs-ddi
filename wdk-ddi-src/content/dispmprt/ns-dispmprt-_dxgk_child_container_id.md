@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9573f6e9-80a6-4390-b2ab-4543e3b1f5f4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dispmprt/PDXGK_CHILD_CONTAINER_ID, *PDXGK_CHILD_CONTAINER_ID, display.dxgk_child_container_id, PDXGK_CHILD_CONTAINER_ID structure pointer [Display Devices], _DXGK_CHILD_CONTAINER_ID, dispmprt/DXGK_CHILD_CONTAINER_ID, DXGK_CHILD_CONTAINER_ID structure [Display Devices], PDXGK_CHILD_CONTAINER_ID, DXGK_CHILD_CONTAINER_ID
+ms.keywords : dispmprt/PDXGK_CHILD_CONTAINER_ID, *PDXGK_CHILD_CONTAINER_ID, PDXGK_CHILD_CONTAINER_ID structure pointer [Display Devices], PDXGK_CHILD_CONTAINER_ID, DXGK_CHILD_CONTAINER_ID structure [Display Devices], _DXGK_CHILD_CONTAINER_ID, DXGK_CHILD_CONTAINER_ID, dispmprt/DXGK_CHILD_CONTAINER_ID, display.dxgk_child_container_id
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_CHILD_CONTAINER_ID, DXGK_CHILD_CONTAINER_ID"
+req.typenames : DXGK_CHILD_CONTAINER_ID, *PDXGK_CHILD_CONTAINER_ID
 ---
 
 # _DXGK_CHILD_CONTAINER_ID structure
@@ -76,18 +76,16 @@ For more information about Container IDs, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_device_descriptor.md">DxgkDdiQueryDeviceDescriptor</a>
-
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_get_child_container_id.md">DxgkDdiGetChildContainerId</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_device_descriptor.md">DxgkDdiQueryDeviceDescriptor</a>
 
  
 

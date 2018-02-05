@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1957D03D-7C85-4A58-A5CC-94D3C9913F5A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_PPM_PARK_SELECTION, pepfx/PPEP_PPM_PARK_SELECTION, _PEP_PPM_PARK_SELECTION, *PPEP_PPM_PARK_SELECTION, PPEP_PPM_PARK_SELECTION structure pointer [Kernel-Mode Driver Architecture], kernel.pep_ppm_park_selection, PEP_PPM_PARK_SELECTION, PEP_PPM_PARK_SELECTION structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_PARK_SELECTION
+ms.keywords : "*PPEP_PPM_PARK_SELECTION, _PEP_PPM_PARK_SELECTION, kernel.pep_ppm_park_selection, PPEP_PPM_PARK_SELECTION structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_PARK_SELECTION, PEP_PPM_PARK_SELECTION structure [Kernel-Mode Driver Architecture], PPEP_PPM_PARK_SELECTION, pepfx/PPEP_PPM_PARK_SELECTION, pepfx/PEP_PPM_PARK_SELECTION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_PPM_PARK_SELECTION, PEP_PPM_PARK_SELECTION"
+req.typenames : PEP_PPM_PARK_SELECTION, *PPEP_PPM_PARK_SELECTION
 ---
 
 # _PEP_PPM_PARK_SELECTION structure
@@ -89,16 +89,14 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186812">PEP_NOTIFY_PPM_PARK_SELECTION</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_processor_park_preference.md">PEP_PROCESSOR_PARK_PREFERENCE</a>
 
  
 

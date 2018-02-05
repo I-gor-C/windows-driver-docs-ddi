@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 858fb84a-8df8-4748-ab09-3f7c4aca905c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsLsnNull, kernel.clfslsnnull, wdm/ClfsLsnNull, ClfsLsnNull routine [Kernel-Mode Driver Architecture], Clfs_26a9c0db-2336-4151-9de0-81a58ed9e2f0.xml
+ms.keywords : ClfsLsnNull, ClfsLsnNull routine [Kernel-Mode Driver Architecture], Clfs_26a9c0db-2336-4151-9de0-81a58ed9e2f0.xml, wdm/ClfsLsnNull, kernel.clfslsnnull
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,22 +69,20 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
 
 <a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
 
 <a href="..\wdm\nf-wdm-clfslsnequal.md">ClfsLsnEqual</a>
-
-<a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
 
  
 

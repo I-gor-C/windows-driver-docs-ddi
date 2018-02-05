@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f4297e91-06ae-4c7a-87bc-12e3f5b0238c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ataportregistrycontrollerkeywritedeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, AtaPortRegistryControllerKeyWriteDeferred, irb/AtaPortRegistryControllerKeyWriteDeferred
+ms.keywords : storage.ataportregistrycontrollerkeywritedeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, irb/AtaPortRegistryControllerKeyWriteDeferred, AtaPortRegistryControllerKeyWriteDeferred
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,20 +134,15 @@ The buffer pointed to by <i>Buffer </i>must be allocated by using <a href="..\ir
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
-
 <a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
+
+<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
 
  
 

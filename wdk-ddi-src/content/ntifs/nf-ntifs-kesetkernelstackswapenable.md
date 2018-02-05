@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ec914f67-b2c2-4370-8685-770bca045034
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.kesetkernelstackswapenable, k105_160eb1a2-1d12-4ca4-b83d-4bcb5636145e.xml, ntifs/KeSetKernelStackSwapEnable, KeSetKernelStackSwapEnable routine [Kernel-Mode Driver Architecture], KeSetKernelStackSwapEnable
+ms.keywords : ntifs/KeSetKernelStackSwapEnable, KeSetKernelStackSwapEnable, KeSetKernelStackSwapEnable routine [Kernel-Mode Driver Architecture], k105_160eb1a2-1d12-4ca4-b83d-4bcb5636145e.xml, kernel.kesetkernelstackswapenable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ A thread must not exit (terminate) while stack swapping is disabled or a system 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 754CD1DD-88E6-4E02-8E24-1939222FE326
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_ERRORINFO, GNSS_ERRORINFO, PGNSS_ERRORINFO structure pointer [Sensor Devices], sensors.gnss_errorinfo, PGNSS_ERRORINFO, *PGNSS_ERRORINFO, gnssdriver/PGNSS_ERRORINFO, GNSS_ERRORINFO structure [Sensor Devices]
+ms.keywords : gnssdriver/PGNSS_ERRORINFO, PGNSS_ERRORINFO structure pointer [Sensor Devices], sensors.gnss_errorinfo, GNSS_ERRORINFO, GNSS_ERRORINFO structure [Sensor Devices], PGNSS_ERRORINFO, gnssdriver/GNSS_ERRORINFO, *PGNSS_ERRORINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,7 +86,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

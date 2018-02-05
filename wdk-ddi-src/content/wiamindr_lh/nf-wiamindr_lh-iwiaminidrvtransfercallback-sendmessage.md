@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 9C4800E6-0F5F-4895-AD19-635C7F784462
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SendMessage method [Imaging Devices], image.iwiaminidrvtransfercallback_sendmessage, IWiaMiniDrvTransferCallback, SendMessage, SendMessage method [Imaging Devices], IWiaMiniDrvTransferCallback interface, IWiaMiniDrvTransferCallback::SendMessage, IWiaMiniDrvTransferCallback interface [Imaging Devices], SendMessage method, wiamindr_lh/IWiaMiniDrvTransferCallback::SendMessage
+ms.keywords : IWiaMiniDrvTransferCallback::SendMessage, image.iwiaminidrvtransfercallback_sendmessage, SendMessage method [Imaging Devices], IWiaMiniDrvTransferCallback interface, SendMessage method [Imaging Devices], IWiaMiniDrvTransferCallback interface [Imaging Devices], SendMessage method, IWiaMiniDrvTransferCallback, wiamindr_lh/IWiaMiniDrvTransferCallback::SendMessage, SendMessage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,10 @@ When the current transfer sequence is cancelled, the <b>SendMessage</b> method r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 

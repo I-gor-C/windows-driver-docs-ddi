@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e15561e3-ba3d-4c65-bb6e-d90f3fab22af
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfusbtargetdevice_retrievepowerpolicy, umdf.iwdfusbtargetdevice_retrievepowerpolicy, RetrievePowerPolicy method, UMDFUSBref_50da7595-0735-475b-863e-33a689f4fc2b.xml, wudfusb/IWDFUsbTargetDevice::RetrievePowerPolicy, IWDFUsbTargetDevice interface, RetrievePowerPolicy method, RetrievePowerPolicy method, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice, IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy
+ms.keywords : IWDFUsbTargetDevice interface, RetrievePowerPolicy method, UMDFUSBref_50da7595-0735-475b-863e-33a689f4fc2b.xml, IWDFUsbTargetDevice, RetrievePowerPolicy, umdf.iwdfusbtargetdevice_retrievepowerpolicy, IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy method, IWDFUsbTargetDevice interface, wdf.iwdfusbtargetdevice_retrievepowerpolicy, wudfusb/IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -128,20 +128,18 @@ The <b>RetrievePowerPolicy</b> method generates a UMDF request and synchronously
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540275">WinUsb_GetPowerPolicy</a>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560385">IWDFUsbTargetDevice::SetPowerPolicy</a>
 

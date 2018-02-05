@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 157a420a-18ad-46cf-ae93-603e9226ee4f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ChangeDebuggeeState method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks::ChangeDebuggeeState, IDebugEventCallbacks, ChangeDebuggeeState, dbgeng/IDebugEventCallbacks::ChangeDebuggeeState, IDebugEventCallbacks interface [Windows Debugging], ChangeDebuggeeState method, ComCallbacks_a5743ecf-0b4c-41de-9384-ee0d8980a746.xml, debugger.idebugeventcallbacks_changedebuggeestate, ChangeDebuggeeState method [Windows Debugging]
+ms.keywords : IDebugEventCallbacks interface [Windows Debugging], ChangeDebuggeeState method, ChangeDebuggeeState method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks::ChangeDebuggeeState, ComCallbacks_a5743ecf-0b4c-41de-9384-ee0d8980a746.xml, ChangeDebuggeeState, IDebugEventCallbacks, debugger.idebugeventcallbacks_changedebuggeestate, ChangeDebuggeeState method [Windows Debugging], dbgeng/IDebugEventCallbacks::ChangeDebuggeeState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -321,11 +321,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

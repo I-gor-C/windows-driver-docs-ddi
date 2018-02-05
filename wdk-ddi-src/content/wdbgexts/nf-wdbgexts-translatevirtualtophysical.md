@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 803f766a-e02f-4b9c-bfe0-6197e0f2855c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_ec3ff314-8800-4f77-a40e-e127e6cf0133.xml, TranslateVirtualToPhysical function [Windows Debugging], wdbgexts/TranslateVirtualToPhysical, debugger.translatevirtualtophysical, TranslateVirtualToPhysical
+ms.keywords : debugger.translatevirtualtophysical, TranslateVirtualToPhysical, wdbgexts/TranslateVirtualToPhysical, TranslateVirtualToPhysical function [Windows Debugging], WdbgExts_Ref_ec3ff314-8800-4f77-a40e-e127e6cf0133.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,6 @@ If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

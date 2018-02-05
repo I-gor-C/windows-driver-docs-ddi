@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 88318bb4-bfca-4557-93cb-703840fa692e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxva_coppsetsignalingcmddata, DXVA_COPPSetSignalingCmdData structure [Display Devices], DXVA_COPPSetSignalingCmdData, dxvaref_2fd69b63-8cfc-427f-9616-4de12bd1a848.xml, dxva/DXVA_COPPSetSignalingCmdData, _DXVA_COPPSetSignalingCmdData
+ms.keywords : DXVA_COPPSetSignalingCmdData, dxva/DXVA_COPPSetSignalingCmdData, display.dxva_coppsetsignalingcmddata, DXVA_COPPSetSignalingCmdData structure [Display Devices], dxvaref_2fd69b63-8cfc-427f-9616-4de12bd1a848.xml, _DXVA_COPPSetSignalingCmdData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -208,9 +208,7 @@ Reserved. Should be set to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

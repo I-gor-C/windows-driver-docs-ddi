@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : BB3DD49B-7DAB-48AC-BC63-595A184374AB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_FREEGPUVIRTUALADDRESS structure [Display Devices], D3DKMT_FREEGPUVIRTUALADDRESS, _D3DKMT_FREEGPUVIRTUALADDRESS, display.d3dkmt_freegpuvirtualaddress, d3dkmthk/D3DKMT_FREEGPUVIRTUALADDRESS
+ms.keywords : display.d3dkmt_freegpuvirtualaddress, D3DKMT_FREEGPUVIRTUALADDRESS structure [Display Devices], _D3DKMT_FREEGPUVIRTUALADDRESS, D3DKMT_FREEGPUVIRTUALADDRESS, d3dkmthk/D3DKMT_FREEGPUVIRTUALADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ Specifies the size, in bytes, of the range to free. Must be aligned to 4 KB.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

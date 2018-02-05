@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c2089ae9-e872-4bbb-8e7b-fe11082d2b46
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PSetPersistentEntry_OUT, PSetPersistentEntry_OUT structure pointer [Storage Devices], SetPersistentEntry_OUT structure [Storage Devices], structs-Fibre_3dbfc9dd-6c90-4908-bb5d-c331a2e0334c.xml, _SetPersistentEntry_OUT, storage.setpersistententry_out, *PSetPersistentEntry_OUT, PSetPersistentEntry_OUT, hbapiwmi/SetPersistentEntry_OUT, SetPersistentEntry_OUT
+ms.keywords : "*PSetPersistentEntry_OUT, storage.setpersistententry_out, PSetPersistentEntry_OUT, structs-Fibre_3dbfc9dd-6c90-4908-bb5d-c331a2e0334c.xml, SetPersistentEntry_OUT structure [Storage Devices], hbapiwmi/SetPersistentEntry_OUT, hbapiwmi/PSetPersistentEntry_OUT, _SetPersistentEntry_OUT, SetPersistentEntry_OUT, PSetPersistentEntry_OUT structure pointer [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ The WMI tool suite generates a declaration of the SetPersistentEntry_OUT structu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

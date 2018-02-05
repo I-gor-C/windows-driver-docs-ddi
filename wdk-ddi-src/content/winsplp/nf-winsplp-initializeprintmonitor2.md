@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 73348405-0cc1-412a-b9b1-cfcc300190d7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : InitializePrintMonitor2, spoolfnc_34b0ce7d-8bb5-4cb1-9539-cd3b1b0113f4.xml, winsplp/InitializePrintMonitor2, print.initializeprintmonitor2, InitializePrintMonitor2 function [Print Devices]
+ms.keywords : print.initializeprintmonitor2, InitializePrintMonitor2 function [Print Devices], winsplp/InitializePrintMonitor2, spoolfnc_34b0ce7d-8bb5-4cb1-9539-cd3b1b0113f4.xml, InitializePrintMonitor2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -128,14 +128,9 @@ If the monitor is running on Windows 2000, it must set the <b>cbSize</b> member 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

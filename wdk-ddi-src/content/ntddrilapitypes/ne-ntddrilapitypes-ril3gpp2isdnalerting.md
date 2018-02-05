@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e3ba9bdd-2741-4a6c-9613-1ced31fc3dbf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL3GPP2ISDNALERTING, RIL3GPP2ISDNALERTING enumeration [Network Drivers Starting with Windows Vista], RIL_3GPP2ISDNALERTING_SPECIAL, ntddrilapitypes/RIL_3GPP2ISDNALERTING_NORMAL, ntddrilapitypes/RIL_3GPP2ISDNALERTING_PINGRING, ntddrilapitypes/RIL_3GPP2ISDNALERTING_MAX, RIL_3GPP2ISDNALERTING_INTERGROUP, RIL_3GPP2ISDNALERTING_NORMAL, RIL3GPP2ISDNALERTING, RIL_3GPP2ISDNALERTING_PINGRING, netvista.ril3gpp2isdnalerting, ntddrilapitypes/RIL_3GPP2ISDNALERTING_INTERGROUP, ntddrilapitypes/RIL_3GPP2ISDNALERTING_SPECIAL, RIL_3GPP2ISDNALERTING_MAX
+ms.keywords : RIL3GPP2ISDNALERTING, RIL_3GPP2ISDNALERTING_NORMAL, ntddrilapitypes/RIL_3GPP2ISDNALERTING_SPECIAL, RIL_3GPP2ISDNALERTING_SPECIAL, RIL_3GPP2ISDNALERTING_MAX, ntddrilapitypes/RIL_3GPP2ISDNALERTING_MAX, ntddrilapitypes/RIL_3GPP2ISDNALERTING_PINGRING, ntddrilapitypes/RIL3GPP2ISDNALERTING, netvista.ril3gpp2isdnalerting, RIL3GPP2ISDNALERTING enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_3GPP2ISDNALERTING_NORMAL, ntddrilapitypes/RIL_3GPP2ISDNALERTING_INTERGROUP, RIL_3GPP2ISDNALERTING_INTERGROUP, RIL_3GPP2ISDNALERTING_PINGRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -91,7 +91,4 @@ typedef enum _RIL3GPP2ISDNALERTING {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

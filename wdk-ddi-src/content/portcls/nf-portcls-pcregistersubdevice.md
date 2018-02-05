@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 97461adf-053b-484b-9425-b23ac6deb1bd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audpc-routines_ba884bcc-8193-4434-9747-d2bce0156eb8.xml, audio.pcregistersubdevice, PcRegisterSubdevice function [Audio Devices], portcls/PcRegisterSubdevice, PcRegisterSubdevice
+ms.keywords : PcRegisterSubdevice, portcls/PcRegisterSubdevice, audio.pcregistersubdevice, PcRegisterSubdevice function [Audio Devices], audpc-routines_ba884bcc-8193-4434-9747-d2bce0156eb8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -82,20 +82,17 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcRegisterSubdevice function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRegisterSubdevice function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537032">IUnregisterSubdevice::UnregisterSubdevice</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
 

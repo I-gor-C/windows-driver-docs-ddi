@@ -69,9 +69,7 @@ The <b>Information</b> field is set to the size of the returned bad-track array 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
-| **IRQL** |  |
 
 ## See Also
 

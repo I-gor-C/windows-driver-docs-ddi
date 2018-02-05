@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3E75EA87-FBF8-4FFB-9CD7-F8E1D5353D68
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ufx_interface_proprietary_charger, PUFX_INTERFACE_PROPRIETARY_CHARGER structure pointer [Buses], _UFX_INTERFACE_PROPRIETARY_CHARGER, UFX_INTERFACE_PROPRIETARY_CHARGER structure [Buses], ufxproprietarycharger/PUFX_INTERFACE_PROPRIETARY_CHARGER, ufxproprietarycharger/UFX_INTERFACE_PROPRIETARY_CHARGER, *PUFX_INTERFACE_PROPRIETARY_CHARGER, PUFX_INTERFACE_PROPRIETARY_CHARGER, UFX_INTERFACE_PROPRIETARY_CHARGER
+ms.keywords : PUFX_INTERFACE_PROPRIETARY_CHARGER structure pointer [Buses], UFX_INTERFACE_PROPRIETARY_CHARGER, buses.ufx_interface_proprietary_charger, UFX_INTERFACE_PROPRIETARY_CHARGER structure [Buses], *PUFX_INTERFACE_PROPRIETARY_CHARGER, PUFX_INTERFACE_PROPRIETARY_CHARGER, ufxproprietarycharger/UFX_INTERFACE_PROPRIETARY_CHARGER, _UFX_INTERFACE_PROPRIETARY_CHARGER, ufxproprietarycharger/PUFX_INTERFACE_PROPRIETARY_CHARGER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,9 +80,6 @@ A pointer to the driver's implementation of the <a href="..\ufxproprietarycharge
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ufxproprietarycharger.h (include Ufxproprietarycharger.h) |
 
 ## See Also

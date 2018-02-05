@@ -80,20 +80,14 @@ Note that the <i>HwVidTimer</i> function <i>must not</i> disable the timer with 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>
-
 <a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>
+
+<a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>
 
  
 

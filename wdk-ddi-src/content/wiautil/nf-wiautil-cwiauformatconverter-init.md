@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 342ea1ae-ff8c-429d-bee8-08559fe75b40
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Init method [Imaging Devices], CWiauFormatConverter interface, Init method [Imaging Devices], CWiauFormatConverter::Init, wiautil/CWiauFormatConverter::Init, CWiauFormatConverter, wiauFncs_d762c597-47d1-446a-b76d-7993ba32f571.xml, image.cwiauformatconverter_init, Init, CWiauFormatConverter interface [Imaging Devices], Init method
+ms.keywords : Init method [Imaging Devices], Init, image.cwiauformatconverter_init, CWiauFormatConverter interface [Imaging Devices], Init method, CWiauFormatConverter::Init, wiauFncs_d762c597-47d1-446a-b76d-7993ba32f571.xml, Init method [Imaging Devices], CWiauFormatConverter interface, CWiauFormatConverter, wiautil/CWiauFormatConverter::Init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -61,11 +61,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |

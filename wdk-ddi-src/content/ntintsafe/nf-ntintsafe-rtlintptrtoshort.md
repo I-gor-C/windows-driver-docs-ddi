@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 658F4C4E-D8E4-4624-BDF1-314A5B15CF67
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntPtrToShort function [Kernel-Mode Driver Architecture], RtlIntPtrToShort, kernel.rtlintptrtoshort, ntintsafe/RtlIntPtrToShort
+ms.keywords : kernel.rtlintptrtoshort, RtlIntPtrToShort, RtlIntPtrToShort function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntPtrToShort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

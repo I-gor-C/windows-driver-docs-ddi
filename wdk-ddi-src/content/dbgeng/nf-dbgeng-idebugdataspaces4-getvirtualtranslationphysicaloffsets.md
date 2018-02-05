@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 40438ee7-2e58-4048-8739-75f21179c22c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4, IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces_661959c5-a514-4651-8eaa-fd4c4fb94bd7.xml, dbgeng/IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets, debugger.getvirtualtranslationphysicaloffsets, dbgeng/IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces2 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces4 interface
+ms.keywords : IDebugDataSpaces3 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, dbgeng/IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface, debugger.getvirtualtranslationphysicaloffsets, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4, GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, dbgeng/IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces_661959c5-a514-4651-8eaa-fd4c4fb94bd7.xml, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces4 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -117,11 +117,6 @@ For details on how virtual addresses are translated into physical addresses, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

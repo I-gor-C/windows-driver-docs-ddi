@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4856D1DF-8A31-4290-91C6-A4FC289BDC35
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, _NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, netvista.ndis_wwan_preferred_multicarrier_providers, PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, _NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, netvista.ndis_wwan_preferred_multicarrier_providers, PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS
+req.typenames : "*PNDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS, NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS"
 ---
 
 # _NDIS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS structure
@@ -149,9 +149,7 @@ A <i>set</i> request is not supported
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

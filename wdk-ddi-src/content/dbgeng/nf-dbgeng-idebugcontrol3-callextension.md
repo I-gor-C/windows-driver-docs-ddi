@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0d0f23db-5eef-486a-a393-dd3b37826f48
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], CallExtension method, CallExtension method [Windows Debugging], IDebugControl interface, IDebugControl3, dbgeng/IDebugControl2::CallExtension, IDebugControl3::CallExtension, dbgeng/IDebugControl3::CallExtension, CallExtension, debugger.callextension, IDebugControl3 interface [Windows Debugging], CallExtension method, CallExtension method [Windows Debugging], IDebugControl3 interface, IDebugControl::CallExtension, dbgeng/IDebugControl::CallExtension, IDebugControl2::CallExtension, IDebugControl2 interface [Windows Debugging], CallExtension method, IDebugControl_c37b420a-b94b-4d54-8a5a-2e1a74b49f26.xml, CallExtension method [Windows Debugging], IDebugControl2 interface, CallExtension method [Windows Debugging]
+ms.keywords : CallExtension method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::CallExtension, CallExtension, CallExtension method [Windows Debugging], IDebugControl3 interface, CallExtension method [Windows Debugging], IDebugControl2 interface, IDebugControl3::CallExtension, CallExtension method [Windows Debugging], IDebugControl_c37b420a-b94b-4d54-8a5a-2e1a74b49f26.xml, IDebugControl3, IDebugControl3 interface [Windows Debugging], CallExtension method, IDebugControl2 interface [Windows Debugging], CallExtension method, dbgeng/IDebugControl3::CallExtension, IDebugControl interface [Windows Debugging], CallExtension method, IDebugControl::CallExtension, IDebugControl2::CallExtension, dbgeng/IDebugControl2::CallExtension, debugger.callextension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -98,24 +98,19 @@ For more information on using extension libraries, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546717">GetExtensionByPath</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546733">GetExtensionFunction</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546733">GetExtensionFunction</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537892">AddExtension</a>
 

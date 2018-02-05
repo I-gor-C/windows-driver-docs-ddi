@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4d20f3fd-d06e-420b-af69-9ef34addc611
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : Vmcs, wdm/Internal, NuBus, wdm/PNPISABus, Isa, MicroChannel, INTERFACE_TYPE enumeration [Kernel-Mode Driver Architecture], Internal, wdm/Isa, wdm/InternalPowerBus, PNPBus, wdm/MPIBus, wdm/VMEBus, *PINTERFACE_TYPE, PCIBus, PINTERFACE_TYPE, wdm/PCIBus, wdm/PNPBus, PCMCIABus, wdm/ACPIBus, INTERFACE_TYPE, wdm/ProcessorInternal, MPIBus, wdm/TurboChannel, wdm/INTERFACE_TYPE, TurboChannel, wdm/Eisa, Eisa, wdm/NuBus, wdm/Vmcs, MaximumInterfaceType, wdm/MicroChannel, _INTERFACE_TYPE, wdm/MaximumInterfaceType, wdm/InterfaceTypeUndefined, wdm/CBus, wdm/PCMCIABus, wdm/MPSABus, VMEBus, ACPIBus, CBus, sysenum_a73e08e6-79ef-4a5b-82b1-cfd4bc4269f8.xml, PNPISABus, ProcessorInternal, MPSABus, InternalPowerBus, PINTERFACE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], wdm/PINTERFACE_TYPE, kernel.interface_type, InterfaceTypeUndefined
+ms.keywords : wdm/MicroChannel, wdm/PNPBus, Isa, InterfaceTypeUndefined, wdm/PCIBus, VMEBus, kernel.interface_type, wdm/NuBus, wdm/PCMCIABus, wdm/ProcessorInternal, wdm/Eisa, INTERFACE_TYPE, wdm/TurboChannel, wdm/MaximumInterfaceType, wdm/InternalPowerBus, wdm/PNPISABus, wdm/ACPIBus, wdm/InterfaceTypeUndefined, wdm/INTERFACE_TYPE, Eisa, NuBus, wdm/CBus, TurboChannel, ProcessorInternal, PCIBus, MicroChannel, PNPBus, PINTERFACE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], sysenum_a73e08e6-79ef-4a5b-82b1-cfd4bc4269f8.xml, CBus, wdm/Isa, wdm/MPIBus, wdm/Internal, Internal, PNPISABus, InternalPowerBus, MPIBus, MPSABus, wdm/Vmcs, MaximumInterfaceType, *PINTERFACE_TYPE, INTERFACE_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/MPSABus, Vmcs, PINTERFACE_TYPE, wdm/PINTERFACE_TYPE, PCMCIABus, _INTERFACE_TYPE, wdm/VMEBus, ACPIBus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PINTERFACE_TYPE, INTERFACE_TYPE"
+req.typenames : INTERFACE_TYPE, *PINTERFACE_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -177,24 +177,21 @@ typedef enum _INTERFACE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also
+
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 
 <a href="..\storport\nf-storport-storportvalidaterange.md">StorPortValidateRange</a>
 
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
 
 <a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
 
 <a href="..\storport\nf-storport-storportgetdevicebase.md">StorPortGetDeviceBase</a>
-
-<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
 
  
 

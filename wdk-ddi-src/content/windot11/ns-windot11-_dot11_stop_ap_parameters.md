@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a9dfb490-425a-4011-a008-ab1597f53b85
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_STOP_AP_PARAMETERS, Native_802.11_data_types_1c8e69b9-852b-4ad6-87a4-ae13b37f7523.xml, _DOT11_STOP_AP_PARAMETERS, windot11/DOT11_STOP_AP_PARAMETERS, *PDOT11_STOP_AP_PARAMETERS, PDOT11_STOP_AP_PARAMETERS, PDOT11_STOP_AP_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_STOP_AP_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_STOP_AP_PARAMETERS, netvista.dot11_stop_ap_parameters
+ms.keywords : PDOT11_STOP_AP_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_STOP_AP_PARAMETERS, windot11/PDOT11_STOP_AP_PARAMETERS, DOT11_STOP_AP_PARAMETERS, PDOT11_STOP_AP_PARAMETERS, *PDOT11_STOP_AP_PARAMETERS, windot11/DOT11_STOP_AP_PARAMETERS, Native_802.11_data_types_1c8e69b9-852b-4ad6-87a4-ae13b37f7523.xml, netvista.dot11_stop_ap_parameters, DOT11_STOP_AP_PARAMETERS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,11 +70,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_STOP_AP_PARAMETERS_REVISION_1.
@@ -84,6 +79,11 @@ This member must be set to DOT11_STOP_AP_PARAMETERS_REVISION_1.
 
 This member must be set to 
        sizeof(DOT11_STOP_AP_PARAMETERS).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `ulReason`
 
@@ -131,16 +131,14 @@ The Native 802.11 miniport driver includes a DOT11_STOP_AP_PARAMETERS structure 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   system. Available in Windows 7 and later versions of the Windows operating   system. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567366">NDIS_STATUS_DOT11_STOP_AP</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567366">NDIS_STATUS_DOT11_STOP_AP</a>
 
  
 

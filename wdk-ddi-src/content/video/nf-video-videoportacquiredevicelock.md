@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : eeb2d1ad-ad99-4099-9560-8653a627aa08
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortAcquireDeviceLock function [Display Devices], video/VideoPortAcquireDeviceLock, VideoPortAcquireDeviceLock, display.videoportacquiredevicelock, VideoPort_Functions_4c588378-53be-496c-93f0-0d285b8a1a05.xml
+ms.keywords : display.videoportacquiredevicelock, VideoPortAcquireDeviceLock, video/VideoPortAcquireDeviceLock, VideoPort_Functions_4c588378-53be-496c-93f0-0d285b8a1a05.xml, VideoPortAcquireDeviceLock function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ The miniport driver should release the device lock as quickly as possible by cal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

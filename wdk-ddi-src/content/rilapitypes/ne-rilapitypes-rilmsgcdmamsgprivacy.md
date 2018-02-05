@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1a143103-a952-410c-a143-153685f022dd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_MSGPRIVACYCLASS_MAX, RIL_MSGPRIVACYCLASS_MAX, RIL_MSGPRIVACYCLASS_RESTRICTED, RILMSGCDMAMSGPRIVACY enumeration [Network Drivers Starting with Windows Vista], RIL_MSGPRIVACYCLASS_SECRET, netvista.rilmsgcdmamsgprivacy_2, rilapitypes/RIL_MSGPRIVACYCLASS_RESTRICTED, rilapitypes/RIL_MSGPRIVACYCLASS_SECRET, RILMSGCDMAMSGPRIVACY, RIL_MSGPRIVACYCLASS_CONFIDENTIAL, rilapitypes/RILMSGCDMAMSGPRIVACY, rilapitypes/RIL_MSGPRIVACYCLASS_CONFIDENTIAL
+ms.keywords : RILMSGCDMAMSGPRIVACY enumeration [Network Drivers Starting with Windows Vista], RIL_MSGPRIVACYCLASS_CONFIDENTIAL, rilapitypes/RIL_MSGPRIVACYCLASS_MAX, RIL_MSGPRIVACYCLASS_SECRET, rilapitypes/RIL_MSGPRIVACYCLASS_SECRET, rilapitypes/RIL_MSGPRIVACYCLASS_RESTRICTED, RIL_MSGPRIVACYCLASS_MAX, rilapitypes/RIL_MSGPRIVACYCLASS_CONFIDENTIAL, RIL_MSGPRIVACYCLASS_RESTRICTED, RILMSGCDMAMSGPRIVACY, rilapitypes/RILMSGCDMAMSGPRIVACY, netvista.rilmsgcdmamsgprivacy_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILMSGCDMAMSGPRIVACY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

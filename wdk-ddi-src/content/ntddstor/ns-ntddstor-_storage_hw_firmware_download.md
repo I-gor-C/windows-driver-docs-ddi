@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : EFF4688D-E5B2-4F4C-837D-D536F9244AB6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_STORAGE_HW_FIRMWARE_DOWNLOAD, ntddstor/PSTORAGE_HW_FIRMWARE_DOWNLOAD, storage.storage_hw_firmware_download, *PSTORAGE_HW_FIRMWARE_DOWNLOAD, PSTORAGE_HW_FIRMWARE_DOWNLOAD structure pointer [Storage Devices], ntddstor/STORAGE_HW_FIRMWARE_DOWNLOAD, STORAGE_HW_FIRMWARE_DOWNLOAD, PSTORAGE_HW_FIRMWARE_DOWNLOAD, STORAGE_HW_FIRMWARE_DOWNLOAD structure [Storage Devices]"
+ms.keywords : ntddstor/PSTORAGE_HW_FIRMWARE_DOWNLOAD, storage.storage_hw_firmware_download, STORAGE_HW_FIRMWARE_DOWNLOAD structure [Storage Devices], PSTORAGE_HW_FIRMWARE_DOWNLOAD structure pointer [Storage Devices], STORAGE_HW_FIRMWARE_DOWNLOAD, PSTORAGE_HW_FIRMWARE_DOWNLOAD, *PSTORAGE_HW_FIRMWARE_DOWNLOAD, ntddstor/STORAGE_HW_FIRMWARE_DOWNLOAD, _STORAGE_HW_FIRMWARE_DOWNLOAD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_HW_FIRMWARE_DOWNLOAD, STORAGE_HW_FIRMWARE_DOWNLOAD"
+req.typenames : STORAGE_HW_FIRMWARE_DOWNLOAD, *PSTORAGE_HW_FIRMWARE_DOWNLOAD
 ---
 
 # _STORAGE_HW_FIRMWARE_DOWNLOAD structure
@@ -108,7 +108,5 @@ The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ntddstor.h |

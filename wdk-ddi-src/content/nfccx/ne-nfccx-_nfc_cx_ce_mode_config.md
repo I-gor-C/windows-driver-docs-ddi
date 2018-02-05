@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 2C7071A4-B978-408C-9C98-67BC63F2BBCA
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfccx/NFC_CX_CE_DEFAULT, _NFC_CX_CE_MODE_CONFIG, NFC_CX_CE_NFC_A, nfccx/NFC_CX_CE_NFC_B, nfccx/NFC_CX_CE_NFC_F, NFC_CX_CE_MODE_CONFIG enumeration [Near-Field Proximity Drivers], NFC_CX_CE_MODE_CONFIG, NFC_CX_CE_DEFAULT, *PNFC_CX_CE_MODE_CONFIG, NFC_CX_CE_NFC_B, NFC_CX_CE_MODE_CONFIG, *PNFC_CX_CE_MODE_CONFIG enumeration [Near-Field Proximity Drivers], NFC_CX_CE_MODE_CONFIG, *PNFC_CX_CE_MODE_CONFIG, nfpdrivers.nfc_cx_ce_mode_config, nfccx/NFC_CX_CE_MODE_CONFIG, nfccx/NFC_CX_CE_NFC_A, NFC_CX_CE_NFC_F
+ms.keywords : nfccx/NFC_CX_CE_MODE_CONFIG, NFC_CX_CE_MODE_CONFIG, *PNFC_CX_CE_MODE_CONFIG enumeration [Near-Field Proximity Drivers], NFC_CX_CE_DEFAULT, nfccx/NFC_CX_CE_NFC_A, NFC_CX_CE_NFC_B, nfccx/NFC_CX_CE_DEFAULT, nfccx/NFC_CX_CE_NFC_B, NFC_CX_CE_NFC_F, *PNFC_CX_CE_MODE_CONFIG, nfccx/NFC_CX_CE_NFC_F, _NFC_CX_CE_MODE_CONFIG, nfpdrivers.nfc_cx_ce_mode_config, NFC_CX_CE_MODE_CONFIG enumeration [Near-Field Proximity Drivers], NFC_CX_CE_MODE_CONFIG, NFC_CX_CE_MODE_CONFIG, *PNFC_CX_CE_MODE_CONFIG, NFC_CX_CE_NFC_A
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,7 @@ typedef enum _NFC_CX_CE_MODE_CONFIG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
 ## See Also

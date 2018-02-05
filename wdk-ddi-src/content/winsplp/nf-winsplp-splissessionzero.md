@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9d68a41d-0f2b-4cf0-92c6-8e05ce6b4378
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SplIsSessionZero, SplIsSessionZero function [Print Devices], print.splissessionzero, winsplp/SplIsSessionZero, spoolfnc_8fd112f0-f2bf-4a33-8411-c1ce7c620390.xml
+ms.keywords : spoolfnc_8fd112f0-f2bf-4a33-8411-c1ce7c620390.xml, winsplp/SplIsSessionZero, print.splissessionzero, SplIsSessionZero, SplIsSessionZero function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,11 @@ If you plan to use this function in a driver intended to run under Windows 2000,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This function is available in Windows XP and later. This function is available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
 

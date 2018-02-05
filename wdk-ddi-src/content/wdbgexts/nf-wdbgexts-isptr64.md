@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0474a8dc-e2e3-4c84-8058-6229bf0e9d62
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IsPtr64, IsPtr64 function [Windows Debugging], debugger.isptr64, WdbgExts_Ref_488f3445-c3ae-4847-8e3b-cf3892dcd365.xml, wdbgexts/IsPtr64
+ms.keywords : debugger.isptr64, IsPtr64, IsPtr64 function [Windows Debugging], WdbgExts_Ref_488f3445-c3ae-4847-8e3b-cf3892dcd365.xml, wdbgexts/IsPtr64
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,11 +61,6 @@ The function returns <b>TRUE</b> if the target uses 64-bit pointers; <b>FALSE</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

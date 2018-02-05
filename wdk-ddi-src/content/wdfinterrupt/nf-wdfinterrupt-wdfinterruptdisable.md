@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8ece6a3f-2f25-4143-8f0e-c65c02794cc4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFInterruptObjectRef_05ca577a-87b3-419a-a3f8-ee57b0765701.xml, PFN_WDFINTERRUPTDISABLE, wdfinterrupt/WdfInterruptDisable, WdfInterruptDisable method, wdf.wdfinterruptdisable, WdfInterruptDisable, kmdf.wdfinterruptdisable
+ms.keywords : kmdf.wdfinterruptdisable, WdfInterruptDisable, DFInterruptObjectRef_05ca577a-87b3-419a-a3f8-ee57b0765701.xml, wdfinterrupt/WdfInterruptDisable, wdf.wdfinterruptdisable, PFN_WDFINTERRUPTDISABLE, WdfInterruptDisable method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,12 +79,11 @@ For more information about handling interrupts in framework-based drivers, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

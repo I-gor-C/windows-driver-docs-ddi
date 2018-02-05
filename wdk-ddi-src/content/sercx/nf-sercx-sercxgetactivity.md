@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 804D53F2-0F92-4262-A4C8-D171A5E69BFC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : serports.sercxgetactivity, SerCxGetActivity method [Serial Ports], SerCxGetActivity, 1/SerCxGetActivity
+ms.keywords : SerCxGetActivity method [Serial Ports], serports.sercxgetactivity, 1/SerCxGetActivity, SerCxGetActivity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,26 +80,23 @@ A lock protects the <b>SERCX_ACTIVITY</b> structure that is updated by the <b>Se
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a>
-
-<a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 
 <a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
 
-<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
+<a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a>
 
 <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
+
+<a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a>
 
  
 

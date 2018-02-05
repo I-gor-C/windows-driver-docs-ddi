@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c6701ca4-f3ce-40b9-8582-d70e8b2acde3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MONITORUI structure [Print Devices], PMONITORUI structure pointer [Print Devices], winsplp/MONITORUI, PMONITORUI, winsplp/PMONITORUI, *PMONITORUI, print.monitorui, _MONITORUI, spoolfnc_bcf5298e-b0b6-41c1-9152-9a804234fba9.xml, MONITORUI
+ms.keywords : winsplp/PMONITORUI, PMONITORUI structure pointer [Print Devices], MONITORUI, PMONITORUI, _MONITORUI, MONITORUI structure [Print Devices], winsplp/MONITORUI, *PMONITORUI, spoolfnc_bcf5298e-b0b6-41c1-9152-9a804234fba9.xml, print.monitorui
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -87,9 +87,6 @@ All structure members must be initialized by the port monitor UI DLL. The struct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also

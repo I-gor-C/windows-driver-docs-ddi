@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 25ebb316-e801-44fa-bb80-dffe9051db7e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::GetModuleByModuleName2, GetModuleByModuleName2, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName2 method, dbgeng/IDebugSymbols3::GetModuleByModuleName2, IDebugSymbols_f5630cfb-3af4-4722-8851-0a12523fbf82.xml, IDebugSymbols3, debugger.getmodulebymodulename2, GetModuleByModuleName2 method [Windows Debugging], GetModuleByModuleName2 method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : debugger.getmodulebymodulename2, GetModuleByModuleName2, IDebugSymbols3::GetModuleByModuleName2, GetModuleByModuleName2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols_f5630cfb-3af4-4722-8851-0a12523fbf82.xml, GetModuleByModuleName2 method [Windows Debugging], dbgeng/IDebugSymbols3::GetModuleByModuleName2, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName2 method, IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -144,20 +144,15 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547095">GetModuleByModuleName</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547095">GetModuleByModuleName</a>
 
  
 

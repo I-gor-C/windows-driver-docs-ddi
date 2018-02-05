@@ -60,8 +60,7 @@ The <b>IWDFUsbTargetFactory</b> interface is a factory interface that is used to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h |
-| **DLL** | WUDFx.dll |

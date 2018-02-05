@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : de0681e6-c716-4879-8e07-daacc092d18f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ReadIoSpaceEx, ReadIoSpaceEx function [Windows Debugging], wdbgexts/ReadIoSpaceEx, WdbgExts_Ref_96fa3635-35d1-4d58-835a-96754480170a.xml, debugger.readiospaceex
+ms.keywords : wdbgexts/ReadIoSpaceEx, ReadIoSpaceEx function [Windows Debugging], ReadIoSpaceEx, debugger.readiospaceex, WdbgExts_Ref_96fa3635-35d1-4d58-835a-96754480170a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,6 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

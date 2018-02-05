@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c2732686-5f95-41fd-8e47-8acf6900a44b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddtape/TapeDriveTimetoClean, TapeDriveReadWarning, ntddtape/TapeDriveWriteError, TapeDriveWriteError, TapeDriveReadWriteError, ntddtape/TapeDriveScsiConnectionError, structs-tape_e5fef478-5c62-4cbf-adc1-8f0cc6eabb8e.xml, ntddtape/TapeDriveHardwareError, TapeDriveTimetoClean, TapeDriveMediaLifeExpired, storage.tape_drive_problem_type, TapeDriveUnsupportedMedia, TapeDriveScsiConnectionError, ntddtape/TapeDriveReadWriteWarning, ntddtape/TAPE_DRIVE_PROBLEM_TYPE, TapeDriveReadError, ntddtape/TapeDriveWriteWarning, ntddtape/TapeDriveReadWarning, _TAPE_DRIVE_PROBLEM_TYPE, TapeDriveProblemNone, ntddtape/TapeDriveReadError, TapeDriveHardwareError, TapeDriveCleanDriveNow, ntddtape/TapeDriveMediaLifeExpired, TapeDriveReadWriteWarning, ntddtape/TapeDriveSnappedTape, TAPE_DRIVE_PROBLEM_TYPE, ntddtape/TapeDriveProblemNone, ntddtape/TapeDriveReadWriteError, TAPE_DRIVE_PROBLEM_TYPE enumeration [Storage Devices], ntddtape/TapeDriveUnsupportedMedia, TapeDriveWriteWarning, ntddtape/TapeDriveCleanDriveNow, TapeDriveSnappedTape
+ms.keywords : storage.tape_drive_problem_type, TapeDriveTimetoClean, TAPE_DRIVE_PROBLEM_TYPE enumeration [Storage Devices], TapeDriveSnappedTape, ntddtape/TapeDriveMediaLifeExpired, ntddtape/TapeDriveWriteError, TapeDriveHardwareError, structs-tape_e5fef478-5c62-4cbf-adc1-8f0cc6eabb8e.xml, TapeDriveMediaLifeExpired, ntddtape/TapeDriveProblemNone, TapeDriveReadError, ntddtape/TapeDriveReadWarning, ntddtape/TapeDriveScsiConnectionError, ntddtape/TapeDriveCleanDriveNow, ntddtape/TapeDriveWriteWarning, ntddtape/TapeDriveHardwareError, TapeDriveReadWriteError, TapeDriveScsiConnectionError, ntddtape/TapeDriveReadError, TapeDriveWriteError, TapeDriveReadWriteWarning, _TAPE_DRIVE_PROBLEM_TYPE, ntddtape/TAPE_DRIVE_PROBLEM_TYPE, TapeDriveWriteWarning, ntddtape/TapeDriveReadWriteError, ntddtape/TapeDriveTimetoClean, TapeDriveProblemNone, ntddtape/TapeDriveSnappedTape, TapeDriveReadWarning, ntddtape/TapeDriveUnsupportedMedia, TAPE_DRIVE_PROBLEM_TYPE, ntddtape/TapeDriveReadWriteWarning, TapeDriveUnsupportedMedia, TapeDriveCleanDriveNow
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -140,9 +140,6 @@ typedef enum _TAPE_DRIVE_PROBLEM_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddtape.h |
 
 ## See Also

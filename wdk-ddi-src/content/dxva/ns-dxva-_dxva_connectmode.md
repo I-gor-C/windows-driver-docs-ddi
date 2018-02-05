@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84520745-c99d-4495-a7c4-514d5e6cd27e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/LPDXVA_ConnectMode, LPDXVA_ConnectMode, DXVA_ConnectMode structure [Display Devices], DXVA_ConnectMode, dxvaref_24815d94-550d-4b5c-be95-2fb0882781c0.xml, display.dxva_connectmode, *LPDXVA_ConnectMode, dxva/DXVA_ConnectMode, LPDXVA_ConnectMode structure pointer [Display Devices], _DXVA_ConnectMode
+ms.keywords : LPDXVA_ConnectMode structure pointer [Display Devices], LPDXVA_ConnectMode, dxva/DXVA_ConnectMode, DXVA_ConnectMode, *LPDXVA_ConnectMode, DXVA_ConnectMode structure [Display Devices], _DXVA_ConnectMode, display.dxva_connectmode, dxva/LPDXVA_ConnectMode, dxvaref_24815d94-550d-4b5c-be95-2fb0882781c0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -734,7 +734,4 @@ For information about the restricted profiles of the MPEG-4 AVC (H.264) and VC-1
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |

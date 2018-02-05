@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8d42dd60-a032-4486-87e0-2204e833035b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : Reset method, UMDFUSBref_510f6831-e75f-41b6-9637-7400fe89e4d3.xml, IWDFUsbTargetPipe::Reset, wudfusb/IWDFUsbTargetPipe::Reset, Reset method, IWDFUsbTargetPipe interface, IWDFUsbTargetPipe, Reset, umdf.iwdfusbtargetpipe_reset, wdf.iwdfusbtargetpipe_reset, IWDFUsbTargetPipe interface, Reset method
+ms.keywords : wdf.iwdfusbtargetpipe_reset, Reset method, Reset method, IWDFUsbTargetPipe interface, IWDFUsbTargetPipe, Reset, IWDFUsbTargetPipe interface, Reset method, wudfusb/IWDFUsbTargetPipe::Reset, UMDFUSBref_510f6831-e75f-41b6-9637-7400fe89e4d3.xml, umdf.iwdfusbtargetpipe_reset, IWDFUsbTargetPipe::Reset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -109,20 +109,18 @@ For more information about how <b>Reset</b> works, see the <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300">WinUsb_ResetPipe</a>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : daef347a-26d4-46cf-82b4-a5852fe49b71
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PDXGK_CHILD_DEVICE_HPD_AWARENESS, PDXGK_CHILD_DEVICE_HPD_AWARENESS enumeration pointer [Display Devices], d3dkmdt/HpdAwarenessInterruptible, DXGK_CHILD_DEVICE_HPD_AWARENESS enumeration [Display Devices], HpdAwarenessUninitialized, d3dkmdt/HpdAwarenessAlwaysConnected, _DXGK_CHILD_DEVICE_HPD_AWARENESS, d3dkmdt/HpdAwarenessPolled, HpdAwarenessNone, DmEnums_1d5801e8-cb03-4409-a037-b25242176eea.xml, DXGK_CHILD_DEVICE_HPD_AWARENESS, d3dkmdt/HpdAwarenessUninitialized, display.dxgk_child_device_hpd_awareness, HpdAwarenessAlwaysConnected, PDXGK_CHILD_DEVICE_HPD_AWARENESS, d3dkmdt/DXGK_CHILD_DEVICE_HPD_AWARENESS, d3dkmdt/PDXGK_CHILD_DEVICE_HPD_AWARENESS, HpdAwarenessInterruptible, HpdAwarenessPolled, d3dkmdt/HpdAwarenessNone"
+ms.keywords : "_DXGK_CHILD_DEVICE_HPD_AWARENESS, d3dkmdt/PDXGK_CHILD_DEVICE_HPD_AWARENESS, HpdAwarenessInterruptible, DXGK_CHILD_DEVICE_HPD_AWARENESS, PDXGK_CHILD_DEVICE_HPD_AWARENESS, HpdAwarenessUninitialized, PDXGK_CHILD_DEVICE_HPD_AWARENESS enumeration pointer [Display Devices], DmEnums_1d5801e8-cb03-4409-a037-b25242176eea.xml, d3dkmdt/HpdAwarenessAlwaysConnected, DXGK_CHILD_DEVICE_HPD_AWARENESS enumeration [Display Devices], d3dkmdt/DXGK_CHILD_DEVICE_HPD_AWARENESS, HpdAwarenessPolled, d3dkmdt/HpdAwarenessUninitialized, d3dkmdt/HpdAwarenessPolled, HpdAwarenessAlwaysConnected, d3dkmdt/HpdAwarenessInterruptible, display.dxgk_child_device_hpd_awareness, d3dkmdt/HpdAwarenessNone, HpdAwarenessNone, *PDXGK_CHILD_DEVICE_HPD_AWARENESS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXGK_CHILD_DEVICE_HPD_AWARENESS, *PDXGK_CHILD_DEVICE_HPD_AWARENESS
+req.typenames : "*PDXGK_CHILD_DEVICE_HPD_AWARENESS, DXGK_CHILD_DEVICE_HPD_AWARENESS"
 ---
 
 # _DXGK_CHILD_DEVICE_HPD_AWARENESS Enumeration
@@ -89,9 +89,7 @@ The <b>ChildCapabilities</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

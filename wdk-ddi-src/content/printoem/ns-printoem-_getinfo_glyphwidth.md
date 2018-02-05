@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : bc01b363-71e9-4c50-ad14-a101abbfe6ec
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PGETINFO_GLYPHWIDTH, GETINFO_GLYPHWIDTH, PGETINFO_GLYPHWIDTH structure pointer [Print Devices], PGETINFO_GLYPHWIDTH, _GETINFO_GLYPHWIDTH, GETINFO_GLYPHWIDTH structure [Print Devices], printoem/PGETINFO_GLYPHWIDTH, printoem/GETINFO_GLYPHWIDTH, print.getinfo_glyphwidth, print_unidrv-pscript_rendering_d4e07803-7342-4550-90fd-1ee8669934f0.xml"
+ms.keywords : GETINFO_GLYPHWIDTH, printoem/PGETINFO_GLYPHWIDTH, print.getinfo_glyphwidth, printoem/GETINFO_GLYPHWIDTH, *PGETINFO_GLYPHWIDTH, PGETINFO_GLYPHWIDTH structure pointer [Print Devices], print_unidrv-pscript_rendering_d4e07803-7342-4550-90fd-1ee8669934f0.xml, GETINFO_GLYPHWIDTH structure [Print Devices], PGETINFO_GLYPHWIDTH, _GETINFO_GLYPHWIDTH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,9 +88,6 @@ To obtain the width of a set of glyphs, a rendering plug-in can supply the addre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

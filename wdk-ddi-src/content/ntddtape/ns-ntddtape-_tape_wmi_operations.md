@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 430d982e-4740-46ad-8391-aba5813a833a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-tape_93f1d9af-45b2-4121-9b4c-70ed7eaf1782.xml, storage.tape_wmi_operations, _TAPE_WMI_OPERATIONS, TAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS structure pointer [Storage Devices], TAPE_WMI_OPERATIONS structure [Storage Devices], PTAPE_WMI_OPERATIONS, *PTAPE_WMI_OPERATIONS, ntddtape/PTAPE_WMI_OPERATIONS, ntddtape/TAPE_WMI_OPERATIONS
+ms.keywords : PTAPE_WMI_OPERATIONS, TAPE_WMI_OPERATIONS structure [Storage Devices], TAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS structure pointer [Storage Devices], structs-tape_93f1d9af-45b2-4121-9b4c-70ed7eaf1782.xml, ntddtape/PTAPE_WMI_OPERATIONS, ntddtape/TAPE_WMI_OPERATIONS, _TAPE_WMI_OPERATIONS, storage.tape_wmi_operations, *PTAPE_WMI_OPERATIONS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,9 +90,6 @@ Returns general I/O error data, such as read/write errors, based on the I/O erro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddtape.h (include Ntddchgr.h) |
 
 ## See Also

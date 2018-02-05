@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : B5FF5B24-12E6-424A-B09A-4B0572621088
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_SMARTCARD_REQUEST, *PSMARTCARD_REQUEST, SMARTCARD_REQUEST structure [Smart Card Reader Devices], PSMARTCARD_REQUEST, SMARTCARD_REQUEST, smartcrd.smartcard_request, PSMARTCARD_REQUEST structure pointer [Smart Card Reader Devices], smclib/PSMARTCARD_REQUEST, smclib/SMARTCARD_REQUEST"
+ms.keywords : SMARTCARD_REQUEST structure [Smart Card Reader Devices], PSMARTCARD_REQUEST structure pointer [Smart Card Reader Devices], PSMARTCARD_REQUEST, smartcrd.smartcard_request, smclib/SMARTCARD_REQUEST, smclib/PSMARTCARD_REQUEST, SMARTCARD_REQUEST, _SMARTCARD_REQUEST, *PSMARTCARD_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,6 @@ Size of the buffer pointed to by <i>Buffer</i>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | smclib.h (include Smclib.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e09f68bd-cd43-42ce-988e-505415d62891
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETPIPEREADSYNCHRONOUSLY, wdf.wdfusbtargetpipereadsynchronously, wdfusb/WdfUsbTargetPipeReadSynchronously, DFUsbRef_97551c52-37b0-4ed7-a961-921ed0e990b6.xml, WdfUsbTargetPipeReadSynchronously, kmdf.wdfusbtargetpipereadsynchronously, WdfUsbTargetPipeReadSynchronously method
+ms.keywords : PFN_WDFUSBTARGETPIPEREADSYNCHRONOUSLY, DFUsbRef_97551c52-37b0-4ed7-a961-921ed0e990b6.xml, WdfUsbTargetPipeReadSynchronously, kmdf.wdfusbtargetpipereadsynchronously, wdf.wdfusbtargetpipereadsynchronously, wdfusb/WdfUsbTargetPipeReadSynchronously, WdfUsbTargetPipeReadSynchronously method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -286,22 +286,21 @@ For more information about the <b>WdfUsbTargetPipeReadSynchronously</b> method a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, InternalIoctlReqs, IoctlReqs, KmdfIrql, KmdfIrql2, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2, WriteReqs |
 
 ## See Also
 
+<a href="..\wdfmemory\nf-wdfmemory-wdf_memory_descriptor_init_buffer.md">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>
+
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetinformation.md">WdfUsbTargetPipeGetInformation</a>
-
-<a href="..\wdfmemory\nf-wdfmemory-wdf_memory_descriptor_init_buffer.md">WDF_MEMORY_DESCRIPTOR_INIT_BUFFER</a>
 
  
 

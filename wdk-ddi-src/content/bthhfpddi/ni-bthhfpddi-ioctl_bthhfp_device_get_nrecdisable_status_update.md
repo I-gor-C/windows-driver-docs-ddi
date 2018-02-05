@@ -76,9 +76,8 @@ Additionally, in this scenario where NREC is enabled in the remote Bluetooth dev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | bthhfpddi.h |
-| **IRQL** |  |
 
 ## See Also
 

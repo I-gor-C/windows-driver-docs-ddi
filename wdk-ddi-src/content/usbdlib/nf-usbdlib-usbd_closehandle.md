@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6876E96D-E249-4B7C-A496-27E3F4A7F7E2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_CloseHandle, USBD_CloseHandle routine [Buses], USBD_CloseHandle, buses.usbd_unregister
+ms.keywords : usbdlib/USBD_CloseHandle, buses.usbd_unregister, USBD_CloseHandle, USBD_CloseHandle routine [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -69,14 +69,11 @@ A client driver should call <b>USBD_CloseHandle</b> in the driver's routine that
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Requires DDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires DDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
-| **Library** |  |
+| **Library** | Usbdex.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

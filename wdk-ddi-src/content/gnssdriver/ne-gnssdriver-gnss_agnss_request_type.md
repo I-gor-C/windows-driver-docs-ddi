@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 31293354-D68B-475F-91BD-0504129207A5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_AGNSS_TimeInjection, GNSS_AGNSS_REQUEST_TYPE enumeration [Sensor Devices], GNSS_AGNSS_PositionInjection, gnssdriver/GNSS_AGNSS_BlobInjection, gnssdriver/GNSS_AGNSS_TimeInjection, gnssdriver/GNSS_AGNSS_PositionInjection, GNSS_AGNSS_REQUEST_TYPE, GNSS_AGNSS_BlobInjection, sensors.gnss_agnss_request_type, gnssdriver/GNSS_AGNSS_REQUEST_TYPE
+ms.keywords : GNSS_AGNSS_TimeInjection, GNSS_AGNSS_REQUEST_TYPE enumeration [Sensor Devices], GNSS_AGNSS_REQUEST_TYPE, gnssdriver/GNSS_AGNSS_TimeInjection, gnssdriver/GNSS_AGNSS_PositionInjection, GNSS_AGNSS_BlobInjection, gnssdriver/GNSS_AGNSS_REQUEST_TYPE, gnssdriver/GNSS_AGNSS_BlobInjection, GNSS_AGNSS_PositionInjection, sensors.gnss_agnss_request_type
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2afdaee6-7714-42d4-a402-3cb85ef3b970
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks interface [Windows Debugging], UnloadModule method, UnloadModule method [Windows Debugging], dbgeng/IDebugEventCallbacks::UnloadModule, UnloadModule method [Windows Debugging], IDebugEventCallbacks interface, UnloadModule, debugger.idebugeventcallbacks_unloadmodule, ComCallbacks_53674f8e-290c-44d6-827f-92646c2e4ea9.xml, IDebugEventCallbacks::UnloadModule
+ms.keywords : UnloadModule method [Windows Debugging], IDebugEventCallbacks interface, dbgeng/IDebugEventCallbacks::UnloadModule, IDebugEventCallbacks::UnloadModule, debugger.idebugeventcallbacks_unloadmodule, IDebugEventCallbacks, UnloadModule, IDebugEventCallbacks interface [Windows Debugging], UnloadModule method, UnloadModule method [Windows Debugging], ComCallbacks_53674f8e-290c-44d6-827f-92646c2e4ea9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -77,11 +77,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

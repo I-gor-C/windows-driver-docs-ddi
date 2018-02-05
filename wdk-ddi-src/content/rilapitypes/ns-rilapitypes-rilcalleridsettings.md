@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 129fcbf9-8162-494a-a571-5c604849d387
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLERIDSETTINGS, RILCALLERIDSETTINGS structure [Network Drivers Starting with Windows Vista], netvista.rilcalleridsettings_2, *LPRILCALLERIDSETTINGS, rilapitypes/RILCALLERIDSETTINGS
+ms.keywords : RILCALLERIDSETTINGS, rilapitypes/RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS, RILCALLERIDSETTINGS structure [Network Drivers Starting with Windows Vista], netvista.rilcalleridsettings_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS
+req.typenames : "*LPRILCALLERIDSETTINGS, RILCALLERIDSETTINGS"
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,4 @@ typedef struct _RILCALLERIDSETTINGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

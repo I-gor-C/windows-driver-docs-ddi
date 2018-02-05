@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 5f2d1536-4676-4afe-aa5c-08e7c74d1dd2
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HidP_GetUsageValue, hid.hidp_getusagevalue, HidP_GetUsageValue routine [Human Input Devices], hidfunc_d046d7e6-bd4c-4d80-80a8-f8e2d000eeee.xml, hidpi/HidP_GetUsageValue
+ms.keywords : hid.hidp_getusagevalue, hidfunc_d046d7e6-bd4c-4d80-80a8-f8e2d000eeee.xml, hidpi/HidP_GetUsageValue, HidP_GetUsageValue routine [Human Input Devices], HidP_GetUsageValue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -179,32 +179,29 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidpi.h (include Hidpi.h) |
-| **Library** |  |
+| **Library** | Hidparse.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
 
+<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
+
+<a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
+
 <a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
-
-<a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
 
 <a href="..\hidpi\nf-hidpi-hidp_getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
 

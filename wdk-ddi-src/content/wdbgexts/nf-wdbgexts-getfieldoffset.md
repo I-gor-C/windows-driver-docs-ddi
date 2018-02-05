@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3e5e782b-1a72-446d-9d15-c0f513f3440c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : wdbgexts/GetFieldOffset, IDebugSymbols2, IDebugSymbols::GetFieldOffset, GetFieldOffset, debugger.getfieldoffset, WdbgExts_Ref_22c8a9bc-dec9-4eec-95c6-b265694b4385.xml, IDebugSymbols, GetFieldOffset function [Windows Debugging], IDebugSymbols2::GetFieldOffset
+ms.keywords : debugger.getfieldoffset, GetFieldOffset, WdbgExts_Ref_22c8a9bc-dec9-4eec-95c6-b265694b4385.xml, GetFieldOffset function [Windows Debugging], wdbgexts/GetFieldOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,7 +57,7 @@ __inline ULONG GetFieldOffset(
 
 `Type`
 
-
+Specifies the name of the type of the structure.  This can be qualified with a module name, for example, <b>mymodule!mystruct</b>.
 
 `Field`
 
@@ -65,7 +65,7 @@ Specifies the name of the member in the structure.  Submembers can be specified 
 
 `pOffset`
 
-
+Receives the offset of the member from the beginning of an instance of the structure.
 
 
 ## Return Value
@@ -76,11 +76,6 @@ If the function succeeds, the return value is zero. Otherwise, the return value 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

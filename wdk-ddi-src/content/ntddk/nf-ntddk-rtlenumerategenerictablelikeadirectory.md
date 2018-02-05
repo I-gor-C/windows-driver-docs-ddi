@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 206c8b70-575d-47e2-a03d-4c88e0d92fe0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntddk/RtlEnumerateGenericTableLikeADirectory, ifsk.rtlenumerategenerictablelikeadirectory, RtlEnumerateGenericTableLikeADirectory routine [Installable File System Drivers], RtlEnumerateGenericTableLikeADirectory, rtlref_7a5f2110-e171-4273-9928-9a8471f4e933.xml
+ms.keywords : ifsk.rtlenumerategenerictablelikeadirectory, ntddk/RtlEnumerateGenericTableLikeADirectory, rtlref_7a5f2110-e171-4273-9928-9a8471f4e933.xml, RtlEnumerateGenericTableLikeADirectory, RtlEnumerateGenericTableLikeADirectory routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -154,22 +154,20 @@ The caller-supplied <i>MatchFunction</i> contains pageable code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows XP. This routine is available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a>
 
 <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>
 
-<a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a>
 
  
 

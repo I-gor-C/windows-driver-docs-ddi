@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 208fecc5-f01f-41f3-80d3-d811b3f4173a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsClockPropertySet, IKsClockPropertySet interface [Streaming Media Devices], KsSetCorrelatedPhysicalTime method, stream.iksclockpropertyset_kssetcorrelatedphysicaltime, ksproxy_253f05af-d07c-4f27-bfad-0006c94b8b48.xml, KsSetCorrelatedPhysicalTime method [Streaming Media Devices], KsSetCorrelatedPhysicalTime, IKsClockPropertySet::KsSetCorrelatedPhysicalTime, ksproxy/IKsClockPropertySet::KsSetCorrelatedPhysicalTime, KsSetCorrelatedPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface
+ms.keywords : IKsClockPropertySet::KsSetCorrelatedPhysicalTime, IKsClockPropertySet, IKsClockPropertySet interface [Streaming Media Devices], KsSetCorrelatedPhysicalTime method, KsSetCorrelatedPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface, KsSetCorrelatedPhysicalTime, stream.iksclockpropertyset_kssetcorrelatedphysicaltime, ksproxy/IKsClockPropertySet::KsSetCorrelatedPhysicalTime, ksproxy_253f05af-d07c-4f27-bfad-0006c94b8b48.xml, KsSetCorrelatedPhysicalTime method [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,22 +68,17 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
+
+<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564461">KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559733">IKsClockPropertySet::KsGetCorrelatedPhysicalTime</a>
-
-<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
 
  
 

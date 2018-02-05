@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e0f22096-3d82-4e1c-9398-d5e441fbb473
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdriveropenparametersregistrykey, WdfDriverOpenParametersRegistryKey method, DFDriverObjectRef_c79992f7-2a85-4c1b-859d-9bfdf441a9c4.xml, wdf.wdfdriveropenparametersregistrykey, WdfDriverOpenParametersRegistryKey, wdfdriver/WdfDriverOpenParametersRegistryKey
+ms.keywords : wdf.wdfdriveropenparametersregistrykey, kmdf.wdfdriveropenparametersregistrykey, WdfDriverOpenParametersRegistryKey, wdfdriver/WdfDriverOpenParametersRegistryKey, DFDriverObjectRef_c79992f7-2a85-4c1b-859d-9bfdf441a9c4.xml, WdfDriverOpenParametersRegistryKey method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,12 +126,11 @@ For more information about the registry, see <a href="https://docs.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdriver.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
@@ -139,15 +138,15 @@ For more information about the registry, see <a href="https://docs.microsoft.com
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivergetregistrypath.md">WdfDriverGetRegistryPath</a>
-
-<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
-
 <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfdrivergetregistrypath.md">WdfDriverGetRegistryPath</a>
 
 <a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
 
  
 

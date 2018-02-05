@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c771a581-53ac-44a7-b307-b8a22ac97496
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects3::GetThreadIdByProcessor, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByProcessor method, dbgeng/IDebugSystemObjects3::GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects_59fff866-93b2-48fb-8f49-bf778e2f0f7f.xml, GetThreadIdByProcessor, dbgeng/IDebugSystemObjects4::GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects4 interface, debugger.getthreadidbyprocessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects4::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects::GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects::GetThreadIdByProcessor
+ms.keywords : GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects4 interface, GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3 interface, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByProcessor method, debugger.getthreadidbyprocessor, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByProcessor method, dbgeng/IDebugSystemObjects3::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects::GetThreadIdByProcessor, IDebugSystemObjects_59fff866-93b2-48fb-8f49-bf778e2f0f7f.xml, IDebugSystemObjects4, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4::GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects2 interface, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects4::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects::GetThreadIdByProcessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -92,11 +92,6 @@ For more information about threads, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

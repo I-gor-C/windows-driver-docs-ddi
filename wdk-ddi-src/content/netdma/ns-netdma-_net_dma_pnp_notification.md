@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8a505077-dec6-47cc-8730-d68e19309d3b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.net_dma_pnp_notification, netdma_ref_276d7903-f1d8-4fd4-91f0-dda490f8da02.xml, NET_DMA_PNP_NOTIFICATION structure [Network Drivers Starting with Windows Vista], PNET_DMA_PNP_NOTIFICATION structure pointer [Network Drivers Starting with Windows Vista], netdma/NET_DMA_PNP_NOTIFICATION, PNET_DMA_PNP_NOTIFICATION, NET_DMA_PNP_NOTIFICATION, *PNET_DMA_PNP_NOTIFICATION, _NET_DMA_PNP_NOTIFICATION, netdma/PNET_DMA_PNP_NOTIFICATION
+ms.keywords : PNET_DMA_PNP_NOTIFICATION structure pointer [Network Drivers Starting with Windows Vista], netdma_ref_276d7903-f1d8-4fd4-91f0-dda490f8da02.xml, NET_DMA_PNP_NOTIFICATION structure [Network Drivers Starting with Windows Vista], NET_DMA_PNP_NOTIFICATION, PNET_DMA_PNP_NOTIFICATION, *PNET_DMA_PNP_NOTIFICATION, netdma/PNET_DMA_PNP_NOTIFICATION, netvista.net_dma_pnp_notification, _NET_DMA_PNP_NOTIFICATION, netdma/NET_DMA_PNP_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION, *PNET_DMA_PNP_NOTIFICATION
+req.typenames : "*PNET_DMA_PNP_NOTIFICATION, NET_DMA_PNP_NOTIFICATION"
 ---
 
 # _NET_DMA_PNP_NOTIFICATION structure
@@ -73,8 +73,8 @@ The length, in bytes, of the notification-specific data at the
 `NotificationCode`
 
 A value that identifies the DMA provider event. This value must be one of the values from the 
-     <mshelp:link keywords="netvista.net_dma_pnp_notification_code" tabindex="0"><b>
-     NET_DMA_PNP_NOTIFICATION_CODE</b></mshelp:link> enumeration.
+     <a href="..\netdma\ne-netdma-_net_dma_pnp_notification_code.md">
+     NET_DMA_PNP_NOTIFICATION_CODE</a> enumeration.
 
 `StructureRevision`
 
@@ -97,9 +97,7 @@ To send a power management notification to the NetDMA interface, NetDMA provider
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. |
 | **Header** | netdma.h (include Netdma.h) |
 
 ## See Also

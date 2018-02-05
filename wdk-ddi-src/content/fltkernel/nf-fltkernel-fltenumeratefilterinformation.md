@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c8bfa809-3f32-487c-991e-2ec040e3bc98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltEnumerateFilterInformation, ifsk.fltenumeratefilterinformation, FltApiRef_e_to_o_dc4c496f-b21e-4b92-93c6-7efbe25400a6.xml, FltEnumerateFilterInformation routine [Installable File System Drivers], fltkernel/FltEnumerateFilterInformation
+ms.keywords : FltApiRef_e_to_o_dc4c496f-b21e-4b92-93c6-7efbe25400a6.xml, ifsk.fltenumeratefilterinformation, FltEnumerateFilterInformation routine [Installable File System Drivers], FltEnumerateFilterInformation, fltkernel/FltEnumerateFilterInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -202,34 +202,30 @@ To list volume information for all volumes that are known to the Filter Manager,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ioenumerateregisteredfilterslist.md">IoEnumerateRegisteredFiltersList</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
+
+<a href="..\ntifs\nf-ntifs-ioenumerateregisteredfilterslist.md">IoEnumerateRegisteredFiltersList</a>
 
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_basic_information.md">FILTER_AGGREGATE_BASIC_INFORMATION</a>
 
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md">FILTER_FULL_INFORMATION</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
 
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
 
  
 

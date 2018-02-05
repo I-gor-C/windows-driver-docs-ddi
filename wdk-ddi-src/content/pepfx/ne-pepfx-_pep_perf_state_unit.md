@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5E5F049D-4306-4382-B3F7-06C1F5FFE93E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pep_perf_state_unit, PepPerfStateUnitOther, *PPEP_PERF_STATE_UNIT, PEP_PERF_STATE_UNIT, _PEP_PERF_STATE_UNIT, pepfx/PepPerfStateUnitOther, pepfx/PepPerfStateUnitFrequency, PepPerfStateUnitFrequency, PepPerfStateUnitMax, pepfx/PEP_PERF_STATE_UNIT, pepfx/PepPerfStateUnitMax, PEP_PERF_STATE_UNIT enumeration [Kernel-Mode Driver Architecture], PepPerfStateUnitBandwidth, pepfx/PepPerfStateUnitBandwidth
+ms.keywords : PepPerfStateUnitOther, PepPerfStateUnitMax, *PPEP_PERF_STATE_UNIT, PEP_PERF_STATE_UNIT enumeration [Kernel-Mode Driver Architecture], pepfx/PEP_PERF_STATE_UNIT, kernel.pep_perf_state_unit, PepPerfStateUnitFrequency, PEP_PERF_STATE_UNIT, pepfx/PepPerfStateUnitFrequency, pepfx/PepPerfStateUnitOther, pepfx/PepPerfStateUnitMax, pepfx/PepPerfStateUnitBandwidth, _PEP_PERF_STATE_UNIT, PepPerfStateUnitBandwidth
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_PERF_STATE_UNIT, PEP_PERF_STATE_UNIT"
+req.typenames : PEP_PERF_STATE_UNIT, *PPEP_PERF_STATE_UNIT
 ---
 
 # _PEP_PERF_STATE_UNIT Enumeration
@@ -83,9 +83,7 @@ The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_component_perf_set
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

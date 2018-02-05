@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dec5415b-6903-416e-819b-007ea6f7e7b5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFDirectOidRequest, ndis/NdisFDirectOidRequest, netvista.ndisfdirectoidrequest, ndis_request_direct_ref_f29e3367-5ebb-43af-bea8-d8729436ee17.xml, NdisFDirectOidRequest function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisfdirectoidrequest, NdisFDirectOidRequest, NdisFDirectOidRequest function [Network Drivers Starting with Windows Vista], ndis/NdisFDirectOidRequest, ndis_request_direct_ref_f29e3367-5ebb-43af-bea8-d8729436ee17.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,18 +83,18 @@ The
     interface. For example, the following OIDs can be used:
 
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_add_sa" tabindex="0">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
+       OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
 
 
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa" tabindex="0">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
+       OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
 
 
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_update_sa" tabindex="0">
-       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-update-sa">
+       OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
 
 
 Filter drivers can originate direct OID requests to underlying drivers by calling 
@@ -126,38 +126,35 @@ The direct OID request interface is similar to the general OID request interface
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ndis\nc-ndis-filter_direct_oid_request.md">FilterDirectOidRequest</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
-<a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a>
-
 <a href="..\ndis\nf-ndis-ndisfoidrequest.md">NdisFOidRequest</a>
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa" tabindex="0">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</mshelp:link>
+<a href="..\ndis\nf-ndis-ndisdirectoidrequest.md">NdisDirectOidRequest</a>
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_add_sa" tabindex="0">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
 
-<mshelp:link keywords="netvista.filterdirectoidrequestcomplete" tabindex="0"><i>
-   FilterDirectOidRequestComplete</i></mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_update_sa" tabindex="0">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-update-sa">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA</a>
+
+<a href="..\ndis\nc-ndis-filter_direct_oid_request_complete.md">
+   FilterDirectOidRequestComplete</a>
+
+<a href="..\ndis\nc-ndis-filter_direct_oid_request.md">FilterDirectOidRequest</a>
 
  
 

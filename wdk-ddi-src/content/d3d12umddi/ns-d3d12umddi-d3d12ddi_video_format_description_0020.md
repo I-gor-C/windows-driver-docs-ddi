@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 47C0C369-B31B-4291-A420-A1E75BA990CF
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_FORMAT_DESCRIPTION_0020, D3D12DDI_VIDEO_FORMAT_DESCRIPTION_0020 structure [Display Devices], display.d3d12ddi_video_format_description, d3d12umddi/D3D12DDI_VIDEO_FORMAT_DESCRIPTION_0020
+ms.keywords : D3D12DDI_VIDEO_FORMAT_DESCRIPTION_0020 structure [Display Devices], D3D12DDI_VIDEO_FORMAT_DESCRIPTION_0020, d3d12umddi/D3D12DDI_VIDEO_FORMAT_DESCRIPTION_0020, display.d3d12ddi_video_format_description
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ The one exception is that all drivers are required to support a conversion to re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b9dd2890-4b2d-4fe1-88bb-30d94ff36c44
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlGetNextExtraCreateParameter, ifsk.fsrtlgetnextextracreateparameter, ntifs/FsRtlGetNextExtraCreateParameter, FsRtlGetNextExtraCreateParameter routine [Installable File System Drivers], fsrtlref_096516d0-6888-4dfa-98b3-b7b67794bf08.xml
+ms.keywords : fsrtlref_096516d0-6888-4dfa-98b3-b7b67794bf08.xml, FsRtlGetNextExtraCreateParameter, FsRtlGetNextExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlGetNextExtraCreateParameter, ifsk.fsrtlgetnextextracreateparameter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -127,22 +127,24 @@ The<b>FsRtlGetNextExtraCreateParameter</b> routine processes an ECP list in a no
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FsRtlGetNextExtraCreateParameter routine is available starting with Windows Vista. The FsRtlGetNextExtraCreateParameter routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterfromlookasidelist.md">FltAllocateExtraCreateParameterFromLookasideList</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 
@@ -150,17 +152,13 @@ The<b>FsRtlGetNextExtraCreateParameter</b> routine processes an ECP list in a no
 
 <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameter.md">FltAllocateExtraCreateParameter</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameter.md">FltAllocateExtraCreateParameter</a>
 
  
 

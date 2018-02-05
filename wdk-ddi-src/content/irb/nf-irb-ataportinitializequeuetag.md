@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f6d40f3e-4bc9-4b30-97ac-600a33280305
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortInitializeQueueTag routine [Storage Devices], irb/AtaPortInitializeQueueTag, AtaPortInitializeQueueTag, atartns_2dd092e5-f635-4da7-8444-ffef8e5c75db.xml, storage.ataportinitializequeuetag
+ms.keywords : irb/AtaPortInitializeQueueTag, AtaPortInitializeQueueTag routine [Storage Devices], storage.ataportinitializequeuetag, atartns_2dd092e5-f635-4da7-8444-ffef8e5c75db.xml, AtaPortInitializeQueueTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,14 +86,9 @@ The values in the <i>TargetId</i> and <i>Lun</i> parameters specify the device t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

@@ -69,9 +69,7 @@ If the miniport driver returns its code block, it sets the <b>Information</b> me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 

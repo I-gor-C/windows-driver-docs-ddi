@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6971C724-CE5E-44BC-8D3A-FAD248771E6F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : vpci/PVPCI_INVALIDATE_BLOCK_OUTPUT, vpci/VPCI_INVALIDATE_BLOCK_OUTPUT, *PVPCI_INVALIDATE_BLOCK_OUTPUT, VPCI_INVALIDATE_BLOCK_OUTPUT structure [Kernel-Mode Driver Architecture], kernel.vpci_invalidate_block_output, PVPCI_INVALIDATE_BLOCK_OUTPUT, VPCI_INVALIDATE_BLOCK_OUTPUT, PVPCI_INVALIDATE_BLOCK_OUTPUT structure pointer [Kernel-Mode Driver Architecture], _VPCI_INVALIDATE_BLOCK_OUTPUT
+ms.keywords : VPCI_INVALIDATE_BLOCK_OUTPUT, PVPCI_INVALIDATE_BLOCK_OUTPUT, vpci/PVPCI_INVALIDATE_BLOCK_OUTPUT, *PVPCI_INVALIDATE_BLOCK_OUTPUT, PVPCI_INVALIDATE_BLOCK_OUTPUT structure pointer [Kernel-Mode Driver Architecture], VPCI_INVALIDATE_BLOCK_OUTPUT structure [Kernel-Mode Driver Architecture], kernel.vpci_invalidate_block_output, vpci/VPCI_INVALIDATE_BLOCK_OUTPUT, _VPCI_INVALIDATE_BLOCK_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,6 @@ However, we recommend that IHVs reserve the first 64 VF configuration blocks for
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | vpci.h (include Vpci.h) |
 
 ## See Also

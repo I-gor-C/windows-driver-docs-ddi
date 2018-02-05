@@ -8,7 +8,7 @@ old-project : PCMCIA
 ms.assetid : d834d97c-cf2d-430b-8f54-b0b47ab1503c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddpcm/PcmciaCardBusCompatible, ntddpcm/PcmciaElcController, PcmciaDatabookCB, PcmciaCardBusCompatible, ntddpcm/PcmciaO2Micro, ntddpcm/PcmciaPciPcmciaBridge, ntddpcm/PcmciaCirrusLogic, PcmciaTrid, PcmciaTI, ntddpcm/PcmciaDatabookCB, PPCMCIA_CONTROLLER_CLASS, ntddpcm/PcmciaInvalidControllerClass, PPCMCIA_CONTROLLER_CLASS enumeration pointer [Buses], ntddpcm/PcmciaOpti, ntddpcm/PPCMCIA_CONTROLLER_CLASS, ntddpcm/PCMCIA_CONTROLLER_CLASS, PcmciaIntelCompatible, PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS enumeration [Buses], ntddpcm/PcmciaNEC_98, *PPCMCIA_CONTROLLER_CLASS, PcmciaO2Micro, PcmciaNEC, ntddpcm/PcmciaDatabook, PcmciaOpti, ntddpcm/PcmciaTopic, ntddpcm/PcmciaIntelCompatible, memcdref_a3d708d3-6fa4-4edd-af5d-1513c8da5a9b.xml, ntddpcm/PcmciaTI, PcmciaTopic, PcmciaInvalidControllerClass, PcmciaDatabook, PcmciaNEC_98, PCMCIA.pcmcia_controller_class, ntddpcm/PcmciaNEC, PcmciaRicoh, PcmciaElcController, ntddpcm/PcmciaRicoh, _PCMCIA_CONTROLLER_CLASS, ntddpcm/PcmciaTrid, PcmciaCirrusLogic, PcmciaPciPcmciaBridge
+ms.keywords : ntddpcm/PcmciaCirrusLogic, ntddpcm/PcmciaNEC_98, *PPCMCIA_CONTROLLER_CLASS, ntddpcm/PcmciaIntelCompatible, PcmciaDatabookCB, PCMCIA.pcmcia_controller_class, ntddpcm/PcmciaInvalidControllerClass, PCMCIA_CONTROLLER_CLASS, ntddpcm/PcmciaTI, PcmciaElcController, ntddpcm/PcmciaNEC, PcmciaTI, PcmciaNEC, PcmciaDatabook, ntddpcm/PcmciaO2Micro, PcmciaTopic, memcdref_a3d708d3-6fa4-4edd-af5d-1513c8da5a9b.xml, PcmciaOpti, PcmciaNEC_98, ntddpcm/PcmciaPciPcmciaBridge, PcmciaTrid, ntddpcm/PcmciaRicoh, PcmciaIntelCompatible, PcmciaCirrusLogic, ntddpcm/PcmciaDatabookCB, _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS enumeration [Buses], PcmciaRicoh, PPCMCIA_CONTROLLER_CLASS, PcmciaInvalidControllerClass, ntddpcm/PcmciaElcController, PcmciaO2Micro, ntddpcm/PcmciaOpti, PPCMCIA_CONTROLLER_CLASS enumeration pointer [Buses], ntddpcm/PPCMCIA_CONTROLLER_CLASS, ntddpcm/PcmciaCardBusCompatible, ntddpcm/PCMCIA_CONTROLLER_CLASS, ntddpcm/PcmciaTopic, ntddpcm/PcmciaTrid, PcmciaCardBusCompatible, PcmciaPciPcmciaBridge, ntddpcm/PcmciaDatabook
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -152,9 +152,6 @@ typedef enum _PCMCIA_CONTROLLER_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddpcm.h (include Ntddpcm.h) |
 
 ## See Also

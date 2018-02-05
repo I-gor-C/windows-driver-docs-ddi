@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 412c35b2-eb08-43a3-b776-053645806f5d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.scsiscan_cmd, *PSCSISCAN_CMD, stifnc_2a67c5d9-7866-4dc5-8ce4-6bc832cbf7de.xml, _SCSISCAN_CMD, SCSISCAN_CMD structure [Imaging Devices], scsiscan/SCSISCAN_CMD, PSCSISCAN_CMD, SCSISCAN_CMD, PSCSISCAN_CMD structure pointer [Imaging Devices], scsiscan/PSCSISCAN_CMD
+ms.keywords : SCSISCAN_CMD, PSCSISCAN_CMD, _SCSISCAN_CMD, image.scsiscan_cmd, stifnc_2a67c5d9-7866-4dc5-8ce4-6bc832cbf7de.xml, *PSCSISCAN_CMD, PSCSISCAN_CMD structure pointer [Imaging Devices], SCSISCAN_CMD structure [Imaging Devices], scsiscan/SCSISCAN_CMD, scsiscan/PSCSISCAN_CMD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCSISCAN_CMD, *PSCSISCAN_CMD
+req.typenames : "*PSCSISCAN_CMD, SCSISCAN_CMD"
 req.product : Windows 10 or later.
 ---
 
@@ -110,7 +110,4 @@ Length, in bytes, of the buffer to be transferred. This should match the value s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | scsiscan.h (include Scsiscan.h, Srb.h, Scsi.h) |

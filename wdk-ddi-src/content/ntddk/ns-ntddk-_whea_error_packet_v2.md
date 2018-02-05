@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 10cfc201-d5c9-4887-997e-673ef6abb7db
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2, PWHEA_ERROR_PACKET_V2 structure pointer [WHEA Drivers and Applications], WHEA_ERROR_PACKET, whea.whea_error_packet_v2, ntddk/PWHEA_ERROR_PACKET_V2, PWHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V2 structure [WHEA Drivers and Applications], ntddk/WHEA_ERROR_PACKET_V2, whearef_dda917df-4c9e-435e-ab12-1520e13d3dac.xml, *PWHEA_ERROR_PACKET_V2"
+ms.keywords : ntddk/WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET, whearef_dda917df-4c9e-435e-ab12-1520e13d3dac.xml, WHEA_ERROR_PACKET, whea.whea_error_packet_v2, _WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2 structure [WHEA Drivers and Applications], PWHEA_ERROR_PACKET_V2 structure pointer [WHEA Drivers and Applications], WHEA_ERROR_PACKET_V2, ntddk/PWHEA_ERROR_PACKET_V2, PWHEA_ERROR_PACKET_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V2"
+req.typenames : WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET
 ---
 
 # _WHEA_ERROR_PACKET_V2 structure
@@ -116,6 +116,11 @@ A GUID that identifies the notification mechanism by which an error condition is
 For error notification types that do not conform to one of the standard types in the previous list, a platform-specific GUID can be defined to identify the notification mechanism. If the notification type does not correspond to any of the standard notification types or any platform-specific notification types, this member is set to GENERIC_NOTIFY_TYPE_GUID.
 
 
+#### BOOT_NOTIFY_TYPE_GUID
+
+Boot Error Record (BOOT)
+
+
 #### CMC_NOTIFY_TYPE_GUID
 
 Corrected Machine Check (CMC)
@@ -126,19 +131,14 @@ Corrected Machine Check (CMC)
 Corrected Platform Error (CPE)
 
 
-#### MCE_NOTIFY_TYPE_GUID
-
-Machine Check Exception (MCE)
-
-
-#### PCIe_NOTIFY_TYPE_GUID
-
-PCI Express (PCIe) Error
-
-
 #### INIT_NOTIFY_TYPE_GUID
 
 INIT Error Record (INIT)
+
+
+#### MCE_NOTIFY_TYPE_GUID
+
+Machine Check Exception (MCE)
 
 
 #### NMI_NOTIFY_TYPE_GUID
@@ -146,9 +146,9 @@ INIT Error Record (INIT)
 Nonmaskable Interrupt (NMI)
 
 
-#### BOOT_NOTIFY_TYPE_GUID
+#### PCIe_NOTIFY_TYPE_GUID
 
-Boot Error Record (BOOT)
+PCI Express (PCIe) Error
 
 `PshedDataLength`
 
@@ -190,26 +190,24 @@ In addition, <a href="https://msdn.microsoft.com/7c56a8e2-11e9-4ef0-83f2-50a1771
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>
-
-<a href="..\ntddk\ne-ntddk-_whea_error_packet_data_format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
 
 <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">Platform-Specific Hardware Error Driver (PSHED) Plug-Ins</a>
 
-<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>
+
+<a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>
 
 <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a>
 
-<a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a>
+
+<a href="..\ntddk\ne-ntddk-_whea_error_packet_data_format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a>
 
  
 

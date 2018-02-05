@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2bc0cd81-db9b-4646-838b-0e66c0667202
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetScopeSymbolGroup2 method [Windows Debugging], debugger.getscopesymbolgroup2, dbgeng/IDebugSymbols3::GetScopeSymbolGroup2, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup2 method, IDebugSymbols3::GetScopeSymbolGroup2, IDebugSymbols3, GetScopeSymbolGroup2, GetScopeSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : GetScopeSymbolGroup2 method [Windows Debugging], GetScopeSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup2 method, dbgeng/IDebugSymbols3::GetScopeSymbolGroup2, GetScopeSymbolGroup2, IDebugSymbols3, debugger.getscopesymbolgroup2, IDebugSymbols3::GetScopeSymbolGroup2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -123,22 +123,17 @@ For more information about scopes and symbol groups, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548270">GetScope</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
  
 

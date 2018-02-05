@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : AC0C09DF-EFD4-457B-8ABC-C60890D3AF6A
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, storage.storage_medium_product_type_descriptor, ntddstor/STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure [Storage Devices], PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
+ms.keywords : ntddstor/STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, ntddstor/PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, storage.storage_medium_product_type_descriptor, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure [Storage Devices], PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -117,9 +117,7 @@ Contains the size of this structure, in bytes, as defined by <code>Sizeof(STORAG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

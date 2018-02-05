@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c5aeb5f4-be62-4418-981c-1dd4acdccf07
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetFactory, wdf.iwdfusbtargetfactory_createusbtargetdevice, IWDFUsbTargetFactory interface, CreateUsbTargetDevice method, umdf.iwdfusbtargetfactory_createusbtargetdevice, IWDFUsbTargetFactory::CreateUsbTargetDevice, CreateUsbTargetDevice method, CreateUsbTargetDevice, UMDFDeviceObjectRef_fafba7c5-57d5-4b05-bc46-46807b94ec6d.xml, CreateUsbTargetDevice method, IWDFUsbTargetFactory interface, wudfusb/IWDFUsbTargetFactory::CreateUsbTargetDevice
+ms.keywords : IWDFUsbTargetFactory interface, CreateUsbTargetDevice method, IWDFUsbTargetFactory, wudfusb/IWDFUsbTargetFactory::CreateUsbTargetDevice, CreateUsbTargetDevice method, IWDFUsbTargetFactory interface, umdf.iwdfusbtargetfactory_createusbtargetdevice, IWDFUsbTargetFactory::CreateUsbTargetDevice, CreateUsbTargetDevice, wdf.iwdfusbtargetfactory_createusbtargetdevice, CreateUsbTargetDevice method, UMDFDeviceObjectRef_fafba7c5-57d5-4b05-bc46-46807b94ec6d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -115,24 +115,22 @@ If the file object that is associated with the created I/O target object is requ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540277">WinUsb_Initialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559243">IWDFIoTarget::GetTargetFile</a>
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540277">WinUsb_Initialize</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559243">IWDFIoTarget::GetTargetFile</a>
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
 
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetfactory.md">IWDFUsbTargetFactory</a>
 

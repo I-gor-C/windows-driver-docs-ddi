@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : AB120BA9-0E52-489E-AB51-866D8A020DAC
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, acpi.acpi_eval_input_buffer_simple_string_v2, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2 structure [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2 structure pointer [ACPI Devices]
+ms.keywords : PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2 structure [ACPI Devices], acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, acpi.acpi_eval_input_buffer_simple_string_v2, PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2 structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,7 +78,5 @@ Defines the <b>ULONG</b> member <b>StringLength</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 and later versions. Windows 10, version 1709 and later versions. |
 | **Header** | acpiioct.h (include Acpiioct.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : de8f8bee-44e9-4a6a-bb36-a43a66afe188
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_2564ca47-8304-4a95-a408-2e5ccca7353d.xml, display.dxgkarg_preemptcommand, d3dkmddi/DXGKARG_PREEMPTCOMMAND, DXGKARG_PREEMPTCOMMAND, _DXGKARG_PREEMPTCOMMAND, DXGKARG_PREEMPTCOMMAND structure [Display Devices]
+ms.keywords : "_DXGKARG_PREEMPTCOMMAND, DXGKARG_PREEMPTCOMMAND, DXGKARG_PREEMPTCOMMAND structure [Display Devices], DmStructs_2564ca47-8304-4a95-a408-2e5ccca7353d.xml, d3dkmddi/DXGKARG_PREEMPTCOMMAND, display.dxgkarg_preemptcommand"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,24 +74,22 @@ typedef struct _DXGKARG_PREEMPTCOMMAND {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_preemptcommand.md">DxgkDdiPreemptCommand</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_preemptcommand.md">DxgkDdiPreemptCommand</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_preemptcommandflags.md">DXGK_PREEMPTCOMMANDFLAGS</a>
 
  
 

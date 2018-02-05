@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 94852404-301F-4C09-81D2-CEDEECFCD6BD
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3 interface, GetHardwareRegisterMappedAddress method, IWDFDevice3, GetHardwareRegisterMappedAddress method, umdf.iwdfdevice3_gethardwareregistermappedaddress, wdf.iwdfdevice3_gethardwareregistermappedaddress, IWDFDevice3::GetHardwareRegisterMappedAddress, GetHardwareRegisterMappedAddress, GetHardwareRegisterMappedAddress method, IWDFDevice3 interface, wudfddi/IWDFDevice3::GetHardwareRegisterMappedAddress
+ms.keywords : wdf.iwdfdevice3_gethardwareregistermappedaddress, wudfddi/IWDFDevice3::GetHardwareRegisterMappedAddress, umdf.iwdfdevice3_gethardwareregistermappedaddress, IWDFDevice3 interface, GetHardwareRegisterMappedAddress method, IWDFDevice3::GetHardwareRegisterMappedAddress, GetHardwareRegisterMappedAddress method, GetHardwareRegisterMappedAddress, IWDFDevice3, GetHardwareRegisterMappedAddress method, IWDFDevice3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -77,14 +77,12 @@ If you do use <b>GetHardwareRegisterMappedAddress</b>, you must set the <b>UmdfR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

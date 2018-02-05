@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f0c86720-4914-47b1-abb1-151196cc2a68
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExAllocateFromPagedLookasideList, k102_96e03fc6-f951-4c96-8de4-32d67e85ec02.xml, wdm/ExAllocateFromPagedLookasideList, ExAllocateFromPagedLookasideList routine [Kernel-Mode Driver Architecture], kernel.exallocatefrompagedlookasidelist
+ms.keywords : k102_96e03fc6-f951-4c96-8de4-32d67e85ec02.xml, ExAllocateFromPagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExAllocateFromPagedLookasideList, ExAllocateFromPagedLookasideList, kernel.exallocatefrompagedlookasidelist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,22 +77,20 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
 
 <a href="..\wdm\nf-wdm-exinitializepagedlookasidelist.md">ExInitializePagedLookasideList</a>
 
 <a href="..\wdm\nf-wdm-exallocatefromnpagedlookasidelist.md">ExAllocateFromNPagedLookasideList</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
 
 <a href="..\wdm\nf-wdm-exfreetopagedlookasidelist.md">ExFreeToPagedLookasideList</a>
 

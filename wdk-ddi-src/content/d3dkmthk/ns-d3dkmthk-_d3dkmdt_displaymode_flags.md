@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0b45cd69-5c9e-4772-a68f-d604806e7789
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmdt_displaymode_flags, D3DKMDT_DISPLAYMODE_FLAGS, OpenGL_Structs_64aa66c8-8323-4cee-b437-16b8f3c361c8.xml, d3dkmthk/D3DKMDT_DISPLAYMODE_FLAGS, _D3DKMDT_DISPLAYMODE_FLAGS, D3DKMDT_DISPLAYMODE_FLAGS structure [Display Devices]
+ms.keywords : D3DKMDT_DISPLAYMODE_FLAGS, OpenGL_Structs_64aa66c8-8323-4cee-b437-16b8f3c361c8.xml, d3dkmthk/D3DKMDT_DISPLAYMODE_FLAGS, _D3DKMDT_DISPLAYMODE_FLAGS, display.d3dkmdt_displaymode_flags, D3DKMDT_DISPLAYMODE_FLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -118,9 +118,7 @@ Supported starting with Windows 8.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

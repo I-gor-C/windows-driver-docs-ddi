@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2CE89C1E-8FE8-4304-BD3F-5A926CAC74B4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_HEADER structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_HEADER, *PKSCAMERA_EXTENDEDPROP_HEADER, PKSCAMERA_EXTENDEDPROP_HEADER structure pointer [Streaming Media Devices], ksmedia/PKSCAMERA_EXTENDEDPROP_HEADER, stream.kscamera_extendedprop_header, KSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL, KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE, tagKSCAMERA_EXTENDEDPROP_HEADER
+ms.keywords : KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE, PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_HEADER structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_HEADER, tagKSCAMERA_EXTENDEDPROP_HEADER, PKSCAMERA_EXTENDEDPROP_HEADER structure pointer [Streaming Media Devices], *PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL, KSCAMERA_EXTENDEDPROP_HEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_HEADER, stream.kscamera_extendedprop_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -112,9 +112,7 @@ The extended property version number. This is set to 1.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f07919f8-644f-43a4-98d7-d0f1a91d405d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.iogettransactionparameterblock, IoGetTransactionParameterBlock, ntddk/IoGetTransactionParameterBlock, IoGetTransactionParameterBlock routine [Installable File System Drivers], ioref_4bce32be-89e0-4b69-9e44-a4b619588c79.xml
+ms.keywords : ioref_4bce32be-89e0-4b69-9e44-a4b619588c79.xml, IoGetTransactionParameterBlock routine [Installable File System Drivers], ntddk/IoGetTransactionParameterBlock, ifsk.iogettransactionparameterblock, IoGetTransactionParameterBlock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,12 @@ The <b>IoGetTransactionParameterBlock</b> routine returns a pointer to the <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows Vista and later Windows Vista and later |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

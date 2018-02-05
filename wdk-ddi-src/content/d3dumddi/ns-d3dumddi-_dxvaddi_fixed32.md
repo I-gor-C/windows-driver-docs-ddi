@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4188c488-fda4-4596-96f5-f740a5cc9ffc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_FIXED32, DXVADDI_FIXED32 structure [Display Devices], _DXVADDI_FIXED32, d3dumddi/DXVADDI_FIXED32, DXVA2_Structs_3d19835e-9a75-4d5a-bd6b-451a9978eadb.xml, display.dxvaddi_fixed32
+ms.keywords : d3dumddi/DXVADDI_FIXED32, _DXVADDI_FIXED32, DXVA2_Structs_3d19835e-9a75-4d5a-bd6b-451a9978eadb.xml, display.dxvaddi_fixed32, DXVADDI_FIXED32, DXVADDI_FIXED32 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ typedef struct _DXVADDI_FIXED32 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

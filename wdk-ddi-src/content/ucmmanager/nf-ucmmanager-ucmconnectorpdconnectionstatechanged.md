@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2DE78869-9AFC-423A-BCB0-B7BBAB0C06BC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucmconnectorpdconnectionstatechanged, UcmConnectorPdConnectionStateChanged, ucmmanager/UcmConnectorPdConnectionStateChanged, UcmConnectorPdConnectionStateChanged method [Buses]
+ms.keywords : ucmmanager/UcmConnectorPdConnectionStateChanged, UcmConnectorPdConnectionStateChanged method [Buses], buses.ucmconnectorpdconnectionstatechanged, UcmConnectorPdConnectionStateChanged
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,13 @@ Pointer to a  <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_pd_conn_state_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
+| **Library** | UcmCxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

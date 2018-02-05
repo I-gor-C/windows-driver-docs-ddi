@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 74bfe9fb-f751-46a6-a95b-f715ebedd2ec
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k106_50d610e1-b3ae-41c5-a696-13ab0cf314b6.xml, MmIsDriverVerifying, wdm/MmIsDriverVerifying, MmIsDriverVerifying routine [Kernel-Mode Driver Architecture], kernel.mmisdriververifying
+ms.keywords : MmIsDriverVerifying routine [Kernel-Mode Driver Architecture], wdm/MmIsDriverVerifying, MmIsDriverVerifying, kernel.mmisdriververifying, k106_50d610e1-b3ae-41c5-a696-13ab0cf314b6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,22 +75,20 @@ For example, if driver A has an import table through which it calls one or more 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
 <a href="..\wdm\nf-wdm-mmisdriververifyingbyaddress.md">MmIsDriverVerifyingByAddress</a>
 
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
  
 

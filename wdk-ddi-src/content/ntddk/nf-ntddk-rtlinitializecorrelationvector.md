@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ebf5ccbe-3325-4d3d-86c9-230776f2c9ef
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlinitializecorrelationvector, RtlInitializeCorrelationVector function [Kernel-Mode Driver Architecture], RtlInitializeCorrelationVector, ntddk/RtlInitializeCorrelationVector
+ms.keywords : RtlInitializeCorrelationVector function [Kernel-Mode Driver Architecture], ntddk/RtlInitializeCorrelationVector, RtlInitializeCorrelationVector, kernel.rtlinitializecorrelationvector
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,14 +110,12 @@ The supplied GUID is null.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

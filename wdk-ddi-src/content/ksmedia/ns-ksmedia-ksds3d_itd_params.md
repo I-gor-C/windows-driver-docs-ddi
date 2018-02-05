@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2c8701d5-c762-4d2c-abd7-8da90292f3c0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : aud-prop_169748c9-f538-47d2-ae3c-ae34cca26f00.xml, ksmedia/KSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS, ksmedia/PKSDS3D_ITD_PARAMS, audio.ksds3d_itd_params, *PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS structure [Audio Devices], PKSDS3D_ITD_PARAMS structure pointer [Audio Devices], PKSDS3D_ITD_PARAMS
+ms.keywords : PKSDS3D_ITD_PARAMS structure pointer [Audio Devices], ksmedia/KSDS3D_ITD_PARAMS, audio.ksds3d_itd_params, aud-prop_169748c9-f538-47d2-ae3c-ae34cca26f00.xml, *PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS structure [Audio Devices], PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS, ksmedia/PKSDS3D_ITD_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS"
+req.typenames : KSDS3D_ITD_PARAMS, *PKSDS3D_ITD_PARAMS
 ---
 
 # KSDS3D_ITD_PARAMS structure
@@ -99,9 +99,6 @@ When a KSPROPERTY_ITD3D_PARAMS set-property request changes either <b>TotalDryAt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

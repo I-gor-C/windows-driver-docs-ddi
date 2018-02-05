@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 34a37d29-c517-45dc-b94d-abffaa91cb31
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : HardwareRemoval, HciDisconnect, L2CAP_DISCONNECT_REASON, RadioPoweredDown, bth_enums_b465d42e-515c-49b9-8d6c-0d576853a41b.xml, _L2CAP_DISCONNECT_REASON, bltooth.l2cap_disconnect_reason, bthddi/HciDisconnect, bthddi/RadioPoweredDown, bthddi/HardwareRemoval, L2CAP_DISCONNECT_REASON enumeration [Bluetooth Devices], bthddi/L2capDisconnectRequest, bthddi/L2CAP_DISCONNECT_REASON, L2capDisconnectRequest
+ms.keywords : bltooth.l2cap_disconnect_reason, RadioPoweredDown, bthddi/L2capDisconnectRequest, HardwareRemoval, bth_enums_b465d42e-515c-49b9-8d6c-0d576853a41b.xml, bthddi/L2CAP_DISCONNECT_REASON, L2capDisconnectRequest, L2CAP_DISCONNECT_REASON, bthddi/RadioPoweredDown, _L2CAP_DISCONNECT_REASON, bthddi/HardwareRemoval, bthddi/HciDisconnect, L2CAP_DISCONNECT_REASON enumeration [Bluetooth Devices], HciDisconnect
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -98,9 +98,7 @@ Currently,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista and later versions of Windows. Versions:\_Supported in Windows Vista and later versions of Windows. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also

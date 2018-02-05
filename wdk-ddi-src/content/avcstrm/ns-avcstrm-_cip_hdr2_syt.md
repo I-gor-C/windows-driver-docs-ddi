@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.cip_hdr2_syt, CIP_HDR2_SYT structure [Streaming Media Devices], avcstrm/CIP_HDR2_SYT, PCIP_HDR2_SYT, *PCIP_HDR2_SYT, _CIP_HDR2_SYT, avcsref_1ea551ca-5d40-4bc3-bc54-b736fd6a2b23.xml, avcstrm/PCIP_HDR2_SYT, PCIP_HDR2_SYT structure pointer [Streaming Media Devices], CIP_HDR2_SYT
+ms.keywords : CIP_HDR2_SYT, avcstrm/CIP_HDR2_SYT, _CIP_HDR2_SYT, avcsref_1ea551ca-5d40-4bc3-bc54-b736fd6a2b23.xml, *PCIP_HDR2_SYT, CIP_HDR2_SYT structure [Streaming Media Devices], PCIP_HDR2_SYT, stream.cip_hdr2_syt, PCIP_HDR2_SYT structure pointer [Streaming Media Devices], avcstrm/PCIP_HDR2_SYT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,6 @@ Lower 16 bits of CYCLE_TIME. This is not used for opening a stream.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
 ## See Also

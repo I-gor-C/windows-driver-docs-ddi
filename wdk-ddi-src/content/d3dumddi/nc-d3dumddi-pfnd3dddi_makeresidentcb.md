@@ -125,20 +125,15 @@ For the DirectX 12.0 user mode driver, <i>pfnMakeResidentCb</i> behaves slightly
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident.md">D3DDDI_MAKERESIDENT</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_evictcb.md">pfnEvictCb</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident.md">D3DDDI_MAKERESIDENT</a>
 
  
 

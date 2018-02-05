@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d4249b81-0ee7-49dd-9886-cdc5842f02d8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : netdispumdddi/MIRACAST_DATARATE_STATS, MIRACAST_DATARATE_STATS structure [Display Devices], MIRACAST_DATARATE_STATS, display.miracast_datarate_stats
+ms.keywords : netdispumdddi/MIRACAST_DATARATE_STATS, display.miracast_datarate_stats, MIRACAST_DATARATE_STATS, MIRACAST_DATARATE_STATS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,5 @@ The total number of Wi-Fi frames that were sent with zero retries since the prev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |

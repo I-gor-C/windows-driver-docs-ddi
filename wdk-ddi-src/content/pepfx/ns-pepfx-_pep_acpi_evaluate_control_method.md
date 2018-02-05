@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : FFCC5947-1DD5-4AD5-A414-94BDC013D1A7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_ACPI_EVALUATE_CONTROL_METHOD, PPEP_ACPI_EVALUATE_CONTROL_METHOD structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_EVALUATE_CONTROL_METHOD, *PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PEP_ACPI_EVALUATE_CONTROL_METHOD, _PEP_ACPI_EVALUATE_CONTROL_METHOD, kernel.pep_acpi_evaluate_control_method, PEP_ACPI_EVALUATE_CONTROL_METHOD structure [Kernel-Mode Driver Architecture], PEP_ACPI_EVALUATE_CONTROL_METHOD
+ms.keywords : "_PEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD structure [Kernel-Mode Driver Architecture], kernel.pep_acpi_evaluate_control_method, PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PEP_ACPI_EVALUATE_CONTROL_METHOD, *PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PPEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD, PPEP_ACPI_EVALUATE_CONTROL_METHOD structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -134,20 +134,18 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
 <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
 
  
 

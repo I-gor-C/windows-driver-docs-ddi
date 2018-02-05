@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07B51679-4E9B-4360-AA4A-D5BD9BADB4FC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_DU_GENERIC, DXGK_DU_AR, _DXGK_DISPLAY_USAGE, display.dxgk_display_usage, *PDXGK_DISPLAY_USAGE, d3dkmdt/DXGK_DU_INVALID, d3dkmdt/DXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE, DXGK_DU_INVALID, PDXGK_DISPLAY_USAGE enumeration pointer [Display Devices], d3dkmdt/DXGK_DU_AR, PDXGK_DISPLAY_USAGE, DXGK_DISPLAY_USAGE enumeration [Display Devices], d3dkmdt/PDXGK_DISPLAY_USAGE, d3dkmdt/DXGK_DU_VR, DXGK_DU_VR, d3dkmdt/DXGK_DU_GENERIC
+ms.keywords : DXGK_DISPLAY_USAGE, d3dkmdt/DXGK_DU_AR, PDXGK_DISPLAY_USAGE, _DXGK_DISPLAY_USAGE, DXGK_DU_INVALID, d3dkmdt/DXGK_DISPLAY_USAGE, DXGK_DU_VR, DXGK_DISPLAY_USAGE enumeration [Display Devices], d3dkmdt/PDXGK_DISPLAY_USAGE, d3dkmdt/DXGK_DU_INVALID, DXGK_DU_GENERIC, *PDXGK_DISPLAY_USAGE, DXGK_DU_AR, display.dxgk_display_usage, d3dkmdt/DXGK_DU_VR, d3dkmdt/DXGK_DU_GENERIC, PDXGK_DISPLAY_USAGE enumeration pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -90,7 +90,4 @@ typedef enum _DXGK_DISPLAY_USAGE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h |

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : CB0DD6C8-DFB3-42E0-B38F-341677A72E29
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportAudioEngineNode::GetMixFormat, IMiniportAudioEngineNode::GetMixFormat, audio.iminiportaudioenginenode_getmixformat, IMiniportAudioEngineNode interface [Audio Devices], GetMixFormat method, IMiniportAudioEngineNode, GetMixFormat method [Audio Devices], GetMixFormat method [Audio Devices], IMiniportAudioEngineNode interface, GetMixFormat
+ms.keywords : IMiniportAudioEngineNode::GetMixFormat, GetMixFormat, audio.iminiportaudioenginenode_getmixformat, GetMixFormat method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetMixFormat, IMiniportAudioEngineNode interface [Audio Devices], GetMixFormat method, IMiniportAudioEngineNode, GetMixFormat method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -75,20 +75,16 @@ The data buffer size.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
-
 <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
+
+<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
 
  
 

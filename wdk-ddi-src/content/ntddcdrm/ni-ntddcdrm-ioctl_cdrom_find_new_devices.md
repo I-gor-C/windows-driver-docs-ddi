@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWRITE_ROTATION, WRITE_ROTATION"
+req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_FIND_NEW_DEVICES IOCTL
@@ -71,6 +71,4 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdrm.h (include TBD) |
-| **IRQL** |  |

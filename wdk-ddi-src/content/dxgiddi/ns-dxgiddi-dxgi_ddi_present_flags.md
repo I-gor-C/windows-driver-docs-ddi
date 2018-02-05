@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 87f3b66a-0fcb-4325-ae23-7f89d6b389e6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_75234d4d-acce-4f1f-804c-f7128d885c2f.xml, dxgiddi/DXGI_DDI_PRESENT_FLAGS, display.dxgi_ddi_present_flags, DXGI_DDI_PRESENT_FLAGS, DXGI_DDI_PRESENT_FLAGS structure [Display Devices]
+ms.keywords : DXGI_DDI_PRESENT_FLAGS, dxgiddi/DXGI_DDI_PRESENT_FLAGS, DXGI_DDI_PRESENT_FLAGS structure [Display Devices], display.dxgi_ddi_present_flags, UMDisplayDriver_Dx10param_Structs_75234d4d-acce-4f1f-804c-f7128d885c2f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,16 +64,14 @@ typedef struct DXGI_DDI_PRESENT_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_present.md">DXGI_DDI_ARG_PRESENT</a>
 
  
 

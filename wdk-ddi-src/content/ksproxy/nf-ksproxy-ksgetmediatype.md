@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4b7aac38-ab29-4cac-a7f0-896423b17400
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetMediaType, ksproxy/KsGetMediaType, stream.ksgetmediatype, ksproxy_6472bffc-0280-4954-80f5-7e2ae2b2f49b.xml, KsGetMediaType function [Streaming Media Devices]
+ms.keywords : ksproxy/KsGetMediaType, KsGetMediaType function [Streaming Media Devices], KsGetMediaType, stream.ksgetmediatype, ksproxy_6472bffc-0280-4954-80f5-7e2ae2b2f49b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,9 @@ For more information about AM_MEDIA_TYPE, see the Microsoft Windows SDK document
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ksproxy.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f44a57e9-4536-46a7-a80e-d4bbbb2a9ad5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/REENUMERATE_SELF_INTERFACE_STANDARD, REENUMERATE_SELF_INTERFACE_STANDARD, drvr_interface_6e913216-4d26-4c59-b040-854f5aac2a9a.xml, PREENUMERATE_SELF_INTERFACE_STANDARD structure pointer [Kernel-Mode Driver Architecture], PREENUMERATE_SELF_INTERFACE_STANDARD, _REENUMERATE_SELF_INTERFACE_STANDARD, *PREENUMERATE_SELF_INTERFACE_STANDARD, REENUMERATE_SELF_INTERFACE_STANDARD structure [Kernel-Mode Driver Architecture], kernel.reenumerate_self_interface_standard, wdm/PREENUMERATE_SELF_INTERFACE_STANDARD
+ms.keywords : wdm/REENUMERATE_SELF_INTERFACE_STANDARD, PREENUMERATE_SELF_INTERFACE_STANDARD, *PREENUMERATE_SELF_INTERFACE_STANDARD, drvr_interface_6e913216-4d26-4c59-b040-854f5aac2a9a.xml, PREENUMERATE_SELF_INTERFACE_STANDARD structure pointer [Kernel-Mode Driver Architecture], _REENUMERATE_SELF_INTERFACE_STANDARD, wdm/PREENUMERATE_SELF_INTERFACE_STANDARD, REENUMERATE_SELF_INTERFACE_STANDARD structure [Kernel-Mode Driver Architecture], REENUMERATE_SELF_INTERFACE_STANDARD, kernel.reenumerate_self_interface_standard
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,16 +89,10 @@ The <b>REENUMERATE_SELF_INTERFACE_STANDARD</b> structure is an extension of the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
-
-<a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560837">ReenumerateSelf</a>
 
@@ -107,6 +101,10 @@ The <b>REENUMERATE_SELF_INTERFACE_STANDARD</b> structure is an extension of the 
 <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546570">GUID_REENUMERATE_SELF_INTERFACE_STANDARD</a>
+
+<a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
 
  
 

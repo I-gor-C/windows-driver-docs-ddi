@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d6631aa7-e3ba-4768-a55a-6a66d1ee84c6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisGroupActiveProcessorCount, NdisGroupActiveProcessorCount, netvista.ndisgroupactiveprocessorcount, NdisGroupActiveProcessorCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_43adb4cc-e1a6-4a67-ada7-47b38078e357.xml
+ms.keywords : NdisGroupActiveProcessorCount, ndis/NdisGroupActiveProcessorCount, ndis_processor_group_ref_43adb4cc-e1a6-4a67-ada7-47b38078e357.xml, netvista.ndisgroupactiveprocessorcount, NdisGroupActiveProcessorCount function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,45 +75,42 @@ An NDIS driver might call the
     <b>NdisGroupActiveProcessorCount</b> function during initialization before it allocates resources.
 
 The processor count that 
-    <mshelp:link keywords="netvista.ndisgroupactiveprocessormask" tabindex="0"><b>
-    NdisGroupActiveProcessorMask</b></mshelp:link> returns can change at runtime on SKUs that support hot-add
+    <a href="..\ndis\nf-ndis-ndisgroupactiveprocessormask.md">
+    NdisGroupActiveProcessorMask</a> returns can change at runtime on SKUs that support hot-add
     functionality for CPUs.
 <div class="alert"><b>Note</b>  NDIS drivers should not use the 
     <a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a> function
     to retrieve the number of processors that are currently active. Also, NDIS 6.20 drivers should not use
     the 
-    <mshelp:link keywords="netvista.ndissystemactiveprocessorcount" tabindex="0"><b>
-    NdisSystemActiveProcessorCount</b></mshelp:link> function because it only returns the processor count and provides
+    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
+    NdisSystemActiveProcessorCount</a> function because it only returns the processor count and provides
     the affinity mask as an out parameter, for processor group 0.</div><div> </div>To obtain an active affinity mask, call the 
-    <mshelp:link keywords="netvista.ndisgroupactiveprocessormask" tabindex="0"><b>
-    NdisGroupActiveProcessorMask</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisgroupactiveprocessormask.md">
+    NdisGroupActiveProcessorMask</a> function.
 
 To obtain the maximum number of processors in a group, call the 
-    <mshelp:link keywords="netvista.ndisgroupmaxprocessorcount" tabindex="0"><b>
-    NdisGroupMaxProcessorCount</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">
+    NdisGroupMaxProcessorCount</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ndis\nf-ndis-ndisgroupmaxprocessorcount.md">NdisGroupMaxProcessorCount</a>
 
-<mshelp:link keywords="netvista.ndissystemactiveprocessorcount" tabindex="0"><b>
-   NdisSystemActiveProcessorCount</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a>
+<a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
+   NdisSystemActiveProcessorCount</a>
 
 <a href="..\ndis\nf-ndis-ndisgroupactiveprocessormask.md">NdisGroupActiveProcessorMask</a>
+
+<a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a>
 
  
 

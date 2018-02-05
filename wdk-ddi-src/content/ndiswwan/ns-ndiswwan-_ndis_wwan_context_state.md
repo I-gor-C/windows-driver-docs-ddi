@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7918ee03-c1cb-4a38-8773-4a01832357d2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_CONTEXT_STATE, netvista.ndis_wwan_context_state, WwanRef_87098fc7-4dbd-4331-81a4-53d425cc0bb0.xml, ndiswwan/PNDIS_WWAN_CONTEXT_STATE, _NDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE, PNDIS_WWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_CONTEXT_STATE
+ms.keywords : ndiswwan/NDIS_WWAN_CONTEXT_STATE, netvista.ndis_wwan_context_state, PNDIS_WWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE, ndiswwan/PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE, PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_87098fc7-4dbd-4331-81a4-53d425cc0bb0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE"
+req.typenames : NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE
 ---
 
 # _NDIS_WWAN_CONTEXT_STATE structure
@@ -308,16 +308,14 @@ The operation failed because the context identified by
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
 
  
 

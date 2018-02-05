@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : feb5e4cf-7e23-434e-9dc5-bb445a6f5606
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatetimerobject, ndis/NdisAllocateTimerObject, NdisAllocateTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_38e524b5-9210-4c60-b9ea-66fc23593dad.xml, NdisAllocateTimerObject
+ms.keywords : netvista.ndisallocatetimerobject, NdisAllocateTimerObject, ndis_timer_ref_38e524b5-9210-4c60-b9ea-66fc23593dad.xml, ndis/NdisAllocateTimerObject, NdisAllocateTimerObject function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,8 +65,8 @@ An NDIS handle that was obtained during caller initialization. For more informat
 `TimerCharacteristics`
 
 A pointer to a caller-supplied 
-     <mshelp:link keywords="netvista.ndis_timer_characteristics" tabindex="0"><b>
-     NDIS_TIMER_CHARACTERISTICS</b></mshelp:link> structure that specifies the characteristics of the allocated timer
+     <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">
+     NDIS_TIMER_CHARACTERISTICS</a> structure that specifies the characteristics of the allocated timer
      object.
 
 `pTimerObject`
@@ -152,24 +152,22 @@ To free a timer object, you must call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Timer_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
-
 <a href="..\ndis\nf-ndis-ndisfreetimerobject.md">NdisFreeTimerObject</a>
+
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 
 <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
 
-<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 
  
 

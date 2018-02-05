@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 995e86dc-fc26-4903-bc21-45475cb4e2bc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.fwpscompleteclassify0, wfp_ref_2_funct_3_fwps_C_32709694-e6b8-41b8-90ea-4c8ef187ab6f.xml, FwpsCompleteClassify0, fwpsk/FwpsCompleteClassify0, FwpsCompleteClassify0 function [Network Drivers Starting with Windows Vista]
+ms.keywords : fwpsk/FwpsCompleteClassify0, FwpsCompleteClassify0, netvista.fwpscompleteclassify0, FwpsCompleteClassify0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_C_32709694-e6b8-41b8-90ea-4c8ef187ab6f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,8 +64,8 @@ void NTAPI FwpsCompleteClassify0(
 
 The classification handle that identifies the callout driver's processing at the current layer.
      This handle is obtained by calling 
-     <mshelp:link keywords="netvista.fwpsacquireclassifyhandle0" tabindex="0"><b>
-     FwpsAcquireClassifyHandle0</b></mshelp:link>.
+     <a href="..\fwpsk\nf-fwpsk-fwpsacquireclassifyhandle0.md">
+     FwpsAcquireClassifyHandle0</a>.
 
 `flags`
 
@@ -102,22 +102,19 @@ After calling this function,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpspendclassify0.md">FwpsPendClassify0</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsacquireclassifyhandle0.md">FwpsAcquireClassifyHandle0</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a>
 

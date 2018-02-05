@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3E201A6D-3A5B-4A6B-8AED-258A96BBF869
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wditypes/WDI_SCAN_TRIGGER_ROAM, WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER_BACKGROUND, netvista.wdi_scan_trigger, wditypes/WDI_SCAN_TRIGGER_CONNECT, wditypes/WDI_SCAN_TRIGGER_ANQP_QUERY, WDI_SCAN_TRIGGER_FAST_ROAM, wditypes/WDI_SCAN_TRIGGER_BACKGROUND, WDI_SCAN_TRIGGER_CONNECT, wditypes/WDI_SCAN_TRIGGER_FAST_ROAM, WDI_SCAN_TRIGGER_MANUAL, wditypes/WDI_SCAN_TRIGGER_MANUAL, wditypes/WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER_ROAM, netvista.wifi_scan_trigger, _WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER_ANQP_QUERY, WDI_SCAN_TRIGGER enumeration [Device and Driver Installation]
+ms.keywords : wditypes/WDI_SCAN_TRIGGER_CONNECT, WDI_SCAN_TRIGGER enumeration [Device and Driver Installation], wditypes/WDI_SCAN_TRIGGER_ROAM, wditypes/WDI_SCAN_TRIGGER_ANQP_QUERY, WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER_ROAM, WDI_SCAN_TRIGGER_FAST_ROAM, netvista.wifi_scan_trigger, WDI_SCAN_TRIGGER_ANQP_QUERY, wditypes/WDI_SCAN_TRIGGER_BACKGROUND, wditypes/WDI_SCAN_TRIGGER_FAST_ROAM, wditypes/WDI_SCAN_TRIGGER_MANUAL, WDI_SCAN_TRIGGER_CONNECT, _WDI_SCAN_TRIGGER, netvista.wdi_scan_trigger, WDI_SCAN_TRIGGER_MANUAL, wditypes/WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER_BACKGROUND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -93,7 +93,5 @@ typedef enum _WDI_SCAN_TRIGGER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

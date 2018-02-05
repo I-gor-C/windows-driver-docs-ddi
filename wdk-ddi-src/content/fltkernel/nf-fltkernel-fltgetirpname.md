@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d4087825-cdfd-4de5-a5b7-f95f6f0563e6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetIrpName routine [Installable File System Drivers], FltApiRef_e_to_o_35d2b6e8-d233-4c6e-a27a-6a5770f5f5d0.xml, FltGetIrpName, fltkernel/FltGetIrpName, ifsk.fltgetirpname
+ms.keywords : FltGetIrpName routine [Installable File System Drivers], ifsk.fltgetirpname, fltkernel/FltGetIrpName, FltGetIrpName, FltApiRef_e_to_o_35d2b6e8-d233-4c6e-a27a-6a5770f5f5d0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ The value of the <i>IrpMajorCode</i> parameter can equal to the value of the <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

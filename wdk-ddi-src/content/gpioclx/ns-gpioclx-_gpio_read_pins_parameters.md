@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : D04C836E-C440-4AB9-BB44-7D1E8E0F681D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PGPIO_READ_PINS_PARAMETERS, GPIO_READ_PINS_PARAMETERS structure [Parallel Ports], GPIO_READ_PINS_PARAMETERS, gpioclx/PGPIO_READ_PINS_PARAMETERS, GPIO.gpio_read_pins_parameters, gpioclx/GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS structure pointer [Parallel Ports], *PGPIO_READ_PINS_PARAMETERS, _GPIO_READ_PINS_PARAMETERS
+ms.keywords : gpioclx/GPIO_READ_PINS_PARAMETERS, gpioclx/PGPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS, GPIO.gpio_read_pins_parameters, GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS, _GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_READ_PINS_PARAMETERS structure [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,18 +86,16 @@ The <i>ReadParameters</i> parameter of the <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439404">CLIENT_ReadGpioPins</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
 
  
 

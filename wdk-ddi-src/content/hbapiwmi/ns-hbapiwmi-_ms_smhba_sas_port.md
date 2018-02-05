@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d294d97a-e6b2-4ab3-bebf-e545aa2f862d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ms_smhba_sas_port, hbapiwmi/MS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port structure pointer [Storage Devices], PMS_SMHBA_SAS_Port, _MS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port structure [Storage Devices], hbapiwmi/PMS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port, structs-Fibre_c7678d06-756a-4733-bdff-35571ff2c571.xml, MS_SMHBA_SAS_Port
+ms.keywords : "_MS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port, hbapiwmi/PMS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port structure pointer [Storage Devices], storage.ms_smhba_sas_port, structs-Fibre_c7678d06-756a-4733-bdff-35571ff2c571.xml, *PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port structure [Storage Devices], hbapiwmi/MS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ The protocols that are supported by this SAS port.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7a6b21f1-37e3-4f73-a826-4629624ac5a9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExInitializePagedLookasideList, kernel.exinitializepagedlookasidelist, k102_7044b56d-db76-4021-8d76-b4f157e2d783.xml, wdm/ExInitializePagedLookasideList, ExInitializePagedLookasideList routine [Kernel-Mode Driver Architecture]
+ms.keywords : ExInitializePagedLookasideList routine [Kernel-Mode Driver Architecture], ExInitializePagedLookasideList, k102_7044b56d-db76-4021-8d76-b4f157e2d783.xml, wdm/ExInitializePagedLookasideList, kernel.exinitializepagedlookasidelist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -157,7 +157,7 @@ Zero-initializes the counters to be maintained for entries.
 
 </li>
 <li>
-Stores the entry points of the caller-supplied <b><i>Xxx</i>Allocate</b> and <b><i>Xxx</i>Free</b> routines, if any, or sets these entry points to <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>, respectively.
+Stores the entry points of the caller-supplied <b><i>Xxx</i>Allocate</b> and <b><i>Xxx</i>Free</b> routines, if any, or sets these entry points to <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> and <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>, respectively.
 
 </li>
 <li>
@@ -191,34 +191,33 @@ Starting with Windows Vista, a similar routine, <a href="..\wdm\nf-wdm-exinitia
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exdeletepagedlookasidelist.md">ExDeletePagedLookasideList</a>
+<a href="..\wdm\nf-wdm-exfreetopagedlookasidelist.md">ExFreeToPagedLookasideList</a>
 
 <a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
 
+<a href="..\wdm\nf-wdm-exallocatefrompagedlookasidelist.md">ExAllocateFromPagedLookasideList</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\wdm\nf-wdm-exdeletepagedlookasidelist.md">ExDeletePagedLookasideList</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
 
 <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
-
-<a href="..\wdm\nf-wdm-exfreetopagedlookasidelist.md">ExFreeToPagedLookasideList</a>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-
-<a href="..\wdm\nf-wdm-exallocatefrompagedlookasidelist.md">ExAllocateFromPagedLookasideList</a>
-
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
 
  
 

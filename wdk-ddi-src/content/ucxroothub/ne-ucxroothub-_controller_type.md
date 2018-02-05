@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E7DFBFFA-C65B-4757-8DB8-202760D6D3C6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CONTROLLER_TYPE, ucxroothub/_CONTROLLER_TYPE, ucxroothub/ControllerTypeXhci, _CONTROLLER_TYPE, ControllerTypeSoftXhci, _CONTROLLER_TYPE enumeration [Buses], buses._controller_type, ControllerTypeXhci, ucxroothub/ControllerTypeSoftXhci
+ms.keywords : ucxroothub/_CONTROLLER_TYPE, buses._controller_type, _CONTROLLER_TYPE, ucxroothub/ControllerTypeSoftXhci, _CONTROLLER_TYPE enumeration [Buses], ControllerTypeSoftXhci, ControllerTypeXhci, CONTROLLER_TYPE, ucxroothub/ControllerTypeXhci
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,9 +69,6 @@ typedef enum _CONTROLLER_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxroothub.h (include Ucxclass.h) |
 
 ## See Also

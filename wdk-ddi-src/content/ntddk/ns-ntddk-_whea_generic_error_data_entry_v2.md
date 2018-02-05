@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 86834d99-34bd-487a-bbd4-4c0143d849a0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_GENERIC_ERROR_DATA_ENTRY, PWHEA_GENERIC_ERROR_DATA_ENTRY structure pointer [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_DATA_ENTRY structure [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_DATA_ENTRY, ntddk/PWHEA_GENERIC_ERROR_DATA_ENTRY, whearef_9e532654-fd5a-4936-8465-f9d6f9eafad2.xml, _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, whea.whea_generic_error_data_entry, PWHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY
+ms.keywords : WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY structure [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_DATA_ENTRY, _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, whea.whea_generic_error_data_entry, PWHEA_GENERIC_ERROR_DATA_ENTRY structure pointer [WHEA Drivers and Applications], *PWHEA_GENERIC_ERROR_DATA_ENTRY, PWHEA_GENERIC_ERROR_DATA_ENTRY, ntddk/WHEA_GENERIC_ERROR_DATA_ENTRY, whearef_9e532654-fd5a-4936-8465-f9d6f9eafad2.xml, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, ntddk/PWHEA_GENERIC_ERROR_DATA_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_GENERIC_ERROR_DATA_ENTRY, WHEA_GENERIC_ERROR_DATA_ENTRY, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2"
+req.typenames : "*PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY"
 ---
 
 # _WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure
@@ -128,16 +128,6 @@ A GUID that identifies the type of error data that is contained in the error dat
 For error data sections that do not conform to one of the standard section types, this member contains a platform-specific GUID that identifies the type of error data that is contained in the error data section. If a platform-specific GUID is not defined for the type of error data that is contained in the error data section, this member contains GENERIC_SECTION_GUID.
 
 
-#### WHEA_PACKET_SECTION_GUID
-
-The error data section contains the hardware error packet that was passed to the operating system by the low-level hardware error handler (LLHEH) that reported the error. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.
-
-
-#### PROCESSOR_GENERIC_ERROR_SECTION_GUID
-
-The error data section contains processor error data that is not specific to a particular processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
-
-
 #### FIRMWARE_ERROR_RECORD_REFERENCE_GUID
 
 The error data section contains a reference to a firmware error record that is specific to the Itanium processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_firmware_error_record_reference.md">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a> structure.
@@ -168,6 +158,16 @@ The error data section contains PCI Express (PCIe) error data. This data is desc
 The error data section contains PCI/PCI-X bus error data. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a> structure.
 
 The error data section contains PCI/PCI-X device error data. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.
+
+
+#### PROCESSOR_GENERIC_ERROR_SECTION_GUID
+
+The error data section contains processor error data that is not specific to a particular processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
+
+
+#### WHEA_PACKET_SECTION_GUID
+
+The error data section contains the hardware error packet that was passed to the operating system by the low-level hardware error handler (LLHEH) that reported the error. This data is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.
 
 
 #### XPF_PROCESSOR_ERROR_SECTION_GUID
@@ -202,16 +202,14 @@ The <b>Data</b> member of the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
 
  
 

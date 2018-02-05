@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 70f90cfd-9828-41a6-a7f9-6b0033e46b74
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFREQUESTSTOPACKNOWLEDGE, WdfRequestStopAcknowledge method, WdfRequestStopAcknowledge, wdfrequest/WdfRequestStopAcknowledge, wdf.wdfrequeststopacknowledge, DFRequestObjectRef_14594eba-ca7f-433b-9fd4-717053a09158.xml, kmdf.wdfrequeststopacknowledge
+ms.keywords : WdfRequestStopAcknowledge, kmdf.wdfrequeststopacknowledge, DFRequestObjectRef_14594eba-ca7f-433b-9fd4-717053a09158.xml, PFN_WDFREQUESTSTOPACKNOWLEDGE, wdf.wdfrequeststopacknowledge, WdfRequestStopAcknowledge method, wdfrequest/WdfRequestStopAcknowledge
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,12 +114,11 @@ For more information about the <b>WdfRequestStopAcknowledge</b> method, see <a h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DeferredRequestCompleted, DriverCreate, EvtIoStopCancel, EvtIoStopCompleteOrStopAck, EvtIoStopResume, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal, StopAckWithinEvtIoStop |
 

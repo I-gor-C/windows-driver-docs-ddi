@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7628c68b-b851-4b41-a86b-aa54e7cd6ddf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_PORTATTRIBUTES structure [Storage Devices], PHBA_PORTATTRIBUTES structure pointer [Storage Devices], *PHBA_PORTATTRIBUTES, PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES, structs-Fibre_86dd88a9-06cc-4e24-a665-f4fa240795fb.xml, hbaapi/HBA_PortAttributes, hbaapi/PHBA_PORTATTRIBUTES, HBA_PortAttributes, HBA_PortAttributes structure [Storage Devices], storage.hba_portattributes
+ms.keywords : storage.hba_portattributes, PHBA_PORTATTRIBUTES structure pointer [Storage Devices], HBA_PORTATTRIBUTES structure [Storage Devices], HBA_PortAttributes structure [Storage Devices], HBA_PortAttributes, *PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES, hbaapi/PHBA_PORTATTRIBUTES, PHBA_PORTATTRIBUTES, hbaapi/HBA_PortAttributes, structs-Fibre_86dd88a9-06cc-4e24-a665-f4fa240795fb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES"
+req.typenames : HBA_PORTATTRIBUTES, *PHBA_PORTATTRIBUTES
 ---
 
 # HBA_PortAttributes structure
@@ -399,16 +399,13 @@ The HBA_PortAttributes structure serves a purpose very similar to the MSFC_HBAPo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_getportattributesbywwn.md">HBA_GetPortAttributesByWWN</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a>
+
+<a href="..\hbaapi\nf-hbaapi-hba_getportattributesbywwn.md">HBA_GetPortAttributesByWWN</a>
 
  
 

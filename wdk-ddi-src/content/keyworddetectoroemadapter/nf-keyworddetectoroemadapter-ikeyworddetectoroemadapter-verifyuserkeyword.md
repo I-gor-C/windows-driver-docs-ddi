@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : AFF679B6-B389-4EA2-8834-9B1B47412B7D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : keyworddetectoroemadapter/IKeywordDetectorOemAdapter::VerifyUserKeyword, audio.ikeyworddetectoroemadapter_verifyuserkeyword, IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter interface [Audio Devices], VerifyUserKeyword method, VerifyUserKeyword method [Audio Devices], VerifyUserKeyword
+ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], VerifyUserKeyword method, VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter::VerifyUserKeyword, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword, VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter interface, audio.ikeyworddetectoroemadapter_verifyuserkeyword
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -178,14 +178,10 @@ Note that audio is processed in a unique way for voice activation training. The 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | keyworddetectoroemadapter.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | keyworddetectoroemadapter.h |
 
 ## See Also
 

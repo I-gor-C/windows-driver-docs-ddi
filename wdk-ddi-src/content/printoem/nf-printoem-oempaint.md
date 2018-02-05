@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4054c805-5307-41f4-a7ff-65743ae4be69
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_rendering_c9624a47-02fd-4eba-80d9-4035713ac594.xml, printoem/OEMPaint, OEMPaint, OEMPaint function [Print Devices], print.oempaint
+ms.keywords : printoem/OEMPaint, OEMPaint, print_unidrv-pscript_rendering_c9624a47-02fd-4eba-80d9-4035713ac594.xml, print.oempaint, OEMPaint function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,11 +89,6 @@ If you call into the core driver, cast the call using the <b>PFN_DrvPaint</b> fu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

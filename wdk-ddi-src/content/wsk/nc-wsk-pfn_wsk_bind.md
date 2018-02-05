@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -81,8 +81,8 @@ This parameter is reserved for system use. A WSK application must set this param
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the bind operation
      asynchronously. For more information about using IRPs with WSK functions, see 
-     <mshelp:link keywords="netvista.using_irps_with_winsock_kernel_functions" tabindex="0">Using IRPs with Winsock
-     Kernel Functions</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
+     Kernel Functions</a>.
 
 
 ## Return Value
@@ -173,36 +173,32 @@ For a stream socket, calling the <b>WskBind</b> function binds the socket to the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.wsk_provider_connection_dispatch" tabindex="0"><b>
-   WSK_PROVIDER_CONNECTION_DISPATCH</b></mshelp:link>
-
-<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
-
-<mshelp:link keywords="netvista.wsk_provider_datagram_dispatch" tabindex="0"><b>
-   WSK_PROVIDER_DATAGRAM_DISPATCH</b></mshelp:link>
+<a href="..\wsk\ns-wsk-_wsk_provider_datagram_dispatch.md">
+   WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
+
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
+
+<a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
+   WSK_PROVIDER_CONNECTION_DISPATCH</a>
 
  
 

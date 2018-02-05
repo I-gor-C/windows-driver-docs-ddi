@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b7091dea-8a29-4ad3-a478-29bc28fd57ef
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetVirtualAddress, StorPortGetVirtualAddress, storprt_5245f704-dce0-4683-8510-064ccbb4158c.xml, storage.storportgetvirtualaddress, StorPortGetVirtualAddress routine [Storage Devices]
+ms.keywords : storport/StorPortGetVirtualAddress, storage.storportgetvirtualaddress, storprt_5245f704-dce0-4683-8510-064ccbb4158c.xml, StorPortGetVirtualAddress, StorPortGetVirtualAddress routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,14 +87,9 @@ The physical address must be an address that is obtained through a call to <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 7be90712-9f6f-4998-a8ca-148ff900c82c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_ERROR_SOURCE_STATE enumeration [WHEA Drivers and Applications], whea.whea_error_source_state, PWHEA_ERROR_SOURCE_STATE enumeration pointer [WHEA Drivers and Applications], whearef_c6edca73-b5ec-4473-bbe3-9ed5e48f017d.xml, WHEA_ERROR_SOURCE_STATE, WheaErrSrcStateStarted, PWHEA_ERROR_SOURCE_STATE, ntddk/WHEA_ERROR_SOURCE_STATE, *PWHEA_ERROR_SOURCE_STATE, _WHEA_ERROR_SOURCE_STATE, ntddk/WheaErrSrcStateStarted, ntddk/PWHEA_ERROR_SOURCE_STATE, WheaErrSrcStateStopped, ntddk/WheaErrSrcStateStopped
+ms.keywords : WHEA_ERROR_SOURCE_STATE enumeration [WHEA Drivers and Applications], whea.whea_error_source_state, _WHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE, ntddk/WHEA_ERROR_SOURCE_STATE, WheaErrSrcStateStopped, ntddk/WheaErrSrcStateStarted, WheaErrSrcStateStarted, ntddk/WheaErrSrcStateStopped, ntddk/PWHEA_ERROR_SOURCE_STATE, whearef_c6edca73-b5ec-4473-bbe3-9ed5e48f017d.xml, *PWHEA_ERROR_SOURCE_STATE, PWHEA_ERROR_SOURCE_STATE enumeration pointer [WHEA Drivers and Applications], PWHEA_ERROR_SOURCE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -71,9 +71,7 @@ The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOUR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

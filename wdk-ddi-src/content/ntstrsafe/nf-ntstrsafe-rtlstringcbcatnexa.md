@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 76842444-e733-4dee-b83b-db4ef22f697e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, ntstrsafe/RtlStringCbCatNExA, safestrings_9e639754-980b-4a6d-9760-b826a8e09351.xml, RtlStringCbCatNExW, STRSAFE_FILL_BEHIND_NULL, RtlStringCbCatNExA, kernel.rtlstringcbcatnex, ntstrsafe/RtlStringCbCatNExW, STRSAFE_FILL_ON_FAILURE, STRSAFE_NULL_ON_FAILURE, RtlStringCbCatNExW function [Kernel-Mode Driver Architecture], RtlStringCbCatNEx
+ms.keywords : safestrings_9e639754-980b-4a6d-9760-b826a8e09351.xml, STRSAFE_FILL_BEHIND_NULL, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, RtlStringCbCatNEx, ntstrsafe/RtlStringCbCatNExA, STRSAFE_NULL_ON_FAILURE, kernel.rtlstringcbcatnex, RtlStringCbCatNExW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatNExW, STRSAFE_FILL_ON_FAILURE, RtlStringCbCatNExW, RtlStringCbCatNExA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -264,22 +264,19 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexw.md">RtlStringCbCatEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnw.md">RtlStringCbCatN</a>
-
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>
 
  
 

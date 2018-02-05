@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4FBBEF08-3BDA-43B2-A05B-B6BFC2787FC6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_KERNEL_INFORMATION_STRUCT_V1, _PEP_KERNEL_INFORMATION_STRUCT_V1, pep_x/PEP_KERNEL_INFORMATION, *PPEP_KERNEL_INFORMATION_STRUCT_V1, *PPEP_KERNEL_INFORMATION, pep_x/PPEP_KERNEL_INFORMATION_STRUCT_V1, *PPEP_KERNEL_INFORMATION_STRUCT_V2, PEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION_STRUCT_V1 structure [Kernel-Mode Driver Architecture], _PEP_KERNEL_INFORMATION_STRUCT_V2, PEP_KERNEL_INFORMATION_STRUCT_V2, pep_x/PEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1 structure pointer [Kernel-Mode Driver Architecture], kernel.pep_kernel_information, PEP_KERNEL_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
+ms.keywords : "_PEP_KERNEL_INFORMATION_STRUCT_V2, PEP_KERNEL_INFORMATION_STRUCT_V1, *PPEP_KERNEL_INFORMATION_STRUCT_V2, kernel.pep_kernel_information, *PPEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PEP_KERNEL_INFORMATION_STRUCT_V1 structure [Kernel-Mode Driver Architecture], pep_x/PEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1, PEP_KERNEL_INFORMATION, *PPEP_KERNEL_INFORMATION_STRUCT_V1, pep_x/PEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION_STRUCT_V2, pep_x/PPEP_KERNEL_INFORMATION_STRUCT_V1, _PEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1 structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -102,38 +102,36 @@ The <b>KernelInformation</b> parameter to the <a href="..\pepfx\nf-pepfx-pofxreg
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h |
 
 ## See Also
 
-<a href="..\pepfx\nc-pepfx-pofxcallbackprocessoridleveto.md">ProcessorIdleVeto</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186629">CompleteWork</a>
 
 <a href="..\pepfx\nc-pepfx-pofxcallbackprocessorhalt.md">ProcessorHalt</a>
 
-<a href="..\pepfx\nc-pepfx-pofxcallbackplatformidleveto.md">PlatformIdleVeto</a>
-
 <a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
-
-<a href="..\pepfx\nc-pepfx-pofxcallbackcriticalresource.md">TransitionCriticalResource</a>
-
-<a href="..\pepfx\nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md">EnumerateUnmaskedInterrupts</a>
-
-<a href="..\pepfx\nc-pepfx-pofxcallbackupdateplatformidlestate.md">UpdatePlatformIdleState</a>
-
-<a href="..\pepfx\nc-pepfx-pofxcallbackrequestinterrupt.md">RequestInterrupt</a>
-
-<a href="..\pepfx\nc-pepfx-pofxcallbackrequestcommon.md">RequestCommon</a>
 
 <a href="..\pepfx\nf-pepfx-pofxregisterpluginex.md">PoFxRegisterPluginEx</a>
 
+<a href="..\pepfx\nc-pepfx-pofxcallbackupdateplatformidlestate.md">UpdatePlatformIdleState</a>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackrequestcommon.md">RequestCommon</a>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackcriticalresource.md">TransitionCriticalResource</a>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackrequestinterrupt.md">RequestInterrupt</a>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackprocessoridleveto.md">ProcessorIdleVeto</a>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackplatformidleveto.md">PlatformIdleVeto</a>
+
 <a href="..\pepfx\nc-pepfx-pofxcallbackupdateprocessoridlestate.md">UpdateProcessorIdleState</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186629">CompleteWork</a>
-
 <a href="..\pepfx\nc-pepfx-pofxcallbackrequestworker.md">RequestWorker</a>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md">EnumerateUnmaskedInterrupts</a>
 
  
 

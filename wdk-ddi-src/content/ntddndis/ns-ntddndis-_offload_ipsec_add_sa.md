@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 592d338c-8ab0-4163-bcfa-75c941b83c3d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : 216offload_12f95ec9-ed81-43cc-b90d-fe06600ec349.xml, OFFLOAD_IPSEC_ADD_SA, _OFFLOAD_IPSEC_ADD_SA, ntddndis/POFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], OFFLOAD_IPSEC_ADD_SA structure [Network Drivers Starting with Windows Vista], *POFFLOAD_IPSEC_ADD_SA, netvista.offload_ipsec_add_sa, POFFLOAD_IPSEC_ADD_SA, ntddndis/OFFLOAD_IPSEC_ADD_SA
+ms.keywords : OFFLOAD_IPSEC_ADD_SA, ntddndis/POFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA, netvista.offload_ipsec_add_sa, 216offload_12f95ec9-ed81-43cc-b90d-fe06600ec349.xml, _OFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA structure [Network Drivers Starting with Windows Vista], ntddndis/OFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_IPSEC_ADD_SA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*POFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA"
+req.typenames : OFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA
 ---
 
 # _OFFLOAD_IPSEC_ADD_SA structure
@@ -117,8 +117,8 @@ A variable-length array that contains keys for the SAs specified at
      (authentication) algorithm are specified by the 
      <b>ConfAlgo</b> and 
      <b>IntegrityAlgo</b> members of an 
-     <mshelp:link keywords="netvista.offload_security_association" tabindex="0"><b>
-     OFFLOAD_SECURITY_ASSOCIATION</b></mshelp:link> structure, the buffer at 
+     <a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">
+     OFFLOAD_SECURITY_ASSOCIATION</a> structure, the buffer at 
      <b>KeyMat</b> contains key information for the confirmation algorithm first, followed immediately by key
      information for the integrity algorithm.
      
@@ -134,8 +134,8 @@ The length of each key in the buffer at
 
 The number of elements in the 
      <b>SecAssoc</b> array. Each element in the array is an 
-     <mshelp:link keywords="netvista.offload_security_association" tabindex="0"><b>
-     OFFLOAD_SECURITY_ASSOCIATION</b></mshelp:link> structure.
+     <a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">
+     OFFLOAD_SECURITY_ASSOCIATION</a> structure.
 
 `OffloadHandle`
 
@@ -146,8 +146,8 @@ The handle to the newly created SA. The miniport driver supplies this handle bef
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a> structure before
      passing a send packet to the miniport driver. The TCP/IP transport must also specify this handle when
      deleting the SA with an 
-     <mshelp:link keywords="netvista.oid_tcp_task_ipsec_delete_sa" tabindex="0">
-     OID_TCP_TASK_IPSEC_DELETE_SA</mshelp:link> request.
+     <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">
+     OID_TCP_TASK_IPSEC_DELETE_SA</a> request.
 
 `Protocol`
 
@@ -198,22 +198,19 @@ The OFFLOAD_IPSEC_ADD_SA structure is used in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
 
 <a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">OID_TCP_TASK_IPSEC_DELETE_SA</a>
 
-<a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
+
+<a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 86ec1a98-d70f-437c-9c8b-005bf78375ba
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCchCopyNW, RtlStringCchCopyNW, RtlStringCchCopyN, safestrings_6ecbc673-80c3-4568-a6e3-96865035bfed.xml, RtlStringCchCopyNA, RtlStringCchCopyNW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchcopyn
+ms.keywords : RtlStringCchCopyNW, kernel.rtlstringcchcopyn, RtlStringCchCopyNA, safestrings_6ecbc673-80c3-4568-a6e3-96865035bfed.xml, RtlStringCchCopyNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCchCopyNW, RtlStringCchCopyN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -177,20 +177,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynexw.md">RtlStringCchCopyNEx</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynw.md">RtlStringCbCopyN</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynexw.md">RtlStringCchCopyNEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyw.md">RtlStringCchCopy</a>
 

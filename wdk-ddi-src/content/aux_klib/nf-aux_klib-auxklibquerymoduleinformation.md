@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5e267d53-4e92-4c94-8a59-93d3c79574dd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : aux_klib/AuxKlibQueryModuleInformation, AuxKlibQueryModuleInformation routine [Kernel-Mode Driver Architecture], kernel.auxklibquerymoduleinformation, aux_klib_555c5806-0b0d-48c1-9c50-b0496fb4e807.xml, AuxKlibQueryModuleInformation
+ms.keywords : aux_klib/AuxKlibQueryModuleInformation, kernel.auxklibquerymoduleinformation, aux_klib_555c5806-0b0d-48c1-9c50-b0496fb4e807.xml, AuxKlibQueryModuleInformation routine [Kernel-Mode Driver Architecture], AuxKlibQueryModuleInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,24 +98,20 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 2000. Supported starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | aux_klib.h (include Aux_klib.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Aux_Klib.lib |
 
 ## See Also
 
-<a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
+<a href="..\aux_klib\ns-aux_klib-_aux_module_extended_info.md">AUX_MODULE_EXTENDED_INFO</a>
 
 <a href="..\aux_klib\nf-aux_klib-auxklibgetimageexportdirectory.md">AuxKlibGetImageExportDirectory</a>
 
-<a href="..\aux_klib\ns-aux_klib-_aux_module_extended_info.md">AUX_MODULE_EXTENDED_INFO</a>
-
 <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+
+<a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
 
 <a href="..\aux_klib\ns-aux_klib-_aux_module_basic_info.md">AUX_MODULE_BASIC_INFO</a>
 

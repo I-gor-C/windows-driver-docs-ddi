@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d6cd676c-32ed-457f-84a3-999246eba0d8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rtlref_cfca6b3d-c505-464e-83fc-8bbff476e93d.xml, RtlReserveChunk function [Installable File System Drivers], ntifs/RtlReserveChunk, ifsk.rtlreservechunk, RtlReserveChunk
+ms.keywords : RtlReserveChunk function [Installable File System Drivers], ntifs/RtlReserveChunk, ifsk.rtlreservechunk, rtlref_cfca6b3d-c505-464e-83fc-8bbff476e93d.xml, RtlReserveChunk
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

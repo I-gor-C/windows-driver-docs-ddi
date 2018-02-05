@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DE95A3E9-3542-49EE-AA62-3430A6B2D7C7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_COORDINATED_DEPENDENCY_OPTION structure pointer [Kernel-Mode Driver Architecture], *PPEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION, PPEP_COORDINATED_DEPENDENCY_OPTION, kernel.pep_coordinated_dependency_option, PEP_COORDINATED_DEPENDENCY_OPTION structure [Kernel-Mode Driver Architecture], pepfx/PEP_COORDINATED_DEPENDENCY_OPTION, _PEP_COORDINATED_DEPENDENCY_OPTION, pepfx/PPEP_COORDINATED_DEPENDENCY_OPTION
+ms.keywords : PEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION structure [Kernel-Mode Driver Architecture], pepfx/PEP_COORDINATED_DEPENDENCY_OPTION, kernel.pep_coordinated_dependency_option, pepfx/PPEP_COORDINATED_DEPENDENCY_OPTION, PPEP_COORDINATED_DEPENDENCY_OPTION, *PPEP_COORDINATED_DEPENDENCY_OPTION, _PEP_COORDINATED_DEPENDENCY_OPTION, PPEP_COORDINATED_DEPENDENCY_OPTION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_COORDINATED_DEPENDENCY_OPTION, *PPEP_COORDINATED_DEPENDENCY_OPTION
+req.typenames : "*PPEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION"
 ---
 
 # _PEP_COORDINATED_DEPENDENCY_OPTION structure
@@ -77,16 +77,14 @@ The PEP must set <b>LooseDependency</b> to <b>TRUE</b> if the <b>ExpectedState</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_ppm_query_coordinated_dependency.md">PEP_PPM_QUERY_COORDINATED_DEPENDENCY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
 
  
 

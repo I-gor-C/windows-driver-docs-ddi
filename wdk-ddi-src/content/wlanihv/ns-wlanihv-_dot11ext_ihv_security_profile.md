@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cbfeace3-6492-4011-9ca8-c40ba4f47d22
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_7761c811-0068-48d5-8b46-da550a008a9c.xml, wlanihv/DOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE structure [Network Drivers Starting with Windows Vista], PDOT11EXT_IHV_SECURITY_PROFILE structure pointer [Network Drivers Starting with Windows Vista], DOT11EXT_IHV_SECURITY_PROFILE, PDOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE, netvista.dot11ext_ihv_security_profile, _DOT11EXT_IHV_SECURITY_PROFILE, wlanihv/PDOT11EXT_IHV_SECURITY_PROFILE
+ms.keywords : DOT11EXT_IHV_SECURITY_PROFILE, wlanihv/PDOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE structure [Network Drivers Starting with Windows Vista], PDOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE, netvista.dot11ext_ihv_security_profile, Native_802.11_data_types_7761c811-0068-48d5-8b46-da550a008a9c.xml, wlanihv/DOT11EXT_IHV_SECURITY_PROFILE, _DOT11EXT_IHV_SECURITY_PROFILE, PDOT11EXT_IHV_SECURITY_PROFILE structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE
+req.typenames : "*PDOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE"
 req.product : Windows 10 or later.
 ---
 
@@ -66,7 +66,5 @@ A pointer to the string that defines the IHV security profile.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlanihv.h (include Wlanihv.h) |

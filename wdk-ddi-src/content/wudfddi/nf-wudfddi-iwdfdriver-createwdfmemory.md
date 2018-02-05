@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2ea754db-3bed-48d9-825f-7ee7b5e169b7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDriver::CreateWdfMemory, IWDFDriver interface, CreateWdfMemory method, wudfddi/IWDFDriver::CreateWdfMemory, CreateWdfMemory, umdf.iwdfdriver_createwdfmemory, CreateWdfMemory method, IWDFDriver interface, IWDFDriver, wdf.iwdfdriver_createwdfmemory, UMDFDriverObjectRef_903775e8-0752-435b-96d9-fa1317f63289.xml, CreateWdfMemory method
+ms.keywords : UMDFDriverObjectRef_903775e8-0752-435b-96d9-fa1317f63289.xml, CreateWdfMemory method, umdf.iwdfdriver_createwdfmemory, IWDFDriver, IWDFDriver::CreateWdfMemory, CreateWdfMemory, CreateWdfMemory method, IWDFDriver interface, IWDFDriver interface, CreateWdfMemory method, wudfddi/IWDFDriver::CreateWdfMemory, wdf.iwdfdriver_createwdfmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -92,22 +92,16 @@ A UMDF driver cannot create a memory object with a zero-specified size buffer. I
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559233">IWDFIoTarget::FormatRequestForRead</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
 
 <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
 
@@ -115,7 +109,11 @@ A UMDF driver cannot create a memory object with a zero-specified size buffer. I
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
 
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
 
  
 

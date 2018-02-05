@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5E1CE999-8173-49B6-8CF7-F3A5B193A230
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortQueryDepthSList routine [Storage Devices], storage.storportquerydepthslist, StorPortQueryDepthSList, storport/StorPortQueryDepthSList
+ms.keywords : storport/StorPortQueryDepthSList, storage.storportquerydepthslist, StorPortQueryDepthSList routine [Storage Devices], StorPortQueryDepthSList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,24 +118,21 @@ Since <b>StorPortQueryDepthSList</b> is not interlocked, the list  depth value p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
 
 <a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
 
 <a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
 
 <a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
+
+<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
 
  
 

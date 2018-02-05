@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 21a2f593-716a-434a-922c-23544ddb0122
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtTailAdvanceFailure, ClfsMgmtTailAdvanceFailure routine [Kernel-Mode Driver Architecture], Clfs_management_6512b59a-78e2-4b01-ba4f-00b099c2c53f.xml, wdm/ClfsMgmtTailAdvanceFailure, kernel.clfsmgmttailadvancefailure
+ms.keywords : ClfsMgmtTailAdvanceFailure, ClfsMgmtTailAdvanceFailure routine [Kernel-Mode Driver Architecture], kernel.clfsmgmttailadvancefailure, wdm/ClfsMgmtTailAdvanceFailure, Clfs_management_6512b59a-78e2-4b01-ba4f-00b099c2c53f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,14 +115,12 @@ The value of the <i>Reason</i> parameter is passed back to the client as the val
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

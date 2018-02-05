@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f60cd2cf-23b6-4fed-8548-d0483fb17fe1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmdt_vidpn_present_path_rotation_support, _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, DmStructs_a078867c-e6a4-4bbf-afb6-244b210a5671.xml, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure [Display Devices], d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
+ms.keywords : display.d3dkmdt_vidpn_present_path_rotation_support, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, DmStructs_a078867c-e6a4-4bbf-afb6-244b210a5671.xml, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure [Display Devices], _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,7 +107,5 @@ The <b>RotationSupport</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |

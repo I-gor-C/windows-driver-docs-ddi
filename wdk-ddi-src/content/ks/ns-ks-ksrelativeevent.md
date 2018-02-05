@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KSRELATIVEEVENT, KSRELATIVEEVENT structure [Streaming Media Devices], stream.ksrelativeevent, ks-struct_d79f6a15-6e44-4d81-b4f1-c113cbc2ee79.xml, KSRELATIVEEVENT
+ms.keywords : ks/KSRELATIVEEVENT, KSRELATIVEEVENT, KSRELATIVEEVENT structure [Streaming Media Devices], ks-struct_d79f6a15-6e44-4d81-b4f1-c113cbc2ee79.xml, stream.ksrelativeevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,7 +83,4 @@ Specifies the inclusive size of the structure, including any event specific data
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

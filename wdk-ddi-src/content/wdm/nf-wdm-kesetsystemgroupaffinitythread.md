@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8ccc097d-f997-43c1-a068-f2f532afa0d6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetSystemGroupAffinityThread routine [Kernel-Mode Driver Architecture], kernel.kesetsystemgroupaffinitythread, k105_3930c7d1-9295-4f62-867e-5e68729c45f3.xml, wdm/KeSetSystemGroupAffinityThread, KeSetSystemGroupAffinityThread
+ms.keywords : KeSetSystemGroupAffinityThread, wdm/KeSetSystemGroupAffinityThread, kernel.kesetsystemgroupaffinitythread, k105_3930c7d1-9295-4f62-867e-5e68729c45f3.xml, KeSetSystemGroupAffinityThread routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,22 +114,21 @@ If <b>KeSetSystemGroupAffinityThread</b> is called at IRQL &lt;= APC_LEVEL and t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Wdm.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)." |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>
+<a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a>
 
 <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a>
 
-<a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a>
+<a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>
 
  
 

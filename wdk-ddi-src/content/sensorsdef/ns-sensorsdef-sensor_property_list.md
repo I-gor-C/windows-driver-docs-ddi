@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 03E03BB9-95DB-49C0-AF14-FFF1998C98A7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSENSOR_PROPERTY_LIST structure pointer [Sensor Devices], sensorsdef/SENSOR_PROPERTY_LIST, PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST, sensors.sensor_property_list, *PSENSOR_PROPERTY_LIST, sensorsdef/PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST structure [Sensor Devices]
+ms.keywords : PSENSOR_PROPERTY_LIST structure pointer [Sensor Devices], *PSENSOR_PROPERTY_LIST, PSENSOR_PROPERTY_LIST, sensorsdef/PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST structure [Sensor Devices], sensors.sensor_property_list, SENSOR_PROPERTY_LIST, sensorsdef/SENSOR_PROPERTY_LIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SENSOR_PROPERTY_LIST, *PSENSOR_PROPERTY_LIST
+req.typenames : "*PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST"
 req.product : Windows 10 or later.
 ---
 
@@ -85,7 +85,5 @@ The SENSOR_COLLECTION_LIST structure works with the following helper functions:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | sensorsdef.h |

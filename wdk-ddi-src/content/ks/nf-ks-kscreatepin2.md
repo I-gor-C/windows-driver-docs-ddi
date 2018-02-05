@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 43408247-0c34-46bd-a36b-b11540a10c55
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsCreatePin2, stream.kscreatepin2, KsCreatePin2, KsCreatePin2 function [Streaming Media Devices]
+ms.keywords : ks/KsCreatePin2, KsCreatePin2 function [Streaming Media Devices], stream.kscreatepin2, KsCreatePin2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,14 +89,11 @@ If <i>Connect</i>-&gt;<b>PinToHandle</b> is <b>NULL</b>, <b>KsCreatePin2</b> cre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

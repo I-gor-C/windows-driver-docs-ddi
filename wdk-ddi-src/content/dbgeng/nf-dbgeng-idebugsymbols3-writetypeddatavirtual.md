@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c7a3854b-2405-4e20-8c6c-4e0c0d43987e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2 interface [Windows Debugging], WriteTypedDataVirtual method, IDebugSymbols::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, debugger.writetypeddatavirtual, dbgeng/IDebugSymbols3::WriteTypedDataVirtual, IDebugSymbols3 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols_51186c12-dc2b-4906-a8fa-9e0f4a960135.xml, WriteTypedDataVirtual, IDebugSymbols2::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::WriteTypedDataVirtual, IDebugSymbols3, IDebugSymbols3::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols interface [Windows Debugging], WriteTypedDataVirtual method, dbgeng/IDebugSymbols2::WriteTypedDataVirtual
+ms.keywords : IDebugSymbols2::WriteTypedDataVirtual, IDebugSymbols_51186c12-dc2b-4906-a8fa-9e0f4a960135.xml, IDebugSymbols::WriteTypedDataVirtual, dbgeng/IDebugSymbols3::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, WriteTypedDataVirtual, debugger.writetypeddatavirtual, IDebugSymbols3 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, WriteTypedDataVirtual method [Windows Debugging], dbgeng/IDebugSymbols2::WriteTypedDataVirtual, IDebugSymbols3::WriteTypedDataVirtual, IDebugSymbols interface [Windows Debugging], WriteTypedDataVirtual method, IDebugSymbols2 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3, dbgeng/IDebugSymbols::WriteTypedDataVirtual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -123,11 +123,6 @@ For more information about types, see <a href="https://msdn.microsoft.com/librar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

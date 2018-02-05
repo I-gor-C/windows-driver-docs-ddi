@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f088a623-e6e8-4810-a7ab-90348f669dac
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.setpersistententry_in, hbapiwmi/SetPersistentEntry_IN, PSetPersistentEntry_IN, structs-Fibre_7382da5e-059a-4e11-9db7-dbc3dae24928.xml, SetPersistentEntry_IN structure [Storage Devices], *PSetPersistentEntry_IN, hbapiwmi/PSetPersistentEntry_IN, _SetPersistentEntry_IN, PSetPersistentEntry_IN structure pointer [Storage Devices], SetPersistentEntry_IN
+ms.keywords : hbapiwmi/PSetPersistentEntry_IN, PSetPersistentEntry_IN, _SetPersistentEntry_IN, PSetPersistentEntry_IN structure pointer [Storage Devices], SetPersistentEntry_IN structure [Storage Devices], structs-Fibre_7382da5e-059a-4e11-9db7-dbc3dae24928.xml, storage.setpersistententry_in, SetPersistentEntry_IN, *PSetPersistentEntry_IN, hbapiwmi/SetPersistentEntry_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ The WMI tool suite generates a declaration of the SetPersistentEntry_IN structur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

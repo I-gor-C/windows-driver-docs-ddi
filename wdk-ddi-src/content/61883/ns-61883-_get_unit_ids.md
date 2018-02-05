@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 8ffa85ee-cad6-476e-91ab-1897a6b43ca1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_GET_UNIT_IDS, IEEE.get_unit_ids, PGET_UNIT_IDS structure pointer [Buses], GET_UNIT_IDS, PGET_UNIT_IDS, GET_UNIT_IDS structure [Buses], 61883/GET_UNIT_IDS, *PGET_UNIT_IDS, 61883/PGET_UNIT_IDS, 61883_structures_5415ce51-9c17-481b-86bd-08b8ff1595ca.xml"
+ms.keywords : 61883_structures_5415ce51-9c17-481b-86bd-08b8ff1595ca.xml, PGET_UNIT_IDS, GET_UNIT_IDS structure [Buses], _GET_UNIT_IDS, IEEE.get_unit_ids, PGET_UNIT_IDS structure pointer [Buses], 61883/PGET_UNIT_IDS, 61883/GET_UNIT_IDS, GET_UNIT_IDS, *PGET_UNIT_IDS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGET_UNIT_IDS, GET_UNIT_IDS"
+req.typenames : GET_UNIT_IDS, *PGET_UNIT_IDS
 ---
 
 # _GET_UNIT_IDS structure
@@ -104,9 +104,6 @@ Points to a buffer that receives the "friendly name" for the vendor as a Unicode
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
 ## See Also

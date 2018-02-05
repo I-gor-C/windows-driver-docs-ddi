@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5AED6B9E-5DB8-44AF-925C-4B587D100040
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PepWorkDevicePower, PepWorkDeviceIdle, PepWorkDevicePower, PepWorkAcpiNotify, pepfx/PepWorkActiveComplete, PepWorkAcpiEvaluateControlMethodComplete, PepWorkRequestPowerControl, PEP_WORK_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepWorkRequestIdleState, PepWorkCompletePerfState, pepfx/PepWorkMax, PepWorkRequestIdleState, kernel.pep_work_type, pepfx/PepWorkDeviceIdle, pepfx/PepWorkAcpiNotify, pepfx/PEP_WORK_TYPE, *PPEP_WORK_TYPE, PepWorkCompleteIdleState, pepfx/PepWorkAcpiEvaluateControlMethodComplete, pepfx/PepWorkCompletePerfState, PepWorkActiveComplete, PEP_WORK_TYPE, pepfx/PepWorkRequestPowerControl, _PEP_WORK_TYPE, pepfx/PepWorkCompleteIdleState, PepWorkMax
+ms.keywords : PepWorkAcpiNotify, pepfx/PepWorkAcpiEvaluateControlMethodComplete, PepWorkActiveComplete, PepWorkDevicePower, PepWorkCompletePerfState, *PPEP_WORK_TYPE, pepfx/PepWorkCompleteIdleState, _PEP_WORK_TYPE, PepWorkMax, PepWorkRequestIdleState, kernel.pep_work_type, PepWorkAcpiEvaluateControlMethodComplete, pepfx/PEP_WORK_TYPE, PEP_WORK_TYPE, pepfx/PepWorkRequestIdleState, pepfx/PepWorkRequestPowerControl, pepfx/PepWorkDevicePower, pepfx/PepWorkDeviceIdle, PepWorkRequestPowerControl, pepfx/PepWorkMax, PEP_WORK_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepWorkCompletePerfState, PepWorkDeviceIdle, pepfx/PepWorkAcpiNotify, pepfx/PepWorkActiveComplete, PepWorkCompleteIdleState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_TYPE, PEP_WORK_TYPE"
+req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 # _PEP_WORK_TYPE Enumeration
@@ -99,22 +99,20 @@ This enumeration is used by the <a href="..\pepfx\ns-pepfx-_pep_work_information
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186852">PEP_DPM_REQUEST_COMPONENT_PERF_STATE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
 
-<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186759">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186659">PEP_NOTIFY_ACPI_EVALUATE_CONTROL_METHOD</a>
+<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
 
  
 

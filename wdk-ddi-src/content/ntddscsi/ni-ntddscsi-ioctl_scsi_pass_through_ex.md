@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_PASS_THROUGH_EX IOCTL
@@ -106,9 +106,7 @@ In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request, the underlying s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
-| **IRQL** |  |
 
 ## See Also
 

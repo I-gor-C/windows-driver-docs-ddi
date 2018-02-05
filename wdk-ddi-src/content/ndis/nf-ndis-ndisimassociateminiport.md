@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b2c46419-644b-4ad4-aa50-7c6e541638aa
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisimassociateminiport, NdisIMAssociateMiniport, NdisIMAssociateMiniport function [Network Drivers Starting with Windows Vista], intermediate_ref_2f9545a6-262c-4347-b192-16ea23314410.xml, ndis/NdisIMAssociateMiniport
+ms.keywords : NdisIMAssociateMiniport, ndis/NdisIMAssociateMiniport, netvista.ndisimassociateminiport, NdisIMAssociateMiniport function [Network Drivers Starting with Windows Vista], intermediate_ref_2f9545a6-262c-4347-b192-16ea23314410.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -58,14 +58,14 @@ VOID NdisIMAssociateMiniport(
 `DriverHandle`
 
 The handle to the miniport driver interface that the 
-     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-     NdisMRegisterMiniportDriver</b></mshelp:link> function returns.
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a> function returns.
 
 `ProtocolHandle`
 
 The handle to the protocol interface that the 
-     <mshelp:link keywords="netvista.ndisregisterprotocoldriver" tabindex="0"><b>
-     NdisRegisterProtocolDriver</b></mshelp:link> function returns.
+     <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
+     NdisRegisterProtocolDriver</a> function returns.
 
 
 ## Return Value
@@ -82,28 +82,26 @@ Any NDIS intermediate driver that exports both
     <b>NdisIMAssociateMiniport</b> during its 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. For more information about 
     <b>DriverEntry</b>, see 
-    <mshelp:link keywords="netvista.driverentry_of_ndis_intermediate_drivers" tabindex="0"><b>DriverEntry of NDIS
-    Intermediate Drivers</b></mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548818">DriverEntry of NDIS
+    Intermediate Drivers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisIMAssociateMiniport (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisIMAssociateMiniport (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisIMAssociateMiniport (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisIMAssociateMiniport (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_IM_Function |
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
-
 <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
  
 

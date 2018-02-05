@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9025E49D-A12B-4617-9441-13B61137853E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPinPipe interface [Streaming Media Devices], KsGetConnectedPin method, KsGetConnectedPin, stream.ikspinpipe_ksgetconnectedpin, IKsPinPipe::KsGetConnectedPin, ksproxy/IKsPinPipe::KsGetConnectedPin, IKsPinPipe, KsGetConnectedPin method [Streaming Media Devices], IKsPinPipe interface, KsGetConnectedPin method [Streaming Media Devices]
+ms.keywords : KsGetConnectedPin, IKsPinPipe::KsGetConnectedPin, KsGetConnectedPin method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsGetConnectedPin method, stream.ikspinpipe_ksgetconnectedpin, ksproxy/IKsPinPipe::KsGetConnectedPin, KsGetConnectedPin method [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -64,14 +64,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

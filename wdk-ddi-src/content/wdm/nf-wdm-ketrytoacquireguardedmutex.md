@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5fa704ec-5068-42e9-8d52-2f775fd0e5c9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeTryToAcquireGuardedMutex, kernel.ketrytoacquireguardedmutex, KeTryToAcquireGuardedMutex, k105_4761d5a7-fc37-45de-a35e-7da9a99258b6.xml, KeTryToAcquireGuardedMutex routine [Kernel-Mode Driver Architecture]
+ms.keywords : KeTryToAcquireGuardedMutex, kernel.ketrytoacquireguardedmutex, k105_4761d5a7-fc37-45de-a35e-7da9a99258b6.xml, KeTryToAcquireGuardedMutex routine [Kernel-Mode Driver Architecture], wdm/KeTryToAcquireGuardedMutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,12 +75,11 @@ For more information about guarded mutexes, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlKeApcLte1, HwStorPortProhibitedDDIs |
 

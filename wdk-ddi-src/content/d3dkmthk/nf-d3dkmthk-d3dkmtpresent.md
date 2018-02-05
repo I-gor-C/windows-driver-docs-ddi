@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5821ecef-d90b-4b3f-87cd-1b80b86f2671
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTPresent function [Display Devices], display.d3dkmtpresent, d3dkmthk/D3DKMTPresent, OpenGL_Functions_2a9f80c6-84c7-41bb-be78-02640430226d.xml, D3DKMTPresent
+ms.keywords : OpenGL_Functions_2a9f80c6-84c7-41bb-be78-02640430226d.xml, display.d3dkmtpresent, d3dkmthk/D3DKMTPresent, D3DKMTPresent, D3DKMTPresent function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -186,22 +186,19 @@ The <b>D3DKMTPresent</b> function might return STATUS_INVALID_PARAMETER, dependi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a>
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_present.md">D3DKMT_PRESENT</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
 
  
 

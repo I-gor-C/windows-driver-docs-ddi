@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 55ED21D9-D704-4E38-AFCF-B1D1FDB67DB3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFInterrupt::ReleaseInterruptLock, ReleaseInterruptLock, IWDFInterrupt interface, ReleaseInterruptLock method, ReleaseInterruptLock method, wdf.iwdfinterrupt_releaseinterruptlock, ReleaseInterruptLock method, IWDFInterrupt interface, IWDFInterrupt, wudfddi/IWDFInterrupt::ReleaseInterruptLock, umdf.iwdfinterrupt_releaseinterruptlock
+ms.keywords : umdf.iwdfinterrupt_releaseinterruptlock, ReleaseInterruptLock method, wudfddi/IWDFInterrupt::ReleaseInterruptLock, ReleaseInterruptLock, IWDFInterrupt, IWDFInterrupt::ReleaseInterruptLock, wdf.iwdfinterrupt_releaseinterruptlock, IWDFInterrupt interface, ReleaseInterruptLock method, ReleaseInterruptLock method, IWDFInterrupt interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -66,20 +66,18 @@ For more information about handling interrupts in UMDF drivers, see <a href="htt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/2ED55AEC-2446-4E66-AAFD-A22BAB3FC9C7">IWDFInterrupt::AcquireInterruptLock</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+
+<a href="https://msdn.microsoft.com/2ED55AEC-2446-4E66-AAFD-A22BAB3FC9C7">IWDFInterrupt::AcquireInterruptLock</a>
 
  
 

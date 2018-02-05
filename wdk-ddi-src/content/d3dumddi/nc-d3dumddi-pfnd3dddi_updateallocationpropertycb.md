@@ -134,11 +134,5 @@ An unknown error has occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dumddi.h (include TBD) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

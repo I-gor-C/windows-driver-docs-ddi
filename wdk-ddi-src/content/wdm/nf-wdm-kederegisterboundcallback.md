@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 697709D4-DBB7-4CB4-83A1-89E8BAFD68DA
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeDeregisterBoundCallback, KeDeregisterBoundCallback routine [Kernel-Mode Driver Architecture], KeDeregisterBoundCallback, kernel.kederegisterboundcallback
+ms.keywords : KeDeregisterBoundCallback routine [Kernel-Mode Driver Architecture], wdm/KeDeregisterBoundCallback, KeDeregisterBoundCallback, kernel.kederegisterboundcallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,11 @@ The <b>KeDeregisterBoundCallback</b> routine returns STATUS_SUCCESS if the callb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dff228e5-14ea-4ec0-a7f1-247137f9e70d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlxunicodestringtoansisize, RtlxUnicodeStringToAnsiSize, k109_f7d1f632-4350-4fb9-ac05-3c36c0d0446e.xml, RtlxUnicodeStringToAnsiSize routine [Kernel-Mode Driver Architecture], wdm/RtlxUnicodeStringToAnsiSize
+ms.keywords : k109_f7d1f632-4350-4fb9-ac05-3c36c0d0446e.xml, RtlxUnicodeStringToAnsiSize routine [Kernel-Mode Driver Architecture], RtlxUnicodeStringToAnsiSize, wdm/RtlxUnicodeStringToAnsiSize, kernel.rtlxunicodestringtoansisize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,12 @@ The Unicode string is interpreted for the current system locale.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

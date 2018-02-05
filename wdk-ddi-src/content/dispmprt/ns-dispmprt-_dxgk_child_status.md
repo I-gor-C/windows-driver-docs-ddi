@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2aba049-b51f-49b9-b0bb-c98c318dea86
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PDXGK_CHILD_STATUS, _DXGK_CHILD_STATUS, dispmprt/DXGK_CHILD_STATUS, DXGK_CHILD_STATUS structure [Display Devices], dispmprt/PDXGK_CHILD_STATUS, display.dxgk_child_status, DmStructs_9a370d5a-9ca8-4c4f-a5cf-3361847d65e7.xml, PDXGK_CHILD_STATUS structure pointer [Display Devices], DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS
+ms.keywords : display.dxgk_child_status, DXGK_CHILD_STATUS, DmStructs_9a370d5a-9ca8-4c4f-a5cf-3361847d65e7.xml, PDXGK_CHILD_STATUS, _DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS, dispmprt/DXGK_CHILD_STATUS, dispmprt/PDXGK_CHILD_STATUS, PDXGK_CHILD_STATUS structure pointer [Display Devices], DXGK_CHILD_STATUS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS
+req.typenames : "*PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS"
 ---
 
 # _DXGK_CHILD_STATUS structure
@@ -78,14 +78,12 @@ A member of the <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkcb_indicate_child_status.md">DxgkCbIndicateChildStatus</a>
 
@@ -93,7 +91,7 @@ A member of the <a href="..\dispmprt\ne-dispmprt-_dxgk_child_status_type.md">DXG
 
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_output_technology.md">D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
 
  
 

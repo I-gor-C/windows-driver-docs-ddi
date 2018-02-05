@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 59661cfe-4a1f-4805-9421-7f694e82f8d2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_GETPITCH structure [Display Devices], display.d3dddiarg_getpitch, D3DDDIARG_GETPITCH, UMDisplayDriver_param_Structs_02e95329-8eba-41a3-ae4e-d8830b47ada6.xml, _D3DDDIARG_GETPITCH, d3dumddi/D3DDDIARG_GETPITCH
+ms.keywords : D3DDDIARG_GETPITCH, display.d3dddiarg_getpitch, _D3DDDIARG_GETPITCH, UMDisplayDriver_param_Structs_02e95329-8eba-41a3-ae4e-d8830b47ada6.xml, D3DDDIARG_GETPITCH structure [Display Devices], d3dumddi/D3DDDIARG_GETPITCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct _D3DDDIARG_GETPITCH {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_GETPITCH is supported beginning with the Windows 7 operating system. D3DDDIARG_GETPITCH is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

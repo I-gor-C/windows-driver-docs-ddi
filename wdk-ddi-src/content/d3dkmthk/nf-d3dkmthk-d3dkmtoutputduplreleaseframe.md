@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07bbc201-0320-4f26-be0a-27c06763813f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTOutputDuplReleaseFrame function [Display Devices], PFND3DKMT_OUTPUTDUPLRELEASEFRAME, D3DKMTOutputDuplReleaseFrame, d3dkmthk/D3DKMTOutputDuplReleaseFrame, display.d3dkmtoutputduplreleaseframe
+ms.keywords : PFND3DKMT_OUTPUTDUPLRELEASEFRAME, d3dkmthk/D3DKMTOutputDuplReleaseFrame, display.d3dkmtoutputduplreleaseframe, D3DKMTOutputDuplReleaseFrame, D3DKMTOutputDuplReleaseFrame function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,14 +104,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

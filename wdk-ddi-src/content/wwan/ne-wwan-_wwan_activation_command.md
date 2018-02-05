@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e9d25ac3-8ffc-4137-8409-731d8caaa730
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanActivationCommandActivate, PWWAN_ACTIVATION_COMMAND enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_ACTIVATION_COMMAND enumeration [Network Drivers Starting with Windows Vista], WWAN_ACTIVATION_COMMAND, *PWWAN_ACTIVATION_COMMAND, _WWAN_ACTIVATION_COMMAND, WwanActivationCommandDeactivate, WwanActivationCommandActivate, wwan/WwanActivationCommandMax, WwanRef_55137856-bb05-49ac-b318-cc6922a90445.xml, netvista.wwan_activation_command, wwan/PWWAN_ACTIVATION_COMMAND, PWWAN_ACTIVATION_COMMAND, wwan/WwanActivationCommandDeactivate, wwan/WWAN_ACTIVATION_COMMAND, WwanActivationCommandMax
+ms.keywords : WwanActivationCommandDeactivate, WwanActivationCommandMax, wwan/WwanActivationCommandActivate, *PWWAN_ACTIVATION_COMMAND, WWAN_ACTIVATION_COMMAND enumeration [Network Drivers Starting with Windows Vista], PWWAN_ACTIVATION_COMMAND, netvista.wwan_activation_command, WwanActivationCommandActivate, wwan/PWWAN_ACTIVATION_COMMAND, PWWAN_ACTIVATION_COMMAND enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanActivationCommandMax, WwanRef_55137856-bb05-49ac-b318-cc6922a90445.xml, WWAN_ACTIVATION_COMMAND, _WWAN_ACTIVATION_COMMAND, wwan/WWAN_ACTIVATION_COMMAND, wwan/WwanActivationCommandDeactivate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_ACTIVATION_COMMAND, *PWWAN_ACTIVATION_COMMAND
+req.typenames : "*PWWAN_ACTIVATION_COMMAND, WWAN_ACTIVATION_COMMAND"
 req.product : Windows 10 or later.
 ---
 
@@ -77,9 +77,7 @@ typedef enum _WWAN_ACTIVATION_COMMAND {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 023390a1-e878-4f1f-a5c2-1545a6786aaa
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DSM_QueryUniqueId structure [Storage Devices], DSM_QueryUniqueId, PDSM_QueryUniqueId, mpiodisk/PDSM_QueryUniqueId, storage.dsm_queryuniqueid, _DSM_QueryUniqueId, PDSM_QueryUniqueId structure pointer [Storage Devices], mpiodisk/DSM_QueryUniqueId, structs-scsibus_eb6e8cc6-4b6a-468f-a14c-7a11c827ef30.xml, *PDSM_QueryUniqueId
+ms.keywords : "_DSM_QueryUniqueId, storage.dsm_queryuniqueid, DSM_QueryUniqueId, mpiodisk/DSM_QueryUniqueId, structs-scsibus_eb6e8cc6-4b6a-468f-a14c-7a11c827ef30.xml, DSM_QueryUniqueId structure [Storage Devices], PDSM_QueryUniqueId, mpiodisk/PDSM_QueryUniqueId, PDSM_QueryUniqueId structure pointer [Storage Devices], *PDSM_QueryUniqueId"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,4 @@ An unsigned 64-bitfield that represents an identifier that must be set by DSMs t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiodisk.h (include Mpiowmi.h) |

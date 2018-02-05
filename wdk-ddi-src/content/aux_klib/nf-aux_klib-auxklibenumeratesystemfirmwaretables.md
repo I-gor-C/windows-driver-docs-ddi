@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : EEAB636B-5565-4C2A-9EC7-4DC63EBB286F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.auxklibenumeratesystemfirmwaretables, aux_klib/AuxKlibEnumerateSystemFirmwareTables, AuxKlibEnumerateSystemFirmwareTables routine [Kernel-Mode Driver Architecture], AuxKlibEnumerateSystemFirmwareTables
+ms.keywords : AuxKlibEnumerateSystemFirmwareTables routine [Kernel-Mode Driver Architecture], kernel.auxklibenumeratesystemfirmwaretables, AuxKlibEnumerateSystemFirmwareTables, aux_klib/AuxKlibEnumerateSystemFirmwareTables
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -161,14 +161,11 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows Vista. Supported starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | aux_klib.h (include Aux_klib.h) |
-| **Library** |  |
+| **Library** | Aux_Klib.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4801a7c4-8bd4-4372-bcdd-49e5570d833e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, umdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, UMDFDeviceObjectRef_7b2a2ca8-d8d4-4da2-ae51-15aabf150973.xml, wudfddi/IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, IPowerPolicyCallbackWakeFromS0 interface, OnArmWakeFromS0 method, OnArmWakeFromS0 method, OnArmWakeFromS0, OnArmWakeFromS0 method, IPowerPolicyCallbackWakeFromS0 interface, IPowerPolicyCallbackWakeFromS0
+ms.keywords : IPowerPolicyCallbackWakeFromS0, umdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, wudfddi/IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, IPowerPolicyCallbackWakeFromS0 interface, OnArmWakeFromS0 method, OnArmWakeFromS0, UMDFDeviceObjectRef_7b2a2ca8-d8d4-4da2-ae51-15aabf150973.xml, OnArmWakeFromS0 method, IPowerPolicyCallbackWakeFromS0 interface, wdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, OnArmWakeFromS0 method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -113,14 +113,11 @@ For more information about this callback function, see <a href="https://docs.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3c05c1a0-339e-447f-b0df-18303ee63f98
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSENDMSGACKPARAMS_V2, netvista.rilsendmsgackparams_v2, RILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2 structure [Network Drivers Starting with Windows Vista], *LPRILSENDMSGACKPARAMS, ntddrilapitypes/RILSENDMSGACKPARAMS_V2
+ms.keywords : RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS, ntddrilapitypes/RILSENDMSGACKPARAMS_V2, netvista.rilsendmsgackparams_v2, RILSENDMSGACKPARAMS_V2 structure [Network Drivers Starting with Windows Vista], RILSENDMSGACKPARAMS_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS
+req.typenames : RILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS
 ---
 
 # RILSENDMSGACKPARAMS_V2 structure
@@ -89,7 +89,4 @@ typedef struct _RILSENDMSGACKPARAMS_V2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

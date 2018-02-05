@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : DFB7239F-4A6B-4C98-884E-FAC1A0DE2024
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_PROFILE, *PNDIS_SWITCH_PORT_PROPERTY_PROFILE, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_PROFILE, netvista.ndis_switch_port_property_profile, _NDIS_SWITCH_PORT_PROPERTY_PROFILE, PNDIS_SWITCH_PORT_PROPERTY_PROFILE structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_PORT_PROPERTY_PROFILE
+ms.keywords : PNDIS_SWITCH_PORT_PROPERTY_PROFILE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_property_profile, *PNDIS_SWITCH_PORT_PROPERTY_PROFILE, _NDIS_SWITCH_PORT_PROPERTY_PROFILE, ntddndis/NDIS_SWITCH_PORT_PROPERTY_PROFILE, PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SWITCH_PORT_PROPERTY_PROFILE, *PNDIS_SWITCH_PORT_PROPERTY_PROFILE
+req.typenames : "*PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE"
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_PROFILE structure
@@ -150,26 +150,24 @@ The <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure is used by the extension 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598263">OID_SWITCH_NIC_CREATE</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598275">OID_SWITCH_PORT_PROPERTY_ADD</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_parameters.md">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451419">IF_COUNTED_STRING</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598275">OID_SWITCH_PORT_PROPERTY_ADD</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598278">OID_SWITCH_PORT_PROPERTY_UPDATE</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_parameters.md">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598263">OID_SWITCH_NIC_CREATE</a>
 
 <b></b>
 

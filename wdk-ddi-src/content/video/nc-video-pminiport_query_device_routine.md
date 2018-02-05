@@ -136,26 +136,20 @@ If it cannot get bus-relative access ranges values by calling <b>VideoPortGetDev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
+
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 
 <a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
 
 <a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
 
-<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
-
-<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 
  
 

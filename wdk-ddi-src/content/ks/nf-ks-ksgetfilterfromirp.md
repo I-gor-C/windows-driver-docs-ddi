@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 00c90dbf-bb44-4cba-97b3-170765a2eba7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetFilterFromIrp, KsGetFilterFromIrp function [Streaming Media Devices], stream.ksgetfilterfromirp, avfunc_223d8c62-c585-4749-a087-19cfa48824f3.xml, ks/KsGetFilterFromIrp
+ms.keywords : avfunc_223d8c62-c585-4749-a087-19cfa48824f3.xml, ks/KsGetFilterFromIrp, KsGetFilterFromIrp, KsGetFilterFromIrp function [Streaming Media Devices], stream.ksgetfilterfromirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,10 @@ A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure for which to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

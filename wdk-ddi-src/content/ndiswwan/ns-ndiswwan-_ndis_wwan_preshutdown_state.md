@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 39653A36-FFED-4F6A-9365-17E9D35DB46E
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_PRESHUTDOWN_STATE, netvista.ndis_wwan_preshutdown_state, *PNDIS_WWAN_PRESHUTDOWN_STATE, NDIS_WWAN_PRESHUTDOWN_STATE structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_PRESHUTDOWN_STATE, PNDIS_WWAN_PRESHUTDOWN_STATE, ndiswwan/NDIS_WWAN_PRESHUTDOWN_STATE, PNDIS_WWAN_PRESHUTDOWN_STATE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_PRESHUTDOWN_STATE
+ms.keywords : PNDIS_WWAN_PRESHUTDOWN_STATE, PNDIS_WWAN_PRESHUTDOWN_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_PRESHUTDOWN_STATE, ndiswwan/PNDIS_WWAN_PRESHUTDOWN_STATE, netvista.ndis_wwan_preshutdown_state, NDIS_WWAN_PRESHUTDOWN_STATE, NDIS_WWAN_PRESHUTDOWN_STATE structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_PRESHUTDOWN_STATE, *PNDIS_WWAN_PRESHUTDOWN_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -130,9 +130,7 @@ The modem does not support pre-shutdown notifications.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 10, version 1511. Available starting with  Windows 10, version 1511. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

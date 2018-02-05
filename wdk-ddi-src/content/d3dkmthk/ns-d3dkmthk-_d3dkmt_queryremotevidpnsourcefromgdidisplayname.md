@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac0ec68a-1f2c-4a39-bf88-0e69d50b1279
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, d3dkmthk/D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME structure [Display Devices], display.d3dkmt_queryremotevidpnsourcefromgdidisplayname, _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
+ms.keywords : d3dkmthk/D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, display.d3dkmt_queryremotevidpnsourcefromgdidisplayname, _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

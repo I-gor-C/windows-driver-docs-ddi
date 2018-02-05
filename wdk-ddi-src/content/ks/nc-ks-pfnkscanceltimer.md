@@ -80,20 +80,14 @@ If a minidriver supplies a <i>KStrCancelTimer</i> callback function, the minidri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
-
 <a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
+<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a>
 

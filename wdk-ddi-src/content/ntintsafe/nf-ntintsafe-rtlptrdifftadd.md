@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3B4C0CF0-8153-446E-A834-C1FE28651718
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlPtrdiffTAdd, kernel.rtlptrdifftadd, RtlPtrdiffTAdd function [Kernel-Mode Driver Architecture], RtlPtrdiffTAdd
+ms.keywords : RtlPtrdiffTAdd function [Kernel-Mode Driver Architecture], RtlPtrdiffTAdd, ntintsafe/RtlPtrdiffTAdd, kernel.rtlptrdifftadd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

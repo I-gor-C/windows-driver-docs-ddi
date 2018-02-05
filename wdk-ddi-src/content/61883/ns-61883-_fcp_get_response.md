@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 1CE962A4-7F99-4F81-8B85-265A4225B88A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : FCP_GET_RESPONSE, PFCP_GET_RESPONSE structure pointer [Buses], FCP_GET_RESPONSE structure [Buses], IEEE.fcp_get_response, FCP_RESPONSE, *PFCP_GET_RESPONSE, 61883/FCP_GET_RESPONSE, *PFCP_RESPONSE, 61883/PFCP_GET_RESPONSE, PFCP_GET_RESPONSE, _FCP_GET_RESPONSE
+ms.keywords : PFCP_GET_RESPONSE structure pointer [Buses], _FCP_GET_RESPONSE, *PFCP_GET_RESPONSE, 61883/FCP_GET_RESPONSE, FCP_RESPONSE, 61883/PFCP_GET_RESPONSE, IEEE.fcp_get_response, PFCP_GET_RESPONSE, FCP_GET_RESPONSE, FCP_GET_RESPONSE structure [Buses], *PFCP_RESPONSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFCP_GET_RESPONSE, *PFCP_RESPONSE, FCP_GET_RESPONSE, FCP_RESPONSE"
+req.typenames : "*PFCP_RESPONSE, *PFCP_GET_RESPONSE, FCP_GET_RESPONSE, FCP_RESPONSE"
 ---
 
 # _FCP_GET_RESPONSE structure
@@ -79,9 +79,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

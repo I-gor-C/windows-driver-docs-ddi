@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 735bff90-7406-4fe8-87d5-de3aa48fbcd0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : vidcapstruct_decbdb49-a4a2-44d6-a005-bd3cbe0df02e.xml, *PKS_MPEGVIDEOINFO2, KS_MPEGVIDEOINFO2, ksmedia/KS_MPEGVIDEOINFO2, PKS_MPEGVIDEOINFO2 structure pointer [Streaming Media Devices], KS_MPEGVIDEOINFO2 structure [Streaming Media Devices], PKS_MPEGVIDEOINFO2, stream.ks_mpegvideoinfo2, ksmedia/PKS_MPEGVIDEOINFO2, tagKS_MPEGVIDEOINFO2
+ms.keywords : KS_MPEGVIDEOINFO2 structure [Streaming Media Devices], ksmedia/KS_MPEGVIDEOINFO2, PKS_MPEGVIDEOINFO2 structure pointer [Streaming Media Devices], ksmedia/PKS_MPEGVIDEOINFO2, vidcapstruct_decbdb49-a4a2-44d6-a005-bd3cbe0df02e.xml, PKS_MPEGVIDEOINFO2, tagKS_MPEGVIDEOINFO2, stream.ks_mpegvideoinfo2, *PKS_MPEGVIDEOINFO2, KS_MPEGVIDEOINFO2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KS_MPEGVIDEOINFO2, *PKS_MPEGVIDEOINFO2
+req.typenames : "*PKS_MPEGVIDEOINFO2, KS_MPEGVIDEOINFO2"
 ---
 
 # tagKS_MPEGVIDEOINFO2 structure
@@ -185,9 +185,6 @@ Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOIN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

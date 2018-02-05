@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 59252b09-00ee-4a39-9849-5ce840ee16a7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCompleteRequest routine [Kernel-Mode Driver Architecture], k104_79ea2b93-3ce8-46eb-990b-ca3e56d3e3a8.xml, IoCompleteRequest, kernel.iocompleterequest, wdm/IoCompleteRequest
+ms.keywords : kernel.iocompleterequest, IoCompleteRequest, wdm/IoCompleteRequest, k104_79ea2b93-3ce8-46eb-990b-ca3e56d3e3a8.xml, IoCompleteRequest routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -78,12 +78,11 @@ Never call <b>IoCompleteRequest</b> while holding a spin lock. Attempting to com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | CompleteRequest, CompleteRequestStatusCheck, DoubleCompletion, IoAllocateComplete, IoBuildFsdComplete, IoSetCompletionExCompleteIrp, IrpProcessingComplete, MarkIrpPending, PendedCompletedRequest, PendedCompletedRequest2, PendedCompletedRequest3, PendedCompletedRequestEx, PnpIrpCompletion, SpinLockSafe, WmiComplete, HwStorPortProhibitedDDIs, SpinLockSafe(storport) |
 

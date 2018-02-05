@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 49b624d6-ef06-4e73-98ac-b0be1669afc7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltinitializepushlock, fltkernel/FltInitializePushLock, FltApiRef_e_to_o_348be4fc-280f-4dc3-b5fb-ada1aa037d09.xml, FltInitializePushLock, FltInitializePushLock routine [Installable File System Drivers]
+ms.keywords : FltInitializePushLock, ifsk.fltinitializepushlock, fltkernel/FltInitializePushLock, FltApiRef_e_to_o_348be4fc-280f-4dc3-b5fb-ada1aa037d09.xml, FltInitializePushLock routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,26 +116,24 @@ To delete a push lock, call <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later. This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exisresourceacquiredexclusivelite.md">ExIsResourceAcquiredExclusiveLite</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md">FltAcquirePushLockExclusive</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasepushlock.md">FltReleasePushLock</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletepushlock.md">FltDeletePushLock</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>
+<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md">FltAcquirePushLockExclusive</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltreleasepushlock.md">FltReleasePushLock</a>
+<a href="..\wdm\nf-wdm-exisresourceacquiredexclusivelite.md">ExIsResourceAcquiredExclusiveLite</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md">FltAcquirePushLockShared</a>
 
  
 

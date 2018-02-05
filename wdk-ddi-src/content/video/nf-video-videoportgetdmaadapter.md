@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e28649d3-cb4f-4589-b421-a7cdd9139e4c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetDmaAdapter function [Display Devices], video/VideoPortGetDmaAdapter, VideoPort_Functions_a45601ab-cd5a-4aed-95ec-731f09b175a4.xml, display.videoportgetdmaadapter, VideoPortGetDmaAdapter
+ms.keywords : VideoPortGetDmaAdapter function [Display Devices], VideoPortGetDmaAdapter, video/VideoPortGetDmaAdapter, display.videoportgetdmaadapter, VideoPort_Functions_a45601ab-cd5a-4aed-95ec-731f09b175a4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,24 +94,22 @@ This structure is available in Windows XP and later.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
+
+<a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
 
 <a href="..\video\ns-video-_vp_device_description.md">VP_DEVICE_DESCRIPTION</a>
 
 <a href="..\video\nf-video-videoportputdmaadapter.md">VideoPortPutDmaAdapter</a>
-
-<a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
-
-<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1EC4F8EE-1284-4752-8941-F1C31415BF29
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_MAKERESIDENT_FLAGS structure [Display Devices], D3DDDI_MAKERESIDENT_FLAGS, d3dukmdt/D3DDDI_MAKERESIDENT_FLAGS, display.d3dddi_makeresident_flags
+ms.keywords : display.d3dddi_makeresident_flags, d3dukmdt/D3DDDI_MAKERESIDENT_FLAGS, D3DDDI_MAKERESIDENT_FLAGS, D3DDDI_MAKERESIDENT_FLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,9 +62,7 @@ typedef struct D3DDDI_MAKERESIDENT_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also

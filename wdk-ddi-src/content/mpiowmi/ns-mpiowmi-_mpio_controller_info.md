@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 30600e86-dd35-4498-91a8-14a722b2e868
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PMPIO_CONTROLLER_INFO, MPIO_CONTROLLER_INFO structure [Storage Devices], storage.mpio_controller_info, _MPIO_CONTROLLER_INFO, structs-scsibus_6b7edecb-9938-49fb-8367-5d176f83c0a5.xml, mpiowmi/MPIO_CONTROLLER_INFO, PMPIO_CONTROLLER_INFO structure pointer [Storage Devices], mpiowmi/PMPIO_CONTROLLER_INFO, PMPIO_CONTROLLER_INFO, MPIO_CONTROLLER_INFO"
+ms.keywords : MPIO_CONTROLLER_INFO structure [Storage Devices], mpiowmi/MPIO_CONTROLLER_INFO, storage.mpio_controller_info, mpiowmi/PMPIO_CONTROLLER_INFO, PMPIO_CONTROLLER_INFO, MPIO_CONTROLLER_INFO, *PMPIO_CONTROLLER_INFO, _MPIO_CONTROLLER_INFO, PMPIO_CONTROLLER_INFO structure pointer [Storage Devices], structs-scsibus_6b7edecb-9938-49fb-8367-5d176f83c0a5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMPIO_CONTROLLER_INFO, MPIO_CONTROLLER_INFO"
+req.typenames : MPIO_CONTROLLER_INFO, *PMPIO_CONTROLLER_INFO
 ---
 
 # _MPIO_CONTROLLER_INFO structure
@@ -84,7 +84,4 @@ Should be zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

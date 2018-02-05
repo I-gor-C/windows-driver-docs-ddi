@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 10EB0C86-915F-4C24-ADBE-1D8E8DD8ECB6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UFX_ENDPOINT_CALLBACKS_INIT, ufxclient/UFX_ENDPOINT_CALLBACKS_INIT, UFX_ENDPOINT_CALLBACKS_INIT function [Buses], buses.ufx_endpoint_callbacks_init
+ms.keywords : ufxclient/UFX_ENDPOINT_CALLBACKS_INIT, UFX_ENDPOINT_CALLBACKS_INIT function [Buses], UFX_ENDPOINT_CALLBACKS_INIT, buses.ufx_endpoint_callbacks_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -73,11 +73,6 @@ The <b>UFX_ENDPOINT_CALLBACKS_INIT</b> macro will set all fields of the <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

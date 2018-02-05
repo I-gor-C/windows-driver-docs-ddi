@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 24735e9a-d259-48d1-8efe-8ff1642b6a35
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortWritePortBufferUlong, StorPortWritePortBufferUlong routine [Storage Devices], storprt_7ab33563-108d-4d20-8205-c3f5ac790f59.xml, storport/StorPortWritePortBufferUlong, storage.storportwriteportbufferulong
+ms.keywords : StorPortWritePortBufferUlong, StorPortWritePortBufferUlong routine [Storage Devices], storport/StorPortWritePortBufferUlong, storage.storportwriteportbufferulong, storprt_7ab33563-108d-4d20-8205-c3f5ac790f59.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,9 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportbufferulong.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

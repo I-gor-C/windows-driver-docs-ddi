@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A7917082-4C3F-445A-AD26-32DE670754E5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcGetPhysicalDeviceObject, PcGetPhysicalDeviceObject function [Audio Devices], portcls/PcGetPhysicalDeviceObject, audio.pcgetphysicaldeviceobject
+ms.keywords : PcGetPhysicalDeviceObject, audio.pcgetphysicaldeviceobject, PcGetPhysicalDeviceObject function [Audio Devices], portcls/PcGetPhysicalDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,14 +70,11 @@ The <b>PcGetPhysicalDeviceObject</b> function returns STATUS_SUCCESS if the func
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows 8. Available starting in Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

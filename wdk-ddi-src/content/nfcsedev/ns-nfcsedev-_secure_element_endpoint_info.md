@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : C1D812BD-55F0-44F7-BCC8-81CC758EDEF3
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : "_SECURE_ELEMENT_ENDPOINT_INFO, *PSECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO structure [Near-Field Proximity Drivers], nfpdrivers._secure_element_endpoint_info, nfcsedev/_SECURE_ELEMENT_ENDPOINT_INFO, nfcsedev/P_SECURE_ELEMENT_ENDPOINT_INFO, P_SECURE_ELEMENT_ENDPOINT_INFO structure pointer [Near-Field Proximity Drivers], P_SECURE_ELEMENT_ENDPOINT_INFO"
+ms.keywords : nfpdrivers._secure_element_endpoint_info, *PSECURE_ELEMENT_ENDPOINT_INFO, P_SECURE_ELEMENT_ENDPOINT_INFO structure pointer [Near-Field Proximity Drivers], _SECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO, P_SECURE_ELEMENT_ENDPOINT_INFO, nfcsedev/_SECURE_ELEMENT_ENDPOINT_INFO, nfcsedev/P_SECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO structure [Near-Field Proximity Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO"
+req.typenames : SECURE_ELEMENT_ENDPOINT_INFO, *PSECURE_ELEMENT_ENDPOINT_INFO
 ---
 
 # _SECURE_ELEMENT_ENDPOINT_INFO structure
@@ -64,7 +64,4 @@ This is a unique identifier for the secure element.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | nfcsedev.h |

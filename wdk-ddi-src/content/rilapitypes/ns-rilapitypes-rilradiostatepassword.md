@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 879f38f7-ae13-4a39-bc68-b5c5f5f4f32c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilradiostatepassword_2, RILRADIOSTATEPASSWORD, RILRADIOSTATEPASSWORD structure [Network Drivers Starting with Windows Vista], *LPRILRADIOSTATEPASSWORD, rilapitypes/RILRADIOSTATEPASSWORD
+ms.keywords : RILRADIOSTATEPASSWORD, RILRADIOSTATEPASSWORD structure [Network Drivers Starting with Windows Vista], *LPRILRADIOSTATEPASSWORD, netvista.rilradiostatepassword_2, rilapitypes/RILRADIOSTATEPASSWORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILRADIOSTATEPASSWORD, *LPRILRADIOSTATEPASSWORD
+req.typenames : "*LPRILRADIOSTATEPASSWORD, RILRADIOSTATEPASSWORD"
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILRADIOSTATEPASSWORD {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -67,8 +67,8 @@ A pointer to a
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the listen operation
      asynchronously. For more information about using IRPs with WSK functions, see 
-     <mshelp:link keywords="netvista.using_irps_with_winsock_kernel_functions" tabindex="0">Using IRPs with Winsock
-     Kernel Functions</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
+     Kernel Functions</a>.
 
 
 ## Return Value
@@ -137,26 +137,22 @@ A WSK application can call the <b>WskListen</b> function only on a stream socket
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
 
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>
+
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 
  
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -513,18 +513,12 @@ A <i>RegistryCallback</i> executes at IRQL = PASSIVE_LEVEL and in the context of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows XP (see Return Value section). Supported starting with Windows XP (see Return Value section). |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | Called at PASSIVE_LEVEL (see Remarks section). |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
 
 <a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
 
@@ -533,6 +527,8 @@ A <i>RegistryCallback</i> executes at IRQL = PASSIVE_LEVEL and in the context of
 <a href="..\wdm\nf-wdm-probeforread.md">ProbeForRead</a>
 
 <a href="..\wdm\ne-wdm-_reg_notify_class.md">REG_NOTIFY_CLASS</a>
+
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
 
  
 

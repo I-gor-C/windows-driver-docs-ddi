@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c0e011b5-804c-4f0d-a125-a083a0f83d50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_bd0dace0-1c4b-4e21-9e2c-7c3060878881.xml, kernel.iowmiquerysingleinstancemultiple, IoWMIQuerySingleInstanceMultiple, wdm/IoWMIQuerySingleInstanceMultiple, IoWMIQuerySingleInstanceMultiple routine [Kernel-Mode Driver Architecture]
+ms.keywords : IoWMIQuerySingleInstanceMultiple routine [Kernel-Mode Driver Architecture], wdm/IoWMIQuerySingleInstanceMultiple, kernel.iowmiquerysingleinstancemultiple, IoWMIQuerySingleInstanceMultiple, k104_bd0dace0-1c4b-4e21-9e2c-7c3060878881.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,26 +121,24 @@ To query for a single WMI class and instance name, use the <a href="..\wdm\nf-wd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating system. Available in Windows XP and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
 
-<a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a>
 
 <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a>
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

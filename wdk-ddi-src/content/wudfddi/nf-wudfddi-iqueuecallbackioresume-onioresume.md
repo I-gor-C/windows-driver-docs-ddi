@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d34f6e2c-4227-41bb-a1c0-f6206daa700b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IQueueCallbackIoResume::OnIoResume, wdf.iqueuecallbackioresume_onioresume, OnIoResume, UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml, IQueueCallbackIoResume::OnIoResume, IQueueCallbackIoResume, OnIoResume method, IQueueCallbackIoResume interface, IQueueCallbackIoResume interface, OnIoResume method, OnIoResume method, umdf.iqueuecallbackioresume_onioresume
+ms.keywords : IQueueCallbackIoResume interface, OnIoResume method, OnIoResume method, OnIoResume, wdf.iqueuecallbackioresume_onioresume, IQueueCallbackIoResume::OnIoResume, OnIoResume method, IQueueCallbackIoResume interface, UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml, umdf.iqueuecallbackioresume_onioresume, wudfddi/IQueueCallbackIoResume::OnIoResume, IQueueCallbackIoResume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,24 +76,19 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
-
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md">IQueueCallbackIoResume</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackioresume.md">IQueueCallbackIoResume</a>
 
  
 

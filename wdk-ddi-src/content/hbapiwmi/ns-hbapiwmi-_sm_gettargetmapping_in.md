@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d6f73582-5eaf-452f-ad5a-cdf5ab99d809
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SM_GetTargetMapping_IN, SM_GetTargetMapping_IN structure [Storage Devices], storage.sm_gettargetmapping_in, structs-Fibre_0109f5f0-dd0c-4a30-8b0a-aa33a54b5a61.xml, _SM_GetTargetMapping_IN, hbapiwmi/SM_GetTargetMapping_IN, PSM_GetTargetMapping_IN structure pointer [Storage Devices], PSM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN, hbapiwmi/PSM_GetTargetMapping_IN
+ms.keywords : PSM_GetTargetMapping_IN structure pointer [Storage Devices], hbapiwmi/PSM_GetTargetMapping_IN, *PSM_GetTargetMapping_IN, PSM_GetTargetMapping_IN, structs-Fibre_0109f5f0-dd0c-4a30-8b0a-aa33a54b5a61.xml, SM_GetTargetMapping_IN structure [Storage Devices], _SM_GetTargetMapping_IN, storage.sm_gettargetmapping_in, SM_GetTargetMapping_IN, hbapiwmi/SM_GetTargetMapping_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,7 +71,4 @@ The WMI tool suite generates a declaration of the SM_GetTargetMapping_IN structu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

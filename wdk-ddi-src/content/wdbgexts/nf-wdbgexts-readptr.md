@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e3999ecc-9884-4ae6-8e01-be4538b1d53a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.readptr, ReadPtr, ReadPtr function [Windows Debugging], WdbgExts_Ref_4eaec659-6522-4d7f-b64a-ad771f93eb56.xml, wdbgexts/ReadPtr
+ms.keywords : debugger.readptr, ReadPtr, WdbgExts_Ref_4eaec659-6522-4d7f-b64a-ad771f93eb56.xml, ReadPtr function [Windows Debugging], wdbgexts/ReadPtr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

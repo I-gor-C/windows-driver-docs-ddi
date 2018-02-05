@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : A645BFE0-4B7F-416F-9096-596ADAA37951
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucmconnectorchargingstatechanged, ucmmanager/UcmConnectorChargingStateChanged, UcmConnectorChargingStateChanged, UcmConnectorChargingStateChanged method [Buses]
+ms.keywords : UcmConnectorChargingStateChanged, ucmmanager/UcmConnectorChargingStateChanged, UcmConnectorChargingStateChanged method [Buses], buses.ucmconnectorchargingstatechanged
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,13 @@ If the client driver determines that the charging state is non-optimal, it shoul
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
+| **Library** | UcmCxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

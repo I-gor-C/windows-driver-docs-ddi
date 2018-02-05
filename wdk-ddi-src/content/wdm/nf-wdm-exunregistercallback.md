@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a7631732-fac5-458a-b644-eaffd5e53c31
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExUnregisterCallback, k102_981ea9e7-42fc-4c63-9cc9-5d7aa3d35b72.xml, wdm/ExUnregisterCallback, ExUnregisterCallback routine [Kernel-Mode Driver Architecture], kernel.exunregistercallback
+ms.keywords : k102_981ea9e7-42fc-4c63-9cc9-5d7aa3d35b72.xml, wdm/ExUnregisterCallback, ExUnregisterCallback routine [Kernel-Mode Driver Architecture], ExUnregisterCallback, kernel.exunregistercallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,20 +69,19 @@ For more information about callback objects, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exregistercallback.md">ExRegisterCallback</a>
-
 <a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
+
+<a href="..\wdm\nf-wdm-exregistercallback.md">ExRegisterCallback</a>
 
  
 

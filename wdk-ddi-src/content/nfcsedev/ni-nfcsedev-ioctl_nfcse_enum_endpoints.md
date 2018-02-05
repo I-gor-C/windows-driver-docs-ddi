@@ -94,6 +94,4 @@ The following are requirements that the driver must adhere to.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | nfcsedev.h |
-| **IRQL** |  |

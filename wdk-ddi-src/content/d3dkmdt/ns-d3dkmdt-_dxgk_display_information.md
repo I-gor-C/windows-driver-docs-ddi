@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e6902724-a81b-4a06-8089-a8e98392dc78
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/PDXGK_DISPLAY_INFORMATION, DXGK_DISPLAY_INFORMATION, d3dkmdt/DXGK_DISPLAY_INFORMATION, PDXGK_DISPLAY_INFORMATION, *PDXGK_DISPLAY_INFORMATION, _DXGK_DISPLAY_INFORMATION, PDXGK_DISPLAY_INFORMATION structure pointer [Display Devices], DXGK_DISPLAY_INFORMATION structure [Display Devices], display.dxgk_display_information
+ms.keywords : d3dkmdt/DXGK_DISPLAY_INFORMATION, PDXGK_DISPLAY_INFORMATION structure pointer [Display Devices], *PDXGK_DISPLAY_INFORMATION, DXGK_DISPLAY_INFORMATION, DXGK_DISPLAY_INFORMATION structure [Display Devices], PDXGK_DISPLAY_INFORMATION, _DXGK_DISPLAY_INFORMATION, d3dkmdt/PDXGK_DISPLAY_INFORMATION, display.dxgk_display_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_DISPLAY_INFORMATION, DXGK_DISPLAY_INFORMATION"
+req.typenames : DXGK_DISPLAY_INFORMATION, *PDXGK_DISPLAY_INFORMATION
 ---
 
 # _DXGK_DISPLAY_INFORMATION structure
@@ -92,18 +92,16 @@ For more information on the use of the members of <b>DXGK_DISPLAY_INFORMATION</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership.md">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a>
-
 <a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_stop_device_and_release_post_display_ownership.md">DxgkDdiStopDeviceAndReleasePostDisplayOwnership</a>
 
  
 

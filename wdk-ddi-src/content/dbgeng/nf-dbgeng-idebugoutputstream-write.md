@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : CC609DA8-9778-4AFC-9205-5F68AF15927C
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : Write method [Windows Debugging], IDebugOutputStream interface, debugger.idebugoutputstream_write, dbgeng/IDebugOutputStream::Write, IDebugOutputStream::Write, Write, IDebugOutputStream interface [Windows Debugging], Write method, Write method [Windows Debugging], IDebugOutputStream
+ms.keywords : IDebugOutputStream, dbgeng/IDebugOutputStream::Write, Write, IDebugOutputStream interface [Windows Debugging], Write method, Write method [Windows Debugging], debugger.idebugoutputstream_write, IDebugOutputStream::Write, Write method [Windows Debugging], IDebugOutputStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

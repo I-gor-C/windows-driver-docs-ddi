@@ -69,6 +69,4 @@ The <b>Information</b> field is set to the number of bytes transferred. The <b>S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : C51D645B-5DF2-4F23-904B-AB56F97520CB
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "_HIDP_DEVICE_DESC, PHIDP_DEVICE_DESC, hid.hidp_device_desc, hidpddi/HIDP_DEVICE_DESC, PHIDP_DEVICE_DESC structure pointer [Human Input Devices], HIDP_DEVICE_DESC, hidpddi/PHIDP_DEVICE_DESC, HIDP_DEVICE_DESC structure [Human Input Devices], *PHIDP_DEVICE_DESC"
+ms.keywords : hidpddi/PHIDP_DEVICE_DESC, *PHIDP_DEVICE_DESC, HIDP_DEVICE_DESC structure [Human Input Devices], _HIDP_DEVICE_DESC, HIDP_DEVICE_DESC, PHIDP_DEVICE_DESC, hid.hidp_device_desc, hidpddi/HIDP_DEVICE_DESC, PHIDP_DEVICE_DESC structure pointer [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,9 +81,6 @@ The number of elements in the length of the array of report IDs.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 
 ## See Also

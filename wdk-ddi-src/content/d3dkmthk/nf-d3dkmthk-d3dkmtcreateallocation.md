@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1374ad6f-3a79-4db1-acc9-28c8bd9aa93d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateAllocation function [Display Devices], display.d3dkmtcreateallocation, OpenGL_Functions_dfd80d2b-c3c7-4aca-833c-153090153b96.xml, D3DKMTCreateAllocation, PFND3DKMT_CREATEALLOCATION, d3dkmthk/D3DKMTCreateAllocation
+ms.keywords : D3DKMTCreateAllocation, d3dkmthk/D3DKMTCreateAllocation, display.d3dkmtcreateallocation, D3DKMTCreateAllocation function [Display Devices], PFND3DKMT_CREATEALLOCATION, OpenGL_Functions_dfd80d2b-c3c7-4aca-833c-153090153b96.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -130,14 +130,11 @@ The OpenGL ICD uses the <b>D3DKMTCreateAllocation</b> function to create allocat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

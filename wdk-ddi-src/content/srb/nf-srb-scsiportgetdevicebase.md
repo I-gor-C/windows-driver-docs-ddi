@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d8d14818-4b84-4c65-a29e-2cd97e8bfbe9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortGetDeviceBase, storage.scsiportgetdevicebase, ScsiPortGetDeviceBase, ScsiPortGetDeviceBase routine [Storage Devices], scsiprt_2924bfb1-e5a0-4533-afd7-65d2d7962b46.xml
+ms.keywords : scsiprt_2924bfb1-e5a0-4533-afd7-65d2d7962b46.xml, ScsiPortGetDeviceBase routine [Storage Devices], storage.scsiportgetdevicebase, ScsiPortGetDeviceBase, srb/ScsiPortGetDeviceBase
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -129,28 +129,23 @@ If <i>HwScsiFindAdapter</i> determines that a particular HBA is not one that the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
-
 <a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
+<a href="..\srb\nf-srb-scsiportfreedevicebase.md">ScsiPortFreeDeviceBase</a>
 
 <a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
 
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 
-<a href="..\srb\nf-srb-scsiportfreedevicebase.md">ScsiPortFreeDeviceBase</a>
+<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
+
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
 
  
 

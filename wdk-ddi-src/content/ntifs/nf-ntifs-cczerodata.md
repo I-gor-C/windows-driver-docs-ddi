@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 97a0f314-5813-4ff8-8a94-c675874cdc3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.cczerodata, CcZeroData routine [Installable File System Drivers], CcZeroData, ccref_af6df6fe-6fa3-41e9-b3af-2530ca6a2c85.xml, ntifs/CcZeroData
+ms.keywords : CcZeroData routine [Installable File System Drivers], CcZeroData, ifsk.cczerodata, ntifs/CcZeroData, ccref_af6df6fe-6fa3-41e9-b3af-2530ca6a2c85.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,22 +105,20 @@ If <i>EndOffset</i> is not aligned, it will be rounded up to the next sector siz
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 and later Windows operating systems.  See Remarks for changes for Vista and later operating systems. Available in Microsoft Windows 2000 and later Windows operating systems.  See Remarks for changes for Vista and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539143">CcIsFileCached</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 
 <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539143">CcIsFileCached</a>
 
  
 

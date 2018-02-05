@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 46337a5f-dc8a-42bc-a618-0d1440270f91
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_0d6fece0-a301-44af-92b4-0ff735195c2b.xml, KeBugCheck routine [Kernel-Mode Driver Architecture], ntddk/KeBugCheck, KeBugCheck, kernel.kebugcheck
+ms.keywords : ntddk/KeBugCheck, k105_0d6fece0-a301-44af-92b4-0ff735195c2b.xml, kernel.kebugcheck, KeBugCheck, KeBugCheck routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,24 +78,22 @@ When a bug check is unavoidable, most system components call <a href="..\wdm\nf-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 
 <a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
 
 <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
 
-<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
-
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 
 <a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
 

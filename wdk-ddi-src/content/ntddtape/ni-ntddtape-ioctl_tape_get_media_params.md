@@ -69,9 +69,7 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddtape.h (include Ntddtape.h) |
-| **IRQL** |  |
 
 ## See Also
 

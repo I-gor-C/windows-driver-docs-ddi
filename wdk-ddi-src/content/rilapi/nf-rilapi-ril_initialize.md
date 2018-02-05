@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7287281b-8c7b-4842-b312-1fff130a5de6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_Initialize method [Network Drivers Starting with Windows Vista], rilapi/RIL_Initialize, netvista.ril_initialize, RIL_Initialize
+ms.keywords : rilapi/RIL_Initialize, netvista.ril_initialize, RIL_Initialize, RIL_Initialize method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,11 +101,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

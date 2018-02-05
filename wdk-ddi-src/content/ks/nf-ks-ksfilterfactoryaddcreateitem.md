@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c09840fb-8195-4ac5-a164-ba4d82615344
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryAddCreateItem, avfunc_f4a42084-1d8f-49f8-a6d3-d09304e11049.xml, ks/KsFilterFactoryAddCreateItem, KsFilterFactoryAddCreateItem function [Streaming Media Devices], stream.ksfilterfactoryaddcreateitem
+ms.keywords : avfunc_f4a42084-1d8f-49f8-a6d3-d09304e11049.xml, KsFilterFactoryAddCreateItem function [Streaming Media Devices], ks/KsFilterFactoryAddCreateItem, KsFilterFactoryAddCreateItem, stream.ksfilterfactoryaddcreateitem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,28 +85,24 @@ For more information, see <a href="https://msdn.microsoft.com/666d6efb-93ec-43f3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksqueryobjectcreateitem.md">KsQueryObjectCreateItem</a>
-
-<a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
-
 <a href="..\ks\nf-ks-ksfreeobjectcreateitem.md">KsFreeObjectCreateItem</a>
 
-<a href="..\ks\nf-ks-ksaddobjectcreateitemtoobjectheader.md">KsAddObjectCreateItemToObjectHeader</a>
+<a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
 
 <a href="..\ks\nf-ks-ksaddobjectcreateitemtodeviceheader.md">KsAddObjectCreateItemToDeviceHeader</a>
 
 <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+
+<a href="..\ks\nf-ks-ksaddobjectcreateitemtoobjectheader.md">KsAddObjectCreateItemToObjectHeader</a>
+
+<a href="..\ks\nf-ks-ksqueryobjectcreateitem.md">KsQueryObjectCreateItem</a>
 
  
 

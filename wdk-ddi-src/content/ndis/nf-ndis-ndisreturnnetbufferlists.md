@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1a45bc5c-cdc1-46d2-905b-3d5eea3645c1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisReturnNetBufferLists, ndis_sendrcv_ref_9c5a4908-356f-4e7c-9351-4fec4358180d.xml, ndis/NdisReturnNetBufferLists, netvista.ndisreturnnetbufferlists, NdisReturnNetBufferLists function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisreturnnetbufferlists, NdisReturnNetBufferLists, ndis/NdisReturnNetBufferLists, NdisReturnNetBufferLists function [Network Drivers Starting with Windows Vista], ndis_sendrcv_ref_9c5a4908-356f-4e7c-9351-4fec4358180d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,8 +69,8 @@ A handle that identifies the target adapter. This handle was returned by a previ
 
 A pointer to a linked list of NET_BUFFER_LIST structures that are to be returned to the underlying
      driver. The linked list can contain NET_BUFFER_LIST structures from multiple previous calls to the 
-     <mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><i>
-     ProtocolReceiveNetBufferLists</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
+     ProtocolReceiveNetBufferLists</a> function.
 
 `ReturnFlags`
 
@@ -88,24 +88,22 @@ None
 
 If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the 
     <i>ReceiveFlags</i> parameter that NDIS passed to the 
-    <mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><i>
-    ProtocolReceiveNetBufferLists</i></mshelp:link> function was not set, the protocol driver must call 
+    <a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
+    ProtocolReceiveNetBufferLists</a> function was not set, the protocol driver must call 
     <b>NdisReturnNetBufferLists</b> to return the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures and associated
     data. After the protocol driver calls 
     <b>NdisReturnNetBufferLists</b>, NDIS calls the underlying miniport driver's 
-    <mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-    MiniportReturnNetBufferLists</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+    MiniportReturnNetBufferLists</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_SendRcv_Function |
 
@@ -115,13 +113,13 @@ If the NDIS_RECEIVE_FLAGS_RESOURCES flag in the
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
+<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+   MiniportReturnNetBufferLists</a>
+
+<a href="..\ndis\nc-ndis-protocol_receive_net_buffer_lists.md">
+   ProtocolReceiveNetBufferLists</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<mshelp:link keywords="netvista.protocolreceivenetbufferlists" tabindex="0"><i>
-   ProtocolReceiveNetBufferLists</i></mshelp:link>
-
-<mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-   MiniportReturnNetBufferLists</i></mshelp:link>
 
  
 

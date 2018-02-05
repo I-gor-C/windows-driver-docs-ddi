@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b41f6539-293f-47ed-b720-5053574a1841
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET structure [Network Drivers Starting with Windows Vista], netvista.rilpsmediaconfigurationset, *LPRILPSMEDIACONFIGURATIONSET
+ms.keywords : netvista.rilpsmediaconfigurationset, *LPRILPSMEDIACONFIGURATIONSET, ntddrilapitypes/RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET structure [Network Drivers Starting with Windows Vista], RILPSMEDIACONFIGURATIONSET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET"
+req.typenames : RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
 ---
 
 # RILPSMEDIACONFIGURATIONSET structure
@@ -74,7 +74,4 @@ typedef struct _RILPSMEDIACONFIGURATIONSET {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : A390D684-C675-4140-8E8E-8330FB3192E4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorportEtwEventOpcodeResume, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, StorportEtwLevelVerbose, StorPortEtwEvent2, StorportEtwEventOpcodeStart, storage.storportetwevent2, StorportEtwLevelLogAlways, storport/StorPortEtwEvent2, StorportEtwEventOpcodeDC_Start, StorportEtwLevelInformational, StorportEtwEventOpcodeDC_Stop, STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, StorportEtwEventOpcodeExtension, StorPortEtwEvent2 routine [Storage Devices], StorportEtwEventOpcodeSuspend, StorportEtwEventOpcodeReceive, STORPORT_ETW_EVENT_KEYWORD_POWER, StorportEtwEventOpcodeReply, StorportEtwLevelError, STORPORT_ETW_EVENT_KEYWORD_IO, StorportEtwEventOpcodeInfo, StorportEtwLevelCritical, StorportEtwEventOpcodeStop, StorportEtwLevelWarning
+ms.keywords : storport/StorPortEtwEvent2, StorportEtwLevelWarning, StorportEtwEventOpcodeInfo, StorportEtwEventOpcodeStart, STORPORT_ETW_EVENT_KEYWORD_POWER, StorportEtwLevelCritical, StorportEtwEventOpcodeResume, StorportEtwEventOpcodeDC_Stop, StorportEtwEventOpcodeSuspend, StorportEtwEventOpcodeReply, StorPortEtwEvent2, StorportEtwLevelLogAlways, StorportEtwEventOpcodeExtension, StorportEtwLevelError, STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, STORPORT_ETW_EVENT_KEYWORD_IO, StorportEtwLevelInformational, StorportEtwEventOpcodeDC_Start, StorPortEtwEvent2 routine [Storage Devices], storage.storportetwevent2, StorportEtwEventOpcodeStop, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, StorportEtwLevelVerbose, StorportEtwEventOpcodeReceive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -395,20 +395,17 @@ Events generated from StorPort miniport drivers are published to the "Microsoft-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8.1. Available in starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportetwevent4.md">StorPortEtwEvent4</a>
-
 <a href="..\storport\nf-storport-storportetwevent8.md">StorPortEtwEvent8</a>
+
+<a href="..\storport\nf-storport-storportetwevent4.md">StorPortEtwEvent4</a>
 
  
 

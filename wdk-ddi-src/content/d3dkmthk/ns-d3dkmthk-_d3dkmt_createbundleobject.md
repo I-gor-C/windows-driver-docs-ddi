@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dbb01112-9d28-4dbf-88c7-3304d9d6a661
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt-createbundleobject, D3DKMT_CREATEBUNDLEOBJECT, _D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT structure [Display Devices], d3dkmthk/D3DKMT_CREATEBUNDLEOBJECT
+ms.keywords : D3DKMT_CREATEBUNDLEOBJECT structure [Display Devices], display.d3dkmt-createbundleobject, d3dkmthk/D3DKMT_CREATEBUNDLEOBJECT, _D3DKMT_CREATEBUNDLEOBJECT, D3DKMT_CREATEBUNDLEOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,4 @@ An array of pointers to object attributes for DXGK objects.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h |

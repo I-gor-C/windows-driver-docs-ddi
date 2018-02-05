@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 06bb49bc-56e6-42fc-ae52-c954507d2a3f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcFlushCache routine [Installable File System Drivers], ntifs/CcFlushCache, ifsk.ccflushcache, CcFlushCache, ccref_089656c6-a12e-4e74-a72d-7f0182f3c3dd.xml
+ms.keywords : ntifs/CcFlushCache, ifsk.ccflushcache, ccref_089656c6-a12e-4e74-a72d-7f0182f3c3dd.xml, CcFlushCache, CcFlushCache routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,24 +89,20 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539143">CcIsFileCached</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 
 <a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 
-<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
-
 <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539143">CcIsFileCached</a>
 
  
 

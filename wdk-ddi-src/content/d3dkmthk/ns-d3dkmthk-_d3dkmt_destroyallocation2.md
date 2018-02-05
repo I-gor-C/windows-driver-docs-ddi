@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A51C5F98-5979-436A-9E7E-EA54A1469940
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_destroyallocation2, D3DKMT_DESTROYALLOCATION2, D3DKMT_DESTROYALLOCATION2 structure [Display Devices], _D3DKMT_DESTROYALLOCATION2, d3dkmthk/D3DKMT_DESTROYALLOCATION2
+ms.keywords : "_D3DKMT_DESTROYALLOCATION2, display.d3dkmt_destroyallocation2, D3DKMT_DESTROYALLOCATION2 structure [Display Devices], D3DKMT_DESTROYALLOCATION2, d3dkmthk/D3DKMT_DESTROYALLOCATION2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,16 +79,14 @@ typedef struct _D3DKMT_DESTROYALLOCATION2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroyallocation2.md">D3DKMTDestroyAllocation2</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_destroyallocation2flags.md">D3DDDICB_DESTROYALLOCATION2FLAGS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : CA189010-0BEB-420A-BE69-5F7FEE322FE3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceQueryPropertyEx, wdf.wdfdevicequerypropertyex, WdfDeviceQueryPropertyEx method, PFN_WDFDEVICEQUERYPROPERTYEX, wdfdevice/WdfDeviceQueryPropertyEx
+ms.keywords : WdfDeviceQueryPropertyEx method, WdfDeviceQueryPropertyEx, wdfdevice/WdfDeviceQueryPropertyEx, wdf.wdfdevicequerypropertyex, PFN_WDFDEVICEQUERYPROPERTYEX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,20 +136,18 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | APC_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : c6da4cc9-294b-4cb7-80c8-8adee8d4c40b
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bltooth.brb_header, BRB_HEADER structure [Bluetooth Devices], bthddi/BRB_HEADER, bth_structs_69a21ba7-b425-45ec-bb2d-dd76a6cb8342.xml, BRB_HEADER, _BRB_HEADER
+ms.keywords : BRB_HEADER, bth_structs_69a21ba7-b425-45ec-bb2d-dd76a6cb8342.xml, bthddi/BRB_HEADER, BRB_HEADER structure [Bluetooth Devices], _BRB_HEADER, bltooth.brb_header
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -186,8 +186,8 @@ For internal use only. Do not use.
 ## Remarks
 The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
     structure is used by all BRB structures that are used as the input buffer for 
-    <mshelp:link keywords="bltooth.ioctl_internal_bth_submit_brb" tabindex="0"><b>
-    IOCTL_INTERNAL_BTH_SUBMIT_BRB</b></mshelp:link> IOCTLs.
+    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">
+    IOCTL_INTERNAL_BTH_SUBMIT_BRB</a> IOCTLs.
 
 Profile drivers should not modify any of the members of the BRB_HEADER structure except 
     <b>ClientContext</b>.
@@ -195,18 +195,16 @@ Profile drivers should not modify any of the members of the BRB_HEADER structure
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
 
-<a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
-
 <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+
+<a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
 
  
 

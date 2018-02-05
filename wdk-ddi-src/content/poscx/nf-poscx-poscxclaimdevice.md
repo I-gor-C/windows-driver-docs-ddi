@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 16EB583C-FB61-4811-A691-3FBD159F8FD0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : poscx/PosCxClaimDevice, pos.poscxclaimdevice, PosCxClaimDevice function, PosCxClaimDevice
+ms.keywords : pos.poscxclaimdevice, poscx/PosCxClaimDevice, PosCxClaimDevice, PosCxClaimDevice function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,11 +95,6 @@ Possible return values are:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

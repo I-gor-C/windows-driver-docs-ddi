@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fd61184f-0502-492d-9014-6afbfd70c189
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, ndis_pci_properties_ref_46b46f9e-32d9-47fb-ad16-bb8b56a5d5bd.xml, _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES, ntddndis/NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, *PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES, netvista.ndis_pci_device_custom_properties, NDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES
+ms.keywords : ntddndis/PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES, ndis_pci_properties_ref_46b46f9e-32d9-47fb-ad16-bb8b56a5d5bd.xml, PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES, netvista.ndis_pci_device_custom_properties, ntddndis/NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, NDIS_PCI_DEVICE_CUSTOM_PROPERTIES, NDIS_PCI_DEVICE_CUSTOM_PROPERTIES structure [Network Drivers Starting with Windows Vista], *PNDIS_PCI_DEVICE_CUSTOM_PROPERTIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -152,33 +152,31 @@ Some high performance miniport adapters can adjust the hardware configuration an
     this information during initialization, NDIS queries the custom PCI properties of PCI adapters and
     provides the results in 
     <b>PciDeviceCustomProperties</b> member of the 
-    <mshelp:link keywords="netvista.ndis_miniport_init_parameters" tabindex="0"><b>
-    NDIS_MINIPORT_INIT_PARAMETERS</b></mshelp:link> structure. The type and speed of the PCI bus is also available
+    <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">
+    NDIS_MINIPORT_INIT_PARAMETERS</a> structure. The type and speed of the PCI bus is also available
     through the 
-    <mshelp:link keywords="netvista.oid_gen_pci_device_custom_properties" tabindex="0">
-    OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</mshelp:link> OID request and the 
-    <mshelp:link keywords="netvista.guid_ndis_gen_pci_device_custom_properties" tabindex="0"><b>
-    GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</b></mshelp:link> WMI GUID.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-pci-device-custom-properties">
+    OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</a> OID request and the 
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566745">
+    GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</a> WMI GUID.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="..\ndis\ns-ndis-_ndis_miniport_init_parameters.md">NDIS_MINIPORT_INIT_PARAMETERS</a>
 
-<mshelp:link keywords="netvista.oid_gen_pci_device_custom_properties" tabindex="0">
-   OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</mshelp:link>
-
-<mshelp:link keywords="netvista.guid_ndis_gen_pci_device_custom_properties" tabindex="0"><b>
-   GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</b></mshelp:link>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566745">
+   GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-pci-device-custom-properties">
+   OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES</a>
 
  
 

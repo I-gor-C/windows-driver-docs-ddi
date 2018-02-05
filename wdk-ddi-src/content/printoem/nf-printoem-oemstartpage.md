@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 86cee994-2dfe-4eaf-906b-ce6d9051399e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMStartPage, printoem/OEMStartPage, OEMStartPage function [Print Devices], print_unidrv-pscript_rendering_df5731ee-40be-45e1-8dbb-b7893ec27622.xml, print.oemstartpage
+ms.keywords : OEMStartPage, OEMStartPage function [Print Devices], print.oemstartpage, printoem/OEMStartPage, print_unidrv-pscript_rendering_df5731ee-40be-45e1-8dbb-b7893ec27622.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

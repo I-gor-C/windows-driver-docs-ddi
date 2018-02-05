@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0c9db77e-6e5d-45cd-a52c-dcc3acf5cba0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint::SetCommand, SetCommand method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2, IDebugBreakpoint2::SetCommand, IDebugBreakpoint interface [Windows Debugging], SetCommand method, IDebugBreakpoint2 interface [Windows Debugging], SetCommand method, dbgeng/IDebugBreakpoint2::SetCommand, debugger.setcommand, ComOther_166ee15d-c9e1-466f-9337-a6d20e9355ee.xml, SetCommand, dbgeng/IDebugBreakpoint::SetCommand, SetCommand method [Windows Debugging], IDebugBreakpoint2 interface, SetCommand method [Windows Debugging]
+ms.keywords : dbgeng/IDebugBreakpoint2::SetCommand, SetCommand, IDebugBreakpoint2 interface [Windows Debugging], SetCommand method, IDebugBreakpoint::SetCommand, IDebugBreakpoint interface [Windows Debugging], SetCommand method, dbgeng/IDebugBreakpoint::SetCommand, IDebugBreakpoint2, debugger.setcommand, SetCommand method [Windows Debugging], IDebugBreakpoint interface, ComOther_166ee15d-c9e1-466f-9337-a6d20e9355ee.xml, IDebugBreakpoint2::SetCommand, SetCommand method [Windows Debugging], SetCommand method [Windows Debugging], IDebugBreakpoint2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,11 +90,6 @@ For more information about breakpoint properties, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A7EE4FC5-420A-419A-98D1-3411C29F1990
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, *PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure pointer [Audio Devices], audio.ksattribute_audiosignalprocessing_mode, ksmedia/KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure [Audio Devices], ksmedia/PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
+ms.keywords : audio.ksattribute_audiosignalprocessing_mode, tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure [Audio Devices], PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure pointer [Audio Devices], ksmedia/KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, ksmedia/PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, *PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, *PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
+req.typenames : "*PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE"
 ---
 
 # tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure
@@ -66,7 +66,4 @@ The SignalProcessingMode member specifies the unique GUIDs of the SignalProcessi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a4bfdc26-46a9-404e-9cd0-10dabba01dc2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILMSGINDELIVER structure [Network Drivers Starting with Windows Vista], netvista.rilmsgindeliver, *LPRILMSGINDELIVER, ntddrilapitypes/RILMSGINDELIVER, RILMSGINDELIVER
+ms.keywords : RILMSGINDELIVER structure [Network Drivers Starting with Windows Vista], *LPRILMSGINDELIVER, netvista.rilmsgindeliver, RILMSGINDELIVER, ntddrilapitypes/RILMSGINDELIVER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,7 +99,4 @@ typedef struct _RILMSGINDELIVER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

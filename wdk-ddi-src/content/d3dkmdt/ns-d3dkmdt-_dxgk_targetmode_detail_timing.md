@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bf5e53fa-bafd-4325-be8e-97d1c6aa334e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_TARGETMODE_DETAIL_TIMING, display.dxgk_targetmode_detail_timing, DXGK_TARGETMODE_DETAIL_TIMING structure [Display Devices], DmStructs_e09b214e-5cd4-430e-b5ba-ece083bbb71c.xml, d3dkmdt/DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING"
+ms.keywords : d3dkmdt/DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING structure [Display Devices], DXGK_TARGETMODE_DETAIL_TIMING, display.dxgk_targetmode_detail_timing, _DXGK_TARGETMODE_DETAIL_TIMING, DmStructs_e09b214e-5cd4-430e-b5ba-ece083bbb71c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,14 @@ typedef struct _DXGK_TARGETMODE_DETAIL_TIMING {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_signal_standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a>
-
 <a href="..\d3dkmdt\ns-d3dkmdt-_displayid_detailed_timing_type_i.md">DISPLAYID_DETAILED_TIMING_TYPE_I</a>
+
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_video_signal_standard.md">D3DKMDT_VIDEO_SIGNAL_STANDARD</a>
 
  
 

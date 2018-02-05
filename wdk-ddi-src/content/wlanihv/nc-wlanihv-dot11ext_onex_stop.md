@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -93,8 +93,8 @@ When calling the
       operation is pending. The IHV Extensions DLL initiates the authentication with the AP by calling 
       <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a>. When the 802.1X
       authentication operation is completed, the operating system calls the 
-      <mshelp:link keywords="netvista.dot11extihvonexindicateresult" tabindex="0"><i>
-      Dot11ExtIhvOneXIndicateResult</i></mshelp:link> IHV Handler function.
+      <a href="..\wlanihv\nc-wlanihv-dot11extihv_onex_indicate_result.md">
+      Dot11ExtIhvOneXIndicateResult</a> IHV Handler function.
 
 </li>
 <li>
@@ -106,39 +106,34 @@ After the IHV Extensions DLL calls
 
 </li>
 </ul>For more information about using the 802.1X module for authentication, see 
-    <mshelp:link keywords="netvista.interface_to_the_native_802_11_802_1x_module" tabindex="0">Interface to the Native
-    802.11 802.1X Module</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/interface-to-the-native-802-11-802-1x-module">Interface to the Native
+    802.11 802.1X Module</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.dot11extpostassociatecompletion" tabindex="0"><b>
-   Dot11ExtPostAssociateCompletion</b></mshelp:link>
-
-<a href="..\wlanihv\nc-wlanihv-dot11ext_process_onex_packet.md">Dot11ExtProcessOneXPacket</a>
-
-<mshelp:link keywords="netvista.dot11extihvonexindicateresult" tabindex="0"><i>
-   Dot11ExtIhvOneXIndicateResult</i></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a>
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
+   Dot11ExtIhvPerformPostAssociate</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
-<mshelp:link keywords="netvista.dot11extihvperformpostassociate" tabindex="0"><i>
-   Dot11ExtIhvPerformPostAssociate</i></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11ext_post_associate_completion.md">
+   Dot11ExtPostAssociateCompletion</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11ext_process_onex_packet.md">Dot11ExtProcessOneXPacket</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_onex_indicate_result.md">
+   Dot11ExtIhvOneXIndicateResult</a>
 
  
 

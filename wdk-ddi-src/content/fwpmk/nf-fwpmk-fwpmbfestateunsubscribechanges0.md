@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1a84401a-d7da-43d2-925d-0d6ed370c980
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_2_fwpm_2b1f650b-81ab-4dd9-be56-97039f86ac1e.xml, netvista.fwpmbfestateunsubscribechanges0, fwpmk/FwpmBfeStateUnsubscribeChanges0, FwpmBfeStateUnsubscribeChanges0 function [Network Drivers Starting with Windows Vista], FwpmBfeStateUnsubscribeChanges0
+ms.keywords : netvista.fwpmbfestateunsubscribechanges0, FwpmBfeStateUnsubscribeChanges0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_2_fwpm_2b1f650b-81ab-4dd9-be56-97039f86ac1e.xml, fwpmk/FwpmBfeStateUnsubscribeChanges0, FwpmBfeStateUnsubscribeChanges0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 
@@ -43,8 +43,8 @@ req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 The 
   <b>FwpmBfeStateUnsubscribeChanges0</b> function deregisters a base filtering engine (BFE) callback function that was previously
   registered by calling the 
-  <mshelp:link keywords="netvista.fwpmbfestatesubscribechanges0" tabindex="0"><b>
-  FwpmBfeStateSubscribeChanges0</b></mshelp:link> function.
+  <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
+  FwpmBfeStateSubscribeChanges0</a> function.
 <div class="alert"><b>Note</b>  <b>FwpmBfeStateUnsubscribeChanges0</b> is a specific version of <b>FwpmBfeStateUnsubscribeChanges</b>. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div><div> </div>
 
 ## Syntax
@@ -102,33 +102,30 @@ An error occurred.
 A callout driver calls the 
     <b>FwpmBfeStateUnsubscribeChanges0</b> function to deregister a callback function that was previously
     registered by calling the 
-    <mshelp:link keywords="netvista.fwpmbfestatesubscribechanges0" tabindex="0"><b>
-    FwpmBfeStateSubscribeChanges0</b></mshelp:link> function.
+    <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
+    FwpmBfeStateSubscribeChanges0</a> function.
 
 If a callout driver registers a callback function by calling the 
-    <mshelp:link keywords="netvista.fwpmbfestatesubscribechanges0" tabindex="0"><b>
-    FwpmBfeStateSubscribeChanges0</b></mshelp:link> function, it must deregister the callback function before the callout
+    <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
+    FwpmBfeStateSubscribeChanges0</a> function, it must deregister the callback function before the callout
     driver can be unloaded.
 
-Do not call <b>FwpmBfeStateUnsubscribeChanges0</b> from a callback function that your driver previously registered by calling <mshelp:link keywords="netvista.fwpmbfestatesubscribechanges0" tabindex="0"><b>
-    FwpmBfeStateSubscribeChanges0</b></mshelp:link>. Doing so can cause a deadlock.
+Do not call <b>FwpmBfeStateUnsubscribeChanges0</b> from a callback function that your driver previously registered by calling <a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
+    FwpmBfeStateSubscribeChanges0</a>. Doing so can cause a deadlock.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpmk.h (include Fwpmk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.fwpmbfestatesubscribechanges0" tabindex="0"><b>
-   FwpmBfeStateSubscribeChanges0</b></mshelp:link>
+<a href="..\fwpmk\nf-fwpmk-fwpmbfestatesubscribechanges0.md">
+   FwpmBfeStateSubscribeChanges0</a>
 
  
 

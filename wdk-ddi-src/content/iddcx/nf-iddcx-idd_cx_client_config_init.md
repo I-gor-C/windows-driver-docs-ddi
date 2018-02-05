@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0b2cf0d6-1d69-4917-9e97-f8f2563e6d3c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDD_CX_CLIENT_CONFIG_INIT, iddcx/IDD_CX_CLIENT_CONFIG_INIT, IDD_CX_CLIENT_CONFIG_INIT method [Display Devices], display.idd_cx_client_config_init
+ms.keywords : IDD_CX_CLIENT_CONFIG_INIT method [Display Devices], display.idd_cx_client_config_init, IDD_CX_CLIENT_CONFIG_INIT, iddcx/IDD_CX_CLIENT_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,7 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

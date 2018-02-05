@@ -81,6 +81,4 @@ For more information about SerCx2, SerCx, and Serial.sys, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddser.h (include Ntddser.h) |
-| **IRQL** |  |

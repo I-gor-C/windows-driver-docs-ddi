@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : 0bc28853-1c00-42d3-a269-198093d64dd7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : biometric.winbio_blank_payload, biometric_ref_4a39daf0-52f5-40bf-abc6-40cd3d866f39.xml, _WINBIO_BLANK_PAYLOAD, winbio_ioctl/PWINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD, winbio_ioctl/WINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD structure [Biometric Devices], *PWINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD structure pointer [Biometric Devices]
+ms.keywords : WINBIO_BLANK_PAYLOAD structure [Biometric Devices], WINBIO_BLANK_PAYLOAD, winbio_ioctl/WINBIO_BLANK_PAYLOAD, _WINBIO_BLANK_PAYLOAD, winbio_ioctl/PWINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD structure pointer [Biometric Devices], biometric_ref_4a39daf0-52f5-40bf-abc6-40cd3d866f39.xml, biometric.winbio_blank_payload, *PWINBIO_BLANK_PAYLOAD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WINBIO_BLANK_PAYLOAD, *PWINBIO_BLANK_PAYLOAD
+req.typenames : "*PWINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD"
 req.product : Windows 10 or later.
 ---
 
@@ -101,7 +101,5 @@ The device is in the middle of a vendor-specific operation.  This should only be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |

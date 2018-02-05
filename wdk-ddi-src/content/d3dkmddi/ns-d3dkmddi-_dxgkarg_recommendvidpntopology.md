@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9a3efdc8-4534-4de6-89f8-42d94ba8b9a6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_960673e2-caf0-4f46-9b8c-c1da025fb6bf.xml, DXGKARG_RECOMMENDVIDPNTOPOLOGY structure [Display Devices], display.dxgkarg_recommendvidpntopology, _DXGKARG_RECOMMENDVIDPNTOPOLOGY, DXGKARG_RECOMMENDVIDPNTOPOLOGY, d3dkmddi/DXGKARG_RECOMMENDVIDPNTOPOLOGY
+ms.keywords : d3dkmddi/DXGKARG_RECOMMENDVIDPNTOPOLOGY, DXGKARG_RECOMMENDVIDPNTOPOLOGY structure [Display Devices], _DXGKARG_RECOMMENDVIDPNTOPOLOGY, display.dxgkarg_recommendvidpntopology, DmStructs_960673e2-caf0-4f46-9b8c-c1da025fb6bf.xml, DXGKARG_RECOMMENDVIDPNTOPOLOGY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,16 +74,14 @@ D3DDDI_ID_ALL or the identifier of a particular video present source on the disp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendvidpntopology.md">DxgkDdiRecommendVidPnTopology</a>
-
 <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendvidpntopology_reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendvidpntopology.md">DxgkDdiRecommendVidPnTopology</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 02bcc901-91f4-40fc-ab4b-de958e00f862
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/KeReadStateQueue, KeReadStateQueue function [Installable File System Drivers], keref_ae112949-4020-4501-8403-da1075d854c6.xml, KeReadStateQueue, ifsk.kereadstatequeue
+ms.keywords : keref_ae112949-4020-4501-8403-da1075d854c6.xml, KeReadStateQueue, ifsk.kereadstatequeue, ntifs/KeReadStateQueue, KeReadStateQueue function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b92072a6-fa6e-4b8d-83c3-b2844443f5c8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfioqueuestopsynchronously, wdfio/WdfIoQueueStopSynchronously, DFQueueObjectRef_9f415317-56ca-4c4f-9f33-560258351999.xml, PFN_WDFIOQUEUESTOPSYNCHRONOUSLY, kmdf.wdfioqueuestopsynchronously, WdfIoQueueStopSynchronously, WdfIoQueueStopSynchronously method
+ms.keywords : WdfIoQueueStopSynchronously method, DFQueueObjectRef_9f415317-56ca-4c4f-9f33-560258351999.xml, wdfio/WdfIoQueueStopSynchronously, kmdf.wdfioqueuestopsynchronously, WdfIoQueueStopSynchronously, PFN_WDFIOQUEUESTOPSYNCHRONOUSLY, wdf.wdfioqueuestopsynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,12 +76,11 @@ Do not call <b>WdfIoQueueStopSynchronously</b> from the following queue object e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove |
 

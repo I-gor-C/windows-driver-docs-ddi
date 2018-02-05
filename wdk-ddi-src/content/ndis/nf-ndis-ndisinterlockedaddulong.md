@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d2e31f3c-7152-4df9-8206-a15dee9b641f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInterlockedAddUlong, NdisInterlockedAddUlong macro [Network Drivers Starting with Windows Vista], netvista.ndisinterlockedaddulong, ndis_interlocked_ref_0b4862c9-6897-4b73-ab23-5cd2ede3e82a.xml, ndis/NdisInterlockedAddUlong
+ms.keywords : ndis/NdisInterlockedAddUlong, netvista.ndisinterlockedaddulong, NdisInterlockedAddUlong macro [Network Drivers Starting with Windows Vista], NdisInterlockedAddUlong, ndis_interlocked_ref_0b4862c9-6897-4b73-ab23-5cd2ede3e82a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -58,15 +58,17 @@ VOID NdisInterlockedAddUlong(
 
 `_Addend`
 
-TBD
+A pointer to the variable for which the value is to be adjusted by the given 
+     <i>Increment</i> .
 
 `_Increment`
 
-TBD
+The value to be added to that at 
+     <i>Addend</i> .
 
 `_SpinLock`
 
-TBD
+A pointer to a caller-initialized spin lock.
 
 
 ## Return Value
@@ -96,26 +98,23 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 
 <a href="..\ndis\nf-ndis-ndisretrieveulong.md">NdisRetrieveUlong</a>
-
-<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 
 <a href="..\ndis\nf-ndis-ndisstoreulong.md">NdisStoreUlong</a>
 
 <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 
  
 

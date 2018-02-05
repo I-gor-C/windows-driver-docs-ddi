@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7b2dcb75-f674-4a66-a483-8c3f644390c1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects3::GetSystemIdsByIndex, GetSystemIdsByIndex method [Windows Debugging], GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects3 interface, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects4 interface, debugger.getsystemidsbyindex, IDebugSystemObjects4 interface [Windows Debugging], GetSystemIdsByIndex method, IDebugSystemObjects4, IDebugSystemObjects_d1d7e689-407b-4d84-b1ce-75736b761089.xml, GetSystemIdsByIndex, IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects3 interface [Windows Debugging], GetSystemIdsByIndex method, dbgeng/IDebugSystemObjects3::GetSystemIdsByIndex
+ms.keywords : IDebugSystemObjects3 interface [Windows Debugging], GetSystemIdsByIndex method, IDebugSystemObjects3::GetSystemIdsByIndex, debugger.getsystemidsbyindex, IDebugSystemObjects4::GetSystemIdsByIndex, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects3 interface, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects_d1d7e689-407b-4d84-b1ce-75736b761089.xml, GetSystemIdsByIndex, dbgeng/IDebugSystemObjects3::GetSystemIdsByIndex, IDebugSystemObjects4 interface [Windows Debugging], GetSystemIdsByIndex method, GetSystemIdsByIndex method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,22 +95,17 @@ The index of the first target is zero.  The index of the last target is the numb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugsystemobjects4.md">IDebugSystemObjects4</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541386">Debugging Session and Execution Model</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
 
  
 

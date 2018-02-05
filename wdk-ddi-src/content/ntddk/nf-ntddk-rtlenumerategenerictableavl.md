@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 59EE8C41-1951-4EA7-BE49-B39C15B082E9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlEnumerateGenericTableAvl routine [Installable File System Drivers], RtlEnumerateGenericTableAvl, ntddk/RtlEnumerateGenericTableAvl, ifsk.rtlenumerategenerictableavl
+ms.keywords : RtlEnumerateGenericTableAvl, ifsk.rtlenumerategenerictableavl, ntddk/RtlEnumerateGenericTableAvl, RtlEnumerateGenericTableAvl routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,24 +97,22 @@ Callers of <b>RtlEnumerateGenericTableAvl</b> must be running at IRQL &lt; DISPA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 
-<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
 
 <a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
 
-<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
 
 <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplayingavl.md">RtlEnumerateGenericTableWithoutSplayingAvl</a>
 

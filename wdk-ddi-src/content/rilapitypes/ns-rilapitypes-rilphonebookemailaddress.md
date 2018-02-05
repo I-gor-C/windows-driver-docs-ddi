@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 322939c8-c7c9-405b-9f78-08ae9c642b42
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPHONEBOOKEMAILADDRESS, netvista.rilphonebookemailaddress_2, *LPRILPHONEBOOKEMAILADDRESS
+ms.keywords : RILPHONEBOOKEMAILADDRESS structure [Network Drivers Starting with Windows Vista], RILPHONEBOOKEMAILADDRESS, netvista.rilphonebookemailaddress_2, *LPRILPHONEBOOKEMAILADDRESS, rilapitypes/RILPHONEBOOKEMAILADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,4 @@ typedef struct _RILPHONEBOOKEMAILADDRESS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c903485f-205e-4679-99a7-2a644731fa77
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.mmsetaddressrangemodified, MmSetAddressRangeModified routine [Installable File System Drivers], MmSetAddressRangeModified, ntifs/MmSetAddressRangeModified, mmref_4d6ef497-4a72-4fed-8422-365708740cc7.xml
+ms.keywords : mmref_4d6ef497-4a72-4fed-8422-365708740cc7.xml, MmSetAddressRangeModified, MmSetAddressRangeModified routine [Installable File System Drivers], ifsk.mmsetaddressrangemodified, ntifs/MmSetAddressRangeModified
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,11 @@ Callers of <b>MmSetAddressRangeModified</b> must be running at IRQL &lt; DISPATC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0EDC524E-12BB-49AD-AA12-A7D9CF7D2F9C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxEndpointNoPingResponseError method [Buses], UcxEndpointNoPingResponseError, ucxendpoint/UcxEndpointNoPingResponseError, buses._ucxendpointnopingresponseerror
+ms.keywords : buses._ucxendpointnopingresponseerror, UcxEndpointNoPingResponseError method [Buses], UcxEndpointNoPingResponseError, ucxendpoint/UcxEndpointNoPingResponseError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,14 +67,13 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

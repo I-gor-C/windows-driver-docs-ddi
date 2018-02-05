@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : dc9acd16-c515-4e47-9a0b-9dec46e30f74
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : dmusprop/PSYNTHVOICEPRIORITY_INSTANCE, audio.synthvoicepriority_instance, *PSYNTHVOICEPRIORITY_INSTANCE, dmusprop/SYNTHVOICEPRIORITY_INSTANCE, PSYNTHVOICEPRIORITY_INSTANCE structure pointer [Audio Devices], PSYNTHVOICEPRIORITY_INSTANCE, _SYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE, aud-prop_86a44512-a1b5-4380-a96a-5e9184ff71c2.xml, SYNTHVOICEPRIORITY_INSTANCE structure [Audio Devices]
+ms.keywords : audio.synthvoicepriority_instance, dmusprop/SYNTHVOICEPRIORITY_INSTANCE, dmusprop/PSYNTHVOICEPRIORITY_INSTANCE, _SYNTHVOICEPRIORITY_INSTANCE, aud-prop_86a44512-a1b5-4380-a96a-5e9184ff71c2.xml, SYNTHVOICEPRIORITY_INSTANCE structure [Audio Devices], SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE, PSYNTHVOICEPRIORITY_INSTANCE structure pointer [Audio Devices], PSYNTHVOICEPRIORITY_INSTANCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE
+req.typenames : "*PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE"
 ---
 
 # _SYNTHVOICEPRIORITY_INSTANCE structure
@@ -66,9 +66,6 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537407">KSPRO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
 ## See Also

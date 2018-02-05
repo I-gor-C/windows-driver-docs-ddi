@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 042ef9d9-a980-41eb-a396-e03658ea072a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamdef/wiasReadPropFloat, image.wiasreadpropfloat, wiasReadPropFloat, wiasReadPropFloat function [Imaging Devices], wiasFncs_9b143e96-64a5-4de3-b40d-c542bc440dc0.xml
+ms.keywords : wiasReadPropFloat, image.wiasreadpropfloat, wiamdef/wiasReadPropFloat, wiasFncs_9b143e96-64a5-4de3-b40d-c542bc440dc0.xml, wiasReadPropFloat function [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -86,24 +86,21 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropbin.md">wiasReadPropBin</a>
-
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
-
 <a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
 
+<a href="..\wiamdef\nf-wiamdef-wiasreadpropbin.md">wiasReadPropBin</a>
+
 <a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiasreadpropstr.md">wiasReadPropStr</a>
 

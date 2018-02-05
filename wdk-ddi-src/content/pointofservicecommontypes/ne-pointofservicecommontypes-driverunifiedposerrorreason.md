@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 2bbf5fcf-666e-4265-95cf-7e04670d59da
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Illegal, UnknownErrorReason, pointofservicecommontypes/Busy, Timeout, Extended, pointofservicecommontypes/Closed, pointofservicecommontypes/Illegal, DriverUnifiedPosErrorReason, pointofservicecommontypes/ NoHardware, Disabled, Busy, pointofservicecommontypes/Extended, pointofservicecommontypes/DriverUnifiedPosErrorReason, pos.unifiedposerrorreason, pointofservicecommontypes/Offline, pointofservicecommontypes/Disabled, pointofservicecommontypes/Failure, pointofservicecommontypes/Timeout, Offline, Closed, DriverUnifiedPosErrorReason enumeration, pointofservicecommontypes/NoService, NoHardware, pointofservicecommontypes/UnknownErrorReason, NoService, Failure
+ms.keywords : pointofservicecommontypes/NoService, Busy, Extended, pos.unifiedposerrorreason, pointofservicecommontypes/Failure, Failure, pointofservicecommontypes/UnknownErrorReason, Offline, pointofservicecommontypes/DriverUnifiedPosErrorReason, pointofservicecommontypes/Timeout, pointofservicecommontypes/Busy, pointofservicecommontypes/Extended, NoService, pointofservicecommontypes/ NoHardware, pointofservicecommontypes/Offline, DriverUnifiedPosErrorReason enumeration, Timeout, pointofservicecommontypes/Closed, UnknownErrorReason, DriverUnifiedPosErrorReason, NoHardware, Illegal, pointofservicecommontypes/Disabled, pointofservicecommontypes/Illegal, Disabled, Closed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -122,7 +122,4 @@ typedef enum _DriverUnifiedPosErrorReason {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

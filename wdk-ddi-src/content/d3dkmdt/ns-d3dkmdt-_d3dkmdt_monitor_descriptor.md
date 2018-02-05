@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4bdce35f-adce-4898-8ef5-011a5476065a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DKMDT_MONITOR_DESCRIPTOR, D3DKMDT_MONITOR_DESCRIPTOR structure [Display Devices], d3dkmdt/D3DKMDT_MONITOR_DESCRIPTOR, D3DKMDT_MONITOR_DESCRIPTOR, display.d3dkmdt_monitor_descriptor, DmStructs_760a75c4-4db4-445e-a63b-7e77b6b69090.xml"
+ms.keywords : d3dkmdt/D3DKMDT_MONITOR_DESCRIPTOR, D3DKMDT_MONITOR_DESCRIPTOR, display.d3dkmdt_monitor_descriptor, D3DKMDT_MONITOR_DESCRIPTOR structure [Display Devices], DmStructs_760a75c4-4db4-445e-a63b-7e77b6b69090.xml, _D3DKMDT_MONITOR_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,18 +79,16 @@ A value from the <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_monitor_descriptor_type
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568427">Monitor Descriptor Set Interface</a>
+
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_monitor_descriptor_type.md">D3DKMDT_MONITOR_DESCRIPTOR_TYPE</a>
 
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_monitor_capabilities_origin.md">D3DKMDT_MONITOR_CAPABILITIES_ORIGIN</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568427">Monitor Descriptor Set Interface</a>
 
  
 

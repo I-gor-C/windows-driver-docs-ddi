@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9C9A0D46-587C-43F3-808E-38E81CE3EE50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PMM_COPY_ADDRESS structure pointer [Kernel-Mode Driver Architecture], MM_COPY_ADDRESS structure [Kernel-Mode Driver Architecture], PMM_COPY_ADDRESS, kernel.mm_copy_address, MM_COPY_ADDRESS, ntddk/PMM_COPY_ADDRESS, _MM_COPY_ADDRESS, *PMMCOPY_ADDRESS, ntddk/MM_COPY_ADDRESS
+ms.keywords : MM_COPY_ADDRESS, _MM_COPY_ADDRESS, *PMMCOPY_ADDRESS, ntddk/MM_COPY_ADDRESS, ntddk/PMM_COPY_ADDRESS, kernel.mm_copy_address, PMM_COPY_ADDRESS structure pointer [Kernel-Mode Driver Architecture], MM_COPY_ADDRESS structure [Kernel-Mode Driver Architecture], PMM_COPY_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,9 +60,7 @@ This structure is used by the <a href="..\ntddk\nf-ntddk-mmcopymemory.md">MmCopy
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8.1. Supported starting with Windows 8.1. |
 | **Header** | ntddk.h |
 
 ## See Also

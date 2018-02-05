@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c74f5633-49bf-4c8d-8702-89723067753a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaUninitFilter, bdaref_68d86dcd-9a84-4c5f-acf5-8174ab3ba6d8.xml, stream.bdauninitfilter, bdasup/BdaUninitFilter, BdaUninitFilter function [Streaming Media Devices]
+ms.keywords : bdasup/BdaUninitFilter, bdaref_68d86dcd-9a84-4c5f-acf5-8174ab3ba6d8.xml, BdaUninitFilter, stream.bdauninitfilter, BdaUninitFilter function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,20 +70,17 @@ In Windows XP and later, the BDA support driver (<i>Bdasup.sys</i>) automaticall
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>
-
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+<a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>
 
  
 

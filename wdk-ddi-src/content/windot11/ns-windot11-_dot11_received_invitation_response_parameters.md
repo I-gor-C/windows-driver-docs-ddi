@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9DAFC0E0-A3F9-4EF1-8FD1-3213AA1CBD18
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista._dot11_received_invitation_response_parameters, _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, windot11/DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
+ms.keywords : PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, windot11/DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, netvista._dot11_received_invitation_response_parameters, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -103,9 +103,7 @@ The offset, in bytes,  of the array of additional information elements (IEs) rec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

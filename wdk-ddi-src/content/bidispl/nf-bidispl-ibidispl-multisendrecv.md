@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d61d7f58-281c-4c82-a579-aaedbf507bae
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiSpl::MultiSendRecv method [Print Devices], IBidiSpl interface, IBidiSpl::IBidiSpl::MultiSendRecv, _win32_IBidiSpl_MultiSendRecv, IBidiSpl, IBidiSpl::MultiSendRecv method [Print Devices], IBidiSpl interface [Print Devices], IBidiSpl::MultiSendRecv method, gdi.ibidispl_ibidispl__multisendrecv, MultiSendRecv, bidispl/IBidiSpl::IBidiSpl::MultiSendRecv, print.ibidispl_ibidispl__multisendrecv, IBidiSpl::MultiSendRecv
+ms.keywords : IBidiSpl, IBidiSpl::MultiSendRecv method [Print Devices], MultiSendRecv, IBidiSpl interface [Print Devices], IBidiSpl::MultiSendRecv method, gdi.ibidispl_ibidispl__multisendrecv, _win32_IBidiSpl_MultiSendRecv, print.ibidispl_ibidispl__multisendrecv, IBidiSpl::MultiSendRecv, IBidiSpl::MultiSendRecv method [Print Devices], IBidiSpl interface, bidispl/IBidiSpl::IBidiSpl::MultiSendRecv, IBidiSpl::IBidiSpl::MultiSendRecv
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -142,22 +142,19 @@ The BIDI_ACTION_* values are case insensitive strings.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
-<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
 
  
 

@@ -60,19 +60,17 @@ The <b>IBidiSpl</b> interface allows an application or other objects to send a s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Windows |
 | **Header** | bidispl.h |
-| **DLL** | Bidispl.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
-<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiSpl</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiSpl</a>
 
  
 

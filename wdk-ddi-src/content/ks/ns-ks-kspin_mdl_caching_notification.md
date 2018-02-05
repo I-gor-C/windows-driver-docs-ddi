@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 93BAAF88-3F82-4E32-B403-4028ECF21F9A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION, stream.kspin_mdl_caching_notification, ks/PKSPIN_MDL_CACHING_NOTIFICATION, PKSPIN_MDL_CACHING_NOTIFICATION structure pointer [Streaming Media Devices], KSPIN_MDL_CACHING_NOTIFICATION structure [Streaming Media Devices], PKSPIN_MDL_CACHING_NOTIFICATION, ks/KSPIN_MDL_CACHING_NOTIFICATION"
+ms.keywords : PKSPIN_MDL_CACHING_NOTIFICATION structure pointer [Streaming Media Devices], stream.kspin_mdl_caching_notification, ks/KSPIN_MDL_CACHING_NOTIFICATION, *PKSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION structure [Streaming Media Devices], PKSPIN_MDL_CACHING_NOTIFICATION, ks/PKSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ This member is used internally by the operating system.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

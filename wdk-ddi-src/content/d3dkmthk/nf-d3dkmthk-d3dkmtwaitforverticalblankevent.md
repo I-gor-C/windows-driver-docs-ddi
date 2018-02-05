@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aa40633e-1881-4bf4-a57b-f7ee3ce23438
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_9e2c6684-7429-43d7-b43a-0f11aea6807f.xml, D3DKMTWaitForVerticalBlankEvent, display.d3dkmtwaitforverticalblankevent, d3dkmthk/D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent function [Display Devices]
+ms.keywords : display.d3dkmtwaitforverticalblankevent, d3dkmthk/D3DKMTWaitForVerticalBlankEvent, D3DKMTWaitForVerticalBlankEvent function [Display Devices], D3DKMTWaitForVerticalBlankEvent, OpenGL_Functions_9e2c6684-7429-43d7-b43a-0f11aea6807f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,14 +106,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

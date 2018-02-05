@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : D1205C85-6F23-4D08-A146-2FA8C00FD6E9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportgetsystemportnumber, StorPortGetSystemPortNumber routine [Storage Devices], StorPortGetSystemPortNumber, storport/StorPortGetSystemPortNumber
+ms.keywords : storport/StorPortGetSystemPortNumber, StorPortGetSystemPortNumber routine [Storage Devices], storage.storportgetsystemportnumber, StorPortGetSystemPortNumber
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -117,14 +117,10 @@ The address structure pointed to by <i>Address</i> is allocated and formatted as
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

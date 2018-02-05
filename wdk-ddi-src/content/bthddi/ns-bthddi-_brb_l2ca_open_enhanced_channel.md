@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 34CA2A3E-871F-46D4-962A-8EE8D7B8DA15
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "_BRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bltooth.brb_l2ca_open_enhanced_channel, PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth._brb_l2ca_open_enhanced_channel"
+ms.keywords : bthddi/PBRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL, PBRB_L2CA_OPEN_ENHANCED_CHANNEL structure pointer [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], _BRB_L2CA_OPEN_ENHANCED_CHANNEL, bthddi/_BRB_L2CA_OPEN_ENHANCED_CHANNEL, BRB_L2CA_OPEN_ENHANCED_CHANNEL structure [Bluetooth Devices], bltooth._brb_l2ca_open_enhanced_channel, PBRB_L2CA_OPEN_ENHANCED_CHANNEL, bltooth.brb_l2ca_open_enhanced_channel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,8 +101,8 @@ The Bluetooth address of the device for which the connection is intended.
 `Callback`
 
 The 
-     <mshelp:link keywords="bltooth.enhanced_l2cap_callback_function" tabindex="0"><i>Enhanced L2CAP Callback
-     Function</i></mshelp:link> implemented by the profile driver, that the Bluetooth driver stack should call to notify
+     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback_enhanced.md">Enhanced L2CAP Callback
+     Function</a> implemented by the profile driver, that the Bluetooth driver stack should call to notify
      the profile driver about any changes to the enhanced L2CAP connection.
 
 `CallbackContext`
@@ -286,7 +286,5 @@ A value of CM_RETRANSMISSION_AND_FLOW | CM_STREAMING is not supported.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows Versions:\_Supported in Windows 8 and later versions of Windows |
 | **Header** | bthddi.h (include Bthddi.h) |

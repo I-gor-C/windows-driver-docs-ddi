@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : fb0650ee-24a6-4f64-9f16-dded0ccc79cd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iinterruptsync_registerserviceroutine, RegisterServiceRoutine method [Audio Devices], IInterruptSync::RegisterServiceRoutine, RegisterServiceRoutine, IInterruptSync, IInterruptSync interface [Audio Devices], RegisterServiceRoutine method, RegisterServiceRoutine method [Audio Devices], IInterruptSync interface, audmp-routines_92919bdc-00aa-4911-ac3c-58a0807c7212.xml, portcls/IInterruptSync::RegisterServiceRoutine
+ms.keywords : IInterruptSync::RegisterServiceRoutine, IInterruptSync interface [Audio Devices], RegisterServiceRoutine method, RegisterServiceRoutine method [Audio Devices], RegisterServiceRoutine method [Audio Devices], IInterruptSync interface, audio.iinterruptsync_registerserviceroutine, portcls/IInterruptSync::RegisterServiceRoutine, IInterruptSync, RegisterServiceRoutine, audmp-routines_92919bdc-00aa-4911-ac3c-58a0807c7212.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -78,11 +78,7 @@ This method adds the specified routine to the synchronization object's list of I
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

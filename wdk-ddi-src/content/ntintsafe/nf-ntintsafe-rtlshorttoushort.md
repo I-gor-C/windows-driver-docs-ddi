@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6FD7C994-822A-422C-82D8-768BA842B2B2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlShortToUShort, ntintsafe/RtlShortToUShort, RtlShortToUShort function [Kernel-Mode Driver Architecture], kernel.rtlshorttoushort
+ms.keywords : RtlShortToUShort function [Kernel-Mode Driver Architecture], kernel.rtlshorttoushort, ntintsafe/RtlShortToUShort, RtlShortToUShort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,11 +88,6 @@ RtlShortToUInt16
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

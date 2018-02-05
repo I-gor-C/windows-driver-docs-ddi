@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 42519c60-6dc6-4c20-a2e8-954d9610a982
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisReadNetworkAddress, netvista.ndisreadnetworkaddress, ndis_configuration_ref_459fbfae-4235-4f60-9b10-02c60defc236.xml, NdisReadNetworkAddress, NdisReadNetworkAddress function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisreadnetworkaddress, ndis_configuration_ref_459fbfae-4235-4f60-9b10-02c60defc236.xml, ndis/NdisReadNetworkAddress, NdisReadNetworkAddress, NdisReadNetworkAddress function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,16 +66,16 @@ A pointer to a caller-supplied variable in which this function returns the statu
 
 
 
-#### NDIS_STATUS_SUCCESS
-
-The caller can use the address returned at 
-       <i>NetworkAddress</i> for the NIC.
-
-
 #### NDIS_STATUS_FAILURE
 
 There was no NIC address information available in the caller's registry 
        <b>Parameters</b> key or the value stored was not a string.
+
+
+#### NDIS_STATUS_SUCCESS
+
+The caller can use the address returned at 
+       <i>NetworkAddress</i> for the NIC.
 
 `NetworkAddress`
 
@@ -91,8 +91,8 @@ A pointer to a caller-supplied variable in which this function returns the numbe
 `ConfigurationHandle`
 
 The configuration handle returned by the 
-     <mshelp:link keywords="netvista.ndisopenconfigurationex" tabindex="0"><b>
-     NdisOpenConfigurationEx</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">
+     NdisOpenConfigurationEx</a> function.
 
 
 ## Return Value
@@ -143,20 +143,18 @@ Note that NDIS does not validate the value at
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see    NdisReadNetworkAddress (NDIS   5.1)) in Windows XP and later. Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see    NdisReadNetworkAddress (NDIS   5.1)) in Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
-
 <a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
+
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 
  
 

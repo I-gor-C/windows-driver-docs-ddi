@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 45450486-3264-4fc8-8051-f7c48997e3dd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortAllocateMdl routine [Storage Devices], StorPortAllocateMdl, storage.storportallocatemdl, storport/StorPortAllocateMdl, storprt_d80c510f-4cc4-4687-ab5b-9b9b5cf399ce.xml
+ms.keywords : storprt_d80c510f-4cc4-4687-ab5b-9b9b5cf399ce.xml, StorPortAllocateMdl routine [Storage Devices], StorPortAllocateMdl, storage.storportallocatemdl, storport/StorPortAllocateMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -147,11 +147,8 @@ A miniport driver calls the <b>StorPortAllocateMdl</b> routine to allocate an MD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

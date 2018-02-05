@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 95BDB715-E476-48EF-9867-112CF665B66D
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FLTTCFL_AUTO_REPARSE, FLT_CREATEFILE_TARGET_ECP_CONTEXT structure [Installable File System Drivers], PFLT_CREATEFILE_TARGET_ECP_CONTEXT structure pointer [Installable File System Drivers], ifsk.flt_createfile_target_ecp_context, fltkernel/FLT_CREATEFILE_TARGET_ECP_CONTEXT, PFLT_CREATEFILE_TARGET_ECP_CONTEXT, _FLT_CREATEFILE_TARGET_ECP_CONTEXT, *PFLT_CREATEFILE_TARGET_ECP_CONTEXT, fltkernel/PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT
+ms.keywords : FLT_CREATEFILE_TARGET_ECP_CONTEXT, fltkernel/PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT structure [Installable File System Drivers], fltkernel/FLT_CREATEFILE_TARGET_ECP_CONTEXT, _FLT_CREATEFILE_TARGET_ECP_CONTEXT, ifsk.flt_createfile_target_ecp_context, PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLTTCFL_AUTO_REPARSE, *PFLT_CREATEFILE_TARGET_ECP_CONTEXT, PFLT_CREATEFILE_TARGET_ECP_CONTEXT structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FLT_CREATEFILE_TARGET_ECP_CONTEXT, *PFLT_CREATEFILE_TARGET_ECP_CONTEXT
+req.typenames : "*PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT"
 ---
 
 # _FLT_CREATEFILE_TARGET_ECP_CONTEXT structure
@@ -438,18 +438,16 @@ CrossVolumeCreateExit:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available starting with Windows 8. This structure is available starting with Windows 8. |
 | **Header** | fltkernel.h (include FltKernel.h) |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
+<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltreleasefilenameinformation.md">FltReleaseFileNameInformation</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 
  
 

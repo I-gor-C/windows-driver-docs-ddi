@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f22be66a-1f1c-4999-a99e-9a8575313239
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_POWER_THROTTLING_PROCESS_STATE, POWER_THROTTLING_PROCESS_STATE, kernel.power_throttling_process_state, ntddk/POWER_THROTTLING_PROCESS_STATE, POWER_THROTTLING_PROCESS_STATE structure [Kernel-Mode Driver Architecture], *PPOWER_THROTTLING_PROCESS_STATE"
+ms.keywords : POWER_THROTTLING_PROCESS_STATE structure [Kernel-Mode Driver Architecture], kernel.power_throttling_process_state, _POWER_THROTTLING_PROCESS_STATE, *PPOWER_THROTTLING_PROCESS_STATE, POWER_THROTTLING_PROCESS_STATE, ntddk/POWER_THROTTLING_PROCESS_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,5 @@ The version of this structure. Set to PROCESS_POWER_THROTTLING_CURRENT_VERSION.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ntddk.h |

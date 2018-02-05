@@ -75,8 +75,8 @@ A pointer to a linked list of
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that NDIS is
      returning to the miniport driver. The linked list can contain NET_BUFFER_LIST structures from multiple
      previous calls to the 
-     <mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-     NdisMIndicateReceiveNetBufferLists</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+     NdisMIndicateReceiveNetBufferLists</a> function.
 
 `ReturnFlags`
 
@@ -93,10 +93,10 @@ None
 
 <i>MiniportReturnNetBufferLists</i> is a required function for miniport drivers that indicate received
     network data with the 
-    <mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-    NdisMIndicateReceiveNetBufferLists</b></mshelp:link> function. When an overlying driver calls the 
-    <mshelp:link keywords="netvista.ndisreturnnetbufferlists" tabindex="0"><b>
-    NdisReturnNetBufferLists</b></mshelp:link> function, NDIS calls the 
+    <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+    NdisMIndicateReceiveNetBufferLists</a> function. When an overlying driver calls the 
+    <a href="..\ndis\nf-ndis-ndisreturnnetbufferlists.md">
+    NdisReturnNetBufferLists</a> function, NDIS calls the 
     <i>MiniportReturnNetBufferLists</i> function of the miniport driver that indicated the specified 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures.
 
@@ -145,29 +145,25 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+   NdisMIndicateReceiveNetBufferLists</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-   NdisMIndicateReceiveNetBufferLists</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a>
 
 <a href="..\ndis\nf-ndis-ndisreturnnetbufferlists.md">NdisReturnNetBufferLists</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

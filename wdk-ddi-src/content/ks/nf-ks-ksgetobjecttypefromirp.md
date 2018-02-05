@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4fe45811-a823-4cc6-bdc4-a1f2ac892d37
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_4021d1e6-6dcd-4c59-8863-0d0b5a8e922f.xml, stream.ksgetobjecttypefromirp, KsGetObjectTypeFromIrp, ks/KsGetObjectTypeFromIrp, KsGetObjectTypeFromIrp function [Streaming Media Devices]
+ms.keywords : KsGetObjectTypeFromIrp function [Streaming Media Devices], stream.ksgetobjecttypefromirp, KsGetObjectTypeFromIrp, avfunc_4021d1e6-6dcd-4c59-8863-0d0b5a8e922f.xml, ks/KsGetObjectTypeFromIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,24 +65,21 @@ A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure for which to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ks\nf-ks-ksforwardirp.md">KsForwardIrp</a>
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+<a href="..\ks\nf-ks-ksdispatchirp.md">KsDispatchIrp</a>
 
 <a href="..\ks\nf-ks-ksaddirptocancelablequeue.md">KsAddIrpToCancelableQueue</a>
 
-<a href="..\ks\nf-ks-ksdispatchirp.md">KsDispatchIrp</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
  
 

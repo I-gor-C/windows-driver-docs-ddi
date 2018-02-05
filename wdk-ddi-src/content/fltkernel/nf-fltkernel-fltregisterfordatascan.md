@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : E603975A-B927-475A-9DEA-2D01C1249819
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltRegisterForDataScan routine [Installable File System Drivers], fltkernel/FltRegisterForDataScan, ifsk.fltregisterfordatascan, FltRegisterForDataScan
+ms.keywords : FltRegisterForDataScan, fltkernel/FltRegisterForDataScan, FltRegisterForDataScan routine [Installable File System Drivers], ifsk.fltregisterfordatascan
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,12 @@ If <b>STATUS_NOT_SUPPORTED</b> is returned by <b>FltRegisterForDataScan</b>, a m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FltRegisterForDataScan routine is available starting with   Windows 8. The FltRegisterForDataScan routine is available starting with   Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

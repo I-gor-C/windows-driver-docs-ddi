@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : e2df591d-59bd-4aae-ac1b-8fdf01da3ea7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RouterGetPrintClassObject function [Print Devices], prnasntp/RouterGetPrintClassObject, print.routergetprintclassobject, spoolfnc_ffe877d1-cb3e-49f5-a5b5-5da7c5cb9148.xml, RouterGetPrintClassObject
+ms.keywords : spoolfnc_ffe877d1-cb3e-49f5-a5b5-5da7c5cb9148.xml, RouterGetPrintClassObject, prnasntp/RouterGetPrintClassObject, RouterGetPrintClassObject function [Print Devices], print.routergetprintclassobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ This function returns S_OK on success, and a standard COM error code otherwise.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | prnasntp.h (include Prnasntp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |

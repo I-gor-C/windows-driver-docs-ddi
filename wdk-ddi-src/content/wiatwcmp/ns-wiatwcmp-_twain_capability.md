@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 79a2155d-eb06-4095-9fe6-b95d93e46211
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.twain_capability, wiatwcmp/TWAIN_CAPABILITY, TWAIN_CAPABILITY, PTWAIN_CAPABILITY structure pointer [Imaging Devices], wiastrct_12204cb8-d0ad-46d5-a741-4522ba28006b.xml, _TWAIN_CAPABILITY, PTWAIN_CAPABILITY, *PTWAIN_CAPABILITY, TWAIN_CAPABILITY structure [Imaging Devices], wiatwcmp/PTWAIN_CAPABILITY
+ms.keywords : "*PTWAIN_CAPABILITY, image.twain_capability, PTWAIN_CAPABILITY structure pointer [Imaging Devices], TWAIN_CAPABILITY, _TWAIN_CAPABILITY, PTWAIN_CAPABILITY, TWAIN_CAPABILITY structure [Imaging Devices], wiastrct_12204cb8-d0ad-46d5-a741-4522ba28006b.xml, wiatwcmp/TWAIN_CAPABILITY, wiatwcmp/PTWAIN_CAPABILITY"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : TWAIN_CAPABILITY, *PTWAIN_CAPABILITY
+req.typenames : "*PTWAIN_CAPABILITY, TWAIN_CAPABILITY"
 req.product : Windows 10 or later.
 ---
 
@@ -227,7 +227,5 @@ The TWAIN return codes and control codes are defined in <i>twain.h</i>, which ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiatwcmp.h (include Wiatwcmp.h) |

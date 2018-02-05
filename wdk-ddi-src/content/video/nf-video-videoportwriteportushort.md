@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c0431b2a-c075-48e4-9476-42c42a86f8ed
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportwriteportushort, video/VideoPortWritePortUshort, VideoPortWritePortUshort function [Display Devices], VideoPortWritePortUshort, VideoPort_Functions_919dd8ab-f319-4071-b375-b269823adb31.xml
+ms.keywords : VideoPortWritePortUshort, display.videoportwriteportushort, video/VideoPortWritePortUshort, VideoPort_Functions_919dd8ab-f319-4071-b375-b269823adb31.xml, VideoPortWritePortUshort function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ Callers of <b>VideoPortWritePortUshort</b> can be running at any IRQL, provided 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

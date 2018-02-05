@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7bc753b1-5e09-431b-b226-fb7194dd6947
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisinterlockedaddlargestatistic, NdisInterlockedAddLargeStatistic, ndis_interlocked_ref_f1b7622e-acc8-45d7-b85e-c39058b595fe.xml, NdisInterlockedAddLargeStatistic macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedAddLargeStatistic
+ms.keywords : netvista.ndisinterlockedaddlargestatistic, ndis/NdisInterlockedAddLargeStatistic, NdisInterlockedAddLargeStatistic, NdisInterlockedAddLargeStatistic macro [Network Drivers Starting with Windows Vista], ndis_interlocked_ref_f1b7622e-acc8-45d7-b85e-c39058b595fe.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -57,11 +57,13 @@ VOID NdisInterlockedAddLargeStatistic(
 
 `_Addend`
 
-TBD
+A pointer to a LARGE_INTEGER value that is incremented by the value of 
+     <i>Increment</i> .
 
 `_Increment`
 
-TBD
+A ULONG value that is added to the value to which the 
+     <i>Addend</i> parameter points.
 
 
 ## Return Value
@@ -80,14 +82,11 @@ Functions that perform interlocked operations must not cause a page fault to occ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedAddLargeStatistic (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedAddLargeStatistic (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedAddLargeStatistic (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedAddLargeStatistic (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

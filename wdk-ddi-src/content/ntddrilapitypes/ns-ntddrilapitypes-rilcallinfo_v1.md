@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eae7108f-94d5-4147-b554-189c1a356641
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcallinfo_v1, *LPRILCALLINFO_V1, RILCALLINFO_V1 structure [Network Drivers Starting with Windows Vista], RILCALLINFO_V1, ntddrilapitypes/RILCALLINFO_V1
+ms.keywords : netvista.rilcallinfo_v1, *LPRILCALLINFO_V1, RILCALLINFO_V1, ntddrilapitypes/RILCALLINFO_V1, RILCALLINFO_V1 structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -139,7 +139,4 @@ typedef struct _RILCALLINFO_V1 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

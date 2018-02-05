@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 4E2EA8F5-2D4A-4AEB-AF59-97D6C3FB09BC
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pos.poscxputpendingevent, PosCxPutPendingEvent function, PosCxPutPendingEvent, poscx/PosCxPutPendingEvent
+ms.keywords : pos.poscxputpendingevent, poscx/PosCxPutPendingEvent, PosCxPutPendingEvent, PosCxPutPendingEvent function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,14 +113,9 @@ Possible return values are:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

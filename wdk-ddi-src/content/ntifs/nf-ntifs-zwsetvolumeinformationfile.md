@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6afc3e8b-0be0-4728-b00f-deea5e60d27e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwSetVolumeInformationFile routine [Kernel-Mode Driver Architecture], ntifs/NtSetInformationFile, NtSetInformationFile, k111_580470b4-9769-4fec-9811-04f703473131.xml, kernel.zwsetvolumeinformationfile, ntifs/ZwSetVolumeInformationFile, ZwSetVolumeInformationFile
+ms.keywords : ntifs/ZwSetVolumeInformationFile, NtSetInformationFile, ZwSetVolumeInformationFile routine [Kernel-Mode Driver Architecture], kernel.zwsetvolumeinformationfile, k111_580470b4-9769-4fec-9811-04f703473131.xml, ntifs/NtSetInformationFile, ZwSetVolumeInformationFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -169,32 +169,31 @@ Minifilters should use <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a>
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 
-<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
 
 <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
 
-<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-
-<a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

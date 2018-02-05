@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3683735d-ce00-4615-9782-dee9f4753cc7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcproperty_request, portcls/PCPROPERTY_REQUEST, portcls/PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST, audpc-struct_f153c6fb-8b21-4a81-ab9b-d7b7fef9f9db.xml, PCPROPERTY_REQUEST structure [Audio Devices], *PPCPROPERTY_REQUEST, PPCPROPERTY_REQUEST, PPCPROPERTY_REQUEST structure pointer [Audio Devices], _PCPROPERTY_REQUEST
+ms.keywords : PCPROPERTY_REQUEST, audpc-struct_f153c6fb-8b21-4a81-ab9b-d7b7fef9f9db.xml, audio.pcproperty_request, *PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST structure [Audio Devices], portcls/PCPROPERTY_REQUEST, _PCPROPERTY_REQUEST, PPCPROPERTY_REQUEST structure pointer [Audio Devices], PPCPROPERTY_REQUEST, portcls/PPCPROPERTY_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST
+req.typenames : "*PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST"
 ---
 
 # _PCPROPERTY_REQUEST structure
@@ -174,20 +174,17 @@ The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |
 
 ## See Also
 
 <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a>
 
+<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
+
 <a href="..\ksmedia\ns-ksmedia-ksnodeproperty_audio_channel.md">KSNODEPROPERTY_AUDIO_CHANNEL</a>
 
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
-<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 39dc6b3a-f24d-4f1a-96f8-416fbcb3f894
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_RECEIVE_FILTER_PARAMETERS, *PNDIS_RECEIVE_FILTER_PARAMETERS, _NDIS_RECEIVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE, netvista.ndis_receive_filter_parameters, PNDIS_RECEIVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], virtual_machine_queue_ref_abdd073b-8e49-4d6d-9bd6-1eca198dbd2d.xml
+ms.keywords : PNDIS_RECEIVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_parameters, *PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS, _NDIS_RECEIVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE, virtual_machine_queue_ref_abdd073b-8e49-4d6d-9bd6-1eca198dbd2d.xml, NDIS_RECEIVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_RECEIVE_FILTER_PARAMETERS, *PNDIS_RECEIVE_FILTER_PARAMETERS
+req.typenames : "*PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_FILTER_PARAMETERS structure
@@ -144,6 +144,14 @@ To indicate the version of the <b>NDIS_RECEIVE_FILTER_PARAMETERS</b> structure, 
 
 
 
+#### NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_1
+
+Original version for NDIS 6.20.
+
+The driver sets the 
+        <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_PARAMETERS_REVISION_1.
+
+
 #### NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_2
 
 Added the 
@@ -151,14 +159,6 @@ Added the
 
 The driver sets the 
         <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_PARAMETERS_REVISION_2.
-
-
-#### NDIS_RECEIVE_FILTER_PARAMETERS_REVISION_1
-
-Original version for NDIS 6.20.
-
-The driver sets the 
-        <b>Size</b> member to NDIS_SIZEOF_RECEIVE_FILTER_PARAMETERS_REVISION_1.
 
 `MaxCoalescingDelay`
 
@@ -207,8 +207,8 @@ The
     <b>FieldParametersArrayNumElements</b>, and 
     <b>FieldParametersArrayElementSize</b> members of the <b>NDIS_RECEIVE_FILTER_PARAMETERS</b> structure define an
     array of 
-    <mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link> structures. Each <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b>
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structures. Each <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b>
     structure in the array sets the filter test criterion for one field in a network header.
 
 The network adapter combines the results from all the field tests with a logical AND operation.
@@ -250,23 +250,21 @@ If the network adapter supports the VMQ interface, the  adapter should forward t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569792">OID_RECEIVE_FILTER_PARAMETERS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
  
 

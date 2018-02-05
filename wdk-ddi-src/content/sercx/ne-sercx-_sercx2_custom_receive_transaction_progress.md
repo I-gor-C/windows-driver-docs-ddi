@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : B832554C-FB37-416F-9586-EFAB5A3633E5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PSERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, SERCX2_CUSTOM_RECEIVE_NO_PROGRESS, 2/SERCX2_CUSTOM_RECEIVE_NO_PROGRESS, 2/SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED, serports.sercx2_custom_receive_transaction_progress, 2/SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED, SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS enumeration [Serial Ports], _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS"
+ms.keywords : SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, 2/SERCX2_CUSTOM_RECEIVE_NO_PROGRESS, SERCX2_CUSTOM_RECEIVE_NO_PROGRESS, 2/SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS enumeration [Serial Ports], 2/SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED, SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED, serports.sercx2_custom_receive_transaction_progress, *PSERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS"
+req.typenames : SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, *PSERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS
 req.product : Windows 10 or later.
 ---
 
@@ -72,9 +72,6 @@ The constants in this enumeration are used by the <a href="..\sercx\nf-sercx-ser
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 
 ## See Also

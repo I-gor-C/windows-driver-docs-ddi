@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : beb630e7-9667-4bc2-bf35-69db6cf0b104
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest_impersonate, Impersonate, IWDFIoRequest interface, Impersonate method, Impersonate method, IWDFIoRequest interface, Impersonate method, UMDFRequestObjectRef_a5f40359-edc8-42e1-a63d-99390abeba86.xml, umdf.iwdfiorequest_impersonate, IWDFIoRequest, wudfddi/IWDFIoRequest::Impersonate, IWDFIoRequest::Impersonate
+ms.keywords : wudfddi/IWDFIoRequest::Impersonate, IWDFIoRequest interface, Impersonate method, Impersonate method, Impersonate, IWDFIoRequest, Impersonate method, IWDFIoRequest interface, IWDFIoRequest::Impersonate, UMDFRequestObjectRef_a5f40359-edc8-42e1-a63d-99390abeba86.xml, wdf.iwdfiorequest_impersonate, umdf.iwdfiorequest_impersonate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -81,24 +81,22 @@ For information about how UMDF and UMDF drivers handle impersonation, see <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
 
-<a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554916">IImpersonateCallback::OnImpersonate</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+
+<a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7288a7e5-8e64-4ac3-9779-edc27a3888bb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfObjectContextGetObject, WdfObjectContextGetObject method, DFGenObjectRef_cf11ce54-dbb0-4835-919d-6f0bec903e2d.xml, kmdf.wdfobjectcontextgetobject, PFN_WDFOBJECTCONTEXTGETOBJECT, wdf.wdfobjectcontextgetobject, wdfobject/WdfObjectContextGetObject
+ms.keywords : kmdf.wdfobjectcontextgetobject, DFGenObjectRef_cf11ce54-dbb0-4835-919d-6f0bec903e2d.xml, WdfObjectContextGetObject method, wdfobject/WdfObjectContextGetObject, PFN_WDFOBJECTCONTEXTGETOBJECT, WdfObjectContextGetObject, wdf.wdfobjectcontextgetobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,12 +71,11 @@ For more information about object context space, see <a href="https://docs.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | Any level |
 | **DDI compliance rules** | DriverCreate |
 

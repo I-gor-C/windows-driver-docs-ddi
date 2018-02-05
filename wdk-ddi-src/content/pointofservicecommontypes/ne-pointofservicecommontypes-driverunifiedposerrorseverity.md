@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : a8c592fa-2736-49e4-8d4d-8729baef9c49
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Fatal, Unrecoverable, pointofservicecommontypes/Recoverable, pointofservicecommontypes/DriverUnifiedPosErrorSeverity, pointofservicecommontypes/Unrecoverable, UnknownErrorSeverity, Warning, pos.unifiedposerrorseverity, DriverUnifiedPosErrorSeverity, pointofservicecommontypes/Fatal, Recoverable, pointofservicecommontypes/Warning, AssistanceRequired, pointofservicecommontypes/UnknownErrorSeverity, pointofservicecommontypes/ AssistanceRequired, DriverUnifiedPosErrorSeverity enumeration
+ms.keywords : pointofservicecommontypes/ AssistanceRequired, UnknownErrorSeverity, pointofservicecommontypes/Unrecoverable, Warning, AssistanceRequired, pointofservicecommontypes/Warning, Recoverable, DriverUnifiedPosErrorSeverity, pointofservicecommontypes/UnknownErrorSeverity, pos.unifiedposerrorseverity, DriverUnifiedPosErrorSeverity enumeration, Unrecoverable, Fatal, pointofservicecommontypes/Recoverable, pointofservicecommontypes/DriverUnifiedPosErrorSeverity, pointofservicecommontypes/Fatal
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,4 @@ typedef enum _DriverUnifiedPosErrorSeverity {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

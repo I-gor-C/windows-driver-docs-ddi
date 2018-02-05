@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 832CA7CA-40B3-4D6D-B640-9838B479EC76
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyHwContext function [Display Devices], D3DKMTDestroyHwContext, d3dkmthk/D3DKMTDestroyHwContext, display.d3dkmtdestroyhwcontext
+ms.keywords : D3DKMTDestroyHwContext function [Display Devices], display.d3dkmtdestroyhwcontext, d3dkmthk/D3DKMTDestroyHwContext, D3DKMTDestroyHwContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,7 @@ Returns STATUS_SUCCESS if called successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tbd |
+| **DLL** | Tbd |

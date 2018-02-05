@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -122,6 +122,13 @@ The datagram was received as a link-layer broadcast or with a destination transp
        is a broadcast address.
 
 
+#### MSG_CTRUNC
+
+The control information data was truncated because the number of bytes of control information
+       was greater than the size of the buffer that is specified by the 
+       <i>ControlInfo</i> parameter.
+
+
 #### MSG_MCAST
 
 The datagram was received with a destination transport address that is a multicast
@@ -134,19 +141,12 @@ The datagram was truncated because the size of the datagram was larger than the 
        buffer that is specified by the 
        <i>Buffer</i> parameter.
 
-
-#### MSG_CTRUNC
-
-The control information data was truncated because the number of bytes of control information
-       was greater than the size of the buffer that is specified by the 
-       <i>ControlInfo</i> parameter.
-
 `Irp`
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the receive operation
      asynchronously. For more information about using IRPs with WSK functions, see 
-     <mshelp:link keywords="netvista.using_irps_with_winsock_kernel_functions" tabindex="0">Using IRPs with Winsock
-     Kernel Functions</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
+     Kernel Functions</a>.
 
 
 ## Return Value
@@ -256,37 +256,33 @@ If the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_datagram_dispatch.md">
+   WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 
-<mshelp:link keywords="netvista.wsk_provider_datagram_dispatch" tabindex="0"><b>
-   WSK_PROVIDER_DATAGRAM_DISPATCH</b></mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/sio-wsk-set-remote-address">SIO_WSK_SET_REMOTE_ADDRESS</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 
 <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_send_to.md">WskSendTo</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_receive_from_event.md">WskReceiveFromEvent</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_send_to.md">WskSendTo</a>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/sio-wsk-set-remote-address">SIO_WSK_SET_REMOTE_ADDRESS</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_receive_from_event.md">WskReceiveFromEvent</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
 
  
 

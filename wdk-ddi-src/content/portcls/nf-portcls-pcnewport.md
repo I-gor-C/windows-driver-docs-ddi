@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d948b69c-c5cd-4614-a646-76acb493e8de
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcnewport, portcls/PcNewPort, PcNewPort, audpc-routines_799c0416-dde0-4818-8da7-a38e4e6d4541.xml, PcNewPort function [Audio Devices]
+ms.keywords : audpc-routines_799c0416-dde0-4818-8da7-a38e4e6d4541.xml, PcNewPort, PcNewPort function [Audio Devices], portcls/PcNewPort, audio.pcnewport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -159,30 +159,27 @@ The <i>OutPort</i> parameter follows the <a href="https://msdn.microsoft.com/e6b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcNewPort function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcNewPort function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
-
-<a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
-
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
-
-<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
 
+<a href="..\portcls\nn-portcls-iporttopology.md">IPortTopology</a>
+
 <a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
 
+<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
+
+<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : ae3077a3-01a8-4578-9a26-b8b14ec51a7a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : EVENT_PIPE, usbscan/ALL_PIPE, usbscan/WRITE_DATA_PIPE, usbscan/EVENT_PIPE, PIPE_TYPE enumeration [Imaging Devices], usbscan/PIPE_TYPE, PIPE_TYPE, WRITE_DATA_PIPE, READ_DATA_PIPE, usbscan/READ_DATA_PIPE, stifnc_dd4122fa-8df4-4190-91ec-248a1e63ab64.xml, ALL_PIPE, image.pipe_type
+ms.keywords : WRITE_DATA_PIPE, usbscan/READ_DATA_PIPE, stifnc_dd4122fa-8df4-4190-91ec-248a1e63ab64.xml, PIPE_TYPE, usbscan/PIPE_TYPE, usbscan/EVENT_PIPE, PIPE_TYPE enumeration [Imaging Devices], EVENT_PIPE, READ_DATA_PIPE, usbscan/WRITE_DATA_PIPE, ALL_PIPE, usbscan/ALL_PIPE, image.pipe_type
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |

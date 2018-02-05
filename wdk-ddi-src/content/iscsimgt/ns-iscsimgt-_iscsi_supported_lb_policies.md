@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 053b9f14-7319-4599-886e-3c03c717b348
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_4ea7817e-3ec1-46cf-a492-ac327f5d3912.xml, ISCSI_Supported_LB_Policies structure [Storage Devices], iscsimgt/PISCSI_Supported_LB_Policies, _ISCSI_Supported_LB_Policies, ISCSI_Supported_LB_Policies, storage.iscsi_supported_lb_policies, PISCSI_Supported_LB_Policies structure pointer [Storage Devices], iscsimgt/ISCSI_Supported_LB_Policies, PISCSI_Supported_LB_Policies, *PISCSI_Supported_LB_Policies
+ms.keywords : ISCSI_Supported_LB_Policies, ISCSI_Supported_LB_Policies structure [Storage Devices], *PISCSI_Supported_LB_Policies, _ISCSI_Supported_LB_Policies, iscsimgt/ISCSI_Supported_LB_Policies, PISCSI_Supported_LB_Policies structure pointer [Storage Devices], iscsimgt/PISCSI_Supported_LB_Policies, storage.iscsi_supported_lb_policies, structs-iSCSI_4ea7817e-3ec1-46cf-a492-ac327f5d3912.xml, PISCSI_Supported_LB_Policies
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ISCSI_Supported_LB_Policies, *PISCSI_Supported_LB_Policies
+req.typenames : "*PISCSI_Supported_LB_Policies, ISCSI_Supported_LB_Policies"
 ---
 
 # _ISCSI_Supported_LB_Policies structure
@@ -140,9 +140,6 @@ A 64-bit integer that uniquely identifies the session. The <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |
 
 ## See Also

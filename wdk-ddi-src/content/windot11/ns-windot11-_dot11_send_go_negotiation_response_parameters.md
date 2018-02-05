@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F5EC240C-6438-477C-A5D3-B018B52AC4F0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, netvista.dot11_send_go_negotiation_response_parameters, PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], _DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, *PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, windot11/PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS
+ms.keywords : "_DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_send_go_negotiation_response_parameters, *PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, windot11/DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS"
+req.typenames : DOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS, *PDOT11_SEND_GO_NEGOTIATION_RESPONSE_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -143,16 +143,14 @@ The maximum time, in milliseconds, allowed to send the GO negotiation response. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451807">OID_DOT11_WFD_SEND_INVITATION_RESPONSE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439789">NDIS_STATUS_DOT11_WFD_RECEIVED_GO_NEGOTIATION_REQUEST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451807">OID_DOT11_WFD_SEND_INVITATION_RESPONSE</a>
 
  
 

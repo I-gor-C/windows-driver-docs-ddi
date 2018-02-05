@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 376579c6-545d-4f5a-8ba4-0046c0b2b755
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFQueueObjectRef_39ca90c2-1fc9-4f1c-b05f-d46f668a3cd1.xml, WdfIoQueueDrain, PFN_WDFIOQUEUEDRAIN, WdfIoQueueDrain method, wdf.wdfioqueuedrain, wdfio/WdfIoQueueDrain, kmdf.wdfioqueuedrain
+ms.keywords : WdfIoQueueDrain, DFQueueObjectRef_39ca90c2-1fc9-4f1c-b05f-d46f668a3cd1.xml, wdf.wdfioqueuedrain, WdfIoQueueDrain method, wdfio/WdfIoQueueDrain, kmdf.wdfioqueuedrain, PFN_WDFIOQUEUEDRAIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,12 +93,11 @@ After a driver has drained an I/O queue, it can restart the queue by calling <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove |
 
@@ -106,9 +105,9 @@ After a driver has drained an I/O queue, it can restart the queue by calling <a 
 
 <a href="..\wdfio\nf-wdfio-wdfioqueuedrainsynchronously.md">WdfIoQueueDrainSynchronously</a>
 
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
-
 <a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>
+
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
 
  
 

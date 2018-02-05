@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : ea968316-a53d-4ab1-966a-5c699ffb8f2a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessExecutableName method, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessExecutableName method, IDebugSystemObjects4::GetCurrentProcessExecutableName, IDebugSystemObjects3::GetCurrentProcessExecutableName, GetCurrentProcessExecutableName, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessExecutableName method, dbgeng/IDebugSystemObjects3::GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects2::GetCurrentProcessExecutableName, debugger.getcurrentprocessexecutablename, IDebugSystemObjects4, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessExecutableName method, IDebugSystemObjects_2659a668-4ecb-44de-b287-b4adc830f8c4.xml, IDebugSystemObjects2::GetCurrentProcessExecutableName, IDebugSystemObjects::GetCurrentProcessExecutableName, GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects4::GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects::GetCurrentProcessExecutableName, GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects2 interface, GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentProcessExecutableName method [Windows Debugging]
+ms.keywords : IDebugSystemObjects::GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects2::GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects3::GetCurrentProcessExecutableName, GetCurrentProcessExecutableName method [Windows Debugging], GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects2::GetCurrentProcessExecutableName, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessExecutableName method, IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessExecutableName method, IDebugSystemObjects_2659a668-4ecb-44de-b287-b4adc830f8c4.xml, IDebugSystemObjects4, GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects4 interface, debugger.getcurrentprocessexecutablename, GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects::GetCurrentProcessExecutableName, IDebugSystemObjects4::GetCurrentProcessExecutableName, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessExecutableName method, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessExecutableName method, GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects4::GetCurrentProcessExecutableName, GetCurrentProcessExecutableName method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3::GetCurrentProcessExecutableName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -110,11 +110,6 @@ For more information about processes, see <a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

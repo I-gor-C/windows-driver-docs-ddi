@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 842842c2-ed79-4c8a-b9c1-d73c47998f91
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSendLIRR_OUT, hbapiwmi/PSendLIRR_OUT, PSendLIRR_OUT structure pointer [Storage Devices], PSendLIRR_OUT, _SendLIRR_OUT, SendLIRR_OUT structure [Storage Devices], structs-Fibre_193ae454-313d-4ada-a161-39c403226edf.xml, storage.sendlirr_out, SendLIRR_OUT, hbapiwmi/SendLIRR_OUT"
+ms.keywords : hbapiwmi/PSendLIRR_OUT, PSendLIRR_OUT, *PSendLIRR_OUT, SendLIRR_OUT structure [Storage Devices], hbapiwmi/SendLIRR_OUT, storage.sendlirr_out, SendLIRR_OUT, _SendLIRR_OUT, PSendLIRR_OUT structure pointer [Storage Devices], structs-Fibre_193ae454-313d-4ada-a161-39c403226edf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the SendLIRR_OUT structure in <i>H
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

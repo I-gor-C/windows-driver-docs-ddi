@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c23d3bfd-a83c-4480-b5a1-b057201ea279
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlgetenabledextendedfeatures, XSTATE_MASK_GSSE, XSTATE_MASK_LEGACY_FLOATING_POINT, wdm/RtlGetEnabledExtendedFeatures, k109_94843b2d-9abe-4b82-a781-dd2863ddc9c1.xml, RtlGetEnabledExtendedFeatures, RtlGetEnabledExtendedFeatures routine [Kernel-Mode Driver Architecture], XSTATE_MASK_LEGACY_SSE, XSTATE_MASK_LEGACY
+ms.keywords : k109_94843b2d-9abe-4b82-a781-dd2863ddc9c1.xml, XSTATE_MASK_GSSE, wdm/RtlGetEnabledExtendedFeatures, RtlGetEnabledExtendedFeatures routine [Kernel-Mode Driver Architecture], XSTATE_MASK_LEGACY_FLOATING_POINT, RtlGetEnabledExtendedFeatures, kernel.rtlgetenabledextendedfeatures, XSTATE_MASK_LEGACY, XSTATE_MASK_LEGACY_SSE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,14 +116,12 @@ Another routine, <a href="..\wdm\nf-wdm-exisprocessorfeaturepresent.md">ExIsProc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating system. Available in Windows 7 and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Ntdll.lib (user mode); NtosKrnl.lib (kernel mode); OneCoreUAP.lib on Windows 10 |
+| **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

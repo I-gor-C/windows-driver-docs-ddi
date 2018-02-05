@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bf8390db-7e42-4860-8cf6-df3459f16cea
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxacquiresharedfcbresourceinmrxex, RxAcquireSharedFcbResourceInMRxEx routine [Installable File System Drivers], mrxfcb/RxAcquireSharedFcbResourceInMRxEx, RxAcquireSharedFcbResourceInMRxEx, rxref_2b8fc5d6-96e5-45a0-897a-f55964e6cc8a.xml
+ms.keywords : mrxfcb/RxAcquireSharedFcbResourceInMRxEx, ifsk.rxacquiresharedfcbresourceinmrxex, RxAcquireSharedFcbResourceInMRxEx routine [Installable File System Drivers], rxref_2b8fc5d6-96e5-45a0-897a-f55964e6cc8a.xml, RxAcquireSharedFcbResourceInMRxEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 
@@ -105,24 +105,21 @@ An FCB resource acquired with <b>RxAcquireSharedFcbResourceInMRxEx </b>should be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The RxAcquireSharedFcbResourceInMRxEx routine is only available on Windows Server 2003 Service Pack 1 and later. The RxAcquireSharedFcbResourceInMRxEx routine is only available on Windows Server 2003 Service Pack 1 and later. |
+| **Target Platform** | Desktop |
 | **Header** | mrxfcb.h (include Mrxfcb.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceinmrx.md">RxReleaseFcbResourceInMRx</a>
+<a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceforthreadinmrx.md">RxReleaseFcbResourceForThreadInMRx</a>
 
 <b>RxAcquireSharedFcbResourceInMRx</b>
 
-<a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceforthreadinmrx.md">RxReleaseFcbResourceForThreadInMRx</a>
-
 <a href="..\mrxfcb\nf-mrxfcb-rxacquireexclusivefcbresourceinmrx.md">RxAcquireExclusiveFcbResourceInMRx</a>
+
+<a href="..\mrxfcb\nf-mrxfcb-rxreleasefcbresourceinmrx.md">RxReleaseFcbResourceInMRx</a>
 
  
 

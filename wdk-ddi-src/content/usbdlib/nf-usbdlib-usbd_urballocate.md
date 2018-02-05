@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 384E04BE-794F-4F87-81E5-35B974EB6172
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_UrbAllocate routine [Buses], USBD_UrbAllocate, usbdlib/USBD_UrbAllocate, buses.usbd_urballocate
+ms.keywords : USBD_UrbAllocate routine [Buses], buses.usbd_urballocate, usbdlib/USBD_UrbAllocate, USBD_UrbAllocate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -86,22 +86,19 @@ You must call <a href="..\usbdlib\nf-usbdlib-usbd_urbfree.md">USBD_UrbFree</a> t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
-| **Library** |  |
+| **Library** | Usbdex.lib |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
 
 <a href="..\usbdlib\nf-usbdlib-usbd_urbfree.md">USBD_UrbFree</a>
 
 <a href="https://msdn.microsoft.com/15be1e51-5ab2-40c4-95a8-8555c92523aa">Sending Requests to a USB Device</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
 
  
 

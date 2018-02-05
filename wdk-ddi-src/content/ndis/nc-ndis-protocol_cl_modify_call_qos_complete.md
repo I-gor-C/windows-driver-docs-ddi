@@ -75,15 +75,10 @@ Specifies the final status of the client's asynchronous request to modify the ca
 
 
 
-#### NDIS_STATUS_SUCCESS
+#### NDIS_STATUS_FAILURE
 
-The QoS was modified as requested by the client.
-
-
-#### NDIS_STATUS_RESOURCES
-
-NDIS or the call manager could not modify the QoS because one of them could not allocate
-       sufficient resources dynamically.
+The call manager could not change the QoS because of a failure on the network or in another
+       connection-oriented network component.
 
 
 #### NDIS_STATUS_INVALID_DATA
@@ -92,10 +87,15 @@ The call parameters that the client supplied to
        <b>NdisClModifyCallQoS</b> were invalid.
 
 
-#### NDIS_STATUS_FAILURE
+#### NDIS_STATUS_RESOURCES
 
-The call manager could not change the QoS because of a failure on the network or in another
-       connection-oriented network component.
+NDIS or the call manager could not modify the QoS because one of them could not allocate
+       sufficient resources dynamically.
+
+
+#### NDIS_STATUS_SUCCESS
+
+The QoS was modified as requested by the client.
 
 
 #### NDIS_STATUS_XXX
@@ -176,28 +176,24 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClModifyCallQoSComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClModifyCallQoSComplete (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClModifyCallQoSComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClModifyCallQoSComplete (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscmmodifycallqoscomplete.md">NdisCmModifyCallQoSComplete</a>
-
-<a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
-
 <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
+<a href="..\ndis\nf-ndis-ndiscmmodifycallqoscomplete.md">NdisCmModifyCallQoSComplete</a>
 
 <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
+<a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
+
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndismcmmodifycallqoscomplete.md">NdisMCmModifyCallQoSComplete</a>
 

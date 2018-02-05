@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : filter_ndis_functions_ref_a772ecb2-0cba-439e-82f1-928c3b40f3fd.xml, netvista.ndisfregisterfilterdriver, ndis/NdisFRegisterFilterDriver, NdisFRegisterFilterDriver function [Network Drivers Starting with Windows Vista], NdisFRegisterFilterDriver
+ms.keywords : ndis/NdisFRegisterFilterDriver, filter_ndis_functions_ref_a772ecb2-0cba-439e-82f1-928c3b40f3fd.xml, NdisFRegisterFilterDriver, NdisFRegisterFilterDriver function [Network Drivers Starting with Windows Vista], netvista.ndisfregisterfilterdriver
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,8 +63,8 @@ NDIS_STATUS NdisFRegisterFilterDriver(
 A pointer to an opaque driver object that the filter driver received in its 
      <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine at the 
      <i>Argument1</i> parameter. (For more information, see 
-     <mshelp:link keywords="netvista.driverentry_of_ndis_filter_drivers" tabindex="0"><b>DriverEntry of NDIS Filter
-     Drivers</b></mshelp:link>.)
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548813">DriverEntry of NDIS Filter
+     Drivers</a>.)
 
 `FilterDriverContext`
 
@@ -102,8 +102,8 @@ A pointer to a handle variable. If the call to
 </td>
 <td width="60%">
 
-<mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> returns NDIS_STATUS_SUCCESS if it registered the filter driver.
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> returns NDIS_STATUS_SUCCESS if it registered the filter driver.
 
 </td>
 </tr>
@@ -128,8 +128,8 @@ The version that is specified in the
 </td>
 <td width="60%">
 At least one of the members that are specified in 
-       <mshelp:link keywords="netvista.ndis_filter_driver_characteristics" tabindex="0"><b>
-       NDIS_FILTER_DRIVER_CHARACTERISTICS</b></mshelp:link> is invalid.
+       <a href="..\ndis\ns-ndis-_ndis_filter_driver_characteristics.md">
+       NDIS_FILTER_DRIVER_CHARACTERISTICS</a> is invalid.
 
 </td>
 </tr>
@@ -141,8 +141,8 @@ At least one of the members that are specified in
 </td>
 <td width="60%">
 At least one of the input parameters that the driver passed to 
-       <mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> is invalid.
+       <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> is invalid.
 
 </td>
 </tr>
@@ -154,8 +154,8 @@ At least one of the input parameters that the driver passed to
 </td>
 <td width="60%">
 
-<mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> failed because of insufficient resources.
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> failed because of insufficient resources.
 
 </td>
 </tr>
@@ -167,8 +167,8 @@ At least one of the input parameters that the driver passed to
 </td>
 <td width="60%">
 
-<mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> returns NDIS_STATUS_FAILURE if none of the preceding values
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> returns NDIS_STATUS_FAILURE if none of the preceding values
        applies.
 
 </td>
@@ -182,16 +182,16 @@ A filter driver calls the
     NdisFRegisterFilterDriver</b> function from its 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. For more information about 
     <b>DriverEntry</b>, see 
-    <mshelp:link keywords="netvista.driverentry_of_ndis_filter_drivers" tabindex="0"><b>DriverEntry of NDIS Filter
-    Drivers</b></mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548813">DriverEntry of NDIS Filter
+    Drivers</a>.
 
 Drivers that call <b>
     NdisFRegisterFilterDriver</b> must be prepared for an immediate call to any of their <i>FilterXxx</i> functions. For more information see <a href="https://msdn.microsoft.com/e24b18b5-76d3-4d56-bf60-0dea91ba014e">Initializing a Filter Driver</a>.
 
 Every filter driver exports a set of 
     <i>FilterXxx</i> functions by setting up the 
-    <mshelp:link keywords="netvista.ndis_filter_driver_characteristics" tabindex="0"><b>
-    NDIS_FILTER_DRIVER_CHARACTERISTICS</b></mshelp:link> structure and calling 
+    <a href="..\ndis\ns-ndis-_ndis_filter_driver_characteristics.md">
+    NDIS_FILTER_DRIVER_CHARACTERISTICS</a> structure and calling 
     <b>
     NdisFRegisterFilterDriver</b>. NDIS copies this structure to the NDIS library's internal storage.
 
@@ -207,38 +207,36 @@ After it has registered, a filter driver can later call the
     <i>FilterXxx</i> functions.
 
 Filter drivers call the 
-    <mshelp:link keywords="netvista.ndisfderegisterfilterdriver" tabindex="0"><b>
-    NdisFDeregisterFilterDriver</b></mshelp:link> function to release resources that were previously allocated with 
+    <a href="..\ndis\nf-ndis-ndisfderegisterfilterdriver.md">
+    NdisFDeregisterFilterDriver</a> function to release resources that were previously allocated with 
     <b>
     NdisFRegisterFilterDriver</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Filter_Driver_Function, NdisFDeregisterFilterDriver |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/e24b18b5-76d3-4d56-bf60-0dea91ba014e">Initializing a Filter Driver</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 
-<mshelp:link keywords="netvista.driverentry_of_ndis_filter_drivers" tabindex="0"><b>DriverEntry of NDIS Filter
-   Drivers</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-<mshelp:link keywords="netvista.ndis_filter_driver_characteristics" tabindex="0"><b>
-   NDIS_FILTER_DRIVER_CHARACTERISTICS</b></mshelp:link>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff548813">DriverEntry of NDIS Filter
+   Drivers</a>
 
 <a href="..\ndis\nf-ndis-ndisfderegisterfilterdriver.md">NdisFDeregisterFilterDriver</a>
 
-<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="https://msdn.microsoft.com/e24b18b5-76d3-4d56-bf60-0dea91ba014e">Initializing a Filter Driver</a>
+
+<a href="..\ndis\ns-ndis-_ndis_filter_driver_characteristics.md">
+   NDIS_FILTER_DRIVER_CHARACTERISTICS</a>
 
  
 

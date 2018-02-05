@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9dfa8686-a815-417c-9488-dd86de0e15a2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : RetrieveUsbInterface method, IWDFUsbTargetDevice::RetrieveUsbInterface, IWDFUsbTargetDevice interface, RetrieveUsbInterface method, wudfusb/IWDFUsbTargetDevice::RetrieveUsbInterface, UMDFUSBref_cc346a35-4508-40ac-b959-20174a1b39af.xml, RetrieveUsbInterface method, IWDFUsbTargetDevice interface, umdf.iwdfusbtargetdevice_retrieveusbinterface, wdf.iwdfusbtargetdevice_retrieveusbinterface, RetrieveUsbInterface, IWDFUsbTargetDevice
+ms.keywords : RetrieveUsbInterface, umdf.iwdfusbtargetdevice_retrieveusbinterface, RetrieveUsbInterface method, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice, RetrieveUsbInterface method, IWDFUsbTargetDevice::RetrieveUsbInterface, UMDFUSBref_cc346a35-4508-40ac-b959-20174a1b39af.xml, wudfusb/IWDFUsbTargetDevice::RetrieveUsbInterface, wdf.iwdfusbtargetdevice_retrieveusbinterface, IWDFUsbTargetDevice interface, RetrieveUsbInterface method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -119,22 +119,20 @@ The driver can use the interface pointer that <b>RetrieveUsbInterface</b> retrie
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
+<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
 
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
 
-<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
+<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560366">IWDFUsbTargetDevice::GetNumInterfaces</a>
 

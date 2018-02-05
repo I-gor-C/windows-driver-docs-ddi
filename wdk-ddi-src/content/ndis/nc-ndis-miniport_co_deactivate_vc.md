@@ -94,8 +94,8 @@ Indicates that the miniport driver successfully halted any communication across 
 <td width="60%">
 Indicates that the miniport driver will complete the request to halt the VC asynchronously. When
        the miniport driver has completed halting the VC, it must then call 
-       <mshelp:link keywords="netvista.ndismcodeactivatevccomplete" tabindex="0"><b>
-       NdisMCoDeactivateVcComplete</b></mshelp:link> to signal NDIS that this operation has been completed.
+       <a href="..\ndis\nf-ndis-ndismcodeactivatevccomplete.md">
+       NdisMCoDeactivateVcComplete</a> to signal NDIS that this operation has been completed.
 
 </td>
 </tr>
@@ -149,20 +149,16 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    MiniportCoDeactivateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    MiniportCoDeactivateVc (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    MiniportCoDeactivateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    MiniportCoDeactivateVc (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismcodeactivatevccomplete.md">NdisMCoDeactivateVcComplete</a>
-
 <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
+
+<a href="..\ndis\nf-ndis-ndismcodeactivatevccomplete.md">NdisMCoDeactivateVcComplete</a>
 
  
 

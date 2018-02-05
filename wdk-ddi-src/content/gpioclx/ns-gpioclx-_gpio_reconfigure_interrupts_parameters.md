@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 98C9CFA6-76B3-4AF7-8280-BF84CC31CF70
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gpioclx/GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO.gpio_reconfigure_interrupts_parameters, _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, *PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure [Parallel Ports], PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure pointer [Parallel Ports], gpioclx/PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
+ms.keywords : GPIO.gpio_reconfigure_interrupts_parameters, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure [Parallel Ports], PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure pointer [Parallel Ports], gpioclx/PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, gpioclx/GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, *PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, *PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
+req.typenames : "*PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS"
 ---
 
 # _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure
@@ -92,20 +92,18 @@ The <i>ReconfigureParameters</i> parameter of the <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
 ## See Also
 
 <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
 <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
 

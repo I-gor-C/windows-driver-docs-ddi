@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9e850fc5-a46a-4bd1-97a0-7ecc86102480
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_drawrectpatch, D3DDDIARG_DRAWRECTPATCH structure [Display Devices], _D3DDDIARG_DRAWRECTPATCH, d3dumddi/D3DDDIARG_DRAWRECTPATCH, UMDisplayDriver_param_Structs_fc791424-dcfb-470b-a0d0-04534452707a.xml, D3DDDIARG_DRAWRECTPATCH
+ms.keywords : D3DDDIARG_DRAWRECTPATCH structure [Display Devices], _D3DDDIARG_DRAWRECTPATCH, UMDisplayDriver_param_Structs_fc791424-dcfb-470b-a0d0-04534452707a.xml, d3dumddi/D3DDDIARG_DRAWRECTPATCH, D3DDDIARG_DRAWRECTPATCH, display.d3dddiarg_drawrectpatch
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ The <b>Handle</b> member refers to the patch surface, so that the next time the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

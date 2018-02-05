@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : bbcf7597-217a-499b-b0f2-deef1e85becc
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : aud-prop_7d1e6907-77f6-445d-ba5d-b94037b234f3.xml, *PKSNODEPROPERTY, PKSNODEPROPERTY, ksmedia/KSNODEPROPERTY, audio.ksnodeproperty, KSNODEPROPERTY structure [Audio Devices], KSNODEPROPERTY, PKSNODEPROPERTY structure pointer [Audio Devices], ksmedia/PKSNODEPROPERTY
+ms.keywords : KSNODEPROPERTY structure [Audio Devices], ksmedia/PKSNODEPROPERTY, KSNODEPROPERTY, PKSNODEPROPERTY, *PKSNODEPROPERTY, aud-prop_7d1e6907-77f6-445d-ba5d-b94037b234f3.xml, PKSNODEPROPERTY structure pointer [Audio Devices], audio.ksnodeproperty, ksmedia/KSNODEPROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSNODEPROPERTY, *PKSNODEPROPERTY
+req.typenames : "*PKSNODEPROPERTY, KSNODEPROPERTY"
 ---
 
 # KSNODEPROPERTY structure
@@ -73,16 +73,13 @@ See the discussion of the KSNODEPROPERTY structure in <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a>
-
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a>
 
  
 

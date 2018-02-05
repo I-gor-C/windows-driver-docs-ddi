@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0985589E-074A-45C8-9F8A-384DC42EC884
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeRegisterBoundCallback, KeRegisterBoundCallback routine [Kernel-Mode Driver Architecture], kernel.keregisterboundcallback, KeRegisterBoundCallback
+ms.keywords : KeRegisterBoundCallback routine [Kernel-Mode Driver Architecture], KeRegisterBoundCallback, kernel.keregisterboundcallback, wdm/KeRegisterBoundCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,11 @@ The <b>KeRegisterBoundCallback</b> routine provides the opportunity for a kernel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

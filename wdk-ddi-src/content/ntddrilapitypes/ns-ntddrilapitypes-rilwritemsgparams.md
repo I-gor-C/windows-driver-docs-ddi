@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d66d63cd-ec34-4749-9ed9-38ee6d962ea5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILWRITEMSGPARAMS, RILWRITEMSGPARAMS structure [Network Drivers Starting with Windows Vista], RILWRITEMSGPARAMS, netvista.rilwritemsgparams, ntddrilapitypes/RILWRITEMSGPARAMS"
+ms.keywords : "*LPRILWRITEMSGPARAMS, RILWRITEMSGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilwritemsgparams, RILWRITEMSGPARAMS, ntddrilapitypes/RILWRITEMSGPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEMSGPARAMS, *LPRILWRITEMSGPARAMS
+req.typenames : "*LPRILWRITEMSGPARAMS, RILWRITEMSGPARAMS"
 ---
 
 # RILWRITEMSGPARAMS structure
@@ -69,7 +69,4 @@ typedef struct _RILWRITEMSGPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ff70685f-f3cf-49c0-bb0b-02e561feeac3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : irb/AtaPortReadPortBufferUlong, storage.ataportreadportbufferulong, AtaPortReadPortBufferUlong, atartns_e2f251c9-d2a0-4b33-91d8-2d700eb4253e.xml, AtaPortReadPortBufferUlong routine [Storage Devices]
+ms.keywords : atartns_e2f251c9-d2a0-4b33-91d8-2d700eb4253e.xml, irb/AtaPortReadPortBufferUlong, AtaPortReadPortBufferUlong, storage.ataportreadportbufferulong, AtaPortReadPortBufferUlong routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

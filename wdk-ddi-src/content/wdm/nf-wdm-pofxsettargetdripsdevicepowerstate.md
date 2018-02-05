@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 435c0731-101c-498b-9041-904001be3f2c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxSetTargetDripsDevicePowerState function [Kernel-Mode Driver Architecture], PoFxSetTargetDripsDevicePowerState, kernel.pofxsettargetdripsdevicepowerstate, wdm/PoFxSetTargetDripsDevicePowerState
+ms.keywords : wdm/PoFxSetTargetDripsDevicePowerState, kernel.pofxsettargetdripsdevicepowerstate, PoFxSetTargetDripsDevicePowerState, PoFxSetTargetDripsDevicePowerState function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,9 @@ Returns STATUS_SUCCESS if the target state was accepted.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

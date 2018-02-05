@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6dd1aa9d-58e6-484b-b372-4c1d9f6d04f3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlAllocateExtraCreateParameterFromLookasideList, fsrtlref_c85ee3ff-e71f-4c6e-bc37-4187cad9855f.xml, ifsk.fsrtlallocateextracreateparameterfromlookasidelist, FsRtlAllocateExtraCreateParameterFromLookasideList routine [Installable File System Drivers], FsRtlAllocateExtraCreateParameterFromLookasideList
+ms.keywords : fsrtlref_c85ee3ff-e71f-4c6e-bc37-4187cad9855f.xml, ifsk.fsrtlallocateextracreateparameterfromlookasidelist, ntifs/FsRtlAllocateExtraCreateParameterFromLookasideList, FsRtlAllocateExtraCreateParameterFromLookasideList, FsRtlAllocateExtraCreateParameterFromLookasideList routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -127,22 +127,20 @@ For more information about using lookaside lists with drivers, see <a href="http
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | FsRtlAllocateExtraCreateParameterFromLookasideList is available starting with Windows Vista. FsRtlAllocateExtraCreateParameterFromLookasideList is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md">FsRtlDeleteExtraCreateParameterLookasideList</a>
+
+<a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtlinitextracreateparameterlookasidelist.md">FsRtlInitExtraCreateParameterLookasideList</a>
 

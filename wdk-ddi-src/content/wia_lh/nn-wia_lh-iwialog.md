@@ -63,8 +63,5 @@ The <b>IWiaLog</b> interface provides methods to enable minidrivers to log trace
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wia_lh.h |
-| **DLL** |  |

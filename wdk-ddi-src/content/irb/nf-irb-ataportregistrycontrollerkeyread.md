@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7db22027-49ac-4ee5-8da7-bbd16c97a35b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : irb/AtaPortRegistryControllerKeyRead, atartns_eea8e60c-8cbd-4632-b5a4-17639f02f4d8.xml, storage.ataportregistrycontrollerkeyread, AtaPortRegistryControllerKeyRead, AtaPortRegistryControllerKeyRead routine [Storage Devices]
+ms.keywords : AtaPortRegistryControllerKeyRead routine [Storage Devices], irb/AtaPortRegistryControllerKeyRead, AtaPortRegistryControllerKeyRead, storage.ataportregistrycontrollerkeyread, atartns_eea8e60c-8cbd-4632-b5a4-17639f02f4d8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -132,22 +132,17 @@ The miniport driver must call <b>AtaPortRegistryControllerKeyRead</b> either in 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
 
 <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 
  
 

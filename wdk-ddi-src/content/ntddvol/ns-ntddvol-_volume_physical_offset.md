@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 068875e3-4229-4f15-9533-f740239ac873
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddvol/PVOLUME_PHYSICAL_OFFSET, structs-volumemgr_e42e629d-ed2f-49f3-a669-d2547d46eaa6.xml, _VOLUME_PHYSICAL_OFFSET, PVOLUME_PHYSICAL_OFFSET structure pointer [Storage Devices], storage.volume_physical_offset, ntddvol/VOLUME_PHYSICAL_OFFSET, VOLUME_PHYSICAL_OFFSET structure [Storage Devices], VOLUME_PHYSICAL_OFFSET, PVOLUME_PHYSICAL_OFFSET, *PVOLUME_PHYSICAL_OFFSET
+ms.keywords : "*PVOLUME_PHYSICAL_OFFSET, PVOLUME_PHYSICAL_OFFSET, structs-volumemgr_e42e629d-ed2f-49f3-a669-d2547d46eaa6.xml, PVOLUME_PHYSICAL_OFFSET structure pointer [Storage Devices], storage.volume_physical_offset, ntddvol/VOLUME_PHYSICAL_OFFSET, ntddvol/PVOLUME_PHYSICAL_OFFSET, VOLUME_PHYSICAL_OFFSET, _VOLUME_PHYSICAL_OFFSET, VOLUME_PHYSICAL_OFFSET structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Contains the physical offset in bytes of the data on the disk.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvol.h (include Ntddvol.h) |
 
 ## See Also

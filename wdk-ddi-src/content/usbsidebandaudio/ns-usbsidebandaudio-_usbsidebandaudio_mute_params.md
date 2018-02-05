@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 11FA1378-335A-402A-867C-F509D61153CA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : USBSIDEBANDAUDIO_MUTE_PARAMS structure [Audio Devices], USBSIDEBANDAUDIO_MUTE_PARAMS, usbsidebandaudio/PUSBSIDEBANDAUDIO_MUTE_PARAMS, PUSBSIDEBANDAUDIO_MUTE_PARAMS structure pointer [Audio Devices], PUSBSIDEBANDAUDIO_MUTE_PARAMS, audio.usbsidebandaudio_mute_params, _USBSIDEBANDAUDIO_MUTE_PARAMS, *PUSBSIDEBANDAUDIO_MUTE_PARAMS, usbsidebandaudio/USBSIDEBANDAUDIO_MUTE_PARAMS
+ms.keywords : usbsidebandaudio/PUSBSIDEBANDAUDIO_MUTE_PARAMS, audio.usbsidebandaudio_mute_params, USBSIDEBANDAUDIO_MUTE_PARAMS structure [Audio Devices], USBSIDEBANDAUDIO_MUTE_PARAMS, PUSBSIDEBANDAUDIO_MUTE_PARAMS structure pointer [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_MUTE_PARAMS, _USBSIDEBANDAUDIO_MUTE_PARAMS, *PUSBSIDEBANDAUDIO_MUTE_PARAMS, PUSBSIDEBANDAUDIO_MUTE_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBSIDEBANDAUDIO_MUTE_PARAMS, USBSIDEBANDAUDIO_MUTE_PARAMS"
+req.typenames : USBSIDEBANDAUDIO_MUTE_PARAMS, *PUSBSIDEBANDAUDIO_MUTE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -72,7 +72,4 @@ typedef struct _USBSIDEBANDAUDIO_MUTE_PARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbsidebandaudio.h (include Usbsidebandaudio.h) |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25455faa-2197-4b2a-bce8-db9764153e51
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltGetVolumeInstanceFromName, ifsk.fltgetvolumeinstancefromname, FltGetVolumeInstanceFromName, FltApiRef_e_to_o_78e7987d-7f24-4c51-b263-502005595c6d.xml, FltGetVolumeInstanceFromName routine [Installable File System Drivers]
+ms.keywords : fltkernel/FltGetVolumeInstanceFromName, FltGetVolumeInstanceFromName, FltApiRef_e_to_o_78e7987d-7f24-4c51-b263-502005595c6d.xml, ifsk.fltgetvolumeinstancefromname, FltGetVolumeInstanceFromName routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -119,24 +119,21 @@ The string "03333" represents a higher altitude than "100.123456". (Leading and 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 32a671e9-6a31-483f-881d-1c7938dc9405
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dhal/LPD3DHAL_DP2TEXTURESTAGESTATE, _D3DHAL_DP2TEXTURESTAGESTATE, D3DHAL_DP2TEXTURESTAGESTATE structure [Display Devices], d3dhal/D3DHAL_DP2TEXTURESTAGESTATE, D3DHAL_DP2TEXTURESTAGESTATE, LPD3DHAL_DP2TEXTURESTAGESTATE, display.d3dhal_dp2texturestagestate, LPD3DHAL_DP2TEXTURESTAGESTATE structure pointer [Display Devices], d3dstrct_3cecbef0-387e-4ec1-aa67-2a6e84b7c78a.xml, *LPD3DHAL_DP2TEXTURESTAGESTATE
+ms.keywords : d3dhal/D3DHAL_DP2TEXTURESTAGESTATE, d3dstrct_3cecbef0-387e-4ec1-aa67-2a6e84b7c78a.xml, d3dhal/LPD3DHAL_DP2TEXTURESTAGESTATE, *LPD3DHAL_DP2TEXTURESTAGESTATE, D3DHAL_DP2TEXTURESTAGESTATE, LPD3DHAL_DP2TEXTURESTAGESTATE, _D3DHAL_DP2TEXTURESTAGESTATE, LPD3DHAL_DP2TEXTURESTAGESTATE structure pointer [Display Devices], D3DHAL_DP2TEXTURESTAGESTATE structure [Display Devices], display.d3dhal_dp2texturestagestate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,6 @@ The following figure shows a portion of a sample command buffer containing a D3D
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also

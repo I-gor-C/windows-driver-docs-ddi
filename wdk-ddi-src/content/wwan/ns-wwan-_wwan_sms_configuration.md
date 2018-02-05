@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 85075b9d-72a7-4f3e-8a25-888689f9d5e1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_d68f5af0-d14e-4b01-a77d-4d3fea6db828.xml, _WWAN_SMS_CONFIGURATION, WWAN_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_configuration, *PWWAN_SMS_CONFIGURATION, PWWAN_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_CONFIGURATION, WWAN_SMS_CONFIGURATION, PWWAN_SMS_CONFIGURATION, wwan/PWWAN_SMS_CONFIGURATION
+ms.keywords : netvista.wwan_sms_configuration, PWWAN_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SMS_CONFIGURATION, _WWAN_SMS_CONFIGURATION, WWAN_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], WWAN_SMS_CONFIGURATION, WwanRef_d68f5af0-d14e-4b01-a77d-4d3fea6db828.xml, *PWWAN_SMS_CONFIGURATION, wwan/WWAN_SMS_CONFIGURATION, PWWAN_SMS_CONFIGURATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,9 +96,7 @@ Miniport drivers need to fill in this data structure only when processing
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

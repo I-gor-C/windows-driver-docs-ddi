@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e527a659-7ed5-4262-bed2-3bab58919401
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDeliver, IKsPin, IKsPin::KsDeliver, KsDeliver method [Streaming Media Devices], KsDeliver method [Streaming Media Devices], IKsPin interface, stream.ikspin_ksdeliver, ksproxy/IKsPin::KsDeliver, IKsPin interface [Streaming Media Devices], KsDeliver method, ksproxy_3608c6b5-20e3-43e1-b1aa-a283f8d00f17.xml
+ms.keywords : IKsPin::KsDeliver, ksproxy_3608c6b5-20e3-43e1-b1aa-a283f8d00f17.xml, KsDeliver method [Streaming Media Devices], IKsPin interface, KsDeliver method [Streaming Media Devices], stream.ikspin_ksdeliver, IKsPin interface [Streaming Media Devices], KsDeliver method, KsDeliver, ksproxy/IKsPin::KsDeliver, IKsPin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,14 +101,9 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

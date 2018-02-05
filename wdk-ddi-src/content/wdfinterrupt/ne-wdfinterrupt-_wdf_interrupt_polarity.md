@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6621a1ec-1d4e-4801-9418-d09a0073686a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfinterrupt/WdfInterruptPolarityUnknown, PWDF_INTERRUPT_POLARITY, DFInterruptObjectRef_979c7766-edd8-421b-8885-8000d60da78d.xml, wdfinterrupt/WDF_INTERRUPT_POLARITY, WdfInterruptPolarityUnknown, _WDF_INTERRUPT_POLARITY, *PWDF_INTERRUPT_POLARITY, wdfinterrupt/PWDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY enumeration, kmdf.wdf_interrupt_polarity, wdfinterrupt/WdfInterruptActiveLow, wdf.wdf_interrupt_polarity, WdfInterruptActiveHigh, WdfInterruptActiveLow, wdfinterrupt/WdfInterruptActiveHigh, PWDF_INTERRUPT_POLARITY enumeration pointer
+ms.keywords : wdfinterrupt/WdfInterruptActiveLow, PWDF_INTERRUPT_POLARITY enumeration pointer, _WDF_INTERRUPT_POLARITY, DFInterruptObjectRef_979c7766-edd8-421b-8885-8000d60da78d.xml, WdfInterruptActiveHigh, kmdf.wdf_interrupt_polarity, wdfinterrupt/WdfInterruptPolarityUnknown, WDF_INTERRUPT_POLARITY enumeration, WdfInterruptActiveLow, WdfInterruptPolarityUnknown, wdfinterrupt/PWDF_INTERRUPT_POLARITY, wdfinterrupt/WdfInterruptActiveHigh, *PWDF_INTERRUPT_POLARITY, wdf.wdf_interrupt_polarity, PWDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY, wdfinterrupt/WDF_INTERRUPT_POLARITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,6 @@ The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify a member o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |

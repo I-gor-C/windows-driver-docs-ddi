@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 24e28912-13d1-460f-8d32-78bb3715adc6
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : PBTH_RADIO_INFO structure pointer [Bluetooth Devices], bthioctl/BTH_RADIO_INFO, *PBTH_RADIO_INFO, bthioctl/PBTH_RADIO_INFO, BTH_RADIO_INFO, bltooth.bth_radio_info, PBTH_RADIO_INFO, _BTH_RADIO_INFO, bth_structs_5fa8e736-47a7-4ba5-bd40-f375ac6db8af.xml, BTH_RADIO_INFO structure [Bluetooth Devices]
+ms.keywords : BTH_RADIO_INFO structure [Bluetooth Devices], PBTH_RADIO_INFO structure pointer [Bluetooth Devices], PBTH_RADIO_INFO, bth_structs_5fa8e736-47a7-4ba5-bd40-f375ac6db8af.xml, BTH_RADIO_INFO, bltooth.bth_radio_info, bthioctl/BTH_RADIO_INFO, bthioctl/PBTH_RADIO_INFO, _BTH_RADIO_INFO, *PBTH_RADIO_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,9 +80,7 @@ The BTH_RADIO_INFO structure is returned as part of the output buffer of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
 ## See Also

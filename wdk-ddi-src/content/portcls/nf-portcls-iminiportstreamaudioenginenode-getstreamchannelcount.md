@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : D39376D8-CD1D-4E07-8017-0B552A4D2E59
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetStreamChannelCount method [Audio Devices], IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamChannelCount method, IMiniportStreamAudioEngineNode::GetStreamChannelCount, IMiniportStreamAudioEngineNode, audio.iminiportstreamaudioenginenode_getstreamchannelcount, GetStreamChannelCount, GetStreamChannelCount method [Audio Devices], IMiniportStreamAudioEngineNode interface, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelCount
+ms.keywords : IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::GetStreamChannelCount, audio.iminiportstreamaudioenginenode_getstreamchannelcount, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamChannelCount method, GetStreamChannelCount method [Audio Devices], GetStreamChannelCount method [Audio Devices], IMiniportStreamAudioEngineNode interface, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelCount, GetStreamChannelCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -72,14 +72,10 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

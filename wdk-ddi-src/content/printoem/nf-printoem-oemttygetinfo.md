@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9b6fcd4e-6472-4e46-b0b7-dd1279e534d0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.oemttygetinfo, printoem/OEMTTYGetInfo, OEMTTYGetInfo, print_obsoletefunctions_7da21ed3-626e-454f-9357-0ab0a0640a27.xml, OEMTTYGetInfo function [Print Devices]
+ms.keywords : print.oemttygetinfo, print_obsoletefunctions_7da21ed3-626e-454f-9357-0ab0a0640a27.xml, printoem/OEMTTYGetInfo, OEMTTYGetInfo function [Print Devices], OEMTTYGetInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 196555c8-74a6-4dae-ac4d-52654015ffeb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRequestDpc routine [Kernel-Mode Driver Architecture], wdm/IoRequestDpc, k104_37f449eb-de3d-4932-b845-388c73c55d01.xml, IoRequestDpc, kernel.iorequestdpc
+ms.keywords : k104_37f449eb-de3d-4932-b845-388c73c55d01.xml, IoRequestDpc, kernel.iorequestdpc, IoRequestDpc routine [Kernel-Mode Driver Architecture], wdm/IoRequestDpc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,11 @@ Drivers call  <b>IoRequestDpc</b> from an <a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DIRQL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

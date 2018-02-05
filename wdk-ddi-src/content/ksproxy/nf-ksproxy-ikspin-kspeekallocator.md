@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fd833d0b-2f81-4002-8280-38e17e528af6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/IKsPin::KsPeekAllocator, IKsPin, ksproxy_46ab9e52-a477-4fca-bddc-af1848484f84.xml, IKsPin::KsPeekAllocator, KsPeekAllocator, stream.ikspin_kspeekallocator, IKsPin interface [Streaming Media Devices], KsPeekAllocator method, KsPeekAllocator method [Streaming Media Devices], KsPeekAllocator method [Streaming Media Devices], IKsPin interface
+ms.keywords : IKsPin::KsPeekAllocator, KsPeekAllocator method [Streaming Media Devices], ksproxy/IKsPin::KsPeekAllocator, KsPeekAllocator, KsPeekAllocator method [Streaming Media Devices], IKsPin interface, stream.ikspin_kspeekallocator, ksproxy_46ab9e52-a477-4fca-bddc-af1848484f84.xml, IKsPin, IKsPin interface [Streaming Media Devices], KsPeekAllocator method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -96,14 +96,9 @@ This method is for proxy use and is not recommended for application use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

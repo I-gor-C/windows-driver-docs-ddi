@@ -116,20 +116,16 @@ HW_STATE_CHANGE (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
-
 <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>
+
+<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3e38880f-b242-400a-babf-531c8daf7a19
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_7f854298-d100-4b4c-8748-a7eb07c9ac38.xml, NDIS_WWAN_REGISTRATION_STATE structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_REGISTRATION_STATE, PNDIS_WWAN_REGISTRATION_STATE, *PNDIS_WWAN_REGISTRATION_STATE, ndiswwan/PNDIS_WWAN_REGISTRATION_STATE, PNDIS_WWAN_REGISTRATION_STATE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_registration_state, NDIS_WWAN_REGISTRATION_STATE, _NDIS_WWAN_REGISTRATION_STATE
+ms.keywords : WwanRef_7f854298-d100-4b4c-8748-a7eb07c9ac38.xml, PNDIS_WWAN_REGISTRATION_STATE, *PNDIS_WWAN_REGISTRATION_STATE, PNDIS_WWAN_REGISTRATION_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_REGISTRATION_STATE structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_REGISTRATION_STATE, ndiswwan/NDIS_WWAN_REGISTRATION_STATE, _NDIS_WWAN_REGISTRATION_STATE, netvista.ndis_wwan_registration_state, ndiswwan/PNDIS_WWAN_REGISTRATION_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -253,16 +253,14 @@ The device is busy and unable to change the registration mode. This scenario can
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
 
  
 

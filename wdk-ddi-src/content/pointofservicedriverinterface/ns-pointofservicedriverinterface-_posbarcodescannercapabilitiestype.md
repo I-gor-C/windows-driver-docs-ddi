@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 4387e6f4-c980-4339-a89c-0e71c5a79e2c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_PosBarcodeScannerCapabilitiesType, PosBarcodeScannerCapabilitiesType structure, pos.posbarcodescannercapabilitiestype, PosBarcodeScannerCapabilitiesType, pointofservicedriverinterface/PosBarcodeScannerCapabilitiesType"
+ms.keywords : PosBarcodeScannerCapabilitiesType, pointofservicedriverinterface/PosBarcodeScannerCapabilitiesType, pos.posbarcodescannercapabilitiestype, _PosBarcodeScannerCapabilitiesType, PosBarcodeScannerCapabilitiesType structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ A <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

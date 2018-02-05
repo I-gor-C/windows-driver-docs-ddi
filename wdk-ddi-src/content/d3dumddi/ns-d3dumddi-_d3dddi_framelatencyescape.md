@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 19395349-375E-46AF-BCCF-FF5C92B374C4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_FRAMELATENCYESCAPE, display.d3dddi_framelatencyescape, _D3DDDI_FRAMELATENCYESCAPE, D3DDDI_FRAMELATENCYESCAPE structure [Display Devices], d3dumddi/D3DDDI_FRAMELATENCYESCAPE
+ms.keywords : "_D3DDDI_FRAMELATENCYESCAPE, D3DDDI_FRAMELATENCYESCAPE structure [Display Devices], D3DDDI_FRAMELATENCYESCAPE, display.d3dddi_framelatencyescape, d3dumddi/D3DDDI_FRAMELATENCYESCAPE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ typedef struct _D3DDDI_FRAMELATENCYESCAPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

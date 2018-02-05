@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ad24f1b4-ac7f-46df-8f8d-14c956c73a34
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetWdmGetTargetPhysicalDevice, WdfIoTargetWdmGetTargetPhysicalDevice method, wdfiotarget/WdfIoTargetWdmGetTargetPhysicalDevice, DFIOTargetRef_43beb595-b555-4253-8a54-495e9e14f071.xml, wdf.wdfiotargetwdmgettargetphysicaldevice, kmdf.wdfiotargetwdmgettargetphysicaldevice, PFN_WDFIOTARGETWDMGETTARGETPHYSICALDEVICE
+ms.keywords : wdfiotarget/WdfIoTargetWdmGetTargetPhysicalDevice, kmdf.wdfiotargetwdmgettargetphysicaldevice, WdfIoTargetWdmGetTargetPhysicalDevice, WdfIoTargetWdmGetTargetPhysicalDevice method, wdf.wdfiotargetwdmgettargetphysicaldevice, DFIOTargetRef_43beb595-b555-4253-8a54-495e9e14f071.xml, PFN_WDFIOTARGETWDMGETTARGETPHYSICALDEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,20 +79,18 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0a2ac234-633d-4ebc-9e13-05a12534f93a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLMEDIAOFFERACTION enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIAOFFERACTION_CANCEL, RIL_CALLMEDIAOFFERACTION_ERROR, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_CANCEL, RIL_CALLMEDIAOFFERACTION_REJECT, ntddrilapitypes/RILCALLMEDIAOFFERACTION, RIL_CALLMEDIAOFFERACTION_MAX, RIL_CALLMEDIAOFFERACTION_ACCEPT, RIL_CALLMEDIAOFFERACTION_ASK, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_ASK, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_ACCEPT, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_REJECT, netvista.rilcallmediaofferaction, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_MAX, RILCALLMEDIAOFFERACTION, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_ERROR
+ms.keywords : netvista.rilcallmediaofferaction, RILCALLMEDIAOFFERACTION, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_ASK, RIL_CALLMEDIAOFFERACTION_ACCEPT, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_CANCEL, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_ACCEPT, RIL_CALLMEDIAOFFERACTION_ASK, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_MAX, ntddrilapitypes/RILCALLMEDIAOFFERACTION, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_ERROR, RIL_CALLMEDIAOFFERACTION_MAX, RILCALLMEDIAOFFERACTION enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIAOFFERACTION_REJECT, ntddrilapitypes/RIL_CALLMEDIAOFFERACTION_REJECT, RIL_CALLMEDIAOFFERACTION_ERROR, RIL_CALLMEDIAOFFERACTION_CANCEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ typedef enum _RILCALLMEDIAOFFERACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

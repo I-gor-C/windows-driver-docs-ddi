@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : bcda26ae-484e-41b9-b86a-552b5cecb9a7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetNearNameByOffset method [Windows Debugging], GetNearNameByOffset method [Windows Debugging], IDebugSymbols interface, GetNearNameByOffset, GetNearNameByOffset method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetNearNameByOffset, dbgeng/IDebugSymbols2::GetNearNameByOffset, GetNearNameByOffset method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::GetNearNameByOffset, IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffset method, IDebugSymbols_cdd9bec8-6fe8-4523-ac98-df3ce90fd073.xml, dbgeng/IDebugSymbols::GetNearNameByOffset, debugger.getnearnamebyoffset, IDebugSymbols3::GetNearNameByOffset, IDebugSymbols3, IDebugSymbols interface [Windows Debugging], GetNearNameByOffset method, IDebugSymbols2 interface [Windows Debugging], GetNearNameByOffset method, IDebugSymbols::GetNearNameByOffset
+ms.keywords : GetNearNameByOffset method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::GetNearNameByOffset, dbgeng/IDebugSymbols::GetNearNameByOffset, IDebugSymbols2 interface [Windows Debugging], GetNearNameByOffset method, GetNearNameByOffset method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], GetNearNameByOffset method, debugger.getnearnamebyoffset, dbgeng/IDebugSymbols2::GetNearNameByOffset, IDebugSymbols2::GetNearNameByOffset, IDebugSymbols3::GetNearNameByOffset, IDebugSymbols::GetNearNameByOffset, IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffset method, GetNearNameByOffset, GetNearNameByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetNearNameByOffset method [Windows Debugging], IDebugSymbols_cdd9bec8-6fe8-4523-ac98-df3ce90fd073.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -136,26 +136,21 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548035">GetOffsetByName</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548035">GetOffsetByName</a>
 
  
 

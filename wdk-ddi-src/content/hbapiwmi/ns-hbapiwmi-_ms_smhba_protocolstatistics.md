@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : eb992a5e-41fe-4bb3-9f53-785135af8a32
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : MS_SMHBA_PROTOCOLSTATISTICS structure [Storage Devices], _MS_SMHBA_PROTOCOLSTATISTICS, storage.ms_smhba_protocolstatistics, PMS_SMHBA_PROTOCOLSTATISTICS, structs-Fibre_c49fbe22-4575-4738-810b-c9b53d5cc40c.xml, hbapiwmi/PMS_SMHBA_PROTOCOLSTATISTICS, MS_SMHBA_PROTOCOLSTATISTICS, hbapiwmi/MS_SMHBA_PROTOCOLSTATISTICS, *PMS_SMHBA_PROTOCOLSTATISTICS, PMS_SMHBA_PROTOCOLSTATISTICS structure pointer [Storage Devices]
+ms.keywords : MS_SMHBA_PROTOCOLSTATISTICS, _MS_SMHBA_PROTOCOLSTATISTICS, PMS_SMHBA_PROTOCOLSTATISTICS structure pointer [Storage Devices], hbapiwmi/MS_SMHBA_PROTOCOLSTATISTICS, MS_SMHBA_PROTOCOLSTATISTICS structure [Storage Devices], PMS_SMHBA_PROTOCOLSTATISTICS, *PMS_SMHBA_PROTOCOLSTATISTICS, hbapiwmi/PMS_SMHBA_PROTOCOLSTATISTICS, structs-Fibre_c49fbe22-4575-4738-810b-c9b53d5cc40c.xml, storage.ms_smhba_protocolstatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,7 +86,4 @@ The statistics counters whose values are reported in the members of this structu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 29B823A2-C645-4DA3-A3BE-4A3ED6A9799F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PPM_PERF_CONSTRAINTS structure [Kernel-Mode Driver Architecture], PPEP_PPM_PERF_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], PERFORMANCE_LIMIT_THERMAL, pepfx/PPEP_PPM_PERF_CONSTRAINTS, _PEP_PPM_QUERY_PERF_CONSTRAINTS, PPEP_PPM_PERF_CONSTRAINTS, kernel.pep_ppm_perf_constraints, PEP_PPM_PERF_CONSTRAINTS, PERFORMANCE_LIMIT_POWER, *PPEP_PPM_PERF_CONSTRAINTS, pepfx/PEP_PPM_PERF_CONSTRAINTS, PERFORMANCE_LIMIT_DOMAIN_DEPENDENCY
+ms.keywords : PERFORMANCE_LIMIT_THERMAL, PPEP_PPM_PERF_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], PERFORMANCE_LIMIT_POWER, pepfx/PPEP_PPM_PERF_CONSTRAINTS, PEP_PPM_PERF_CONSTRAINTS, PEP_PPM_PERF_CONSTRAINTS structure [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_PERF_CONSTRAINTS, kernel.pep_ppm_perf_constraints, PERFORMANCE_LIMIT_DOMAIN_DEPENDENCY, *PPEP_PPM_PERF_CONSTRAINTS, PPEP_PPM_PERF_CONSTRAINTS, pepfx/PEP_PPM_PERF_CONSTRAINTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_PPM_PERF_CONSTRAINTS, *PPEP_PPM_PERF_CONSTRAINTS
+req.typenames : "*PPEP_PPM_PERF_CONSTRAINTS, PEP_PPM_PERF_CONSTRAINTS"
 ---
 
 # _PEP_PPM_QUERY_PERF_CONSTRAINTS structure
@@ -107,9 +107,7 @@ The <b>GuaranteedPerformanceLimit</b> member value is specified in platform-spec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

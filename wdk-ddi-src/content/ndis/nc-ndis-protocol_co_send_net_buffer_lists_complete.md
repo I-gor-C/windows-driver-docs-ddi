@@ -43,8 +43,8 @@ req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 The 
   <i>ProtocolCoSendNetBufferListsComplete</i> function completes a send operation that the protocol driver
   initiated with a call to the 
-  <mshelp:link keywords="netvista.ndiscosendnetbufferlists" tabindex="0"><b>
-  NdisCoSendNetBufferLists</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">
+  NdisCoSendNetBufferLists</a> function.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE</b> type.
    For more information, see the following Examples section.</div><div> </div>
 
@@ -76,8 +76,8 @@ A handle to a protocol driver-allocated context area in which this driver mainta
 A pointer to a list of 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that the
      protocol driver supplied in a previous call to the 
-     <mshelp:link keywords="netvista.ndiscosendnetbufferlists" tabindex="0"><b>
-     NdisCoSendNetBufferLists</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">
+     NdisCoSendNetBufferLists</a> function.
 
 `SendCompleteFlags`
 
@@ -103,8 +103,8 @@ The
 
 NDIS calls 
     <i>ProtocolCoSendNetBufferListsComplete</i> after the underlying miniport driver calls the 
-    <mshelp:link keywords="netvista.ndismsendnetbufferlistscomplete" tabindex="0"><b>
-    NdisMCoSendNetBufferListsComplete</b></mshelp:link> function. A complete send operation does not necessarily imply
+    <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
+    NdisMCoSendNetBufferListsComplete</a> function. A complete send operation does not necessarily imply
     that an underlying miniport driver has transmitted the specified network data. For example, a miniport
     driver can indicate that a send operation has completed as soon as it transfers the network data to the
     network interface card (NIC) hardware.
@@ -159,31 +159,27 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-<mshelp:link keywords="netvista.ndismcosendnetbufferlistscomplete" tabindex="0"><b>
-   NdisMCoSendNetBufferListsComplete</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-protocol_co_receive_net_buffer_lists.md">ProtocolCoReceiveNetBufferLists</a>
-
 <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545115">CoNDIS Protocol Driver Send and Receive Functions</a>
+<a href="..\ndis\nf-ndis-ndismcosendnetbufferlistscomplete.md">
+   NdisMCoSendNetBufferListsComplete</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545115">CoNDIS Protocol Driver Send and Receive Functions</a>
+
+<a href="..\ndis\nc-ndis-protocol_co_receive_net_buffer_lists.md">ProtocolCoReceiveNetBufferLists</a>
 
  
 

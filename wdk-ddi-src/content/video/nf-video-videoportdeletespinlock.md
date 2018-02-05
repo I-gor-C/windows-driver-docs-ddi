@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 74845e4d-0fa1-4625-96a7-2fddec8b901d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortDeleteSpinLock, video/VideoPortDeleteSpinLock, display.videoportdeletespinlock, VideoPortDeleteSpinLock function [Display Devices], VideoPort_Functions_d98d74d6-bf9c-441b-95e3-a3455927dd45.xml
+ms.keywords : video/VideoPortDeleteSpinLock, VideoPort_Functions_d98d74d6-bf9c-441b-95e3-a3455927dd45.xml, VideoPortDeleteSpinLock function [Display Devices], display.videoportdeletespinlock, VideoPortDeleteSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,20 +76,18 @@ This routine cannot be called from an ISR or from a <a href="..\video\nf-video-v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportcreatespinlock.md">VideoPortCreateSpinLock</a>
-
 <a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
+
+<a href="..\video\nf-video-videoportcreatespinlock.md">VideoPortCreateSpinLock</a>
 
  
 

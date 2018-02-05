@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4AE7C35B-D2EA-4987-8195-EDD472C39681
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_WFD_DEVICE_TYPE, PDOT11_WFD_DEVICE_TYPE structure pointer [Network Drivers Starting with Windows Vista], DOT11_WFD_DEVICE_TYPE structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_WFD_DEVICE_TYPE, PDOT11_WFD_DEVICE_TYPE, _DOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE, netvista.dot11_wfd_device_type
+ms.keywords : "_DOT11_WFD_DEVICE_TYPE, PDOT11_WFD_DEVICE_TYPE structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE, windot11/PDOT11_WFD_DEVICE_TYPE, windot11/DOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE, netvista.dot11_wfd_device_type, DOT11_WFD_DEVICE_TYPE structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_WFD_DEVICE_TYPE, *PDOT11_WFD_DEVICE_TYPE
+req.typenames : "*PDOT11_WFD_DEVICE_TYPE, DOT11_WFD_DEVICE_TYPE"
 req.product : Windows 10 or later.
 ---
 
@@ -72,7 +72,5 @@ The <b>DOT11_WFD_DEVICE_TYPE</b> data is provided in host byte-ordering. The min
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |

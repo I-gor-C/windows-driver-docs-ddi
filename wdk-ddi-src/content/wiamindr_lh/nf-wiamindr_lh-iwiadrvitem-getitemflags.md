@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 47358d69-ef45-4cac-8187-72c354912c4e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetItemFlags method [Imaging Devices], IWiaDrvItem interface [Imaging Devices], GetItemFlags method, image.iwiadrvitem_getitemflags, IWiaDrvItem::GetItemFlags, IWiaDrvItem, wiamindr_lh/IWiaDrvItem::GetItemFlags, GetItemFlags method [Imaging Devices], IWiaDrvItem interface, GetItemFlags, DrvItem_6fcac1f5-c754-4158-a1a0-61efe0d3913c.xml
+ms.keywords : DrvItem_6fcac1f5-c754-4158-a1a0-61efe0d3913c.xml, image.iwiadrvitem_getitemflags, wiamindr_lh/IWiaDrvItem::GetItemFlags, IWiaDrvItem::GetItemFlags, GetItemFlags method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], GetItemFlags method, IWiaDrvItem, GetItemFlags, GetItemFlags method [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -69,20 +69,16 @@ The method places the current <b>IWiaDrvItem</b> item's flag values in the locat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
-
 <a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
+
+<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
 
  
 

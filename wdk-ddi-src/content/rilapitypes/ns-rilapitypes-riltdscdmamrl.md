@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 26399c62-c17a-40ad-964e-144badc55614
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILTDSCDMAMRL, netvista.riltdscdmamrl, rilapitypes/RILTDSCDMAMRL, *LPRILTDSCDMAMRL, RILTDSCDMAMRL structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "*LPRILTDSCDMAMRL, netvista.riltdscdmamrl, rilapitypes/RILTDSCDMAMRL, RILTDSCDMAMRL structure [Network Drivers Starting with Windows Vista], RILTDSCDMAMRL"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILTDSCDMAMRL, *LPRILTDSCDMAMRL
+req.typenames : "*LPRILTDSCDMAMRL, RILTDSCDMAMRL"
 req.product : Windows 10 or later.
 ---
 
@@ -100,9 +100,6 @@ Channel number (0...16383).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

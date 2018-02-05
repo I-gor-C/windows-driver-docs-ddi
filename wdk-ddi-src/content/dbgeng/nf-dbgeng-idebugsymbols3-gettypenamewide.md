@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0098aa2c-4ee4-49e4-a480-2402e771742f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetTypeNameWide method, debugger.gettypenamewide, GetTypeNameWide method [Windows Debugging], IDebugSymbols3 interface, GetTypeNameWide method [Windows Debugging], GetTypeNameWide, IDebugSymbols3, dbgeng/IDebugSymbols3::GetTypeNameWide, IDebugSymbols3::GetTypeNameWide
+ms.keywords : GetTypeNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetTypeNameWide, IDebugSymbols3 interface [Windows Debugging], GetTypeNameWide method, dbgeng/IDebugSymbols3::GetTypeNameWide, GetTypeNameWide method [Windows Debugging], debugger.gettypenamewide, IDebugSymbols3, GetTypeNameWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -127,20 +127,15 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nf-dbgeng-idebugsymbols-gettypesize.md">GetTypeSize</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="..\wdbgexts\nf-wdbgexts-gettypesize.md">GetTypeSize</a>
 
  
 

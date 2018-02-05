@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c476c8a2-5d79-45cd-ae72-f8792137f9c2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_a98adb70-bb89-4d0d-8922-836056896a61.xml, VideoPortDebugPrint function [Display Devices], display.videoportdebugprint, video/VideoPortDebugPrint, VideoPortDebugPrint
+ms.keywords : VideoPortDebugPrint, display.videoportdebugprint, VideoPortDebugPrint function [Display Devices], VideoPort_Functions_a98adb70-bb89-4d0d-8922-836056896a61.xml, video/VideoPortDebugPrint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,7 +62,7 @@ VOID VideoPortDebugPrint(
 
 Pointer to a string that contains the debug message.
 
-``
+`Arg1`
 
 
 
@@ -75,11 +75,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

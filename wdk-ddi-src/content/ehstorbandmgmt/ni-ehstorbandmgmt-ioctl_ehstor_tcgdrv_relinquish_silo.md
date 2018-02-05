@@ -75,9 +75,8 @@ To prevent the TCG Storage Silo driver from reconfiguring the TCG subsystem in a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
-| **IRQL** |  |
 
 ## See Also
 

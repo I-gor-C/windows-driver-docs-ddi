@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 84b2de56-55f9-471c-8d32-84fe1365dfbf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_IMSSUBSCRIBETYPE_MWI, RIL_IMSSUBSCRIBETYPE_MWI, rilapitypes/RIL_IMSSUBSCRIBETYPE_MAX, RILIMSSUBSCRIBETYPE enumeration [Network Drivers Starting with Windows Vista], RILIMSSUBSCRIBETYPE, netvista.rilimssubscribetype_2, rilapitypes/RILIMSSUBSCRIBETYPE, RIL_IMSSUBSCRIBETYPE_MAX, rilapitypes/RIL_IMSSUBSCRIBETYPE_CONFERENCE, RIL_IMSSUBSCRIBETYPE_CONFERENCE
+ms.keywords : rilapitypes/RIL_IMSSUBSCRIBETYPE_MWI, RIL_IMSSUBSCRIBETYPE_MWI, RILIMSSUBSCRIBETYPE enumeration [Network Drivers Starting with Windows Vista], RIL_IMSSUBSCRIBETYPE_CONFERENCE, rilapitypes/RIL_IMSSUBSCRIBETYPE_MAX, RILIMSSUBSCRIBETYPE, RIL_IMSSUBSCRIBETYPE_MAX, netvista.rilimssubscribetype_2, rilapitypes/RIL_IMSSUBSCRIBETYPE_CONFERENCE, rilapitypes/RILIMSSUBSCRIBETYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILIMSSUBSCRIBETYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

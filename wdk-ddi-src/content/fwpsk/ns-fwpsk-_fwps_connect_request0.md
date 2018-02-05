@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dee5586d-62fd-4e08-854c-c7d44be60a71
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FWPS_CONNECT_REQUEST0 structure [Network Drivers Starting with Windows Vista], wfp_ref_3_struct_3_fwps_A-E_af2ba16d-4454-4f69-9682-c9f759ef26e8.xml, fwpsk/FWPS_CONNECT_REQUEST0, _FWPS_CONNECT_REQUEST0, FWPS_CONNECT_REQUEST0, netvista.fwps_connect_request0
+ms.keywords : fwpsk/FWPS_CONNECT_REQUEST0, FWPS_CONNECT_REQUEST0 structure [Network Drivers Starting with Windows Vista], _FWPS_CONNECT_REQUEST0, netvista.fwps_connect_request0, wfp_ref_3_struct_3_fwps_A-E_af2ba16d-4454-4f69-9682-c9f759ef26e8.xml, FWPS_CONNECT_REQUEST0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -127,8 +127,8 @@ The remote transport address of the connect request. This is an IPV4 or IPV6 add
 
 ## Remarks
 The callout driver obtains this structure by calling the 
-    <mshelp:link keywords="netvista.fwpsacquirewritablelayerdatapointer0" tabindex="0"><b>
-    FwpsAcquireWritableLayerDataPointer0</b></mshelp:link> function, which returns a pointer to a <b>FWPS_CONNECT_REQUEST0</b>
+    <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
+    FwpsAcquireWritableLayerDataPointer0</a> function, which returns a pointer to a <b>FWPS_CONNECT_REQUEST0</b>
     structure through the 
     <i>writableLayerData</i> parameter. The 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function can modify the connect
@@ -145,13 +145,13 @@ Make all changes to the <b>FWPS_CONNECT_REQUEST0</b> structure that was returned
 </li>
 <li>
 Call 
-      <mshelp:link keywords="netvista.fwpsapplymodifiedlayerdata0" tabindex="0"><b>
-      FwpsApplyModifiedLayerData0</b></mshelp:link> with the 
+      <a href="..\fwpsk\nf-fwpsk-fwpsapplymodifiedlayerdata0.md">
+      FwpsApplyModifiedLayerData0</a> with the 
       <i>modifiedLayerData</i> parameter set to the address of the <b>FWPS_CONNECT_REQUEST0</b> structure, even if the callout driver didn't modify any data. This value
       must be the same as the 
       <i>modifiedLayerData</i> parameter value returned through 
-      <mshelp:link keywords="netvista.fwpsacquirewritablelayerdatapointer0" tabindex="0"><b>
-      FwpsAcquireWritableLayerDataPointer0</b></mshelp:link>.
+      <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
+      FwpsAcquireWritableLayerDataPointer0</a>.
 
 </li>
 </ul>This structure acts as a linked list that contains a record of all the changes made by other callout
@@ -163,30 +163,28 @@ Call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.fwpsacquirewritablelayerdatapointer0" tabindex="0"><b>
-   FwpsAcquireWritableLayerDataPointer0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
+   FwpsAcquireWritableLayerDataPointer0</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
 
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsapplymodifiedlayerdata0.md">FwpsApplyModifiedLayerData0</a>
 
-<mshelp:link keywords="netvista.using_bind_or_connect_redirection" tabindex="0">Using Bind or Connect
-   Redirection</mshelp:link>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-bind-or-connect-redirection">Using Bind or Connect
+   Redirection</a>
 
  
 

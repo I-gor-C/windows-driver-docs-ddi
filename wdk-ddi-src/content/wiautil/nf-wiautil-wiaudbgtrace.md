@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : c3cdb5c9-b43d-443b-8d04-d30eb74f39da
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauDbgTrace function [Imaging Devices], wiautil/wiauDbgTrace, image.wiaudbgtrace, wiauFncs_5c66ac77-5db3-489c-b7fc-84393e9105dd.xml, wiauDbgTrace
+ms.keywords : wiauDbgTrace function [Imaging Devices], wiauFncs_5c66ac77-5db3-489c-b7fc-84393e9105dd.xml, wiauDbgTrace, wiautil/wiauDbgTrace, image.wiaudbgtrace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,7 +62,7 @@ Pointer to a string containing the name of the function or method into which the
 
 TBD
 
-``
+`Arg1`
 
 
 
@@ -75,24 +75,20 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
-
-<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
-
-<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 
 <a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
 
 <a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
+
+<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
+
+<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 
  
 

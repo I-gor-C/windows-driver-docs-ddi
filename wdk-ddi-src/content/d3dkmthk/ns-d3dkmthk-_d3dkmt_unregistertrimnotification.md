@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 336C5C6A-619B-4D28-9F06-A09CABF78073
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_unregistertrimnotification, D3DKMT_UNREGISTERTRIMNOTIFICATION structure [Display Devices], d3dkmthk/D3DKMT_UNREGISTERTRIMNOTIFICATION, D3DKMT_UNREGISTERTRIMNOTIFICATION, _D3DKMT_UNREGISTERTRIMNOTIFICATION
+ms.keywords : D3DKMT_UNREGISTERTRIMNOTIFICATION structure [Display Devices], d3dkmthk/D3DKMT_UNREGISTERTRIMNOTIFICATION, D3DKMT_UNREGISTERTRIMNOTIFICATION, _D3DKMT_UNREGISTERTRIMNOTIFICATION, display.d3dkmt_unregistertrimnotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,9 +63,7 @@ typedef struct _D3DKMT_UNREGISTERTRIMNOTIFICATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 300720f6-8049-4558-ba8b-ecdbb8a59dbd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryRuntimeThread, k105_e8f1a28f-98f1-447c-bb72-1d1da6b50f01.xml, kernel.kequeryruntimethread, KeQueryRuntimeThread routine [Kernel-Mode Driver Architecture], wdm/KeQueryRuntimeThread
+ms.keywords : KeQueryRuntimeThread routine [Kernel-Mode Driver Architecture], kernel.kequeryruntimethread, wdm/KeQueryRuntimeThread, k105_e8f1a28f-98f1-447c-bb72-1d1da6b50f01.xml, KeQueryRuntimeThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,12 +71,11 @@ Pointer to the memory location where <b>KeQueryRuntimeThread</b> returns the acc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

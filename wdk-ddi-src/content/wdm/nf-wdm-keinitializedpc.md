@@ -81,24 +81,22 @@ Storage for the DPC object must be resident: in the device extension of a driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keremovequeuedpc.md">KeRemoveQueueDpc</a>
-
 <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
+
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a>
 
-<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
+<a href="..\wdm\nf-wdm-keremovequeuedpc.md">KeRemoveQueueDpc</a>
 
  
 

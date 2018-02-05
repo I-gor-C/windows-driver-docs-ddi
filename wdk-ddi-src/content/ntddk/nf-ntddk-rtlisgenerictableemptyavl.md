@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9190DA2F-5530-4427-862F-00434DD9C950
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntddk/RtlIsGenericTableEmptyAvl, RtlIsGenericTableEmptyAvl routine [Installable File System Drivers], RtlIsGenericTableEmptyAvl, ifsk.rtlisgenerictableemptyavl
+ms.keywords : ifsk.rtlisgenerictableemptyavl, RtlIsGenericTableEmptyAvl, RtlIsGenericTableEmptyAvl routine [Installable File System Drivers], ntddk/RtlIsGenericTableEmptyAvl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ Callers of <b>RtlIsGenericTableEmptyAvl</b> must be running at ≤ APC_LEVEL if 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

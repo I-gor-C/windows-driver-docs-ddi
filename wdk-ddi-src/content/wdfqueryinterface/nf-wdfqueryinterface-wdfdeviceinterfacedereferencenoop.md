@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 76319a0b-a7b3-48f6-804b-e01bc360c441
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinterfacedereferencenoop, kmdf.wdfdeviceinterfacedereferencenoop, PFN_WDFDEVICEINTERFACEDEREFERENCENOOP, DFDeviceObjectDriverDefIntRef_2bfa96a8-a58a-4408-83db-11670d7de8c7.xml, wdfqueryinterface/WdfDeviceInterfaceDereferenceNoOp, WdfDeviceInterfaceDereferenceNoOp method, WdfDeviceInterfaceDereferenceNoOp
+ms.keywords : WdfDeviceInterfaceDereferenceNoOp method, wdfqueryinterface/WdfDeviceInterfaceDereferenceNoOp, DFDeviceObjectDriverDefIntRef_2bfa96a8-a58a-4408-83db-11670d7de8c7.xml, PFN_WDFDEVICEINTERFACEDEREFERENCENOOP, wdf.wdfdeviceinterfacedereferencenoop, WdfDeviceInterfaceDereferenceNoOp, kmdf.wdfdeviceinterfacedereferencenoop
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_PDO_EVENT_CALLBACKS, WDF_PDO_EVENT_CALLBACKS"
+req.typenames : WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
 req.product : Windows 10 or later.
 ---
 
@@ -73,20 +73,17 @@ For more information about interface reference counts and the <b>WdfDeviceInterf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfqueryinterface.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceinterfacereferencenoop.md">WdfDeviceInterfaceReferenceNoOp</a>
-
 <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a>
+
+<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceinterfacereferencenoop.md">WdfDeviceInterfaceReferenceNoOp</a>
 
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 

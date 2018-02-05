@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ac5994a7-411c-47f2-ba1d-2d49c727de8d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_3_struct_3_fwps_P-Z_3acc4a2d-78ef-418a-ab15-a9e306110baf.xml, netvista.fwps_packet_list_inbound_ipsec_information0, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_, fwpsk/FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.fwps_packet_list_inbound_ipsec_information0, wfp_ref_3_struct_3_fwps_P-Z_3acc4a2d-78ef-418a-ab15-a9e306110baf.xml, fwpsk/FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,21 +89,19 @@ A value that indicates whether the packet list has been verified against the IPs
 
 ## Remarks
 An FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure is included as a member of the 
-    <mshelp:link keywords="netvista.fwps_packet_list_ipsec_information0" tabindex="0"><b>
-    FWPS_PACKET_LIST_IPSEC_INFORMATION0</b></mshelp:link> structure.
+    <a href="..\fwpsk\ns-fwpsk-fwps_packet_list_ipsec_information0_.md">
+    FWPS_PACKET_LIST_IPSEC_INFORMATION0</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.fwps_packet_list_ipsec_information0" tabindex="0"><b>
-   FWPS_PACKET_LIST_IPSEC_INFORMATION0</b></mshelp:link>
+<a href="..\fwpsk\ns-fwpsk-fwps_packet_list_ipsec_information0_.md">
+   FWPS_PACKET_LIST_IPSEC_INFORMATION0</a>
 
  
 

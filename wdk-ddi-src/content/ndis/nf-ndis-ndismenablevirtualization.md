@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5a82dfe6-8844-4b18-8f54-7bf143fcd2ff
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismenablevirtualization, ndis/NdisMEnableVirtualization, NdisMEnableVirtualization, NdisMEnableVirtualization function [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis/NdisMEnableVirtualization, netvista.ndismenablevirtualization, NdisMEnableVirtualization function [Network Drivers Starting with Windows Vista], NdisMEnableVirtualization
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -211,24 +211,21 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451817">OID_NIC_SWITCH_DELETE_SWITCH</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451815">OID_NIC_SWITCH_CREATE_SWITCH</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451005">EnableVirtualization</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451817">OID_NIC_SWITCH_DELETE_SWITCH</a>
 
 <b></b>
 

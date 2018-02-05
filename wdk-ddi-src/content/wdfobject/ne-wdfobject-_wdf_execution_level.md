@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 82b1fe8e-054c-4710-9a32-d620a62a070e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "_WDF_EXECUTION_LEVEL, WdfExecutionLevelDispatch, WdfExecutionLevelPassive, wdfobject/WDF_EXECUTION_LEVEL, WDF_EXECUTION_LEVEL enumeration, wdf.wdf_execution_level, kmdf.wdf_execution_level, wdfobject/WdfExecutionLevelInvalid, DFGenObjectRef_f9a9ae20-9dba-4c23-910b-04c60e1f9539.xml, WdfExecutionLevelInheritFromParent, WdfExecutionLevelInvalid, wdfobject/WdfExecutionLevelPassive, WDF_EXECUTION_LEVEL, wdfobject/WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelInheritFromParent"
+ms.keywords : kmdf.wdf_execution_level, WDF_EXECUTION_LEVEL, WdfExecutionLevelInheritFromParent, _WDF_EXECUTION_LEVEL, wdfobject/WDF_EXECUTION_LEVEL, wdfobject/WdfExecutionLevelPassive, DFGenObjectRef_f9a9ae20-9dba-4c23-910b-04c60e1f9539.xml, wdfobject/WdfExecutionLevelInvalid, WdfExecutionLevelPassive, WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelInheritFromParent, WdfExecutionLevelInvalid, wdf.wdf_execution_level, WDF_EXECUTION_LEVEL enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -120,7 +120,6 @@ For more information about execution levels for event callback functions, see <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |

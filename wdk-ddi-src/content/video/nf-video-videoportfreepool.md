@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84e4f178-87d3-4f40-b4fc-7959818305fd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportfreepool, VideoPortFreePool, VideoPort_Functions_a2b1e2c4-9f8d-455b-8484-c51e0669d526.xml, video/VideoPortFreePool, VideoPortFreePool function [Display Devices]
+ms.keywords : VideoPortFreePool, VideoPortFreePool function [Display Devices], video/VideoPortFreePool, display.videoportfreepool, VideoPort_Functions_a2b1e2c4-9f8d-455b-8484-c51e0669d526.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,20 +76,18 @@ Callers of <b>VideoPortFreePool</b> must be running at IRQL &lt;= DISPATCH_LEVEL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportallocatepool.md">VideoPortAllocatePool</a>
-
 <a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>
+
+<a href="..\video\nf-video-videoportallocatepool.md">VideoPortAllocatePool</a>
 
  
 

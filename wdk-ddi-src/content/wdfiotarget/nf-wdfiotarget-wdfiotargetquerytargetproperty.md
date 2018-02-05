@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 00987914-9fe2-4245-b463-ef362e31679d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFIOTargetRef_33739a99-4af2-4e90-92e5-b75e785f1c2c.xml, WdfIoTargetQueryTargetProperty method, wdfiotarget/WdfIoTargetQueryTargetProperty, wdf.wdfiotargetquerytargetproperty, PFN_WDFIOTARGETQUERYTARGETPROPERTY, kmdf.wdfiotargetquerytargetproperty, WdfIoTargetQueryTargetProperty
+ms.keywords : wdfiotarget/WdfIoTargetQueryTargetProperty, PFN_WDFIOTARGETQUERYTARGETPROPERTY, DFIOTargetRef_33739a99-4af2-4e90-92e5-b75e785f1c2c.xml, WdfIoTargetQueryTargetProperty, kmdf.wdfiotargetquerytargetproperty, wdf.wdfiotargetquerytargetproperty, WdfIoTargetQueryTargetProperty method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -140,26 +140,24 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
+<a href="https://msdn.microsoft.com/a17b4a88-45e8-45e7-b879-2f41b97be368">DEVICE_REGISTRY_PROPERTY</a>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetallocandquerytargetproperty.md">WdfIoTargetAllocAndQueryTargetProperty</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryproperty.md">WdfDeviceQueryProperty</a>
 
-<a href="https://msdn.microsoft.com/a17b4a88-45e8-45e7-b879-2f41b97be368">DEVICE_REGISTRY_PROPERTY</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
  
 

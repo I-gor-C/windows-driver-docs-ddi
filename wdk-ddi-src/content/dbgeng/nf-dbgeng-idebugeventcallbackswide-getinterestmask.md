@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b1e62ae3-4a3d-42db-b7fe-87d1a7e0b438
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugEventCallbacksWide::GetInterestMask, GetInterestMask, GetInterestMask method [Windows Debugging], debugger.idebugeventcallbackswide_getinterestmask, IDebugEventCallbacksWide, IDebugEventCallbacksWide interface [Windows Debugging], GetInterestMask method, IDebugEventCallbacksWide::GetInterestMask, GetInterestMask method [Windows Debugging], IDebugEventCallbacksWide interface
+ms.keywords : GetInterestMask, IDebugEventCallbacksWide::GetInterestMask, IDebugEventCallbacksWide, GetInterestMask method [Windows Debugging], debugger.idebugeventcallbackswide_getinterestmask, GetInterestMask method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging], GetInterestMask method, dbgeng/IDebugEventCallbacksWide::GetInterestMask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,11 +68,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

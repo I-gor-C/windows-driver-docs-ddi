@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -62,8 +62,8 @@ DWORD Dot11extihvInitVirtualStation(
 `pDot11ExtVSAPI`
 
 A pointer to a 
-     <mshelp:link keywords="netvista.dot11ext_virtual_station_apis" tabindex="0"><b>
-     DOT11EXT_VIRTUAL_STATION_APIS</b></mshelp:link> structure, which contains the addresses of the IHV Extensibility
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_apis.md">
+     DOT11EXT_VIRTUAL_STATION_APIS</a> structure, which contains the addresses of the IHV Extensibility
      virtual station functions that are supported by the operating system. The operating system formats this
      parameter with the function addresses before making a call to the 
      <i>Dot11ExtIhvInitVirtualStation</i> function.
@@ -87,8 +87,8 @@ The operating system calls the
     <i>Dot11ExtIhvInitVirtualStation</i> function immediately after it calls the 
     <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_service.md">Dot11ExtIhvInitService</a> function,
     but before it calls the 
-    <mshelp:link keywords="netvista.dot11extihvinitadapter" tabindex="0"><i>
-    Dot11ExtIhvInitAdapter</i></mshelp:link> function.
+    <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">
+    Dot11ExtIhvInitAdapter</a> function.
 
 In response to a call to 
     <i>Dot11ExtIhvInitVirtualStation</i>, the IHV Extensions DLL can initialize its internal data structures
@@ -120,22 +120,17 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_handlers.md">DOT11EXT_IHV_HANDLERS</a>
+
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a>
 
  
 

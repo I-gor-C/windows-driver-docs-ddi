@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2b44fb2e-7278-47c0-8654-a9013ed0134a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getlasteventinformation, IDebugControl2 interface [Windows Debugging], GetLastEventInformation method, dbgeng/IDebugControl2::GetLastEventInformation, IDebugControl3 interface [Windows Debugging], GetLastEventInformation method, IDebugControl3::GetLastEventInformation, IDebugControl3, IDebugControl2::GetLastEventInformation, GetLastEventInformation method [Windows Debugging], IDebugControl3 interface, IDebugControl_4016bdce-0386-4c6f-9039-9a4046f3805b.xml, GetLastEventInformation, IDebugControl::GetLastEventInformation, GetLastEventInformation method [Windows Debugging], IDebugControl interface, GetLastEventInformation method [Windows Debugging], GetLastEventInformation method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetLastEventInformation, dbgeng/IDebugControl::GetLastEventInformation, IDebugControl interface [Windows Debugging], GetLastEventInformation method
+ms.keywords : IDebugControl::GetLastEventInformation, dbgeng/IDebugControl3::GetLastEventInformation, GetLastEventInformation method [Windows Debugging], IDebugControl2 interface, GetLastEventInformation, debugger.getlasteventinformation, dbgeng/IDebugControl2::GetLastEventInformation, IDebugControl3::GetLastEventInformation, IDebugControl_4016bdce-0386-4c6f-9039-9a4046f3805b.xml, IDebugControl3 interface [Windows Debugging], GetLastEventInformation method, IDebugControl3, IDebugControl2::GetLastEventInformation, GetLastEventInformation method [Windows Debugging], IDebugControl interface [Windows Debugging], GetLastEventInformation method, GetLastEventInformation method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::GetLastEventInformation, IDebugControl2 interface [Windows Debugging], GetLastEventInformation method, GetLastEventInformation method [Windows Debugging], IDebugControl3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -138,24 +138,19 @@ For more information about the last event, see the topic <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548431">GetStoredEventInformation</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548431">GetStoredEventInformation</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

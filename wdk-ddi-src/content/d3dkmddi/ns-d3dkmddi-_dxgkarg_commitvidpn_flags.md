@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 02fe4216-101e-4ba7-88df-029f8bba9c17
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_COMMITVIDPN_FLAGS, DmStructs_267e916a-7058-4ce7-892d-9ed9d6f74bce.xml, DXGKARG_COMMITVIDPN_FLAGS, _DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS structure [Display Devices], display.dxgkarg_commitvidpn_flags
+ms.keywords : d3dkmddi/DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS structure [Display Devices], _DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS, DmStructs_267e916a-7058-4ce7-892d-9ed9d6f74bce.xml, display.dxgkarg_commitvidpn_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -93,9 +93,7 @@ If a system resume operation is triggered after monitors were turned off for a s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

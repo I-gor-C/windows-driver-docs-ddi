@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3ad19dc0-f301-4367-b867-6bc714fd3d5e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportreadportbufferushort, VideoPortReadPortBufferUshort, VideoPortReadPortBufferUshort function [Display Devices], VideoPort_Functions_598e11ff-25be-4b55-a86f-130100ed0972.xml, video/VideoPortReadPortBufferUshort
+ms.keywords : VideoPortReadPortBufferUshort function [Display Devices], VideoPort_Functions_598e11ff-25be-4b55-a86f-130100ed0972.xml, video/VideoPortReadPortBufferUshort, VideoPortReadPortBufferUshort, display.videoportreadportbufferushort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,22 +83,20 @@ Callers of <b>VideoPortReadPortBufferUshort</b> can be running at any IRQL, prov
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
 
-<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 
  
 

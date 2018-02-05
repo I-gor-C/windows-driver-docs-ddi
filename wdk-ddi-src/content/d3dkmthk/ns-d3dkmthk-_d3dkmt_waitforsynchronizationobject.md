@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 47d0330e-5413-4729-b103-c1a4d6c648e1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, OpenGL_Structs_5498c651-0ef6-4114-9821-de193980f879.xml, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, display.d3dkmt_waitforsynchronizationobject, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure [Display Devices], D3DKMT_WAITFORSYNCHRONIZATIONOBJECT"
+ms.keywords : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dkmt_waitforsynchronizationobject, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT, OpenGL_Structs_5498c651-0ef6-4114-9821-de193980f879.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

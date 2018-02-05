@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5E870D10-A03B-4CD8-A2DD-54A6AB527DB2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList, IWDFCmResourceList interface, GetDescriptor method, GetDescriptor method, IWDFCmResourceList interface, GetDescriptor method, umdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList::GetDescriptor, wudfddi/IWDFCmResourceList::GetDescriptor, GetDescriptor
+ms.keywords : IWDFCmResourceList::GetDescriptor, GetDescriptor, IWDFCmResourceList interface, GetDescriptor method, wudfddi/IWDFCmResourceList::GetDescriptor, wdf.iwdfcmresourcelist_getdescriptor, GetDescriptor method, IWDFCmResourceList interface, umdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList, GetDescriptor method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,12 @@ For more information about parsing hardware resources, see <a href="https://docs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

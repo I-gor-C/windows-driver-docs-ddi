@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7d8ff1cc-e5d6-473b-bc16-e87468bb546c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetPhonebookOptions, RIL_GetPhonebookOptions method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetPhonebookOptions, netvista.ril_getphonebookoptions
+ms.keywords : rilapi/RIL_GetPhonebookOptions, RIL_GetPhonebookOptions method [Network Drivers Starting with Windows Vista], RIL_GetPhonebookOptions, netvista.ril_getphonebookoptions
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

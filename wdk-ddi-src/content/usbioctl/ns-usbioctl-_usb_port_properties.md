@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : BCADC907-3770-4FBE-AEB3-96F93502E899
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSB_PORT_PROPERTIES union pointer [Buses], *PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES union [Buses], PUSB_PORT_PROPERTIES, usbioctl/PUSB_PORT_PROPERTIES, _USB_PORT_PROPERTIES, usbioctl/USB_PORT_PROPERTIES, buses.usb_port_properties, USB_PORT_PROPERTIES
+ms.keywords : usbioctl/USB_PORT_PROPERTIES, USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES union pointer [Buses], _USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES union [Buses], *PUSB_PORT_PROPERTIES, usbioctl/PUSB_PORT_PROPERTIES, buses.usb_port_properties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_PORT_PROPERTIES, *PUSB_PORT_PROPERTIES
+req.typenames : "*PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES"
 req.product : Windows 10 or later.
 ---
 
@@ -67,9 +67,7 @@ A bitmask that indicates the properties and capabilities of the port.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also

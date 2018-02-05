@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a5ff1158-539f-4b25-8b65-72d077108c46
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW, UMDisplayDriver_Dx11param_Structs_c097052f-b667-43a9-8133-172770d9ab70.xml, display.d3d11ddiarg_buffer_unorderedaccessview, d3d10umddi/D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW, D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW structure [Display Devices]
+ms.keywords : display.d3d11ddiarg_buffer_unorderedaccessview, UMDisplayDriver_Dx11param_Structs_c097052f-b667-43a9-8133-172770d9ab70.xml, D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW structure [Display Devices], d3d10umddi/D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW, D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -120,18 +120,16 @@ Associate a counter with the UAV whose semantics prevent the reordering of the c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system. D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createunorderedaccessview.md">D3D11DDIARG_CREATEUNORDEREDACCESSVIEW</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize.md">CalcPrivateUnorderedAccessViewSize</a>
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 21E89D92-9902-4785-B022-8D17268FE75F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : LastDStateTransitionStatusUnknown, wdm/D3COLD_LAST_TRANSITION_STATUS, *PD3COLD_LAST_TRANSITION_STATUS, wdm/LastDStateTransitionStatusUnknown, kernel.d3cold_last_transition_status, D3COLD_LAST_TRANSITION_STATUS enumeration [Kernel-Mode Driver Architecture], LastDStateTransitionD3hot, wdm/LastDStateTransitionD3hot, LastDStateTransitionD3cold, wdm/LastDStateTransitionD3cold, _D3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS
+ms.keywords : "_D3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS enumeration [Kernel-Mode Driver Architecture], wdm/LastDStateTransitionStatusUnknown, LastDStateTransitionStatusUnknown, D3COLD_LAST_TRANSITION_STATUS, kernel.d3cold_last_transition_status, LastDStateTransitionD3cold, LastDStateTransitionD3hot, wdm/LastDStateTransitionD3cold, wdm/D3COLD_LAST_TRANSITION_STATUS, wdm/LastDStateTransitionD3hot, *PD3COLD_LAST_TRANSITION_STATUS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : D3COLD_LAST_TRANSITION_STATUS, *PD3COLD_LAST_TRANSITION_STATUS
+req.typenames : "*PD3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS"
 req.product : Windows 10 or later.
 ---
 
@@ -78,9 +78,6 @@ The <i>LastTransitionStatus</i> parameter of the <a href="..\wdm\nc-wdm-get_d3co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e3bb6ead-8129-4605-8755-3a56d4b3d8f6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsReadFile, KsReadFile function [Streaming Media Devices], stream.ksreadfile, ksfunc_9264bdad-2acc-46fe-9ca3-d006bf6c3e23.xml, KsReadFile
+ms.keywords : stream.ksreadfile, ks/KsReadFile, KsReadFile, KsReadFile function [Streaming Media Devices], ksfunc_9264bdad-2acc-46fe-9ca3-d006bf6c3e23.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,11 +100,6 @@ The <b>KsReadFile</b> function returns STATUS_SUCCESS if successful, STATUS_PEND
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1225f28d-3b89-4b14-82c3-5162de9fe8fd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : fwpsk/FWPS_FIELDS_STREAM_V4, FWPS_FIELDS_STREAM_V4 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELD_STREAM_V4_IP_REMOTE_PORT, FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELDS_STREAM_V4, FWPS_FIELD_STREAM_V4_FLAGS, FWPS_FIELD_STREAM_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_STREAM_V4_IP_REMOTE_ADDRESS, FWPS_FIELD_STREAM_V4_IP_REMOTE_ADDRESS, FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_STREAM_V4_FLAGS, fwpsk/FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_STREAM_V4_MAX, fwpsk/FWPS_FIELD_STREAM_V4_MAX, netvista.fwps_fields_stream_v4, fwpsk/FWPS_FIELD_STREAM_V4_IP_REMOTE_PORT, FWPS_FIELD_STREAM_V4_DIRECTION, fwpsk/FWPS_FIELD_STREAM_V4_DIRECTION, wfp_ref_5_const_3_data_fields_767d81c5-f927-4512-812d-396966457b7a.xml, FWPS_FIELDS_STREAM_V4_, fwpsk/FWPS_FIELD_STREAM_V4_IP_LOCAL_PORT
+ms.keywords : fwpsk/FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_STREAM_V4_MAX, FWPS_FIELD_STREAM_V4_MAX, FWPS_FIELDS_STREAM_V4, FWPS_FIELD_STREAM_V4_FLAGS, FWPS_FIELD_STREAM_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_STREAM_V4_IP_LOCAL_PORT, FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELDS_STREAM_V4, fwpsk/FWPS_FIELD_STREAM_V4_FLAGS, fwpsk/FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_STREAM_V4_IP_REMOTE_ADDRESS, FWPS_FIELDS_STREAM_V4_, FWPS_FIELD_STREAM_V4_IP_LOCAL_ADDRESS, netvista.fwps_fields_stream_v4, wfp_ref_5_const_3_data_fields_767d81c5-f927-4512-812d-396966457b7a.xml, fwpsk/FWPS_FIELD_STREAM_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_STREAM_V4_IP_REMOTE_PORT, fwpsk/FWPS_FIELD_STREAM_V4_DIRECTION, FWPS_FIELD_STREAM_V4_DIRECTION, FWPS_FIELD_STREAM_V4_IP_REMOTE_PORT, FWPS_FIELDS_STREAM_V4 enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -70,15 +70,15 @@ typedef enum FWPS_FIELDS_STREAM_V4_ {
 
 <tr>
 <td>FWPS_FIELD_STREAM_V4_DIRECTION</td>
-<td>####  The possible values are:
+<td>#### FWP_DIRECTION_INBOUND
 
 
 
-#### FWP_DIRECTION_INBOUND
+#### FWP_DIRECTION_OUTBOUND
 
 
 
-#### FWP_DIRECTION_OUTBOUND</td>
+####  The possible values are:</td>
 </tr>
 
 <tr>
@@ -128,9 +128,7 @@ typedef enum FWPS_FIELDS_STREAM_V4_ {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Unless otherwise noted, supported starting with Windows Vista. Unless otherwise noted, supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
 ## See Also

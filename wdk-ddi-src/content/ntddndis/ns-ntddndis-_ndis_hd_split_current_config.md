@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 866fe9e6-0cb1-45cd-84b4-4e2df9c9c45a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_HD_SPLIT_CURRENT_CONFIG, _NDIS_HD_SPLIT_CURRENT_CONFIG, *PNDIS_HD_SPLIT_CURRENT_CONFIG, netvista.ndis_hd_split_current_config, PNDIS_HD_SPLIT_CURRENT_CONFIG structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_HD_SPLIT_CURRENT_CONFIG, header_data_split_ref_7275dcfc-6fe4-4648-9b4c-0b5a37aa850b.xml, NDIS_HD_SPLIT_CURRENT_CONFIG, ntddndis/PNDIS_HD_SPLIT_CURRENT_CONFIG, NDIS_HD_SPLIT_CURRENT_CONFIG structure [Network Drivers Starting with Windows Vista]
+ms.keywords : NDIS_HD_SPLIT_CURRENT_CONFIG, PNDIS_HD_SPLIT_CURRENT_CONFIG, _NDIS_HD_SPLIT_CURRENT_CONFIG, ntddndis/PNDIS_HD_SPLIT_CURRENT_CONFIG, PNDIS_HD_SPLIT_CURRENT_CONFIG structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_HD_SPLIT_CURRENT_CONFIG, netvista.ndis_hd_split_current_config, header_data_split_ref_7275dcfc-6fe4-4648-9b4c-0b5a37aa850b.xml, NDIS_HD_SPLIT_CURRENT_CONFIG structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_HD_SPLIT_CURRENT_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -167,25 +167,23 @@ The maximum size, in bytes, that the miniport driver is using for the header por
 
 ## Remarks
 The NDIS_HD_SPLIT_CURRENT_CONFIG structure is used in the 
-    <mshelp:link keywords="netvista.oid_gen_hd_split_current_config" tabindex="0">
-    OID_GEN_HD_SPLIT_CURRENT_CONFIG</mshelp:link> OID query request to obtain the current header-data split
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-hd-split-current-config">
+    OID_GEN_HD_SPLIT_CURRENT_CONFIG</a> OID query request to obtain the current header-data split
     configuration of a miniport adapter.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-hd-split-current-config">OID_GEN_HD_SPLIT_CURRENT_CONFIG</a>
-
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-hd-split-current-config">OID_GEN_HD_SPLIT_CURRENT_CONFIG</a>
 
  
 

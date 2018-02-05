@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c4605d9c-b12c-4056-bf19-a67df3ef8c8b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.ifixedpage_getxpspartiterator, filterpipeline_da8f4ed6-71b0-4d95-867b-7389815fd072.xml, GetXpsPartIterator method [Print Devices], IFixedPage, GetXpsPartIterator, IFixedPage interface [Print Devices], GetXpsPartIterator method, GetXpsPartIterator method [Print Devices], IFixedPage interface, IFixedPage::GetXpsPartIterator, filterpipeline/IFixedPage::GetXpsPartIterator
+ms.keywords : GetXpsPartIterator method [Print Devices], IFixedPage interface, IFixedPage interface [Print Devices], GetXpsPartIterator method, GetXpsPartIterator method [Print Devices], print.ifixedpage_getxpspartiterator, filterpipeline/IFixedPage::GetXpsPartIterator, IFixedPage, IFixedPage::GetXpsPartIterator, filterpipeline_da8f4ed6-71b0-4d95-867b-7389815fd072.xml, GetXpsPartIterator
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,11 +68,6 @@ Filters should not add or delete parts while using the iterator that the <b>GetX
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

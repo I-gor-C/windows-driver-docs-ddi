@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4e7766bb-eb5b-4f79-b9b8-89f7dcb98569
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, OpenGL_Structs_4ec11480-30cb-45a1-a31c-e7432ec45abf.xml, display.d3dkmt_sharedprimarylocknotification, D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure [Display Devices], D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
+ms.keywords : D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure [Display Devices], OpenGL_Structs_4ec11480-30cb-45a1-a31c-e7432ec45abf.xml, _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, d3dkmthk/D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, display.d3dkmt_sharedprimarylocknotification, D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

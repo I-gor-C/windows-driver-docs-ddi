@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 954a4811-4515-4ed4-a4f1-df598d08fc77
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxpdereferenceandfinalizenetfcb, RxpDereferenceAndFinalizeNetFcb function [Installable File System Drivers], RxpDereferenceAndFinalizeNetFcb, rxref_474f30d3-858e-4179-8236-3068a2325818.xml, fcb/RxpDereferenceAndFinalizeNetFcb
+ms.keywords : ifsk.rxpdereferenceandfinalizenetfcb, RxpDereferenceAndFinalizeNetFcb function [Installable File System Drivers], rxref_474f30d3-858e-4179-8236-3068a2325818.xml, RxpDereferenceAndFinalizeNetFcb, fcb/RxpDereferenceAndFinalizeNetFcb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,17 @@ On checked builds, <b>RxpDereferenceAndFinalizeNetFcb</b> causes the system to A
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The RxpDereferenceAndFinalizeNetFcb routine is only available on Windows Server 2003 Service Pack 1 (SP1) and later. The RxpDereferenceAndFinalizeNetFcb routine is only available on Windows Server 2003 Service Pack 1 (SP1) and later. |
+| **Target Platform** | Desktop |
 | **Header** | fcb.h (include Fcb.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
-
 <a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+
+<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
 
 <a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
 

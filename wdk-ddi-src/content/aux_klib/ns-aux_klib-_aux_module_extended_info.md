@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9733b17d-c990-4eda-87e2-906f2f78c5d5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : AUX_MODULE_EXTENDED_INFO structure [Kernel-Mode Driver Architecture], PAUX_MODULE_EXTENDED_INFO structure pointer [Kernel-Mode Driver Architecture], _AUX_MODULE_EXTENDED_INFO, aux_klib/AUX_MODULE_EXTENDED_INFO, PAUX_MODULE_EXTENDED_INFO, aux_klib_670e2af9-0080-49b9-85c4-06a6b1ae06c6.xml, AUX_MODULE_EXTENDED_INFO, *PAUX_MODULE_EXTENDED_INFO, aux_klib/PAUX_MODULE_EXTENDED_INFO, kernel.aux_module_extended_info
+ms.keywords : PAUX_MODULE_EXTENDED_INFO, AUX_MODULE_EXTENDED_INFO structure [Kernel-Mode Driver Architecture], _AUX_MODULE_EXTENDED_INFO, *PAUX_MODULE_EXTENDED_INFO, PAUX_MODULE_EXTENDED_INFO structure pointer [Kernel-Mode Driver Architecture], aux_klib_670e2af9-0080-49b9-85c4-06a6b1ae06c6.xml, aux_klib/AUX_MODULE_EXTENDED_INFO, aux_klib/PAUX_MODULE_EXTENDED_INFO, kernel.aux_module_extended_info, AUX_MODULE_EXTENDED_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : AUX_MODULE_EXTENDED_INFO, *PAUX_MODULE_EXTENDED_INFO
+req.typenames : "*PAUX_MODULE_EXTENDED_INFO, AUX_MODULE_EXTENDED_INFO"
 ---
 
 # _AUX_MODULE_EXTENDED_INFO structure
@@ -76,9 +76,6 @@ The <b>AUX_MODULE_EXTENDED_INFO</b> structure is used as input to the <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | aux_klib.h (include Aux_klib.h) |
 
 ## See Also

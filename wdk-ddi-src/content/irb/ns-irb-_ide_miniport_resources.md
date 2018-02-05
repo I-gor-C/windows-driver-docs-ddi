@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 867b6152-9846-484f-9eac-07d0f24d55df
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PIDE_MINIPORT_RESOURCES, irb/IDE_MINIPORT_RESOURCES, storage.ide_miniport_resources, PIDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES structure [Storage Devices], _IDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES, irb/PIDE_MINIPORT_RESOURCES, structs-ATA_28df7197-d4b0-4279-a4db-e9b1269f6ba7.xml, PIDE_MINIPORT_RESOURCES structure pointer [Storage Devices]"
+ms.keywords : "*PIDE_MINIPORT_RESOURCES, irb/IDE_MINIPORT_RESOURCES, structs-ATA_28df7197-d4b0-4279-a4db-e9b1269f6ba7.xml, irb/PIDE_MINIPORT_RESOURCES, _IDE_MINIPORT_RESOURCES, PIDE_MINIPORT_RESOURCES structure pointer [Storage Devices], storage.ide_miniport_resources, IDE_MINIPORT_RESOURCES structure [Storage Devices], PIDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : IDE_MINIPORT_RESOURCES, *PIDE_MINIPORT_RESOURCES
+req.typenames : "*PIDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES"
 ---
 
 # _IDE_MINIPORT_RESOURCES structure
@@ -67,9 +67,6 @@ The port driver passes this structure to the miniport driver's <a href="https://
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
 ## See Also

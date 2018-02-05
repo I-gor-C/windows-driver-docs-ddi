@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d32da7d9-7f26-4c99-8c10-3b9e1a7c9c22
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortGetUncachedExtension routine [Storage Devices], srb/ScsiPortGetUncachedExtension, storage.scsiportgetuncachedextension, scsiprt_b3764d3f-3e99-4a2f-b17c-30d6fcafe255.xml, ScsiPortGetUncachedExtension
+ms.keywords : srb/ScsiPortGetUncachedExtension, ScsiPortGetUncachedExtension, storage.scsiportgetuncachedextension, ScsiPortGetUncachedExtension routine [Storage Devices], scsiprt_b3764d3f-3e99-4a2f-b17c-30d6fcafe255.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -92,14 +92,9 @@ The ScsiPort driver will free the memory allocated by <b>ScsiPortGetUncachedExte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

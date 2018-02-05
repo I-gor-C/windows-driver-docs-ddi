@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4c23f270-9ea3-475f-81d8-c003b2aca44b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFInterruptObjectRef_5b885d42-7ce9-4ac2-b97b-c41906298c22.xml, kmdf.wdf_interrupt_info_init, wdfinterrupt/WDF_INTERRUPT_INFO_INIT, WDF_INTERRUPT_INFO_INIT, wdf.wdf_interrupt_info_init, WDF_INTERRUPT_INFO_INIT function
+ms.keywords : DFInterruptObjectRef_5b885d42-7ce9-4ac2-b97b-c41906298c22.xml, kmdf.wdf_interrupt_info_init, wdf.wdf_interrupt_info_init, wdfinterrupt/WDF_INTERRUPT_INFO_INIT, WDF_INTERRUPT_INFO_INIT, WDF_INTERRUPT_INFO_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,12 @@ For more information about handling interrupts in framework-based drivers, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

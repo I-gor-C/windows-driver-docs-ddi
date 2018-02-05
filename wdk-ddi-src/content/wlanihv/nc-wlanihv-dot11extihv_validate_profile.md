@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -73,22 +73,22 @@ The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) a
 `pIhvProfileParams`
 
 A pointer to a 
-     <mshelp:link keywords="netvista.dot11ext_ihv_profile_params" tabindex="0"><b>
-     DOT11EXT_IHV_PROFILE_PARAMS</b></mshelp:link> structure. This structure defines the attributes of the basic service
+     <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">
+     DOT11EXT_IHV_PROFILE_PARAMS</a> structure. This structure defines the attributes of the basic service
      set (BSS) network to which the profile extensions will be applied.
 
 `pIhvConnProfile`
 
 A pointer to a 
-     <mshelp:link keywords="netvista.dot11ext_ihv_connectivity_profile" tabindex="0"><b>
-     DOT11EXT_IHV_CONNECTIVITY_PROFILE</b></mshelp:link> structure that contains connectivity settings for the IHV
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_connectivity_profile.md">
+     DOT11EXT_IHV_CONNECTIVITY_PROFILE</a> structure that contains connectivity settings for the IHV
      profile.
 
 `pIhvSecProfile`
 
 A pointer to a 
-     <mshelp:link keywords="netvista.dot11ext_ihv_security_profile" tabindex="0"><b>
-     DOT11EXT_IHV_SECURITY_PROFILE</b></mshelp:link> structure that contains security settings for the IHV
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_security_profile.md">
+     DOT11EXT_IHV_SECURITY_PROFILE</a> structure that contains security settings for the IHV
      profile.
 
 `pdwReasonCode`
@@ -155,25 +155,20 @@ An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_COD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h, L2cmn.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_connectivity_profile.md">
+   DOT11EXT_IHV_CONNECTIVITY_PROFILE</a>
+
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_security_profile.md">DOT11EXT_IHV_SECURITY_PROFILE</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
 <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
-
-<mshelp:link keywords="netvista.dot11ext_ihv_connectivity_profile" tabindex="0"><b>
-   DOT11EXT_IHV_CONNECTIVITY_PROFILE</b></mshelp:link>
-
-<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_security_profile.md">DOT11EXT_IHV_SECURITY_PROFILE</a>
 
  
 

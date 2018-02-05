@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dca3023b-99d5-471a-a5a2-8453c367ce9b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwunlockfile, NtUnlockFile, ZwUnlockFile, ntifs/NtUnlockFile, ntifs/ZwUnlockFile, k111_a77fe0ba-5252-4441-aaad-67d2bbae01cb.xml, ZwUnlockFile routine [Kernel-Mode Driver Architecture]
+ms.keywords : ZwUnlockFile routine [Kernel-Mode Driver Architecture], ntifs/NtUnlockFile, k111_a77fe0ba-5252-4441-aaad-67d2bbae01cb.xml, ZwUnlockFile, ntifs/ZwUnlockFile, kernel.zwunlockfile, NtUnlockFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -108,20 +108,19 @@ Callers of <b>ZwUnlockFile</b> must be running at IRQL = PASSIVE_LEVEL and <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwlockfile.md">ZwLockFile</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\ntifs\nf-ntifs-zwlockfile.md">ZwLockFile</a>
 
  
 

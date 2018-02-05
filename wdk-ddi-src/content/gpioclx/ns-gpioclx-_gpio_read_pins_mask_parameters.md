@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 679C9A71-7F39-4344-93D0-6B1332D76CF7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PGPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS, PGPIO_READ_PINS_MASK_PARAMETERS structure pointer [Parallel Ports], _GPIO_READ_PINS_MASK_PARAMETERS, *PGPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS structure [Parallel Ports], gpioclx/PGPIO_READ_PINS_MASK_PARAMETERS, GPIO.gpio_read_pins_mask_parameters, gpioclx/GPIO_READ_PINS_MASK_PARAMETERS
+ms.keywords : GPIO.gpio_read_pins_mask_parameters, *PGPIO_READ_PINS_MASK_PARAMETERS, gpioclx/GPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS structure [Parallel Ports], PGPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS, PGPIO_READ_PINS_MASK_PARAMETERS structure pointer [Parallel Ports], gpioclx/PGPIO_READ_PINS_MASK_PARAMETERS, _GPIO_READ_PINS_MASK_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GPIO_READ_PINS_MASK_PARAMETERS, *PGPIO_READ_PINS_MASK_PARAMETERS
+req.typenames : "*PGPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS"
 ---
 
 # _GPIO_READ_PINS_MASK_PARAMETERS structure
@@ -76,16 +76,14 @@ The <i>ReadParameters</i> parameter of the <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a>
 

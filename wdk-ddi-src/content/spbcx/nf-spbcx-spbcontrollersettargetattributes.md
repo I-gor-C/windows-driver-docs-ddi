@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 8EC415AA-F578-42BF-B785-52613B20A2AC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : spbcx/SpbControllerSetTargetAttributes, SpbControllerSetTargetAttributes method [Buses], SPB.spbcontrollersettargetattributes, SpbControllerSetTargetAttributes
+ms.keywords : SpbControllerSetTargetAttributes method [Buses], SpbControllerSetTargetAttributes, spbcx/SpbControllerSetTargetAttributes, SPB.spbcontrollersettargetattributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -84,14 +84,11 @@ The SPB controller driver must call this method before it <i>commits</i> the dev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | spbcx.h |
-| **Library** |  |
+| **Library** | Spbcxstubs.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

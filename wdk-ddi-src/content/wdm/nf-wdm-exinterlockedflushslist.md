@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 98fcada7-5160-4eb2-ac7c-0ab1192340a9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exinterlockedflushslist, k102_493935e2-44c7-471b-807f-ca6f110d8155.xml, wdm/ExInterlockedFlushSList, ExInterlockedFlushSList routine [Kernel-Mode Driver Architecture], ExInterlockedFlushSList
+ms.keywords : ExInterlockedFlushSList, kernel.exinterlockedflushslist, wdm/ExInterlockedFlushSList, k102_493935e2-44c7-471b-807f-ca6f110d8155.xml, ExInterlockedFlushSList routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,12 @@ Callers of <b>ExInterlockedFlushSList</b> can be running at any IRQL. The storag
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

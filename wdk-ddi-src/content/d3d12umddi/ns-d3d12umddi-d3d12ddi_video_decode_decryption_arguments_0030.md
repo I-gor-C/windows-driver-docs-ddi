@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cdd89f48-1b27-4362-81b3-ed3b89b80b6e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030, display.d3d12ddi-video-decode-decryption-arguments-0030, D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030
+ms.keywords : d3d12umddi/D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030, D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030, display.d3d12ddi-video-decode-decryption-arguments-0030, D3D12DDI_VIDEO_DECODE_DECRYPTION_ARGUMENTS_0030 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ Sub sample mapping count.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h |

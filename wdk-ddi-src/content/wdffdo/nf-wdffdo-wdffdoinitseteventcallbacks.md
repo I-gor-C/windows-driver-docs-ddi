@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0a47ea47-590c-4395-b38e-d1f1fb1929e1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdffdoinitseteventcallbacks, wdf.wdffdoinitseteventcallbacks, WdfFdoInitSetEventCallbacks method, PFN_WDFFDOINITSETEVENTCALLBACKS, WdfFdoInitSetEventCallbacks, DFDeviceObjectFdoPdoRef_3a3fbec9-836c-422e-a921-654fa4866989.xml, wdffdo/WdfFdoInitSetEventCallbacks
+ms.keywords : wdffdo/WdfFdoInitSetEventCallbacks, WdfFdoInitSetEventCallbacks, WdfFdoInitSetEventCallbacks method, PFN_WDFFDOINITSETEVENTCALLBACKS, kmdf.wdffdoinitseteventcallbacks, DFDeviceObjectFdoPdoRef_3a3fbec9-836c-422e-a921-654fa4866989.xml, wdf.wdffdoinitseteventcallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -80,12 +80,10 @@ For more information about the <b>WdfFdoInitSetEventCallbacks</b> method, see <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2 |
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 87d9f307-996b-47df-b3dd-368fef6c1042
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, AddSyntheticModule, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AddSyntheticModule method, IDebugSymbols3, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface, debugger.addsyntheticmodule, dbgeng/IDebugSymbols3::AddSyntheticModule, IDebugSymbols3::AddSyntheticModule
+ms.keywords : IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, AddSyntheticModule, debugger.addsyntheticmodule, AddSyntheticModule method [Windows Debugging], dbgeng/IDebugSymbols3::AddSyntheticModule, IDebugSymbols3, IDebugSymbols3::AddSyntheticModule, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModule method, AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -110,22 +110,17 @@ For more information about synthetic modules, see <a href="https://msdn.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554536">RemoveSyntheticModule</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
 
  
 

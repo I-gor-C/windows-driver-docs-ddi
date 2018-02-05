@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bf51b8dc-82e8-420e-bc3d-7cb9e8d72b9f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSetDisplayMode function [Display Devices], d3dkmthk/D3DKMTSetDisplayMode, D3DKMTSetDisplayMode, OpenGL_Functions_dc92e1c9-5873-42b6-a8f8-f6827091dac4.xml, display.d3dkmtsetdisplaymode
+ms.keywords : D3DKMTSetDisplayMode function [Display Devices], display.d3dkmtsetdisplaymode, D3DKMTSetDisplayMode, d3dkmthk/D3DKMTSetDisplayMode, OpenGL_Functions_dc92e1c9-5873-42b6-a8f8-f6827091dac4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -138,14 +138,11 @@ Before the OpenGL ICD calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

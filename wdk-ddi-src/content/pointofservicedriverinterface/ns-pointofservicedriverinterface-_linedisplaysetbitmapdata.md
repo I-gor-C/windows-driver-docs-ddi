@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 8674FD34-65FB-4B69-B43C-0D21133E35AB
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : LineDisplaySetBitmapData, pointofservicedriverinterface/LineDisplaySetBitmapData, pointofservicedriverinterface/PLineDisplaySetBitmapData, PLineDisplaySetBitmapData, PLineDisplaySetBitmapData structure pointer, _LineDisplaySetBitmapData, pos.linedisplaysetbitmapdata, LineDisplaySetBitmapData structure
+ms.keywords : PLineDisplaySetBitmapData, pointofservicedriverinterface/PLineDisplaySetBitmapData, LineDisplaySetBitmapData, PLineDisplaySetBitmapData structure pointer, LineDisplaySetBitmapData structure, pointofservicedriverinterface/LineDisplaySetBitmapData, _LineDisplaySetBitmapData, pos.linedisplaysetbitmapdata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ typedef struct _LineDisplaySetBitmapData {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

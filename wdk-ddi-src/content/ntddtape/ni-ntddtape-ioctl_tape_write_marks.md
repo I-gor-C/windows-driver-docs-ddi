@@ -71,17 +71,15 @@ The <b>Information</b> field is set to the number of bytes written. The <b>Statu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddtape.h (include Ntddtape.h) |
-| **IRQL** |  |
 
 ## See Also
+
+<a href="..\ntddtape\ns-ntddtape-_tape_write_marks.md">TAPE_WRITE_MARKS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567958">TapeMiniWriteMarks</a>
 
 <a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
-
-<a href="..\ntddtape\ns-ntddtape-_tape_write_marks.md">TAPE_WRITE_MARKS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DDAA5F5A-4A9C-4E8C-B322-A9B395DC753B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTUnlock2 function [Display Devices], d3dkmthk/D3DKMTUnlock2, display.d3dkmtunlock2, D3DKMTUnlock2
+ms.keywords : D3DKMTUnlock2 function [Display Devices], D3DKMTUnlock2, d3dkmthk/D3DKMTUnlock2, display.d3dkmtunlock2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,14 +94,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

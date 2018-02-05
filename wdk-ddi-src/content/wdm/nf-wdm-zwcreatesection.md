@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 805d7eff-19be-47a1-acc9-1b97e5493031
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/NtCreateSection, NtCreateSection, k111_8e0d13e2-4cd7-4b39-b1ce-41b193c495be.xml, ZwCreateSection, kernel.zwcreatesection, ZwCreateSection routine [Kernel-Mode Driver Architecture], wdm/ZwCreateSection
+ms.keywords : NtCreateSection, wdm/ZwCreateSection, ZwCreateSection routine [Kernel-Mode Driver Architecture], ZwCreateSection, kernel.zwcreatesection, wdm/NtCreateSection, k111_8e0d13e2-4cd7-4b39-b1ce-41b193c495be.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -231,30 +231,28 @@ For more information about setting up mapped sections and views of memory, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-<a href="..\wdm\nf-wdm-zwunmapviewofsection.md">ZwUnmapViewOfSection</a>
+<a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a>
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
-<a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a>
+<a href="..\wdm\nf-wdm-zwunmapviewofsection.md">ZwUnmapViewOfSection</a>
 
 <a href="https://msdn.microsoft.com/d3302183-76a0-47ec-874f-1173db353dfe">CreateFileMapping</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 <a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

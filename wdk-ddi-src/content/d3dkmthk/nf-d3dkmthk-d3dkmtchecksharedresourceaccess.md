@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ca1861d3-a838-4b4a-9304-e75dcca04f0d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTCheckSharedResourceAccess, display.d3dkmtchecksharedresourceaccess, OpenGL_Functions_b9ffd997-0bfe-47ad-a769-c2ed8148fe4b.xml, D3DKMTCheckSharedResourceAccess function [Display Devices], PFND3DKMT_CHECKSHAREDRESOURCEACCESS, D3DKMTCheckSharedResourceAccess
+ms.keywords : OpenGL_Functions_b9ffd997-0bfe-47ad-a769-c2ed8148fe4b.xml, D3DKMTCheckSharedResourceAccess function [Display Devices], display.d3dkmtchecksharedresourceaccess, D3DKMTCheckSharedResourceAccess, PFND3DKMT_CHECKSHAREDRESOURCEACCESS, d3dkmthk/D3DKMTCheckSharedResourceAccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTCheckSharedResourceAccess is supported beginning with the Windows 7 operating system. D3DKMTCheckSharedResourceAccess is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

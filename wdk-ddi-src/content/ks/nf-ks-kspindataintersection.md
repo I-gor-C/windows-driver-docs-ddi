@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e4bf090d-35ec-42fd-8b6e-ce51734adba5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_33b743b3-4045-49cb-a5d4-f6aede715223.xml, KsPinDataIntersection function [Streaming Media Devices], KsPinDataIntersection, ks/KsPinDataIntersection, stream.kspindataintersection
+ms.keywords : stream.kspindataintersection, KsPinDataIntersection function [Streaming Media Devices], ks/KsPinDataIntersection, KsPinDataIntersection, ksfunc_33b743b3-4045-49cb-a5d4-f6aede715223.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,9 @@ A match can occur under three conditions: if the major format of the range passe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

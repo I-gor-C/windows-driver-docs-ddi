@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 896ea6aa-54e8-4109-8597-58d8d2cd75ce
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k111_58eefadc-2aff-4252-82a6-6f0c9ab43a19.xml, NtQueryFullAttributesFile, wdm/ZwQueryFullAttributesFile, ZwQueryFullAttributesFile routine [Kernel-Mode Driver Architecture], wdm/NtQueryFullAttributesFile, kernel.zwqueryfullattributesfile, ZwQueryFullAttributesFile
+ms.keywords : wdm/ZwQueryFullAttributesFile, kernel.zwqueryfullattributesfile, NtQueryFullAttributesFile, wdm/NtQueryFullAttributesFile, ZwQueryFullAttributesFile routine [Kernel-Mode Driver Architecture], k111_58eefadc-2aff-4252-82a6-6f0c9ab43a19.xml, ZwQueryFullAttributesFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,22 +78,21 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
+<a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 <a href="..\wdm\ns-wdm-_file_network_open_information.md">FILE_NETWORK_OPEN_INFORMATION</a>
-
-<a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
 
  
 

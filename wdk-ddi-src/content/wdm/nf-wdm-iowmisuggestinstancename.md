@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a07ff2f6-e67e-489e-a477-6dc4b4ce6fed
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMISuggestInstanceName, kernel.iowmisuggestinstancename, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], wdm/IoWMISuggestInstanceName, k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml
+ms.keywords : k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml, IoWMISuggestInstanceName, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], wdm/IoWMISuggestInstanceName, kernel.iowmisuggestinstancename
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,14 +134,12 @@ If the <i>CombineNames</i> parameter is <b>TRUE</b> then both <i>PhysicalDeviceO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : AD4E4EF6-F033-4226-9DC6-A6E55E965B4C
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : BLOCK_DEVICE_TOKEN_DESCRIPTOR structure [Storage Devices], PBLOCK_DEVICE_TOKEN_DESCRIPTOR structure pointer [Storage Devices], PBLOCK_DEVICE_TOKEN_DESCRIPTOR, *PBLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR, scsi/BLOCK_DEVICE_TOKEN_DESCRIPTOR, storage.block_device_token_descriptor, scsi/PBLOCK_DEVICE_TOKEN_DESCRIPTOR
+ms.keywords : scsi/PBLOCK_DEVICE_TOKEN_DESCRIPTOR, scsi/BLOCK_DEVICE_TOKEN_DESCRIPTOR, PBLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR, PBLOCK_DEVICE_TOKEN_DESCRIPTOR structure pointer [Storage Devices], BLOCK_DEVICE_TOKEN_DESCRIPTOR structure [Storage Devices], *PBLOCK_DEVICE_TOKEN_DESCRIPTOR, storage.block_device_token_descriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,7 @@ An identifier value assigned by the copy provider to provide uniqueness to <b>To
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | scsi.h (include Scsi.h) |
 
 ## See Also

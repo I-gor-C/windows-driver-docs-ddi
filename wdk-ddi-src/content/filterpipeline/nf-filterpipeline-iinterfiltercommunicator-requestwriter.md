@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1f0684f0-e15e-491f-ba09-314f831d7ba9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IInterFilterCommunicator interface [Print Devices], RequestWriter method, RequestWriter method [Print Devices], IInterFilterCommunicator interface, IInterFilterCommunicator, RequestWriter, IInterFilterCommunicator::RequestWriter, filterpipeline_b2f3eac2-d759-45b4-818b-4d828c5aeedc.xml, print.iinterfiltercommunicator_requestwriter, RequestWriter method [Print Devices], filterpipeline/IInterFilterCommunicator::RequestWriter
+ms.keywords : RequestWriter method [Print Devices], print.iinterfiltercommunicator_requestwriter, IInterFilterCommunicator::RequestWriter, filterpipeline_b2f3eac2-d759-45b4-818b-4d828c5aeedc.xml, RequestWriter, IInterFilterCommunicator interface [Print Devices], RequestWriter method, filterpipeline/IInterFilterCommunicator::RequestWriter, IInterFilterCommunicator, RequestWriter method [Print Devices], IInterFilterCommunicator interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,14 +68,9 @@ The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h (include Filterpipeline.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |
 
 ## See Also
 

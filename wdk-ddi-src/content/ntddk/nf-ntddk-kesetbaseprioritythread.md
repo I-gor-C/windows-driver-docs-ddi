@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7070070c-a953-4120-bddf-c1a7f080ef50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.kesetbaseprioritythread, ntddk/KeSetBasePriorityThread, KeSetBasePriorityThread routine [Kernel-Mode Driver Architecture], KeSetBasePriorityThread, k105_6c558266-e459-447c-9586-4b327e24d7dd.xml
+ms.keywords : ntddk/KeSetBasePriorityThread, kernel.kesetbaseprioritythread, KeSetBasePriorityThread routine [Kernel-Mode Driver Architecture], k105_6c558266-e459-447c-9586-4b327e24d7dd.xml, KeSetBasePriorityThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,22 +77,20 @@ The new base priority is restricted to the priority class of the given thread's 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
 
-<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
-
 <a href="..\wdm\nf-wdm-kequeryprioritythread.md">KeQueryPriorityThread</a>
+
+<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
 
  
 

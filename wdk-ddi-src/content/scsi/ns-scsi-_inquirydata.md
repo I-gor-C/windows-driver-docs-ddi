@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2389fb1e-b16a-4d0a-b347-8b8a0f1cf061
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsi/INQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, *PINQUIRYDATA, _INQUIRYDATA, INQUIRYDATA, storage.inquirydata, PINQUIRYDATA, scsi/PINQUIRYDATA, INQUIRYDATA structure [Storage Devices]
+ms.keywords : "*PINQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], INQUIRYDATA, INQUIRYDATA structure [Storage Devices], scsi/INQUIRYDATA, _INQUIRYDATA, structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, PINQUIRYDATA, storage.inquirydata, scsi/PINQUIRYDATA"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -239,9 +239,6 @@ Indicates, when set to one, that the target supports 32-bit wide data transfers.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | scsi.h (include Scsi.h) |
 
 ## See Also

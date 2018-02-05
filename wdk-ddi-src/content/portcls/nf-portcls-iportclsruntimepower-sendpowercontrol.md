@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 04B8EE71-59F9-4DE4-AD36-846632D3EBB4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsRuntimePower, SendPowerControl method [Audio Devices], IPortClsRuntimePower interface, portcls/IPortClsRuntimePower::SendPowerControl, IPortClsRuntimePower interface [Audio Devices], SendPowerControl method, SendPowerControl method [Audio Devices], audio.iportclsruntimepower_sendpowercontrol, SendPowerControl, IPortClsRuntimePower::SendPowerControl
+ms.keywords : IPortClsRuntimePower interface [Audio Devices], SendPowerControl method, IPortClsRuntimePower, SendPowerControl, SendPowerControl method [Audio Devices], IPortClsRuntimePower interface, IPortClsRuntimePower::SendPowerControl, portcls/IPortClsRuntimePower::SendPowerControl, SendPowerControl method [Audio Devices], audio.iportclsruntimepower_sendpowercontrol
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -60,31 +60,31 @@ NTSTATUS SendPowerControl(
 
 `_DeviceObject`
 
-
+The device object.
 
 `_PowerControlCode`
 
-
+The power control code to be sent to the audio adapter.
 
 `_InBuffer`
 
-
+The input buffer.
 
 `_InBufferSize`
 
-
+The size of the input buffer.
 
 `_OutBuffer`
 
-
+The output buffer.
 
 `_OutBufferSize`
 
-
+The size of the output buffer.
 
 `_BytesReturned`
 
-
+The number of bytes returned.
 
 
 ## Return Value
@@ -95,14 +95,10 @@ The <code>SendPowerControl</code> method returns STATUS_SUCCESS, if the call is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 7 Windows 7 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

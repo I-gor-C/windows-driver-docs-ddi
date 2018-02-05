@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : afc0e705-ae98-486b-82d3-4f21fca89e70
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntdddisk/PCREATE_DISK_MBR, CREATE_DISK_MBR, CREATE_DISK_MBR structure [Storage Devices], ntdddisk/CREATE_DISK_MBR, structs-disk_680fcaf9-080c-4e38-be53-ed9899539d9b.xml, PCREATE_DISK_MBR, *PCREATE_DISK_MBR, PCREATE_DISK_MBR structure pointer [Storage Devices], _CREATE_DISK_MBR, storage.create_disk_mbr
+ms.keywords : PCREATE_DISK_MBR, structs-disk_680fcaf9-080c-4e38-be53-ed9899539d9b.xml, CREATE_DISK_MBR structure [Storage Devices], CREATE_DISK_MBR, *PCREATE_DISK_MBR, ntdddisk/CREATE_DISK_MBR, ntdddisk/PCREATE_DISK_MBR, _CREATE_DISK_MBR, storage.create_disk_mbr, PCREATE_DISK_MBR structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,16 +59,13 @@ Specifies the disk signature value, which uniquely identifies the disk.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
-
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_create_disk.md">IOCTL_DISK_CREATE_DISK</a>
+
+<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
 
  
 

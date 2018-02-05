@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b80f6e20-410d-4984-8535-782a84c6af7e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avintfc_d0686a3a-47ab-4dbc-87ec-ee56e357b4ea.xml, IKsReferenceClock interface [Streaming Media Devices], GetCorrelatedPhysicalTime method, IKsReferenceClock::GetCorrelatedPhysicalTime, IKsReferenceClock, GetCorrelatedPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface, GetCorrelatedPhysicalTime method [Streaming Media Devices], ks/IKsReferenceClock::GetCorrelatedPhysicalTime, GetCorrelatedPhysicalTime, stream.iksreferenceclock_getcorrelatedphysicaltime
+ms.keywords : GetCorrelatedPhysicalTime, avintfc_d0686a3a-47ab-4dbc-87ec-ee56e357b4ea.xml, ks/IKsReferenceClock::GetCorrelatedPhysicalTime, IKsReferenceClock::GetCorrelatedPhysicalTime, IKsReferenceClock, stream.iksreferenceclock_getcorrelatedphysicaltime, GetCorrelatedPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], GetCorrelatedPhysicalTime method, GetCorrelatedPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -72,14 +72,9 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ks.h |
 
 ## See Also
 

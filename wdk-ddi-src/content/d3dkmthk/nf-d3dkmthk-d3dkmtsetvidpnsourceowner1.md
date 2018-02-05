@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ccee5459-f156-41c3-b9a1-8bd7d16c8d19
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtsetvidpnsourceowner1, D3DKMTSetVidPnSourceOwner1, PFND3DKMT_SETVIDPNSOURCEOWNER1, D3DKMTSetVidPnSourceOwner1 function [Display Devices], d3dkmthk/D3DKMTSetVidPnSourceOwner1
+ms.keywords : PFND3DKMT_SETVIDPNSOURCEOWNER1, display.d3dkmtsetvidpnsourceowner1, D3DKMTSetVidPnSourceOwner1, D3DKMTSetVidPnSourceOwner1 function [Display Devices], d3dkmthk/D3DKMTSetVidPnSourceOwner1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -128,14 +128,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

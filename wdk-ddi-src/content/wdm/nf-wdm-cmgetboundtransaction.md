@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f38a5ad6-6816-4b27-98ea-51ac1453d90f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CmGetBoundTransaction, ConfigMgrRef_bf8b79d4-04cf-4cd2-b25c-4e59c63f0b86.xml, CmGetBoundTransaction routine [Kernel-Mode Driver Architecture], wdm/CmGetBoundTransaction, kernel.cmgetboundtransaction
+ms.keywords : ConfigMgrRef_bf8b79d4-04cf-4cd2-b25c-4e59c63f0b86.xml, kernel.cmgetboundtransaction, CmGetBoundTransaction, CmGetBoundTransaction routine [Kernel-Mode Driver Architecture], wdm/CmGetBoundTransaction
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,22 +78,20 @@ For more information about transactions, see <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
-
 <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
+
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
 
  
 

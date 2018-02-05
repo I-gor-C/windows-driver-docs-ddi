@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4FC2509A-9983-41F8-901F-60DCEDBC163F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PDXGK_MONITORLINKINFO_USAGEHINTS, display.dxgk_monitorlinkinfo_usagehints, PDXGK_MONITORLINKINFO_USAGEHINTS union pointer [Display Devices], PDXGK_MONITORLINKINFO_USAGEHINTS, d3dkmdt/PDXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS union [Display Devices], DXGK_MONITORLINKINFO_USAGEHINTS, d3dkmdt/DXGK_MONITORLINKINFO_USAGEHINTS, _DXGK_MONITORLINKINFO_USAGEHINTS"
+ms.keywords : PDXGK_MONITORLINKINFO_USAGEHINTS union pointer [Display Devices], DXGK_MONITORLINKINFO_USAGEHINTS union [Display Devices], d3dkmdt/PDXGK_MONITORLINKINFO_USAGEHINTS, PDXGK_MONITORLINKINFO_USAGEHINTS, *PDXGK_MONITORLINKINFO_USAGEHINTS, d3dkmdt/DXGK_MONITORLINKINFO_USAGEHINTS, _DXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS, display.dxgk_monitorlinkinfo_usagehints
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS"
+req.typenames : DXGK_MONITORLINKINFO_USAGEHINTS, *PDXGK_MONITORLINKINFO_USAGEHINTS
 ---
 
 # _DXGK_MONITORLINKINFO_USAGEHINTS structure
@@ -60,7 +60,4 @@ typedef union _DXGK_MONITORLINKINFO_USAGEHINTS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmdt.h (include D3dkmddi.h) |

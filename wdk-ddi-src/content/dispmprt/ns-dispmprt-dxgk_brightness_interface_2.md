@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0c0b877f-cef0-4e98-9f37-60f2d96b81bd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PDXGK_BRIGHTNESS_INTERFACE_2 structure pointer [Display Devices], dispmprt/PDXGK_BRIGHTNESS_INTERFACE_2, DXGK_BRIGHTNESS_INTERFACE_2 structure [Display Devices], *PDXGK_BRIGHTNESS_INTERFACE_2, DXGK_BRIGHTNESS_INTERFACE_2, dispmprt/DXGK_BRIGHTNESS_INTERFACE_2, PDXGK_BRIGHTNESS_INTERFACE_2, display.dxgk_brightness_interface_2
+ms.keywords : dispmprt/PDXGK_BRIGHTNESS_INTERFACE_2, DXGK_BRIGHTNESS_INTERFACE_2 structure [Display Devices], display.dxgk_brightness_interface_2, DXGK_BRIGHTNESS_INTERFACE_2, PDXGK_BRIGHTNESS_INTERFACE_2 structure pointer [Display Devices], dispmprt/DXGK_BRIGHTNESS_INTERFACE_2, *PDXGK_BRIGHTNESS_INTERFACE_2, PDXGK_BRIGHTNESS_INTERFACE_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -118,9 +118,7 @@ For more information on this interface, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6C58EFD4-B5F9-4E2B-AF76-E9614218E0DC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : SmrGcMethodRotation, SmrGcMethodCompaction, ntifs/SmrGcMethodRotation, ifsk.refs_smr_volume_gc_method, ntifs/SmrGcMethodCompaction, *PREFS_SMR_VOLUME_GC_METHOD, SmrGcMethodCompression, REFS_SMR_VOLUME_GC_METHOD enumeration [Installable File System Drivers], ntifs/PREFS_SMR_VOLUME_GC_METHOD, ntifs/SmrGcMethodCompression, PREFS_SMR_VOLUME_GC_METHOD, ntifs/REFS_SMR_VOLUME_GC_METHOD, REFS_SMR_VOLUME_GC_METHOD, _REFS_SMR_VOLUME_GC_METHOD, PREFS_SMR_VOLUME_GC_METHOD enumeration pointer [Installable File System Drivers]
+ms.keywords : PREFS_SMR_VOLUME_GC_METHOD, PREFS_SMR_VOLUME_GC_METHOD enumeration pointer [Installable File System Drivers], SmrGcMethodRotation, REFS_SMR_VOLUME_GC_METHOD enumeration [Installable File System Drivers], ntifs/PREFS_SMR_VOLUME_GC_METHOD, REFS_SMR_VOLUME_GC_METHOD, ntifs/SmrGcMethodCompression, _REFS_SMR_VOLUME_GC_METHOD, *PREFS_SMR_VOLUME_GC_METHOD, ntifs/SmrGcMethodRotation, SmrGcMethodCompression, ntifs/SmrGcMethodCompaction, ifsk.refs_smr_volume_gc_method, SmrGcMethodCompaction, ntifs/REFS_SMR_VOLUME_GC_METHOD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ Currently the only supported value  is <b>SmrGcMethodCompaction</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also

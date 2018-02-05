@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 35149395-4238-41fd-ae96-6491534e3cc1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : whearef2_6ba74e00-cc1f-49e9-b6ee-b300571eb412.xml, WheaIsValidErrorRecordSignature, ntddk/WheaIsValidErrorRecordSignature, whea.wheaisvaliderrorrecordsignature, WheaIsValidErrorRecordSignature function [WHEA Drivers and Applications]
+ms.keywords : whea.wheaisvaliderrorrecordsignature, WheaIsValidErrorRecordSignature, ntddk/WheaIsValidErrorRecordSignature, whearef2_6ba74e00-cc1f-49e9-b6ee-b300571eb412.xml, WheaIsValidErrorRecordSignature function [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,20 +68,17 @@ The <b>WheaIsValidErrorRecordSignature </b>function verifies that the specified 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
-
 <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">Error record</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
 
 <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
 

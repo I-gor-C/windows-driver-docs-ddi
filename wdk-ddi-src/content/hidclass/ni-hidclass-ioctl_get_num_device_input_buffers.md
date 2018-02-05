@@ -83,9 +83,7 @@ The HID class driver sets the following fields of <b>Irp-&gt;IoStatus</b>:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
-| **IRQL** |  |
 
 ## See Also
 

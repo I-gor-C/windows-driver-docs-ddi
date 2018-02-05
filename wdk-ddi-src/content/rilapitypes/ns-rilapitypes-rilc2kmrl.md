@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e2c289de-fff7-4e21-8ef5-2ff3006a4ea5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilc2kmrl, *LPRILC2KMRL, rilapitypes/RILC2KMRL, RILC2KMRL, RILC2KMRL structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILC2KMRL, rilapitypes/RILC2KMRL, netvista.rilc2kmrl, *LPRILC2KMRL, RILC2KMRL structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -105,9 +105,6 @@ Indicates whether this is a serving cell. There may be more than one serving cel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

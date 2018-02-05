@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 9b5b9cdf-06a9-410f-87c3-b87318c25a11
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.isensorclassextension_initialize, Initialize method [Sensor Devices], Initialize, ISensorClassExtension::Initialize, ISensorClassExtension
+ms.keywords : sensors.isensorclassextension_initialize, Initialize method [Sensor Devices], ISensorClassExtension, Initialize, ISensorClassExtension::Initialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -138,11 +138,6 @@ Because the class extension calls your driver during initialization, this method
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

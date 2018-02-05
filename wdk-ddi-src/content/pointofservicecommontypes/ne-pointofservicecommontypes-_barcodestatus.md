@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : b89ee18b-229d-4ec7-8c69-1b75ad0f3448
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicecommontypes/BarcodeStatusUpdateType_OffOrOffline, BarcodeStatusUpdateType_Off, pointofservicecommontypes/BarcodeStatusUpdateType_Online, BarcodeStatusUpdateType_Extended, BarcodeStatus enumeration, BarcodeStatusUpdateType_Online, pos.barcodestatus, pointofservicecommontypes/BarcodeStatusUpdateType_Offline, BarcodeStatusUpdateType_OffOrOffline, pointofservicecommontypes/BarcodeStatusUpdateType_Extended, pointofservicecommontypes/BarcodeStatusUpdateType_Off, pointofservicecommontypes/BarcodeStatus, _BarcodeStatus, BarcodeStatusUpdateType_Offline, BarcodeStatus
+ms.keywords : pointofservicecommontypes/BarcodeStatusUpdateType_OffOrOffline, BarcodeStatusUpdateType_Offline, BarcodeStatus enumeration, BarcodeStatusUpdateType_Online, BarcodeStatus, BarcodeStatusUpdateType_Off, pointofservicecommontypes/BarcodeStatusUpdateType_Extended, _BarcodeStatus, pointofservicecommontypes/BarcodeStatus, pos.barcodestatus, pointofservicecommontypes/BarcodeStatusUpdateType_Online, pointofservicecommontypes/BarcodeStatusUpdateType_Offline, BarcodeStatusUpdateType_OffOrOffline, BarcodeStatusUpdateType_Extended, pointofservicecommontypes/BarcodeStatusUpdateType_Off
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _BarcodeStatus {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

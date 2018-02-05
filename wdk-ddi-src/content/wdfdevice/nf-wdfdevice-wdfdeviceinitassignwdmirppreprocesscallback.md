@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9c17a5e2-dcf2-493a-9851-11d47adbfc82
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitAssignWdmIrpPreprocessCallback method, wdf.wdfdeviceinitassignwdmirppreprocesscallback, WdfDeviceInitAssignWdmIrpPreprocessCallback, DFDeviceObjectGeneralRef_ff2869f4-a557-4d3a-bd4d-67b8e1720ba9.xml, kmdf.wdfdeviceinitassignwdmirppreprocesscallback, wdfdevice/WdfDeviceInitAssignWdmIrpPreprocessCallback, PFN_WDFDEVICEINITASSIGNWDMIRPPREPROCESSCALLBACK
+ms.keywords : wdfdevice/WdfDeviceInitAssignWdmIrpPreprocessCallback, wdf.wdfdeviceinitassignwdmirppreprocesscallback, WdfDeviceInitAssignWdmIrpPreprocessCallback, PFN_WDFDEVICEINITASSIGNWDMIRPPREPROCESSCALLBACK, kmdf.wdfdeviceinitassignwdmirppreprocesscallback, DFDeviceObjectGeneralRef_ff2869f4-a557-4d3a-bd4d-67b8e1720ba9.xml, WdfDeviceInitAssignWdmIrpPreprocessCallback method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -156,12 +156,10 @@ For more information about the <b>WdfDeviceInitAssignWdmIrpPreprocessCallback</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |
 

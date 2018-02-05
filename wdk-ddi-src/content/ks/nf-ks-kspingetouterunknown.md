@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 58b14ddd-6698-487a-925d-7d559057e55d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsPinGetOuterUnknown, stream.kspingetouterunknown, avfunc_6a9c21cd-38ab-4277-8379-346af4c9c4c9.xml, KsPinGetOuterUnknown function [Streaming Media Devices], KsPinGetOuterUnknown
+ms.keywords : stream.kspingetouterunknown, KsPinGetOuterUnknown, avfunc_6a9c21cd-38ab-4277-8379-346af4c9c4c9.xml, ks/KsPinGetOuterUnknown, KsPinGetOuterUnknown function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,30 +68,27 @@ A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
-
-<a href="..\ks\nf-ks-ksfilterfactorygetouterunknown.md">KsFilterFactoryGetOuterUnknown</a>
-
 <a href="..\ks\nf-ks-ksdevicegetouterunknown.md">KsDeviceGetOuterUnknown</a>
 
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 
-<a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
+<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
+
+<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
 
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 
-<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfilterfactorygetouterunknown.md">KsFilterFactoryGetOuterUnknown</a>
+
+<a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : EB23D502-87E4-48B1-B1DC-0B215AB361C8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : RT_PARAMETER_DATA structure [Storage Devices], *PRT_PARAMETER_DATA, storage.rt_parameter_data, PRT_PARAMETER_DATA structure pointer [Storage Devices], PRT_PARAMETER_DATA, scsi/PRT_PARAMETER_DATA, RT_PARAMETER_DATA, scsi/RT_PARAMETER_DATA
+ms.keywords : scsi/PRT_PARAMETER_DATA, PRT_PARAMETER_DATA structure pointer [Storage Devices], *PRT_PARAMETER_DATA, scsi/RT_PARAMETER_DATA, PRT_PARAMETER_DATA, RT_PARAMETER_DATA structure [Storage Devices], storage.rt_parameter_data, RT_PARAMETER_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RT_PARAMETER_DATA, *PRT_PARAMETER_DATA
+req.typenames : "*PRT_PARAMETER_DATA, RT_PARAMETER_DATA"
 req.product : Windows 10 or later.
 ---
 
@@ -148,14 +148,12 @@ Contains the current value of a device clock.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1709 and later versions of Windows. Available in Windows 10, version 1709 and later versions of Windows. |
 | **Header** | scsi.h (include Minitape.h, Storport.h) |
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-st_parameter_data.md">ST_PARAMETER_DATA</a>
+<a href="..\storport\ns-storport-st_parameter_data.md">ST_PARAMETER_DATA</a>
 
  
 

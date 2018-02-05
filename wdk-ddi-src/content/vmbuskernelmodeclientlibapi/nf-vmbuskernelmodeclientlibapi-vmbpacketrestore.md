@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : CE8BBFB7-FC6C-458B-89EC-355A6DD18399
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbPacketRestore function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbPacketRestore, netvista.vmbpacketrestore, VmbPacketRestore
+ms.keywords : VmbPacketRestore function [Network Drivers Starting with Windows Vista], VmbPacketRestore, netvista.vmbpacketrestore, vmbuskernelmodeclientlibapi/VmbPacketRestore
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -79,11 +79,9 @@ The size, in bytes, of buffer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 12ed5f88-26af-43a4-82c7-5f36d9388cc8
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_64890de0-32e7-4e07-bcbc-35a11acd6896.xml, StorPortWriteRegisterUlong routine [Storage Devices], storage.storportwriteregisterulong, StorPortWriteRegisterUlong, storport/StorPortWriteRegisterUlong
+ms.keywords : storport/StorPortWriteRegisterUlong, StorPortWriteRegisterUlong routine [Storage Devices], storprt_64890de0-32e7-4e07-bcbc-35a11acd6896.xml, StorPortWriteRegisterUlong, storage.storportwriteregisterulong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

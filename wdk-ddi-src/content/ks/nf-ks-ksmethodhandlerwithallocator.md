@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3a4c2eaa-167a-406a-a792-612c3e624f89
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsMethodHandlerWithAllocator function [Streaming Media Devices], KsMethodHandlerWithAllocator, ksfunc_b8089a49-086b-4695-bebd-6fc3817ed7e0.xml, ks/KsMethodHandlerWithAllocator, stream.ksmethodhandlerwithallocator
+ms.keywords : KsMethodHandlerWithAllocator function [Streaming Media Devices], KsMethodHandlerWithAllocator, stream.ksmethodhandlerwithallocator, ks/KsMethodHandlerWithAllocator, ksfunc_b8089a49-086b-4695-bebd-6fc3817ed7e0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,11 +87,6 @@ On 64-bit platforms, if the <i>PropertyItemSize</i> parameter is not a multiple 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

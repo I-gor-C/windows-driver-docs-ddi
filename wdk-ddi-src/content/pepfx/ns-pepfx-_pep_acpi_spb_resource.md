@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D4C0009D-A9D0-4870-86C5-60DC9B5892BC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : 1 - Consumer/producer mode, *PPEP_ACPI_SPB_RESOURCE, 2 to 7 - Reserved, _PEP_ACPI_SPB_RESOURCE, kernel.pep_acpi_spb_resource, PPEP_ACPI_SPB_RESOURCE structure pointer [Kernel-Mode Driver Architecture], PEP_ACPI_SPB_RESOURCE, PPEP_ACPI_SPB_RESOURCE, pepfx/PEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE structure [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_SPB_RESOURCE, 0 - Slave mode
+ms.keywords : 0 - Slave mode, _PEP_ACPI_SPB_RESOURCE, 2 to 7 - Reserved, kernel.pep_acpi_spb_resource, PPEP_ACPI_SPB_RESOURCE, pepfx/PPEP_ACPI_SPB_RESOURCE, PPEP_ACPI_SPB_RESOURCE structure pointer [Kernel-Mode Driver Architecture], PEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE structure [Kernel-Mode Driver Architecture], *PPEP_ACPI_SPB_RESOURCE, pepfx/PEP_ACPI_SPB_RESOURCE, 1 - Consumer/producer mode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE"
+req.typenames : PEP_ACPI_SPB_RESOURCE, *PPEP_ACPI_SPB_RESOURCE
 ---
 
 # _PEP_ACPI_SPB_RESOURCE structure
@@ -132,7 +132,5 @@ The length of the buffer pointed to by <b>VendorData</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |

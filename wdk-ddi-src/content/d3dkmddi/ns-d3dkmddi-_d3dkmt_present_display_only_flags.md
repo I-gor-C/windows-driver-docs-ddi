@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a45dfdeb-06d2-49c8-a6e1-f42a43857492
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, d3dkmddi/D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, display.d3dkmt_present_display_only_flags, D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS structure [Display Devices], _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS
+ms.keywords : D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, d3dkmddi/D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS structure [Display Devices], display.d3dkmt_present_display_only_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ typedef struct _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6b8d9cbf-bb05-40a1-9129-52510befebe3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-CD-ROM_1bac7730-693e-4d41-b672-260f83765e35.xml, _GET_CONFIGURATION_IOCTL_INPUT, ntddmmc/GET_CONFIGURATION_IOCTL_INPUT, PGET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT, ntddmmc/PGET_CONFIGURATION_IOCTL_INPUT, PGET_CONFIGURATION_IOCTL_INPUT structure pointer [Storage Devices], GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT structure [Storage Devices], storage.get_configuration_ioctl_input
+ms.keywords : "*PGET_CONFIGURATION_IOCTL_INPUT, PGET_CONFIGURATION_IOCTL_INPUT structure pointer [Storage Devices], PGET_CONFIGURATION_IOCTL_INPUT, structs-CD-ROM_1bac7730-693e-4d41-b672-260f83765e35.xml, ntddmmc/PGET_CONFIGURATION_IOCTL_INPUT, ntddmmc/GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT structure [Storage Devices], _GET_CONFIGURATION_IOCTL_INPUT, storage.get_configuration_ioctl_input"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,16 +73,13 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also
 
-<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
-
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a>
+
+<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
 
 <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
 

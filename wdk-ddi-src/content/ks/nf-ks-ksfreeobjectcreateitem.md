@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 66f62a55-0bed-48ed-ae79-042bffe75b70
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_e91e49bc-521e-486e-a67b-33b16b7caa68.xml, ks/KsFreeObjectCreateItem, stream.ksfreeobjectcreateitem, KsFreeObjectCreateItem, KsFreeObjectCreateItem function [Streaming Media Devices]
+ms.keywords : stream.ksfreeobjectcreateitem, ks/KsFreeObjectCreateItem, ksfunc_e91e49bc-521e-486e-a67b-33b16b7caa68.xml, KsFreeObjectCreateItem function [Streaming Media Devices], KsFreeObjectCreateItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,9 @@ This function does not assume that the caller is serializing multiple changes to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

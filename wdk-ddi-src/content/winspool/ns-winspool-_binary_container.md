@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : bac960c5-7c29-4550-9b82-5adb6a0cc243
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PBINARY_CONTAINER structure pointer [Print Devices], winspool/BINARY_CONTAINER, _BINARY_CONTAINER, winspool/PBINARY_CONTAINER, BINARY_CONTAINER structure [Print Devices], PBINARY_CONTAINER, spoolfnc_a034cd3e-8afb-4a15-9640-06d693fd150c.xml, *PBINARY_CONTAINER, BINARY_CONTAINER, print.binary_container
+ms.keywords : winspool/BINARY_CONTAINER, _BINARY_CONTAINER, spoolfnc_a034cd3e-8afb-4a15-9640-06d693fd150c.xml, winspool/PBINARY_CONTAINER, print.binary_container, PBINARY_CONTAINER structure pointer [Print Devices], PBINARY_CONTAINER, *PBINARY_CONTAINER, BINARY_CONTAINER structure [Print Devices], BINARY_CONTAINER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BINARY_CONTAINER, *PBINARY_CONTAINER
+req.typenames : "*PBINARY_CONTAINER, BINARY_CONTAINER"
 req.product : Windows 10 or later.
 ---
 
@@ -67,9 +67,7 @@ The BINARY_CONTAINER structure is used in a <a href="..\winspool\ns-winspool-_bi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available in Windows XP and later operating systems. This structure is available in Windows XP and later operating systems. |
 | **Header** | winspool.h (include Winspool.h) |
 
 ## See Also

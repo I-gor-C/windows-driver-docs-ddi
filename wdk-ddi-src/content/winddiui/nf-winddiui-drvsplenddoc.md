@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 7972fd88-ca99-4a42-8476-754b26eb118c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvSplEndDoc, print.drvsplenddoc, winddiui/DrvSplEndDoc, print_interface-graphics_13e407aa-2d2a-4ec5-b3ab-bcb6fa745039.xml, DrvSplEndDoc function [Print Devices]
+ms.keywords : print_interface-graphics_13e407aa-2d2a-4ec5-b3ab-bcb6fa745039.xml, DrvSplEndDoc function [Print Devices], winddiui/DrvSplEndDoc, print.drvsplenddoc, DrvSplEndDoc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -70,11 +70,6 @@ The <b>DrvSplEndDoc</b> function enables a user-mode rendering DLL to perform op
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winddiui.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

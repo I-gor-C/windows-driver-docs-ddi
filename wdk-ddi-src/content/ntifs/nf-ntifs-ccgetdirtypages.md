@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8ca0d683-318b-465c-95a7-dc2b5e29c9e7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ccref_cbefaf71-3c21-445f-ac63-d96bbb47ec16.xml, CcGetDirtyPages routine [Installable File System Drivers], CcGetDirtyPages, ifsk.ccgetdirtypages, ntifs/CcGetDirtyPages
+ms.keywords : CcGetDirtyPages, CcGetDirtyPages routine [Installable File System Drivers], ccref_cbefaf71-3c21-445f-ac63-d96bbb47ec16.xml, ntifs/CcGetDirtyPages, ifsk.ccgetdirtypages
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,6 +83,16 @@ VOID (*PDIRTY_PAGE_ROUTINE) (
 </table></span></div>
 
 
+#### Context1
+
+First context parameter. 
+
+
+#### Context2
+
+Second context parameter. 
+
+
 #### FileObject
 
 Pointer to the file object for the file containing the dirty page. 
@@ -98,24 +108,14 @@ Pointer to a variable that specifies the starting byte offset of the dirty page 
 Length, in bytes, of the dirty page. 
 
 
-#### OldestLsn
-
-Oldest logical sequence number (LSN) found in the dirty page. 
-
-
 #### NewestLsn
 
 Newest LSN found in the dirty page. 
 
 
-#### Context1
+#### OldestLsn
 
-First context parameter. 
-
-
-#### Context2
-
-Second context parameter.
+Oldest logical sequence number (LSN) found in the dirty page.
 
 `Context1`
 
@@ -139,14 +139,12 @@ To set a log handle for a file, use <a href="..\ntifs\nf-ntifs-ccsetloghandlefor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later. Available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

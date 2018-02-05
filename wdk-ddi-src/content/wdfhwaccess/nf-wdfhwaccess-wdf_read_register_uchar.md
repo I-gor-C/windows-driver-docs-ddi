@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C8633689-0900-42BB-9D0D-6F95CBA13A37
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_READ_REGISTER_UCHAR function, WDF_READ_REGISTER_UCHAR, wdfhwaccess/WDF_READ_REGISTER_UCHAR, wdf.wdf_read_register_uchar
+ms.keywords : wdf.wdf_read_register_uchar, WDF_READ_REGISTER_UCHAR, wdfhwaccess/WDF_READ_REGISTER_UCHAR, WDF_READ_REGISTER_UCHAR function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,8 @@ A pointer to the register address, which must be a mapped range in memory space.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

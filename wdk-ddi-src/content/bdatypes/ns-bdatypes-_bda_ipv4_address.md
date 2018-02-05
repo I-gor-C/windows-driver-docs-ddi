@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5206CEEB-C1EF-4AE0-B4BC-52E8D85AD706
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BDA_IPv4_ADDRESS, BDA_IPv4_ADDRESS structure [Streaming Media Devices], bdatypes/PBDA_IPv4_ADDRESS, stream.bda_ipv4_address, PBDA_IPv4_ADDRESS structure pointer [Streaming Media Devices], PBDA_IPv4_ADDRESS, bdatypes/BDA_IPv4_ADDRESS, _BDA_IPv4_ADDRESS, *PBDA_IPv4_ADDRESS
+ms.keywords : stream.bda_ipv4_address, PBDA_IPv4_ADDRESS structure pointer [Streaming Media Devices], bdatypes/BDA_IPv4_ADDRESS, BDA_IPv4_ADDRESS structure [Streaming Media Devices], *PBDA_IPv4_ADDRESS, BDA_IPv4_ADDRESS, bdatypes/PBDA_IPv4_ADDRESS, _BDA_IPv4_ADDRESS, PBDA_IPv4_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PBDA_IPv4_ADDRESS, BDA_IPv4_ADDRESS"
+req.typenames : BDA_IPv4_ADDRESS, *PBDA_IPv4_ADDRESS
 ---
 
 # _BDA_IPv4_ADDRESS structure
@@ -59,7 +59,4 @@ typedef struct _BDA_IPv4_ADDRESS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2d9e0a8e-9485-427d-bdd0-2d89dec76a77
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_move_rect, _D3DKMT_MOVE_RECT, D3DKMT_MOVE_RECT structure [Display Devices], d3dkmdt/D3DKMT_MOVE_RECT, D3DKMT_MOVE_RECT
+ms.keywords : D3DKMT_MOVE_RECT structure [Display Devices], d3dkmdt/D3DKMT_MOVE_RECT, _D3DKMT_MOVE_RECT, display.d3dkmt_move_rect, D3DKMT_MOVE_RECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmdt.h |
 
 ## See Also

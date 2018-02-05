@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 14657843-bd48-4cab-b913-c95aeb6a6083
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k110_f193d746-c75f-4003-a2b3-a6b752652f9b.xml, SeValidSecurityDescriptor routine [Kernel-Mode Driver Architecture], SeValidSecurityDescriptor, kernel.sevalidsecuritydescriptor, wdm/SeValidSecurityDescriptor
+ms.keywords : kernel.sevalidsecuritydescriptor, SeValidSecurityDescriptor, wdm/SeValidSecurityDescriptor, k110_f193d746-c75f-4003-a2b3-a6b752652f9b.xml, SeValidSecurityDescriptor routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,20 +78,19 @@ To validate a security descriptor that was passed in from user mode, call <b>Rtl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a34ed9ad-13b6-4f09-88c1-c5462a421ad8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetPositionInfo method [Network Drivers Starting with Windows Vista], RIL_GetPositionInfo, rilapi/RIL_GetPositionInfo, netvista.ril_getpositioninfo
+ms.keywords : RIL_GetPositionInfo method [Network Drivers Starting with Windows Vista], netvista.ril_getpositioninfo, RIL_GetPositionInfo, rilapi/RIL_GetPositionInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

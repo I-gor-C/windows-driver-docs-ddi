@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 337C9FFE-F97A-4F0F-9567-D1FF532FE165
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.udecx_usb_device_speed, udecxusbdevice/UdecxUsbSuperSpeed, _UDECX_USB_DEVICE_SPEED, UDECX_USB_DEVICE_SPEED, UdecxUsbLowSpeed, *PUDECX_USB_DEVICE_SPEED, udecxusbdevice/UdecxUsbLowSpeed, UdecxUsbFullSpeed, UDECX_USB_DEVICE_SPEED enumeration [Buses], udecxusbdevice/UdecxUsbFullSpeed, UdecxUsbSuperSpeed, UdecxUsbHighSpeed, udecxusbdevice/UdecxUsbHighSpeed, udecxusbdevice/UDECX_USB_DEVICE_SPEED
+ms.keywords : UDECX_USB_DEVICE_SPEED, _UDECX_USB_DEVICE_SPEED, udecxusbdevice/UDECX_USB_DEVICE_SPEED, udecxusbdevice/UdecxUsbLowSpeed, UdecxUsbHighSpeed, UdecxUsbFullSpeed, UdecxUsbSuperSpeed, *PUDECX_USB_DEVICE_SPEED, udecxusbdevice/UdecxUsbFullSpeed, buses.udecx_usb_device_speed, UdecxUsbLowSpeed, udecxusbdevice/UdecxUsbSuperSpeed, udecxusbdevice/UdecxUsbHighSpeed, UDECX_USB_DEVICE_SPEED enumeration [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_SPEED, UDECX_USB_DEVICE_SPEED"
+req.typenames : UDECX_USB_DEVICE_SPEED, *PUDECX_USB_DEVICE_SPEED
 req.product : Windows 10 or later.
 ---
 
@@ -81,9 +81,6 @@ typedef enum _UDECX_USB_DEVICE_SPEED {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
 ## See Also

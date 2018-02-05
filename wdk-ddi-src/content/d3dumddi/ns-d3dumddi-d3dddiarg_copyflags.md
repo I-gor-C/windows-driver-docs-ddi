@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : DA114D60-60EE-4D1D-B42C-A84CE54C8B95
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_COPYFLAGS structure [Display Devices], d3dumddi/D3DDDIARG_COPYFLAGS, D3DDDIARG_COPYFLAGS, display.d3dddiarg_copyflags
+ms.keywords : display.d3dddiarg_copyflags, D3DDDIARG_COPYFLAGS, d3dumddi/D3DDDIARG_COPYFLAGS, D3DDDIARG_COPYFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct D3DDDIARG_COPYFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
 ## See Also

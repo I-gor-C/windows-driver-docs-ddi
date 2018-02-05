@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e80a9999-2e4e-4da0-8aae-54ee71d9249d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, ndischimney/PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, tcp_chim_struct_3145314d-c0a6-4d4e-b489-c38dda6c43e5.xml, NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], netvista.ndis_provider_chimney_offload_generic_characteristics, ndischimney/NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS"
+ms.keywords : NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, _NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, tcp_chim_struct_3145314d-c0a6-4d4e-b489-c38dda6c43e5.xml, netvista.ndis_provider_chimney_offload_generic_characteristics, ndischimney/NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, ndischimney/PNDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS, NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,32 +79,32 @@ The header of the NDIS_PROVIDER_CHIMNEY_OFFLOAD_GENERIC_CHARACTERISTICS structur
 `InitiateOffloadHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.miniportinitiateoffload" tabindex="0"><i>
-     MiniportInitiateOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">
+     MiniportInitiateOffload</a> function.
 
 `InvalidateOffloadHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.miniportinvalidateoffload" tabindex="0"><i>
-     MiniportInvalidateOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">
+     MiniportInvalidateOffload</a> function.
 
 `QueryOffloadHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.miniportqueryoffload" tabindex="0"><i>
-     MiniportQueryOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">
+     MiniportQueryOffload</a> function.
 
 `TerminateOffloadHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.miniportterminateoffload" tabindex="0"><i>
-     MiniportTerminateOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">
+     MiniportTerminateOffload</a> function.
 
 `UpdateOffloadHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.miniportupdateoffload" tabindex="0"><i>
-     MiniportUpdateOffload</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">
+     MiniportUpdateOffload</a> function.
 
 ## Remarks
 To register its generic chimney offload entry points, an offload target or intermediate driver calls
@@ -118,28 +118,25 @@ To register its generic chimney offload entry points, an offload target or inter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
 ## See Also
 
-<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-
-<a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
-
-<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
-
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
 
 <a href="..\ndischimney\nc-ndischimney-w_invalidate_offload_handler.md">MiniportInvalidateOffload</a>
 
 <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff570269">MiniportSetOptions</a>
+
+<a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
 
  
 

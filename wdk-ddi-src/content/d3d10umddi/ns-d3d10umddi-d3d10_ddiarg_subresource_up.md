@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 035ce56c-b2a0-4ee0-83ce-4a45f05e5ff4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_4bc98700-ad44-4b40-9fc2-b40eeae79626.xml, D3D10_DDIARG_SUBRESOURCE_UP structure [Display Devices], display.d3d10_ddiarg_subresource_up, d3d10umddi/D3D10_DDIARG_SUBRESOURCE_UP, D3D10_DDIARG_SUBRESOURCE_UP
+ms.keywords : D3D10_DDIARG_SUBRESOURCE_UP, D3D10_DDIARG_SUBRESOURCE_UP structure [Display Devices], UMDisplayDriver_Dx10param_Structs_4bc98700-ad44-4b40-9fc2-b40eeae79626.xml, display.d3d10_ddiarg_subresource_up, d3d10umddi/D3D10_DDIARG_SUBRESOURCE_UP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct D3D10_DDIARG_SUBRESOURCE_UP {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

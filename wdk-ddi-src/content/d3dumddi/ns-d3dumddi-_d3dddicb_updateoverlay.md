@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : efa54d23-99bc-49ea-b8a3-7ea5b00e36d8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_UPDATEOVERLAY, D3DDDICB_UPDATEOVERLAY structure [Display Devices], _D3DDDICB_UPDATEOVERLAY, display.d3dddicb_updateoverlay, d3dumddi/D3DDDICB_UPDATEOVERLAY, D3D_param_Structs_b9e39db9-44ba-45d5-9500-dd9d5d8cc4bb.xml
+ms.keywords : D3D_param_Structs_b9e39db9-44ba-45d5-9500-dd9d5d8cc4bb.xml, display.d3dddicb_updateoverlay, D3DDDICB_UPDATEOVERLAY, d3dumddi/D3DDDICB_UPDATEOVERLAY, D3DDDICB_UPDATEOVERLAY structure [Display Devices], _D3DDDICB_UPDATEOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,18 +64,16 @@ typedef struct _D3DDDICB_UPDATEOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlaycb.md">pfnCreateOverlayCb</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updateoverlaycb.md">pfnUpdateOverlayCb</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createoverlaycb.md">pfnCreateOverlayCb</a>
 
  
 

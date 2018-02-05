@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9E2951DE-083E-43D2-A487-97D0ADD76BE2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, windot11/PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, netvista.dot11_invitation_request_send_complete_parameters, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, _DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, windot11/DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, windot11/PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_invitation_request_send_complete_parameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS"
+req.typenames : DOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_REQUEST_SEND_COMPLETE_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -108,7 +108,5 @@ The offset, in bytes,  of the array of additional information elements (IEs) tha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |

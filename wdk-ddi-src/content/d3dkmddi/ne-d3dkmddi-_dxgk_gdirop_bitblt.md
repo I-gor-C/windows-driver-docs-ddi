@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f5f337dd-ab7a-4a9f-af3c-2d29dbdffe7b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_GDIROP_SRCINVERT, DXGK_GDIROP_ROP3, d3dkmddi/DXGK_GDIROP_ROP3, d3dkmddi/DXGK_GDIROP_INVALID, DXGK_GDIROP_BITBLT, DXGK_GDIROP_SRCCOPY, DXGK_GDIROP_INVALID, d3dkmddi/DXGK_GDIROP_SRCAND, DmEnums_ac0fe82c-71cb-4756-a580-37d138873b2d.xml, DXGK_GDIROP_SRCOR, DXGK_GDIROP_SRCINVERT, DXGK_GDIROP_SRCAND, d3dkmddi/DXGK_GDIROP_SRCCOPY, d3dkmddi/DXGK_GDIROP_SRCOR, DXGK_GDIROP_BITBLT enumeration [Display Devices], display.dxgk_gdirop_bitblt, d3dkmddi/DXGK_GDIROP_BITBLT, _DXGK_GDIROP_BITBLT
+ms.keywords : DXGK_GDIROP_SRCINVERT, _DXGK_GDIROP_BITBLT, d3dkmddi/DXGK_GDIROP_ROP3, DmEnums_ac0fe82c-71cb-4756-a580-37d138873b2d.xml, d3dkmddi/DXGK_GDIROP_INVALID, d3dkmddi/DXGK_GDIROP_SRCINVERT, DXGK_GDIROP_BITBLT, display.dxgk_gdirop_bitblt, DXGK_GDIROP_SRCCOPY, d3dkmddi/DXGK_GDIROP_SRCCOPY, DXGK_GDIROP_BITBLT enumeration [Display Devices], DXGK_GDIROP_SRCAND, d3dkmddi/DXGK_GDIROP_SRCOR, DXGK_GDIROP_INVALID, DXGK_GDIROP_ROP3, d3dkmddi/DXGK_GDIROP_BITBLT, d3dkmddi/DXGK_GDIROP_SRCAND, DXGK_GDIROP_SRCOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,5 @@ typedef enum _DXGK_GDIROP_BITBLT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

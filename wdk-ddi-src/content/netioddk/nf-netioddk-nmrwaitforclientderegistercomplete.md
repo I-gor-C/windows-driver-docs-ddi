@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aed0a69e-868c-4c7d-b601-003ff357da38
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NmrWaitForClientDeregisterComplete function [Network Drivers Starting with Windows Vista], nmrref_577f5784-0136-480d-bc2d-d9b8740bdf3a.xml, netioddk/NmrWaitForClientDeregisterComplete, netvista.nmrwaitforclientderegistercomplete, NmrWaitForClientDeregisterComplete
+ms.keywords : NmrWaitForClientDeregisterComplete, NmrWaitForClientDeregisterComplete function [Network Drivers Starting with Windows Vista], netvista.nmrwaitforclientderegistercomplete, netioddk/NmrWaitForClientDeregisterComplete, nmrref_577f5784-0136-480d-bc2d-d9b8740bdf3a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,14 +136,11 @@ A client module typically calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

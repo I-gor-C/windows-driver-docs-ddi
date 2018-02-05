@@ -61,7 +61,5 @@ A numeric value that specifies the size, in bytes, associated with the instance 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 or later versions of Windows. Available in Windows 7 or later versions of Windows. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |

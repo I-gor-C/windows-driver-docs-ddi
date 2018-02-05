@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d1064f97-e640-49b6-be8c-19662e5de9bb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_352928a8-39d5-4989-8156-0b1025b59350.xml, hbaapi/HBA_GetFcpTargetMapping, HBA_GetFcpTargetMapping routine [Storage Devices], HBA_GetFcpTargetMapping, storage.hba_getfcptargetmapping
+ms.keywords : HBA_GetFcpTargetMapping, storage.hba_getfcptargetmapping, HBA_GetFcpTargetMapping routine [Storage Devices], hbaapi/HBA_GetFcpTargetMapping, fibreHBA_rtns_352928a8-39d5-4989-8156-0b1025b59350.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,14 +109,10 @@ Returned if an unspecified error occurred that prevented the retrieval of the ta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : 00dc716c-621f-4312-bf53-6bc3ab492faa
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : winbio_ioctl/PWINBIO_DATA, biometric_ref_1d08ec8c-d73e-462f-a2f3-dce508bc159f.xml, WINBIO_DATA structure [Biometric Devices], biometric.winbio_data, WINBIO_DATA, PWINBIO_DATA structure pointer [Biometric Devices], winbio_ioctl/WINBIO_DATA, _WINBIO_DATA, *PWINBIO_DATA, PWINBIO_DATA
+ms.keywords : "*PWINBIO_DATA, biometric.winbio_data, PWINBIO_DATA structure pointer [Biometric Devices], _WINBIO_DATA, WINBIO_DATA structure [Biometric Devices], winbio_ioctl/PWINBIO_DATA, PWINBIO_DATA, winbio_ioctl/WINBIO_DATA, biometric_ref_1d08ec8c-d73e-462f-a2f3-dce508bc159f.xml, WINBIO_DATA"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_DATA, WINBIO_DATA"
+req.typenames : WINBIO_DATA, *PWINBIO_DATA
 req.product : Windows 10 or later.
 ---
 
@@ -67,7 +67,5 @@ The WINBIO_DATA structure associates a length, in bytes, with an arbitrary block
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 63DB66FB-E02B-4C5E-AC7A-654E9D70435A
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020, display.d3d12ddi_video_process_references_info, D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020
+ms.keywords : D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020 structure [Display Devices], D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020, d3d12umddi/D3D12DDI_VIDEO_PROCESS_REFERENCES_INFO_0020, display.d3d12ddi_video_process_references_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,4 @@ An array of subresource indexes for the list of past frames textures.  A value o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |

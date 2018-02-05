@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 59A52F4B-D987-420D-BF83-1375354C6D6A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kscamera_perframesetting_frame_header, KSCAMERA_PERFRAMESETTING_FRAME_HEADER, *PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, PKSCAMERA_PERFRAMESETTING_FRAME_HEADER structure pointer [Streaming Media Devices], ksmedia/PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, KSCAMERA_PERFRAMESETTING_FRAME_HEADER structure [Streaming Media Devices], ksmedia/KSCAMERA_PERFRAMESETTING_FRAME_HEADER
+ms.keywords : "*PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, KSCAMERA_PERFRAMESETTING_FRAME_HEADER, ksmedia/PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, stream.kscamera_perframesetting_frame_header, ksmedia/KSCAMERA_PERFRAMESETTING_FRAME_HEADER, PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, PKSCAMERA_PERFRAMESETTING_FRAME_HEADER structure pointer [Streaming Media Devices], KSCAMERA_PERFRAMESETTING_FRAME_HEADER structure [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ The size of this header, all the item headers, value payloads, custom items, and
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h |

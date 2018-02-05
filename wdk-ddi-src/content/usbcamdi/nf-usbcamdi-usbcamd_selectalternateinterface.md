@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b9a31719-2674-4d3f-8792-b099640faa07
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : usbcmdpr_48a3328b-869a-42fd-acfd-b1981384db85.xml, USBCAMD_SelectAlternateInterface, USBCAMD_SelectAlternateInterface function [Streaming Media Devices], usbcamdi/USBCAMD_SelectAlternateInterface, stream.usbcamd_selectalternateinterface
+ms.keywords : USBCAMD_SelectAlternateInterface, stream.usbcamd_selectalternateinterface, usbcamdi/USBCAMD_SelectAlternateInterface, USBCAMD_SelectAlternateInterface function [Streaming Media Devices], usbcmdpr_48a3328b-869a-42fd-acfd-b1981384db85.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,14 +104,9 @@ This function is typically called by a camera minidriver in response to a reques
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Usbcamd2.lib |
 
 ## See Also
 

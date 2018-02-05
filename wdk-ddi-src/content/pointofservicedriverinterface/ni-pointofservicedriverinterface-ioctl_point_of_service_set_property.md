@@ -75,6 +75,4 @@ The client must successfully call <a href="..\pointofservicedriverinterface\ni-p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
-| **IRQL** |  |

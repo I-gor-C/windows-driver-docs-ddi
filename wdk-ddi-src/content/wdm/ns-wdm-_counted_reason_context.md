@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : beb17d50-d99a-4baf-99bd-9f42fbea0478
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kstruct_a_52baf683-dfd2-4004-abed-e9ae6221c342.xml, COUNTED_REASON_CONTEXT, _COUNTED_REASON_CONTEXT, wdm/PCOUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT structure [Kernel-Mode Driver Architecture], PCOUNTED_REASON_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kernel.counted_reason_context, PCOUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT, wdm/COUNTED_REASON_CONTEXT
+ms.keywords : COUNTED_REASON_CONTEXT structure [Kernel-Mode Driver Architecture], COUNTED_REASON_CONTEXT, wdm/PCOUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT, PCOUNTED_REASON_CONTEXT structure pointer [Kernel-Mode Driver Architecture], PCOUNTED_REASON_CONTEXT, _COUNTED_REASON_CONTEXT, kernel.counted_reason_context, wdm/COUNTED_REASON_CONTEXT, kstruct_a_52baf683-dfd2-4004-abed-e9ae6221c342.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,7 +85,7 @@ DIAGNOSTIC_REASON_DETAILED_STRING
 The version number of the structure. Set this member to DIAGNOSTIC_REASON_VERSION.
 
 ## Remarks
-This structure is used by the <a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
+This structure is used by the <a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a> routine.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> uses the reason string or strings contained in this structure as a diagnostic aid during functional and performance testing.
 
@@ -96,14 +96,12 @@ The DIAGNOSTIC_REASON_DETAILED_STRING flag supports localization. If the localiz
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-pocreatepowerrequest.md">PoCreatePowerRequest</a>
+<a href="..\wdm\nf-wdm-pocreatepowerrequest.md">PoCreatePowerRequest</a>
 
  
 

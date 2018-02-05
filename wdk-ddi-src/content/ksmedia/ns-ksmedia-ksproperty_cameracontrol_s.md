@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 203c6452-26d4-4dbf-89d4-c7e6d47e7c16
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_cameracontrol_s, PKSPROPERTY_CAMERACONTROL_S, KSPROPERTY_CAMERACONTROL_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_S, vidcapstruct_bfabf468-24f0-4acb-b064-229b3eea7df3.xml, ksmedia/PKSPROPERTY_CAMERACONTROL_S, KSPROPERTY_CAMERACONTROL_S, *PKSPROPERTY_CAMERACONTROL_S, PKSPROPERTY_CAMERACONTROL_S structure pointer [Streaming Media Devices]
+ms.keywords : ksmedia/KSPROPERTY_CAMERACONTROL_S, PKSPROPERTY_CAMERACONTROL_S structure pointer [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_S structure [Streaming Media Devices], vidcapstruct_bfabf468-24f0-4acb-b064-229b3eea7df3.xml, KSPROPERTY_CAMERACONTROL_S, stream.ksproperty_cameracontrol_s, PKSPROPERTY_CAMERACONTROL_S, *PKSPROPERTY_CAMERACONTROL_S, ksmedia/PKSPROPERTY_CAMERACONTROL_S
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -166,18 +166,15 @@ Specifies the value of the property. This member is read/write.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567802">PROPSETID_VIDCAP_CAMERACONTROL</a>
 
 <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_node_s.md">KSPROPERTY_CAMERACONTROL_NODE_S</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567802">PROPSETID_VIDCAP_CAMERACONTROL</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
  
 

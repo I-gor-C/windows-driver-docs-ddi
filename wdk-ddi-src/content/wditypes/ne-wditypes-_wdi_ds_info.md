@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4375FF5C-8772-43AB-844B-4AD5E044AF55
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_DS_INFO, WDI_DS_UNCHANGED, netvista.wdi_ds_info, wditypes/WDI_DS_CHANGED, wditypes/WDI_DS_UNKNOWN, wditypes/WDI_DS_UNCHANGED, WDI_DS_CHANGED, _WDI_DS_INFO, WDI_DS_INFO enumeration [Device and Driver Installation], netvista.wifi_ds_info, WDI_DS_UNKNOWN, wditypes/WDI_DS_INFO
+ms.keywords : wditypes/WDI_DS_UNKNOWN, wditypes/WDI_DS_INFO, WDI_DS_INFO, WDI_DS_INFO enumeration [Device and Driver Installation], wditypes/WDI_DS_UNCHANGED, WDI_DS_UNKNOWN, wditypes/WDI_DS_CHANGED, netvista.wifi_ds_info, netvista.wdi_ds_info, WDI_DS_UNCHANGED, WDI_DS_CHANGED, _WDI_DS_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,5 @@ typedef enum _WDI_DS_INFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

@@ -70,9 +70,8 @@ If the routine succeeds, then Status is set to STATUS_SUCCESS and the <i>Informa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | bthhfpddi.h |
-| **IRQL** |  |
 
 ## See Also
 

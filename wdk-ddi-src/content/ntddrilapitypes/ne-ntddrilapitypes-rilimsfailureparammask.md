@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ba1542e9-da6f-4696-8f71-575000a7724e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_IMSFAILURE_ALL, RILIMSFAILUREPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_IMSFAILURE_ERRORCODE, ntddrilapitypes/RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, ntddrilapitypes/RIL_PARAM_IMSFAILURE_ERRORCODE, ntddrilapitypes/RIL_PARAM_IMSFAILURE_ALL, RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, RIL_PARAM_IMSFAILURE_MESSAGETYPE, ntddrilapitypes/RIL_PARAM_IMSFAILURE_MESSAGETYPE, netvista.rilimsfailureparammask, RIL_PARAM_IMSFAILURE_ERRORSTRING, ntddrilapitypes/RILIMSFAILUREPARAMMASK, RILIMSFAILUREPARAMMASK, ntddrilapitypes/RIL_PARAM_IMSFAILURE_ERRORSTRING
+ms.keywords : RILIMSFAILUREPARAMMASK, netvista.rilimsfailureparammask, RIL_PARAM_IMSFAILURE_ERRORSTRING, ntddrilapitypes/RIL_PARAM_IMSFAILURE_MESSAGETYPE, ntddrilapitypes/RIL_PARAM_IMSFAILURE_ERRORCODE, RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, ntddrilapitypes/RILIMSFAILUREPARAMMASK, ntddrilapitypes/RIL_PARAM_IMSFAILURE_MESSAGESUBTYPE, ntddrilapitypes/RIL_PARAM_IMSFAILURE_ERRORSTRING, RIL_PARAM_IMSFAILURE_ALL, ntddrilapitypes/RIL_PARAM_IMSFAILURE_ALL, RIL_PARAM_IMSFAILURE_ERRORCODE, RILIMSFAILUREPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_IMSFAILURE_MESSAGETYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -91,7 +91,4 @@ typedef enum _RILIMSFAILUREPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

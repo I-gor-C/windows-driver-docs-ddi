@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4d946524-8ad2-45a0-91be-861b30b0c297
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDeleteFilterFactory, stream.ksdeletefilterfactory, avfunc_60aeaa09-5563-47ea-a117-4b65a468b058.xml, ks/KsDeleteFilterFactory, KsDeleteFilterFactory function [Streaming Media Devices]
+ms.keywords : stream.ksdeletefilterfactory, KsDeleteFilterFactory function [Streaming Media Devices], ks/KsDeleteFilterFactory, avfunc_60aeaa09-5563-47ea-a117-4b65a468b058.xml, KsDeleteFilterFactory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -65,24 +65,21 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | ks.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ks\nf-ks-ksfilterfactoryaddcreateitem.md">KsFilterFactoryAddCreateItem</a>
 
+<a href="..\ks\nf-ks-ksfilterfactorysetdeviceclassesstate.md">KsFilterFactorySetDeviceClassesState</a>
+
 <a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
 
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-
-<a href="..\ks\nf-ks-ksfilterfactorysetdeviceclassesstate.md">KsFilterFactorySetDeviceClassesState</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : A009B276-AF91-4FDD-AB81-6992311B3744
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/IKsPinPipe::KsGetFilterName, KsGetFilterName method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe interface [Streaming Media Devices], KsGetFilterName method, IKsPinPipe::KsGetFilterName, KsGetFilterName, stream.ikspinpipe_ksgetfiltername, KsGetFilterName method [Streaming Media Devices], IKsPinPipe
+ms.keywords : KsGetFilterName, ksproxy/IKsPinPipe::KsGetFilterName, stream.ikspinpipe_ksgetfiltername, IKsPinPipe::KsGetFilterName, IKsPinPipe, KsGetFilterName method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe interface [Streaming Media Devices], KsGetFilterName method, KsGetFilterName method [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -64,14 +64,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

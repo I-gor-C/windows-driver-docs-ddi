@@ -79,11 +79,8 @@ When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | extsfns.h |
-| **DLL** |  |
 
 ## See Also
 

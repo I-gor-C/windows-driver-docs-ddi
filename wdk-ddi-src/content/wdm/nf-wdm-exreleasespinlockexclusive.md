@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D10C65A6-96E7-4BE0-BDD5-EFD129DC424C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ExReleaseSpinLockExclusive, kernel.exreleasespinlockexclusive_, ExReleaseSpinLockExclusive routine [Kernel-Mode Driver Architecture], ExReleaseSpinLockExclusive
+ms.keywords : kernel.exreleasespinlockexclusive_, ExReleaseSpinLockExclusive, ExReleaseSpinLockExclusive routine [Kernel-Mode Driver Architecture], wdm/ExReleaseSpinLockExclusive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -54,7 +54,7 @@ VOID ExReleaseSpinLockExclusive (
 
 ## Parameters
 
-``
+`Arg1`
 
 
 
@@ -78,14 +78,11 @@ The caller should hold the spin lock only briefly before releasing it. For more 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista with SP1. Available starting with Windows Vista with SP1. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL (See Remarks.) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

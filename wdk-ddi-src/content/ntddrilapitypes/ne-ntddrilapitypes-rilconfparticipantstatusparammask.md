@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a168b84a-fb3b-4e03-bb28-888b80cca6c6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_CPS_PARTICIPANTOP, RILCONFPARTICIPANTSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_CPS_ALL, ntddrilapitypes/RIL_PARAM_CPS_PARTICIPANTOP, RIL_PARAM_CPS_SIPSTATUS, RIL_PARAM_CPS_ADDRESS, ntddrilapitypes/RIL_PARAM_CPS_ADDRESS, RIL_PARAM_CPS_CALLTRANSFER, ntddrilapitypes/RIL_PARAM_CPS_SIPSTATUS, RIL_PARAM_CPS_ALL, RILCONFPARTICIPANTSTATUSPARAMMASK, RIL_PARAM_CPS_ID, ntddrilapitypes/RIL_PARAM_CPS_CALLTRANSFER, ntddrilapitypes/RILCONFPARTICIPANTSTATUSPARAMMASK, netvista.rilconfparticipantstatusparammask, ntddrilapitypes/RIL_PARAM_CPS_ID
+ms.keywords : ntddrilapitypes/RILCONFPARTICIPANTSTATUSPARAMMASK, ntddrilapitypes/RIL_PARAM_CPS_ALL, ntddrilapitypes/RIL_PARAM_CPS_CALLTRANSFER, RIL_PARAM_CPS_PARTICIPANTOP, RIL_PARAM_CPS_ADDRESS, RILCONFPARTICIPANTSTATUSPARAMMASK, ntddrilapitypes/RIL_PARAM_CPS_PARTICIPANTOP, RIL_PARAM_CPS_CALLTRANSFER, netvista.rilconfparticipantstatusparammask, RILCONFPARTICIPANTSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_CPS_ADDRESS, RIL_PARAM_CPS_SIPSTATUS, ntddrilapitypes/RIL_PARAM_CPS_ID, ntddrilapitypes/RIL_PARAM_CPS_SIPSTATUS, RIL_PARAM_CPS_ALL, RIL_PARAM_CPS_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ typedef enum _RILCONFPARTICIPANTSTATUSPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

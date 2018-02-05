@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 742ee83c-3db4-4d77-a79d-28bcc405746d
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audpc-routines_8f5adcf6-89a7-4918-ac2e-78afa45c38c5.xml, portcls/PcDestroyContent, PcDestroyContent function [Audio Devices], PcDestroyContent, audio.pcdestroycontent
+ms.keywords : PcDestroyContent, audpc-routines_8f5adcf6-89a7-4918-ac2e-78afa45c38c5.xml, PcDestroyContent function [Audio Devices], audio.pcdestroycontent, portcls/PcDestroyContent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -66,20 +66,16 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmdestroycon
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcDestroyContent function in Microsoft Windows XP and later operating systems. The PortCls system driver implements the PcDestroyContent function in Microsoft Windows XP and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Portcls.lib |
 
 ## See Also
 
-<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
-
 <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>
+
+<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
 
  
 

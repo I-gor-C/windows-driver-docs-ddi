@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1878109a-f70c-4e4b-8735-7fbb972f4416
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilphonebooklocation_2, rilapitypes/RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION structure [Network Drivers Starting with Windows Vista], *LPRILPHONEBOOKLOCATION
+ms.keywords : rilapitypes/RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION structure [Network Drivers Starting with Windows Vista], netvista.rilphonebooklocation_2, *LPRILPHONEBOOKLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ typedef struct _RILPHONEBOOKLOCATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

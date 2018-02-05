@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8e4eed61-bd57-4731-9178-7f8d33fbd240
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilcardappadded_2, RILCARDAPPADDED, *LPRILCARDAPPADDED, rilapitypes/RILCARDAPPADDED, RILCARDAPPADDED structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILCARDAPPADDED structure [Network Drivers Starting with Windows Vista], *LPRILCARDAPPADDED, RILCARDAPPADDED, rilapitypes/RILCARDAPPADDED, netvista.rilcardappadded_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ typedef struct _RILCARDAPPADDED {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

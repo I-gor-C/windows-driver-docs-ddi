@@ -7,8 +7,8 @@ old-location : debugger\getfieldoffset.htm
 old-project : debugger
 ms.assetid : 3e5e782b-1a72-446d-9d15-c0f513f3440c
 ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDebugSymbols5, IDebugSymbols5::GetFieldOffset, GetFieldOffset
+ms.date : 1/19/2018
+ms.keywords : debugger.getfieldoffset, IDebugSymbols5, IDebugSymbols::GetFieldOffset, GetFieldOffset, IDebugSymbols4::GetFieldOffset, WdbgExts_Ref_22c8a9bc-dec9-4eec-95c6-b265694b4385.xml, IDebugSymbols, IDebugSymbols2, IDebugSymbols4, IDebugSymbols5::GetFieldOffset, GetFieldOffset function [Windows Debugging], IDebugSymbols2::GetFieldOffset, wdbgexts/GetFieldOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -19,8 +19,6 @@ req.target-min-winverclnt :
 req.target-min-winversvr : 
 req.kmdf-ver : 
 req.umdf-ver : 
-req.alt-api : GetFieldOffset
-req.alt-loc : wdbgexts.h
 req.ddi-compliance : 
 req.unicode-ansi : 
 req.idl : 
@@ -28,10 +26,16 @@ req.max-support :
 req.namespace : 
 req.assembly : 
 req.type-library : 
-req.lib : 
+req.lib : dbgeng.h
 req.dll : 
 req.irql : 
-req.typenames : "*PDOT4_ACTIVITY, DOT4_ACTIVITY"
+topictype : 
+apitype : 
+apilocation : 
+apiname : 
+product : Windows
+targetos : Windows
+req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
@@ -75,11 +79,6 @@ If the function succeeds, the return value is zero. Otherwise, the return value 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

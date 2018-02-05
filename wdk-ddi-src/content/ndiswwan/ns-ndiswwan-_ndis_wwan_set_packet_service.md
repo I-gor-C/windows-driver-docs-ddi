@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bded1e89-3bb5-4241-ab44-875012bfad3a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_SET_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SET_PACKET_SERVICE, NDIS_WWAN_SET_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_PACKET_SERVICE, ndiswwan/PNDIS_WWAN_SET_PACKET_SERVICE, ndiswwan/NDIS_WWAN_SET_PACKET_SERVICE, WwanRef_b98b2778-6d41-426f-85c3-99add8477050.xml, NDIS_WWAN_SET_PACKET_SERVICE, netvista.ndis_wwan_set_packet_service, *PNDIS_WWAN_SET_PACKET_SERVICE
+ms.keywords : PNDIS_WWAN_SET_PACKET_SERVICE, ndiswwan/PNDIS_WWAN_SET_PACKET_SERVICE, _NDIS_WWAN_SET_PACKET_SERVICE, NDIS_WWAN_SET_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_packet_service, PNDIS_WWAN_SET_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_PACKET_SERVICE, WwanRef_b98b2778-6d41-426f-85c3-99add8477050.xml, NDIS_WWAN_SET_PACKET_SERVICE, *PNDIS_WWAN_SET_PACKET_SERVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_SET_PACKET_SERVICE, *PNDIS_WWAN_SET_PACKET_SERVICE
+req.typenames : "*PNDIS_WWAN_SET_PACKET_SERVICE, NDIS_WWAN_SET_PACKET_SERVICE"
 ---
 
 # _NDIS_WWAN_SET_PACKET_SERVICE structure
@@ -104,16 +104,14 @@ For more information about these members, see
 `PacketServiceAction`
 
 A value from the 
-     <mshelp:link keywords="netvista.wwan_packet_service_action" tabindex="0"><b>
-     WWAN_PACKET_SERVICE_ACTION</b></mshelp:link> enumeration that represents the packet service action to take.
+     <a href="..\wwan\ne-wwan-_wwan_packet_service_action.md">
+     WWAN_PACKET_SERVICE_ACTION</a> enumeration that represents the packet service action to take.
 
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

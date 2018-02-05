@@ -795,9 +795,9 @@ For the structures that contain the STOR_POWER_CONTROL_HEADER header, it has the
 </table></span></div>
 
 
-#### Version
+#### Address
 
-The version of the parent structure.
+The address of the unit the control operation is specified for.
 
 
 #### Size
@@ -805,9 +805,9 @@ The version of the parent structure.
 The size, in bytes, of the parent structure.
 
 
-#### Address
+#### Version
 
-The address of the unit the control operation is specified for.
+The version of the parent structure.
 
 
 ## Return Value
@@ -867,14 +867,9 @@ HW_UNIT_CONTROL (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

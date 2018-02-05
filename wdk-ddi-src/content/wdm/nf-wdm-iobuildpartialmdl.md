@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 26d88928-798f-46ee-9805-3b7da2056e2e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iobuildpartialmdl, IoBuildPartialMdl, IoBuildPartialMdl routine [Kernel-Mode Driver Architecture], k104_8c9451f6-614c-45a2-b95a-4f0935588d7f.xml, wdm/IoBuildPartialMdl
+ms.keywords : kernel.iobuildpartialmdl, k104_8c9451f6-614c-45a2-b95a-4f0935588d7f.xml, IoBuildPartialMdl routine [Kernel-Mode Driver Architecture], IoBuildPartialMdl, wdm/IoBuildPartialMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,30 +90,29 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
-
 <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
 
-<a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554660">MmPrepareMdlForReuse</a>
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
 <a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
 
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554660">MmPrepareMdlForReuse</a>
+
+<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
+
+<a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
 
  
 

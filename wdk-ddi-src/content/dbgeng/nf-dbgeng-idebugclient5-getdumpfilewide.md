@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 42acd24e-5952-46b3-bb0b-1eb43125fccd
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient4 interface [Windows Debugging], GetDumpFileWide method, GetDumpFileWide, GetDumpFileWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::GetDumpFileWide, debugger.getdumpfilewide, GetDumpFileWide method [Windows Debugging], dbgeng/IDebugClient4::GetDumpFileWide, IDebugClient4::GetDumpFileWide, GetDumpFileWide method [Windows Debugging], IDebugClient4 interface, IDebugClient5 interface [Windows Debugging], GetDumpFileWide method, IDebugClient5::GetDumpFileWide, IDebugClient5
+ms.keywords : GetDumpFileWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient4::GetDumpFileWide, IDebugClient5::GetDumpFileWide, IDebugClient4::GetDumpFileWide, IDebugClient5 interface [Windows Debugging], GetDumpFileWide method, GetDumpFileWide, GetDumpFileWide method [Windows Debugging], IDebugClient4 interface [Windows Debugging], GetDumpFileWide method, GetDumpFileWide method [Windows Debugging], IDebugClient5 interface, debugger.getdumpfilewide, IDebugClient5, dbgeng/IDebugClient5::GetDumpFileWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -110,24 +110,19 @@ For more information about crash dump files, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537874">AddDumpInformationFileWide</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547887">GetNumberDumpFiles</a>
 

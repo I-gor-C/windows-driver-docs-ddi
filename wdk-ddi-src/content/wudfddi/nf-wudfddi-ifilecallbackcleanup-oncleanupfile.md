@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e6dd18f4-725f-4611-ad70-029654cf4375
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IFileCallbackCleanup::OnCleanupFile, IFileCallbackCleanup interface, OnCleanupFile method, wdf.ifilecallbackcleanup_oncleanupfile, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, umdf.ifilecallbackcleanup_oncleanupfile, OnCleanupFile method, IFileCallbackCleanup interface, OnCleanupFile, OnCleanupFile method, IFileCallbackCleanup, IFileCallbackCleanup::OnCleanupFile
+ms.keywords : OnCleanupFile method, IFileCallbackCleanup interface, wdf.ifilecallbackcleanup_oncleanupfile, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, IFileCallbackCleanup, OnCleanupFile, wudfddi/IFileCallbackCleanup::OnCleanupFile, OnCleanupFile method, IFileCallbackCleanup::OnCleanupFile, umdf.ifilecallbackcleanup_oncleanupfile, IFileCallbackCleanup interface, OnCleanupFile method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -75,22 +75,17 @@ For information about when the framework calls <b>OnCleanupFile</b>, see <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
+
+<a href="..\wudfddi\nn-wudfddi-ifilecallbackcleanup.md">IFileCallbackCleanup</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-
-<a href="..\wudfddi\nn-wudfddi-ifilecallbackcleanup.md">IFileCallbackCleanup</a>
 
  
 

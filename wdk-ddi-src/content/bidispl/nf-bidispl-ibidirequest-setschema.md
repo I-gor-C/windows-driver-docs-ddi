@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ca4f7ea4-fcad-42b0-a63a-eee3706e5cbf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiRequest interface [Print Devices], IBidiRequest::SetSchema method, gdi.ibidirequest_ibidirequest__setschema, SetSchema, IBidiRequest::IBidiRequest::SetSchema, IBidiRequest, _win32_IBidiRequest_SetSchema, print.ibidirequest_ibidirequest__setschema, IBidiRequest::SetSchema method [Print Devices], bidispl/IBidiRequest::IBidiRequest::SetSchema, IBidiRequest::SetSchema, IBidiRequest::SetSchema method [Print Devices], IBidiRequest interface
+ms.keywords : "_win32_IBidiRequest_SetSchema, IBidiRequest interface [Print Devices], IBidiRequest::SetSchema method, IBidiRequest::IBidiRequest::SetSchema, IBidiRequest::SetSchema, SetSchema, IBidiRequest, bidispl/IBidiRequest::IBidiRequest::SetSchema, IBidiRequest::SetSchema method [Print Devices], IBidiRequest::SetSchema method [Print Devices], IBidiRequest interface, print.ibidirequest_ibidirequest__setschema, gdi.ibidirequest_ibidirequest__setschema"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -105,22 +105,19 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
-
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
  
 

@@ -123,8 +123,8 @@ If there are in-progress calls to one or more of the provider module's
     <i>ClientDetachProvider</i> callback function is called, then the client module's 
     <i>ClientDetachProvider</i> callback function returns STATUS_PENDING. In this situation, the client module
     must call the 
-    <mshelp:link keywords="netvista.nmrclientdetachprovidercomplete" tabindex="0"><b>
-    NmrClientDetachProviderComplete</b></mshelp:link> function after all in-progress calls to the provider module's 
+    <a href="..\netioddk\nf-netioddk-nmrclientdetachprovidercomplete.md">
+    NmrClientDetachProviderComplete</a> function after all in-progress calls to the provider module's 
     NPI functions have completed. The
     call to the 
     <b>
@@ -132,10 +132,10 @@ If there are in-progress calls to one or more of the provider module's
     is complete.
 
 The NMR calls the client module's 
-    <mshelp:link keywords="netvista.clientcleanupbindingcontext" tabindex="0"><i>
-    ClientCleanupBindingContext</i></mshelp:link> callback function and the provider module's 
-    <mshelp:link keywords="netvista.providercleanupbindingcontext" tabindex="0"><i>
-    ProviderCleanupBindingContext</i></mshelp:link> callback function after both the client module and the provider
+    <a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">
+    ClientCleanupBindingContext</a> callback function and the provider module's 
+    <a href="..\netioddk\nc-netioddk-npi_provider_cleanup_binding_context_fn.md">
+    ProviderCleanupBindingContext</a> callback function after both the client module and the provider
     module have completed detachment from each other.
 
 The NMR calls a client module's 
@@ -144,32 +144,28 @@ The NMR calls a client module's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Windows |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
-
-<mshelp:link keywords="netvista.nmrclientdetachprovidercomplete" tabindex="0"><b>
-   NmrClientDetachProviderComplete</b></mshelp:link>
-
-<a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a>
-
-<a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">ClientCleanupBindingContext</a>
-
-<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
+<a href="..\netioddk\nc-netioddk-npi_provider_cleanup_binding_context_fn.md">
+   ProviderCleanupBindingContext</a>
 
 <a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a>
 
-<mshelp:link keywords="netvista.providercleanupbindingcontext" tabindex="0"><i>
-   ProviderCleanupBindingContext</i></mshelp:link>
+<a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">ClientCleanupBindingContext</a>
+
+<a href="..\netioddk\nf-netioddk-nmrclientdetachprovidercomplete.md">
+   NmrClientDetachProviderComplete</a>
+
+<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
+
+<a href="..\netioddk\ns-netioddk-_npi_client_characteristics.md">NPI_CLIENT_CHARACTERISTICS</a>
+
+<a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a>
 
  
 

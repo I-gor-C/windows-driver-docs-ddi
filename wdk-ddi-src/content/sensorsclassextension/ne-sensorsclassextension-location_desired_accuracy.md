@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 21eefb20-b5ad-43c7-a1aa-92731c856363
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : LOCATION_DESIRED_ACCURACY enumeration [Sensor Devices], sensors.location_desired_accuracy, LOCATION_DESIRED_ACCURACY_HIGH, sensorsclassextension/LOCATION_DESIRED_ACCURACY_DEFAULT, Sensor_Enums_a794ec29-a465-4d6a-b32e-c5eb890c95ae.xml, sensorsclassextension/LOCATION_DESIRED_ACCURACY_HIGH, LOCATION_DESIRED_ACCURACY, LOCATION_DESIRED_ACCURACY_DEFAULT, sensorsclassextension/LOCATION_DESIRED_ACCURACY
+ms.keywords : sensorsclassextension/LOCATION_DESIRED_ACCURACY_DEFAULT, sensorsclassextension/LOCATION_DESIRED_ACCURACY, LOCATION_DESIRED_ACCURACY, LOCATION_DESIRED_ACCURACY enumeration [Sensor Devices], sensors.location_desired_accuracy, LOCATION_DESIRED_ACCURACY_HIGH, LOCATION_DESIRED_ACCURACY_DEFAULT, sensorsclassextension/LOCATION_DESIRED_ACCURACY_HIGH, Sensor_Enums_a794ec29-a465-4d6a-b32e-c5eb890c95ae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -70,9 +70,7 @@ enum LOCATION_DESIRED_ACCURACY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
 | **Header** | sensorsclassextension.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0a101b59-c610-4158-97a8-002222a94309
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : gdifnc_f34bbc65-29f2-47b1-aec3-523af01a804c.xml, print.gdigetpagecount, GdiGetPageCount function [Print Devices], GdiGetPageCount, winppi/GdiGetPageCount
+ms.keywords : print.gdigetpagecount, gdifnc_f34bbc65-29f2-47b1-aec3-523af01a804c.xml, winppi/GdiGetPageCount, GdiGetPageCount function [Print Devices], GdiGetPageCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,11 +72,7 @@ The <b>GdiGetPageCount</b> function is exported by gdi32.dll for use within a pr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |

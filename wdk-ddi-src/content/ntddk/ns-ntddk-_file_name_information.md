@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 04ec8e82-d74d-4827-8533-aa57e3638a45
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PFILE_NAME_INFORMATION, kernel.file_name_information, _FILE_NAME_INFORMATION, *PFILE_NAME_INFORMATION, ntddk/FILE_NAME_INFORMATION, PFILE_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_075348cd-50d6-450f-9a9d-a5ad8fd985e3.xml, FILE_NAME_INFORMATION structure [Kernel-Mode Driver Architecture], FILE_NAME_INFORMATION, PFILE_NAME_INFORMATION
+ms.keywords : PFILE_NAME_INFORMATION, PFILE_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], ntddk/PFILE_NAME_INFORMATION, kstruct_b_075348cd-50d6-450f-9a9d-a5ad8fd985e3.xml, ntddk/FILE_NAME_INFORMATION, *PFILE_NAME_INFORMATION, FILE_NAME_INFORMATION, FILE_NAME_INFORMATION structure [Kernel-Mode Driver Architecture], _FILE_NAME_INFORMATION, kernel.file_name_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,6 @@ Callers of <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

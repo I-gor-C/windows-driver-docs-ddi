@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d3b89502-667c-45dd-af1c-05b7c8613d6c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLMEDIASTATE structure [Network Drivers Starting with Windows Vista], RILCALLMEDIASTATE, netvista.rilcallmediastate_2, *LPRILCALLMEDIASTATE, rilapitypes/RILCALLMEDIASTATE
+ms.keywords : rilapitypes/RILCALLMEDIASTATE, RILCALLMEDIASTATE, RILCALLMEDIASTATE structure [Network Drivers Starting with Windows Vista], netvista.rilcallmediastate_2, *LPRILCALLMEDIASTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,7 +89,4 @@ typedef struct _RILCALLMEDIASTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

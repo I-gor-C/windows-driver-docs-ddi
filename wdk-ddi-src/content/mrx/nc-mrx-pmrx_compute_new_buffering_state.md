@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 
@@ -100,14 +100,8 @@ The Server Message Block (SMB) redirector uses <i>MRxComputeNewBufferingState</i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mrx.h (include Mrx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

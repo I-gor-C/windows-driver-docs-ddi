@@ -58,8 +58,5 @@ The <a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a> and <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dmusicks.h |
-| **DLL** |  |

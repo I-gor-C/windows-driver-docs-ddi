@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 01e7760c-b10c-497e-9cab-4d839c2ce5ff
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetUpperInstance routine [Installable File System Drivers], FltGetUpperInstance, FltApiRef_e_to_o_7629f1a6-0a5e-46a2-8423-bd7466548a2f.xml, fltkernel/FltGetUpperInstance, ifsk.fltgetupperinstance
+ms.keywords : FltGetUpperInstance, ifsk.fltgetupperinstance, FltApiRef_e_to_o_7629f1a6-0a5e-46a2-8423-bd7466548a2f.xml, fltkernel/FltGetUpperInstance, FltGetUpperInstance routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,28 +96,25 @@ The string "03333" represents a higher altitude than "100.123456". (Leading and 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\fltkernel\nf-fltkernel-fltgetbottominstance.md">FltGetBottomInstance</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltgettopinstance.md">FltGetTopInstance</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetbottominstance.md">FltGetBottomInstance</a>
+<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltgetlowerinstance.md">FltGetLowerInstance</a>
 

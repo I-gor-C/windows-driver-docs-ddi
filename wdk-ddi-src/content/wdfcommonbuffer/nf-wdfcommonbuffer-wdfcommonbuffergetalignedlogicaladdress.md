@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6222db07-5aba-467c-94a5-18493dfb1524
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCommonBufferGetAlignedLogicalAddress, PFN_WDFCOMMONBUFFERGETALIGNEDLOGICALADDRESS, WdfCommonBufferGetAlignedLogicalAddress method, wdfcommonbuffer/WdfCommonBufferGetAlignedLogicalAddress, wdf.wdfcommonbuffergetalignedlogicaladdress, kmdf.wdfcommonbuffergetalignedlogicaladdress, DFCommonBufferObjectRef_8381c500-1cd1-4271-9679-33a213a2307f.xml
+ms.keywords : wdf.wdfcommonbuffergetalignedlogicaladdress, WdfCommonBufferGetAlignedLogicalAddress, wdfcommonbuffer/WdfCommonBufferGetAlignedLogicalAddress, WdfCommonBufferGetAlignedLogicalAddress method, PFN_WDFCOMMONBUFFERGETALIGNEDLOGICALADDRESS, kmdf.wdfcommonbuffergetalignedlogicaladdress, DFCommonBufferObjectRef_8381c500-1cd1-4271-9679-33a213a2307f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,22 +77,20 @@ For more information about common buffers, see <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfcommonbuffer.h (include WdfCommonBuffer.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
+
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>
 
 <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>
-
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
 
  
 

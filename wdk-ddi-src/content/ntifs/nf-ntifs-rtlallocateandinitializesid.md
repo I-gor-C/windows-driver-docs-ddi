@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c58f4448-06f5-4eda-a254-e453defd1d6c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlallocateandinitializesid, RtlAllocateAndInitializeSid, ntifs/RtlAllocateAndInitializeSid, RtlAllocateAndInitializeSid function [Installable File System Drivers], rtlref_74879713-f57f-4d67-a779-995c150bc7ea.xml
+ms.keywords : RtlAllocateAndInitializeSid, ntifs/RtlAllocateAndInitializeSid, rtlref_74879713-f57f-4d67-a779-995c150bc7ea.xml, ifsk.rtlallocateandinitializesid, RtlAllocateAndInitializeSid function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,11 +105,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7a5043b9-2517-454a-a8d3-1ea09143c81a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : seref_557d14bb-0d77-4bc8-8c75-57bb3c789963.xml, SeImpersonateClientEx routine [Installable File System Drivers], ifsk.seimpersonateclientex, ntifs/SeImpersonateClientEx, SeImpersonateClientEx
+ms.keywords : ntifs/SeImpersonateClientEx, SeImpersonateClientEx, ifsk.seimpersonateclientex, seref_557d14bb-0d77-4bc8-8c75-57bb3c789963.xml, SeImpersonateClientEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,24 +122,22 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
 
 <a href="..\ntifs\nf-ntifs-secreateclientsecurityfromsubjectcontext.md">SeCreateClientSecurityFromSubjectContext</a>
 
 <a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556717">SeStopImpersonatingClient</a>
+
+<a href="..\ntifs\nf-ntifs-secreateclientsecurity.md">SeCreateClientSecurity</a>
 
  
 

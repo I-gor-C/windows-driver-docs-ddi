@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5f4e3723-a30d-462d-9e7b-da05aa2e0b3c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.ipartbase_geturi, filterpipeline/IPartBase::GetUri, IPartBase::GetUri, IPartBase, GetUri method [Print Devices], IPartBase interface, GetUri, GetUri method [Print Devices], filterpipeline_ae1b8045-4a34-4a66-939c-31363ba66c6b.xml, IPartBase interface [Print Devices], GetUri method
+ms.keywords : GetUri, IPartBase, IPartBase::GetUri, GetUri method [Print Devices], GetUri method [Print Devices], IPartBase interface, filterpipeline_ae1b8045-4a34-4a66-939c-31363ba66c6b.xml, print.ipartbase_geturi, filterpipeline/IPartBase::GetUri, IPartBase interface [Print Devices], GetUri method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ The URI of the part.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

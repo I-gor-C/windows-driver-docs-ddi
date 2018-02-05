@@ -87,6 +87,4 @@ The <b>IsLightIntensityAdjustable</b> field indicates whether the luminance leve
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | lamp.h |
-| **IRQL** |  |

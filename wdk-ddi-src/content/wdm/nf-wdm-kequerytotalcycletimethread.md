@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : EC3A5F02-3D04-466E-8EB4-4BDA9CE47886
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryTotalCycleTimeThread, kernel.kequerytotalcycletimethread_, KeQueryTotalCycleTimeThread routine [Kernel-Mode Driver Architecture], wdm/KeQueryTotalCycleTimeThread
+ms.keywords : kernel.kequerytotalcycletimethread_, KeQueryTotalCycleTimeThread routine [Kernel-Mode Driver Architecture], wdm/KeQueryTotalCycleTimeThread, KeQueryTotalCycleTimeThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,7 @@ The accumulated cycle time for the thread.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

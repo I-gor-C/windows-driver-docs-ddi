@@ -72,8 +72,8 @@ The size of the memory block, in bytes. When calling
 If the NDIS driver specifies an entry point for the 
     <i>NetAllocateMdl</i> function at the 
     <i>AllocateMdl</i> parameter of the 
-    <mshelp:link keywords="netvista.ndisretreatnetbufferdatastart" tabindex="0"><b>
-    NdisRetreatNetBufferDataStart</b></mshelp:link> function, NDIS calls 
+    <a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
+    NdisRetreatNetBufferDataStart</a> function, NDIS calls 
     <i>NetAllocateMdl</i> to allocate an MDL and memory.
 
 NDIS specifies the size of the associated memory block at 
@@ -91,21 +91,17 @@ NDIS calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisretreatnetbufferdatastart" tabindex="0"><b>
-   NdisRetreatNetBufferDataStart</b></mshelp:link>
-
 <a href="..\ndis\nc-ndis-net_buffer_free_mdl_handler.md">NetFreeMdl</a>
+
+<a href="..\ndis\nf-ndis-ndisretreatnetbufferdatastart.md">
+   NdisRetreatNetBufferDataStart</a>
 
  
 

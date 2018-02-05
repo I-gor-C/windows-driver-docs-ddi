@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3405cca6-8d65-4879-98e8-3cd8f66003a5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2stateset, *LPD3DHAL_DP2STATESET, LPD3DHAL_DP2STATESET structure pointer [Display Devices], _D3DHAL_DP2STATESET, d3dhal/LPD3DHAL_DP2STATESET, D3DHAL_DP2STATESET structure [Display Devices], LPD3DHAL_DP2STATESET, D3DHAL_DP2STATESET, d3dstrct_5aa94d41-9558-4d2d-ae6c-fb9d6e347fa5.xml, d3dhal/D3DHAL_DP2STATESET
+ms.keywords : LPD3DHAL_DP2STATESET structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2STATESET, _D3DHAL_DP2STATESET, *LPD3DHAL_DP2STATESET, LPD3DHAL_DP2STATESET, D3DHAL_DP2STATESET structure [Display Devices], d3dstrct_5aa94d41-9558-4d2d-ae6c-fb9d6e347fa5.xml, D3DHAL_DP2STATESET, display.d3dhal_dp2stateset, d3dhal/D3DHAL_DP2STATESET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -415,7 +415,4 @@ See <a href="https://msdn.microsoft.com/276d3cdb-34bf-49e8-aae5-94315746c5ff">Ac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |

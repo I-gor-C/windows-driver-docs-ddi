@@ -69,10 +69,10 @@ NDIS_STATUS WTcpOffloadDisconnectHandler(
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The offload target provided this handle to NDIS when it
      called 
-     <mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
-     NdisMSetMiniportAttributes</b></mshelp:link> from its 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+     NdisMSetMiniportAttributes</a> from its 
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `MiniportOffloadContext`
 
@@ -110,8 +110,8 @@ The offload target must perform a graceful disconnect by sending a FIN segment.
 The 
      <i>MiniportTcpOffloadDisconnect</i> function always returns NDIS_STATUS_PENDING. The offload target
      completes the disconnect request asynchronously by calling 
-     <mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-     NdisTcpOffloadDisconnectComplete</b></mshelp:link>.
+     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+     NdisTcpOffloadDisconnectComplete</a>.
 
 ## Remarks
 
@@ -128,13 +128,13 @@ If
     RST segment on the specified TCP connection.
 <div class="alert"><b>Note</b>  This is the only instance in which an offload target can send an RST
     segment.</div><div> </div>Before calling the 
-    <mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-    NdisTcpOffloadDisconnectComplete</b></mshelp:link> function to complete the abortive disconnect, the offload target
+    <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+    NdisTcpOffloadDisconnectComplete</a> function to complete the abortive disconnect, the offload target
     must complete all outstanding send requests on the connection with a status value of
     NDIS_STATUS_REQUEST_ABORTED. The offload target writes this status value to the 
     <b>Status</b> member of each NET_BUFFER_LIST structure in the linked list that it passes to the 
-    <mshelp:link keywords="netvista.ndistcpoffloadsendcomplete" tabindex="0"><b>
-    NdisTcpOffloadSendComplete</b></mshelp:link> function.
+    <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">
+    NdisTcpOffloadSendComplete</a> function.
 
 It does not matter whether the offload target terminates the outstanding send requests before or after
     it sends the RST segment.
@@ -186,8 +186,8 @@ An RST segment, which requests an abortive disconnect.
     the connection or initiates an abortive disconnect.
 
 Before the offload target calls 
-    <mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-    NdisTcpOffloadDisconnectComplete</b></mshelp:link>, it must complete all outstanding send requests on the connection
+    <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+    NdisTcpOffloadDisconnectComplete</a>, it must complete all outstanding send requests on the connection
     in the same order in which they were delivered to the offload target.
 
 <b>Mandatory Response to a Disconnect Request
@@ -207,38 +207,33 @@ The offload target must not free resources for the connection on which it has is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
-
-<mshelp:link keywords="netvista.ndisadvancenetbufferdatastart" tabindex="0"><b>
-   NdisAdvanceNetBufferDataStart</b></mshelp:link>
-
-<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 
-<mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-   NdisTcpOffloadDisconnectComplete</b></mshelp:link>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+   NdisTcpOffloadDisconnectComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+   NdisAdvanceNetBufferDataStart</a>
 
 <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

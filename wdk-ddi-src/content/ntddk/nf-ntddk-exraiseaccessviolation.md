@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c35e07c0-ffbd-4110-bb32-b47a512129dd
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExRaiseAccessViolation, kernel.exraiseaccessviolation, ntddk/ExRaiseAccessViolation, k102_71b4c053-599c-4a6d-8a59-08aae6bdc534.xml, ExRaiseAccessViolation routine [Kernel-Mode Driver Architecture]
+ms.keywords : k102_71b4c053-599c-4a6d-8a59-08aae6bdc534.xml, ExRaiseAccessViolation, ntddk/ExRaiseAccessViolation, kernel.exraiseaccessviolation, ExRaiseAccessViolation routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,24 +65,23 @@ Because <b>ExRaiseAccessViolation</b> can only be used at IRQL = PASSIVE_LEVEL,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
 
 <a href="..\wdm\nf-wdm-exraisestatus.md">ExRaiseStatus</a>
 
 <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 
 <a href="..\ntddk\nf-ntddk-exraisedatatypemisalignment.md">ExRaiseDatatypeMisalignment</a>
+
+<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
 
  
 

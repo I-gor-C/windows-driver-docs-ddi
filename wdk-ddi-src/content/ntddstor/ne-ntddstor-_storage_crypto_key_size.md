@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : C3E5CEC6-34A2-48DF-B963-677C69A97E0B
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/StorageCryptoKeySizeUnknown, STORAGE_CRYPTO_KEY_SIZE, *PSTORAGE_CRYPTO_KEY_SIZE enumeration [Storage Devices], STORAGE_CRYPTO_KEY_SIZE, *PSTORAGE_CRYPTO_KEY_SIZE, STORAGE_CRYPTO_KEY_SIZE, StorageCryptoKeySize192Bits, storage.storage_crypto_key_size, StorageCryptoKeySize128Bits, ntddstor/StorageCryptoKeySize128Bits, ntddstor/StorageCryptoKeySize192Bits, ntddstor/StorageCryptoKeySize512Bits, _STORAGE_CRYPTO_KEY_SIZE, ntddstor/StorageCryptoKeySize256Bits, StorageCryptoKeySize256Bits, *PSTORAGE_CRYPTO_KEY_SIZE, StorageCryptoKeySize512Bits, StorageCryptoKeySizeUnknown, ntddstor/STORAGE_CRYPTO_KEY_SIZE, STORAGE_CRYPTO_KEY_SIZE enumeration [Storage Devices]
+ms.keywords : ntddstor/StorageCryptoKeySize128Bits, STORAGE_CRYPTO_KEY_SIZE, *PSTORAGE_CRYPTO_KEY_SIZE enumeration [Storage Devices], StorageCryptoKeySize192Bits, STORAGE_CRYPTO_KEY_SIZE enumeration [Storage Devices], StorageCryptoKeySize256Bits, ntddstor/StorageCryptoKeySize512Bits, storage.storage_crypto_key_size, STORAGE_CRYPTO_KEY_SIZE, *PSTORAGE_CRYPTO_KEY_SIZE, StorageCryptoKeySize128Bits, ntddstor/STORAGE_CRYPTO_KEY_SIZE, STORAGE_CRYPTO_KEY_SIZE, ntddstor/StorageCryptoKeySize192Bits, ntddstor/StorageCryptoKeySize256Bits, StorageCryptoKeySize512Bits, ntddstor/StorageCryptoKeySizeUnknown, *PSTORAGE_CRYPTO_KEY_SIZE, _STORAGE_CRYPTO_KEY_SIZE, StorageCryptoKeySizeUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _STORAGE_CRYPTO_KEY_SIZE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h |

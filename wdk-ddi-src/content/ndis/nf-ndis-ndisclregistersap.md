@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 33ed0839-d1e3-4872-baa8-ead7e97f8c53
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisclregistersap, condis_client_ref_ee22bc25-7935-458f-8016-6537d9803acb.xml, NdisClRegisterSap function [Network Drivers Starting with Windows Vista], NdisClRegisterSap, ndis/NdisClRegisterSap
+ms.keywords : condis_client_ref_ee22bc25-7935-458f-8016-6537d9803acb.xml, NdisClRegisterSap function [Network Drivers Starting with Windows Vista], netvista.ndisclregistersap, NdisClRegisterSap, ndis/NdisClRegisterSap
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,8 +86,8 @@ Pointer to a variable in which a handle to the newly registered SAP is returned 
 When 
      <b>NdisClRegisterSap</b> returns anything other than NDIS_STATUS_PENDING, the client should make an
      internal call to its 
-     <mshelp:link keywords="netvista.protocolclregistersapcomplete" tabindex="0"><i>
-     ProtocolClRegisterSapComplete</i></mshelp:link> function. Otherwise, NDIS calls the client's 
+     <a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
+     ProtocolClRegisterSapComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClRegisterSapComplete</i> function when this operation is completed.
 
 ## Remarks
@@ -137,8 +137,8 @@ On receipt of an incoming call on a registered SAP, the call manager first calls
 When the VC has been set up and activated, the call manager calls 
       <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>,
       causing NDIS to call the client's 
-      <mshelp:link keywords="netvista.protocolclincomingcall" tabindex="0"><i>
-      ProtocolClIncomingCall</i></mshelp:link> function.
+      <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">
+      ProtocolClIncomingCall</a> function.
 
 </li>
 </ul>
@@ -146,37 +146,35 @@ When the VC has been set up and activated, the call manager calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-<mshelp:link keywords="netvista.protocolclregistersapcomplete" tabindex="0"><i>
-   ProtocolClRegisterSapComplete</i></mshelp:link>
-
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
-
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545392">CO_SAP</a>
-
-<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
-
 <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
+   ProtocolClRegisterSapComplete</a>
 
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
 
+<a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545392">CO_SAP</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
+
 <a href="..\ndis\nc-ndis-protocol_co_af_register_notify.md">ProtocolCoAfRegisterNotify</a>
 
-<a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
+
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 
  
 

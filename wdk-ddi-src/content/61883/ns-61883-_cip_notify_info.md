@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 60b0d44b-0178-43ce-a1ad-7f5825bed3ba
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CIP_NOTIFY_INFO, 61883/PCIP_NOTIFY_INFO, IEEE.cip_notify_info, PCIP_NOTIFY_INFO structure pointer [Buses], 61883_structures_383bc74c-1168-4478-8284-b2724f9ec654.xml, CIP_NOTIFY_INFO structure [Buses], 61883/CIP_NOTIFY_INFO, PCIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO, _CIP_NOTIFY_INFO
+ms.keywords : CIP_NOTIFY_INFO structure [Buses], 61883/PCIP_NOTIFY_INFO, 61883/CIP_NOTIFY_INFO, _CIP_NOTIFY_INFO, CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO, IEEE.cip_notify_info, PCIP_NOTIFY_INFO, PCIP_NOTIFY_INFO structure pointer [Buses], 61883_structures_383bc74c-1168-4478-8284-b2724f9ec654.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,6 @@ The IEC-61883 protocol driver allocates and initializes this structure from the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
 ## See Also

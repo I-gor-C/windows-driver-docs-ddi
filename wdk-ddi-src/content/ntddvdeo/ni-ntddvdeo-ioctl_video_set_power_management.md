@@ -71,9 +71,7 @@ The miniport driver does not set the <b>Information</b> member of the <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 

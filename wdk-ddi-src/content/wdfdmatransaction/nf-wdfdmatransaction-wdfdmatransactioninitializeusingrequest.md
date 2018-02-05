@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5a59c1cc-b5a9-4e94-966d-9998a98d6ad2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdmatransaction/WdfDmaTransactionInitializeUsingRequest, wdf.wdfdmatransactioninitializeusingrequest, DFDmaObjectRef_b61c1d2b-b62e-4f04-b7ff-53a8e819062a.xml, WdfDmaTransactionInitializeUsingRequest, WdfDmaTransactionInitializeUsingRequest method, kmdf.wdfdmatransactioninitializeusingrequest
+ms.keywords : WdfDmaTransactionInitializeUsingRequest, WdfDmaTransactionInitializeUsingRequest method, kmdf.wdfdmatransactioninitializeusingrequest, DFDmaObjectRef_b61c1d2b-b62e-4f04-b7ff-53a8e819062a.xml, wdf.wdfdmatransactioninitializeusingrequest, wdfdmatransaction/WdfDmaTransactionInitializeUsingRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,28 +121,26 @@ For more information about DMA transactions, see <a href="https://msdn.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal |
 
 ## See Also
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements.md">WdfDmaEnablerSetMaximumScatterGatherElements</a>
-
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
-
 <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a>
+
+<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_direction.md">WDF_DMA_DIRECTION</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
 
-<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_direction.md">WDF_DMA_DIRECTION</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements.md">WdfDmaEnablerSetMaximumScatterGatherElements</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3f93ce0a-f1f0-4b5b-aaf3-ce6698eb5055
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fltqueryvolumeinformationfile, FileFsAttributeInformation, FltQueryVolumeInformationFile function [Installable File System Drivers], FileFsDeviceInformation, FileFsDriverPathInformation, FileFsSizeInformation, FltApiRef_p_to_z_b2a51db8-6931-46c6-84ba-eb29097ac89e.xml, FileFsVolumeInformation, FileFsObjectIdInformation, FltQueryVolumeInformationFile, FileFsControlInformation, FileFsSectorSizeInformation, fltkernel/FltQueryVolumeInformationFile, FileFsFullSizeInformation
+ms.keywords : FileFsSizeInformation, ifsk.fltqueryvolumeinformationfile, FileFsSectorSizeInformation, FltQueryVolumeInformationFile, FileFsDriverPathInformation, fltkernel/FltQueryVolumeInformationFile, FileFsVolumeInformation, FltQueryVolumeInformationFile function [Installable File System Drivers], FltApiRef_p_to_z_b2a51db8-6931-46c6-84ba-eb29097ac89e.xml, FileFsAttributeInformation, FileFsDeviceInformation, FileFsControlInformation, FileFsObjectIdInformation, FileFsFullSizeInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -210,32 +210,29 @@ If the <i>FileObject</i> represents a direct device open, only <i>FileFsDeviceIn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_fs_device_information.md">FILE_FS_DEVICE_INFORMATION</a>
-
 <a href="..\ntifs\ns-ntifs-_file_fs_attribute_information.md">FILE_FS_ATTRIBUTE_INFORMATION</a>
 
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
+
 <a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a>
+
+<a href="..\wdm\ns-wdm-_file_fs_device_information.md">FILE_FS_DEVICE_INFORMATION</a>
+
+<a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
 
 <a href="..\ntifs\ns-ntifs-_file_fs_driver_path_information.md">FILE_FS_DRIVER_PATH_INFORMATION</a>
 
 <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
 
 <a href="..\ntddk\ns-ntddk-_file_fs_full_size_information.md">FILE_FS_FULL_SIZE_INFORMATION</a>
-
-<a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 
 <b>FILE_FS_SECTOR_SIZE_INFORMATION</b>
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d482abdc-c6c1-4789-a1fc-39e76c32e78a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_DOT11_IHV_VERSION_INFO, DOT11_IHV_VERSION_INFO structure [Network Drivers Starting with Windows Vista], PDOT11_IHV_VERSION_INFO, Native_802.11_data_types_65cab8b1-5ff7-4775-a3e9-b93e161e6bd3.xml, wlanihv/DOT11_IHV_VERSION_INFO, netvista.dot11_ihv_version_info, DOT11_IHV_VERSION_INFO, wlanihv/PDOT11_IHV_VERSION_INFO, *PDOT11_IHV_VERSION_INFO, PDOT11_IHV_VERSION_INFO structure pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : DOT11_IHV_VERSION_INFO structure [Network Drivers Starting with Windows Vista], _DOT11_IHV_VERSION_INFO, Native_802.11_data_types_65cab8b1-5ff7-4775-a3e9-b93e161e6bd3.xml, PDOT11_IHV_VERSION_INFO structure pointer [Network Drivers Starting with Windows Vista], PDOT11_IHV_VERSION_INFO, DOT11_IHV_VERSION_INFO, wlanihv/PDOT11_IHV_VERSION_INFO, wlanihv/DOT11_IHV_VERSION_INFO, *PDOT11_IHV_VERSION_INFO, netvista.dot11_ihv_version_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_IHV_VERSION_INFO, DOT11_IHV_VERSION_INFO"
+req.typenames : DOT11_IHV_VERSION_INFO, *PDOT11_IHV_VERSION_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -80,19 +80,17 @@ Prior to starting the IHV Extensions DLL through a call to the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_service.md">Dot11ExtIhvInitService</a>
-
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_service.md">Dot11ExtIhvInitService</a>
 
  
 

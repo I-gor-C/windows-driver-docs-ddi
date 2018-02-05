@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 86f236fa-73f8-4071-b6da-6de2d276cbff
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], GetDebuggeeType method, GetDebuggeeType method [Windows Debugging], dbgeng/IDebugControl3::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], IDebugControl2 interface, IDebugControl_4179686c-b047-41f5-98cc-28f2c6bd852d.xml, IDebugControl2 interface [Windows Debugging], GetDebuggeeType method, IDebugControl3, dbgeng/IDebugControl::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetDebuggeeType, debugger.getdebuggeetype, IDebugControl3 interface [Windows Debugging], GetDebuggeeType method, IDebugControl3::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetDebuggeeType, GetDebuggeeType, IDebugControl2::GetDebuggeeType
+ms.keywords : dbgeng/IDebugControl::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], GetDebuggeeType method [Windows Debugging], IDebugControl2 interface, debugger.getdebuggeetype, GetDebuggeeType method [Windows Debugging], IDebugControl3 interface, IDebugControl2::GetDebuggeeType, IDebugControl_4179686c-b047-41f5-98cc-28f2c6bd852d.xml, IDebugControl3, GetDebuggeeType method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetDebuggeeType, IDebugControl3 interface [Windows Debugging], GetDebuggeeType method, dbgeng/IDebugControl3::GetDebuggeeType, GetDebuggeeType, IDebugControl::GetDebuggeeType, IDebugControl interface [Windows Debugging], GetDebuggeeType method, IDebugControl2 interface [Windows Debugging], GetDebuggeeType method, IDebugControl3::GetDebuggeeType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -237,11 +237,6 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

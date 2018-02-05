@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 97757CBA-8291-40A3-B247-D41E7FEB1D7C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_CreateHandle, USBD_CreateHandle routine [Buses], buses.usbd_register, USBD_CreateHandle
+ms.keywords : usbdlib/USBD_CreateHandle, USBD_CreateHandle, buses.usbd_register, USBD_CreateHandle routine [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -148,22 +148,19 @@ After the client driver is finished using the USBD handle, the driver must close
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
-| **Library** |  |
+| **Library** | Usbdex.lib; Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>
 
 <a href="..\usbdlib\nf-usbdlib-usbd_closehandle.md">USBD_CloseHandle</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450844">Allocating and Building URBs</a>
 
  
 

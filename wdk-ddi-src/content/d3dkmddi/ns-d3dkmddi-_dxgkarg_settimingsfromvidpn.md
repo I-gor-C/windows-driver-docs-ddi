@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 14D652C4-9812-481E-8E69-A6D7923F01A3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PDXGKARG_SETTIMINGSFROMVIDPN structure pointer [Display Devices], DXGKARG_SETTIMINGSFROMVIDPN, d3dkmddi/DXGKARG_SETTIMINGSFROMVIDPN, *IN_OUT_PDXGKARG_SETTIMINGSFROMVIDPN, display.dxgkarg_settimingsfromvidpn, _DXGKARG_SETTIMINGSFROMVIDPN, PDXGKARG_SETTIMINGSFROMVIDPN, DXGKARG_SETTIMINGSFROMVIDPN structure [Display Devices], d3dkmddi/PDXGKARG_SETTIMINGSFROMVIDPN
+ms.keywords : d3dkmddi/PDXGKARG_SETTIMINGSFROMVIDPN, _DXGKARG_SETTIMINGSFROMVIDPN, d3dkmddi/DXGKARG_SETTIMINGSFROMVIDPN, PDXGKARG_SETTIMINGSFROMVIDPN, display.dxgkarg_settimingsfromvidpn, DXGKARG_SETTIMINGSFROMVIDPN, PDXGKARG_SETTIMINGSFROMVIDPN structure pointer [Display Devices], DXGKARG_SETTIMINGSFROMVIDPN structure [Display Devices], *IN_OUT_PDXGKARG_SETTIMINGSFROMVIDPN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ A DXGK_SET_TIMING_FLAGS structure that requests specific actions from the driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 55c75583-945d-45f5-ac69-b6019b82aead
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilradiostateitemid_2, rilapitypes/RILRADIOSTATEITEMID, RILRADIOSTATEITEMID enumeration [Network Drivers Starting with Windows Vista], RILRADIOSTATEITEMID
+ms.keywords : rilapitypes/RILRADIOSTATEITEMID, RILRADIOSTATEITEMID, RILRADIOSTATEITEMID enumeration [Network Drivers Starting with Windows Vista], netvista.rilradiostateitemid_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -57,7 +57,4 @@ typedef enum _RILRADIOSTATEITEMID {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

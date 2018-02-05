@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
+req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_DEACTIVATE_DEVICE IOCTL
@@ -81,9 +81,7 @@ HID minidrivers that carry out the I/O to the device set the following fields of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidport.h (include Hidport.h) |
-| **IRQL** |  |
 
 ## See Also
 

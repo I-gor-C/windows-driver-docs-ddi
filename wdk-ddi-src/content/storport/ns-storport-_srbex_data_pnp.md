@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : CB64AF68-C40D-44F0-8F52-6BF05E23E5E1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SRBEX_DATA_PNP structure [Storage Devices], storage.srbex_data_pnp, StorQueryCapabilities, StorRemoveDevice, StorFilterResourceRequirements, StorStartDevice, StorSupriseRemoval, storport/SRBEX_DATA_PNP, SRBEX_DATA_PNP, storport/PSRBEX_DATA_PNP, StorQueryResourceRequirements, StorStopDevice, *PSRBEX_DATA_PNP, PSRBEX_DATA_PNP structure pointer [Storage Devices], PSRBEX_DATA_PNP, _SRBEX_DATA_PNP
+ms.keywords : StorStartDevice, storport/PSRBEX_DATA_PNP, StorStopDevice, *PSRBEX_DATA_PNP, StorQueryCapabilities, storage.srbex_data_pnp, PSRBEX_DATA_PNP, PSRBEX_DATA_PNP structure pointer [Storage Devices], StorRemoveDevice, StorFilterResourceRequirements, StorSupriseRemoval, _SRBEX_DATA_PNP, storport/SRBEX_DATA_PNP, StorQueryResourceRequirements, SRBEX_DATA_PNP, SRBEX_DATA_PNP structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSRBEX_DATA_PNP, SRBEX_DATA_PNP"
+req.typenames : SRBEX_DATA_PNP, *PSRBEX_DATA_PNP
 req.product : Windows 10 or later.
 ---
 
@@ -164,7 +164,7 @@ This member is reserved. Set to 0.
 
 `SrbPnPFlags`
 
-Indicates that the PNP request is for the adapter if SRB_PNP_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>SrbPnPFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
+Indicates that the PNP request is for the adapter if SRB_PNP_FLAGS_ADAPTER_REQUEST is set and that storage device address is reserved. Otherwise, <i>SrbPnPFlags</i> will be <b>NULL</b>, indicating that the request is for the storage device specified by an address at <b>AddressOffset</b> in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure.
 
 `Type`
 
@@ -174,14 +174,12 @@ Data type indicator for the bidirectional extended SRB data structure. Set to <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | storport.h (include Storport.h, Srb.h) |
 
 ## See Also
 
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
  
 

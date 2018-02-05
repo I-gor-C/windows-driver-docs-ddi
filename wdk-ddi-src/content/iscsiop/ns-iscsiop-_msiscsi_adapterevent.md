@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 03820d4d-d013-40fb-a686-1b228f178f50
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMSiSCSI_AdapterEvent, storage.msiscsi_adapterevent, iscsiop/MSiSCSI_AdapterEvent, _MSiSCSI_AdapterEvent, structs-iSCSI_86ec7324-3d5c-44d2-8972-691504f1c5e1.xml, PMSiSCSI_AdapterEvent structure pointer [Storage Devices], MSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent structure [Storage Devices], iscsiop/PMSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent
+ms.keywords : "_MSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent structure [Storage Devices], storage.msiscsi_adapterevent, iscsiop/MSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent structure pointer [Storage Devices], structs-iSCSI_86ec7324-3d5c-44d2-8972-691504f1c5e1.xml, iscsiop/PMSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent
+req.typenames : "*PMSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent"
 ---
 
 # _MSiSCSI_AdapterEvent structure
@@ -66,9 +66,6 @@ The WMI tool suite automatically generates a declaration of the MSiSCSI_AdapterE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also

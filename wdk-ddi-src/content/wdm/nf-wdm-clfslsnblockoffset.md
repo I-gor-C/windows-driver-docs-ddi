@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8b2cf728-8859-4b7d-99f0-2ee7604ab480
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : Clfs_700ff9e8-40ea-4659-b4a5-99432fb1577c.xml, ClfsLsnBlockOffset, kernel.clfslsnblockoffset, wdm/ClfsLsnBlockOffset, ClfsLsnBlockOffset routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.clfslsnblockoffset, ClfsLsnBlockOffset routine [Kernel-Mode Driver Architecture], wdm/ClfsLsnBlockOffset, Clfs_700ff9e8-40ea-4659-b4a5-99432fb1577c.xml, ClfsLsnBlockOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,22 +71,20 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-clfslsncontainer.md">ClfsLsnContainer</a>
 
 <a href="..\wdm\nf-wdm-clfslsnrecordsequence.md">ClfsLsnRecordSequence</a>
 
 <a href="..\wdm\nf-wdm-clfslsncreate.md">ClfsLsnCreate</a>
+
+<a href="..\wdm\nf-wdm-clfslsncontainer.md">ClfsLsnContainer</a>
 
  
 

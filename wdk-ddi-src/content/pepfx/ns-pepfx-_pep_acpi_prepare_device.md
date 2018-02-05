@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : F8D6680D-EFA7-4DED-B808-0E738A852641
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_ACPI_PREPARE_DEVICE, kernel.pep_acpi_prepare_device, PEP_ACPI_PREPARE_DEVICE structure [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_PREPARE_DEVICE, PPEP_ACPI_PREPARE_DEVICE, _PEP_ACPI_PREPARE_DEVICE, *PPEP_ACPI_PREPARE_DEVICE, PEP_ACPI_PREPARE_DEVICE, PPEP_ACPI_PREPARE_DEVICE structure pointer [Kernel-Mode Driver Architecture]
+ms.keywords : PEP_ACPI_PREPARE_DEVICE, PEP_ACPI_PREPARE_DEVICE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_PREPARE_DEVICE, pepfx/PPEP_ACPI_PREPARE_DEVICE, PPEP_ACPI_PREPARE_DEVICE structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_PREPARE_DEVICE, kernel.pep_acpi_prepare_device, _PEP_ACPI_PREPARE_DEVICE, *PPEP_ACPI_PREPARE_DEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_ACPI_PREPARE_DEVICE, PEP_ACPI_PREPARE_DEVICE"
+req.typenames : PEP_ACPI_PREPARE_DEVICE, *PPEP_ACPI_PREPARE_DEVICE
 ---
 
 # _PEP_ACPI_PREPARE_DEVICE structure
@@ -76,9 +76,7 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F139A61B-E074-4185-A934-17F6FDBA3F62
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDIARG_CREATEDEVICE_0003, D3D12DDIARG_CREATEDEVICE_0003, display.d3d12ddiarg_createdevice_0003, D3D12DDIARG_CREATEDEVICE_0003 structure [Display Devices]
+ms.keywords : D3D12DDIARG_CREATEDEVICE_0003 structure [Display Devices], d3d12umddi/D3D12DDIARG_CREATEDEVICE_0003, D3D12DDIARG_CREATEDEVICE_0003, display.d3d12ddiarg_createdevice_0003
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,7 +88,4 @@ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h |

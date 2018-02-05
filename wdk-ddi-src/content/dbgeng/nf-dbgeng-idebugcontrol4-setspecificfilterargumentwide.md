@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 416c4de2-f200-491a-a319-fb0a4fd86f86
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetSpecificFilterArgumentWide method [Windows Debugging], IDebugControl4::SetSpecificFilterArgumentWide, SetSpecificFilterArgumentWide method [Windows Debugging], IDebugControl4 interface, debugger.setspecificfilterargumentwide, IDebugControl4, SetSpecificFilterArgumentWide, IDebugControl4 interface [Windows Debugging], SetSpecificFilterArgumentWide method, dbgeng/IDebugControl4::SetSpecificFilterArgumentWide
+ms.keywords : IDebugControl4::SetSpecificFilterArgumentWide, dbgeng/IDebugControl4::SetSpecificFilterArgumentWide, SetSpecificFilterArgumentWide method [Windows Debugging], debugger.setspecificfilterargumentwide, IDebugControl4 interface [Windows Debugging], SetSpecificFilterArgumentWide method, SetSpecificFilterArgumentWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, SetSpecificFilterArgumentWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,14 +101,9 @@ For a list of specific filters that have argument and the interpretation of thos
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

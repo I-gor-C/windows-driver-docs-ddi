@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cb8df28d-1d44-446b-83a8-b4191213973d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2 structure [Display Devices], D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, display.d3dddicb_signalsynchronizationobject2"
+ms.keywords : d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, _D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2, display.d3dddicb_signalsynchronizationobject2, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -92,9 +92,7 @@ All synchronization objects must be created on the same logical adapter as the  
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

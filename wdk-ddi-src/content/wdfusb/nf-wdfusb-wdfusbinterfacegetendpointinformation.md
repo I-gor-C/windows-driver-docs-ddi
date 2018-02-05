@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c9e204db-f8fc-42e7-9a1b-f08099147ce7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfusbinterfacegetendpointinformation, WdfUsbInterfaceGetEndpointInformation method, wdfusb/WdfUsbInterfaceGetEndpointInformation, WdfUsbInterfaceGetEndpointInformation, kmdf.wdfusbinterfacegetendpointinformation, DFUsbRef_fff1d755-32af-48d1-b9d6-faa8b118fa8d.xml, PFN_WDFUSBINTERFACEGETENDPOINTINFORMATION
+ms.keywords : WdfUsbInterfaceGetEndpointInformation, kmdf.wdfusbinterfacegetendpointinformation, wdf.wdfusbinterfacegetendpointinformation, WdfUsbInterfaceGetEndpointInformation method, wdfusb/WdfUsbInterfaceGetEndpointInformation, DFUsbRef_fff1d755-32af-48d1-b9d6-faa8b118fa8d.xml, PFN_WDFUSBINTERFACEGETENDPOINTINFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,22 +88,21 @@ For more information about the <b>WdfUsbInterfaceGetEndpointInformation</b> meth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetnumendpoints.md">WdfUsbInterfaceGetNumEndpoints</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetnumendpoints.md">WdfUsbInterfaceGetNumEndpoints</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
 
  
 

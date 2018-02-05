@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 469896b3-3ae0-4edd-9fb0-ee5869633872
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMESSAGE_INTERRUPT_INFORMATION structure pointer [Storage Devices], MESSAGE_INTERRUPT_INFORMATION, MESSAGE_INTERRUPT_INFORMATION structure [Storage Devices], storport/PMESSAGE_INTERRUPT_INFORMATION, *PMESSAGE_INTERRUPT_INFORMATION, structs-storport_a918acbf-24eb-4112-8bab-bb2ee441064e.xml, storage.message_interrupt_information, _MESSAGE_INTERRUPT_INFORMATION, storport/MESSAGE_INTERRUPT_INFORMATION, PMESSAGE_INTERRUPT_INFORMATION
+ms.keywords : MESSAGE_INTERRUPT_INFORMATION, *PMESSAGE_INTERRUPT_INFORMATION, storport/MESSAGE_INTERRUPT_INFORMATION, storport/PMESSAGE_INTERRUPT_INFORMATION, structs-storport_a918acbf-24eb-4112-8bab-bb2ee441064e.xml, MESSAGE_INTERRUPT_INFORMATION structure [Storage Devices], _MESSAGE_INTERRUPT_INFORMATION, storage.message_interrupt_information, PMESSAGE_INTERRUPT_INFORMATION structure pointer [Storage Devices], PMESSAGE_INTERRUPT_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMESSAGE_INTERRUPT_INFORMATION, MESSAGE_INTERRUPT_INFORMATION"
+req.typenames : MESSAGE_INTERRUPT_INFORMATION, *PMESSAGE_INTERRUPT_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -87,9 +87,6 @@ Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMAT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

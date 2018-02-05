@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1ed699a3-20e5-4a1c-bce0-5a681bac9c39
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFMemory, umdf.iwdfmemory_getsize, GetSize method, wdf.iwdfmemory_getsize, IWDFMemory interface, GetSize method, GetSize, wudfddi/IWDFMemory::GetSize, GetSize method, IWDFMemory interface, IWDFMemory::GetSize, UMDFMemoryObjectRef_24a9b921-5760-41fd-8b01-6a21e6be71ed.xml
+ms.keywords : UMDFMemoryObjectRef_24a9b921-5760-41fd-8b01-6a21e6be71ed.xml, umdf.iwdfmemory_getsize, IWDFMemory, wudfddi/IWDFMemory::GetSize, wdf.iwdfmemory_getsize, IWDFMemory::GetSize, GetSize method, GetSize, GetSize method, IWDFMemory interface, IWDFMemory interface, GetSize method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -63,14 +63,12 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

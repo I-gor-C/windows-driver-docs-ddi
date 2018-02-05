@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0491AF42-53DF-4538-BE8A-AA5AA7B2C65E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure [Display Devices], d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, display.dxgk_multiplane_overlay_attributes3"
+ms.keywords : d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, display.dxgk_multiplane_overlay_attributes3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,7 +100,4 @@ Specifies the overlay plane's stretch quality, given as a value from the DXGK_MU
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

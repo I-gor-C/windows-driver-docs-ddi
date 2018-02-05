@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1d72e8e3-1053-4731-a16c-fc3e4f7460e9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_request_ref_df2bb357-d053-4f02-a828-46a72dc1fee7.xml, netvista.ndisfoidrequestcomplete, NdisFOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis/NdisFOidRequestComplete, NdisFOidRequestComplete
+ms.keywords : netvista.ndisfoidrequestcomplete, NdisFOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis_request_ref_df2bb357-d053-4f02-a828-46a72dc1fee7.xml, NdisFOidRequestComplete, ndis/NdisFOidRequestComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,20 +94,18 @@ If an overlying driver originated the OID request, NDIS calls the request comple
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_OID_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
 <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 

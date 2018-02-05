@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f4176e2d-d8d2-4e75-bccb-0c452da4d703
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, netvista.ndis_miniport_interrupt_characteristics, _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis_interrupts_structures_ref_87c0c090-a28d-4195-b73d-52e3a188a80b.xml, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis/PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+ms.keywords : NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, netvista.ndis_miniport_interrupt_characteristics, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis/PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], ndis/NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis_interrupts_structures_ref_87c0c090-a28d-4195-b73d-52e3a188a80b.xml, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,14 +35,14 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS"
+req.typenames : NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure
 An NDIS miniport driver defines its interrupt characteristics in an
   NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure and passes the structure to the 
-  <mshelp:link keywords="netvista.ndismregisterinterruptex" tabindex="0"><b>
-  NdisMRegisterInterruptEx</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
+  NdisMRegisterInterruptEx</a> function.
 
 ## Syntax
 ````
@@ -69,27 +69,27 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
 `DisableInterruptHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.miniportdisableinterruptex" tabindex="0"><i>
-     MiniportDisableInterruptEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">
+     MiniportDisableInterruptEx</a> function.
 
 `DisableMessageInterruptHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.miniportdisablemessageinterrupt" tabindex="0"><i>
-     MiniportDisableMessageInterrupt</i></mshelp:link> function, if any. If the driver does not support message signaled
+     <a href="..\ndis\nc-ndis-miniport_disable_message_interrupt.md">
+     MiniportDisableMessageInterrupt</a> function, if any. If the driver does not support message signaled
      interrupts, set this member to <b>NULL</b>.
 
 `EnableInterruptHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.miniportenableinterruptex" tabindex="0"><i>
-     MiniportEnableInterruptEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_enable_interrupt.md">
+     MiniportEnableInterruptEx</a> function.
 
 `EnableMessageInterruptHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.miniportenablemessageinterrupt" tabindex="0"><i>
-     MiniportEnableMessageInterrupt</i></mshelp:link> function, if any. If the driver does not support message-signaled
+     <a href="..\ndis\nc-ndis-miniport_enable_message_interrupt.md">
+     MiniportEnableMessageInterrupt</a> function, if any. If the driver does not support message-signaled
      interrupts, set this member to <b>NULL</b>.
 
 `Header`
@@ -128,8 +128,8 @@ A variable of type <b>NDIS_INTERRUPT_TYPE</b>. NDIS sets this variable to indica
 `MessageInfoTable`
 
 An NDIS-supplied pointer to an 
-     <mshelp:link keywords="kernel.io_interrupt_message_info" tabindex="0"><b>
-     IO_INTERRUPT_MESSAGE_INFO</b></mshelp:link> structure. 
+     <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">
+     IO_INTERRUPT_MESSAGE_INFO</a> structure. 
 <ul>
 <li>
 If 
@@ -148,15 +148,15 @@ If <b>InterruptType</b> is <b>NDIS_CONNECT_LINE_BASED</b>, <b>MessageInfoTable</
 `MessageInterruptDpcHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.miniportmessageinterruptdpc" tabindex="0"><i>
-     MiniportMessageInterruptDPC</i></mshelp:link> function, if any, that is associated with this interrupt. If the
+     <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">
+     MiniportMessageInterruptDPC</a> function, if any, that is associated with this interrupt. If the
      driver does not support message-signaled interrupts, set this member to <b>NULL</b>.
 
 `MessageInterruptHandler`
 
 The entry point for the 
-     <mshelp:link keywords="netvista.miniportmessageinterrupt" tabindex="0"><i>
-     MiniportMessageInterrupt</i></mshelp:link> function, if it exists, that is associated with this interrupt. If the
+     <a href="..\ndis\nc-ndis-miniport_message_interrupt.md">
+     MiniportMessageInterrupt</a> function, if it exists, that is associated with this interrupt. If the
      driver does not support message interrupts, set this member to <b>NULL</b>.
 
 `MsiSupported`
@@ -186,36 +186,34 @@ A miniport driver calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_message_interrupt_dpc.md">MiniportMessageInterruptDPC</a>
 
 <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
 
-<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
-
-<mshelp:link keywords="netvista.miniportenablemessageinterrupt" tabindex="0"><i>
-   MiniportEnableMessageInterrupt</i></mshelp:link>
-
 <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
 
-<mshelp:link keywords="netvista.miniportdisablemessageinterrupt" tabindex="0"><i>
-   MiniportDisableMessageInterrupt</i></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
-
-<a href="..\ndis\nc-ndis-miniport_enable_interrupt.md">MiniportEnableInterruptEx</a>
+<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 
+<a href="..\ndis\nc-ndis-miniport_enable_interrupt.md">MiniportEnableInterruptEx</a>
+
 <a href="..\ndis\nc-ndis-miniport_message_interrupt.md">MiniportMessageInterrupt</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ndis\nc-ndis-miniport_enable_message_interrupt.md">
+   MiniportEnableMessageInterrupt</a>
+
+<a href="..\ndis\nc-ndis-miniport_disable_message_interrupt.md">
+   MiniportDisableMessageInterrupt</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 54395899-c35d-4251-9e9d-ec2128b28c67
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WIAS_ENDORSER_VALUE, wiamindr_lh/PWIAS_ENDORSER_VALUE, wiamindr_lh/WIAS_ENDORSER_VALUE, WIAS_ENDORSER_VALUE structure [Imaging Devices], image.wias_endorser_value, WIAS_ENDORSER_VALUE, PWIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE, wiastrct_b6e376e1-ecfd-4988-b752-3d81755cf990.xml, PWIAS_ENDORSER_VALUE structure pointer [Imaging Devices]"
+ms.keywords : WIAS_ENDORSER_VALUE structure [Imaging Devices], PWIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE, PWIAS_ENDORSER_VALUE structure pointer [Imaging Devices], wiamindr_lh/PWIAS_ENDORSER_VALUE, wiamindr_lh/WIAS_ENDORSER_VALUE, wiastrct_b6e376e1-ecfd-4988-b752-3d81755cf990.xml, WIAS_ENDORSER_VALUE, image.wias_endorser_value, _WIAS_ENDORSER_VALUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,9 +67,7 @@ This structure is used indirectly by the <a href="..\wiamdef\nf-wiamdef-wiaspars
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 
 ## See Also

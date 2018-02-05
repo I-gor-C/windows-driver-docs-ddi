@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f6a0bff7-85b6-479a-b952-9a3a637e339e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoUnregisterFileSystem, IoUnregisterFileSystem routine [Installable File System Drivers], ifsk.iounregisterfilesystem, ntifs/IoUnregisterFileSystem, ioref_8799f64d-023b-4a67-8761-0899951596ad.xml
+ms.keywords : IoUnregisterFileSystem routine [Installable File System Drivers], ntifs/IoUnregisterFileSystem, IoUnregisterFileSystem, ifsk.iounregisterfilesystem, ioref_8799f64d-023b-4a67-8761-0899951596ad.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

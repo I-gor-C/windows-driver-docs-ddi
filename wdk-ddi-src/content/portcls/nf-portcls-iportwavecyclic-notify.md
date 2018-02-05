@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 318ba587-e34f-4f9f-bdf9-3e7c402456c5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortWaveCyclic::Notify, Notify method [Audio Devices], IPortWaveCyclic interface, portcls/IPortWaveCyclic::Notify, IPortWaveCyclic, audmp-routines_8b2252d3-100f-4e4a-b5ca-cdaf0c12834e.xml, Notify, audio.iportwavecyclic_notify, IPortWaveCyclic interface [Audio Devices], Notify method, Notify method [Audio Devices]
+ms.keywords : audmp-routines_8b2252d3-100f-4e4a-b5ca-cdaf0c12834e.xml, Notify, IPortWaveCyclic::Notify, audio.iportwavecyclic_notify, IPortWaveCyclic, portcls/IPortWaveCyclic::Notify, Notify method [Audio Devices], IPortWaveCyclic interface, IPortWaveCyclic interface [Audio Devices], Notify method, Notify method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -74,22 +74,18 @@ The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536719">IMiniportWaveCyclicStream::SetNotificationFreq</a>
+<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
-<a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536719">IMiniportWaveCyclicStream::SetNotificationFreq</a>
 
  
 

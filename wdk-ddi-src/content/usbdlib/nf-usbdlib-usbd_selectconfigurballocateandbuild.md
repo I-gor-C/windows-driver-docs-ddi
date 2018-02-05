@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2B2F721C-9201-472B-8629-352CB212235C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_SelectConfigUrbAllocateAndBuild, buses.usbd_selectconfigurballocateandbuild, USBD_SelectConfigUrbAllocateAndBuild, USBD_SelectConfigUrbAllocateAndBuild routine [Buses]
+ms.keywords : usbdlib/USBD_SelectConfigUrbAllocateAndBuild, USBD_SelectConfigUrbAllocateAndBuild routine [Buses], buses.usbd_selectconfigurballocateandbuild, USBD_SelectConfigUrbAllocateAndBuild
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -141,20 +141,17 @@ Before calling <b>USBD_SelectConfigUrbAllocateAndBuild</b>, the client driver mu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
-| **Library** |  |
+| **Library** | Usbdex.lib |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
-
 <a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
+
+<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
 
  
 

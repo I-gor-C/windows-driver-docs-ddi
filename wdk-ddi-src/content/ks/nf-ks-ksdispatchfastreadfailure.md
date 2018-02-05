@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7e0c72ce-0959-4835-ac1a-3f37869cc81f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_fe3ea42f-80ae-4fbd-a2c2-55e957e913cc.xml, stream.ksdispatchfastreadfailure, KsDispatchFastReadFailure, KsDispatchFastReadFailure function [Streaming Media Devices], ks/KsDispatchFastReadFailure
+ms.keywords : KsDispatchFastReadFailure function [Streaming Media Devices], ks/KsDispatchFastReadFailure, KsDispatchFastReadFailure, stream.ksdispatchfastreadfailure, ksfunc_fe3ea42f-80ae-4fbd-a2c2-55e957e913cc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,11 +103,6 @@ The <b>KsDispatchFastReadFailure</b> function is needed since the dispatch table
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

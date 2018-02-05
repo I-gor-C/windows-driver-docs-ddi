@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 31db285c-a7e7-4ba5-ba07-a60cfcfa9af9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMacHeaderFieldVlanId, NdisMacHeaderFieldSourceAddress, virtual_machine_queue_ref_e521f802-ada1-444a-bf43-63405f40e45a.xml, _NDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD, ntddndis/NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldProtocol, NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldPriority, ntddndis/NdisMacHeaderFieldUndefined, *PNDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldSourceAddress, netvista.ndis_mac_header_field, ntddndis/NdisMacHeaderFieldDestinationAddress, NdisMacHeaderFieldProtocol, ntddndis/NdisMacHeaderFieldPacketType, ntddndis/PNDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], NdisMacHeaderFieldPriority, NdisMacHeaderFieldMaximum, ntddndis/NdisMacHeaderFieldVlanId, NdisMacHeaderFieldDestinationAddress, ntddndis/NdisMacHeaderFieldMaximum, NdisMacHeaderFieldUndefined, NdisMacHeaderFieldPacketType, NDIS_MAC_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisMacHeaderFieldProtocol, NdisMacHeaderFieldUndefined, NdisMacHeaderFieldSourceAddress, ntddndis/NdisMacHeaderFieldProtocol, ntddndis/NdisMacHeaderFieldPriority, *PNDIS_MAC_HEADER_FIELD, NdisMacHeaderFieldPriority, ntddndis/NdisMacHeaderFieldDestinationAddress, _NDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldMaximum, ntddndis/NdisMacHeaderFieldSourceAddress, virtual_machine_queue_ref_e521f802-ada1-444a-bf43-63405f40e45a.xml, ntddndis/PNDIS_MAC_HEADER_FIELD, NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldVlanId, NdisMacHeaderFieldVlanId, ntddndis/NdisMacHeaderFieldPacketType, NdisMacHeaderFieldDestinationAddress, NdisMacHeaderFieldMaximum, ntddndis/NdisMacHeaderFieldUndefined, NdisMacHeaderFieldPacketType, netvista.ndis_mac_header_field, NDIS_MAC_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_MAC_HEADER_FIELD, *PNDIS_MAC_HEADER_FIELD
+req.typenames : "*PNDIS_MAC_HEADER_FIELD, NDIS_MAC_HEADER_FIELD"
 ---
 
 # _NDIS_MAC_HEADER_FIELD Enumeration
@@ -108,21 +108,19 @@ MAC header.</td>
 ## Remarks
 
 The NDIS_MAC_HEADER_FIELD enumeration is used in the 
-    <mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
  
 

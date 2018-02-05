@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5ffaad89-b3c0-4fe6-bc2c-2b1f3b1bcfd2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ktm_ref_72b34c92-3548-4148-94c2-49f4a66ad4bf.xml, RESOURCEMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], ResourceManagerBasicInformation, wdm/RESOURCEMANAGER_INFORMATION_CLASS, wdm/ResourceManagerBasicInformation, kernel.resourcemanager_information_class, wdm/ResourceManagerCompletionInformation, RESOURCEMANAGER_INFORMATION_CLASS, ResourceManagerCompletionInformation, _RESOURCEMANAGER_INFORMATION_CLASS
+ms.keywords : kernel.resourcemanager_information_class, wdm/RESOURCEMANAGER_INFORMATION_CLASS, ktm_ref_72b34c92-3548-4148-94c2-49f4a66ad4bf.xml, RESOURCEMANAGER_INFORMATION_CLASS, RESOURCEMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], ResourceManagerBasicInformation, ResourceManagerCompletionInformation, wdm/ResourceManagerBasicInformation, _RESOURCEMANAGER_INFORMATION_CLASS, wdm/ResourceManagerCompletionInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,16 +69,14 @@ typedef enum _RESOURCEMANAGER_INFORMATION_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_resourcemanager_completion_information.md">RESOURCEMANAGER_COMPLETION_INFORMATION</a>
-
 <a href="..\wdm\nf-wdm-zwqueryinformationresourcemanager.md">ZwQueryInformationResourceManager</a>
+
+<a href="..\wdm\ns-wdm-_resourcemanager_completion_information.md">RESOURCEMANAGER_COMPLETION_INFORMATION</a>
 
 <a href="..\wdm\ns-wdm-_resourcemanager_basic_information.md">RESOURCEMANAGER_BASIC_INFORMATION</a>
 

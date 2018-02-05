@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4D326534-2DEB-419B-9E14-D88543071ECC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongToChar function [Kernel-Mode Driver Architecture], RtlLongToChar, kernel.rtllongtochar, ntintsafe/RtlLongToChar
+ms.keywords : RtlLongToChar function [Kernel-Mode Driver Architecture], RtlLongToChar, ntintsafe/RtlLongToChar, kernel.rtllongtochar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This is one of a set of inline functions designed to provide type conversions an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

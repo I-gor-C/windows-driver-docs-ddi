@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b3585a06-fdb0-4fe9-8d5c-63680039a789
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx11param_Structs_49ef78b9-8a6f-4b67-bf2f-bae79086b6c7.xml, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW, display.d3d11ddiarg_bufferex_shaderresourceview, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure [Display Devices], d3d10umddi/D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
+ms.keywords : display.d3d11ddiarg_bufferex_shaderresourceview, d3d10umddi/D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_49ef78b9-8a6f-4b67-bf2f-bae79086b6c7.xml, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,9 +67,7 @@ typedef struct D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW is supported beginning with the Windows 7 operating system. D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

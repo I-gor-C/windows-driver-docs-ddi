@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7bdfc781-93d6-4f49-95f1-46f102908ec5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlguidfromstring, wdm/RtlGUIDFromString, k109_d6fe22b7-9d81-4024-819c-03bce65d3d14.xml, RtlGUIDFromString routine [Kernel-Mode Driver Architecture], RtlGUIDFromString
+ms.keywords : kernel.rtlguidfromstring, RtlGUIDFromString routine [Kernel-Mode Driver Architecture], RtlGUIDFromString, k109_d6fe22b7-9d81-4024-819c-03bce65d3d14.xml, wdm/RtlGUIDFromString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ If the conversion succeeds, <b>RtlGUIDFromString</b> returns STATUS_SUCCESS. Oth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

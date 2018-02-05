@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : de1049a8-e089-4d15-baca-2c760f895894
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSENDMSGPARAMS, ntddrilapitypes/RILSENDMSGPARAMS, netvista.rilsendmsgparams, *LPRILSENDMSGPARAMS, RILSENDMSGPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILSENDMSGPARAMS, RILSENDMSGPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILSENDMSGPARAMS, netvista.rilsendmsgparams, ntddrilapitypes/RILSENDMSGPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ typedef struct _RILSENDMSGPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

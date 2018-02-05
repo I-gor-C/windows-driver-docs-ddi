@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 774acafb-c929-483a-82b0-2a358054dc7f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SendLIRR_IN structure [Storage Devices], hbapiwmi/PSendLIRR_IN, PSendLIRR_IN structure pointer [Storage Devices], storage.sendlirr_in, PSendLIRR_IN, _SendLIRR_IN, *PSendLIRR_IN, SendLIRR_IN, structs-Fibre_6f0fd3c1-9eb5-4042-b12e-8dd225d966b1.xml, hbapiwmi/SendLIRR_IN
+ms.keywords : PSendLIRR_IN structure pointer [Storage Devices], _SendLIRR_IN, hbapiwmi/SendLIRR_IN, hbapiwmi/PSendLIRR_IN, PSendLIRR_IN, storage.sendlirr_in, *PSendLIRR_IN, structs-Fibre_6f0fd3c1-9eb5-4042-b12e-8dd225d966b1.xml, SendLIRR_IN structure [Storage Devices], SendLIRR_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSendLIRR_IN, SendLIRR_IN"
+req.typenames : SendLIRR_IN, *PSendLIRR_IN
 ---
 
 # _SendLIRR_IN structure
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the SendLIRR_IN structure in <i>Hb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

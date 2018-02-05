@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : aa027f03-7d74-4c0e-8f62-d53f41ae86ae
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PowerSystemShutdown, PowerSystemUnspecified, sysenum_32377b1c-a5d3-491b-aebd-ee3d40798f73.xml, wdm/PowerSystemSleeping2, _SYSTEM_POWER_STATE, PowerSystemSleeping1, PowerSystemSleeping2, wdm/PowerSystemUnspecified, wdm/PowerSystemMaximum, wdm/PowerSystemSleeping3, kernel.system_power_state, SYSTEM_POWER_STATE enumeration [Kernel-Mode Driver Architecture], PowerSystemWorking, PSYSTEM_POWER_STATE enumeration pointer [Kernel-Mode Driver Architecture], *PSYSTEM_POWER_STATE, wdm/SYSTEM_POWER_STATE, PowerSystemSleeping3, wdm/PowerSystemWorking, wdm/PowerSystemHibernate, SYSTEM_POWER_STATE, PowerSystemHibernate, wdm/PowerSystemSleeping1, PowerSystemShutdown, PowerSystemMaximum, PSYSTEM_POWER_STATE, wdm/PSYSTEM_POWER_STATE
+ms.keywords : "*PSYSTEM_POWER_STATE, PSYSTEM_POWER_STATE, PowerSystemSleeping1, wdm/PowerSystemShutdown, _SYSTEM_POWER_STATE, wdm/PowerSystemSleeping1, PowerSystemSleeping2, PowerSystemSleeping3, PowerSystemShutdown, PowerSystemUnspecified, wdm/PowerSystemSleeping3, wdm/PowerSystemSleeping2, kernel.system_power_state, wdm/PowerSystemHibernate, wdm/PowerSystemMaximum, PowerSystemWorking, SYSTEM_POWER_STATE, wdm/PSYSTEM_POWER_STATE, SYSTEM_POWER_STATE enumeration [Kernel-Mode Driver Architecture], PSYSTEM_POWER_STATE enumeration pointer [Kernel-Mode Driver Architecture], wdm/PowerSystemWorking, wdm/PowerSystemUnspecified, PowerSystemHibernate, PowerSystemMaximum, sysenum_32377b1c-a5d3-491b-aebd-ee3d40798f73.xml, wdm/SYSTEM_POWER_STATE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYSTEM_POWER_STATE, SYSTEM_POWER_STATE"
+req.typenames : SYSTEM_POWER_STATE, *PSYSTEM_POWER_STATE
 req.product : Windows 10 or later.
 ---
 
@@ -112,9 +112,6 @@ For more information about power management in general, see <a href="https://msd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

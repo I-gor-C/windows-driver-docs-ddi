@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9a23fae8-7142-48a1-871e-1fa3a6d8e112
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_sendflash, rilapi/RIL_SendFlash, RIL_SendFlash method [Network Drivers Starting with Windows Vista], RIL_SendFlash
+ms.keywords : rilapi/RIL_SendFlash, netvista.ril_sendflash, RIL_SendFlash, RIL_SendFlash method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

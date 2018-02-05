@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4863fe31-2c89-47af-99ed-02055e67621d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatemdl, NdisAllocateMdl, ndis/NdisAllocateMdl, NdisAllocateMdl function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_73b9ab32-14a8-4441-a057-c6fe91ddfb43.xml
+ms.keywords : ndis/NdisAllocateMdl, netvista.ndisallocatemdl, NdisAllocateMdl function [Network Drivers Starting with Windows Vista], NdisAllocateMdl, ndis_netbuf_functions_ref_73b9ab32-14a8-4441-a057-c6fe91ddfb43.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,30 +96,28 @@ All MDLs that are allocated by calling
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function, NdisAllocateMdl |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
-
-<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
-
 <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
-
-<a href="..\ndis\nf-ndis-ndisfreemdl.md">NdisFreeMdl</a>
 
 <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">NdisAllocateMemoryWithTagPriority</a>
 
-<a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a>
+<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
+
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
 <a href="..\wdm\nf-wdm-exallocatepool.md">ExAllocatePool</a>
+
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a>
+
+<a href="..\ndis\nf-ndis-ndisfreemdl.md">NdisFreeMdl</a>
 
  
 

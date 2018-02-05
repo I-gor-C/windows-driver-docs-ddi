@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 661e70c6-d99e-4c5a-ad88-3dd854747de4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, display.d3dkmdt_vidpn_present_path_copyprotection, _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, DmStructs_512b61d6-627d-4423-93ba-0f28ac340e51.xml, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure [Display Devices], D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
+ms.keywords : "_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, DmStructs_512b61d6-627d-4423-93ba-0f28ac340e51.xml, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure [Display Devices], display.d3dkmdt_vidpn_present_path_copyprotection, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,5 @@ The <b>CopyProtection</b> member of the  <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |

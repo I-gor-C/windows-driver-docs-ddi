@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : DAE22E2C-E8A9-4FF0-B9E9-D652C4E7B0B8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : DEBUG_LAST_EVENT_INFO_BREAKPOINT, PDEBUG_LAST_EVENT_INFO_BREAKPOINT structure pointer [Windows Debugging], *PDEBUG_LAST_EVENT_INFO_BREAKPOINT, debugger.debug_last_event_info_breakpoint, dbgeng/DEBUG_LAST_EVENT_INFO_BREAKPOINT, PDEBUG_LAST_EVENT_INFO_BREAKPOINT, DEBUG_LAST_EVENT_INFO_BREAKPOINT structure [Windows Debugging], _DEBUG_LAST_EVENT_INFO_BREAKPOINT, dbgeng/PDEBUG_LAST_EVENT_INFO_BREAKPOINT
+ms.keywords : DEBUG_LAST_EVENT_INFO_BREAKPOINT, DEBUG_LAST_EVENT_INFO_BREAKPOINT structure [Windows Debugging], debugger.debug_last_event_info_breakpoint, PDEBUG_LAST_EVENT_INFO_BREAKPOINT, _DEBUG_LAST_EVENT_INFO_BREAKPOINT, PDEBUG_LAST_EVENT_INFO_BREAKPOINT structure pointer [Windows Debugging], *PDEBUG_LAST_EVENT_INFO_BREAKPOINT, dbgeng/PDEBUG_LAST_EVENT_INFO_BREAKPOINT, dbgeng/DEBUG_LAST_EVENT_INFO_BREAKPOINT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEBUG_LAST_EVENT_INFO_BREAKPOINT, DEBUG_LAST_EVENT_INFO_BREAKPOINT"
+req.typenames : DEBUG_LAST_EVENT_INFO_BREAKPOINT, *PDEBUG_LAST_EVENT_INFO_BREAKPOINT
 ---
 
 # _DEBUG_LAST_EVENT_INFO_BREAKPOINT structure
@@ -59,7 +59,4 @@ The ID of the breakpoint.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dbgeng.h (include DbgEng.h) |

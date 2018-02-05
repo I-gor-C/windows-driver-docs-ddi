@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 9a129ce5-4493-4838-9a6c-8a3c054e7c27
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], AppendImagePathWide method, dbgeng/IDebugSymbols3::AppendImagePathWide, AppendImagePathWide method [Windows Debugging], IDebugSymbols3 interface, AppendImagePathWide method [Windows Debugging], AppendImagePathWide, IDebugSymbols3::AppendImagePathWide, IDebugSymbols3, debugger.appendimagepathwide
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], AppendImagePathWide method, IDebugSymbols3::AppendImagePathWide, AppendImagePathWide, AppendImagePathWide method [Windows Debugging], AppendImagePathWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AppendImagePathWide, debugger.appendimagepathwide, IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,22 +88,17 @@ The executable image path can consist of several directories separated by semico
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546851">GetImagePath</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556708">SetImagePath</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546851">GetImagePath</a>
 
  
 

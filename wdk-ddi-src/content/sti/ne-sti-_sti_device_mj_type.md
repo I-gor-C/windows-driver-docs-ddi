@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : f5ab3aa3-c24e-4716-b94a-525c6b6776dc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : sti/StiDeviceTypeScanner, STI_DEVICE_TYPE enumeration [Imaging Devices], sti/StiDeviceTypeStreamingVideo, STI_DEVICE_MJ_TYPE, STI_DEVICE_TYPE, stifnc_1cbf2c9f-0c97-439a-8503-c07c68b7d947.xml, StiDeviceTypeDigitalCamera, StiDeviceTypeScanner, STI_DEVICE_MJ_TYPE enumeration [Imaging Devices], sti/StiDeviceTypeDefault, StiDeviceTypeDefault, sti/StiDeviceTypeDigitalCamera, StiDeviceTypeStreamingVideo, sti/STI_DEVICE_TYPE, _STI_DEVICE_MJ_TYPE, image.sti_device_type
+ms.keywords : STI_DEVICE_MJ_TYPE enumeration [Imaging Devices], sti/StiDeviceTypeStreamingVideo, STI_DEVICE_MJ_TYPE, sti/STI_DEVICE_TYPE, _STI_DEVICE_MJ_TYPE, StiDeviceTypeDigitalCamera, STI_DEVICE_TYPE, image.sti_device_type, StiDeviceTypeDefault, sti/StiDeviceTypeDigitalCamera, STI_DEVICE_TYPE enumeration [Imaging Devices], sti/StiDeviceTypeScanner, sti/StiDeviceTypeDefault, StiDeviceTypeStreamingVideo, StiDeviceTypeScanner, stifnc_1cbf2c9f-0c97-439a-8503-c07c68b7d947.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ GET_STIDEVICE_SUBTYPE(dwDevType)</pre>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sti.h (include Sti.h) |

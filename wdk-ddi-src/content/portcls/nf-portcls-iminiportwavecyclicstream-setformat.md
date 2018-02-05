@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6881ea55-138a-408e-955e-c5c74f777ce8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, IMiniportWaveCyclicStream interface [Audio Devices], SetFormat method, SetFormat, audio.iminiportwavecyclicstream_setformat, IMiniportWaveCyclicStream::SetFormat, SetFormat method [Audio Devices], IMiniportWaveCyclicStream interface, audmp-routines_d23a09d4-7110-425f-b10d-5f7f601179bb.xml, portcls/IMiniportWaveCyclicStream::SetFormat, SetFormat method [Audio Devices]
+ms.keywords : SetFormat method [Audio Devices], IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream, IMiniportWaveCyclicStream interface [Audio Devices], SetFormat method, IMiniportWaveCyclicStream::SetFormat, audmp-routines_d23a09d4-7110-425f-b10d-5f7f601179bb.xml, SetFormat, audio.iminiportwavecyclicstream_setformat, portcls/IMiniportWaveCyclicStream::SetFormat, SetFormat method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,14 +70,10 @@ For information about specifying wave stream formats, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

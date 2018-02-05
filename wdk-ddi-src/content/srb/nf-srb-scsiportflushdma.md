@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9cf4286b-1ff7-4113-a2dc-d8813c633dd6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsiprt_3c2fc1a8-0f37-4735-a9b8-dcec220ee5bf.xml, storage.scsiportflushdma, srb/ScsiPortFlushDma, ScsiPortFlushDma, ScsiPortFlushDma routine [Storage Devices]
+ms.keywords : scsiprt_3c2fc1a8-0f37-4735-a9b8-dcec220ee5bf.xml, srb/ScsiPortFlushDma, ScsiPortFlushDma routine [Storage Devices], storage.scsiportflushdma, ScsiPortFlushDma
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -74,20 +74,15 @@ Only miniport drivers of subordinate HBAs that use a system DMA controller call 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a>
+
+<a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a>
 
  
 

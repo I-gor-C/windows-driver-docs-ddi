@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d1a4aba3-9567-4d8e-980c-f6a85f54870e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, IDebugControl2 interface [Windows Debugging], ControlledOutput method, dbgeng/IDebugControl2::ControlledOutput, IDebugControl::ControlledOutput, IDebugControl_b35fb81f-3425-4a39-8c80-b6e8a161ba71.xml, IDebugControl interface [Windows Debugging], ControlledOutput method, ControlledOutput method [Windows Debugging], IDebugControl2 interface, ControlledOutput, debugger.controlledoutput, ControlledOutput method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], ControlledOutput method, IDebugControl3::ControlledOutput, ControlledOutput method [Windows Debugging], IDebugControl2::ControlledOutput, ControlledOutput method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::ControlledOutput, dbgeng/IDebugControl::ControlledOutput
+ms.keywords : IDebugControl::ControlledOutput, dbgeng/IDebugControl3::ControlledOutput, IDebugControl2::ControlledOutput, ControlledOutput method [Windows Debugging], ControlledOutput method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], ControlledOutput method, IDebugControl2 interface [Windows Debugging], ControlledOutput method, IDebugControl3 interface [Windows Debugging], ControlledOutput method, IDebugControl3::ControlledOutput, dbgeng/IDebugControl2::ControlledOutput, IDebugControl3, ControlledOutput, IDebugControl_b35fb81f-3425-4a39-8c80-b6e8a161ba71.xml, debugger.controlledoutput, ControlledOutput method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::ControlledOutput, ControlledOutput method [Windows Debugging], IDebugControl2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -401,7 +401,7 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 </tr>
 </table></span></div>
 
-``
+`Arg1`
 
 
 
@@ -434,30 +434,25 @@ When generating very large output strings, it is possible to reach the limits of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
-
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564716">.printf</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553183">Output</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564716">.printf</a>
+
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
 
  
 

@@ -77,11 +77,11 @@ The size of <b>FirmwareBlob</b>, in bytes.
 
 `*FirmwareBlob`
 
-
+A pointer to the buffer that  will contain the hardware control registry states, and optionally full firmware state.
 
 `*pOutputSize`
 
-
+A pointer to the number of bytes written to <b>FirmwareBlob</b>.
 
 
 ## Return Value
@@ -93,22 +93,17 @@ The return value is ignored.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | dot11wdi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 
 <a href="..\dot11wdi\ne-dot11wdi-ediagnoselevel.md">eDiagnoseLevel</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/wdi-hang-detection-and-recovery">WDI hang detection and recovery</a>
+
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f071569f-fa99-4614-96a7-edf73a85d96a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY structure [Network Drivers Starting with Windows Vista], virtual_machine_queue_ref_2b5d6225-cfe9-4ed0-8a4b-02135f4b37c8.xml, _NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, netvista.ndis_receive_queue_allocation_complete_array, ntddndis/NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, ntddndis/PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY
+ms.keywords : NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, _NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, *PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY, PNDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_queue_allocation_complete_array, virtual_machine_queue_ref_2b5d6225-cfe9-4ed0-8a4b-02135f4b37c8.xml, ntddndis/NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,8 +62,8 @@ A <b>ULONG</b> value that specifies the size, in bytes, of each element in the a
 
 `FirstElementOffset`
 
-A ULONG value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <mshelp:link keywords="netvista.ndis_receive_queue_allocation_complete_parameters" tabindex="0"><b>
-     NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_PARAMETERS</b></mshelp:link> structure.
+A ULONG value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_allocation_complete_parameters.md">
+     NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_PARAMETERS</a> structure.
 
 
 <div class="alert"><b>Note</b>  If <b>NumElements</b> is set to zero, this member is ignored.  </div><div> </div>
@@ -89,28 +89,26 @@ A <b>ULONG</b> value for the number of elements in the list of elements that fol
 
 ## Remarks
 The <b>NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_ARRAY</b> structure is used in the 
-    <mshelp:link keywords="netvista.oid_receive_filter_queue_allocation_complete" tabindex="0">
-    OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</mshelp:link> OID.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete">
+    OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</a> OID.
 
 Each element in the array that follows this structure is an 
-    <mshelp:link keywords="netvista.ndis_receive_queue_allocation_complete_parameters" tabindex="0"><b>
-    NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_PARAMETERS</b></mshelp:link> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_allocation_complete_parameters.md">
+    NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_PARAMETERS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.oid_receive_filter_queue_allocation_complete" tabindex="0">
-   OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_allocation_complete_parameters.md">
+   NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_PARAMETERS</a>
 
-<mshelp:link keywords="netvista.ndis_receive_queue_allocation_complete_parameters" tabindex="0"><b>
-   NDIS_RECEIVE_QUEUE_ALLOCATION_COMPLETE_PARAMETERS</b></mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete">
+   OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

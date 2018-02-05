@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 53270599-7e8e-491a-8d7b-05f550f100d3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_c8fea131-5f84-4f77-ab18-2ca8de12e598.xml, video/VideoPortReadRegisterUchar, VideoPortReadRegisterUchar, display.videoportreadregisteruchar, VideoPortReadRegisterUchar function [Display Devices]
+ms.keywords : display.videoportreadregisteruchar, VideoPortReadRegisterUchar, video/VideoPortReadRegisterUchar, VideoPortReadRegisterUchar function [Display Devices], VideoPort_Functions_c8fea131-5f84-4f77-ab18-2ca8de12e598.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,22 +71,20 @@ Callers of <b>VideoPortReadRegisterUchar</b> can be running at any IRQL, provide
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
 
-<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : F35F80E7-E1B6-4219-96AF-687E0014CCB3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdmatransaction/WdfDmaTransactionFreeResources, kmdf.wdfdmatransactionfreeresources, WdfDmaTransactionFreeResources, WdfDmaTransactionFreeResources method, wdf.wdfdmatransactionfreeresources, PFN_WDFDMATRANSACTIONFREERESOURCES
+ms.keywords : kmdf.wdfdmatransactionfreeresources, PFN_WDFDMATRANSACTIONFREERESOURCES, wdfdmatransaction/WdfDmaTransactionFreeResources, WdfDmaTransactionFreeResources, wdf.wdfdmatransactionfreeresources, WdfDmaTransactionFreeResources method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,12 +81,10 @@ For more information about system-mode DMA, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 12bbc77b-c1cd-4899-aff2-e18e0d58b6b9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdffdoqueryforinterface, wdffdo/WdfFdoQueryForInterface, WdfFdoQueryForInterface method, wdf.wdffdoqueryforinterface, WdfFdoQueryForInterface, DFDeviceObjectFdoPdoRef_949fcc50-3604-4970-9516-666da06e3c9e.xml, PFN_WDFFDOQUERYFORINTERFACE
+ms.keywords : wdf.wdffdoqueryforinterface, WdfFdoQueryForInterface method, DFDeviceObjectFdoPdoRef_949fcc50-3604-4970-9516-666da06e3c9e.xml, kmdf.wdffdoqueryforinterface, PFN_WDFFDOQUERYFORINTERFACE, WdfFdoQueryForInterface, wdffdo/WdfFdoQueryForInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -133,12 +133,10 @@ For more information about <b>WdfFdoQueryForInterface</b>, see <a href="https://
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

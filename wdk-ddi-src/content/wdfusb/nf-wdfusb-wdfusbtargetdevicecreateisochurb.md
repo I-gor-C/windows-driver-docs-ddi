@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2D25A276-A367-4E59-9CA0-4F480675DD77
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceCreateIsochUrb method, wdfusb/WdfUsbTargetDeviceCreateIsochUrb, kmdf.wdfusbtargetdevicecreateisochurb, PFN_WDFUSBTARGETDEVICECREATEISOCHURB, wdf.wdfusbtargetdevicecreateisochurb, WdfUsbTargetDeviceCreateIsochUrb
+ms.keywords : WdfUsbTargetDeviceCreateIsochUrb method, kmdf.wdfusbtargetdevicecreateisochurb, wdf.wdfusbtargetdevicecreateisochurb, PFN_WDFUSBTARGETDEVICECREATEISOCHURB, wdfusb/WdfUsbTargetDeviceCreateIsochUrb, WdfUsbTargetDeviceCreateIsochUrb
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -142,20 +142,19 @@ For related information, see the Remarks section of <a href="..\wdfusb\nf-wdfusb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows Vista Windows Vista |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateurb.md">WdfUsbTargetDeviceCreateUrb</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2a662b6-6a16-4e63-b5a8-5701a7180f60
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTGetContextInProcessSchedulingPriority function [Display Devices], d3dkmthk/D3DKMTGetContextInProcessSchedulingPriority, D3DKMTGetContextInProcessSchedulingPriority, display.d3dkmtgetcontextinprocessschedulingpriority
+ms.keywords : D3DKMTGetContextInProcessSchedulingPriority, display.d3dkmtgetcontextinprocessschedulingpriority, D3DKMTGetContextInProcessSchedulingPriority function [Display Devices], d3dkmthk/D3DKMTGetContextInProcessSchedulingPriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,20 +92,16 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetcontextinprocessschedulingpriority.md">D3DKMTSetContextInProcessSchedulingPriority</a>
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getcontextinprocessschedulingpriority.md">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetcontextinprocessschedulingpriority.md">D3DKMTSetContextInProcessSchedulingPriority</a>
 
  
 

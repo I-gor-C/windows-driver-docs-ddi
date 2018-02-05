@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bf66a04d-0892-4813-9615-845054526125
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storertns-general_86f18b5a-ed33-48e8-b13c-76bd2422418d.xml, CompareStorageDuids routine [Storage Devices], storduid/CompareStorageDuids, storage.comparestorageduids, CompareStorageDuids
+ms.keywords : CompareStorageDuids, CompareStorageDuids routine [Storage Devices], storertns-general_86f18b5a-ed33-48e8-b13c-76bd2422418d.xml, storduid/CompareStorageDuids, storage.comparestorageduids
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,9 @@ A pointer to a DUID to compare with the DUID that <i>Duid1</i> points to.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | storduid.h (include Storduid.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

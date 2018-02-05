@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f3fdb436-53b6-4fb3-8746-1f852f7d928a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-disk_6ea56db7-c886-43f2-b9ed-24b0f7e1cb6e.xml, _DISK_SIGNATURE, ntddk/PDISK_SIGNATURE, *PDISK_SIGNATURE, storage.disk_signature, DISK_SIGNATURE structure [Storage Devices], ntddk/DISK_SIGNATURE, PDISK_SIGNATURE structure pointer [Storage Devices], DISK_SIGNATURE, PDISK_SIGNATURE
+ms.keywords : DISK_SIGNATURE, *PDISK_SIGNATURE, PDISK_SIGNATURE, structs-disk_6ea56db7-c886-43f2-b9ed-24b0f7e1cb6e.xml, DISK_SIGNATURE structure [Storage Devices], PDISK_SIGNATURE structure pointer [Storage Devices], storage.disk_signature, ntddk/DISK_SIGNATURE, ntddk/PDISK_SIGNATURE, _DISK_SIGNATURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,7 @@ Specifies the type of partition.  See <a href="https://msdn.microsoft.com/librar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is only available on Windows XP and later. This structure is only available on Windows XP and later. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7fcb0b87-1f9e-4956-a59a-cd83fa04e5db
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_4e238073-ca54-4da3-afcc-4b45e4da243f.xml, AddConnectionToSession_IN, storage.addconnectiontosession_in, PAddConnectionToSession_IN structure pointer [Storage Devices], _AddConnectionToSession_IN, *PAddConnectionToSession_IN, AddConnectionToSession_IN structure [Storage Devices], iscsiop/PAddConnectionToSession_IN, PAddConnectionToSession_IN, iscsiop/AddConnectionToSession_IN
+ms.keywords : storage.addconnectiontosession_in, structs-iSCSI_4e238073-ca54-4da3-afcc-4b45e4da243f.xml, _AddConnectionToSession_IN, PAddConnectionToSession_IN, AddConnectionToSession_IN structure [Storage Devices], *PAddConnectionToSession_IN, PAddConnectionToSession_IN structure pointer [Storage Devices], iscsiop/PAddConnectionToSession_IN, AddConnectionToSession_IN, iscsiop/AddConnectionToSession_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : AddConnectionToSession_IN, *PAddConnectionToSession_IN
+req.typenames : "*PAddConnectionToSession_IN, AddConnectionToSession_IN"
 ---
 
 # _AddConnectionToSession_IN structure
@@ -106,26 +106,23 @@ The iSCSI service requires this method. It is optional that you implement this m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
+
+<a href="..\iscsiop\ns-iscsiop-_addconnectiontosession_out.md">AddConnectionToSession_OUT</a>
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a>
 
-<a href="..\iscsiop\ns-iscsiop-_addconnectiontosession_out.md">AddConnectionToSession_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 
  
 

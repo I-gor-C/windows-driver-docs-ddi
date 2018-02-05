@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0153ee1d-93b3-497c-9fbf-e285c3730f72
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetEventIndexDescriptionWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetEventIndexDescriptionWide, GetEventIndexDescriptionWide method [Windows Debugging], debugger.geteventindexdescriptionwide, IDebugControl4, GetEventIndexDescriptionWide, IDebugControl4 interface [Windows Debugging], GetEventIndexDescriptionWide method, IDebugControl4::GetEventIndexDescriptionWide
+ms.keywords : GetEventIndexDescriptionWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetEventIndexDescriptionWide, IDebugControl4 interface [Windows Debugging], GetEventIndexDescriptionWide method, IDebugControl4::GetEventIndexDescriptionWide, GetEventIndexDescriptionWide, debugger.geteventindexdescriptionwide, IDebugControl4, GetEventIndexDescriptionWide method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -105,22 +105,17 @@ The amount of descriptive information available for a particular target varies d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547906">GetNumberEvents</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
 
  
 

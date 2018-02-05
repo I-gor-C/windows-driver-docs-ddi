@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 40A057F7-AC9B-4F16-8FE2-490CEECAB523
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SetInt32 method [Print Devices], IPrinterScriptablePropertyBag interface, printerextension/IPrinterScriptablePropertyBag::SetInt32, SetInt32 method [Print Devices], print.iprinterscriptablepropertybag_setint32, IPrinterScriptablePropertyBag interface [Print Devices], SetInt32 method, IPrinterScriptablePropertyBag::SetInt32, IPrinterScriptablePropertyBag, SetInt32
+ms.keywords : IPrinterScriptablePropertyBag interface [Print Devices], SetInt32 method, IPrinterScriptablePropertyBag, SetInt32 method [Print Devices], SetInt32 method [Print Devices], IPrinterScriptablePropertyBag interface, print.iprinterscriptablepropertybag_setint32, IPrinterScriptablePropertyBag::SetInt32, printerextension/IPrinterScriptablePropertyBag::SetInt32, SetInt32
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,14 +74,10 @@ A call to <b>SetInt32</b> will throw an exception, if the specified property is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

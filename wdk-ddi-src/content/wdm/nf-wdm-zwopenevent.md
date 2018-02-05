@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1facaf24-ed94-4516-b9d6-bdcd8ac4b9e9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ZwOpenEvent, ZwOpenEvent routine [Kernel-Mode Driver Architecture], k111_b2349294-0e16-43ef-95cb-eecd213374b6.xml, kernel.zwopenevent, NtOpenEvent, wdm/NtOpenEvent, ZwOpenEvent
+ms.keywords : k111_b2349294-0e16-43ef-95cb-eecd213374b6.xml, ZwOpenEvent routine [Kernel-Mode Driver Architecture], kernel.zwopenevent, NtOpenEvent, wdm/NtOpenEvent, wdm/ZwOpenEvent, ZwOpenEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -187,42 +187,41 @@ Notification events can be used to notify one or more threads of execution that 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Server 2003. Available starting with Windows Server 2003. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
 <a href="..\ntifs\nf-ntifs-zwsetevent.md">ZwSetEvent</a>
 
+<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
+
+<a href="..\wdm\nf-wdm-iocreatesynchronizationevent.md">IoCreateSynchronizationEvent</a>
+
 <a href="..\ntifs\nf-ntifs-zwcreateevent.md">ZwCreateEvent</a>
+
+<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
 
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
-<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-
-<a href="..\wdm\nf-wdm-iocreatesynchronizationevent.md">IoCreateSynchronizationEvent</a>
+<a href="..\ntifs\nf-ntifs-zwwaitforsingleobject.md">ZwWaitForSingleObject</a>
 
 <a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
 
 <a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
 
-<a href="..\ntifs\nf-ntifs-zwwaitforsingleobject.md">ZwWaitForSingleObject</a>
-
-<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

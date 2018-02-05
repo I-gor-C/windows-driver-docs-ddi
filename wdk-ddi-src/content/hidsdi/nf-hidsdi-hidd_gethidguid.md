@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 552b607e-65c7-4595-9adb-b9c2f4301afd
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.hidd_gethidguid, hidfunc_61242b6f-b794-48c7-84b8-ef8d0d4e69af.xml, HidD_GetHidGuid, HidD_GetHidGuid routine [Human Input Devices], hidsdi/HidD_GetHidGuid
+ms.keywords : HidD_GetHidGuid, hidfunc_61242b6f-b794-48c7-84b8-ef8d0d4e69af.xml, hid.hidd_gethidguid, hidsdi/HidD_GetHidGuid, HidD_GetHidGuid routine [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidsdi.h (include Hidsdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hid.lib |
+| **DLL** | Hid.dll |
 
 ## See Also
 

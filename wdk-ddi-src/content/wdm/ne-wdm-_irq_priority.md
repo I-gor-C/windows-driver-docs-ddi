@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1dee65e7-27fb-4665-82e2-d7cb3c223f87
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IrqPriorityLow, IrqPriorityNormal, kernel.irq_priority, wdm/PIRQ_PRIORITY, IrqPriorityLow, IrqPriorityHigh, PIRQ_PRIORITY, wdm/IRQ_PRIORITY, wdm/IrqPriorityUndefined, wdm/IrqPriorityNormal, *PIRQ_PRIORITY, IrqPriorityUndefined, _IRQ_PRIORITY, PIRQ_PRIORITY enumeration pointer [Kernel-Mode Driver Architecture], sysenum_a5a51a77-ee9c-4e74-9ee4-b097eb361c18.xml, IRQ_PRIORITY enumeration [Kernel-Mode Driver Architecture], IRQ_PRIORITY, wdm/IrqPriorityHigh
+ms.keywords : IRQ_PRIORITY enumeration [Kernel-Mode Driver Architecture], IrqPriorityNormal, PIRQ_PRIORITY, IrqPriorityUndefined, IrqPriorityLow, IrqPriorityHigh, PIRQ_PRIORITY enumeration pointer [Kernel-Mode Driver Architecture], wdm/PIRQ_PRIORITY, wdm/IrqPriorityLow, wdm/IrqPriorityHigh, sysenum_a5a51a77-ee9c-4e74-9ee4-b097eb361c18.xml, kernel.irq_priority, *PIRQ_PRIORITY, wdm/IrqPriorityNormal, _IRQ_PRIORITY, IRQ_PRIORITY, wdm/IRQ_PRIORITY, wdm/IrqPriorityUndefined
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -84,9 +84,6 @@ The system uses <b>IRQ_PRIORITY</b> to assign IRQLs for devices. For example, it
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

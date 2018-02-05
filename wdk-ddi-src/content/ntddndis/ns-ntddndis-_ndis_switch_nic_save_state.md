@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : FBC2EE79-9D36-4CA9-A7BC-9C422DE51B13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_SWITCH_NIC_SAVE_STATE structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_nic_save_state, ntddndis/NDIS_SWITCH_NIC_SAVE_STATE, PNDIS_SWITCH_NIC_SAVE_STATE, PNDIS_SWITCH_NIC_SAVE_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_SAVE_STATE, ntddndis/PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE, *PNDIS_SWITCH_NIC_SAVE_STATE
+ms.keywords : PNDIS_SWITCH_NIC_SAVE_STATE, netvista.ndis_switch_nic_save_state, ntddndis/NDIS_SWITCH_NIC_SAVE_STATE, PNDIS_SWITCH_NIC_SAVE_STATE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE structure [Network Drivers Starting with Windows Vista], NDIS_SWITCH_NIC_SAVE_STATE, ntddndis/PNDIS_SWITCH_NIC_SAVE_STATE, _NDIS_SWITCH_NIC_SAVE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE"
+req.typenames : NDIS_SWITCH_NIC_SAVE_STATE, *PNDIS_SWITCH_NIC_SAVE_STATE
 ---
 
 # _NDIS_SWITCH_NIC_SAVE_STATE structure
@@ -146,22 +146,20 @@ The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure is used in the following OID req
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h, Fwpsk.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598268">OID_SWITCH_NIC_SAVE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598269">OID_SWITCH_NIC_SAVE_COMPLETE</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598267">OID_SWITCH_NIC_RESTORE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451419">IF_COUNTED_STRING</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598269">OID_SWITCH_NIC_SAVE_COMPLETE</a>
 
 <b></b>
 

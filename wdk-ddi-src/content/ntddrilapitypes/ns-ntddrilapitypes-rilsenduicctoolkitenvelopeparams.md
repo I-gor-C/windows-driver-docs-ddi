@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : df1ce4d6-e335-4ffa-8e37-85221eb57521
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSENDUICCTOOLKITENVELOPEPARAMS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS, netvista.rilsenduicctoolkitenvelopeparams
+ms.keywords : netvista.rilsenduicctoolkitenvelopeparams, *LPRILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILSENDUICCTOOLKITENVELOPEPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS
+req.typenames : "*LPRILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS"
 ---
 
 # RILSENDUICCTOOLKITENVELOPEPARAMS structure
@@ -69,7 +69,4 @@ typedef struct _RILSENDUICCTOOLKITENVELOPEPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

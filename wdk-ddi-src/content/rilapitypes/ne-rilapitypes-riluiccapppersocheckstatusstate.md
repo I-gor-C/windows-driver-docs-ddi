@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 389c20de-7ff2-47c6-8393-529e401e56e0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILUICCAPPPERSOCHECKSTATUSSTATE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PERSOCHECKSTATE_PASS, rilapitypes/RILUICCAPPPERSOCHECKSTATUSSTATE, RIL_PERSOCHECKSTATE_FAIL, rilapitypes/RIL_PERSOCHECKSTATE_FAIL, RILUICCAPPPERSOCHECKSTATUSSTATE, rilapitypes/RIL_PERSOCHECKSTATE_MAX, netvista.riluiccapppersocheckstatusstate_2, RIL_PERSOCHECKSTATE_MAX, RIL_PERSOCHECKSTATE_PASS
+ms.keywords : rilapitypes/RILUICCAPPPERSOCHECKSTATUSSTATE, RIL_PERSOCHECKSTATE_MAX, netvista.riluiccapppersocheckstatusstate_2, RIL_PERSOCHECKSTATE_FAIL, rilapitypes/RIL_PERSOCHECKSTATE_PASS, RIL_PERSOCHECKSTATE_PASS, rilapitypes/RIL_PERSOCHECKSTATE_MAX, rilapitypes/RIL_PERSOCHECKSTATE_FAIL, RILUICCAPPPERSOCHECKSTATUSSTATE enumeration [Network Drivers Starting with Windows Vista], RILUICCAPPPERSOCHECKSTATUSSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILUICCAPPPERSOCHECKSTATUSSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

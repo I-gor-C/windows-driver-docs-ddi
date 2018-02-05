@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5f00ff32-5ecf-40ca-91bb-aacc542bb7f4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_67768e5f-a18d-4bd9-a1be-96587f267c36.xml, D3D10DDI_MIPINFO, display.d3d10ddi_mipinfo, D3D10DDI_MIPINFO structure [Display Devices], d3d10umddi/D3D10DDI_MIPINFO
+ms.keywords : d3d10umddi/D3D10DDI_MIPINFO, D3D10DDI_MIPINFO, display.d3d10ddi_mipinfo, UMDisplayDriver_Dx10param_Structs_67768e5f-a18d-4bd9-a1be-96587f267c36.xml, D3D10DDI_MIPINFO structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,7 @@ typedef struct D3D10DDI_MIPINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

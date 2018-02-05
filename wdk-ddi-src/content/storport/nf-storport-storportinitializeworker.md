@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4472A092-B2F4-4220-9685-6BE4FF0A83DB
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializeWorker, storage.storportinitializeworker, storport/StorPortInitializeWorker, StorPortInitializeWorker routine [Storage Devices]
+ms.keywords : StorPortInitializeWorker routine [Storage Devices], storport/StorPortInitializeWorker, StorPortInitializeWorker, storage.storportinitializeworker
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,22 +126,19 @@ If the miniport uses the work item during IO processing, we recommended that <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
 
 <a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
 
 <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+
+<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
 
  
 

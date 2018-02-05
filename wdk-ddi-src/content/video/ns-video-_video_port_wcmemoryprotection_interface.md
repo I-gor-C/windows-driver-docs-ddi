@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac62a738-bde1-49e7-9c18-519471ec1092
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE structure [Display Devices], _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, *PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE structure pointer [Display Devices], display.video_port_wcmemoryprotection_interface, video/VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, video/PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, Video_Structs_15076908-e598-4025-8884-a9ed60b1668c.xml
+ms.keywords : Video_Structs_15076908-e598-4025-8884-a9ed60b1668c.xml, PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, video/VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, video/PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE structure [Display Devices], VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, *PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE structure pointer [Display Devices], _VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, display.video_port_wcmemoryprotection_interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, *PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE
+req.typenames : "*PVIDEO_PORT_WCMEMORYPROTECTION_INTERFACE, VIDEO_PORT_WCMEMORYPROTECTION_INTERFACE"
 req.product : Windows 10 or later.
 ---
 
@@ -90,18 +90,15 @@ Pointer to the video port driver's <a href="..\video\nc-video-restore_wc_memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
 ## See Also
 
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
+
 <a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a>
 
 <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a>
-
-<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1af8dc98-9fee-4029-970f-462fdf80fdc9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/NtPrePrepareComplete, ZwPrePrepareComplete, ZwPrePrepareComplete routine [Kernel-Mode Driver Architecture], wdm/ZwPrePrepareComplete, kernel.zwprepreparecomplete, NtPrePrepareComplete, ktm_ref_f34acd5c-6983-4f8a-86ca-968dde152526.xml
+ms.keywords : kernel.zwprepreparecomplete, ZwPrePrepareComplete routine [Kernel-Mode Driver Architecture], wdm/NtPrePrepareComplete, wdm/ZwPrePrepareComplete, NtPrePrepareComplete, ktm_ref_f34acd5c-6983-4f8a-86ca-968dde152526.xml, ZwPrePrepareComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -132,26 +132,25 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
-
-<a href="..\wdm\nf-wdm-tmprepreparecomplete.md">TmPrePrepareComplete</a>
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 
 <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-tmprepreparecomplete.md">TmPrePrepareComplete</a>
+
+<a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

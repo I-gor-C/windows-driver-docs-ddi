@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 92a50a96-8bfb-4d5d-8f24-dd29794e55b1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisGroupActiveProcessorMask function [Network Drivers Starting with Windows Vista], ndis/NdisGroupActiveProcessorMask, netvista.ndisgroupactiveprocessormask, NdisGroupActiveProcessorMask, ndis_processor_group_ref_36161079-d4a1-44ad-b7c8-1bc565efda8e.xml
+ms.keywords : NdisGroupActiveProcessorMask, NdisGroupActiveProcessorMask function [Network Drivers Starting with Windows Vista], ndis/NdisGroupActiveProcessorMask, ndis_processor_group_ref_36161079-d4a1-44ad-b7c8-1bc565efda8e.xml, netvista.ndisgroupactiveprocessormask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,31 +79,28 @@ The
     <a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a> function
     to retrieve the number of currently active processors. Also, NDIS 6.20 and later drivers should not use
     the 
-    <mshelp:link keywords="netvista.ndissystemactiveprocessorcount" tabindex="0"><b>
-    NdisSystemActiveProcessorCount</b></mshelp:link> function because it only returns the processor count and provides
+    <a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
+    NdisSystemActiveProcessorCount</a> function because it only returns the processor count and provides
     the affinity mask as an out parameter, for processor group 0.</div><div> </div>To obtain an active processor count, call the 
-    <mshelp:link keywords="netvista.ndisgroupactiveprocessorcount" tabindex="0"><b>
-    NdisGroupActiveProcessorCount</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisgroupactiveprocessorcount.md">
+    NdisGroupActiveProcessorCount</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndissystemactiveprocessorcount" tabindex="0"><b>
-   NdisSystemActiveProcessorCount</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisgroupactiveprocessorcount.md">
+   NdisGroupActiveProcessorCount</a>
 
-<mshelp:link keywords="netvista.ndisgroupactiveprocessorcount" tabindex="0"><b>
-   NdisGroupActiveProcessorCount</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndissystemactiveprocessorcount.md">
+   NdisSystemActiveProcessorCount</a>
 
 <a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a>
 

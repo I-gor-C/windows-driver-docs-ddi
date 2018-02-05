@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fa6af43c-4fbd-43b5-9c3d-61254dfe894f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSendTargets_IN, _SendTargets_IN, *PSendTargets_IN, iscsiop/SendTargets_IN, PSendTargets_IN structure pointer [Storage Devices], storage.sendtargets_in, SendTargets_IN structure [Storage Devices], structs-iSCSI_448fb50f-6420-43ca-be0e-b3dd110cd48b.xml, SendTargets_IN, iscsiop/PSendTargets_IN
+ms.keywords : "*PSendTargets_IN, SendTargets_IN structure [Storage Devices], structs-iSCSI_448fb50f-6420-43ca-be0e-b3dd110cd48b.xml, _SendTargets_IN, PSendTargets_IN structure pointer [Storage Devices], iscsiop/PSendTargets_IN, SendTargets_IN, storage.sendtargets_in, PSendTargets_IN, iscsiop/SendTargets_IN"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSendTargets_IN, SendTargets_IN"
+req.typenames : SendTargets_IN, *PSendTargets_IN
 ---
 
 # _SendTargets_IN structure
@@ -66,18 +66,15 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565526">SendTargets</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
 <a href="..\iscsiop\ns-iscsiop-_sendtargets_out.md">SendTargets_OUT</a>
 

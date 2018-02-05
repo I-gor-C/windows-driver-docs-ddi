@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f633a967-46b5-4532-b372-b9739f2146a2
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_361bfb77-1197-40cb-81ec-fc198e6454e9.xml, storport/StorPortReadRegisterBufferUchar, StorPortReadRegisterBufferUchar, StorPortReadRegisterBufferUchar routine [Storage Devices], storage.storportreadregisterbufferuchar
+ms.keywords : storport/StorPortReadRegisterBufferUchar, StorPortReadRegisterBufferUchar routine [Storage Devices], storage.storportreadregisterbufferuchar, StorPortReadRegisterBufferUchar, storprt_361bfb77-1197-40cb-81ec-fc198e6454e9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,20 +84,15 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterbufferuchar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportreadregisterbufferuchar.md">ScsiPortReadRegisterBufferUchar</a>
-
 <a href="..\storport\nf-storport-storportreadregisteruchar.md">StorPortReadRegisterUchar</a>
+
+<a href="..\srb\nf-srb-scsiportreadregisterbufferuchar.md">ScsiPortReadRegisterBufferUchar</a>
 
  
 

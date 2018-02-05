@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BC43A7DF-51B4-4571-86C5-12B332B13084
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_NIC_SWITCH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_PARAMETERS, _NDIS_NIC_SWITCH_PARAMETERS, NDIS_NIC_SWITCH_PARAMETERS, ntddndis/NDIS_NIC_SWITCH_PARAMETERS, NDIS_NIC_SWITCH_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_PARAMETERS, netvista.ndis_nic_switch_parameters, ntddndis/PNDIS_NIC_SWITCH_PARAMETERS
+ms.keywords : ntddndis/NDIS_NIC_SWITCH_PARAMETERS, PNDIS_NIC_SWITCH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_PARAMETERS, NDIS_NIC_SWITCH_PARAMETERS, netvista.ndis_nic_switch_parameters, _NDIS_NIC_SWITCH_PARAMETERS, PNDIS_NIC_SWITCH_PARAMETERS, *PNDIS_NIC_SWITCH_PARAMETERS, NDIS_NIC_SWITCH_PARAMETERS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -134,22 +134,20 @@ For more information about the SR-IOV interface, see 	<a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismenablevirtualization.md">NdisMEnableVirtualization</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451823">OID_NIC_SWITCH_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
 
+<a href="..\ndis\nf-ndis-ndismenablevirtualization.md">NdisMEnableVirtualization</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451815">OID_NIC_SWITCH_CREATE_SWITCH</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451823">OID_NIC_SWITCH_PARAMETERS</a>
 
 <b></b>
 

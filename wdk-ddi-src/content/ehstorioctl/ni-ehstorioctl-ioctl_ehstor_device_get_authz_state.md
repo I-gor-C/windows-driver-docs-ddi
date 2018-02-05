@@ -86,6 +86,4 @@ STATUS_INVALID_BUFFER_SIZE - The input buffer length supplied is of incorrect si
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
-| **IRQL** |  |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8ff4dd86-d828-4e1d-bde5-ab312187a8d7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/TmGetTransactionId, TmGetTransactionId, ktm_ref_cbb12580-5399-4d81-ab6c-9d0235208681.xml, kernel.tmgettransactionid, TmGetTransactionId routine [Kernel-Mode Driver Architecture]
+ms.keywords : TmGetTransactionId routine [Kernel-Mode Driver Architecture], TmGetTransactionId, wdm/TmGetTransactionId, ktm_ref_cbb12580-5399-4d81-ab6c-9d0235208681.xml, kernel.tmgettransactionid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,22 +74,20 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
 <a href="..\wdm\nf-wdm-zwcreatetransaction.md">ZwCreateTransaction</a>
+
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 
 <a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : deb218b4-4478-46f6-9859-c1a6d7b73784
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_timecode_node_s, ksmedia/PKSPROPERTY_TIMECODE_NODE_S, PKSPROPERTY_TIMECODE_NODE_S, KSPROPERTY_TIMECODE_NODE_S structure [Streaming Media Devices], *PKSPROPERTY_TIMECODE_NODE_S, KSPROPERTY_TIMECODE_NODE_S, vidcapstruct_3c1b784a-1cd7-40b8-a0af-35c60b02cc50.xml, ksmedia/KSPROPERTY_TIMECODE_NODE_S, PKSPROPERTY_TIMECODE_NODE_S structure pointer [Streaming Media Devices]
+ms.keywords : PKSPROPERTY_TIMECODE_NODE_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TIMECODE_NODE_S, KSPROPERTY_TIMECODE_NODE_S, PKSPROPERTY_TIMECODE_NODE_S, stream.ksproperty_timecode_node_s, ksmedia/PKSPROPERTY_TIMECODE_NODE_S, KSPROPERTY_TIMECODE_NODE_S structure [Streaming Media Devices], vidcapstruct_3c1b784a-1cd7-40b8-a0af-35c60b02cc50.xml, *PKSPROPERTY_TIMECODE_NODE_S
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,18 +64,15 @@ Specifies the timecode sample. Timecode, absolute track number (ATN) and relativ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="..\ksmedia\ns-ksmedia-ksproperty_timecode_s.md">KSPROPERTY_TIMECODE_S</a>
 
 <a href="..\ksmedia\ns-ksmedia-tagtimecode_sample.md">TIMECODE_SAMPLE</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
  
 

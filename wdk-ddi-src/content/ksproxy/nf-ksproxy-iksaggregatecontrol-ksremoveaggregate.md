@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f625b1ed-ccab-4072-9eb9-c4ebbddb1199
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy_8498ef2d-5e1e-4f04-b311-2552bd713032.xml, IKsAggregateControl, KsRemoveAggregate method [Streaming Media Devices], KsRemoveAggregate, ksproxy/IKsAggregateControl::KsRemoveAggregate, stream.iksaggregatecontrol_ksremoveaggregate, IKsAggregateControl interface [Streaming Media Devices], KsRemoveAggregate method, IKsAggregateControl::KsRemoveAggregate, KsRemoveAggregate method [Streaming Media Devices], IKsAggregateControl interface
+ms.keywords : IKsAggregateControl::KsRemoveAggregate, IKsAggregateControl, ksproxy_8498ef2d-5e1e-4f04-b311-2552bd713032.xml, IKsAggregateControl interface [Streaming Media Devices], KsRemoveAggregate method, KsRemoveAggregate method [Streaming Media Devices], KsRemoveAggregate method [Streaming Media Devices], IKsAggregateControl interface, stream.iksaggregatecontrol_ksremoveaggregate, ksproxy/IKsAggregateControl::KsRemoveAggregate, KsRemoveAggregate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ Returns NOERROR if successful; otherwise, returns an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

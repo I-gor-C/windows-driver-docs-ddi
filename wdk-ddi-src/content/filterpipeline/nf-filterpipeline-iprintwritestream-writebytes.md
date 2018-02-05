@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d47c836e-a291-4cc2-9688-82526f8bfb8b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : filterpipeline_168a03b1-8fdc-4a98-9a5f-5c706fcd401b.xml, IPrintWriteStream::WriteBytes, filterpipeline/IPrintWriteStream::WriteBytes, WriteBytes, IPrintWriteStream, IPrintWriteStream interface [Print Devices], WriteBytes method, print.iprintwritestream_writebytes, WriteBytes method [Print Devices], WriteBytes method [Print Devices], IPrintWriteStream interface
+ms.keywords : print.iprintwritestream_writebytes, WriteBytes method [Print Devices], IPrintWriteStream interface, WriteBytes, IPrintWriteStream::WriteBytes, filterpipeline/IPrintWriteStream::WriteBytes, filterpipeline_168a03b1-8fdc-4a98-9a5f-5c706fcd401b.xml, WriteBytes method [Print Devices], IPrintWriteStream interface [Print Devices], WriteBytes method, IPrintWriteStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,11 +75,6 @@ A pointer to the number of bytes actually written.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

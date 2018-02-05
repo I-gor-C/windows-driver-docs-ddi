@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3f5fac9-013c-4739-a29e-c781b34e5289
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_NominalRange_16_235, DXVADDI_NOMINALRANGE enumeration [Display Devices], DXVADDI_NOMINALRANGE, d3dumddi/DXVADDI_NOMINALRANGE, d3dumddi/DXVADDI_NominalRange_Normal, DXVADDI_NominalRange_16_235, DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NominalRange_48_208, d3dumddi/DXVADDI_NominalRange_Unknown, d3dumddi/DXVADDI_NominalRangeMask, display.dxvaddi_nominalrange, DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_48_208, DXVA2_Structs_fee8e221-64df-474a-a178-439365c683fd.xml, _DXVADDI_NOMINALRANGE, d3dumddi/DXVADDI_NominalRange_0_255, DXVADDI_NominalRange_0_255, DXVADDI_NominalRange_Wide, d3dumddi/DXVADDI_NominalRange_Wide, DXVADDI_NominalRangeMask
+ms.keywords : d3dumddi/DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_0_255, DXVADDI_NominalRange_48_208, d3dumddi/DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NOMINALRANGE, display.dxvaddi_nominalrange, DXVADDI_NominalRange_Wide, d3dumddi/DXVADDI_NominalRange_48_208, DXVA2_Structs_fee8e221-64df-474a-a178-439365c683fd.xml, _DXVADDI_NOMINALRANGE, DXVADDI_NOMINALRANGE enumeration [Display Devices], DXVADDI_NominalRangeMask, d3dumddi/DXVADDI_NominalRange_Wide, DXVADDI_NominalRange_16_235, d3dumddi/DXVADDI_NominalRange_0_255, d3dumddi/DXVADDI_NominalRange_16_235, DXVADDI_NOMINALRANGE, DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NominalRangeMask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -103,9 +103,7 @@ Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

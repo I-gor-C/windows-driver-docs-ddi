@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -77,26 +77,23 @@ Pointer to the adapter object previously returned by <a href="https://msdn.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | IrqlDispatch |
 
 ## See Also
 
+<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
+
 <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
-
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
-
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 
-<a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
+<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+
+<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
 
  
 

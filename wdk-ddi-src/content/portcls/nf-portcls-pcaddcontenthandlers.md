@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c3ae9de0-3c21-498b-a29c-4ec54677826a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/PcAddContentHandlers, PcAddContentHandlers, audio.pcaddcontenthandlers, audpc-routines_11505f52-36d9-4b58-b1f8-44083705f9b5.xml, PcAddContentHandlers function [Audio Devices]
+ms.keywords : portcls/PcAddContentHandlers, audio.pcaddcontenthandlers, PcAddContentHandlers, audpc-routines_11505f52-36d9-4b58-b1f8-44083705f9b5.xml, PcAddContentHandlers function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -74,14 +74,10 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmaddcontent
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows XP. Available starting in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Portcls.lib |
 
 ## See Also
 

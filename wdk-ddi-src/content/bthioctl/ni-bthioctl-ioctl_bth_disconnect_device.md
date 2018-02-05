@@ -107,6 +107,6 @@ Calling IOCTL_BTH_DISCONNECT_DEVICE forces a disconnect from the remote device w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | "<= PASSIVE_LEVEL" |

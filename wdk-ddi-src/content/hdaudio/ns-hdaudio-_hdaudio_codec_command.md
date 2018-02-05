@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 803e3506-fb63-4d64-b562-1956e99f9d9b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PHDAUDIO_CODEC_COMMAND structure pointer [Audio Devices], HDAUDIO_CODEC_COMMAND structure [Audio Devices], hdaudio/PHDAUDIO_CODEC_COMMAND, aud-prop2_9e7db610-d310-4285-8556-7a88567c22b6.xml, audio.hdaudio_codec_command, hdaudio/HDAUDIO_CODEC_COMMAND, PHDAUDIO_CODEC_COMMAND, *PHDAUDIO_CODEC_COMMAND, _HDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND
+ms.keywords : hdaudio/HDAUDIO_CODEC_COMMAND, audio.hdaudio_codec_command, PHDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND, hdaudio/PHDAUDIO_CODEC_COMMAND, aud-prop2_9e7db610-d310-4285-8556-7a88567c22b6.xml, HDAUDIO_CODEC_COMMAND structure [Audio Devices], *PHDAUDIO_CODEC_COMMAND, PHDAUDIO_CODEC_COMMAND structure pointer [Audio Devices], _HDAUDIO_CODEC_COMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HDAUDIO_CODEC_COMMAND, *PHDAUDIO_CODEC_COMMAND
+req.typenames : "*PHDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND"
 ---
 
 # _HDAUDIO_CODEC_COMMAND structure
@@ -73,16 +73,13 @@ The validity of individual members depends on the type of command sent.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
 ## See Also
 
-<a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
-
 <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_transfer.md">HDAUDIO_CODEC_TRANSFER</a>
+
+<a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">TransferCodecVerbs</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 32a61103-5f2f-4b73-a299-bf6a14c3bec9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksfilteraddtopologyconnections, KsFilterAddTopologyConnections function [Streaming Media Devices], avfunc_99b8984f-5ca2-460b-ab20-230fd09b6d13.xml, ks/KsFilterAddTopologyConnections, KsFilterAddTopologyConnections
+ms.keywords : avfunc_99b8984f-5ca2-460b-ab20-230fd09b6d13.xml, stream.ksfilteraddtopologyconnections, KsFilterAddTopologyConnections, ks/KsFilterAddTopologyConnections, KsFilterAddTopologyConnections function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,11 @@ For more information about mutexes, see <a href="https://msdn.microsoft.com/011e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

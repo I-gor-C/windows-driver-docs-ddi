@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 4655bac3-997e-43d9-b628-b4292ae5509d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetFieldValue, debugger.getfieldvalue, wdbgexts/GetFieldValue, WdbgExts_Ref_68aca028-5d92-48a3-845d-f9eb480a2c40.xml, GetFieldValue function [Windows Debugging]
+ms.keywords : WdbgExts_Ref_68aca028-5d92-48a3-845d-f9eb480a2c40.xml, GetFieldValue, debugger.getfieldvalue, wdbgexts/GetFieldValue, GetFieldValue function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -84,14 +84,9 @@ The parameters provided to this macro are the same as those provided to the <b>G
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wdbgexts.h |
 
 ## See Also
 

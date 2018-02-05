@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9360f9c4-e30e-4fc0-ade7-1d98ff8b1d1b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_COMPOSERECTS, D3DDDIARG_COMPOSERECTS structure [Display Devices], D3DDDIARG_COMPOSERECTS, display.d3dddiarg_composerects, _D3DDDIARG_COMPOSERECTS, UMDisplayDriver_param_Structs_2f10ffa4-f55f-490b-9aa4-08c0c3e3d924.xml
+ms.keywords : "_D3DDDIARG_COMPOSERECTS, d3dumddi/D3DDDIARG_COMPOSERECTS, D3DDDIARG_COMPOSERECTS structure [Display Devices], D3DDDIARG_COMPOSERECTS, display.d3dddiarg_composerects, UMDisplayDriver_param_Structs_2f10ffa4-f55f-490b-9aa4-08c0c3e3d924.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -178,9 +178,7 @@ SHORT X, Y;            // Position in bits in the destination surface
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aa897435-443b-4145-b6ca-7bafdb36b9c1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PVIDEO_POINTER_ATTRIBUTES structure pointer [Display Devices], Video_Structs_5ade2674-a930-46b3-aaad-6d3a8d017453.xml, VIDEO_POINTER_ATTRIBUTES structure [Display Devices], PVIDEO_POINTER_ATTRIBUTES, VIDEO_MODE_ANIMATE_UPDATE, VIDEO_MODE_ASYNC_POINTER, display.video_pointer_attributes, VIDEO_MODE_COLOR_POINTER, ntddvdeo/PVIDEO_POINTER_ATTRIBUTES, VIDEO_POINTER_ATTRIBUTES, VIDEO_MODE_MONO_POINTER, _VIDEO_POINTER_ATTRIBUTES, ntddvdeo/VIDEO_POINTER_ATTRIBUTES, *PVIDEO_POINTER_ATTRIBUTES, VIDEO_MODE_ANIMATE_START
+ms.keywords : VIDEO_MODE_ANIMATE_UPDATE, VIDEO_POINTER_ATTRIBUTES, display.video_pointer_attributes, _VIDEO_POINTER_ATTRIBUTES, PVIDEO_POINTER_ATTRIBUTES structure pointer [Display Devices], VIDEO_MODE_ASYNC_POINTER, *PVIDEO_POINTER_ATTRIBUTES, ntddvdeo/VIDEO_POINTER_ATTRIBUTES, VIDEO_POINTER_ATTRIBUTES structure [Display Devices], PVIDEO_POINTER_ATTRIBUTES, Video_Structs_5ade2674-a930-46b3-aaad-6d3a8d017453.xml, ntddvdeo/PVIDEO_POINTER_ATTRIBUTES, VIDEO_MODE_ANIMATE_START, VIDEO_MODE_COLOR_POINTER, VIDEO_MODE_MONO_POINTER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -150,9 +150,6 @@ Specifies the width of the pointer in bytes.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |
 
 ## See Also

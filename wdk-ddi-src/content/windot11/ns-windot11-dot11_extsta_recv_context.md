@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 517be11b-a15d-43ac-aefd-f425fa6f63e7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_c3f69d82-f4b2-4a2a-b864-9b4eebc9e3ff.xml, windot11/PDOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_extsta_recv_context, windot11/DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT structure [Network Drivers Starting with Windows Vista], DOT11_EXTSTA_RECV_CONTEXT
+ms.keywords : DOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_c3f69d82-f4b2-4a2a-b864-9b4eebc9e3ff.xml, *PDOT11_EXTSTA_RECV_CONTEXT, windot11/DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, netvista.dot11_extsta_recv_context, PDOT11_EXTSTA_RECV_CONTEXT, windot11/PDOT11_EXTSTA_RECV_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -43,8 +43,8 @@ req.product : Windows 10 or later.
 <div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_EXTSTA_RECV_CONTEXT structure defines the Native 802.11 attributes of a received packet by
   the 802.11 station and indicated by the miniport driver operating in either Extensible Station (ExtSTA) or
   Network Monitor (NetMon) modes. For more information about these operation modes, see 
-  <mshelp:link keywords="netvista.native_802_11_operation_modes" tabindex="0">Native 802.11 Operation
-  Modes</mshelp:link>.
+  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-operation-modes">Native 802.11 Operation
+  Modes</a>.
 
 ## Syntax
 ````
@@ -81,11 +81,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_EXTSTA_RECV_CONTEXT_REVISION_1.
@@ -95,6 +90,11 @@ This member must be set to DOT11_EXTSTA_RECV_CONTEXT_REVISION_1.
 
 This member must be set to 
        sizeof(DOT11_EXTSTA_RECV_CONTEXT).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `lRSSI`
 
@@ -107,8 +107,8 @@ The data rate at which the 802.11 station received the packet. The value of
      <b>ucDataRate</b> is the value of the 
      <b>ucDataRateIndex</b> member of the data rate from the 802.11 station's data rate mapping table. For
      more information about the data rate mapping table, see 
-     <mshelp:link keywords="netvista.oid_dot11_data_rate_mapping_table" tabindex="0">
-     OID_DOT11_DATA_RATE_MAPPING_TABLE</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-data-rate-mapping-table">
+     OID_DOT11_DATA_RATE_MAPPING_TABLE</a>.
 
 `uChCenterFrequency`
 
@@ -147,8 +147,8 @@ The following flag values are valid for the miniport driver if is operating in N
 
 If this bit is set, the packet contains the data as it was originally received by the 802.11
        station. For more information about raw packets, see 
-       <mshelp:link keywords="netvista.indicating_raw_802_11_packets" tabindex="0">Indicating Raw 802.11
-       Packets</mshelp:link>.
+       <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/indicating-raw-802-11-packets">Indicating Raw 802.11
+       Packets</a>.
 
 
 #### DOT11_RECV_FLAG_RAW_PACKET_FCS_FAILURE
@@ -232,36 +232,34 @@ Set the value of
 
 </li>
 </ul>For more information about raw packets, see 
-    <mshelp:link keywords="netvista.indicating_raw_802_11_packets" tabindex="0">Indicating Raw 802.11
-    Packets</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/indicating-raw-802-11-packets">Indicating Raw 802.11
+    Packets</a>.
 
 For more information about Native 802.11 receive operations, see 
-    <mshelp:link keywords="netvista.native_802_11_receive_operations" tabindex="0">Native 802.11 Receive
-    Operations</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-receive-operations">Native 802.11 Receive
+    Operations</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<mshelp:link keywords="netvista.oid_dot11_data_rate_mapping_table" tabindex="0">
-   OID_DOT11_DATA_RATE_MAPPING_TABLE</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-data-rate-mapping-table">
+   OID_DOT11_DATA_RATE_MAPPING_TABLE</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+   NdisMIndicateReceiveNetBufferLists</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
-<mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-   NdisMIndicateReceiveNetBufferLists</b></mshelp:link>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

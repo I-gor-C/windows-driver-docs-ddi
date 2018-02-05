@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2ed72182-b098-43a6-a327-a8d81ab66309
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure [Streaming Media Devices], *PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, ksmedia/KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, vidcapstruct_3ad4116b-8e7c-4249-ba27-78a387706d5b.xml, stream.ksproperty_allocator_control_surface_size_s, KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, ksmedia/PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure pointer [Streaming Media Devices]
+ms.keywords : vidcapstruct_3ad4116b-8e7c-4249-ba27-78a387706d5b.xml, KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, *PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure [Streaming Media Devices], PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, stream.ksproperty_allocator_control_surface_size_s, ksmedia/PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, ksmedia/KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S"
+req.typenames : KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S, *PKSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S
 ---
 
 # KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE_S structure
@@ -64,9 +64,6 @@ Specifies the height of the overlay surface
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

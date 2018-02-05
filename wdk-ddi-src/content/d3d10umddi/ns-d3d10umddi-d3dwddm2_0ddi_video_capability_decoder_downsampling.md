@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8D12F2AC-2A64-4FEF-813C-15899FBCA108
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dwddm2_0ddi_video_capability_decoder_downsampling, d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING structure [Display Devices], D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING
+ms.keywords : d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING structure [Display Devices], display.d3dwddm2_0ddi_video_capability_decoder_downsampling
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,9 +98,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : AE7A79DE-0202-4816-A36C-5A15C4539392
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PPO_FX_PERF_STATE_CHANGE, wdm/PO_FX_PERF_STATE_CHANGE, kernel.po_fx_perf_state_change, *PPO_FX_PERF_STATE_CHANGE, PPO_FX_PERF_STATE_CHANGE, PPO_FX_PERF_STATE_CHANGE structure pointer [Kernel-Mode Driver Architecture], PO_FX_PERF_STATE_CHANGE, _PO_FX_PERF_STATE_CHANGE, PO_FX_PERF_STATE_CHANGE structure [Kernel-Mode Driver Architecture]
+ms.keywords : PPO_FX_PERF_STATE_CHANGE, kernel.po_fx_perf_state_change, PO_FX_PERF_STATE_CHANGE, wdm/PO_FX_PERF_STATE_CHANGE, PPO_FX_PERF_STATE_CHANGE structure pointer [Kernel-Mode Driver Architecture], PO_FX_PERF_STATE_CHANGE structure [Kernel-Mode Driver Architecture], wdm/PPO_FX_PERF_STATE_CHANGE, *PPO_FX_PERF_STATE_CHANGE, _PO_FX_PERF_STATE_CHANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ The <b>PO_FX_PERF_STATE_CHANGE</b> structure is used for the <i>PerfChange</i> p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | wdm.h |
 
 ## See Also

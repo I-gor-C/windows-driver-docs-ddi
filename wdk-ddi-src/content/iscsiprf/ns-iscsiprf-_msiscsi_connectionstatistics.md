@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f1f38292-604f-4618-b6ec-f3822d60a96c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : MSiSCSI_ConnectionStatistics, iscsiprf/PMSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics structure [Storage Devices], structs-iSCSI_6a149338-4636-45cd-9c15-2444e2ebcd1a.xml, PMSiSCSI_ConnectionStatistics structure pointer [Storage Devices], storage.msiscsi_connectionstatistics, PMSiSCSI_ConnectionStatistics, _MSiSCSI_ConnectionStatistics, *PMSiSCSI_ConnectionStatistics, iscsiprf/MSiSCSI_ConnectionStatistics
+ms.keywords : PMSiSCSI_ConnectionStatistics, _MSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics structure [Storage Devices], structs-iSCSI_6a149338-4636-45cd-9c15-2444e2ebcd1a.xml, *PMSiSCSI_ConnectionStatistics, PMSiSCSI_ConnectionStatistics structure pointer [Storage Devices], iscsiprf/PMSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics, storage.msiscsi_connectionstatistics, iscsiprf/MSiSCSI_ConnectionStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics"
+req.typenames : MSiSCSI_ConnectionStatistics, *PMSiSCSI_ConnectionStatistics
 ---
 
 # _MSiSCSI_ConnectionStatistics structure
@@ -108,9 +108,6 @@ The totals tracked by this structure are valid for the lifetime of the connectio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiprf.h (include Iscsiprf.h) |
 
 ## See Also

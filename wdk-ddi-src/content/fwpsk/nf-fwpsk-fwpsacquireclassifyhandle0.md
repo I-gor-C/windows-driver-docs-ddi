@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7348d937-6541-47a7-ae70-7d851d41bc1a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_A-B_c0b568dd-f546-4bab-a012-14f4d2a8d846.xml, FwpsAcquireClassifyHandle0 function [Network Drivers Starting with Windows Vista], FwpsAcquireClassifyHandle0, netvista.fwpsacquireclassifyhandle0, fwpsk/FwpsAcquireClassifyHandle0
+ms.keywords : FwpsAcquireClassifyHandle0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_c0b568dd-f546-4bab-a012-14f4d2a8d846.xml, FwpsAcquireClassifyHandle0, netvista.fwpsacquireclassifyhandle0, fwpsk/FwpsAcquireClassifyHandle0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,15 +123,15 @@ An error occurred.
 </li>
 <li>
 
-<mshelp:link keywords="netvista.fwpsacquirewritablelayerdatapointer0" tabindex="0"><b>
-       FwpsAcquireWritableLayerDataPointer0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
+       FwpsAcquireWritableLayerDataPointer0</a>
 
 
 </li>
 <li>
 
-<mshelp:link keywords="netvista.fwpsapplymodifiedlayerdata0" tabindex="0"><b>
-       FwpsApplyModifiedLayerData0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsapplymodifiedlayerdata0.md">
+       FwpsApplyModifiedLayerData0</a>
 
 
 </li>
@@ -154,22 +154,19 @@ An error occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\fwpsk\nf-fwpsk-fwpspendclassify0.md">FwpsPendClassify0</a>
 
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn1.md">classifyFn1</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpscompleteclassify0.md">FwpsCompleteClassify0</a>
-
-<a href="..\fwpsk\nf-fwpsk-fwpspendclassify0.md">FwpsPendClassify0</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
 

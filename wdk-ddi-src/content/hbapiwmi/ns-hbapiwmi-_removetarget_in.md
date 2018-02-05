@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 54fcbb64-09ce-4f18-963b-fee2627d4231
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PRemoveTarget_IN, storage.removetarget_in, PRemoveTarget_IN structure pointer [Storage Devices], hbapiwmi/RemoveTarget_IN, RemoveTarget_IN structure [Storage Devices], *PRemoveTarget_IN, PRemoveTarget_IN, _RemoveTarget_IN, RemoveTarget_IN, structs-Fibre_e284d48f-3a57-449f-8227-2e8637118dcd.xml
+ms.keywords : PRemoveTarget_IN, *PRemoveTarget_IN, storage.removetarget_in, hbapiwmi/RemoveTarget_IN, _RemoveTarget_IN, RemoveTarget_IN, PRemoveTarget_IN structure pointer [Storage Devices], structs-Fibre_e284d48f-3a57-449f-8227-2e8637118dcd.xml, hbapiwmi/PRemoveTarget_IN, RemoveTarget_IN structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PRemoveTarget_IN, RemoveTarget_IN"
+req.typenames : RemoveTarget_IN, *PRemoveTarget_IN
 ---
 
 # _RemoveTarget_IN structure
@@ -71,9 +71,6 @@ The WMI tool suite generates a declaration of the RemoveTarget_IN structure in <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

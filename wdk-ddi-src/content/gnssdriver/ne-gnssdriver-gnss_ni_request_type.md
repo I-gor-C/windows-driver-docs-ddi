@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 79AFC7D8-5A51-49CC-8ADA-7D21C6859254
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_NI_Request_AreaTrigger, gnssdriver/GNSS_NI_REQUEST_TYPE, sensors.gnss_ni_request_type, gnssdriver/GNSS_NI_Request_AreaTrigger, GNSS_NI_REQUEST_TYPE enumeration [Sensor Devices], gnssdriver/GNSS_NI_Request_SingleShot, GNSS_NI_REQUEST_TYPE, GNSS_NI_Request_SingleShot
+ms.keywords : sensors.gnss_ni_request_type, GNSS_NI_REQUEST_TYPE enumeration [Sensor Devices], GNSS_NI_Request_SingleShot, gnssdriver/GNSS_NI_Request_SingleShot, GNSS_NI_REQUEST_TYPE, gnssdriver/GNSS_NI_Request_AreaTrigger, gnssdriver/GNSS_NI_REQUEST_TYPE, GNSS_NI_Request_AreaTrigger
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

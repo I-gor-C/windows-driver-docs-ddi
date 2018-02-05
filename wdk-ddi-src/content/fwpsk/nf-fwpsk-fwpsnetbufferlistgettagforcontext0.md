@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f4b9b6ab-2251-4b8a-baf5-16c845a1a4db
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_J-Q_f81dda7b-70fb-42ae-8641-c9bb2a9e7982.xml, netvista.fwpsnetbufferlistgettagforcontext0, FwpsNetBufferListGetTagForContext0 function [Network Drivers Starting with Windows Vista], FwpsNetBufferListGetTagForContext0, fwpsk/FwpsNetBufferListGetTagForContext0
+ms.keywords : wfp_ref_2_funct_3_fwps_J-Q_f81dda7b-70fb-42ae-8641-c9bb2a9e7982.xml, fwpsk/FwpsNetBufferListGetTagForContext0, netvista.fwpsnetbufferlistgettagforcontext0, FwpsNetBufferListGetTagForContext0, FwpsNetBufferListGetTagForContext0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,29 +68,26 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 7. Available starting with  Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
-
-<mshelp:link keywords="netvista.fwpsnetbufferlistretrievecontext0" tabindex="0"><b>
-   FwpsNetBufferListRetrieveContext0</b></mshelp:link>
-
-<mshelp:link keywords="netvista.fwpsnetbufferlistassociatecontext0" tabindex="0"><b>
-   FwpsNetBufferListAssociateContext0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
+   FwpsNetBufferListRemoveContext0</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<mshelp:link keywords="netvista.fwpsnetbufferlistremovecontext0" tabindex="0"><b>
-   FwpsNetBufferListRemoveContext0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
+   FwpsNetBufferListAssociateContext0</a>
+
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistretrievecontext0.md">
+   FwpsNetBufferListRetrieveContext0</a>
+
+<a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
 
  
 

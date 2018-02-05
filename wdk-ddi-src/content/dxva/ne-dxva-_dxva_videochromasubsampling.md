@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aa8f736f-1311-4217-8750-cdd134c6945c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_VideoChromaSubsampling enumeration [Display Devices], dxva/DXVA_VideoChromaSubsampling_Cosited, dxva/DXVA_VideoChromaSubsampling_Unknown, DXVA_VideoChromaSubsampling_ProgressiveChroma, dxva/DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, DXVA_VideoChromaSubsampling, DXVA_VideoChromaSubsamplingMask, DXVA_VideoChromaSubsampling_MPEG1, dxva/DXVA_VideoChromaSubsampling_MPEG1, DXVA_VideoChromaSubsampling_DV_PAL, dxva/DXVA_VideoChromaSubsamplingMask, dxva/DXVA_VideoChromaSubsampling_DV_PAL, dxva/DXVA_VideoChromaSubsampling_ProgressiveChroma, _DXVA_VideoChromaSubsampling, DXVA_VideoChromaSubsampling_MPEG2, DXVA_VideoChromaSubsampling_Unknown, dxva/DXVA_VideoChromaSubsampling_Horizontally_Cosited, dxva/DXVA_VideoChromaSubsampling_Vertically_Cosited, dxva/DXVA_VideoChromaSubsampling, display.dxva_videochromasubsampling, dxvaref_2939ec96-fb1f-4911-916e-40d043bb58d5.xml, DXVA_VideoChromaSubsampling_Cosited, dxva/DXVA_VideoChromaSubsamplingShift, DXVA_VideoChromaSubsamplingShift, DXVA_VideoChromaSubsampling_Horizontally_Cosited, dxva/DXVA_VideoChromaSubsampling_MPEG2, DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, DXVA_VideoChromaSubsampling_Vertically_Cosited
+ms.keywords : DXVA_VideoChromaSubsampling_Horizontally_Cosited, dxva/DXVA_VideoChromaSubsampling, dxva/DXVA_VideoChromaSubsampling_DV_PAL, DXVA_VideoChromaSubsampling_Vertically_Cosited, display.dxva_videochromasubsampling, DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, dxva/DXVA_VideoChromaSubsampling_Horizontally_Cosited, DXVA_VideoChromaSubsampling_MPEG2, DXVA_VideoChromaSubsampling_Cosited, dxva/DXVA_VideoChromaSubsampling_Cosited, dxva/DXVA_VideoChromaSubsampling_ProgressiveChroma, dxva/DXVA_VideoChromaSubsamplingShift, dxva/DXVA_VideoChromaSubsampling_MPEG2, dxva/DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, DXVA_VideoChromaSubsampling_Unknown, DXVA_VideoChromaSubsampling enumeration [Display Devices], DXVA_VideoChromaSubsamplingShift, dxva/DXVA_VideoChromaSubsamplingMask, DXVA_VideoChromaSubsampling_ProgressiveChroma, dxva/DXVA_VideoChromaSubsampling_Vertically_Cosited, dxvaref_2939ec96-fb1f-4911-916e-40d043bb58d5.xml, DXVA_VideoChromaSubsampling_DV_PAL, DXVA_VideoChromaSubsampling_MPEG1, dxva/DXVA_VideoChromaSubsampling_MPEG1, _DXVA_VideoChromaSubsampling, DXVA_VideoChromaSubsampling, dxva/DXVA_VideoChromaSubsampling_Unknown, DXVA_VideoChromaSubsamplingMask
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -127,9 +127,7 @@ Cosite variations indicate that the chroma samples are aligned with the luma sam
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

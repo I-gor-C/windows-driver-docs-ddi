@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4dcc2ec0-6a75-4fc0-800c-c1ce12e3fd6a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMSendFontCmd, printoem/OEMSendFontCmd, print_obsoletefunctions_f54bf949-57eb-49ea-a69b-f9edfdfb9da6.xml, print.oemsendfontcmd, OEMSendFontCmd function [Print Devices]
+ms.keywords : OEMSendFontCmd, print.oemsendfontcmd, print_obsoletefunctions_f54bf949-57eb-49ea-a69b-f9edfdfb9da6.xml, OEMSendFontCmd function [Print Devices], printoem/OEMSendFontCmd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,11 +77,6 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

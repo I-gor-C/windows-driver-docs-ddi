@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 39AD3C10-C6E8-463F-BDDE-5941CB4B2830
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetSymbolEntryBySymbolEntry method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryBySymbolEntry method, GetSymbolEntryBySymbolEntry, GetSymbolEntryBySymbolEntry method [Windows Debugging], IDebugSymbols3::GetSymbolEntryBySymbolEntry, dbgeng/IDebugSymbols3::GetSymbolEntryBySymbolEntry, debugger.idebugsymbols3_getsymbolentrybysymbolentry, IDebugSymbols3
+ms.keywords : GetSymbolEntryBySymbolEntry method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetSymbolEntryBySymbolEntry, GetSymbolEntryBySymbolEntry, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryBySymbolEntry method, IDebugSymbols3::GetSymbolEntryBySymbolEntry, debugger.idebugsymbols3_getsymbolentrybysymbolentry, GetSymbolEntryBySymbolEntry method [Windows Debugging], IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,14 +76,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9dc93d92-ccdc-488b-a5dd-a2efe783cbb3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, display.d3d11_1ddi_video_processor_filter_range
+ms.keywords : display.d3d11_1ddi_video_processor_filter_range, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE structure [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -87,7 +87,5 @@ The device should use a multiplier that can be represented exactly as a base-2 f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

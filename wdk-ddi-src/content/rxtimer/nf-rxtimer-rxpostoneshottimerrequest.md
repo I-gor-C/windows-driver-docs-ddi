@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : d3ae6401-6d1b-428f-ae74-e262682bcb10
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxPostOneShotTimerRequest, rxtimer/RxPostOneShotTimerRequest, ifsk.rxpostoneshottimerrequest, rxref_9fb32d67-ac0a-4f85-b999-5f5beaf6b26f.xml, RxPostOneShotTimerRequest routine [Installable File System Drivers]
+ms.keywords : RxPostOneShotTimerRequest, rxref_9fb32d67-ac0a-4f85-b999-5f5beaf6b26f.xml, rxtimer/RxPostOneShotTimerRequest, ifsk.rxpostoneshottimerrequest, RxPostOneShotTimerRequest routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,20 +89,16 @@ If a <b>NULL</b> pointer is passed as the <i>pWorkItem</i> parameter, this routi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxtimer.h (include Rxtimer.h, Rxworkq.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxtimer\nf-rxtimer-rxpostrecurrenttimerrequest.md">RxPostRecurrentTimerRequest</a>
-
 <a href="..\rxtimer\nf-rxtimer-rxcanceltimerrequest.md">RxCancelTimerRequest</a>
+
+<a href="..\rxtimer\nf-rxtimer-rxpostrecurrenttimerrequest.md">RxPostRecurrentTimerRequest</a>
 
  
 

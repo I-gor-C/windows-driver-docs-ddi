@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : f51f1091-232f-4e41-9cc2-9938870aeef8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorDriver::OnClientUnsubscribeFromEvents, ISensorDriver, OnClientUnsubscribeFromEvents, sensors.isensordriver_onclientunsubscribefromevents, OnClientUnsubscribeFromEvents method [Sensor Devices]
+ms.keywords : OnClientUnsubscribeFromEvents, ISensorDriver, ISensorDriver::OnClientUnsubscribeFromEvents, OnClientUnsubscribeFromEvents method [Sensor Devices], sensors.isensordriver_onclientunsubscribefromevents
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -100,11 +100,6 @@ The ClientData structure is defined as follows.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

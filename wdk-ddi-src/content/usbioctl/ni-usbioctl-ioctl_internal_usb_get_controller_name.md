@@ -78,9 +78,7 @@ After the first request completes successfully, allocate a buffer of <code>Actua
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbioctl.h |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 31f1577d-72ba-495a-97e4-0569bdbc0ed7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_DESTROYCONTEXT, D3DDDICB_DESTROYCONTEXT structure [Display Devices], D3DDDICB_DESTROYCONTEXT, d3dumddi/D3DDDICB_DESTROYCONTEXT, display.d3dddicb_destroycontext, D3D_param_Structs_40e3c0f9-b30b-4fab-8b4a-a1809f03d0ba.xml"
+ms.keywords : d3dumddi/D3DDDICB_DESTROYCONTEXT, display.d3dddicb_destroycontext, D3D_param_Structs_40e3c0f9-b30b-4fab-8b4a-a1809f03d0ba.xml, D3DDDICB_DESTROYCONTEXT structure [Display Devices], _D3DDDICB_DESTROYCONTEXT, D3DDDICB_DESTROYCONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DDDICB_DESTROYCONTEXT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

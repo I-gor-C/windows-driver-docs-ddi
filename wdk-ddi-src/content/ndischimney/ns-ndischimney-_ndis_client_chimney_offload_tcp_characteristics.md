@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1925cfd4-f83f-48a5-b928-2c663ac0dc61
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : tcp_chim_struct_8bfa1be6-3a5f-463a-a2c2-8f2a1f7e55e3.xml, *PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, ndischimney/NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, ndischimney/PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, netvista.ndis_client_chimney_offload_tcp_characteristics
+ms.keywords : PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], ndischimney/PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, netvista.ndis_client_chimney_offload_tcp_characteristics, NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], ndischimney/NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, _NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, tcp_chim_struct_8bfa1be6-3a5f-463a-a2c2-8f2a1f7e55e3.xml, *PNDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS, NDIS_CLIENT_CHIMNEY_OFFLOAD_TCP_CHARACTERISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,38 +84,38 @@ The chimney offload type. The only allowable value is
 `TcpOffloadDisconnectCompleteHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.protocoltcpoffloaddisconnectcomplete" tabindex="0"><i>
-     ProtocolTcpOffloadDisconnectComplete</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_disconnect_complete_handler.md">
+     ProtocolTcpOffloadDisconnectComplete</a> function.
 
 `TcpOffloadEventHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.protocoltcpoffloadevent" tabindex="0"><i>
-     ProtocolTcpOffloadEvent</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">
+     ProtocolTcpOffloadEvent</a> function.
 
 `TcpOffloadForwardCompleteHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.protocoltcpoffloadforwardcomplete" tabindex="0"><i>
-     ProtocolTcpOffloadForwardComplete</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_forward_complete_handler.md">
+     ProtocolTcpOffloadForwardComplete</a> function.
 
 `TcpOffloadReceiveCompleteHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.protocoltcpoffloadreceivecomplete" tabindex="0"><i>
-     ProtocolTcpOffloadReceiveComplete</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_recv_complete_handler.md">
+     ProtocolTcpOffloadReceiveComplete</a> function.
 
 `TcpOffloadReceiveIndicateHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.protocoltcpoffloadreceiveindicate" tabindex="0"><i>
-     ProtocolTcpOffloadReceiveIndicate</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_receive_indicate_handler.md">
+     ProtocolTcpOffloadReceiveIndicate</a> function.
 
 `TcpOffloadSendCompleteHandler`
 
 The entry point of the driver's 
-     <mshelp:link keywords="netvista.protocoltcpoffloadsendcomplete" tabindex="0"><i>
-     ProtocolTcpOffloadSendComplete</i></mshelp:link> function.
+     <a href="..\ndischimney\nc-ndischimney-tcp_offload_send_complete_handler.md">
+     ProtocolTcpOffloadSendComplete</a> function.
 
 ## Remarks
 To register its TCP chimney offload entry points, a protocol or intermediate driver calls the 
@@ -128,32 +128,29 @@ To register its TCP chimney offload entry points, a protocol or intermediate dri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.protocoltcpoffloadreceiveindicate" tabindex="0"><i>
-   ProtocolTcpOffloadReceiveIndicate</i></mshelp:link>
-
-<mshelp:link keywords="netvista.protocoltcpoffloadreceivecomplete" tabindex="0"><i>
-   ProtocolTcpOffloadReceiveComplete</i></mshelp:link>
-
-<a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">ProtocolTcpOffloadEvent</a>
-
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 
-<mshelp:link keywords="netvista.protocoltcpoffloadsendcomplete" tabindex="0"><i>
-   ProtocolTcpOffloadSendComplete</i></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndischimney\nc-ndischimney-tcp_offload_receive_indicate_handler.md">
+   ProtocolTcpOffloadReceiveIndicate</a>
+
+<a href="..\ndischimney\nc-ndischimney-tcp_offload_send_complete_handler.md">
+   ProtocolTcpOffloadSendComplete</a>
+
+<a href="..\ndischimney\nc-ndischimney-tcp_offload_recv_complete_handler.md">
+   ProtocolTcpOffloadReceiveComplete</a>
+
+<a href="..\ndischimney\nc-ndischimney-tcp_offload_disconnect_complete_handler.md">
+   ProtocolTcpOffloadDisconnectComplete</a>
 
 <a href="..\ndis\nc-ndis-set_options.md">ProtocolSetOptions</a>
 
-<mshelp:link keywords="netvista.protocoltcpoffloaddisconnectcomplete" tabindex="0"><i>
-   ProtocolTcpOffloadDisconnectComplete</i></mshelp:link>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">ProtocolTcpOffloadEvent</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : D2067A72-0FF5-4D77-A1F6-0A6984A1735A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.npdbrokeracquirewithtimeout, NpdBrokerAcquireWithTimeout, NpdBrokerAcquireWithTimeout function [Network Drivers Starting with Windows Vista], knetpwrdepbroker/NpdBrokerAcquireWithTimeout
+ms.keywords : knetpwrdepbroker/NpdBrokerAcquireWithTimeout, netvista.npdbrokeracquirewithtimeout, NpdBrokerAcquireWithTimeout, NpdBrokerAcquireWithTimeout function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,8 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | knetpwrdepbroker.h (include KNetPwrDepBroker.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

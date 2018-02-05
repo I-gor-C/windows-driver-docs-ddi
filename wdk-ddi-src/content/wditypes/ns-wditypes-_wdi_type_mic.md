@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A21EEC35-98F2-4B68-A851-1C45D7F55194
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wditypes/WDI_TYPE_MIC, *PWDI_TYPE_MIC, wditypes/PWDI_TYPE_MIC, PWDI_TYPE_MIC structure pointer [Network Drivers Starting with Windows Vista], WDI_TYPE_MIC structure [Network Drivers Starting with Windows Vista], _WDI_TYPE_MIC, netvista.wdi_type_mic, WDI_TYPE_MIC, PWDI_TYPE_MIC
+ms.keywords : "_WDI_TYPE_MIC, PWDI_TYPE_MIC, wditypes/PWDI_TYPE_MIC, WDI_TYPE_MIC structure [Network Drivers Starting with Windows Vista], *PWDI_TYPE_MIC, WDI_TYPE_MIC, PWDI_TYPE_MIC structure pointer [Network Drivers Starting with Windows Vista], netvista.wdi_type_mic, wditypes/WDI_TYPE_MIC"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -60,7 +60,5 @@ The MIC.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

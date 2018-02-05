@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e450f85c-4c73-44a8-9d0a-da2c212c87c9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_CREATECONTEXTFLAGS, D3D_other_Structs_e20f9457-1008-4c63-a924-d5fa75929be5.xml, D3DDDI_CREATECONTEXTFLAGS structure [Display Devices], d3dukmdt/D3DDDI_CREATECONTEXTFLAGS, _D3DDDI_CREATECONTEXTFLAGS, display.d3dddi_createcontextflags
+ms.keywords : "_D3DDDI_CREATECONTEXTFLAGS, display.d3dddi_createcontextflags, D3DDDI_CREATECONTEXTFLAGS structure [Display Devices], D3D_other_Structs_e20f9457-1008-4c63-a924-d5fa75929be5.xml, D3DDDI_CREATECONTEXTFLAGS, d3dukmdt/D3DDDI_CREATECONTEXTFLAGS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -62,16 +62,14 @@ typedef struct _D3DDDI_CREATECONTEXTFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createcontext.md">D3DDDICB_CREATECONTEXT</a>
+
+<a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a>
 
  
 

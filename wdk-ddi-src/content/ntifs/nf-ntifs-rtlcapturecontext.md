@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c3edd10c-ea4f-4e2d-96f2-3d1cb3804512
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlCaptureContext, RtlCaptureContext function [Installable File System Drivers], ntifs/RtlCaptureContext, ifsk.rtlcapturecontext, rtlref_efe764ec-89fb-43bc-945d-7fee4594c284.xml
+ms.keywords : ntifs/RtlCaptureContext, ifsk.rtlcapturecontext, RtlCaptureContext, rtlref_efe764ec-89fb-43bc-945d-7fee4594c284.xml, RtlCaptureContext function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,12 @@ For kernel-mode code, the CONTEXT structure is defined in <i>Ntddk.h</i>. For mo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later versions of all Windows operating systems. Available in Microsoft Windows XP and later versions of all Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib; OneCoreUAP.lib on Windows 10 |
+| **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

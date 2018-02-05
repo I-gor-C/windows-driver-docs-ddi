@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 771027AA-E64D-4AC8-9C52-D1F96A761FAD
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_SERVICE_MERIT, KSPROPERTY_SERVICE, stream.ksproperty_service, ksi/KSPROPERTY_SERVICE_MERIT, KSPROPERTY_SERVICE_BUILDCACHE, ksi/KSPROPERTY_SERVICE_BUILDCACHE, KSPROPERTY_SERVICE enumeration [Streaming Media Devices], ksi/KSPROPERTY_SERVICE
+ms.keywords : ksi/KSPROPERTY_SERVICE, stream.ksproperty_service, ksi/KSPROPERTY_SERVICE_BUILDCACHE, KSPROPERTY_SERVICE_MERIT, KSPROPERTY_SERVICE enumeration [Streaming Media Devices], KSPROPERTY_SERVICE_BUILDCACHE, ksi/KSPROPERTY_SERVICE_MERIT, KSPROPERTY_SERVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksi.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 32b92771-7f23-492c-a3b0-b10032c9f80a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship routine [Storage Devices], storage.storportgetlogicalprocessorrelationship, storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml, StorPortGetLogicalProcessorRelationship
+ms.keywords : storport/StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship routine [Storage Devices], storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml, storage.storportgetlogicalprocessorrelationship, StorPortGetLogicalProcessorRelationship
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,11 +136,9 @@ The operation fails with this return value if one or more of the parameters are 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

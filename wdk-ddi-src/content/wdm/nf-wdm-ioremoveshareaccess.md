@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 999ee9cc-13c7-4e6b-a294-7e7d28272384
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_0034e41b-0320-40e0-8dea-847db6b6dc58.xml, wdm/IoRemoveShareAccess, IoRemoveShareAccess, kernel.ioremoveshareaccess, IoRemoveShareAccess routine [Kernel-Mode Driver Architecture]
+ms.keywords : IoRemoveShareAccess, k104_0034e41b-0320-40e0-8dea-847db6b6dc58.xml, IoRemoveShareAccess routine [Kernel-Mode Driver Architecture], wdm/IoRemoveShareAccess, kernel.ioremoveshareaccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,12 +78,11 @@ Callers of <b>IoRemoveShareAccess</b> must be running at IRQL = PASSIVE_LEVEL an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

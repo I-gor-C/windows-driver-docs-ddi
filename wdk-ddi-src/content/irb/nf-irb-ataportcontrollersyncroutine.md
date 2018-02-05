@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6b39e89e-21cc-404f-b9fc-6cad0b5c8d22
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortControllerSyncRoutine, irb/AtaPortControllerSyncRoutine, storage.ataportcontrollersyncroutine, atartns_1fdbc2cb-49db-4121-aaaa-8a50c2a6cbde.xml, AtaPortControllerSyncRoutine routine [Storage Devices]
+ms.keywords : AtaPortControllerSyncRoutine routine [Storage Devices], storage.ataportcontrollersyncroutine, AtaPortControllerSyncRoutine, irb/AtaPortControllerSyncRoutine, atartns_1fdbc2cb-49db-4121-aaaa-8a50c2a6cbde.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,14 +90,9 @@ VOID
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 064d8335-3ebf-4bc2-901e-10ce46bf7732
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NdisReceiveFilterTestMaskEqual, virtual_machine_queue_ref_16206d46-2048-429b-b7cf-aa5f5d099ae1.xml, ntddndis/NdisReceiveFilterTestMaximum, NdisReceiveFilterTestNotEqual, NdisReceiveFilterTestUndefined, NDIS_RECEIVE_FILTER_TEST enumeration [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_test, NdisReceiveFilterTestMaskEqual, ntddndis/NdisReceiveFilterTestUndefined, ntddndis/NdisReceiveFilterTestEqual, ntddndis/PNDIS_RECEIVE_FILTER_TEST, NdisReceiveFilterTestEqual, PNDIS_RECEIVE_FILTER_TEST, _NDIS_RECEIVE_FILTER_TEST, *PNDIS_RECEIVE_FILTER_TEST, ntddndis/NdisReceiveFilterTestNotEqual, PNDIS_RECEIVE_FILTER_TEST enumeration pointer [Network Drivers Starting with Windows Vista], NdisReceiveFilterTestMaximum, ntddndis/NDIS_RECEIVE_FILTER_TEST, NDIS_RECEIVE_FILTER_TEST
+ms.keywords : ntddndis/NdisReceiveFilterTestNotEqual, virtual_machine_queue_ref_16206d46-2048-429b-b7cf-aa5f5d099ae1.xml, ntddndis/PNDIS_RECEIVE_FILTER_TEST, _NDIS_RECEIVE_FILTER_TEST, ntddndis/NDIS_RECEIVE_FILTER_TEST, NdisReceiveFilterTestEqual, PNDIS_RECEIVE_FILTER_TEST, ntddndis/NdisReceiveFilterTestUndefined, ntddndis/NdisReceiveFilterTestEqual, netvista.ndis_receive_filter_test, NDIS_RECEIVE_FILTER_TEST enumeration [Network Drivers Starting with Windows Vista], NdisReceiveFilterTestUndefined, ntddndis/NdisReceiveFilterTestMaskEqual, NdisReceiveFilterTestNotEqual, ntddndis/NdisReceiveFilterTestMaximum, *PNDIS_RECEIVE_FILTER_TEST, NDIS_RECEIVE_FILTER_TEST, PNDIS_RECEIVE_FILTER_TEST enumeration pointer [Network Drivers Starting with Windows Vista], NdisReceiveFilterTestMaximum, NdisReceiveFilterTestMaskEqual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_FILTER_TEST, NDIS_RECEIVE_FILTER_TEST"
+req.typenames : NDIS_RECEIVE_FILTER_TEST, *PNDIS_RECEIVE_FILTER_TEST
 ---
 
 # _NDIS_RECEIVE_FILTER_TEST Enumeration
@@ -90,21 +90,19 @@ typedef enum _NDIS_RECEIVE_FILTER_TEST {
 ## Remarks
 
 The NDIS_RECEIVE_FILTER_TEST enumeration is used in the 
-    <mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
  
 

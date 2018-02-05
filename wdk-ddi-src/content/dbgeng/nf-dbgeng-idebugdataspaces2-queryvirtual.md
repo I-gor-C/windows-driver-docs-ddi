@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2d607433-0d2d-4662-acd6-9adbce290b97
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces_45524d69-d9be-4eb0-971c-3ae6bb6089b2.xml, debugger.queryvirtual, QueryVirtual method [Windows Debugging], IDebugDataSpaces2, QueryVirtual, IDebugDataSpaces2::QueryVirtual, IDebugDataSpaces2 interface [Windows Debugging], QueryVirtual method, QueryVirtual method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces2::QueryVirtual
+ms.keywords : debugger.queryvirtual, QueryVirtual method [Windows Debugging], IDebugDataSpaces2::QueryVirtual, IDebugDataSpaces2, IDebugDataSpaces_45524d69-d9be-4eb0-971c-3ae6bb6089b2.xml, dbgeng/IDebugDataSpaces2::QueryVirtual, QueryVirtual method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces2 interface [Windows Debugging], QueryVirtual method, QueryVirtual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -96,11 +96,6 @@ This method behaves in a similar way to the Windows SDK function <b>VirtualQuery
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

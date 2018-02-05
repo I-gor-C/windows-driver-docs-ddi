@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b5604cdb-084e-431a-b413-020e8213a18f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFillMemoryUlonglong routine [Installable File System Drivers], ntifs/RtlFillMemoryUlonglong, ifsk.rtlfillmemoryulonglong, rtlref_5e06d1be-accd-40f6-a5b1-2a3b39caacce.xml, RtlFillMemoryUlonglong
+ms.keywords : rtlref_5e06d1be-accd-40f6-a5b1-2a3b39caacce.xml, RtlFillMemoryUlonglong, ntifs/RtlFillMemoryUlonglong, ifsk.rtlfillmemoryulonglong, RtlFillMemoryUlonglong routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,12 @@ For AMD64 systems, this routine is a macro.  For non-AMD64 systems, this routine
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | For AMD64 systems, this routine is available on Microsoft Windows 2000 and later. For non-AMD64 systems, this routine is available on Windows 7 and later. For AMD64 systems, this routine is available on Microsoft Windows 2000 and later. For non-AMD64 systems, this routine is available on Windows 7 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

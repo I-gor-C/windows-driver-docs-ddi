@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3da12a14-a90a-46a6-b67e-55044fdc3ca1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMResetComplete function [Network Drivers Starting with Windows Vista], NdisMResetComplete, ndis/NdisMResetComplete, netvista.ndismresetcomplete, miniport_ndis_functions_ref_cea3e0dd-c6cb-49a7-86e3-68b779a355d2.xml
+ms.keywords : NdisMResetComplete function [Network Drivers Starting with Windows Vista], ndis/NdisMResetComplete, netvista.ndismresetcomplete, NdisMResetComplete, miniport_ndis_functions_ref_cea3e0dd-c6cb-49a7-86e3-68b779a355d2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,20 +113,18 @@ In NDIS 6.0 and later, callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMResetComplete (NDIS 5.1). Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see    NdisMResetComplete (NDIS 5.1). |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
-
 <a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
+
+<a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 

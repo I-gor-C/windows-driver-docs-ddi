@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1aa264fa-b552-41a0-bd43-a62f8f2b533b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DSM_VERSION structure [Storage Devices], _DSM_VERSION, *PDSM_VERSION, storage.dsm_version, PDSM_VERSION structure pointer [Storage Devices], mpiowmi/DSM_VERSION, structs-scsibus_3e00c2b2-0497-4aab-b2e0-a6a5d998e560.xml, DSM_VERSION, mpiowmi/PDSM_VERSION, PDSM_VERSION
+ms.keywords : DSM_VERSION, structs-scsibus_3e00c2b2-0497-4aab-b2e0-a6a5d998e560.xml, PDSM_VERSION structure pointer [Storage Devices], mpiowmi/PDSM_VERSION, storage.dsm_version, _DSM_VERSION, DSM_VERSION structure [Storage Devices], mpiowmi/DSM_VERSION, PDSM_VERSION, *PDSM_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ An unsigned 32-bitfield that represents the QFE number portion of the version.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

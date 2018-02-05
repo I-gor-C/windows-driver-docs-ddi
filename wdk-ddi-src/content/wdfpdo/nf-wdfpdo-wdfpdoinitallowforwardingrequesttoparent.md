@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fc8e4484-4059-4274-bb61-5d3b2f965b19
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectFdoPdoRef_1c47c0f6-2474-419b-8a6e-1105351ab1d7.xml, kmdf.wdfpdoinitallowforwardingrequesttoparent, PFN_WDFPDOINITALLOWFORWARDINGREQUESTTOPARENT, wdfpdo/WdfPdoInitAllowForwardingRequestToParent, WdfPdoInitAllowForwardingRequestToParent method, WdfPdoInitAllowForwardingRequestToParent, wdf.wdfpdoinitallowforwardingrequesttoparent
+ms.keywords : kmdf.wdfpdoinitallowforwardingrequesttoparent, WdfPdoInitAllowForwardingRequestToParent, wdf.wdfpdoinitallowforwardingrequesttoparent, wdfpdo/WdfPdoInitAllowForwardingRequestToParent, DFDeviceObjectFdoPdoRef_1c47c0f6-2474-419b-8a6e-1105351ab1d7.xml, PFN_WDFPDOINITALLOWFORWARDINGREQUESTTOPARENT, WdfPdoInitAllowForwardingRequestToParent method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -73,12 +73,10 @@ For more information about <b>WdfPdoInitAllowForwardingRequestToParent</b> and <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate |
 

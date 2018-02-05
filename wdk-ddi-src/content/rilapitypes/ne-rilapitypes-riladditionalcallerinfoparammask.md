@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1de91e12-1f8c-48fa-85e4-c3cb061fce78
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_ADDTLCI_CALLID, RILADDITIONALCALLERINFOPARAMMASK, rilapitypes/RIL_PARAM_ADDTLCI_CALLERINFOLENGTH, rilapitypes/RIL_PARAM_ADDTLCI_ALL, RILADDITIONALCALLERINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.riladditionalcallerinfoparammask_2, RIL_PARAM_ADDTLCI_ALL, rilapitypes/RIL_PARAM_ADDTLCI_CALLERINFO, RIL_PARAM_ADDTLCI_CALLID, RIL_PARAM_ADDTLCI_CALLERINFOLENGTH, rilapitypes/RILADDITIONALCALLERINFOPARAMMASK, RIL_PARAM_ADDTLCI_CALLERINFO
+ms.keywords : RIL_PARAM_ADDTLCI_ALL, RIL_PARAM_ADDTLCI_CALLERINFO, RILADDITIONALCALLERINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_ADDTLCI_CALLID, RIL_PARAM_ADDTLCI_CALLERINFOLENGTH, rilapitypes/RILADDITIONALCALLERINFOPARAMMASK, rilapitypes/RIL_PARAM_ADDTLCI_CALLERINFOLENGTH, rilapitypes/RIL_PARAM_ADDTLCI_CALLERINFO, netvista.riladditionalcallerinfoparammask_2, RIL_PARAM_ADDTLCI_CALLID, RILADDITIONALCALLERINFOPARAMMASK, rilapitypes/RIL_PARAM_ADDTLCI_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILADDITIONALCALLERINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

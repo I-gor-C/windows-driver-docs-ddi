@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c608643f-e791-44b8-8719-4e98e10fa7b0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_VIDPNSOURCEMODESET_INTERFACE structure [Display Devices], display.dxgk_vidpnsourcemodeset_interface, _DXGK_VIDPNSOURCEMODESET_INTERFACE, DXGK_VIDPNSOURCEMODESET_INTERFACE, d3dkmddi/DXGK_VIDPNSOURCEMODESET_INTERFACE, DmStructs_8e8b4b99-8121-4cff-9d1b-f88a9041e7cd.xml
+ms.keywords : d3dkmddi/DXGK_VIDPNSOURCEMODESET_INTERFACE, display.dxgk_vidpnsourcemodeset_interface, _DXGK_VIDPNSOURCEMODESET_INTERFACE, DXGK_VIDPNSOURCEMODESET_INTERFACE structure [Display Devices], DXGK_VIDPNSOURCEMODESET_INTERFACE, DmStructs_8e8b4b99-8121-4cff-9d1b-f88a9041e7cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,20 +96,18 @@ The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset.md">pfnAcquireSourceModeSet</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
-
 <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a>
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset.md">pfnAcquireSourceModeSet</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpntargetmodeset_interface.md">DXGK_VIDPNTARGETMODESET_INTERFACE</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md">DXGK_MONITORSOURCEMODESET_INTERFACE</a>
 
  
 

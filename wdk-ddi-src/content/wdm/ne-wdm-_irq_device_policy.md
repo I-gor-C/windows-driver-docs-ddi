@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1a605eed-d9a1-4a2f-a095-3e790061527b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IrqPolicyMachineDefault, sysenum_09bcf230-5558-447e-8646-c60d807365d4.xml, IrqPolicyAllProcessorsInMachine, *PIRQ_DEVICE_POLICY, wdm/IrqPolicyOneCloseProcessor, IRQ_DEVICE_POLICY enumeration [Kernel-Mode Driver Architecture], PIRQ_DEVICE_POLICY enumeration pointer [Kernel-Mode Driver Architecture], IRQ_DEVICE_POLICY, IrqPolicySpreadMessagesAcrossAllProcessors, IrqPolicyAllCloseProcessors, IrqPolicySpecifiedProcessors, wdm/IrqPolicyAllProcessorsInMachine, wdm/IrqPolicySpreadMessagesAcrossAllProcessors, wdm/IrqPolicyAllCloseProcessors, wdm/IRQ_DEVICE_POLICY, IrqPolicyOneCloseProcessor, kernel.irq_device_policy, PIRQ_DEVICE_POLICY, wdm/PIRQ_DEVICE_POLICY, wdm/IrqPolicySpecifiedProcessors, _IRQ_DEVICE_POLICY, wdm/IrqPolicyMachineDefault
+ms.keywords : wdm/IrqPolicyOneCloseProcessor, *PIRQ_DEVICE_POLICY, _IRQ_DEVICE_POLICY, wdm/IRQ_DEVICE_POLICY, IRQ_DEVICE_POLICY, sysenum_09bcf230-5558-447e-8646-c60d807365d4.xml, wdm/IrqPolicyAllCloseProcessors, IrqPolicySpreadMessagesAcrossAllProcessors, IRQ_DEVICE_POLICY enumeration [Kernel-Mode Driver Architecture], PIRQ_DEVICE_POLICY enumeration pointer [Kernel-Mode Driver Architecture], wdm/IrqPolicySpecifiedProcessors, IrqPolicyOneCloseProcessor, wdm/IrqPolicyMachineDefault, wdm/IrqPolicyAllProcessorsInMachine, wdm/PIRQ_DEVICE_POLICY, wdm/IrqPolicySpreadMessagesAcrossAllProcessors, IrqPolicyAllCloseProcessors, IrqPolicyMachineDefault, PIRQ_DEVICE_POLICY, IrqPolicyAllProcessorsInMachine, IrqPolicySpecifiedProcessors, kernel.irq_device_policy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : IRQ_DEVICE_POLICY, *PIRQ_DEVICE_POLICY
+req.typenames : "*PIRQ_DEVICE_POLICY, IRQ_DEVICE_POLICY"
 req.product : Windows 10 or later.
 ---
 
@@ -101,9 +101,6 @@ The <b>Interrupt.AffinityPolicy</b> member of the <a href="..\wdm\ns-wdm-_io_res
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

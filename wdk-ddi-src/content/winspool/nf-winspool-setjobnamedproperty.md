@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6A03B009-21D4-4CD2-9BB5-36F402118270
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winspool/SetJobNamedProperty, SetJobNamedProperty, SetJobNamedProperty function [Print Devices], print.setjobnamedproperty
+ms.keywords : SetJobNamedProperty function [Print Devices], winspool/SetJobNamedProperty, SetJobNamedProperty, print.setjobnamedproperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winspool.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

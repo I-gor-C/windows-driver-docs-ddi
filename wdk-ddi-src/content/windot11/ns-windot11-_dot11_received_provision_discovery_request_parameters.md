@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1F6D8F31-D813-4CC3-BBA1-167560436AD6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, *PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, windot11/DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, windot11/PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_received_provision_discovery_request_parameters
+ms.keywords : "*PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, netvista.dot11_received_provision_discovery_request_parameters, windot11/DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, windot11/PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, _DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, *PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS
+req.typenames : "*PDOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS, DOT11_RECEIVED_PROVISION_DISCOVERY_REQUEST_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -108,16 +108,14 @@ The offset, in bytes,  of the array of additional information elements (IEs) rec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439797">NDIS_STATUS_DOT11_WFD_RECEIVED_PROVISION_DISCOVERY_REQUEST</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451808">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_RESPONSE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439797">NDIS_STATUS_DOT11_WFD_RECEIVED_PROVISION_DISCOVERY_REQUEST</a>
 
  
 

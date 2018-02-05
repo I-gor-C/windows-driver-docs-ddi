@@ -63,9 +63,7 @@ typedef struct _DXGK_POWER_COMPONENT_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

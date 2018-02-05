@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 72bc1d4b-cc68-4ea8-9431-c85cbcf135d8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.get_local_host_info4, GET_LOCAL_HOST_INFO4, GET_LOCAL_HOST_INFO4 structure [Buses], *PGET_LOCAL_HOST_INFO4, PGET_LOCAL_HOST_INFO4, PGET_LOCAL_HOST_INFO4 structure pointer [Buses], 1394stct_c06286e2-308d-4534-9a1b-14d3a04b5f86.xml, 1394/GET_LOCAL_HOST_INFO4, 1394/PGET_LOCAL_HOST_INFO4, _GET_LOCAL_HOST_INFO4
+ms.keywords : 1394/GET_LOCAL_HOST_INFO4, PGET_LOCAL_HOST_INFO4 structure pointer [Buses], 1394/PGET_LOCAL_HOST_INFO4, PGET_LOCAL_HOST_INFO4, IEEE.get_local_host_info4, 1394stct_c06286e2-308d-4534-9a1b-14d3a04b5f86.xml, *PGET_LOCAL_HOST_INFO4, _GET_LOCAL_HOST_INFO4, GET_LOCAL_HOST_INFO4 structure [Buses], GET_LOCAL_HOST_INFO4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,16 +78,13 @@ PhysAddrMappingRoutine (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
 
  
 

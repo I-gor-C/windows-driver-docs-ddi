@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7A849A10-2C47-42E2-8BEB-E1D979D3C893
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wudf_interrupt_config, PWUDF_INTERRUPT_CONFIG structure pointer, wudfinterrupt/WUDF_INTERRUPT_CONFIG, wudfinterrupt/PWUDF_INTERRUPT_CONFIG, PWUDF_INTERRUPT_CONFIG, umdf.wudf_interrupt_config, WUDF_INTERRUPT_CONFIG structure, *PWUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG, _WUDF_INTERRUPT_CONFIG
+ms.keywords : PWUDF_INTERRUPT_CONFIG, wudfinterrupt/WUDF_INTERRUPT_CONFIG, umdf.wudf_interrupt_config, *PWUDF_INTERRUPT_CONFIG, _WUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG structure, PWUDF_INTERRUPT_CONFIG structure pointer, WUDF_INTERRUPT_CONFIG, wdf.wudf_interrupt_config, wudfinterrupt/PWUDF_INTERRUPT_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -114,8 +114,6 @@ UMDF supports edge-triggered, line-based interrupts and message-signaled interru
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
 

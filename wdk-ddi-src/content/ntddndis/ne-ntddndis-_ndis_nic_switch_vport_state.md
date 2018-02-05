@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 25999016-95a8-4d78-a4a3-111fc4e910ad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_NIC_SWITCH_VPORT_STATE, NdisNicSwitchVPortStateMaximum, ntddndis/NdisNicSwitchVPortStateUndefined, NDIS_NIC_SWITCH_VPORT_STATE, ntddndis/PNDIS_NIC_SWITCH_VPORT_STATE, _NDIS_NIC_SWITCH_VPORT_STATE, *PNDIS_NIC_SWITCH_VPORT_STATE, ntddndis/NDIS_NIC_SWITCH_VPORT_STATE, PNDIS_NIC_SWITCH_VPORT_STATE enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NdisNicSwitchVPortStateActivated, NdisNicSwitchVPortStateDeactivated, ntddndis/NdisNicSwitchVPortStateDeactivated, NDIS_NIC_SWITCH_VPORT_STATE enumeration [Network Drivers Starting with Windows Vista], NdisNicSwitchVPortStateActivated, netvista.ndis_nic_switch_vport_state, NdisNicSwitchVPortStateUndefined, ntddndis/NdisNicSwitchVPortStateMaximum
+ms.keywords : ntddndis/NdisNicSwitchVPortStateDeactivated, PNDIS_NIC_SWITCH_VPORT_STATE enumeration pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_VPORT_STATE, ntddndis/NdisNicSwitchVPortStateMaximum, _NDIS_NIC_SWITCH_VPORT_STATE, *PNDIS_NIC_SWITCH_VPORT_STATE, NDIS_NIC_SWITCH_VPORT_STATE, NdisNicSwitchVPortStateDeactivated, ntddndis/NdisNicSwitchVPortStateActivated, NdisNicSwitchVPortStateMaximum, ntddndis/PNDIS_NIC_SWITCH_VPORT_STATE, NDIS_NIC_SWITCH_VPORT_STATE enumeration [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_VPORT_STATE, netvista.ndis_nic_switch_vport_state, ntddndis/NdisNicSwitchVPortStateUndefined, NdisNicSwitchVPortStateUndefined, NdisNicSwitchVPortStateActivated
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_NIC_SWITCH_VPORT_STATE, NDIS_NIC_SWITCH_VPORT_STATE"
+req.typenames : NDIS_NIC_SWITCH_VPORT_STATE, *PNDIS_NIC_SWITCH_VPORT_STATE
 ---
 
 # _NDIS_NIC_SWITCH_VPORT_STATE Enumeration
@@ -85,18 +85,16 @@ The <b>VPortState</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_parameters.md">NDIS_NIC_SWITCH_VPORT_PARAMETERS</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a>
 
 <b></b>
 

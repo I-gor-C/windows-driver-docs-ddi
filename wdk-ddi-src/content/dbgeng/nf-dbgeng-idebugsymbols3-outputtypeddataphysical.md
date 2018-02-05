@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0c2ae1ff-bbf1-462f-b9ab-49f74cf12fae
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::OutputTypedDataPhysical, debugger.outputtypeddataphysical, dbgeng/IDebugSymbols2::OutputTypedDataPhysical, dbgeng/IDebugSymbols3::OutputTypedDataPhysical, IDebugSymbols::OutputTypedDataPhysical, IDebugSymbols3::OutputTypedDataPhysical, OutputTypedDataPhysical, dbgeng/IDebugSymbols::OutputTypedDataPhysical, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], OutputTypedDataPhysical method, IDebugSymbols_35ce4485-6c19-44fd-8382-011b0e620f48.xml, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2 interface [Windows Debugging], OutputTypedDataPhysical method, IDebugSymbols interface [Windows Debugging], OutputTypedDataPhysical method
+ms.keywords : IDebugSymbols_35ce4485-6c19-44fd-8382-011b0e620f48.xml, IDebugSymbols interface [Windows Debugging], OutputTypedDataPhysical method, OutputTypedDataPhysical, IDebugSymbols2 interface [Windows Debugging], OutputTypedDataPhysical method, dbgeng/IDebugSymbols2::OutputTypedDataPhysical, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::OutputTypedDataPhysical, IDebugSymbols3, IDebugSymbols2::OutputTypedDataPhysical, IDebugSymbols::OutputTypedDataPhysical, dbgeng/IDebugSymbols::OutputTypedDataPhysical, IDebugSymbols3::OutputTypedDataPhysical, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, OutputTypedDataPhysical method [Windows Debugging], debugger.outputtypeddataphysical, IDebugSymbols3 interface [Windows Debugging], OutputTypedDataPhysical method, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -109,11 +109,6 @@ For more information about types, see <a href="https://msdn.microsoft.com/librar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

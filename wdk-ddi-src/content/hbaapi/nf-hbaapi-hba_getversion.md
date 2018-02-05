@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 05fbdc9b-be15-4d1b-96d5-4ea48fb6c543
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_GetVersion, fibreHBA_rtns_c4e4bef2-44a6-46e5-8da0-abce57a64f7a.xml, HBA_GetVersion, HBA_GetVersion routine [Storage Devices], storage.hba_getversion
+ms.keywords : storage.hba_getversion, HBA_GetVersion routine [Storage Devices], fibreHBA_rtns_c4e4bef2-44a6-46e5-8da0-abce57a64f7a.xml, HBA_GetVersion, hbaapi/HBA_GetVersion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,14 +60,10 @@ The <b>HBA_GetVersion</b> routine returns a value that indicates the version of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

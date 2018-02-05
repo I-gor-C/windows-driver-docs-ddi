@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : B8D09AB4-1F36-44E1-8D4F-33E7E4DBBFE3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode::GetAudioEngineDescriptor, audio.iminiportaudioenginenode_getaudioenginedescriptor, GetAudioEngineDescriptor method [Audio Devices], portcls/IMiniportAudioEngineNode::GetAudioEngineDescriptor, GetAudioEngineDescriptor, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], GetAudioEngineDescriptor method, GetAudioEngineDescriptor method [Audio Devices], IMiniportAudioEngineNode interface
+ms.keywords : IMiniportAudioEngineNode::GetAudioEngineDescriptor, GetAudioEngineDescriptor method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getaudioenginedescriptor, IMiniportAudioEngineNode interface [Audio Devices], GetAudioEngineDescriptor method, GetAudioEngineDescriptor method [Audio Devices], IMiniportAudioEngineNode, GetAudioEngineDescriptor, portcls/IMiniportAudioEngineNode::GetAudioEngineDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,14 +70,10 @@ Audio engine descriptor object. This parameter is of type <a href="..\ksmedia\ns
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

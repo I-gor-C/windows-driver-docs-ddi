@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ed652b52-33c9-4961-af29-b5fc54cf29b8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11DDIARG_TESSELLATION_IO_SIGNATURES, display.d3d11ddiarg_tessellation_io_signatures, UMDisplayDriver_Dx11param_Structs_5fb8a2b5-8291-4c80-a529-303f50f34cac.xml, D3D11DDIARG_TESSELLATION_IO_SIGNATURES, D3D11DDIARG_TESSELLATION_IO_SIGNATURES structure [Display Devices]
+ms.keywords : D3D11DDIARG_TESSELLATION_IO_SIGNATURES, d3d10umddi/D3D11DDIARG_TESSELLATION_IO_SIGNATURES, display.d3d11ddiarg_tessellation_io_signatures, D3D11DDIARG_TESSELLATION_IO_SIGNATURES structure [Display Devices], UMDisplayDriver_Dx11param_Structs_5fb8a2b5-8291-4c80-a529-303f50f34cac.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -92,9 +92,7 @@ The declarations within the shader code itself also show which registers are act
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDIARG_TESSELLATION_IO_SIGNATURES is supported beginning with the Windows 7 operating system. D3D11DDIARG_TESSELLATION_IO_SIGNATURES is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

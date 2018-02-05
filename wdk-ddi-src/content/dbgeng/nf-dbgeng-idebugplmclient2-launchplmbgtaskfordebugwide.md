@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 47793815-F7AC-4E0D-809C-DBB7497BDA30
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugPlmClient2::LaunchPlmBgTaskForDebugWide, IDebugPlmClient2 interface [Windows Debugging], LaunchPlmBgTaskForDebugWide method, IDebugPlmClient2, debugger.idebugplmclient2_launchplmbgtaskfordebugwide, dbgeng/IDebugPlmClient2::LaunchPlmBgTaskForDebugWide, LaunchPlmBgTaskForDebugWide, LaunchPlmBgTaskForDebugWide method [Windows Debugging], IDebugPlmClient2 interface, LaunchPlmBgTaskForDebugWide method [Windows Debugging]
+ms.keywords : LaunchPlmBgTaskForDebugWide, LaunchPlmBgTaskForDebugWide method [Windows Debugging], IDebugPlmClient2 interface, IDebugPlmClient2, dbgeng/IDebugPlmClient2::LaunchPlmBgTaskForDebugWide, IDebugPlmClient2 interface [Windows Debugging], LaunchPlmBgTaskForDebugWide method, IDebugPlmClient2::LaunchPlmBgTaskForDebugWide, LaunchPlmBgTaskForDebugWide method [Windows Debugging], debugger.idebugplmclient2_launchplmbgtaskfordebugwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,14 +90,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

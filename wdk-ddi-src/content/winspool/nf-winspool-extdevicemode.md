@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : dade9d25-7143-4566-adc1-0c97cb508c07
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.extdevicemode, spoolfnc_56c49c94-99f4-43b9-90eb-189041a1dd3a.xml, ExtDeviceMode, ExtDeviceMode function [Print Devices], winspool/ExtDeviceMode
+ms.keywords : ExtDeviceMode, ExtDeviceMode function [Print Devices], print.extdevicemode, winspool/ExtDeviceMode, spoolfnc_56c49c94-99f4-43b9-90eb-189041a1dd3a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -144,11 +144,7 @@ The <b>ExtDeviceMode</b> function calls the <b>DocumentProperties</b> function (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winspool.h (include Winspool.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Winspool.lib |
+| **DLL** | WinSpool.drv |

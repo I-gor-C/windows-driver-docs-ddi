@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e089827-dd50-43cb-9e1a-34c439780831
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxMonitorCreate, IddCxMonitorCreate method [Display Devices], iddcx/IddCxMonitorCreate, display.iddcxmonitorcreate
+ms.keywords : display.iddcxmonitorcreate, IddCxMonitorCreate, IddCxMonitorCreate method [Display Devices], iddcx/IddCxMonitorCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,7 @@ Output arguments to the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

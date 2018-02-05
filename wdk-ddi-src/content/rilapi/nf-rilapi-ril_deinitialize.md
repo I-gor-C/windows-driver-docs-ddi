@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1902df2a-6325-46d5-871a-5af6f3ce7f18
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_Deinitialize, RIL_Deinitialize, RIL_Deinitialize method [Network Drivers Starting with Windows Vista], netvista.ril_deinitialize
+ms.keywords : netvista.ril_deinitialize, RIL_Deinitialize, RIL_Deinitialize method [Network Drivers Starting with Windows Vista], rilapi/RIL_Deinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

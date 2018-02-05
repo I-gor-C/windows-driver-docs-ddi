@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : cec501d9-17e3-46a1-929e-4f9ba35ba721
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : DrmCreateContentMixed, drmk/DrmCreateContentMixed, audio.drmcreatecontentmixed, DrmCreateContentMixed function [Audio Devices], aud-prop2_19a8815e-db9d-43a9-ad5a-c081a1af4f99.xml
+ms.keywords : aud-prop2_19a8815e-db9d-43a9-ad5a-c081a1af4f99.xml, drmk/DrmCreateContentMixed, DrmCreateContentMixed, audio.drmcreatecontentmixed, DrmCreateContentMixed function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TX_METADATA, WDI_TX_METADATA"
+req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 
@@ -88,30 +88,26 @@ After a KS audio filter finishes using a content ID that it created using <code>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | drmk.h (include Drmk.h) |
-| **Library** |  |
+| **Library** | Drmk.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536254">DEFINE_DRMRIGHTS_DEFAULT</a>
+
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
+
+<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536581">IDrmPort::CreateContentMixed</a>
+
+<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
 
 <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
 
 <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>
-
-<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536254">DEFINE_DRMRIGHTS_DEFAULT</a>
-
-<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536581">IDrmPort::CreateContentMixed</a>
-
-<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
 
  
 

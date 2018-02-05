@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : B1F5A79A-8F64-4B7B-ADB4-BDD8EC17F22E
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OPTCOMBO, compstui/OPTCOMBO, POPTCOMBO, *POPTCOMBO, POPTCOMBO structure pointer [Print Devices], compstui/POPTCOMBO, _OPTCOMBO, print.optcombo, OPTCOMBO structure [Print Devices]
+ms.keywords : POPTCOMBO, compstui/POPTCOMBO, compstui/OPTCOMBO, OPTCOMBO, _OPTCOMBO, POPTCOMBO structure pointer [Print Devices], OPTCOMBO structure [Print Devices], *POPTCOMBO, print.optcombo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OPTCOMBO, *POPTCOMBO
+req.typenames : "*POPTCOMBO, OPTCOMBO"
 ---
 
 # _OPTCOMBO structure
@@ -84,7 +84,4 @@ typedef struct _OPTCOMBO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h |

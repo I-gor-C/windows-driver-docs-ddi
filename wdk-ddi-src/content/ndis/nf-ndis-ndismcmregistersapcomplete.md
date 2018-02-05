@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 53f94e25-ca6c-4230-8447-d36774322dc7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCmRegisterSapComplete, netvista.ndismcmregistersapcomplete, condis_mcm_ref_4b7dfebf-1828-41cd-9645-0fc6774cc9a8.xml, NdisMCmRegisterSapComplete, NdisMCmRegisterSapComplete macro [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis/NdisMCmRegisterSapComplete, condis_mcm_ref_4b7dfebf-1828-41cd-9645-0fc6774cc9a8.xml, NdisMCmRegisterSapComplete macro [Network Drivers Starting with Windows Vista], netvista.ndismcmregistersapcomplete, NdisMCmRegisterSapComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -82,8 +82,8 @@ An MCM driver must call
     returned NDIS_STATUS_PENDING when it was called with the given 
     <i>NdisSapHandle</i> . The call to 
     <b>NdisMCmRegisterSapComplete</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclregistersapcomplete" tabindex="0"><i>
-    ProtocolClRegisterSapComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
+    ProtocolClRegisterSapComplete</a> function.
 
 If the MCM driver sets 
     <i>Status</i> to anything other than NDIS_STATUS_SUCCESS, it should consider the 
@@ -100,30 +100,28 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmRegisterSapComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmRegisterSapComplete   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmRegisterSapComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmRegisterSapComplete   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
-
-<mshelp:link keywords="netvista.protocolclregistersapcomplete" tabindex="0"><i>
-   ProtocolClRegisterSapComplete</i></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cl_register_sap_complete.md">
+   ProtocolClRegisterSapComplete</a>
 
 <a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
+
+<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
 
 <a href="..\ndis\nf-ndis-ndiscmregistersapcomplete.md">NdisCmRegisterSapComplete</a>
 
-<a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
 
  
 

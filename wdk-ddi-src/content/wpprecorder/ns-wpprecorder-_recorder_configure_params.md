@@ -63,7 +63,4 @@ To initialize this structure, the caller must call <a href="..\wpprecorder\nf-wp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wpprecorder.h |

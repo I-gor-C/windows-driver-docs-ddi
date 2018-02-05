@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7c9f7c52-edb3-48cd-b532-0e100692fee4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILUMTSMRL, netvista.riluiccsubscribernumbers, RILUICCSUBSCRIBERNUMBERS, RILUICCSUBSCRIBERNUMBERS structure [Network Drivers Starting with Windows Vista], *LPRILUICCSUBSCRIBERNUMBERS
+ms.keywords : netvista.riluiccsubscribernumbers, RILUICCSUBSCRIBERNUMBERS, rilapitypes/RILUMTSMRL, RILUICCSUBSCRIBERNUMBERS structure [Network Drivers Starting with Windows Vista], *LPRILUICCSUBSCRIBERNUMBERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,6 @@ Array of <a href="..\rilapitypes\ns-rilapitypes-rilsubscriberinfo.md">RILSUBSCRI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

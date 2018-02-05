@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 84d81ae3-708d-48ee-99c5-b79f085a9592
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : DrmForwardContentToFileObject, audio.drmforwardcontenttofileobject, aud-prop2_f0deebf5-ef63-406b-a424-b084e775333c.xml, DrmForwardContentToFileObject function [Audio Devices], drmk/DrmForwardContentToFileObject
+ms.keywords : drmk/DrmForwardContentToFileObject, audio.drmforwardcontenttofileobject, DrmForwardContentToFileObject function [Audio Devices], DrmForwardContentToFileObject, aud-prop2_f0deebf5-ef63-406b-a424-b084e775333c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TX_METADATA, WDI_TX_METADATA"
+req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 
@@ -94,14 +94,10 @@ The <code>DrmForwardContentToFileObject</code> function authenticates the KS aud
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | drmk.h (include Drmk.h) |
-| **Library** |  |
+| **Library** | Drmk.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

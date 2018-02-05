@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a92865bc-620f-434d-a185-b837924599fc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_adaptertype, d3dkmthk/D3DKMT_ADAPTERTYPE, D3DKMT_ADAPTERTYPE structure [Display Devices], D3DKMT_ADAPTERTYPE, _D3DKMT_ADAPTERTYPE
+ms.keywords : D3DKMT_ADAPTERTYPE, _D3DKMT_ADAPTERTYPE, display.d3dkmt_adaptertype, d3dkmthk/D3DKMT_ADAPTERTYPE, D3DKMT_ADAPTERTYPE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ typedef struct _D3DKMT_ADAPTERTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |

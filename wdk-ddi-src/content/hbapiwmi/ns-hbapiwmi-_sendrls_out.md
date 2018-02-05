@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6eccc5e8-7bf6-40bd-abb9-94b6fe4418a0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_SendRLS_OUT, SendRLS_OUT structure [Storage Devices], PSendRLS_OUT, *PSendRLS_OUT, hbapiwmi/SendRLS_OUT, PSendRLS_OUT structure pointer [Storage Devices], SendRLS_OUT, hbapiwmi/PSendRLS_OUT, structs-Fibre_0d3c1fb1-9827-4962-8aec-97fa6bd84d76.xml, storage.sendrls_out"
+ms.keywords : SendRLS_OUT structure [Storage Devices], PSendRLS_OUT, SendRLS_OUT, *PSendRLS_OUT, _SendRLS_OUT, storage.sendrls_out, hbapiwmi/SendRLS_OUT, structs-Fibre_0d3c1fb1-9827-4962-8aec-97fa6bd84d76.xml, PSendRLS_OUT structure pointer [Storage Devices], hbapiwmi/PSendRLS_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the SendRLS_OUT structure in <i>Hb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

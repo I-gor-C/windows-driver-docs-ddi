@@ -115,9 +115,8 @@ The changes made to the band table by this request are committed to the device a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
-| **IRQL** |  |
 
 ## See Also
 

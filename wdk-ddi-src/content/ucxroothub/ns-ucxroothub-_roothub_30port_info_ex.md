@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3FA3494F-DFFF-414E-B88C-DF7C034B96C6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._roothub_30port_info_ex, ROOTHUB_30PORT_INFO_EX, _ROOTHUB_30PORT_INFO_EX, ucxroothub/_ROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX structure [Buses], ucxroothub/P_ROOTHUB_30PORT_INFO_EX, *PROOTHUB_30PORT_INFO_EX, P_ROOTHUB_30PORT_INFO_EX, P_ROOTHUB_30PORT_INFO_EX structure pointer [Buses]
+ms.keywords : "_ROOTHUB_30PORT_INFO_EX, P_ROOTHUB_30PORT_INFO_EX structure pointer [Buses], P_ROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX, ucxroothub/P_ROOTHUB_30PORT_INFO_EX, *PROOTHUB_30PORT_INFO_EX, buses._roothub_30port_info_ex, ucxroothub/_ROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX structure [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ The count of bus speeds supported.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxroothub.h (include Ucxclass.h) |

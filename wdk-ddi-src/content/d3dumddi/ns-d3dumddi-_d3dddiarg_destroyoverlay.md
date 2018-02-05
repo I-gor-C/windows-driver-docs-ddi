@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a468205c-288c-49d5-ab14-0ee39dca7b7c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DESTROYOVERLAY structure [Display Devices], display.d3dddiarg_destroyoverlay, _D3DDDIARG_DESTROYOVERLAY, UMDisplayDriver_param_Structs_e7a2d82a-2e1c-4362-ae4d-23617911de3b.xml, d3dumddi/D3DDDIARG_DESTROYOVERLAY, D3DDDIARG_DESTROYOVERLAY
+ms.keywords : D3DDDIARG_DESTROYOVERLAY, display.d3dddiarg_destroyoverlay, _D3DDDIARG_DESTROYOVERLAY, UMDisplayDriver_param_Structs_e7a2d82a-2e1c-4362-ae4d-23617911de3b.xml, D3DDDIARG_DESTROYOVERLAY structure [Display Devices], d3dumddi/D3DDDIARG_DESTROYOVERLAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DDDIARG_DESTROYOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

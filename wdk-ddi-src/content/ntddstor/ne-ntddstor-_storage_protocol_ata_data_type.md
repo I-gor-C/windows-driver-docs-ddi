@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4B42E143-17F5-4841-A9EA-C225B167E242
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaDataTypeLogPage, AtaDataTypeUnknown, ntddstor/AtaDataTypeUnknown, AtaDataTypeIdentify, ntddstor/AtaDataTypeLogPage, *PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/PSTORAGE_PROTOCOL_ATA_DATA_TYPE, _STORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeIdentify, STORAGE_PROTOCOL_ATA_DATA_TYPE enumeration [Storage Devices], ntddstor/STORAGE_PROTOCOL_ATA_DATA_TYPE, PSTORAGE_PROTOCOL_ATA_DATA_TYPE enumeration pointer [Storage Devices], STORAGE_PROTOCOL_ATA_DATA_TYPE, PSTORAGE_PROTOCOL_ATA_DATA_TYPE, storage.storage_protocol_ata_data_type
+ms.keywords : "*PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeLogPage, storage.storage_protocol_ata_data_type, STORAGE_PROTOCOL_ATA_DATA_TYPE enumeration [Storage Devices], AtaDataTypeLogPage, PSTORAGE_PROTOCOL_ATA_DATA_TYPE enumeration pointer [Storage Devices], _STORAGE_PROTOCOL_ATA_DATA_TYPE, AtaDataTypeUnknown, PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/STORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeIdentify, AtaDataTypeIdentify, STORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeUnknown"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -110,7 +110,5 @@ Set the <b>DataType</b>  field to an enumeration value defined by <b>STORAGE_PRO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ntddstor.h |

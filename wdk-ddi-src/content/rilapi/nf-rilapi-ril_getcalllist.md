@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7b2e0c82-c204-4d57-a2d2-066b8772ce13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_GetCallList, RIL_GetCallList method [Network Drivers Starting with Windows Vista], RIL_GetCallList, netvista.ril_getcalllist
+ms.keywords : netvista.ril_getcalllist, RIL_GetCallList method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetCallList, RIL_GetCallList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

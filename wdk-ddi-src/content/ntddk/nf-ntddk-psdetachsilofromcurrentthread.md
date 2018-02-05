@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E364130B-9709-4FD9-8654-9FBC52E29145
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PsDetachSiloFromCurrentThread, PsDetachSiloFromCurrentThread, kernel.psdetachsilofromcurrentthread, PsDetachSiloFromCurrentThread routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.psdetachsilofromcurrentthread, PsDetachSiloFromCurrentThread, ntddk/PsDetachSiloFromCurrentThread, PsDetachSiloFromCurrentThread routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,10 @@ This routine does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

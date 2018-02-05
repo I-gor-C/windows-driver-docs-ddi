@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0c3fd576-48de-454b-8015-51767b21f17e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbRequestCompletionParams, umdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, IWDFUsbRequestCompletionParams interface, GetDeviceControlTransferParameters method, GetDeviceControlTransferParameters method, IWDFUsbRequestCompletionParams interface, wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, GetDeviceControlTransferParameters method, UMDFRequestObjectRef_b645716e-2ec3-45f3-a3b2-199374aadef8.xml, IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, wudfusb/IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, GetDeviceControlTransferParameters
+ms.keywords : GetDeviceControlTransferParameters, GetDeviceControlTransferParameters method, wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, IWDFUsbRequestCompletionParams interface, GetDeviceControlTransferParameters method, umdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, wudfusb/IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, UMDFRequestObjectRef_b645716e-2ec3-45f3-a3b2-199374aadef8.xml, GetDeviceControlTransferParameters method, IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, IWDFUsbRequestCompletionParams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -83,14 +83,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

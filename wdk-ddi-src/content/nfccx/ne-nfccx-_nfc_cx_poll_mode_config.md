@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : A073D570-DF55-424E-8E86-49DE6A31E6FB
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfccx/NFC_CX_POLL_DEFAULT, nfccx/NFC_CX_POLL_NFC_ACTIVE, NFC_CX_POLL_NFC_F_424, _NFC_CX_POLL_MODE_CONFIG, NFC_CX_POLL_MODE_CONFIG, NFC_CX_POLL_NFC_A, nfccx/NFC_CX_POLL_NFC_15693, NFC_CX_POLL_MODE_CONFIG enumeration [Near-Field Proximity Drivers], nfccx/NFC_CX_POLL_NFC_F_424, nfccx/NFC_CX_POLL_NFC_B, PNFC_CX_POLL_MODE_CONFIG, *PNFC_CX_POLL_MODE_CONFIG, NFC_CX_POLL_NFC_F_212, nfccx/NFC_CX_POLL_MODE_CONFIG, NFC_CX_POLL_DEFAULT, NFC_CX_POLL_NFC_15693, nfccx/NFC_CX_POLL_NFC_A, NFC_CX_POLL_MODE_CONFIG, *PNFC_CX_POLL_MODE_CONFIG enumeration [Near-Field Proximity Drivers], NFC_CX_POLL_NFC_ACTIVE, nfpdrivers.nfc_cx_poll_mode_config, NFC_CX_POLL_NFC_B, nfccx/NFC_CX_POLL_NFC_F_212, NFC_CX_POLL_MODE_CONFIG, *PNFC_CX_POLL_MODE_CONFIG
+ms.keywords : PNFC_CX_POLL_MODE_CONFIG, nfccx/NFC_CX_POLL_DEFAULT, NFC_CX_POLL_MODE_CONFIG, *PNFC_CX_POLL_MODE_CONFIG enumeration [Near-Field Proximity Drivers], NFC_CX_POLL_NFC_15693, *PNFC_CX_POLL_MODE_CONFIG, NFC_CX_POLL_NFC_F_212, NFC_CX_POLL_MODE_CONFIG enumeration [Near-Field Proximity Drivers], nfccx/NFC_CX_POLL_MODE_CONFIG, NFC_CX_POLL_MODE_CONFIG, nfccx/NFC_CX_POLL_NFC_ACTIVE, nfccx/NFC_CX_POLL_NFC_B, NFC_CX_POLL_MODE_CONFIG, *PNFC_CX_POLL_MODE_CONFIG, nfccx/NFC_CX_POLL_NFC_F_212, NFC_CX_POLL_DEFAULT, nfccx/NFC_CX_POLL_NFC_F_424, NFC_CX_POLL_NFC_A, nfccx/NFC_CX_POLL_NFC_15693, nfpdrivers.nfc_cx_poll_mode_config, _NFC_CX_POLL_MODE_CONFIG, nfccx/NFC_CX_POLL_NFC_A, NFC_CX_POLL_NFC_F_424, NFC_CX_POLL_NFC_B, NFC_CX_POLL_NFC_ACTIVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -103,9 +103,7 @@ typedef enum _NFC_CX_POLL_MODE_CONFIG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h |
 
 ## See Also

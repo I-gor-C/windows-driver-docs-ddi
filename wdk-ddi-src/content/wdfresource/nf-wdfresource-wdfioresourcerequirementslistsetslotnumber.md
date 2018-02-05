@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1dc18c48-2331-4980-b741-59a73d3edaa6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfioresourcerequirementslistsetslotnumber, WdfIoResourceRequirementsListSetSlotNumber method, WdfIoResourceRequirementsListSetSlotNumber, DFResourceObjectRef_a4c6729c-ba18-49e0-8e8c-94c70c5c9e8a.xml, wdfresource/WdfIoResourceRequirementsListSetSlotNumber, PFN_WDFIORESOURCEREQUIREMENTSLISTSETSLOTNUMBER, kmdf.wdfioresourcerequirementslistsetslotnumber
+ms.keywords : wdf.wdfioresourcerequirementslistsetslotnumber, WdfIoResourceRequirementsListSetSlotNumber, DFResourceObjectRef_a4c6729c-ba18-49e0-8e8c-94c70c5c9e8a.xml, kmdf.wdfioresourcerequirementslistsetslotnumber, wdfresource/WdfIoResourceRequirementsListSetSlotNumber, WdfIoResourceRequirementsListSetSlotNumber method, PFN_WDFIORESOURCEREQUIREMENTSLISTSETSLOTNUMBER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -80,11 +80,9 @@ For more information about resource requirements lists, see <a href="https://doc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

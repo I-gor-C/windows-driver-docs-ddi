@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a33a216d-f97e-44be-b9a5-bdadf1c422e1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.oemquerycolorprofile, print_obsoletefunctions_f21cf62d-45bd-4248-8b0c-a19cc982ad3c.xml, OEMQueryColorProfile function [Print Devices], printoem/OEMQueryColorProfile, OEMQueryColorProfile
+ms.keywords : OEMQueryColorProfile, print_obsoletefunctions_f21cf62d-45bd-4248-8b0c-a19cc982ad3c.xml, print.oemquerycolorprofile, OEMQueryColorProfile function [Print Devices], printoem/OEMQueryColorProfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,11 +101,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

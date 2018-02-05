@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 216fe649-18c0-4782-8040-21ce87fbd888
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceWdmGetAttachedDevice method, PFN_WDFDEVICEWDMGETATTACHEDDEVICE, kmdf.wdfdevicewdmgetattacheddevice, wdf.wdfdevicewdmgetattacheddevice, DFDeviceObjectGeneralRef_cfd9610b-28f6-4c5c-a532-9c5fae3576fc.xml, wdfdevice/WdfDeviceWdmGetAttachedDevice, WdfDeviceWdmGetAttachedDevice
+ms.keywords : WdfDeviceWdmGetAttachedDevice method, wdfdevice/WdfDeviceWdmGetAttachedDevice, kmdf.wdfdevicewdmgetattacheddevice, WdfDeviceWdmGetAttachedDevice, PFN_WDFDEVICEWDMGETATTACHEDDEVICE, DFDeviceObjectGeneralRef_cfd9610b-28f6-4c5c-a532-9c5fae3576fc.xml, wdf.wdfdevicewdmgetattacheddevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,18 @@ The pointer that the <b>WdfDeviceWdmGetAttachedDevice</b> method returns is vali
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetphysicaldevice.md">WdfDeviceWdmGetPhysicalDevice</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a>
 
  
 

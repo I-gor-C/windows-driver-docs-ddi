@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0f7a424e-5d83-4ab0-b5a2-7e9093bbd34b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ATA_PASS_THROUGH_DIRECT, ntddscsi/ATA_PASS_THROUGH_DIRECT, structs-IDE_e59bb754-2ad4-49d0-b68c-8ef7b6273af5.xml, _ATA_PASS_THROUGH_DIRECT, ATA_PASS_THROUGH_DIRECT structure [Storage Devices], PATA_PASS_THROUGH_DIRECT, PATA_PASS_THROUGH_DIRECT structure pointer [Storage Devices], ntddscsi/PATA_PASS_THROUGH_DIRECT, *PATA_PASS_THROUGH_DIRECT, storage.ata_pass_through_direct
+ms.keywords : ATA_PASS_THROUGH_DIRECT, PATA_PASS_THROUGH_DIRECT structure pointer [Storage Devices], ATA_PASS_THROUGH_DIRECT structure [Storage Devices], PATA_PASS_THROUGH_DIRECT, structs-IDE_e59bb754-2ad4-49d0-b68c-8ef7b6273af5.xml, ntddscsi/ATA_PASS_THROUGH_DIRECT, storage.ata_pass_through_direct, ntddscsi/PATA_PASS_THROUGH_DIRECT, _ATA_PASS_THROUGH_DIRECT, *PATA_PASS_THROUGH_DIRECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -356,9 +356,6 @@ The ATA_PASS_THROUGH_DIRECT structure is used with <a href="..\ntddscsi\ni-ntdds
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 57c146bc-574f-4137-89bb-e891e005de05
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PMONITORREG, print.monitorreg, MONITORREG, _MONITORREG, winsplp/PMONITORREG, MONITORREG structure [Print Devices], PMONITORREG structure pointer [Print Devices], winsplp/MONITORREG, PMONITORREG, spoolfnc_2d0db8db-eea5-461a-a257-1fb986001dac.xml"
+ms.keywords : print.monitorreg, PMONITORREG, MONITORREG, MONITORREG structure [Print Devices], PMONITORREG structure pointer [Print Devices], _MONITORREG, winsplp/MONITORREG, spoolfnc_2d0db8db-eea5-461a-a257-1fb986001dac.xml, *PMONITORREG, winsplp/PMONITORREG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMONITORREG, MONITORREG"
+req.typenames : MONITORREG, *PMONITORREG
 req.product : Windows 10 or later.
 ---
 
@@ -288,9 +288,6 @@ The spooler registry functions use HANDLE and PHANDLE parameter types instead of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also

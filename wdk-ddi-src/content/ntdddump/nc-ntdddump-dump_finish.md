@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVERIFY_INFORMATION, VERIFY_INFORMATION"
+req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 
@@ -68,14 +68,9 @@ If the routine succeeds, it must return STATUS_SUCCESS. Otherwise, it must retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista and Windows Server 2008. Available starting with Windows Vista and Windows Server 2008. |
+| **Target Platform** | Desktop |
 | **Header** | ntdddump.h (include Ntdddump.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

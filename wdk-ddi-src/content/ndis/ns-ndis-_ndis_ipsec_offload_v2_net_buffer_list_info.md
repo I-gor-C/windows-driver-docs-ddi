@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f528ae2f-54fc-4edc-99bf-b1958837584b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, task_offload_IPsecv2_ref_b675fa29-2688-43a5-8608-3fb750093a46.xml, *PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, ndis/PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, netvista.ndis_ipsec_offload_v2_net_buffer_list_info, _NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : "_NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, task_offload_IPsecv2_ref_b675fa29-2688-43a5-8608-3fb750093a46.xml, ndis/NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO, netvista.ndis_ipsec_offload_v2_net_buffer_list_info, *PNDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,8 +80,8 @@ Specifically, the TCP/IP transport supplies a value for the
     has the same value as the 
     <b>OffloadHandle</b> value that was reported to the TCP/IP transport when the miniport driver successfully
     added a set of SAs to a NIC. All the SAs were added to the NIC when the miniport driver responded to an 
-    <mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_add_sa" tabindex="0">
-    OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</mshelp:link> request.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
+    OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a> request.
 
 Before a miniport driver indicates up a receive packet that has one or more IPsec payloads, the driver
     specifies IPsec information in the NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO structure that is
@@ -96,24 +96,22 @@ To set and get the IPsec information, use the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_add_sa" tabindex="0">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-delete-sa">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-task-ipsec-offload-v2-add-sa">
+   OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA</a>
 
 <a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v1_net_buffer_list_info.md">NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO</a>
 
-<mshelp:link keywords="netvista.oid_tcp_task_ipsec_offload_v2_delete_sa" tabindex="0">
-   OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA</mshelp:link>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 
  
 

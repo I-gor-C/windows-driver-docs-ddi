@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : c37844d9-206a-4060-8b46-9afe691fe8f9
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : BTH_VENDOR_SPECIFIC_COMMAND, bthioctl/BTH_VENDOR_SPECIFIC_COMMAND, _BTH_VENDOR_SPECIFIC_COMMAND, *PBTH_VENDOR_SPECIFIC_COMMAND, bltooth.bth_vendor_specific_command, BTH_VENDOR_SPECIFIC_COMMAND structure [Bluetooth Devices], PBTH_VENDOR_SPECIFIC_COMMAND, bthioctl/PBTH_VENDOR_SPECIFIC_COMMAND, bth_ref_568c918a-282f-48e0-994a-c49289976bb6.xml, PBTH_VENDOR_SPECIFIC_COMMAND structure pointer [Bluetooth Devices]
+ms.keywords : PBTH_VENDOR_SPECIFIC_COMMAND structure pointer [Bluetooth Devices], PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND structure [Bluetooth Devices], bthioctl/BTH_VENDOR_SPECIFIC_COMMAND, bltooth.bth_vendor_specific_command, *PBTH_VENDOR_SPECIFIC_COMMAND, bthioctl/PBTH_VENDOR_SPECIFIC_COMMAND, bth_ref_568c918a-282f-48e0-994a-c49289976bb6.xml, _BTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -93,8 +93,8 @@ A BOOLEAN value that specifies if all the patterns in the
 
 ## Remarks
 This BTH_VENDOR_SPECIFIC_COMMAND structure specifies the input buffer for the 
-    <mshelp:link keywords="bltooth.ioctl_bth_hci_vendor_command" tabindex="0"><b>
-    IOCTL_BTH_HCI_VENDOR_COMMAND</b></mshelp:link> IOCTL. This IOCTL can be used to send vendor-specific commands to
+    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_hci_vendor_command.md">
+    IOCTL_BTH_HCI_VENDOR_COMMAND</a> IOCTL. This IOCTL can be used to send vendor-specific commands to
     Bluetooth radios.
 
 To specify the size of the HCI command data, use the
@@ -116,18 +116,16 @@ If such patterns are specified, the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Available in Windows Vista, and later versions of Windows. Versions:\_Available in Windows Vista, and later versions of Windows. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 
 ## See Also
 
-<a href="..\bthioctl\ns-bthioctl-_bth_command_header.md">BTH_COMMAND_HEADER</a>
-
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_hci_vendor_command.md">IOCTL_BTH_HCI_VENDOR_COMMAND</a>
 
 <a href="..\bthioctl\ns-bthioctl-_bth_vendor_pattern.md">BTH_VENDOR_PATTERN</a>
+
+<a href="..\bthioctl\ns-bthioctl-_bth_command_header.md">BTH_COMMAND_HEADER</a>
 
  
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVPCI_PNP_ID, VPCI_PNP_ID"
+req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 
@@ -80,20 +80,15 @@ An <i>EnumerateInterruptSource</i> callback routine is called at the same IRQL a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | pepfx.h |
-| **Library** |  |
 | **IRQL** | See Remarks. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\pepfx\nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md">EnumerateUnmaskedInterrupts</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a>
+
+<a href="..\pepfx\nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md">EnumerateUnmaskedInterrupts</a>
 
  
 

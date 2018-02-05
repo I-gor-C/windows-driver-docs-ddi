@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9314909a-4580-49f9-b587-4d5e70ff0d4f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_MSI_ALL, ntddrilapitypes/RILMSGSERVICEINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_MSI_ALL, RILMSGSERVICEINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_MSI_STOREUSED, RILMSGSERVICEINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_MSI_STORETOTAL, netvista.rilmsgserviceinfoparammask, RIL_PARAM_MSI_STORETOTAL, ntddrilapitypes/RIL_PARAM_MSI_STOREUSED
+ms.keywords : ntddrilapitypes/RIL_PARAM_MSI_STOREUSED, ntddrilapitypes/RIL_PARAM_MSI_STORETOTAL, ntddrilapitypes/RIL_PARAM_MSI_ALL, netvista.rilmsgserviceinfoparammask, RIL_PARAM_MSI_STORETOTAL, RILMSGSERVICEINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_MSI_ALL, ntddrilapitypes/RILMSGSERVICEINFOPARAMMASK, RIL_PARAM_MSI_STOREUSED, RILMSGSERVICEINFOPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -79,7 +79,4 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f6b8146e-dbe2-4c73-beb2-02868db9fb27
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanPinTypePuk1, wwan/WwanPinTypeNetworkSubsetPuk, WwanPinTypeNone, WwanPinTypeNetworkSubsetPuk, WwanPinTypePin1, wwan/WwanPinTypeDeviceFirstSimPuk, wwan/WwanPinTypeSvcProviderPuk, WwanPinTypePuk2, wwan/WwanPinTypeNetworkPuk, wwan/WwanPinTypeDeviceFirstSimPin, wwan/WwanPinTypeNetworkSubsetPin, wwan/WwanPinTypeCustom, wwan/WwanPinTypePuk2, WWAN_PIN_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanPinTypeDeviceSimPin, WWAN_PIN_TYPE, wwan/WwanPinTypeCorporatePin, WwanPinTypeDeviceFirstSimPuk, wwan/WwanPinTypePin1, WwanPinTypeNetworkSubsetPin, wwan/WwanPinTypeDeviceSimPin, WwanPinTypeCorporatePuk, WwanPinTypeMax, WwanRef_f94cf79e-63f3-47e9-bd40-beb9cd32f0b8.xml, WwanPinTypeCustom, wwan/WwanPinTypeNone, wwan/WwanPinTypeCorporatePuk, WwanPinTypeNetworkPin, wwan/WwanPinTypePin2, PWWAN_PIN_TYPE, netvista.wwan_pin_type, WwanPinTypeSvcProviderPin, wwan/WwanPinTypeMax, WwanPinTypeNetworkPuk, _WWAN_PIN_TYPE, wwan/WwanPinTypeSvcProviderPin, PWWAN_PIN_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_PIN_TYPE, WwanPinTypePuk1, wwan/WwanPinTypeNetworkPin, WwanPinTypeSubsidyLock, WwanPinTypeCorporatePin, *PWWAN_PIN_TYPE, WwanPinTypeSvcProviderPuk, WwanPinTypePin2, wwan/WWAN_PIN_TYPE, wwan/WwanPinTypeSubsidyLock, WwanPinTypeDeviceFirstSimPin
+ms.keywords : WwanPinTypeCustom, wwan/WwanPinTypeCustom, netvista.wwan_pin_type, wwan/PWWAN_PIN_TYPE, wwan/WwanPinTypePin2, wwan/WwanPinTypeSvcProviderPin, WwanPinTypeSvcProviderPuk, wwan/WwanPinTypeNetworkSubsetPin, WWAN_PIN_TYPE, WwanRef_f94cf79e-63f3-47e9-bd40-beb9cd32f0b8.xml, WwanPinTypeNetworkPuk, WwanPinTypePuk2, WwanPinTypeNetworkPin, WwanPinTypeDeviceFirstSimPin, _WWAN_PIN_TYPE, WwanPinTypeDeviceSimPin, WwanPinTypeCorporatePin, wwan/WWAN_PIN_TYPE, wwan/WwanPinTypeCorporatePin, WwanPinTypeNetworkSubsetPin, WwanPinTypeNetworkSubsetPuk, WwanPinTypeDeviceFirstSimPuk, wwan/WwanPinTypeDeviceFirstSimPin, WwanPinTypeSubsidyLock, WwanPinTypeSvcProviderPin, wwan/WwanPinTypeNetworkSubsetPuk, wwan/WwanPinTypeDeviceFirstSimPuk, WwanPinTypeCorporatePuk, wwan/WwanPinTypeMax, wwan/WwanPinTypePuk2, wwan/WwanPinTypeSvcProviderPuk, WwanPinTypePin2, PWWAN_PIN_TYPE, wwan/WwanPinTypeDeviceSimPin, wwan/WwanPinTypePuk1, PWWAN_PIN_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanPinTypeNetworkPin, WwanPinTypeNone, wwan/WwanPinTypeCorporatePuk, wwan/WwanPinTypeNone, *PWWAN_PIN_TYPE, WwanPinTypePuk1, WwanPinTypeMax, WWAN_PIN_TYPE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanPinTypePin1, WwanPinTypePin1, wwan/WwanPinTypeSubsidyLock, wwan/WwanPinTypeNetworkPuk
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -183,16 +183,14 @@ typedef enum _WWAN_PIN_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_pin_action.md">WWAN_PIN_ACTION</a>
-
 <a href="..\wwan\ns-wwan-_wwan_pin_info.md">WWAN_PIN_INFO</a>
+
+<a href="..\wwan\ns-wwan-_wwan_pin_action.md">WWAN_PIN_ACTION</a>
 
  
 

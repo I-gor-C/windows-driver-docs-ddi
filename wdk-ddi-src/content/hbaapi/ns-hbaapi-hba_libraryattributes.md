@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9dc03c5d-5e14-4399-b282-f0385a85a16c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PHBA_LIBRARYATTRIBUTES, structs-Fibre_1be227ba-622d-475f-811e-2d65de5cbaa8.xml, HBA_LibraryAttributes, PHBA_LIBRARYATTRIBUTES structure pointer [Storage Devices], *PHBA_LIBRARYATTRIBUTES, storage.hba_libraryattributes, HBA_LIBRARYATTRIBUTES structure [Storage Devices], HBA_LIBRARYATTRIBUTES, HBA_LibraryAttributes structure [Storage Devices], hbaapi/PHBA_LIBRARYATTRIBUTES, hbaapi/HBA_LibraryAttributes
+ms.keywords : hbaapi/PHBA_LIBRARYATTRIBUTES, PHBA_LIBRARYATTRIBUTES structure pointer [Storage Devices], storage.hba_libraryattributes, hbaapi/HBA_LibraryAttributes, HBA_LibraryAttributes, structs-Fibre_1be227ba-622d-475f-811e-2d65de5cbaa8.xml, HBA_LibraryAttributes structure [Storage Devices], HBA_LIBRARYATTRIBUTES, *PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES structure [Storage Devices], PHBA_LIBRARYATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,7 +94,4 @@ Identifies the code revision of the library.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |

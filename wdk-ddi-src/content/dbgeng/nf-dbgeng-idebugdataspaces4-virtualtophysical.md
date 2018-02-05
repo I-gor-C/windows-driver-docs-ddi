@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : e0b7bd4c-cb3f-4bc3-8359-241c9a245204
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4, IDebugDataSpaces2 interface [Windows Debugging], VirtualToPhysical method, IDebugDataSpaces2::VirtualToPhysical, dbgeng/IDebugDataSpaces4::VirtualToPhysical, VirtualToPhysical method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces2::VirtualToPhysical, VirtualToPhysical method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces3::VirtualToPhysical, IDebugDataSpaces4 interface [Windows Debugging], VirtualToPhysical method, dbgeng/IDebugDataSpaces3::VirtualToPhysical, IDebugDataSpaces4::VirtualToPhysical, IDebugDataSpaces3 interface [Windows Debugging], VirtualToPhysical method, VirtualToPhysical, VirtualToPhysical method [Windows Debugging], debugger.virtualtophysical, VirtualToPhysical method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces_56267474-49c4-446c-83eb-3e4eb2e92734.xml
+ms.keywords : VirtualToPhysical method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces3::VirtualToPhysical, IDebugDataSpaces3::VirtualToPhysical, dbgeng/IDebugDataSpaces2::VirtualToPhysical, VirtualToPhysical method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4::VirtualToPhysical, IDebugDataSpaces2 interface [Windows Debugging], VirtualToPhysical method, VirtualToPhysical method [Windows Debugging], VirtualToPhysical method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::VirtualToPhysical, debugger.virtualtophysical, IDebugDataSpaces2::VirtualToPhysical, IDebugDataSpaces3 interface [Windows Debugging], VirtualToPhysical method, IDebugDataSpaces4, IDebugDataSpaces4 interface [Windows Debugging], VirtualToPhysical method, VirtualToPhysical, IDebugDataSpaces_56267474-49c4-446c-83eb-3e4eb2e92734.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -102,11 +102,6 @@ This method is only available in kernel-mode debugging.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

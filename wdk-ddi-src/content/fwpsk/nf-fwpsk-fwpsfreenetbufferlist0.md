@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7e337d7a-a408-4574-8da3-ea333fdbde8b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsFreeNetBufferList0, netvista.fwpsfreenetbufferlist0, wfp_ref_2_funct_3_fwps_D-H_2104bcba-b5f2-4476-9b9e-9783269618f0.xml, fwpsk/FwpsFreeNetBufferList0, FwpsFreeNetBufferList0 function [Network Drivers Starting with Windows Vista]
+ms.keywords : fwpsk/FwpsFreeNetBufferList0, wfp_ref_2_funct_3_fwps_D-H_2104bcba-b5f2-4476-9b9e-9783269618f0.xml, netvista.fwpsfreenetbufferlist0, FwpsFreeNetBufferList0, FwpsFreeNetBufferList0 function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,19 +79,16 @@ A callout driver calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.fwpsallocatenetbufferandnetbufferlist0" tabindex="0"><b>
-   FwpsAllocateNetBufferAndNetBufferList0</b></mshelp:link>
+<a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">
+   FwpsAllocateNetBufferAndNetBufferList0</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 

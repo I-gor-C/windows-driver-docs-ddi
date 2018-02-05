@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : c168ca19-e4a7-484d-8aed-0b7e7033b760
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PSELF_ID structure pointer [Buses], _SELF_ID, 1394stct_43f63a99-a4c6-4960-93c4-98bb65d242bd.xml, 1394/SELF_ID, SELF_ID, SELF_ID structure [Buses], *PSELF_ID, PSELF_ID, 1394/PSELF_ID, IEEE.self_id
+ms.keywords : 1394/PSELF_ID, _SELF_ID, IEEE.self_id, *PSELF_ID, SELF_ID structure [Buses], PSELF_ID structure pointer [Buses], SELF_ID, 1394/SELF_ID, 1394stct_43f63a99-a4c6-4960-93c4-98bb65d242bd.xml, PSELF_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SELF_ID, *PSELF_ID
+req.typenames : "*PSELF_ID, SELF_ID"
 ---
 
 # _SELF_ID structure
@@ -200,9 +200,6 @@ This structure corresponds to self ID packet 0, as described in the <i>P1394a</i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 645fd5f6-32b5-4ef6-9583-1418291d55d3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisgetpoolfromnetbufferlist, ndis_netbuf_functions_ref_c93c9420-04fb-42f7-9844-29c3b2052b82.xml, ndis/NdisGetPoolFromNetBufferList, NdisGetPoolFromNetBufferList function [Network Drivers Starting with Windows Vista], NdisGetPoolFromNetBufferList
+ms.keywords : NdisGetPoolFromNetBufferList, netvista.ndisgetpoolfromnetbufferlist, ndis/NdisGetPoolFromNetBufferList, NdisGetPoolFromNetBufferList function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_c93c9420-04fb-42f7-9844-29c3b2052b82.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,12 +77,10 @@ The handle that
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 

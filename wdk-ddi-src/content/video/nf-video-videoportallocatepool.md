@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c981e56f-e582-4c06-8d32-b070d58065d2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortAllocatePool function [Display Devices], VideoPortAllocatePool, video/VideoPortAllocatePool, VideoPort_Functions_a9163e5b-6519-4427-a748-066ad120022a.xml, display.videoportallocatepool
+ms.keywords : video/VideoPortAllocatePool, display.videoportallocatepool, VideoPortAllocatePool function [Display Devices], VideoPortAllocatePool, VideoPort_Functions_a9163e5b-6519-4427-a748-066ad120022a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,14 +134,12 @@ Callers of <b>VideoPortAllocatePool</b> can be running at IRQL = DISPATCH_LEVEL 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

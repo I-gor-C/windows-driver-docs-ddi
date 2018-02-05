@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2a7ebedd-0042-4624-9c9b-721cccfb0c4f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMSetupDmaTransfer, NdisMSetupDmaTransfer macro [Network Drivers Starting with Windows Vista], ndis/NdisMSetupDmaTransfer, dma_ref_b6de5799-dca5-4c30-aa3a-e20e1eac4f0f.xml, netvista.ndismsetupdmatransfer
+ms.keywords : ndis/NdisMSetupDmaTransfer, netvista.ndismsetupdmatransfer, NdisMSetupDmaTransfer, NdisMSetupDmaTransfer macro [Network Drivers Starting with Windows Vista], dma_ref_b6de5799-dca5-4c30-aa3a-e20e1eac4f0f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -106,8 +106,8 @@ The caller must supply a buffer descriptor that specifies the host range into wh
     be transferred from the NIC when 
     <i>WriteToDevice</i> is <b>FALSE</b>. Otherwise, the buffer descriptor at 
     <i>Buffer</i> was chained to a packet descriptor input to the miniport driver's 
-    <mshelp:link keywords="netvista.miniportsendnetbufferlists" tabindex="0"><i>
-    MiniportSendNetBufferLists</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
+    MiniportSendNetBufferLists</a> function.
 
 To improve performance for small transmit requests, such as a send request of less than 256 bytes in
     length, a miniport driver can copy the packet data into an internal staging buffer and pass a
@@ -119,28 +119,26 @@ On return from
     driver then programs the NIC for the transfer operation.
 
 When the transfer is complete, the miniport driver must call the 
-    <mshelp:link keywords="netvista.ndismcompletedmatransfer" tabindex="0"><b>
-    NdisMCompleteDmaTransfer</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndismcompletedmatransfer.md">
+    NdisMCompleteDmaTransfer</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMSetupDmaTransfer (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMSetupDmaTransfer (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMSetupDmaTransfer (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMSetupDmaTransfer (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndismcompletedmatransfer.md">NdisMCompleteDmaTransfer</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 
-<a href="..\ndis\nf-ndis-ndismcompletedmatransfer.md">NdisMCompleteDmaTransfer</a>
+<a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
 
  
 

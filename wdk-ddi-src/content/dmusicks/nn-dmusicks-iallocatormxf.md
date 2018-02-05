@@ -64,8 +64,5 @@ The allocator also abstracts the allocation of the additional memory that is nee
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dmusicks.h |
-| **DLL** |  |

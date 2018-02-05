@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f1e96d8a-910e-4808-b9a3-e8c530158872
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.iddcxswapchainsetdevice, IddCxSwapChainSetDevice method [Display Devices], iddcx/IddCxSwapChainSetDevice, IddCxSwapChainSetDevice
+ms.keywords : IddCxSwapChainSetDevice, IddCxSwapChainSetDevice method [Display Devices], iddcx/IddCxSwapChainSetDevice, display.iddcxswapchainsetdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,8 @@ Input arguments to the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 477EBC8A-04A5-4904-AC62-0FA7DB861ACC
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 structure [Display Devices], DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, display.dxgkarg_checkmultiplaneoverlaysupport2, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
+ms.keywords : "*IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 structure [Display Devices], DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, display.dxgkarg_checkmultiplaneoverlaysupport2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ Specifies additional information.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c49f40b8-feb4-4dfd-9a2b-c800f3b5343a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanCellularClassGsm, PWWAN_CELLULAR_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], *PWWAN_CELLULAR_CLASS, WwanCellularClassCdma, _WWAN_CELLULAR_CLASS, netvista.wwan_cellular_class, WwanCellularClassMax, wwan/WwanCellularClassCdma, wwan/WwanCellularClassMax, wwan/WWAN_CELLULAR_CLASS, WwanCellularClassUnknown, wwan/WwanCellularClassGsm, PWWAN_CELLULAR_CLASS, WWAN_CELLULAR_CLASS, WWAN_CELLULAR_CLASS enumeration [Network Drivers Starting with Windows Vista], wwan/WwanCellularClassUnknown, WwanRef_cbffbef4-6a05-4042-abf0-7495fadf869d.xml, wwan/PWWAN_CELLULAR_CLASS
+ms.keywords : "_WWAN_CELLULAR_CLASS, WWAN_CELLULAR_CLASS enumeration [Network Drivers Starting with Windows Vista], *PWWAN_CELLULAR_CLASS, netvista.wwan_cellular_class, wwan/WWAN_CELLULAR_CLASS, WwanRef_cbffbef4-6a05-4042-abf0-7495fadf869d.xml, WWAN_CELLULAR_CLASS, wwan/WwanCellularClassUnknown, WwanCellularClassMax, WwanCellularClassUnknown, WwanCellularClassCdma, PWWAN_CELLULAR_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_CELLULAR_CLASS, WwanCellularClassGsm, wwan/PWWAN_CELLULAR_CLASS, wwan/WwanCellularClassMax, wwan/WwanCellularClassGsm, wwan/WwanCellularClassCdma"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,9 +82,7 @@ typedef enum _WWAN_CELLULAR_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

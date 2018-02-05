@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a2c98783-c463-435e-9d78-c10686f1c75c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PUNI_GLYPHSETDATA, print.uni_glyphsetdata, PUNI_GLYPHSETDATA, _UNI_GLYPHSETDATA, UNI_GLYPHSETDATA, PUNI_GLYPHSETDATA structure pointer [Print Devices], prntfont/UNI_GLYPHSETDATA, prntfont/PUNI_GLYPHSETDATA, print_unidrv-pscript_fonts_51c5f97c-3b3c-4990-8dcb-9c7bf387b03f.xml, UNI_GLYPHSETDATA structure [Print Devices]"
+ms.keywords : "_UNI_GLYPHSETDATA, PUNI_GLYPHSETDATA, print.uni_glyphsetdata, prntfont/UNI_GLYPHSETDATA, UNI_GLYPHSETDATA, print_unidrv-pscript_fonts_51c5f97c-3b3c-4990-8dcb-9c7bf387b03f.xml, PUNI_GLYPHSETDATA structure pointer [Print Devices], *PUNI_GLYPHSETDATA, prntfont/PUNI_GLYPHSETDATA, UNI_GLYPHSETDATA structure [Print Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -112,18 +112,15 @@ A UNI_GLYPHSETDATA structure must be the first structure contained in a .gtt fil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also
 
 <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a>
 
-<a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a>
-
 <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a>
+
+<a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a>
 
  
 

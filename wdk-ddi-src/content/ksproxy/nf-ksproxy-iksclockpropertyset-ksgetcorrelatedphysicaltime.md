@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d9babef4-c41a-4458-8072-eb562ef4d997
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsClockPropertySet, IKsClockPropertySet::KsGetCorrelatedPhysicalTime, ksproxy/IKsClockPropertySet::KsGetCorrelatedPhysicalTime, KsGetCorrelatedPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface, ksproxy_bab50759-78be-43b2-8346-2e1c88529899.xml, stream.iksclockpropertyset_ksgetcorrelatedphysicaltime, IKsClockPropertySet interface [Streaming Media Devices], KsGetCorrelatedPhysicalTime method, KsGetCorrelatedPhysicalTime method [Streaming Media Devices], KsGetCorrelatedPhysicalTime
+ms.keywords : KsGetCorrelatedPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface, IKsClockPropertySet, KsGetCorrelatedPhysicalTime, KsGetCorrelatedPhysicalTime method [Streaming Media Devices], IKsClockPropertySet::KsGetCorrelatedPhysicalTime, IKsClockPropertySet interface [Streaming Media Devices], KsGetCorrelatedPhysicalTime method, ksproxy/IKsClockPropertySet::KsGetCorrelatedPhysicalTime, stream.iksclockpropertyset_ksgetcorrelatedphysicaltime, ksproxy_bab50759-78be-43b2-8346-2e1c88529899.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,22 +68,17 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559753">IKsClockPropertySet::KsSetCorrelatedPhysicalTime</a>
+<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564461">KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</a>
 
-<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559753">IKsClockPropertySet::KsSetCorrelatedPhysicalTime</a>
 
  
 

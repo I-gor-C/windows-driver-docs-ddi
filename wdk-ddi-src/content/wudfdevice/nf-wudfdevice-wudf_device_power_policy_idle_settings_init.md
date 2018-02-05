@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 893F249B-ACD9-4262-93B6-890987A9F591
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wudf_device_power_policy_idle_settings_init, wudfdevice/WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, umdf.wudf_device_power_policy_idle_settings_init, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function
+ms.keywords : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function, wudfdevice/WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, wdf.wudf_device_power_policy_idle_settings_init, umdf.wudf_device_power_policy_idle_settings_init, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,14 +88,11 @@ For a code example that uses <b>WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</b>,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfdevice.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

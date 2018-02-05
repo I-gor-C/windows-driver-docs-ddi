@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 95598654-71dd-41cc-a663-b0bcaee77687
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.kelowerirql, KeLowerIrql, KeLowerIrql routine [Kernel-Mode Driver Architecture], wdm/KeLowerIrql, k105_06c56235-3b9e-4413-aadb-91e86898121d.xml
+ms.keywords : KeLowerIrql routine [Kernel-Mode Driver Architecture], k105_06c56235-3b9e-4413-aadb-91e86898121d.xml, wdm/KeLowerIrql, KeLowerIrql, kernel.kelowerirql
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,22 +69,20 @@ It is a fatal error to call <b>KeLowerIrql</b> using an input <i>NewIrql</i> tha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Hal.lib |
 | **IRQL** | Any level |
 | **DDI compliance rules** | IrqlKeRaiseLower, IrqlKeRaiseLower2, HwStorPortProhibitedDDIs |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
+
 <a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
 
 <a href="..\wdm\nf-wdm-keraiseirqltodpclevel.md">KeRaiseIrqlToDpcLevel</a>
-
-<a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1db89a5a-641b-4fca-bd60-217c9be8f19f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint2, SetOffsetExpressionWide, IDebugBreakpoint2::SetOffsetExpressionWide, SetOffsetExpressionWide method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::SetOffsetExpressionWide, SetOffsetExpressionWide method [Windows Debugging], debugger.setoffsetexpressionwide, IDebugBreakpoint2 interface [Windows Debugging], SetOffsetExpressionWide method
+ms.keywords : IDebugBreakpoint2 interface [Windows Debugging], SetOffsetExpressionWide method, IDebugBreakpoint2::SetOffsetExpressionWide, IDebugBreakpoint2, dbgeng/IDebugBreakpoint2::SetOffsetExpressionWide, debugger.setoffsetexpressionwide, SetOffsetExpressionWide method [Windows Debugging], IDebugBreakpoint2 interface, SetOffsetExpressionWide method [Windows Debugging], SetOffsetExpressionWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,11 +85,6 @@ For more information about how to use breakpoints, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

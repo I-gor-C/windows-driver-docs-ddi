@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 18eb526b-d615-4f02-b724-236c6bf16945
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PUFF_FILEHEADER structure pointer [Print Devices], prntfont/UFF_FILEHEADER, prntfont/PUFF_FILEHEADER, UFF_FILEHEADER, *PUFF_FILEHEADER, UFF_FILEHEADER structure [Print Devices], PUFF_FILEHEADER, _UFF_FILEHEADER, print_unidrv-pscript_fonts_a51bc6b1-df89-423f-83e8-9fad0cd20729.xml, print.uff_fileheader
+ms.keywords : "_UFF_FILEHEADER, print.uff_fileheader, UFF_FILEHEADER structure [Print Devices], *PUFF_FILEHEADER, PUFF_FILEHEADER structure pointer [Print Devices], prntfont/PUFF_FILEHEADER, prntfont/UFF_FILEHEADER, print_unidrv-pscript_fonts_a51bc6b1-df89-423f-83e8-9fad0cd20729.xml, PUFF_FILEHEADER, UFF_FILEHEADER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFF_FILEHEADER, *PUFF_FILEHEADER
+req.typenames : "*PUFF_FILEHEADER, UFF_FILEHEADER"
 req.product : Windows 10 or later.
 ---
 
@@ -116,9 +116,6 @@ Specifies the offset, in bytes, from the beginning of the .uff file to the begin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also

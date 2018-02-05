@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9DE2AF2D-D6B5-4FC4-8871-246F3661980F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucm_connector_pd_config, PUCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG structure [Buses], UCM_CONNECTOR_PD_CONFIG, PUCM_CONNECTOR_PD_CONFIG structure pointer [Buses], ucmmanager/PUCM_CONNECTOR_PD_CONFIG, ucmmanager/UCM_CONNECTOR_PD_CONFIG, _UCM_CONNECTOR_PD_CONFIG
+ms.keywords : ucmmanager/PUCM_CONNECTOR_PD_CONFIG, _UCM_CONNECTOR_PD_CONFIG, buses.ucm_connector_pd_config, PUCM_CONNECTOR_PD_CONFIG structure pointer [Buses], UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG, PUCM_CONNECTOR_PD_CONFIG, ucmmanager/UCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,7 @@ Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |

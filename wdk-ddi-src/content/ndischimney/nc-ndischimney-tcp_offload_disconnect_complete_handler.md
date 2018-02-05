@@ -45,8 +45,8 @@ req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
 NDIS calls a protocol driver's or intermediate driver's 
   <i>ProtocolTcpOffloadDisconnectComplete</i> function to complete a disconnect operation that the driver
   previously initiated by calling the 
-  <mshelp:link keywords="netvista.ndisoffloadtcpdisconnect" tabindex="0"><b>
-  NdisOffloadTcpDisconnect</b></mshelp:link> function.
+  <a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpdisconnect.md">
+  NdisOffloadTcpDisconnect</a> function.
 
 ## Syntax
 
@@ -74,8 +74,8 @@ A handle to a context area allocated by the protocol driver. The driver maintain
 When non-NULL, a pointer to a single 
      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. The driver
      supplied this pointer as an input parameter in a previous call to the 
-     <mshelp:link keywords="netvista.ndisoffloadtcpdisconnect" tabindex="0"><b>
-     NdisOffloadTcpDisconnect</b></mshelp:link> function.
+     <a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpdisconnect.md">
+     NdisOffloadTcpDisconnect</a> function.
 
 
 ## Return Value
@@ -85,8 +85,8 @@ None
 ## Remarks
 
 In response to an underlying driver's or offload target's call to the 
-    <mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-    NdisTcpOffloadDisconnectComplete</b></mshelp:link> function, NDIS calls the overlying protocol driver's or
+    <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+    NdisTcpOffloadDisconnectComplete</a> function, NDIS calls the overlying protocol driver's or
     intermediate driver's 
     <i>ProtocolTcpOffloadDisconnectComplete</i> function.
 
@@ -117,34 +117,28 @@ Before returning, the
 Note that, if an intermediate driver exports more than one interface to overlying protocols, it must
     determine which protocol should receive the completion of the disconnect. To make this determination, the
     intermediate driver uses information that it stored in the 
-    <mshelp:link keywords="netvista.net_buffer_list_context_structure" tabindex="0">
-    NET_BUFFER_LIST_CONTEXT</mshelp:link> structure, which is associated with the NET_BUFFER_LIST structure.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff568388">
+    NET_BUFFER_LIST_CONTEXT</a> structure, which is associated with the NET_BUFFER_LIST structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
-<mshelp:link keywords="netvista.miniporttcpoffloaddisconnect" tabindex="0"><i>
-   MiniportTcpOffloadDisconnect</i></mshelp:link>
-
 <a href="..\ndischimney\nf-ndischimney-ndisoffloadtcpdisconnect.md">NdisOffloadTcpDisconnect</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<mshelp:link keywords="netvista.ndistcpoffloaddisconnectcomplete" tabindex="0"><b>
-   NdisTcpOffloadDisconnectComplete</b></mshelp:link>
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
+   NdisTcpOffloadDisconnectComplete</a>
+
+<a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
+   MiniportTcpOffloadDisconnect</a>
 
  
 

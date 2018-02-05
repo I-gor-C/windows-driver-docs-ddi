@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7DD01461-4890-4095-A55C-771EA0EEA642
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_ACPI_OBJECT_NAME_WITH_TYPE, kernel.pep_acpi_object_name_with_type, _PEP_ACPI_OBJECT_NAME_WITH_TYPE, PPEP_ACPI_OBJECT_NAME_WITH_TYPE structure pointer [Kernel-Mode Driver Architecture], PPEP_ACPI_OBJECT_NAME_WITH_TYPE, PEP_ACPI_OBJECT_NAME_WITH_TYPE, *PPEP_ACPI_OBJECT_NAME_WITH_TYPE, pepfx/PPEP_ACPI_OBJECT_NAME_WITH_TYPE, PEP_ACPI_OBJECT_NAME_WITH_TYPE structure [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.pep_acpi_object_name_with_type, _PEP_ACPI_OBJECT_NAME_WITH_TYPE, pepfx/PEP_ACPI_OBJECT_NAME_WITH_TYPE, PPEP_ACPI_OBJECT_NAME_WITH_TYPE structure pointer [Kernel-Mode Driver Architecture], PEP_ACPI_OBJECT_NAME_WITH_TYPE structure [Kernel-Mode Driver Architecture], PEP_ACPI_OBJECT_NAME_WITH_TYPE, *PPEP_ACPI_OBJECT_NAME_WITH_TYPE, pepfx/PPEP_ACPI_OBJECT_NAME_WITH_TYPE, PPEP_ACPI_OBJECT_NAME_WITH_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,16 +66,14 @@ The <b>Objects</b> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_enumerate_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_object_name.md">PEP_ACPI_OBJECT_NAME</a>
-
 <a href="..\pepfx\ne-pepfx-_pep_acpi_object_type.md">PEP_ACPI_OBJECT_TYPE</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_acpi_object_name.md">PEP_ACPI_OBJECT_NAME</a>
 
 <a href="..\pepfx\ns-pepfx-_pep_acpi_enumerate_device_namespace.md">PEP_ACPI_ENUMERATE_DEVICE_NAMESPACE</a>
 

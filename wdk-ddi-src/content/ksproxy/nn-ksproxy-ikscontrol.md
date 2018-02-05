@@ -40,7 +40,7 @@ req.typenames : PIPE_STATE
 
 # IKsControl interface
 
-The <b>IKsControl</b> interface provides user-mode methods that control a KS filter or KS pin. See the <a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a> AVStream COM interface for information about the user-mode equivalent of this interface.
+The <b>IKsControl</b> interface provides user-mode methods that control a KS filter or KS pin. See the <a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a> AVStream COM interface for information about the user-mode equivalent of this interface.
 
 ## Methods
 
@@ -59,15 +59,12 @@ The IID for this interface is IID_IKsControl.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **DLL** |  |
 
 ## See Also
 
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl (AVStream COM Interface)</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl (AVStream COM Interface)</a>
 
  
 

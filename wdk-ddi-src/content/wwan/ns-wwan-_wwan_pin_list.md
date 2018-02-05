@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7ddea69c-db40-4fae-9ca9-5eadc9b40b0c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_PIN_LIST, WWAN_PIN_LIST, wwan/PWWAN_PIN_LIST, PWWAN_PIN_LIST, PWWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista], _WWAN_PIN_LIST, WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], WwanRef_b23c520d-20ea-4597-8dd2-2a1f9cd68938.xml, netvista.wwan_pin_list, *PWWAN_PIN_LIST
+ms.keywords : WWAN_PIN_LIST, PWWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista], WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], WwanRef_b23c520d-20ea-4597-8dd2-2a1f9cd68938.xml, PWWAN_PIN_LIST, wwan/PWWAN_PIN_LIST, *PWWAN_PIN_LIST, wwan/WWAN_PIN_LIST, _WWAN_PIN_LIST, netvista.wwan_pin_list
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -120,9 +120,7 @@ Description for Service Provider (SP) personalization PIN. This is a PIN that al
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

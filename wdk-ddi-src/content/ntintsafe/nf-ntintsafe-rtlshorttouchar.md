@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6DA0F939-F4B3-4E66-A90C-5112AE6FEC8D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlShortToUChar, RtlShortToUChar function [Kernel-Mode Driver Architecture], kernel.rtlshorttouchar, RtlShortToUChar
+ms.keywords : RtlShortToUChar, RtlShortToUChar function [Kernel-Mode Driver Architecture], ntintsafe/RtlShortToUChar, kernel.rtlshorttouchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

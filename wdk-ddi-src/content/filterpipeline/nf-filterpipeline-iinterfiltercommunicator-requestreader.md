@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 2b38b1b7-0d65-4457-bc7d-c52ff11aba48
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IInterFilterCommunicator::RequestReader, IInterFilterCommunicator, RequestReader method [Print Devices], IInterFilterCommunicator interface, print.iinterfiltercommunicator_requestreader, RequestReader method [Print Devices], filterpipeline/IInterFilterCommunicator::RequestReader, IInterFilterCommunicator interface [Print Devices], RequestReader method, RequestReader, filterpipeline_dba6ebe4-7acb-471e-80e4-cedc8c2523b0.xml
+ms.keywords : IInterFilterCommunicator::RequestReader, RequestReader, print.iinterfiltercommunicator_requestreader, IInterFilterCommunicator interface [Print Devices], RequestReader method, RequestReader method [Print Devices], IInterFilterCommunicator interface, filterpipeline/IInterFilterCommunicator::RequestReader, filterpipeline_dba6ebe4-7acb-471e-80e4-cedc8c2523b0.xml, IInterFilterCommunicator, RequestReader method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,14 +68,9 @@ The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |
 
 ## See Also
 

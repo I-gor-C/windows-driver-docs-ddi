@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 52c98ca7-8024-42d6-9001-1a7a69d24a95
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_CONTEXTINFO, _DXGK_CONTEXTINFO, d3dkmddi/DXGK_CONTEXTINFO, display.dxgk_contextinfo, DmStructs_e95e533c-2156-4384-9e7e-718e7d61c458.xml, DXGK_CONTEXTINFO structure [Display Devices]
+ms.keywords : "_DXGK_CONTEXTINFO, DXGK_CONTEXTINFO structure [Display Devices], DmStructs_e95e533c-2156-4384-9e7e-718e7d61c458.xml, display.dxgk_contextinfo, DXGK_CONTEXTINFO, d3dkmddi/DXGK_CONTEXTINFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -131,30 +131,28 @@ If the driver sets <b>DmaBufferSegmentSet</b> to 0, the video memory manager all
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
-
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createcontext.md">DXGKARG_CREATECONTEXT</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a>
 
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_present.md">DXGKARG_PRESENT</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
+
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_render.md">DXGKARG_RENDER</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_present.md">DXGKARG_PRESENT</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createcontext.md">DXGKARG_CREATECONTEXT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
  
 

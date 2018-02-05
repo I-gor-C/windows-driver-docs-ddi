@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4FBBC349-B6D0-4F99-AF34-FA237199431E
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_WRITE_PORT_BUFFER_ULONG function, wdf.wdf_write_port_buffer_ulong, wdfhwaccess/WDF_WRITE_PORT_BUFFER_ULONG, WDF_WRITE_PORT_BUFFER_ULONG
+ms.keywords : WDF_WRITE_PORT_BUFFER_ULONG function, wdfhwaccess/WDF_WRITE_PORT_BUFFER_ULONG, wdf.wdf_write_port_buffer_ulong, WDF_WRITE_PORT_BUFFER_ULONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,8 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

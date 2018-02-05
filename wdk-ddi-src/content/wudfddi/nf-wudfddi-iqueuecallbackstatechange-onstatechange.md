@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 69a422a1-b878-496e-b1b9-e04b7c3db121
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iqueuecallbackstatechange_onstatechange, umdf.iqueuecallbackstatechange_onstatechange, OnStateChange, wudfddi/IQueueCallbackStateChange::OnStateChange, UMDFQueueObjectRef_194f5013-22a2-40c4-8913-9371aa281009.xml, OnStateChange method, IQueueCallbackStateChange, OnStateChange method, IQueueCallbackStateChange interface, IQueueCallbackStateChange interface, OnStateChange method, IQueueCallbackStateChange::OnStateChange
+ms.keywords : IQueueCallbackStateChange, UMDFQueueObjectRef_194f5013-22a2-40c4-8913-9371aa281009.xml, wdf.iqueuecallbackstatechange_onstatechange, IQueueCallbackStateChange interface, OnStateChange method, OnStateChange method, IQueueCallbackStateChange interface, IQueueCallbackStateChange::OnStateChange, OnStateChange method, OnStateChange, umdf.iqueuecallbackstatechange_onstatechange, wudfddi/IQueueCallbackStateChange::OnStateChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,24 +76,19 @@ A driver registers the <a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
 
  
 

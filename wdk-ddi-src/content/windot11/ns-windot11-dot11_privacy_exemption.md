@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ee4499d0-3275-419d-9ab2-89edd77e0374
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.dot11_privacy_exemption, DOT11_PRIVACY_EXEMPTION structure [Network Drivers Starting with Windows Vista], *PDOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION, windot11/PDOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION, Native_802.11_data_types_8dd63374-57b1-4dc8-9dca-76dcc5ade9fd.xml
+ms.keywords : windot11/PDOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_privacy_exemption, Native_802.11_data_types_8dd63374-57b1-4dc8-9dca-76dcc5ade9fd.xml, windot11/DOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION structure [Network Drivers Starting with Windows Vista], *PDOT11_PRIVACY_EXEMPTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,9 +88,9 @@ The type of packet that the exemption for the specified EtherType applies to. Th
 
 
 
-#### DOT11_EXEMPT_UNICAST
+#### DOT11_EXEMPT_BOTH
 
-Exempt only unicast packets.
+Exempt all packet types.
 
 
 #### DOT11_EXEMPT_MULTICAST
@@ -98,29 +98,27 @@ Exempt only unicast packets.
 Exempt only multicast or broadcast packets.
 
 
-#### DOT11_EXEMPT_BOTH
+#### DOT11_EXEMPT_UNICAST
 
-Exempt all packet types.
+Exempt only unicast packets.
 
 ## Remarks
 The 802.11 station's packet exemption list if configured through a set request of 
-    <mshelp:link keywords="netvista.oid_dot11_privacy_exemption_list" tabindex="0">
-    OID_DOT11_PRIVACY_EXEMPTION_LIST</mshelp:link>. For each packet the 802.11 station receives, it will apply the
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-privacy-exemption-list">
+    OID_DOT11_PRIVACY_EXEMPTION_LIST</a>. For each packet the 802.11 station receives, it will apply the
     decryption exemption specified by the list entry with a 
     <b>usEtherType</b> value that matches the EtherType of the packet.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.oid_dot11_privacy_exemption_list" tabindex="0">
-   OID_DOT11_PRIVACY_EXEMPTION_LIST</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-privacy-exemption-list">
+   OID_DOT11_PRIVACY_EXEMPTION_LIST</a>
 
  
 

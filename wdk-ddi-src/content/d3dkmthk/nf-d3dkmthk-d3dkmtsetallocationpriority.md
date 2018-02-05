@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d5ad6288-6123-4665-a48e-bbae856cc160
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_dc77467a-7ec3-4be9-96cd-8bedb5beb948.xml, D3DKMTSetAllocationPriority, d3dkmthk/D3DKMTSetAllocationPriority, display.d3dkmtsetallocationpriority, D3DKMTSetAllocationPriority function [Display Devices]
+ms.keywords : display.d3dkmtsetallocationpriority, OpenGL_Functions_dc77467a-7ec3-4be9-96cd-8bedb5beb948.xml, D3DKMTSetAllocationPriority function [Display Devices], d3dkmthk/D3DKMTSetAllocationPriority, D3DKMTSetAllocationPriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -130,14 +130,11 @@ The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTSetAl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

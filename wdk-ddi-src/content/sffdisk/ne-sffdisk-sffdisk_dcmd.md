@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : 145e460e-6988-4e61-bb33-6f1b1df54629
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : SD.sffdisk_dcmd, SFFDISK_DCMD, sffdisk/SFFDISK_DC_GET_VERSION, sffdisk/SFFDISK_DC_UNLOCK_CHANNEL, sffdisk/SFFDISK_DC_LOCK_CHANNEL, SFFDISK_DC_UNLOCK_CHANNEL, SFFDISK_DC_GET_VERSION, sffdisk/SFFDISK_DC_DEVICE_COMMAND, SFFDISK_DC_DEVICE_COMMAND, SFFDISK_DC_LOCK_CHANNEL, sd-structs_440acb4f-89ba-4ea0-9f8b-c7fd241dfe85.xml, SFFDISK_DCMD enumeration [Buses], sffdisk/SFFDISK_DCMD
+ms.keywords : sffdisk/SFFDISK_DC_UNLOCK_CHANNEL, sffdisk/SFFDISK_DC_DEVICE_COMMAND, sd-structs_440acb4f-89ba-4ea0-9f8b-c7fd241dfe85.xml, SFFDISK_DC_DEVICE_COMMAND, SFFDISK_DCMD enumeration [Buses], SFFDISK_DC_LOCK_CHANNEL, SFFDISK_DC_UNLOCK_CHANNEL, sffdisk/SFFDISK_DCMD, SD.sffdisk_dcmd, sffdisk/SFFDISK_DC_LOCK_CHANNEL, SFFDISK_DC_GET_VERSION, sffdisk/SFFDISK_DC_GET_VERSION, SFFDISK_DCMD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -84,9 +84,6 @@ Applications that submit IOCTL_SFFDISK_DEVICE_COMMAND requests to the SD stack u
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sffdisk.h (include Sffdisk.h) |
 
 ## See Also

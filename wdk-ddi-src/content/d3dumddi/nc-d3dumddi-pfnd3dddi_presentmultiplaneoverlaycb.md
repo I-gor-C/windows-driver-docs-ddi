@@ -119,20 +119,15 @@ The user-mode display driver should call this function only after it has success
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-d3dddicb_presentmultiplaneoverlay.md">D3DDDICB_PRESENTMULTIPLANEOVERLAY</a>
-
 <a href="https://msdn.microsoft.com/3AC47977-A5F3-44A6-8F89-A1EA5E0BB6E4">pfnPresentMultiplaneOverlay (D3D)</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-d3dddicb_presentmultiplaneoverlay.md">D3DDDICB_PRESENTMULTIPLANEOVERLAY</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_presentmultiplaneoverlay.md">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a>
 

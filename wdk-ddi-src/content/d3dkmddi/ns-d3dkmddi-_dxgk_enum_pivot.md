@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f2a234f3-aec9-4fe5-b720-bed9747d5a7f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_ENUM_PIVOT, DmStructs_7a6fa02d-2223-4052-9911-cf9be1ab931a.xml, _DXGK_ENUM_PIVOT, d3dkmddi/DXGK_ENUM_PIVOT, display.dxgk_enum_pivot, DXGK_ENUM_PIVOT structure [Display Devices]
+ms.keywords : DmStructs_7a6fa02d-2223-4052-9911-cf9be1ab931a.xml, DXGK_ENUM_PIVOT structure [Display Devices], _DXGK_ENUM_PIVOT, display.dxgk_enum_pivot, DXGK_ENUM_PIVOT, d3dkmddi/DXGK_ENUM_PIVOT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,7 +68,5 @@ The <b>EnumPivotType</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 77B30ADC-27F2-4883-97FC-F6C29B539EE0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdatypes/PBDA_TUNER_TUNERSTATE, PBDA_TUNER_TUNERSTATE structure pointer [Streaming Media Devices], BDA_TUNER_TUNERSTATE, BDA_TUNER_TUNERSTATE structure [Streaming Media Devices], bdatypes/BDA_TUNER_TUNERSTATE, PBDA_TUNER_TUNERSTATE, *PBDA_TUNER_TUNERSTATE, _BDA_TUNER_TUNERSTATE, stream.bda_tuner_tunerstate
+ms.keywords : bdatypes/BDA_TUNER_TUNERSTATE, _BDA_TUNER_TUNERSTATE, BDA_TUNER_TUNERSTATE, PBDA_TUNER_TUNERSTATE, *PBDA_TUNER_TUNERSTATE, stream.bda_tuner_tunerstate, bdatypes/PBDA_TUNER_TUNERSTATE, BDA_TUNER_TUNERSTATE structure [Streaming Media Devices], PBDA_TUNER_TUNERSTATE structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BDA_TUNER_TUNERSTATE, *PBDA_TUNER_TUNERSTATE
+req.typenames : "*PBDA_TUNER_TUNERSTATE, BDA_TUNER_TUNERSTATE"
 ---
 
 # _BDA_TUNER_TUNERSTATE structure
@@ -69,7 +69,4 @@ typedef struct _BDA_TUNER_TUNERSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

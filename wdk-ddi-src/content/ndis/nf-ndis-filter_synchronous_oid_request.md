@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : AC84B27B-6FBF-429D-A8FA-F3C8F583F738
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.filter_synchronous_oid_request, FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], FilterSynchronousOidRequest, ndis/FilterSynchronousOidRequest, FILTER_SYNCHRONOUS_OID_REQUEST
+ms.keywords : FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], FilterSynchronousOidRequest, netvista.filter_synchronous_oid_request, FILTER_SYNCHRONOUS_OID_REQUEST, ndis/FilterSynchronousOidRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

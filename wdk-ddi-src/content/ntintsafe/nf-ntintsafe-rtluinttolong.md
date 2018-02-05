@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9C388D02-003B-4B0E-B2ED-E311AE750601
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtluinttolong, RtlUIntToLong function [Kernel-Mode Driver Architecture], ntintsafe/RtlUIntToLong, RtlUIntToLong
+ms.keywords : RtlUIntToLong, RtlUIntToLong function [Kernel-Mode Driver Architecture], kernel.rtluinttolong, ntintsafe/RtlUIntToLong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

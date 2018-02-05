@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 179419ee-2a99-4c03-9afb-a9bb34f3efb6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BdaMethodDeletePin, bdasup/BdaMethodDeletePin, BdaMethodDeletePin function [Streaming Media Devices], stream.bdamethoddeletepin, bdaref_6d81ac60-26e8-4cdb-ba9c-05f73cea187d.xml
+ms.keywords : stream.bdamethoddeletepin, BdaMethodDeletePin, BdaMethodDeletePin function [Streaming Media Devices], bdaref_6d81ac60-26e8-4cdb-ba9c-05f73cea187d.xml, bdasup/BdaMethodDeletePin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,28 +80,25 @@ If a BDA minidriver must delete a pin without relying on the network provider, t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
-
-<a href="..\bdasup\nf-bdasup-bdadeletepin.md">BdaDeletePin</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563415">KSMETHOD_BDA_DELETE_PIN_FACTORY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
 
 <a href="..\bdasup\nf-bdasup-bdamethodcreatepin.md">BdaMethodCreatePin</a>
 
 <a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
+<a href="..\bdasup\nf-bdasup-bdadeletepin.md">BdaDeletePin</a>
 
  
 

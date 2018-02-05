@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5c8bfd13-31e0-461f-93d2-53ce15c53cdb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exraisedatatypemisalignment, ExRaiseDatatypeMisalignment routine [Kernel-Mode Driver Architecture], ntddk/ExRaiseDatatypeMisalignment, ExRaiseDatatypeMisalignment, k102_ff274a50-ae59-4591-9484-6bc068601ee8.xml
+ms.keywords : ExRaiseDatatypeMisalignment routine [Kernel-Mode Driver Architecture], kernel.exraisedatatypemisalignment, k102_ff274a50-ae59-4591-9484-6bc068601ee8.xml, ntddk/ExRaiseDatatypeMisalignment, ExRaiseDatatypeMisalignment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,24 +65,23 @@ Because <b>ExRaiseDatatypeMisalignment</b> can only be used at IRQL = PASSIVE_LE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
 
 <a href="..\wdm\nf-wdm-exraisestatus.md">ExRaiseStatus</a>
 
 <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 
 <a href="..\ntddk\nf-ntddk-exraiseaccessviolation.md">ExRaiseAccessViolation</a>
+
+<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ead624cc-8aff-4a87-bdeb-066534caa61b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PSDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE, kernel._sdev_identifier_interface, SDEV_IDENTIFIER_INTERFACE structure [Kernel-Mode Driver Architecture], _SDEV_IDENTIFIER_INTERFACE, wdm/SDEV_IDENTIFIER_INTERFACE"
+ms.keywords : "_SDEV_IDENTIFIER_INTERFACE, *PSDEV_IDENTIFIER_INTERFACE, wdm/SDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE, kernel._sdev_identifier_interface, SDEV_IDENTIFIER_INTERFACE structure [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -58,7 +58,4 @@ This material is not yet available. This placeholder topic is provided as an exa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h |

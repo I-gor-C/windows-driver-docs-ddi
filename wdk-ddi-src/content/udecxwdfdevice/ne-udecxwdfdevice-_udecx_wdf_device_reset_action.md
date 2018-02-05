@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : E3216F62-5506-4DA2-AD89-B2406D3E97C0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UDECX_WDF_DEVICE_RESET_ACTION enumeration [Buses], _UDECX_WDF_DEVICE_RESET_ACTION, udecxwdfdevice/UdecxWdfDeviceResetActionResetEachUsbDevice, *PUDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION, udecxwdfdevice/UDECX_WDF_DEVICE_RESET_ACTION, udecxwdfdevice/UdecxWdfDeviceResetActionResetWdfDevice, UdecxWdfDeviceResetActionResetEachUsbDevice, UdecxWdfDeviceResetActionResetWdfDevice, buses.udecx_wdf_device_reset_action
+ms.keywords : UdecxWdfDeviceResetActionResetWdfDevice, _UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION, udecxwdfdevice/UDECX_WDF_DEVICE_RESET_ACTION, buses.udecx_wdf_device_reset_action, udecxwdfdevice/UdecxWdfDeviceResetActionResetWdfDevice, udecxwdfdevice/UdecxWdfDeviceResetActionResetEachUsbDevice, UDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION enumeration [Buses], UdecxWdfDeviceResetActionResetEachUsbDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,16 +69,13 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | udecxwdfdevice.h (include Udecx.h) |
 
 ## See Also
 
-<a href="..\udecxwdfdevice\ns-udecxwdfdevice-_udecx_wdf_device_config.md">UDECX_WDF_DEVICE_CONFIG</a>
-
 <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
+
+<a href="..\udecxwdfdevice\ns-udecxwdfdevice-_udecx_wdf_device_config.md">UDECX_WDF_DEVICE_CONFIG</a>
 
  
 

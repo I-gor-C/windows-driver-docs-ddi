@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 3410e8b1-820f-4892-8d26-d803e3f943da
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : gdifnc_39ecbc8c-73fb-4e71-9df7-abdc4d8ccdcf.xml, winppi/GdiGetDevmodeForPage, GdiGetDevmodeForPage, print.gdigetdevmodeforpage, GdiGetDevmodeForPage function [Print Devices]
+ms.keywords : winppi/GdiGetDevmodeForPage, gdifnc_39ecbc8c-73fb-4e71-9df7-abdc4d8ccdcf.xml, GdiGetDevmodeForPage function [Print Devices], print.gdigetdevmodeforpage, GdiGetDevmodeForPage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,11 +100,7 @@ Call <a href="..\winppi\nf-winppi-gdistartpageemf.md">GdiStartPageEMF</a>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |

@@ -74,7 +74,4 @@ Points to the handle that was previously received in <b>IRB.u.AllocateAddressRan
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

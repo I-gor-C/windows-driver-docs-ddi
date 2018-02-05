@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 1500E2C2-240F-4087-9275-9FD4170B8BED
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortClsRuntimePower, portcls/IPortClsRuntimePower::RegisterPowerControlCallback, IPortClsRuntimePower interface [Audio Devices], RegisterPowerControlCallback method, IPortClsRuntimePower::RegisterPowerControlCallback, audio.iportclsruntimepower_registerpowercontrolcallback, RegisterPowerControlCallback method [Audio Devices], RegisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower interface, RegisterPowerControlCallback
+ms.keywords : IPortClsRuntimePower, IPortClsRuntimePower::RegisterPowerControlCallback, RegisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower interface, portcls/IPortClsRuntimePower::RegisterPowerControlCallback, audio.iportclsruntimepower_registerpowercontrolcallback, RegisterPowerControlCallback method [Audio Devices], RegisterPowerControlCallback, IPortClsRuntimePower interface [Audio Devices], RegisterPowerControlCallback method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -56,15 +56,15 @@ NTSTATUS RegisterPowerControlCallback(
 
 `_DeviceObject`
 
-
+The device object.
 
 `_Callback`
 
-
+The callback object.
 
 `_Context`
 
-
+The callback context.
 
 
 ## Return Value
@@ -75,14 +75,10 @@ The <code>RegisterPowerControlCallback</code> method returns STATUS_SUCCESS, if 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 7 Windows 7 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c00b8f19-6708-4ec2-928b-610158850247
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.bthhfp_audio_device_capabilties_init, BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT, bthhfpddi/BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT, BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT method [Audio Devices]
+ms.keywords : BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT method [Audio Devices], audio.bthhfp_audio_device_capabilties_init, bthhfpddi/BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT, BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,11 +67,8 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | bthhfpddi.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |

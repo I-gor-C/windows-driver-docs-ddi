@@ -62,8 +62,5 @@ The <code>ISynthSinkDMus</code> interface provides methods to render, convert sa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dmusicks.h |
-| **DLL** |  |

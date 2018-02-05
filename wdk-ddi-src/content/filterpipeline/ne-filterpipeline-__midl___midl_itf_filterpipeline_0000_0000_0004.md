@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 079BEF8A-514E-42C3-8916-95655C605098
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Xps_Restricted_Font_PreviewPrint, filterpipeline/Xps_Restricted_Font_PreviewPrint, Xps_Restricted_Font_Editable, Xps_Restricted_Font_NoEmbedding, filterpipeline/Xps_Restricted_Font_NoEmbedding, print.expsfontrestriction, filterpipeline/EXpsFontRestriction, EXpsFontRestriction enumeration [Print Devices], Xps_Restricted_Font_Installable, EXpsFontRestriction, filterpipeline/Xps_Restricted_Font_Editable, __MIDL___MIDL_itf_filterpipeline_0000_0000_0004, filterpipeline/Xps_Restricted_Font_Installable
+ms.keywords : filterpipeline/Xps_Restricted_Font_Editable, Xps_Restricted_Font_Editable, filterpipeline/EXpsFontRestriction, Xps_Restricted_Font_PreviewPrint, print.expsfontrestriction, filterpipeline/Xps_Restricted_Font_Installable, Xps_Restricted_Font_NoEmbedding, Xps_Restricted_Font_Installable, EXpsFontRestriction enumeration [Print Devices], filterpipeline/Xps_Restricted_Font_NoEmbedding, EXpsFontRestriction, __MIDL___MIDL_itf_filterpipeline_0000_0000_0004, filterpipeline/Xps_Restricted_Font_PreviewPrint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum __MIDL___MIDL_itf_filterpipeline_0000_0000_0004 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | filterpipeline.h |

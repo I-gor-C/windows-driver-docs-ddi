@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : ca0eef79-d990-4a82-b2d6-a51e3790cfc2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_WHEA_XPF_PROCINFO_VALIDBITS, whearef_6ebbdab8-0590-4479-a8ab-ea9bacf69399.xml, WHEA_XPF_PROCINFO_VALIDBITS union [WHEA Drivers and Applications], ntddk/PWHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS union pointer [WHEA Drivers and Applications], ntddk/WHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS, whea.whea_xpf_procinfo_validbits, *PWHEA_XPF_PROCINFO_VALIDBITS"
+ms.keywords : ntddk/WHEA_XPF_PROCINFO_VALIDBITS, ntddk/PWHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS, whea.whea_xpf_procinfo_validbits, whearef_6ebbdab8-0590-4479-a8ab-ea9bacf69399.xml, WHEA_XPF_PROCINFO_VALIDBITS, *PWHEA_XPF_PROCINFO_VALIDBITS, _WHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS union [WHEA Drivers and Applications], PWHEA_XPF_PROCINFO_VALIDBITS union pointer [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS"
+req.typenames : WHEA_XPF_PROCINFO_VALIDBITS, *PWHEA_XPF_PROCINFO_VALIDBITS
 ---
 
 # _WHEA_XPF_PROCINFO_VALIDBITS structure
@@ -73,9 +73,7 @@ A WHEA_XPF_PROCINFO_VALIDBITS union is contained within the <a href="..\ntddk\ns
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

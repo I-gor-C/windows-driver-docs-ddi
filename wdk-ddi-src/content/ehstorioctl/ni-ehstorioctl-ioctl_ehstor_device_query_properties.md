@@ -85,9 +85,8 @@ Currently, bytes per sector is the only property available in <b>EHSTOR_DEVICE_P
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

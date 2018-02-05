@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C19190A3-57F9-4482-A550-045805734909
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsTerminateServerSilo, PsTerminateServerSilo routine [Kernel-Mode Driver Architecture], ntddk/PsTerminateServerSilo, kernel.psterminateserversilo
+ms.keywords : ntddk/PsTerminateServerSilo, kernel.psterminateserversilo, PsTerminateServerSilo routine [Kernel-Mode Driver Architecture], PsTerminateServerSilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,7 @@ This routine can be called within or from outside a silo context.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

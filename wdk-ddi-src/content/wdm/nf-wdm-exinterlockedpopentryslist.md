@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dbea07e1-f987-45d8-91cb-bde45df0672b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exinterlockedpopentryslist, wdm/ExInterlockedPopEntrySList, k102_fc9dbcb7-5cb0-405c-9a65-f7d6b60d2fee.xml, ExInterlockedPopEntrySList routine [Kernel-Mode Driver Architecture], ExInterlockedPopEntrySList
+ms.keywords : wdm/ExInterlockedPopEntrySList, ExInterlockedPopEntrySList routine [Kernel-Mode Driver Architecture], k102_fc9dbcb7-5cb0-405c-9a65-f7d6b60d2fee.xml, kernel.exinterlockedpopentryslist, ExInterlockedPopEntrySList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,26 +78,24 @@ On Windows 2000, drivers must use the <b>-D_WIN2K_COMPAT_SLIST_USAGE</b> switch 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
-
 <a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
-
-<a href="..\wdm\nf-wdm-exquerydepthslist.md">ExQueryDepthSList</a>
 
 <a href="..\wdm\nf-wdm-exinterlockedpushentryslist.md">ExInterlockedPushEntrySList</a>
 
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+
 <a href="..\wdm\nf-wdm-exinterlockedremoveheadlist.md">ExInterlockedRemoveHeadList</a>
+
+<a href="..\wdm\nf-wdm-exquerydepthslist.md">ExQueryDepthSList</a>
 
  
 

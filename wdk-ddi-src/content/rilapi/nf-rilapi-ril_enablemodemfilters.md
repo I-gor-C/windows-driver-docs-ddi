@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 11fc231e-4b65-4cbb-8c0f-58b1165c08dd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_EnableModemFilters method [Network Drivers Starting with Windows Vista], RIL_EnableModemFilters, netvista.ril_enablemodemfilters, rilapi/RIL_EnableModemFilters
+ms.keywords : RIL_EnableModemFilters method [Network Drivers Starting with Windows Vista], rilapi/RIL_EnableModemFilters, RIL_EnableModemFilters, netvista.ril_enablemodemfilters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

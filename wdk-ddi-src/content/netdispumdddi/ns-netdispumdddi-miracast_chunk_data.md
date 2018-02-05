@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1ff4af0b-df1c-4529-9f80-c9e44d889a63
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.miracast_chunk_data, netdispumdddi/MIRACAST_CHUNK_DATA, MIRACAST_CHUNK_DATA, MIRACAST_CHUNK_DATA structure [Display Devices]
+ms.keywords : netdispumdddi/MIRACAST_CHUNK_DATA, MIRACAST_CHUNK_DATA structure [Display Devices], MIRACAST_CHUNK_DATA, display.miracast_chunk_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
 
 ## See Also

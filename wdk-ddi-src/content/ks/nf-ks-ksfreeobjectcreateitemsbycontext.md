@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 70c2942d-1225-4a50-b734-27995b4481d1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsFreeObjectCreateItemsByContext, stream.ksfreeobjectcreateitemsbycontext, KsFreeObjectCreateItemsByContext, ksfunc_0ad51072-eff4-4be3-95f4-b54c9267a4a9.xml, KsFreeObjectCreateItemsByContext function [Streaming Media Devices]
+ms.keywords : KsFreeObjectCreateItemsByContext function [Streaming Media Devices], KsFreeObjectCreateItemsByContext, ks/KsFreeObjectCreateItemsByContext, ksfunc_0ad51072-eff4-4be3-95f4-b54c9267a4a9.xml, stream.ksfreeobjectcreateitemsbycontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,9 @@ Instead of freeing create items by name as <b>KsFreeObjectCreateItems</b> does, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

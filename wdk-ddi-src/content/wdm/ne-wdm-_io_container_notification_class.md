@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cc2ce023-ebb1-4a8e-a06a-e2f11a89d258
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoMaxContainerNotificationClass, wdm/IO_CONTAINER_NOTIFICATION_CLASS, sysenum_c77c6805-11ce-4368-9c82-085ce99a2a97.xml, wdm/IoMaxContainerNotificationClass, IO_CONTAINER_NOTIFICATION_CLASS, IoSessionStateNotification, kernel.io_container_notification_class, wdm/IoSessionStateNotification, _IO_CONTAINER_NOTIFICATION_CLASS, IO_CONTAINER_NOTIFICATION_CLASS enumeration [Kernel-Mode Driver Architecture]
+ms.keywords : IO_CONTAINER_NOTIFICATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/IO_CONTAINER_NOTIFICATION_CLASS, _IO_CONTAINER_NOTIFICATION_CLASS, IoMaxContainerNotificationClass, wdm/IoMaxContainerNotificationClass, IoSessionStateNotification, wdm/IoSessionStateNotification, sysenum_c77c6805-11ce-4368-9c82-085ce99a2a97.xml, IO_CONTAINER_NOTIFICATION_CLASS, kernel.io_container_notification_class
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -72,9 +72,7 @@ To register for notifications, a driver calls the <a href="..\wdm\nf-wdm-ioregis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
 ## See Also

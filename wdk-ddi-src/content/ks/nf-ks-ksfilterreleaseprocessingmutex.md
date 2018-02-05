@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8ccf24a4-f087-4d61-8a9e-4bc05d7ec7bf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsFilterReleaseProcessingMutex, KsFilterReleaseProcessingMutex, avfunc_35026563-e7aa-4305-a4fc-2558c1b21aa7.xml, KsFilterReleaseProcessingMutex function [Streaming Media Devices], stream.ksfilterreleaseprocessingmutex
+ms.keywords : KsFilterReleaseProcessingMutex function [Streaming Media Devices], avfunc_35026563-e7aa-4305-a4fc-2558c1b21aa7.xml, KsFilterReleaseProcessingMutex, ks/KsFilterReleaseProcessingMutex, stream.ksfilterreleaseprocessingmutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,11 @@ For more AVStream-specific information about mutexes, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

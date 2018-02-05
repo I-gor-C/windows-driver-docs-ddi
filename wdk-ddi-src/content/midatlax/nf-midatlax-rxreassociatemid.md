@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2b80aa77-45b3-4157-8ab5-770c827a536a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxReassociateMid, rxref_0fbfcaf6-383a-48ed-81b1-eed7521df3e7.xml, RxReassociateMid function [Installable File System Drivers], midatlax/RxReassociateMid, ifsk.rxreassociatemid
+ms.keywords : midatlax/RxReassociateMid, rxref_0fbfcaf6-383a-48ed-81b1-eed7521df3e7.xml, RxReassociateMid function [Installable File System Drivers], ifsk.rxreassociatemid, RxReassociateMid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,10 @@ RDBSS defines a MID as a 16-bit value, which can be used by both the network cli
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | midatlax.h (include Midatlax.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -93,11 +89,11 @@ RDBSS defines a MID as a 16-bit value, which can be used by both the network cli
 
 <a href="..\midatlax\nf-midatlax-rxdestroymidatlas.md">RxDestroyMidAtlas</a>
 
-<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
-
 <a href="..\midatlax\nf-midatlax-rxmapanddissociatemidfromcontext.md">RxMapAndDissociateMidFromContext</a>
 
 <a href="..\midatlax\nf-midatlax-rxmapmidtocontext.md">RxMapMidToContext</a>
+
+<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
 
  
 

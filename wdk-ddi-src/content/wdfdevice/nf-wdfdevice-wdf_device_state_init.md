@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f8c040aa-bfa0-4b74-ad0a-8796f1cfc4b8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WDF_DEVICE_STATE_INIT, WDF_DEVICE_STATE_INIT function, DFDeviceObjectGeneralRef_702c7f79-a50f-4115-ba93-82388ccbf063.xml, WDF_DEVICE_STATE_INIT, kmdf.wdf_device_state_init, wdf.wdf_device_state_init
+ms.keywords : wdf.wdf_device_state_init, kmdf.wdf_device_state_init, WDF_DEVICE_STATE_INIT, DFDeviceObjectGeneralRef_702c7f79-a50f-4115-ba93-82388ccbf063.xml, wdfdevice/WDF_DEVICE_STATE_INIT, WDF_DEVICE_STATE_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,11 @@ The <b>WDF_DEVICE_STATE_INIT</b> function initializes all of the <a href="..\wdf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

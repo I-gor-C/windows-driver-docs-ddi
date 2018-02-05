@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : e35ae7c6-2cf4-4f20-bb00-7f33ae133118
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.hidp_getusages, HidP_GetUsages, hidpi/HidP_GetUsages, HidP_GetUsages routine [Human Input Devices], hidfunc_ed08f7c0-5435-417a-958f-34a6cbb1f541.xml
+ms.keywords : hid.hidp_getusages, hidfunc_ed08f7c0-5435-417a-958f-34a6cbb1f541.xml, HidP_GetUsages, hidpi/HidP_GetUsages, HidP_GetUsages routine [Human Input Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -190,32 +190,29 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidpi.h (include Hidpi.h) |
-| **Library** |  |
+| **Library** | Hidparse.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
-
-<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
 
 <a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539708">HidP_GetButtons</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
 
-<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+
+<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
 
 <a href="..\hidpi\nf-hidpi-hidp_getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
 

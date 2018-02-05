@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : f166ced5-2d63-4e35-af77-78ca80c888d7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : smclib/PVENDOR_ATTR, _VENDOR_ATTR, VENDOR_ATTR structure [Smart Card Reader Devices], VENDOR_ATTR, *PVENDOR_ATTR, smartcrd.vendor_attr, PVENDOR_ATTR structure pointer [Smart Card Reader Devices], smclib/VENDOR_ATTR, PVENDOR_ATTR, scstruct_dfa4be20-d572-46d6-aff7-c4c16d930c7f.xml
+ms.keywords : scstruct_dfa4be20-d572-46d6-aff7-c4c16d930c7f.xml, VENDOR_ATTR, smartcrd.vendor_attr, smclib/VENDOR_ATTR, VENDOR_ATTR structure [Smart Card Reader Devices], PVENDOR_ATTR structure pointer [Smart Card Reader Devices], *PVENDOR_ATTR, PVENDOR_ATTR, _VENDOR_ATTR, smclib/PVENDOR_ATTR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVENDOR_ATTR, VENDOR_ATTR"
+req.typenames : VENDOR_ATTR, *PVENDOR_ATTR
 req.product : Windows 10 or later.
 ---
 
@@ -98,7 +98,4 @@ A structure with the following members:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | smclib.h (include Smclib.h) |

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 0D4528C0-AEE6-4AD2-A3E6-524A6EB8A0D9
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, *PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, bthddi/L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure pointer [Bluetooth Devices], bthddi/PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, bltooth.l2cap_retransmission_and_flow_control, L2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure [Bluetooth Devices]
+ms.keywords : bltooth.l2cap_retransmission_and_flow_control, PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure pointer [Bluetooth Devices], L2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure [Bluetooth Devices], *PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, bthddi/PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, _L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, PL2CAP_RETRANSMISSION_AND_FLOW_CONTROL, bthddi/L2CAP_RETRANSMISSION_AND_FLOW_CONTROL, L2CAP_RETRANSMISSION_AND_FLOW_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,5 @@ Size of the transmission window for enhanced retransmission mode. The value of m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows Versions:\_Supported in Windows 8 and later versions of Windows |
 | **Header** | bthddi.h (include Bthddi.h) |

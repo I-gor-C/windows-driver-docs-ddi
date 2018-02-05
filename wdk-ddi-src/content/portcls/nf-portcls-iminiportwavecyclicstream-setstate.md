@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 61d7252e-04af-46f1-a885-4720698ae930
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, SetState method [Audio Devices], audmp-routines_46474aab-87da-4121-9cb8-ee8b280c7852.xml, IMiniportWaveCyclicStream interface [Audio Devices], SetState method, portcls/IMiniportWaveCyclicStream::SetState, SetState, SetState method [Audio Devices], IMiniportWaveCyclicStream interface, audio.iminiportwavecyclicstream_setstate, IMiniportWaveCyclicStream::SetState
+ms.keywords : SetState method [Audio Devices], audio.iminiportwavecyclicstream_setstate, SetState method [Audio Devices], IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream::SetState, IMiniportWaveCyclicStream, audmp-routines_46474aab-87da-4121-9cb8-ee8b280c7852.xml, portcls/IMiniportWaveCyclicStream::SetState, SetState, IMiniportWaveCyclicStream interface [Audio Devices], SetState method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -106,24 +106,20 @@ RUN -&gt; PAUSE -&gt; ACQUIRE -&gt; STOP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565110">KSPROPERTY_CONNECTION_STATE</a>
 
+<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
 
 <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
-
-<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 
  
 

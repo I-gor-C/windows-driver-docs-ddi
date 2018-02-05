@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 80f1f1bd-57da-46b2-9967-9ba4b08ea057
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortPutDmaAdapter, VideoPortPutDmaAdapter function [Display Devices], display.videoportputdmaadapter, VideoPort_Functions_3de2fb91-53a9-4a1d-9dcd-91e3c0d645ab.xml, video/VideoPortPutDmaAdapter
+ms.keywords : VideoPortPutDmaAdapter function [Display Devices], video/VideoPortPutDmaAdapter, display.videoportputdmaadapter, VideoPortPutDmaAdapter, VideoPort_Functions_3de2fb91-53a9-4a1d-9dcd-91e3c0d645ab.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ A miniport driver should call this function only if it will not use the same VP_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

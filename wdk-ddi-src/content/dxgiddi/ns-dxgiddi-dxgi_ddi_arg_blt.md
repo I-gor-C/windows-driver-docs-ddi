@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 695f2aff-cce3-4358-a9e2-48eea43e8ef5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_299fa1c4-8c06-4a7e-a81c-741eb2e8c00a.xml, DXGI_DDI_ARG_BLT structure [Display Devices], dxgiddi/DXGI_DDI_ARG_BLT, display.dxgi_ddi_arg_blt, DXGI_DDI_ARG_BLT
+ms.keywords : DXGI_DDI_ARG_BLT, dxgiddi/DXGI_DDI_ARG_BLT, DXGI_DDI_ARG_BLT structure [Display Devices], display.dxgi_ddi_arg_blt, UMDisplayDriver_Dx10param_Structs_299fa1c4-8c06-4a7e-a81c-741eb2e8c00a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -109,16 +109,14 @@ typedef struct DXGI_DDI_ARG_BLT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
+
+<a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>
 
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt_flags.md">DXGI_DDI_ARG_BLT_FLAGS</a>
 

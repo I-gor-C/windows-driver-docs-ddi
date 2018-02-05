@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f669790f-0370-46a0-ba38-05e35cdf23b3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceEnqueueRequest, DFDeviceObjectGeneralRef_f97fc280-163f-4931-a222-6a8ccf3251d2.xml, PFN_WDFDEVICEENQUEUEREQUEST, WdfDeviceEnqueueRequest, kmdf.wdfdeviceenqueuerequest, WdfDeviceEnqueueRequest method, wdf.wdfdeviceenqueuerequest
+ms.keywords : wdfdevice/WdfDeviceEnqueueRequest, WdfDeviceEnqueueRequest, wdf.wdfdeviceenqueuerequest, WdfDeviceEnqueueRequest method, PFN_WDFDEVICEENQUEUEREQUEST, DFDeviceObjectGeneralRef_f97fc280-163f-4931-a222-6a8ccf3251d2.xml, kmdf.wdfdeviceenqueuerequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -142,12 +142,10 @@ For versions 1.0 and 1.5 of KMDF, <b>WdfDeviceEnqueueRequest</b> must be called 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL (See remarks section)" |
 | **DDI compliance rules** | DeferredRequestCompleted, DriverCreate, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal |
 

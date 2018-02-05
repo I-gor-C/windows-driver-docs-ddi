@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7214a0e9-5519-4daa-bd2f-cc3c697dd867
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetPnpState method, IWDFDevice interface, GetPnpState method, umdf.iwdfdevice_getpnpstate, wudfddi/IWDFDevice::GetPnpState, IWDFDevice, GetPnpState, UMDFDeviceObjectRef_6fe8971d-2af6-4fc0-a902-74edb5d45f39.xml, GetPnpState method, IWDFDevice interface, wdf.iwdfdevice_getpnpstate, IWDFDevice::GetPnpState
+ms.keywords : UMDFDeviceObjectRef_6fe8971d-2af6-4fc0-a902-74edb5d45f39.xml, GetPnpState method, IWDFDevice interface, IWDFDevice::GetPnpState, wudfddi/IWDFDevice::GetPnpState, GetPnpState method, GetPnpState, umdf.iwdfdevice_getpnpstate, IWDFDevice, wdf.iwdfdevice_getpnpstate, IWDFDevice interface, GetPnpState method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -107,22 +107,20 @@ The PnP property is turned on.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_state.md">WDF_PNP_STATE</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
 
  
 

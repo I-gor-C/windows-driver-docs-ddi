@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2546303a-53c3-4c6b-a230-eb1ebd74cb76
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaEnablerWdmGetDmaAdapter, PFN_WDFDMAENABLERWDMGETDMAADAPTER, wdf.wdfdmaenablerwdmgetdmaadapter, wdfdmaenabler/WdfDmaEnablerWdmGetDmaAdapter, WdfDmaEnablerWdmGetDmaAdapter method, DFDmaObjectRef_9ed5be1b-56fd-4305-8aad-0ebb0856e34a.xml, kmdf.wdfdmaenablerwdmgetdmaadapter
+ms.keywords : WdfDmaEnablerWdmGetDmaAdapter method, WdfDmaEnablerWdmGetDmaAdapter, wdf.wdfdmaenablerwdmgetdmaadapter, PFN_WDFDMAENABLERWDMGETDMAADAPTER, DFDmaObjectRef_9ed5be1b-56fd-4305-8aad-0ebb0856e34a.xml, kmdf.wdfdmaenablerwdmgetdmaadapter, wdfdmaenabler/WdfDmaEnablerWdmGetDmaAdapter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,22 +82,20 @@ The pointer that <b>WdfDmaEnablerWdmGetDmaAdapter</b> returns is valid until the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.5 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_direction.md">WDF_DMA_DIRECTION</a>
+
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
 <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
-
-<a href="..\wdfdmaenabler\ne-wdfdmaenabler-_wdf_dma_direction.md">WDF_DMA_DIRECTION</a>
 
  
 

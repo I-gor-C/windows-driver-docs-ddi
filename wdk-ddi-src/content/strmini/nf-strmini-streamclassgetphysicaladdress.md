@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5a8e7130-00e7-4bff-8939-7cfcc1a2b9aa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : StreamClassGetPhysicalAddress routine [Streaming Media Devices], strmini/StreamClassGetPhysicalAddress, strclass-routines_e8d5c2ab-3cfa-4bb7-b4f7-e57908c2c6f8.xml, stream.streamclassgetphysicaladdress, StreamClassGetPhysicalAddress
+ms.keywords : strmini/StreamClassGetPhysicalAddress, StreamClassGetPhysicalAddress, stream.streamclassgetphysicaladdress, strclass-routines_e8d5c2ab-3cfa-4bb7-b4f7-e57908c2c6f8.xml, StreamClassGetPhysicalAddress routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -125,11 +125,6 @@ Indicates the physical address of the data buffer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |

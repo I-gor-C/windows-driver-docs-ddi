@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 45CCCD97-94FD-457B-8315-06DC701B22A2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2CustomReceiveTransactionCleanupComplete method [Serial Ports], SerCx2CustomReceiveTransactionCleanupComplete, 2/SerCx2CustomReceiveTransactionCleanupComplete, serports.sercx2customreceivetransactioncleanupcomplete
+ms.keywords : 2/SerCx2CustomReceiveTransactionCleanupComplete, SerCx2CustomReceiveTransactionCleanupComplete method [Serial Ports], serports.sercx2customreceivetransactioncleanupcomplete, SerCx2CustomReceiveTransactionCleanupComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,22 +73,19 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
 
 <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
 
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_cleanup.md">EvtSerCx2CustomReceiveTransactionCleanup</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
 
  
 

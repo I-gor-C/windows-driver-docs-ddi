@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 42d70c1f-5cce-4097-849d-a5aa05b669b5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : DebugLevelFatal, strmini/STREAM_DEBUG_LEVEL, DebugLevelTrace, DebugLevelWarning, strmini/DebugLevelInfo, strmini/DebugLevelVerbose, DebugLevelMaximum, ks-struct_9820cc1d-0d8b-43a8-b1a2-bca3f8a23d22.xml, DebugLevelVerbose, stream.stream_debug_level, DebugLevelInfo, DebugLevelError, strmini/DebugLevelTrace, STREAM_DEBUG_LEVEL, strmini/DebugLevelError, strmini/DebugLevelMaximum, strmini/DebugLevelWarning, strmini/DebugLevelFatal, STREAM_DEBUG_LEVEL enumeration [Streaming Media Devices]
+ms.keywords : strmini/DebugLevelMaximum, stream.stream_debug_level, strmini/DebugLevelTrace, strmini/DebugLevelWarning, STREAM_DEBUG_LEVEL enumeration [Streaming Media Devices], DebugLevelWarning, strmini/DebugLevelInfo, strmini/DebugLevelVerbose, DebugLevelTrace, DebugLevelError, DebugLevelFatal, DebugLevelMaximum, strmini/DebugLevelError, ks-struct_9820cc1d-0d8b-43a8-b1a2-bca3f8a23d22.xml, strmini/DebugLevelFatal, DebugLevelInfo, STREAM_DEBUG_LEVEL, DebugLevelVerbose, strmini/STREAM_DEBUG_LEVEL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -99,9 +99,6 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A44B4B93-4EC7-4FC3-B64F-BF1FF19D067E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TmInitializeTransactionManager, wdm/TmInitializeTransactionManager, TmInitializeTransactionManager routine [Kernel-Mode Driver Architecture], kernel.tminitializetransactionmanager_
+ms.keywords : TmInitializeTransactionManager routine [Kernel-Mode Driver Architecture], wdm/TmInitializeTransactionManager, kernel.tminitializetransactionmanager_, TmInitializeTransactionManager
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -157,11 +157,7 @@ The <b>TmInitializeTransactionManager</b> routine  returns STATUS_SUCCESS if the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 85f401bb-b8bd-4bb9-9953-08945ffc4d8b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_changeuicclockpassword, RIL_ChangeUiccLockPassword, rilapi/RIL_ChangeUiccLockPassword, RIL_ChangeUiccLockPassword method [Network Drivers Starting with Windows Vista]
+ms.keywords : rilapi/RIL_ChangeUiccLockPassword, RIL_ChangeUiccLockPassword method [Network Drivers Starting with Windows Vista], RIL_ChangeUiccLockPassword, netvista.ril_changeuicclockpassword
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

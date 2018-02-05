@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2c7392c2-49c8-4b27-addc-0200eabbe87e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getsetsympath, GetSetSympath function [Windows Debugging], wdbgexts/GetSetSympath, WdbgExts_Ref_66364d7b-fd3c-424a-a04d-b7bf24178039.xml, GetSetSympath
+ms.keywords : WdbgExts_Ref_66364d7b-fd3c-424a-a04d-b7bf24178039.xml, GetSetSympath function [Windows Debugging], GetSetSympath, wdbgexts/GetSetSympath, debugger.getsetsympath
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,11 +80,6 @@ When the symbol path is changed, a call to <b>ReloadSymbols</b> is made implicit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

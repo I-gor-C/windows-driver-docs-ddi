@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d9569b4b-ad71-46dd-b421-8493f595f030
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdeviceremovedependentusagedeviceobject, PFN_WDFDEVICEREMOVEDEPENDENTUSAGEDEVICEOBJECT, WdfDeviceRemoveDependentUsageDeviceObject method, DFDeviceObjectGeneralRef_22cf19f5-c56f-430f-a6a1-d15af92eb41b.xml, wdf.wdfdeviceremovedependentusagedeviceobject, WdfDeviceRemoveDependentUsageDeviceObject, wdfdevice/WdfDeviceRemoveDependentUsageDeviceObject
+ms.keywords : PFN_WDFDEVICEREMOVEDEPENDENTUSAGEDEVICEOBJECT, DFDeviceObjectGeneralRef_22cf19f5-c56f-430f-a6a1-d15af92eb41b.xml, WdfDeviceRemoveDependentUsageDeviceObject, kmdf.wdfdeviceremovedependentusagedeviceobject, wdf.wdfdeviceremovedependentusagedeviceobject, wdfdevice/WdfDeviceRemoveDependentUsageDeviceObject, WdfDeviceRemoveDependentUsageDeviceObject method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,12 +78,10 @@ For more information about <b>WdfDeviceRemoveDependentUsageDeviceObject</b> and 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : e46a9aee-8d96-41f5-b0f9-01846fefe4cb
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFPDOINITADDDEVICETEXT, DFDeviceObjectFdoPdoRef_1167066a-5ec9-47b8-be03-32127121fa91.xml, wdf.wdfpdoinitadddevicetext, wdfpdo/WdfPdoInitAddDeviceText, kmdf.wdfpdoinitadddevicetext, WdfPdoInitAddDeviceText, WdfPdoInitAddDeviceText method
+ms.keywords : wdf.wdfpdoinitadddevicetext, PFN_WDFPDOINITADDDEVICETEXT, kmdf.wdfpdoinitadddevicetext, WdfPdoInitAddDeviceText method, wdfpdo/WdfPdoInitAddDeviceText, DFDeviceObjectFdoPdoRef_1167066a-5ec9-47b8-be03-32127121fa91.xml, WdfPdoInitAddDeviceText
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -120,12 +120,10 @@ The driver must call <b>WdfPdoInitAddDeviceText</b> before calling <a href="..\w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7bb04fbb-2894-4148-88c2-fbbebb000ec9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ks_tvtuner_change_info, PKS_TVTUNER_CHANGE_INFO, PKS_TVTUNER_CHANGE_INFO structure pointer [Streaming Media Devices], KS_TVTUNER_CHANGE_INFO structure [Streaming Media Devices], *PKS_TVTUNER_CHANGE_INFO, tagKS_TVTUNER_CHANGE_INFO, KS_TVTUNER_CHANGE_INFO, vidcapstruct_225fdabf-bdaf-49df-a2e3-ace62a0a17e2.xml, ksmedia/KS_TVTUNER_CHANGE_INFO, ksmedia/PKS_TVTUNER_CHANGE_INFO
+ms.keywords : PKS_TVTUNER_CHANGE_INFO structure pointer [Streaming Media Devices], tagKS_TVTUNER_CHANGE_INFO, ksmedia/KS_TVTUNER_CHANGE_INFO, PKS_TVTUNER_CHANGE_INFO, vidcapstruct_225fdabf-bdaf-49df-a2e3-ace62a0a17e2.xml, KS_TVTUNER_CHANGE_INFO, stream.ks_tvtuner_change_info, KS_TVTUNER_CHANGE_INFO structure [Streaming Media Devices], ksmedia/PKS_TVTUNER_CHANGE_INFO, *PKS_TVTUNER_CHANGE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -102,9 +102,6 @@ A packet containing a KS_TVTUNER_CHANGE_INFO structure normally originates at a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

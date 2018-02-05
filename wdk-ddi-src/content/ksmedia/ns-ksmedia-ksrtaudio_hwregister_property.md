@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 200577b9-44de-45ca-8b4f-904eabb1a4ce
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSRTAUDIO_HWREGISTER_PROPERTY, PKSRTAUDIO_HWREGISTER_PROPERTY structure pointer [Audio Devices], ksmedia/KSRTAUDIO_HWREGISTER_PROPERTY, *PKSRTAUDIO_HWREGISTER_PROPERTY, PKSRTAUDIO_HWREGISTER_PROPERTY, audio.ksrtaudio_hwregister_property, KSRTAUDIO_HWREGISTER_PROPERTY structure [Audio Devices], aud-prop_d554442a-4677-4fc6-a305-ef02d5caffef.xml, ksmedia/PKSRTAUDIO_HWREGISTER_PROPERTY
+ms.keywords : ksmedia/KSRTAUDIO_HWREGISTER_PROPERTY, ksmedia/PKSRTAUDIO_HWREGISTER_PROPERTY, *PKSRTAUDIO_HWREGISTER_PROPERTY, PKSRTAUDIO_HWREGISTER_PROPERTY, audio.ksrtaudio_hwregister_property, aud-prop_d554442a-4677-4fc6-a305-ef02d5caffef.xml, KSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY structure [Audio Devices], PKSRTAUDIO_HWREGISTER_PROPERTY structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,20 +66,18 @@ The client uses the KSRTAUDIO_HWREGISTER_PROPERTY structure to request the hardw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
 | **Header** | ksmedia.h |
 
 ## See Also
-
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
 <a href="..\ksmedia\ns-ksmedia-ksrtaudio_hwregister.md">KSRTAUDIO_HWREGISTER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537376">KSPROPERTY_RTAUDIO_CLOCKREGISTER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537381">KSPROPERTY_RTAUDIO_POSITIONREGISTER</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
  
 

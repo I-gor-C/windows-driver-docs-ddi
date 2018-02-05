@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 322E70AA-5825-4199-B822-B48B12E62393
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfinterrupt/WdfInterruptReportInactive, WdfInterruptReportInactive, wdf.wdfinterruptreportinactive, kmdf._wdfinterruptreportinactive, kmdf.wdfinterruptreportinactive, PFN_WDFINTERRUPTREPORTINACTIVE, WdfInterruptReportInactive method
+ms.keywords : WdfInterruptReportInactive, kmdf._wdfinterruptreportinactive, wdfinterrupt/WdfInterruptReportInactive, wdf.wdfinterruptreportinactive, PFN_WDFINTERRUPTREPORTINACTIVE, WdfInterruptReportInactive method, kmdf.wdfinterruptreportinactive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,12 +79,11 @@ If your driver calls this method on an operating system earlier than Windows 8,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfinterrupt.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

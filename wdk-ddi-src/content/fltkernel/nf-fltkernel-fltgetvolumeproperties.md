@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1e975626-fa47-456f-a2a9-48506c67cbe5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltGetVolumeProperties routine [Installable File System Drivers], ifsk.fltgetvolumeproperties, fltkernel/FltGetVolumeProperties, FltGetVolumeProperties, FltApiRef_e_to_o_3afcdc71-3007-478e-8699-a1480ca118b8.xml
+ms.keywords : FltGetVolumeProperties, fltkernel/FltGetVolumeProperties, FltGetVolumeProperties routine [Installable File System Drivers], ifsk.fltgetvolumeproperties, FltApiRef_e_to_o_3afcdc71-3007-478e-8699-a1480ca118b8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -111,14 +111,11 @@ The buffer that the <i>VolumeProperties</i> parameter points to is not large eno
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

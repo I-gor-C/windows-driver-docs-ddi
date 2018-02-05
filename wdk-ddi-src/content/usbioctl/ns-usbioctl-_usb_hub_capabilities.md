@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : a87f747f-474d-401d-9757-0820680e5c8e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSB_HUB_CAPABILITIES, usbioctl/PUSB_HUB_CAPABILITIES, *PUSB_HUB_CAPABILITIES, _USB_HUB_CAPABILITIES, USB_HUB_CAPABILITIES, usbioctl/USB_HUB_CAPABILITIES, PUSB_HUB_CAPABILITIES structure pointer [Buses], USB_HUB_CAPABILITIES structure [Buses], usbstrct_b82d8bad-3ed4-40d1-a6c1-7ac416ebf157.xml, buses.usb_hub_capabilities
+ms.keywords : PUSB_HUB_CAPABILITIES, usbioctl/PUSB_HUB_CAPABILITIES, _USB_HUB_CAPABILITIES, usbioctl/USB_HUB_CAPABILITIES, PUSB_HUB_CAPABILITIES structure pointer [Buses], buses.usb_hub_capabilities, *PUSB_HUB_CAPABILITIES, USB_HUB_CAPABILITIES, usbstrct_b82d8bad-3ed4-40d1-a6c1-7ac416ebf157.xml, USB_HUB_CAPABILITIES structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_HUB_CAPABILITIES, *PUSB_HUB_CAPABILITIES
+req.typenames : "*PUSB_HUB_CAPABILITIES, USB_HUB_CAPABILITIES"
 req.product : Windows 10 or later.
 ---
 
@@ -60,20 +60,17 @@ If <b>TRUE</b>, the hub is capable of running at high speed.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also
 
 <a href="..\usbioctl\ns-usbioctl-_usb_hub_capabilities_ex.md">USB_HUB_CAPABILITIES_EX</a>
 
-<a href="..\usbioctl\ns-usbioctl-_usb_hub_cap_flags.md">USB_HUB_CAP_FLAGS</a>
-
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_capabilities.md">IOCTL_USB_GET_HUB_CAPABILITIES</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+
+<a href="..\usbioctl\ns-usbioctl-_usb_hub_cap_flags.md">USB_HUB_CAP_FLAGS</a>
 
  
 

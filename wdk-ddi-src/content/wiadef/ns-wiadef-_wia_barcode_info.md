@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 2E659DDC-4012-4EA2-8E6C-033F2AB526B8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiadef/WIA_BARCODE_INFO, WIA_BARCODE_INFO structure [Imaging Devices], _WIA_BARCODE_INFO, image.wia_barcode_info, WIA_BARCODE_INFO
+ms.keywords : WIA_BARCODE_INFO structure [Imaging Devices], wiadef/WIA_BARCODE_INFO, WIA_BARCODE_INFO, _WIA_BARCODE_INFO, image.wia_barcode_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,7 +100,4 @@ The barcode type. One of the <a href="https://msdn.microsoft.com/library/windows
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wiadef.h (include Wiadef.h) |

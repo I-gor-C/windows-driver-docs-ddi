@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : FAA97E98-FB31-462E-9776-5C27A10FD773
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsSetPipe, IKsPinPipe interface [Streaming Media Devices], KsSetPipe method, IKsPinPipe, KsSetPipe method [Streaming Media Devices], IKsPinPipe interface, KsSetPipe method [Streaming Media Devices], ksproxy/IKsPinPipe::KsSetPipe, IKsPinPipe::KsSetPipe, stream.ikspinpipe_kssetpipe
+ms.keywords : IKsPinPipe interface [Streaming Media Devices], KsSetPipe method, stream.ikspinpipe_kssetpipe, ksproxy/IKsPinPipe::KsSetPipe, KsSetPipe method [Streaming Media Devices], IKsPinPipe::KsSetPipe, IKsPinPipe, KsSetPipe, KsSetPipe method [Streaming Media Devices], IKsPinPipe interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -67,14 +67,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

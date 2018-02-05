@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 558b81c5-5f6b-41a5-8d89-6ee39b9c1cd1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.appendprinternotifyinfodata, AppendPrinterNotifyInfoData function [Print Devices], spoolfnc_cc8f6371-6dea-497e-92db-6cd9e26e7867.xml, winsplp/AppendPrinterNotifyInfoData, AppendPrinterNotifyInfoData
+ms.keywords : print.appendprinternotifyinfodata, AppendPrinterNotifyInfoData, spoolfnc_cc8f6371-6dea-497e-92db-6cd9e26e7867.xml, winsplp/AppendPrinterNotifyInfoData, AppendPrinterNotifyInfoData function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,20 +96,16 @@ For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9ce
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+
+<a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : C0B1A72D-713B-48FF-8D1A-E9752569C10E
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SET_HOME_PROVIDER structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_HOME_PROVIDER, _NDIS_WWAN_SET_HOME_PROVIDER, netvista.ndis_wwan_set_home_provider, PNDIS_WWAN_SET_HOME_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_HOME_PROVIDER, ndiswwan/PNDIS_WWAN_SET_HOME_PROVIDER, *PNDIS_WWAN_SET_HOME_PROVIDER, PNDIS_WWAN_SET_HOME_PROVIDER
+ms.keywords : netvista.ndis_wwan_set_home_provider, ndiswwan/PNDIS_WWAN_SET_HOME_PROVIDER, PNDIS_WWAN_SET_HOME_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_SET_HOME_PROVIDER, PNDIS_WWAN_SET_HOME_PROVIDER, ndiswwan/NDIS_WWAN_SET_HOME_PROVIDER, _NDIS_WWAN_SET_HOME_PROVIDER, NDIS_WWAN_SET_HOME_PROVIDER structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_HOME_PROVIDER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -108,9 +108,7 @@ A formatted WWAN_PROVIDER2 object that represents the details of the home provid
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

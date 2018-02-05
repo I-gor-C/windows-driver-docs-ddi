@@ -73,20 +73,15 @@ If this routine succeeds, it returns <b>S_OK</b>. The driver should always retur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_checkpresentdurationsupport.md">D3DDDIARG_CHECKPRESENTDURATIONSUPPORT</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_checkpresentdurationsupport.md">D3DDDIARG_CHECKPRESENTDURATIONSUPPORT</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 909e0645-3824-40ff-bec9-128a9939eb1e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.element_type, AllElements, ntddchgr/AllElements, ChangerKeypad, ChangerDoor, ChangerIEPort, *PELEMENT_TYPE, ntddchgr/PELEMENT_TYPE, PELEMENT_TYPE enumeration pointer [Storage Devices], ChangerDrive, ChangerSlot, _ELEMENT_TYPE, ntddchgr/ChangerDoor, PELEMENT_TYPE, ntddchgr/ChangerMaxElement, ntddchgr/ChangerSlot, ChangerMaxElement, ChangerTransport, ntddchgr/ChangerKeypad, ntddchgr/ChangerTransport, ELEMENT_TYPE, ntddchgr/ChangerDrive, ELEMENT_TYPE enumeration [Storage Devices], structs-changer_e97997e8-4dc3-46e9-897e-3ded47adf8b8.xml, ntddchgr/ELEMENT_TYPE, ntddchgr/ChangerIEPort
+ms.keywords : structs-changer_e97997e8-4dc3-46e9-897e-3ded47adf8b8.xml, ChangerDrive, _ELEMENT_TYPE, ntddchgr/PELEMENT_TYPE, ntddchgr/ChangerDoor, ChangerDoor, ntddchgr/AllElements, ntddchgr/ELEMENT_TYPE, ChangerTransport, ntddchgr/ChangerTransport, ChangerSlot, ChangerIEPort, ntddchgr/ChangerMaxElement, AllElements, ChangerMaxElement, ntddchgr/ChangerIEPort, ntddchgr/ChangerKeypad, ELEMENT_TYPE enumeration [Storage Devices], ntddchgr/ChangerSlot, PELEMENT_TYPE, ChangerKeypad, ELEMENT_TYPE, ntddchgr/ChangerDrive, *PELEMENT_TYPE, storage.element_type, PELEMENT_TYPE enumeration pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ELEMENT_TYPE, *PELEMENT_TYPE
+req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # _ELEMENT_TYPE Enumeration
@@ -104,18 +104,15 @@ typedef enum _ELEMENT_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddchgr.h |
 
 ## See Also
 
-<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
-
 <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 
 <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
+
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 
  
 

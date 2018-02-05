@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 347e0d45-8be1-4e4e-8a6a-44d5c914bf0f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols::GetOffsetByLine, IDebugSymbols::GetOffsetByLine, IDebugSymbols2::GetOffsetByLine, debugger.getoffsetbyline, IDebugSymbols3::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetOffsetByLine, IDebugSymbols3, GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols2 interface [Windows Debugging], GetOffsetByLine method, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols_1aa7fddc-6a33-469e-828f-45ff0f31aae7.xml
+ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols3::GetOffsetByLine, IDebugSymbols2 interface [Windows Debugging], GetOffsetByLine method, IDebugSymbols3, GetOffsetByLine method [Windows Debugging], GetOffsetByLine method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols::GetOffsetByLine, IDebugSymbols_1aa7fddc-6a33-469e-828f-45ff0f31aae7.xml, IDebugSymbols interface [Windows Debugging], GetOffsetByLine method, dbgeng/IDebugSymbols3::GetOffsetByLine, dbgeng/IDebugSymbols::GetOffsetByLine, debugger.getoffsetbyline, IDebugSymbols2::GetOffsetByLine, GetOffsetByLine method [Windows Debugging], IDebugSymbols interface, GetOffsetByLine method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols2::GetOffsetByLine, GetOffsetByLine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -97,14 +97,9 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

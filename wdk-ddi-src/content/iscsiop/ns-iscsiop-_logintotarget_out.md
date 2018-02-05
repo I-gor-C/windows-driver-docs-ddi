@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 569816dc-3b92-45da-a1b8-ce4b504b6592
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsiop/LoginToTarget_OUT, structs-iSCSI_8fefca89-dd27-4a01-90a1-76ed16e79568.xml, _LoginToTarget_OUT, *PLoginToTarget_OUT, LoginToTarget_OUT, PLoginToTarget_OUT, storage.logintotarget_out, LoginToTarget_OUT structure [Storage Devices], PLoginToTarget_OUT structure pointer [Storage Devices], iscsiop/PLoginToTarget_OUT
+ms.keywords : PLoginToTarget_OUT structure pointer [Storage Devices], iscsiop/PLoginToTarget_OUT, LoginToTarget_OUT, *PLoginToTarget_OUT, LoginToTarget_OUT structure [Storage Devices], PLoginToTarget_OUT, structs-iSCSI_8fefca89-dd27-4a01-90a1-76ed16e79568.xml, iscsiop/LoginToTarget_OUT, _LoginToTarget_OUT, storage.logintotarget_out
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,6 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
@@ -82,11 +79,11 @@ You must implement this method.
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563091">MSiSCSI_Operations WMI Class</a>
 
 <a href="..\iscsiop\ns-iscsiop-_logintotarget_in.md">LoginToTarget_IN</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
 

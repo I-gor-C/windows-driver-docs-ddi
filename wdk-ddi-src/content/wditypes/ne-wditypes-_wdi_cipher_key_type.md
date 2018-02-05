@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 09874F77-5A9C-4C98-996F-29BB90CAE4B6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wifi_cipher_key_type, WDI_CIPHER_KEY_TYPE, WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY, WDI_CIPHER_KEY_TYPE_GROUP_KEY, WDI_CIPHER_KEY_TYPE enumeration [Device and Driver Installation], WDI_CIPHER_KEY_TYPE_IGTK, _WDI_CIPHER_KEY_TYPE, wditypes/WDI_CIPHER_KEY_TYPE_GROUP_KEY, netvista.wdi_cipher_key_type, wditypes/WDI_CIPHER_KEY_TYPE, wditypes/WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY, wditypes/WDI_CIPHER_KEY_TYPE_IGTK
+ms.keywords : netvista.wdi_cipher_key_type, _WDI_CIPHER_KEY_TYPE, WDI_CIPHER_KEY_TYPE_IGTK, wditypes/WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY, WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY, wditypes/WDI_CIPHER_KEY_TYPE, wditypes/WDI_CIPHER_KEY_TYPE_GROUP_KEY, netvista.wifi_cipher_key_type, WDI_CIPHER_KEY_TYPE, WDI_CIPHER_KEY_TYPE_GROUP_KEY, wditypes/WDI_CIPHER_KEY_TYPE_IGTK, WDI_CIPHER_KEY_TYPE enumeration [Device and Driver Installation]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,5 @@ typedef enum _WDI_CIPHER_KEY_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

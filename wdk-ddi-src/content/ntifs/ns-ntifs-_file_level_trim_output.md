@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 28CCE967-E752-4E0E-94D9-3A4243266684
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PFILE_LEVEL_TRIM_RANGE_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT, ntifs/PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT structure [Installable File System Drivers], _FILE_LEVEL_TRIM_OUTPUT, ntifs/FILE_LEVEL_TRIM_RANGE, ifsk.file_level_trim_output, FILE_LEVEL_TRIM_OUTPUT structure [Installable File System Drivers], FILE_LEVEL_TRIM_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT structure pointer [Installable File System Drivers], FILE_LEVEL_TRIM_RANGE_OUTPUT
+ms.keywords : ntifs/FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_OUTPUT structure [Installable File System Drivers], ntifs/PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT structure pointer [Installable File System Drivers], _FILE_LEVEL_TRIM_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT structure [Installable File System Drivers], ifsk.file_level_trim_output
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,9 +63,7 @@ All trim ranges in the array in <a href="..\ntifs\ns-ntifs-_file_level_trim.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also

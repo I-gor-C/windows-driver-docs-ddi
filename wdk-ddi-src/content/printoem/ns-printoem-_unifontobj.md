@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ff3ecef2-abf2-4ecb-b4af-81e6c6d8fb4c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.unifontobj, PUNIFONTOBJ structure pointer [Print Devices], print_unidrv-pscript_rendering_05a25ef3-5ce2-43f5-ae35-790691bda143.xml, *PUNIFONTOBJ, PUNIFONTOBJ, printoem/UNIFONTOBJ, _UNIFONTOBJ, UNIFONTOBJ, printoem/PUNIFONTOBJ, UNIFONTOBJ structure [Print Devices]
+ms.keywords : printoem/UNIFONTOBJ, print_unidrv-pscript_rendering_05a25ef3-5ce2-43f5-ae35-790691bda143.xml, printoem/PUNIFONTOBJ, _UNIFONTOBJ, PUNIFONTOBJ structure pointer [Print Devices], PUNIFONTOBJ, UNIFONTOBJ, *PUNIFONTOBJ, UNIFONTOBJ structure [Print Devices], print.unifontobj
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UNIFONTOBJ, *PUNIFONTOBJ
+req.typenames : "*PUNIFONTOBJ, UNIFONTOBJ"
 req.product : Windows 10 or later.
 ---
 
@@ -155,9 +155,6 @@ Specifies a resource identifier for an RC_UFM resource contained in a Unidrv min
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

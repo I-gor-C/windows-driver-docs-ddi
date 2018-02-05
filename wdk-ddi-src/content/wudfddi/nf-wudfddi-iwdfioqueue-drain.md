@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0356e8a7-de44-4b0f-9067-ca3bb04260d8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue, IWDFIoQueue::Drain, wudfddi/IWDFIoQueue::Drain, Drain method, Drain, UMDFQueueObjectRef_cb7bdc3f-3280-4949-a60a-b78f13492da9.xml, Drain method, IWDFIoQueue interface, IWDFIoQueue interface, Drain method, umdf.iwdfioqueue_drain, wdf.iwdfioqueue_drain
+ms.keywords : Drain method, IWDFIoQueue interface, wudfddi/IWDFIoQueue::Drain, Drain, Drain method, IWDFIoQueue, wdf.iwdfioqueue_drain, IWDFIoQueue interface, Drain method, UMDFQueueObjectRef_cb7bdc3f-3280-4949-a60a-b78f13492da9.xml, umdf.iwdfioqueue_drain, IWDFIoQueue::Drain
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -89,24 +89,22 @@ A driver should ensure that only one of the following methods is in progress at 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558962">IWDFIoQueue::Purge</a>
-
-<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558962">IWDFIoQueue::Purge</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
+
+<a href="..\wudfddi\nn-wudfddi-iqueuecallbackstatechange.md">IQueueCallbackStateChange</a>
 
  
 

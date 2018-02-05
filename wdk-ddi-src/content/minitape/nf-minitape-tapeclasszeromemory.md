@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a1f15890-ded8-4aba-8b67-6f1fb1490178
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.tapeclasszeromemory, TapeClassZeroMemory, minitape/TapeClassZeroMemory, tapeclas_f48cbbef-af5f-4d1b-b79e-0982d4d09bde.xml, TapeClassZeroMemory routine [Storage Devices]
+ms.keywords : TapeClassZeroMemory, TapeClassZeroMemory routine [Storage Devices], minitape/TapeClassZeroMemory, storage.tapeclasszeromemory, tapeclas_f48cbbef-af5f-4d1b-b79e-0982d4d09bde.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTAPE_STATUS, TAPE_STATUS"
+req.typenames : TAPE_STATUS, *PTAPE_STATUS
 ---
 
 
@@ -73,14 +73,9 @@ A tape miniclass driver calls <b>TapeClassZeroMemory</b> to zero a buffer in a p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | minitape.h (include Minitape.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tape.lib |
 
 ## See Also
 

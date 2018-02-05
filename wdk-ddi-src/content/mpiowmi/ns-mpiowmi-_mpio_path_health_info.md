@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : efb49852-3c0a-4dab-9d50-c103ba4a136b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : mpiowmi/MPIO_PATH_HEALTH_INFO, PMPIO_PATH_HEALTH_INFO structure pointer [Storage Devices], PMPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO, storage.mpio_path_health_info, MPIO_PATH_HEALTH_INFO structure [Storage Devices], _MPIO_PATH_HEALTH_INFO, structs-scsibus_482617c5-3ed9-4a17-ab14-15fc65057062.xml, mpiowmi/PMPIO_PATH_HEALTH_INFO
+ms.keywords : mpiowmi/PMPIO_PATH_HEALTH_INFO, _MPIO_PATH_HEALTH_INFO, mpiowmi/MPIO_PATH_HEALTH_INFO, PMPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO, storage.mpio_path_health_info, structs-scsibus_482617c5-3ed9-4a17-ab14-15fc65057062.xml, *PMPIO_PATH_HEALTH_INFO, PMPIO_PATH_HEALTH_INFO structure pointer [Storage Devices], MPIO_PATH_HEALTH_INFO structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMPIO_PATH_HEALTH_INFO, MPIO_PATH_HEALTH_INFO"
+req.typenames : MPIO_PATH_HEALTH_INFO, *PMPIO_PATH_HEALTH_INFO
 ---
 
 # _MPIO_PATH_HEALTH_INFO structure
@@ -69,7 +69,4 @@ Should be zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

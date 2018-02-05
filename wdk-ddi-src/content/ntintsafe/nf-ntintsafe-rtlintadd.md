@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DF556961-D5BA-4A50-9E6A-DACE96D13B50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlIntAdd, kernel.rtlintadd, RtlIntAdd function [Kernel-Mode Driver Architecture], RtlIntAdd
+ms.keywords : RtlIntAdd, kernel.rtlintadd, ntintsafe/RtlIntAdd, RtlIntAdd function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

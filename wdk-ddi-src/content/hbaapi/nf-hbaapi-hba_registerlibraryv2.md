@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6e7c0aa1-5919-4451-8c5d-97d17c2ed192
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_RegisterLibraryV2 function [Storage Devices], storage.hba_registerlibraryv2, hbaapi/HBA_RegisterLibraryV2, fibreHBA_rtns_1fc54b78-e8e8-46b0-a148-ce06f1a9f811.xml, HBA_RegisterLibraryV2
+ms.keywords : hbaapi/HBA_RegisterLibraryV2, storage.hba_registerlibraryv2, HBA_RegisterLibraryV2 function [Storage Devices], fibreHBA_rtns_1fc54b78-e8e8-46b0-a148-ce06f1a9f811.xml, HBA_RegisterLibraryV2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

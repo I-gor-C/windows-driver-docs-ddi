@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 42e5340e-0be4-49d1-a219-88b7425a41ef
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], rxprocs/FsRtlNotifyFullChangeDirectory, ifsk.fsrtlnotifyfullchangedirectory, FsRtlNotifyFullChangeDirectory, fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml
+ms.keywords : FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], ifsk.fsrtlnotifyfullchangedirectory, FsRtlNotifyFullChangeDirectory, fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml, rxprocs/FsRtlNotifyFullChangeDirectory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -128,22 +128,19 @@ If the file object has not undergone cleanup, <b>FsRtlNotifyFullChangeDirectory<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | rxprocs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
 
 <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
 
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange~r8.md">FsRtlNotifyFullReportChange</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
 
  
 

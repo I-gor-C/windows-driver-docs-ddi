@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cf508b5c-4af8-4371-b833-eaa71535afc5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksaddobjectcreateitemtodeviceheader, KsAddObjectCreateItemToDeviceHeader, ks/KsAddObjectCreateItemToDeviceHeader, KsAddObjectCreateItemToDeviceHeader function [Streaming Media Devices], ksfunc_89d7ee34-62de-4702-9cfa-5e3b6c9a9819.xml
+ms.keywords : stream.ksaddobjectcreateitemtodeviceheader, KsAddObjectCreateItemToDeviceHeader function [Streaming Media Devices], KsAddObjectCreateItemToDeviceHeader, ks/KsAddObjectCreateItemToDeviceHeader, ksfunc_89d7ee34-62de-4702-9cfa-5e3b6c9a9819.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,11 +85,6 @@ The <b>KsAddObjectCreateItemToDeviceHeader</b> function returns STATUS_SUCCESS i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

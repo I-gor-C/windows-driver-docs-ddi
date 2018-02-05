@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9D30F8BE-C376-48FD-A76C-6069F332BC11
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_enumerate_device_service_commands, PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, ndiswwan/PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, ndiswwan/NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure pointer [Network Drivers Starting with Windows Vista]"
+ms.keywords : "_NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, *PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, netvista.ndis_wwan_enumerate_device_service_commands, NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, ndiswwan/PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS, PNDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -108,7 +108,5 @@ For more information about these members, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |

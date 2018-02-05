@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : eb3aa7ec-65f7-4e3d-8059-e9627de9818c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRegistryKey::QueryRegistryValues, audmp-routines_b2601a0c-3b8f-4e2b-868c-cf189eca7e05.xml, QueryRegistryValues method [Audio Devices], IRegistryKey interface, audio.iregistrykey_queryregistryvalues, portcls/IRegistryKey::QueryRegistryValues, QueryRegistryValues method [Audio Devices], QueryRegistryValues, IRegistryKey interface [Audio Devices], QueryRegistryValues method, IRegistryKey
+ms.keywords : portcls/IRegistryKey::QueryRegistryValues, QueryRegistryValues, QueryRegistryValues method [Audio Devices], audmp-routines_b2601a0c-3b8f-4e2b-868c-cf189eca7e05.xml, IRegistryKey interface [Audio Devices], QueryRegistryValues method, IRegistryKey::QueryRegistryValues, IRegistryKey, QueryRegistryValues method [Audio Devices], IRegistryKey interface, audio.iregistrykey_queryregistryvalues
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -103,14 +103,10 @@ The <i>QueryTable</i> parameter points to an array of RTL_QUERY_REGISTRY_TABLE s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ce983953-53fc-4a32-8072-8a9f74d11ae3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_37d4bd5d-6090-49b8-ab45-c898871f22e8.xml, kernel.iogetdriverobjectextension, wdm/IoGetDriverObjectExtension, IoGetDriverObjectExtension routine [Kernel-Mode Driver Architecture], IoGetDriverObjectExtension
+ms.keywords : IoGetDriverObjectExtension, IoGetDriverObjectExtension routine [Kernel-Mode Driver Architecture], kernel.iogetdriverobjectextension, k104_37d4bd5d-6090-49b8-ab45-c898871f22e8.xml, wdm/IoGetDriverObjectExtension
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ Drivers call <b>IoGetDriverObjectExtension</b> to retrieve a pointer to a previo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

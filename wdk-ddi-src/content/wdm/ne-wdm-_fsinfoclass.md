@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8A8F938D-8F6B-47E0-963F-8E8B14033802
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FileFsDriverPathInformation, wdm/FileFsVolumeFlagsInformation, FileFsObjectIdInformation, wdm/FileFsSectorSizeInformation, wdm/FileFsLabelInformation, wdm/FileFsVolumeInformation, FileFsFullSizeInformation, wdm/FileFsSizeInformation, FileFsSectorSizeInformation, *PFS_INFORMATION_CLASS, wdm/FileFsFullSizeInformation, wdm/FileFsObjectIdInformation, FS_INFORMATION_CLASS enumeration [Installable File System Drivers], FileFsSizeInformation, wdm/FileFsControlInformation, wdm/FileFsDeviceInformation, wdm/FileFsDriverPathInformation, _FSINFOCLASS, FS_INFORMATION_CLASS, wdm/FS_INFORMATION_CLASS, ifsk.fs_information_class, FileFsDeviceInformation, FileFsAttributeInformation, FileFsVolumeInformation, FileFsVolumeFlagsInformation, FileFsLabelInformation, FileFsControlInformation, wdm/FileFsAttributeInformation
+ms.keywords : wdm/FileFsSizeInformation, FileFsSectorSizeInformation, wdm/FS_INFORMATION_CLASS, wdm/FileFsAttributeInformation, FileFsDriverPathInformation, wdm/FileFsSectorSizeInformation, wdm/FileFsDriverPathInformation, ifsk.fs_information_class, wdm/FileFsFullSizeInformation, wdm/FileFsDeviceInformation, FileFsFullSizeInformation, wdm/FileFsLabelInformation, *PFS_INFORMATION_CLASS, FS_INFORMATION_CLASS, FS_INFORMATION_CLASS enumeration [Installable File System Drivers], FileFsLabelInformation, FileFsSizeInformation, wdm/FileFsVolumeInformation, wdm/FileFsObjectIdInformation, FileFsControlInformation, FileFsVolumeFlagsInformation, wdm/FileFsVolumeFlagsInformation, _FSINFOCLASS, FileFsVolumeInformation, FileFsDeviceInformation, FileFsAttributeInformation, FileFsObjectIdInformation, wdm/FileFsControlInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -138,7 +138,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h |

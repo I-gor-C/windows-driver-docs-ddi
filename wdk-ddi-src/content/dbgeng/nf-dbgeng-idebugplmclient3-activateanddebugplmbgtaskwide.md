@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 77358032-1777-46F4-BF16-5DFFAC15E672
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, dbgeng/IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, ActivateAndDebugPlmBgTaskWide method [Windows Debugging], IDebugPlmClient3 interface, ActivateAndDebugPlmBgTaskWide method [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging], ActivateAndDebugPlmBgTaskWide method, debugger.idebugplmclient3_activateanddebugplmbgtaskwide, IDebugPlmClient3, ActivateAndDebugPlmBgTaskWide
+ms.keywords : ActivateAndDebugPlmBgTaskWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3, ActivateAndDebugPlmBgTaskWide method [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging], ActivateAndDebugPlmBgTaskWide method, ActivateAndDebugPlmBgTaskWide, dbgeng/IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, debugger.idebugplmclient3_activateanddebugplmbgtaskwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -77,14 +77,9 @@ If a debugger session is not already started, this method starts one.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -43,8 +43,8 @@ req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 The 
   <i>ProtocolSendNetBufferListsComplete</i> function completes a send operation that the protocol driver
   initiated with a call to the 
-  <mshelp:link keywords="netvista.ndissendnetbufferlists" tabindex="0"><b>
-  NdisSendNetBufferLists</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">
+  NdisSendNetBufferLists</a> function.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE</b> type. For more
    information, see the following Examples section.</div><div> </div>
 
@@ -94,8 +94,8 @@ None
 
 NDIS calls 
     <i>ProtocolSendNetBufferListsComplete</i> after the underlying miniport driver calls the 
-    <mshelp:link keywords="netvista.ndismsendnetbufferlistscomplete" tabindex="0"><b>
-    NdisMSendNetBufferListsComplete</b></mshelp:link> function. Completion of a send operation usually implies that the
+    <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
+    NdisMSendNetBufferListsComplete</a> function. Completion of a send operation usually implies that the
     underlying miniport driver has transmitted the specified network data. However, a miniport driver can
     indicate that a send operation has completed as soon as it transfers the network data to its NIC.
 
@@ -151,27 +151,23 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<mshelp:link keywords="netvista.ndismsendnetbufferlistscomplete" tabindex="0"><b>
-   NdisMSendNetBufferListsComplete</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a>
 
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
+<a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a>
+
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+
+<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
+   NdisMSendNetBufferListsComplete</a>
 
  
 

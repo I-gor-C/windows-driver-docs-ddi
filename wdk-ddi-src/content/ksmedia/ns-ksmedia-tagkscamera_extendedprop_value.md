@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E595C2BF-C3C8-4FE8-90B0-CD53524F4852
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kscamera_extendedprop_value, KSCAMERA_EXTENDEDPROP_VALUE structure [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_VALUE, ksmedia/PKSCAMERA_EXTENDEDPROP_VALUE, KSCAMERA_EXTENDEDPROP_VALUE, *PKSCAMERA_EXTENDEDPROP_VALUE, ksmedia/KSCAMERA_EXTENDEDPROP_VALUE, PKSCAMERA_EXTENDEDPROP_VALUE, PKSCAMERA_EXTENDEDPROP_VALUE structure pointer [Streaming Media Devices]
+ms.keywords : ksmedia/KSCAMERA_EXTENDEDPROP_VALUE, KSCAMERA_EXTENDEDPROP_VALUE, ksmedia/PKSCAMERA_EXTENDEDPROP_VALUE, *PKSCAMERA_EXTENDEDPROP_VALUE, tagKSCAMERA_EXTENDEDPROP_VALUE, PKSCAMERA_EXTENDEDPROP_VALUE structure pointer [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_VALUE structure [Streaming Media Devices], stream.kscamera_extendedprop_value, PKSCAMERA_EXTENDEDPROP_VALUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ The extended property value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

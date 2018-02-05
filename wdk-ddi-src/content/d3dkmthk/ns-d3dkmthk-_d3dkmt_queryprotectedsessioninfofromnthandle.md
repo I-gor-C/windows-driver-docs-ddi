@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e08d27e7-e9b7-45e7-9bbd-dcb9aa8f85ed
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE structure [Display Devices], display.d3dkmt-queryprotectedsessioninfofromnthandle, _D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE, D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE, d3dkmthk/D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE
+ms.keywords : display.d3dkmt-queryprotectedsessioninfofromnthandle, D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE structure [Display Devices], D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE, _D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE, d3dkmthk/D3DKMT_QUERYPROTECTEDSESSIONINFOFROMNTHANDLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ The size of the private runtime data.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmthk.h |

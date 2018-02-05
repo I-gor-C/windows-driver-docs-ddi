@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5295be15-b42e-4e5b-8257-434fb9ed6c83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/RtlCopyString, k109_c68983f1-ec02-405f-a3a6-d1f3884fe303.xml, RtlCopyString, kernel.rtlcopystring, RtlCopyString routine [Kernel-Mode Driver Architecture]
+ms.keywords : RtlCopyString, RtlCopyString routine [Kernel-Mode Driver Architecture], kernel.rtlcopystring, k109_c68983f1-ec02-405f-a3a6-d1f3884fe303.xml, ntddk/RtlCopyString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,12 @@ The <i>DestinationString</i> and <i>SourceString</i> buffers must be resident if
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

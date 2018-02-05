@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9091426c-3174-4367-b7c7-5684877efe9c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisCmActivateVc, condis_call_manager_ref_425eba15-2cda-4e36-b88d-59978501ecbf.xml, netvista.ndiscmactivatevc, NdisCmActivateVc, NdisCmActivateVc function [Network Drivers Starting with Windows Vista]
+ms.keywords : condis_call_manager_ref_425eba15-2cda-4e36-b88d-59978501ecbf.xml, NdisCmActivateVc function [Network Drivers Starting with Windows Vista], ndis/NdisCmActivateVc, netvista.ndiscmactivatevc, NdisCmActivateVc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,8 +75,8 @@ Pointer to a CM-allocated resident buffer, formatted as a structure of type
 When 
      <b>NdisCmActivateVc</b> returns anything other than NDIS_STATUS_PENDING, the call manager should make an
      internal call to its 
-     <mshelp:link keywords="netvista.protocolcmactivatevccomplete" tabindex="0"><i>
-     ProtocolCmActivateVcComplete</i></mshelp:link> function. Otherwise, NDIS calls the CM's 
+     <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
+     ProtocolCmActivateVcComplete</a> function. Otherwise, NDIS calls the CM's 
      <i>ProtocolCmActivateVcComplete</i> function when this operation is completed.
 
 ## Remarks
@@ -124,8 +124,8 @@ For a client-initiated outgoing call, a stand-alone CM usually calls
     <b>NdisCmActivateVc</b> after it has called 
     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> successfully and before it
     calls 
-    <mshelp:link keywords="netvista.ndiscmdispatchincomingcall" tabindex="0"><b>
-    NdisCmDispatchIncomingCall</b></mshelp:link>.
+    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
+    NdisCmDispatchIncomingCall</a>.
 
 In the process of setting up an outgoing call and while any VC remains activated, the client can
     request changes to the call parameters for that VC, for example, by calling 
@@ -141,37 +141,35 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmActivateVc (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
-
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
-
-<mshelp:link keywords="netvista.protocolcmactivatevccomplete" tabindex="0"><i>
-   ProtocolCmActivateVcComplete</i></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQos</a>
-
-<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
-
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
+   ProtocolCmActivateVcComplete</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQos</a>
+
+<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
+
+<a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
+
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
+
+<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
 
  
 

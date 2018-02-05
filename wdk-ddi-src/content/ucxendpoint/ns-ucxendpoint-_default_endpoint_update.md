@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 3E85D9AE-F8D3-4763-B1A2-51F95D00422D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._default_endpoint_update, _DEFAULT_ENDPOINT_UPDATE, ucxendpoint/_DEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE structure [Buses], P_DEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE, *PDEFAULT_ENDPOINT_UPDATE, ucxendpoint/P_DEFAULT_ENDPOINT_UPDATE, P_DEFAULT_ENDPOINT_UPDATE structure pointer [Buses]
+ms.keywords : P_DEFAULT_ENDPOINT_UPDATE structure pointer [Buses], buses._default_endpoint_update, ucxendpoint/P_DEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE structure [Buses], *PDEFAULT_ENDPOINT_UPDATE, _DEFAULT_ENDPOINT_UPDATE, P_DEFAULT_ENDPOINT_UPDATE, ucxendpoint/_DEFAULT_ENDPOINT_UPDATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,6 @@ The maximum packet size of the default endpoint.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
 ## See Also

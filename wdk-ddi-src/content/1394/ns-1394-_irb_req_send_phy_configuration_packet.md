@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : FCB87010-EA7D-495F-B58A-6E0322F9C846
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.irb_req_send_phy_configuration_packet, IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, 1394/IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, IRB_REQ_SEND_PHY_CONFIGURATION_PACKET structure [Buses]
+ms.keywords : IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, IRB_REQ_SEND_PHY_CONFIGURATION_PACKET structure [Buses], 1394/IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, IEEE.irb_req_send_phy_configuration_packet
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,7 +61,4 @@ The packet is sent to all nodes on the bus. See the <a href="http://go.microsoft
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

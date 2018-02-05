@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9D41810A-7698-4462-802D-79EF793C9A9D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetDataInBufferMdl, StorPortGetDataInBufferMdl routine [Storage Devices], storport/StorPortGetDataInBufferMdl, storage.storportgetdatainbuffermdl
+ms.keywords : storport/StorPortGetDataInBufferMdl, storage.storportgetdatainbuffermdl, StorPortGetDataInBufferMdl, StorPortGetDataInBufferMdl routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,20 +104,17 @@ The pointer value in <i>Mdl</i> is NULL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | Storport.lib |
 | **IRQL** | Any |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportgetdatainbuffersystemaddress.md">StorPortGetDataInBufferSystemAddress</a>
-
 <a href="..\storport\nf-storport-storportgetdatainbufferscattergatherlist.md">StorPortGetDataInBufferScatterGatherList</a>
+
+<a href="..\storport\nf-storport-storportgetdatainbuffersystemaddress.md">StorPortGetDataInBufferSystemAddress</a>
 
  
 

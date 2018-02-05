@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8ec961c6-235c-4980-ac4c-60aa496e8a5d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlSecondsSince1970ToTime routine [Installable File System Drivers], ntifs/RtlSecondsSince1970ToTime, RtlSecondsSince1970ToTime, rtlref_ca1b3241-af9f-48e1-86e0-56f94c459c63.xml, ifsk.rtlsecondssince1970totime
+ms.keywords : ntifs/RtlSecondsSince1970ToTime, ifsk.rtlsecondssince1970totime, rtlref_ca1b3241-af9f-48e1-86e0-56f94c459c63.xml, RtlSecondsSince1970ToTime, RtlSecondsSince1970ToTime routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,11 @@ For more information about converting time values, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

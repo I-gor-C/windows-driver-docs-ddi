@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 9CF14B12-D94F-486D-A5FC-E7CC2730D8E9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PBUS_RESET_NOTIFY structure pointer [Buses], PBUS_RESET_NOTIFY, _BUS_RESET_NOTIFY, 61883/PBUS_RESET_NOTIFY, IEEE.bus_reset_notify, 61883/BUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY, BUS_RESET_NOTIFY structure [Buses], BUS_RESET_NOTIFY
+ms.keywords : 61883/BUS_RESET_NOTIFY, _BUS_RESET_NOTIFY, BUS_RESET_NOTIFY, PBUS_RESET_NOTIFY structure pointer [Buses], PBUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY, BUS_RESET_NOTIFY structure [Buses], IEEE.bus_reset_notify, 61883/PBUS_RESET_NOTIFY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY
+req.typenames : "*PBUS_RESET_NOTIFY, BUS_RESET_NOTIFY"
 ---
 
 # _BUS_RESET_NOTIFY structure
@@ -89,9 +89,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

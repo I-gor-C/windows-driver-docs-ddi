@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : D6C0B66A-58ED-4E1D-89E2-4A1AF77281C1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensorscx/SensorsCxSensorInitialize, SensorsCxSensorInitialize function [Sensor Devices], SensorsCxSensorInitialize, sensors.sensorscxsensorinitialize
+ms.keywords : SensorsCxSensorInitialize function [Sensor Devices], sensorscx/SensorsCxSensorInitialize, sensors.sensorscxsensorinitialize, SensorsCxSensorInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,6 @@ STATUS_NOT_FOUND is returned if there was an error constructing the controller o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

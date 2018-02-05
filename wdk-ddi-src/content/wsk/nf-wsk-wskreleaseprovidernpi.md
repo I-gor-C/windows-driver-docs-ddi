@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6b0b995a-61db-4bdf-a896-74d91bd192e7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wsk/WskReleaseProviderNPI, WskReleaseProviderNPI, netvista.wskreleaseprovidernpi, WskReleaseProviderNPI function [Network Drivers Starting with Windows Vista], wskref_1ed7116e-c3a0-41dd-9d19-aa2f44eae257.xml
+ms.keywords : WskReleaseProviderNPI, netvista.wskreleaseprovidernpi, WskReleaseProviderNPI function [Network Drivers Starting with Windows Vista], wskref_1ed7116e-c3a0-41dd-9d19-aa2f44eae257.xml, wsk/WskReleaseProviderNPI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -43,8 +43,8 @@ req.product : Windows 10 or later.
 # WskReleaseProviderNPI function
 The 
   <b>WskReleaseProviderNPI</b> function releases a 
-  <mshelp:link keywords="netvista.network_programming_interface" tabindex="0">Network Programming Interface
-  (NPI)</mshelp:link> that was captured with 
+  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">Network Programming Interface
+  (NPI)</a> that was captured with 
   <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>.
 
 ## Syntax
@@ -80,14 +80,11 @@ For each call to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

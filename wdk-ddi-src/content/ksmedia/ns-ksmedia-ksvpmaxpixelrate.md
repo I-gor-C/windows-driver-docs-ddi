@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6510e732-b0ad-43c7-87a3-3630fdfd848d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksvpmaxpixelrate, *PKSVPMAXPIXELRATE, ksmedia/KSVPMAXPIXELRATE, PKSVPMAXPIXELRATE, PKSVPMAXPIXELRATE structure pointer [Streaming Media Devices], dvdref_c9ca0c83-e189-48b3-a798-95456c07ae0b.xml, ksmedia/PKSVPMAXPIXELRATE, KSVPMAXPIXELRATE structure [Streaming Media Devices], KSVPMAXPIXELRATE
+ms.keywords : ksmedia/KSVPMAXPIXELRATE, PKSVPMAXPIXELRATE, *PKSVPMAXPIXELRATE, stream.ksvpmaxpixelrate, PKSVPMAXPIXELRATE structure pointer [Streaming Media Devices], KSVPMAXPIXELRATE structure [Streaming Media Devices], KSVPMAXPIXELRATE, ksmedia/PKSVPMAXPIXELRATE, dvdref_c9ca0c83-e189-48b3-a798-95456c07ae0b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,6 @@ This structure is used by the <a href="https://msdn.microsoft.com/library/window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

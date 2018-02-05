@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0664199b-da65-4b07-958e-d7972b39cefd
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : wdbgexts/GetCurrentThreadAddr, GetCurrentThreadAddr, GetCurrentThreadAddr function [Windows Debugging], debugger.getcurrentthreadaddr, WdbgExts_Ref_03db8f68-2e64-4530-bf35-df2a6f0d7736.xml
+ms.keywords : GetCurrentThreadAddr function [Windows Debugging], GetCurrentThreadAddr, WdbgExts_Ref_03db8f68-2e64-4530-bf35-df2a6f0d7736.xml, debugger.getcurrentthreadaddr, wdbgexts/GetCurrentThreadAddr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,9 @@ For details on the KTHREAD and TEB structures, see <i>Microsoft Windows Internal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

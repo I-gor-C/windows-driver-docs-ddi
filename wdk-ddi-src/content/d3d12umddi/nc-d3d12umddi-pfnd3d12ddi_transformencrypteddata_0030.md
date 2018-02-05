@@ -68,11 +68,11 @@ The transform operation being performed.
 
 `*pOutputArguments`
 
-
+The output arguments for the transform being performed.
 
 `*pInputArguments`
 
-
+The input arguments for the transform being performed.
 
 
 ## Return Value
@@ -83,11 +83,5 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

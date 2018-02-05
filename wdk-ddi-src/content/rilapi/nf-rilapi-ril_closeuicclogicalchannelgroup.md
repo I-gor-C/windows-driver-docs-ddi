@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : de761fd9-5637-40be-a4bb-9e29ed19a434
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_CloseUiccLogicalChannelGroup, netvista.ril_closeuicclogicalchannelgroup, RIL_CloseUiccLogicalChannelGroup method [Network Drivers Starting with Windows Vista], rilapi/RIL_CloseUiccLogicalChannelGroup
+ms.keywords : netvista.ril_closeuicclogicalchannelgroup, RIL_CloseUiccLogicalChannelGroup, RIL_CloseUiccLogicalChannelGroup method [Network Drivers Starting with Windows Vista], rilapi/RIL_CloseUiccLogicalChannelGroup
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

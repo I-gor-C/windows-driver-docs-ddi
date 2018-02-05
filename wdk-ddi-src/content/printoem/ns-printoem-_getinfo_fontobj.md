@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f5116986-aa0c-4cc3-9893-c93e83e922f7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GETINFO_FONTOBJ, *PGETINFO_FONTOBJ, PGETINFO_FONTOBJ, print.getinfo_fontobj, GETINFO_FONTOBJ structure [Print Devices], printoem/GETINFO_FONTOBJ, print_unidrv-pscript_rendering_2fdbe41f-95af-46ef-be82-04c1dc02297f.xml, _GETINFO_FONTOBJ, printoem/PGETINFO_FONTOBJ, PGETINFO_FONTOBJ structure pointer [Print Devices]
+ms.keywords : print.getinfo_fontobj, GETINFO_FONTOBJ, printoem/GETINFO_FONTOBJ, GETINFO_FONTOBJ structure [Print Devices], printoem/PGETINFO_FONTOBJ, print_unidrv-pscript_rendering_2fdbe41f-95af-46ef-be82-04c1dc02297f.xml, *PGETINFO_FONTOBJ, _GETINFO_FONTOBJ, PGETINFO_FONTOBJ structure pointer [Print Devices], PGETINFO_FONTOBJ
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,16 +67,13 @@ To obtain a font's FONTOBJ structure contents, a rendering plug-in can supply th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a>
 
  
 

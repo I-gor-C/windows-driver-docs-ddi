@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5ef6491d-90bb-472c-821a-b296bef17463
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_timer_config, wdftimer/PWDF_TIMER_CONFIG, kmdf.wdf_timer_config, wdftimer/WDF_TIMER_CONFIG, PWDF_TIMER_CONFIG structure pointer, *PWDF_TIMER_CONFIG, WDF_TIMER_CONFIG, WDF_TIMER_CONFIG structure, PWDF_TIMER_CONFIG, DFTimerObjectRef_cacde276-7a83-4a7f-87e1-de043aee4725.xml, _WDF_TIMER_CONFIG
+ms.keywords : wdf.wdf_timer_config, WDF_TIMER_CONFIG, _WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG, WDF_TIMER_CONFIG structure, kmdf.wdf_timer_config, wdftimer/WDF_TIMER_CONFIG, PWDF_TIMER_CONFIG structure pointer, PWDF_TIMER_CONFIG, wdftimer/PWDF_TIMER_CONFIG, DFTimerObjectRef_cacde276-7a83-4a7f-87e1-de043aee4725.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -119,20 +119,19 @@ For more information about framework timer objects, see <a href="https://docs.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdftimer.h (include Wdf.h) |
 
 ## See Also
 
-<a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
-
-<a href="..\wdftimer\nf-wdftimer-wdf_timer_config_init_periodic.md">WDF_TIMER_CONFIG_INIT_PERIODIC</a>
-
 <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
 
 <a href="..\wdftimer\nf-wdftimer-wdf_timer_config_init.md">WDF_TIMER_CONFIG_INIT</a>
+
+<a href="..\wdftimer\nf-wdftimer-wdf_timer_config_init_periodic.md">WDF_TIMER_CONFIG_INIT_PERIODIC</a>
+
+<a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
 
 <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e8209781-36b1-4008-94bb-82bdb16f20bf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisInitAnsiString macro [Network Drivers Starting with Windows Vista], ndis/NdisInitAnsiString, ndis_string_ref_2d47b8b6-3b3e-48ca-a2be-ee1bca117ef6.xml, netvista.ndisinitansistring, NdisInitAnsiString
+ms.keywords : NdisInitAnsiString macro [Network Drivers Starting with Windows Vista], ndis_string_ref_2d47b8b6-3b3e-48ca-a2be-ee1bca117ef6.xml, netvista.ndisinitansistring, NdisInitAnsiString, ndis/NdisInitAnsiString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -84,29 +84,27 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlInitString instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlInitString instead. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | See Remarks section |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry of NDIS Protocol
+   Drivers</a>
+
 <a href="..\wdm\nf-wdm-rtlunicodestringtoansistring.md">RtlUnicodeStringToAnsiString</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
-
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
-
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<mshelp:link keywords="netvista.driverentry_of_ndis_protocol_drivers" tabindex="0"><b>DriverEntry of NDIS Protocol
-   Drivers</b></mshelp:link>
+<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 
  
 

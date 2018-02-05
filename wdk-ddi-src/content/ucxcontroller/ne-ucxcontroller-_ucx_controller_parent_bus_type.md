@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : FD78074D-E128-4085-A178-0133C9256E42
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_UCX_CONTROLLER_PARENT_BUS_TYPE, buses.ucx_controller_parent_bus_type, ucxcontroller/UcxControllerParentBusTypeAcpi, UCX_CONTROLLER_PARENT_BUS_TYPE enumeration [Buses], ucxcontroller/UcxControllerParentBusTypePci, ucxcontroller/UCX_CONTROLLER_PARENT_BUS_TYPE, UCX_CONTROLLER_PARENT_BUS_TYPE, UcxControllerParentBusTypeCustom, ucxcontroller/UcxControllerParentBusTypeCustom, UcxControllerParentBusTypeAcpi, UcxControllerParentBusTypePci"
+ms.keywords : ucxcontroller/UcxControllerParentBusTypeCustom, ucxcontroller/UCX_CONTROLLER_PARENT_BUS_TYPE, UcxControllerParentBusTypeAcpi, UcxControllerParentBusTypePci, UCX_CONTROLLER_PARENT_BUS_TYPE, UCX_CONTROLLER_PARENT_BUS_TYPE enumeration [Buses], buses.ucx_controller_parent_bus_type, UcxControllerParentBusTypeCustom, ucxcontroller/UcxControllerParentBusTypeAcpi, ucxcontroller/UcxControllerParentBusTypePci, _UCX_CONTROLLER_PARENT_BUS_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,6 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxcontroller.h (include Ucxclass.h) |
 
 ## See Also

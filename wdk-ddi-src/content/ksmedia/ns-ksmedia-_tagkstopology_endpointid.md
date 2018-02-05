@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A84BE3D6-7D2A-4123-979B-F6E1CA8C8B23
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_tagKSTOPOLOGY_ENDPOINTID, ksmedia/KSTOPOLOGY_ENDPOINTID, PKSTOPOLOGY_ENDPOINTID structure pointer [Audio Devices], *PKSTOPOLOGY_ENDPOINTID, KSTOPOLOGY_ENDPOINTID structure [Audio Devices], ksmedia/PKSTOPOLOGY_ENDPOINTID, audio.kstopology_endpointid, KSTOPOLOGY_ENDPOINTID, PKSTOPOLOGY_ENDPOINTID"
+ms.keywords : KSTOPOLOGY_ENDPOINTID structure [Audio Devices], PKSTOPOLOGY_ENDPOINTID, ksmedia/KSTOPOLOGY_ENDPOINTID, PKSTOPOLOGY_ENDPOINTID structure pointer [Audio Devices], KSTOPOLOGY_ENDPOINTID, audio.kstopology_endpointid, _tagKSTOPOLOGY_ENDPOINTID, ksmedia/PKSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ The name of the topology endpoint.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |
 
 ## See Also

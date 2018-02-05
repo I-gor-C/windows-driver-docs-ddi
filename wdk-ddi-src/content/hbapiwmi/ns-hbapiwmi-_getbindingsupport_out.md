@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cd67b301-a94a-41dd-9c06-e6c674ea9173
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-Fibre_1db0b747-ead3-461f-a7ab-c8150f92623a.xml, *PGetBindingSupport_OUT, GetBindingSupport_OUT, hbapiwmi/PGetBindingSupport_OUT, storage.getbindingsupport_out, _GetBindingSupport_OUT, PGetBindingSupport_OUT structure pointer [Storage Devices], hbapiwmi/GetBindingSupport_OUT, GetBindingSupport_OUT structure [Storage Devices], PGetBindingSupport_OUT
+ms.keywords : "_GetBindingSupport_OUT, structs-Fibre_1db0b747-ead3-461f-a7ab-c8150f92623a.xml, GetBindingSupport_OUT structure [Storage Devices], hbapiwmi/PGetBindingSupport_OUT, PGetBindingSupport_OUT, storage.getbindingsupport_out, hbapiwmi/GetBindingSupport_OUT, PGetBindingSupport_OUT structure pointer [Storage Devices], GetBindingSupport_OUT, *PGetBindingSupport_OUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ The WMI tool suite generates a declaration of the GetBindingSupport_OUT structur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

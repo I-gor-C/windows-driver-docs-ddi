@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 61A889D5-122F-4091-90D6-EDD43D52A14A
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFWorkItem::Enqueue, IWDFWorkItem interface, Enqueue method, wudfddi/IWDFWorkItem::Enqueue, Enqueue, Enqueue method, Enqueue method, IWDFWorkItem interface, IWDFWorkItem, umdf.iwdfworkitem_enqueue, wdf.iwdfworkitem_enqueue
+ms.keywords : umdf.iwdfworkitem_enqueue, IWDFWorkItem, IWDFWorkItem interface, Enqueue method, wudfddi/IWDFWorkItem::Enqueue, Enqueue, IWDFWorkItem::Enqueue, Enqueue method, IWDFWorkItem interface, wdf.iwdfworkitem_enqueue, Enqueue method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,20 +71,18 @@ For more information, see <a href="https://msdn.microsoft.com/4617A33F-9026-45FF
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfworkitem\nc-wudfworkitem-wudf_workitem_function.md">OnWorkItem</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfworkitem.md">IWDFWorkItem</a>
+
+<a href="..\wudfworkitem\nc-wudfworkitem-wudf_workitem_function.md">OnWorkItem</a>
 
  
 

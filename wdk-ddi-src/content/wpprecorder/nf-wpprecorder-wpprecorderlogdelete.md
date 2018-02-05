@@ -65,11 +65,5 @@ When a thread enters this function, no threads can subsequently  log to this buf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wpprecorder.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

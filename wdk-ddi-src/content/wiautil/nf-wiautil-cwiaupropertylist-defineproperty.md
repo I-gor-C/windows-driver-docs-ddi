@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 599c97af-1285-4fb9-af0b-edcd48249692
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DefineProperty method [Imaging Devices], wiautil/CWiauPropertyList::DefineProperty, wiauFncs_8be9dc72-0d8c-4894-aab0-47a312d9fae7.xml, image.cwiaupropertylist_defineproperty, CWiauPropertyList::DefineProperty, DefineProperty method [Imaging Devices], CWiauPropertyList interface, CWiauPropertyList, DefineProperty, CWiauPropertyList interface [Imaging Devices], DefineProperty method
+ms.keywords : CWiauPropertyList interface [Imaging Devices], DefineProperty method, image.cwiaupropertylist_defineproperty, DefineProperty method [Imaging Devices], CWiauPropertyList::DefineProperty, DefineProperty, wiauFncs_8be9dc72-0d8c-4894-aab0-47a312d9fae7.xml, CWiauPropertyList, DefineProperty method [Imaging Devices], CWiauPropertyList interface, wiautil/CWiauPropertyList::DefineProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -91,14 +91,10 @@ Before a property can be added to a property list, the property list must be ini
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 

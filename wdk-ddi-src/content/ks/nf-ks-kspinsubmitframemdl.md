@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8033c0a9-86dd-4d54-b93e-66c926cae952
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinSubmitFrameMdl function [Streaming Media Devices], KsPinSubmitFrameMdl, avfunc_456aa5db-b749-4b95-8448-f024dbc2030b.xml, ks/KsPinSubmitFrameMdl, stream.kspinsubmitframemdl
+ms.keywords : KsPinSubmitFrameMdl, stream.kspinsubmitframemdl, avfunc_456aa5db-b749-4b95-8448-f024dbc2030b.xml, KsPinSubmitFrameMdl function [Streaming Media Devices], ks/KsPinSubmitFrameMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,11 @@ The difference between this function and <a href="..\ks\nf-ks-kspinsubmitframe.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

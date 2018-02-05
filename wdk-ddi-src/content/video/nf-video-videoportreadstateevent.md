@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b09787b3-aede-4e53-9e22-0e81cf2dadb1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortReadStateEvent function [Display Devices], display.videoportreadstateevent, VideoPort_Functions_8cd6da91-d349-4ef7-b61c-2e9a22c5f25e.xml, video/VideoPortReadStateEvent, VideoPortReadStateEvent
+ms.keywords : VideoPortReadStateEvent function [Display Devices], display.videoportreadstateevent, video/VideoPortReadStateEvent, VideoPortReadStateEvent, VideoPort_Functions_8cd6da91-d349-4ef7-b61c-2e9a22c5f25e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,11 +74,9 @@ This function is available in Windows XP and later.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

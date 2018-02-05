@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d6730599-a8f0-4bea-9ee4-47a60249271d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PGETINFO_MEMORY, print.getinfo_memory, printoem/PGETINFO_MEMORY, GETINFO_MEMORY structure [Print Devices], PGETINFO_MEMROY, printoem/GETINFO_MEMORY, GETINFO_MEMORY, print_unidrv-pscript_rendering_d39a4f36-c521-4da4-8f63-5121b344d33a.xml, PGETINFO_MEMORY structure pointer [Print Devices], _GETINFO_MEMORY
+ms.keywords : "_GETINFO_MEMORY, PGETINFO_MEMORY, printoem/GETINFO_MEMORY, print_unidrv-pscript_rendering_d39a4f36-c521-4da4-8f63-5121b344d33a.xml, PGETINFO_MEMORY structure pointer [Print Devices], print.getinfo_memory, printoem/PGETINFO_MEMORY, GETINFO_MEMORY structure [Print Devices], GETINFO_MEMORY, PGETINFO_MEMROY"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,9 +67,6 @@ To obtain Unidrv's calculation of the amount of printer memory currently availab
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

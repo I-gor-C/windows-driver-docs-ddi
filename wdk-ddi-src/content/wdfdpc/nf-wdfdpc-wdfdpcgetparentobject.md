@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 77ebca0f-3056-4f11-9d59-fbd166967ed3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdpc/WdfDpcGetParentObject, wdf.wdfdpcgetparentobject, DFDpcObjectRef_28be5a7f-4f65-4b9e-b9f4-80b754cc8ca3.xml, WdfDpcGetParentObject method, WdfDpcGetParentObject, PFN_WDFDPCGETPARENTOBJECT, kmdf.wdfdpcgetparentobject
+ms.keywords : wdfdpc/WdfDpcGetParentObject, DFDpcObjectRef_28be5a7f-4f65-4b9e-b9f4-80b754cc8ca3.xml, kmdf.wdfdpcgetparentobject, PFN_WDFDPCGETPARENTOBJECT, WdfDpcGetParentObject, WdfDpcGetParentObject method, wdf.wdfdpcgetparentobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,10 @@ A driver might call <b>WdfDpcGetParentObject</b> from within its <a href="https:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdpc.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | Any level |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c7b2e4ba-7f76-474d-9752-0934898cac09
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_b0696fe6-3647-4a09-9817-578d4cfbf60a.xml, display.dxgkmdt_opm_output_id, DXGKMDT_OPM_OUTPUT_ID, d3dkmdt/DXGKMDT_OPM_OUTPUT_ID, DXGKMDT_OPM_OUTPUT_ID structure [Display Devices], _DXGKMDT_OPM_OUTPUT_ID
+ms.keywords : DXGKMDT_OPM_OUTPUT_ID structure [Display Devices], d3dkmdt/DXGKMDT_OPM_OUTPUT_ID, display.dxgkmdt_opm_output_id, _DXGKMDT_OPM_OUTPUT_ID, DmStructs_b0696fe6-3647-4a09-9817-578d4cfbf60a.xml, DXGKMDT_OPM_OUTPUT_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,18 +69,16 @@ A bitwise OR combination of the values from the <a href="..\d3dkmdt\ne-d3dkmdt-_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
-
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_get_info_parameters.md">DXGKMDT_OPM_GET_INFO_PARAMETERS</a>
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_random_number.md">DXGKMDT_OPM_RANDOM_NUMBER</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
 
  
 

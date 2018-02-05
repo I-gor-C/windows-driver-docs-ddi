@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 29BAAEF9-5B69-4723-BC23-A8B668E2A867
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugPlmClient3::QueryPlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], QueryPlmPackageWide method, QueryPlmPackageWide, debugger.idebugplmclient3_queryplmpackagewide, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3, IDebugPlmClient3::QueryPlmPackageWide
+ms.keywords : IDebugPlmClient3, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, QueryPlmPackageWide, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3::QueryPlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], QueryPlmPackageWide method, dbgeng/IDebugPlmClient3::QueryPlmPackageWide, debugger.idebugplmclient3_queryplmpackagewide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,14 +75,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ba7023d9-5130-4eea-9de9-034f5bf0b145
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcSetDirtyPageThreshold routine [Installable File System Drivers], ccref_df331e54-32a2-4a09-a1e6-7c1d69b2abcf.xml, ifsk.ccsetdirtypagethreshold, CcSetDirtyPageThreshold, ntifs/CcSetDirtyPageThreshold
+ms.keywords : CcSetDirtyPageThreshold routine [Installable File System Drivers], ccref_df331e54-32a2-4a09-a1e6-7c1d69b2abcf.xml, CcSetDirtyPageThreshold, ntifs/CcSetDirtyPageThreshold, ifsk.ccsetdirtypagethreshold
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,10 @@ Note that the <i>per-file</i> dirty page threshold is not the same as the <i>glo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

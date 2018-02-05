@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 569424A2-4279-4758-A6F1-402D25F9B04F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/PD_BUFFER_VIRTUAL_SUBNET_INFO, ndis/PPD_BUFFER_VIRTUAL_SUBNET_INFO, PPD_BUFFER_VIRTUAL_SUBNET_INFO, netvista.pd_buffer_virtual_subnet_info, _PD_BUFFER_VIRTUAL_SUBNET_INFO, PPD_BUFFER_VIRTUAL_SUBNET_INFO structure pointer [Network Drivers Starting with Windows Vista], PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PPD_BUFFER_VIRTUAL_SUBNET_INFO, ndis/PPD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO structure [Network Drivers Starting with Windows Vista], _PD_BUFFER_VIRTUAL_SUBNET_INFO, netvista.pd_buffer_virtual_subnet_info, PPD_BUFFER_VIRTUAL_SUBNET_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ The virtual subnet ID.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ndis.h |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT
+req.typenames : "*PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT"
 req.product : Windows 10 or later.
 ---
 
@@ -56,7 +56,7 @@ ULONG PwindbgCheckVersion(
 
 ## Parameters
 
-``
+`Arg1`
 
 
 
@@ -79,11 +79,5 @@ If the <a href="https://msdn.microsoft.com/ce7fbff4-7936-4bef-8236-a13957ada7f4"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

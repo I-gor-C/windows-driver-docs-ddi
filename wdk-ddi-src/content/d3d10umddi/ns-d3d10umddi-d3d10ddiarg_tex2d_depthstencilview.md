@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f659584f-e0a5-46b6-b20d-c19aba421114
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW structure [Display Devices], UMDisplayDriver_Dx10param_Structs_6887e338-dbab-4f35-bce1-e4412598d9bc.xml, D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW, d3d10umddi/D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW, display.d3d10ddiarg_tex2d_depthstencilview
+ms.keywords : D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW, d3d10umddi/D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW, D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW structure [Display Devices], display.d3d10ddiarg_tex2d_depthstencilview, UMDisplayDriver_Dx10param_Structs_6887e338-dbab-4f35-bce1-e4412598d9bc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

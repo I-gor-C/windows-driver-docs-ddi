@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : C78543F5-82CC-43CF-8769-1E721C17FF9C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CIP_DATA_FORMAT_VER2 structure [Buses], *PCIP_DATA_FORMAT, IEEE.cip_data_format_ver2, CIP_DATA_FORMAT_VER2, 61883/CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT_VER2, _CIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT, PCIP_DATA_FORMAT_VER2, PCIP_DATA_FORMAT_VER2 structure pointer [Buses], 61883/PCIP_DATA_FORMAT_VER2
+ms.keywords : "*PCIP_DATA_FORMAT_VER2, PCIP_DATA_FORMAT_VER2, _CIP_DATA_FORMAT_VER2, PCIP_DATA_FORMAT_VER2 structure pointer [Buses], IEEE.cip_data_format_ver2, CIP_DATA_FORMAT_VER2 structure [Buses], *PCIP_DATA_FORMAT, CIP_DATA_FORMAT, 61883/PCIP_DATA_FORMAT_VER2, CIP_DATA_FORMAT_VER2, 61883/CIP_DATA_FORMAT_VER2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -92,9 +92,6 @@ typedef struct _CIP_DATA_FORMAT_VER2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

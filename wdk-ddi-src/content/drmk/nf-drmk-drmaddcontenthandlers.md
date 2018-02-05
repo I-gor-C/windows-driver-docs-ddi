@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : da2ec371-052a-4ea1-9336-9e32df936227
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : aud-prop2_94f530fb-9766-4d61-a002-b1c7bd5183d5.xml, DrmAddContentHandlers function [Audio Devices], drmk/DrmAddContentHandlers, DrmAddContentHandlers, audio.drmaddcontenthandlers
+ms.keywords : audio.drmaddcontenthandlers, DrmAddContentHandlers, drmk/DrmAddContentHandlers, aud-prop2_94f530fb-9766-4d61-a002-b1c7bd5183d5.xml, DrmAddContentHandlers function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TX_METADATA, WDI_TX_METADATA"
+req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 
@@ -86,26 +86,22 @@ The upstream module can pass both the content ID and content rights to the downs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | drmk.h (include Drmk.h) |
-| **Library** |  |
+| **Library** | Drmk.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\portcls\nf-portcls-pcaddcontenthandlers.md">PcAddContentHandlers</a>
 
-<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
-
 <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536575">IDrmPort2::AddContentHandlers</a>
 
 <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536575">IDrmPort2::AddContentHandlers</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
 
  
 

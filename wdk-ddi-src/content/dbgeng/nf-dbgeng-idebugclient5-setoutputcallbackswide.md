@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : cd6f68b2-2a62-4607-8c70-11a94fd75ecb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.setoutputcallbackswide, IDebugClient5::SetOutputCallbacksWide, IDebugClient5 interface [Windows Debugging], SetOutputCallbacksWide method, SetOutputCallbacksWide method [Windows Debugging], SetOutputCallbacksWide, SetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::SetOutputCallbacksWide, IDebugClient5
+ms.keywords : IDebugClient5 interface [Windows Debugging], SetOutputCallbacksWide method, debugger.setoutputcallbackswide, SetOutputCallbacksWide method [Windows Debugging], SetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::SetOutputCallbacksWide, SetOutputCallbacksWide, IDebugClient5::SetOutputCallbacksWide, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -89,22 +89,17 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548071">GetOutputCallbacks</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
  
 

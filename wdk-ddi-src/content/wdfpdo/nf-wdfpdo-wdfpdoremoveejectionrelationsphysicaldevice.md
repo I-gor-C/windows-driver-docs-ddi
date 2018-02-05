@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d224b93b-4c3e-4e14-bc5d-404cb703752c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoRemoveEjectionRelationsPhysicalDevice, wdfpdo/WdfPdoRemoveEjectionRelationsPhysicalDevice, PFN_WDFPDOREMOVEEJECTIONRELATIONSPHYSICALDEVICE, DFDeviceObjectFdoPdoRef_7a599cb2-dbb7-4fce-b04b-1b92638e17de.xml, kmdf.wdfpdoremoveejectionrelationsphysicaldevice, wdf.wdfpdoremoveejectionrelationsphysicaldevice, WdfPdoRemoveEjectionRelationsPhysicalDevice method
+ms.keywords : PFN_WDFPDOREMOVEEJECTIONRELATIONSPHYSICALDEVICE, WdfPdoRemoveEjectionRelationsPhysicalDevice method, WdfPdoRemoveEjectionRelationsPhysicalDevice, wdf.wdfpdoremoveejectionrelationsphysicaldevice, kmdf.wdfpdoremoveejectionrelationsphysicaldevice, DFDeviceObjectFdoPdoRef_7a599cb2-dbb7-4fce-b04b-1b92638e17de.xml, wdfpdo/WdfPdoRemoveEjectionRelationsPhysicalDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -80,20 +80,18 @@ For more information, see <a href="https://msdn.microsoft.com/7820bb71-7218-4c5f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoaddejectionrelationsphysicaldevice.md">WdfPdoAddEjectionRelationsPhysicalDevice</a>
-
 <a href="..\wdfpdo\nf-wdfpdo-wdfpdoclearejectionrelationsdevices.md">WdfPdoClearEjectionRelationsDevices</a>
+
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoaddejectionrelationsphysicaldevice.md">WdfPdoAddEjectionRelationsPhysicalDevice</a>
 
  
 

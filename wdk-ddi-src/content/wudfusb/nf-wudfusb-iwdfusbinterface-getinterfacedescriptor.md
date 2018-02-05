@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ae4cffc8-65db-452c-9b85-19752c32c421
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface, umdf.iwdfusbinterface_getinterfacedescriptor, wdf.iwdfusbinterface_getinterfacedescriptor, GetInterfaceDescriptor method, IWDFUsbInterface interface, GetInterfaceDescriptor, GetInterfaceDescriptor method, wudfusb/IWDFUsbInterface::GetInterfaceDescriptor, UMDFUSBref_2d9877fd-47c4-4629-8656-d5d513260b2d.xml, IWDFUsbInterface::GetInterfaceDescriptor, IWDFUsbInterface interface, GetInterfaceDescriptor method
+ms.keywords : GetInterfaceDescriptor, IWDFUsbInterface::GetInterfaceDescriptor, IWDFUsbInterface, UMDFUSBref_2d9877fd-47c4-4629-8656-d5d513260b2d.xml, wdf.iwdfusbinterface_getinterfacedescriptor, GetInterfaceDescriptor method, IWDFUsbInterface interface, GetInterfaceDescriptor method, GetInterfaceDescriptor method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetInterfaceDescriptor, umdf.iwdfusbinterface_getinterfacedescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -73,14 +73,12 @@ For a code example of how to use the <b>GetInterfaceDescriptor</b> method, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

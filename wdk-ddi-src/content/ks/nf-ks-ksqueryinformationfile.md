@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : db1cce43-1eae-4af0-bb61-a5c295e3d325
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsQueryInformationFile, ksfunc_3d343664-3fda-4612-96d4-3fe36532c99e.xml, stream.ksqueryinformationfile, KsQueryInformationFile function [Streaming Media Devices], ks/KsQueryInformationFile
+ms.keywords : ks/KsQueryInformationFile, KsQueryInformationFile function [Streaming Media Devices], ksfunc_3d343664-3fda-4612-96d4-3fe36532c99e.xml, stream.ksqueryinformationfile, KsQueryInformationFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,6 @@ The <b>KsQueryInformationFile</b> function should only be used in cases where th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

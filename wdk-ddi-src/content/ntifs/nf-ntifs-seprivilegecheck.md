@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 707ced39-4153-4a6e-b87d-7e4eb487e738
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.seprivilegecheck, seref_45aa3a8c-26b9-4bb9-968a-5f7d4a12ca3a.xml, ntifs/SePrivilegeCheck, SePrivilegeCheck routine [Installable File System Drivers], SePrivilegeCheck
+ms.keywords : ntifs/SePrivilegeCheck, SePrivilegeCheck, seref_45aa3a8c-26b9-4bb9-968a-5f7d4a12ca3a.xml, ifsk.seprivilegecheck, SePrivilegeCheck routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,30 +82,27 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>
-
-<a href="..\wdm\nf-wdm-seaccesscheck.md">SeAccessCheck</a>
+<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
 
 <a href="..\ntddk\nf-ntddk-sesingleprivilegecheck.md">SeSinglePrivilegeCheck</a>
 
-<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
-
-<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
-
 <a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
 
+<a href="..\wdm\nf-wdm-seaccesscheck.md">SeAccessCheck</a>
+
 <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
+<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
+
+<a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>
 
 <a href="..\ntifs\nf-ntifs-seappendprivileges.md">SeAppendPrivileges</a>
 

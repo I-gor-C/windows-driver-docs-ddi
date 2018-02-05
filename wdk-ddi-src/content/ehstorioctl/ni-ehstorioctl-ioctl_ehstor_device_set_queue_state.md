@@ -104,9 +104,8 @@ To prevent abuse of  the <b>IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</b> request by a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows 8 Available starting with Windows 8 |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

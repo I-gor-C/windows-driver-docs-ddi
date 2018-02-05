@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c0cc4fba-01ba-4745-8dee-fc4c43f570cf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlMultiByteToUnicodeN routine [Installable File System Drivers], ntifs/RtlMultiByteToUnicodeN, ifsk.rtlmultibytetounicoden, RtlMultiByteToUnicodeN, rtlref_c9245403-e17c-479b-ac16-07deb29a56d1.xml
+ms.keywords : RtlMultiByteToUnicodeN routine [Installable File System Drivers], rtlref_c9245403-e17c-479b-ac16-07deb29a56d1.xml, ntifs/RtlMultiByteToUnicodeN, ifsk.rtlmultibytetounicoden, RtlMultiByteToUnicodeN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,14 +98,11 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 84e231ad-50a1-471e-b514-6b769f2a7e1e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ccpreparemdlwrite, ccref_2523ff15-d200-4f45-bc05-aab30afadc15.xml, CcPrepareMdlWrite routine [Installable File System Drivers], CcPrepareMdlWrite, ntifs/CcPrepareMdlWrite
+ms.keywords : ccref_2523ff15-d200-4f45-bc05-aab30afadc15.xml, CcPrepareMdlWrite routine [Installable File System Drivers], ifsk.ccpreparemdlwrite, ntifs/CcPrepareMdlWrite, CcPrepareMdlWrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,52 +96,49 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-mmgetsystemaddressformdl.md">MmGetSystemAddressForMdl</a>
-
-<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
-
-<a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
-
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
-
-<a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
-
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
-
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
 <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554537">MmGetMdlPfnArray</a>
 
+<a href="..\wdm\nf-wdm-mmgetsystemaddressformdl.md">MmGetSystemAddressForMdl</a>
+
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554660">MmPrepareMdlForReuse</a>
 
-<a href="..\wdm\nf-wdm-mmgetmdlbytecount.md">MmGetMdlByteCount</a>
-
-<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
-
-<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554568">MmInitializeMdl</a>
 
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
+
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
+<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
+
+<a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a>
+
+<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
+
 <a href="..\ntifs\nf-ntifs-ccmdlwritecomplete.md">CcMdlWriteComplete</a>
+
+<a href="..\wdm\nf-wdm-mmgetmdlbytecount.md">MmGetMdlByteCount</a>
+
+<a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
 
  
 

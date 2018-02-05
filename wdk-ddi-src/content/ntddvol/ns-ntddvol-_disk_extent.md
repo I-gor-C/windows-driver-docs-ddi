@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 74ffdfba-1b80-479d-9637-43222a438fa9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.disk_extent, PDISK_EXTENT, _DISK_EXTENT, *PDISK_EXTENT, structs-disk_2874d2a7-dc4e-46e6-9d43-2374e82c857b.xml, ntddvol/PDISK_EXTENT, PDISK_EXTENT structure pointer [Storage Devices], DISK_EXTENT structure [Storage Devices], DISK_EXTENT, ntddvol/DISK_EXTENT
+ms.keywords : storage.disk_extent, ntddvol/DISK_EXTENT, ntddvol/PDISK_EXTENT, PDISK_EXTENT, DISK_EXTENT, *PDISK_EXTENT, _DISK_EXTENT, DISK_EXTENT structure [Storage Devices], structs-disk_2874d2a7-dc4e-46e6-9d43-2374e82c857b.xml, PDISK_EXTENT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,13 @@ Specifies the offset, in bytes, from the beginning of the disk.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvol.h (include Ntddvol.h) |
 
 ## See Also
 
-<a href="..\ntddvol\ni-ntddvol-ioctl_volume_get_volume_disk_extents.md">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a>
-
 <a href="..\ntddvol\ns-ntddvol-_volume_disk_extents.md">VOLUME_DISK_EXTENTS</a>
+
+<a href="..\ntddvol\ni-ntddvol-ioctl_volume_get_volume_disk_extents.md">IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS</a>
 
  
 

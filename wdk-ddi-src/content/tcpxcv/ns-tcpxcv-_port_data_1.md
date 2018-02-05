@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6d2165a7-ee21-4f7d-a03c-f9bed87a3c7a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PPORT_DATA_1 structure pointer [Print Devices], spoolfnc_6fd52423-d2f1-4c6c-bf42-63000c5d0e66.xml, PORT_DATA_1 structure [Print Devices], PORT_DATA_1, _PORT_DATA_1, print.port_data_1, PPORT_DATA_1, tcpxcv/PPORT_DATA_1, tcpxcv/PORT_DATA_1, *PPORT_DATA_1
+ms.keywords : tcpxcv/PPORT_DATA_1, *PPORT_DATA_1, PORT_DATA_1, print.port_data_1, spoolfnc_6fd52423-d2f1-4c6c-bf42-63000c5d0e66.xml, PPORT_DATA_1 structure pointer [Print Devices], tcpxcv/PORT_DATA_1, _PORT_DATA_1, PPORT_DATA_1, PORT_DATA_1 structure [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -129,9 +129,6 @@ See <a href="https://msdn.microsoft.com/7b2b1cff-ab8f-44e0-9327-dc60a0072bf5">TC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | tcpxcv.h (include Tcpxcv.h) |
 
 ## See Also

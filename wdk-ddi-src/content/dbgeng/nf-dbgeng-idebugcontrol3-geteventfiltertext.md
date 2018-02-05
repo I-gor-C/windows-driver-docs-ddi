@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d311a030-e24c-427c-8a52-0c67d4fac653
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, GetEventFilterText, debugger.geteventfiltertext, dbgeng/IDebugControl2::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], GetEventFilterText method, IDebugControl3::GetEventFilterText, IDebugControl::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetEventFilterText, GetEventFilterText method [Windows Debugging], GetEventFilterText method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::GetEventFilterText, IDebugControl3 interface [Windows Debugging], GetEventFilterText method, dbgeng/IDebugControl3::GetEventFilterText, IDebugControl_61936aac-8fe2-4f18-86aa-cba1404d845f.xml, IDebugControl interface [Windows Debugging], GetEventFilterText method
+ms.keywords : IDebugControl3::GetEventFilterText, IDebugControl2 interface [Windows Debugging], GetEventFilterText method, IDebugControl3 interface [Windows Debugging], GetEventFilterText method, dbgeng/IDebugControl2::GetEventFilterText, IDebugControl::GetEventFilterText, dbgeng/IDebugControl::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl2 interface, IDebugControl_61936aac-8fe2-4f18-86aa-cba1404d845f.xml, IDebugControl3, IDebugControl interface [Windows Debugging], GetEventFilterText method, GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl interface, debugger.geteventfiltertext, IDebugControl2::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetEventFilterText, GetEventFilterText method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -111,26 +111,21 @@ For more information about <a href="https://msdn.microsoft.com/library/windows/h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548398">GetSpecificFilterParameters</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-<a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548398">GetSpecificFilterParameters</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
 
  
 

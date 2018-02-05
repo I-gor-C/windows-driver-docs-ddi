@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 32cd29c3-e8da-4119-84a4-3ce4daed528e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iadapterpowermanagement_querypowerchangestate, IAdapterPowerManagement, QueryPowerChangeState method [Audio Devices], IAdapterPowerManagement interface, portcls/IAdapterPowerManagement::QueryPowerChangeState, QueryPowerChangeState method [Audio Devices], QueryPowerChangeState, IAdapterPowerManagement interface [Audio Devices], QueryPowerChangeState method, IAdapterPowerManagement::QueryPowerChangeState, audmp-routines_4a5ebdca-faa4-4f99-89d1-6c86a928243c.xml
+ms.keywords : IAdapterPowerManagement::QueryPowerChangeState, audio.iadapterpowermanagement_querypowerchangestate, portcls/IAdapterPowerManagement::QueryPowerChangeState, audmp-routines_4a5ebdca-faa4-4f99-89d1-6c86a928243c.xml, QueryPowerChangeState method [Audio Devices], IAdapterPowerManagement interface [Audio Devices], QueryPowerChangeState method, QueryPowerChangeState, QueryPowerChangeState method [Audio Devices], IAdapterPowerManagement interface, IAdapterPowerManagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -70,20 +70,15 @@ The code for this method must reside in paged memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536488">IAdapterPowerManagement::PowerChangeState</a>
-
 <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536488">IAdapterPowerManagement::PowerChangeState</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551699">IRP_MN_QUERY_POWER</a>
 

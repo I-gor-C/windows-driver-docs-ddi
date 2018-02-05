@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 201a4558-8755-4a28-9982-c02ce5b5d8e7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PostEvent, PostEvent method [Sensor Devices], ISensorClassExtension::PostEvent, ISensorClassExtension, sensors.isensorclassextension_postevent
+ms.keywords : ISensorClassExtension::PostEvent, PostEvent method [Sensor Devices], ISensorClassExtension, PostEvent, sensors.isensorclassextension_postevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -171,11 +171,6 @@ For an example of a class that creates an event thread, see <a href="https://msd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

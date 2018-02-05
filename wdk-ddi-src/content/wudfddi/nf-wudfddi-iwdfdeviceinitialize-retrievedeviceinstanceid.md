@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5f1651f9-4952-4e87-90fc-3f79948b8457
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDeviceInitialize::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, IWDFDeviceInitialize interface, RetrieveDeviceInstanceId method, IWDFDeviceInitialize, wdf.iwdfdeviceinitialize_retrievedeviceinstanceid, UMDFDeviceObjectRef_b383227b-ba03-4c85-9517-bb87eac631ef.xml, IWDFDeviceInitialize interface, RetrieveDeviceInstanceId method, umdf.iwdfdeviceinitialize_retrievedeviceinstanceid, wudfddi/IWDFDeviceInitialize::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId
+ms.keywords : UMDFDeviceObjectRef_b383227b-ba03-4c85-9517-bb87eac631ef.xml, umdf.iwdfdeviceinitialize_retrievedeviceinstanceid, wdf.iwdfdeviceinitialize_retrievedeviceinstanceid, IWDFDeviceInitialize, RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, IWDFDeviceInitialize interface, IWDFDeviceInitialize::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, IWDFDeviceInitialize interface, RetrieveDeviceInstanceId method, wudfddi/IWDFDeviceInitialize::RetrieveDeviceInstanceId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -95,14 +95,12 @@ The buffer at <i>Buffer</i> was <b>NULL</b>, the driver preset the variable at <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

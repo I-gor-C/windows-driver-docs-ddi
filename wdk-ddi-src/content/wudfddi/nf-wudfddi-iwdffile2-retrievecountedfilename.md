@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0b3aa8d9-1947-4e5e-91d1-6f73ddb3908a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFFile2::RetrieveCountedFileName, wdf.iwdffile2_retrievecountedfilename, RetrieveCountedFileName method, IWDFFile2 interface, RetrieveCountedFileName, umdf.iwdffile2_retrievecountedfilename, UMDFFileObjectRef_89204c8a-3847-4e03-bf8b-c660b1b2408b.xml, RetrieveCountedFileName method, IWDFFile2, wudfddi/IWDFFile2::RetrieveCountedFileName, IWDFFile2 interface, RetrieveCountedFileName method
+ms.keywords : wdf.iwdffile2_retrievecountedfilename, UMDFFileObjectRef_89204c8a-3847-4e03-bf8b-c660b1b2408b.xml, umdf.iwdffile2_retrievecountedfilename, IWDFFile2 interface, RetrieveCountedFileName method, IWDFFile2::RetrieveCountedFileName, IWDFFile2, wudfddi/IWDFFile2::RetrieveCountedFileName, RetrieveCountedFileName method, RetrieveCountedFileName method, IWDFFile2 interface, RetrieveCountedFileName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -133,14 +133,12 @@ The driver calls <b>RetrieveCountedFileName</b> again to obtain the file name st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

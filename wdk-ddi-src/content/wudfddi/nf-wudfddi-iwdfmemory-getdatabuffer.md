@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 136aa2af-e3bf-48b6-9511-348510eedfb5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetDataBuffer method, IWDFMemory, IWDFMemory interface, GetDataBuffer method, wdf.iwdfmemory_getdatabuffer, IWDFMemory::GetDataBuffer, UMDFMemoryObjectRef_910791a8-4fd9-47ff-93f9-f8f496e95272.xml, wudfddi/IWDFMemory::GetDataBuffer, GetDataBuffer method, IWDFMemory interface, umdf.iwdfmemory_getdatabuffer, GetDataBuffer
+ms.keywords : wudfddi/IWDFMemory::GetDataBuffer, UMDFMemoryObjectRef_910791a8-4fd9-47ff-93f9-f8f496e95272.xml, IWDFMemory interface, GetDataBuffer method, wdf.iwdfmemory_getdatabuffer, GetDataBuffer method, GetDataBuffer method, IWDFMemory interface, IWDFMemory, IWDFMemory::GetDataBuffer, GetDataBuffer, umdf.iwdfmemory_getdatabuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,14 +71,12 @@ For a code example of how to use the <b>GetDataBuffer</b> method, see <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWMI_CHANGER_PROBLEM_DEVICE_ERROR, WMI_CHANGER_PROBLEM_DEVICE_ERROR"
+req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
 req.product : Windows 10 or later.
 ---
 
@@ -133,26 +133,21 @@ For more information about implementing this routine, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wmilib.h (include Wmilib.h) |
-| **Library** |  |
 | **IRQL** | Called at PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wmilib\nf-wmilib-wmicompleterequest.md">WmiCompleteRequest</a>
 
 <a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
 
 <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a>
+<a href="..\wmilib\nf-wmilib-wmicompleterequest.md">WmiCompleteRequest</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a>
 
  
 

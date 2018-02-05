@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4C0B2CFD-B981-4304-B3F9-AD534BF5A823
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PDEVICE_DSM_OFFLOAD_READ_PARAMETERS, ntddstor/PDEVICE_DSM_OFFLOAD_READ_PARAMETERS, PDEVICE_DSM_OFFLOAD_READ_PARAMETERS, _DEVICE_DSM_OFFLOAD_READ_PARAMETERS, ntddstor/DEVICE_DSM_OFFLOAD_READ_PARAMETERS, storage.device_dsm_offload_read_parameters, PDEVICE_DSM_OFFLOAD_READ_PARAMETERS structure pointer [Storage Devices], DEVICE_DSM_OFFLOAD_READ_PARAMETERS, DEVICE_DSM_OFFLOAD_READ_PARAMETERS structure [Storage Devices]"
+ms.keywords : ntddstor/PDEVICE_DSM_OFFLOAD_READ_PARAMETERS, ntddstor/DEVICE_DSM_OFFLOAD_READ_PARAMETERS, *PDEVICE_DSM_OFFLOAD_READ_PARAMETERS, DEVICE_DSM_OFFLOAD_READ_PARAMETERS, DEVICE_DSM_OFFLOAD_READ_PARAMETERS structure [Storage Devices], PDEVICE_DSM_OFFLOAD_READ_PARAMETERS, storage.device_dsm_offload_read_parameters, PDEVICE_DSM_OFFLOAD_READ_PARAMETERS structure pointer [Storage Devices], _DEVICE_DSM_OFFLOAD_READ_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DEVICE_DSM_OFFLOAD_READ_PARAMETERS, *PDEVICE_DSM_OFFLOAD_READ_PARAMETERS
+req.typenames : "*PDEVICE_DSM_OFFLOAD_READ_PARAMETERS, DEVICE_DSM_OFFLOAD_READ_PARAMETERS"
 ---
 
 # _DEVICE_DSM_OFFLOAD_READ_PARAMETERS structure
@@ -75,18 +75,16 @@ The <b>DataSetRangesOffset</b> and <b>DataSetRangesLength</b> members of <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also
 
 <a href="..\ntddstor\ns-ntddstor-_device_manage_data_set_attributes.md">DEVICE_MANAGE_DATA_SET_ATTRIBUTES</a>
 
-<a href="..\ntddstor\ns-ntddstor-_device_data_set_range.md">DEVICE_DATA_SET_RANGE</a>
-
 <a href="..\ntddstor\ns-ntddstor-_device_dsm_offload_write_parameters.md">DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS</a>
+
+<a href="..\ntddstor\ns-ntddstor-_device_data_set_range.md">DEVICE_DATA_SET_RANGE</a>
 
  
 

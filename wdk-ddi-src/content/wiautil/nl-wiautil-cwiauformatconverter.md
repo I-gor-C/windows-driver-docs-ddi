@@ -58,8 +58,5 @@ The <b>CWiauFormatConverter</b> class is a helper class for converting images to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wiautil.h |
-| **DLL** |  |

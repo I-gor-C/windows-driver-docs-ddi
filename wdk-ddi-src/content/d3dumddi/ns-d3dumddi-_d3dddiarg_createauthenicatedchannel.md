@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 00f8fbbc-1a4d-4cfe-8b87-fd70bf5a2d48
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure [Display Devices], d3dumddi/D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, _D3DDDIARG_CREATEAUTHENICATEDCHANNEL, D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, UMDisplayDriver_param_Structs_3cdac44d-7cac-43f6-80f5-dd601183fa8b.xml, display.d3dddiarg_createauthenticatedchannel
+ms.keywords : "_D3DDDIARG_CREATEAUTHENICATEDCHANNEL, display.d3dddiarg_createauthenticatedchannel, d3dumddi/D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure [Display Devices], D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, UMDisplayDriver_param_Structs_3cdac44d-7cac-43f6-80f5-dd601183fa8b.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,9 +90,7 @@ The authenticated-channel type is hardware.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_CREATEAUTHENTICATEDCHANNEL is supported beginning with the Windows 7 operating system. D3DDDIARG_CREATEAUTHENTICATEDCHANNEL is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

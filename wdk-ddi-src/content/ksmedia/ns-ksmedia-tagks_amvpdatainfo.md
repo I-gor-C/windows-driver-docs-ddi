@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4c217cf8-ca93-4e5d-8cbc-c56794f96d50
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : dvdref_e3126cb7-47dc-469b-b2ef-caefc04966cc.xml, KS_AMVPDATAINFO, ksmedia/KS_AMVPDATAINFO, PKS_AMVPDATAINFO, *PKS_AMVPDATAINFO, PKS_AMVPDATAINFO structure pointer [Streaming Media Devices], ksmedia/PKS_AMVPDATAINFO, tagKS_AMVPDATAINFO, KS_AMVPDATAINFO structure [Streaming Media Devices], stream.ks_amvpdatainfo
+ms.keywords : "*PKS_AMVPDATAINFO, KS_AMVPDATAINFO structure [Streaming Media Devices], ksmedia/KS_AMVPDATAINFO, tagKS_AMVPDATAINFO, stream.ks_amvpdatainfo, dvdref_e3126cb7-47dc-469b-b2ef-caefc04966cc.xml, ksmedia/PKS_AMVPDATAINFO, KS_AMVPDATAINFO, PKS_AMVPDATAINFO, PKS_AMVPDATAINFO structure pointer [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -121,9 +121,6 @@ This structure is used by the <a href="https://msdn.microsoft.com/library/window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

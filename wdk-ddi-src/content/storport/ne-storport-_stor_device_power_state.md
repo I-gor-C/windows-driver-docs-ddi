@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 563ece3e-1359-4e3c-9ae7-61b94bf90ad0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSTOR_DEVICE_POWER_STATE, PSTOR_DEVICE_POWER_STATE enumeration pointer [Storage Devices], storage.stor_device_power_state, _STOR_DEVICE_POWER_STATE, structs-storport_1b3e3040-821f-4cc1-9a5b-15ae5eaeb35e.xml, StorPowerDeviceMaximum, StorPowerDeviceD2, storport/StorPowerDeviceD1, storport/PSTOR_DEVICE_POWER_STATE, storport/STOR_DEVICE_POWER_STATE, StorPowerDeviceUnspecified, STOR_DEVICE_POWER_STATE, storport/StorPowerDeviceMaximum, StorPowerDeviceD1, PSTOR_DEVICE_POWER_STATE, storport/StorPowerDeviceD3, storport/StorPowerDeviceUnspecified, storport/StorPowerDeviceD2, storport/StorPowerDeviceD0, StorPowerDeviceD0, StorPowerDeviceD3, STOR_DEVICE_POWER_STATE enumeration [Storage Devices]"
+ms.keywords : storport/PSTOR_DEVICE_POWER_STATE, storport/StorPowerDeviceD0, STOR_DEVICE_POWER_STATE, StorPowerDeviceD2, StorPowerDeviceD3, _STOR_DEVICE_POWER_STATE, StorPowerDeviceD0, StorPowerDeviceD1, storage.stor_device_power_state, storport/StorPowerDeviceD1, storport/StorPowerDeviceD2, StorPowerDeviceUnspecified, StorPowerDeviceMaximum, PSTOR_DEVICE_POWER_STATE, storport/StorPowerDeviceMaximum, PSTOR_DEVICE_POWER_STATE enumeration pointer [Storage Devices], storport/StorPowerDeviceD3, storport/STOR_DEVICE_POWER_STATE, structs-storport_1b3e3040-821f-4cc1-9a5b-15ae5eaeb35e.xml, *PSTOR_DEVICE_POWER_STATE, STOR_DEVICE_POWER_STATE enumeration [Storage Devices], storport/StorPowerDeviceUnspecified
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -93,9 +93,6 @@ typedef enum _STOR_DEVICE_POWER_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

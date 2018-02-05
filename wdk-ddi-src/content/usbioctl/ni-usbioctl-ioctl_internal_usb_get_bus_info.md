@@ -72,9 +72,7 @@ The bus or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

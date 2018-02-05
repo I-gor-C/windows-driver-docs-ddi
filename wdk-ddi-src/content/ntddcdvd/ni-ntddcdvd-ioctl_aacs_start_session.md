@@ -73,6 +73,4 @@ After obtaining the AGID, host software uses the AGID to associate subsequent AA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

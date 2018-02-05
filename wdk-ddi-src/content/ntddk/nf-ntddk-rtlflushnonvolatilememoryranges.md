@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 169C5F41-B372-4056-AAC5-53DD0582A563
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFlushNonVolatileMemoryRanges routine [Installable File System Drivers], ifsk.rtlflushnonvolatilememoryranges, ntddk/RtlFlushNonVolatileMemoryRanges, RtlFlushNonVolatileMemoryRanges
+ms.keywords : ifsk.rtlflushnonvolatilememoryranges, RtlFlushNonVolatileMemoryRanges, ntddk/RtlFlushNonVolatileMemoryRanges, RtlFlushNonVolatileMemoryRanges routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,18 +112,15 @@ This routine is currently not supported for Windows Server until the next major 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h (include Winnt.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/49DDDEF8-F949-4674-A18B-9BB091D163C2">RtlWriteNonVolatileMemory</a>
+<a href="https://msdn.microsoft.com/759CDFAA-D939-44E7-AE03-E3ED90F8E09D">
+RtlFlushNonVolatileMemory</a>
 
 <a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
 
@@ -131,8 +128,7 @@ This routine is currently not supported for Windows Server until the next major 
 
 <a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
 
-<mshelp:link keywords="ifsk.RtlFlushNonVolatileMemory" tabindex="0"><b>
-RtlFlushNonVolatileMemory</b></mshelp:link>
+<a href="https://msdn.microsoft.com/49DDDEF8-F949-4674-A18B-9BB091D163C2">RtlWriteNonVolatileMemory</a>
 
  
 

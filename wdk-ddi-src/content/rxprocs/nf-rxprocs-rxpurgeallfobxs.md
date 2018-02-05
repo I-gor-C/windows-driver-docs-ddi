@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3d2a31be-1b59-48a8-8cde-61d7f7319724
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxPurgeAllFobxs, ifsk.rxpurgeallfobxs, rxprocs/RxPurgeAllFobxs, rxref_80dc8a6f-2b11-44b1-986b-b29402e4d46e.xml, RxPurgeAllFobxs function [Installable File System Drivers]
+ms.keywords : rxprocs/RxPurgeAllFobxs, RxPurgeAllFobxs function [Installable File System Drivers], ifsk.rxpurgeallfobxs, rxref_80dc8a6f-2b11-44b1-986b-b29402e4d46e.xml, RxPurgeAllFobxs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,14 +89,10 @@ The <b>Flink</b> and <b>Blink</b> members for a list entry are <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

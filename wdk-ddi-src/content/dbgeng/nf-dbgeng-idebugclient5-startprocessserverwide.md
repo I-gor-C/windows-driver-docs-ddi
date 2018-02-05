@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1e72578c-9359-4275-a4f2-2b5ae4dbf2b7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : StartProcessServerWide, debugger.startprocessserverwide, IDebugClient5 interface [Windows Debugging], StartProcessServerWide method, StartProcessServerWide method [Windows Debugging], IDebugClient5 interface, StartProcessServerWide method [Windows Debugging], IDebugClient5::StartProcessServerWide, dbgeng/IDebugClient5::StartProcessServerWide, IDebugClient5
+ms.keywords : dbgeng/IDebugClient5::StartProcessServerWide, StartProcessServerWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::StartProcessServerWide, StartProcessServerWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], StartProcessServerWide method, StartProcessServerWide, debugger.startprocessserverwide, IDebugClient5
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -99,22 +99,17 @@ For more information about process servers and remote debugging, see <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542993">EndProcessServer</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541969">DisconnectProcessServer</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542993">EndProcessServer</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
 

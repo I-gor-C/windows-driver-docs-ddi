@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 5020212e-9e3f-468f-8f7c-77d70a8f024b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : OnGetSupportedDataFields method [Sensor Devices], sensors.isensordriver_ongetsupporteddatafields, OnGetSupportedDataFields, ISensorDriver, ISensorDriver::OnGetSupportedDataFields
+ms.keywords : OnGetSupportedDataFields method [Sensor Devices], ISensorDriver, ISensorDriver::OnGetSupportedDataFields, OnGetSupportedDataFields, sensors.isensordriver_ongetsupporteddatafields
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -78,11 +78,6 @@ All drivers must support SENSOR_DATA_TYPE_TIMESTAMP as a required data field.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

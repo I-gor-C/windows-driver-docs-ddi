@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2bc038bb-fe8a-4a22-b4e2-d6dcf2589a12
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_GetIMSI, RIL_GetIMSI, netvista.ril_getimsi, RIL_GetIMSI method [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ril_getimsi, rilapi/RIL_GetIMSI, RIL_GetIMSI method [Network Drivers Starting with Windows Vista], RIL_GetIMSI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

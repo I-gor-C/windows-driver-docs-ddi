@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 127c4e48-87db-4735-8d3d-e01fed6a9cf0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks, IDebugEventCallbacks interface [Windows Debugging], SessionStatus method, IDebugEventCallbacks::SessionStatus, SessionStatus method [Windows Debugging], IDebugEventCallbacks interface, SessionStatus, debugger.idebugeventcallbacks_sessionstatus, SessionStatus method [Windows Debugging], dbgeng/IDebugEventCallbacks::SessionStatus, ComCallbacks_72cb31db-cc24-41b7-b891-65921c50ce12.xml
+ms.keywords : IDebugEventCallbacks interface [Windows Debugging], SessionStatus method, IDebugEventCallbacks::SessionStatus, debugger.idebugeventcallbacks_sessionstatus, IDebugEventCallbacks, SessionStatus method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_72cb31db-cc24-41b7-b891-65921c50ce12.xml, dbgeng/IDebugEventCallbacks::SessionStatus, SessionStatus, SessionStatus method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -160,11 +160,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

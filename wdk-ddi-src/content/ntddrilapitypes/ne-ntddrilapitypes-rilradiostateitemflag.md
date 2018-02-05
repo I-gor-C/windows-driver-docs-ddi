@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dcbd0b16-4960-4cc1-b76b-6d971ba6a192
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, RILRADIOSTATEITEMFLAG enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILRADIOSTATEITEMFLAG, RILRADIOSTATEITEMFLAG, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL, RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, netvista.rilradiostateitemflag, RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_MAX, RIL_RADIOSTATE_ITEMFLAG_USE_MAX
+ms.keywords : RIL_RADIOSTATE_ITEMFLAG_USE_MAX, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_MAX, RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, RILRADIOSTATEITEMFLAG enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILRADIOSTATEITEMFLAG, RILRADIOSTATEITEMFLAG, RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL, RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY, netvista.rilradiostateitemflag, RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ typedef enum _RILRADIOSTATEITEMFLAG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

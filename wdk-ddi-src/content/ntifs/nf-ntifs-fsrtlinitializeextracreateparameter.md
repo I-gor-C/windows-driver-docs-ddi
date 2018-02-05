@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e3be12e4-84f3-4bd5-af9a-26ad89948e50
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlInitializeExtraCreateParameter, FsRtlInitializeExtraCreateParameter routine [Installable File System Drivers], ifsk.fsrtlinitializeextracreateparameter, FsRtlInitializeExtraCreateParameter, fsrtlref_266d4d18-e024-42e8-8ca1-fa8b6fabef9b.xml
+ms.keywords : ifsk.fsrtlinitializeextracreateparameter, ntifs/FsRtlInitializeExtraCreateParameter, fsrtlref_266d4d18-e024-42e8-8ca1-fa8b6fabef9b.xml, FsRtlInitializeExtraCreateParameter routine [Installable File System Drivers], FsRtlInitializeExtraCreateParameter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,14 +90,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FsRtlInitializeExtraCreateParameter routine is available starting with Windows 7. The FsRtlInitializeExtraCreateParameter routine is available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 47aacc23-f7d1-4c14-9541-3207debef327
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisUnbindAdapter, NdisUnbindAdapter function [Network Drivers Starting with Windows Vista], netvista.ndisunbindadapter, NdisUnbindAdapter, protocol_ndis_functions_ref_99324c18-23da-4ed1-9ccc-ab73ac342c50.xml
+ms.keywords : NdisUnbindAdapter, ndis/NdisUnbindAdapter, protocol_ndis_functions_ref_99324c18-23da-4ed1-9ccc-ab73ac342c50.xml, netvista.ndisunbindadapter, NdisUnbindAdapter function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,22 +113,20 @@ Before the call to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
 
  
 

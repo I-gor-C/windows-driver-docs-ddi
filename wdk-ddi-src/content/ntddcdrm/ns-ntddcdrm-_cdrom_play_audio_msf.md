@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 73589397-9b2b-4d49-9860-cb2eb6a26632
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : CDROM_PLAY_AUDIO_MSF, structs-CD-ROM_27bfe732-1972-4101-baa1-e9d520c3dfcf.xml, PCDROM_PLAY_AUDIO_MSF, _CDROM_PLAY_AUDIO_MSF, PCDROM_PLAY_AUDIO_MSF structure pointer [Storage Devices], ntddcdrm/PCDROM_PLAY_AUDIO_MSF, storage.cdrom_play_audio_msf, ntddcdrm/CDROM_PLAY_AUDIO_MSF, *PCDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF structure [Storage Devices]
+ms.keywords : storage.cdrom_play_audio_msf, _CDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF structure [Storage Devices], ntddcdrm/CDROM_PLAY_AUDIO_MSF, PCDROM_PLAY_AUDIO_MSF structure pointer [Storage Devices], *PCDROM_PLAY_AUDIO_MSF, ntddcdrm/PCDROM_PLAY_AUDIO_MSF, PCDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF, structs-CD-ROM_27bfe732-1972-4101-baa1-e9d520c3dfcf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF"
+req.typenames : CDROM_PLAY_AUDIO_MSF, *PCDROM_PLAY_AUDIO_MSF
 ---
 
 # _CDROM_PLAY_AUDIO_MSF structure
@@ -86,9 +86,6 @@ Device control IRPs with a control code of IOCTL_CDROM_PLAY_AUDIO_MSF use this s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also

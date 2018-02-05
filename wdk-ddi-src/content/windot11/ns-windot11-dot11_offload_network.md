@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 75DC558F-801B-42ED-9282-127E86E78923
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_OFFLOAD_NETWORK, windot11/PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_OFFLOAD_NETWORK, netvista.dot11_offload_network, DOT11_OFFLOAD_NETWORK structure [Network Drivers Starting with Windows Vista], *PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK
+ms.keywords : netvista.dot11_offload_network, DOT11_OFFLOAD_NETWORK structure [Network Drivers Starting with Windows Vista], *PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK, windot11/DOT11_OFFLOAD_NETWORK, windot11/PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,5 @@ Cipher algorithm for data encryption and decryption.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |

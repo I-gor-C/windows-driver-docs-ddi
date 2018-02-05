@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7a9e4b9a-f166-41bc-9525-8539ca8864f5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilexecutorrfstate_2, rilapitypes/RILEXECUTORRFSTATE, *LPRILEXECUTORRFSTATE, RILEXECUTORRFSTATE, RILEXECUTORRFSTATE structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.rilexecutorrfstate_2, RILEXECUTORRFSTATE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILEXECUTORRFSTATE, *LPRILEXECUTORRFSTATE, RILEXECUTORRFSTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILEXECUTORRFSTATE, *LPRILEXECUTORRFSTATE
+req.typenames : "*LPRILEXECUTORRFSTATE, RILEXECUTORRFSTATE"
 req.product : Windows 10 or later.
 ---
 
@@ -75,7 +75,4 @@ typedef struct _RILEXECUTORRFSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

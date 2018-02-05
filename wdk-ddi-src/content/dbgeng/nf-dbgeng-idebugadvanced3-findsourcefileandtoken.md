@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 92748e47-c536-4bf2-be10-91b8c5f1206d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced2 interface [Windows Debugging], FindSourceFileAndToken method, FindSourceFileAndToken, IDebugAdvanced_3c88de99-1ddb-47e4-ab70-37a2521b9f1b.xml, FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced2 interface, FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3, dbgeng/IDebugAdvanced2::FindSourceFileAndToken, IDebugAdvanced3 interface [Windows Debugging], FindSourceFileAndToken method, IDebugAdvanced3::FindSourceFileAndToken, debugger.findsourcefileandtoken, IDebugAdvanced2::FindSourceFileAndToken, dbgeng/IDebugAdvanced3::FindSourceFileAndToken, FindSourceFileAndToken method [Windows Debugging]
+ms.keywords : IDebugAdvanced3::FindSourceFileAndToken, IDebugAdvanced2::FindSourceFileAndToken, IDebugAdvanced2 interface [Windows Debugging], FindSourceFileAndToken method, IDebugAdvanced3, FindSourceFileAndToken, debugger.findsourcefileandtoken, IDebugAdvanced_3c88de99-1ddb-47e4-ab70-37a2521b9f1b.xml, dbgeng/IDebugAdvanced2::FindSourceFileAndToken, FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced2 interface, FindSourceFileAndToken method [Windows Debugging], FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced3 interface, dbgeng/IDebugAdvanced3::FindSourceFileAndToken, IDebugAdvanced3 interface [Windows Debugging], FindSourceFileAndToken method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -237,28 +237,23 @@ The value DEBUG_FIND_SOURCE_DEFULT defines the default set of flags, which means
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced2.md">IDebugAdvanced2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541495">DEBUG_FIND_SOURCE_XXX</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548367">GetSourcePathElement</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541495">DEBUG_FIND_SOURCE_XXX</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548321">GetSourceFileInformation</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9e1dd010-0074-45fb-b3cb-f8ea7ad15e02
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamPointerCancelTimeout, KsStreamPointerCancelTimeout function [Streaming Media Devices], avfunc_9496b7be-f178-418a-87ac-d09dec988672.xml, stream.ksstreampointercanceltimeout, ks/KsStreamPointerCancelTimeout
+ms.keywords : stream.ksstreampointercanceltimeout, avfunc_9496b7be-f178-418a-87ac-d09dec988672.xml, ks/KsStreamPointerCancelTimeout, KsStreamPointerCancelTimeout, KsStreamPointerCancelTimeout function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ The <b>KsStreamPointerCancelTimeout</b> function does not affect stream pointers
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

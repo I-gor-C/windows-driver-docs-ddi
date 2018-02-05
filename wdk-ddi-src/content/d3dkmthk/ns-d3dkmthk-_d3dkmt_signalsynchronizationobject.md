@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 13368ea2-dd2e-48af-b528-097104dffb60
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_8a7c1832-e93f-47d3-b5ec-b5bea7f3321a.xml, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure [Display Devices], d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, display.d3dkmt_signalsynchronizationobject, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
+ms.keywords : OpenGL_Structs_8a7c1832-e93f-47d3-b5ec-b5bea7f3321a.xml, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure [Display Devices], _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, display.d3dkmt_signalsynchronizationobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

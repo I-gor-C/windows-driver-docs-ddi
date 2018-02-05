@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 15046dc7-42ae-4ebe-acb9-2b0bbad1e833
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcnewminiport, audpc-routines_d0b1d8e9-e4e0-44de-8854-a1b18eac9ff5.xml, PcNewMiniport, PcNewMiniport function [Audio Devices], portcls/PcNewMiniport
+ms.keywords : PcNewMiniport function [Audio Devices], audpc-routines_d0b1d8e9-e4e0-44de-8854-a1b18eac9ff5.xml, audio.pcnewminiport, portcls/PcNewMiniport, PcNewMiniport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -147,24 +147,21 @@ The <i>OutMiniport</i> parameter follows the <a href="https://msdn.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcNewMiniport function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcNewMiniport function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
+<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
 
 <a href="..\portcls\nn-portcls-iminiport.md">IMiniport</a>
 
-<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
-
 <a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a>
+
+<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 
 <a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
 

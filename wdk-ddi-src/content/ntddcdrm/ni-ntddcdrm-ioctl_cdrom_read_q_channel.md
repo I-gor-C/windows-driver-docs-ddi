@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWRITE_ROTATION, WRITE_ROTATION"
+req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_READ_Q_CHANNEL IOCTL
@@ -84,9 +84,8 @@ Client applications should use the <i>Media Control Interface (MCI) API</i> rath
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Obsolete, beginning with Windows Vista. Obsolete, beginning with Windows Vista. |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
-| **IRQL** |  |
 
 ## See Also
 

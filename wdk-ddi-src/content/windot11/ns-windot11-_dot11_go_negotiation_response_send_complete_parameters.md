@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : CD60B160-89EF-4E87-8C41-E39760FC24F3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, windot11/PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, netvista.dot11_go_negotiation_response_send_complete_parameters, *PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS
+ms.keywords : netvista.dot11_go_negotiation_response_send_complete_parameters, PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, windot11/PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], _DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS
+req.typenames : "*PDOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_GO_NEGOTIATION_RESPONSE_SEND_COMPLETE_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -103,9 +103,7 @@ The offset, in bytes,  of the array of additional information elements (IEs) tha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

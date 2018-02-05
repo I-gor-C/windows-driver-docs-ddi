@@ -69,8 +69,7 @@ The <b>IWDFUsbTargetPipe</b> interface exposes a USB pipe (endpoint), which is a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h |
-| **DLL** | WUDFx.dll |

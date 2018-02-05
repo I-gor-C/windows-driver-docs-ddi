@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a6075509-1f88-4d24-8bac-2c7e047c8525
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID, stream.ksproperty_cameracontrol_video_stabilization_mode, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE enumeration [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID
+ms.keywords : ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE enumeration [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID, stream.ksproperty_cameracontrol_video_stabilization_mode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -62,9 +62,7 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

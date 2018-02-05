@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 24787963-98c6-4c32-9ba8-2cd4778f8436
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], GetProcessorTypeNamesWide method, GetProcessorTypeNamesWide method [Windows Debugging], debugger.getprocessortypenameswide, IDebugControl4, dbgeng/IDebugControl4::GetProcessorTypeNamesWide, GetProcessorTypeNamesWide, IDebugControl4::GetProcessorTypeNamesWide, GetProcessorTypeNamesWide method [Windows Debugging], IDebugControl4 interface
+ms.keywords : GetProcessorTypeNamesWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetProcessorTypeNamesWide method, GetProcessorTypeNamesWide method [Windows Debugging], IDebugControl4::GetProcessorTypeNamesWide, GetProcessorTypeNamesWide, debugger.getprocessortypenameswide, IDebugControl4, dbgeng/IDebugControl4::GetProcessorTypeNamesWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -126,14 +126,9 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

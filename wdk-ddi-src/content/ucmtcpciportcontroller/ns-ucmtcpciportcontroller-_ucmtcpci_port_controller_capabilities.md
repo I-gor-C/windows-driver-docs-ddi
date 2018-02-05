@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 829bb05b-5e2d-4aba-ab34-127812235f46
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucmtcpci_port_controller_capabilities, ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, _UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES structure [Buses], *PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES structure pointer [Buses], PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES
+ms.keywords : PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, _UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES structure pointer [Buses], *PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, buses.ucmtcpci_port_controller_capabilities, ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES structure [Buses], UCMTCPCI_PORT_CONTROLLER_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES"
+req.typenames : UCMTCPCI_PORT_CONTROLLER_CAPABILITIES, *PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES
 req.product : Windows 10 or later.
 ---
 
@@ -91,9 +91,6 @@ A
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucmtcpciportcontroller.h |
 
 ## See Also

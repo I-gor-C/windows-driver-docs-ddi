@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 881e85a2-4ba2-4940-94c0-61a2d335e52a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILPOSITIONINFO_V2, *LPRILPOSITIONINFO, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista], *LPRILPOSITIONINFO_V2, rilapitypes/RILPOSITIONINFO_V2, RILPOSITIONINFO, netvista.rilpositioninfo_v2
+ms.keywords : "*LPRILPOSITIONINFO_V2, RILPOSITIONINFO_V2, RILPOSITIONINFO, netvista.rilpositioninfo_v2, *LPRILPOSITIONINFO, rilapitypes/RILPOSITIONINFO_V2, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILPOSITIONINFO, *LPRILPOSITIONINFO, RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2
+req.typenames : RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO, *LPRILPOSITIONINFO
 req.product : Windows 10 or later.
 ---
 
@@ -135,9 +135,6 @@ UMTS serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilposit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

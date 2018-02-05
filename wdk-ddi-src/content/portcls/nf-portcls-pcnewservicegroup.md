@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9fcc8cee-61a1-417c-9e69-5c658dab80b2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcNewServiceGroup, audpc-routines_2164b9cd-1bb5-4e51-aa07-6ed9cb40e3fb.xml, audio.pcnewservicegroup, PcNewServiceGroup function [Audio Devices], portcls/PcNewServiceGroup
+ms.keywords : PcNewServiceGroup function [Audio Devices], audio.pcnewservicegroup, audpc-routines_2164b9cd-1bb5-4e51-aa07-6ed9cb40e3fb.xml, PcNewServiceGroup, portcls/PcNewServiceGroup
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -73,14 +73,11 @@ The <i>OutServiceGroup</i> and <i>OuterUnknown</i> parameters follow the <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcNewServiceGroup function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcNewServiceGroup function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d993117d-e8d4-4e00-bcb8-c83a15b6c037
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_obsoletefunctions_ef86ce33-1102-4045-b3ad-bba26bafd3de.xml, print.oemcommonuiprop, printoem/OEMCommonUIProp, OEMCommonUIProp, OEMCommonUIProp function [Print Devices]
+ms.keywords : OEMCommonUIProp function [Print Devices], printoem/OEMCommonUIProp, print.oemcommonuiprop, OEMCommonUIProp, print_obsoletefunctions_ef86ce33-1102-4045-b3ad-bba26bafd3de.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

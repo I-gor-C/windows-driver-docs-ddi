@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ebcbec0c-c5ee-4af1-be3c-36c730f82f4e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k103_bc20d667-b3c7-4e46-a21d-06123e73d348.xml, WRITE_REGISTER_USHORT routine [Kernel-Mode Driver Architecture], WRITE_REGISTER_USHORT, kernel.write_register_ushort, wdm/WRITE_REGISTER_USHORT
+ms.keywords : kernel.write_register_ushort, wdm/WRITE_REGISTER_USHORT, WRITE_REGISTER_USHORT, WRITE_REGISTER_USHORT routine [Kernel-Mode Driver Architecture], k103_bc20d667-b3c7-4e46-a21d-06123e73d348.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,11 +74,9 @@ Callers of <b>WRITE_REGISTER_USHORT</b> can be running at any IRQL, assuming the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |

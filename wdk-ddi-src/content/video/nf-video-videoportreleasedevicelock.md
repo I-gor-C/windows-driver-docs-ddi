@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 932953c3-828f-4dcd-918e-5b3b5d8def1c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportreleasedevicelock, VideoPortReleaseDeviceLock function [Display Devices], VideoPortReleaseDeviceLock, video/VideoPortReleaseDeviceLock, VideoPort_Functions_509d905b-a70f-4932-975f-62d4c90c77b9.xml
+ms.keywords : display.videoportreleasedevicelock, video/VideoPortReleaseDeviceLock, VideoPortReleaseDeviceLock function [Display Devices], VideoPort_Functions_509d905b-a70f-4932-975f-62d4c90c77b9.xml, VideoPortReleaseDeviceLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,20 +71,18 @@ The miniport driver should call <b>VideoPortReleaseDeviceLock</b> to release the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>
-
 <a href="..\video\nf-video-videoportacquiredevicelock.md">VideoPortAcquireDeviceLock</a>
+
+<a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a>
 
  
 

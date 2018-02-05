@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 23E99282-16BD-4E1E-9419-C1F44B913C4F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usb_hub_information_ex, *PUSB_HUB_INFORMATION_EX, usbioctl/PUSB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX structure [Buses], usbioctl/USB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX, PUSB_HUB_INFORMATION_EX structure pointer [Buses], PUSB_HUB_INFORMATION_EX, _USB_HUB_INFORMATION_EX
+ms.keywords : usbioctl/PUSB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX structure [Buses], buses.usb_hub_information_ex, PUSB_HUB_INFORMATION_EX structure pointer [Buses], PUSB_HUB_INFORMATION_EX, *PUSB_HUB_INFORMATION_EX, usbioctl/USB_HUB_INFORMATION_EX, _USB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,20 +73,18 @@ The type of hub: root hub, USB 2.0, or USB 3.0 hub. On successful completion of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also
 
-<a href="..\usbioctl\ne-usbioctl-_usb_hub_type.md">USB_HUB_TYPE</a>
-
-<a href="..\usbspec\ns-usbspec-_usb_hub_descriptor.md">USB_HUB_DESCRIPTOR</a>
-
 <a href="..\usbspec\ns-usbspec-_usb_30_hub_descriptor.md">USB_30_HUB_DESCRIPTOR</a>
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_information_ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_hub_descriptor.md">USB_HUB_DESCRIPTOR</a>
+
+<a href="..\usbioctl\ne-usbioctl-_usb_hub_type.md">USB_HUB_TYPE</a>
 
  
 

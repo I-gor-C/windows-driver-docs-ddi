@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 28f0e98f-1f7b-4dcf-8151-e13981634617
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlsupportsperfilecontexts, ntifs/FsRtlSupportsPerFileContexts, fsrtlref_98e99a7a-c80d-43d5-a0f6-3eea35a8d20a.xml, FsRtlSupportsPerFileContexts, FsRtlSupportsPerFileContexts function [Installable File System Drivers]
+ms.keywords : fsrtlref_98e99a7a-c80d-43d5-a0f6-3eea35a8d20a.xml, ifsk.fsrtlsupportsperfilecontexts, FsRtlSupportsPerFileContexts, ntifs/FsRtlSupportsPerFileContexts, FsRtlSupportsPerFileContexts function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -68,14 +68,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | ntifs.h |
 | **IRQL** | Any |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : b0ef1592-f3f3-4ca1-83f8-dc7cb76cda36
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/PosProfileType, pos.posprofiletype, PosProfileType structure, PosProfileType, _PosProfileType
+ms.keywords : PosProfileType, pos.posprofiletype, _PosProfileType, PosProfileType structure, pointofservicedriverinterface/PosProfileType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,7 +66,4 @@ The buffer of profile <i>PosStringType</i> strings follows this structure in mem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

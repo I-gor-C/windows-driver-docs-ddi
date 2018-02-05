@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b56657ac-98ff-482a-a2af-ffbfb8602248
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_TRANSFERFLAGS structure [Display Devices], display.dxgk_transferflags, _DXGK_TRANSFERFLAGS, d3dkmddi/DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS, DmStructs_91973ccf-775f-4e97-bb1a-17cd1343a4f8.xml
+ms.keywords : "_DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS, DmStructs_91973ccf-775f-4e97-bb1a-17cd1343a4f8.xml, display.dxgk_transferflags, d3dkmddi/DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,16 +67,14 @@ You can set the transfer-operation type by setting bits in the 32-bit <b>Value</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c76529fe-c808-4239-9bde-68dc68d987ec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltPerformAsynchronousIo function [Installable File System Drivers], FltApiRef_p_to_z_ed6cd087-6139-4280-aaf3-fe6f0d5b056a.xml, ifsk.fltperformasynchronousio, FltPerformAsynchronousIo, fltkernel/FltPerformAsynchronousIo
+ms.keywords : FltApiRef_p_to_z_ed6cd087-6139-4280-aaf3-fe6f0d5b056a.xml, fltkernel/FltPerformAsynchronousIo, FltPerformAsynchronousIo function [Installable File System Drivers], FltPerformAsynchronousIo, ifsk.fltperformasynchronousio
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -128,34 +128,31 @@ The caller of <b>FltPerformAsynchronousIo</b> can be running at IRQL &lt;= APC_L
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltreusecallbackdata.md">FltReuseCallbackData</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
 
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 
+<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a>
+
 <a href="..\fltkernel\nf-fltkernel-fltfreecallbackdata.md">FltFreeCallbackData</a>
 
-<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
 
-<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
+<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
 
  
 

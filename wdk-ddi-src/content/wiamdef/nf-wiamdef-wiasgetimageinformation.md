@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 457c4b98-313d-4b31-aa6c-fb62fea6fc7d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasGetImageInformation, image.wiasgetimageinformation, wiamdef/wiasGetImageInformation, wiasFncs_6603ae74-b0b9-48f4-9fa9-83cdf3edc1d6.xml, wiasGetImageInformation function [Imaging Devices]
+ms.keywords : wiasGetImageInformation, wiasGetImageInformation function [Imaging Devices], wiasFncs_6603ae74-b0b9-48f4-9fa9-83cdf3edc1d6.xml, wiamdef/wiasGetImageInformation, image.wiasgetimageinformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -99,14 +99,11 @@ If WIAS_INIT_CONTEXT is specified in the <i>lFlags</i> parameter, the MINIDRV_TR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 

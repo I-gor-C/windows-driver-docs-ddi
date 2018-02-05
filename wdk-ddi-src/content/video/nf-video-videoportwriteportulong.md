@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 395e4a37-ea14-4dc0-926d-2b2336aa5221
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortWritePortUlong function [Display Devices], VideoPort_Functions_83cb0bbd-0dba-4cd6-b9f5-b8b0091371cd.xml, video/VideoPortWritePortUlong, display.videoportwriteportulong, VideoPortWritePortUlong
+ms.keywords : VideoPortWritePortUlong function [Display Devices], VideoPortWritePortUlong, display.videoportwriteportulong, video/VideoPortWritePortUlong, VideoPort_Functions_83cb0bbd-0dba-4cd6-b9f5-b8b0091371cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ Callers of <b>VideoPortWritePortUlong</b> can be running at any IRQL, provided t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6620d6c8-2b8a-440e-acf4-fb08570b13bf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanSmsFlagMax, _WWAN_SMS_FLAG, WwanSmsFlagDraft, wwan/WwanSmsFlagOld, wwan/WwanSmsFlagMax, *PWWAN_SMS_FLAG, wwan/WwanSmsFlagSent, wwan/WwanSmsFlagAll, WwanSmsFlagAll, wwan/WWAN_SMS_FLAG, WwanSmsFlagOld, WwanSmsFlagIndex, wwan/WwanSmsFlagIndex, PWWAN_SMS_FLAG enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_SMS_FLAG, WWAN_SMS_FLAG enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_SMS_FLAG, WWAN_SMS_FLAG, WwanRef_379a284f-534f-4acb-88c7-d60f7627ab32.xml, wwan/WwanSmsFlagNew, wwan/WwanSmsFlagDraft, WwanSmsFlagNew, netvista.wwan_sms_flag, WwanSmsFlagSent
+ms.keywords : wwan/WWAN_SMS_FLAG, wwan/WwanSmsFlagIndex, PWWAN_SMS_FLAG enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanSmsFlagNew, wwan/WwanSmsFlagSent, wwan/PWWAN_SMS_FLAG, WWAN_SMS_FLAG, wwan/WwanSmsFlagMax, WwanSmsFlagDraft, *PWWAN_SMS_FLAG, wwan/WwanSmsFlagAll, PWWAN_SMS_FLAG, WWAN_SMS_FLAG enumeration [Network Drivers Starting with Windows Vista], WwanSmsFlagAll, WwanRef_379a284f-534f-4acb-88c7-d60f7627ab32.xml, _WWAN_SMS_FLAG, WwanSmsFlagMax, WwanSmsFlagNew, WwanSmsFlagIndex, netvista.wwan_sms_flag, wwan/WwanSmsFlagDraft, WwanSmsFlagOld, WwanSmsFlagSent, wwan/WwanSmsFlagOld
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -99,9 +99,7 @@ typedef enum _WWAN_SMS_FLAG {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

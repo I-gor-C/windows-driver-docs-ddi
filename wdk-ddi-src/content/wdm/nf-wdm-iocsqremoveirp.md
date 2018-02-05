@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 72a6327c-01b2-479c-a2eb-f58180193d50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCsqRemoveIrp, wdm/IoCsqRemoveIrp, IoCsqRemoveIrp routine [Kernel-Mode Driver Architecture], kernel.iocsqremoveirp, k104_9a940115-fcbd-4e46-b7a5-10dc7fad7bda.xml
+ms.keywords : IoCsqRemoveIrp, k104_9a940115-fcbd-4e46-b7a5-10dc7fad7bda.xml, kernel.iocsqremoveirp, IoCsqRemoveIrp routine [Kernel-Mode Driver Architecture], wdm/IoCsqRemoveIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,44 +92,42 @@ Callers of <b>IoCsqRemoveIrp</b> must be running at an IRQL &lt;= DISPATCH_LEVEL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Drivers that must also work in Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine. Available in Windows XP and later versions of Windows. Drivers that must also work in Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a>
-
-<a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a>
+<a href="..\wdm\nc-wdm-io_csq_acquire_lock.md">CsqAcquireLock</a>
 
 <a href="..\wdm\nc-wdm-io_csq_insert_irp.md">CsqInsertIrp</a>
 
-<a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>
-
-<a href="..\wdm\nc-wdm-io_csq_insert_irp_ex.md">CsqInsertIrpEx</a>
-
-<a href="..\wdm\nc-wdm-io_csq_complete_canceled_irp.md">CsqCompleteCanceledIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550567">IO_CSQ_IRP_CONTEXT</a>
 
 <a href="..\wdm\nf-wdm-iocsqinsertirp.md">IoCsqInsertIrp</a>
 
 <a href="..\wdm\nf-wdm-iocsqinitializeex.md">IoCsqInitializeEx</a>
 
+<a href="..\wdm\nc-wdm-io_csq_insert_irp_ex.md">CsqInsertIrpEx</a>
+
+<a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a>
+
+<a href="..\wdm\nc-wdm-io_csq_complete_canceled_irp.md">CsqCompleteCanceledIrp</a>
+
 <a href="..\wdm\nf-wdm-iocsqinsertirpex.md">IoCsqInsertIrpEx</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550567">IO_CSQ_IRP_CONTEXT</a>
-
-<a href="..\wdm\nc-wdm-io_csq_remove_irp.md">CsqRemoveIrp</a>
 
 <a href="..\wdm\nc-wdm-io_csq_release_lock.md">CsqReleaseLock</a>
 
+<a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a>
+
 <a href="..\wdm\nc-wdm-io_csq_peek_next_irp.md">CsqPeekNextIrp</a>
 
-<a href="..\wdm\nc-wdm-io_csq_acquire_lock.md">CsqAcquireLock</a>
+<a href="..\wdm\nc-wdm-io_csq_remove_irp.md">CsqRemoveIrp</a>
 
  
 

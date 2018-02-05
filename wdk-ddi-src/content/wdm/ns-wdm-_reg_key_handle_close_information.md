@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 023ca2d0-45a2-423e-bd88-e40792ef0e49
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kstruct_d_26822436-a385-4b98-8179-18c661ebdb1f.xml, kernel.reg_key_handle_close_information, REG_KEY_HANDLE_CLOSE_INFORMATION, *PREG_KEY_HANDLE_CLOSE_INFORMATION, PREG_KEY_HANDLE_CLOSE_INFORMATION, REG_KEY_HANDLE_CLOSE_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/REG_KEY_HANDLE_CLOSE_INFORMATION, _REG_KEY_HANDLE_CLOSE_INFORMATION, wdm/PREG_KEY_HANDLE_CLOSE_INFORMATION, PREG_KEY_HANDLE_CLOSE_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
+ms.keywords : REG_KEY_HANDLE_CLOSE_INFORMATION, PREG_KEY_HANDLE_CLOSE_INFORMATION, *PREG_KEY_HANDLE_CLOSE_INFORMATION, wdm/PREG_KEY_HANDLE_CLOSE_INFORMATION, REG_KEY_HANDLE_CLOSE_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_KEY_HANDLE_CLOSE_INFORMATION, PREG_KEY_HANDLE_CLOSE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/REG_KEY_HANDLE_CLOSE_INFORMATION, kernel.reg_key_handle_close_information, kstruct_d_26822436-a385-4b98-8179-18c661ebdb1f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,9 +77,7 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later versions of the Windows operating system. Available on Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

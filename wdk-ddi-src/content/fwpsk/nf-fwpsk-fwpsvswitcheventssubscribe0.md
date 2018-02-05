@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 479ff048-f57f-42ca-8787-f87ed055fdbf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsvSwitchEventsSubscribe0, FwpsvSwitchEventsSubscribe0, netvista.fwpsvswitcheventssubscribe0, FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista]
+ms.keywords : FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista], FwpsvSwitchEventsSubscribe0, fwpsk/FwpsvSwitchEventsSubscribe0, netvista.fwpsvswitcheventssubscribe0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -130,14 +130,11 @@ The callout driver must later call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

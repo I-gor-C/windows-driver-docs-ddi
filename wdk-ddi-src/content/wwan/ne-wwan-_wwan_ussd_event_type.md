@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : CEBC8A75-03E9-4E2A-9092-2FA3005371FE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_USSD_EVENT_TYPE, *PWWAN_USSD_EVENT_TYPE, wwan/WwanUssdEventNetworkTimeOut, wwan/WWAN_USSD_EVENT_TYPE, WwanUssdEventActionRequired, WwanUssdEventTerminated, WwanUssdEventNetworkTimeOut, wwan/WwanUssdEventActionRequired, _WWAN_USSD_EVENT_TYPE, wwan/WwanUssdEventNoActionRequired, wwan/WwanUssdEventOtherLocalClient, WwanUssdEventOperationNotSupported, netvista.wwan_ussd_event_type, WWAN_USSD_EVENT_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanUssdEventOtherLocalClient, wwan/WwanUssdEventOperationNotSupported, wwan/WwanUssdEventTerminated, WwanUssdEventNoActionRequired
+ms.keywords : WWAN_USSD_EVENT_TYPE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanUssdEventNoActionRequired, WwanUssdEventActionRequired, WwanUssdEventOtherLocalClient, wwan/WwanUssdEventOperationNotSupported, netvista.wwan_ussd_event_type, _WWAN_USSD_EVENT_TYPE, wwan/WWAN_USSD_EVENT_TYPE, WWAN_USSD_EVENT_TYPE, WwanUssdEventTerminated, wwan/WwanUssdEventOtherLocalClient, wwan/WwanUssdEventActionRequired, WwanUssdEventOperationNotSupported, wwan/WwanUssdEventNetworkTimeOut, WwanUssdEventNoActionRequired, *PWWAN_USSD_EVENT_TYPE, WwanUssdEventNetworkTimeOut, wwan/WwanUssdEventTerminated
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_USSD_EVENT_TYPE, WWAN_USSD_EVENT_TYPE"
+req.typenames : WWAN_USSD_EVENT_TYPE, *PWWAN_USSD_EVENT_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -100,9 +100,7 @@ The value of the <a href="..\wwan\ns-wwan-_wwan_ussd_event.md">WWAN_USSD_EVENT</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h |
 
 ## See Also

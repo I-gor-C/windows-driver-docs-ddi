@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 47c285fa-f53a-4e35-ad66-bf14dfc9f80e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS enumeration [Display Devices], d3d10umddi/D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS, d3d10umddi/D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN, D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN, display.d3d10_1_ddiarg_standard_multisample_quality_levels, UMDisplayDriver_Dx10param_Structs_b617a227-3358-4b23-918f-9603c8fed13e.xml, d3d10umddi/D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN
+ms.keywords : d3d10umddi/D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS, d3d10umddi/D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN, d3d10umddi/D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, D3D10_1_DDIARG_CENTER_MULTISAMPLE_PATTERN, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN, display.d3d10_1_ddiarg_standard_multisample_quality_levels, D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS enumeration [Display Devices], D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS, UMDisplayDriver_Dx10param_Structs_b617a227-3358-4b23-918f-9603c8fed13e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -73,9 +73,7 @@ For every sample count where D3D10_1_DDIARG_STANDARD_MULTISAMPLE_PATTERN is supp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions. D3D10_1_DDIARG_STANDARD_MULTISAMPLE_QUALITY_LEVELS is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

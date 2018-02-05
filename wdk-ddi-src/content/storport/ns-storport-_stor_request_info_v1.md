@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : CCC429B7-88BB-4DC3-86BC-6A5FCD405A5D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : REQUEST_INFO_NO_CACHE_FLAG, StorIoPriorityHigh, REQUEST_INFO_SEQUENTIAL_IO_FLAG, storport/PSTOR_REQUEST_INFO_V1, StorIoPriorityNormal, _STOR_REQUEST_INFO_V1 structure [Storage Devices], storage.stor_request_info, REQUEST_INFO_TEMPORARY_FLAG, PSTOR_REQUEST_INFO_V1 structure pointer [Storage Devices], STOR_REQUEST_INFO_V1 structure [Storage Devices], STOR_REQUEST_INFO_V1, StorIoPriorityVeryLow, StorIoPriorityLow, _STOR_REQUEST_INFO_V1, PSTOR_REQUEST_INFO_V1, StorIoPriorityCritical, REQUEST_INFO_PAGING_IO_FLAG, *PSTOR_REQUEST_INFO_V1, REQUEST_INFO_WRITE_THROUGH_FLAG, storport/_STOR_REQUEST_INFO_V1
+ms.keywords : storport/PSTOR_REQUEST_INFO_V1, PSTOR_REQUEST_INFO_V1 structure pointer [Storage Devices], storage.stor_request_info, StorIoPriorityVeryLow, StorIoPriorityLow, PSTOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1, REQUEST_INFO_TEMPORARY_FLAG, STOR_REQUEST_INFO_V1, _STOR_REQUEST_INFO_V1, storport/_STOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1 structure [Storage Devices], StorIoPriorityNormal, StorIoPriorityHigh, StorIoPriorityCritical, REQUEST_INFO_SEQUENTIAL_IO_FLAG, REQUEST_INFO_WRITE_THROUGH_FLAG, REQUEST_INFO_NO_CACHE_FLAG, REQUEST_INFO_PAGING_IO_FLAG, _STOR_REQUEST_INFO_V1 structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1
+req.typenames : "*PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1"
 req.product : Windows 10 or later.
 ---
 
@@ -215,9 +215,7 @@ The caller to <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

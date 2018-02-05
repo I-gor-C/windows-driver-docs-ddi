@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f50ee559-3df7-4e15-b5a6-d6b85277c461
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET, kmdf.wdf_usb_control_setup_packet, PWDF_USB_CONTROL_SETUP_PACKET, DFUsbRef_d563752f-cbb6-4b63-9322-2bb0dc96d855.xml, wdfusb/PWDF_USB_CONTROL_SETUP_PACKET, _WDF_USB_CONTROL_SETUP_PACKET, wdf.wdf_usb_control_setup_packet, WDF_USB_CONTROL_SETUP_PACKET, PWDF_USB_CONTROL_SETUP_PACKET union pointer, WDF_USB_CONTROL_SETUP_PACKET union
+ms.keywords : "_WDF_USB_CONTROL_SETUP_PACKET, PWDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET, kmdf.wdf_usb_control_setup_packet, PWDF_USB_CONTROL_SETUP_PACKET union pointer, wdfusb/PWDF_USB_CONTROL_SETUP_PACKET, wdf.wdf_usb_control_setup_packet, WDF_USB_CONTROL_SETUP_PACKET union, wdfusb/WDF_USB_CONTROL_SETUP_PACKET, DFUsbRef_d563752f-cbb6-4b63-9322-2bb0dc96d855.xml, WDF_USB_CONTROL_SETUP_PACKET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_USB_CONTROL_SETUP_PACKET, *PWDF_USB_CONTROL_SETUP_PACKET
+req.typenames : "*PWDF_USB_CONTROL_SETUP_PACKET, WDF_USB_CONTROL_SETUP_PACKET"
 req.product : Windows 10 or later.
 ---
 
@@ -131,22 +131,21 @@ To initialize a <b>WDF_USB_CONTROL_SETUP_PACKET</b> structure, the driver should
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
+
+<a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>
 
 <a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_type.md">WDF_USB_BMREQUEST_TYPE</a>
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicesendcontroltransfersynchronously.md">WdfUsbTargetDeviceSendControlTransferSynchronously</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforcontroltransfer.md">WdfUsbTargetDeviceFormatRequestForControlTransfer</a>
 
 <a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_direction.md">WDF_USB_BMREQUEST_DIRECTION</a>
-
-<a href="..\wdfusb\ne-wdfusb-_wdf_usb_bmrequest_recipient.md">WDF_USB_BMREQUEST_RECIPIENT</a>
 
  
 

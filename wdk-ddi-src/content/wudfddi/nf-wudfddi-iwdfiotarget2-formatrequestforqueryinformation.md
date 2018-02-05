@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 24ce2918-1d9f-41eb-add1-a50b888f0a99
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : FormatRequestForQueryInformation method, IWDFIoTarget2 interface, IWDFIoTarget2::FormatRequestForQueryInformation, FormatRequestForQueryInformation method, IWDFIoTarget2, wudfddi/IWDFIoTarget2::FormatRequestForQueryInformation, IWDFIoTarget2 interface, FormatRequestForQueryInformation method, FormatRequestForQueryInformation, umdf.iwdfiotarget2_formatrequestforqueryinformation, UMDFIoTargetObjectRef_8057f7bc-65c3-491b-9aa3-a5fc9e790524.xml, wdf.iwdfiotarget2_formatrequestforqueryinformation
+ms.keywords : IWDFIoTarget2, IWDFIoTarget2 interface, FormatRequestForQueryInformation method, IWDFIoTarget2::FormatRequestForQueryInformation, UMDFIoTargetObjectRef_8057f7bc-65c3-491b-9aa3-a5fc9e790524.xml, wdf.iwdfiotarget2_formatrequestforqueryinformation, umdf.iwdfiotarget2_formatrequestforqueryinformation, FormatRequestForQueryInformation method, IWDFIoTarget2 interface, FormatRequestForQueryInformation method, wudfddi/IWDFIoTarget2::FormatRequestForQueryInformation, FormatRequestForQueryInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,7 @@ A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest<
 
 `InformationClass`
 
-A <a href="..\wdffileobject\ne-wdffileobject-_wdf_file_information_class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value that specifies the type of information to obtain.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_file_information_class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value that specifies the type of information to obtain.
 
 `pFile`
 
@@ -110,14 +110,12 @@ Use the <b>FormatRequestForQueryInformation</b> method, followed by the <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

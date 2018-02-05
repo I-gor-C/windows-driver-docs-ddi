@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO"
+req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -101,22 +101,18 @@ For more information about the <i>EvtIoAllocateResourcesForReservedRequest</i> c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestisreserved.md">WdfRequestIsReserved</a>
 
 <a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
 
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_allocate_request_resources.md">EvtIoAllocateRequestResources</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestisreserved.md">WdfRequestIsReserved</a>
 
  
 

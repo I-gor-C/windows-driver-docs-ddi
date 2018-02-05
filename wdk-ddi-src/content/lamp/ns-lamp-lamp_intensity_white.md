@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : BDE53311-589F-4458-9510-1B02F1BD0289
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : lamp/LAMP_INTENSITY_WHITE, LAMP_INTENSITY_WHITE structure [Streaming Media Devices], LAMP_INTENSITY_WHITE, stream.lamp_intensity_white
+ms.keywords : LAMP_INTENSITY_WHITE, lamp/LAMP_INTENSITY_WHITE, LAMP_INTENSITY_WHITE structure [Streaming Media Devices], stream.lamp_intensity_white
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,4 @@ White light intensity in percentage (0-100).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | lamp.h |

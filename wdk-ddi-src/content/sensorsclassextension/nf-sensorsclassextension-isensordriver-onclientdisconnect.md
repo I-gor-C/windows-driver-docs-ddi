@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 9484610b-4cbd-4c4e-9e60-ef052702325c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : OnClientDisconnect, ISensorDriver, sensors.isensordriver_onclientdisconnect, OnClientDisconnect method [Sensor Devices], sensorsclassextension/ISensorDriver::OnClientDisconnect, ISensorDriver interface [Sensor Devices], OnClientDisconnect method, Sensor_IFaces_f5f91a04-84b3-4302-9c26-845281651ed9.xml, ISensorDriver::OnClientDisconnect, OnClientDisconnect method [Sensor Devices], ISensorDriver interface
+ms.keywords : ISensorDriver, OnClientDisconnect, sensorsclassextension/ISensorDriver::OnClientDisconnect, ISensorDriver::OnClientDisconnect, sensors.isensordriver_onclientdisconnect, ISensorDriver interface [Sensor Devices], OnClientDisconnect method, OnClientDisconnect method [Sensor Devices], ISensorDriver interface, OnClientDisconnect method [Sensor Devices], Sensor_IFaces_f5f91a04-84b3-4302-9c26-845281651ed9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,14 +90,10 @@ For more information about how to use this method, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
+| **Target Platform** | Desktop |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0952f6ab-6d57-4ded-b167-74a7ace47961
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportdeleteevent, VideoPortDeleteEvent function [Display Devices], video/VideoPortDeleteEvent, VideoPortDeleteEvent, VideoPort_Functions_66e14d53-8a5e-4322-8576-4ac06230db31.xml
+ms.keywords : VideoPort_Functions_66e14d53-8a5e-4322-8576-4ac06230db31.xml, video/VideoPortDeleteEvent, VideoPortDeleteEvent function [Display Devices], VideoPortDeleteEvent, display.videoportdeleteevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ This function should not be used to delete a mapped user event. To delete a mapp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

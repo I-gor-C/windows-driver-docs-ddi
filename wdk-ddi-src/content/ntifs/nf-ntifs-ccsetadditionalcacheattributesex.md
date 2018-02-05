@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 187719CD-5F0C-4AFD-BC00-ECD3C29A118F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/CcSetAdditionalCacheAttributesEx, ifsk.ccsetadditionalcacheattributesex, CcSetAdditionalCacheAttributesEx routine [Installable File System Drivers], CcSetAdditionalCacheAttributesEx
+ms.keywords : CcSetAdditionalCacheAttributesEx, ntifs/CcSetAdditionalCacheAttributesEx, ifsk.ccsetadditionalcacheattributesex, CcSetAdditionalCacheAttributesEx routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

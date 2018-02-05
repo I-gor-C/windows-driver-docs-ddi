@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8ee28daf-2719-42bc-ab2e-6dcfa7f0e04b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NdisReceiveQueueTypeVMQueue, NdisReceiveQueueTypeMaximum, ntddndis/NdisReceiveQueueTypeMaximum, ntddndis/PNDIS_RECEIVE_QUEUE_TYPE, PNDIS_RECEIVE_QUEUE_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NdisReceiveQueueTypeUnspecified, _NDIS_RECEIVE_QUEUE_TYPE, NdisReceiveQueueTypeVMQueue, ntddndis/NDIS_RECEIVE_QUEUE_TYPE, ntddndis/NdisReceiveQueueTypeUnspecified, PNDIS_RECEIVE_QUEUE_TYPE, NDIS_RECEIVE_QUEUE_TYPE, netvista.ndis_receive_queue_type, *PNDIS_RECEIVE_QUEUE_TYPE, virtual_machine_queue_ref_b51e0e9c-353e-40a1-b466-3136db1fcdd9.xml, NDIS_RECEIVE_QUEUE_TYPE enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisReceiveQueueTypeMaximum, NdisReceiveQueueTypeUnspecified, *PNDIS_RECEIVE_QUEUE_TYPE, ntddndis/PNDIS_RECEIVE_QUEUE_TYPE, _NDIS_RECEIVE_QUEUE_TYPE, netvista.ndis_receive_queue_type, ntddndis/NdisReceiveQueueTypeVMQueue, NDIS_RECEIVE_QUEUE_TYPE, ntddndis/NDIS_RECEIVE_QUEUE_TYPE, NDIS_RECEIVE_QUEUE_TYPE enumeration [Network Drivers Starting with Windows Vista], virtual_machine_queue_ref_b51e0e9c-353e-40a1-b466-3136db1fcdd9.xml, ntddndis/NdisReceiveQueueTypeUnspecified, ntddndis/NdisReceiveQueueTypeMaximum, PNDIS_RECEIVE_QUEUE_TYPE, PNDIS_RECEIVE_QUEUE_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NdisReceiveQueueTypeVMQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,17 +75,15 @@ typedef enum _NDIS_RECEIVE_QUEUE_TYPE {
 
 The NDIS_RECEIVE_QUEUE_TYPE enumeration is used in the 
     <b>QueueType</b> member of the 
-    <mshelp:link keywords="netvista.ndis_receive_queue_parameters" tabindex="0"><b>
-    NDIS_RECEIVE_QUEUE_PARAMETERS</b></mshelp:link> and 
-    <mshelp:link keywords="netvista.ndis_receive_queue_info" tabindex="0"><b>
-    NDIS_RECEIVE_QUEUE_INFO</b></mshelp:link> structures.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_parameters.md">
+    NDIS_RECEIVE_QUEUE_PARAMETERS</a> and 
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info.md">
+    NDIS_RECEIVE_QUEUE_INFO</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 59C1BBEF-ECC8-4852-B2E2-75751B5B25B2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.irb_req_set_local_host_properties, IRB_REQ_SET_LOCAL_HOST_PROPERTIES, _IRB_REQ_SET_LOCAL_HOST_PROPERTIES, 1394/IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure [Buses]
+ms.keywords : IEEE.irb_req_set_local_host_properties, IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure [Buses], _IRB_REQ_SET_LOCAL_HOST_PROPERTIES, 1394/IRB_REQ_SET_LOCAL_HOST_PROPERTIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -116,7 +116,4 @@ Used to add or remove unit directories. This request cannot be used to modify in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

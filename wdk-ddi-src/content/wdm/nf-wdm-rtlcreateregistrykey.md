@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2214acc8-b24a-4db4-9ce3-f639291428f2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_9a163bcc-501d-453b-b426-a4267d04135c.xml, kernel.rtlcreateregistrykey, RtlCreateRegistryKey routine [Kernel-Mode Driver Architecture], wdm/RtlCreateRegistryKey, RtlCreateRegistryKey
+ms.keywords : kernel.rtlcreateregistrykey, RtlCreateRegistryKey, wdm/RtlCreateRegistryKey, RtlCreateRegistryKey routine [Kernel-Mode Driver Architecture], k109_9a163bcc-501d-453b-b426-a4267d04135c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -140,20 +140,18 @@ Specifies the registry path according to the <i>RelativeTo</i> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
 
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
 
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
@@ -161,7 +159,7 @@ Specifies the registry path according to the <i>RelativeTo</i> value.
 
 <a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
 
-<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
 
  
 

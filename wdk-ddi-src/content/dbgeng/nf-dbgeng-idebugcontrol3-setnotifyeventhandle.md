@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0c0059a7-4b0f-4b74-b543-ad5904d40033
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, SetNotifyEventHandle method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], SetNotifyEventHandle method, IDebugControl2::SetNotifyEventHandle, dbgeng/IDebugControl2::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], SetNotifyEventHandle method, IDebugControl::SetNotifyEventHandle, IDebugControl3::SetNotifyEventHandle, IDebugControl_9934efa7-aed4-4706-8885-71d78f6950a8.xml, SetNotifyEventHandle, IDebugControl3 interface [Windows Debugging], SetNotifyEventHandle method, dbgeng/IDebugControl3::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], SetNotifyEventHandle method [Windows Debugging], IDebugControl3 interface, debugger.setnotifyeventhandle, dbgeng/IDebugControl::SetNotifyEventHandle
+ms.keywords : IDebugControl2 interface [Windows Debugging], SetNotifyEventHandle method, SetNotifyEventHandle method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::SetNotifyEventHandle, IDebugControl2::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3 interface [Windows Debugging], SetNotifyEventHandle method, SetNotifyEventHandle, IDebugControl::SetNotifyEventHandle, debugger.setnotifyeventhandle, SetNotifyEventHandle method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], dbgeng/IDebugControl2::SetNotifyEventHandle, IDebugControl interface [Windows Debugging], SetNotifyEventHandle method, IDebugControl3::SetNotifyEventHandle, IDebugControl_9934efa7-aed4-4706-8885-71d78f6950a8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,24 +87,19 @@ The event will only be signaled once.  After it has been signaled, <b>GetNotifyE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556739">SetNotifyEventHandle</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556739">SetNotifyEventHandle</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

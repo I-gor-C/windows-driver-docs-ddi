@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bfeec8b1-48fb-420e-b602-699a5f2d659a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioallocatecontroller, IoAllocateController, k104_b550c6ff-9d5c-4497-98bb-6781b4e6abd8.xml, IoAllocateController routine [Kernel-Mode Driver Architecture], ntddk/IoAllocateController
+ms.keywords : ntddk/IoAllocateController, k104_b550c6ff-9d5c-4497-98bb-6781b4e6abd8.xml, kernel.ioallocatecontroller, IoAllocateController routine [Kernel-Mode Driver Architecture], IoAllocateController
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,19 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">Contr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | IrqlDispatch, HwStorPortProhibitedDDIs, IrqlDispatch(storport), SpNoWait, StorPortStartIo |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
-
 <a href="..\ntddk\nf-ntddk-iocreatecontroller.md">IoCreateController</a>
+
+<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
 
 <a href="..\ntddk\nf-ntddk-iofreecontroller.md">IoFreeController</a>
 

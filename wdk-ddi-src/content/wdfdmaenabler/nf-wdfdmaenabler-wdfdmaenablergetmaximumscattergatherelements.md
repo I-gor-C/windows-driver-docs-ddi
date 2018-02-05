@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : de02d40d-3438-4a34-9e2b-07a7d9c4c8ac
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaEnablerGetMaximumScatterGatherElements, wdfdmaenabler/WdfDmaEnablerGetMaximumScatterGatherElements, DFDmaObjectRef_34ec0aef-b846-4b23-b9b3-01e8834821f7.xml, wdf.wdfdmaenablergetmaximumscattergatherelements, PFN_WDFDMAENABLERGETMAXIMUMSCATTERGATHERELEMENTS, kmdf.wdfdmaenablergetmaximumscattergatherelements, WdfDmaEnablerGetMaximumScatterGatherElements method
+ms.keywords : PFN_WDFDMAENABLERGETMAXIMUMSCATTERGATHERELEMENTS, DFDmaObjectRef_34ec0aef-b846-4b23-b9b3-01e8834821f7.xml, wdfdmaenabler/WdfDmaEnablerGetMaximumScatterGatherElements, kmdf.wdfdmaenablergetmaximumscattergatherelements, wdf.wdfdmaenablergetmaximumscattergatherelements, WdfDmaEnablerGetMaximumScatterGatherElements, WdfDmaEnablerGetMaximumScatterGatherElements method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,10 @@ For more information about this method, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

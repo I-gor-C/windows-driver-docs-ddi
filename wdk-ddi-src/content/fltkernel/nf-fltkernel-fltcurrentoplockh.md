@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ee066013-99fb-4a43-82f9-edbad7b5a8e9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_0abdd89d-fe36-4546-a3bd-87d7d132f73e.xml, fltkernel/FltCurrentOplockH, ifsk.fltcurrentoplockh, FltCurrentOplockH, FltCurrentOplockH routine [Installable File System Drivers]
+ms.keywords : ifsk.fltcurrentoplockh, FltApiRef_a_to_d_0abdd89d-fe36-4546-a3bd-87d7d132f73e.xml, fltkernel/FltCurrentOplockH, FltCurrentOplockH routine [Installable File System Drivers], FltCurrentOplockH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,20 +70,17 @@ For more information about opportunistic locks, see the Microsoft Windows SDK do
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FltCurrentOplockH routine is available starting with Windows 7. The FltCurrentOplockH routine is available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
-
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentoplockh.md">FsRtlCurrentOplockH</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
 
  
 

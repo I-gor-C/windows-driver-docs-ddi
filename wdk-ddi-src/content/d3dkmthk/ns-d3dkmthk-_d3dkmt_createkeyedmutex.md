@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ab028faf-d3f7-4267-81c7-7ababe845667
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEKEYEDMUTEX, display.d3dkmt_createkeyedmutex, D3DKMT_CREATEKEYEDMUTEX structure [Display Devices], _D3DKMT_CREATEKEYEDMUTEX, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX, OpenGL_Structs_6ab1fe5f-9963-46ab-946d-689d74c70d11.xml
+ms.keywords : "_D3DKMT_CREATEKEYEDMUTEX, D3DKMT_CREATEKEYEDMUTEX, OpenGL_Structs_6ab1fe5f-9963-46ab-946d-689d74c70d11.xml, D3DKMT_CREATEKEYEDMUTEX structure [Display Devices], d3dkmthk/D3DKMT_CREATEKEYEDMUTEX, display.d3dkmt_createkeyedmutex"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMT_CREATEKEYEDMUTEX is supported beginning with the Windows 7 operating system. D3DKMT_CREATEKEYEDMUTEX is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

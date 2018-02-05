@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 28aef1bd-915a-4f05-a4b0-bec63ddfdfb5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wdi_frame_payload_type, dot11wdi/WDI_FRAME_MSDU, WDI_FRAME_PAYLOAD_TYPE enumeration [Network Drivers Starting with Windows Vista], WDI_FRAME_MSDU, _WDI_FRAME_PAYLOAD_TYPE, dot11wdi/WDI_FRAME_PAYLOAD_TYPE, dot11wdi/WDI_FRAME_MSDU_FRAGMENT, WDI_FRAME_PAYLOAD_TYPE, WDI_FRAME_MSDU_FRAGMENT, netvista.wifi_frame_payload_type
+ms.keywords : WDI_FRAME_MSDU_FRAGMENT, _WDI_FRAME_PAYLOAD_TYPE, dot11wdi/WDI_FRAME_MSDU, WDI_FRAME_PAYLOAD_TYPE, netvista.wifi_frame_payload_type, dot11wdi/WDI_FRAME_MSDU_FRAGMENT, dot11wdi/WDI_FRAME_PAYLOAD_TYPE, netvista.wdi_frame_payload_type, WDI_FRAME_PAYLOAD_TYPE enumeration [Network Drivers Starting with Windows Vista], WDI_FRAME_MSDU
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,5 @@ typedef enum _WDI_FRAME_PAYLOAD_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |

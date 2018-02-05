@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2f7e2c4f-56bc-4efd-8911-5161b657dbea
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILMSGCLASS, ntddrilapitypes/RIL_MSGCLASS_INCOMING, ntddrilapitypes/RILMSGCLASS, ntddrilapitypes/RIL_MSGCLASS_BROADCAST, RIL_MSGCLASS_BROADCAST, RIL_MSGCLASS_INCOMING, RIL_MSGCLASS_ALL, RIL_MSGCLASS_OUTGOING, RILMSGCLASS enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_MSGCLASS_OUTGOING, ntddrilapitypes/RIL_MSGCLASS_ALL, netvista.rilmsgclass
+ms.keywords : RIL_MSGCLASS_OUTGOING, ntddrilapitypes/RIL_MSGCLASS_OUTGOING, ntddrilapitypes/RILMSGCLASS, netvista.rilmsgclass, RILMSGCLASS enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_MSGCLASS_BROADCAST, RILMSGCLASS, ntddrilapitypes/RIL_MSGCLASS_INCOMING, RIL_MSGCLASS_ALL, RIL_MSGCLASS_BROADCAST, RIL_MSGCLASS_INCOMING, ntddrilapitypes/RIL_MSGCLASS_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILMSGCLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

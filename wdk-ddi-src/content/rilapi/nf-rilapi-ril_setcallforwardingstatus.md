@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c73e3b75-e11d-44b8-9a4a-c98ccfe1c820
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_SetCallForwardingStatus, RIL_SetCallForwardingStatus method [Network Drivers Starting with Windows Vista], netvista.ril_setcallforwardingstatus, RIL_SetCallForwardingStatus
+ms.keywords : rilapi/RIL_SetCallForwardingStatus, RIL_SetCallForwardingStatus method [Network Drivers Starting with Windows Vista], RIL_SetCallForwardingStatus, netvista.ril_setcallforwardingstatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

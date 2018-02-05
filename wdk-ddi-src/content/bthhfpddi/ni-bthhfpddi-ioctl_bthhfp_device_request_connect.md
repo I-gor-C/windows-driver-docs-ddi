@@ -74,9 +74,8 @@ The audio driver sends this request from its handler for the <a href="https://ms
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | bthhfpddi.h |
-| **IRQL** |  |
 
 ## See Also
 

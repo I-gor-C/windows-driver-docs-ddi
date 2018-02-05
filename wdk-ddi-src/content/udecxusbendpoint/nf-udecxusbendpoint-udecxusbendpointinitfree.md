@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F95BDA95-4667-4EC3-9FE5-C78B453AC0B3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUsbEndpointInitFree, buses.udecxusbendpointinitfree, udecxusbendpoint/UdecxUsbEndpointInitFree, UdecxUsbEndpointInitFree function [Buses]
+ms.keywords : UdecxUsbEndpointInitFree, UdecxUsbEndpointInitFree function [Buses], udecxusbendpoint/UdecxUsbEndpointInitFree, buses.udecxusbendpointinitfree
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,22 +66,20 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbendpoint.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
 <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 84d359db-08d7-4f42-b912-02f3d483aa05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fsrtlref_2ff0b1e9-cbe5-46be-b571-3a328284b14d.xml, ifsk.fsrtlremoveperfileobjectcontext, FsRtlRemovePerFileObjectContext, FsRtlRemovePerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlRemovePerFileObjectContext
+ms.keywords : fsrtlref_2ff0b1e9-cbe5-46be-b571-3a328284b14d.xml, FsRtlRemovePerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlRemovePerFileObjectContext, ifsk.fsrtlremoveperfileobjectcontext, FsRtlRemovePerFileObjectContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,22 +86,20 @@ To retrieve a per-file-object context structure that is associated with a file o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Fltkernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md">FsRtlLookupPerFileObjectContext</a>
 
 <a href="..\ntifs\ns-ntifs-_fsrtl_per_fileobject_context.md">FSRTL_PER_FILEOBJECT_CONTEXT</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
 
 <a href="..\ntifs\nf-ntifs-fsrtlinsertperfileobjectcontext.md">FsRtlInsertPerFileObjectContext</a>
 

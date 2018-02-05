@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f378a30f-7e6b-4c81-b98b-a5b40e9a1a17
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_2abf2438-6849-4069-8571-7d24d348056f.xml, kernel.kesynchronizeexecution, KeSynchronizeExecution, KeSynchronizeExecution routine [Kernel-Mode Driver Architecture], wdm/KeSynchronizeExecution
+ms.keywords : k105_2abf2438-6849-4069-8571-7d24d348056f.xml, KeSynchronizeExecution, KeSynchronizeExecution routine [Kernel-Mode Driver Architecture], wdm/KeSynchronizeExecution, kernel.kesynchronizeexecution
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,12 @@ Starting with Windows 8, a driver can call <b>KeSynchronizeExecution</b> to syn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DIRQL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

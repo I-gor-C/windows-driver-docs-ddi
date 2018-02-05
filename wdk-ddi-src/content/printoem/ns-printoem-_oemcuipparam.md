@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 178b635c-0916-44f5-87a3-a2766601dcab
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_OEMCUIPPARAM, printoem/OEMCUIPPARAM, OEMCUIPPARAM, *POEMCUIPPARAM, print_unidrv-pscript_ui_6ea92d10-0152-4bb2-a79b-0f6c29507e8c.xml, OEMCUIPPARAM structure [Print Devices], print.oemcuipparam"
+ms.keywords : printoem/OEMCUIPPARAM, *POEMCUIPPARAM, print.oemcuipparam, _OEMCUIPPARAM, print_unidrv-pscript_ui_6ea92d10-0152-4bb2-a79b-0f6c29507e8c.xml, OEMCUIPPARAM structure [Print Devices], OEMCUIPPARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OEMCUIPPARAM, *POEMCUIPPARAM
+req.typenames : "*POEMCUIPPARAM, OEMCUIPPARAM"
 req.product : Windows 10 or later.
 ---
 
@@ -153,7 +153,4 @@ For additional information about the use of this structure and associated functi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |

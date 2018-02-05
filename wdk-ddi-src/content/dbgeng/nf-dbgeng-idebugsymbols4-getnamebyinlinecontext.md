@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : C87E70ED-FCB0-47B6-B6A3-A8EBC8E84058
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols4::GetNameByInlineContext, GetNameByInlineContext method [Windows Debugging], GetNameByInlineContext method [Windows Debugging], IDebugSymbols4 interface, IDebugSymbols4, GetNameByInlineContext, IDebugSymbols4 interface [Windows Debugging], GetNameByInlineContext method, dbgeng/IDebugSymbols4::GetNameByInlineContext, debugger.idebugsymbols4_getnamebyinlinecontext
+ms.keywords : IDebugSymbols4 interface [Windows Debugging], GetNameByInlineContext method, IDebugSymbols4::GetNameByInlineContext, GetNameByInlineContext, IDebugSymbols4, GetNameByInlineContext method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetNameByInlineContext, debugger.idebugsymbols4_getnamebyinlinecontext, GetNameByInlineContext method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,14 +90,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B6F8663C-3A13-45DA-80FE-CC8B9194D083
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : iointex/IoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx, iointex/WdmlibIoDisconnectInterruptEx, IoDisconnectInterruptEx, kernel.wdmlibiodisconnectinterruptex, WdmlibIoDisconnectInterruptEx function [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.wdmlibiodisconnectinterruptex, iointex/IoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx, IoDisconnectInterruptEx, iointex/WdmlibIoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ The driver should configure the device to issue interrupts only when these inter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Drivers that must also work Microsoft Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine. Available starting with Windows Vista. Drivers that must also work Microsoft Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine. |
+| **Target Platform** | Universal |
 | **Header** | iointex.h (include Iointex.h, Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib; Iointex.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

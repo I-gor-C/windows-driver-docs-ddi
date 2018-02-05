@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8ec0a052-2327-41e5-a9fa-83bcac9566f7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_IPSEC_OFFLOAD_V1, IPSEC_TPT_UDPESP_ENCAPTYPE_IKE, ntddndis/NDIS_IPSEC_OFFLOAD_V1, IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_IKE, NDIS_IPSEC_OFFLOAD_V1 structure [Network Drivers Starting with Windows Vista], IPSEC_TPT_UDPESP_ENCAPTYPE_OTHER, IPSEC_TUN_UDPESP_ENCAPTYPE_OTHER, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_OTHER, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_IKE, tcpip_offload_ref_8e1eae6b-44e5-425b-8312-ec890b8eb757.xml, PNDIS_IPSEC_OFFLOAD_V1 structure pointer [Network Drivers Starting with Windows Vista], IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_OTHER, netvista.ndis_ipsec_offload_v1, NDIS_IPSEC_OFFLOAD_V1, IPSEC_TUN_UDPESP_ENCAPTYPE_IKE, *PNDIS_IPSEC_OFFLOAD_V1, _NDIS_IPSEC_OFFLOAD_V1, PNDIS_IPSEC_OFFLOAD_V1
+ms.keywords : IPSEC_TPT_UDPESP_ENCAPTYPE_OTHER, IPSEC_TPT_UDPESP_ENCAPTYPE_IKE, _NDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1 structure [Network Drivers Starting with Windows Vista], tcpip_offload_ref_8e1eae6b-44e5-425b-8312-ec890b8eb757.xml, ntddndis/NDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1, *PNDIS_IPSEC_OFFLOAD_V1, PNDIS_IPSEC_OFFLOAD_V1, IPSEC_TUN_UDPESP_ENCAPTYPE_IKE, netvista.ndis_ipsec_offload_v1, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_OTHER, ntddndis/PNDIS_IPSEC_OFFLOAD_V1, PNDIS_IPSEC_OFFLOAD_V1 structure pointer [Network Drivers Starting with Windows Vista], IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_IKE, IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_OTHER, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_IKE, IPSEC_TUN_UDPESP_ENCAPTYPE_OTHER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_IPSEC_OFFLOAD_V1, *PNDIS_IPSEC_OFFLOAD_V1
+req.typenames : "*PNDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1"
 ---
 
 # _NDIS_IPSEC_OFFLOAD_V1 structure
@@ -102,37 +102,37 @@ The <b>NDIS_IPSEC_OFFLOAD_V1</b> structure is used in the
 
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> is used in the 
-    <mshelp:link keywords="netvista.ndis_miniport_adapter_offload_attributes" tabindex="0"><b>
-    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</b></mshelp:link> structure, 
+    <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
+    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure, 
     <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a> structure, 
-    <mshelp:link keywords="netvista.ndis_filter_attach_parameters" tabindex="0"><b>
-    NDIS_FILTER_ATTACH_PARAMETERS</b></mshelp:link> structure, 
-    <mshelp:link keywords="netvista.oid_tcp_offload_current_config" tabindex="0">
-    OID_TCP_OFFLOAD_CURRENT_CONFIG</mshelp:link> OID, and the 
-    <mshelp:link keywords="netvista.ndis_status_task_offload_current_config" tabindex="0"><b>
-    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</b></mshelp:link> status indication.
+    <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
+    NDIS_FILTER_ATTACH_PARAMETERS</a> structure, 
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-offload-current-config">
+    OID_TCP_OFFLOAD_CURRENT_CONFIG</a> OID, and the 
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567424">
+    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication.
 
 For 
     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-offload-current-config">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>,
     the <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure specifies the task offload capabilities that a miniport adapter supports. If
     the current offloads capabilities change, a miniport driver reports the new capabilities in an 
-    <mshelp:link keywords="netvista.ndis_status_task_offload_current_config" tabindex="0"><b>
-    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</b></mshelp:link> status indication.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567424">
+    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication.
 
 The 
     <b>Encapsulation</b> member of <b>NDIS_IPSEC_OFFLOAD_V1</b> defines the IPsec offload encapsulation settings for
     the miniport adapter.
 
 In response to an 
-    <mshelp:link keywords="netvista.oid_tcp_offload_current_config" tabindex="0">
-    OID_TCP_OFFLOAD_CURRENT_CONFIG</mshelp:link> query request, NDIS provides a bitwise OR of the encapsulation
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-offload-current-config">
+    OID_TCP_OFFLOAD_CURRENT_CONFIG</a> query request, NDIS provides a bitwise OR of the encapsulation
     flags, which indicate the supported encapsulation settings, in the 
     <b>Encapsulation</b> member. Miniport drivers must provide Ethernet encapsulation
     (NDIS_ENCAPSULATION_IEEE_802_3). The other types of encapsulation are optional.
 
 For an 
-    <mshelp:link keywords="netvista.ndis_status_task_offload_current_config" tabindex="0"><b>
-    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</b></mshelp:link> status indication, the miniport driver provides a bitwise
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567424">
+    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication, the miniport driver provides a bitwise
     OR of the encapsulation flags, which indicate the current capabilities, in the 
     <b>Encapsulation</b> member.
 
@@ -142,32 +142,30 @@ The following flags are defined for the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0. Supported in NDIS 6.0. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
-
-<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
-
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
-
-<mshelp:link keywords="netvista.ndis_status_task_offload_current_config" tabindex="0"><b>
-   NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</b></mshelp:link>
-
 <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-offload-current-config">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>
-
-<mshelp:link keywords="netvista.ndis_miniport_adapter_offload_attributes" tabindex="0"><b>
-   NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_ipsec_offload_v2.md">NDIS_IPSEC_OFFLOAD_V2</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_ipsec_offload_v2.md">NDIS_IPSEC_OFFLOAD_V2</a>
+<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-tcp-offload-current-config">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>
+
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
+   NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
+
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567424">
+   NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
 
  
 

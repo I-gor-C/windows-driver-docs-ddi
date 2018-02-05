@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 117ba27f-812a-406d-8120-99ba89551164
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, netvista.ndis_switch_port_feature_status_parameters, _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
+ms.keywords : PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, *PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_feature_status_parameters, ntddndis/PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -138,20 +138,18 @@ An <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_feature_status_custom.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh598274">OID_SWITCH_PORT_FEATURE_STATUS_QUERY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_feature_status_custom.md">NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_switch_port_property_type.md">NDIS_SWITCH_PORT_PROPERTY_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598274">OID_SWITCH_PORT_FEATURE_STATUS_QUERY</a>
 
 <b></b>
 

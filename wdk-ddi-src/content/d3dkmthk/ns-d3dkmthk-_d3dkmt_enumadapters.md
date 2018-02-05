@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a05252bc-6bc4-4cef-aa42-e2c03556847a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_ENUMADAPTERS, D3DKMT_ENUMADAPTERS structure [Display Devices], D3DKMT_ENUMADAPTERS, _D3DKMT_ENUMADAPTERS, display.d3dkmt_enumadapters
+ms.keywords : d3dkmthk/D3DKMT_ENUMADAPTERS, _D3DKMT_ENUMADAPTERS, D3DKMT_ENUMADAPTERS, display.d3dkmt_enumadapters, D3DKMT_ENUMADAPTERS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_adapterinfo.md">D3DKMT_ADAP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

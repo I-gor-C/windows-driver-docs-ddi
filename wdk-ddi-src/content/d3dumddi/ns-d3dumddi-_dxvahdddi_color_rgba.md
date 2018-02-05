@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 73779eb1-514e-4103-9af2-0dc0c86cb04e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_ecf8ab79-edb1-42c8-b873-39cc1f7a1ef8.xml, _DXVAHDDDI_COLOR_RGBA, DXVAHDDDI_COLOR_RGBA structure [Display Devices], DXVAHDDDI_COLOR_RGBA, d3dumddi/DXVAHDDDI_COLOR_RGBA, display.dxvahdddi_color_rgba
+ms.keywords : DXVA2_Structs_ecf8ab79-edb1-42c8-b873-39cc1f7a1ef8.xml, d3dumddi/DXVAHDDDI_COLOR_RGBA, _DXVAHDDDI_COLOR_RGBA, display.dxvahdddi_color_rgba, DXVAHDDDI_COLOR_RGBA structure [Display Devices], DXVAHDDDI_COLOR_RGBA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,9 +80,7 @@ A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>RGB</b> member of the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_COLOR_RGBA is supported beginning with the Windows 7 operating system. DXVAHDDDI_COLOR_RGBA is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

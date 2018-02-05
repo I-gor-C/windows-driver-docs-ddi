@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 14a1b22a-5d1b-4da6-9610-396fa128ce01
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlincrementccfastreadnowait, FsRtlIncrementCcFastReadNoWait routine [Installable File System Drivers], FsRtlIncrementCcFastReadNoWait, fsrtlref_f72704ce-84b6-4201-a727-b97fd70accfd.xml, ntifs/FsRtlIncrementCcFastReadNoWait
+ms.keywords : fsrtlref_f72704ce-84b6-4201-a727-b97fd70accfd.xml, ifsk.fsrtlincrementccfastreadnowait, FsRtlIncrementCcFastReadNoWait routine [Installable File System Drivers], FsRtlIncrementCcFastReadNoWait, ntifs/FsRtlIncrementCcFastReadNoWait
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,14 +67,12 @@ File system drivers should call this function to update the performance counter 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

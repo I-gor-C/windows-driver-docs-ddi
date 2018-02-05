@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 85586f69-09c3-4ebe-ad90-eb1b18e9d552
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_MSGCODING_7BITGSM, RIL_MSGCODING_LATIN, RIL_MSGCODING_MAX, rilapitypes/RIL_MSGCODING_MAX, rilapitypes/RIL_MSGCODING_JIS, rilapitypes/RIL_MSGCODING_KOREAN, rilapitypes/RIL_MSGCODING_LATIN_HEBREW, rilapitypes/RIL_MSGCODING_OCTET, rilapitypes/RIL_MSGCODING_UNICODE, rilapitypes/RIL_MSGCODING_IA5, RIL_MSGCODING_OCTET, RIL_MSGCODING_7BITASCII, RIL_MSGCODING_IA5, RIL_MSGCODING_JIS, rilapitypes/RIL_MSGCODING_7BITGSM, RIL_MSGCODING_KOREAN, rilapitypes/RILMSGCDMAMSGENCODING, rilapitypes/RIL_MSGCODING_7BITASCII, RIL_MSGCODING_8BITGSM, rilapitypes/RIL_MSGCODING_8BITGSM, netvista.rilmsgcdmamsgencoding_2, rilapitypes/RIL_MSGCODING_LATIN, RIL_MSGCODING_LATIN_HEBREW, RILMSGCDMAMSGENCODING, RIL_MSGCODING_UNICODE, RILMSGCDMAMSGENCODING enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_MSGCODING_KOREAN, RIL_MSGCODING_OCTET, RIL_MSGCODING_UNICODE, rilapitypes/RIL_MSGCODING_IA5, rilapitypes/RIL_MSGCODING_UNICODE, RIL_MSGCODING_LATIN_HEBREW, RIL_MSGCODING_LATIN, RIL_MSGCODING_8BITGSM, RIL_MSGCODING_JIS, rilapitypes/RIL_MSGCODING_7BITGSM, RILMSGCDMAMSGENCODING enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_MSGCODING_JIS, rilapitypes/RIL_MSGCODING_OCTET, rilapitypes/RIL_MSGCODING_LATIN_HEBREW, RIL_MSGCODING_IA5, netvista.rilmsgcdmamsgencoding_2, RIL_MSGCODING_7BITGSM, rilapitypes/RIL_MSGCODING_8BITGSM, RIL_MSGCODING_MAX, rilapitypes/RIL_MSGCODING_KOREAN, rilapitypes/RIL_MSGCODING_MAX, RIL_MSGCODING_7BITASCII, rilapitypes/RIL_MSGCODING_7BITASCII, rilapitypes/RILMSGCDMAMSGENCODING, RILMSGCDMAMSGENCODING, rilapitypes/RIL_MSGCODING_LATIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -128,7 +128,4 @@ typedef enum _RILMSGCDMAMSGENCODING {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

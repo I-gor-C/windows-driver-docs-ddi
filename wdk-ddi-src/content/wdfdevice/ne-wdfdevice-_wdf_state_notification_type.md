@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fc44c970-482c-4fbf-a149-e6b732f6c9d8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : StateNotificationPostProcessState, wdfdevice/StateNotificationPostProcessState, StateNotificationEnterState, wdfdevice/StateNotificationLeaveState, kmdf.wdf_state_notification_type, wdfdevice/WDF_STATE_NOTIFICATION_TYPE, WDF_STATE_NOTIFICATION_TYPE, wdfdevice/StateNotificationInvalid, wdfdevice/StateNotificationAllStates, wdf.wdf_state_notification_type, StateNotificationAllStates, WDF_STATE_NOTIFICATION_TYPE enumeration, StateNotificationLeaveState, DFDeviceObjectGeneralRef_c1bdabfc-dd89-4eeb-b5ba-9f03a65414c5.xml, _WDF_STATE_NOTIFICATION_TYPE, StateNotificationInvalid, wdfdevice/StateNotificationEnterState
+ms.keywords : StateNotificationInvalid, kmdf.wdf_state_notification_type, wdf.wdf_state_notification_type, StateNotificationAllStates, wdfdevice/WDF_STATE_NOTIFICATION_TYPE, StateNotificationEnterState, DFDeviceObjectGeneralRef_c1bdabfc-dd89-4eeb-b5ba-9f03a65414c5.xml, wdfdevice/StateNotificationPostProcessState, _WDF_STATE_NOTIFICATION_TYPE, StateNotificationLeaveState, wdfdevice/StateNotificationAllStates, WDF_STATE_NOTIFICATION_TYPE, wdfdevice/StateNotificationEnterState, wdfdevice/StateNotificationLeaveState, wdfdevice/StateNotificationInvalid, StateNotificationPostProcessState, WDF_STATE_NOTIFICATION_TYPE enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -130,16 +130,14 @@ Calls state <i>b</i>'s postprocess-state notification callback function.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_notification_data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a>
-
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a>
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_notification_data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a>
 
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_notification_data.md">WDF_DEVICE_PNP_NOTIFICATION_DATA</a>
 

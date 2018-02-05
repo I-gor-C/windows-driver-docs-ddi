@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f5d04730-a7eb-4670-9b47-f8c52267aea8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisClDropParty, condis_client_ref_a86ff56b-e523-4d1b-a3ef-60ec953514c6.xml, NdisClDropParty function [Network Drivers Starting with Windows Vista], netvista.ndiscldropparty, ndis/NdisClDropParty
+ms.keywords : NdisClDropParty function [Network Drivers Starting with Windows Vista], NdisClDropParty, ndis/NdisClDropParty, condis_client_ref_a86ff56b-e523-4d1b-a3ef-60ec953514c6.xml, netvista.ndiscldropparty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,8 +79,8 @@ Specifies the size in bytes at
 When 
      <b>NdisClDropParty</b> returns anything other than NDIS_STATUS_PENDING, the client should make an
      internal call to its 
-     <mshelp:link keywords="netvista.protocolcldroppartycomplete" tabindex="0"><i>
-     ProtocolClDropPartyComplete</i></mshelp:link> function. Otherwise, NDIS calls the client's 
+     <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">
+     ProtocolClDropPartyComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClDropPartyComplete</i> function when this operation is completed.
 
 ## Remarks
@@ -90,8 +90,8 @@ Clients usually call
 <ul>
 <li>
 From the 
-      <mshelp:link keywords="netvista.protocolclincomingdropparty" tabindex="0"><i>
-      ProtocolClIncomingDropParty</i></mshelp:link> function to remove the given party from a multipoint connection.
+      <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">
+      ProtocolClIncomingDropParty</a> function to remove the given party from a multipoint connection.
 
 This occurs when a party on a remote node closes its connection with 
       <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>. When NDIS calls the
@@ -126,8 +126,8 @@ As a general guideline, a client must call
     before it closes its multipoint connection with 
     <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>. Since remote parties can
     initiate closes of their connections, thereby causing calls to the local client's 
-    <mshelp:link keywords="netvista.protocolclincomingdropparty" tabindex="0"><i>
-    ProtocolClIncomingDropParty</i></mshelp:link> function, the local client must keep track of the number of active
+    <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">
+    ProtocolClIncomingDropParty</a> function, the local client must keep track of the number of active
     parties on its multipoint VCs in order to know how many calls it must make to 
     <b>NdisClDropParty</b> before it can call 
     <b>NdisClCloseCall</b>.
@@ -149,37 +149,35 @@ The caller of
     <b>NdisClDropParty</b> should consider the input 
     <i>NdisPartyHandle</i> invalid as soon as it makes this call. If it stored this handle in the party
     context area it allocated, the client's 
-    <mshelp:link keywords="netvista.protocolcldroppartycomplete" tabindex="0"><i>
-    ProtocolClDropPartyComplete</i></mshelp:link> function should reset the handle variable to <b>NULL</b> if it reinitializes
+    <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">
+    ProtocolClDropPartyComplete</a> function should reset the handle variable to <b>NULL</b> if it reinitializes
     its per-party context area for reuse when the party has been dropped.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
-<a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_drop_party.md">ProtocolClIncomingDropParty</a>
 
-<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
-
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
-
 <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
+<a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
+
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
+
 <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">ProtocolCmDropParty</a>
+
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 
  
 

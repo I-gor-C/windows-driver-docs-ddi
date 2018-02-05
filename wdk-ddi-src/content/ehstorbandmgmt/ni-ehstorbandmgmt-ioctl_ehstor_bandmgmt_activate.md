@@ -149,15 +149,14 @@ enabled. A REG_DWORD value of 0 allows security activation on the storage device
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
 | **Header** | ehstorbandmgmt.h (include EhStorBandMgmt.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_query_capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
-
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_revert.md">IOCTL_EHSTOR_BANDMGMT_REVERT</a>
+
+<a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_query_capabilities.md">IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES</a>
 
  
 

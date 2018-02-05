@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4df9721f-19d1-4070-92dd-45d41b7c5374
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : filterpipeline_5635f15b-3779-42ef-8b8d-3afeab1bab17.xml, ShutdownOperation method [Print Devices], ShutdownOperation method [Print Devices], IPrintPipelineFilter interface, IPrintPipelineFilter::ShutdownOperation, IPrintPipelineFilter interface [Print Devices], ShutdownOperation method, IPrintPipelineFilter, print.iprintpipelinefilter_shutdownoperation, ShutdownOperation, filterpipeline/IPrintPipelineFilter::ShutdownOperation
+ms.keywords : ShutdownOperation, IPrintPipelineFilter::ShutdownOperation, IPrintPipelineFilter, filterpipeline/IPrintPipelineFilter::ShutdownOperation, ShutdownOperation method [Print Devices], IPrintPipelineFilter interface, print.iprintpipelinefilter_shutdownoperation, ShutdownOperation method [Print Devices], IPrintPipelineFilter interface [Print Devices], ShutdownOperation method, filterpipeline_5635f15b-3779-42ef-8b8d-3afeab1bab17.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,20 +65,15 @@ The <code>ShutdownOperation</code> method is called by the pipeline manager if t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554306">IPrintPipelineManagerControl::FilterFinished</a>
-
 <a href="..\filterpipeline\nn-filterpipeline-iprintpipelinefilter.md">IPrintPipelineFilter</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554306">IPrintPipelineManagerControl::FilterFinished</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 20989831-5ff0-4457-9dae-ceaf34830a2e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PCREATE_DISK, storage.create_disk, PCREATE_DISK, ntdddisk/CREATE_DISK, PCREATE_DISK structure pointer [Storage Devices], _CREATE_DISK, CREATE_DISK structure [Storage Devices], CREATE_DISK, structs-disk_568deb80-fbd8-4c86-9646-a49355ab0d52.xml, ntdddisk/PCREATE_DISK"
+ms.keywords : CREATE_DISK structure [Storage Devices], structs-disk_568deb80-fbd8-4c86-9646-a49355ab0d52.xml, ntdddisk/CREATE_DISK, PCREATE_DISK, PCREATE_DISK structure pointer [Storage Devices], CREATE_DISK, *PCREATE_DISK, ntdddisk/PCREATE_DISK, storage.create_disk, _CREATE_DISK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCREATE_DISK, CREATE_DISK"
+req.typenames : CREATE_DISK, *PCREATE_DISK
 ---
 
 # _CREATE_DISK structure
@@ -67,9 +67,6 @@ Takes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563773">P
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also

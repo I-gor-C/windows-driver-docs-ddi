@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3668aa5a-1cb4-4ee1-91bd-bf2f3fa30622
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfIoResourceRequirementsListRemove, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVE, wdf.wdfioresourcerequirementslistremove, kmdf.wdfioresourcerequirementslistremove, WdfIoResourceRequirementsListRemove method, WdfIoResourceRequirementsListRemove, DFResourceObjectRef_7f7c29e8-231a-48ec-b4e3-01989ad994b0.xml
+ms.keywords : wdfresource/WdfIoResourceRequirementsListRemove, WdfIoResourceRequirementsListRemove method, kmdf.wdfioresourcerequirementslistremove, wdf.wdfioresourcerequirementslistremove, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVE, WdfIoResourceRequirementsListRemove, DFResourceObjectRef_7f7c29e8-231a-48ec-b4e3-01989ad994b0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -82,12 +82,10 @@ For more information about resource requirements lists, see <a href="https://doc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfresource.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

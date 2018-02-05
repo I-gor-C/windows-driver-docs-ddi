@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ff22498e-404f-42f6-82fd-f0178f6c7789
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winppi/GdiDeleteSpoolFileHandle, gdifnc_76c1c0cf-2a48-44eb-9b48-1d0a5bf4548b.xml, print.gdideletespoolfilehandle, GdiDeleteSpoolFileHandle, GdiDeleteSpoolFileHandle function [Print Devices]
+ms.keywords : winppi/GdiDeleteSpoolFileHandle, GdiDeleteSpoolFileHandle, print.gdideletespoolfilehandle, gdifnc_76c1c0cf-2a48-44eb-9b48-1d0a5bf4548b.xml, GdiDeleteSpoolFileHandle function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,10 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

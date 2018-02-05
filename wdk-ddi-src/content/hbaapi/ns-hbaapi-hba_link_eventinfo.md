@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : be682bc7-61cb-40bd-920d-bc2224d6e426
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_Link_EventInfo structure [Storage Devices], structs-Fibre_eb994375-ebac-41f5-af82-341f14400b1f.xml, hbaapi/HBA_Link_EventInfo, storage.hba_link_eventinfo, HBA_LINK_EVENTINFO structure [Storage Devices], HBA_LINK_EVENTINFO, PHBA_LINK_EVENTINFO structure pointer [Storage Devices], PHBA_LINK_EVENTINFO, HBA_Link_EventInfo, hbaapi/PHBA_LINK_EVENTINFO, *PHBA_LINK_EVENTINFO
+ms.keywords : hbaapi/PHBA_LINK_EVENTINFO, storage.hba_link_eventinfo, PHBA_LINK_EVENTINFO, HBA_LINK_EVENTINFO, HBA_Link_EventInfo structure [Storage Devices], hbaapi/HBA_Link_EventInfo, structs-Fibre_eb994375-ebac-41f5-af82-341f14400b1f.xml, PHBA_LINK_EVENTINFO structure pointer [Storage Devices], HBA_Link_EventInfo, *PHBA_LINK_EVENTINFO, HBA_LINK_EVENTINFO structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,18 +64,15 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also
 
+<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
+
 <a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a>
 
 <a href="..\hbaapi\ns-hbaapi-hba_rscn_eventinfo.md">HBA_RSCN_EventInfo</a>
-
-<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
 
  
 

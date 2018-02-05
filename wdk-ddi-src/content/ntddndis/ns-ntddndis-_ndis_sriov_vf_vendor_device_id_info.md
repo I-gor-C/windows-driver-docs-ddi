@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ecf9f34a-ba05-4ad1-990c-b13d53fd78bb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, ntddndis/NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, netvista.ndis_sriov_vf_vendor_device_id_info, ntddndis/PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO"
+ms.keywords : netvista.ndis_sriov_vf_vendor_device_id_info, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, ntddndis/NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO"
+req.typenames : NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, *PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
 ---
 
 # _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure
@@ -92,18 +92,16 @@ The <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure is used in the OID meth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451913">OID_SRIOV_VF_VENDOR_DEVICE_ID</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
 
 <b></b>
 

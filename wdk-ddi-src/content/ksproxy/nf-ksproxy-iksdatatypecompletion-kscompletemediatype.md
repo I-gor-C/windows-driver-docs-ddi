@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0a6157cf-09ae-4640-9c54-3e9b91fd93a9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCompleteMediaType, IKsDataTypeCompletion interface [Streaming Media Devices], KsCompleteMediaType method, IKsDataTypeCompletion::KsCompleteMediaType, ksproxy_950cbba2-9512-46d0-ac08-133195e4370f.xml, IKsDataTypeCompletion, KsCompleteMediaType method [Streaming Media Devices], IKsDataTypeCompletion interface, stream.iksdatatypecompletion_kscompletemediatype, ksproxy/IKsDataTypeCompletion::KsCompleteMediaType, KsCompleteMediaType method [Streaming Media Devices]
+ms.keywords : KsCompleteMediaType method [Streaming Media Devices], IKsDataTypeCompletion, KsCompleteMediaType, ksproxy_950cbba2-9512-46d0-ac08-133195e4370f.xml, stream.iksdatatypecompletion_kscompletemediatype, IKsDataTypeCompletion::KsCompleteMediaType, IKsDataTypeCompletion interface [Streaming Media Devices], KsCompleteMediaType method, KsCompleteMediaType method [Streaming Media Devices], IKsDataTypeCompletion interface, ksproxy/IKsDataTypeCompletion::KsCompleteMediaType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,14 +82,9 @@ For more information about <b>IAMStreamConfig::SetFormat</b> and AM_MEDIA_TYPE, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

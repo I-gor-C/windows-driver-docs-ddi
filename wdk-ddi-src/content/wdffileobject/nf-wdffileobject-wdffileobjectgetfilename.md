@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9d4e45c7-ed1f-476a-8522-4213ac42a3c3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFFILEOBJECTGETFILENAME, kmdf.wdffileobjectgetfilename, DFFileObjectRef_07be4c38-fa04-41d3-8f8e-f7ec5ed6ff18.xml, wdffileobject/WdfFileObjectGetFileName, wdf.wdffileobjectgetfilename, WdfFileObjectGetFileName method, WdfFileObjectGetFileName
+ms.keywords : PFN_WDFFILEOBJECTGETFILENAME, kmdf.wdffileobjectgetfilename, WdfFileObjectGetFileName method, DFFileObjectRef_07be4c38-fa04-41d3-8f8e-f7ec5ed6ff18.xml, wdffileobject/WdfFileObjectGetFileName, WdfFileObjectGetFileName, wdf.wdffileobjectgetfilename
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,19 @@ For more information about reference strings, see <a href="..\wdm\nf-wdm-ioregis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdffileobject.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

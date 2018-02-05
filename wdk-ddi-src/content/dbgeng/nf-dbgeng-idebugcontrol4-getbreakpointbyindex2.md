@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3487addb-e196-4295-95fc-0590802e766a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetBreakpointByIndex2, IDebugControl4::GetBreakpointByIndex2, GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface, debugger.getbreakpointbyindex2, dbgeng/IDebugControl4::GetBreakpointByIndex2, IDebugControl4, GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetBreakpointByIndex2 method
+ms.keywords : GetBreakpointByIndex2, GetBreakpointByIndex2 method [Windows Debugging], GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetBreakpointByIndex2, debugger.getbreakpointbyindex2, IDebugControl4::GetBreakpointByIndex2, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetBreakpointByIndex2 method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,14 +101,9 @@ The index and returned breakpoint are specific to the current process.  The same
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

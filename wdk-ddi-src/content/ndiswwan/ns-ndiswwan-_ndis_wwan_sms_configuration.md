@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 77d62078-7421-40c7-b743-fbc09b0eb5f9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SMS_CONFIGURATION, WwanRef_29c93c56-0878-421c-a690-aa5d3ba2e64a.xml, netvista.ndis_wwan_sms_configuration, NDIS_WWAN_SMS_CONFIGURATION, PNDIS_WWAN_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_CONFIGURATION, ndiswwan/NDIS_WWAN_SMS_CONFIGURATION, ndiswwan/PNDIS_WWAN_SMS_CONFIGURATION, *PNDIS_WWAN_SMS_CONFIGURATION
+ms.keywords : ndiswwan/NDIS_WWAN_SMS_CONFIGURATION, _NDIS_WWAN_SMS_CONFIGURATION, *PNDIS_WWAN_SMS_CONFIGURATION, NDIS_WWAN_SMS_CONFIGURATION, netvista.ndis_wwan_sms_configuration, ndiswwan/PNDIS_WWAN_SMS_CONFIGURATION, NDIS_WWAN_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], WwanRef_29c93c56-0878-421c-a690-aa5d3ba2e64a.xml, PNDIS_WWAN_SMS_CONFIGURATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_SMS_CONFIGURATION, NDIS_WWAN_SMS_CONFIGURATION"
+req.typenames : NDIS_WWAN_SMS_CONFIGURATION, *PNDIS_WWAN_SMS_CONFIGURATION
 ---
 
 # _NDIS_WWAN_SMS_CONFIGURATION structure
@@ -185,9 +185,7 @@ The operation failed because the SMS format specified in <a href="..\wwan\ns-wwa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

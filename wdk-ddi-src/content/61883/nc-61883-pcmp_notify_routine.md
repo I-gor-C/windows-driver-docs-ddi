@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTOPOLOGY_MAP, TOPOLOGY_MAP"
+req.typenames : TOPOLOGY_MAP, *PTOPOLOGY_MAP
 ---
 
 
@@ -68,11 +68,5 @@ This callback does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | 61883.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

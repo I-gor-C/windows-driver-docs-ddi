@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cbd1cd9b-c3bd-4827-88e6-4b80d6ba7320
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksdiscard, ks/KsDiscard, avfunc_645e5574-6c6b-4336-87fe-fe777f7d1c91.xml, KsDiscard, KsDiscard function [Streaming Media Devices]
+ms.keywords : KsDiscard function [Streaming Media Devices], ks/KsDiscard, stream.ksdiscard, KsDiscard, avfunc_645e5574-6c6b-4336-87fe-fe777f7d1c91.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -75,26 +75,23 @@ This function is implemented as a C-style preprocessing macro in the <i>Ks.h</i>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 
 <a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
  
 

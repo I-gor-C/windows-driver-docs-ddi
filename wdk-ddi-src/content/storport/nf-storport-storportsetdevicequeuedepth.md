@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e79b4294-5ba4-4fcc-97e2-69613b65f574
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortSetDeviceQueueDepth, StorPortSetDeviceQueueDepth routine [Storage Devices], storport/StorPortSetDeviceQueueDepth, storage.storportsetdevicequeuedepth, storprt_1f3e0e5d-fa3e-4314-aa0a-4d8494c78fb2.xml
+ms.keywords : StorPortSetDeviceQueueDepth routine [Storage Devices], storage.storportsetdevicequeuedepth, storport/StorPortSetDeviceQueueDepth, storprt_1f3e0e5d-fa3e-4314-aa0a-4d8494c78fb2.xml, StorPortSetDeviceQueueDepth
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,11 +90,6 @@ Before the first call to <b>StorPortSetDeviceQueueDepth</b>, the device queue de
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |

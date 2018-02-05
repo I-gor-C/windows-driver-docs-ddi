@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1dd7e73d-b804-4018-8c72-732bd68dd8d2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d10_ddi_query_data_timestamp_disjoint, d3d10umddi/D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT, D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure [Display Devices], UMDisplayDriver_Dx10param_Structs_1dbd9e05-9c61-4753-902c-245471e71e36.xml, D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT
+ms.keywords : display.d3d10_ddi_query_data_timestamp_disjoint, D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT, d3d10umddi/D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT, UMDisplayDriver_Dx10param_Structs_1dbd9e05-9c61-4753-902c-245471e71e36.xml, D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ The driver associates a D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure with t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

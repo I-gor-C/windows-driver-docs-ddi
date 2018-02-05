@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 50b85fc0-b84a-4c1d-9d7b-4b91150f8e76
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WWAN_VOICE_CALL_STATE, netvista.wwan_voice_call_state, wwan/PWWAN_VOICE_CALL_STATE, wwan/WwanVoiceCallStateInProgress, WwanRef_65c4ae25-c50f-4527-95fd-043730c736e4.xml, wwan/WwanVoiceCallStateNone, WwanVoiceCallStateInProgress, WwanVoiceCallStateMaximum, WWAN_VOICE_CALL_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanVoiceCallStateMaximum, wwan/WWAN_VOICE_CALL_STATE, WwanVoiceCallStateHangUp, PWWAN_VOICE_CALL_STATE enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_VOICE_CALL_STATE, wwan/WwanVoiceCallStateHangUp, WwanVoiceCallStateNone, WWAN_VOICE_CALL_STATE, *PWWAN_VOICE_CALL_STATE"
+ms.keywords : "_WWAN_VOICE_CALL_STATE, wwan/WwanVoiceCallStateNone, wwan/WwanVoiceCallStateInProgress, wwan/WwanVoiceCallStateHangUp, WwanRef_65c4ae25-c50f-4527-95fd-043730c736e4.xml, *PWWAN_VOICE_CALL_STATE, WWAN_VOICE_CALL_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_VOICE_CALL_STATE, WwanVoiceCallStateNone, WWAN_VOICE_CALL_STATE, WwanVoiceCallStateInProgress, WwanVoiceCallStateHangUp, wwan/WwanVoiceCallStateMaximum, netvista.wwan_voice_call_state, wwan/WWAN_VOICE_CALL_STATE, PWWAN_VOICE_CALL_STATE enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_VOICE_CALL_STATE, WwanVoiceCallStateMaximum"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -84,9 +84,7 @@ typedef enum _WWAN_VOICE_CALL_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

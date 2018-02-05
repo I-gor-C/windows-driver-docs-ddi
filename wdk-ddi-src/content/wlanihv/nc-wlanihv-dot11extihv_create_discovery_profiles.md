@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -80,8 +80,8 @@ A Boolean value that specifies the security status of the discovery profiles. If
 `pIhvProfileParams`
 
 A pointer to a 
-     <mshelp:link keywords="netvista.dot11ext_ihv_profile_params" tabindex="0"><b>
-     DOT11EXT_IHV_PROFILE_PARAMS</b></mshelp:link> structure. This structure defines the attributes of the basic service
+     <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">
+     DOT11EXT_IHV_PROFILE_PARAMS</a> structure. This structure defines the attributes of the basic service
      set (BSS) network to which the profile extensions will be applied.
 
 `pConnectableBssid`
@@ -99,8 +99,8 @@ A pointer to a
 `pIhvDiscoveryProfileList`
 
 A pointer to a 
-     <mshelp:link keywords="netvista.dot11ext_ihv_discovery_profile_list" tabindex="0"><b>
-     DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</b></mshelp:link> structure that specifies a list of IHV discovery
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile_list.md">
+     DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</a> structure that specifies a list of IHV discovery
      profiles.
 
 `pdwReasonCode`
@@ -158,35 +158,30 @@ An IHV-defined value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_COD
 </ul>
 </li>
 </ul>For more information about creating discovery profiles, see 
-    <mshelp:link keywords="netvista.creating_network_profile_extensions" tabindex="0">Creating Network Profile
-    Extensions</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/creating-network-profile-extensions">Creating Network Profile
+    Extensions</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h, Winclient.h, L2cmn.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
+
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile_list.md">
+   DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+
+<a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
 
 <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
-
-<a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
-
-<mshelp:link keywords="netvista.dot11ext_ihv_discovery_profile_list" tabindex="0"><b>
-   DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</b></mshelp:link>
-
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
-<a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
 
  
 

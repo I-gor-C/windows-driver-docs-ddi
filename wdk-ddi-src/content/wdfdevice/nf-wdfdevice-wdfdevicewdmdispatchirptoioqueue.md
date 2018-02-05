@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5D1B228D-81D9-47FE-8CF2-41AAD9148667
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicewdmdispatchirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue method, WdfDeviceWdmDispatchIrpToIoQueue, kmdf.wdfdevicewdmforwardirptoioqueue, wdfdevice/WdfDeviceWdmDispatchIrpToIoQueue, kmdf.wdfdevicewdmdispatchirptoioqueue
+ms.keywords : wdfdevice/WdfDeviceWdmDispatchIrpToIoQueue, kmdf.wdfdevicewdmforwardirptoioqueue, WdfDeviceWdmDispatchIrpToIoQueue, WdfDeviceWdmDispatchIrpToIoQueue method, wdf.wdfdevicewdmdispatchirptoioqueue, kmdf.wdfdevicewdmdispatchirptoioqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,12 +94,11 @@ If the driver calls <b>WdfDeviceWdmDispatchIrpToIoQueue</b> from within a <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.17 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, FwdIrpToIoQueueValid |
 

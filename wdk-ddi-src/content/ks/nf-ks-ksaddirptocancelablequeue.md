@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 399ca0d6-6355-40f8-ac2c-c69d7ae699e1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsAddIrpToCancelableQueue, ksfunc_8a3caaa5-29ca-4c55-a3f6-8214808954b3.xml, stream.ksaddirptocancelablequeue, KsAddIrpToCancelableQueue, KsAddIrpToCancelableQueue function [Streaming Media Devices]
+ms.keywords : KsAddIrpToCancelableQueue, KsAddIrpToCancelableQueue function [Streaming Media Devices], ks/KsAddIrpToCancelableQueue, stream.ksaddirptocancelablequeue, ksfunc_8a3caaa5-29ca-4c55-a3f6-8214808954b3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,11 +92,6 @@ The function does not use the cancel spin lock to add items to the list. Access 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : CBCE6C4C-C713-4ED3-9C40-30F9D8C2406D
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDI_DESTROYPAGINGQUEUE, display.d3dddi_destroypagingqueue, D3DDDI_DESTROYPAGINGQUEUE structure [Display Devices], D3DDDI_DESTROYPAGINGQUEUE
+ms.keywords : d3dukmdt/D3DDDI_DESTROYPAGINGQUEUE, D3DDDI_DESTROYPAGINGQUEUE, D3DDDI_DESTROYPAGINGQUEUE structure [Display Devices], display.d3dddi_destroypagingqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct D3DDDI_DESTROYPAGINGQUEUE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also

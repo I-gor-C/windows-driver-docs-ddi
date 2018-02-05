@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : EAC78940-318D-4785-9D7E-410B8AB2F4C7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbTransferBufferFormatInvalid, SpbTransferBufferFormatList, spb/SpbTransferBufferFormatMdl, spb/SpbTransferBufferFormatSimple, SPB_TRANSFER_BUFFER_FORMAT enumeration [Buses], spb/SpbTransferBufferFormatList, spb/SpbTransferBufferFormatSimpleNonPaged, *PSPB_TRANSFER_BUFFER_FORMAT, SpbTransferBufferFormatSimpleNonPaged, SPB.spb_transfer_buffer_format, SpbTransferBufferFormatMdl, SPB_TRANSFER_BUFFER_FORMAT, spb/SPB_TRANSFER_BUFFER_FORMAT, spb/SpbTransferBufferFormatInvalid, SpbTransferBufferFormatSimple, spb/SpbTransferBufferFormatMax, SpbTransferBufferFormatMax
+ms.keywords : SpbTransferBufferFormatMax, SPB_TRANSFER_BUFFER_FORMAT enumeration [Buses], spb/SpbTransferBufferFormatInvalid, SpbTransferBufferFormatInvalid, SPB.spb_transfer_buffer_format, spb/SpbTransferBufferFormatSimple, SpbTransferBufferFormatSimpleNonPaged, SpbTransferBufferFormatMdl, spb/SpbTransferBufferFormatSimpleNonPaged, spb/SpbTransferBufferFormatMax, spb/SPB_TRANSFER_BUFFER_FORMAT, spb/SpbTransferBufferFormatList, SpbTransferBufferFormatList, SPB_TRANSFER_BUFFER_FORMAT, SpbTransferBufferFormatSimple, *PSPB_TRANSFER_BUFFER_FORMAT, spb/SpbTransferBufferFormatMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SPB_TRANSFER_BUFFER_FORMAT, *PSPB_TRANSFER_BUFFER_FORMAT
+req.typenames : "*PSPB_TRANSFER_BUFFER_FORMAT, SPB_TRANSFER_BUFFER_FORMAT"
 req.product : Windows 10 or later.
 ---
 
@@ -96,9 +96,7 @@ The <b>Format</b> member of the <a href="https://msdn.microsoft.com/library/wind
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spb.h |
 
 ## See Also

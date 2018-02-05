@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4fe525b1-9c06-4e2c-9e57-041164905efe
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_SETQUEUEDLIMIT, OpenGL_Structs_3c7f7e33-f71a-4547-89ee-7dba69917a4f.xml, display.d3dkmt_setqueuedlimit, D3DKMT_SETQUEUEDLIMIT, D3DKMT_SETQUEUEDLIMIT structure [Display Devices], _D3DKMT_SETQUEUEDLIMIT
+ms.keywords : D3DKMT_SETQUEUEDLIMIT structure [Display Devices], d3dkmthk/D3DKMT_SETQUEUEDLIMIT, OpenGL_Structs_3c7f7e33-f71a-4547-89ee-7dba69917a4f.xml, _D3DKMT_SETQUEUEDLIMIT, display.d3dkmt_setqueuedlimit, D3DKMT_SETQUEUEDLIMIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ typedef struct _D3DKMT_SETQUEUEDLIMIT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

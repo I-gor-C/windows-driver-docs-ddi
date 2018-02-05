@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 838c2371-c1f3-4415-a624-fab1d8c15d0d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : LOGINSESSIONTYPE, ISCSI_LOGINTARGET_DISCOVERY, iscsiop/PLOGINSESSIONTYPE, PLOGINSESSIONTYPE, storage.loginsessiontype, LOGINSESSIONTYPE enumeration [Storage Devices], iscsiop/LOGINSESSIONTYPE, structs-iSCSI_4af9bc0f-391e-442a-9d45-6819d130cfc0.xml, iscsiop/ISCSI_LOGINTARGET_DATA, iscsiop/ISCSI_LOGINTARGET_DISCOVERY, iscsiop/ISCSI_LOGINTARGET_INFORMATIONAL, *PLOGINSESSIONTYPE, ISCSI_LOGINTARGET_DATA, ISCSI_LOGINTARGET_INFORMATIONAL, PLOGINSESSIONTYPE enumeration pointer [Storage Devices]
+ms.keywords : iscsiop/LOGINSESSIONTYPE, iscsiop/ISCSI_LOGINTARGET_INFORMATIONAL, ISCSI_LOGINTARGET_INFORMATIONAL, LOGINSESSIONTYPE, PLOGINSESSIONTYPE enumeration pointer [Storage Devices], iscsiop/ISCSI_LOGINTARGET_DISCOVERY, structs-iSCSI_4af9bc0f-391e-442a-9d45-6819d130cfc0.xml, storage.loginsessiontype, ISCSI_LOGINTARGET_DISCOVERY, ISCSI_LOGINTARGET_DATA, iscsiop/PLOGINSESSIONTYPE, *PLOGINSESSIONTYPE, iscsiop/ISCSI_LOGINTARGET_DATA, PLOGINSESSIONTYPE, LOGINSESSIONTYPE enumeration [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -76,9 +76,6 @@ This type of session does not support transmission of user data, and the Plug an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also

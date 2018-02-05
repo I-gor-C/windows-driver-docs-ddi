@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 66e20ac3-e97d-429d-868e-79c04881702b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFSetAttributes, NdisFSetAttributes, netvista.ndisfsetattributes, filter_ndis_functions_ref_67ad6b8c-e7ae-45d7-9213-48e8a2b6c2ff.xml, NdisFSetAttributes function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisFSetAttributes function [Network Drivers Starting with Windows Vista], netvista.ndisfsetattributes, NdisFSetAttributes, ndis/NdisFSetAttributes, filter_ndis_functions_ref_67ad6b8c-e7ae-45d7-9213-48e8a2b6c2ff.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,8 +68,8 @@ The caller-allocated context area for this filter module.
 `FilterAttributes`
 
 A pointer to a filter driver allocated 
-     <mshelp:link keywords="netvista.ndis_filter_attributes" tabindex="0"><b>
-     NDIS_FILTER_ATTRIBUTES</b></mshelp:link> structure.
+     <a href="..\ndis\ns-ndis-_ndis_filter_attributes.md">
+     NDIS_FILTER_ATTRIBUTES</a> structure.
 
 
 ## Return Value
@@ -131,20 +131,18 @@ A filter driver calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
 <a href="..\ndis\nc-ndis-filter_send_net_buffer_lists.md">FilterSendNetBufferLists</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 <a href="..\ndis\ns-ndis-_ndis_filter_attributes.md">NDIS_FILTER_ATTRIBUTES</a>
 

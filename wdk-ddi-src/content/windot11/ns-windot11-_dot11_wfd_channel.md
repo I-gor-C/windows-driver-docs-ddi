@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : FE05F3D9-B1F0-4DC3-9265-22A76209A3E1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_WFD_CHANNEL structure [Network Drivers Starting with Windows Vista], *PDOT11_WFD_CHANNEL, PDOT11_WFD_CHANNEL structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_WFD_CHANNEL, windot11/DOT11_WFD_CHANNEL, PDOT11_WFD_CHANNEL, netvista.dot11_wfd_channel, DOT11_WFD_CHANNEL, _DOT11_WFD_CHANNEL
+ms.keywords : "*PDOT11_WFD_CHANNEL, _DOT11_WFD_CHANNEL, netvista.dot11_wfd_channel, windot11/DOT11_WFD_CHANNEL, windot11/PDOT11_WFD_CHANNEL, DOT11_WFD_CHANNEL structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_CHANNEL, DOT11_WFD_CHANNEL, PDOT11_WFD_CHANNEL structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,5 @@ The frequency band for <b>ChannelNumber</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |

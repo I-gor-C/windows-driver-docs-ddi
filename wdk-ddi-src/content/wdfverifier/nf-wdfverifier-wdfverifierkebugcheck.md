@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3fa8ea3d-cca0-402d-a3a8-1281ad4231d4
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfVerifierKeBugCheck function, wdfverifier/WdfVerifierKeBugCheck, wdf.wdfverifierkebugcheck, kmdf.wdfverifierkebugcheck, DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, WdfVerifierKeBugCheck
+ms.keywords : wdfverifier/WdfVerifierKeBugCheck, kmdf.wdfverifierkebugcheck, WdfVerifierKeBugCheck function, DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, WdfVerifierKeBugCheck, wdf.wdfverifierkebugcheck
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_REQUEST_COMPLETION_PARAMS, WDF_USB_REQUEST_COMPLETION_PARAMS"
+req.typenames : WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -95,12 +95,11 @@ For more information about debugging your driver, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfverifier.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | Any level |
 | **DDI compliance rules** | DriverCreate |
 

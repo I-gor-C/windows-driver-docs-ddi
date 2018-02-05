@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1C8FA483-3713-464E-91B7-0A8D754F5D16
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongPtrToInt8, RtlLongPtrToInt8 function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongPtrToInt8, kernel.rtllongptrtoint8
+ms.keywords : ntintsafe/RtlLongPtrToInt8, RtlLongPtrToInt8 function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoint8, RtlLongPtrToInt8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,6 @@ RtlSSIZETToInt8</li>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

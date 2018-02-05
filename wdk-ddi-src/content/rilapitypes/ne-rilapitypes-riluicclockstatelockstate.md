@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 95f73081-b809-407d-b73b-975b97301449
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_UICCLOCKSTATE_ENABLED, RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RIL_UICCLOCKSTATE_ENABLED, rilapitypes/RIL_UICCLOCKSTATE_BLOCKED, netvista.riluicclockstatelockstate, rilapitypes/RIL_UICCLOCKSTATE_VERIFIED, rilapitypes/RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, rilapitypes/RILUICCLOCKSTATELOCKSTATE, RIL_UICCLOCKSTATE_VERIFIED, RILUICCLOCKSTATELOCKSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCLOCKSTATE_BLOCKED, RILUICCLOCKSTATELOCKSTATE
+ms.keywords : RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, rilapitypes/RIL_UICCLOCKSTATE_BLOCKED, RILUICCLOCKSTATELOCKSTATE, RILUICCLOCKSTATELOCKSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCLOCKSTATE_VERIFIED, rilapitypes/RIL_UICCLOCKSTATE_ENABLED, rilapitypes/RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RIL_UICCLOCKSTATE_BLOCKED, rilapitypes/RILUICCLOCKSTATELOCKSTATE, RIL_UICCLOCKSTATE_ENABLED, netvista.riluicclockstatelockstate, rilapitypes/RIL_UICCLOCKSTATE_VERIFIED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -87,9 +87,6 @@ enum RILUICCLOCKSTATELOCKSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

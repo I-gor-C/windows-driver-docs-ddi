@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 30ad87de-a371-415b-b77f-513369fed098
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlInitExtraCreateParameterLookasideList, FsRtlInitExtraCreateParameterLookasideList, FsRtlInitExtraCreateParameterLookasideList routine [Installable File System Drivers], ifsk.fsrtlinitextracreateparameterlookasidelist, fsrtlref_4b4e21ec-cfcc-45b7-bcb9-74dbc7c486ac.xml
+ms.keywords : ntifs/FsRtlInitExtraCreateParameterLookasideList, fsrtlref_4b4e21ec-cfcc-45b7-bcb9-74dbc7c486ac.xml, FsRtlInitExtraCreateParameterLookasideList, FsRtlInitExtraCreateParameterLookasideList routine [Installable File System Drivers], ifsk.fsrtlinitextracreateparameterlookasidelist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,30 +89,28 @@ For more information on using lookaside lists with drivers, see <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FsRtlInitExtraCreateParameterLookasideList routine is available starting with Windows Vista. The FsRtlInitExtraCreateParameterLookasideList routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
+
 <a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterfromlookasidelist.md">FsRtlAllocateExtraCreateParameterFromLookasideList</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558775">PAGED_LOOKASIDE_LIST</a>
+
 <a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
-
 <a href="..\ntifs\nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md">FsRtlDeleteExtraCreateParameterLookasideList</a>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 
  
 

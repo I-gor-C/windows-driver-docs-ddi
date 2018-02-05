@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9a2e74fa-ee02-46f9-a51e-b2ffcdf7617a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxvahdddi_device_usage, DXVAHDDDI_DEVICE_USAGE_PLAYBACK_NORMAL, DXVAHDDDI_DEVICE_USAGE, d3dumddi/DXVAHDDDI_DEVICE_USAGE, DXVAHDDDI_DEVICE_USAGE_OPTIMAL_SPEED, DXVA2_Structs_37d96cb2-48a3-4538-9225-e63bfe0b5b5f.xml, DXVAHDDDI_DEVICE_USAGE enumeration [Display Devices], d3dumddi/DXVAHDDDI_DEVICE_USAGE_PLAYBACK_NORMAL, DXVAHDDDI_DEVICE_USAGE_OPTIMAL_QUALITY, _DXVAHDDDI_DEVICE_USAGE, d3dumddi/DXVAHDDDI_DEVICE_USAGE_OPTIMAL_SPEED, d3dumddi/DXVAHDDDI_DEVICE_USAGE_OPTIMAL_QUALITY
+ms.keywords : d3dumddi/DXVAHDDDI_DEVICE_USAGE_PLAYBACK_NORMAL, DXVAHDDDI_DEVICE_USAGE_OPTIMAL_SPEED, DXVAHDDDI_DEVICE_USAGE_PLAYBACK_NORMAL, DXVAHDDDI_DEVICE_USAGE, d3dumddi/DXVAHDDDI_DEVICE_USAGE_OPTIMAL_QUALITY, _DXVAHDDDI_DEVICE_USAGE, d3dumddi/DXVAHDDDI_DEVICE_USAGE, DXVAHDDDI_DEVICE_USAGE_OPTIMAL_QUALITY, d3dumddi/DXVAHDDDI_DEVICE_USAGE_OPTIMAL_SPEED, display.dxvahdddi_device_usage, DXVAHDDDI_DEVICE_USAGE enumeration [Display Devices], DXVA2_Structs_37d96cb2-48a3-4538-9225-e63bfe0b5b5f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ A DXVAHDDDI_DEVICE_USAGE-typed value is specified in the <b>Usage</b> member of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_DEVICE_USAGE is supported beginning with the Windows 7 operating system. DXVAHDDDI_DEVICE_USAGE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2aece5f0-5cfd-47fe-b8c1-e191f0a4296d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExecuteWide, ExecuteWide method [Windows Debugging], IDebugControl4 interface, debugger.executewide, IDebugControl4, ExecuteWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteWide method, IDebugControl4::ExecuteWide, dbgeng/IDebugControl4::ExecuteWide
+ms.keywords : ExecuteWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::ExecuteWide, debugger.executewide, ExecuteWide, ExecuteWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteWide method, IDebugControl4::ExecuteWide, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -131,14 +131,9 @@ This method executes the given command string.  If the string has multiple comma
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

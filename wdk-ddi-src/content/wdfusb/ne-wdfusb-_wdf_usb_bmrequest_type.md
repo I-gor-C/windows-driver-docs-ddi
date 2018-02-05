@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c20e7aec-32e7-401d-8c40-aa6ac191e857
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : BmRequestVendor, wdfusb/WDF_USB_BMREQUEST_TYPE, wdfusb/BmRequestClass, WDF_USB_BMREQUEST_TYPE, kmdf.wdf_usb_bmrequest_type, _WDF_USB_BMREQUEST_TYPE, BmRequestClass, wdfusb/BmRequestVendor, BmRequestStandard, wdfusb/BmRequestStandard, WDF_USB_BMREQUEST_TYPE enumeration, wdf.wdf_usb_bmrequest_type, DFUsbRef_01dc6407-8fa2-462a-848c-2a8fc53ef50b.xml
+ms.keywords : wdfusb/WDF_USB_BMREQUEST_TYPE, WDF_USB_BMREQUEST_TYPE, BmRequestStandard, BmRequestClass, wdfusb/BmRequestClass, DFUsbRef_01dc6407-8fa2-462a-848c-2a8fc53ef50b.xml, BmRequestVendor, kmdf.wdf_usb_bmrequest_type, _WDF_USB_BMREQUEST_TYPE, wdf.wdf_usb_bmrequest_type, wdfusb/BmRequestVendor, wdfusb/BmRequestStandard, WDF_USB_BMREQUEST_TYPE enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,7 +82,6 @@ For more information about data transfer types for a USB control transfer, see t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |

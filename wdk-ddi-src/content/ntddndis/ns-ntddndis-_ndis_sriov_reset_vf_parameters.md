@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0f3c1da5-7e1d-4e13-9942-bedb9ddaf541
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_SRIOV_RESET_VF_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SRIOV_RESET_VF_PARAMETERS, NDIS_SRIOV_RESET_VF_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_RESET_VF_PARAMETERS, PNDIS_SRIOV_RESET_VF_PARAMETERS, *PNDIS_SRIOV_RESET_VF_PARAMETERS, ntddndis/PNDIS_SRIOV_RESET_VF_PARAMETERS, NDIS_SRIOV_RESET_VF_PARAMETERS, netvista.ndis_sriov_reset_vf_parameters
+ms.keywords : ntddndis/NDIS_SRIOV_RESET_VF_PARAMETERS, netvista.ndis_sriov_reset_vf_parameters, _NDIS_SRIOV_RESET_VF_PARAMETERS, *PNDIS_SRIOV_RESET_VF_PARAMETERS, NDIS_SRIOV_RESET_VF_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_SRIOV_RESET_VF_PARAMETERS, PNDIS_SRIOV_RESET_VF_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_RESET_VF_PARAMETERS, ntddndis/PNDIS_SRIOV_RESET_VF_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,16 +80,14 @@ The <b>NDIS_SRIOV_RESET_VF_PARAMETERS</b> structure is used in OID set requests 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451889">OID_SRIOV_RESET_VF</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451889">OID_SRIOV_RESET_VF</a>
 
 <b></b>
 

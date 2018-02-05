@@ -97,26 +97,22 @@ Also see <a href="https://msdn.microsoft.com/04d0d17b-c326-417d-b2e8-58b33420455
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
 | **IRQL** | "(See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
 
 <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>
 
 <a href="https://msdn.microsoft.com/0b6a02c2-e672-4568-a890-491c721ec3a7">Pin-Centric Processing</a>
 
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 
 <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
-
-<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 
  
 

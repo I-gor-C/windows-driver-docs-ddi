@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 40371218-E948-475E-92E6-0CB02D348008
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugclient5_popoutputlineprefix, PopOutputLinePrefix method [Windows Debugging], IDebugClient5 interface, PopOutputLinePrefix method [Windows Debugging], PopOutputLinePrefix, IDebugClient5 interface [Windows Debugging], PopOutputLinePrefix method, IDebugClient5::PopOutputLinePrefix, dbgeng/IDebugClient5::PopOutputLinePrefix, IDebugClient5
+ms.keywords : debugger.idebugclient5_popoutputlineprefix, dbgeng/IDebugClient5::PopOutputLinePrefix, IDebugClient5 interface [Windows Debugging], PopOutputLinePrefix method, PopOutputLinePrefix method [Windows Debugging], IDebugClient5 interface, IDebugClient5::PopOutputLinePrefix, PopOutputLinePrefix method [Windows Debugging], IDebugClient5, PopOutputLinePrefix
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,14 +65,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

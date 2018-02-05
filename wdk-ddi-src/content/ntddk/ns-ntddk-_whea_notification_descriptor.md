@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 5b228bb8-dd31-484d-b87a-ec7fed433a4a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_NOTIFICATION_DESCRIPTOR, ErrorThresholdWindowRW, WHEA_NOTIFICATION_TYPE_NMI, SwitchToPollingWindowRW, whearef_c2a5ab66-2598-447b-8f5b-d6398c55ff1a.xml, WHEA_NOTIFICATION_TYPE_POLLED, whea.whea_notification_descriptor, *PWHEA_NOTIFICATION_DESCRIPTOR, PollIntervalRW, SwitchToPollingThresholdRW, _WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR structure [WHEA Drivers and Applications], WHEA_NOTIFICATION_TYPE_SCI, AsUSHORT, WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT, WHEA_NOTIFICATION_DESCRIPTOR, Reserved, ErrorThresholdRW, WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT
+ms.keywords : "_WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT, Reserved, ErrorThresholdWindowRW, SwitchToPollingThresholdRW, *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_POLLED, WHEA_NOTIFICATION_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/WHEA_NOTIFICATION_DESCRIPTOR, whea.whea_notification_descriptor, WHEA_NOTIFICATION_TYPE_NMI, ErrorThresholdRW, PollIntervalRW, SwitchToPollingWindowRW, whearef_c2a5ab66-2598-447b-8f5b-d6398c55ff1a.xml, AsUSHORT, WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT, WHEA_NOTIFICATION_TYPE_SCI, WHEA_NOTIFICATION_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -263,16 +263,14 @@ A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="..\ntd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
 
  
 

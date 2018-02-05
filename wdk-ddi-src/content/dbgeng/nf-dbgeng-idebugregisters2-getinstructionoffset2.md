@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c5757dbb-16bf-46f9-836f-5a94089bbb1e
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetInstructionOffset2 method [Windows Debugging], debugger.getinstructionoffset2, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset2 method, IDebugRegisters_92189e99-c8f6-4422-8421-62fe194a05b6.xml, dbgeng/IDebugRegisters2::GetInstructionOffset2, IDebugRegisters2::GetInstructionOffset2, GetInstructionOffset2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2, GetInstructionOffset2
+ms.keywords : GetInstructionOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetInstructionOffset2, GetInstructionOffset2 method [Windows Debugging], IDebugRegisters_92189e99-c8f6-4422-8421-62fe194a05b6.xml, dbgeng/IDebugRegisters2::GetInstructionOffset2, IDebugRegisters2, IDebugRegisters2::GetInstructionOffset2, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset2 method, debugger.getinstructionoffset2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -134,14 +134,9 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

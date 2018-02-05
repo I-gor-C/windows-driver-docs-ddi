@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : e489601e-b016-4681-97a0-78f42004909f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/PshedAllocateMemory, whea.pshedallocatememory, PshedAllocateMemory function [WHEA Drivers and Applications], whearef_e18a3aba-ca99-4b65-92de-1c6b8c740e31.xml, PshedAllocateMemory
+ms.keywords : PshedAllocateMemory function [WHEA Drivers and Applications], PshedAllocateMemory, whearef_e18a3aba-ca99-4b65-92de-1c6b8c740e31.xml, whea.pshedallocatememory, ntddk/PshedAllocateMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a bloc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | Pshed.lib |
+| **DLL** | Pshed.dll |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c2a50621-fa84-4525-86f7-845e886203fe
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTReleaseKeyedMutex function [Display Devices], OpenGL_Functions_16fd3037-2615-49c0-8500-7c93bcda3c9f.xml, display.d3dkmtreleasekeyedmutex, d3dkmthk/D3DKMTReleaseKeyedMutex, D3DKMTReleaseKeyedMutex
+ms.keywords : d3dkmthk/D3DKMTReleaseKeyedMutex, display.d3dkmtreleasekeyedmutex, OpenGL_Functions_16fd3037-2615-49c0-8500-7c93bcda3c9f.xml, D3DKMTReleaseKeyedMutex function [Display Devices], D3DKMTReleaseKeyedMutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,14 +115,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTReleaseKeyedMutex is supported beginning with the Windows 7 operating system. D3DKMTReleaseKeyedMutex is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

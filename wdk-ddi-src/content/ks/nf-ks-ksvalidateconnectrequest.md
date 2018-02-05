@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 64343a8a-9629-469e-95a3-b9c140cdd324
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsValidateConnectRequest, ksfunc_2df36f34-31c9-48f2-859c-1829b60fbae7.xml, stream.ksvalidateconnectrequest, ks/KsValidateConnectRequest, KsValidateConnectRequest function [Streaming Media Devices]
+ms.keywords : ks/KsValidateConnectRequest, stream.ksvalidateconnectrequest, ksfunc_2df36f34-31c9-48f2-859c-1829b60fbae7.xml, KsValidateConnectRequest function [Streaming Media Devices], KsValidateConnectRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,11 +87,6 @@ The buffer is passed a copy of the original input buffer, if the originator was 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

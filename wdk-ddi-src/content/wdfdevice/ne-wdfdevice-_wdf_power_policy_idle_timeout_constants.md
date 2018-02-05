@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a707c7b9-2fc9-48c8-9492-b911c126668b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi_types/IdleTimeoutDefaultConstant, wudfddi_types/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration, IdleTimeoutDefaultConstant, wdfdevice/IdleTimeoutDefaultConstant, wdf.wdf_power_policy_idle_timeout_constants, wdfdevice/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
+ms.keywords : wudfddi_types/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, wdf.wdf_power_policy_idle_timeout_constants, IdleTimeoutDefaultConstant, wudfddi_types/IdleTimeoutDefaultConstant, wdfdevice/IdleTimeoutDefaultConstant, _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration, wdfdevice/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -65,7 +65,6 @@ typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wdfdevice.h (include Wdf.h) |

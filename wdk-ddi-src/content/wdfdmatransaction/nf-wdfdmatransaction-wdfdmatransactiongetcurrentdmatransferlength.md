@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 20a27ad7-0b27-494e-b761-fc3edf71e8c9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdmatransaction/WdfDmaTransactionGetCurrentDmaTransferLength, WdfDmaTransactionGetCurrentDmaTransferLength method, WdfDmaTransactionGetCurrentDmaTransferLength, DFDmaObjectRef_e0fc16e5-9adb-44c5-be53-5e7929ede3aa.xml, kmdf.wdfdmatransactiongetcurrentdmatransferlength, PFN_WDFDMATRANSACTIONGETCURRENTDMATRANSFERLENGTH, wdf.wdfdmatransactiongetcurrentdmatransferlength
+ms.keywords : WdfDmaTransactionGetCurrentDmaTransferLength, DFDmaObjectRef_e0fc16e5-9adb-44c5-be53-5e7929ede3aa.xml, wdfdmatransaction/WdfDmaTransactionGetCurrentDmaTransferLength, WdfDmaTransactionGetCurrentDmaTransferLength method, kmdf.wdfdmatransactiongetcurrentdmatransferlength, wdf.wdfdmatransactiongetcurrentdmatransferlength, PFN_WDFDMATRANSACTIONGETCURRENTDMATRANSFERLENGTH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,20 +77,18 @@ For more information about complete DMA transfers, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+
+<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompletedwithlength.md">WdfDmaTransactionDmaCompletedWithLength</a>
 

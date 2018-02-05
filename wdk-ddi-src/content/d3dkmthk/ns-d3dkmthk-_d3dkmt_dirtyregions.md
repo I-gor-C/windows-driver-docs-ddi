@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 53565c01-9e6f-4ade-8c4a-2a4dbe7d48c7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_DIRTYREGIONS, D3DKMT_DIRTYREGIONS, _D3DKMT_DIRTYREGIONS, display.d3dkmt_dirtyregions, D3DKMT_DIRTYREGIONS structure [Display Devices], OpenGL_Structs_a6113f9d-8ffc-4e75-8366-8329ad6c114b.xml
+ms.keywords : "_D3DKMT_DIRTYREGIONS, D3DKMT_DIRTYREGIONS structure [Display Devices], OpenGL_Structs_a6113f9d-8ffc-4e75-8366-8329ad6c114b.xml, D3DKMT_DIRTYREGIONS, display.d3dkmt_dirtyregions, d3dkmthk/D3DKMT_DIRTYREGIONS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _D3DKMT_DIRTYREGIONS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMT_DIRTYREGIONS is supported beginning with the Windows 7 operating system. D3DKMT_DIRTYREGIONS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 35119100-adf9-4376-bb1a-7317733fbcc5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SetCPSUIUserData function [Print Devices], compstui/SetCPSUIUserData, print.setcpsuiuserdata, SetCPSUIUserData, cpsuifnc_d2f38387-ece5-4894-86d5-0ef66f62a72c.xml
+ms.keywords : print.setcpsuiuserdata, cpsuifnc_d2f38387-ece5-4894-86d5-0ef66f62a72c.xml, SetCPSUIUserData function [Print Devices], SetCPSUIUserData, compstui/SetCPSUIUserData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,11 +77,7 @@ The handle specified for <i>hDlg</i> must be the handle received as input to the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | compstui.h (include Compstui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Compstui.lib |
+| **DLL** | Compstui.dll |

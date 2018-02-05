@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 278f4fff-6e71-4544-8838-90f659c5029e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortLogError, scsiprt_5d3ec5ab-07f8-47d1-ab0c-363639c1e8aa.xml, srb/ScsiPortLogError, ScsiPortLogError routine [Storage Devices], storage.scsiportlogerror
+ms.keywords : srb/ScsiPortLogError, ScsiPortLogError, storage.scsiportlogerror, ScsiPortLogError routine [Storage Devices], scsiprt_5d3ec5ab-07f8-47d1-ab0c-363639c1e8aa.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -206,14 +206,9 @@ A miniport driver should log all real hardware errors. However, it should not lo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

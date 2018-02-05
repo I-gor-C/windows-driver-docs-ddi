@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25a195ab-faf1-488d-a9b2-65ae88b57ebd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, _FILE_RENAME_INFORMATION, ntifs/FILE_RENAME_INFORMATION, PFILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION, fileinformationstructures_d9a99263-5aec-400a-ab30-73949a81a4f6.xml, ifsk.file_rename_information, PFILE_RENAME_INFORMATION structure pointer [Installable File System Drivers], FILE_RENAME_INFORMATION structure [Installable File System Drivers]
+ms.keywords : PFILE_RENAME_INFORMATION, fileinformationstructures_d9a99263-5aec-400a-ab30-73949a81a4f6.xml, FILE_RENAME_INFORMATION structure [Installable File System Drivers], ntifs/FILE_RENAME_INFORMATION, _FILE_RENAME_INFORMATION, ntifs/PFILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, PFILE_RENAME_INFORMATION structure pointer [Installable File System Drivers], ifsk.file_rename_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION
+req.typenames : "*PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION"
 ---
 
 # _FILE_RENAME_INFORMATION structure
@@ -174,16 +174,13 @@ If <b>ReplaceIfExists</b> is set to <b>TRUE</b>, the rename operation will succe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
-
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
 

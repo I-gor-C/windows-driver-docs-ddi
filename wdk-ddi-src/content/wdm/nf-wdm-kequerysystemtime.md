@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : de271bd2-93cf-444d-889d-09c7e654e688
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_0eaf1b30-c365-45ac-828c-fbcc7cd71ff3.xml, KeQuerySystemTime routine [Kernel-Mode Driver Architecture], wdm/KeQuerySystemTime, KeQuerySystemTime, kernel.kequerysystemtime
+ms.keywords : KeQuerySystemTime, kernel.kequerysystemtime, k105_0eaf1b30-c365-45ac-828c-fbcc7cd71ff3.xml, KeQuerySystemTime routine [Kernel-Mode Driver Architecture], wdm/KeQuerySystemTime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,24 +69,22 @@ System time is a count of 100-nanosecond intervals since January 1, 1601. System
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
-
-<a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
-
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
 
-<a href="..\ntddk\nf-ntddk-kequerytickcount.md">KeQueryTickCount</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
+
+<a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
 
  
 

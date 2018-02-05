@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 3A9DECE8-E85A-49D5-8AF1-6C7BA8B1AB7D
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : "_LPI_STATE_FLAGS, LPI_STATE_FLAGS union [ACPI Devices], acpi.lpi_state_flags, LPI_STATE_FLAGS, acpitabl/LPI_STATE_FLAGS, *PLPI_STATE_FLAGS"
+ms.keywords : LPI_STATE_FLAGS union [ACPI Devices], acpi.lpi_state_flags, *PLPI_STATE_FLAGS, acpitabl/LPI_STATE_FLAGS, _LPI_STATE_FLAGS, LPI_STATE_FLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PLPI_STATE_FLAGS, LPI_STATE_FLAGS"
+req.typenames : LPI_STATE_FLAGS, *PLPI_STATE_FLAGS
 ---
 
 # _LPI_STATE_FLAGS structure
@@ -64,7 +64,4 @@ An LPI state as an integer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | acpitabl.h (include Acpitabl.h) |

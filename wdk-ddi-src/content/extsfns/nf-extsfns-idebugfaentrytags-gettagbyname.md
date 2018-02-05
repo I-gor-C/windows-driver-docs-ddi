@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3EA8FE2A-85CE-4C81-81EB-F08028F0F822
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugfaentrytags_gettagbyname, extsfns/IDebugFAEntryTags::GetTagByName, IDebugFAEntryTags::GetTagByName, GetTagByName method [Windows Debugging], IDebugFAEntryTags interface, IDebugFAEntryTags, IDebugFAEntryTags interface [Windows Debugging], GetTagByName method, GetTagByName, GetTagByName method [Windows Debugging]
+ms.keywords : GetTagByName method [Windows Debugging], IDebugFAEntryTags interface, IDebugFAEntryTags::GetTagByName, GetTagByName, IDebugFAEntryTags interface [Windows Debugging], GetTagByName method, debugger.idebugfaentrytags_gettagbyname, GetTagByName method [Windows Debugging], extsfns/IDebugFAEntryTags::GetTagByName, IDebugFAEntryTags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,26 +85,21 @@ If you specify a <i>PluginId</i>, this method does the following:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | extsfns.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | extsfns.h |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+
+<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 
 <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">IDebugFAEntryTags</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj983428">Metadata Files for Analysis Extension Plug-ins</a>
 
 <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
-
-<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
-
-<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 
  
 

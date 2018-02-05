@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0c084258-2bd6-47a8-a060-d4ba2734ebed
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-Fibre_3babb7ed-9d87-4154-b038-8e503750eed4.xml, SendRPL_IN, storage.sendrpl_in, *PSendRPL_IN, hbapiwmi/SendRPL_IN, PSendRPL_IN structure pointer [Storage Devices], PSendRPL_IN, hbapiwmi/PSendRPL_IN, SendRPL_IN structure [Storage Devices], _SendRPL_IN
+ms.keywords : PSendRPL_IN, structs-Fibre_3babb7ed-9d87-4154-b038-8e503750eed4.xml, _SendRPL_IN, storage.sendrpl_in, hbapiwmi/PSendRPL_IN, hbapiwmi/SendRPL_IN, SendRPL_IN, PSendRPL_IN structure pointer [Storage Devices], *PSendRPL_IN, SendRPL_IN structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the SendRPL_IN structure in <i>Hba
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

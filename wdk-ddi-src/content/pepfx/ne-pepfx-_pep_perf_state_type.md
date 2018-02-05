@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8DF40988-995E-4C37-8864-0C405DE885C9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PERF_STATE_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PEP_PERF_STATE_TYPE, PepPerfStateTypeMax, pepfx/PepPerfStateTypeRange, pepfx/PepPerfStateTypeMax, PepPerfStateTypeRange, _PEP_PERF_STATE_TYPE, PEP_PERF_STATE_TYPE, PepPerfStateTypeDiscrete, pepfx/PepPerfStateTypeDiscrete, *PPEP_PERF_STATE_TYPE, kernel.pep_perf_state_type
+ms.keywords : pepfx/PEP_PERF_STATE_TYPE, PEP_PERF_STATE_TYPE, PEP_PERF_STATE_TYPE enumeration [Kernel-Mode Driver Architecture], PepPerfStateTypeRange, pepfx/PepPerfStateTypeMax, PepPerfStateTypeMax, pepfx/PepPerfStateTypeDiscrete, kernel.pep_perf_state_type, _PEP_PERF_STATE_TYPE, pepfx/PepPerfStateTypeRange, *PPEP_PERF_STATE_TYPE, PepPerfStateTypeDiscrete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_component_perf_set
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

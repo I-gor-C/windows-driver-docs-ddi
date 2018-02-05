@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dcedbdd0-178b-4e44-aaaa-25a5b219324a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, ntddndis/PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, ntddndis/NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_property_delete_parameters, _NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS"
+ms.keywords : netvista.ndis_switch_property_delete_parameters, ntddndis/PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, _NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, *PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, ntddndis/NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, *PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS
+req.typenames : "*PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS"
 ---
 
 # _NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure
@@ -94,18 +94,16 @@ For more information about extensible switch policies, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_switch_property_type.md">NDIS_SWITCH_PROPERTY_TYPE</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598281">OID_SWITCH_PROPERTY_DELETE</a>
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_switch_property_type.md">NDIS_SWITCH_PROPERTY_TYPE</a>
 
 <b></b>
 

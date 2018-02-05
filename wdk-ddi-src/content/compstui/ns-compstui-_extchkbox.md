@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : b3b82474-d4e5-467c-93dc-30edac189c66
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PEXTCHKBOX, EXTCHKBOX, _EXTCHKBOX, cpsuifnc_3d620423-7173-4a78-b087-f8f269c5715d.xml, EXTCHKBOX structure [Print Devices], print.extchkbox, compstui/PEXTCHKBOX, PEXTCHKBOX structure pointer [Print Devices], *PEXTCHKBOX, compstui/EXTCHKBOX
+ms.keywords : PEXTCHKBOX, _EXTCHKBOX, compstui/PEXTCHKBOX, EXTCHKBOX, cpsuifnc_3d620423-7173-4a78-b087-f8f269c5715d.xml, *PEXTCHKBOX, compstui/EXTCHKBOX, print.extchkbox, PEXTCHKBOX structure pointer [Print Devices], EXTCHKBOX structure [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PEXTCHKBOX, EXTCHKBOX"
+req.typenames : EXTCHKBOX, *PEXTCHKBOX
 ---
 
 # _EXTCHKBOX structure
@@ -161,9 +161,6 @@ An extended check box is a CPSUI-defined type of check box that can be associate
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |
 
 ## See Also

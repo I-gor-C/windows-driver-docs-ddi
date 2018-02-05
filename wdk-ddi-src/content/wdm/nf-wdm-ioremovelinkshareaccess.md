@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : FFCD4705-4E5D-4D4E-9E6D-D06A7D21DC17
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoRemoveLinkShareAccess function [Kernel-Mode Driver Architecture], IoRemoveLinkShareAccess, kernel.ioremovelinkshareaccess, wdm/IoRemoveLinkShareAccess
+ms.keywords : kernel.ioremovelinkshareaccess, IoRemoveLinkShareAccess, IoRemoveLinkShareAccess function [Kernel-Mode Driver Architecture], wdm/IoRemoveLinkShareAccess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,22 +83,20 @@ Callers of <b>IoRemoveLinkShareAccess</b> must be running at IRQL = PASSIVE_LEVE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-iosetlinkshareaccess.md">IoSetLinkShareAccess</a>
 
-<a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
-
 <a href="..\wdm\nf-wdm-ioupdatelinkshareaccess.md">IoUpdateLinkShareAccess</a>
+
+<a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
 
  
 

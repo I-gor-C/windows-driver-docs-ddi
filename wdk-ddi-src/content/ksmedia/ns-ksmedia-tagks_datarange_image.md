@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 81ad341a-5f68-43aa-98ea-193780a7c5b2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_DATARANGE_IMAGE, PKS_DATARANGE_IMAGE structure pointer [Streaming Media Devices], PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE structure [Streaming Media Devices], KS_DATARANGE_IMAGE, *PKS_DATARANGE_IMAGE, tagKS_DATARANGE_IMAGE, stream.ks_datarange_image, ksmedia/PKS_DATARANGE_IMAGE
+ms.keywords : ksmedia/KS_DATARANGE_IMAGE, stream.ks_datarange_image, KS_DATARANGE_IMAGE, *PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE structure [Streaming Media Devices], tagKS_DATARANGE_IMAGE, PKS_DATARANGE_IMAGE, PKS_DATARANGE_IMAGE structure pointer [Streaming Media Devices], ksmedia/PKS_DATARANGE_IMAGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KS_DATARANGE_IMAGE, *PKS_DATARANGE_IMAGE
+req.typenames : "*PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE"
 ---
 
 # tagKS_DATARANGE_IMAGE structure
@@ -69,9 +69,7 @@ A <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

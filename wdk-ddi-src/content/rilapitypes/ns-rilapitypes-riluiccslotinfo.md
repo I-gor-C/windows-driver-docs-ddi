@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5fd25815-40b1-4fba-a7e8-fed24d731ab0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILUICCSLOTINFO structure [Network Drivers Starting with Windows Vista], RILUICCSLOTINFO, netvista.riluiccslotinfo_2, *LPRILUICCSLOTINFO, rilapitypes/RILUICCSLOTINFO
+ms.keywords : "*LPRILUICCSLOTINFO, RILUICCSLOTINFO, netvista.riluiccslotinfo_2, rilapitypes/RILUICCSLOTINFO, RILUICCSLOTINFO structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILUICCSLOTINFO, *LPRILUICCSLOTINFO
+req.typenames : "*LPRILUICCSLOTINFO, RILUICCSLOTINFO"
 req.product : Windows 10 or later.
 ---
 
@@ -75,7 +75,4 @@ typedef struct _RILUICCSLOTINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

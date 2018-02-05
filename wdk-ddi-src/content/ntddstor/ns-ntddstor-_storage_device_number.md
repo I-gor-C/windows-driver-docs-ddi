@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3efed879-bde4-44ea-9af5-fc35a2ac27fc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-general_e5b6df4e-787c-415b-82ed-14dffa34a95e.xml, _STORAGE_DEVICE_NUMBER, PSTORAGE_DEVICE_NUMBER structure pointer [Storage Devices], PSTORAGE_DEVICE_NUMBER, ntddstor/PSTORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER structure [Storage Devices], ntddstor/STORAGE_DEVICE_NUMBER, storage.storage_device_number, *PSTORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER
+ms.keywords : storage.storage_device_number, structs-general_e5b6df4e-787c-415b-82ed-14dffa34a95e.xml, _STORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER structure [Storage Devices], PSTORAGE_DEVICE_NUMBER, ntddstor/PSTORAGE_DEVICE_NUMBER, ntddstor/STORAGE_DEVICE_NUMBER, PSTORAGE_DEVICE_NUMBER structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER"
+req.typenames : STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER
 ---
 
 # _STORAGE_DEVICE_NUMBER structure
@@ -73,9 +73,6 @@ The values in the STORAGE_DEVICE_NUMBER structure are guaranteed to remain uncha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

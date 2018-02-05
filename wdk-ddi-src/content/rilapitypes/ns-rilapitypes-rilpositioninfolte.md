@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 40f4dfca-7ee6-48d2-b0a4-8a563587b2ab
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILPOSITIONINFOLTE, RILPOSITIONINFOLTE structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfolte, RILPOSITIONINFOLTE, *LPRILPOSITIONINFOLTE
+ms.keywords : RILPOSITIONINFOLTE, *LPRILPOSITIONINFOLTE, RILPOSITIONINFOLTE structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfolte, rilapitypes/RILPOSITIONINFOLTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -105,9 +105,6 @@ Timing Advance (0...255) in bit periods, where a bit period is 48/13µs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

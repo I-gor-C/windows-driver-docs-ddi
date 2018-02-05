@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : A80C5714-525F-4E07-851D-2E203DD9387A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIsPartialPlaceholderFileHandle, ntifs/RtlIsPartialPlaceholderFileHandle, ifsk.rtlispartialplaceholderfilehandle, RtlIsPartialPlaceholderFileHandle routine [Installable File System Drivers]
+ms.keywords : RtlIsPartialPlaceholderFileHandle, ntifs/RtlIsPartialPlaceholderFileHandle, RtlIsPartialPlaceholderFileHandle routine [Installable File System Drivers], ifsk.rtlispartialplaceholderfilehandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,10 @@ Returns<b> STATUS_SUCCESS</b> if <i>IsPartialPlaceholder</i> is valid and not un
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

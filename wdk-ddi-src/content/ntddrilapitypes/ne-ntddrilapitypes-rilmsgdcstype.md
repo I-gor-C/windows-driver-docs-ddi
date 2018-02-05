@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 557fc92e-6550-44ea-ac09-bb0b74e1275f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILMSGDCSTYPE, ntddrilapitypes/RIL_DCSTYPE_MAX, RILMSGDCSTYPE enumeration [Network Drivers Starting with Windows Vista], netvista.rilmsgdcstype, ntddrilapitypes/RIL_DCSTYPE_MSGCLASS, RILMSGDCSTYPE, ntddrilapitypes/RIL_DCSTYPE_MSGWAIT, ntddrilapitypes/RIL_DCSTYPE_LANGUAGE, RIL_DCSTYPE_MSGCLASS, RIL_DCSTYPE_MAX, RIL_DCSTYPE_MSGWAIT, RIL_DCSTYPE_LANGUAGE
+ms.keywords : RIL_DCSTYPE_MSGWAIT, ntddrilapitypes/RIL_DCSTYPE_LANGUAGE, ntddrilapitypes/RIL_DCSTYPE_MSGWAIT, RIL_DCSTYPE_LANGUAGE, netvista.rilmsgdcstype, ntddrilapitypes/RIL_DCSTYPE_MAX, ntddrilapitypes/RIL_DCSTYPE_MSGCLASS, RIL_DCSTYPE_MAX, RILMSGDCSTYPE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILMSGDCSTYPE, RILMSGDCSTYPE, RIL_DCSTYPE_MSGCLASS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILMSGDCSTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5520685c-c438-460b-aac5-791098e14044
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsDereferenceBusObject, stream.ksdereferencebusobject, KsDereferenceBusObject, KsDereferenceBusObject function [Streaming Media Devices], ksfunc_e3b1ab42-bb78-44f7-bc34-64edcf843471.xml
+ms.keywords : ksfunc_e3b1ab42-bb78-44f7-bc34-64edcf843471.xml, KsDereferenceBusObject function [Streaming Media Devices], ks/KsDereferenceBusObject, KsDereferenceBusObject, stream.ksdereferencebusobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,6 @@ This is used by filters that use the device header to keep track of the correspo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

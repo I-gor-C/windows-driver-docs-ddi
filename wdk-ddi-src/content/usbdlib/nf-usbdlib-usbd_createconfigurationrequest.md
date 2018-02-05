@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : e1f397f6-2f33-4352-9bbc-2b2a49dcd067
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_CreateConfigurationRequest routine [Buses], usbdlib/USBD_CreateConfigurationRequest, buses.usbd_createconfigurationrequest, USBD_CreateConfigurationRequest, usbfunc_d2701cb6-8159-48e0-b668-bb3b02226a7d.xml
+ms.keywords : USBD_CreateConfigurationRequest, usbdlib/USBD_CreateConfigurationRequest, usbfunc_d2701cb6-8159-48e0-b668-bb3b02226a7d.xml, buses.usbd_createconfigurationrequest, USBD_CreateConfigurationRequest routine [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -72,20 +72,16 @@ Size of the <a href="..\usb\ns-usb-_urb.md">URB</a> structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Deprecated. Use USBD_CreateConfigurationRequestEx instead. Deprecated. Use USBD_CreateConfigurationRequestEx instead. |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Usbd.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
-
 <a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540134">USB device driver programming reference</a>
 
  
 

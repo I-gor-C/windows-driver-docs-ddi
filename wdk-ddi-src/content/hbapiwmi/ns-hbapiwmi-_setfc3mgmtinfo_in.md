@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2ad51d73-67f3-4ce0-b7e1-6bdc1b7e3b0c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SetFC3MgmtInfo_IN, _SetFC3MgmtInfo_IN, hbapiwmi/PSetFC3MgmtInfo_IN, PSetFC3MgmtInfo_IN, structs-Fibre_d4b69005-dc94-411f-810a-6767699e0b11.xml, PSetFC3MgmtInfo_IN structure pointer [Storage Devices], storage.setfc3mgmtinfo_in, hbapiwmi/SetFC3MgmtInfo_IN, *PSetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN structure [Storage Devices]
+ms.keywords : "*PSetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN structure [Storage Devices], hbapiwmi/PSetFC3MgmtInfo_IN, storage.setfc3mgmtinfo_in, PSetFC3MgmtInfo_IN, hbapiwmi/SetFC3MgmtInfo_IN, PSetFC3MgmtInfo_IN structure pointer [Storage Devices], structs-Fibre_d4b69005-dc94-411f-810a-6767699e0b11.xml, _SetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ The WMI tool suite generates a declaration of the SetFC3MgmtInfo_IN structure in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

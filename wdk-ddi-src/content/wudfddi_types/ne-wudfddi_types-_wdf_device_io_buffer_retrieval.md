@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 50ece9a1-8d0d-442c-962c-488bd6368a67
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_DEVICE_IO_BUFFER_RETRIEVAL, umdfstructs_7bb0e71c-fbce-4f29-9373-a80527403e04.xml, *PWDF_DEVICE_IO_BUFFER_RETRIEVAL, WdfDeviceIoBufferRetrievalInvalid, wudfddi_types/WdfDeviceIoBufferRetrievalMaximum, wudfddi_types/WdfDeviceIoBufferRetrievalInvalid, PWDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration pointer, WdfDeviceIoBufferRetrievalDeferred, _WDF_DEVICE_IO_BUFFER_RETRIEVAL, WDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration, wudfddi_types/WdfDeviceIoBufferRetrievalCopyImmediately, wudfddi_types/WDF_DEVICE_IO_BUFFER_RETRIEVAL, wdf.wdf_device_io_buffer_retrieval, WdfDeviceIoBufferRetrievalMaximum, wudfddi_types/PWDF_DEVICE_IO_BUFFER_RETRIEVAL, PWDF_DEVICE_IO_BUFFER_RETRIEVAL, wudfddi_types/WdfDeviceIoBufferRetrievalDeferred, umdf.wdf_device_io_buffer_retrieval, WdfDeviceIoBufferRetrievalCopyImmediately
+ms.keywords : "_WDF_DEVICE_IO_BUFFER_RETRIEVAL, WdfDeviceIoBufferRetrievalCopyImmediately, *PWDF_DEVICE_IO_BUFFER_RETRIEVAL, WDF_DEVICE_IO_BUFFER_RETRIEVAL, umdf.wdf_device_io_buffer_retrieval, wudfddi_types/WdfDeviceIoBufferRetrievalCopyImmediately, WDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration, wudfddi_types/WdfDeviceIoBufferRetrievalDeferred, wdf.wdf_device_io_buffer_retrieval, WdfDeviceIoBufferRetrievalMaximum, wudfddi_types/WdfDeviceIoBufferRetrievalInvalid, PWDF_DEVICE_IO_BUFFER_RETRIEVAL, WdfDeviceIoBufferRetrievalDeferred, WdfDeviceIoBufferRetrievalInvalid, umdfstructs_7bb0e71c-fbce-4f29-9373-a80527403e04.xml, wudfddi_types/WDF_DEVICE_IO_BUFFER_RETRIEVAL, wudfddi_types/PWDF_DEVICE_IO_BUFFER_RETRIEVAL, PWDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration pointer, wudfddi_types/WdfDeviceIoBufferRetrievalMaximum"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DEVICE_IO_BUFFER_RETRIEVAL, WDF_DEVICE_IO_BUFFER_RETRIEVAL"
+req.typenames : WDF_DEVICE_IO_BUFFER_RETRIEVAL, *PWDF_DEVICE_IO_BUFFER_RETRIEVAL
 req.product : Windows 10 or later.
 ---
 
@@ -112,8 +112,6 @@ For more information about accessing an I/O request's data buffers, see <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 

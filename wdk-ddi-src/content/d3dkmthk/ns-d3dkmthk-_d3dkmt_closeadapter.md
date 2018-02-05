@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ef85d18a-c4cd-4999-8782-19e4114a0594
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_CLOSEADAPTER, D3DKMT_CLOSEADAPTER structure [Display Devices], D3DKMT_CLOSEADAPTER, d3dkmthk/D3DKMT_CLOSEADAPTER, display.d3dkmt_closeadapter, OpenGL_Structs_578046d6-1625-4485-b43c-16ce2b7e812c.xml"
+ms.keywords : "_D3DKMT_CLOSEADAPTER, D3DKMT_CLOSEADAPTER structure [Display Devices], display.d3dkmt_closeadapter, D3DKMT_CLOSEADAPTER, d3dkmthk/D3DKMT_CLOSEADAPTER, OpenGL_Structs_578046d6-1625-4485-b43c-16ce2b7e812c.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DKMT_CLOSEADAPTER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

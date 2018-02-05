@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : C18A13B1-C4DD-4147-8CA3-4F23E689ACF3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/LineDisplayWindowDisplayBitmapData, PLineDisplayWindowDisplayBitmapData structure pointer, _LineDisplayWindowDisplayBitmapData, PLineDisplayWindowDisplayBitmapData, pos.linedisplaywindowdisplaybitmapdata, LineDisplayWindowDisplayBitmapData, LineDisplayWindowDisplayBitmapData structure, pointofservicedriverinterface/PLineDisplayWindowDisplayBitmapData
+ms.keywords : LineDisplayWindowDisplayBitmapData structure, PLineDisplayWindowDisplayBitmapData structure pointer, pos.linedisplaywindowdisplaybitmapdata, pointofservicedriverinterface/LineDisplayWindowDisplayBitmapData, PLineDisplayWindowDisplayBitmapData, _LineDisplayWindowDisplayBitmapData, pointofservicedriverinterface/PLineDisplayWindowDisplayBitmapData, LineDisplayWindowDisplayBitmapData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,7 +71,4 @@ typedef struct _LineDisplayWindowDisplayBitmapData {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

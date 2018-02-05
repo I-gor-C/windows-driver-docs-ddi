@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aba4cccd-267d-48cc-a6ff-be19802adfdc
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICECONFIGUREREQUESTDISPATCHING, wdfdevice/WdfDeviceConfigureRequestDispatching, WdfDeviceConfigureRequestDispatching method, wdf.wdfdeviceconfigurerequestdispatching, kmdf.wdfdeviceconfigurerequestdispatching, DFDeviceObjectGeneralRef_d1874c0c-e889-4225-8bbf-e8292edcb716.xml, WdfDeviceConfigureRequestDispatching
+ms.keywords : DFDeviceObjectGeneralRef_d1874c0c-e889-4225-8bbf-e8292edcb716.xml, WdfDeviceConfigureRequestDispatching method, WdfDeviceConfigureRequestDispatching, wdfdevice/WdfDeviceConfigureRequestDispatching, PFN_WDFDEVICECONFIGUREREQUESTDISPATCHING, kmdf.wdfdeviceconfigurerequestdispatching, wdf.wdfdeviceconfigurerequestdispatching
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,20 +137,19 @@ For more information about <b>WdfDeviceConfigureRequestDispatching</b>, see <a h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
-
 <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
 
  
 

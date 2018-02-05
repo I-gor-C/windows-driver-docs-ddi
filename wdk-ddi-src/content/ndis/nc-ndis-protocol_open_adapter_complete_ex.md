@@ -103,8 +103,8 @@ If the
 If
     <i>ProtocolBindAdapterEx</i> returned NDIS_STATUS_PENDING,
     <i>ProtocolOpenAdapterCompleteEx</i> can call the 
-    <mshelp:link keywords="netvista.ndiscompletebindadapterex" tabindex="0"><b>
-    NdisCompleteBindAdapterEx</b></mshelp:link> function to complete the binding operation. In this case, 
+    <a href="..\ndis\nf-ndis-ndiscompletebindadapterex.md">
+    NdisCompleteBindAdapterEx</a> function to complete the binding operation. In this case, 
     <i>ProtocolOpenAdapterCompleteEx</i> passes 
     <b>NdisCompleteBindAdapterEx</b> the 
     <i>BindContext</i> handle that NDIS passed to 
@@ -150,22 +150,18 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscompletebindadapterex.md">NdisCompleteBindAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndiscompletebindadapterex.md">NdisCompleteBindAdapterEx</a>
 
  
 

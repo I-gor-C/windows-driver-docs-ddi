@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fd1d0cf5-2ee2-44d8-945f-492af57c3990
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_SliceInfo, display.dxva_sliceinfo, _DXVA_SliceInfo, dxva/DXVA_SliceInfo, LPDXVA_SliceInfo, dxva/LPDXVA_SliceInfo, LPDXVA_SliceInfo structure pointer [Display Devices], *LPDXVA_SliceInfo, dxvaref_04736e26-0c58-4e92-9f45-1675565c9f55.xml, DXVA_SliceInfo structure [Display Devices]
+ms.keywords : "_DXVA_SliceInfo, dxva/LPDXVA_SliceInfo, DXVA_SliceInfo, *LPDXVA_SliceInfo, LPDXVA_SliceInfo, dxvaref_04736e26-0c58-4e92-9f45-1675565c9f55.xml, LPDXVA_SliceInfo structure pointer [Display Devices], dxva/DXVA_SliceInfo, DXVA_SliceInfo structure [Display Devices], display.dxva_sliceinfo"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXVA_SliceInfo, *LPDXVA_SliceInfo
+req.typenames : "*LPDXVA_SliceInfo, DXVA_SliceInfo"
 ---
 
 # _DXVA_SliceInfo structure
@@ -145,9 +145,6 @@ In H.261 bitstreams, a GOB is considered a slice. In H.263 bitstreams, a sequenc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

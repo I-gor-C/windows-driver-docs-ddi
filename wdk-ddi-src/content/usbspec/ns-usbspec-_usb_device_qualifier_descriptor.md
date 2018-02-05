@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : f96e4305-ec07-4df8-8fdf-f840598dd938
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSB_DEVICE_QUALIFIER_DESCRIPTOR structure pointer [Buses], usbspec/USB_DEVICE_QUALIFIER_DESCRIPTOR, USB_DEVICE_QUALIFIER_DESCRIPTOR, *PUSB_DEVICE_QUALIFIER_DESCRIPTOR, buses.usb_device_qualifier_descriptor, PUSB_DEVICE_QUALIFIER_DESCRIPTOR, _USB_DEVICE_QUALIFIER_DESCRIPTOR, USB_DEVICE_QUALIFIER_DESCRIPTOR structure [Buses], usbstrct_af615085-b822-4342-b1dd-950a0ff61d99.xml, usbspec/PUSB_DEVICE_QUALIFIER_DESCRIPTOR
+ms.keywords : USB_DEVICE_QUALIFIER_DESCRIPTOR, buses.usb_device_qualifier_descriptor, usbstrct_af615085-b822-4342-b1dd-950a0ff61d99.xml, PUSB_DEVICE_QUALIFIER_DESCRIPTOR, *PUSB_DEVICE_QUALIFIER_DESCRIPTOR, usbspec/PUSB_DEVICE_QUALIFIER_DESCRIPTOR, _USB_DEVICE_QUALIFIER_DESCRIPTOR, PUSB_DEVICE_QUALIFIER_DESCRIPTOR structure pointer [Buses], USB_DEVICE_QUALIFIER_DESCRIPTOR structure [Buses], usbspec/USB_DEVICE_QUALIFIER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_DEVICE_QUALIFIER_DESCRIPTOR, *PUSB_DEVICE_QUALIFIER_DESCRIPTOR
+req.typenames : "*PUSB_DEVICE_QUALIFIER_DESCRIPTOR, USB_DEVICE_QUALIFIER_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -102,16 +102,13 @@ This structure is similar to <a href="..\usbspec\ns-usbspec-_usb_device_descript
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usb200.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
 <a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
 

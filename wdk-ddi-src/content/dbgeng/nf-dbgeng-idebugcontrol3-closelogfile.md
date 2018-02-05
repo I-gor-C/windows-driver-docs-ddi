@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 86ae188b-379c-474e-9f21-60286af19656
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : CloseLogFile, IDebugControl3, IDebugControl2 interface [Windows Debugging], CloseLogFile method, IDebugControl3::CloseLogFile, dbgeng/IDebugControl::CloseLogFile, dbgeng/IDebugControl3::CloseLogFile, IDebugControl3 interface [Windows Debugging], CloseLogFile method, IDebugControl2::CloseLogFile, IDebugControl interface [Windows Debugging], CloseLogFile method, CloseLogFile method [Windows Debugging], IDebugControl_988fe3ac-a51d-4757-995d-40fe9d66aa02.xml, dbgeng/IDebugControl2::CloseLogFile, CloseLogFile method [Windows Debugging], IDebugControl3 interface, IDebugControl::CloseLogFile, CloseLogFile method [Windows Debugging], IDebugControl2 interface, debugger.closelogfile, CloseLogFile method [Windows Debugging], IDebugControl interface
+ms.keywords : IDebugControl2 interface [Windows Debugging], CloseLogFile method, dbgeng/IDebugControl2::CloseLogFile, IDebugControl3::CloseLogFile, CloseLogFile, CloseLogFile method [Windows Debugging], IDebugControl3 interface, CloseLogFile method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::CloseLogFile, IDebugControl::CloseLogFile, IDebugControl3 interface [Windows Debugging], CloseLogFile method, debugger.closelogfile, dbgeng/IDebugControl3::CloseLogFile, IDebugControl3, IDebugControl interface [Windows Debugging], CloseLogFile method, IDebugControl_988fe3ac-a51d-4757-995d-40fe9d66aa02.xml, CloseLogFile method [Windows Debugging], IDebugControl interface, CloseLogFile method [Windows Debugging], IDebugControl2::CloseLogFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -83,32 +83,27 @@ For more about log files, see <a href="https://msdn.microsoft.com/library/window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547016">GetLogFile</a>
-
-<a href="https://msdn.microsoft.com/730cfab3-5529-4054-ba62-8a780572603d">.logclose</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547016">GetLogFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553154">OpenLogFile</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547025">GetLogFile2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
+
+<a href="https://msdn.microsoft.com/730cfab3-5529-4054-ba62-8a780572603d">.logclose</a>
 
  
 

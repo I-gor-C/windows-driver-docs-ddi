@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 29FA9E0E-9DE4-459C-9947-3FD232E6417B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, _NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO structure [Network Drivers Starting with Windows Vista], NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, netvista.ndis_sriov_vf_invalidate_config_block_info, *PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO
+ms.keywords : ntddndis/PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, *PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, ntddndis/NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, _NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO, NDIS_SRIOV_VF_INVALIDATE_CONFIG_BLOCK_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_vf_invalidate_config_block_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,9 +95,7 @@ However, we recommend that IHVs reserve the first 64 VF configuration blocks for
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

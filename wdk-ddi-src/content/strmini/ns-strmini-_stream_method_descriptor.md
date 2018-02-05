@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2C35EF9F-143C-4DE2-93D0-5BCF8AADF11B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PSTREAM_METHOD_DESCRIPTOR, strmini/STREAM_METHOD_DESCRIPTOR, _STREAM_METHOD_DESCRIPTOR, PSTREAM_METHOD_DESCRIPTOR structure pointer [Streaming Media Devices], strmini/PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR structure [Streaming Media Devices], PSTREAM_METHOD_DESCRIPTOR, stream.stream_method_descriptor, STREAM_METHOD_DESCRIPTOR"
+ms.keywords : "*PSTREAM_METHOD_DESCRIPTOR, _STREAM_METHOD_DESCRIPTOR, PSTREAM_METHOD_DESCRIPTOR, stream.stream_method_descriptor, STREAM_METHOD_DESCRIPTOR structure [Streaming Media Devices], PSTREAM_METHOD_DESCRIPTOR structure pointer [Streaming Media Devices], STREAM_METHOD_DESCRIPTOR, strmini/STREAM_METHOD_DESCRIPTOR, strmini/PSTREAM_METHOD_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR"
+req.typenames : STREAM_METHOD_DESCRIPTOR, *PSTREAM_METHOD_DESCRIPTOR
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,4 @@ typedef struct _STREAM_METHOD_DESCRIPTOR {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 76509992-E5A7-4C2F-84D3-B3FD06ACEFE1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PullDefault, pepfx/PullUp, kernel.gpio_pin_config_type, PullUp, pepfx/GPIO_PIN_CONFIG_TYPE, GPIO_PIN_CONFIG_TYPE, PullDefault, PullDown, GPIO_PIN_CONFIG_TYPE enumeration [Kernel-Mode Driver Architecture], _GPIO_PIN_CONFIG_TYPE, pepfx/PullNone, pepfx/PullDown, PullNone
+ms.keywords : pepfx/PullNone, GPIO_PIN_CONFIG_TYPE, PullDefault, pepfx/GPIO_PIN_CONFIG_TYPE, kernel.gpio_pin_config_type, pepfx/PullUp, GPIO_PIN_CONFIG_TYPE enumeration [Kernel-Mode Driver Architecture], PullUp, PullDown, pepfx/PullDown, PullNone, _GPIO_PIN_CONFIG_TYPE, pepfx/PullDefault
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,5 @@ typedef enum _GPIO_PIN_CONFIG_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |

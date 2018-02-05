@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 39042c66-3db1-41bd-b06d-12aefcb007d3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : spoolfnc_ed433d21-ccfa-4061-9fbd-3bf333e12b31.xml, RouterAllocBidiMem function [Print Devices], winsplp/RouterAllocBidiMem, RouterAllocBidiMem, print.routerallocbidimem
+ms.keywords : winsplp/RouterAllocBidiMem, print.routerallocbidimem, RouterAllocBidiMem function [Print Devices], RouterAllocBidiMem, spoolfnc_ed433d21-ccfa-4061-9fbd-3bf333e12b31.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,11 @@ When the memory allocated by this function is no longer needed, it can be return
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This function is available in Windows XP and later operating systems. This function is available in Windows XP and later operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4edd0bc1-cd50-460b-92e1-7b2440ae3861
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_PIN_ACTION, _WWAN_PIN_ACTION, PWWAN_PIN_ACTION structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_PIN_ACTION, PWWAN_PIN_ACTION, wwan/WWAN_PIN_ACTION, WwanRef_831c483c-8839-43a4-870d-f63ea3f78b61.xml, netvista.wwan_pin_action, WWAN_PIN_ACTION, WWAN_PIN_ACTION structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PWWAN_PIN_ACTION, WwanRef_831c483c-8839-43a4-870d-f63ea3f78b61.xml, wwan/PWWAN_PIN_ACTION, WWAN_PIN_ACTION, WWAN_PIN_ACTION structure [Network Drivers Starting with Windows Vista], wwan/WWAN_PIN_ACTION, netvista.wwan_pin_action, *PWWAN_PIN_ACTION, _WWAN_PIN_ACTION, PWWAN_PIN_ACTION structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_PIN_ACTION, *PWWAN_PIN_ACTION
+req.typenames : "*PWWAN_PIN_ACTION, WWAN_PIN_ACTION"
 req.product : Windows 10 or later.
 ---
 
@@ -95,16 +95,14 @@ When
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ne-wwan-_wwan_pin_operation.md">WWAN_PIN_OPERATION</a>
-
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_pin.md">NDIS_WWAN_SET_PIN</a>
+
+<a href="..\wwan\ne-wwan-_wwan_pin_operation.md">WWAN_PIN_OPERATION</a>
 
 <a href="..\wwan\ne-wwan-_wwan_pin_type.md">WWAN_PIN_TYPE</a>
 

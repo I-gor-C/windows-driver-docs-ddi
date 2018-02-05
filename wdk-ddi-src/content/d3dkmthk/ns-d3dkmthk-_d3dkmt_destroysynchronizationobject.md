@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d6be16da-7f92-4c10-af8b-7ecd05ef6856
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_DESTROYSYNCHRONIZATIONOBJECT structure [Display Devices], OpenGL_Structs_ca88b27b-fcac-41f6-bf16-9f26507f4e3f.xml, _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT, D3DKMT_DESTROYSYNCHRONIZATIONOBJECT, display.d3dkmt_destroysynchronizationobject, d3dkmthk/D3DKMT_DESTROYSYNCHRONIZATIONOBJECT
+ms.keywords : D3DKMT_DESTROYSYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dkmt_destroysynchronizationobject, D3DKMT_DESTROYSYNCHRONIZATIONOBJECT, OpenGL_Structs_ca88b27b-fcac-41f6-bf16-9f26507f4e3f.xml, _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_DESTROYSYNCHRONIZATIONOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

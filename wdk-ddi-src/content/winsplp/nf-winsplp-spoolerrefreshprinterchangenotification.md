@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 86D8D605-3620-4F43-B4A5-6AF568265E92
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SpoolerRefreshPrinterChangeNotification, SpoolerRefreshPrinterChangeNotification function [Print Devices], winsplp/SpoolerRefreshPrinterChangeNotification, print.spoolerrefreshprinterchangenotification
+ms.keywords : winsplp/SpoolerRefreshPrinterChangeNotification, print.spoolerrefreshprinterchangenotification, SpoolerRefreshPrinterChangeNotification function [Print Devices], SpoolerRefreshPrinterChangeNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

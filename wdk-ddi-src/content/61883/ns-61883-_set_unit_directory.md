@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : C4021856-835D-4B4B-9795-4FEEEFAC06B8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883/PSET_UNIT_DIRECTORY, 61883/SET_UNIT_DIRECTORY, IEEE.set_unit_directory, *PSET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY structure [Buses], PSET_UNIT_DIRECTORY structure pointer [Buses], _SET_UNIT_DIRECTORY, PSET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY
+ms.keywords : PSET_UNIT_DIRECTORY structure pointer [Buses], SET_UNIT_DIRECTORY structure [Buses], _SET_UNIT_DIRECTORY, PSET_UNIT_DIRECTORY, 61883/PSET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY, 61883/SET_UNIT_DIRECTORY, *PSET_UNIT_DIRECTORY, IEEE.set_unit_directory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SET_UNIT_DIRECTORY, *PSET_UNIT_DIRECTORY
+req.typenames : "*PSET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY"
 ---
 
 # _SET_UNIT_DIRECTORY structure
@@ -84,9 +84,6 @@ If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

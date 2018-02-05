@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 844d6aed-2ca2-45ef-bd53-54344dbdadbf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_BLTFLAGS, D3DDDI_BLTFLAGS structure [Display Devices], display.d3dddi_bltflags, D3D_other_Structs_8d70fa64-3813-4165-a64d-4e91287e05d5.xml, _D3DDDI_BLTFLAGS, d3dumddi/D3DDDI_BLTFLAGS
+ms.keywords : "_D3DDDI_BLTFLAGS, d3dumddi/D3DDDI_BLTFLAGS, D3DDDI_BLTFLAGS structure [Display Devices], D3D_other_Structs_8d70fa64-3813-4165-a64d-4e91287e05d5.xml, D3DDDI_BLTFLAGS, display.d3dddi_bltflags"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -124,9 +124,7 @@ The <b>BeginPresentToDwm</b>, <b>ContinuePresentToDwm</b>, and <b>EndPresentToDw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

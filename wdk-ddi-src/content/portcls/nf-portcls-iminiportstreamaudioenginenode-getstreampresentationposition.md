@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 872A4445-8E0B-4804-ADDC-8CD9608E3EBF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportStreamAudioEngineNode::GetStreamPresentationPosition, GetStreamPresentationPosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_getstreampresentationposition, GetStreamPresentationPosition, GetStreamPresentationPosition method [Audio Devices], IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamPresentationPosition method, IMiniportStreamAudioEngineNode::GetStreamPresentationPosition
+ms.keywords : IMiniportStreamAudioEngineNode, GetStreamPresentationPosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, GetStreamPresentationPosition method [Audio Devices], GetStreamPresentationPosition, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamPresentationPosition method, audio.iminiportstreamaudioenginenode_getstreampresentationposition, IMiniportStreamAudioEngineNode::GetStreamPresentationPosition, portcls/IMiniportStreamAudioEngineNode::GetStreamPresentationPosition
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -67,20 +67,16 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
-
 <a href="..\ksmedia\ns-ksmedia-ksaudio_presentation_position.md">KSAUDIO_PRESENTATION_POSITION</a>
+
+<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
 
  
 

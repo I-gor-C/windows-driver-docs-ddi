@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 9cd7c366-1745-45b0-b9e9-87a259110621
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, PcRegisterIoTimeout function [Audio Devices], audio.pcregisteriotimeout, PcRegisterIoTimeout, portcls/PcRegisterIoTimeout
+ms.keywords : audio.pcregisteriotimeout, audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, PcRegisterIoTimeout function [Audio Devices], PcRegisterIoTimeout, portcls/PcRegisterIoTimeout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -133,14 +133,11 @@ The <i>pTimerRoutine </i>parameter is of type PIO_TIMER_ROUTINE, which is define
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -106,11 +106,5 @@ Even when called at PASSIVE_LEVEL, the driver should avoid spending a significan
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dkmddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

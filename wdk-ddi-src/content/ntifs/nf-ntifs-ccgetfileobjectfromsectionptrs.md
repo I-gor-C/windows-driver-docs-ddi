@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : da756f88-e2c6-4bff-8390-be48902fe130
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcGetFileObjectFromSectionPtrs routine [Installable File System Drivers], ntifs/CcGetFileObjectFromSectionPtrs, CcGetFileObjectFromSectionPtrs, ccref_2e9f9f04-b5e3-47e5-beff-5e4d7181ca9d.xml, ifsk.ccgetfileobjectfromsectionptrs
+ms.keywords : ntifs/CcGetFileObjectFromSectionPtrs, ccref_2e9f9f04-b5e3-47e5-beff-5e4d7181ca9d.xml, CcGetFileObjectFromSectionPtrs, CcGetFileObjectFromSectionPtrs routine [Installable File System Drivers], ifsk.ccgetfileobjectfromsectionptrs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,20 +72,16 @@ For more information about creating mapped sections and views of memory, see <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccgetfileobjectfromsectionptrsref.md">CcGetFileObjectFromSectionPtrsRef</a>
-
 <a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
+
+<a href="..\ntifs\nf-ntifs-ccgetfileobjectfromsectionptrsref.md">CcGetFileObjectFromSectionPtrsRef</a>
 
  
 

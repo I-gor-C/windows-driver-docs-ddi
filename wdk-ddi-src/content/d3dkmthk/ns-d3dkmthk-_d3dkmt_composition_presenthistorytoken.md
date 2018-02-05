@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F3F2DE77-9FC5-4AC1-B857-51B51557108E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_composition_presenthistorytoken, _D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN, D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN, D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN structure [Display Devices], d3dkmthk/D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN
+ms.keywords : display.d3dkmt_composition_presenthistorytoken, D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN, _D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN, D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN structure [Display Devices], d3dkmthk/D3DKMT_COMPOSITION_PRESENTHISTORYTOKEN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ A driver-resident private data structure that identifies a composition swap chai
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |

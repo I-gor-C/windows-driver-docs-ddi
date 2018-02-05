@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 94dc7a87-83a0-419d-914c-008d797fec87
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_RemovePersistentLogin_IN, *PRemovePersistentLogin_IN, PRemovePersistentLogin_IN, PRemovePersistentLogin_IN structure pointer [Storage Devices], iscsiop/PRemovePersistentLogin_IN, structs-iSCSI_4972aa6c-a6a5-4409-a714-49693f679fa2.xml, RemovePersistentLogin_IN structure [Storage Devices], RemovePersistentLogin_IN, iscsiop/RemovePersistentLogin_IN, storage.removepersistentlogin_in"
+ms.keywords : "*PRemovePersistentLogin_IN, PRemovePersistentLogin_IN structure pointer [Storage Devices], _RemovePersistentLogin_IN, storage.removepersistentlogin_in, PRemovePersistentLogin_IN, iscsiop/PRemovePersistentLogin_IN, iscsiop/RemovePersistentLogin_IN, RemovePersistentLogin_IN structure [Storage Devices], structs-iSCSI_4972aa6c-a6a5-4409-a714-49693f679fa2.xml, RemovePersistentLogin_IN"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RemovePersistentLogin_IN, *PRemovePersistentLogin_IN
+req.typenames : "*PRemovePersistentLogin_IN, RemovePersistentLogin_IN"
 ---
 
 # _RemovePersistentLogin_IN structure
@@ -71,20 +71,17 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
-
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563995">RemovePersistentLogin</a>
 
 <a href="..\iscsiop\ns-iscsiop-_removepersistentlogin_out.md">RemovePersistentLogin_OUT</a>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 
  
 

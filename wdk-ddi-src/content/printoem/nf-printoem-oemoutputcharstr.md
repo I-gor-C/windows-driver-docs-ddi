@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ac23ec89-b455-4bfd-93a5-2294d8b8ffc2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMOutputCharStr, OEMOutputCharStr, print.oemoutputcharstr, print_obsoletefunctions_250a623a-d7ce-48ba-9163-c24f52eb687d.xml, OEMOutputCharStr function [Print Devices]
+ms.keywords : print_obsoletefunctions_250a623a-d7ce-48ba-9163-c24f52eb687d.xml, print.oemoutputcharstr, OEMOutputCharStr function [Print Devices], OEMOutputCharStr, printoem/OEMOutputCharStr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,11 +87,6 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

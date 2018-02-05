@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0BC49546-ECDE-447D-8F7E-4235D96D293B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTReclaimAllocations2 function [Display Devices], d3dkmthk/D3DKMTReclaimAllocations2, D3DKMTReclaimAllocations2, display.d3dkmtreclaimallocations2
+ms.keywords : display.d3dkmtreclaimallocations2, D3DKMTReclaimAllocations2 function [Display Devices], d3dkmthk/D3DKMTReclaimAllocations2, D3DKMTReclaimAllocations2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,14 +102,11 @@ Parameters were validated and determined to be incorrect.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 

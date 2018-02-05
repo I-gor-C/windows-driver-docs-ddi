@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9BC978A9-FA5E-4A1E-9775-1DC9C270F5DC
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : UFS_PurgeStatusSuccess, ufs/UFS_PURGE_STATUS, UFS_PurgeStatusInProgress, ufs/UFS_PurgeStatusInProgress, UFS_PurgeStatusFailure, UFS_PURGE_STATUS enumeration [Storage Devices], storage.ufs_purge_status, UFS_PurgeStatusQueueNotEmpty, ufs/UFS_PurgeStatusQueueNotEmpty, UFS_PurgeStatusInterrupted, ufs/UFS_PurgeStatusInterrupted, ufs/UFS_PurgeStatusFailure, UFS_PurgeStatusIdle, ufs/UFS_PurgeStatusIdle, UFS_PURGE_STATUS, ufs/UFS_PurgeStatusSuccess
+ms.keywords : ufs/UFS_PurgeStatusInterrupted, UFS_PurgeStatusFailure, UFS_PURGE_STATUS, ufs/UFS_PurgeStatusSuccess, UFS_PURGE_STATUS enumeration [Storage Devices], ufs/UFS_PURGE_STATUS, storage.ufs_purge_status, UFS_PurgeStatusInProgress, UFS_PurgeStatusQueueNotEmpty, ufs/UFS_PurgeStatusQueueNotEmpty, ufs/UFS_PurgeStatusInProgress, UFS_PurgeStatusInterrupted, ufs/UFS_PurgeStatusIdle, UFS_PurgeStatusIdle, UFS_PurgeStatusSuccess, ufs/UFS_PurgeStatusFailure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -100,9 +100,6 @@ that it is read.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ufs.h |
 
 ## See Also

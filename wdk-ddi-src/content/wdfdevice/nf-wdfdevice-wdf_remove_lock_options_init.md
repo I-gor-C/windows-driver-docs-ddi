@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 08D0CE94-E37E-4BAE-99C8-FB4EDF7BCDDB
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_remove_lock_options_init, WDF_REMOVE_LOCK_OPTIONS_INIT function, wdfdevice/WDF_REMOVE_LOCK_OPTIONS_INIT, wdf.wdf_remove_lock_options_init, WDF_REMOVE_LOCK_OPTIONS_INIT
+ms.keywords : wdfdevice/WDF_REMOVE_LOCK_OPTIONS_INIT, wdf.wdf_remove_lock_options_init, kmdf.wdf_remove_lock_options_init, WDF_REMOVE_LOCK_OPTIONS_INIT, WDF_REMOVE_LOCK_OPTIONS_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,22 +83,18 @@ For a code example that uses <b>WDF_REMOVE_LOCK_OPTIONS_INIT</b>, see <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
+
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a>
 
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_remove_lock_options_flags.md">WDF_REMOVE_LOCK_OPTIONS_FLAGS</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>
-
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a>
 
  
 

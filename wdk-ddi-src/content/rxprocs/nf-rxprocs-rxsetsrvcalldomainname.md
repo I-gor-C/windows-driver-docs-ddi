@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 876b3932-780f-4d00-8afc-40960f8fcaaf
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxprocs/RxSetSrvCallDomainName, RxSetSrvCallDomainName, rxref_f6d23374-7565-4922-8f1c-222886e3a90c.xml, ifsk.rxsetsrvcalldomainname, RxSetSrvCallDomainName function [Installable File System Drivers]
+ms.keywords : rxprocs/RxSetSrvCallDomainName, ifsk.rxsetsrvcalldomainname, RxSetSrvCallDomainName function [Installable File System Drivers], RxSetSrvCallDomainName, rxref_f6d23374-7565-4922-8f1c-222886e3a90c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,20 +95,16 @@ If the <i>DomainName</i> parameter is not a <b>NULL</b> pointer, and the <i>Doma
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Mrxfcb.h, Rxprocs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
-
 <a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
+
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
 
  
 

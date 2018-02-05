@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 9ff62523-e9e3-4f32-802f-6fee0082d925
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_URB_OS_FEATURE_DESCRIPTOR_REQUEST structure [Buses], buses._urb_os_feature_descriptor_request, usb/_URB_OS_FEATURE_DESCRIPTOR_REQUEST, _URB_OS_FEATURE_DESCRIPTOR_REQUEST"
+ms.keywords : usb/_URB_OS_FEATURE_DESCRIPTOR_REQUEST, _URB_OS_FEATURE_DESCRIPTOR_REQUEST, buses._urb_os_feature_descriptor_request, _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -147,9 +147,7 @@ The reserved members of this structure must be treated as opaque and are reserve
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later operating systems. Available in Windows XP and later operating systems. |
 | **Header** | usb.h (include Usb.h) |
 
 ## See Also

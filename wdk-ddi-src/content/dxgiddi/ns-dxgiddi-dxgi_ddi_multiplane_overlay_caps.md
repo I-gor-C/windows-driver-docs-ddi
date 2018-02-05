@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 269d9a51-bc01-4de4-b160-35c725c174f7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MULTIPLANE_OVERLAY_CAPS structure [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_CAPS, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_CAPS, display.dxgi_ddi_multiplane_overlay_caps
+ms.keywords : DXGI_DDI_MULTIPLANE_OVERLAY_CAPS, DXGI_DDI_MULTIPLANE_OVERLAY_CAPS structure [Display Devices], dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_CAPS, display.dxgi_ddi_multiplane_overlay_caps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,7 +72,5 @@ Here are 2 examples:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |

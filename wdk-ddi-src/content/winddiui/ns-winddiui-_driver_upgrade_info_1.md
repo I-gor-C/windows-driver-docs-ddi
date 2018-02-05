@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : fef7c63b-ca9e-47f4-96cb-4dafa080ddcf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_interface-graphics_eb7333cb-f073-4c0b-ade4-20a477d28f67.xml, PDRIVER_UPGRADE_INFO_1, DRIVER_UPGRADE_INFO_1, winddiui/DRIVER_UPGRADE_INFO_1, *PDRIVER_UPGRADE_INFO_1, PDRIVER_UPGRADE_INFO_1 structure pointer [Print Devices], print.driver_upgrade_info_1, winddiui/PDRIVER_UPGRADE_INFO_1, _DRIVER_UPGRADE_INFO_1, DRIVER_UPGRADE_INFO_1 structure [Print Devices]
+ms.keywords : PDRIVER_UPGRADE_INFO_1 structure pointer [Print Devices], _DRIVER_UPGRADE_INFO_1, winddiui/DRIVER_UPGRADE_INFO_1, PDRIVER_UPGRADE_INFO_1, winddiui/PDRIVER_UPGRADE_INFO_1, DRIVER_UPGRADE_INFO_1 structure [Print Devices], *PDRIVER_UPGRADE_INFO_1, print.driver_upgrade_info_1, print_interface-graphics_eb7333cb-f073-4c0b-ade4-20a477d28f67.xml, DRIVER_UPGRADE_INFO_1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRIVER_UPGRADE_INFO_1, *PDRIVER_UPGRADE_INFO_1
+req.typenames : "*PDRIVER_UPGRADE_INFO_1, DRIVER_UPGRADE_INFO_1"
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,6 @@ Pointer to a NULL-terminated string that specifies the name of the printer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winddiui.h (include Winddiui.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 44e9fca2-54b1-427c-864d-f170a8a26f5e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportqueryperformancecounter, video/VideoPortQueryPerformanceCounter, VideoPortQueryPerformanceCounter function [Display Devices], VideoPort_Functions_cd442a17-45fb-493b-b725-8bfbd12ed398.xml, VideoPortQueryPerformanceCounter
+ms.keywords : video/VideoPortQueryPerformanceCounter, VideoPort_Functions_cd442a17-45fb-493b-b725-8bfbd12ed398.xml, display.videoportqueryperformancecounter, VideoPortQueryPerformanceCounter, VideoPortQueryPerformanceCounter function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,11 +80,9 @@ Use this routine as infrequently as possible. Depending on the platform, <b>Vide
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

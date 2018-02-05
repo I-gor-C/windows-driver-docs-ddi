@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4d471d91-7b2c-441d-a640-4f66ef7f1b2f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kspindataintersectionex, ks/KsPinDataIntersectionEx, ksfunc_22cbace6-b96b-44d7-9c30-24580f37dd58.xml, KsPinDataIntersectionEx, KsPinDataIntersectionEx function [Streaming Media Devices]
+ms.keywords : ks/KsPinDataIntersectionEx, ksfunc_22cbace6-b96b-44d7-9c30-24580f37dd58.xml, KsPinDataIntersectionEx function [Streaming Media Devices], KsPinDataIntersectionEx, stream.kspindataintersectionex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -125,14 +125,9 @@ The size of the resultant format is passed back in <i>DataSize</i> instead of <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

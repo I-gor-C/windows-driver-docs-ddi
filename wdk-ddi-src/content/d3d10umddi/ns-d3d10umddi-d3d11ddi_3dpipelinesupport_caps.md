@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 69bafa36-2f99-4c6f-b5ed-99a7030b22e6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDI_3DPIPELINESUPPORT_CAPS structure [Display Devices], d3d10umddi/D3D11DDI_3DPIPELINESUPPORT_CAPS, UMDisplayDriver_Dx11param_Structs_dc9a2de4-8fcf-4cd4-9c59-cc57941cab00.xml, display.d3d11ddi_3dpipelinesupport_caps, D3D11DDI_3DPIPELINESUPPORT_CAPS
+ms.keywords : UMDisplayDriver_Dx11param_Structs_dc9a2de4-8fcf-4cd4-9c59-cc57941cab00.xml, display.d3d11ddi_3dpipelinesupport_caps, d3d10umddi/D3D11DDI_3DPIPELINESUPPORT_CAPS, D3D11DDI_3DPIPELINESUPPORT_CAPS, D3D11DDI_3DPIPELINESUPPORT_CAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,20 +89,18 @@ For more information about the Direct3D version 11 pipelines, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDI_3DPIPELINESUPPORT_CAPS is supported beginning with the Windows 7 operating system. D3D11DDI_3DPIPELINESUPPORT_CAPS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_3dpipelinelevel.md">D3D11DDI_3DPIPELINELEVEL</a>
 
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d10_2ddicaps_type.md">D3D10_2DDICAPS_TYPE</a>
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_3dpipelinelevel.md">D3D11DDI_3DPIPELINELEVEL</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
 
  
 

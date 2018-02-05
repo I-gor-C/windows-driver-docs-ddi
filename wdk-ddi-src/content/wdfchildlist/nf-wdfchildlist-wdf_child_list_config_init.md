@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d222f2f3-554f-43d5-97c5-9a56fdb42ec3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfchildlist/WDF_CHILD_LIST_CONFIG_INIT, wdf.wdf_child_list_config_init, kmdf.wdf_child_list_config_init, WDF_CHILD_LIST_CONFIG_INIT, DFDeviceObjectChildListRef_b5fea12e-3e5b-4ec7-8e9d-0e385047cbdc.xml, WDF_CHILD_LIST_CONFIG_INIT function
+ms.keywords : WDF_CHILD_LIST_CONFIG_INIT function, wdf.wdf_child_list_config_init, kmdf.wdf_child_list_config_init, wdfchildlist/WDF_CHILD_LIST_CONFIG_INIT, WDF_CHILD_LIST_CONFIG_INIT, DFDeviceObjectChildListRef_b5fea12e-3e5b-4ec7-8e9d-0e385047cbdc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,11 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

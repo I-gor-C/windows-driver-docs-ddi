@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e803505f-37a0-4b20-bd6f-ce0f79eead03
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PGET_MEDIA_TYPES, GET_MEDIA_TYPES structure [Storage Devices], ntddstor/GET_MEDIA_TYPES, structs-general_68f75a58-b2a5-4d6a-b9ba-0019e36034ef.xml, _GET_MEDIA_TYPES, *PGET_MEDIA_TYPES, PGET_MEDIA_TYPES structure pointer [Storage Devices], ntddstor/PGET_MEDIA_TYPES, GET_MEDIA_TYPES, storage.get_media_types
+ms.keywords : storage.get_media_types, PGET_MEDIA_TYPES, _GET_MEDIA_TYPES, *PGET_MEDIA_TYPES, structs-general_68f75a58-b2a5-4d6a-b9ba-0019e36034ef.xml, ntddstor/GET_MEDIA_TYPES, GET_MEDIA_TYPES structure [Storage Devices], ntddstor/PGET_MEDIA_TYPES, GET_MEDIA_TYPES, PGET_MEDIA_TYPES structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGET_MEDIA_TYPES, GET_MEDIA_TYPES"
+req.typenames : GET_MEDIA_TYPES, *PGET_MEDIA_TYPES
 ---
 
 # _GET_MEDIA_TYPES structure
@@ -71,16 +71,13 @@ A storage class driver must handle the <a href="..\ntddstor\ni-ntddstor-ioctl_st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also
 
-<a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
-
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
+
+<a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
 
  
 

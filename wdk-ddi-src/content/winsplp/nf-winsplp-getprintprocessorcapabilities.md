@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 81aacb41-cba7-4bd0-aded-919a4df0b934
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/GetPrintProcessorCapabilities, print.getprintprocessorcapabilities, spoolfnc_4ca0ae34-060f-4144-91de-a2556d1b5261.xml, GetPrintProcessorCapabilities function [Print Devices], GetPrintProcessorCapabilities
+ms.keywords : print.getprintprocessorcapabilities, winsplp/GetPrintProcessorCapabilities, spoolfnc_4ca0ae34-060f-4144-91de-a2556d1b5261.xml, GetPrintProcessorCapabilities, GetPrintProcessorCapabilities function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,11 +100,6 @@ The specified return value becomes the return value that the spooler provides fo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

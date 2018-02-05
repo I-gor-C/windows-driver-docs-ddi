@@ -73,9 +73,7 @@ The <b>Status</b> field is set to one of the <a href="https://docs.microsoft.com
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddser.h (include Ntddser.h) |
-| **IRQL** |  |
 
 ## See Also
 

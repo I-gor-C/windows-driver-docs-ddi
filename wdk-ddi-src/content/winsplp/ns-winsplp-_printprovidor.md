@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c030cb9d-23c0-4d0e-970f-f447e9af7528
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/LPPRINTPROVIDOR, print.printprovidor, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, PRINTPROVIDOR structure [Print Devices], LPPRINTPROVIDOR, PRINTPROVIDOR, *LPPRINTPROVIDOR, winsplp/PRINTPROVIDOR, LPPRINTPROVIDOR structure pointer [Print Devices], _PRINTPROVIDOR
+ms.keywords : winsplp/LPPRINTPROVIDOR, PRINTPROVIDOR, LPPRINTPROVIDOR, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, LPPRINTPROVIDOR structure pointer [Print Devices], winsplp/PRINTPROVIDOR, *LPPRINTPROVIDOR, _PRINTPROVIDOR, PRINTPROVIDOR structure [Print Devices], print.printprovidor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPPRINTPROVIDOR, PRINTPROVIDOR"
+req.typenames : PRINTPROVIDOR, *LPPRINTPROVIDOR
 req.product : Windows 10 or later.
 ---
 
@@ -915,22 +915,19 @@ Function pointers are listed in the order they are specified within the PRINTPRO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h (include Winsplp.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562068">SendRecvBidiData</a>
-
 <a href="..\winsplp\nf-winsplp-initializeprintprovidor.md">InitializePrintProvidor</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562068">SendRecvBidiData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
 
 <a href="..\winspool\nf-winspool-findfirstprinterchangenotification.md">FindFirstPrinterChangeNotification</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
 
  
 

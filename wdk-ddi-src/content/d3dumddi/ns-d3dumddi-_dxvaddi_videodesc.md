@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 19121888-ad5c-4596-a7ec-a95fbffda685
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_VIDEODESC, _DXVADDI_VIDEODESC, DXVADDI_VIDEODESC structure [Display Devices], d3dumddi/DXVADDI_VIDEODESC, display.dxvaddi_videodesc, DXVA2_Structs_7e8c3d70-50a3-48f7-bc5e-4280a599e43d.xml
+ms.keywords : d3dumddi/DXVADDI_VIDEODESC, display.dxvaddi_videodesc, DXVADDI_VIDEODESC, DXVA2_Structs_7e8c3d70-50a3-48f7-bc5e-4280a599e43d.xml, _DXVADDI_VIDEODESC, DXVADDI_VIDEODESC structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,18 +94,16 @@ typedef struct _DXVADDI_VIDEODESC {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_frequency.md">DXVADDI_FREQUENCY</a>
+
 <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_frequency.md">DXVADDI_FREQUENCY</a>
 
  
 

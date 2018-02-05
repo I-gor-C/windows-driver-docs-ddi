@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 41788885-d8a1-4459-82a0-261b39862530
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisRetrieveUlong, netvista.ndisretrieveulong, NdisRetrieveUlong macro [Network Drivers Starting with Windows Vista], ndis_memory_ref_929d856f-6798-499a-aa9a-0f5e7181b972.xml, NdisRetrieveUlong
+ms.keywords : netvista.ndisretrieveulong, ndis_memory_ref_929d856f-6798-499a-aa9a-0f5e7181b972.xml, NdisRetrieveUlong macro [Network Drivers Starting with Windows Vista], NdisRetrieveUlong, ndis/NdisRetrieveUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -80,14 +80,11 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlRetrieveUlong instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlRetrieveUlong instead. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | See Remarks section |
-| **DDI compliance rules** |  |
 
 ## See Also
 

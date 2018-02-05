@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 358C060B-23A0-4F02-A5D3-07ADC3435849
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, display.dxgk_multiplane_overlay_plane_with_source, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure [Display Devices]
+ms.keywords : DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure [Display Devices], display.dxgk_multiplane_overlay_plane_with_source, _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ The zero-based video present network source identification number of the input f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

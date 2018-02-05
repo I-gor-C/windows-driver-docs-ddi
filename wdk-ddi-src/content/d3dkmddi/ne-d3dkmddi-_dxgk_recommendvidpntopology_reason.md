@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2a67a119-863b-4cde-9308-e4862823bad1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_RVT_INITIALIZATION_NOLKG, d3dkmddi/DXGK_RVT_AUGMENTATION_NOLKG, DXGK_RVT_AUGMENTATION_NOLKG, display.dxgk_recommendvidpntopology_reason, DXGK_RVT_AUGMENTATION_LKGOVERRIDE, DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, DXGK_RVT_UNINITIALIZED, DXGK_RVT_INITIALIZATION_LKGOVERRIDE, d3dkmddi/DXGK_RVT_UNINITIALIZED, d3dkmddi/DXGK_RVT_AUGMENTATION_LKGOVERRIDE, d3dkmddi/DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, DXGK_RECOMMENDVIDPNTOPOLOGY_REASON enumeration [Display Devices], d3dkmddi/DXGK_RVT_INITIALIZATION_LKGOVERRIDE, DmEnums_b03f6fe2-5501-45ef-b841-48c6c3cc729a.xml, _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, d3dkmddi/DXGK_RVT_INITIALIZATION_NOLKG
+ms.keywords : d3dkmddi/DXGK_RVT_INITIALIZATION_NOLKG, DXGK_RVT_UNINITIALIZED, DXGK_RVT_AUGMENTATION_LKGOVERRIDE, DmEnums_b03f6fe2-5501-45ef-b841-48c6c3cc729a.xml, d3dkmddi/DXGK_RVT_UNINITIALIZED, d3dkmddi/DXGK_RVT_AUGMENTATION_NOLKG, _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, d3dkmddi/DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, DXGK_RVT_INITIALIZATION_NOLKG, DXGK_RVT_AUGMENTATION_NOLKG, d3dkmddi/DXGK_RVT_AUGMENTATION_LKGOVERRIDE, DXGK_RECOMMENDVIDPNTOPOLOGY_REASON enumeration [Display Devices], DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, display.dxgk_recommendvidpntopology_reason, DXGK_RVT_INITIALIZATION_LKGOVERRIDE, d3dkmddi/DXGK_RVT_INITIALIZATION_LKGOVERRIDE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,5 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

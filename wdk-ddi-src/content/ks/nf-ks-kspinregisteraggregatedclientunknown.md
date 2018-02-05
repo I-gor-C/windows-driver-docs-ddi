@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 302d87be-a276-49ea-98f2-89e1f231c3c6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinRegisterAggregatedClientUnknown function [Streaming Media Devices], KsPinRegisterAggregatedClientUnknown, ks/KsPinRegisterAggregatedClientUnknown, avfunc_688a6c60-58c8-4e65-a3bc-d68e713ca3fc.xml, stream.kspinregisteraggregatedclientunknown
+ms.keywords : avfunc_688a6c60-58c8-4e65-a3bc-d68e713ca3fc.xml, ks/KsPinRegisterAggregatedClientUnknown, KsPinRegisterAggregatedClientUnknown function [Streaming Media Devices], stream.kspinregisteraggregatedclientunknown, KsPinRegisterAggregatedClientUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,10 @@ This inline function only performs a typecast and then calls <a href="..\ks\nf-k
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

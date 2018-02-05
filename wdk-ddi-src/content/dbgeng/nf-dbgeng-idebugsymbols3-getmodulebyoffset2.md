@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2bb23245-9d5c-4b9d-8f4a-ce5fe552efc2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getmodulebyoffset2, IDebugSymbols_0eead97d-6ca0-4682-bc06-71df2cf04c69.xml, IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset2 method, dbgeng/IDebugSymbols3::GetModuleByOffset2, GetModuleByOffset2, IDebugSymbols3, GetModuleByOffset2 method [Windows Debugging], GetModuleByOffset2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetModuleByOffset2
+ms.keywords : dbgeng/IDebugSymbols3::GetModuleByOffset2, IDebugSymbols_0eead97d-6ca0-4682-bc06-71df2cf04c69.xml, GetModuleByOffset2 method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset2 method, GetModuleByOffset2, GetModuleByOffset2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetModuleByOffset2, IDebugSymbols3, debugger.getmodulebyoffset2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -133,22 +133,17 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547132">GetModuleByOffset</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547080">GetModuleByIndex</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547132">GetModuleByOffset</a>
 
  
 

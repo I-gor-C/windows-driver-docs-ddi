@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 406044A5-D1C0-4771-8CDB-CCBC0B801281
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFIOQUEUESTOPANDPURGESYNCHRONOUSLY, wdfio/WdfIoQueueStopAndPurgeSynchronously, WdfIoQueueStopAndPurgeSynchronously method, WdfIoQueueStopAndPurgeSynchronously, wdf.wdfioqueuestopandpurgesynchronously, kmdf.wdfioqueuestopandpurgesynchronously
+ms.keywords : WdfIoQueueStopAndPurgeSynchronously, PFN_WDFIOQUEUESTOPANDPURGESYNCHRONOUSLY, wdf.wdfioqueuestopandpurgesynchronously, wdfio/WdfIoQueueStopAndPurgeSynchronously, kmdf.wdfioqueuestopandpurgesynchronously, WdfIoQueueStopAndPurgeSynchronously method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,12 +75,11 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, NoCancelFromEvtSurpriseRemove |
 

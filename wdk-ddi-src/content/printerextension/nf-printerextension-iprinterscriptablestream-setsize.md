@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4A05474B-9856-48B0-9289-D87B8FF54B2F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.iprinterscriptablestream__setsize, IPrinterScriptableStream interface [Print Devices], SetSize method, IPrinterScriptableStream::SetSize, IPrinterScriptableStream, printerextension/IPrinterScriptableStream::SetSize, SetSize method [Print Devices], SetSize, SetSize method [Print Devices], IPrinterScriptableStream interface
+ms.keywords : SetSize method [Print Devices], IPrinterScriptableStream interface, IPrinterScriptableStream interface [Print Devices], SetSize method, print.iprinterscriptablestream__setsize, printerextension/IPrinterScriptableStream::SetSize, IPrinterScriptableStream, SetSize method [Print Devices], SetSize, IPrinterScriptableStream::SetSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,14 +66,10 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 79ac01ff-9976-4321-a6b1-0a1cc6e5810a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_2_fwpm_b01feaca-7c4a-44a9-aec4-f867508b0129.xml, netvista.fwpmengineclose0, FwpmEngineClose0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmEngineClose0, FwpmEngineClose0
+ms.keywords : FwpmEngineClose0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_2_fwpm_b01feaca-7c4a-44a9-aec4-f867508b0129.xml, fwpmk/FwpmEngineClose0, FwpmEngineClose0, netvista.fwpmengineclose0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 
@@ -102,14 +102,11 @@ A callout driver calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | fwpmk.h (include Fwpmk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

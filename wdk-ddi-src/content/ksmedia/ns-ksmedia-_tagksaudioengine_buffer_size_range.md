@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7BFF1B51-9559-471C-868C-F3E861CB4914
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSAUDIOENGINE_BUFFER_SIZE_RANGE structure pointer [Audio Devices], PKSAUDIOENGINE_BUFFER_SIZE_RANGE, ksmedia/PKSAUDIOENGINE_BUFFER_SIZE_RANGE, _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE structure [Audio Devices], *PKSAUDIOENGINE_BUFFER_SIZE_RANGE, audio.ksaudio_buffer_limits, ksmedia/KSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE
+ms.keywords : PKSAUDIOENGINE_BUFFER_SIZE_RANGE structure pointer [Audio Devices], _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE structure [Audio Devices], ksmedia/KSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE, audio.ksaudio_buffer_limits, ksmedia/PKSAUDIOENGINE_BUFFER_SIZE_RANGE, PKSAUDIOENGINE_BUFFER_SIZE_RANGE, *PKSAUDIOENGINE_BUFFER_SIZE_RANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSAUDIOENGINE_BUFFER_SIZE_RANGE, *PKSAUDIOENGINE_BUFFER_SIZE_RANGE
+req.typenames : "*PKSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE"
 ---
 
 # _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE structure
@@ -66,9 +66,7 @@ The audio stack uses the information about the buffer size limits to determine t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dc8f23d5-14bb-43be-807a-041ca9c30a76
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSRATE, KSRATE, *PKSRATE, ks/KSRATE, stream.ksrate, ks-struct_a47aa4cc-ff36-4a02-bd68-63c7ed450279.xml, KSRATE structure [Streaming Media Devices], ks/PKSRATE, PKSRATE structure pointer [Streaming Media Devices]
+ms.keywords : KSRATE, ks/KSRATE, KSRATE structure [Streaming Media Devices], ks/PKSRATE, PKSRATE structure pointer [Streaming Media Devices], PKSRATE, *PKSRATE, stream.ksrate, ks-struct_a47aa4cc-ff36-4a02-bd68-63c7ed450279.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -105,9 +105,6 @@ Specifies the rate in terms of 1/10th percentage points, where 1000 is the nomin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

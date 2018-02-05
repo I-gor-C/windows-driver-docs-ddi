@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : EE7ABC3D-948B-481B-B254-40A05EDEB83D
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT, ucxendpoint/UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT function [Buses], buses.ucx_default_endpoint_event_callbacks_init
+ms.keywords : buses.ucx_default_endpoint_event_callbacks_init, ucxendpoint/UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT function [Buses], UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,14 +91,12 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

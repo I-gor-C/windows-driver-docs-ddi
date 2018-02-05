@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 69775220-71d8-497c-aaf7-9bc3ec90d00f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisClMakeCall, NdisClMakeCall function [Network Drivers Starting with Windows Vista], condis_client_ref_bd9f0a4a-c8f7-418e-aa80-e97fad7e4ab1.xml, ndis/NdisClMakeCall, netvista.ndisclmakecall
+ms.keywords : netvista.ndisclmakecall, condis_client_ref_bd9f0a4a-c8f7-418e-aa80-e97fad7e4ab1.xml, NdisClMakeCall function [Network Drivers Starting with Windows Vista], NdisClMakeCall, ndis/NdisClMakeCall
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,8 +89,8 @@ Pointer to a caller-supplied variable, usually in the caller-allocated party con
 When 
      <b>NdisClMakeCall</b> returns anything other than NDIS_STATUS_PENDING, the client should make an internal
      call to its 
-     <mshelp:link keywords="netvista.protocolclmakecallcomplete" tabindex="0"><i>
-     ProtocolClMakeCallComplete</i></mshelp:link> function. Otherwise, NDIS calls the client's 
+     <a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">
+     ProtocolClMakeCallComplete</a> function. Otherwise, NDIS calls the client's 
      <i>ProtocolClMakeCallComplete</i> function when this operation is completed.
 
 ## Remarks
@@ -134,37 +134,35 @@ The client's
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClMakeCall (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClMakeCall (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClMakeCall (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClMakeCall (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">ProtocolClMakeCallComplete</a>
-
-<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
-
 <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
-
-<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
-
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 
 <a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
 
+<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
+
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
+
 <a href="..\ndis\nc-ndis-protocol_cm_make_call.md">ProtocolCmMakeCall</a>
+
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">ProtocolClMakeCallComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
 
  
 

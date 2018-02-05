@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c9bee5b0-eeaf-4c82-9f02-d00cf9202f78
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/InterlockedExchange, kernel.interlockedexchange, k102_ae8d85b7-040e-4c44-9476-68d6919a50e4.xml, InterlockedExchange, InterlockedExchange routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.interlockedexchange, InterlockedExchange, InterlockedExchange routine [Kernel-Mode Driver Architecture], k102_ae8d85b7-040e-4c44-9476-68d6919a50e4.xml, wdm/InterlockedExchange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,24 +80,21 @@ Interlocked operations cannot be used on non-cached memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | OneCoreUAP.lib on Windows 10 |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
+<a href="..\wdm\nf-wdm-exinterlockedaddlargeinteger.md">ExInterlockedAddLargeInteger</a>
 
 <a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
 
-<a href="..\wdm\nf-wdm-exinterlockedaddlargeinteger.md">ExInterlockedAddLargeInteger</a>
-
 <a href="..\wdm\nf-wdm-exinterlockedaddulong.md">ExInterlockedAddUlong</a>
+
+<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
 
  
 

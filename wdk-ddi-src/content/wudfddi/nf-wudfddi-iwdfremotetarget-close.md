@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c24082c4-0c79-4956-8035-79198cb2b7ee
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRemoteTarget::Close, Close method, IWDFRemoteTarget interface, Close, wdf.iwdfremotetarget_close, Close method, IWDFRemoteTarget, UMDFIoTargetObjectRef_1e5aba5f-fd82-4d59-abb6-915e8a49ad22.xml, IWDFRemoteTarget interface, Close method, wudfddi/IWDFRemoteTarget::Close, umdf.iwdfremotetarget_close
+ms.keywords : Close method, wdf.iwdfremotetarget_close, IWDFRemoteTarget::Close, UMDFIoTargetObjectRef_1e5aba5f-fd82-4d59-abb6-915e8a49ad22.xml, Close method, IWDFRemoteTarget interface, umdf.iwdfremotetarget_close, IWDFRemoteTarget, IWDFRemoteTarget interface, Close method, wudfddi/IWDFRemoteTarget::Close, Close
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -72,20 +72,18 @@ For more information about the <b>Close</b> method, see <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560259">IWDFRemoteTarget::CloseForQueryRemove</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
 
  
 

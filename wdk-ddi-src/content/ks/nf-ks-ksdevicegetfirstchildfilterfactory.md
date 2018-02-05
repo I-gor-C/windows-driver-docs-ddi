@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : af388fd1-c95b-42ae-9d18-5fb416c28bc1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDeviceGetFirstChildFilterFactory, avfunc_99fdc67f-eca0-460d-b1fb-d9881bd6e4c9.xml, KsDeviceGetFirstChildFilterFactory function [Streaming Media Devices], stream.ksdevicegetfirstchildfilterfactory, ks/KsDeviceGetFirstChildFilterFactory
+ms.keywords : ks/KsDeviceGetFirstChildFilterFactory, avfunc_99fdc67f-eca0-460d-b1fb-d9881bd6e4c9.xml, KsDeviceGetFirstChildFilterFactory, stream.ksdevicegetfirstchildfilterfactory, KsDeviceGetFirstChildFilterFactory function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,24 +70,21 @@ For a graphical representation of AVStream parent/child relationships, see the d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+
+<a href="..\ks\nf-ks-ksfilterfactorygetnextsiblingfilterfactory.md">KsFilterFactoryGetNextSiblingFilterFactory</a>
 
 <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
 <a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>
-
-<a href="..\ks\nf-ks-ksfilterfactorygetnextsiblingfilterfactory.md">KsFilterFactoryGetNextSiblingFilterFactory</a>
-
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 
  
 

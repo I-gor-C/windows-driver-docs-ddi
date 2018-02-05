@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f6a55181-7e1a-4af0-ac45-1991c42cdc87
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.extremotedata_getstdbool, ExtRemoteData::GetStdBool, ExtRemoteData, GetStdBool method [Windows Debugging], ExtRemoteData class, EngExtCpp_Ref_65fe8202-99dc-45b3-9b38-5fca10341b1b.xml, GetStdBool method [Windows Debugging], ExtRemoteData class [Windows Debugging], GetStdBool method, GetStdBool
+ms.keywords : ExtRemoteData, GetStdBool, debugger.extremotedata_getstdbool, GetStdBool method [Windows Debugging], ExtRemoteData class, ExtRemoteData::GetStdBool, ExtRemoteData class [Windows Debugging], GetStdBool method, GetStdBool method [Windows Debugging], EngExtCpp_Ref_65fe8202-99dc-45b3-9b38-5fca10341b1b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -64,24 +64,19 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544081">ExtRemoteData::GetW32Bool</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544013">ExtRemoteData::GetBoolean</a>
 
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 
  
 

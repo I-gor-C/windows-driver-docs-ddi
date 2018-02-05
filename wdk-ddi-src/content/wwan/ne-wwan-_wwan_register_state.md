@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fba4e60e-c247-4466-9b0f-c8e7ffa594d2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_REGISTER_STATE, wwan/WwanRegisterStateSearching, wwan/WWAN_REGISTER_STATE, WwanRegisterStateDeregistered, wwan/WwanRegisterStateHome, WwanRegisterStateSearching, WwanRegisterStateMax, PWWAN_REGISTER_STATE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanRegisterStatePartner, WWAN_REGISTER_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanRegisterStateDeregistered, PWWAN_REGISTER_STATE, WwanRegisterStateRoaming, WWAN_REGISTER_STATE, WwanRegisterStateUnknown, wwan/WwanRegisterStateDenied, WwanRegisterStateDenied, WwanRef_927c04e0-b022-4d93-8052-696b5e9da51f.xml, WwanRegisterStatePartner, _WWAN_REGISTER_STATE, wwan/WwanRegisterStateRoaming, wwan/WwanRegisterStateUnknown, netvista.wwan_register_state, *PWWAN_REGISTER_STATE, WwanRegisterStateHome, wwan/WwanRegisterStateMax
+ms.keywords : wwan/PWWAN_REGISTER_STATE, wwan/WwanRegisterStateUnknown, wwan/WwanRegisterStateHome, *PWWAN_REGISTER_STATE, WwanRegisterStateUnknown, WwanRegisterStatePartner, WWAN_REGISTER_STATE, WwanRegisterStateRoaming, WwanRegisterStateDenied, wwan/WWAN_REGISTER_STATE, wwan/WwanRegisterStatePartner, wwan/WwanRegisterStateDenied, _WWAN_REGISTER_STATE, wwan/WwanRegisterStateDeregistered, wwan/WwanRegisterStateRoaming, netvista.wwan_register_state, wwan/WwanRegisterStateMax, wwan/WwanRegisterStateSearching, WwanRegisterStateHome, WWAN_REGISTER_STATE enumeration [Network Drivers Starting with Windows Vista], WwanRegisterStateDeregistered, PWWAN_REGISTER_STATE, PWWAN_REGISTER_STATE enumeration pointer [Network Drivers Starting with Windows Vista], WwanRegisterStateMax, WwanRegisterStateSearching, WwanRef_927c04e0-b022-4d93-8052-696b5e9da51f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -119,9 +119,7 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

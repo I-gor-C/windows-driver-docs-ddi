@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1436c8a5-9160-41d8-acc1-0af6acadfdba
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PAACS_SERIAL_NUMBER, ntddcdvd/AACS_SERIAL_NUMBER, structs-DVD_baba43db-de96-4f55-9d26-46cc56dce390.xml, AACS_SERIAL_NUMBER structure [Storage Devices], PAACS_SERIAL_NUMBER, _AACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER, PAACS_SERIAL_NUMBER structure pointer [Storage Devices], ntddcdvd/PAACS_SERIAL_NUMBER, storage.aacs_serial_number"
+ms.keywords : "_AACS_SERIAL_NUMBER, storage.aacs_serial_number, PAACS_SERIAL_NUMBER structure pointer [Storage Devices], PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER structure [Storage Devices], *PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER, ntddcdvd/AACS_SERIAL_NUMBER, structs-DVD_baba43db-de96-4f55-9d26-46cc56dce390.xml, ntddcdvd/PAACS_SERIAL_NUMBER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ Clients retrieve the AACS serial number with an <a href="..\ntddcdvd\ni-ntddcdvd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
 ## See Also

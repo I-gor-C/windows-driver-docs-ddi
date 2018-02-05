@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : FC7566C0-95FD-450C-897E-C57870386512
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfpdrivers.nfc_cx_hardware_event, PNFC_CX_HARDWARE_EVENT, NFC_CX_HARDWARE_EVENT, nfccx/PNFC_CX_HARDWARE_EVENT, NFC_CX_HARDWARE_EVENT structure [Near-Field Proximity Drivers], _NFC_CX_HARDWARE_EVENT, *PNFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT structure pointer [Near-Field Proximity Drivers], nfccx/NFC_CX_HARDWARE_EVENT
+ms.keywords : "_NFC_CX_HARDWARE_EVENT, *PNFC_CX_HARDWARE_EVENT, nfccx/NFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT structure pointer [Near-Field Proximity Drivers], NFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT, nfccx/PNFC_CX_HARDWARE_EVENT, nfpdrivers.nfc_cx_hardware_event, NFC_CX_HARDWARE_EVENT structure [Near-Field Proximity Drivers]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ An <a href="..\nfccx\ne-nfccx-_nfc_cx_host_action.md">NFC_CX_HOST_ACTION</a>-typ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
 ## See Also

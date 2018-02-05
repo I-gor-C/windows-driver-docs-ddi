@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b23d846a-a1d4-4b2a-ab3c-8076302ff3fc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeReadStateMutex, KeReadStateMutex routine [Kernel-Mode Driver Architecture], kernel.kereadstatemutex, k105_37175048-e4ee-4b79-93f3-013195192b4c.xml, KeReadStateMutex
+ms.keywords : wdm/KeReadStateMutex, KeReadStateMutex routine [Kernel-Mode Driver Architecture], k105_37175048-e4ee-4b79-93f3-013195192b4c.xml, kernel.kereadstatemutex, KeReadStateMutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,22 +71,21 @@ For more information about mutex objects, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
+
 <a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-
-<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
 
 <a href="..\wdm\nf-wdm-kereleasemutex.md">KeReleaseMutex</a>
 

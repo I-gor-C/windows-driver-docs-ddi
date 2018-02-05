@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 9d56a07e-8898-4bd6-93ae-752ff7d3b215
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidfunc_b02350cf-7d33-4a71-9afb-4b3c07e52650.xml, hid.hidp_initializereportforid, hidpi/HidP_InitializeReportForID, HidP_InitializeReportForID, HidP_InitializeReportForID routine [Human Input Devices]
+ms.keywords : hidpi/HidP_InitializeReportForID, HidP_InitializeReportForID, HidP_InitializeReportForID routine [Human Input Devices], hidfunc_b02350cf-7d33-4a71-9afb-4b3c07e52650.xml, hid.hidp_initializereportforid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -161,24 +161,21 @@ Sets the bitfield of all controls with null values to their corresponding null v
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidpi.h (include Hidpi.h) |
-| **Library** |  |
+| **Library** | Hidparse.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+<a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>
 
 <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a>
 
-<a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>
-
 <a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 54bcb18e-df4b-471c-b121-4db75ce5c49b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.waveformatextensible, aud-prop_d40f094e-44f9-4baa-8a15-03e4fb369501.xml, PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE structure pointer [Audio Devices], ksmedia/WAVEFORMATEXTENSIBLE, ksmedia/PWAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE structure [Audio Devices], WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE
+ms.keywords : audio.waveformatextensible, WAVEFORMATEXTENSIBLE structure [Audio Devices], WAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE structure pointer [Audio Devices], ksmedia/WAVEFORMATEXTENSIBLE, aud-prop_d40f094e-44f9-4baa-8a15-03e4fb369501.xml, ksmedia/PWAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -382,9 +382,6 @@ Because WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX, it can desc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Mmreg.h, Ksmedia.h, Mmreg.h) |
 
 ## See Also

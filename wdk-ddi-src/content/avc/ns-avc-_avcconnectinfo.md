@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ed6e01f0-fa30-4a42-8271-70afb2fde8c9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PAVCCONNECTINFO structure pointer [Streaming Media Devices], AVCCONNECTINFO, stream.avcconnectinfo, *PAVCCONNECTINFO, avc/AVCCONNECTINFO, _AVCCONNECTINFO, AVCCONNECTINFO structure [Streaming Media Devices], avcref_41c8705a-5735-4ab2-87f0-02b55b128c23.xml, PAVCCONNECTINFO, avc/PAVCCONNECTINFO
+ms.keywords : PAVCCONNECTINFO structure pointer [Streaming Media Devices], AVCCONNECTINFO, AVCCONNECTINFO structure [Streaming Media Devices], PAVCCONNECTINFO, avc/PAVCCONNECTINFO, avcref_41c8705a-5735-4ab2-87f0-02b55b128c23.xml, *PAVCCONNECTINFO, avc/AVCCONNECTINFO, stream.avcconnectinfo, _AVCCONNECTINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : AVCCONNECTINFO, *PAVCCONNECTINFO
+req.typenames : "*PAVCCONNECTINFO, AVCCONNECTINFO"
 ---
 
 # _AVCCONNECTINFO structure
@@ -86,9 +86,6 @@ This structure is used only as member inside the <a href="..\avc\ns-avc-_avc_set
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | avc.h (include Avc.h) |
 
 ## See Also

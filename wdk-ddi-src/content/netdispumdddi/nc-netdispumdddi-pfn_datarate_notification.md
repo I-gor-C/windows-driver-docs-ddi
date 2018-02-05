@@ -64,7 +64,9 @@ The context value is the value the driver passed in its call to the <a href="..\
 
 `*pDataRateStats`
 
+An optional pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast_datarate_stats.md">MIRACAST_DATARATE_STATS</a> structure that contains info on the audio/video encoder bit rate and failed or retried Wi-Fi frames.
 
+Can be <b>NULL</b> if the network has an error. For more info, see Remarks.
 
 
 ## Return Value
@@ -78,22 +80,17 @@ If data on the quality of service (QoS) of the network connection becomes unavai
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_register_datarate_notifications.md">RegisterForDataRateNotifications</a>
 
 <a href="..\netdispumdddi\ns-netdispumdddi-miracast_datarate_stats.md">MIRACAST_DATARATE_STATS</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
 
  
 

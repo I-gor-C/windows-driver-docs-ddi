@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 75c8b3b3-4f33-465a-a35c-9d3056a2eb75
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILGETOPERATORLISTPARAMS, netvista.rilgetoperatorlistparams, ntddrilapitypes/RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILGETOPERATORLISTPARAMS, ntddrilapitypes/RILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILGETOPERATORLISTPARAMS, netvista.rilgetoperatorlistparams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS"
+req.typenames : RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS
 ---
 
 # RILGETOPERATORLISTPARAMS structure
@@ -64,7 +64,4 @@ typedef struct _RILGETOPERATORLISTPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -43,8 +43,8 @@ req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 NDIS calls the 
   <i>FilterSendNetBufferListsComplete</i> function to complete a send request that a filter driver started by
   calling the 
-  <mshelp:link keywords="netvista.ndisfsendnetbufferlists" tabindex="0"><b>
-  NdisFSendNetBufferLists</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">
+  NdisFSendNetBufferLists</a> function.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>FILTER_SEND_NET_BUFFER_LISTS_COMPLETE</b> type. For more
    information, see the following Examples section.</div><div> </div>
 
@@ -102,8 +102,8 @@ None
 
 <i>FilterSendNetBufferListsComplete</i> is an optional function. If a filter driver does not filter send
     requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> function.
 
 The filter driver can call the 
     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function,
@@ -166,33 +166,29 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
-<a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a>
 
 <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+
+<a href="..\ndis\nf-ndis-ndisfsendnetbufferlistscomplete.md">
+   NdisFSendNetBufferListsComplete</a>
 
 <a href="..\ndis\nc-ndis-filter_set_module_options.md">FilterSetModuleOptions</a>
 
-<mshelp:link keywords="netvista.ndisfsendnetbufferlistscomplete" tabindex="0"><b>
-   NdisFSendNetBufferListsComplete</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

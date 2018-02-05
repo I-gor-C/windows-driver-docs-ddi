@@ -119,14 +119,9 @@ The runtime calls the user-mode display driver's <i>Unlock</i> function to unloc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -134,11 +129,11 @@ The runtime calls the user-mode display driver's <i>Unlock</i> function to unloc
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 354b1854-2b3b-4fcf-81cb-fd24595cd9bb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.readpointer, WdbgExts_Ref_3d78e28a-910f-4b82-a262-28d83d87c6f1.xml, ReadPointer, ReadPointer function [Windows Debugging], wdbgexts/ReadPointer
+ms.keywords : WdbgExts_Ref_3d78e28a-910f-4b82-a262-28d83d87c6f1.xml, wdbgexts/ReadPointer, debugger.readpointer, ReadPointer function [Windows Debugging], ReadPointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,9 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

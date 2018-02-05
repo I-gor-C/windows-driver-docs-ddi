@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 4EF45183-335C-40FC-8693-BF3D17B18DF2
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : nfccx/NFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG structure [Near-Field Proximity Drivers], PNFC_CX_RF_DISCOVERY_CONFIG, nfccx/PNFC_CX_RF_DISCOVERY_CONFIG, PNFC_CX_RF_DISCOVERY_CONFIG structure pointer [Near-Field Proximity Drivers], NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG, _NFC_CX_RF_DISCOVERY_CONFIG, nfpdrivers.nfc_cx_rf_discovery_config
+ms.keywords : PNFC_CX_RF_DISCOVERY_CONFIG, nfccx/NFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG structure [Near-Field Proximity Drivers], NFC_CX_RF_DISCOVERY_CONFIG, nfccx/PNFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG, PNFC_CX_RF_DISCOVERY_CONFIG structure pointer [Near-Field Proximity Drivers], _NFC_CX_RF_DISCOVERY_CONFIG, nfpdrivers.nfc_cx_rf_discovery_config
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
+req.typenames : "*PNFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG"
 ---
 
 # _NFC_CX_RF_DISCOVERY_CONFIG structure
@@ -101,9 +101,7 @@ This member corresponds to TOTAL_DURATION specified in the NCI specification. Va
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
 ## See Also

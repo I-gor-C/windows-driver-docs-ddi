@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C2A8F7FF-7DBA-4725-A64C-7F694C8001C0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsReplaceSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsReplaceSiloContext, PsReplaceSiloContext, kernel.psreplacesilocontext
+ms.keywords : ntddk/PsReplaceSiloContext, PsReplaceSiloContext routine [Kernel-Mode Driver Architecture], kernel.psreplacesilocontext, PsReplaceSiloContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,11 +122,7 @@ A successful call to <b>PsReplaceSiloContext</b> increments the reference count 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d3d37fd2-b3fa-4664-ba4b-c355197d9b40
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiRequest interface [Print Devices], IBidiRequest::GetResult method, print.ibidirequest_ibidirequest__getresult, bidispl/IBidiRequest::IBidiRequest::GetResult, _win32_IBidiRequest_GetResult, IBidiRequest, IBidiRequest::IBidiRequest::GetResult, IBidiRequest::GetResult, GetResult, gdi.ibidirequest_ibidirequest__getresult, IBidiRequest::GetResult method [Print Devices], IBidiRequest interface, IBidiRequest::GetResult method [Print Devices]
+ms.keywords : bidispl/IBidiRequest::IBidiRequest::GetResult, IBidiRequest::IBidiRequest::GetResult, _win32_IBidiRequest_GetResult, IBidiRequest::GetResult method [Print Devices], GetResult, IBidiRequest::GetResult, IBidiRequest, IBidiRequest::GetResult method [Print Devices], IBidiRequest interface, print.ibidirequest_ibidirequest__getresult, IBidiRequest interface [Print Devices], IBidiRequest::GetResult method, gdi.ibidirequest_ibidirequest__getresult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -118,22 +118,19 @@ Note that the return value indicates whether the method was successful. It does 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
-
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
+
+<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 
  
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWERSOURCEID, POWERSOURCEID"
+req.typenames : POWERSOURCEID, *PPOWERSOURCEID
 ---
 
 # IOCTL_CAD_GET_BATTERY_PROVISIONING_STATUS IOCTL
@@ -71,6 +71,4 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | charging.h |
-| **IRQL** |  |

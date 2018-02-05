@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c15f9be2-1f35-41cf-a1de-880e3662f2b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_FEATURE_DATA_PROFILE_LIST_EX, structs-CD-ROM_4834760d-aeb7-44eb-a8a7-4c961ff8aa4c.xml, FEATURE_DATA_PROFILE_LIST_EX structure [Storage Devices], FEATURE_DATA_PROFILE_LIST_EX, PFEATURE_DATA_PROFILE_LIST_EX structure pointer [Storage Devices], PFEATURE_DATA_PROFILE_LIST_EX, ntddmmc/FEATURE_DATA_PROFILE_LIST_EX, storage.feature_data_profile_list_ex, *PFEATURE_DATA_PROFILE_LIST_EX, ntddmmc/PFEATURE_DATA_PROFILE_LIST_EX"
+ms.keywords : structs-CD-ROM_4834760d-aeb7-44eb-a8a7-4c961ff8aa4c.xml, storage.feature_data_profile_list_ex, PFEATURE_DATA_PROFILE_LIST_EX, ntddmmc/FEATURE_DATA_PROFILE_LIST_EX, FEATURE_DATA_PROFILE_LIST_EX, FEATURE_DATA_PROFILE_LIST_EX structure [Storage Devices], ntddmmc/PFEATURE_DATA_PROFILE_LIST_EX, _FEATURE_DATA_PROFILE_LIST_EX, *PFEATURE_DATA_PROFILE_LIST_EX, PFEATURE_DATA_PROFILE_LIST_EX structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,16 +74,13 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_data_profile_list.md">FEATURE_DATA_PROFILE_LIST</a>
-
 <a href="..\ntddmmc\ne-ntddmmc-_feature_profile_type.md">FEATURE_PROFILE_TYPE</a>
+
+<a href="..\ntddmmc\ns-ntddmmc-_feature_data_profile_list.md">FEATURE_DATA_PROFILE_LIST</a>
 
  
 

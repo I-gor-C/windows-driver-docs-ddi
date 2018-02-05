@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BE054858-F61A-488B-87A3-615A646C27F0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wditypes/WDI_CIPHER_KEY_DIRECTION_BOTH, wditypes/WDI_CIPHER_KEY_DIRECTION_INBOUND, netvista.wifi_cipher_key_direction, WDI_CIPHER_KEY_DIRECTION_BOTH, _WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION, wditypes/WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION_INBOUND, wditypes/WDI_CIPHER_KEY_DIRECTION_OUTBOUND, netvista.wdi_cipher_key_direction, WDI_CIPHER_KEY_DIRECTION_OUTBOUND, WDI_CIPHER_KEY_DIRECTION enumeration [Device and Driver Installation]
+ms.keywords : "_WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION_OUTBOUND, netvista.wdi_cipher_key_direction, netvista.wifi_cipher_key_direction, wditypes/WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION enumeration [Device and Driver Installation], wditypes/WDI_CIPHER_KEY_DIRECTION_OUTBOUND, WDI_CIPHER_KEY_DIRECTION_BOTH, wditypes/WDI_CIPHER_KEY_DIRECTION_BOTH, WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION_INBOUND, wditypes/WDI_CIPHER_KEY_DIRECTION_INBOUND"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,5 @@ typedef enum _WDI_CIPHER_KEY_DIRECTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

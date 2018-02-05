@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe8dc704-3baf-4955-85fe-bba19181dbbf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml, kernel.kedelayexecutionthread, KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], KeDelayExecutionThread, wdm/KeDelayExecutionThread
+ms.keywords : KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], wdm/KeDelayExecutionThread, k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml, kernel.kedelayexecutionthread, KeDelayExecutionThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,12 +134,11 @@ Expiration times are measured relative to the system clock, and the accuracy wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | IrqlKeApcLte1, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

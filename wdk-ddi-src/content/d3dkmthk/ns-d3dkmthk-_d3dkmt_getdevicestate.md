@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b90f8b63-51d3-4de4-9d8b-91926150fd30
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_39a99244-3951-4a2f-a92d-4aec50589cde.xml, _D3DKMT_GETDEVICESTATE, d3dkmthk/D3DKMT_GETDEVICESTATE, D3DKMT_GETDEVICESTATE, D3DKMT_GETDEVICESTATE structure [Display Devices], display.d3dkmt_getdevicestate
+ms.keywords : D3DKMT_GETDEVICESTATE, d3dkmthk/D3DKMT_GETDEVICESTATE, _D3DKMT_GETDEVICESTATE, D3DKMT_GETDEVICESTATE structure [Display Devices], display.d3dkmt_getdevicestate, OpenGL_Structs_39a99244-3951-4a2f-a92d-4aec50589cde.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,22 +69,20 @@ typedef struct _D3DKMT_GETDEVICESTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicepresent_state.md">D3DKMT_DEVICEPRESENT_STATE</a>
 
+<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_deviceexecution_state.md">D3DKMT_DEVICEEXECUTION_STATE</a>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_devicereset_state.md">D3DKMT_DEVICERESET_STATE</a>
 
 <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_devicestate_type.md">D3DKMT_DEVICESTATE_TYPE</a>
 
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetdevicestate.md">D3DKMTGetDeviceState</a>
-
-<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_deviceexecution_state.md">D3DKMT_DEVICEEXECUTION_STATE</a>
 
  
 

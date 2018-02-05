@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 86e04896-2921-4f77-9bee-283ceb9a66bc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntifs/NtFlushVirtualMemory, NtFlushVirtualMemory, kernel.zwflushvirtualmemory, ZwFlushVirtualMemory routine [Kernel-Mode Driver Architecture], ntifs/ZwFlushVirtualMemory, k111_536d2679-dc41-490f-be7b-171e0208a1fd.xml, ZwFlushVirtualMemory
+ms.keywords : ZwFlushVirtualMemory, k111_536d2679-dc41-490f-be7b-171e0208a1fd.xml, ZwFlushVirtualMemory routine [Kernel-Mode Driver Architecture], NtFlushVirtualMemory, ntifs/ZwFlushVirtualMemory, kernel.zwflushvirtualmemory, ntifs/NtFlushVirtualMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -177,20 +177,18 @@ For more information about memory management support for kernel-mode drivers, se
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
 <a href="..\ntifs\nf-ntifs-zwallocatevirtualmemory.md">ZwAllocateVirtualMemory</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : bc403fc7-7862-4c4c-8a82-bd5c740b270e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoAttachDeviceToDeviceStackSafe, ntddk/IoAttachDeviceToDeviceStackSafe, ifsk.ioattachdevicetodevicestacksafe, IoAttachDeviceToDeviceStackSafe routine [Installable File System Drivers], ioref_1db91288-e8ad-4796-9052-333bf37f01d1.xml
+ms.keywords : ntddk/IoAttachDeviceToDeviceStackSafe, ifsk.ioattachdevicetodevicestacksafe, IoAttachDeviceToDeviceStackSafe, ioref_1db91288-e8ad-4796-9052-333bf37f01d1.xml, IoAttachDeviceToDeviceStackSafe routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,20 +88,18 @@ At the moment immediately after it is attached to the top of the stack, the <i>S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
-
 <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
+
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 
  
 

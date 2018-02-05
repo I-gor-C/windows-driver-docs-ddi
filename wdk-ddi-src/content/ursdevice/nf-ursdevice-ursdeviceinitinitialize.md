@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : EFA83238-77DF-474D-8F8F-2400C9B23A00
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsDeviceInitInitialize, buses.ursdeviceinitinitialize, ursdevice/UrsDeviceInitInitialize, UrsDeviceInitInitialize method [Buses]
+ms.keywords : UrsDeviceInitInitialize method [Buses], buses.ursdeviceinitinitialize, ursdevice/UrsDeviceInitInitialize, UrsDeviceInitInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,12 @@ The client driver for the dual-role controller calls this method in its <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
+| **Library** | Urscxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

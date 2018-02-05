@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 46c9fa94-283c-481e-9fb1-2ed63df00386
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PSRIOV_DEVICE_INTERFACE_STANDARD_2, _SRIOV_DEVICE_INTERFACE_STANDARD_2, pcivirt/SRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2, PCI.sriov_device_interface_standard_2, SRIOV_DEVICE_INTERFACE_STANDARD_2 structure [Buses]"
+ms.keywords : "_SRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2, PCI.sriov_device_interface_standard_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2 structure [Buses], pcivirt/SRIOV_DEVICE_INTERFACE_STANDARD_2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2"
+req.typenames : SRIOV_DEVICE_INTERFACE_STANDARD_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2
 ---
 
 # _SRIOV_DEVICE_INTERFACE_STANDARD_2 structure
@@ -149,7 +149,4 @@ Pointer to the driver's implementation of the <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |

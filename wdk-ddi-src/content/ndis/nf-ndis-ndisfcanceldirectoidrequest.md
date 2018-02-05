@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 05cbeca1-7420-41c6-8868-980b265523db
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFCancelDirectOidRequest, ndis/NdisFCancelDirectOidRequest, NdisFCancelDirectOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndisfcanceldirectoidrequest, ndis_request_direct_ref_48dc16f9-1c11-41de-9c37-91abed86b06c.xml
+ms.keywords : netvista.ndisfcanceldirectoidrequest, NdisFCancelDirectOidRequest, NdisFCancelDirectOidRequest function [Network Drivers Starting with Windows Vista], ndis_request_direct_ref_48dc16f9-1c11-41de-9c37-91abed86b06c.xml, ndis/NdisFCancelDirectOidRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,31 +82,28 @@ Filter drivers call
 
 The filter driver can call 
     <b>NdisFCancelDirectOidRequest</b> from the 
-    <mshelp:link keywords="netvista.filtercanceldirectoidrequest" tabindex="0"><i>
-    FilterCancelDirectOidRequest</i></mshelp:link> function to pass on the cancellation to underlying drivers.
+    <a href="..\ndis\nc-ndis-filter_cancel_direct_oid_request.md">
+    FilterCancelDirectOidRequest</a> function to pass on the cancellation to underlying drivers.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
 <a href="..\ndis\nf-ndis-ndisfdirectoidrequest.md">NdisFDirectOidRequest</a>
 
-<mshelp:link keywords="netvista.filtercanceldirectoidrequest" tabindex="0"><i>
-   FilterCancelDirectOidRequest</i></mshelp:link>
-
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nc-ndis-filter_cancel_direct_oid_request.md">
+   FilterCancelDirectOidRequest</a>
 
  
 

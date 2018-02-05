@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : FE836B10-1782-4B0E-9D4B-2740FE94B6E1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetOutputLinePrefix method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::GetOutputLinePrefix, IDebugClient, IDebugClient::GetOutputLinePrefix, IDebugClient interface [Windows Debugging], GetOutputLinePrefix method, GetOutputLinePrefix, GetOutputLinePrefix method [Windows Debugging], debugger.idebugclient_getoutputlineprefix
+ms.keywords : debugger.idebugclient_getoutputlineprefix, GetOutputLinePrefix, IDebugClient interface [Windows Debugging], GetOutputLinePrefix method, IDebugClient, GetOutputLinePrefix method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::GetOutputLinePrefix, GetOutputLinePrefix method [Windows Debugging], IDebugClient::GetOutputLinePrefix
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -100,14 +100,9 @@ Some of the engine commands produce
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

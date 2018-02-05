@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8e9a247a-f906-4f0e-8249-b67a042aada5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortGetVirtualAddress routine [Storage Devices], ScsiPortGetVirtualAddress, scsiprt_4f474eed-75d3-47cd-9473-37d0d15310de.xml, srb/ScsiPortGetVirtualAddress, storage.scsiportgetvirtualaddress
+ms.keywords : srb/ScsiPortGetVirtualAddress, ScsiPortGetVirtualAddress, scsiprt_4f474eed-75d3-47cd-9473-37d0d15310de.xml, ScsiPortGetVirtualAddress routine [Storage Devices], storage.scsiportgetvirtualaddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -87,14 +87,9 @@ Specifies the physical address to be mapped. This value must have been returned 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

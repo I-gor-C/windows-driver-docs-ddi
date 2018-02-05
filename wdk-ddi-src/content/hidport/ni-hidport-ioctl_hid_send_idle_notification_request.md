@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
+req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST IOCTL
@@ -72,6 +72,4 @@ The bus or port driver sets Irp-&gt;IoStatus.Status to STATUS_SUCCESS or the app
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidport.h (include Hidport.h) |
-| **IRQL** |  |

@@ -62,7 +62,7 @@ The hardware device being processed.
 
 `*pArgs`
 
-
+The arguments used to open a session policy.
 
 
 ## Return Value
@@ -73,11 +73,6 @@ Returns the size of the session in bytes.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

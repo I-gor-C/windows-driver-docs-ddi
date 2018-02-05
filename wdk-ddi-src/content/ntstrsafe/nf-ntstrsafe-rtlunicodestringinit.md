@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 319d1d6e-a4a2-4c2c-9c30-948c5f03a2be
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlunicodestringinit, RtlUnicodeStringInit, ntstrsafe/RtlUnicodeStringInit, safestrings_7540072b-061a-46be-a2ea-72c4da1790dd.xml, RtlUnicodeStringInit function [Kernel-Mode Driver Architecture]
+ms.keywords : RtlUnicodeStringInit, safestrings_7540072b-061a-46be-a2ea-72c4da1790dd.xml, kernel.rtlunicodestringinit, ntstrsafe/RtlUnicodeStringInit, RtlUnicodeStringInit function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,20 +123,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1). Available starting with Windows XP with Service Pack 1 (SP1). |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinitex.md">RtlUnicodeStringInitEx</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

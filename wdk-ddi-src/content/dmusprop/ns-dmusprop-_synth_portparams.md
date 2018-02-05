@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 94c953ae-519b-4659-a4c9-a97db7dc31e9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SYNTH_PORTPARAMS structure [Audio Devices], aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, *PSYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices], PSYNTH_PORTPARAMS, audio.synth_portparams, SYNTH_PORTPARAMS, dmusprop/PSYNTH_PORTPARAMS, dmusprop/SYNTH_PORTPARAMS, _SYNTH_PORTPARAMS
+ms.keywords : SYNTH_PORTPARAMS structure [Audio Devices], dmusprop/SYNTH_PORTPARAMS, PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices], _SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, audio.synth_portparams, dmusprop/PSYNTH_PORTPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,11 +74,6 @@ Specifies the type of effects produced for audio output from this port. This mem
 If no effects are enabled, this member is set to SYNTH_EFFECT_NONE, which is zero.
 
 
-#### SYNTH_EFFECT_REVERB
-
-Reverb is enabled.
-
-
 #### SYNTH_EFFECT_CHORUS
 
 Chorus effect is enabled.
@@ -87,6 +82,11 @@ Chorus effect is enabled.
 #### SYNTH_EFFECT_DELAY
 
 Delay effect is enabled.
+
+
+#### SYNTH_EFFECT_REVERB
+
+Reverb is enabled.
 
 `SampleRate`
 
@@ -103,9 +103,9 @@ Specifies which of the SYNTH_PORTPARAMS structure members contain valid data. Th
 
 
 
-#### SYNTH_PORTPARAMS_VOICES
+#### SYNTH_PORTPARAMS_AUDIOCHANNELS
 
-The <b>Voices</b> field is valid.
+The <b>AudioChannels</b> field is valid.
 
 
 #### SYNTH_PORTPARAMS_CHANNELGROUPS
@@ -113,9 +113,9 @@ The <b>Voices</b> field is valid.
 The <b>ChannelGroups</b> field is valid.
 
 
-#### SYNTH_PORTPARAMS_AUDIOCHANNELS
+#### SYNTH_PORTPARAMS_EFFECT
 
-The <b>AudioChannels</b> field is valid.
+The <b>EffectsFlags</b> flag is valid.
 
 
 #### SYNTH_PORTPARAMS_SAMPLERATE
@@ -123,14 +123,14 @@ The <b>AudioChannels</b> field is valid.
 The <b>SampleRate</b> field is valid.
 
 
-#### SYNTH_PORTPARAMS_EFFECT
-
-The <b>EffectsFlags</b> flag is valid.
-
-
 #### SYNTH_PORTPARAMS_SHARE
 
 The <b>Share</b> field is valid.
+
+
+#### SYNTH_PORTPARAMS_VOICES
+
+The <b>Voices</b> field is valid.
 
 `Voices`
 
@@ -142,9 +142,6 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dmusprop.h (include Dmusprop.h) |
 
 ## See Also

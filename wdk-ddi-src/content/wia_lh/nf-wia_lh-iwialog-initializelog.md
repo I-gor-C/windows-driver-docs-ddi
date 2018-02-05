@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : ef637329-a291-445b-8ac7-6e55d5d7931e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaLog::InitializeLog, IWiaLog interface [Imaging Devices], InitializeLog method, IWiaLog_17cc24cb-d8dd-4f7c-b5d4-6720621b6534.xml, IWiaLog, image.iwialog_initializelog, wia_lh/IWiaLog::InitializeLog, InitializeLog, InitializeLog method [Imaging Devices], IWiaLog interface, InitializeLog method [Imaging Devices]
+ms.keywords : IWiaLog::InitializeLog, wia_lh/IWiaLog::InitializeLog, IWiaLog interface [Imaging Devices], InitializeLog method, IWiaLog, image.iwialog_initializelog, InitializeLog method [Imaging Devices], IWiaLog interface, IWiaLog_17cc24cb-d8dd-4f7c-b5d4-6720621b6534.xml, InitializeLog method [Imaging Devices], InitializeLog
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,11 +71,7 @@ The minidriver should call <b>CoCreateInstance</b> or <b>CoCreateInstanceEx </b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros. Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros. |
+| **Target Platform** | Desktop |
 | **Header** | wia_lh.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wia_lh.h |

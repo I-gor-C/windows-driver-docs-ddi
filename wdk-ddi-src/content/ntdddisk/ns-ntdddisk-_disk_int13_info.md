@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8a9c335a-1c5f-4379-83bb-21391ae46a3c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DISK_INT13_INFO structure [Storage Devices], PDISK_INT13_INFO structure pointer [Storage Devices], PDISK_INT13_INFO, ntdddisk/DISK_INT13_INFO, *PDISK_INT13_INFO, _DISK_INT13_INFO, structs-disk_fc6ee399-d876-44e3-955a-3ab95c1b5134.xml, DISK_INT13_INFO, storage.disk_int13_info, ntdddisk/PDISK_INT13_INFO
+ms.keywords : ntdddisk/DISK_INT13_INFO, PDISK_INT13_INFO, *PDISK_INT13_INFO, DISK_INT13_INFO structure [Storage Devices], ntdddisk/PDISK_INT13_INFO, structs-disk_fc6ee399-d876-44e3-955a-3ab95c1b5134.xml, _DISK_INT13_INFO, DISK_INT13_INFO, storage.disk_int13_info, PDISK_INT13_INFO structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,16 +79,13 @@ Indicates the number of sectors per track.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
-
 <a href="..\ntdddisk\ns-ntdddisk-_disk_ex_int13_info.md">DISK_EX_INT13_INFO</a>
+
+<a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
 
  
 

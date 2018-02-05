@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 62abbee8-cd62-4106-9a7e-c93bfc916769
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ataportwriteregisterulong, AtaPortWriteRegisterUlong, atartns_9cbbfe00-9ab2-4c7b-8f33-c9ebb166214a.xml, AtaPortWriteRegisterUlong routine [Storage Devices], irb/AtaPortWriteRegisterUlong
+ms.keywords : atartns_9cbbfe00-9ab2-4c7b-8f33-c9ebb166214a.xml, AtaPortWriteRegisterUlong, irb/AtaPortWriteRegisterUlong, AtaPortWriteRegisterUlong routine [Storage Devices], storage.ataportwriteregisterulong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,20 +71,15 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportwriteregisteruchar.md">AtaPortWriteRegisterUchar</a>
-
 <a href="..\irb\nf-irb-ataportwriteregisterushort.md">AtaPortWriteRegisterUshort</a>
+
+<a href="..\irb\nf-irb-ataportwriteregisteruchar.md">AtaPortWriteRegisterUchar</a>
 
 <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : E0638C55-4160-48A5-9378-6AA9AAC8DC36
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols5, SetScopeFrameByIndexEx, debugger.idebugsymbols5_setscopeframebyindexex, IDebugSymbols5::SetScopeFrameByIndexEx, dbgeng/IDebugSymbols5::SetScopeFrameByIndexEx, SetScopeFrameByIndexEx method [Windows Debugging], IDebugSymbols5 interface, SetScopeFrameByIndexEx method [Windows Debugging], IDebugSymbols5 interface [Windows Debugging], SetScopeFrameByIndexEx method
+ms.keywords : IDebugSymbols5, dbgeng/IDebugSymbols5::SetScopeFrameByIndexEx, SetScopeFrameByIndexEx, SetScopeFrameByIndexEx method [Windows Debugging], SetScopeFrameByIndexEx method [Windows Debugging], IDebugSymbols5 interface, debugger.idebugsymbols5_setscopeframebyindexex, IDebugSymbols5::SetScopeFrameByIndexEx, IDebugSymbols5 interface [Windows Debugging], SetScopeFrameByIndexEx method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

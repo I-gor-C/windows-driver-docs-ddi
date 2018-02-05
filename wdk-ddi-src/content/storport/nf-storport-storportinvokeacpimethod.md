@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2A8EF694-B699-46A0-9B1D-B7D0831F3944
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortInvokeAcpiMethod, StorPortInvokeAcpiMethod routine [Storage Devices], storage.storportinvokeacpimethod, StorPortInvokeAcpiMethod
+ms.keywords : storage.storportinvokeacpimethod, storport/StorPortInvokeAcpiMethod, StorPortInvokeAcpiMethod routine [Storage Devices], StorPortInvokeAcpiMethod
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -180,11 +180,8 @@ The <b>StorPortInvokeAcpiMethod</b> enables a miniport driver to invoke ACPI met
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

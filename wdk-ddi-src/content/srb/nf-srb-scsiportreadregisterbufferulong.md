@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6b2d1893-8878-4ccd-bc0c-845e1cb8f6bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortReadRegisterBufferUlong routine [Storage Devices], ScsiPortReadRegisterBufferUlong, scsiprt_4356902d-5810-4006-acbe-40d41c2d68e4.xml, storage.scsiportreadregisterbufferulong, srb/ScsiPortReadRegisterBufferUlong
+ms.keywords : srb/ScsiPortReadRegisterBufferUlong, scsiprt_4356902d-5810-4006-acbe-40d41c2d68e4.xml, ScsiPortReadRegisterBufferUlong, storage.scsiportreadregisterbufferulong, ScsiPortReadRegisterBufferUlong routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -80,14 +80,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

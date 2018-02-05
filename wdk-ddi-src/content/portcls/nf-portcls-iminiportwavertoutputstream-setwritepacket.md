@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 28C73FBA-9122-4CFD-959E-495062CEEF41
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTOutputStream::SetWritePacket, audio.iminiportwavertoutputstream_setwritepacket, IMiniportWaveRTOutputStream interface [Audio Devices], SetWritePacket method, IMiniportWaveRTOutputStream, SetWritePacket, portcls/IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket method [Audio Devices], SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface
+ms.keywords : SetWritePacket, IMiniportWaveRTOutputStream interface [Audio Devices], SetWritePacket method, SetWritePacket method [Audio Devices], portcls/IMiniportWaveRTOutputStream::SetWritePacket, IMiniportWaveRTOutputStream, audio.iminiportwavertoutputstream_setwritepacket, IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -103,14 +103,11 @@ Depending on hardware capabilities, if the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10 and later. Available in Windows 10 and later. |
+| **Target Platform** | Windows |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

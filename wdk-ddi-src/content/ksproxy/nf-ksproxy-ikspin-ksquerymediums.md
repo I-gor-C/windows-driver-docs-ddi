@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : de6efd10-7f97-422a-abd4-c21c4cbc1dd7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy_88debe31-2dd5-41bc-80c0-164b28dc586f.xml, IKsPin interface [Streaming Media Devices], KsQueryMediums method, IKsPin, KsQueryMediums method [Streaming Media Devices], KsQueryMediums, stream.ikspin_ksquerymediums, ksproxy/IKsPin::KsQueryMediums, IKsPin::KsQueryMediums, KsQueryMediums method [Streaming Media Devices], IKsPin interface
+ms.keywords : KsQueryMediums method [Streaming Media Devices], IKsPin interface, stream.ikspin_ksquerymediums, IKsPin interface [Streaming Media Devices], KsQueryMediums method, KsQueryMediums, KsQueryMediums method [Streaming Media Devices], ksproxy_88debe31-2dd5-41bc-80c0-164b28dc586f.xml, IKsPin::KsQueryMediums, ksproxy/IKsPin::KsQueryMediums, IKsPin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ Applications call <b>KsQueryMediums</b> to retrieve mediums that pins support in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

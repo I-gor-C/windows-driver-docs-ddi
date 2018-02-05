@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07785939-C3D1-4085-BA1A-91E8FEE52B70
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_evict, d3dkmthk/D3DKMT_EVICT, D3DKMT_EVICT, D3DKMT_EVICT structure [Display Devices], _D3DKMT_EVICT
+ms.keywords : display.d3dkmt_evict, _D3DKMT_EVICT, D3DKMT_EVICT structure [Display Devices], d3dkmthk/D3DKMT_EVICT, D3DKMT_EVICT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,16 +81,14 @@ typedef struct _D3DKMT_EVICT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_evict_flags.md">D3DDDI_EVICT_FLAGS</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtevict.md">D3DKMTEvict</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_evict_flags.md">D3DDDI_EVICT_FLAGS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : E6897994-51C7-4278-9CCE-9B7E9DD408D7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SensorsCxStateChange, sensors.sensorscxstatechange, SensorsCxStateChange function [Sensor Devices], sensorscx/SensorsCxStateChange
+ms.keywords : SensorsCxStateChange, SensorsCxStateChange function [Sensor Devices], sensorscx/SensorsCxStateChange, sensors.sensorscxstatechange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorscx.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

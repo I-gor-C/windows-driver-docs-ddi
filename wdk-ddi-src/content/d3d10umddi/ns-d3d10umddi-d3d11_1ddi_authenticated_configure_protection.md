@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2932fd35-54dc-4054-99e5-9b33aac77413
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION, display.d3d11_1ddi_authenticated_configure_protection, D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION structure [Display Devices], D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION
+ms.keywords : D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION, D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION structure [Display Devices], display.d3d11_1ddi_authenticated_configure_protection, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CONFIGURE_PROTECTION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_authenticated_protection_flags
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

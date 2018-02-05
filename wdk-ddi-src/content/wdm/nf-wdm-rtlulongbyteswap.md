@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4c08a70e-5092-40fb-94fd-c3ef8a5537b5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_0d4753a3-859a-429f-bd07-66669f1b46e8.xml, kernel.rtlulongbyteswap, RtlUlongByteSwap, RtlUlongByteSwap routine [Kernel-Mode Driver Architecture], wdm/RtlUlongByteSwap
+ms.keywords : wdm/RtlUlongByteSwap, RtlUlongByteSwap, RtlUlongByteSwap routine [Kernel-Mode Driver Architecture], k109_0d4753a3-859a-429f-bd07-66669f1b46e8.xml, kernel.rtlulongbyteswap
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,12 @@ To reverse the ordering of bytes in a USHORT value, use the <a href="..\wdm\nf-w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

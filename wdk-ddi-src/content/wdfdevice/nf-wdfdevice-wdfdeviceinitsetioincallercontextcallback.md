@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f0104e8b-9a2f-4f52-a431-bec7de3be968
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceInitSetIoInCallerContextCallback, DFDeviceObjectGeneralRef_6ef62fc4-094a-4fe7-8ecb-7205566aef77.xml, WdfDeviceInitSetIoInCallerContextCallback method, wdf.wdfdeviceinitsetioincallercontextcallback, PFN_WDFDEVICEINITSETIOINCALLERCONTEXTCALLBACK, WdfDeviceInitSetIoInCallerContextCallback, kmdf.wdfdeviceinitsetioincallercontextcallback
+ms.keywords : wdfdevice/WdfDeviceInitSetIoInCallerContextCallback, WdfDeviceInitSetIoInCallerContextCallback, WdfDeviceInitSetIoInCallerContextCallback method, PFN_WDFDEVICEINITSETIOINCALLERCONTEXTCALLBACK, wdf.wdfdeviceinitsetioincallercontextcallback, kmdf.wdfdeviceinitsetioincallercontextcallback, DFDeviceObjectGeneralRef_6ef62fc4-094a-4fe7-8ecb-7205566aef77.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,12 +78,10 @@ For more information about the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 

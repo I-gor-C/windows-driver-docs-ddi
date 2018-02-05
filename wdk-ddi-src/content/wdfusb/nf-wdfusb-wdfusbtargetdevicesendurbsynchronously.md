@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b9b76796-bf08-4d10-82a4-7894b3285fff
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfusbtargetdevicesendurbsynchronously, kmdf.wdfusbtargetdevicesendurbsynchronously, WdfUsbTargetDeviceSendUrbSynchronously, PFN_WDFUSBTARGETDEVICESENDURBSYNCHRONOUSLY, DFUsbRef_33a88dd1-6d59-4e1f-bd4f-6d778c5aa6d8.xml, WdfUsbTargetDeviceSendUrbSynchronously method, wdfusb/WdfUsbTargetDeviceSendUrbSynchronously
+ms.keywords : wdfusb/WdfUsbTargetDeviceSendUrbSynchronously, DFUsbRef_33a88dd1-6d59-4e1f-bd4f-6d778c5aa6d8.xml, wdf.wdfusbtargetdevicesendurbsynchronously, kmdf.wdfusbtargetdevicesendurbsynchronously, PFN_WDFUSBTARGETDEVICESENDURBSYNCHRONOUSLY, WdfUsbTargetDeviceSendUrbSynchronously, WdfUsbTargetDeviceSendUrbSynchronously method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -164,30 +164,28 @@ For more information about the <b>WdfUsbTargetDeviceSendUrbSynchronously</b> met
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
-
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>
-
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsend.md">WdfRequestSend</a>
 
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcancelsentrequest.md">WdfRequestCancelSentRequest</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceformatrequestforurb.md">WdfUsbTargetDeviceFormatRequestForUrb</a>
 
  
 

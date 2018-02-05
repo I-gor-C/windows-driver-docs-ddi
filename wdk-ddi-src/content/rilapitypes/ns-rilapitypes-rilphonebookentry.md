@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 848afbe3-be29-4c20-b9d0-33db98dab7bb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY, netvista.rilphonebookentry_2, rilapitypes/RILPHONEBOOKENTRY, RILPHONEBOOKENTRY structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : RILPHONEBOOKENTRY, netvista.rilphonebookentry_2, *LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPHONEBOOKENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -125,7 +125,4 @@ typedef struct _RILPHONEBOOKENTRY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

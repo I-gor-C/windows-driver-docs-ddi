@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dd833373-2879-49f0-9b16-fddb2f7495c1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisreleasespinlock, NdisReleaseSpinLock, ndis/NdisReleaseSpinLock, ndis_spin_lock_ref_a4e1c783-4682-401c-a198-fdc14cbfa383.xml, NdisReleaseSpinLock macro [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisreleasespinlock, NdisReleaseSpinLock macro [Network Drivers Starting with Windows Vista], ndis_spin_lock_ref_a4e1c783-4682-401c-a198-fdc14cbfa383.xml, ndis/NdisReleaseSpinLock, NdisReleaseSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -56,7 +56,7 @@ VOID NdisReleaseSpinLock(
 
 `_SpinLock`
 
-TBD
+Pointer to the acquired spin lock to be released.
 
 
 ## Return Value
@@ -88,28 +88,26 @@ Any spin lock acquired with
     <b>NdisDprReleaseSpinLock</b>.
 
 For more information about acquiring and releasing NDIS spin locks, see 
-    <mshelp:link keywords="netvista.synchronization_and_notification_in_network_drivers" tabindex="0">Synchronization
-    and Notification in Network Drivers</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/synchronization-and-notification-in-network-drivers">Synchronization
+    and Notification in Network Drivers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReleaseSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReleaseSpinLock (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReleaseSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReleaseSpinLock (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | Irql_Synch_Function, SpinLock, SpinLockBalanced, SpinLockDpr, SpinLockDprRelease, SpinlockRelease |
 
 ## See Also
 
+<a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
+
 <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 
 <a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
-
-<a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
 
  
 

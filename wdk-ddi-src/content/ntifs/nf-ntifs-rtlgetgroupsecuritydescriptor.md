@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a2fbb125-42cf-4c33-83bb-3fc875712be3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGetGroupSecurityDescriptor, ntifs/RtlGetGroupSecurityDescriptor, RtlGetGroupSecurityDescriptor routine [Installable File System Drivers], rtlref_6ff72a5f-d1ef-4fac-bdd0-4a612c0018ca.xml, ifsk.rtlgetgroupsecuritydescriptor
+ms.keywords : ifsk.rtlgetgroupsecuritydescriptor, RtlGetGroupSecurityDescriptor routine [Installable File System Drivers], ntifs/RtlGetGroupSecurityDescriptor, rtlref_6ff72a5f-d1ef-4fac-bdd0-4a612c0018ca.xml, RtlGetGroupSecurityDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,24 +103,22 @@ For more information about security and access control, see the Microsoft Window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows Server 2003 SP1 and later. This routine is available on Microsoft Windows Server 2003 SP1 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntifs\nf-ntifs-rtlsetgroupsecuritydescriptor.md">RtlSetGroupSecurityDescriptor</a>
 
 <a href="..\ntifs\nf-ntifs-rtlgetownersecuritydescriptor.md">RtlGetOwnerSecurityDescriptor</a>
 
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
 <a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+
+<a href="..\ntifs\nf-ntifs-rtlsetgroupsecuritydescriptor.md">RtlSetGroupSecurityDescriptor</a>
 
  
 

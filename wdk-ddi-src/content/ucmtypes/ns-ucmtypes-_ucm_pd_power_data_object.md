@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : C54750A9-EE64-4FE7-9ED6-EC9709A82C43
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucmtypes/PUCM_PD_POWER_DATA_OBJECT, buses.ucm_pd_power_data_object, PUCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT, _UCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT union [Buses], PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], UCM_PD_POWER_DATA_OBJECT
+ms.keywords : buses.ucm_pd_power_data_object, _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], UCM_PD_POWER_DATA_OBJECT union [Buses], ucmtypes/PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,7 +104,7 @@ Contains bitfields describing a variable-supply non-battery PD object.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |

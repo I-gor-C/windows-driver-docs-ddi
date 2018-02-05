@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d6d8147e-8cc8-4c35-8031-bce2fa3ccd67
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_COLOR_YCbCrA structure [Display Devices], display.d3d11_1ddi_video_color_ycbcra, D3D11_1DDI_VIDEO_COLOR_YCbCrA, d3d10umddi/D3D11_1DDI_VIDEO_COLOR_YCbCrA
+ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_COLOR_YCbCrA, display.d3d11_1ddi_video_color_ycbcra, D3D11_1DDI_VIDEO_COLOR_YCbCrA structure [Display Devices], D3D11_1DDI_VIDEO_COLOR_YCbCrA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,7 +80,5 @@ For example, for 8-bit YUV formats, <code>val = BYTE(f * 255.0)</code>.  Referen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

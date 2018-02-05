@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2ca4ea3b-befd-424d-a4a8-81436d0ffc1c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugClient3::FlushCallbacks, IDebugClient3 interface [Windows Debugging], FlushCallbacks method, FlushCallbacks, FlushCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient5 interface [Windows Debugging], FlushCallbacks method, IDebugClient::FlushCallbacks, debugger.flushcallbacks, IDebugClient2::FlushCallbacks, IDebugClient_e808ca3a-5762-419b-96de-4c49984c1ccd.xml, IDebugClient interface [Windows Debugging], FlushCallbacks method, FlushCallbacks method [Windows Debugging], IDebugClient2 interface [Windows Debugging], FlushCallbacks method, dbgeng/IDebugClient5::FlushCallbacks, dbgeng/IDebugClient::FlushCallbacks, dbgeng/IDebugClient2::FlushCallbacks, dbgeng/IDebugClient4::FlushCallbacks, IDebugClient5::FlushCallbacks, FlushCallbacks method [Windows Debugging], IDebugClient3 interface, FlushCallbacks method [Windows Debugging], IDebugClient4 interface, IDebugClient4 interface [Windows Debugging], FlushCallbacks method, IDebugClient4::FlushCallbacks, FlushCallbacks method [Windows Debugging], IDebugClient2 interface, FlushCallbacks method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient3::FlushCallbacks, IDebugClient5
+ms.keywords : debugger.flushcallbacks, FlushCallbacks method [Windows Debugging], IDebugClient4 interface, IDebugClient4::FlushCallbacks, dbgeng/IDebugClient3::FlushCallbacks, dbgeng/IDebugClient::FlushCallbacks, IDebugClient5 interface [Windows Debugging], FlushCallbacks method, FlushCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient_e808ca3a-5762-419b-96de-4c49984c1ccd.xml, IDebugClient interface [Windows Debugging], FlushCallbacks method, IDebugClient2::FlushCallbacks, dbgeng/IDebugClient4::FlushCallbacks, dbgeng/IDebugClient2::FlushCallbacks, IDebugClient3 interface [Windows Debugging], FlushCallbacks method, FlushCallbacks method [Windows Debugging], IDebugClient2 interface, FlushCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient3::FlushCallbacks, FlushCallbacks method [Windows Debugging], FlushCallbacks method [Windows Debugging], IDebugClient3 interface, IDebugClient5::FlushCallbacks, dbgeng/IDebugClient5::FlushCallbacks, IDebugClient::FlushCallbacks, IDebugClient2 interface [Windows Debugging], FlushCallbacks method, IDebugClient4 interface [Windows Debugging], FlushCallbacks method, IDebugClient5, FlushCallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,32 +82,27 @@ For more information about callbacks, see <a href="https://msdn.microsoft.com/90
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
+<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550815">IDebugOutputCallbacks::Output</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+<a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541970">DispatchCallbacks</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugoutputcallbacks.md">IDebugOutputCallbacks</a>
+<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550815">IDebugOutputCallbacks::Output</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient2.md">IDebugClient2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
 
  
 

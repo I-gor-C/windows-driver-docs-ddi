@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 14e9a28c-65cc-4e90-8220-85f1981c8cd7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/IoRaiseInformationalHardError, IoRaiseInformationalHardError routine [Kernel-Mode Driver Architecture], IoRaiseInformationalHardError, kernel.ioraiseinformationalharderror, k104_7af16dc2-0500-411e-962a-7d8c1fe40ba0.xml
+ms.keywords : k104_7af16dc2-0500-411e-962a-7d8c1fe40ba0.xml, IoRaiseInformationalHardError routine [Kernel-Mode Driver Architecture], ntddk/IoRaiseInformationalHardError, IoRaiseInformationalHardError, kernel.ioraiseinformationalharderror
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,12 +88,11 @@ Starting with Windows Vista, if the routine is called from a thread in session 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlIoApcLte, HwStorPortProhibitedDDIs |
 
@@ -101,9 +100,9 @@ Starting with Windows Vista, if the routine is called from a thread in session 
 
 <a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
-
 <a href="..\ntddk\nf-ntddk-iosetthreadharderrormode.md">IoSetThreadHardErrorMode</a>
+
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 
  
 

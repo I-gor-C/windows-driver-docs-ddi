@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a501a693-bea1-43eb-af8c-5512c8ee9d50
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksevent_item, PKSEVENT_ITEM structure pointer [Streaming Media Devices], KSEVENT_ITEM, *PKSEVENT_ITEM, ks/PKSEVENT_ITEM, KSEVENT_ITEM structure [Streaming Media Devices], ks/KSEVENT_ITEM, PKSEVENT_ITEM, ks-struct_1e126443-3eef-4e67-9969-69c3a4aaa17c.xml
+ms.keywords : ks-struct_1e126443-3eef-4e67-9969-69c3a4aaa17c.xml, KSEVENT_ITEM, PKSEVENT_ITEM structure pointer [Streaming Media Devices], KSEVENT_ITEM structure [Streaming Media Devices], stream.ksevent_item, *PKSEVENT_ITEM, ks/PKSEVENT_ITEM, PKSEVENT_ITEM, ks/KSEVENT_ITEM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,20 +86,17 @@ Not used by the stream class driver.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
 
-<a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
-
 <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 
-<a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
-
 <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
+
+<a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
+
+<a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
 
  
 

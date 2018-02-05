@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2e0ae5d1-5189-4f78-9729-9c1b9bbf046d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlIncrementCcFastReadNotPossible routine [Installable File System Drivers], FsRtlIncrementCcFastReadNotPossible, ntifs/FsRtlIncrementCcFastReadNotPossible, ifsk.fsrtlincrementccfastreadnotpossible, fsrtlref_7789e1c4-9ac3-48c7-9191-f5eba5f4e5e0.xml
+ms.keywords : ntifs/FsRtlIncrementCcFastReadNotPossible, FsRtlIncrementCcFastReadNotPossible routine [Installable File System Drivers], FsRtlIncrementCcFastReadNotPossible, fsrtlref_7789e1c4-9ac3-48c7-9191-f5eba5f4e5e0.xml, ifsk.fsrtlincrementccfastreadnotpossible
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,14 +67,12 @@ File system drivers should call this function to update the performance counter 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

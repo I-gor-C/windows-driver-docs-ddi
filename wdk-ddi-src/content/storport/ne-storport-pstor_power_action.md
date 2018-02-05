@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ffc7c1ec-faec-4383-ab69-844cf68d054f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPowerActionReserved, structs-storport_53754a67-bd34-4f06-92ba-2f45d7fa66a9.xml, storport/PSTOR_POWER_ACTION, storport/StorPowerActionWarmEject, PSTOR_POWER_ACTION, PSTOR_POWER_ACTION enumeration pointer [Storage Devices], storport/StorPowerActionShutdownOff, storport/StorPowerActionHibernate, StorPowerActionWarmEject, StorPowerActionShutdownReset, StorPowerActionSleep, StorPowerActionNone, StorPowerActionHibernate, *PSTOR_POWER_ACTION, STOR_POWER_ACTION, StorPowerActionReserved, StorPowerActionShutdownOff, storage.stor_power_action, storport/STOR_POWER_ACTION, storport/StorPowerActionShutdown, storport/StorPowerActionShutdownReset, storport/StorPowerActionNone, STOR_POWER_ACTION enumeration [Storage Devices], storport/StorPowerActionSleep, StorPowerActionShutdown
+ms.keywords : StorPowerActionShutdownOff, PSTOR_POWER_ACTION, StorPowerActionHibernate, StorPowerActionWarmEject, StorPowerActionNone, storport/StorPowerActionWarmEject, storport/StorPowerActionSleep, storport/StorPowerActionReserved, storport/STOR_POWER_ACTION, PSTOR_POWER_ACTION enumeration pointer [Storage Devices], storport/PSTOR_POWER_ACTION, StorPowerActionReserved, storport/StorPowerActionNone, StorPowerActionShutdownReset, structs-storport_53754a67-bd34-4f06-92ba-2f45d7fa66a9.xml, storage.stor_power_action, StorPowerActionShutdown, STOR_POWER_ACTION, storport/StorPowerActionShutdown, *PSTOR_POWER_ACTION, STOR_POWER_ACTION enumeration [Storage Devices], storport/StorPowerActionShutdownOff, StorPowerActionSleep, storport/StorPowerActionShutdownReset, storport/StorPowerActionHibernate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -105,9 +105,6 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

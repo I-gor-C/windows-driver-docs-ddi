@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ce54870e-80af-4588-a0ca-1ad115739256
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmAllocateContiguousMemorySpecifyCacheNode, k106_0ccc75e1-5d61-4f89-b576-1c709b50609f.xml, wdm/MmAllocateContiguousMemorySpecifyCacheNode, kernel.mmallocatecontiguousmemoryspecifycachenode, MmAllocateContiguousMemorySpecifyCacheNode routine [Kernel-Mode Driver Architecture]
+ms.keywords : k106_0ccc75e1-5d61-4f89-b576-1c709b50609f.xml, MmAllocateContiguousMemorySpecifyCacheNode, MmAllocateContiguousMemorySpecifyCacheNode routine [Kernel-Mode Driver Architecture], kernel.mmallocatecontiguousmemoryspecifycachenode, wdm/MmAllocateContiguousMemorySpecifyCacheNode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,22 +105,20 @@ If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
-<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
-
 <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
+
+<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 3b7814a7-828a-40eb-8494-0753d89a95f4
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidsdi/HidD_GetAttributes, HidD_GetAttributes, hidfunc_e4c243d5-b210-409f-b454-68a69c28057c.xml, hid.hidd_getattributes, HidD_GetAttributes routine [Human Input Devices]
+ms.keywords : HidD_GetAttributes routine [Human Input Devices], hid.hidd_getattributes, hidsdi/HidD_GetAttributes, HidD_GetAttributes, hidfunc_e4c243d5-b210-409f-b454-68a69c28057c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,20 +75,17 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidsdi.h (include Hidsdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hid.lib |
+| **DLL** | Hid.dll |
 
 ## See Also
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
-
 <a href="..\hidsdi\ns-hidsdi-_hidd_attributes.md">HIDD_ATTRIBUTES</a>
+
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
 
  
 

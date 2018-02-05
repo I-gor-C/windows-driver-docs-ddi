@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 86a0b7c4-ef3a-4dd9-961d-35f96182e30c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisrawreadportbufferulong, NdisRawReadPortBufferUlong macro [Network Drivers Starting with Windows Vista], NdisRawReadPortBufferUlong, ndis/NdisRawReadPortBufferUlong, miniport_port_raw_ref_0696e0e4-976c-4d17-a482-054d5d441608.xml
+ms.keywords : miniport_port_raw_ref_0696e0e4-976c-4d17-a482-054d5d441608.xml, NdisRawReadPortBufferUlong macro [Network Drivers Starting with Windows Vista], netvista.ndisrawreadportbufferulong, ndis/NdisRawReadPortBufferUlong, NdisRawReadPortBufferUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -57,8 +57,8 @@ VOID NdisRawReadPortBufferUlong(
 `Port`
 
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
-     <mshelp:link keywords="netvista.ndismregisterioportrange" tabindex="0"><b>
-     NdisMRegisterIoPortRange</b></mshelp:link>.
+     <a href="..\ndis\nf-ndis-ndismregisterioportrange.md">
+     NdisMRegisterIoPortRange</a>.
 
 `Buffer`
 
@@ -85,14 +85,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawReadPortBufferUlong   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawReadPortBufferUlong   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawReadPortBufferUlong   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawReadPortBufferUlong   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -100,13 +97,13 @@ None
 
 <a href="..\ndis\nf-ndis-ndisrawwriteportbufferulong.md">NdisRawWritePortBufferUlong</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\nf-ndis-ndisrawreadportbufferushort.md">NdisRawReadPortBufferUshort</a>
 
-<a href="..\ndis\nf-ndis-ndisrawreadportulong.md">NdisRawReadPortUlong</a>
-
 <a href="..\ndis\nf-ndis-ndismregisterioportrange.md">NdisMRegisterIoPortRange</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndisrawreadportulong.md">NdisRawReadPortUlong</a>
 
  
 

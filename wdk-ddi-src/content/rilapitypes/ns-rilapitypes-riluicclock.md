@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 634c2177-8e6f-4967-a555-928eb512fce3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.riluicclock, RILUICCLOCK, *LPRILUICCLOCK, rilapitypes/RILUICCLOCK, RILUICCLOCK structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "*LPRILUICCLOCK, netvista.riluicclock, rilapitypes/RILUICCLOCK, RILUICCLOCK structure [Network Drivers Starting with Windows Vista], RILUICCLOCK"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILUICCLOCK, RILUICCLOCK"
+req.typenames : RILUICCLOCK, *LPRILUICCLOCK
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,6 @@ Specifies the UICC application context for this lock. In the case of PIN1 or UPI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

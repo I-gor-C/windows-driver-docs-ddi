@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b9c8e54e-7cd5-48a9-b948-5327900c8a99
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : AutoForwardCreateCleanupClose method, IWDFDeviceInitialize interface, IWDFDeviceInitialize interface, AutoForwardCreateCleanupClose method, IWDFDeviceInitialize, IWDFDeviceInitialize::AutoForwardCreateCleanupClose, AutoForwardCreateCleanupClose, wudfddi/IWDFDeviceInitialize::AutoForwardCreateCleanupClose, wdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, umdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, AutoForwardCreateCleanupClose method, UMDFDeviceObjectRef_6f68d9cd-cfb9-49ae-94b8-a230e4dc0762.xml
+ms.keywords : UMDFDeviceObjectRef_6f68d9cd-cfb9-49ae-94b8-a230e4dc0762.xml, AutoForwardCreateCleanupClose method, IWDFDeviceInitialize interface, IWDFDeviceInitialize, IWDFDeviceInitialize interface, AutoForwardCreateCleanupClose method, umdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, IWDFDeviceInitialize::AutoForwardCreateCleanupClose, AutoForwardCreateCleanupClose method, wdf.iwdfdeviceinitialize_autoforwardcreatecleanupclose, wudfddi/IWDFDeviceInitialize::AutoForwardCreateCleanupClose, AutoForwardCreateCleanupClose
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -119,24 +119,22 @@ For more information about how a UMDF driver uses <b>AutoForwardCreateCleanupClo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554910">IFileCallbackClose::OnCloseFile</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 12d33e2d-63d3-4cc8-9b50-5156132b2e72
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxvahdddi_stream_state_aspect_ratio_data, _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure [Display Devices], DXVA2_Structs_daab6809-2f81-4892-9f56-c57254047627.xml, d3dumddi/DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
+ms.keywords : DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure [Display Devices], display.dxvahdddi_stream_state_aspect_ratio_data, DXVA2_Structs_daab6809-2f81-4892-9f56-c57254047627.xml, _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,9 +75,7 @@ Pixel aspect ratios (0, any value) and (any value, 0) are invalid and causes the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA is supported beginning with the Windows 7 operating system. DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

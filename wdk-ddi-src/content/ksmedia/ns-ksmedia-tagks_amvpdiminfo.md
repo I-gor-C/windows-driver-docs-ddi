@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 5b8126ee-ba47-4eaf-887a-764e17a20e03
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_AMVPDIMINFO, PKS_AMVPDIMINFO structure pointer [Streaming Media Devices], ksmedia/PKS_AMVPDIMINFO, tagKS_AMVPDIMINFO, PKS_AMVPDIMINFO, KS_AMVPDIMINFO structure [Streaming Media Devices], dvdref_4c6b6231-a3ef-49a5-8b27-c7ba0062c53a.xml, ksmedia/KS_AMVPDIMINFO, *PKS_AMVPDIMINFO, stream.ks_amvpdiminfo
+ms.keywords : dvdref_4c6b6231-a3ef-49a5-8b27-c7ba0062c53a.xml, ksmedia/PKS_AMVPDIMINFO, tagKS_AMVPDIMINFO, KS_AMVPDIMINFO structure [Streaming Media Devices], stream.ks_amvpdiminfo, *PKS_AMVPDIMINFO, ksmedia/KS_AMVPDIMINFO, PKS_AMVPDIMINFO, KS_AMVPDIMINFO, PKS_AMVPDIMINFO structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KS_AMVPDIMINFO, *PKS_AMVPDIMINFO
+req.typenames : "*PKS_AMVPDIMINFO, KS_AMVPDIMINFO"
 ---
 
 # tagKS_AMVPDIMINFO structure
@@ -81,9 +81,6 @@ This structure is used by the <a href="..\ksmedia\ns-ksmedia-tagks_amvpdatainfo.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f791f25d-d28e-45d3-b43c-9b87fda82d37
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortConvertUlongToPhysicalAddress, storage.ataportconvertulongtophysicaladdress, atartns_29b4ce0d-5dda-4203-a10b-66ccd7859d5d.xml, irb/AtaPortConvertUlongToPhysicalAddress, AtaPortConvertUlongToPhysicalAddress routine [Storage Devices]
+ms.keywords : AtaPortConvertUlongToPhysicalAddress, AtaPortConvertUlongToPhysicalAddress routine [Storage Devices], irb/AtaPortConvertUlongToPhysicalAddress, atartns_29b4ce0d-5dda-4203-a10b-66ccd7859d5d.xml, storage.ataportconvertulongtophysicaladdress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,9 @@ Specifies a value of type ULONG.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

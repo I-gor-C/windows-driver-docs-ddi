@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 71020A3E-0839-4D73-B1B7-8A979BD0F5E0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWDI_TYPE_PMK_NAME, wditypes/WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME structure [Network Drivers Starting with Windows Vista], PWDI_TYPE_PMK_NAME structure pointer [Network Drivers Starting with Windows Vista], wditypes/PWDI_TYPE_PMK_NAME, _WDI_TYPE_PMK_NAME, netvista.wdi_type_pmk_name, *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
+ms.keywords : wditypes/WDI_TYPE_PMK_NAME, netvista.wdi_type_pmk_name, *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME structure [Network Drivers Starting with Windows Vista], _WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME structure pointer [Network Drivers Starting with Windows Vista], WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, wditypes/PWDI_TYPE_PMK_NAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -60,7 +60,5 @@ the PMKR0Name or PMKR1Name.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

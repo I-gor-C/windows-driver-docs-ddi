@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7FAA5C88-2846-4C98-A44A-B53A1A7A953C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iportclspnp_unregisteradapterpnpmanagement, IPortClsPnp, UnregisterAdapterPnpManagement method [Audio Devices], UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, IPortClsPnp interface [Audio Devices], UnregisterAdapterPnpManagement method, portcls/IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement, IPortClsPnp::UnregisterAdapterPnpManagement
+ms.keywords : audio.iportclspnp_unregisteradapterpnpmanagement, UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement, IPortClsPnp, UnregisterAdapterPnpManagement method [Audio Devices], portcls/IPortClsPnp::UnregisterAdapterPnpManagement, IPortClsPnp interface [Audio Devices], UnregisterAdapterPnpManagement method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,14 +68,11 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1511 and later versions of Windows. Available in Windows 10, version 1511 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

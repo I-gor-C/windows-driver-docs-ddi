@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d202b6d9-9964-4c95-acd3-f641e8f9d879
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetProcessCreateTimeQuadPart, k108_57bcfbb5-501b-41bf-964c-14c2b90548ea.xml, PsGetProcessCreateTimeQuadPart routine [Kernel-Mode Driver Architecture], ntddk/PsGetProcessCreateTimeQuadPart, kernel.psgetprocesscreatetimequadpart
+ms.keywords : PsGetProcessCreateTimeQuadPart routine [Kernel-Mode Driver Architecture], PsGetProcessCreateTimeQuadPart, ntddk/PsGetProcessCreateTimeQuadPart, kernel.psgetprocesscreatetimequadpart, k108_57bcfbb5-501b-41bf-964c-14c2b90548ea.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,20 +65,18 @@ A pointer to the EPROCESS structure that represents the process. Drivers can use
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
-
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
+
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
 

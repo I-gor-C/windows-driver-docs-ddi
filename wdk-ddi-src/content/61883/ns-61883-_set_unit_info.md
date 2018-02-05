@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : D4A9B507-E199-42EA-BC29-6F477BEC8D20
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 61883/PSET_UNIT_INFO, IEEE.set_unit_info, SET_UNIT_INFO structure [Buses], PSET_UNIT_INFO structure pointer [Buses], 61883/SET_UNIT_INFO, SET_UNIT_INFO, _SET_UNIT_INFO, *PSET_UNIT_INFO, PSET_UNIT_INFO
+ms.keywords : "_SET_UNIT_INFO, 61883/SET_UNIT_INFO, SET_UNIT_INFO, SET_UNIT_INFO structure [Buses], *PSET_UNIT_INFO, IEEE.set_unit_info, 61883/PSET_UNIT_INFO, PSET_UNIT_INFO, PSET_UNIT_INFO structure pointer [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSET_UNIT_INFO, SET_UNIT_INFO"
+req.typenames : SET_UNIT_INFO, *PSET_UNIT_INFO
 ---
 
 # _SET_UNIT_INFO structure
@@ -80,9 +80,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

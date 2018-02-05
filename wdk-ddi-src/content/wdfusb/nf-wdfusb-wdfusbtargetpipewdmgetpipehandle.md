@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : d24577e3-3124-4ce7-a6ea-bed75ff18a1e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbTargetPipeWdmGetPipeHandle, DFUsbRef_4dc66ce5-f27f-4d35-bcea-0efb60a1de3c.xml, kmdf.wdfusbtargetpipewdmgetpipehandle, wdf.wdfusbtargetpipewdmgetpipehandle, PFN_WDFUSBTARGETPIPEWDMGETPIPEHANDLE, WdfUsbTargetPipeWdmGetPipeHandle, WdfUsbTargetPipeWdmGetPipeHandle method
+ms.keywords : WdfUsbTargetPipeWdmGetPipeHandle, wdf.wdfusbtargetpipewdmgetpipehandle, DFUsbRef_4dc66ce5-f27f-4d35-bcea-0efb60a1de3c.xml, PFN_WDFUSBTARGETPIPEWDMGETPIPEHANDLE, wdfusb/WdfUsbTargetPipeWdmGetPipeHandle, kmdf.wdfusbtargetpipewdmgetpipehandle, WdfUsbTargetPipeWdmGetPipeHandle method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,12 +77,10 @@ For more information about the <b>WdfUsbTargetPipeWdmGetPipeHandle</b> method an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 

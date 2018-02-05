@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aaef10f5-2933-4e16-aca6-2277b52fb174
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wsk/WSK_CLIENT_LISTEN_DISPATCH, PWSK_CLIENT_LISTEN_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], WSK_CLIENT_LISTEN_DISPATCH, _WSK_CLIENT_LISTEN_DISPATCH, netvista.wsk_client_listen_dispatch, wskref_38021620-217a-4a26-b461-f59f87c9579d.xml, *PWSK_CLIENT_LISTEN_DISPATCH, wsk/PWSK_CLIENT_LISTEN_DISPATCH, PWSK_CLIENT_LISTEN_DISPATCH, WSK_CLIENT_LISTEN_DISPATCH structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PWSK_CLIENT_LISTEN_DISPATCH, wskref_38021620-217a-4a26-b461-f59f87c9579d.xml, wsk/PWSK_CLIENT_LISTEN_DISPATCH, PWSK_CLIENT_LISTEN_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], _WSK_CLIENT_LISTEN_DISPATCH, netvista.wsk_client_listen_dispatch, wsk/WSK_CLIENT_LISTEN_DISPATCH, *PWSK_CLIENT_LISTEN_DISPATCH, WSK_CLIENT_LISTEN_DISPATCH, WSK_CLIENT_LISTEN_DISPATCH structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,20 +85,18 @@ A WSK application passes a pointer to a WSK_CLIENT_LISTEN_DISPATCH structure to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also
 
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 
+<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_abort_event.md">WskAbortEvent</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
-
-<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a>
 

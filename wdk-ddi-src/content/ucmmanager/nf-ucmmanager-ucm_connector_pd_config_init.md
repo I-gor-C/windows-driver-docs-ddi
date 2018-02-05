@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 59663F6C-5C8E-4403-8097-7E6D9A075A60
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucm_connector_pd_config_init, UCM_CONNECTOR_PD_CONFIG_INIT function [Buses], UCM_CONNECTOR_PD_CONFIG_INIT, ucmmanager/UCM_CONNECTOR_PD_CONFIG_INIT
+ms.keywords : UCM_CONNECTOR_PD_CONFIG_INIT function [Buses], ucmmanager/UCM_CONNECTOR_PD_CONFIG_INIT, buses.ucm_connector_pd_config_init, UCM_CONNECTOR_PD_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

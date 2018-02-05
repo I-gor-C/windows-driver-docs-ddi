@@ -121,16 +121,16 @@ None
 The 
     <i>ProtocolCoReceiveNetBufferLists</i> function is required for CoNDIS protocol drivers. NDIS calls 
     <i>ProtocolCoReceiveNetBufferLists</i> after a bound miniport driver calls the 
-    <mshelp:link keywords="netvista.ndismcoindicatereceivenetbufferlists" tabindex="0"><b>
-    NdisMCoIndicateReceiveNetBufferLists</b></mshelp:link> function. A call to 
+    <a href="..\ndis\nf-ndis-ndismcoindicatereceivenetbufferlists.md">
+    NdisMCoIndicateReceiveNetBufferLists</a> function. A call to 
     <i>ProtocolCoReceiveNetBufferLists</i> can also occur as a result of a loopback.
 
 If the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag in the 
     <i>CoReceiveFlags</i> parameter is not set, the protocol driver retains ownership of the 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures until it calls
     the 
-    <mshelp:link keywords="netvista.ndisreturnnetbufferlists" tabindex="0"><b>
-    NdisReturnNetBufferLists</b></mshelp:link> function. If NDIS sets the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag, the protocol
+    <a href="..\ndis\nf-ndis-ndisreturnnetbufferlists.md">
+    NdisReturnNetBufferLists</a> function. If NDIS sets the <b>NDIS_RECEIVE_FLAGS_RESOURCES</b> flag, the protocol
     driver cannot retain the <b>NET_BUFFER_LIST</b> structure and associated resources. <b>NDIS_RECEIVE_FLAGS_RESOURCES</b>
     indicates that an underlying driver has low receive resources. In this case, the 
     <i>ProtocolCoReceiveNetBufferLists</i> function should copy the received data into protocol-allocated
@@ -181,38 +181,34 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545115">CoNDIS Protocol Driver Send and Receive Functions</a>
-
-<mshelp:link keywords="netvista.ndismcoindicatereceivenetbufferlists" tabindex="0"><b>
-   NdisMCoIndicateReceiveNetBufferLists</b></mshelp:link>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
-
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+
+<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+   MiniportReturnNetBufferLists</a>
 
 <a href="..\ndis\nc-ndis-protocol_co_send_net_buffer_lists_complete.md">ProtocolCoSendNetBufferListsComplete</a>
 
-<mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-   MiniportReturnNetBufferLists</i></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndismcoindicatereceivenetbufferlists.md">
+   NdisMCoIndicateReceiveNetBufferLists</a>
 
 <a href="..\ndis\nf-ndis-ndisreturnnetbufferlists.md">NdisReturnNetBufferLists</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545115">CoNDIS Protocol Driver Send and Receive Functions</a>
+
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

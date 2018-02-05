@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4f9dd025-b49f-44ab-88c4-38139e6cbee2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetValueKey method [Audio Devices], IRegistryKey interface, IRegistryKey, IRegistryKey interface [Audio Devices], SetValueKey method, SetValueKey, SetValueKey method [Audio Devices], portcls/IRegistryKey::SetValueKey, audmp-routines_a7668b45-2b58-4a49-b1ef-a8d0755225b0.xml, audio.iregistrykey_setvaluekey, IRegistryKey::SetValueKey
+ms.keywords : SetValueKey, audio.iregistrykey_setvaluekey, IRegistryKey interface [Audio Devices], SetValueKey method, audmp-routines_a7668b45-2b58-4a49-b1ef-a8d0755225b0.xml, IRegistryKey, portcls/IRegistryKey::SetValueKey, SetValueKey method [Audio Devices], SetValueKey method [Audio Devices], IRegistryKey interface, IRegistryKey::SetValueKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -137,22 +137,18 @@ If the given key has no existing value entry with a name matching the given <i>V
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 
 <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 
-<a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

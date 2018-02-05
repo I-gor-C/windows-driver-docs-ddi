@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6e466815-aef4-4602-b3cf-66b47b2e3f3b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksdefaultdeviceiocompletion, KsDefaultDeviceIoCompletion function [Streaming Media Devices], ksfunc_ae9df7be-800d-4f4a-a8d9-f39e09653e98.xml, ks/KsDefaultDeviceIoCompletion, KsDefaultDeviceIoCompletion
+ms.keywords : KsDefaultDeviceIoCompletion function [Streaming Media Devices], ks/KsDefaultDeviceIoCompletion, KsDefaultDeviceIoCompletion, ksfunc_ae9df7be-800d-4f4a-a8d9-f39e09653e98.xml, stream.ksdefaultdeviceiocompletion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ Note that this routine will complete the IRP.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

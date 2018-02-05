@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 47726715-306c-4167-8080-65085d1e7f8f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILCARDAPPADDEDPARAMMASK, rilapitypes/RIL_PARAM_CARDAPPADDED_UICCAPPINFO, RILCARDAPPADDEDPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILCARDAPPADDEDPARAMMASK, RIL_PARAM_CARDAPPADDED_UICCAPPINFO, netvista.rilcardappaddedparammask_2, rilapitypes/RIL_PARAM_CARDAPPADDED_ALL, RIL_PARAM_CARDAPPADDED_ALL
+ms.keywords : rilapitypes/RIL_PARAM_CARDAPPADDED_ALL, RILCARDAPPADDEDPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilcardappaddedparammask_2, RILCARDAPPADDEDPARAMMASK, RIL_PARAM_CARDAPPADDED_ALL, RIL_PARAM_CARDAPPADDED_UICCAPPINFO, rilapitypes/RIL_PARAM_CARDAPPADDED_UICCAPPINFO, rilapitypes/RILCARDAPPADDEDPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILCARDAPPADDEDPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

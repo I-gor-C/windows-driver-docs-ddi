@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5491f9fb-8f87-41ed-9629-18318554ad90
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.psremoveloadimagenotifyroutine, ntddk/PsRemoveLoadImageNotifyRoutine, PsRemoveLoadImageNotifyRoutine, k108_50aeae5b-9276-4e93-8192-70a51bd87ab4.xml, PsRemoveLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture]
+ms.keywords : k108_50aeae5b-9276-4e93-8192-70a51bd87ab4.xml, PsRemoveLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], ntddk/PsRemoveLoadImageNotifyRoutine, PsRemoveLoadImageNotifyRoutine, kernel.psremoveloadimagenotifyroutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,12 +68,10 @@ If the driver's callback routine is currently running, <b>PsRemoveLoadImageNotif
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

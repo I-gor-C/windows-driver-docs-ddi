@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E4E6B637-BFAF-4ACD-86C2-109704B8D33D
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTSubmitCommandToHwQueue, D3DKMTSubmitCommandToHwQueue, D3DKMTSubmitCommandToHwQueue function [Display Devices], display.d3dkmtsubmitcommandtohwqueue
+ms.keywords : d3dkmthk/D3DKMTSubmitCommandToHwQueue, D3DKMTSubmitCommandToHwQueue function [Display Devices], D3DKMTSubmitCommandToHwQueue, display.d3dkmtsubmitcommandtohwqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,7 @@ Returns STATUS_SUCCESS if called successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tbd |
+| **DLL** | Tbd |

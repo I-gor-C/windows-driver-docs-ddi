@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 53665c1d-8c0b-45c7-8d23-13c0964eda39
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_ee5844a6-6337-42b7-b960-5228ad1c1ae4.xml, video/VideoPortGetDeviceBase, VideoPortGetDeviceBase function [Display Devices], display.videoportgetdevicebase, VideoPortGetDeviceBase
+ms.keywords : VideoPortGetDeviceBase, VideoPort_Functions_ee5844a6-6337-42b7-b960-5228ad1c1ae4.xml, video/VideoPortGetDeviceBase, VideoPortGetDeviceBase function [Display Devices], display.videoportgetdevicebase
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -158,22 +158,14 @@ If a miniport driver does not support an adapter that it has mapped a logical ra
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\video\nf-video-videoportfreedevicebase.md">VideoPortFreeDeviceBase</a>
-
-<a href="..\video\nc-video-pminiport_get_registry_routine.md">HwVidQueryNamedValueCallback</a>
-
-<a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
 
 <a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
 
@@ -181,17 +173,23 @@ If a miniport driver does not support an adapter that it has mapped a logical ra
 
 <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
 
-<a href="..\video\nf-video-videoportcomparememory.md">VideoPortCompareMemory</a>
-
-<a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a>
-
-<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
-
 <a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
+
+<a href="..\video\nf-video-videoportfreedevicebase.md">VideoPortFreeDeviceBase</a>
+
+<a href="..\video\nf-video-videoportcomparememory.md">VideoPortCompareMemory</a>
 
 <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 
 <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
+
+<a href="..\video\nc-video-pminiport_get_registry_routine.md">HwVidQueryNamedValueCallback</a>
+
+<a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
+
+<a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a>
+
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
 
  
 

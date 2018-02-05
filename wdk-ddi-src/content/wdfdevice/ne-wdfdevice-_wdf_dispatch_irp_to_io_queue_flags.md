@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6A205F51-990F-4721-B4C7-B96E944D2A54
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_forward_irp_to_io_queue_options_flags, _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS, WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS, kmdf.wdf_forward_irp_to_io_queue_flags, kmdf.wdf_dispatch_irp_to_io_queue_flags, WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP, WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS, WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP, WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS, wdfdevice/WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK, wdf.wdf_dispatch_irp_to_io_queue_flags, WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS enumeration
+ms.keywords : kmdf.wdf_forward_irp_to_io_queue_options_flags, kmdf.wdf_forward_irp_to_io_queue_flags, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS, wdf.wdf_dispatch_irp_to_io_queue_flags, WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS, WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS enumeration, kmdf.wdf_dispatch_irp_to_io_queue_flags, _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS, WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS, wdfdevice/WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS, WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK, WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP, WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,16 +80,14 @@ For more information about specifying queues for IRPs as they arrive, see <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
 
  
 

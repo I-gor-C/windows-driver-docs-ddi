@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 765A420C-F406-4A46-BDCC-26A451549F8D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION structure pointer [Storage Devices], storage.stor_rich_device_description, _STOR_RICH_DEVICE_DESCRIPTION, storport/PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION structure [Storage Devices], *PSTOR_RICH_DEVICE_DESCRIPTION, storport/STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION
+ms.keywords : "_STOR_RICH_DEVICE_DESCRIPTION, storport/PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION structure pointer [Storage Devices], storage.stor_rich_device_description, storport/STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION, *PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,7 @@ This is invoked during the Unit enumeration process or the device description up
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
 | **Header** | storport.h |
 
 ## See Also

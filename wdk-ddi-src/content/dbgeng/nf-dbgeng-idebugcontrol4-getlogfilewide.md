@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 2dd20552-747c-4eb8-aacd-7ee241d490d1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetLogFileWide method [Windows Debugging], IDebugControl4::GetLogFileWide, IDebugControl4 interface [Windows Debugging], GetLogFileWide method, GetLogFileWide, IDebugControl4, dbgeng/IDebugControl4::GetLogFileWide, GetLogFileWide method [Windows Debugging], IDebugControl4 interface, debugger.getlogfilewide
+ms.keywords : GetLogFileWide, dbgeng/IDebugControl4::GetLogFileWide, GetLogFileWide method [Windows Debugging], IDebugControl4 interface, debugger.getlogfilewide, IDebugControl4::GetLogFileWide, IDebugControl4, GetLogFileWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetLogFileWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -124,24 +124,19 @@ For more information about log files, see <a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547066">GetLogMask</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553154">OpenLogFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547025">GetLogFile2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547066">GetLogMask</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539148">CloseLogFile</a>
 

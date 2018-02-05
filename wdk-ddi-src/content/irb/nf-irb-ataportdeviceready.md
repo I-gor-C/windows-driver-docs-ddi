@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 65cbed1a-35f9-44f7-941a-ffc87cc79649
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortDeviceReady, storage.ataportdeviceready, atartns_28cebf8c-cdda-46f4-9785-184552630769.xml, irb/AtaPortDeviceReady, AtaPortDeviceReady routine [Storage Devices]
+ms.keywords : atartns_28cebf8c-cdda-46f4-9785-184552630769.xml, AtaPortDeviceReady routine [Storage Devices], irb/AtaPortDeviceReady, AtaPortDeviceReady, storage.ataportdeviceready
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,9 @@ The port driver resumes the paused request queue for the indicated device. If th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

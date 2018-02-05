@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 93E3D03B-6FA1-49D5-AF38-6C2FEA3FC95D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetStreamCurrentWritePositionForLastBuffer, portcls/IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer, SetStreamCurrentWritePositionForLastBuffer method [Audio Devices], audio.iminiportstreamaudioenginenode2_setstreamcurrentwritepositionforlastbuffer, IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer, SetStreamCurrentWritePositionForLastBuffer method [Audio Devices], IMiniportStreamAudioEngineNode2 interface, IMiniportStreamAudioEngineNode2 interface [Audio Devices], SetStreamCurrentWritePositionForLastBuffer method, IMiniportStreamAudioEngineNode2
+ms.keywords : audio.iminiportstreamaudioenginenode2_setstreamcurrentwritepositionforlastbuffer, IMiniportStreamAudioEngineNode2 interface [Audio Devices], SetStreamCurrentWritePositionForLastBuffer method, SetStreamCurrentWritePositionForLastBuffer method [Audio Devices], IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer, SetStreamCurrentWritePositionForLastBuffer, IMiniportStreamAudioEngineNode2, portcls/IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer, SetStreamCurrentWritePositionForLastBuffer method [Audio Devices], IMiniportStreamAudioEngineNode2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -54,7 +54,7 @@ NTSTATUS SetStreamCurrentWritePositionForLastBuffer(
 
 `_ulWritePosition`
 
-
+The current cursor position in the last audio data stream.
 
 
 ## Return Value
@@ -70,14 +70,10 @@ If the buffer is only partially filled, then the audio driver needs to notify th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

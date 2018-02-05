@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7631baa9-6d5a-44b6-ac19-2b3ecaac9293
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksqueryobjectaccessmask, KsQueryObjectAccessMask, KsQueryObjectAccessMask function [Streaming Media Devices], ksfunc_f79d4971-874e-4efd-ab73-d88cdd573991.xml, ks/KsQueryObjectAccessMask
+ms.keywords : stream.ksqueryobjectaccessmask, ksfunc_f79d4971-874e-4efd-ab73-d88cdd573991.xml, KsQueryObjectAccessMask, ks/KsQueryObjectAccessMask, KsQueryObjectAccessMask function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,9 @@ The <b>KsQueryObjectAccessMask</b> function returns an access mask.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

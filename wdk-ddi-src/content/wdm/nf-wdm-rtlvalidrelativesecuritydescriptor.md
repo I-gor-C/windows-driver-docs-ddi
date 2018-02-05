@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1fb993f0-4289-4406-8a56-47b12c73f4e6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlValidRelativeSecurityDescriptor routine [Kernel-Mode Driver Architecture], kernel.rtlvalidrelativesecuritydescriptor, k109_b261fb47-147f-4e39-81fb-bdbc31d53681.xml, wdm/RtlValidRelativeSecurityDescriptor, RtlValidRelativeSecurityDescriptor
+ms.keywords : kernel.rtlvalidrelativesecuritydescriptor, k109_b261fb47-147f-4e39-81fb-bdbc31d53681.xml, RtlValidRelativeSecurityDescriptor routine [Kernel-Mode Driver Architecture], wdm/RtlValidRelativeSecurityDescriptor, RtlValidRelativeSecurityDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,20 +79,18 @@ To check the validity of a security descriptor in absolute format, use <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
-
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7B5DD97C-2E3D-4FF7-BF04-36F016B0C6B3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortQueueWorkItem routine [Storage Devices], StorPortQueueWorkItem, storport/StorPortQueueWorkItem, storage.storportqueueworkitem
+ms.keywords : storage.storportqueueworkitem, StorPortQueueWorkItem routine [Storage Devices], StorPortQueueWorkItem, storport/StorPortQueueWorkItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,14 +131,11 @@ The work item was successfully queued.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

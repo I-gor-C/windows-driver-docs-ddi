@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2454f923-15c5-43c8-8d62-eee000d89a10
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisSetPhysicalAddressLow macro [Network Drivers Starting with Windows Vista], ndis/NdisSetPhysicalAddressLow, miniport_memory_shared_ref_b21e2206-bd6c-47b6-b518-31bcad459bbb.xml, NdisSetPhysicalAddressLow, netvista.ndissetphysicaladdresslow
+ms.keywords : netvista.ndissetphysicaladdresslow, NdisSetPhysicalAddressLow macro [Network Drivers Starting with Windows Vista], miniport_memory_shared_ref_b21e2206-bd6c-47b6-b518-31bcad459bbb.xml, ndis/NdisSetPhysicalAddressLow, NdisSetPhysicalAddressLow
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -56,11 +56,11 @@ VOID NdisSetPhysicalAddressLow(
 
 `_PhysicalAddress`
 
-TBD
+Specifies a physical address of an OS-dependent size.
 
 `_Value`
 
-TBD
+Specifies the value to be written into the low-order part of the address.
 
 
 ## Return Value
@@ -71,14 +71,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisSetPhysicalAddressLow (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisSetPhysicalAddressLow (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisSetPhysicalAddressLow (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisSetPhysicalAddressLow (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

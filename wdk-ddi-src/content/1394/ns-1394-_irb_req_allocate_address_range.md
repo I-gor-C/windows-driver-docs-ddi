@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 76D306DF-D604-4B3C-BFED-A855113A55A9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1394/IRB_REQ_ALLOCATE_ADDRESS_RANGE, _IRB_REQ_ALLOCATE_ADDRESS_RANGE, IRB_REQ_ALLOCATE_ADDRESS_RANGE structure [Buses], IRB_REQ_ALLOCATE_ADDRESS_RANGE, IEEE.irb_req_allocate_address_range
+ms.keywords : "_IRB_REQ_ALLOCATE_ADDRESS_RANGE, IEEE.irb_req_allocate_address_range, IRB_REQ_ALLOCATE_ADDRESS_RANGE, IRB_REQ_ALLOCATE_ADDRESS_RANGE structure [Buses], 1394/IRB_REQ_ALLOCATE_ADDRESS_RANGE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -257,7 +257,4 @@ Specifies a hard-coded address in the computer's IEEE 1394 address space. The bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

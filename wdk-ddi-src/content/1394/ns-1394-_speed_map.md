@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 52b2b97e-217b-445b-9c7a-093808f37aba
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PSPEED_MAP, PSPEED_MAP, SPEED_MAP, 1394/SPEED_MAP, 1394stct_0df32f88-2279-4df2-a7f3-856ddfdacb56.xml, 1394/PSPEED_MAP, _SPEED_MAP, PSPEED_MAP structure pointer [Buses], IEEE.speed_map, SPEED_MAP structure [Buses]"
+ms.keywords : IEEE.speed_map, PSPEED_MAP structure pointer [Buses], 1394/SPEED_MAP, SPEED_MAP, SPEED_MAP structure [Buses], _SPEED_MAP, PSPEED_MAP, *PSPEED_MAP, 1394stct_0df32f88-2279-4df2-a7f3-856ddfdacb56.xml, 1394/PSPEED_MAP
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,6 @@ The SPEED_MAP structure describes the maximum speed that devices on the bus can 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

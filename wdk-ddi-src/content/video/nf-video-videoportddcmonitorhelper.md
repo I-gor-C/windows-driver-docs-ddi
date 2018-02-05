@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2e4bd9c7-73be-47bc-b4e7-daea7781c46b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_dc0bda84-97c5-49ba-9084-04149f9be157.xml, VideoPortDDCMonitorHelper function [Display Devices], display.videoportddcmonitorhelper, VideoPortDDCMonitorHelper, video/VideoPortDDCMonitorHelper
+ms.keywords : VideoPort_Functions_dc0bda84-97c5-49ba-9084-04149f9be157.xml, VideoPortDDCMonitorHelper function [Display Devices], video/VideoPortDDCMonitorHelper, display.videoportddcmonitorhelper, VideoPortDDCMonitorHelper
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,28 +114,26 @@ No EDID
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a>
+
 <a href="..\video\nc-video-pvideo_read_clock_line.md">ReadClockLine</a>
+
+<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
 
 <a href="..\video\nc-video-pvideo_hw_get_child_descriptor.md">HwVidGetVideoChildDescriptor</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
-
 <a href="..\video\nc-video-pvideo_read_data_line.md">ReadDataLine</a>
 
-<a href="..\video\nc-video-pvideo_write_data_line.md">WriteDataLine</a>
-
-<a href="..\video\nc-video-pvideo_write_clock_line.md">WriteClockLine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567383">I2C Functions</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9cdc6548-393f-4af6-a8ee-bb96deb0f228
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_MODEMRESETSTATE_FAILED, rilapitypes/RIL_MODEMRESETSTATE_RECOVERED, rilapitypes/RIL_MODEMRESETSTATE_FAILED, RILMODEMRESETSTATE, netvista.rilmodemresetstate_2, RIL_MODEMRESETSTATE_RECOVERED, rilapitypes/RILMODEMRESETSTATE, rilapitypes/RIL_MODEMRESETSTATE_MAX, RILMODEMRESETSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_MODEMRESETSTATE_MAX
+ms.keywords : RILMODEMRESETSTATE enumeration [Network Drivers Starting with Windows Vista], RILMODEMRESETSTATE, rilapitypes/RILMODEMRESETSTATE, rilapitypes/RIL_MODEMRESETSTATE_RECOVERED, RIL_MODEMRESETSTATE_RECOVERED, RIL_MODEMRESETSTATE_FAILED, rilapitypes/RIL_MODEMRESETSTATE_FAILED, netvista.rilmodemresetstate_2, RIL_MODEMRESETSTATE_MAX, rilapitypes/RIL_MODEMRESETSTATE_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILMODEMRESETSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

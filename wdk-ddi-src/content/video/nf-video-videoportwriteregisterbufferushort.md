@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 52bc00d5-313c-444d-91d9-8f95640e7d81
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_f385c5d4-bc63-4aae-b021-b503f6a5336f.xml, video/VideoPortWriteRegisterBufferUshort, VideoPortWriteRegisterBufferUshort, VideoPortWriteRegisterBufferUshort function [Display Devices], display.videoportwriteregisterbufferushort
+ms.keywords : VideoPortWriteRegisterBufferUshort, video/VideoPortWriteRegisterBufferUshort, display.videoportwriteregisterbufferushort, VideoPort_Functions_f385c5d4-bc63-4aae-b021-b503f6a5336f.xml, VideoPortWriteRegisterBufferUshort function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,12 @@ Callers of <b>VideoPortWriteRegisterBufferUshort</b>can be running at any IRQL, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

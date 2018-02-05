@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : c724a4f5-55ef-413d-bd1a-9cd39d3e42f5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasFncs_09a845d0-52f1-4985-baf6-2cb2676fad3e.xml, image.wiasparseendorserstring, wiasParseEndorserString, wiasParseEndorserString function [Imaging Devices], wiamdef/wiasParseEndorserString
+ms.keywords : wiasFncs_09a845d0-52f1-4985-baf6-2cb2676fad3e.xml, wiasParseEndorserString function [Imaging Devices], image.wiasparseendorserstring, wiamdef/wiasParseEndorserString, wiasParseEndorserString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -103,20 +103,17 @@ hr = wiasParseEndorserString(pWiasContext, 0,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_value.md">WIAS_ENDORSER_VALUE</a>
-
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a>
+
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_value.md">WIAS_ENDORSER_VALUE</a>
 
  
 

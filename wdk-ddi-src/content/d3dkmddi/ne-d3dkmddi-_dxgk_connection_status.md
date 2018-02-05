@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D78A845E-1F5D-42F7-9391-8F3F6555B7E5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_CONNECTION_STATUS enumeration [Display Devices], MonitorStatusConnected, *PDXGK_CONNECTION_STATUS, _DXGK_CONNECTION_STATUS, d3dkmddi/TargetStatusDisconnected, TargetStatusJoined, TargetStatusConnected, ConnectionStatusUninitialized, d3dkmddi/LinkConfigurationSucceeded, d3dkmddi/LinkConfigurationStarted, LinkConfigurationStarted, d3dkmddi/MonitorStatusDisconnected, d3dkmddi/MonitorStatusConnected, DXGK_CONNECTION_STATUS, MonitorStatusUnknown, TargetStatusDisconnected, d3dkmddi/LinkConfigurationFailed, d3dkmddi/TargetStatusConnected, d3dkmddi/ConnectionStatusUninitialized, d3dkmddi/DXGK_CONNECTION_STATUS, MonitorStatusDisconnected, d3dkmddi/TargetStatusJoined, LinkConfigurationFailed, d3dkmddi/MonitorStatusUnknown, display.dxgk_connection_status, LinkConfigurationSucceeded
+ms.keywords : MonitorStatusConnected, TargetStatusDisconnected, d3dkmddi/TargetStatusConnected, d3dkmddi/TargetStatusJoined, _DXGK_CONNECTION_STATUS, d3dkmddi/MonitorStatusConnected, d3dkmddi/TargetStatusDisconnected, d3dkmddi/DXGK_CONNECTION_STATUS, display.dxgk_connection_status, LinkConfigurationSucceeded, LinkConfigurationStarted, d3dkmddi/LinkConfigurationStarted, ConnectionStatusUninitialized, d3dkmddi/MonitorStatusDisconnected, MonitorStatusDisconnected, d3dkmddi/ConnectionStatusUninitialized, TargetStatusJoined, d3dkmddi/MonitorStatusUnknown, d3dkmddi/LinkConfigurationSucceeded, *PDXGK_CONNECTION_STATUS, MonitorStatusUnknown, LinkConfigurationFailed, d3dkmddi/LinkConfigurationFailed, DXGK_CONNECTION_STATUS, DXGK_CONNECTION_STATUS enumeration [Display Devices], TargetStatusConnected
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -130,7 +130,4 @@ Other than the uninitialized state, the values fall into three categories: targe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

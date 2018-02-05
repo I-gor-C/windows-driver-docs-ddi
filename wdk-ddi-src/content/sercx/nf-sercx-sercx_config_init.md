@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : C7442A59-6D7C-4551-B0E4-F1E8A5BEB4B7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1/SERCX_CONFIG_INIT, SERCX_CONFIG_INIT, serports.sercx_config_init, SERCX_CONFIG_INIT function [Serial Ports]
+ms.keywords : 1/SERCX_CONFIG_INIT, serports.sercx_config_init, SERCX_CONFIG_INIT, SERCX_CONFIG_INIT function [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,11 @@ None.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any IRQL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

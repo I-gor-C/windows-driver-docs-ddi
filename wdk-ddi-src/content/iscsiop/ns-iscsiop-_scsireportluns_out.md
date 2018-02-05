@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6335705d-a900-456a-a882-f7f11bb485af
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiReportLuns_OUT, iscsiop/ScsiReportLuns_OUT, *PScsiReportLuns_OUT, structs-iSCSI_8f759a2a-f588-48c7-a777-1a0a7eb6604b.xml, _ScsiReportLuns_OUT, PScsiReportLuns_OUT structure pointer [Storage Devices], PScsiReportLuns_OUT, storage.scsireportluns_out, ScsiReportLuns_OUT structure [Storage Devices], iscsiop/PScsiReportLuns_OUT
+ms.keywords : PScsiReportLuns_OUT, ScsiReportLuns_OUT structure [Storage Devices], iscsiop/ScsiReportLuns_OUT, ScsiReportLuns_OUT, structs-iSCSI_8f759a2a-f588-48c7-a777-1a0a7eb6604b.xml, _ScsiReportLuns_OUT, storage.scsireportluns_out, iscsiop/PScsiReportLuns_OUT, *PScsiReportLuns_OUT, PScsiReportLuns_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,22 +81,19 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a>
+<a href="..\iscsiop\ns-iscsiop-_scsireportluns_in.md">ScsiReportLuns_IN</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_scsireportluns_in.md">ScsiReportLuns_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564918">ScsiReportLuns</a>
 
  
 

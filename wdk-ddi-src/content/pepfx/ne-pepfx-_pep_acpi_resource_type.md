@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C67FA5DF-D2E4-4F00-B22F-9218F0012708
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PepAcpiIoPort, pepfx/PepAcpiSpbUart, PEP_ACPI_RESOURCE_TYPE, PepAcpiSpbSpi, pepfx/PepAcpiExtendedIo, PepAcpiGpioIo, pepfx/PepAcpiInterrupt, pepfx/PepAcpiMemory, pepfx/PepAcpiSpbSpi, PepAcpiMemory, PepAcpiSpbUart, pepfx/PepAcpiSpbI2c, PepAcpiIoPort, _PEP_ACPI_RESOURCE_TYPE, pepfx/PepAcpiGpioIo, PepAcpiSpbI2c, pepfx/PepAcpiGpioInt, PepAcpiGpioInt, PepAcpiExtendedMemory, PepAcpiExtendedIo, pepfx/PEP_ACPI_RESOURCE_TYPE, pepfx/PepAcpiExtendedMemory, PepAcpiInterrupt, kernel.pep_acpi_resource_type, PEP_ACPI_RESOURCE_TYPE enumeration [Kernel-Mode Driver Architecture]
+ms.keywords : "_PEP_ACPI_RESOURCE_TYPE, PepAcpiSpbSpi, pepfx/PepAcpiMemory, PepAcpiExtendedIo, pepfx/PepAcpiSpbI2c, pepfx/PepAcpiInterrupt, kernel.pep_acpi_resource_type, pepfx/PepAcpiIoPort, PepAcpiExtendedMemory, pepfx/PepAcpiExtendedMemory, pepfx/PepAcpiSpbSpi, pepfx/PepAcpiGpioIo, PepAcpiInterrupt, PepAcpiGpioIo, PepAcpiSpbUart, PEP_ACPI_RESOURCE_TYPE, PEP_ACPI_RESOURCE_TYPE enumeration [Kernel-Mode Driver Architecture], pepfx/PepAcpiSpbUart, PepAcpiIoPort, pepfx/PEP_ACPI_RESOURCE_TYPE, PepAcpiGpioInt, PepAcpiMemory, pepfx/PepAcpiGpioInt, pepfx/PepAcpiExtendedIo, PepAcpiSpbI2c"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -116,16 +116,14 @@ typedef enum _PEP_ACPI_RESOURCE_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_request_convert_to_bios_resources.md">PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_acpi_resource.md">PEP_ACPI_RESOURCE</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_acpi_request_convert_to_bios_resources.md">PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES</a>
 
  
 

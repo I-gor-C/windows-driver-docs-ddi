@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1abba51c-1db9-4424-aa11-64d3fd116a79
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_GW, rilapitypes/RILDEVICEINFORMATION, rilapitypes/RIL_DEVICEINFO_MANUFACTURER, RILDEVICEINFORMATION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_CDMA, netvista.rildeviceinformation, RIL_DEVICEINFO_SERIALNUMBER_CDMA, RIL_DEVICEINFO_REVISION, rilapitypes/RIL_DEVICEINFO_ARG_SMALLEST, rilapitypes/RIL_DEVICEINFO_REVISION, RIL_DEVICEINFO_SERIALNUMBER_GW, RIL_DEVICEINFO_ARG_LARGEST, RIL_DEVICEINFO_ARG_SMALLEST, rilapitypes/RIL_DEVICEINFO_ARG_LARGEST, RIL_DEVICEINFO_MODEL, rilapitypes/RIL_DEVICEINFO_MODEL, RIL_DEVICEINFO_MANUFACTURER, RILDEVICEINFORMATION
+ms.keywords : RIL_DEVICEINFO_REVISION, RIL_DEVICEINFO_ARG_SMALLEST, RIL_DEVICEINFO_MANUFACTURER, rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_GW, RIL_DEVICEINFO_ARG_LARGEST, RILDEVICEINFORMATION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_DEVICEINFO_ARG_SMALLEST, RIL_DEVICEINFO_SERIALNUMBER_GW, netvista.rildeviceinformation, RIL_DEVICEINFO_MODEL, rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_CDMA, rilapitypes/RILDEVICEINFORMATION, rilapitypes/RIL_DEVICEINFO_MANUFACTURER, rilapitypes/RIL_DEVICEINFO_MODEL, RIL_DEVICEINFO_SERIALNUMBER_CDMA, RILDEVICEINFORMATION, rilapitypes/RIL_DEVICEINFO_REVISION, rilapitypes/RIL_DEVICEINFO_ARG_LARGEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -110,9 +110,6 @@ enum RILDEVICEINFORMATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

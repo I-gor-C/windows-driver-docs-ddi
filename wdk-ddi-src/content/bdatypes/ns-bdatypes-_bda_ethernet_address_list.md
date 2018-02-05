@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2985A0EC-4B5F-43FA-A2E9-487877A3C9A0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdatypes/BDA_ETHERNET_ADDRESS_LIST, stream.bda_ethernet_address_list, PBDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST structure [Streaming Media Devices], BDA_ETHERNET_ADDRESS_LIST, bdatypes/PBDA_ETHERNET_ADDRESS_LIST, *PBDA_ETHERNET_ADDRESS_LIST, _BDA_ETHERNET_ADDRESS_LIST, PBDA_ETHERNET_ADDRESS_LIST structure pointer [Streaming Media Devices]
+ms.keywords : bdatypes/PBDA_ETHERNET_ADDRESS_LIST, _BDA_ETHERNET_ADDRESS_LIST, PBDA_ETHERNET_ADDRESS_LIST structure pointer [Streaming Media Devices], bdatypes/BDA_ETHERNET_ADDRESS_LIST, stream.bda_ethernet_address_list, PBDA_ETHERNET_ADDRESS_LIST, *PBDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ typedef struct _BDA_ETHERNET_ADDRESS_LIST {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ee8bf34e-f7f6-4b1a-8089-2f7a7333c403
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGateRemoveOnInputFromAnd, ks/KsGateRemoveOnInputFromAnd, KsGateRemoveOnInputFromAnd function [Streaming Media Devices], avfunc_216ba85c-20fe-4160-a76f-53cab6693641.xml, stream.ksgateremoveoninputfromand
+ms.keywords : KsGateRemoveOnInputFromAnd function [Streaming Media Devices], ks/KsGateRemoveOnInputFromAnd, avfunc_216ba85c-20fe-4160-a76f-53cab6693641.xml, KsGateRemoveOnInputFromAnd, stream.ksgateremoveoninputfromand
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,11 @@ This call is an empty function. It should be used for code readability and clari
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

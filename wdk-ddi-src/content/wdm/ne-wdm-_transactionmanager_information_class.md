@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 71d6db29-0a93-4793-92f4-3e85615e1b61
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : TransactionManagerBasicInformation, TransactionManagerLogInformation, TransactionManagerLogPathInformation, _TRANSACTIONMANAGER_INFORMATION_CLASS, wdm/TransactionManagerRecoveryInformation, ktm_ref_55fd8dd4-e88d-40df-9091-1aecc4de38a7.xml, kernel.transactionmanager_information_class, wdm/TransactionManagerBasicInformation, wdm/TransactionManagerLogPathInformation, TRANSACTIONMANAGER_INFORMATION_CLASS, TransactionManagerRecoveryInformation, wdm/TRANSACTIONMANAGER_INFORMATION_CLASS, TRANSACTIONMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/TransactionManagerLogInformation
+ms.keywords : "_TRANSACTIONMANAGER_INFORMATION_CLASS, wdm/TransactionManagerLogInformation, TRANSACTIONMANAGER_INFORMATION_CLASS, TransactionManagerRecoveryInformation, wdm/TRANSACTIONMANAGER_INFORMATION_CLASS, ktm_ref_55fd8dd4-e88d-40df-9091-1aecc4de38a7.xml, wdm/TransactionManagerRecoveryInformation, wdm/TransactionManagerLogPathInformation, TransactionManagerLogPathInformation, kernel.transactionmanager_information_class, TransactionManagerLogInformation, TransactionManagerBasicInformation, wdm/TransactionManagerBasicInformation, TRANSACTIONMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,20 +81,18 @@ typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
-
-<a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
 
 <a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a>
 
-<a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
 
  
 

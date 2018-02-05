@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 09d36c81-d480-48c6-8633-c79061420217
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_PORT_STATE structure [Network Drivers Starting with Windows Vista], _DOT11_PORT_STATE, DOT11_PORT_STATE, Native_802.11_data_types_679b7f27-efba-43e8-9d20-7047c770b7db.xml, PDOT11_PORT_STATE, wlclient/DOT11_PORT_STATE, netvista.dot11_port_state, *PDOT11_PORT_STATE, wlclient/PDOT11_PORT_STATE, PDOT11_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : DOT11_PORT_STATE, DOT11_PORT_STATE structure [Network Drivers Starting with Windows Vista], *PDOT11_PORT_STATE, netvista.dot11_port_state, PDOT11_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_679b7f27-efba-43e8-9d20-7047c770b7db.xml, wlclient/PDOT11_PORT_STATE, _DOT11_PORT_STATE, PDOT11_PORT_STATE, wlclient/DOT11_PORT_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_PORT_STATE, DOT11_PORT_STATE"
+req.typenames : DOT11_PORT_STATE, *PDOT11_PORT_STATE
 req.product : Windows 10 or later.
 ---
 
@@ -87,26 +87,24 @@ The security session identifier (ID) assigned by the operating system.
 ## Remarks
 The operating system passes in the current port state of the security session through the 
     <i>pPortState</i> parameter of the 
-    <mshelp:link keywords="netvista.dot11extihvperformpostassociate" tabindex="0"><i>
-    Dot11ExtIhvPerformPostAssociate</i></mshelp:link> IHV handler function. When this function is called, the IHV
+    <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
+    Dot11ExtIhvPerformPostAssociate</a> IHV handler function. When this function is called, the IHV
     Extensions DLL must not change the data referenced by the 
     <i>pPortState</i> parameter.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlclient.h (include Wlclient.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
 
-<mshelp:link keywords="netvista.dot11extihvperformpostassociate" tabindex="0"><i>
-   Dot11ExtIhvPerformPostAssociate</i></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
+   Dot11ExtIhvPerformPostAssociate</a>
 
  
 

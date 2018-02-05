@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : bfff10ab-7e15-4db3-b808-947d61844bc0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortGetBusData, storage.ataportgetbusdata, AtaPortGetBusData routine [Storage Devices], irb/AtaPortGetBusData, atartns_a137d697-85fa-4d99-964f-94e9bcbb6b7b.xml
+ms.keywords : AtaPortGetBusData, AtaPortGetBusData routine [Storage Devices], atartns_a137d697-85fa-4d99-964f-94e9bcbb6b7b.xml, storage.ataportgetbusdata, irb/AtaPortGetBusData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,9 @@ Specifies the length, in bytes, of the buffer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Pciidex.lib |
 
 ## See Also
 

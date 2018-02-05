@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : EDB4862E-FAD4-4AB2-BF0C-CF4C6342F0E4
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : acpiioct/ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2, acpiioct/PACPI_EVAL_INPUT_BUFFER_V2, acpi.acpi_eval_input_buffer_v2, ACPI_EVAL_INPUT_BUFFER_V2 structure [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_V2, PACPI_EVAL_INPUT_BUFFER_V2 structure pointer [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_V2, _ACPI_EVAL_INPUT_BUFFER_V2
+ms.keywords : PACPI_EVAL_INPUT_BUFFER_V2, acpiioct/PACPI_EVAL_INPUT_BUFFER_V2, PACPI_EVAL_INPUT_BUFFER_V2 structure pointer [ACPI Devices], _ACPI_EVAL_INPUT_BUFFER_V2, acpi.acpi_eval_input_buffer_v2, *PACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2, acpiioct/ACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2 structure [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2
+req.typenames : "*PACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_V2 structure
@@ -67,7 +67,5 @@ Defines the <b>ULONG</b> member <b>Signature</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 and later versions. Windows 10, version 1709 and later versions. |
 | **Header** | acpiioct.h (include Acpiioct.h) |

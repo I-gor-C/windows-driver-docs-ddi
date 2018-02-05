@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugAdvanced3::GetSymbolInformation, IDebugAdvanced_353e07f5-e506-4d5f-8c64-d3f500ff283f.xml, IDebugAdvanced3, debugger.getsymbolinformation, GetSymbolInformation method [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging], GetSymbolInformation method, GetSymbolInformation, IDebugAdvanced2 interface [Windows Debugging], GetSymbolInformation method, dbgeng/IDebugAdvanced2::GetSymbolInformation, GetSymbolInformation method [Windows Debugging], IDebugAdvanced2 interface, GetSymbolInformation method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced2::GetSymbolInformation, IDebugAdvanced3::GetSymbolInformation
+ms.keywords : GetSymbolInformation method [Windows Debugging], IDebugAdvanced2::GetSymbolInformation, dbgeng/IDebugAdvanced2::GetSymbolInformation, IDebugAdvanced3, GetSymbolInformation, IDebugAdvanced2 interface [Windows Debugging], GetSymbolInformation method, dbgeng/IDebugAdvanced3::GetSymbolInformation, IDebugAdvanced_353e07f5-e506-4d5f-8c64-d3f500ff283f.xml, GetSymbolInformation method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3 interface [Windows Debugging], GetSymbolInformation method, debugger.getsymbolinformation, IDebugAdvanced3::GetSymbolInformation, GetSymbolInformation method [Windows Debugging], IDebugAdvanced2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -124,9 +124,9 @@ Specifies a 64-bit argument.  This parameter has the following interpretations d
 Ignored.
 
 
-#### DEBUG_SYMINFO_IMAGEHLP_MODULEW64
+#### DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
 
-The base address of the module whose description is being requested.
+Specifies the module whose symbols are requested.  <i>Arg64</i> is a location within the memory allocation of the module.
 
 
 #### DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
@@ -134,9 +134,9 @@ The base address of the module whose description is being requested.
 Specifies the address in the target's memory of the symbol whose name is being requested.
 
 
-#### DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
+#### DEBUG_SYMINFO_IMAGEHLP_MODULEW64
 
-Specifies the module whose symbols are requested.  <i>Arg64</i> is a location within the memory allocation of the module.
+The base address of the module whose description is being requested.
 
 `Arg32`
 
@@ -150,9 +150,9 @@ Specifies a 32-bit argument.  This parameter has the following interpretations d
 The engine breakpoint ID of the desired breakpoint.
 
 
-#### DEBUG_SYMINFO_IMAGEHLP_MODULEW64
+#### DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
 
-Set to zero.
+The PDB classification of the symbol.  <i>Arg32</i> must be one of the values in the <b>SymTagEnum</b> enumeration defined in Dbghelp.h.  For more information, see PDB documentation.
 
 
 #### DEBUG_SYMINFO_GET_SYMBOL_NAME_BY_OFFSET_AND_TAG_WIDE
@@ -160,9 +160,9 @@ Set to zero.
 The PDB classification of the symbol.  <i>Arg32</i> must be one of the values in the <b>SymTagEnum</b> enumeration defined in Dbghelp.h.  For more information, see PDB documentation.
 
 
-#### DEBUG_SYMINFO_GET_MODULE_SYMBOL_NAMES_AND_OFFSETS
+#### DEBUG_SYMINFO_IMAGEHLP_MODULEW64
 
-The PDB classification of the symbol.  <i>Arg32</i> must be one of the values in the <b>SymTagEnum</b> enumeration defined in Dbghelp.h.  For more information, see PDB documentation.
+Set to zero.
 
 `Buffer`
 
@@ -225,11 +225,6 @@ The method was successful. However, the information would not fit in the buffer 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

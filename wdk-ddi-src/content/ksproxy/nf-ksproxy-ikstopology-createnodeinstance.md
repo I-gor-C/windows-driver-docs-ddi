@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 882b47c2-8fbe-4de0-8ef3-206faaf1e990
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CreateNodeInstance method [Streaming Media Devices], CreateNodeInstance method [Streaming Media Devices], IKsTopology interface, IKsTopology interface [Streaming Media Devices], CreateNodeInstance method, CreateNodeInstance, IKsTopology::CreateNodeInstance, stream.ikstopology_createnodeinstance, ksproxy/IKsTopology::CreateNodeInstance, IKsTopology, ksproxy_91ff533c-4aa9-43db-9165-1c0c6f395393.xml
+ms.keywords : CreateNodeInstance method [Streaming Media Devices], IKsTopology interface, IKsTopology::CreateNodeInstance, CreateNodeInstance, stream.ikstopology_createnodeinstance, ksproxy_91ff533c-4aa9-43db-9165-1c0c6f395393.xml, IKsTopology, IKsTopology interface [Streaming Media Devices], CreateNodeInstance method, CreateNodeInstance method [Streaming Media Devices], ksproxy/IKsTopology::CreateNodeInstance
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,22 +90,17 @@ Returns NOERROR if successful; otherwise, returns an error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | DesktopMobile |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | DesktopMobile |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
 <a href="..\ksproxy\nn-ksproxy-ikstopology.md">IKsTopology</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A80754BD-0F23-4EE9-898F-30743AA82C72
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture], kernel.ioincrementkeepalivecount, IoIncrementKeepAliveCount, ntddk/IoIncrementKeepAliveCount
+ms.keywords : ntddk/IoIncrementKeepAliveCount, IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture], kernel.ioincrementkeepalivecount, IoIncrementKeepAliveCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ This routine returns <b>STATUS_SUCCESS</b> on success, or the appropriate <b>NTS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8. Available in Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 
 ## See Also
 

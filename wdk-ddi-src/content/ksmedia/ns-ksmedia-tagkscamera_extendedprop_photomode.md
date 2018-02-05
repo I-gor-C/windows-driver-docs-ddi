@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 96F920FC-43CE-4ACC-B880-9AD03B5D6009
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSCAMERA_EXTENDEDPROP_PHOTOMODE, PKSCAMERA_EXTENDEDPROP_PHOTOMODE structure pointer [Streaming Media Devices], *PKSCAMERA_EXTENDEDPROP_PHOTOMODE, tagKSCAMERA_EXTENDEDPROP_PHOTOMODE, ksmedia/PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE, PKSCAMERA_EXTENDEDPROP_PHOTOMODE, stream.kscamera_extendedprop_photomode, KSCAMERA_EXTENDEDPROP_PHOTOMODE structure [Streaming Media Devices]
+ms.keywords : ksmedia/KSCAMERA_EXTENDEDPROP_PHOTOMODE, stream.kscamera_extendedprop_photomode, ksmedia/PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE structure [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_PHOTOMODE, *PKSCAMERA_EXTENDEDPROP_PHOTOMODE, PKSCAMERA_EXTENDEDPROP_PHOTOMODE structure pointer [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ Not used. Set to 0.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

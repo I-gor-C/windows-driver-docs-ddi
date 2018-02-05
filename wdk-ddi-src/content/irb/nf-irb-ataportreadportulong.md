@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f9e5fb0a-7add-462c-9b2a-2b543f7c7649
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortReadPortUlong, storage.ataportreadportulong, AtaPortReadPortUlong routine [Storage Devices], atartns_e2d91111-cf48-4987-82ff-055469d67dc8.xml, irb/AtaPortReadPortUlong
+ms.keywords : AtaPortReadPortUlong routine [Storage Devices], atartns_e2d91111-cf48-4987-82ff-055469d67dc8.xml, AtaPortReadPortUlong, irb/AtaPortReadPortUlong, storage.ataportreadportulong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,20 +66,15 @@ A pointer to the I/O port. The address value that is assigned to this parameter 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportreadportushort.md">AtaPortReadPortUshort</a>
-
 <a href="..\irb\nf-irb-ataportreadportuchar.md">AtaPortReadPortUchar</a>
+
+<a href="..\irb\nf-irb-ataportreadportushort.md">AtaPortReadPortUshort</a>
 
 <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
 

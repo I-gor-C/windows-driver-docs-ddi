@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 373065F6-C754-4517-905E-86A974866120
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL structure [Display Devices], DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, display.dxgk_buildpagingbuffer_fillvirtual, d3dkmddi/DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL"
+ms.keywords : DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL structure [Display Devices], DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, d3dkmddi/DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, _DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL, display.dxgk_buildpagingbuffer_fillvirtual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,9 +79,7 @@ The kernel mode driver handle of the allocation being filled. The handle is retu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

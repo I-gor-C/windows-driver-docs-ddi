@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C38F8222-7F22-4D6B-A3F2-C326ECE22E8B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PSCREATETHREADNOTIFYTYPE enumeration [Kernel-Mode Driver Architecture], ntddk/PsCreateThreadNotifyNonSystem, _PSCREATETHREADNOTIFYTYPE, ntddk/PSCREATETHREADNOTIFYTYPE, ntddk/PsCreateThreadNotifySubsystems, kernel.pscreatethreadnotifytype, PsCreateThreadNotifyNonSystem, PsCreateThreadNotifySubsystems, PSCREATETHREADNOTIFYTYPE
+ms.keywords : kernel.pscreatethreadnotifytype, PsCreateThreadNotifyNonSystem, ntddk/PsCreateThreadNotifySubsystems, PSCREATETHREADNOTIFYTYPE enumeration [Kernel-Mode Driver Architecture], _PSCREATETHREADNOTIFYTYPE, PSCREATETHREADNOTIFYTYPE, ntddk/PSCREATETHREADNOTIFYTYPE, PsCreateThreadNotifySubsystems, ntddk/PsCreateThreadNotifyNonSystem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,18 +68,16 @@ typedef enum _PSCREATETHREADNOTIFYTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
 <a href="..\ntddk\nf-ntddk-pssetcreatethreadnotifyroutineex.md">PsSetCreateThreadNotifyRoutineEx</a>
 
-<a href="..\ntddk\ne-ntddk-_subsystem_information_type.md">SUBSYSTEM_INFORMATION_TYPE</a>
-
 <a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
+
+<a href="..\ntddk\ne-ntddk-_subsystem_information_type.md">SUBSYSTEM_INFORMATION_TYPE</a>
 
  
 

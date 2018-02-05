@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : A9256A7B-B851-498C-94C3-95268D079828
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winspool/GetJobNamedPropertyValue, print.getjobnamedpropertyvalue, GetJobNamedPropertyValue function [Print Devices], GetJobNamedPropertyValue
+ms.keywords : print.getjobnamedpropertyvalue, winspool/GetJobNamedPropertyValue, GetJobNamedPropertyValue, GetJobNamedPropertyValue function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If the operation succeeds, the function returns <b>ERROR_SUCCESS</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winspool.h (include Winspool.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | WinSpool.lib |
+| **DLL** | Spoolss.dll; WinSpool.drv |

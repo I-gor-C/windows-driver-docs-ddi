@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 87966827-72b2-4be7-859a-628c1accca48
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RouterRegisterForPrintAsyncNotifications, prnasntp/RouterRegisterForPrintAsyncNotifications, RouterRegisterForPrintAsyncNotifications function [Print Devices], spoolfnc_c39b58f9-b714-437d-86c0-89f2d922c920.xml, print.routerregisterforprintasyncnotifications
+ms.keywords : RouterRegisterForPrintAsyncNotifications, print.routerregisterforprintasyncnotifications, RouterRegisterForPrintAsyncNotifications function [Print Devices], spoolfnc_c39b58f9-b714-437d-86c0-89f2d922c920.xml, prnasntp/RouterRegisterForPrintAsyncNotifications
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,14 +91,10 @@ This function returns S_OK on success, and a standard COM error code otherwise.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | prnasntp.h (include Prnasntp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Spoolss.lib |
+| **DLL** | Spoolss.dll |
 
 ## See Also
 

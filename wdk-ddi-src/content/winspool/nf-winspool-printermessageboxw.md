@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : F5E7FB7C-A38F-4DBA-9C98-9554FA80CC07
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PrinterMessageBoxW function [Print Devices], PrinterMessageBoxW, print.printermessageboxw, winspool/PrinterMessageBoxW
+ms.keywords : PrinterMessageBoxW, winspool/PrinterMessageBoxW, print.printermessageboxw, PrinterMessageBoxW function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winspool.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

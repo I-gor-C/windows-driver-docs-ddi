@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 71E2E98D-4C97-4C04-A379-88C2A7CC8428
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_LOCK2, d3dumddi/D3DDDICB_LOCK2, D3DDDICB_LOCK2, D3DDDICB_LOCK2 structure [Display Devices], display.d3dddicb_lock2"
+ms.keywords : D3DDDICB_LOCK2 structure [Display Devices], _D3DDDICB_LOCK2, D3DDDICB_LOCK2, d3dumddi/D3DDDICB_LOCK2, display.d3dddicb_lock2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">L
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

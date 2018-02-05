@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b2edfcdb-28b9-4322-8bfb-4d5d2c2d1519
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilsignalquality, RILSIGNALQUALITY, *LPRILSIGNALQUALITY, RILSIGNALQUALITY structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILSIGNALQUALITY
+ms.keywords : RILSIGNALQUALITY, *LPRILSIGNALQUALITY, netvista.rilsignalquality, ntddrilapitypes/RILSIGNALQUALITY, RILSIGNALQUALITY structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILSIGNALQUALITY, *LPRILSIGNALQUALITY
+req.typenames : "*LPRILSIGNALQUALITY, RILSIGNALQUALITY"
 ---
 
 # RILSIGNALQUALITY structure
@@ -89,7 +89,4 @@ typedef struct _RILSIGNALQUALITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

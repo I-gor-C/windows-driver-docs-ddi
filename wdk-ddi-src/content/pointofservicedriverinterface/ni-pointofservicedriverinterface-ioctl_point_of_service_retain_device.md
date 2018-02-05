@@ -77,6 +77,4 @@ When handling this IOCTL, the driver can call <a href="..\poscx\nf-poscx-poscxre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |
-| **IRQL** |  |

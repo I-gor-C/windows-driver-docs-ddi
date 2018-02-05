@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 739dc01d-7340-449f-8fe6-64e5c8284436
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlNumberOfClearBits, wdm/RtlNumberOfClearBits, RtlNumberOfClearBits routine [Kernel-Mode Driver Architecture], k109_1b655b45-806c-4199-91e6-2ed2f4d4e570.xml, kernel.rtlnumberofclearbits
+ms.keywords : k109_1b655b45-806c-4199-91e6-2ed2f4d4e570.xml, RtlNumberOfClearBits, kernel.rtlnumberofclearbits, wdm/RtlNumberOfClearBits, RtlNumberOfClearBits routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,32 +69,30 @@ Callers of <b>RtlNumberOfClearBits</b> must be running at IRQL &lt;= APC_LEVEL i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+
+<a href="..\wdm\nf-wdm-rtlfindlastbackwardrunclear.md">RtlFindLastBackwardRunClear</a>
+
+<a href="..\wdm\nf-wdm-rtlfindclearruns.md">RtlFindClearRuns</a>
+
+<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+
+<a href="..\wdm\nf-wdm-rtlfindfirstrunclear.md">RtlFindFirstRunClear</a>
 
 <a href="..\wdm\nf-wdm-rtlnumberofsetbits.md">RtlNumberOfSetBits</a>
 
 <a href="..\wdm\nf-wdm-rtlfindnextforwardrunclear.md">RtlFindNextForwardRunClear</a>
 
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
-
-<a href="..\wdm\nf-wdm-rtlfindlastbackwardrunclear.md">RtlFindLastBackwardRunClear</a>
-
 <a href="..\wdm\nf-wdm-rtlfindlongestrunclear.md">RtlFindLongestRunClear</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
-
-<a href="..\wdm\nf-wdm-rtlfindfirstrunclear.md">RtlFindFirstRunClear</a>
-
-<a href="..\wdm\nf-wdm-rtlfindclearruns.md">RtlFindClearRuns</a>
 
 <a href="..\wdm\nf-wdm-rtlfindclearbits.md">RtlFindClearBits</a>
 

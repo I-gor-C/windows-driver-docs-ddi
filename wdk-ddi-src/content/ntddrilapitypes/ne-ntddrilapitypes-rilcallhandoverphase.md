@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c97fcbba-a127-4974-bda7-47456c05558f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_CALLHANDOVERPHASE_FAILED, ntddrilapitypes/RIL_CALLHANDOVERPHASE_CANCELLED, ntddrilapitypes/RIL_CALLHANDOVERPHASE_MAX, RIL_CALLHANDOVERPHASE_COMPLETED, netvista.rilcallhandoverphase, RILCALLHANDOVERPHASE, RIL_CALLHANDOVERPHASE_FAILED, ntddrilapitypes/RIL_CALLHANDOVERPHASE_COMPLETED, ntddrilapitypes/RILCALLHANDOVERPHASE, RIL_CALLHANDOVERPHASE_CANCELLED, RIL_CALLHANDOVERPHASE_MAX, RILCALLHANDOVERPHASE enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : ntddrilapitypes/RIL_CALLHANDOVERPHASE_MAX, RIL_CALLHANDOVERPHASE_COMPLETED, RIL_CALLHANDOVERPHASE_CANCELLED, ntddrilapitypes/RIL_CALLHANDOVERPHASE_CANCELLED, RIL_CALLHANDOVERPHASE_MAX, RIL_CALLHANDOVERPHASE_FAILED, RILCALLHANDOVERPHASE, netvista.rilcallhandoverphase, ntddrilapitypes/RILCALLHANDOVERPHASE, ntddrilapitypes/RIL_CALLHANDOVERPHASE_COMPLETED, RILCALLHANDOVERPHASE enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_CALLHANDOVERPHASE_FAILED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILCALLHANDOVERPHASE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

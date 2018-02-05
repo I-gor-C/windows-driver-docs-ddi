@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f6cb4532-fc66-45e7-a779-0981465d69fc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.getfcpstatistics_in, structs-Fibre_409be852-67ff-45c4-bce1-291076c1a70b.xml, hbapiwmi/PGetFCPStatistics_IN, GetFCPStatistics_IN, GetFCPStatistics_IN structure [Storage Devices], PGetFCPStatistics_IN, PGetFCPStatistics_IN structure pointer [Storage Devices], *PGetFCPStatistics_IN, hbapiwmi/GetFCPStatistics_IN, _GetFCPStatistics_IN
+ms.keywords : PGetFCPStatistics_IN structure pointer [Storage Devices], hbapiwmi/PGetFCPStatistics_IN, structs-Fibre_409be852-67ff-45c4-bce1-291076c1a70b.xml, PGetFCPStatistics_IN, _GetFCPStatistics_IN, GetFCPStatistics_IN structure [Storage Devices], *PGetFCPStatistics_IN, GetFCPStatistics_IN, hbapiwmi/GetFCPStatistics_IN, storage.getfcpstatistics_in
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ The WMI tool suite generates a declaration of the GetFCPStatistics_IN structure 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

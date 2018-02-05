@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3ea9a473-606d-4021-89af-5f895020d054
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsDispatchSpecificProperty, KsDispatchSpecificProperty, KsDispatchSpecificProperty function [Streaming Media Devices], stream.ksdispatchspecificproperty, ksfunc_b12751b9-b486-4b57-809b-1f3daa8a1c30.xml
+ms.keywords : stream.ksdispatchspecificproperty, KsDispatchSpecificProperty function [Streaming Media Devices], KsDispatchSpecificProperty, ks/KsDispatchSpecificProperty, ksfunc_b12751b9-b486-4b57-809b-1f3daa8a1c30.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,9 @@ The <b>KsDispatchSpecificProperty</b> function is intended for additional proces
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

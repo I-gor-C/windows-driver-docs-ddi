@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4d0782c7-0516-4326-9994-7820446f2af6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoRegisterDeviceInterface, k104_4916c641-8510-425d-953f-68ed7a3f8976.xml, IoRegisterDeviceInterface, IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], kernel.ioregisterdeviceinterface
+ms.keywords : IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], kernel.ioregisterdeviceinterface, IoRegisterDeviceInterface, wdm/IoRegisterDeviceInterface, k104_4916c641-8510-425d-953f-68ed7a3f8976.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,24 +121,23 @@ Callers of <b>IoRegisterDeviceInterface</b> must be running at IRQL = PASSIVE_LE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | IrqlIoPassive3, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
-
 <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
 
-<a href="..\wdm\nf-wdm-ioopendeviceinterfaceregistrykey.md">IoOpenDeviceInterfaceRegistryKey</a>
-
 <a href="..\wdm\nf-wdm-iosetdeviceinterfacestate.md">IoSetDeviceInterfaceState</a>
+
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+
+<a href="..\wdm\nf-wdm-ioopendeviceinterfaceregistrykey.md">IoOpenDeviceInterfaceRegistryKey</a>
 
  
 

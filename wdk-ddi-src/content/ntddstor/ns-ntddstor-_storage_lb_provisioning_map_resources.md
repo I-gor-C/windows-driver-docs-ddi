@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6F7DE233-D002-4927-80FC-307A3A33653A
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/STORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES structure pointer [Storage Devices], LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED, _STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES structure [Storage Devices], LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN, storage.storage_lb_provisioning_map_resources
+ms.keywords : ntddstor/STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN, storage.storage_lb_provisioning_map_resources, _STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES structure [Storage Devices], PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES structure pointer [Storage Devices], LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES
+req.typenames : "*PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES"
 ---
 
 # _STORAGE_LB_PROVISIONING_MAP_RESOURCES structure
@@ -254,9 +254,7 @@ Resource counts are in bytes instead of totals of blocks or slabs.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntddstor.h (include Ntddstor.h, Scsi.h) |
 
 ## See Also

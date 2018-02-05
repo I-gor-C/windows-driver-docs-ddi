@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 96FB6959-1583-42E0-9851-A09AE0CB73DB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pep_acpi_register_device, pepfx/PPEP_ACPI_REGISTER_DEVICE, PPEP_ACPI_REGISTER_DEVICE structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_REGISTER_DEVICE, pepfx/PEP_ACPI_REGISTER_DEVICE, PPEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE structure [Kernel-Mode Driver Architecture], PEP_ACPI_REGISTER_DEVICE, *PPEP_ACPI_REGISTER_DEVICE
+ms.keywords : "_PEP_ACPI_REGISTER_DEVICE, PPEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE, kernel.pep_acpi_register_device, *PPEP_ACPI_REGISTER_DEVICE, pepfx/PEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE structure [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_REGISTER_DEVICE, PPEP_ACPI_REGISTER_DEVICE structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,20 +81,18 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
 <a href="..\pepfx\ns-pepfx-_pep_acpi_prepare_device.md">PEP_ACPI_PREPARE_DEVICE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
 
  
 

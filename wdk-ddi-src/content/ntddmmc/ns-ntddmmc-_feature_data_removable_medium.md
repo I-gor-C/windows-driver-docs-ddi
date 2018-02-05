@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b25feb68-75bb-4a9d-b842-e15f619a18c4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddmmc/FEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/PFEATURE_DATA_REMOVABLE_MEDIUM, FEATURE_DATA_REMOVABLE_MEDIUM, storage.feature_data_removable_medium, FEATURE_DATA_REMOVABLE_MEDIUM structure [Storage Devices], *PFEATURE_DATA_REMOVABLE_MEDIUM, structs-CD-ROM_f9ce701e-11b7-478e-969e-c2744477d348.xml, _FEATURE_DATA_REMOVABLE_MEDIUM, PFEATURE_DATA_REMOVABLE_MEDIUM structure pointer [Storage Devices], PFEATURE_DATA_REMOVABLE_MEDIUM
+ms.keywords : storage.feature_data_removable_medium, structs-CD-ROM_f9ce701e-11b7-478e-969e-c2744477d348.xml, *PFEATURE_DATA_REMOVABLE_MEDIUM, _FEATURE_DATA_REMOVABLE_MEDIUM, PFEATURE_DATA_REMOVABLE_MEDIUM structure pointer [Storage Devices], FEATURE_DATA_REMOVABLE_MEDIUM structure [Storage Devices], PFEATURE_DATA_REMOVABLE_MEDIUM, FEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/PFEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/FEATURE_DATA_REMOVABLE_MEDIUM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFEATURE_DATA_REMOVABLE_MEDIUM, FEATURE_DATA_REMOVABLE_MEDIUM"
+req.typenames : FEATURE_DATA_REMOVABLE_MEDIUM, *PFEATURE_DATA_REMOVABLE_MEDIUM
 ---
 
 # _FEATURE_DATA_REMOVABLE_MEDIUM structure
@@ -96,9 +96,6 @@ This structure holds data for the feature named "Removable Medium" by the <i>MMC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

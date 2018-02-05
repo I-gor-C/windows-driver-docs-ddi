@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : adf2513c-9a0e-4552-baad-010ab243e9dc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ZwPrePrepareEnlistment routine [Kernel-Mode Driver Architecture], wdm/NtPrePrepareEnlistment, ZwPrePrepareEnlistment, ktm_ref_42a63780-131c-4b65-ad22-ec32b713c0fe.xml, NtPrePrepareEnlistment, wdm/ZwPrePrepareEnlistment, kernel.zwpreprepareenlistment
+ms.keywords : NtPrePrepareEnlistment, ktm_ref_42a63780-131c-4b65-ad22-ec32b713c0fe.xml, ZwPrePrepareEnlistment routine [Kernel-Mode Driver Architecture], wdm/ZwPrePrepareEnlistment, ZwPrePrepareEnlistment, wdm/NtPrePrepareEnlistment, kernel.zwpreprepareenlistment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -158,24 +158,23 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-tmpreprepareenlistment.md">TmPrePrepareEnlistment</a>
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-tmpreprepareenlistment.md">TmPrePrepareEnlistment</a>
 
  
 

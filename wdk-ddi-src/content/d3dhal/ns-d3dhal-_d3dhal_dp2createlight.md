@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 26dc353a-13e0-4408-b30f-4a9086cd7b9a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2CREATELIGHT structure pointer [Display Devices], D3DHAL_DP2CREATELIGHT structure [Display Devices], display.d3dhal_dp2createlight, _D3DHAL_DP2CREATELIGHT, d3dhal/LPD3DHAL_DP2CREATELIGHT, *LPD3DHAL_DP2CREATELIGHT, D3DHAL_DP2CREATELIGHT, d3dstrct_8cbc2e0d-9728-407d-a860-b9460b33e837.xml, LPD3DHAL_DP2CREATELIGHT, d3dhal/D3DHAL_DP2CREATELIGHT
+ms.keywords : display.d3dhal_dp2createlight, _D3DHAL_DP2CREATELIGHT, d3dhal/D3DHAL_DP2CREATELIGHT, *LPD3DHAL_DP2CREATELIGHT, D3DHAL_DP2CREATELIGHT structure [Display Devices], D3DHAL_DP2CREATELIGHT, d3dstrct_8cbc2e0d-9728-407d-a860-b9460b33e837.xml, d3dhal/LPD3DHAL_DP2CREATELIGHT, LPD3DHAL_DP2CREATELIGHT, LPD3DHAL_DP2CREATELIGHT structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,6 @@ The D3DHAL_DP2CREATELIGHT structure is used to hold the index into the light arr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also

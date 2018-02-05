@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 25cf9026-fd5d-4998-b7ff-f7be048ef2a1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoStartNextPacketByKey, IoStartNextPacketByKey routine [Kernel-Mode Driver Architecture], wdm/IoStartNextPacketByKey, k104_f2248acf-8071-43a6-b5f9-bc3bc178469b.xml, kernel.iostartnextpacketbykey
+ms.keywords : wdm/IoStartNextPacketByKey, IoStartNextPacketByKey routine [Kernel-Mode Driver Architecture], k104_f2248acf-8071-43a6-b5f9-bc3bc178469b.xml, kernel.iostartnextpacketbykey, IoStartNextPacketByKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,22 +84,20 @@ Callers of <b>IoStartNextPacketByKey</b> must be running at IRQL &lt;= DISPATCH_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
+
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\ntifs\nf-ntifs-iostartpacket.md">IoStartPacket</a>
-
-<a href="..\ntifs\nf-ntifs-iostartnextpacket.md">IoStartNextPacket</a>
+<a href="..\wdm\nf-wdm-iostartpacket.md">IoStartPacket</a>
 
  
 

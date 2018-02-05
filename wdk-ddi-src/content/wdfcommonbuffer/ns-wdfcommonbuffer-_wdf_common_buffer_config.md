@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 19e98448-6951-4eb4-bca1-8119cd6f7713
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/PWDF_COMMON_BUFFER_CONFIG, kmdf.wdf_common_buffer_config, wdf.wdf_common_buffer_config, WDF_COMMON_BUFFER_CONFIG structure, PWDF_COMMON_BUFFER_CONFIG structure pointer, PWDF_COMMON_BUFFER_CONFIG, _WDF_COMMON_BUFFER_CONFIG, DFCommonBufferObjectRef_6b9d3f2e-8954-4777-b5e4-9828f73feec3.xml
+ms.keywords : PWDF_COMMON_BUFFER_CONFIG, WDF_COMMON_BUFFER_CONFIG, *PWDF_COMMON_BUFFER_CONFIG, _WDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG, wdfcommonbuffer/PWDF_COMMON_BUFFER_CONFIG, wdf.wdf_common_buffer_config, DFCommonBufferObjectRef_6b9d3f2e-8954-4777-b5e4-9828f73feec3.xml, PWDF_COMMON_BUFFER_CONFIG structure pointer, kmdf.wdf_common_buffer_config, WDF_COMMON_BUFFER_CONFIG structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,18 +75,16 @@ For more information about specifying alignment requirements, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfcommonbuffer.h (include WdfCommonBuffer.h) |
 
 ## See Also
 
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
+
 <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedlogicaladdress.md">WdfCommonBufferGetAlignedLogicalAddress</a>
 
 <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreatewithconfig.md">WdfCommonBufferCreateWithConfig</a>
-
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
 
  
 

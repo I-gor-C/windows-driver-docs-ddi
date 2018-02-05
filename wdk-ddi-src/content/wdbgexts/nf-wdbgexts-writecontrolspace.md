@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 12ea119e-9d56-4a1d-a8c6-3999147dfaac
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_ee59dfdc-d138-4f1b-8f5c-fb9e1d47bef2.xml, WriteControlSpace, debugger.writecontrolspace, wdbgexts/WriteControlSpace, WriteControlSpace function [Windows Debugging]
+ms.keywords : wdbgexts/WriteControlSpace, WriteControlSpace, WdbgExts_Ref_ee59dfdc-d138-4f1b-8f5c-fb9e1d47bef2.xml, debugger.writecontrolspace, WriteControlSpace function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,9 @@ This function can only be called in kernel-mode debugging.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

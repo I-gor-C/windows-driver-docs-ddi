@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cab9877c-3b7b-4644-83eb-0aa1e9fc77b9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DISK_GROW_PARTITION structure [Storage Devices], storage.disk_grow_partition, PDISK_GROW_PARTITION structure pointer [Storage Devices], *PDISK_GROW_PARTITION, _DISK_GROW_PARTITION, PDISK_GROW_PARTITION, structs-disk_cc7d52cd-b0b6-4e5c-a323-6d513f37e602.xml, ntdddisk/PDISK_GROW_PARTITION, ntdddisk/DISK_GROW_PARTITION, DISK_GROW_PARTITION
+ms.keywords : PDISK_GROW_PARTITION structure pointer [Storage Devices], _DISK_GROW_PARTITION, DISK_GROW_PARTITION structure [Storage Devices], ntdddisk/PDISK_GROW_PARTITION, ntdddisk/DISK_GROW_PARTITION, storage.disk_grow_partition, PDISK_GROW_PARTITION, structs-disk_cc7d52cd-b0b6-4e5c-a323-6d513f37e602.xml, DISK_GROW_PARTITION, *PDISK_GROW_PARTITION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Specifies a number identifying the partition to be enlarged.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also

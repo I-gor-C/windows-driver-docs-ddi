@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F58AB9E1-4061-46B8-8137-319DF30D9CA7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d12ddi_query_data_video_decode_statistics, d3d12umddi/D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS_0022, D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS_0022 structure [Display Devices], D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS_0022
+ms.keywords : display.d3d12ddi_query_data_video_decode_statistics, d3d12umddi/D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS_0022, D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS_0022, D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS_0022 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,9 +75,6 @@ Specifies the status of an operation as a <a href="..\d3d12umddi\ne-d3d12umddi-d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
 ## See Also

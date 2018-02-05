@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b0662a2c-feb6-4d66-89c9-586c2859b78b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, _NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, ndis/PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_miniport_adapter_hardware_assist_attributes, *PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, ndis/NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, header_data_split_ref_cedb1474-09f1-4340-9d13-d6d7f5b96ed4.xml, NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES
+ms.keywords : PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, ndis/PNDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES, header_data_split_ref_cedb1474-09f1-4340-9d13-d6d7f5b96ed4.xml, netvista.ndis_miniport_adapter_hardware_assist_attributes, ndis/NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,8 +100,8 @@ A pointer to an <a href="..\ntddndis\ns-ntddndis-_ndis_sriov_capabilities.md">ND
 `HardwareNicSwitchCapabilities`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_nic_switch_capabilities" tabindex="0"><b>
-     NDIS_NIC_SWITCH_CAPABILITIES</b></mshelp:link> structure. This structure specifies the hardware NIC switch
+     <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_capabilities.md">
+     NDIS_NIC_SWITCH_CAPABILITIES</a> structure. This structure specifies the hardware NIC switch
      capabilities of the network adapter. This value can be <b>NULL</b> if the network adapter does not support
      NIC switch features or receive filtering.
 <div class="alert"><b>Warning</b>  If this member is not set to NULL, the <b>CurrentNicSwitchCapabilities</b> member must not be set to <b>NULL</b>.</div><div> </div>
@@ -116,8 +116,8 @@ For more information, see <a href="https://msdn.microsoft.com/777988E8-D45E-49A7
 `HardwareReceiveFilterCapabilities`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_receive_filter_capabilities" tabindex="0"><b>
-     NDIS_RECEIVE_FILTER_CAPABILITIES</b></mshelp:link> structure. This structure specifies the hardware receive
+     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_capabilities.md">
+     NDIS_RECEIVE_FILTER_CAPABILITIES</a> structure. This structure specifies the hardware receive
      filtering capabilities of the network adapter. This value can be <b>NULL</b> if the network adapter does not
      support receive filtering.
 <div class="alert"><b>Warning</b>  If this member is not set to NULL, the <b>CurrentReceiveFilterCapabilities</b> member must not be set to <b>NULL</b>.</div><div> </div>
@@ -151,12 +151,12 @@ To indicate the version of the <b>NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUT
 
 
 
-#### NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_3
+#### NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_1
 
-Added various members for NDIS 6.30.
+Original version for NDIS 6.1.
 
 Set the 
-        <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_3.
+        <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_1.
 
 
 #### NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_2
@@ -171,17 +171,17 @@ Set the
         <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_2.
 
 
-#### NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_1
+#### NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_3
 
-Original version for NDIS 6.1.
+Added various members for NDIS 6.30.
 
 Set the 
-        <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_1.
+        <b>Size</b> member to NDIS_SIZEOF_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES_REVISION_3.
 
 ## Remarks
 To register the hardware-assisted capabilities of the underlying network adapter, the miniport driver calls the 
-    <mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
-    NdisMSetMiniportAttributes</b></mshelp:link> function from its 
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+    NdisMSetMiniportAttributes</a> function from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function. The driver passes 
     an initialized <b>NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</b>
     structure to the <i>MiniportAttributes</i> parameter of this function.
@@ -189,29 +189,27 @@ To register the hardware-assisted capabilities of the underlying network adapter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_capabilities.md">
+   NDIS_RECEIVE_FILTER_CAPABILITIES</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndis\ns-ndis-_ndis_hd_split_attributes.md">NDIS_HD_SPLIT_ATTRIBUTES</a>
+
 <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_capabilities.md">NDIS_NIC_SWITCH_CAPABILITIES</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_sriov_capabilities.md">NDIS_SRIOV_CAPABILITIES</a>
+
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_qos_capabilities.md">NDIS_QOS_CAPABILITIES</a>
-
-<mshelp:link keywords="netvista.ndis_receive_filter_capabilities" tabindex="0"><b>
-   NDIS_RECEIVE_FILTER_CAPABILITIES</b></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
-
-<a href="..\ndis\ns-ndis-_ndis_hd_split_attributes.md">NDIS_HD_SPLIT_ATTRIBUTES</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_sriov_capabilities.md">NDIS_SRIOV_CAPABILITIES</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
  
 

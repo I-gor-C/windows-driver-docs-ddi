@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4d10cefb-1039-4c48-b9f7-c4a530a6514b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbRequestTypePipeAbort, wdfusb/PWDF_USB_REQUEST_TYPE, DFUsbRef_b3c4cd6e-66ac-40b3-b78b-c550f14c3e94.xml, wdfusb/WdfUsbRequestTypeInvalid, wdfusb/WdfUsbRequestTypePipeRead, kmdf.wdf_usb_request_type, wdfusb/WdfUsbRequestTypeDeviceString, _WDF_USB_REQUEST_TYPE, WdfUsbRequestTypePipeUrb, wdfusb/WdfUsbRequestTypePipeWrite, wdfusb/WdfUsbRequestTypeNoFormat, WdfUsbRequestTypeDeviceUrb, PWDF_USB_REQUEST_TYPE, wdf.wdf_usb_request_type, WdfUsbRequestTypeInvalid, wdfusb/WdfUsbRequestTypeDeviceUrb, WdfUsbRequestTypePipeReset, PWDF_USB_REQUEST_TYPE enumeration pointer, WDF_USB_REQUEST_TYPE, WdfUsbRequestTypeDeviceControlTransfer, WdfUsbRequestTypePipeAbort, wdfusb/WdfUsbRequestTypeDeviceControlTransfer, WdfUsbRequestTypeNoFormat, WdfUsbRequestTypePipeWrite, WdfUsbRequestTypeDeviceString, wdfusb/WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WdfUsbRequestTypePipeRead, WDF_USB_REQUEST_TYPE enumeration, wdfusb/WdfUsbRequestTypePipeUrb, wdfusb/WdfUsbRequestTypePipeReset
+ms.keywords : wdfusb/WdfUsbRequestTypeNoFormat, wdfusb/WdfUsbRequestTypeDeviceUrb, _WDF_USB_REQUEST_TYPE, PWDF_USB_REQUEST_TYPE, kmdf.wdf_usb_request_type, wdfusb/WdfUsbRequestTypePipeAbort, WdfUsbRequestTypeInvalid, WDF_USB_REQUEST_TYPE enumeration, wdfusb/WdfUsbRequestTypePipeReset, WdfUsbRequestTypeDeviceUrb, *PWDF_USB_REQUEST_TYPE, WdfUsbRequestTypePipeRead, DFUsbRef_b3c4cd6e-66ac-40b3-b78b-c550f14c3e94.xml, wdfusb/WdfUsbRequestTypeInvalid, wdf.wdf_usb_request_type, WdfUsbRequestTypeNoFormat, WdfUsbRequestTypePipeReset, wdfusb/WdfUsbRequestTypeDeviceControlTransfer, WdfUsbRequestTypeDeviceString, wdfusb/WDF_USB_REQUEST_TYPE, wdfusb/PWDF_USB_REQUEST_TYPE, wdfusb/WdfUsbRequestTypeDeviceString, WdfUsbRequestTypePipeAbort, WDF_USB_REQUEST_TYPE, WdfUsbRequestTypePipeWrite, wdfusb/WdfUsbRequestTypePipeUrb, PWDF_USB_REQUEST_TYPE enumeration pointer, wdfusb/WdfUsbRequestTypePipeRead, WdfUsbRequestTypePipeUrb, wdfusb/WdfUsbRequestTypePipeWrite, WdfUsbRequestTypeDeviceControlTransfer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -122,7 +122,6 @@ The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : D5DF9785-83E0-4137-8E5F-357F94721CAD
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSTORAGE_HW_FIRMWARE_SLOT_INFO, ntddstor/PSTORAGE_HW_FIRMWARE_SLOT_INFO, PSTORAGE_HW_FIRMWARE_SLOT_INFO structure pointer [Storage Devices], storage.storage_hw_firmware_slot_info, STORAGE_HW_FIRMWARE_SLOT_INFO, _STORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO structure [Storage Devices], ntddstor/STORAGE_HW_FIRMWARE_SLOT_INFO, PSTORAGE_HW_FIRMWARE_SLOT_INFO"
+ms.keywords : ntddstor/STORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO, PSTORAGE_HW_FIRMWARE_SLOT_INFO structure pointer [Storage Devices], _STORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO structure [Storage Devices], *PSTORAGE_HW_FIRMWARE_SLOT_INFO, ntddstor/PSTORAGE_HW_FIRMWARE_SLOT_INFO, storage.storage_hw_firmware_slot_info, PSTORAGE_HW_FIRMWARE_SLOT_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,7 +89,5 @@ The version of this structure. This should be set to sizeof(STORAGE_HW_FIRMWARE_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ntddstor.h (include Ntddstor.h) |

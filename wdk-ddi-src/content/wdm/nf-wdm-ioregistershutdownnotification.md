@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fd9a612b-b0a7-4bef-9fab-8212a3b594b6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoRegisterShutdownNotification, kernel.ioregistershutdownnotification, k104_dd357e39-68b4-4cc2-b7c7-34f16c74a4a0.xml, IoRegisterShutdownNotification, IoRegisterShutdownNotification routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/IoRegisterShutdownNotification, IoRegisterShutdownNotification, IoRegisterShutdownNotification routine [Kernel-Mode Driver Architecture], kernel.ioregistershutdownnotification, k104_dd357e39-68b4-4cc2-b7c7-34f16c74a4a0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,20 +81,19 @@ A PnP driver might register a shutdown routine to perform certain tasks before s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me. Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543405">DispatchShutdown</a>
+
+<a href="..\wdm\nf-wdm-iounregistershutdownnotification.md">IoUnregisterShutdownNotification</a>
 
 <a href="..\wdm\nf-wdm-ioregisterlastchanceshutdownnotification.md">IoRegisterLastChanceShutdownNotification</a>
 

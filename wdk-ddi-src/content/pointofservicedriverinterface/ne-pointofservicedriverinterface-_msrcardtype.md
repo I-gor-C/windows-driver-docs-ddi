@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : aa7af210-fb5e-49a1-911f-cb1e90c2ac26
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/MsrCardType_ExtendedBase, pointofservicedriverinterface/MsrCardType, pointofservicedriverinterface/MsrCardType_Unknown, pos.msrcardtype, pointofservicedriverinterface/MsrCardType_Bank, MsrCardType_Aamva, pointofservicedriverinterface/MsrCardType_Aamva, _MsrCardType, MsrCardType enumeration, MsrCardType, MsrCardType_Unknown, MsrCardType_ExtendedBase, MsrCardType_Bank
+ms.keywords : pointofservicedriverinterface/MsrCardType_Aamva, MsrCardType_Bank, _MsrCardType, pos.msrcardtype, pointofservicedriverinterface/MsrCardType_Bank, pointofservicedriverinterface/MsrCardType, pointofservicedriverinterface/MsrCardType_ExtendedBase, MsrCardType_Aamva, MsrCardType, MsrCardType_Unknown, MsrCardType_ExtendedBase, pointofservicedriverinterface/MsrCardType_Unknown, MsrCardType enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _MsrCardType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4810ec13-ec58-4ed6-ae4f-6690bd72cd8a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_TEXTURESTAGESTATE, UMDisplayDriver_param_Structs_320d722f-2fbb-4fca-a06c-02e1be6e0190.xml, _D3DDDIARG_TEXTURESTAGESTATE, D3DDDIARG_TEXTURESTAGESTATE, display.d3dddiarg_texturestagestate, D3DDDIARG_TEXTURESTAGESTATE structure [Display Devices]
+ms.keywords : D3DDDIARG_TEXTURESTAGESTATE structure [Display Devices], UMDisplayDriver_param_Structs_320d722f-2fbb-4fca-a06c-02e1be6e0190.xml, d3dumddi/D3DDDIARG_TEXTURESTAGESTATE, display.d3dddiarg_texturestagestate, _D3DDDIARG_TEXTURESTAGESTATE, D3DDDIARG_TEXTURESTAGESTATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,9 +101,7 @@ Update the colorkey for the current texture. The <b>Value</b> member is set to t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

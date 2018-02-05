@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1fe4c3b7-4627-4a59-9779-fa2be29f387a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsNullDriverUnload, KsNullDriverUnload, ksfunc_449d73af-488d-4c4b-b5cb-f706fd48beab.xml, KsNullDriverUnload function [Streaming Media Devices], stream.ksnulldriverunload
+ms.keywords : KsNullDriverUnload function [Streaming Media Devices], ks/KsNullDriverUnload, stream.ksnulldriverunload, ksfunc_449d73af-488d-4c4b-b5cb-f706fd48beab.xml, KsNullDriverUnload
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

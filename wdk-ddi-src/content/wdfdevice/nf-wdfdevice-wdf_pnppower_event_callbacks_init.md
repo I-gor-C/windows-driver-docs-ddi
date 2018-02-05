@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f84e200b-542d-4885-a091-9e311b4ab697
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_f8e5ea12-489b-4217-b05f-43a31ef891d0.xml, wdfdevice/WDF_PNPPOWER_EVENT_CALLBACKS_INIT, wdf.wdf_pnppower_event_callbacks_init, WDF_PNPPOWER_EVENT_CALLBACKS_INIT, kmdf.wdf_pnppower_event_callbacks_init, WDF_PNPPOWER_EVENT_CALLBACKS_INIT function
+ms.keywords : WDF_PNPPOWER_EVENT_CALLBACKS_INIT function, wdf.wdf_pnppower_event_callbacks_init, DFDeviceObjectGeneralRef_f8e5ea12-489b-4217-b05f-43a31ef891d0.xml, kmdf.wdf_pnppower_event_callbacks_init, WDF_PNPPOWER_EVENT_CALLBACKS_INIT, wdfdevice/WDF_PNPPOWER_EVENT_CALLBACKS_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,8 @@ The <b>WDF_PNPPOWER_EVENT_CALLBACKS_INIT</b> function zeros the specified <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

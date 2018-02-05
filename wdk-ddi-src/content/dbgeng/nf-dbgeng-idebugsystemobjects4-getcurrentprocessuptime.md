@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6c6f3824-5e04-45df-8128-f3778aaa3636
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSystemObjects4::GetCurrentProcessUpTime, IDebugSystemObjects_cf0611a9-8535-4e53-ae13-32d46b887954.xml, GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessUpTime method, GetCurrentProcessUpTime, IDebugSystemObjects4::GetCurrentProcessUpTime, IDebugSystemObjects3::GetCurrentProcessUpTime, GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessUpTime method, IDebugSystemObjects4, IDebugSystemObjects2::GetCurrentProcessUpTime, dbgeng/IDebugSystemObjects2::GetCurrentProcessUpTime, debugger.getcurrentprocessuptime, dbgeng/IDebugSystemObjects3::GetCurrentProcessUpTime, GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessUpTime method
+ms.keywords : GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4::GetCurrentProcessUpTime, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessUpTime method, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessUpTime method, IDebugSystemObjects2::GetCurrentProcessUpTime, GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects_cf0611a9-8535-4e53-ae13-32d46b887954.xml, GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentProcessUpTime, dbgeng/IDebugSystemObjects4::GetCurrentProcessUpTime, IDebugSystemObjects3::GetCurrentProcessUpTime, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessUpTime method, GetCurrentProcessUpTime method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects3::GetCurrentProcessUpTime, dbgeng/IDebugSystemObjects2::GetCurrentProcessUpTime, debugger.getcurrentprocessuptime, IDebugSystemObjects4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -82,11 +82,6 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

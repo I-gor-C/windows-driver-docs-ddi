@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 86FA72CC-C23F-40B9-9FDD-80C3B0D5EA73
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUCX_USBDEVICE_CHARACTERISTIC_TYPE, ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC_TYPE, UCX_USBDEVICE_CHARACTERISTIC_TYPE, buses.ucx_usbdevice_characteristic_type, ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_TYPE enumeration pointer [Buses], _UCX_USBDEVICE_CHARACTERISTIC_TYPE, UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY, UCX_USBDEVICE_CHARACTERISTIC_TYPE enumeration [Buses], ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_TYPE
+ms.keywords : UCX_USBDEVICE_CHARACTERISTIC_TYPE, UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_TYPE, UCX_USBDEVICE_CHARACTERISTIC_TYPE enumeration [Buses], _UCX_USBDEVICE_CHARACTERISTIC_TYPE, ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC_TYPE, buses.ucx_usbdevice_characteristic_type, ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_TYPE, ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_TYPE_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_TYPE enumeration pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -63,9 +63,7 @@ typedef enum _UCX_USBDEVICE_CHARACTERISTIC_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also

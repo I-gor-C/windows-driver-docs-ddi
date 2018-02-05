@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4486939d-a35c-4b0b-b0d0-6402a62a4870
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d11ddiarg_createdeferredcontext, D3D11DDIARG_CREATEDEFERREDCONTEXT structure [Display Devices], UMDisplayDriver_Dx11param_Structs_c66ddced-4073-4400-8142-4464ceadad74.xml, D3D11DDIARG_CREATEDEFERREDCONTEXT, d3d10umddi/D3D11DDIARG_CREATEDEFERREDCONTEXT
+ms.keywords : D3D11DDIARG_CREATEDEFERREDCONTEXT structure [Display Devices], display.d3d11ddiarg_createdeferredcontext, d3d10umddi/D3D11DDIARG_CREATEDEFERREDCONTEXT, D3D11DDIARG_CREATEDEFERREDCONTEXT, UMDisplayDriver_Dx11param_Structs_c66ddced-4073-4400-8142-4464ceadad74.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,14 +110,10 @@ This flag represents the level of 3-D pipeline that the driver should support fo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE is supported beginning with the Windows 7 operating system. D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_3dpipelinesupport_caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_devicefuncs.md">D3D11DDI_DEVICEFUNCS</a>
 
@@ -126,6 +122,8 @@ This flag represents the level of 3-D pipeline that the driver should support fo
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_devicefuncs.md">D3D11_1DDI_DEVICEFUNCS</a>
 
 <a href="..\d3d10umddi\ne-d3d10umddi-d3d11ddi_3dpipelinelevel.md">D3D11DDI_3DPIPELINELEVEL</a>
+
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddi_3dpipelinesupport_caps.md">D3D11DDI_3DPIPELINESUPPORT_CAPS</a>
 
  
 

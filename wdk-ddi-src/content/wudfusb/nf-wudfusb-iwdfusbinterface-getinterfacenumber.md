@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : de8de14a-94a8-49e2-912a-9c174f5a2c74
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfusbinterface_getinterfacenumber, UMDFUSBref_4f4d9bc1-a1a1-4cc4-87ba-522fa3f8a0f7.xml, IWDFUsbInterface interface, GetInterfaceNumber method, GetInterfaceNumber method, GetInterfaceNumber method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetInterfaceNumber, umdf.iwdfusbinterface_getinterfacenumber, GetInterfaceNumber, IWDFUsbInterface, IWDFUsbInterface::GetInterfaceNumber
+ms.keywords : IWDFUsbInterface, GetInterfaceNumber, umdf.iwdfusbinterface_getinterfacenumber, wdf.iwdfusbinterface_getinterfacenumber, GetInterfaceNumber method, GetInterfaceNumber method, IWDFUsbInterface interface, IWDFUsbInterface interface, GetInterfaceNumber method, wudfusb/IWDFUsbInterface::GetInterfaceNumber, IWDFUsbInterface::GetInterfaceNumber, UMDFUSBref_4f4d9bc1-a1a1-4cc4-87ba-522fa3f8a0f7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -63,14 +63,12 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

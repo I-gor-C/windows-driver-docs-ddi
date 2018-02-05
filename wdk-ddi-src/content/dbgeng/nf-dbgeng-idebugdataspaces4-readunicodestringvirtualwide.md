@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7c360f9a-83f6-4bc8-abb4-08d1b0c4fdc9
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4, IDebugDataSpaces4::ReadUnicodeStringVirtualWide, ReadUnicodeStringVirtualWide, ReadUnicodeStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, ReadUnicodeStringVirtualWide method [Windows Debugging], debugger.readunicodestringvirtualwide, IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtualWide method, IDebugDataSpaces_c722fa7f-bbd2-4e0c-bd83-c59d2442ae26.xml, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtualWide
+ms.keywords : IDebugDataSpaces_c722fa7f-bbd2-4e0c-bd83-c59d2442ae26.xml, ReadUnicodeStringVirtualWide, IDebugDataSpaces4::ReadUnicodeStringVirtualWide, ReadUnicodeStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, ReadUnicodeStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtualWide method, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtualWide, IDebugDataSpaces4, debugger.readunicodestringvirtualwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -127,22 +127,17 @@ The engine will read up to <i>MaxBytes</i> from the target, looking for a null-t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
+
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554304">ReadMultiByteStringVirtualWide</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554351">ReadUnicodeStringVirtual</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 68819fe9-fd90-4391-a129-5aa0cae1558b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsStreamPointerDelete, ks/KsStreamPointerDelete, stream.ksstreampointerdelete, KsStreamPointerDelete function [Streaming Media Devices], avfunc_b21da27c-abf4-4277-8a22-232c31fbfe97.xml
+ms.keywords : ks/KsStreamPointerDelete, stream.ksstreampointerdelete, KsStreamPointerDelete function [Streaming Media Devices], KsStreamPointerDelete, avfunc_b21da27c-abf4-4277-8a22-232c31fbfe97.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,22 +72,19 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 
 <a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
 
-<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
+<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
 
  
 

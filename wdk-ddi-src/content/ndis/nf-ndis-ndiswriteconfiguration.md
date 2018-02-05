@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 63c94f4d-1c8c-43c2-ae58-993da42a80a4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisWriteConfiguration, NdisWriteConfiguration, netvista.ndiswriteconfiguration, ndis_configuration_ref_7d603433-49ed-46d5-8a57-000c06d83d4a.xml, NdisWriteConfiguration function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisWriteConfiguration, NdisWriteConfiguration function [Network Drivers Starting with Windows Vista], netvista.ndiswriteconfiguration, ndis_configuration_ref_7d603433-49ed-46d5-8a57-000c06d83d4a.xml, ndis/NdisWriteConfiguration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,9 @@ A pointer to a caller-supplied variable in which this function returns the statu
 
 
 
-#### NDIS_STATUS_SUCCESS
+#### NDIS_STATUS_FAILURE
 
-The supplied value at 
-       <i>ParameterValue</i> was written into the registry. If this is a new entry, the name at 
-       <i>Keyword</i> also was written into the registry.
+The requested information could not be written.
 
 
 #### NDIS_STATUS_NOT_SUPPORTED
@@ -85,18 +83,20 @@ NDIS could not allocate resources, usually enough memory, to transfer the reques
        to the registry.
 
 
-#### NDIS_STATUS_FAILURE
+#### NDIS_STATUS_SUCCESS
 
-The requested information could not be written.
+The supplied value at 
+       <i>ParameterValue</i> was written into the registry. If this is a new entry, the name at 
+       <i>Keyword</i> also was written into the registry.
 
 `ConfigurationHandle`
 
 The handle to a registry key that was returned by the 
      <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>, 
-     <mshelp:link keywords="netvista.ndisopenconfigurationkeybyindex" tabindex="0"><b>
-     NdisOpenConfigurationKeyByIndex</b></mshelp:link>, or 
-     <mshelp:link keywords="netvista.ndisopenconfigurationkeybyname" tabindex="0"><b>
-     NdisOpenConfigurationKeyByName</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
+     NdisOpenConfigurationKeyByIndex</a>, or 
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
+     NdisOpenConfigurationKeyByName</a> function.
 
 `Keyword`
 
@@ -109,8 +109,8 @@ A pointer to an NDIS_STRING type describing a caller-supplied counted string, in
 `ParameterValue`
 
 Pointer to a caller-supplied 
-     <mshelp:link keywords="netvista.ndis_configuration_parameter" tabindex="0"><b>
-     NDIS_CONFIGURATION_PARAMETER</b></mshelp:link> structure.
+     <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
+     NDIS_CONFIGURATION_PARAMETER</a> structure.
 
 
 ## Return Value
@@ -138,66 +138,64 @@ In the configuration registry of Windows 2000 and later versions, an NDIS
     The caller of 
     <b>NdisWriteConfiguration</b> is responsible for releasing the buffered string at 
     <i>Keyword</i> and the memory allocated for the 
-    <mshelp:link keywords="netvista.ndis_configuration_parameter" tabindex="0"><b>
-    NDIS_CONFIGURATION_PARAMETER</b></mshelp:link> structure.
+    <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
+    NDIS_CONFIGURATION_PARAMETER</a> structure.
 
 As an alternative to calling 
     <b>NdisWriteConfiguration</b>, every NDIS driver can set up configuration information in the registry for
     itself using the AddReg directive in the driver's INF file.
 
 For more information about setup and installation files for Windows 2000 and later versions, see 
-    <mshelp:link keywords="devinst.overview_of_device_and_driver_installation" tabindex="0">Device Installation
-    Overview</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-and-driver-installation">Device Installation
+    Overview</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteConfiguration (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteConfiguration (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteConfiguration (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteConfiguration (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisansistringtounicodestring.md">
+   NdisAnsiStringToUnicodeString</a>
 
-<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
+   NdisOpenConfigurationKeyByIndex</a>
 
-<a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">NDIS_CONFIGURATION_PARAMETER</a>
-
-<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
-
-<mshelp:link keywords="netvista.ndisansistringtounicodestring" tabindex="0"><b>
-   NdisAnsiStringToUnicodeString</b></mshelp:link>
-
-<mshelp:link keywords="netvista.ndisopenconfigurationkeybyindex" tabindex="0"><b>
-   NdisOpenConfigurationKeyByIndex</b></mshelp:link>
-
-<mshelp:link keywords="netvista.ndisunicodestringtoansistring" tabindex="0"><b>
-   NdisUnicodeStringToAnsiString</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+<a href="..\ndis\nf-ndis-ndisunicodestringtoansistring.md">
+   NdisUnicodeStringToAnsiString</a>
 
 <a href="..\ndis\nf-ndis-ndisinitunicodestring.md">NdisInitUnicodeString</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisinitansistring.md">NdisInitAnsiString</a>
 
 <a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
 
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
+
+<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
+
+<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
+
+<a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">NDIS_CONFIGURATION_PARAMETER</a>
+
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
+
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
+   NdisOpenConfigurationKeyByName</a>
+
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 
-<mshelp:link keywords="netvista.ndisopenconfigurationkeybyname" tabindex="0"><b>
-   NdisOpenConfigurationKeyByName</b></mshelp:link>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 
-<a href="..\ndis\nf-ndis-ndisinitansistring.md">NdisInitAnsiString</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

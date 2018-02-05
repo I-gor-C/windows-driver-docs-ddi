@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : D0FBA555-B61F-4D6F-B93F-C77D395F2BCD
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "*PINDICATION_PARAMETERS_ENHANCED, _INDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED, bthddi/PINDICATION_PARAMETERS_ENHANCED, PINDICATION_PARAMETERS_ENHANCED structure pointer [Bluetooth Devices], PINDICATION_PARAMETERS_ENHANCED, bthddi/INDICATION_PARAMETERS_ENHANCED, bltooth.indication_parameters_enhanced, INDICATION_PARAMETERS_ENHANCED structure [Bluetooth Devices]"
+ms.keywords : PINDICATION_PARAMETERS_ENHANCED structure pointer [Bluetooth Devices], *PINDICATION_PARAMETERS_ENHANCED, _INDICATION_PARAMETERS_ENHANCED, bthddi/PINDICATION_PARAMETERS_ENHANCED, bltooth.indication_parameters_enhanced, PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED, bthddi/INDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED structure [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,7 +104,5 @@ The L2CAP connection handle to the remote device. This handle is only valid for 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows Versions:\_Supported in Windows 8 and later versions of Windows |
 | **Header** | bthddi.h (include Bthddi.h) |

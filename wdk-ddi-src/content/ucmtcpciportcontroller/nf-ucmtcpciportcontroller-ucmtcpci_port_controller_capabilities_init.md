@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : d6a30351-4d0f-462a-bbf7-672f4da75bf5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT, buses.ucmtcpci_port_controller_capabilities_init, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT method [Buses], ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT
+ms.keywords : UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT, buses.ucmtcpci_port_controller_capabilities_init, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,11 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ucmtcpciportcontroller.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

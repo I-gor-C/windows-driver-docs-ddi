@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 944A593D-D623-400C-80F9-6DCD973681C9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kspublishdeviceprofile, KsPublishDeviceProfile, KsPublishDeviceProfile function [Streaming Media Devices], ks/KsPublishDeviceProfile
+ms.keywords : stream.kspublishdeviceprofile, KsPublishDeviceProfile function [Streaming Media Devices], KsPublishDeviceProfile, ks/KsPublishDeviceProfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This API will be called repeatedly for each profile the camera driver supports. 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ksmedia.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

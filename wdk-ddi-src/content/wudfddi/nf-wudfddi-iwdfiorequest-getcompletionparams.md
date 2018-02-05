@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : aaca14ff-9ea2-43f4-bfa9-9151d855c3af
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoRequest::GetCompletionParams, IWDFIoRequest interface, GetCompletionParams method, UMDFRequestObjectRef_dbfb5f9c-c1ad-425d-9bcb-627cc961d00d.xml, wdf.iwdfiorequest_getcompletionparams, IWDFIoRequest::GetCompletionParams, IWDFIoRequest, GetCompletionParams, GetCompletionParams method, IWDFIoRequest interface, GetCompletionParams method, umdf.iwdfiorequest_getcompletionparams
+ms.keywords : IWDFIoRequest interface, GetCompletionParams method, wudfddi/IWDFIoRequest::GetCompletionParams, GetCompletionParams method, IWDFIoRequest, GetCompletionParams method, IWDFIoRequest interface, umdf.iwdfiorequest_getcompletionparams, GetCompletionParams, UMDFRequestObjectRef_dbfb5f9c-c1ad-425d-9bcb-627cc961d00d.xml, wdf.iwdfiorequest_getcompletionparams, IWDFIoRequest::GetCompletionParams
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,22 +68,20 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
  
 

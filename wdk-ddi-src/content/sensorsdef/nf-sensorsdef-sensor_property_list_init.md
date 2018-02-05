@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 5CCFA490-090E-4F24-A5E4-4BECA63EBA53
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.sensor_property_list_init, SENSOR_PROPERTY_LIST_INIT function [Sensor Devices], SENSOR_PROPERTY_LIST_INIT, sensorsdef/SENSOR_PROPERTY_LIST_INIT
+ms.keywords : SENSOR_PROPERTY_LIST_INIT, sensorsdef/SENSOR_PROPERTY_LIST_INIT, sensors.sensor_property_list_init, SENSOR_PROPERTY_LIST_INIT function [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,9 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | sensorsdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

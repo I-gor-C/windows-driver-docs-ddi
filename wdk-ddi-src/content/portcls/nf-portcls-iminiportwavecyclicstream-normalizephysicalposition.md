@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 554cad50-d952-4658-904b-b2a8a8f75b76
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, portcls/IMiniportWaveCyclicStream::NormalizePhysicalPosition, IMiniportWaveCyclicStream interface [Audio Devices], NormalizePhysicalPosition method, audmp-routines_a1b6d530-8199-4c5d-87ee-8f00d60436b0.xml, audio.iminiportwavecyclicstream_normalizephysicalposition, NormalizePhysicalPosition method [Audio Devices], NormalizePhysicalPosition, IMiniportWaveCyclicStream::NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices], IMiniportWaveCyclicStream interface
+ms.keywords : NormalizePhysicalPosition method [Audio Devices], IMiniportWaveCyclicStream interface, audio.iminiportwavecyclicstream_normalizephysicalposition, IMiniportWaveCyclicStream interface [Audio Devices], NormalizePhysicalPosition method, IMiniportWaveCyclicStream::NormalizePhysicalPosition, audmp-routines_a1b6d530-8199-4c5d-87ee-8f00d60436b0.xml, IMiniportWaveCyclicStream, NormalizePhysicalPosition, portcls/IMiniportWaveCyclicStream::NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,11 +68,7 @@ Pointer to a caller-allocated variable that contains either the physical positio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : f7e055ac-df7c-4993-b7aa-f455c4548d5e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_MsrStatusUpdateType, MsrStatusUpdateType_Authenticated, pointofservicedriverinterface/MsrStatusUpdateType_Online, MsrStatusUpdateType_Unauthenticated, pointofservicedriverinterface/MsrStatusUpdateType_Authenticated, MsrStatusUpdateType, pointofservicedriverinterface/MsrStatusUpdateType_OffOrOffline, pointofservicedriverinterface/MsrStatusUpdateType_Unauthenticated, pointofservicedriverinterface/MsrStatusUpdateType_Extended, MsrStatusUpdateType_Extended, MsrStatusUpdateType_Online, pointofservicedriverinterface/MsrStatusUpdateType, MsrStatusUpdateType_Offline, pointofservicedriverinterface/MsrStatusUpdateType_Offline, MsrStatusUpdateType_Off, MsrStatusUpdateType enumeration, MsrStatusUpdateType_OffOrOffline, pointofservicedriverinterface/MsrStatusUpdateType_Off, pos.msrstatusupdatetype"
+ms.keywords : pointofservicedriverinterface/MsrStatusUpdateType_Offline, MsrStatusUpdateType_Off, pointofservicedriverinterface/MsrStatusUpdateType_Unauthenticated, pointofservicedriverinterface/MsrStatusUpdateType_Off, pointofservicedriverinterface/MsrStatusUpdateType, MsrStatusUpdateType_Online, MsrStatusUpdateType_OffOrOffline, pos.msrstatusupdatetype, MsrStatusUpdateType_Unauthenticated, MsrStatusUpdateType_Authenticated, pointofservicedriverinterface/MsrStatusUpdateType_Authenticated, pointofservicedriverinterface/MsrStatusUpdateType_Extended, _MsrStatusUpdateType, MsrStatusUpdateType, MsrStatusUpdateType_Offline, pointofservicedriverinterface/MsrStatusUpdateType_OffOrOffline, MsrStatusUpdateType enumeration, MsrStatusUpdateType_Extended, pointofservicedriverinterface/MsrStatusUpdateType_Online
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -98,7 +98,4 @@ typedef enum _MsrStatusUpdateType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

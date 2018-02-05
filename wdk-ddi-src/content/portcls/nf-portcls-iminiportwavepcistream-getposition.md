@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 61575632-62f8-47d3-9249-5f5416191dfa
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportWavePciStream::GetPosition, GetPosition method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream, audmp-routines_32855554-86ce-4549-af40-700b7b8fcaad.xml, IMiniportWavePciStream interface [Audio Devices], GetPosition method, GetPosition method [Audio Devices], IMiniportWavePciStream::GetPosition, GetPosition, audio.iminiportwavepcistream_getposition
+ms.keywords : IMiniportWavePciStream::GetPosition, IMiniportWavePciStream, audmp-routines_32855554-86ce-4549-af40-700b7b8fcaad.xml, IMiniportWavePciStream interface [Audio Devices], GetPosition method, GetPosition method [Audio Devices], audio.iminiportwavepcistream_getposition, portcls/IMiniportWavePciStream::GetPosition, GetPosition, GetPosition method [Audio Devices], IMiniportWavePciStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -90,22 +90,18 @@ The WavePci port driver implements a property handler for <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
+<a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
 
 <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 
-<a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
 
  
 

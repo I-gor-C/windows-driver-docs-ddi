@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : eb2b7470-cd23-4e0c-a887-42c47b881607
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgi_ddi_arg_setdisplaymode, DXGI_DDI_ARG_SETDISPLAYMODE structure [Display Devices], UMDisplayDriver_Dx10param_Structs_b8b2ebc4-123c-42bd-abd5-3bf1bff47ee0.xml, dxgiddi/DXGI_DDI_ARG_SETDISPLAYMODE, DXGI_DDI_ARG_SETDISPLAYMODE
+ms.keywords : dxgiddi/DXGI_DDI_ARG_SETDISPLAYMODE, DXGI_DDI_ARG_SETDISPLAYMODE, display.dxgi_ddi_arg_setdisplaymode, DXGI_DDI_ARG_SETDISPLAYMODE structure [Display Devices], UMDisplayDriver_Dx10param_Structs_b8b2ebc4-123c-42bd-abd5-3bf1bff47ee0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct DXGI_DDI_ARG_SETDISPLAYMODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

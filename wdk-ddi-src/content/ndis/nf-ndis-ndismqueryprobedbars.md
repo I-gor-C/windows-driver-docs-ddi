@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 39deba08-3ff0-4037-b530-0cb4a01fc758
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismqueryprobedbars, NdisMQueryProbedBars function [Network Drivers Starting with Windows Vista], ndis/NdisMQueryProbedBars, NdisMQueryProbedBars
+ms.keywords : netvista.ndismqueryprobedbars, ndis/NdisMQueryProbedBars, NdisMQueryProbedBars function [Network Drivers Starting with Windows Vista], NdisMQueryProbedBars
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,14 +131,11 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

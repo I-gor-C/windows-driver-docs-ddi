@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5f7a92ee-ebaf-442f-a197-2fb58dd65a25
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KefReleaseSpinLockFromDpcLevel, kernel.kereleasespinlockfromdpclevel, k105_ed15a49d-6903-4f9f-914c-668242701b1e.xml, wdm/KefReleaseSpinLockFromDpcLevel, KeReleaseSpinLockFromDpcLevel, KeReleaseSpinLockFromDpcLevel routine [Kernel-Mode Driver Architecture], wdm/KeReleaseSpinLockFromDpcLevel
+ms.keywords : k105_ed15a49d-6903-4f9f-914c-668242701b1e.xml, wdm/KeReleaseSpinLockFromDpcLevel, KeReleaseSpinLockFromDpcLevel routine [Kernel-Mode Driver Architecture], kernel.kereleasespinlockfromdpclevel, KefReleaseSpinLockFromDpcLevel, wdm/KefReleaseSpinLockFromDpcLevel, KeReleaseSpinLockFromDpcLevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -73,12 +73,11 @@ For more information about spin locks, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs, IrqlDispatch, SpinLockSafe |
 

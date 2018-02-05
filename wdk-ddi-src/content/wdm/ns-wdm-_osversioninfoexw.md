@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 88471e00-4913-44fd-b9f4-960ec46fb75a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PRTL_OSVERSIONINFOEXW, kernel.rtl_osversioninfoexw, *POSVERSIONINFOEXW, _OSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, wdm/PRTL_OSVERSIONINFOEXW, OSVERSIONINFOEX, PRTL_OSVERSIONINFOEXW structure pointer [Kernel-Mode Driver Architecture], kstruct_d_a7e48147-5619-4ab4-b83a-18139aa0a2c5.xml, OSVERSIONINFOEXW, *LPOSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW structure [Kernel-Mode Driver Architecture], wdm/RTL_OSVERSIONINFOEXW"
+ms.keywords : "*POSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, OSVERSIONINFOEXW, wdm/RTL_OSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW, kstruct_d_a7e48147-5619-4ab4-b83a-18139aa0a2c5.xml, OSVERSIONINFOEX, RTL_OSVERSIONINFOEXW structure [Kernel-Mode Driver Architecture], kernel.rtl_osversioninfoexw, wdm/PRTL_OSVERSIONINFOEXW, _OSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW structure pointer [Kernel-Mode Driver Architecture], *LPOSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW, *LPOSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW
+req.typenames : "*LPOSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW"
 req.product : Windows 10 or later.
 ---
 
@@ -567,9 +567,6 @@ Not applicable
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h) |
 
 ## See Also

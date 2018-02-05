@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c8d03a63-4b6a-4e84-994b-0e205401e531
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortAllocateRegistryBuffer, storport/StorPortAllocateRegistryBuffer, storage.storportallocateregistrybuffer, storprt_dc344b88-692d-4529-8b98-c9b5c07a05f3.xml, StorPortAllocateRegistryBuffer routine [Storage Devices]
+ms.keywords : StorPortAllocateRegistryBuffer routine [Storage Devices], storport/StorPortAllocateRegistryBuffer, storprt_dc344b88-692d-4529-8b98-c9b5c07a05f3.xml, StorPortAllocateRegistryBuffer, storage.storportallocateregistrybuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,9 @@ Each instantiation of a miniport driver can only have one registry buffer alloca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

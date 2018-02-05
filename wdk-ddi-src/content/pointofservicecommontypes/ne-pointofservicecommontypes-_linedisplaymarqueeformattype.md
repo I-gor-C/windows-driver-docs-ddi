@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : BB182083-58F2-4706-9D6B-B581325BDD48
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pos.linedisplaymarqueeformattype, LineDisplayMarqueeFormatType enumeration, _LineDisplayMarqueeFormatType, PLineDisplayMarqueeFormatType enumeration pointer, pointofservicecommontypes/LineDisplayMarqueeFormatType, pointofservicecommontypes/, pointofservicecommontypes/PLineDisplayMarqueeFormatType, PLineDisplayMarqueeFormatType, LineDisplayMarqueeFormatType
+ms.keywords : PLineDisplayMarqueeFormatType, _LineDisplayMarqueeFormatType, pointofservicecommontypes/LineDisplayMarqueeFormatType, pointofservicecommontypes/, pos.linedisplaymarqueeformattype, LineDisplayMarqueeFormatType enumeration, pointofservicecommontypes/PLineDisplayMarqueeFormatType, PLineDisplayMarqueeFormatType enumeration pointer, LineDisplayMarqueeFormatType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -67,7 +67,4 @@ typedef enum _LineDisplayMarqueeFormatType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

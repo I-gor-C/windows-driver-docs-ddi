@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b6335df5-81d9-4a00-8e97-0ebebb987d32
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PVPOSVERSIONINFO, video/VPOSVERSIONINFO, video/PVPOSVERSIONINFO, display.vposversioninfo, PVPOSVERSIONINFO, PVPOSVERSIONINFO structure pointer [Display Devices], VPOSVERSIONINFO structure [Display Devices], VPOSVERSIONINFO, _VPOSVERSIONINFO, Video_Structs_893105be-4f14-4903-aae1-85ffe8ef8a2b.xml"
+ms.keywords : video/PVPOSVERSIONINFO, VPOSVERSIONINFO, VPOSVERSIONINFO structure [Display Devices], PVPOSVERSIONINFO structure pointer [Display Devices], Video_Structs_893105be-4f14-4903-aae1-85ffe8ef8a2b.xml, *PVPOSVERSIONINFO, PVPOSVERSIONINFO, _VPOSVERSIONINFO, video/VPOSVERSIONINFO, display.vposversioninfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVPOSVERSIONINFO, VPOSVERSIONINFO"
+req.typenames : VPOSVERSIONINFO, *PVPOSVERSIONINFO
 req.product : Windows 10 or later.
 ---
 
@@ -89,9 +89,6 @@ To obtain version information about the currently running operating system, a vi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | video.h (include Video.h) |
 
 ## See Also

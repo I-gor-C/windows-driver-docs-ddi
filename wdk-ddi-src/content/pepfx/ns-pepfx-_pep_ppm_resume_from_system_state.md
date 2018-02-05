@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 281f223a-1189-4045-9a3a-17433432a6a3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PPM_RESUME_FROM_SYSTEM_STATE, PEP_PPM_RESUME_FROM_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], _PEP_PPM_RESUME_FROM_SYSTEM_STATE, kernel.pep_ppm_resume_from_system_state, pepfx/PEP_PPM_RESUME_FROM_SYSTEM_STATE, *PPEP_PPM_RESUME_FROM_SYSTEM_STATE
+ms.keywords : PEP_PPM_RESUME_FROM_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], *PPEP_PPM_RESUME_FROM_SYSTEM_STATE, kernel.pep_ppm_resume_from_system_state, pepfx/PEP_PPM_RESUME_FROM_SYSTEM_STATE, _PEP_PPM_RESUME_FROM_SYSTEM_STATE, PEP_PPM_RESUME_FROM_SYSTEM_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ On input, a <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | pepfx.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 990b3df6-5ef7-4201-a09d-d94822d0a8bb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, netvista.ndis_ipsec_offload_v1_net_buffer_list_info, CRYPTO_TUNNEL_AH_AUTH_FAILED, CRYPTO_TRANSPORT_AH_AUTH_FAILED, CRYPTO_GENERIC_ERROR, CRYPTO_TUNNEL_ESP_AUTH_FAILED, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], CRYPTO_INVALID_PACKET_SYNTAX, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, CRYPTO_INVALID_PROTOCOL, _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, CRYPTO_TRANSPORT_ESP_AUTH_FAILED, CRYPTO_SUCCESS, tcpip_offload_ref_2e052bb5-6546-47a9-b51b-f1f77116835d.xml, *PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, ndis/NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO
+ms.keywords : PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, ndis/NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, ndis/PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, NDIS_IPSEC_OFFLOAD_V1_NET_BUFFER_LIST_INFO, CRYPTO_GENERIC_ERROR, CRYPTO_TUNNEL_ESP_AUTH_FAILED, CRYPTO_TRANSPORT_AH_AUTH_FAILED, CRYPTO_TUNNEL_AH_AUTH_FAILED, CRYPTO_TRANSPORT_ESP_AUTH_FAILED, CRYPTO_INVALID_PACKET_SYNTAX, netvista.ndis_ipsec_offload_v1_net_buffer_list_info, tcpip_offload_ref_2e052bb5-6546-47a9-b51b-f1f77116835d.xml, CRYPTO_INVALID_PROTOCOL, CRYPTO_SUCCESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -125,22 +125,20 @@ To set and get the IPsec information, use the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0. For NDIS 6.1 and later, use NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO. Supported in NDIS 6.0. For NDIS 6.1 and later, use NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 
-<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/gg155485.aspx">OID_TCP_TASK_IPSEC_DELETE_SA</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
+
+<a href="..\ndis\ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info.md">NDIS_IPSEC_OFFLOAD_V2_NET_BUFFER_LIST_INFO</a>
 
  
 

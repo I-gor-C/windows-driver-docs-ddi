@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 59ee6d51-c60a-4a71-b831-1b9437a69d34
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_ERROR_SOURCE_DESCRIPTOR, PWHEA_ERROR_SOURCE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_SOURCE_DESCRIPTOR, _WHEA_ERROR_SOURCE_DESCRIPTOR, whearef_eb6a1167-cf15-4a53-b885-c3d5c4353510.xml, *PWHEA_ERROR_SOURCE_DESCRIPTOR, WHEA_ERROR_SOURCE_DESCRIPTOR structure [WHEA Drivers and Applications], whea.whea_error_source_descriptor, ntddk/WHEA_ERROR_SOURCE_DESCRIPTOR, PWHEA_ERROR_SOURCE_DESCRIPTOR
+ms.keywords : ntddk/WHEA_ERROR_SOURCE_DESCRIPTOR, _WHEA_ERROR_SOURCE_DESCRIPTOR, WHEA_ERROR_SOURCE_DESCRIPTOR, PWHEA_ERROR_SOURCE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], PWHEA_ERROR_SOURCE_DESCRIPTOR, whearef_eb6a1167-cf15-4a53-b885-c3d5c4353510.xml, *PWHEA_ERROR_SOURCE_DESCRIPTOR, ntddk/PWHEA_ERROR_SOURCE_DESCRIPTOR, whea.whea_error_source_descriptor, WHEA_ERROR_SOURCE_DESCRIPTOR structure [WHEA Drivers and Applications]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -141,56 +141,54 @@ A user-mode WHEA management application can control the error sources in the sys
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\nc-ntddk-pshed_pi_enable_error_source.md">EnableErrorSource</a>
+<a href="..\ntddk\ns-ntddk-_whea_aer_endpoint_descriptor.md">WHEA_AER_ENDPOINT_DESCRIPTOR</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_ipf_cmc_descriptor.md">WHEA_IPF_CMC_DESCRIPTOR</a>
+
+<a href="..\ntddk\nc-ntddk-pshed_pi_get_all_error_sources.md">GetAllErrorSources</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_nmi_descriptor.md">WHEA_XPF_NMI_DESCRIPTOR</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_aer_rootport_descriptor.md">WHEA_AER_ROOTPORT_DESCRIPTOR</a>
 
 <a href="..\ntddk\nc-ntddk-pshed_pi_set_error_source_info.md">SetErrorSourceInfo</a>
 
 <a href="..\ntddk\nc-ntddk-pshed_pi_disable_error_source.md">DisableErrorSource</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_ipf_mca_descriptor.md">WHEA_IPF_MCA_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_aer_bridge_descriptor.md">WHEA_AER_BRIDGE_DESCRIPTOR</a>
+
+<a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559525">WHEAErrorSourceMethods::EnableErrorSourceRtn</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_ipf_cpe_descriptor.md">WHEA_IPF_CPE_DESCRIPTOR</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559530">WHEAErrorSourceMethods::GetErrorSourceInfoRtn</a>
 
-<a href="..\ntddk\nc-ntddk-pshed_pi_get_error_source_info.md">GetErrorSourceInfo</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559523">WHEAErrorSourceMethods::DisableErrorSourceRtn</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_ipf_cmc_descriptor.md">WHEA_IPF_CMC_DESCRIPTOR</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_aer_endpoint_descriptor.md">WHEA_AER_ENDPOINT_DESCRIPTOR</a>
-
-<a href="..\ntddk\ne-ntddk-_whea_error_source_state.md">WHEA_ERROR_SOURCE_STATE</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_xpf_nmi_descriptor.md">WHEA_XPF_NMI_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_ipf_mca_descriptor.md">WHEA_IPF_MCA_DESCRIPTOR</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559527">WHEAErrorSourceMethods::GetAllErrorSourcesRtn</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559531">WHEAErrorSourceMethods::SetErrorSourceInfoRtn</a>
 
-<a href="..\ntddk\nc-ntddk-pshed_pi_get_all_error_sources.md">GetAllErrorSources</a>
+<a href="..\ntddk\nc-ntddk-pshed_pi_get_error_source_info.md">GetErrorSourceInfo</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559525">WHEAErrorSourceMethods::EnableErrorSourceRtn</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_source_state.md">WHEA_ERROR_SOURCE_STATE</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_aer_bridge_descriptor.md">WHEA_AER_BRIDGE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559523">WHEAErrorSourceMethods::DisableErrorSourceRtn</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_ipf_cpe_descriptor.md">WHEA_IPF_CPE_DESCRIPTOR</a>
-
-<a href="..\ntddk\ns-ntddk-_whea_aer_rootport_descriptor.md">WHEA_AER_ROOTPORT_DESCRIPTOR</a>
-
-<a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>
+<a href="..\ntddk\nc-ntddk-pshed_pi_enable_error_source.md">EnableErrorSource</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ad35cd3f-87bd-4d57-ab13-4cb2b268ad35
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicaps_architecture_info, d3dumddi/D3DDDICAPS_ARCHITECTURE_INFO, D3DDDICAPS_ARCHITECTURE_INFO, D3DDDICAPS_ARCHITECTURE_INFO structure [Display Devices]
+ms.keywords : d3dumddi/D3DDDICAPS_ARCHITECTURE_INFO, display.d3dddicaps_architecture_info, D3DDDICAPS_ARCHITECTURE_INFO, D3DDDICAPS_ARCHITECTURE_INFO structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ Specifies whether a rendering device batches rendering commands and performs mul
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

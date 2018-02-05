@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 825ae98b-74d7-4e41-944b-0dc77cc0cc51
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/InitializePrintMonitor, InitializePrintMonitor function [Print Devices], spoolfnc_ff45a3d4-a007-4ebd-b120-582f23ccaffb.xml, print.initializeprintmonitor, InitializePrintMonitor
+ms.keywords : InitializePrintMonitor, print.initializeprintmonitor, spoolfnc_ff45a3d4-a007-4ebd-b120-582f23ccaffb.xml, InitializePrintMonitor function [Print Devices], winsplp/InitializePrintMonitor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,15 @@ The <i>pRegistryRoot</i> parameter supplies a pointer a string representing the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-initializeprintmonitorui.md">InitializePrintMonitorUI</a>
-
 <a href="..\winsplp\ns-winsplp-_monitorex.md">MONITOREX</a>
+
+<a href="..\winsplp\nf-winsplp-initializeprintmonitorui.md">InitializePrintMonitorUI</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B6FCA052-FFAE-4F7D-8BDE-CDB84772B5E5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PROTECTED_SESSION_STATUS, _DXGK_PROTECTED_SESSION_STATUS, DXGK_PROTECTED_SESSION_STATUS enumeration [Display Devices], DXGK_PROTECTED_SESSION_STATUS_OK, display.dxgk_protected_session_status, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS_OK, DXGK_PROTECTED_SESSION_STATUS_INVALID, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS_INVALID, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS
+ms.keywords : d3dkmddi/DXGK_PROTECTED_SESSION_STATUS_OK, DXGK_PROTECTED_SESSION_STATUS_OK, DXGK_PROTECTED_SESSION_STATUS_INVALID, display.dxgk_protected_session_status, DXGK_PROTECTED_SESSION_STATUS enumeration [Display Devices], _DXGK_PROTECTED_SESSION_STATUS, DXGK_PROTECTED_SESSION_STATUS, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS, d3dkmddi/DXGK_PROTECTED_SESSION_STATUS_INVALID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -70,7 +70,4 @@ typedef enum _DXGK_PROTECTED_SESSION_STATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

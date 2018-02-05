@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : dd579620-4fe9-4cd0-8e21-f32b07338de1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTarget::FormatRequestForWrite, wudfddi/IWDFIoTarget::FormatRequestForWrite, IWDFIoTarget interface, FormatRequestForWrite method, FormatRequestForWrite, wdf.iwdfiotarget_formatrequestforwrite, UMDFIoTargetObjectRef_5bd52747-0a43-477e-8240-0481d671a7bb.xml, FormatRequestForWrite method, IWDFIoTarget interface, IWDFIoTarget, umdf.iwdfiotarget_formatrequestforwrite, FormatRequestForWrite method
+ms.keywords : FormatRequestForWrite method, IWDFIoTarget interface, umdf.iwdfiotarget_formatrequestforwrite, FormatRequestForWrite, IWDFIoTarget, wdf.iwdfiotarget_formatrequestforwrite, FormatRequestForWrite method, IWDFIoTarget::FormatRequestForWrite, wudfddi/IWDFIoTarget::FormatRequestForWrite, UMDFIoTargetObjectRef_5bd52747-0a43-477e-8240-0481d671a7bb.xml, IWDFIoTarget interface, FormatRequestForWrite method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -88,26 +88,24 @@ A pointer to the device offset that is used for the write request. This paramete
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
+<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
 
  
 

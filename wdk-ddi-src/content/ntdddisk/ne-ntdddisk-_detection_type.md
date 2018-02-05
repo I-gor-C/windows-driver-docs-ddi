@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3257a207-dd7e-4321-b037-95d62cea6f76
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DETECTION_TYPE enumeration [Storage Devices], ntdddisk/DetectInt13, storage.detection_type, DETECTION_TYPE, ntdddisk/DetectNone, DetectInt13, DetectExInt13, _DETECTION_TYPE, structs-disk_2d3d7a57-abcd-43b2-a62d-8b8c45a9fca0.xml, ntdddisk/DetectExInt13, ntdddisk/DETECTION_TYPE, DetectNone
+ms.keywords : ntdddisk/DETECTION_TYPE, DetectInt13, DETECTION_TYPE, ntdddisk/DetectNone, _DETECTION_TYPE, storage.detection_type, DetectExInt13, ntdddisk/DetectInt13, structs-disk_2d3d7a57-abcd-43b2-a62d-8b8c45a9fca0.xml, ntdddisk/DetectExInt13, DetectNone, DETECTION_TYPE enumeration [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,6 @@ Possible formatting types are the standard INT 13h partition format or the exten
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
 ## See Also

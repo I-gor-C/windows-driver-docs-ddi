@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f5a96fc2-e6b8-44df-a827-d10d693f6f2b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAllocateFileLock routine [Installable File System Drivers], FltAllocateFileLock, ifsk.fltallocatefilelock, fltkernel/FltAllocateFileLock, FltApiRef_a_to_d_f59cead3-059a-4457-9339-c90cc007ca63.xml
+ms.keywords : fltkernel/FltAllocateFileLock, FltApiRef_a_to_d_f59cead3-059a-4457-9339-c90cc007ca63.xml, ifsk.fltallocatefilelock, FltAllocateFileLock, FltAllocateFileLock routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,38 +81,35 @@ When the <i>CallbackData</i> parameter passed to <a href="..\fltkernel\nf-fltker
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1. Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md">FltCheckLockForWriteAccess</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreefilelock.md">FltFreeFileLock</a>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551951">PUNLOCK_ROUTINE</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltuninitializefilelock.md">FltUninitializeFileLock</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltchecklockforreadaccess.md">FltCheckLockForReadAccess</a>
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltfreefilelock.md">FltFreeFileLock</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltprocessfilelock.md">FltProcessFileLock</a>
 
 <a href="..\fltkernel\nc-fltkernel-pflt_complete_lock_callback_data_routine.md">PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551951">PUNLOCK_ROUTINE</a>
+<a href="..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md">FltCheckLockForWriteAccess</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>
 
  
 

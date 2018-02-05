@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 72567e37-f37f-43f6-8a3a-3d184cb8de13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILUMTSMRL, RILUMTSMRL, *LPRILUMTSMRL, RILUMTSMRL structure [Network Drivers Starting with Windows Vista], netvista.rilumtsmrl
+ms.keywords : "*LPRILUMTSMRL, RILUMTSMRL structure [Network Drivers Starting with Windows Vista], rilapitypes/RILUMTSMRL, netvista.rilumtsmrl, RILUMTSMRL"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILUMTSMRL, RILUMTSMRL"
+req.typenames : RILUMTSMRL, *LPRILUMTSMRL
 req.product : Windows 10 or later.
 ---
 
@@ -105,9 +105,6 @@ UTRA absolute radio frequency channel number (0...16383)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

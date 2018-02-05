@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 78c37e2c-171b-483c-967d-1b80bde24338
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_OpenAdapter, HBA_OpenAdapter routine [Storage Devices], hbaapi/HBA_OpenAdapter, storage.hba_openadapter, fibreHBA_rtns_2c583fd9-a3b4-4e35-aa22-31f5f9bb2002.xml
+ms.keywords : HBA_OpenAdapter, HBA_OpenAdapter routine [Storage Devices], storage.hba_openadapter, fibreHBA_rtns_2c583fd9-a3b4-4e35-aa22-31f5f9bb2002.xml, hbaapi/HBA_OpenAdapter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,7 @@ The <b>HBA_OpenAdapter</b> routine returns a handle to the open HBA.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |

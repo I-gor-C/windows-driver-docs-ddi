@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : c2201e3c-c680-4a22-adf5-5131fb138066
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : CHANNEL_CONFIG_PARAMETERS, _CHANNEL_CONFIG_PARAMETERS, PCHANNEL_CONFIG_PARAMETERS structure pointer [Bluetooth Devices], bth_structs_c5360d7a-eb76-4b27-8507-8de862737a06.xml, bthddi/PCHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS, bltooth.channel_config_parameters, CHANNEL_CONFIG_PARAMETERS structure [Bluetooth Devices], bthddi/CHANNEL_CONFIG_PARAMETERS, PCHANNEL_CONFIG_PARAMETERS
+ms.keywords : PCHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS structure [Bluetooth Devices], bthddi/CHANNEL_CONFIG_PARAMETERS, bltooth.channel_config_parameters, PCHANNEL_CONFIG_PARAMETERS structure pointer [Bluetooth Devices], _CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS, bth_structs_c5360d7a-eb76-4b27-8507-8de862737a06.xml, bthddi/PCHANNEL_CONFIG_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS"
+req.typenames : CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS
 ---
 
 # _CHANNEL_CONFIG_PARAMETERS structure
@@ -139,9 +139,7 @@ The number of items specified in the array that is specified in the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also

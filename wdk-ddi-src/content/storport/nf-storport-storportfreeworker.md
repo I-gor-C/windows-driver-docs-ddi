@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 90BD61C8-322B-48D5-83E0-7204E3DC4423
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortFreeWorker routine [Storage Devices], StorPortFreeWorker, storport/StorPortFreeWorker, storage.storportfreeworker
+ms.keywords : storport/StorPortFreeWorker, StorPortFreeWorker, storage.storportfreeworker, StorPortFreeWorker routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -135,14 +135,11 @@ Miniports should call <b>StorPortFreeWorker</b> whenever a work item is no longe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

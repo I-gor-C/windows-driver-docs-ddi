@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4a3a39ac-0db9-48a9-8da6-c2b914fa1de6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcNewDmaChannel function [Audio Devices], audpc-routines_51deae73-e4dd-4b39-ae73-77cf31f8ec06.xml, audio.pcnewdmachannel, portcls/PcNewDmaChannel, PcNewDmaChannel
+ms.keywords : audpc-routines_51deae73-e4dd-4b39-ae73-77cf31f8ec06.xml, PcNewDmaChannel function [Audio Devices], audio.pcnewdmachannel, PcNewDmaChannel, portcls/PcNewDmaChannel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -106,24 +106,21 @@ The <i>OutDmaChannel</i> and <i>OuterUnknown </i>parameters follow the <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Obsolete. For all new audio drivers, use a IPortWaveXxx::NewXxxDmaChannel method instead. The PortCls system driver implements the PcNewDmaChannel function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. Obsolete. For all new audio drivers, use a IPortWaveXxx::NewXxxDmaChannel method instead. The PortCls system driver implements the PcNewDmaChannel function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
 
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
+
+<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
 
  
 

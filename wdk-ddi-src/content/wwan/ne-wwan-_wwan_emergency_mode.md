@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d901e763-5e1c-443d-ba9c-9d1e4413bd47
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_8b2029ff-7d10-4f36-a4c0-6b41f464b726.xml, _WWAN_EMERGENCY_MODE, WWAN_EMERGENCY_MODE, WWAN_EMERGENCY_MODE enumeration [Network Drivers Starting with Windows Vista], WwanEmergencyModeOff, wwan/WwanEmergencyModeOff, netvista.wwan_emergency_mode, wwan/WwanEmergencyModeOn, *PWWAN_EMERGENCY_MODE, WwanEmergencyModeMax, wwan/PWWAN_EMERGENCY_MODE, PWWAN_EMERGENCY_MODE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanEmergencyModeMax, WwanEmergencyModeOn, PWWAN_EMERGENCY_MODE, wwan/WWAN_EMERGENCY_MODE
+ms.keywords : WwanEmergencyModeOff, WwanEmergencyModeOn, wwan/WwanEmergencyModeOff, PWWAN_EMERGENCY_MODE, WwanRef_8b2029ff-7d10-4f36-a4c0-6b41f464b726.xml, *PWWAN_EMERGENCY_MODE, wwan/WwanEmergencyModeOn, WwanEmergencyModeMax, WWAN_EMERGENCY_MODE, wwan/WWAN_EMERGENCY_MODE, netvista.wwan_emergency_mode, _WWAN_EMERGENCY_MODE, wwan/PWWAN_EMERGENCY_MODE, wwan/WwanEmergencyModeMax, WWAN_EMERGENCY_MODE enumeration [Network Drivers Starting with Windows Vista], PWWAN_EMERGENCY_MODE enumeration pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_EMERGENCY_MODE, *PWWAN_EMERGENCY_MODE
+req.typenames : "*PWWAN_EMERGENCY_MODE, WWAN_EMERGENCY_MODE"
 req.product : Windows 10 or later.
 ---
 
@@ -76,9 +76,7 @@ typedef enum _WWAN_EMERGENCY_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

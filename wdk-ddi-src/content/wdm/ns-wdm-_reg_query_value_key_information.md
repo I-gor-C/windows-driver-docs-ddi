@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 235942ee-374e-4071-a761-793a96beab36
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : REG_QUERY_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_query_value_key_information, PREG_QUERY_VALUE_KEY_INFORMATION, _REG_QUERY_VALUE_KEY_INFORMATION, *PREG_QUERY_VALUE_KEY_INFORMATION, kstruct_d_e4edde7e-2b83-4e18-b652-d29f2a37d921.xml, REG_QUERY_VALUE_KEY_INFORMATION, wdm/REG_QUERY_VALUE_KEY_INFORMATION, PREG_QUERY_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PREG_QUERY_VALUE_KEY_INFORMATION
+ms.keywords : PREG_QUERY_VALUE_KEY_INFORMATION, kernel.reg_query_value_key_information, wdm/PREG_QUERY_VALUE_KEY_INFORMATION, REG_QUERY_VALUE_KEY_INFORMATION, REG_QUERY_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], *PREG_QUERY_VALUE_KEY_INFORMATION, kstruct_d_e4edde7e-2b83-4e18-b652-d29f2a37d921.xml, wdm/REG_QUERY_VALUE_KEY_INFORMATION, _REG_QUERY_VALUE_KEY_INFORMATION, PREG_QUERY_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,20 +104,18 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later versions of the Windows operating system. Available on Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
 <a href="..\wdm\nf-wdm-cmsetcallbackobjectcontext.md">CmSetCallbackObjectContext</a>
 
 <a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
-
-<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 
  
 

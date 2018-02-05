@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f1ed31af-97a7-472e-b834-577470950335
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRef_a4c14223-1c16-4f87-8820-2a45f04bb62d.xml, WWAN_SET_CONTEXT_STATE, wwan/WWAN_SET_CONTEXT_STATE, PWWAN_SET_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], PWWAN_SET_CONTEXT_STATE, wwan/PWWAN_SET_CONTEXT_STATE, *PWWAN_SET_CONTEXT_STATE, netvista.wwan_set_context_state, _WWAN_SET_CONTEXT_STATE
+ms.keywords : wwan/PWWAN_SET_CONTEXT_STATE, WWAN_SET_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], PWWAN_SET_CONTEXT_STATE, WwanRef_a4c14223-1c16-4f87-8820-2a45f04bb62d.xml, _WWAN_SET_CONTEXT_STATE, PWWAN_SET_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_CONTEXT_STATE, *PWWAN_SET_CONTEXT_STATE, netvista.wwan_set_context_state, wwan/WWAN_SET_CONTEXT_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -228,20 +228,18 @@ A NULL-terminated string that represents the username to authenticate. This memb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ne-wwan-_wwan_activation_command.md">WWAN_ACTIVATION_COMMAND</a>
-
 <a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_set_context_state.md">NDIS_WWAN_SET_CONTEXT_STATE</a>
 
-<a href="..\wwan\ne-wwan-_wwan_auth_protocol.md">WWAN_AUTH_PROTOCOL</a>
-
 <a href="..\wwan\ne-wwan-_wwan_compression.md">WWAN_COMPRESSION</a>
+
+<a href="..\wwan\ne-wwan-_wwan_activation_command.md">WWAN_ACTIVATION_COMMAND</a>
+
+<a href="..\wwan\ne-wwan-_wwan_auth_protocol.md">WWAN_AUTH_PROTOCOL</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : e742f898-e663-431d-870e-bb0fe7e89b5a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv::drvAnalyzeItem, IWiaMiniDrv interface [Imaging Devices], drvAnalyzeItem method, IWiaMiniDrv, image.iwiaminidrv_drvanalyzeitem, drvAnalyzeItem, drvAnalyzeItem method [Imaging Devices], MiniDrv_dfa93eeb-ea39-44b6-b465-5bff0f056763.xml, wiamindr_lh/IWiaMiniDrv::drvAnalyzeItem, drvAnalyzeItem method [Imaging Devices], IWiaMiniDrv interface
+ms.keywords : IWiaMiniDrv, drvAnalyzeItem method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvanalyzeitem, wiamindr_lh/IWiaMiniDrv::drvAnalyzeItem, MiniDrv_dfa93eeb-ea39-44b6-b465-5bff0f056763.xml, IWiaMiniDrv interface [Imaging Devices], drvAnalyzeItem method, drvAnalyzeItem method [Imaging Devices], IWiaMiniDrv::drvAnalyzeItem, drvAnalyzeItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -78,14 +78,10 @@ The value pointed to by <i>plDevErrVal</i> can be converted to a string by calli
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 

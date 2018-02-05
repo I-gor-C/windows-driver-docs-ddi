@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ef1f3c9b-70e5-48bd-b9f4-60ec661dc880
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_VideoTransferMatrix_SMPTE240M, DXVADDI_VideoTransferMatrix_BT709, DXVADDI_VideoTransferMatrix_BT601, d3dumddi/DXVADDI_VideoTransferMatrixMask, DXVADDI_VIDEOTRANSFERMATRIX enumeration [Display Devices], d3dumddi/DXVADDI_VIDEOTRANSFERMATRIX, display.dxvaddi_videotransfermatrix, d3dumddi/DXVADDI_VideoTransferMatrix_BT709, DXVADDI_VideoTransferMatrix_SMPTE240M, DXVADDI_VideoTransferMatrix_Unknown, DXVA2_Structs_af3c1fd4-43c5-4700-b88e-46f54feed5d2.xml, _DXVADDI_VIDEOTRANSFERMATRIX, d3dumddi/DXVADDI_VideoTransferMatrix_BT601, DXVADDI_VIDEOTRANSFERMATRIX, d3dumddi/DXVADDI_VideoTransferMatrix_Unknown, DXVADDI_VideoTransferMatrixMask
+ms.keywords : DXVADDI_VideoTransferMatrix_BT709, d3dumddi/DXVADDI_VideoTransferMatrix_SMPTE240M, d3dumddi/DXVADDI_VideoTransferMatrix_BT709, display.dxvaddi_videotransfermatrix, DXVADDI_VideoTransferMatrixMask, d3dumddi/DXVADDI_VideoTransferMatrixMask, DXVADDI_VideoTransferMatrix_Unknown, DXVADDI_VIDEOTRANSFERMATRIX enumeration [Display Devices], DXVA2_Structs_af3c1fd4-43c5-4700-b88e-46f54feed5d2.xml, DXVADDI_VIDEOTRANSFERMATRIX, DXVADDI_VideoTransferMatrix_SMPTE240M, d3dumddi/DXVADDI_VideoTransferMatrix_Unknown, _DXVADDI_VIDEOTRANSFERMATRIX, DXVADDI_VideoTransferMatrix_BT601, d3dumddi/DXVADDI_VideoTransferMatrix_BT601, d3dumddi/DXVADDI_VIDEOTRANSFERMATRIX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -89,9 +89,7 @@ One of the values of DXVADDI_VIDEOTRANSFERMATRIX can be specified in the <b>Vide
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

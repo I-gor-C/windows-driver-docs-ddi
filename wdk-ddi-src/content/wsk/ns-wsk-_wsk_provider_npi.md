@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 471689f4-d1f6-4785-82df-313fe2ca627a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wsk/PWSK_PROVIDER_NPI, PWSK_PROVIDER_NPI, PWSK_PROVIDER_NPI structure pointer [Network Drivers Starting with Windows Vista], wskref_cbed200a-9ed1-4cd6-b6be-220799cbae1c.xml, *PWSK_PROVIDER_NPI, netvista.wsk_provider_npi, wsk/WSK_PROVIDER_NPI, WSK_PROVIDER_NPI, _WSK_PROVIDER_NPI, WSK_PROVIDER_NPI structure [Network Drivers Starting with Windows Vista]
+ms.keywords : "*PWSK_PROVIDER_NPI, PWSK_PROVIDER_NPI structure pointer [Network Drivers Starting with Windows Vista], _WSK_PROVIDER_NPI, netvista.wsk_provider_npi, wsk/WSK_PROVIDER_NPI, PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI structure [Network Drivers Starting with Windows Vista], wskref_cbed200a-9ed1-4cd6-b6be-220799cbae1c.xml, wsk/PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,14 +35,14 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WSK_PROVIDER_NPI, *PWSK_PROVIDER_NPI
+req.typenames : "*PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI"
 req.product : Windows 10 or later.
 ---
 
 # _WSK_PROVIDER_NPI structure
 The WSK_PROVIDER_NPI structure identifies a provider 
-  <mshelp:link keywords="netvista.network_programming_interface" tabindex="0">Network Programming Interface
-  (NPI)</mshelp:link> implemented by the WSK subsystem.
+  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">Network Programming Interface
+  (NPI)</a> implemented by the WSK subsystem.
 
 ## Syntax
 ````
@@ -61,31 +61,29 @@ A pointer to a
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <mshelp:link keywords="netvista.wskcaptureprovidernpi" tabindex="0"><b>
-     WskCaptureProviderNPI</b></mshelp:link> function.
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
+     WskCaptureProviderNPI</a> function.
 
 `Dispatch`
 
 A pointer to a constant 
-     <mshelp:link keywords="netvista.wsk_provider_dispatch" tabindex="0"><b>
-     WSK_PROVIDER_DISPATCH</b></mshelp:link> structure.
+     <a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">
+     WSK_PROVIDER_DISPATCH</a> structure.
 
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
+
 <a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
 
 <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 
  
 

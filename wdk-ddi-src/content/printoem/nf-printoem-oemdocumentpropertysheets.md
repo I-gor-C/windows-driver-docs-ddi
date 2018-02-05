@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 81c5eced-3d68-4202-83b9-57d661fe4952
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMDocumentPropertySheets, print_obsoletefunctions_793a8444-a6ec-46b0-82bf-ea9cfecdf98a.xml, OEMDocumentPropertySheets, OEMDocumentPropertySheets function [Print Devices], print.oemdocumentpropertysheets
+ms.keywords : printoem/OEMDocumentPropertySheets, OEMDocumentPropertySheets function [Print Devices], print_obsoletefunctions_793a8444-a6ec-46b0-82bf-ea9cfecdf98a.xml, OEMDocumentPropertySheets, print.oemdocumentpropertysheets
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

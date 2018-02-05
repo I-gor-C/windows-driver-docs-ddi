@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bdea158f-6ee5-4e59-be50-efd8027a8645
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_REMOTEPARTYINFO_MAX, rilapitypes/RILREMOTEPARTYINFOVALUE, RILREMOTEPARTYINFOVALUE enumeration [Network Drivers Starting with Windows Vista], RIL_REMOTEPARTYINFO_WITHHELD, rilapitypes/RIL_REMOTEPARTYINFO_UNAVAILABLE, netvista.rilremotepartyinfovalue_2, RIL_REMOTEPARTYINFO_UNAVAILABLE, rilapitypes/RIL_REMOTEPARTYINFO_WITHHELD, RILREMOTEPARTYINFOVALUE, rilapitypes/RIL_REMOTEPARTYINFO_MAX
+ms.keywords : RILREMOTEPARTYINFOVALUE enumeration [Network Drivers Starting with Windows Vista], RIL_REMOTEPARTYINFO_WITHHELD, rilapitypes/RIL_REMOTEPARTYINFO_MAX, RIL_REMOTEPARTYINFO_MAX, rilapitypes/RIL_REMOTEPARTYINFO_UNAVAILABLE, rilapitypes/RIL_REMOTEPARTYINFO_WITHHELD, RIL_REMOTEPARTYINFO_UNAVAILABLE, netvista.rilremotepartyinfovalue_2, rilapitypes/RILREMOTEPARTYINFOVALUE, RILREMOTEPARTYINFOVALUE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _RILREMOTEPARTYINFOVALUE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

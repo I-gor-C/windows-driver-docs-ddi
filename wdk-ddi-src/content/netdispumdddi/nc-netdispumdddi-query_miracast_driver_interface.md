@@ -69,7 +69,7 @@ The size, supplied by the operating system, of the buffer pointed to by <i>pMira
 
 `*pMiracastDriverInterface`
 
-
+A pointer to a buffer, supplied by the operating system, that holds the returned Miracast display driver interface, which is a structure of type <a href="..\netdispumdddi\ns-netdispumdddi-_miracast_driver_interface.md">MIRACAST_DRIVER_INTERFACE</a>.
 
 
 ## Return Value
@@ -84,20 +84,15 @@ When the Miracast user-mode driver is loaded, the operating system calls the <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netdispumdddi\ns-netdispumdddi-_miracast_driver_interface.md">MIRACAST_DRIVER_INTERFACE</a>
-
 <a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a>
+
+<a href="..\netdispumdddi\ns-netdispumdddi-_miracast_driver_interface.md">MIRACAST_DRIVER_INTERFACE</a>
 
  
 

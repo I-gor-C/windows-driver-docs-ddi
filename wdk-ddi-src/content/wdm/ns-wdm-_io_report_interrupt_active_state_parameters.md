@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 430B8951-37F0-4173-ACC6-89DB542B4081
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure [Kernel-Mode Driver Architecture], kernel.io_report_interrupt_active_state_parameters, *PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, wdm/IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], wdm/PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS
+ms.keywords : "*PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, wdm/PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, _IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure [Kernel-Mode Driver Architecture], wdm/IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS, kernel.io_report_interrupt_active_state_parameters, PIO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,18 +89,15 @@ If the <i>Parameters-</i>&gt;<b>Version</b> value obtained from <b>IoConnectInte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 
-<a href="..\wdm\nf-wdm-ioreportinterruptinactive.md">IoReportInterruptInactive</a>
-
 <a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a>
+
+<a href="..\wdm\nf-wdm-ioreportinterruptinactive.md">IoReportInterruptInactive</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 9f5f3baa-49a0-4711-88c0-b9ff8d87ae1d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Invalid, pointofservicedriverinterface/MsrAuthenticateDevice, pointofservicedriverinterface/UpdateStatistics, pointofservicedriverinterface/ResetStatistics, pointofservicedriverinterface/MsrRetrieveDeviceAuthentication, pointofservicedriverinterface/SetProperty, MsrRetrieveDeviceAuthentication, MsrDeAuthenticateDevice, ReleaseDevice, RetainDevice, ResetStatistics, UpdateStatistics, pointofservicedriverinterface/GetProperty, pointofservicedriverinterface/RetainDevice, pointofservicedriverinterface/PosDeviceControlType, pointofservicedriverinterface/ReleaseDevice, pointofservicedriverinterface/MsrUpdateKey, pointofservicedriverinterface/CheckHealth, CheckHealth, GetProperty, BarcodeScannerInjectEvent, MsrAuthenticateDevice, pointofservicedriverinterface/MsrDeAuthenticateDevice, ClaimDevice, pointofservicedriverinterface/GetDeviceBasics, RetrieveStatistics, PosDeviceControlType, GetDeviceBasics, _PosDeviceControlType, SetProperty, _MaxDeviceControlType, PosDeviceControlType enumeration, pointofservicedriverinterface/Invalid, pointofservicedriverinterface/RetrieveStatistics, pointofservicedriverinterface/ClaimDevice, MsrUpdateKey, pointofservicedriverinterface/_MaxDeviceControlType, pointofservicedriverinterface/BarcodeScannerInjectEvent, pos.posdevicecontroltype
+ms.keywords : pointofservicedriverinterface/UpdateStatistics, _PosDeviceControlType, UpdateStatistics, pointofservicedriverinterface/BarcodeScannerInjectEvent, MsrRetrieveDeviceAuthentication, RetrieveStatistics, pointofservicedriverinterface/MsrAuthenticateDevice, pointofservicedriverinterface/ReleaseDevice, pointofservicedriverinterface/MsrUpdateKey, pointofservicedriverinterface/_MaxDeviceControlType, pointofservicedriverinterface/SetProperty, pointofservicedriverinterface/RetrieveStatistics, pointofservicedriverinterface/CheckHealth, MsrAuthenticateDevice, pointofservicedriverinterface/ResetStatistics, RetainDevice, pointofservicedriverinterface/MsrDeAuthenticateDevice, ResetStatistics, ReleaseDevice, CheckHealth, pointofservicedriverinterface/GetProperty, GetDeviceBasics, MsrDeAuthenticateDevice, _MaxDeviceControlType, ClaimDevice, MsrUpdateKey, pointofservicedriverinterface/MsrRetrieveDeviceAuthentication, pos.posdevicecontroltype, GetProperty, pointofservicedriverinterface/Invalid, pointofservicedriverinterface/RetainDevice, PosDeviceControlType enumeration, pointofservicedriverinterface/PosDeviceControlType, pointofservicedriverinterface/GetDeviceBasics, SetProperty, pointofservicedriverinterface/ClaimDevice, PosDeviceControlType, BarcodeScannerInjectEvent, Invalid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -376,7 +376,4 @@ This enumeration provides values for each IOCTL that you can send to the device 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

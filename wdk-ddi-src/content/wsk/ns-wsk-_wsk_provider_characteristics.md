@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 25371620-23bb-4a98-9554-14057742b0ca
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wsk/PWSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], wsk/WSK_PROVIDER_CHARACTERISTICS, wskref_f552c7d1-89a7-4cb6-aa7c-5f5ddb906deb.xml, _WSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], WSK_PROVIDER_CHARACTERISTICS, netvista.wsk_provider_characteristics
+ms.keywords : WSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], wsk/WSK_PROVIDER_CHARACTERISTICS, wsk/PWSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS, wskref_f552c7d1-89a7-4cb6-aa7c-5f5ddb906deb.xml, _WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], netvista.wsk_provider_characteristics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS"
+req.typenames : WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS
 req.product : Windows 10 or later.
 ---
 
@@ -56,8 +56,8 @@ typedef struct _WSK_PROVIDER_CHARACTERISTICS {
 `HighestVersion`
 
 The highest version of the WSK 
-     <mshelp:link keywords="netvista.network_programming_interface" tabindex="0">Network Programming Interface
-     (NPI)</mshelp:link> that is supported by the WSK subsystem.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">Network Programming Interface
+     (NPI)</a> that is supported by the WSK subsystem.
 
 `LowestVersion`
 
@@ -67,8 +67,8 @@ The lowest version of the WSK NPI that is supported by the WSK subsystem.
 When a 
     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a> call fails
     with status code STATUS_NOINTERFACE, the WSK application can use a call to 
-    <mshelp:link keywords="netvista.wskqueryprovidercharacteristics" tabindex="0"><b>
-    WskQueryProviderCharacteristics</b></mshelp:link> to query the range of WSK NPI versions supported by the WSK
+    <a href="..\wsk\nf-wsk-wskqueryprovidercharacteristics.md">
+    WskQueryProviderCharacteristics</a> to query the range of WSK NPI versions supported by the WSK
     subsystem. 
     <b>WskQueryProviderCharacteristics</b> returns the version information by means of the
     WSK_PROVIDER_CHARACTERISTICS structure. A WSK application can use this information to determine if the
@@ -113,29 +113,27 @@ Minor = WSK_MINOR_VERSION(Version);</pre>
     <b>Version</b> member of the structure.
 
 For more information about attaching a WSK application to the WSK subsystem, see 
-    <mshelp:link keywords="netvista.registering_a_winsock_kernel_application" tabindex="0">Registering a Winsock Kernel
-    Application</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock Kernel
+    Application</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also
 
-<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
 
 <a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
 
 <a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
 
-<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
+<a href="..\wsk\nf-wsk-wskqueryprovidercharacteristics.md">
+   WskQueryProviderCharacteristics</a>
 
-<mshelp:link keywords="netvista.wskqueryprovidercharacteristics" tabindex="0"><b>
-   WskQueryProviderCharacteristics</b></mshelp:link>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 
  
 

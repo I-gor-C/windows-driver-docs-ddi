@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : D964A0C4-041A-47BD-87AB-4AF523939DF0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.iprinterqueueviewevent_onchanged, IPrinterQueueViewEvent, printerextension/IPrinterQueueViewEvent::OnChanged, OnChanged method [Print Devices], IPrinterQueueViewEvent interface, OnChanged method [Print Devices], OnChanged, IPrinterQueueViewEvent::OnChanged, IPrinterQueueViewEvent interface [Print Devices], OnChanged method
+ms.keywords : OnChanged, IPrinterQueueViewEvent::OnChanged, OnChanged method [Print Devices], printerextension/IPrinterQueueViewEvent::OnChanged, print.iprinterqueueviewevent_onchanged, IPrinterQueueViewEvent, OnChanged method [Print Devices], IPrinterQueueViewEvent interface, IPrinterQueueViewEvent interface [Print Devices], OnChanged method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -84,20 +84,16 @@ The job range is controlled by the <a href="..\printerextension\nn-printerextens
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterqueueviewevent.md">IPrinterQueueViewEvent</a>
-
 <a href="https://msdn.microsoft.com/DB3C0439-EB82-4E49-8FEA-003C1B4A9EE0">IPrinterQueueView::SetViewRange</a>
+
+<a href="..\printerextension\nn-printerextension-iprinterqueueviewevent.md">IPrinterQueueViewEvent</a>
 
 <a href="..\printerextension\nn-printerextension-iprintjobcollection.md">IPrintJobCollection</a>
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DBB4747B-F6CF-4842-988C-6FAA9C552EA9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxIssueComponentPerfStateChange routine [Kernel-Mode Driver Architecture], PO_FX_FLAG_BLOCKING, wdm/PoFxIssueComponentPerfStateChange, PoFxIssueComponentPerfStateChange, kernel.pofxissuecomponentperfstatechange, PO_FX_FLAG_ASYNC_ONLY
+ms.keywords : PoFxIssueComponentPerfStateChange, wdm/PoFxIssueComponentPerfStateChange, kernel.pofxissuecomponentperfstatechange, PO_FX_FLAG_BLOCKING, PoFxIssueComponentPerfStateChange routine [Kernel-Mode Driver Architecture], PO_FX_FLAG_ASYNC_ONLY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -133,26 +133,24 @@ Only a single call of the <b>PoFxIssueComponentPerfStateChange</b> routine  is a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | "<= APC_LEVEL or <= DISPATCH_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechangemultiple.md">PoFxIssueComponentPerfStateChangeMultiple</a>
-
 <a href="..\wdm\ne-wdm-_po_fx_perf_state_type.md">PO_FX_PERF_STATE_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a>
+
+<a href="..\wdm\nf-wdm-pofxissuecomponentperfstatechangemultiple.md">PoFxIssueComponentPerfStateChangeMultiple</a>
 
 <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
 
 <a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn939353">ComponentPerfStateCallback</a>
 
  
 

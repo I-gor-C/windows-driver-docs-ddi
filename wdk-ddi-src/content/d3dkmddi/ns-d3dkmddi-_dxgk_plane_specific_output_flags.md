@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 95D9C564-92F3-4165-8063-49D928F30475
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS structure [Display Devices], display.dxgk_plane_specific_output_flags
+ms.keywords : DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, display.dxgk_plane_specific_output_flags, d3dkmddi/DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS, DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,7 +63,4 @@ typedef struct _DXGK_PLANE_SPECIFIC_OUTPUT_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

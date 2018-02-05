@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 16c62146-ed8d-4bf7-9d5e-0c5dbbf3c9c4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMMapIoSpace, NdisMMapIoSpace function [Network Drivers Starting with Windows Vista], netvista.ndismmapiospace, miniport_memory_mapped_ref_b346fbc3-62d5-447e-82af-329afbafdb73.xml, NdisMMapIoSpace
+ms.keywords : ndis/NdisMMapIoSpace, NdisMMapIoSpace, miniport_memory_mapped_ref_b346fbc3-62d5-447e-82af-329afbafdb73.xml, NdisMMapIoSpace function [Network Drivers Starting with Windows Vista], netvista.ndismmapiospace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -164,38 +164,36 @@ A miniport driver must call the reciprocal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMMapIoSpace (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMMapIoSpace (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMMapIoSpace (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMMapIoSpace (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function, NdisMMapIoSpace |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisreadregisteruchar.md">NdisReadRegisterUchar</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
-
-<a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
-
-<a href="..\ndis\nf-ndis-ndiswriteregisteruchar.md">NdisWriteRegisterUchar</a>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
 
 <a href="..\ndis\nf-ndis-ndisreadregisterulong.md">NdisReadRegisterUlong</a>
 
 <a href="..\ndis\nf-ndis-ndismunmapiospace.md">NdisMUnmapIoSpace</a>
 
-<a href="..\ndis\nf-ndis-ndisreadregisterushort.md">NdisReadRegisterUshort</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 
-<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisteruchar.md">NdisWriteRegisterUchar</a>
 
-<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+<a href="..\ndis\nf-ndis-ndisreadregisterushort.md">NdisReadRegisterUshort</a>
+
+<a href="..\ndis\nf-ndis-ndisreadregisteruchar.md">NdisReadRegisterUchar</a>
 
  
 

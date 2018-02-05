@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : A6D28F60-FA38-45EA-9E3C-D2E6F899333E
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_TAG_ENCOUNTERED, OPEN_REPARSE_LIST_ENTRY structure [Installable File System Drivers], ntifs/POPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_VERSION_EX, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS, _OPEN_REPARSE_LIST_ENTRY, ifsk.open_reparse_list_entry_, OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS, POPEN_REPARSE_LIST_ENTRY structure pointer [Installable File System Drivers], POPEN_REPARSE_LIST_ENTRY, *POPEN_REPARSE_LIST_ENTRY
+ms.keywords : OPEN_REPARSE_POINT_VERSION_EX, ifsk.open_reparse_list_entry_, ntifs/POPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_TAG_ENCOUNTERED, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS, _OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY structure [Installable File System Drivers], OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS, ntifs/OPEN_REPARSE_LIST_ENTRY, *POPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -161,7 +161,5 @@ If a match is found, the corresponding <b>OPEN_REPARSE_LIST_ENTRY</b>  structure
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
 | **Header** | ntifs.h |

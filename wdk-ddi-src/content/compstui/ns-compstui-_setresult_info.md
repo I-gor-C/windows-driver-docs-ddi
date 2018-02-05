@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 54701f88-1145-4a50-bf5a-36be1d88355d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : compstui/PSETRESULT_INFO, print.setresult_info, cpsuifnc_df5b07fc-1a38-4ae2-a994-2862d9791b10.xml, _SETRESULT_INFO, *PSETRESULT_INFO, compstui/SETRESULT_INFO, PSETRESULT_INFO, PSETRESULT_INFO structure pointer [Print Devices], SETRESULT_INFO, SETRESULT_INFO structure [Print Devices]
+ms.keywords : SETRESULT_INFO structure [Print Devices], PSETRESULT_INFO, cpsuifnc_df5b07fc-1a38-4ae2-a994-2862d9791b10.xml, SETRESULT_INFO, *PSETRESULT_INFO, _SETRESULT_INFO, compstui/PSETRESULT_INFO, compstui/SETRESULT_INFO, print.setresult_info, PSETRESULT_INFO structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SETRESULT_INFO, *PSETRESULT_INFO
+req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 # _SETRESULT_INFO structure
@@ -82,7 +82,4 @@ Typically, an application's PFNPROPSHEETUI-typed function sets the <b>Result</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

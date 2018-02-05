@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 350cb7f6-499f-4fbc-b5c0-6f4daf2a2af0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MiniDrv_9296f23a-679c-48e0-b594-ece8a1030e50.xml, IWiaMiniDrv::drvWriteItemProperties, IWiaMiniDrv, drvWriteItemProperties method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvwriteitemproperties, IWiaMiniDrv interface [Imaging Devices], drvWriteItemProperties method, drvWriteItemProperties, drvWriteItemProperties method [Imaging Devices], wiamindr_lh/IWiaMiniDrv::drvWriteItemProperties
+ms.keywords : drvWriteItemProperties, image.iwiaminidrv_drvwriteitemproperties, drvWriteItemProperties method [Imaging Devices], IWiaMiniDrv, IWiaMiniDrv::drvWriteItemProperties, drvWriteItemProperties method [Imaging Devices], IWiaMiniDrv interface, wiamindr_lh/IWiaMiniDrv::drvWriteItemProperties, IWiaMiniDrv interface [Imaging Devices], drvWriteItemProperties method, MiniDrv_9296f23a-679c-48e0-b594-ece8a1030e50.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -83,34 +83,30 @@ The value pointed to by <i>plDevErrVal</i> can be converted to a string by calli
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
+
+<a href="..\wiamdef\nf-wiamdef-wiasreadmultiple.md">wiasReadMultiple</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiasreadpropbin.md">wiasReadPropBin</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetrootitem.md">wiasGetRootItem</a>
-
-<a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
-
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropfloat.md">wiasReadPropFloat</a>
-
 <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiasgetrootitem.md">wiasGetRootItem</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545005">IWiaMiniDrv::drvReadItemProperties</a>
+<a href="..\wiamdef\nf-wiamdef-wiasreadpropfloat.md">wiasReadPropFloat</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadmultiple.md">wiasReadMultiple</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545005">IWiaMiniDrv::drvReadItemProperties</a>
 
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 

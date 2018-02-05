@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7cdc45d4-e8aa-437a-b6fc-8b8c0dc17585
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, *PNDIS_RECEIVE_QUEUE_INFO, ntddndis/PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO, virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml, PNDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : PNDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, *PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_QUEUE_INFO, virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml, _NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,17 +79,17 @@ The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJ
 
 
 
-#### NDIS_RECEIVE_QUEUE_INFO_REVISION_2
-
-Added additional members for NDIS 6.30.
-<div class="alert"><b>Note</b>  Revision 2 of this structure is  supported only on Windows Server 2012 and later versions of Windows Server.</div><div> </div>Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_INFO_REVISION_2</b>.
-
-
 #### NDIS_RECEIVE_QUEUE_INFO_REVISION_1
 
 Original version for NDIS 6.20.
 
 Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_INFO_REVISION_1</b>.
+
+
+#### NDIS_RECEIVE_QUEUE_INFO_REVISION_2
+
+Added additional members for NDIS 6.30.
+<div class="alert"><b>Note</b>  Revision 2 of this structure is  supported only on Windows Server 2012 and later versions of Windows Server.</div><div> </div>Set the <b>Size</b> member to <b>NDIS_SIZEOF_RECEIVE_QUEUE_INFO_REVISION_2</b>.
 
 `InterruptCoalescingDomainId`
 
@@ -140,8 +140,8 @@ An <b>NDIS_QUEUE_NAME</b> value that contains the user-friendly description of t
 `QueueState`
 
 An 
-     <mshelp:link keywords="netvista.ndis_receive_queue_operational_state" tabindex="0"><b>
-     NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</b></mshelp:link> enumeration value that specifies the operational state of the
+     <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_operational_state.md">
+     NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</a> enumeration value that specifies the operational state of the
      receive queue.
 
 `QueueType`
@@ -156,40 +156,38 @@ An <b>NDIS_VM_NAME</b> value that contains the user-friendly description of the 
 
 ## Remarks
 The <b>NDIS_RECEIVE_QUEUE_INFO</b> structure is used with the 
-    <mshelp:link keywords="netvista.ndis_receive_queue_info_array" tabindex="0"><b>
-    NDIS_RECEIVE_QUEUE_INFO_ARRAY</b></mshelp:link> structure for the 
-    <mshelp:link keywords="netvista.oid_receive_filter_enum_queues" tabindex="0">
-    OID_RECEIVE_FILTER_ENUM_QUEUES</mshelp:link> OID that enumerates receive queues on a network adapter.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">
+    NDIS_RECEIVE_QUEUE_INFO_ARRAY</a> structure for the 
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-queues">
+    OID_RECEIVE_FILTER_ENUM_QUEUES</a> OID that enumerates receive queues on a network adapter.
 
-With a successful return from the <mshelp:link keywords="netvista.oid_receive_filter_enum_queues" tabindex="0">
-    OID_RECEIVE_FILTER_ENUM_QUEUES</mshelp:link>, NDIS provides an
+With a successful return from the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-queues">
+    OID_RECEIVE_FILTER_ENUM_QUEUES</a>, NDIS provides an
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a> structure that defines the properties of the receive queue array. Each
     element in the array is an <b>NDIS_RECEIVE_QUEUE_INFO</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a>
-
-<mshelp:link keywords="netvista.ndis_receive_queue_operational_state" tabindex="0"><b>
-   NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</b></mshelp:link>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-queues">OID_RECEIVE_FILTER_ENUM_QUEUES</a>
-
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_operational_state.md">
+   NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-enum-queues">OID_RECEIVE_FILTER_ENUM_QUEUES</a>
 
  
 

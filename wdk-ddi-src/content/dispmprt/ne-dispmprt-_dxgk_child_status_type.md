@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5fa4b7e2-8215-49d8-9d70-b45c972b39b4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dispmprt/StatusRotation, dispmprt/StatusMiracast, DXGK_CHILD_STATUS_TYPE, dispmprt/StatusUninitialized, PDXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE enumeration [Display Devices], DmEnums_684c935e-6fd5-4743-a196-d6674b8f2e56.xml, _DXGK_CHILD_STATUS_TYPE, PDXGK_CHILD_STATUS_TYPE enumeration pointer [Display Devices], *PDXGK_CHILD_STATUS_TYPE, dispmprt/DXGK_CHILD_STATUS_TYPE, display.dxgk_child_status_type, StatusMiracast, dispmprt/PDXGK_CHILD_STATUS_TYPE, StatusRotation, dispmprt/StatusConnection, StatusUninitialized, StatusConnection
+ms.keywords : dispmprt/PDXGK_CHILD_STATUS_TYPE, StatusRotation, StatusMiracast, dispmprt/StatusMiracast, display.dxgk_child_status_type, PDXGK_CHILD_STATUS_TYPE enumeration pointer [Display Devices], DmEnums_684c935e-6fd5-4743-a196-d6674b8f2e56.xml, dispmprt/StatusRotation, _DXGK_CHILD_STATUS_TYPE, StatusUninitialized, StatusConnection, *PDXGK_CHILD_STATUS_TYPE, dispmprt/DXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE, PDXGK_CHILD_STATUS_TYPE, dispmprt/StatusUninitialized, dispmprt/StatusConnection, DXGK_CHILD_STATUS_TYPE enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,9 +85,7 @@ The <b>Type</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_child_status.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also

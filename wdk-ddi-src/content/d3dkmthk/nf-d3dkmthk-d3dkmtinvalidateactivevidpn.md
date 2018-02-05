@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a7cac46d-b64d-4362-99ab-179aa6525ba2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_3c74c218-cf17-4a86-af8e-da565b3cffd4.xml, D3DKMTInvalidateActiveVidPn, display.d3dkmtinvalidateactivevidpn, d3dkmthk/D3DKMTInvalidateActiveVidPn, D3DKMTInvalidateActiveVidPn function [Display Devices]
+ms.keywords : d3dkmthk/D3DKMTInvalidateActiveVidPn, D3DKMTInvalidateActiveVidPn function [Display Devices], D3DKMTInvalidateActiveVidPn, display.d3dkmtinvalidateactivevidpn, OpenGL_Functions_3c74c218-cf17-4a86-af8e-da565b3cffd4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -151,20 +151,17 @@ The OpenGL ICD can call <b>D3DKMTInvalidateActiveVidPn</b> for display modes (fo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems for display miniport drivers with version < DXGKDDI_INTERFACE_VERSION_WIN7. Available in Windows Vista and later versions of the Windows operating systems for display miniport drivers with version < DXGKDDI_INTERFACE_VERSION_WIN7. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_invalidateactivevidpn.md">D3DKMT_INVALIDATEACTIVEVIDPN</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_invalidateactivevidpn.md">D3DKMT_INVALIDATEACTIVEVIDPN</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 5fd9b381-c0e3-45bf-9061-da816da5e29f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.scsiscan_info, PSCSISCAN_INFO structure pointer [Imaging Devices], SCSISCAN_INFO, *PSCSISCAN_INFO, scsiscan/SCSISCAN_INFO, scsiscan/PSCSISCAN_INFO, _SCSISCAN_INFO, PSCSISCAN_INFO, SCSISCAN_INFO structure [Imaging Devices], stifnc_157af712-4f72-49f3-9da6-b8f750826d3e.xml
+ms.keywords : scsiscan/SCSISCAN_INFO, _SCSISCAN_INFO, PSCSISCAN_INFO structure pointer [Imaging Devices], stifnc_157af712-4f72-49f3-9da6-b8f750826d3e.xml, scsiscan/PSCSISCAN_INFO, image.scsiscan_info, SCSISCAN_INFO, *PSCSISCAN_INFO, PSCSISCAN_INFO, SCSISCAN_INFO structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,7 +95,4 @@ Target SCSI ID.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | scsiscan.h (include Scsiscan.h) |

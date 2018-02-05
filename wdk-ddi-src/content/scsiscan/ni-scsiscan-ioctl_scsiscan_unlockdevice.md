@@ -70,6 +70,4 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | scsiscan.h (include Scsiscan.h) |
-| **IRQL** |  |

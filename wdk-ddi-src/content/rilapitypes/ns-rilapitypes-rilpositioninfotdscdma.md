@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0b7b2592-8a67-4eb0-8e87-354fd5f215c5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfotdscdma, *LPRILPOSITIONINFOTDSCDMA
+ms.keywords : RILPOSITIONINFOTDSCDMA structure [Network Drivers Starting with Windows Vista], RILPOSITIONINFOTDSCDMA, netvista.rilpositioninfotdscdma, rilapitypes/RILPOSITIONINFOTDSCDMA, *LPRILPOSITIONINFOTDSCDMA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILPOSITIONINFOTDSCDMA, *LPRILPOSITIONINFOTDSCDMA
+req.typenames : "*LPRILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA"
 req.product : Windows 10 or later.
 ---
 
@@ -105,9 +105,6 @@ Channel number for serving cell (0...16383).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

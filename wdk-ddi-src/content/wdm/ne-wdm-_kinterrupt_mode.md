@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 2f00fe3f-d73d-4f0f-a1dd-ae72fa57e55d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/Latched, wdm/KINTERRUPT_MODE, kernel.kinterrupt_mode, KINTERRUPT_MODE enumeration [Kernel-Mode Driver Architecture], LevelSensitive, wdm/LevelSensitive, _KINTERRUPT_MODE, Latched, sysenum_35275927-b863-496a-8193-579f9d1d3a22.xml, KINTERRUPT_MODE
+ms.keywords : wdm/LevelSensitive, sysenum_35275927-b863-496a-8193-579f9d1d3a22.xml, KINTERRUPT_MODE enumeration [Kernel-Mode Driver Architecture], KINTERRUPT_MODE, wdm/Latched, LevelSensitive, wdm/KINTERRUPT_MODE, kernel.kinterrupt_mode, Latched, _KINTERRUPT_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -72,16 +72,13 @@ The interrupt mode is an electrical characteristic of the interrupt. A device si
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
-
 <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
+
+<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 
 <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 

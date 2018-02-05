@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 70156bfa-8271-42f6-9a22-0d0b77e63b66
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbInterfaceGetDescriptor, WdfUsbInterfaceGetDescriptor method, DFUsbRef_eb98efa1-720d-408c-824f-59cfef80bbba.xml, wdfusb/WdfUsbInterfaceGetDescriptor, wdf.wdfusbinterfacegetdescriptor, PFN_WDFUSBINTERFACEGETDESCRIPTOR, kmdf.wdfusbinterfacegetdescriptor
+ms.keywords : wdfusb/WdfUsbInterfaceGetDescriptor, WdfUsbInterfaceGetDescriptor method, wdf.wdfusbinterfacegetdescriptor, kmdf.wdfusbinterfacegetdescriptor, DFUsbRef_eb98efa1-720d-408c-824f-59cfef80bbba.xml, WdfUsbInterfaceGetDescriptor, PFN_WDFUSBINTERFACEGETDESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,19 @@ For more information about the <b>WdfUsbInterfaceGetDescriptor</b> method and US
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
-
 <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
 
  
 

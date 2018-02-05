@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5E3DC6C7-E370-4120-81B7-2093812AD009
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.iprinterextensioncontextcollection_getat, GetAt, GetAt method [Print Devices], printerextension/IPrinterExtensionContextCollection::GetAt, IPrinterExtensionContextCollection, GetAt method [Print Devices], IPrinterExtensionContextCollection interface, get_GetAt, IPrinterExtensionContextCollection::GetAt, IPrinterExtensionContextCollection interface [Print Devices], GetAt method
+ms.keywords : print.iprinterextensioncontextcollection_getat, get_GetAt, printerextension/IPrinterExtensionContextCollection::GetAt, IPrinterExtensionContextCollection interface [Print Devices], GetAt method, IPrinterExtensionContextCollection::GetAt, GetAt, IPrinterExtensionContextCollection, GetAt method [Print Devices], IPrinterExtensionContextCollection interface, GetAt method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,20 +71,16 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
-
 <a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+
+<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
 
  
 

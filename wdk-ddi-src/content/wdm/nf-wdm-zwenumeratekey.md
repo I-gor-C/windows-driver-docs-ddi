@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 77ccd451-40c7-4f64-af2b-480e44e7f672
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtEnumerateKey, wdm/NtEnumerateKey, k111_a41e7865-8cac-4dd8-83fb-ca04485feb48.xml, ZwEnumerateKey, ZwEnumerateKey routine [Kernel-Mode Driver Architecture], wdm/ZwEnumerateKey, kernel.zwenumeratekey
+ms.keywords : wdm/ZwEnumerateKey, ZwEnumerateKey, kernel.zwenumeratekey, k111_a41e7865-8cac-4dd8-83fb-ca04485feb48.xml, NtEnumerateKey, ZwEnumerateKey routine [Kernel-Mode Driver Architecture], wdm/NtEnumerateKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -154,12 +154,11 @@ For more information about working with registry keys, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport) |
 
@@ -167,27 +166,27 @@ For more information about working with registry keys, see <a href="https://msdn
 
 <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>
 
-<a href="..\wdm\nf-wdm-rtlcreateregistrykey.md">RtlCreateRegistryKey</a>
+<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
 
-<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
 
 <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
-<a href="..\wdm\nf-wdm-rtlcheckregistrykey.md">RtlCheckRegistryKey</a>
-
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-
 <a href="..\wdm\nf-wdm-rtlwriteregistryvalue.md">RtlWriteRegistryValue</a>
 
-<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
-
-<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
+<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
 
 <a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>
 
 <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
 
-<a href="..\wdm\nf-wdm-rtldeleteregistryvalue.md">RtlDeleteRegistryValue</a>
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-rtlcreateregistrykey.md">RtlCreateRegistryKey</a>
+
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
 
  
 

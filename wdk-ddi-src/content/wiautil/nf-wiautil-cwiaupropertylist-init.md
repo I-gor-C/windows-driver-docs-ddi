@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : cbbe0d76-7fd1-4653-ad79-d5e6d692dec0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Init method [Imaging Devices], Init method [Imaging Devices], CWiauPropertyList interface, wiautil/CWiauPropertyList::Init, CWiauPropertyList::Init, wiauFncs_4bc30663-6fd6-45b7-a18f-1adc766489be.xml, CWiauPropertyList, Init, CWiauPropertyList interface [Imaging Devices], Init method, image.cwiaupropertylist_init
+ms.keywords : wiautil/CWiauPropertyList::Init, CWiauPropertyList interface [Imaging Devices], Init method, CWiauPropertyList::Init, image.cwiaupropertylist_init, Init method [Imaging Devices], Init, CWiauPropertyList, Init method [Imaging Devices], CWiauPropertyList interface, wiauFncs_4bc30663-6fd6-45b7-a18f-1adc766489be.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,22 +66,18 @@ On success, the <b>CWiauPropertyList::Init</b> method returns S_OK. If the metho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h, Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiautil.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540391">CWiauPropertyList::DefineProperty</a>
 
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540389">CWiauPropertyList::CWiauPropertyList</a>
+
+<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
 
  
 

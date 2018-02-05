@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0dd32160-93d4-4fb8-aed1-9267f38e9909
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxSwapChainReportFrameStatistics method [Display Devices], iddcx/IddCxSwapChainReportFrameStatistics, display.iddcxswapchainreportframestatistics, IddCxSwapChainReportFrameStatistics
+ms.keywords : display.iddcxswapchainreportframestatistics, iddcx/IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics method [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,8 @@ Input arguments to the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |
-| **DDI compliance rules** |  |

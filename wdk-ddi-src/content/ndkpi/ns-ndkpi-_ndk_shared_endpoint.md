@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1A6B6EA3-66EE-4736-9457-2A295A7FAF4D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDK_SHARED_ENDPOINT structure [Network Drivers Starting with Windows Vista], PNDK_SHARED_ENDPOINT structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_shared_endpoint, _NDK_SHARED_ENDPOINT, PNDK_SHARED_ENDPOINT, NDK_SHARED_ENDPOINT, ndkpi/NDK_SHARED_ENDPOINT, ndkpi/PNDK_SHARED_ENDPOINT
+ms.keywords : NDK_SHARED_ENDPOINT, PNDK_SHARED_ENDPOINT, NDK_SHARED_ENDPOINT structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_SHARED_ENDPOINT, PNDK_SHARED_ENDPOINT structure pointer [Network Drivers Starting with Windows Vista], ndkpi/NDK_SHARED_ENDPOINT, _NDK_SHARED_ENDPOINT, netvista.ndk_shared_endpoint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,24 +66,22 @@ NDK provider must set the <b>Dispatch</b> member to its own <a href="..\ndkpi\ns
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_shared_endpoint.md">NDK_FN_CREATE_SHARED_ENDPOINT</a>
-
 <a href="https://msdn.microsoft.com/956D3550-11C8-48D0-BCF4-9027515C7C0E">NDKPI Listeners, Connectors, and Endpoints</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint_dispatch.md">NDK_SHARED_ENDPOINT_DISPATCH</a>
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
-
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_shared_endpoint.md">NDK_FN_CREATE_SHARED_ENDPOINT</a>
 
  
 

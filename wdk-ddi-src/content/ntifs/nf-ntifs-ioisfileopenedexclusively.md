@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ffe3196b-22f4-4d45-abcc-928857d215b5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ioref_3aa5aef5-1d17-4301-b02f-8013829fea38.xml, ntifs/IoIsFileOpenedExclusively, IoIsFileOpenedExclusively macro [Installable File System Drivers], ifsk.ioisfileopenedexclusively, IoIsFileOpenedExclusively
+ms.keywords : ntifs/IoIsFileOpenedExclusively, IoIsFileOpenedExclusively macro [Installable File System Drivers], ioref_3aa5aef5-1d17-4301-b02f-8013829fea38.xml, IoIsFileOpenedExclusively, ifsk.ioisfileopenedexclusively
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ntifs.h |

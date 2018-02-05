@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1fc92167-ceab-4f8e-bd80-a8f1821846ed
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ccsetfilesizes, CcSetFileSizes, ntifs/CcSetFileSizes, CcSetFileSizes routine [Installable File System Drivers], ccref_2d554d89-6378-4a7c-8984-cb54b9e9e01c.xml
+ms.keywords : CcSetFileSizes, ifsk.ccsetfilesizes, CcSetFileSizes routine [Installable File System Drivers], ccref_2d554d89-6378-4a7c-8984-cb54b9e9e01c.xml, ntifs/CcSetFileSizes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -165,14 +165,10 @@ A pointer to a member of the cache manager structure for this file that specifie
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

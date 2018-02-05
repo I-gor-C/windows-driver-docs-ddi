@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e90bc043-1b92-474c-b6c7-7e510271118b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PsSetLoadImageNotifyRoutine, PsSetLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], PsSetLoadImageNotifyRoutine, kernel.pssetloadimagenotifyroutine, k108_287b9d79-8b77-40b6-8fe7-21ac3551e437.xml
+ms.keywords : PsSetLoadImageNotifyRoutine, k108_287b9d79-8b77-40b6-8fe7-21ac3551e437.xml, kernel.pssetloadimagenotifyroutine, PsSetLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], ntddk/PsSetLoadImageNotifyRoutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,12 +76,11 @@ The maximum number of drivers that can be simultaneously registered to receive l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -91,11 +90,11 @@ The maximum number of drivers that can be simultaneously registered to receive l
 
 <a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
 
+<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
+
 <a href="..\ntddk\nc-ntddk-pload_image_notify_routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a>
 
 <a href="..\ntddk\nf-ntddk-psremoveloadimagenotifyroutine.md">PsRemoveLoadImageNotifyRoutine</a>
-
-<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
 
  
 

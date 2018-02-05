@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : cec1db47-640c-467a-ba7d-270659ebbba2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILSETPREFERREDOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILSETPREFERREDOPERATORLISTPARAMS, ntddrilapitypes/RILSETPREFERREDOPERATORLISTPARAMS, netvista.rilsetpreferredoperatorlistparams, RILSETPREFERREDOPERATORLISTPARAMS
+ms.keywords : "*LPRILSETPREFERREDOPERATORLISTPARAMS, ntddrilapitypes/RILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], RILSETPREFERREDOPERATORLISTPARAMS, netvista.rilsetpreferredoperatorlistparams"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ typedef struct _RILSETPREFERREDOPERATORLISTPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

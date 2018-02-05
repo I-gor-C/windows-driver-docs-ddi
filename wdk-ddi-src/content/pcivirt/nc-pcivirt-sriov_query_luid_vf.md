@@ -84,11 +84,6 @@ The PF driver registers its implementation by setting the <b>QueryLuidVf</b> mem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | pcivirt.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

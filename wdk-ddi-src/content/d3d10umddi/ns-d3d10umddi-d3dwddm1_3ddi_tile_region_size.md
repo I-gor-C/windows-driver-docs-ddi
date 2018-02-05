@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 276ED4AC-15D9-4550-AC51-83320DE9D5B2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM1_3DDI_TILE_REGION_SIZE structure [Display Devices], display.d3dwddm1_3ddi_tile_region_size, d3d10umddi/D3DWDDM1_3DDI_TILE_REGION_SIZE, D3DWDDM1_3DDI_TILE_REGION_SIZE
+ms.keywords : d3d10umddi/D3DWDDM1_3DDI_TILE_REGION_SIZE, D3DWDDM1_3DDI_TILE_REGION_SIZE structure [Display Devices], D3DWDDM1_3DDI_TILE_REGION_SIZE, display.d3dwddm1_3ddi_tile_region_size
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,7 +85,5 @@ The width (in the <i>x</i>-direction) of the tiled region. Used for buffer, 1-D,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 Windows 8.1,WDDM 1.3 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

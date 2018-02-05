@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : D7CA9DAB-E350-42D5-A008-5CC12D5313D3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltSetActivityIdCallbackData, FltSetActivityIdCallbackData routine [Installable File System Drivers], ifsk.fltsetactivityidcallbackdata, FltSetActivityIdCallbackData
+ms.keywords : FltSetActivityIdCallbackData, ifsk.fltsetactivityidcallbackdata, fltkernel/FltSetActivityIdCallbackData, FltSetActivityIdCallbackData routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,14 +113,12 @@ An activity ID pointed to by <i>Guid</i> was set for the IRP in <i>CallbackData<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

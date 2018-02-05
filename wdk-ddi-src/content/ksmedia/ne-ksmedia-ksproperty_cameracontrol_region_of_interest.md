@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 58886030-4fb6-432b-9ec1-9eb54350edb4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_cameracontrol_region_of_interest, ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST enumeration [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID
+ms.keywords : ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, stream.ksproperty_cameracontrol_region_of_interest, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST enumeration [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -62,9 +62,7 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

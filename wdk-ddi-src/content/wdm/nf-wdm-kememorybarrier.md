@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e6ffb893-a79f-4cc0-9052-667b835f4ad3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeMemoryBarrier, kernel.kememorybarrier, KeMemoryBarrier routine [Kernel-Mode Driver Architecture], k105_972df62d-6449-40d7-9bfa-0c420cf8f106.xml, wdm/KeMemoryBarrier
+ms.keywords : KeMemoryBarrier, wdm/KeMemoryBarrier, KeMemoryBarrier routine [Kernel-Mode Driver Architecture], kernel.kememorybarrier, k105_972df62d-6449-40d7-9bfa-0c420cf8f106.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,14 +89,10 @@ KeMemoryBarrier (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

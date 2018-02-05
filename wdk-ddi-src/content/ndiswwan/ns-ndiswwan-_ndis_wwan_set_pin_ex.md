@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F08180ED-DC5A-4DA0-A42A-48511BC63DF8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndiswwan/PNDIS_WWAN_SET_PIN_EX, NDIS_WWAN_SET_PIN_EX structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_PIN_EX structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SET_PIN_EX, *PNDIS_WWAN_SET_PIN_EX, NDIS_WWAN_SET_PIN_EX, PNDIS_WWAN_SET_PIN_EX, ndiswwan/NDIS_WWAN_SET_PIN_EX, netvista.ndis_wwan_set_pin_ex
+ms.keywords : netvista.ndis_wwan_set_pin_ex, _NDIS_WWAN_SET_PIN_EX, PNDIS_WWAN_SET_PIN_EX structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_PIN_EX, NDIS_WWAN_SET_PIN_EX structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_PIN_EX, NDIS_WWAN_SET_PIN_EX, *PNDIS_WWAN_SET_PIN_EX, ndiswwan/NDIS_WWAN_SET_PIN_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -108,9 +108,7 @@ A formatted WWAN_PIN_ACTION object that represents an action to perform with a P
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9f9c4c27-0a32-40c6-a302-98b4013e2664
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetdmprofileconfiginfoparams_2, *LPRILGETDMPROFILECONFIGINFOPARAMS, rilapitypes/RILGETDMPROFILECONFIGINFOPARAMS
+ms.keywords : netvista.rilgetdmprofileconfiginfoparams_2, RILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILGETDMPROFILECONFIGINFOPARAMS, rilapitypes/RILGETDMPROFILECONFIGINFOPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,7 +65,4 @@ typedef struct _RILGETDMPROFILECONFIGINFOPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

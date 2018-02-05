@@ -69,11 +69,11 @@ The video processor.
 
 `*pOutputParameters`
 
-
+The output arguments for the video process.
 
 `*pInputStreamParameters`
 
-
+The input arguments for the video process.
 
 `NumInputStreams`
 
@@ -88,11 +88,5 @@ This callback function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3d12umddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

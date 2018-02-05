@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2BC80D99-5265-4D0C-A447-5CC2112F53F8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ursdevice/UrsReportHardwareEvent, UrsReportHardwareEvent function [Buses], UrsReportHardwareEvent, buses.ursreporthardwareevent
+ms.keywords : ursdevice/UrsReportHardwareEvent, UrsReportHardwareEvent, UrsReportHardwareEvent function [Buses], buses.ursreporthardwareevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,12 @@ The client driver must call this method to report any hardware event, such as ID
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
+| **Library** | Urscxstub.lib |
 | **IRQL** | HIGH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

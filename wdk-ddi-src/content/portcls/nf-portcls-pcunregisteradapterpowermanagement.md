@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a25ee83f-e267-4966-9be2-ddcbc44b5c15
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/PcUnregisterAdapterPowerManagement, audpc-routines_c879c8bb-7466-4683-9a39-2a802f1e6529.xml, PcUnregisterAdapterPowerManagement function [Audio Devices], PcUnregisterAdapterPowerManagement, audio.pcunregisteradapterpowermanagement
+ms.keywords : PcUnregisterAdapterPowerManagement, PcUnregisterAdapterPowerManagement function [Audio Devices], audpc-routines_c879c8bb-7466-4683-9a39-2a802f1e6529.xml, portcls/PcUnregisterAdapterPowerManagement, audio.pcunregisteradapterpowermanagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,20 +68,17 @@ The <b>PcUnregisterAdapterPowerManagement</b> function unregisters a driver's po
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nf-portcls-pcregisteradapterpowermanagement.md">PcRegisterAdapterPowerManagement</a>
-
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\portcls\nf-portcls-pcregisteradapterpowermanagement.md">PcRegisterAdapterPowerManagement</a>
 
  
 

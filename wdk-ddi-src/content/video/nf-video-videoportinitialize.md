@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cc0da962-beeb-4035-a68e-e5b856cd5d9b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_215d2fe2-98a9-4504-96cb-492370e349c8.xml, VideoPortInitialize function [Display Devices], video/VideoPortInitialize, display.videoportinitialize, VideoPortInitialize
+ms.keywords : VideoPortInitialize, VideoPort_Functions_215d2fe2-98a9-4504-96cb-492370e349c8.xml, VideoPortInitialize function [Display Devices], display.videoportinitialize, video/VideoPortInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,20 +112,14 @@ Collects and stores pertinent information in the device extension.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>
-
-<a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
 
 <a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
 
@@ -133,7 +127,11 @@ Collects and stores pertinent information in the device extension.
 
 <a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
 
+<a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
+
 <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>
 
  
 

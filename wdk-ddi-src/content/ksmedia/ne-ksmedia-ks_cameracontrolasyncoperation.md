@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0ca676d9-5047-451a-abbb-2692cc2d69f6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_CameraControlAsyncOperation, ksmedia/KS_CAMERACONTROL_ASYNC_START, KS_CAMERACONTROL_ASYNC_STOP, ksmedia/KS_CAMERACONTROL_ASYNC_STOP, KS_CAMERACONTROL_ASYNC_RESET, KS_CAMERACONTROL_ASYNC_START, stream.ks_cameracontrolasyncoperation, ksmedia/KS_CameraControlAsyncOperation, ksmedia/KS_CAMERACONTROL_ASYNC_RESET, KS_CameraControlAsyncOperation enumeration [Streaming Media Devices]
+ms.keywords : ksmedia/KS_CameraControlAsyncOperation, KS_CAMERACONTROL_ASYNC_RESET, KS_CAMERACONTROL_ASYNC_STOP, stream.ks_cameracontrolasyncoperation, KS_CameraControlAsyncOperation, KS_CAMERACONTROL_ASYNC_START, ksmedia/KS_CAMERACONTROL_ASYNC_STOP, ksmedia/KS_CAMERACONTROL_ASYNC_RESET, ksmedia/KS_CAMERACONTROL_ASYNC_START, KS_CameraControlAsyncOperation enumeration [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

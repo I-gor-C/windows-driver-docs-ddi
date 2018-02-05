@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 8ac611fc-5634-4857-8533-6e170fe884b2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UPS_fns_79aba7aa-4204-4532-873a-8566ed6168f8.xml, UPSCancelWait, battery.upscancelwait, UPSCancelWait function [Battery Devices], upssvc/UPSCancelWait
+ms.keywords : UPSCancelWait function [Battery Devices], UPSCancelWait, upssvc/UPSCancelWait, battery.upscancelwait, UPS_fns_79aba7aa-4204-4532-873a-8566ed6168f8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,9 @@ The call returns immediately.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

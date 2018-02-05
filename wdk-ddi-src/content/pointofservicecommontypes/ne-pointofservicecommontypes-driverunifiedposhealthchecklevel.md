@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 101a74c8-a0c2-4820-b9a1-41e39ee4cf11
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : UnknownHealthCheckLevel, pointofservicecommontypes/External, pointofservicecommontypes/POSInternal, DriverUnifiedPosHealthCheckLevel, pos.unifiedposhealthchecklevel, pointofservicecommontypes/UnknownHealthCheckLevel, pointofservicecommontypes/DriverUnifiedPosHealthCheckLevel, POSInternal, pointofservicecommontypes/Interactive, External, Interactive, DriverUnifiedPosHealthCheckLevel enumeration
+ms.keywords : UnknownHealthCheckLevel, POSInternal, DriverUnifiedPosHealthCheckLevel, pointofservicecommontypes/UnknownHealthCheckLevel, pos.unifiedposhealthchecklevel, pointofservicecommontypes/Interactive, DriverUnifiedPosHealthCheckLevel enumeration, Interactive, pointofservicecommontypes/External, pointofservicecommontypes/POSInternal, pointofservicecommontypes/DriverUnifiedPosHealthCheckLevel, External
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _DriverUnifiedPosHealthCheckLevel {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

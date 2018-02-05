@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ddeeb49b-7c7d-4faa-b2ae-cdb09adebce0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltSetInstanceContext function [Installable File System Drivers], FltApiRef_p_to_z_a8984c00-54a9-427c-b33d-829b1db55149.xml, ifsk.fltsetinstancecontext, fltkernel/FltSetInstanceContext, FltSetInstanceContext
+ms.keywords : FltApiRef_p_to_z_a8984c00-54a9-427c-b33d-829b1db55149.xml, fltkernel/FltSetInstanceContext, ifsk.fltsetinstancecontext, FltSetInstanceContext function [Installable File System Drivers], FltSetInstanceContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,14 @@ Flag specifying details of the operation to be performed. This parameter must be
 
 
 
-#### FLT_SET_CONTEXT_REPLACE_IF_EXISTS
-
-If a context is already set for this <i>Instance</i>, replace it with <i>NewContext</i>. Otherwise, set <i>NewContext</i> as the context for <i>Instance</i>. 
-
-
 #### FLT_SET_CONTEXT_KEEP_IF_EXISTS
 
-If a context is already set for this <i>Instance</i>, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, set <i>NewContext</i> as the context for <i>Instance</i>.
+If a context is already set for this <i>Instance</i>, return STATUS_FLT_CONTEXT_ALREADY_DEFINED. Otherwise, set <i>NewContext</i> as the context for <i>Instance</i>. 
+
+
+#### FLT_SET_CONTEXT_REPLACE_IF_EXISTS
+
+If a context is already set for this <i>Instance</i>, replace it with <i>NewContext</i>. Otherwise, set <i>NewContext</i> as the context for <i>Instance</i>.
 
 `NewContext`
 
@@ -167,24 +167,22 @@ For more information about context reference counting, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later versions of the operating system. Not available nor supported on Windows 2000 SP4 and earlier operating systems. Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later versions of the operating system. Not available nor supported on Windows 2000 SP4 and earlier operating systems. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeleteinstancecontext.md">FltDeleteInstanceContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 

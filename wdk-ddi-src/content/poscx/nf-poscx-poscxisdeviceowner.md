@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 48D30A9D-3BA2-4929-865A-D9A34DC6E497
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PosCxIsDeviceOwner, poscx/PosCxIsDeviceOwner, PosCxIsDeviceOwner function, pos.poscxisdeviceowner
+ms.keywords : PosCxIsDeviceOwner function, pos.poscxisdeviceowner, poscx/PosCxIsDeviceOwner, PosCxIsDeviceOwner
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ Otherwise, returns FALSE.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

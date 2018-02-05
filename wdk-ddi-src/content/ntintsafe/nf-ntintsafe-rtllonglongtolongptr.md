@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1E7B693A-B363-4AE0-B9E3-45CC01FE9724
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongLongToLongPtr function [Kernel-Mode Driver Architecture], RtlLongLongToLongPtr, kernel.rtllonglongtolongptr, ntintsafe/RtlLongLongToLongPtr
+ms.keywords : RtlLongLongToLongPtr, RtlLongLongToLongPtr function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongLongToLongPtr, kernel.rtllonglongtolongptr
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,11 +88,6 @@ RtlLongLongToSSIZET
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

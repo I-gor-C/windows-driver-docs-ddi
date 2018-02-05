@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f33122d0-7661-454a-87f7-7b5795793376
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_dfdb87f8-ade9-4ba6-87a3-440e9abb80b4.xml, ks/KsInitializeDevice, stream.ksinitializedevice, KsInitializeDevice function [Streaming Media Devices], KsInitializeDevice
+ms.keywords : KsInitializeDevice, KsInitializeDevice function [Streaming Media Devices], avfunc_dfdb87f8-ade9-4ba6-87a3-440e9abb80b4.xml, ks/KsInitializeDevice, stream.ksinitializedevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,34 +85,31 @@ Most minidrivers do not call this function directly. Only call <b>KsInitializeDe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
-
-<a href="..\ks\nf-ks-ksterminatedevice.md">KsTerminateDevice</a>
-
-<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
-
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-
 <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 
 <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
 
-<a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a>
+<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
+
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
+
+<a href="..\ks\nf-ks-ksterminatedevice.md">KsTerminateDevice</a>
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+
+<a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a>
 
  
 

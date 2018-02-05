@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8fd4e642-5ed4-409e-bcc2-94d309a1e04c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PCDROM_SEEK_AUDIO_MSF structure pointer [Storage Devices], PCDROM_SEEK_AUDIO_MSF, CDROM_SEEK_AUDIO_MSF structure [Storage Devices], _CDROM_SEEK_AUDIO_MSF, ntddcdrm/CDROM_SEEK_AUDIO_MSF, *PCDROM_SEEK_AUDIO_MSF, ntddcdrm/PCDROM_SEEK_AUDIO_MSF, storage.cdrom_seek_audio_msf, structs-CD-ROM_1e8a9382-37c6-4473-831e-3547774a5b9d.xml, CDROM_SEEK_AUDIO_MSF
+ms.keywords : CDROM_SEEK_AUDIO_MSF, *PCDROM_SEEK_AUDIO_MSF, _CDROM_SEEK_AUDIO_MSF, PCDROM_SEEK_AUDIO_MSF, ntddcdrm/CDROM_SEEK_AUDIO_MSF, storage.cdrom_seek_audio_msf, ntddcdrm/PCDROM_SEEK_AUDIO_MSF, structs-CD-ROM_1e8a9382-37c6-4473-831e-3547774a5b9d.xml, PCDROM_SEEK_AUDIO_MSF structure pointer [Storage Devices], CDROM_SEEK_AUDIO_MSF structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ Contains an integer between 0 and 59 that indicates the second to seek to.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also

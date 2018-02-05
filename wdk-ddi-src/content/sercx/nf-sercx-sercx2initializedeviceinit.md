@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : E63B234D-07B7-467D-A13B-157781513F22
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SerCx2InitializeDeviceInit method [Serial Ports], 2/SerCx2InitializeDeviceInit, serports.sercx2initializedeviceinit, SerCx2InitializeDeviceInit
+ms.keywords : serports.sercx2initializedeviceinit, SerCx2InitializeDeviceInit, SerCx2InitializeDeviceInit method [Serial Ports], 2/SerCx2InitializeDeviceInit
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,24 +104,21 @@ The serial controller driver must call <b>SerCx2InitializeDeviceInit</b> before 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignsddlstring.md">WdfDeviceInitAssignSDDLString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignsddlstring.md">WdfDeviceInitAssignSDDLString</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
 <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
 

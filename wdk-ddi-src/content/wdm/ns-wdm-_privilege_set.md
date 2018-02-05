@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4d5c8c4f-78f4-4e98-9e76-a9896b5c9124
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PPRIVILEGE_SET, PPRIVILEGE_SET, _PRIVILEGE_SET, *PPRIVILEGE_SET, PRIVILEGE_SET, kstruct_c_c599935e-9092-4ee4-a982-a105835eb6bd.xml, wdm/PNP_BUS_INFORMATION, kernel.privilege_set, PPRIVILEGE_SET structure pointer [Kernel-Mode Driver Architecture], PRIVILEGE_SET structure [Kernel-Mode Driver Architecture]
+ms.keywords : PRIVILEGE_SET, PRIVILEGE_SET structure [Kernel-Mode Driver Architecture], kstruct_c_c599935e-9092-4ee4-a982-a105835eb6bd.xml, wdm/PPRIVILEGE_SET, PPRIVILEGE_SET structure pointer [Kernel-Mode Driver Architecture], wdm/PNP_BUS_INFORMATION, *PPRIVILEGE_SET, PPRIVILEGE_SET, _PRIVILEGE_SET, kernel.privilege_set
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -52,9 +52,6 @@ The <b>PRIVILEGE_SET</b> structure specifies a set of security privileges. For m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

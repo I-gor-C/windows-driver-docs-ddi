@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6149765b-cd2c-44f5-aa72-f4755e0b034c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/FILE_FS_DRIVER_PATH_INFORMATION, *PFILE_FS_DRIVER_PATH_INFORMATION, ifsk.file_fs_driver_path_information, PFILE_FS_DRIVER_PATH_INFORMATION structure pointer [Installable File System Drivers], _FILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION, PFILE_FS_DRIVER_PATH_INFORMATION, ntifs/PFILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION structure [Installable File System Drivers], fileinformationstructures_9d09c9ee-18a0-4230-af6b-0cddadbac901.xml
+ms.keywords : PFILE_FS_DRIVER_PATH_INFORMATION structure pointer [Installable File System Drivers], *PFILE_FS_DRIVER_PATH_INFORMATION, ntifs/PFILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION, ifsk.file_fs_driver_path_information, ntifs/FILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION structure [Installable File System Drivers], fileinformationstructures_9d09c9ee-18a0-4230-af6b-0cddadbac901.xml, PFILE_FS_DRIVER_PATH_INFORMATION, _FILE_FS_DRIVER_PATH_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION"
+req.typenames : FILE_FS_DRIVER_PATH_INFORMATION, *PFILE_FS_DRIVER_PATH_INFORMATION
 ---
 
 # _FILE_FS_DRIVER_PATH_INFORMATION structure
@@ -79,9 +79,6 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

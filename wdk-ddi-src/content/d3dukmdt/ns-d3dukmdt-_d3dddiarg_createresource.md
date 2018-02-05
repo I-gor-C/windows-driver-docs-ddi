@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 022047a4-105e-4859-ba37-fb408f903e7b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATERESOURCE, _D3DDDIARG_CREATERESOURCE, D3DDDIARG_CREATERESOURCE structure [Display Devices], UMDisplayDriver_param_Structs_c8d46034-b0b8-4909-962d-683be7aa099d.xml, d3dukmdt/D3DDDIARG_CREATERESOURCE, display.d3dddiarg_createresource
+ms.keywords : D3DDDIARG_CREATERESOURCE structure [Display Devices], _D3DDDIARG_CREATERESOURCE, display.d3dddiarg_createresource, UMDisplayDriver_param_Structs_c8d46034-b0b8-4909-962d-683be7aa099d.xml, D3DDDIARG_CREATERESOURCE, d3dukmdt/D3DDDIARG_CREATERESOURCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -127,26 +127,24 @@ Orientations other than <b>D3DDDI_ROTATION_IDENTITY</b> are set only when the <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
-
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddimultisample_type.md">D3DDDIMULTISAMPLE_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_surfaceinfo.md">D3DDDI_SURFACEINFO</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a>
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_surfaceinfo.md">D3DDDI_SURFACEINFO</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddimultisample_type.md">D3DDDIMULTISAMPLE_TYPE</a>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
 
  
 

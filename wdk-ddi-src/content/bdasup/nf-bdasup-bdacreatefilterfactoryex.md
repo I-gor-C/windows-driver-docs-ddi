@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 105b6a66-5800-4079-af88-f44d01134ff0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdaref_9a145859-e899-4180-ac91-63479e4e04c0.xml, stream.bdacreatefilterfactoryex, BdaCreateFilterFactoryEx function [Streaming Media Devices], BdaCreateFilterFactoryEx, bdasup/BdaCreateFilterFactoryEx
+ms.keywords : BdaCreateFilterFactoryEx, stream.bdacreatefilterfactoryex, bdasup/BdaCreateFilterFactoryEx, BdaCreateFilterFactoryEx function [Streaming Media Devices], bdaref_9a145859-e899-4180-ac91-63479e4e04c0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,34 +103,31 @@ A BDA minidriver calls the <b>BdaCreateFilterFactoryEx</b> function to add a fil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
 
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
-
-<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 
 <a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
+<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
 
 <a href="..\ks\nf-ks-_ksedit.md">_KsEdit</a>
+
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
  
 

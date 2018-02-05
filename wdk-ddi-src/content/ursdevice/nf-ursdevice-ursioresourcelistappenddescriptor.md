@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 80AE8211-EA8F-4967-A496-39053CD578D1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsIoResourceListAppendDescriptor, UrsIoResourceListAppendDescriptor function [Buses], buses.ursioresourcelistappenddescriptor, ursdevice/UrsIoResourceListAppendDescriptor
+ms.keywords : UrsIoResourceListAppendDescriptor function [Buses], buses.ursioresourcelistappenddescriptor, UrsIoResourceListAppendDescriptor, ursdevice/UrsIoResourceListAppendDescriptor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,12 @@ For more information about resource requirements lists, see <a href="https://doc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
+| **Library** | Urscxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

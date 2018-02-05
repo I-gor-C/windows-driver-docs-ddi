@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 756ba822-ace2-4893-a989-9d355434e57c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : colorfnc_409d0d83-91ea-408a-8970-4de6e9cf94eb.xml, icm/COLORPROFILETYPE, icm/CPT_DMP, *PCOLORPROFILETYPE, COLORPROFILETYPE, icm/CPT_CAMP, CPT_ICC, CPT_DMP, print.colorprofiletype, CPT_CAMP, CPT_GMMP, icm/CPT_GMMP, icm/CPT_ICC, COLORPROFILETYPE enumeration [Print Devices]
+ms.keywords : "*PCOLORPROFILETYPE, CPT_CAMP, icm/COLORPROFILETYPE, colorfnc_409d0d83-91ea-408a-8970-4de6e9cf94eb.xml, icm/CPT_GMMP, COLORPROFILETYPE, CPT_GMMP, print.colorprofiletype, CPT_ICC, icm/CPT_CAMP, COLORPROFILETYPE enumeration [Print Devices], icm/CPT_DMP, CPT_DMP, icm/CPT_ICC"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -93,9 +93,7 @@ The PCOLORPROFILETYPE and LPCOLORPROFILETYPE data types are defined as pointers 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
 | **Header** | icm.h |
 
 ## See Also

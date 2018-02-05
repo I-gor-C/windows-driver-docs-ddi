@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 65a1aa46-571b-46f7-b60e-ef8c6dc14d39
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_de338bec-f7ef-4780-85e6-592a24314145.xml, KeWaitForMutexObject, kernel.kewaitforsingleobject, wdm/KeWaitForSingleObject, KeWaitForSingleObject, KeWaitForSingleObject routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/KeWaitForSingleObject, KeWaitForMutexObject, kernel.kewaitforsingleobject, KeWaitForSingleObject routine [Kernel-Mode Driver Architecture], KeWaitForSingleObject, k105_de338bec-f7ef-4780-85e6-592a24314145.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -179,30 +179,29 @@ Callers of <b>KeWaitForMutexObject</b> must be running at IRQL &lt;= DISPATCH_LE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | CompleteRequestStatusCheck, IoAllocateIrpSignalEventInCompletionTimeout, IoBuildDeviceControlWait, IoBuildDeviceControlWaitTimeout, IoBuildFsdIrpSignalEventInCompletionTimeout, IoBuildSynchronousFsdRequestWait, IoBuildSynchronousFsdRequestWaitTimeout, IrpProcessingComplete, IrqlKeWaitForMutexObject, LowerDriverReturn, MarkIrpPending2, PendedCompletedRequest, PendedCompletedRequest2, PendedCompletedRequest3, PendedCompletedRequestEx, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControlInternal, RemoveLockForwardRead, RemoveLockForwardWrite, StartDeviceWait, StartDeviceWait2, StartDeviceWait3, StartDeviceWait4, HwStorPortProhibitedDDIs, SpNoWait |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 
 <a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
 
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-
-<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 
 <a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
 
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
+
+<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
 
  
 

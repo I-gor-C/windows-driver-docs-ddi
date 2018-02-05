@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 994df4be-d0ce-4f64-91f5-b5516ce947ec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtgetprocessschedulingpriorityclass, OpenGL_Functions_7af39e72-516e-440a-b4be-f0b3f82156d0.xml, d3dkmthk/D3DKMTGetProcessSchedulingPriorityClass, D3DKMTGetProcessSchedulingPriorityClass, D3DKMTGetProcessSchedulingPriorityClass function [Display Devices]
+ms.keywords : OpenGL_Functions_7af39e72-516e-440a-b4be-f0b3f82156d0.xml, D3DKMTGetProcessSchedulingPriorityClass, display.d3dkmtgetprocessschedulingpriorityclass, D3DKMTGetProcessSchedulingPriorityClass function [Display Devices], d3dkmthk/D3DKMTGetProcessSchedulingPriorityClass
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -53,11 +53,11 @@ NTSTATUS D3DKMTGetProcessSchedulingPriorityClass(
 
 ## Parameters
 
-``
+`Arg1`
 
 
 
-``
+`Arg1`
 
 
 
@@ -100,14 +100,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

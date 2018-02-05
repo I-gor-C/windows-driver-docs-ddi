@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 11203a5d-1484-4a49-aedc-e11baf22cac9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDereferenceSoftwareBusObject function [Streaming Media Devices], ksfunc_e9066001-173a-40e1-a933-2f646a21afad.xml, swenum/KsDereferenceSoftwareBusObject, KsDereferenceSoftwareBusObject, stream.ksdereferencesoftwarebusobject
+ms.keywords : ksfunc_e9066001-173a-40e1-a933-2f646a21afad.xml, KsDereferenceSoftwareBusObject function [Streaming Media Devices], stream.ksdereferencesoftwarebusobject, swenum/KsDereferenceSoftwareBusObject, KsDereferenceSoftwareBusObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,9 @@ When the demand-load bus enumerator object's PDO reference count is 0, it become
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | swenum.h (include Swenum.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

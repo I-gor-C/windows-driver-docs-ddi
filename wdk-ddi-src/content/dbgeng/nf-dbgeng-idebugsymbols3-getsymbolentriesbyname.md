@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 90e6c1aa-30d5-40e7-bc35-92b0359485e0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.getsymbolentriesbyname, IDebugSymbols_4c157d74-d5e8-43d5-87f9-5ad089adb4a0.xml, GetSymbolEntriesByName, GetSymbolEntriesByName method [Windows Debugging], IDebugSymbols3::GetSymbolEntriesByName, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntriesByName method, dbgeng/IDebugSymbols3::GetSymbolEntriesByName, GetSymbolEntriesByName method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : IDebugSymbols_4c157d74-d5e8-43d5-87f9-5ad089adb4a0.xml, dbgeng/IDebugSymbols3::GetSymbolEntriesByName, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntriesByName method, IDebugSymbols3, IDebugSymbols3::GetSymbolEntriesByName, GetSymbolEntriesByName method [Windows Debugging], GetSymbolEntriesByName, debugger.getsymbolentriesbyname, GetSymbolEntriesByName method [Windows Debugging], IDebugSymbols3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -105,20 +105,15 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548476">GetSymbolEntriesByOffset</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548476">GetSymbolEntriesByOffset</a>
 
  
 

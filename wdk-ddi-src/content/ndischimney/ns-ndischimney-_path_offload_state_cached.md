@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5afd2499-3f47-481e-9d20-770842f79677
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PPATH_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], PPATH_OFFLOAD_STATE_CACHED, ndischimney/PATH_OFFLOAD_STATE_CACHED, netvista.path_offload_state_cached, ndischimney/PPATH_OFFLOAD_STATE_CACHED, tcp_chim_struct_768560e8-d67c-42f3-aa43-78c48e198eef.xml, *PPATH_OFFLOAD_STATE_CACHED, PATH_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], _PATH_OFFLOAD_STATE_CACHED, PATH_OFFLOAD_STATE_CACHED
+ms.keywords : PATH_OFFLOAD_STATE_CACHED, ndischimney/PPATH_OFFLOAD_STATE_CACHED, ndischimney/PATH_OFFLOAD_STATE_CACHED, PPATH_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], netvista.path_offload_state_cached, PATH_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_768560e8-d67c-42f3-aa43-78c48e198eef.xml, PPATH_OFFLOAD_STATE_CACHED, _PATH_OFFLOAD_STATE_CACHED, *PPATH_OFFLOAD_STATE_CACHED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PATH_OFFLOAD_STATE_CACHED, *PPATH_OFFLOAD_STATE_CACHED
+req.typenames : "*PPATH_OFFLOAD_STATE_CACHED, PATH_OFFLOAD_STATE_CACHED"
 ---
 
 # _PATH_OFFLOAD_STATE_CACHED structure
@@ -77,13 +77,13 @@ Cached variables are owned and maintained by the host stack. An offload target m
     <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a> function.
     When the host stack terminates the offload of one or more state objects by causing NDIS to call the
     offload target's 
-    <mshelp:link keywords="netvista.miniportterminateoffload" tabindex="0"><i>
-    MiniportTerminateOffload</i></mshelp:link> function, the offload target does not return the value of offloaded
+    <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">
+    MiniportTerminateOffload</a> function, the offload target does not return the value of offloaded
     constant variables to the host stack.
 
 When passed to an offload target, a PATH_OFFLOAD_STATE_CACHED structure is associated with an 
-    <mshelp:link keywords="netvista.ndis_miniport_offload_block_list" tabindex="0"><b>
-    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</b></mshelp:link> structure, which contains a header that is formatted as an 
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
+    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the PATH_OFFLOAD_STATE_CACHED structure.
@@ -91,24 +91,21 @@ When passed to an offload target, a PATH_OFFLOAD_STATE_CACHED structure is assoc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
 ## See Also
 
-<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
-
-<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
-
-<a href="..\ndischimney\ns-ndischimney-_path_offload_state_delegated.md">PATH_OFFLOAD_STATE_DELEGATED</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="..\ndischimney\ns-ndischimney-_path_offload_state_const.md">PATH_OFFLOAD_STATE_CONST</a>
 
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_delegated.md">PATH_OFFLOAD_STATE_DELEGATED</a>
+
 <a href="..\ndischimney\nc-ndischimney-w_update_offload_handler.md">MiniportUpdateOffload</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
+
+<a href="..\ndischimney\ns-ndischimney-_offload_state_header.md">OFFLOAD_STATE_HEADER</a>
 
  
 

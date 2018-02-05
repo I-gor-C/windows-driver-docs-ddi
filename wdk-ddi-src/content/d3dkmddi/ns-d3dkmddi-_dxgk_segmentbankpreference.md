@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ff292137-4d95-4388-aae9-f6436b403c6a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_58615e96-0b7c-49a9-8966-0f627d7078f7.xml, display.dxgk_segmentbankpreference, d3dkmddi/DXGK_SEGMENTBANKPREFERENCE, _DXGK_SEGMENTBANKPREFERENCE, DXGK_SEGMENTBANKPREFERENCE structure [Display Devices], DXGK_SEGMENTBANKPREFERENCE
+ms.keywords : DXGK_SEGMENTBANKPREFERENCE, DmStructs_58615e96-0b7c-49a9-8966-0f627d7078f7.xml, DXGK_SEGMENTBANKPREFERENCE structure [Display Devices], display.dxgk_segmentbankpreference, d3dkmddi/DXGK_SEGMENTBANKPREFERENCE, _DXGK_SEGMENTBANKPREFERENCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,14 +71,12 @@ The display miniport driver can indicate up to four bank preferences in the <b>H
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 
@@ -86,7 +84,7 @@ The display miniport driver can indicate up to four bank preferences in the <b>H
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
 
  
 

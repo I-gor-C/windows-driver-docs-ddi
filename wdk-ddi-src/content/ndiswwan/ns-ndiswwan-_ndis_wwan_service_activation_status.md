@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 669ef35f-0e59-4ec3-b6cc-5cb2156b51a2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, _NDIS_WWAN_SERVICE_ACTIVATION_STATUS, netvista.ndis_wwan_service_activation_status, PNDIS_WWAN_SERVICE_ACTIVATION_STATUS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, WwanRef_a1bda142-c89f-4323-a114-0c44948f61b5.xml, NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
+ms.keywords : PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, netvista.ndis_wwan_service_activation_status, _NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/NDIS_WWAN_SERVICE_ACTIVATION_STATUS, WwanRef_a1bda142-c89f-4323-a114-0c44948f61b5.xml, NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SERVICE_ACTIVATION_STATUS, PNDIS_WWAN_SERVICE_ACTIVATION_STATUS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, NDIS_WWAN_SERVICE_ACTIVATION_STATUS"
+req.typenames : NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
 ---
 
 # _NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure
@@ -105,8 +105,8 @@ For more information about these members, see
 `ServiceActivationStatus`
 
 A formatted 
-     <mshelp:link keywords="netvista.wwan_service_activation_status" tabindex="0"><b>
-     WWAN_SERVICE_ACTIVATION_STATUS</b></mshelp:link> object that represents the status of service activation on the
+     <a href="..\wwan\ns-wwan-_wwan_service_activation_status.md">
+     WWAN_SERVICE_ACTIVATION_STATUS</a> object that represents the status of service activation on the
      device.
 
 `uStatus`
@@ -227,17 +227,15 @@ The operation failed because the device is in the process of initializing. Retry
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.wwan_service_activation_status" tabindex="0"><b>
-   WWAN_SERVICE_ACTIVATION_STATUS</b></mshelp:link>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_service_activation_status.md">
+   WWAN_SERVICE_ACTIVATION_STATUS</a>
 
  
 

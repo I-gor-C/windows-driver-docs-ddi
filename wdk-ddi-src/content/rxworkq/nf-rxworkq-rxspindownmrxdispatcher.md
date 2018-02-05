@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0ec10c43-df57-4661-9106-8edc6b76f5d7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxSpinDownMRxDispatcher function [Installable File System Drivers], ifsk.rxspindownmrxdispatcher, rxworkq/RxSpinDownMRxDispatcher, rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, RxSpinDownMRxDispatcher
+ms.keywords : rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, rxworkq/RxSpinDownMRxDispatcher, RxSpinDownMRxDispatcher, ifsk.rxspindownmrxdispatcher, RxSpinDownMRxDispatcher function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,11 @@ The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>R
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The RxSpinDownMRxDispatcher routine is only available on Windows XP and later. The RxSpinDownMRxDispatcher routine is only available on Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | rxworkq.h (include Rxworkq.h, Rxstruc.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

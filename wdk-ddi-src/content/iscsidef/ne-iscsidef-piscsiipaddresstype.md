@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a92f7048-ca8a-450c-93ab-6ea040412198
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsidef/ISCSI_IP_ADDRESS_EMPTY, iscsidef/ISCSI_IP_ADDRESS_IPV4, ISCSI_IP_ADDRESS_IPV4, ISCSIIPADDRESSTYPE, iscsidef/ISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE, *PISCSIIPADDRESSTYPE, structs-iSCSI_3e947807-84e7-4886-aae9-95b8d1b508ab.xml, ISCSI_IP_ADDRESS_IPV6, ISCSI_IP_ADDRESS_TEXT, storage.iscsiipaddresstype, ISCSIIPADDRESSTYPE enumeration [Storage Devices], iscsidef/PISCSIIPADDRESSTYPE, iscsidef/ISCSI_IP_ADDRESS_TEXT, iscsidef/ISCSI_IP_ADDRESS_IPV6, ISCSI_IP_ADDRESS_EMPTY, PISCSIIPADDRESSTYPE enumeration pointer [Storage Devices]
+ms.keywords : iscsidef/ISCSI_IP_ADDRESS_IPV4, iscsidef/ISCSI_IP_ADDRESS_IPV6, *PISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE, structs-iSCSI_3e947807-84e7-4886-aae9-95b8d1b508ab.xml, ISCSI_IP_ADDRESS_IPV4, storage.iscsiipaddresstype, ISCSIIPADDRESSTYPE, ISCSI_IP_ADDRESS_IPV6, iscsidef/PISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE enumeration pointer [Storage Devices], iscsidef/ISCSI_IP_ADDRESS_TEXT, ISCSIIPADDRESSTYPE enumeration [Storage Devices], ISCSI_IP_ADDRESS_TEXT, iscsidef/ISCSIIPADDRESSTYPE, ISCSI_IP_ADDRESS_EMPTY, iscsidef/ISCSI_IP_ADDRESS_EMPTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,9 +80,6 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
 ## See Also

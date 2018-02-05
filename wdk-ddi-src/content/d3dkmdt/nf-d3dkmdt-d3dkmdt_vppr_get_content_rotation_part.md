@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : B533B0DD-B72C-4294-8E88-4C15EA1BB16E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, d3dkmdt/D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART function [Display Devices], display.d3dkmdt_vppr_get_content_rotation_part
+ms.keywords : D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, display.d3dkmdt_vppr_get_content_rotation_part, d3dkmdt/D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -204,14 +204,10 @@ D3DKMDT_VIDPN_PRESENT_PATH_ROTATION
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION |
+| **Target Platform** | Desktop |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

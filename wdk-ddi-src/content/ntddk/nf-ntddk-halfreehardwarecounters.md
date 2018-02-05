@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 646a073b-e0c5-4d41-b60c-3935c129fb39
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : HalFreeHardwareCounters routine [Kernel-Mode Driver Architecture], kernel.halfreehardwarecounters, ntddk/HalFreeHardwareCounters, k103_7516fb8d-7064-4f4a-bbef-a979809bf011.xml, HalFreeHardwareCounters
+ms.keywords : kernel.halfreehardwarecounters, k103_7516fb8d-7064-4f4a-bbef-a979809bf011.xml, HalFreeHardwareCounters, HalFreeHardwareCounters routine [Kernel-Mode Driver Architecture], ntddk/HalFreeHardwareCounters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,12 @@ Parameter <i>CounterSetHandle</i> is not a valid counter resources handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Hal.lib |
+| **DLL** | Hal.dll |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

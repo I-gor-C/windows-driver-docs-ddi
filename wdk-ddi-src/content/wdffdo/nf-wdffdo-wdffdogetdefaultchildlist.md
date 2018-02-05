@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b90c82ad-0531-4564-b30d-48e980282e85
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFFDOGETDEFAULTCHILDLIST, kmdf.wdffdogetdefaultchildlist, wdf.wdffdogetdefaultchildlist, WdfFdoGetDefaultChildList method, DFDeviceObjectFdoPdoRef_b91b8c48-179f-42e5-8015-67eaf1b38226.xml, WdfFdoGetDefaultChildList, wdffdo/WdfFdoGetDefaultChildList
+ms.keywords : DFDeviceObjectFdoPdoRef_b91b8c48-179f-42e5-8015-67eaf1b38226.xml, wdf.wdffdogetdefaultchildlist, kmdf.wdffdogetdefaultchildlist, WdfFdoGetDefaultChildList, wdffdo/WdfFdoGetDefaultChildList, PFN_WDFFDOGETDEFAULTCHILDLIST, WdfFdoGetDefaultChildList method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -75,12 +75,10 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

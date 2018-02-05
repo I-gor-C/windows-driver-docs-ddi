@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : BC3839C0-AED6-470D-9C2B-B1529B2B3D1A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : STREAM_TIME_REFERENCE, PSTREAM_TIME_REFERENCE, _STREAM_TIME_REFERENCE, PSTREAM_TIME_REFERENCE structure pointer [Streaming Media Devices], STREAM_TIME_REFERENCE structure [Streaming Media Devices], strmini/STREAM_TIME_REFERENCE, stream.stream_time_reference, strmini/PSTREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+ms.keywords : strmini/STREAM_TIME_REFERENCE, PSTREAM_TIME_REFERENCE, _STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE, stream.stream_time_reference, strmini/PSTREAM_TIME_REFERENCE, STREAM_TIME_REFERENCE structure [Streaming Media Devices], STREAM_TIME_REFERENCE, PSTREAM_TIME_REFERENCE structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ Reserved for future use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h |

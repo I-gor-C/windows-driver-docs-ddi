@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : 0a468158-4beb-42e0-a990-0282041a6bf8
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : sddef/SDRT_4, SDRT_NONE, SD_RESPONSE_TYPE enumeration [Buses], sddef/SDRT_UNSPECIFIED, sddef/SDRT_3, sddef/SD_RESPONSE_TYPE, sd-structs_e0ab70a5-5006-4469-872a-ea8f6279b5d6.xml, sddef/SDRT_5B, SDRT_4, SD.sd_response_type, sddef/SDRT_1B, SDRT_5B, sddef/SDRT_NONE, SDRT_UNSPECIFIED, SDRT_6, sddef/SDRT_5, SDRT_1, SDRT_1B, SDRT_2, sddef/SDRT_2, SDRT_3, sddef/SDRT_1, SD_RESPONSE_TYPE, sddef/SDRT_6, SDRT_5
+ms.keywords : SD_RESPONSE_TYPE enumeration [Buses], sddef/SDRT_UNSPECIFIED, SD_RESPONSE_TYPE, SDRT_1B, sd-structs_e0ab70a5-5006-4469-872a-ea8f6279b5d6.xml, sddef/SDRT_4, sddef/SDRT_1B, sddef/SDRT_5, SDRT_1, SDRT_NONE, sddef/SD_RESPONSE_TYPE, sddef/SDRT_1, sddef/SDRT_5B, sddef/SDRT_NONE, SDRT_3, sddef/SDRT_6, sddef/SDRT_3, SD.sd_response_type, SDRT_2, SDRT_6, SDRT_4, SDRT_5, SDRT_5B, sddef/SDRT_2, SDRT_UNSPECIFIED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -117,9 +117,6 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sddef.h (include Sddef.h) |
 
 ## See Also

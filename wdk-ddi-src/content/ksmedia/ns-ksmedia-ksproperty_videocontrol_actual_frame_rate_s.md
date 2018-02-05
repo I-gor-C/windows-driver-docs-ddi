@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 98b6c085-d7d0-47e4-acea-a272487f20c2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, stream.ksproperty_videocontrol_actual_frame_rate_s, *PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, ksmedia/PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, vidcapstruct_7ae44134-3ba1-4419-9290-c305f345e29c.xml, KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure [Streaming Media Devices], PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure pointer [Streaming Media Devices], KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S
+ms.keywords : "*PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, ksmedia/KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, ksmedia/PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, vidcapstruct_7ae44134-3ba1-4419-9290-c305f345e29c.xml, PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure pointer [Streaming Media Devices], KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, stream.ksproperty_videocontrol_actual_frame_rate_s, KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure [Streaming Media Devices], PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,18 +86,15 @@ The minidriver should return STATUS_NOT_SUPPORTED if the pin is not open.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568120">PROPSETID_VIDCAP_VIDEOCONTROL</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566024">KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
  
 

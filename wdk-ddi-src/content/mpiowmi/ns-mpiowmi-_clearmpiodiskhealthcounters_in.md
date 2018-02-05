@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1af28545-f43f-47a2-b6a2-64fd7a408687
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.clearmpiodiskhealthcounters_in, *PClearMpioDiskHealthCounters_IN, ClearMpioDiskHealthCounters_IN structure [Storage Devices], structs-scsibus_52663a43-dc66-4b77-b30d-d60ffbea7232.xml, ClearMpioDiskHealthCounters_IN, PClearMpioDiskHealthCounters_IN, PClearMpioDiskHealthCounters_IN structure pointer [Storage Devices], mpiowmi/PClearMpioDiskHealthCounters_IN, _ClearMpioDiskHealthCounters_IN, mpiowmi/ClearMpioDiskHealthCounters_IN
+ms.keywords : PClearMpioDiskHealthCounters_IN, storage.clearmpiodiskhealthcounters_in, ClearMpioDiskHealthCounters_IN, ClearMpioDiskHealthCounters_IN structure [Storage Devices], _ClearMpioDiskHealthCounters_IN, PClearMpioDiskHealthCounters_IN structure pointer [Storage Devices], mpiowmi/PClearMpioDiskHealthCounters_IN, structs-scsibus_52663a43-dc66-4b77-b30d-d60ffbea7232.xml, mpiowmi/ClearMpioDiskHealthCounters_IN, *PClearMpioDiskHealthCounters_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,4 @@ A 32-bitfield that represents the MPIO disk ordinal value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

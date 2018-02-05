@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a2017660-f001-449c-9c33-e26c2897ead1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetEvent routine [Kernel-Mode Driver Architecture], kernel.kesetevent, k105_0b9a87b5-bdf2-4449-81f6-1836ea47f038.xml, KeSetEvent, wdm/KeSetEvent
+ms.keywords : kernel.kesetevent, KeSetEvent, KeSetEvent routine [Kernel-Mode Driver Architecture], wdm/KeSetEvent, k105_0b9a87b5-bdf2-4449-81f6-1836ea47f038.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,32 +89,31 @@ If <i>Wait</i> is set to <b>FALSE</b>, the caller can be running at IRQL &lt;= D
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | CompletionEventChecking, IoAllocateIrpSignalEventInCompletion, IoBuildDeviceIoControlSetEvent, IoBuildFsdIrpSignalEventInCompletion, IrqlKeSetEvent, SignalEventInCompletion, DoubleKeSetEvent, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
-
-<a href="https://go.microsoft.com/fwlink/p/?linkid=838602">Specifying Priority Boosts When Completing I/O Requests</a>
+<a href="..\wdm\nf-wdm-kereadstateevent.md">KeReadStateEvent</a>
 
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
-<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
 
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
-
-<a href="..\wdm\nf-wdm-kereadstateevent.md">KeReadStateEvent</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=838602">Specifying Priority Boosts When Completing I/O Requests</a>
 
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
+
+<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
+
+<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
 
  
 

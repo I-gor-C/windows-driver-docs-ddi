@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5b264784-7680-4c3b-9fc7-0609c53b53a2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTStreamNotification interface [Audio Devices], UnregisterNotificationEvent method, portcls/IMiniportWaveRTStreamNotification::UnregisterNotificationEvent, UnregisterNotificationEvent method [Audio Devices], audmp-routines_db635e04-50ae-4aed-b5a5-dfb33f14d153.xml, audio.iminiportwavertstreamnotification_unregisternotificationevent, UnregisterNotificationEvent method [Audio Devices], IMiniportWaveRTStreamNotification interface, IMiniportWaveRTStreamNotification::UnregisterNotificationEvent, IMiniportWaveRTStreamNotification, UnregisterNotificationEvent
+ms.keywords : IMiniportWaveRTStreamNotification, audio.iminiportwavertstreamnotification_unregisternotificationevent, UnregisterNotificationEvent method [Audio Devices], IMiniportWaveRTStreamNotification interface, UnregisterNotificationEvent, audmp-routines_db635e04-50ae-4aed-b5a5-dfb33f14d153.xml, UnregisterNotificationEvent method [Audio Devices], portcls/IMiniportWaveRTStreamNotification::UnregisterNotificationEvent, IMiniportWaveRTStreamNotification interface [Audio Devices], UnregisterNotificationEvent method, IMiniportWaveRTStreamNotification::UnregisterNotificationEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,20 +68,17 @@ The port driver calls this method in response to a <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537387">KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT</a>
+
+<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>
 
  
 

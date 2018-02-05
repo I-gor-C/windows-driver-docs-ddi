@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e3885241-c6a4-417f-a7cf-38d221307f8e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, ksmedia/KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, vidcapstruct_d012cbc9-457f-4689-943a-5dcf5eb33c46.xml, ksmedia/PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure pointer [Streaming Media Devices], stream.ksproperty_allocator_control_capture_interleave_s, *PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure [Streaming Media Devices]
+ms.keywords : "*PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, ksmedia/KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, stream.ksproperty_allocator_control_capture_interleave_s, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, vidcapstruct_d012cbc9-457f-4689-943a-5dcf5eb33c46.xml, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure pointer [Streaming Media Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, *PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S
+req.typenames : "*PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S"
 ---
 
 # KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure
@@ -59,9 +59,6 @@ Indicates whether interleaved capture is possible. Any nonzero value indicates t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

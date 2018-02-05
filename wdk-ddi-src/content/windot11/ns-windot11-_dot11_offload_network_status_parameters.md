@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4A911BFF-5515-4E51-953D-86CECA123DA0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, windot11/DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, netvista.dot11_offload_network_status_parameters, windot11/PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, _DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS
+ms.keywords : PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, _DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, netvista.dot11_offload_network_status_parameters, *PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, windot11/DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, windot11/PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS"
+req.typenames : DOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS, *PDOT11_OFFLOAD_NETWORK_STATUS_PARAMETERS
 req.product : Windows 10 or later.
 ---
 
@@ -83,7 +83,5 @@ This must be STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2d5c1f3e-69a6-4f7f-9c99-bbaf94e6401b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PTE structure [Display Devices], _DXGK_PTE, DXGK_PTE, DmStructs_701e980c-29dc-46d2-8f03-ce8485a4cc70.xml, display.dxgk_pte, d3dukmdt/DXGK_PTE
+ms.keywords : DmStructs_701e980c-29dc-46d2-8f03-ce8485a4cc70.xml, DXGK_PTE structure [Display Devices], d3dukmdt/DXGK_PTE, _DXGK_PTE, display.dxgk_pte, DXGK_PTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,7 +73,5 @@ typedef struct _DXGK_PTE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dkmddi.h) |

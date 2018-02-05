@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8a39b7cb-cd05-4fb8-9e50-7425e689a36f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSFASTPROPERTY_ITEM structure [Streaming Media Devices], ks/PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM, ks-struct_dddb648f-ea8a-436a-b948-397364fe2db6.xml, PKSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM, ks/KSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM structure pointer [Streaming Media Devices], stream.ksfastproperty_item
+ms.keywords : ks/PKSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM, ks/KSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM structure pointer [Streaming Media Devices], stream.ksfastproperty_item, KSFASTPROPERTY_ITEM, ks-struct_dddb648f-ea8a-436a-b948-397364fe2db6.xml, KSFASTPROPERTY_ITEM structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM
+req.typenames : "*PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM"
 ---
 
 # KSFASTPROPERTY_ITEM structure
@@ -72,9 +72,6 @@ Reserved and set to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

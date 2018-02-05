@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 686D141E-E6EA-4BB6-8556-0ECAC592E8F0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportfreehostmemorybuffer, StorPortFreeHostMemoryBuffer routine [Storage Devices], storport/StorPortFreeHostMemoryBuffer, StorPortFreeHostMemoryBuffer
+ms.keywords : storage.storportfreehostmemorybuffer, StorPortFreeHostMemoryBuffer, storport/StorPortFreeHostMemoryBuffer, StorPortFreeHostMemoryBuffer routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,14 +106,9 @@ The host memory buffer was not valid (likely already freed).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

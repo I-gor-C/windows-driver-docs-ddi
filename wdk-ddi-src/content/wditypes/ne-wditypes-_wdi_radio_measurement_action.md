@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : AA17E666-5934-453D-B55D-98F8616F6369
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST, wditypes/WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST, WDI_RADIO_MEASUREMENT_ACTION enumeration [Device and Driver Installation], _WDI_RADIO_MEASUREMENT_ACTION, wditypes/WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE, WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE, wditypes/WDI_RADIO_MEASUREMENT_ACTION, netvista.wdi_radio_measurement_action, WDI_RADIO_MEASUREMENT_ACTION, netvista.wifi_radio_measurement_action
+ms.keywords : "_WDI_RADIO_MEASUREMENT_ACTION, wditypes/WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST, WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST, WDI_RADIO_MEASUREMENT_ACTION, wditypes/WDI_RADIO_MEASUREMENT_ACTION, netvista.wdi_radio_measurement_action, wditypes/WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE, WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE, netvista.wifi_radio_measurement_action, WDI_RADIO_MEASUREMENT_ACTION enumeration [Device and Driver Installation]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,7 +69,5 @@ typedef enum _WDI_RADIO_MEASUREMENT_ACTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

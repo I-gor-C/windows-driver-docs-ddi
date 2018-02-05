@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 58031257-5363-4e4f-b95f-aa3cd603c113
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_RECOMMENDFUNCTIONALVIDPN structure [Display Devices], DmStructs_15342273-6bfe-4cee-8f8e-1d89c7683e4b.xml, DXGKARG_RECOMMENDFUNCTIONALVIDPN, display.dxgkarg_recommendfunctionalvidpn, d3dkmddi/DXGKARG_RECOMMENDFUNCTIONALVIDPN, _DXGKARG_RECOMMENDFUNCTIONALVIDPN
+ms.keywords : DXGKARG_RECOMMENDFUNCTIONALVIDPN structure [Display Devices], DXGKARG_RECOMMENDFUNCTIONALVIDPN, display.dxgkarg_recommendfunctionalvidpn, _DXGKARG_RECOMMENDFUNCTIONALVIDPN, DmStructs_15342273-6bfe-4cee-8f8e-1d89c7683e4b.xml, d3dkmddi/DXGKARG_RECOMMENDFUNCTIONALVIDPN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,7 @@ A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendfunctionalvidpn_reason.md">DXG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

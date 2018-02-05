@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a718cf3e-8359-4560-a88e-dd7789b61be6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : USBCAMD_Debug_LogEntry function [Streaming Media Devices], usbcmdpr_6f6f6419-d845-4488-bd8d-70efa67357fa.xml, usbcamdi/USBCAMD_Debug_LogEntry, stream.usbcamd_debug_logentry, USBCAMD_Debug_LogEntry
+ms.keywords : USBCAMD_Debug_LogEntry function [Streaming Media Devices], stream.usbcamd_debug_logentry, usbcmdpr_6f6f6419-d845-4488-bd8d-70efa67357fa.xml, USBCAMD_Debug_LogEntry, usbcamdi/USBCAMD_Debug_LogEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | usbcamdi.h (include Usbcamdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Usbcamd2.lib |

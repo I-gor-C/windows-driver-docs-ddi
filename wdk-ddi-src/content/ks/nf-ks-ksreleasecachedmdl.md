@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8EDBD8FF-6417-44C0-87C0-14D71FEFA380
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksreleasecachedmdl, KsReleaseCachedMdl function [Streaming Media Devices], ks/KsReleaseCachedMdl, KsReleaseCachedMdl
+ms.keywords : ks/KsReleaseCachedMdl, stream.ksreleasecachedmdl, KsReleaseCachedMdl, KsReleaseCachedMdl function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,6 @@ Returns <b>STATUS_SUCCESS</b> for success conditions.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

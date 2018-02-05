@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 4258f223-353a-4b6e-a93c-5742e5c1668b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_REVISION union pointer [WHEA Drivers and Applications], whearef_0572aecb-765a-4118-8df0-7b34922e79d9.xml, ntddk/WHEA_REVISION, *PWHEA_REVISION, WHEA_REVISION union [WHEA Drivers and Applications], ntddk/PWHEA_REVISION, _WHEA_REVISION, PWHEA_REVISION, WHEA_REVISION, whea.whea_revision
+ms.keywords : ntddk/PWHEA_REVISION, ntddk/WHEA_REVISION, WHEA_REVISION union [WHEA Drivers and Applications], whea.whea_revision, PWHEA_REVISION union pointer [WHEA Drivers and Applications], *PWHEA_REVISION, PWHEA_REVISION, whearef_0572aecb-765a-4118-8df0-7b34922e79d9.xml, _WHEA_REVISION, WHEA_REVISION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ A WHEA_REVISION union is contained within the <a href="..\ntddk\ns-ntddk-_whea_e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

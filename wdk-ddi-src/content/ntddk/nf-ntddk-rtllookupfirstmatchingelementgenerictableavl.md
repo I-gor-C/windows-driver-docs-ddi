@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ff9cea5d-a93f-4d3c-b034-d2bf85484df3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlLookupFirstMatchingElementGenericTableAvl, RtlLookupFirstMatchingElementGenericTableAvl routine [Installable File System Drivers], ifsk.rtllookupfirstmatchingelementgenerictableavl, ntddk/RtlLookupFirstMatchingElementGenericTableAvl, rtlref_60dc0941-12da-4d46-8f6d-ffbd2e394ddf.xml
+ms.keywords : RtlLookupFirstMatchingElementGenericTableAvl routine [Installable File System Drivers], ifsk.rtllookupfirstmatchingelementgenerictableavl, ntddk/RtlLookupFirstMatchingElementGenericTableAvl, RtlLookupFirstMatchingElementGenericTableAvl, rtlref_60dc0941-12da-4d46-8f6d-ffbd2e394ddf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,14 +90,12 @@ Callers of <b>RtlLookupFirstMatchingElementGenericTableAvl</b> must be running a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include FltKernel.h, Ntifs.h, Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

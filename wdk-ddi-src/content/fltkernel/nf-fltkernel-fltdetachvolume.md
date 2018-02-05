@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 889750fc-69a9-4fe6-8905-6a7edc5c04fb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltDetachVolume, fltkernel/FltDetachVolume, ifsk.fltdetachvolume, FltDetachVolume function [Installable File System Drivers], FltApiRef_a_to_d_2f7a4638-6f6d-4ac6-97b6-d547d64b56b6.xml
+ms.keywords : FltDetachVolume, FltDetachVolume function [Installable File System Drivers], fltkernel/FltDetachVolume, FltApiRef_a_to_d_2f7a4638-6f6d-4ac6-97b6-d547d64b56b6.xml, ifsk.fltdetachvolume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,24 +110,20 @@ To compare the altitudes of two minifilter driver instances attached to the same
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\fltkernel\nf-fltkernel-fltcompareinstancealtitudes.md">FltCompareInstanceAltitudes</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
+<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltattachvolume.md">FltAttachVolume</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltattachvolumeataltitude.md">FltAttachVolumeAtAltitude</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeinstancefromname.md">FltGetVolumeInstanceFromName</a>
 
  
 

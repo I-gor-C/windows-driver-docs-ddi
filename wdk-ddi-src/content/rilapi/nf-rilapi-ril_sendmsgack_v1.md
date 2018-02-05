@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5a3c148e-d113-4cbc-a88a-691531bb3d9d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SendMsgAck_V1, netvista.ril_sendmsgack_v1, rilapi/RIL_SendMsgAck_V1, RIL_SendMsgAck_V1 method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_SendMsgAck_V1 method [Network Drivers Starting with Windows Vista], netvista.ril_sendmsgack_v1, RIL_SendMsgAck_V1, rilapi/RIL_SendMsgAck_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

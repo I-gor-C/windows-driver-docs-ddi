@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aba0ebc8-2c92-4d27-a35b-9ac25ac6e5ab
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_59985b59-bb86-459c-8bd2-2b6124a6b9bb.xml, DXGK_I2C_INTERFACE structure [Display Devices], _DXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE structure pointer [Display Devices], dispmprt/PDXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE, dispmprt/DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, display.dxgk_i2c_interface, *PDXGK_I2C_INTERFACE
+ms.keywords : dispmprt/PDXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE, dispmprt/DXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE structure pointer [Display Devices], *PDXGK_I2C_INTERFACE, PDXGK_I2C_INTERFACE, DmStructs_59985b59-bb86-459c-8bd2-2b6124a6b9bb.xml, display.dxgk_i2c_interface, _DXGK_I2C_INTERFACE, DXGK_I2C_INTERFACE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,7 +91,5 @@ A kernel-mode component that needs to use the I2C interface calls the display mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |

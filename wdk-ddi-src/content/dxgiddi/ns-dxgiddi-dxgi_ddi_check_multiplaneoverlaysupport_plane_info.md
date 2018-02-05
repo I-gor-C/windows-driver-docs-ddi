@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3a1e41b5-cd62-436b-a4ed-6dee99c03cac
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO structure [Display Devices], DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO, display.dxgi_ddi_check_multiplaneoverlaysupport_plane_info, DXGI_DDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO structure [Display Devices], DXGI_DDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO, dxgiddi/DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO
+ms.keywords : DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO structure [Display Devices], DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO, DXGI_DDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO, DXGI_DDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO structure [Display Devices], dxgiddi/DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO, display.dxgi_ddi_check_multiplaneoverlaysupport_plane_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,5 @@ The zero-based index into the resource, which is specified by the handle in the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |

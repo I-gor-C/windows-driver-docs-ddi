@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6C2B8E87-A88F-4244-81B2-0241E2DAE756
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_WPS_DEVICE_NAME, PDOT11_WPS_DEVICE_NAME structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_WPS_DEVICE_NAME, windot11/DOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME, PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME structure [Network Drivers Starting with Windows Vista], netvista.dot11_wps_device_name, _DOT11_WPS_DEVICE_NAME
+ms.keywords : DOT11_WPS_DEVICE_NAME, PDOT11_WPS_DEVICE_NAME structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_WPS_DEVICE_NAME, windot11/PDOT11_WPS_DEVICE_NAME, netvista.dot11_wps_device_name, PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME structure [Network Drivers Starting with Windows Vista], *PDOT11_WPS_DEVICE_NAME, _DOT11_WPS_DEVICE_NAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,7 +66,5 @@ The length, in bytes, of the device name.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 79e7c92e-4c39-4c9f-a2d8-b83be08e3ec1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_f78af7c3-ec4b-40ef-8680-102822a305ff.xml, stream.kscreatedefaultallocator, ks/KsCreateDefaultAllocator, KsCreateDefaultAllocator function [Streaming Media Devices], KsCreateDefaultAllocator
+ms.keywords : stream.kscreatedefaultallocator, KsCreateDefaultAllocator, KsCreateDefaultAllocator function [Streaming Media Devices], ks/KsCreateDefaultAllocator, ksfunc_f78af7c3-ec4b-40ef-8680-102822a305ff.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ The <b>KsCreateDefaultAllocator</b> function returns STATUS_SUCCESS if successfu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

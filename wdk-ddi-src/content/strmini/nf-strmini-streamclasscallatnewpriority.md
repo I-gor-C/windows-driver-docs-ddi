@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 86c4e9da-7c71-4d79-b8e2-f602489da647
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.streamclasscallatnewpriority, StreamClassCallAtNewPriority routine [Streaming Media Devices], strclass-routines_6335ceee-08a1-4078-a9ce-aaa15d8158cd.xml, StreamClassCallAtNewPriority, strmini/StreamClassCallAtNewPriority
+ms.keywords : strclass-routines_6335ceee-08a1-4078-a9ce-aaa15d8158cd.xml, strmini/StreamClassCallAtNewPriority, StreamClassCallAtNewPriority, stream.streamclasscallatnewpriority, StreamClassCallAtNewPriority routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -132,11 +132,7 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
+| **Library** | Stream.lib |
 | **IRQL** | "(See Parameters section)" |
-| **DDI compliance rules** |  |

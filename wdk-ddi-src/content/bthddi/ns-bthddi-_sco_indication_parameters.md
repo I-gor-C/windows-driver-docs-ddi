@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 2d3ae219-8a40-476c-b8eb-94f4c0566527
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bthddi/SCO_INDICATION_PARAMETERS, bthddi/PSCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS, _SCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS structure [Bluetooth Devices], PSCO_INDICATION_PARAMETERS structure pointer [Bluetooth Devices], bltooth.sco_indication_parameters, bth_structs_73ebf679-d092-4b0a-a54f-84539b8c85ae.xml, SCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS
+ms.keywords : "_SCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS structure [Bluetooth Devices], PSCO_INDICATION_PARAMETERS, bth_structs_73ebf679-d092-4b0a-a54f-84539b8c85ae.xml, bthddi/SCO_INDICATION_PARAMETERS, PSCO_INDICATION_PARAMETERS structure pointer [Bluetooth Devices], bthddi/PSCO_INDICATION_PARAMETERS, bltooth.sco_indication_parameters, SCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS
+req.typenames : "*PSCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS"
 ---
 
 # _SCO_INDICATION_PARAMETERS structure
@@ -96,16 +96,14 @@ When the Bluetooth driver stack passes
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_sco_disconnect_reason.md">SCO_DISCONNECT_REASON</a>
-
 <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
+
+<a href="..\bthddi\ne-bthddi-_sco_disconnect_reason.md">SCO_DISCONNECT_REASON</a>
 
  
 

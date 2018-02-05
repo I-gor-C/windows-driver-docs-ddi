@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 265CABEE-E2FD-4ACA-9C82-54291E63479B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongPtrToInt, RtlLongPtrToInt function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoint, ntintsafe/RtlLongPtrToInt
+ms.keywords : RtlLongPtrToInt function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongPtrToInt, RtlLongPtrToInt, kernel.rtllongptrtoint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ RtlLongPtrToInt32
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

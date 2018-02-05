@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B3268640-F256-4B64-AE95-8D30A6A7BF6C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlDWordPtrSub function [Kernel-Mode Driver Architecture], RtlDWordPtrSub, kernel.rtldwordptrsub, ntintsafe/RtlDWordPtrSub
+ms.keywords : ntintsafe/RtlDWordPtrSub, RtlDWordPtrSub, kernel.rtldwordptrsub, RtlDWordPtrSub function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0EC09215-48B1-4B71-9B4C-99A25C35269F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetPrintOutputInfo function [Print Devices], winspool/GetPrintOutputInfo, GetPrintOutputInfo, print.getprintoutputinfo
+ms.keywords : print.getprintoutputinfo, winspool/GetPrintOutputInfo, GetPrintOutputInfo, GetPrintOutputInfo function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ If this function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winspool.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

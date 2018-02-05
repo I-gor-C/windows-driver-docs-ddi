@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9680724b-15fb-4d46-9fd1-175fa1b71c73
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoIsValidNameGraftingBuffer, IoIsValidNameGraftingBuffer function [Installable File System Drivers], IoIsValidNameGraftingBuffer, ioref_10a2f83c-101f-47b3-beca-c708a0749d4d.xml, ifsk.ioisvalidnamegraftingbuffer
+ms.keywords : ioref_10a2f83c-101f-47b3-beca-c708a0749d4d.xml, ntifs/IoIsValidNameGraftingBuffer, IoIsValidNameGraftingBuffer, ifsk.ioisvalidnamegraftingbuffer, IoIsValidNameGraftingBuffer function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

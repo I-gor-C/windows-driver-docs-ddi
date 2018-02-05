@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe84e542-c8b2-4631-9ffb-dde471311871
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetCompletionRoutineEx routine [Kernel-Mode Driver Architecture], k104_b574c1f0-f1e7-4c34-93ee-4681ec9e1046.xml, kernel.iosetcompletionroutineex, wdm/IoSetCompletionRoutineEx, IoSetCompletionRoutineEx
+ms.keywords : IoSetCompletionRoutineEx, wdm/IoSetCompletionRoutineEx, kernel.iosetcompletionroutineex, IoSetCompletionRoutineEx routine [Kernel-Mode Driver Architecture], k104_b574c1f0-f1e7-4c34-93ee-4681ec9e1046.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -111,16 +111,19 @@ The behavior of <b>IoSetCompletionRoutineEx</b> is the same as the <a href="..\w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | CompleteRequest, CompleteRequestStatusCheck, CompletionRoutineRegistered, IoAllocateForward, IoAllocateIrpSignalEventInCompletion, IoAllocateIrpSignalEventInCompletion2, IoAllocateIrpSignalEventInCompletion3, IoAllocateIrpSignalEventInCompletionTimeout, IoBuildFsdForward, IoBuildFsdIrpSignalEventInCompletion, IoBuildFsdIrpSignalEventInCompletion2, IoBuildFsdIrpSignalEventInCompletion3, IoBuildFsdIrpSignalEventInCompletionTimeout, IoSetCompletionExCompleteIrp, IoSetCompletionRoutineExCheck, IoSetCompletionRoutineExCheckDeviceObject, LowerDriverReturn, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PendedCompletedRequestEx, SignalEventInCompletion, SignalEventInCompletion2, SignalEventInCompletion3, StartDeviceWait2, StartDeviceWait4, SetCompletionRoutineFromDispatch, HwStorPortProhibitedDDIs |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
+
+<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
 
 <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
 
@@ -130,13 +133,9 @@ The behavior of <b>IoSetCompletionRoutineEx</b> is the same as the <a href="..\w
 
 <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 
-<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
-
 <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-
-<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 
  
 

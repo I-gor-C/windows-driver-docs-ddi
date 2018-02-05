@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7750a0f5-f38d-4530-81dc-589a1c2009ca
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsFilterFactoryRegisterAggregatedClientUnknown, KsFilterFactoryRegisterAggregatedClientUnknown, avfunc_03ec0abd-d481-4b97-b8ab-6be504e95a55.xml, KsFilterFactoryRegisterAggregatedClientUnknown function [Streaming Media Devices], stream.ksfilterfactoryregisteraggregatedclientunknown
+ms.keywords : stream.ksfilterfactoryregisteraggregatedclientunknown, KsFilterFactoryRegisterAggregatedClientUnknown function [Streaming Media Devices], avfunc_03ec0abd-d481-4b97-b8ab-6be504e95a55.xml, ks/KsFilterFactoryRegisterAggregatedClientUnknown, KsFilterFactoryRegisterAggregatedClientUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,10 @@ Note that this inline function only performs a typecast and then calls <b>KsRegi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

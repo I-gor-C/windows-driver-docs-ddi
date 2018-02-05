@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 36883440-805F-4588-AA04-3A7BCBEB6D76
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses._ucxusbdevicecreate, ucxusbdevice/UcxUsbDeviceCreate, UcxUsbDeviceCreate method [Buses], UcxUsbDeviceCreate
+ms.keywords : ucxusbdevice/UcxUsbDeviceCreate, UcxUsbDeviceCreate method [Buses], UcxUsbDeviceCreate, buses._ucxusbdevicecreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,14 +88,13 @@ For a code example, see <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_contr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

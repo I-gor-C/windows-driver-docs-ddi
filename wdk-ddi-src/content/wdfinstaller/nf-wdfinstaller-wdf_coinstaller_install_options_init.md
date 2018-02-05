@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 65fd2c27-7d9e-4dad-adef-8cb2bea9d9f2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_COINSTALLER_INSTALL_OPTIONS_INIT function, kmdf.wdf_coinstaller_install_options_init, DFCoinstallerRef_7a993590-87f2-4613-93d4-ffbc76672d8e.xml, wdf.wdf_coinstaller_install_options_init, wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS_INIT, WDF_COINSTALLER_INSTALL_OPTIONS_INIT
+ms.keywords : wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS_INIT, wdf.wdf_coinstaller_install_options_init, WDF_COINSTALLER_INSTALL_OPTIONS_INIT, WDF_COINSTALLER_INSTALL_OPTIONS_INIT function, kmdf.wdf_coinstaller_install_options_init, DFCoinstallerRef_7a993590-87f2-4613-93d4-ffbc76672d8e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,10 @@ The <b>WDF_COINSTALLER_INSTALL_OPTIONS_INIT</b> function zeros the specified <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfinstaller.h (include Wdfinstaller.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

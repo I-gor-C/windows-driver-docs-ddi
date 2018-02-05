@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5d17d970-56b7-494a-aa7b-d60065ff06d8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetDriver method, wdf.iwdfdevice_getdriver, IWDFDevice interface, GetDriver method, UMDFDeviceObjectRef_6c0cfbb6-1ee7-4c7b-b4ec-0b957630e094.xml, IWDFDevice::GetDriver, GetDriver, IWDFDevice, umdf.iwdfdevice_getdriver, GetDriver method, IWDFDevice interface, wudfddi/IWDFDevice::GetDriver
+ms.keywords : wdf.iwdfdevice_getdriver, IWDFDevice::GetDriver, IWDFDevice interface, GetDriver method, GetDriver method, IWDFDevice interface, UMDFDeviceObjectRef_6c0cfbb6-1ee7-4c7b-b4ec-0b957630e094.xml, wudfddi/IWDFDevice::GetDriver, IWDFDevice, umdf.iwdfdevice_getdriver, GetDriver, GetDriver method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,20 +71,18 @@ For a code example of how to use the GetDriver method, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
 
  
 

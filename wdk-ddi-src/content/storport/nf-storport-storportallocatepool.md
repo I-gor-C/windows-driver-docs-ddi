@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e6823b9c-9717-49ab-8e67-c1d522774826
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortAllocatePool, storage.storportallocatepool, storprt_4ede181d-6ccf-47af-974d-b0daaa6e723a.xml, StorPortAllocatePool routine [Storage Devices], storport/StorPortAllocatePool
+ms.keywords : storport/StorPortAllocatePool, storage.storportallocatepool, StorPortAllocatePool routine [Storage Devices], storprt_4ede181d-6ccf-47af-974d-b0daaa6e723a.xml, StorPortAllocatePool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -145,11 +145,8 @@ A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a bl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortAllocatePool2, StorPortIrql |

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : ec832068-9b5d-40ce-bafc-31642539e2d9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSJACK_SINK_INFORMATION, ksmedia/PKSJACK_SINK_INFORMATION, aud-prop_e9bbfa8a-d002-400c-a35d-3da0a8026cd6.xml, KSJACK_SINK_INFORMATION structure [Audio Devices], PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION structure pointer [Audio Devices], *PKSJACK_SINK_INFORMATION, _tagKSJACK_SINK_INFORMATION, audio.ksjack_sink_information, ksmedia/KSJACK_SINK_INFORMATION
+ms.keywords : "*PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION structure pointer [Audio Devices], _tagKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION structure [Audio Devices], KSJACK_SINK_INFORMATION, aud-prop_e9bbfa8a-d002-400c-a35d-3da0a8026cd6.xml, ksmedia/KSJACK_SINK_INFORMATION, audio.ksjack_sink_information, ksmedia/PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION"
+req.typenames : KSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION
 ---
 
 # _tagKSJACK_SINK_INFORMATION structure
@@ -99,9 +99,7 @@ Specifies the length of the <b>SinkDescription</b>[] member.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later Windows operating systems. Available in Windows 7 and later Windows operating systems. |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

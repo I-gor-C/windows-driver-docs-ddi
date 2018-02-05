@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSAGE_AND_PAGE, USAGE_AND_PAGE"
+req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR IOCTL
@@ -74,9 +74,7 @@ HID minidrivers that carry out the I/O to the device must also:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidport.h |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2554a212-edc0-4641-98bb-2db36ff0266f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntddk/RtlInsertElementGenericTable, RtlInsertElementGenericTable routine [Installable File System Drivers], ifsk.rtlinsertelementgenerictable, rtlref_62ab1129-906f-4ef7-b0d1-bec4bf6fce62.xml, RtlInsertElementGenericTable
+ms.keywords : ntddk/RtlInsertElementGenericTable, rtlref_62ab1129-906f-4ef7-b0d1-bec4bf6fce62.xml, ifsk.rtlinsertelementgenerictable, RtlInsertElementGenericTable routine [Installable File System Drivers], RtlInsertElementGenericTable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,14 +109,11 @@ The caller-supplied <i>CompareRoutine</i> or <i>AllocateRoutine</i> contains pag
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

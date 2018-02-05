@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 896209d0-d545-495b-b743-98c0b9d976ff
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PTP_VENDOR_DATA_IN structure [Imaging Devices], ptpusd/PPTP_VENDOR_DATA_IN, _PTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN, ptpusd/PTP_VENDOR_DATA_IN, wiastrct_b0ebb671-78d9-4224-8bde-893fb0afc9f8.xml, *PPTP_VENDOR_DATA_IN, image.ptp_vendor_data_in, PTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN structure pointer [Imaging Devices]
+ms.keywords : PTP_VENDOR_DATA_IN, ptpusd/PPTP_VENDOR_DATA_IN, image.ptp_vendor_data_in, ptpusd/PTP_VENDOR_DATA_IN, wiastrct_b0ebb671-78d9-4224-8bde-893fb0afc9f8.xml, PPTP_VENDOR_DATA_IN, _PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN structure pointer [Imaging Devices], PTP_VENDOR_DATA_IN structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -130,9 +130,7 @@ For more information about the opcodes used in the <b>OpCode</b> member, see PIM
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
 | **Header** | ptpusd.h (include Ptpusd.h) |
 
 ## See Also

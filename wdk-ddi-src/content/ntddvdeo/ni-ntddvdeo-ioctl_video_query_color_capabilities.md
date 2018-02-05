@@ -69,9 +69,7 @@ If the miniport driver successfully returns the color-capabilities data, it sets
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 

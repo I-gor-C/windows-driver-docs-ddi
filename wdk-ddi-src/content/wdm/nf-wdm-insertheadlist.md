@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c3ad9d93-93e1-406b-9a58-26dcbf428b50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : InsertHeadList, wdm/InsertHeadList, InsertHeadList routine [Kernel-Mode Driver Architecture], kernel.insertheadlist, k109_dde56187-8543-45cc-97fd-3fde2475e428.xml
+ms.keywords : kernel.insertheadlist, k109_dde56187-8543-45cc-97fd-3fde2475e428.xml, InsertHeadList routine [Kernel-Mode Driver Architecture], InsertHeadList, wdm/InsertHeadList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,28 +78,26 @@ Callers of <b>InsertHeadList</b> can be running at any IRQL. If <b>InsertHeadLis
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
 | **DDI compliance rules** | IoAllocateFree, IoReuseIrp, MarkingQueuedIrps, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
-
-<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
+<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 
 <a href="..\wdm\nf-wdm-removeheadlist.md">RemoveHeadList</a>
 
-<a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
+<a href="..\wdm\nf-wdm-islistempty.md">IsListEmpty</a>
 
 <a href="..\wdm\nf-wdm-exinterlockedinsertheadlist.md">ExInterlockedInsertHeadList</a>
 
-<a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
+<a href="..\wdm\nf-wdm-inserttaillist.md">InsertTailList</a>
+
+<a href="..\wdm\nf-wdm-removetaillist.md">RemoveTailList</a>
 
  
 

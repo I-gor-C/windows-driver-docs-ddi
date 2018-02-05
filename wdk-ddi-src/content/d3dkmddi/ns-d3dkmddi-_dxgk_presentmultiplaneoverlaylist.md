@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 970b3155-9e81-4725-90ee-079339c1d5c5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PRESENTMULTIPLANEOVERLAYLIST structure [Display Devices], d3dkmddi/DXGK_PRESENTMULTIPLANEOVERLAYLIST, DXGK_PRESENTMULTIPLANEOVERLAYLIST, display.dxgk_presentmultiplaneoverlaylist, _DXGK_PRESENTMULTIPLANEOVERLAYLIST
+ms.keywords : DXGK_PRESENTMULTIPLANEOVERLAYLIST, _DXGK_PRESENTMULTIPLANEOVERLAYLIST, display.dxgk_presentmultiplaneoverlaylist, DXGK_PRESENTMULTIPLANEOVERLAYLIST structure [Display Devices], d3dkmddi/DXGK_PRESENTMULTIPLANEOVERLAYLIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,9 +78,7 @@ The zero-based index of the overlay plane to display. The top plane (in the z-di
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

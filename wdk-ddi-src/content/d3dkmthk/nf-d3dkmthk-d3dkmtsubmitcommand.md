@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E726B4AC-F003-45B3-B467-F123DBE60D87
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSubmitCommand function [Display Devices], display.d3dkmtsubmitcommand, d3dkmthk/D3DKMTSubmitCommand, D3DKMTSubmitCommand
+ms.keywords : d3dkmthk/D3DKMTSubmitCommand, D3DKMTSubmitCommand function [Display Devices], display.d3dkmtsubmitcommand, D3DKMTSubmitCommand
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,14 +101,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 

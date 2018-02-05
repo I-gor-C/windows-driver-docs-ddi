@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : b10dbb47-394c-42f0-9471-6e5deb73a7b9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_ERROR_TYPE, ntddk/WheaErrTypePCIXDevice, WheaErrTypeMemory, _WHEA_ERROR_TYPE, ntddk/WheaErrTypePCIExpress, WheaErrTypePCIXBus, WheaErrTypeNMI, ntddk/WheaErrTypePCIXBus, ntddk/WheaErrTypeNMI, WheaErrTypeGeneric, WHEA_ERROR_TYPE, whea.whea_error_type, WheaErrTypeProcessor, WHEA_ERROR_TYPE enumeration [WHEA Drivers and Applications], WheaErrTypePCIXDevice, *PWHEA_ERROR_TYPE, whearef_4e585fa6-81e5-4196-b7fa-6194d3701835.xml, ntddk/WheaErrTypeProcessor, ntddk/WheaErrTypeMemory, PWHEA_ERROR_TYPE enumeration pointer [WHEA Drivers and Applications], ntddk/WheaErrTypeGeneric, ntddk/WHEA_ERROR_TYPE, WheaErrTypePCIExpress, ntddk/PWHEA_ERROR_TYPE
+ms.keywords : ntddk/WheaErrTypeMemory, ntddk/WheaErrTypePCIXBus, ntddk/WheaErrTypeProcessor, whea.whea_error_type, WheaErrTypeProcessor, WHEA_ERROR_TYPE, WheaErrTypeNMI, PWHEA_ERROR_TYPE, ntddk/WheaErrTypeNMI, ntddk/WheaErrTypeGeneric, WheaErrTypePCIXDevice, WheaErrTypeMemory, ntddk/WHEA_ERROR_TYPE, _WHEA_ERROR_TYPE, PWHEA_ERROR_TYPE enumeration pointer [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_TYPE, ntddk/WheaErrTypePCIExpress, WheaErrTypePCIXBus, whearef_4e585fa6-81e5-4196-b7fa-6194d3701835.xml, WheaErrTypeGeneric, WHEA_ERROR_TYPE enumeration [WHEA Drivers and Applications], *PWHEA_ERROR_TYPE, WheaErrTypePCIExpress, ntddk/WheaErrTypePCIXDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WHEA_ERROR_TYPE, *PWHEA_ERROR_TYPE
+req.typenames : "*PWHEA_ERROR_TYPE, WHEA_ERROR_TYPE"
 ---
 
 # _WHEA_ERROR_TYPE Enumeration
@@ -101,9 +101,7 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8e286cb2-87f4-483b-bc55-f174e7de5989
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.idd_cx_client_config, IDD_CX_CLIENT_CONFIG structure [Display Devices], IDD_CX_CLIENT_CONFIG, iddcx/IDD_CX_CLIENT_CONFIG
+ms.keywords : iddcx/IDD_CX_CLIENT_CONFIG, display.idd_cx_client_config, IDD_CX_CLIENT_CONFIG, IDD_CX_CLIENT_CONFIG structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -154,7 +154,4 @@ The total size of the structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

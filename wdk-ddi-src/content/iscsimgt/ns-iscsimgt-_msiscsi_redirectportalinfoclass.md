@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fcddf029-748b-4300-9f87-a103d961918a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMSiSCSI_RedirectPortalInfoClass structure pointer [Storage Devices], storage.msiscsi_redirectportalinfoclass, _MSiSCSI_RedirectPortalInfoClass, *PMSiSCSI_RedirectPortalInfoClass, PMSiSCSI_RedirectPortalInfoClass, iscsimgt/MSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass structure [Storage Devices], MSiSCSI_RedirectPortalInfoClass, structs-iSCSI_211386cb-7e73-40d9-8284-560555fe8201.xml, iscsimgt/PMSiSCSI_RedirectPortalInfoClass
+ms.keywords : "*PMSiSCSI_RedirectPortalInfoClass, structs-iSCSI_211386cb-7e73-40d9-8284-560555fe8201.xml, MSiSCSI_RedirectPortalInfoClass structure [Storage Devices], PMSiSCSI_RedirectPortalInfoClass, PMSiSCSI_RedirectPortalInfoClass structure pointer [Storage Devices], _MSiSCSI_RedirectPortalInfoClass, iscsimgt/PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass, storage.msiscsi_redirectportalinfoclass, iscsimgt/MSiSCSI_RedirectPortalInfoClass"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,7 +71,4 @@ You must implement this class if the adapter supports target portal hopping. Oth
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsimgt.h (include Iscsimgt.h) |

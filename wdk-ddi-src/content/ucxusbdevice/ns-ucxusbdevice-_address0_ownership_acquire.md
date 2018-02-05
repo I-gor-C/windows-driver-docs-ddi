@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D2FECBA5-21DF-411C-BBDB-968328E18C12
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : P_ADDRESS0_OWNERSHIP_ACQUIRE structure pointer [Buses], ucxusbdevice/_ADDRESS0_OWNERSHIP_ACQUIRE, buses._address0_ownership_acquire, ADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE structure [Buses], P_ADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE, _ADDRESS0_OWNERSHIP_ACQUIRE, ucxusbdevice/P_ADDRESS0_OWNERSHIP_ACQUIRE
+ms.keywords : ADDRESS0_OWNERSHIP_ACQUIRE, P_ADDRESS0_OWNERSHIP_ACQUIRE structure pointer [Buses], _ADDRESS0_OWNERSHIP_ACQUIRE, ucxusbdevice/P_ADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE, ucxusbdevice/_ADDRESS0_OWNERSHIP_ACQUIRE, buses._address0_ownership_acquire, P_ADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE"
+req.typenames : ADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE
 req.product : Windows 10 or later.
 ---
 
@@ -64,7 +64,4 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |

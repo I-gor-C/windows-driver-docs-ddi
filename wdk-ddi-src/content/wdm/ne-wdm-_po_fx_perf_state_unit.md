@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E16657AE-9EEF-4E36-AAC5-5BF822006F1C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PoFxPerfStateUnitOther, PO_FX_PERF_STATE_UNIT, wdm/PPO_FX_PERF_STATE_UNIT, PoFxPerfStateUnitMaximum, _PO_FX_PERF_STATE_UNIT, *PPO_FX_PERF_STATE_UNIT, PoFxPerfStateUnitBandwidth, wdm/PoFxPerfStateUnitFrequency, PPO_FX_PERF_STATE_UNIT enumeration pointer [Kernel-Mode Driver Architecture], PO_FX_PERF_STATE_UNIT enumeration [Kernel-Mode Driver Architecture], PoFxPerfStateUnitOther, wdm/PoFxPerfStateUnitMaximum, PPO_FX_PERF_STATE_UNIT, wdm/PoFxPerfStateUnitBandwidth, PoFxPerfStateUnitFrequency, wdm/PO_FX_PERF_STATE_UNIT, kernel.po_fx_perf_state_unit
+ms.keywords : wdm/PoFxPerfStateUnitOther, wdm/PoFxPerfStateUnitMaximum, wdm/PoFxPerfStateUnitBandwidth, wdm/PoFxPerfStateUnitFrequency, wdm/PO_FX_PERF_STATE_UNIT, PPO_FX_PERF_STATE_UNIT, PPO_FX_PERF_STATE_UNIT enumeration pointer [Kernel-Mode Driver Architecture], PoFxPerfStateUnitMaximum, _PO_FX_PERF_STATE_UNIT, wdm/PPO_FX_PERF_STATE_UNIT, PoFxPerfStateUnitFrequency, PoFxPerfStateUnitOther, PoFxPerfStateUnitBandwidth, *PPO_FX_PERF_STATE_UNIT, kernel.po_fx_perf_state_unit, PO_FX_PERF_STATE_UNIT, PO_FX_PERF_STATE_UNIT enumeration [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPO_FX_PERF_STATE_UNIT, PO_FX_PERF_STATE_UNIT"
+req.typenames : PO_FX_PERF_STATE_UNIT, *PPO_FX_PERF_STATE_UNIT
 req.product : Windows 10 or later.
 ---
 
@@ -84,16 +84,14 @@ The <b>Unit</b> member of the <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | wdm.h |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
-
 <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
+
+<a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c61e343a-5276-4cb8-87ff-9852ad167ff5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestRetrieveOutputMemory, kmdf.wdfrequestretrieveoutputmemory, DFRequestObjectRef_fdcaef98-5478-42af-a61e-669eec37907e.xml, PFN_WDFREQUESTRETRIEVEOUTPUTMEMORY, wdfrequest/WdfRequestRetrieveOutputMemory, wdf.wdfrequestretrieveoutputmemory, WdfRequestRetrieveOutputMemory method
+ms.keywords : PFN_WDFREQUESTRETRIEVEOUTPUTMEMORY, kmdf.wdfrequestretrieveoutputmemory, WdfRequestRetrieveOutputMemory, WdfRequestRetrieveOutputMemory method, DFRequestObjectRef_fdcaef98-5478-42af-a61e-669eec37907e.xml, wdfrequest/WdfRequestRetrieveOutputMemory, wdf.wdfrequestretrieveoutputmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -154,20 +154,19 @@ For more information about <b>WdfRequestRetrieveOutputMemory</b>, see <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, MemAfterReqCompletedIntIoctl, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctl, MemAfterReqCompletedIoctlA, MemAfterReqCompletedRead, MemAfterReqCompletedReadA, MemAfterReqCompletedWrite, OutputBufferAPI |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">WdfRequestRetrieveOutputBuffer</a>
-
 <a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">WdfRequestRetrieveOutputBuffer</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputmemory.md">WdfRequestRetrieveInputMemory</a>
 

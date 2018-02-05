@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : edc9bd9b-938f-43df-80fd-5a4d49f6f768
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_OFDM_PHY_ATTRIBUTES, PDOT11_OFDM_PHY_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_ofdm_phy_attributes, PDOT11_OFDM_PHY_ATTRIBUTES, DOT11_OFDM_PHY_ATTRIBUTES, *PDOT11_OFDM_PHY_ATTRIBUTES, DOT11_OFDM_PHY_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_20b6778d-4037-488b-a99f-304258498618.xml, windot11/DOT11_OFDM_PHY_ATTRIBUTES
+ms.keywords : "*PDOT11_OFDM_PHY_ATTRIBUTES, DOT11_OFDM_PHY_ATTRIBUTES, netvista.dot11_ofdm_phy_attributes, PDOT11_OFDM_PHY_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_OFDM_PHY_ATTRIBUTES, DOT11_OFDM_PHY_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], windot11/DOT11_OFDM_PHY_ATTRIBUTES, Native_802.11_data_types_20b6778d-4037-488b-a99f-304258498618.xml, PDOT11_OFDM_PHY_ATTRIBUTES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_OFDM_PHY_ATTRIBUTES, *PDOT11_OFDM_PHY_ATTRIBUTES
+req.typenames : "*PDOT11_OFDM_PHY_ATTRIBUTES, DOT11_OFDM_PHY_ATTRIBUTES"
 req.product : Windows 10 or later.
 ---
 
@@ -158,9 +158,7 @@ The miniport driver defines the attributes of a PHY on the 802.11 station throug
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also

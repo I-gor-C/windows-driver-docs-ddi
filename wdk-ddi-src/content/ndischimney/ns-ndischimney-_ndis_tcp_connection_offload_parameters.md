@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f8d3f971-2abc-425d-9929-518f093262a7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndischimney/PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, netvista.ndis_tcp_connection_offload_parameters, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, tcp_chim_struct_481b5b2a-f226-4306-a2a9-640f711fb75b.xml, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ndischimney/NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : ndischimney/PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, tcp_chim_struct_481b5b2a-f226-4306-a2a9-640f711fb75b.xml, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, ndischimney/NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, netvista.ndis_tcp_connection_offload_parameters, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -42,8 +42,8 @@ req.typenames : "*PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_O
 <p class="CCE_Message">[The TCP chimney offload feature is deprecated and should not be used.]
 
 The NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure provides TCP chimney offload information in the 
-  <mshelp:link keywords="netvista.oid_tcp_connection_offload_parameters" tabindex="0">
-  OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</mshelp:link> OIDs:
+  <a href="https://msdn.microsoft.com/en-us/library/gg158102.aspx">
+  OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</a> OIDs:
 
 ## Syntax
 ````
@@ -80,8 +80,8 @@ If you are an independent hardware vendor (IHV) and you want to implement nondef
 `Encapsulation`
 
 An 
-     <mshelp:link keywords="netvista.ndis_offload_encapsulation" tabindex="0"><b>
-     NDIS_OFFLOAD_ENCAPSULATION</b></mshelp:link> structure that contains encapsulation settings for TCP chimney
+     <a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">
+     NDIS_OFFLOAD_ENCAPSULATION</a> structure that contains encapsulation settings for TCP chimney
      offload.
 
 `Header`
@@ -134,8 +134,8 @@ A ULONG value that the TCP/IP driver stack sets to specify the number of duplica
 A UCHAR value that the TCP/IP driver stack sets to specify the maximum number of times that the
      offload target should retransmit a segment on a TCP connection. When the retransmit counter for a TCP
      connection exceeds this limit, the offload target can call the 
-     <mshelp:link keywords="netvista.ndistcpoffloadeventhandler" tabindex="0"><b>
-     NdisTcpOffloadEventHandler</b></mshelp:link> function with an 
+     <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">
+     NdisTcpOffloadEventHandler</a> function with an 
      <b>EventType</b> parameter of 
      <b>TcpIndicateRetrieve</b> to request that the TCP/IP driver stack terminate the
      offload of the connection. An offload target must support this member.
@@ -166,8 +166,8 @@ In NDIS 6.0 and later versions, the NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS struc
 
 To specify various offload parameter settings, NDIS and overlying drivers supply an
     NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure when they set the 
-    <mshelp:link keywords="netvista.oid_tcp_connection_offload_parameters" tabindex="0">
-    OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</mshelp:link> OID.
+    <a href="https://msdn.microsoft.com/en-us/library/gg158102.aspx">
+    OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</a> OID.
 
 To obtain the current settings of various offload parameters, NDIS and overlying drivers query
     OID_TCP_CONNECTION_OFFLOAD_PARAMETERS. The miniport driver returns the current settings in the
@@ -176,31 +176,28 @@ To obtain the current settings of various offload parameters, NDIS and overlying
 The 
     <b>Encapsulation</b> member of NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS defines the TCP
     chimney offload encapsulation settings for the miniport adapter. For more information, see the 
-    <mshelp:link keywords="netvista.full_tcp_offload" tabindex="0">NDIS 6.0 TCP chimney offload
-    documentation</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/full-tcp-offload">NDIS 6.0 TCP chimney offload
+    documentation</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">NDIS_OFFLOAD_ENCAPSULATION</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
-
-<mshelp:link keywords="netvista.oid_tcp_connection_offload_parameters" tabindex="0">
-   OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</mshelp:link>
-
-<a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>
+<a href="https://msdn.microsoft.com/en-us/library/gg158102.aspx">
+   OID_TCP_CONNECTION_OFFLOAD_PARAMETERS</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/full-tcp-offload">Full TCP Offload</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>
+
+<a href="..\ndis\ns-ndis-_ndis_offload_encapsulation.md">NDIS_OFFLOAD_ENCAPSULATION</a>
+
+<a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>
 
  
 

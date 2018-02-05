@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8cc413c4-e4fe-449b-a66a-c79da01ad3be
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MODE_ROTATION enumeration [Display Devices], DXGI_DDI_MODE_ROTATION_IDENTITY, dxgiddi/DXGI_DDI_MODE_ROTATION_IDENTITY, DXGI_DDI_MODE_ROTATION_UNSPECIFIED, display.dxgi_ddi_mode_rotation, dxgiddi/DXGI_DDI_MODE_ROTATION_UNSPECIFIED, DXGI_DDI_MODE_ROTATION_ROTATE180, DXGI_DDI_MODE_ROTATION_ROTATE270, dxgiddi/DXGI_DDI_MODE_ROTATION, UMDisplayDriver_Dx10param_Structs_61b842eb-a4b4-4d86-95b8-eca448b35b5e.xml, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE180, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE90, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE270, DXGI_DDI_MODE_ROTATION, DXGI_DDI_MODE_ROTATION_ROTATE90
+ms.keywords : dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE180, DXGI_DDI_MODE_ROTATION_UNSPECIFIED, DXGI_DDI_MODE_ROTATION enumeration [Display Devices], DXGI_DDI_MODE_ROTATION_ROTATE270, DXGI_DDI_MODE_ROTATION_ROTATE180, dxgiddi/DXGI_DDI_MODE_ROTATION, display.dxgi_ddi_mode_rotation, DXGI_DDI_MODE_ROTATION_IDENTITY, DXGI_DDI_MODE_ROTATION_ROTATE90, dxgiddi/DXGI_DDI_MODE_ROTATION_IDENTITY, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE270, UMDisplayDriver_Dx10param_Structs_61b842eb-a4b4-4d86-95b8-eca448b35b5e.xml, dxgiddi/DXGI_DDI_MODE_ROTATION_ROTATE90, DXGI_DDI_MODE_ROTATION, dxgiddi/DXGI_DDI_MODE_ROTATION_UNSPECIFIED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,9 +86,7 @@ typedef enum DXGI_DDI_MODE_ROTATION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

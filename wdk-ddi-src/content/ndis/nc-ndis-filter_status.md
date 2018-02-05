@@ -81,8 +81,8 @@ None
 
 <i>FilterStatus</i> is an optional function. If a filter driver does not use status indications, it can
     set the entry point for this function to <b>NULL</b> when it calls the 
-    <mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> function.
 
 To determine link status, use the status indications from underlying drivers instead of OID queries.
     These status indications will improve system performance and avoid possible race conditions.
@@ -133,24 +133,20 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
 <a href="..\ndis\nf-ndis-ndisfindicatestatus.md">NdisFIndicateStatus</a>
 
 <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
-
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
  
 

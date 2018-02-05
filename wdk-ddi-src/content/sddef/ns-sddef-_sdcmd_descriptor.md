@@ -8,7 +8,7 @@ old-project : SD
 ms.assetid : 7c49c394-d0b3-4594-a623-0a13825bdcec
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : SDCMD_DESCRIPTOR structure [Buses], SDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR structure pointer [Buses], *PSDCMD_DESCRIPTOR, sddef/PSDCMD_DESCRIPTOR, sd-structs_20a7faa8-4e91-49cc-94eb-13bd584a25a3.xml, sddef/SDCMD_DESCRIPTOR, _SDCMD_DESCRIPTOR, SD.sdcmd_descriptor
+ms.keywords : "_SDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR, sd-structs_20a7faa8-4e91-49cc-94eb-13bd584a25a3.xml, sddef/SDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR, SD.sdcmd_descriptor, sddef/PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR structure [Buses], *PSDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR structure pointer [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,28 +107,25 @@ Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACK
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sddef.h (include Sddef.h) |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538045">SD_TRANSFER_TYPE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a>
+<a href="https://msdn.microsoft.com/1e821ca5-ff65-48a1-be5c-6d776c61f166">SD_TRANSFER_DIRECTION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538003">SD_COMMAND_CLASS</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538012">SD_REQUEST_FUNCTION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538045">SD_TRANSFER_TYPE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538008">SD_COMMAND_CODE</a>
 
-<a href="https://msdn.microsoft.com/1e821ca5-ff65-48a1-be5c-6d776c61f166">SD_TRANSFER_DIRECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538025">SD_RESPONSE_TYPE</a>
 
  
 

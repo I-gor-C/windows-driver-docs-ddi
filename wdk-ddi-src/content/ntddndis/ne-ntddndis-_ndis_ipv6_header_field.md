@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 753BBA25-B0D5-4EBC-BA47-07ABEBCBA47D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_IPV6_HEADER_FIELD, NDIS_IPV6_HEADER_FIELD, ntddndis/NdisIPv6HeaderFieldMaximum, ntddndis/NdisIPv6HeaderFieldUndefined, NdisIPv6HeaderFieldUndefined, PNDIS_IPV6_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], *PNDIS_IPV6_HEADER_FIELD, NDIS_IPV6_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_IPV6_HEADER_FIELD, NdisIPv6HeaderFieldProtocol, netvista.ndis_ipv6_header_field, _NDIS_IPV6_HEADER_FIELD, ntddndis/NdisIPv6HeaderFieldProtocol, ntddndis/NDIS_IPV6_HEADER_FIELD, NdisIPv6HeaderFieldMaximum
+ms.keywords : ntddndis/PNDIS_IPV6_HEADER_FIELD, PNDIS_IPV6_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_IPV6_HEADER_FIELD, NDIS_IPV6_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista], NdisIPv6HeaderFieldMaximum, ntddndis/NdisIPv6HeaderFieldProtocol, netvista.ndis_ipv6_header_field, ntddndis/NdisIPv6HeaderFieldUndefined, ntddndis/NdisIPv6HeaderFieldMaximum, NdisIPv6HeaderFieldProtocol, *PNDIS_IPV6_HEADER_FIELD, NdisIPv6HeaderFieldUndefined, ntddndis/NDIS_IPV6_HEADER_FIELD, NDIS_IPV6_HEADER_FIELD, PNDIS_IPV6_HEADER_FIELD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_IPV6_HEADER_FIELD, NDIS_IPV6_HEADER_FIELD"
+req.typenames : NDIS_IPV6_HEADER_FIELD, *PNDIS_IPV6_HEADER_FIELD
 ---
 
 # _NDIS_IPV6_HEADER_FIELD Enumeration
@@ -74,21 +74,19 @@ typedef enum _NDIS_IPV6_HEADER_FIELD {
 ## Remarks
 
 The <b>NDIS_IPV6_HEADER_FIELD</b> enumeration is used in the 
-    <mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later Supported in NDIS 6.30 and later |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
  
 

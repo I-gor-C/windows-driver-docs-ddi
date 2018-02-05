@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b579fd85-5073-4894-a4ef-e56638f45ef6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetDefaultClockState, ksfunc_9b1067e9-8d12-42a5-969e-0ec6205f12e2.xml, ks/KsGetDefaultClockState, stream.ksgetdefaultclockstate, KsGetDefaultClockState function [Streaming Media Devices]
+ms.keywords : KsGetDefaultClockState function [Streaming Media Devices], ks/KsGetDefaultClockState, KsGetDefaultClockState, ksfunc_9b1067e9-8d12-42a5-969e-0ec6205f12e2.xml, stream.ksgetdefaultclockstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,14 +67,9 @@ The <b>KsGetDefaultClockState</b> function returns the current clock state.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

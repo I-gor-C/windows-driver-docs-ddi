@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 336dbbc1-0f3c-4a3f-b3b4-017f4d158bda
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsGenerateEventList, ksfunc_d4a351ab-f750-4486-99ae-72c42794bee0.xml, KsGenerateEventList, stream.ksgenerateeventlist, KsGenerateEventList function [Streaming Media Devices]
+ms.keywords : KsGenerateEventList function [Streaming Media Devices], ksfunc_d4a351ab-f750-4486-99ae-72c42794bee0.xml, stream.ksgenerateeventlist, ks/KsGenerateEventList, KsGenerateEventList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,20 +88,16 @@ This function can be called at any IRQL level if the locking mechanism permits i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | Any level (See Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
-
 <a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
+
+<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 
 <a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 

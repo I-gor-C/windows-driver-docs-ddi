@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 08140a38-19dd-4fce-8659-ab5eb3257f2f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, dbgeng/IDebugControl::OutputPromptVaList, IDebugControl::OutputPromptVaList, IDebugControl3::OutputPromptVaList, IDebugControl3 interface [Windows Debugging], OutputPromptVaList method, IDebugControl_fc743964-a97c-45d2-8167-0e7401c7a546.xml, OutputPromptVaList method [Windows Debugging], IDebugControl interface, OutputPromptVaList method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], debugger.outputpromptvalist, dbgeng/IDebugControl3::OutputPromptVaList, IDebugControl interface [Windows Debugging], OutputPromptVaList method, OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl3 interface, IDebugControl2::OutputPromptVaList, IDebugControl2 interface [Windows Debugging], OutputPromptVaList method
+ms.keywords : debugger.outputpromptvalist, IDebugControl2::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], dbgeng/IDebugControl3::OutputPromptVaList, dbgeng/IDebugControl::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl2 interface, OutputPromptVaList, IDebugControl_fc743964-a97c-45d2-8167-0e7401c7a546.xml, IDebugControl3, IDebugControl::OutputPromptVaList, dbgeng/IDebugControl2::OutputPromptVaList, IDebugControl3 interface [Windows Debugging], OutputPromptVaList method, IDebugControl2 interface [Windows Debugging], OutputPromptVaList method, IDebugControl3::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], OutputPromptVaList method, OutputPromptVaList method [Windows Debugging], IDebugControl3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -275,28 +275,23 @@ For more information about prompting the user, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Stdarg.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553227">OutputPrompt</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553227">OutputPrompt</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 

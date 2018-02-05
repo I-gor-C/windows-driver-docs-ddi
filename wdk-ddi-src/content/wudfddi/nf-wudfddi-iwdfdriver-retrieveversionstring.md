@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2fa320df-bafd-42f4-a0a1-14151c39d68a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdriver_retrieveversionstring, RetrieveVersionString, RetrieveVersionString method, IWDFDriver interface, IWDFDriver interface, RetrieveVersionString method, wdf.iwdfdriver_retrieveversionstring, IWDFDriver, IWDFDriver::RetrieveVersionString, wudfddi/IWDFDriver::RetrieveVersionString, RetrieveVersionString method, UMDFDriverObjectRef_fea0fb04-a861-44b6-8552-150454f9933d.xml
+ms.keywords : IWDFDriver::RetrieveVersionString, RetrieveVersionString method, IWDFDriver, wdf.iwdfdriver_retrieveversionstring, RetrieveVersionString method, IWDFDriver interface, IWDFDriver interface, RetrieveVersionString method, RetrieveVersionString, umdf.iwdfdriver_retrieveversionstring, UMDFDriverObjectRef_fea0fb04-a861-44b6-8552-150454f9933d.xml, wudfddi/IWDFDriver::RetrieveVersionString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -94,11 +94,9 @@ The buffer at <i>pVersion</i> was <b>NULL</b>, the driver preset the variable at
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |

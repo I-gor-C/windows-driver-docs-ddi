@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 81b979a8-87bb-48f3-b44a-bac9286648fa
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_62696d8f-cfb1-43fd-8b23-b14f1ac0d429.xml, StorPortResumeDevice routine [Storage Devices], storport/StorPortResumeDevice, StorPortResumeDevice, storage.storportresumedevice
+ms.keywords : storage.storportresumedevice, storprt_62696d8f-cfb1-43fd-8b23-b14f1ac0d429.xml, StorPortResumeDevice routine [Storage Devices], storport/StorPortResumeDevice, StorPortResumeDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,9 @@ Identifies the logical unit number of the target device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

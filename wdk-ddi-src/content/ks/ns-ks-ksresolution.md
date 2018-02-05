@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fbd6222c-6d54-4e2a-aa5b-8051f0838886
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSRESOLUTION, PKSRESOLUTION, KSRESOLUTION structure [Streaming Media Devices], ks/KSRESOLUTION, *PKSRESOLUTION, ks-struct_eb48cf83-0b80-4955-89a4-0b363497bef5.xml, stream.ksresolution, ks/PKSRESOLUTION, PKSRESOLUTION structure pointer [Streaming Media Devices]
+ms.keywords : stream.ksresolution, PKSRESOLUTION, KSRESOLUTION, ks/PKSRESOLUTION, KSRESOLUTION structure [Streaming Media Devices], ks-struct_eb48cf83-0b80-4955-89a4-0b363497bef5.xml, *PKSRESOLUTION, ks/KSRESOLUTION, PKSRESOLUTION structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSRESOLUTION, *PKSRESOLUTION
+req.typenames : "*PKSRESOLUTION, KSRESOLUTION"
 ---
 
 # KSRESOLUTION structure
@@ -66,9 +66,6 @@ Vendors can supply a structure of type KSRESOLUTION in a <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

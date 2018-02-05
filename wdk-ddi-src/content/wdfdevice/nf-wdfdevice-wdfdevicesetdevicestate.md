@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bee3c0e9-9196-4e9b-9b75-08883f452304
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicesetdevicestate, wdfdevice/WdfDeviceSetDeviceState, WdfDeviceSetDeviceState, DFDeviceObjectGeneralRef_41bd0604-a8fb-4df9-a1d2-f602d7ddcac4.xml, WdfDeviceSetDeviceState method, PFN_WDFDEVICESETDEVICESTATE, kmdf.wdfdevicesetdevicestate
+ms.keywords : wdfdevice/WdfDeviceSetDeviceState, DFDeviceObjectGeneralRef_41bd0604-a8fb-4df9-a1d2-f602d7ddcac4.xml, WdfDeviceSetDeviceState, wdf.wdfdevicesetdevicestate, PFN_WDFDEVICESETDEVICESTATE, WdfDeviceSetDeviceState method, kmdf.wdfdevicesetdevicestate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,12 +78,11 @@ When a driver calls <b>WdfDeviceSetDeviceState</b>, the framework notifies the P
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

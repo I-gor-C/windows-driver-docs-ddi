@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 265912e2-2076-4435-811f-70a3dd1a0bd7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_SETPALETTE, d3dumddi/D3DDDIARG_SETPALETTE, UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, _D3DDDIARG_SETPALETTE, display.d3dddiarg_setpalette, D3DDDIARG_SETPALETTE structure [Display Devices]
+ms.keywords : d3dumddi/D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE, UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, display.d3dddiarg_setpalette, _D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -107,9 +107,7 @@ The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

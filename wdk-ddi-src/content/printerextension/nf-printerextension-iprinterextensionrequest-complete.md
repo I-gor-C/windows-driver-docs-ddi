@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 2182A3E0-6CFD-4B29-BE78-EE38CA630FA1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterExtensionRequest, print.iprinterextensionrequest_complete, Complete method [Print Devices], Complete, IPrinterExtensionRequest::Complete, Complete method [Print Devices], IPrinterExtensionRequest interface, printerextension/IPrinterExtensionRequest::Complete, IPrinterExtensionRequest interface [Print Devices], Complete method
+ms.keywords : IPrinterExtensionRequest interface [Print Devices], Complete method, Complete, print.iprinterextensionrequest_complete, IPrinterExtensionRequest, Complete method [Print Devices], IPrinterExtensionRequest interface, Complete method [Print Devices], printerextension/IPrinterExtensionRequest::Complete, IPrinterExtensionRequest::Complete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -63,14 +63,10 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e052e3bc-688e-4aa8-b987-88ed6963774a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_ENGINESTATUS structure [Display Devices], d3dkmddi/DXGK_ENGINESTATUS, _DXGK_ENGINESTATUS, display.dxgk_enginestatus, DXGK_ENGINESTATUS
+ms.keywords : d3dkmddi/DXGK_ENGINESTATUS, display.dxgk_enginestatus, DXGK_ENGINESTATUS structure [Display Devices], DXGK_ENGINESTATUS, _DXGK_ENGINESTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,9 +61,7 @@ typedef struct _DXGK_ENGINESTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

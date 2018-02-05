@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 96dd78f1-8b71-4707-8b66-20d80c198f81
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoMakeAssociatedIrp, ntddk/IoMakeAssociatedIrp, IoMakeAssociatedIrp routine [Kernel-Mode Driver Architecture], k104_35615730-15a8-4959-8c4d-8e9b4a186e10.xml, kernel.iomakeassociatedirp
+ms.keywords : k104_35615730-15a8-4959-8c4d-8e9b4a186e10.xml, IoMakeAssociatedIrp routine [Kernel-Mode Driver Architecture], kernel.iomakeassociatedirp, IoMakeAssociatedIrp, ntddk/IoMakeAssociatedIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,20 +77,16 @@ Only the master IRP is associated with a thread; associated IRPs are not. For th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
-
-<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
+<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 
 <a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
 
@@ -98,9 +94,11 @@ Only the master IRP is associated with a thread; associated IRPs are not. For th
 
 <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
 
-<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
+<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
  
 

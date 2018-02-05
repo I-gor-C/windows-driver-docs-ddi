@@ -69,9 +69,7 @@ The driver sets the <b>Status</b> field to STATUS_SUCCESS. Otherwise, the driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
-| **IRQL** |  |
 
 ## See Also
 

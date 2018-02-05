@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : dabd472f-9877-4434-a534-e07a047e092f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista], NdisMCoIndicateReceiveNetBufferLists, netvista.ndismcoindicatereceivenetbufferlists, condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, ndis/NdisMCoIndicateReceiveNetBufferLists
+ms.keywords : ndis/NdisMCoIndicateReceiveNetBufferLists, NdisMCoIndicateReceiveNetBufferLists, condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, netvista.ndismcoindicatereceivenetbufferlists, NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,8 +122,8 @@ If a miniport driver calls
     <b>NdisMCoIndicateReceiveNetBufferLists</b> and clears the NDIS_RECEIVE_FLAGS_RESOURCES flag in the 
     <i>CoReceiveFlags</i> parameter, NDIS returns the NET_BUFFER_LIST structures that 
     <i>NetBufferLists</i> specifies to the miniport driver's 
-    <mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-    MiniportReturnNetBufferLists</i></mshelp:link> function. In this case, the miniport driver must not reclaim the
+    <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+    MiniportReturnNetBufferLists</a> function. In this case, the miniport driver must not reclaim the
     NET_BUFFER_LIST structures until NDIS returns the NET_BUFFER_LIST structures to the miniport driver's 
     <i>MiniportReturnNetBufferLists</i> function.
 
@@ -137,8 +137,8 @@ If a miniport driver calls
     NET_BUFFER_LIST structures immediately after 
     <b>NdisMCoIndicateReceiveNetBufferLists</b> returns. To reclaim the NET_BUFFER_LIST structures, a miniport
     driver can call its own 
-    <mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-    MiniportReturnNetBufferLists</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+    MiniportReturnNetBufferLists</a> function.
 
 If a miniport driver sets the NDIS_RECEIVE_FLAGS_RESOURCES flag in the 
     <i>CoReceiveFlags</i> parameter, the protocol drivers must copy the network data and release the
@@ -154,12 +154,10 @@ The caller of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCO_Function |
 
@@ -167,14 +165,14 @@ The caller of
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+
+<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+   MiniportReturnNetBufferLists</a>
 
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 
-<mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-   MiniportReturnNetBufferLists</i></mshelp:link>
-
-<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 
  
 

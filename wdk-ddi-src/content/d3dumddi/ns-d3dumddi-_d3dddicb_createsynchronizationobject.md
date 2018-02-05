@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e799a11c-eab7-4d85-9ed8-063e87aa351f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_CREATESYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dddicb_createsynchronizationobject, d3dumddi/D3DDDICB_CREATESYNCHRONIZATIONOBJECT, D3D_param_Structs_b52426c9-988d-4676-b906-cfa13cc9ffc5.xml, D3DDDICB_CREATESYNCHRONIZATIONOBJECT, _D3DDDICB_CREATESYNCHRONIZATIONOBJECT
+ms.keywords : D3D_param_Structs_b52426c9-988d-4676-b906-cfa13cc9ffc5.xml, D3DDDICB_CREATESYNCHRONIZATIONOBJECT, D3DDDICB_CREATESYNCHRONIZATIONOBJECT structure [Display Devices], display.d3dddicb_createsynchronizationobject, _D3DDDICB_CREATESYNCHRONIZATIONOBJECT, d3dumddi/D3DDDICB_CREATESYNCHRONIZATIONOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,16 +64,14 @@ typedef struct _D3DDDICB_CREATESYNCHRONIZATIONOBJECT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a>
-
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a>
 
  
 

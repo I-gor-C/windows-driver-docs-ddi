@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2da4b4ea-1cbb-43f7-9001-44b07a3e9ef7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfpredeviceinstall, WdfPreDeviceInstall function, DFCoinstallerRef_0d1aca8b-f318-42c4-a74d-bd69d272ceec.xml, PFN_WDFPREDEVICEINSTALL, WdfPreDeviceInstall, kmdf.wdfpredeviceinstall, wdfinstaller/WdfPreDeviceInstall
+ms.keywords : kmdf.wdfpredeviceinstall, WdfPreDeviceInstall function, wdf.wdfpredeviceinstall, DFCoinstallerRef_0d1aca8b-f318-42c4-a74d-bd69d272ceec.xml, wdfinstaller/WdfPreDeviceInstall, WdfPreDeviceInstall, PFN_WDFPREDEVICEINSTALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,10 @@ For more information about the <b>WdfPreDeviceInstall</b> function and installer
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfinstaller.h (include Wdfinstaller.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.) |
 
 ## See Also
 

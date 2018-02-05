@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : fafad6f2-8092-4067-afad-208877309010
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_sriov_read_vf_config_block_parameters, _NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, ntddndis/PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, *PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS
+ms.keywords : NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, _NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, netvista.ndis_sriov_read_vf_config_block_parameters, *PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, ntddndis/NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS"
+req.typenames : NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, *PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS
 ---
 
 # _NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS structure
@@ -114,16 +114,14 @@ This operating system runs within the Hyper-V parent partition.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451874">OID_SRIOV_READ_VF_CONFIG_BLOCK</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451874">OID_SRIOV_READ_VF_CONFIG_BLOCK</a>
 
 <b></b>
 

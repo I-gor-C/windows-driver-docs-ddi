@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : e17da654-60a7-4942-99f9-f55df87a1ca3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvItem_fae1b45f-719d-4bce-92fd-d43844178800.xml, DumpItemData method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], DumpItemData method, DumpItemData, IWiaDrvItem::DumpItemData, DumpItemData method [Imaging Devices], IWiaDrvItem, image.iwiadrvitem_dumpitemdata, wiamindr_lh/IWiaDrvItem::DumpItemData
+ms.keywords : DumpItemData, DumpItemData method [Imaging Devices], IWiaDrvItem::DumpItemData, image.iwiadrvitem_dumpitemdata, IWiaDrvItem, wiamindr_lh/IWiaDrvItem::DumpItemData, DrvItem_fae1b45f-719d-4bce-92fd-d43844178800.xml, IWiaDrvItem interface [Imaging Devices], DumpItemData method, DumpItemData method [Imaging Devices], IWiaDrvItem interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -69,11 +69,7 @@ This method is provided for Microsoft internal debugging only. It will return E_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : fecefdbc-3036-4991-900c-203ae8be254b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_ui_f356f9c1-f867-4c53-8b12-be48da73de4f.xml, _OEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, printoem/OEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER structure [Print Devices], printoem/POEM_DMEXTRAHEADER, print.oem_dmextraheader, *POEM_DMEXTRAHEADER, POEM_DMEXTRAHEADER structure pointer [Print Devices], POEM_DMEXTRAHEADER
+ms.keywords : "*POEM_DMEXTRAHEADER, _OEM_DMEXTRAHEADER, printoem/OEM_DMEXTRAHEADER, printoem/POEM_DMEXTRAHEADER, print_unidrv-pscript_ui_f356f9c1-f867-4c53-8b12-be48da73de4f.xml, POEM_DMEXTRAHEADER structure pointer [Print Devices], print.oem_dmextraheader, POEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER structure [Print Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,7 +72,4 @@ For more information about adding DEVMODEW structure members, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b356e3ac-451d-4a10-94e2-d03fcf76cb29
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdevice_createwdffile, CreateWdfFile method, IWDFDevice interface, IWDFDevice::CreateWdfFile, IWDFDevice interface, CreateWdfFile method, IWDFDevice, wdf.iwdfdevice_createwdffile, CreateWdfFile method, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml, wudfddi/IWDFDevice::CreateWdfFile, CreateWdfFile
+ms.keywords : CreateWdfFile method, IWDFDevice::CreateWdfFile, IWDFDevice interface, CreateWdfFile method, wudfddi/IWDFDevice::CreateWdfFile, CreateWdfFile method, IWDFDevice interface, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml, umdf.iwdfdevice_createwdffile, wdf.iwdfdevice_createwdffile, IWDFDevice, CreateWdfFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -78,14 +78,12 @@ For information about when a UMDF driver might use <b>CreateWdfFile</b> to preve
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

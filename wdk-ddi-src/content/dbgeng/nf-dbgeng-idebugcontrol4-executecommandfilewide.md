@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 4c3fbd76-745a-45d0-b4fd-6da382712322
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4::ExecuteCommandFileWide, debugger.executecommandfilewide, ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteCommandFileWide method, IDebugControl4, ExecuteCommandFileWide, ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::ExecuteCommandFileWide
+ms.keywords : ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface, ExecuteCommandFileWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteCommandFileWide method, ExecuteCommandFileWide, IDebugControl4::ExecuteCommandFileWide, dbgeng/IDebugControl4::ExecuteCommandFileWide, debugger.executecommandfilewide, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,20 +95,15 @@ This method reads the specified file and execute the commands one line at a time
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543208">Execute</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543208">Execute</a>
 
  
 

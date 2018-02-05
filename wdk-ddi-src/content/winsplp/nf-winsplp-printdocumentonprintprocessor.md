@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1360a699-e312-40be-bf2f-b73b1419cfc5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PrintDocumentOnPrintProcessor function [Print Devices], PrintDocumentOnPrintProcessor, spoolfnc_38f81d3c-62d9-4804-ad89-120c9a333a09.xml, print.printdocumentonprintprocessor, winsplp/PrintDocumentOnPrintProcessor
+ms.keywords : print.printdocumentonprintprocessor, spoolfnc_38f81d3c-62d9-4804-ad89-120c9a333a09.xml, PrintDocumentOnPrintProcessor function [Print Devices], PrintDocumentOnPrintProcessor, winsplp/PrintDocumentOnPrintProcessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,20 +80,15 @@ The <code>PrintDocumentOnPrintProcessor</code> function must be written to handl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Nwprint.lib |
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
-
 <a href="..\winsplp\nf-winsplp-controlprintprocessor.md">ControlPrintProcessor</a>
+
+<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
 
  
 

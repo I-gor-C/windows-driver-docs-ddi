@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a87e9f52-a136-492e-bfb3-dfbbea8b79e0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUpperChar, kernel.rtlupperchar, RtlUpperChar routine [Kernel-Mode Driver Architecture], k109_c1a13e9a-f863-4bcd-ae89-daee0c3d3a4b.xml, ntddk/RtlUpperChar
+ms.keywords : kernel.rtlupperchar, RtlUpperChar, ntddk/RtlUpperChar, k109_c1a13e9a-f863-4bcd-ae89-daee0c3d3a4b.xml, RtlUpperChar routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ Specifies the character to convert.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

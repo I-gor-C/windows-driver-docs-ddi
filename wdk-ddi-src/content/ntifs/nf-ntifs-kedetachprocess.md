@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 25cb0b53-f5b2-460a-bcab-56196f568d12
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KeDetachProcess function [Installable File System Drivers], keref_0038ac90-7d97-45db-9a0d-028238af943d.xml, KeDetachProcess, ntifs/KeDetachProcess, ifsk.kedetachprocess
+ms.keywords : KeDetachProcess, keref_0038ac90-7d97-45db-9a0d-028238af943d.xml, ntifs/KeDetachProcess, ifsk.kedetachprocess, KeDetachProcess function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

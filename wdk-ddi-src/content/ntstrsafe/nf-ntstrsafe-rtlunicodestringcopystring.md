@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7b33a311-7f00-4936-b4a9-727f66c12ef0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringCopyString function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcopystring, safestrings_6c994257-53af-4692-88a9-41b38ffd6bcd.xml, ntstrsafe/RtlUnicodeStringCopyString, RtlUnicodeStringCopyString
+ms.keywords : ntstrsafe/RtlUnicodeStringCopyString, kernel.rtlunicodestringcopystring, RtlUnicodeStringCopyString, safestrings_6c994257-53af-4692-88a9-41b38ffd6bcd.xml, RtlUnicodeStringCopyString function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,20 +126,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcopystringex.md">RtlUnicodeStringCopyStringEx</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

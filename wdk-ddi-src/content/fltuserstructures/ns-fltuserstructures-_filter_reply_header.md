@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2765ccb0-3389-4962-8a7d-8080cb3c8806
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FILTER_REPLY_HEADER structure [Installable File System Drivers], ifsk.filter_reply_header, _FILTER_REPLY_HEADER, fltuserstructures/PFILTER_REPLY_HEADER, *PFILTER_REPLY_HEADER, fltuserstructures/FILTER_REPLY_HEADER, FltSystemStructures_93e9fad2-e89d-40af-8614-c09a51f07e7b.xml, PFILTER_REPLY_HEADER structure pointer [Installable File System Drivers], PFILTER_REPLY_HEADER, FILTER_REPLY_HEADER
+ms.keywords : PFILTER_REPLY_HEADER structure pointer [Installable File System Drivers], PFILTER_REPLY_HEADER, _FILTER_REPLY_HEADER, *PFILTER_REPLY_HEADER, ifsk.filter_reply_header, fltuserstructures/PFILTER_REPLY_HEADER, FltSystemStructures_93e9fad2-e89d-40af-8614-c09a51f07e7b.xml, FILTER_REPLY_HEADER, FILTER_REPLY_HEADER structure [Installable File System Drivers], fltuserstructures/FILTER_REPLY_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,16 +66,13 @@ This structure is allocated by a user-mode application. It is a container for a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | fltuserstructures.h (include FltUser.h, Fltkernel.h) |
 
 ## See Also
 
-<a href="..\fltuserstructures\ns-fltuserstructures-_filter_message_header.md">FILTER_MESSAGE_HEADER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a>
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_message_header.md">FILTER_MESSAGE_HEADER</a>
 
  
 

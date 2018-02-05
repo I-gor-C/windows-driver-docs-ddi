@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : da07d3c2-0bd5-4e61-87b3-6fda8007cf5f
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : hdaudio/HDAUDIO_BUFFER_DESCRIPTOR, hdaudio/PHDAUDIO_BUFFER_DESCRIPTOR, _HDAUDIO_BUFFER_DESCRIPTOR, *PHDAUDIO_BUFFER_DESCRIPTOR, HDAUDIO_BUFFER_DESCRIPTOR structure [Audio Devices], PHDAUDIO_BUFFER_DESCRIPTOR structure pointer [Audio Devices], HDAUDIO_BUFFER_DESCRIPTOR, aud-prop2_56fe21db-3261-4f36-a5b0-ca2ae2d681d1.xml, PHDAUDIO_BUFFER_DESCRIPTOR, audio.hdaudio_buffer_descriptor
+ms.keywords : aud-prop2_56fe21db-3261-4f36-a5b0-ca2ae2d681d1.xml, _HDAUDIO_BUFFER_DESCRIPTOR, HDAUDIO_BUFFER_DESCRIPTOR, hdaudio/HDAUDIO_BUFFER_DESCRIPTOR, audio.hdaudio_buffer_descriptor, HDAUDIO_BUFFER_DESCRIPTOR structure [Audio Devices], PHDAUDIO_BUFFER_DESCRIPTOR, hdaudio/PHDAUDIO_BUFFER_DESCRIPTOR, PHDAUDIO_BUFFER_DESCRIPTOR structure pointer [Audio Devices], *PHDAUDIO_BUFFER_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHDAUDIO_BUFFER_DESCRIPTOR, HDAUDIO_BUFFER_DESCRIPTOR"
+req.typenames : HDAUDIO_BUFFER_DESCRIPTOR, *PHDAUDIO_BUFFER_DESCRIPTOR
 ---
 
 # _HDAUDIO_BUFFER_DESCRIPTOR structure
@@ -79,16 +79,13 @@ For more information about BDLs, see the Intel High Definition Audio Specificati
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hdaudio.h (include Hdaudio.h) |
 
 ## See Also
 
-<a href="..\hdaudio\nc-hdaudio-pallocate_contiguous_dma_buffer.md">AllocateContiguousDmaBuffer</a>
-
 <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a>
+
+<a href="..\hdaudio\nc-hdaudio-pallocate_contiguous_dma_buffer.md">AllocateContiguousDmaBuffer</a>
 
  
 

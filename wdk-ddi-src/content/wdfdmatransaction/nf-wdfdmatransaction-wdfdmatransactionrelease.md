@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b271e095-1ac5-4795-82b0-954a17df334a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionRelease, kmdf.wdfdmatransactionrelease, DFDmaObjectRef_24ae3a95-d8b5-4a41-874a-ef537ed4c4cd.xml, PFN_WDFDMATRANSACTIONRELEASE, wdf.wdfdmatransactionrelease, WdfDmaTransactionRelease method, wdfdmatransaction/WdfDmaTransactionRelease
+ms.keywords : wdfdmatransaction/WdfDmaTransactionRelease, DFDmaObjectRef_24ae3a95-d8b5-4a41-874a-ef537ed4c4cd.xml, PFN_WDFDMATRANSACTIONRELEASE, wdf.wdfdmatransactionrelease, WdfDmaTransactionRelease, WdfDmaTransactionRelease method, kmdf.wdfdmatransactionrelease
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,12 +95,10 @@ The <b>WdfDmaTransactionRelease</b> method flushes transfer buffers and releases
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

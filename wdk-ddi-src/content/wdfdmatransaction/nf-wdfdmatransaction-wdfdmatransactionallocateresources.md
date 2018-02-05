@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 69D251D9-1B33-49FD-8D48-EFCBD6640632
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDMATRANSACTIONALLOCATERESOURCES, WdfDmaTransactionAllocateResources method, WdfDmaTransactionAllocateResources, kmdf.wdfdmatransactionallocateresources, wdf.wdfdmatransactionallocateresources, wdfdmatransaction/WdfDmaTransactionAllocateResources
+ms.keywords : WdfDmaTransactionAllocateResources method, wdfdmatransaction/WdfDmaTransactionAllocateResources, WdfDmaTransactionAllocateResources, kmdf.wdfdmatransactionallocateresources, wdf.wdfdmatransactionallocateresources, PFN_WDFDMATRANSACTIONALLOCATERESOURCES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -150,28 +150,26 @@ To call <b>WdfDmaTransactionAllocateResources</b> in a non-blocking manner, the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetimmediateexecution.md">WdfDmaTransactionSetImmediateExecution</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionfreeresources.md">WdfDmaTransactionFreeResources</a>
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionsetimmediateexecution.md">WdfDmaTransactionSetImmediateExecution</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionexecute.md">WdfDmaTransactionExecute</a>
 
  
 

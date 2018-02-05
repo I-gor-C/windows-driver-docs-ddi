@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1c7d1f90-f34b-4a93-bce2-581abe7cdc39
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : CmRegisterCallback routine [Kernel-Mode Driver Architecture], ConfigMgrRef_ec214e13-1342-48b5-9a31-8c6c9da57cd6.xml, wdm/CmRegisterCallback, kernel.cmregistercallback, CmRegisterCallback
+ms.keywords : CmRegisterCallback, wdm/CmRegisterCallback, ConfigMgrRef_ec214e13-1342-48b5-9a31-8c6c9da57cd6.xml, CmRegisterCallback routine [Kernel-Mode Driver Architecture], kernel.cmregistercallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,12 +87,11 @@ For more information about <b>CmRegisterCallback</b> and filtering registry oper
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlExApcLte2, HwStorPortProhibitedDDIs |
 
@@ -100,9 +99,9 @@ For more information about <b>CmRegisterCallback</b> and filtering registry oper
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
-<a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
-
 <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
+
+<a href="..\wdm\nf-wdm-cmunregistercallback.md">CmUnRegisterCallback</a>
 
  
 

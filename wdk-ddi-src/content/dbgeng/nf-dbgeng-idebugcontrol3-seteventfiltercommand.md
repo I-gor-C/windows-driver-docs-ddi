@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d68d0a98-ec93-4643-a6c1-eff9d5618e03
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, IDebugControl3 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl::SetEventFilterCommand, IDebugControl interface [Windows Debugging], SetEventFilterCommand method, SetEventFilterCommand method [Windows Debugging], debugger.seteventfiltercommand, dbgeng/IDebugControl2::SetEventFilterCommand, IDebugControl3::SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::SetEventFilterCommand, dbgeng/IDebugControl3::SetEventFilterCommand, IDebugControl_b0661dd4-9ecd-49ac-93e1-86d3c6c2c3f6.xml, SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], IDebugControl2 interface, SetEventFilterCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl2::SetEventFilterCommand
+ms.keywords : IDebugControl_b0661dd4-9ecd-49ac-93e1-86d3c6c2c3f6.xml, SetEventFilterCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], SetEventFilterCommand method, dbgeng/IDebugControl2::SetEventFilterCommand, IDebugControl3, dbgeng/IDebugControl3::SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], SetEventFilterCommand, debugger.seteventfiltercommand, SetEventFilterCommand method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], IDebugControl2 interface, IDebugControl2::SetEventFilterCommand, IDebugControl3 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl3::SetEventFilterCommand, IDebugControl2 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl::SetEventFilterCommand
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,28 +90,23 @@ For more information about event filters, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546611">GetEventFilterCommand</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-<a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556687">SetExceptionFilterSecondCommand</a>
 
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546611">GetEventFilterCommand</a>
+
+<a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
 
  
 

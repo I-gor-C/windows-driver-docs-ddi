@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : edc0472c-d222-49f5-9d26-6b7e8c032031
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure [Display Devices], DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, _DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DmStructs_0d89c3c0-96f1-4b88-8c79-a33ad8246e4a.xml, d3dkmdt/DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, display.dxgkmdt_opm_acp_and_cgmsa_signaling
+ms.keywords : "_DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure [Display Devices], DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, d3dkmdt/DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DmStructs_0d89c3c0-96f1-4b88-8c79-a33ad8246e4a.xml, display.dxgkmdt_opm_acp_and_cgmsa_signaling"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -119,9 +119,7 @@ A bitwise OR combination of the values from the <a href="..\d3dkmdt\ne-d3dkmdt-_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ddff6e6e-d22f-4e22-af13-aca889eee0d4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntifs/NtCreateDirectoryObject, NtCreateDirectoryObject, k111_a3aca9ff-bf76-4cd0-a15d-565201c1e132.xml, ntifs/ZwOpenDirectoryObject, ZwOpenDirectoryObject routine [Kernel-Mode Driver Architecture], ZwOpenDirectoryObject, kernel.zwopendirectoryobject
+ms.keywords : kernel.zwopendirectoryobject, k111_a3aca9ff-bf76-4cd0-a15d-565201c1e132.xml, ntifs/ZwOpenDirectoryObject, ZwOpenDirectoryObject routine [Kernel-Mode Driver Architecture], ZwOpenDirectoryObject, NtCreateDirectoryObject, ntifs/NtCreateDirectoryObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -217,28 +217,27 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntdef.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
-
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
 <a href="..\wdm\nf-wdm-zwcreatedirectoryobject.md">ZwCreateDirectoryObject</a>
 
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

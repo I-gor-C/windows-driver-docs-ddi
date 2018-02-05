@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 332f6921-1ad2-42ae-9728-001f243b8cff
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : irb/AtaPortRegistryChannelSubkeyWriteDeferred, AtaPortRegistryChannelSubkeyWriteDeferred, atartns_ddf14e05-c641-4382-88b4-18abb54e0f17.xml, AtaPortRegistryChannelSubkeyWriteDeferred routine [Storage Devices], storage.ataportregistrychannelsubkeywritedeferred
+ms.keywords : AtaPortRegistryChannelSubkeyWriteDeferred routine [Storage Devices], AtaPortRegistryChannelSubkeyWriteDeferred, irb/AtaPortRegistryChannelSubkeyWriteDeferred, storage.ataportregistrychannelsubkeywritedeferred, atartns_ddf14e05-c641-4382-88b4-18abb54e0f17.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,20 +136,15 @@ The miniport driver must not reuse the buffer that is pointed to by <i>Buffer</i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
-
 <a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
+
+<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
 
  
 

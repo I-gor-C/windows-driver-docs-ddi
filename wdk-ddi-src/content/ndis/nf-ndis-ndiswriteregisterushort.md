@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 676beebf-4c22-4eb5-bfad-a6f66f3a95be
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndiswriteregisterushort, NdisWriteRegisterUshort, ndis/NdisWriteRegisterUshort, NdisWriteRegisterUshort macro [Network Drivers Starting with Windows Vista], miniport_register_ref_a2e4ab78-aab2-4076-8f66-4e48a60b5beb.xml
+ms.keywords : miniport_register_ref_a2e4ab78-aab2-4076-8f66-4e48a60b5beb.xml, NdisWriteRegisterUshort, netvista.ndiswriteregisterushort, ndis/NdisWriteRegisterUshort, NdisWriteRegisterUshort macro [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -78,16 +78,15 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 
 <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 
@@ -96,8 +95,6 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndisreadregisterushort.md">NdisReadRegisterUshort</a>
-
-<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 
  
 

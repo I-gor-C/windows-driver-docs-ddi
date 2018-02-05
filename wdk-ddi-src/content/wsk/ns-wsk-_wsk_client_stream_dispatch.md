@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7E682868-1D39-4677-A4EC-E7C9F841EC82
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WSK_CLIENT_STREAM_DISPATCH structure [Network Drivers Starting with Windows Vista], _WSK_CLIENT_STREAM_DISPATCH, wsk/PWSK_CLIENT_STREAM_DISPATCH, WSK_CLIENT_STREAM_DISPATCH, netvista.wsk_client_stream_dispatch, wsk/WSK_CLIENT_STREAM_DISPATCH, *PWSK_CLIENT_STREAM_DISPATCH, PWSK_CLIENT_STREAM_DISPATCH, PWSK_CLIENT_STREAM_DISPATCH structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : WSK_CLIENT_STREAM_DISPATCH structure [Network Drivers Starting with Windows Vista], *PWSK_CLIENT_STREAM_DISPATCH, wsk/WSK_CLIENT_STREAM_DISPATCH, WSK_CLIENT_STREAM_DISPATCH, PWSK_CLIENT_STREAM_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], _WSK_CLIENT_STREAM_DISPATCH, wsk/PWSK_CLIENT_STREAM_DISPATCH, netvista.wsk_client_stream_dispatch, PWSK_CLIENT_STREAM_DISPATCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WSK_CLIENT_STREAM_DISPATCH, *PWSK_CLIENT_STREAM_DISPATCH
+req.typenames : "*PWSK_CLIENT_STREAM_DISPATCH, WSK_CLIENT_STREAM_DISPATCH"
 req.product : Windows 10 or later.
 ---
 
@@ -72,18 +72,16 @@ A WSK application passes a pointer to a <b>WSK_CLIENT_STREAM_DISPATCH</b> struct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">WSK_CLIENT_CONNECTION_DISPATCH</a>
-
 <a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">WSK_CLIENT_CONNECTION_DISPATCH</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 

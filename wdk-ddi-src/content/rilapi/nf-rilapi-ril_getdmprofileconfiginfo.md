@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b0c4e96e-5f7f-4ee5-90b7-6d78ee321bf5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_GetDMProfileConfigInfo, netvista.ril_getdmprofileconfiginfo, RIL_GetDMProfileConfigInfo, RIL_GetDMProfileConfigInfo method [Network Drivers Starting with Windows Vista]
+ms.keywords : RIL_GetDMProfileConfigInfo, RIL_GetDMProfileConfigInfo method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetDMProfileConfigInfo, netvista.ril_getdmprofileconfiginfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

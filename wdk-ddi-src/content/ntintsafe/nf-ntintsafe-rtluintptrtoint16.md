@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 11FA2777-93AA-4833-8726-4C6E5FADD0B9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtluintptrtoint16, RtlUIntPtrToInt16 function [Kernel-Mode Driver Architecture], RtlUIntPtrToInt16, ntintsafe/RtlUIntPtrToInt16
+ms.keywords : kernel.rtluintptrtoint16, RtlUIntPtrToInt16, RtlUIntPtrToInt16 function [Kernel-Mode Driver Architecture], ntintsafe/RtlUIntPtrToInt16
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This is one of a set of inline functions designed to provide type conversions an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

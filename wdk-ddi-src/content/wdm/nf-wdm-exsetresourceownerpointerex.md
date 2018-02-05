@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 96293fbc-0c3c-4685-8708-dd84fcc2223e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exsetresourceownerpointerex, wdm/ExSetResourceOwnerPointerEx, ExSetResourceOwnerPointerEx, k102_2bcc65e9-00e7-4fc5-a1d6-1f797b2c6038.xml, ExSetResourceOwnerPointerEx routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/ExSetResourceOwnerPointerEx, kernel.exsetresourceownerpointerex, ExSetResourceOwnerPointerEx, k102_2bcc65e9-00e7-4fc5-a1d6-1f797b2c6038.xml, ExSetResourceOwnerPointerEx routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,32 +103,31 @@ For more information about managing executive resources, see <a href="https://ms
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating system. Available in Windows 7 and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544614">ExGetCurrentResourceThread</a>
 
 <a href="..\wdm\nf-wdm-exsetresourceownerpointer.md">ExSetResourceOwnerPointer</a>
-
-<a href="..\wdm\nf-wdm-exacquireresourceexclusivelite.md">ExAcquireResourceExclusiveLite</a>
 
 <a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a>
 
 <a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>
 
-<a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a>
+<a href="..\wdm\nf-wdm-exacquireresourceexclusivelite.md">ExAcquireResourceExclusiveLite</a>
 
 <a href="https://msdn.microsoft.com/202b2ef1-bbe4-4ffd-a82b-21f19c145e8d">ERESOURCE</a>
+
+<a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a>
 
  
 

@@ -70,6 +70,4 @@ If the request is successful, the USB function class extension (UFX) returns STA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h (include Usbfnioctl.h) |
-| **IRQL** |  |

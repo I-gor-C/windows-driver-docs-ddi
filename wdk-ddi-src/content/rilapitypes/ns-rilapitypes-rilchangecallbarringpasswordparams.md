@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1a9dda19-329b-4046-bba1-1bbedf37fa31
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCHANGECALLBARRINGPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILCHANGECALLBARRINGPASSWORDPARAMS, netvista.rilchangecallbarringpasswordparams_2, RILCHANGECALLBARRINGPASSWORDPARAMS, *LPRILCHANGECALLBARRINGPASSWORDPARAMS
+ms.keywords : "*LPRILCHANGECALLBARRINGPASSWORDPARAMS, rilapitypes/RILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS, netvista.rilchangecallbarringpasswordparams_2, RILCHANGECALLBARRINGPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,7 +80,4 @@ typedef struct _RILCHANGECALLBARRINGPASSWORDPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

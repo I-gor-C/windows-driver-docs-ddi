@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A95A88B6-066F-4489-B5C0-B012E831D7AD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongMult, RtlLongMult function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongMult, kernel.rtllongmult
+ms.keywords : ntintsafe/RtlLongMult, kernel.rtllongmult, RtlLongMult function [Kernel-Mode Driver Architecture], RtlLongMult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

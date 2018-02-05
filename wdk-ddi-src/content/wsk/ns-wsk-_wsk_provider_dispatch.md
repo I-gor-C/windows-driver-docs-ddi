@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 864891dd-7db5-4343-9014-c6a284f1fd7e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WSK_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista], wskref_3e9340b7-e9e6-46bd-8f28-810354655c6c.xml, wsk/WSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], netvista.wsk_provider_dispatch, PWSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH, wsk/PWSK_PROVIDER_DISPATCH, _WSK_PROVIDER_DISPATCH
+ms.keywords : wsk/WSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], *PWSK_PROVIDER_DISPATCH, _WSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista], PWSK_PROVIDER_DISPATCH, netvista.wsk_provider_dispatch, wskref_3e9340b7-e9e6-46bd-8f28-810354655c6c.xml, wsk/PWSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,8 +69,8 @@ Reserved for system use.
 `Version`
 
 The version of the WSK 
-     <mshelp:link keywords="netvista.network_programming_interface" tabindex="0">Network Programming Interface
-     (NPI)</mshelp:link> that the WSK subsystem will use for its attachment to the WSK application.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">Network Programming Interface
+     (NPI)</a> that the WSK subsystem will use for its attachment to the WSK application.
 
 `WskControlClient`
 
@@ -154,30 +154,28 @@ Minor = WSK_MINOR_VERSION(Version);</pre>
     <b>Version</b> member of the structure.
 
 For more information about attaching a WSK application to the WSK subsystem, see 
-    <mshelp:link keywords="netvista.registering_a_winsock_kernel_application" tabindex="0">Registering a Winsock Kernel
-    Application</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock Kernel
+    Application</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also
 
-<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
+<a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
 
 <a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a>
 
 <a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 
  
 

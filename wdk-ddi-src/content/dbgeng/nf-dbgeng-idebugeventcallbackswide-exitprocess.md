@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : bc104b84-4f0a-420d-8c2c-14b33cc6ca04
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugeventcallbackswide_exitprocess, ExitProcess method [Windows Debugging], IDebugEventCallbacksWide interface [Windows Debugging], ExitProcess method, ExitProcess, ExitProcess method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide, dbgeng/IDebugEventCallbacksWide::ExitProcess, IDebugEventCallbacksWide::ExitProcess
+ms.keywords : ExitProcess, IDebugEventCallbacksWide interface [Windows Debugging], ExitProcess method, IDebugEventCallbacksWide, IDebugEventCallbacksWide::ExitProcess, ExitProcess method [Windows Debugging], ExitProcess method [Windows Debugging], IDebugEventCallbacksWide interface, debugger.idebugeventcallbackswide_exitprocess, dbgeng/IDebugEventCallbacksWide::ExitProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,11 +70,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

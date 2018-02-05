@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9a2a092d-f9b5-42a2-9be4-bc934a9304fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.kesettimerex, KeSetTimerEx, wdm/KeSetTimerEx, k105_ca0b6adf-7903-485b-b29c-c406701c3032.xml, KeSetTimerEx routine [Kernel-Mode Driver Architecture]
+ms.keywords : KeSetTimerEx, KeSetTimerEx routine [Kernel-Mode Driver Architecture], k105_ca0b6adf-7903-485b-b29c-c406701c3032.xml, kernel.kesettimerex, wdm/KeSetTimerEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,28 +116,27 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | IrqlKeDispatchLte, HwStorPortProhibitedDDIs |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+
 <a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
 
 <a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
 
 <a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
-
-<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
-
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 
 <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
 

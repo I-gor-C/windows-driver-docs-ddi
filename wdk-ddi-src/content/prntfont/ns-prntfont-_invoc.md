@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5eeaa7f7-dc99-4cf7-846c-801954cc9040
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_INVOC, INVOC, PINVOC, prntfont/PINVOC, INVOC structure [Print Devices], *PINVOC, print_unidrv-pscript_fonts_1c5bebe8-a2ca-4049-bcce-defd8622761b.xml, print.invoc, prntfont/INVOC, PINVOC structure pointer [Print Devices]"
+ms.keywords : PINVOC structure pointer [Print Devices], _INVOC, print_unidrv-pscript_fonts_1c5bebe8-a2ca-4049-bcce-defd8622761b.xml, print.invoc, INVOC structure [Print Devices], INVOC, prntfont/PINVOC, PINVOC, *PINVOC, prntfont/INVOC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PINVOC, INVOC"
+req.typenames : INVOC, *PINVOC
 req.product : Windows 10 or later.
 ---
 
@@ -64,14 +64,14 @@ Indicates one of the following:
 
 
 
-#### ufm files:
-
-Specifies the byte offset from the beginning of the .ufm file's <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structure to beginning of the command string.
-
-
 #### gtt files:
 
 Specifies the byte offset from the beginning of the .gtt file's <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structure to beginning of the command string.
+
+
+#### ufm files:
+
+Specifies the byte offset from the beginning of the .ufm file's <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structure to beginning of the command string.
 
 ## Remarks
 INVOC structures are used within <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structures.
@@ -79,9 +79,6 @@ INVOC structures are used within <a href="..\prntfont\ns-prntfont-_unidrvinfo.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also

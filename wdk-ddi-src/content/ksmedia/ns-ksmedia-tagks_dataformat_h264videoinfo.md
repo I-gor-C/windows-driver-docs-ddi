@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6D2C0245-542E-4749-B8F3-531BFA3800E3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksmedia/PKS_DATAFORMAT_H264VIDEOINFO, tagKS_DATAFORMAT_H264VIDEOINFO, ksmedia/KS_DATAFORMAT_H264VIDEOINFO, *PKS_DATAFORMAT_H264VIDEOINFO, stream.ks_dataformat_h264videoinfo, KS_DATAFORMAT_H264VIDEOINFO structure [Streaming Media Devices], KS_DATAFORMAT_H264VIDEOINFO, PKS_DATAFORMAT_H264VIDEOINFO structure pointer [Streaming Media Devices], PKS_DATAFORMAT_H264VIDEOINFO
+ms.keywords : ksmedia/KS_DATAFORMAT_H264VIDEOINFO, PKS_DATAFORMAT_H264VIDEOINFO structure pointer [Streaming Media Devices], KS_DATAFORMAT_H264VIDEOINFO, PKS_DATAFORMAT_H264VIDEOINFO, KS_DATAFORMAT_H264VIDEOINFO structure [Streaming Media Devices], ksmedia/PKS_DATAFORMAT_H264VIDEOINFO, tagKS_DATAFORMAT_H264VIDEOINFO, *PKS_DATAFORMAT_H264VIDEOINFO, stream.ks_dataformat_h264videoinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KS_DATAFORMAT_H264VIDEOINFO, *PKS_DATAFORMAT_H264VIDEOINFO
+req.typenames : "*PKS_DATAFORMAT_H264VIDEOINFO, KS_DATAFORMAT_H264VIDEOINFO"
 ---
 
 # tagKS_DATAFORMAT_H264VIDEOINFO structure
@@ -64,9 +64,7 @@ Specifies the details of the video stream.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

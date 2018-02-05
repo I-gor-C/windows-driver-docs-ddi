@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : A8E60BF8-2DFE-479A-9DA9-C3D9B012EBE9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, display.d3dwddm2_0ddi_corelayer_devicecallbacks, D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], d3d10umddi/D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
+ms.keywords : D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, d3d10umddi/D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3dwddm2_0ddi_corelayer_devicecallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -264,7 +264,5 @@ A pointer to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_state_vs_srv_c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 48d54092-d055-449c-a409-829213db2989
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisopenfile, NdisOpenFile function [Network Drivers Starting with Windows Vista], ndis/NdisOpenFile, NdisOpenFile, ndis_file_ref_0931368e-111b-4b25-a42d-12d0cc5d9d44.xml
+ms.keywords : NdisOpenFile, netvista.ndisopenfile, ndis/NdisOpenFile, ndis_file_ref_0931368e-111b-4b25-a42d-12d0cc5d9d44.xml, NdisOpenFile function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,10 @@ A pointer to a caller-supplied variable in which this function returns the statu
 
 
 
-#### NDIS_STATUS_SUCCESS
+#### NDIS_STATUS_ERROR_READING_FILE
 
-The handle at 
-       <i>FileHandle</i> is valid for a subsequent call to 
-       <b>NdisMapFile</b>.
+The specified file's data could not be read into system memory for subsequent access by the
+       caller.
 
 
 #### NDIS_STATUS_FILE_NOT_FOUND
@@ -85,10 +84,11 @@ NDIS could not allocate the resources it needed to open the file and allocate a 
        file contents.
 
 
-#### NDIS_STATUS_ERROR_READING_FILE
+#### NDIS_STATUS_SUCCESS
 
-The specified file's data could not be read into system memory for subsequent access by the
-       caller.
+The handle at 
+       <i>FileHandle</i> is valid for a subsequent call to 
+       <b>NdisMapFile</b>.
 
 `FileHandle`
 
@@ -141,12 +141,10 @@ When
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisOpenFile (NDIS 5.1)) in Windows   XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
@@ -154,13 +152,13 @@ When
 
 <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
 
 <a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

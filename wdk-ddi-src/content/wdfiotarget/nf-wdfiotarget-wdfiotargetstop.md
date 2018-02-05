@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3dd5aa58-e5a6-4ee3-9b88-d9cbb7eb558c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfiotargetstop, DFIOTargetRef_80727681-b08c-4025-aea9-d469735ea00c.xml, wdfiotarget/WdfIoTargetStop, WdfIoTargetStop, kmdf.wdfiotargetstop, WdfIoTargetStop method
+ms.keywords : kmdf.wdfiotargetstop, wdfiotarget/WdfIoTargetStop, wdf.wdfiotargetstop, DFIOTargetRef_80727681-b08c-4025-aea9-d469735ea00c.xml, WdfIoTargetStop, WdfIoTargetStop method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,30 +110,29 @@ If the driver has not called <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfig
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | DriverCreate, FailD0EntryIoTargetState, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
-
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
-
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetiotarget.md">WdfDeviceGetIoTarget</a>
+
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetstart.md">WdfIoTargetStart</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a>
 
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpiperesetsynchronously.md">WdfUsbTargetPipeResetSynchronously</a>
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
 
  
 

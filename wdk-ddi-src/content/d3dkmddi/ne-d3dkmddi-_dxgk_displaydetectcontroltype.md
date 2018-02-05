@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D777342E-439E-4BEF-9DCC-7962B1AF8EAB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_DDCT_ENABLEHPD, DXGK_DISPLAYDETECTCONTROLTYPE enumeration [Display Devices], d3dkmddi/DXGK_DISPLAYDETECTCONTROLTYPE, _DXGK_DISPLAYDETECTCONTROLTYPE, DXGK_DDCT_UNINITIALIZED, d3dkmddi/DXGK_DDCT_POLLALL, d3dkmddi/DXGK_DDCT_DISABLEHPD, DXGK_DISPLAYDETECTCONTROLTYPE, d3dkmddi/DXGK_DDCT_POLLONE, DXGK_DDCT_DISABLEHPD, DXGK_DDCT_POLLALL, DXGK_DDCT_ENABLEHPD, d3dkmddi/DXGK_DDCT_UNINITIALIZED, DXGK_DDCT_POLLONE, display.dxgk_displaydetectcontroltype
+ms.keywords : DXGK_DDCT_ENABLEHPD, DXGK_DISPLAYDETECTCONTROLTYPE, display.dxgk_displaydetectcontroltype, d3dkmddi/DXGK_DDCT_POLLALL, DXGK_DISPLAYDETECTCONTROLTYPE enumeration [Display Devices], DXGK_DDCT_UNINITIALIZED, _DXGK_DISPLAYDETECTCONTROLTYPE, d3dkmddi/DXGK_DDCT_ENABLEHPD, d3dkmddi/DXGK_DDCT_UNINITIALIZED, DXGK_DDCT_POLLONE, d3dkmddi/DXGK_DDCT_DISABLEHPD, d3dkmddi/DXGK_DDCT_POLLONE, DXGK_DDCT_DISABLEHPD, d3dkmddi/DXGK_DISPLAYDETECTCONTROLTYPE, DXGK_DDCT_POLLALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -92,7 +92,4 @@ As status of each target is discovered, if it is not the same as the previously 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

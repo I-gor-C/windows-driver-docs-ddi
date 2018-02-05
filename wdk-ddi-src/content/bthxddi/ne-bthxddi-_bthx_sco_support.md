@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : A9B303C7-868D-47EB-8279-9F655F58630C
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : ScoSupportNone, BTHX_SCO_SUPPORT, _BTHX_SCO_SUPPORT, ScoSupportHCI, BTHX_SCO_SUPPORT enumeration [Bluetooth Devices], bltooth.bthx_sco_support, bthxddi/BTHX_SCO_SUPPORT, bthxddi/ScoSupportHCIBypass, *PBTHX_SCO_SUPPORT, bthxddi/ScoSupportNone, ScoSupportHCIBypass, bthxddi/ScoSupportHCI
+ms.keywords : "_BTHX_SCO_SUPPORT, bthxddi/BTHX_SCO_SUPPORT, bltooth.bthx_sco_support, BTHX_SCO_SUPPORT enumeration [Bluetooth Devices], ScoSupportHCI, ScoSupportHCIBypass, BTHX_SCO_SUPPORT, bthxddi/ScoSupportNone, ScoSupportNone, *PBTHX_SCO_SUPPORT, bthxddi/ScoSupportHCIBypass, bthxddi/ScoSupportHCI"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
+req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
 # _BTHX_SCO_SUPPORT Enumeration
@@ -82,7 +82,5 @@ The transport driver must specify <b>ScoSupportHCIBypass</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported starting with  Windows 8. Versions:\_Supported starting with  Windows 8. |
 | **Header** | bthxddi.h (include BthXDDI.h) |

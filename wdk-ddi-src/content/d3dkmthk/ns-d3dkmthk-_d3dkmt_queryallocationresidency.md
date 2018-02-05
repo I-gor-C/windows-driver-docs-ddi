@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 53dd0306-4dcc-47a0-aa98-67d289c93b9b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_queryallocationresidency, d3dkmthk/D3DKMT_QUERYALLOCATIONRESIDENCY, OpenGL_Structs_eae296e3-82c5-4229-b31a-bdb85d7e6c0c.xml, D3DKMT_QUERYALLOCATIONRESIDENCY structure [Display Devices], D3DKMT_QUERYALLOCATIONRESIDENCY, _D3DKMT_QUERYALLOCATIONRESIDENCY
+ms.keywords : display.d3dkmt_queryallocationresidency, d3dkmthk/D3DKMT_QUERYALLOCATIONRESIDENCY, D3DKMT_QUERYALLOCATIONRESIDENCY, _D3DKMT_QUERYALLOCATIONRESIDENCY, OpenGL_Structs_eae296e3-82c5-4229-b31a-bdb85d7e6c0c.xml, D3DKMT_QUERYALLOCATIONRESIDENCY structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -123,9 +123,7 @@ The resource or allocation is nonresident.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

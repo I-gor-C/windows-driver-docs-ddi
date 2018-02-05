@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3d66b517-91cd-44f7-8dfe-853468c49352
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoSynchronousPageWrite, ifsk.iosynchronouspagewrite, IoSynchronousPageWrite function [Installable File System Drivers], ioref_9ed81b03-18f6-4641-8f4e-b12c4afcfc5d.xml, IoSynchronousPageWrite
+ms.keywords : IoSynchronousPageWrite function [Installable File System Drivers], ntifs/IoSynchronousPageWrite, ifsk.iosynchronouspagewrite, ioref_9ed81b03-18f6-4641-8f4e-b12c4afcfc5d.xml, IoSynchronousPageWrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

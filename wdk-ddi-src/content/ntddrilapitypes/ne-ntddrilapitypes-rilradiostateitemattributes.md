@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 320ad6e2-0d11-4902-bfdb-8df201d4d5b7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, RILRADIOSTATEITEMATTRIBUTES enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, RILRADIOSTATEITEMATTRIBUTES, RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, ntddrilapitypes/RILRADIOSTATEITEMATTRIBUTES, netvista.rilradiostateitemattributes
+ms.keywords : RILRADIOSTATEITEMATTRIBUTES enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, RILRADIOSTATEITEMATTRIBUTES, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISDIRTY, ntddrilapitypes/RILRADIOSTATEITEMATTRIBUTES, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL, RIL_RADIOSTATE_ITEM_ATTRIBUTE_ISWRITABLE, netvista.rilradiostateitemattributes, RIL_RADIOSTATE_ITEM_ATTRIBUTE_HAVEOPTIONS, ntddrilapitypes/RIL_RADIOSTATE_ITEM_ATTRIBUTE_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -85,7 +85,4 @@ typedef enum _RILRADIOSTATEITEMATTRIBUTES {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

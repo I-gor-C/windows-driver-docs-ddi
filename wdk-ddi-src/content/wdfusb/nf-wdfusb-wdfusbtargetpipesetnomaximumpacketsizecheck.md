@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 552eaf46-1710-4df5-bdc3-0fa7ce3adf54
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeSetNoMaximumPacketSizeCheck, PFN_WDFUSBTARGETPIPESETNOMAXIMUMPACKETSIZECHECK, wdfusb/WdfUsbTargetPipeSetNoMaximumPacketSizeCheck, wdf.wdfusbtargetpipesetnomaximumpacketsizecheck, kmdf.wdfusbtargetpipesetnomaximumpacketsizecheck, DFUsbRef_e750d0d1-6d91-498d-8bb5-2eb9bab0149d.xml, WdfUsbTargetPipeSetNoMaximumPacketSizeCheck method
+ms.keywords : WdfUsbTargetPipeSetNoMaximumPacketSizeCheck, PFN_WDFUSBTARGETPIPESETNOMAXIMUMPACKETSIZECHECK, DFUsbRef_e750d0d1-6d91-498d-8bb5-2eb9bab0149d.xml, kmdf.wdfusbtargetpipesetnomaximumpacketsizecheck, wdf.wdfusbtargetpipesetnomaximumpacketsizecheck, WdfUsbTargetPipeSetNoMaximumPacketSizeCheck method, wdfusb/WdfUsbTargetPipeSetNoMaximumPacketSizeCheck
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,20 +75,19 @@ For more information about the <b>WdfUsbTargetPipeSetNoMaximumPacketSizeCheck</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
 
  
 

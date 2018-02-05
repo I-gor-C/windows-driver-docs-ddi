@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 727b2e29-9e2d-4386-a30b-5727e1261fad
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.clfsgetcontainername, Clfs_dce31248-386b-4f6d-8e88-55ef9d70fe84.xml, ClfsGetContainerName, ClfsGetContainerName routine [Kernel-Mode Driver Architecture], wdm/ClfsGetContainerName
+ms.keywords : wdm/ClfsGetContainerName, ClfsGetContainerName, ClfsGetContainerName routine [Kernel-Mode Driver Architecture], Clfs_dce31248-386b-4f6d-8e88-55ef9d70fe84.xml, kernel.clfsgetcontainername
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,20 +123,18 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
-
 <a href="..\wdm\nf-wdm-clfsremovelogcontainer.md">ClfsRemoveLogContainer</a>
+
+<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
 
  
 

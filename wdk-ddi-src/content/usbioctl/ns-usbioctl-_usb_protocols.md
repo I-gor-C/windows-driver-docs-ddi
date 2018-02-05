@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : F970A7FB-DF6F-414B-8B4B-C7E4C5C620B1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USB_PROTOCOLS, buses.usb_protocols, _USB_PROTOCOLS, usbioctl/PUSB_PROTOCOLS, usbioctl/USB_PROTOCOLS, *PUSB_PROTOCOLS, USB_PROTOCOLS union [Buses], PUSB_PROTOCOLS, PUSB_PROTOCOLS union pointer [Buses]
+ms.keywords : USB_PROTOCOLS union [Buses], PUSB_PROTOCOLS, usbioctl/PUSB_PROTOCOLS, PUSB_PROTOCOLS union pointer [Buses], *PUSB_PROTOCOLS, buses.usb_protocols, _USB_PROTOCOLS, usbioctl/USB_PROTOCOLS, USB_PROTOCOLS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,16 +70,14 @@ A bitmask that indicates the USB signaling protocols that are supported by the p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
-
 <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex_v2.md">USB_NODE_CONNECTION_INFORMATION_EX_V2</a>
+
+<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
 
  
 

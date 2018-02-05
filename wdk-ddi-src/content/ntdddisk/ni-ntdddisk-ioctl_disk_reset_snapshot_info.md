@@ -76,6 +76,6 @@ The disk whose handle is used when this IOCTL is issued might be in the offline 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** | PASSIVE_LEVEL |

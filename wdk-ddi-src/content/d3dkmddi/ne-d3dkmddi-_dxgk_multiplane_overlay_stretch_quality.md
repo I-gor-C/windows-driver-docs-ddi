@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5C995970-59E4-46AD-84CD-0B5675949308
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH, display.dxgk_multiplane_overlay_stretch_quality, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration [Display Devices], d3dkmddi/DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH, _DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY
+ms.keywords : display.dxgk_multiplane_overlay_stretch_quality, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH, _DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration [Display Devices], DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR, DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,5 @@ typedef enum _DXGK_MULTIPLANE_OVERLAY_STRETCH_QUALITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

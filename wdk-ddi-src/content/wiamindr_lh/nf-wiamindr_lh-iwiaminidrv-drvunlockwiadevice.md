@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 134d224a-d472-4d74-be3e-069dbb46a65c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv::drvUnLockWiaDevice, drvUnLockWiaDevice method [Imaging Devices], IWiaMiniDrv interface, drvUnLockWiaDevice method [Imaging Devices], IWiaMiniDrv, IWiaMiniDrv interface [Imaging Devices], drvUnLockWiaDevice method, drvUnLockWiaDevice, wiamindr_lh/IWiaMiniDrv::drvUnLockWiaDevice, MiniDrv_596d3499-1e4a-4147-838f-db4f56f30716.xml, image.iwiaminidrv_drvunlockwiadevice
+ms.keywords : IWiaMiniDrv, MiniDrv_596d3499-1e4a-4147-838f-db4f56f30716.xml, drvUnLockWiaDevice, drvUnLockWiaDevice method [Imaging Devices], drvUnLockWiaDevice method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv interface [Imaging Devices], drvUnLockWiaDevice method, wiamindr_lh/IWiaMiniDrv::drvUnLockWiaDevice, IWiaMiniDrv::drvUnLockWiaDevice, image.iwiaminidrv_drvunlockwiadevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -83,22 +83,18 @@ The minidriver's implementation of the <b>IWiaMiniDrv::drvUnLockWiaDevice</b> me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544995">IWiaMiniDrv::drvLockWiaDevice</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544995">IWiaMiniDrv::drvLockWiaDevice</a>
 
  
 

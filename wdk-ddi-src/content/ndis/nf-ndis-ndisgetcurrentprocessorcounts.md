@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 43a75def-0288-4615-ac85-b5e340aa11e6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisGetCurrentProcessorCounts function [Network Drivers Starting with Windows Vista], ndis/NdisGetCurrentProcessorCounts, NdisGetCurrentProcessorCounts, netvista.ndisgetcurrentprocessorcounts, ndis_sysinfo_ref_dab49118-724d-43e8-8d8d-05ebc7220f22.xml
+ms.keywords : NdisGetCurrentProcessorCounts, netvista.ndisgetcurrentprocessorcounts, NdisGetCurrentProcessorCounts function [Network Drivers Starting with Windows Vista], ndis_sysinfo_ref_dab49118-724d-43e8-8d8d-05ebc7220f22.xml, ndis/NdisGetCurrentProcessorCounts
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -127,11 +127,9 @@ KernelandUser[n] is the KernelandUser value returned by a previous call, stored 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see       NdisGetCurrentProcessorCounts (NDIS 5.1)) in Windows XP and later. Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see       NdisGetCurrentProcessorCounts (NDIS 5.1)) in Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |

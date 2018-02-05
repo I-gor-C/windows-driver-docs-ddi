@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0f43b2be-d371-42d8-825b-56362de05c5e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.riluiccserviceparams, ntddrilapitypes/RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS structure [Network Drivers Starting with Windows Vista], RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
+ms.keywords : RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILUICCSERVICEPARAMS, netvista.riluiccserviceparams, ntddrilapitypes/RILUICCSERVICEPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS"
+req.typenames : RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS
 ---
 
 # RILUICCSERVICEPARAMS structure
@@ -74,7 +74,4 @@ typedef struct _RILUICCSERVICEPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

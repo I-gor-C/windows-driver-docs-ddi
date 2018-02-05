@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 644559BB-9842-4261-9A9C-720185E6E9F4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlShortToInt8 function [Kernel-Mode Driver Architecture], ntintsafe/RtlShortToInt8, RtlShortToInt8, kernel.rtlshorttoint8
+ms.keywords : RtlShortToInt8 function [Kernel-Mode Driver Architecture], RtlShortToInt8, ntintsafe/RtlShortToInt8, kernel.rtlshorttoint8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

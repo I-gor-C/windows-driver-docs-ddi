@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : FECF2444-CFF7-4B4D-AC3A-D3DD9B045AFD
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_EVENT structure [Sensor Devices], *PGNSS_EVENT, gnssdriver/PGNSS_EVENT, gnssdriver/GNSS_EVENT, PGNSS_EVENT structure pointer [Sensor Devices], sensors.gnss_event, GNSS_EVENT, PGNSS_EVENT
+ms.keywords : GNSS_EVENT, PGNSS_EVENT structure pointer [Sensor Devices], GNSS_EVENT structure [Sensor Devices], *PGNSS_EVENT, PGNSS_EVENT, sensors.gnss_event, gnssdriver/GNSS_EVENT, gnssdriver/PGNSS_EVENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -105,7 +105,4 @@ Events can be of various types. Certain events occur as a result of a previous r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS"
+req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_READ_PLEX IOCTL
@@ -74,9 +74,8 @@ The VOLUME_READ_PLEX_INPUT structure at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
 | **Header** | ntddvol.h (include Ntddvol.h) |
-| **IRQL** |  |
 
 ## See Also
 

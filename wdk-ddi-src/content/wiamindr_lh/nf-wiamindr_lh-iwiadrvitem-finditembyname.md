@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 59a77753-1f34-4224-af11-c6bbfa847619
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.iwiadrvitem_finditembyname, IWiaDrvItem interface [Imaging Devices], FindItemByName method, FindItemByName method [Imaging Devices], IWiaDrvItem interface, FindItemByName, DrvItem_d3717889-b428-4dbc-8ef9-c501a52f3328.xml, wiamindr_lh/IWiaDrvItem::FindItemByName, IWiaDrvItem, FindItemByName method [Imaging Devices], IWiaDrvItem::FindItemByName
+ms.keywords : image.iwiadrvitem_finditembyname, IWiaDrvItem interface [Imaging Devices], FindItemByName method, IWiaDrvItem, DrvItem_d3717889-b428-4dbc-8ef9-c501a52f3328.xml, FindItemByName method [Imaging Devices], IWiaDrvItem interface, FindItemByName, wiamindr_lh/IWiaDrvItem::FindItemByName, FindItemByName method [Imaging Devices], IWiaDrvItem::FindItemByName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -81,14 +81,10 @@ This method starts the search for the specified item at the root item in the dri
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 

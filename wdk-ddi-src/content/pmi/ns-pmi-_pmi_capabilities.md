@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : 7e564512-ff57-4bce-93c1-76e6034ec061
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : powermeter.pmi_capabilities, PMI_CAPABILITIES structure [Power Metering and Budgeting Devices], pmi/PMI_CAPABILITIES, pmi/PPMI_CAPABILITIES, PPMI_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], PPMI_CAPABILITIES, _PMI_CAPABILITIES, PMI_CAPABILITIES, PowerMeterRef_14d27676-6523-4aca-8ce7-c6c3e8794171.xml, *PPMI_CAPABILITIES
+ms.keywords : pmi/PMI_CAPABILITIES, *PPMI_CAPABILITIES, PPMI_CAPABILITIES, PMI_CAPABILITIES structure [Power Metering and Budgeting Devices], pmi/PPMI_CAPABILITIES, PPMI_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], powermeter.pmi_capabilities, _PMI_CAPABILITIES, PMI_CAPABILITIES, PowerMeterRef_14d27676-6523-4aca-8ce7-c6c3e8794171.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,20 +95,18 @@ The <b>Capabilities</b> member contains data that is formatted as a <a href="..\
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
 ## See Also
 
-<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
 
 <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>
 
-<a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
-
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 
  
 

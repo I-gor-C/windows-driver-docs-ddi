@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5f12dd97-d8e7-4fef-91bf-00243c0cdd52
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFREQUESTRETRIEVEOUTPUTBUFFER, WdfRequestRetrieveOutputBuffer method, wdfrequest/WdfRequestRetrieveOutputBuffer, wdf.wdfrequestretrieveoutputbuffer, DFRequestObjectRef_05ab728b-3b70-4095-acca-294443797557.xml, kmdf.wdfrequestretrieveoutputbuffer, WdfRequestRetrieveOutputBuffer
+ms.keywords : wdfrequest/WdfRequestRetrieveOutputBuffer, kmdf.wdfrequestretrieveoutputbuffer, DFRequestObjectRef_05ab728b-3b70-4095-acca-294443797557.xml, WdfRequestRetrieveOutputBuffer, wdf.wdfrequestretrieveoutputbuffer, PFN_WDFREQUESTRETRIEVEOUTPUTBUFFER, WdfRequestRetrieveOutputBuffer method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -164,20 +164,19 @@ For more information about <b>WdfRequestRetrieveOutputBuffer</b>, see <a href="h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedReadA, BufAfterReqCompletedWrite, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, OutputBufferAPI |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputbuffer.md">WdfRequestRetrieveInputBuffer</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputbuffer.md">WdfRequestRetrieveInputBuffer</a>
 
  
 

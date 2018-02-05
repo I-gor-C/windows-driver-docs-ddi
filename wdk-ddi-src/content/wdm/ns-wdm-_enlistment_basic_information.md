@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 50c989b9-147c-41ea-b933-3a3e8575563e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PENLISTMENT_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], ktm_ref_5748a3a5-6a2a-4cf1-a610-2a406161b689.xml, ENLISTMENT_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], *PENLISTMENT_BASIC_INFORMATION, wdm/ENLISTMENT_BASIC_INFORMATION, ENLISTMENT_BASIC_INFORMATION, PENLISTMENT_BASIC_INFORMATION, wdm/PENLISTMENT_BASIC_INFORMATION, _ENLISTMENT_BASIC_INFORMATION, kernel.enlistment_basic_information
+ms.keywords : "_ENLISTMENT_BASIC_INFORMATION, PENLISTMENT_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PENLISTMENT_BASIC_INFORMATION, wdm/ENLISTMENT_BASIC_INFORMATION, PENLISTMENT_BASIC_INFORMATION, ENLISTMENT_BASIC_INFORMATION, wdm/PENLISTMENT_BASIC_INFORMATION, ktm_ref_5748a3a5-6a2a-4cf1-a610-2a406161b689.xml, ENLISTMENT_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.enlistment_basic_information"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,9 +72,7 @@ The <b>ENLISTMENT_BASIC INFORMATION</b> structure is used with the <a href="..\w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

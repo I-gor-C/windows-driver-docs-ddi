@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 78ff21da-be0f-4b57-9162-1052a6c12b5c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rtlref_a220e168-945b-46d1-9aa7-7750bdfc39bd.xml, RtlCompareMemoryUlong routine [Installable File System Drivers], RtlCompareMemoryUlong, ifsk.rtlcomparememoryulong, ntifs/RtlCompareMemoryUlong
+ms.keywords : RtlCompareMemoryUlong routine [Installable File System Drivers], RtlCompareMemoryUlong, ifsk.rtlcomparememoryulong, rtlref_a220e168-945b-46d1-9aa7-7750bdfc39bd.xml, ntifs/RtlCompareMemoryUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,11 @@ For more information about managing buffered data and initializing driver-alloca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

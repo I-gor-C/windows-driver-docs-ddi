@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fe2f4a93-3fdd-422b-afce-8def3ed6688e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_b27b8a7d-40bd-40a7-b9d8-3e49bbc8497f.xml, iscsicfg/MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig structure pointer [Storage Devices], PMSiSCSI_DiscoveryConfig, MSiSCSI_DiscoveryConfig, MSiSCSI_DiscoveryConfig structure [Storage Devices], iscsicfg/PMSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig, storage.msiscsi_discoveryconfig, _MSiSCSI_DiscoveryConfig
+ms.keywords : MSiSCSI_DiscoveryConfig structure [Storage Devices], MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig structure pointer [Storage Devices], _MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig, storage.msiscsi_discoveryconfig, structs-iSCSI_b27b8a7d-40bd-40a7-b9d8-3e49bbc8497f.xml, iscsicfg/PMSiSCSI_DiscoveryConfig, iscsicfg/MSiSCSI_DiscoveryConfig
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,16 +83,13 @@ Initiators are required to implement the MSiSCSI_DiscoveryConfig class. You must
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsicfg.h (include Iscsicfg.h) |
 
 ## See Also
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562995">MSiSCSI_DiscoveryConfig WMI Class</a>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 
  
 

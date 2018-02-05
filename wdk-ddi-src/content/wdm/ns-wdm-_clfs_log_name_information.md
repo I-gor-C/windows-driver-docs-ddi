@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6011a3e9-1de1-4862-b6a4-a3becf3ec3ca
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.clfs_log_name_information, kstruct_a_381305d2-8396-4f34-b981-0ba3eb732cd1.xml, PPCLFS_LOG_NAME_INFORMATION, PPCLFS_LOG_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PCLFS_LOG_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PCLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PPCLFS_LOG_NAME_INFORMATION, _CLFS_LOG_NAME_INFORMATION, PCLFS_LOG_NAME_INFORMATION, wdm/PCLFS_LOG_NAME_INFORMATION, wdm/CLFS_LOG_NAME_INFORMATION
+ms.keywords : PPCLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION structure [Kernel-Mode Driver Architecture], PPCLFS_LOG_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _CLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION, wdm/PPCLFS_LOG_NAME_INFORMATION, wdm/PCLFS_LOG_NAME_INFORMATION, *PCLFS_LOG_NAME_INFORMATION, kernel.clfs_log_name_information, kstruct_a_381305d2-8396-4f34-b981-0ba3eb732cd1.xml, wdm/CLFS_LOG_NAME_INFORMATION, PCLFS_LOG_NAME_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PCLFS_LOG_NAME_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCLFS_LOG_NAME_INFORMATION, PPCLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION"
+req.typenames : PPCLFS_LOG_NAME_INFORMATION, *PCLFS_LOG_NAME_INFORMATION, CLFS_LOG_NAME_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,6 @@ The size, in bytes, of the log name.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also

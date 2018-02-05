@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : CD619018-7E6D-4B45-93C3-AD89FDFEB1E9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlNumberOfSetBitsUlongPtr, wdm/RtlNumberOfSetBitsUlongPtr, RtlNumberOfSetBitsUlongPtr routine [Kernel-Mode Driver Architecture], kernel.rtlnumberofsetbitsulongptr
+ms.keywords : RtlNumberOfSetBitsUlongPtr, wdm/RtlNumberOfSetBitsUlongPtr, kernel.rtlnumberofsetbitsulongptr, RtlNumberOfSetBitsUlongPtr routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,9 @@ A ULONG_PTR integer value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any IRQL |
-| **DDI compliance rules** |  |

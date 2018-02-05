@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : df8a1e95-211a-47df-a904-4578cd0a7dc9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_MPEAUDIOINFO, stream.ks_mpegaudioinfo, ksmedia/PKS_MPEGAUDIOINFO, KS_MPEGAUDIOINFO, KS_MPEGAUDIOINFO structure [Streaming Media Devices], vidcapstruct_613d53ce-69cd-46da-9bd8-0ac41ca12129.xml, PKS_MPEGAUDIOINFO, *PKS_MPEGAUDIOINFO, ksmedia/KS_MPEGAUDIOINFO, PKS_MPEGAUDIOINFO structure pointer [Streaming Media Devices]
+ms.keywords : stream.ks_mpegaudioinfo, vidcapstruct_613d53ce-69cd-46da-9bd8-0ac41ca12129.xml, *PKS_MPEGAUDIOINFO, PKS_MPEGAUDIOINFO structure pointer [Streaming Media Devices], KS_MPEGAUDIOINFO, ksmedia/KS_MPEGAUDIOINFO, KS_MPEGAUDIOINFO structure [Streaming Media Devices], tagKS_MPEAUDIOINFO, PKS_MPEGAUDIOINFO, ksmedia/PKS_MPEGAUDIOINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKS_MPEGAUDIOINFO, KS_MPEGAUDIOINFO"
+req.typenames : KS_MPEGAUDIOINFO, *PKS_MPEGAUDIOINFO
 ---
 
 # tagKS_MPEAUDIOINFO structure
@@ -90,7 +90,4 @@ Must be 0; otherwise, reject the connection.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

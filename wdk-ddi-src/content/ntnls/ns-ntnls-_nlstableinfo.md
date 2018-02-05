@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B9E64163-B338-49C9-8167-C36B110AB710
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PNLSTABLEINFO, PNLSTABLEINFO structure pointer [Kernel-Mode Driver Architecture], *PNLSTABLEINFO, ntnls/NLSTABLEINFO, _NLSTABLEINFO, ntnls/PNLSTABLEINFO, kernel.nlstableinfo, NLSTABLEINFO, NLSTABLEINFO structure [Kernel-Mode Driver Architecture]
+ms.keywords : PNLSTABLEINFO structure pointer [Kernel-Mode Driver Architecture], ntnls/PNLSTABLEINFO, PNLSTABLEINFO, _NLSTABLEINFO, *PNLSTABLEINFO, NLSTABLEINFO, kernel.nlstableinfo, ntnls/NLSTABLEINFO, NLSTABLEINFO structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNLSTABLEINFO, NLSTABLEINFO"
+req.typenames : NLSTABLEINFO, *PNLSTABLEINFO
 ---
 
 # _NLSTABLEINFO structure
@@ -74,7 +74,4 @@ Specifies an 844 format uppercase table.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntnls.h |

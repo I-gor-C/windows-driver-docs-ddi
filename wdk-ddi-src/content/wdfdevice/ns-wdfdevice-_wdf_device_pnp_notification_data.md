@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b49431bf-4b44-4d7b-b3a6-c3d7416bcb53
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_device_pnp_notification_data, _WDF_DEVICE_PNP_NOTIFICATION_DATA, WDF_DEVICE_PNP_NOTIFICATION_DATA, wdfdevice/WDF_DEVICE_PNP_NOTIFICATION_DATA, kmdf.wdf_device_pnp_notification_data, DFDeviceObjectGeneralRef_92c66935-afca-4567-bc55-cb3e3822201e.xml, WDF_DEVICE_PNP_NOTIFICATION_DATA structure
+ms.keywords : WDF_DEVICE_PNP_NOTIFICATION_DATA, wdfdevice/WDF_DEVICE_PNP_NOTIFICATION_DATA, _WDF_DEVICE_PNP_NOTIFICATION_DATA, wdf.wdf_device_pnp_notification_data, WDF_DEVICE_PNP_NOTIFICATION_DATA structure, kmdf.wdf_device_pnp_notification_data, DFDeviceObjectGeneralRef_92c66935-afca-4567-bc55-cb3e3822201e.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,9 +81,7 @@ The WDF_DEVICE_PNP_NOTIFICATION_DATA structure is an input argument to a driver'
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
 ## See Also

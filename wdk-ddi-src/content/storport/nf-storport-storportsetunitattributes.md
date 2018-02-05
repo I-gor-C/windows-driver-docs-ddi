@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0E05233D-79B0-4FC7-B13C-91B6B1F57E89
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortSetUnitAttributes routine [Storage Devices], StorPortSetUnitAttributes, storage.storportsetunitattributes, storport/StorPortSetUnitAttributes
+ms.keywords : storport/StorPortSetUnitAttributes, storage.storportsetunitattributes, StorPortSetUnitAttributes routine [Storage Devices], StorPortSetUnitAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -119,14 +119,11 @@ A miniport driver will call this routine to register the unit attributes with St
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any |
-| **DDI compliance rules** |  |
 
 ## See Also
 

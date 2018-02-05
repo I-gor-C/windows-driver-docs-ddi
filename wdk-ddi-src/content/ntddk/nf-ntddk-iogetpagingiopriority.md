@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3b0f4fc9-58fd-46ba-be17-2e1b36b16caa
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoGetPagingIoPriority, IoGetPagingIoPriority, kernel.iogetpagingiopriority, k104_cde35790-d059-44bb-85c5-abde7cb36319.xml, IoGetPagingIoPriority routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.iogetpagingiopriority, k104_cde35790-d059-44bb-85c5-abde7cb36319.xml, IoGetPagingIoPriority routine [Kernel-Mode Driver Architecture], wdm/IoGetPagingIoPriority, IoGetPagingIoPriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ For I/O requests that causing paging, the system associates an <b>IO_PAGING_PRIO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Server 2003 and later versions of Windows. Available in Microsoft Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

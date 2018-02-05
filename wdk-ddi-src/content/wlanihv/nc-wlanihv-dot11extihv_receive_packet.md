@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -97,8 +97,8 @@ The WLAN adapter receives a packet and the Native 802.11 miniport driver, which 
 <li>
 The packet's IEEE EtherType matches an entry in the list of EtherTypes specified by the IHV
       Extensions DLL through a call to the 
-      <mshelp:link keywords="netvista.dot11extsetethertypehandling" tabindex="0"><b>
-      Dot11ExtSetEtherTypeHandling</b></mshelp:link> function.
+      <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">
+      Dot11ExtSetEtherTypeHandling</a> function.
 
 </li>
 </ul>The buffer pointed to by 
@@ -106,8 +106,8 @@ The packet's IEEE EtherType matches an entry in the list of EtherTypes specified
 <ul>
 <li>
 MAC address of destination (6 bytes), formatted according to the guidelines discussed in 
-      <mshelp:link keywords="netvista.802_11_mac_header_management" tabindex="0">802.11 MAC Header
-      Management</mshelp:link>
+      <a href="https://technet.microsoft.com/en-us/library/cc757419">802.11 MAC Header
+      Management</a>
 
 
 </li>
@@ -124,20 +124,15 @@ Payload
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
 <a href="..\wlanihv\nc-wlanihv-dot11ext_set_ethertype_handling.md">Dot11ExtSetEtherTypeHandling</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
  
 

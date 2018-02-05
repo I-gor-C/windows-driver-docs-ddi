@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3b96301a-28a5-494b-bd12-8d3d4516730e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/CAPTURE_MEMORY_ALLOCATION_FLAGS, KS_CAPTURE_ALLOC_INVALID, ksmedia/KS_CAPTURE_ALLOC_SYSTEM, KS_CAPTURE_ALLOC_VRAM_MAPPED, ksmedia/KS_CAPTURE_ALLOC_VRAM_MAPPED, PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration pointer [Streaming Media Devices], KS_CAPTURE_ALLOC_SYSTEM, ksmedia/PCAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/KS_CAPTURE_ALLOC_SYSTEM_AGP, *PCAPTURE_MEMORY_ALLOCATION_FLAGS, avstruct_2c1411b2-f4a6-44f9-ba68-63f2f5654105.xml, ksmedia/KS_CAPTURE_ALLOC_VRAM, PCAPTURE_MEMORY_ALLOCATION_FLAGS, stream.capture_memory_allocation_flags, KS_CAPTURE_ALLOC_VRAM, CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration [Streaming Media Devices], KS_CAPTURE_ALLOC_SYSTEM_AGP, ksmedia/KS_CAPTURE_ALLOC_INVALID
+ms.keywords : ksmedia/KS_CAPTURE_ALLOC_VRAM, ksmedia/KS_CAPTURE_ALLOC_SYSTEM, KS_CAPTURE_ALLOC_INVALID, PCAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/KS_CAPTURE_ALLOC_VRAM_MAPPED, *PCAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration [Streaming Media Devices], KS_CAPTURE_ALLOC_SYSTEM_AGP, ksmedia/KS_CAPTURE_ALLOC_SYSTEM_AGP, KS_CAPTURE_ALLOC_SYSTEM, KS_CAPTURE_ALLOC_VRAM_MAPPED, PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration pointer [Streaming Media Devices], avstruct_2c1411b2-f4a6-44f9-ba68-63f2f5654105.xml, KS_CAPTURE_ALLOC_VRAM, ksmedia/CAPTURE_MEMORY_ALLOCATION_FLAGS, stream.capture_memory_allocation_flags, ksmedia/PCAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/KS_CAPTURE_ALLOC_INVALID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -91,9 +91,6 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

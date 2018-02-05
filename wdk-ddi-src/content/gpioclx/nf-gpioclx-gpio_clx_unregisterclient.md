@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 2ECBF3D9-F613-4829-B2E0-FF5E21A596EC
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_clx_unregisterclient, GPIO_CLX_UnregisterClient, GPIO_CLX_UnregisterClient method [Parallel Ports], gpioclx/GPIO_CLX_UnregisterClient
+ms.keywords : GPIO.gpio_clx_unregisterclient, GPIO_CLX_UnregisterClient method [Parallel Ports], GPIO_CLX_UnregisterClient, gpioclx/GPIO_CLX_UnregisterClient
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,20 +87,17 @@ Typically, the GPIO controller driver calls this method from its <a href="..\wdf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | gpioclx.h |
-| **Library** |  |
+| **Library** | Msgpioclxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439490">GPIO_CLX_RegisterClient</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_unload.md">EvtDriverUnload</a>
 
  
 

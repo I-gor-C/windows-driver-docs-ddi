@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1032282B-7CA3-4162-8FC2-1A4A683E9DEF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetJobSilo routine [Kernel-Mode Driver Architecture], kernel.psgetjobsilo, PsGetJobSilo, ntddk/PsGetJobSilo
+ms.keywords : PsGetJobSilo, ntddk/PsGetJobSilo, kernel.psgetjobsilo, PsGetJobSilo routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,11 +113,7 @@ A PESILO is returned successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0B7FC33E-A417-48E4-99CC-D1FFC340A405
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storage_protocol_command, _STORAGE_PROTOCOL_COMMAND, *PSTORAGE_PROTOCOL_COMMAND, ntddstor/PSTORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND, PSTORAGE_PROTOCOL_COMMAND structure pointer [Storage Devices], PSTORAGE_PROTOCOL_COMMAND, ntddstor/STORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND structure [Storage Devices]
+ms.keywords : "*PSTORAGE_PROTOCOL_COMMAND, ntddstor/STORAGE_PROTOCOL_COMMAND, PSTORAGE_PROTOCOL_COMMAND, ntddstor/PSTORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND, _STORAGE_PROTOCOL_COMMAND, storage.storage_protocol_command, PSTORAGE_PROTOCOL_COMMAND structure pointer [Storage Devices], STORAGE_PROTOCOL_COMMAND structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND"
+req.typenames : STORAGE_PROTOCOL_COMMAND, *PSTORAGE_PROTOCOL_COMMAND
 ---
 
 # _STORAGE_PROTOCOL_COMMAND structure
@@ -201,9 +201,7 @@ The version of this structure. This should be set to <b>STORAGE_PROTOCOL_STRUCTU
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

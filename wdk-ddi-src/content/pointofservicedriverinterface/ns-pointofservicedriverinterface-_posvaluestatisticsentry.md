@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : e6627d5f-5905-479e-b968-6914491231b1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/PosValueStatisticsEntry, PosValueStatisticsEntry structure, PosValueStatisticsEntry, pos.posvaluestatisticsentry, _PosValueStatisticsEntry
+ms.keywords : pointofservicedriverinterface/PosValueStatisticsEntry, _PosValueStatisticsEntry, PosValueStatisticsEntry, pos.posvaluestatisticsentry, PosValueStatisticsEntry structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ Indicates the current statistic value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

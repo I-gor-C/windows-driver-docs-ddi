@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : FD4E892F-DDC6-449A-B77F-6C7F8240E467
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateHwQueue method [Display Devices], d3dkmthk/D3DKMTCreateHwQueue, D3DKMTCreateHwQueue, display.d3dkmtcreatehwqueue
+ms.keywords : D3DKMTCreateHwQueue, D3DKMTCreateHwQueue method [Display Devices], display.d3dkmtcreatehwqueue, d3dkmthk/D3DKMTCreateHwQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,6 @@ Returns STATUS_SUCCESS if called successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

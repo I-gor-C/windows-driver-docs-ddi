@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3EC72857-2880-4F03-8CC3-9B9A80F19273
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlSizeTMult function [Kernel-Mode Driver Architecture], RtlSizeTMult, ntintsafe/RtlSizeTMult, kernel.rtlsizetmult
+ms.keywords : RtlSizeTMult, RtlSizeTMult function [Kernel-Mode Driver Architecture], ntintsafe/RtlSizeTMult, kernel.rtlsizetmult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

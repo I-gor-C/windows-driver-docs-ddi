@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 39a609f3-8f79-4a8b-9d29-0cfe09070f2b
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetTextReplacementWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetTextReplacementWide, GetTextReplacementWide, debugger.gettextreplacementwide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetTextReplacementWide method, IDebugControl4::GetTextReplacementWide, GetTextReplacementWide method [Windows Debugging]
+ms.keywords : GetTextReplacementWide method [Windows Debugging], debugger.gettextreplacementwide, GetTextReplacementWide, dbgeng/IDebugControl4::GetTextReplacementWide, IDebugControl4::GetTextReplacementWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetTextReplacementWide method, GetTextReplacementWide method [Windows Debugging], IDebugControl4 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -122,26 +122,21 @@ For an overview of aliases used by the <a href="https://msdn.microsoft.com/fa52a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538014">al (List Aliases)</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538014">al (List Aliases)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553268">OutputTextReplacements</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556818">SetTextReplacement</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553268">OutputTextReplacements</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549270">GetTextMacro</a>
 

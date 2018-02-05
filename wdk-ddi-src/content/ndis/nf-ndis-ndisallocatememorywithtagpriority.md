@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aac4049c-a876-4bbb-ba3b-fa36c299e1c7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisAllocateMemoryWithTagPriority function [Network Drivers Starting with Windows Vista], ndis_memory_ref_1b725109-fc0d-4f5f-8c88-d7a21a1f4c01.xml, netvista.ndisallocatememorywithtagpriority, NdisAllocateMemoryWithTagPriority, ndis/NdisAllocateMemoryWithTagPriority
+ms.keywords : ndis/NdisAllocateMemoryWithTagPriority, NdisAllocateMemoryWithTagPriority function [Network Drivers Starting with Windows Vista], ndis_memory_ref_1b725109-fc0d-4f5f-8c88-d7a21a1f4c01.xml, netvista.ndisallocatememorywithtagpriority, NdisAllocateMemoryWithTagPriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,8 +61,8 @@ PVOID NdisAllocateMemoryWithTagPriority(
 
 An NDIS handle that the caller obtained during initialization. For example, a miniport driver can
      use the NDIS handle that it obtained from the 
-     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-     NdisMRegisterMiniportDriver</b></mshelp:link> or 
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a> or 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
      Other NDIS drivers can use the handles from the following functions:
      
@@ -95,8 +95,8 @@ A string, delimited by single quotation marks, with up to four characters, usual
 `Priority`
 
 The importance of this request. For more information, see 
-     <mshelp:link keywords="kernel.exallocatepoolwithtagpriority" tabindex="0"><b>
-     ExAllocatePoolWithTagPriority</b></mshelp:link>.
+     <a href="..\wdm\nf-wdm-exallocatepoolwithtagpriority.md">
+     ExAllocatePoolWithTagPriority</a>.
 
 
 ## Return Value
@@ -113,36 +113,34 @@ To free memory that was allocated with
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function, NdisAllocateMemoryWithTagPriority |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550767">NdisAllocateMemoryWithTag</a>
-
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
-
-<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\nf-ndis-ndisfreememorywithtagpriority.md">NdisFreeMemoryWithTagPriority</a>
+
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithtagpriority.md">ExAllocatePoolWithTagPriority</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 
-<a href="..\wdm\nf-wdm-exallocatepoolwithtagpriority.md">ExAllocatePoolWithTagPriority</a>
-
-<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550767">NdisAllocateMemoryWithTag</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : e6197993-b998-424e-ab5d-a91a57c7398c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaDrvItem interface [Imaging Devices], GetParentItem method, DrvItem_47782466-b345-43e7-9fd1-8c4b355c6d46.xml, image.iwiadrvitem_getparentitem, GetParentItem method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem::GetParentItem, IWiaDrvItem, GetParentItem, wiamindr_lh/IWiaDrvItem::GetParentItem, GetParentItem method [Imaging Devices]
+ms.keywords : IWiaDrvItem::GetParentItem, image.iwiadrvitem_getparentitem, GetParentItem method [Imaging Devices], IWiaDrvItem, GetParentItem, DrvItem_47782466-b345-43e7-9fd1-8c4b355c6d46.xml, wiamindr_lh/IWiaDrvItem::GetParentItem, GetParentItem method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], GetParentItem method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -69,14 +69,10 @@ Minidrivers typically use this method to obtain a pointer to the nonroot parent 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 

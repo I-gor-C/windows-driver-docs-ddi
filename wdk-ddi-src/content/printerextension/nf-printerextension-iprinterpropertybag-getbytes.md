@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : F75E182D-90FA-4597-95E0-60A6326CF68D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetBytes, GetBytes method [Print Devices], IPrinterPropertyBag, print.iprinterpropertybag_getbytes, IPrinterPropertyBag::GetBytes, GetBytes method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag interface [Print Devices], GetBytes method, printerextension/IPrinterPropertyBag::GetBytes
+ms.keywords : GetBytes method [Print Devices], IPrinterPropertyBag interface, print.iprinterpropertybag_getbytes, IPrinterPropertyBag, GetBytes method [Print Devices], IPrinterPropertyBag interface [Print Devices], GetBytes method, GetBytes, IPrinterPropertyBag::GetBytes, printerextension/IPrinterPropertyBag::GetBytes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -78,14 +78,9 @@ This method returns an <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

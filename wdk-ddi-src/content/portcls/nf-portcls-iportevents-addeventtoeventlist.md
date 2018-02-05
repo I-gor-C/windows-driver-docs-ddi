@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 49b01942-3562-4fb2-907b-8863b2f09f8e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_13ea6aa7-0f65-43d4-b80c-4aa46102c43e.xml, IPortEvents, AddEventToEventList, audio.iportevents_addeventtoeventlist, AddEventToEventList method [Audio Devices], IPortEvents interface, portcls/IPortEvents::AddEventToEventList, IPortEvents::AddEventToEventList, AddEventToEventList method [Audio Devices], IPortEvents interface [Audio Devices], AddEventToEventList method
+ms.keywords : portcls/IPortEvents::AddEventToEventList, AddEventToEventList method [Audio Devices], IPortEvents interface, audio.iportevents_addeventtoeventlist, IPortEvents::AddEventToEventList, AddEventToEventList, audmp-routines_13ea6aa7-0f65-43d4-b80c-4aa46102c43e.xml, IPortEvents interface [Audio Devices], AddEventToEventList method, IPortEvents, AddEventToEventList method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,24 +68,20 @@ This method is used by a miniport driver's to add events to the event list that 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 
+<a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
 
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
-
-<a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
 
  
 

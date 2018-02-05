@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 89d0b6fa-b990-43a9-a943-76d270b507cc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW, display.d3d10_1ddiarg_texcube_shaderresourceview, UMDisplayDriver_Dx10param_Structs_4988e1af-5552-4f7c-be15-5c54f88b9975.xml, d3d10umddi/D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW, D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW structure [Display Devices]
+ms.keywords : D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW structure [Display Devices], D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW, display.d3d10_1ddiarg_texcube_shaderresourceview, d3d10umddi/D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_4988e1af-5552-4f7c-be15-5c54f88b9975.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,20 +86,18 @@ The value in the <b>First2DArrayFace</b> member added with 6 multiplied by the n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions. D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_1ddi_createshaderresourceview.md">CreateShaderResourceView(D3D10_1)</a>
 
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_1ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize(D3D10_1)</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10_1ddiarg_createshaderresourceview.md">D3D10_1DDIARG_CREATESHADERRESOURCEVIEW</a>
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_1ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize(D3D10_1)</a>
 
  
 

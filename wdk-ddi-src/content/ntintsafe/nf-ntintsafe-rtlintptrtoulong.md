@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 755F23FE-12F8-4A14-B2E2-746774B86342
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlIntPtrToULong function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntPtrToULong, kernel.rtlintptrtoulong, RtlIntPtrToULong
+ms.keywords : ntintsafe/RtlIntPtrToULong, kernel.rtlintptrtoulong, RtlIntPtrToULong function [Kernel-Mode Driver Architecture], RtlIntPtrToULong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

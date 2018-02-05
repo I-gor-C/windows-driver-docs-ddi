@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : E6665E96-5C58-4533-906A-D9525BA6824C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_POWER_CONTROL_REQUEST structure [Kernel-Mode Driver Architecture], pepfx/PPEP_POWER_CONTROL_REQUEST, pepfx/PEP_POWER_CONTROL_REQUEST, *PPEP_POWER_CONTROL_REQUEST, PPEP_POWER_CONTROL_REQUEST structure pointer [Kernel-Mode Driver Architecture], PEP_POWER_CONTROL_REQUEST, _PEP_POWER_CONTROL_REQUEST, PPEP_POWER_CONTROL_REQUEST, kernel.pep_power_control_request
+ms.keywords : PPEP_POWER_CONTROL_REQUEST structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_POWER_CONTROL_REQUEST, PPEP_POWER_CONTROL_REQUEST, pepfx/PPEP_POWER_CONTROL_REQUEST, *PPEP_POWER_CONTROL_REQUEST, _PEP_POWER_CONTROL_REQUEST, PEP_POWER_CONTROL_REQUEST, kernel.pep_power_control_request, PEP_POWER_CONTROL_REQUEST structure [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,18 +100,16 @@ The driver for a device can call the <a href="..\wdm\nf-wdm-pofxpowercontrol.md"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186797">PEP_DPM_POWER_CONTROL_REQUEST</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
 <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186797">PEP_DPM_POWER_CONTROL_REQUEST</a>
 
  
 

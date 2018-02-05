@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d726d974-a877-464d-9721-6caf8a8402bf
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PHBA_RSCN_EVENTINFO structure pointer [Storage Devices], *PHBA_RSCN_EVENTINFO, HBA_RSCN_EventInfo, HBA_RSCN_EVENTINFO structure [Storage Devices], HBA_RSCN_EventInfo structure [Storage Devices], hbaapi/HBA_RSCN_EventInfo, hbaapi/PHBA_RSCN_EVENTINFO, structs-Fibre_c0cb4c14-5ff5-44cb-abb4-08673227f193.xml, storage.hba_rscn_eventinfo, HBA_RSCN_EVENTINFO, PHBA_RSCN_EVENTINFO
+ms.keywords : HBA_RSCN_EventInfo, HBA_RSCN_EVENTINFO, PHBA_RSCN_EVENTINFO, structs-Fibre_c0cb4c14-5ff5-44cb-abb4-08673227f193.xml, HBA_RSCN_EVENTINFO structure [Storage Devices], hbaapi/PHBA_RSCN_EVENTINFO, HBA_RSCN_EventInfo structure [Storage Devices], hbaapi/HBA_RSCN_EventInfo, storage.hba_rscn_eventinfo, *PHBA_RSCN_EVENTINFO, PHBA_RSCN_EVENTINFO structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HBA_RSCN_EVENTINFO, *PHBA_RSCN_EVENTINFO
+req.typenames : "*PHBA_RSCN_EVENTINFO, HBA_RSCN_EVENTINFO"
 ---
 
 # HBA_RSCN_EventInfo structure
@@ -69,18 +69,15 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also
 
-<a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a>
-
 <a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
 
 <a href="..\hbaapi\ns-hbaapi-hba_link_eventinfo.md">HBA_Link_EventInfo</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_pty_eventinfo.md">HBA_Pty_EventInfo</a>
 
  
 

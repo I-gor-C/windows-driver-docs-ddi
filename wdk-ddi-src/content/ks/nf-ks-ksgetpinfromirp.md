@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 96176a33-0721-4a4d-ba1b-131e25fc2306
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetPinFromIrp function [Streaming Media Devices], stream.ksgetpinfromirp, avfunc_fa403f21-cccb-4a57-b40a-e7531feac721.xml, KsGetPinFromIrp, ks/KsGetPinFromIrp
+ms.keywords : ks/KsGetPinFromIrp, avfunc_fa403f21-cccb-4a57-b40a-e7531feac721.xml, KsGetPinFromIrp function [Streaming Media Devices], stream.ksgetpinfromirp, KsGetPinFromIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,28 +68,25 @@ Currently, IRPs associated with topology nodes cannot be queried for associated 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
-
-<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
 
 <a href="..\ks\nf-ks-ksgetnodeidfromirp.md">KsGetNodeIdFromIrp</a>
 
 <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
 
+<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
+
 <a href="..\ks\nf-ks-ksgetfilterfromirp.md">KsGetFilterFromIrp</a>
 
 <a href="..\ks\nf-ks-ksfilteracquirecontrol.md">KsFilterAcquireControl</a>
+
+<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
 
  
 

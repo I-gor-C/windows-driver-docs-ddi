@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8959fc25-2477-485a-aa40-10d6228cb476
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFRequestCompletionParams, wdf.iwdfrequestcompletionparams_getcompletionstatus, IWDFRequestCompletionParams interface, GetCompletionStatus method, IWDFRequestCompletionParams::GetCompletionStatus, UMDFRequestObjectRef_b3664f4d-fdb1-425f-be0a-3b4150762b9d.xml, umdf.iwdfrequestcompletionparams_getcompletionstatus, wudfddi/IWDFRequestCompletionParams::GetCompletionStatus, GetCompletionStatus method, GetCompletionStatus, GetCompletionStatus method, IWDFRequestCompletionParams interface
+ms.keywords : IWDFRequestCompletionParams, GetCompletionStatus method, wdf.iwdfrequestcompletionparams_getcompletionstatus, IWDFRequestCompletionParams interface, GetCompletionStatus method, GetCompletionStatus method, IWDFRequestCompletionParams interface, GetCompletionStatus, wudfddi/IWDFRequestCompletionParams::GetCompletionStatus, umdf.iwdfrequestcompletionparams_getcompletionstatus, UMDFRequestObjectRef_b3664f4d-fdb1-425f-be0a-3b4150762b9d.xml, IWDFRequestCompletionParams::GetCompletionStatus
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -63,14 +63,12 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

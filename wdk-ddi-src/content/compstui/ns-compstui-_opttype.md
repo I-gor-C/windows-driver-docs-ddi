@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 041dd438-e837-4912-bda7-de654204198b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_OPTTYPE, print.opttype, *POPTTYPE, OPTTYPE structure [Print Devices], POPTTYPE, compstui/OPTTYPE, cpsuifnc_de1ff2db-9eea-4daf-bc9e-2e24a2dd5271.xml, OPTTYPE, compstui/POPTTYPE, POPTTYPE structure pointer [Print Devices]"
+ms.keywords : "_OPTTYPE, compstui/POPTTYPE, OPTTYPE structure [Print Devices], *POPTTYPE, POPTTYPE, OPTTYPE, print.opttype, POPTTYPE structure pointer [Print Devices], cpsuifnc_de1ff2db-9eea-4daf-bc9e-2e24a2dd5271.xml, compstui/OPTTYPE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -117,7 +117,4 @@ Reserved, must be initialized to zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

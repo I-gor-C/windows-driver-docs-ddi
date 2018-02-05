@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9a4d04de-2c44-4f13-ac6f-32e2fe879e4e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : GetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT structure [Storage Devices], hbapiwmi/GetPortAttributesByWWN_OUT, PGetPortAttributesByWWN_OUT, PGetPortAttributesByWWN_OUT structure pointer [Storage Devices], *PGetPortAttributesByWWN_OUT, hbapiwmi/PGetPortAttributesByWWN_OUT, _GetPortAttributesByWWN_OUT, structs-Fibre_bf13c322-2b55-4113-8e04-5cacfecbea8e.xml, storage.getportattributesbywwn_out
+ms.keywords : PGetPortAttributesByWWN_OUT structure pointer [Storage Devices], storage.getportattributesbywwn_out, GetPortAttributesByWWN_OUT structure [Storage Devices], _GetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT, hbapiwmi/PGetPortAttributesByWWN_OUT, structs-Fibre_bf13c322-2b55-4113-8e04-5cacfecbea8e.xml, hbapiwmi/GetPortAttributesByWWN_OUT, PGetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PGetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT"
+req.typenames : GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
 ---
 
 # _GetPortAttributesByWWN_OUT structure
@@ -66,18 +66,15 @@ The WMI tool suite generates a declaration of the GetPortAttributesByWWN_OUT str
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554965">GetPortAttributesByWWN</a>
 
 <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554965">GetPortAttributesByWWN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
  
 

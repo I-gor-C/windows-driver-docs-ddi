@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8d1f6570-adc1-4389-b20b-7c7e05f1c9bf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILGEOLOCATIONTYPEMASK, RIL_GEOLOCATION_ALL, ntddrilapitypes/RIL_GEOLOCATION_CIVIC, RIL_GEOLOCATION_CIVIC, RILGEOLOCATIONTYPEMASK, ntddrilapitypes/RIL_GEOLOCATION_LATLONG, ntddrilapitypes/RIL_GEOLOCATION_ALL, RILGEOLOCATIONTYPEMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilgeolocationtypemask, RIL_GEOLOCATION_LATLONG
+ms.keywords : netvista.rilgeolocationtypemask, ntddrilapitypes/RILGEOLOCATIONTYPEMASK, RIL_GEOLOCATION_CIVIC, RILGEOLOCATIONTYPEMASK, RILGEOLOCATIONTYPEMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_GEOLOCATION_LATLONG, ntddrilapitypes/RIL_GEOLOCATION_CIVIC, ntddrilapitypes/RIL_GEOLOCATION_ALL, RIL_GEOLOCATION_ALL, RIL_GEOLOCATION_LATLONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -79,7 +79,4 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

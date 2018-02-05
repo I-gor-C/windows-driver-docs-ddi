@@ -71,11 +71,11 @@ The operating system-supplied network socket handle of the Real Time Streaming P
 
 `*pWfdConnectionStats`
 
-
+A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast_wfd_connection_stats.md">MIRACAST_WFD_CONNECTION_STATS</a> structure that indicates the Wi-Fi Direct connection statistics.
 
 `*pSessionInfo`
 
-
+A pointer to a <a href="..\netdispumdddi\ns-netdispumdddi-miracast_session_info.md">MIRACAST_SESSION_INFO</a> structure that the Miracast user-mode driver should complete after it has obtained the capabilities of the Miracast sink.
 
 
 ## Return Value
@@ -108,24 +108,19 @@ The driver should also set the value of these members of <a href="..\netdispumdd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_session_info.md">MIRACAST_SESSION_INFO</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
 
 <a href="..\netdispumdddi\ns-netdispumdddi-miracast_wfd_connection_stats.md">MIRACAST_WFD_CONNECTION_STATS</a>
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_create_miracast_context.md">CreateMiracastContext</a>
-
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
+
+<a href="..\netdispumdddi\ns-netdispumdddi-miracast_session_info.md">MIRACAST_SESSION_INFO</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
 

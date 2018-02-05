@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 45d5b640-5983-43cc-9b2e-2f2625dbd57c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmAllocateContiguousMemory, MmAllocateContiguousMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatecontiguousmemory, wdm/MmAllocateContiguousMemory, k106_33fb6610-08f3-4605-9511-72a2ec6fa442.xml
+ms.keywords : k106_33fb6610-08f3-4605-9511-72a2ec6fa442.xml, MmAllocateContiguousMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatecontiguousmemory, wdm/MmAllocateContiguousMemory, MmAllocateContiguousMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,26 +83,24 @@ Memory allocated by <b>MmAllocateContiguousMemory</b> must be freed when the mem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
-
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
+<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
 <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
 
-<a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
+<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
 
 <a href="..\ntddk\nf-ntddk-mmallocatenoncachedmemory.md">MmAllocateNonCachedMemory</a>
+
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 
  
 

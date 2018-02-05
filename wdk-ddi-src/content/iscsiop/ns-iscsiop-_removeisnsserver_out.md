@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 42866b25-280c-492c-8e98-1a04a46561a4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : RemoveiSNSServer_OUT, PRemoveiSNSServer_OUT, *PRemoveiSNSServer_OUT, PRemoveiSNSServer_OUT structure pointer [Storage Devices], iscsiop/RemoveiSNSServer_OUT, RemoveiSNSServer_OUT structure [Storage Devices], structs-iSCSI_8d8df1a1-3b89-42a1-9ef8-3e749a94b531.xml, _RemoveiSNSServer_OUT, storage.removeisnsserver_out, iscsiop/PRemoveiSNSServer_OUT
+ms.keywords : "_RemoveiSNSServer_OUT, PRemoveiSNSServer_OUT structure pointer [Storage Devices], RemoveiSNSServer_OUT structure [Storage Devices], iscsiop/RemoveiSNSServer_OUT, PRemoveiSNSServer_OUT, storage.removeisnsserver_out, iscsiop/PRemoveiSNSServer_OUT, structs-iSCSI_8d8df1a1-3b89-42a1-9ef8-3e749a94b531.xml, *PRemoveiSNSServer_OUT, RemoveiSNSServer_OUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,16 +61,13 @@ It is optional that you implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="..\iscsiop\ns-iscsiop-_removeisnsserver_in.md">RemoveiSNSServer_IN</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+
+<a href="..\iscsiop\ns-iscsiop-_removeisnsserver_in.md">RemoveiSNSServer_IN</a>
 
  
 

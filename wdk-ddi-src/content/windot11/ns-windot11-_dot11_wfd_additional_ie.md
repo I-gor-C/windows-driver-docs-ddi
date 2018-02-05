@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F381C8DB-DC69-4820-BDCE-2F1DF3482FDD
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista._dot11_wfd_additional_ie, _DOT11_WFD_ADDITIONAL_IE, PDOT11_WFD_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], windot11/ DOT11_WFD_ADDITIONAL_IE, windot11/PDOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista], *PDOT11_WFD_ADDITIONAL_IE, PDOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE
+ms.keywords : DOT11_WFD_ADDITIONAL_IE, *PDOT11_WFD_ADDITIONAL_IE, windot11/PDOT11_WFD_ADDITIONAL_IE, _DOT11_WFD_ADDITIONAL_IE, PDOT11_WFD_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_ADDITIONAL_IE, windot11/ DOT11_WFD_ADDITIONAL_IE, netvista._dot11_wfd_additional_ie, DOT11_WFD_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,7 +110,5 @@ The additional IEs at  <b>uDefaultRequestIEsOffset</b> are for probe requests or
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |

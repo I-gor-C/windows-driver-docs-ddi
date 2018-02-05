@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : aeab6bf1-bb6f-427e-a566-942b3fb061b2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_SETGAMMARAMP, display.d3dkmt_setgammaramp, D3DKMT_SETGAMMARAMP structure [Display Devices], OpenGL_Structs_3f9b4d19-5367-43bb-94a7-288d375412d7.xml, _D3DKMT_SETGAMMARAMP, D3DKMT_SETGAMMARAMP
+ms.keywords : OpenGL_Structs_3f9b4d19-5367-43bb-94a7-288d375412d7.xml, d3dkmthk/D3DKMT_SETGAMMARAMP, D3DKMT_SETGAMMARAMP, _D3DKMT_SETGAMMARAMP, display.d3dkmt_setgammaramp, D3DKMT_SETGAMMARAMP structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,20 +78,18 @@ typedef struct _D3DKMT_SETGAMMARAMP {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetgammaramp.md">D3DKMTSetGammaRamp</a>
-
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a>
-
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_dxgi_1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a>
 
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetgammaramp.md">D3DKMTSetGammaRamp</a>
+
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_gammaramp_type.md">D3DDDI_GAMMARAMP_TYPE</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a>
 
  
 

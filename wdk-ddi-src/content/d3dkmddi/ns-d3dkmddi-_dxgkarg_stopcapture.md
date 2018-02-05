@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 09b1275f-9755-44f7-ab8a-1b6797bfefde
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_52028d90-8c11-425c-80ca-533664035fa5.xml, d3dkmddi/DXGKARG_STOPCAPTURE, display.dxgkarg_stopcapture, DXGKARG_STOPCAPTURE structure [Display Devices], _DXGKARG_STOPCAPTURE, DXGKARG_STOPCAPTURE
+ms.keywords : DXGKARG_STOPCAPTURE structure [Display Devices], _DXGKARG_STOPCAPTURE, DmStructs_52028d90-8c11-425c-80ca-533664035fa5.xml, display.dxgkarg_stopcapture, d3dkmddi/DXGKARG_STOPCAPTURE, DXGKARG_STOPCAPTURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _DXGKARG_STOPCAPTURE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

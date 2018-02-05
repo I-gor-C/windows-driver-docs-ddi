@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6db0c232-d90b-4187-94c0-a840f87cf999
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_cc7908b4-a6f2-40b1-990f-22c7b5e2bda2.xml, KsForwardIrp function [Streaming Media Devices], stream.ksforwardirp, KsForwardIrp, ks/KsForwardIrp
+ms.keywords : ks/KsForwardIrp, KsForwardIrp, ksfunc_cc7908b4-a6f2-40b1-990f-22c7b5e2bda2.xml, stream.ksforwardirp, KsForwardIrp function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ Use the <b>KsForwardIrp</b> function when only the <i>FileObject</i> parameter o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fd069b0c-9af3-4442-aba0-1d81465e7eb0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS, DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS, display.dxgkmdt_opm_set_hdcp_srm_parameters, DmStructs_6e80579a-8a17-47c0-b877-1e7712de2f04.xml, DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS structure [Display Devices], d3dkmdt/DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS"
+ms.keywords : d3dkmdt/DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS, _DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS, display.dxgkmdt_opm_set_hdcp_srm_parameters, DmStructs_6e80579a-8a17-47c0-b877-1e7712de2f04.xml, DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS, DXGKMDT_OPM_SET_HDCP_SRM_PARAMETERS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ The version number of an HDCP SRM. The least significant bits (bits 0 through 15
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9bde557e-0759-4f5b-989e-a34a701d2ebd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCompletePendingRequest function [Streaming Media Devices], ks/KsCompletePendingRequest, stream.kscompletependingrequest, KsCompletePendingRequest, avfunc_e01e61fc-ec10-4781-aee2-0aa7e24ca31a.xml
+ms.keywords : stream.kscompletependingrequest, KsCompletePendingRequest, avfunc_e01e61fc-ec10-4781-aee2-0aa7e24ca31a.xml, KsCompletePendingRequest function [Streaming Media Devices], ks/KsCompletePendingRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ If the dispatch function in question does not pass an IRP, it <b>cannot</b> retu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -85,9 +82,9 @@ If the dispatch function in question does not pass an IRP, it <b>cannot</b> retu
 
 <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-
 <a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
  
 

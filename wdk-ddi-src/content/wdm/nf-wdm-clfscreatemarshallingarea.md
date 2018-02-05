@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c841d8fb-fa42-4ce5-aedb-c7c13bcc2ba7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : Clfs_7b5e3208-8dfb-4fbf-b2a9-77ecc5765df6.xml, ClfsCreateMarshallingArea routine [Kernel-Mode Driver Architecture], wdm/ClfsCreateMarshallingArea, ClfsCreateMarshallingArea, kernel.clfscreatemarshallingarea
+ms.keywords : ClfsCreateMarshallingArea, wdm/ClfsCreateMarshallingArea, kernel.clfscreatemarshallingarea, ClfsCreateMarshallingArea routine [Kernel-Mode Driver Architecture], Clfs_7b5e3208-8dfb-4fbf-b2a9-77ecc5765df6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,28 +136,26 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-
 <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a>
-
-<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
 
 <a href="..\wdm\nf-wdm-clfsdeletemarshallingarea.md">ClfsDeleteMarshallingArea</a>
 
-<a href="..\wdm\nf-wdm-clfsaddlogcontainerset.md">ClfsAddLogContainerSet</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
 <a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
+
+<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
+
+<a href="..\wdm\nf-wdm-clfsaddlogcontainerset.md">ClfsAddLogContainerSet</a>
 
  
 

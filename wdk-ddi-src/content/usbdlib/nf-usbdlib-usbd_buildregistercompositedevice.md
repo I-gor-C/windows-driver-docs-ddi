@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 6683C688-CCDD-498B-AA60-81430DC3BCA4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbd_buildregistercompositedriver, USBD_BuildRegisterCompositeDevice routine [Buses], USBD_BuildRegisterCompositeDevice, usbdlib/ USBD_BuildRegisterCompositeDevice
+ms.keywords : USBD_BuildRegisterCompositeDevice, buses.usbd_buildregistercompositedriver, usbdlib/ USBD_BuildRegisterCompositeDevice, USBD_BuildRegisterCompositeDevice routine [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -83,14 +83,11 @@ This routine does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | usbdlib.h |
-| **Library** |  |
+| **Library** | Usbdex.lib |
 | **IRQL** | "< = DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

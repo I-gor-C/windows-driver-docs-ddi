@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a8c90199-e938-45bb-9356-48591e127eed
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : Clfs_0b23f7ac-c175-4eaf-b6c9-9b23b6ebe7e3.xml, wdm/ClfsDeleteLogFile, ClfsDeleteLogFile, ClfsDeleteLogFile routine [Kernel-Mode Driver Architecture], kernel.clfsdeletelogfile
+ms.keywords : ClfsDeleteLogFile, ClfsDeleteLogFile routine [Kernel-Mode Driver Architecture], wdm/ClfsDeleteLogFile, kernel.clfsdeletelogfile, Clfs_0b23f7ac-c175-4eaf-b6c9-9b23b6ebe7e3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,24 +99,22 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfscloseandresetlogfile.md">ClfsCloseAndResetLogFile</a>
-
-<a href="..\wdm\nf-wdm-clfsdeletelogbypointer.md">ClfsDeleteLogByPointer</a>
+<a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>
 
 <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
 
-<a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>
+<a href="..\wdm\nf-wdm-clfsdeletelogbypointer.md">ClfsDeleteLogByPointer</a>
+
+<a href="..\wdm\nf-wdm-clfscloseandresetlogfile.md">ClfsCloseAndResetLogFile</a>
 
  
 

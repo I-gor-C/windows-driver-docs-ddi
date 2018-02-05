@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6dd47575-0da3-4038-81aa-ac955c00f08d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetInformation method, IWDFRequestCompletionParams interface, IWDFRequestCompletionParams, IWDFRequestCompletionParams interface, GetInformation method, wdf.iwdfrequestcompletionparams_getinformation, UMDFRequestObjectRef_f014a31c-ac37-419d-a318-31d910c646b1.xml, GetInformation, umdf.iwdfrequestcompletionparams_getinformation, wudfddi/IWDFRequestCompletionParams::GetInformation, GetInformation method, IWDFRequestCompletionParams::GetInformation
+ms.keywords : IWDFRequestCompletionParams interface, GetInformation method, wudfddi/IWDFRequestCompletionParams::GetInformation, IWDFRequestCompletionParams, umdf.iwdfrequestcompletionparams_getinformation, UMDFRequestObjectRef_f014a31c-ac37-419d-a318-31d910c646b1.xml, wdf.iwdfrequestcompletionparams_getinformation, GetInformation method, IWDFRequestCompletionParams interface, GetInformation method, GetInformation, IWDFRequestCompletionParams::GetInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -63,14 +63,12 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

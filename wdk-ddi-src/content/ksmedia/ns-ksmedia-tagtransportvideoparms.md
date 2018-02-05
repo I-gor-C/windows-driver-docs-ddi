@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 14bc6133-78f1-4f25-8638-9348245180fa
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.transportvideoparms, PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS, ksmedia/TRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS structure [Streaming Media Devices], *PTRANSPORTVIDEOPARMS, PTRANSPORTVIDEOPARMS structure pointer [Streaming Media Devices], vidcapstruct_6438f7be-abd8-4d45-969d-6f80e7833216.xml, tagTRANSPORTVIDEOPARMS, ksmedia/PTRANSPORTVIDEOPARMS
+ms.keywords : PTRANSPORTVIDEOPARMS structure pointer [Streaming Media Devices], TRANSPORTVIDEOPARMS, vidcapstruct_6438f7be-abd8-4d45-969d-6f80e7833216.xml, ksmedia/PTRANSPORTVIDEOPARMS, PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS structure [Streaming Media Devices], tagTRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS, stream.transportvideoparms, ksmedia/TRANSPORTVIDEOPARMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : TRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS
+req.typenames : "*PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS"
 ---
 
 # tagTRANSPORTVIDEOPARMS structure
@@ -66,7 +66,4 @@ Any ED_Xxx tokens are defined in <i>xprtdefs.h</i> in the Microsoft DirectX SDK.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

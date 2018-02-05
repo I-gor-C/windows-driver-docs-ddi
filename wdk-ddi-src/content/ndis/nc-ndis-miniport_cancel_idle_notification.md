@@ -90,22 +90,18 @@ For guidelines on how to implement the <i>MiniportCancelIdleNotification</i> han
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>
 
 <a href="..\ndis\nc-ndis-miniport_idle_notification.md">MiniportIdleNotification</a>
 
 <a href="..\ndis\nf-ndis-ndismidlenotificationcomplete.md">NdisMIdleNotificationComplete</a>
+
+<a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>
 
 <b></b>
 

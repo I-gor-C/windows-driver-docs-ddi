@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8b43acd5-9204-41ff-8c63-76769bfa5469
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, RtlStringCchPrintfExW function [Kernel-Mode Driver Architecture], RtlStringCchPrintfEx, ntstrsafe/RtlStringCchPrintfExW, STRSAFE_FILL_BEHIND_NULL, safestrings_910ac2be-9b28-42eb-9353-61db14fee430.xml, kernel.rtlstringcchprintfex, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_ON_FAILURE, RtlStringCchPrintfExA, ntstrsafe/RtlStringCchPrintfExA, RtlStringCchPrintfExW
+ms.keywords : STRSAFE_FILL_BEHIND_NULL, RtlStringCchPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_IGNORE_NULLS, RtlStringCchPrintfEx, RtlStringCchPrintfExA, safestrings_910ac2be-9b28-42eb-9353-61db14fee430.xml, kernel.rtlstringcchprintfex, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_ON_FAILURE, STRSAFE_NO_TRUNCATION, ntstrsafe/RtlStringCchPrintfExW, RtlStringCchPrintfExW, ntstrsafe/RtlStringCchPrintfExA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -138,7 +138,7 @@ If set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the dest
 
 A pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives. The <i>pszFormat</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-``
+`Arg1`
 
 
 
@@ -266,22 +266,19 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md">RtlStringCchPrintf</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfexw.md">RtlStringCbPrintfEx</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfexw.md">RtlStringCchVPrintfEx</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbprintfexw.md">RtlStringCbPrintfEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md">RtlStringCchPrintf</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : f8742053-0d02-40af-9a6e-7af029db8575
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_TUNER_TUNING_FLAGS, ksmedia/KS_TUNER_TUNING_EXACT, ksmedia/KS_TUNER_TUNING_FINE, ksmedia/KS_TUNER_TUNING_FLAGS, vidcapstruct_af322917-69e6-4688-885d-45422c594348.xml, ksmedia/KS_TUNER_TUNING_COARSE, KS_TUNER_TUNING_COARSE, KS_TUNER_TUNING_EXACT, KS_TUNER_TUNING_FINE, stream.ks_tuner_tuning_flags, KS_TUNER_TUNING_FLAGS enumeration [Streaming Media Devices]
+ms.keywords : stream.ks_tuner_tuning_flags, KS_TUNER_TUNING_COARSE, ksmedia/KS_TUNER_TUNING_COARSE, ksmedia/KS_TUNER_TUNING_EXACT, KS_TUNER_TUNING_FINE, KS_TUNER_TUNING_EXACT, vidcapstruct_af322917-69e6-4688-885d-45422c594348.xml, ksmedia/KS_TUNER_TUNING_FLAGS, KS_TUNER_TUNING_FLAGS enumeration [Streaming Media Devices], KS_TUNER_TUNING_FLAGS, ksmedia/KS_TUNER_TUNING_FINE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,9 +74,6 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

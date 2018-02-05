@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : cd63cb65-701e-46e2-ba32-971f91f9eb29
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortConvertPhysicalAddressToUlong routine [Storage Devices], atartns_b9df7c2c-3309-4d5a-88d9-bc1eee37fae0.xml, AtaPortConvertPhysicalAddressToUlong, storage.ataportconvertphysicaladdresstoulong, irb/AtaPortConvertPhysicalAddressToUlong
+ms.keywords : storage.ataportconvertphysicaladdresstoulong, atartns_b9df7c2c-3309-4d5a-88d9-bc1eee37fae0.xml, AtaPortConvertPhysicalAddressToUlong, AtaPortConvertPhysicalAddressToUlong routine [Storage Devices], irb/AtaPortConvertPhysicalAddressToUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,9 @@ A miniport driver must not use this routine to truncate a 64-bit physical addres
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

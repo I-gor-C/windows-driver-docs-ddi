@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fa02a787-502c-48a3-a5e1-710d7513c42e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestretrieveinputbuffer, DFRequestObjectRef_7b0c1902-f3a3-4b89-8a9d-3e05e1639fd3.xml, WdfRequestRetrieveInputBuffer, kmdf.wdfrequestretrieveinputbuffer, PFN_WDFREQUESTRETRIEVEINPUTBUFFER, WdfRequestRetrieveInputBuffer method, wdfrequest/WdfRequestRetrieveInputBuffer
+ms.keywords : DFRequestObjectRef_7b0c1902-f3a3-4b89-8a9d-3e05e1639fd3.xml, kmdf.wdfrequestretrieveinputbuffer, PFN_WDFREQUESTRETRIEVEINPUTBUFFER, WdfRequestRetrieveInputBuffer, wdfrequest/WdfRequestRetrieveInputBuffer, WdfRequestRetrieveInputBuffer method, wdf.wdfrequestretrieveinputbuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -164,22 +164,21 @@ For more information about <b>WdfRequestRetrieveInputBuffer</b>, see <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedWrite, BufAfterReqCompletedWriteA, DriverCreate, InputBufferAPI, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">WdfRequestRetrieveOutputBuffer</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveconfigdescriptor.md">WdfUsbTargetDeviceRetrieveConfigDescriptor</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputmemory.md">WdfRequestRetrieveInputMemory</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">WdfRequestRetrieveOutputBuffer</a>
 
  
 

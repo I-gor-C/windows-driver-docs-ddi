@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 988c7e70-3b2a-4a0f-91cf-dfab3ea07f05
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionSetSingleTransferRequirement, wdfdmatransaction/WdfDmaTransactionSetSingleTransferRequirement, wdf.wdfdmatransactionsetsingletransferrequirement, WdfDmaTransactionSetSingleTransferRequirement method
+ms.keywords : WdfDmaTransactionSetSingleTransferRequirement method, wdf.wdfdmatransactionsetsingletransferrequirement, WdfDmaTransactionSetSingleTransferRequirement, wdfdmatransaction/WdfDmaTransactionSetSingleTransferRequirement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,20 +83,17 @@ The driver calls <b>WdfDmaTransactionSetSingleTransferRequirement</b> after crea
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.19 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a>
 

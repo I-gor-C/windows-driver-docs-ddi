@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b5cf231b-1a78-485f-bf26-fe50fbe63d08
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryMaximumGroupCount, wdm/KeQueryMaximumGroupCount, KeQueryMaximumGroupCount routine [Kernel-Mode Driver Architecture], kernel.kequerymaximumgroupcount, k105_c1e0cc3e-f9d0-4570-8a56-b799d2ca5d14.xml
+ms.keywords : wdm/KeQueryMaximumGroupCount, kernel.kequerymaximumgroupcount, KeQueryMaximumGroupCount routine [Kernel-Mode Driver Architecture], k105_c1e0cc3e-f9d0-4570-8a56-b799d2ca5d14.xml, KeQueryMaximumGroupCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,23 +63,21 @@ The value that is returned by <b>KeQueryMaximumGroupCount</b> remains constant d
 
 In Windows 7, the maximum number of groups in a multiprocessor system is four, but this value might change in future versions of Windows. The safest way to determine the maximum number of groups in Windows 7 or a later versions of the Windows operating system is to call <b>KeQueryMaximumGroupCount</b>. Kernel-mode drivers that call <b>KeQueryMaximumGroupCount</b> will not require code changes if the formula that is used to calculate the maximum number of groups changes in a future version of Windows.
 
-To obtain the number of active groups in a multiprocessor system, call the <a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.
+To obtain the number of active groups in a multiprocessor system, call the <a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
+<a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
 
  
 

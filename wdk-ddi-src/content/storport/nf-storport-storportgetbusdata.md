@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 19999e21-1afd-42ac-9809-b8ed4b6ac7e3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportgetbusdata, storprt_fb8cc730-c53e-49b6-abe5-6a0648200d32.xml, StorPortGetBusData routine [Storage Devices], storport/StorPortGetBusData, StorPortGetBusData
+ms.keywords : storport/StorPortGetBusData, StorPortGetBusData, storage.storportgetbusdata, storprt_fb8cc730-c53e-49b6-abe5-6a0648200d32.xml, StorPortGetBusData routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,14 +126,9 @@ Configuration data returned by <b>StorPortGetBusData</b> is valid only until the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

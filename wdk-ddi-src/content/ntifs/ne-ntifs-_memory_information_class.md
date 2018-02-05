@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7E3B531F-935C-41D6-94F7-DB18F82B9109
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MEMORY_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], ntifs/MemoryBasicInformation, MemoryBasicInformation, kernel.memory_information_class, ntifs/MEMORY_INFORMATION_CLASS, _MEMORY_INFORMATION_CLASS, MEMORY_INFORMATION_CLASS
+ms.keywords : kernel.memory_information_class, MEMORY_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], _MEMORY_INFORMATION_CLASS, MEMORY_INFORMATION_CLASS, MemoryBasicInformation, ntifs/MemoryBasicInformation, ntifs/MEMORY_INFORMATION_CLASS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -65,9 +65,7 @@ Currently, only the <b>MemoryBasicInformation</b> value is supported for use wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
 | **Header** | ntifs.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : dba0ac90-a895-4daf-ba7c-b7a8a32fed19
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.ifixeddocumentsequence_getprintticket, filterpipeline_f94c6c29-91ba-4820-ad22-12cc9604993c.xml, filterpipeline/IFixedDocumentSequence::GetPrintTicket, GetPrintTicket method [Print Devices], IFixedDocumentSequence, IFixedDocumentSequence interface [Print Devices], GetPrintTicket method, GetPrintTicket method [Print Devices], IFixedDocumentSequence interface, IFixedDocumentSequence::GetPrintTicket, GetPrintTicket
+ms.keywords : GetPrintTicket method [Print Devices], IFixedDocumentSequence interface, IFixedDocumentSequence::GetPrintTicket, filterpipeline_f94c6c29-91ba-4820-ad22-12cc9604993c.xml, IFixedDocumentSequence, IFixedDocumentSequence interface [Print Devices], GetPrintTicket method, GetPrintTicket, print.ifixeddocumentsequence_getprintticket, GetPrintTicket method [Print Devices], filterpipeline/IFixedDocumentSequence::GetPrintTicket
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ The print ticket object for the sequence.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

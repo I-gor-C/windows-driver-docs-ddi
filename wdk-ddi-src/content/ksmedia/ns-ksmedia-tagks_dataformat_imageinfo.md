@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d63289bc-9603-4e79-8a77-d2eb0f2c784c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : tagKS_DATAFORMAT_IMAGEINFO, ksmedia/PKS_DATAFORMAT_IMAGEINFO, PKS_DATAFORMAT_IMAGEINFO, KS_DATAFORMAT_IMAGEINFO, KS_DATAFORMAT_IMAGEINFO structure [Streaming Media Devices], ksmedia/KS_DATAFORMAT_IMAGEINFO, PKS_DATAFORMAT_IMAGEINFO structure pointer [Streaming Media Devices], *PKS_DATAFORMAT_IMAGEINFO, stream.ks_dataformat_imageinfo
+ms.keywords : PKS_DATAFORMAT_IMAGEINFO, ksmedia/PKS_DATAFORMAT_IMAGEINFO, *PKS_DATAFORMAT_IMAGEINFO, tagKS_DATAFORMAT_IMAGEINFO, stream.ks_dataformat_imageinfo, ksmedia/KS_DATAFORMAT_IMAGEINFO, KS_DATAFORMAT_IMAGEINFO structure [Streaming Media Devices], KS_DATAFORMAT_IMAGEINFO, PKS_DATAFORMAT_IMAGEINFO structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KS_DATAFORMAT_IMAGEINFO, *PKS_DATAFORMAT_IMAGEINFO
+req.typenames : "*PKS_DATAFORMAT_IMAGEINFO, KS_DATAFORMAT_IMAGEINFO"
 ---
 
 # tagKS_DATAFORMAT_IMAGEINFO structure
@@ -64,9 +64,7 @@ A <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

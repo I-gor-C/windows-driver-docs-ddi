@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 99F65058-8718-4D2A-9C7F-D442BA8DA527
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxendpoint/_ENDPOINT_RESET, ucxendpoint/P_ENDPOINT_RESET, P_ENDPOINT_RESET structure pointer [Buses], buses._endpoint_reset, ENDPOINT_RESET structure [Buses], *PENDPOINT_RESET, ENDPOINT_RESET, _ENDPOINT_RESET, P_ENDPOINT_RESET
+ms.keywords : "_ENDPOINT_RESET, P_ENDPOINT_RESET, ENDPOINT_RESET, ucxendpoint/P_ENDPOINT_RESET, ENDPOINT_RESET structure [Buses], *PENDPOINT_RESET, P_ENDPOINT_RESET structure pointer [Buses], buses._endpoint_reset, ucxendpoint/_ENDPOINT_RESET"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PENDPOINT_RESET, ENDPOINT_RESET"
+req.typenames : ENDPOINT_RESET, *PENDPOINT_RESET
 req.product : Windows 10 or later.
 ---
 
@@ -74,9 +74,6 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
 ## See Also

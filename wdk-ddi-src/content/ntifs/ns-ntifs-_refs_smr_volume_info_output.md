@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0DCBAF5F-AEBC-4C4B-9DBD-F7A6FD6C7712
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PREFS_SMR_VOLUME_INFO_OUTPUT, ntifs/PREFS_SMR_VOLUME_INFO_OUTPUT, ifsk.refs_smr_volume_info_output, _REFS_SMR_VOLUME_INFO_OUTPUT, ntifs/REFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT structure [Installable File System Drivers], PREFS_SMR_VOLUME_INFO_OUTPUT structure pointer [Installable File System Drivers], REFS_SMR_VOLUME_INFO_OUTPUT
+ms.keywords : PREFS_SMR_VOLUME_INFO_OUTPUT structure pointer [Installable File System Drivers], ntifs/REFS_SMR_VOLUME_INFO_OUTPUT, PREFS_SMR_VOLUME_INFO_OUTPUT, _REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT structure [Installable File System Drivers], ifsk.refs_smr_volume_info_output, ntifs/PREFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,7 +104,5 @@ Specifies the current state of the garbage collector.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntifs.h (include Ntifs.h) |

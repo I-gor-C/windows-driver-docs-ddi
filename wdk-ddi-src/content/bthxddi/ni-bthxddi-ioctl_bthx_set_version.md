@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
+req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
 # IOCTL_BTHX_SET_VERSION IOCTL
@@ -102,6 +102,6 @@ Only one version will be selected and set.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | bthxddi.h |
 | **IRQL** | "<= PASSIVE_LEVEL" |

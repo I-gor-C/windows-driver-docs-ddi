@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes"
+req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 
@@ -105,26 +105,21 @@ The PI8042_KEYBOARD_ISR callback runs in kernel mode at the IRQL of the I8042prt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntdd8042.h (include Ntdd8042.h) |
-| **Library** |  |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542337">KEYBOARD_INPUT_DATA</a>
+
+<a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a>
 
 <a href="..\ntdd8042\ns-ntdd8042-_output_packet.md">OUTPUT_PACKET</a>
 
-<a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
-
 <a href="..\ntdd8042\ne-ntdd8042-_keyboard_scan_state.md">KEYBOARD_SCAN_STATE</a>
+
+<a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
 
  
 

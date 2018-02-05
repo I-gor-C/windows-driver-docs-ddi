@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ec017e5c-1c26-426d-935f-7a554d3db915
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsEnableEventWithAllocator, KsEnableEventWithAllocator function [Streaming Media Devices], ksfunc_2af8f81f-ef1d-4ad5-9267-dfdc14005183.xml, ks/KsEnableEventWithAllocator, stream.ksenableeventwithallocator
+ms.keywords : ksfunc_2af8f81f-ef1d-4ad5-9267-dfdc14005183.xml, ks/KsEnableEventWithAllocator, KsEnableEventWithAllocator, KsEnableEventWithAllocator function [Streaming Media Devices], stream.ksenableeventwithallocator
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -105,11 +105,6 @@ If the optional allocator callback is used, the filter may need to free the buff
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

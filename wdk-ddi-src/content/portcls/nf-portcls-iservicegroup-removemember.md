@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f257c861-036b-44d1-9f99-dc5c0ab6e715
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RemoveMember, IServiceGroup::RemoveMember, IServiceGroup interface [Audio Devices], RemoveMember method, audmp-routines_0b3fd59f-9233-4344-aa0c-f58505eee693.xml, IServiceGroup, RemoveMember method [Audio Devices], IServiceGroup interface, audio.iservicegroup_removemember, portcls/IServiceGroup::RemoveMember, RemoveMember method [Audio Devices]
+ms.keywords : IServiceGroup interface [Audio Devices], RemoveMember method, RemoveMember method [Audio Devices], IServiceGroup interface, audmp-routines_0b3fd59f-9233-4344-aa0c-f58505eee693.xml, portcls/IServiceGroup::RemoveMember, IServiceGroup, RemoveMember, IServiceGroup::RemoveMember, audio.iservicegroup_removemember, RemoveMember method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,20 +68,16 @@ The <code>RemoveMember</code> method removes a service sink that was previously 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
-
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
 
  
 

@@ -73,9 +73,7 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_VOLUME_MOUNT_POI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
-| **IRQL** |  |
 
 ## See Also
 

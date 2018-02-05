@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a087c7b-3ce7-4054-9880-9940ce589fa4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE, D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE structure [Display Devices], D3D11_DDI_AUTHENTICATED_CONFIGURE_INITIALIZE structure [Display Devices], d3d10umddi/D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE, D3D11_DDI_AUTHENTICATED_CONFIGURE_INITIALIZE, display.d3d11_1ddi_authenticated_configure_initialize
+ms.keywords : D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE, D3D11_DDI_AUTHENTICATED_CONFIGURE_INITIALIZE, D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE structure [Display Devices], display.d3d11_1ddi_authenticated_configure_initialize, d3d10umddi/D3D11_1DDI_AUTHENTICATED_CONFIGURE_INITIALIZE, D3D11_DDI_AUTHENTICATED_CONFIGURE_INITIALIZE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ The initial sequence number for queries.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

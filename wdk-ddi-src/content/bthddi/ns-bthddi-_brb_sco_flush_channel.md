@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 17ee1a71-2aaf-421d-9ae9-019fe0d2f595
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bthddi/_BRB_SCO_FLUSH_CHANNEL, bltooth._brb_sco_flush_channel, _BRB_SCO_FLUSH_CHANNEL structure [Bluetooth Devices], bth_structs_d2a9941d-7091-402d-87bc-a5da139dfc1f.xml, _BRB_SCO_FLUSH_CHANNEL
+ms.keywords : bth_structs_d2a9941d-7091-402d-87bc-a5da139dfc1f.xml, _BRB_SCO_FLUSH_CHANNEL, bltooth._brb_sco_flush_channel, bthddi/_BRB_SCO_FLUSH_CHANNEL, _BRB_SCO_FLUSH_CHANNEL structure [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,12 +64,7 @@ The handle to the SCO channel to flush.
 
 `FlushFlags`
 
-####  Valid flags may be combined using a logical OR
-     operation:
-
-
-
-#### SCO_FLUSH_DIRECTION_OUT
+#### 
 
 
 
@@ -77,7 +72,12 @@ The handle to the SCO channel to flush.
 
 
 
-####
+#### SCO_FLUSH_DIRECTION_OUT
+
+
+
+####  Valid flags may be combined using a logical OR
+     operation:
 
 `Hdr`
 
@@ -97,9 +97,7 @@ All pending data transfer IRPs will be completed with STATUS_REQUEST_ABORTED. In
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also

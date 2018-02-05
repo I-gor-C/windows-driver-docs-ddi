@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5CD8E422-8CEE-43E8-9703-520FDBE6BF5E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddscsi/HYBRID_INFORMATION, NvCacheStatusDisabled, PHYBRID_INFORMATION structure pointer [Storage Devices], NvCacheTypeWriteThrough, NvCacheTypeWriteBack, PHYBRID_INFORMATION, *PHYBRID_INFORMATION, _HYBRID_INFORMATION, storage.hybrid_information, NvCacheTypeUnknown, ntddscsi/PHYBRID_INFORMATION, HYBRID_INFORMATION, NvCacheStatusEnabled, NvCacheStatusDisabling, NvCacheStatusUnknown, HYBRID_INFORMATION structure [Storage Devices], NvCacheNone
+ms.keywords : NvCacheTypeWriteBack, NvCacheTypeWriteThrough, NvCacheStatusDisabling, NvCacheStatusEnabled, PHYBRID_INFORMATION, HYBRID_INFORMATION, *PHYBRID_INFORMATION, storage.hybrid_information, ntddscsi/HYBRID_INFORMATION, ntddscsi/PHYBRID_INFORMATION, PHYBRID_INFORMATION structure pointer [Storage Devices], _HYBRID_INFORMATION, NvCacheTypeUnknown, NvCacheNone, HYBRID_INFORMATION structure [Storage Devices], NvCacheStatusUnknown, NvCacheStatusDisabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -219,9 +219,7 @@ The version of this structure. Set to HYBRID_REQUEST_INFO_STRUCTURE_VERSION.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also

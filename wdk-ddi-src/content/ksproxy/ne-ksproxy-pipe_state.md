@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : A3053A39-5DB6-4DB8-89ED-63ABDB1CD16F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/PipeState_CompressionUnknown, PIPE_STATE enumeration [Streaming Media Devices], PipeState_Finalized, ksproxy/PipeState_DontCare, PipeState_DontCare, ksproxy/PIPE_STATE, ksproxy/PipeState_RangeFixed, PipeState_CompressionUnknown, PIPE_STATE, PipeState_RangeNotFixed, ksproxy/PipeState_RangeNotFixed, stream.pipe_state, PipeState_RangeFixed, ksproxy/PipeState_Finalized
+ms.keywords : PipeState_RangeFixed, ksproxy/PIPE_STATE, ksproxy/PipeState_RangeNotFixed, PipeState_CompressionUnknown, stream.pipe_state, PipeState_DontCare, PIPE_STATE, ksproxy/PipeState_RangeFixed, PipeState_Finalized, ksproxy/PipeState_DontCare, PipeState_RangeNotFixed, ksproxy/PipeState_Finalized, ksproxy/PipeState_CompressionUnknown, PIPE_STATE enumeration [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksproxy.h |

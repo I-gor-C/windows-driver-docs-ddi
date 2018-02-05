@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bfac8f91-2367-4194-8e98-e274025c049a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, IRemoteTargetCallbackRemoval, UMDFIoTargetObjectRef_bec0246d-a3e9-41b2-b577-fef78c8e4668.xml, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, OnRemoteTargetRemoveComplete, OnRemoteTargetRemoveComplete method, umdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, OnRemoteTargetRemoveComplete method, IRemoteTargetCallbackRemoval interface, wdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveComplete method
+ms.keywords : IRemoteTargetCallbackRemoval, OnRemoteTargetRemoveComplete, OnRemoteTargetRemoveComplete method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveComplete method, umdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, wdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, UMDFIoTargetObjectRef_bec0246d-a3e9-41b2-b577-fef78c8e4668.xml, OnRemoteTargetRemoveComplete method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -83,22 +83,19 @@ For more information about the <b>OnRemoteTargetRemoveComplete</b> event callbac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
-
-<a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556897">IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556899">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled</a>
+
+<a href="..\wudfddi\nn-wudfddi-iremotetargetcallbackremoval.md">IRemoteTargetCallbackRemoval</a>
 
  
 

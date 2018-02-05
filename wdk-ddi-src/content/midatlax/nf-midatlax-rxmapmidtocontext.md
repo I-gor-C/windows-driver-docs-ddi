@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e0625c27-6de9-401f-a6bd-52697c4a57c0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : midatlax/RxMapMidToContext, RxMapMidToContext, rxref_e7a11999-7ace-4154-91aa-28dc99a83790.xml, RxMapMidToContext function [Installable File System Drivers], ifsk.rxmapmidtocontext
+ms.keywords : ifsk.rxmapmidtocontext, RxMapMidToContext function [Installable File System Drivers], midatlax/RxMapMidToContext, RxMapMidToContext, rxref_e7a11999-7ace-4154-91aa-28dc99a83790.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,26 +73,22 @@ RDBSS defines a Multiplex ID (MID), a 16-bit value, that can be used by both the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | midatlax.h (include Midatlax.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\midatlax\nf-midatlax-rxreassociatemid.md">RxReassociateMid</a>
 
 <a href="..\midatlax\nf-midatlax-rxcreatemidatlas.md">RxCreateMidAtlas</a>
 
 <a href="..\midatlax\nf-midatlax-rxdestroymidatlas.md">RxDestroyMidAtlas</a>
 
-<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
-
 <a href="..\midatlax\nf-midatlax-rxmapanddissociatemidfromcontext.md">RxMapAndDissociateMidFromContext</a>
 
-<a href="..\midatlax\nf-midatlax-rxreassociatemid.md">RxReassociateMid</a>
+<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
 
  
 

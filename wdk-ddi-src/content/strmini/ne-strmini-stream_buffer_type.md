@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7C9E1D94-BF59-4302-BEE8-24546C8AE7E6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PerRequestExtension, STREAM_BUFFER_TYPE enumeration [Streaming Media Devices], strmini/PerRequestExtension, STREAM_BUFFER_TYPE, DmaBuffer, strmini/SRBDataBuffer, strmini/DmaBuffer, strmini/STREAM_BUFFER_TYPE, stream.stream_buffer_type, SRBDataBuffer
+ms.keywords : strmini/DmaBuffer, strmini/PerRequestExtension, strmini/SRBDataBuffer, STREAM_BUFFER_TYPE, DmaBuffer, PerRequestExtension, stream.stream_buffer_type, strmini/STREAM_BUFFER_TYPE, SRBDataBuffer, STREAM_BUFFER_TYPE enumeration [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h |

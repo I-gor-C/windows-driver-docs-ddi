@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 20d76582-4138-4a45-940b-a8e9207946a5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSB_STRING_DESCRIPTOR structure pointer [Buses], usbspec/PUSB_STRING_DESCRIPTOR, PUSB_STRING_DESCRIPTOR, _USB_STRING_DESCRIPTOR, buses.usb_string_descriptor, usbstrct_b0740c7e-9042-4426-be26-20b8620a0e7e.xml, USB_STRING_DESCRIPTOR, *PUSB_STRING_DESCRIPTOR, usbspec/USB_STRING_DESCRIPTOR, USB_STRING_DESCRIPTOR structure [Buses]
+ms.keywords : PUSB_STRING_DESCRIPTOR, usbspec/PUSB_STRING_DESCRIPTOR, usbspec/USB_STRING_DESCRIPTOR, usbstrct_b0740c7e-9042-4426-be26-20b8620a0e7e.xml, _USB_STRING_DESCRIPTOR, buses.usb_string_descriptor, *PUSB_STRING_DESCRIPTOR, PUSB_STRING_DESCRIPTOR structure pointer [Buses], USB_STRING_DESCRIPTOR structure [Buses], USB_STRING_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_STRING_DESCRIPTOR, *PUSB_STRING_DESCRIPTOR
+req.typenames : "*PUSB_STRING_DESCRIPTOR, USB_STRING_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -74,16 +74,13 @@ Strings returned in <b>bString</b> are in Unicode format and the contents of the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usbioctl.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
 <a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
 

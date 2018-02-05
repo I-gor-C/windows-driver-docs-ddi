@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e2664aec-dc96-4cf6-921b-ccd4ee6cf04e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddiarg_videodecoderbeginframe, D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure [Display Devices], D3D11_1DDIARG_VIDEODECODERBEGINFRAME, d3d10umddi/D3D11_1DDIARG_VIDEODECODERBEGINFRAME
+ms.keywords : D3D11_1DDIARG_VIDEODECODERBEGINFRAME, d3d10umddi/D3D11_1DDIARG_VIDEODECODERBEGINFRAME, display.d3d11_1ddiarg_videodecoderbeginframe, D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ For more information, see the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

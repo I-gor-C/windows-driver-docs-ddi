@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 235ec93e-5b3c-4a19-876f-f668271a56a5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml, wdm/KeQueryGroupAffinity, kernel.kequerygroupaffinity, KeQueryGroupAffinity, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture]
+ms.keywords : KeQueryGroupAffinity, KeQueryGroupAffinity routine [Kernel-Mode Driver Architecture], wdm/KeQueryGroupAffinity, k105_9116eade-e2ed-47f4-a204-c21d456371b0.xml, kernel.kequerygroupaffinity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -54,7 +54,7 @@ KAFFINITY KeQueryGroupAffinity(
 
 `GroupNumber`
 
-The group number. If a multiprocessor system contains <i>n</i> groups, the groups are numbered from 0 to <i>n</i>-1. To obtain the number of active groups in the system, call the <a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.
+The group number. If a multiprocessor system contains <i>n</i> groups, the groups are numbered from 0 to <i>n</i>-1. To obtain the number of active groups in the system, call the <a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a> routine.
 
 
 ## Return Value
@@ -68,14 +68,12 @@ A related routine, <a href="..\wdm\nf-wdm-kequeryactiveprocessors.md">KeQueryAct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

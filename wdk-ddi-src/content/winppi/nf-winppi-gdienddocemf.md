@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : e58403d4-aacc-4d22-98e5-86db1a69c54a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : gdifnc_632b9c31-c0c1-4447-8a0c-ac8fb6b5af55.xml, GdiEndDocEMF, winppi/GdiEndDocEMF, GdiEndDocEMF function [Print Devices], print.gdienddocemf
+ms.keywords : winppi/GdiEndDocEMF, GdiEndDocEMF, gdifnc_632b9c31-c0c1-4447-8a0c-ac8fb6b5af55.xml, GdiEndDocEMF function [Print Devices], print.gdienddocemf
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,10 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : edbca8b0-53c1-4538-ac96-52238d75168d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.mpio_timers_counters, MPIO_TIMERS_COUNTERS structure [Storage Devices], mpiowmi/MPIO_TIMERS_COUNTERS, mpiowmi/PMPIO_TIMERS_COUNTERS, *PMPIO_TIMERS_COUNTERS, PMPIO_TIMERS_COUNTERS structure pointer [Storage Devices], MPIO_TIMERS_COUNTERS, PMPIO_TIMERS_COUNTERS, _MPIO_TIMERS_COUNTERS, structs-scsibus_4e4255c8-94e3-4eb0-bf6b-e5c8cddba010.xml
+ms.keywords : mpiowmi/PMPIO_TIMERS_COUNTERS, _MPIO_TIMERS_COUNTERS, PMPIO_TIMERS_COUNTERS, mpiowmi/MPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS structure [Storage Devices], PMPIO_TIMERS_COUNTERS structure pointer [Storage Devices], MPIO_TIMERS_COUNTERS, storage.mpio_timers_counters, *PMPIO_TIMERS_COUNTERS, structs-scsibus_4e4255c8-94e3-4eb0-bf6b-e5c8cddba010.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ An unsigned 32-bitfield that specifies the interval of time (in seconds) after w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

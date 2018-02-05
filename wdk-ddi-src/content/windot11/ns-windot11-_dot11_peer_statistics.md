@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 08ea7f19-e086-4d5a-bfc7-de9178d815cd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_PEER_STATISTICS, netvista.dot11_peer_statistics, DOT11_PEER_STATISTICS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_5e07a8dd-79f1-4cba-89d3-f70e04caad12.xml, PDOT11_PEER_STATISTICS structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_PEER_STATISTICS, _DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS, *PDOT11_PEER_STATISTICS, windot11/DOT11_PEER_STATISTICS
+ms.keywords : netvista.dot11_peer_statistics, Native_802.11_data_types_5e07a8dd-79f1-4cba-89d3-f70e04caad12.xml, *PDOT11_PEER_STATISTICS, PDOT11_PEER_STATISTICS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS structure [Network Drivers Starting with Windows Vista], PDOT11_PEER_STATISTICS, windot11/DOT11_PEER_STATISTICS, windot11/PDOT11_PEER_STATISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,9 +91,7 @@ The number of MAC service data unit (MSDU) packets and MAC management protocol d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also

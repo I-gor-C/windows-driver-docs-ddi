@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 57818ea9-f60b-4a37-9f42-613fb9cfaf36
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PMSR_SUPPORTED_CARD_TYPES structure pointer, PMSR_SUPPORTED_CARD_TYPES, pointofservicedriverinterface/PMSR_SUPPORTED_CARD_TYPES, pos.msr_supported_card_types, MSR_SUPPORTED_CARD_TYPES, _MSR_SUPPORTED_CARD_TYPES, *PMSR_SUPPORTED_CARD_TYPES, MSR_SUPPORTED_CARD_TYPES structure, pointofservicedriverinterface/MSR_SUPPORTED_CARD_TYPES
+ms.keywords : "*PMSR_SUPPORTED_CARD_TYPES, PMSR_SUPPORTED_CARD_TYPES, pointofservicedriverinterface/MSR_SUPPORTED_CARD_TYPES, pos.msr_supported_card_types, MSR_SUPPORTED_CARD_TYPES structure, pointofservicedriverinterface/PMSR_SUPPORTED_CARD_TYPES, _MSR_SUPPORTED_CARD_TYPES, PMSR_SUPPORTED_CARD_TYPES structure pointer, MSR_SUPPORTED_CARD_TYPES"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ Count of supported magnetic stripe cards defined in <b>CardTypes[MSR_CARD_TYPE_M
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include PointOfServiceDriverInterface.h) |

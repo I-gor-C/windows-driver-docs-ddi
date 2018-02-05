@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 947C508E-2EB9-451D-AA8D-DCDDE27DEBE6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PBranchOfficeJobDataError, winsplp/PBranchOfficeJobDataError, print.branchofficejobdataerror, BranchOfficeJobDataError, PBranchOfficeJobDataError structure pointer [Print Devices], winsplp/BranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError structure [Print Devices]
+ms.keywords : BranchOfficeJobDataError, PBranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError structure [Print Devices], print.branchofficejobdataerror, winsplp/BranchOfficeJobDataError, winsplp/PBranchOfficeJobDataError, PBranchOfficeJobDataError structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -115,7 +115,4 @@ Specifies the 64-bit size of the job.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winsplp.h |

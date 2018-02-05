@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fcb51574-d966-4cd5-a946-c38dd2798b7f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoThreadToProcess, ifsk.iothreadtoprocess, ioref_59269b9a-0a64-410d-aafa-b070b2eacfd7.xml, IoThreadToProcess routine [Installable File System Drivers], ntifs/IoThreadToProcess
+ms.keywords : ioref_59269b9a-0a64-410d-aafa-b070b2eacfd7.xml, IoThreadToProcess routine [Installable File System Drivers], IoThreadToProcess, ifsk.iothreadtoprocess, ntifs/IoThreadToProcess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,22 +67,19 @@ For more information about using system threads and managing synchronization wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 
 <a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
 
  
 

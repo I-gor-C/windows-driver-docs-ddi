@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b4ab0a7b-9c5a-4295-94fc-35310ca8e05b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_8cdcec0f-02df-4e8d-83e2-ae1fdc11343d.xml, kmdf.wdfdeviceassignmofresourcename, WdfDeviceAssignMofResourceName, wdf.wdfdeviceassignmofresourcename, WdfDeviceAssignMofResourceName method, PFN_WDFDEVICEASSIGNMOFRESOURCENAME, wdfdevice/WdfDeviceAssignMofResourceName
+ms.keywords : wdfdevice/WdfDeviceAssignMofResourceName, kmdf.wdfdeviceassignmofresourcename, PFN_WDFDEVICEASSIGNMOFRESOURCENAME, WdfDeviceAssignMofResourceName method, wdf.wdfdeviceassignmofresourcename, WdfDeviceAssignMofResourceName, DFDeviceObjectGeneralRef_8cdcec0f-02df-4e8d-83e2-ae1fdc11343d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,11 +112,9 @@ For more information about WMI, see <a href="https://docs.microsoft.com/en-us/wi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |

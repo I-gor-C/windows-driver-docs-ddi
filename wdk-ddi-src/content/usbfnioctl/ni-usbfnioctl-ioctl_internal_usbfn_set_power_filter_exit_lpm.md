@@ -77,9 +77,7 @@ Upon receiving this request, the filter driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h (include Usbfnioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

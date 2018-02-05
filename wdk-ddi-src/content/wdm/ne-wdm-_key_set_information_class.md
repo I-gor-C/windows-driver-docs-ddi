@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 95a8f683-642c-4f33-9536-08f497567f87
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeySetHandleTagsInformation, kernel.key_set_information_class, wdm/KeyControlFlagsInformation, sysenum_b2121228-e221-424c-8e84-cd213d91716b.xml, wdm/KeyWriteTimeInformation, _KEY_SET_INFORMATION_CLASS, KeyWow64FlagsInformation, KeySetDebugInformation, KeySetHandleTagsInformation, KEY_SET_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], KeySetVirtualizationInformation, KEY_SET_INFORMATION_CLASS, wdm/KeySetDebugInformation, wdm/KeySetVirtualizationInformation, wdm/KeyWow64FlagsInformation, wdm/MaxKeySetInfoClass, MaxKeySetInfoClass, KeyWriteTimeInformation, wdm/KEY_SET_INFORMATION_CLASS, KeyControlFlagsInformation
+ms.keywords : KeyWow64FlagsInformation, wdm/KeyWow64FlagsInformation, KeySetDebugInformation, wdm/MaxKeySetInfoClass, wdm/KeyControlFlagsInformation, KeySetVirtualizationInformation, wdm/KeySetVirtualizationInformation, kernel.key_set_information_class, KeyControlFlagsInformation, wdm/KeySetHandleTagsInformation, wdm/KEY_SET_INFORMATION_CLASS, KeyWriteTimeInformation, sysenum_b2121228-e221-424c-8e84-cd213d91716b.xml, wdm/KeyWriteTimeInformation, KeySetHandleTagsInformation, MaxKeySetInfoClass, _KEY_SET_INFORMATION_CLASS, KEY_SET_INFORMATION_CLASS, KEY_SET_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/KeySetDebugInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -107,9 +107,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">Registr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

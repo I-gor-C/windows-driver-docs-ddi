@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 61b6d477-5a4c-475c-8605-5ede592e75c1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_2e8d2e1b-7ae8-4ac4-916d-5cace7ef043e.xml, display.d3dkmt_flipinfoflags, d3dkmthk/D3DKMT_FLIPINFOFLAGS, D3DKMT_FLIPINFOFLAGS, D3DKMT_FLIPINFOFLAGS structure [Display Devices], _D3DKMT_FLIPINFOFLAGS
+ms.keywords : d3dkmthk/D3DKMT_FLIPINFOFLAGS, OpenGL_Structs_2e8d2e1b-7ae8-4ac4-916d-5cace7ef043e.xml, D3DKMT_FLIPINFOFLAGS structure [Display Devices], display.d3dkmt_flipinfoflags, D3DKMT_FLIPINFOFLAGS, _D3DKMT_FLIPINFOFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ This member is reserved and should be set to zero. Setting this member is equiva
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

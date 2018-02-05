@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 46c4a592-b3d4-479d-b5db-06202b5be290
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : iddcx/IddCxSwapChainFinishedProcessingFrame, display.iddcxswapchainfinishedprocessingframe, IddCxSwapChainFinishedProcessingFrame, IddCxSwapChainFinishedProcessingFrame method [Display Devices]
+ms.keywords : IddCxSwapChainFinishedProcessingFrame method [Display Devices], display.iddcxswapchainfinishedprocessingframe, iddcx/IddCxSwapChainFinishedProcessingFrame, IddCxSwapChainFinishedProcessingFrame
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,8 @@ If the driver copies the buffer to a staging surface so it can lock and copy the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |
-| **DDI compliance rules** |  |

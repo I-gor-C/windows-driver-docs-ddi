@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d8c29339-274e-410a-893d-328703d902c3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IO_RESOURCE_LIST, PIO_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], _IO_RESOURCE_LIST, *PIO_RESOURCE_LIST, IO_RESOURCE_LIST, kernel.io_resource_list, wdm/PIO_RESOURCE_LIST, IO_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], kstruct_b_2e2d049f-a7c9-4051-8fa7-639bf03b5aae.xml, PIO_RESOURCE_LIST
+ms.keywords : IO_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], *PIO_RESOURCE_LIST, PIO_RESOURCE_LIST, wdm/PIO_RESOURCE_LIST, kernel.io_resource_list, PIO_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], IO_RESOURCE_LIST, _IO_RESOURCE_LIST, wdm/IO_RESOURCE_LIST, kstruct_b_2e2d049f-a7c9-4051-8fa7-639bf03b5aae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PIO_RESOURCE_LIST, IO_RESOURCE_LIST"
+req.typenames : IO_RESOURCE_LIST, *PIO_RESOURCE_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -77,9 +77,6 @@ This structure is the header for an array of <b>IO_RESOURCE_DESCRIPTOR</b> struc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

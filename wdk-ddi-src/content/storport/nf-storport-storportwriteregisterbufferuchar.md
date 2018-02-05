@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : af8126cd-e931-4106-b543-9c84ee110901
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportwriteregisterbufferuchar, storport/StorPortWriteRegisterBufferUchar, StorPortWriteRegisterBufferUchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml, StorPortWriteRegisterBufferUchar routine [Storage Devices]
+ms.keywords : StorPortWriteRegisterBufferUchar routine [Storage Devices], storport/StorPortWriteRegisterBufferUchar, StorPortWriteRegisterBufferUchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml, storage.storportwriteregisterbufferuchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

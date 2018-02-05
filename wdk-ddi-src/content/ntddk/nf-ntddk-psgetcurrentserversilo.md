@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4E30CD53-C078-40D7-BEF8-A39F57D71D42
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetCurrentServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgetcurrentserversilo, PsGetCurrentServerSilo, ntddk/PsGetCurrentServerSilo
+ms.keywords : ntddk/PsGetCurrentServerSilo, PsGetCurrentServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgetcurrentserversilo, PsGetCurrentServerSilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,11 +60,8 @@ A pointer to the current server silo.  This pointer is valid for the current thr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_IRQL_requires_max_(DISPATCH_LEVEL)" |
-| **DDI compliance rules** |  |

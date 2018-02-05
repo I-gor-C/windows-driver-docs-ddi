@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 12052128-9ea7-41cd-bb75-be7175e26c12
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : drvValidateItemProperties method [Imaging Devices], image.iwiaminidrv_drvvalidateitemproperties, MiniDrv_b288e05c-a142-452a-9ac7-ffb2dfcae4cf.xml, drvValidateItemProperties, wiamindr_lh/IWiaMiniDrv::drvValidateItemProperties, IWiaMiniDrv, IWiaMiniDrv interface [Imaging Devices], drvValidateItemProperties method, drvValidateItemProperties method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv::drvValidateItemProperties
+ms.keywords : IWiaMiniDrv, drvValidateItemProperties method [Imaging Devices], IWiaMiniDrv interface, drvValidateItemProperties method [Imaging Devices], image.iwiaminidrv_drvvalidateitemproperties, IWiaMiniDrv::drvValidateItemProperties, MiniDrv_b288e05c-a142-452a-9ac7-ffb2dfcae4cf.xml, drvValidateItemProperties, wiamindr_lh/IWiaMiniDrv::drvValidateItemProperties, IWiaMiniDrv interface [Imaging Devices], drvValidateItemProperties method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -88,24 +88,20 @@ The value pointed to by <i>plDevErrVal</i> can be converted to a string by calli
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetitemtype.md">wiasGetItemType</a>
+<a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
 
-<a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a>
-
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiasgetitemtype.md">wiasGetItemType</a>
 
  
 

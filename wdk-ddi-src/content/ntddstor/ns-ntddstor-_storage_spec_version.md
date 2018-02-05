@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E7E80C4E-C002-4F00-AF7E-6B8DDA337323
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTORAGE_SPEC_VERSION union pointer [Storage Devices], ntddstor/STORAGE_SPEC_VERSION, *PSTORAGE_SPEC_VERSION, _STORAGE_SPEC_VERSION, storage.storage_spec_version, PSTORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION union [Storage Devices], STORAGE_SPEC_VERSION, ntddstor/PSTORAGE_SPEC_VERSION
+ms.keywords : "_STORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION, STORAGE_SPEC_VERSION union [Storage Devices], *PSTORAGE_SPEC_VERSION, PSTORAGE_SPEC_VERSION union pointer [Storage Devices], storage.storage_spec_version, ntddstor/STORAGE_SPEC_VERSION, PSTORAGE_SPEC_VERSION, ntddstor/PSTORAGE_SPEC_VERSION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ This union allows for specifying the storage specification version, such as SBC 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |

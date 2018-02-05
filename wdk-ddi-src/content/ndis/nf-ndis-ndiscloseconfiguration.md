@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2d68f7dd-3954-4b3b-8673-1da63e1a1edc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCloseConfiguration function [Network Drivers Starting with Windows Vista], ndis/NdisCloseConfiguration, NdisCloseConfiguration, netvista.ndiscloseconfiguration, ndis_configuration_ref_eb02fa4e-fff9-41e5-81f6-9580af7480a7.xml
+ms.keywords : ndis/NdisCloseConfiguration, netvista.ndiscloseconfiguration, NdisCloseConfiguration function [Network Drivers Starting with Windows Vista], NdisCloseConfiguration, ndis_configuration_ref_eb02fa4e-fff9-41e5-81f6-9580af7480a7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -43,10 +43,10 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 The 
   <b>NdisCloseConfiguration</b> function releases the handle to the registry key that was returned by the 
   <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>, 
-  <mshelp:link keywords="netvista.ndisopenconfigurationkeybyindex" tabindex="0"><b>
-  NdisOpenConfigurationKeyByIndex</b></mshelp:link>, or 
-  <mshelp:link keywords="netvista.ndisopenconfigurationkeybyname" tabindex="0"><b>
-  NdisOpenConfigurationKeyByName</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
+  NdisOpenConfigurationKeyByIndex</a>, or 
+  <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
+  NdisOpenConfigurationKeyByName</a> function.
 
 ## Syntax
 
@@ -78,37 +78,35 @@ This function frees any temporary storage allocated in calls to other
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCloseConfiguration (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCloseConfiguration (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCloseConfiguration (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCloseConfiguration (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function, NdisOpenConfigurationEx |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
+   NdisOpenConfigurationKeyByIndex</a>
 
-<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
+<a href="https://msdn.microsoft.com/en-us/library/gg156036.aspx">DriverEntry of NDIS Protocol
+   Drivers</a>
+
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 
 <a href="..\ndis\nf-ndis-ndisreadnetworkaddress.md">NdisReadNetworkAddress</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<mshelp:link keywords="netvista.ndisopenconfigurationkeybyindex" tabindex="0"><b>
-   NdisOpenConfigurationKeyByIndex</b></mshelp:link>
-
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
+   NdisOpenConfigurationKeyByName</a>
+
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
+
 <a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
-
-<mshelp:link keywords="netvista.driverentry_of_ndis_protocol_drivers" tabindex="0"><b>DriverEntry of NDIS Protocol
-   Drivers</b></mshelp:link>
-
-<mshelp:link keywords="netvista.ndisopenconfigurationkeybyname" tabindex="0"><b>
-   NdisOpenConfigurationKeyByName</b></mshelp:link>
 
  
 

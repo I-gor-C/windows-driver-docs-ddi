@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6CD02F5B-0E34-46F5-8AEA-3B30293E1875
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.wdf_interrupt_extended_policy_init, wudfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY_INIT, wdf.wdf_interrupt_extended_policy_init_umdf, WDF_INTERRUPT_EXTENDED_POLICY_INIT, WDF_INTERRUPT_EXTENDED_POLICY_INIT function
+ms.keywords : WDF_INTERRUPT_EXTENDED_POLICY_INIT function, wudfinterrupt/WDF_INTERRUPT_EXTENDED_POLICY_INIT, umdf.wdf_interrupt_extended_policy_init, wdf.wdf_interrupt_extended_policy_init_umdf, WDF_INTERRUPT_EXTENDED_POLICY_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,11 @@ The <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_extended_policy_ini
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5edff312-8373-4d36-b93c-c35fe8c2996a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsi/SesDownloadMcStateInProgress, SesDownloadMcStateInProgress, SesDownloadMcStateCompletedPendingPowerOn, SES_DOWNLOAD_MICROCODE_STATE enumeration [Storage Devices], scsi/SesDownloadMcStateCompletedPendingPowerOn, scsi/SesDownloadMcStateCompletedPendingReset, SesDownloadMcStateCompletedPendingActivation, scsi/SES_DOWNLOAD_MICROCODE_STATE, scsi/SesDownloadMcStateNoneInProgress, storage.ses_download_microcode_state, PSES_DOWNLOAD_MICROCODE_STATE, PSES_DOWNLOAD_MICROCODE_STATE enumeration pointer [Storage Devices], scsi/SesDownloadMcStateCompletedPendingActivation, _SES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateCompletedPendingReset, SES_DOWNLOAD_MICROCODE_STATE, scsi/PSES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateNoneInProgress
+ms.keywords : scsi/SesDownloadMcStateCompletedPendingActivation, PSES_DOWNLOAD_MICROCODE_STATE enumeration pointer [Storage Devices], scsi/PSES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE, SES_DOWNLOAD_MICROCODE_STATE enumeration [Storage Devices], scsi/SesDownloadMcStateNoneInProgress, SesDownloadMcStateCompletedPendingActivation, PSES_DOWNLOAD_MICROCODE_STATE, *PSES_DOWNLOAD_MICROCODE_STATE, scsi/SES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateCompletedPendingReset, storage.ses_download_microcode_state, SesDownloadMcStateInProgress, SesDownloadMcStateNoneInProgress, scsi/SesDownloadMcStateCompletedPendingReset, scsi/SesDownloadMcStateInProgress, _SES_DOWNLOAD_MICROCODE_STATE, SesDownloadMcStateCompletedPendingPowerOn, scsi/SesDownloadMcStateCompletedPendingPowerOn
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,5 @@ typedef enum _SES_DOWNLOAD_MICROCODE_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1709 and later versions of Windows. Available in Windows 10, version 1709 and later versions of Windows. |
 | **Header** | minitape.h (include Minitape.h, Storport.h) |

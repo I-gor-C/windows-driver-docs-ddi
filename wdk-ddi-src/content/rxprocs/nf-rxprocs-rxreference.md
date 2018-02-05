@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 436cd161-6984-4101-931a-221a829f40d0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxreference, rxref_3c87a6aa-d0c8-4308-8152-fce322dcb035.xml, RxReference function [Installable File System Drivers], rxprocs/RxReference, RxReference
+ms.keywords : rxprocs/RxReference, rxref_3c87a6aa-d0c8-4308-8152-fce322dcb035.xml, RxReference, RxReference function [Installable File System Drivers], ifsk.rxreference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,10 @@ If <b>RxReference</b> is called with any other type of RDBSS data structure, the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

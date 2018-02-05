@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 213d0ee8-96f1-4927-be87-1b504b3f3478
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfiotarget/WdfIoTargetQueryForInterface, DFIOTargetRef_ed9f676e-903e-4a93-ad0a-80c428ed8230.xml, wdf.wdfiotargetqueryforinterface, WdfIoTargetQueryForInterface method, kmdf.wdfiotargetqueryforinterface, WdfIoTargetQueryForInterface, PFN_WDFIOTARGETQUERYFORINTERFACE
+ms.keywords : kmdf.wdfiotargetqueryforinterface, WdfIoTargetQueryForInterface method, DFIOTargetRef_ed9f676e-903e-4a93-ad0a-80c428ed8230.xml, WdfIoTargetQueryForInterface, wdfiotarget/WdfIoTargetQueryForInterface, PFN_WDFIOTARGETQUERYFORINTERFACE, wdf.wdfiotargetqueryforinterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -130,24 +130,22 @@ Framework-based drivers define interfaces by calling <a href="..\wdfqueryinterfa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 
 <a href="..\wdffdo\nf-wdffdo-wdffdoqueryforinterface.md">WdfFdoQueryForInterface</a>
 
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
 
-<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
+<a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>
 
  
 

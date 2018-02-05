@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 05274F4B-0473-42BA-A382-B348A85DBFA5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_DECODE_SUPPORT_DATA_0020 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_DECODE_SUPPORT_DATA_0020, display.d3d12ddi_video_decode_support_data, D3D12DDI_VIDEO_DECODE_SUPPORT_DATA_0020
+ms.keywords : D3D12DDI_VIDEO_DECODE_SUPPORT_DATA_0020, d3d12umddi/D3D12DDI_VIDEO_DECODE_SUPPORT_DATA_0020, D3D12DDI_VIDEO_DECODE_SUPPORT_DATA_0020 structure [Display Devices], display.d3d12ddi_video_decode_support_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -106,9 +106,6 @@ This structure is retrieved through the <a href="..\d3d12umddi\nc-d3d12umddi-pfn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |
 
 ## See Also

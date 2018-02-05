@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2bca3123-3ac4-44fe-8d47-051314ef3cb7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_PROVIDER, WWAN_PROVIDER structure [Network Drivers Starting with Windows Vista], netvista.wwan_provider, PWWAN_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_PROVIDER, PWWAN_PROVIDER, WwanRef_a76aa69a-8c66-40a4-bda0-5ce66cc57790.xml, _WWAN_PROVIDER, wwan/PWWAN_PROVIDER, wwan/WWAN_PROVIDER
+ms.keywords : PWWAN_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_PROVIDER, PWWAN_PROVIDER, WWAN_PROVIDER, netvista.wwan_provider, *PWWAN_PROVIDER, _WWAN_PROVIDER, WWAN_PROVIDER structure [Network Drivers Starting with Windows Vista], wwan/WWAN_PROVIDER, WwanRef_a76aa69a-8c66-40a4-bda0-5ce66cc57790.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -228,9 +228,7 @@ This member can be ignored when queried for OID_WWAN_HOME_PROVIDER.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

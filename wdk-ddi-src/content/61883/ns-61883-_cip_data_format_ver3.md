@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : A7EDC949-A2C6-43E9-9CA0-886FEE5282F5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT, PCIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT, 61883/PCIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3 structure [Buses], IEEE.cip_data_format_ver3, 61883/CIP_DATA_FORMAT_VER3, _CIP_DATA_FORMAT_VER3, PCIP_DATA_FORMAT_VER3 structure pointer [Buses]
+ms.keywords : PCIP_DATA_FORMAT_VER3, 61883/CIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3, _CIP_DATA_FORMAT_VER3, 61883/PCIP_DATA_FORMAT_VER3, PCIP_DATA_FORMAT_VER3 structure pointer [Buses], CIP_DATA_FORMAT, *PCIP_DATA_FORMAT, *PCIP_DATA_FORMAT_VER3, IEEE.cip_data_format_ver3, CIP_DATA_FORMAT_VER3 structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -109,9 +109,6 @@ This member is QPC as defined by IEC-61883.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

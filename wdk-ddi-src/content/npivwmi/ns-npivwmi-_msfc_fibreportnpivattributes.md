@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1641C3A0-E6D9-4E30-9E3C-3C09A14F591F
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : npivwmi/PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes, npivwmi/MSFC_FibrePortNPIVAttributes, _MSFC_FibrePortNPIVAttributes, PMSFC_FibrePortNPIVAttributes, storage.msfc_fibreportnpivattributes, PMSFC_FibrePortNPIVAttributes structure pointer [Storage Devices], MSFC_FibrePortNPIVAttributes structure [Storage Devices], *PMSFC_FibrePortNPIVAttributes
+ms.keywords : npivwmi/PMSFC_FibrePortNPIVAttributes, storage.msfc_fibreportnpivattributes, *PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes, PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes structure [Storage Devices], PMSFC_FibrePortNPIVAttributes structure pointer [Storage Devices], _MSFC_FibrePortNPIVAttributes, npivwmi/MSFC_FibrePortNPIVAttributes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes"
+req.typenames : MSFC_FibrePortNPIVAttributes, *PMSFC_FibrePortNPIVAttributes
 ---
 
 # _MSFC_FibrePortNPIVAttributes structure
@@ -74,9 +74,6 @@ The world wide port name of the physical port.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | npivwmi.h (include Npivwmi.h) |
 
 ## See Also

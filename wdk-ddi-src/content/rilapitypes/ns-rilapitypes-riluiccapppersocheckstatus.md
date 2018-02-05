@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8e51ae9a-4670-4de1-bfca-bef8cb0c9cc9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS, netvista.riluiccapppersocheckstatus_2, RILUICCAPPPERSOCHECKSTATUS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.riluiccapppersocheckstatus_2, *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCAPPPERSOCHECKSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,7 +80,4 @@ typedef struct _RILUICCAPPPERSOCHECKSTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

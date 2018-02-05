@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : EF22D5C3-7A3B-4A96-A050-FCB71CA2C149
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_GSM_NMR_INFO, wwan/PWWAN_GSM_NMR_INFO, PWWAN_GSM_NMR_INFO, WWAN_GSM_NMR_INFO structure [Network Drivers Starting with Windows Vista], netvista.wwan_gsm_nmr_info, _WWAN_GSM_NMR_INFO, WWAN_GSM_NMR_INFO, *PWWAN_GSM_NMR_INFO, PWWAN_GSM_NMR_INFO structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : PWWAN_GSM_NMR_INFO, wwan/WWAN_GSM_NMR_INFO, _WWAN_GSM_NMR_INFO, netvista.wwan_gsm_nmr_info, wwan/PWWAN_GSM_NMR_INFO, PWWAN_GSM_NMR_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_GSM_NMR_INFO structure [Network Drivers Starting with Windows Vista], WWAN_GSM_NMR_INFO, *PWWAN_GSM_NMR_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_GSM_NMR_INFO, *PWWAN_GSM_NMR_INFO
+req.typenames : "*PWWAN_GSM_NMR_INFO, WWAN_GSM_NMR_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -96,18 +96,16 @@ The received signal strength (RSS) of the serving cell (0-63), where
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_gsm_serving_cell_info.md">WWAN_GSM_SERVING_CELL_INFO</a>
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
 
 <a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
+
+<a href="..\wwan\ns-wwan-_wwan_gsm_serving_cell_info.md">WWAN_GSM_SERVING_CELL_INFO</a>
 
 <a href="..\wwan\ns-wwan-_wwan_gsm_nmr.md">WWAN_GSM_NMR</a>
 

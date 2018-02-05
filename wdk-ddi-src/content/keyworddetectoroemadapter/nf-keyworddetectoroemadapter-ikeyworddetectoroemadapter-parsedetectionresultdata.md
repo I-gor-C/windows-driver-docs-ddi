@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 97C92A85-BE00-4B95-80D1-20FE7A31BCA9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ParseDetectionResultData method [Audio Devices], IKeywordDetectorOemAdapter::ParseDetectionResultData, ParseDetectionResultData method [Audio Devices], IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], ParseDetectionResultData method, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ParseDetectionResultData, ParseDetectionResultData, audio.ikeyworddetectoroemadapter_parsedetectionresultdata
+ms.keywords : audio.ikeyworddetectoroemadapter_parsedetectionresultdata, ParseDetectionResultData method [Audio Devices], IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], ParseDetectionResultData method, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ParseDetectionResultData, IKeywordDetectorOemAdapter::ParseDetectionResultData, ParseDetectionResultData, ParseDetectionResultData method [Audio Devices], IKeywordDetectorOemAdapter interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -168,20 +168,14 @@ If the caller receives <b>E_HW_RESET</b>, no keyword was detected by the hardwar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | keyworddetectoroemadapter.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | keyworddetectoroemadapter.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932150">KSPROPERTY_SOUNDDETECTOR_MATCHRESULT</a>
-
-<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
+<a href="..\ksmedia\ns-ksmedia-sounddetector_patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946533">IMiniportWaveRTInputStream::GetReadPacket</a>
 
@@ -189,7 +183,9 @@ If the caller receives <b>E_HW_RESET</b>, no keyword was detected by the hardwar
 
 <a href="https://msdn.microsoft.com/3d0af12e-fc74-4ef7-b2dd-e9da5d0483c7">CoTaskMemFree</a>
 
-<a href="..\ksmedia\ns-ksmedia-sounddetector_patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932150">KSPROPERTY_SOUNDDETECTOR_MATCHRESULT</a>
+
+<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
 
  
 

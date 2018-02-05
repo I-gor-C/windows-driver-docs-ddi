@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fa99ebc4-72d3-42ef-9dda-dcfdd438f66f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ccref_9ad1d1a5-0600-4cfa-88d3-e4e5d2cd9df1.xml, CcSetBcbOwnerPointer routine [Installable File System Drivers], CcSetBcbOwnerPointer, ntifs/CcSetBcbOwnerPointer, ifsk.ccsetbcbownerpointer
+ms.keywords : ntifs/CcSetBcbOwnerPointer, CcSetBcbOwnerPointer routine [Installable File System Drivers], ifsk.ccsetbcbownerpointer, CcSetBcbOwnerPointer, ccref_9ad1d1a5-0600-4cfa-88d3-e4e5d2cd9df1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,22 +77,18 @@ BCBs that have been modified by <b>CcSetBcbOwnerPointer</b> cannot be unpinned b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
-
-<a href="..\ntifs\nf-ntifs-ccunpindataforthread.md">CcUnpinDataForThread</a>
 
 <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
 
 <a href="..\wdm\nf-wdm-exsetresourceownerpointer.md">ExSetResourceOwnerPointer</a>
+
+<a href="..\ntifs\nf-ntifs-ccunpindataforthread.md">CcUnpinDataForThread</a>
 
  
 

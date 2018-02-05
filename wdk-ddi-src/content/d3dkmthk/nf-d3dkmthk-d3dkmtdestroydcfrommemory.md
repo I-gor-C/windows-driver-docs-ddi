@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1c34db7b-6153-40ec-9a9f-72b9c04c9f12
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_2c70707b-7052-4f5f-8715-e2e61a7ab267.xml, D3DKMTDestroyDCFromMemory, display.d3dkmtdestroydcfrommemory, d3dkmthk/D3DKMTDestroyDCFromMemory, D3DKMTDestroyDCFromMemory function [Display Devices]
+ms.keywords : d3dkmthk/D3DKMTDestroyDCFromMemory, D3DKMTDestroyDCFromMemory function [Display Devices], display.d3dkmtdestroydcfrommemory, D3DKMTDestroyDCFromMemory, OpenGL_Functions_2c70707b-7052-4f5f-8715-e2e61a7ab267.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

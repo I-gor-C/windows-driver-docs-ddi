@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c20c39f9-ceee-47f0-849a-f8686fb05e6a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerClassFreePool routine [Storage Devices], ChangerClassFreePool, storage.changerclassfreepool, mcd/ChangerClassFreePool, chgrclas_3f5fb8a4-3c85-4dde-80c9-f8e001b7b3bd.xml
+ms.keywords : chgrclas_3f5fb8a4-3c85-4dde-80c9-f8e001b7b3bd.xml, storage.changerclassfreepool, mcd/ChangerClassFreePool, ChangerClassFreePool routine [Storage Devices], ChangerClassFreePool
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,9 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mcd.lib |
 
 ## See Also
 

@@ -158,8 +158,5 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/jj991816">SetTy
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | extsfns.h |
-| **DLL** |  |

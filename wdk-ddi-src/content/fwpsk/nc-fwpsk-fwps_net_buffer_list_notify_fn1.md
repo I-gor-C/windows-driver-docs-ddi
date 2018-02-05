@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
+req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 
@@ -68,16 +68,19 @@ NTSTATUS FwpsNetBufferListNotifyFn1(
 
 A value that indicates the type of notification that the filter engine is sending to the callout.
      This parameter will be set to one of the values of the 
-     <mshelp:link keywords="netvista.fwps_net_buffer_list_event_type0" tabindex="0"><b>
-     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</b></mshelp:link> enumeration.
+     <a href="..\fwpsk\ne-fwpsk-fwps_net_buffer_list_event_type0_.md">
+     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</a> enumeration.
 
 `*netBufferList`
 
-
+A pointer to the buffer list that contains packets that were previously tagged as interesting by
+     the callout driver.
 
 `*newNetBufferList`
 
-
+A pointer to an updated buffer list that contains packets that are interesting to the callout
+     driver. The use of this parameter differs depending on the type of event. For events where a change is
+     made to the indicated packet, the changed version is passed as this parameter.
 
 `layerId`
 
@@ -139,27 +142,23 @@ This function is identical to <a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_no
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Windows |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
-
-<a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>
+<a href="..\fwpsk\ne-fwpsk-fwps_net_buffer_list_event_type0_.md">
+     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</a>
 
 <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext1.md">FwpsNetBufferListAssociateContext1</a>
 
-<mshelp:link keywords="netvista.fwps_net_buffer_list_event_type0" tabindex="0"><b>
-     FWPS_NET_BUFFER_LIST_EVENT_TYPE0</b></mshelp:link>
+<a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
+
+<a href="..\fwpsk\nc-fwpsk-fwps_net_buffer_list_notify_fn0.md">FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
 
  
 

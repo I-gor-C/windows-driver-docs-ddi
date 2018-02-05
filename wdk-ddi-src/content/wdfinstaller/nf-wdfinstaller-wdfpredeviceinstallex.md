@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 99de930a-0d01-4177-b0d9-4692cc570303
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPreDeviceInstallEx function, PFN_WDFPREDEVICEINSTALLEX, WdfPreDeviceInstallEx, wdf.wdfpredeviceinstallex, kmdf.wdfpredeviceinstallex, wdfinstaller/WdfPreDeviceInstallEx, DFCoinstallerRef_0142df49-f344-47f7-bcd1-6e37e5d439fe.xml
+ms.keywords : kmdf.wdfpredeviceinstallex, WdfPreDeviceInstallEx function, PFN_WDFPREDEVICEINSTALLEX, DFCoinstallerRef_0142df49-f344-47f7-bcd1-6e37e5d439fe.xml, WdfPreDeviceInstallEx, wdfinstaller/WdfPreDeviceInstallEx, wdf.wdfpredeviceinstallex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,20 +95,16 @@ If the installer sets the <i>ShowRebootPrompt</i> member of the <a href="..\wdfi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfinstaller.h (include Wdfinstaller.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.) |
 
 ## See Also
 
-<a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstall.md">WdfPreDeviceInstall</a>
-
 <a href="..\wdfinstaller\nf-wdfinstaller-wdfpostdeviceinstall.md">WdfPostDeviceInstall</a>
+
+<a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstall.md">WdfPreDeviceInstall</a>
 
  
 

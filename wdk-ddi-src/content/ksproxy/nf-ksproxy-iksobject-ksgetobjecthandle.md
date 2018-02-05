@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 55c4f362-eb3c-4c4f-a048-7abdd270f67f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsObject, KsGetObjectHandle, KsGetObjectHandle method [Streaming Media Devices], stream.iksobject_ksgetobjecthandle, ksproxy_37998df5-a529-4f73-95a3-88ff3fdfcf2a.xml, IKsObject interface [Streaming Media Devices], KsGetObjectHandle method, ksproxy/IKsObject::KsGetObjectHandle, IKsObject::KsGetObjectHandle, KsGetObjectHandle method [Streaming Media Devices], IKsObject interface
+ms.keywords : KsGetObjectHandle method [Streaming Media Devices], IKsObject::KsGetObjectHandle, KsGetObjectHandle method [Streaming Media Devices], IKsObject interface, KsGetObjectHandle, ksproxy/IKsObject::KsGetObjectHandle, IKsObject interface [Streaming Media Devices], KsGetObjectHandle method, IKsObject, stream.iksobject_ksgetobjecthandle, ksproxy_37998df5-a529-4f73-95a3-88ff3fdfcf2a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -63,14 +63,9 @@ Applications can use the handle that <b>KsGetObjectHandle</b> returns to send co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | DesktopMobile |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | DesktopMobile |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

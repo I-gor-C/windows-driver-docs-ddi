@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3a120831-deac-4075-9aa7-8ae39ac29363
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlUpperString routine [Kernel-Mode Driver Architecture], RtlUpperString, k109_07df2cdb-0d52-4094-bcdf-62977c15e098.xml, kernel.rtlupperstring, ntddk/RtlUpperString
+ms.keywords : RtlUpperString routine [Kernel-Mode Driver Architecture], RtlUpperString, kernel.rtlupperstring, ntddk/RtlUpperString, k109_07df2cdb-0d52-4094-bcdf-62977c15e098.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,12 @@ The number of bytes copied from <i>SourceString</i> is either the <b>Length</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

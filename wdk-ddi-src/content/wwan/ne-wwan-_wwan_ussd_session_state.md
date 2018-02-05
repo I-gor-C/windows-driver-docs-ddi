@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5111A10F-F66F-4667-A77E-63691CCD282D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WWAN_USSD_SESSION_STATE, WWAN_USSD_SESSION_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/WWAN_USSD_SESSION_STATE, WwanUssdSessionStateNew, netvista.wwan_ussd_session_state, wwan/WwanUssdSessionStateExisting, WWAN_USSD_SESSION_STATE, *PWWAN_USSD_SESSION_STATE, wwan/WwanUssdSessionStateNew, WwanUssdSessionStateExisting"
+ms.keywords : netvista.wwan_ussd_session_state, *PWWAN_USSD_SESSION_STATE, wwan/WwanUssdSessionStateNew, wwan/WwanUssdSessionStateExisting, WWAN_USSD_SESSION_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/WWAN_USSD_SESSION_STATE, WwanUssdSessionStateExisting, WWAN_USSD_SESSION_STATE, _WWAN_USSD_SESSION_STATE, WwanUssdSessionStateNew
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -72,7 +72,5 @@ Miniport drivers use the WWAN_USSD_SESSION_STATE enumeration to indicate whether
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h |

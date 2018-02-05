@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9acb41d8-502f-404e-a03f-d222eff6d0ad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilaccesstechnologyparammask_2, rilapitypes/RILACCESSTECHNOLOGYPARAMMASK, RIL_PARAM_ACCTECH_SYSTEMKIND, RILACCESSTECHNOLOGYPARAMMASK, rilapitypes/RIL_PARAM_ACCTECH_ALL, rilapitypes/RIL_PARAM_ACCTECH_SYSTEMKIND, RIL_PARAM_ACCTECH_ALL, RILACCESSTECHNOLOGYPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : rilapitypes/RIL_PARAM_ACCTECH_ALL, rilapitypes/RILACCESSTECHNOLOGYPARAMMASK, RIL_PARAM_ACCTECH_SYSTEMKIND, netvista.rilaccesstechnologyparammask_2, RILACCESSTECHNOLOGYPARAMMASK, RIL_PARAM_ACCTECH_ALL, RILACCESSTECHNOLOGYPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_ACCTECH_SYSTEMKIND
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILACCESSTECHNOLOGYPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7f436ac1-1e36-449c-a23f-b5729e5a20c2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdmatransactiondmacompletedwithlength, wdfdmatransaction/WdfDmaTransactionDmaCompletedWithLength, DFDmaObjectRef_b04fb6c6-98ce-4d3b-8bc9-10a29f6bde46.xml, PFN_WDFDMATRANSACTIONDMACOMPLETEDWITHLENGTH, wdf.wdfdmatransactiondmacompletedwithlength, WdfDmaTransactionDmaCompletedWithLength, WdfDmaTransactionDmaCompletedWithLength method
+ms.keywords : WdfDmaTransactionDmaCompletedWithLength method, kmdf.wdfdmatransactiondmacompletedwithlength, wdf.wdfdmatransactiondmacompletedwithlength, PFN_WDFDMATRANSACTIONDMACOMPLETEDWITHLENGTH, wdfdmatransaction/WdfDmaTransactionDmaCompletedWithLength, WdfDmaTransactionDmaCompletedWithLength, DFDmaObjectRef_b04fb6c6-98ce-4d3b-8bc9-10a29f6bde46.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,12 +87,10 @@ For more information about completing DMA transfers, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmatransaction.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
@@ -100,9 +98,9 @@ For more information about completing DMA transfers, see <a href="https://msdn.m
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiongetcurrentdmatransferlength.md">WdfDmaTransactionGetCurrentDmaTransferLength</a>
-
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiondmacompleted.md">WdfDmaTransactionDmaCompleted</a>
+
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactiongetcurrentdmatransferlength.md">WdfDmaTransactionGetCurrentDmaTransferLength</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a7e1a7cf-60ea-4489-a1c2-eac5b218af8c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcNewResourceSublist, audpc-routines_3354ba13-6737-4862-b8b4-2afa64dc8eab.xml, portcls/PcNewResourceSublist, PcNewResourceSublist function [Audio Devices], audio.pcnewresourcesublist
+ms.keywords : portcls/PcNewResourceSublist, audio.pcnewresourcesublist, PcNewResourceSublist, audpc-routines_3354ba13-6737-4862-b8b4-2afa64dc8eab.xml, PcNewResourceSublist function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -92,22 +92,19 @@ The <i>OutResourceList</i>, <i>OuterUnknown</i>, and <i>ParentList</i> parameter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcNewResourceSublist function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcNewResourceSublist function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536981">IResourceList::AddEntryFromParent</a>
 
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
 <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536981">IResourceList::AddEntryFromParent</a>
 
  
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS"
+req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 
@@ -65,7 +65,7 @@ NTSTATUS NdkFnFastRegister(
 
 `*pNdkQp`
 
-
+A pointer to an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>).
 
 `RequestContext`
 
@@ -73,7 +73,7 @@ A  context value to return in the <b>RequestContext</b> member of the <a href=".
 
 `*pMr`
 
-
+A pointer to an NDK memory region (MR) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>) that was initialized for fast registration.
 
 `AdapterPageCount`
 
@@ -244,32 +244,28 @@ If an NDK consumer passes the <b>NDK_OP_FLAG_RDMA_READ_SINK</b> flag on an adapt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndkpi.h (include Ndkpi.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/DA2D0FCA-D84B-4599-A560-8F87A0918D99">NDKPI Deferred Processing Scheme</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_get_remote_token_from_mr.md">NDK_FN_GET_REMOTE_TOKEN_FROM_MR</a>
 
 <a href="https://msdn.microsoft.com/2BF6F253-FCB4-4A61-9A67-81092F3C44E4">NDKPI Work Request Posting Requirements</a>
 
+<a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
+
+<a href="https://msdn.microsoft.com/DA2D0FCA-D84B-4599-A560-8F87A0918D99">NDKPI Deferred Processing Scheme</a>
+
 <a href="..\ndkpi\ns-ndkpi-_ndk_logical_address_mapping.md">NDK_LOGICAL_ADDRESS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
+
+<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>
 
  
 

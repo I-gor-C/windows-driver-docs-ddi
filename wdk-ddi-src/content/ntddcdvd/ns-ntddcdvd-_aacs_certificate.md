@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 591d8f63-ab3e-48b7-8fe4-98dcdf9464f1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-DVD_0eedee44-0be8-462e-84ac-e5efbc37fc82.xml, AACS_CERTIFICATE, *PAACS_CERTIFICATE, ntddcdvd/AACS_CERTIFICATE, _AACS_CERTIFICATE, AACS_CERTIFICATE structure [Storage Devices], storage.aacs_certificate, PAACS_CERTIFICATE structure pointer [Storage Devices], PAACS_CERTIFICATE, ntddcdvd/PAACS_CERTIFICATE
+ms.keywords : AACS_CERTIFICATE, storage.aacs_certificate, ntddcdvd/PAACS_CERTIFICATE, PAACS_CERTIFICATE structure pointer [Storage Devices], PAACS_CERTIFICATE, _AACS_CERTIFICATE, ntddcdvd/AACS_CERTIFICATE, AACS_CERTIFICATE structure [Storage Devices], structs-DVD_0eedee44-0be8-462e-84ac-e5efbc37fc82.xml, *PAACS_CERTIFICATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ Clients retrieve an Advanced Access Content System (AACS) certificate with an <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
 
 ## See Also

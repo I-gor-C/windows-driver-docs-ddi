@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 75DDFC2A-EF7F-4652-B0D0-8BF1583B3679
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.read_register_ushort, READ_REGISTER_USHORT, wudfddi_hwaccess/READ_REGISTER_USHORT, umdf.read_register_ushort, READ_REGISTER_USHORT function
+ms.keywords : wudfddi_hwaccess/READ_REGISTER_USHORT, wdf.read_register_ushort, umdf.read_register_ushort, READ_REGISTER_USHORT function, READ_REGISTER_USHORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS"
+req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -76,11 +76,8 @@ For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_hwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a700979e-aee4-4bce-8f98-b44b864fbb43
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsQueueWorkItem, ks/KsQueueWorkItem, stream.ksqueueworkitem, KsQueueWorkItem function [Streaming Media Devices], ksfunc_abb711a0-0862-4d91-b2e1-3af290f1112f.xml
+ms.keywords : KsQueueWorkItem, ks/KsQueueWorkItem, ksfunc_abb711a0-0862-4d91-b2e1-3af290f1112f.xml, KsQueueWorkItem function [Streaming Media Devices], stream.ksqueueworkitem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ The worker can only be on a queue in one place, so subsequent queuing of the wor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

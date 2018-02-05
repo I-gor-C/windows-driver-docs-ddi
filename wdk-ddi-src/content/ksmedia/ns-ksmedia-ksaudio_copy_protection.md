@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7dab0240-67c3-4412-a7a5-bb98d84c6bdd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAUDIO_COPY_PROTECTION, ksmedia/PKSAUDIO_COPY_PROTECTION, audio.ksaudio_copy_protection, PKSAUDIO_COPY_PROTECTION structure pointer [Audio Devices], *PKSAUDIO_COPY_PROTECTION, aud-prop_94eac763-0c97-406d-b255-686ac82f908c.xml, ksmedia/KSAUDIO_COPY_PROTECTION, PKSAUDIO_COPY_PROTECTION, KSAUDIO_COPY_PROTECTION structure [Audio Devices]
+ms.keywords : audio.ksaudio_copy_protection, KSAUDIO_COPY_PROTECTION, ksmedia/PKSAUDIO_COPY_PROTECTION, ksmedia/KSAUDIO_COPY_PROTECTION, PKSAUDIO_COPY_PROTECTION, aud-prop_94eac763-0c97-406d-b255-686ac82f908c.xml, *PKSAUDIO_COPY_PROTECTION, KSAUDIO_COPY_PROTECTION structure [Audio Devices], PKSAUDIO_COPY_PROTECTION structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSAUDIO_COPY_PROTECTION, KSAUDIO_COPY_PROTECTION"
+req.typenames : KSAUDIO_COPY_PROTECTION, *PKSAUDIO_COPY_PROTECTION
 ---
 
 # KSAUDIO_COPY_PROTECTION structure
@@ -70,9 +70,6 @@ The KSPROPERTY_AUDIO_COPY_PROTECTION property is separate from and unrelated to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

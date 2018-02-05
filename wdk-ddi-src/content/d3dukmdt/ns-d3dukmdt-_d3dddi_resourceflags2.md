@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2edf2104-ad17-4c84-b991-57e64565029f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDI_RESOURCEFLAGS2, D3DDDI_RESOURCEFLAGS2 structure [Display Devices], d3dukmdt/D3DDDI_RESOURCEFLAGS2, display.d3dddi_resourceflags2, _D3DDDI_RESOURCEFLAGS2
+ms.keywords : D3DDDI_RESOURCEFLAGS2 structure [Display Devices], d3dukmdt/D3DDDI_RESOURCEFLAGS2, D3DDDI_RESOURCEFLAGS2, _D3DDDI_RESOURCEFLAGS2, display.d3dddi_resourceflags2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,7 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dukmdt.h (include D3dukmdt.h, D3dkmddi.h) |
 
 ## See Also

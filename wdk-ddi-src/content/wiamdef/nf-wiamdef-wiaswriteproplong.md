@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : bc7122e4-acba-4115-98c8-ccb71b71e2c0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.wiaswriteproplong, wiasWritePropLong, wiamdef/wiasWritePropLong, wiasWritePropLong function [Imaging Devices], wiasFncs_af342c9b-5f61-492d-9765-86d62d492b55.xml
+ms.keywords : wiasFncs_af342c9b-5f61-492d-9765-86d62d492b55.xml, image.wiaswriteproplong, wiasWritePropLong, wiasWritePropLong function [Imaging Devices], wiamdef/wiasWritePropLong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -76,26 +76,23 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
-
 <a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
-
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropguid.md">wiasWritePropGuid</a>
 
 <a href="..\wiamdef\nf-wiamdef-wiaswritepropstr.md">wiasWritePropStr</a>
 
+<a href="..\wiamdef\nf-wiamdef-wiaswritepropguid.md">wiasWritePropGuid</a>
+
 <a href="..\wiamdef\nf-wiamdef-wiaswritepropbin.md">wiasWritePropBin</a>
+
+<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5e57e2cc-91a2-4150-9805-8a963530080a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_SET_QUEUEDLIMIT_PRESENT, d3dkmthk/D3DKMT_QUEUEDLIMIT_TYPE, _D3DKMT_QUEUEDLIMIT_TYPE, D3DKMT_QUEUEDLIMIT_TYPE enumeration [Display Devices], display.d3dkmt_queuedlimit_type, d3dkmthk/D3DKMT_GET_QUEUEDLIMIT_PRESENT, D3DKMT_SET_QUEUEDLIMIT_PRESENT, D3DKMT_QUEUEDLIMIT_TYPE, OpenGL_Structs_8908789d-6be7-41de-9aff-526cf8b1684c.xml, D3DKMT_GET_QUEUEDLIMIT_PRESENT
+ms.keywords : D3DKMT_GET_QUEUEDLIMIT_PRESENT, OpenGL_Structs_8908789d-6be7-41de-9aff-526cf8b1684c.xml, d3dkmthk/D3DKMT_QUEUEDLIMIT_TYPE, d3dkmthk/D3DKMT_GET_QUEUEDLIMIT_PRESENT, D3DKMT_SET_QUEUEDLIMIT_PRESENT, D3DKMT_QUEUEDLIMIT_TYPE enumeration [Display Devices], _D3DKMT_QUEUEDLIMIT_TYPE, d3dkmthk/D3DKMT_SET_QUEUEDLIMIT_PRESENT, D3DKMT_QUEUEDLIMIT_TYPE, display.d3dkmt_queuedlimit_type
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,9 +68,7 @@ typedef enum _D3DKMT_QUEUEDLIMIT_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

@@ -72,7 +72,7 @@ The size of the input buffer <i>pInputBuffer</i>, supplied by the operating syst
 
 `*pInputBuffer`
 
-
+A pointer to the input buffer, supplied by the operating system.
 
 `OutputBufferSize`
 
@@ -80,11 +80,11 @@ The size of the output buffer <i>pOutputBuffer</i>, supplied by the operating sy
 
 `*pOutputBuffer`
 
-
+A pointer to the output buffer, supplied by the operating system.
 
 `*pBytesReturned`
 
-
+A pointer to a buffer, supplied by the operating system, that holds the number of returned bytes that the display miniport driver wrote in <i>pOutputBuffer</i>.
 
 
 ## Return Value
@@ -95,14 +95,9 @@ On success, this function returns <b>STATUS_SUCCESS</b>. Otherwise, the function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | netdispumdddi.h (include Netdispumdddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -110,11 +105,11 @@ On success, this function returns <b>STATUS_SUCCESS</b>. Otherwise, the function
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_destroy_miracast_context.md">DestroyMiracastContext</a>
 
-<a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkcb_miracast_send_message.md">DxgkCbMiracastSendMessage</a>
 
 <a href="..\netdispumdddi\nc-netdispumdddi-pfn_stop_miracast_session.md">StopMiracastSession</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkcb_miracast_send_message.md">DxgkCbMiracastSendMessage</a>
+<a href="..\netdispumdddi\nc-netdispumdddi-pfn_start_miracast_session.md">StartMiracastSession</a>
 
  
 

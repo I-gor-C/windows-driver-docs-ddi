@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E7287A50-2BB8-4D11-AB9B-6E65EEDD698D
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR, ntddstor/PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR structure [Storage Devices], storage.device_lb_provisioning_descriptor, _DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR structure pointer [Storage Devices], ntddstor/DEVICE_LB_PROVISIONING_DESCRIPTOR
+ms.keywords : ntddstor/PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR structure [Storage Devices], *PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR structure pointer [Storage Devices], ntddstor/DEVICE_LB_PROVISIONING_DESCRIPTOR, _DEVICE_LB_PROVISIONING_DESCRIPTOR, storage.device_lb_provisioning_descriptor, DEVICE_LB_PROVISIONING_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR"
+req.typenames : DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR
 ---
 
 # _DEVICE_LB_PROVISIONING_DESCRIPTOR structure
@@ -234,9 +234,7 @@ If the underlying storage device is a SCSI device, unmapping capability can be q
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

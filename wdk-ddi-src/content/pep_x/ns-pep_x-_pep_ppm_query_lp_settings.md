@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 69A8792B-954E-49AF-A306-25B94183E58A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS structure [Kernel-Mode Driver Architecture], pep_x/PEP_PPM_QUERY_LP_SETTINGS, PPEP_PPM_QUERY_LP_SETTINGS structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_LP_SETTINGS, kernel.pep_ppm_query_lp_settings, *PPEP_PPM_QUERY_LP_SETTINGS, pep_x/PPEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS
+ms.keywords : PEP_PPM_QUERY_LP_SETTINGS structure [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_LP_SETTINGS, PPEP_PPM_QUERY_LP_SETTINGS, pep_x/PEP_PPM_QUERY_LP_SETTINGS, PPEP_PPM_QUERY_LP_SETTINGS structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_PPM_QUERY_LP_SETTINGS, kernel.pep_ppm_query_lp_settings, *PPEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_PPM_QUERY_LP_SETTINGS, *PPEP_PPM_QUERY_LP_SETTINGS
+req.typenames : "*PPEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS"
 ---
 
 # _PEP_PPM_QUERY_LP_SETTINGS structure
@@ -63,9 +63,7 @@ The PEP can provide settings for certain key power scenarios such as full-screen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
 ## See Also

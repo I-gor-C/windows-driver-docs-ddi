@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f03851a4-e1e9-4fee-b264-c2f91c6e8180
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltAllocateCallbackDataEx routine [Installable File System Drivers], FltAllocateCallbackDataEx, ifsk.fltallocatecallbackdataex, fltkernel/FltAllocateCallbackDataEx, FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml
+ms.keywords : FltAllocateCallbackDataEx routine [Installable File System Drivers], FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml, fltkernel/FltAllocateCallbackDataEx, FltAllocateCallbackDataEx, ifsk.fltallocatecallbackdataex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,20 +89,17 @@ If the FLT_ALLOCATE_CALLBACK_DATA_PREALLOCATE_ALL_MEMORY flag is set, the routin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating system. Available in Windows 7 and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
-
 <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 21604988-ed1a-419b-b002-ab975e8921ad
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wlanihv/DOT11_MSONEX_RESULT_PARAMS, wlanihv/PDOT11_MSONEX_RESULT_PARAMS, Native_802.11_data_types_52bdb8c1-36cc-43a0-9156-397c3a8549b3.xml, PDOT11_MSONEX_RESULT_PARAMS, DOT11_MSONEX_RESULT_PARAMS, _DOT11_MSONEX_RESULT_PARAMS, netvista.dot11_msonex_result_params, *PDOT11_MSONEX_RESULT_PARAMS, PDOT11_MSONEX_RESULT_PARAMS structure pointer [Network Drivers Starting with Windows Vista], DOT11_MSONEX_RESULT_PARAMS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : Native_802.11_data_types_52bdb8c1-36cc-43a0-9156-397c3a8549b3.xml, netvista.dot11_msonex_result_params, PDOT11_MSONEX_RESULT_PARAMS, wlanihv/DOT11_MSONEX_RESULT_PARAMS, _DOT11_MSONEX_RESULT_PARAMS, PDOT11_MSONEX_RESULT_PARAMS structure pointer [Network Drivers Starting with Windows Vista], DOT11_MSONEX_RESULT_PARAMS structure [Network Drivers Starting with Windows Vista], DOT11_MSONEX_RESULT_PARAMS, *PDOT11_MSONEX_RESULT_PARAMS, wlanihv/PDOT11_MSONEX_RESULT_PARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_MSONEX_RESULT_PARAMS, *PDOT11_MSONEX_RESULT_PARAMS
+req.typenames : "*PDOT11_MSONEX_RESULT_PARAMS, DOT11_MSONEX_RESULT_PARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -100,18 +100,16 @@ A pointer to a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlanihv.h (include Wlanihv.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569846">ONEX_REASON_CODE</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569845">ONEX_AUTH_STATUS</a>
 
 <a href="..\wlanihv\ns-wlanihv-_dot11_eap_result.md">DOT11_EAP_RESULT</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569846">ONEX_REASON_CODE</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fbcca01d-2dd6-405a-9ec2-709652e9dcd6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : objectstructures_60aa943f-6a91-429d-8c9d-1554f1bcf03e.xml, ObjectBasicInformation, ntifs/OBJECT_INFORMATION_CLASS, ObjectTypeInformation, _OBJECT_INFORMATION_CLASS, OBJECT_INFORMATION_CLASS enumeration [Installable File System Drivers], ntifs/ObjectTypeInformation, OBJECT_INFORMATION_CLASS, ntifs/ObjectBasicInformation, ifsk.object_information_class
+ms.keywords : "_OBJECT_INFORMATION_CLASS, ifsk.object_information_class, ntifs/ObjectTypeInformation, OBJECT_INFORMATION_CLASS, OBJECT_INFORMATION_CLASS enumeration [Installable File System Drivers], objectstructures_60aa943f-6a91-429d-8c9d-1554f1bcf03e.xml, ObjectTypeInformation, ObjectBasicInformation, ntifs/OBJECT_INFORMATION_CLASS, ntifs/ObjectBasicInformation"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,9 +68,7 @@ typedef enum _OBJECT_INFORMATION_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Microsoft Windows 2000. Available starting with Microsoft Windows 2000. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

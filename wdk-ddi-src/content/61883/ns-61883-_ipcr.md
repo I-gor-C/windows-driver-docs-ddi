@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 81c89fbc-5d58-4983-b591-765a7818b932
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PIPCR structure pointer [Buses], PIPCR, IPCR, IPCR structure [Buses], 61883_structures_e7226c37-f3b1-4e57-977a-6fb25c853f19.xml, 61883/IPCR, *PIPCR, IEEE.ipcr, _IPCR, 61883/PIPCR
+ms.keywords : 61883_structures_e7226c37-f3b1-4e57-977a-6fb25c853f19.xml, IPCR structure [Buses], *PIPCR, IPCR, 61883/PIPCR, PIPCR structure pointer [Buses], _IPCR, 61883/IPCR, IEEE.ipcr, PIPCR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PIPCR, IPCR"
+req.typenames : IPCR, *PIPCR
 ---
 
 # _IPCR structure
@@ -84,9 +84,6 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h (include 61883.h) |
 
 ## See Also

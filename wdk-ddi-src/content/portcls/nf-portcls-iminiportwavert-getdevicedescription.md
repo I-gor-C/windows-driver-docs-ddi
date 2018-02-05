@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c6c0da06-c304-4d2d-907c-ccbb141c385b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRT, IMiniportWaveRT::GetDeviceDescription, IMiniportWaveRT interface [Audio Devices], GetDeviceDescription method, GetDeviceDescription method [Audio Devices], audmp-routines_3a5441ed-a935-42ea-84be-29f1f6b6db07.xml, portcls/IMiniportWaveRT::GetDeviceDescription, audio.iminiportwavert_getdevicedescription, GetDeviceDescription, GetDeviceDescription method [Audio Devices], IMiniportWaveRT interface
+ms.keywords : GetDeviceDescription, GetDeviceDescription method [Audio Devices], IMiniportWaveRT interface, IMiniportWaveRT, portcls/IMiniportWaveRT::GetDeviceDescription, IMiniportWaveRT interface [Audio Devices], GetDeviceDescription method, audmp-routines_3a5441ed-a935-42ea-84be-29f1f6b6db07.xml, GetDeviceDescription method [Audio Devices], IMiniportWaveRT::GetDeviceDescription, audio.iminiportwavert_getdevicedescription
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,22 +68,19 @@ The <i>DeviceDescription</i> parameter contains a pointer to a DEVICE_DESCRIPTIO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
+<a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
 
 <a href="..\portcls\nn-portcls-iminiportwavert.md">IMiniportWaveRT</a>
 
-<a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
+<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
 
  
 

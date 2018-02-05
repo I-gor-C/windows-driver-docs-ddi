@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1b778d94-55e6-4a5f-aa77-739bcf9a8041
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : strclass-routines_d010423c-9c48-4dee-8ca3-f4b2854d14c9.xml, stream.streamclassgetdmabuffer, strmini/StreamClassGetDmaBuffer, StreamClassGetDmaBuffer, StreamClassGetDmaBuffer routine [Streaming Media Devices]
+ms.keywords : strclass-routines_d010423c-9c48-4dee-8ca3-f4b2854d14c9.xml, strmini/StreamClassGetDmaBuffer, stream.streamclassgetdmabuffer, StreamClassGetDmaBuffer, StreamClassGetDmaBuffer routine [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,9 @@ The minidriver specifies the size of the DMA buffer in the <b>DmaBufferSize</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | strmini.h (include Strmini.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Stream.lib |
 
 ## See Also
 

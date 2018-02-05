@@ -63,8 +63,8 @@ NDIS_STATUS ProtocolCmDeregisterSap(
 
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-SAP state information. The call manager supplied this handle to NDIS from its 
-     <mshelp:link keywords="netvista.protocolcmregistersap" tabindex="0"><i>
-     ProtocolCmRegisterSap</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
+     ProtocolCmRegisterSap</a> function.
 
 
 ## Return Value
@@ -96,8 +96,8 @@ Indicates that the call manager successfully removed the SAP registration and fr
 <td width="60%">
 Indicates that the call manager will complete the request to deregister the SAP asynchronously.
        The call manager must call 
-       <mshelp:link keywords="netvista.ndiscmderegistersapcomplete" tabindex="0"><b>
-       NdisCmDeregisterSapComplete</b></mshelp:link> to signal NDIS when the operation is complete.
+       <a href="..\ndis\nf-ndis-ndiscmderegistersapcomplete.md">
+       NdisCmDeregisterSapComplete</a> to signal NDIS when the operation is complete.
 
 </td>
 </tr>
@@ -167,14 +167,10 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmDeregisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmDeregisterSap (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmDeregisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmDeregisterSap (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

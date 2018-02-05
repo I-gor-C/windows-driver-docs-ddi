@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f5f00e88-b758-4f37-9fe5-5db8f20835b1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, debugger.getshortfield, wdbgexts/GetShortField, GetShortField, GetShortField function [Windows Debugging]
+ms.keywords : GetShortField, debugger.getshortfield, GetShortField function [Windows Debugging], WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, wdbgexts/GetShortField
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -224,20 +224,15 @@ If this macro succeeds, it returns the value zero.  If it fails because the call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553539">ReadField</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550957">InitTypeReadPhysical</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553539">ReadField</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a>
 

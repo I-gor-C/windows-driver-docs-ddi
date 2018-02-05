@@ -95,6 +95,4 @@ STATUS_BUFFER_TOO_SMALL - The output buffer length supplied is of insufficient s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ehstorioctl.h (include EhStorIoctl.h) |
-| **IRQL** |  |

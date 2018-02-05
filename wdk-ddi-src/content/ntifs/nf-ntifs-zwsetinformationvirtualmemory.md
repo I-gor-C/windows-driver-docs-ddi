@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1D53D6C6-7546-439F-818C-85E65901B5DC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwsetinformationvirtualmemory, ZwSetInformationVirtualMemory routine [Kernel-Mode Driver Architecture], ntifs/ZwSetInformationVirtualMemory, ZwSetInformationVirtualMemory
+ms.keywords : ntifs/ZwSetInformationVirtualMemory, kernel.zwsetinformationvirtualmemory, ZwSetInformationVirtualMemory routine [Kernel-Mode Driver Architecture], ZwSetInformationVirtualMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,11 +112,10 @@ Because this call is  not necessary for correct operation of the driver, it is t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1511. Available starting with Windows 10, version 1511. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |

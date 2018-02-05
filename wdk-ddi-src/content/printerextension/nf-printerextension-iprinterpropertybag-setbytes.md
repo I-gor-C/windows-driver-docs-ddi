@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 0138F4F4-658F-4465-8647-17BE488E2FED
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SetBytes method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag::SetBytes, SetBytes, IPrinterPropertyBag, printerextension/IPrinterPropertyBag::SetBytes, print.iprinterpropertybag_setbytes, IPrinterPropertyBag interface [Print Devices], SetBytes method, SetBytes method [Print Devices]
+ms.keywords : IPrinterPropertyBag::SetBytes, SetBytes method [Print Devices], IPrinterPropertyBag interface, SetBytes method [Print Devices], IPrinterPropertyBag, SetBytes, printerextension/IPrinterPropertyBag::SetBytes, print.iprinterpropertybag_setbytes, IPrinterPropertyBag interface [Print Devices], SetBytes method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,14 +85,9 @@ A call to set a property on a queue property bag will fail with ERROR_ACCESS_DEN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

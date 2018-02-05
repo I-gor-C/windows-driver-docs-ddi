@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 46640961-828c-411b-b1b9-bcceb04bdf17
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPT_ALWAYS, dot11wdi/WDI_EXEMPTION_ACTION_TYPE, netvista.wdi_exemption_action_type, WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, dot11wdi/WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, dot11wdi/WDI_EXEMPT_NO_EXEMPTION, WDI_EXEMPT_NO_EXEMPTION, WDI_EXEMPTION_ACTION_TYPE enumeration [Network Drivers Starting with Windows Vista], dot11wdi/WDI_EXEMPT_ALWAYS, netvista.wifi_exemption_action_type"
+ms.keywords : netvista.wdi_exemption_action_type, dot11wdi/WDI_EXEMPT_ALWAYS, WDI_EXEMPT_ALWAYS, _WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPT_NO_EXEMPTION, dot11wdi/WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, dot11wdi/WDI_EXEMPT_NO_EXEMPTION, WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPTION_ACTION_TYPE enumeration [Network Drivers Starting with Windows Vista], netvista.wifi_exemption_action_type, WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, dot11wdi/WDI_EXEMPTION_ACTION_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum _WDI_EXEMPTION_ACTION_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |

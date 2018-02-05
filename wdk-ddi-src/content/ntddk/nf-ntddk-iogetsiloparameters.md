@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : C8F42E83-2122-4871-972B-9FD06379C271
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoGetSiloParameters function [Installable File System Drivers], PIO_FOEXT_SILO_PARAMETERS, ntddk/IoGetSiloParameters, ifsk.iogetsiloparameters, IoGetSiloParameters
+ms.keywords : ifsk.iogetsiloparameters, PIO_FOEXT_SILO_PARAMETERS, IoGetSiloParameters, ntddk/IoGetSiloParameters, IoGetSiloParameters function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,8 @@ If <b>null</b>, the file is not in a container context. Otherwise, a non-null va
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |

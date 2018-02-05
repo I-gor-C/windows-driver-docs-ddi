@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7cd0ed27-a056-4ed9-8ff4-e917b31b0dd6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeQueryTickCount routine [Kernel-Mode Driver Architecture], KeQueryTickCount, kernel.kequerytickcount, k105_a6a22896-6f3e-4e58-b443-4a06ff67b0ce.xml, wdm/KeQueryTickCount
+ms.keywords : KeQueryTickCount, wdm/KeQueryTickCount, kernel.kequerytickcount, k105_a6a22896-6f3e-4e58-b443-4a06ff67b0ce.xml, KeQueryTickCount routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,18 +74,16 @@ You should not make any assumptions about the length of a tick, because it might
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 
 <a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
 

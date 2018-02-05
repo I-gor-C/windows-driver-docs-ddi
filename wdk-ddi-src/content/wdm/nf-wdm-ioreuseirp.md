@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 18ad2c76-110f-45a9-986b-67e7c81f256f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoReuseIrp, kernel.ioreuseirp, IoReuseIrp routine [Kernel-Mode Driver Architecture], wdm/IoReuseIrp, k104_548c8bd2-bc09-4ee6-b373-d244f1f11daa.xml
+ms.keywords : wdm/IoReuseIrp, k104_548c8bd2-bc09-4ee6-b373-d244f1f11daa.xml, IoReuseIrp, IoReuseIrp routine [Kernel-Mode Driver Architecture], kernel.ioreuseirp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,12 +78,11 @@ See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561107">Reusi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | IoReuseIrp, IoReuseIrp2, HwStorPortProhibitedDDIs |
 
@@ -91,11 +90,11 @@ See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561107">Reusi
 
 <a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
-
 <a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>
 
 <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
  
 

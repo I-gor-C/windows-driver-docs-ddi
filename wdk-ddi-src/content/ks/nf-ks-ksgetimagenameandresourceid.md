@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e73c885c-94e2-42cf-ace6-1b7b62aa33f5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetImageNameAndResourceId function [Streaming Media Devices], KsGetImageNameAndResourceId, stream.ksgetimagenameandresourceid, ks/KsGetImageNameAndResourceId, ksfunc_b4a55bde-4bbb-494e-969c-924547251e1d.xml
+ms.keywords : KsGetImageNameAndResourceId function [Streaming Media Devices], stream.ksgetimagenameandresourceid, ksfunc_b4a55bde-4bbb-494e-969c-924547251e1d.xml, ks/KsGetImageNameAndResourceId, KsGetImageNameAndResourceId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,9 @@ Pointer to a location into which the function returns the value type of the spec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

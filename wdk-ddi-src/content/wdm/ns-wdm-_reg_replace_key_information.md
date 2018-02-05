@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bbe60db6-85ae-480c-8852-80935a52697e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/REG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION, kstruct_d_29e33c32-67fc-48e0-a976-9830278009bc.xml, REG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PREG_REPLACE_KEY_INFORMATION, _REG_REPLACE_KEY_INFORMATION, REG_REPLACE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_replace_key_information
+ms.keywords : wdm/PREG_REPLACE_KEY_INFORMATION, wdm/REG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION, kernel.reg_replace_key_information, REG_REPLACE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_REPLACE_KEY_INFORMATION, kstruct_d_29e33c32-67fc-48e0-a976-9830278009bc.xml, REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PREG_REPLACE_KEY_INFORMATION, REG_REPLACE_KEY_INFORMATION"
+req.typenames : REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -89,9 +89,7 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Windows Vista SP2 and later versions of the Windows operating system. Available on Windows Vista SP2 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

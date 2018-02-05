@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3f0f3f1d-5b38-4815-9732-3b4079481c58
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10_DDI_DEPTH_STENCILOP_DESC, D3D10_DDI_DEPTH_STENCILOP_DESC, UMDisplayDriver_Dx10param_Structs_606e4f10-c713-4aae-b1d1-4a3c9ffde205.xml, display.d3d10_ddi_depth_stencilop_desc, D3D10_DDI_DEPTH_STENCILOP_DESC structure [Display Devices]
+ms.keywords : D3D10_DDI_DEPTH_STENCILOP_DESC structure [Display Devices], UMDisplayDriver_Dx10param_Structs_606e4f10-c713-4aae-b1d1-4a3c9ffde205.xml, display.d3d10_ddi_depth_stencilop_desc, D3D10_DDI_DEPTH_STENCILOP_DESC, d3d10umddi/D3D10_DDI_DEPTH_STENCILOP_DESC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct D3D10_DDI_DEPTH_STENCILOP_DESC {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

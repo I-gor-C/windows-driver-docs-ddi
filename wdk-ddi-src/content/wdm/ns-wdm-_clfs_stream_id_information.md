@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : dc8ea8b0-6aa0-4372-973a-42c545c27e18
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PCLFS_STREAM_ID_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _CLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PPCLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, PCLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_a_bfefe413-124f-49c3-8742-c1f1a524f5a6.xml, wdm/PCLFS_STREAM_ID_INFORMATION, wdm/CLFS_STREAM_ID_INFORMATION, wdm/PPCLFS_STREAM_ID_INFORMATION, kernel.clfs_stream_id_information
+ms.keywords : wdm/CLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION structure [Kernel-Mode Driver Architecture], CLFS_STREAM_ID_INFORMATION, PCLFS_STREAM_ID_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PCLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _CLFS_STREAM_ID_INFORMATION, wdm/PPCLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, wdm/PCLFS_STREAM_ID_INFORMATION, kernel.clfs_stream_id_information, kstruct_a_bfefe413-124f-49c3-8742-c1f1a524f5a6.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION
+req.typenames : CLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -62,9 +62,6 @@ A stream identifier is unique within a given CLFS log.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

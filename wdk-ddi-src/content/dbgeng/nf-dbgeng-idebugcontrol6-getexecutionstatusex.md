@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : C14A3106-AEF7-4BA2-9E21-32D8B2D5BD7E
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl6::GetExecutionStatusEx, debugger.idebugcontrol6_getexecutionstatusex, GetExecutionStatusEx method [Windows Debugging], IDebugControl6 interface, IDebugControl6, dbgeng/IDebugControl6::GetExecutionStatusEx, GetExecutionStatusEx, GetExecutionStatusEx method [Windows Debugging], IDebugControl6 interface [Windows Debugging], GetExecutionStatusEx method
+ms.keywords : GetExecutionStatusEx method [Windows Debugging], IDebugControl6 interface, debugger.idebugcontrol6_getexecutionstatusex, IDebugControl6::GetExecutionStatusEx, GetExecutionStatusEx, IDebugControl6 interface [Windows Debugging], GetExecutionStatusEx method, dbgeng/IDebugControl6::GetExecutionStatusEx, GetExecutionStatusEx method [Windows Debugging], IDebugControl6
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,14 +85,9 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

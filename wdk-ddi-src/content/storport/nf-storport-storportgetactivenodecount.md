@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b981bfe7-832b-47ae-a742-c4829a6ad06b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetActiveNodeCount, StorPortGetActiveNodeCount, storage.storportgetactivenodecount, StorPortGetActiveNodeCount routine [Storage Devices], storprt_311f0ad3-ee9a-47a1-9175-71fd0f01e03d.xml
+ms.keywords : StorPortGetActiveNodeCount, StorPortGetActiveNodeCount routine [Storage Devices], storport/StorPortGetActiveNodeCount, storprt_311f0ad3-ee9a-47a1-9175-71fd0f01e03d.xml, storage.storportgetactivenodecount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,11 +110,9 @@ The operation fails with this return value if one or more of the parameters are 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | StorPortIrql |

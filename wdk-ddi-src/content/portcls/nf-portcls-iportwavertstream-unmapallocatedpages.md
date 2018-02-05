@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 558636ed-4bab-42bc-8925-df01e032439a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_2d402b1b-6951-48db-89bb-81f3cc7e0076.xml, IPortWaveRTStream::UnmapAllocatedPages, portcls/IPortWaveRTStream::UnmapAllocatedPages, UnmapAllocatedPages, IPortWaveRTStream interface [Audio Devices], UnmapAllocatedPages method, UnmapAllocatedPages method [Audio Devices], IPortWaveRTStream interface, UnmapAllocatedPages method [Audio Devices], IPortWaveRTStream, audio.iportwavertstream_unmapallocatedpages
+ms.keywords : UnmapAllocatedPages method [Audio Devices], audmp-routines_2d402b1b-6951-48db-89bb-81f3cc7e0076.xml, audio.iportwavertstream_unmapallocatedpages, UnmapAllocatedPages method [Audio Devices], IPortWaveRTStream interface, portcls/IPortWaveRTStream::UnmapAllocatedPages, IPortWaveRTStream::UnmapAllocatedPages, UnmapAllocatedPages, IPortWaveRTStream interface [Audio Devices], UnmapAllocatedPages method, IPortWaveRTStream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -75,24 +75,21 @@ This method is similar in operation to the <a href="..\wdm\nf-wdm-mmunmaplockedp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536926">IPortWaveRTStream::FreePagesFromMdl</a>
-
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 
-<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536926">IPortWaveRTStream::FreePagesFromMdl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
+
+<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
  
 

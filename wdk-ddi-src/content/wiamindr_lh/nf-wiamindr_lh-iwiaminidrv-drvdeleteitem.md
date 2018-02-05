@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 616a0edd-d769-411d-bc94-57ba18a00c4d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv interface [Imaging Devices], drvDeleteItem method, wiamindr_lh/IWiaMiniDrv::drvDeleteItem, IWiaMiniDrv, IWiaMiniDrv::drvDeleteItem, drvDeleteItem method [Imaging Devices], IWiaMiniDrv interface, drvDeleteItem, drvDeleteItem method [Imaging Devices], image.iwiaminidrv_drvdeleteitem, MiniDrv_7e3949ae-f170-4ccc-a139-fecaf2e97e41.xml
+ms.keywords : wiamindr_lh/IWiaMiniDrv::drvDeleteItem, IWiaMiniDrv interface [Imaging Devices], drvDeleteItem method, IWiaMiniDrv, drvDeleteItem, drvDeleteItem method [Imaging Devices], image.iwiaminidrv_drvdeleteitem, drvDeleteItem method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_7e3949ae-f170-4ccc-a139-fecaf2e97e41.xml, IWiaMiniDrv::drvDeleteItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -95,14 +95,10 @@ The item's access rights allow deletion.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 

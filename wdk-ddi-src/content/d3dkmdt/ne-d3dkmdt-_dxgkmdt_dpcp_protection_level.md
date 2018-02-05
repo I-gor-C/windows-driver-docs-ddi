@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7c21da9a-7629-41f8-addf-ac03927511c0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGKMDT_DPCP_PROTECTION_LEVEL enumeration [Display Devices], DXGKMDT_OPM_DPCP_ON, DXGKMDT_OPM_DPCP_OFF, d3dkmdt/DXGKMDT_OPM_DPCP_FORCE_ULONG, _DXGKMDT_DPCP_PROTECTION_LEVEL, d3dkmdt/DXGKMDT_OPM_DPCP_OFF, d3dkmdt/_DXGKMDT_DPCP_PROTECTION_LEVEL, DXGKMDT_OPM_DPCP_FORCE_ULONG, DmEnums_22bd45fa-ebe4-468e-8036-f3679619f51a.xml, display.dxgkmdt_opm_dpcp_protection_level, d3dkmdt/DXGKMDT_OPM_DPCP_ON, DXGKMDT_OPM_DPCP_PROTECTION_LEVEL enumeration [Display Devices], DXGKMDT_OPM_DPCP_PROTECTION_LEVEL"
+ms.keywords : "_DXGKMDT_DPCP_PROTECTION_LEVEL enumeration [Display Devices], DXGKMDT_OPM_DPCP_PROTECTION_LEVEL, DXGKMDT_OPM_DPCP_FORCE_ULONG, DXGKMDT_OPM_DPCP_PROTECTION_LEVEL enumeration [Display Devices], display.dxgkmdt_opm_dpcp_protection_level, d3dkmdt/DXGKMDT_OPM_DPCP_OFF, d3dkmdt/DXGKMDT_OPM_DPCP_ON, DmEnums_22bd45fa-ebe4-468e-8036-f3679619f51a.xml, d3dkmdt/DXGKMDT_OPM_DPCP_FORCE_ULONG, DXGKMDT_OPM_DPCP_OFF, DXGKMDT_OPM_DPCP_ON, _DXGKMDT_DPCP_PROTECTION_LEVEL, d3dkmdt/_DXGKMDT_DPCP_PROTECTION_LEVEL"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,22 +77,20 @@ DPCP protects digital video signals from DisplayPort output connectors. For more
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_protection_level_parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
+
+<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a>
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_standard_information.md">DXGKMDT_OPM_STANDARD_INFORMATION</a>
-
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_set_protection_level_parameters.md">DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS</a>
 
  
 

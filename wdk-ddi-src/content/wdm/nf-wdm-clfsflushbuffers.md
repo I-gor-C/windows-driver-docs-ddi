@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 70e93c8f-a23c-4399-9299-c2743d097ded
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsFlushBuffers, Clfs_3c04240c-0914-472f-9b4b-97a00221e092.xml, ClfsFlushBuffers routine [Kernel-Mode Driver Architecture], kernel.clfsflushbuffers, wdm/ClfsFlushBuffers
+ms.keywords : wdm/ClfsFlushBuffers, ClfsFlushBuffers, Clfs_3c04240c-0914-472f-9b4b-97a00221e092.xml, kernel.clfsflushbuffers, ClfsFlushBuffers routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

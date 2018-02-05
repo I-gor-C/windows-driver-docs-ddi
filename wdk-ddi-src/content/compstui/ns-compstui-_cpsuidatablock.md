@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : c5b488ac-dd8d-4484-81ca-b64fdf517100
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : CPSUIDATABLOCK, cpsuifnc_c9e406f5-1d6a-403d-a286-89cf199a09d2.xml, compstui/CPSUIDATABLOCK, compstui/PCPSUIDATABLOCK, print.cpsuidatablock, _CPSUIDATABLOCK, *PCPSUIDATABLOCK, CPSUIDATABLOCK structure [Print Devices], PCPSUIDATABLOCK structure pointer [Print Devices], PCPSUIDATABLOCK
+ms.keywords : compstui/PCPSUIDATABLOCK, _CPSUIDATABLOCK, CPSUIDATABLOCK structure [Print Devices], compstui/CPSUIDATABLOCK, PCPSUIDATABLOCK, *PCPSUIDATABLOCK, print.cpsuidatablock, PCPSUIDATABLOCK structure pointer [Print Devices], CPSUIDATABLOCK, cpsuifnc_c9e406f5-1d6a-403d-a286-89cf199a09d2.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCPSUIDATABLOCK, CPSUIDATABLOCK"
+req.typenames : CPSUIDATABLOCK, *PCPSUIDATABLOCK
 ---
 
 # _CPSUIDATABLOCK structure
@@ -64,7 +64,4 @@ Pointer to a caller-allocated buffer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : E37C54C1-209F-4944-940B-2247E86C8130
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInitializeListHead routine [Storage Devices], storage.storportinitializelisthead, storport/StorPortInitializeListHead, StorPortInitializeListHead
+ms.keywords : storport/StorPortInitializeListHead, storage.storportinitializelisthead, StorPortInitializeListHead routine [Storage Devices], StorPortInitializeListHead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,20 +73,15 @@ This routine does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>
+
+<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
 
 <a href="..\wdm\nf-wdm-initializelisthead.md">InitializeListHead</a>
 

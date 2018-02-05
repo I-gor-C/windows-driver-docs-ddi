@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 04c1ece1-1c8f-40eb-8437-ac2fe1445095
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.kmddod_initialization_data, KMDDOD_INITIALIZATION_DATA, PKMDDOD_INITIALIZATION_DATA structure pointer [Display Devices], _KMDDOD_INITIALIZATION_DATA, dispmprt/KMDDOD_INITIALIZATION_DATA, dispmprt/PKMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA structure [Display Devices], PKMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA
+ms.keywords : KMDDOD_INITIALIZATION_DATA, display.kmddod_initialization_data, PKMDDOD_INITIALIZATION_DATA, dispmprt/KMDDOD_INITIALIZATION_DATA, PKMDDOD_INITIALIZATION_DATA structure pointer [Display Devices], _KMDDOD_INITIALIZATION_DATA, dispmprt/PKMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA
+req.typenames : "*PKMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA"
 ---
 
 # _KMDDOD_INITIALIZATION_DATA structure
@@ -269,9 +269,7 @@ If the kernel mode display-only driver (KMDOD) supports the VSync control featur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also

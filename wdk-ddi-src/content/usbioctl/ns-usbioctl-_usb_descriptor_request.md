@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : d4d51366-4d04-47fe-8c44-09c9c6ccf35f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbioctl/USB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST structure [Buses], usbstrct_b5a96c38-53d8-4d08-849b-d6c8c4b69c72.xml, usbioctl/PUSB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST structure pointer [Buses], *PUSB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST, buses.usb_descriptor_request, _USB_DESCRIPTOR_REQUEST
+ms.keywords : usbioctl/USB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST, buses.usb_descriptor_request, _USB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST structure pointer [Buses], usbstrct_b5a96c38-53d8-4d08-849b-d6c8c4b69c72.xml, usbioctl/PUSB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST"
+req.typenames : USB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST
 req.product : Windows 10 or later.
 ---
 
@@ -78,9 +78,6 @@ If the caller specifies a value of USB_CONFIGURATION_DESCRIPTOR_TYPE in the <b>w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
 ## See Also

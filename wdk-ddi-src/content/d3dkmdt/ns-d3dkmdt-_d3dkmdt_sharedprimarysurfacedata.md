@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : edf59add-0155-4619-9c7c-fdb63b954f85
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_SHAREDPRIMARYSURFACEDATA structure [Display Devices], display.d3dkmdt_sharedprimarysurfacedata, DmStructs_5296d822-1a79-459e-809c-2d7381a964b8.xml, _D3DKMDT_SHAREDPRIMARYSURFACEDATA, D3DKMDT_SHAREDPRIMARYSURFACEDATA, d3dkmdt/D3DKMDT_SHAREDPRIMARYSURFACEDATA
+ms.keywords : D3DKMDT_SHAREDPRIMARYSURFACEDATA, d3dkmdt/D3DKMDT_SHAREDPRIMARYSURFACEDATA, D3DKMDT_SHAREDPRIMARYSURFACEDATA structure [Display Devices], DmStructs_5296d822-1a79-459e-809c-2d7381a964b8.xml, display.d3dkmdt_sharedprimarysurfacedata, _D3DKMDT_SHAREDPRIMARYSURFACEDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,20 +81,18 @@ Multiple processes can lock a shared primary surface. The video memory manager p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmddi.h) |
 
 ## See Also
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_getstandardallocationdriverdata.md">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>
 
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_standardallocation_type.md">D3DKMDT_STANDARDALLOCATION_TYPE</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a>
-
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
  
 

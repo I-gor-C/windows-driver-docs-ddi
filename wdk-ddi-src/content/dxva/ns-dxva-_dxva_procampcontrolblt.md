@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 93f321e1-a38b-43a2-bfbd-35411a62194e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxva_procampcontrolblt, DXVA_ProcAmpControlBlt structure [Display Devices], DXVA_ProcAmpControlBlt, dxvaref_aaac59e6-334e-49a3-a599-facef11960e3.xml, dxva/DXVA_ProcAmpControlBlt, _DXVA_ProcAmpControlBlt
+ms.keywords : DXVA_ProcAmpControlBlt, dxvaref_aaac59e6-334e-49a3-a599-facef11960e3.xml, DXVA_ProcAmpControlBlt structure [Display Devices], _DXVA_ProcAmpControlBlt, display.dxva_procampcontrolblt, dxva/DXVA_ProcAmpControlBlt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,16 +94,14 @@ Specifies the source rectangle as a RECT structure. The source rectangle is requ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DirectX 9.0 and later versions only. DirectX 9.0 and later versions only. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a>
-
 <a href="..\dxva\ns-dxva-_dxva_procampcontrolqueryrange.md">DXVA_ProcAmpControlQueryRange</a>
+
+<a href="..\dxva\ns-dxva-_dxva_procampcontrolcaps.md">DXVA_ProcAmpControlCaps</a>
 
  
 

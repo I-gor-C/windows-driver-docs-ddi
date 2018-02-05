@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6dbe7da6-31f6-43f2-aa25-be6f13c8d8d8
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_69ad127f-7df4-4c57-9475-55040aa02f78.xml, debugger.gettebaddress, wdbgexts/GetTebAddress, GetTebAddress function [Windows Debugging], GetTebAddress
+ms.keywords : GetTebAddress, wdbgexts/GetTebAddress, debugger.gettebaddress, WdbgExts_Ref_69ad127f-7df4-4c57-9475-55040aa02f78.xml, GetTebAddress function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,9 @@ In user-mode debugging, the TEB for the current thread is returned.  In kernel-m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

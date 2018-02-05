@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : C16DE51F-6552-4379-B866-D7653B1BA9F2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.eengineformattype, portcls/eEngineFormatType, eEngineFormatType enumeration [Audio Devices], eMixFormat, portcls/eSupportedDeviceFormats, eEngineFormatType, portcls/eDeviceFormat, eSupportedDeviceFormats, eDeviceFormat, portcls/eMixFormat
+ms.keywords : portcls/eEngineFormatType, audio.eengineformattype, eEngineFormatType, eDeviceFormat, eMixFormat, portcls/eSupportedDeviceFormats, portcls/eMixFormat, eSupportedDeviceFormats, eEngineFormatType enumeration [Audio Devices], portcls/eDeviceFormat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,9 +74,7 @@ typedef enum _eEngineFormatType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cddb85c7-137c-4ceb-b53c-170ce020cea1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_OPENALLOCATION, DXGKARG_OPENALLOCATION, display.dxgkarg_openallocation, _DXGKARG_OPENALLOCATION, DmStructs_442924a2-c130-487c-acdb-62a2b6e9f219.xml, DXGKARG_OPENALLOCATION structure [Display Devices]
+ms.keywords : DmStructs_442924a2-c130-487c-acdb-62a2b6e9f219.xml, DXGKARG_OPENALLOCATION structure [Display Devices], _DXGKARG_OPENALLOCATION, d3dkmddi/DXGKARG_OPENALLOCATION, display.dxgkarg_openallocation, DXGKARG_OPENALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -106,22 +106,20 @@ The offset, in bytes, from the start of the allocation to the start of the subre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available beginning with Windows Vista. Available beginning with Windows Vista. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_openallocationinfo.md">DxgkDdiOpenAllocation</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
-
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationflags.md">DXGK_OPENALLOCATIONFLAGS</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_openallocationinfo.md">DXGK_OPENALLOCATIONINFO</a>
 
  
 

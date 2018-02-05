@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7cbdaa08-51c9-495d-a5c7-bb2c4009d7a4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, *PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, ntddndis/PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, _NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, netvista.ndis_nic_switch_delete_vport_parameters, ntddndis/NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, ntddndis/PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, netvista.ndis_nic_switch_delete_vport_parameters, ntddndis/NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS, PNDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NIC_SWITCH_DELETE_VPORT_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,9 +83,7 @@ The NDIS_NIC_SWITCH_DELETE_PORT_PARAMETERS structure is used in OID set requests
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

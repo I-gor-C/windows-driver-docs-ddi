@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 33cc9d34-cffb-410d-9948-37c8a409e0a5
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_AER_BRIDGE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_AER_BRIDGE_DESCRIPTOR, whea.whea_aer_bridge_descriptor, PWHEA_AER_BRIDGE_DESCRIPTOR, _WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR, whearef_52e2fbef-c8d7-42c8-b8ae-584fbc4f622f.xml, ntddk/WHEA_AER_BRIDGE_DESCRIPTOR, WHEA_AER_BRIDGE_DESCRIPTOR structure [WHEA Drivers and Applications]
+ms.keywords : WHEA_AER_BRIDGE_DESCRIPTOR structure [WHEA Drivers and Applications], WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/PWHEA_AER_BRIDGE_DESCRIPTOR, _WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR, whea.whea_aer_bridge_descriptor, PWHEA_AER_BRIDGE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_52e2fbef-c8d7-42c8-b8ae-584fbc4f622f.xml, PWHEA_AER_BRIDGE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -111,14 +111,14 @@ An AER_BRIDGE_DESCRIPTOR_FLAGS union that indicates which of the members of the 
 </table></span></div>
 
 
-#### UncorrectableErrorMaskRW
+#### AdvancedCapsAndControlRW
 
-A single bit that indicates that the operating system can write to the <b>UncorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+A single bit that indicates that the operating system can write to the <b>AdvancedCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
 
 
-#### UncorrectableErrorSeverityRW
+#### AsUSHORT
 
-A single bit that indicates that the operating system can write to the <b>UncorrectableErrorSeverity</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+A USHORT representation of the contents of the AER_ROOTPORT_DESCRIPTOR_FLAGS union.
 
 
 #### CorrectableErrorMaskRW
@@ -126,9 +126,14 @@ A single bit that indicates that the operating system can write to the <b>Uncorr
 A single bit that indicates that the operating system can write to the <b>CorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
 
 
-#### AdvancedCapsAndControlRW
+#### Reserved
 
-A single bit that indicates that the operating system can write to the <b>AdvancedCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
+Reserved for system use.
+
+
+#### SecondaryCapsAndControlRW
+
+A single bit that indicates that the operating system can write to the <b>SecondaryCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
 
 
 #### SecondaryUncorrectableErrorMaskRW
@@ -141,19 +146,14 @@ A single bit that indicates that the operating system can write to the <b>Second
 A single bit that indicates that the operating system can write to the <b>SecondaryUncorrectableErrorSev</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
 
 
-#### SecondaryCapsAndControlRW
+#### UncorrectableErrorMaskRW
 
-A single bit that indicates that the operating system can write to the <b>SecondaryCapsAndControl</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
-
-
-#### Reserved
-
-Reserved for system use.
+A single bit that indicates that the operating system can write to the <b>UncorrectableErrorMask</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
 
 
-#### AsUSHORT
+#### UncorrectableErrorSeverityRW
 
-A USHORT representation of the contents of the AER_ROOTPORT_DESCRIPTOR_FLAGS union.
+A single bit that indicates that the operating system can write to the <b>UncorrectableErrorSeverity</b> member of the WHEA_AER_BRIDGE_DESCRIPTOR structure.
 
 `Reserved`
 
@@ -193,16 +193,14 @@ A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
  
 

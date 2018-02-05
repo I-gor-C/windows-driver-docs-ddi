@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_QUERY_FILE_LAYOUT_OUTPUT, ntifs/QUERY_FILE_LAYOUT_OUTPUT, ntifs/PQUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT, ifsk.query_file_layout_output, PQUERY_FILE_LAYOUT_OUTPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_OUTPUT structure [Installable File System Drivers], *PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_SINGLE_INSTANCED"
+ms.keywords : ifsk.query_file_layout_output, QUERY_FILE_LAYOUT_OUTPUT structure [Installable File System Drivers], *PQUERY_FILE_LAYOUT_OUTPUT, ntifs/QUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT structure pointer [Installable File System Drivers], _QUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT, ntifs/PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_SINGLE_INSTANCED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT"
+req.typenames : QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
 ---
 
 # _QUERY_FILE_LAYOUT_OUTPUT structure
@@ -120,16 +120,14 @@ When multiple entries of the same type exist for a single <b>FILE_LAYOUT_ENTRY</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows 8. Available starting in Windows 8. |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
+
+<a href="..\ntifs\ns-ntifs-_query_file_layout_input.md">QUERY_FILE_LAYOUT_INPUT</a>
 
  
 

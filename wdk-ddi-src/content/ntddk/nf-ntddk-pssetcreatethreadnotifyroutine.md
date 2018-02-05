@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 02c5d325-e0b2-4b0f-b964-7befd1b40cb6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k108_1fe3d941-1e48-4f07-bf57-ad7b2855947f.xml, kernel.pssetcreatethreadnotifyroutine, PsSetCreateThreadNotifyRoutine routine [Kernel-Mode Driver Architecture], ntddk/PsSetCreateThreadNotifyRoutine, PsSetCreateThreadNotifyRoutine
+ms.keywords : PsSetCreateThreadNotifyRoutine routine [Kernel-Mode Driver Architecture], k108_1fe3d941-1e48-4f07-bf57-ad7b2855947f.xml, PsSetCreateThreadNotifyRoutine, ntddk/PsSetCreateThreadNotifyRoutine, kernel.pssetcreatethreadnotifyroutine
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,28 +85,27 @@ A driver must remove any callbacks it registers before it unloads. You can remov
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
-
 <a href="..\ntifs\nf-ntifs-psissystemthread.md">PsIsSystemThread</a>
-
-<a href="..\ntddk\nf-ntddk-psgetcurrentthreadid.md">PsGetCurrentThreadId</a>
 
 <a href="..\ntddk\nf-ntddk-psremovecreatethreadnotifyroutine.md">PsRemoveCreateThreadNotifyRoutine</a>
 
-<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
+<a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
 
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
+
+<a href="..\ntddk\nf-ntddk-psgetcurrentthreadid.md">PsGetCurrentThreadId</a>
+
+<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
 
  
 

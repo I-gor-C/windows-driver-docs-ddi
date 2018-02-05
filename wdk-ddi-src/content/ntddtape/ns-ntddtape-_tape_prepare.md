@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0bca5849-e0f9-42b2-82f8-aadea2aa01ae
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddtape/PTAPE_PREPARE, ntddtape/TAPE_PREPARE, *PTAPE_PREPARE, structs-tape_b563ea19-797c-4df0-a384-7e9c579ee2e9.xml, _TAPE_PREPARE, TAPE_PREPARE structure [Storage Devices], storage.tape_prepare, TAPE_PREPARE, PTAPE_PREPARE structure pointer [Storage Devices], PTAPE_PREPARE
+ms.keywords : "*PTAPE_PREPARE, PTAPE_PREPARE, ntddtape/TAPE_PREPARE, structs-tape_b563ea19-797c-4df0-a384-7e9c579ee2e9.xml, PTAPE_PREPARE structure pointer [Storage Devices], storage.tape_prepare, TAPE_PREPARE, TAPE_PREPARE structure [Storage Devices], ntddtape/PTAPE_PREPARE, _TAPE_PREPARE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : TAPE_PREPARE, *PTAPE_PREPARE
+req.typenames : "*PTAPE_PREPARE, TAPE_PREPARE"
 ---
 
 # _TAPE_PREPARE structure
@@ -130,9 +130,6 @@ Performs a low-level format of the tape. Not all devices support this feature. T
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddtape.h (include Ntddtape.h) |
 
 ## See Also

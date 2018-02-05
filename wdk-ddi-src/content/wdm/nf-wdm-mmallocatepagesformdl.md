@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 06b52af0-c2d3-444e-8714-4fce4181dddc
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmAllocatePagesForMdl routine [Kernel-Mode Driver Architecture], wdm/MmAllocatePagesForMdl, kernel.mmallocatepagesformdl, k106_bb9bac91-62a6-45f8-9133-0d23eda07b1e.xml, MmAllocatePagesForMdl
+ms.keywords : wdm/MmAllocatePagesForMdl, k106_bb9bac91-62a6-45f8-9133-0d23eda07b1e.xml, MmAllocatePagesForMdl, kernel.mmallocatepagesformdl, MmAllocatePagesForMdl routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,7 +115,7 @@ The physical memory pages that are returned by <b>MmAllocatePagesForMdl</b> are 
 
 Depending on how much physical memory is currently available in the requested ranges, <b>MmAllocatePagesForMdl</b> might return an MDL that describes less memory than was requested. The routine returns <b>NULL</b> if no memory was allocated. The caller should check the amount of memory that is actually allocated to the MDL. 
 
-The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocatePagesForMdl</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> to release the memory that is allocated for the MDL structure itself.
+The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocatePagesForMdl</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> to release the memory that is allocated for the MDL structure itself.
 
 In Windows 2000 and later versions of Windows, the maximum amount of memory that <b>MmAllocatePagesForMdl</b> can allocate in a single call is (4 gigabytes - PAGE_SIZE). The routine can satisfy an allocation request for this amount only if enough pages are available.
 
@@ -124,22 +124,21 @@ In Windows 2000 and later versions of Windows, the maximum amount of memory that
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows; however, MmAllocatePagesForMdlEx should be used instead of MmAllocatePagesForMdl in Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows. Available in Windows 2000 and later versions of Windows; however, MmAllocatePagesForMdlEx should be used instead of MmAllocatePagesForMdl in Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | IrqlMmApcLte, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
 <a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
 
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a>
 
 <a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
 

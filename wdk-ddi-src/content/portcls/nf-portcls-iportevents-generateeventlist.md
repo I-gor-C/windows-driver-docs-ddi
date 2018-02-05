@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 99c9d60d-5f19-4b31-a8f3-aff69bc3a2a6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IPortEvents, GenerateEventList method [Audio Devices], IPortEvents interface, GenerateEventList, audmp-routines_cc4243f5-90e9-471f-b8f0-aaf0945bddf5.xml, audio.iportevents_generateeventlist, portcls/IPortEvents::GenerateEventList, IPortEvents::GenerateEventList, GenerateEventList method [Audio Devices], IPortEvents interface [Audio Devices], GenerateEventList method
+ms.keywords : IPortEvents::GenerateEventList, IPortEvents interface [Audio Devices], GenerateEventList method, GenerateEventList, GenerateEventList method [Audio Devices], IPortEvents interface, GenerateEventList method [Audio Devices], audmp-routines_cc4243f5-90e9-471f-b8f0-aaf0945bddf5.xml, IPortEvents, portcls/IPortEvents::GenerateEventList, audio.iportevents_generateeventlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -95,22 +95,18 @@ Although callers of <code>GenerateEventList</code> can be running at any IRQL, t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Any level. (See Remarks section.) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
+<a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a>
 
-<a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
+<a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
 
  
 

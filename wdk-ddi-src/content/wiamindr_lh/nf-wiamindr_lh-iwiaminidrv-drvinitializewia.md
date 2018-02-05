@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 93b155eb-0254-441f-b01f-3da8eb7376a5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv::drvInitializeWia, wiamindr_lh/IWiaMiniDrv::drvInitializeWia, IWiaMiniDrv, image.iwiaminidrv_drvinitializewia, drvInitializeWia method [Imaging Devices], IWiaMiniDrv interface, drvInitializeWia method [Imaging Devices], drvInitializeWia, MiniDrv_04485b20-ff45-4cf7-a861-841bf03befcf.xml, IWiaMiniDrv interface [Imaging Devices], drvInitializeWia method
+ms.keywords : drvInitializeWia method [Imaging Devices], drvInitializeWia, IWiaMiniDrv, drvInitializeWia method [Imaging Devices], IWiaMiniDrv interface, wiamindr_lh/IWiaMiniDrv::drvInitializeWia, IWiaMiniDrv::drvInitializeWia, MiniDrv_04485b20-ff45-4cf7-a861-841bf03befcf.xml, IWiaMiniDrv interface [Imaging Devices], drvInitializeWia method, image.iwiaminidrv_drvinitializewia
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -115,14 +115,10 @@ For example, if the user right-clicks a WIA scanner icon in <b>My Computer</b>, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 

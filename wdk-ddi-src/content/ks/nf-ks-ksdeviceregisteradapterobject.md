@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6e3c33fe-eb28-4985-98f3-cafa85543d68
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksdeviceregisteradapterobject, ks/KsDeviceRegisterAdapterObject, KsDeviceRegisterAdapterObject, avfunc_59ad20f2-ca31-4fbb-808e-48df3a0c87a8.xml, KsDeviceRegisterAdapterObject function [Streaming Media Devices]
+ms.keywords : KsDeviceRegisterAdapterObject, avfunc_59ad20f2-ca31-4fbb-808e-48df3a0c87a8.xml, KsDeviceRegisterAdapterObject function [Streaming Media Devices], ks/KsDeviceRegisterAdapterObject, stream.ksdeviceregisteradapterobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,14 +91,11 @@ Also note that if the minidriver specifies the KSPIN_FLAG_GENERATE_MAPPINGS flag
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -106,9 +103,9 @@ Also note that if the minidriver specifies the KSPIN_FLAG_GENERATE_MAPPINGS flag
 
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 
-<a href="..\ks\ns-ks-_ksmapping.md">KSMAPPING</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
+
+<a href="..\ks\ns-ks-_ksmapping.md">KSMAPPING</a>
 
  
 

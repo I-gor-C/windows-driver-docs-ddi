@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 818A9F03-F56E-47D6-A9D1-DD0F63B05054
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storport/StorPortSetAdapterBusType, StorPortSetAdapterBusType routine [Storage Devices], StorPortSetAdapterBusType, storage.storportsetadapterbustype
+ms.keywords : StorPortSetAdapterBusType routine [Storage Devices], storport/StorPortSetAdapterBusType, StorPortSetAdapterBusType, storage.storportsetadapterbustype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,11 +110,7 @@ This routine fails with this return value if the BusType is an invalid value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |

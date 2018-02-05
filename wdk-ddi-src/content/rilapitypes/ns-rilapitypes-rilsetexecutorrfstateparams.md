@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c1638b6e-7270-4511-a0bb-3766dbd6c6f5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS, rilapitypes/RILSETEXECUTORRFSTATEPARAMS, netvista.rilsetexecutorrfstateparams_2, RILSETEXECUTORRFSTATEPARAMS structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS, rilapitypes/RILSETEXECUTORRFSTATEPARAMS, netvista.rilsetexecutorrfstateparams_2, RILSETEXECUTORRFSTATEPARAMS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS"
+req.typenames : RILSETEXECUTORRFSTATEPARAMS, *LPRILSETEXECUTORRFSTATEPARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -65,7 +65,4 @@ typedef struct _RILSETEXECUTORRFSTATEPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

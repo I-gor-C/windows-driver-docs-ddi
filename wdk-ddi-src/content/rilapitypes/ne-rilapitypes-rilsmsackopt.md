@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a8430f5f-000f-4dea-acd9-2f0df2c6e67d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilsmsackopt_2, rilapitypes/RILSMSACKOPT, RILSMSACKOPT enumeration [Network Drivers Starting with Windows Vista], RILSMSACKOPT, RIL_SMSACKOPT_IMS, rilapitypes/RIL_SMSACKOPT_IMS
+ms.keywords : RIL_SMSACKOPT_IMS, rilapitypes/RILSMSACKOPT, rilapitypes/RIL_SMSACKOPT_IMS, RILSMSACKOPT, netvista.rilsmsackopt_2, RILSMSACKOPT enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum _RILSMSACKOPT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

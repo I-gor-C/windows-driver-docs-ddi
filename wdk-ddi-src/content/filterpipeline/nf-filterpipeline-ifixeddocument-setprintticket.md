@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 701c53d5-bb1e-4003-9505-19b9c46689c6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SetPrintTicket, print.ifixeddocument_setprintticket, filterpipeline_96d89fc9-899f-4ede-8da5-898471f6b769.xml, SetPrintTicket method [Print Devices], IFixedDocument::SetPrintTicket, IFixedDocument interface [Print Devices], SetPrintTicket method, SetPrintTicket method [Print Devices], IFixedDocument interface, filterpipeline/IFixedDocument::SetPrintTicket, IFixedDocument
+ms.keywords : SetPrintTicket, print.ifixeddocument_setprintticket, SetPrintTicket method [Print Devices], IFixedDocument interface, IFixedDocument interface [Print Devices], SetPrintTicket method, IFixedDocument, filterpipeline_96d89fc9-899f-4ede-8da5-898471f6b769.xml, SetPrintTicket method [Print Devices], filterpipeline/IFixedDocument::SetPrintTicket, IFixedDocument::SetPrintTicket
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ A pointer to the print ticket to be inserted.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

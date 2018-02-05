@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e298f51b-58b7-4f04-85d3-3ee809deb489
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortAllocateQueueTag, AtaPortAllocateQueueTag routine [Storage Devices], storage.ataportallocatequeuetag, irb/AtaPortAllocateQueueTag, atartns_bae1e6d8-6ae5-4428-88a6-334a63fcefae.xml
+ms.keywords : AtaPortAllocateQueueTag, AtaPortAllocateQueueTag routine [Storage Devices], storage.ataportallocatequeuetag, atartns_bae1e6d8-6ae5-4428-88a6-334a63fcefae.xml, irb/AtaPortAllocateQueueTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,20 +79,15 @@ The <b>AtaPortAllocateQueueTag</b> routine allocates either a per device queue t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportreleasequeuetag.md">AtaPortReleaseQueueTag</a>
-
 <a href="..\irb\nf-irb-ataportinitializequeuetag.md">AtaPortInitializeQueueTag</a>
+
+<a href="..\irb\nf-irb-ataportreleasequeuetag.md">AtaPortReleaseQueueTag</a>
 
  
 

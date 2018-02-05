@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a3758f32-daa9-4795-9a79-694b02da43cd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlfillmemoryulong, ntifs/RtlFillMemoryUlong, rtlref_11aa35b5-f5b5-459c-9996-e7dcb7741dd8.xml, RtlFillMemoryUlong, RtlFillMemoryUlong routine [Installable File System Drivers]
+ms.keywords : ifsk.rtlfillmemoryulong, RtlFillMemoryUlong, RtlFillMemoryUlong routine [Installable File System Drivers], ntifs/RtlFillMemoryUlong, rtlref_11aa35b5-f5b5-459c-9996-e7dcb7741dd8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,11 @@ For more information about managing buffered data and initializing driver-alloca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

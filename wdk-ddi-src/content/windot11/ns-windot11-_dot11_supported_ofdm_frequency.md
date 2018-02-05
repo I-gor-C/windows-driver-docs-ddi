@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 79017890-c045-4996-b5d3-fa000ffff5a0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_SUPPORTED_OFDM_FREQUENCY, PDOT11_SUPPORTED_OFDM_FREQUENCY structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_SUPPORTED_OFDM_FREQUENCY, windot11/PDOT11_SUPPORTED_OFDM_FREQUENCY, *PDOT11_SUPPORTED_OFDM_FREQUENCY, netvista.dot11_supported_ofdm_frequency, _DOT11_SUPPORTED_OFDM_FREQUENCY, PDOT11_SUPPORTED_OFDM_FREQUENCY, Native_802.11_data_types_5a7cc235-128d-4209-a250-49ec0b2b8ad7.xml, DOT11_SUPPORTED_OFDM_FREQUENCY structure [Network Drivers Starting with Windows Vista]
+ms.keywords : Native_802.11_data_types_5a7cc235-128d-4209-a250-49ec0b2b8ad7.xml, PDOT11_SUPPORTED_OFDM_FREQUENCY structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_SUPPORTED_OFDM_FREQUENCY, _DOT11_SUPPORTED_OFDM_FREQUENCY, PDOT11_SUPPORTED_OFDM_FREQUENCY, *PDOT11_SUPPORTED_OFDM_FREQUENCY, netvista.dot11_supported_ofdm_frequency, DOT11_SUPPORTED_OFDM_FREQUENCY structure [Network Drivers Starting with Windows Vista], windot11/DOT11_SUPPORTED_OFDM_FREQUENCY, DOT11_SUPPORTED_OFDM_FREQUENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,15 +35,15 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_SUPPORTED_OFDM_FREQUENCY, DOT11_SUPPORTED_OFDM_FREQUENCY"
+req.typenames : DOT11_SUPPORTED_OFDM_FREQUENCY, *PDOT11_SUPPORTED_OFDM_FREQUENCY
 req.product : Windows 10 or later.
 ---
 
 # _DOT11_SUPPORTED_OFDM_FREQUENCY structure
 <div class="alert"><b>Important</b>  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560689">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="https://msdn.microsoft.com/6EF92E34-7BC9-465E-B05D-2BCB29165A18">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_SUPPORTED_OFDM_FREQUENCY structure specifies a supported channel center frequency entry in
   a 
-  <mshelp:link keywords="netvista.dot11_supported_ofdm_frequency_list" tabindex="0"><b>
-  DOT11_SUPPORTED_OFDM_FREQUENCY_LIST</b></mshelp:link> structure.
+  <a href="..\windot11\ns-windot11-_dot11_supported_ofdm_frequency_list.md">
+  DOT11_SUPPORTED_OFDM_FREQUENCY_LIST</a> structure.
 
 ## Syntax
 ````
@@ -64,15 +64,13 @@ A ULONG value that represents a channel center frequency, in MHz, that the 802.1
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.dot11_supported_ofdm_frequency_list" tabindex="0"><b>
-   DOT11_SUPPORTED_OFDM_FREQUENCY_LIST</b></mshelp:link>
+<a href="..\windot11\ns-windot11-_dot11_supported_ofdm_frequency_list.md">
+   DOT11_SUPPORTED_OFDM_FREQUENCY_LIST</a>
 
  
 

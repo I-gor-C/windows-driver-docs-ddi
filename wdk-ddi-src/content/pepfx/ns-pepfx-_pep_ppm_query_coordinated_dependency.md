@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B7E857ED-66FF-4A4D-849B-A15663106507
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, kernel.pep_ppm_query_coordinated_dependency, _PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_QUERY_COORDINATED_DEPENDENCY"
+ms.keywords : pepfx/PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_COORDINATED_DEPENDENCY, *PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, pepfx/PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_query_coordinated_dependency, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,16 +84,14 @@ typedef struct _PEP_PPM_QUERY_COORDINATED_DEPENDENCY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_coordinated_dependency_option.md">PEP_COORDINATED_DEPENDENCY_OPTION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
 
  
 

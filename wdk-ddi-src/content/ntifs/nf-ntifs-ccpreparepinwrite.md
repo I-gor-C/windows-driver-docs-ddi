@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1645c7e9-5ae7-41d1-92db-1f069f79ac81
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.ccpreparepinwrite, CcPreparePinWrite, ntifs/CcPreparePinWrite, CcPreparePinWrite routine [Installable File System Drivers], ccref_00b887b5-cd87-44be-b96e-6be96df13a2b.xml
+ms.keywords : ntifs/CcPreparePinWrite, CcPreparePinWrite routine [Installable File System Drivers], CcPreparePinWrite, ccref_00b887b5-cd87-44be-b96e-6be96df13a2b.xml, ifsk.ccpreparepinwrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -170,30 +170,27 @@ If any failure occurs, <b>CcPreparePinWrite</b> raises a status exception for th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
-
-<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
-
-<a href="..\ntifs\nf-ntifs-mmsetaddressrangemodified.md">MmSetAddressRangeModified</a>
-
-<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
-
 <a href="..\ntifs\nf-ntifs-ccsetdirtypinneddata.md">CcSetDirtyPinnedData</a>
+
+<a href="..\ntifs\nf-ntifs-ccmapdata.md">CcMapData</a>
 
 <a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 
 <a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
+
+<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
+
+<a href="..\ntifs\nf-ntifs-ccpinmappeddata.md">CcPinMappedData</a>
+
+<a href="..\ntifs\nf-ntifs-mmsetaddressrangemodified.md">MmSetAddressRangeModified</a>
 
  
 

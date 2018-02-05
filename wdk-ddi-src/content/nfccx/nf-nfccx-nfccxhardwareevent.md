@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 5D108897-93D9-4C67-9138-86C608AD8C4C
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : NfcCxHardwareEvent, nfpdrivers._nfccxhardwareevent, nfccx/NfcCxHardwareEvent, NfcCxHardwareEvent method [Near-Field Proximity Drivers]
+ms.keywords : NfcCxHardwareEvent method [Near-Field Proximity Drivers], NfcCxHardwareEvent, nfpdrivers._nfccxhardwareevent, nfccx/NfcCxHardwareEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE"
+req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 
@@ -75,14 +75,11 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | nfccx.h (include Ncidef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Nfccxstub.lib |
+| **DLL** | NfcCx.dll |
 
 ## See Also
 

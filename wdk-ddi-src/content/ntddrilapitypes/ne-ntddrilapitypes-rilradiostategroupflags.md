@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b44debf9-4f44-44fc-9857-e4725edc888f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS, RILRADIOSTATEGROUPFLAGS, ntddrilapitypes/RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS, RILRADIOSTATEGROUPFLAGS enumeration [Network Drivers Starting with Windows Vista], netvista.rilradiostategroupflags, ntddrilapitypes/RILRADIOSTATEGROUPFLAGS
+ms.keywords : netvista.rilradiostategroupflags, RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS, ntddrilapitypes/RILRADIOSTATEGROUPFLAGS, RILRADIOSTATEGROUPFLAGS enumeration [Network Drivers Starting with Windows Vista], RILRADIOSTATEGROUPFLAGS, ntddrilapitypes/RIL_RADIOSTATE_GROUPFLAG_HASSUBGROUPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -67,7 +67,4 @@ typedef enum _RILRADIOSTATEGROUPFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

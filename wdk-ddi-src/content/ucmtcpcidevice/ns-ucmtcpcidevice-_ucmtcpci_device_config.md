@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 74de7f2a-8738-472b-8a22-983a82e29fcb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUCMTCPCI_DEVICE_CONFIG, ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG, _UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG, ucmtcpcidevice/PUCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG structure [Buses], PUCMTCPCI_DEVICE_CONFIG structure pointer [Buses], UCMTCPCI_DEVICE_CONFIG, buses.ucmtcpci_device_config
+ms.keywords : UCMTCPCI_DEVICE_CONFIG structure [Buses], buses.ucmtcpci_device_config, ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG structure pointer [Buses], ucmtcpcidevice/PUCMTCPCI_DEVICE_CONFIG, _UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG"
+req.typenames : UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -61,9 +61,6 @@ Size of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucmtcpcidevice.h |
 
 ## See Also

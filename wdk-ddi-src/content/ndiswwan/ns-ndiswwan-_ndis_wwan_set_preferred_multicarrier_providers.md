@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : D57068D9-D671-4E56-ABD0-CD91BD91404D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_wwan_set_preferred_multicarrier_providers, ndiswwan/PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, netvista.ndis_wwan_set_preferred_multicarrier_providers, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS"
+req.typenames : NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
 ---
 
 # _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure
@@ -110,9 +110,7 @@ A formatted
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

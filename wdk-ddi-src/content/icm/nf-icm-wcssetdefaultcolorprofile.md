@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 302f271c-801e-409c-a0fc-53f01e5e2055
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : icm/WcsSetDefaultColorProfile, WcsSetDefaultColorProfile, WcsSetDefaultColorProfile function [Print Devices], colorfnc_31c96c7b-5616-4bdb-8df8-23e2361a9554.xml, print.wcssetdefaultcolorprofile
+ms.keywords : WcsSetDefaultColorProfile, WcsSetDefaultColorProfile function [Print Devices], icm/WcsSetDefaultColorProfile, print.wcssetdefaultcolorprofile, colorfnc_31c96c7b-5616-4bdb-8df8-23e2361a9554.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,24 +95,21 @@ This function is executable in Least-Privileged User Account (LUA) context if <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
+| **Target Platform** | Universal |
 | **Header** | icm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mscms.lib |
+| **DLL** | Mscms.dll |
 
 ## See Also
 
-<a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
-
-<a href="..\icm\ne-icm-wcs_profile_management_scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a>
+<a href="..\icm\nf-icm-wcsgetdefaultcolorprofilesize.md">WcsGetDefaultColorProfileSize</a>
 
 <a href="..\icm\ne-icm-colorprofiletype.md">COLORPROFILETYPE</a>
 
-<a href="..\icm\nf-icm-wcsgetdefaultcolorprofilesize.md">WcsGetDefaultColorProfileSize</a>
+<a href="..\icm\ne-icm-wcs_profile_management_scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a>
+
+<a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
 
  
 

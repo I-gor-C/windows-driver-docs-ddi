@@ -197,9 +197,7 @@ The information the bus driver returns in the I/O Status Block is documented bel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | 1394.h (include 1394.h) |
-| **IRQL** |  |
 
 ## See Also
 

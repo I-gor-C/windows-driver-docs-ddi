@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6C6EAA96-40E9-467F-903B-AE44CE5B77CF
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PUFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR, ufs/PUFS_INTERCONNECT_DESCRIPTOR, storage.ufs_interconnect_descriptor, ufs/UFS_INTERCONNECT_DESCRIPTOR, PUFS_INTERCONNECT_DESCRIPTOR structure pointer [Storage Devices], UFS_INTERCONNECT_DESCRIPTOR structure [Storage Devices]
+ms.keywords : UFS_INTERCONNECT_DESCRIPTOR, PUFS_INTERCONNECT_DESCRIPTOR structure pointer [Storage Devices], ufs/UFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR structure [Storage Devices], PUFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR, storage.ufs_interconnect_descriptor, ufs/PUFS_INTERCONNECT_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,7 +76,5 @@ Specifies the length, in bytes, of this descriptor.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ufs.h |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b4a3611d-5eb6-4fb2-a66a-e563569c4790
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/IdleUsbSelectiveSuspend, IdleCannotWakeFromS0, wudfddi_types/IdleUsbSelectiveSuspend, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration, wdfdevice/IdleCapsInvalid, wudfddi_types/IdleCannotWakeFromS0, IdleCanWakeFromS0, wdfdevice/IdleCanWakeFromS0, wudfddi_types/IdleCanWakeFromS0, IdleCapsInvalid, IdleUsbSelectiveSuspend, _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdf.wdf_power_policy_s0_idle_capabilities, wdfdevice/IdleCannotWakeFromS0, DFDeviceObjectGeneralRef_42de97ef-91c2-44e1-9b69-fe92ca5b0edc.xml, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, kmdf.wdf_power_policy_s0_idle_capabilities, wudfddi_types/IdleCapsInvalid, wdfdevice/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
+ms.keywords : wdfdevice/IdleCannotWakeFromS0, wudfddi_types/IdleUsbSelectiveSuspend, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, kmdf.wdf_power_policy_s0_idle_capabilities, wudfddi_types/IdleCannotWakeFromS0, wdf.wdf_power_policy_s0_idle_capabilities, wdfdevice/IdleUsbSelectiveSuspend, wudfddi_types/IdleCapsInvalid, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdfdevice/IdleCanWakeFromS0, IdleCanWakeFromS0, wudfddi_types/IdleCanWakeFromS0, wdfdevice/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdfdevice/IdleCapsInvalid, IdleCannotWakeFromS0, DFDeviceObjectGeneralRef_42de97ef-91c2-44e1-9b69-fe92ca5b0edc.xml, IdleUsbSelectiveSuspend, IdleCapsInvalid, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -88,7 +88,6 @@ The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |

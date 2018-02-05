@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1bd19fcd-90da-4e1a-ac9a-692c6fddc7ab
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : dvdref_8b774201-3725-497e-8545-10c5cad2ef1f.xml, KSWAVE_BUFFER, ksmedia/KSWAVE_BUFFER, KSWAVE_BUFFER structure [Streaming Media Devices], stream.kswave_buffer, *PKSWAVE_BUFFER, PKSWAVE_BUFFER structure pointer [Streaming Media Devices], PKSWAVE_BUFFER, ksmedia/PKSWAVE_BUFFER
+ms.keywords : stream.kswave_buffer, dvdref_8b774201-3725-497e-8545-10c5cad2ef1f.xml, KSWAVE_BUFFER structure [Streaming Media Devices], PKSWAVE_BUFFER structure pointer [Streaming Media Devices], *PKSWAVE_BUFFER, KSWAVE_BUFFER, ksmedia/KSWAVE_BUFFER, ksmedia/PKSWAVE_BUFFER, PKSWAVE_BUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -97,9 +97,6 @@ This structure is used by the <a href="https://msdn.microsoft.com/library/window
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

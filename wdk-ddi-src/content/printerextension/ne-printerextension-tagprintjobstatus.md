@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 856FDAE1-C1D9-458D-B386-0A2D8612EA33
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PrintJobStatus_Retained, printerextension/PrintJobStatus_Paused, printerextension/PrintJobStatus_Deleted, PrintJobStatus_UserIntervention, printerextension/PrintJobStatus_Printing, printerextension/PrintJobStatus_Spooling, PrintJobStatus, printerextension/PrintJobStatus, PrintJobStatus_Spooling, PrintJobStatus_BlockedDeviceQueue, PrintJobStatus_Deleted, printerextension/PrintJobStatus_Printed, printerextension/PrintJobStatus_UserIntervention, printerextension/PrintJobStatus_Error, printerextension/PrintJobStatus_Complete, tagPrintJobStatus, PrintJobStatus_Printed, printerextension/PrintJobStatus_Deleting, PrintJobStatus_Offline, PrintJobStatus_Complete, PrintJobStatus_Error, PrintJobStatus enumeration [Print Devices], print.printjobstatus, PrintJobStatus_Printing, printerextension/PrintJobStatus_PaperOut, PrintJobStatus_PaperOut, printerextension/PrintJobStatus_BlockedDeviceQueue, PrintJobStatus_Restarted, PrintJobStatus_Deleting, PrintJobStatus_Paused, printerextension/PrintJobStatus_Restarted, printerextension/PrintJobStatus_Retained, printerextension/PrintJobStatus_Offline
+ms.keywords : PrintJobStatus_Printing, tagPrintJobStatus, PrintJobStatus_BlockedDeviceQueue, printerextension/PrintJobStatus_Paused, printerextension/PrintJobStatus_Deleting, printerextension/PrintJobStatus_Printed, PrintJobStatus_Retained, PrintJobStatus_PaperOut, printerextension/PrintJobStatus, printerextension/PrintJobStatus_Spooling, PrintJobStatus_Deleted, printerextension/PrintJobStatus_Deleted, PrintJobStatus_Deleting, PrintJobStatus_Error, printerextension/PrintJobStatus_Error, PrintJobStatus_UserIntervention, printerextension/PrintJobStatus_PaperOut, print.printjobstatus, printerextension/PrintJobStatus_BlockedDeviceQueue, printerextension/PrintJobStatus_Restarted, printerextension/PrintJobStatus_Printing, PrintJobStatus_Spooling, PrintJobStatus_Offline, printerextension/PrintJobStatus_UserIntervention, PrintJobStatus_Paused, PrintJobStatus, printerextension/PrintJobStatus_Complete, PrintJobStatus_Restarted, printerextension/PrintJobStatus_Offline, PrintJobStatus_Complete, PrintJobStatus_Printed, printerextension/PrintJobStatus_Retained, PrintJobStatus enumeration [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -148,16 +148,14 @@ It is possible for a job to have multiple  flag values specified simultaneously.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | printerextension.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/3C806C3B-78A1-44B6-A9AC-E7258D216637">IPrintJob::Status</a>
-
 <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a>
+
+<a href="https://msdn.microsoft.com/3C806C3B-78A1-44B6-A9AC-E7258D216637">IPrintJob::Status</a>
 
  
 

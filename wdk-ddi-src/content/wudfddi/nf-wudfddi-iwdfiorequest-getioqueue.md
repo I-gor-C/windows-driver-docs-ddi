@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 834d5ee3-b28b-4d75-b0b7-be1f36ace8aa
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest::GetIoQueue, GetIoQueue method, wudfddi/IWDFIoRequest::GetIoQueue, wdf.iwdfiorequest_getioqueue, GetIoQueue method, IWDFIoRequest interface, IWDFIoRequest interface, GetIoQueue method, umdf.iwdfiorequest_getioqueue, IWDFIoRequest, GetIoQueue, UMDFRequestObjectRef_1e603d95-06ae-45a8-ab4d-3592d6e140bf.xml
+ms.keywords : UMDFRequestObjectRef_1e603d95-06ae-45a8-ab4d-3592d6e140bf.xml, GetIoQueue method, wdf.iwdfiorequest_getioqueue, IWDFIoRequest interface, GetIoQueue method, GetIoQueue method, IWDFIoRequest interface, wudfddi/IWDFIoRequest::GetIoQueue, IWDFIoRequest::GetIoQueue, umdf.iwdfiorequest_getioqueue, IWDFIoRequest, GetIoQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,14 +68,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 92e4e960-fd74-42e1-8448-a07676507427
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PUSBD_PIPE_INFORMATION structure pointer [Buses], usb/PUSBD_PIPE_INFORMATION, usbstrct_79d986fc-2853-4179-8a41-cc438582b317.xml, *PUSBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION structure [Buses], buses.usbd_pipe_information, usb/USBD_PIPE_INFORMATION, PUSBD_PIPE_INFORMATION, _USBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION
+ms.keywords : usb/USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION, PUSBD_PIPE_INFORMATION, usb/PUSBD_PIPE_INFORMATION, buses.usbd_pipe_information, PUSBD_PIPE_INFORMATION structure pointer [Buses], usbstrct_79d986fc-2853-4179-8a41-cc438582b317.xml, USBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION structure [Buses], _USBD_PIPE_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION"
+req.typenames : USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -253,16 +253,13 @@ The value received in <b>MaximumPacketSize</b> for an isochronous endpoint (high
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usb.h (include Usb.h) |
 
 ## See Also
 
-<a href="..\usbspec\ns-usbspec-_usb_endpoint_descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+
+<a href="..\usbspec\ns-usbspec-_usb_endpoint_descriptor.md">USB_ENDPOINT_DESCRIPTOR</a>
 
  
 

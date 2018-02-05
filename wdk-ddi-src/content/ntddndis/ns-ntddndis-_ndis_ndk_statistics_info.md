@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F3FA3790-0754-4D5E-9F27-8ECD71278520
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_NDK_STATISTICS_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NDK_STATISTICS_INFO, _NDIS_NDK_STATISTICS_INFO, PNDIS_NDK_STATISTICS_INFO, NDIS_NDK_STATISTICS_INFO, PNDIS_NDK_STATISTICS_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NDK_STATISTICS_INFO, netvista.ndis_ndk_statistics_info
+ms.keywords : netvista.ndis_ndk_statistics_info, ntddndis/PNDIS_NDK_STATISTICS_INFO, NDIS_NDK_STATISTICS_INFO, ntddndis/NDIS_NDK_STATISTICS_INFO, NDIS_NDK_STATISTICS_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_NDK_STATISTICS_INFO structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NDK_STATISTICS_INFO, _NDIS_NDK_STATISTICS_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,18 +79,16 @@ The NDK-capable miniport driver is required to fill in the <b>CounterSet</b> mem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_performance_counters.md">NDIS_NDK_PERFORMANCE_COUNTERS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451813">OID_NDK_STATISTICS</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451813">OID_NDK_STATISTICS</a>
 
  
 

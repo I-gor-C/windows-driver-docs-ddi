@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 054d1673-0c1a-4ceb-821a-d61bf28392cf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/CLS_IO_STATISTICS, CLFS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], PPCLFS_IO_STATISTICS, PCLS_IO_STATISTICS, *PCLS_IO_STATISTICS, wdm/PPCLS_IO_STATISTICS, PCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], PCLFS_IO_STATISTICS, kstruct_a_2e43db78-8c4e-462f-ad85-8c799be2f2e3.xml, wdm/PPCLFS_IO_STATISTICS, PPCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], PPCLS_IO_STATISTICS, PCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], *PCLFS_IO_STATISTICS, CLS_IO_STATISTICS, kernel.clfs_io_statistics, wdm/PCLS_IO_STATISTICS, CLFS_IO_STATISTICS, CLS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], PPCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], _CLS_IO_STATISTICS, wdm/CLFS_IO_STATISTICS, wdm/PCLFS_IO_STATISTICS
+ms.keywords : PCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], PCLS_IO_STATISTICS, _CLS_IO_STATISTICS, wdm/PCLS_IO_STATISTICS, PPCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], CLS_IO_STATISTICS, PPCLS_IO_STATISTICS, kernel.clfs_io_statistics, wdm/PPCLS_IO_STATISTICS, wdm/CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, *PCLFS_IO_STATISTICS, CLFS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], wdm/CLFS_IO_STATISTICS, PCLFS_IO_STATISTICS, wdm/PCLFS_IO_STATISTICS, PPCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], wdm/PPCLFS_IO_STATISTICS, kstruct_a_2e43db78-8c4e-462f-ad85-8c799be2f2e3.xml, PCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], CLFS_IO_STATISTICS, CLS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], PPCLFS_IO_STATISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCLS_IO_STATISTICS, PPCLS_IO_STATISTICS, CLS_IO_STATISTICS"
+req.typenames : PPCLS_IO_STATISTICS, *PCLS_IO_STATISTICS, CLS_IO_STATISTICS
 req.product : Windows 10 or later.
 ---
 
@@ -80,9 +80,6 @@ A <a href="..\wdm\ns-wdm-_cls_io_statistics_header.md">CLFS_IO_STATISTICS_HEADER
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntddk.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B64849A6-DDB1-4BD1-B4B6-1E38DE9237E5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmTypeCOperatingModeInvalid, buses.ucm_type_c_operating_mode, UcmTypeCOperatingModeDrp, UcmTypeCOperatingModeDfp, ucmtypes/UCM_TYPEC_OPERATING_MODE, ucmtypes/UcmTypeCOperatingModeInvalid, ucmtypes/UcmTypeCOperatingModeUfp, UCM_TYPEC_OPERATING_MODE enumeration [Buses], UCM_TYPEC_OPERATING_MODE, UcmTypeCOperatingModeUfp, ucmtypes/UcmTypeCOperatingModeDrp, _UCM_TYPEC_OPERATING_MODE, ucmtypes/UcmTypeCOperatingModeDfp
+ms.keywords : "_UCM_TYPEC_OPERATING_MODE, buses.ucm_type_c_operating_mode, UcmTypeCOperatingModeInvalid, ucmtypes/UcmTypeCOperatingModeInvalid, UcmTypeCOperatingModeDrp, UCM_TYPEC_OPERATING_MODE enumeration [Buses], UcmTypeCOperatingModeUfp, UcmTypeCOperatingModeDfp, ucmtypes/UcmTypeCOperatingModeDfp, ucmtypes/UcmTypeCOperatingModeUfp, ucmtypes/UcmTypeCOperatingModeDrp, ucmtypes/UCM_TYPEC_OPERATING_MODE, UCM_TYPEC_OPERATING_MODE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -81,7 +81,7 @@ typedef enum _UCM_TYPEC_OPERATING_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |

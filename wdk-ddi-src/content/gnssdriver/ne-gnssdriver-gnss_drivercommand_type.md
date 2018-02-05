@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 61D7C52C-D8C9-4BBE-9DCA-B5E934A02FAE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_SetUplServerAccessInterval, gnssdriver/GNSS_SetUplServerAccessInterval, gnssdriver/GNSS_SetLocationServiceEnabled, GNSS_CustomCommand, gnssdriver/GNSS_ForceOperationMode, GNSS_ForceOperationMode, GNSS_SetNiTimeoutInterval, gnssdriver/GNSS_SetSuplVersion, gnssdriver/GNSS_ResetGeofencesTracking, GNSS_ResetGeofencesTracking, GNSS_ClearAgnssData, GNSS_SetSuplVersion, GNSS_SetNMEALogging, gnssdriver/GNSS_ForceSatelliteSystem, gnssdriver/GNSS_ResetEngine, gnssdriver/GNSS_SetLocationNIRequestAllowed, gnssdriver/GNSS_SetNMEALogging, GNSS_SetLocationNIRequestAllowed, GNSS_DRIVERCOMMAND_TYPE, GNSS_SetLocationServiceEnabled, GNSS_ForceSatelliteSystem, gnssdriver/GNSS_DRIVERCOMMAND_TYPE, gnssdriver/GNSS_CustomCommand, gnssdriver/GNSS_SetNiTimeoutInterval, GNSS_DRIVERCOMMAND_TYPE enumeration [Sensor Devices], gnssdriver/GNSS_ClearAgnssData, GNSS_ResetEngine, sensors.gnss_drivercommand_type
+ms.keywords : gnssdriver/GNSS_DRIVERCOMMAND_TYPE, GNSS_ResetEngine, gnssdriver/GNSS_ResetGeofencesTracking, gnssdriver/GNSS_CustomCommand, GNSS_ForceSatelliteSystem, GNSS_CustomCommand, gnssdriver/GNSS_SetLocationServiceEnabled, GNSS_SetUplServerAccessInterval, GNSS_SetLocationNIRequestAllowed, GNSS_ResetGeofencesTracking, GNSS_SetNMEALogging, gnssdriver/GNSS_SetUplServerAccessInterval, GNSS_DRIVERCOMMAND_TYPE enumeration [Sensor Devices], gnssdriver/GNSS_ClearAgnssData, gnssdriver/GNSS_ForceOperationMode, GNSS_ForceOperationMode, gnssdriver/GNSS_ResetEngine, GNSS_ClearAgnssData, sensors.gnss_drivercommand_type, gnssdriver/GNSS_ForceSatelliteSystem, GNSS_SetLocationServiceEnabled, GNSS_SetNiTimeoutInterval, gnssdriver/GNSS_SetSuplVersion, GNSS_SetSuplVersion, gnssdriver/GNSS_SetNMEALogging, GNSS_DRIVERCOMMAND_TYPE, gnssdriver/GNSS_SetLocationNIRequestAllowed, gnssdriver/GNSS_SetNiTimeoutInterval
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -257,7 +257,4 @@ Mobile operators may use the configuration service provider to tune this setting
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

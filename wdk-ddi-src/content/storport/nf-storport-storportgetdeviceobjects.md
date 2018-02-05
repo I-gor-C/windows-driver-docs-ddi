@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e48b5048-5f5f-4efb-b7bf-2dd183074516
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetDeviceObjects routine [Storage Devices], storprt_219d8794-88c3-49c6-82ea-a19f75c3ad1f.xml, storport/StorPortGetDeviceObjects, storage.storportgetdeviceobjects, StorPortGetDeviceObjects
+ms.keywords : storage.storportgetdeviceobjects, storport/StorPortGetDeviceObjects, StorPortGetDeviceObjects routine [Storage Devices], StorPortGetDeviceObjects, storprt_219d8794-88c3-49c6-82ea-a19f75c3ad1f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,11 +120,6 @@ The <i>HwDeviceExtension</i> was <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

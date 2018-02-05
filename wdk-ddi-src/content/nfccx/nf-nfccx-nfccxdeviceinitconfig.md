@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : 98047C0F-B419-4DFE-8143-BD3917650878
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : NfcCxDeviceInitConfig function [Near-Field Proximity Drivers], NfcCxDeviceInitConfig, nfpdrivers._nfccxdeviceinitconfig_, nfccx/NfcCxDeviceInitConfig
+ms.keywords : NfcCxDeviceInitConfig, NfcCxDeviceInitConfig function [Near-Field Proximity Drivers], nfccx/NfcCxDeviceInitConfig, nfpdrivers._nfccxdeviceinitconfig_
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNFC_CX_TRANSPORT_TYPE, NFC_CX_TRANSPORT_TYPE"
+req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 
@@ -78,14 +78,11 @@ If the operation succeeds, the function returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | nfccx.h (include Ncidef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Nfccxstub.lib |
+| **DLL** | NfcCx.dll |
 
 ## See Also
 

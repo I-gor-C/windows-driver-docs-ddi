@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 549edba4-8622-4117-b013-bcaf1787e8b4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_GetPersistentBindingV2, fibreHBA_rtns_b3906ad3-bbf6-43b4-b427-9276870645cd.xml, HBA_GetPersistentBindingV2, storage.hba_getpersistentbindingv2, HBA_GetPersistentBindingV2 routine [Storage Devices]
+ms.keywords : HBA_GetPersistentBindingV2 routine [Storage Devices], hbaapi/HBA_GetPersistentBindingV2, storage.hba_getpersistentbindingv2, HBA_GetPersistentBindingV2, fibreHBA_rtns_b3906ad3-bbf6-43b4-b427-9276870645cd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,24 +143,20 @@ This routine is similar to the <a href="..\hbaapi\nf-hbaapi-hba_getfcppersistent
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 
+<a href="..\hbaapi\ns-hbaapi-hba_fcpbindingentry2.md">HBA_FCPBindingEntry2</a>
+
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
 <a href="..\hbaapi\ns-hbaapi-hba_fcpbinding.md">HBA_FCPBinding</a>
-
-<a href="..\hbaapi\ns-hbaapi-hba_fcpbindingentry2.md">HBA_FCPBindingEntry2</a>
 
 <a href="..\hbaapi\nf-hbaapi-hba_getfcppersistentbinding.md">HBA_GetFcpPersistentBinding</a>
 

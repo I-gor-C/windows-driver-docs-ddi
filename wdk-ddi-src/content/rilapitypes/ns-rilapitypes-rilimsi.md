@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e2dc6a60-b3a6-4b2a-8a6c-aa513ca9b87b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILIMSI, netvista.rilimsi, RILIMSI, *LPRILIMSI, RILIMSI structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILIMSI, *LPRILIMSI, rilapitypes/RILIMSI, netvista.rilimsi, RILIMSI structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,6 @@ For 3GPP2, the IMSI_T is returned if it is programmed; otherwise, the IMSI_M is 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

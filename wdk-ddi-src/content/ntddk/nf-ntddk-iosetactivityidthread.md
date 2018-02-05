@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4C7884AB-C763-4FAF-8799-E0113B3F3AE0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetActivityIdThread routine [Kernel-Mode Driver Architecture], IoSetActivityIdThread, ntddk/IoSetActivityIdThread, kernel.iosetactivityidthread
+ms.keywords : kernel.iosetactivityidthread, IoSetActivityIdThread routine [Kernel-Mode Driver Architecture], IoSetActivityIdThread, ntddk/IoSetActivityIdThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,9 @@ Drivers that use  I/O work items do not need to call this routine because the I/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

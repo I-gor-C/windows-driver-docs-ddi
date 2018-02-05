@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e5a3d4dc-7446-49c1-985a-9d3a9d43dc15
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ataportbuschangedetected, AtaPortBusChangeDetected routine [Storage Devices], irb/AtaPortBusChangeDetected, AtaPortBusChangeDetected
+ms.keywords : AtaPortBusChangeDetected routine [Storage Devices], AtaPortBusChangeDetected, storage.ataportbuschangedetected, irb/AtaPortBusChangeDetected
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,6 @@ The miniport driver uses this routine to report the arrival or removal of any de
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

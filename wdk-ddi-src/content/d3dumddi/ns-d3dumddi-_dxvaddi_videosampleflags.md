@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1dca2b12-0542-43a9-abff-203ea34cff90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, display.dxvaddi_videosampleflags, DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices], _DXVADDI_VIDEOSAMPLEFLAGS, DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml
+ms.keywords : DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml, _DXVADDI_VIDEOSAMPLEFLAGS, d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, display.dxvaddi_videosampleflags, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices], DXVADDI_VIDEOSAMPLEFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ typedef struct _DXVADDI_VIDEOSAMPLEFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

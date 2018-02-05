@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7343f619-cf89-4768-b488-fe95f1da749d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlAreBitsSet, RtlAreBitsSet routine [Kernel-Mode Driver Architecture], k109_8d2248d2-13e9-4f90-8d09-a3ea51579da8.xml, kernel.rtlarebitsset, RtlAreBitsSet
+ms.keywords : RtlAreBitsSet, k109_8d2248d2-13e9-4f90-8d09-a3ea51579da8.xml, kernel.rtlarebitsset, RtlAreBitsSet routine [Kernel-Mode Driver Architecture], wdm/RtlAreBitsSet
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,28 +79,26 @@ Callers of <b>RtlAreBitsSet</b> must be running at IRQL &lt;= APC_LEVEL if the m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlcheckbit.md">RtlCheckBit</a>
-
-<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
-
-<a href="..\wdm\nf-wdm-rtlsetallbits.md">RtlSetAllBits</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
 
 <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+<a href="..\wdm\nf-wdm-rtlsetallbits.md">RtlSetAllBits</a>
+
+<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
 
 <a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
+
+<a href="..\wdm\nf-wdm-rtlcheckbit.md">RtlCheckBit</a>
 
  
 

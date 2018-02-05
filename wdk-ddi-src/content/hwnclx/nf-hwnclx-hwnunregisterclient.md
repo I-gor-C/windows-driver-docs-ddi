@@ -8,7 +8,7 @@ old-project : gpiobtn
 ms.assetid : 94e5153a-3ce5-400c-b53a-5323b34a6c34
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : HwNUnregisterClient, gpiobtn.hwnunregisterclient, HwNUnregisterClient function, hwnclx/HwNUnregisterClient
+ms.keywords : gpiobtn.hwnunregisterclient, HwNUnregisterClient, hwnclx/HwNUnregisterClient, HwNUnregisterClient function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX"
+req.typenames : HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 
@@ -65,14 +65,11 @@ Returns STATUS_SUCCESS if function succeeds. Returns STATUS_INVALID_PARAMETER if
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | hwnclx.h |
-| **Library** |  |
+| **Library** | Mshwnclxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

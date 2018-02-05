@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 80b72de0-02a6-4891-b74a-c41cb14fa629
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoIsWdmVersionAvailable, IoIsWdmVersionAvailable routine [Kernel-Mode Driver Architecture], wdm/IoIsWdmVersionAvailable, kernel.ioiswdmversionavailable, k104_775d6afa-6edd-4922-bdff-a8fe5d32bc3a.xml
+ms.keywords : wdm/IoIsWdmVersionAvailable, IoIsWdmVersionAvailable, IoIsWdmVersionAvailable routine [Kernel-Mode Driver Architecture], k104_775d6afa-6edd-4922-bdff-a8fe5d32bc3a.xml, kernel.ioiswdmversionavailable
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -252,12 +252,11 @@ The following call returns <b>TRUE</b> on any of the listed operating systems, b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

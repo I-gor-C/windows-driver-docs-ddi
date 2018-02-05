@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 15DCCCF1-72B1-4944-9BF0-ACAF1DEB9243
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlShortMult, kernel.rtlshortmult, RtlShortMult function [Kernel-Mode Driver Architecture], ntintsafe/RtlShortMult
+ms.keywords : ntintsafe/RtlShortMult, RtlShortMult function [Kernel-Mode Driver Architecture], kernel.rtlshortmult, RtlShortMult
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,11 +84,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

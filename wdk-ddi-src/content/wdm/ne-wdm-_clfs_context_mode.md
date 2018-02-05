@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 35f2b42d-d67f-4fd4-adde-918a2587980b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_CLFS_CONTEXT_MODE, wdm/ClfsContextPrevious, PPCLFS_CONTEXT_MODE, PCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], *PCLFS_CONTEXT_MODE, wdm/ClfsContextForward, ClfsContextPrevious, wdm/ClfsContextUndoNext, wdm/CLFS_CONTEXT_MODE, wdm/PPCLFS_CONTEXT_MODE, ClfsContextNone, wdm/PCLFS_CONTEXT_MODE, ClfsContextForward, wdm/ClfsContextNone, PPCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], ClfsContextUndoNext, CLFS_CONTEXT_MODE enumeration [Kernel-Mode Driver Architecture], PCLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE, kernel.clfs_context_mode, sysenum_b51a934c-9174-4607-8da9-22c7ecf56730.xml"
+ms.keywords : CLFS_CONTEXT_MODE, ClfsContextUndoNext, *PCLFS_CONTEXT_MODE, kernel.clfs_context_mode, wdm/ClfsContextPrevious, wdm/PPCLFS_CONTEXT_MODE, ClfsContextNone, wdm/ClfsContextForward, PCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], ClfsContextPrevious, PPCLFS_CONTEXT_MODE, _CLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE enumeration [Kernel-Mode Driver Architecture], wdm/CLFS_CONTEXT_MODE, wdm/ClfsContextNone, wdm/PCLFS_CONTEXT_MODE, sysenum_b51a934c-9174-4607-8da9-22c7ecf56730.xml, PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], ClfsContextForward, wdm/ClfsContextUndoNext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE"
+req.typenames : CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE
 req.product : Windows 10 or later.
 ---
 
@@ -81,20 +81,17 @@ typedef enum _CLFS_CONTEXT_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
 
 <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
 
-<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
+<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
 
-<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
 
  
 

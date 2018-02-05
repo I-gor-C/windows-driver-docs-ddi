@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1d35ed3e-d14f-43ad-9c11-38aa37e76492
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ioref_d9c833b9-0246-49b7-83c5-ef02ef562e17.xml, ifsk.ioinitializedrivercreatecontext, IoInitializeDriverCreateContext, ntddk/IoInitializeDriverCreateContext, IoInitializeDriverCreateContext routine [Installable File System Drivers]
+ms.keywords : IoInitializeDriverCreateContext, ntddk/IoInitializeDriverCreateContext, ifsk.ioinitializedrivercreatecontext, IoInitializeDriverCreateContext routine [Installable File System Drivers], ioref_d9c833b9-0246-49b7-83c5-ef02ef562e17.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,20 +72,16 @@ Starting in Windows 10, version 1607, this routine sets the <b>SiloContext</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
-
 <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 
  
 

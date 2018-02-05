@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 3b40d780-8084-4c19-bb8e-9d1ab3dadc95
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI.sriov_pnp_event_complete, SRIOV_PNP_EVENT_COMPLETE, _SRIOV_PNP_EVENT_COMPLETE, pcivirt/SRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE structure [Buses], *PSRIOV_PNP_EVENT_COMPLETE
+ms.keywords : pcivirt/SRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE, *PSRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE structure [Buses], PCI.sriov_pnp_event_complete, _SRIOV_PNP_EVENT_COMPLETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE"
+req.typenames : SRIOV_PNP_EVENT_COMPLETE, *PSRIOV_PNP_EVENT_COMPLETE
 ---
 
 # _SRIOV_PNP_EVENT_COMPLETE structure
@@ -59,9 +59,6 @@ Indicates the status to be returned in the PnP query IRP that is currently pende
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pcivirt.h |
 
 ## See Also

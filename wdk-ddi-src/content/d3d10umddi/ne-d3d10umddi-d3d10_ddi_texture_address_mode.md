@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 96bbba03-97c1-43f2-bf3e-902de77d5eb9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_TEXTURE_ADDRESS_MIRROR, D3D10_DDI_TEXTURE_ADDRESS_BORDER, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_WRAP, display.d3d10_ddi_texture_address_mode, D3D10_DDI_TEXTURE_ADDRESS_MODE enumeration [Display Devices], D3D10_DDI_TEXTURE_ADDRESS_MODE, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_BORDER, D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_MODE, D3D10_DDI_TEXTURE_ADDRESS_WRAP, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE, UMDisplayDriver_Dx10param_Structs_11f66184-ba3e-4c13-869b-d810c97b1878.xml, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_MIRROR, D3D10_DDI_TEXTURE_ADDRESS_CLAMP, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_CLAMP
+ms.keywords : D3D10_DDI_TEXTURE_ADDRESS_MIRROR, D3D10_DDI_TEXTURE_ADDRESS_WRAP, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_BORDER, D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_MODE, display.d3d10_ddi_texture_address_mode, D3D10_DDI_TEXTURE_ADDRESS_MODE, UMDisplayDriver_Dx10param_Structs_11f66184-ba3e-4c13-869b-d810c97b1878.xml, D3D10_DDI_TEXTURE_ADDRESS_BORDER, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_WRAP, D3D10_DDI_TEXTURE_ADDRESS_CLAMP, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_MIRROR, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_MIRRORONCE, d3d10umddi/D3D10_DDI_TEXTURE_ADDRESS_CLAMP, D3D10_DDI_TEXTURE_ADDRESS_MODE enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,9 +86,7 @@ typedef enum D3D10_DDI_TEXTURE_ADDRESS_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

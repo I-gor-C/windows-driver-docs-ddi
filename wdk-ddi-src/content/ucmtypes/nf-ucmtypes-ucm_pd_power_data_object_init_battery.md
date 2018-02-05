@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : DA191158-D920-4965-AC2B-7DDA8B541504
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY, UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY function [Buses], buses.ucm_pd_power_data_object_init_battery, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY
+ms.keywords : UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY function [Buses], ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY, buses.ucm_pd_power_data_object_init_battery, UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,12 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b89977da-d3ac-4f1f-867e-b3b7912b955d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSIDENTIFIER structure pointer [Streaming Media Devices], *PKSPIN_MEDIUM, KSIDENTIFIER structure [Streaming Media Devices], KSEVENT, ks/PKSIDENTIFIER, KSMETHOD, *PKSPROPERTY, KSIDENTIFIER, KSPIN_MEDIUM, *PKSMETHOD, *PKSIDENTIFIER, *PKSDEGRADE, stream.ksidentifier, *PKSEVENT, ks-struct_652a0465-0c2b-4e46-ac43-7a6c5bbdaf80.xml, PKSIDENTIFIER, *PKSPIN_INTERFACE, KSPIN_INTERFACE, KSDEGRADE, ks/KSIDENTIFIER, KSPROPERTY
+ms.keywords : KSIDENTIFIER structure [Streaming Media Devices], KSDEGRADE, ks/KSIDENTIFIER, PKSIDENTIFIER, *PKSDEGRADE, KSEVENT, ks/PKSIDENTIFIER, PKSIDENTIFIER structure pointer [Streaming Media Devices], stream.ksidentifier, KSPIN_INTERFACE, *PKSMETHOD, *PKSPIN_MEDIUM, *PKSIDENTIFIER, KSPIN_MEDIUM, KSIDENTIFIER, *PKSEVENT, *PKSPROPERTY, KSMETHOD, KSPROPERTY, ks-struct_652a0465-0c2b-4e46-ac43-7a6c5bbdaf80.xml, *PKSPIN_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSIDENTIFIER, *PKSIDENTIFIER
+req.typenames : "*PKSIDENTIFIER, KSIDENTIFIER"
 ---
 
 # KSIDENTIFIER structure
@@ -68,16 +68,13 @@ The use of an ID within the set allows one to perform a single large compare for
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
 <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
 

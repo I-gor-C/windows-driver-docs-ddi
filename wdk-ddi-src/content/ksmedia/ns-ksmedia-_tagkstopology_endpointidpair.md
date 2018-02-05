@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 556B56A6-1EF4-406B-A9FB-901C0CF24BC0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_tagKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR, audio.kstopology_endpointidpair, *PKSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR structure pointer [Audio Devices], ksmedia/KSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR, ksmedia/PKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR structure [Audio Devices]"
+ms.keywords : audio.kstopology_endpointidpair, ksmedia/KSTOPOLOGY_ENDPOINTIDPAIR, _tagKSTOPOLOGY_ENDPOINTIDPAIR, *PKSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR, ksmedia/PKSTOPOLOGY_ENDPOINTIDPAIR, KSTOPOLOGY_ENDPOINTIDPAIR structure [Audio Devices], KSTOPOLOGY_ENDPOINTIDPAIR, PKSTOPOLOGY_ENDPOINTIDPAIR structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ Specifies the render endpoint ID.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |
 
 ## See Also

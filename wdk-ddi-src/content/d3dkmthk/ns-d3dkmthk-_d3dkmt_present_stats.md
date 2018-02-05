@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fd292f3c-2cf7-4f17-999b-a82b2a3a8e0e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_PRESENT_STATS structure [Display Devices], display.d3dkmt_present_stats, _D3DKMT_PRESENT_STATS, OpenGL_Structs_181828f7-c22f-4f23-914d-83a8961cdefe.xml, d3dkmthk/D3DKMT_PRESENT_STATS, D3DKMT_PRESENT_STATS
+ms.keywords : "_D3DKMT_PRESENT_STATS, d3dkmthk/D3DKMT_PRESENT_STATS, D3DKMT_PRESENT_STATS, OpenGL_Structs_181828f7-c22f-4f23-914d-83a8961cdefe.xml, display.d3dkmt_present_stats, D3DKMT_PRESENT_STATS structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,7 @@ Present statistics cannot work for windowed-mode devices. For windowed mode, eac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

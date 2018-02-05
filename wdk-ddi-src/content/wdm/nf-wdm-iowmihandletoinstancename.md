@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e9d8fde5-81b7-480b-8d7c-0005fd1868fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWMIHandleToInstanceName routine [Kernel-Mode Driver Architecture], kernel.iowmihandletoinstancename, IoWMIHandleToInstanceName, k104_7d97f756-2f7f-4788-bcbc-368e08b6b86f.xml, wdm/IoWMIHandleToInstanceName
+ms.keywords : IoWMIHandleToInstanceName routine [Kernel-Mode Driver Architecture], IoWMIHandleToInstanceName, wdm/IoWMIHandleToInstanceName, k104_7d97f756-2f7f-4788-bcbc-368e08b6b86f.xml, kernel.iowmihandletoinstancename
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,22 +104,20 @@ The driver does not implement any instances of the WMI class specified by <i>Dat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating system. Available in Windows XP and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iowmideviceobjecttoinstancename.md">IoWMIDeviceObjectToInstanceName</a>
+<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
+<a href="..\wdm\nf-wdm-iowmideviceobjecttoinstancename.md">IoWMIDeviceObjectToInstanceName</a>
 
  
 

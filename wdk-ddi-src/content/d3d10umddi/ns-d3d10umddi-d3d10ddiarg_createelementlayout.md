@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3eb1555b-3274-496d-b6af-9cb0a6083ee4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_8c912e61-9cff-46ad-963f-16d3b9a13b10.xml, D3D10DDIARG_CREATEELEMENTLAYOUT structure [Display Devices], display.d3d10ddiarg_createelementlayout, d3d10umddi/D3D10DDIARG_CREATEELEMENTLAYOUT, D3D10DDIARG_CREATEELEMENTLAYOUT
+ms.keywords : D3D10DDIARG_CREATEELEMENTLAYOUT, D3D10DDIARG_CREATEELEMENTLAYOUT structure [Display Devices], UMDisplayDriver_Dx10param_Structs_8c912e61-9cff-46ad-963f-16d3b9a13b10.xml, d3d10umddi/D3D10DDIARG_CREATEELEMENTLAYOUT, display.d3d10ddiarg_createelementlayout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,18 +64,16 @@ typedef struct D3D10DDIARG_CREATEELEMENTLAYOUT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_input_element_desc.md">D3D10DDIARG_INPUT_ELEMENT_DESC</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createelementlayout.md">CreateElementLayout</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivateelementlayoutsize.md">CalcPrivateElementLayoutSize</a>
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createelementlayout.md">CreateElementLayout</a>
+<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_input_element_desc.md">D3D10DDIARG_INPUT_ELEMENT_DESC</a>
 
  
 

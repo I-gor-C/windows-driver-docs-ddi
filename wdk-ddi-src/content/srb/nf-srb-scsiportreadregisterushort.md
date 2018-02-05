@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 192a525e-6a42-4bd0-9c50-d13741469a48
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortReadRegisterUshort, storage.scsiportreadregisterushort, srb/ScsiPortReadRegisterUshort, ScsiPortReadRegisterUshort routine [Storage Devices], scsiprt_342c6cc3-090e-4bea-be54-1a52f50d8276.xml
+ms.keywords : ScsiPortReadRegisterUshort, ScsiPortReadRegisterUshort routine [Storage Devices], srb/ScsiPortReadRegisterUshort, storage.scsiportreadregisterushort, scsiprt_342c6cc3-090e-4bea-be54-1a52f50d8276.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -70,14 +70,9 @@ Pointer to the register. The given <i>Register</i> must be in a mapped memory-sp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

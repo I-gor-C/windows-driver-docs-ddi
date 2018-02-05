@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a9b3ac31-2001-45cc-a917-de687419b561
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols3 interface [Windows Debugging], OutputSymbolByOffset method, OutputSymbolByOffset method [Windows Debugging], IDebugSymbols3 interface, debugger.outputsymbolbyoffset, OutputSymbolByOffset, OutputSymbolByOffset method [Windows Debugging], IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols_45f0a841-85cf-4be8-82bc-e962b5af2f5d.xml, IDebugSymbols3
+ms.keywords : OutputSymbolByOffset method [Windows Debugging], IDebugSymbols3 interface, OutputSymbolByOffset method [Windows Debugging], OutputSymbolByOffset, dbgeng/IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols3, debugger.outputsymbolbyoffset, IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols_45f0a841-85cf-4be8-82bc-e962b5af2f5d.xml, IDebugSymbols3 interface [Windows Debugging], OutputSymbolByOffset method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -146,14 +146,9 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

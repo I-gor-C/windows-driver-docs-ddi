@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 05FF8A47-A586-4DA7-94AD-A7186265ADB4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterQueue2::SendBidiSetRequestAsync, SendBidiSetRequestAsync method [Print Devices], SendBidiSetRequestAsync method [Print Devices], IPrinterQueue2 interface, IPrinterQueue2, SendBidiSetRequestAsync, print.iprinterqueue2_sendbidisetrequestasync, IPrinterQueue2 interface [Print Devices], SendBidiSetRequestAsync method, printerextension/IPrinterQueue2::SendBidiSetRequestAsync
+ms.keywords : SendBidiSetRequestAsync, print.iprinterqueue2_sendbidisetrequestasync, printerextension/IPrinterQueue2::SendBidiSetRequestAsync, IPrinterQueue2, SendBidiSetRequestAsync method [Print Devices], IPrinterQueue2 interface [Print Devices], SendBidiSetRequestAsync method, SendBidiSetRequestAsync method [Print Devices], IPrinterQueue2 interface, IPrinterQueue2::SendBidiSetRequestAsync
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -78,14 +78,10 @@ This method returns the appropriate <b>HRESULT</b> value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

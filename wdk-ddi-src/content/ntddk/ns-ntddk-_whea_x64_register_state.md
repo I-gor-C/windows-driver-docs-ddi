@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 690c900f-fba8-4712-9a05-bfbe633dd9cf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PWHEA_X64_REGISTER_STATE structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_X64_REGISTER_STATE, PWHEA_X64_REGISTER_STATE, whearef_2602d89a-de68-4dd9-ba4b-bb42fc0f258b.xml, WHEA_X64_REGISTER_STATE structure [WHEA Drivers and Applications], _WHEA_X64_REGISTER_STATE, WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE, whea.whea_x64_register_state, ntddk/WHEA_X64_REGISTER_STATE
+ms.keywords : "_WHEA_X64_REGISTER_STATE, PWHEA_X64_REGISTER_STATE structure pointer [WHEA Drivers and Applications], whea.whea_x64_register_state, WHEA_X64_REGISTER_STATE, ntddk/PWHEA_X64_REGISTER_STATE, PWHEA_X64_REGISTER_STATE, WHEA_X64_REGISTER_STATE structure [WHEA Drivers and Applications], whearef_2602d89a-de68-4dd9-ba4b-bb42fc0f258b.xml, ntddk/WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WHEA_X64_REGISTER_STATE, *PWHEA_X64_REGISTER_STATE
+req.typenames : "*PWHEA_X64_REGISTER_STATE, WHEA_X64_REGISTER_STATE"
 ---
 
 # _WHEA_X64_REGISTER_STATE structure
@@ -147,14 +147,14 @@ A WHEA128A structure that contains the state of the global descriptor table regi
 </table></span></div>
 
 
-#### Low
-
-The low order 64 bits of the 128-bit value.
-
-
 #### High
 
 The high order 64 bits of the 128-bit value.
+
+
+#### Low
+
+The low order 64 bits of the 128-bit value.
 
 `Gs`
 
@@ -254,9 +254,7 @@ If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_x
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

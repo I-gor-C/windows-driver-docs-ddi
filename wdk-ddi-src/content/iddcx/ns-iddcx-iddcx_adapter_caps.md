@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3a8610e4-22d5-4732-b4be-846449acb5b1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IDDCX_ADAPTER_CAPS, iddcx/IDDCX_ADAPTER_CAPS, IDDCX_ADAPTER_CAPS structure [Display Devices], display.iddcx_adapter_caps
+ms.keywords : IDDCX_ADAPTER_CAPS, iddcx/IDDCX_ADAPTER_CAPS, display.iddcx_adapter_caps, IDDCX_ADAPTER_CAPS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,4 @@ The number of frames to request after the desktop goes idle if the driver's enco
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

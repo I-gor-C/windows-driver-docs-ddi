@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 15c02819-bae8-48f5-8782-97823b6907bd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_radio_state, wwan/WWAN_RADIO_STATE, WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], WWAN_RADIO_STATE, PWWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_RADIO_STATE, WwanRef_b1ea0ea1-b23f-4e5c-9528-659e1f6e4162.xml, _WWAN_RADIO_STATE, PWWAN_RADIO_STATE, wwan/PWWAN_RADIO_STATE
+ms.keywords : PWWAN_RADIO_STATE, netvista.wwan_radio_state, wwan/PWWAN_RADIO_STATE, WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_RADIO_STATE, PWWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_b1ea0ea1-b23f-4e5c-9528-659e1f6e4162.xml, *PWWAN_RADIO_STATE, WWAN_RADIO_STATE, _WWAN_RADIO_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -201,9 +201,7 @@ The miniport driver should send all applicable status indications such as
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : EA13DADC-ED00-435D-BEA7-B6E52A86031A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_encapsulated_packet_task_offload, _NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure [Network Drivers Starting with Windows Vista], PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, *PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, ntddndis/PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, ntddndis/NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
+ms.keywords : PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], _NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, netvista.ndis_encapsulated_packet_task_offload, ntddndis/NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, ntddndis/PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure [Network Drivers Starting with Windows Vista], PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, *PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -159,16 +159,14 @@ It is possible for a protocol driver to offload "mixed mode" packets which means
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8,Supported in NDIS 6.30 and later. Windows 8,Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/jj991956">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
 
  
 

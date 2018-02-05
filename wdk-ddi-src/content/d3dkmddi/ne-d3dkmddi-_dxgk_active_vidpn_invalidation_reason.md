@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e1f33307-1bb0-4cdd-aa47-954f6e551582
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, d3dkmddi/DXGK_AVIR_UNINITIALIZED, DmEnums_9a263431-3cae-4e33-a2f0-310ec88c1343.xml, d3dkmddi/DXGK_AVIR_USERMODE, d3dkmddi/DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, display.dxgk_active_vidpn_invalidation_reason, _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, d3dkmddi/DXGK_AVIR_HOTKEY, DXGK_AVIR_USERMODE, DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration [Display Devices], DXGK_AVIR_UNINITIALIZED, DXGK_AVIR_HOTKEY
+ms.keywords : d3dkmddi/DXGK_AVIR_USERMODE, DXGK_AVIR_USERMODE, d3dkmddi/DXGK_AVIR_UNINITIALIZED, DmEnums_9a263431-3cae-4e33-a2f0-310ec88c1343.xml, _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration [Display Devices], d3dkmddi/DXGK_AVIR_HOTKEY, display.dxgk_active_vidpn_invalidation_reason, DXGK_AVIR_HOTKEY, DXGK_AVIR_UNINITIALIZED, d3dkmddi/DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, DXGK_ACTIVE_VIDPN_INVALIDATION_REASON
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,9 +74,7 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

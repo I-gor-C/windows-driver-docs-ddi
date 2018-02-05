@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 4B044635-1088-4CED-87C7-4385E565A54A
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "*PHIDP_COLLECTION_DESC, HIDP_COLLECTION_DESC structure [Human Input Devices], hidpddi/PHIDP_COLLECTION_DESC, _HIDP_COLLECTION_DESC, PHIDP_COLLECTION_DESC structure pointer [Human Input Devices], hid.hidp_collection_desc, hidpddi/HIDP_COLLECTION_DESC, HIDP_COLLECTION_DESC, PHIDP_COLLECTION_DESC"
+ms.keywords : HIDP_COLLECTION_DESC structure [Human Input Devices], _HIDP_COLLECTION_DESC, hid.hidp_collection_desc, PHIDP_COLLECTION_DESC, *PHIDP_COLLECTION_DESC, hidpddi/PHIDP_COLLECTION_DESC, hidpddi/HIDP_COLLECTION_DESC, PHIDP_COLLECTION_DESC structure pointer [Human Input Devices], HIDP_COLLECTION_DESC
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HIDP_COLLECTION_DESC, *PHIDP_COLLECTION_DESC
+req.typenames : "*PHIDP_COLLECTION_DESC, HIDP_COLLECTION_DESC"
 ---
 
 # _HIDP_COLLECTION_DESC structure
@@ -99,9 +99,6 @@ Specifies the usage page of the usage ID specified by <b>Usage</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hidpddi.h (include Hidpddi.h) |
 
 ## See Also

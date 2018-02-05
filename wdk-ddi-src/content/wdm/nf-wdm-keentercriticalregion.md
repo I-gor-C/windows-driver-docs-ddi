@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 87826cc7-2710-4582-a324-365dd34e2d0d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeEnterCriticalRegion routine [Kernel-Mode Driver Architecture], wdm/KeEnterCriticalRegion, k105_cfa63781-e7c6-455a-8e99-4b20872a0b3f.xml, kernel.keentercriticalregion, KeEnterCriticalRegion
+ms.keywords : KeEnterCriticalRegion, wdm/KeEnterCriticalRegion, KeEnterCriticalRegion routine [Kernel-Mode Driver Architecture], kernel.keentercriticalregion, k105_cfa63781-e7c6-455a-8e99-4b20872a0b3f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -59,7 +59,7 @@ None
 
 ## Remarks
 
-A driver calls this routine to enter a critical region in which the execution of normal kernel APCs is deferred until this driver exits the critical region by calling the <a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a> routine. Any caller of <b>KeEnterCriticalRegion</b> should call <b>KeLeaveCriticalRegion</b> as quickly as possible after entering a critical region.
+A driver calls this routine to enter a critical region in which the execution of normal kernel APCs is deferred until this driver exits the critical region by calling the <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a> routine. Any caller of <b>KeEnterCriticalRegion</b> should call <b>KeLeaveCriticalRegion</b> as quickly as possible after entering a critical region.
 
 Highest-level drivers can call <b>KeEnterCriticalRegion</b> while running in the context of the thread that requested the current I/O operation.
 
@@ -74,24 +74,23 @@ For more information about APCs, see <a href="https://msdn.microsoft.com/library
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | CriticalRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport) |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
-
-<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn308550">ExEnterCriticalRegionAndAcquireResourceExclusive</a>
+<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn308551">ExReleaseResourceAndLeaveCriticalRegion</a>
+
+<a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn308550">ExEnterCriticalRegionAndAcquireResourceExclusive</a>
 
  
 

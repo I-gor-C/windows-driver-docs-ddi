@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 989ecf50-18c4-4977-b845-b3fea0cade47
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, netvista.ndis_tcp_ip_checksum_net_buffer_list_info, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, ndis/NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, tcpip_offload_ref_2ce657f6-a894-420b-bcb0-310819237c5b.xml
+ms.keywords : PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], tcpip_offload_ref_2ce657f6-a894-420b-bcb0-310819237c5b.xml, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_tcp_ip_checksum_net_buffer_list_info, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, ndis/PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, ndis/NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO
+req.typenames : "*PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO"
 ---
 
 # _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure
@@ -114,18 +114,16 @@ Before indicating up a receive TCP/IP packet on which it performs checksum tasks
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
 
-<a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>
-
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>
 
  
 

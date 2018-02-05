@@ -108,9 +108,7 @@ The <b>Status</b> member is set to one of the following values:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | kbdmou.h (include Kbdmou.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6186dac4-4797-48f2-bb32-40a0d501bac7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDI_COPY_DISCARD, d3dumddi/D3DDDI_COPY_NO_OVERWRITE, D3DDDI_COPY_DISCARD, D3DDDI_COPY_NO_OVERWRITE, display.d3dddi_copy_flags, D3DDDI_COPY_FLAGS, d3dumddi/D3DDDI_COPY_FLAGS, D3DDDI_COPY_FLAGS enumeration [Display Devices]
+ms.keywords : d3dumddi/D3DDDI_COPY_DISCARD, D3DDDI_COPY_FLAGS enumeration [Display Devices], d3dumddi/D3DDDI_COPY_NO_OVERWRITE, D3DDDI_COPY_DISCARD, D3DDDI_COPY_NO_OVERWRITE, D3DDDI_COPY_FLAGS, d3dumddi/D3DDDI_COPY_FLAGS, display.d3dddi_copy_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,5 @@ typedef enum D3DDDI_COPY_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |

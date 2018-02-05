@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 770962e3-0339-46f8-a789-7c9bbf9e058f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.dot11_association_completion_parameters, windot11/PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, Native_802.11_data_types_54cece34-410b-4c18-8657-47db6cab5518.xml, windot11/DOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : DOT11_ASSOCIATION_COMPLETION_PARAMETERS, netvista.dot11_association_completion_parameters, Native_802.11_data_types_54cece34-410b-4c18-8657-47db6cab5518.xml, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, windot11/PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/DOT11_ASSOCIATION_COMPLETION_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS
+req.typenames : "*PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -44,8 +44,8 @@ req.product : Windows 10 or later.
   operation performed by the 802.11 station with either an access point (AP) or peer station. The Native
   802.11 miniport driver includes a DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure when the miniport driver makes
   an 
-  <mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
-  NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link> status indication.
+  <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
+  NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a> status indication.
 
 ## Syntax
 ````
@@ -142,8 +142,8 @@ The
 
 </li>
 </ul>For more information about port authorization, see 
-     <mshelp:link keywords="netvista.port_based_network_access" tabindex="0">Port-Based Network
-     Access</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/port-based-network-access">Port-Based Network
+     Access</a>.
 
 `bReAssocReq`
 
@@ -218,11 +218,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_ASSOCIATION_COMPLETION_PARAMETERS_REVISION_1.
@@ -232,6 +227,11 @@ This member must be set to DOT11_ASSOCIATION_COMPLETION_PARAMETERS_REVISION_1.
 
 This member must be set to 
        <code>sizeof(DOT11_ASSOCIATION_COMPLETION_PARAMETERS)</code>.
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `MacAddr`
 
@@ -393,8 +393,8 @@ If the
 
 The offset of the last received 802.11 Beacon or Probe Response frames. The miniport driver must
       exclude the 802.11 MAC header for these frames when making the 
-      <mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
-      NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link> status indication.
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
+      NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a> status indication.
 
 This offset is relative to the start of the buffer, which contains the
       DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure.
@@ -419,14 +419,14 @@ A flag that specifies the quality of service (QoS) protocol that is currently ac
 
 
 
-#### DOT11_QOS_PROTOCOL_FLAG_WMM
-
-The NIC is using the 802.11 WMM QoS protocol.
-
-
 #### DOT11_QOS_PROTOCOL_FLAG_11E
 
 The NIC is using the 802.11e QoS protocol.
+
+
+#### DOT11_QOS_PROTOCOL_FLAG_WMM
+
+The NIC is using the 802.11 WMM QoS protocol.
 
 `uEncapTableOffset`
 
@@ -440,8 +440,8 @@ The miniport driver formats each entry in this list as a
       <a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a> structure.
 
 For more information about the EtherType encapsulation list, see 
-      <mshelp:link keywords="netvista.802_11_payload_encapsulation" tabindex="0">802.11 Payload
-      Encapsulation</mshelp:link>.
+      <a href="https://technet.microsoft.com/en-us/library/cc757419">802.11 Payload
+      Encapsulation</a>.
 
 `uEncapTableSize`
 
@@ -451,22 +451,22 @@ The length of the EtherType encapsulation list.
 
 The offset of a block of data in a proprietary format that is defined by the IHV. The IHV can use
       this data block for any purposes that are related to the 
-      <mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
-      NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link> status indication.
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
+      NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a> status indication.
 
 This offset is relative to the start of the buffer, which contains the
       DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure.
 
 If the miniport driver is not returning IHV data in the 
-      <mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
-      NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link> status indication, it must set 
+      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
+      NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a> status indication, it must set 
       <b>uIHVDataOffset</b> to zero.
 
 `uIHVDataSize`
 
 The length of the block of data that is used by the IHV for the 
-     <mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
-     NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link> status indication. If the miniport driver is not
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
+     NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a> status indication. If the miniport driver is not
      returning IHV data in this indication, it must set 
      <b>uIHVDataSize</b> to zero.
 
@@ -519,35 +519,33 @@ Management Frame Protection is negotiated when an access point (AP) and STA set 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of the Windows operating   systems. Available in Windows 8 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 
-<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569144">OID_DOT11_DESIRED_PHY_LIST</a>
-
-<a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-active-phy-list">OID_DOT11_ACTIVE_PHY_LIST</a>
 
 OID_DOT11_DESIRED_BSS_TYPE
 
-<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>
 
-<mshelp:link keywords="netvista.ndis_status_dot11_association_completion" tabindex="0">
-   NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</mshelp:link>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
+   NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a>
 
 <a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
 
+<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569144">OID_DOT11_DESIRED_PHY_LIST</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a>
 
  
 

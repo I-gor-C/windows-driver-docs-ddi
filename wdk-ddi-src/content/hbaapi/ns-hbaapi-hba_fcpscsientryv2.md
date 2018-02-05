@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 28f0118b-8c16-4075-8dc9-78e1e2636f02
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PHBA_FCPSCSIENTRYV2 structure pointer [Storage Devices], HBA_FCPSCSIENTRYV2 structure [Storage Devices], hbaapi/PHBA_FCPSCSIENTRYV2, HBA_FcpScsiEntryV2, hbaapi/HBA_FcpScsiEntryV2, HBA_FCPSCSIENTRYV2, structs-Fibre_b450dd9b-aeb7-4ba1-86df-4bdc6ef34e5a.xml, storage.hba_fcpscsientryv2, *PHBA_FCPSCSIENTRYV2, PHBA_FCPSCSIENTRYV2, HBA_FcpScsiEntryV2 structure [Storage Devices]
+ms.keywords : hbaapi/PHBA_FCPSCSIENTRYV2, PHBA_FCPSCSIENTRYV2, storage.hba_fcpscsientryv2, HBA_FCPSCSIENTRYV2, HBA_FcpScsiEntryV2 structure [Storage Devices], HBA_FcpScsiEntryV2, hbaapi/HBA_FcpScsiEntryV2, PHBA_FCPSCSIENTRYV2 structure pointer [Storage Devices], HBA_FCPSCSIENTRYV2 structure [Storage Devices], structs-Fibre_b450dd9b-aeb7-4ba1-86df-4bdc6ef34e5a.xml, *PHBA_FCPSCSIENTRYV2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,6 @@ The HBA_FcpScsiEntryV2 structure includes all of the information contained in th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also
@@ -82,9 +79,9 @@ The HBA_FcpScsiEntryV2 structure includes all of the information contained in th
 
 <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a>
 
-<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
-
 <a href="..\hbaapi\ns-hbaapi-hba_luid.md">HBA_LUID</a>
+
+<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
 
  
 

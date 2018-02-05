@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : eed2ed36-c081-44c7-857b-d2a9f608a022
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCollectionAdd method, wdfcollection/WdfCollectionAdd, DFCollectionObjectRef_76895387-58f4-46fc-b5d0-244408fe57b9.xml, wdf.wdfcollectionadd, kmdf.wdfcollectionadd, WdfCollectionAdd, PFN_WDFCOLLECTIONADD
+ms.keywords : WdfCollectionAdd, WdfCollectionAdd method, wdfcollection/WdfCollectionAdd, PFN_WDFCOLLECTIONADD, kmdf.wdfcollectionadd, DFCollectionObjectRef_76895387-58f4-46fc-b5d0-244408fe57b9.xml, wdf.wdfcollectionadd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,22 +99,21 @@ For more information about object collections, see <a href="https://docs.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfcollection.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfcollection\nf-wdfcollection-wdfcollectioncreate.md">WdfCollectionCreate</a>
+
 <a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremove.md">WdfCollectionRemove</a>
 
 <a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremoveitem.md">WdfCollectionRemoveItem</a>
-
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectioncreate.md">WdfCollectionCreate</a>
 
  
 

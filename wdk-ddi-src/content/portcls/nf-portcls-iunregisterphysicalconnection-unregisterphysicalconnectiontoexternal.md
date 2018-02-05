@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 250bf99c-d5fa-459b-bd94-d438368379f1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IUnregisterPhysicalConnection interface [Audio Devices], UnregisterPhysicalConnectionToExternal method, portcls/IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal, IUnregisterPhysicalConnection, IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal, UnregisterPhysicalConnectionToExternal, UnregisterPhysicalConnectionToExternal method [Audio Devices], IUnregisterPhysicalConnection interface, UnregisterPhysicalConnectionToExternal method [Audio Devices], audio.iunregisterphysicalconnection_unregisterphysicalconnectiontoexternal, audmp-routines_9c455ca4-88c6-46a3-9ec6-a5f176802947.xml
+ms.keywords : IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal, audmp-routines_9c455ca4-88c6-46a3-9ec6-a5f176802947.xml, UnregisterPhysicalConnectionToExternal method [Audio Devices], UnregisterPhysicalConnectionToExternal method [Audio Devices], IUnregisterPhysicalConnection interface, IUnregisterPhysicalConnection interface [Audio Devices], UnregisterPhysicalConnectionToExternal method, UnregisterPhysicalConnectionToExternal, audio.iunregisterphysicalconnection_unregisterphysicalconnectiontoexternal, portcls/IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal, IUnregisterPhysicalConnection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -88,14 +88,10 @@ For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

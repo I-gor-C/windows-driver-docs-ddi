@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 9F50CA34-DDEA-49E4-8149-B92D00476720
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 2/SerCx2TransactionTypeSystemDma, SERCX2_TRANSACTION_TYPE enumeration [Serial Ports], SerCx2TransactionTypeSystemDma, 2/SERCX2_TRANSACTION_TYPE, 2/SerCx2TransactionTypePio, SERCX2_TRANSACTION_TYPE, 2/SerCx2TransactionTypeCustom, SerCx2TransactionTypeDefault, 2/SerCx2TransactionTypeDefault, SerCx2TransactionTypeCustom, serports.sercx2_transaction_type, SerCx2TransactionTypePio, _SERCX2_TRANSACTION_TYPE
+ms.keywords : SERCX2_TRANSACTION_TYPE enumeration [Serial Ports], SerCx2TransactionTypeSystemDma, SerCx2TransactionTypeDefault, 2/SerCx2TransactionTypePio, _SERCX2_TRANSACTION_TYPE, 2/SerCx2TransactionTypeCustom, 2/SERCX2_TRANSACTION_TYPE, 2/SerCx2TransactionTypeDefault, SerCx2TransactionTypePio, 2/SerCx2TransactionTypeSystemDma, serports.sercx2_transaction_type, SerCx2TransactionTypeCustom, SERCX2_TRANSACTION_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -84,16 +84,13 @@ The <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | sercx.h |
 
 ## See Also
 
-<a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a>
-
 <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a>
+
+<a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a>
 
  
 

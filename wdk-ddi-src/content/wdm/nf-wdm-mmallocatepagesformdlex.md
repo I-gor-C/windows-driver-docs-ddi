@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f860c230-01ca-4c7f-8b67-5d92a80ff906
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MM_ALLOCATE_FROM_LOCAL_NODE_ONLY, k106_df4d4bea-4360-4755-841c-f39849228e9b.xml, MM_ALLOCATE_PREFER_CONTIGUOUS, MM_DONT_ZERO_ALLOCATION, MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS, MmAllocatePagesForMdlEx, MM_ALLOCATE_FULLY_REQUIRED, wdm/MmAllocatePagesForMdlEx, MmAllocatePagesForMdlEx routine [Kernel-Mode Driver Architecture], MM_ALLOCATE_NO_WAIT, kernel.mmallocatepagesformdlex
+ms.keywords : MmAllocatePagesForMdlEx, MM_ALLOCATE_FROM_LOCAL_NODE_ONLY, MM_DONT_ZERO_ALLOCATION, kernel.mmallocatepagesformdlex, MmAllocatePagesForMdlEx routine [Kernel-Mode Driver Architecture], MM_ALLOCATE_FULLY_REQUIRED, k106_df4d4bea-4360-4755-841c-f39849228e9b.xml, MM_ALLOCATE_REQUIRE_CONTIGUOUS_CHUNKS, MM_ALLOCATE_PREFER_CONTIGUOUS, MM_ALLOCATE_NO_WAIT, wdm/MmAllocatePagesForMdlEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -197,7 +197,7 @@ By default, the physical memory pages that <b>MmAllocatePagesForMdlEx</b> return
 
 Depending on how much physical memory is currently available in the requested ranges, <b>MmAllocatePagesForMdlEx</b> might return an MDL that describes less memory than was requested. The routine also might return <b>NULL</b> if no memory was allocated. The caller should check the amount of memory that is actually allocated to the MDL.
 
-The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocatePagesForMdlEx</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> to release the memory that is allocated for the MDL structure.
+The caller must use <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a> to release the memory pages that are described by an MDL that was created by <b>MmAllocatePagesForMdlEx</b>. After calling <b>MmFreePagesFromMdl</b>, the caller must also call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> to release the memory that is allocated for the MDL structure.
 
 By default, <b>MmAllocatePagesForMdlEx</b> fills the pages that it allocates with zeros. The caller can specify the MM_DONT_ZERO_ALLOCATION flag to override this default and to possibly improve performance.
 <div class="alert"><b>Note</b>    Memory that <b>MmAllocatePagesForMdlEx</b> allocates is uninitialized if you specify the MM_DONT_ZERO_ALLOCATION flag. A kernel-mode driver must first zero this memory if the driver is going to make the memory visible to user-mode software (to avoid leaking potentially privileged contents). For more information about this flag, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff556396">MM_ALLOCATE_XXX</a>.</div><div> </div>The maximum amount of memory that <b>MmAllocatePagesForMdlEx</b> can allocate in a single call is (4 gigabytes - PAGE_SIZE). The routine can satisfy an allocation request for this amount only if enough pages are available.
@@ -207,26 +207,25 @@ By default, <b>MmAllocatePagesForMdlEx</b> fills the pages that it allocates wit
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. You should use this routine instead of MmAllocatePagesForMdl on these operating systems. Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows. You should use this routine instead of MmAllocatePagesForMdl on these operating systems. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | IrqlMmApcLte |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
-
 <a href="..\wdm\nf-wdm-mmfreepagesfrommdl.md">MmFreePagesFromMdl</a>
 
-<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
-
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
 
 <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
 
  
 

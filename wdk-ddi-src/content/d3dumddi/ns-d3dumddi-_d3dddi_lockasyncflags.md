@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0e6dd14c-5192-4c4b-9dcb-716989d24588
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_lockasyncflags, D3DDDI_LOCKASYNCFLAGS, D3DDDI_LOCKASYNCFLAGS structure [Display Devices], D3D_other_Structs_765c2b3d-14e2-4eaf-978f-764263aa2a99.xml, _D3DDDI_LOCKASYNCFLAGS, d3dumddi/D3DDDI_LOCKASYNCFLAGS
+ms.keywords : D3DDDI_LOCKASYNCFLAGS, D3D_other_Structs_765c2b3d-14e2-4eaf-978f-764263aa2a99.xml, d3dumddi/D3DDDI_LOCKASYNCFLAGS, D3DDDI_LOCKASYNCFLAGS structure [Display Devices], display.d3dddi_lockasyncflags, _D3DDDI_LOCKASYNCFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,9 +67,7 @@ typedef struct _D3DDDI_LOCKASYNCFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

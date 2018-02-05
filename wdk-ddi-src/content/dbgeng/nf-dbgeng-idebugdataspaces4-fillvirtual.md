@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d55ccd38-00c7-491b-aadf-8b42b5e89600
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugDataSpaces3::FillVirtual, IDebugDataSpaces4, IDebugDataSpaces3 interface [Windows Debugging], FillVirtual method, FillVirtual method [Windows Debugging], IDebugDataSpaces2 interface, debugger.fillvirtual, IDebugDataSpaces2 interface [Windows Debugging], FillVirtual method, FillVirtual method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces_26ed83e1-6084-4826-bf6c-30be250d3e3f.xml, IDebugDataSpaces2::FillVirtual, IDebugDataSpaces4 interface [Windows Debugging], FillVirtual method, FillVirtual, IDebugDataSpaces3::FillVirtual, FillVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4::FillVirtual, dbgeng/IDebugDataSpaces4::FillVirtual, dbgeng/IDebugDataSpaces2::FillVirtual, FillVirtual method [Windows Debugging]
+ms.keywords : debugger.fillvirtual, IDebugDataSpaces2 interface [Windows Debugging], FillVirtual method, dbgeng/IDebugDataSpaces2::FillVirtual, FillVirtual, IDebugDataSpaces2::FillVirtual, dbgeng/IDebugDataSpaces3::FillVirtual, IDebugDataSpaces4 interface [Windows Debugging], FillVirtual method, IDebugDataSpaces4::FillVirtual, dbgeng/IDebugDataSpaces4::FillVirtual, IDebugDataSpaces_26ed83e1-6084-4826-bf6c-30be250d3e3f.xml, IDebugDataSpaces3 interface [Windows Debugging], FillVirtual method, FillVirtual method [Windows Debugging], IDebugDataSpaces2 interface, FillVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4, FillVirtual method [Windows Debugging], IDebugDataSpaces3::FillVirtual, FillVirtual method [Windows Debugging], IDebugDataSpaces3 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -107,24 +107,19 @@ If the final copy of the pattern will not completely fit into the memory range, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces2.md">IDebugDataSpaces2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces3.md">IDebugDataSpaces3</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugdataspaces2.md">IDebugDataSpaces2</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>
 
  
 

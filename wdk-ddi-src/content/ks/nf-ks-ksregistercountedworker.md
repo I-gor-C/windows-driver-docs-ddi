@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : acec8050-44bd-4082-9875-d504135e1b9f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsRegisterCountedWorker function [Streaming Media Devices], ks/KsRegisterCountedWorker, KsRegisterCountedWorker, stream.ksregistercountedworker, ksfunc_2d4b1740-9b91-420d-81be-a56034445893.xml
+ms.keywords : stream.ksregistercountedworker, ks/KsRegisterCountedWorker, KsRegisterCountedWorker function [Streaming Media Devices], ksfunc_2d4b1740-9b91-420d-81be-a56034445893.xml, KsRegisterCountedWorker
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This must be matched by a corresponding <a href="..\ks\nf-ks-ksunregisterworker.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

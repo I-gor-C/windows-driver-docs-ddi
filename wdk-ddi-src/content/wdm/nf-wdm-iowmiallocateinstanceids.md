@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c382689e-907c-473c-9ab1-da963d7f3ba3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_52b2c9a6-e9c2-4c9f-b6f1-43ec8c72056a.xml, IoWMIAllocateInstanceIds, kernel.iowmiallocateinstanceids, IoWMIAllocateInstanceIds routine [Kernel-Mode Driver Architecture], wdm/IoWMIAllocateInstanceIds
+ms.keywords : IoWMIAllocateInstanceIds, wdm/IoWMIAllocateInstanceIds, kernel.iowmiallocateinstanceids, k104_52b2c9a6-e9c2-4c9f-b6f1-43ec8c72056a.xml, IoWMIAllocateInstanceIds routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,12 +118,11 @@ If greater than one instance was requested in <i>InstanceCount</i> and the routi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 

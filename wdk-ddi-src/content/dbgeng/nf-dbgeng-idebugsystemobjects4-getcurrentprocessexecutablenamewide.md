@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 4b87adca-e838-471b-a600-1327253ee45d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, dbgeng/IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, IDebugSystemObjects4, debugger.getcurrentprocessexecutablenamewide, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessExecutableNameWide method, GetCurrentProcessExecutableNameWide, GetCurrentProcessExecutableNameWide method [Windows Debugging], GetCurrentProcessExecutableNameWide method [Windows Debugging], IDebugSystemObjects4 interface
+ms.keywords : dbgeng/IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, debugger.getcurrentprocessexecutablenamewide, IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, GetCurrentProcessExecutableNameWide method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessExecutableNameWide method, GetCurrentProcessExecutableNameWide method [Windows Debugging], GetCurrentProcessExecutableNameWide, IDebugSystemObjects4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -110,11 +110,6 @@ For more information about processes, see <a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

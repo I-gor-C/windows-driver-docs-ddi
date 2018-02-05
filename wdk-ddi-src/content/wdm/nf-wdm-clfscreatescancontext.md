@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f3392e43-8463-4d21-9206-34d09f3c7f59
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsCreateScanContext routine [Kernel-Mode Driver Architecture], Clfs_475944a4-914e-4532-a066-ee7ff9109756.xml, kernel.clfscreatescancontext, wdm/ClfsCreateScanContext, ClfsCreateScanContext
+ms.keywords : wdm/ClfsCreateScanContext, Clfs_475944a4-914e-4532-a066-ee7ff9109756.xml, ClfsCreateScanContext, kernel.clfscreatescancontext, ClfsCreateScanContext routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -129,14 +129,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

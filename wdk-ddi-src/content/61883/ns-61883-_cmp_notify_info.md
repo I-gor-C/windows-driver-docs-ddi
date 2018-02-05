@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 7451B01F-D925-4882-9E6B-EEA79F54C55B
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PCMP_NOTIFY_INFO structure pointer [Buses], _CMP_NOTIFY_INFO, 61883/PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO, PCMP_NOTIFY_INFO, 61883/CMP_NOTIFY_INFO, IEEE.cmp_notify_info, *PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO structure [Buses]
+ms.keywords : 61883/PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO, CMP_NOTIFY_INFO structure [Buses], _CMP_NOTIFY_INFO, 61883/CMP_NOTIFY_INFO, PCMP_NOTIFY_INFO, *PCMP_NOTIFY_INFO, PCMP_NOTIFY_INFO structure pointer [Buses], IEEE.cmp_notify_info
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CMP_NOTIFY_INFO, *PCMP_NOTIFY_INFO
+req.typenames : "*PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO"
 ---
 
 # _CMP_NOTIFY_INFO structure
@@ -69,9 +69,6 @@ A plug control register.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

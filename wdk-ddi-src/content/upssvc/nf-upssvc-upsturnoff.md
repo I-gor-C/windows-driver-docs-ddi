@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 17ae946a-e57e-48bd-9213-cf47db2cba64
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UPSTurnOff function [Battery Devices], UPS_fns_ab585909-7eee-470f-b33f-6045f839ceed.xml, battery.upsturnoff, upssvc/UPSTurnOff, UPSTurnOff
+ms.keywords : UPSTurnOff function [Battery Devices], battery.upsturnoff, UPS_fns_ab585909-7eee-470f-b33f-6045f839ceed.xml, UPSTurnOff, upssvc/UPSTurnOff
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,6 @@ On the other hand, the function must not turn off power from a UPS system that d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

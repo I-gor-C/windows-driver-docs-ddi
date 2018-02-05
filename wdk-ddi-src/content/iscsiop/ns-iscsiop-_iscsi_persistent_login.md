@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c43ee3dd-552a-41ab-9b4f-01611e44f453
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.iscsi_persistent_login, _ISCSI_Persistent_Login, iscsiop/PISCSI_Persistent_Login, PISCSI_Persistent_Login, PISCSI_Persistent_Login structure pointer [Storage Devices], ISCSI_Persistent_Login structure [Storage Devices], iscsiop/ISCSI_Persistent_Login, *PISCSI_Persistent_Login, structs-iSCSI_86b54cb5-df75-47c0-8dc4-337a5f46bea0.xml, ISCSI_Persistent_Login
+ms.keywords : iscsiop/PISCSI_Persistent_Login, PISCSI_Persistent_Login structure pointer [Storage Devices], *PISCSI_Persistent_Login, iscsiop/ISCSI_Persistent_Login, PISCSI_Persistent_Login, ISCSI_Persistent_Login, _ISCSI_Persistent_Login, structs-iSCSI_86b54cb5-df75-47c0-8dc4-337a5f46bea0.xml, ISCSI_Persistent_Login structure [Storage Devices], storage.iscsi_persistent_login
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,22 +104,19 @@ The size, in bytes, of the string in <b>Username</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
-
-<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561556">ISCSI_Persistent_Login WMI Class</a>
 
 <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a>
 
+<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
+
 <a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 
  
 

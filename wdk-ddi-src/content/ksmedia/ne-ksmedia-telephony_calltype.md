@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8CF2CAF2-29F2-4B8B-B23F-B423392B2DAF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.telephony_calltype, TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN, TELEPHONY_CALLTYPE, TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE, ksmedia/TELEPHONY_CALLTYPE, ksmedia/TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE, TELEPHONY_CALLTYPE enumeration [Audio Devices], ksmedia/TELEPHONY_CALLTYPE_CIRCUITSWITCHED, TELEPHONY_CALLTYPE_CIRCUITSWITCHED, ksmedia/TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN
+ms.keywords : audio.telephony_calltype, ksmedia/TELEPHONY_CALLTYPE_CIRCUITSWITCHED, ksmedia/TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE, TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN, ksmedia/TELEPHONY_CALLTYPE, TELEPHONY_CALLTYPE_CIRCUITSWITCHED, TELEPHONY_CALLTYPE, TELEPHONY_CALLTYPE_PACKETSWITCHED_LTE, TELEPHONY_CALLTYPE enumeration [Audio Devices], ksmedia/TELEPHONY_CALLTYPE_PACKETSWITCHED_WLAN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,9 +74,7 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10,Windows 10 Mobile Windows 10,Windows 10 Mobile |
 | **Header** | ksmedia.h |
 
 ## See Also

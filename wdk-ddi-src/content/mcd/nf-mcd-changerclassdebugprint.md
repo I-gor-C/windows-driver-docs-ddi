@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 452377f1-a926-4f43-8168-bea11622902e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerClassDebugPrint, mcd/ChangerClassDebugPrint, storage.changerclassdebugprint, ChangerClassDebugPrint function [Storage Devices], chgrclas_3372885c-482b-4dab-87ae-e59668e91950.xml
+ms.keywords : ChangerClassDebugPrint, mcd/ChangerClassDebugPrint, ChangerClassDebugPrint function [Storage Devices], chgrclas_3372885c-482b-4dab-87ae-e59668e91950.xml, storage.changerclassdebugprint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,7 +61,7 @@ Indicates how verbose debug information should be. Caller must assign this param
 
 Caller can specify a message to be included with the debugging information that is printed by assigning a printable ASCII character string to this parameter.
 
-``
+`Arg1`
 
 
 
@@ -74,11 +74,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mcd.lib |

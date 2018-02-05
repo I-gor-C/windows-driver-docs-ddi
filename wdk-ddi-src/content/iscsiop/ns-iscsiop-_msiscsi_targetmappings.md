@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6bddeaeb-9913-4c90-b8ac-3a9f7b384b80
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PMSiSCSI_TargetMappings, structs-iSCSI_b8a3267a-8bab-4be6-9f3c-4086cc54f0f5.xml, storage.msiscsi_targetmappings, iscsiop/PMSiSCSI_TargetMappings, iscsiop/MSiSCSI_TargetMappings, PMSiSCSI_TargetMappings structure pointer [Storage Devices], *PMSiSCSI_TargetMappings, _MSiSCSI_TargetMappings, MSiSCSI_TargetMappings structure [Storage Devices], MSiSCSI_TargetMappings
+ms.keywords : MSiSCSI_TargetMappings structure [Storage Devices], PMSiSCSI_TargetMappings, *PMSiSCSI_TargetMappings, storage.msiscsi_targetmappings, PMSiSCSI_TargetMappings structure pointer [Storage Devices], _MSiSCSI_TargetMappings, iscsiop/PMSiSCSI_TargetMappings, MSiSCSI_TargetMappings, structs-iSCSI_b8a3267a-8bab-4be6-9f3c-4086cc54f0f5.xml, iscsiop/MSiSCSI_TargetMappings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,18 +76,15 @@ You must implement this class.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563147">MSiSCSI_TargetMappings WMI Class</a>
 
 <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
+
+<a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d9703786-c46e-4466-a229-9ed0348cb45e
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsInstallBusEnumInterface, KsInstallBusEnumInterface function [Streaming Media Devices], stream.ksinstallbusenuminterface, swenum/KsInstallBusEnumInterface, ksfunc_6c26cb96-610b-4030-9f9b-ef878fdfe086.xml
+ms.keywords : swenum/KsInstallBusEnumInterface, ksfunc_6c26cb96-610b-4030-9f9b-ef878fdfe086.xml, KsInstallBusEnumInterface, stream.ksinstallbusenuminterface, KsInstallBusEnumInterface function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,20 +71,15 @@ The <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is assumed to contain a SWENUM_INS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | swenum.h (include Swenum.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 
-<a href="..\swenum\nf-swenum-ksremovebusenuminterface.md">KsRemoveBusEnumInterface</a>
-
 <a href="..\swenum\ns-swenum-_swenum_install_interface.md">SWENUM_INSTALL_INTERFACE</a>
+
+<a href="..\swenum\nf-swenum-ksremovebusenuminterface.md">KsRemoveBusEnumInterface</a>
 
  
 

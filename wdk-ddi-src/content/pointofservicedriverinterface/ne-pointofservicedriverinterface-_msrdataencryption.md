@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 3e587242-2d7e-4b1f-8fcd-e0acada91524
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_MsrDataEncryption, MsrDataEncryption, MsrDataEncryption_None, pointofservicedriverinterface/MsrDataEncryption_None, pointofservicedriverinterface/MsrDataEncryption, pointofservicedriverinterface/MsrDataEncryption_AES, pointofservicedriverinterface/MsrDataEncryption_3DEA_DUKPT, MsrDataEncryption_AES, MsrDataEncryption_ExtendedBase, pos.msrdataencryption, MsrDataEncryption enumeration, MsrDataEncryption_3DEA_DUKPT, pointofservicedriverinterface/MsrDataEncryption_ExtendedBase"
+ms.keywords : MsrDataEncryption_None, MsrDataEncryption, pointofservicedriverinterface/MsrDataEncryption, pointofservicedriverinterface/MsrDataEncryption_None, MsrDataEncryption enumeration, pointofservicedriverinterface/MsrDataEncryption_3DEA_DUKPT, _MsrDataEncryption, pointofservicedriverinterface/MsrDataEncryption_ExtendedBase, pointofservicedriverinterface/MsrDataEncryption_AES, MsrDataEncryption_AES, MsrDataEncryption_ExtendedBase, pos.msrdataencryption, MsrDataEncryption_3DEA_DUKPT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,4 @@ typedef enum _MsrDataEncryption {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

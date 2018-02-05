@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6041b96e-2364-4592-9bc5-de4fb1b36957
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfusbinterfacegetnumendpoints, PFN_WDFUSBINTERFACEGETNUMENDPOINTS, wdfusb/WdfUsbInterfaceGetNumEndpoints, WdfUsbInterfaceGetNumEndpoints method, wdf.wdfusbinterfacegetnumendpoints, WdfUsbInterfaceGetNumEndpoints, DFUsbRef_e0c08e93-b09f-40d0-9958-e4e51d7b887d.xml
+ms.keywords : wdfusb/WdfUsbInterfaceGetNumEndpoints, WdfUsbInterfaceGetNumEndpoints method, WdfUsbInterfaceGetNumEndpoints, wdf.wdfusbinterfacegetnumendpoints, DFUsbRef_e0c08e93-b09f-40d0-9958-e4e51d7b887d.xml, PFN_WDFUSBINTERFACEGETNUMENDPOINTS, kmdf.wdfusbinterfacegetnumendpoints
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,12 +78,11 @@ For more information about the <b>WdfUsbInterfaceGetNumEndpoints</b> method and 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 

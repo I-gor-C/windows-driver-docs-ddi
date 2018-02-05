@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 7d3f743e-2422-474d-aaad-4386e0dc100a
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpFreeTree, bltooth.sdpfreetree, SdpFreeTree function [Bluetooth Devices], sdplib/SdpFreeTree, bth_funcs_526ed9cd-2c07-4c1f-a420-dec6fe930e44.xml
+ms.keywords : bth_funcs_526ed9cd-2c07-4c1f-a420-dec6fe930e44.xml, SdpFreeTree, bltooth.sdpfreetree, sdplib/SdpFreeTree, SdpFreeTree function [Bluetooth Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,32 +79,29 @@ Callers should perform an
 
 Bluetooth profile drivers can obtain a pointer to the 
     <b>SdpFreeTree</b> function through the 
-    <mshelp:link keywords="bltooth.bthddi_sdp_node_interface" tabindex="0"><b>
-    BTHDDI_SDP_NODE_INTERFACE</b></mshelp:link> structure.
+    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">
+    BTHDDI_SDP_NODE_INTERFACE</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
 
 <a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
 
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 
+<a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>
+
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 
-<a href="..\sdplib\nf-sdplib-sdpcreatenodetree.md">SdpCreateNodeTree</a>
+<a href="..\bthsdpddi\nc-bthsdpddi-pconvertstreamtotree.md">SdpConvertStreamToTree</a>
 
  
 

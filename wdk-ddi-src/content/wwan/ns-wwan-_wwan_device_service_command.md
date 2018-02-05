@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 475D7ECF-B8A8-445D-8ED7-029BD57C8C48
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_DEVICE_SERVICE_COMMAND, _WWAN_DEVICE_SERVICE_COMMAND, WWAN_DEVICE_SERVICE_COMMAND, PWWAN_DEVICE_SERVICE_COMMAND, PWWAN_DEVICE_SERVICE_COMMAND structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_DEVICE_SERVICE_COMMAND, *PWWAN_DEVICE_SERVICE_COMMAND, netvista.wwan_device_service_command, WWAN_DEVICE_SERVICE_COMMAND structure [Network Drivers Starting with Windows Vista]
+ms.keywords : wwan/PWWAN_DEVICE_SERVICE_COMMAND, _WWAN_DEVICE_SERVICE_COMMAND, PWWAN_DEVICE_SERVICE_COMMAND, *PWWAN_DEVICE_SERVICE_COMMAND, WWAN_DEVICE_SERVICE_COMMAND, netvista.wwan_device_service_command, PWWAN_DEVICE_SERVICE_COMMAND structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_DEVICE_SERVICE_COMMAND, WWAN_DEVICE_SERVICE_COMMAND structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_DEVICE_SERVICE_COMMAND, WWAN_DEVICE_SERVICE_COMMAND"
+req.typenames : WWAN_DEVICE_SERVICE_COMMAND, *PWWAN_DEVICE_SERVICE_COMMAND
 req.product : Windows 10 or later.
 ---
 
@@ -72,9 +72,7 @@ Device service command OIDs use this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

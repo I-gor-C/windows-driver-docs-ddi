@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 726ce165-fd07-4dd3-a004-8081481340a1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_VideoTransferMatrix_BT709, dxvaref_82624d1d-650f-41a2-a8d2-fb8c9936caab.xml, DXVA_VideoTransferMatrix, dxva/DXVA_VideoTransferMatrixShift, dxva/DXVA_VideoTransferMatrix_BT601, dxva/DXVA_VideoTransferMatrix, _DXVA_VideoTransferMatrix, dxva/DXVA_VideoTransferMatrixMask, DXVA_VideoTransferMatrix_Unknown, dxva/DXVA_VideoTransferMatrix_Unknown, display.dxva_videotransfermatrix, DXVA_VideoTransferMatrixShift, DXVA_VideoTransferMatrixMask, DXVA_VideoTransferMatrix_BT709, DXVA_VideoTransferMatrix enumeration [Display Devices], dxva/DXVA_VideoTransferMatrix_SMPTE240M, DXVA_VideoTransferMatrix_SMPTE240M, DXVA_VideoTransferMatrix_BT601
+ms.keywords : dxva/DXVA_VideoTransferMatrix, DXVA_VideoTransferMatrix_BT601, _DXVA_VideoTransferMatrix, dxva/DXVA_VideoTransferMatrix_BT601, dxva/DXVA_VideoTransferMatrixShift, DXVA_VideoTransferMatrix, DXVA_VideoTransferMatrix_SMPTE240M, dxva/DXVA_VideoTransferMatrix_SMPTE240M, DXVA_VideoTransferMatrix enumeration [Display Devices], DXVA_VideoTransferMatrixShift, DXVA_VideoTransferMatrix_Unknown, DXVA_VideoTransferMatrix_BT709, dxvaref_82624d1d-650f-41a2-a8d2-fb8c9936caab.xml, dxva/DXVA_VideoTransferMatrixMask, display.dxva_videotransfermatrix, DXVA_VideoTransferMatrixMask, dxva/DXVA_VideoTransferMatrix_Unknown, dxva/DXVA_VideoTransferMatrix_BT709
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -95,9 +95,7 @@ One of the enumerators of DXVA_VideoTransferMatrix can be specified in the <b>Vi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

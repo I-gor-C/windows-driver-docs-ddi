@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e93491c1-bd6d-4d89-b55f-10439b0f5eec
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_a00691e6-cae6-40ae-9776-1b6d09e01d73.xml, stream.ksfilteraddevent, KsFilterAddEvent function [Streaming Media Devices], ks/KsFilterAddEvent, KsFilterAddEvent
+ms.keywords : ks/KsFilterAddEvent, avfunc_a00691e6-cae6-40ae-9776-1b6d09e01d73.xml, stream.ksfilteraddevent, KsFilterAddEvent, KsFilterAddEvent function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,11 @@ This function is an inline function call to <a href="..\ks\nf-ks-ksaddevent.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

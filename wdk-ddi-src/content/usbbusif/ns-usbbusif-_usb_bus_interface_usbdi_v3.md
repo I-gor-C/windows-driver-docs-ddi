@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 1183f584-8dfa-4eea-b494-3a2e23ec0294
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USB_BUS_INTERFACE_USBDI_V3 structure [Buses], USB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3 structure pointer [Buses], _USB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, buses.usb_bus_interface_usbdi_v3, *PUSB_BUS_INTERFACE_USBDI_V3, usbbusif/USB_BUS_INTERFACE_USBDI_V3, usbbusif/PUSB_BUS_INTERFACE_USBDI_V3
+ms.keywords : "_USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3 structure [Buses], USB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, usbbusif/PUSB_BUS_INTERFACE_USBDI_V3, buses.usb_bus_interface_usbdi_v3, PUSB_BUS_INTERFACE_USBDI_V3 structure pointer [Buses], usbbusif/USB_BUS_INTERFACE_USBDI_V3"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -170,16 +170,14 @@ The routines in this structure must be callable at IRQL &gt;= DISPATCH_LEVEL.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows Vista and later operating systems. Windows Vista and later operating systems. |
 | **Header** | usbbusif.h (include Usbbusif.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/1b571ee0-d47f-40b6-8beb-d57b49ae3ac8">Bus Driver Interface Routines for USB Client Drivers</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+
+<a href="https://msdn.microsoft.com/1b571ee0-d47f-40b6-8beb-d57b49ae3ac8">Bus Driver Interface Routines for USB Client Drivers</a>
 
  
 

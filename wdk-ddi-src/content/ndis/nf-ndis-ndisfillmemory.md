@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6d974c56-5925-4ad5-a3c0-0c17e8488431
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfillmemory, ndis/NdisFillMemory, NdisFillMemory macro [Network Drivers Starting with Windows Vista], ndis_memory_ref_c1411624-0e7b-40e2-9812-4426b2a9f2bc.xml, NdisFillMemory
+ms.keywords : NdisFillMemory, netvista.ndisfillmemory, NdisFillMemory macro [Network Drivers Starting with Windows Vista], ndis/NdisFillMemory, ndis_memory_ref_c1411624-0e7b-40e2-9812-4426b2a9f2bc.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -82,14 +82,11 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlFillMemory instead. Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlFillMemory instead. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | See Remarks section |
-| **DDI compliance rules** |  |
 
 ## See Also
 

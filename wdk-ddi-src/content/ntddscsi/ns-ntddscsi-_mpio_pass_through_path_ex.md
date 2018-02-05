@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : DAEA7A9C-3ACD-49E5-A634-A844D9694412
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddscsi/PMPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX, storage.mpio_pass_through_path_ex, MPIO_PASS_THROUGH_PATH_EX structure [Storage Devices], _MPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX structure pointer [Storage Devices], ntddscsi/MPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX
+ms.keywords : PMPIO_PASS_THROUGH_PATH_EX, ntddscsi/PMPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX, storage.mpio_pass_through_path_ex, MPIO_PASS_THROUGH_PATH_EX, _MPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX structure pointer [Storage Devices], ntddscsi/MPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,16 +90,10 @@ Should be zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
 
 ## See Also
-
-<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct_ex.md">SCSI_PASS_THROUGH_DIRECT_EX</a>
-
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path_ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_EX</a>
 
@@ -107,9 +101,13 @@ Should be zero.
 
 <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a>
 
-<a href="..\srb\ns-srb-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a>
+
+<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
+
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct_ex.md">SCSI_PASS_THROUGH_DIRECT_EX</a>
 
  
 

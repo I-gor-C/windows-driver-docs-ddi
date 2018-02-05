@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 15AA7E06-DD7F-46B4-B2C2-604EA5150F7D
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure pointer [ACPI Devices], ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpiioct/ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure [ACPI Devices], acpi.acpi_device_information_output_buffer, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpi.acpi_get_device_information_output_buffer, acpiioct/PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
+ms.keywords : acpiioct/PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpiioct/ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpi.acpi_device_information_output_buffer, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure pointer [ACPI Devices], _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure [ACPI Devices], acpi.acpi_get_device_information_output_buffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -153,9 +153,7 @@ A string of <b>InstanceIDLength</b> in length which contains a number that uniqu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 and later versions of Windows. Windows 8 and later versions of Windows. |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
 ## See Also

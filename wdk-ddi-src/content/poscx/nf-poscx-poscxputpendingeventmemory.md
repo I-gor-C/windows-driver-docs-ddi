@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : DF9CA4A8-4B2A-4DED-9514-422AC5E0940D
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : poscx/PosCxPutPendingEventMemory, PosCxPutPendingEventMemory, pos.poscxputpendingeventmemory, PosCxPutPendingEventMemory function
+ms.keywords : poscx/PosCxPutPendingEventMemory, pos.poscxputpendingeventmemory, PosCxPutPendingEventMemory, PosCxPutPendingEventMemory function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,14 +106,9 @@ Possible return values are:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

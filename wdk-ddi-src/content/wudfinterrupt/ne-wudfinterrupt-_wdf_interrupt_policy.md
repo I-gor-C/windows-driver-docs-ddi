@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 92E2A992-8A0B-4E0F-B615-DC6E30E4A227
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfinterrupt/WdfIrqPolicySpreadMessagesAcrossAllProcessors, WdfIrqPolicySpreadMessagesAcrossAllProcessors, WDF_INTERRUPT_POLICY, WdfIrqPolicySpecifiedProcessors, wudfinterrupt/WdfIrqPolicyMachineDefault, *PWDF_INTERRUPT_POLICY, umdf.wdf_interrupt_policy, WdfIrqPolicyAllProcessorsInMachine, wudfinterrupt/WdfIrqPolicyAllCloseProcessors, wudfinterrupt/PWDF_INTERRUPT_POLICY, WdfIrqPolicyAllCloseProcessors, PWDF_INTERRUPT_POLICY enumeration pointer, WdfIrqPolicyOneCloseProcessor, WDF_INTERRUPT_POLICY enumeration, WdfIrqPolicyMachineDefault, wudfinterrupt/WDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicyOneCloseProcessor, PWDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicySpecifiedProcessors, wudfinterrupt/WdfIrqPolicyAllProcessorsInMachine, wdf.wdf_interrupt_policy_umdf, _WDF_INTERRUPT_POLICY
+ms.keywords : WdfIrqPolicyAllProcessorsInMachine, WdfIrqPolicyMachineDefault, WDF_INTERRUPT_POLICY enumeration, _WDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicyOneCloseProcessor, WDF_INTERRUPT_POLICY, wudfinterrupt/WDF_INTERRUPT_POLICY, PWDF_INTERRUPT_POLICY enumeration pointer, WdfIrqPolicyAllCloseProcessors, PWDF_INTERRUPT_POLICY, wdf.wdf_interrupt_policy_umdf, *PWDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicyAllCloseProcessors, wudfinterrupt/WdfIrqPolicyMachineDefault, wudfinterrupt/WdfIrqPolicySpecifiedProcessors, umdf.wdf_interrupt_policy, wudfinterrupt/WdfIrqPolicySpreadMessagesAcrossAllProcessors, WdfIrqPolicySpreadMessagesAcrossAllProcessors, WdfIrqPolicySpecifiedProcessors, wudfinterrupt/PWDF_INTERRUPT_POLICY, wudfinterrupt/WdfIrqPolicyAllProcessorsInMachine, WdfIrqPolicyOneCloseProcessor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_POLICY, WDF_INTERRUPT_POLICY"
+req.typenames : WDF_INTERRUPT_POLICY, *PWDF_INTERRUPT_POLICY
 req.product : Windows 10 or later.
 ---
 
@@ -98,8 +98,6 @@ The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_policy.md">WDF_INT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
 

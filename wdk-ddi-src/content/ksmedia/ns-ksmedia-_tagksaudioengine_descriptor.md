@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 6691AB8B-EC6E-483B-A10A-6F9C5A97FEC9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : KSAUDIOENGINE_DESCRIPTOR structure [Audio Devices], PKSAUDIOENGINE_DESCRIPTOR, ksmedia/KSAUDIOENGINE_DESCRIPTOR, PKSAUDIOENGINE_DESCRIPTOR structure pointer [Audio Devices], *PKSAUDIOENGINE_DESCRIPTOR, ksmedia/PKSAUDIOENGINE_DESCRIPTOR, audio.ksaudioengine_descriptor, _tagKSAUDIOENGINE_DESCRIPTOR, KSAUDIOENGINE_DESCRIPTOR
+ms.keywords : KSAUDIOENGINE_DESCRIPTOR structure [Audio Devices], KSAUDIOENGINE_DESCRIPTOR, _tagKSAUDIOENGINE_DESCRIPTOR, audio.ksaudioengine_descriptor, PKSAUDIOENGINE_DESCRIPTOR, *PKSAUDIOENGINE_DESCRIPTOR, ksmedia/PKSAUDIOENGINE_DESCRIPTOR, ksmedia/KSAUDIOENGINE_DESCRIPTOR, PKSAUDIOENGINE_DESCRIPTOR structure pointer [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSAUDIOENGINE_DESCRIPTOR, KSAUDIOENGINE_DESCRIPTOR"
+req.typenames : KSAUDIOENGINE_DESCRIPTOR, *PKSAUDIOENGINE_DESCRIPTOR
 ---
 
 # _tagKSAUDIOENGINE_DESCRIPTOR structure
@@ -69,9 +69,7 @@ Specifies the ID of the pin factory that is connected to the audio engine node t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h |
 
 ## See Also

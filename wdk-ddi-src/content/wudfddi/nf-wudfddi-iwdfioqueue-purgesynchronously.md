@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a714dffd-ca88-40cf-95ef-cf15384e0c02
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.iwdfioqueue_purgesynchronously, wudfddi/IWDFIoQueue::PurgeSynchronously, PurgeSynchronously method, IWDFIoQueue interface, IWDFIoQueue, PurgeSynchronously, PurgeSynchronously method, IWDFIoQueue::PurgeSynchronously, umdf.iwdfioqueue_purgesynchronously, IWDFIoQueue interface, PurgeSynchronously method, UMDFQueueObjectRef_c146c969-5b34-4aa0-af8e-9edec10f4c46.xml
+ms.keywords : PurgeSynchronously method, IWDFIoQueue interface, IWDFIoQueue interface, PurgeSynchronously method, PurgeSynchronously, wudfddi/IWDFIoQueue::PurgeSynchronously, IWDFIoQueue, umdf.iwdfioqueue_purgesynchronously, PurgeSynchronously method, UMDFQueueObjectRef_c146c969-5b34-4aa0-af8e-9edec10f4c46.xml, wdf.iwdfioqueue_purgesynchronously, IWDFIoQueue::PurgeSynchronously
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -68,22 +68,20 @@ The <b>PurgeSynchronously</b> method is a synchronous version of the <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558962">IWDFIoQueue::Purge</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556903">IRequestCallbackCancel::OnCancel</a>
 
  
 

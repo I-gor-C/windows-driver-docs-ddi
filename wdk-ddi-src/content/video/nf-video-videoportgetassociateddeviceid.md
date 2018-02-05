@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 6c40f98b-4d93-4ee8-8217-51e6f1170cf8
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortGetAssociatedDeviceID, video/VideoPortGetAssociatedDeviceID, VideoPort_Functions_56a3fa57-fd1a-4b45-8de7-ee9450a525f4.xml, VideoPortGetAssociatedDeviceID function [Display Devices], display.videoportgetassociateddeviceid
+ms.keywords : VideoPortGetAssociatedDeviceID, display.videoportgetassociateddeviceid, VideoPortGetAssociatedDeviceID function [Display Devices], VideoPort_Functions_56a3fa57-fd1a-4b45-8de7-ee9450a525f4.xml, video/VideoPortGetAssociatedDeviceID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,11 +69,9 @@ Pointer to the child device object, a <a href="https://msdn.microsoft.com/139a10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 87139670-9b51-4ced-9624-2ec9f4726a84
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : StartOperation method [Print Devices], IPrintPipelineFilter interface, print.iprintpipelinefilter_startoperation, filterpipeline/IPrintPipelineFilter::StartOperation, IPrintPipelineFilter interface [Print Devices], StartOperation method, IPrintPipelineFilter::StartOperation, IPrintPipelineFilter, filterpipeline_9040ff14-d052-4360-bb31-b171581c14b6.xml, StartOperation method [Print Devices], StartOperation
+ms.keywords : print.iprintpipelinefilter_startoperation, filterpipeline/IPrintPipelineFilter::StartOperation, StartOperation method [Print Devices], IPrintPipelineFilter, StartOperation, StartOperation method [Print Devices], IPrintPipelineFilter interface, filterpipeline_9040ff14-d052-4360-bb31-b171581c14b6.xml, IPrintPipelineFilter::StartOperation, IPrintPipelineFilter interface [Print Devices], StartOperation method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ A filter returns the <code>StartOperation</code> call only when the filter proce
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

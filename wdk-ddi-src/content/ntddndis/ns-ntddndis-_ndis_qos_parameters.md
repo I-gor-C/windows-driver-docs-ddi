@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 83eb72a8-d35b-445d-a207-c14a3bedd308
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_qos_parameters, ntddndis/PNDIS_QOS_PARAMETERS, PNDIS_QOS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_QOS_PARAMETERS, _NDIS_QOS_PARAMETERS, PNDIS_QOS_PARAMETERS, NDIS_QOS_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_QOS_PARAMETERS
+ms.keywords : NDIS_QOS_PARAMETERS, ntddndis/PNDIS_QOS_PARAMETERS, NDIS_QOS_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_qos_parameters, ntddndis/NDIS_QOS_PARAMETERS, PNDIS_QOS_PARAMETERS, _NDIS_QOS_PARAMETERS, PNDIS_QOS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_QOS_PARAMETERS, PNDIS_QOS_PARAMETERS
+req.typenames : PNDIS_QOS_PARAMETERS, NDIS_QOS_PARAMETERS
 ---
 
 # _NDIS_QOS_PARAMETERS structure
@@ -172,11 +172,6 @@ Each element of the <b>TsaAssignmentTable</b> array contains one of the followin
 
 
 
-#### NDIS_QOS_TSA_STRICT
-
-The strict priority algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="https://msdn.microsoft.com/7C7A34CA-673C-4EFC-970D-08458AA83EAD">Strict Priority Algorithm</a>.
-
-
 #### NDIS_QOS_TSA_CBS
 
 The IEEE 802.1Qav credit-based shaper (CBS) algorithm must be used as the TSA for the traffic class.
@@ -185,6 +180,11 @@ The IEEE 802.1Qav credit-based shaper (CBS) algorithm must be used as the TSA fo
 #### NDIS_QOS_TSA_ETS
 
 The IEEE 802.1Qaz Enhanced Transmission Selection (ETS) algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="https://msdn.microsoft.com/952ECB1E-96AD-4717-8E49-68558E7E9AD4">Enhanced Transmission Selection (ETS) Algorithm</a>.
+
+
+#### NDIS_QOS_TSA_STRICT
+
+The strict priority algorithm must be used as the TSA for the traffic class. For more information about this TSA, see <a href="https://msdn.microsoft.com/7C7A34CA-673C-4EFC-970D-08458AA83EAD">Strict Priority Algorithm</a>.
 
 ## Remarks
 The <b>NDIS_QOS_PARAMETERS</b> structure specifies the parameters that define how the network adapter prioritizes transmit, or <i>egress</i>, packets. This structure is used in the following OID requests:
@@ -241,31 +241,29 @@ For more information on the DCB component, see <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451827">OID_QOS_CURRENT_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451828">OID_QOS_HARDWARE_CAPABILITIES</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a>
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_qos_capabilities.md">NDIS_QOS_CAPABILITIES</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439810">NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE</a>
 
-<mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
-    NdisMSetMiniportAttributes</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439812">NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451827">OID_QOS_CURRENT_CAPABILITIES</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_qos_classification_element.md">NDIS_QOS_CLASSIFICATION_ELEMENT</a>
+
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+    NdisMSetMiniportAttributes</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_qos_capabilities.md">NDIS_QOS_CAPABILITIES</a>
 
 <b></b>
 

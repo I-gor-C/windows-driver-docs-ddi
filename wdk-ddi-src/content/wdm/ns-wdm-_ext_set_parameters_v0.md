@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8872AA79-1D54-4952-A45E-A2DB97730CA7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/EXT_SET_PARAMETERS, PEXT_SET_PARAMETERS, *PKT2_SET_PARAMETERS, *PEXT_SET_PARAMETERS, PEXT_SET_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], EXT_SET_PARAMETERS structure [Kernel-Mode Driver Architecture], KT2_SET_PARAMETERS, kernel.ext_set_parameters, EXT_SET_PARAMETERS, _EXT_SET_PARAMETERS_V0, wdm/PEXT_SET_PARAMETERS
+ms.keywords : "_EXT_SET_PARAMETERS_V0, PEXT_SET_PARAMETERS, kernel.ext_set_parameters, wdm/EXT_SET_PARAMETERS, *PEXT_SET_PARAMETERS, wdm/PEXT_SET_PARAMETERS, PEXT_SET_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], *PKT2_SET_PARAMETERS, EXT_SET_PARAMETERS, EXT_SET_PARAMETERS structure [Kernel-Mode Driver Architecture], KT2_SET_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,7 @@ The <b>ExInitializeSetTimerParameters</b> routine sets the <b>NoWakeTolerance</b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8.1. Supported starting with Windows 8.1. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

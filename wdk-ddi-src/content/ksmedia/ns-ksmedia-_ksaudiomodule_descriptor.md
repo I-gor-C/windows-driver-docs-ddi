@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 3A991D49-B873-4C03-8A5B-D91EB5E63192
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ksmedia/KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR, _KSAUDIOMODULE_DESCRIPTOR, PKSAUDIOMODULE_DESCRIPTOR structure pointer [Audio Devices], PKSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR structure [Audio Devices], audio.ksaudiomodule_descriptor, ksmedia/PKSAUDIOMODULE_DESCRIPTOR, *PKSAUDIOMODULE_DESCRIPTOR
+ms.keywords : "*PKSAUDIOMODULE_DESCRIPTOR, _KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR structure [Audio Devices], PKSAUDIOMODULE_DESCRIPTOR structure pointer [Audio Devices], PKSAUDIOMODULE_DESCRIPTOR, ksmedia/KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR, audio.ksaudiomodule_descriptor, ksmedia/PKSAUDIOMODULE_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSAUDIOMODULE_DESCRIPTOR, *PKSAUDIOMODULE_DESCRIPTOR
+req.typenames : "*PKSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR"
 ---
 
 # _KSAUDIOMODULE_DESCRIPTOR structure
@@ -81,9 +81,7 @@ For more information about audio modules, see  <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | ksmedia.h |
 
 ## See Also

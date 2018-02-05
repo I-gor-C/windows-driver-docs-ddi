@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B1E334BF-AAB3-410D-8D10-A750E8459E42
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/SubsystemInformationTypeWSL, SubsystemInformationTypeWSL, ntddk/SubsystemInformationTypeWin32, SubsystemInformationTypeWin32, SUBSYSTEM_INFORMATION_TYPE, MaxSubsystemInformationType, ntddk/MaxSubsystemInformationType, SUBSYSTEM_INFORMATION_TYPE enumeration [Kernel-Mode Driver Architecture], ntddk/SUBSYSTEM_INFORMATION_TYPE, _SUBSYSTEM_INFORMATION_TYPE, kernel.subsystem_information_type, *PSUBSYSTEM_INFORMATION_TYPE
+ms.keywords : "*PSUBSYSTEM_INFORMATION_TYPE, _SUBSYSTEM_INFORMATION_TYPE, SUBSYSTEM_INFORMATION_TYPE enumeration [Kernel-Mode Driver Architecture], SubsystemInformationTypeWSL, SubsystemInformationTypeWin32, ntddk/SubsystemInformationTypeWSL, ntddk/SubsystemInformationTypeWin32, kernel.subsystem_information_type, MaxSubsystemInformationType, ntddk/MaxSubsystemInformationType, SUBSYSTEM_INFORMATION_TYPE, ntddk/SUBSYSTEM_INFORMATION_TYPE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SUBSYSTEM_INFORMATION_TYPE, *PSUBSYSTEM_INFORMATION_TYPE
+req.typenames : "*PSUBSYSTEM_INFORMATION_TYPE, SUBSYSTEM_INFORMATION_TYPE"
 ---
 
 # _SUBSYSTEM_INFORMATION_TYPE Enumeration
@@ -79,9 +79,6 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h |
 
 ## See Also

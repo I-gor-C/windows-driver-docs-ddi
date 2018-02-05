@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f0dd72b5-9ab4-4511-b913-b0e456ea8950
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_COLLECTDBGINFO, VIDEO_TDR_TIMEOUT_DETECTED, d3dkmddi/DXGKARG_COLLECTDBGINFO, display.dxgkarg_collectdbginfo, _DXGKARG_COLLECTDBGINFO, DXGKARG_COLLECTDBGINFO structure [Display Devices], DmStructs_c3c19a4c-8536-474b-bca4-8b5af32fc4c8.xml, VIDEO_ENGINE_TIMEOUT_DETECTED
+ms.keywords : DmStructs_c3c19a4c-8536-474b-bca4-8b5af32fc4c8.xml, DXGKARG_COLLECTDBGINFO, VIDEO_ENGINE_TIMEOUT_DETECTED, display.dxgkarg_collectdbginfo, DXGKARG_COLLECTDBGINFO structure [Display Devices], d3dkmddi/DXGKARG_COLLECTDBGINFO, VIDEO_TDR_TIMEOUT_DETECTED, _DXGKARG_COLLECTDBGINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,9 +104,7 @@ Available starting in Windows 8.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

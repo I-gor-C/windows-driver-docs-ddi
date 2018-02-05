@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7998B753-8E43-471F-9BDE-729D0E38E022
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDeviceRegisterThermalDispatch function [Streaming Media Devices], ks/KsDeviceRegisterThermalDispatch, stream.ksdeviceregisterthermaldispatch, KsDeviceRegisterThermalDispatch
+ms.keywords : KsDeviceRegisterThermalDispatch, stream.ksdeviceregisterthermaldispatch, ks/KsDeviceRegisterThermalDispatch, KsDeviceRegisterThermalDispatch function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,9 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

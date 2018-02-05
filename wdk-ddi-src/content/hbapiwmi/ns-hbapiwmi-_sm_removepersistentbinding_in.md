@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 47e6a189-4b16-411a-8552-3e6f998516ba
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSM_RemovePersistentBinding_IN, structs-Fibre_d27cd5dc-07ee-470c-ad0d-239f1d378841.xml, hbapiwmi/SM_RemovePersistentBinding_IN, *PSM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN structure [Storage Devices], PSM_RemovePersistentBinding_IN structure pointer [Storage Devices], _SM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN, hbapiwmi/PSM_RemovePersistentBinding_IN, storage.sm_removepersistentbinding_in
+ms.keywords : SM_RemovePersistentBinding_IN, hbapiwmi/PSM_RemovePersistentBinding_IN, storage.sm_removepersistentbinding_in, structs-Fibre_d27cd5dc-07ee-470c-ad0d-239f1d378841.xml, PSM_RemovePersistentBinding_IN structure pointer [Storage Devices], PSM_RemovePersistentBinding_IN, _SM_RemovePersistentBinding_IN, *PSM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN structure [Storage Devices], hbapiwmi/SM_RemovePersistentBinding_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSM_RemovePersistentBinding_IN, SM_RemovePersistentBinding_IN"
+req.typenames : SM_RemovePersistentBinding_IN, *PSM_RemovePersistentBinding_IN
 ---
 
 # _SM_RemovePersistentBinding_IN structure
@@ -76,7 +76,4 @@ The WMI tool suite generates a declaration of the SM_RemovePersistentBinding_IN 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

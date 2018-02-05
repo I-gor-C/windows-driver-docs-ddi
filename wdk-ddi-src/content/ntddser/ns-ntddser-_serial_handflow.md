@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : E13148B7-8FCE-4407-80F6-286F0EF65B5C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PSERIAL_HANDFLOW, PSERIAL_HANDFLOW structure pointer [Serial Ports], serports.serial_handflow, SERIAL_HANDFLOW structure [Serial Ports], ntddser/SERIAL_HANDFLOW, ntddser/PSERIAL_HANDFLOW, _SERIAL_HANDFLOW, PSERIAL_HANDFLOW, SERIAL_HANDFLOW"
+ms.keywords : serports.serial_handflow, ntddser/PSERIAL_HANDFLOW, PSERIAL_HANDFLOW, SERIAL_HANDFLOW structure [Serial Ports], ntddser/SERIAL_HANDFLOW, PSERIAL_HANDFLOW structure pointer [Serial Ports], _SERIAL_HANDFLOW, SERIAL_HANDFLOW, *PSERIAL_HANDFLOW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSERIAL_HANDFLOW, SERIAL_HANDFLOW"
+req.typenames : SERIAL_HANDFLOW, *PSERIAL_HANDFLOW
 ---
 
 # _SERIAL_HANDFLOW structure
@@ -160,9 +160,6 @@ SerCx2 and SerCx support only subsets of the flags that are defined for the <b>C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddser.h |
 
 ## See Also

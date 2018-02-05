@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : A9AB43A9-1409-4AA4-99DE-66D558F2303C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucxendpoint/UcxEndpointGetStaticStreamsReferenced, UcxEndpointGetStaticStreamsReferenced, buses._ucxendpointgetstaticstreamsreferenced, UcxEndpointGetStaticStreamsReferenced method [Buses]
+ms.keywords : UcxEndpointGetStaticStreamsReferenced, UcxEndpointGetStaticStreamsReferenced method [Buses], ucxendpoint/UcxEndpointGetStaticStreamsReferenced, buses._ucxendpointgetstaticstreamsreferenced
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,13 @@ The client driver can use this function to determine whether it has created a st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

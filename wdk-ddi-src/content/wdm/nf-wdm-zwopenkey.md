@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e92f0297-8bfc-496d-a00b-e7b5711c7856
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.zwopenkey, k111_8583b145-a6be-4e4f-8e46-ca7d48b8a07f.xml, ZwOpenKey, wdm/ZwOpenKey, ZwOpenKey routine [Kernel-Mode Driver Architecture]
+ms.keywords : k111_8583b145-a6be-4e4f-8e46-ca7d48b8a07f.xml, ZwOpenKey routine [Kernel-Mode Driver Architecture], kernel.zwopenkey, wdm/ZwOpenKey, ZwOpenKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,36 +90,35 @@ For more information about working with registry keys, see <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, PowerIrpDDis, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate, ZwRegistryOpen(storport) |
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-<a href="..\wdm\nf-wdm-zwflushkey.md">ZwFlushKey</a>
-
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
-
-<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
-
 <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
 
-<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 
 <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
 
+<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
+
+<a href="..\wdm\nf-wdm-zwflushkey.md">ZwFlushKey</a>
+
+<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
+
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
-<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

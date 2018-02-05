@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : f4092f06-3ed7-4153-8498-0fdfac958a1e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_bbef7cb1-d817-498e-b091-2d07acc0e552.xml, RtlAreBitsClear, wdm/RtlAreBitsClear, kernel.rtlarebitsclear, RtlAreBitsClear routine [Kernel-Mode Driver Architecture]
+ms.keywords : RtlAreBitsClear routine [Kernel-Mode Driver Architecture], RtlAreBitsClear, kernel.rtlarebitsclear, wdm/RtlAreBitsClear, k109_bbef7cb1-d817-498e-b091-2d07acc0e552.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,34 +79,32 @@ Callers of <b>RtlAreBitsClear</b> must be running at IRQL &lt;= APC_LEVEL if the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlcheckbit.md">RtlCheckBit</a>
-
-<a href="..\wdm\nf-wdm-rtlfindnextforwardrunclear.md">RtlFindNextForwardRunClear</a>
-
-<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
-
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
 
 <a href="..\wdm\nf-wdm-rtlfindlastbackwardrunclear.md">RtlFindLastBackwardRunClear</a>
 
+<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+
+<a href="..\wdm\nf-wdm-rtlfindfirstrunclear.md">RtlFindFirstRunClear</a>
+
 <a href="..\wdm\nf-wdm-rtlclearallbits.md">RtlClearAllBits</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+<a href="..\wdm\nf-wdm-rtlfindnextforwardrunclear.md">RtlFindNextForwardRunClear</a>
 
 <a href="..\wdm\nf-wdm-rtlfindlongestrunclear.md">RtlFindLongestRunClear</a>
 
-<a href="..\wdm\nf-wdm-rtlfindfirstrunclear.md">RtlFindFirstRunClear</a>
+<a href="..\wdm\nf-wdm-rtlcheckbit.md">RtlCheckBit</a>
+
+<a href="..\wdm\nf-wdm-rtlarebitsset.md">RtlAreBitsSet</a>
 
 <a href="..\wdm\nf-wdm-rtlfindclearbits.md">RtlFindClearBits</a>
 

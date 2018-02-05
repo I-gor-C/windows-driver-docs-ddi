@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 2EB57066-164F-445C-8621-7B65E6715E97
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbDeviceInitialize method [Buses], spbcx/SpbDeviceInitialize, SPB.spbdeviceinitialize, SpbDeviceInitialize
+ms.keywords : spbcx/SpbDeviceInitialize, SPB.spbdeviceinitialize, SpbDeviceInitialize method [Buses], SpbDeviceInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -80,14 +80,11 @@ If the structure pointed to by <i>Config</i> is not filled out correctly, <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | spbcx.h |
-| **Library** |  |
+| **Library** | Spbcxstubs.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

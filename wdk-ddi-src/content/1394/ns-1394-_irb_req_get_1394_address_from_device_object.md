@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 457E3A4E-6845-473C-AACD-7CC00080C34B
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1394/IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT, IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT, _IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT, IEEE.irb_req_get_1394_address_from_device_object, IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT structure [Buses]
+ms.keywords : IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT structure [Buses], IEEE.irb_req_get_1394_address_from_device_object, 1394/IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT, IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT, _IRB_REQ_GET_1394_ADDRESS_FROM_DEVICE_OBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ Contains the NODE_ADDRESS structure describing the device's node address. In the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 28CF8291-E7C3-4289-909C-C89D350A9D83
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_PPM_IDLE_EXECUTE_V2, kernel.pep_ppm_idle_execute_v2, PEP_PPM_IDLE_EXECUTE_V2, PEP_PPM_IDLE_EXECUTE_V2 structure [Kernel-Mode Driver Architecture], *PPEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2 structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_IDLE_EXECUTE_V2, pepfx/PEP_PPM_IDLE_EXECUTE_V2
+ms.keywords : "_PEP_PPM_IDLE_EXECUTE_V2, pepfx/PPEP_PPM_IDLE_EXECUTE_V2, *PPEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2 structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_IDLE_EXECUTE_V2, PEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2, PEP_PPM_IDLE_EXECUTE_V2 structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_idle_execute_v2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,18 +81,16 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186824">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a>
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186807">PEP_NOTIFY_PPM_IDLE_EXECUTE</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186826">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES</a>
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186824">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a>
 
  
 

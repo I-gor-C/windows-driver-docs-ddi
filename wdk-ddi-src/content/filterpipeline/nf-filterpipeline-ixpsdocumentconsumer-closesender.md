@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : b9a860b1-d169-44b6-8dbd-0d26b050b7b0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : filterpipeline_64223953-a027-45c8-b296-a07ef3340a41.xml, print.ixpsdocumentconsumer_closesender, CloseSender, filterpipeline/IXpsDocumentConsumer::CloseSender, CloseSender method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer, CloseSender method [Print Devices], IXpsDocumentConsumer::CloseSender, IXpsDocumentConsumer interface [Print Devices], CloseSender method
+ms.keywords : IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer::CloseSender, CloseSender method [Print Devices], CloseSender, IXpsDocumentConsumer interface [Print Devices], CloseSender method, IXpsDocumentConsumer::CloseSender, filterpipeline_64223953-a027-45c8-b296-a07ef3340a41.xml, CloseSender method [Print Devices], IXpsDocumentConsumer interface, print.ixpsdocumentconsumer_closesender
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ The filter must call the <code>CloseSender</code> method when it has finished se
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

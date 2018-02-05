@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 5009e4d8-5299-4eeb-a70d-5be87694b1d0
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISynthSinkDMus interface [Audio Devices], SyncToMaster method, dmusicks/ISynthSinkDMus::SyncToMaster, SyncToMaster method [Audio Devices], ISynthSinkDMus interface, audmp-routines_35d431eb-a92c-4e73-b75c-8a3a1f0451ce.xml, audio.isynthsinkdmus_synctomaster, SyncToMaster, ISynthSinkDMus, SyncToMaster method [Audio Devices], ISynthSinkDMus::SyncToMaster
+ms.keywords : dmusicks/ISynthSinkDMus::SyncToMaster, SyncToMaster method [Audio Devices], ISynthSinkDMus interface, ISynthSinkDMus::SyncToMaster, SyncToMaster, audmp-routines_35d431eb-a92c-4e73-b75c-8a3a1f0451ce.xml, audio.isynthsinkdmus_synctomaster, ISynthSinkDMus interface [Audio Devices], SyncToMaster method, ISynthSinkDMus, SyncToMaster method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,14 +75,9 @@ Parameter <i>fStart</i> is <b>TRUE</b> during the first call to <code>SyncToMast
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dmusicks.h (include Dmusicks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dmusicks.h |
 
 ## See Also
 

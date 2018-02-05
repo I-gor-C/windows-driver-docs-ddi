@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fb759043-ffdf-4edf-819b-669631927bc5
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k106_337c0e8a-c098-46a8-b820-db78be002148.xml, kernel.mmmaplockedpagesspecifycache, MmMapLockedPagesSpecifyCache routine [Kernel-Mode Driver Architecture], MmMapLockedPagesSpecifyCache, wdm/MmMapLockedPagesSpecifyCache
+ms.keywords : kernel.mmmaplockedpagesspecifycache, MmMapLockedPagesSpecifyCache routine [Kernel-Mode Driver Architecture], k106_337c0e8a-c098-46a8-b820-db78be002148.xml, MmMapLockedPagesSpecifyCache, wdm/MmMapLockedPagesSpecifyCache
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -119,28 +119,27 @@ A driver must not try to create more than one system-address-space mapping for a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
-
 <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
 
-<a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
-
 <a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+
+<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
+
+<a href="..\wdm\nf-wdm-mmallocatepagesformdlex.md">MmAllocatePagesForMdlEx</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4289406f-dda0-4439-be6e-6e638bb46e1f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.ipnpcallback_onsurpriseremoval, OnSurpriseRemoval method, IPnpCallback interface, OnSurpriseRemoval method, wdf.ipnpcallback_onsurpriseremoval, UMDFDeviceObjectRef_92f0661b-48a5-4d85-9bcf-f763c38b08ed.xml, wudfddi/IPnpCallback::OnSurpriseRemoval, OnSurpriseRemoval, IPnpCallback, IPnpCallback::OnSurpriseRemoval, IPnpCallback interface, OnSurpriseRemoval method
+ms.keywords : umdf.ipnpcallback_onsurpriseremoval, wdf.ipnpcallback_onsurpriseremoval, OnSurpriseRemoval method, wudfddi/IPnpCallback::OnSurpriseRemoval, UMDFDeviceObjectRef_92f0661b-48a5-4d85-9bcf-f763c38b08ed.xml, IPnpCallback, IPnpCallback interface, OnSurpriseRemoval method, IPnpCallback::OnSurpriseRemoval, OnSurpriseRemoval method, IPnpCallback interface, OnSurpriseRemoval
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -75,22 +75,17 @@ For more information about when the framework calls this callback function, and 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
 <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

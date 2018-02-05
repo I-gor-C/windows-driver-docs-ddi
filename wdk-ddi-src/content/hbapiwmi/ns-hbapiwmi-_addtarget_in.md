@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7c6a7ca8-83aa-41fe-92f5-6598464d9803
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PAddTarget_IN, hbapiwmi/PAddTarget_IN, *PAddTarget_IN, AddTarget_IN structure [Storage Devices], AddTarget_IN, structs-Fibre_7109b51c-872e-4e2e-affb-388fe21750d7.xml, _AddTarget_IN, storage.addtarget_in, PAddTarget_IN structure pointer [Storage Devices], hbapiwmi/AddTarget_IN
+ms.keywords : AddTarget_IN structure [Storage Devices], PAddTarget_IN structure pointer [Storage Devices], _AddTarget_IN, hbapiwmi/PAddTarget_IN, hbapiwmi/AddTarget_IN, AddTarget_IN, PAddTarget_IN, *PAddTarget_IN, storage.addtarget_in, structs-Fibre_7109b51c-872e-4e2e-affb-388fe21750d7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : AddTarget_IN, *PAddTarget_IN
+req.typenames : "*PAddTarget_IN, AddTarget_IN"
 ---
 
 # _AddTarget_IN structure
@@ -69,9 +69,6 @@ Contains the worldwide name of the local port whose events the WMI client will r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

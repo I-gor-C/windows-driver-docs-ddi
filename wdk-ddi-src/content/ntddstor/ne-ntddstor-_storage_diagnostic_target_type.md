@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 8BC338FB-7C76-49D3-96E5-0F20C4A250CE
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTORAGE_DIAGNOSTIC_TARGET_TYPE enumeration pointer [Storage Devices], StorageDiagnosticTargetTypeMiniport, ntddstor/STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddstor/StorageDiagnosticTargetTypeMiniport, StorageDiagnosticTargetTypePort, *PSTORAGE_DIAGNOSTIC_TARGET_TYPE, ntddstor/StorageDiagnosticTargetTypeMax, ntddstor/StorageDiagnosticTargetTypeHbaFirmware, PSTORAGE_DIAGNOSTIC_TARGET_TYPE, ntddstor/StorageDiagnosticTargetTypeUndefined, STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration [Storage Devices], StorageDiagnosticTargetTypeHbaFirmware, STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddstor/StorageDiagnosticTargetTypePort, StorageDiagnosticTargetTypeMax, _STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypeUndefined, storage.storage_diagnostic_target_type, ntddstor/PSTORAGE_DIAGNOSTIC_TARGET_TYPE
+ms.keywords : "_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddstor/StorageDiagnosticTargetTypeHbaFirmware, PSTORAGE_DIAGNOSTIC_TARGET_TYPE, STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration [Storage Devices], StorageDiagnosticTargetTypeHbaFirmware, StorageDiagnosticTargetTypePort, *PSTORAGE_DIAGNOSTIC_TARGET_TYPE, ntddstor/StorageDiagnosticTargetTypeMax, StorageDiagnosticTargetTypeUndefined, storage.storage_diagnostic_target_type, ntddstor/PSTORAGE_DIAGNOSTIC_TARGET_TYPE, ntddstor/StorageDiagnosticTargetTypePort, StorageDiagnosticTargetTypeMiniport, ntddstor/StorageDiagnosticTargetTypeMiniport, StorageDiagnosticTargetTypeMax, STORAGE_DIAGNOSTIC_TARGET_TYPE, PSTORAGE_DIAGNOSTIC_TARGET_TYPE enumeration pointer [Storage Devices], ntddstor/StorageDiagnosticTargetTypeUndefined, ntddstor/STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STORAGE_DIAGNOSTIC_TARGET_TYPE, *PSTORAGE_DIAGNOSTIC_TARGET_TYPE
+req.typenames : "*PSTORAGE_DIAGNOSTIC_TARGET_TYPE, STORAGE_DIAGNOSTIC_TARGET_TYPE"
 ---
 
 # _STORAGE_DIAGNOSTIC_TARGET_TYPE Enumeration
@@ -86,7 +86,5 @@ typedef enum _STORAGE_DIAGNOSTIC_TARGET_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntddstor.h |

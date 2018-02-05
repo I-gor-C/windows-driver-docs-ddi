@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 7655b6a1-2ed4-4e57-b8b5-e7b8ff2dd1e5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_7e675f67-f027-48e7-a41b-b672b0f81d20.xml, storport/StorPortWritePortUshort, StorPortWritePortUshort, StorPortWritePortUshort routine [Storage Devices], storage.storportwriteportushort
+ms.keywords : StorPortWritePortUshort routine [Storage Devices], storprt_7e675f67-f027-48e7-a41b-b672b0f81d20.xml, storage.storportwriteportushort, storport/StorPortWritePortUshort, StorPortWritePortUshort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,9 @@ For more information, see <a href="..\srb\nf-srb-scsiportwriteportushort.md">Scs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

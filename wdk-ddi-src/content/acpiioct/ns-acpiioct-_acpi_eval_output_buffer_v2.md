@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : 355A600E-F207-4A3F-80AE-EA2DAE810DA3
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : "*PACPI_EVAL_OUTPUT_BUFFER_V2, acpi.acpi_eval_output_buffer_v2, ACPI_EVAL_OUTPUT_BUFFER_V2 structure [ACPI Devices], ACPI_EVAL_OUTPUT_BUFFER_V2, _ACPI_EVAL_OUTPUT_BUFFER_V2, acpiioct/ACPI_EVAL_OUTPUT_BUFFER_V2"
+ms.keywords : ACPI_EVAL_OUTPUT_BUFFER_V2 structure [ACPI Devices], acpi.acpi_eval_output_buffer_v2, ACPI_EVAL_OUTPUT_BUFFER_V2, acpiioct/ACPI_EVAL_OUTPUT_BUFFER_V2, _ACPI_EVAL_OUTPUT_BUFFER_V2, *PACPI_EVAL_OUTPUT_BUFFER_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,5 @@ Defines the <b>ULONG</b> member <b>Signature</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 and later versions. Windows 10, version 1709 and later versions. |
 | **Header** | acpiioct.h (include Acpiioct.h) |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BF539DDA-59ED-4010-88BC-3C7D8DC475EF
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisSynchronousOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndissynchronousoidrequest, ndis/NdisSynchronousOidRequest, NdisSynchronousOidRequest
+ms.keywords : NdisSynchronousOidRequest, NdisSynchronousOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndissynchronousoidrequest, ndis/NdisSynchronousOidRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -217,28 +217,25 @@ Protocol drivers are not required to implement <a href="..\ndis\nc-ndis-protocol
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">ProtocolDirectOidRequestComplete</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
+
 <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">ProtocolOidRequestComplete</a>
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="..\ndis\nc-ndis-protocol_direct_oid_request_complete.md">ProtocolDirectOidRequestComplete</a>
 
 <a href="..\ndis\nc-ndis-protocol_status_ex.md">ProtocolStatusEx</a>
-
-<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 
  
 

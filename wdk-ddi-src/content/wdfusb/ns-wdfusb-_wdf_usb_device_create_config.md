@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 717DFAE8-5F10-4443-AACA-07009060C23D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_usb_device_create_config, _WDF_USB_DEVICE_CREATE_CONFIG, wdfusb/PWDF_USB_DEVICE_CREATE_CONFIG, kmdf.wdf_usbtarget_device_config, wdfusb/WDF_USB_DEVICE_CREATE_CONFIG, kmdf.wdf_usb_device_create_config, *PWDF_USB_DEVICE_CREATE_CONFIG, WDF_USB_DEVICE_CREATE_CONFIG, WDF_USB_DEVICE_CREATE_CONFIG structure, PWDF_USB_DEVICE_CREATE_CONFIG structure pointer, PWDF_USB_DEVICE_CREATE_CONFIG
+ms.keywords : wdfusb/PWDF_USB_DEVICE_CREATE_CONFIG, kmdf.wdf_usb_device_create_config, PWDF_USB_DEVICE_CREATE_CONFIG, WDF_USB_DEVICE_CREATE_CONFIG, kmdf.wdf_usbtarget_device_config, *PWDF_USB_DEVICE_CREATE_CONFIG, PWDF_USB_DEVICE_CREATE_CONFIG structure pointer, WDF_USB_DEVICE_CREATE_CONFIG structure, wdf.wdf_usb_device_create_config, _WDF_USB_DEVICE_CREATE_CONFIG, wdfusb/WDF_USB_DEVICE_CREATE_CONFIG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_USB_DEVICE_CREATE_CONFIG, WDF_USB_DEVICE_CREATE_CONFIG"
+req.typenames : WDF_USB_DEVICE_CREATE_CONFIG, *PWDF_USB_DEVICE_CREATE_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -69,16 +69,16 @@ The <b>WDF_USB_DEVICE_CREATE_CONFIG</b> structure is used as input to the <a hre
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows Vista Windows Vista |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>
+
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 
  
 

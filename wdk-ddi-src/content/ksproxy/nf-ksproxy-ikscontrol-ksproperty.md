@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : cc43f704-e1f8-4d62-8cdf-11575ec0b473
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsControl::KsProperty, KsProperty method [Streaming Media Devices], KsProperty method [Streaming Media Devices], IKsControl interface, IKsControl, IKsControl interface [Streaming Media Devices], KsProperty method, ksproxy_463b7e97-4356-4d2e-b005-6f81219bda64.xml, KsProperty, stream.ikscontrol_ksproperty, ksproxy/IKsControl::KsProperty
+ms.keywords : stream.ikscontrol_ksproperty, KsProperty method [Streaming Media Devices], ksproxy/IKsControl::KsProperty, KsProperty, IKsControl interface [Streaming Media Devices], KsProperty method, KsProperty method [Streaming Media Devices], IKsControl interface, IKsControl::KsProperty, IKsControl, ksproxy_463b7e97-4356-4d2e-b005-6f81219bda64.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,14 +88,9 @@ To determine the buffer size that is required for a specific property request, y
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | DesktopMobile |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | DesktopMobile |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

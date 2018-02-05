@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f528d20a-16f8-401f-a6e6-ab165a40e18a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlGetAce routine [Installable File System Drivers], RtlGetAce, rtlref_e018acc3-f776-4d15-9e0b-9e34d286a746.xml, ifsk.rtlgetace, ntifs/RtlGetAce
+ms.keywords : ntifs/RtlGetAce, RtlGetAce, ifsk.rtlgetace, rtlref_e018acc3-f776-4d15-9e0b-9e34d286a746.xml, RtlGetAce routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,22 +78,20 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows XP and later. This routine is available on Microsoft Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
 
 <a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 
  
 

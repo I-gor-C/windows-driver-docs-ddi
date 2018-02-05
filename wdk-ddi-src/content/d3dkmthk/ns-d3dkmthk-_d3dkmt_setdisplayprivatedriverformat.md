@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a99a3b15-8c91-4aef-a82c-665c8494fa57
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_c5440fbe-47f2-43eb-ae09-e9295bfa4bad.xml, D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, display.d3dkmt_setdisplayprivatedriverformat, d3dkmthk/D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT
+ms.keywords : D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], d3dkmthk/D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, OpenGL_Structs_c5440fbe-47f2-43eb-ae09-e9295bfa4bad.xml, display.d3dkmt_setdisplayprivatedriverformat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

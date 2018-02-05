@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a8e1ea01-2050-413a-991f-55c29977b6dd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2setstreamsource2, d3dhal/LPD3DHAL_DP2SETSTREAMSOURCE2, d3dhal/D3DHAL_DP2SETSTREAMSOURCE2, LPD3DHAL_DP2SETSTREAMSOURCE2 structure pointer [Display Devices], D3DHAL_DP2SETSTREAMSOURCE2 structure [Display Devices], *LPD3DHAL_DP2SETSTREAMSOURCE2, d3dstrct_81c5d4ff-bd3e-4f52-a062-c30755da9416.xml, _D3DHAL_DP2SETSTREAMSOURCE2, D3DHAL_DP2SETSTREAMSOURCE2, LPD3DHAL_DP2SETSTREAMSOURCE2
+ms.keywords : D3DHAL_DP2SETSTREAMSOURCE2 structure [Display Devices], _D3DHAL_DP2SETSTREAMSOURCE2, D3DHAL_DP2SETSTREAMSOURCE2, *LPD3DHAL_DP2SETSTREAMSOURCE2, LPD3DHAL_DP2SETSTREAMSOURCE2, d3dhal/D3DHAL_DP2SETSTREAMSOURCE2, display.d3dhal_dp2setstreamsource2, d3dhal/LPD3DHAL_DP2SETSTREAMSOURCE2, d3dstrct_81c5d4ff-bd3e-4f52-a062-c30755da9416.xml, LPD3DHAL_DP2SETSTREAMSOURCE2 structure pointer [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,9 +77,6 @@ Specifies the vertex buffer handle. It is legal for the vertex buffer handle to 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also

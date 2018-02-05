@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 426ff4f4-7924-4115-9f66-b4152e2ba5bb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, netvista.ndisallocatecloneoidrequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista], NdisAllocateCloneOidRequest, ndis/NdisAllocateCloneOidRequest
+ms.keywords : netvista.ndisallocatecloneoidrequest, NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista], ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, ndis/NdisAllocateCloneOidRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -154,12 +154,10 @@ The driver must subsequently call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_OID_Function |
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a9ad58c2-16fc-410a-abc7-01c3f2354b88
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortValidateRange routine [Storage Devices], ScsiPortValidateRange, storage.scsiportvalidaterange, scsiprt_a5bae9f5-7912-4607-890d-ca08fda0c19c.xml, srb/ScsiPortValidateRange
+ms.keywords : scsiprt_a5bae9f5-7912-4607-890d-ca08fda0c19c.xml, ScsiPortValidateRange, ScsiPortValidateRange routine [Storage Devices], srb/ScsiPortValidateRange, storage.scsiportvalidaterange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -129,24 +129,19 @@ Use the mapped logical addresses with the <b>ScsiPortRead/Write</b><i>Xxx</i> to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
-
 <a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+
+<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
 
 <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 
-<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 
 <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4A1A4E49-6452-4291-8CD4-FA390C1F167E
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UsbfnEventAttach, usbfnbase/UsbfnEventSetupPacket, *PUSBFN_EVENT, UsbfnEventSetInterface, USBFN_EVENT, _USBFN_EVENT, usbfnbase/UsbfnEventConfigured, UsbfnEventBusTearDown, usbfnbase/UsbfnEventDetach, UsbfnEventResume, usbfnbase/UsbfnEventSetInterface, UsbfnEventSetupPacket, UsbfnEventReset, UsbfnEventMinimum, UsbfnEventSuspend, usbfnbase/UsbfnEventAttach, UsbfnEventConfigured, usbfnbase/UsbfnEventSuspend, usbfnbase/UsbfnEventReset, UsbfnEventDetach, usbfnbase/UsbfnEventMinimum, UsbfnEventPortType, USBFN_EVENT enumeration [Buses], usbfnbase/UsbfnEventPortType, UsbfnEventUnConfigured, usbfnbase/UsbfnEventBusTearDown, usbfnbase/UsbfnEventMaximum, UsbfnEventMaximum, usbfnbase/USBFN_EVENT, buses.usbfn_event, usbfnbase/UsbfnEventResume, usbfnbase/UsbfnEventUnConfigured
+ms.keywords : usbfnbase/UsbfnEventAttach, UsbfnEventAttach, UsbfnEventUnConfigured, *PUSBFN_EVENT, UsbfnEventMinimum, UsbfnEventDetach, usbfnbase/UsbfnEventConfigured, usbfnbase/UsbfnEventMinimum, usbfnbase/USBFN_EVENT, usbfnbase/UsbfnEventBusTearDown, usbfnbase/UsbfnEventSuspend, UsbfnEventResume, UsbfnEventMaximum, USBFN_EVENT enumeration [Buses], usbfnbase/UsbfnEventUnConfigured, UsbfnEventReset, buses.usbfn_event, USBFN_EVENT, usbfnbase/UsbfnEventMaximum, UsbfnEventConfigured, UsbfnEventBusTearDown, usbfnbase/UsbfnEventSetInterface, usbfnbase/UsbfnEventSetupPacket, usbfnbase/UsbfnEventReset, _USBFN_EVENT, UsbfnEventPortType, UsbfnEventSetupPacket, usbfnbase/UsbfnEventPortType, usbfnbase/UsbfnEventDetach, UsbfnEventSuspend, usbfnbase/UsbfnEventResume, UsbfnEventSetInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBFN_EVENT, USBFN_EVENT"
+req.typenames : USBFN_EVENT, *PUSBFN_EVENT
 req.product : Windows 10 or later.
 ---
 
@@ -159,7 +159,4 @@ typedef enum _USBFN_EVENT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : c754f540-19ff-491f-89ec-63d3306c4068
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_DeinterlaceQueryAvailableModes, _DXVA_DeinterlaceQueryAvailableModes, display.dxva_deinterlacequeryavailablemodes, dxvaref_9c2ffe96-e286-4f0f-bb6b-57bc6ee64b2c.xml, DXVA_DeinterlaceQueryAvailableModes structure [Display Devices], dxva/DXVA_DeinterlaceQueryAvailableModes
+ms.keywords : DXVA_DeinterlaceQueryAvailableModes structure [Display Devices], dxva/DXVA_DeinterlaceQueryAvailableModes, display.dxva_deinterlacequeryavailablemodes, _DXVA_DeinterlaceQueryAvailableModes, dxvaref_9c2ffe96-e286-4f0f-bb6b-57bc6ee64b2c.xml, DXVA_DeinterlaceQueryAvailableModes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,7 +73,4 @@ There is a GUID for each deinterlace and frame conversion mode returned by the d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dxva.h (include Dxva.h) |

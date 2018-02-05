@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 28509e28-0e81-4531-947c-9ce452564682
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoTarget2::FormatRequestForFlush, IWDFIoTarget2, IWDFIoTarget2::FormatRequestForFlush, UMDFIoTargetObjectRef_985162ca-fae2-408e-b4df-59add8e4a760.xml, FormatRequestForFlush method, umdf.iwdfiotarget2_formatrequestforflush, IWDFIoTarget2 interface, FormatRequestForFlush method, wdf.iwdfiotarget2_formatrequestforflush, FormatRequestForFlush, FormatRequestForFlush method, IWDFIoTarget2 interface
+ms.keywords : IWDFIoTarget2, IWDFIoTarget2 interface, FormatRequestForFlush method, FormatRequestForFlush, wdf.iwdfiotarget2_formatrequestforflush, UMDFIoTargetObjectRef_985162ca-fae2-408e-b4df-59add8e4a760.xml, FormatRequestForFlush method, IWDFIoTarget2::FormatRequestForFlush, wudfddi/IWDFIoTarget2::FormatRequestForFlush, FormatRequestForFlush method, IWDFIoTarget2 interface, umdf.iwdfiotarget2_formatrequestforflush
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -97,22 +97,20 @@ Use the <b>FormatRequestForFlush</b> method, followed by the <a href="https://ms
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiotarget2.md">IWDFIoTarget2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiotarget2.md">IWDFIoTarget2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a>
 
  
 

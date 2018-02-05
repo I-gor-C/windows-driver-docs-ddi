@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9B4EBCA4-8370-4F00-9853-6EE8408367BE
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterScriptablePropertyBag::SetString, SetString, SetString method [Print Devices], IPrinterScriptablePropertyBag interface, print.iprinterscriptablepropertybag_setstring, SetString method [Print Devices], IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag interface [Print Devices], SetString method, printerextension/IPrinterScriptablePropertyBag::SetString
+ms.keywords : IPrinterScriptablePropertyBag interface [Print Devices], SetString method, SetString method [Print Devices], IPrinterScriptablePropertyBag, printerextension/IPrinterScriptablePropertyBag::SetString, print.iprinterscriptablepropertybag_setstring, SetString, SetString method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag::SetString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,14 +74,10 @@ A call to <b>SetString</b> will throw an exception, if the specified property is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

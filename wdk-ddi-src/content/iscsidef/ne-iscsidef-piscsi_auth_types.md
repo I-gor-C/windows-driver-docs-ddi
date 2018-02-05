@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b1d38829-53bc-42a5-acaf-c1ad89b8b563
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PISCSI_AUTH_TYPES enumeration pointer [Storage Devices], structs-iSCSI_a55ac905-6962-416f-a197-778a24eae524.xml, iscsidef/PISCSI_AUTH_TYPES, ISCSI_NO_AUTH_TYPE, iscsidef/ISCSI_CHAP_AUTH_TYPE, storage.iscsi_auth_types, iscsidef/ISCSI_NO_AUTH_TYPE, ISCSI_CHAP_AUTH_TYPE, ISCSI_MUTUAL_CHAP_AUTH_TYPE, iscsidef/ISCSI_AUTH_TYPES, PISCSI_AUTH_TYPES, ISCSI_AUTH_TYPES enumeration [Storage Devices], ISCSI_AUTH_TYPES, iscsidef/ISCSI_MUTUAL_CHAP_AUTH_TYPE, *PISCSI_AUTH_TYPES
+ms.keywords : iscsidef/ISCSI_CHAP_AUTH_TYPE, structs-iSCSI_a55ac905-6962-416f-a197-778a24eae524.xml, iscsidef/ISCSI_NO_AUTH_TYPE, PISCSI_AUTH_TYPES enumeration pointer [Storage Devices], ISCSI_CHAP_AUTH_TYPE, iscsidef/ISCSI_MUTUAL_CHAP_AUTH_TYPE, *PISCSI_AUTH_TYPES, storage.iscsi_auth_types, ISCSI_NO_AUTH_TYPE, iscsidef/PISCSI_AUTH_TYPES, ISCSI_AUTH_TYPES enumeration [Storage Devices], iscsidef/ISCSI_AUTH_TYPES, ISCSI_MUTUAL_CHAP_AUTH_TYPE, ISCSI_AUTH_TYPES, PISCSI_AUTH_TYPES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsidef.h (include Iscsidef.h) |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 08c87f1f-ea50-4521-80a2-67369fc6598a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPDXVA_COPPCommand structure pointer [Display Devices], display.dxva_coppcommand, LPDXVA_COPPCommand, _DXVA_COPPCommand, DXVA_COPPCommand structure [Display Devices], DXVA_COPPCommand, *LPDXVA_COPPCommand, dxva/LPDXVA_COPPCommand, dxvaref_e27ea691-6ae9-41fc-9649-670231cb5ce8.xml, dxva/DXVA_COPPCommand
+ms.keywords : LPDXVA_COPPCommand structure pointer [Display Devices], _DXVA_COPPCommand, DXVA_COPPCommand, LPDXVA_COPPCommand, display.dxva_coppcommand, dxva/LPDXVA_COPPCommand, DXVA_COPPCommand structure [Display Devices], *LPDXVA_COPPCommand, dxva/DXVA_COPPCommand, dxvaref_e27ea691-6ae9-41fc-9649-670231cb5ce8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXVA_COPPCommand, *LPDXVA_COPPCommand
+req.typenames : "*LPDXVA_COPPCommand, DXVA_COPPCommand"
 ---
 
 # _DXVA_COPPCommand structure
@@ -120,22 +120,20 @@ For a DXVA_COPPSetSignaling command, the signaling information is supplied by ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
+<a href="..\dxva\ns-dxva-_dxva_coppsignature.md">DXVA_COPPSignature</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
+
+<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 
 <a href="..\dxva\ns-dxva-_dxva_coppsetsignalingcmddata.md">DXVA_COPPSetSignalingCmdData</a>
 
-<a href="..\dxva\ns-dxva-_dxva_coppsignature.md">DXVA_COPPSignature</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540421">COPPSequenceStart</a>
-
-<a href="..\dxva\ns-dxva-_dxva_coppsetprotectionlevelcmddata.md">DXVA_COPPSetProtectionLevelCmdData</a>
 
  
 

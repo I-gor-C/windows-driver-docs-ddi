@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a2c67eaf-d39e-43c9-8e06-18f668c0baa3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PDOT11_BYTE_ARRAY, PDOT11_BYTE_ARRAY, windot11/DOT11_BYTE_ARRAY, netvista.dot11_byte_array, windot11/PDOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY structure [Network Drivers Starting with Windows Vista], PDOT11_BYTE_ARRAY structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_b4146de4-b261-40d9-847d-1eebb48eafea.xml"
+ms.keywords : PDOT11_BYTE_ARRAY structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_BYTE_ARRAY, windot11/PDOT11_BYTE_ARRAY, *PDOT11_BYTE_ARRAY, PDOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY structure [Network Drivers Starting with Windows Vista], netvista.dot11_byte_array, Native_802.11_data_types_b4146de4-b261-40d9-847d-1eebb48eafea.xml, DOT11_BYTE_ARRAY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,11 +73,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to the revision of the variable-length structures which follow the
@@ -90,6 +85,11 @@ This member must be set to the revision of the variable-length structures which 
 
 This member must be set to 
        sizeof(DOT11_BYTE_ARRAY).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `ucBuffer`
 
@@ -176,19 +176,17 @@ Return NDIS_STATUS_SUCCESS from its
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.oid_dot11_cipher_key_mapping_key" tabindex="0">
-   OID_DOT11_CIPHER_KEY_MAPPING_KEY</mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569360">OID_DOT11_ENUM_BSS_LIST</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-cipher-key-mapping-key">
+   OID_DOT11_CIPHER_KEY_MAPPING_KEY</a>
 
  
 

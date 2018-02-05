@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : da6e4133-a2ba-4f8c-9490-e1f9b453b6e2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsDeleteLogByPointer routine [Kernel-Mode Driver Architecture], ClfsDeleteLogByPointer, wdm/ClfsDeleteLogByPointer, Clfs_d5571c5c-19a0-4113-8401-910721d76191.xml, kernel.clfsdeletelogbypointer
+ms.keywords : kernel.clfsdeletelogbypointer, ClfsDeleteLogByPointer routine [Kernel-Mode Driver Architecture], wdm/ClfsDeleteLogByPointer, Clfs_d5571c5c-19a0-4113-8401-910721d76191.xml, ClfsDeleteLogByPointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

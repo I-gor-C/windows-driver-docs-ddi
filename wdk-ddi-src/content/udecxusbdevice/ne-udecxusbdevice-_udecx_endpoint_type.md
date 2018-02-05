@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : EFA5DDC0-9E6B-450E-B191-1DA9FBAC269C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UDECX_ENDPOINT_TYPE enumeration [Buses], *PUDECX_ENDPOINT_TYPE, _UDECX_ENDPOINT_TYPE, UdecxEndpointTypeInvalid, udecxusbdevice/UdecxEndpointTypeSimple, UdecxEndpointTypeDynamic, buses.udecx_endpoint_type, UdecxEndpointTypeSimple, udecxusbdevice/UdecxEndpointTypeInvalid, udecxusbdevice/UdecxEndpointTypeDynamic, udecxusbdevice/UDECX_ENDPOINT_TYPE, UDECX_ENDPOINT_TYPE
+ms.keywords : UdecxEndpointTypeInvalid, udecxusbdevice/UdecxEndpointTypeSimple, UdecxEndpointTypeDynamic, buses.udecx_endpoint_type, udecxusbdevice/UdecxEndpointTypeInvalid, UDECX_ENDPOINT_TYPE, UDECX_ENDPOINT_TYPE enumeration [Buses], _UDECX_ENDPOINT_TYPE, *PUDECX_ENDPOINT_TYPE, udecxusbdevice/UDECX_ENDPOINT_TYPE, UdecxEndpointTypeSimple, udecxusbdevice/UdecxEndpointTypeDynamic
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,9 +75,6 @@ typedef enum _UDECX_ENDPOINT_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
 
 ## See Also

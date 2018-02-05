@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : dfb0d7d1-4e82-4471-814b-4b8c4929c709
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RequestShutdown method [Print Devices], filterpipeline_b16337ab-92e1-4e5e-be84-bddf89bff0a1.xml, filterpipeline/IPrintPipelineManagerControl::RequestShutdown, RequestShutdown method [Print Devices], IPrintPipelineManagerControl interface, RequestShutdown, IPrintPipelineManagerControl, print.iprintpipelinemanagercontrol_requestshutdown, IPrintPipelineManagerControl interface [Print Devices], RequestShutdown method, IPrintPipelineManagerControl::RequestShutdown
+ms.keywords : IPrintPipelineManagerControl, filterpipeline_b16337ab-92e1-4e5e-be84-bddf89bff0a1.xml, IPrintPipelineManagerControl interface [Print Devices], RequestShutdown method, RequestShutdown method [Print Devices], IPrintPipelineManagerControl interface, RequestShutdown method [Print Devices], RequestShutdown, IPrintPipelineManagerControl::RequestShutdown, print.iprintpipelinemanagercontrol_requestshutdown, filterpipeline/IPrintPipelineManagerControl::RequestShutdown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -73,11 +73,6 @@ A filter that uses the <a href="..\filterpipeline\nn-filterpipeline-ixpsdocument
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

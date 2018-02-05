@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 282E12E2-F16F-4399-BC8C-78BD64F05F13
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ucmmanager/UcmConnectorPdPartnerSourceCaps, UcmConnectorPdPartnerSourceCaps method [Buses], buses.ucmconnectorpdportpartnersourcecaps, UcmConnectorPdPartnerSourceCaps
+ms.keywords : UcmConnectorPdPartnerSourceCaps, UcmConnectorPdPartnerSourceCaps method [Buses], ucmmanager/UcmConnectorPdPartnerSourceCaps, buses.ucmconnectorpdportpartnersourcecaps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,13 @@ If the partner connector is the power sink, the local connector port must query 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
+| **Library** | UcmCxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

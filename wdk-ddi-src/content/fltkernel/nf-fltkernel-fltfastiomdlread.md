@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1DF810B5-D4C3-4F67-B913-C2B2132DFDE2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltFastIoMdlRead, FsRtlMdlReadDev routine [Installable File System Drivers], ifsk.fltfastiomdlread, FsRtlMdlReadDev, fltkernel/FsRtlMdlReadDev
+ms.keywords : FsRtlMdlReadDev, FsRtlMdlReadDev routine [Installable File System Drivers], ifsk.fltfastiomdlread, fltkernel/FsRtlMdlReadDev, FltFastIoMdlRead
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,22 +100,19 @@ The routine is similar to <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a>
+<a href="..\fltkernel\nf-fltkernel-fltfastiomdlreadcomplete.md">FltFastIoMdlReadComplete</a>
 
 <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreaddev~r6.md">FsRtlMdlReadDev</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltfastiomdlreadcomplete.md">FltFastIoMdlReadComplete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539159">CcMdlRead</a>
 
  
 

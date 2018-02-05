@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8F8C97B2-5C77-4AD0-9434-22108111F5A8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_FLAGS, wdf.wdf_dma_enabler_config_flags, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, WDF_DMA_ENABLER_CONFIG_FLAGS enumeration, kmdf.wdf_dma_enabler_config_flags, WDF_DMA_ENABLER_CONFIG_FLAGS, _WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER
+ms.keywords : WDF_DMA_ENABLER_CONFIG_FLAGS, _WDF_DMA_ENABLER_CONFIG_FLAGS, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, kmdf.wdf_dma_enabler_config_flags, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, wdf.wdf_dma_enabler_config_flags, WDF_DMA_ENABLER_CONFIG_FLAGS enumeration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -96,9 +96,7 @@ You can specify a valid bitwise OR of the values on this page for the <b>Flags</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
 
 ## See Also

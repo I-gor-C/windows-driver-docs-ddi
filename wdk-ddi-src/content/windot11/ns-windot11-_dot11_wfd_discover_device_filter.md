@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_WFD_DISCOVER_DEVICE_FILTER, *PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER structure [Network Drivers Starting with Windows Vista], windot11/DOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER, PDOT11_WFD_DISCOVER_DEVICE_FILTER structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_DISCOVER_DEVICE_FILTER, netvista.dot11_wfd_discover_device_filter, windot11/PDOT11_WFD_DISCOVER_DEVICE_FILTER
+ms.keywords : "_DOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/DOT11_WFD_DISCOVER_DEVICE_FILTER, netvista.dot11_wfd_discover_device_filter, *PDOT11_WFD_DISCOVER_DEVICE_FILTER, PDOT11_WFD_DISCOVER_DEVICE_FILTER structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER structure [Network Drivers Starting with Windows Vista], DOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/PDOT11_WFD_DISCOVER_DEVICE_FILTER"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_WFD_DISCOVER_DEVICE_FILTER, *PDOT11_WFD_DISCOVER_DEVICE_FILTER
+req.typenames : "*PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER"
 req.product : Windows 10 or later.
 ---
 
@@ -112,7 +112,5 @@ Note that if the value of <b>ucBitmask</b> is FILTER_BITMASK_DEVICE | FILTER_BIT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |

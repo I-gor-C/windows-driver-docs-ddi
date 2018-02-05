@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : beca2e83-df56-4ed0-8ea8-b0090e574cd3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : video/VideoPortGetRegistryParameters, display.videoportgetregistryparameters, VideoPortGetRegistryParameters, VideoPort_Functions_f4e1230a-ae49-4751-8c60-e05043dbb049.xml, VideoPortGetRegistryParameters function [Display Devices]
+ms.keywords : display.videoportgetregistryparameters, VideoPort_Functions_f4e1230a-ae49-4751-8c60-e05043dbb049.xml, VideoPortGetRegistryParameters function [Display Devices], VideoPortGetRegistryParameters, video/VideoPortGetRegistryParameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,32 +95,30 @@ Miniport drivers should not query configuration information stored in the <b>Def
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\video\nc-video-pminiport_get_registry_routine.md">HwVidQueryNamedValueCallback</a>
-
-<a href="..\video\nf-video-videoportsetregistryparameters.md">VideoPortSetRegistryParameters</a>
 
 <a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
 
 <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
 
-<a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a>
-
 <a href="..\video\nf-video-videoportflushregistry.md">VideoPortFlushRegistry</a>
 
-<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
-
 <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
+
+<a href="..\video\nc-video-pminiport_get_registry_routine.md">HwVidQueryNamedValueCallback</a>
+
+<a href="..\video\nf-video-videoportsetregistryparameters.md">VideoPortSetRegistryParameters</a>
+
+<a href="..\video\nc-video-pminiport_query_device_routine.md">HwVidQueryDeviceCallback</a>
+
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
 
  
 

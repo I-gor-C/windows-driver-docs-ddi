@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6a79896a-0591-40dd-8e2d-6e3796556564
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_SendRPS, HBA_SendRPS, storage.hba_sendrps, HBA_SendRPS routine [Storage Devices], fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml
+ms.keywords : fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml, HBA_SendRPS routine [Storage Devices], HBA_SendRPS, hbaapi/HBA_SendRPS, storage.hba_sendrps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -150,14 +150,10 @@ Returned if an unspecified error occurred that prevented the execution of the RP
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 259d01a5-d975-48f9-b0cf-4596d12046bc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : video/VideoPortWriteRegisterUchar, display.videoportwriteregisteruchar, VideoPortWriteRegisterUchar, VideoPort_Functions_b06fef25-2c8e-457f-9f6a-0f58573ac860.xml, VideoPortWriteRegisterUchar function [Display Devices]
+ms.keywords : VideoPortWriteRegisterUchar function [Display Devices], VideoPort_Functions_b06fef25-2c8e-457f-9f6a-0f58573ac860.xml, VideoPortWriteRegisterUchar, display.videoportwriteregisteruchar, video/VideoPortWriteRegisterUchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ Callers of <b>VideoPortWriteRegisterUchar</b> can be running at any IRQL, provid
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 16F04DFD-3AF6-48E0-9BCF-9FE0FC397F91
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDI_MAKERESIDENT, D3DDDI_MAKERESIDENT structure [Display Devices], D3DDDI_MAKERESIDENT, display.d3dddi_makeresident
+ms.keywords : D3DDDI_MAKERESIDENT, d3dukmdt/D3DDDI_MAKERESIDENT, display.d3dddi_makeresident, D3DDDI_MAKERESIDENT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -90,16 +90,14 @@ typedef struct D3DDDI_MAKERESIDENT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmakeresident.md">D3DKMTMakeResident</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_makeresidentcb.md">pfnMakeResidentCb</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmakeresident.md">D3DKMTMakeResident</a>
 
 <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_makeresident_flags.md">D3DDDI_MAKERESIDENT_FLAGS</a>
 

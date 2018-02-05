@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6f06e89c-5298-4335-ab9a-ef69e635152c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OnImpersonate, IImpersonateCallback::OnImpersonate, wudfddi/IImpersonateCallback::OnImpersonate, umdf.iimpersonatecallback_onimpersonate, IImpersonateCallback, UMDFRequestObjectRef_e3752371-61b0-44ba-af86-0cf244e27894.xml, OnImpersonate method, IImpersonateCallback interface, OnImpersonate method, wdf.iimpersonatecallback_onimpersonate, IImpersonateCallback interface, OnImpersonate method
+ms.keywords : wudfddi/IImpersonateCallback::OnImpersonate, wdf.iimpersonatecallback_onimpersonate, OnImpersonate method, IImpersonateCallback interface, umdf.iimpersonatecallback_onimpersonate, IImpersonateCallback::OnImpersonate, IImpersonateCallback, IImpersonateCallback interface, OnImpersonate method, UMDFRequestObjectRef_e3752371-61b0-44ba-af86-0cf244e27894.xml, OnImpersonate method, OnImpersonate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -77,20 +77,15 @@ For more information about how UMDF and UMDF drivers handle impersonation, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
+
+<a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f312e955-c8a5-4642-ac8a-a0173f034a63
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapi/RIL_ChangeCallBarringPassword, RIL_ChangeCallBarringPassword method [Network Drivers Starting with Windows Vista], netvista.ril_changecallbarringpassword, RIL_ChangeCallBarringPassword
+ms.keywords : rilapi/RIL_ChangeCallBarringPassword, RIL_ChangeCallBarringPassword method [Network Drivers Starting with Windows Vista], RIL_ChangeCallBarringPassword, netvista.ril_changecallbarringpassword
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

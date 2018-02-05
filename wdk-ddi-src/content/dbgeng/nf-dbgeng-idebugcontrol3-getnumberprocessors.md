@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b3f4af4e-dbba-4f14-8935-f894865cbe7d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3::GetNumberProcessors, IDebugControl3, debugger.getnumberprocessors, IDebugControl2::GetNumberProcessors, IDebugControl interface [Windows Debugging], GetNumberProcessors method, IDebugControl_0ddf74be-971f-4bd8-bdfd-4ceedfbbdc0f.xml, IDebugControl2 interface [Windows Debugging], GetNumberProcessors method, dbgeng/IDebugControl2::GetNumberProcessors, GetNumberProcessors method [Windows Debugging], IDebugControl interface, IDebugControl::GetNumberProcessors, dbgeng/IDebugControl::GetNumberProcessors, IDebugControl3 interface [Windows Debugging], GetNumberProcessors method, dbgeng/IDebugControl3::GetNumberProcessors, GetNumberProcessors method [Windows Debugging], GetNumberProcessors, GetNumberProcessors method [Windows Debugging], IDebugControl3 interface, GetNumberProcessors method [Windows Debugging], IDebugControl2 interface
+ms.keywords : IDebugControl::GetNumberProcessors, IDebugControl2::GetNumberProcessors, dbgeng/IDebugControl::GetNumberProcessors, IDebugControl_0ddf74be-971f-4bd8-bdfd-4ceedfbbdc0f.xml, debugger.getnumberprocessors, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetNumberProcessors method, dbgeng/IDebugControl3::GetNumberProcessors, GetNumberProcessors, GetNumberProcessors method [Windows Debugging], GetNumberProcessors method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::GetNumberProcessors, IDebugControl interface [Windows Debugging], GetNumberProcessors method, GetNumberProcessors method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetNumberProcessors method, IDebugControl3::GetNumberProcessors, GetNumberProcessors method [Windows Debugging], IDebugControl interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,11 +85,6 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

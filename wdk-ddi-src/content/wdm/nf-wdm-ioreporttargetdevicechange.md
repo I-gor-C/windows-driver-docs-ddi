@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b0107cb1-4828-4ede-813e-934b929c9874
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], wdm/IoReportTargetDeviceChange, kernel.ioreporttargetdevicechange, IoReportTargetDeviceChange
+ms.keywords : kernel.ioreporttargetdevicechange, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, wdm/IoReportTargetDeviceChange, IoReportTargetDeviceChange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -107,12 +107,11 @@ Callers of <b>IoReportTargetDeviceChange</b> must be running at IRQL = PASSIVE_L
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (see Remarks section) |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 

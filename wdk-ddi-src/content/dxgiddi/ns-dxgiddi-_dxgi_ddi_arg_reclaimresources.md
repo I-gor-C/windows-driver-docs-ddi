@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 43e34157-2cf1-4e2c-bcd8-c4425e89fb0f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_RECLAIMRESOURCES, dxgiddi/DXGI_DDI_ARG_RECLAIMRESOURCES, _DXGI_DDI_ARG_RECLAIMRESOURCES, DXGI_DDI_ARG_RECLAIMRESOURCES structure [Display Devices], display.dxgi_ddi_arg_reclaimresources
+ms.keywords : dxgiddi/DXGI_DDI_ARG_RECLAIMRESOURCES, display.dxgi_ddi_arg_reclaimresources, DXGI_DDI_ARG_RECLAIMRESOURCES structure [Display Devices], DXGI_DDI_ARG_RECLAIMRESOURCES, _DXGI_DDI_ARG_RECLAIMRESOURCES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,7 @@ If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8,WDDM 1.2 and later Windows 8,WDDM 1.2 and later |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

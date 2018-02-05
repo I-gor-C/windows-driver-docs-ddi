@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d41d0eba-14e3-48ff-874d-e52589cf716c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : AuxKlibGetBugCheckData routine [Kernel-Mode Driver Architecture], AuxKlibGetBugCheckData, kernel.auxklibgetbugcheckdata, aux_klib/AuxKlibGetBugCheckData, aux_klib_3cb977df-feb6-4b52-afa1-b5e3038fc287.xml
+ms.keywords : aux_klib/AuxKlibGetBugCheckData, AuxKlibGetBugCheckData routine [Kernel-Mode Driver Architecture], aux_klib_3cb977df-feb6-4b52-afa1-b5e3038fc287.xml, kernel.auxklibgetbugcheckdata, AuxKlibGetBugCheckData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,22 +70,18 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 2000. Supported starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | aux_klib.h (include Aux_klib.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Aux_Klib.lib |
 
 ## See Also
+
+<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
 
 <a href="..\aux_klib\ns-aux_klib-_kbugcheck_data.md">KBUGCHECK_DATA</a>
 
 <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
-
-<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
 
  
 

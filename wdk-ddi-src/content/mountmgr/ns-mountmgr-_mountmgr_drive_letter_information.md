@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ad8dc740-c297-43e7-beb9-d93019955fd3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.mountmgr_drive_letter_information, MOUNTMGR_DRIVE_LETTER_INFORMATION, PMOUNTMGR_DRIVE_LETTER_INFORMATION structure pointer [Storage Devices], mountmgr/PMOUNTMGR_DRIVE_LETTER_INFORMATION, MOUNTMGR_DRIVE_LETTER_INFORMATION structure [Storage Devices], PMOUNTMGR_DRIVE_LETTER_INFORMATION, mountmgr/MOUNTMGR_DRIVE_LETTER_INFORMATION, structs-mntmgr_19ece61a-9dda-466c-a414-047d71beeb2c.xml, *PMOUNTMGR_DRIVE_LETTER_INFORMATION, _MOUNTMGR_DRIVE_LETTER_INFORMATION
+ms.keywords : MOUNTMGR_DRIVE_LETTER_INFORMATION, _MOUNTMGR_DRIVE_LETTER_INFORMATION, MOUNTMGR_DRIVE_LETTER_INFORMATION structure [Storage Devices], storage.mountmgr_drive_letter_information, mountmgr/PMOUNTMGR_DRIVE_LETTER_INFORMATION, PMOUNTMGR_DRIVE_LETTER_INFORMATION structure pointer [Storage Devices], mountmgr/MOUNTMGR_DRIVE_LETTER_INFORMATION, structs-mntmgr_19ece61a-9dda-466c-a414-047d71beeb2c.xml, *PMOUNTMGR_DRIVE_LETTER_INFORMATION, PMOUNTMGR_DRIVE_LETTER_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MOUNTMGR_DRIVE_LETTER_INFORMATION, *PMOUNTMGR_DRIVE_LETTER_INFORMATION
+req.typenames : "*PMOUNTMGR_DRIVE_LETTER_INFORMATION, MOUNTMGR_DRIVE_LETTER_INFORMATION"
 ---
 
 # _MOUNTMGR_DRIVE_LETTER_INFORMATION structure
@@ -66,9 +66,6 @@ For a general discussion of the mount manager and how it communicates with its c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mountmgr.h (include Mountmgr.h) |
 
 ## See Also

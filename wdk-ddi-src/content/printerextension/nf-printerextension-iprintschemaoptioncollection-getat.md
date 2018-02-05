@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : B77297BF-09F7-46BD-A75F-D36E5E233E05
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetAt, print.iprintschemaoptioncollection_getat, GetAt method [Print Devices], IPrintSchemaOptionCollection::GetAt, IPrintSchemaOptionCollection, IPrintSchemaOptionCollection interface [Print Devices], GetAt method, printerextension/IPrintSchemaOptionCollection::GetAt, GetAt method [Print Devices], IPrintSchemaOptionCollection interface
+ms.keywords : IPrintSchemaOptionCollection::GetAt, GetAt method [Print Devices], IPrintSchemaOptionCollection interface, print.iprintschemaoptioncollection_getat, IPrintSchemaOptionCollection interface [Print Devices], GetAt method, IPrintSchemaOptionCollection, printerextension/IPrintSchemaOptionCollection::GetAt, GetAt, GetAt method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -71,20 +71,16 @@ Returns an <b>HRESULT</b> value. If the method call was not successful,  it retu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaoptioncollection.md">IPrintSchemaOptionCollection</a>
-
 <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
+
+<a href="..\printerextension\nn-printerextension-iprintschemaoptioncollection.md">IPrintSchemaOptionCollection</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a52087b5-81de-4945-9d1e-bea67915ced4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisgetsystemuptimeex, NdisGetSystemUpTimeEx function [Network Drivers Starting with Windows Vista], NdisGetSystemUpTimeEx, ndis/NdisGetSystemUpTimeEx, ndis_timer_ref_d487ece6-5ab0-4386-bd6e-1eaecbabf903.xml
+ms.keywords : netvista.ndisgetsystemuptimeex, ndis/NdisGetSystemUpTimeEx, NdisGetSystemUpTimeEx, NdisGetSystemUpTimeEx function [Network Drivers Starting with Windows Vista], ndis_timer_ref_d487ece6-5ab0-4386-bd6e-1eaecbabf903.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,11 @@ NDIS drivers should call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

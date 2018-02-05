@@ -102,22 +102,18 @@ HW_WORKITEM (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
 
 <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 
 <a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
-
-<a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
 
  
 

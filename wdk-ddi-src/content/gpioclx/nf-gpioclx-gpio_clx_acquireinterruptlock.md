@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : E0332415-1028-489B-AA81-DF8AEE0A28E8
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO_CLX_AcquireInterruptLock method [Parallel Ports], GPIO_CLX_AcquireInterruptLock, GPIO.gpio_clx_acquireinterruptlock, gpioclx/GPIO_CLX_AcquireInterruptLock
+ms.keywords : GPIO_CLX_AcquireInterruptLock method [Parallel Ports], GPIO.gpio_clx_acquireinterruptlock, GPIO_CLX_AcquireInterruptLock, gpioclx/GPIO_CLX_AcquireInterruptLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,11 @@ If the <i>Context</i> parameter is NULL or points to an invalid GPIO device cont
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | gpioclx.h |
-| **Library** |  |
+| **Library** | Msgpioclxstub.lib |
 | **IRQL** | DIRQL or at PASSIVE_LEVEL. See Remarks. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

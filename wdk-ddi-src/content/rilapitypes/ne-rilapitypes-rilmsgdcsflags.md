@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1bb5a365-1f8f-41d4-a3f5-6a4a7238de03
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilmsgdcsflags_2, RIL_DCSFLAG_ALL, RIL_DCSFLAG_COMPRESSED, RIL_DCSFLAG_INDICATIONACTIVE, rilapitypes/RIL_DCSFLAG_ALL, rilapitypes/RIL_DCSFLAG_DISCARD, RILMSGDCSFLAGS, rilapitypes/RILMSGDCSFLAGS, RIL_DCSFLAG_DISCARD, rilapitypes/RIL_DCSFLAG_INDICATIONACTIVE, rilapitypes/RIL_DCSFLAG_COMPRESSED, RILMSGDCSFLAGS enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : rilapitypes/RIL_DCSFLAG_ALL, rilapitypes/RILMSGDCSFLAGS, RILMSGDCSFLAGS, rilapitypes/RIL_DCSFLAG_INDICATIONACTIVE, RIL_DCSFLAG_DISCARD, rilapitypes/RIL_DCSFLAG_DISCARD, RIL_DCSFLAG_ALL, RIL_DCSFLAG_COMPRESSED, rilapitypes/RIL_DCSFLAG_COMPRESSED, RIL_DCSFLAG_INDICATIONACTIVE, netvista.rilmsgdcsflags_2, RILMSGDCSFLAGS enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILMSGDCSFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

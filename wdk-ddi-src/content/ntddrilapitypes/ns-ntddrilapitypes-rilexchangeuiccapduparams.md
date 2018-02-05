@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : be77f9e2-acf7-4b59-9a46-abda7c43817b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILEXCHANGEUICCAPDUPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilexchangeuiccapduparams, ntddrilapitypes/RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS
+ms.keywords : "*LPRILEXCHANGEUICCAPDUPARAMS, ntddrilapitypes/RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS structure [Network Drivers Starting with Windows Vista], RILEXCHANGEUICCAPDUPARAMS, netvista.rilexchangeuiccapduparams"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ typedef struct _RILEXCHANGEUICCAPDUPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

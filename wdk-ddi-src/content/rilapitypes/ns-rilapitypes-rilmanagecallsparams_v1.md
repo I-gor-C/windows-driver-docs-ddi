@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5c5113d2-30a5-4ec3-9566-d7d116cfa135
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilmanagecallsparams_v1_2, *LPRILMANAGECALLSPARAMS_V1, RILMANAGECALLSPARAMS_V1, RILMANAGECALLSPARAMS_V1 structure [Network Drivers Starting with Windows Vista], rilapitypes/RILMANAGECALLSPARAMS_V1
+ms.keywords : RILMANAGECALLSPARAMS_V1, RILMANAGECALLSPARAMS_V1 structure [Network Drivers Starting with Windows Vista], *LPRILMANAGECALLSPARAMS_V1, rilapitypes/RILMANAGECALLSPARAMS_V1, netvista.rilmanagecallsparams_v1_2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILMANAGECALLSPARAMS_V1, *LPRILMANAGECALLSPARAMS_V1
+req.typenames : "*LPRILMANAGECALLSPARAMS_V1, RILMANAGECALLSPARAMS_V1"
 req.product : Windows 10 or later.
 ---
 
@@ -70,7 +70,4 @@ typedef struct _RILMANAGECALLSPARAMS_V1 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

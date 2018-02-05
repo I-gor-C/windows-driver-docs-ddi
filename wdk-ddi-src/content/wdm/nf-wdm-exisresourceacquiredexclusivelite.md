@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 81c07809-1c66-4b68-b2d9-05992c778ae6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ExIsResourceAcquiredExclusiveLite routine [Kernel-Mode Driver Architecture], k102_ef023047-60ff-42aa-8224-37e2cfbe9f7b.xml, wdm/ExIsResourceAcquiredExclusiveLite, ExIsResourceAcquiredExclusiveLite, kernel.exisresourceacquiredexclusivelite
+ms.keywords : k102_ef023047-60ff-42aa-8224-37e2cfbe9f7b.xml, ExIsResourceAcquiredExclusiveLite, ExIsResourceAcquiredExclusiveLite routine [Kernel-Mode Driver Architecture], wdm/ExIsResourceAcquiredExclusiveLite, kernel.exisresourceacquiredexclusivelite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,12 +66,11 @@ A pointer to the resource to be queried.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 

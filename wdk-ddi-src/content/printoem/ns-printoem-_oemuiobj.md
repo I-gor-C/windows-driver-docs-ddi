@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ba9252ec-3aef-4e8c-a335-bde33686beae
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : POEMUIOBJ, print_unidrv-pscript_ui_ce37eb2d-06c0-4bca-88f0-c5ab836c9fd3.xml, OEMUIOBJ, OEMUIOBJ structure [Print Devices], POEMUIOBJ structure pointer [Print Devices], print.oemuiobj, printoem/POEMUIOBJ, printoem/OEMUIOBJ, *POEMUIOBJ, _OEMUIOBJ
+ms.keywords : "*POEMUIOBJ, OEMUIOBJ structure [Print Devices], printoem/OEMUIOBJ, print_unidrv-pscript_ui_ce37eb2d-06c0-4bca-88f0-c5ab836c9fd3.xml, OEMUIOBJ, POEMUIOBJ, POEMUIOBJ structure pointer [Print Devices], print.oemuiobj, _OEMUIOBJ, printoem/POEMUIOBJ"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*POEMUIOBJ, OEMUIOBJ"
+req.typenames : OEMUIOBJ, *POEMUIOBJ
 req.product : Windows 10 or later.
 ---
 
@@ -67,7 +67,4 @@ User interface plug-ins do not need to reference an OEMUIOBJ structure's members
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |

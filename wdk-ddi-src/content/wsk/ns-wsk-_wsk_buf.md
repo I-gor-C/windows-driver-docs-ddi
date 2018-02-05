@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bef653d3-5de3-4af3-8c1f-cff55619e2e9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wskref_38d35e0c-e08d-4be7-b5c8-0559774d5de0.xml, *PWSK_BUF, netvista.wsk_buf, wsk/PWSK_BUF, WSK_BUF, WSK_BUF structure [Network Drivers Starting with Windows Vista], wsk/WSK_BUF, _WSK_BUF, PWSK_BUF structure pointer [Network Drivers Starting with Windows Vista], PWSK_BUF
+ms.keywords : wsk/WSK_BUF, PWSK_BUF, WSK_BUF, _WSK_BUF, netvista.wsk_buf, wskref_38d35e0c-e08d-4be7-b5c8-0559774d5de0.xml, *PWSK_BUF, wsk/PWSK_BUF, PWSK_BUF structure pointer [Network Drivers Starting with Windows Vista], WSK_BUF structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,9 +96,7 @@ When a WSK application passes a pointer to a WSK_BUF structure to the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also
@@ -107,13 +105,13 @@ When a WSK application passes a pointer to a WSK_BUF structure to the
 
 <a href="..\wsk\ns-wsk-_wsk_data_indication.md">WSK_DATA_INDICATION</a>
 
-<a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a>
-
-<a href="..\wsk\nc-wsk-pfn_wsk_send_to.md">WskSendTo</a>
-
 <a href="..\wsk\ns-wsk-_wsk_datagram_indication.md">WSK_DATAGRAM_INDICATION</a>
 
+<a href="..\wsk\nc-wsk-pfn_wsk_disconnect.md">WskDisconnect</a>
+
 <a href="..\wsk\nc-wsk-pfn_wsk_receive.md">WskReceive</a>
+
+<a href="..\wsk\nc-wsk-pfn_wsk_send_to.md">WskSendTo</a>
 
 <a href="..\wsk\nc-wsk-pfn_wsk_receive_from.md">WskReceiveFrom</a>
 

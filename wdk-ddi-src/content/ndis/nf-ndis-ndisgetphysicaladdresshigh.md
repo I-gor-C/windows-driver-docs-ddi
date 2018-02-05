@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 17f8c6dd-7235-4ad0-bc3a-e801b53956ce
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisgetphysicaladdresshigh, miniport_memory_shared_ref_911e11c6-b90a-4805-83b9-0d75225917e0.xml, NdisGetPhysicalAddressHigh macro [Network Drivers Starting with Windows Vista], ndis/NdisGetPhysicalAddressHigh, NdisGetPhysicalAddressHigh
+ms.keywords : NdisGetPhysicalAddressHigh, netvista.ndisgetphysicaladdresshigh, NdisGetPhysicalAddressHigh macro [Network Drivers Starting with Windows Vista], ndis/NdisGetPhysicalAddressHigh, miniport_memory_shared_ref_911e11c6-b90a-4805-83b9-0d75225917e0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -54,7 +54,7 @@ ULONG NdisGetPhysicalAddressHigh(
 
 `_PhysicalAddress`
 
-TBD
+Specifies a physical address of an OS-dependent size.
 
 
 ## Return Value
@@ -65,14 +65,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetPhysicalAddressHigh   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetPhysicalAddressHigh   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetPhysicalAddressHigh   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetPhysicalAddressHigh   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

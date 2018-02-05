@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aa127aa2-8002-4e96-8822-ed66291edf6e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, netvista.ndis_sriov_read_vf_config_space_parameters, ntddndis/NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, *PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, ntddndis/PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, netvista.ndis_sriov_read_vf_config_space_parameters, PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, *PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, ntddndis/NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, _NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, *PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS
+req.typenames : "*PNDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS"
 ---
 
 # _NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS structure
@@ -95,9 +95,7 @@ The <b>NDIS_SRIOV_READ_VF_CONFIG_SPACE_PARAMETERS</b> structure is used in OID m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

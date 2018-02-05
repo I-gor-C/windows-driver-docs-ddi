@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ed9a5391-135d-4ac2-8b72-6a92d3ff9998
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : AVCSTRM_BUFFER_STRUCT structure [Streaming Media Devices], avcstrm/PAVCSTRM_BUFFER_STRUCT, AVCSTRM_BUFFER_STRUCT, _AVCSTRM_BUFFER_STRUCT, avcstrm/AVCSTRM_BUFFER_STRUCT, PAVCSTRM_BUFFER_STRUCT structure pointer [Streaming Media Devices], PAVCSTRM_BUFFER_STRUCT, avcsref_9cec2cfb-d187-4349-b443-894f881f5108.xml, *PAVCSTRM_BUFFER_STRUCT, stream.avcstrm_buffer_struct
+ms.keywords : stream.avcstrm_buffer_struct, AVCSTRM_BUFFER_STRUCT, *PAVCSTRM_BUFFER_STRUCT, _AVCSTRM_BUFFER_STRUCT, avcsref_9cec2cfb-d187-4349-b443-894f881f5108.xml, avcstrm/PAVCSTRM_BUFFER_STRUCT, AVCSTRM_BUFFER_STRUCT structure [Streaming Media Devices], PAVCSTRM_BUFFER_STRUCT structure pointer [Streaming Media Devices], PAVCSTRM_BUFFER_STRUCT, avcstrm/AVCSTRM_BUFFER_STRUCT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PAVCSTRM_BUFFER_STRUCT, AVCSTRM_BUFFER_STRUCT"
+req.typenames : AVCSTRM_BUFFER_STRUCT, *PAVCSTRM_BUFFER_STRUCT
 ---
 
 # _AVCSTRM_BUFFER_STRUCT structure
@@ -79,9 +79,6 @@ Pointer to a kernel streaming header that describes a packet of data to be read 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
 ## See Also

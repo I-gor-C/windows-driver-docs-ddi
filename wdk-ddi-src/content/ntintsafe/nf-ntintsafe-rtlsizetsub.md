@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : B7508B3B-DCE7-42F4-9257-E1E140625DA9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlSizeTSub, kernel.rtlsizetsub, RtlSizeTSub function [Kernel-Mode Driver Architecture], RtlSizeTSub
+ms.keywords : RtlSizeTSub function [Kernel-Mode Driver Architecture], ntintsafe/RtlSizeTSub, kernel.rtlsizetsub, RtlSizeTSub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8d798afe-dc75-4cd0-aad7-1f9824bdcf00
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_VideoTransFunc_28, d3dumddi/DXVADDI_VideoTransFunc_28, d3dumddi/DXVADDI_VideoTransFunc_sRGB, d3dumddi/DXVADDI_VideoTransFunc_Unknown, d3dumddi/DXVADDI_VideoTransFunc_18, DXVADDI_VideoTransFunc_22, d3dumddi/DXVADDI_VideoTransFunc_20, DXVADDI_VideoTransFunc_Unknown, DXVADDI_VideoTransFunc_20, d3dumddi/DXVADDI_VideoTransFunc_240M, d3dumddi/DXVADDI_VideoTransFunc_22, DXVA2_Structs_a6fcb795-da10-4824-99b3-5f75a50a17ce.xml, d3dumddi/DXVADDI_VideoTransFunc_709, DXVADDI_VideoTransFunc_18, DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VideoTransFuncMask, DXVADDI_VIDEOTRANSFERFUNCTION enumeration [Display Devices], display.dxvaddi_videotransferfunction, DXVADDI_VideoTransFunc_709, d3dumddi/DXVADDI_VideoTransFunc_10, DXVADDI_VideoTransFuncMask, DXVADDI_VideoTransFunc_10, DXVADDI_VideoTransFunc_sRGB, _DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VIDEOTRANSFERFUNCTION, DXVADDI_VideoTransFunc_240M
+ms.keywords : d3dumddi/DXVADDI_VideoTransFunc_20, DXVADDI_VideoTransFunc_20, d3dumddi/DXVADDI_VideoTransFunc_22, _DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VideoTransFunc_10, DXVADDI_VideoTransFunc_28, DXVADDI_VideoTransFunc_sRGB, DXVADDI_VideoTransFunc_10, d3dumddi/DXVADDI_VideoTransFunc_sRGB, DXVADDI_VideoTransFunc_22, DXVADDI_VIDEOTRANSFERFUNCTION, DXVADDI_VideoTransFunc_18, DXVA2_Structs_a6fcb795-da10-4824-99b3-5f75a50a17ce.xml, d3dumddi/DXVADDI_VideoTransFunc_Unknown, DXVADDI_VideoTransFuncMask, d3dumddi/DXVADDI_VideoTransFunc_18, DXVADDI_VideoTransFunc_709, d3dumddi/DXVADDI_VideoTransFunc_709, d3dumddi/DXVADDI_VideoTransFunc_240M, d3dumddi/DXVADDI_VideoTransFunc_28, DXVADDI_VideoTransFunc_240M, DXVADDI_VideoTransFunc_Unknown, display.dxvaddi_videotransferfunction, d3dumddi/DXVADDI_VideoTransFuncMask, d3dumddi/DXVADDI_VIDEOTRANSFERFUNCTION, DXVADDI_VIDEOTRANSFERFUNCTION enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -141,9 +141,7 @@ The following constants can also be used for gamma function:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 155D1C71-7935-4512-8AA2-0EB167FCBF5E
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DecodeLengthType_Discrete, pointofservicecommontypes/BarcodeSymbologyDecodeLengthType, DecodeLengthType_Range, _BarcodeSymbologyDecodeLengthType, pointofservicecommontypes/DecodeLengthType_Range, BarcodeSymbologyDecodeLengthType, pointofservicecommontypes/DecodeLengthType_AnyLength, BarcodeSymbologyDecodeLengthType enumeration, pos.barcodesymbologydecodelengthtype, pointofservicecommontypes/DecodeLengthType_Discrete, DecodeLengthType_AnyLength
+ms.keywords : pointofservicecommontypes/BarcodeSymbologyDecodeLengthType, BarcodeSymbologyDecodeLengthType enumeration, DecodeLengthType_Discrete, pointofservicecommontypes/DecodeLengthType_AnyLength, pointofservicecommontypes/DecodeLengthType_Discrete, pos.barcodesymbologydecodelengthtype, _BarcodeSymbologyDecodeLengthType, DecodeLengthType_AnyLength, DecodeLengthType_Range, pointofservicecommontypes/DecodeLengthType_Range, BarcodeSymbologyDecodeLengthType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _BarcodeSymbologyDecodeLengthType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h |

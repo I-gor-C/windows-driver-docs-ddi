@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ce5f2833-7df6-449b-be68-ed58620fbb43
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.dot11_erp_phy_attributes, windot11/PDOT11_ERP_PHY_ATTRIBUTES, Native_802.11_data_types_ca561d35-8793-4e0f-8c56-81bd58365f08.xml, PDOT11_ERP_PHY_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_ERP_PHY_ATTRIBUTES, windot11/DOT11_ERP_PHY_ATTRIBUTES, DOT11_ERP_PHY_ATTRIBUTES, DOT11_ERP_PHY_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PDOT11_ERP_PHY_ATTRIBUTES
+ms.keywords : DOT11_ERP_PHY_ATTRIBUTES, PDOT11_ERP_PHY_ATTRIBUTES, Native_802.11_data_types_ca561d35-8793-4e0f-8c56-81bd58365f08.xml, DOT11_ERP_PHY_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], netvista.dot11_erp_phy_attributes, windot11/DOT11_ERP_PHY_ATTRIBUTES, PDOT11_ERP_PHY_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_ERP_PHY_ATTRIBUTES, windot11/PDOT11_ERP_PHY_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_ERP_PHY_ATTRIBUTES, DOT11_ERP_PHY_ATTRIBUTES"
+req.typenames : DOT11_ERP_PHY_ATTRIBUTES, *PDOT11_ERP_PHY_ATTRIBUTES
 req.product : Windows 10 or later.
 ---
 
@@ -87,8 +87,8 @@ A Boolean value that, if set to <b>TRUE</b>, specifies the PHY supports the 802.
 
 Since the ERP PHY type is a superset of the high-rate direct-sequence spread spectrum (HRDSS) PHY
      type, the start of the DOT11_ERP_PHY_ATTRIBUTES structure is formatted as a 
-     <mshelp:link keywords="netvista.dot11_hrdsss_phy_attributes" tabindex="0"><b>
-     DOT11_HRDSSS_PHY_ATTRIBUTES</b></mshelp:link> structure in order to define the HRDSS-specific attributes of the
+     <a href="..\windot11\ns-windot11-dot11_hrdsss_phy_attributes.md">
+     DOT11_HRDSSS_PHY_ATTRIBUTES</a> structure in order to define the HRDSS-specific attributes of the
      PHY.
 
 ## Remarks
@@ -101,16 +101,14 @@ The miniport driver defines the attributes of a PHY on the 802.11 station throug
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\windot11\ns-windot11-dot11_hrdsss_phy_attributes.md">DOT11_HRDSSS_PHY_ATTRIBUTES</a>
-
 <a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
+
+<a href="..\windot11\ns-windot11-dot11_hrdsss_phy_attributes.md">DOT11_HRDSSS_PHY_ATTRIBUTES</a>
 
  
 

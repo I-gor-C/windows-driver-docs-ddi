@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 78d2ec8f-fbee-4bad-bc84-b10495c24399
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_APP_ID, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_APP_ID, wfp_ref_5_const_3_data_fields_53aef03d-34ba-4bfa-81fd-5329f78dcab7.xml, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_IP_REMOTE_ADDRESS, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_USER_ID, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6_, netvista.fwps_fields_name_resolution_cache_v6, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_USER_ID, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_PEER_NAME, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_MAX, fwpsk/FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_MAX, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_PEER_NAME, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6 enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.fwps_fields_name_resolution_cache_v6, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_PEER_NAME, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_USER_ID, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_IP_REMOTE_ADDRESS, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_PEER_NAME, fwpsk/FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_MAX, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_USER_ID, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6_, wfp_ref_5_const_3_data_fields_53aef03d-34ba-4bfa-81fd-5329f78dcab7.xml, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_ALE_APP_ID, FWPS_FIELD_NAME_RESOLUTION_CACHE_V6_MAX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -94,7 +94,5 @@ typedef enum FWPS_FIELDS_NAME_RESOLUTION_CACHE_V6_ {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 7. Supported starting with Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |

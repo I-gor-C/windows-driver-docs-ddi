@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dc68f6d8-a2d5-4940-a708-fe761c3a8a0d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSDEVICE_DESCRIPTOR, ks/PKSDEVICE_DESCRIPTOR, _KSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR, PKSDEVICE_DESCRIPTOR, stream.ksdevice_descriptor, avstruct_b51d9c2c-278f-4357-b84a-da6959ea9959.xml, PKSDEVICE_DESCRIPTOR structure pointer [Streaming Media Devices], ks/KSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR structure [Streaming Media Devices]"
+ms.keywords : ks/KSDEVICE_DESCRIPTOR, avstruct_b51d9c2c-278f-4357-b84a-da6959ea9959.xml, PKSDEVICE_DESCRIPTOR structure pointer [Streaming Media Devices], _KSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR, PKSDEVICE_DESCRIPTOR, ks/PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR structure [Streaming Media Devices], stream.ksdevice_descriptor, *PKSDEVICE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR"
+req.typenames : KSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR
 ---
 
 # _KSDEVICE_DESCRIPTOR structure
@@ -65,22 +65,20 @@ Similarly, using an earlier version descriptor on later versions of AVStream cau
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
 
+<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
+
 <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
+
+<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 
 <a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
 
 <a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
-
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
-
-<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
 
  
 

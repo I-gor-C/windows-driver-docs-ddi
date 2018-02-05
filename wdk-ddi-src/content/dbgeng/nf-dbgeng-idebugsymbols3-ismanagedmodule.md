@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : AECBA6E8-B030-4418-A561-9E48B4880D15
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], IsManagedModule method, IsManagedModule method [Windows Debugging], IDebugSymbols3 interface, IsManagedModule, IsManagedModule method [Windows Debugging], debugger.idebugsymbols3_ismanagedmodule, dbgeng/IDebugSymbols3::IsManagedModule, IDebugSymbols3, IDebugSymbols3::IsManagedModule
+ms.keywords : dbgeng/IDebugSymbols3::IsManagedModule, IDebugSymbols3::IsManagedModule, debugger.idebugsymbols3_ismanagedmodule, IsManagedModule, IDebugSymbols3 interface [Windows Debugging], IsManagedModule method, IDebugSymbols3, IsManagedModule method [Windows Debugging], IDebugSymbols3 interface, IsManagedModule method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -77,14 +77,9 @@ It can be expensive to run this check.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

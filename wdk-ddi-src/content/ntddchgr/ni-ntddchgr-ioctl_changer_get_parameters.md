@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ELEMENT_TYPE, *PELEMENT_TYPE
+req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_GET_PARAMETERS IOCTL
@@ -69,9 +69,7 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddchgr.h (include Ntddchgr.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : powermeter
 ms.assetid : c2a8422d-15f0-45df-bc54-946fb3d11a22
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PmiConfigurationChangedEvent, powermeter.pmi_event_type, PmiThresholdEvent, PMI_EVENT_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiThresholdEvent, PmiEventMax, pmi/PmiEventMax, pmi/PmiConfigurationChangedEvent, PmiAveragingIntervalChangedEvent, pmi/PMI_EVENT_TYPE, PmiCapabilitiesChangedEvent, pmi/PmiBudgetEvent, PmiBudgetEvent, PowerMeterRef_86ff4160-2977-4b72-a37f-72779df2d5dc.xml, pmi/PmiAveragingIntervalChangedEvent, PMI_EVENT_TYPE, pmi/PmiCapabilitiesChangedEvent
+ms.keywords : pmi/PmiCapabilitiesChangedEvent, PmiConfigurationChangedEvent, PmiCapabilitiesChangedEvent, PmiThresholdEvent, pmi/PmiConfigurationChangedEvent, pmi/PMI_EVENT_TYPE, PmiEventMax, powermeter.pmi_event_type, PmiAveragingIntervalChangedEvent, pmi/PmiEventMax, PowerMeterRef_86ff4160-2977-4b72-a37f-72779df2d5dc.xml, PMI_EVENT_TYPE, pmi/PmiAveragingIntervalChangedEvent, PMI_EVENT_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiThresholdEvent, PmiBudgetEvent, pmi/PmiBudgetEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -95,9 +95,7 @@ The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
 ## See Also

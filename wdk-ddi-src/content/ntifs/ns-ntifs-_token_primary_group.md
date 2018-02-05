@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9c9a7f63-7fe8-48a9-b4d0-10586e6b86bc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.token_primary_group, ntifs/PTOKEN_PRIMARY_GROUP, TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP, TOKEN_PRIMARY_GROUP structure [Installable File System Drivers], securitystructures_8d3bc1f9-abc5-4ac3-8351-cf2c56db6a20.xml, ntifs/TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP structure pointer [Installable File System Drivers], *PTOKEN_PRIMARY_GROUP, _TOKEN_PRIMARY_GROUP
+ms.keywords : TOKEN_PRIMARY_GROUP structure [Installable File System Drivers], *PTOKEN_PRIMARY_GROUP, ntifs/TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP structure pointer [Installable File System Drivers], securitystructures_8d3bc1f9-abc5-4ac3-8351-cf2c56db6a20.xml, TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP, _TOKEN_PRIMARY_GROUP, ntifs/PTOKEN_PRIMARY_GROUP, ifsk.token_primary_group
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTOKEN_PRIMARY_GROUP, TOKEN_PRIMARY_GROUP"
+req.typenames : TOKEN_PRIMARY_GROUP, *PTOKEN_PRIMARY_GROUP
 ---
 
 # _TOKEN_PRIMARY_GROUP structure
@@ -59,9 +59,6 @@ Pointer to a SID structure representing a group that will become the primary gro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also
@@ -72,9 +69,9 @@ Pointer to a SID structure representing a group that will become the primary gro
 
 <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
 
-<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
-
 <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
+
+<a href="..\ntifs\ne-ntifs-_token_information_class.md">TOKEN_INFORMATION_CLASS</a>
 
  
 

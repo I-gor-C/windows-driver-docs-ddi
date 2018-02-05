@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 464AE3EA-D941-430F-8362-B66F4D00AE50
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STOR_ADDRESS_TYPE_BTL8, _STOR_ADDRESS, STOR_ADDRESS structure [Storage Devices], PSTOR_ADDRESS, PSTOR_ADDRESS structure pointer [Storage Devices], *PSTOR_ADDRESS, storport/STOR_ADDRESS, storage.stor_address, STOR_ADDRESS_TYPE_UNKNOWN, storport/PSTOR_ADDRESS, STOR_ADDRESS
+ms.keywords : STOR_ADDRESS_TYPE_BTL8, PSTOR_ADDRESS structure pointer [Storage Devices], storport/PSTOR_ADDRESS, STOR_ADDRESS_TYPE_UNKNOWN, STOR_ADDRESS, _STOR_ADDRESS, storage.stor_address, STOR_ADDRESS structure [Storage Devices], PSTOR_ADDRESS, *PSTOR_ADDRESS, storport/STOR_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -101,16 +101,14 @@ The address is an 8-bit Bus-Target-LUN address.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
 | **Header** | scsi.h (include Storport.h, Scsi.h) |
 
 ## See Also
 
-<a href="..\storport\ns-storport-_stor_addr_btl8.md">STOR_ADDR_BTL8</a>
-
 <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
+
+<a href="..\storport\ns-storport-_stor_addr_btl8.md">STOR_ADDR_BTL8</a>
 
  
 

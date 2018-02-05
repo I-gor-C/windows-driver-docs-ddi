@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 04cbc86b-a977-43bd-a736-3a7258c671fd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_acfcf9f4-819a-4fc5-ae4f-214a78059e7a.xml, display.videoportgetcurrentirql, video/VideoPortGetCurrentIrql, VideoPortGetCurrentIrql function [Display Devices], VideoPortGetCurrentIrql
+ms.keywords : VideoPort_Functions_acfcf9f4-819a-4fc5-ae4f-214a78059e7a.xml, VideoPortGetCurrentIrql function [Display Devices], video/VideoPortGetCurrentIrql, display.videoportgetcurrentirql, VideoPortGetCurrentIrql
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,11 +61,9 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f715d45c-30e1-414f-907c-9ad1203ca604
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_FCPBinding2 structure [Storage Devices], HBA_FCPBinding2, hbaapi/PHBA_FCPBINDING2, PHBA_FCPBINDING2 structure pointer [Storage Devices], *PHBA_FCPBINDING2, PHBA_FCPBINDING2, structs-Fibre_b19a2c46-204e-4500-a4ed-9e3949941093.xml, hbaapi/HBA_FCPBinding2, HBA_FCPBINDING2 structure [Storage Devices], HBA_FCPBINDING2, storage.hba_fcpbinding2
+ms.keywords : hbaapi/PHBA_FCPBINDING2, HBA_FCPBINDING2, structs-Fibre_b19a2c46-204e-4500-a4ed-9e3949941093.xml, HBA_FCPBinding2, HBA_FCPBinding2 structure [Storage Devices], PHBA_FCPBINDING2 structure pointer [Storage Devices], hbaapi/HBA_FCPBinding2, HBA_FCPBINDING2 structure [Storage Devices], PHBA_FCPBINDING2, *PHBA_FCPBINDING2, storage.hba_fcpbinding2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Indicates, on input, the number of bindings that can fit in the array at <b>entr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also

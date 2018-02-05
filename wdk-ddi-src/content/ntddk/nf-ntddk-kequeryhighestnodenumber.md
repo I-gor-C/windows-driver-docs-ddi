@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e92387db-0c35-40c8-8342-4b1bf498aa1a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KeQueryHighestNodeNumber, KeQueryHighestNodeNumber routine [Kernel-Mode Driver Architecture], kernel.kequeryhighestnodenumber, k105_3d91d159-3bbb-445b-874b-a6d1a8b078df.xml, KeQueryHighestNodeNumber
+ms.keywords : wdm/KeQueryHighestNodeNumber, KeQueryHighestNodeNumber routine [Kernel-Mode Driver Architecture], KeQueryHighestNodeNumber, k105_3d91d159-3bbb-445b-874b-a6d1a8b078df.xml, kernel.kequeryhighestnodenumber
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,9 @@ After the system has been initialized, the node count remains fixed while the sy
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

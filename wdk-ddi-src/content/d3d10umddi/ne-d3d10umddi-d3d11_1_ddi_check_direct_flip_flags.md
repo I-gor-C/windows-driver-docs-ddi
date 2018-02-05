@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : beead760-8f93-48da-b2fc-2f8a0031019c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_CHECK_DIRECT_FLIP_IMMEDIATE, display.d3d11_1_ddi_check_direct_flip_flags, D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS enumeration [Display Devices], d3d10umddi/D3D11_1DDI_CHECK_DIRECT_FLIP_IMMEDIATE, d3d10umddi/D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS, D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS
+ms.keywords : d3d10umddi/D3D11_1DDI_CHECK_DIRECT_FLIP_IMMEDIATE, D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS, display.d3d11_1_ddi_check_direct_flip_flags, D3D11_1DDI_CHECK_DIRECT_FLIP_IMMEDIATE, d3d10umddi/D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS, D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -62,9 +62,7 @@ typedef enum D3D11_1_DDI_CHECK_DIRECT_FLIP_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

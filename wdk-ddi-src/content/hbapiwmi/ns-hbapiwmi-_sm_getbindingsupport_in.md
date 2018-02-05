@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c89d86fe-fe8c-48d2-a5c2-7971ea96b7ad
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SM_GetBindingSupport_IN structure [Storage Devices], hbapiwmi/SM_GetBindingSupport_IN, _SM_GetBindingSupport_IN, structs-Fibre_f13c3a99-7626-4dda-b0f2-8505b7aff3b5.xml, storage.sm_getbindingsupport_in, SM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN, PSM_GetBindingSupport_IN, PSM_GetBindingSupport_IN structure pointer [Storage Devices], hbapiwmi/PSM_GetBindingSupport_IN
+ms.keywords : PSM_GetBindingSupport_IN structure pointer [Storage Devices], SM_GetBindingSupport_IN, PSM_GetBindingSupport_IN, storage.sm_getbindingsupport_in, SM_GetBindingSupport_IN structure [Storage Devices], hbapiwmi/SM_GetBindingSupport_IN, _SM_GetBindingSupport_IN, hbapiwmi/PSM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN, structs-Fibre_f13c3a99-7626-4dda-b0f2-8505b7aff3b5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSM_GetBindingSupport_IN, SM_GetBindingSupport_IN"
+req.typenames : SM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN
 ---
 
 # _SM_GetBindingSupport_IN structure
@@ -66,7 +66,4 @@ The WMI tool suite generates a declaration of the SM_GetBindingSupport_IN struct
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : DB3C0439-EB82-4E49-8FEA-003C1B4A9EE0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SetViewRange method [Print Devices], IPrinterQueueView interface, print.iprinterqueueview_setviewrange, SetViewRange, SetViewRange method [Print Devices], printerextension/IPrinterQueueView::SetViewRange, IPrinterQueueView interface [Print Devices], SetViewRange method, IPrinterQueueView::SetViewRange, IPrinterQueueView
+ms.keywords : IPrinterQueueView interface [Print Devices], SetViewRange method, printerextension/IPrinterQueueView::SetViewRange, SetViewRange method [Print Devices], IPrinterQueueView interface, SetViewRange, IPrinterQueueView, print.iprinterqueueview_setviewrange, SetViewRange method [Print Devices], IPrinterQueueView::SetViewRange
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,14 +75,10 @@ Invoking this method causes the events for status change to the jobs to be fired
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

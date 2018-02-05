@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e715c0b5-8f72-4642-9a48-2066df0a2650
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k103_c8549446-4478-4c5d-82c2-55e963c81cf3.xml, kernel.write_port_buffer_ushort, WRITE_PORT_BUFFER_USHORT routine [Kernel-Mode Driver Architecture], wdm/WRITE_PORT_BUFFER_USHORT, WRITE_PORT_BUFFER_USHORT
+ms.keywords : k103_c8549446-4478-4c5d-82c2-55e963c81cf3.xml, WRITE_PORT_BUFFER_USHORT, WRITE_PORT_BUFFER_USHORT routine [Kernel-Mode Driver Architecture], wdm/WRITE_PORT_BUFFER_USHORT, kernel.write_port_buffer_ushort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,8 @@ Callers of <b>WRITE_PORT_BUFFER_USHORT</b> can be running at any IRQL, assuming 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Hal.lib |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |

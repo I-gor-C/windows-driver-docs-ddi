@@ -43,10 +43,10 @@ req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 The 
   <i>ProtocolCmNotifyCloseAfComplete</i> function indicates that a client has completed the closing of an
   address family (AF) that a stand-alone call manager or miniport call manager (MCM) started by calling the 
-  <mshelp:link keywords="netvista.ndiscmnotifycloseaddressfamily" tabindex="0"><b>
-  NdisCmNotifyCloseAddressFamily</b></mshelp:link> or 
-  <mshelp:link keywords="netvista.ndismcmnotifycloseaddressfamily" tabindex="0"><b>
-  NdisMCmNotifyCloseAddressFamily</b></mshelp:link> function, respectively.
+  <a href="..\ndis\nf-ndis-ndiscmnotifycloseaddressfamily.md">
+  NdisCmNotifyCloseAddressFamily</a> or 
+  <a href="..\ndis\nf-ndis-ndismcmnotifycloseaddressfamily.md">
+  NdisMCmNotifyCloseAddressFamily</a> function, respectively.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE</b> type.
    For more information, see the following Examples section.</div><div> </div>
 
@@ -99,11 +99,11 @@ The
 
 If a stand-alone call manager will unbind from an underlying miniport adapter, the call manager must
     call the 
-    <mshelp:link keywords="netvista.ndiscmnotifycloseaddressfamily" tabindex="0"><b>
-    NdisCmNotifyCloseAddressFamily</b></mshelp:link> function before unbinding. When a miniport call manager (MCM) halts
+    <a href="..\ndis\nf-ndis-ndiscmnotifycloseaddressfamily.md">
+    NdisCmNotifyCloseAddressFamily</a> function before unbinding. When a miniport call manager (MCM) halts
     a miniport adapter, the MCM must call the 
-    <mshelp:link keywords="netvista.ndismcmnotifycloseaddressfamily" tabindex="0"><b>
-    NdisMCmNotifyCloseAddressFamily</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndismcmnotifycloseaddressfamily.md">
+    NdisMCmNotifyCloseAddressFamily</a> function.
 
 If 
     <b>NdisCmNotifyCloseAddressFamily</b> or 
@@ -147,24 +147,20 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndismcmnotifycloseaddressfamily" tabindex="0"><b>
-   NdisMCmNotifyCloseAddressFamily</b></mshelp:link>
-
-<mshelp:link keywords="netvista.ndiscmnotifycloseaddressfamily" tabindex="0"><b>
-   NdisCmNotifyCloseAddressFamily</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiscmnotifycloseaddressfamily.md">
+   NdisCmNotifyCloseAddressFamily</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
+
+<a href="..\ndis\nf-ndis-ndismcmnotifycloseaddressfamily.md">
+   NdisMCmNotifyCloseAddressFamily</a>
 
  
 

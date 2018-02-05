@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 34d53daa-3501-4532-82e3-e5b0ed452b66
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : dot11wdi/WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PeerCfgQosCapable, WDI_TXRX_PeerCfgQosUapsdTids, dot11wdi/WDI_TXRX_PeerCfgQosCapable, dot11wdi/WDI_TXRX_PeerCfgQosUapsdTids, _WDI_TXRX_PEER_QOS_CAPS, netvista.wdi_txrx_peer_qos_caps, dot11wdi/WDI_TXRX_PeerCfgQosNone, netvista.wifi_txrx_peer_qos_caps, WDI_TXRX_PEER_QOS_CAPS enumeration [Network Drivers Starting with Windows Vista], WDI_TXRX_PeerCfgQosNone
+ms.keywords : "_WDI_TXRX_PEER_QOS_CAPS, dot11wdi/WDI_TXRX_PeerCfgQosNone, netvista.wifi_txrx_peer_qos_caps, WDI_TXRX_PEER_QOS_CAPS enumeration [Network Drivers Starting with Windows Vista], netvista.wdi_txrx_peer_qos_caps, dot11wdi/WDI_TXRX_PeerCfgQosUapsdTids, WDI_TXRX_PeerCfgQosUapsdTids, WDI_TXRX_PeerCfgQosCapable, WDI_TXRX_PeerCfgQosNone, dot11wdi/WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PEER_QOS_CAPS, dot11wdi/WDI_TXRX_PeerCfgQosCapable"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum _WDI_TXRX_PEER_QOS_CAPS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |

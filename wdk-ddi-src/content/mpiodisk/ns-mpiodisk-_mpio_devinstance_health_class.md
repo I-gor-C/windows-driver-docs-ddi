@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 6d0afab5-4aba-4ebc-a864-85c83cf464d0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_MPIO_DEVINSTANCE_HEALTH_CLASS, *PMPIO_DEVINSTANCE_HEALTH_CLASS, MPIO_DEVINSTANCE_HEALTH_CLASS structure [Storage Devices], mpiodisk/MPIO_DEVINSTANCE_HEALTH_CLASS, PMPIO_DEVINSTANCE_HEALTH_CLASS structure pointer [Storage Devices], MPIO_DEVINSTANCE_HEALTH_CLASS, mpiodisk/PMPIO_DEVINSTANCE_HEALTH_CLASS, storage.mpio_devinstance_health_class, structs-scsibus_aae91588-5920-42bb-8c74-13604bed0bfc.xml, PMPIO_DEVINSTANCE_HEALTH_CLASS"
+ms.keywords : "_MPIO_DEVINSTANCE_HEALTH_CLASS, structs-scsibus_aae91588-5920-42bb-8c74-13604bed0bfc.xml, MPIO_DEVINSTANCE_HEALTH_CLASS, mpiodisk/PMPIO_DEVINSTANCE_HEALTH_CLASS, PMPIO_DEVINSTANCE_HEALTH_CLASS, storage.mpio_devinstance_health_class, PMPIO_DEVINSTANCE_HEALTH_CLASS structure pointer [Storage Devices], MPIO_DEVINSTANCE_HEALTH_CLASS structure [Storage Devices], *PMPIO_DEVINSTANCE_HEALTH_CLASS, mpiodisk/MPIO_DEVINSTANCE_HEALTH_CLASS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : MPIO_DEVINSTANCE_HEALTH_CLASS, *PMPIO_DEVINSTANCE_HEALTH_CLASS
+req.typenames : "*PMPIO_DEVINSTANCE_HEALTH_CLASS, MPIO_DEVINSTANCE_HEALTH_CLASS"
 ---
 
 # _MPIO_DEVINSTANCE_HEALTH_CLASS structure
@@ -129,7 +129,4 @@ An unsigned 64-bitfield that returns the path identifier that is associated with
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiodisk.h (include Mpiowmi.h) |

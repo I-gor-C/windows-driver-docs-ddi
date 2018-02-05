@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c8d76d5b-f388-4e22-ba57-d299ab3dee80
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetType method, IWDFUsbTargetPipe interface, wudfusb/IWDFUsbTargetPipe::GetType, umdf.iwdfusbtargetpipe_gettype, UMDFUSBref_792b0720-a0c3-45da-b5e8-7b2f3a0c3770.xml, IWDFUsbTargetPipe::GetType, GetType, wdf.iwdfusbtargetpipe_gettype, IWDFUsbTargetPipe interface, GetType method, IWDFUsbTargetPipe, GetType method
+ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe::GetType, UMDFUSBref_792b0720-a0c3-45da-b5e8-7b2f3a0c3770.xml, GetType method, IWDFUsbTargetPipe interface, GetType method, wudfusb/IWDFUsbTargetPipe::GetType, GetType method, IWDFUsbTargetPipe interface, GetType, wdf.iwdfusbtargetpipe_gettype, umdf.iwdfusbtargetpipe_gettype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,20 +68,18 @@ For a code example of how to use the <b>GetType</b> method, see <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560403">IWDFUsbTargetPipe::GetInformation</a>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0ef0d242-4ed6-4c48-85b8-0fc87d3fe39b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_CM_FLOPPY_DEVICE_DATA, wdm/CM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA structure [Kernel-Mode Driver Architecture], CM_FLOPPY_DEVICE_DATA, kernel.cm_floppy_device_data, PCM_FLOPPY_DEVICE_DATA, *PCM_FLOPPY_DEVICE_DATA, kstruct_a_7ec8badb-4d88-479e-b0dc-ce88660b8449.xml, wdm/PCM_FLOPPY_DEVICE_DATA, PCM_FLOPPY_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture]"
+ms.keywords : "*PCM_FLOPPY_DEVICE_DATA, kernel.cm_floppy_device_data, _CM_FLOPPY_DEVICE_DATA, wdm/CM_FLOPPY_DEVICE_DATA, wdm/PCM_FLOPPY_DEVICE_DATA, kstruct_a_7ec8badb-4d88-479e-b0dc-ce88660b8449.xml, CM_FLOPPY_DEVICE_DATA structure [Kernel-Mode Driver Architecture], PCM_FLOPPY_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture], CM_FLOPPY_DEVICE_DATA, PCM_FLOPPY_DEVICE_DATA"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -145,16 +145,13 @@ The version number of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
+
+<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
 

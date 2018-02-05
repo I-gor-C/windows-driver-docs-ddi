@@ -8,7 +8,7 @@ old-project : nfpdrivers
 ms.assetid : B9996339-984D-4F6B-BFE9-2F536EC75924
 ms.author : windowsdriverdev
 ms.date : 12/18/2017
-ms.keywords : "_NFC_CX_DEVICE_MODE, nfpdrivers.nfc_cx_device_mode, nfccx/NFC_CX_DEVICE_MODE_DTA, NFC_CX_DEVICE_MODE_RAW, NFC_CX_DEVICE_MODE_NCI, nfccx/NFC_CX_DEVICE_MODE_NCI, nfccx/NFC_CX_DEVICE_MODE_RAW, NFC_CX_DEVICE_MODE enumeration [Near-Field Proximity Drivers], NFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE_DTA, nfccx/NFC_CX_DEVICE_MODE"
+ms.keywords : nfccx/NFC_CX_DEVICE_MODE_DTA, nfccx/NFC_CX_DEVICE_MODE_NCI, NFC_CX_DEVICE_MODE_DTA, nfccx/NFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE_RAW, nfpdrivers.nfc_cx_device_mode, *PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE_NCI, NFC_CX_DEVICE_MODE enumeration [Near-Field Proximity Drivers], NFC_CX_DEVICE_MODE, _NFC_CX_DEVICE_MODE, nfccx/NFC_CX_DEVICE_MODE_RAW
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE
+req.typenames : "*PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE"
 ---
 
 # _NFC_CX_DEVICE_MODE Enumeration
@@ -74,9 +74,7 @@ typedef enum _NFC_CX_DEVICE_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | nfccx.h (include Ncidef.h) |
 
 ## See Also

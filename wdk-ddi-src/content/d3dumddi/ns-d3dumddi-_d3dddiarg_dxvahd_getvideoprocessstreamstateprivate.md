@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f55dc37a-fb67-48fe-8e32-29b2e71b6abc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_dxvahd_getvideoprocessstreamstateprivate, UMDisplayDriver_param_Structs_5c255d85-4e9e-4a3f-a782-3fd96dbcd0d9.xml, d3dumddi/D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, _D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE structure [Display Devices]
+ms.keywords : d3dumddi/D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, display.d3dddiarg_dxvahd_getvideoprocessstreamstateprivate, UMDisplayDriver_param_Structs_5c255d85-4e9e-4a3f-a782-3fd96dbcd0d9.xml, D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE structure [Display Devices], D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, _D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,18 +69,16 @@ typedef struct _D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE is supported beginning with the Windows 7 operating system. D3DDDIARG_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_getvideoprocessstreamstateprivate.md">GetVideoProcessStreamStatePrivate</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_private_data.md">DXVAHDDDI_STREAM_STATE_PRIVATE_DATA</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_private_data.md">DXVAHDDDI_STREAM_STATE_PRIVATE_DATA</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3273a4b6-9c5e-4671-be9e-45cdd010558a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_get_context_type_info, DFGenObjectRef_861429b7-5829-4a9e-81e2-b88947b36d62.xml, wdf.wdf_get_context_type_info, WDF_GET_CONTEXT_TYPE_INFO, wdfobject/WDF_GET_CONTEXT_TYPE_INFO, WDF_GET_CONTEXT_TYPE_INFO macro
+ms.keywords : DFGenObjectRef_861429b7-5829-4a9e-81e2-b88947b36d62.xml, WDF_GET_CONTEXT_TYPE_INFO macro, WDF_GET_CONTEXT_TYPE_INFO, kmdf.wdf_get_context_type_info, wdf.wdf_get_context_type_info, wdfobject/WDF_GET_CONTEXT_TYPE_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -66,11 +66,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wdfobject.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |

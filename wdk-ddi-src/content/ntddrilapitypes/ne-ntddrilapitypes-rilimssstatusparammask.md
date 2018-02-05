@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bc31d252-eb1d-492c-ae2b-c6c7a8509685
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILIMSSSTATUSPARAMMASK, netvista.rilimssstatusparammask, RILIMSSSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILIMSSSTATUSPARAMMASK, RIL_PARAM_IMSSTATUS_HUICCAPP, ntddrilapitypes/RIL_PARAM_IMSSTATUS_SERVINGDOMAIN, RIL_PARAM_IMSSTATUS_SYSTEMTYPE, RIL_PARAM_IMSSTATUS_AVAILABLESERVICES, ntddrilapitypes/RIL_PARAM_IMSSTATUS_HUICCAPP, ntddrilapitypes/RIL_PARAM_IMSSTATUS_ALL, RIL_PARAM_IMSSTATUS_SMSSUPPORTEDFORMAT, RIL_PARAM_IMSSTATUS_SERVINGDOMAIN, ntddrilapitypes/RIL_PARAM_IMSSTATUS_SYSTEMTYPE, ntddrilapitypes/RIL_PARAM_IMSSTATUS_SMSSUPPORTEDFORMAT, RIL_PARAM_IMSSTATUS_ALL, ntddrilapitypes/RIL_PARAM_IMSSTATUS_AVAILABLESERVICES
+ms.keywords : RIL_PARAM_IMSSTATUS_SMSSUPPORTEDFORMAT, ntddrilapitypes/RILIMSSSTATUSPARAMMASK, ntddrilapitypes/RIL_PARAM_IMSSTATUS_AVAILABLESERVICES, netvista.rilimssstatusparammask, RIL_PARAM_IMSSTATUS_ALL, RIL_PARAM_IMSSTATUS_SERVINGDOMAIN, RILIMSSSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], ntddrilapitypes/RIL_PARAM_IMSSTATUS_HUICCAPP, ntddrilapitypes/RIL_PARAM_IMSSTATUS_SMSSUPPORTEDFORMAT, ntddrilapitypes/RIL_PARAM_IMSSTATUS_SYSTEMTYPE, RILIMSSSTATUSPARAMMASK, RIL_PARAM_IMSSTATUS_AVAILABLESERVICES, RIL_PARAM_IMSSTATUS_HUICCAPP, ntddrilapitypes/RIL_PARAM_IMSSTATUS_ALL, RIL_PARAM_IMSSTATUS_SYSTEMTYPE, ntddrilapitypes/RIL_PARAM_IMSSTATUS_SERVINGDOMAIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,7 +97,4 @@ typedef enum _RILIMSSSTATUSPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

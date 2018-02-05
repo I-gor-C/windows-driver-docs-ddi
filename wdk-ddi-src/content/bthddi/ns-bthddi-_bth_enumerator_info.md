@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : e526d664-35cf-4738-9501-08298e90be1e
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : PBTH_ENUMERATOR_INFO, _BTH_ENUMERATOR_INFO, *PBTH_ENUMERATOR_INFO, BTH_ENUMERATOR_INFO structure [Bluetooth Devices], bltooth.bth_enumerator_info, bthddi/BTH_ENUMERATOR_INFO, PBTH_ENUMERATOR_INFO structure pointer [Bluetooth Devices], bth_structs_7cdc888a-ed42-4988-917f-578522399179.xml, bthddi/PBTH_ENUMERATOR_INFO, BTH_ENUMERATOR_INFO
+ms.keywords : "*PBTH_ENUMERATOR_INFO, bthddi/PBTH_ENUMERATOR_INFO, bth_structs_7cdc888a-ed42-4988-917f-578522399179.xml, PBTH_ENUMERATOR_INFO, BTH_ENUMERATOR_INFO, _BTH_ENUMERATOR_INFO, bltooth.bth_enumerator_info, BTH_ENUMERATOR_INFO structure [Bluetooth Devices], PBTH_ENUMERATOR_INFO structure pointer [Bluetooth Devices], bthddi/BTH_ENUMERATOR_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -137,27 +137,25 @@ The remote device vendor ID type, which is obtained from SDP.
 
 ## Remarks
 The 
-    <mshelp:link keywords="bltooth.ioctl_internal_bthenum_get_enuminfo" tabindex="0"><b>
-    IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</b></mshelp:link> call's output buffer contains the information about an
+    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
+    IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a> call's output buffer contains the information about an
     underlying device and the service that caused the Plug and Play (PnP) manager to load the profile
     driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
-<mshelp:link keywords="bltooth.ioctl_internal_bthenum_get_enuminfo" tabindex="0"><b>
-   IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</b></mshelp:link>
-
-<a href="https://msdn.microsoft.com/d5acaec6-7b3b-4dd9-8901-f96b4e49149f">ENUMERATOR_ACTION</a>
+<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
+   IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a>
 
 <a href="..\bthddi\ne-bthddi-_enumerator_type.md">ENUMERATOR_TYPE</a>
+
+<a href="https://msdn.microsoft.com/d5acaec6-7b3b-4dd9-8901-f96b4e49149f">ENUMERATOR_ACTION</a>
 
  
 

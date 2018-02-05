@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5f4743f6-42b7-4cc0-8dd8-16230b30bb8a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : condis_call_manager_ref_d1773adc-25ef-4544-8ccf-70fe676a862d.xml, netvista.ndiscmdroppartycomplete, NdisCmDropPartyComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmDropPartyComplete, NdisCmDropPartyComplete
+ms.keywords : NdisCmDropPartyComplete, netvista.ndiscmdroppartycomplete, condis_call_manager_ref_d1773adc-25ef-4544-8ccf-70fe676a862d.xml, NdisCmDropPartyComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmDropPartyComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,8 +65,8 @@ Specifies the final status of the requested operation, either NDIS_STATUS_SUCCES
 Specifies the handle to the party that the client requested to be dropped. The call manager
      obtained this handle from the state area designated by 
      <i>CallMgrPartyContext</i> that was passed as an input parameter to its 
-     <mshelp:link keywords="netvista.protocolcmdropparty" tabindex="0"><i>
-     ProtocolCmDropParty</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">
+     ProtocolCmDropParty</a> function.
 
 
 ## Return Value
@@ -83,8 +83,8 @@ A stand-alone call manager must call
     <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>, can release the
     resources they allocated to maintain per-party state until the CM's call to 
     <b>NdisCmDropPartyComplete</b> causes a call to that client's 
-    <mshelp:link keywords="netvista.protocolcldroppartycomplete" tabindex="0"><i>
-    ProtocolClDropPartyComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">
+    ProtocolClDropPartyComplete</a> function.
 
 If it passes NDIS_STATUS_SUCCESS for the 
     <i>Status</i>, the call manager should consider the 
@@ -101,24 +101,22 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_CallManager_Function |
 
 ## See Also
-
-<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
 <a href="..\ndis\nf-ndis-ndismcmdroppartycomplete.md">NdisMCmDropPartyComplete</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_drop_party.md">ProtocolCmDropParty</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">ProtocolClDropPartyComplete</a>
+
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
  
 

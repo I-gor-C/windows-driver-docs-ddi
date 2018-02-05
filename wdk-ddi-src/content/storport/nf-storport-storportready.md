@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 37c19ee9-4741-448c-bcbe-12437f4f3b4d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storprt_6938d8e3-03f8-4f40-a867-07b64d91a6a2.xml, storage.storportready, StorPortReady, storport/StorPortReady, StorPortReady routine [Storage Devices]
+ms.keywords : StorPortReady, storprt_6938d8e3-03f8-4f40-a867-07b64d91a6a2.xml, StorPortReady routine [Storage Devices], storport/StorPortReady, storage.storportready
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,9 @@ The functionality provided by this routine is exclusive to the Storport driver l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

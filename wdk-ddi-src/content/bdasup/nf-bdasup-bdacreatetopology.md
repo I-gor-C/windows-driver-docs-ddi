@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 855ef77c-2a85-4c8c-b8e3-c4aaa0d2a089
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.bdacreatetopology, BdaCreateTopology, bdaref_bbf47d95-2b93-4e05-a5fa-aa5ed4968b0a.xml, bdasup/BdaCreateTopology, BdaCreateTopology function [Streaming Media Devices]
+ms.keywords : BdaCreateTopology, BdaCreateTopology function [Streaming Media Devices], bdasup/BdaCreateTopology, stream.bdacreatetopology, bdaref_bbf47d95-2b93-4e05-a5fa-aa5ed4968b0a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,24 +78,21 @@ A BDA minidriver calls the <a href="..\bdasup\nf-bdasup-bdamethodcreatetopology.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563413">KSMETHOD_BDA_CREATE_TOPOLOGY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
 
 <a href="..\bdasup\nf-bdasup-bdamethodcreatetopology.md">BdaMethodCreateTopology</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a>
-
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563413">KSMETHOD_BDA_CREATE_TOPOLOGY</a>
 
  
 

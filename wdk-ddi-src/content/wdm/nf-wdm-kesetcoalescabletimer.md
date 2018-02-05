@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e053c120-8c43-4714-acf1-0648958eabb8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_3e45ae54-682d-47f6-a577-28277cee4829.xml, kernel.kesetcoalescabletimer, KeSetCoalescableTimer, KeSetCoalescableTimer routine [Kernel-Mode Driver Architecture], wdm/KeSetCoalescableTimer
+ms.keywords : wdm/KeSetCoalescableTimer, KeSetCoalescableTimer, kernel.kesetcoalescabletimer, KeSetCoalescableTimer routine [Kernel-Mode Driver Architecture], k105_3e45ae54-682d-47f6-a577-28277cee4829.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,7 +112,7 @@ If the <i>Dpc</i> parameter is non-<b>NULL</b>, the routine creates an associati
 
 Only one instance of a particular DPC object can be in the system DPC queue at a time. To avoid potential race conditions, avoid passing the same DPC object to both the <b>KeSetCoalescableTimer</b> and <a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a> routines.
 
-Avoid changing the importance or the target processor of a DPC that is associated with an active timer. Either cancel the timer or make sure that the timer has expired before you call a routine such as <a href="..\ntddk\nf-ntddk-kesetimportancedpc.md">KeSetImportanceDpc</a> or <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a> to change the DPC settings. For example, if a driver updates the target processor of a DPC while a timer enables the DPC to run, the DPC might run on an arbitrary processor.
+Avoid changing the importance or the target processor of a DPC that is associated with an active timer. Either cancel the timer or make sure that the timer has expired before you call a routine such as <a href="..\wdm\nf-wdm-kesetimportancedpc.md">KeSetImportanceDpc</a> or <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a> to change the DPC settings. For example, if a driver updates the target processor of a DPC while a timer enables the DPC to run, the DPC might run on an arbitrary processor.
 
 A periodic timer automatically restarts as soon as it expires. Therefore, in a multiprocessor system, the DPC for a periodic timer might be running on two or more processors at the same time.
 
@@ -133,40 +133,38 @@ For more information about timer objects, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keflushqueueddpcs.md">KeFlushQueuedDpcs</a>
+
+<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
+
 <a href="..\wdm\nf-wdm-kesettargetprocessordpcex.md">KeSetTargetProcessorDpcEx</a>
 
-<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
-
-<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
+<a href="..\wdm\nf-wdm-kesetimportancedpc.md">KeSetImportanceDpc</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554250">KTIMER</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
+
+<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
+
 <a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
+
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
 
 <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
-
-<a href="..\ntddk\nf-ntddk-kesetimportancedpc.md">KeSetImportanceDpc</a>
-
-<a href="..\wdm\nf-wdm-keflushqueueddpcs.md">KeFlushQueuedDpcs</a>
-
-<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
-
-<a href="..\wdm\nf-wdm-keinsertqueuedpc.md">KeInsertQueueDpc</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
 
  
 

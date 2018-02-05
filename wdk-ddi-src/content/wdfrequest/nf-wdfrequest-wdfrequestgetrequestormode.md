@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 63fc77c8-756c-4872-b608-539d8419154b
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestGetRequestorMode method, wdfrequest/WdfRequestGetRequestorMode, kmdf.wdfrequestgetrequestormode, PFN_WDFREQUESTGETREQUESTORMODE, wdf.wdfrequestgetrequestormode, DFRequestObjectRef_3c672bff-3d8a-402a-8a0c-19eb4d39e37e.xml, WdfRequestGetRequestorMode
+ms.keywords : wdfrequest/WdfRequestGetRequestorMode, PFN_WDFREQUESTGETREQUESTORMODE, kmdf.wdfrequestgetrequestormode, WdfRequestGetRequestorMode method, WdfRequestGetRequestorMode, DFRequestObjectRef_3c672bff-3d8a-402a-8a0c-19eb4d39e37e.xml, wdf.wdfrequestgetrequestormode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,10 @@ For more information about <b>WdfRequestGetRequestorMode</b>, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |

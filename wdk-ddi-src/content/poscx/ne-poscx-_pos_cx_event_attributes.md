@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 5B8B38B6-ACF3-44F9-BC83-71F0A2FC4DDD
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : poscx/POS_CX_EVENT_ATTR_CONTROL, poscx/POS_CX_EVENT_ATTR_DATA, poscx/POS_CX_EVENT_ATTR_BCAST_CONTROL, _POS_CX_EVENT_ATTRIBUTES, POS_CX_EVENT_ATTRIBUTES enumeration, POS_CX_EVENT_ATTR_CONTROL, POS_CX_EVENT_ATTRIBUTES, poscx/POS_CX_EVENT_ATTRIBUTES, POS_CX_EVENT_ATTR_BCAST_CONTROL, pos.pos_cx_event_attributes, POS_CX_EVENT_ATTR_DATA
+ms.keywords : POS_CX_EVENT_ATTR_DATA, POS_CX_EVENT_ATTR_BCAST_CONTROL, poscx/POS_CX_EVENT_ATTR_BCAST_CONTROL, poscx/POS_CX_EVENT_ATTRIBUTES, _POS_CX_EVENT_ATTRIBUTES, pos.pos_cx_event_attributes, POS_CX_EVENT_ATTRIBUTES enumeration, POS_CX_EVENT_ATTR_CONTROL, poscx/POS_CX_EVENT_ATTR_DATA, POS_CX_EVENT_ATTRIBUTES, poscx/POS_CX_EVENT_ATTR_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -78,9 +78,6 @@ typedef enum _POS_CX_EVENT_ATTRIBUTES {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | poscx.h (include Poscx.h) |
 
 ## See Also

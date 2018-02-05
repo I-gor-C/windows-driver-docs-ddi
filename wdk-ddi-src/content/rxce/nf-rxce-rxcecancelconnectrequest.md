@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 32893a68-68ac-4bac-ab0f-1d07a1e873f3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxCeCancelConnectRequest routine [Installable File System Drivers], rxce/RxCeCancelConnectRequest, ifsk.rxcecancelconnectrequest, rxref_b7978600-a1ca-4713-b170-bc1f365f2f96.xml, RxCeCancelConnectRequest
+ms.keywords : RxCeCancelConnectRequest routine [Installable File System Drivers], ifsk.rxcecancelconnectrequest, RxCeCancelConnectRequest, rxref_b7978600-a1ca-4713-b170-bc1f365f2f96.xml, rxce/RxCeCancelConnectRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -79,14 +79,10 @@ A pointer to the connection information that specifies the remote address. on wh
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

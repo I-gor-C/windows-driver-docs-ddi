@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6b2c56a9-cf77-4734-8f85-0ca740084ce3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisGetDeviceReservedExtension, ndis_devices_ref_75d6a378-f525-46bb-9a2b-becf6abaa768.xml, NdisGetDeviceReservedExtension, netvista.ndisgetdevicereservedextension, NdisGetDeviceReservedExtension function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisGetDeviceReservedExtension function [Network Drivers Starting with Windows Vista], netvista.ndisgetdevicereservedextension, ndis/NdisGetDeviceReservedExtension, NdisGetDeviceReservedExtension, ndis_devices_ref_75d6a378-f525-46bb-9a2b-becf6abaa768.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,14 +69,11 @@ A pointer to a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

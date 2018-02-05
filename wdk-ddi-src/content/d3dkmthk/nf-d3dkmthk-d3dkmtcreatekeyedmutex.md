@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ae9e4771-ba8d-4472-aeb8-04c3f3c59efa
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PFND3DKMT_CREATEKEYEDMUTEX, D3DKMTCreateKeyedMutex function [Display Devices], display.d3dkmtcreatekeyedmutex, OpenGL_Functions_a8475da1-40bf-4669-9da8-f6bb09c3f905.xml, d3dkmthk/D3DKMTCreateKeyedMutex, D3DKMTCreateKeyedMutex
+ms.keywords : d3dkmthk/D3DKMTCreateKeyedMutex, PFND3DKMT_CREATEKEYEDMUTEX, OpenGL_Functions_a8475da1-40bf-4669-9da8-f6bb09c3f905.xml, D3DKMTCreateKeyedMutex function [Display Devices], display.d3dkmtcreatekeyedmutex, D3DKMTCreateKeyedMutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -115,14 +115,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTCreateKeyedMutex is supported beginning with the Windows 7 operating system. D3DKMTCreateKeyedMutex is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

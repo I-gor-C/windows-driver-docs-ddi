@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4045d8ed-bf8d-4dc1-80c3-a77499a7bf4e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, *PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, netvista.ndis_receive_filter_move_filter_parameters"
+ms.keywords : "_NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, *PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, netvista.ndis_receive_filter_move_filter_parameters, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,9 +99,7 @@ This structure is used in OID set requests of <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also

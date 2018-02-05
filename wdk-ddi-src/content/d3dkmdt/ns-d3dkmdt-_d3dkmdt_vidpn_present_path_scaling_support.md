@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 44b7f841-40e5-4d7d-adca-b70b4a8ef55c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, DmStructs_8a17e0fc-7c6c-4c95-bbdb-471beef9e830.xml, D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure [Display Devices], display.d3dkmdt_vidpn_present_path_scaling_support, D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
+ms.keywords : D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure [Display Devices], D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, DmStructs_8a17e0fc-7c6c-4c95-bbdb-471beef9e830.xml, _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, display.d3dkmdt_vidpn_present_path_scaling_support, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,9 +83,7 @@ The <b>ScalingSupport</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

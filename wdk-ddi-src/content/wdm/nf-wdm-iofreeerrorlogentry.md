@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7244a63b-404f-45e0-b2f7-6c4ea70e4a21
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoFreeErrorLogEntry, k104_33f7cbb2-e145-46f1-99a0-b53381704aad.xml, wdm/IoFreeErrorLogEntry, kernel.iofreeerrorlogentry, IoFreeErrorLogEntry routine [Kernel-Mode Driver Architecture]
+ms.keywords : k104_33f7cbb2-e145-46f1-99a0-b53381704aad.xml, IoFreeErrorLogEntry routine [Kernel-Mode Driver Architecture], kernel.iofreeerrorlogentry, wdm/IoFreeErrorLogEntry, IoFreeErrorLogEntry
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,27 +64,24 @@ None
 
 ## Remarks
 
-Drivers use <b>IoFreeErrorLogEntry</b> to free an error log entry allocated by <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>. <a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> also frees any error log entries passed to it, so drivers must not call both on the same log entry.
+Drivers use <b>IoFreeErrorLogEntry</b> to free an error log entry allocated by <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>. <a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> also frees any error log entries passed to it, so drivers must not call both on the same log entry.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating system. Available in Windows XP and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
+
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 
 <a href="..\wdm\ns-wdm-_io_error_log_packet.md">IO_ERROR_LOG_PACKET</a>
-
-<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 792cdb59-e0c2-4697-9934-b7e45a7a31a8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pssetloadimagenotifyroutineex, PsSetLoadImageNotifyRoutineEx, PsSetLoadImageNotifyRoutineEx function [Kernel-Mode Driver Architecture], ntddk/PsSetLoadImageNotifyRoutineEx
+ms.keywords : ntddk/PsSetLoadImageNotifyRoutineEx, PsSetLoadImageNotifyRoutineEx function [Kernel-Mode Driver Architecture], PsSetLoadImageNotifyRoutineEx, kernel.pssetloadimagenotifyroutineex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -113,11 +113,9 @@ The routine failed allocate a callback block due to lack of resources.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

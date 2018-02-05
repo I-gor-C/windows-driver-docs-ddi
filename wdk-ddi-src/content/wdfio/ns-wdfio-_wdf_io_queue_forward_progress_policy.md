@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cee3de1f-eaee-40e9-97a9-979e75e22c0a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, DFQueueObjectRef_cfd7143c-1ca1-4ecf-a840-0007971f9197.xml, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, kmdf.wdf_io_queue_forward_progress_policy, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure pointer, _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdfio/PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdf.wdf_io_queue_forward_progress_policy
+ms.keywords : wdfio/PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure, kmdf.wdf_io_queue_forward_progress_policy, DFQueueObjectRef_cfd7143c-1ca1-4ecf-a840-0007971f9197.xml, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure pointer, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdf.wdf_io_queue_forward_progress_policy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY"
+req.typenames : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
 req.product : Windows 10 or later.
 ---
 
@@ -91,7 +91,5 @@ Drivers must initialize the <b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</b> structur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfio.h (include Wdf.h) |

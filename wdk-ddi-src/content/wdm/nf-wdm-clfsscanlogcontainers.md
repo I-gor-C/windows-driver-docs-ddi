@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 76f97976-f48b-4ead-88d6-a9e1fdb21f08
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsScanLogContainers routine [Kernel-Mode Driver Architecture], ClfsScanLogContainers, wdm/ClfsScanLogContainers, kernel.clfsscanlogcontainers, Clfs_eec877a8-028a-49f8-91ff-b8363e124011.xml
+ms.keywords : wdm/ClfsScanLogContainers, Clfs_eec877a8-028a-49f8-91ff-b8363e124011.xml, ClfsScanLogContainers, ClfsScanLogContainers routine [Kernel-Mode Driver Architecture], kernel.clfsscanlogcontainers
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -122,14 +122,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

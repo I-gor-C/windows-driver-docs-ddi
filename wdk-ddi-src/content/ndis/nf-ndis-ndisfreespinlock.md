@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4807d413-c40f-4ee8-b670-9afcac809bd2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfreespinlock, NdisFreeSpinLock, NdisFreeSpinLock function [Network Drivers Starting with Windows Vista], ndis/NdisFreeSpinLock, ndis_spin_lock_ref_c5b1dcb1-afdc-4622-a07b-f81bb7c1f550.xml
+ms.keywords : netvista.ndisfreespinlock, NdisFreeSpinLock, ndis/NdisFreeSpinLock, NdisFreeSpinLock function [Network Drivers Starting with Windows Vista], ndis_spin_lock_ref_c5b1dcb1-afdc-4622-a07b-f81bb7c1f550.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,39 +78,36 @@ Callers of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisFreeSpinLock (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisFreeSpinLock (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisFreeSpinLock (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisFreeSpinLock (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 
-<mshelp:link keywords="netvista.ndisinterlockedinserttaillist" tabindex="0"><b>
-   NdisInterlockedInsertTailList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinterlockedinsertheadlist.md">
+   NdisInterlockedInsertHeadList</a>
 
-<a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisinterlockedinserttaillist.md">
+   NdisInterlockedInsertTailList</a>
 
-<a href="..\ndis\nf-ndis-ndisdprreleasespinlock.md">NdisDprReleaseSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisinterlockedremoveheadlist.md">
+   NdisInterlockedRemoveHeadList</a>
 
 <a href="..\ndis\nf-ndis-ndisinterlockedaddulong.md">NdisInterlockedAddUlong</a>
 
-<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
-
-<mshelp:link keywords="netvista.ndisinterlockedinsertheadlist" tabindex="0"><b>
-   NdisInterlockedInsertHeadList</b></mshelp:link>
-
-<mshelp:link keywords="netvista.ndisinterlockedremoveheadlist" tabindex="0"><b>
-   NdisInterlockedRemoveHeadList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
 
 <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+
+<a href="..\ndis\nf-ndis-ndisdprreleasespinlock.md">NdisDprReleaseSpinLock</a>
 
  
 

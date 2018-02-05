@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 61ddfdf9-65cf-482b-80fe-bc5a71f905cd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitregisterpowerpolicystatechangecallback, PFN_WDFDEVICEINITREGISTERPOWERPOLICYSTATECHANGECALLBACK, WdfDeviceInitRegisterPowerPolicyStateChangeCallback method, DFDeviceObjectGeneralRef_207ca167-9049-4661-baea-1a17158c3e82.xml, wdfdevice/WdfDeviceInitRegisterPowerPolicyStateChangeCallback, WdfDeviceInitRegisterPowerPolicyStateChangeCallback, kmdf.wdfdeviceinitregisterpowerpolicystatechangecallback
+ms.keywords : PFN_WDFDEVICEINITREGISTERPOWERPOLICYSTATECHANGECALLBACK, DFDeviceObjectGeneralRef_207ca167-9049-4661-baea-1a17158c3e82.xml, kmdf.wdfdeviceinitregisterpowerpolicystatechangecallback, WdfDeviceInitRegisterPowerPolicyStateChangeCallback, wdfdevice/WdfDeviceInitRegisterPowerPolicyStateChangeCallback, wdf.wdfdeviceinitregisterpowerpolicystatechangecallback, WdfDeviceInitRegisterPowerPolicyStateChangeCallback method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -116,11 +116,9 @@ For more information about <b>WdfDeviceInitRegisterPowerPolicyStateChangeCallbac
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate |

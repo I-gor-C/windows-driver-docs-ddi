@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 2FA71DC1-8068-42E3-A5C0-903858E496FA
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportisdeviceoperationallowed, storport/StorPortIsDeviceOperationAllowed, StorPortIsDeviceOperationAllowed, StorPortIsDeviceOperationAllowed routine [Storage Devices], STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID
+ms.keywords : storport/StorPortIsDeviceOperationAllowed, STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID, storage.storportisdeviceoperationallowed, StorPortIsDeviceOperationAllowed, StorPortIsDeviceOperationAllowed routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -155,11 +155,8 @@ The management class specified in <i>DeviceOperation</i> is not available or inv
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8.1. Available in starting with Windows 8.1. |
+| **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | IRQL == PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

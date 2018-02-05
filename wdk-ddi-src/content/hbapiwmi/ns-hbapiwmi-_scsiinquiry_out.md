@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ea1d6f35-1dc5-4c65-9158-7f85464c5cd7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.scsiinquiry_out2, ScsiInquiry_OUT, structs-Fibre_2c7df8b3-a571-4e88-b4db-202d2bd39ce8.xml, hbapiwmi/ScsiInquiry_OUT, _ScsiInquiry_OUT, ScsiInquiry_OUT structure [Storage Devices], *PScsiInquiry_OUT, PScsiInquiry_OUT structure pointer [Storage Devices], PScsiInquiry_OUT, hbapiwmi/PScsiInquiry_OUT
+ms.keywords : PScsiInquiry_OUT, PScsiInquiry_OUT structure pointer [Storage Devices], *PScsiInquiry_OUT, ScsiInquiry_OUT, structs-Fibre_2c7df8b3-a571-4e88-b4db-202d2bd39ce8.xml, _ScsiInquiry_OUT, hbapiwmi/PScsiInquiry_OUT, ScsiInquiry_OUT structure [Storage Devices], storage.scsiinquiry_out2, hbapiwmi/ScsiInquiry_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PScsiInquiry_OUT, ScsiInquiry_OUT"
+req.typenames : ScsiInquiry_OUT, *PScsiInquiry_OUT
 ---
 
 # _ScsiInquiry_OUT structure
@@ -82,9 +82,6 @@ The WMI tool suite generates a declaration of the ScsiInquiry_OUT structure in <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b319f2a4-dbbe-4324-8f8d-a42bb40d7939
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KsDeviceSetBusData, stream.ksdevicesetbusdata, KsDeviceSetBusData, KsDeviceSetBusData function [Streaming Media Devices], avfunc_5b7ad4e8-d651-4b80-99db-260fba83ce15.xml
+ms.keywords : stream.ksdevicesetbusdata, avfunc_5b7ad4e8-d651-4b80-99db-260fba83ce15.xml, KsDeviceSetBusData, ks/KsDeviceSetBusData, KsDeviceSetBusData function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,14 +92,11 @@ Drivers running on Windows 2000 and later can make this call at IRQL = DISPATCH_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : d9935605-dc5f-4987-8a5b-b2c2b358dbbf
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/PshedIsSystemWheaEnabled, PshedIsSystemWheaEnabled, whearef_492a4370-81bf-411b-bd87-2408f4551b18.xml, PshedIsSystemWheaEnabled function [WHEA Drivers and Applications], whea.pshedissystemwheaenabled
+ms.keywords : whearef_492a4370-81bf-411b-bd87-2408f4551b18.xml, PshedIsSystemWheaEnabled function [WHEA Drivers and Applications], whea.pshedissystemwheaenabled, ntddk/PshedIsSystemWheaEnabled, PshedIsSystemWheaEnabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,14 +63,12 @@ A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | Pshed.lib |
+| **DLL** | Pshed.dll |
 | **IRQL** | Any |
-| **DDI compliance rules** |  |
 
 ## See Also
 

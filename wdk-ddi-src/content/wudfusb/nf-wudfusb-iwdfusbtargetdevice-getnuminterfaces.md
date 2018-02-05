@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4da2f2b0-f2ad-465d-b63e-f11406d4c210
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetDevice::GetNumInterfaces, umdf.iwdfusbtargetdevice_getnuminterfaces, GetNumInterfaces, wdf.iwdfusbtargetdevice_getnuminterfaces, IWDFUsbTargetDevice interface, GetNumInterfaces method, UMDFUSBref_43f488a1-350d-473a-aa10-d88983ea39f7.xml, GetNumInterfaces method, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice, wudfusb/IWDFUsbTargetDevice::GetNumInterfaces, GetNumInterfaces method
+ms.keywords : wdf.iwdfusbtargetdevice_getnuminterfaces, IWDFUsbTargetDevice::GetNumInterfaces, GetNumInterfaces, IWDFUsbTargetDevice, GetNumInterfaces method, wudfusb/IWDFUsbTargetDevice::GetNumInterfaces, umdf.iwdfusbtargetdevice_getnuminterfaces, UMDFUSBref_43f488a1-350d-473a-aa10-d88983ea39f7.xml, GetNumInterfaces method, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice interface, GetNumInterfaces method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -66,20 +66,18 @@ UMDF USB I/O target devices do not support multiple configurations.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
-
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbinterface.md">IWDFUsbInterface</a>
 
  
 

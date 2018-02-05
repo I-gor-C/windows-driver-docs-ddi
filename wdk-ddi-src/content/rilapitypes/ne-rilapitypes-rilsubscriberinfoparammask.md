@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 271492ee-9053-4150-9e31-f121c9a94097
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_SI_ALL, RILSUBSCRIBERINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_SI_ADDRESS, RIL_PARAM_SI_ADDRESS, rilapitypes/RIL_PARAM_SI_SERVICE, rilapitypes/RILSUBSCRIBERINFOPARAMMASK, RIL_PARAM_SI_DESCRIPTION, RIL_PARAM_SI_SERVICE, RILSUBSCRIBERINFOPARAMMASK, rilapitypes/RIL_PARAM_SI_DESCRIPTION, netvista.rilsubscriberinfoparammask, RIL_PARAM_SI_ALL
+ms.keywords : RIL_PARAM_SI_DESCRIPTION, rilapitypes/RIL_PARAM_SI_ALL, rilapitypes/RIL_PARAM_SI_DESCRIPTION, netvista.rilsubscriberinfoparammask, RIL_PARAM_SI_SERVICE, RILSUBSCRIBERINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_SI_SERVICE, rilapitypes/RILSUBSCRIBERINFOPARAMMASK, RIL_PARAM_SI_ADDRESS, RIL_PARAM_SI_ALL, rilapitypes/RIL_PARAM_SI_ADDRESS, RILSUBSCRIBERINFOPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,9 +82,6 @@ enum RILSUBSCRIBERINFOPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

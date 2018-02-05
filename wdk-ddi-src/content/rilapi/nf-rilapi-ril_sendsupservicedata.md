@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d5bf5fa0-12c0-4971-91bc-775c59d45d60
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SendSupServiceData method [Network Drivers Starting with Windows Vista], rilapi/RIL_SendSupServiceData, RIL_SendSupServiceData, netvista.ril_sendsupservicedata
+ms.keywords : RIL_SendSupServiceData method [Network Drivers Starting with Windows Vista], netvista.ril_sendsupservicedata, rilapi/RIL_SendSupServiceData, RIL_SendSupServiceData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

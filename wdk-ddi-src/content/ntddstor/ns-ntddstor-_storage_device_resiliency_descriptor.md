@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 71351CB7-1295-4797-802C-23A6B1C2C53F
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure [Storage Devices], PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure pointer [Storage Devices], storage.storage_device_resiliency_descriptor, _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
+ms.keywords : STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, storage.storage_device_resiliency_descriptor, ntddstor/PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,9 +99,7 @@ Contains the size of this structure, in bytes. The value of this member will cha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also

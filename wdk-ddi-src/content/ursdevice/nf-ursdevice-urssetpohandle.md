@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 87B34452-DC2C-4FD4-B0F8-51EFAF2D4AA6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UrsSetPoHandle, buses.urssetpohandle, ursdevice/UrsSetPoHandle, UrsSetPoHandle function [Buses]
+ms.keywords : UrsSetPoHandle, ursdevice/UrsSetPoHandle, buses.urssetpohandle, UrsSetPoHandle function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,20 +76,18 @@ In the client driver's implementation of the <a href="..\wdfdevice\nc-wdfdevice-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | ursdevice.h (include Urscx.h) |
-| **Library** |  |
+| **Library** | Urscxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
-
 <i>EvtDeviceWdmPrePoFxUnregisterDevice</i>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
 
  
 

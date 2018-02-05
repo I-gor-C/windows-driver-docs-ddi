@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A0946287-3ED2-4DE1-A3D7-46611B25BB93
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelSaveBegin, VmbChannelSaveBegin function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelSaveBegin, netvista.vmbchannelsavebegin
+ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelSaveBegin, VmbChannelSaveBegin, netvista.vmbchannelsavebegin, VmbChannelSaveBegin function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -74,20 +74,18 @@ all the state is saved, and then calls the <a href="..\vmbuskernelmodeclientliba
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsaveend.md">VmbChannelSaveEnd</a>
-
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsavecontinue.md"> VmbChannelSaveContinue</a>
+
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsaveend.md">VmbChannelSaveEnd</a>
 
  
 

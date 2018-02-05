@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 668c4d1a-52e8-49ea-bd19-e789dfa8dfa5
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSendRNID_IN, PSendRNID_IN structure pointer [Storage Devices], PSendRNID_IN, storage.sendrnid_in, SendRNID_IN, hbapiwmi/SendRNID_IN, SendRNID_IN structure [Storage Devices], structs-Fibre_506226e9-45f1-40d3-bd41-7b30fe16673e.xml, _SendRNID_IN, hbapiwmi/PSendRNID_IN"
+ms.keywords : PSendRNID_IN structure pointer [Storage Devices], SendRNID_IN, structs-Fibre_506226e9-45f1-40d3-bd41-7b30fe16673e.xml, SendRNID_IN structure [Storage Devices], hbapiwmi/PSendRNID_IN, *PSendRNID_IN, storage.sendrnid_in, hbapiwmi/SendRNID_IN, _SendRNID_IN, PSendRNID_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SendRNID_IN, *PSendRNID_IN
+req.typenames : "*PSendRNID_IN, SendRNID_IN"
 ---
 
 # _SendRNID_IN structure
@@ -66,9 +66,6 @@ The WMI tool suite generates a declaration of the SendRNID_IN structure in <i>Hb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

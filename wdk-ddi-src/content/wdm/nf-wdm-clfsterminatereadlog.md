@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 47633903-0314-4d50-8dd5-ddb0eb934e09
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.clfsterminatereadlog, wdm/ClfsTerminateReadLog, ClfsTerminateReadLog routine [Kernel-Mode Driver Architecture], Clfs_691e308a-56d7-498f-af11-8908cc13b1b7.xml, ClfsTerminateReadLog
+ms.keywords : Clfs_691e308a-56d7-498f-af11-8908cc13b1b7.xml, ClfsTerminateReadLog routine [Kernel-Mode Driver Architecture], ClfsTerminateReadLog, wdm/ClfsTerminateReadLog, kernel.clfsterminatereadlog
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ A pointer to the read context to be invalidated. The caller previously obtained 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

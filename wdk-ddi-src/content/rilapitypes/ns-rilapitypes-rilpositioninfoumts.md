@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c17760c4-6f75-41e8-84a5-f13e26735af5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILPOSITIONINFOUMTS, netvista.rilpositioninfoumts, RILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS structure [Network Drivers Starting with Windows Vista], rilapitypes/RILPOSITIONINFOUMTS"
+ms.keywords : netvista.rilpositioninfoumts, *LPRILPOSITIONINFOUMTS, rilapitypes/RILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS structure [Network Drivers Starting with Windows Vista], RILPOSITIONINFOUMTS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS"
+req.typenames : RILPOSITIONINFOUMTS, *LPRILPOSITIONINFOUMTS
 req.product : Windows 10 or later.
 ---
 
@@ -120,9 +120,6 @@ UTRA Absolute Radio Frequency Channel Number for serving cell (0...16383)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

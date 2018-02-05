@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 4874ddab-5443-4e03-8f49-493682dabac1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WIAS_ENDORSER_INFO, wiamindr_lh/WIAS_ENDORSER_INFO, PWIAS_ENDORSER_INFO, wiamindr_lh/PWIAS_ENDORSER_INFO, wiastrct_de79ab57-ad51-4bf0-90cb-51bd1a8352bd.xml, image.wias_endorser_info, PWIAS_ENDORSER_INFO structure pointer [Imaging Devices], *PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO structure [Imaging Devices]"
+ms.keywords : "_WIAS_ENDORSER_INFO, PWIAS_ENDORSER_INFO structure pointer [Imaging Devices], wiamindr_lh/WIAS_ENDORSER_INFO, wiamindr_lh/PWIAS_ENDORSER_INFO, wiastrct_de79ab57-ad51-4bf0-90cb-51bd1a8352bd.xml, *PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO, PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO structure [Imaging Devices], image.wias_endorser_info"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WIAS_ENDORSER_INFO, *PWIAS_ENDORSER_INFO
+req.typenames : "*PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -72,9 +72,7 @@ Currently, <a href="..\wiamdef\nf-wiamdef-wiasparseendorserstring.md">wiasParseE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Windows Me and in Windows XP and later versions of the Windows operating systems. |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
 
 ## See Also

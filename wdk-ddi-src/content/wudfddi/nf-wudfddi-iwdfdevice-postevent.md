@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3df25c91-d421-48fe-958c-48bce3bc78b8
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFDevice::PostEvent, wdf.iwdfdevice_postevent, PostEvent, IWDFDevice interface, PostEvent method, PostEvent method, IWDFDevice, PostEvent method, IWDFDevice interface, UMDFDeviceObjectRef_7ba57249-59f4-4782-8846-717edf86dde1.xml, IWDFDevice::PostEvent, umdf.iwdfdevice_postevent
+ms.keywords : IWDFDevice::PostEvent, wdf.iwdfdevice_postevent, UMDFDeviceObjectRef_7ba57249-59f4-4782-8846-717edf86dde1.xml, umdf.iwdfdevice_postevent, wudfddi/IWDFDevice::PostEvent, IWDFDevice, IWDFDevice interface, PostEvent method, PostEvent, PostEvent method, PostEvent method, IWDFDevice interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -143,24 +143,22 @@ For information about creating device events, see <a href="https://docs.microsof
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-field_offset.md">FIELD_OFFSET</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
 <a href="..\wdm\ns-wdm-_target_device_custom_notification.md">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
 
  
 

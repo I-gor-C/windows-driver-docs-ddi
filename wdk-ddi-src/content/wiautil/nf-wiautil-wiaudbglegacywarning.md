@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 5da7c762-ad5c-45bd-aebe-dc3526005569
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauFncs_03dcc80b-0d36-4130-a05d-bb407cd813cb.xml, wiauDbgLegacyWarning, wiauDbgLegacyWarning function [Imaging Devices], image.wiaudbglegacywarning, wiautil/wiauDbgLegacyWarning
+ms.keywords : wiauDbgLegacyWarning, wiautil/wiauDbgLegacyWarning, wiauDbgLegacyWarning function [Imaging Devices], image.wiaudbglegacywarning, wiauFncs_03dcc80b-0d36-4130-a05d-bb407cd813cb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,7 +57,7 @@ inline void __stdcall wiauDbgLegacyWarning(
 
 TBD
 
-``
+`Arg1`
 
 
 
@@ -73,14 +73,10 @@ The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="..\wiautil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

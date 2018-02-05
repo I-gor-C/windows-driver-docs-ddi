@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EA7D2840-63B2-417A-933C-C1D360106264
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VPPR_GET_OFFSET_ROTATION function [Display Devices], D3DKMDT_VPPR_GET_OFFSET_ROTATION, display.d3dkmdt_vppr_get_offset_rotation, d3dkmdt/D3DKMDT_VPPR_GET_OFFSET_ROTATION
+ms.keywords : D3DKMDT_VPPR_GET_OFFSET_ROTATION, D3DKMDT_VPPR_GET_OFFSET_ROTATION function [Display Devices], d3dkmdt/D3DKMDT_VPPR_GET_OFFSET_ROTATION, display.d3dkmdt_vppr_get_offset_rotation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -205,14 +205,10 @@ D3DKMDT_VIDPN_PRESENT_PATH_ROTATION
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION |
+| **Target Platform** | Desktop |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

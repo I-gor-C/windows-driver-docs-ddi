@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : F74DC3C3-C182-4BBA-93C8-95A73C58CFEF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : BuildArmingPatternData method [Audio Devices], IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], BuildArmingPatternData method, BuildArmingPatternData method [Audio Devices], IKeywordDetectorOemAdapter interface, BuildArmingPatternData, audio.ikeyworddetectoroemadapter_buildarmingpatterndata, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::BuildArmingPatternData, IKeywordDetectorOemAdapter::BuildArmingPatternData
+ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::BuildArmingPatternData, BuildArmingPatternData method [Audio Devices], IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter interface [Audio Devices], BuildArmingPatternData method, BuildArmingPatternData method [Audio Devices], BuildArmingPatternData, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::BuildArmingPatternData, audio.ikeyworddetectoroemadapter_buildarmingpatterndata
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -133,22 +133,18 @@ The operating system may call this method at any time. The operating system may 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | keyworddetectoroemadapter.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | keyworddetectoroemadapter.h |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/3d0af12e-fc74-4ef7-b2dd-e9da5d0483c7">CoTaskMemFree</a>
 
 <a href="..\keyworddetectoroemadapter\ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003.md">KEYWORDSELECTOR</a>
 
 <a href="https://msdn.microsoft.com/c4cb588d-9482-4f90-a92e-75b604540d5c">CoTaskMemAlloc</a>
-
-<a href="https://msdn.microsoft.com/3d0af12e-fc74-4ef7-b2dd-e9da5d0483c7">CoTaskMemFree</a>
 
 <a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
 

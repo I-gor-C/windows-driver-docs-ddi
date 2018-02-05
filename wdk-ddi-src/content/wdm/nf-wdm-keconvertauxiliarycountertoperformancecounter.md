@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 90F4CE6D-F51A-4B18-B328-63AF4D71A690
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeConvertAuxiliaryCounterToPerformanceCounter, KeConvertAuxiliaryCounterToPerformanceCounter routine [Kernel-Mode Driver Architecture], wdm/KeConvertAuxiliaryCounterToPerformanceCounter, kernel.keconvertauxiliarycountertoperformancecounter
+ms.keywords : KeConvertAuxiliaryCounterToPerformanceCounter routine [Kernel-Mode Driver Architecture], wdm/KeConvertAuxiliaryCounterToPerformanceCounter, KeConvertAuxiliaryCounterToPerformanceCounter, kernel.keconvertauxiliarycountertoperformancecounter
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -129,14 +129,12 @@ Make sure that the specified auxiliary counter value is within +/- 10s compared 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Hal.dll |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

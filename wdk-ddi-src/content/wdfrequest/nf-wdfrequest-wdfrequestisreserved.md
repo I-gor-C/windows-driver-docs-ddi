@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8cbf75c4-d54c-45e0-9abb-bef8e76fb9fe
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFREQUESTISRESERVED, wdf.wdfrequestisreserved, WdfRequestIsReserved, DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml, kmdf.wdfrequestisreserved, WdfRequestIsReserved method, wdfrequest/WdfRequestIsReserved
+ms.keywords : DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml, PFN_WDFREQUESTISRESERVED, WdfRequestIsReserved method, kmdf.wdfrequestisreserved, wdf.wdfrequestisreserved, WdfRequestIsReserved, wdfrequest/WdfRequestIsReserved
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,12 +71,10 @@ For more information about the <b>WdfRequestIsReserved</b> method, see <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.9 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 

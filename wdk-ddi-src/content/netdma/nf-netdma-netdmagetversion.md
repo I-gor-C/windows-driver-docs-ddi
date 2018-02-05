@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eec8ba30-0f9e-4487-ba0d-99587d97b44a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NetDmaGetVersion, NetDmaGetVersion function [Network Drivers Starting with Windows Vista], netvista.netdmagetversion, netdma/NetDmaGetVersion, netdma_ref_bb1adf18-d43d-4dc2-b780-1a1322014581.xml
+ms.keywords : netvista.netdmagetversion, netdma/NetDmaGetVersion, netdma_ref_bb1adf18-d43d-4dc2-b780-1a1322014581.xml, NetDmaGetVersion function [Network Drivers Starting with Windows Vista], NetDmaGetVersion
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
+req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 
@@ -100,10 +100,10 @@ NetDMA provider drivers can call the
     NetDMA provider in the 
     <b>MajorVersion</b> and 
     <b>MinorVersion</b> members of the 
-    <mshelp:link keywords="netvista.net_dma_provider_characteristics" tabindex="0"><b>
-    NET_DMA_PROVIDER_CHARACTERISTICS</b></mshelp:link> structure that it passes to the 
-    <mshelp:link keywords="netvista.netdmaregisterprovider" tabindex="0"><b>
-    NetDmaRegisterProvider</b></mshelp:link> function.
+    <a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
+    NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that it passes to the 
+    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
+    NetDmaRegisterProvider</a> function.
 <div class="alert"><b>Note</b>  <b>NetDmaGetVersion</b> is not available in NetDMA version 1.0. To avoid using a function import that
     might stop the driver from loading, a NetDMA 1.1 or later provider driver must verify the presence of 
     <b>NetDmaGetVersion</b> before it calls 
@@ -120,23 +120,20 @@ NetDMA provider drivers can call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. |
+| **Target Platform** | Universal |
 | **Header** | netdma.h (include Netdma.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.net_dma_provider_characteristics" tabindex="0"><b>
-   NET_DMA_PROVIDER_CHARACTERISTICS</b></mshelp:link>
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 
 <a href="..\ndis\nf-ndis-ndisgetroutineaddress.md">NdisGetRoutineAddress</a>
 
-<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
+<a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
+   NET_DMA_PROVIDER_CHARACTERISTICS</a>
 
  
 

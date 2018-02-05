@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 36caaea9-2354-4ed8-9649-5eb102def8d5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSQUALITY, ks/KSQUALITY, *PKSQUALITY, KSQUALITY structure [Streaming Media Devices], KSQUALITY, ks/PKSQUALITY, stream.ksquality, PKSQUALITY structure pointer [Streaming Media Devices], ks-struct_a2b63e1c-e5b4-437d-a5ba-0746f8388eef.xml
+ms.keywords : PKSQUALITY structure pointer [Streaming Media Devices], KSQUALITY structure [Streaming Media Devices], *PKSQUALITY, PKSQUALITY, ks-struct_a2b63e1c-e5b4-437d-a5ba-0746f8388eef.xml, ks/KSQUALITY, ks/PKSQUALITY, stream.ksquality, KSQUALITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ Indicates the percentage of frames currently being received that are actually be
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

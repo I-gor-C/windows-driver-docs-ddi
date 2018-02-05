@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST"
+req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 req.product : Windows 10 or later.
 ---
 
@@ -89,14 +89,10 @@ A call to <b>AgpFreeVirtual</b> must be paired with a previous call to <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | videoagp.h (include Video.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

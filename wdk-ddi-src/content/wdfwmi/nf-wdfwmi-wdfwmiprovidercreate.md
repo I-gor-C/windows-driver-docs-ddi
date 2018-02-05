@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 07aed86f-870e-431b-b1bb-403395c35946
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfWmiProviderCreate, WdfWmiProviderCreate method, kmdf.wdfwmiprovidercreate, wdfwmi/WdfWmiProviderCreate, wdf.wdfwmiprovidercreate, PFN_WDFWMIPROVIDERCREATE, DFWMIRef_f1b26bb3-d191-4f2b-9289-c76ef93769b5.xml
+ms.keywords : wdf.wdfwmiprovidercreate, kmdf.wdfwmiprovidercreate, DFWMIRef_f1b26bb3-d191-4f2b-9289-c76ef93769b5.xml, WdfWmiProviderCreate method, wdfwmi/WdfWmiProviderCreate, PFN_WDFWMIPROVIDERCREATE, WdfWmiProviderCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -154,26 +154,24 @@ For more information about the <b>WdfWmiProviderCreate</b> method, see <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidergetdevice.md">WdfWmiProviderGetDevice</a>
 
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
 <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a>
-
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidergetdevice.md">WdfWmiProviderGetDevice</a>
 
  
 

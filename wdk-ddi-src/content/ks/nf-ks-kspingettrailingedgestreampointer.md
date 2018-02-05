@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 763f1f66-4d83-44aa-9db5-206cf6b6f9b1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinGetTrailingEdgeStreamPointer, stream.kspingettrailingedgestreampointer, ks/KsPinGetTrailingEdgeStreamPointer, KsPinGetTrailingEdgeStreamPointer function [Streaming Media Devices], avfunc_3fd3182e-6e4d-4654-9de7-e9cea1086e3e.xml
+ms.keywords : ks/KsPinGetTrailingEdgeStreamPointer, avfunc_3fd3182e-6e4d-4654-9de7-e9cea1086e3e.xml, stream.kspingettrailingedgestreampointer, KsPinGetTrailingEdgeStreamPointer function [Streaming Media Devices], KsPinGetTrailingEdgeStreamPointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,16 +64,16 @@ This parameter specifies the state in which to acquire the trailing edge stream 
 
 
 
+#### KSSTREAM_POINTER_STATE_LOCKED
+
+Acquire and lock the leading edge stream pointer. If no data frame is associated with the stream pointer, return <b>NULL</b>. If a non<b>null</b> pointer is returned, it is a locked stream pointer and has a data frame associated with it. Frames associated with a locked stream pointer <i>cannot</i> be canceled. 
+
+
 #### KSSTREAM_POINTER_STATE_UNLOCKED
 
 Acquire the leading edge stream pointer regardless of whether it references a data frame or not. 
 
 No attempts can be made to access any data associated with the pointer until the pointer is locked. Also note that frames associated with an unlocked stream pointer can be canceled.
-
-
-#### KSSTREAM_POINTER_STATE_LOCKED
-
-Acquire and lock the leading edge stream pointer. If no data frame is associated with the stream pointer, return <b>NULL</b>. If a non<b>null</b> pointer is returned, it is a locked stream pointer and has a data frame associated with it. Frames associated with a locked stream pointer <i>cannot</i> be canceled.
 
 
 ## Return Value
@@ -93,28 +93,25 @@ Data frames that reside in the window between the leading edge stream pointer an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
-
-<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 
 <a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
 
 <a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
 
-<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 
 <a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 

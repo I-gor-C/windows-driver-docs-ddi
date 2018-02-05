@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 43ac738b-7837-4183-ad06-5c35a2af38ff
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbc_function_descriptor, PUSBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR structure [Buses], *PUSBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, usbbusif/USBC_FUNCTION_DESCRIPTOR, usbstrct_29623b3f-9def-4eb6-8735-eb695560ce27.xml, _USBC_FUNCTION_DESCRIPTOR, PUSBC_FUNCTION_DESCRIPTOR structure pointer [Buses], usbbusif/PUSBC_FUNCTION_DESCRIPTOR
+ms.keywords : "*PUSBC_FUNCTION_DESCRIPTOR, PUSBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR structure [Buses], usbstrct_29623b3f-9def-4eb6-8735-eb695560ce27.xml, PUSBC_FUNCTION_DESCRIPTOR structure pointer [Buses], buses.usbc_function_descriptor, usbbusif/PUSBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, _USBC_FUNCTION_DESCRIPTOR, usbbusif/USBC_FUNCTION_DESCRIPTOR"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -97,9 +97,6 @@ For information on how to use user-defined callback routines to provide a custom
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbbusif.h (include Usbbusif.h) |
 
 ## See Also

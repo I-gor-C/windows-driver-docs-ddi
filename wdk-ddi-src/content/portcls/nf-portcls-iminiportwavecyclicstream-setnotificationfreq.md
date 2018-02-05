@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b909c11c-de56-43e8-b339-b92249bc7e1c
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream, portcls/IMiniportWaveCyclicStream::SetNotificationFreq, audio.iminiportwavecyclicstream_setnotificationfreq, SetNotificationFreq, SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream::SetNotificationFreq, SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream interface [Audio Devices], SetNotificationFreq method, audmp-routines_9db148da-326d-4176-a852-83fa1e453246.xml
+ms.keywords : SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream interface [Audio Devices], SetNotificationFreq method, IMiniportWaveCyclicStream::SetNotificationFreq, audio.iminiportwavecyclicstream_setnotificationfreq, portcls/IMiniportWaveCyclicStream::SetNotificationFreq, IMiniportWaveCyclicStream, SetNotificationFreq method [Audio Devices], IMiniportWaveCyclicStream interface, SetNotificationFreq, audmp-routines_9db148da-326d-4176-a852-83fa1e453246.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -75,24 +75,20 @@ In all current Windows releases, the WaveCyclic port driver specifies an <i>Inte
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
 
 <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
  
 

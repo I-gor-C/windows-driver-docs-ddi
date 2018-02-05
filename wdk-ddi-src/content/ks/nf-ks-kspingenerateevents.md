@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : c2137849-aff0-4bf7-abab-b92e17aaef70
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, KsPinGenerateEvents, ks/KsPinGenerateEvents, stream.kspingenerateevents, KsPinGenerateEvents function [Streaming Media Devices]
+ms.keywords : KsPinGenerateEvents function [Streaming Media Devices], avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, KsPinGenerateEvents, stream.kspingenerateevents, ks/KsPinGenerateEvents
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -128,24 +128,21 @@ The event is present in <i>Pin's </i>event list and <i>EventId </i>matches the e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL (See Remarks)" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 
 <a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
 
 <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
-
-<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
-
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 
  
 

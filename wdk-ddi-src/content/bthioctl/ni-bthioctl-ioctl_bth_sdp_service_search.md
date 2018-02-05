@@ -48,14 +48,14 @@ The IOCTL_BTH_SDP_SERVICE_SEARCH request contacts a remote device with an SDP re
 ### Input Buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member contains a 
-      <mshelp:link keywords="bltooth.bth_sdp_service_search_request" tabindex="0"><b>
-      BTH_SDP_SERVICE_SEARCH_REQUEST</b></mshelp:link> structure that specifies the connection handle to the remote SDP
+      <a href="..\bthioctl\ns-bthioctl-_bth_sdp_service_search_request.md">
+      BTH_SDP_SERVICE_SEARCH_REQUEST</a> structure that specifies the connection handle to the remote SDP
       server and an array of GUIDs to search for.
 
 ### Input Buffer Length
 The length of a 
-      <mshelp:link keywords="bltooth.bth_sdp_service_search_request" tabindex="0"><b>
-      BTH_SDP_SERVICE_SEARCH_REQUEST</b></mshelp:link> structure/
+      <a href="..\bthioctl\ns-bthioctl-_bth_sdp_service_search_request.md">
+      BTH_SDP_SERVICE_SEARCH_REQUEST</a> structure/
 
 ### Output Buffer
 The 
@@ -163,7 +163,7 @@ The SDP service could not process the number of GUIDs passed in the input buffer
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthioctl.h (include Bthioctl.h) |
 | **IRQL** | "<= PASSIVE_LEVEL" |
 

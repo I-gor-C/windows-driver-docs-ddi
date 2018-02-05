@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 641c8f8d-e398-4ca4-9e28-bba2ef7d1bd3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10_DDI_QUERY_DATA_SO_STATISTICS, D3D10_DDI_QUERY_DATA_SO_STATISTICS structure [Display Devices], display.d3d10_ddi_query_data_so_statistics, UMDisplayDriver_Dx10param_Structs_3748a5db-9ce8-4763-baac-4110b754188d.xml, D3D10_DDI_QUERY_DATA_SO_STATISTICS
+ms.keywords : UMDisplayDriver_Dx10param_Structs_3748a5db-9ce8-4763-baac-4110b754188d.xml, display.d3d10_ddi_query_data_so_statistics, D3D10_DDI_QUERY_DATA_SO_STATISTICS, D3D10_DDI_QUERY_DATA_SO_STATISTICS structure [Display Devices], d3d10umddi/D3D10_DDI_QUERY_DATA_SO_STATISTICS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,7 @@ The driver associates a D3D10_DDI_QUERY_DATA_SO_STATISTICS structure with the D3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

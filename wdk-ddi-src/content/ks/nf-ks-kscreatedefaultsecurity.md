@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2992a62b-7c3c-4bf5-ba3a-26c26c419f98
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCreateDefaultSecurity function [Streaming Media Devices], ks/KsCreateDefaultSecurity, KsCreateDefaultSecurity, ksfunc_ab036f47-0a15-4983-98b0-7277782f29e6.xml, stream.kscreatedefaultsecurity
+ms.keywords : ks/KsCreateDefaultSecurity, KsCreateDefaultSecurity function [Streaming Media Devices], KsCreateDefaultSecurity, ksfunc_ab036f47-0a15-4983-98b0-7277782f29e6.xml, stream.kscreatedefaultsecurity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ Points to the place in which to put the returned default security descriptor.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

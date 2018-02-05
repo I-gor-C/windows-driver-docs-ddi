@@ -74,9 +74,7 @@ Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

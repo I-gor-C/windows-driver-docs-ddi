@@ -76,14 +76,10 @@ The client driver should not make any blocking calls when handling this function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Desktop |
 | **Header** | nfccx.h (include Ncidef.h) |
-| **Library** |  |
 | **IRQL** | Requires same |
-| **DDI compliance rules** |  |
 
 ## See Also
 

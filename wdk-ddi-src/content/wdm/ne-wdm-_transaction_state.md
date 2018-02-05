@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b97bedc5-6393-49bd-b803-e70e3a3d49df
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ktm_ref_051131c5-e3a5-430e-afca-053fcb68f746.xml, wdm/TransactionStateCommittedNotify, _TRANSACTION_STATE, wdm/TransactionStateNormal, kernel.transaction_state, TRANSACTION_STATE enumeration [Kernel-Mode Driver Architecture], TransactionStateCommittedNotify, wdm/TRANSACTION_STATE, wdm/TransactionStateIndoubt, TRANSACTION_STATE, TransactionStateIndoubt, TransactionStateNormal
+ms.keywords : kernel.transaction_state, wdm/TransactionStateNormal, wdm/TransactionStateIndoubt, _TRANSACTION_STATE, TransactionStateCommittedNotify, TRANSACTION_STATE, TransactionStateNormal, TRANSACTION_STATE enumeration [Kernel-Mode Driver Architecture], wdm/TRANSACTION_STATE, ktm_ref_051131c5-e3a5-430e-afca-053fcb68f746.xml, wdm/TransactionStateCommittedNotify, TransactionStateIndoubt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -78,9 +78,7 @@ The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

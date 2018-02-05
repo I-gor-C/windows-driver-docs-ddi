@@ -93,26 +93,20 @@ The last task that the video port driver's <b>VideoPortStartDma</b> function per
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a>
-
-<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
+<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
 
 <a href="..\video\nf-video-videoportcompletedma.md">VideoPortCompleteDma</a>
 
-<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
+<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
+
+<a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a>
 
  
 

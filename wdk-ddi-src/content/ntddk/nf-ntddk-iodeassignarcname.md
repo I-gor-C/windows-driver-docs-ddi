@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 978fbe0a-ac10-4c83-870d-35d98775c233
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoDeassignArcName routine [Kernel-Mode Driver Architecture], ntddk/IoDeassignArcName, kernel.iodeassignarcname, k104_859767ed-5969-41db-a454-b7808a1ef131.xml, IoDeassignArcName
+ms.keywords : k104_859767ed-5969-41db-a454-b7808a1ef131.xml, kernel.iodeassignarcname, IoDeassignArcName, IoDeassignArcName routine [Kernel-Mode Driver Architecture], ntddk/IoDeassignArcName
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -68,12 +68,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 

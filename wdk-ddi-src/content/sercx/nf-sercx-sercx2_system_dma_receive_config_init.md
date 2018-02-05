@@ -8,7 +8,7 @@ old-project : serports
 ms.assetid : 9BD18E2C-731D-4C7D-8363-67136521B4A7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : serports.sercx2_system_dma_receive_config_init, 2/SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT, SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT function [Serial Ports], SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT
+ms.keywords : SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT, 2/SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT, serports.sercx2_system_dma_receive_config_init, SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT function [Serial Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,22 +91,19 @@ Your serial controller driver must use either this function or the <a href="..\s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1. Available starting with Windows 8.1. |
+| **Target Platform** | Desktop |
 | **Header** | sercx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level. |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\sercx\ns-sercx-_sercx2_system_dma_receive_config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>
 
 <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a>
 
 <a href="..\sercx\nf-sercx-sercx2_system_dma_receive_config_init_new_data_notification.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG_INIT_NEW_DATA_NOTIFICATION</a>
-
-<a href="..\sercx\ns-sercx-_sercx2_system_dma_receive_config.md">SERCX2_SYSTEM_DMA_RECEIVE_CONFIG</a>
 
  
 

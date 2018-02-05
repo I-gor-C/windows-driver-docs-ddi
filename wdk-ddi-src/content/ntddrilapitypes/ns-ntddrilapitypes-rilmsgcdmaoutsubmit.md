@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3ed93cff-7974-4cf9-9b89-f4a8e52c4c3d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT structure [Network Drivers Starting with Windows Vista], netvista.rilmsgcdmaoutsubmit, *LPRILMSGCDMAOUTSUBMIT, ntddrilapitypes/RILMSGCDMAOUTSUBMIT
+ms.keywords : "*LPRILMSGCDMAOUTSUBMIT, netvista.rilmsgcdmaoutsubmit, ntddrilapitypes/RILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT
+req.typenames : "*LPRILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT"
 ---
 
 # RILMSGCDMAOUTSUBMIT structure
@@ -169,7 +169,4 @@ typedef struct _RILMSGCDMAOUTSUBMIT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

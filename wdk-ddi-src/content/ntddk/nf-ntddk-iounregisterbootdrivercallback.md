@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 6199672C-A4A4-4ED8-B91E-95D96A472449
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iounregisterbootdrivercallback, ntddk/IoUnRegisterBootDriverCallback, IoUnRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture], IoUnRegisterBootDriverCallback, IoUnregisterBootDriverCallback
+ms.keywords : IoUnregisterBootDriverCallback, ntddk/IoUnRegisterBootDriverCallback, kernel.iounregisterbootdrivercallback, IoUnRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture], IoUnRegisterBootDriverCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ A driver that calls <a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

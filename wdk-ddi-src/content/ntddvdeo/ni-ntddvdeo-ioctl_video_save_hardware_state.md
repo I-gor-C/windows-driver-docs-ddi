@@ -69,9 +69,7 @@ If the miniport driver successfully saves the adapter state, it sets the <b>Info
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddvdeo.h |
-| **IRQL** |  |
 
 ## See Also
 

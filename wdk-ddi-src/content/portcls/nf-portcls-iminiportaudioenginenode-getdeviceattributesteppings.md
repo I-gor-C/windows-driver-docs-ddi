@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7AF6C9AF-8955-4F09-A42C-097B4AD1CD3A
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetDeviceAttributeSteppings, GetDeviceAttributeSteppings method [Audio Devices], audio.iminiportaudioenginenode_getdeviceattributesteppings, IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceAttributeSteppings method, portcls/IMiniportAudioEngineNode::GetDeviceAttributeSteppings
+ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetDeviceAttributeSteppings method, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings, IMiniportAudioEngineNode, audio.iminiportaudioenginenode_getdeviceattributesteppings
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -82,22 +82,18 @@ returns an appropriate error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
-
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
 
 <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff565631(v=vs.85).aspx">KSPROPERTY_STEPPING_LONG</a>
 
 <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
+
+<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
 
  
 

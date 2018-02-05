@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eef32784-ea27-42c0-9a7a-74ce3d76665d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisGetCurrentSystemTime, ndis/NdisGetCurrentSystemTime, ndis_sysinfo_ref_cfd2358c-a52a-43d9-a07b-c64abb3e28b1.xml, NdisGetCurrentSystemTime macro [Network Drivers Starting with Windows Vista], netvista.ndisgetcurrentsystemtime
+ms.keywords : ndis_sysinfo_ref_cfd2358c-a52a-43d9-a07b-c64abb3e28b1.xml, NdisGetCurrentSystemTime, ndis/NdisGetCurrentSystemTime, NdisGetCurrentSystemTime macro [Network Drivers Starting with Windows Vista], netvista.ndisgetcurrentsystemtime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -56,7 +56,8 @@ VOID NdisGetCurrentSystemTime(
 
 `_pSystemTime`
 
-TBD
+A pointer to a caller-supplied variable in which this function returns a count of 100-nanosecond
+     intervals since January 1, 1601.
 
 
 ## Return Value
@@ -76,14 +77,11 @@ An NDIS driver might also call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

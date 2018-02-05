@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 64079b03-9771-4940-a19e-a29389cbf2fe
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE, _WHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE structure pointer [WHEA Drivers and Applications], whea.whea_x86_register_state, WHEA_X86_REGISTER_STATE structure [WHEA Drivers and Applications], whearef_330404b2-bd6e-4220-97c6-8bacc803eb78.xml, ntddk/PWHEA_X86_REGISTER_STATE
+ms.keywords : whearef_330404b2-bd6e-4220-97c6-8bacc803eb78.xml, ntddk/WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE, whea.whea_x86_register_state, ntddk/PWHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE structure pointer [WHEA Drivers and Applications], WHEA_X86_REGISTER_STATE structure [WHEA Drivers and Applications], WHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE, _WHEA_X86_REGISTER_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -181,9 +181,7 @@ If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_x
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

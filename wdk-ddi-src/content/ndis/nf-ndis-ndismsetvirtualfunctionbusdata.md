@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 74c6789e-22a6-42e9-bc14-8b9f93da668b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMSetVirtualFunctionBusData, netvista.ndismsetvirtualfunctionbusdata, NdisMSetVirtualFunctionBusData function [Network Drivers Starting with Windows Vista], ndis/NdisMSetVirtualFunctionBusData
+ms.keywords : ndis/NdisMSetVirtualFunctionBusData, netvista.ndismsetvirtualfunctionbusdata, NdisMSetVirtualFunctionBusData function [Network Drivers Starting with Windows Vista], NdisMSetVirtualFunctionBusData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,26 +99,23 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
 
 <a href="..\ndis\nf-ndis-ndismenablevirtualization.md">NdisMEnableVirtualization</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451552">SetVirtualFunctionData</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451925">OID_SRIOV_WRITE_VF_CONFIG_SPACE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451552">SetVirtualFunctionData</a>
 
 <b></b>
 

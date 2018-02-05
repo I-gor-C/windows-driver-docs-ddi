@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : CD51FBD6-A589-4135-8BF0-8F0075654A05
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_WIM_PROVIDER_EXTERNAL_INFO, ntifs/PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE, WIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO structure pointer [Installable File System Drivers], ifsk.wim_provider_external_info, PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO structure [Installable File System Drivers], ntifs/WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED, *PWIM_PROVIDER_EXTERNAL_INFO"
+ms.keywords : WIM_PROVIDER_EXTERNAL_INFO, _WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED, ntifs/PWIM_PROVIDER_EXTERNAL_INFO, ifsk.wim_provider_external_info, *PWIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO structure pointer [Installable File System Drivers], ntifs/WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO structure [Installable File System Drivers], WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,9 +104,7 @@ The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider inf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1 Update. Available starting with Windows 8.1 Update. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

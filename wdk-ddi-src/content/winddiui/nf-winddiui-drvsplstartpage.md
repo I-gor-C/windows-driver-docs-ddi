@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 7291a0ec-7a43-4fc6-ac1d-60487b2ad3d8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.drvsplstartpage, DrvSplStartPage function [Print Devices], DrvSplStartPage, winddiui/DrvSplStartPage, print_interface-graphics_4f9a41e8-8706-428e-8f58-945485151f62.xml
+ms.keywords : winddiui/DrvSplStartPage, DrvSplStartPage function [Print Devices], print_interface-graphics_4f9a41e8-8706-428e-8f58-945485151f62.xml, print.drvsplstartpage, DrvSplStartPage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -66,11 +66,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winddiui.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

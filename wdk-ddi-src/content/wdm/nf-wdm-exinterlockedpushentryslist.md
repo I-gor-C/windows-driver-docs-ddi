@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4bff45b5-c295-444d-82ea-59cfd6c37551
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exinterlockedpushentryslist, k102_53da8507-cae3-4a71-9c59-49676a8b7a95.xml, ExInterlockedPushEntrySList routine [Kernel-Mode Driver Architecture], ExInterlockedPushEntrySList, wdm/ExInterlockedPushEntrySList
+ms.keywords : ExInterlockedPushEntrySList routine [Kernel-Mode Driver Architecture], k102_53da8507-cae3-4a71-9c59-49676a8b7a95.xml, kernel.exinterlockedpushentryslist, ExInterlockedPushEntrySList, wdm/ExInterlockedPushEntrySList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,26 +83,24 @@ The <b>ExInterlockedPushEntrySList</b> routine can be called at any IRQL. The st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
 
 <a href="..\wdm\nf-wdm-exinterlockedpopentryslist.md">ExInterlockedPopEntrySList</a>
 
-<a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
-
-<a href="..\wdm\nf-wdm-exquerydepthslist.md">ExQueryDepthSList</a>
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 
 <a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
+
+<a href="..\wdm\nf-wdm-exquerydepthslist.md">ExQueryDepthSList</a>
 
  
 

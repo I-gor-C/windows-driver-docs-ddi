@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b2c5611e-930d-41a5-a07e-7de8f8584283
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ipsec_offload_v2_security_association, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, task_offload_IPsecv2_ref_ccf0a55c-3609-4e15-928a-e46113b96df0.xml, ndis/PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, ndis/IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
+ms.keywords : task_offload_IPsecv2_ref_ccf0a55c-3609-4e15-928a-e46113b96df0.xml, netvista.ipsec_offload_v2_security_association, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], ndis/PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, ndis/IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION"
+req.typenames : IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
 ---
 
 # _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure
@@ -62,8 +62,8 @@ typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
 `AuthenticationAlgorithm`
 
 The integrity (authentication) algorithm for the SA, formatted as an 
-     <mshelp:link keywords="netvista.ipsec_offload_v2_algorithm_info" tabindex="0"><b>
-     IPSEC_OFFLOAD_V2_ALGORITHM_INFO</b></mshelp:link> structure.
+     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
+     IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a> structure.
 
 `EncryptionAlgorithm`
 
@@ -91,8 +91,8 @@ Specifies ESN SA.
 `Operation`
 
 The IPsec operation for which the SA is to be used. The 
-     <mshelp:link keywords="netvista.ipsec_offload_v2_operation" tabindex="0"><b>
-     IPSEC_OFFLOAD_V2_OPERATION</b></mshelp:link> enumeration defines the supported operations.
+     <a href="..\ndis\ne-ndis-_ipsec_offload_v2_operation.md">
+     IPSEC_OFFLOAD_V2_OPERATION</a> enumeration defines the supported operations.
 
 `SequenceNumberHighOrder`
 
@@ -133,19 +133,17 @@ A
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
+   IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a>
+
 <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>
 
 <a href="..\ndis\ne-ndis-_ipsec_offload_v2_operation.md">IPSEC_OFFLOAD_V2_OPERATION</a>
-
-<mshelp:link keywords="netvista.ipsec_offload_v2_algorithm_info" tabindex="0"><b>
-   IPSEC_OFFLOAD_V2_ALGORITHM_INFO</b></mshelp:link>
 
  
 

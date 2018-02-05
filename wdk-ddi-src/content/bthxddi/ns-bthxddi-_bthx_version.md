@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 2C5CC5B1-52F1-4DF5-9397-E8FD4983BA25
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : BTHX_VERSION structure [Bluetooth Devices], _BTHX_VERSION, *PBTHX_VERSION, bthxddi/_BTHX_VERSION, BTHX_VERSION, bltooth.bthx_version
+ms.keywords : BTHX_VERSION structure [Bluetooth Devices], _BTHX_VERSION, bthxddi/_BTHX_VERSION, bltooth.bthx_version, BTHX_VERSION, *PBTHX_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ Bitmask of supported versions. Currently, BTHX_DDI_VERSION_1   is the only suppo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported starting with  Windows 8. Versions:\_Supported starting with  Windows 8. |
 | **Header** | bthxddi.h (include BthXDDI.h) |

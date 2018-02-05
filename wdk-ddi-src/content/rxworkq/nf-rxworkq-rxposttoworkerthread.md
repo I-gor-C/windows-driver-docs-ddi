@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0fc9fb57-219e-4a3d-bc82-904ab8657d66
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxworkq/RxPostToWorkerThread, ifsk.rxposttoworkerthread, rxref_19387eca-2666-41c0-a93d-2133d3ca03ee.xml, RxPostToWorkerThread, RxPostToWorkerThread routine [Installable File System Drivers]
+ms.keywords : RxPostToWorkerThread, rxworkq/RxPostToWorkerThread, RxPostToWorkerThread routine [Installable File System Drivers], ifsk.rxposttoworkerthread, rxref_19387eca-2666-41c0-a93d-2133d3ca03ee.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -137,14 +137,10 @@ If the <b>RxPostToWorkerThread </b>routine fails on a debug build, the <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxworkq.h (include Rxworkq.h, Rxstruc.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

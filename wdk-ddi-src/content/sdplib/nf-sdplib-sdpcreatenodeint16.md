@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : d36d9ac5-1bb8-4433-b795-fe8e3391980e
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : SdpCreateNodeInt16 function [Bluetooth Devices], sdplib/SdpCreateNodeInt16, bth_funcs_7ca1636f-a86f-4938-8483-461e48b13abb.xml, bltooth.sdpcreatenodeint16, SdpCreateNodeInt16
+ms.keywords : bth_funcs_7ca1636f-a86f-4938-8483-461e48b13abb.xml, sdplib/SdpCreateNodeInt16, SdpCreateNodeInt16 function [Bluetooth Devices], bltooth.sdpcreatenodeint16, SdpCreateNodeInt16
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,24 +98,21 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
 
 <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 
 <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 
 <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
+
+<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
 
  
 

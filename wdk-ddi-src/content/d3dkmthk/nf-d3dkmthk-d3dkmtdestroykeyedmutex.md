@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5905035f-25e1-49df-bf59-bef81e724c49
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTDestroyKeyedMutex, display.d3dkmtdestroykeyedmutex, D3DKMTDestroyKeyedMutex function [Display Devices], OpenGL_Functions_de5400f1-6ef8-431c-a838-8c82cb03d7f1.xml, D3DKMTDestroyKeyedMutex
+ms.keywords : D3DKMTDestroyKeyedMutex function [Display Devices], D3DKMTDestroyKeyedMutex, OpenGL_Functions_de5400f1-6ef8-431c-a838-8c82cb03d7f1.xml, d3dkmthk/D3DKMTDestroyKeyedMutex, display.d3dkmtdestroykeyedmutex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,14 +95,11 @@ This function might also return other <b>NTSTATUS</b> values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DKMTDestroyKeyedMutex is supported beginning with the Windows 7 operating system. D3DKMTDestroyKeyedMutex is supported beginning with the Windows 7 operating system. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

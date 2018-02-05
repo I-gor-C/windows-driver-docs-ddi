@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b0b32954-62d1-4434-892f-67106b0f8ef7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_SetPersistentBindingV2, fibreHBA_rtns_b081179f-690d-4646-ae40-1737c5933394.xml, HBA_SetPersistentBindingV2, HBA_SetPersistentBindingV2 routine [Storage Devices], storage.hba_setpersistentbindingv2
+ms.keywords : storage.hba_setpersistentbindingv2, HBA_SetPersistentBindingV2, hbaapi/HBA_SetPersistentBindingV2, HBA_SetPersistentBindingV2 routine [Storage Devices], fibreHBA_rtns_b081179f-690d-4646-ae40-1737c5933394.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -130,14 +130,10 @@ The <b>HBA_SetPersistentBindingV2</b> routine establishes a set of bindings betw
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

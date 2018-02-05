@@ -69,7 +69,6 @@ The <b>Information</b> member is set to zero. The <b>Status</b> member is set to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 | **IRQL** | PASSIVE_LEVEL |
 

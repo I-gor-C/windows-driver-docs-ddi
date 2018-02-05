@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 87a873c2-07d3-4f76-bc26-5fcae4b960e7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksforwardandcatchirp, KsForwardAndCatchIrp function [Streaming Media Devices], ksfunc_db5ae1e5-b0c8-4703-866f-a3f060e5ffb3.xml, ks/KsForwardAndCatchIrp, KsForwardAndCatchIrp
+ms.keywords : KsForwardAndCatchIrp, ksfunc_db5ae1e5-b0c8-4703-866f-a3f060e5ffb3.xml, stream.ksforwardandcatchirp, ks/KsForwardAndCatchIrp, KsForwardAndCatchIrp function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,11 +121,6 @@ Indicates that the next stack location is to be used without modification.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

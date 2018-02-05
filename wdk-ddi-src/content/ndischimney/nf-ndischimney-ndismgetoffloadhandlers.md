@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a78acf5d-07ec-487c-97bd-daca8d08863c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndischimney/NdisMGetOffloadHandlers, NdisMGetOffloadHandlers, netvista.ndismgetoffloadhandlers, NdisMGetOffloadHandlers function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_6cfee4fb-432c-4f03-b28d-947dbc95ae48.xml
+ms.keywords : NdisMGetOffloadHandlers, ndischimney/NdisMGetOffloadHandlers, NdisMGetOffloadHandlers function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_6cfee4fb-432c-4f03-b28d-947dbc95ae48.xml, netvista.ndismgetoffloadhandlers
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,10 +61,10 @@ NDIS_STATUS NdisMGetOffloadHandlers(
 The handle to a context area that is offload target-allocated in which the offload target
      maintains state information about this instance of the adapter. The offload target provided this handle
      to NDIS when calling 
-     <mshelp:link keywords="netvista.ndismsetminiportattributes" tabindex="0"><b>
-     NdisMSetMiniportAttributes</b></mshelp:link> from its 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
+     NdisMSetMiniportAttributes</a> from its 
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 `ChimneyType`
 
@@ -184,8 +184,8 @@ If the offload target supports the specified
 </td>
 <td>
 
-<mshelp:link keywords="netvista.ndis_tcp_offload_event_handlers" tabindex="0"><b>
-        NDIS_TCP_OFFLOAD_EVENT_HANDLERS</b></mshelp:link>
+<a href="..\ndischimney\ns-ndischimney-_ndis_tcp_offload_event_handlers.md">
+        NDIS_TCP_OFFLOAD_EVENT_HANDLERS</a>
 
 
 </td>
@@ -205,14 +205,9 @@ The offload target copies the entry points from the chimney-specific structure i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ndischimney.h (include Ndischimney.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
@@ -220,8 +215,8 @@ The offload target copies the entry points from the chimney-specific structure i
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<mshelp:link keywords="netvista.ndis_tcp_offload_event_handlers" tabindex="0"><b>
-   NDIS_TCP_OFFLOAD_EVENT_HANDLERS</b></mshelp:link>
+<a href="..\ndischimney\ns-ndischimney-_ndis_tcp_offload_event_handlers.md">
+   NDIS_TCP_OFFLOAD_EVENT_HANDLERS</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 

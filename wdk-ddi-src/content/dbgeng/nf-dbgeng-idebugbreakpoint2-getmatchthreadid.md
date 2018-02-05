@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 0f0f7248-de85-4757-8006-48444af8edac
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugBreakpoint::GetMatchThreadId, dbgeng/IDebugBreakpoint2::GetMatchThreadId, debugger.getmatchthreadid, IDebugBreakpoint::GetMatchThreadId, IDebugBreakpoint2, IDebugBreakpoint interface [Windows Debugging], GetMatchThreadId method, GetMatchThreadId method [Windows Debugging], IDebugBreakpoint2 interface, ComOther_6a9afca5-8445-48d9-8e28-8d38e6cf2658.xml, IDebugBreakpoint2 interface [Windows Debugging], GetMatchThreadId method, IDebugBreakpoint2::GetMatchThreadId, GetMatchThreadId method [Windows Debugging], GetMatchThreadId method [Windows Debugging], IDebugBreakpoint interface, GetMatchThreadId
+ms.keywords : IDebugBreakpoint interface [Windows Debugging], GetMatchThreadId method, GetMatchThreadId method [Windows Debugging], IDebugBreakpoint2::GetMatchThreadId, debugger.getmatchthreadid, dbgeng/IDebugBreakpoint2::GetMatchThreadId, IDebugBreakpoint2, GetMatchThreadId, dbgeng/IDebugBreakpoint::GetMatchThreadId, GetMatchThreadId method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint::GetMatchThreadId, GetMatchThreadId method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2 interface [Windows Debugging], GetMatchThreadId method, ComOther_6a9afca5-8445-48d9-8e28-8d38e6cf2658.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -101,11 +101,6 @@ For more information about breakpoint properties, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

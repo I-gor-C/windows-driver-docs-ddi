@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1af8b1cd-c594-49c7-8c25-674226295d90
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_NIC_SWITCH_VF_INFO structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_VF_INFO, NDIS_NIC_SWITCH_VF_INFO, ntddndis/NDIS_NIC_SWITCH_VF_INFO, ntddndis/PNDIS_NIC_SWITCH_VF_INFO, _NDIS_NIC_SWITCH_VF_INFO, netvista.ndis_nic_switch_vf_info, NDIS_NIC_SWITCH_VF_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_VF_INFO
+ms.keywords : ntddndis/NDIS_NIC_SWITCH_VF_INFO, NDIS_NIC_SWITCH_VF_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_VF_INFO, PNDIS_NIC_SWITCH_VF_INFO, ntddndis/PNDIS_NIC_SWITCH_VF_INFO, PNDIS_NIC_SWITCH_VF_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_vf_info, NDIS_NIC_SWITCH_VF_INFO, _NDIS_NIC_SWITCH_VF_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -134,18 +134,16 @@ For more information about the SR-IOV interface, see 	<a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vf_info_array.md">NDIS_NIC_SWITCH_VF_INFO_ARRAY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
 
 <b></b>
 

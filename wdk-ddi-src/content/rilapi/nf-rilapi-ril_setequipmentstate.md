@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 52b76027-5562-403b-9993-40d3d9a33e35
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SetEquipmentState, RIL_SetEquipmentState method [Network Drivers Starting with Windows Vista], rilapi/RIL_SetEquipmentState, netvista.ril_setequipmentstate
+ms.keywords : rilapi/RIL_SetEquipmentState, RIL_SetEquipmentState, netvista.ril_setequipmentstate, RIL_SetEquipmentState method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

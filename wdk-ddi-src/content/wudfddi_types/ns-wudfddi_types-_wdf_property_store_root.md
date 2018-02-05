@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 431ae991-35e0-4cf7-a3e0-57591abfe5c5
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfddi_types/PWDF_PROPERTY_STORE_ROOT, wdf.wdf_property_store_root, *PWDF_PROPERTY_STORE_ROOT, umdfstructs_7024c360-9ab7-4eea-ba66-c45c5912dfaa.xml, wudfddi_types/WDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT structure, WDF_PROPERTY_STORE_ROOT, _WDF_PROPERTY_STORE_ROOT, umdf.wdf_property_store_root, PWDF_PROPERTY_STORE_ROOT structure pointer
+ms.keywords : wdf.wdf_property_store_root, wudfddi_types/PWDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT structure pointer, wudfddi_types/WDF_PROPERTY_STORE_ROOT, umdfstructs_7024c360-9ab7-4eea-ba66-c45c5912dfaa.xml, _WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT, umdf.wdf_property_store_root, WDF_PROPERTY_STORE_ROOT structure
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT
+req.typenames : "*PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT"
 req.product : Windows 10 or later.
 ---
 
@@ -165,8 +165,6 @@ For more information about these registry keys, see <a href="https://docs.micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 

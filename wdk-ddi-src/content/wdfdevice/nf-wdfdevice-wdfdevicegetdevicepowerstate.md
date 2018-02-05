@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7405e0c7-9263-4911-9b1e-52cffa559af3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetDevicePowerState, DFDeviceObjectGeneralRef_40013978-2c8d-4776-b218-5f0c743e57e9.xml, WdfDeviceGetDevicePowerState method, wdf.wdfdevicegetdevicepowerstate, PFN_WDFDEVICEGETDEVICEPOWERSTATE, kmdf.wdfdevicegetdevicepowerstate, wdfdevice/WdfDeviceGetDevicePowerState
+ms.keywords : PFN_WDFDEVICEGETDEVICEPOWERSTATE, WdfDeviceGetDevicePowerState method, WdfDeviceGetDevicePowerState, kmdf.wdfdevicegetdevicepowerstate, wdf.wdfdevicegetdevicepowerstate, DFDeviceObjectGeneralRef_40013978-2c8d-4776-b218-5f0c743e57e9.xml, wdfdevice/WdfDeviceGetDevicePowerState
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,12 +131,10 @@ The <b>WdfDeviceGetDevicePowerState</b> method returns a meaningful value only i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

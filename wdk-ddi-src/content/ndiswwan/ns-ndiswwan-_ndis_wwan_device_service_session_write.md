@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BF4A7BF6-6C39-4F75-BF76-848FF9241E52
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_write, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE
+ms.keywords : "_NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_write, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE"
+req.typenames : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure
@@ -108,9 +108,7 @@ The data to be sent to the MB device.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

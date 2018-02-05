@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac8346e9-46ce-4205-a46b-c327888b952d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2LINELIST structure pointer [Display Devices], display.d3dhal_dp2linelist, d3dstrct_e2e04b99-c6fc-4ee3-bcaf-4794814848a0.xml, LPD3DHAL_DP2LINELIST, d3dhal/LPD3DHAL_DP2LINELIST, *LPD3DHAL_DP2LINELIST, D3DHAL_DP2LINELIST, _D3DHAL_DP2LINELIST, D3DHAL_DP2LINELIST structure [Display Devices], d3dhal/D3DHAL_DP2LINELIST
+ms.keywords : display.d3dhal_dp2linelist, d3dstrct_e2e04b99-c6fc-4ee3-bcaf-4794814848a0.xml, D3DHAL_DP2LINELIST, D3DHAL_DP2LINELIST structure [Display Devices], d3dhal/D3DHAL_DP2LINELIST, LPD3DHAL_DP2LINELIST structure pointer [Display Devices], LPD3DHAL_DP2LINELIST, _D3DHAL_DP2LINELIST, d3dhal/LPD3DHAL_DP2LINELIST, *LPD3DHAL_DP2LINELIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPD3DHAL_DP2LINELIST, D3DHAL_DP2LINELIST"
+req.typenames : D3DHAL_DP2LINELIST, *LPD3DHAL_DP2LINELIST
 ---
 
 # _D3DHAL_DP2LINELIST structure
@@ -67,18 +67,15 @@ The following figure shows a portion of a sample command buffer containing a D3D
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
 D3DDP2OP_LINELIST
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 5B910D0B-0D1D-45D8-B418-13DC00B3398A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PUSB_30_HUB_DESCRIPTOR, usbspec/PUSB_30_HUB_DESCRIPTOR, _USB_30_HUB_DESCRIPTOR, PUSB_30_HUB_DESCRIPTOR, buses.usb_30_hub_descriptor, PUSB_30_HUB_DESCRIPTOR structure pointer [Buses], USB_30_HUB_DESCRIPTOR structure [Buses], USB_30_HUB_DESCRIPTOR, usbspec/USB_30_HUB_DESCRIPTOR"
+ms.keywords : USB_30_HUB_DESCRIPTOR structure [Buses], usbspec/USB_30_HUB_DESCRIPTOR, buses.usb_30_hub_descriptor, PUSB_30_HUB_DESCRIPTOR, *PUSB_30_HUB_DESCRIPTOR, PUSB_30_HUB_DESCRIPTOR structure pointer [Buses], usbspec/PUSB_30_HUB_DESCRIPTOR, _USB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USB_30_HUB_DESCRIPTOR, *PUSB_30_HUB_DESCRIPTOR
+req.typenames : "*PUSB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR"
 req.product : Windows 10 or later.
 ---
 
@@ -100,9 +100,7 @@ The average delay, in nanoseconds, that is introduced by the hub.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbspec.h |
 
 ## See Also

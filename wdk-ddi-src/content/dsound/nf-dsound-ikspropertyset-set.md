@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 959a78e2-b5c8-47b0-97b1-52d9565a6dab
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksproxy/IKsPropertySet::Set, IKsPropertySet::Set, ksproxy_957cf2a5-1dc6-4e89-86c5-b2f01d913b66.xml, IKsPropertySet, Set method [Streaming Media Devices], stream.ikspropertyset_set, IKsPropertySet interface [Streaming Media Devices], Set method, Set method [Streaming Media Devices], IKsPropertySet interface, Set
+ms.keywords : Set method [Streaming Media Devices], Set method [Streaming Media Devices], IKsPropertySet interface, IKsPropertySet::Set, stream.ikspropertyset_set, Set, ksproxy/IKsPropertySet::Set, ksproxy_957cf2a5-1dc6-4e89-86c5-b2f01d913b66.xml, IKsPropertySet, IKsPropertySet interface [Streaming Media Devices], Set method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRMRIGHTS, *PDRMRIGHTS
+req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 
@@ -101,14 +101,9 @@ If an application must include both <i>ksproxy.h</i> and <i>dsound.h</i>, whiche
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dsound.h (include Ksproxy.h, Ksproxy.h, Dsound.h, Ksproxy.h, Ksproxy.h, Dsound.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dsound.h |
 
 ## See Also
 

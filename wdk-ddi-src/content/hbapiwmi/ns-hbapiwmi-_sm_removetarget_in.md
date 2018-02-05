@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a32e2442-a6a8-4c1a-ab70-40fdb525bafb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_SM_RemoveTarget_IN, SM_RemoveTarget_IN, hbapiwmi/PSM_RemoveTarget_IN, storage.sm_removetarget_in, *PSM_RemoveTarget_IN, PSM_RemoveTarget_IN, structs-Fibre_6efe773b-e240-40d4-bcf6-c6d141061ac3.xml, hbapiwmi/SM_RemoveTarget_IN, SM_RemoveTarget_IN structure [Storage Devices], PSM_RemoveTarget_IN structure pointer [Storage Devices]"
+ms.keywords : PSM_RemoveTarget_IN, structs-Fibre_6efe773b-e240-40d4-bcf6-c6d141061ac3.xml, SM_RemoveTarget_IN structure [Storage Devices], hbapiwmi/SM_RemoveTarget_IN, _SM_RemoveTarget_IN, PSM_RemoveTarget_IN structure pointer [Storage Devices], *PSM_RemoveTarget_IN, hbapiwmi/PSM_RemoveTarget_IN, storage.sm_removetarget_in, SM_RemoveTarget_IN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SM_RemoveTarget_IN, *PSM_RemoveTarget_IN
+req.typenames : "*PSM_RemoveTarget_IN, SM_RemoveTarget_IN"
 ---
 
 # _SM_RemoveTarget_IN structure
@@ -76,7 +76,4 @@ The WMI tool suite generates a declaration of the SM_RemoveTarget_IN structure i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 85363a0b-0e62-499e-bcdb-4b86c4a0c3a0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, FsRtlIsPagingFile, ifsk.fsrtlispagingfile, FsRtlIsPagingFile routine [Installable File System Drivers], ntifs/FsRtlIsPagingFile
+ms.keywords : FsRtlIsPagingFile, fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, ifsk.fsrtlispagingfile, FsRtlIsPagingFile routine [Installable File System Drivers], ntifs/FsRtlIsPagingFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,20 +69,18 @@ File system filter drivers call <b>FsRtlIsPagingFile</b> to determine whether a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpostpagingfilestackoverflow~r2.md">FsRtlPostPagingFileStackOverflow</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547285">FsRtlSupportsPerStreamContexts</a>
+
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpostpagingfilestackoverflow~r2.md">FsRtlPostPagingFileStackOverflow</a>
 
  
 

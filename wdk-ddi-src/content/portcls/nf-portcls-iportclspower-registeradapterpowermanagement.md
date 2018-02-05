@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f4eb9d18-4352-47e2-bd5f-256e1fa831d3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iportclspower_registeradapterpowermanagement, RegisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface [Audio Devices], RegisterAdapterPowerManagement method, IPortClsPower, RegisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, audmp-routines_9c179fd9-d332-478d-a114-469dc1c746fc.xml, RegisterAdapterPowerManagement, portcls/IPortClsPower::RegisterAdapterPowerManagement, IPortClsPower::RegisterAdapterPowerManagement
+ms.keywords : RegisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, RegisterAdapterPowerManagement, portcls/IPortClsPower::RegisterAdapterPowerManagement, IPortClsPower::RegisterAdapterPowerManagement, audio.iportclspower_registeradapterpowermanagement, IPortClsPower, RegisterAdapterPowerManagement method [Audio Devices], audmp-routines_9c179fd9-d332-478d-a114-469dc1c746fc.xml, IPortClsPower interface [Audio Devices], RegisterAdapterPowerManagement method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -55,11 +55,11 @@ NTSTATUS RegisterAdapterPowerManagement(
 
 `_pUnknown`
 
-
+Specifies a pointer to <b>IUnknown</b>. . PortCls queries this <b>IUnknown</b> object for the <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a> or the <a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a> interface of the adapter.
 
 `_DeviceObject`
 
-
+Specifies a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## Return Value
@@ -73,22 +73,19 @@ When the <code>RegisterAdapterPowerManagement</code> method registers the power 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
 
-<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
-
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
 
 <a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
 

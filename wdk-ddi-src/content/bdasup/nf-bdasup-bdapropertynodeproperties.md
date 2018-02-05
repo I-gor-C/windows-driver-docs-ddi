@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1f50bf08-6134-4a97-8c9c-adc9ad697154
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdaref_fc328c79-7b0b-4646-91cd-3e4957b30b2a.xml, stream.bdapropertynodeproperties, bdasup/BdaPropertyNodeProperties, BdaPropertyNodeProperties function [Streaming Media Devices], BdaPropertyNodeProperties
+ms.keywords : BdaPropertyNodeProperties, bdaref_fc328c79-7b0b-4646-91cd-3e4957b30b2a.xml, BdaPropertyNodeProperties function [Streaming Media Devices], stream.bdapropertynodeproperties, bdasup/BdaPropertyNodeProperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,22 +78,19 @@ A BDA minidriver calls the <b>BdaPropertyNodeProperties</b> function to retrieve
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform. |
+| **Target Platform** | Desktop |
 | **Header** | bdasup.h (include Bdasup.h) |
-| **Library** |  |
+| **Library** | Bdasup.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564330">KSPROPERTY_BDA_NODE_PROPERTIES</a>
 
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0A041372-7EC0-44E3-AD1F-3EA0CBB21425
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS, windot11/DOT11_SEND_INVITATION_RESPONSE_PARAMETERS, PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_SEND_INVITATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], DOT11_SEND_INVITATION_RESPONSE_PARAMETERS, *PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS, netvista.dot11_send_invitation_response_parameters, PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS, _DOT11_SEND_INVITATION_RESPONSE_PARAMETERS
+ms.keywords : PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_SEND_INVITATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/DOT11_SEND_INVITATION_RESPONSE_PARAMETERS, windot11/PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS, _DOT11_SEND_INVITATION_RESPONSE_PARAMETERS, DOT11_SEND_INVITATION_RESPONSE_PARAMETERS, PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS, *PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS, netvista.dot11_send_invitation_response_parameters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DOT11_SEND_INVITATION_RESPONSE_PARAMETERS, *PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS
+req.typenames : "*PDOT11_SEND_INVITATION_RESPONSE_PARAMETERS, DOT11_SEND_INVITATION_RESPONSE_PARAMETERS"
 req.product : Windows 10 or later.
 ---
 
@@ -138,9 +138,7 @@ The maximum time, in milliseconds, allowed to send the invitation response. If t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows 8 Versions:\_Supported in Windows 8 |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

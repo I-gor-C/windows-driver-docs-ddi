@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B25AD9E0-FBDA-4E4F-A268-92C9AA761191
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.debugconnectwide, dbgeng/DebugConnectWide, DebugConnectWide function [Windows Debugging], DebugConnectWide
+ms.keywords : dbgeng/DebugConnectWide, DebugConnectWide, debugger.debugconnectwide, DebugConnectWide function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -95,20 +95,15 @@ As with <b>IUnknown::QueryInterface</b>, when the returned interface is no longe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539137">Client Functions</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539140">Client Objects</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539137">Client Functions</a>
 
  
 

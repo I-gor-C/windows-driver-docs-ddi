@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 470563BD-F185-4CA2-B4AD-06E1AABD36AD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyPagingQueue, D3DKMTDestroyPagingQueue function [Display Devices], d3dkmthk/D3DKMTDestroyPagingQueue, display.d3dkmtdestroypagingqueue
+ms.keywords : D3DKMTDestroyPagingQueue function [Display Devices], D3DKMTDestroyPagingQueue, display.d3dkmtdestroypagingqueue, d3dkmthk/D3DKMTDestroyPagingQueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,20 +84,17 @@ In addition to <b>hPagingQueue</b>, this device driver interface (DDI) invalidat
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_destroypagingqueue.md">D3DDDI_DESTROYPAGINGQUEUE</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatepagingqueue.md">D3DKMTCreatePagingQueue</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_destroypagingqueue.md">D3DDDI_DESTROYPAGINGQUEUE</a>
 
  
 

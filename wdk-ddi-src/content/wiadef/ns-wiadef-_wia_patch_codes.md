@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : CFD2403B-DDD4-4318-9084-1B3E3462FBDC
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_WIA_PATCH_CODES, WIA_PATCH_CODES, WIA_PATCH_CODES structure [Imaging Devices], image.wia_patch_codes, wiadef/WIA_PATCH_CODES"
+ms.keywords : image.wia_patch_codes, _WIA_PATCH_CODES, WIA_PATCH_CODES, wiadef/WIA_PATCH_CODES, WIA_PATCH_CODES structure [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,7 +82,4 @@ The header must be followed by a sequence of patch code information structures, 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wiadef.h (include Wiadef.h) |

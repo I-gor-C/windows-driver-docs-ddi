@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a826782a-67ca-4b90-b7b5-caddeae6d2dc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks, CreateProcess, debugger.idebugeventcallbacks_createprocess, IDebugEventCallbacks interface [Windows Debugging], CreateProcess method, IDebugEventCallbacks::CreateProcess, dbgeng/IDebugEventCallbacks::CreateProcess, CreateProcess method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_cd6a97b7-a041-419c-8e64-0aeb6fe7b0c8.xml, CreateProcess method [Windows Debugging]
+ms.keywords : CreateProcess method [Windows Debugging], IDebugEventCallbacks interface, dbgeng/IDebugEventCallbacks::CreateProcess, IDebugEventCallbacks::CreateProcess, CreateProcess method [Windows Debugging], IDebugEventCallbacks, ComCallbacks_cd6a97b7-a041-419c-8e64-0aeb6fe7b0c8.xml, CreateProcess, IDebugEventCallbacks interface [Windows Debugging], CreateProcess method, debugger.idebugeventcallbacks_createprocess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -120,11 +120,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

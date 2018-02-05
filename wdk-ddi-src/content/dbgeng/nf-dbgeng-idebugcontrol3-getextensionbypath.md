@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 32755878-3f52-4e52-b093-1678c8b8bb42
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl2::GetExtensionByPath, IDebugControl3, IDebugControl2::GetExtensionByPath, GetExtensionByPath method [Windows Debugging], GetExtensionByPath method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetExtensionByPath, IDebugControl3::GetExtensionByPath, GetExtensionByPath method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::GetExtensionByPath, IDebugControl::GetExtensionByPath, IDebugControl_821ee348-ddb2-4464-93cd-b6a58e267795.xml, GetExtensionByPath method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetExtensionByPath method, IDebugControl interface [Windows Debugging], GetExtensionByPath method, IDebugControl2 interface [Windows Debugging], GetExtensionByPath method, debugger.getextensionbypath, GetExtensionByPath
+ms.keywords : GetExtensionByPath method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetExtensionByPath, IDebugControl3, IDebugControl3::GetExtensionByPath, dbgeng/IDebugControl::GetExtensionByPath, GetExtensionByPath, IDebugControl2::GetExtensionByPath, GetExtensionByPath method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetExtensionByPath method, dbgeng/IDebugControl3::GetExtensionByPath, IDebugControl interface [Windows Debugging], GetExtensionByPath method, IDebugControl::GetExtensionByPath, IDebugControl2 interface [Windows Debugging], GetExtensionByPath method, GetExtensionByPath method [Windows Debugging], debugger.getextensionbypath, GetExtensionByPath method [Windows Debugging], IDebugControl3 interface, IDebugControl_821ee348-ddb2-4464-93cd-b6a58e267795.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -92,20 +92,15 @@ For more information on using extension libraries, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 

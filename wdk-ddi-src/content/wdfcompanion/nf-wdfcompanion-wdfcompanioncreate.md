@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 78b9eccf-34ef-40ae-b7fc-6fa8400f8c2a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfcompanioncreate, wdfcompanion/WdfCompanionCreate, WdfCompanionCreate, WdfCompanionCreate method
+ms.keywords : wdf.wdfcompanioncreate, WdfCompanionCreate method, WdfCompanionCreate, wdfcompanion/WdfCompanionCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,8 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
+| **Target Platform** | Windows |
 | **Minimum UMDF version** | 2.23 |
 | **Header** | wdfcompanion.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

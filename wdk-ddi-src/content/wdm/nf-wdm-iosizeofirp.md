@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b7a6f903-a986-464a-9c9c-12d44f9abf6a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSizeOfIrp, kernel.iosizeofirp, IoSizeOfIrp routine [Kernel-Mode Driver Architecture], k104_7c08c9ff-7731-462e-acb8-3793f85a84c2.xml, wdm/IoSizeOfIrp
+ms.keywords : IoSizeOfIrp routine [Kernel-Mode Driver Architecture], kernel.iosizeofirp, IoSizeOfIrp, k104_7c08c9ff-7731-462e-acb8-3793f85a84c2.xml, wdm/IoSizeOfIrp
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -69,14 +69,11 @@ The input <i>StackSize</i> value is either that of the next-lower driver's devic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | wdm.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

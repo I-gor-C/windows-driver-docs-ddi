@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1065079d-ff48-4b68-930c-bbbd3f17d5bd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_POINTERDATA structure [Display Devices], UMDisplayDriver_Dx11param_Structs_4e1d0abb-4385-4d8b-9687-0c913884ab46.xml, display.d3d11ddiarg_pointerdata, D3D11DDIARG_POINTERDATA, d3d10umddi/D3D11DDIARG_POINTERDATA
+ms.keywords : display.d3d11ddiarg_pointerdata, UMDisplayDriver_Dx11param_Structs_4e1d0abb-4385-4d8b-9687-0c913884ab46.xml, D3D11DDIARG_POINTERDATA, d3d10umddi/D3D11DDIARG_POINTERDATA, D3D11DDIARG_POINTERDATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,24 +89,22 @@ D3D11DDIARG_POINTERDATA contains the location of the data for one of the interfa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDIARG_POINTERDATA is supported beginning with the Windows 7 operating system. D3D11DDIARG_POINTERDATA is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">PsSetShaderWithIfaces</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">GsSetShaderWithIfaces</a>
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">VsSetShaderWithIfaces</a>
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">DsSetShaderWithIfaces</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">CsSetShaderWithIfaces</a>
 
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">VsSetShaderWithIfaces</a>
+
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">HsSetShaderWithIfaces</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">DsSetShaderWithIfaces</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_setshader_with_ifaces.md">PsSetShaderWithIfaces</a>
 
  
 

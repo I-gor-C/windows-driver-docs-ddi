@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 8712fe85-0af1-4552-9351-aca4fe5430d1
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.isensordriver_ongetsupportedproperties, ISensorDriver, OnGetSupportedProperties method [Sensor Devices], ISensorDriver::OnGetSupportedProperties, OnGetSupportedProperties
+ms.keywords : ISensorDriver::OnGetSupportedProperties, OnGetSupportedProperties method [Sensor Devices], ISensorDriver, OnGetSupportedProperties, sensors.isensordriver_ongetsupportedproperties
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -78,11 +78,6 @@ Each <a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

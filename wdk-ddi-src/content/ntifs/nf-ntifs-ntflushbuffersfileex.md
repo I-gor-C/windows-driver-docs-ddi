@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C081CCF5-D13C-405C-A430-31805A16724A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : FLUSH_FLAGS_FILE_DATA_ONLY, ZwFlushBuffersFileEx routine [Kernel-Mode Driver Architecture], FLUSH_FLAGS_NO_SYNC, ntifs/NtFlushBuffersFileEx, ntifs/ZwFlushBuffersFileEx, NtFlushBuffersFileEx, ZwFlushBuffersFileEx, kernel.zwflushbuffersfileex
+ms.keywords : ZwFlushBuffersFileEx, FLUSH_FLAGS_FILE_DATA_ONLY, kernel.zwflushbuffersfileex, ntifs/NtFlushBuffersFileEx, NtFlushBuffersFileEx, ZwFlushBuffersFileEx routine [Kernel-Mode Driver Architecture], FLUSH_FLAGS_NO_SYNC, ntifs/ZwFlushBuffersFileEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -156,26 +156,24 @@ Callers of <b>ZwFlushBuffersFileEx</b> must be running at IRQL = PASSIVE_LEVEL a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL (See Remarks section.) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>
 
 <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltflushbuffers.md">FltFlushBuffers</a>
 
-<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

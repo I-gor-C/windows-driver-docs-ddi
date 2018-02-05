@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e9fb6d5c-258c-46eb-ba3a-3f10008fdf68
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : LPSENDCMDOUTPARAMS structure pointer [Storage Devices], ntdddisk/SENDCMDOUTPARAMS, PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS, structs-IDE_d1a70016-0e77-465a-9368-665975369bdc.xml, ntdddisk/LPSENDCMDOUTPARAMS, ntdddisk/PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS structure [Storage Devices], _SENDCMDOUTPARAMS, LPSENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS, PSENDCMDOUTPARAMS structure pointer [Storage Devices], storage.sendcmdoutparams
+ms.keywords : PSENDCMDOUTPARAMS structure pointer [Storage Devices], LPSENDCMDOUTPARAMS, _SENDCMDOUTPARAMS, ntdddisk/LPSENDCMDOUTPARAMS, LPSENDCMDOUTPARAMS structure pointer [Storage Devices], *LPSENDCMDOUTPARAMS, storage.sendcmdoutparams, PSENDCMDOUTPARAMS, ntdddisk/PSENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS, structs-IDE_d1a70016-0e77-465a-9368-665975369bdc.xml, ntdddisk/SENDCMDOUTPARAMS, SENDCMDOUTPARAMS structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPSENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS"
+req.typenames : SENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS
 ---
 
 # _SENDCMDOUTPARAMS structure
@@ -73,18 +73,15 @@ The SENDCMDOUTPARAMS structure is also used with the <a href="https://msdn.micro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
 
 <a href="..\ntdddisk\ns-ntdddisk-_sendcmdinparams.md">SENDCMDINPARAMS</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566204">SMART_RCV_DRIVE_DATA</a>
 
  
 

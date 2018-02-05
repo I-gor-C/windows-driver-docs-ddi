@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : afcdb59c-55aa-48e9-b920-1dee3d39a78f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IXpsPartIterator::Reset, filterpipeline/IXpsPartIterator::Reset, Reset, Reset method [Print Devices], filterpipeline_505e0d5f-ee7f-4630-a0ea-1f95061486a8.xml, Reset method [Print Devices], IXpsPartIterator interface, print.ixpspartiterator_reset, IXpsPartIterator interface [Print Devices], Reset method, IXpsPartIterator
+ms.keywords : IXpsPartIterator, print.ixpspartiterator_reset, filterpipeline_505e0d5f-ee7f-4630-a0ea-1f95061486a8.xml, Reset method [Print Devices], IXpsPartIterator interface, IXpsPartIterator interface [Print Devices], Reset method, filterpipeline/IXpsPartIterator::Reset, Reset, IXpsPartIterator::Reset, Reset method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -62,11 +62,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

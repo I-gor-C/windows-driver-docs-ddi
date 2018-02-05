@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5b6c3fc5-4220-4a4b-9412-8bfc8141ea90
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndismsleep, ndis_delay_ref_81af917a-626a-493f-97ed-c4ce48999b12.xml, NdisMSleep, ndis/NdisMSleep, NdisMSleep function [Network Drivers Starting with Windows Vista]
+ms.keywords : NdisMSleep function [Network Drivers Starting with Windows Vista], NdisMSleep, netvista.ndismsleep, ndis/NdisMSleep, ndis_delay_ref_81af917a-626a-493f-97ed-c4ce48999b12.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,12 +99,10 @@ Both
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)). Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)). |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
@@ -112,15 +110,15 @@ Both
 
 <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
 
-<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
-
-<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndisstallexecution.md">NdisStallExecution</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
+
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 
  
 

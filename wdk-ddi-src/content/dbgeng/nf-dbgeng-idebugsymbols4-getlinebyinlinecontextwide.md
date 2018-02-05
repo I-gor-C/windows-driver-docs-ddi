@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5DCD8407-1C30-475F-9741-62DB9C86297B
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContextWide method, GetLineByInlineContextWide method [Windows Debugging], dbgeng/IDebugSymbols4::GetLineByInlineContextWide, IDebugSymbols4, IDebugSymbols4::GetLineByInlineContextWide, GetLineByInlineContextWide, debugger.idebugsymbols4_getlinebyinlinecontextwide, GetLineByInlineContextWide method [Windows Debugging], IDebugSymbols4 interface
+ms.keywords : IDebugSymbols4::GetLineByInlineContextWide, GetLineByInlineContextWide method [Windows Debugging], IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContextWide method, IDebugSymbols4, dbgeng/IDebugSymbols4::GetLineByInlineContextWide, GetLineByInlineContextWide, GetLineByInlineContextWide method [Windows Debugging], IDebugSymbols4 interface, debugger.idebugsymbols4_getlinebyinlinecontextwide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,14 +95,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : d1163185-4cae-4f14-ae99-78795da89fb8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_HW_STREAM_INFORMATION, strmini/PHW_STREAM_INFORMATION, strmini/HW_STREAM_INFORMATION, stream.hw_stream_information, PHW_STREAM_INFORMATION structure pointer [Streaming Media Devices], HW_STREAM_INFORMATION, HW_STREAM_INFORMATION structure [Streaming Media Devices], PHW_STREAM_INFORMATION, *PHW_STREAM_INFORMATION, strclass-struct_df196092-33e4-4b19-b45c-0986b262f2e9.xml"
+ms.keywords : PHW_STREAM_INFORMATION structure pointer [Streaming Media Devices], *PHW_STREAM_INFORMATION, strclass-struct_df196092-33e4-4b19-b45c-0986b262f2e9.xml, _HW_STREAM_INFORMATION, stream.hw_stream_information, HW_STREAM_INFORMATION structure [Streaming Media Devices], HW_STREAM_INFORMATION, strmini/HW_STREAM_INFORMATION, strmini/PHW_STREAM_INFORMATION, PHW_STREAM_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HW_STREAM_INFORMATION, *PHW_STREAM_INFORMATION
+req.typenames : "*PHW_STREAM_INFORMATION, HW_STREAM_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -141,9 +141,6 @@ Note that the class driver does not use this data to handle the <a href="https:/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | strmini.h (include Strmini.h) |
 
 ## See Also

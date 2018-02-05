@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b233dfab-6a99-4f2f-930e-cafd01dc4bb5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ioref_259181c2-f6d9-4fe6-8d4b-594e7cf8db09.xml, ntifs/IoIsOperationSynchronous, ifsk.ioisoperationsynchronous, IoIsOperationSynchronous routine [Installable File System Drivers], IoIsOperationSynchronous
+ms.keywords : IoIsOperationSynchronous routine [Installable File System Drivers], ntifs/IoIsOperationSynchronous, ifsk.ioisoperationsynchronous, IoIsOperationSynchronous, ioref_259181c2-f6d9-4fe6-8d4b-594e7cf8db09.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,22 +91,17 @@ If none of the above conditions is true, the operation is asynchronous.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-
-<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
-
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
 <a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
 
@@ -114,9 +109,11 @@ If none of the above conditions is true, the operation is asynchronous.
 
 <a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a>
 
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
+
 <a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 86E72C5E-9DB1-4EDD-A6B0-272D4622A500
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlLongPtrToUChar function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongPtrToUChar, RtlLongPtrToUChar, kernel.rtllongptrtouchar
+ms.keywords : RtlLongPtrToUChar, RtlLongPtrToUChar function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongPtrToUChar, kernel.rtllongptrtouchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,11 +80,6 @@ RtlSSIZETToUChar
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

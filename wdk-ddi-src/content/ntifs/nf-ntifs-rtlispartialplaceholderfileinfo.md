@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : B84CC8C1-639D-45B4-A2A4-03BA2F1FF04B
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rtlispartialplaceholderfileinfo, ntifs/RtlIsPartialPlaceholderFileInfo, RtlIsPartialPlaceholderFileInfo, RtlIsPartialPlaceholderFileInfo routine [Installable File System Drivers]
+ms.keywords : RtlIsPartialPlaceholderFileInfo routine [Installable File System Drivers], ifsk.rtlispartialplaceholderfileinfo, RtlIsPartialPlaceholderFileInfo, ntifs/RtlIsPartialPlaceholderFileInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,14 +84,10 @@ If <b>InfoBuffer</b> is from a call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 294e5475-3aca-4758-87ed-07892a910b4f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltuserstructures/FILTER_MESSAGE_HEADER, PFILTER_MESSAGE_HEADER structure pointer [Installable File System Drivers], PFILTER_MESSAGE_HEADER, FILTER_MESSAGE_HEADER structure [Installable File System Drivers], fltuserstructures/PFILTER_MESSAGE_HEADER, ifsk.filter_message_header, _FILTER_MESSAGE_HEADER, FILTER_MESSAGE_HEADER, FltSystemStructures_80f5d30b-5507-45c8-b399-6fa816ba9232.xml, *PFILTER_MESSAGE_HEADER
+ms.keywords : PFILTER_MESSAGE_HEADER, *PFILTER_MESSAGE_HEADER, ifsk.filter_message_header, FILTER_MESSAGE_HEADER structure [Installable File System Drivers], _FILTER_MESSAGE_HEADER, FltSystemStructures_80f5d30b-5507-45c8-b399-6fa816ba9232.xml, FILTER_MESSAGE_HEADER, fltuserstructures/PFILTER_MESSAGE_HEADER, PFILTER_MESSAGE_HEADER structure pointer [Installable File System Drivers], fltuserstructures/FILTER_MESSAGE_HEADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ To receive messages from a kernel-mode minifilter, a user-mode application typic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | fltuserstructures.h (include FltUser.h, Fltkernel.h) |
 
 ## See Also

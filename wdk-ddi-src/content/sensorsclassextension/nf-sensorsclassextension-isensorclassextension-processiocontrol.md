@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : bd886086-4e23-47c0-ae58-9234399e5a79
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : sensors.isensorclassextension_processiocontrol, ISensorClassExtension::ProcessIoControl, ProcessIoControl method [Sensor Devices], ISensorClassExtension, ProcessIoControl
+ms.keywords : ProcessIoControl method [Sensor Devices], sensors.isensorclassextension_processiocontrol, ISensorClassExtension::ProcessIoControl, ISensorClassExtension, ProcessIoControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -123,11 +123,6 @@ The driver must not complete I/O control requests that it forwards to the sensor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |

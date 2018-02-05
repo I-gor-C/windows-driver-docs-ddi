@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2522CDC6-C23A-4D9C-83BA-389B7D909619
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PWOF_EXTERNAL_INFO structure pointer [Installable File System Drivers], *PWOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO structure [Installable File System Drivers], PWOF_EXTERNAL_INFO, ifsk.wof_external_info, ntifs/PWOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO, ntifs/WOF_EXTERNAL_INFO, _WOF_EXTERNAL_INFO
+ms.keywords : PWOF_EXTERNAL_INFO structure pointer [Installable File System Drivers], PWOF_EXTERNAL_INFO, ntifs/PWOF_EXTERNAL_INFO, *PWOF_EXTERNAL_INFO, ntifs/WOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO, ifsk.wof_external_info, _WOF_EXTERNAL_INFO, WOF_EXTERNAL_INFO structure [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ The overlay service version. Set to WOF_CURRENT_VERSION.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8.1 Update. Available starting with Windows 8.1 Update. |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 509cf778-2b0c-4dd2-982d-0c7be95ad407
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsGetNextSibling function [Streaming Media Devices], avfunc_0fedfc95-34c0-44d9-bed4-fff6bf6bd467.xml, ks/KsGetNextSibling, stream.ksgetnextsibling, KsGetNextSibling
+ms.keywords : avfunc_0fedfc95-34c0-44d9-bed4-fff6bf6bd467.xml, stream.ksgetnextsibling, ks/KsGetNextSibling, KsGetNextSibling, KsGetNextSibling function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,28 +72,25 @@ Minidrivers rarely call <b>KsGetNextSibling</b> directly. There are a number of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+<a href="..\ks\nf-ks-ksfilterfactorygetnextsiblingfilterfactory.md">KsFilterFactoryGetNextSiblingFilterFactory</a>
 
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 
 <a href="..\ks\nf-ks-ksfiltergetnextsiblingfilter.md">KsFilterGetNextSiblingFilter</a>
 
-<a href="..\ks\nf-ks-ksfilterfactorygetnextsiblingfilterfactory.md">KsFilterFactoryGetNextSiblingFilterFactory</a>
-
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-
 <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+
+<a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 3d129a30-a892-4f4d-b8e3-f277d97980f4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.drvspldevicecaps, DrvSplDeviceCaps function [Print Devices], DrvSplDeviceCaps, print_interface-graphics_8c345fd4-e513-44ff-94b0-2f035db6a022.xml, winddiui/DrvSplDeviceCaps
+ms.keywords : DrvSplDeviceCaps function [Print Devices], winddiui/DrvSplDeviceCaps, DrvSplDeviceCaps, print_interface-graphics_8c345fd4-e513-44ff-94b0-2f035db6a022.xml, print.drvspldevicecaps
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -98,14 +98,9 @@ This function must be defined in the .def file as DrvSplDeviceCaps @ 254, becaus
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

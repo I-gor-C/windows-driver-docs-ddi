@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7e95a16e-e62d-49df-9889-fab0a85f9cbc
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced2::GetSystemObjectInformation, IDebugAdvanced3::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging], GetSystemObjectInformation method, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface, debugger.getsystemobjectinformation, IDebugAdvanced3, IDebugAdvanced2 interface [Windows Debugging], GetSystemObjectInformation method, GetSystemObjectInformation, dbgeng/IDebugAdvanced2::GetSystemObjectInformation, dbgeng/IDebugAdvanced3::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced_a1f6b5cc-0b56-417f-b515-45c999499ba7.xml
+ms.keywords : debugger.getsystemobjectinformation, IDebugAdvanced3 interface [Windows Debugging], GetSystemObjectInformation method, IDebugAdvanced3, IDebugAdvanced_a1f6b5cc-0b56-417f-b515-45c999499ba7.xml, IDebugAdvanced2::GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced2 interface [Windows Debugging], GetSystemObjectInformation method, GetSystemObjectInformation method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3::GetSystemObjectInformation, dbgeng/IDebugAdvanced3::GetSystemObjectInformation, dbgeng/IDebugAdvanced2::GetSystemObjectInformation, GetSystemObjectInformation, GetSystemObjectInformation method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -166,14 +166,9 @@ The method was successful. However, the information would not fit in the buffer 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

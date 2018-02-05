@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : da866f7e-f2c6-4926-bbde-db0629571c57
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_EXTDEVICE_S structure [Streaming Media Devices], *PKSPROPERTY_EXTDEVICE_S, ksmedia/PKSPROPERTY_EXTDEVICE_S, PKSPROPERTY_EXTDEVICE_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_EXTDEVICE_S, vidcapstruct_7c8b60d9-303e-489a-8c93-39d91cda2819.xml, stream.ksproperty_extdevice_s, KSPROPERTY_EXTDEVICE_S, PKSPROPERTY_EXTDEVICE_S
+ms.keywords : KSPROPERTY_EXTDEVICE_S, *PKSPROPERTY_EXTDEVICE_S, ksmedia/PKSPROPERTY_EXTDEVICE_S, KSPROPERTY_EXTDEVICE_S structure [Streaming Media Devices], PKSPROPERTY_EXTDEVICE_S, PKSPROPERTY_EXTDEVICE_S structure pointer [Streaming Media Devices], vidcapstruct_7c8b60d9-303e-489a-8c93-39d91cda2819.xml, ksmedia/KSPROPERTY_EXTDEVICE_S, stream.ksproperty_extdevice_s
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,16 +72,13 @@ Any ED_Xxx or DEV_PORT_Xxx tokens are defined in <i>xprtdefs.h</i> in the Micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="..\ksmedia\ns-ksmedia-tagdevcaps.md">DEVCAPS</a>
+
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
  
 

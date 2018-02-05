@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7e4ca8ea-52c1-462e-bf02-cc82e9ab2be2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ksfunc_b3bba8f7-d9fb-4372-bfff-f39b4d925561.xml, stream.kssynchronousiocontroldevice, KsSynchronousIoControlDevice, KsSynchronousIoControlDevice function [Streaming Media Devices], ks/KsSynchronousIoControlDevice
+ms.keywords : stream.kssynchronousiocontroldevice, ksfunc_b3bba8f7-d9fb-4372-bfff-f39b4d925561.xml, KsSynchronousIoControlDevice function [Streaming Media Devices], KsSynchronousIoControlDevice, ks/KsSynchronousIoControlDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -100,11 +100,6 @@ Points to the place in which to put the number of bytes returned.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5864a535-4ff8-4c9a-abf9-f835c7fde305
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_GetNumberOfAdapters, HBA_GetNumberOfAdapters routine [Storage Devices], HBA_GetNumberOfAdapters, storage.hba_getnumberofadapters, fibreHBA_rtns_de5ced35-f290-47fb-ada1-df032be61bfd.xml
+ms.keywords : storage.hba_getnumberofadapters, HBA_GetNumberOfAdapters, HBA_GetNumberOfAdapters routine [Storage Devices], hbaapi/HBA_GetNumberOfAdapters, fibreHBA_rtns_de5ced35-f290-47fb-ada1-df032be61bfd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,11 +63,7 @@ The <b>HBA_GetNumberOfAdapters</b> routine allows the caller to dynamically dete
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |

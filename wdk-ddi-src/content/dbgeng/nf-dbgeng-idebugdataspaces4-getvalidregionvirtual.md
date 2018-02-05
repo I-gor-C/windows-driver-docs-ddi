@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b580c2ef-94f9-4738-bd00-0d5a4753f71a
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::GetValidRegionVirtual, GetValidRegionVirtual, IDebugDataSpaces4 interface [Windows Debugging], GetValidRegionVirtual method, GetValidRegionVirtual method [Windows Debugging], IDebugDataSpaces4 interface, debugger.getvalidregionvirtual, GetValidRegionVirtual method [Windows Debugging], IDebugDataSpaces4::GetValidRegionVirtual, IDebugDataSpaces_594749e6-fa97-49fb-aabe-643ac4415ed9.xml
+ms.keywords : IDebugDataSpaces4::GetValidRegionVirtual, IDebugDataSpaces_594749e6-fa97-49fb-aabe-643ac4415ed9.xml, GetValidRegionVirtual method [Windows Debugging], IDebugDataSpaces4 interface [Windows Debugging], GetValidRegionVirtual method, GetValidRegionVirtual method [Windows Debugging], IDebugDataSpaces4 interface, GetValidRegionVirtual, IDebugDataSpaces4, dbgeng/IDebugDataSpaces4::GetValidRegionVirtual, debugger.getvalidregionvirtual
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -97,14 +97,9 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

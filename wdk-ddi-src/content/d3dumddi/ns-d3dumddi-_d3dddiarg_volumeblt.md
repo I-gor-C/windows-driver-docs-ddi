@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 564afe6c-7a2e-4657-a481-24015c0be637
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_param_Structs_21157114-7596-4031-8531-019e7acc3dbe.xml, display.d3dddiarg_volumeblt, d3dumddi/D3DDDIARG_VOLUMEBLT, D3DDDIARG_VOLUMEBLT, D3DDDIARG_VOLUMEBLT structure [Display Devices], _D3DDDIARG_VOLUMEBLT
+ms.keywords : UMDisplayDriver_param_Structs_21157114-7596-4031-8531-019e7acc3dbe.xml, D3DDDIARG_VOLUMEBLT, D3DDDIARG_VOLUMEBLT structure [Display Devices], d3dumddi/D3DDDIARG_VOLUMEBLT, _D3DDDIARG_VOLUMEBLT, display.d3dddiarg_volumeblt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,7 @@ typedef struct _D3DDDIARG_VOLUMEBLT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

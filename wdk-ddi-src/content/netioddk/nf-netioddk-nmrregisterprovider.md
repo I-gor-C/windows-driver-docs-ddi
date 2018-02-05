@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aac9382c-5177-4216-bf3d-7970b18662eb
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : nmrref_ad505c0b-91dd-413d-be24-ab331f8eadca.xml, netvista.nmrregisterprovider, netioddk/NmrRegisterProvider, NmrRegisterProvider, NmrRegisterProvider function [Network Drivers Starting with Windows Vista]
+ms.keywords : netioddk/NmrRegisterProvider, netvista.nmrregisterprovider, NmrRegisterProvider, nmrref_ad505c0b-91dd-413d-be24-ab331f8eadca.xml, NmrRegisterProvider function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -58,8 +58,8 @@ NTSTATUS NmrRegisterProvider(
 `ProviderCharacteristics`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.npi_provider_characteristics" tabindex="0"><b>
-     NPI_PROVIDER_CHARACTERISTICS</b></mshelp:link> structure that describes the characteristics of the provider module.
+     <a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">
+     NPI_PROVIDER_CHARACTERISTICS</a> structure that describes the characteristics of the provider module.
      The provider module must make sure that this structure remains valid and resident in memory as long as
      the provider module is registered with the NMR.
 
@@ -145,14 +145,11 @@ A provider module typically calls the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | netioddk.h (include Wsk.h) |
-| **Library** |  |
+| **Library** | Netio.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

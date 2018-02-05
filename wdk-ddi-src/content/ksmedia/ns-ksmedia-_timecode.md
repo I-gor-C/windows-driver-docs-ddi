@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3387e014-3a62-4d76-ac6d-6446e4fa39d0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_timecode, PTIMECODE union pointer [Streaming Media Devices], ksmedia/PTIMECODE, vidcapstruct_80e1d01b-8140-49e8-83bd-210fb38ea0bc.xml, TIMECODE union [Streaming Media Devices], stream.timecode, *PTIMECODE, PTIMECODE, ksmedia/TIMECODE, TIMECODE"
+ms.keywords : TIMECODE, *PTIMECODE, PTIMECODE union pointer [Streaming Media Devices], ksmedia/TIMECODE, TIMECODE union [Streaming Media Devices], PTIMECODE, ksmedia/PTIMECODE, stream.timecode, vidcapstruct_80e1d01b-8140-49e8-83bd-210fb38ea0bc.xml, _timecode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ This structure is defined for the purpose of searching to a timecode based on an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

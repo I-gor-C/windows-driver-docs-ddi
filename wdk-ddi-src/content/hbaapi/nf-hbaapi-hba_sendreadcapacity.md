@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 642a085f-03d4-438a-8584-c1f420161e94
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.hba_sendreadcapacity, HBA_SendReadCapacity, fibreHBA_rtns_0defc2d1-5d08-4d31-981e-09dbb0d700a7.xml, hbaapi/HBA_SendReadCapacity, HBA_SendReadCapacity routine [Storage Devices]
+ms.keywords : storage.hba_sendreadcapacity, HBA_SendReadCapacity, HBA_SendReadCapacity routine [Storage Devices], fibreHBA_rtns_0defc2d1-5d08-4d31-981e-09dbb0d700a7.xml, hbaapi/HBA_SendReadCapacity
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -167,14 +167,10 @@ Returned if an unspecified error occurred that prevented the execution of the SC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

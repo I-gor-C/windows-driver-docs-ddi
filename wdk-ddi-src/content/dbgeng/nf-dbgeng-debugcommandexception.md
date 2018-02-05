@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6DC67840-B985-45D0-8E81-671C3DC1EBC2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.debugcommandexception, DebugCommandException function [Windows Debugging], DebugCommandException, dbgeng/DebugCommandException
+ms.keywords : DebugCommandException, dbgeng/DebugCommandException, debugger.debugcommandexception, DebugCommandException function [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,6 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

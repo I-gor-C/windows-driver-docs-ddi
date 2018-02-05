@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 49608EE6-1666-4430-AD22-9627EEF6F223
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceAssignInterfaceProperty, PFN_WDFDEVICEASSIGNINTERFACEPROPERTY, WdfDeviceAssignInterfaceProperty method, wdf.wdfdeviceassigninterfaceproperty, WdfDeviceAssignInterfaceProperty
+ms.keywords : WdfDeviceAssignInterfaceProperty, WdfDeviceAssignInterfaceProperty method, PFN_WDFDEVICEASSIGNINTERFACEPROPERTY, wdf.wdfdeviceassigninterfaceproperty, wdfdevice/WdfDeviceAssignInterfaceProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,22 +110,21 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll; TBD |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty.md">WdfDeviceAllocAndQueryInterfaceProperty</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
 
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
 

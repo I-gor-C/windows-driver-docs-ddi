@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 46e29607-ee09-4db4-a501-68a3bc678e16
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoVerifyVolume, ioref_b55e7a87-a18d-4ccd-ab32-061676c9dde4.xml, IoVerifyVolume routine [Installable File System Drivers], IoVerifyVolume, ifsk.ioverifyvolume
+ms.keywords : ifsk.ioverifyvolume, IoVerifyVolume routine [Installable File System Drivers], IoVerifyVolume, ntifs/IoVerifyVolume, ioref_b55e7a87-a18d-4ccd-ab32-061676c9dde4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -117,20 +117,17 @@ For more information about removable-media devices, see <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a>
-
 <a href="..\ntifs\nf-ntifs-iogetdevicetoverify.md">IoGetDeviceToVerify</a>
+
+<a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : a125161d-c086-45a4-9b66-4c13d9ed5f11
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kscreateclock, ksfunc_ba840ce8-a1c9-4ede-8d2e-6e2829ad9b11.xml, ks/KsCreateClock, KsCreateClock function [Streaming Media Devices], KsCreateClock
+ms.keywords : ksfunc_ba840ce8-a1c9-4ede-8d2e-6e2829ad9b11.xml, KsCreateClock function [Streaming Media Devices], ks/KsCreateClock, stream.kscreateclock, KsCreateClock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,11 +75,7 @@ The <b>KsCreateClock</b> function returns STATUS_SUCCESS if successful, or it re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

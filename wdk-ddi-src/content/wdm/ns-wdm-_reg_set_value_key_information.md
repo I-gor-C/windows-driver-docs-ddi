@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a74d9740-8342-454e-8cbf-cf248e67d857
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PREG_SET_VALUE_KEY_INFORMATION, REG_SET_VALUE_KEY_INFORMATION, PREG_SET_VALUE_KEY_INFORMATION, wdm/REG_SET_VALUE_KEY_INFORMATION, REG_SET_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_set_value_key_information, _REG_SET_VALUE_KEY_INFORMATION, wdm/PREG_SET_VALUE_KEY_INFORMATION, PREG_SET_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_302658bd-6aaa-4878-9a67-a66c7307a4fa.xml"
+ms.keywords : kernel.reg_set_value_key_information, _REG_SET_VALUE_KEY_INFORMATION, *PREG_SET_VALUE_KEY_INFORMATION, REG_SET_VALUE_KEY_INFORMATION, wdm/PREG_SET_VALUE_KEY_INFORMATION, PREG_SET_VALUE_KEY_INFORMATION, kstruct_d_302658bd-6aaa-4878-9a67-a66c7307a4fa.xml, wdm/REG_SET_VALUE_KEY_INFORMATION, REG_SET_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_SET_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -104,9 +104,7 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows XP and later versions of the Windows operating system. Available on Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

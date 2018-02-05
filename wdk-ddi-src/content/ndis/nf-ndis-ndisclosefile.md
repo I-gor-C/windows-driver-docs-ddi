@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a12f7597-cfe7-466f-a5b5-aafd885d5adf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCloseFile function [Network Drivers Starting with Windows Vista], netvista.ndisclosefile, ndis/NdisCloseFile, NdisCloseFile, ndis_file_ref_17933dee-e6d5-4b5d-a078-84617c38c46c.xml
+ms.keywords : NdisCloseFile function [Network Drivers Starting with Windows Vista], netvista.ndisclosefile, NdisCloseFile, ndis_file_ref_17933dee-e6d5-4b5d-a078-84617c38c46c.xml, ndis/NdisCloseFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,20 +76,18 @@ For miniport drivers, calls to this function are valid only during initializatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCloseFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisCloseFile (NDIS 5.1)) in Windows   XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCloseFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisCloseFile (NDIS 5.1)) in Windows   XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
 
 <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
 

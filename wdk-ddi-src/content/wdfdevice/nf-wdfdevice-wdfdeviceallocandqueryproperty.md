@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f921fee7-e2c0-4e0f-a78b-d2dff8af97a2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEALLOCANDQUERYPROPERTY, WdfDeviceAllocAndQueryProperty, DFDeviceObjectGeneralRef_d093b9da-de6b-467d-a6bd-c25d7a4145f8.xml, kmdf.wdfdeviceallocandqueryproperty, wdfdevice/WdfDeviceAllocAndQueryProperty, WdfDeviceAllocAndQueryProperty method, wdf.wdfdeviceallocandqueryproperty
+ms.keywords : PFN_WDFDEVICEALLOCANDQUERYPROPERTY, kmdf.wdfdeviceallocandqueryproperty, WdfDeviceAllocAndQueryProperty method, wdfdevice/WdfDeviceAllocAndQueryProperty, DFDeviceObjectGeneralRef_d093b9da-de6b-467d-a6bd-c25d7a4145f8.xml, WdfDeviceAllocAndQueryProperty, wdf.wdfdeviceallocandqueryproperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,12 +126,11 @@ Alternatively, you can use <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandq
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

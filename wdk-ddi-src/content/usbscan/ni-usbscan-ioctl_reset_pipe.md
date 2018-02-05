@@ -74,6 +74,4 @@ When the <b>DeviceloControl</b> function is called with the IOCTL_RESET_PIPE I/O
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |
-| **IRQL** |  |

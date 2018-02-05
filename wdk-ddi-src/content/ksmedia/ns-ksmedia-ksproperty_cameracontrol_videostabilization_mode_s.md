@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7cbf015c-4756-4d5c-a5fb-9cd8a5e0e3fd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure pointer [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO, stream.ksproperty_cameracontrol_videostabilization_mode_s, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF, PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM, ksmedia/PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO
+ms.keywords : KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH, PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, ksmedia/KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM, stream.ksproperty_cameracontrol_videostabilization_mode_s, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,14 +71,14 @@ The user can manually set video stabilization modes.
 Indicates the selected video stabilization modes. This member has one of these possible values:
 
 
-#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF
-
-The video stabilization mode should not activate.
-
-
 #### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO
 
 The device automatically controls video stabilization.  This value is valid only if <b>KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO</b> is set in the <b>Capabilities</b> member.
+
+
+#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH
+
+Video stabilization is set at a high level.
 
 
 #### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW
@@ -91,9 +91,9 @@ Video stabilization is set at a low level.
 Video stabilization is set at a medium level.
 
 
-#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH
+#### KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF
 
-Video stabilization is set at a high level.
+The video stabilization mode should not activate.
 
 ## Remarks
 The video stabilization settings specified with this structure affect only the device and have no effect on applications' software video stabilization.
@@ -101,16 +101,14 @@ The video stabilization settings specified with this structure affect only the d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a>
-
 <a href="..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_video_stabilization_mode.md">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a>
 
  
 

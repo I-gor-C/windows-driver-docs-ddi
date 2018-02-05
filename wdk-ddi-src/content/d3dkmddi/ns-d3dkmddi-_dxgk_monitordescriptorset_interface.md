@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ac492a44-f14e-4b66-9ec1-4f1b04806646
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_da0cca60-6df0-480b-8e02-0affe5eb5cfd.xml, d3dkmddi/DXGK_MONITORDESCRIPTORSET_INTERFACE, display.dxgk_monitordescriptorset_interface, _DXGK_MONITORDESCRIPTORSET_INTERFACE, DXGK_MONITORDESCRIPTORSET_INTERFACE structure [Display Devices], DXGK_MONITORDESCRIPTORSET_INTERFACE
+ms.keywords : d3dkmddi/DXGK_MONITORDESCRIPTORSET_INTERFACE, _DXGK_MONITORDESCRIPTORSET_INTERFACE, DXGK_MONITORDESCRIPTORSET_INTERFACE, display.dxgk_monitordescriptorset_interface, DXGK_MONITORDESCRIPTORSET_INTERFACE structure [Display Devices], DmStructs_da0cca60-6df0-480b-8e02-0affe5eb5cfd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,20 +74,18 @@ A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_r
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirefirstdescriptorinfo.md">pfnAcquireFirstDescriptorInfo</a>
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_releasedescriptorinfo.md">pfnReleaseDescriptorInfo</a>
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_getnumdescriptors.md">pfnGetNumDescriptors</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_monitordescriptorset_acquirenextdescriptorinfo.md">pfnAcquireNextDescriptorInfo</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 3cf87a18-8b5a-40f2-9c0e-2b29167e283d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ClosePrintProcessor function [Print Devices], ClosePrintProcessor, spoolfnc_f2e791a0-bfae-463c-a7ac-0e9f941ebe51.xml, print.closeprintprocessor, winsplp/ClosePrintProcessor
+ms.keywords : ClosePrintProcessor, ClosePrintProcessor function [Print Devices], print.closeprintprocessor, winsplp/ClosePrintProcessor, spoolfnc_f2e791a0-bfae-463c-a7ac-0e9f941ebe51.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,20 +69,15 @@ Print processors are required to export a <b>ClosePrintProcessor</b> function. T
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Nwprint.lib |
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
-
 <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a>
+
+<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 489d3edc-4966-481e-b5c8-6979173e9341
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_DVD_READ structure pointer [Storage Devices], *PFEATURE_DATA_DVD_READ, storage.feature_data_dvd_read, PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ structure [Storage Devices], _FEATURE_DATA_DVD_READ, structs-CD-ROM_94af17d0-72ec-4248-9035-4050f6e3c275.xml, ntddmmc/FEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ, ntddmmc/PFEATURE_DATA_DVD_READ
+ms.keywords : FEATURE_DATA_DVD_READ, ntddmmc/PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ structure [Storage Devices], ntddmmc/FEATURE_DATA_DVD_READ, _FEATURE_DATA_DVD_READ, PFEATURE_DATA_DVD_READ structure pointer [Storage Devices], storage.feature_data_dvd_read, PFEATURE_DATA_DVD_READ, *PFEATURE_DATA_DVD_READ, structs-CD-ROM_94af17d0-72ec-4248-9035-4050f6e3c275.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -93,9 +93,6 @@ When queried, devices supporting this feature must return the information indica
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

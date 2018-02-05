@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 21ae3a61-55c6-437d-8c1e-84d720de9dd5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PsRevertToSelf routine [Installable File System Drivers], psref_da555465-d8ee-4ae6-af44-cf0af7633458.xml, PsRevertToSelf, ifsk.psreverttoself, ntifs/PsRevertToSelf
+ms.keywords : PsRevertToSelf, ifsk.psreverttoself, ntifs/PsRevertToSelf, PsRevertToSelf routine [Installable File System Drivers], psref_da555465-d8ee-4ae6-af44-cf0af7633458.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -63,14 +63,12 @@ A server thread can impersonate a client by calling the <a href="..\ntifs\nf-nti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

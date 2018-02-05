@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : AFDB4DB4-3C63-44A0-88D7-C8047ECB2261
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetLineByInlineContext, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4::GetLineByInlineContext, debugger.idebugsymbols4_getlinebyinlinecontext, IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContext method, dbgeng/IDebugSymbols4::GetLineByInlineContext, IDebugSymbols4, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface
+ms.keywords : GetLineByInlineContext method [Windows Debugging], IDebugSymbols4::GetLineByInlineContext, GetLineByInlineContext, IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContext method, debugger.idebugsymbols4_getlinebyinlinecontext, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetLineByInlineContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -95,14 +95,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

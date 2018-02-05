@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 6b1fa9fc-f033-4d93-a2ec-f31159d6a69d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::GetFunctionEntryByOffset, IDebugSymbols_2f48c855-76e5-421c-8890-9a96a0468783.xml, GetFunctionEntryByOffset method [Windows Debugging], GetFunctionEntryByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetFunctionEntryByOffset method, GetFunctionEntryByOffset, debugger.getfunctionentrybyoffset, IDebugSymbols3, dbgeng/IDebugSymbols3::GetFunctionEntryByOffset
+ms.keywords : debugger.getfunctionentrybyoffset, GetFunctionEntryByOffset method [Windows Debugging], GetFunctionEntryByOffset, IDebugSymbols_2f48c855-76e5-421c-8890-9a96a0468783.xml, GetFunctionEntryByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFunctionEntryByOffset, IDebugSymbols3, dbgeng/IDebugSymbols3::GetFunctionEntryByOffset, IDebugSymbols3 interface [Windows Debugging], GetFunctionEntryByOffset method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -128,24 +128,19 @@ The structures FPO_DATA and IMAGE_FUNCTION_ENTRY are documented in "Image Help L
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Winnt.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/da3ddebc-109e-43fb-a0e9-fd89d90dbbc7">IDebugSymbolGroup::GetSymbolOffset</a>
+<a href="..\dbgeng\ns-dbgeng-_debug_symbol_entry.md">DEBUG_SYMBOL_ENTRY</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
+<a href="https://msdn.microsoft.com/da3ddebc-109e-43fb-a0e9-fd89d90dbbc7">IDebugSymbolGroup::GetSymbolOffset</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
-<a href="..\dbgeng\ns-dbgeng-_debug_symbol_entry.md">DEBUG_SYMBOL_ENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547856">GetNextSymbolMatch</a>
 
  
 

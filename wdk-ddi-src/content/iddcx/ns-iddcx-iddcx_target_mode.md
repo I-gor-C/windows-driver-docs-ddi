@@ -75,7 +75,4 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554007">DISPL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

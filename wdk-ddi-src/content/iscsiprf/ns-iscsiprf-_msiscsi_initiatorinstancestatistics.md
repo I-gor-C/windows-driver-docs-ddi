@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b07b8186-970a-428f-955f-4e7e6ab20bfc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : iscsiprf/PMSiSCSI_InitiatorInstanceStatistics, PMSiSCSI_InitiatorInstanceStatistics structure pointer [Storage Devices], *PMSiSCSI_InitiatorInstanceStatistics, MSiSCSI_InitiatorInstanceStatistics, storage.msiscsi_initiatorinstancestatistics, MSiSCSI_InitiatorInstanceStatistics structure [Storage Devices], iscsiprf/MSiSCSI_InitiatorInstanceStatistics, _MSiSCSI_InitiatorInstanceStatistics, PMSiSCSI_InitiatorInstanceStatistics, structs-iSCSI_6914e221-73b2-4626-9281-2e1748bd0048.xml
+ms.keywords : PMSiSCSI_InitiatorInstanceStatistics structure pointer [Storage Devices], structs-iSCSI_6914e221-73b2-4626-9281-2e1748bd0048.xml, storage.msiscsi_initiatorinstancestatistics, MSiSCSI_InitiatorInstanceStatistics, *PMSiSCSI_InitiatorInstanceStatistics, iscsiprf/PMSiSCSI_InitiatorInstanceStatistics, iscsiprf/MSiSCSI_InitiatorInstanceStatistics, _MSiSCSI_InitiatorInstanceStatistics, MSiSCSI_InitiatorInstanceStatistics structure [Storage Devices], PMSiSCSI_InitiatorInstanceStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,18 +81,15 @@ It is optional that you implement this class.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiprf.h (include Iscsiprf.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563038">MSiSCSI_InitiatorInstanceStatistics WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563017">MSiSCSI_HBAInformation WMI Class</a>
 
 <a href="..\iscsimgt\ns-iscsimgt-_msiscsi_hbainformation.md">MSiSCSI_HBAInformation</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563017">MSiSCSI_HBAInformation WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563038">MSiSCSI_InitiatorInstanceStatistics WMI Class</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 78a1808e-d244-4f23-bba1-c48a7b2e051b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisCoAssignInstanceName, condis_protocol_ref_48515a9c-790b-4122-8a29-2a35cf560af9.xml, NdisCoAssignInstanceName function [Network Drivers Starting with Windows Vista], NdisCoAssignInstanceName, netvista.ndiscoassigninstancename
+ms.keywords : netvista.ndiscoassigninstancename, NdisCoAssignInstanceName function [Network Drivers Starting with Windows Vista], NdisCoAssignInstanceName, ndis/NdisCoAssignInstanceName, condis_protocol_ref_48515a9c-790b-4122-8a29-2a35cf560af9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -160,28 +160,26 @@ The caller is responsible for freeing the buffer containing the returned instanc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoAssignInstanceName (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | Irql_Connection_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
-
-<a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVC</a>
 
 <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
 
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVC</a>
+<a href="..\ndis\nc-ndis-miniport_co_oid_request.md">MiniportCoOidRequest</a>
+
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+
+<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

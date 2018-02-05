@@ -119,14 +119,12 @@ This routine is defined in Wdm.h. Component filter IDs are defined in Dpfilter.h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating system versions. Available in Microsoft Windows XP and later operating system versions. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Dpfilter.h, Wdm.h, Ntddk.h, Ndis.h) |
-| **Library** |  |
+| **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |
+| **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
 | **IRQL** | <= DIRQL (see Comments section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

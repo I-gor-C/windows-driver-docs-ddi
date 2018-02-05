@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 50318DEC-8EE4-4208-8E7D-E8BFEA4BA06B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_createhwqueueflags_, D3DDDI_CREATEHWQUEUEFLAGS structure [Display Devices], d3dukmdt/D3DDDI_CREATEHWQUEUEFLAGS, D3DDDI_CREATEHWQUEUEFLAGS, _D3DDDI_CREATEHWQUEUEFLAGS
+ms.keywords : D3DDDI_CREATEHWQUEUEFLAGS, D3DDDI_CREATEHWQUEUEFLAGS structure [Display Devices], d3dukmdt/D3DDDI_CREATEHWQUEUEFLAGS, display.d3dddi_createhwqueueflags_, _D3DDDI_CREATEHWQUEUEFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,7 +61,4 @@ typedef struct _D3DDDI_CREATEHWQUEUEFLAGS  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dukmdt.h |

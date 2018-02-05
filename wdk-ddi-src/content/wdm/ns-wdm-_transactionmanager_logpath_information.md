@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 53d7e8a9-fc89-4b11-8bbb-e9b5b0504f5e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/TRANSACTIONMANAGER_LOGPATH_INFORMATION, _TRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION structure [Kernel-Mode Driver Architecture], ktm_ref_2e3d26b5-525c-4953-a871-7eb6535d926e.xml, kernel.transactionmanager_logpath_information, TRANSACTIONMANAGER_LOGPATH_INFORMATION, PTRANSACTIONMANAGER_LOGPATH_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PTRANSACTIONMANAGER_LOGPATH_INFORMATION, PTRANSACTIONMANAGER_LOGPATH_INFORMATION, wdm/PTRANSACTIONMANAGER_LOGPATH_INFORMATION
+ms.keywords : kernel.transactionmanager_logpath_information, TRANSACTIONMANAGER_LOGPATH_INFORMATION structure [Kernel-Mode Driver Architecture], PTRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION, wdm/PTRANSACTIONMANAGER_LOGPATH_INFORMATION, ktm_ref_2e3d26b5-525c-4953-a871-7eb6535d926e.xml, PTRANSACTIONMANAGER_LOGPATH_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_LOGPATH_INFORMATION, _TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION"
+req.typenames : TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
 req.product : Windows 10 or later.
 ---
 
@@ -67,16 +67,14 @@ The <b>TRANSACTIONMANAGER_LOGPATH_INFORMATION</b> structure is used with the <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
-
 <a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>
+
+<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
 
  
 

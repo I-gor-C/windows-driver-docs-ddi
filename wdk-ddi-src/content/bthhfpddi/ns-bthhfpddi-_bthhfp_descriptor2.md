@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : A455F181-E1DB-47CC-96E5-AE72988366F3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_BTHHFP_DESCRIPTOR2, *PBTHHFP_DESCRIPTOR2, BTHHFP_DESCRIPTOR2, bthhfpddi/PBTHHFP_DESCRIPTOR2, PBTHHFP_DESCRIPTOR2, PBTHHFP_DESCRIPTOR2 structure pointer [Audio Devices], bthhfpddi/BTHHFP_DESCRIPTOR2, BTHHFP_DESCRIPTOR2 structure [Audio Devices], audio.bthhfp_descriptor2"
+ms.keywords : "_BTHHFP_DESCRIPTOR2, *PBTHHFP_DESCRIPTOR2, BTHHFP_DESCRIPTOR2, BTHHFP_DESCRIPTOR2 structure [Audio Devices], audio.bthhfp_descriptor2, PBTHHFP_DESCRIPTOR2 structure pointer [Audio Devices], PBTHHFP_DESCRIPTOR2, bthhfpddi/BTHHFP_DESCRIPTOR2, bthhfpddi/PBTHHFP_DESCRIPTOR2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -96,9 +96,7 @@ When <i>SupportsNREC</i> is set to FALSE, the audio driver should support RAW mo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | bthhfpddi.h |
 
 ## See Also

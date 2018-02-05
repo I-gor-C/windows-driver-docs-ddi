@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : A22EA7A7-2C28-4117-A2B8-A7D3D4C9F11B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wwan_modem_config_state, WwanModemConfigStatePending, WwanModemConfigStateActivated, WWAN_MODEM_CONFIG_STATE, wwan/WwanModemConfigStateMax, PWWAN_MODEM_CONFIG_STATE, WwanModemConfigStateUnknown, PWWAN_MODEM_CONFIG_STATE enumeration pointer [Network Drivers Starting with Windows Vista], WwanModemConfigStateMax, *PWWAN_MODEM_CONFIG_STATE, wwan/WwanModemConfigStatePending, wwan/WwanModemConfigStateActivated, wwan/WWAN_MODEM_CONFIG_STATE, _WWAN_MODEM_CONFIG_STATE, WWAN_MODEM_CONFIG_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanModemConfigStateUnknown, wwan/PWWAN_MODEM_CONFIG_STATE
+ms.keywords : "_WWAN_MODEM_CONFIG_STATE, wwan/WWAN_MODEM_CONFIG_STATE, PWWAN_MODEM_CONFIG_STATE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_STATE, WwanModemConfigStateActivated, wwan/WwanModemConfigStateActivated, PWWAN_MODEM_CONFIG_STATE, wwan/WwanModemConfigStatePending, WwanModemConfigStateUnknown, WwanModemConfigStateMax, WWAN_MODEM_CONFIG_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_MODEM_CONFIG_STATE, netvista.wwan_modem_config_state, wwan/WwanModemConfigStateUnknown, *PWWAN_MODEM_CONFIG_STATE, WwanModemConfigStatePending, wwan/WwanModemConfigStateMax"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_MODEM_CONFIG_STATE, WWAN_MODEM_CONFIG_STATE"
+req.typenames : WWAN_MODEM_CONFIG_STATE, *PWWAN_MODEM_CONFIG_STATE
 req.product : Windows 10 or later.
 ---
 
@@ -82,9 +82,7 @@ typedef enum _WWAN_MODEM_CONFIG_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

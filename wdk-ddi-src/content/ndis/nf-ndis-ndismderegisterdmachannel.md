@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1581cbfd-bdab-40ed-9978-f60ec220c17a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : dma_ref_8babcd45-1946-4928-a0a2-2fc0871b9f90.xml, NdisMDeregisterDmaChannel, netvista.ndismderegisterdmachannel, NdisMDeregisterDmaChannel function [Network Drivers Starting with Windows Vista], ndis/NdisMDeregisterDmaChannel
+ms.keywords : NdisMDeregisterDmaChannel, netvista.ndismderegisterdmachannel, NdisMDeregisterDmaChannel function [Network Drivers Starting with Windows Vista], ndis/NdisMDeregisterDmaChannel, dma_ref_8babcd45-1946-4928-a0a2-2fc0871b9f90.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,8 +57,8 @@ VOID NdisMDeregisterDmaChannel(
 `MiniportDmaHandle`
 
 The DMA handle returned by the 
-     <mshelp:link keywords="netvista.ndismregisterdmachannel" tabindex="0"><b>
-     NdisMRegisterDmaChannel</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">
+     NdisMRegisterDmaChannel</a> function.
 
 
 ## Return Value
@@ -79,22 +79,20 @@ The caller should consider
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMDeregisterDmaChannel (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMDeregisterDmaChannel (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMDeregisterDmaChannel (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMDeregisterDmaChannel (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
-
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3870e2c8-22cf-4f96-8c2b-4c3cac26d50f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisfreememorywithtagpriority, ndis/NdisFreeMemoryWithTagPriority, ndis_shared_memory_ref_60846563-cc80-4e5e-b9da-37bcfd5239b2.xml, NdisFreeMemoryWithTagPriority, NdisFreeMemoryWithTagPriority function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndisfreememorywithtagpriority, ndis_shared_memory_ref_60846563-cc80-4e5e-b9da-37bcfd5239b2.xml, NdisFreeMemoryWithTagPriority function [Network Drivers Starting with Windows Vista], ndis/NdisFreeMemoryWithTagPriority, NdisFreeMemoryWithTagPriority
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -42,8 +42,8 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisFreeMemoryWithTagPriority function
 The 
   <b>NdisFreeMemoryWithTagPriority</b> function releases memory that was allocated with the 
-  <mshelp:link keywords="netvista.ndisallocatememorywithtagpriority" tabindex="0"><b>
-  NdisAllocateMemoryWithTagPriority</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
+  NdisAllocateMemoryWithTagPriority</a> function.
 
 ## Syntax
 
@@ -61,11 +61,11 @@ VOID NdisFreeMemoryWithTagPriority(
 
 An NDIS driver or instance handle that was obtained during caller initialization. This should be
      the same handle that the driver passed to the 
-     <mshelp:link keywords="netvista.ndisallocatememorywithtagpriority" tabindex="0"><b>
-     NdisAllocateMemoryWithTagPriority</b></mshelp:link> function. For example, a miniport driver can use the NDIS handle
+     <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
+     NdisAllocateMemoryWithTagPriority</a> function. For example, a miniport driver can use the NDIS handle
      that it obtained from the 
-     <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-     NdisMRegisterMiniportDriver</b></mshelp:link> or 
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+     NdisMRegisterMiniportDriver</a> or 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
      Other NDIS drivers can use the handles from the following functions:
      
@@ -88,8 +88,8 @@ An NDIS driver or instance handle that was obtained during caller initialization
 `VirtualAddress`
 
 A pointer to the base virtual address of the allocated memory. This address was returned by the 
-     <mshelp:link keywords="netvista.ndisallocatememorywithtagpriority" tabindex="0"><b>
-     NdisAllocateMemoryWithTagPriority</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
+     NdisAllocateMemoryWithTagPriority</a> function.
 
 `Tag`
 
@@ -132,31 +132,28 @@ When a caller of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
+   NdisAllocateMemoryWithTagPriority</a>
 
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
-<mshelp:link keywords="netvista.ndisallocatememorywithtagpriority" tabindex="0"><b>
-   NdisAllocateMemoryWithTagPriority</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
+
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
  
 

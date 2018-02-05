@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : EBEEF2C7-AD2E-4BE5-B20C-D4E148F1454C
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : TerminatePlmPackageWide method [Windows Debugging], debugger.idebugplmclient3_terminateplmpackagewide, TerminatePlmPackageWide, TerminatePlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::TerminatePlmPackageWide, IDebugPlmClient3::TerminatePlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], TerminatePlmPackageWide method, IDebugPlmClient3
+ms.keywords : IDebugPlmClient3, TerminatePlmPackageWide, TerminatePlmPackageWide method [Windows Debugging], debugger.idebugplmclient3_terminateplmpackagewide, IDebugPlmClient3::TerminatePlmPackageWide, TerminatePlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::TerminatePlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], TerminatePlmPackageWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,14 +70,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

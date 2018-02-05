@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 948f10cb-215c-4a21-a275-ffdbf0ee1593
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_VIDEOPROCESSENDFRAME structure [Display Devices], UMDisplayDriver_param_Structs_16fccea8-3a26-4470-bf7d-a94b04f01797.xml, D3DDDIARG_VIDEOPROCESSENDFRAME, d3dumddi/D3DDDIARG_VIDEOPROCESSENDFRAME, _D3DDDIARG_VIDEOPROCESSENDFRAME, display.d3dddiarg_videoprocessendframe
+ms.keywords : D3DDDIARG_VIDEOPROCESSENDFRAME structure [Display Devices], D3DDDIARG_VIDEOPROCESSENDFRAME, display.d3dddiarg_videoprocessendframe, UMDisplayDriver_param_Structs_16fccea8-3a26-4470-bf7d-a94b04f01797.xml, _D3DDDIARG_VIDEOPROCESSENDFRAME, d3dumddi/D3DDDIARG_VIDEOPROCESSENDFRAME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ This member is reserved and should be set to <b>NULL</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

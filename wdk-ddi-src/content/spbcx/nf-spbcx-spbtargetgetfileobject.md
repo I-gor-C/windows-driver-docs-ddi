@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : A89635EC-F5B8-4427-9AFD-9F71339595DF
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbTargetGetFileObject, SPB.spbtargetgetfileobject, SpbTargetGetFileObject method [Buses], spbcx/SpbTargetGetFileObject
+ms.keywords : SpbTargetGetFileObject, SPB.spbtargetgetfileobject, spbcx/SpbTargetGetFileObject, SpbTargetGetFileObject method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -75,14 +75,11 @@ After <b>SpbTargetGetFileObject</b> returns a WDFFILEOBJECT handle, there is no 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | spbcx.h |
-| **Library** |  |
+| **Library** | Spbcxstubs.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

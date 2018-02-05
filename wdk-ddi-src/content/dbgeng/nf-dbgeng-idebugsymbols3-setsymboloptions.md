@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 06cfae40-eb32-4f9b-b7ad-266cb12f4a32
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetSymbolOptions method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3::SetSymbolOptions, dbgeng/IDebugSymbols::SetSymbolOptions, IDebugSymbols3 interface [Windows Debugging], SetSymbolOptions method, SetSymbolOptions, debugger.setsymboloptions, IDebugSymbols2 interface [Windows Debugging], SetSymbolOptions method, IDebugSymbols interface [Windows Debugging], SetSymbolOptions method, SetSymbolOptions method [Windows Debugging], SetSymbolOptions method [Windows Debugging], IDebugSymbols interface, IDebugSymbols_56cfcd8d-304b-4433-beab-2fc3e58a54a4.xml, IDebugSymbols2::SetSymbolOptions, dbgeng/IDebugSymbols2::SetSymbolOptions, dbgeng/IDebugSymbols3::SetSymbolOptions, IDebugSymbols3, SetSymbolOptions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::SetSymbolOptions
+ms.keywords : dbgeng/IDebugSymbols::SetSymbolOptions, IDebugSymbols2::SetSymbolOptions, SetSymbolOptions method [Windows Debugging], IDebugSymbols2 interface, SetSymbolOptions, IDebugSymbols3::SetSymbolOptions, IDebugSymbols3, SetSymbolOptions method [Windows Debugging], IDebugSymbols interface, SetSymbolOptions method [Windows Debugging], dbgeng/IDebugSymbols2::SetSymbolOptions, SetSymbolOptions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::SetSymbolOptions, dbgeng/IDebugSymbols3::SetSymbolOptions, IDebugSymbols2 interface [Windows Debugging], SetSymbolOptions method, IDebugSymbols_56cfcd8d-304b-4433-beab-2fc3e58a54a4.xml, debugger.setsymboloptions, IDebugSymbols interface [Windows Debugging], SetSymbolOptions method, IDebugSymbols3 interface [Windows Debugging], SetSymbolOptions method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -89,28 +89,23 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h, Dbghelp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554535">RemoveSymbolOptions</a>
+
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549139">GetSymbolOptions</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537930">AddSymbolOptions</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554535">RemoveSymbolOptions</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537930">AddSymbolOptions</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549139">GetSymbolOptions</a>
 
  
 

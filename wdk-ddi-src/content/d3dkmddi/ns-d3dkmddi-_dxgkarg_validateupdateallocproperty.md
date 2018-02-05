@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : EC9654B8-06AA-43C8-A159-F176BDE4E015
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_VALIDATEUPDATEALLOCPROPERTY, d3dkmddi/DXGKARG_VALIDATEUPDATEALLOCPROPERTY, display.dxgkarg_validateupdateallocproperty, DXGKARG_VALIDATEUPDATEALLOCPROPERTY structure [Display Devices], DXGKARG_VALIDATEUPDATEALLOCPROPERTY"
+ms.keywords : DXGKARG_VALIDATEUPDATEALLOCPROPERTY, DXGKARG_VALIDATEUPDATEALLOCPROPERTY structure [Display Devices], d3dkmddi/DXGKARG_VALIDATEUPDATEALLOCPROPERTY, display.dxgkarg_validateupdateallocproperty, _DXGKARG_VALIDATEUPDATEALLOCPROPERTY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -83,7 +83,5 @@ typedef struct _DXGKARG_VALIDATEUPDATEALLOCPROPERTY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10 and later versions of the Windows operating systems. Available in Windows 10 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h |

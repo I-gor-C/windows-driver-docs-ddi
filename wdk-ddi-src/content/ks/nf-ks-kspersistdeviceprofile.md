@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4EC3E99B-C73C-4EAC-9EBD-BB45ABFCE8EC
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPersistDeviceProfile, KsPersistDeviceProfile function [Streaming Media Devices], ks/KsPersistDeviceProfile, stream.kspersistdeviceprofile
+ms.keywords : stream.kspersistdeviceprofile, ks/KsPersistDeviceProfile, KsPersistDeviceProfile function [Streaming Media Devices], KsPersistDeviceProfile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,6 @@ Furthermore, this API may also fail with <b>STATUS_INSUFFICIENT_RESOURCE</b> if 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ksmedia.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

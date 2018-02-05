@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4db605f8-a1ed-4b75-8c72-f4846ae7007e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D_other_Structs_7aa0b131-f7e5-4208-b3bb-7a35fa0d5ef1.xml, _DDIGAMMACAPS, display.ddigammacaps, DDIGAMMACAPS, DDIGAMMACAPS structure [Display Devices], d3dumddi/DDIGAMMACAPS
+ms.keywords : d3dumddi/DDIGAMMACAPS, display.ddigammacaps, D3D_other_Structs_7aa0b131-f7e5-4208-b3bb-7a35fa0d5ef1.xml, DDIGAMMACAPS structure [Display Devices], _DDIGAMMACAPS, DDIGAMMACAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,18 +75,16 @@ Gamma-ramp data is stored as 256 16-bit RGB values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2d8789e1-721d-4abe-9864-0f7fdeb24482
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fsrtlref_c3102eee-b523-418a-8977-a875e0eb76b7.xml, FsRtlAreThereCurrentFileLocks, FsRtlAreThereCurrentFileLocks function [Installable File System Drivers], ntifs/FsRtlAreThereCurrentFileLocks, ifsk.fsrtlaretherecurrentfilelocks
+ms.keywords : ifsk.fsrtlaretherecurrentfilelocks, FsRtlAreThereCurrentFileLocks function [Installable File System Drivers], FsRtlAreThereCurrentFileLocks, ntifs/FsRtlAreThereCurrentFileLocks, fsrtlref_c3102eee-b523-418a-8977-a875e0eb76b7.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -69,14 +69,10 @@ File systems and filter drivers often call <b>FsRtlAreThereCurrentFileLocks</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | ntifs.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

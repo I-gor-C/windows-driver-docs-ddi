@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : B379B6EF-C3AD-4E6F-B32D-F85228DB6A72
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : LAMP_MODE_WHITE, lamp/LAMP_MODE_WHITE, LAMP_MODE_COLOR, LAMP_MODE enumeration [Streaming Media Devices], stream.lamp_mode, LAMP_MODE, lamp/LAMP_MODE, lamp/LAMP_MODE_COLOR
+ms.keywords : lamp/LAMP_MODE, LAMP_MODE_COLOR, stream.lamp_mode, LAMP_MODE, lamp/LAMP_MODE_WHITE, lamp/LAMP_MODE_COLOR, LAMP_MODE enumeration [Streaming Media Devices], LAMP_MODE_WHITE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -71,7 +71,4 @@ This is the I/O parameter type of <a href="..\lamp\ni-lamp-ioctl_lamp_get_mode.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | lamp.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 4b0a982b-63ae-4109-a4be-2dd82824e75a
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PVOLUME_LOGICAL_OFFSET structure pointer [Storage Devices], VOLUME_LOGICAL_OFFSET structure [Storage Devices], VOLUME_LOGICAL_OFFSET, *PVOLUME_LOGICAL_OFFSET, storage.volume_logical_offset, _VOLUME_LOGICAL_OFFSET, ntddvol/VOLUME_LOGICAL_OFFSET, structs-volumemgr_97756e49-7151-4d3a-abbe-aa90a472c284.xml, PVOLUME_LOGICAL_OFFSET, ntddvol/PVOLUME_LOGICAL_OFFSET
+ms.keywords : structs-volumemgr_97756e49-7151-4d3a-abbe-aa90a472c284.xml, VOLUME_LOGICAL_OFFSET structure [Storage Devices], ntddvol/PVOLUME_LOGICAL_OFFSET, PVOLUME_LOGICAL_OFFSET structure pointer [Storage Devices], PVOLUME_LOGICAL_OFFSET, storage.volume_logical_offset, _VOLUME_LOGICAL_OFFSET, VOLUME_LOGICAL_OFFSET, *PVOLUME_LOGICAL_OFFSET, ntddvol/VOLUME_LOGICAL_OFFSET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VOLUME_LOGICAL_OFFSET, *PVOLUME_LOGICAL_OFFSET
+req.typenames : "*PVOLUME_LOGICAL_OFFSET, VOLUME_LOGICAL_OFFSET"
 ---
 
 # _VOLUME_LOGICAL_OFFSET structure
@@ -61,9 +61,6 @@ The VOLUME_LOGICAL_OFFSET structure is used with <a href="..\ntddvol\ni-ntddvol-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvol.h (include Ntddvol.h) |
 
 ## See Also

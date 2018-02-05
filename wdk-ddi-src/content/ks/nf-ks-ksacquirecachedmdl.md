@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : C6C693CC-D9C0-4EE8-9F8C-07D8665C673D
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksacquirecachedmdl, PVOID, GUID, KsAcquireCachedMdl, ks/KsAcquireCachedMdl, KsAcquireCachedMdl function [Streaming Media Devices]
+ms.keywords : PVOID, GUID, stream.ksacquirecachedmdl, ks/KsAcquireCachedMdl, KsAcquireCachedMdl function [Streaming Media Devices], KsAcquireCachedMdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,11 +118,6 @@ Returns STATUS_SUCCESS for success conditions.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |

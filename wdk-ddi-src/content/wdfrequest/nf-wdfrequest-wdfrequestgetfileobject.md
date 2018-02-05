@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0c5a1e12-b66f-4bcb-bb9d-739b883fe9c2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfRequestGetFileObject method, DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, wdfrequest/WdfRequestGetFileObject, WdfRequestGetFileObject, wdf.wdfrequestgetfileobject, PFN_WDFREQUESTGETFILEOBJECT, kmdf.wdfrequestgetfileobject
+ms.keywords : WdfRequestGetFileObject, wdfrequest/WdfRequestGetFileObject, wdf.wdfrequestgetfileobject, PFN_WDFREQUESTGETFILEOBJECT, kmdf.wdfrequestgetfileobject, DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, WdfRequestGetFileObject method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,20 +83,19 @@ Another driver sent a read, write, or I/O control request to your driver without
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, FileObjectConfigured, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a>
-
 <a href="..\wdfdevice\ne-wdfdevice-_wdf_fileobject_class.md">WDF_FILEOBJECT_CLASS</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a>
 
  
 

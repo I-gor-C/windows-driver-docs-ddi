@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9207768b-530a-49d5-999e-0e8eb6bd1fe5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dhal/D3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER, d3dhal/LPD3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER structure pointer [Display Devices], D3DHAL_DP2VERTEXSHADER, d3dstrct_84401bfa-f79d-4128-9989-1223284f25b0.xml, *LPD3DHAL_DP2VERTEXSHADER, display.d3dhal_dp2vertexshader, _D3DHAL_DP2VERTEXSHADER, D3DHAL_DP2VERTEXSHADER structure [Display Devices]
+ms.keywords : display.d3dhal_dp2vertexshader, *LPD3DHAL_DP2VERTEXSHADER, d3dhal/LPD3DHAL_DP2VERTEXSHADER, d3dstrct_84401bfa-f79d-4128-9989-1223284f25b0.xml, D3DHAL_DP2VERTEXSHADER structure [Display Devices], _D3DHAL_DP2VERTEXSHADER, d3dhal/D3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER structure pointer [Display Devices], D3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -80,32 +80,29 @@ For D3DDP2OP_SETVERTEXSHADERDECL operations, the runtime specifies a legacy FVF 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-D3DDP2OP_CREATEVERTEXSHADER
-
-D3DDP2OP_SETSTREAMSOURCEUM
-
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2createvertexshader.md">D3DHAL_DP2CREATEVERTEXSHADER</a>
-
-D3DDP2OP_DELETEVERTEXSHADERFUNC
-
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2setvertexshaderconst.md">D3DHAL_DP2SETVERTEXSHADERCONST</a>
+D3DDP2OP_DELETEVERTEXSHADERDECL
 
 D3DDP2OP_SETVERTEXSHADERDECL
 
+D3DDP2OP_DELETEVERTEXSHADERFUNC
+
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
-D3DDP2OP_DELETEVERTEXSHADERDECL
+D3DDP2OP_SETVERTEXSHADERFUNC
+
+D3DDP2OP_SETSTREAMSOURCEUM
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2setvertexshaderconst.md">D3DHAL_DP2SETVERTEXSHADERCONST</a>
+
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2createvertexshader.md">D3DHAL_DP2CREATEVERTEXSHADER</a>
 
 D3DDP2OP_SETSTREAMSOURCE
 
-D3DDP2OP_SETVERTEXSHADERFUNC
+D3DDP2OP_CREATEVERTEXSHADER
 
 D3DDP2OP_SETVERTEXSHADER
 

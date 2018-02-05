@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : AC6E3447-2E7E-41EC-AC04-CAB46F826095
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PPOWERSOURCEID, enumeration [Battery Devices], charging/, POWERSOURCEID, battery.powersourceid, _POWERSOURCEID"
+ms.keywords : charging/, POWERSOURCEID, _POWERSOURCEID, enumeration [Battery Devices], *PPOWERSOURCEID, battery.powersourceid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWERSOURCEID, POWERSOURCEID"
+req.typenames : POWERSOURCEID, *PPOWERSOURCEID
 ---
 
 # _POWERSOURCEID Enumeration
@@ -57,7 +57,4 @@ enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | charging.h (include Charging.h) |

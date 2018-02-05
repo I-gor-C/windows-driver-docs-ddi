@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5d7a59ac-93de-4a41-9313-df189e1f6e36
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPartImage interface [Print Devices], SetImageContent method, IPartImage, print.ipartimage_setimagecontent, IPartImage::SetImageContent, SetImageContent method [Print Devices], IPartImage interface, filterpipeline/IPartImage::SetImageContent, SetImageContent, SetImageContent method [Print Devices], filterpipeline_1bbf6da0-f016-486d-a06d-768614fe1d5a.xml
+ms.keywords : filterpipeline/IPartImage::SetImageContent, IPartImage interface [Print Devices], SetImageContent method, SetImageContent method [Print Devices], IPartImage interface, SetImageContent, SetImageContent method [Print Devices], filterpipeline_1bbf6da0-f016-486d-a06d-768614fe1d5a.xml, IPartImage, print.ipartimage_setimagecontent, IPartImage::SetImageContent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -65,11 +65,6 @@ HRESULT SetImageContent(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

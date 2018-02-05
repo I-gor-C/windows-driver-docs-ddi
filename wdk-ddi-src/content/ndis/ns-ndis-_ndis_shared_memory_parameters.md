@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 286b08f6-179e-426e-ae65-b108529d049a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_SHARED_MEMORY_PARAMETERS, ndis/NDIS_SHARED_MEMORY_PARAMETERS, ndis/PNDIS_SHARED_MEMORY_PARAMETERS, ndis_shared_memory_ref_76b2c89f-c221-42de-ae92-ad10cf2297f2.xml, netvista.ndis_shared_memory_parameters, PNDIS_SHARED_MEMORY_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS
+ms.keywords : netvista.ndis_shared_memory_parameters, _NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS, ndis_shared_memory_ref_76b2c89f-c221-42de-ae92-ad10cf2297f2.xml, NDIS_SHARED_MEMORY_PARAMETERS, PNDIS_SHARED_MEMORY_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SHARED_MEMORY_PARAMETERS, ndis/NDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS structure [Network Drivers Starting with Windows Vista], ndis/PNDIS_SHARED_MEMORY_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS
+req.typenames : "*PNDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS"
 ---
 
 # _NDIS_SHARED_MEMORY_PARAMETERS structure
@@ -85,18 +85,18 @@ The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJ
 
 
 
-#### NDIS_SHARED_MEMORY_PARAMETERS_REVISION_2
-
-Added <b>VPortId</b> for NDIS 6.30.
-
-Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_2.
-
-
 #### NDIS_SHARED_MEMORY_PARAMETERS_REVISION_1
 
 Original version for NDIS 6.20.
 
 Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_1.
+
+
+#### NDIS_SHARED_MEMORY_PARAMETERS_REVISION_2
+
+Added <b>VPortId</b> for NDIS 6.30.
+
+Set the <b>Size</b> member to NDIS_SIZEOF_SHARED_MEMORY_PARAMETERS_REVISION_2.
 
 `Length`
 
@@ -126,8 +126,8 @@ A ULONG value that contains the length, in bytes, of the scatter gather list buf
 
 An NDIS_HANDLE value that identifies a block of shared memory. NDIS provides this handle before it
      returns from the 
-     <mshelp:link keywords="netvista.ndisallocatesharedmemory" tabindex="0"><b>
-     NdisAllocateSharedMemory</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">
+     NdisAllocateSharedMemory</a> function.
 
 `Usage`
 
@@ -161,18 +161,16 @@ NDIS drivers pass this structure to the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
+<a href="..\ndis\ne-ndis-_ndis_shared_memory_usage.md">NDIS_SHARED_MEMORY_USAGE</a>
+
 <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a>
 
 <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
-
-<a href="..\ndis\ne-ndis-_ndis_shared_memory_usage.md">NDIS_SHARED_MEMORY_USAGE</a>
 
 <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
 

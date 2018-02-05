@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 59c45a0e-54c3-4301-8e65-409d6c728325
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_GETSHAREDPRIMARYHANDLE, D3DKMT_GETSHAREDPRIMARYHANDLE structure [Display Devices], _D3DKMT_GETSHAREDPRIMARYHANDLE, display.d3dkmt_getsharedprimaryhandle, OpenGL_Structs_322563d8-5546-4b10-bd74-101f3ffb633a.xml, D3DKMT_GETSHAREDPRIMARYHANDLE
+ms.keywords : d3dkmthk/D3DKMT_GETSHAREDPRIMARYHANDLE, OpenGL_Structs_322563d8-5546-4b10-bd74-101f3ffb633a.xml, _D3DKMT_GETSHAREDPRIMARYHANDLE, D3DKMT_GETSHAREDPRIMARYHANDLE, display.d3dkmt_getsharedprimaryhandle, D3DKMT_GETSHAREDPRIMARYHANDLE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _D3DKMT_GETSHAREDPRIMARYHANDLE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

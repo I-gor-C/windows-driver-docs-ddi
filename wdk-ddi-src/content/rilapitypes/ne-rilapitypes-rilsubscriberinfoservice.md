@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9dcdfbcc-bab8-4621-993b-e64106d0457e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_SERVICE_FAX, RILSUBSCRIBERINFOSERVICE, rilapitypes/RIL_SERVICE_VOICE, rilapitypes/RIL_SERVICE_FAX, rilapitypes/RILSUBSCRIBERINFOSERVICE, netvista.rilsubscriberinfoservice, RIL_SERVICE_OTHER, RIL_SERVICE_VOICE, rilapitypes/RIL_SERVICE_OTHER, rilapitypes/RIL_SERVICE_UNKNOWN, RILSUBSCRIBERINFOSERVICE enumeration [Network Drivers Starting with Windows Vista], RIL_SERVICE_UNKNOWN
+ms.keywords : RIL_SERVICE_FAX, RIL_SERVICE_VOICE, rilapitypes/RILSUBSCRIBERINFOSERVICE, RILSUBSCRIBERINFOSERVICE enumeration [Network Drivers Starting with Windows Vista], netvista.rilsubscriberinfoservice, rilapitypes/RIL_SERVICE_VOICE, RIL_SERVICE_OTHER, rilapitypes/RIL_SERVICE_OTHER, RILSUBSCRIBERINFOSERVICE, rilapitypes/RIL_SERVICE_UNKNOWN, rilapitypes/RIL_SERVICE_FAX, RIL_SERVICE_UNKNOWN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -87,9 +87,6 @@ enum RILSUBSCRIBERINFOSERVICE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

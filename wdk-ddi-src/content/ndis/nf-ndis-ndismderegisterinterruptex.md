@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bc0718b6-4c71-41a8-bab6-a52991b284d9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMDeregisterInterruptEx, NdisMDeregisterInterruptEx function [Network Drivers Starting with Windows Vista], ndis/NdisMDeregisterInterruptEx, ndis_interrupts_functions_ref_51574ad2-1b99-4238-b6a3-e427c321cd16.xml, netvista.ndismderegisterinterruptex
+ms.keywords : netvista.ndismderegisterinterruptex, ndis/NdisMDeregisterInterruptEx, ndis_interrupts_functions_ref_51574ad2-1b99-4238-b6a3-e427c321cd16.xml, NdisMDeregisterInterruptEx, NdisMDeregisterInterruptEx function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -42,8 +42,8 @@ req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisMDeregisterInterruptEx function
 Miniport drivers call 
   <b>NdisMDeregisterInterruptEx</b> to release resources that were previously allocated with the 
-  <mshelp:link keywords="netvista.ndismregisterinterruptex" tabindex="0"><b>
-  NdisMRegisterInterruptEx</b></mshelp:link> function.
+  <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
+  NdisMRegisterInterruptEx</a> function.
 
 ## Syntax
 
@@ -83,35 +83,33 @@ A miniport driver can call
 The miniport driver should disable its NIC from generating interrupts before it calls 
     <b>NdisMDeregisterInterruptEx</b>. After 
     <b>NdisMDeregisterInterruptEx</b> returns control, the miniport driver cannot call the 
-    <mshelp:link keywords="netvista.ndismsynchronizewithinterruptex" tabindex="0"><b>
-    NdisMSynchronizeWithInterruptEx</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
+    NdisMSynchronizeWithInterruptEx</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Init_DeRegisterInterrupt, Init_RegisterInterrupt, Irql_Interrupt_Function, NdisMDeregisterInterruptEx |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
 <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 
-<mshelp:link keywords="netvista.ndismsynchronizewithinterruptex" tabindex="0"><b>
-   NdisMSynchronizeWithInterruptEx</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
+<a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
+   NdisMSynchronizeWithInterruptEx</a>
 
 <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInetrrupt</a>
 
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 
  
 

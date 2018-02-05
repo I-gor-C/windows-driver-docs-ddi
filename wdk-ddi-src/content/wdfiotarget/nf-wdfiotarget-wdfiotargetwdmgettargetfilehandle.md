@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3312e6ca-bf2c-4a53-bd86-d36d708ed596
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetWdmGetTargetFileHandle method, kmdf.wdfiotargetwdmgettargetfilehandle, WdfIoTargetWdmGetTargetFileHandle, PFN_WDFIOTARGETWDMGETTARGETFILEHANDLE, DFIOTargetRef_a3147001-4aa4-4fc2-8000-c6b1fcc4e972.xml, wdfiotarget/WdfIoTargetWdmGetTargetFileHandle, wdf.wdfiotargetwdmgettargetfilehandle
+ms.keywords : wdfiotarget/WdfIoTargetWdmGetTargetFileHandle, DFIOTargetRef_a3147001-4aa4-4fc2-8000-c6b1fcc4e972.xml, WdfIoTargetWdmGetTargetFileHandle method, PFN_WDFIOTARGETWDMGETTARGETFILEHANDLE, kmdf.wdfiotargetwdmgettargetfilehandle, WdfIoTargetWdmGetTargetFileHandle, wdf.wdfiotargetwdmgettargetfilehandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,19 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfileobject.md">WdfIoTargetWdmGetTargetFileObject</a>
-
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetcreate.md">WdfIoTargetCreate</a>
+
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetwdmgettargetfileobject.md">WdfIoTargetWdmGetTargetFileObject</a>
 
  
 

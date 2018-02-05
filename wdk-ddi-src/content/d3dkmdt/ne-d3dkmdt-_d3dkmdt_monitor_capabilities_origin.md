@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fbbea7d7-2bd7-4dd0-bcb8-3fc93c7474a3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_MCO_DEFAULTMONITORPROFILE, _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, DmEnums_fc03a227-b0c7-4152-a4f0-c8badee981e5.xml, D3DKMDT_MCO_DRIVER, D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration [Display Devices], display.d3dkmdt_monitor_capabilities_origin, d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR, d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, D3DKMDT_MCO_DEFAULTMONITORPROFILE, d3dkmdt/D3DKMDT_MCO_DRIVER, D3DKMDT_MCO_UNINITIALIZED, D3DKMDT_MCO_MONITORDESCRIPTOR, d3dkmdt/D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, d3dkmdt/D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_UNINITIALIZED
+ms.keywords : D3DKMDT_MCO_DEFAULTMONITORPROFILE, D3DKMDT_MCO_MONITORDESCRIPTOR, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN enumeration [Display Devices], d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_DRIVER, DmEnums_fc03a227-b0c7-4152-a4f0-c8badee981e5.xml, _D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_DRIVER, d3dkmdt/D3DKMDT_MCO_UNINITIALIZED, d3dkmdt/D3DKMDT_MCO_MONITORDESCRIPTOR, D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, d3dkmdt/D3DKMDT_MCO_DEFAULTMONITORPROFILE, D3DKMDT_MONITOR_CAPABILITIES_ORIGIN, D3DKMDT_MCO_MONITORDESCRIPTOR_REGISTRYOVERRIDE, D3DKMDT_MCO_UNINITIALIZED, d3dkmdt/D3DKMDT_MCO_SPECIFICCAP_REGISTRYOVERRIDE, display.d3dkmdt_monitor_capabilities_origin, d3dkmdt/D3DKMDT_MONITOR_CAPABILITIES_ORIGIN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -95,9 +95,7 @@ The <b>Origin</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

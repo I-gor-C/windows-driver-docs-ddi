@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bd8fc34a-60a3-4ae7-b13e-50d8b4342834
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_bddc75da-dc62-43cf-8ee7-ec9958198669.xml, D3DKMTUpdateOverlay function [Display Devices], display.d3dkmtupdateoverlay, D3DKMTUpdateOverlay, d3dkmthk/D3DKMTUpdateOverlay
+ms.keywords : display.d3dkmtupdateoverlay, D3DKMTUpdateOverlay, OpenGL_Functions_bddc75da-dc62-43cf-8ee7-ec9958198669.xml, d3dkmthk/D3DKMTUpdateOverlay, D3DKMTUpdateOverlay function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,14 +118,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

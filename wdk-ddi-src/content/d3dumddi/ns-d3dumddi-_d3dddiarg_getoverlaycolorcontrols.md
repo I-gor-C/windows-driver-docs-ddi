@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 63d14667-7409-40c8-af03-e4ffedd73e7e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_GETOVERLAYCOLORCONTROLS, display.d3dddiarg_getoverlaycolorcontrols, UMDisplayDriver_param_Structs_eedf1607-a208-42ba-8d05-6151e489ee8f.xml, D3DDDIARG_GETOVERLAYCOLORCONTROLS structure [Display Devices], _D3DDDIARG_GETOVERLAYCOLORCONTROLS, D3DDDIARG_GETOVERLAYCOLORCONTROLS
+ms.keywords : display.d3dddiarg_getoverlaycolorcontrols, D3DDDIARG_GETOVERLAYCOLORCONTROLS, d3dumddi/D3DDDIARG_GETOVERLAYCOLORCONTROLS, D3DDDIARG_GETOVERLAYCOLORCONTROLS structure [Display Devices], _D3DDDIARG_GETOVERLAYCOLORCONTROLS, UMDisplayDriver_param_Structs_eedf1607-a208-42ba-8d05-6151e489ee8f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,14 @@ typedef struct _D3DDDIARG_GETOVERLAYCOLORCONTROLS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getoverlaycolorcontrols.md">GetOverlayColorControls</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlaycolorcontrols.md">D3DDDI_OVERLAYCOLORCONTROLS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 458d8a08-7212-4888-9bb3-07a470541c8d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisinitializereadwritelock, NdisInitializeReadWriteLock, NdisInitializeReadWriteLock function [Network Drivers Starting with Windows Vista], ndis/NdisInitializeReadWriteLock, ndis_read_write_lock_ref_a74c25e4-58af-4fb0-9c5a-0fc29bad9aa7.xml
+ms.keywords : ndis/NdisInitializeReadWriteLock, NdisInitializeReadWriteLock, NdisInitializeReadWriteLock function [Network Drivers Starting with Windows Vista], ndis_read_write_lock_ref_a74c25e4-58af-4fb0-9c5a-0fc29bad9aa7.xml, netvista.ndisinitializereadwritelock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,8 +98,8 @@ Initialize and use this type of lock for resources that are frequently accessed 
     infrequently accessed for writing.
 
 Once resource access is complete, the driver calls the 
-    <mshelp:link keywords="netvista.ndisreleasereadwritelock" tabindex="0"><b>
-    NdisReleaseReadWriteLock</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisreleasereadwritelock.md">
+    NdisReleaseReadWriteLock</a> function.
 
 Each lock that a driver initializes does one of the following:
 <ul>
@@ -120,14 +120,12 @@ Exposes a discrete set of shared resources to simultaneous read access by driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Deprecated for NDIS 6.20 and later drivers, which should use NdisAllocateRWLock instead of NdisInitializeReadWriteLock. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeReadWriteLock   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeReadWriteLock   (NDIS 5.1)) in Windows XP. Deprecated for NDIS 6.20 and later drivers, which should use NdisAllocateRWLock instead of NdisInitializeReadWriteLock. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeReadWriteLock   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeReadWriteLock   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
+| **DLL** | Ndis.sys |
 | **IRQL** | Any level (see Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

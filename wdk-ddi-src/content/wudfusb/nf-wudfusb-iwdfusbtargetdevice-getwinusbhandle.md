@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 458cbe27-be75-49f4-9849-969d881e0cd2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetDevice::GetWinUsbHandle, IWDFUsbTargetDevice interface, GetWinUsbHandle method, GetWinUsbHandle, umdf.iwdfusbtargetdevice_getwinusbhandle, GetWinUsbHandle method, wdf.iwdfusbtargetdevice_getwinusbhandle, wudfusb/IWDFUsbTargetDevice::GetWinUsbHandle, UMDFUSBref_7568c92e-e43d-4013-ab7c-1f4834cd5c14.xml, IWDFUsbTargetDevice, GetWinUsbHandle method, IWDFUsbTargetDevice interface
+ms.keywords : IWDFUsbTargetDevice, GetWinUsbHandle, wudfusb/IWDFUsbTargetDevice::GetWinUsbHandle, umdf.iwdfusbtargetdevice_getwinusbhandle, IWDFUsbTargetDevice::GetWinUsbHandle, wdf.iwdfusbtargetdevice_getwinusbhandle, UMDFUSBref_7568c92e-e43d-4013-ab7c-1f4834cd5c14.xml, GetWinUsbHandle method, IWDFUsbTargetDevice interface, GetWinUsbHandle method, GetWinUsbHandle method, IWDFUsbTargetDevice interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -70,22 +70,20 @@ The UMDF driver should not call the <a href="https://msdn.microsoft.com/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540277">WinUsb_Initialize</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540233">WinUsb_Free</a>
-
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540233">WinUsb_Free</a>
 
  
 

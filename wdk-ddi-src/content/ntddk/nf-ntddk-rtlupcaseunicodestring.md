@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fe3c6010-532b-4f3d-b3d3-a1c27d4a05f1
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_617db3d7-18d8-46eb-a555-59f99d9cae78.xml, ntddk/RtlUpcaseUnicodeString, RtlUpcaseUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlupcaseunicodestring, RtlUpcaseUnicodeString
+ms.keywords : k109_617db3d7-18d8-46eb-a555-59f99d9cae78.xml, RtlUpcaseUnicodeString, RtlUpcaseUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlupcaseunicodestring, ntddk/RtlUpcaseUnicodeString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,12 @@ If the operation succeeds, <b>RtlUpcaseUnicodeString</b> returns STATUS_SUCCESS.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

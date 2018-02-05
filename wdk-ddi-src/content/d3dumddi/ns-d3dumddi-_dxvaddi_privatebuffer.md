@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3e41472c-4c9d-4727-af08-a350e1967ef0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVADDI_PRIVATEBUFFER, _DXVADDI_PRIVATEBUFFER, display.dxvaddi_privatebuffer, DXVADDI_PRIVATEBUFFER structure [Display Devices], d3dumddi/DXVADDI_PRIVATEBUFFER, DXVA2_Structs_90012dba-8a0c-4685-a528-1a57265e5688.xml
+ms.keywords : d3dumddi/DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER structure [Display Devices], display.dxvaddi_privatebuffer, DXVA2_Structs_90012dba-8a0c-4685-a528-1a57265e5688.xml, _DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct _DXVADDI_PRIVATEBUFFER {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

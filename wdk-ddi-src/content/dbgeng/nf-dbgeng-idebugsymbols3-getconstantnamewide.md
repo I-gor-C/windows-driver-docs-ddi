@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 743d2f83-905b-4bc9-8e23-b330c3ca7629
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetConstantNameWide method, dbgeng/IDebugSymbols3::GetConstantNameWide, debugger.getconstantnamewide, IDebugSymbols3, GetConstantNameWide method [Windows Debugging], IDebugSymbols3::GetConstantNameWide, GetConstantNameWide, GetConstantNameWide method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : dbgeng/IDebugSymbols3::GetConstantNameWide, GetConstantNameWide method [Windows Debugging], GetConstantNameWide method [Windows Debugging], IDebugSymbols3 interface, GetConstantNameWide, debugger.getconstantnamewide, IDebugSymbols3::GetConstantNameWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetConstantNameWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -121,11 +121,6 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

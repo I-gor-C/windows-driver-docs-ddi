@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : fe163d23-0eaf-4a3e-b371-2f65f2235251
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kshandshake, KSHANDSHAKE, avstruct_65ba3a40-5560-4acb-bf85-90fa9ad46fc1.xml, KSHANDSHAKE structure [Streaming Media Devices], *PKSHANDSHAKE, PKSHANDSHAKE structure pointer [Streaming Media Devices], ks/KSHANDSHAKE, ks/PKSHANDSHAKE, PKSHANDSHAKE
+ms.keywords : KSHANDSHAKE structure [Streaming Media Devices], KSHANDSHAKE, *PKSHANDSHAKE, ks/KSHANDSHAKE, stream.kshandshake, avstruct_65ba3a40-5560-4acb-bf85-90fa9ad46fc1.xml, PKSHANDSHAKE, PKSHANDSHAKE structure pointer [Streaming Media Devices], ks/PKSHANDSHAKE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,9 +73,7 @@ Pin handshaking is a concept that is usable only between two pins that support I
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

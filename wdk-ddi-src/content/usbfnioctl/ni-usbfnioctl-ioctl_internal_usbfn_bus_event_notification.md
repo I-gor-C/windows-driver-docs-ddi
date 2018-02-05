@@ -75,9 +75,7 @@ UFX completes this request in response to an event on the bus. It is recommended
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h |
-| **IRQL** |  |
 
 ## See Also
 

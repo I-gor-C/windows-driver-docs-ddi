@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 080707c5-cf46-4066-a241-684cdae37fee
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMaxGroupCount, NdisMaxGroupCount, netvista.ndismaxgroupcount, NdisMaxGroupCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_5744be61-71b7-4abc-ad66-30b26558c0ac.xml
+ms.keywords : netvista.ndismaxgroupcount, NdisMaxGroupCount, NdisMaxGroupCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_5744be61-71b7-4abc-ad66-30b26558c0ac.xml, ndis/NdisMaxGroupCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,11 @@ To obtain the number of groups that are currently active, call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

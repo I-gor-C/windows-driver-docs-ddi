@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 316b8b75-91ca-4866-b66d-3f66f20126df
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : SetCompletionCallback, umdf.iwdfiorequest_setcompletioncallback, wudfddi/IWDFIoRequest::SetCompletionCallback, SetCompletionCallback method, IWDFIoRequest interface, IWDFIoRequest, IWDFIoRequest::SetCompletionCallback, SetCompletionCallback method, UMDFRequestObjectRef_81bdbb22-6221-472d-b2de-a1cc0b9b0c11.xml, IWDFIoRequest interface, SetCompletionCallback method, wdf.iwdfiorequest_setcompletioncallback
+ms.keywords : wdf.iwdfiorequest_setcompletioncallback, SetCompletionCallback method, IWDFIoRequest interface, SetCompletionCallback method, IWDFIoRequest::SetCompletionCallback, wudfddi/IWDFIoRequest::SetCompletionCallback, UMDFRequestObjectRef_81bdbb22-6221-472d-b2de-a1cc0b9b0c11.xml, SetCompletionCallback, IWDFIoRequest interface, SetCompletionCallback method, IWDFIoRequest, umdf.iwdfiorequest_setcompletioncallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,24 +76,22 @@ If a driver that forwards an I/O request requires notification when the lower-le
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 
 <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
 
  
 

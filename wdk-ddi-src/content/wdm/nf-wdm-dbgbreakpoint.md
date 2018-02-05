@@ -68,14 +68,10 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtDll.lib (user mode); NtosKrnl.lib (kernel mode) |
+| **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
 
 ## See Also
 

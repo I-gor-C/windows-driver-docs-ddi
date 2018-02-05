@@ -93,9 +93,7 @@ If this is a read-only volume, then there is normally nothing that a file system
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
-| **IRQL** |  |
 
 ## See Also
 

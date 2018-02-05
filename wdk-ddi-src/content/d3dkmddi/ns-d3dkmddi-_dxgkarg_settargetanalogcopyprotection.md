@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F5A853B2-4A8C-4929-AAEC-28844DEF0B29
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_SETTARGETANALOGCOPYPROTECTION, _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION structure [Display Devices], DXGKARG_SETTARGETANALOGCOPYPROTECTION, display.dxgkarg_settargetanalogcopyprotection
+ms.keywords : display.dxgkarg_settargetanalogcopyprotection, _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION, d3dkmddi/DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ typedef struct _DXGKARG_SETTARGETANALOGCOPYPROTECTION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

@@ -72,6 +72,4 @@ The class driver should send this IOCTL request during initialization so that it
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h |
-| **IRQL** |  |

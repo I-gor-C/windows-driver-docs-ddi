@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3A4D19FD-FC65-4B78-8F0E-9792EB0A9B03
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032, display.d3d12ddi_video_processor_input_stream_desc_0032, d3d12umddi/D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032, D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032 structure [Display Devices]
+ms.keywords : display.d3d12ddi_video_processor_input_stream_desc_0032, D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032 structure [Display Devices], D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032, d3d12umddi/D3D12DDI_VIDEO_PROCESSOR_INPUT_STREAM_DESC_0032
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -139,7 +139,4 @@ Specifies whether the stream is stereo or not. If D3D12DDI_VIDEO_FRAME_STEREO_FO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6a05b25f-e529-469a-8bfc-e75c0f7a9a8a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxprocs/RxPrepareToReparseSymbolicLink, RxPrepareToReparseSymbolicLink routine [Installable File System Drivers], rxref_6726dffd-ccae-43e0-98da-14dc0d11c7c2.xml, ifsk.rxpreparetoreparsesymboliclink, RxPrepareToReparseSymbolicLink
+ms.keywords : ifsk.rxpreparetoreparsesymboliclink, RxPrepareToReparseSymbolicLink, rxprocs/RxPrepareToReparseSymbolicLink, rxref_6726dffd-ccae-43e0-98da-14dc0d11c7c2.xml, RxPrepareToReparseSymbolicLink routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -136,14 +136,10 @@ The value of the <i>ReparseRequired</i> parameter assumes significance only if S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

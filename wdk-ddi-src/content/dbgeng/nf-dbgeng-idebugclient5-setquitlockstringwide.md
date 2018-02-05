@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B9A2C636-BF18-4D1B-A013-8CAE65FCC56F
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::SetQuitLockStringWide, IDebugClient5::SetQuitLockStringWide, IDebugClient5 interface [Windows Debugging], SetQuitLockStringWide method, SetQuitLockStringWide, debugger.idebugclient5_setquitlockstringwide, SetQuitLockStringWide method [Windows Debugging], IDebugClient5 interface, SetQuitLockStringWide method [Windows Debugging], IDebugClient5
+ms.keywords : IDebugClient5::SetQuitLockStringWide, SetQuitLockStringWide method [Windows Debugging], dbgeng/IDebugClient5::SetQuitLockStringWide, debugger.idebugclient5_setquitlockstringwide, IDebugClient5 interface [Windows Debugging], SetQuitLockStringWide method, SetQuitLockStringWide, IDebugClient5, SetQuitLockStringWide method [Windows Debugging], IDebugClient5 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -69,14 +69,9 @@ This function provides control over locking the session against
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

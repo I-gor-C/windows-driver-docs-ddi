@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 01654107-29a1-4f34-bb9a-a17fe36a84fe
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PTIMECODE_SAMPLE, TIMECODE_SAMPLE structure [Streaming Media Devices], ksmedia/TIMECODE_SAMPLE, TIMECODE_SAMPLE, tagTIMECODE_SAMPLE, vidcapstruct_518cf1af-a1e2-43a6-b97f-115c4fe8cb6d.xml, stream.timecode_sample"
+ms.keywords : vidcapstruct_518cf1af-a1e2-43a6-b97f-115c4fe8cb6d.xml, *PTIMECODE_SAMPLE, TIMECODE_SAMPLE structure [Streaming Media Devices], ksmedia/TIMECODE_SAMPLE, tagTIMECODE_SAMPLE, stream.timecode_sample, TIMECODE_SAMPLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -184,9 +184,6 @@ The upper 16 bits in <b>dwFlags</b> are reserved for future use and must be set 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

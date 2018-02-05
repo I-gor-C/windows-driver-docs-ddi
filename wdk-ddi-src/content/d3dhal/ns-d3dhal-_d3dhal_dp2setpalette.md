@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8c472869-028e-41f5-93df-94e91c47b76e
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dhal/D3DHAL_DP2SETPALETTE, _D3DHAL_DP2SETPALETTE, d3dhal/LPD3DHAL_DP2SETPALETTE, LPD3DHAL_DP2SETPALETTE, display.d3dhal_dp2setpalette, D3DHAL_DP2SETPALETTE, D3DHAL_DP2SETPALETTE structure [Display Devices], *LPD3DHAL_DP2SETPALETTE, d3dstrct_da8023c8-d0a5-4793-a433-6f8860f0f11f.xml, LPD3DHAL_DP2SETPALETTE structure pointer [Display Devices]
+ms.keywords : d3dhal/LPD3DHAL_DP2SETPALETTE, D3DHAL_DP2SETPALETTE structure [Display Devices], d3dstrct_da8023c8-d0a5-4793-a433-6f8860f0f11f.xml, _D3DHAL_DP2SETPALETTE, *LPD3DHAL_DP2SETPALETTE, LPD3DHAL_DP2SETPALETTE structure pointer [Display Devices], display.d3dhal_dp2setpalette, d3dhal/D3DHAL_DP2SETPALETTE, LPD3DHAL_DP2SETPALETTE, D3DHAL_DP2SETPALETTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -217,18 +217,15 @@ The number of D3DHAL_DP2SETPALETTE structures to follow is specified by the <b>w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
 D3DDP2OP_SETPALETTE
 
 <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

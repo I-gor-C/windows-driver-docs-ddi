@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ACC0C800-B6E3-4EF2-846C-63BF4564D0FD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_MAPCPUHOSTAPERTURE, display.dxgkarg_mapcpuhostaperture, DXGKARG_MAPCPUHOSTAPERTURE structure [Display Devices], _DXGKARG_MAPCPUHOSTAPERTURE, d3dkmddi/DXGKARG_MAPCPUHOSTAPERTURE
+ms.keywords : "_DXGKARG_MAPCPUHOSTAPERTURE, d3dkmddi/DXGKARG_MAPCPUHOSTAPERTURE, DXGKARG_MAPCPUHOSTAPERTURE structure [Display Devices], DXGKARG_MAPCPUHOSTAPERTURE, display.dxgkarg_mapcpuhostaperture"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,7 +88,5 @@ Specifies the segment identifier of the segment being accessed.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

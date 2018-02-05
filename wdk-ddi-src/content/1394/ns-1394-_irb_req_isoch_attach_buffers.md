@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 7EA6E82C-D803-48CD-9955-CF576BF978CA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_IRB_REQ_ISOCH_ATTACH_BUFFERS, 1394/IRB_REQ_ISOCH_ATTACH_BUFFERS, IRB_REQ_ISOCH_ATTACH_BUFFERS structure [Buses], IEEE.irb_req_isoch_attach_buffers, IRB_REQ_ISOCH_ATTACH_BUFFERS"
+ms.keywords : "_IRB_REQ_ISOCH_ATTACH_BUFFERS, 1394/IRB_REQ_ISOCH_ATTACH_BUFFERS, IRB_REQ_ISOCH_ATTACH_BUFFERS, IEEE.irb_req_isoch_attach_buffers, IRB_REQ_ISOCH_ATTACH_BUFFERS structure [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ Points to an array of ISOCH_DESCRIPTOR structures that describe the buffers to b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

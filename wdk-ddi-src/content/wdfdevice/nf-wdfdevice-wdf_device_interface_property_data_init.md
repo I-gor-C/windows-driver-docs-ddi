@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 8B3D6F59-BA76-4B14-9570-57263D204BFE
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT function, wdf.wdf_device_interface_property_data_init, WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT, wdfdevice/WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT
+ms.keywords : WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT function, WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT, wdfdevice/WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT, wdf.wdf_device_interface_property_data_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,22 +94,19 @@ For a code example that uses <b>WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</b>, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty.md">WdfDeviceAllocAndQueryInterfaceProperty</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
 
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
 

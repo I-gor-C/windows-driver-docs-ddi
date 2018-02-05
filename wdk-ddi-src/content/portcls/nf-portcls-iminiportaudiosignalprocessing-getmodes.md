@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7175453E-DF6D-45F0-B666-CF4FCF1F880C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioSignalProcessing::GetModes, IMiniportAudioSignalProcessing, GetModes method [Audio Devices], IMiniportAudioSignalProcessing interface, GetModes, IMiniportAudioSignalProcessing interface [Audio Devices], GetModes method, portcls/IMiniportAudioSignalProcessing::GetModes, GetModes method [Audio Devices], audio.iminiportaudiosignalprocessing_getmodes
+ms.keywords : IMiniportAudioSignalProcessing, IMiniportAudioSignalProcessing::GetModes, GetModes method [Audio Devices], GetModes method [Audio Devices], IMiniportAudioSignalProcessing interface, GetModes, audio.iminiportaudiosignalprocessing_getmodes, IMiniportAudioSignalProcessing interface [Audio Devices], GetModes method, portcls/IMiniportAudioSignalProcessing::GetModes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -100,14 +100,10 @@ The following table presents and explains  the error messages than can be return
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

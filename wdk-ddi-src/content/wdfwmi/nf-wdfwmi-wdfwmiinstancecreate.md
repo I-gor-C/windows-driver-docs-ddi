@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ed662d6f-c42f-4dcb-86c5-135a302c59d7
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfwmi/WdfWmiInstanceCreate, kmdf.wdfwmiinstancecreate, WdfWmiInstanceCreate method, wdf.wdfwmiinstancecreate, DFWMIRef_8d75a5ee-d683-46fb-ba16-a2f8a2e892e3.xml, PFN_WDFWMIINSTANCECREATE, WdfWmiInstanceCreate
+ms.keywords : DFWMIRef_8d75a5ee-d683-46fb-ba16-a2f8a2e892e3.xml, wdf.wdfwmiinstancecreate, kmdf.wdfwmiinstancecreate, wdfwmi/WdfWmiInstanceCreate, WdfWmiInstanceCreate, WdfWmiInstanceCreate method, PFN_WDFWMIINSTANCECREATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -156,12 +156,10 @@ If the <b>Register</b> member of the <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_insta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
@@ -169,23 +167,23 @@ If the <b>Register</b> member of the <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_insta
 
 <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancegetdevice.md">WdfWmiInstanceGetDevice</a>
-
-<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider_config.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassignmofresourcename.md">WdfDeviceAssignMofResourceName</a>
-
-<a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_instance_config.md">WDF_WMI_INSTANCE_CONFIG</a>
-
 <a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_provider_config_init.md">WDF_WMI_PROVIDER_CONFIG_INIT</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a>
-
-<a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a>
 
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassignmofresourcename.md">WdfDeviceAssignMofResourceName</a>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancegetdevice.md">WdfWmiInstanceGetDevice</a>
+
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancegetprovider.md">WdfWmiInstanceGetProvider</a>
+
+<a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_instance_config.md">WDF_WMI_INSTANCE_CONFIG</a>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdf_wmi_instance_config_init_provider_config.md">WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER_CONFIG</a>
+
+<a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a>
 
  
 

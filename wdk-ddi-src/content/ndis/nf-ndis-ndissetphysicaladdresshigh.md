@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : bbe58583-ea65-4920-9056-ab46bd881618
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisSetPhysicalAddressHigh macro [Network Drivers Starting with Windows Vista], netvista.ndissetphysicaladdresshigh, miniport_memory_shared_ref_4644a620-5ec7-449e-9886-ddee46d9ff2a.xml, NdisSetPhysicalAddressHigh, ndis/NdisSetPhysicalAddressHigh
+ms.keywords : NdisSetPhysicalAddressHigh macro [Network Drivers Starting with Windows Vista], ndis/NdisSetPhysicalAddressHigh, netvista.ndissetphysicaladdresshigh, NdisSetPhysicalAddressHigh, miniport_memory_shared_ref_4644a620-5ec7-449e-9886-ddee46d9ff2a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -56,11 +56,11 @@ VOID NdisSetPhysicalAddressHigh(
 
 `_PhysicalAddress`
 
-TBD
+Specifies a physical address of an OS-dependent size.
 
 `_Value`
 
-TBD
+Specifies the value to be written into the high-order part of the address.
 
 
 ## Return Value
@@ -71,22 +71,19 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisSetPhysicalAddressHigh   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisSetPhysicalAddressHigh   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisSetPhysicalAddressHigh   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisSetPhysicalAddressHigh   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557129">NDIS_PHYSICAL_ADDRESS</a>
 
-<a href="..\ndis\nf-ndis-ndisgetphysicaladdresshigh.md">NdisGetPhysicalAddressHigh</a>
-
 <a href="..\ndis\nf-ndis-ndissetphysicaladdresslow.md">NdisSetPhysicalAddressLow</a>
+
+<a href="..\ndis\nf-ndis-ndisgetphysicaladdresshigh.md">NdisGetPhysicalAddressHigh</a>
 
  
 

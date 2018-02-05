@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : A92A3E2E-1C73-40BD-808A-CBC14404F3E9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxInitializeDeviceInit, ucxclass/UcxInitializeDeviceInit, UcxInitializeDeviceInit method [Buses], buses._ucxinitializedeviceinit
+ms.keywords : buses._ucxinitializedeviceinit, UcxInitializeDeviceInit, ucxclass/UcxInitializeDeviceInit, UcxInitializeDeviceInit method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UCM_PD_REQUEST_DATA_OBJECT, *PUCM_PD_REQUEST_DATA_OBJECT
+req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
 req.product : Windows 10 or later.
 ---
 
@@ -69,14 +69,11 @@ The client driver for the host controller calls this method in its <a href="..\w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ucxclass.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

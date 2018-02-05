@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4E620796-3065-469E-8E91-8F698F672CAE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PPM_CST_STATES, *PPEP_PPM_CST_STATES, PPEP_PPM_CST_STATES structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_CST_STATES, _PEP_PPM_CST_STATES, pepfx/PPEP_PPM_CST_STATES, PEP_PPM_CST_STATES structure [Kernel-Mode Driver Architecture], PPEP_PPM_CST_STATES, kernel.pep_ppm_cst_states
+ms.keywords : PEP_PPM_CST_STATES structure [Kernel-Mode Driver Architecture], _PEP_PPM_CST_STATES, PPEP_PPM_CST_STATES structure pointer [Kernel-Mode Driver Architecture], *PPEP_PPM_CST_STATES, pepfx/PPEP_PPM_CST_STATES, PPEP_PPM_CST_STATES, PEP_PPM_CST_STATES, kernel.pep_ppm_cst_states, pepfx/PEP_PPM_CST_STATES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

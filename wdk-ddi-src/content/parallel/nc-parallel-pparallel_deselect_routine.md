@@ -67,11 +67,6 @@ Pointer to a PARALLEL_1284_COMMAND structure. The caller specifies the following
 
 
 
-#### ID
-
-Specifies the 1284.3 device ID (zero or 1).
-
-
 #### CommandFlags
 
 Specifies a bitwise OR of zero or more of the following flags:
@@ -100,7 +95,12 @@ Specifies that the port be kept allocated.
 
 </td>
 </tr>
-</table>
+</table> 
+
+
+#### ID
+
+Specifies the 1284.3 device ID (zero or 1).
 
 
 ## Return Value
@@ -156,24 +156,19 @@ For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | parallel.h (include Parallel.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\parallel\nc-parallel-pparallel_try_select_routine.md">PPARALLEL_TRY_SELECT_ROUTINE</a>
 
+<a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
+
 <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
 
 <a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
-
-<a href="..\parallel\ni-parallel-ioctl_internal_deselect_device.md">IOCTL_INTERNAL_DESELECT_DEVICE</a>
 
  
 

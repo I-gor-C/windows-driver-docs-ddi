@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d22f4a14-2293-4210-bead-5814484a1471
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlsetdaclsecuritydescriptor, k109_b2723172-ac75-4ada-b421-ae144d10d560.xml, RtlSetDaclSecurityDescriptor routine [Kernel-Mode Driver Architecture], wdm/RtlSetDaclSecurityDescriptor, RtlSetDaclSecurityDescriptor
+ms.keywords : RtlSetDaclSecurityDescriptor, kernel.rtlsetdaclsecuritydescriptor, wdm/RtlSetDaclSecurityDescriptor, RtlSetDaclSecurityDescriptor routine [Kernel-Mode Driver Architecture], k109_b2723172-ac75-4ada-b421-ae144d10d560.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -120,30 +120,28 @@ The security descriptor is not an absolute format security descriptor.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556619">SECURITY_DESCRIPTOR_CONTROL</a>
-
-<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 
 <a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 
-<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
 
 <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 
-<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556619">SECURITY_DESCRIPTOR_CONTROL</a>
 
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 
  
 

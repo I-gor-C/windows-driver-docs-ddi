@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 67dfb4bd-c43c-4da3-833d-34050d49dea3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : POEMUIPROCS structure pointer [Print Devices], OEMUIPROCS structure [Print Devices], *POEMUIPROCS, print.oemuiprocs, OEMUIPROCS, printoem/OEMUIPROCS, _OEMUIPROCS, POEMUIPROCS, print_unidrv-pscript_ui_2252155b-8f63-4c0f-886b-c66b26ccdd5f.xml, printoem/POEMUIPROCS
+ms.keywords : OEMUIPROCS structure [Print Devices], POEMUIPROCS, POEMUIPROCS structure pointer [Print Devices], _OEMUIPROCS, print.oemuiprocs, printoem/OEMUIPROCS, print_unidrv-pscript_ui_2252155b-8f63-4c0f-886b-c66b26ccdd5f.xml, printoem/POEMUIPROCS, *POEMUIPROCS, OEMUIPROCS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,7 +71,4 @@ The OEMUIPROCS structure's address is contained in an <a href="..\printoem\ns-pr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |

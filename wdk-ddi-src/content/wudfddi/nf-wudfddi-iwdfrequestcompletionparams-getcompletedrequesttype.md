@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1977828d-61bb-4649-bfa6-e5e82775258e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetCompletedRequestType, GetCompletedRequestType method, IWDFRequestCompletionParams interface, IWDFRequestCompletionParams, wudfddi/IWDFRequestCompletionParams::GetCompletedRequestType, GetCompletedRequestType method, IWDFRequestCompletionParams::GetCompletedRequestType, umdf.iwdfrequestcompletionparams_getcompletedrequesttype, wdf.iwdfrequestcompletionparams_getcompletedrequesttype, UMDFRequestObjectRef_97c61d1b-059f-44d7-9d3a-7c031099d669.xml, IWDFRequestCompletionParams interface, GetCompletedRequestType method
+ms.keywords : UMDFRequestObjectRef_97c61d1b-059f-44d7-9d3a-7c031099d669.xml, IWDFRequestCompletionParams, wudfddi/IWDFRequestCompletionParams::GetCompletedRequestType, umdf.iwdfrequestcompletionparams_getcompletedrequesttype, GetCompletedRequestType method, IWDFRequestCompletionParams::GetCompletedRequestType, GetCompletedRequestType, wdf.iwdfrequestcompletionparams_getcompletedrequesttype, IWDFRequestCompletionParams interface, GetCompletedRequestType method, GetCompletedRequestType method, IWDFRequestCompletionParams interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -63,20 +63,18 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
-
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfrequestcompletionparams.md">IWDFRequestCompletionParams</a>
 
  
 

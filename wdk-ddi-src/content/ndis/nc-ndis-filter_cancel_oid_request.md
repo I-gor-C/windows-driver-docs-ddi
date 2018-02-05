@@ -80,8 +80,8 @@ None
 
 <i>FilterCancelOidRequest</i> is an optional function. If a filter driver does not use OID requests, it
     can set the entry point for this function to <b>NULL</b> when it calls the 
-    <mshelp:link keywords="netvista.ndisfregisterfilterdriver" tabindex="0"><b>
-    NdisFRegisterFilterDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    NdisFRegisterFilterDriver</a> function.
 
 When NDIS calls 
     <i>FilterCancelOidRequest</i>, the filter driver should attempt to call 
@@ -148,26 +148,22 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfcanceloidrequest.md">NdisFCancelOidRequest</a>
-
 <a href="..\ndis\nf-ndis-ndisfoidrequestcomplete.md">NdisFOidRequestComplete</a>
-
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+
+<a href="..\ndis\nf-ndis-ndisfcanceloidrequest.md">NdisFCancelOidRequest</a>
 
  
 

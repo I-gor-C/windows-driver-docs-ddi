@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8a689889-b445-4fda-ae11-090d0d5870b8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : HalAllocateHardwareCounters, k103_06a6696a-0b51-414e-96ea-6c7d3b70acb5.xml, ntddk/HalAllocateHardwareCounters, HalAllocateHardwareCounters routine [Kernel-Mode Driver Architecture], kernel.halallocatehardwarecounters
+ms.keywords : ntddk/HalAllocateHardwareCounters, HalAllocateHardwareCounters, k103_06a6696a-0b51-414e-96ea-6c7d3b70acb5.xml, HalAllocateHardwareCounters routine [Kernel-Mode Driver Architecture], kernel.halallocatehardwarecounters
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,22 +121,20 @@ Virtualization software typically does not virtualize hardware performance count
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Hal.lib |
+| **DLL** | Hal.dll |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ntddk\ns-ntddk-_physical_counter_resource_list.md">PHYSICAL_COUNTER_RESOURCE_LIST</a>
 
 <a href="..\ntddk\nf-ntddk-halfreehardwarecounters.md">HalFreeHardwareCounters</a>
 
 <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a>
+
+<a href="..\ntddk\ns-ntddk-_physical_counter_resource_list.md">PHYSICAL_COUNTER_RESOURCE_LIST</a>
 
  
 

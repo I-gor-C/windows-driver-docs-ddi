@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 66157bc7-8094-481f-8aae-a438031b61d0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmModifyCallQoSComplete, condis_mcm_ref_4b742f65-7e96-4e8b-aa3d-64f9c90aa4be.xml, NdisMCmModifyCallQoSComplete macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmModifyCallQoSComplete, netvista.ndismcmmodifycallqoscomplete
+ms.keywords : NdisMCmModifyCallQoSComplete, NdisMCmModifyCallQoSComplete macro [Network Drivers Starting with Windows Vista], ndis/NdisMCmModifyCallQoSComplete, condis_mcm_ref_4b742f65-7e96-4e8b-aa3d-64f9c90aa4be.xml, netvista.ndismcmmodifycallqoscomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -76,8 +76,8 @@ None
 
 A call to 
     <b>NdisMCmModifyCallQoSComplete</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclmodifycallqoscomplete" tabindex="0"><i>
-    ProtocolClModifyCallQoSComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_modify_call_qos_complete.md">
+    ProtocolClModifyCallQoSComplete</a> function.
 
 The MCM driver should call 
     <b>NdisMCmActivateVc</b> whenever it makes changes in the call parameters on an active VC.
@@ -98,29 +98,27 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmModifyCallQoSComplete   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
-
-<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
-
-<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
-
-<mshelp:link keywords="netvista.protocolclmodifycallqoscomplete" tabindex="0"><i>
-   ProtocolClModifyCallQoSComplete</i></mshelp:link>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndiscmmodifycallqoscomplete.md">NdisCmModifyCallQosComplete</a>
+
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
+
+<a href="..\ndis\nc-ndis-protocol_cl_modify_call_qos_complete.md">
+   ProtocolClModifyCallQoSComplete</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_modify_qos_call.md">ProtocolCmModifyCallQoS</a>
+
+<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
 
  
 

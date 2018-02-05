@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : c3431e89-4a47-44e6-98d8-eae444ea1915
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : PCI_EXPRESS_LINK_STATUS_REGISTER union [Buses], ntddk/PCI_EXPRESS_LINK_STATUS_REGISTER, PCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PPCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER, *PPCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER union pointer [Buses], _PCI_EXPRESS_LINK_STATUS_REGISTER, PCI.pci_express_link_status_register, pci_struct_41d11df3-521f-4709-a30e-be70ad36db8f.xml
+ms.keywords : PCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PPCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER union pointer [Buses], pci_struct_41d11df3-521f-4709-a30e-be70ad36db8f.xml, _PCI_EXPRESS_LINK_STATUS_REGISTER, *PPCI_EXPRESS_LINK_STATUS_REGISTER, PCI_EXPRESS_LINK_STATUS_REGISTER union [Buses], PCI.pci_express_link_status_register
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPCI_EXPRESS_LINK_STATUS_REGISTER, PCI_EXPRESS_LINK_STATUS_REGISTER"
+req.typenames : PCI_EXPRESS_LINK_STATUS_REGISTER, *PPCI_EXPRESS_LINK_STATUS_REGISTER
 ---
 
 # _PCI_EXPRESS_LINK_STATUS_REGISTER structure
@@ -76,9 +76,6 @@ A PCI_EXPRESS_LINK_STATUS_REGISTER structure is contained in the <a href="https:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

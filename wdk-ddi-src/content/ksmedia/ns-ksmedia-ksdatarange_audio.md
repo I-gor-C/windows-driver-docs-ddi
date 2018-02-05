@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 53631f26-8377-4ab5-83db-ed241c11643a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : aud-prop_9a59d4cd-4c84-4c22-8a36-741cf53ec08d.xml, ksmedia/PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO structure [Audio Devices], ksmedia/KSDATARANGE_AUDIO, audio.ksdatarange_audio, *PKSDATARANGE_AUDIO, PKSDATARANGE_AUDIO structure pointer [Audio Devices], KSDATARANGE_AUDIO, PKSDATARANGE_AUDIO
+ms.keywords : PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO structure [Audio Devices], audio.ksdatarange_audio, aud-prop_9a59d4cd-4c84-4c22-8a36-741cf53ec08d.xml, ksmedia/PKSDATARANGE_AUDIO, PKSDATARANGE_AUDIO structure pointer [Audio Devices], KSDATARANGE_AUDIO, *PKSDATARANGE_AUDIO, ksmedia/KSDATARANGE_AUDIO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSDATARANGE_AUDIO, *PKSDATARANGE_AUDIO
+req.typenames : "*PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO"
 ---
 
 # KSDATARANGE_AUDIO structure
@@ -88,9 +88,6 @@ For information about data ranges and intersection handling, see <a href="https:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

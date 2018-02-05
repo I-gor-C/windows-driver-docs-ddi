@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ddcb8222-808b-4dfe-9303-a588b3522ebe
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEALLOCATIONFLAGS, D3DKMT_CREATEALLOCATIONFLAGS structure [Display Devices], display.d3dkmt_createallocationflags, OpenGL_Structs_0b22984b-feef-4975-b7d9-596427c82b2b.xml, _D3DKMT_CREATEALLOCATIONFLAGS, d3dkmthk/D3DKMT_CREATEALLOCATIONFLAGS
+ms.keywords : D3DKMT_CREATEALLOCATIONFLAGS structure [Display Devices], D3DKMT_CREATEALLOCATIONFLAGS, OpenGL_Structs_0b22984b-feef-4975-b7d9-596427c82b2b.xml, d3dkmthk/D3DKMT_CREATEALLOCATIONFLAGS, _D3DKMT_CREATEALLOCATIONFLAGS, display.d3dkmt_createallocationflags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -187,16 +187,14 @@ Drivers should follow these guidelines on <b>D3DKMT_CREATEALLOCATIONFLAGS</b> sh
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a>
-
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createallocation.md">D3DKMT_CREATEALLOCATION</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a>
 
  
 

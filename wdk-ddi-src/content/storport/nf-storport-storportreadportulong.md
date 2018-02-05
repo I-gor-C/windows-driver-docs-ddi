@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b04ef64a-cf1f-4de5-acb3-e57687f64719
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReadPortUlong routine [Storage Devices], StorPortReadPortUlong, storport/StorPortReadPortUlong, storprt_3ef5c577-3d75-4797-b5ce-8f36e4080c47.xml, storage.storportreadportulong
+ms.keywords : StorPortReadPortUlong, storage.storportreadportulong, storprt_3ef5c577-3d75-4797-b5ce-8f36e4080c47.xml, storport/StorPortReadPortUlong, StorPortReadPortUlong routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,9 @@ For more information, see the <a href="..\srb\nf-srb-scsiportreadportulong.md">S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 

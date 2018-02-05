@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d5b56926-bcfb-4411-b24d-cc0758852510
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF interface [Audio Devices], GetMessage method, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, audio.iallocatormxf_getmessage, dmusicks/IAllocatorMXF::GetMessage, GetMessage method [Audio Devices], IAllocatorMXF interface, GetMessage, GetMessage method [Audio Devices], IAllocatorMXF, IAllocatorMXF::GetMessage
+ms.keywords : IAllocatorMXF::GetMessage, IAllocatorMXF interface [Audio Devices], GetMessage method, GetMessage method [Audio Devices], IAllocatorMXF interface, GetMessage method [Audio Devices], GetMessage, audio.iallocatormxf_getmessage, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, IAllocatorMXF, dmusicks/IAllocatorMXF::GetMessage
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -72,22 +72,18 @@ For more information about the allocator, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dmusicks.h (include Dmusicks.h) |
-| **Library** |  |
+| **Library** | dmusicks.h |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
-
 <a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 31F291ED-0B04-4CDF-A83B-7CF3717EC234
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetDeviceChannelPeakMeter method [Audio Devices], IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, audio.iminiportaudioenginenode_getdevicechannelpeakmeter, portcls/IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, IMiniportAudioEngineNode, GetDeviceChannelPeakMeter, GetDeviceChannelPeakMeter method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelPeakMeter method
+ms.keywords : audio.iminiportaudioenginenode_getdevicechannelpeakmeter, GetDeviceChannelPeakMeter method [Audio Devices], GetDeviceChannelPeakMeter, GetDeviceChannelPeakMeter method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelPeakMeter method, IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, IMiniportAudioEngineNode
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,14 +77,10 @@ code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

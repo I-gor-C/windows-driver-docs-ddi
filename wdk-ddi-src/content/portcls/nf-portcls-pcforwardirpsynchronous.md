@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 29f69d26-6788-4c52-b6a4-ef96991ea238
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcForwardIrpSynchronous, audpc-routines_9ecb1bfa-c318-424c-8f65-3777136c5f65.xml, portcls/PcForwardIrpSynchronous, PcForwardIrpSynchronous function [Audio Devices], audio.pcforwardirpsynchronous
+ms.keywords : audpc-routines_9ecb1bfa-c318-424c-8f65-3777136c5f65.xml, PcForwardIrpSynchronous function [Audio Devices], PcForwardIrpSynchronous, portcls/PcForwardIrpSynchronous, audio.pcforwardirpsynchronous
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -75,14 +75,11 @@ The <a href="..\portcls\nf-portcls-pccompleteirp.md">PcCompleteIrp</a> function 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcForwardIrpSynchronous function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcForwardIrpSynchronous function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

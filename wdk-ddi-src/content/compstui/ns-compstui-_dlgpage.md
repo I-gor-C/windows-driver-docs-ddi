@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 61fb66b9-afd7-4ec4-bbbb-66a287398484
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_DLGPAGE, DLGPAGE structure [Print Devices], cpsuifnc_5054b61d-a4fc-4017-a491-4d753ce3e137.xml, print.dlgpage, *PDLGPAGE, PDLGPAGE, compstui/DLGPAGE, PDLGPAGE structure pointer [Print Devices], compstui/PDLGPAGE, DLGPAGE"
+ms.keywords : "_DLGPAGE, cpsuifnc_5054b61d-a4fc-4017-a491-4d753ce3e137.xml, compstui/PDLGPAGE, *PDLGPAGE, print.dlgpage, DLGPAGE, PDLGPAGE, compstui/DLGPAGE, PDLGPAGE structure pointer [Print Devices], DLGPAGE structure [Print Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -135,7 +135,4 @@ The PROPSHEETPAGE structure, the DLGPROC pointer type, and the WM_INITDIALOG mes
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

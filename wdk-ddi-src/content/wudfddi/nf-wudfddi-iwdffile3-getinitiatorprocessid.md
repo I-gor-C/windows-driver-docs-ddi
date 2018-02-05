@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4D23A651-7231-40CE-B9C2-4382D4E7F683
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetInitiatorProcessId method, umdf.iwdffile3_getinitiatorprocessid, IWDFFile3::GetInitiatorProcessId, GetInitiatorProcessId method, IWDFFile3 interface, GetInitiatorProcessId, wdf.iwdffile3_getinitiatorprocessid, IWDFFile3, IWDFFile3 interface, GetInitiatorProcessId method, wudfddi/IWDFFile3::GetInitiatorProcessId
+ms.keywords : GetInitiatorProcessId method, IWDFFile3 interface, IWDFFile3 interface, GetInitiatorProcessId method, IWDFFile3::GetInitiatorProcessId, wdf.iwdffile3_getinitiatorprocessid, umdf.iwdffile3_getinitiatorprocessid, GetInitiatorProcessId method, wudfddi/IWDFFile3::GetInitiatorProcessId, IWDFFile3, GetInitiatorProcessId
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -75,14 +75,12 @@ For more information about framework file objects, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : b79b1f09-baff-4071-a209-6fc399c9aef9
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4, StartEnumTagged method [Windows Debugging], IDebugDataSpaces4::StartEnumTagged, IDebugDataSpaces3::StartEnumTagged, dbgeng/IDebugDataSpaces3::StartEnumTagged, dbgeng/IDebugDataSpaces4::StartEnumTagged, IDebugDataSpaces3 interface [Windows Debugging], StartEnumTagged method, StartEnumTagged method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces_bc6f5148-04e1-4912-8ca2-8c095519af8f.xml, IDebugDataSpaces4 interface [Windows Debugging], StartEnumTagged method, StartEnumTagged method [Windows Debugging], IDebugDataSpaces3 interface, StartEnumTagged, debugger.startenumtagged
+ms.keywords : StartEnumTagged method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces_bc6f5148-04e1-4912-8ca2-8c095519af8f.xml, IDebugDataSpaces3::StartEnumTagged, StartEnumTagged method [Windows Debugging], dbgeng/IDebugDataSpaces3::StartEnumTagged, StartEnumTagged, StartEnumTagged method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4::StartEnumTagged, IDebugDataSpaces4, debugger.startenumtagged, IDebugDataSpaces4 interface [Windows Debugging], StartEnumTagged method, dbgeng/IDebugDataSpaces4::StartEnumTagged, IDebugDataSpaces3 interface [Windows Debugging], StartEnumTagged method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,11 +85,6 @@ The resources held by an enumeration created with this method can be released us
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 4F5FB073-0803-4112-964E-431930D14A88
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxEndpointInitSetEventCallbacks, buses._ucxendpointinitseteventcallbacks, UcxEndpointInitSetEventCallbacks method [Buses]
+ms.keywords : UcxEndpointInitSetEventCallbacks method [Buses], buses._ucxendpointinitseteventcallbacks, UcxEndpointInitSetEventCallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ The client driver calls this method to set function pointers to its event callba
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

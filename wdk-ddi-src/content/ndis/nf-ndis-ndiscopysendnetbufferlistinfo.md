@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9c8227ea-53e4-47c9-ab74-84e42b0cbbe5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCopySendNetBufferListInfo, netvista.ndiscopysendnetbufferlistinfo, NdisCopySendNetBufferListInfo function [Network Drivers Starting with Windows Vista], ndis/NdisCopySendNetBufferListInfo, ndis_netbuf_functions_ref_6bea2e25-d488-4bf2-879b-1ace04c66b68.xml
+ms.keywords : NdisCopySendNetBufferListInfo function [Network Drivers Starting with Windows Vista], ndis/NdisCopySendNetBufferListInfo, NdisCopySendNetBufferListInfo, netvista.ndiscopysendnetbufferlistinfo, ndis_netbuf_functions_ref_6bea2e25-d488-4bf2-879b-1ace04c66b68.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,8 +79,8 @@ When an intermediate driver or filter driver receives a transmit request from an
     information, to the new structure.
 
 To copy the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information on the receive path, use the 
-    <mshelp:link keywords="netvista.ndiscopyreceivenetbufferlistinfo" tabindex="0"><b>
-    NdisCopyReceiveNetBufferListInfo</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndiscopyreceivenetbufferlistinfo.md">
+    NdisCopyReceiveNetBufferListInfo</a> function.
 
 The following <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> items are copied in a call to <b>NdisCopySendNetBufferListInfo</b>:
 <table>
@@ -137,21 +137,19 @@ The following <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndiscopyreceivenetbufferlistinfo" tabindex="0"><b>
-   NdisCopyReceiveNetBufferListInfo</b></mshelp:link>
-
 <a href="https://msdn.microsoft.com/f7f19e48-cb63-458d-b175-6f99080e4cdf">NET_BUFFER_LIST Structure</a>
+
+<a href="..\ndis\nf-ndis-ndiscopyreceivenetbufferlistinfo.md">
+   NdisCopyReceiveNetBufferListInfo</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 

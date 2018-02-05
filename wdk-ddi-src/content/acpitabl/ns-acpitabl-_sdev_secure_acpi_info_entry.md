@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : A3FDE9B0-DD6E-4FF5-AD9A-7DF7BF276EFA
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : SDEV_SECURE_ACPI_INFO_ENTRY, _SDEV_SECURE_ACPI_INFO_ENTRY, acpitabl/PSDEV_SECURE_ACPI_INFO_ENTRY, PSDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY structure [ACPI Devices], acpi.sdev_secure_acpi_info_entry, *PSDEV_SECURE_ACPI_INFO_ENTRY, acpitabl/SDEV_SECURE_ACPI_INFO_ENTRY, PSDEV_SECURE_ACPI_INFO_ENTRY structure pointer [ACPI Devices]
+ms.keywords : SDEV_SECURE_ACPI_INFO_ENTRY, PSDEV_SECURE_ACPI_INFO_ENTRY, PSDEV_SECURE_ACPI_INFO_ENTRY structure pointer [ACPI Devices], acpitabl/PSDEV_SECURE_ACPI_INFO_ENTRY, acpitabl/SDEV_SECURE_ACPI_INFO_ENTRY, acpi.sdev_secure_acpi_info_entry, _SDEV_SECURE_ACPI_INFO_ENTRY, *PSDEV_SECURE_ACPI_INFO_ENTRY, SDEV_SECURE_ACPI_INFO_ENTRY structure [ACPI Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ A vendor information offset value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | acpitabl.h (include Acpitabl.h) |

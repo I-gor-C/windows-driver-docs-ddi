@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 484406a5-54be-49fa-839a-2e55747020f4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_QUERYADAPTERINFO, _D3DDDICB_QUERYADAPTERINFO, D3D_param_Structs_24ed4d09-d2ff-4b79-95fc-5a1c7d146faa.xml, d3dumddi/D3DDDICB_QUERYADAPTERINFO, display.d3dddicb_queryadapterinfo, D3DDDICB_QUERYADAPTERINFO structure [Display Devices]
+ms.keywords : display.d3dddicb_queryadapterinfo, d3dumddi/D3DDDICB_QUERYADAPTERINFO, D3D_param_Structs_24ed4d09-d2ff-4b79-95fc-5a1c7d146faa.xml, D3DDDICB_QUERYADAPTERINFO, D3DDDICB_QUERYADAPTERINFO structure [Display Devices], _D3DDDICB_QUERYADAPTERINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _D3DDDICB_QUERYADAPTERINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0e556cab-87af-4b3d-8c8c-d0815323a002
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilmsgbcgeneralwarningtype_2, rilapitypes/RIL_WARNINGTYPE_TSUNAMI, rilapitypes/RIL_WARNINGTYPE_MAX, rilapitypes/RIL_WARNINGTYPE_RESERVED, RIL_WARNINGTYPE_TSUNAMI, RIL_WARNINGTYPE_OTHER, RIL_WARNINGTYPE_MAX, rilapitypes/RILMSGBCGENERALWARNINGTYPE, rilapitypes/RIL_WARNINGTYPE_TEST, RILMSGBCGENERALWARNINGTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_WARNINGTYPE_RESERVED, RIL_WARNINGTYPE_TEST, RIL_WARNINGTYPE_EARTHQUAKETSUNAMI, RILMSGBCGENERALWARNINGTYPE, rilapitypes/RIL_WARNINGTYPE_EARTHQUAKETSUNAMI, rilapitypes/RIL_WARNINGTYPE_OTHER
+ms.keywords : RILMSGBCGENERALWARNINGTYPE, rilapitypes/RIL_WARNINGTYPE_RESERVED, rilapitypes/RIL_WARNINGTYPE_MAX, RIL_WARNINGTYPE_RESERVED, RILMSGBCGENERALWARNINGTYPE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_WARNINGTYPE_EARTHQUAKETSUNAMI, RIL_WARNINGTYPE_OTHER, RIL_WARNINGTYPE_TSUNAMI, RIL_WARNINGTYPE_MAX, RIL_WARNINGTYPE_TEST, netvista.rilmsgbcgeneralwarningtype_2, RIL_WARNINGTYPE_EARTHQUAKETSUNAMI, rilapitypes/RIL_WARNINGTYPE_TEST, rilapitypes/RILMSGBCGENERALWARNINGTYPE, rilapitypes/RIL_WARNINGTYPE_TSUNAMI, rilapitypes/RIL_WARNINGTYPE_OTHER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -98,7 +98,4 @@ typedef enum _RILMSGBCGENERALWARNINGTYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

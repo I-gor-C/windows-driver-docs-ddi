@@ -80,6 +80,5 @@ user mode device simulation for additional ranges to mitigate. The <b>IOCTL_SRIO
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | pcivirt.h |
 | **IRQL** | PASSIVE_LEVEL |

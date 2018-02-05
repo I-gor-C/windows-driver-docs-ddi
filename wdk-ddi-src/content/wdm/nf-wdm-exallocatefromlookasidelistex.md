@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 70782045-7026-4771-8072-9057fc31a642
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/ExAllocateFromLookasideListEx, ExAllocateFromLookasideListEx routine [Kernel-Mode Driver Architecture], k102_d3c72529-8c0d-48bf-8b5f-dc19d801bf8f.xml, kernel.exallocatefromlookasidelistex, ExAllocateFromLookasideListEx
+ms.keywords : wdm/ExAllocateFromLookasideListEx, k102_d3c72529-8c0d-48bf-8b5f-dc19d801bf8f.xml, ExAllocateFromLookasideListEx, ExAllocateFromLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exallocatefromlookasidelistex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,24 +77,22 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exfreetolookasidelistex.md">ExFreeToLookasideListEx</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554329">LOOKASIDE_LIST_EX</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554322">LookasideListAllocateEx</a>
 
 <a href="..\wdm\nf-wdm-exinitializelookasidelistex.md">ExInitializeLookasideListEx</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554322">LookasideListAllocateEx</a>
+<a href="..\wdm\nf-wdm-exfreetolookasidelistex.md">ExFreeToLookasideListEx</a>
 
  
 

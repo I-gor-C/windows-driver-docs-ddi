@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7f40a815-0247-428c-a46f-d3cdbf7e8058
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_RSS_PROCESSOR_INFO, _NDIS_RSS_PROCESSOR_INFO, netvista.ndis_rss_processor_info, PNDIS_RSS_PROCESSOR_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_RSS_PROCESSOR_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_RSS_PROCESSOR_INFO, PNDIS_RSS_PROCESSOR_INFO, ntddndis/NDIS_RSS_PROCESSOR_INFO, ndis_processor_group_ref_de5d0ed6-e4b3-4074-8816-8ab3c3ff0c4d.xml, ntddndis/PNDIS_RSS_PROCESSOR_INFO
+ms.keywords : ndis_processor_group_ref_de5d0ed6-e4b3-4074-8816-8ab3c3ff0c4d.xml, PNDIS_RSS_PROCESSOR_INFO, ntddndis/PNDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO, _NDIS_RSS_PROCESSOR_INFO, PNDIS_RSS_PROCESSOR_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RSS_PROCESSOR_INFO, netvista.ndis_rss_processor_info, NDIS_RSS_PROCESSOR_INFO structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO"
+req.typenames : NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
 ---
 
 # _NDIS_RSS_PROCESSOR_INFO structure
@@ -144,29 +144,27 @@ Reserved.
 
 ## Remarks
 NDIS network drivers use the <b>NDIS_RSS_PROCESSOR_INFO</b> structure in calls to the 
-    <mshelp:link keywords="netvista.ndisgetrssprocessorinformation" tabindex="0"><b>
-    NdisGetRssProcessorInformation</b></mshelp:link> function. After 
+    <a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
+    NdisGetRssProcessorInformation</a> function. After 
     <b>NdisGetRssProcessorInformation</b> returns, this structure contains information about the set of
     processors that will be used for receive side scaling (RSS).
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
-
-<mshelp:link keywords="netvista.ndisgetrssprocessorinformation" tabindex="0"><b>
-   NdisGetRssProcessorInformation</b></mshelp:link>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj849980">NDIS_RSS_PROFILE</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
+   NdisGetRssProcessorInformation</a>
+
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 84459f39-42cb-4877-b569-17c51ee2d6e4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2setclipplane, _D3DHAL_DP2SETCLIPPLANE, d3dhal/D3DHAL_DP2SETCLIPPLANE, d3dhal/LPD3DHAL_DP2SETCLIPPLANE, LPD3DHAL_DP2SETCLIPPLANE, d3dstrct_91eb9840-4f5f-42c2-84e7-d2461d484bbf.xml, D3DHAL_DP2SETCLIPPLANE structure [Display Devices], LPD3DHAL_DP2SETCLIPPLANE structure pointer [Display Devices], D3DHAL_DP2SETCLIPPLANE, *LPD3DHAL_DP2SETCLIPPLANE
+ms.keywords : LPD3DHAL_DP2SETCLIPPLANE, d3dhal/LPD3DHAL_DP2SETCLIPPLANE, LPD3DHAL_DP2SETCLIPPLANE structure pointer [Display Devices], d3dhal/D3DHAL_DP2SETCLIPPLANE, D3DHAL_DP2SETCLIPPLANE structure [Display Devices], display.d3dhal_dp2setclipplane, d3dstrct_91eb9840-4f5f-42c2-84e7-d2461d484bbf.xml, _D3DHAL_DP2SETCLIPPLANE, *LPD3DHAL_DP2SETCLIPPLANE, D3DHAL_DP2SETCLIPPLANE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,7 +66,4 @@ The general plane equation in standard form is A<i>x</i> + B<i>y</i> + C<i>z</i>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 314fdeea-10be-4cb3-8bd7-9b1b4b12e534
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ExpandSymbol, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup interface, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::ExpandSymbol, IDebugSymbolGroup interface [Windows Debugging], ExpandSymbol method, ExpandSymbol method [Windows Debugging], dbgeng/IDebugSymbolGroup::ExpandSymbol, IDebugSymbolGroup2 interface [Windows Debugging], ExpandSymbol method, IDebugSymbolGroup2::ExpandSymbol, IDebugSymbolGroup2, IDebugSymbolGroup::ExpandSymbol, ComOther_894f45d2-9f7b-4d8d-85e3-9240d020ebbe.xml, debugger.expandsymbol
+ms.keywords : IDebugSymbolGroup interface [Windows Debugging], ExpandSymbol method, IDebugSymbolGroup2 interface [Windows Debugging], ExpandSymbol method, IDebugSymbolGroup2, dbgeng/IDebugSymbolGroup::ExpandSymbol, ExpandSymbol, IDebugSymbolGroup2::ExpandSymbol, dbgeng/IDebugSymbolGroup2::ExpandSymbol, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup interface, IDebugSymbolGroup::ExpandSymbol, debugger.expandsymbol, ComOther_894f45d2-9f7b-4d8d-85e3-9240d020ebbe.xml, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, ExpandSymbol method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -113,22 +113,17 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 
  
 

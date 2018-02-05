@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 181363b5-08fa-4a6b-aa91-c9827a82b80e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_CALLHANDOVERPHASE_COMPLETED, RIL_CALLHANDOVERPHASE_COMPLETED, rilapitypes/RILCALLHANDOVERPHASE, rilapitypes/RIL_CALLHANDOVERPHASE_MAX, RIL_CALLHANDOVERPHASE_FAILED, RILCALLHANDOVERPHASE, rilapitypes/RIL_CALLHANDOVERPHASE_FAILED, RIL_CALLHANDOVERPHASE_MAX, rilapitypes/RIL_CALLHANDOVERPHASE_CANCELLED, RIL_CALLHANDOVERPHASE_CANCELLED, RILCALLHANDOVERPHASE enumeration [Network Drivers Starting with Windows Vista], netvista.rilcallhandoverphase_2
+ms.keywords : rilapitypes/RILCALLHANDOVERPHASE, RIL_CALLHANDOVERPHASE_COMPLETED, RIL_CALLHANDOVERPHASE_CANCELLED, RIL_CALLHANDOVERPHASE_MAX, RIL_CALLHANDOVERPHASE_FAILED, rilapitypes/RIL_CALLHANDOVERPHASE_CANCELLED, RILCALLHANDOVERPHASE, rilapitypes/RIL_CALLHANDOVERPHASE_MAX, rilapitypes/RIL_CALLHANDOVERPHASE_COMPLETED, netvista.rilcallhandoverphase_2, rilapitypes/RIL_CALLHANDOVERPHASE_FAILED, RILCALLHANDOVERPHASE enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILCALLHANDOVERPHASE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

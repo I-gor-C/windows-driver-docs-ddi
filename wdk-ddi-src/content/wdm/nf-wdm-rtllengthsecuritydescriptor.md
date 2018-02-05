@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e06888eb-2ced-46c0-bdbf-3bad57020bf7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlLengthSecurityDescriptor, RtlLengthSecurityDescriptor routine [Kernel-Mode Driver Architecture], kernel.rtllengthsecuritydescriptor, k109_ea245194-f36b-4b47-9d81-2d72fc19d5bc.xml, RtlLengthSecurityDescriptor
+ms.keywords : k109_ea245194-f36b-4b47-9d81-2d72fc19d5bc.xml, RtlLengthSecurityDescriptor, wdm/RtlLengthSecurityDescriptor, kernel.rtllengthsecuritydescriptor, RtlLengthSecurityDescriptor routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,24 +66,22 @@ Pointer to a <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+
 <a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 
 <a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
-
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
  
 

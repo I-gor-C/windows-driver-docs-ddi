@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : d7abe2aa-a33c-4184-a850-d0efa1e99221
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint2, debugger.getpasscount, GetPassCount method [Windows Debugging], IDebugBreakpoint2 interface, GetPassCount, IDebugBreakpoint interface [Windows Debugging], GetPassCount method, IDebugBreakpoint2 interface [Windows Debugging], GetPassCount method, IDebugBreakpoint2::GetPassCount, GetPassCount method [Windows Debugging], GetPassCount method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint2::GetPassCount, dbgeng/IDebugBreakpoint::GetPassCount, ComOther_bf916108-efd7-436f-a89e-a26826e2e258.xml, IDebugBreakpoint::GetPassCount
+ms.keywords : GetPassCount method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::GetPassCount, dbgeng/IDebugBreakpoint::GetPassCount, IDebugBreakpoint2, IDebugBreakpoint::GetPassCount, GetPassCount method [Windows Debugging], IDebugBreakpoint interface, GetPassCount method [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], GetPassCount method, IDebugBreakpoint2::GetPassCount, GetPassCount, ComOther_bf916108-efd7-436f-a89e-a26826e2e258.xml, IDebugBreakpoint interface [Windows Debugging], GetPassCount method, debugger.getpasscount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -94,11 +94,6 @@ For more information about breakpoint properties, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

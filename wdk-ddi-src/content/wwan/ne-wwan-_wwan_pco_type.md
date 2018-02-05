@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0AD10F14-EBDB-45F8-A435-1D0A6D6FEFFF
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanPcoTypeComplete, wwan/WwanPcoTypeComplete, wwan/WWAN_PCO_TYPE, _WWAN_PCO_TYPE, *PWWAN_PCO_TYPE, WWAN_PCO_TYPE, wwan/WwanPcoTypePartial, WWAN_PCO_TYPE enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_pco_type, WwanPcoTypePartial
+ms.keywords : WWAN_PCO_TYPE, wwan/WwanPcoTypeComplete, WWAN_PCO_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanPcoTypePartial, WwanPcoTypeComplete, _WWAN_PCO_TYPE, *PWWAN_PCO_TYPE, netvista.wwan_pco_type, wwan/WWAN_PCO_TYPE, wwan/WwanPcoTypePartial
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -82,16 +82,14 @@ Currently, in Windows 10, version 1709, some modems can only pass up operator sp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-">MB Protocol Configuration Operations (PCO)</a>
-
 <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a>
+
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-">MB Protocol Configuration Operations (PCO)</a>
 
  
 

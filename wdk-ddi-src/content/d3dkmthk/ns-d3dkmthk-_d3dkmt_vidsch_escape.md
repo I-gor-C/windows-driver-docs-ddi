@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8e19e8a1-0cb6-4d57-862c-2e3a785b949b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_VIDSCH_ESCAPE, display.d3dkmt_vidsch_escape, D3DKMT_VIDSCH_ESCAPE structure [Display Devices], d3dkmthk/D3DKMT_VIDSCH_ESCAPE, OpenGL_Structs_d668addb-7c4a-4f07-bf9b-71ccd4a216fa.xml, D3DKMT_VIDSCH_ESCAPE"
+ms.keywords : D3DKMT_VIDSCH_ESCAPE structure [Display Devices], OpenGL_Structs_d668addb-7c4a-4f07-bf9b-71ccd4a216fa.xml, _D3DKMT_VIDSCH_ESCAPE, d3dkmthk/D3DKMT_VIDSCH_ESCAPE, D3DKMT_VIDSCH_ESCAPE, display.d3dkmt_vidsch_escape
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,18 +76,16 @@ The escape type, of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapety
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
-
 <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
+
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
 
  
 

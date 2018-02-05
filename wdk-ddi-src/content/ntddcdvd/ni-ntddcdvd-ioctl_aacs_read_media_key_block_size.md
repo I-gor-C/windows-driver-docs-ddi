@@ -76,6 +76,4 @@ The IOCTL_AACS_READ_MEDIA_KEY_BLOCK_SIZE request corresponds to one of the steps
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

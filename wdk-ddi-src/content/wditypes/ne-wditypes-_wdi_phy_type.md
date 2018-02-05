@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BDA90056-6DAA-4FC8-82EC-3062087E02C4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WDI_PHY_TYPE_ANY, netvista.wdi_phy_type, WDI_PHY_TYPE_UNKNOWN, wditypes/WDI_PHY_TYPE_VHT, WDI_PHY_TYPE_IHV_END, wditypes/WDI_PHY_TYPE_FHSS, wditypes/WDI_PHY_TYPE_DSSS, WDI_PHY_TYPE_DSSS, wditypes/WDI_PHY_TYPE_ANY, wditypes/WDI_PHY_TYPE_OFDM, WDI_PHY_TYPE, WDI_PHY_TYPE_DMG, _WDI_PHY_TYPE, WDI_PHY_TYPE_HT, wditypes/WDI_PHY_TYPE_IHV_START, WDI_PHY_TYPE_OFDM, WDI_PHY_TYPE_FHSS, WDI_PHY_TYPE_ERP, WDI_PHY_TYPE enumeration [Network Drivers Starting with Windows Vista], wditypes/WDI_PHY_TYPE_HT, WDI_PHY_TYPE_IHV_START, wditypes/WDI_PHY_TYPE_UNKNOWN, wditypes/WDI_PHY_TYPE_DMG, wditypes/WDI_PHY_TYPE, wditypes/WDI_PHY_TYPE_IRBASEBAND, WDI_PHY_TYPE_VHT, wditypes/WDI_PHY_TYPE_ERP, wditypes/WDI_PHY_TYPE_IHV_END, netvista.wifi_phy_type, WDI_PHY_TYPE_HRDSSS, WDI_PHY_TYPE_IRBASEBAND, wditypes/WDI_PHY_TYPE_HRDSSS
+ms.keywords : wditypes/WDI_PHY_TYPE_HRDSSS, wditypes/WDI_PHY_TYPE_IRBASEBAND, wditypes/WDI_PHY_TYPE, netvista.wifi_phy_type, wditypes/WDI_PHY_TYPE_DMG, WDI_PHY_TYPE_DSSS, WDI_PHY_TYPE_OFDM, WDI_PHY_TYPE_HRDSSS, wditypes/WDI_PHY_TYPE_OFDM, WDI_PHY_TYPE_FHSS, WDI_PHY_TYPE_ERP, WDI_PHY_TYPE_DMG, WDI_PHY_TYPE_IHV_END, wditypes/WDI_PHY_TYPE_ANY, WDI_PHY_TYPE_IHV_START, WDI_PHY_TYPE enumeration [Network Drivers Starting with Windows Vista], _WDI_PHY_TYPE, wditypes/WDI_PHY_TYPE_UNKNOWN, WDI_PHY_TYPE, WDI_PHY_TYPE_IRBASEBAND, wditypes/WDI_PHY_TYPE_HT, WDI_PHY_TYPE_VHT, WDI_PHY_TYPE_ANY, wditypes/WDI_PHY_TYPE_DSSS, wditypes/WDI_PHY_TYPE_IHV_END, wditypes/WDI_PHY_TYPE_FHSS, wditypes/WDI_PHY_TYPE_ERP, wditypes/WDI_PHY_TYPE_IHV_START, WDI_PHY_TYPE_UNKNOWN, WDI_PHY_TYPE_HT, wditypes/WDI_PHY_TYPE_VHT, netvista.wdi_phy_type
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -137,7 +137,5 @@ Specifies an 802.11ad PHY.</td>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

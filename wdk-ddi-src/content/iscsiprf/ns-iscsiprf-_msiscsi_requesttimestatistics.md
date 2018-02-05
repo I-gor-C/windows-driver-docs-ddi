@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : fb884cff-dedb-44cf-b9ea-306bfa66b06f
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : MSiSCSI_RequestTimeStatistics structure [Storage Devices], *PMSiSCSI_RequestTimeStatistics, PMSiSCSI_RequestTimeStatistics structure pointer [Storage Devices], iscsiprf/MSiSCSI_RequestTimeStatistics, PMSiSCSI_RequestTimeStatistics, iscsiprf/PMSiSCSI_RequestTimeStatistics, _MSiSCSI_RequestTimeStatistics, storage.msiscsi_requesttimestatistics, MSiSCSI_RequestTimeStatistics, structs-iSCSI_32f6d3e4-d3d4-431d-aff0-f956aa2c1594.xml
+ms.keywords : MSiSCSI_RequestTimeStatistics structure [Storage Devices], *PMSiSCSI_RequestTimeStatistics, structs-iSCSI_32f6d3e4-d3d4-431d-aff0-f956aa2c1594.xml, storage.msiscsi_requesttimestatistics, PMSiSCSI_RequestTimeStatistics, _MSiSCSI_RequestTimeStatistics, iscsiprf/PMSiSCSI_RequestTimeStatistics, iscsiprf/MSiSCSI_RequestTimeStatistics, PMSiSCSI_RequestTimeStatistics structure pointer [Storage Devices], MSiSCSI_RequestTimeStatistics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,6 @@ It is optional that you implement this class.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiprf.h (include Iscsiprf.h) |
 
 ## See Also

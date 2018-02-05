@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2d246109-839d-46fd-9898-9e059b803790
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks/KSEVENT_ENTRY, *PKSEVENT_ENTRY, KSEVENT_ENTRY structure [Streaming Media Devices], _KSEVENT_ENTRY, stream.ksevent_entry, KSEVENT_ENTRY, ks-struct_1c40526b-bc37-4f6b-a1e1-b0e710238156.xml
+ms.keywords : ks/KSEVENT_ENTRY, KSEVENT_ENTRY, _KSEVENT_ENTRY, *PKSEVENT_ENTRY, stream.ksevent_entry, KSEVENT_ENTRY structure [Streaming Media Devices], ks-struct_1c40526b-bc37-4f6b-a1e1-b0e710238156.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSEVENT_ENTRY, KSEVENT_ENTRY"
+req.typenames : KSEVENT_ENTRY, *PKSEVENT_ENTRY
 ---
 
 # _KSEVENT_ENTRY structure
@@ -72,7 +72,4 @@ For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

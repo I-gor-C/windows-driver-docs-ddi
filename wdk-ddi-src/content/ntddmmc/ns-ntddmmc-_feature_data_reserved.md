@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 686bc6e0-7455-4b86-93ce-09b7c7d60240
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : FEATURE_DATA_RESERVED, storage.feature_data_reserved, PFEATURE_DATA_RESERVED structure pointer [Storage Devices], _FEATURE_DATA_RESERVED, *PFEATURE_DATA_RESERVED, ntddmmc/PFEATURE_DATA_RESERVED, ntddmmc/FEATURE_DATA_RESERVED, FEATURE_DATA_RESERVED structure [Storage Devices], structs-CD-ROM_4fc9f24f-2488-493d-8e63-2e4c8a3ab879.xml, PFEATURE_DATA_RESERVED
+ms.keywords : "_FEATURE_DATA_RESERVED, structs-CD-ROM_4fc9f24f-2488-493d-8e63-2e4c8a3ab879.xml, FEATURE_DATA_RESERVED structure [Storage Devices], PFEATURE_DATA_RESERVED, *PFEATURE_DATA_RESERVED, PFEATURE_DATA_RESERVED structure pointer [Storage Devices], FEATURE_DATA_RESERVED, ntddmmc/FEATURE_DATA_RESERVED, ntddmmc/PFEATURE_DATA_RESERVED, storage.feature_data_reserved"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FEATURE_DATA_RESERVED, *PFEATURE_DATA_RESERVED
+req.typenames : "*PFEATURE_DATA_RESERVED, FEATURE_DATA_RESERVED"
 ---
 
 # _FEATURE_DATA_RESERVED structure
@@ -66,9 +66,6 @@ You can use this structure to access the data of any feature structure as though
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

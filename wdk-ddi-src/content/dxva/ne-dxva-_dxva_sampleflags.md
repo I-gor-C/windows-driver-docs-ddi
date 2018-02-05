@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 24f77f16-e043-4d58-87ef-6c834e61cb5d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_SampleFlag_Palette_Changed, dxvaref_b74a9819-950e-40cc-bf3c-eebb797862f7.xml, DXVA_SampleFlags enumeration [Display Devices], DXVA_SampleFlag_DstRect_Changed, DXVA_SampleFlagsMask, dxva/DXVA_SampleFlagsMask, DXVA_SampleFlag_Palette_Changed, DXVA_SampleFlag_ColorData_Changed, dxva/DXVA_SampleFlag_DstRect_Changed, _DXVA_SampleFlags, dxva/DXVA_SampleFlags, DXVA_SampleFlags, display.dxva_sampleflags, dxva/DXVA_SampleFlag_SrcRect_Changed, DXVA_SampleFlag_SrcRect_Changed, dxva/DXVA_SampleFlag_ColorData_Changed
+ms.keywords : DXVA_SampleFlagsMask, dxva/DXVA_SampleFlagsMask, DXVA_SampleFlags, DXVA_SampleFlag_Palette_Changed, dxva/DXVA_SampleFlags, DXVA_SampleFlag_ColorData_Changed, dxvaref_b74a9819-950e-40cc-bf3c-eebb797862f7.xml, _DXVA_SampleFlags, dxva/DXVA_SampleFlag_DstRect_Changed, display.dxva_sampleflags, DXVA_SampleFlag_DstRect_Changed, DXVA_SampleFlag_SrcRect_Changed, DXVA_SampleFlags enumeration [Display Devices], dxva/DXVA_SampleFlag_Palette_Changed, dxva/DXVA_SampleFlag_SrcRect_Changed, dxva/DXVA_SampleFlag_ColorData_Changed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,18 +86,16 @@ typedef enum _DXVA_SampleFlags {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also
 
+<a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563927">DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx</a>
 
 <a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
-
-<a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
 
  
 

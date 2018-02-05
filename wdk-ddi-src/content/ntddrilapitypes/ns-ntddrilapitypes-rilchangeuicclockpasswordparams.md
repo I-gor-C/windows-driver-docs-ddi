@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 00e2fe6f-fd8b-45d1-9fd2-d90c515c3571
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilchangeuicclockpasswordparams, *LPRILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista], RILCHANGEUICCLOCKPASSWORDPARAMS, ntddrilapitypes/RILCHANGEUICCLOCKPASSWORDPARAMS
+ms.keywords : ntddrilapitypes/RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS, netvista.rilchangeuicclockpasswordparams, RILCHANGEUICCLOCKPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista], RILCHANGEUICCLOCKPASSWORDPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ typedef struct _RILCHANGEUICCLOCKPASSWORDPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 19f387d3-6c00-4c71-8114-61c53654613c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pushentrylist, k109_17626baa-0fb7-4492-9e9c-a25b78b808fb.xml, wdm/PushEntryList, PushEntryList routine [Kernel-Mode Driver Architecture], PushEntryList
+ms.keywords : PushEntryList, k109_17626baa-0fb7-4492-9e9c-a25b78b808fb.xml, kernel.pushentrylist, PushEntryList routine [Kernel-Mode Driver Architecture], wdm/PushEntryList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,11 @@ Callers of <b>PushEntryList</b> can be running at any IRQL. If <b>PushEntryList<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

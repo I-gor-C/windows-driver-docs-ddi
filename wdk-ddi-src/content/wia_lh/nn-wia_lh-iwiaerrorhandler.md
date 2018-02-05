@@ -59,8 +59,5 @@ The <b>IWiaErrorHandler</b> interface provides the <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wia_lh.h |
-| **DLL** |  |

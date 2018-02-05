@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 938eacb5-7939-43ed-a854-046708fc9c79
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugeventcallbackswide_systemerror, SystemError, IDebugEventCallbacksWide::SystemError, IDebugEventCallbacksWide interface [Windows Debugging], SystemError method, dbgeng/IDebugEventCallbacksWide::SystemError, SystemError method [Windows Debugging], IDebugEventCallbacksWide, SystemError method [Windows Debugging], IDebugEventCallbacksWide interface
+ms.keywords : IDebugEventCallbacksWide, dbgeng/IDebugEventCallbacksWide::SystemError, SystemError method [Windows Debugging], debugger.idebugeventcallbackswide_systemerror, IDebugEventCallbacksWide interface [Windows Debugging], SystemError method, SystemError method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide::SystemError, SystemError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,11 +75,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0a60001b-5fa9-4f25-a92f-3634e2a50e36
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rildialparams_v2, RILDIALPARAMS, RILDIALPARAMS_V2 structure [Network Drivers Starting with Windows Vista], *LPRILDIALPARAMS_V2, RILDIALPARAMS_V2, ntddrilapitypes/RILDIALPARAMS_V2, *LPRILDIALPARAMS
+ms.keywords : RILDIALPARAMS_V2, netvista.rildialparams_v2, RILDIALPARAMS_V2 structure [Network Drivers Starting with Windows Vista], *LPRILDIALPARAMS, RILDIALPARAMS, *LPRILDIALPARAMS_V2, ntddrilapitypes/RILDIALPARAMS_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILDIALPARAMS, *LPRILDIALPARAMS_V2, *LPRILDIALPARAMS, RILDIALPARAMS_V2
+req.typenames : "*LPRILDIALPARAMS, RILDIALPARAMS_V2, RILDIALPARAMS, *LPRILDIALPARAMS_V2"
 ---
 
 # RILDIALPARAMS_V2 structure
@@ -84,7 +84,4 @@ typedef struct _RILDIALPARAMS_V2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

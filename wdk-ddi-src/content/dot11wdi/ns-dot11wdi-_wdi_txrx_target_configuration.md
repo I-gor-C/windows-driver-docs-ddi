@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5a2d8bdf-cfc2-4724-aab3-0277edb477e7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wifi_txrx_target_configuration, WDI_TXRX_TARGET_CONFIGURATION structure [Network Drivers Starting with Windows Vista], *PWDI_TXRX_TARGET_CONFIGURATION, PWDI_TXRX_TARGET_CONFIGURATION, PWDI_TXRX_TARGET_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], _WDI_TXRX_TARGET_CONFIGURATION, netvista.wdi_txrx_target_configuration, dot11wdi/PWDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION, dot11wdi/WDI_TXRX_TARGET_CONFIGURATION
+ms.keywords : dot11wdi/WDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION structure [Network Drivers Starting with Windows Vista], _WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION, PWDI_TXRX_TARGET_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], PWDI_TXRX_TARGET_CONFIGURATION, netvista.wifi_txrx_target_configuration, WDI_TXRX_TARGET_CONFIGURATION, dot11wdi/PWDI_TXRX_TARGET_CONFIGURATION, netvista.wdi_txrx_target_configuration
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TXRX_TARGET_CONFIGURATION, WDI_TXRX_TARGET_CONFIGURATION"
+req.typenames : WDI_TXRX_TARGET_CONFIGURATION, *PWDI_TXRX_TARGET_CONFIGURATION
 ---
 
 # _WDI_TXRX_TARGET_CONFIGURATION structure
@@ -70,7 +70,5 @@ Specifies the TXRX parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | dot11wdi.h |

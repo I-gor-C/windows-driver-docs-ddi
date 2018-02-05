@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2455d09a-608e-4529-9c27-ed760c7da675
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcNewInterruptSync, portcls/PcNewInterruptSync, PcNewInterruptSync function [Audio Devices], audpc-routines_97a60c6f-2dc1-48db-982a-996b5ab8d741.xml, audio.pcnewinterruptsync
+ms.keywords : audio.pcnewinterruptsync, audpc-routines_97a60c6f-2dc1-48db-982a-996b5ab8d741.xml, portcls/PcNewInterruptSync, PcNewInterruptSync function [Audio Devices], PcNewInterruptSync
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -128,22 +128,19 @@ The <i>OutInterruptSync</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parame
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in  Windows 2000. Available starting in  Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536988">IResourceList::NumberOfEntriesOfType</a>
-
-<a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 
  
 

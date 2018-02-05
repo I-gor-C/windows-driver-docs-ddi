@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f941bc28-f906-4399-be54-09e2bc12e443
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SetPresharedKeyForId_IN structure [Storage Devices], iscsiop/SetPresharedKeyForId_IN, _SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN, iscsiop/PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN, PSetPresharedKeyForId_IN, storage.setpresharedkeyforid_in, PSetPresharedKeyForId_IN structure pointer [Storage Devices], structs-iSCSI_610ad061-d9c5-4557-88c0-e7d9a20236a2.xml
+ms.keywords : "_SetPresharedKeyForId_IN, storage.setpresharedkeyforid_in, SetPresharedKeyForId_IN, PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN structure [Storage Devices], structs-iSCSI_610ad061-d9c5-4557-88c0-e7d9a20236a2.xml, iscsiop/SetPresharedKeyForId_IN, PSetPresharedKeyForId_IN structure pointer [Storage Devices], iscsiop/PSetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -132,18 +132,15 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
-
 <a href="..\iscsiop\ns-iscsiop-_setpresharedkeyforid_out.md">SetPresharedKeyForId_OUT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 
  
 

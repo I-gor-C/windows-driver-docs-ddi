@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 97a5c14f-949a-4455-9109-79355e5dec37
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iogetcurrentprocess, k104_f59c640e-e335-46e0-a6ca-2f672bb6fc35.xml, IoGetCurrentProcess, IoGetCurrentProcess routine [Kernel-Mode Driver Architecture], wdm/IoGetCurrentProcess
+ms.keywords : k104_f59c640e-e335-46e0-a6ca-2f672bb6fc35.xml, wdm/IoGetCurrentProcess, IoGetCurrentProcess routine [Kernel-Mode Driver Architecture], IoGetCurrentProcess, kernel.iogetcurrentprocess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,18 +64,16 @@ This routine is identical to <a href="https://msdn.microsoft.com/library/windows
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
 
  
 

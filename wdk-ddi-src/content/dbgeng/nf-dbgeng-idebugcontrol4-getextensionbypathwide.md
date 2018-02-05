@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 85257190-2b39-487d-ada6-4c8cd0b1450f
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], GetExtensionByPathWide method, GetExtensionByPathWide method [Windows Debugging], IDebugControl4 interface, debugger.getextensionbypathwide, IDebugControl4, dbgeng/IDebugControl4::GetExtensionByPathWide, IDebugControl4::GetExtensionByPathWide, GetExtensionByPathWide method [Windows Debugging], GetExtensionByPathWide
+ms.keywords : GetExtensionByPathWide method [Windows Debugging], debugger.getextensionbypathwide, GetExtensionByPathWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetExtensionByPathWide, dbgeng/IDebugControl4::GetExtensionByPathWide, IDebugControl4 interface [Windows Debugging], GetExtensionByPathWide method, IDebugControl4, GetExtensionByPathWide
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -92,14 +92,9 @@ For more information on using extension libraries, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

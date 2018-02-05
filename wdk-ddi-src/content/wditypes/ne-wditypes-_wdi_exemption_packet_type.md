@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7F584EBE-9ACB-4AC7-9472-34322F24EF74
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.wifi_exemption_packet_type, netvista.wdi_exemption_packet_type, WDI_EXEMPT_PACKET_TYPE_MULTICAST, WDI_EXEMPTION_PACKET_TYPE, WDI_EXEMPTION_PACKET_TYPE enumeration [Device and Driver Installation], WDI_EXEMPT_PACKET_TYPE_BOTH, WDI_EXEMPT_PACKET_TYPE_UNICAST, _WDI_EXEMPTION_PACKET_TYPE, wditypes/WDI_EXEMPT_PACKET_TYPE_BOTH, wditypes/WDI_EXEMPTION_PACKET_TYPE, wditypes/WDI_EXEMPT_PACKET_TYPE_MULTICAST, wditypes/WDI_EXEMPT_PACKET_TYPE_UNICAST
+ms.keywords : netvista.wifi_exemption_packet_type, WDI_EXEMPT_PACKET_TYPE_UNICAST, wditypes/WDI_EXEMPTION_PACKET_TYPE, _WDI_EXEMPTION_PACKET_TYPE, WDI_EXEMPTION_PACKET_TYPE enumeration [Device and Driver Installation], wditypes/WDI_EXEMPT_PACKET_TYPE_BOTH, WDI_EXEMPT_PACKET_TYPE_MULTICAST, WDI_EXEMPT_PACKET_TYPE_BOTH, WDI_EXEMPTION_PACKET_TYPE, netvista.wdi_exemption_packet_type, wditypes/WDI_EXEMPT_PACKET_TYPE_UNICAST, wditypes/WDI_EXEMPT_PACKET_TYPE_MULTICAST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,5 @@ typedef enum _WDI_EXEMPTION_PACKET_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | wditypes.hpp |

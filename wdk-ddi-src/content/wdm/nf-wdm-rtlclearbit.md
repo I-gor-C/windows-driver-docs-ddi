@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : bfc75a17-a0de-436e-aebf-902fd841871a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_f785121e-f076-4f31-90ab-4bec446e3cc9.xml, RtlClearBit, wdm/RtlClearBit, kernel.rtlclearbit, RtlClearBit routine [Kernel-Mode Driver Architecture]
+ms.keywords : wdm/RtlClearBit, RtlClearBit, k109_f785121e-f076-4f31-90ab-4bec446e3cc9.xml, kernel.rtlclearbit, RtlClearBit routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,20 +74,18 @@ Callers of <b>RtlClearBit</b> must be running at IRQL &lt;= APC_LEVEL if the mem
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of Windows. Available in Windows XP and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL (See Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+
+<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
 
  
 

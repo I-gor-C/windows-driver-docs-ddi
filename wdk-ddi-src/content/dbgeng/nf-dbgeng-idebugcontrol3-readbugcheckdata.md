@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3ede32f5-9671-4f38-a33f-96536300267b
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, dbgeng/IDebugControl3::ReadBugCheckData, dbgeng/IDebugControl2::ReadBugCheckData, IDebugControl3::ReadBugCheckData, ReadBugCheckData, ReadBugCheckData method [Windows Debugging], dbgeng/IDebugControl::ReadBugCheckData, ReadBugCheckData method [Windows Debugging], IDebugControl2 interface, debugger.readbugcheckdata, IDebugControl3 interface [Windows Debugging], ReadBugCheckData method, ReadBugCheckData method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], ReadBugCheckData method, IDebugControl2 interface [Windows Debugging], ReadBugCheckData method, IDebugControl2::ReadBugCheckData, IDebugControl_d96bd559-1a82-4d5d-8aa8-7a32242f2b68.xml, ReadBugCheckData method [Windows Debugging], IDebugControl interface, IDebugControl::ReadBugCheckData
+ms.keywords : ReadBugCheckData method [Windows Debugging], IDebugControl interface, ReadBugCheckData method [Windows Debugging], IDebugControl3 interface, IDebugControl::ReadBugCheckData, ReadBugCheckData method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::ReadBugCheckData, IDebugControl3 interface [Windows Debugging], ReadBugCheckData method, IDebugControl3::ReadBugCheckData, IDebugControl3, ReadBugCheckData, IDebugControl2 interface [Windows Debugging], ReadBugCheckData method, dbgeng/IDebugControl2::ReadBugCheckData, ReadBugCheckData method [Windows Debugging], debugger.readbugcheckdata, IDebugControl_d96bd559-1a82-4d5d-8aa8-7a32242f2b68.xml, IDebugControl interface [Windows Debugging], ReadBugCheckData method, IDebugControl2::ReadBugCheckData, dbgeng/IDebugControl::ReadBugCheckData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -108,11 +108,6 @@ For more information about bug checks, including a list of bug check codes and t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

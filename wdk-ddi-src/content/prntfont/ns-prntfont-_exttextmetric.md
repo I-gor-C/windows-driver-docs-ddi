@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d3d2397c-71c3-4904-a1ad-96a94698e50c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : EXTTEXTMETRIC, *PEXTTEXTMETRIC, _EXTTEXTMETRIC, prntfont/EXTTEXTMETRIC, EXTTEXTMETRIC structure [Print Devices], PEXTTEXTMETRIC structure pointer [Print Devices], PEXTTEXTMETRIC, prntfont/PEXTTEXTMETRIC, print_unidrv-pscript_fonts_8b9f67ef-9ab0-40e4-9474-c506de9c8824.xml, print.exttextmetric
+ms.keywords : print_unidrv-pscript_fonts_8b9f67ef-9ab0-40e4-9474-c506de9c8824.xml, EXTTEXTMETRIC structure [Print Devices], _EXTTEXTMETRIC, EXTTEXTMETRIC, print.exttextmetric, *PEXTTEXTMETRIC, prntfont/EXTTEXTMETRIC, prntfont/PEXTTEXTMETRIC, PEXTTEXTMETRIC, PEXTTEXTMETRIC structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -241,7 +241,4 @@ Specifies the height, in font units, of lowercase characters in the font. Typica
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |

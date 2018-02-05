@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e97006e1-5a18-4478-9cac-30eb70142fa7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsWriteRestartArea routine [Kernel-Mode Driver Architecture], kernel.clfswriterestartarea, wdm/ClfsWriteRestartArea, Clfs_b2bfac14-eb9c-4323-af79-ab8bebf06f79.xml, ClfsWriteRestartArea
+ms.keywords : ClfsWriteRestartArea routine [Kernel-Mode Driver Architecture], Clfs_b2bfac14-eb9c-4323-af79-ab8bebf06f79.xml, ClfsWriteRestartArea, kernel.clfswriterestartarea, wdm/ClfsWriteRestartArea
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -133,24 +133,22 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsadvancelogbase.md">ClfsAdvanceLogBase</a>
 
-<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
 
 <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
 
-<a href="..\wdm\nf-wdm-clfsadvancelogbase.md">ClfsAdvanceLogBase</a>
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
 
 <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
 

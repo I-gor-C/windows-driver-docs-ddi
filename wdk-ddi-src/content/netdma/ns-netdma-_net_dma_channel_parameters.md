@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 0d09a9e9-06c5-4026-9053-ac74a59509cc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NetDmaTransferStatusActive, NET_DMA_CHANNEL_PARAMETERS structure [Network Drivers Starting with Windows Vista], netdma/NET_DMA_CHANNEL_PARAMETERS, netvista.net_dma_channel_parameters, NetDmaTransferStatusIdle, *PNET_DMA_CHANNEL_PARAMETERS, netdma_ref_021ebc64-529e-4588-b5ff-83ed04aa9478.xml, NET_DMA_CHANNEL_PARAMETERS, netdma/PNET_DMA_CHANNEL_PARAMETERS, NetDmaTransferStatusHalted, _NET_DMA_CHANNEL_PARAMETERS, PNET_DMA_CHANNEL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NetDmaTransferStatusSuspend, NetDmaTransferStatusArmed, PNET_DMA_CHANNEL_PARAMETERS
+ms.keywords : NetDmaTransferStatusSuspend, NetDmaTransferStatusIdle, netvista.net_dma_channel_parameters, PNET_DMA_CHANNEL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNET_DMA_CHANNEL_PARAMETERS, netdma/NET_DMA_CHANNEL_PARAMETERS, NetDmaTransferStatusHalted, NET_DMA_CHANNEL_PARAMETERS, netdma/PNET_DMA_CHANNEL_PARAMETERS, PNET_DMA_CHANNEL_PARAMETERS, _NET_DMA_CHANNEL_PARAMETERS, NetDmaTransferStatusActive, NET_DMA_CHANNEL_PARAMETERS structure [Network Drivers Starting with Windows Vista], netdma_ref_021ebc64-529e-4588-b5ff-83ed04aa9478.xml, NetDmaTransferStatusArmed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_DMA_CHANNEL_PARAMETERS, NET_DMA_CHANNEL_PARAMETERS"
+req.typenames : NET_DMA_CHANNEL_PARAMETERS, *PNET_DMA_CHANNEL_PARAMETERS
 ---
 
 # _NET_DMA_CHANNEL_PARAMETERS structure
@@ -209,22 +209,20 @@ The NetDMA interface supplies a <b>NET_DMA_CHANNEL_PARAMETERS</b> structure at t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows Vista Windows Vista |
 | **Header** | netdma.h (include Netdma.h) |
 
 ## See Also
 
-<a href="..\netdma\nc-netdma-dma_resume_handler.md">ProviderResumeDma</a>
-
 <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
 
-<a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a>
+<a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
 
 <a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a>
 
-<a href="..\netdma\nc-netdma-dma_abort_handler.md">ProviderAbortDma</a>
+<a href="..\netdma\nc-netdma-dma_resume_handler.md">ProviderResumeDma</a>
+
+<a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a>
 
  
 

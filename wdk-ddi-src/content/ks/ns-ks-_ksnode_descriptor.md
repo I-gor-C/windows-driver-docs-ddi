@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : dfc5760f-fdd6-45f3-aeac-4406892e518a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksnode_descriptor, ks/KSNODE_DESCRIPTOR, _KSNODE_DESCRIPTOR, PKSNODE_DESCRIPTOR structure pointer [Streaming Media Devices], KSNODE_DESCRIPTOR structure [Streaming Media Devices], KSNODE_DESCRIPTOR, PKSNODE_DESCRIPTOR, *PKSNODE_DESCRIPTOR, avstruct_c4e79318-e112-4f57-ad6f-58e71ec53532.xml, ks/PKSNODE_DESCRIPTOR
+ms.keywords : avstruct_c4e79318-e112-4f57-ad6f-58e71ec53532.xml, KSNODE_DESCRIPTOR, stream.ksnode_descriptor, PKSNODE_DESCRIPTOR, ks/PKSNODE_DESCRIPTOR, _KSNODE_DESCRIPTOR, *PKSNODE_DESCRIPTOR, KSNODE_DESCRIPTOR structure [Streaming Media Devices], PKSNODE_DESCRIPTOR structure pointer [Streaming Media Devices], ks/KSNODE_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -57,9 +57,7 @@ typedef struct _KSNODE_DESCRIPTOR {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

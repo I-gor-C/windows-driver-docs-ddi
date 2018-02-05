@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4430E19F-C603-4C52-8FC8-C36197FD2996
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_DEFAULT_PROCESSOR, PNDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_PRIMARY_PROCESSOR, netvista.ndis_rss_set_indirection_entry, _NDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY, *PNDIS_RSS_SET_INDIRECTION_ENTRY, PNDIS_RSS_SET_INDIRECTION_ENTRY structure pointer [Network Drivers Starting with Windows Vista], NDIS_RSS_SET_INDIRECTION_ENTRY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRY, ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRY
+ms.keywords : ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY structure [Network Drivers Starting with Windows Vista], PNDIS_RSS_SET_INDIRECTION_ENTRY structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_rss_set_indirection_entry, NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_DEFAULT_PROCESSOR, NDIS_RSS_SET_INDIRECTION_ENTRY, *PNDIS_RSS_SET_INDIRECTION_ENTRY, PNDIS_RSS_SET_INDIRECTION_ENTRY, _NDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_PRIMARY_PROCESSOR, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -115,20 +115,18 @@ An NDIS_NIC_SWITCH_VPORT_ID value that represents the VPort identifier.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.80 and later. Supported in NDIS 6.80 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entries.md">NDIS_RSS_SET_INDIRECTION_ENTRIES</a>
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-rss-set-indirection-table-entries">OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES</a>
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-">Receive Side Scaling Version 2 (RSSv2)</a>
+
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
 
  
 

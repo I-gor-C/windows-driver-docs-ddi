@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : e8d563fe-937a-48cb-9c7b-f282d12a9fcf
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_lock, d3dumddi/D3DDDICB_LOCK, _D3DDDICB_LOCK, D3D_param_Structs_84ac7e9c-e228-4ace-9e1b-74af8c52af85.xml, D3DDDICB_LOCK, D3DDDICB_LOCK structure [Display Devices]
+ms.keywords : display.d3dddicb_lock, D3DDDICB_LOCK, d3dumddi/D3DDDICB_LOCK, _D3DDDICB_LOCK, D3DDDICB_LOCK structure [Display Devices], D3D_param_Structs_84ac7e9c-e228-4ace-9e1b-74af8c52af85.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -97,9 +97,7 @@ If the <b>Discard</b> bit-field flag is set in the <b>Flags</b> member, the vide
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

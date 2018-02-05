@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 932e5520-0ebf-4cfa-893a-a7eb969cb697
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : POIEXT, POIEXT structure pointer [Print Devices], *POIEXT, OIEXT structure [Print Devices], cpsuifnc_3abbb233-5393-4e23-a206-0474cfd6d7f1.xml, print.oiext, compstui/OIEXT, OIEXT, compstui/POIEXT, _OIEXT
+ms.keywords : POIEXT structure pointer [Print Devices], compstui/POIEXT, OIEXT, *POIEXT, print.oiext, cpsuifnc_3abbb233-5393-4e23-a206-0474cfd6d7f1.xml, compstui/OIEXT, _OIEXT, POIEXT, OIEXT structure [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,7 +99,4 @@ Pointer to a NULL-terminated string representing a path to a help file containin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

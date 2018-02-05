@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ee9405a6-7d56-4ca6-98c2-fd04addef8cd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VPPMT_NOPROTECTION, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE, D3DKMDT_VPPMT_MACROVISION_FULLSUPPORT, D3DKMDT_VPPMT_NOPROTECTION, display.d3dkmdt_vidpn_present_path_copyprotection_type, d3dkmdt/D3DKMDT_VPPMT_MACROVISION_FULLSUPPORT, DmEnums_48fdc75d-b1cb-4bc2-80b1-0aa79b16f480.xml, d3dkmdt/D3DKMDT_VPPMT_MACROVISION_APSTRIGGER, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE, D3DKMDT_VPPMT_UNINITIALIZED, d3dkmdt/D3DKMDT_VPPMT_UNINITIALIZED, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enumeration [Display Devices], _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE, D3DKMDT_VPPMT_MACROVISION_APSTRIGGER
+ms.keywords : d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE, display.d3dkmdt_vidpn_present_path_copyprotection_type, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE enumeration [Display Devices], D3DKMDT_VPPMT_NOPROTECTION, D3DKMDT_VPPMT_MACROVISION_FULLSUPPORT, D3DKMDT_VPPMT_UNINITIALIZED, d3dkmdt/D3DKMDT_VPPMT_UNINITIALIZED, d3dkmdt/D3DKMDT_VPPMT_NOPROTECTION, d3dkmdt/D3DKMDT_VPPMT_MACROVISION_FULLSUPPORT, _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_TYPE, DmEnums_48fdc75d-b1cb-4bc2-80b1-0aa79b16f480.xml, D3DKMDT_VPPMT_MACROVISION_APSTRIGGER, d3dkmdt/D3DKMDT_VPPMT_MACROVISION_APSTRIGGER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -83,7 +83,5 @@ The <b>CopyProtectionType</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dk
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |

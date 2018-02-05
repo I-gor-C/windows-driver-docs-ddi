@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 151e6456-4c1f-453b-9eb6-a139e0f93d6e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-CD-ROM_976446aa-d4d1-468b-a617-901d612b1a7e.xml, FEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC structure [Storage Devices], *PFEATURE_DATA_VENDOR_SPECIFIC, _FEATURE_DATA_VENDOR_SPECIFIC, PFEATURE_DATA_VENDOR_SPECIFIC structure pointer [Storage Devices], storage.feature_data_vendor_specific, ntddmmc/FEATURE_DATA_VENDOR_SPECIFIC, PFEATURE_DATA_VENDOR_SPECIFIC, ntddmmc/PFEATURE_DATA_VENDOR_SPECIFIC
+ms.keywords : "*PFEATURE_DATA_VENDOR_SPECIFIC, PFEATURE_DATA_VENDOR_SPECIFIC structure pointer [Storage Devices], PFEATURE_DATA_VENDOR_SPECIFIC, structs-CD-ROM_976446aa-d4d1-468b-a617-901d612b1a7e.xml, storage.feature_data_vendor_specific, ntddmmc/FEATURE_DATA_VENDOR_SPECIFIC, _FEATURE_DATA_VENDOR_SPECIFIC, ntddmmc/PFEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC structure [Storage Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,6 @@ You can use this structure to access the data of any feature structure as though
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

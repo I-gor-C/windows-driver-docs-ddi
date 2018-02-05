@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : e4ad1eac-1788-4dfe-9444-f40e0de156c4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlCaptureStackBackTrace, RtlCaptureStackBackTrace, RtlCaptureStackBackTrace routine [Installable File System Drivers], rtlref_c329ad74-ebb1-478d-a0d2-fd2ae2c8da2a.xml, ifsk.rtlcapturestackbacktrace
+ms.keywords : RtlCaptureStackBackTrace routine [Installable File System Drivers], ntifs/RtlCaptureStackBackTrace, ifsk.rtlcapturestackbacktrace, rtlref_c329ad74-ebb1-478d-a0d2-fd2ae2c8da2a.xml, RtlCaptureStackBackTrace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,11 +82,9 @@ The number of captured frames.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows XP. Available in starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib; OneCoreUAP.lib on Windows 10 |
+| **DLL** | NtDll.dll (user mode); NtosKrnl.exe (kernel mode) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |

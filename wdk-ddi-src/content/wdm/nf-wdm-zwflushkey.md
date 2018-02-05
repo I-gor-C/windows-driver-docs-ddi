@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c5250b7d-a996-4591-b289-cfb1af00e7da
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k111_2831bd9f-93c1-4377-9f0e-26d4ef20e095.xml, kernel.zwflushkey, wdm/NtFlushKey, NtFlushKey, ZwFlushKey, wdm/ZwFlushKey, ZwFlushKey routine [Kernel-Mode Driver Architecture]
+ms.keywords : NtFlushKey, ZwFlushKey, k111_2831bd9f-93c1-4377-9f0e-26d4ef20e095.xml, kernel.zwflushkey, wdm/ZwFlushKey, ZwFlushKey routine [Kernel-Mode Driver Architecture], wdm/NtFlushKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,24 +71,23 @@ You can flush changes made by <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlZwPassive, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
-
 <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 
 <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 
  
 

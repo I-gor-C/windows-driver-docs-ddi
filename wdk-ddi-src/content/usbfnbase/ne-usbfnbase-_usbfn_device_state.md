@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : B367D0F7-5026-4C88-B88A-69068F76B675
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbfnbase/UsbfnDeviceStateStateMaximum, *PUSBFN_DEVICE_STATE, USBFN_DEVICE_STATE, UsbfnDeviceStateDetached, usbfnbase/UsbfnDeviceStateConfigured, UsbfnDeviceStateDefault, UsbfnDeviceStateConfigured, buses.usbfn_device_state, UsbfnDeviceStateStateMaximum, usbfnbase/UsbfnDeviceStateAttached, usbfnbase/USBFN_DEVICE_STATE, usbfnbase/UsbfnDeviceStateDefault, USBFN_DEVICE_STATE enumeration [Buses], UsbfnDeviceStateAddressed, UsbfnDeviceStateMinimum, usbfnbase/UsbfnDeviceStateDetached, usbfnbase/UsbfnDeviceStateMinimum, UsbfnDeviceStateAttached, usbfnbase/UsbfnDeviceStateAddressed, usbfnbase/UsbfnDeviceStateSuspended, _USBFN_DEVICE_STATE, UsbfnDeviceStateSuspended
+ms.keywords : usbfnbase/UsbfnDeviceStateAddressed, usbfnbase/UsbfnDeviceStateStateMaximum, UsbfnDeviceStateMinimum, USBFN_DEVICE_STATE, UsbfnDeviceStateDefault, UsbfnDeviceStateDetached, usbfnbase/USBFN_DEVICE_STATE, usbfnbase/UsbfnDeviceStateMinimum, usbfnbase/UsbfnDeviceStateDetached, _USBFN_DEVICE_STATE, usbfnbase/UsbfnDeviceStateDefault, UsbfnDeviceStateStateMaximum, USBFN_DEVICE_STATE enumeration [Buses], *PUSBFN_DEVICE_STATE, UsbfnDeviceStateAttached, UsbfnDeviceStateConfigured, usbfnbase/UsbfnDeviceStateAttached, usbfnbase/UsbfnDeviceStateConfigured, buses.usbfn_device_state, UsbfnDeviceStateAddressed, UsbfnDeviceStateSuspended, usbfnbase/UsbfnDeviceStateSuspended
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBFN_DEVICE_STATE, USBFN_DEVICE_STATE"
+req.typenames : USBFN_DEVICE_STATE, *PUSBFN_DEVICE_STATE
 req.product : Windows 10 or later.
 ---
 
@@ -105,7 +105,4 @@ typedef enum _USBFN_DEVICE_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2e56d444-4248-4f00-b712-cbb3a4869302
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEGETFILEOBJECT, WdfDeviceGetFileObject method, wdf.wdfdevicegetfileobject, WdfDeviceGetFileObject, DFDeviceObjectGeneralRef_5aa48187-4a28-424c-9cd1-76cb5a33dc75.xml, kmdf.wdfdevicegetfileobject, wdfdevice/WdfDeviceGetFileObject
+ms.keywords : wdfdevice/WdfDeviceGetFileObject, WdfDeviceGetFileObject method, wdf.wdfdevicegetfileobject, DFDeviceObjectGeneralRef_5aa48187-4a28-424c-9cd1-76cb5a33dc75.xml, WdfDeviceGetFileObject, kmdf.wdfdevicegetfileobject, PFN_WDFDEVICEGETFILEOBJECT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,12 +78,10 @@ For more information about framework file objects, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

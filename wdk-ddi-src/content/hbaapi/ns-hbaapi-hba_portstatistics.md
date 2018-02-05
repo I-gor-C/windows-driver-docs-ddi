@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3a0d6633-b4a6-4864-96ae-4f91de11daa1
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : hbaapi/PHBA_PORTSTATISTICS, storage.hba_portstatistics, HBA_PORTSTATISTICS, HBA_PortStatistics, hbaapi/HBA_PortStatistics, PHBA_PORTSTATISTICS structure pointer [Storage Devices], HBA_PortStatistics structure [Storage Devices], HBA_PORTSTATISTICS structure [Storage Devices], *PSMHBA_FCPHYSTATISTICS, SMHBA_FCPHYSTATISTICS, structs-Fibre_4c6c7237-af5e-415a-a7db-db594b1a5968.xml, PHBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS
+ms.keywords : "*PHBA_PORTSTATISTICS, PHBA_PORTSTATISTICS, storage.hba_portstatistics, *PSMHBA_FCPHYSTATISTICS, hbaapi/PHBA_PORTSTATISTICS, PHBA_PORTSTATISTICS structure pointer [Storage Devices], hbaapi/HBA_PortStatistics, HBA_PORTSTATISTICS structure [Storage Devices], HBA_PORTSTATISTICS, HBA_PortStatistics, HBA_PortStatistics structure [Storage Devices], SMHBA_FCPHYSTATISTICS, structs-Fibre_4c6c7237-af5e-415a-a7db-db594b1a5968.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PHBA_PORTSTATISTICS, HBA_PORTSTATISTICS"
+req.typenames : HBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS
 ---
 
 # HBA_PortStatistics structure
@@ -129,9 +129,6 @@ Reports the number of fibre channel words transmitted for all protocols and clas
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also

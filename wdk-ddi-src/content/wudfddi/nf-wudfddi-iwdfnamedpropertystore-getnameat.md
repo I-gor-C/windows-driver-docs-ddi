@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f6ebf45b-b411-4684-b430-0b17a56ec0c0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : GetNameAt method, GetNameAt method, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore, UMDFPropertyStoreObjectRef_d7568b53-9673-4344-bbbc-100fc19aaba5.xml, IWDFNamedPropertyStore::GetNameAt, wudfddi/IWDFNamedPropertyStore::GetNameAt, wdf.iwdfnamedpropertystore_getnameat, IWDFNamedPropertyStore interface, GetNameAt method, GetNameAt, umdf.iwdfnamedpropertystore_getnameat
+ms.keywords : wudfddi/IWDFNamedPropertyStore::GetNameAt, GetNameAt, IWDFNamedPropertyStore interface, GetNameAt method, IWDFNamedPropertyStore, umdf.iwdfnamedpropertystore_getnameat, GetNameAt method, IWDFNamedPropertyStore interface, GetNameAt method, IWDFNamedPropertyStore::GetNameAt, UMDFPropertyStoreObjectRef_d7568b53-9673-4344-bbbc-100fc19aaba5.xml, wdf.iwdfnamedpropertystore_getnameat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,12 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

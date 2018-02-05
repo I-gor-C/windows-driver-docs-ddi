@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 63c33017-d827-4a8f-bb6f-fd13a2528e0c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeGetCurrentIrql, wdm/KeGetCurrentIrql, kernel.kegetcurrentirql, KeGetCurrentIrql routine [Kernel-Mode Driver Architecture], k105_04c845e8-a239-4400-8a5f-15996754494a.xml
+ms.keywords : wdm/KeGetCurrentIrql, KeGetCurrentIrql routine [Kernel-Mode Driver Architecture], kernel.kegetcurrentirql, k105_04c845e8-a239-4400-8a5f-15996754494a.xml, KeGetCurrentIrql
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,12 +61,10 @@ This function has no parameters.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Hal.lib |
 | **IRQL** | Any level |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 

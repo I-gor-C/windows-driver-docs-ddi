@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 080ed6f9-2a66-4946-9497-3a0b0bca8c6d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IsReparseTagValid, ntifs/IsReparseTagValid, IsReparseTagValid macro [Installable File System Drivers], ifsk.isreparsetagvalid, ioref_72128993-53a1-4e3e-a0e2-12378862ff25.xml
+ms.keywords : IsReparseTagValid macro [Installable File System Drivers], IsReparseTagValid, ntifs/IsReparseTagValid, ifsk.isreparsetagvalid, ioref_72128993-53a1-4e3e-a0e2-12378862ff25.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ntifs.h |

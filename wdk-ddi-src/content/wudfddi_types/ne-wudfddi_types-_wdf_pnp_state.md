@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f17a6d52-5f68-470c-9f45-6a175e0fbf01
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPnpStateMaximum, WdfPnpStateResourcesChanged, WdfPnpStateDontDisplayInUI, wudfddi_types/WdfPnpStateNotDisableable, WdfPnpStateDisabled, umdfstructs_5964ab34-28fb-410b-a863-1adc9e8eed03.xml, WdfPnpStateRemoved, _WDF_PNP_STATE, wdf.wdf_pnp_state, wudfddi_types/WdfPnpStateInvalid, wudfddi_types/WdfPnpStateDisabled, WDF_PNP_STATE enumeration, WdfPnpStateFailed, wudfddi_types/WdfPnpStateFailed, wudfddi_types/WdfPnpStateResourcesChanged, wudfddi_types/WdfPnpStateDontDisplayInUI, WdfPnpStateNotDisableable, umdf.wdf_pnp_state, wudfddi_types/WdfPnpStateMaximum, wudfddi_types/WdfPnpStateRemoved, WDF_PNP_STATE, wudfddi_types/WDF_PNP_STATE, WdfPnpStateInvalid
+ms.keywords : WdfPnpStateResourcesChanged, WDF_PNP_STATE enumeration, wudfddi_types/WdfPnpStateInvalid, umdf.wdf_pnp_state, wdf.wdf_pnp_state, WdfPnpStateRemoved, WdfPnpStateDisabled, WdfPnpStateDontDisplayInUI, wudfddi_types/WdfPnpStateDisabled, wudfddi_types/WdfPnpStateMaximum, wudfddi_types/WdfPnpStateResourcesChanged, wudfddi_types/WdfPnpStateNotDisableable, WdfPnpStateInvalid, umdfstructs_5964ab34-28fb-410b-a863-1adc9e8eed03.xml, WDF_PNP_STATE, WdfPnpStateMaximum, WdfPnpStateNotDisableable, _WDF_PNP_STATE, WdfPnpStateFailed, wudfddi_types/WdfPnpStateRemoved, wudfddi_types/WDF_PNP_STATE, wudfddi_types/WdfPnpStateDontDisplayInUI, wudfddi_types/WdfPnpStateFailed
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -110,16 +110,13 @@ A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
 
  
 

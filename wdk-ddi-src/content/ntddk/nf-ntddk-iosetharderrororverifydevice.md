@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 67f41d3e-d306-400b-9970-88c62f0f7a7f
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k104_60c33e0c-64d3-404b-85a3-57e7da269404.xml, kernel.iosetharderrororverifydevice, IoSetHardErrorOrVerifyDevice routine [Kernel-Mode Driver Architecture], IoSetHardErrorOrVerifyDevice, ntddk/IoSetHardErrorOrVerifyDevice
+ms.keywords : IoSetHardErrorOrVerifyDevice routine [Kernel-Mode Driver Architecture], ntddk/IoSetHardErrorOrVerifyDevice, IoSetHardErrorOrVerifyDevice, k104_60c33e0c-64d3-404b-85a3-57e7da269404.xml, kernel.iosetharderrororverifydevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,14 +77,12 @@ The IRP passed to <b>IoSetHardErrorOrVerifyDevice</b> must be associated with a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

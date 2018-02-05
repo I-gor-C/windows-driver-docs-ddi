@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cd50602a-c4aa-410b-9ed6-56d7237571cd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDI_OPENALLOCATIONINFO, d3dukmdt/D3DDDI_OPENALLOCATIONINFO, display.d3dddi_openallocationinfo, D3D_other_Structs_cfb185b4-cc7d-4c1a-9e76-6032816feab0.xml, D3DDDI_OPENALLOCATIONINFO structure [Display Devices], D3DDDI_OPENALLOCATIONINFO"
+ms.keywords : "_D3DDDI_OPENALLOCATIONINFO, d3dukmdt/D3DDDI_OPENALLOCATIONINFO, D3D_other_Structs_cfb185b4-cc7d-4c1a-9e76-6032816feab0.xml, D3DDDI_OPENALLOCATIONINFO, D3DDDI_OPENALLOCATIONINFO structure [Display Devices], display.d3dddi_openallocationinfo"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,5 @@ typedef struct _D3DDDI_OPENALLOCATIONINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dumddi.h, D3dkmddi.h) |

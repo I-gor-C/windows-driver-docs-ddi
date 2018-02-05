@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 050a4243-6ad8-4aa4-8ffb-40fe9fc07b51
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetCommandWide method [Windows Debugging], GetCommandWide method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2, debugger.getcommandwide, IDebugBreakpoint2 interface [Windows Debugging], GetCommandWide method, GetCommandWide, IDebugBreakpoint2::GetCommandWide, dbgeng/IDebugBreakpoint2::GetCommandWide
+ms.keywords : IDebugBreakpoint2::GetCommandWide, GetCommandWide method [Windows Debugging], IDebugBreakpoint2, debugger.getcommandwide, GetCommandWide, GetCommandWide method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::GetCommandWide, IDebugBreakpoint2 interface [Windows Debugging], GetCommandWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -111,11 +111,6 @@ For more information about breakpoint properties, see <a href="https://msdn.micr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 594E0FF1-A965-4CE4-A2EA-C9098685FCED
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceConfigureWdmIrpDispatchCallback method, kmdf.wdfdeviceconfigurewdmirpdispatchcallback, wdf.wdfdeviceconfigurewdmirpdispatchcallback, WdfDeviceConfigureWdmIrpDispatchCallback, PFN_WDFDEVICECONFIGUREWDMIRPDISPATCHCALLBACK, wdfdevice/WdfDeviceConfigureWdmIrpDispatchCallback
+ms.keywords : wdfdevice/WdfDeviceConfigureWdmIrpDispatchCallback, PFN_WDFDEVICECONFIGUREWDMIRPDISPATCHCALLBACK, WdfDeviceConfigureWdmIrpDispatchCallback method, wdf.wdfdeviceconfigurewdmirpdispatchcallback, kmdf.wdfdeviceconfigurewdmirpdispatchcallback, WdfDeviceConfigureWdmIrpDispatchCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,12 +131,11 @@ A driver might call the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.17 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate |
 
@@ -144,9 +143,9 @@ A driver might call the <b>WdfDeviceConfigureWdmIrpDispatchCallback</b> method f
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirp.md">WdfDeviceWdmDispatchIrp</a>
-
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_dispatch.md">EvtDeviceWdmIrpDispatch</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirp.md">WdfDeviceWdmDispatchIrp</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 229B22AC-8252-4D94-BDB5-F1132BF4AE4C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbdevice_remote_wake_notification, usbdlib/REQUEST_REMOTE_WAKE_NOTIFICATION, *PREQUEST_REMOTE_WAKE_NOTIFICATION, REQUEST_REMOTE_WAKE_NOTIFICATION, usbdlib/PREQUEST_REMOTE_WAKE_NOTIFICATION, PREQUEST_REMOTE_WAKE_NOTIFICATION structure pointer [Buses], PREQUEST_REMOTE_WAKE_NOTIFICATION, _REQUEST_REMOTE_WAKE_NOTIFICATION, REQUEST_REMOTE_WAKE_NOTIFICATION structure [Buses]
+ms.keywords : usbdlib/PREQUEST_REMOTE_WAKE_NOTIFICATION, buses.usbdevice_remote_wake_notification, REQUEST_REMOTE_WAKE_NOTIFICATION structure [Buses], PREQUEST_REMOTE_WAKE_NOTIFICATION structure pointer [Buses], *PREQUEST_REMOTE_WAKE_NOTIFICATION, usbdlib/REQUEST_REMOTE_WAKE_NOTIFICATION, REQUEST_REMOTE_WAKE_NOTIFICATION, _REQUEST_REMOTE_WAKE_NOTIFICATION, PREQUEST_REMOTE_WAKE_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,18 +75,16 @@ The version of this structure. Set to 0.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | usbdlib.h |
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_request_remote_wake_notification.md">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a>
+<a href="https://msdn.microsoft.com/91F96D30-CD18-4DDC-BA5A-7BFFA8FBED9B">How to Implement Function Suspend in a Composite Driver</a>
 
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
 
-<a href="https://msdn.microsoft.com/91F96D30-CD18-4DDC-BA5A-7BFFA8FBED9B">How to Implement Function Suspend in a Composite Driver</a>
+<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_request_remote_wake_notification.md">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4215ca86-9ceb-451d-8e67-992a8a3f9bab
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IBidiRequestContainer::GetRequestCount method [Print Devices], IBidiRequestContainer interface, gdi.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, IBidiRequestContainer::IBidiRequestContainer::GetRequestCount, _win32_IBidiRequestContainer_GetRequestCount, print.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, IBidiRequestContainer::GetRequestCount method [Print Devices], GetRequestCount, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::GetRequestCount method, IBidiRequestContainer, IBidiRequestContainer::GetRequestCount, bidispl/IBidiRequestContainer::IBidiRequestContainer::GetRequestCount
+ms.keywords : gdi.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::GetRequestCount method, print.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, bidispl/IBidiRequestContainer::IBidiRequestContainer::GetRequestCount, IBidiRequestContainer::GetRequestCount method [Print Devices], IBidiRequestContainer interface, _win32_IBidiRequestContainer_GetRequestCount, IBidiRequestContainer::GetRequestCount method [Print Devices], GetRequestCount, IBidiRequestContainer::IBidiRequestContainer::GetRequestCount, IBidiRequestContainer, IBidiRequestContainer::GetRequestCount
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -105,20 +105,17 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Desktop |
 | **Header** | bidispl.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | bidispl.h |
+| **DLL** | Bidispl.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
-
 <a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a>
+
+<a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 206D74F6-09D5-4C04-8A0A-A7765E64BB27
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iosetlinkshareaccess, IoSetLinkShareAccess function [Kernel-Mode Driver Architecture], wdm/IoSetLinkShareAccess, IoSetLinkShareAccess
+ms.keywords : wdm/IoSetLinkShareAccess, kernel.iosetlinkshareaccess, IoSetLinkShareAccess, IoSetLinkShareAccess function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,22 +103,18 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ntoskrnl.lib |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-ioupdatelinkshareaccess.md">IoUpdateLinkShareAccess</a>
 
 <a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
 
 <a href="..\wdm\nf-wdm-ioremovelinkshareaccess.md">IoRemoveLinkShareAccess</a>
-
-<a href="..\wdm\nf-wdm-ioupdatelinkshareaccess.md">IoUpdateLinkShareAccess</a>
 
  
 

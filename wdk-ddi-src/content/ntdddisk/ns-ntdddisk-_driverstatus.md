@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : de97322f-a756-49a8-a6e6-dab42f278388
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntdddisk/DRIVERSTATUS, *PDRIVERSTATUS, PDRIVERSTATUS, DRIVERSTATUS structure [Storage Devices], PDRIVERSTATUS structure pointer [Storage Devices], _DRIVERSTATUS, storage.driverstatus, ntdddisk/PDRIVERSTATUS, structs-IDE_e49310ff-1d3c-44d5-a997-08b8f500ed13.xml, LPDRIVERSTATUS, ntdddisk/LPDRIVERSTATUS, LPDRIVERSTATUS structure pointer [Storage Devices], DRIVERSTATUS, *LPDRIVERSTATUS
+ms.keywords : DRIVERSTATUS, PDRIVERSTATUS, LPDRIVERSTATUS, LPDRIVERSTATUS structure pointer [Storage Devices], DRIVERSTATUS structure [Storage Devices], _DRIVERSTATUS, *LPDRIVERSTATUS, ntdddisk/DRIVERSTATUS, *PDRIVERSTATUS, ntdddisk/PDRIVERSTATUS, storage.driverstatus, structs-IDE_e49310ff-1d3c-44d5-a997-08b8f500ed13.xml, PDRIVERSTATUS structure pointer [Storage Devices], ntdddisk/LPDRIVERSTATUS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DRIVERSTATUS, *PDRIVERSTATUS, *LPDRIVERSTATUS
+req.typenames : DRIVERSTATUS, *LPDRIVERSTATUS, *PDRIVERSTATUS
 ---
 
 # _DRIVERSTATUS structure
@@ -74,16 +74,13 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566206">SMART_SEND_DRIVE_COMMAND</a>
+
+<a href="..\ntdddisk\ns-ntdddisk-_sendcmdoutparams.md">SENDCMDOUTPARAMS</a>
 
  
 

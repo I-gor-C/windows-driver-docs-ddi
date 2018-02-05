@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 8e56ef0a-c652-4fca-ad87-4a0495c8de2e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : BIDI_RESPONSE_DATA, PBIDI_RESPONSE_DATA structure pointer [Print Devices], _BIDI_RESPONSE_DATA, spoolfnc_eb6aa91d-8fbc-4079-a8b8-57d5c3ff7abf.xml, LPBIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA structure [Print Devices], print.bidi_response_data, winspool/LPBIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA structure pointer [Print Devices], winspool/BIDI_RESPONSE_DATA, winspool/PBIDI_RESPONSE_DATA, PBIDI_RESPONSE_DATA
+ms.keywords : winspool/PBIDI_RESPONSE_DATA, spoolfnc_eb6aa91d-8fbc-4079-a8b8-57d5c3ff7abf.xml, _BIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA, winspool/BIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA structure pointer [Print Devices], winspool/LPBIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA, print.bidi_response_data, PBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA structure [Print Devices], PBIDI_RESPONSE_DATA structure pointer [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA
+req.typenames : "*PBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA"
 req.product : Windows 10 or later.
 ---
 
@@ -79,9 +79,7 @@ When the bidi action is BIDI_ACTION_GETALL, the <b>dwReqNumber</b> member holds 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This structure is available in Windows XP and later operating systems. This structure is available in Windows XP and later operating systems. |
 | **Header** | winspool.h (include Winspool.h) |
 
 ## See Also

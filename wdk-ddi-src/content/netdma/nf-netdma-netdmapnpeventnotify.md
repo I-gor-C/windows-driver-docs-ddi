@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : a0f0fdbc-089c-4bfb-ba5f-eaff6042621c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NetDmaPnPEventNotify function [Network Drivers Starting with Windows Vista], netdma/NetDmaPnPEventNotify, netvista.netdmapnpeventnotify, NetDmaPnPEventNotify, netdma_ref_406452bc-e56a-47da-9e7a-09fb4aebe1eb.xml
+ms.keywords : netvista.netdmapnpeventnotify, NetDmaPnPEventNotify, netdma/NetDmaPnPEventNotify, NetDmaPnPEventNotify function [Network Drivers Starting with Windows Vista], netdma_ref_406452bc-e56a-47da-9e7a-09fb4aebe1eb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
+req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 
@@ -60,8 +60,8 @@ VOID NetDmaPnPEventNotify(
 
 A handle that identifies a DMA provider. A DMA provider driver receives this handle from the
      NetDMA interface in a call to the 
-     <mshelp:link keywords="netvista.netdmaregisterprovider" tabindex="0"><b>
-     NetDmaRegisterProvider</b></mshelp:link> function.
+     <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
+     NetDmaRegisterProvider</a> function.
 
 `PnPEvent`
 
@@ -91,20 +91,17 @@ A NetDMA provider driver calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. |
+| **Target Platform** | Universal |
 | **Header** | netdma.h (include Netdma.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">NET_DMA_PNP_NOTIFICATION</a>
-
 <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
+
+<a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">NET_DMA_PNP_NOTIFICATION</a>
 
  
 

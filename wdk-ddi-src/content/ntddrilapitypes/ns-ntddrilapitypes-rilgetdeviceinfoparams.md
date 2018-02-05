@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4cb3be01-7e74-4c98-9c4b-2e1c78d96001
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS structure [Network Drivers Starting with Windows Vista], *LPRILGETDEVICEINFOPARAMS, ntddrilapitypes/RILGETDEVICEINFOPARAMS, netvista.rilgetdeviceinfoparams
+ms.keywords : "*LPRILGETDEVICEINFOPARAMS, ntddrilapitypes/RILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS structure [Network Drivers Starting with Windows Vista], RILGETDEVICEINFOPARAMS, netvista.rilgetdeviceinfoparams"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS"
+req.typenames : RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS
 ---
 
 # RILGETDEVICEINFOPARAMS structure
@@ -64,7 +64,4 @@ typedef struct _RILGETDEVICEINFOPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

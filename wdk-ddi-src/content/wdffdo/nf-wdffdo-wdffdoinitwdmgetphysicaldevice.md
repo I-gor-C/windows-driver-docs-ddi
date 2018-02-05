@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : eba64244-50ff-4c59-a30f-46874c683e63
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFFDOINITWDMGETPHYSICALDEVICE, kmdf.wdffdoinitwdmgetphysicaldevice, WdfFdoInitWdmGetPhysicalDevice method, DFDeviceObjectFdoPdoRef_49386e60-3427-449c-8c36-fe2e8bc7fabb.xml, wdffdo/WdfFdoInitWdmGetPhysicalDevice, wdf.wdffdoinitwdmgetphysicaldevice, WdfFdoInitWdmGetPhysicalDevice
+ms.keywords : wdffdo/WdfFdoInitWdmGetPhysicalDevice, WdfFdoInitWdmGetPhysicalDevice method, wdf.wdffdoinitwdmgetphysicaldevice, DFDeviceObjectFdoPdoRef_49386e60-3427-449c-8c36-fe2e8bc7fabb.xml, kmdf.wdffdoinitwdmgetphysicaldevice, PFN_WDFFDOINITWDMGETPHYSICALDEVICE, WdfFdoInitWdmGetPhysicalDevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -73,11 +73,9 @@ For more information about the <b>WdfFdoInitWdmGetPhysicalDevice</b> method, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2 |

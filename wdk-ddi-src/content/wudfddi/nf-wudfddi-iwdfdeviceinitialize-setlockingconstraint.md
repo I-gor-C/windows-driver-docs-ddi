@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c0062ad4-6666-49db-9d53-70f2ed2353d1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : SetLockingConstraint, wdf.iwdfdeviceinitialize_setlockingconstraint, IWDFDeviceInitialize, SetLockingConstraint method, IWDFDeviceInitialize interface, wudfddi/IWDFDeviceInitialize::SetLockingConstraint, SetLockingConstraint method, IWDFDeviceInitialize::SetLockingConstraint, UMDFDeviceObjectRef_ec613925-df47-4231-8f53-3769df71f288.xml, umdf.iwdfdeviceinitialize_setlockingconstraint, IWDFDeviceInitialize interface, SetLockingConstraint method
+ms.keywords : IWDFDeviceInitialize, UMDFDeviceObjectRef_ec613925-df47-4231-8f53-3769df71f288.xml, SetLockingConstraint method, IWDFDeviceInitialize interface, umdf.iwdfdeviceinitialize_setlockingconstraint, IWDFDeviceInitialize::SetLockingConstraint, SetLockingConstraint method, wdf.iwdfdeviceinitialize_setlockingconstraint, SetLockingConstraint, IWDFDeviceInitialize interface, SetLockingConstraint method, wudfddi/IWDFDeviceInitialize::SetLockingConstraint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,20 +71,18 @@ The default value of the <i>LockType</i> parameter is <b>WdfDeviceLevel</b>, whi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

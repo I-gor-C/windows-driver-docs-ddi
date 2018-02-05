@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 59568338-6718-4f3e-bcf6-cd284e68e6af
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilprovisionstatus_2, *LPRILPROVISIONSTATUS, RILPROVISIONSTATUS structure [Network Drivers Starting with Windows Vista], RILPROVISIONSTATUS, rilapitypes/RILPROVISIONSTATUS
+ms.keywords : "*LPRILPROVISIONSTATUS, netvista.rilprovisionstatus_2, rilapitypes/RILPROVISIONSTATUS, RILPROVISIONSTATUS structure [Network Drivers Starting with Windows Vista], RILPROVISIONSTATUS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,4 @@ typedef struct _RILPROVISIONSTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

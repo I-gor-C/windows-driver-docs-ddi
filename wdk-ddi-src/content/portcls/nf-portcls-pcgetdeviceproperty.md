@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 75d66965-ab97-4f67-b62f-e7fedbf524a6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcGetDeviceProperty, audio.pcgetdeviceproperty, portcls/PcGetDeviceProperty, PcGetDeviceProperty function [Audio Devices], audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml
+ms.keywords : PcGetDeviceProperty function [Audio Devices], PcGetDeviceProperty, audio.pcgetdeviceproperty, audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml, portcls/PcGetDeviceProperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -132,20 +132,17 @@ Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the requ
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcGetDeviceProperty function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcGetDeviceProperty function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
-
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 
  
 

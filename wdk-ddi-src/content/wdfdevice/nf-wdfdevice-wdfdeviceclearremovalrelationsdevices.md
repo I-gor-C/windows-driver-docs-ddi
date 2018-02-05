@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c3ff7c9d-380e-4d66-88a4-aef7abe20c9d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_e2dc5cb6-4f45-441c-b242-5b67ea8fa381.xml, WdfDeviceClearRemovalRelationsDevices method, wdfdevice/WdfDeviceClearRemovalRelationsDevices, PFN_WDFDEVICECLEARREMOVALRELATIONSDEVICES, WdfDeviceClearRemovalRelationsDevices, kmdf.wdfdeviceclearremovalrelationsdevices, wdf.wdfdeviceclearremovalrelationsdevices
+ms.keywords : wdfdevice/WdfDeviceClearRemovalRelationsDevices, WdfDeviceClearRemovalRelationsDevices, PFN_WDFDEVICECLEARREMOVALRELATIONSDEVICES, wdf.wdfdeviceclearremovalrelationsdevices, WdfDeviceClearRemovalRelationsDevices method, DFDeviceObjectGeneralRef_e2dc5cb6-4f45-441c-b242-5b67ea8fa381.xml, kmdf.wdfdeviceclearremovalrelationsdevices
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,20 +70,18 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceaddremovalrelationsphysicaldevice.md">WdfDeviceAddRemovalRelationsPhysicalDevice</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceremoveremovalrelationsphysicaldevice.md">WdfDeviceRemoveRemovalRelationsPhysicalDevice</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceaddremovalrelationsphysicaldevice.md">WdfDeviceAddRemovalRelationsPhysicalDevice</a>
 
  
 

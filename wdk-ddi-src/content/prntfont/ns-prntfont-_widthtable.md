@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 6c7b35a2-f9fd-41a9-a353-ec8b78259bf0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WIDTHTABLE structure [Print Devices], PWIDTHTABLE structure pointer [Print Devices], _WIDTHTABLE, WIDTHTABLE, *PWIDTHTABLE, prntfont/PWIDTHTABLE, print_unidrv-pscript_fonts_a09173f6-51f7-4523-8270-a0406999f776.xml, prntfont/WIDTHTABLE, PWIDTHTABLE, print.widthtable
+ms.keywords : print.widthtable, prntfont/WIDTHTABLE, WIDTHTABLE, PWIDTHTABLE structure pointer [Print Devices], print_unidrv-pscript_fonts_a09173f6-51f7-4523-8270-a0406999f776.xml, *PWIDTHTABLE, PWIDTHTABLE, WIDTHTABLE structure [Print Devices], prntfont/PWIDTHTABLE, _WIDTHTABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,16 +72,13 @@ A .ufm file's WIDTHTABLE structure, which describes character widths, is accesse
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_widthrun.md">WIDTHRUN</a>
-
 <a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a>
+
+<a href="..\prntfont\ns-prntfont-_widthrun.md">WIDTHRUN</a>
 
  
 

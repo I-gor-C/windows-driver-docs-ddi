@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : C049A6BE-6E2B-46F2-B7CF-316E4CDB35E4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtSetLogFileSizeAsClient routine [Kernel-Mode Driver Architecture], kernel.clfsmgmtsetlogfilesizeasclient_, wdm/ClfsMgmtSetLogFileSizeAsClient, ClfsMgmtSetLogFileSizeAsClient
+ms.keywords : wdm/ClfsMgmtSetLogFileSizeAsClient, kernel.clfsmgmtsetlogfilesizeasclient_, ClfsMgmtSetLogFileSizeAsClient, ClfsMgmtSetLogFileSizeAsClient routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -165,14 +165,11 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
+| **DLL** | Clfs.sys |
 
 ## See Also
 

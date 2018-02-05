@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 89b7f66e-3a3a-4723-a409-3b3030c1a45b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_IDE_CONTROLLER_CONFIGURATION, irb/PIDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION, structs-ATA_c72d9d21-e06b-43e0-8854-8b682e2e0778.xml, PIDE_CONTROLLER_CONFIGURATION structure pointer [Storage Devices], IDE_CONTROLLER_CONFIGURATION, irb/IDE_CONTROLLER_CONFIGURATION, PIDE_CONTROLLER_CONFIGURATION, storage.ide_controller_configuration, IDE_CONTROLLER_CONFIGURATION structure [Storage Devices]"
+ms.keywords : structs-ATA_c72d9d21-e06b-43e0-8854-8b682e2e0778.xml, storage.ide_controller_configuration, IDE_CONTROLLER_CONFIGURATION structure [Storage Devices], irb/PIDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION, _IDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION, irb/IDE_CONTROLLER_CONFIGURATION, PIDE_CONTROLLER_CONFIGURATION structure pointer [Storage Devices], PIDE_CONTROLLER_CONFIGURATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -137,7 +137,4 @@ The port driver sets this field to indicate the version of the port driver. The 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |

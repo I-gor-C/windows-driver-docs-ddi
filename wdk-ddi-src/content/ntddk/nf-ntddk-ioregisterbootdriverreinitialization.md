@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : af1c1f4b-7710-4cf7-9596-32d11db98abb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioregisterbootdriverreinitialization, k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture], ntddk/IoRegisterBootDriverReinitialization, IoRegisterBootDriverReinitialization
+ms.keywords : kernel.ioregisterbootdriverreinitialization, IoRegisterBootDriverReinitialization, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture], k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, ntddk/IoRegisterBootDriverReinitialization
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,22 +84,21 @@ The <i>DriverEntry</i> routine can call <b>IoRegisterBootDriverReinitialization<
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntifs.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
-
 <a href="..\ntddk\nf-ntddk-ioregisterdriverreinitialization.md">IoRegisterDriverReinitialization</a>
 
 <a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a>
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
  
 

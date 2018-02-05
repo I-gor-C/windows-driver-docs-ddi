@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 52c62e52-3bf7-40eb-80ff-df14c50c86e1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/PFILE_ALLOCATION_INFORMATION, ntifs/FILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION, PFILE_ALLOCATION_INFORMATION, fileinformationstructures_79d60e3b-f403-46d8-b600-62aeddcb88e0.xml, ifsk.file_allocation_information, *PFILE_ALLOCATION_INFORMATION, PFILE_ALLOCATION_INFORMATION structure pointer [Installable File System Drivers], _FILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION structure [Installable File System Drivers]
+ms.keywords : ntifs/FILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION structure [Installable File System Drivers], _FILE_ALLOCATION_INFORMATION, fileinformationstructures_79d60e3b-f403-46d8-b600-62aeddcb88e0.xml, ntifs/PFILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION, *PFILE_ALLOCATION_INFORMATION, PFILE_ALLOCATION_INFORMATION structure pointer [Installable File System Drivers], PFILE_ALLOCATION_INFORMATION, ifsk.file_allocation_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -81,20 +81,17 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
-
-<a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
-
 <a href="..\ntddk\ns-ntddk-_file_end_of_file_information.md">FILE_END_OF_FILE_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
+
+<a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : c19c9396-bc24-4f4b-a0c9-f8de76a9c46b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisAcquireSpinLock, NdisAcquireSpinLock macro [Network Drivers Starting with Windows Vista], ndis/NdisAcquireSpinLock, ndis_spin_lock_ref_54c55d32-a190-4454-ad0d-670427754b8b.xml, netvista.ndisacquirespinlock
+ms.keywords : NdisAcquireSpinLock, ndis/NdisAcquireSpinLock, netvista.ndisacquirespinlock, ndis_spin_lock_ref_54c55d32-a190-4454-ad0d-670427754b8b.xml, NdisAcquireSpinLock macro [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -56,7 +56,7 @@ VOID NdisAcquireSpinLock(
 
 `_SpinLock`
 
-TBD
+Pointer to an opaque spin lock, already initialized by the caller.
 
 
 ## Return Value
@@ -89,50 +89,48 @@ A driver should never hold a spin lock for an extended period (more than a few i
 
 A miniport driver cannot use a spin lock to protect resources that its other functions share with the 
     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> and/or 
-    <mshelp:link keywords="netvista.miniportdisableinterruptex" tabindex="0"><i>
-    MiniportDisableInterruptEx</i></mshelp:link> functions. Instead, a miniport driver must call 
+    <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">
+    MiniportDisableInterruptEx</a> functions. Instead, a miniport driver must call 
     <b>NdisMSynchronizeWithInterruptEx</b> so that its 
-    <mshelp:link keywords="netvista.miniportsynchronizeinterrupt" tabindex="0"><i>
-    MiniportSynchronizeInterrupt</i></mshelp:link> function accesses such shared resources at the same DIRQL at which its
+    <a href="..\ndis\nc-ndis-miniport_synchronize_interrupt.md">
+    MiniportSynchronizeInterrupt</a> function accesses such shared resources at the same DIRQL at which its
     
     <i>MiniportInterrupt</i> and/or 
     <i>MiniportDisableInterruptEx</i> functions do.
 
 For more information about acquiring and releasing NDIS spin locks, see 
-    <mshelp:link keywords="netvista.synchronization_and_notification_in_network_drivers" tabindex="0">Synchronization
-    and Notification in Network Drivers</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/synchronization-and-notification-in-network-drivers">Synchronization
+    and Notification in Network Drivers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Synch_Function, SpinLock, SpinLockBalanced, SpinLockDpr, SpinLockDprRelease, SpinlockRelease |
 
 ## See Also
 
-<mshelp:link keywords="netvista.miniportsynchronizeinterrupt" tabindex="0"><i>
-   MiniportSynchronizeInterrupt</i></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
 
-<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
+<a href="..\ndis\nc-ndis-miniport_synchronize_interrupt.md">
+   MiniportSynchronizeInterrupt</a>
 
 <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
 
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nf-ndis-ndismsynchronizewithinterruptex.md">
+   NdisMSynchronizeWithInterruptEx</a>
 
 <a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
 
-<a href="..\ndis\nf-ndis-ndisreleasespinlock.md">NdisReleaseSpinLock</a>
+<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
 
-<mshelp:link keywords="netvista.ndismsynchronizewithinterruptex" tabindex="0"><b>
-   NdisMSynchronizeWithInterruptEx</b></mshelp:link>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 

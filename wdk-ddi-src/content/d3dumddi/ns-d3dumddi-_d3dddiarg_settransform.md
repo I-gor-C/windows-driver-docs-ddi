@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1bd5c22e-c4c1-4b0a-b5ed-76e17cbe1aee
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_SETTRANSFORM, _D3DDDIARG_SETTRANSFORM, D3DDDIARG_SETTRANSFORM, display.d3dddiarg_settransform, UMDisplayDriver_param_Structs_719de83f-0830-4b1a-aa72-e3f58553c733.xml, D3DDDIARG_SETTRANSFORM structure [Display Devices]
+ms.keywords : UMDisplayDriver_param_Structs_719de83f-0830-4b1a-aa72-e3f58553c733.xml, _D3DDDIARG_SETTRANSFORM, D3DDDIARG_SETTRANSFORM, D3DDDIARG_SETTRANSFORM structure [Display Devices], d3dumddi/D3DDDIARG_SETTRANSFORM, display.d3dddiarg_settransform
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -102,9 +102,7 @@ The Microsoft Direct3D runtime uses D3DDDIARG_SETTRANSFORM in a call to the user
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

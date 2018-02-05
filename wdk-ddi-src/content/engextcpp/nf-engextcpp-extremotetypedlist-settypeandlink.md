@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : f6e2d8e3-294d-45d8-8fc6-33af3a746244
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SetTypeAndLink method [Windows Debugging], ExtRemoteTypedList class, debugger.extremotetypedlist_settypeandlink, SetTypeAndLink, ExtRemoteTypedList::SetTypeAndLink, EngExtCpp_Ref_8867c503-5983-465c-bfb6-f13b21d325cc.xml, SetTypeAndLink method [Windows Debugging], ExtRemoteTypedList class [Windows Debugging], SetTypeAndLink method, ExtRemoteTypedList
+ms.keywords : SetTypeAndLink, ExtRemoteTypedList class [Windows Debugging], SetTypeAndLink method, ExtRemoteTypedList, EngExtCpp_Ref_8867c503-5983-465c-bfb6-f13b21d325cc.xml, SetTypeAndLink method [Windows Debugging], SetTypeAndLink method [Windows Debugging], ExtRemoteTypedList class, debugger.extremotetypedlist_settypeandlink, ExtRemoteTypedList::SetTypeAndLink
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -90,26 +90,21 @@ For more information about the SINGLE_LIST_ENTRY and LIST_ENTRY structures, see 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |
 
 ## See Also
+
+<a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set(bool)</a>
+
+<a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set(pcstr ulong64)</a>
 
 <a href="..\engextcpp\nl-engextcpp-extremotetypedlist.md">ExtRemoteTypedList</a>
 
 <a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set(pcstr ulong64 bool)</a>
 
-<a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set(pcstr ulong64)</a>
-
 <a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set(pcstr)</a>
-
-<a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set(bool)</a>
 
  
 

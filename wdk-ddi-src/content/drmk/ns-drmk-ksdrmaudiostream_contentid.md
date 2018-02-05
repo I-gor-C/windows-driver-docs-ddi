@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : d11be514-2a45-407e-884a-66f6f503f57a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSDRMAUDIOSTREAM_CONTENTID, drmk/KSDRMAUDIOSTREAM_CONTENTID, drmk/PKSDRMAUDIOSTREAM_CONTENTID, KSDRMAUDIOSTREAM_CONTENTID, PKSDRMAUDIOSTREAM_CONTENTID structure pointer [Audio Devices], *PKSDRMAUDIOSTREAM_CONTENTID, audio.ksdrmaudiostream_contentid, KSDRMAUDIOSTREAM_CONTENTID structure [Audio Devices], aud-prop_451e4ef3-53c7-4be2-a59c-efd34633c007.xml
+ms.keywords : audio.ksdrmaudiostream_contentid, KSDRMAUDIOSTREAM_CONTENTID, PKSDRMAUDIOSTREAM_CONTENTID structure pointer [Audio Devices], drmk/PKSDRMAUDIOSTREAM_CONTENTID, drmk/KSDRMAUDIOSTREAM_CONTENTID, aud-prop_451e4ef3-53c7-4be2-a59c-efd34633c007.xml, PKSDRMAUDIOSTREAM_CONTENTID, KSDRMAUDIOSTREAM_CONTENTID structure [Audio Devices], *PKSDRMAUDIOSTREAM_CONTENTID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ Specifies the DRM content rights assigned to the stream. This member is a pointe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | drmk.h (include Drmk.h) |
 
 ## See Also

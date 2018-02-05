@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : e5246411-aa43-436f-b5e7-d7305ce659c9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.oemcompression, printoem/OEMCompression, print_obsoletefunctions_e5318981-34d5-4d97-97fe-c0bdf9ca8f97.xml, OEMCompression function [Print Devices], OEMCompression
+ms.keywords : print_obsoletefunctions_e5318981-34d5-4d97-97fe-c0bdf9ca8f97.xml, OEMCompression, print.oemcompression, printoem/OEMCompression, OEMCompression function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1c8cbbdc-ac2e-462e-9d5c-484305a41302
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_setpixelshaderconst, d3dumddi/D3DDDIARG_SETPIXELSHADERCONST, UMDisplayDriver_param_Structs_b2bba0b4-f57a-48f6-a738-709fedfe678e.xml, D3DDDIARG_SETPIXELSHADERCONSTB, _D3DDDIARG_SETPIXELSHADERCONST, D3DDDIARG_SETPIXELSHADERCONST, D3DDDIARG_SETPIXELSHADERCONSTI, D3DDDIARG_SETPIXELSHADERCONST structure [Display Devices]
+ms.keywords : D3DDDIARG_SETPIXELSHADERCONST structure [Display Devices], D3DDDIARG_SETPIXELSHADERCONSTI, display.d3dddiarg_setpixelshaderconst, UMDisplayDriver_param_Structs_b2bba0b4-f57a-48f6-a738-709fedfe678e.xml, D3DDDIARG_SETPIXELSHADERCONST, _D3DDDIARG_SETPIXELSHADERCONST, D3DDDIARG_SETPIXELSHADERCONSTB, d3dumddi/D3DDDIARG_SETPIXELSHADERCONST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,16 +91,14 @@ typedef D3DDDIARG_SETPIXELSHADERCONST D3DDDIARG_SETPIXELSHADERCONSTB;</pre>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpixelshaderconst.md">SetPixelShaderConst</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpixelshaderconsti.md">SetPixelShaderConstI</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpixelshaderconst.md">SetPixelShaderConst</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setpixelshaderconstb.md">SetPixelShaderConstB</a>
 

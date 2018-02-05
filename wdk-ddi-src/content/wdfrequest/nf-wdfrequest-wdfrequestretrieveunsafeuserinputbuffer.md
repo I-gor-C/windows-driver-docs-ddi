@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0a5e141d-2ef5-482c-8470-560411241510
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestretrieveunsafeuserinputbuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSERINPUTBUFFER, DFRequestObjectRef_0ac5a2ff-74b6-4e9c-9a3e-0038c3e1420a.xml, kmdf.wdfrequestretrieveunsafeuserinputbuffer, wdfrequest/WdfRequestRetrieveUnsafeUserInputBuffer, WdfRequestRetrieveUnsafeUserInputBuffer method, WdfRequestRetrieveUnsafeUserInputBuffer
+ms.keywords : WdfRequestRetrieveUnsafeUserInputBuffer, wdf.wdfrequestretrieveunsafeuserinputbuffer, kmdf.wdfrequestretrieveunsafeuserinputbuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSERINPUTBUFFER, WdfRequestRetrieveUnsafeUserInputBuffer method, DFRequestObjectRef_0ac5a2ff-74b6-4e9c-9a3e-0038c3e1420a.xml, wdfrequest/WdfRequestRetrieveUnsafeUserInputBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -152,22 +152,20 @@ For more information about <b>WdfRequestRetrieveUnsafeUserInputBuffer</b>, see <
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedWrite, BufAfterReqCompletedWriteA, DriverCreate, InputBufferAPI, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforread.md">WdfRequestProbeAndLockUserBufferForRead</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuseroutputbuffer.md">WdfRequestRetrieveUnsafeUserOutputBuffer</a>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
 
  
 

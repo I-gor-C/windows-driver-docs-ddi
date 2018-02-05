@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1A1E2644-7411-4D69-8D45-B19D707221AB
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI_DDI_ARG_PRESENTSURFACE, DXGI_DDI_ARG_PRESENTSURFACE structure [Display Devices], display.dxgi_ddi_arg_presentsurface, DXGI_DDI_ARG_PRESENTSURFACE
+ms.keywords : DXGI_DDI_ARG_PRESENTSURFACE, DXGI_DDI_ARG_PRESENTSURFACE structure [Display Devices], display.dxgi_ddi_arg_presentsurface, dxgiddi/DXGI_DDI_ARG_PRESENTSURFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ The zero-based index into the resource, which the handle in the <b>hSurface</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |

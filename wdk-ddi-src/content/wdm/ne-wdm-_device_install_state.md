@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 82b702ae-ea62-4bc1-ad92-467eba027e3d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PDEVICE_INSTALL_STATE, sysenum_ba359e9d-17fd-43c7-8efd-ce6c61f46be6.xml, wdm/InstallStateFailedInstall, InstallStateInstalled, _DEVICE_INSTALL_STATE, DEVICE_INSTALL_STATE, wdm/InstallStateInstalled, InstallStateFailedInstall, PDEVICE_INSTALL_STATE, kernel.device_install_state, *PDEVICE_INSTALL_STATE, InstallStateNeedsReinstall, wdm/InstallStateNeedsReinstall, wdm/InstallStateFinishInstall, wdm/DEVICE_INSTALL_STATE, InstallStateFinishInstall, DEVICE_INSTALL_STATE enumeration [Kernel-Mode Driver Architecture], PDEVICE_INSTALL_STATE enumeration pointer [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.device_install_state, DEVICE_INSTALL_STATE, wdm/DEVICE_INSTALL_STATE, InstallStateInstalled, InstallStateNeedsReinstall, wdm/InstallStateNeedsReinstall, InstallStateFinishInstall, sysenum_ba359e9d-17fd-43c7-8efd-ce6c61f46be6.xml, _DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE, wdm/InstallStateFinishInstall, InstallStateFailedInstall, DEVICE_INSTALL_STATE enumeration [Kernel-Mode Driver Architecture], PDEVICE_INSTALL_STATE enumeration pointer [Kernel-Mode Driver Architecture], PDEVICE_INSTALL_STATE, wdm/PDEVICE_INSTALL_STATE, wdm/InstallStateFailedInstall, wdm/InstallStateInstalled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICE_INSTALL_STATE, DEVICE_INSTALL_STATE"
+req.typenames : DEVICE_INSTALL_STATE, *PDEVICE_INSTALL_STATE
 req.product : Windows 10 or later.
 ---
 
@@ -84,9 +84,7 @@ The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later versions of the Windows operating system. Available in Microsoft Windows XP and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h) |
 
 ## See Also

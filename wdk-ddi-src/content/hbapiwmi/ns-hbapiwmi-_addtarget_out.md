@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1e0f19df-1705-4a70-a47c-0569907330a4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-Fibre_b3dd963b-2fd1-4fbe-bfe3-b363a95f1a51.xml, *PAddTarget_OUT, _AddTarget_OUT, hbapiwmi/PAddTarget_OUT, PAddTarget_OUT, PAddTarget_OUT structure pointer [Storage Devices], AddTarget_OUT, storage.addtarget_out, AddTarget_OUT structure [Storage Devices], hbapiwmi/AddTarget_OUT
+ms.keywords : PAddTarget_OUT, *PAddTarget_OUT, hbapiwmi/AddTarget_OUT, storage.addtarget_out, _AddTarget_OUT, AddTarget_OUT structure [Storage Devices], structs-Fibre_b3dd963b-2fd1-4fbe-bfe3-b363a95f1a51.xml, AddTarget_OUT, hbapiwmi/PAddTarget_OUT, PAddTarget_OUT structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,6 @@ Contains the status of the operation. For a list of allowed values and their des
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

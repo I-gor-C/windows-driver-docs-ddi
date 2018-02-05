@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5bdd8542-e1ef-42ac-99d7-c004039d2f33
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILREMOVECALLFORWARDINGPARAMS, rilapitypes/RILREMOVECALLFORWARDINGPARAMS, netvista.rilremovecallforwardingparams_2, RILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : "*LPRILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilremovecallforwardingparams_2, rilapitypes/RILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,7 +70,4 @@ typedef struct _RILREMOVECALLFORWARDINGPARAMS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

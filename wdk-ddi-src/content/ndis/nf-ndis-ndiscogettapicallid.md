@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3cb47545-177f-46ef-aff6-33ad8c9a6974
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndiscogettapicallid, NdisCoGetTapiCallId, ndis/NdisCoGetTapiCallId, NdisCoGetTapiCallId function [Network Drivers Starting with Windows Vista], condis_protocol_ref_97e82564-7f8b-42ba-9eda-75842f326c52.xml
+ms.keywords : condis_protocol_ref_97e82564-7f8b-42ba-9eda-75842f326c52.xml, netvista.ndiscogettapicallid, ndis/NdisCoGetTapiCallId, NdisCoGetTapiCallId, NdisCoGetTapiCallId function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -129,8 +129,8 @@ The client creates a context for each VC that it manages. The client uses
     identifier to a TAPI application to identify each VC. Later, if a TAPI application passes one of these
     string identifiers down to the client in a VC-related operation, the client must pass this string
     identifier as a Unicode string in a call to 
-    <mshelp:link keywords="netvista.ndisclgetprotocolvccontextfromtapicallid" tabindex="0"><b>
-    NdisClGetProtocolVcContextFromTapiCallId</b></mshelp:link> to get back the correct context for the VC.
+    <a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
+    NdisClGetProtocolVcContextFromTapiCallId</a> to get back the correct context for the VC.
 
 For more information about the VAR_STRING structure, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564235">TAPI Objects</a>.
@@ -138,19 +138,17 @@ For more information about the VAR_STRING structure, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | Irql_Connection_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisclgetprotocolvccontextfromtapicallid" tabindex="0"><b>
-   NdisClGetProtocolVcContextFromTapiCallId</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
+   NdisClGetProtocolVcContextFromTapiCallId</a>
 
 <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 

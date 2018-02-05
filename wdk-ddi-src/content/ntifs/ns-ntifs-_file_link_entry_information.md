@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b42edb45-3f4f-4f65-aede-8f51149dda78
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PFILE_LINK_ENTRY_INFORMATION, PFILE_LINK_ENTRY_INFORMATION structure pointer [Installable File System Drivers], _FILE_LINK_ENTRY_INFORMATION, PFILE_LINK_ENTRY_INFORMATION, ntifs/FILE_LINK_ENTRY_INFORMATION, ntifs/PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION structure [Installable File System Drivers], ifsk.file_link_entry_information"
+ms.keywords : ifsk.file_link_entry_information, ntifs/PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION structure [Installable File System Drivers], _FILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION, *PFILE_LINK_ENTRY_INFORMATION, ntifs/FILE_LINK_ENTRY_INFORMATION, PFILE_LINK_ENTRY_INFORMATION, PFILE_LINK_ENTRY_INFORMATION structure pointer [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION"
+req.typenames : FILE_LINK_ENTRY_INFORMATION, *PFILE_LINK_ENTRY_INFORMATION
 ---
 
 # _FILE_LINK_ENTRY_INFORMATION structure
@@ -74,9 +74,7 @@ The ID of the parent directory of the link.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
 
 ## See Also

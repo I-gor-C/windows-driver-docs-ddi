@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 396aec33-b4b4-4b4e-9890-b4aa829c3bbd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : DumpTypeUndefined, DumpTypeHibernation, structs-filter_b7846186-0937-4996-984e-398636fc7b2f.xml, storage.filter_dump_type, *PFILTER_DUMP_TYPE, ntdddump/DumpTypeHibernation, ntdddump/DumpTypeCrashdump, PFILTER_DUMP_TYPE, ntdddump/PFILTER_DUMP_TYPE, ntdddump/DumpTypeUndefined, ntdddump/FILTER_DUMP_TYPE, _FILTER_DUMP_TYPE, DumpTypeCrashdump, PFILTER_DUMP_TYPE enumeration pointer [Storage Devices], FILTER_DUMP_TYPE enumeration [Storage Devices], FILTER_DUMP_TYPE
+ms.keywords : ntdddump/DumpTypeUndefined, FILTER_DUMP_TYPE enumeration [Storage Devices], ntdddump/PFILTER_DUMP_TYPE, structs-filter_b7846186-0937-4996-984e-398636fc7b2f.xml, ntdddump/FILTER_DUMP_TYPE, PFILTER_DUMP_TYPE, DumpTypeCrashdump, _FILTER_DUMP_TYPE, ntdddump/DumpTypeHibernation, PFILTER_DUMP_TYPE enumeration pointer [Storage Devices], *PFILTER_DUMP_TYPE, storage.filter_dump_type, DumpTypeUndefined, ntdddump/DumpTypeCrashdump, DumpTypeHibernation, FILTER_DUMP_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum _FILTER_DUMP_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista and Windows Server 2008. Available starting with Windows Vista and Windows Server 2008. |
 | **Header** | ntdddump.h (include Ntdddump.h) |

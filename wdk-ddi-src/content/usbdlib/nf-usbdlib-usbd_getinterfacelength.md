@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : bcfc2b11-d89c-40f8-95ce-07a599e2a2bb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbfunc_d462af93-f7ec-429f-9719-4b09af55236c.xml, USBD_GetInterfaceLength routine [Buses], USBD_GetInterfaceLength, buses.usbd_getinterfacelength, usbdlib/USBD_GetInterfaceLength
+ms.keywords : USBD_GetInterfaceLength routine [Buses], usbfunc_d462af93-f7ec-429f-9719-4b09af55236c.xml, buses.usbd_getinterfacelength, usbdlib/USBD_GetInterfaceLength, USBD_GetInterfaceLength
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -74,14 +74,10 @@ Callers can use this routine to obtain the length of an interface and associated
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h (include Usbdlib.h) |
-| **Library** |  |
+| **Library** | Usbd.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

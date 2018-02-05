@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 241525fd-c21b-4c24-91a0-6a79df4faea7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlAllocatePoolWithQuotaTag, fsrtlref_f4d15687-848c-4c31-8f30-48eb69498cc9.xml, FsRtlAllocatePoolWithQuotaTag routine [Installable File System Drivers], ntifs/FsRtlAllocatePoolWithQuotaTag, ifsk.fsrtlallocatepoolwithquotatag
+ms.keywords : FsRtlAllocatePoolWithQuotaTag, ifsk.fsrtlallocatepoolwithquotatag, fsrtlref_f4d15687-848c-4c31-8f30-48eb69498cc9.xml, FsRtlAllocatePoolWithQuotaTag routine [Installable File System Drivers], ntifs/FsRtlAllocatePoolWithQuotaTag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -94,22 +94,19 @@ Callers of <b>FsRtlAllocatePoolWithQuotaTag</b> must be running at IRQL &lt;= DI
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545659">FsRtlAllocatePoolWithQuota</a>
+
 <a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
 
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545659">FsRtlAllocatePoolWithQuota</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 
  
 

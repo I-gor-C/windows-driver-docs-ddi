@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 32C96259-3A35-4BD3-96A4-A9F2A5FDAB99
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "_IRB_REQ_SEND_PHY_PACKET, IRB_REQ_SEND_PHY_PACKET structure [Buses], 1394/IRB_REQ_SEND_PHY_PACKET, IRB_REQ_SEND_PHY_PACKET, IEEE.irb_req_send_phy_packet"
+ms.keywords : 1394/IRB_REQ_SEND_PHY_PACKET, _IRB_REQ_SEND_PHY_PACKET, IEEE.irb_req_send_phy_packet, IRB_REQ_SEND_PHY_PACKET, IRB_REQ_SEND_PHY_PACKET structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,7 +71,4 @@ If successful, the new 1394 bus driver (1394ohci.sys) sets <b>Irp-&gt;IoStatus.S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 9b97e93c-a375-4df7-9d2d-86f1ad72b62d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : HBA_RemoveCallback routine [Storage Devices], HBA_RemoveCallback, hbaapi/HBA_RemoveCallback, fibreHBA_rtns_f0c88702-5544-4e66-ac3e-a5f8303bfb08.xml, storage.hba_removecallback
+ms.keywords : hbaapi/HBA_RemoveCallback, fibreHBA_rtns_f0c88702-5544-4e66-ac3e-a5f8303bfb08.xml, storage.hba_removecallback, HBA_RemoveCallback, HBA_RemoveCallback routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,14 +93,10 @@ Returned if an unspecified error occurred that prevented the de-registration of 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ef90f9da-3169-4b49-9ba2-2cab058e5d00
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksmergeautomationtables, avfunc_7e2146e2-0458-48ee-815a-8ea478187e07.xml, KsMergeAutomationTables, KsMergeAutomationTables function [Streaming Media Devices], ks/KsMergeAutomationTables
+ms.keywords : ks/KsMergeAutomationTables, stream.ksmergeautomationtables, KsMergeAutomationTables, KsMergeAutomationTables function [Streaming Media Devices], avfunc_7e2146e2-0458-48ee-815a-8ea478187e07.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,22 +91,19 @@ Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
 
 <a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
 
-<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 
  
 

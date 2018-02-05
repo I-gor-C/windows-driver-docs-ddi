@@ -8,7 +8,7 @@ old-project : acpi
 ms.assetid : a911fab9-516f-4ac5-ae33-1b6e218f9349
 ms.author : windowsdriverdev
 ms.date : 12/31/2017
-ms.keywords : acpiioct/ACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER_V1 structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_V1 structure pointer [ACPI Devices], acpiioct/PACPI_EVAL_INPUT_BUFFER_V1, PACPI_EVAL_INPUT_BUFFER_V1, acpi.acpi_eval_input_buffer, ACPI_EVAL_INPUT_BUFFER, *PACPI_EVAL_INPUT_BUFFER_V1, _ACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER_V1, *PACPI_EVAL_INPUT_BUFFER, acpi-meth-eval-ref_fda162bd-f908-46bf-a5a9-66daeb6b6aaf.xml
+ms.keywords : acpiioct/ACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER, ACPI_EVAL_INPUT_BUFFER_V1, acpi.acpi_eval_input_buffer, acpi-meth-eval-ref_fda162bd-f908-46bf-a5a9-66daeb6b6aaf.xml, *PACPI_EVAL_INPUT_BUFFER_V1, PACPI_EVAL_INPUT_BUFFER_V1, *PACPI_EVAL_INPUT_BUFFER, ACPI_EVAL_INPUT_BUFFER_V1 structure [ACPI Devices], _ACPI_EVAL_INPUT_BUFFER_V1, PACPI_EVAL_INPUT_BUFFER_V1 structure pointer [ACPI Devices], acpiioct/PACPI_EVAL_INPUT_BUFFER_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : ACPI_EVAL_INPUT_BUFFER_V1, *PACPI_EVAL_INPUT_BUFFER, ACPI_EVAL_INPUT_BUFFER, *PACPI_EVAL_INPUT_BUFFER_V1
+req.typenames : ACPI_EVAL_INPUT_BUFFER_V1, *PACPI_EVAL_INPUT_BUFFER_V1, ACPI_EVAL_INPUT_BUFFER, *PACPI_EVAL_INPUT_BUFFER
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_V1 structure
@@ -79,9 +79,7 @@ Set <b>MethodName</b> to 'ABCD' or <b>MethodNameAsUlong</b> to (ULONG)('DCBA').
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 2000 and later versions of Windows. Windows 2000 and later versions of Windows. |
 | **Header** | acpiioct.h (include Acpiioct.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9105d6b5-bee3-4fcd-b548-4d403731654d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, safestrings_fd0da08e-4624-41e0-be56-e9018e615725.xml, RtlStringCbCatEx, RtlStringCbCatExA, STRSAFE_FILL_BEHIND_NULL, RtlStringCbCatExW, STRSAFE_FILL_ON_FAILURE, STRSAFE_NULL_ON_FAILURE, RtlStringCbCatExW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatExW, ntstrsafe/RtlStringCbCatExA, kernel.rtlstringcbcatex
+ms.keywords : safestrings_fd0da08e-4624-41e0-be56-e9018e615725.xml, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, RtlStringCbCatExW, RtlStringCbCatExA, RtlStringCbCatExW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatExA, RtlStringCbCatEx, kernel.rtlstringcbcatex, STRSAFE_FILL_ON_FAILURE, STRSAFE_NULL_ON_FAILURE, ntstrsafe/RtlStringCbCatExW, STRSAFE_FILL_BEHIND_NULL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -257,22 +257,19 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatw.md">RtlStringCbCat</a>
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md">RtlStringCchCatEx</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>
 
  
 

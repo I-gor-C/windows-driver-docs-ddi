@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : ac54ac59-4144-4449-a732-b9da16338ddf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Next method [Print Devices], IXpsPartIterator::Next, IXpsPartIterator interface [Print Devices], Next method, filterpipeline/IXpsPartIterator::Next, print.ixpspartiterator_next, Next method [Print Devices], IXpsPartIterator interface, Next, IXpsPartIterator, filterpipeline_1e70f932-105f-4d9f-ace3-78f687f446c6.xml
+ms.keywords : IXpsPartIterator, Next method [Print Devices], IXpsPartIterator interface, Next method [Print Devices], filterpipeline/IXpsPartIterator::Next, Next, IXpsPartIterator interface [Print Devices], Next method, IXpsPartIterator::Next, filterpipeline_1e70f932-105f-4d9f-ace3-78f687f446c6.xml, print.ixpspartiterator_next
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -62,11 +62,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

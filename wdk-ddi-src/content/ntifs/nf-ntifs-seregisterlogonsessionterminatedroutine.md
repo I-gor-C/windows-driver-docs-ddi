@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6cba6db5-b91f-46f0-939e-b02693c81438
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/SeRegisterLogonSessionTerminatedRoutine, SeRegisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], seref_7188551f-9c46-472f-8976-67ee53b994c5.xml, SeRegisterLogonSessionTerminatedRoutine, ifsk.seregisterlogonsessionterminatedroutine
+ms.keywords : ifsk.seregisterlogonsessionterminatedroutine, SeRegisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], SeRegisterLogonSessionTerminatedRoutine, ntifs/SeRegisterLogonSessionTerminatedRoutine, seref_7188551f-9c46-472f-8976-67ee53b994c5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,14 +109,11 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

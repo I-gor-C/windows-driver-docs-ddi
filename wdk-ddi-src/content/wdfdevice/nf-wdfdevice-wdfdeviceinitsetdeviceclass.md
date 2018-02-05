@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c87a8368-3804-4a07-92c8-65a453d0808f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitsetdeviceclass, wdfdevice/WdfDeviceInitSetDeviceClass, DFDeviceObjectGeneralRef_9c2c2390-3dcc-40f4-ba43-16c8988dbfae.xml, WdfDeviceInitSetDeviceClass method, WdfDeviceInitSetDeviceClass, kmdf.wdfdeviceinitsetdeviceclass
+ms.keywords : wdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass method, kmdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass, wdfdevice/WdfDeviceInitSetDeviceClass, DFDeviceObjectGeneralRef_9c2c2390-3dcc-40f4-ba43-16c8988dbfae.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,11 +85,9 @@ For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |

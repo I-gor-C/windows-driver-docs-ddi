@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9ABFF1E8-50B8-4B59-964D-BA79AB63BFCE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_IO_ACCESS_TYPE, wdm/IO_ACCESS_TYPE, IO_ACCESS_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/ModifyAccess, wdm/ReadAccess, kernel.io_access_type, ReadAccess, IO_ACCESS_TYPE, WriteAccess, wdm/WriteAccess, ModifyAccess"
+ms.keywords : wdm/IO_ACCESS_TYPE, _IO_ACCESS_TYPE, IO_ACCESS_TYPE, ReadAccess, WriteAccess, wdm/WriteAccess, wdm/ReadAccess, ModifyAccess, wdm/ModifyAccess, kernel.io_access_type, IO_ACCESS_TYPE enumeration [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,4 @@ typedef enum _IO_ACCESS_TYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h) |

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 950a9b93-ef69-4075-9231-eb481a53c617
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, *PWHEA_FIRMWARE_RECORD, ntddk/WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, whearef_b43d8c6f-f768-47a1-9494-4a4bfac7d586.xml, whea.whea_firmware_error_record_reference, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure [WHEA Drivers and Applications], PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, *PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, ntddk/PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure pointer [WHEA Drivers and Applications], WHEA_FIRMWARE_RECORD, _WHEA_FIRMWARE_ERROR_RECORD_REFERENCE
+ms.keywords : whearef_b43d8c6f-f768-47a1-9494-4a4bfac7d586.xml, PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, whea.whea_firmware_error_record_reference, ntddk/PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure [WHEA Drivers and Applications], ntddk/WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, _WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure pointer [WHEA Drivers and Applications], WHEA_FIRMWARE_RECORD, *PWHEA_FIRMWARE_RECORD, *PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE"
+req.typenames : WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, *PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE
 ---
 
 # _WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure
@@ -73,9 +73,7 @@ The WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure contains a reference to a SAL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also

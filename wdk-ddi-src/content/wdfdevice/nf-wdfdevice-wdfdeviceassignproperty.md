@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5110C452-53E6-401A-9D14-EBD95D3F8BE2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEASSIGNPROPERTY, WdfDeviceAssignProperty, wdf.wdfdeviceassignproperty, WdfDeviceAssignProperty method, wdfdevice/WdfDeviceAssignProperty
+ms.keywords : WdfDeviceAssignProperty method, WdfDeviceAssignProperty, wdfdevice/WdfDeviceAssignProperty, PFN_WDFDEVICEASSIGNPROPERTY, wdf.wdfdeviceassignproperty
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,14 +114,12 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | APC_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : D52888A2-4CC1-4C5A-890E-5585424339E0
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_WRITE_REGISTER_BUFFER_ULONG, WDF_WRITE_REGISTER_BUFFER_ULONG function, wdf.wdf_write_register_buffer_ulong, wdfhwaccess/WDF_WRITE_REGISTER_BUFFER_ULONG
+ms.keywords : WDF_WRITE_REGISTER_BUFFER_ULONG function, WDF_WRITE_REGISTER_BUFFER_ULONG, wdf.wdf_write_register_buffer_ulong, wdfhwaccess/WDF_WRITE_REGISTER_BUFFER_ULONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,8 @@ The size of the buffer must be large enough to contain at least the specified nu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

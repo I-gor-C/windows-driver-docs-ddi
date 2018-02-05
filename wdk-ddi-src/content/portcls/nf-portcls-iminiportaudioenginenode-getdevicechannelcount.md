@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 978193AE-55CD-4255-8722-A1E008E98F08
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelCount method, IMiniportAudioEngineNode::GetDeviceChannelCount, portcls/IMiniportAudioEngineNode::GetDeviceChannelCount, GetDeviceChannelCount method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getdevicechannelcount, IMiniportAudioEngineNode, GetDeviceChannelCount method [Audio Devices], GetDeviceChannelCount
+ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelCount method, portcls/IMiniportAudioEngineNode::GetDeviceChannelCount, audio.iminiportaudioenginenode_getdevicechannelcount, IMiniportAudioEngineNode::GetDeviceChannelCount, GetDeviceChannelCount method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceChannelCount, IMiniportAudioEngineNode, GetDeviceChannelCount method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -77,20 +77,16 @@ returns an appropriate error code.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Universal |
 | **Header** | portcls.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
-
 <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
+
+<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
 
  
 

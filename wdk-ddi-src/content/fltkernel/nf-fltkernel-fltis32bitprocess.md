@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 0ba4d101-5eba-4258-9526-9e9dc3fd142a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_dbd737ec-e787-4f85-bd9e-833e06e862f0.xml, FltIs32bitProcess routine [Installable File System Drivers], FltIs32bitProcess, ifsk.fltis32bitprocess, fltkernel/FltIs32bitProcess
+ms.keywords : FltIs32bitProcess routine [Installable File System Drivers], fltkernel/FltIs32bitProcess, FltApiRef_e_to_o_dbd737ec-e787-4f85-bd9e-833e06e862f0.xml, FltIs32bitProcess, ifsk.fltis32bitprocess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,24 +94,22 @@ To determine whether a callback data structure represents a file system filter (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FltIs32bitProcess routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later. The FltIs32bitProcess routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\wdm\nf-wdm-iois32bitprocess.md">IoIs32bitProcess</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544648">FLT_IS_FS_FILTER_OPERATION</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
-
-<a href="..\wdm\nf-wdm-iois32bitprocess.md">IoIs32bitProcess</a>
 
  
 

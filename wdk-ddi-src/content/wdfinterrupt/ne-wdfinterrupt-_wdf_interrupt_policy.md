@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 88f8f10d-bf1e-49bc-99c7-95a5e69c17e1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIrqPolicySpreadMessagesAcrossAllProcessors, kmdf.wdf_interrupt_policy, wdfinterrupt/PWDF_INTERRUPT_POLICY, WDF_INTERRUPT_POLICY, WdfIrqPolicySpecifiedProcessors, *PWDF_INTERRUPT_POLICY, wdf.wdf_interrupt_policy, WdfIrqPolicyAllProcessorsInMachine, wdfinterrupt/WDF_INTERRUPT_POLICY, wdfinterrupt/WdfIrqPolicyMachineDefault, WdfIrqPolicyAllCloseProcessors, wdfinterrupt/WdfIrqPolicyAllCloseProcessors, DFInterruptObjectRef_e8b207c7-1a4a-4537-9aba-070ddcc426c1.xml, PWDF_INTERRUPT_POLICY enumeration pointer, WdfIrqPolicyOneCloseProcessor, WDF_INTERRUPT_POLICY enumeration, WdfIrqPolicyMachineDefault, wdfinterrupt/WdfIrqPolicySpecifiedProcessors, PWDF_INTERRUPT_POLICY, wdfinterrupt/WdfIrqPolicySpreadMessagesAcrossAllProcessors, wdfinterrupt/WdfIrqPolicyAllProcessorsInMachine, wdfinterrupt/WdfIrqPolicyOneCloseProcessor, _WDF_INTERRUPT_POLICY
+ms.keywords : WdfIrqPolicyAllProcessorsInMachine, WdfIrqPolicyMachineDefault, WDF_INTERRUPT_POLICY enumeration, _WDF_INTERRUPT_POLICY, WDF_INTERRUPT_POLICY, wdfinterrupt/WdfIrqPolicySpecifiedProcessors, wdfinterrupt/WdfIrqPolicyOneCloseProcessor, DFInterruptObjectRef_e8b207c7-1a4a-4537-9aba-070ddcc426c1.xml, wdfinterrupt/WdfIrqPolicyAllCloseProcessors, PWDF_INTERRUPT_POLICY enumeration pointer, WdfIrqPolicyAllCloseProcessors, PWDF_INTERRUPT_POLICY, *PWDF_INTERRUPT_POLICY, wdfinterrupt/PWDF_INTERRUPT_POLICY, WdfIrqPolicySpreadMessagesAcrossAllProcessors, wdf.wdf_interrupt_policy, wdfinterrupt/WdfIrqPolicyMachineDefault, WdfIrqPolicySpecifiedProcessors, wdfinterrupt/WdfIrqPolicyAllProcessorsInMachine, wdfinterrupt/WDF_INTERRUPT_POLICY, WdfIrqPolicyOneCloseProcessor, wdfinterrupt/WdfIrqPolicySpreadMessagesAcrossAllProcessors, kmdf.wdf_interrupt_policy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_POLICY, WDF_INTERRUPT_POLICY"
+req.typenames : WDF_INTERRUPT_POLICY, *PWDF_INTERRUPT_POLICY
 req.product : Windows 10 or later.
 ---
 
@@ -98,7 +98,6 @@ The <b>WDF_INTERRUPT_POLICY</b> enumeration type is used as input to the <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfinterrupt.h (include Wdf.h) |

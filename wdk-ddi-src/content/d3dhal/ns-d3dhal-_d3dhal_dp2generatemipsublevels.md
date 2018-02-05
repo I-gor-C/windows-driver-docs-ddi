@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7952cf0f-8a05-4d82-9669-db3db504d22d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2generatemipsublevels, d3dstrct_0b221ab6-0f8c-4406-9d99-c6101b353223.xml, *LPD3DHAL_DP2GENERATEMIPSUBLEVELS, LPD3DHAL_DP2GENERATEMIPSUBLEVELS, _D3DHAL_DP2GENERATEMIPSUBLEVELS, d3dhal/D3DHAL_DP2GENERATEMIPSUBLEVELS, D3DHAL_DP2GENERATEMIPSUBLEVELS, d3dhal/LPD3DHAL_DP2GENERATEMIPSUBLEVELS, LPD3DHAL_DP2GENERATEMIPSUBLEVELS structure pointer [Display Devices], D3DHAL_DP2GENERATEMIPSUBLEVELS structure [Display Devices]
+ms.keywords : d3dhal/D3DHAL_DP2GENERATEMIPSUBLEVELS, display.d3dhal_dp2generatemipsublevels, LPD3DHAL_DP2GENERATEMIPSUBLEVELS, d3dstrct_0b221ab6-0f8c-4406-9d99-c6101b353223.xml, *LPD3DHAL_DP2GENERATEMIPSUBLEVELS, D3DHAL_DP2GENERATEMIPSUBLEVELS structure [Display Devices], d3dhal/LPD3DHAL_DP2GENERATEMIPSUBLEVELS, D3DHAL_DP2GENERATEMIPSUBLEVELS, LPD3DHAL_DP2GENERATEMIPSUBLEVELS structure pointer [Display Devices], _D3DHAL_DP2GENERATEMIPSUBLEVELS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ To generate the sublevels of a MIP-map texture, the driver receives a D3DDP2OP_G
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 13C65DAB-04BA-4B19-B810-B484F7C1C4DA
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SpoolerFindClosePrinterChangeNotification function [Print Devices], SpoolerFindClosePrinterChangeNotification, winsplp/SpoolerFindClosePrinterChangeNotification, print.spoolerfindcloseprinterchangenotification
+ms.keywords : print.spoolerfindcloseprinterchangenotification, SpoolerFindClosePrinterChangeNotification, SpoolerFindClosePrinterChangeNotification function [Print Devices], winsplp/SpoolerFindClosePrinterChangeNotification
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

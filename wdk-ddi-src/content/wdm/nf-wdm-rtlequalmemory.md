@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 43695fa9-32e1-4bd5-b146-88d6d03fe9fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlEqualMemory, kernel.rtlequalmemory, RtlEqualMemory routine [Kernel-Mode Driver Architecture], RtlEqualMemory, k109_a75dfbc8-12af-4f95-9ba0-b7752b796e55.xml
+ms.keywords : RtlEqualMemory routine [Kernel-Mode Driver Architecture], RtlEqualMemory, wdm/RtlEqualMemory, k109_a75dfbc8-12af-4f95-9ba0-b7752b796e55.xml, kernel.rtlequalmemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -81,14 +81,11 @@ Callers of <b>RtlEqualMemory</b> can be running at any IRQL if both blocks of me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | wdm.h |
 | **IRQL** | Any level (See Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

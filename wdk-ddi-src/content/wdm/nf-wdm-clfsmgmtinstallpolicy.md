@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0a492a86-e732-4302-b35d-9b2a5eb05445
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtInstallPolicy routine [Kernel-Mode Driver Architecture], Clfs_management_44c8b983-a3bb-4fe3-9022-3e669ba5af2b.xml, kernel.clfsmgmtinstallpolicy, wdm/ClfsMgmtInstallPolicy, ClfsMgmtInstallPolicy
+ms.keywords : wdm/ClfsMgmtInstallPolicy, kernel.clfsmgmtinstallpolicy, Clfs_management_44c8b983-a3bb-4fe3-9022-3e669ba5af2b.xml, ClfsMgmtInstallPolicy, ClfsMgmtInstallPolicy routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -193,14 +193,12 @@ The log policy that is installed applies to the physical log, even if the <i>Log
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

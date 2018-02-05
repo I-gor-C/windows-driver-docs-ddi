@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d11a6be1-f723-47eb-b131-e1b02451e18a
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_VIDEODECODEREXTENSION structure [Display Devices], display.d3d11_1ddiarg_videodecoderextension, d3d10umddi/D3D11_1DDIARG_VIDEODECODEREXTENSION, D3D11_1DDIARG_VIDEODECODEREXTENSION
+ms.keywords : D3D11_1DDIARG_VIDEODECODEREXTENSION, D3D11_1DDIARG_VIDEODECODEREXTENSION structure [Display Devices], display.d3d11_1ddiarg_videodecoderextension, d3d10umddi/D3D11_1DDIARG_VIDEODECODEREXTENSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,9 +91,7 @@ The exact meaning of each structure member depends on the value of <b>Function</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

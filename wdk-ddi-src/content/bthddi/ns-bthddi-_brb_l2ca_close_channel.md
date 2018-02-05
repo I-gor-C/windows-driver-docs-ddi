@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 0a9f3720-8ae4-4219-a8b3-f1b88126f176
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : "_BRB_L2CA_CLOSE_CHANNEL structure [Bluetooth Devices], bth_structs_97d7dc1f-eb95-4cf3-8d21-a814622a0b81.xml, bltooth._brb_l2ca_close_channel, bthddi/_BRB_L2CA_CLOSE_CHANNEL, _BRB_L2CA_CLOSE_CHANNEL"
+ms.keywords : "_BRB_L2CA_CLOSE_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_L2CA_CLOSE_CHANNEL, bltooth._brb_l2ca_close_channel, _BRB_L2CA_CLOSE_CHANNEL, bth_structs_97d7dc1f-eb95-4cf3-8d21-a814622a0b81.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,8 +61,8 @@ The address of the remote device.
 
 The L2CAP channel handle that was returned by Bluetooth driver stack in response to an earlier 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a> or 
-     <mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
-     BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link> request. This is the channel handle to close.
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
+     BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request. This is the channel handle to close.
 
 `Hdr`
 
@@ -82,21 +82,19 @@ A <b>BRB_L2CA_CLOSE_CHANNEL</b> request can be made for a channel that was initi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
-<mshelp:link keywords="bltooth.brb_l2ca_open_channel_response" tabindex="0"><b>
-   BRB_L2CA_OPEN_CHANNEL_RESPONSE</b></mshelp:link>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536614">BRB_L2CA_CLOSE_CHANNEL</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
+   BRB_L2CA_OPEN_CHANNEL_RESPONSE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536614">BRB_L2CA_CLOSE_CHANNEL</a>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 
  
 

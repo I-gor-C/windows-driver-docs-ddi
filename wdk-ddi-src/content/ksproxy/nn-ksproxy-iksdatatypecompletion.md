@@ -61,11 +61,8 @@ A data type handler is typically loaded during the pin connection process, and u
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h |
-| **DLL** |  |
 
 ## See Also
 

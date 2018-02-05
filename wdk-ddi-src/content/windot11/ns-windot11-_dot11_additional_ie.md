@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : db034863-f5fa-42bb-81c8-23d4784e0abe
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "_DOT11_ADDITIONAL_IE, PDOT11_ADDITIONAL_IE, netvista.dot11_additional_ie, DOT11_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_ADDITIONAL_IE, *PDOT11_ADDITIONAL_IE, windot11/DOT11_ADDITIONAL_IE, Native_802.11_data_types_306f816b-e8fa-4f61-be10-5fd4d793f5a5.xml, PDOT11_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], DOT11_ADDITIONAL_IE"
+ms.keywords : "*PDOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista], PDOT11_ADDITIONAL_IE, _DOT11_ADDITIONAL_IE, windot11/PDOT11_ADDITIONAL_IE, Native_802.11_data_types_306f816b-e8fa-4f61-be10-5fd4d793f5a5.xml, windot11/DOT11_ADDITIONAL_IE, netvista.dot11_additional_ie, DOT11_ADDITIONAL_IE, PDOT11_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE"
+req.typenames : DOT11_ADDITIONAL_IE, *PDOT11_ADDITIONAL_IE
 req.product : Windows 10 or later.
 ---
 
@@ -72,11 +72,6 @@ For more information about these members, see
      <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
-#### Type
-
-This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
-
-
 #### Revision
 
 This member must be set to DOT11_ADDITIONAL_IE_REVISION_1.
@@ -86,6 +81,11 @@ This member must be set to DOT11_ADDITIONAL_IE_REVISION_1.
 
 This member must be set to 
        <b>sizeof</b>(DOT11_ADDITIONAL_IE).
+
+
+#### Type
+
+This member must be set to NDIS_OBJECT_TYPE_DEFAULT.
 
 `uBeaconIEsLength`
 
@@ -120,18 +120,16 @@ The miniport driver should reset the members of the DOT11_ADDITIONAL_IE structur
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569409">OID_DOT11_RESET_REQUEST</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569103">OID_DOT11_ADDITIONAL_IE</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569103">OID_DOT11_ADDITIONAL_IE</a>
 
  
 

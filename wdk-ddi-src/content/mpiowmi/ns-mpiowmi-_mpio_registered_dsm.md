@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c1be07b7-ebce-422f-83f2-890adc71655b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : mpiowmi/PMPIO_REGISTERED_DSM, storage.mpio_registered_dsm, _MPIO_REGISTERED_DSM, MPIO_REGISTERED_DSM, PMPIO_REGISTERED_DSM, *PMPIO_REGISTERED_DSM, PMPIO_REGISTERED_DSM structure pointer [Storage Devices], MPIO_REGISTERED_DSM structure [Storage Devices], mpiowmi/MPIO_REGISTERED_DSM, structs-scsibus_70ceccae-5a45-4ce1-a6de-fa86c3d82d7d.xml
+ms.keywords : mpiowmi/PMPIO_REGISTERED_DSM, mpiowmi/MPIO_REGISTERED_DSM, MPIO_REGISTERED_DSM, PMPIO_REGISTERED_DSM, structs-scsibus_70ceccae-5a45-4ce1-a6de-fa86c3d82d7d.xml, PMPIO_REGISTERED_DSM structure pointer [Storage Devices], storage.mpio_registered_dsm, _MPIO_REGISTERED_DSM, *PMPIO_REGISTERED_DSM, MPIO_REGISTERED_DSM structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ An unsigned 32-bitfield that specifies the number of DSMs that are registered in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | mpiowmi.h (include Mpiowmi.h) |

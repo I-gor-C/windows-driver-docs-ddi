@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 775d08ad-40c2-44b7-af02-6c182301e46f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSEVENTS_FMUTEXUNSAFE, ks/KSEVENTS_FMUTEXUNSAFE, KSEVENTS_SPINLOCK, ks/KSEVENTS_LOCKTYPE, KSEVENTS_INTERRUPT, KSEVENTS_MUTEX, ks/KSEVENTS_SPINLOCK, KSEVENTS_NONE, ks/KSEVENTS_INTERRUPT, ks/KSEVENTS_FMUTEX, KSEVENTS_ERESOURCE, ks-struct_293dbf13-1dbe-478e-83fb-d38e17e4a697.xml, stream.ksevents_locktype, KSEVENTS_FMUTEX, ks/KSEVENTS_NONE, KSEVENTS_LOCKTYPE enumeration [Streaming Media Devices], ks/KSEVENTS_ERESOURCE, KSEVENTS_LOCKTYPE, ks/KSEVENTS_MUTEX
+ms.keywords : KSEVENTS_NONE, KSEVENTS_SPINLOCK, KSEVENTS_INTERRUPT, ks/KSEVENTS_ERESOURCE, ks/KSEVENTS_FMUTEXUNSAFE, ks/KSEVENTS_INTERRUPT, KSEVENTS_LOCKTYPE, KSEVENTS_ERESOURCE, KSEVENTS_MUTEX, ks/KSEVENTS_FMUTEX, ks/KSEVENTS_NONE, ks-struct_293dbf13-1dbe-478e-83fb-d38e17e4a697.xml, ks/KSEVENTS_SPINLOCK, ks/KSEVENTS_LOCKTYPE, KSEVENTS_LOCKTYPE enumeration [Streaming Media Devices], KSEVENTS_FMUTEX, KSEVENTS_FMUTEXUNSAFE, ks/KSEVENTS_MUTEX, stream.ksevents_locktype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -98,7 +98,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

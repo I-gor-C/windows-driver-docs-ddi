@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c91b9ea0-8c42-4199-b161-2b43ba4a1833
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : umdf.wdf_io_queue_state, wudfddi/WdfIoQueueAcceptRequests, WdfIoQueuePnpHeld, WdfIoQueueDriverNoRequests, wudfddi/WdfIoQueueDispatchRequests, wudfddi/WdfIoQueueDriverNoRequests, WdfIoQueueDispatchRequests, WDF_IO_QUEUE_STATE enumeration, wudfddi/WDF_IO_QUEUE_STATE, WdfIoQueueAcceptRequests, WdfIoQueueNoRequests, wudfddi/WdfIoQueueNoRequests, wdf.wdf_io_queue_state_umdf, wudfddi/WdfIoQueuePnpHeld, umdfstructs_b0fa52c7-c536-43d3-b9a7-f63977ccb619.xml, _WDF_IO_QUEUE_STATE, *PWDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE
+ms.keywords : umdf.wdf_io_queue_state, WdfIoQueueDriverNoRequests, wdf.wdf_io_queue_state_umdf, wudfddi/WdfIoQueueDriverNoRequests, wudfddi/WdfIoQueueDispatchRequests, _WDF_IO_QUEUE_STATE, wudfddi/WdfIoQueuePnpHeld, WDF_IO_QUEUE_STATE enumeration, *PWDF_IO_QUEUE_STATE, WdfIoQueuePnpHeld, WdfIoQueueDispatchRequests, wudfddi/WDF_IO_QUEUE_STATE, wudfddi/WdfIoQueueNoRequests, WDF_IO_QUEUE_STATE, umdfstructs_b0fa52c7-c536-43d3-b9a7-f63977ccb619.xml, WdfIoQueueNoRequests, wudfddi/WdfIoQueueAcceptRequests, WdfIoQueueAcceptRequests
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -94,18 +94,15 @@ If this value is set to 0, the queue does not automatically dispatch requests to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wudfddi_types.h (include Wudfddi_types.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
-
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558946">IWDFIoQueue::ConfigureRequestDispatching</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
 

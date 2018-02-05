@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 16A48882-BEA6-4F95-8E9F-572BFD102031
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, netvista.ndis_wwan_device_service_session_write_complete, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_write_complete, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE"
+req.typenames : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure
@@ -108,7 +108,5 @@ The status of the completion of the write operation.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |

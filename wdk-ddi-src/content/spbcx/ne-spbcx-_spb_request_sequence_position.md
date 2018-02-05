@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : B2D1BC45-E932-4EBC-9B7E-C45E7439E551
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SpbRequestSequencePositionMax, *PSPB_REQUEST_SEQUENCE_POSITION, spbcx/SpbRequestSequencePositionInvalid, SpbRequestSequencePositionLast, spbcx/SpbRequestSequencePositionContinue, SPB_REQUEST_SEQUENCE_POSITION, SpbRequestSequencePositionSingle, spbcx/SpbRequestSequencePositionSingle, spbcx/SpbRequestSequencePositionLast, spbcx/SpbRequestSequencePositionMax, SpbRequestSequencePositionInvalid, _SPB_REQUEST_SEQUENCE_POSITION, spbcx/SpbRequestSequencePositionFirst, SpbRequestSequencePositionFirst, SPB_REQUEST_SEQUENCE_POSITION enumeration [Buses], spbcx/SPB_REQUEST_SEQUENCE_POSITION, SPB.spb_request_sequence_position, SpbRequestSequencePositionContinue
+ms.keywords : spbcx/SpbRequestSequencePositionInvalid, spbcx/SpbRequestSequencePositionContinue, SpbRequestSequencePositionSingle, spbcx/SpbRequestSequencePositionMax, SpbRequestSequencePositionInvalid, SPB_REQUEST_SEQUENCE_POSITION, SpbRequestSequencePositionLast, spbcx/SPB_REQUEST_SEQUENCE_POSITION, spbcx/SpbRequestSequencePositionFirst, SpbRequestSequencePositionMax, _SPB_REQUEST_SEQUENCE_POSITION, SPB.spb_request_sequence_position, SpbRequestSequencePositionFirst, SPB_REQUEST_SEQUENCE_POSITION enumeration [Buses], SpbRequestSequencePositionContinue, *PSPB_REQUEST_SEQUENCE_POSITION, spbcx/SpbRequestSequencePositionLast, spbcx/SpbRequestSequencePositionSingle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -126,28 +126,26 @@ For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbReque
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spbcx.h (include Spb.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">IOCTL_SPB_LOCK_CONTROLLER</a>
-
-<a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
 <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
+
+<a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">IOCTL_SPB_LOCK_CONTROLLER</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
 
  
 

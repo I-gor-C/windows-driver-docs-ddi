@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : ffc6332b-7daa-4b23-8cf4-6077f7d1d40a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.rxceallocateirpwithmdl, rxref_8cb4dfd0-5789-4359-ad9f-bd1a9d460eb3.xml, rxce/RxCeAllocateIrpWithMDL, RxCeAllocateIrpWithMDL function [Installable File System Drivers], RxCeAllocateIrpWithMDL
+ms.keywords : RxCeAllocateIrpWithMDL, rxce/RxCeAllocateIrpWithMDL, ifsk.rxceallocateirpwithmdl, RxCeAllocateIrpWithMDL function [Installable File System Drivers], rxref_8cb4dfd0-5789-4359-ad9f-bd1a9d460eb3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -83,14 +83,11 @@ An IRP allocated with an associated memory descriptor list allocated with <b>RxC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The RxCeAllocateIrpWithMDL routine is only available on Windows XP. The RxCeAllocateIrpWithMDL routine is only available on Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

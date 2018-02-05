@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f18b46c0-975b-49ba-b398-45f2a44d6d3b
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.ide_task_file, structs-ATA_0d96e047-8840-46cd-9df1-606ca70edb9e.xml, IDE_TASK_FILE, irb/PIDE_TASK_FILE, *PIDE_TASK_FILE, _IDE_TASK_FILE, IDE_TASK_FILE structure [Storage Devices], irb/IDE_TASK_FILE, PIDE_TASK_FILE, PIDE_TASK_FILE structure pointer [Storage Devices]
+ms.keywords : IDE_TASK_FILE, PIDE_TASK_FILE structure pointer [Storage Devices], structs-ATA_0d96e047-8840-46cd-9df1-606ca70edb9e.xml, storage.ide_task_file, irb/IDE_TASK_FILE, PIDE_TASK_FILE, IDE_TASK_FILE structure [Storage Devices], _IDE_TASK_FILE, irb/PIDE_TASK_FILE, *PIDE_TASK_FILE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,9 +65,6 @@ Contains a structure of type <a href="..\irb\ns-irb-_ideregisters.md">IDEREGISTE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | irb.h (include Irb.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 807f1432-1b2f-45fc-899c-b2920ea79f7a
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidsdi/HidD_GetSerialNumberString, hid.hidd_getserialnumberstring, HidD_GetSerialNumberString routine [Human Input Devices], HidD_GetSerialNumberString, hidfunc_b01ce302-052c-43f1-9b8f-6421ebb66954.xml
+ms.keywords : hidsdi/HidD_GetSerialNumberString, hid.hidd_getserialnumberstring, HidD_GetSerialNumberString, HidD_GetSerialNumberString routine [Human Input Devices], hidfunc_b01ce302-052c-43f1-9b8f-6421ebb66954.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,30 +82,27 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidsdi.h (include Hidsdi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hid.lib |
+| **DLL** | Hid.dll |
 
 ## See Also
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_indexed_string.md">IOCTL_HID_GET_INDEXED_STRING</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getmanufacturerstring.md">HidD_GetManufacturerString</a>
 
 <a href="..\hidsdi\nf-hidsdi-hidd_getproductstring.md">HidD_GetProductString</a>
 
-<a href="..\hidsdi\nf-hidsdi-hidd_getphysicaldescriptor.md">HidD_GetPhysicalDescriptor</a>
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_serialnumber_string.md">IOCTL_HID_GET_SERIALNUMBER_STRING</a>
 
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_manufacturer_string.md">IOCTL_HID_GET_MANUFACTURER_STRING</a>
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_serialnumber_string.md">IOCTL_HID_GET_SERIALNUMBER_STRING</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getphysicaldescriptor.md">HidD_GetPhysicalDescriptor</a>
 
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_product_string.md">IOCTL_HID_GET_PRODUCT_STRING</a>
 
-<a href="..\hidsdi\nf-hidsdi-hidd_getmanufacturerstring.md">HidD_GetManufacturerString</a>
+<a href="..\hidclass\ni-hidclass-ioctl_hid_get_indexed_string.md">IOCTL_HID_GET_INDEXED_STRING</a>
 
  
 

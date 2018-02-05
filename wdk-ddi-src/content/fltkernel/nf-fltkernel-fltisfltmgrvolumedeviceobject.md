@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c4165eab-c62e-436d-b4d4-a1f72ee9c1bd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltIsFltMgrVolumeDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_95cc07b6-722c-4d2a-bec1-57fff9e2c6e3.xml, FltIsFltMgrVolumeDeviceObject, fltkernel/FltIsFltMgrVolumeDeviceObject, ifsk.fltisfltmgrvolumedeviceobject
+ms.keywords : FltIsFltMgrVolumeDeviceObject, ifsk.fltisfltmgrvolumedeviceobject, FltIsFltMgrVolumeDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_95cc07b6-722c-4d2a-bec1-57fff9e2c6e3.xml, fltkernel/FltIsFltMgrVolumeDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Vista or later versions of the Windows operating system. Available in Vista or later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

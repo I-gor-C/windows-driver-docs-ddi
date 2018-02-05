@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c4f43f4c-a598-4bda-9325-21440f56ab17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlNextUnicodePrefix, rtlref_75c728f8-96b0-4e46-b47a-7d30ac61872c.xml, ifsk.rtlnextunicodeprefix, RtlNextUnicodePrefix, RtlNextUnicodePrefix routine [Installable File System Drivers]
+ms.keywords : rtlref_75c728f8-96b0-4e46-b47a-7d30ac61872c.xml, ifsk.rtlnextunicodeprefix, ntifs/RtlNextUnicodePrefix, RtlNextUnicodePrefix, RtlNextUnicodePrefix routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,20 +93,18 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows XP Windows XP |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
-
 <a href="..\ntifs\nf-ntifs-rtlinitializeunicodeprefix.md">RtlInitializeUnicodePrefix</a>
+
+<a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
 
 <a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
 

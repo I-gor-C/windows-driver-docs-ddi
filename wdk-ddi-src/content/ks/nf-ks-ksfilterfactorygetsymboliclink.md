@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : db657820-75b7-49fe-904d-05f8bc45b8c5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryGetSymbolicLink, stream.ksfilterfactorygetsymboliclink, ks/KsFilterFactoryGetSymbolicLink, KsFilterFactoryGetSymbolicLink function [Streaming Media Devices], avfunc_066ba440-b7d8-4c75-99bd-7b7cb38e4d70.xml
+ms.keywords : KsFilterFactoryGetSymbolicLink function [Streaming Media Devices], ks/KsFilterFactoryGetSymbolicLink, KsFilterFactoryGetSymbolicLink, stream.ksfilterfactorygetsymboliclink, avfunc_066ba440-b7d8-4c75-99bd-7b7cb38e4d70.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,8 @@ If <i>FilterFactory</i> has no registered device interfaces, <b>KsFilterFactoryG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

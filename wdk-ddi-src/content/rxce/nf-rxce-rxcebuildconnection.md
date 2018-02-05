@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3d4c2e69-7cdc-4eee-b56c-b1485768e942
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_cc87c9dd-c8e4-4283-96a8-bc2ec15be773.xml, ifsk.rxcebuildconnection, rxce/RxCeBuildConnection, RxCeBuildConnection function [Installable File System Drivers], RxCeBuildConnection
+ms.keywords : RxCeBuildConnection, rxce/RxCeBuildConnection, ifsk.rxcebuildconnection, rxref_cc87c9dd-c8e4-4283-96a8-bc2ec15be773.xml, RxCeBuildConnection function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
+req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
 req.product : Windows 10 or later.
 ---
 
@@ -126,14 +126,10 @@ When <b>RxCeBuildConnection</b> is successful, the data members in the RXCE_CONN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxce.h (include Rxce.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

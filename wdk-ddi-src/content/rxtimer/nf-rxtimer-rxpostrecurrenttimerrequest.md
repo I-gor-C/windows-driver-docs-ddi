@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a44fb478-4f78-415e-b557-bf383199578c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxPostRecurrentTimerRequest, rxtimer/RxPostRecurrentTimerRequest, ifsk.rxpostrecurrenttimerrequest, rxref_64318843-28af-4351-9273-06061b94578f.xml, RxPostRecurrentTimerRequest routine [Installable File System Drivers]
+ms.keywords : ifsk.rxpostrecurrenttimerrequest, RxPostRecurrentTimerRequest, rxtimer/RxPostRecurrentTimerRequest, rxref_64318843-28af-4351-9273-06061b94578f.xml, RxPostRecurrentTimerRequest routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,20 +101,16 @@ A recurrent timer can be canceled by calling <b>RxCancelTimerRequest</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxtimer.h (include Rxtimer.h, Rxworkq.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\rxtimer\nf-rxtimer-rxpostoneshottimerrequest.md">RxPostOneShotTimerRequest</a>
-
 <a href="..\rxtimer\nf-rxtimer-rxcanceltimerrequest.md">RxCancelTimerRequest</a>
+
+<a href="..\rxtimer\nf-rxtimer-rxpostoneshottimerrequest.md">RxPostOneShotTimerRequest</a>
 
  
 

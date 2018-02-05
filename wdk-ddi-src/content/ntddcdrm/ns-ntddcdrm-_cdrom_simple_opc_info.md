@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : CE6D2C98-C4C3-4D76-B49E-1B9344B88666
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.cdrom_simple_opc_info, CDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO, ntddcdrm/PCDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO structure [Storage Devices], ntddcdrm/CDROM_SIMPLE_OPC_INFO, _CDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO structure pointer [Storage Devices]
+ms.keywords : CDROM_SIMPLE_OPC_INFO, _CDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO structure pointer [Storage Devices], ntddcdrm/CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO, storage.cdrom_simple_opc_info, PCDROM_SIMPLE_OPC_INFO, ntddcdrm/PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO"
+req.typenames : CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO
 ---
 
 # _CDROM_SIMPLE_OPC_INFO structure
@@ -71,18 +71,15 @@ The  <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
 ## See Also
 
-<a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_opc_info_type.md">CDROM_OPC_INFO_TYPE</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_simple_opc_info.md">CDROM_SIMPLE_OPC_INFO</a>
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_send_opc_information.md">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_simple_opc_info.md">CDROM_SIMPLE_OPC_INFO</a>
+<a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_opc_info_type.md">CDROM_OPC_INFO_TYPE</a>
 
  
 

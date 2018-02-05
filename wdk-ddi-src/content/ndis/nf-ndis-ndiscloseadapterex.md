@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8e3c6373-e39d-4f9b-b874-e3a9c93791b9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCloseAdapterEx, netvista.ndiscloseadapterex, protocol_ndis_functions_ref_f349b273-d8c6-4711-af43-59646c41536c.xml, NdisCloseAdapterEx function [Network Drivers Starting with Windows Vista], ndis/NdisCloseAdapterEx
+ms.keywords : ndis/NdisCloseAdapterEx, protocol_ndis_functions_ref_f349b273-d8c6-4711-af43-59646c41536c.xml, NdisCloseAdapterEx function [Network Drivers Starting with Windows Vista], NdisCloseAdapterEx, netvista.ndiscloseadapterex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -90,8 +90,8 @@ The handle that NDIS provided at the
 <td width="60%">
 <b>NdisCloseAdapterEx</b> did not complete the close operation and the operation will be completed
        asynchronously. NDIS calls the protocol driver's 
-       <mshelp:link keywords="netvista.protocolcloseadaptercompleteex" tabindex="0"><i>
-       ProtocolCloseAdapterCompleteEx</i></mshelp:link> function when the operation is complete.
+       <a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
+       ProtocolCloseAdapterCompleteEx</a> function when the operation is complete.
 
 </td>
 </tr>
@@ -101,8 +101,8 @@ The handle that NDIS provided at the
 
 A protocol driver typically calls 
     <b>NdisCloseAdapterEx</b> from its 
-    <mshelp:link keywords="netvista.protocolunbindadapterex" tabindex="0"><i>
-    ProtocolUnbindAdapterEx</i></mshelp:link> function. The driver can also call 
+    <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
+    ProtocolUnbindAdapterEx</a> function. The driver can also call 
     <b>NdisCloseAdapterEx</b> from its 
     <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function.
     For example, if the driver failed to set an OID value after it called 
@@ -127,27 +127,25 @@ As soon as the driver calls
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
-
-<mshelp:link keywords="netvista.protocolcloseadaptercompleteex" tabindex="0"><i>
-   ProtocolCloseAdapterCompleteEx</i></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndisunbindadapter.md">NdisUnbindAdapter</a>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
+<a href="..\ndis\nc-ndis-protocol_close_adapter_complete_ex.md">
+   ProtocolCloseAdapterCompleteEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
+
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+
+<a href="..\ndis\nf-ndis-ndisunbindadapter.md">NdisUnbindAdapter</a>
 
  
 

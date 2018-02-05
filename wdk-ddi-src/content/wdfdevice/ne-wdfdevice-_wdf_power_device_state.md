@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 66ff00fd-43b0-4fe1-a010-4b5ef65fa811
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPowerDeviceMaximum, wdfdevice/WdfPowerDeviceMaximum, wdfdevice/WdfPowerDeviceD0, wdf.wdf_power_device_state, WdfPowerDeviceD2, WdfPowerDeviceD0, WdfPowerDeviceInvalid, wdfdevice/WdfPowerDeviceD1, wdfdevice/WdfPowerDeviceD2, wdfdevice/PWDF_POWER_DEVICE_STATE, WdfPowerDeviceD3, kmdf.wdf_power_device_state, WdfPowerDeviceD3Final, DFDeviceObjectGeneralRef_5a921767-81e1-4a80-b775-8f91819c6ea5.xml, wdfdevice/WdfPowerDeviceInvalid, PWDF_POWER_DEVICE_STATE enumeration pointer, WdfPowerDevicePrepareForHibernation, wdfdevice/WDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE, _WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE, wdfdevice/WdfPowerDevicePrepareForHibernation, PWDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE enumeration, wdfdevice/WdfPowerDeviceD3Final, WdfPowerDeviceD1, wdfdevice/WdfPowerDeviceD3
+ms.keywords : "_WDF_POWER_DEVICE_STATE, WdfPowerDevicePrepareForHibernation, DFDeviceObjectGeneralRef_5a921767-81e1-4a80-b775-8f91819c6ea5.xml, WdfPowerDeviceMaximum, WdfPowerDeviceD3Final, wdfdevice/WdfPowerDeviceD0, PWDF_POWER_DEVICE_STATE, WdfPowerDeviceInvalid, wdf.wdf_power_device_state, wdfdevice/WdfPowerDeviceD3Final, WdfPowerDeviceD1, wdfdevice/WdfPowerDeviceInvalid, WdfPowerDeviceD0, kmdf.wdf_power_device_state, wdfdevice/WdfPowerDevicePrepareForHibernation, wdfdevice/WdfPowerDeviceD1, wdfdevice/WdfPowerDeviceD2, WdfPowerDeviceD3, wdfdevice/WDF_POWER_DEVICE_STATE, wdfdevice/PWDF_POWER_DEVICE_STATE, PWDF_POWER_DEVICE_STATE enumeration pointer, WDF_POWER_DEVICE_STATE enumeration, wdfdevice/WdfPowerDeviceD3, wdfdevice/WdfPowerDeviceMaximum, WDF_POWER_DEVICE_STATE, WdfPowerDeviceD2, *PWDF_POWER_DEVICE_STATE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -107,7 +107,6 @@ typedef enum _WDF_POWER_DEVICE_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |

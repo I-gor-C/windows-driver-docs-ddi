@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : fb0ae4bb-6d6b-4772-9dbd-ae43f7728313
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : WriteIoSpaceEx function [Windows Debugging], wdbgexts/WriteIoSpaceEx, WdbgExts_Ref_53bdc758-08b1-4103-9732-5b7b72c80fdd.xml, debugger.writeiospaceex, WriteIoSpaceEx
+ms.keywords : WriteIoSpaceEx function [Windows Debugging], debugger.writeiospaceex, WriteIoSpaceEx, wdbgexts/WriteIoSpaceEx, WdbgExts_Ref_53bdc758-08b1-4103-9732-5b7b72c80fdd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,6 @@ For a WdbgExts extension, include wdbgexts.h. For a DbgEng extension, include wd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

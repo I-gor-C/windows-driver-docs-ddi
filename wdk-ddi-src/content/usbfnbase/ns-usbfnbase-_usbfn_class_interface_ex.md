@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : DEA417E7-FA4B-4F72-A03A-ECE921FC725C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBFN_CLASS_INTERFACE_EX, _USBFN_CLASS_INTERFACE_EX, buses.usbfn_class_interface_ex, USBFN_CLASS_INTERFACE_EX structure [Buses], *PUSBFN_CLASS_INTERFACE_EX, PUSBFN_CLASS_INTERFACE_EX structure pointer [Buses], usbfnbase/PUSBFN_CLASS_INTERFACE_EX, PUSBFN_CLASS_INTERFACE_EX, usbfnbase/USBFN_CLASS_INTERFACE_EX
+ms.keywords : USBFN_CLASS_INTERFACE_EX structure [Buses], *PUSBFN_CLASS_INTERFACE_EX, PUSBFN_CLASS_INTERFACE_EX structure pointer [Buses], PUSBFN_CLASS_INTERFACE_EX, usbfnbase/USBFN_CLASS_INTERFACE_EX, _USBFN_CLASS_INTERFACE_EX, USBFN_CLASS_INTERFACE_EX, buses.usbfn_class_interface_ex, usbfnbase/PUSBFN_CLASS_INTERFACE_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,4 @@ The number of endpoints contained in  the interface.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h (include TBD) |

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 22c6bd15-98b7-4905-8551-c8202cc6840b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksfilterattemptprocessing, ks/KsFilterAttemptProcessing, KsFilterAttemptProcessing, KsFilterAttemptProcessing function [Streaming Media Devices], avfunc_ee888474-cf0c-4b23-b8a2-f1e7491db8fd.xml
+ms.keywords : KsFilterAttemptProcessing, avfunc_ee888474-cf0c-4b23-b8a2-f1e7491db8fd.xml, ks/KsFilterAttemptProcessing, stream.ksfilterattemptprocessing, KsFilterAttemptProcessing function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,24 +77,21 @@ Note that this is only an attempt at processing; calling this function does not 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
-
 <a href="..\ks\nf-ks-ksgatecapturethreshold.md">KsGateCaptureThreshold</a>
 
-<a href="..\ks\nf-ks-kspinattemptprocessing.md">KsPinAttemptProcessing</a>
-
 <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
+
+<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
+
+<a href="..\ks\nf-ks-kspinattemptprocessing.md">KsPinAttemptProcessing</a>
 
  
 

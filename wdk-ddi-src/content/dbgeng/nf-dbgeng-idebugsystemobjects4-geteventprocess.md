@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 77cf1995-f3f3-4a03-bba7-9df230a10da0
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetEventProcess method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects_04f445d4-e407-4e0c-bd1b-9570ed4f0433.xml, dbgeng/IDebugSystemObjects3::GetEventProcess, debugger.geteventprocess, IDebugSystemObjects3 interface [Windows Debugging], GetEventProcess method, GetEventProcess method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3::GetEventProcess, IDebugSystemObjects4, IDebugSystemObjects::GetEventProcess, dbgeng/IDebugSystemObjects4::GetEventProcess, IDebugSystemObjects2 interface [Windows Debugging], GetEventProcess method, GetEventProcess method [Windows Debugging], GetEventProcess method [Windows Debugging], IDebugSystemObjects2 interface, GetEventProcess, IDebugSystemObjects interface [Windows Debugging], GetEventProcess method, IDebugSystemObjects2::GetEventProcess, GetEventProcess method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4 interface [Windows Debugging], GetEventProcess method, dbgeng/IDebugSystemObjects::GetEventProcess, dbgeng/IDebugSystemObjects2::GetEventProcess, IDebugSystemObjects4::GetEventProcess
+ms.keywords : IDebugSystemObjects2::GetEventProcess, IDebugSystemObjects3 interface [Windows Debugging], GetEventProcess method, dbgeng/IDebugSystemObjects3::GetEventProcess, IDebugSystemObjects_04f445d4-e407-4e0c-bd1b-9570ed4f0433.xml, GetEventProcess method [Windows Debugging], IDebugSystemObjects2 interface, GetEventProcess method [Windows Debugging], IDebugSystemObjects3 interface, GetEventProcess, GetEventProcess method [Windows Debugging], IDebugSystemObjects interface [Windows Debugging], GetEventProcess method, IDebugSystemObjects4, dbgeng/IDebugSystemObjects4::GetEventProcess, dbgeng/IDebugSystemObjects::GetEventProcess, IDebugSystemObjects3::GetEventProcess, GetEventProcess method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4 interface [Windows Debugging], GetEventProcess method, GetEventProcess method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects2 interface [Windows Debugging], GetEventProcess method, IDebugSystemObjects4::GetEventProcess, IDebugSystemObjects::GetEventProcess, dbgeng/IDebugSystemObjects2::GetEventProcess, debugger.geteventprocess
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,11 +87,6 @@ For more information about processes, see <a href="https://msdn.microsoft.com/li
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

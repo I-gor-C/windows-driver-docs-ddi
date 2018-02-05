@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f44a0a42-1fa1-4dd2-bd9f-74b0d0ed823e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDEV_ADJUST_PAPER_MARGIN structure [Print Devices], _PDEV_ADJUST_PAPER_MARGIN, print_unidrv-pscript_rendering_09d49312-b306-40c0-ad25-bc3669e8eedd.xml, PDEV_ADJUST_PAPER_MARGIN, printoem/PDEV_ADJUST_PAPER_MARGIN, print.pdev_adjust_paper_margin
+ms.keywords : PDEV_ADJUST_PAPER_MARGIN, print.pdev_adjust_paper_margin, printoem/PDEV_ADJUST_PAPER_MARGIN, PDEV_ADJUST_PAPER_MARGIN structure [Print Devices], _PDEV_ADJUST_PAPER_MARGIN, print_unidrv-pscript_rendering_09d49312-b306-40c0-ad25-bc3669e8eedd.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,6 @@ The <i>pBuf</i> parameter of the <a href="https://msdn.microsoft.com/library/win
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Prcomoem.h) |
 
 ## See Also

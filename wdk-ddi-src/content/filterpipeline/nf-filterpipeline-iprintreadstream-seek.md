@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : b563e080-32ab-47b7-94f4-1d3dd19f3311
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : Seek method [Print Devices], IPrintReadStream interface, Seek method [Print Devices], filterpipeline_622c8e3a-c21f-4784-ba2d-96833fab4230.xml, filterpipeline/IPrintReadStream::Seek, IPrintReadStream, print.iprintreadstream_seek, IPrintReadStream interface [Print Devices], Seek method, Seek, IPrintReadStream::Seek
+ms.keywords : Seek method [Print Devices], IPrintReadStream interface, print.iprintreadstream_seek, IPrintReadStream::Seek, filterpipeline_622c8e3a-c21f-4784-ba2d-96833fab4230.xml, Seek method [Print Devices], IPrintReadStream, IPrintReadStream interface [Print Devices], Seek method, Seek, filterpipeline/IPrintReadStream::Seek
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -80,11 +80,6 @@ This method is similar to the <b>IStream::Seek</b> and <b>SetFilePointerEx</b> m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

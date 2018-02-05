@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7e7778ba-cf4f-44e8-91ce-c53458d3db9a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksm_bda_pin, PKSM_BDA_PIN, *PKSM_BDA_PIN, bdamedia/KSM_BDA_PIN, PKSM_BDA_PIN structure pointer [Streaming Media Devices], bdaref_190ab329-704e-472a-926c-1aa04d4b6df5.xml, KSM_BDA_PIN structure [Streaming Media Devices], KSM_BDA_PIN, _KSM_BDA_PIN, bdamedia/PKSM_BDA_PIN
+ms.keywords : "*PKSM_BDA_PIN, PKSM_BDA_PIN structure pointer [Streaming Media Devices], KSM_BDA_PIN structure [Streaming Media Devices], bdamedia/KSM_BDA_PIN, bdaref_190ab329-704e-472a-926c-1aa04d4b6df5.xml, KSM_BDA_PIN, _KSM_BDA_PIN, PKSM_BDA_PIN, bdamedia/PKSM_BDA_PIN, stream.ksm_bda_pin"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,6 @@ Reserved.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdamedia.h (include Bdamedia.h) |
 
 ## See Also

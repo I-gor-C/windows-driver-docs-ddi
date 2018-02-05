@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : 4B88820F-32B9-4AA2-867A-316A3796BE86
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_clx_processadddevicepostdevicecreate, GPIO_CLX_ProcessAddDevicePostDeviceCreate, gpioclx/GPIO_CLX_ProcessAddDevicePostDeviceCreate, GPIO_CLX_ProcessAddDevicePostDeviceCreate method [Parallel Ports]
+ms.keywords : GPIO_CLX_ProcessAddDevicePostDeviceCreate, gpioclx/GPIO_CLX_ProcessAddDevicePostDeviceCreate, GPIO.gpio_clx_processadddevicepostdevicecreate, GPIO_CLX_ProcessAddDevicePostDeviceCreate method [Parallel Ports]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,22 +114,19 @@ For a code example that contains a call to <b>GPIO_CLX_ProcessAddDevicePostDevic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | gpioclx.h |
-| **Library** |  |
+| **Library** | Msgpioclxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439487">GPIO_CLX_ProcessAddDevicePreDeviceCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439487">GPIO_CLX_ProcessAddDevicePreDeviceCreate</a>
 
  
 

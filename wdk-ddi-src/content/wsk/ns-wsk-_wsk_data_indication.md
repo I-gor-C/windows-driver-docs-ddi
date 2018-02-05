@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 10af500f-bb3b-427f-86b1-ee075ffc7ac6
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PWSK_DATA_INDICATION, wsk/PWSK_DATA_INDICATION, wsk/WSK_DATA_INDICATION, _WSK_DATA_INDICATION, PWSK_DATA_INDICATION, wskref_89ac35f7-4945-4b2d-90d6-177d9bca7361.xml, netvista.wsk_data_indication, PWSK_DATA_INDICATION structure pointer [Network Drivers Starting with Windows Vista], WSK_DATA_INDICATION, WSK_DATA_INDICATION structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : PWSK_DATA_INDICATION structure pointer [Network Drivers Starting with Windows Vista], _WSK_DATA_INDICATION, wsk/PWSK_DATA_INDICATION, WSK_DATA_INDICATION structure [Network Drivers Starting with Windows Vista], wsk/WSK_DATA_INDICATION, netvista.wsk_data_indication, PWSK_DATA_INDICATION, WSK_DATA_INDICATION, *PWSK_DATA_INDICATION, wskref_89ac35f7-4945-4b2d-90d6-177d9bca7361.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WSK_DATA_INDICATION, *PWSK_DATA_INDICATION
+req.typenames : "*PWSK_DATA_INDICATION, WSK_DATA_INDICATION"
 req.product : Windows 10 or later.
 ---
 
@@ -77,18 +77,16 @@ The WSK subsystem passes a pointer to a WSK_DATA_INDICATION structure as the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wsk.h (include Wsk.h) |
 
 ## See Also
 
 <a href="..\wsk\nc-wsk-pfn_wsk_receive_event.md">WskReceiveEvent</a>
 
-<a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
-
 <a href="..\wsk\nc-wsk-pfn_wsk_release_data_indication_list.md">WskRelease</a>
+
+<a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
 
  
 

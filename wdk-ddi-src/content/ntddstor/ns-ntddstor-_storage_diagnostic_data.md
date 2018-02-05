@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 68BC990B-DD0C-49CD-95EC-672FD1459B39
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STORAGE_DIAGNOSTIC_DATA structure [Storage Devices], STORAGE_DIAGNOSTIC_DATA, ntddstor/STORAGE_DIAGNOSTIC_DATA, ntddstor/PSTORAGE_DIAGNOSTIC_DATA, PSTORAGE_DIAGNOSTIC_DATA structure pointer [Storage Devices], _STORAGE_DIAGNOSTIC_DATA, storage.storage_diagnostic_data, *PSTORAGE_DIAGNOSTIC_DATA, PSTORAGE_DIAGNOSTIC_DATA
+ms.keywords : STORAGE_DIAGNOSTIC_DATA structure [Storage Devices], *PSTORAGE_DIAGNOSTIC_DATA, storage.storage_diagnostic_data, _STORAGE_DIAGNOSTIC_DATA, ntddstor/STORAGE_DIAGNOSTIC_DATA, ntddstor/PSTORAGE_DIAGNOSTIC_DATA, PSTORAGE_DIAGNOSTIC_DATA structure pointer [Storage Devices], STORAGE_DIAGNOSTIC_DATA, PSTORAGE_DIAGNOSTIC_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STORAGE_DIAGNOSTIC_DATA, *PSTORAGE_DIAGNOSTIC_DATA
+req.typenames : "*PSTORAGE_DIAGNOSTIC_DATA, STORAGE_DIAGNOSTIC_DATA"
 ---
 
 # _STORAGE_DIAGNOSTIC_DATA structure
@@ -87,9 +87,7 @@ Version of this structure.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntddstor.h |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : acd1a957-9a1f-48a5-849b-e0cb9f8e05b6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_OPENRESOURCE structure [Display Devices], D3D10DDIARG_OPENRESOURCE, display.d3d10ddiarg_openresource, UMDisplayDriver_Dx10param_Structs_bb0f1769-190c-4500-8efa-9ed3eab771f7.xml, d3d10umddi/D3D10DDIARG_OPENRESOURCE
+ms.keywords : d3d10umddi/D3D10DDIARG_OPENRESOURCE, UMDisplayDriver_Dx10param_Structs_bb0f1769-190c-4500-8efa-9ed3eab771f7.xml, D3D10DDIARG_OPENRESOURCE structure [Display Devices], D3D10DDIARG_OPENRESOURCE, display.d3d10ddiarg_openresource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -92,16 +92,14 @@ The user-mode display driver can insert the kernel-mode resource handle in the c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
-
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
+
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
 
  
 

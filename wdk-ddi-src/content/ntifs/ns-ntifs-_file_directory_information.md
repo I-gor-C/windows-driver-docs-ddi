@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 012c3178-f3a0-449b-b4a2-91fff4af1a17
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.file_directory_information, FILE_DIRECTORY_INFORMATION, ntifs/FILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION structure pointer [Installable File System Drivers], *PFILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION, fileinformationstructures_4ff53e27-9b59-46f0-8ca8-b4e1fb3e3905.xml, _FILE_DIRECTORY_INFORMATION, ntifs/PFILE_DIRECTORY_INFORMATION, FILE_DIRECTORY_INFORMATION structure [Installable File System Drivers]
+ms.keywords : FILE_DIRECTORY_INFORMATION structure [Installable File System Drivers], ifsk.file_directory_information, ntifs/FILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION structure pointer [Installable File System Drivers], _FILE_DIRECTORY_INFORMATION, *PFILE_DIRECTORY_INFORMATION, fileinformationstructures_4ff53e27-9b59-46f0-8ca8-b4e1fb3e3905.xml, FILE_DIRECTORY_INFORMATION, ntifs/PFILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -125,9 +125,6 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

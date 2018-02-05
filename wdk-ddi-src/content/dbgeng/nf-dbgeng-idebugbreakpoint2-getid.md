@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 991d8a40-1991-4c06-9557-9abee3ed8073
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint2, dbgeng/IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], GetId method, IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint::GetId, IDebugBreakpoint interface [Windows Debugging], GetId method, dbgeng/IDebugBreakpoint::GetId, ComOther_408e8e80-f34e-4895-9bae-66dbb0f9aa97.xml, GetId, GetId method [Windows Debugging], IDebugBreakpoint2 interface, debugger.getid
+ms.keywords : GetId method [Windows Debugging], IDebugBreakpoint interface [Windows Debugging], GetId method, IDebugBreakpoint::GetId, IDebugBreakpoint2, GetId, ComOther_408e8e80-f34e-4895-9bae-66dbb0f9aa97.xml, dbgeng/IDebugBreakpoint::GetId, IDebugBreakpoint2 interface [Windows Debugging], GetId method, debugger.getid, dbgeng/IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,11 +90,6 @@ For more information about how to use breakpoints, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

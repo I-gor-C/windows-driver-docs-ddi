@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 572477c7-8588-415e-b66f-adab977ab373
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntifs/NtQueryQuotaInformationFile, ntifs/ZwQueryQuotaInformationFile, ZwQueryQuotaInformationFile, k111_226a807c-d14d-403f-bbef-f5b4e6491039.xml, ZwQueryQuotaInformationFile routine [Kernel-Mode Driver Architecture], NtQueryQuotaInformationFile, kernel.zwqueryquotainformationfile
+ms.keywords : kernel.zwqueryquotainformationfile, ZwQueryQuotaInformationFile, ntifs/ZwQueryQuotaInformationFile, ZwQueryQuotaInformationFile routine [Kernel-Mode Driver Architecture], k111_226a807c-d14d-403f-bbef-f5b4e6491039.xml, NtQueryQuotaInformationFile, ntifs/NtQueryQuotaInformationFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -163,32 +163,31 @@ If the underlying file system does not support quota information (FAT and CDFS f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows operating systems. Available in Windows 7 and later versions of Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
+<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
 
-<a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
-
-<a href="..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md">IoCheckQuotaBufferValidity</a>
-
 <a href="..\ntifs\nf-ntifs-zwsetquotainformationfile.md">ZwSetQuotaInformationFile</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
+
 <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+
+<a href="..\ntifs\ns-ntifs-_file_quota_information.md">FILE_QUOTA_INFORMATION</a>
+
+<a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

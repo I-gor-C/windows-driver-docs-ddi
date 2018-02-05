@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : d6d90a4a-a67d-4ef3-82b8-7146970e30f3
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBD_ParseDescriptors, usbdlib/USBD_ParseDescriptors, USBD_ParseDescriptors routine [Buses], usbfunc_a66c16e5-451c-4d5b-a621-4c4969200acd.xml, buses.usbd_parsedescriptors
+ms.keywords : buses.usbd_parsedescriptors, usbfunc_a66c16e5-451c-4d5b-a621-4c4969200acd.xml, USBD_ParseDescriptors, USBD_ParseDescriptors routine [Buses], usbdlib/USBD_ParseDescriptors
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2"
+req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product : Windows 10 or later.
 ---
 
@@ -75,9 +75,9 @@ Specifies the descriptor type code as assigned by USB. The following values are 
 
 
 
-#### USB_STRING_DESCRIPTOR_TYPE
+#### USB_ENDPOINT_DESCRIPTOR_TYPE
 
-Specifies that the descriptor being searched for is a string descriptor.
+Specifies that the descriptor being searched for is an endpoint descriptor.
 
 
 #### USB_INTERFACE_DESCRIPTOR_TYPE
@@ -85,9 +85,9 @@ Specifies that the descriptor being searched for is a string descriptor.
 Specifies that the descriptor being searched for is an interface descriptor.
 
 
-#### USB_ENDPOINT_DESCRIPTOR_TYPE
+#### USB_STRING_DESCRIPTOR_TYPE
 
-Specifies that the descriptor being searched for is an endpoint descriptor.
+Specifies that the descriptor being searched for is a string descriptor.
 
 
 ## Return Value
@@ -103,14 +103,10 @@ When this routine parses the configuration descriptor looking for the descriptor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | usbdlib.h (include Usbdlib.h) |
-| **Library** |  |
+| **Library** | Usbd.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

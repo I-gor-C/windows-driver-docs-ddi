@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1406f6d7-7da9-4c1a-93c5-384b13fa5e81
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_SETSTREAMSOURCEUM, _D3DDDIARG_SETSTREAMSOURCEUM, UMDisplayDriver_param_Structs_783c5264-b293-4ddc-b269-c1cd3a66d431.xml, display.d3dddiarg_setstreamsourceum, D3DDDIARG_SETSTREAMSOURCEUM structure [Display Devices], d3dumddi/D3DDDIARG_SETSTREAMSOURCEUM
+ms.keywords : display.d3dddiarg_setstreamsourceum, d3dumddi/D3DDDIARG_SETSTREAMSOURCEUM, D3DDDIARG_SETSTREAMSOURCEUM structure [Display Devices], UMDisplayDriver_param_Structs_783c5264-b293-4ddc-b269-c1cd3a66d431.xml, D3DDDIARG_SETSTREAMSOURCEUM, _D3DDDIARG_SETSTREAMSOURCEUM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,9 +68,7 @@ In a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

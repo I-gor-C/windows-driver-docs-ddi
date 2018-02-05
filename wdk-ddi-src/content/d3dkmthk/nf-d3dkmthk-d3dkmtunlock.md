@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : d672d99a-973f-46b3-b46c-cb0a82a85ede
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTUnlock, display.d3dkmtunlock, D3DKMTUnlock function [Display Devices], OpenGL_Functions_6741960d-1f19-4000-948c-aeb71330eb1e.xml, D3DKMTUnlock
+ms.keywords : d3dkmthk/D3DKMTUnlock, display.d3dkmtunlock, OpenGL_Functions_6741960d-1f19-4000-948c-aeb71330eb1e.xml, D3DKMTUnlock, D3DKMTUnlock function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,14 +98,11 @@ All of the allocations that the <b>D3DKMTUnlock</b> function unlocks must belong
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

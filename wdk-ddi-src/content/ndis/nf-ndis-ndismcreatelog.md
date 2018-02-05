@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 804112cf-fc59-4a04-b848-4239b32e35d7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCreateLog, ndis/NdisMCreateLog, netvista.ndismcreatelog, miniport_logging_ref_e6ca8197-b4f0-4eb9-bfe4-f4b957a124c8.xml, NdisMCreateLog function [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndismcreatelog, miniport_logging_ref_e6ca8197-b4f0-4eb9-bfe4-f4b957a124c8.xml, NdisMCreateLog function [Network Drivers Starting with Windows Vista], ndis/NdisMCreateLog, NdisMCreateLog
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -140,12 +140,10 @@ Whatever size of log file is allocated, subsequent calls to
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCreateLog (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCreateLog (NDIS 5.1)) in   Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCreateLog (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCreateLog (NDIS 5.1)) in   Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
@@ -153,11 +151,11 @@ Whatever size of log file is allocated, subsequent calls to
 
 <a href="..\ndis\nf-ndis-ndismcloselog.md">NdisMCloseLog</a>
 
-<a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
 <a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
 
  
 

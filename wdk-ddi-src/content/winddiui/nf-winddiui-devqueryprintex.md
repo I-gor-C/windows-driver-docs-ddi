@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : f4cd0fe6-acdc-43e6-8dd7-7b547b1ec7cc
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DevQueryPrintEx function [Print Devices], winddiui/DevQueryPrintEx, print_interface-graphics_37504c69-c747-4758-928c-1ebd60e64c94.xml, print.devqueryprintex, DevQueryPrintEx
+ms.keywords : print.devqueryprintex, print_interface-graphics_37504c69-c747-4758-928c-1ebd60e64c94.xml, DevQueryPrintEx, winddiui/DevQueryPrintEx, DevQueryPrintEx function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -75,11 +75,7 @@ Displayable text strings should be defined as string resources in a resource fil
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Winspool.lib |
+| **DLL** | WinSpool.drv |

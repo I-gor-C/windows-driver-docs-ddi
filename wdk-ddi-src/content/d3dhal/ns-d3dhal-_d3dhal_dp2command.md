@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3fa32e5c-32d5-4e26-82b5-45dbf5389f2b
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2COMMAND, d3dhal/LPD3DHAL_DP2COMMAND, display.d3dhal_dp2command, D3DHAL_DP2COMMAND structure [Display Devices], d3dhal/D3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND, _D3DHAL_DP2COMMAND, *LPD3DHAL_DP2COMMAND, d3dstrct_9497e802-c325-4d08-ba6c-f482d17da6c5.xml, LPD3DHAL_DP2COMMAND structure pointer [Display Devices]
+ms.keywords : d3dstrct_9497e802-c325-4d08-ba6c-f482d17da6c5.xml, _D3DHAL_DP2COMMAND, LPD3DHAL_DP2COMMAND, LPD3DHAL_DP2COMMAND structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2COMMAND, d3dhal/D3DHAL_DP2COMMAND, display.d3dhal_dp2command, *LPD3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,20 +68,17 @@ Reserved for system use and should be ignored by the driver.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
-D3DDP2OP_TEXTURESTAGESTATE
+<a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>
 
 D3DDP2OP_RENDERSTATE
 
-<a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+
+D3DDP2OP_TEXTURESTAGESTATE
 
  
 

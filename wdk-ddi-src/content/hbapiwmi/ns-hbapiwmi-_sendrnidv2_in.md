@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : b9c0833d-96ac-41cb-815f-b2df27f46cb4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_SendRNIDV2_IN, PSendRNIDV2_IN structure pointer [Storage Devices], PSendRNIDV2_IN, hbapiwmi/SendRNIDV2_IN, *PSendRNIDV2_IN, SendRNIDV2_IN structure [Storage Devices], storage.sendrnidv2_in, hbapiwmi/PSendRNIDV2_IN, structs-Fibre_5411860d-c8c8-4f4d-b4cc-751973c3d02e.xml, SendRNIDV2_IN"
+ms.keywords : hbapiwmi/SendRNIDV2_IN, SendRNIDV2_IN, SendRNIDV2_IN structure [Storage Devices], hbapiwmi/PSendRNIDV2_IN, *PSendRNIDV2_IN, structs-Fibre_5411860d-c8c8-4f4d-b4cc-751973c3d02e.xml, _SendRNIDV2_IN, PSendRNIDV2_IN structure pointer [Storage Devices], PSendRNIDV2_IN, storage.sendrnidv2_in
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the SendRNIDV2_IN structure in <i>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

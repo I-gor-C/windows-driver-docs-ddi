@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 491b99c6-5531-4d24-83a4-c404b58d111c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfStringCreate method, PFN_WDFSTRINGCREATE, DFStringObjectRef_1c460976-7e49-45c8-9fdb-c6651048d387.xml, wdf.wdfstringcreate, kmdf.wdfstringcreate, wdfstring/WdfStringCreate, WdfStringCreate
+ms.keywords : WdfStringCreate, PFN_WDFSTRINGCREATE, kmdf.wdfstringcreate, wdfstring/WdfStringCreate, WdfStringCreate method, DFStringObjectRef_1c460976-7e49-45c8-9fdb-c6651048d387.xml, wdf.wdfstringcreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -131,22 +131,21 @@ For more information about framework string objects, see <a href="https://docs.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfstring.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
 <a href="..\wdfstring\nf-wdfstring-wdfstringgetunicodestring.md">WdfStringGetUnicodeString</a>
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

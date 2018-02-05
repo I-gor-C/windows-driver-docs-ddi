@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 37D56DC0-C35B-4651-93E9-28AF76041D5D
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_STOPFIXSESSION_PARAM structure [Sensor Devices], PGNSS_STOPFIXSESSION_PARAM structure pointer [Sensor Devices], gnssdriver/PGNSS_STOPFIXSESSION_PARAM, GNSS_STOPFIXSESSION_PARAM, gnssdriver/GNSS_STOPFIXSESSION_PARAM, sensors.gnss_stopfixsession_param, PGNSS_STOPFIXSESSION_PARAM, *PGNSS_STOPFIXSESSION_PARAM
+ms.keywords : gnssdriver/PGNSS_STOPFIXSESSION_PARAM, GNSS_STOPFIXSESSION_PARAM, *PGNSS_STOPFIXSESSION_PARAM, sensors.gnss_stopfixsession_param, PGNSS_STOPFIXSESSION_PARAM structure pointer [Sensor Devices], PGNSS_STOPFIXSESSION_PARAM, gnssdriver/GNSS_STOPFIXSESSION_PARAM, GNSS_STOPFIXSESSION_PARAM structure [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_STOPFIXSESSION_PARAM, *PGNSS_STOPFIXSESSION_PARAM
+req.typenames : "*PGNSS_STOPFIXSESSION_PARAM, GNSS_STOPFIXSESSION_PARAM"
 ---
 
 # GNSS_STOPFIXSESSION_PARAM structure
@@ -74,7 +74,4 @@ Version number.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

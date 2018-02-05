@@ -83,7 +83,7 @@ Specifies the number of native frames.
 
 `*StackSymFrames`
 
-
+A pointer to a symbol frames stack.
 
 `StackSymFramesFilled`
 
@@ -107,11 +107,5 @@ Stack dump provider must be enabled.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |

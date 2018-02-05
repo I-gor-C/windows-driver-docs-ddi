@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 44BAB9BF-76E6-42C2-B8DD-EB1A960C429C
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSystemObjects4::GetCurrentSystemServerNameWide, GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentSystemServerNameWide method, debugger.idebugsystemobjects4_getcurrentsystemservernamewide, IDebugSystemObjects4::GetCurrentSystemServerNameWide, GetCurrentSystemServerNameWide
+ms.keywords : GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4::GetCurrentSystemServerNameWide, GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4 interface [Windows Debugging], GetCurrentSystemServerNameWide method, GetCurrentSystemServerNameWide, dbgeng/IDebugSystemObjects4::GetCurrentSystemServerNameWide, debugger.idebugsystemobjects4_getcurrentsystemservernamewide, IDebugSystemObjects4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -92,14 +92,9 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : AADA3F1E-DEE8-42E3-B0B8-9EA276F46F86
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pep_processor_park_preference, PPEP_PROCESSOR_PARK_PREFERENCE structure pointer [Kernel-Mode Driver Architecture], PEP_PROCESSOR_PARK_PREFERENCE, pepfx/PPEP_PROCESSOR_PARK_PREFERENCE, PPEP_PROCESSOR_PARK_PREFERENCE, _PEP_PROCESSOR_PARK_PREFERENCE, *PPEP_PROCESSOR_PARK_PREFERENCE, PEP_PROCESSOR_PARK_PREFERENCE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PROCESSOR_PARK_PREFERENCE
+ms.keywords : PEP_PROCESSOR_PARK_PREFERENCE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PROCESSOR_PARK_PREFERENCE, PPEP_PROCESSOR_PARK_PREFERENCE, pepfx/PPEP_PROCESSOR_PARK_PREFERENCE, _PEP_PROCESSOR_PARK_PREFERENCE, PPEP_PROCESSOR_PARK_PREFERENCE structure pointer [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_PARK_PREFERENCE, PEP_PROCESSOR_PARK_PREFERENCE, kernel.pep_processor_park_preference
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_PROCESSOR_PARK_PREFERENCE, PEP_PROCESSOR_PARK_PREFERENCE"
+req.typenames : PEP_PROCESSOR_PARK_PREFERENCE, *PPEP_PROCESSOR_PARK_PREFERENCE
 ---
 
 # _PEP_PROCESSOR_PARK_PREFERENCE structure
@@ -97,18 +97,16 @@ The following table lists the three values that are defined for the <b>PoPrefere
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
+<a href="..\pepfx\ns-pepfx-_pep_ppm_park_selection.md">PEP_PPM_PARK_SELECTION</a>
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186812">PEP_NOTIFY_PPM_PARK_SELECTION</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
-
-<a href="..\pepfx\ns-pepfx-_pep_ppm_park_selection.md">PEP_PPM_PARK_SELECTION</a>
 
  
 

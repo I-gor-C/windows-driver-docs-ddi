@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : C9563635-66F3-4835-8153-DECB04580544
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcstreamresourcetype, PcStreamResourceType, ePcStreamResourceInterrupt, *PPcStreamResourceType, _PcStreamResourceType, ePcStreamResourceThread, PcStreamResourceType, *PPcStreamResourceType, portcls/PcStreamResourceType, portcls/ePcStreamResourceInterrupt, portcls/ePcStreamResourceThread, PcStreamResourceType enumeration [Audio Devices], ePcStreamResourceSet, PcStreamResourceType, *PPcStreamResourceType enumeration [Audio Devices], portcls/ePcStreamResourceSet
+ms.keywords : ePcStreamResourceSet, PcStreamResourceType, *PPcStreamResourceType, audio.pcstreamresourcetype, PcStreamResourceType, portcls/ePcStreamResourceInterrupt, *PPcStreamResourceType, PcStreamResourceType, *PPcStreamResourceType enumeration [Audio Devices], portcls/PcStreamResourceType, portcls/ePcStreamResourceThread, portcls/ePcStreamResourceSet, _PcStreamResourceType, ePcStreamResourceThread, PcStreamResourceType enumeration [Audio Devices], ePcStreamResourceInterrupt
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,7 +77,5 @@ Stream resources are any resources used by the audio driver to process audio str
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | portcls.h |

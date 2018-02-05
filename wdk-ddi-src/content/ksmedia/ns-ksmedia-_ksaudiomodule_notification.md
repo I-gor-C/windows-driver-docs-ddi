@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 92A9462C-0E8C-4012-9374-3437BB220502
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ksmedia/PKSAUDIOMODULE_NOTIFICATION, ksmedia/KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION structure pointer [Audio Devices], KSAUDIOMODULE_NOTIFICATION structure [Audio Devices], PKSAUDIOMODULE_NOTIFICATION, audio.ksaudiomodule_notification, _KSAUDIOMODULE_NOTIFICATION
+ms.keywords : ksmedia/PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION structure [Audio Devices], *PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION structure pointer [Audio Devices], audio.ksaudiomodule_notification, _KSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION, ksmedia/KSAUDIOMODULE_NOTIFICATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSAUDIOMODULE_NOTIFICATION, *PKSAUDIOMODULE_NOTIFICATION
+req.typenames : "*PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION"
 ---
 
 # _KSAUDIOMODULE_NOTIFICATION structure
@@ -86,7 +86,5 @@ For more information about audio modules, see  <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | ksmedia.h |

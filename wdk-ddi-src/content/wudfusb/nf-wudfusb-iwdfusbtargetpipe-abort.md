@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f756988d-8b21-4c2e-8c85-68f4eaa2c4f9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFUSBref_8b413047-741c-4d3c-a71e-d29a79e5226c.xml, umdf.iwdfusbtargetpipe_abort, IWDFUsbTargetPipe, Abort, IWDFUsbTargetPipe::Abort, Abort method, IWDFUsbTargetPipe interface, wdf.iwdfusbtargetpipe_abort, wudfusb/IWDFUsbTargetPipe::Abort, Abort method, IWDFUsbTargetPipe interface, Abort method
+ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe::Abort, Abort, wudfusb/IWDFUsbTargetPipe::Abort, UMDFUSBref_8b413047-741c-4d3c-a71e-d29a79e5226c.xml, Abort method, umdf.iwdfusbtargetpipe_abort, Abort method, IWDFUsbTargetPipe interface, IWDFUsbTargetPipe interface, Abort method, wdf.iwdfusbtargetpipe_abort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -109,20 +109,18 @@ For more information about how <b>Abort</b> works, see the <a href="https://msdn
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540202">WinUsb_AbortPipe</a>
+
+<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 
  
 

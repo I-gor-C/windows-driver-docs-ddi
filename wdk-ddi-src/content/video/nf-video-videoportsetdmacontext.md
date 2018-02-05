@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4f357612-c07d-42fe-a49f-59acec80a8bc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortSetDmaContext function [Display Devices], VideoPortSetDmaContext, video/VideoPortSetDmaContext, display.videoportsetdmacontext, VideoPort_Functions_8e20017f-9d32-45c9-8f68-10cc61b6591d.xml
+ms.keywords : video/VideoPortSetDmaContext, VideoPortSetDmaContext function [Display Devices], display.videoportsetdmacontext, VideoPortSetDmaContext, VideoPort_Functions_8e20017f-9d32-45c9-8f68-10cc61b6591d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,11 +79,8 @@ See <a href="https://msdn.microsoft.com/fe6c2e16-d222-4948-b1df-34ed8d57d9d8">Bu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |

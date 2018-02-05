@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 760f7bd8-0957-4dd0-b201-64173961cbb2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : procgrp_ba92a7bb-1a2b-4056-bebd-d9df299768c1.xml, procgrp/WdmlibProcgrpInitialize, kernel.wdmlibprocgrpinitialize, WdmlibProcgrpInitialize, WdmlibProcgrpInitialize function [Kernel-Mode Driver Architecture]
+ms.keywords : WdmlibProcgrpInitialize function [Kernel-Mode Driver Architecture], WdmlibProcgrpInitialize, procgrp_ba92a7bb-1a2b-4056-bebd-d9df299768c1.xml, kernel.wdmlibprocgrpinitialize, procgrp/WdmlibProcgrpInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,11 @@ None
 This function initializes the ProcGrp library. Call this function before calling any of the other functions in the ProcGrp library. The library implements wrapper functions that have the same names as the following processor-group <b>Ke<i>Xxx</i></b> routines in Windows 7:
 
 
-<a href="..\ntddk\nf-ntddk-kegetcurrentprocessornumberex.md">KeGetCurrentProcessorNumberEx</a>
+<a href="..\wdm\nf-wdm-kegetcurrentprocessornumberex.md">KeGetCurrentProcessorNumberEx</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
+<a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>
 
 
 
@@ -74,15 +74,15 @@ This function initializes the ProcGrp library. Call this function before calling
 
 
 
-<a href="..\ntddk\nf-ntddk-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
+<a href="..\wdm\nf-wdm-kequeryactivegroupcount.md">KeQueryActiveGroupCount</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequeryactiveprocessorcountex.md">KeQueryActiveProcessorCountEx</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-kequerygroupaffinity.md">KeQueryGroupAffinity</a>
+<a href="..\wdm\nf-wdm-kequerygroupaffinity.md">KeQueryGroupAffinity</a>
 
 
 
@@ -90,11 +90,11 @@ This function initializes the ProcGrp library. Call this function before calling
 
 
 
-<a href="..\ntddk\nf-ntddk-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a>
+<a href="..\wdm\nf-wdm-kequerymaximumprocessorcountex.md">KeQueryMaximumProcessorCountEx</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-kequerymaximumgroupcount.md">KeQueryMaximumGroupCount</a>
+<a href="..\wdm\nf-wdm-kequerymaximumgroupcount.md">KeQueryMaximumGroupCount</a>
 
 
 
@@ -122,11 +122,8 @@ For more information about the ProcGrp library, see <a href="https://msdn.micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Compatible with Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista, Windows Server 2003, Windows XP, and Windows 2000. Compatible with Windows 7, Windows Server 2008 R2, Windows Server 2008, Windows Vista, Windows Server 2003, Windows XP, and Windows 2000. |
+| **Target Platform** | Desktop |
 | **Header** | procgrp.h (include Procgrp.h) |
-| **Library** |  |
+| **Library** | Procgrp.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

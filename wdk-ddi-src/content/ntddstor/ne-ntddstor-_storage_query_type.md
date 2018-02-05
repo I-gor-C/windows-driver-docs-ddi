@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3f346a09-071e-4512-bf77-994d277cef4d
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/PropertyMaskQuery, ntddstor/STORAGE_QUERY_TYPE, PropertyQueryMaxDefined, structs-general_e76c71e4-e6ef-40d0-a0e7-5a21102efb1b.xml, storage.storage_query_type, ntddstor/PropertyExistsQuery, STORAGE_QUERY_TYPE, PropertyStandardQuery, ntddstor/PropertyStandardQuery, ntddstor/PropertyQueryMaxDefined, STORAGE_QUERY_TYPE enumeration [Storage Devices], PropertyMaskQuery, *PSTORAGE_QUERY_TYPE, PropertyExistsQuery, _STORAGE_QUERY_TYPE, PSTORAGE_QUERY_TYPE enumeration pointer [Storage Devices], ntddstor/PSTORAGE_QUERY_TYPE, PSTORAGE_QUERY_TYPE
+ms.keywords : PropertyExistsQuery, PropertyQueryMaxDefined, PSTORAGE_QUERY_TYPE, ntddstor/PSTORAGE_QUERY_TYPE, ntddstor/STORAGE_QUERY_TYPE, storage.storage_query_type, ntddstor/PropertyQueryMaxDefined, PropertyMaskQuery, STORAGE_QUERY_TYPE, STORAGE_QUERY_TYPE enumeration [Storage Devices], PropertyStandardQuery, ntddstor/PropertyStandardQuery, ntddstor/PropertyExistsQuery, ntddstor/PropertyMaskQuery, *PSTORAGE_QUERY_TYPE, PSTORAGE_QUERY_TYPE enumeration pointer [Storage Devices], _STORAGE_QUERY_TYPE, structs-general_e76c71e4-e6ef-40d0-a0e7-5a21102efb1b.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STORAGE_QUERY_TYPE, *PSTORAGE_QUERY_TYPE
+req.typenames : "*PSTORAGE_QUERY_TYPE, STORAGE_QUERY_TYPE"
 ---
 
 # _STORAGE_QUERY_TYPE Enumeration
@@ -85,18 +85,15 @@ Caller defines the exact nature of an <a href="..\ntddstor\ni-ntddstor-ioctl_sto
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h (include Ntddstor.h) |
 
 ## See Also
 
 <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a>
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>
+
+<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
 
  
 

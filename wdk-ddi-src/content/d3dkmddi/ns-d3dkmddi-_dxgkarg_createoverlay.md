@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f95ef083-2b2f-4e13-ad60-6bc7da0fec33
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_createoverlay, d3dkmddi/DXGKARG_CREATEOVERLAY, _DXGKARG_CREATEOVERLAY, DXGKARG_CREATEOVERLAY, *INOUT_PDXGKARG_CREATEOVERLAY, DmStructs_935ab2cb-070a-4700-8ace-62c4c44c42b5.xml, DXGKARG_CREATEOVERLAY structure [Display Devices]
+ms.keywords : "_DXGKARG_CREATEOVERLAY, DXGKARG_CREATEOVERLAY structure [Display Devices], *INOUT_PDXGKARG_CREATEOVERLAY, DXGKARG_CREATEOVERLAY, d3dkmddi/DXGKARG_CREATEOVERLAY, display.dxgkarg_createoverlay, DmStructs_935ab2cb-070a-4700-8ace-62c4c44c42b5.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct _DXGKARG_CREATEOVERLAY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

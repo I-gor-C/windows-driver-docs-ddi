@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a3552042-15e6-4778-8026-a4b615228dc7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlStringCchVPrintf, ntstrsafe/RtlStringCchVPrintfA, safestrings_7e5dc683-a092-4540-a6e5-81b72bae11ec.xml, RtlStringCchVPrintfA, RtlStringCchVPrintfW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchvprintf, ntstrsafe/RtlStringCchVPrintfW, RtlStringCchVPrintfW
+ms.keywords : ntstrsafe/RtlStringCchVPrintfW, RtlStringCchVPrintfA, RtlStringCchVPrintfW, kernel.rtlstringcchvprintf, safestrings_7e5dc683-a092-4540-a6e5-81b72bae11ec.xml, ntstrsafe/RtlStringCchVPrintfA, RtlStringCchVPrintf, RtlStringCchVPrintfW function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -193,20 +193,17 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md">RtlStringCchPrintf</a>
-
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchvprintfexw.md">RtlStringCchVPrintfEx</a>
+
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchprintfw.md">RtlStringCchPrintf</a>
 
 <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbvprintfw.md">RtlStringCbVPrintf</a>
 

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : BDB8179A-4A97-4E83-B4A4-7B8358B3510C
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.symbol_info_ex, PSYMBOL_INFO_EX structure pointer [Windows Debugging], dbgeng/PSYMBOL_INFO_EX, SYMBOL_INFO_EX structure [Windows Debugging], SYMBOL_INFO_EX, _SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX, dbgeng/SYMBOL_INFO_EX
+ms.keywords : debugger.symbol_info_ex, dbgeng/SYMBOL_INFO_EX, dbgeng/PSYMBOL_INFO_EX, PSYMBOL_INFO_EX structure pointer [Windows Debugging], SYMBOL_INFO_EX structure [Windows Debugging], PSYMBOL_INFO_EX, _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSYMBOL_INFO_EX, SYMBOL_INFO_EX"
+req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 # _SYMBOL_INFO_EX structure
@@ -86,7 +86,4 @@ Glue lines are code lines added to the binary by the compiler/linker. Glue lines
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dbgeng.h (include DbgEng.h) |

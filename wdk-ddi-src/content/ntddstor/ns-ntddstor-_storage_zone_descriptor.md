@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 33AE6D40-F54D-427D-B811-2188EA623A26
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSTORAGE_ZONE_DESCRIPTOR structure pointer [Storage Devices], *PSTORAGE_ZONE_DESCRIPTOR, ntddstor/STORAGE_ZONE_DESCRIPTOR, _STORAGE_ZONE_DESCRIPTOR, storage.storage_zone_descriptor, ntddstor/PSTORAGE_ZONE_DESCRIPTOR, PSTORAGE_ZONE_DESCRIPTOR, STORAGE_ZONE_DESCRIPTOR structure [Storage Devices], STORAGE_ZONE_DESCRIPTOR
+ms.keywords : PSTORAGE_ZONE_DESCRIPTOR, STORAGE_ZONE_DESCRIPTOR, *PSTORAGE_ZONE_DESCRIPTOR, STORAGE_ZONE_DESCRIPTOR structure [Storage Devices], ntddstor/PSTORAGE_ZONE_DESCRIPTOR, _STORAGE_ZONE_DESCRIPTOR, ntddstor/STORAGE_ZONE_DESCRIPTOR, storage.storage_zone_descriptor, PSTORAGE_ZONE_DESCRIPTOR structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : STORAGE_ZONE_DESCRIPTOR, *PSTORAGE_ZONE_DESCRIPTOR
+req.typenames : "*PSTORAGE_ZONE_DESCRIPTOR, STORAGE_ZONE_DESCRIPTOR"
 ---
 
 # _STORAGE_ZONE_DESCRIPTOR structure
@@ -90,7 +90,4 @@ N/A
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h |

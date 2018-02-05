@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ee0f458b-c8b3-46e7-87bd-25599d39203d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfFdoRetrieveNextStaticChild method, wdffdo/WdfFdoRetrieveNextStaticChild, WdfFdoRetrieveNextStaticChild, DFDeviceObjectFdoPdoRef_013cf620-08fe-4c72-8a5e-c7e38a37b503.xml, PFN_WDFFDORETRIEVENEXTSTATICCHILD, kmdf.wdffdoretrievenextstaticchild, wdf.wdffdoretrievenextstaticchild
+ms.keywords : WdfFdoRetrieveNextStaticChild method, wdffdo/WdfFdoRetrieveNextStaticChild, PFN_WDFFDORETRIEVENEXTSTATICCHILD, WdfFdoRetrieveNextStaticChild, kmdf.wdffdoretrievenextstaticchild, DFDeviceObjectFdoPdoRef_013cf620-08fe-4c72-8a5e-c7e38a37b503.xml, wdf.wdffdoretrievenextstaticchild
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -99,12 +99,10 @@ Call <a href="..\wdffdo\nf-wdffdo-wdffdounlockstaticchildlistfromiteration.md">W
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |
 

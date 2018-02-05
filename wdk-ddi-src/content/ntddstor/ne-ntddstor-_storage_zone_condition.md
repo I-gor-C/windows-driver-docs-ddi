@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 57FF3890-6B37-45EB-BB02-22B2ADDFAA90
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/ZoneConditionClosed, STORAGE_ZONE_CONDITION, ZoneConditionConventional, ZoneConditionReadOnly, ntddstor/ZoneConditionOffline, ZoneConditionOffline, storage.storage_zone_condition, ntddstor/ZoneConditionImplicitlyOpened, *PSTORAGE_ZONE_CONDITION, _STORAGE_ZONE_CONDITION, ntddstor/PSTORAGE_ZONE_CONDITION, ZoneConditionExplicitlyOpened, PSTORAGE_ZONE_CONDITION enumeration pointer [Storage Devices], ZoneConditionClosed, PSTORAGE_ZONE_CONDITION, ZoneConditionImplicitlyOpened, ZoneConditionFull, ntddstor/ZoneConditionExplicitlyOpened, ntddstor/ZoneConditionFull, ntddstor/ZoneConditionConventional, ZoneConditionEmpty, ntddstor/ZoneConditionEmpty, STORAGE_ZONE_CONDITION enumeration [Storage Devices], ntddstor/STORAGE_ZONE_CONDITION, ntddstor/ZoneConditionReadOnly
+ms.keywords : ntddstor/ZoneConditionReadOnly, _STORAGE_ZONE_CONDITION, ntddstor/ZoneConditionFull, ntddstor/ZoneConditionEmpty, ntddstor/STORAGE_ZONE_CONDITION, ntddstor/PSTORAGE_ZONE_CONDITION, ZoneConditionConventional, ntddstor/ZoneConditionClosed, storage.storage_zone_condition, ZoneConditionEmpty, ZoneConditionImplicitlyOpened, ntddstor/ZoneConditionConventional, ntddstor/ZoneConditionExplicitlyOpened, PSTORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION enumeration [Storage Devices], ZoneConditionFull, PSTORAGE_ZONE_CONDITION enumeration pointer [Storage Devices], ntddstor/ZoneConditionImplicitlyOpened, ZoneConditionClosed, ntddstor/ZoneConditionOffline, ZoneConditionOffline, ZoneConditionReadOnly, STORAGE_ZONE_CONDITION, ZoneConditionExplicitlyOpened
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION"
+req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # _STORAGE_ZONE_CONDITION Enumeration
@@ -105,7 +105,4 @@ typedef enum _STORAGE_ZONE_CONDITION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddstor.h |

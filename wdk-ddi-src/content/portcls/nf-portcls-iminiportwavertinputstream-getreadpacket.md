@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : F26F6820-B761-4DF3-B7D7-9C1B174DEEA2
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GetReadPacket, IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method, IMiniportWaveRTInputStream::GetReadPacket, portcls/IMiniportWaveRTInputStream::GetReadPacket, audio.iminiportwavertinputstream_getreadpacket, IMiniportWaveRTInputStream, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface, GetReadPacket method [Audio Devices]
+ms.keywords : audio.iminiportwavertinputstream_getreadpacket, GetReadPacket, portcls/IMiniportWaveRTInputStream::GetReadPacket, IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method, IMiniportWaveRTInputStream, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream::GetReadPacket, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -91,14 +91,11 @@ The packet size is the WaveRT buffer size divided by the NotificationCount passe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10 and later. Available in Windows 10 and later. |
+| **Target Platform** | Windows |
 | **Header** | portcls.h |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Passive level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

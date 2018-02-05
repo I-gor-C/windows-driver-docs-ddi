@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 32d3b680-298b-443e-a2c4-db8fc057bf75
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : AssignSxWakeSettings method, wdf.iwdfdevice2_assignsxwakesettings, wudfddi/IWDFDevice2::AssignSxWakeSettings, UMDFDeviceObjectRef_7e411333-6c21-4ed6-af60-b78f3a32bd65.xml, umdf.iwdfdevice2_assignsxwakesettings, AssignSxWakeSettings method, IWDFDevice2 interface, IWDFDevice2::AssignSxWakeSettings, IWDFDevice2 interface, AssignSxWakeSettings method, IWDFDevice2, AssignSxWakeSettings
+ms.keywords : IWDFDevice2::AssignSxWakeSettings, AssignSxWakeSettings method, umdf.iwdfdevice2_assignsxwakesettings, IWDFDevice2 interface, AssignSxWakeSettings method, AssignSxWakeSettings, wdf.iwdfdevice2_assignsxwakesettings, AssignSxWakeSettings method, IWDFDevice2 interface, wudfddi/IWDFDevice2::AssignSxWakeSettings, IWDFDevice2, UMDFDeviceObjectRef_7e411333-6c21-4ed6-af60-b78f3a32bd65.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -193,14 +193,12 @@ The following code example obtains the <a href="..\wudfddi\nn-wudfddi-iwdfdevice
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

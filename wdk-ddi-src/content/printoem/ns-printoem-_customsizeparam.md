@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 7ec0c38a-8614-417b-9ec3-678c7d80841f
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/PCUSTOMSIZEPARAM, _CUSTOMSIZEPARAM, print_unidrv-pscript_ui_ca016241-b74a-43d1-9b45-4deece484d10.xml, PCUSTOMSIZEPARAM, *PCUSTOMSIZEPARAM, printoem/CUSTOMSIZEPARAM, print.customsizeparam, CUSTOMSIZEPARAM, CUSTOMSIZEPARAM structure [Print Devices], PCUSTOMSIZEPARAM structure pointer [Print Devices]
+ms.keywords : CUSTOMSIZEPARAM structure [Print Devices], CUSTOMSIZEPARAM, printoem/PCUSTOMSIZEPARAM, printoem/CUSTOMSIZEPARAM, *PCUSTOMSIZEPARAM, PCUSTOMSIZEPARAM structure pointer [Print Devices], print_unidrv-pscript_ui_ca016241-b74a-43d1-9b45-4deece484d10.xml, _CUSTOMSIZEPARAM, print.customsizeparam, PCUSTOMSIZEPARAM
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CUSTOMSIZEPARAM, *PCUSTOMSIZEPARAM
+req.typenames : "*PCUSTOMSIZEPARAM, CUSTOMSIZEPARAM"
 req.product : Windows 10 or later.
 ---
 
@@ -72,9 +72,6 @@ The custom page size parameters include Width, Height, WidthOffset, HeightOffset
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : C2D32ABB-5ABE-4580-9577-1144569EA8E1
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4::GetManagedStatus, GetManagedStatus method [Windows Debugging], GetManagedStatus method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetManagedStatus method, debugger.idebugcontrol4_getmanagedstatus, dbgeng/IDebugControl4::GetManagedStatus, IDebugControl4, GetManagedStatus
+ms.keywords : GetManagedStatus, debugger.idebugcontrol4_getmanagedstatus, GetManagedStatus method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetManagedStatus, GetManagedStatus method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetManagedStatus method, dbgeng/IDebugControl4::GetManagedStatus, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -106,14 +106,9 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

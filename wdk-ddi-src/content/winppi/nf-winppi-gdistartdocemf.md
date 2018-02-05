@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : aca4534a-871e-4d86-b329-cb4f84611a29
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winppi/GdiStartDocEMF, GdiStartDocEMF function [Print Devices], gdifnc_11790088-e5fa-4817-a7d7-79c654814062.xml, GdiStartDocEMF, print.gdistartdocemf
+ms.keywords : GdiStartDocEMF, gdifnc_11790088-e5fa-4817-a7d7-79c654814062.xml, winppi/GdiStartDocEMF, print.gdistartdocemf, GdiStartDocEMF function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,10 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

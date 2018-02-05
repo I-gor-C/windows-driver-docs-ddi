@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : D2E6A110-EC0F-4753-BAF1-7A9F84ECDD35
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : BDA_GDDS_DATATYPE, stream.bda_gdds_datatype, *P_BDA_GDDS_DATATYPE, P_BDA_GDDS_DATATYPE, _BDA_GDDS_DATATYPE, P_BDA_GDDS_DATATYPE structure pointer [Streaming Media Devices], bdatypes/BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE structure [Streaming Media Devices], bdatypes/P_BDA_GDDS_DATATYPE
+ms.keywords : bdatypes/P_BDA_GDDS_DATATYPE, P_BDA_GDDS_DATATYPE, bdatypes/BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE structure [Streaming Media Devices], *P_BDA_GDDS_DATATYPE, stream.bda_gdds_datatype, _BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE, P_BDA_GDDS_DATATYPE structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE
+req.typenames : "*P_BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE"
 ---
 
 # _BDA_GDDS_DATATYPE structure
@@ -64,7 +64,4 @@ typedef struct _BDA_GDDS_DATATYPE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

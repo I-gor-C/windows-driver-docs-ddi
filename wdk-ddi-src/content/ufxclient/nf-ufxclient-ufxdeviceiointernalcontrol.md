@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 0AD4316E-67E7-4810-86DA-5DEB5C4E6DE6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UfxDeviceIoInternalControl, buses.ufxdeviceiointernalcontrol, ufxclient/UfxDeviceIoInternalControl, UfxDeviceIoInternalControl method [Buses]
+ms.keywords : UfxDeviceIoInternalControl, buses.ufxdeviceiointernalcontrol, UfxDeviceIoInternalControl method [Buses], ufxclient/UfxDeviceIoInternalControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -156,11 +156,8 @@ Arguments:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |

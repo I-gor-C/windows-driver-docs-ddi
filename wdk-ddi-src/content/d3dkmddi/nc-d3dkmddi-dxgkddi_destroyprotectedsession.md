@@ -73,11 +73,6 @@ Returns STATUS_SUCCESS when completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | d3dkmddi.h |
-| **Library** |  |
 | **IRQL** | requires_(PASSIVE_LEVEL) |
-| **DDI compliance rules** |  |

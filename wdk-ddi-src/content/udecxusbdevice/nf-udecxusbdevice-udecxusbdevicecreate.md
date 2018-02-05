@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 2AA67B06-F87F-47E3-A80F-154993BAF0E8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UdecxUsbDeviceCreate, udecxusbdevice/UdecxUsbDeviceCreate, buses.udecxusbdevicecreate, UdecxUsbDeviceCreate function [Buses]
+ms.keywords : udecxusbdevice/UdecxUsbDeviceCreate, UdecxUsbDeviceCreate function [Buses], UdecxUsbDeviceCreate, buses.udecxusbdevicecreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING
+req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,12 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxusbdevice.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

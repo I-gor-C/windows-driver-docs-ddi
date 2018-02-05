@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : b683518c-b4f4-4ae4-945d-8a2d064a5390
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMGetDmaAlignment, NdisMGetDmaAlignment function [Network Drivers Starting with Windows Vista], ndis/NdisMGetDmaAlignment, dma_ref_75f5af9e-a351-428c-a465-ccd747fcdd37.xml, netvista.ndismgetdmaalignment
+ms.keywords : netvista.ndismgetdmaalignment, ndis/NdisMGetDmaAlignment, dma_ref_75f5af9e-a351-428c-a465-ccd747fcdd37.xml, NdisMGetDmaAlignment function [Network Drivers Starting with Windows Vista], NdisMGetDmaAlignment
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -57,8 +57,8 @@ ULONG NdisMGetDmaAlignment(
 
 An NDIS handle that identifies the miniport adapter for the NIC. This handle was originally passed
      to the 
-     <mshelp:link keywords="netvista.miniportinitializeex" tabindex="0"><i>
-     MiniportInitializeEx</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     MiniportInitializeEx</a> function.
 
 
 ## Return Value
@@ -78,12 +78,10 @@ Returns a value that specifies the alignment requirements of the DMA system. The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "= PASSIVE_LEVEL" |
 | **DDI compliance rules** | Irql_Miniport_Driver_Function |
 
@@ -91,8 +89,8 @@ Returns a value that specifies the alignment requirements of the DMA system. The
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<mshelp:link keywords="netvista.ndismregisterscattergatherdma" tabindex="0"><b>
-   NdisMRegisterScatterGatherDma</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
+   NdisMRegisterScatterGatherDma</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : fb260c9b-dece-49ef-9701-d5198b8a08fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_c7ab87ad-4b9e-40f5-87fb-25ced2ec0dd8.xml, RtlFindLeastSignificantBit routine [Kernel-Mode Driver Architecture], kernel.rtlfindleastsignificantbit, RtlFindLeastSignificantBit, wdm/RtlFindLeastSignificantBit
+ms.keywords : kernel.rtlfindleastsignificantbit, RtlFindLeastSignificantBit routine [Kernel-Mode Driver Architecture], RtlFindLeastSignificantBit, wdm/RtlFindLeastSignificantBit, k109_c7ab87ad-4b9e-40f5-87fb-25ced2ec0dd8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,12 @@ The zero-based bit position of the least significant nonzero bit, or -1 if every
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

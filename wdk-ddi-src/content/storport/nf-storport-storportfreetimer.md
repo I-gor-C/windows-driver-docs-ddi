@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : AF6B1693-6242-4F09-8226-472E75B809F3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.storportfreetimer, StorPortFreeTimer, storport/StorPortFreeTimer, StorPortFreeTimer routine [Storage Devices]
+ms.keywords : StorPortFreeTimer routine [Storage Devices], storport/StorPortFreeTimer, StorPortFreeTimer, storage.storportfreetimer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -135,20 +135,17 @@ Miniports should call <b>StorPortFreeTimer</b> whenever a work item is no longer
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportrequesttimer.md">StorPortRequestTimer</a>
-
 <a href="..\storport\nf-storport-storportinitializetimer.md">StorPortInitializeTimer</a>
+
+<a href="..\storport\nf-storport-storportrequesttimer.md">StorPortRequestTimer</a>
 
 <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
 

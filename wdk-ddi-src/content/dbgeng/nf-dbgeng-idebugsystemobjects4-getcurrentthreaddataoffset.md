@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7837c049-fdca-4f90-9f38-2ec91ed8703b
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects2::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], dbgeng/IDebugSystemObjects::GetCurrentThreadDataOffset, debugger.getcurrentthreaddataoffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects::GetCurrentThreadDataOffset, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadDataOffset method, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects3::GetCurrentThreadDataOffset, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects4::GetCurrentThreadDataOffset, IDebugSystemObjects3::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentThreadDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects_5d09a9f7-d6a3-49ed-b872-1b9ee5173d28.xml, dbgeng/IDebugSystemObjects2::GetCurrentThreadDataOffset, dbgeng/IDebugSystemObjects4::GetCurrentThreadDataOffset
+ms.keywords : IDebugSystemObjects3::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadDataOffset method, GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects4, IDebugSystemObjects4::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects_5d09a9f7-d6a3-49ed-b872-1b9ee5173d28.xml, dbgeng/IDebugSystemObjects3::GetCurrentThreadDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects2::GetCurrentThreadDataOffset, dbgeng/IDebugSystemObjects4::GetCurrentThreadDataOffset, debugger.getcurrentthreaddataoffset, dbgeng/IDebugSystemObjects2::GetCurrentThreadDataOffset, IDebugSystemObjects::GetCurrentThreadDataOffset, dbgeng/IDebugSystemObjects::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadDataOffset method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,11 +88,6 @@ In kernel-mode debugging, the location returned is of the KTHREAD structure of t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 612fbfb7-2f10-45e8-8f99-1aba8fe79a5a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/WheaDataFormatIPFSalRecord, ntddk/WheaDataFormatMax, ntddk/WheaDataFormatPCIXBus, WheaDataFormatIPFSalRecord, ntddk/WheaDataFormatPCIExpress, whearef_19f75c8f-94d0-4837-ab44-e9ba9fbe51f7.xml, WheaDataFormatMemory, WheaDataFormatPCIXBus, WheaDataFormatNMIPort, *PWHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WheaDataFormatMemory, WheaDataFormatPCIXDevice, WHEA_ERROR_PACKET_DATA_FORMAT enumeration [WHEA Drivers and Applications], WHEA_ERROR_PACKET_DATA_FORMAT, WheaDataFormatGeneric, WheaDataFormatMax, ntddk/PWHEA_ERROR_PACKET_DATA_FORMAT, PWHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WheaDataFormatGeneric, ntddk/WheaDataFormatPCIXDevice, whea.whea_error_packet_data_format, WheaDataFormatXPFMCA, ntddk/WheaDataFormatXPFMCA, WheaDataFormatPCIExpress, PWHEA_ERROR_PACKET_DATA_FORMAT enumeration pointer [WHEA Drivers and Applications], ntddk/WheaDataFormatNMIPort, _WHEA_ERROR_PACKET_DATA_FORMAT
+ms.keywords : WHEA_ERROR_PACKET_DATA_FORMAT, WHEA_ERROR_PACKET_DATA_FORMAT enumeration [WHEA Drivers and Applications], whea.whea_error_packet_data_format, ntddk/WheaDataFormatGeneric, WheaDataFormatIPFSalRecord, WheaDataFormatPCIXDevice, PWHEA_ERROR_PACKET_DATA_FORMAT, *PWHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WheaDataFormatIPFSalRecord, ntddk/WheaDataFormatMax, ntddk/WheaDataFormatMemory, PWHEA_ERROR_PACKET_DATA_FORMAT enumeration pointer [WHEA Drivers and Applications], _WHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WheaDataFormatPCIExpress, whearef_19f75c8f-94d0-4837-ab44-e9ba9fbe51f7.xml, WheaDataFormatMax, ntddk/WheaDataFormatPCIXDevice, WheaDataFormatPCIXBus, WheaDataFormatGeneric, ntddk/PWHEA_ERROR_PACKET_DATA_FORMAT, WheaDataFormatNMIPort, WheaDataFormatPCIExpress, ntddk/WHEA_ERROR_PACKET_DATA_FORMAT, ntddk/WheaDataFormatNMIPort, ntddk/WheaDataFormatXPFMCA, ntddk/WheaDataFormatPCIXBus, WheaDataFormatXPFMCA, WheaDataFormatMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WHEA_ERROR_PACKET_DATA_FORMAT, *PWHEA_ERROR_PACKET_DATA_FORMAT
+req.typenames : "*PWHEA_ERROR_PACKET_DATA_FORMAT, WHEA_ERROR_PACKET_DATA_FORMAT"
 ---
 
 # _WHEA_ERROR_PACKET_DATA_FORMAT Enumeration
@@ -113,18 +113,16 @@ The <a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
 
 <a href="..\ntddk\ns-ntddk-_whea_error_packet_v2.md">WHEA_ERROR_PACKET_V2</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
 
  
 

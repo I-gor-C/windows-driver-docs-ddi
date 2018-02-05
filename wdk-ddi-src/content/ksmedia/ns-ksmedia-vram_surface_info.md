@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6fce78f7-a23e-4651-b6d8-b3d5387ccc27
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PVRAM_SURFACE_INFO structure pointer [Streaming Media Devices], *PVRAM_SURFACE_INFO, VRAM_SURFACE_INFO, ksmedia/VRAM_SURFACE_INFO, avstruct_ac2ca5de-0eea-453b-b3fd-79874fd2242a.xml, PVRAM_SURFACE_INFO, stream.vram_surface_info, ksmedia/PVRAM_SURFACE_INFO, VRAM_SURFACE_INFO structure [Streaming Media Devices]
+ms.keywords : "*PVRAM_SURFACE_INFO, PVRAM_SURFACE_INFO, VRAM_SURFACE_INFO structure [Streaming Media Devices], ksmedia/PVRAM_SURFACE_INFO, avstruct_ac2ca5de-0eea-453b-b3fd-79874fd2242a.xml, stream.vram_surface_info, PVRAM_SURFACE_INFO structure pointer [Streaming Media Devices], ksmedia/VRAM_SURFACE_INFO, VRAM_SURFACE_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVRAM_SURFACE_INFO, VRAM_SURFACE_INFO"
+req.typenames : VRAM_SURFACE_INFO, *PVRAM_SURFACE_INFO
 ---
 
 # VRAM_SURFACE_INFO structure
@@ -100,9 +100,6 @@ The data in these members persists for the lifetime of the stream header. When a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also

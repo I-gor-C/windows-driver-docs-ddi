@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2ff69f59-5fbd-43fd-afe5-9717d7928d2a
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsCompleteIo, IKsInterfaceHandler::KsCompleteIo, KsCompleteIo method [Streaming Media Devices], IKsInterfaceHandler interface, KsCompleteIo method [Streaming Media Devices], ksproxy/IKsInterfaceHandler::KsCompleteIo, IKsInterfaceHandler, stream.iksinterfacehandler_kscompleteio, IKsInterfaceHandler interface [Streaming Media Devices], KsCompleteIo method, ksproxy_3f49ef68-7608-4348-ba18-ffd3bb0e7808.xml
+ms.keywords : KsCompleteIo, ksproxy_3f49ef68-7608-4348-ba18-ffd3bb0e7808.xml, ksproxy/IKsInterfaceHandler::KsCompleteIo, stream.iksinterfacehandler_kscompleteio, KsCompleteIo method [Streaming Media Devices], IKsInterfaceHandler, IKsInterfaceHandler interface [Streaming Media Devices], KsCompleteIo method, IKsInterfaceHandler::KsCompleteIo, KsCompleteIo method [Streaming Media Devices], IKsInterfaceHandler interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -80,22 +80,17 @@ Calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560710"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559869">IKsInterfaceHandler::KsProcessMediaSamples</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560710">IKsPin::KsDeliver</a>
 
 <a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559869">IKsInterfaceHandler::KsProcessMediaSamples</a>
 
  
 

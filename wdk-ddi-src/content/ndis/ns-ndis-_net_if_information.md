@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5508650c-473c-4710-869e-053481e83f1b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NET_IF_INFORMATION, ndis/NET_IF_INFORMATION, _NET_IF_INFORMATION, PNET_IF_INFORMATION structure pointer [Network Drivers Starting with Windows Vista], NET_IF_INFORMATION structure [Network Drivers Starting with Windows Vista], *PNET_IF_INFORMATION, PNET_IF_INFORMATION, netvista.net_if_information, net_if_struct_ref_ceb46daa-0e14-4ed8-9f05-9cd064a57dfb.xml, ndis/PNET_IF_INFORMATION
+ms.keywords : PNET_IF_INFORMATION structure pointer [Network Drivers Starting with Windows Vista], PNET_IF_INFORMATION, NET_IF_INFORMATION structure [Network Drivers Starting with Windows Vista], _NET_IF_INFORMATION, ndis/NET_IF_INFORMATION, ndis/PNET_IF_INFORMATION, net_if_struct_ref_ceb46daa-0e14-4ed8-9f05-9cd064a57dfb.xml, NET_IF_INFORMATION, *PNET_IF_INFORMATION, netvista.net_if_information
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_IF_INFORMATION, NET_IF_INFORMATION"
+req.typenames : NET_IF_INFORMATION, *PNET_IF_INFORMATION
 ---
 
 # _NET_IF_INFORMATION structure
@@ -98,14 +98,14 @@ Flags that provide information about the interface that this structure describes
 
 
 
-#### NIIF_HARDWARE_INTERFACE
-
-Set if the network interface is for hardware.
-
-
 #### NIIF_FILTER_INTERFACE
 
 Set if the network interface is for a filter module.
+
+
+#### NIIF_HARDWARE_INTERFACE
+
+Set if the network interface is for hardware.
 
 
 #### NIIF_NDIS_RESERVED1
@@ -198,8 +198,8 @@ The offset of the current physical address, in bytes, from the beginning of this
 `PhysicalLocation`
 
 The physical location for the hardware that is associated with an interface specified in a 
-     <mshelp:link keywords="netvista.net_physical_location" tabindex="0"><b>
-     NET_PHYSICAL_LOCATION</b></mshelp:link> structure.
+     <a href="https://msdn.microsoft.com/e5661e05-a83f-4632-af98-2a021eeb7d80">
+     NET_PHYSICAL_LOCATION</a> structure.
 
 `PhysicalMediumType`
 
@@ -214,8 +214,8 @@ The NDIS port number for the interface.
 
 The statistics that the interface supports. For more information, see the 
      <b>SupportedStatistics</b> member of the 
-     <mshelp:link keywords="netvista.ndis_miniport_adapter_general_attributes" tabindex="0"><b>
-     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</b></mshelp:link> structure .
+     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
+     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure .
 
 `WanTunnelType`
 
@@ -227,8 +227,8 @@ The tunnelIfEncapsMethod (from
 A network interface provider initializes a NET_IF_INFORMATION structure to provide NDIS with
     information about a registered interface. To register an interface, a provider passes a pointer to a
     NET_IF_INFORMATION structure to the 
-    <mshelp:link keywords="netvista.ndisifregisterinterface" tabindex="0"><b>
-    NdisIfRegisterInterface</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">
+    NdisIfRegisterInterface</a> function.
 
 The interface provider should allocate enough memory for the structure and the arrays that the 
     <b>PhysAddressOffset</b>, 
@@ -239,41 +239,39 @@ The interface provider should allocate enough memory for the structure and the a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_miniport_adapter_general_attributes" tabindex="0"><b>
-   NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-statistics">OID_GEN_STATISTICS</a>
-
-<a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568750">NET_PHYSICAL_LOCATION</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a>
-
-<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
-
-<a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569074">OID_802_3_PERMANENT_ADDRESS</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
+   NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-gen-statistics">OID_GEN_STATISTICS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568750">NET_PHYSICAL_LOCATION</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
+
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a>
+
+<a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569621">OID_GEN_PHYSICAL_MEDIUM</a>
+
+<a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569074">OID_802_3_PERMANENT_ADDRESS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a>
 
  
 

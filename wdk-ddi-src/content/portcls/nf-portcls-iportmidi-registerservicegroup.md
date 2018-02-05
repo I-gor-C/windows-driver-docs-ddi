@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 8e6b967f-7114-4231-bcfc-23637cd83268
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/IPortMidi::RegisterServiceGroup, RegisterServiceGroup method [Audio Devices], IPortMidi interface [Audio Devices], RegisterServiceGroup method, audio.iportmidi_registerservicegroup, IPortMidi::RegisterServiceGroup, audmp-routines_ff2228bf-489d-4980-a317-e9cb89e4f394.xml, RegisterServiceGroup, RegisterServiceGroup method [Audio Devices], IPortMidi interface, IPortMidi
+ms.keywords : RegisterServiceGroup, IPortMidi::RegisterServiceGroup, portcls/IPortMidi::RegisterServiceGroup, IPortMidi, audio.iportmidi_registerservicegroup, RegisterServiceGroup method [Audio Devices], IPortMidi interface [Audio Devices], RegisterServiceGroup method, RegisterServiceGroup method [Audio Devices], IPortMidi interface, audmp-routines_ff2228bf-489d-4980-a317-e9cb89e4f394.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,22 +68,18 @@ The <i>ServiceGroup</i> parameter follows the <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
 
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 
  
 

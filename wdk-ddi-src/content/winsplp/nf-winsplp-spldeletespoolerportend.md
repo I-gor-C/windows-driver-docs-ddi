@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 947391B5-5355-4ADB-B26E-A51FE0B0B85F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winsplp/SplDeleteSpoolerPortEnd, SplDeleteSpoolerPortEnd function [Print Devices], print.spldeletespoolerportend, SplDeleteSpoolerPortEnd
+ms.keywords : SplDeleteSpoolerPortEnd, SplDeleteSpoolerPortEnd function [Print Devices], winsplp/SplDeleteSpoolerPortEnd, print.spldeletespoolerportend
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

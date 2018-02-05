@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2a59e6a1-d018-4b95-8e50-8351a3b69d86
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : protocol_ndis_functions_ref_4f57d0f9-c9bf-4451-a612-caa665d0b6be.xml, netvista.ndiscompletenetpnpevent, NdisCompleteNetPnPEvent, NdisCompleteNetPnPEvent function [Network Drivers Starting with Windows Vista], ndis/NdisCompleteNetPnPEvent
+ms.keywords : ndis/NdisCompleteNetPnPEvent, NdisCompleteNetPnPEvent, netvista.ndiscompletenetpnpevent, protocol_ndis_functions_ref_4f57d0f9-c9bf-4451-a612-caa665d0b6be.xml, NdisCompleteNetPnPEvent function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,8 +74,8 @@ TBD
 The protocol driver's response to the pending Plug and Play or Power Management event
      notification. To succeed such an event, specify NDIS_STATUS_SUCCESS. For information about other status
      values, see the return values of the 
-     <mshelp:link keywords="netvista.protocolnetpnpevent" tabindex="0"><i>
-     ProtocolNetPnPEvent</i></mshelp:link> function.
+     <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">
+     ProtocolNetPnPEvent</a> function.
 
 
 ## Return Value
@@ -93,22 +93,20 @@ When a protocol driver returns NDIS_STATUS_PENDING from its
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
+
+<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
 
  
 

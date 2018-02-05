@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a7db6bd2-7c04-4bfc-b4b4-db1f99520e56
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_FEATURE_DATA_MULTI_READ, ntddmmc/FEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ, PFEATURE_DATA_MULTI_READ structure pointer [Storage Devices], structs-CD-ROM_687fe1cb-1667-4650-97c5-d6e4af7df2af.xml, ntddmmc/PFEATURE_DATA_MULTI_READ, storage.feature_data_multi_read, FEATURE_DATA_MULTI_READ structure [Storage Devices], *PFEATURE_DATA_MULTI_READ, PFEATURE_DATA_MULTI_READ"
+ms.keywords : ntddmmc/FEATURE_DATA_MULTI_READ, *PFEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ structure [Storage Devices], _FEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ, storage.feature_data_multi_read, ntddmmc/PFEATURE_DATA_MULTI_READ, structs-CD-ROM_687fe1cb-1667-4650-97c5-d6e4af7df2af.xml, PFEATURE_DATA_MULTI_READ, PFEATURE_DATA_MULTI_READ structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FEATURE_DATA_MULTI_READ, *PFEATURE_DATA_MULTI_READ
+req.typenames : "*PFEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ"
 ---
 
 # _FEATURE_DATA_MULTI_READ structure
@@ -63,9 +63,6 @@ When queried, devices supporting this feature must return the information indica
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

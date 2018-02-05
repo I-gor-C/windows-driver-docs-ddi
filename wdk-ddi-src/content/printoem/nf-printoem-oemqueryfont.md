@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : cee6b2dd-e79b-4372-8371-c57fe950de88
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMQueryFont, OEMQueryFont function [Print Devices], printoem/OEMQueryFont, print_unidrv-pscript_rendering_52b50b2d-ab61-420f-be04-7285a5504be6.xml, print.oemqueryfont
+ms.keywords : printoem/OEMQueryFont, print_unidrv-pscript_rendering_52b50b2d-ab61-420f-be04-7285a5504be6.xml, print.oemqueryfont, OEMQueryFont function [Print Devices], OEMQueryFont
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

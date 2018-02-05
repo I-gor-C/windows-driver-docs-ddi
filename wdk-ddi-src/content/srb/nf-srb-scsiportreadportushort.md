@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : eb21d8ef-4ad5-48b3-8619-3ed5040652b0
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ScsiPortReadPortUshort routine [Storage Devices], srb/ScsiPortReadPortUshort, ScsiPortReadPortUshort, scsiprt_3b90fdff-db04-43ca-9c62-8552eed87feb.xml, storage.scsiportreadportushort
+ms.keywords : scsiprt_3b90fdff-db04-43ca-9c62-8552eed87feb.xml, srb/ScsiPortReadPortUshort, ScsiPortReadPortUshort routine [Storage Devices], ScsiPortReadPortUshort, storage.scsiportreadportushort
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -70,14 +70,9 @@ Pointer to the I/O port. The given <i>Port</i> must be in a mapped I/O-space ran
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

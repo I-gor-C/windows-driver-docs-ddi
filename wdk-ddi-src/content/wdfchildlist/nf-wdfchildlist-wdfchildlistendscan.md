@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 73891793-e59f-4c67-af93-07929d7c7326
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfchildlistendscan, WdfChildListEndScan, PFN_WDFCHILDLISTENDSCAN, DFDeviceObjectChildListRef_ffd03c13-6074-4679-bb87-b2c028fc8ded.xml, wdf.wdfchildlistendscan, WdfChildListEndScan method, wdfchildlist/WdfChildListEndScan
+ms.keywords : kmdf.wdfchildlistendscan, wdfchildlist/WdfChildListEndScan, WdfChildListEndScan, PFN_WDFCHILDLISTENDSCAN, wdf.wdfchildlistendscan, DFDeviceObjectChildListRef_ffd03c13-6074-4679-bb87-b2c028fc8ded.xml, WdfChildListEndScan method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,12 +75,10 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

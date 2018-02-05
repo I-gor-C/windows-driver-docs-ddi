@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 57ed4f33-6ce6-41ae-b424-147318ba7656
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeInitializeTimerEx routine [Kernel-Mode Driver Architecture], k105_62ca8d08-a87a-4cbd-80fa-18b646b8500d.xml, KeInitializeTimerEx, wdm/KeInitializeTimerEx, kernel.keinitializetimerex
+ms.keywords : wdm/KeInitializeTimerEx, KeInitializeTimerEx, KeInitializeTimerEx routine [Kernel-Mode Driver Architecture], k105_62ca8d08-a87a-4cbd-80fa-18b646b8500d.xml, kernel.keinitializetimerex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -84,28 +84,27 @@ Use <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a> or <a href="..\wdm\nf-w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | IrqlKeDispatchLte, HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
-
-<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
-
 <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
-
-<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
 
 <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
+
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
+
 <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
+
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
 
  
 

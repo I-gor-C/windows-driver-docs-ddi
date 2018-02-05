@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 844AB898-E6F0-4C75-9364-1BE31AAB88E7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelPacketGetExternalData function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelPacketGetExternalData, netvista.vmbchannelpacketgetexternaldata, VmbChannelPacketGetExternalData, VMBUS_CHANNEL_PACKET_EXTERNAL_DATA_FLAG_READ_ONLY
+ms.keywords : VMBUS_CHANNEL_PACKET_EXTERNAL_DATA_FLAG_READ_ONLY, netvista.vmbchannelpacketgetexternaldata, VmbChannelPacketGetExternalData, vmbuskernelmodeclientlibapi/VmbChannelPacketGetExternalData, VmbChannelPacketGetExternalData function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -115,26 +115,24 @@ An alternative to using a virtual address would be to just pass the MDL on down 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
+
+<a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
+
+<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
 <a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 
 <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelpacketcomplete.md">VmbChannelPacketComplete</a>
-
-<a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
-
-<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 
  
 

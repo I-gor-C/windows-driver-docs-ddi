@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5EA31AC4-FFAF-4AB8-B471-32B823F35D2F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SpoolerFreePrinterNotifyInfo, SpoolerFreePrinterNotifyInfo function [Print Devices], print.spoolerfreeprinternotifyinfo, winsplp/SpoolerFreePrinterNotifyInfo
+ms.keywords : SpoolerFreePrinterNotifyInfo function [Print Devices], winsplp/SpoolerFreePrinterNotifyInfo, SpoolerFreePrinterNotifyInfo, print.spoolerfreeprinternotifyinfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,11 +66,6 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

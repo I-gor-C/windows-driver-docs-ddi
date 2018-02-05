@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 99cfa1eb-3d0f-4e27-9884-f5789ee328c3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltOpenVolume, FltOpenVolume, FltOpenVolume routine [Installable File System Drivers], ifsk.fltopenvolume, FltApiRef_e_to_o_fa9d628c-94e6-46f5-9f8f-9923c554a15f.xml
+ms.keywords : FltApiRef_e_to_o_fa9d628c-94e6-46f5-9f8f-9923c554a15f.xml, FltOpenVolume routine [Installable File System Drivers], ifsk.fltopenvolume, fltkernel/FltOpenVolume, FltOpenVolume
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -114,28 +114,26 @@ To get detailed information about the volume that a given instance is attached t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system. Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltgetdeviceobject.md">FltGetDeviceObject</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltgetfilterfrominstance.md">FltGetFilterFromInstance</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltgetdeviceobject.md">FltGetDeviceObject</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
 
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+
 <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltclose.md">FltClose</a>
 
  
 

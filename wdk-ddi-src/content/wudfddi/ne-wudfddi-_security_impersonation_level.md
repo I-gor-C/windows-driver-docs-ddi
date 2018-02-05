@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5c325c16-6bc6-4eae-a58c-234d11616780
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : SecurityIdentification, umdfstructs_f81ccb0e-4b8c-4a8a-bdd3-4b4a45a750ab.xml, SECURITY_IMPERSONATION_LEVEL enumeration, SecurityDelegation, wudfddi/SecurityIdentification, wudfddi/SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, wudfddi/SecurityAnonymous, _SECURITY_IMPERSONATION_LEVEL, SecurityImpersonation, umdf.security_impersonation_level, SecurityAnonymous, wdf.security_impersonation_level, wudfddi/SecurityDelegation, wudfddi/SecurityImpersonation
+ms.keywords : wudfddi/SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, _SECURITY_IMPERSONATION_LEVEL, wudfddi/SecurityDelegation, SecurityDelegation, wdf.security_impersonation_level, wudfddi/SecurityImpersonation, SecurityIdentification, SECURITY_IMPERSONATION_LEVEL enumeration, SecurityAnonymous, wudfddi/SecurityAnonymous, wudfddi/SecurityIdentification, SecurityImpersonation, umdfstructs_f81ccb0e-4b8c-4a8a-bdd3-4b4a45a750ab.xml, umdf.security_impersonation_level
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -90,9 +90,6 @@ For more information about the security impersonation levels, see the <b>SECURIT
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wudfddi.h (include Wudfddi.h) |
 
 ## See Also

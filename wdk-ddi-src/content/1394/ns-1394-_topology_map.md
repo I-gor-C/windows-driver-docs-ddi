@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 0a4c7ffc-94f9-4068-b650-1da43e45d0ad
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : TOPOLOGY_MAP, 1394/TOPOLOGY_MAP, *PTOPOLOGY_MAP, 1394stct_4afaf64f-e60c-4521-91c7-82abefd49b55.xml, PTOPOLOGY_MAP, TOPOLOGY_MAP structure [Buses], 1394/PTOPOLOGY_MAP, _TOPOLOGY_MAP, PTOPOLOGY_MAP structure pointer [Buses], IEEE.topology_map
+ms.keywords : "_TOPOLOGY_MAP, 1394stct_4afaf64f-e60c-4521-91c7-82abefd49b55.xml, 1394/PTOPOLOGY_MAP, IEEE.topology_map, *PTOPOLOGY_MAP, PTOPOLOGY_MAP, 1394/TOPOLOGY_MAP, TOPOLOGY_MAP, PTOPOLOGY_MAP structure pointer [Buses], TOPOLOGY_MAP structure [Buses]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTOPOLOGY_MAP, TOPOLOGY_MAP"
+req.typenames : TOPOLOGY_MAP, *PTOPOLOGY_MAP
 ---
 
 # _TOPOLOGY_MAP structure
@@ -86,9 +86,6 @@ All data will be in big-endian format.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

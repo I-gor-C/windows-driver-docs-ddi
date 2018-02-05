@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3e4aa7fb-0dd4-4c45-ab5e-21342e9fb4d8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NdisMedium802_3, NdisMediumFddi, netvista.ndis_medium, ntddndis/NdisMediumCoWan, ntddndis/NdisMediumTunnel, ntddndis/NdisMediumWirelessWan, NdisMediumTunnel, NdisMediumCoWan, PNDIS_MEDIUM enumeration pointer [Network Drivers Starting with Windows Vista], *PNDIS_MEDIUM, ntddndis/NdisMediumLocalTalk, NdisMediumLoopback, NDIS_MEDIUM, NdisMediumIP, ntddndis/NdisMediumArcnetRaw, ntddndis/NdisMedium802_5, _NDIS_MEDIUM, NdisMediumLocalTalk, NdisMediumMax, NdisMediumArcnetRaw, NdisMediumAtm, ntddndis/PNDIS_MEDIUM, NdisMediumDix, ntddndis/NdisMediumBpc, ntddndis/NdisMediumArcnet878_2, NdisMediumInfiniBand, NdisMediumBpc, ntddndis/NDIS_MEDIUM, NdisMedium802_3, NdisMediumWirelessWan, NdisMediumNative802_11, PNDIS_MEDIUM, ntddndis/NdisMediumDix, NdisMedium1394, NdisMediumWan, protocol_structures_ref_3b154721-1574-4855-9028-704ce215eb91.xml, NDIS_MEDIUM enumeration [Network Drivers Starting with Windows Vista], ntddndis/NdisMediumIrda, ntddndis/NdisMediumNative802_11, NdisMediumIrda, ntddndis/NdisMediumWan, NdisMedium802_5, ntddndis/NdisMediumFddi, ntddndis/NdisMediumInfiniBand, ntddndis/NdisMediumMax, ntddndis/NdisMediumIP, ntddndis/NdisMediumAtm, NdisMediumArcnet878_2, ntddndis/NdisMedium1394, ntddndis/NdisMediumLoopback
+ms.keywords : NDIS_MEDIUM enumeration [Network Drivers Starting with Windows Vista], NdisMediumInfiniBand, NdisMediumCoWan, ntddndis/NdisMediumDix, ntddndis/NdisMediumIP, NdisMedium802_3, NdisMediumWirelessWan, ntddndis/NdisMediumAtm, ntddndis/NdisMediumArcnet878_2, NdisMediumArcnetRaw, NdisMediumAtm, ntddndis/NdisMediumWirelessWan, ntddndis/NdisMediumIrda, ntddndis/NdisMediumNative802_11, ntddndis/NdisMediumMax, *PNDIS_MEDIUM, NdisMediumBpc, ntddndis/NdisMediumLoopback, NDIS_MEDIUM, ntddndis/NdisMedium1394, NdisMediumIrda, ntddndis/NdisMedium802_5, netvista.ndis_medium, ntddndis/NdisMediumLocalTalk, ntddndis/NdisMediumFddi, _NDIS_MEDIUM, NdisMediumFddi, ntddndis/PNDIS_MEDIUM, PNDIS_MEDIUM, ntddndis/NdisMediumInfiniBand, NdisMediumWan, protocol_structures_ref_3b154721-1574-4855-9028-704ce215eb91.xml, NdisMedium802_5, NdisMediumDix, ntddndis/NdisMediumTunnel, ntddndis/NdisMediumArcnetRaw, PNDIS_MEDIUM enumeration pointer [Network Drivers Starting with Windows Vista], NdisMediumMax, ntddndis/NdisMediumBpc, NdisMediumIP, NdisMedium1394, NdisMediumLoopback, NdisMediumArcnet878_2, ntddndis/NdisMediumCoWan, ntddndis/NdisMediumWan, NdisMediumTunnel, ntddndis/NdisMedium802_3, NdisMediumNative802_11, ntddndis/NDIS_MEDIUM, NdisMediumLocalTalk
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -205,7 +205,5 @@ typedef enum _NDIS_MEDIUM {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 5.1, and NDIS 6.0 and later. Supported in NDIS 5.1, and NDIS 6.0 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |

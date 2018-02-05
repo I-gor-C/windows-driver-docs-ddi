@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 100fec4a-eebe-4a4d-b322-09afbe68ec5c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcCopyWrite routine [Installable File System Drivers], ntifs/CcCopyWrite, ifsk.cccopywrite, CcCopyWrite, ccref_97ca67a6-e212-42bb-8998-be458c792f7b.xml
+ms.keywords : CcCopyWrite routine [Installable File System Drivers], ifsk.cccopywrite, ccref_97ca67a6-e212-42bb-8998-be458c792f7b.xml, ntifs/CcCopyWrite, CcCopyWrite
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,14 +94,12 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows 2000 and later Windows operating systems. Available on Microsoft Windows 2000 and later Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 61dfdd09-1e2b-4771-a2c2-62454adc7832
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ccref_79641311-568b-472c-9950-2e46472affcf.xml, CcCoherencyFlushAndPurgeCache, ifsk.cccoherencyflushandpurgecache, ntifs/CcCoherencyFlushAndPurgeCache, CcCoherencyFlushAndPurgeCache routine [Installable File System Drivers]
+ms.keywords : CcCoherencyFlushAndPurgeCache, ccref_79641311-568b-472c-9950-2e46472affcf.xml, ntifs/CcCoherencyFlushAndPurgeCache, ifsk.cccoherencyflushandpurgecache, CcCoherencyFlushAndPurgeCache routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,14 +110,12 @@ An <i>IoStatus</i>-&gt;<i>Status </i>value of STATUS_CACHE_PAGE_LOCKED indicates
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later Available in Windows 7 and later |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

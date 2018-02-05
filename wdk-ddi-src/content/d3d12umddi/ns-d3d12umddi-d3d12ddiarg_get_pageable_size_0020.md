@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 82A5ACBD-EE18-46DF-822B-87ABF331BF44
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDIARG_GET_PAGEABLE_SIZE_0020, D3D12DDIARG_GET_PAGEABLE_SIZE_0020 structure [Display Devices], D3D12DDIARG_GET_PAGEABLE_SIZE_0020, display.d3d12ddiarg_get_pageable_size
+ms.keywords : d3d12umddi/D3D12DDIARG_GET_PAGEABLE_SIZE_0020, display.d3d12ddiarg_get_pageable_size, D3D12DDIARG_GET_PAGEABLE_SIZE_0020, D3D12DDIARG_GET_PAGEABLE_SIZE_0020 structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ The array of objects for which to get the pageable size.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |

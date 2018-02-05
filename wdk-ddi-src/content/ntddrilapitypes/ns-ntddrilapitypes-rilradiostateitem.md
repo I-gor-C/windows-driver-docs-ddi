@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 152e3b52-44e4-4ed7-bfc3-38d0c65725fd
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilradiostateitem, RILRADIOSTATEITEM, RILRADIOSTATEITEM structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
+ms.keywords : "*LPRILRADIOSTATEITEM, netvista.rilradiostateitem, ntddrilapitypes/RILRADIOSTATEITEM, RILRADIOSTATEITEM structure [Network Drivers Starting with Windows Vista], RILRADIOSTATEITEM"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILRADIOSTATEITEM, RILRADIOSTATEITEM"
+req.typenames : RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
 ---
 
 # RILRADIOSTATEITEM structure
@@ -95,7 +95,4 @@ typedef struct _RILRADIOSTATEITEM {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

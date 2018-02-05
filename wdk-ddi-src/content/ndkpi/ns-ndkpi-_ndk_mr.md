@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : F0585210-048E-4397-98E4-46640731E66C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndkpi/PNDK_MR, ndkpi/NDK_MR, _NDK_MR, netvista.ndk_mr, NDK_MR, PNDK_MR, PNDK_MR structure pointer [Network Drivers Starting with Windows Vista], NDK_MR structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndk_mr, ndkpi/NDK_MR, NDK_MR structure [Network Drivers Starting with Windows Vista], NDK_MR, PNDK_MR structure pointer [Network Drivers Starting with Windows Vista], PNDK_MR, ndkpi/PNDK_MR, _NDK_MR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,24 +66,22 @@ An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
-
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_mr.md">NDK_FN_CREATE_MR</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_mr_dispatch.md">NDK_MR_DISPATCH</a>
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_mr_dispatch.md">NDK_MR_DISPATCH</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
+
+<a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
 
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_mr.md">NDK_FN_CREATE_MR</a>
 
  
 

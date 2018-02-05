@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : bbd37342-f0d0-43e0-bc27-1b47c426da6e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print_obsoletefunctions_0eaf5d52-f558-401d-a06f-80925e997e3a.xml, OEMPrinterEvent, OEMPrinterEvent function [Print Devices], print.oemprinterevent, printoem/OEMPrinterEvent
+ms.keywords : OEMPrinterEvent function [Print Devices], OEMPrinterEvent, printoem/OEMPrinterEvent, print_obsoletefunctions_0eaf5d52-f558-401d-a06f-80925e997e3a.xml, print.oemprinterevent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

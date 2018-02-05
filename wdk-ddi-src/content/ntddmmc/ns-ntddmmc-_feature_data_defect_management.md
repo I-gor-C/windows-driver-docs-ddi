@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ff032dbd-8c84-4442-bbd5-a27b61617d47
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddmmc/PFEATURE_DATA_DEFECT_MANAGEMENT, *PFEATURE_DATA_DEFECT_MANAGEMENT, FEATURE_DATA_DEFECT_MANAGEMENT, PFEATURE_DATA_DEFECT_MANAGEMENT, FEATURE_DATA_DEFECT_MANAGEMENT structure [Storage Devices], storage.feature_data_defect_management, structs-CD-ROM_3c73a6a8-5a76-4a73-b3fa-cae137659fad.xml, PFEATURE_DATA_DEFECT_MANAGEMENT structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_DEFECT_MANAGEMENT, _FEATURE_DATA_DEFECT_MANAGEMENT
+ms.keywords : PFEATURE_DATA_DEFECT_MANAGEMENT structure pointer [Storage Devices], ntddmmc/PFEATURE_DATA_DEFECT_MANAGEMENT, FEATURE_DATA_DEFECT_MANAGEMENT structure [Storage Devices], structs-CD-ROM_3c73a6a8-5a76-4a73-b3fa-cae137659fad.xml, storage.feature_data_defect_management, _FEATURE_DATA_DEFECT_MANAGEMENT, *PFEATURE_DATA_DEFECT_MANAGEMENT, FEATURE_DATA_DEFECT_MANAGEMENT, PFEATURE_DATA_DEFECT_MANAGEMENT, ntddmmc/FEATURE_DATA_DEFECT_MANAGEMENT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FEATURE_DATA_DEFECT_MANAGEMENT, *PFEATURE_DATA_DEFECT_MANAGEMENT
+req.typenames : "*PFEATURE_DATA_DEFECT_MANAGEMENT, FEATURE_DATA_DEFECT_MANAGEMENT"
 ---
 
 # _FEATURE_DATA_DEFECT_MANAGEMENT structure
@@ -76,9 +76,6 @@ This structure holds data for the feature named "Defect Management" by the <i>SC
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

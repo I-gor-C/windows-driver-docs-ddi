@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 49dc9ed8-a506-475e-910f-5dce2ad9b168
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.videoportcreatesecondarydisplay, VideoPort_Functions_eda677fc-91b7-47d3-8407-615d5fbfcb3a.xml, VideoPortCreateSecondaryDisplay function [Display Devices], video/VideoPortCreateSecondaryDisplay, VideoPortCreateSecondaryDisplay
+ms.keywords : VideoPortCreateSecondaryDisplay, VideoPort_Functions_eda677fc-91b7-47d3-8407-615d5fbfcb3a.xml, display.videoportcreatesecondarydisplay, video/VideoPortCreateSecondaryDisplay, VideoPortCreateSecondaryDisplay function [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,11 +101,9 @@ The flags VIDEO_DUALVIEW_PRIMARY and VIDEO_DUALVIEW_SECONDARY, which are defined
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating systems. Available in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

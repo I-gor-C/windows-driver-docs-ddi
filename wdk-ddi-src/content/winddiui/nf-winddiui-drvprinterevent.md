@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 7566f92d-0e25-44bf-a2b3-587bb11a7d03
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DrvPrinterEvent, winddiui/DrvPrinterEvent, DrvPrinterEvent function [Print Devices], print.drvprinterevent, print_interface-graphics_5bfc5cb2-1835-4659-afa7-7b3bbb7ee051.xml
+ms.keywords : DrvPrinterEvent, print_interface-graphics_5bfc5cb2-1835-4659-afa7-7b3bbb7ee051.xml, winddiui/DrvPrinterEvent, print.drvprinterevent, DrvPrinterEvent function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWINBIO_VERSION, WINBIO_VERSION"
+req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
 req.product : Windows 10 or later.
 ---
 
@@ -212,11 +212,6 @@ An example of the type of file that might be stored in a client cache is a large
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winddiui.h (include Winddiui.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

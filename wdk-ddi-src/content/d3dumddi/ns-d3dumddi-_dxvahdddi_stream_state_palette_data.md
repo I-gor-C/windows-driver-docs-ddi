@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b71f3793-7856-4558-b205-7facf6d83a8c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVAHDDDI_STREAM_STATE_PALETTE_DATA, _DXVAHDDDI_STREAM_STATE_PALETTE_DATA, display.dxvahdddi_stream_state_palette_data, DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure [Display Devices], DXVAHDDDI_STREAM_STATE_PALETTE_DATA, DXVA2_Structs_4b156a58-d13f-4ffc-8ad0-3bdbb5dc7386.xml
+ms.keywords : DXVAHDDDI_STREAM_STATE_PALETTE_DATA, display.dxvahdddi_stream_state_palette_data, DXVA2_Structs_4b156a58-d13f-4ffc-8ad0-3bdbb5dc7386.xml, _DXVAHDDDI_STREAM_STATE_PALETTE_DATA, DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure [Display Devices], d3dumddi/DXVAHDDDI_STREAM_STATE_PALETTE_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,20 +78,18 @@ For more information about alpha blending, see <a href="..\d3dumddi\ns-d3dumddi-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_STREAM_STATE_PALETTE_DATA is supported beginning with the Windows 7 operating system. DXVAHDDDI_STREAM_STATE_PALETTE_DATA is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessstreamstate.md">SetVideoProcessStreamState</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a>
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
-
 <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_alpha_data.md">DXVAHDDDI_STREAM_STATE_ALPHA_DATA</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessstreamstate.md">SetVideoProcessStreamState</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
  
 

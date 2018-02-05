@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0AAEB2F1-0449-4F0E-807A-1D2420CF6858
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUnifiedPropertyStore, GetPropertyData method, IWDFUnifiedPropertyStore interface, umdf.iwdfunifiedpropertystore_getpropertydata, GetPropertyData method, IWDFUnifiedPropertyStore::GetPropertyData, wdf.iwdfunifiedpropertystore_getpropertydata, IWDFUnifiedPropertyStore interface, GetPropertyData method, GetPropertyData, wudfddi/IWDFUnifiedPropertyStore::GetPropertyData
+ms.keywords : IWDFUnifiedPropertyStore::GetPropertyData, wdf.iwdfunifiedpropertystore_getpropertydata, IWDFUnifiedPropertyStore, umdf.iwdfunifiedpropertystore_getpropertydata, GetPropertyData, wudfddi/IWDFUnifiedPropertyStore::GetPropertyData, GetPropertyData method, IWDFUnifiedPropertyStore interface, GetPropertyData method, IWDFUnifiedPropertyStore interface, GetPropertyData method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -161,28 +161,26 @@ For more information about accessing the registry, see <a href="https://docs.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
+<a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystorefactory.md">IWDFUnifiedPropertyStoreFactory</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451406">RetrieveUnifiedDevicePropertyStore</a>
 
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystore.md">IWDFUnifiedPropertyStore</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_property_store_root_class.md">WDF_PROPERTY_STORE_ROOT_CLASS</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystorefactory.md">IWDFUnifiedPropertyStoreFactory</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystore.md">IWDFUnifiedPropertyStore</a>
 
  
 

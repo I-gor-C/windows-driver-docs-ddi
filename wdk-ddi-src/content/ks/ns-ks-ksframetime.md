@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0e3beb72-2b00-41be-a7b4-341bcf065e92
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks-struct_3abc9b81-d7e7-455c-a577-2efa7c986cc5.xml, ks/KSFRAMETIME, PKSFRAMETIME, *PKSFRAMETIME, KSFRAMETIME, stream.ksframetime, KSFRAMETIME structure [Streaming Media Devices], ks/PKSFRAMETIME, PKSFRAMETIME structure pointer [Streaming Media Devices]
+ms.keywords : ks/PKSFRAMETIME, KSFRAMETIME, KSFRAMETIME structure [Streaming Media Devices], PKSFRAMETIME, stream.ksframetime, PKSFRAMETIME structure pointer [Streaming Media Devices], ks/KSFRAMETIME, *PKSFRAMETIME, ks-struct_3abc9b81-d7e7-455c-a577-2efa7c986cc5.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSFRAMETIME, *PKSFRAMETIME
+req.typenames : "*PKSFRAMETIME, KSFRAMETIME"
 ---
 
 # KSFRAMETIME structure
@@ -71,7 +71,4 @@ Note that this is an optional property, which need only be implemented if the pi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |

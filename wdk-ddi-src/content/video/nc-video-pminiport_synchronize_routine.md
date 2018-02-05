@@ -76,22 +76,16 @@ The miniport driver of an adapter that does not generate interrupts also can hav
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569908">SVGA Functions</a>
 
 <a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
-
-<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
 
  
 

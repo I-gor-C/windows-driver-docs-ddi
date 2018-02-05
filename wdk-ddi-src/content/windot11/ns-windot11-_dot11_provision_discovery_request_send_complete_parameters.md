@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E805581C-8DFF-4690-8BBF-6037A707F58C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, netvista.dot11_provision_discovery_request_send_complete_parameters, _DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, windot11/DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, windot11/PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS
+ms.keywords : windot11/DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, *PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, netvista.dot11_provision_discovery_request_send_complete_parameters, _DOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS, PDOT11_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -108,9 +108,7 @@ The offset, in bytes,  of the array of additional information elements (IEs) tha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with   Windows 8. Supported starting with   Windows 8. |
 | **Header** | windot11.h (include Windot11.h) |
 
 ## See Also

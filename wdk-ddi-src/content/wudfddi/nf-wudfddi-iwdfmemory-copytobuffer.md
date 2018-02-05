@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c5b34168-b3b8-4559-8b41-982f0a66f01d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFMemoryObjectRef_40ff2a7e-f93c-4f95-ba14-b7ade765ab2d.xml, CopyToBuffer method, IWDFMemory, umdf.iwdfmemory_copytobuffer, wudfddi/IWDFMemory::CopyToBuffer, wdf.iwdfmemory_copytobuffer, IWDFMemory interface, CopyToBuffer method, CopyToBuffer, IWDFMemory::CopyToBuffer, CopyToBuffer method, IWDFMemory interface
+ms.keywords : umdf.iwdfmemory_copytobuffer, CopyToBuffer method, IWDFMemory interface, CopyToBuffer method, IWDFMemory, IWDFMemory::CopyToBuffer, CopyToBuffer, CopyToBuffer method, IWDFMemory interface, wdf.iwdfmemory_copytobuffer, wudfddi/IWDFMemory::CopyToBuffer, UMDFMemoryObjectRef_40ff2a7e-f93c-4f95-ba14-b7ade765ab2d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -78,14 +78,12 @@ The number of bytes to copy to the buffer that <i>pTargetBuffer</i> points to.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

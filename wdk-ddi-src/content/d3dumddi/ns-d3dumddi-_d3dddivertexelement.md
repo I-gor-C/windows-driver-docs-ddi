@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : acb0fc1d-e360-4cb9-9b3b-7d8d03146cfd
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D_other_Structs_7f1e4f94-3964-4deb-b3b0-1b47f8953dfa.xml, D3DDDIVERTEXELEMENT structure [Display Devices], D3DDDIVERTEXELEMENT, display.d3dddivertexelement, _D3DDDIVERTEXELEMENT, d3dumddi/D3DDDIVERTEXELEMENT
+ms.keywords : D3DDDIVERTEXELEMENT, D3D_other_Structs_7f1e4f94-3964-4deb-b3b0-1b47f8953dfa.xml, _D3DDDIVERTEXELEMENT, display.d3dddivertexelement, d3dumddi/D3DDDIVERTEXELEMENT, D3DDDIVERTEXELEMENT structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,7 @@ typedef struct _D3DDDIVERTEXELEMENT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : EAFC6B53-98E9-46A4-9D45-56B0A32993B1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceOpenDevicemapKey, WdfDeviceOpenDevicemapKey, wdf.wdfdeviceopendevicemapkey, WdfDeviceOpenDevicemapKey method
+ms.keywords : WdfDeviceOpenDevicemapKey method, wdf.wdfdeviceopendevicemapkey, wdfdevice/WdfDeviceOpenDevicemapKey, WdfDeviceOpenDevicemapKey
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -158,20 +158,18 @@ For more information about the registry, hardware and software keys, and registr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a>
-
 <a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a>
 
  
 

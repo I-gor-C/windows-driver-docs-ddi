@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 53ad769e-38b5-463d-9fa0-053c2215cc81
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : image.iwiasegmentationfilter_detectregions, DetectRegions method [Imaging Devices], IWiaSegmentationFilter interface, DetectRegions, IWiaSegmentationFilter, IWiaSegmentationFilter interface [Imaging Devices], DetectRegions method, iwiasegmentationfilter_d819daf8-a36c-448c-a566-bb3c864cea40.xml, IWiaSegmentationFilter::DetectRegions, wia_lh/IWiaSegmentationFilter::DetectRegions, DetectRegions method [Imaging Devices]
+ms.keywords : IWiaSegmentationFilter::DetectRegions, iwiasegmentationfilter_d819daf8-a36c-448c-a566-bb3c864cea40.xml, IWiaSegmentationFilter, DetectRegions method [Imaging Devices], DetectRegions method [Imaging Devices], IWiaSegmentationFilter interface, wia_lh/IWiaSegmentationFilter::DetectRegions, IWiaSegmentationFilter interface [Imaging Devices], DetectRegions method, image.iwiasegmentationfilter_detectregions, DetectRegions
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -105,11 +105,6 @@ The <b>IStream,IWiaItem2</b> and <b>IWiaPropertyStorage </b>interfaces are descr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wia_lh.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wia_lh.h |

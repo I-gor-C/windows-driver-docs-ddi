@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 5d243704-7424-4738-b122-6b9467eb5916
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_SendRPS_OUT, SendRPS_OUT, hbapiwmi/SendRPS_OUT, *PSendRPS_OUT, SendRPS_OUT structure [Storage Devices], storage.sendrps_out, structs-Fibre_0c81817b-666f-4b2b-8ae2-2342894d7c46.xml"
+ms.keywords : SendRPS_OUT, *PSendRPS_OUT, hbapiwmi/SendRPS_OUT, structs-Fibre_0c81817b-666f-4b2b-8ae2-2342894d7c46.xml, _SendRPS_OUT, SendRPS_OUT structure [Storage Devices], storage.sendrps_out
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : SendRPS_OUT, *PSendRPS_OUT
+req.typenames : "*PSendRPS_OUT, SendRPS_OUT"
 ---
 
 # _SendRPS_OUT structure
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the SendRPS_OUT structure in <i>Hb
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

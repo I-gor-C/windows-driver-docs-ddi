@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 356D4CFD-E256-4920-AAB7-D6399F357591
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltReadFileEx function [Installable File System Drivers], ifsk.fltreadfileex, fltkernel/FltReadFileEx, FltReadFileEx
+ms.keywords : ifsk.fltreadfileex, FltReadFileEx, FltReadFileEx function [Installable File System Drivers], fltkernel/FltReadFileEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -209,34 +209,32 @@ The <i>Mdl</i> parameter is provided as a convenience when a minifilter already 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The FltReadFileEx function is available starting with  Windows 8. The FltReadFileEx function is available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
-
-<a href="..\fltkernel\nf-fltkernel-fltwritefileex.md">FltWriteFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
 
 <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>
 
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
+
+<a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
+
 <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefileex.md">FltWriteFileEx</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 
  
 

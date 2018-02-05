@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ABF392BD-7B05-417E-AFD8-4EE7E64F9FC2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlUIntAdd, RtlUIntAdd, RtlUIntAdd function [Kernel-Mode Driver Architecture], kernel.rtluintadd
+ms.keywords : ntintsafe/RtlUIntAdd, RtlUIntAdd function [Kernel-Mode Driver Architecture], RtlUIntAdd, kernel.rtluintadd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,11 +85,6 @@ RtlUInt32Add
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

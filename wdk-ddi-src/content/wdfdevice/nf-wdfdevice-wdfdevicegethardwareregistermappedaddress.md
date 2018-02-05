@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 4D172D39-0D28-4950-B428-330D5B4D0654
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetHardwareRegisterMappedAddress, wdfdevice/WdfDeviceGetHardwareRegisterMappedAddress, PFN_WDFDEVICEGETHARDWAREREGISTERMAPPEDADDRESS, wdf.wdfdevicegethardwareregistermappedaddress, WdfDeviceGetHardwareRegisterMappedAddress function
+ms.keywords : PFN_WDFDEVICEGETHARDWAREREGISTERMAPPEDADDRESS, WdfDeviceGetHardwareRegisterMappedAddress, wdfdevice/WdfDeviceGetHardwareRegisterMappedAddress, wdf.wdfdevicegethardwareregistermappedaddress, WdfDeviceGetHardwareRegisterMappedAddress function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,20 +85,19 @@ If you do use <b>WdfDeviceGetHardwareRegisterMappedAddress</b>, you must set the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>
-
 <a href="https://msdn.microsoft.com/94852404-301F-4C09-81D2-CEDEECFCD6BD">IWDFDevice3::GetHardwareRegisterMappedAddress</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>
 
  
 

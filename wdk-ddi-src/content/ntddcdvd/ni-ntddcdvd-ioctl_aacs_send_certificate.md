@@ -73,6 +73,4 @@ The IOCTL_AACS_SEND_CERTIFICATE request corresponds to the step in the Advanced 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddcdvd.h (include Ntddcdvd.h) |
-| **IRQL** |  |

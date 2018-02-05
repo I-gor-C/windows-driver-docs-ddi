@@ -137,8 +137,8 @@ Indicates that
     necessary for its media, to drop a party from an existing multipoint call. If the call manager is
     required to communicated with network control agents (such as, a networking switch) it should use a
     virtual connection to the network control agents that it established in its 
-    <mshelp:link keywords="netvista.protocolbindadapterex" tabindex="0"><i>
-    ProtocolBindAdapterEx</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">
+    ProtocolBindAdapterEx</a> function.
 
 If 
     <i>CloseData</i> is non-<b>NULL</b> and sending data at connection termination is supported by its media type,
@@ -186,20 +186,16 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a>
-
 <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
+
+<a href="..\ndis\nf-ndis-ndiscmdroppartycomplete.md">NdisCmDropPartyComplete</a>
 
  
 

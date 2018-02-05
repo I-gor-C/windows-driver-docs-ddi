@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1723672b-aff7-49ca-a027-14a6eb3c2196
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisReadRegisterUchar macro [Network Drivers Starting with Windows Vista], ndis/NdisReadRegisterUchar, miniport_register_ref_04023727-eaf7-45fb-b70d-5a67eda4a54d.xml, netvista.ndisreadregisteruchar, NdisReadRegisterUchar
+ms.keywords : NdisReadRegisterUchar, miniport_register_ref_04023727-eaf7-45fb-b70d-5a67eda4a54d.xml, ndis/NdisReadRegisterUchar, netvista.ndisreadregisteruchar, NdisReadRegisterUchar macro [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -78,24 +78,21 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUchar (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUchar (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUchar (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUchar (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndisreadregisterulong.md">NdisReadRegisterUlong</a>
 
 <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 
 <a href="..\ndis\nf-ndis-ndiswriteregisteruchar.md">NdisWriteRegisterUchar</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<a href="..\ndis\nf-ndis-ndisreadregisterulong.md">NdisReadRegisterUlong</a>
 
 <a href="..\ndis\nf-ndis-ndisreadregisterushort.md">NdisReadRegisterUshort</a>
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 38601573-750f-46fc-ae04-cef0d90d9ea9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exflushlookasidelistex, k102_bb02a725-bc22-4c22-91f2-0232c1cb0f1f.xml, ExFlushLookasideListEx routine [Kernel-Mode Driver Architecture], wdm/ExFlushLookasideListEx, ExFlushLookasideListEx
+ms.keywords : ExFlushLookasideListEx routine [Kernel-Mode Driver Architecture], ExFlushLookasideListEx, k102_bb02a725-bc22-4c22-91f2-0232c1cb0f1f.xml, kernel.exflushlookasidelistex, wdm/ExFlushLookasideListEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,14 +71,12 @@ For more information about lookaside lists, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

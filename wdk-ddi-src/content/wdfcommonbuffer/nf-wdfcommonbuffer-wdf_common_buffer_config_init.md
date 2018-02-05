@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a678516a-159f-42bc-b135-489677452472
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_COMMON_BUFFER_CONFIG_INIT function, wdf.wdf_common_buffer_config_init, wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG_INIT, kmdf.wdf_common_buffer_config_init, WDF_COMMON_BUFFER_CONFIG_INIT, DFCommonBufferObjectRef_23c5b41e-89ce-448c-86fa-3ae4e688b378.xml
+ms.keywords : wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG_INIT, kmdf.wdf_common_buffer_config_init, WDF_COMMON_BUFFER_CONFIG_INIT, wdf.wdf_common_buffer_config_init, DFCommonBufferObjectRef_23c5b41e-89ce-448c-86fa-3ae4e688b378.xml, WDF_COMMON_BUFFER_CONFIG_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,10 @@ The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function zeros the specified <a href=".
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfcommonbuffer.h (include WdfCommonBuffer.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

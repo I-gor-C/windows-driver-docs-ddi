@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C67EA467-D344-44D0-93E8-29D29A3A586B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OnD0ExitPreInterruptsDisabled method, umdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, IPnpCallbackHardwareInterrupt, wudfddi/IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, wdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled, IPnpCallbackHardwareInterrupt interface, OnD0ExitPreInterruptsDisabled method, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt interface, IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled
+ms.keywords : wudfddi/IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, wdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled, IPnpCallbackHardwareInterrupt interface, OnD0ExitPreInterruptsDisabled method, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt, IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, umdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,11 @@ For more information, see <a href="https://msdn.microsoft.com/432907e7-05a3-4a99
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 

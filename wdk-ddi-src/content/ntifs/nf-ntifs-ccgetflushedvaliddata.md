@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : a0e3700a-768f-4025-b5f2-715e25e1d10d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcGetFlushedValidData routine [Installable File System Drivers], ifsk.ccgetflushedvaliddata, ntifs/CcGetFlushedValidData, CcGetFlushedValidData, ccref_021f04d4-537c-49a3-bfac-8eeea908c100.xml
+ms.keywords : ccref_021f04d4-537c-49a3-bfac-8eeea908c100.xml, ntifs/CcGetFlushedValidData, ifsk.ccgetflushedvaliddata, CcGetFlushedValidData routine [Installable File System Drivers], CcGetFlushedValidData
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,11 @@ The file system is responsible for ensuring that the value of <i>SectionObjectPo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available on Microsoft Windows 2000 and later. Available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

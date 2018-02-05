@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4138be92-1f54-4478-8fbb-951f1d06cb66
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_SMS_CDMA_RECORD structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SMS_CDMA_RECORD, wwan/WWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD, WwanRef_3356fcf9-99f2-4c07-89d5-fa73019f9a27.xml, _WWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD structure pointer [Network Drivers Starting with Windows Vista], WWAN_SMS_CDMA_RECORD, netvista.wwan_sms_cdma_record, *PWWAN_SMS_CDMA_RECORD
+ms.keywords : WwanRef_3356fcf9-99f2-4c07-89d5-fa73019f9a27.xml, _WWAN_SMS_CDMA_RECORD, *PWWAN_SMS_CDMA_RECORD, wwan/WWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_cdma_record, WWAN_SMS_CDMA_RECORD structure [Network Drivers Starting with Windows Vista], WWAN_SMS_CDMA_RECORD, wwan/PWWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -173,16 +173,14 @@ Size of
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
-
 <a href="..\wwan\ne-wwan-_wwan_sms_cdma_lang.md">WWAN_SMS_CDMA_LANG</a>
+
+<a href="..\wwan\ne-wwan-_wwan_sms_cdma_encoding.md">WWAN_SMS_CDMA_ENCODING</a>
 
 <a href="..\wwan\ne-wwan-_wwan_msg_status.md">WWAN_MSG_STATUS</a>
 

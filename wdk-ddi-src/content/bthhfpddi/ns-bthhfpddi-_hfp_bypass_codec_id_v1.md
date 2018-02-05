@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : FB618271-A1E9-4F47-97DC-F4ACAA01028C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1 structure [Audio Devices], PHFP_BYPASS_CODEC_ID_V1 structure pointer [Audio Devices], bthhfpddi/HFP_BYPASS_CODEC_ID_V1, bthhfpddi/PHFP_BYPASS_CODEC_ID_V1, _HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1, audio.hfp_bypass_codec_id_v1
+ms.keywords : HFP_BYPASS_CODEC_ID_V1, bthhfpddi/PHFP_BYPASS_CODEC_ID_V1, bthhfpddi/HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1 structure [Audio Devices], PHFP_BYPASS_CODEC_ID_V1 structure pointer [Audio Devices], _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, audio.hfp_bypass_codec_id_v1, PHFP_BYPASS_CODEC_ID_V1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,9 +77,7 @@ The codec ID can be any of the values in the following table.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | bthhfpddi.h |
 
 ## See Also

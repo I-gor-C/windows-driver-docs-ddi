@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : c4410845-3c7b-445e-80ec-25694b122a0e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : winbio_ioctl/PWINBIO_SET_INDICATOR, PWINBIO_SET_INDICATOR, winbio_ioctl/WINBIO_SET_INDICATOR, biometric.winbio_set_indicator, _WINBIO_SET_INDICATOR, PWINBIO_SET_INDICATOR structure pointer [Biometric Devices], biometric_ref_2ee60af8-1872-4932-9db7-9c3c27e29ddf.xml, WINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR structure [Biometric Devices], *PWINBIO_SET_INDICATOR
+ms.keywords : biometric_ref_2ee60af8-1872-4932-9db7-9c3c27e29ddf.xml, PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR structure [Biometric Devices], winbio_ioctl/WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR, _WINBIO_SET_INDICATOR, biometric.winbio_set_indicator, PWINBIO_SET_INDICATOR structure pointer [Biometric Devices], winbio_ioctl/PWINBIO_SET_INDICATOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -99,9 +99,7 @@ Specifies the total size of the payload, which includes the fixed length structu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |
 
 ## See Also

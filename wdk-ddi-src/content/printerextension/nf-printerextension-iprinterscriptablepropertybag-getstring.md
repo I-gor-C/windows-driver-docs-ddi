@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : FA14B81D-0B51-4C07-96BC-38CAABED735A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetString, print.iprinterscriptablepropertybag_getstring, IPrinterScriptablePropertyBag interface [Print Devices], GetString method, GetString method [Print Devices], GetString method [Print Devices], IPrinterScriptablePropertyBag interface, printerextension/IPrinterScriptablePropertyBag::GetString, IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag::GetString
+ms.keywords : IPrinterScriptablePropertyBag interface [Print Devices], GetString method, IPrinterScriptablePropertyBag::GetString, IPrinterScriptablePropertyBag, GetString method [Print Devices], IPrinterScriptablePropertyBag interface, printerextension/IPrinterScriptablePropertyBag::GetString, GetString method [Print Devices], print.iprinterscriptablepropertybag_getstring, GetString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -74,14 +74,10 @@ A call to <b>GetString</b> will throw an exception, if the specified property is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

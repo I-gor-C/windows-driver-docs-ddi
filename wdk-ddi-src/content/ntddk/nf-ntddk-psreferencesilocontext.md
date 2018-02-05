@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 04867D53-DB36-482A-93BF-C91D13998B3F
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.psreferencesilocontext, ntddk/PsReferenceSiloContext, PsReferenceSiloContext, PsReferenceSiloContext routine [Kernel-Mode Driver Architecture]
+ms.keywords : PsReferenceSiloContext, PsReferenceSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsReferenceSiloContext, kernel.psreferencesilocontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,11 @@ This routine does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_IRQL_requires_max_(DISPATCH_LEVEL)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

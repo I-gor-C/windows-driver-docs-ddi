@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 059d2a99-f4da-45f1-8d91-0e57930595d2
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : mrx/RxStopMinirdr, RxStopMinirdr, RxStopMinirdr function [Installable File System Drivers], ifsk.rxstopminirdr, rxref_3ec6b643-e13c-4aa6-879b-fdb2076e549d.xml
+ms.keywords : RxStopMinirdr function [Installable File System Drivers], ifsk.rxstopminirdr, RxStopMinirdr, mrx/RxStopMinirdr, rxref_3ec6b643-e13c-4aa6-879b-fdb2076e549d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetDSMCounters_IN, SetDSMCounters_IN"
+req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 
@@ -132,28 +132,24 @@ The <b>RxStopMinirdr</b> routine then calls the network mini-redirector <b>MrxSt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mrx.h (include Mrx.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
 
 <a href="..\rxstruc\nf-rxstruc-rxunregisterminirdr.md">RxUnregisterMinirdr</a>
 
-<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
+<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
 
-<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
+<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
 
 <a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMiniRdr</a>
 
-<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 4131f7eb-de96-42cd-87f0-15fd73836a2d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : OEMLineTo function [Print Devices], print_unidrv-pscript_rendering_45398181-47db-43c2-8c68-000dbf9cce8d.xml, OEMLineTo, print.oemlineto, printoem/OEMLineTo
+ms.keywords : printoem/OEMLineTo, print_unidrv-pscript_rendering_45398181-47db-43c2-8c68-000dbf9cce8d.xml, print.oemlineto, OEMLineTo function [Print Devices], OEMLineTo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -106,11 +106,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

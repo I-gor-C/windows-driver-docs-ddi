@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 08246843-9b6e-4694-8475-acb02fbdd82b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/KbCallbackReserved1, wdm/KbCallbackDumpIo, sysenum_e8373f57-7ba5-44ad-9ad9-4110710732ee.xml, wdm/KbCallbackInvalid, wdm/KbCallbackAddPages, KBUGCHECK_CALLBACK_REASON, KbCallbackReserved1, wdm/KBUGCHECK_CALLBACK_REASON, KbCallbackSecondaryDumpData, wdm/KbCallbackSecondaryDumpData, KBUGCHECK_CALLBACK_REASON enumeration [Kernel-Mode Driver Architecture], kernel.kbugcheck_callback_reason, KbCallbackAddPages, KbCallbackInvalid, _KBUGCHECK_CALLBACK_REASON, KbCallbackDumpIo
+ms.keywords : KBUGCHECK_CALLBACK_REASON, sysenum_e8373f57-7ba5-44ad-9ad9-4110710732ee.xml, wdm/KbCallbackAddPages, KbCallbackDumpIo, KbCallbackSecondaryDumpData, wdm/KbCallbackInvalid, wdm/KbCallbackReserved1, KbCallbackAddPages, kernel.kbugcheck_callback_reason, wdm/KbCallbackSecondaryDumpData, KBUGCHECK_CALLBACK_REASON enumeration [Kernel-Mode Driver Architecture], wdm/KbCallbackDumpIo, _KBUGCHECK_CALLBACK_REASON, KbCallbackReserved1, wdm/KBUGCHECK_CALLBACK_REASON, KbCallbackInvalid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -97,22 +97,20 @@ typedef enum _KBUGCHECK_CALLBACK_REASON {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. Supported on Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
-
-<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551873">KBUGCHECK_REASON_CALLBACK_RECORD</a>
+<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+
+<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
 
  
 

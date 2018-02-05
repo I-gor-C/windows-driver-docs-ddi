@@ -170,35 +170,31 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClIncomingDropParty (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClIncomingDropParty (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClIncomingDropParty (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClIncomingDropParty (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndiscmdispatchincomingdropparty" tabindex="0"><b>
-   NdisCmDispatchIncomingDropParty</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 
-<mshelp:link keywords="netvista.ndismcmdispatchincomingdropparty" tabindex="0"><b>
-   NdisMCmDispatchIncomingDropParty</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisfreetonpagedlookasidelist.md">
+   NdisFreeToNPagedLookasideList</a>
 
-<mshelp:link keywords="netvista.ndisfreetonpagedlookasidelist" tabindex="0"><b>
-   NdisFreeToNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
+
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingdropparty.md">
+   NdisCmDispatchIncomingDropParty</a>
+
+<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
 
 <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 
 <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 
-<a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>
-
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
-
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingdropparty.md">
+   NdisMCmDispatchIncomingDropParty</a>
 
  
 

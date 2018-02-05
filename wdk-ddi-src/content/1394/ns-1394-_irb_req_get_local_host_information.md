@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 172579A1-9B81-42C7-BAC9-C977C69E7E45
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IRB_REQ_GET_LOCAL_HOST_INFORMATION, IRB_REQ_GET_LOCAL_HOST_INFORMATION structure [Buses], 1394/IRB_REQ_GET_LOCAL_HOST_INFORMATION, _IRB_REQ_GET_LOCAL_HOST_INFORMATION, IEEE.irb_req_get_local_host_information
+ms.keywords : IEEE.irb_req_get_local_host_information, _IRB_REQ_GET_LOCAL_HOST_INFORMATION, IRB_REQ_GET_LOCAL_HOST_INFORMATION, 1394/IRB_REQ_GET_LOCAL_HOST_INFORMATION, IRB_REQ_GET_LOCAL_HOST_INFORMATION structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -254,7 +254,4 @@ Requests the port driver to return the host controller's capability flags and th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h |

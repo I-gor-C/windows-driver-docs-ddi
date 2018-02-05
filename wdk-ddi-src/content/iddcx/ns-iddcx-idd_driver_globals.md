@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 77d2c668-21e4-4c6d-9f3d-7e34c660d1da
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : iddcx/IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS, display.idd_driver_globals, IDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS structure [Display Devices]
+ms.keywords : display.idd_driver_globals, *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS structure [Display Devices], iddcx/IDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS"
+req.typenames : IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ---
 
 # IDD_DRIVER_GLOBALS structure
@@ -59,7 +59,4 @@ This value is reserved for use by the system.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iddcx.h |

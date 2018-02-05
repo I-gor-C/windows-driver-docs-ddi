@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 62257D65-DCB9-43C3-A862-DAB31C27EF0A
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_UMTS_SERVING_CELL_INFO, PWWAN_UMTS_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_UMTS_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], wwan/WWAN_UMTS_SERVING_CELL_INFO, PWWAN_UMTS_SERVING_CELL_INFO, netvista.wwan_umts_serving_cell_info, wwan/PWWAN_UMTS_SERVING_CELL_INFO, _WWAN_UMTS_SERVING_CELL_INFO, *PWWAN_UMTS_SERVING_CELL_INFO
+ms.keywords : PWWAN_UMTS_SERVING_CELL_INFO, wwan/WWAN_UMTS_SERVING_CELL_INFO, WWAN_UMTS_SERVING_CELL_INFO, netvista.wwan_umts_serving_cell_info, *PWWAN_UMTS_SERVING_CELL_INFO, WWAN_UMTS_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], PWWAN_UMTS_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], _WWAN_UMTS_SERVING_CELL_INFO, wwan/PWWAN_UMTS_SERVING_CELL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_UMTS_SERVING_CELL_INFO, WWAN_UMTS_SERVING_CELL_INFO"
+req.typenames : WWAN_UMTS_SERVING_CELL_INFO, *PWWAN_UMTS_SERVING_CELL_INFO
 req.product : Windows 10 or later.
 ---
 
@@ -120,18 +120,16 @@ The UTRA Absolute Radio Frequency Channel Number for the serving cell (0-16383).
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_umts_mrl_info.md">WWAN_UMTS_MRL_INFO</a>
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
 
 <a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
+
+<a href="..\wwan\ns-wwan-_wwan_umts_mrl_info.md">WWAN_UMTS_MRL_INFO</a>
 
 <a href="..\wwan\ns-wwan-_wwan_umts_mrl.md">WWAN_UMTS_MRL</a>
 

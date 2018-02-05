@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : f3193d5b-084f-4df1-9688-26ba5a964cca
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dkmtextractbundleobject, D3DKMTExtractBundleObject, D3DKMTExtractBundleObject method [Display Devices], d3dkmthk/D3DKMTExtractBundleObject
+ms.keywords : d3dkmthk/D3DKMTExtractBundleObject, display.d3dkmtextractbundleobject, D3DKMTExtractBundleObject method [Display Devices], D3DKMTExtractBundleObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -62,11 +62,7 @@ Returns STATUS_SUCCESS if completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | d3dkmthk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5d0a2303-df2b-45fe-9c88-df4bb19a2a9f
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "_WDF_DEVICE_STATE, DFDeviceObjectGeneralRef_a5705164-b38f-4307-8b7d-5b3156aadf62.xml, *PWDF_DEVICE_STATE, wdf.wdf_device_state, WDF_DEVICE_STATE structure, kmdf.wdf_device_state, wdfdevice/WDF_DEVICE_STATE, WDF_DEVICE_STATE, PWDF_DEVICE_STATE structure pointer, wdfdevice/PWDF_DEVICE_STATE, PWDF_DEVICE_STATE"
+ms.keywords : wdf.wdf_device_state, DFDeviceObjectGeneralRef_a5705164-b38f-4307-8b7d-5b3156aadf62.xml, wdfdevice/PWDF_DEVICE_STATE, WDF_DEVICE_STATE structure, *PWDF_DEVICE_STATE, kmdf.wdf_device_state, wdfdevice/WDF_DEVICE_STATE, PWDF_DEVICE_STATE structure pointer, _WDF_DEVICE_STATE, PWDF_DEVICE_STATE, WDF_DEVICE_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,7 +100,6 @@ For more information about the members of the <b>WDF_DEVICE_STATE</b> structure,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |

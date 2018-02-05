@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 177a2578-2bd4-4a11-a3fd-fec226a64c22
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_renderstate, _D3DDDIARG_RENDERSTATE, D3DDDIARG_RENDERSTATE structure [Display Devices], D3DDDIARG_RENDERSTATE, UMDisplayDriver_param_Structs_4d558ee2-a265-4973-90d4-917170d01ef3.xml, d3dumddi/D3DDDIARG_RENDERSTATE
+ms.keywords : "_D3DDDIARG_RENDERSTATE, d3dumddi/D3DDDIARG_RENDERSTATE, D3DDDIARG_RENDERSTATE structure [Display Devices], D3DDDIARG_RENDERSTATE, display.d3dddiarg_renderstate, UMDisplayDriver_param_Structs_4d558ee2-a265-4973-90d4-917170d01ef3.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _D3DDDIARG_RENDERSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

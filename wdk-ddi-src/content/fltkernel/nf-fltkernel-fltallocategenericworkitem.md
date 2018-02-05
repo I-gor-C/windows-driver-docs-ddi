@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 1be555a5-9fa7-4179-8a36-803b8792db86
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltAllocateGenericWorkItem, FltAllocateGenericWorkItem function [Installable File System Drivers], FltApiRef_a_to_d_06bae00e-f41d-4cc9-8664-94e06d004458.xml, ifsk.fltallocategenericworkitem, FltAllocateGenericWorkItem
+ms.keywords : ifsk.fltallocategenericworkitem, FltApiRef_a_to_d_06bae00e-f41d-4cc9-8664-94e06d004458.xml, FltAllocateGenericWorkItem function [Installable File System Drivers], fltkernel/FltAllocateGenericWorkItem, FltAllocateGenericWorkItem
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -67,14 +67,11 @@ To free the work item, a minifilter driver typically calls <a href="..\fltkernel
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 02ff7c36-8bca-4531-bef5-d8a284d2d047
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdf_fdo_event_callbacks_init, WDF_FDO_EVENT_CALLBACKS_INIT, wdffdo/WDF_FDO_EVENT_CALLBACKS_INIT, DFDeviceObjectFdoPdoRef_fdf4f567-cbdd-4fb4-a752-344f6a298bbf.xml, WDF_FDO_EVENT_CALLBACKS_INIT function, kmdf.wdf_fdo_event_callbacks_init
+ms.keywords : wdffdo/WDF_FDO_EVENT_CALLBACKS_INIT, WDF_FDO_EVENT_CALLBACKS_INIT, WDF_FDO_EVENT_CALLBACKS_INIT function, wdf.wdf_fdo_event_callbacks_init, kmdf.wdf_fdo_event_callbacks_init, DFDeviceObjectFdoPdoRef_fdf4f567-cbdd-4fb4-a752-344f6a298bbf.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS"
+req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product : Windows 10 or later.
 ---
 
@@ -71,14 +71,10 @@ The <b>WDF_FDO_EVENT_CALLBACKS_INIT</b> function zeros the specified <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdffdo.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

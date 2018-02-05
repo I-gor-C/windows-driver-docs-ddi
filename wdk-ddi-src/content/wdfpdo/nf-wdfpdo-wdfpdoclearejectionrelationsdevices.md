@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 09154884-130d-47aa-be00-08a3a4da6f22
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoClearEjectionRelationsDevices method, kmdf.wdfpdoclearejectionrelationsdevices, WdfPdoClearEjectionRelationsDevices, PFN_WDFPDOCLEAREJECTIONRELATIONSDEVICES, wdfpdo/WdfPdoClearEjectionRelationsDevices, wdf.wdfpdoclearejectionrelationsdevices, DFDeviceObjectFdoPdoRef_ddbc7fa5-d0c0-4074-901e-bc7a8ea50fa4.xml
+ms.keywords : WdfPdoClearEjectionRelationsDevices, WdfPdoClearEjectionRelationsDevices method, kmdf.wdfpdoclearejectionrelationsdevices, PFN_WDFPDOCLEAREJECTIONRELATIONSDEVICES, DFDeviceObjectFdoPdoRef_ddbc7fa5-d0c0-4074-901e-bc7a8ea50fa4.xml, wdfpdo/WdfPdoClearEjectionRelationsDevices, wdf.wdfpdoclearejectionrelationsdevices
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -73,12 +73,10 @@ For more information, see <a href="https://msdn.microsoft.com/7820bb71-7218-4c5f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

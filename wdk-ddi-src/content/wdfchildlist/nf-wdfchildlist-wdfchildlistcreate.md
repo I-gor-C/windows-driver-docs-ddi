@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 88af6933-09f0-4248-9003-62f486d38645
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectChildListRef_750e00c2-f0a0-4a3f-a357-09de7568e268.xml, WdfChildListCreate, wdfchildlist/WdfChildListCreate, kmdf.wdfchildlistcreate, PFN_WDFCHILDLISTCREATE, WdfChildListCreate method, wdf.wdfchildlistcreate
+ms.keywords : WdfChildListCreate, wdfchildlist/WdfChildListCreate, PFN_WDFCHILDLISTCREATE, wdf.wdfchildlistcreate, DFDeviceObjectChildListRef_750e00c2-f0a0-4a3f-a357-09de7568e268.xml, kmdf.wdfchildlistcreate, WdfChildListCreate method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -126,20 +126,18 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfchildlist.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdffdo\nf-wdffdo-wdffdogetdefaultchildlist.md">WdfFdoGetDefaultChildList</a>
-
 <a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_list_config_init.md">WDF_CHILD_LIST_CONFIG_INIT</a>
+
+<a href="..\wdffdo\nf-wdffdo-wdffdogetdefaultchildlist.md">WdfFdoGetDefaultChildList</a>
 
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_config.md">WDF_CHILD_LIST_CONFIG</a>
 

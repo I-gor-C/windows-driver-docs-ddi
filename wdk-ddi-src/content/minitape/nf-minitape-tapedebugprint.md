@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d06e4308-f1a9-4acd-bc25-b3fd53129064
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : TapeDebugPrint, tapeclas_cc0c28ed-17e9-40cf-bf04-e906aa4f74f0.xml, storage.tapedebugprint, TapeDebugPrint routine [Storage Devices], minitape/TapeDebugPrint
+ms.keywords : minitape/TapeDebugPrint, TapeDebugPrint routine [Storage Devices], tapeclas_cc0c28ed-17e9-40cf-bf04-e906aa4f74f0.xml, TapeDebugPrint, storage.tapedebugprint
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PTAPE_STATUS, TAPE_STATUS"
+req.typenames : TAPE_STATUS, *PTAPE_STATUS
 ---
 
 
@@ -61,7 +61,7 @@ Determines whether the string is printed or not. If this parameter has a value l
 
 Pointer to the string to be printed.
 
-``
+`Arg1`
 
 
 
@@ -74,11 +74,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | minitape.h (include Minitape.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Tape.lib |

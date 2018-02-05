@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0ececf46-23a4-456b-8305-b9cd0ffba4b6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2SETRENDERTARGET structure [Display Devices], _D3DHAL_DP2SETRENDERTARGET, display.d3dhal_dp2setrendertarget, *LPD3DHAL_DP2SETRENDERTARGET, d3dhal/LPD3DHAL_DP2SETRENDERTARGET, LPD3DHAL_DP2SETRENDERTARGET structure pointer [Display Devices], d3dhal/D3DHAL_DP2SETRENDERTARGET, D3DHAL_DP2SETRENDERTARGET, d3dstrct_d3f81bd9-d8fd-4560-b8b3-61af41d4a13b.xml, LPD3DHAL_DP2SETRENDERTARGET
+ms.keywords : display.d3dhal_dp2setrendertarget, D3DHAL_DP2SETRENDERTARGET structure [Display Devices], LPD3DHAL_DP2SETRENDERTARGET structure pointer [Display Devices], D3DHAL_DP2SETRENDERTARGET, *LPD3DHAL_DP2SETRENDERTARGET, d3dstrct_d3f81bd9-d8fd-4560-b8b3-61af41d4a13b.xml, d3dhal/D3DHAL_DP2SETRENDERTARGET, LPD3DHAL_DP2SETRENDERTARGET, d3dhal/LPD3DHAL_DP2SETRENDERTARGET, _D3DHAL_DP2SETRENDERTARGET
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -76,16 +76,13 @@ Store the depth buffer identified by <b>hZBuffer</b> in the driver's context.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dhal.h (include D3dhal.h) |
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
-
 D3DDP2OP_SETRENDERTARGET
+
+<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 
  
 

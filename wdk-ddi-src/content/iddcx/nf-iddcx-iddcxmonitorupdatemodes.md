@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0f05931a-2327-454a-9ba7-da02cb2f13d9
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : IddCxMonitorUpdateModes, iddcx/IddCxMonitorUpdateModes, display.iddcxmonitorupdatemodes, IddCxMonitorUpdateModes method [Display Devices]
+ms.keywords : IddCxMonitorUpdateModes, IddCxMonitorUpdateModes method [Display Devices], display.iddcxmonitorupdatemodes, iddcx/IddCxMonitorUpdateModes
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,11 +70,8 @@ Input arguments of function
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | iddcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "_Must_inspect_result_" |
-| **DDI compliance rules** |  |

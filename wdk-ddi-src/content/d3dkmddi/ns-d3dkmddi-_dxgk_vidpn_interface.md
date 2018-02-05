@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7ddd110c-2521-4df6-a936-e702a0f15312
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_0fb940db-3ede-4eac-938b-89e34a9b337d.xml, DXGK_VIDPN_INTERFACE structure [Display Devices], d3dkmddi/DXGK_VIDPN_INTERFACE, display.dxgk_vidpn_interface, _DXGK_VIDPN_INTERFACE, DXGK_VIDPN_INTERFACE
+ms.keywords : "_DXGK_VIDPN_INTERFACE, DmStructs_0fb940db-3ede-4eac-938b-89e34a9b337d.xml, DXGK_VIDPN_INTERFACE, d3dkmddi/DXGK_VIDPN_INTERFACE, DXGK_VIDPN_INTERFACE structure [Display Devices], display.dxgk_vidpn_interface"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -113,7 +113,5 @@ For more information about the VidPN interface, see <a href="https://msdn.micros
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

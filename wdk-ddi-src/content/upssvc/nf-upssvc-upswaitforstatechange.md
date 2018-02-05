@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : ac78dda4-6d14-441b-8e79-3245f7253875
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, UPSWaitForStateChange function [Battery Devices], battery.upswaitforstatechange, UPSWaitForStateChange, upssvc/UPSWaitForStateChange
+ms.keywords : upssvc/UPSWaitForStateChange, UPSWaitForStateChange, battery.upswaitforstatechange, UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, UPSWaitForStateChange function [Battery Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -61,16 +61,6 @@ Specifies the UPS state on which to wait. When the state of the UPS system chang
 
 
 
-#### UPS_ONLINE
-
-Utility-supplied power is normal.
-
-
-#### UPS_ONBATTERY
-
-Utility-supplied power is inadequate, and the UPS batteries are discharging.
-
-
 #### UPS_LOWBATTERY
 
 Utility-supplied power is inadequate, and the UPS batteries are critically low.
@@ -79,6 +69,16 @@ Utility-supplied power is inadequate, and the UPS batteries are critically low.
 #### UPS_NOCOMM
 
 Communication with the UPS is not currently established.
+
+
+#### UPS_ONBATTERY
+
+Utility-supplied power is inadequate, and the UPS batteries are discharging.
+
+
+#### UPS_ONLINE
+
+Utility-supplied power is normal.
 
 `anInterval`
 
@@ -98,14 +98,9 @@ A call to <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a> inter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | upssvc.h (include Upssvc.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

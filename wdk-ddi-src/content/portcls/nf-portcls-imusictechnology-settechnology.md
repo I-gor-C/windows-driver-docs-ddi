@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7e32b408-930d-4ef4-960e-1a0da5ef6803
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetTechnology method [Audio Devices], portcls/IMusicTechnology::SetTechnology, SetTechnology, IMusicTechnology::SetTechnology, IMusicTechnology, audio.imusictechnology_settechnology, audmp-routines_d1d6abaa-c4b8-4dce-8ce5-9fc12cc87852.xml, IMusicTechnology interface [Audio Devices], SetTechnology method, SetTechnology method [Audio Devices], IMusicTechnology interface
+ms.keywords : audio.imusictechnology_settechnology, portcls/IMusicTechnology::SetTechnology, SetTechnology method [Audio Devices], IMusicTechnology interface, audmp-routines_d1d6abaa-c4b8-4dce-8ce5-9fc12cc87852.xml, IMusicTechnology::SetTechnology, SetTechnology method [Audio Devices], SetTechnology, IMusicTechnology interface [Audio Devices], SetTechnology method, IMusicTechnology
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -128,20 +128,16 @@ For more information, see <a href="https://msdn.microsoft.com/3b7c2907-e67f-458e
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-imusictechnology.md">IMusicTechnology</a>
-
 <a href="..\ksmedia\ns-ksmedia-ksdatarange_music.md">KSDATARANGE_MUSIC</a>
+
+<a href="..\portcls\nn-portcls-imusictechnology.md">IMusicTechnology</a>
 
  
 

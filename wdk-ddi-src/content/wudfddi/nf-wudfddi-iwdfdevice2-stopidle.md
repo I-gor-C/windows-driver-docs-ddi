@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1a4907c9-8e3b-4fb6-a7d4-89985e470e48
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : StopIdle method, IWDFDevice2 interface, UMDFDeviceObjectRef_8b32ad46-c35a-4b3a-8779-fa183d9cbb72.xml, umdf.iwdfdevice2_stopidle, wudfddi/IWDFDevice2::StopIdle, StopIdle method, IWDFDevice2 interface, StopIdle method, wdf.iwdfdevice2_stopidle, IWDFDevice2::StopIdle, IWDFDevice2, StopIdle
+ms.keywords : wdf.iwdfdevice2_stopidle, IWDFDevice2::StopIdle, UMDFDeviceObjectRef_8b32ad46-c35a-4b3a-8779-fa183d9cbb72.xml, StopIdle method, umdf.iwdfdevice2_stopidle, StopIdle method, IWDFDevice2 interface, IWDFDevice2 interface, StopIdle method, wudfddi/IWDFDevice2::StopIdle, IWDFDevice2, StopIdle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -128,14 +128,12 @@ For more information about <b>StopIdle</b> and <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

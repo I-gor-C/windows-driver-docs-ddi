@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 50F5C1AD-BA51-4376-8093-E8596265FDAF
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PMONITOR_DISPLAY_STATE, wdm/MONITOR_DISPLAY_STATE, wdm/PowerMonitorOff, wdm/PowerMonitorDim, MONITOR_DISPLAY_STATE, kernel.monitor_display_state, PowerMonitorOn, PowerMonitorOff, PowerMonitorDim, wdm/PowerMonitorOn, _MONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE enumeration [Kernel-Mode Driver Architecture]"
+ms.keywords : MONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE enumeration [Kernel-Mode Driver Architecture], PowerMonitorDim, _MONITOR_DISPLAY_STATE, wdm/PowerMonitorDim, PowerMonitorOn, *PMONITOR_DISPLAY_STATE, wdm/MONITOR_DISPLAY_STATE, kernel.monitor_display_state, wdm/PowerMonitorOff, wdm/PowerMonitorOn, PowerMonitorOff
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,4 @@ typedef enum _MONITOR_DISPLAY_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h |

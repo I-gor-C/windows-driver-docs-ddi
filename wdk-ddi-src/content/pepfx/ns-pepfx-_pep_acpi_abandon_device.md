@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : A8D0FA24-664F-4A2B-BF08-300D6E30F7E2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_ACPI_ABANDON_DEVICE, PEP_ACPI_ABANDON_DEVICE structure [Kernel-Mode Driver Architecture], *PPEP_ACPI_ABANDON_DEVICE, PEP_ACPI_ABANDON_DEVICE, kernel.pep_acpi_abandon_device, PPEP_ACPI_ABANDON_DEVICE, PPEP_ACPI_ABANDON_DEVICE structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_ABANDON_DEVICE, pepfx/PEP_ACPI_ABANDON_DEVICE
+ms.keywords : PPEP_ACPI_ABANDON_DEVICE, PEP_ACPI_ABANDON_DEVICE, *PPEP_ACPI_ABANDON_DEVICE, _PEP_ACPI_ABANDON_DEVICE, kernel.pep_acpi_abandon_device, PEP_ACPI_ABANDON_DEVICE structure [Kernel-Mode Driver Architecture], pepfx/PPEP_ACPI_ABANDON_DEVICE, PPEP_ACPI_ABANDON_DEVICE structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_ACPI_ABANDON_DEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,9 +66,7 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

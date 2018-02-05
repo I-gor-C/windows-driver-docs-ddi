@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 409c4ff6-3a0e-408a-879d-2875ac245fb8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiasFormatArgs function [Imaging Devices], wiasFormatArgs, wiasFncs_c4e9a1bd-3760-47fb-b828-1f0c521717c5.xml, wiamdef/wiasFormatArgs, image.wiasformatargs
+ms.keywords : wiasFncs_c4e9a1bd-3760-47fb-b828-1f0c521717c5.xml, image.wiasformatargs, wiasFormatArgs function [Imaging Devices], wiamdef/wiasFormatArgs, wiasFormatArgs
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -57,7 +57,7 @@ BSTR __cdecl wiasFormatArgs(
 
 TBD
 
-``
+`Arg1`
 
 
 
@@ -70,11 +70,8 @@ This function returns a BSTR containing the format string, the arguments followi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |

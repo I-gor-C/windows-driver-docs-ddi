@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : b09373ef-7b65-46f7-b5b7-a6dcecf0166c
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_TUNER_SCAN_STATUS_S, KSPROPERTY_TUNER_SCAN_STATUS_S, ksmedia/KSPROPERTY_TUNER_SCAN_STATUS_S, PKSPROPERTY_TUNER_SCAN_STATUS_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_scan_status_s, *PKSPROPERTY_TUNER_SCAN_STATUS_S, KSPROPERTY_TUNER_SCAN_STATUS_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_TUNER_SCAN_STATUS_S, vidcapstruct_70c7d301-6c91-4955-bcaa-67cad29cb15a.xml
+ms.keywords : stream.ksproperty_tuner_scan_status_s, KSPROPERTY_TUNER_SCAN_STATUS_S structure [Streaming Media Devices], *PKSPROPERTY_TUNER_SCAN_STATUS_S, ksmedia/PKSPROPERTY_TUNER_SCAN_STATUS_S, PKSPROPERTY_TUNER_SCAN_STATUS_S, PKSPROPERTY_TUNER_SCAN_STATUS_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_SCAN_STATUS_S, KSPROPERTY_TUNER_SCAN_STATUS_S, vidcapstruct_70c7d301-6c91-4955-bcaa-67cad29cb15a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROPERTY_TUNER_SCAN_STATUS_S, KSPROPERTY_TUNER_SCAN_STATUS_S"
+req.typenames : KSPROPERTY_TUNER_SCAN_STATUS_S, *PKSPROPERTY_TUNER_SCAN_STATUS_S
 ---
 
 # KSPROPERTY_TUNER_SCAN_STATUS_S structure
@@ -105,20 +105,18 @@ Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPER
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the operating system. Available in Windows Vista and later versions of the operating system. |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565893">KSPROPERTY_TUNER_SCAN_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561898">KSEVENT_TUNER_INITIATE_SCAN</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
-
 <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565893">KSPROPERTY_TUNER_SCAN_STATUS</a>
 
  
 

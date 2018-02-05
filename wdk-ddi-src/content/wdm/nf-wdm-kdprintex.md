@@ -80,14 +80,11 @@ This routine is defined in ntddk.h and ndis.h; component filter IDs are defined 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later. Available in Microsoft Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib (See DbgPrintEx.) |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

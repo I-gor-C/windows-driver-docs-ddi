@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 65d72369-7ace-4d3d-a15c-6322c0066470
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl2 interface [Windows Debugging], GetReturnOffset method, IDebugControl3, IDebugControl::GetReturnOffset, GetReturnOffset, IDebugControl interface [Windows Debugging], GetReturnOffset method, IDebugControl3::GetReturnOffset, IDebugControl2::GetReturnOffset, GetReturnOffset method [Windows Debugging], IDebugControl3 interface, GetReturnOffset method [Windows Debugging], IDebugControl_7c101d44-aa43-48d4-8176-2ed110eca231.xml, GetReturnOffset method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::GetReturnOffset, debugger.getreturnoffset, dbgeng/IDebugControl3::GetReturnOffset, dbgeng/IDebugControl::GetReturnOffset, IDebugControl3 interface [Windows Debugging], GetReturnOffset method, GetReturnOffset method [Windows Debugging], IDebugControl interface
+ms.keywords : GetReturnOffset method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetReturnOffset, dbgeng/IDebugControl2::GetReturnOffset, dbgeng/IDebugControl3::GetReturnOffset, IDebugControl2::GetReturnOffset, dbgeng/IDebugControl::GetReturnOffset, GetReturnOffset method [Windows Debugging], debugger.getreturnoffset, GetReturnOffset method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetReturnOffset method, IDebugControl3, IDebugControl interface [Windows Debugging], GetReturnOffset method, GetReturnOffset, IDebugControl_7c101d44-aa43-48d4-8176-2ed110eca231.xml, GetReturnOffset method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], GetReturnOffset method, IDebugControl::GetReturnOffset
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -85,11 +85,6 @@ The return address is the location in the process's virtual address space of the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

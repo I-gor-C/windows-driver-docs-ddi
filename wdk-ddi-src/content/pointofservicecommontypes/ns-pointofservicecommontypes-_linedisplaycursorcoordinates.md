@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 70770FEA-9E5F-4D0F-8AD2-25DAA0E4E1D9
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicecommontypes/LineDisplayCursorCoordinates, pos.linedisplaycursorcoordinates, PLineDisplayCursorCoordinates structure pointer, LineDisplayCursorCoordinates structure, pointofservicecommontypes/PLineDisplayCursorCoordinates, PLineDisplayCursorCoordinates, _LineDisplayCursorCoordinates, LineDisplayCursorCoordinates
+ms.keywords : LineDisplayCursorCoordinates, PLineDisplayCursorCoordinates structure pointer, LineDisplayCursorCoordinates structure, pos.linedisplaycursorcoordinates, PLineDisplayCursorCoordinates, _LineDisplayCursorCoordinates, pointofservicecommontypes/LineDisplayCursorCoordinates, pointofservicecommontypes/PLineDisplayCursorCoordinates
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -63,7 +63,4 @@ typedef struct _LineDisplayCursorCoordinates {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicecommontypes.h (include Pointofservicecommontypes.h) |

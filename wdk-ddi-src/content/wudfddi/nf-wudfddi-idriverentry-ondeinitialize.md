@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9366029e-4f8b-4121-ad99-01a5116a7f46
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IDriverEntry, IDriverEntry interface, OnDeinitialize method, OnDeinitialize method, IDriverEntry interface, OnDeinitialize, wdf.idriverentry_ondeinitialize, IDriverEntry::OnDeinitialize, UMDFDriverObjectRef_0dc59f06-5979-4077-8945-b0568d8980ba.xml, umdf.idriverentry_ondeinitialize, wudfddi/IDriverEntry::OnDeinitialize, OnDeinitialize method
+ms.keywords : OnDeinitialize method, IDriverEntry interface, IDriverEntry interface, OnDeinitialize method, umdf.idriverentry_ondeinitialize, wudfddi/IDriverEntry::OnDeinitialize, UMDFDriverObjectRef_0dc59f06-5979-4077-8945-b0568d8980ba.xml, IDriverEntry::OnDeinitialize, IDriverEntry, OnDeinitialize, OnDeinitialize method, wdf.idriverentry_ondeinitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,14 +71,9 @@ The framework creates a new driver object for each driver that is loaded in the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 

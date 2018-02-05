@@ -8,7 +8,7 @@ old-project : PCI
 ms.assetid : 99387bcc-301d-4406-bcff-fb5569c88c90
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI.pci_express_sec_uncorrectable_error_mask, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union pointer [Buses], *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union [Buses], pci_struct_80f14fae-7c43-4a78-bdb7-211abd0e43fd.xml, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK"
+ms.keywords : PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI.pci_express_sec_uncorrectable_error_mask, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union [Buses], pci_struct_80f14fae-7c43-4a78-bdb7-211abd0e43fd.xml, _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union pointer [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
+req.typenames : "*PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK"
 req.product : Windows 10 or later.
 ---
 
@@ -85,9 +85,6 @@ A PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure is contained in the <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Ntddk.h, Wdm.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 9ec4ae29-7c9f-4da6-ae5d-57de9423cb30
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl4::GetLastEventInformationWide, IDebugControl4 interface [Windows Debugging], GetLastEventInformationWide method, IDebugControl4::GetLastEventInformationWide, debugger.getlasteventinformationwide, GetLastEventInformationWide method [Windows Debugging], IDebugControl4, GetLastEventInformationWide, GetLastEventInformationWide method [Windows Debugging], IDebugControl4 interface
+ms.keywords : debugger.getlasteventinformationwide, GetLastEventInformationWide, GetLastEventInformationWide method [Windows Debugging], dbgeng/IDebugControl4::GetLastEventInformationWide, GetLastEventInformationWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetLastEventInformationWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetLastEventInformationWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -140,14 +140,9 @@ For more information about the last event, see the topic <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

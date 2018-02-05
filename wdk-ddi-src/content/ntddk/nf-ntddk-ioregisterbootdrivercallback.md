@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 28BA4B54-F493-4D79-89DF-D890EBCF1E9C
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioregisterbootdrivercallback, IoRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture], ntddk/IoRegisterBootDriverCallback, IoRegisterBootDriverCallback
+ms.keywords : ntddk/IoRegisterBootDriverCallback, IoRegisterBootDriverCallback routine [Kernel-Mode Driver Architecture], kernel.ioregisterbootdrivercallback, IoRegisterBootDriverCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -104,14 +104,12 @@ To be notified of boot-start driver initialization operations, an <i>early launc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

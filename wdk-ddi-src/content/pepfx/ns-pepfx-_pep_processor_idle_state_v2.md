@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : DEA8B166-5236-4BE3-B16D-9EE1B34796F8
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PEP_PROCESSOR_IDLE_STATE_V2 structure [Kernel-Mode Driver Architecture], PEP_PROCESSOR_IDLE_STATE_V2, PPEP_PROCESSOR_IDLE_STATE_V2 structure pointer [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_IDLE_STATE_V2, kernel.pep_processor_idle_state_v2, pepfx/PPEP_PROCESSOR_IDLE_STATE_V2, _PEP_PROCESSOR_IDLE_STATE_V2, pepfx/PEP_PROCESSOR_IDLE_STATE_V2, PPEP_PROCESSOR_IDLE_STATE_V2
+ms.keywords : pepfx/PPEP_PROCESSOR_IDLE_STATE_V2, _PEP_PROCESSOR_IDLE_STATE_V2, PEP_PROCESSOR_IDLE_STATE_V2, PEP_PROCESSOR_IDLE_STATE_V2 structure [Kernel-Mode Driver Architecture], pepfx/PEP_PROCESSOR_IDLE_STATE_V2, PPEP_PROCESSOR_IDLE_STATE_V2 structure pointer [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_IDLE_STATE_V2, kernel.pep_processor_idle_state_v2, PPEP_PROCESSOR_IDLE_STATE_V2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_PROCESSOR_IDLE_STATE_V2, PEP_PROCESSOR_IDLE_STATE_V2"
+req.typenames : PEP_PROCESSOR_IDLE_STATE_V2, *PPEP_PROCESSOR_IDLE_STATE_V2
 ---
 
 # _PEP_PROCESSOR_IDLE_STATE_V2 structure
@@ -79,16 +79,14 @@ This structure is used in conjunction with the <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_ppm_query_idle_states_v2.md">PEP_PPM_QUERY_IDLE_STATES_V2</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186824">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a>
+
+<a href="..\pepfx\ns-pepfx-_pep_ppm_query_idle_states_v2.md">PEP_PPM_QUERY_IDLE_STATES_V2</a>
 
  
 

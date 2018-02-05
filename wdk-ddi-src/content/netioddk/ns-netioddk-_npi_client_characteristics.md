@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 03d73a80-0860-4ec7-8eb1-5954f64b6026
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.npi_client_characteristics, netioddk/PNPI_CLIENT_CHARACTERISTICS, PNPI_CLIENT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], nmrref_01bb300c-5e76-40e3-9358-a01e991ceecf.xml, _NPI_CLIENT_CHARACTERISTICS, netioddk/NPI_CLIENT_CHARACTERISTICS, NPI_CLIENT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], NPI_CLIENT_CHARACTERISTICS, PNPI_CLIENT_CHARACTERISTICS
+ms.keywords : PNPI_CLIENT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], PNPI_CLIENT_CHARACTERISTICS, NPI_CLIENT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], nmrref_01bb300c-5e76-40e3-9358-a01e991ceecf.xml, NPI_CLIENT_CHARACTERISTICS, _NPI_CLIENT_CHARACTERISTICS, netioddk/PNPI_CLIENT_CHARACTERISTICS, netioddk/NPI_CLIENT_CHARACTERISTICS, netvista.npi_client_characteristics
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -65,8 +65,8 @@ A pointer to the client module's
 `ClientCleanupBindingContext`
 
 A pointer to the client module's 
-     <mshelp:link keywords="netvista.clientcleanupbindingcontext" tabindex="0"><i>
-     ClientCleanupBindingContext</i></mshelp:link> callback function. If the client module does not dynamically allocate
+     <a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">
+     ClientCleanupBindingContext</a> callback function. If the client module does not dynamically allocate
      the memory for its binding context and no other cleanup of its binding context is required, then the
      client module does not need to implement a 
      <i>
@@ -83,8 +83,8 @@ A pointer to the client module's
 `ClientRegistrationInstance`
 
 An 
-     <mshelp:link keywords="netvista.npi_registration_instance" tabindex="0"><b>
-     NPI_REGISTRATION_INSTANCE</b></mshelp:link> structure that specifies the identity of the client module and the 
+     <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">
+     NPI_REGISTRATION_INSTANCE</a> structure that specifies the identity of the client module and the 
      <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/network-programming-interface">NPI</a> for which it is
      registering.
 
@@ -108,22 +108,20 @@ A client module must make sure that this structure remains valid and resident in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | netioddk.h (include Wsk.h) |
 
 ## See Also
 
-<a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
+<a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">ClientCleanupBindingContext</a>
 
 <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">NPI_REGISTRATION_INSTANCE</a>
 
-<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
-
-<a href="..\netioddk\nc-netioddk-npi_client_cleanup_binding_context_fn.md">ClientCleanupBindingContext</a>
+<a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
 
 <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
+
+<a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 
  
 

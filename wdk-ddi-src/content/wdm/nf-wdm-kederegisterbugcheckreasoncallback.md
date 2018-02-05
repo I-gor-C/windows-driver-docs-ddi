@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3a2a8940-afe2-48f5-bcf0-abd6413eeb85
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_f767309b-2c8a-4460-a43f-06aec0f7d401.xml, wdm/KeDeregisterBugCheckReasonCallback, KeDeregisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture], KeDeregisterBugCheckReasonCallback, kernel.kederegisterbugcheckreasoncallback
+ms.keywords : wdm/KeDeregisterBugCheckReasonCallback, KeDeregisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture], k105_f767309b-2c8a-4460-a43f-06aec0f7d401.xml, kernel.kederegisterbugcheckreasoncallback, KeDeregisterBugCheckReasonCallback
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,12 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5518
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows. Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

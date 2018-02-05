@@ -64,14 +64,14 @@ NDIS_STATUS AllocateSharedMemoryHandler(
 An NDIS_HANDLE to a block of driver-allocated context information that identifies the provider.
      The provider supplied this information in the 
      <b>ProviderContext</b> member of the 
-     <mshelp:link keywords="netvista.ndis_shared_memory_provider_characteristics" tabindex="0"><b>
-     NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</b></mshelp:link> structure.
+     <a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
+     NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a> structure.
 
 `SharedMemoryParameters`
 
 A pointer to an 
-     <mshelp:link keywords="netvista.ndis_shared_memory_parameters" tabindex="0"><b>
-     NDIS_SHARED_MEMORY_PARAMETERS</b></mshelp:link> structure that defines the requested attributes for the shared
+     <a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">
+     NDIS_SHARED_MEMORY_PARAMETERS</a> structure that defines the requested attributes for the shared
      memory.
 
 `pSharedMemoryProviderContext`
@@ -138,34 +138,30 @@ The operation failed for unspecified reasons.
 
 NDIS calls the 
     <i>NetAllocateSharedMemory</i> function of a shared memory provider when a driver calls the 
-    <mshelp:link keywords="netvista.ndisallocatesharedmemory" tabindex="0"><b>
-    NdisAllocateSharedMemory</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">
+    NdisAllocateSharedMemory</a> function.
 
 The shared memory provider specified the entry point (ALLOCATE_SHARED_MEMORY_HANDLER) for 
     <i>NetAllocateSharedMemory</i> in the 
-    <mshelp:link keywords="netvista.ndis_shared_memory_provider_characteristics" tabindex="0"><b>
-    NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</b></mshelp:link> structure.
+    <a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
+    NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
-
 <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
 
-<mshelp:link keywords="netvista.ndis_shared_memory_provider_characteristics" tabindex="0"><b>
-   NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_ndis_shared_memory_parameters.md">NDIS_SHARED_MEMORY_PARAMETERS</a>
+
+<a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
+   NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a>
 
  
 

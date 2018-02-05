@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 5b2025ce-e0dd-434d-b92b-16ecaf24808f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_VIEWPORT, D3D10_DDI_VIEWPORT structure [Display Devices], display.d3d10_ddi_viewport, d3d10umddi/D3D10_DDI_VIEWPORT, UMDisplayDriver_Dx10param_Structs_820ac08a-01a2-4e47-8573-aedf3c3769e1.xml
+ms.keywords : D3D10_DDI_VIEWPORT, UMDisplayDriver_Dx10param_Structs_820ac08a-01a2-4e47-8573-aedf3c3769e1.xml, d3d10umddi/D3D10_DDI_VIEWPORT, D3D10_DDI_VIEWPORT structure [Display Devices], display.d3d10_ddi_viewport
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,9 +84,7 @@ typedef struct D3D10_DDI_VIEWPORT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

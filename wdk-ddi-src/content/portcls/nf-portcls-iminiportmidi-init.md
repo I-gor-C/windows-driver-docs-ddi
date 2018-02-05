@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 2afec522-5a40-4db2-9f37-ee7a9b64e823
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.iminiportmidi_init, IMiniportMidi interface [Audio Devices], Init method, IMiniportMidi::Init, IMiniportMidi, Init method [Audio Devices], IMiniportMidi interface, portcls/IMiniportMidi::Init, audmp-routines_44f5f136-811f-46ec-aa4d-64fba408acbf.xml, Init method [Audio Devices], Init
+ms.keywords : IMiniportMidi::Init, Init, audmp-routines_44f5f136-811f-46ec-aa4d-64fba408acbf.xml, portcls/IMiniportMidi::Init, Init method [Audio Devices], audio.iminiportmidi_init, Init method [Audio Devices], IMiniportMidi interface, IMiniportMidi interface [Audio Devices], Init method, IMiniportMidi
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -97,30 +97,26 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
-
-<a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
+<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
 
 <a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
 
-<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
+<a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
+
+<a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
+
+<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 2405a405-177a-420a-9628-a340e0d0acb3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFreeToNPagedLookasideList, netvista.ndisfreetonpagedlookasidelist, ndis_lookaside_ref_8c12e884-8f7b-4bcc-9631-2173003e4ef6.xml, ndis/NdisFreeToNPagedLookasideList, NdisFreeToNPagedLookasideList macro [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis_lookaside_ref_8c12e884-8f7b-4bcc-9631-2173003e4ef6.xml, NdisFreeToNPagedLookasideList, netvista.ndisfreetonpagedlookasidelist, NdisFreeToNPagedLookasideList macro [Network Drivers Starting with Windows Vista], ndis/NdisFreeToNPagedLookasideList
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -75,31 +75,29 @@ If the lookaside list has not reached the system-determined maximum number of en
     <b>NdisFreeToNPagedLookasideList</b> either calls the driver's 
     <i>Free</i> function, specified in the 
     <i>Free</i> parameter if the driver provided one to the 
-    <mshelp:link keywords="netvista.ndisinitializenpagedlookasidelist" tabindex="0"><b>
-    NdisInitializeNPagedLookasideList</b></mshelp:link> function, or it frees the given entry itself.
+    <a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
+    NdisInitializeNPagedLookasideList</a> function, or it frees the given entry itself.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisFreeToNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisFreeToNPagedLookasideList (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisFreeToNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisFreeToNPagedLookasideList (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatefromnpagedlookasidelist" tabindex="0"><b>
-   NdisAllocateFromNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisinitializenpagedlookasidelist.md">
+   NdisInitializeNPagedLookasideList</a>
 
-<mshelp:link keywords="netvista.ndisinitializenpagedlookasidelist" tabindex="0"><b>
-   NdisInitializeNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+   NdisAllocateFromNPagedLookasideList</a>
 
-<mshelp:link keywords="netvista.ndisdeletenpagedlookasidelist" tabindex="0"><b>
-   NdisDeleteNPagedLookasideList</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisdeletenpagedlookasidelist.md">
+   NdisDeleteNPagedLookasideList</a>
 
  
 

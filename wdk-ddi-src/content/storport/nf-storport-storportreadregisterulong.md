@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 308e6401-9726-4333-bde8-1aec9558c5fb
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortReadRegisterUlong, storport/StorPortReadRegisterUlong, storage.storportreadregisterulong, StorPortReadRegisterUlong routine [Storage Devices], storprt_dd719ccb-d625-4820-a371-dff748037a99.xml
+ms.keywords : storage.storportreadregisterulong, storport/StorPortReadRegisterUlong, StorPortReadRegisterUlong routine [Storage Devices], storprt_dd719ccb-d625-4820-a371-dff748037a99.xml, StorPortReadRegisterUlong
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,20 +74,15 @@ For more information, see <a href="..\srb\nf-srb-scsiportreadregisterulong.md">S
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Storport.lib |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportreadregisterbufferulong.md">StorPortReadRegisterBufferUlong</a>
-
 <a href="..\srb\nf-srb-scsiportreadregisterulong.md">ScsiPortReadRegisterUlong</a>
+
+<a href="..\storport\nf-storport-storportreadregisterbufferulong.md">StorPortReadRegisterBufferUlong</a>
 
  
 

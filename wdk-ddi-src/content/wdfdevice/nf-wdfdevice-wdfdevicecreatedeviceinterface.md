@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : cdfe1932-ee3d-41ea-8d7b-85c17c0f1722
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceCreateDeviceInterface method, wdf.wdfdevicecreatedeviceinterface, kmdf.wdfdevicecreatedeviceinterface, wdfdevice/WdfDeviceCreateDeviceInterface, WdfDeviceCreateDeviceInterface, DFDeviceObjectGeneralRef_467c4866-4ba7-4450-9aec-e63c3172d604.xml
+ms.keywords : kmdf.wdfdevicecreatedeviceinterface, DFDeviceObjectGeneralRef_467c4866-4ba7-4450-9aec-e63c3172d604.xml, WdfDeviceCreateDeviceInterface method, WdfDeviceCreateDeviceInterface, wdf.wdfdevicecreatedeviceinterface, wdfdevice/WdfDeviceCreateDeviceInterface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -89,20 +89,19 @@ For more information about device interfaces and the <b>WdfDeviceCreateDeviceInt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

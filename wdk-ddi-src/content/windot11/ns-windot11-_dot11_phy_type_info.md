@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_phy_type_info, *PDOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO structure [Network Drivers Starting with Windows Vista], DOT11_PHY_TYPE_INFO, _DOT11_PHY_TYPE_INFO, Native_802.11_data_types_20e3d688-253f-416e-b9b0-8adec6bf7415.xml, windot11/DOT11_PHY_TYPE_INFO, windot11/PDOT11_PHY_TYPE_INFO
+ms.keywords : "*PDOT11_PHY_TYPE_INFO, Native_802.11_data_types_20e3d688-253f-416e-b9b0-8adec6bf7415.xml, netvista.dot11_phy_type_info, DOT11_PHY_TYPE_INFO, windot11/DOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PHY_TYPE_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,15 +89,15 @@ This member specifies the method used to interpret the entries in the
 
 
 
+#### ch_description_type_center_frequency
+
+The channel entry is defined, in units of megahertz (MHz), by a channel center frequency.
+
+
 #### ch_description_type_logical
 
 The channel entry is defined by a logical channel number to conform with the IEEE 802.11
        standard.
-
-
-#### ch_description_type_center_frequency
-
-The channel entry is defined, in units of megahertz (MHz), by a channel center frequency.
 
 `dot11PhyType`
 
@@ -148,19 +148,17 @@ The
     array of zero or more DOT11_PHY_TYPE_INFO entries.
 
 For more information about the scan operations performed by a Native 802.11 miniport driver, see 
-    <mshelp:link keywords="netvista.native_802_11_scan_operations" tabindex="0">Native 802.11 Scan
-    Operations</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-scan-operations">Native 802.11 Scan
+    Operations</a>.
 
 For more information about the ExtSTA operation mode, see 
-    <mshelp:link keywords="netvista.extensible_station_operation_mode" tabindex="0">Extensible Station Operation
-    Mode</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/extensible-station-operation-mode">Extensible Station Operation
+    Mode</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
 ## See Also

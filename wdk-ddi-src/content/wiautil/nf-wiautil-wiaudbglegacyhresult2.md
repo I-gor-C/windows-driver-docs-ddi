@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 1b73c94b-07a8-4b65-8ed7-d5f1a073c3b2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauFncs_b980cd55-047b-4870-9bad-928253d0ce77.xml, image.wiaudbglegacyhresult2, wiauDbgLegacyHresult2 function [Imaging Devices], wiautil/wiauDbgLegacyHresult2, wiauDbgLegacyHresult2
+ms.keywords : wiauFncs_b980cd55-047b-4870-9bad-928253d0ce77.xml, wiauDbgLegacyHresult2 function [Imaging Devices], image.wiaudbglegacyhresult2, wiauDbgLegacyHresult2, wiautil/wiauDbgLegacyHresult2
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,14 +94,10 @@ A call to the <b>wiauDbgLegacyHresult2</b> function is equivalent to the followi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

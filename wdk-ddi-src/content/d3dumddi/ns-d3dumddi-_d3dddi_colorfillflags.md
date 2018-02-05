@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 672baa43-7fa1-4c10-9d60-c7c8a4729f26
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_colorfillflags, d3dumddi/D3DDDI_COLORFILLFLAGS, _D3DDDI_COLORFILLFLAGS, D3DDDI_COLORFILLFLAGS, D3DDDI_COLORFILLFLAGS structure [Display Devices], D3D_other_Structs_555ecebb-bdd8-4c7f-97cd-801216506b9e.xml
+ms.keywords : display.d3dddi_colorfillflags, D3DDDI_COLORFILLFLAGS, D3D_other_Structs_555ecebb-bdd8-4c7f-97cd-801216506b9e.xml, d3dumddi/D3DDDI_COLORFILLFLAGS, _D3DDDI_COLORFILLFLAGS, D3DDDI_COLORFILLFLAGS structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,16 +61,14 @@ typedef struct _D3DDDI_COLORFILLFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_colorfill.md">D3DDDIARG_COLORFILL</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_colorfill.md">ColorFill</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_colorfill.md">D3DDDIARG_COLORFILL</a>
 
  
 

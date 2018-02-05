@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 11ca7db9-8e84-4d55-9ea9-7e2ecfa563e0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILHIDEIDSETTINGS, RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS, netvista.rilhideidsettings, RILHIDEIDSETTINGS structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.rilhideidsettings, ntddrilapitypes/RILHIDEIDSETTINGS, RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS"
+req.typenames : RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS
 ---
 
 # RILHIDEIDSETTINGS structure
@@ -79,7 +79,4 @@ typedef struct _RILHIDEIDSETTINGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

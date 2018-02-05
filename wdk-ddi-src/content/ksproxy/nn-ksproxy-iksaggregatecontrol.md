@@ -90,21 +90,18 @@ For more information about <b>IDistributorNotify</b>, <b>IUnknown</b>, and <b>Co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h |
-| **DLL** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559890">IKsObject::KsGetObjectHandle</a>
 
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
+
 <a href="https://msdn.microsoft.com/9808bdb9-17f9-4a80-90c7-e85ab35b74ae">KsAddAggregate</a>
 
 <a href="https://msdn.microsoft.com/f625b1ed-ccab-4072-9eb9-c4ebbddb1199">KsRemoveAggregate</a>
-
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
 
  
 

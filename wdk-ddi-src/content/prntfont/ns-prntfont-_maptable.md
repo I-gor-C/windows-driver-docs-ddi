@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d3dcf7b0-4244-41c1-801e-cf41b20f2d54
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : MAPTABLE structure [Print Devices], PMAPTABLE, PMAPTABLE structure pointer [Print Devices], print_unidrv-pscript_fonts_c98fd60e-c56a-4f76-8408-e6680bc49525.xml, *PMAPTABLE, prntfont/MAPTABLE, MAPTABLE, _MAPTABLE, prntfont/PMAPTABLE, print.maptable
+ms.keywords : prntfont/MAPTABLE, PMAPTABLE, *PMAPTABLE, MAPTABLE structure [Print Devices], prntfont/PMAPTABLE, print.maptable, PMAPTABLE structure pointer [Print Devices], print_unidrv-pscript_fonts_c98fd60e-c56a-4f76-8408-e6680bc49525.xml, _MAPTABLE, MAPTABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -72,9 +72,6 @@ A .gtt file's MAPTABLE structure, which contains a glyph mapping table, is acces
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | prntfont.h (include Prntfont.h) |
 
 ## See Also

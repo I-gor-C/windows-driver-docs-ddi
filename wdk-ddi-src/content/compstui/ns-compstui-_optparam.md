@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d0cd2867-783c-4a41-a819-e919d4ffc1e3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : POPTPARAM structure pointer [Print Devices], compstui/POPTPARAM, _OPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml, print.optparam, compstui/OPTPARAM, OPTPARAM structure [Print Devices], POPTPARAM, OPTPARAM, *POPTPARAM
+ms.keywords : POPTPARAM structure pointer [Print Devices], compstui/POPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml, print.optparam, compstui/OPTPARAM, POPTPARAM, _OPTPARAM, *POPTPARAM, OPTPARAM, OPTPARAM structure [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -174,7 +174,4 @@ If the OPTPF_HIDE flag is set in all the OPTPARAM structures associated with an 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | compstui.h (include Compstui.h) |

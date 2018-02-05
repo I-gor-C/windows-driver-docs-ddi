@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 30962127-a46f-43f5-a58e-891c5b8a867d
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : EXT_COMMAND_METHOD, debugger.ext_command_method, EngExtCpp_Ref_a4a0b264-50e1-457b-a962-ca691509ea36.xml, engextcpp/EXT_COMMAND_METHOD, EXT_COMMAND_METHOD function [Windows Debugging]
+ms.keywords : EXT_COMMAND_METHOD, engextcpp/EXT_COMMAND_METHOD, EXT_COMMAND_METHOD function [Windows Debugging], debugger.ext_command_method, EngExtCpp_Ref_a4a0b264-50e1-457b-a962-ca691509ea36.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES"
+req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
@@ -70,14 +70,9 @@ The macro <a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a> sho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | engextcpp.hpp |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 3fdb83b2-85b7-4f86-9a59-a42138000214
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsPinSubmitFrame, ks/KsPinSubmitFrame, stream.kspinsubmitframe, avfunc_ce7c4c71-c404-4061-a2e5-b9f4c15df4a2.xml, KsPinSubmitFrame function [Streaming Media Devices]
+ms.keywords : stream.kspinsubmitframe, avfunc_ce7c4c71-c404-4061-a2e5-b9f4c15df4a2.xml, KsPinSubmitFrame function [Streaming Media Devices], KsPinSubmitFrame, ks/KsPinSubmitFrame
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,14 +85,11 @@ Returns STATUS_SUCCESS if frame submission is successful. Otherwise returns an a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

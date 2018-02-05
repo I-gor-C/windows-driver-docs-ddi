@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1c71473a-98db-41a1-9ca5-ce59f345b5f7
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-changer_ab07ca33-813d-4b35-b5ce-809c63633ce5.xml, ntddchgr/CHANGER_SET_POSITION, _CHANGER_SET_POSITION, CHANGER_SET_POSITION structure [Storage Devices], storage.changer_set_position, PCHANGER_SET_POSITION structure pointer [Storage Devices], CHANGER_SET_POSITION, PCHANGER_SET_POSITION, *PCHANGER_SET_POSITION, ntddchgr/PCHANGER_SET_POSITION
+ms.keywords : PCHANGER_SET_POSITION, PCHANGER_SET_POSITION structure pointer [Storage Devices], ntddchgr/PCHANGER_SET_POSITION, CHANGER_SET_POSITION structure [Storage Devices], CHANGER_SET_POSITION, *PCHANGER_SET_POSITION, structs-changer_ab07ca33-813d-4b35-b5ce-809c63633ce5.xml, ntddchgr/CHANGER_SET_POSITION, storage.changer_set_position, _CHANGER_SET_POSITION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,20 +69,17 @@ Contains a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddchgr.h |
 
 ## See Also
 
 <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
 
+<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
+
 <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_position.md">IOCTL_CHANGER_SET_POSITION</a>
 
 <a href="..\mcd\nf-mcd-changersetposition.md">ChangerSetPosition</a>
-
-<a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>
 
  
 

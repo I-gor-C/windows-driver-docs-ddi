@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4671B6C1-358A-4CC2-A6FC-0FBA0F26DB07
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_INTEGRATEDDISPLAYFLAGS, d3dkmddi/DXGK_INTEGRATEDDISPLAYFLAGS, _DXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS union [Display Devices], display.dxgk_integrateddisplayflags
+ms.keywords : "_DXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS union [Display Devices], d3dkmddi/DXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS, display.dxgk_integrateddisplayflags"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS"
+req.typenames : DXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS
 ---
 
 # _DXGK_INTEGRATEDDISPLAYFLAGS structure
@@ -64,7 +64,4 @@ UINT used to operate on the combined bit-fields.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

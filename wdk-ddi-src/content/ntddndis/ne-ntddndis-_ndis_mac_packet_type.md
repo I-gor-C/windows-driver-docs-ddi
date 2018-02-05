@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3cfa8fa4-fab0-4f94-abc1-5c7900af208b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_MAC_PACKET_TYPE, ntddndis/NdisMacPacketTypeBroadcast, PNDIS_MAC_PACKET_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NDIS_MAC_PACKET_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisMacPacketTypeUndefined, NdisMacPacketTypeBroadcast, _NDIS_MAC_PACKET_TYPE, ntddndis/NdisMacPacketTypeMulticast, NdisMacPacketTypeMaximum, ntddndis/NdisMacPacketTypeMaximum, ntddndis/NdisMacPacketTypeUndefined, PNDIS_MAC_PACKET_TYPE, ntddndis/NdisMacPacketTypeUnicast, NDIS_MAC_PACKET_TYPE, ntddndis/PNDIS_MAC_PACKET_TYPE, netvista.ndis_mac_packet_type, NdisMacPacketTypeMulticast, NdisMacPacketTypeUnicast, *PNDIS_MAC_PACKET_TYPE
+ms.keywords : NDIS_MAC_PACKET_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisMacPacketTypeUndefined, *PNDIS_MAC_PACKET_TYPE, ntddndis/NdisMacPacketTypeMaximum, NdisMacPacketTypeMulticast, PNDIS_MAC_PACKET_TYPE, NDIS_MAC_PACKET_TYPE, ntddndis/NdisMacPacketTypeBroadcast, ntddndis/NdisMacPacketTypeMulticast, NdisMacPacketTypeBroadcast, netvista.ndis_mac_packet_type, NdisMacPacketTypeUnicast, NdisMacPacketTypeMaximum, _NDIS_MAC_PACKET_TYPE, ntddndis/PNDIS_MAC_PACKET_TYPE, ntddndis/NdisMacPacketTypeUnicast, ntddndis/NDIS_MAC_PACKET_TYPE, PNDIS_MAC_PACKET_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NdisMacPacketTypeUndefined
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,21 +86,19 @@ typedef enum _NDIS_MAC_PACKET_TYPE {
 ## Remarks
 
 The <b>NDIS_MAC_PACKET_TYPE</b> enumeration is used in the 
-    <mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_receive_filter_field_parameters" tabindex="0"><b>
-   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b></mshelp:link>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+   NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
  
 

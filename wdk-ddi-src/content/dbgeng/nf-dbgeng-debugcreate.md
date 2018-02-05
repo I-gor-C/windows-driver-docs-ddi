@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 9dd3632c-4c88-470d-8419-10959eda0454
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : DebugCreate, DebugCreate function [Windows Debugging], debugger.debugcreate, ClientFns_4a96fd16-32b9-40f5-bc7f-60ae6ecadb32.xml, dbgeng/DebugCreate
+ms.keywords : dbgeng/DebugCreate, ClientFns_4a96fd16-32b9-40f5-bc7f-60ae6ecadb32.xml, DebugCreate function [Windows Debugging], debugger.debugcreate, DebugCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,14 +103,9 @@ As with <b>IUnknown::QueryInterface</b>, when the returned interface is no longe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

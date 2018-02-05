@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : e2196971-47ad-4ac4-a3e9-c8f7f6b05321
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ChangerError function [Storage Devices], mcd/ChangerError, chgrmini_5235b77f-51d1-4fa5-b68c-3e649aed829c.xml, storage.changererror, ChangerError
+ms.keywords : storage.changererror, ChangerError function [Storage Devices], mcd/ChangerError, chgrmini_5235b77f-51d1-4fa5-b68c-3e649aed829c.xml, ChangerError
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,11 +87,7 @@ If an SRB fails with a SCSI status of CHECK CONDITION, the SCSI class driver cal
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

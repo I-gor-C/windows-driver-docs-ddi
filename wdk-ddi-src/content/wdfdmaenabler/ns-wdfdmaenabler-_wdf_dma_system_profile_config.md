@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 80131AB6-4A2B-4D99-9289-CE9FE26E0695
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG structure pointer, wdf.wdf_dma_system_profile_config, kmdf.wdf_dma_system_profile_config, _WDF_DMA_SYSTEM_PROFILE_CONFIG, *PWDF_DMA_SYSTEM_PROFILE_CONFIG, wdfdmaenabler/PWDF_DMA_SYSTEM_PROFILE_CONFIG, wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG structure
+ms.keywords : wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG structure pointer, WDF_DMA_SYSTEM_PROFILE_CONFIG structure, WDF_DMA_SYSTEM_PROFILE_CONFIG, wdfdmaenabler/PWDF_DMA_SYSTEM_PROFILE_CONFIG, wdf.wdf_dma_system_profile_config, *PWDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG, _WDF_DMA_SYSTEM_PROFILE_CONFIG, kmdf.wdf_dma_system_profile_config
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -98,9 +98,8 @@ If <b>DemandMode</b> is set to FALSE, the DMA transfer may begin before the fram
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Minimum KMDF version** | 1.11 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
 
 ## See Also

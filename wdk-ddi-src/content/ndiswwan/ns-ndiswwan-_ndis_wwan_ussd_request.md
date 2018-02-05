@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B98143A1-7F7D-4130-A388-72A21B89E6D8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_USSD_REQUEST, PNDIS_WWAN_USSD_REQUEST structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_ussd_request, _NDIS_WWAN_USSD_REQUEST, *PNDIS_WWAN_USSD_REQUEST, ndiswwan/PNDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST, ndiswwan/NDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST structure [Network Drivers Starting with Windows Vista]
+ms.keywords : ndiswwan/NDIS_WWAN_USSD_REQUEST, PNDIS_WWAN_USSD_REQUEST, *PNDIS_WWAN_USSD_REQUEST, _NDIS_WWAN_USSD_REQUEST, netvista.ndis_wwan_ussd_request, NDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_USSD_REQUEST structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_USSD_REQUEST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_WWAN_USSD_REQUEST, *PNDIS_WWAN_USSD_REQUEST
+req.typenames : "*PNDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST"
 ---
 
 # _NDIS_WWAN_USSD_REQUEST structure
@@ -108,9 +108,7 @@ A formatted
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also

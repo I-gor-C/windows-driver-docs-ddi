@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 4f142e5f-7d8a-47e0-8757-8c6e527a2472
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksgenerateevent, KsGenerateEvent, ksfunc_929fd3d4-2f02-4106-b8cd-25c3fb13ba05.xml, ks/KsGenerateEvent, KsGenerateEvent function [Streaming Media Devices]
+ms.keywords : KsGenerateEvent function [Streaming Media Devices], ks/KsGenerateEvent, stream.ksgenerateevent, ksfunc_929fd3d4-2f02-4106-b8cd-25c3fb13ba05.xml, KsGenerateEvent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,20 +68,16 @@ A device determines when event notifications are generated using the <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | Any level (See Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
-
 <a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
+
+<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 
 <a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 

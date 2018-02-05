@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : af686e7a-9426-4151-8ac4-d95ae1689b4c
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure pointer [Storage Devices], SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure [Storage Devices], SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, scsi/SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, scsi/PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, storage.ses_download_microcode_status_descriptor, *PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
+ms.keywords : PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure pointer [Storage Devices], *PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure [Storage Devices], _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, scsi/PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, storage.ses_download_microcode_status_descriptor, scsi/SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -332,9 +332,7 @@ status descriptor applies to.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1709 and later versions of Windows. Available in Windows 10, version 1709 and later versions of Windows. |
 | **Header** | scsi.h (include Minitape.h, Storport.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : d2615320-6c8a-4813-afb5-c5b510e5fde9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WheaErrSrcTypeIPFMCA, whearef_786d549e-14b1-4945-a1ce-23c7112ff0c8.xml, ntddk/WheaErrSrcTypePCIe, ntddk/WheaErrSrcTypeMax, WheaErrSrcTypeSCIGeneric, *PWHEA_ERROR_SOURCE_TYPE, ntddk/WheaErrSrcTypeINIT, WheaErrSrcTypeGeneric, _WHEA_ERROR_SOURCE_TYPE, ntddk/PWHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypePCIe, ntddk/WheaErrSrcTypeCPE, ntddk/WheaErrSrcTypeCMC, WheaErrSrcTypeNMI, ntddk/WheaErrSrcTypeGeneric, ntddk/WHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypeMCE, WheaErrSrcTypeINIT, ntddk/WheaErrSrcTypeNMI, WHEA_ERROR_SOURCE_TYPE enumeration [WHEA Drivers and Applications], ntddk/WheaErrSrcTypeMCE, WheaErrSrcTypeIPFCMC, WheaErrSrcTypeIPFCPE, ntddk/WheaErrSrcTypeIPFCMC, WheaErrSrcTypeMax, whea.whea_error_source_type, ntddk/WheaErrSrcTypeBOOT, PWHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypeBOOT, WheaErrSrcTypeCMC, ntddk/WheaErrSrcTypeIPFCPE, ntddk/WheaErrSrcTypeIPFMCA, WHEA_ERROR_SOURCE_TYPE, ntddk/WheaErrSrcTypeSCIGeneric, WheaErrSrcTypeCPE, PWHEA_ERROR_SOURCE_TYPE enumeration pointer [WHEA Drivers and Applications]
+ms.keywords : ntddk/WheaErrSrcTypeMCE, PWHEA_ERROR_SOURCE_TYPE enumeration pointer [WHEA Drivers and Applications], WheaErrSrcTypeSCIGeneric, WheaErrSrcTypePCIe, _WHEA_ERROR_SOURCE_TYPE, ntddk/WheaErrSrcTypeMax, WheaErrSrcTypeIPFCPE, WheaErrSrcTypeIPFMCA, ntddk/WheaErrSrcTypeIPFCPE, WheaErrSrcTypeINIT, ntddk/WheaErrSrcTypeNMI, WheaErrSrcTypeMax, ntddk/WheaErrSrcTypeGeneric, ntddk/WheaErrSrcTypeCMC, whearef_786d549e-14b1-4945-a1ce-23c7112ff0c8.xml, WheaErrSrcTypeMCE, ntddk/WheaErrSrcTypeINIT, *PWHEA_ERROR_SOURCE_TYPE, ntddk/WheaErrSrcTypeBOOT, ntddk/WheaErrSrcTypePCIe, ntddk/WheaErrSrcTypeIPFMCA, ntddk/WheaErrSrcTypeIPFCMC, WheaErrSrcTypeCPE, ntddk/WHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypeBOOT, WHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypeGeneric, ntddk/PWHEA_ERROR_SOURCE_TYPE, WheaErrSrcTypeIPFCMC, whea.whea_error_source_type, PWHEA_ERROR_SOURCE_TYPE, ntddk/WheaErrSrcTypeCPE, WHEA_ERROR_SOURCE_TYPE enumeration [WHEA Drivers and Applications], ntddk/WheaErrSrcTypeSCIGeneric, WheaErrSrcTypeCMC, WheaErrSrcTypeNMI
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_ERROR_SOURCE_TYPE, WHEA_ERROR_SOURCE_TYPE"
+req.typenames : WHEA_ERROR_SOURCE_TYPE, *PWHEA_ERROR_SOURCE_TYPE
 ---
 
 # _WHEA_ERROR_SOURCE_TYPE Enumeration
@@ -149,16 +149,14 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
  
 

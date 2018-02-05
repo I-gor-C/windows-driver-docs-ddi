@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 02A30A9F-A27D-492E-8FB3-D8CB34D51D5A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_DEVICE_STARTED, kernel.pep_device_started, PEP_DEVICE_STARTED, pepfx/PPEP_DEVICE_STARTED, pepfx/PEP_DEVICE_STARTED, *PPEP_DEVICE_STARTED, PEP_DEVICE_STARTED structure [Kernel-Mode Driver Architecture], PPEP_DEVICE_STARTED structure pointer [Kernel-Mode Driver Architecture], _PEP_DEVICE_STARTED
+ms.keywords : PEP_DEVICE_STARTED structure [Kernel-Mode Driver Architecture], PPEP_DEVICE_STARTED, PEP_DEVICE_STARTED, _PEP_DEVICE_STARTED, pepfx/PPEP_DEVICE_STARTED, pepfx/PEP_DEVICE_STARTED, PPEP_DEVICE_STARTED structure pointer [Kernel-Mode Driver Architecture], kernel.pep_device_started, *PPEP_DEVICE_STARTED
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_DEVICE_STARTED, PEP_DEVICE_STARTED"
+req.typenames : PEP_DEVICE_STARTED, *PPEP_DEVICE_STARTED
 ---
 
 # _PEP_DEVICE_STARTED structure
@@ -61,16 +61,14 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186714">PEP_DPM_DEVICE_STARTED</a>
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186714">PEP_DPM_DEVICE_STARTED</a>
 
  
 

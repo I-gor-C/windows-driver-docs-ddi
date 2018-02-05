@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 2a2320e6-b114-4ea7-9f2f-27fd47fef770
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxScavengeFobxsForNetRoot function [Installable File System Drivers], rxref_9fac9a87-f068-4ee4-909c-85a41c9884d6.xml, scavengr/RxScavengeFobxsForNetRoot, RxScavengeFobxsForNetRoot, ifsk.rxscavengefobxsfornetroot
+ms.keywords : RxScavengeFobxsForNetRoot function [Installable File System Drivers], ifsk.rxscavengefobxsfornetroot, rxref_9fac9a87-f068-4ee4-909c-85a41c9884d6.xml, scavengr/RxScavengeFobxsForNetRoot, RxScavengeFobxsForNetRoot
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -92,24 +92,20 @@ The <b>NodeTypeCode</b> member of an FOBX structure is not RDBSS_NTC_FOBX.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | scavengr.h (include Rxprocs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\scavengr\nf-scavengr-rxpurgerelatedfobxs.md">RxPurgeRelatedFobxs</a>
 
+<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
+
 <a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxscavengeallfobxs.md">RxScavengeAllFobxs</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxpurgeallfobxs.md">RxPurgeAllFobxs</a>
 
  
 

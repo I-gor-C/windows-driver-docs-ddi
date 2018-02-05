@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b76acae1-3c37-4095-bf8b-1785dc90f378
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFObject interface, RetrieveContext method, RetrieveContext method, IWDFObject interface, IWDFObject::RetrieveContext, umdf.iwdfobject_retrievecontext, wdf.iwdfobject_retrievecontext, wudfddi/IWDFObject::RetrieveContext, IWDFObject, RetrieveContext, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, RetrieveContext method
+ms.keywords : umdf.iwdfobject_retrievecontext, IWDFObject::RetrieveContext, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, RetrieveContext method, IWDFObject, RetrieveContext method, IWDFObject interface, wudfddi/IWDFObject::RetrieveContext, IWDFObject interface, RetrieveContext method, wdf.iwdfobject_retrievecontext, RetrieveContext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -71,22 +71,20 @@ Because the context is not a Component Object Model (COM) interface, the driver 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560208">IWDFObject::AssignContext</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558957">IWDFIoQueue::GetDevice</a>
 
  
 

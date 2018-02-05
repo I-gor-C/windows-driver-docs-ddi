@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 83260550-B364-4790-BDB5-5C6E5AD76A72
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : spb/IOCTL_SPB_LOCK_CONNECTION, spb/IOCTL_SPB_UNLOCK_CONNECTION, SpbIoctl, IOCTL_SPB_UNLOCK_CONTROLLER, SPB.spbioctl, SpbIoctl enumeration [Buses], spb/IOCTL_SPB_UNLOCK_CONTROLLER, spb/SpbIoctl, spb/IOCTL_SPB_LOCK_CONTROLLER, *PSpbIoctl, IOCTL_SPB_EXECUTE_SEQUENCE, IOCTL_SPB_UNLOCK_CONNECTION, IOCTL_SPB_FULL_DUPLEX, *PSpbIoctl enumeration [Buses], spb/IOCTL_SPB_FULL_DUPLEX, IOCTL_SPB_LOCK_CONTROLLER, spb/IOCTL_SPB_EXECUTE_SEQUENCE, IOCTL_SPB_LOCK_CONNECTION, spb/*PSpbIoctl
+ms.keywords : "*PSpbIoctl enumeration [Buses], IOCTL_SPB_LOCK_CONTROLLER, IOCTL_SPB_FULL_DUPLEX, spb/SpbIoctl, IOCTL_SPB_EXECUTE_SEQUENCE, SpbIoctl enumeration [Buses], IOCTL_SPB_UNLOCK_CONTROLLER, spb/*PSpbIoctl, spb/IOCTL_SPB_LOCK_CONNECTION, spb/IOCTL_SPB_UNLOCK_CONNECTION, *PSpbIoctl, SPB.spbioctl, spb/IOCTL_SPB_UNLOCK_CONTROLLER, spb/IOCTL_SPB_EXECUTE_SEQUENCE, spb/IOCTL_SPB_FULL_DUPLEX, spb/IOCTL_SPB_LOCK_CONTROLLER, IOCTL_SPB_UNLOCK_CONNECTION, IOCTL_SPB_LOCK_CONNECTION, SpbIoctl"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -95,7 +95,5 @@ typedef enum _SpbIoctl {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spb.h |

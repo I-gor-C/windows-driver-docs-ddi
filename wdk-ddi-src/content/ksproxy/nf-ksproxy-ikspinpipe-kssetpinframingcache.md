@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : E334FEE1-DD78-4906-ADFA-1B496F91BA28
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPinPipe::KsSetPinFramingCache, IKsPinPipe interface [Streaming Media Devices], KsSetPinFramingCache method, KsSetPinFramingCache method [Streaming Media Devices], KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe, KsSetPinFramingCache, stream.ikspinpipe_kssetpinframingcache, ksproxy/IKsPinPipe::KsSetPinFramingCache
+ms.keywords : KsSetPinFramingCache, KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe interface, stream.ikspinpipe_kssetpinframingcache, IKsPinPipe, KsSetPinFramingCache method [Streaming Media Devices], IKsPinPipe interface [Streaming Media Devices], KsSetPinFramingCache method, ksproxy/IKsPinPipe::KsSetPinFramingCache, IKsPinPipe::KsSetPinFramingCache
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -75,14 +75,9 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

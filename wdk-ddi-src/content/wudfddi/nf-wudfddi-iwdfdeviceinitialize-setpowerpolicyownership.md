@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 18b0b277-97c8-4aff-9f09-34822ce84290
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_849680d0-e616-4862-9c59-50150f6c15f0.xml, SetPowerPolicyOwnership method, IWDFDeviceInitialize interface, umdf.iwdfdeviceinitialize_setpowerpolicyownership, IWDFDeviceInitialize, wudfddi/IWDFDeviceInitialize::SetPowerPolicyOwnership, SetPowerPolicyOwnership, SetPowerPolicyOwnership method, wdf.iwdfdeviceinitialize_setpowerpolicyownership, IWDFDeviceInitialize interface, SetPowerPolicyOwnership method, IWDFDeviceInitialize::SetPowerPolicyOwnership
+ms.keywords : IWDFDeviceInitialize, wudfddi/IWDFDeviceInitialize::SetPowerPolicyOwnership, SetPowerPolicyOwnership method, IWDFDeviceInitialize interface, SetPowerPolicyOwnership method, SetPowerPolicyOwnership, umdf.iwdfdeviceinitialize_setpowerpolicyownership, wdf.iwdfdeviceinitialize_setpowerpolicyownership, IWDFDeviceInitialize::SetPowerPolicyOwnership, UMDFDeviceObjectRef_849680d0-e616-4862-9c59-50150f6c15f0.xml, IWDFDeviceInitialize interface, SetPowerPolicyOwnership method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -73,20 +73,18 @@ For more information, see <a href="https://docs.microsoft.com/en-us/windows-hard
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0d05455d-32ea-4f88-8752-7f5fe40b8b29
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.bda_pin_pairing, bdasup/PBDA_PIN_PAIRING, PBDA_PIN_PAIRING structure pointer [Streaming Media Devices], BDA_PIN_PAIRING, BDA_PIN_PAIRING structure [Streaming Media Devices], bdasup/BDA_PIN_PAIRING, _BDA_PIN_PAIRING, PBDA_PIN_PAIRING, *PBDA_PIN_PAIRING, bdaref_b007d58d-86c0-4653-867a-78ef5be2f260.xml
+ms.keywords : "*PBDA_PIN_PAIRING, bdasup/BDA_PIN_PAIRING, BDA_PIN_PAIRING structure [Streaming Media Devices], PBDA_PIN_PAIRING, PBDA_PIN_PAIRING structure pointer [Streaming Media Devices], BDA_PIN_PAIRING, bdasup/PBDA_PIN_PAIRING, bdaref_b007d58d-86c0-4653-867a-78ef5be2f260.xml, stream.bda_pin_pairing, _BDA_PIN_PAIRING"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : BDA_PIN_PAIRING, *PBDA_PIN_PAIRING
+req.typenames : "*PBDA_PIN_PAIRING, BDA_PIN_PAIRING"
 ---
 
 # _BDA_PIN_PAIRING structure
@@ -94,18 +94,15 @@ Index of the element in the zero-based array of pin types (KSPIN_DESCRIPTOR_EX a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdasup.h (include Bdasup.h) |
 
 ## See Also
 
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
 
-<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
 
 <a href="..\bdatypes\ns-bdatypes-_bda_template_connection.md">BDA_TEMPLATE_CONNECTION</a>
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : da97b175-a24c-406d-9747-c84122781f79
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_b02ec187-32ca-41ff-bfc3-03d058872b5d.xml, _DXGKARGCB_ENUMHANDLECHILDREN, d3dkmddi/DXGKARGCB_ENUMHANDLECHILDREN, display.dxgkargcb_enumhandlechildren, DXGKARGCB_ENUMHANDLECHILDREN structure [Display Devices], DXGKARGCB_ENUMHANDLECHILDREN
+ms.keywords : DmStructs_b02ec187-32ca-41ff-bfc3-03d058872b5d.xml, DXGKARGCB_ENUMHANDLECHILDREN structure [Display Devices], _DXGKARGCB_ENUMHANDLECHILDREN, DXGKARGCB_ENUMHANDLECHILDREN, d3dkmddi/DXGKARGCB_ENUMHANDLECHILDREN, display.dxgkargcb_enumhandlechildren
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _DXGKARGCB_ENUMHANDLECHILDREN {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

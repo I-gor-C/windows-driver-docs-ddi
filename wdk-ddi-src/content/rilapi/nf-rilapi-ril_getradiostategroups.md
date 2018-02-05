@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 7143e3a1-f383-4ea8-8e97-d9d7a9089db4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_GetRadioStateGroups method [Network Drivers Starting with Windows Vista], rilapi/RIL_GetRadioStateGroups, netvista.ril_getradiostategroups, RIL_GetRadioStateGroups
+ms.keywords : RIL_GetRadioStateGroups, rilapi/RIL_GetRadioStateGroups, netvista.ril_getradiostategroups, RIL_GetRadioStateGroups method [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

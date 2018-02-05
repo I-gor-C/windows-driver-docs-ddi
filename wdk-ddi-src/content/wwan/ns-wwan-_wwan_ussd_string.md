@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9DE6CE5D-9570-4728-ACED-D6863812A3F4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_USSD_STRING, netvista.wwan_ussd_string, _WWAN_USSD_STRING, PWWAN_USSD_STRING structure pointer [Network Drivers Starting with Windows Vista], WWAN_USSD_STRING structure [Network Drivers Starting with Windows Vista], WWAN_USSD_STRING, PWWAN_USSD_STRING, *PWWAN_USSD_STRING, wwan/PWWAN_USSD_STRING
+ms.keywords : netvista.wwan_ussd_string, wwan/PWWAN_USSD_STRING, WWAN_USSD_STRING, WWAN_USSD_STRING structure [Network Drivers Starting with Windows Vista], PWWAN_USSD_STRING, PWWAN_USSD_STRING structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_USSD_STRING, wwan/WWAN_USSD_STRING, _WWAN_USSD_STRING
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_USSD_STRING, *PWWAN_USSD_STRING
+req.typenames : "*PWWAN_USSD_STRING, WWAN_USSD_STRING"
 req.product : Windows 10 or later.
 ---
 
@@ -78,9 +78,7 @@ For USSD notifications, the miniport driver or MB device must encode the USSD st
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

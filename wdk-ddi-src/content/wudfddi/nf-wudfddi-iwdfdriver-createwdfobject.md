@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 9dda353d-7c39-4c3c-b9e2-38946d6cc086
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDriver interface, CreateWdfObject method, CreateWdfObject method, IWDFDriver::CreateWdfObject, wdf.iwdfdriver_createwdfobject, CreateWdfObject method, IWDFDriver interface, wudfddi/IWDFDriver::CreateWdfObject, UMDFDriverObjectRef_8ab61a3d-78e3-4d92-8a9c-0eff2837f65f.xml, IWDFDriver, umdf.iwdfdriver_createwdfobject, CreateWdfObject
+ms.keywords : IWDFDriver::CreateWdfObject, umdf.iwdfdriver_createwdfobject, wudfddi/IWDFDriver::CreateWdfObject, IWDFDriver, wdf.iwdfdriver_createwdfobject, IWDFDriver interface, CreateWdfObject method, UMDFDriverObjectRef_8ab61a3d-78e3-4d92-8a9c-0eff2837f65f.xml, CreateWdfObject, CreateWdfObject method, IWDFDriver interface, CreateWdfObject method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -87,26 +87,24 @@ If the driver must clean up the child object before the parent object is deleted
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
-
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
-
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
 
 <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
 
  
 

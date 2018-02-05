@@ -77,11 +77,11 @@ The number of completed sends.
 
 `*WifiTxFrameIdList`
 
-
+An array of frame IDs. The size of the array is the value of <i>NumCompletedSends</i>.
 
 `*WifiTxCompleteList`
 
-
+An array of TX completion data. The size of the array is the value of <i>NumCompletedSends</i>.
 
 
 ## Return Value
@@ -97,24 +97,19 @@ A TX completion with a frame with <b>WDI_TxFrameStatus_SendPostponed</b> is iden
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | dot11wdi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\dot11wdi\ne-dot11wdi-_wdi_tx_frame_status.md">WDI_TX_FRAME_STATUS</a>
 
-<a href="..\dot11wdi\ne-dot11wdi-_wdi_tx_pause_reason.md">WDI_TX_PAUSE_REASON</a>
-
 <a href="..\dot11wdi\ns-dot11wdi-_wdi_tx_complete_data.md">WDI_TX_COMPLETE_DATA</a>
 
 <a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
+
+<a href="..\dot11wdi\ne-dot11wdi-_wdi_tx_pause_reason.md">WDI_TX_PAUSE_REASON</a>
 
 <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_tx_send_pause_ind.md">NdisWdiTxSendPauseIndication</a>
 

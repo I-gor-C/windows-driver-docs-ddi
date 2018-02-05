@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7B67BB47-6F95-4B1A-A823-F796529D5C48
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlMdlWriteCompleteDev routine [Installable File System Drivers], FltFastIoMdlWriteComplete, ifsk.fltfastiomdlwritecomplete, FsRtlMdlWriteCompleteDev, fltkernel/FsRtlMdlWriteCompleteDev
+ms.keywords : FltFastIoMdlWriteComplete, FsRtlMdlWriteCompleteDev routine [Installable File System Drivers], fltkernel/FsRtlMdlWriteCompleteDev, FsRtlMdlWriteCompleteDev, ifsk.fltfastiomdlwritecomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -87,14 +87,12 @@ Each call to <a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">Flt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 8. Available starting with  Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

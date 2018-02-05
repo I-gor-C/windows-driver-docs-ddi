@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 77c2515b-f20a-47ac-9564-9eab009cf625
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : DirectoryNotifyExtendedInformation, DIRECTORY_NOTIFY_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], DirectoryNotifyInformation, DIRECTORY_NOTIFY_INFORMATION_CLASS, _DIRECTORY_NOTIFY_INFORMATION_CLASS, wdm/DirectoryNotifyInformation, wdm/DirectoryNotifyExtendedInformation, ifsk._directory_notify_information_class, wdm/DIRECTORY_NOTIFY_INFORMATION_CLASS, *PDIRECTORY_NOTIFY_INFORMATION_CLASS
+ms.keywords : wdm/DIRECTORY_NOTIFY_INFORMATION_CLASS, DIRECTORY_NOTIFY_INFORMATION_CLASS, wdm/DirectoryNotifyExtendedInformation, _DIRECTORY_NOTIFY_INFORMATION_CLASS, ifsk._directory_notify_information_class, DIRECTORY_NOTIFY_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], DirectoryNotifyInformation, wdm/DirectoryNotifyInformation, *PDIRECTORY_NOTIFY_INFORMATION_CLASS, DirectoryNotifyExtendedInformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -71,7 +71,5 @@ typedef enum _DIRECTORY_NOTIFY_INFORMATION_CLASS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wdm.h |

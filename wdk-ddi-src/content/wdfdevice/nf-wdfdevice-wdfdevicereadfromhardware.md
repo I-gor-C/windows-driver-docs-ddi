@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3E9ECB09-39DD-4A16-B096-24AAD96D52E9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicereadfromhardware, wdfdevice/WdfDeviceReadFromHardware, WdfDeviceReadFromHardware, PFN_WDFDEVICEREADFROMHARDWARE, WdfDeviceReadFromHardware method, wdfhwaccess/WdfDeviceReadFromHardware
+ms.keywords : WdfDeviceReadFromHardware method, wdfdevice/WdfDeviceReadFromHardware, WdfDeviceReadFromHardware, PFN_WDFDEVICEREADFROMHARDWARE, wdfhwaccess/WdfDeviceReadFromHardware, wdf.wdfdevicereadfromhardware
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,14 +93,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

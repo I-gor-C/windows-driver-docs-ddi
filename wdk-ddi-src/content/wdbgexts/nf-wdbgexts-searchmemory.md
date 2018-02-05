@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 7e07c47e-803b-44fa-9d0f-aa86475246d2
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : SearchMemory, wdbgexts/SearchMemory, WdbgExts_Ref_4eb909e5-edfd-487c-851c-812b15274c66.xml, SearchMemory function [Windows Debugging], debugger.searchmemory
+ms.keywords : wdbgexts/SearchMemory, SearchMemory function [Windows Debugging], WdbgExts_Ref_4eb909e5-edfd-487c-851c-812b15274c66.xml, debugger.searchmemory, SearchMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wdbgexts.h (include Wdbgexts.h, Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

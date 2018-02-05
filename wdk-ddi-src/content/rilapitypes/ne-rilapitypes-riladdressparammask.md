@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 02d77f8f-9327-40e4-b38b-7f1a02abf4b1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_A_NONE, RIL_PARAM_A_ALL, RILADDRESSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.riladdressparammask, rilapitypes/RIL_PARAM_A_ALL, RIL_PARAM_A_NUMPLAN, rilapitypes/RIL_PARAM_A_NUMPLAN, RIL_PARAM_A_ADDRESS, rilapitypes/RIL_PARAM_A_ADDRESS, RIL_PARAM_A_NONE, rilapitypes/RILADDRESSPARAMMASK, RIL_PARAM_A_TYPE, RILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_A_TYPE
+ms.keywords : netvista.riladdressparammask, RIL_PARAM_A_ALL, RIL_PARAM_A_NONE, rilapitypes/RIL_PARAM_A_TYPE, rilapitypes/RIL_PARAM_A_ALL, RILADDRESSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_A_NONE, RIL_PARAM_A_NUMPLAN, rilapitypes/RILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_A_ADDRESS, RILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_A_NUMPLAN, RIL_PARAM_A_TYPE, RIL_PARAM_A_ADDRESS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -88,9 +88,6 @@ enum RILADDRESSPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
 ## See Also

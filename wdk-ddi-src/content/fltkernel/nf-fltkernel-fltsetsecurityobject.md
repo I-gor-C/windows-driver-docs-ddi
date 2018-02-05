@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 3276dff3-d12a-4a30-bbdc-a582a2228df3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltkernel/FltSetSecurityObject, FltApiRef_p_to_z_1174281c-5ba7-489b-8b8a-c0a4697ce678.xml, FltSetSecurityObject, ifsk.fltsetsecurityobject, FltSetSecurityObject function [Installable File System Drivers]
+ms.keywords : FltSetSecurityObject function [Installable File System Drivers], ifsk.fltsetsecurityobject, FltSetSecurityObject, FltApiRef_p_to_z_1174281c-5ba7-489b-8b8a-c0a4697ce678.xml, fltkernel/FltSetSecurityObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -227,26 +227,23 @@ For more information about security and access control, see the documentation on
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | FltMgr.lib |
+| **DLL** | Fltmgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
+<a href="..\ntifs\nf-ntifs-zwquerysecurityobject.md">ZwQuerySecurityObject</a>
 
 <a href="..\ntifs\nf-ntifs-zwsetsecurityobject.md">ZwSetSecurityObject</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltquerysecurityobject.md">FltQuerySecurityObject</a>
 
-<a href="..\ntifs\nf-ntifs-zwquerysecurityobject.md">ZwQuerySecurityObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
 
  
 

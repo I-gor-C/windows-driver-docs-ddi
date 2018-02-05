@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : E7C823B1-457E-4B86-B44B-DC5BD48CF98E
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, display.dxgk_pagetableupdatemode, d3dkmddi/DXGK_PAGETABLEUPDATEMODE, _DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATEMODE enumeration [Display Devices], DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, d3dkmddi/DXGK_PAGETABLEUPDATE_CPU_VIRTUAL
+ms.keywords : DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, _DXGK_PAGETABLEUPDATEMODE, DXGK_PAGETABLEUPDATEMODE enumeration [Display Devices], d3dkmddi/DXGK_PAGETABLEUPDATEMODE, DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, display.dxgk_pagetableupdatemode, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_PHYSICAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,9 +74,7 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

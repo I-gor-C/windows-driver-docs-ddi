@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : CFB7E2EA-22D9-4181-B773-BC5691B28CFD
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration, kmdf.wdf_power_policy_idle_timeout_type, wdfdevice/WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, *PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, wdfdevice/DriverManagedIdleTimeout, wdfdevice/SystemManagedIdleTimeoutWithHint, SystemManagedIdleTimeoutWithHint, _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, DriverManagedIdleTimeout, PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration pointer, SystemManagedIdleTimeout, wdfdevice/SystemManagedIdleTimeout, wdfdevice/PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, wdf.wdf_power_policy_idle_timeout_type
+ms.keywords : WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration, wdfdevice/DriverManagedIdleTimeout, SystemManagedIdleTimeout, WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, wdfdevice/PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, wdf.wdf_power_policy_idle_timeout_type, wdfdevice/WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, kmdf.wdf_power_policy_idle_timeout_type, wdfdevice/SystemManagedIdleTimeoutWithHint, PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, wdfdevice/SystemManagedIdleTimeout, *PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, SystemManagedIdleTimeoutWithHint, PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration pointer, DriverManagedIdleTimeout
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE"
+req.typenames : WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, *PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -89,7 +89,6 @@ The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration is used in the <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |

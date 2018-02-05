@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -81,7 +81,12 @@ A pointer to a caller-allocated input buffer that contains the data required to 
 
 `*pdwOutBufferSize`
 
-
+A pointer to a caller-allocated DWORD variable. When the 
+     <b>Dot11ExtNicSpecificExtension</b> function is called, the IHV Extensions DLL
+     must set this variable to the size, in bytes, of the caller-allocated data buffer referenced by the 
+     <i>pvOutBuffer</i> parameter. When the function returns, the operating system sets the variable to the
+     actual number of bytes returned in the data buffer referenced by the 
+     <i>pvOutBuffer</i> parameter.
 
 `pvOutBuffer`
 
@@ -103,8 +108,8 @@ The
     pass proprietary method requests to the Native 802.11 miniport driver, which is referenced by the 
     <i>hDot11SvcHandle</i> parameter. The operating system issues the method request through the Native 802.11
     
-    <mshelp:link keywords="netvista.oid_dot11_nic_specific_extension" tabindex="0">
-    OID_DOT11_NIC_SPECIFIC_EXTENSION</mshelp:link> object identifier (OID).
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-nic-specific-extension">
+    OID_DOT11_NIC_SPECIFIC_EXTENSION</a> object identifier (OID).
 <div class="alert"><b>Note</b>  OID_DOT11_NIC_SPECIFIC_EXTENSION is an optional OID for support by the Native
     802.11 miniport driver. If the driver does not support this OID, 
     <b>Dot11ExtNicSpecificExtension</b> will return a value of ERROR_NOT_SUPPORTED.</div><div> </div>
@@ -112,21 +117,16 @@ The
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-nic-specific-extension">
+   OID_DOT11_NIC_SPECIFIC_EXTENSION</a>
 
-<mshelp:link keywords="netvista.oid_dot11_nic_specific_extension" tabindex="0">
-   OID_DOT11_NIC_SPECIFIC_EXTENSION</mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : cc2394ce-128e-46a2-8688-a71851af06cf
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlCmDecodeMemIoResource, wdm/RtlCmDecodeMemIoResource, RtlCmDecodeMemIoResource routine [Kernel-Mode Driver Architecture], kernel.rtlcmdecodememioresource, k109_da737a74-2fce-4731-b24d-9014272991f1.xml
+ms.keywords : kernel.rtlcmdecodememioresource, RtlCmDecodeMemIoResource routine [Kernel-Mode Driver Architecture], k109_da737a74-2fce-4731-b24d-9014272991f1.xml, wdm/RtlCmDecodeMemIoResource, RtlCmDecodeMemIoResource
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,20 +74,18 @@ The <b>Type</b> member of the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure mu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
-
 <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a>
+
+<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
  
 

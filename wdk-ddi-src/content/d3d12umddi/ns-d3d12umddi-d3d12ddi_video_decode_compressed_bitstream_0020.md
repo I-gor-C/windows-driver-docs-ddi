@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 24A1D8C7-E432-45CB-8DEA-C1137159E319
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020, display.d3d12ddi_video_decode_compressed_bitstream, D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020, D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020 structure [Display Devices]
+ms.keywords : d3d12umddi/D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020, D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020, D3D12DDI_VIDEO_DECODE_COMPRESSED_BITSTREAM_0020 structure [Display Devices], display.d3d12ddi_video_decode_compressed_bitstream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,4 @@ The offset to the beginning of the first slice.  This offset has alignment requi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d12umddi.h (include D3d12umddi.h) |

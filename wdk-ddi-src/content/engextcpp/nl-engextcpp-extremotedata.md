@@ -303,11 +303,8 @@ The DEBUG_PHYSICAL_<i>XXX</i> flags used for accessing physical memory on the ta
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **DLL** |  |
 
 ## See Also
 

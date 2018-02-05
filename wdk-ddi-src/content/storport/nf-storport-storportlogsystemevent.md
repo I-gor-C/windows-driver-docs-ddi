@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 720245ff-8c97-4b8d-8406-f6b712fa74c9
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortLogSystemEvent, StorPortLogSystemEvent routine [Storage Devices], storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml, storport/StorPortLogSystemEvent, storage.storportlogsystemevent
+ms.keywords : storport/StorPortLogSystemEvent, storage.storportlogsystemevent, storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml, StorPortLogSystemEvent, StorPortLogSystemEvent routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -161,13 +161,9 @@ To understand how you may use custom error codes to best advantage, see  <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
-| **IRQL** |  |
+| **Library** | NtosKrnl.exe |
 | **DDI compliance rules** | StorPortIrql |
 
 ## See Also

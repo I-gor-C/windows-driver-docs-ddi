@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a91311e-c8b9-4f28-b72e-9f93d459aac2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgi_gamma_control_capabiliites, DXGI_GAMMA_CONTROL_CAPABILITIES structure [Display Devices], dxgitype/DXGI_GAMMA_CONTROL_CAPABILIITES, UMDisplayDriver_Dx10param_Structs_002eb4f0-081a-43df-a307-e979017daf6f.xml, DXGI_GAMMA_CONTROL_CAPABILIITES, DXGI_GAMMA_CONTROL_CAPABILIITES structure [Display Devices], DXGI_GAMMA_CONTROL_CAPABILITIES
+ms.keywords : UMDisplayDriver_Dx10param_Structs_002eb4f0-081a-43df-a307-e979017daf6f.xml, DXGI_GAMMA_CONTROL_CAPABILITIES, display.dxgi_gamma_control_capabiliites, DXGI_GAMMA_CONTROL_CAPABILITIES structure [Display Devices], DXGI_GAMMA_CONTROL_CAPABILIITES, dxgitype/DXGI_GAMMA_CONTROL_CAPABILIITES, DXGI_GAMMA_CONTROL_CAPABILIITES structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,16 +79,14 @@ typedef struct DXGI_GAMMA_CONTROL_CAPABILIITES {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgitype.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_get_gamma_control_caps.md">DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a>
+
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_get_gamma_control_caps.md">DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS</a>
 
  
 

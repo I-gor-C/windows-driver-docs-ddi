@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : d5a50ec7-6b25-4854-9dca-dcd868816735
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILUICCTOOLKITCMD, netvista.riluicctoolkitcmd_2, rilapitypes/RILUICCTOOLKITCMD, RILUICCTOOLKITCMD, RILUICCTOOLKITCMD structure [Network Drivers Starting with Windows Vista]"
+ms.keywords : RILUICCTOOLKITCMD structure [Network Drivers Starting with Windows Vista], netvista.riluicctoolkitcmd_2, *LPRILUICCTOOLKITCMD, rilapitypes/RILUICCTOOLKITCMD, RILUICCTOOLKITCMD
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILUICCTOOLKITCMD, RILUICCTOOLKITCMD"
+req.typenames : RILUICCTOOLKITCMD, *LPRILUICCTOOLKITCMD
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,4 @@ typedef struct _RILUICCTOOLKITCMD {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

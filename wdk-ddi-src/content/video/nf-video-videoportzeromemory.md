@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 96827d2e-0fee-4276-a758-82f5b7383eec
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : VideoPortZeroMemory, display.videoportzeromemory, video/VideoPortZeroMemory, VideoPortZeroMemory function [Display Devices], VideoPort_Functions_518c5fa4-2011-47bd-a24c-0dff144dfa3a.xml
+ms.keywords : video/VideoPortZeroMemory, VideoPortZeroMemory, VideoPortZeroMemory function [Display Devices], display.videoportzeromemory, VideoPort_Functions_518c5fa4-2011-47bd-a24c-0dff144dfa3a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,30 +80,28 @@ Callers of <b>VideoPortZeroMemory</b> can be running at any IRQL if the memory p
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of the Windows operating systems. Available in Windows 2000 and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | video.h (include Video.h) |
-| **Library** |  |
+| **Library** | Videoprt.lib |
+| **DLL** | Videoprt.sys |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
 
 <a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
 
-<a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
+<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
 
 <a href="..\video\nf-video-videoportcomparememory.md">VideoPortCompareMemory</a>
 
-<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
-
 <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>
+
+<a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
+
+<a href="..\video\nf-video-videoportmovememory.md">VideoPortMoveMemory</a>
 
  
 

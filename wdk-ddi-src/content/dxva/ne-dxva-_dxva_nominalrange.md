@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 9e319f9d-4c24-4dd3-b5a1-b244714c06dc
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXVA_NominalRange, DXVA_NominalRangeMask, dxva/DXVA_NominalRange_0_255, dxva/DXVA_NominalRangeMask, DXVA_NominalRange enumeration [Display Devices], DXVA_NominalRange_48_208, DXVA_NominalRange_Unknown, DXVA_NominalRangeShift, display.dxva_nominalrange, dxva/DXVA_NominalRange_Normal, DXVA_NominalRange, DXVA_NominalRange_16_235, dxva/DXVA_NominalRangeShift, DXVA_NominalRange_Wide, dxva/DXVA_NominalRange_48_208, DXVA_NominalRange_0_255, dxva/DXVA_NominalRange_Wide, dxva/DXVA_NominalRange, dxva/DXVA_NominalRange_16_235, dxva/DXVA_NominalRange_Unknown, dxvaref_5931dd2e-baac-48a6-931a-b7f3fc965b4d.xml, DXVA_NominalRange_Normal"
+ms.keywords : DXVA_NominalRange enumeration [Display Devices], DXVA_NominalRange_48_208, DXVA_NominalRange_0_255, DXVA_NominalRange_Normal, dxva/DXVA_NominalRangeShift, dxva/DXVA_NominalRange_0_255, dxva/DXVA_NominalRange_16_235, DXVA_NominalRangeMask, _DXVA_NominalRange, DXVA_NominalRangeShift, DXVA_NominalRange, dxva/DXVA_NominalRange_Wide, DXVA_NominalRange_Unknown, dxva/DXVA_NominalRange_Normal, dxva/DXVA_NominalRangeMask, dxva/DXVA_NominalRange_Unknown, dxva/DXVA_NominalRange_48_208, dxvaref_5931dd2e-baac-48a6-931a-b7f3fc965b4d.xml, DXVA_NominalRange_Wide, display.dxva_nominalrange, dxva/DXVA_NominalRange, DXVA_NominalRange_16_235
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -109,9 +109,7 @@ Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D9E7D359-5FC8-44C8-ACA2-641DEFF17616
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UFX_DEVICE_CALLBACKS_INIT, ufxclient/UFX_DEVICE_CALLBACKS_INIT, buses.ufx_device_callbacks_init, UFX_DEVICE_CALLBACKS_INIT function [Buses]
+ms.keywords : ufxclient/UFX_DEVICE_CALLBACKS_INIT, buses.ufx_device_callbacks_init, UFX_DEVICE_CALLBACKS_INIT, UFX_DEVICE_CALLBACKS_INIT function [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -71,11 +71,6 @@ The client driver uses the <b>UFX_DEVICE_CALLBACKS_INIT</b> macro the initialize
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

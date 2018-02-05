@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : CE700126-8C29-4218-9248-F722523A4DA3
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PC_REBALANCE_TYPE, portcls/PcRebalanceRemoveSubdevices, audio.pc_rebalance_type, PC_REBALANCE_TYPE enumeration [Audio Devices], PcRebalanceRemoveSubdevices, portcls/PcRebalanceNotSupported, PcRebalanceNotSupported, portcls/PC_REBALANCE_TYPE
+ms.keywords : portcls/PC_REBALANCE_TYPE, audio.pc_rebalance_type, portcls/PcRebalanceNotSupported, portcls/PcRebalanceRemoveSubdevices, PcRebalanceRemoveSubdevices, PC_REBALANCE_TYPE, PC_REBALANCE_TYPE enumeration [Audio Devices], PcRebalanceNotSupported
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,7 +75,4 @@ Available in Windows 10, version 1511 and later versions of Windows.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | portcls.h (include Portcls.h) |

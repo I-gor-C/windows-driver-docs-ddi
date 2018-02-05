@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 37987f5a-f706-4a5d-b6f7-e726bdfd8473
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ks-struct_a6ed820f-c35d-411e-98a5-bd14a2141960.xml, KSCOMPONENTID, PKSCOMPONENTID structure pointer [Streaming Media Devices], ks/KSCOMPONENTID, stream.kscomponentid, ks/PKSCOMPONENTID, KSCOMPONENTID structure [Streaming Media Devices], *PKSCOMPONENTID, PKSCOMPONENTID
+ms.keywords : stream.kscomponentid, KSCOMPONENTID structure [Streaming Media Devices], ks/KSCOMPONENTID, ks/PKSCOMPONENTID, *PKSCOMPONENTID, PKSCOMPONENTID, PKSCOMPONENTID structure pointer [Streaming Media Devices], KSCOMPONENTID, ks-struct_a6ed820f-c35d-411e-98a5-bd14a2141960.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,6 @@ Supply this structure in a <a href="https://msdn.microsoft.com/library/windows/h
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

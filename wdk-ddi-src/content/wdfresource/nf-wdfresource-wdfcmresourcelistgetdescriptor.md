@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5aa96fed-83ca-417e-876d-a734be6f27dd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfcmresourcelistgetdescriptor, wdfresource/WdfCmResourceListGetDescriptor, WdfCmResourceListGetDescriptor, PFN_WDFCMRESOURCELISTGETDESCRIPTOR, WdfCmResourceListGetDescriptor method, DFResourceObjectRef_bdc580d1-2283-4549-a26b-cbe0f2a84e19.xml, wdf.wdfcmresourcelistgetdescriptor
+ms.keywords : wdfresource/WdfCmResourceListGetDescriptor, kmdf.wdfcmresourcelistgetdescriptor, wdf.wdfcmresourcelistgetdescriptor, WdfCmResourceListGetDescriptor method, PFN_WDFCMRESOURCELISTGETDESCRIPTOR, WdfCmResourceListGetDescriptor, DFResourceObjectRef_bdc580d1-2283-4549-a26b-cbe0f2a84e19.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS"
+req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
 req.product : Windows 10 or later.
 ---
 
@@ -80,12 +80,11 @@ For more information about resource lists, see <a href="https://docs.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfresource.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

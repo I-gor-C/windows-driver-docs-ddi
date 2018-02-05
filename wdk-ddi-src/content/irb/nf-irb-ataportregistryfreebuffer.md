@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a84dffce-977e-412a-a12a-e0e156b943ac
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortRegistryFreeBuffer, atartns_70807844-dbef-4457-bd47-102aeffcc840.xml, AtaPortRegistryFreeBuffer routine [Storage Devices], irb/AtaPortRegistryFreeBuffer, storage.ataportregistryfreebuffer
+ms.keywords : atartns_70807844-dbef-4457-bd47-102aeffcc840.xml, storage.ataportregistryfreebuffer, AtaPortRegistryFreeBuffer routine [Storage Devices], irb/AtaPortRegistryFreeBuffer, AtaPortRegistryFreeBuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,22 +76,17 @@ The miniport driver must call <b>AtaPortRegistryFreeBuffer</b> either in its <a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
 
 <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 
  
 

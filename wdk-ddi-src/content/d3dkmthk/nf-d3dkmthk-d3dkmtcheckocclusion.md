@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ce889a72-5f42-4bcf-aa15-6ec9b0423781
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTCheckOcclusion, PFND3DKMT_CHECKOCCLUSION, D3DKMTCheckOcclusion function [Display Devices], d3dkmthk/D3DKMTCheckOcclusion, OpenGL_Functions_a73b8485-971d-47a7-bc42-77bd709c5a74.xml, display.d3dkmtcheckocclusion
+ms.keywords : display.d3dkmtcheckocclusion, PFND3DKMT_CHECKOCCLUSION, D3DKMTCheckOcclusion, d3dkmthk/D3DKMTCheckOcclusion, D3DKMTCheckOcclusion function [Display Devices], OpenGL_Functions_a73b8485-971d-47a7-bc42-77bd709c5a74.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -109,14 +109,11 @@ The handle to the window that is checked for occlusion must be valid. A window i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 284c7e69-50c6-4eef-bcf1-547bc7032a4a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.mmfreenoncachedmemory, MmFreeNonCachedMemory routine [Kernel-Mode Driver Architecture], k106_29c317c1-955e-4d0c-9e65-e1aa511c7a8d.xml, ntddk/MmFreeNonCachedMemory, MmFreeNonCachedMemory
+ms.keywords : MmFreeNonCachedMemory, ntddk/MmFreeNonCachedMemory, MmFreeNonCachedMemory routine [Kernel-Mode Driver Architecture], kernel.mmfreenoncachedmemory, k106_29c317c1-955e-4d0c-9e65-e1aa511c7a8d.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,12 +73,11 @@ The <b>MmFreeNonCachedMemory</b> routine performs the opposite action of <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlMmApcLte, HwStorPortProhibitedDDIs |
 

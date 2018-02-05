@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 608d041c-1034-49cf-b8da-cb3f7769ac55
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WwanRegisterModeManual, wwan/PWWAN_REGISTER_MODE, wwan/WwanRegisterModeMax, netvista.wwan_register_mode, wwan/WwanRegisterModeAutomatic, PWWAN_REGISTER_MODE, wwan/WwanRegisterModeManual, wwan/WwanRegisterModeUnknown, WWAN_REGISTER_MODE, WWAN_REGISTER_MODE enumeration [Network Drivers Starting with Windows Vista], WwanRef_eac9611f-2097-43fc-96ea-ade56e77b7e7.xml, wwan/WWAN_REGISTER_MODE, WwanRegisterModeMax, PWWAN_REGISTER_MODE enumeration pointer [Network Drivers Starting with Windows Vista], _WWAN_REGISTER_MODE, *PWWAN_REGISTER_MODE, WwanRegisterModeAutomatic, WwanRegisterModeUnknown
+ms.keywords : netvista.wwan_register_mode, wwan/WwanRegisterModeManual, wwan/WwanRegisterModeMax, wwan/WwanRegisterModeAutomatic, WwanRef_eac9611f-2097-43fc-96ea-ade56e77b7e7.xml, _WWAN_REGISTER_MODE, *PWWAN_REGISTER_MODE, WwanRegisterModeAutomatic, WwanRegisterModeManual, WwanRegisterModeMax, wwan/WWAN_REGISTER_MODE, PWWAN_REGISTER_MODE, wwan/WwanRegisterModeUnknown, WWAN_REGISTER_MODE, WWAN_REGISTER_MODE enumeration [Network Drivers Starting with Windows Vista], PWWAN_REGISTER_MODE enumeration pointer [Network Drivers Starting with Windows Vista], WwanRegisterModeUnknown, wwan/PWWAN_REGISTER_MODE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WWAN_REGISTER_MODE, *PWWAN_REGISTER_MODE
+req.typenames : "*PWWAN_REGISTER_MODE, WWAN_REGISTER_MODE"
 req.product : Windows 10 or later.
 ---
 
@@ -87,9 +87,7 @@ typedef enum _WWAN_REGISTER_MODE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

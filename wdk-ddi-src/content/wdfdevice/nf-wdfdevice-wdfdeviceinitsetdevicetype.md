@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceInitSetDeviceType, WdfDeviceInitSetDeviceType method, wdf.wdfdeviceinitsetdevicetype, DFDeviceObjectGeneralRef_872eb4dd-0d40-46ed-a7ed-4eae8ec67240.xml, kmdf.wdfdeviceinitsetdevicetype, PFN_WDFDEVICEINITSETDEVICETYPE, WdfDeviceInitSetDeviceType
+ms.keywords : WdfDeviceInitSetDeviceType method, kmdf.wdfdeviceinitsetdevicetype, PFN_WDFDEVICEINITSETDEVICETYPE, DFDeviceObjectGeneralRef_872eb4dd-0d40-46ed-a7ed-4eae8ec67240.xml, wdf.wdfdeviceinitsetdevicetype, WdfDeviceInitSetDeviceType, wdfdevice/WdfDeviceInitSetDeviceType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,11 +83,9 @@ The device type that a driver specifies determines the default priority boost va
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI |

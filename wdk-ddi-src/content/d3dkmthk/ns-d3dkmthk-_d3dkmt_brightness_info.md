@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a620b0b2-85ce-4373-a50c-299d8ce7a91c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_BRIGHTNESS_INFO, display.d3dkmt_brightness_info, D3DKMT_BRIGHTNESS_INFO structure [Display Devices], D3DKMT_BRIGHTNESS_INFO, _D3DKMT_BRIGHTNESS_INFO
+ms.keywords : "_D3DKMT_BRIGHTNESS_INFO, d3dkmthk/D3DKMT_BRIGHTNESS_INFO, D3DKMT_BRIGHTNESS_INFO structure [Display Devices], D3DKMT_BRIGHTNESS_INFO, display.d3dkmt_brightness_info"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -68,12 +68,12 @@ A value of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_brightness_info_type.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_brightness_state.md">DXGK_BRIGHTNESS_STATE</a>
 
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_brightness_caps.md">DXGK_BRIGHTNESS_CAPS</a>
 
@@ -84,8 +84,6 @@ A value of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_brightness_info_type.md
 <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_backlight_info.md">DXGK_BACKLIGHT_INFO</a>
 
 <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_brightness_info_type.md">D3DKMT_BRIGHTNESS_INFO_TYPE</a>
-
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_brightness_state.md">DXGK_BRIGHTNESS_STATE</a>
 
  
 

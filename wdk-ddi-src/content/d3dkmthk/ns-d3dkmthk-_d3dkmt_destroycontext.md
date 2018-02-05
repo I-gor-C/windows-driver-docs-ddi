@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 116c0fa7-ac3c-4a56-804c-637514a19c73
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_DESTROYCONTEXT, display.d3dkmt_destroycontext, OpenGL_Structs_97f52665-09e6-4f11-b2cc-a7abcc61827c.xml, _D3DKMT_DESTROYCONTEXT, d3dkmthk/D3DKMT_DESTROYCONTEXT, D3DKMT_DESTROYCONTEXT structure [Display Devices]
+ms.keywords : D3DKMT_DESTROYCONTEXT, D3DKMT_DESTROYCONTEXT structure [Display Devices], _D3DKMT_DESTROYCONTEXT, OpenGL_Structs_97f52665-09e6-4f11-b2cc-a7abcc61827c.xml, display.d3dkmt_destroycontext, d3dkmthk/D3DKMT_DESTROYCONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,9 +59,7 @@ typedef struct _D3DKMT_DESTROYCONTEXT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

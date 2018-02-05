@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8aa6ba31-aec0-4a92-ad0e-6c19b796e398
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA_VideoPrimariesShift, dxva/DXVA_VideoPrimaries_BT709, dxva/DXVA_VideoPrimaries_SMPTE240M, dxva/DXVA_VideoPrimaries_SMPTE170M, DXVA_VideoPrimaries, display.dxva_videoprimaries, DXVA_VideoPrimaries_Unknown, dxva/DXVA_VideoPrimaries_BT470_2_SysBG, dxva/DXVA_VideoPrimaries_EBU3213, DXVA_VideoPrimaries_BT470_2_SysM, dxva/DXVA_VideoPrimaries_BT470_2_SysM, DXVA_VideoPrimaries_SMPTE170M, dxva/DXVA_VideoPrimaries_Unknown, DXVA_VideoPrimaries_EBU3213, DXVA_VideoPrimaries_SMPTE240M, DXVA_VideoPrimaries_reserved, dxva/DXVA_VideoPrimaries, DXVA_VideoPrimaries_BT470_2_SysBG, dxva/DXVA_VideoPrimaries_SMPTE_C, dxva/DXVA_VideoPrimariesMask, DXVA_VideoPrimaries enumeration [Display Devices], DXVA_VideoPrimaries_SMPTE_C, DXVA_VideoPrimaries_BT709, dxvaref_c0e5c7be-4039-438c-a883-30bb242a5c50.xml, dxva/DXVA_VideoPrimaries_reserved, _DXVA_VideoPrimaries, DXVA_VideoPrimariesMask, dxva/DXVA_VideoPrimariesShift
+ms.keywords : DXVA_VideoPrimaries enumeration [Display Devices], DXVA_VideoPrimaries_Unknown, DXVA_VideoPrimaries_BT470_2_SysBG, DXVA_VideoPrimaries_SMPTE_C, DXVA_VideoPrimaries_reserved, DXVA_VideoPrimariesMask, dxvaref_c0e5c7be-4039-438c-a883-30bb242a5c50.xml, dxva/DXVA_VideoPrimaries_reserved, display.dxva_videoprimaries, dxva/DXVA_VideoPrimaries_Unknown, DXVA_VideoPrimariesShift, _DXVA_VideoPrimaries, dxva/DXVA_VideoPrimaries, DXVA_VideoPrimaries_BT470_2_SysM, dxva/DXVA_VideoPrimaries_SMPTE240M, dxva/DXVA_VideoPrimaries_EBU3213, DXVA_VideoPrimaries_SMPTE170M, dxva/DXVA_VideoPrimaries_SMPTE170M, DXVA_VideoPrimaries_BT709, dxva/DXVA_VideoPrimaries_BT470_2_SysBG, dxva/DXVA_VideoPrimariesShift, dxva/DXVA_VideoPrimariesMask, DXVA_VideoPrimaries_SMPTE240M, dxva/DXVA_VideoPrimaries_BT709, dxva/DXVA_VideoPrimaries_BT470_2_SysM, DXVA_VideoPrimaries, dxva/DXVA_VideoPrimaries_SMPTE_C, DXVA_VideoPrimaries_EBU3213
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -125,9 +125,7 @@ One of the enumerators of DXVA_VideoPrimaries can be specified in the <b>VideoPr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
 ## See Also

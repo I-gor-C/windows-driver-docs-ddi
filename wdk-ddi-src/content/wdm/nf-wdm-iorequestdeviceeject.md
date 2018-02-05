@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : ceaa6793-43ba-4998-827e-8a2c7c892e50
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.iorequestdeviceeject, IoRequestDeviceEject, k104_59a74c47-2538-400a-a9b5-a27a5fc495dd.xml, wdm/IoRequestDeviceEject, IoRequestDeviceEject routine [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.iorequestdeviceeject, IoRequestDeviceEject, IoRequestDeviceEject routine [Kernel-Mode Driver Architecture], k104_59a74c47-2538-400a-a9b5-a27a5fc495dd.xml, wdm/IoRequestDeviceEject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,24 +121,22 @@ Callers of <b>IoRequestDeviceEject</b> must be running at IRQL &lt;= DISPATCH_LE
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550853">IRP_MN_EJECT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551670">IRP_MN_QUERY_DEVICE_RELATIONS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551705">IRP_MN_QUERY_REMOVE_DEVICE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551670">IRP_MN_QUERY_DEVICE_RELATIONS</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a0a19747-ab39-4606-a49b-78e5e056da32
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ControlPrintProcessor function [Print Devices], ControlPrintProcessor, winsplp/ControlPrintProcessor, print.controlprintprocessor, spoolfnc_203120f1-7819-448e-9813-3aa2b24bfd7f.xml
+ms.keywords : spoolfnc_203120f1-7819-448e-9813-3aa2b24bfd7f.xml, print.controlprintprocessor, ControlPrintProcessor, winsplp/ControlPrintProcessor, ControlPrintProcessor function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,20 +112,15 @@ Based on the value received for <i>Command</i>, the function should either pause
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Nwprint.lib |
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
-
 <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a>
+
+<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
 
  
 

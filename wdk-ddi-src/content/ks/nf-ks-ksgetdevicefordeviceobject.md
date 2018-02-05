@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 2fe72d9d-1423-4db9-be38-f2bca7dbc56d
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_2bc27061-02ce-488f-94b4-087e9f264614.xml, ks/KsGetDeviceForDeviceObject, stream.ksgetdevicefordeviceobject, KsGetDeviceForDeviceObject function [Streaming Media Devices], KsGetDeviceForDeviceObject
+ms.keywords : stream.ksgetdevicefordeviceobject, avfunc_2bc27061-02ce-488f-94b4-087e9f264614.xml, KsGetDeviceForDeviceObject function [Streaming Media Devices], KsGetDeviceForDeviceObject, ks/KsGetDeviceForDeviceObject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,24 +65,21 @@ A pointer to the <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> for
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="..\ks\nf-ks-ksgetfilterfromfileobject.md">KsGetFilterFromFileObject</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
-<a href="..\ks\nf-ks-ksgetfilterfromfileobject.md">KsGetFilterFromFileObject</a>
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 
  
 

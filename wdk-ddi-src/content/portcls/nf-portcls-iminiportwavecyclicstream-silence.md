@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : e2acf3f5-d054-44c4-8ab9-ffd1b934f700
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_860013ac-d79b-4b11-91b7-1a7bc3c84a5b.xml, IMiniportWaveCyclicStream, Silence, Silence method [Audio Devices], IMiniportWaveCyclicStream interface, audio.iminiportwavecyclicstream_silence, Silence method [Audio Devices], portcls/IMiniportWaveCyclicStream::Silence, IMiniportWaveCyclicStream interface [Audio Devices], Silence method, IMiniportWaveCyclicStream::Silence
+ms.keywords : IMiniportWaveCyclicStream::Silence, Silence method [Audio Devices], audio.iminiportwavecyclicstream_silence, audmp-routines_860013ac-d79b-4b11-91b7-1a7bc3c84a5b.xml, IMiniportWaveCyclicStream, IMiniportWaveCyclicStream interface [Audio Devices], Silence method, portcls/IMiniportWaveCyclicStream::Silence, Silence method [Audio Devices], IMiniportWaveCyclicStream interface, Silence
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -73,11 +73,7 @@ Windows treats 8-bit PCM values as unsigned, and it treats 16-bit and larger PCM
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

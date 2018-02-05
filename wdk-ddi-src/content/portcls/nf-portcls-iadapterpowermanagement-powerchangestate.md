@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : b3e0fca7-d5ab-4d52-9702-dae83c540a71
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PowerChangeState, portcls/IAdapterPowerManagement::PowerChangeState, IAdapterPowerManagement, audio.iadapterpowermanagement_powerchangestate, IAdapterPowerManagement interface [Audio Devices], PowerChangeState method, IAdapterPowerManagement::PowerChangeState, audmp-routines_7898e689-94c5-4577-80d8-a88676cd44dc.xml, PowerChangeState method [Audio Devices], PowerChangeState method [Audio Devices], IAdapterPowerManagement interface
+ms.keywords : IAdapterPowerManagement interface [Audio Devices], PowerChangeState method, PowerChangeState method [Audio Devices], IAdapterPowerManagement interface, audio.iadapterpowermanagement_powerchangestate, portcls/IAdapterPowerManagement::PowerChangeState, IAdapterPowerManagement::PowerChangeState, PowerChangeState, audmp-routines_7898e689-94c5-4577-80d8-a88676cd44dc.xml, PowerChangeState method [Audio Devices], IAdapterPowerManagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -124,14 +124,9 @@ The code for this method must reside in paged memory.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | portcls.h |
 
 ## See Also
 

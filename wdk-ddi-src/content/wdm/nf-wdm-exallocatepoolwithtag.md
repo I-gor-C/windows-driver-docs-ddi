@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : a9951e7b-60a2-4bf2-913c-b7291d7c3173
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k102_13ab2d7e-dd96-4474-bf27-59ee9b7d84d6.xml, ExAllocatePoolWithTag, ExAllocatePoolWithTag routine [Kernel-Mode Driver Architecture], wdm/ExAllocatePoolWithTag, kernel.exallocatepoolwithtag
+ms.keywords : wdm/ExAllocatePoolWithTag, ExAllocatePoolWithTag routine [Kernel-Mode Driver Architecture], ExAllocatePoolWithTag, k102_13ab2d7e-dd96-4474-bf27-59ee9b7d84d6.xml, kernel.exallocatepoolwithtag
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -88,7 +88,7 @@ The system associates the pool tag with the allocated memory. Programming tools,
 
 The value of <i>Tag</i> is stored, and sometimes displayed, in reverse (little-endian) order. For example, if a caller passes 'Fred' as a <i>Tag</i>, it appears as "derF" in a pool dump and in pool usage tracking in the debugger, and as 0x64657246 in the registry and in tool displays.
 
-The allocated buffer can be freed with either <a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.
+The allocated buffer can be freed with either <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.
 
 The system automatically sets certain standard event objects when the amount of pool (paged or nonpaged) is high or low. Drivers can wait for these events to tune their pool usage. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563847">Standard Event Objects</a>.
 
@@ -99,26 +99,25 @@ Callers of <b>ExAllocatePoolWithTag</b> must be executing at IRQL &lt;= DISPATCH
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL (see Remarks section)" |
 | **DDI compliance rules** | CheckDeviceObjectFlags, IrqlExAllocatePool, IrqlExFree1, PowerDownAllocate, PowerUpFail, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo |
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
-
-<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
-
 <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>
 
-<a href="..\ntddk\nf-ntddk-exfreepool.md">ExFreePool</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 
 <a href="..\wdm\nf-wdm-exallocatepoolwithtagpriority.md">ExAllocatePoolWithTagPriority</a>
+
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+
+<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
 
  
 

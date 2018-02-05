@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 0b0a306a-6066-4a7d-ae2d-12eb8bb3adc0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterGetNextSiblingFilter, stream.ksfiltergetnextsiblingfilter, KsFilterGetNextSiblingFilter function [Streaming Media Devices], ks/KsFilterGetNextSiblingFilter, avfunc_bda9f36a-10d4-4de3-88b2-a358aad4fd04.xml
+ms.keywords : KsFilterGetNextSiblingFilter, avfunc_bda9f36a-10d4-4de3-88b2-a358aad4fd04.xml, ks/KsFilterGetNextSiblingFilter, stream.ksfiltergetnextsiblingfilter, KsFilterGetNextSiblingFilter function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,22 +68,19 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetnextsibling.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>
 
 <a href="..\ks\nf-ks-ksfilterfactorygetfirstchildfilter.md">KsFilterFactoryGetFirstChildFilter</a>
 
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+
+<a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : 86b0845b-28fc-47d3-add8-dd3e8b8f631c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/MsrErrorReportingType, pointofservicedriverinterface/MsrErrorReportingType_CardLevel, MsrErrorReportingType_TrackLevel, MsrErrorReportingType enumeration, MsrErrorReportingType_CardLevel, pointofservicedriverinterface/MsrErrorReportingType_TrackLevel, pos.msrerrorreportingtype, _MsrErrorReportingType, MsrErrorReportingType
+ms.keywords : MsrErrorReportingType_CardLevel, MsrErrorReportingType, pos.msrerrorreportingtype, pointofservicedriverinterface/MsrErrorReportingType_TrackLevel, _MsrErrorReportingType, MsrErrorReportingType enumeration, pointofservicedriverinterface/MsrErrorReportingType_CardLevel, MsrErrorReportingType_TrackLevel, pointofservicedriverinterface/MsrErrorReportingType
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -68,7 +68,4 @@ typedef enum _MsrErrorReportingType {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | pointofservicedriverinterface.h (include Pointofservicedriverinterface.h) |

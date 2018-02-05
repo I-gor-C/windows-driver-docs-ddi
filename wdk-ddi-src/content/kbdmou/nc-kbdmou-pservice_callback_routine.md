@@ -148,20 +148,15 @@ VOID MouseClassServiceCallback(
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | kbdmou.h |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\kbdmou\ns-kbdmou-_connect_data.md">CONNECT_DATA</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542337">KEYBOARD_INPUT_DATA</a>
+
+<a href="..\kbdmou\ns-kbdmou-_connect_data.md">CONNECT_DATA</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542403">MOUSE_INPUT_DATA</a>
 

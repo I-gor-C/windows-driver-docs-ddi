@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d2b95301-c018-4a2f-801d-a78b00c8d9ca
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.obreferenceobjectwithtag, ObReferenceObjectWithTag routine [Kernel-Mode Driver Architecture], wdm/ObReferenceObjectWithTag, ObReferenceObjectWithTag, k107_a35c78fa-edf5-4a93-908b-baf16718b095.xml
+ms.keywords : ObReferenceObjectWithTag routine [Kernel-Mode Driver Architecture], ObReferenceObjectWithTag, kernel.obreferenceobjectwithtag, wdm/ObReferenceObjectWithTag, k107_a35c78fa-edf5-4a93-908b-baf16718b095.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -84,12 +84,11 @@ To view an object reference trace in the <a href="http://go.microsoft.com/fwlink
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating system. Available in Windows 7 and later versions of the Windows operating system. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 

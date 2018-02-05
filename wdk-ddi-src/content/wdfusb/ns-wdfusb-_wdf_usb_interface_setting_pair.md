@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b6f169ae-6c4c-4c27-8532-75a76b66cc5a
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "_WDF_USB_INTERFACE_SETTING_PAIR, wdfusb/WDF_USB_INTERFACE_SETTING_PAIR, DFUsbRef_e8de7f02-5d9b-4cba-9e7c-dc4562256f9e.xml, *PWDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR, PWDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR structure, wdf.wdf_usb_interface_setting_pair, kmdf.wdf_usb_interface_setting_pair, wdfusb/PWDF_USB_INTERFACE_SETTING_PAIR, PWDF_USB_INTERFACE_SETTING_PAIR structure pointer"
+ms.keywords : kmdf.wdf_usb_interface_setting_pair, PWDF_USB_INTERFACE_SETTING_PAIR structure pointer, wdfusb/PWDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR structure, wdfusb/WDF_USB_INTERFACE_SETTING_PAIR, wdf.wdf_usb_interface_setting_pair, _WDF_USB_INTERFACE_SETTING_PAIR, *PWDF_USB_INTERFACE_SETTING_PAIR, DFUsbRef_e8de7f02-5d9b-4cba-9e7c-dc4562256f9e.xml, PWDF_USB_INTERFACE_SETTING_PAIR
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,6 @@ The <b>WDF_USB_INTERFACE_SETTING_PAIR</b> structure is used in the <a href="..\w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |

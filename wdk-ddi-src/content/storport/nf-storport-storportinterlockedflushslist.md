@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : C686ABA7-BC44-45CE-A35B-63E76961A032
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortInterlockedFlushSList, storport/StorPortInterlockedFlushSList, StorPortInterlockedFlushSList routine [Storage Devices], storage.storportinterlockedflushslist
+ms.keywords : StorPortInterlockedFlushSList routine [Storage Devices], StorPortInterlockedFlushSList, storport/StorPortInterlockedFlushSList, storage.storportinterlockedflushslist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -118,24 +118,21 @@ The <b>StorPortInterlockedFlushSList</b> will also return <b>STATUS_SUCCESS</b> 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
+<a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
 
 <a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
 
-<a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
-
 <a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
+
+<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
 
  
 

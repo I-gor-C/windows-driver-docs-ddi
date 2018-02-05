@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3bc84b15-7c13-4ad9-b9a1-6abd5a7389eb
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4::WriteIo, IDebugDataSpaces4 interface [Windows Debugging], WriteIo method, dbgeng/IDebugDataSpaces3::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces3 interface, WriteIo, dbgeng/IDebugDataSpaces2::WriteIo, dbgeng/IDebugDataSpaces4::WriteIo, IDebugDataSpaces2::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces2 interface, WriteIo method [Windows Debugging], IDebugDataSpaces_d36b33ec-db19-4df1-8813-b77f22705279.xml, WriteIo method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces::WriteIo, IDebugDataSpaces3 interface [Windows Debugging], WriteIo method, IDebugDataSpaces interface [Windows Debugging], WriteIo method, IDebugDataSpaces4, IDebugDataSpaces2 interface [Windows Debugging], WriteIo method, debugger.writeio, WriteIo method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces::WriteIo, IDebugDataSpaces3::WriteIo
+ms.keywords : WriteIo method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces::WriteIo, dbgeng/IDebugDataSpaces2::WriteIo, IDebugDataSpaces4::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces2 interface [Windows Debugging], WriteIo method, IDebugDataSpaces3::WriteIo, dbgeng/IDebugDataSpaces4::WriteIo, WriteIo, IDebugDataSpaces3 interface [Windows Debugging], WriteIo method, IDebugDataSpaces_d36b33ec-db19-4df1-8813-b77f22705279.xml, IDebugDataSpaces4 interface [Windows Debugging], WriteIo method, IDebugDataSpaces2::WriteIo, WriteIo method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4, debugger.writeio, WriteIo method [Windows Debugging], dbgeng/IDebugDataSpaces3::WriteIo, IDebugDataSpaces::WriteIo, IDebugDataSpaces interface [Windows Debugging], WriteIo method, WriteIo method [Windows Debugging], IDebugDataSpaces interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -115,11 +115,6 @@ This method is only available in kernel-mode debugging.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : c9cc9124-ee15-40df-b149-a9f3b26d7c24
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], kernel.clfsmgmtquerypolicy, ClfsMgmtQueryPolicy, wdm/ClfsMgmtQueryPolicy, Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml
+ms.keywords : ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml, ClfsMgmtQueryPolicy, wdm/ClfsMgmtQueryPolicy, kernel.clfsmgmtquerypolicy
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -166,14 +166,12 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

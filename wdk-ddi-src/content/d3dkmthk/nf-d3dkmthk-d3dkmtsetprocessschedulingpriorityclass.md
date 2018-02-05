@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1c0177da-5e5f-4e3e-aef2-05d8079bfb95
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSetProcessSchedulingPriorityClass function [Display Devices], OpenGL_Functions_757bbe38-6623-4438-8af3-a2282bec6c78.xml, d3dkmthk/D3DKMTSetProcessSchedulingPriorityClass, display.d3dkmtsetprocessschedulingpriorityclass, D3DKMTSetProcessSchedulingPriorityClass
+ms.keywords : D3DKMTSetProcessSchedulingPriorityClass function [Display Devices], D3DKMTSetProcessSchedulingPriorityClass, OpenGL_Functions_757bbe38-6623-4438-8af3-a2282bec6c78.xml, display.d3dkmtsetprocessschedulingpriorityclass, d3dkmthk/D3DKMTSetProcessSchedulingPriorityClass
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -53,11 +53,11 @@ NTSTATUS APIENTRY D3DKMTSetProcessSchedulingPriorityClass(
 
 ## Parameters
 
-``
+`Arg1`
 
 
 
-``
+`Arg1`
 
 
 
@@ -100,14 +100,11 @@ This function might also return other NTSTATUS values.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

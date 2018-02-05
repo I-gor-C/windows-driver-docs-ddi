@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 5854BB6A-EB5F-493A-96E4-0DF298EC0332
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], GetManagedStatusWide method, GetManagedStatusWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, debugger.idebugcontrol4_getmanagedstatuswide, dbgeng/IDebugControl4::GetManagedStatusWide, GetManagedStatusWide, IDebugControl4::GetManagedStatusWide, GetManagedStatusWide method [Windows Debugging]
+ms.keywords : GetManagedStatusWide method [Windows Debugging], GetManagedStatusWide method [Windows Debugging], IDebugControl4 interface, GetManagedStatusWide, debugger.idebugcontrol4_getmanagedstatuswide, dbgeng/IDebugControl4::GetManagedStatusWide, IDebugControl4::GetManagedStatusWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetManagedStatusWide method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -106,14 +106,9 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

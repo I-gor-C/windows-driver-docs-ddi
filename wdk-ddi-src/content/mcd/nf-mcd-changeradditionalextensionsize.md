@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : d9bcbad5-ce2c-4968-9544-4fb024b1e933
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : mcd/ChangerAdditionalExtensionSize, ChangerAdditionalExtensionSize function [Storage Devices], chgrmini_22c1f2f6-d441-4208-b104-46711c4204cd.xml, ChangerAdditionalExtensionSize, storage.changeradditionalextensionsize
+ms.keywords : chgrmini_22c1f2f6-d441-4208-b104-46711c4204cd.xml, ChangerAdditionalExtensionSize, ChangerAdditionalExtensionSize function [Storage Devices], storage.changeradditionalextensionsize, mcd/ChangerAdditionalExtensionSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,10 @@ The device-specific information stored by a changer miniclass driver is determin
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | mcd.h (include Mcd.h, Ntddchgr.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

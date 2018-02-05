@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b3e93b4d-7d0a-4862-a405-2bf7f78244ef
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO, _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO, display.dxgk_multiplane_overlay_vsync_info, DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO structure [Display Devices], d3dkmddi/DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
+ms.keywords : DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO, display.dxgk_multiplane_overlay_vsync_info, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO, DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,5 @@ A structure of type <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_at
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

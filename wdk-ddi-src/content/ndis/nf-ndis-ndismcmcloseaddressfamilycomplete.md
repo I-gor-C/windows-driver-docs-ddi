@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : be551557-06db-4fc9-bdcb-030e621e205a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCmCloseAddressFamilyComplete, netvista.ndismcmcloseaddressfamilycomplete, condis_mcm_ref_beab4fb5-32b1-4188-9e6a-47f286386919.xml, NdisMCmCloseAddressFamilyComplete macro [Network Drivers Starting with Windows Vista], NdisMCmCloseAddressFamilyComplete
+ms.keywords : ndis/NdisMCmCloseAddressFamilyComplete, condis_mcm_ref_beab4fb5-32b1-4188-9e6a-47f286386919.xml, NdisMCmCloseAddressFamilyComplete macro [Network Drivers Starting with Windows Vista], netvista.ndismcmcloseaddressfamilycomplete, NdisMCmCloseAddressFamilyComplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -80,8 +80,8 @@ An MCM driver must call
 
 A call to 
     <b>NdisMCmCloseAddressFamilyComplete</b> causes NDIS to call the client's 
-    <mshelp:link keywords="netvista.protocolclcloseafcomplete" tabindex="0"><i>
-    ProtocolClCloseAfComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">
+    ProtocolClCloseAfComplete</a> function.
 
 The MCM driver cannot subsequently use the 
     <i>NdisAfHandle</i>, which is invalid for the MCM driver when 
@@ -95,27 +95,25 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see         NdisMCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see         NdisMCmCloseAddressFamilyComplete (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
+<a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">ProtocolClCloseAfComplete</a>
+
+<a href="..\ndis\nf-ndis-ndiscmcloseaddressfamilycomplete.md">
+   NdisCmCloseAddressFamilyComplete</a>
 
 <a href="..\ndis\nc-ndis-protocol_cm_close_af.md">ProtocolCmCloseAf</a>
 
+<a href="..\ndis\nf-ndis-ndisclcloseaddressfamily.md">NdisClCloseAddressFamily</a>
+
 <a href="..\ndis\nc-ndis-protocol_cm_open_af.md">ProtocolCmOpenAf</a>
-
-<mshelp:link keywords="netvista.ndiscmcloseaddressfamilycomplete" tabindex="0"><b>
-   NdisCmCloseAddressFamilyComplete</b></mshelp:link>
-
-<a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">ProtocolClCloseAfComplete</a>
 
  
 

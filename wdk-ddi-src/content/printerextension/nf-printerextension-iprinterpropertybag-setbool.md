@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : B97C3FE9-0AC8-4147-A394-3344EBBA0B4C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SetBool method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag, IPrinterPropertyBag::SetBool, SetBool method [Print Devices], printerextension/IPrinterPropertyBag::SetBool, SetBool, print.iprinterpropertybag_setbool, IPrinterPropertyBag interface [Print Devices], SetBool method
+ms.keywords : SetBool method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag::SetBool, printerextension/IPrinterPropertyBag::SetBool, print.iprinterpropertybag_setbool, IPrinterPropertyBag interface [Print Devices], SetBool method, IPrinterPropertyBag, SetBool, SetBool method [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -80,14 +80,9 @@ A call to set a property on a queue property bag will fail with ERROR_ACCESS_DEN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

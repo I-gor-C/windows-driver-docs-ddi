@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : af272e27-6cb4-4f87-9c46-512ac80fa310
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : structs-Fibre_32d9473b-e356-41cc-9352-7a142fc3dcc7.xml, PHBA_LUID, hbaapi/HBA_LUID, HBA_LUID structure [Storage Devices], hbaapi/PHBA_LUID, PHBA_LUID structure pointer [Storage Devices], HBA_LUID, storage.hba_luid, *PHBA_LUID
+ms.keywords : storage.hba_luid, HBA_LUID structure [Storage Devices], PHBA_LUID structure pointer [Storage Devices], *PHBA_LUID, HBA_LUID, hbaapi/HBA_LUID, PHBA_LUID, structs-Fibre_32d9473b-e356-41cc-9352-7a142fc3dcc7.xml, hbaapi/PHBA_LUID
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : HBA_LUID, *PHBA_LUID
+req.typenames : "*PHBA_LUID, HBA_LUID"
 ---
 
 # HBA_LUID structure
@@ -61,9 +61,6 @@ A vendor specific LUID is not guaranteed to be unique or persistent.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbaapi.h (include Hbaapi.h) |
 
 ## See Also

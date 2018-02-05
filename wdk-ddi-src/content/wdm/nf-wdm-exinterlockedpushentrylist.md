@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7a932f69-c5dd-4844-b461-b986c00a08c7
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.exinterlockedpushentrylist, k102_dbf9c23d-8c9a-47e6-a923-cdb4d247148c.xml, ExInterlockedPushEntryList routine [Kernel-Mode Driver Architecture], ExInterlockedPushEntryList, wdm/ExInterlockedPushEntryList
+ms.keywords : wdm/ExInterlockedPushEntryList, ExInterlockedPushEntryList, ExInterlockedPushEntryList routine [Kernel-Mode Driver Architecture], kernel.exinterlockedpushentrylist, k102_dbf9c23d-8c9a-47e6-a923-cdb4d247148c.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,28 +83,27 @@ The <b>ExInterlockedPushEntryList</b> routine can be called at any IRQL. The sto
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (see Remarks section) |
 | **DDI compliance rules** | IoAllocateFree, IoReuseIrp, MarkingInterlockedQueuedIrps, RemoveLockCheck, RemoveLockForward, RemoveLockForward2, RemoveLockForwardDeviceControl, RemoveLockForwardDeviceControl2, RemoveLockForwardDeviceControlInternal, RemoveLockForwardDeviceControlInternal2, RemoveLockForwardRead, RemoveLockForwardRead2, RemoveLockForwardWrite, RemoveLockForwardWrite2, RemoveLockRelease2, RemoveLockReleaseCleanup, RemoveLockReleaseClose, RemoveLockReleaseCreate, RemoveLockReleaseDeviceControl, RemoveLockReleaseInternalDeviceControl, RemoveLockReleasePower, RemoveLockReleaseRead, RemoveLockReleaseShutdown, RemoveLockReleaseSystemControl, RemoveLockReleaseWrite |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pushentrylist.md">PushEntryList</a>
-
 <a href="..\wdm\nf-wdm-initializeslisthead.md">ExInitializeSListHead</a>
 
 <a href="..\wdm\nf-wdm-exinterlockedpushentryslist.md">ExInterlockedPushEntrySList</a>
 
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+
+<a href="..\wdm\nf-wdm-pushentrylist.md">PushEntryList</a>
+
 <a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
 
 <a href="..\wdm\nf-wdm-exinterlockedpopentrylist.md">ExInterlockedPopEntryList</a>
-
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 
  
 

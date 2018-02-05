@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : dfe37343-18a6-46f2-b23f-52fc0ca2f800
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI_DDI_MODE_SCALING_UNSPECIFIED, dxgiddi/DXGI_DDI_MODE_SCALING_CENTERED, UMDisplayDriver_Dx10param_Structs_fce25008-9fff-4a5a-9bdc-2e9a6055ef06.xml, DXGI_DDI_MODE_SCALING_UNSPECIFIED, dxgiddi/DXGI_DDI_MODE_SCALING, dxgiddi/DXGI_DDI_MODE_SCALING_STRETCHED, DXGI_DDI_MODE_SCALING, display.dxgi_ddi_mode_scaling, DXGI_DDI_MODE_SCALING_STRETCHED, DXGI_DDI_MODE_SCALING_CENTERED, DXGI_DDI_MODE_SCALING enumeration [Display Devices]
+ms.keywords : DXGI_DDI_MODE_SCALING_UNSPECIFIED, DXGI_DDI_MODE_SCALING_STRETCHED, dxgiddi/DXGI_DDI_MODE_SCALING_CENTERED, DXGI_DDI_MODE_SCALING, dxgiddi/DXGI_DDI_MODE_SCALING_UNSPECIFIED, UMDisplayDriver_Dx10param_Structs_fce25008-9fff-4a5a-9bdc-2e9a6055ef06.xml, display.dxgi_ddi_mode_scaling, DXGI_DDI_MODE_SCALING_CENTERED, dxgiddi/DXGI_DDI_MODE_SCALING, dxgiddi/DXGI_DDI_MODE_SCALING_STRETCHED, DXGI_DDI_MODE_SCALING enumeration [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,9 +74,7 @@ typedef enum DXGI_DDI_MODE_SCALING {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also

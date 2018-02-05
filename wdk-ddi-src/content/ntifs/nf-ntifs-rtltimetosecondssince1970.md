@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 9f3e8592-b966-45c4-8931-dd5be0d75740
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/RtlTimeToSecondsSince1970, RtlTimeToSecondsSince1970 routine [Installable File System Drivers], rtlref_62b40f46-c3ee-480d-b671-0c107866f4e7.xml, ifsk.rtltimetosecondssince1970, RtlTimeToSecondsSince1970
+ms.keywords : ifsk.rtltimetosecondssince1970, ntifs/RtlTimeToSecondsSince1970, rtlref_62b40f46-c3ee-480d-b671-0c107866f4e7.xml, RtlTimeToSecondsSince1970, RtlTimeToSecondsSince1970 routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,14 +75,11 @@ For more information about converting time values, see <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "< DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -90,9 +87,9 @@ For more information about converting time values, see <a href="https://msdn.mic
 
 <a href="..\wdm\nf-wdm-rtltimefieldstotime.md">RtlTimeFieldsToTime</a>
 
-<a href="..\ntifs\nf-ntifs-rtltimetosecondssince1980.md">RtlTimeToSecondsSince1980</a>
-
 <a href="..\ntifs\nf-ntifs-rtlsecondssince1970totime.md">RtlSecondsSince1970ToTime</a>
+
+<a href="..\ntifs\nf-ntifs-rtltimetosecondssince1980.md">RtlTimeToSecondsSince1980</a>
 
  
 

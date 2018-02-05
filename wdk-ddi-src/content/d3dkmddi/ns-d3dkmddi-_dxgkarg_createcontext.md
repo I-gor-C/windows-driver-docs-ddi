@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 94239501-2eeb-479a-851a-14ae665c5887
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_f88f9027-046c-482e-93c6-882c325d1a09.xml, _DXGKARG_CREATECONTEXT, display.dxgkarg_createcontext, d3dkmddi/DXGKARG_CREATECONTEXT, DXGKARG_CREATECONTEXT structure [Display Devices], DXGKARG_CREATECONTEXT, *INOUT_PDXGKARG_CREATECONTEXT
+ms.keywords : "_DXGKARG_CREATECONTEXT, DXGKARG_CREATECONTEXT, display.dxgkarg_createcontext, *INOUT_PDXGKARG_CREATECONTEXT, DXGKARG_CREATECONTEXT structure [Display Devices], DmStructs_f88f9027-046c-482e-93c6-882c325d1a09.xml, d3dkmddi/DXGKARG_CREATECONTEXT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -89,24 +89,22 @@ typedef struct _DXGKARG_CREATECONTEXT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_destroycontext.md">DxgkDdiDestroyContext</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a>
 
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_destroycontext.md">DxgkDdiDestroyContext</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
+
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a>
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
 
  
 

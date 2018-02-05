@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4833d4e2-295a-4d38-9ebf-8af68eeff948
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoQueryWatchdogTime routine [Kernel-Mode Driver Architecture], kernel.poquerywatchdogtime, portn_1fe369ed-f8f0-4459-943f-a624764c279b.xml, wdm/PoQueryWatchdogTime, PoQueryWatchdogTime
+ms.keywords : PoQueryWatchdogTime, wdm/PoQueryWatchdogTime, PoQueryWatchdogTime routine [Kernel-Mode Driver Architecture], portn_1fe369ed-f8f0-4459-943f-a624764c279b.xml, kernel.poquerywatchdogtime
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,12 @@ If more than one power watchdog time-out is currently enabled, the routine sets 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 7. Available starting with Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

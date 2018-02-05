@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E93B8A07-7C06-470B-9B26-8D59C2685D2C
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PNDIS_PD_PROVIDER_DISPATCH, ndis/PNDIS_PD_PROVIDER_DISPATCH, _NDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH, ndis/NDIS_PD_PROVIDER_DISPATCH, netvista.ndis_pd_provider_dispatch, PNDIS_PD_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], NDIS_PD_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndis_pd_provider_dispatch, PNDIS_PD_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_PD_PROVIDER_DISPATCH, ndis/PNDIS_PD_PROVIDER_DISPATCH, _NDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH, PNDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -126,9 +126,7 @@ See <a href="..\ndis\nc-ndis-ndis_pd_set_receive_filter.md">NdisPDSetReceiveFilt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | ndis.h |
 
 ## See Also

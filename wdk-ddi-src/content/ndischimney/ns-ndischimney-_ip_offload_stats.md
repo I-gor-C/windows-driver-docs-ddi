@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f40c5734-2546-40c3-a6fb-58f728c3cc5e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ip_offload_stats, ndischimney/PIP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS, tcp_chim_struct_292881aa-1c15-4b1a-abd9-927d3b3b8f7b.xml, PIP_OFFLOAD_STATS, _IP_OFFLOAD_STATS, IP_OFFLOAD_STATS structure [Network Drivers Starting with Windows Vista], PIP_OFFLOAD_STATS structure pointer [Network Drivers Starting with Windows Vista], IP_OFFLOAD_STATS, ndischimney/IP_OFFLOAD_STATS
+ms.keywords : netvista.ip_offload_stats, IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS, ndischimney/IP_OFFLOAD_STATS, PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_292881aa-1c15-4b1a-abd9-927d3b3b8f7b.xml, _IP_OFFLOAD_STATS, ndischimney/PIP_OFFLOAD_STATS, PIP_OFFLOAD_STATS structure pointer [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS
+req.typenames : "*PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS"
 ---
 
 # _IP_OFFLOAD_STATS structure
@@ -152,8 +152,8 @@ If an offload target's TCP chimney capabilities are enabled (see
 <ul>
 <li>
 The offload target can indicate the packet through the non-offload interface by calling the 
-      <mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-      NdisMIndicateReceiveNetBufferLists</b></mshelp:link> function. In this case, the offload target must not increment
+      <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+      NdisMIndicateReceiveNetBufferLists</a> function. In this case, the offload target must not increment
       the InHeaderErrors counter. This is the recommended approach.
 
 </li>
@@ -179,9 +179,6 @@ All of the counters that supply the values for the IP_OFFLOAD_STATS structure wr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ndischimney.h (include Ndischimney.h) |
 
 ## See Also
@@ -190,8 +187,8 @@ All of the counters that supply the values for the IP_OFFLOAD_STATS structure wr
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569759">OID_IP6_OFFLOAD_STATS</a>
 
-<mshelp:link keywords="netvista.ndismindicatereceivenetbufferlists" tabindex="0"><b>
-   NdisMIndicateReceiveNetBufferLists</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
+   NdisMIndicateReceiveNetBufferLists</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569758">OID_IP4_OFFLOAD_STATS</a>
 

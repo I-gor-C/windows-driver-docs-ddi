@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 205936c3-fb5a-48e7-8f13-328563c2f0d2
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DDICERTIFICATEINFO, d3dumddi/DDICERTIFICATEINFO, D3D_other_Structs_99ca6ef3-fba8-4f57-b0bf-16be3c4f8a77.xml, _DDICERTIFICATEINFO, display.ddicertificateinfo, DDICERTIFICATEINFO structure [Display Devices]
+ms.keywords : d3dumddi/DDICERTIFICATEINFO, _DDICERTIFICATEINFO, DDICERTIFICATEINFO, DDICERTIFICATEINFO structure [Display Devices], display.ddicertificateinfo, D3D_other_Structs_99ca6ef3-fba8-4f57-b0bf-16be3c4f8a77.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,20 +71,18 @@ The runtime specifies a pointer to a DDICERTIFICATEINFO structure in the <b>pInf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DDICERTIFICATEINFO is supported beginning with the Windows 7 operating system. DDICERTIFICATEINFO is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
+
+<a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>
 
 <a href="..\d3dumddi\ne-d3dumddi-_d3dddi_certificatetype.md">D3DDDI_CERTIFICATETYPE</a>
 
-<a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 
  
 

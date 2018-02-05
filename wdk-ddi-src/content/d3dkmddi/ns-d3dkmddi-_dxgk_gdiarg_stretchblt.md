@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 11988e4c-9f4b-44cc-bc09-ff6da62f3904
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_GDIARG_STRETCHBLT, BLACKONWHITE, d3dkmddi/DXGK_GDIARG_STRETCHBLT, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml, display.dxgk_gdiarg_stretchblt, _DXGK_GDIARG_STRETCHBLT, WHITEONBLACK, DXGK_GDIARG_STRETCHBLT structure [Display Devices]
+ms.keywords : DXGK_GDIARG_STRETCHBLT structure [Display Devices], WHITEONBLACK, BLACKONWHITE, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml, display.dxgk_gdiarg_stretchblt, DXGK_GDIARG_STRETCHBLT, _DXGK_GDIARG_STRETCHBLT, d3dkmddi/DXGK_GDIARG_STRETCHBLT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -127,20 +127,18 @@ int Ys = truncate((Yd â€“ DstRect.top + 0.5) * Hs/Hd + SrcRect.top)</code><
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_alphablend.md">DXGK_GDIARG_ALPHABLEND</a>
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_transparentblt.md">DXGK_GDIARG_TRANSPARENTBLT</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_alphablend.md">DXGK_GDIARG_ALPHABLEND</a>
+
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_presentationcaps.md">DXGK_PRESENTATIONCAPS</a>
 
  
 

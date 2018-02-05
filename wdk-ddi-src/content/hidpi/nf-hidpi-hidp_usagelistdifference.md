@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 332ef453-6f9d-4cdd-a8c7-766158e540d8
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hidfunc_91cbddd2-90f6-4784-9f1d-6d9bf8be35d3.xml, HidP_UsageListDifference, HidP_UsageListDifference routine [Human Input Devices], hidpi/HidP_UsageListDifference, hid.hidp_usagelistdifference
+ms.keywords : HidP_UsageListDifference routine [Human Input Devices], HidP_UsageListDifference, hid.hidp_usagelistdifference, hidpi/HidP_UsageListDifference, hidfunc_91cbddd2-90f6-4784-9f1d-6d9bf8be35d3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,14 +94,11 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. Available in Windows 2000 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | hidpi.h (include Hidpi.h) |
-| **Library** |  |
+| **Library** | Hidparse.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

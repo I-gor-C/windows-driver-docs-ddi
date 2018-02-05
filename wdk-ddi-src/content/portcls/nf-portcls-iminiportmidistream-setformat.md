@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 35e11004-c716-4c6a-ba0a-be04750afb7a
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SetFormat, audmp-routines_9e75b920-4cc0-4acb-83e6-f970524e0587.xml, audio.iminiportmidistream_setformat, SetFormat method [Audio Devices], IMiniportMidiStream interface, portcls/IMiniportMidiStream::SetFormat, IMiniportMidiStream, IMiniportMidiStream interface [Audio Devices], SetFormat method, SetFormat method [Audio Devices], IMiniportMidiStream::SetFormat
+ms.keywords : audio.iminiportmidistream_setformat, IMiniportMidiStream, audmp-routines_9e75b920-4cc0-4acb-83e6-f970524e0587.xml, portcls/IMiniportMidiStream::SetFormat, SetFormat method [Audio Devices], IMiniportMidiStream interface, SetFormat, IMiniportMidiStream interface [Audio Devices], SetFormat method, SetFormat method [Audio Devices], IMiniportMidiStream::SetFormat
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -68,14 +68,10 @@ The <code>SetFormat</code> method essentially does nothing because the data form
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

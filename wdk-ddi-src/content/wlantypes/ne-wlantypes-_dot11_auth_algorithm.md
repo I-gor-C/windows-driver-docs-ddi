@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 27bba553-2d46-4892-864a-52e44caf6d56
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wlantypes/DOT11_AUTH_ALGO_80211_SHARED_KEY, wlantypes/DOT11_AUTH_ALGO_RSNA, DOT11_AUTH_ALGO_WPA_NONE, Native_802.11_data_types_e6d2770c-b7fd-467c-a94e-b2f77a515e76.xml, DOT11_AUTH_ALGO_IHV_END, wlantypes/DOT11_AUTH_ALGO_80211_OPEN, PDOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_WPA, DOT11_AUTH_ALGO_80211_SHARED_KEY, _DOT11_AUTH_ALGORITHM, netvista.dot11_auth_algorithm, wlantypes/DOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_IHV_START, wlantypes/DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_80211_OPEN, wlantypes/DOT11_AUTH_ALGO_IHV_END, wlantypes/PDOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_IHV_START, DOT11_AUTH_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], PDOT11_AUTH_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_ALGO_WPA, DOT11_AUTH_ALGO_RSNA_PSK, wlantypes/DOT11_AUTH_ALGO_WPA_NONE, DOT11_AUTH_ALGO_RSNA, *PDOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_RSNA_PSK
+ms.keywords : wlantypes/DOT11_AUTH_ALGO_RSNA_PSK, *PDOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_WPA_NONE, DOT11_AUTH_ALGO_IHV_START, wlantypes/DOT11_AUTH_ALGO_RSNA, PDOT11_AUTH_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_ALGO_WPA, DOT11_AUTH_ALGO_IHV_END, DOT11_AUTH_ALGO_80211_OPEN, wlantypes/DOT11_AUTH_ALGO_IHV_END, _DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_80211_SHARED_KEY, Native_802.11_data_types_e6d2770c-b7fd-467c-a94e-b2f77a515e76.xml, DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_RSNA, DOT11_AUTH_ALGO_WPA_NONE, DOT11_AUTH_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_RSNA_PSK, netvista.dot11_auth_algorithm, wlantypes/DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_WPA, PDOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_80211_OPEN, wlantypes/PDOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_80211_SHARED_KEY, wlantypes/DOT11_AUTH_ALGO_IHV_START
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -177,8 +177,8 @@ If the IHV develops its own support for an authentication algorithm supported by
 <div class="alert"><b>Note</b>  The 802.11 station must implicitly enable the 802.11 Open System authentication
     algorithm whenever it enables a WPA or RSNA authentication algorithm.</div><div> </div>Starting with Windows 7, an 802.11 miniport driver can report any combination of supported
     authentication and cipher algorithm pairs in the 
-    <mshelp:link keywords="netvista.dot11_auth_cipher_pair_list" tabindex="0"><b>
-    DOT11_AUTH_CIPHER_PAIR_LIST</b></mshelp:link> structure. However, if the operating system starts Soft AP, it enables
+    <a href="..\windot11\ns-windot11-dot11_auth_cipher_pair_list.md">
+    DOT11_AUTH_CIPHER_PAIR_LIST</a> structure. However, if the operating system starts Soft AP, it enables
     only the 
     DOT11_AUTH_ALGO_RSNA_PSK authentication algorithm and the 
     DOT11_CIPHER_ALGO_CCMP cipher algorithm. To support Soft AP, the miniport driver must support this
@@ -194,22 +194,20 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/en-us/library/gg159168.aspx">
+   OID_DOT11_ENABLED_AUTHENTICATION_ALGORITHM</a>
 
 <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a>
 
 <a href="..\windot11\ns-windot11-dot11_auth_cipher_pair_list.md">DOT11_AUTH_CIPHER_PAIR_LIST</a>
 
-<mshelp:link keywords="netvista.dot11_association_completion_parameters" tabindex="0"><b>
-   DOT11_ASSOCIATION_COMPLETION_PARAMETERS</b></mshelp:link>
-
-<mshelp:link keywords="netvista.oid_dot11_enabled_authentication_algorithm" tabindex="0">
-   OID_DOT11_ENABLED_AUTHENTICATION_ALGORITHM</mshelp:link>
+<a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
+   DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>
 
  
 

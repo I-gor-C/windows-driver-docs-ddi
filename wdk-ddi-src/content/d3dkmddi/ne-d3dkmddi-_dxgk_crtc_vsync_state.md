@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1A7632BB-1DA6-4D03-8A3A-6468A2E4DF71
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_VSYNC_DISABLE_NO_PHASE, DXGK_INTERRUPT_ENABLE, _DXGK_CRTC_VSYNC_STATE, d3dkmddi/DXGK_CRTC_VSYNC_STATE, d3dkmddi/DXGK_INTERRUPT_ENABLE, DXGK_VSYNC_DISABLE_KEEP_PHASE, DXGK_VSYNC_DISABLE_NO_PHASE, DXGK_CRTC_VSYNC_STATE enumeration [Display Devices], DXGK_CRTC_VSYNC_STATE, d3dkmddi/DXGK_VSYNC_DISABLE_KEEP_PHASE, display.dxgk_crtc_vsync_state
+ms.keywords : DXGK_CRTC_VSYNC_STATE, DXGK_VSYNC_DISABLE_KEEP_PHASE, DXGK_INTERRUPT_ENABLE, DXGK_CRTC_VSYNC_STATE enumeration [Display Devices], d3dkmddi/DXGK_VSYNC_DISABLE_NO_PHASE, d3dkmddi/DXGK_CRTC_VSYNC_STATE, display.dxgk_crtc_vsync_state, _DXGK_CRTC_VSYNC_STATE, d3dkmddi/DXGK_VSYNC_DISABLE_KEEP_PHASE, DXGK_VSYNC_DISABLE_NO_PHASE, d3dkmddi/DXGK_INTERRUPT_ENABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,5 @@ typedef enum _DXGK_CRTC_VSYNC_STATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10. Available in Windows 10. |
 | **Header** | d3dkmddi.h |

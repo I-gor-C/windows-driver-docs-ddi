@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 7c30bc5b-2bd5-4db9-acaf-0c0347035ae3
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsDispatchInvalidDeviceRequest, KsDispatchInvalidDeviceRequest function [Streaming Media Devices], ksfunc_9be97c86-7505-4192-8a61-8280fca7ba0c.xml, ks/KsDispatchInvalidDeviceRequest, stream.ksdispatchinvaliddevicerequest
+ms.keywords : ksfunc_9be97c86-7505-4192-8a61-8280fca7ba0c.xml, KsDispatchInvalidDeviceRequest, KsDispatchInvalidDeviceRequest function [Streaming Media Devices], ks/KsDispatchInvalidDeviceRequest, stream.ksdispatchinvaliddevicerequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,9 @@ The <b>KsDispatchInvalidDeviceRequest</b> function is needed because the dispatc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

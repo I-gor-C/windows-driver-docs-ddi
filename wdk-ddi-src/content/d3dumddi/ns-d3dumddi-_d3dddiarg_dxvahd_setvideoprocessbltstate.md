@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : ebcd58d7-f0b3-43ea-b08f-f0c2618902d7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE, d3dumddi/D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE, D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE structure [Display Devices], _D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE, UMDisplayDriver_param_Structs_fd02ddf9-535d-4c4b-a6fe-6c765170e6f9.xml, display.d3dddiarg_dxvahd_setvideoprocessbltstate
+ms.keywords : D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE, _D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE, display.d3dddiarg_dxvahd_setvideoprocessbltstate, D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE structure [Display Devices], d3dumddi/D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE, UMDisplayDriver_param_Structs_fd02ddf9-535d-4c4b-a6fe-6c765170e6f9.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,7 @@ typedef struct _D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE is supported beginning with the Windows 7 operating system. D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

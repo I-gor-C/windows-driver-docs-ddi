@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5A063585-AC45-44DF-BE21-FA1BB6283E6F
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelRestoreFromBuffer function [Network Drivers Starting with Windows Vista], VmbChannelRestoreFromBuffer, netvista.vmbchannelrestorefrombuffer, vmbuskernelmodeclientlibapi/VmbChannelRestoreFromBuffer
+ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelRestoreFromBuffer, VmbChannelRestoreFromBuffer, VmbChannelRestoreFromBuffer function [Network Drivers Starting with Windows Vista], netvista.vmbchannelrestorefrombuffer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -122,11 +122,9 @@ The caller is expected to call this function with buffers that contain whole
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

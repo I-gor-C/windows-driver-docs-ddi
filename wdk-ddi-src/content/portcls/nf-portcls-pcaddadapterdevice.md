@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : fa571ca0-194c-4018-9b93-a3cc687f7632
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audpc-routines_5b2b0ba0-67b7-4c8d-bd47-b7e664500637.xml, portcls/PcAddAdapterDevice, audio.pcaddadapterdevice, PcAddAdapterDevice, PcAddAdapterDevice function [Audio Devices]
+ms.keywords : PcAddAdapterDevice, audpc-routines_5b2b0ba0-67b7-4c8d-bd47-b7e664500637.xml, portcls/PcAddAdapterDevice, audio.pcaddadapterdevice, PcAddAdapterDevice function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -137,22 +137,19 @@ The adapter driver can then access the device-specific extension data, as shown 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows 2000. Available starting in Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
 <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>
 

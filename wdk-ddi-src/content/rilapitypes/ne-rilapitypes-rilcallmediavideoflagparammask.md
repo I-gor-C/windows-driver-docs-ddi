@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 6f0a8c1f-e3cb-4bcb-a9ec-4d4b7555a314
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLMEDIAVIDEOFLAGPARAMMASK, rilapitypes/RILCALLMEDIAVIDEOFLAGPARAMMASK, rilapitypes/RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN, rilapitypes/RIL_CALLMEDIAVIDEOFLAG_PAUSE, RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE, RIL_CALLMEDIAVIDEOFLAG_ALL, netvista.rilcallmediavideoflagparammask_2, RIL_CALLMEDIAVIDEOFLAG_PAUSE, rilapitypes/RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE, RILCALLMEDIAVIDEOFLAGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN, rilapitypes/RIL_CALLMEDIAVIDEOFLAG_ALL
+ms.keywords : rilapitypes/RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN, rilapitypes/RIL_CALLMEDIAVIDEOFLAG_PAUSE, rilapitypes/RIL_CALLMEDIAVIDEOFLAG_ALL, netvista.rilcallmediavideoflagparammask_2, RILCALLMEDIAVIDEOFLAGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN, RIL_CALLMEDIAVIDEOFLAG_PAUSE, rilapitypes/RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE, RIL_CALLMEDIAVIDEOFLAG_ALL, RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE, rilapitypes/RILCALLMEDIAVIDEOFLAGPARAMMASK, RILCALLMEDIAVIDEOFLAGPARAMMASK
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILCALLMEDIAVIDEOFLAGPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

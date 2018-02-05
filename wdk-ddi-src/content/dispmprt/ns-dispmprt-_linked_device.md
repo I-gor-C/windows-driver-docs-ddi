@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 65289123-46b8-4a4b-985a-8087f4afd250
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : LINKED_DEVICE, _LINKED_DEVICE, display.linked_device, LINKED_DEVICE structure [Display Devices], PLINKED_DEVICE structure pointer [Display Devices], DmStructs_3491af70-72fe-471c-b0f1-c00d6bffb242.xml, dispmprt/PLINKED_DEVICE, dispmprt/LINKED_DEVICE, *PLINKED_DEVICE, PLINKED_DEVICE
+ms.keywords : display.linked_device, dispmprt/PLINKED_DEVICE, DmStructs_3491af70-72fe-471c-b0f1-c00d6bffb242.xml, PLINKED_DEVICE, PLINKED_DEVICE structure pointer [Display Devices], LINKED_DEVICE, *PLINKED_DEVICE, _LINKED_DEVICE, LINKED_DEVICE structure [Display Devices], dispmprt/LINKED_DEVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -71,9 +71,7 @@ Prior to a call to <a href="..\dispmprt\nc-dispmprt-dxgkddi_link_device.md">Dxgk
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also

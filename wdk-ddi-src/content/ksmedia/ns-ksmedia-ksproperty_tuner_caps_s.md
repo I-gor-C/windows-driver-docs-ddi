@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9d58acda-07b6-4dc2-8f6a-83c6e8bd8e44
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S structure pointer [Streaming Media Devices], vidcapstruct_28e3b0b2-5b4e-404a-8ade-d5d9c1870ae5.xml, ksmedia/KSPROPERTY_TUNER_CAPS_S, stream.ksproperty_tuner_caps_s, ksmedia/PKSPROPERTY_TUNER_CAPS_S, KSPROPERTY_TUNER_CAPS_S structure [Streaming Media Devices]
+ms.keywords : stream.ksproperty_tuner_caps_s, KSPROPERTY_TUNER_CAPS_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_TUNER_CAPS_S, vidcapstruct_28e3b0b2-5b4e-404a-8ade-d5d9c1870ae5.xml, KSPROPERTY_TUNER_CAPS_S, ksmedia/KSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S structure pointer [Streaming Media Devices], *PKSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSPROPERTY_TUNER_CAPS_S, KSPROPERTY_TUNER_CAPS_S"
+req.typenames : KSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S
 ---
 
 # KSPROPERTY_TUNER_CAPS_S structure
@@ -135,20 +135,17 @@ Specifies a unique GUID representing the hardware connection of the analog video
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565842">KSPROPERTY_TUNER_IF_MEDIUM</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565825">KSPROPERTY_TUNER_CAPS</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565842">KSPROPERTY_TUNER_IF_MEDIUM</a>
 
  
 

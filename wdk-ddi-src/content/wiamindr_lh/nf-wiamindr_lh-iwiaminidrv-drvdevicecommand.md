@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : e17c81a6-8c4e-41f0-bd98-f7a9a0f20893
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv interface [Imaging Devices], drvDeviceCommand method, MiniDrv_a65ceaef-73bf-4fd1-9d56-2a4b208f54a3.xml, IWiaMiniDrv, wiamindr_lh/IWiaMiniDrv::drvDeviceCommand, IWiaMiniDrv::drvDeviceCommand, drvDeviceCommand, drvDeviceCommand method [Imaging Devices], IWiaMiniDrv interface, drvDeviceCommand method [Imaging Devices], image.iwiaminidrv_drvdevicecommand
+ms.keywords : IWiaMiniDrv::drvDeviceCommand, image.iwiaminidrv_drvdevicecommand, wiamindr_lh/IWiaMiniDrv::drvDeviceCommand, IWiaMiniDrv, MiniDrv_a65ceaef-73bf-4fd1-9d56-2a4b208f54a3.xml, IWiaMiniDrv interface [Imaging Devices], drvDeviceCommand method, drvDeviceCommand method [Imaging Devices], IWiaMiniDrv interface, drvDeviceCommand, drvDeviceCommand method [Imaging Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSCANWINDOW, SCANWINDOW"
+req.typenames : SCANWINDOW, *PSCANWINDOW
 req.product : Windows 10 or later.
 ---
 
@@ -97,20 +97,16 @@ The WIA service does not write any properties before calling this method. If the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Me and in Windows XP and later. Available in Windows Me and in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiamindr_lh.h (include Wiamindr.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamindr_lh.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545020">IWiaMiniDrv::drvWriteItemProperties</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545020">IWiaMiniDrv::drvWriteItemProperties</a>
 
 <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
 

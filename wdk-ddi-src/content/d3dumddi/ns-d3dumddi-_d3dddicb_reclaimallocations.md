@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 61c8fdbf-b003-4caa-af13-ba6f1e22400c
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_RECLAIMALLOCATIONS, display.d3dddicb_reclaimallocations, d3dumddi/D3DDDICB_RECLAIMALLOCATIONS, D3DDDICB_RECLAIMALLOCATIONS structure [Display Devices], D3DDDICB_RECLAIMALLOCATIONS"
+ms.keywords : "_D3DDDICB_RECLAIMALLOCATIONS, d3dumddi/D3DDDICB_RECLAIMALLOCATIONS, display.d3dddicb_reclaimallocations, D3DDDICB_RECLAIMALLOCATIONS, D3DDDICB_RECLAIMALLOCATIONS structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,18 +85,16 @@ If <b>pResources</b> is not <b>NULL</b>, the <b>HandleList</b> member must be <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
+
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a>
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 963c809f-da89-4f27-ba8b-3de8cdcec179
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winppi/GdiStartPageEMF, GdiStartPageEMF function [Print Devices], gdifnc_fbb09921-04b5-49e2-b8a7-fe23657a0f4f.xml, GdiStartPageEMF, print.gdistartpageemf
+ms.keywords : gdifnc_fbb09921-04b5-49e2-b8a7-fe23657a0f4f.xml, winppi/GdiStartPageEMF, print.gdistartpageemf, GdiStartPageEMF, GdiStartPageEMF function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,10 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 

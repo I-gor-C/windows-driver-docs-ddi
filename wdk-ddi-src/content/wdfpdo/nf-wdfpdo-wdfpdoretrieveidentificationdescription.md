@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : fac29ced-7acc-4c2a-ac8a-171b8dd1d45e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfPdoRetrieveIdentificationDescription method, kmdf.wdfpdoretrieveidentificationdescription, WdfPdoRetrieveIdentificationDescription, wdfpdo/WdfPdoRetrieveIdentificationDescription, PFN_WDFPDORETRIEVEIDENTIFICATIONDESCRIPTION, DFDeviceObjectFdoPdoRef_fe883ca1-8b36-4ac1-b7ff-8c38bf098148.xml, wdf.wdfpdoretrieveidentificationdescription
+ms.keywords : kmdf.wdfpdoretrieveidentificationdescription, WdfPdoRetrieveIdentificationDescription, PFN_WDFPDORETRIEVEIDENTIFICATIONDESCRIPTION, WdfPdoRetrieveIdentificationDescription method, wdfpdo/WdfPdoRetrieveIdentificationDescription, wdf.wdfpdoretrieveidentificationdescription, DFDeviceObjectFdoPdoRef_fe883ca1-8b36-4ac1-b7ff-8c38bf098148.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_OBJECT_CONTEXT_TYPE_INFO, *PWDF_OBJECT_CONTEXT_TYPE_INFO
+req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -106,12 +106,10 @@ A system bug check occurs if the driver supplies an invalid object handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfpdo.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

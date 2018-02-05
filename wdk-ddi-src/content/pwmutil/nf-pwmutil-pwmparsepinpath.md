@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 854A2B6F-A841-4AE4-9E54-68EF048C9504
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PwmParsePinPath, PwmParsePinPath function [Kernel-Mode Driver Architecture], pwmutil/PwmParsePinPath, kernel.pwmparsepinpath
+ms.keywords : PwmParsePinPath function [Kernel-Mode Driver Architecture], pwmutil/PwmParsePinPath, kernel.pwmparsepinpath, PwmParsePinPath
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT
+req.typenames : "*PPTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT"
 req.product : Windows 10 or later.
 ---
 
@@ -115,11 +115,10 @@ The pin path must be a Unicode character string that ends in the pin number as f
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.19 |
 | **Minimum UMDF version** | 2.19 |
 | **Header** | pwmutil.h (include Pwm.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode) |

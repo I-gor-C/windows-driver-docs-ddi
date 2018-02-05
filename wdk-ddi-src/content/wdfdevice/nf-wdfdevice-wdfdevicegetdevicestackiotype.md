@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : E697F53C-2642-4E3F-AA8C-D0802B39D187
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType method, wdf.wdfdevicegetdevicestackiotype, PFN_WDFDEVICEGETDEVICESTACKIOTYPE, wdfdevice/WdfDeviceGetDeviceStackIoType
+ms.keywords : PFN_WDFDEVICEGETDEVICESTACKIOTYPE, wdf.wdfdevicegetdevicestackiotype, WdfDeviceGetDeviceStackIoType, wdfdevice/WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,14 +83,13 @@ For more information about how the framework chooses a buffer access method, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll; TBD |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

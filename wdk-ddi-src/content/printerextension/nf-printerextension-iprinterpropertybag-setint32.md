@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 9E6B55C3-C177-4C07-9AB5-7C743CE47016
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : IPrinterPropertyBag, SetInt32 method [Print Devices], SetInt32, IPrinterPropertyBag::SetInt32, IPrinterPropertyBag interface [Print Devices], SetInt32 method, print.iprinterpropertybag_setint32, printerextension/IPrinterPropertyBag::SetInt32, SetInt32 method [Print Devices], IPrinterPropertyBag interface
+ms.keywords : IPrinterPropertyBag interface [Print Devices], SetInt32 method, IPrinterPropertyBag::SetInt32, printerextension/IPrinterPropertyBag::SetInt32, IPrinterPropertyBag, SetInt32 method [Print Devices], print.iprinterpropertybag_setint32, SetInt32, SetInt32 method [Print Devices], IPrinterPropertyBag interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -80,14 +80,9 @@ A call to set a property on a queue property bag will fail with ERROR_ACCESS_DEN
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h (include Printerextension.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 

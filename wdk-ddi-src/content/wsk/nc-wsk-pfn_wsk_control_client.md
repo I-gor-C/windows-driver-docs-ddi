@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
+req.typenames : WNODE_HEADER, *PWNODE_HEADER
 req.product : Windows 10 or later.
 ---
 
@@ -70,8 +70,8 @@ A pointer to a
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <mshelp:link keywords="netvista.wskcaptureprovidernpi" tabindex="0"><b>
-     WskCaptureProviderNPI</b></mshelp:link> function.
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
+     WskCaptureProviderNPI</a> function.
 
 `ControlCode`
 
@@ -80,16 +80,6 @@ The control operation that is being performed. A WSK application can specify one
      
 
 
-
-
-#### WSK_TRANSPORT_LIST_QUERY
-
-Retrieve a list of available network transports.
-
-
-#### WSK_TRANSPORT_LIST_CHANGE
-
-Receive notification of a change to the list of available network transports.
 
 
 #### WSK_CACHE_SD
@@ -107,16 +97,26 @@ Release a cached copy of a security descriptor.
 Enable specified event callback functions automatically on all sockets.
 
 
+#### WSK_TDI_BEHAVIOR
+
+Control whether the WSK subsystem will divert network I/O to 
+       <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transports.
+
+
 #### WSK_TDI_DEVICENAME_MAPPING
 
 Map combinations of address family, socket type, and protocol to device names of 
        <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transports.
 
 
-#### WSK_TDI_BEHAVIOR
+#### WSK_TRANSPORT_LIST_CHANGE
 
-Control whether the WSK subsystem will divert network I/O to 
-       <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transports.
+Receive notification of a change to the list of available network transports.
+
+
+#### WSK_TRANSPORT_LIST_QUERY
+
+Retrieve a list of available network transports.
 
 `InputSize`
 
@@ -144,21 +144,42 @@ A caller-allocated buffer that receives any output data that is returned by the 
 
 `*OutputSizeReturned`
 
+A pointer to a ULONG-typed variable that receives the number of bytes of data that is returned in
+     the buffer that is pointed to by the 
+     <i>OutputBuffer</i> parameter. A WSK application should set this pointer to <b>NULL</b> except when all of the
+     following are true:
+     
+<ul>
+<li>
+The 
+       <i>Irp</i> parameter is <b>NULL</b>.
 
+</li>
+<li>
+The operation that is being performed returns output data in the buffer that is pointed to by the 
+       <i>OutputBuffer</i> parameter.
+
+</li>
+<li>
+The number of bytes of output data that is returned by the operation that is being performed is
+       unknown.
+
+</li>
+</ul>
 
 `Irp`
 
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the control operation
      asynchronously. For more information about using IRPs with WSK functions, see 
-     <mshelp:link keywords="netvista.using_irps_with_winsock_kernel_functions" tabindex="0">Using IRPs with Winsock
-     Kernel Functions</mshelp:link>.
+     <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
+     Kernel Functions</a>.
      
 
 This parameter is required, is optional, or must be <b>NULL</b>, depending on the particular client control
      operation that is being performed. For more information about the requirements for this parameter for
      each of the supported client control operations, see 
-     <mshelp:link keywords="netvista.wsk_client_control_operations" tabindex="0">WSK Client Control
-     Operations</mshelp:link>.
+     <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff571157">WSK Client Control
+     Operations</a>.
 
 
 ## Return Value
@@ -226,8 +247,8 @@ An error occurred. The IRP will be completed with failure status.
 
 For more information about how the input and output buffers are used for each client control
     operation, see 
-    <mshelp:link keywords="netvista.wsk_client_control_operations" tabindex="0">WSK Client Control
-    Operations</mshelp:link>.
+    <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff571157">WSK Client Control
+    Operations</a>.
 
 If the 
     <b>WskControlClient</b> function returns STATUS_PENDING, any buffers that are pointed to by the 
@@ -239,35 +260,31 @@ If the
     stack, it cannot return from the function that calls the 
     <b>WskControlClient</b> function until after the IRP is completed.
 <div class="alert"><b>Note</b>  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use 
-    <mshelp:link keywords="netvista.windows_filtering_platform_callout_drivers" tabindex="0">Windows Filtering
-    Platform</mshelp:link> or 
+    <a href="https://msdn.microsoft.com/b9d88e59-3c4b-4804-8dd9-02c275927a1e">Windows Filtering
+    Platform</a> or 
     <a href="https://msdn.microsoft.com/90264a3d-f002-4205-8e15-9060644117a3">Winsock Kernel</a> instead.</div><div> </div>
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Universal |
 | **Header** | wsk.h (include Wsk.h) |
-| **Library** |  |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_transport.md">WSK_TRANSPORT</a>
-
-<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
-
 <a href="..\wsk\ns-wsk-_wsk_provider_npi.md">WSK_PROVIDER_NPI</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff571157">WSK Client Control Operations</a>
 
 <a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
+<a href="..\wsk\ns-wsk-_wsk_transport.md">WSK_TRANSPORT</a>
+
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 
  
 

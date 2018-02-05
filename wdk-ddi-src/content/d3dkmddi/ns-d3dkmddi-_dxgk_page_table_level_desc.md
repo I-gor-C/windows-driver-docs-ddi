@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 45BC190C-8985-4F8A-AC84-4ACBBCE9EB67
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PAGE_TABLE_LEVEL_DESC, d3dkmddi/DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC structure [Display Devices], _DXGK_PAGE_TABLE_LEVEL_DESC, display.dxgk_page_table_level_desc
+ms.keywords : display.dxgk_page_table_level_desc, d3dkmddi/DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC, _DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -78,7 +78,5 @@ A zero-based memory segment identifier for the paging process. When the segment 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

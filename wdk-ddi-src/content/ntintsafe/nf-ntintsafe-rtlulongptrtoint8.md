@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D2A77B0A-9307-4090-AE3D-049E5C414D31
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.rtlulongptrtoint8, ntintsafe/RtlULongPtrToInt8, RtlULongPtrToInt8, RtlULongPtrToInt8 function [Kernel-Mode Driver Architecture]
+ms.keywords : RtlULongPtrToInt8, RtlULongPtrToInt8 function [Kernel-Mode Driver Architecture], ntintsafe/RtlULongPtrToInt8, kernel.rtlulongptrtoint8
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,6 @@ This is one of a set of inline functions designed to provide type conversions an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

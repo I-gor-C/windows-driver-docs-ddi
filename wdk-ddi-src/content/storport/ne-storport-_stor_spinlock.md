@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 73e5e994-4133-4651-bb94-1d21386be1cd
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : STOR_SPINLOCK enumeration [Storage Devices], STOR_SPINLOCK, structs-general_53d45f74-68b2-4839-81c1-c93a2773f0d8.xml, InterruptLock, _STOR_SPINLOCK, storport/InterruptLock, storport/StartIoLock, storage.stor_spinlock, DpcLock, StartIoLock, storport/STOR_SPINLOCK, storport/DpcLock
+ms.keywords : STOR_SPINLOCK, storport/STOR_SPINLOCK, structs-general_53d45f74-68b2-4839-81c1-c93a2773f0d8.xml, StartIoLock, InterruptLock, _STOR_SPINLOCK, STOR_SPINLOCK enumeration [Storage Devices], DpcLock, storage.stor_spinlock, storport/InterruptLock, storport/StartIoLock, storport/DpcLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -75,9 +75,6 @@ typedef enum _STOR_SPINLOCK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | storport.h (include Storport.h) |
 
 ## See Also

@@ -72,6 +72,4 @@ All class drivers must send  this IOCTL request before the device attempts to co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h (include Usbfnioctl.h) |
-| **IRQL** |  |

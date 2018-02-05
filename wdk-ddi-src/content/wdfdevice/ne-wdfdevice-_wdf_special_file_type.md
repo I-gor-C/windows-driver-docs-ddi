@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3879570f-e083-4eaf-aa5b-9b78d8f826c1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_66afb20c-b1d5-480a-b4bb-48b6e092fe5e.xml, wdfdevice/WdfSpecialFileHibernation, *PWDF_SPECIAL_FILE_TYPE, WdfSpecialFileUndefined, WdfSpecialFileMax, WdfSpecialFileHibernation, wdfdevice/WdfSpecialFileDump, wdfdevice/WdfSpecialFileBoot, wdfdevice/WdfSpecialFileMax, WDF_SPECIAL_FILE_TYPE enumeration, wdfdevice/WDF_SPECIAL_FILE_TYPE, PWDF_SPECIAL_FILE_TYPE enumeration pointer, WDF_SPECIAL_FILE_TYPE, PWDF_SPECIAL_FILE_TYPE, wdfdevice/PWDF_SPECIAL_FILE_TYPE, wdfdevice/WdfSpecialFileUndefined, wdfdevice/WdfSpecialFilePaging, WdfSpecialFileBoot, WdfSpecialFileDump, wdf.wdf_special_file_type, _WDF_SPECIAL_FILE_TYPE, WdfSpecialFilePaging, kmdf.wdf_special_file_type
+ms.keywords : WDF_SPECIAL_FILE_TYPE enumeration, wdfdevice/PWDF_SPECIAL_FILE_TYPE, wdfdevice/WDF_SPECIAL_FILE_TYPE, wdfdevice/WdfSpecialFileMax, DFDeviceObjectGeneralRef_66afb20c-b1d5-480a-b4bb-48b6e092fe5e.xml, wdfdevice/WdfSpecialFileUndefined, _WDF_SPECIAL_FILE_TYPE, WDF_SPECIAL_FILE_TYPE, WdfSpecialFileMax, WdfSpecialFileDump, PWDF_SPECIAL_FILE_TYPE, wdfdevice/WdfSpecialFileDump, wdf.wdf_special_file_type, wdfdevice/WdfSpecialFileHibernation, WdfSpecialFileUndefined, wdfdevice/WdfSpecialFilePaging, PWDF_SPECIAL_FILE_TYPE enumeration pointer, kmdf.wdf_special_file_type, WdfSpecialFileBoot, wdfdevice/WdfSpecialFileBoot, WdfSpecialFilePaging, WdfSpecialFileHibernation, *PWDF_SPECIAL_FILE_TYPE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_SPECIAL_FILE_TYPE, WDF_SPECIAL_FILE_TYPE"
+req.typenames : WDF_SPECIAL_FILE_TYPE, *PWDF_SPECIAL_FILE_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -98,9 +98,7 @@ For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
 ## See Also

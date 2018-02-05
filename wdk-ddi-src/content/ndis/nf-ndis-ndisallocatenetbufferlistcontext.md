@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3bbad723-86bf-4206-9e51-52a66efaec20
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisAllocateNetBufferListContext function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateNetBufferListContext, netvista.ndisallocatenetbufferlistcontext, ndis_netbuf_functions_ref_f421f804-e12d-43ba-81ed-d5322712faf5.xml, NdisAllocateNetBufferListContext
+ms.keywords : NdisAllocateNetBufferListContext, NdisAllocateNetBufferListContext function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_f421f804-e12d-43ba-81ed-d5322712faf5.xml, ndis/NdisAllocateNetBufferListContext, netvista.ndisallocatenetbufferlistcontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -139,20 +139,18 @@ If there is enough unused context space available in the
     <b>NdisAllocateNetBufferListContext</b> does not have to allocate memory.
 
 Call the 
-    <mshelp:link keywords="netvista.ndisfreenetbufferlistcontext" tabindex="0"><b>
-    NdisFreeNetBufferListContext</b></mshelp:link> function to release the context space in the NET_BUFFER_LIST_CONTEXT
+    <a href="..\ndis\nf-ndis-ndisfreenetbufferlistcontext.md">
+    NdisFreeNetBufferListContext</a> function to release the context space in the NET_BUFFER_LIST_CONTEXT
     structure that was allocated with 
     <b>NdisAllocateNetBufferListContext</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : BD9B13A7-5F5F-437a-BEB7-56DE6D03A29B
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisDprReleaseReadWriteLock, NdisDprReleaseReadWriteLock function [Network Drivers Starting with Windows Vista], NdisDprReleaseReadWriteLock, netvista.ndisdprreleasereadwritelock
+ms.keywords : ndis/NdisDprReleaseReadWriteLock, netvista.ndisdprreleasereadwritelock, NdisDprReleaseReadWriteLock function [Network Drivers Starting with Windows Vista], NdisDprReleaseReadWriteLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,7 +60,7 @@ VOID NdisDprReleaseReadWriteLock(
 
 A pointer to an <a href="..\ndis\ns-ndis-_ndis_rw_lock.md">NDIS_RW_LOCK</a> variable for the acquired lock to be released.
 
-``
+`Arg1`
 
 
 
@@ -86,22 +86,19 @@ A driver must call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and 6.1. Supported for NDIS 6.0 and 6.1. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a>
 
 <a href="..\ndis\nf-ndis-ndisinitializereadwritelock.md">NdisInitializeReadWriteLock</a>
 
 <a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>
-
-<a href="..\ndis\nf-ndis-ndisacquirereadwritelock.md">NdisDprAcquireReadWriteLock</a>
 
  
 

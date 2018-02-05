@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1f406818-b81c-4dc8-bfc7-0c977495b285
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_RegisterUiccToolkitService, rilapi/RIL_RegisterUiccToolkitService, netvista.ril_registeruicctoolkitservice, RIL_RegisterUiccToolkitService method [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ril_registeruicctoolkitservice, RIL_RegisterUiccToolkitService method [Network Drivers Starting with Windows Vista], rilapi/RIL_RegisterUiccToolkitService, RIL_RegisterUiccToolkitService
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,11 +76,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

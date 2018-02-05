@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 562EA523-A74D-4D46-8C01-12C745106F86
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PPEP_PPM_QUERY_PERF_CAPABILITIES, kernel.pep_ppm_query_perf_capabilities, pepfx/PEP_PPM_QUERY_PERF_CAPABILITIES, PEP_PPM_QUERY_PERF_CAPABILITIES, PEP_PPM_QUERY_PERF_CAPABILITIES structure [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_PERF_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_PERF_CAPABILITIES, *PPEP_PPM_QUERY_PERF_CAPABILITIES, pepfx/PPEP_PPM_QUERY_PERF_CAPABILITIES
+ms.keywords : PEP_PPM_QUERY_PERF_CAPABILITIES, PPEP_PPM_QUERY_PERF_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_QUERY_PERF_CAPABILITIES, *PPEP_PPM_QUERY_PERF_CAPABILITIES, _PEP_PPM_QUERY_PERF_CAPABILITIES, kernel.pep_ppm_query_perf_capabilities, PEP_PPM_QUERY_PERF_CAPABILITIES structure [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_PERF_CAPABILITIES, pepfx/PEP_PPM_QUERY_PERF_CAPABILITIES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -88,9 +88,7 @@ Processor performance levels are specified in platform-specific units. For examp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also

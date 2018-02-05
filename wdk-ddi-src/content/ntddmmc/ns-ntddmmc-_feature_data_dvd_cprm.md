@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 060c1e9a-14d3-4f9b-b898-d8042f5efd7e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddmmc/FEATURE_DATA_DVD_CPRM, ntddmmc/PFEATURE_DATA_DVD_CPRM, *PFEATURE_DATA_DVD_CPRM, FEATURE_DATA_DVD_CPRM, _FEATURE_DATA_DVD_CPRM, FEATURE_DATA_DVD_CPRM structure [Storage Devices], structs-CD-ROM_376d4f99-5d92-48ad-b126-d1f6858e7fac.xml, PFEATURE_DATA_DVD_CPRM structure pointer [Storage Devices], PFEATURE_DATA_DVD_CPRM, storage.feature_data_dvd_cprm
+ms.keywords : FEATURE_DATA_DVD_CPRM structure [Storage Devices], ntddmmc/PFEATURE_DATA_DVD_CPRM, FEATURE_DATA_DVD_CPRM, *PFEATURE_DATA_DVD_CPRM, storage.feature_data_dvd_cprm, ntddmmc/FEATURE_DATA_DVD_CPRM, PFEATURE_DATA_DVD_CPRM, structs-CD-ROM_376d4f99-5d92-48ad-b126-d1f6858e7fac.xml, _FEATURE_DATA_DVD_CPRM, PFEATURE_DATA_DVD_CPRM structure pointer [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PFEATURE_DATA_DVD_CPRM, FEATURE_DATA_DVD_CPRM"
+req.typenames : FEATURE_DATA_DVD_CPRM, *PFEATURE_DATA_DVD_CPRM
 ---
 
 # _FEATURE_DATA_DVD_CPRM structure
@@ -71,9 +71,6 @@ This structure holds data for the feature named "DVD CPRM" by the <i>SCSI Multim
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

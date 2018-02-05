@@ -75,9 +75,7 @@ If the request succeeds, the HID class driver sets the <b>Status</b> field of <b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | hidclass.h (include Hidclass.h) |
-| **IRQL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 558b6fba-a1d8-4255-bca6-e2d83afe9e46
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PLOCK_STATE_EX structure pointer [Network Drivers Starting with Windows Vista], *PLOCK_STATE_EX, ndis/PLOCK_STATE_EX, LOCK_STATE_EX structure [Network Drivers Starting with Windows Vista], netvista.lock_state_ex, ndis_processor_group_ref_0b6d70d3-0671-49df-977a-c435eb599667.xml, ndis/LOCK_STATE_EX, LOCK_STATE_EX, _LOCK_STATE_EX, PLOCK_STATE_EX
+ms.keywords : netvista.lock_state_ex, ndis/PLOCK_STATE_EX, ndis/LOCK_STATE_EX, LOCK_STATE_EX structure [Network Drivers Starting with Windows Vista], *PLOCK_STATE_EX, PLOCK_STATE_EX structure pointer [Network Drivers Starting with Windows Vista], LOCK_STATE_EX, _LOCK_STATE_EX, ndis_processor_group_ref_0b6d70d3-0671-49df-977a-c435eb599667.xml, PLOCK_STATE_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -56,9 +56,7 @@ typedef struct _LOCK_STATE_EX {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
 ## See Also

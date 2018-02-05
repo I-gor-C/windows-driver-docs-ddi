@@ -91,9 +91,6 @@ Size in bytes for the log area.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wpprecorder.h |
 
 ## See Also

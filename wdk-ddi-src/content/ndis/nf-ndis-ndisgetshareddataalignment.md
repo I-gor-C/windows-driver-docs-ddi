@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 561315b4-8866-4f48-8138-12b1a38f743e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisGetSharedDataAlignment function [Network Drivers Starting with Windows Vista], netvista.ndisgetshareddataalignment, NdisGetSharedDataAlignment, miniport_memory_shared_ref_1572f536-6b6a-4ea9-9150-78399870538c.xml, ndis/NdisGetSharedDataAlignment
+ms.keywords : ndis/NdisGetSharedDataAlignment, NdisGetSharedDataAlignment, netvista.ndisgetshareddataalignment, miniport_memory_shared_ref_1572f536-6b6a-4ea9-9150-78399870538c.xml, NdisGetSharedDataAlignment function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,9 @@ System support for
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetSharedDataAlignment   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetSharedDataAlignment   (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetSharedDataAlignment   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetSharedDataAlignment   (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |

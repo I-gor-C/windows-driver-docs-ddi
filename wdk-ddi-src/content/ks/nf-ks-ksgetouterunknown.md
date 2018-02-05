@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e86e2c96-9ae5-4f6d-9c76-1c2816f318e7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksgetouterunknown, avfunc_5b660e76-03af-4fba-92f9-f11eeeaa3da0.xml, ks/KsGetOuterUnknown, KsGetOuterUnknown, KsGetOuterUnknown function [Streaming Media Devices]
+ms.keywords : ks/KsGetOuterUnknown, KsGetOuterUnknown, avfunc_5b660e76-03af-4fba-92f9-f11eeeaa3da0.xml, KsGetOuterUnknown function [Streaming Media Devices], stream.ksgetouterunknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,28 +70,25 @@ Minidrivers using this function must include <i>kcom.h</i> and use a C++ compile
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
-
-<a href="..\ks\nf-ks-ksfilterfactorygetouterunknown.md">KsFilterFactoryGetOuterUnknown</a>
-
 <a href="..\ks\nf-ks-ksdevicegetouterunknown.md">KsDeviceGetOuterUnknown</a>
 
-<a href="..\ks\nn-ks-ikscontrol.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
+
+<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
 
 <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 
-<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfilterfactorygetouterunknown.md">KsFilterFactoryGetOuterUnknown</a>
+
+<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 
  
 

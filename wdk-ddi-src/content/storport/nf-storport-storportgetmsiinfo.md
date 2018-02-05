@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 3c98c04c-246a-42a0-bb40-f7771f7ae968
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortGetMSIInfo, storage.storportgetmsiinfo, StorPortGetMSIInfo routine [Storage Devices], storprt_32654460-fd47-4dc9-bd33-2080b881502f.xml, storport/StorPortGetMSIInfo
+ms.keywords : StorPortGetMSIInfo routine [Storage Devices], storage.storportgetmsiinfo, storport/StorPortGetMSIInfo, storprt_32654460-fd47-4dc9-bd33-2080b881502f.xml, StorPortGetMSIInfo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -134,14 +134,11 @@ The HBA does not support MSI.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available starting with Windows Vista. This routine is available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

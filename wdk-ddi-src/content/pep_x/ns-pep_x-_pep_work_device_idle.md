@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 054D45D8-EDAA-41F2-9884-4301F08B67CB
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "*PPEP_WORK_DEVICE_IDLE, pep_x/PPEP_WORK_DEVICE_IDLE, _PEP_WORK_DEVICE_IDLE, PEP_WORK_DEVICE_IDLE structure [Kernel-Mode Driver Architecture], PEP_WORK_DEVICE_IDLE, PPEP_WORK_DEVICE_IDLE structure pointer [Kernel-Mode Driver Architecture], pep_x/PEP_WORK_DEVICE_IDLE, kernel.pep_work_device_idle, PPEP_WORK_DEVICE_IDLE"
+ms.keywords : PEP_WORK_DEVICE_IDLE, PPEP_WORK_DEVICE_IDLE, PEP_WORK_DEVICE_IDLE structure [Kernel-Mode Driver Architecture], pep_x/PPEP_WORK_DEVICE_IDLE, _PEP_WORK_DEVICE_IDLE, PPEP_WORK_DEVICE_IDLE structure pointer [Kernel-Mode Driver Architecture], pep_x/PEP_WORK_DEVICE_IDLE, *PPEP_WORK_DEVICE_IDLE, kernel.pep_work_device_idle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PEP_WORK_DEVICE_IDLE, *PPEP_WORK_DEVICE_IDLE
+req.typenames : "*PPEP_WORK_DEVICE_IDLE, PEP_WORK_DEVICE_IDLE"
 ---
 
 # _PEP_WORK_DEVICE_IDLE structure
@@ -66,18 +66,16 @@ The <b>DeviceIdle</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_informa
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxsetdeviceidletimeout.md">PoFxSetDeviceIdleTimeout</a>
-
 <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
+<a href="..\wdm\nf-wdm-pofxsetdeviceidletimeout.md">PoFxSetDeviceIdleTimeout</a>
 
  
 

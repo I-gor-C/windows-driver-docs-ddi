@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : fabd77b9-2a2e-4995-a99f-50b46806e312
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3d11ddi_devicefuncs, D3D11DDI_DEVICEFUNCS structure [Display Devices], UMDisplayDriver_Dx11param_Structs_f91ec9c6-5d1b-49ab-8a92-21028de8e10b.xml, D3D11DDI_DEVICEFUNCS, d3d10umddi/D3D11DDI_DEVICEFUNCS
+ms.keywords : D3D11DDI_DEVICEFUNCS structure [Display Devices], d3d10umddi/D3D11DDI_DEVICEFUNCS, UMDisplayDriver_Dx11param_Structs_f91ec9c6-5d1b-49ab-8a92-21028de8e10b.xml, display.d3d11ddi_devicefuncs, D3D11DDI_DEVICEFUNCS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -823,9 +823,7 @@ The <b>pfnResetPrimitiveID</b> and  <b>pfnSetVertexPipelineOutput</b> members (n
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDI_DEVICEFUNCS is supported beginning with the Windows 7 operating system. D3D11DDI_DEVICEFUNCS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e9faa47e-56f7-464b-ad6a-fbb543ca9d1d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILSUPSERVICEDATA, RILSUPSERVICEDATA, netvista.rilsupservicedata_2, *LPRILSUPSERVICEDATA, RILSUPSERVICEDATA structure [Network Drivers Starting with Windows Vista]
+ms.keywords : RILSUPSERVICEDATA structure [Network Drivers Starting with Windows Vista], netvista.rilsupservicedata_2, rilapitypes/RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA, RILSUPSERVICEDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,7 +100,4 @@ typedef struct _RILSUPSERVICEDATA {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : AC316591-CCF9-4040-B1A3-29AB2033B673
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl5 interface [Windows Debugging], GetBreakpointByGuid method, IDebugControl5::GetBreakpointByGuid, GetBreakpointByGuid method [Windows Debugging], dbgeng/IDebugControl5::GetBreakpointByGuid, IDebugControl5, GetBreakpointByGuid method [Windows Debugging], IDebugControl5 interface, debugger.idebugcontrol5_getbreakpointbyguid, GetBreakpointByGuid
+ms.keywords : debugger.idebugcontrol5_getbreakpointbyguid, dbgeng/IDebugControl5::GetBreakpointByGuid, GetBreakpointByGuid method [Windows Debugging], IDebugControl5 interface, GetBreakpointByGuid method [Windows Debugging], IDebugControl5, IDebugControl5 interface [Windows Debugging], GetBreakpointByGuid method, GetBreakpointByGuid, IDebugControl5::GetBreakpointByGuid
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -98,14 +98,9 @@ No breakpoint was found with the given GUID, or the breakpoint with the specifie
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

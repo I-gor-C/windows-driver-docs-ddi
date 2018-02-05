@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b7a9beaf-5eca-4fb0-af63-06c002297085
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k109_8bcffbc1-2930-416b-a192-b70c477d1910.xml, RtlSecureZeroMemory routine [Kernel-Mode Driver Architecture], RtlSecureZeroMemory, kernel.rtlsecurezeromemory, wdm/RtlSecureZeroMemory
+ms.keywords : wdm/RtlSecureZeroMemory, kernel.rtlsecurezeromemory, RtlSecureZeroMemory routine [Kernel-Mode Driver Architecture], k109_8bcffbc1-2930-416b-a192-b70c477d1910.xml, RtlSecureZeroMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -80,14 +80,11 @@ Callers of <b>RtlSecureZeroMemory</b> can be running at any IRQL if the <i>ptr</
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. (Because the routine is declared inline, the body of the routine can be included in earlier versions of the operating system.) Available in Windows Server 2003 and later versions of Windows. (Because the routine is declared inline, the body of the routine can be included in earlier versions of the operating system.) |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
-| **DDI compliance rules** |  |
 
 ## See Also
 

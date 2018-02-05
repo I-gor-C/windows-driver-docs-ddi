@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 27F0C336-3C8C-49B5-A7DB-F0640526CAE8
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlEnumerateGenericTableWithoutSplayingAvl, RtlEnumerateGenericTableWithoutSplayingAvl routine [Installable File System Drivers], ntddk/RtlEnumerateGenericTableWithoutSplayingAvl, ifsk.rtlenumerategenerictablewithoutsplayingavl
+ms.keywords : RtlEnumerateGenericTableWithoutSplayingAvl, ntddk/RtlEnumerateGenericTableWithoutSplayingAvl, RtlEnumerateGenericTableWithoutSplayingAvl routine [Installable File System Drivers], ifsk.rtlenumerategenerictablewithoutsplayingavl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -102,24 +102,22 @@ Callers of <b>RtlEnumerateGenericTableWithoutSplayingAvl</b> must be running at 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | See Remarks section. |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlenumerategenerictableavl.md">RtlEnumerateGenericTableAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
 
 <a href="..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md">RtlInitializeGenericTableAvl</a>
 
-<a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictableavl.md">RtlEnumerateGenericTableAvl</a>
 
-<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlisgenerictableemptyavl.md">RtlIsGenericTableEmptyAvl</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : e15344a5-32ed-43a8-93c2-d5201617d595
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : gdifnc_867f18b8-1764-41a4-a7c1-e43fa72a3d27.xml, winppi/GdiEndPageEMF, GdiEndPageEMF function [Print Devices], print.gdiendpageemf, GdiEndPageEMF
+ms.keywords : GdiEndPageEMF, print.gdiendpageemf, GdiEndPageEMF function [Print Devices], gdifnc_867f18b8-1764-41a4-a7c1-e43fa72a3d27.xml, winppi/GdiEndPageEMF
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -99,20 +99,16 @@ For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab4
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | winppi.h (include Winppi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Gdi32.Lib |
+| **DLL** | Gdi32.dll |
 
 ## See Also
 
-<a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a>
-
 <a href="..\winppi\nf-winppi-gdistartpageemf.md">GdiStartPageEMF</a>
+
+<a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : eee1070f-c821-42bd-a0c9-d429fac6305b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PCM_INT13_DRIVE_PARAMETER, _CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER, wdm/PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER, kernel.cm_int13_drive_parameter, kstruct_a_4d629962-92d1-446d-890b-196893ea37a0.xml, CM_INT13_DRIVE_PARAMETER structure [Kernel-Mode Driver Architecture], PCM_INT13_DRIVE_PARAMETER structure pointer [Kernel-Mode Driver Architecture], wdm/CM_INT13_DRIVE_PARAMETER
+ms.keywords : wdm/CM_INT13_DRIVE_PARAMETER, PCM_INT13_DRIVE_PARAMETER structure pointer [Kernel-Mode Driver Architecture], kstruct_a_4d629962-92d1-446d-890b-196893ea37a0.xml, _CM_INT13_DRIVE_PARAMETER, kernel.cm_int13_drive_parameter, CM_INT13_DRIVE_PARAMETER structure [Kernel-Mode Driver Architecture], PCM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER, wdm/PCM_INT13_DRIVE_PARAMETER
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER
+req.typenames : "*PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER"
 req.product : Windows 10 or later.
 ---
 
@@ -80,16 +80,13 @@ The number of sectors per track.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549616">IoReportResourceUsage</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549453">IoQueryDeviceDescription</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : b8ccd6f0-d1bf-430f-bffb-dd161793096f
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10_2DDI_ADAPTERFUNCS, D3D10_2DDI_ADAPTERFUNCS structure [Display Devices], UMDisplayDriver_Dx11param_Structs_6d47bf5d-d3ef-4187-83a0-95d5c3c62413.xml, display.d3d10_2ddi_adapterfuncs, D3D10_2DDI_ADAPTERFUNCS
+ms.keywords : D3D10_2DDI_ADAPTERFUNCS structure [Display Devices], d3d10umddi/D3D10_2DDI_ADAPTERFUNCS, D3D10_2DDI_ADAPTERFUNCS, display.d3d10_2ddi_adapterfuncs, UMDisplayDriver_Dx11param_Structs_6d47bf5d-d3ef-4187-83a0-95d5c3c62413.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,24 +79,22 @@ A pointer to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_get
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D10_2DDI_ADAPTERFUNCS is supported beginning with the Windows 7 operating system. D3D10_2DDI_ADAPTERFUNCS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_closeadapter.md">CloseAdapter(D3D10)</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getsupportedversions.md">GetSupportedVersions</a>
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedevicesize.md">CalcPrivateDeviceSize</a>
-
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_openadapter.md">D3D10DDIARG_OPENADAPTER</a>
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_closeadapter.md">CloseAdapter(D3D10)</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_calcprivatedevicesize.md">CalcPrivateDeviceSize</a>
+
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10_2ddi_getcaps.md">GetCaps(D3D10_2)</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_openadapter.md">OpenAdapter10</a>
 

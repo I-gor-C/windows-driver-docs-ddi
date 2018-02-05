@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : f83c6834-0438-42b8-ad9f-a1d82fcf361c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : FwpsvSwitchEventsUnsubscribe0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsvSwitchEventsUnsubscribe0, FwpsvSwitchEventsUnsubscribe0, netvista.fwpsvswitcheventsunsubscribe0
+ms.keywords : FwpsvSwitchEventsUnsubscribe0 function [Network Drivers Starting with Windows Vista], netvista.fwpsvswitcheventsunsubscribe0, fwpsk/FwpsvSwitchEventsUnsubscribe0, FwpsvSwitchEventsUnsubscribe0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,11 @@ A callout driver calls the <b>FwpsvSwitchEventsUnsubscribe0</b> function to unsu
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | Fwpkclnt.lib |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

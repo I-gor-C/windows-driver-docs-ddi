@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 18ae8ec2-a9e9-40e2-8b11-93fd163a801d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS structure [Display Devices], D3DDDICB_RENDERFLAGS, d3dumddi/D3DDDICB_RENDERFLAGS, display.d3dddicb_renderflags, D3D_other_Structs_559cfa58-5c9b-470e-aa4b-6c145045ed82.xml"
+ms.keywords : "_D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS structure [Display Devices], d3dumddi/D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS, display.d3dddicb_renderflags, D3D_other_Structs_559cfa58-5c9b-470e-aa4b-6c145045ed82.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _D3DDDICB_RENDERFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

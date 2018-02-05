@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4b3a266f-4d60-4d39-81fb-ea2b4aa12a8d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDICB_LOCKFLAGS, _D3DDDICB_LOCKFLAGS, D3DDDICB_LOCKFLAGS, D3DDDICB_LOCKFLAGS structure [Display Devices], display.d3dddicb_lockflags, D3D_other_Structs_6238800f-60d9-472d-aa18-10343abbcee7.xml
+ms.keywords : display.d3dddicb_lockflags, D3DDDICB_LOCKFLAGS structure [Display Devices], _D3DDDICB_LOCKFLAGS, D3D_other_Structs_6238800f-60d9-472d-aa18-10343abbcee7.xml, D3DDDICB_LOCKFLAGS, d3dukmdt/D3DDDICB_LOCKFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -111,18 +111,16 @@ An allocation that is locked with a swizzled range must be unlocked before it ca
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dukmdt.h (include D3dukmdt.h) |
 
 ## See Also
 
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a>
 
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 39BF7EBF-DD13-41F0-9F54-78E5D82CAB4F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARG_UPDATEHWCONTEXTSTATE structure [Display Devices], d3dkmddi/DXGKARG_UPDATEHWCONTEXTSTATE, _DXGKARG_UPDATEHWCONTEXTSTATE, DXGKARG_UPDATEHWCONTEXTSTATE, display.dxgkarg_updatehwcontextstate
+ms.keywords : d3dkmddi/DXGKARG_UPDATEHWCONTEXTSTATE, _DXGKARG_UPDATEHWCONTEXTSTATE, display.dxgkarg_updatehwcontextstate, DXGKARG_UPDATEHWCONTEXTSTATE, DXGKARG_UPDATEHWCONTEXTSTATE structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,7 +74,4 @@ Execution priority of this context relative to other running contexts on this no
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3dkmddi.h |

@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 658ea6a4-309d-4f78-9a02-f93e7d945325
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "_FEATURE_DATA_FORMATTABLE, FEATURE_DATA_FORMATTABLE, storage.feature_data_formattable, FEATURE_DATA_FORMATTABLE structure [Storage Devices], *PFEATURE_DATA_FORMATTABLE, ntddmmc/FEATURE_DATA_FORMATTABLE, ntddmmc/PFEATURE_DATA_FORMATTABLE, PFEATURE_DATA_FORMATTABLE structure pointer [Storage Devices], structs-CD-ROM_27503157-de29-4c39-bb7a-b17528984f7f.xml, PFEATURE_DATA_FORMATTABLE"
+ms.keywords : PFEATURE_DATA_FORMATTABLE structure pointer [Storage Devices], PFEATURE_DATA_FORMATTABLE, FEATURE_DATA_FORMATTABLE, structs-CD-ROM_27503157-de29-4c39-bb7a-b17528984f7f.xml, ntddmmc/FEATURE_DATA_FORMATTABLE, ntddmmc/PFEATURE_DATA_FORMATTABLE, storage.feature_data_formattable, FEATURE_DATA_FORMATTABLE structure [Storage Devices], _FEATURE_DATA_FORMATTABLE, *PFEATURE_DATA_FORMATTABLE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -108,9 +108,6 @@ When queried, devices supporting this feature must return the information indica
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddmmc.h (include Ntddcdrm.h) |
 
 ## See Also

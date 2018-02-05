@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : D778E6B6-B245-41D5-B25B-1CF183146BA9
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcmConnectorTypeCAttach, buses.ucmconnectortypecattach, UcmConnectorTypeCAttach method [Buses], ucmmanager/UcmConnectorTypeCAttach
+ms.keywords : ucmmanager/UcmConnectorTypeCAttach, buses.ucmconnectortypecattach, UcmConnectorTypeCAttach, UcmConnectorTypeCAttach method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,22 +77,21 @@ Typically, every  <b>UcmConnectorTypeCAttach</b> call has a subsequent <a href="
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmmanager.h (include Ucmcx.h) |
-| **Library** |  |
+| **Library** | UcmCxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_attach_params_init.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 
 <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_attach_params.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a>
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucm_connector_typec_attach_params_init.md">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>
 
  
 

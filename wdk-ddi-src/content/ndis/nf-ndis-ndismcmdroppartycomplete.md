@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : ba0e11d9-3bb1-412c-9b33-9362d774adee
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisMCmDropPartyComplete, netvista.ndismcmdroppartycomplete, ndis/NdisMCmDropPartyComplete, NdisMCmDropPartyComplete macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_61bf04f0-c6cd-445f-8e4a-512884b96902.xml
+ms.keywords : condis_mcm_ref_61bf04f0-c6cd-445f-8e4a-512884b96902.xml, NdisMCmDropPartyComplete, netvista.ndismcmdroppartycomplete, ndis/NdisMCmDropPartyComplete, NdisMCmDropPartyComplete macro [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -77,8 +77,8 @@ An MCM driver must call
     <a href="..\ndis\nf-ndis-ndiscldropparty.md">NdisClDropParty</a>, can release the
     resources they allocated to maintain per-party state until the MCM driver's call to 
     <b>NdisMCmDropPartyComplete</b> causes a call to that client's 
-    <mshelp:link keywords="netvista.protocolcldroppartycomplete" tabindex="0"><i>
-    ProtocolClDropPartyComplete</i></mshelp:link> function.
+    <a href="..\ndis\nc-ndis-protocol_cl_drop_party_complete.md">
+    ProtocolClDropPartyComplete</a> function.
 
 If it passes NDIS_STATUS_SUCCESS for the 
     <i>Status</i>, the MCM driver must consider the 
@@ -95,12 +95,10 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDropPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDropPartyComplete (NDIS   5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDropPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDropPartyComplete (NDIS   5.1)) in Windows XP. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | ndis.h |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_MCM_Function |
 

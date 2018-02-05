@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : b4b57819-e2c9-4ac3-989e-c5e064f7487b
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeAreAllApcsDisabled, k105_91675ec9-bef3-4ef8-9403-14999e018745.xml, wdm/KeAreAllApcsDisabled, KeAreAllApcsDisabled routine [Kernel-Mode Driver Architecture], kernel.keareallapcsdisabled
+ms.keywords : k105_91675ec9-bef3-4ef8-9403-14999e018745.xml, KeAreAllApcsDisabled routine [Kernel-Mode Driver Architecture], wdm/KeAreAllApcsDisabled, kernel.keareallapcsdisabled, KeAreAllApcsDisabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,18 +64,17 @@ A thread inside a guarded region or running at IRQL &gt;= APC_LEVEL has all APCs
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 and later versions of Windows. Available in Windows Server 2003 and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs |
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-keareapcsdisabled.md">KeAreApcsDisabled</a>
+<a href="..\wdm\nf-wdm-keareapcsdisabled.md">KeAreApcsDisabled</a>
 
  
 

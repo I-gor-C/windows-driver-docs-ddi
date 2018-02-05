@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 9464a17a-fa09-46c5-a4a7-d5cbd58deebd
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KS_AMVP_MODE_SKIPEVEN, ksmedia/KS_AMVP_MODE_SKIPEVEN, ksmedia/KS_AMVP_MODE, KS_AMVP_MODE_BOBINTERLEAVED, ksmedia/KS_AMVP_MODE_SKIPODD, KS_AMVP_MODE, KS_AMVP_MODE_WEAVE, ksmedia/KS_AMVP_MODE_BOBINTERLEAVED, ksmedia/KS_AMVP_MODE_BOBNONINTERLEAVED, vidcapstruct_64634d5e-72a6-4300-9fa9-e1d6859f0813.xml, KS_AMVP_MODE_SKIPODD, KS_AMVP_MODE_BOBNONINTERLEAVED, KS_AMVP_MODE enumeration [Streaming Media Devices], ksmedia/KS_AMVP_MODE_WEAVE, stream.ks_amvp_mode
+ms.keywords : ksmedia/KS_AMVP_MODE_SKIPODD, KS_AMVP_MODE enumeration [Streaming Media Devices], ksmedia/KS_AMVP_MODE_BOBINTERLEAVED, KS_AMVP_MODE_WEAVE, KS_AMVP_MODE_BOBNONINTERLEAVED, ksmedia/KS_AMVP_MODE_BOBNONINTERLEAVED, KS_AMVP_MODE, KS_AMVP_MODE_BOBINTERLEAVED, stream.ks_amvp_mode, ksmedia/KS_AMVP_MODE_SKIPEVEN, vidcapstruct_64634d5e-72a6-4300-9fa9-e1d6859f0813.xml, ksmedia/KS_AMVP_MODE, KS_AMVP_MODE_SKIPEVEN, KS_AMVP_MODE_SKIPODD, ksmedia/KS_AMVP_MODE_WEAVE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

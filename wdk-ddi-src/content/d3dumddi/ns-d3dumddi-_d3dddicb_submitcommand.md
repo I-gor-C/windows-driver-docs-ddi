@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 53D4890A-D075-4DF7-97E6-A8E8A174866B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DDDICB_SUBMITCOMMAND, D3DDDICB_SUBMITCOMMAND structure [Display Devices], _D3DDDICB_SUBMITCOMMAND, d3dumddi/D3DDDICB_SUBMITCOMMAND, display.d3dddicb_submitcommand
+ms.keywords : d3dumddi/D3DDDICB_SUBMITCOMMAND, display.d3dddicb_submitcommand, D3DDDICB_SUBMITCOMMAND, _D3DDDICB_SUBMITCOMMAND, D3DDDICB_SUBMITCOMMAND structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -185,9 +185,7 @@ If the driver receives a call to <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_crea
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

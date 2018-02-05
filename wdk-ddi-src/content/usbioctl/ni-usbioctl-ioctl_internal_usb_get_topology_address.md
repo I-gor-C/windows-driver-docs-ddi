@@ -73,9 +73,8 @@ The hub or port driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS or 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows Vista and later operating systems. Windows Vista and later operating systems. |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |
 
 ## See Also
 

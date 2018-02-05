@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a98d7e74-8311-46bf-a0b9-a160f5675c3d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestforwardtoioqueue, wdfrequest/WdfRequestForwardToIoQueue, WdfRequestForwardToIoQueue, kmdf.wdfrequestforwardtoioqueue, WdfRequestForwardToIoQueue method, PFN_WDFREQUESTFORWARDTOIOQUEUE, DFRequestObjectRef_91c731d6-de15-4ae6-a0d0-ae449a5a47b6.xml
+ms.keywords : WdfRequestForwardToIoQueue method, DFRequestObjectRef_91c731d6-de15-4ae6-a0d0-ae449a5a47b6.xml, WdfRequestForwardToIoQueue, wdf.wdfrequestforwardtoioqueue, PFN_WDFREQUESTFORWARDTOIOQUEUE, wdfrequest/WdfRequestForwardToIoQueue, kmdf.wdfrequestforwardtoioqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -153,24 +153,23 @@ If the source queue's <a href="https://docs.microsoft.com/en-us/windows-hardware
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal |
 
 ## See Also
 
-<a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a>
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelable.md">WdfRequestMarkCancelable</a>
-
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestunmarkcancelable.md">WdfRequestUnmarkCancelable</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelableex.md">WdfRequestMarkCancelableEx</a>
+
+<a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a>
+
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestmarkcancelable.md">WdfRequestMarkCancelable</a>
 
 <a href="..\wdfrequest\nf-wdfrequest-wdfrequestrequeue.md">WdfRequestRequeue</a>
 

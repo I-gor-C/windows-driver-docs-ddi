@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : A727CDC1-A17A-4ABE-92AC-7CAEC11B78D1
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltCreateMailslotFile function [Installable File System Drivers], fltkernel/FltCreateMailslotFile, FltCreateMailslotFile, ifsk.fltcreatemailslotfile
+ms.keywords : ifsk.fltcreatemailslotfile, fltkernel/FltCreateMailslotFile, FltCreateMailslotFile function [Installable File System Drivers], FltCreateMailslotFile
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -416,26 +416,23 @@ To specify an extra create parameter (ECP) as part of a create operation, initia
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8. Available in Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include FltKernel.h) |
-| **Library** |  |
+| **Library** | Fltmgr.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
-<a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>
+<a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
 
-<a href="..\ntddk\ns-ntddk-_io_driver_create_context.md">IO_DRIVER_CREATE_CONTEXT</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
+
+<a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

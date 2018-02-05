@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 54d8fab2-bde3-4b8a-8542-075c5e30afbb
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : rxref_9d779281-7e95-45b7-a633-62a4280a6bea.xml, RxCompleteRequest_Real function [Installable File System Drivers], ifsk.rxcompleterequest_real, RxCompleteRequest_Real, rxprocs/RxCompleteRequest_Real
+ms.keywords : ifsk.rxcompleterequest_real, rxref_9d779281-7e95-45b7-a633-62a4280a6bea.xml, rxprocs/RxCompleteRequest_Real, RxCompleteRequest_Real, RxCompleteRequest_Real function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,32 +81,28 @@ If a <b>NULL</b> value is passed in for <i>Irp</i>, then <b>RxCompleteRequest_Re
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h, Rxcontx.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557382">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
-
-<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
 
 <a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
 
+<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
+
 <a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext_real.md">RxDereferenceAndDeleteRxContext_Real</a>
 
-<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
-
-<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
 
 <a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
+
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 
 <a href="..\rxcontx\nf-rxcontx-rxresumeblockedoperations_serially.md">RxResumeBlockedOperations_Serially</a>
 

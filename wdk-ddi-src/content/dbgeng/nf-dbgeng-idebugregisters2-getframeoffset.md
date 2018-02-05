@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 09473106-3ab8-43ee-a424-2930b6bd3fcf
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetFrameOffset, IDebugRegisters_c3f31f5b-76d4-4910-b1a1-f3050c20e815.xml, IDebugRegisters interface [Windows Debugging], GetFrameOffset method, IDebugRegisters::GetFrameOffset, IDebugRegisters2::GetFrameOffset, debugger.getframeoffset, IDebugRegisters2 interface [Windows Debugging], GetFrameOffset method, dbgeng/IDebugRegisters2::GetFrameOffset, GetFrameOffset method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters::GetFrameOffset, IDebugRegisters2, GetFrameOffset method [Windows Debugging], IDebugRegisters interface, GetFrameOffset method [Windows Debugging]
+ms.keywords : IDebugRegisters::GetFrameOffset, GetFrameOffset method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_c3f31f5b-76d4-4910-b1a1-f3050c20e815.xml, dbgeng/IDebugRegisters::GetFrameOffset, GetFrameOffset method [Windows Debugging], IDebugRegisters interface, debugger.getframeoffset, IDebugRegisters2 interface [Windows Debugging], GetFrameOffset method, dbgeng/IDebugRegisters2::GetFrameOffset, GetFrameOffset method [Windows Debugging], IDebugRegisters2, GetFrameOffset, IDebugRegisters2::GetFrameOffset, IDebugRegisters interface [Windows Debugging], GetFrameOffset method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -89,14 +89,9 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

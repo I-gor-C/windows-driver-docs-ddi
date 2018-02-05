@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 82978b22-1538-4da0-bcf2-c4c52d2e3429
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, display.d3drenderstatetype, d3d9types/D3DRS_MAXPIXELSHADERINST, D3DRS_DELETERTPATCH, D3DRENDERSTATE_SCENECAPTURE, D3DRS_MAXVERTEXSHADERINST, d3d9types/D3DRS_DELETERTPATCH, d3d9types/D3DRENDERSTATE_SCENECAPTURE, enumeration [Display Devices], D3DRS_MAXPIXELSHADERINST, D3DRENDERSTATE_EVICTMANAGEDTEXTURES, _D3DRENDERSTATETYPE, D3DRENDERSTATETYPE, d3d9types/D3DRS_MAXVERTEXSHADERINST, d3d9types/
+ms.keywords : D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3d9types/D3DRS_DELETERTPATCH, D3DRENDERSTATETYPE, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, D3DRS_DELETERTPATCH, d3d9types/D3DRENDERSTATE_SCENECAPTURE, _D3DRENDERSTATETYPE, enumeration [Display Devices], D3DRENDERSTATE_SCENECAPTURE, d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, D3DRS_MAXVERTEXSHADERINST, d3d9types/, D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXVERTEXSHADERINST, display.d3drenderstatetype
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -612,7 +612,4 @@ Multitexture macro ops and D3DRENDERSTATE_TEXTUREFACTOR override all of the per-
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | d3d9types.h (include D3dhal.h) |

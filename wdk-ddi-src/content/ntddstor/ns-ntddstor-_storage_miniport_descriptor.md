@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 30497CA8-70B6-48F9-B5D5-45E606A3226E
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : ntddstor/STORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR, ntddstor/PSTORAGE_MINIPORT_DESCRIPTOR, storage.storage_miniport_descriptor, PSTORAGE_MINIPORT_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR structure [Storage Devices], *PSTORAGE_MINIPORT_DESCRIPTOR
+ms.keywords : STORAGE_MINIPORT_DESCRIPTOR, _STORAGE_MINIPORT_DESCRIPTOR, ntddstor/STORAGE_MINIPORT_DESCRIPTOR, storage.storage_miniport_descriptor, PSTORAGE_MINIPORT_DESCRIPTOR structure pointer [Storage Devices], PSTORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR, ntddstor/PSTORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -102,7 +102,5 @@ Contains the size of this structure, in bytes. The value of this member will cha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows Vista Windows Vista |
 | **Header** | ntddstor.h (include Ntddstor.h) |

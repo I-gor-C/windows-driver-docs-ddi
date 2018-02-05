@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f915294f-457f-4913-b4b0-e94e1806a06d
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoTargetStateManagement, IWDFIoTargetStateManagement interface, GetState method, wdf.iwdfiotargetstatemanagement_getstate, GetState method, IWDFIoTargetStateManagement interface, GetState method, GetState, umdf.iwdfiotargetstatemanagement_getstate, UMDFIoTargetObjectRef_0a52ff77-9947-49a1-958a-ffe6e61ec169.xml, IWDFIoTargetStateManagement::GetState, wudfddi/IWDFIoTargetStateManagement::GetState
+ms.keywords : umdf.iwdfiotargetstatemanagement_getstate, GetState method, IWDFIoTargetStateManagement interface, GetState method, wudfddi/IWDFIoTargetStateManagement::GetState, IWDFIoTargetStateManagement interface, GetState method, GetState, IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_0a52ff77-9947-49a1-958a-ffe6e61ec169.xml, IWDFIoTargetStateManagement::GetState, wdf.iwdfiotargetstatemanagement_getstate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -70,20 +70,18 @@ For more information about I/O targets, see <a href="https://docs.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560265">IWDFRemoteTarget::GetState</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiotargetstatemanagement.md">IWDFIoTargetStateManagement</a>
 
  
 

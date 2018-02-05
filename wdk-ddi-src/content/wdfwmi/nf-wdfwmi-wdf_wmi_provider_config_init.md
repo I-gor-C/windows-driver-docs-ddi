@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : a63079ab-45ec-44b2-8769-f5b30f378972
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFWMIRef_34f9d195-3f6b-419d-bab7-29ad49c3d177.xml, wdfwmi/WDF_WMI_PROVIDER_CONFIG_INIT, wdf.wdf_wmi_provider_config_init, WDF_WMI_PROVIDER_CONFIG_INIT function, WDF_WMI_PROVIDER_CONFIG_INIT, kmdf.wdf_wmi_provider_config_init
+ms.keywords : WDF_WMI_PROVIDER_CONFIG_INIT function, wdfwmi/WDF_WMI_PROVIDER_CONFIG_INIT, wdf.wdf_wmi_provider_config_init, DFWMIRef_34f9d195-3f6b-419d-bab7-29ad49c3d177.xml, kmdf.wdf_wmi_provider_config_init, WDF_WMI_PROVIDER_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,10 @@ The <b>WDF_WMI_PROVIDER_CONFIG_INIT</b> function zeros the specified <a href="..
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

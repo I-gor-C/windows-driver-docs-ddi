@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 1d63f36d-4c62-40e9-b3c0-f6d847340b07
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ClosePort function [Print Devices], spoolfnc_fdd98daa-d14c-4534-a8c6-0070ccbbc3fe.xml, print.closeport, winsplp/ClosePort, ClosePort
+ms.keywords : winsplp/ClosePort, print.closeport, ClosePort function [Print Devices], ClosePort, spoolfnc_fdd98daa-d14c-4534-a8c6-0070ccbbc3fe.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,9 @@ The <b>ClosePort</b> function should close the port by making the received port 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

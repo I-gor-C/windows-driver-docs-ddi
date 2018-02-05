@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5738654A-83B1-44B4-BA45-52E2B60C852D
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdfhwaccess/WDF_WRITE_REGISTER_UCHAR, wdf.wdf_write_register_uchar, WDF_WRITE_REGISTER_UCHAR function, WDF_WRITE_REGISTER_UCHAR
+ms.keywords : WDF_WRITE_REGISTER_UCHAR, WDF_WRITE_REGISTER_UCHAR function, wdfhwaccess/WDF_WRITE_REGISTER_UCHAR, wdf.wdf_write_register_uchar
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,8 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfhwaccess.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4286a059-ef44-4a11-8e8e-ab030583f58d
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKDT_OPM_DVI_CHARACTERISTICS, DmEnums_4bcf670e-2b55-4278-80a4-71c7c820dae6.xml, display.dxgkdt_opm_dvi_characteristics, DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE, _DXGKDT_OPM_DVI_CHARACTERISTICS, d3dkmdt/DXGKDT_OPM_DVI_CHARACTERISTICS, DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG, DXGKDT_OPM_DVI_CHARACTERISTICS enumeration [Display Devices], d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0, d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE, DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0
+ms.keywords : display.dxgkdt_opm_dvi_characteristics, _DXGKDT_OPM_DVI_CHARACTERISTICS, DXGKDT_OPM_DVI_CHARACTERISTICS enumeration [Display Devices], d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE, DXGKDT_OPM_DVI_CHARACTERISTICS, DXGKMDT_OPM_DVI_CHARACTERISTIC_1_1_OR_ABOVE, DmEnums_4bcf670e-2b55-4278-80a4-71c7c820dae6.xml, d3dkmdt/DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0, d3dkmdt/DXGKDT_OPM_DVI_CHARACTERISTICS, DXGKMDT_OPM_DVI_CHARACTERISTIC_1_0, DXGKMDT_OPM_DVI_CHARACTERISTICS_FORCE_ULONG
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -77,9 +77,7 @@ The DXGKMDT_OPM_GET_DVI_CHARACTERISTICS GUID is used in a call to the display mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating systems. Available in Windows 7 and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

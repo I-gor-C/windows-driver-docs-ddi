@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 3975bc55-15e3-45ca-82df-76c5ed3b0086
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : ReloadWide method [Windows Debugging], ReloadWide, IDebugSymbols3::ReloadWide, debugger.reloadwide, dbgeng/IDebugSymbols3::ReloadWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], ReloadWide method, ReloadWide method [Windows Debugging], IDebugSymbols3 interface
+ms.keywords : debugger.reloadwide, ReloadWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], ReloadWide method, IDebugSymbols3::ReloadWide, ReloadWide method [Windows Debugging], ReloadWide, dbgeng/IDebugSymbols3::ReloadWide, IDebugSymbols3
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -88,20 +88,15 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564805">.reload (Reload Module)</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564805">.reload (Reload Module)</a>
 
  
 

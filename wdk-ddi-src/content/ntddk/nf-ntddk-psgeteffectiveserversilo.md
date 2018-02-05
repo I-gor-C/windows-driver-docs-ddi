@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 60FCFF5B-4040-423F-A9B6-2DFE7DDD9DD0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PsGetEffectiveServerSilo, PsGetEffectiveServerSilo, PsGetEffectiveServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgeteffectiveserversilo
+ms.keywords : PsGetEffectiveServerSilo routine [Kernel-Mode Driver Architecture], ntddk/PsGetEffectiveServerSilo, PsGetEffectiveServerSilo, kernel.psgeteffectiveserversilo
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,10 @@ This routine does not fail because it always returns a silo: the server silo or 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

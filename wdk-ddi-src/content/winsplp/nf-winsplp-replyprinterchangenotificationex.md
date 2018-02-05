@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : A3A906C0-FA96-4008-B904-1DA333B59833
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ReplyPrinterChangeNotificationEx function [Print Devices], winsplp/ReplyPrinterChangeNotificationEx, ReplyPrinterChangeNotificationEx, print.replyprinterchangenotificationex
+ms.keywords : ReplyPrinterChangeNotificationEx, winsplp/ReplyPrinterChangeNotificationEx, ReplyPrinterChangeNotificationEx function [Print Devices], print.replyprinterchangenotificationex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,11 +86,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | winsplp.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

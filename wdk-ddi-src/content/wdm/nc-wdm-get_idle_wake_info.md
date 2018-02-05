@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME"
+req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product : Windows 10 or later.
 ---
 
@@ -122,28 +122,24 @@ An inline helper function, <b>MapWakeDepthToDstate</b>, is provided to convert t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>
-
-<a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
-
-<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
+<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
 
 <a href="..\wdm\ne-wdm-_device_wake_depth.md">DEVICE_WAKE_DEPTH</a>
 
-<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
+<a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>
 
 <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
+
+<a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a>
+
+<a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
 
  
 

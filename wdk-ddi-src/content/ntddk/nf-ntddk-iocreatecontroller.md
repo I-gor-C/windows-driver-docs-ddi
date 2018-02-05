@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 7db268a4-d1ef-4d23-9b5d-cd24612d547e
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/IoCreateController, k104_a7ec4f8c-84d0-4fec-9f9e-40c5d57036f1.xml, IoCreateController, IoCreateController routine [Kernel-Mode Driver Architecture], kernel.iocreatecontroller
+ms.keywords : kernel.iocreatecontroller, IoCreateController, IoCreateController routine [Kernel-Mode Driver Architecture], ntddk/IoCreateController, k104_a7ec4f8c-84d0-4fec-9f9e-40c5d57036f1.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,12 +72,11 @@ If <b>IoCreateController</b> returns <b>NULL</b>, the driver should fail device 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive2, PowerIrpDDis, HwStorPortProhibitedDDIs |
 

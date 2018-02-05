@@ -72,6 +72,5 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
+| **Windows version** | Windows Vista and later operating systems. Windows Vista and later operating systems. |
 | **Header** | usbioctl.h (include Usbioctl.h) |
-| **IRQL** |  |

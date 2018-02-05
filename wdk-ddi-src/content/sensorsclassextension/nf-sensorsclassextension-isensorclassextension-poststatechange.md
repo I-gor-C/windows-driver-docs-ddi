@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : ae3bc846-df63-4186-9554-f4600e1f2066
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ISensorClassExtension interface [Sensor Devices], PostStateChange method, sensorsclassextension/ISensorClassExtension::PostStateChange, Sensor_IFaces_b6cc2565-ed4f-48cb-83ea-8d03322c2670.xml, ISensorClassExtension::PostStateChange, PostStateChange method [Sensor Devices], PostStateChange, sensors.isensorclassextension_poststatechange, PostStateChange method [Sensor Devices], ISensorClassExtension interface, ISensorClassExtension
+ms.keywords : PostStateChange, sensors.isensorclassextension_poststatechange, PostStateChange method [Sensor Devices], ISensorClassExtension interface [Sensor Devices], PostStateChange method, sensorsclassextension/ISensorClassExtension::PostStateChange, ISensorClassExtension::PostStateChange, ISensorClassExtension, PostStateChange method [Sensor Devices], ISensorClassExtension interface, Sensor_IFaces_b6cc2565-ed4f-48cb-83ea-8d03322c2670.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -114,20 +114,16 @@ Sensor state information is also available through the <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
+| **Target Platform** | Desktop |
 | **Header** | sensorsclassextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | SensorsClassExtension.lib |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545589">ISensorDriver::OnClientSubscribeToEvents</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545589">ISensorDriver::OnClientSubscribeToEvents</a>
 
  
 

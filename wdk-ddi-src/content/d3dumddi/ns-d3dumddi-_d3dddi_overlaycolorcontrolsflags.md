@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 12907aee-7c67-48f9-bf0f-84428f2d4fa7
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddi_overlaycolorcontrolsflags, _D3DDDI_OVERLAYCOLORCONTROLSFLAGS, D3D_other_Structs_ada675f2-18ed-4597-bcc4-803d8598ae66.xml, D3DDDI_OVERLAYCOLORCONTROLSFLAGS structure [Display Devices], d3dumddi/D3DDDI_OVERLAYCOLORCONTROLSFLAGS, D3DDDI_OVERLAYCOLORCONTROLSFLAGS
+ms.keywords : d3dumddi/D3DDDI_OVERLAYCOLORCONTROLSFLAGS, display.d3dddi_overlaycolorcontrolsflags, D3DDDI_OVERLAYCOLORCONTROLSFLAGS structure [Display Devices], D3D_other_Structs_ada675f2-18ed-4597-bcc4-803d8598ae66.xml, D3DDDI_OVERLAYCOLORCONTROLSFLAGS, _D3DDDI_OVERLAYCOLORCONTROLSFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -67,9 +67,7 @@ typedef struct _D3DDDI_OVERLAYCOLORCONTROLSFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -85,8 +85,8 @@ A handle value that uniquely identifies the send packet.
 
 When the WLAN adapter completes the send operation, the operating system notifies the IHV Extensions
      DLL through a call to the 
-     <mshelp:link keywords="netvista.dot11extihvsendpacketcompletion" tabindex="0"><i>
-     Dot11ExtIhvSendPacketCompletion</i></mshelp:link> IHV Handler function. When making this call, the operating system
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_send_packet_completion.md">
+     Dot11ExtIhvSendPacketCompletion</a> IHV Handler function. When making this call, the operating system
      passes the handle value of the packet through the 
      <i>hSendCompletion</i> parameter.
 
@@ -107,8 +107,8 @@ The packet sent through a call of the
       <b>Dot11ExtSendPacket</b> function will complete asynchronously. The IHV
       Extensions DLL must not free the memory referenced by the 
       <i>pvPacket</i> parameter until the 
-      <mshelp:link keywords="netvista.dot11extihvsendpacketcompletion" tabindex="0"><i>
-      Dot11ExtIhvSendPacketCompletion</i></mshelp:link> IHV Handler function is called with the same handle value as the 
+      <a href="..\wlanihv\nc-wlanihv-dot11extihv_send_packet_completion.md">
+      Dot11ExtIhvSendPacketCompletion</a> IHV Handler function is called with the same handle value as the 
       <i>hSendCompletion</i> parameter.
 
 </li>
@@ -120,16 +120,16 @@ The IHV Extensions DLL must set the
 
 </li>
 </ul>For more information about the IHV Handler functions, see 
-    <mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-    Functions</mshelp:link>.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+    Functions</a>.
 
 The buffer pointed to by 
     <i>pvPacket</i> should contain the following packet data, specified in network byte order:
 <ul>
 <li>
 MAC address of destination (6 bytes), formatted according to the guidelines discussed in 
-      <mshelp:link keywords="netvista.802_11_mac_header_management" tabindex="0">802.11 MAC Header
-      Management</mshelp:link>
+      <a href="https://technet.microsoft.com/en-us/library/cc757419">802.11 MAC Header
+      Management</a>
 
 
 </li>
@@ -146,26 +146,21 @@ Payload
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/native-802-11-ihv-handler-functions">Native 802.11 IHV Handler
+   Functions</a>
+
 <a href="https://technet.microsoft.com/en-us/library/cc757419">802.11 MAC Header Management</a>
 
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_send_packet_completion.md">
+   Dot11ExtIhvSendPacketCompletion</a>
+
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
-<mshelp:link keywords="netvista.native_802_11_ihv_handler_functions" tabindex="0">Native 802.11 IHV Handler
-   Functions</mshelp:link>
-
-<mshelp:link keywords="netvista.dot11extihvsendpacketcompletion" tabindex="0"><i>
-   Dot11ExtIhvSendPacketCompletion</i></mshelp:link>
 
  
 

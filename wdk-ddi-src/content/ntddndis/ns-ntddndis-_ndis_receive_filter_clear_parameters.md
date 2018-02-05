@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 101f9fea-cfc2-4ea5-82ee-a260d10b5a96
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, netvista.ndis_receive_filter_clear_parameters, _NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, virtual_machine_queue_ref_c0ec4d22-f248-4fe1-855e-99cfe6b2cd1f.xml, *PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
+ms.keywords : netvista.ndis_receive_filter_clear_parameters, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, *PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], virtual_machine_queue_ref_c0ec4d22-f248-4fe1-855e-99cfe6b2cd1f.xml, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, *PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
+req.typenames : "*PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure
@@ -118,24 +118,22 @@ A receive queue identifier. This identifier is an
 The <b>NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS</b> structure is used with OID requests of   
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a> to specify a filter to clear on a VMQ or SR-IOV VPort receive queue. The filter was
     previously set on the queue with the 
-    <mshelp:link keywords="netvista.oid_receive_filter_set_filter" tabindex="0">
-    OID_RECEIVE_FILTER_SET_FILTER</mshelp:link> OID.
+    <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">
+    OID_RECEIVE_FILTER_SET_FILTER</a> OID.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569785">OID_RECEIVE_FILTER_CLEAR_FILTER</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
 
  
 

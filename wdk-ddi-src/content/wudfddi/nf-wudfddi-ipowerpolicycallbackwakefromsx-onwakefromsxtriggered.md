@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : b2379f2d-61a0-4741-a375-c17b95b0faf6
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.ipowerpolicycallbackwakefromsx_onwakefromsxtriggered, wudfddi/IPowerPolicyCallbackWakeFromSx::OnWakeFromSxTriggered, IPowerPolicyCallbackWakeFromSx, OnWakeFromSxTriggered method, IPowerPolicyCallbackWakeFromSx interface, UMDFDeviceObjectRef_a92e7dc1-2f1e-4da5-ae71-f57160aa22a0.xml, OnWakeFromSxTriggered, IPowerPolicyCallbackWakeFromSx::OnWakeFromSxTriggered, OnWakeFromSxTriggered method, IPowerPolicyCallbackWakeFromSx interface, OnWakeFromSxTriggered method, umdf.ipowerpolicycallbackwakefromsx_onwakefromsxtriggered
+ms.keywords : OnWakeFromSxTriggered, IPowerPolicyCallbackWakeFromSx, IPowerPolicyCallbackWakeFromSx::OnWakeFromSxTriggered, wudfddi/IPowerPolicyCallbackWakeFromSx::OnWakeFromSxTriggered, UMDFDeviceObjectRef_a92e7dc1-2f1e-4da5-ae71-f57160aa22a0.xml, IPowerPolicyCallbackWakeFromSx interface, OnWakeFromSxTriggered method, wdf.ipowerpolicycallbackwakefromsx_onwakefromsxtriggered, OnWakeFromSxTriggered method, IPowerPolicyCallbackWakeFromSx interface, umdf.ipowerpolicycallbackwakefromsx_onwakefromsxtriggered, OnWakeFromSxTriggered method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -77,20 +77,17 @@ For more information about this callback function, see <a href="https://docs.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556826">IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx</a>
-
 <a href="..\wudfddi\nn-wudfddi-ipowerpolicycallbackwakefromsx.md">IPowerPolicyCallbackWakeFromSx</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556826">IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556828">IPowerPolicyCallbackWakeFromSx::OnDisarmWakeFromSx</a>
 

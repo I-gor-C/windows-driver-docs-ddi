@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : d2ab6fe4-131a-4952-864c-7135026cb25c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : icm/WcsDisassociateColorProfileFromDevice, print.wcsdisassociatecolorprofilefromdevice, colorfnc_d8888a37-8a72-41a4-8ca6-29326634d9b2.xml, WcsDisassociateColorProfileFromDevice, WcsDisassociateColorProfileFromDevice function [Print Devices]
+ms.keywords : print.wcsdisassociatecolorprofilefromdevice, icm/WcsDisassociateColorProfileFromDevice, colorfnc_d8888a37-8a72-41a4-8ca6-29326634d9b2.xml, WcsDisassociateColorProfileFromDevice, WcsDisassociateColorProfileFromDevice function [Print Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -86,14 +86,11 @@ This function is executable in Least-Privileged User Account (LUA) context if <i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
+| **Target Platform** | Universal |
 | **Header** | icm.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Mscms.lib |
+| **DLL** | Mscms.dll |
 
 ## See Also
 

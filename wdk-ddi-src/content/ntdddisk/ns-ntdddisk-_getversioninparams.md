@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : dcbfa8d2-c2ea-43ae-9d77-ce95a430a514
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : PGETVERSIONINPARAMS, _GETVERSIONINPARAMS, *LPGETVERSIONINPARAMS, ntdddisk/LPGETVERSIONINPARAMS, LPGETVERSIONINPARAMS structure pointer [Storage Devices], LPGETVERSIONINPARAMS, ntdddisk/GETVERSIONINPARAMS, storage.getversioninparams, GETVERSIONINPARAMS structure [Storage Devices], PGETVERSIONINPARAMS structure pointer [Storage Devices], structs-IDE_5426037d-a75f-4b92-a935-e467d02ec8c7.xml, GETVERSIONINPARAMS, *PGETVERSIONINPARAMS, ntdddisk/PGETVERSIONINPARAMS
+ms.keywords : ntdddisk/GETVERSIONINPARAMS, GETVERSIONINPARAMS structure [Storage Devices], ntdddisk/PGETVERSIONINPARAMS, ntdddisk/LPGETVERSIONINPARAMS, *LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, PGETVERSIONINPARAMS structure pointer [Storage Devices], structs-IDE_5426037d-a75f-4b92-a935-e467d02ec8c7.xml, PGETVERSIONINPARAMS, storage.getversioninparams, _GETVERSIONINPARAMS, LPGETVERSIONINPARAMS, LPGETVERSIONINPARAMS structure pointer [Storage Devices], GETVERSIONINPARAMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -206,9 +206,6 @@ The device supports SMART commands.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
 ## See Also

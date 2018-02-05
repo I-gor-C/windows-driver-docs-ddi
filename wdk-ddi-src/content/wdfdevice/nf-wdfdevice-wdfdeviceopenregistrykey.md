@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0ccae1e9-23d4-44cd-ae5a-985490db1d86
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceOpenRegistryKey, DFDeviceObjectGeneralRef_ab116304-7951-4b19-b197-3943a4a415db.xml, kmdf.wdfdeviceopenregistrykey, wdfdevice/WdfDeviceOpenRegistryKey, WdfDeviceOpenRegistryKey method, wdf.wdfdeviceopenregistrykey
+ms.keywords : WdfDeviceOpenRegistryKey, kmdf.wdfdeviceopenregistrykey, WdfDeviceOpenRegistryKey method, wdfdevice/WdfDeviceOpenRegistryKey, wdf.wdfdeviceopenregistrykey, DFDeviceObjectGeneralRef_ab116304-7951-4b19-b197-3943a4a415db.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -266,12 +266,11 @@ For more information about the registry, hardware and software keys, and registr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | AccessHardwareKey, DriverCreate, KmdfIrql, KmdfIrql2 |
 

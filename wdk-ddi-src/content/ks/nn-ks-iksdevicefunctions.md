@@ -57,8 +57,5 @@ The IKsDeviceFunctions interface is a COM-style interface implemented on AVStrea
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ks.h |
-| **DLL** |  |

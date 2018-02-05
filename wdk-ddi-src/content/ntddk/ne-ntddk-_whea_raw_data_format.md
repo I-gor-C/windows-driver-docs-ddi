@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 809f2d72-e769-48c1-9ecf-6fa9020f6cdb
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : "*PWHEA_RAW_DATA_FORMAT, WheaRawDataFormatNMIPort, WHEA_RAW_DATA_FORMAT, ntddk/WheaRawDataFormatGeneric, ntddk/WheaRawDataFormatIPFSalRecord, ntddk/WheaRawDataFormatMax, ntddk/WheaRawDataFormatAMD64MCA, ntddk/PWHEA_RAW_DATA_FORMAT, WheaRawDataFormatMax, ntddk/WheaRawDataFormatNMIPort, WheaRawDataFormatIntel64MCA, whea.whea_raw_data_format, ntddk/WheaRawDataFormatMemory, ntddk/WheaRawDataFormatIntel64MCA, WheaRawDataFormatPCIExpress, WheaRawDataFormatMemory, WheaRawDataFormatGeneric, ntddk/WheaRawDataFormatPCIExpress, WheaRawDataFormatIPFSalRecord, WheaRawDataFormatPCIXDevice, PWHEA_RAW_DATA_FORMAT enumeration pointer [WHEA Drivers and Applications], ntddk/WheaRawDataFormatPCIXBus, _WHEA_RAW_DATA_FORMAT, WheaRawDataFormatAMD64MCA, WHEA_RAW_DATA_FORMAT enumeration [WHEA Drivers and Applications], ntddk/WHEA_RAW_DATA_FORMAT, WheaRawDataFormatPCIXBus, ntddk/WheaRawDataFormatIA32MCA, ntddk/WheaRawDataFormatPCIXDevice, whearef_9ecb0580-4372-40f3-93da-4f866ee6211f.xml, WheaRawDataFormatIA32MCA, PWHEA_RAW_DATA_FORMAT"
+ms.keywords : ntddk/WheaRawDataFormatMax, *PWHEA_RAW_DATA_FORMAT, WheaRawDataFormatIPFSalRecord, WheaRawDataFormatNMIPort, ntddk/WheaRawDataFormatPCIXDevice, WheaRawDataFormatMemory, ntddk/WheaRawDataFormatGeneric, WHEA_RAW_DATA_FORMAT enumeration [WHEA Drivers and Applications], ntddk/WheaRawDataFormatIA32MCA, WheaRawDataFormatIntel64MCA, whea.whea_raw_data_format, WheaRawDataFormatAMD64MCA, ntddk/WHEA_RAW_DATA_FORMAT, PWHEA_RAW_DATA_FORMAT enumeration pointer [WHEA Drivers and Applications], ntddk/WheaRawDataFormatNMIPort, WheaRawDataFormatIA32MCA, ntddk/WheaRawDataFormatPCIExpress, WHEA_RAW_DATA_FORMAT, ntddk/WheaRawDataFormatIntel64MCA, _WHEA_RAW_DATA_FORMAT, ntddk/WheaRawDataFormatPCIXBus, ntddk/PWHEA_RAW_DATA_FORMAT, PWHEA_RAW_DATA_FORMAT, WheaRawDataFormatGeneric, ntddk/WheaRawDataFormatIPFSalRecord, ntddk/WheaRawDataFormatAMD64MCA, ntddk/WheaRawDataFormatMemory, WheaRawDataFormatMax, WheaRawDataFormatPCIXBus, WheaRawDataFormatPCIExpress, WheaRawDataFormatPCIXDevice, whearef_9ecb0580-4372-40f3-93da-4f866ee6211f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -125,20 +125,18 @@ The <a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
 
-<a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540659">HalQuerySystemInformation</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a>
 
  
 

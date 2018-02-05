@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : A39FF088-1AA3-4E2F-8EF6-AD7F79FBBC92
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::GetSourceEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSourceEntryOffsetRegions, GetSourceEntryOffsetRegions method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetSourceEntryOffsetRegions method, debugger.idebugsymbols3_getsourceentryoffsetregions, GetSourceEntryOffsetRegions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetSourceEntryOffsetRegions
+ms.keywords : IDebugSymbols3::GetSourceEntryOffsetRegions, IDebugSymbols3, debugger.idebugsymbols3_getsourceentryoffsetregions, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryOffsetRegions method, GetSourceEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSourceEntryOffsetRegions, GetSourceEntryOffsetRegions method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntryOffsetRegions method [Windows Debugging]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -90,22 +90,17 @@ This function returns all known memory regions that associated
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/986774F6-5256-4703-990A-EAB4AB09AF55">IDebugSymbols3::GetSymbolEntryOffsetRegions</a>
+<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 
 <a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/986774F6-5256-4703-990A-EAB4AB09AF55">IDebugSymbols3::GetSymbolEntryOffsetRegions</a>
 
  
 

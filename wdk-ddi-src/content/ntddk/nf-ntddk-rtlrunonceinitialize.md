@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4d1a65af-a475-4360-9db3-d5b9e302697d
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : RtlRunOnceInitialize routine [Kernel-Mode Driver Architecture], kernel.rtlrunonceinitialize, RtlRunOnceInitialize, k109_7d98d21e-b6f2-4ccd-b447-0c1d612eed5b.xml, ntddk/RtlRunOnceInitialize
+ms.keywords : kernel.rtlrunonceinitialize, k109_7d98d21e-b6f2-4ccd-b447-0c1d612eed5b.xml, RtlRunOnceInitialize, RtlRunOnceInitialize routine [Kernel-Mode Driver Architecture], ntddk/RtlRunOnceInitialize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,14 +65,12 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -80,11 +78,11 @@ None
 
 <a href="..\ntddk\nf-ntddk-rtlrunonceexecuteonce.md">RtlRunOnceExecuteOnce</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
+<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563635">RunOnceInitialization</a>
 
-<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : AACF0C99-D6E2-4C7C-BAE6-BF558FDAFDE0
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGK_PHYSICALADAPTERFLAGS, _DXGK_PHYSICALADAPTERFLAGS, DXGK_PHYSICALADAPTERFLAGS structure [Display Devices], d3dkmddi/DXGK_PHYSICALADAPTERFLAGS, display.dxgk_physicaladapterflags
+ms.keywords : DXGK_PHYSICALADAPTERFLAGS structure [Display Devices], display.dxgk_physicaladapterflags, d3dkmddi/DXGK_PHYSICALADAPTERFLAGS, DXGK_PHYSICALADAPTERFLAGS, _DXGK_PHYSICALADAPTERFLAGS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,7 +64,5 @@ typedef struct _DXGK_PHYSICALADAPTERFLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |

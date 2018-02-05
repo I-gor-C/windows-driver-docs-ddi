@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5d2bbf08-ea5c-4dad-8c30-9a655d25222a
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisClNotifyCloseAddressFamilyComplete function [Network Drivers Starting with Windows Vista], NdisClNotifyCloseAddressFamilyComplete, condis_client_ref_d084e99b-f911-4d23-b59e-ad1f51a2261a.xml, ndis/NdisClNotifyCloseAddressFamilyComplete, netvista.ndisclnotifycloseaddressfamilycomplete
+ms.keywords : NdisClNotifyCloseAddressFamilyComplete, condis_client_ref_d084e99b-f911-4d23-b59e-ad1f51a2261a.xml, ndis/NdisClNotifyCloseAddressFamilyComplete, NdisClNotifyCloseAddressFamilyComplete function [Network Drivers Starting with Windows Vista], netvista.ndisclnotifycloseaddressfamilycomplete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,8 +60,8 @@ VOID NdisClNotifyCloseAddressFamilyComplete(
 `NdisAfHandle`
 
 An AF handle that NDIS supplied to the caller's 
-     <mshelp:link keywords="netvista.ndisclopenaddressfamilyex" tabindex="0"><b>
-     NdisClOpenAddressFamilyEx</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
+     NdisClOpenAddressFamilyEx</a> function.
 
 `Status`
 
@@ -93,32 +93,30 @@ CoNDIS clients call the
     <b>NdisClNotifyCloseAddressFamilyComplete</b> function to complete a close AF notification. A client must
     call 
     <b>NdisClNotifyCloseAddressFamilyComplete</b> after its 
-    <mshelp:link keywords="netvista.protocolclnotifycloseaf" tabindex="0"><i>
-    ProtocolClNotifyCloseAf</i></mshelp:link> function returns NDIS_STATUS_PENDING.
+    <a href="..\ndis\nc-ndis-protocol_cl_notify_close_af.md">
+    ProtocolClNotifyCloseAf</a> function returns NDIS_STATUS_PENDING.
 
 After the client calls 
     <b>NdisClNotifyCloseAddressFamilyComplete</b>, NDIS calls the call manager's 
-    <mshelp:link keywords="netvista.protocolcmnotifycloseafcomplete" tabindex="0"><i>
-    ProtocolCmNotifyCloseAfComplete</i></mshelp:link> function to complete operation for the call manager.
+    <a href="..\ndis\nc-ndis-protocol_cm_notify_close_af_complete.md">
+    ProtocolCmNotifyCloseAfComplete</a> function to complete operation for the call manager.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.protocolcmnotifycloseafcomplete" tabindex="0"><i>
-   ProtocolCmNotifyCloseAfComplete</i></mshelp:link>
-
 <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_cm_notify_close_af_complete.md">
+   ProtocolCmNotifyCloseAfComplete</a>
 
 <a href="..\ndis\nc-ndis-protocol_cl_notify_close_af.md">ProtocolClNotifyCloseAf</a>
 

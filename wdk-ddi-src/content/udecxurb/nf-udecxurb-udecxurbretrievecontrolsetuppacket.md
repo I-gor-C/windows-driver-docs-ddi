@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 09D9AB68-12DB-442F-897B-6C6BD8B5F030
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : udecxurb/UdecxUrbRetrieveControlSetupPacket, buses.udecxurbretrievecontrolsetuppacket, UdecxUrbRetrieveControlSetupPacket function [Buses], UdecxUrbRetrieveControlSetupPacket
+ms.keywords : udecxurb/UdecxUrbRetrieveControlSetupPacket, UdecxUrbRetrieveControlSetupPacket function [Buses], buses.udecxurbretrievecontrolsetuppacket, UdecxUrbRetrieveControlSetupPacket
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH"
+req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
 req.product : Windows 10 or later.
 ---
 
@@ -76,14 +76,12 @@ To complete the request, the driver must call <a href="..\udecxurb\nf-udecxurb-u
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.15 |
-| **Minimum UMDF version** |  |
 | **Header** | udecxurb.h (include Udecx.h) |
-| **Library** |  |
+| **Library** | Udecxstub.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

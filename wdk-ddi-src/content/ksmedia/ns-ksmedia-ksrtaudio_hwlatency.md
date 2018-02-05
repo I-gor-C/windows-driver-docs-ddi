@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : dd9998d0-46e6-4b12-aa96-1e6eede15f47
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PKSRTAUDIO_HWLATENCY, ksmedia/KSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY structure [Audio Devices], *PKSRTAUDIO_HWLATENCY, audio.ksrtaudio_hwlatency, PKSRTAUDIO_HWLATENCY structure pointer [Audio Devices], ksmedia/PKSRTAUDIO_HWLATENCY, aud-prop_dd10bf1b-e1b6-4dfd-bb50-1540ef3caed5.xml, KSRTAUDIO_HWLATENCY
+ms.keywords : aud-prop_dd10bf1b-e1b6-4dfd-bb50-1540ef3caed5.xml, KSRTAUDIO_HWLATENCY, audio.ksrtaudio_hwlatency, *PKSRTAUDIO_HWLATENCY, PKSRTAUDIO_HWLATENCY structure pointer [Audio Devices], PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY structure [Audio Devices], ksmedia/PKSRTAUDIO_HWLATENCY, ksmedia/KSRTAUDIO_HWLATENCY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KSRTAUDIO_HWLATENCY, *PKSRTAUDIO_HWLATENCY
+req.typenames : "*PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY"
 ---
 
 # KSRTAUDIO_HWLATENCY structure
@@ -77,9 +77,7 @@ The <b>CodecDelay</b> member is the delay that the codec adds to an audio stream
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later Windows operating systems. Available in Windows Vista and later Windows operating systems. |
 | **Header** | ksmedia.h |
 
 ## See Also

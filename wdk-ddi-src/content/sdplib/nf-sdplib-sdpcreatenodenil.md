@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 53312cb8-a974-4394-969b-2a39def64109
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bth_funcs_5f7d1244-67e0-436e-8658-8adcc2aa3a65.xml, SdpCreateNodeNil function [Bluetooth Devices], bltooth.sdpcreatenodenil, sdplib/SdpCreateNodeNil, SdpCreateNodeNil
+ms.keywords : SdpCreateNodeNil, SdpCreateNodeNil function [Bluetooth Devices], bltooth.sdpcreatenodenil, sdplib/SdpCreateNodeNil, bth_funcs_5f7d1244-67e0-436e-8658-8adcc2aa3a65.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,14 +73,11 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
+| **Target Platform** | Desktop |
 | **Header** | sdplib.h (include BthSdpddi.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

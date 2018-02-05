@@ -8,7 +8,7 @@ old-project : GPIO
 ms.assetid : CE92249C-99B5-411E-B0D7-C1FF4824949E
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CLIENT_CONTROLLER_BASIC_INFORMATION structure [Parallel Ports], *PCLIENT_CONTROLLER_BASIC_INFORMATION, gpioclx/PCLIENT_CONTROLLER_BASIC_INFORMATION, GPIO.client_controller_basic_information, PCLIENT_CONTROLLER_BASIC_INFORMATION, _CLIENT_CONTROLLER_BASIC_INFORMATION, gpioclx/CLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION, PCLIENT_CONTROLLER_BASIC_INFORMATION structure pointer [Parallel Ports]
+ms.keywords : "*PCLIENT_CONTROLLER_BASIC_INFORMATION, PCLIENT_CONTROLLER_BASIC_INFORMATION, GPIO.client_controller_basic_information, PCLIENT_CONTROLLER_BASIC_INFORMATION structure pointer [Parallel Ports], CLIENT_CONTROLLER_BASIC_INFORMATION structure [Parallel Ports], gpioclx/PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION, gpioclx/CLIENT_CONTROLLER_BASIC_INFORMATION, _CLIENT_CONTROLLER_BASIC_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CLIENT_CONTROLLER_BASIC_INFORMATION, *PCLIENT_CONTROLLER_BASIC_INFORMATION
+req.typenames : "*PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION"
 ---
 
 # _CLIENT_CONTROLLER_BASIC_INFORMATION structure
@@ -100,16 +100,14 @@ GpioClx determines the total number of banks in the GPIO controller from the val
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | gpioclx.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439449">CONTROLLER_ATTRIBUTE_FLAGS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439449">CONTROLLER_ATTRIBUTE_FLAGS</a>
 
  
 

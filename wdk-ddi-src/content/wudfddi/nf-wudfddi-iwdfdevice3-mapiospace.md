@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 243C7299-7C74-408A-8FB9-32FB3315251F
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFDevice3, umdf.iwdfdevice3_mapiospace, wdf.iwdfdevice3_mapiospace, MapIoSpace method, IWDFDevice3 interface, IWDFDevice3 interface, MapIoSpace method, MapIoSpace, MapIoSpace method, IWDFDevice3::MapIoSpace, wudfddi/IWDFDevice3::\_MapIoSpace, IWDFDevice3::\_MapIoSpace
+ms.keywords : IWDFDevice3 interface, MapIoSpace method, MapIoSpace method, umdf.iwdfdevice3_mapiospace, MapIoSpace, MapIoSpace method, IWDFDevice3 interface, IWDFDevice3::\_MapIoSpace, wudfddi/IWDFDevice3::\_MapIoSpace, IWDFDevice3::MapIoSpace, IWDFDevice3, wdf.iwdfdevice3_mapiospace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -96,14 +96,12 @@ The PHYSICAL_ADDRESS type is defined in Wudfwdm.h, as follows:<pre class="syntax
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

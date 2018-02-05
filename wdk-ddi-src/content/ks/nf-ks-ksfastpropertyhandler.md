@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 39a216f8-297d-45cc-9bec-4c0ee9941441
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksfastpropertyhandler, KsFastPropertyHandler, ksfunc_4b896ea0-aa74-4acf-b8fa-cdc4c8cdb4b1.xml, KsFastPropertyHandler function [Streaming Media Devices], ks/KsFastPropertyHandler
+ms.keywords : KsFastPropertyHandler function [Streaming Media Devices], ksfunc_4b896ea0-aa74-4acf-b8fa-cdc4c8cdb4b1.xml, stream.ksfastpropertyhandler, KsFastPropertyHandler, ks/KsFastPropertyHandler
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,14 +94,9 @@ The owner of a property set can perform prefiltering or postfiltering of the pro
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ks.lib |
 
 ## See Also
 

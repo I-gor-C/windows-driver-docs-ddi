@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 07282994-5E04-432D-85A6-4677DB2DA84A
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.pofxidlecomponent, PoFxIdleComponent, PoFxIdleComponent routine [Kernel-Mode Driver Architecture], wdm/PoFxIdleComponent
+ms.keywords : PoFxIdleComponent, wdm/PoFxIdleComponent, PoFxIdleComponent routine [Kernel-Mode Driver Architecture], kernel.pofxidlecomponent
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -93,26 +93,24 @@ The driver can set <i>Flags</i> = 0 to indicate that it does not care whether th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
-
 <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn939769">PO_FX_FLAG_XXX</a>
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a>
 
 <a href="..\wdm\nf-wdm-pofxactivatecomponent.md">PoFxActivateComponent</a>
+
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn939769">PO_FX_FLAG_XXX</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9ce7f40f-28f1-4303-9f7a-24ff1213bab1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisOpenConfigurationKeyByName, netvista.ndisopenconfigurationkeybyname, NdisOpenConfigurationKeyByName function [Network Drivers Starting with Windows Vista], ndis/NdisOpenConfigurationKeyByName, ndis_configuration_ref_b952e09a-cef5-46f7-b566-6995e8581862.xml
+ms.keywords : NdisOpenConfigurationKeyByName, ndis/NdisOpenConfigurationKeyByName, ndis_configuration_ref_b952e09a-cef5-46f7-b566-6995e8581862.xml, netvista.ndisopenconfigurationkeybyname, NdisOpenConfigurationKeyByName function [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,22 +66,22 @@ A pointer to a caller-supplied variable in which this function returns the statu
 
 
 
+#### NDIS_STATUS_FAILURE
+
+The key could not be opened.
+
+
 #### NDIS_STATUS_SUCCESS
 
 NDIS has initialized accessed to the subkey specified by 
        <i>SubKeyName</i> .
 
-
-#### NDIS_STATUS_FAILURE
-
-The key could not be opened.
-
 `ConfigurationHandle`
 
 The handle to a registry key for which a subkey should be opened. Typically, 
      <i>ConfigurationHandle</i> is returned by the 
-     <mshelp:link keywords="netvista.ndisopenconfigurationex" tabindex="0"><b>
-     NdisOpenConfigurationEx</b></mshelp:link> function.
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">
+     NdisOpenConfigurationEx</a> function.
 
 `SubKeyName`
 
@@ -130,35 +130,33 @@ After a driver has consumed and, possibly, modified the registry configuration i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByName (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByName (NDIS 5.1)) in Windows XP. Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByName (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisOpenConfigurationKeyByName (NDIS 5.1)) in Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "< DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Miscellaneous_Function |
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
-
-<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
-
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-<mshelp:link keywords="netvista.ndisopenconfigurationkeybyindex" tabindex="0"><b>
-   NdisOpenConfigurationKeyByIndex</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
+   NdisOpenConfigurationKeyByIndex</a>
 
 <a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
 
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
+
+<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
-<a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+
+<a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
 
  
 

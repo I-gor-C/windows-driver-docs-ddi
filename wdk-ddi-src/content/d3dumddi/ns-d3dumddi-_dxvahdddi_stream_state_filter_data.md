@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7da30e14-7df4-41e2-b2e3-081c55d68db6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_e20d3d19-75a9-4539-888f-4c3c73cc02c8.xml, d3dumddi/DXVAHDDDI_STREAM_STATE_FILTER_DATA, _DXVAHDDDI_STREAM_STATE_FILTER_DATA, display.dxvahdddi_stream_state_filter_data, DXVAHDDDI_STREAM_STATE_FILTER_DATA, DXVAHDDDI_STREAM_STATE_FILTER_DATA structure [Display Devices]
+ms.keywords : display.dxvahdddi_stream_state_filter_data, DXVA2_Structs_e20d3d19-75a9-4539-888f-4c3c73cc02c8.xml, d3dumddi/DXVAHDDDI_STREAM_STATE_FILTER_DATA, DXVAHDDDI_STREAM_STATE_FILTER_DATA, _DXVAHDDDI_STREAM_STATE_FILTER_DATA, DXVAHDDDI_STREAM_STATE_FILTER_DATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -66,16 +66,14 @@ The level that is specified in the <b>Level</b> member must be within the range 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_STREAM_STATE_FILTER_DATA is supported beginning with the Windows 7 operating system. DXVAHDDDI_STREAM_STATE_FILTER_DATA is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
+
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a>
 
  
 

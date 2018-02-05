@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 0cd14f0c-5b7b-443b-ab37-c455b4accacb
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_STREAM_STATE_ALPHA_DATA structure [Display Devices], DXVAHDDDI_STREAM_STATE_ALPHA_DATA, _DXVAHDDDI_STREAM_STATE_ALPHA_DATA, DXVA2_Structs_33a16800-e101-40e7-b776-36161a8a984a.xml, display.dxvahdddi_stream_state_alpha_data, d3dumddi/DXVAHDDDI_STREAM_STATE_ALPHA_DATA
+ms.keywords : DXVAHDDDI_STREAM_STATE_ALPHA_DATA structure [Display Devices], DXVAHDDDI_STREAM_STATE_ALPHA_DATA, display.dxvahdddi_stream_state_alpha_data, DXVA2_Structs_33a16800-e101-40e7-b776-36161a8a984a.xml, d3dumddi/DXVAHDDDI_STREAM_STATE_ALPHA_DATA, _DXVAHDDDI_STREAM_STATE_ALPHA_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -82,9 +82,7 @@ The Ad parameter is set with values from the <a href="..\d3dumddi\ne-d3dumddi-_d
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_STREAM_STATE_ALPHA_DATA is supported beginning with the Windows 7 operating system. DXVAHDDDI_STREAM_STATE_ALPHA_DATA is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 7b4fd9ff-09a7-44df-a3e6-0af5d7ea624e
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : kmdf.wdfwmiproviderisenabled, WdfWmiProviderIsEnabled method, WdfWmiProviderIsEnabled, wdfwmi/WdfWmiProviderIsEnabled, wdf.wdfwmiproviderisenabled, PFN_WDFWMIPROVIDERISENABLED, DFWMIRef_3231e5bd-aa1c-4bf8-92ef-4b6c29308d95.xml
+ms.keywords : WdfWmiProviderIsEnabled, PFN_WDFWMIPROVIDERISENABLED, DFWMIRef_3231e5bd-aa1c-4bf8-92ef-4b6c29308d95.xml, kmdf.wdfwmiproviderisenabled, wdfwmi/WdfWmiProviderIsEnabled, wdf.wdfwmiproviderisenabled, WdfWmiProviderIsEnabled method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,24 +78,22 @@ A driver that does not provide an <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfwmi.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
-
-<a href="..\wdfwmi\ne-wdfwmi-_wdf_wmi_provider_control.md">WDF_WMI_PROVIDER_CONTROL</a>
-
 <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
 
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancegetprovider.md">WdfWmiInstanceGetProvider</a>
+
+<a href="..\wdfwmi\ne-wdfwmi-_wdf_wmi_provider_control.md">WDF_WMI_PROVIDER_CONTROL</a>
+
+<a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidercreate.md">WdfWmiProviderCreate</a>
 
  
 

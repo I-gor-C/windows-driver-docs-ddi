@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 76588bdd-ceb8-4c8b-bcd7-23184feacf86
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsMgmtSetLogFileSize routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtSetLogFileSize, kernel.clfsmgmtsetlogfilesize, ClfsMgmtSetLogFileSize, Clfs_management_a4f0865a-5c4b-411b-a8a5-349b49c1528b.xml
+ms.keywords : ClfsMgmtSetLogFileSize routine [Kernel-Mode Driver Architecture], ClfsMgmtSetLogFileSize, Clfs_management_a4f0865a-5c4b-411b-a8a5-349b49c1528b.xml, kernel.clfsmgmtsetlogfilesize, wdm/ClfsMgmtSetLogFileSize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -225,14 +225,12 @@ The <b>ClfsMgmtSetLogFileSize</b> routine is typically used only when a client s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Server 2003 R2 and Windows Vista. Available starting with Windows Server 2003 R2 and Windows Vista. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

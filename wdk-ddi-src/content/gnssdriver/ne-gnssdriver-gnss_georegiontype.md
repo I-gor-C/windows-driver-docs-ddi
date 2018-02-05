@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : 736A1D63-A96E-4E29-ADFD-F441AC4757C6
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : GNSS_GeoRegion_Circle, GNSS_GEOREGIONTYPE enumeration [Sensor Devices], gnssdriver/GNSS_GeoRegion_Circle, gnssdriver/GNSS_GEOREGIONTYPE, GNSS_GEOREGIONTYPE, sensors.gnss_georegiontype
+ms.keywords : GNSS_GEOREGIONTYPE, GNSS_GeoRegion_Circle, sensors.gnss_georegiontype, gnssdriver/GNSS_GeoRegion_Circle, gnssdriver/GNSS_GEOREGIONTYPE, GNSS_GEOREGIONTYPE enumeration [Sensor Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -62,7 +62,4 @@ typedef enum  {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D555E595-4319-4FCC-84A7-52FA3F278FFD
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*INOUT_PDXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, display.dxgkargcb_reservegpuvirtualaddressrange, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE structure [Display Devices], DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, d3dkmddi/DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE"
+ms.keywords : d3dkmddi/DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, display.dxgkargcb_reservegpuvirtualaddressrange, DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE structure [Display Devices], _DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE, *INOUT_PDXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,16 +85,14 @@ The starting location of the reserved address range.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_reservegpuvirtualaddressrange.md">DxgkCbReserveGpuVirtualAddressRange</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
+
+<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_reservegpuvirtualaddressrange.md">DxgkCbReserveGpuVirtualAddressRange</a>
 
  
 

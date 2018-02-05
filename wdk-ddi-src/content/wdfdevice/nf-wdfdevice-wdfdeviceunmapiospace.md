@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : C8963667-D2FB-4360-A523-33429D6FBF1B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceUnmapIoSpace function, wdf.wdfdeviceunmapiospace, WdfDeviceUnmapIoSpace, PFN_WDFDEVICEUNMAPIOSPACE, wdfdevice/WdfDeviceUnmapIoSpace
+ms.keywords : WdfDeviceUnmapIoSpace function, PFN_WDFDEVICEUNMAPIOSPACE, WdfDeviceUnmapIoSpace, wdfdevice/WdfDeviceUnmapIoSpace, wdf.wdfdeviceunmapiospace
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -83,20 +83,19 @@ If a driver calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">Wdf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Universal |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | WUDFx02000.lib |
+| **DLL** | WUDFx02000.dll |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>
-
 <a href="https://msdn.microsoft.com/E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18">IWDFDevice3::UnmapIoSpace</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>
 
  
 

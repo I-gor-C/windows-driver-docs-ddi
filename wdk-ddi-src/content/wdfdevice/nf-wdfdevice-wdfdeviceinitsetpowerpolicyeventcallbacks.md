@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ae74d58c-3b36-4298-aa6f-4c272e7ff61c
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetPowerPolicyEventCallbacks, wdf.wdfdeviceinitsetpowerpolicyeventcallbacks, kmdf.wdfdeviceinitsetpowerpolicyeventcallbacks, wdfdevice/WdfDeviceInitSetPowerPolicyEventCallbacks, DFDeviceObjectGeneralRef_7a73b769-9408-4349-b269-53dff2261d3d.xml, PFN_WDFDEVICEINITSETPOWERPOLICYEVENTCALLBACKS, WdfDeviceInitSetPowerPolicyEventCallbacks method
+ms.keywords : WdfDeviceInitSetPowerPolicyEventCallbacks, PFN_WDFDEVICEINITSETPOWERPOLICYEVENTCALLBACKS, wdfdevice/WdfDeviceInitSetPowerPolicyEventCallbacks, DFDeviceObjectGeneralRef_7a73b769-9408-4349-b269-53dff2261d3d.xml, WdfDeviceInitSetPowerPolicyEventCallbacks method, kmdf.wdfdeviceinitsetpowerpolicyeventcallbacks, wdf.wdfdeviceinitsetpowerpolicyeventcallbacks
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,20 +78,19 @@ For more information about <b>WdfDeviceInitSetPowerPolicyEventCallbacks</b>, see
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI, PdoDeviceInitAPI |
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_power_policy_event_callbacks_init.md">WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md">WdfDeviceInitSetPnpPowerEventCallbacks</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdf_power_policy_event_callbacks_init.md">WDF_POWER_POLICY_EVENT_CALLBACKS_INIT</a>
 
  
 

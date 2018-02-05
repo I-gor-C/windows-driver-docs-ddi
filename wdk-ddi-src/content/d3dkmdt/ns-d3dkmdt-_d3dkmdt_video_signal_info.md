@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 38d0a655-265b-46e0-8af3-de6757025588
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices], _D3DKMDT_VIDEO_SIGNAL_INFO, display.d3dkmdt_video_signal_info, D3DKMDT_VIDEO_SIGNAL_INFO
+ms.keywords : display.d3dkmdt_video_signal_info, DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO, _D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,9 +94,7 @@ A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a> stru
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also

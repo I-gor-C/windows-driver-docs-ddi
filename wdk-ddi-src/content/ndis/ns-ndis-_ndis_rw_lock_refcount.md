@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1b2c93dd-a80e-4197-bc4f-cad12f6d6c77
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndis_rw_lock_refcount, NDIS_RW_LOCK_REFCOUNT, ndis/NDIS_RW_LOCK_REFCOUNT, _NDIS_RW_LOCK_REFCOUNT, NDIS_RW_LOCK_REFCOUNT union [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_55aa679b-460e-43a3-8ad2-678926bbf200.xml
+ms.keywords : ndis/NDIS_RW_LOCK_REFCOUNT, _NDIS_RW_LOCK_REFCOUNT, netvista.ndis_rw_lock_refcount, ndis_processor_group_ref_55aa679b-460e-43a3-8ad2-678926bbf200.xml, NDIS_RW_LOCK_REFCOUNT union [Network Drivers Starting with Windows Vista], NDIS_RW_LOCK_REFCOUNT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -56,7 +56,5 @@ typedef union _NDIS_RW_LOCK_REFCOUNT {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Obsolete in NDIS 6.20 and later. Supported for NDIS 6.0 and NDIS 5.1 in   Windows Vista and Windows 7. Supported for NDIS 5.1 drivers in Windows XP. Obsolete in NDIS 6.20 and later. Supported for NDIS 6.0 and NDIS 5.1 in   Windows Vista and Windows 7. Supported for NDIS 5.1 drivers in Windows XP. |
 | **Header** | ndis.h (include Ndis.h) |

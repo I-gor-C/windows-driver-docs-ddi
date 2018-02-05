@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 1ae7af1d-5e1c-4728-82c5-efc8d60b5df6
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.ksdevice_dispatch, ks/PKSDEVICE_DISPATCH, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices], *PKSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, _KSDEVICE_DISPATCH, KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices]
+ms.keywords : KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices], PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, ks/PKSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH, _KSDEVICE_DISPATCH, stream.ksdevice_dispatch, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -70,9 +70,7 @@ In describing a device with the <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KS
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions. |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also

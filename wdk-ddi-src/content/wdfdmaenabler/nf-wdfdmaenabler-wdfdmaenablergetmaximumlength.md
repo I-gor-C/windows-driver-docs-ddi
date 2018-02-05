@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : f37359b9-807e-43dc-a66b-7b32c0921f06
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDMAENABLERGETMAXIMUMLENGTH, WdfDmaEnablerGetMaximumLength method, WdfDmaEnablerGetMaximumLength, kmdf.wdfdmaenablergetmaximumlength, DFDmaObjectRef_8d6be540-2f98-48f9-8ffe-332c96394920.xml, wdf.wdfdmaenablergetmaximumlength, wdfdmaenabler/WdfDmaEnablerGetMaximumLength
+ms.keywords : wdf.wdfdmaenablergetmaximumlength, PFN_WDFDMAENABLERGETMAXIMUMLENGTH, kmdf.wdfdmaenablergetmaximumlength, DFDmaObjectRef_8d6be540-2f98-48f9-8ffe-332c96394920.xml, WdfDmaEnablerGetMaximumLength, wdfdmaenabler/WdfDmaEnablerGetMaximumLength, WdfDmaEnablerGetMaximumLength method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,12 +70,10 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

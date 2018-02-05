@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 6a66a1a7-a70d-4cc7-a40d-dcb0c9df9f03
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PFILE_ID_FULL_DIR_INFORMATION, ntifs/FILE_ID_FULL_DIR_INFORMATION, ntifs/PFILE_ID_FULL_DIR_INFORMATION, PFILE_ID_FULL_DIR_INFORMATION, ifsk.file_id_full_dir_information, PFILE_ID_FULL_DIR_INFORMATION structure pointer [Installable File System Drivers], _FILE_ID_FULL_DIR_INFORMATION, fileinformationstructures_f12568df-3a02-4ae5-8989-b999a498300f.xml, FILE_ID_FULL_DIR_INFORMATION structure [Installable File System Drivers], FILE_ID_FULL_DIR_INFORMATION"
+ms.keywords : fileinformationstructures_f12568df-3a02-4ae5-8989-b999a498300f.xml, ntifs/FILE_ID_FULL_DIR_INFORMATION, PFILE_ID_FULL_DIR_INFORMATION structure pointer [Installable File System Drivers], ifsk.file_id_full_dir_information, FILE_ID_FULL_DIR_INFORMATION structure [Installable File System Drivers], ntifs/PFILE_ID_FULL_DIR_INFORMATION, FILE_ID_FULL_DIR_INFORMATION, PFILE_ID_FULL_DIR_INFORMATION, _FILE_ID_FULL_DIR_INFORMATION, *PFILE_ID_FULL_DIR_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_ID_FULL_DIR_INFORMATION, *PFILE_ID_FULL_DIR_INFORMATION
+req.typenames : "*PFILE_ID_FULL_DIR_INFORMATION, FILE_ID_FULL_DIR_INFORMATION"
 ---
 
 # _FILE_ID_FULL_DIR_INFORMATION structure
@@ -149,9 +149,6 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also

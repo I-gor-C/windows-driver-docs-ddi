@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 11A98BBE-2609-4E55-8988-42620EB15281
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.vhfcreate, VhfCreate, VhfCreate method [Human Input Devices], vhf/VhfCreate
+ms.keywords : VhfCreate, VhfCreate method [Human Input Devices], hid.vhfcreate, vhf/VhfCreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,14 +78,10 @@ VHF does not invoke any callback functions that are specified in <a href="..\vhf
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | vhf.h |
-| **Library** |  |
+| **Library** | VhfKm.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

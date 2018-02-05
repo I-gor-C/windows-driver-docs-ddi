@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : be080007-f88e-4cea-b15d-58dc4ac2cb66
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoCreateSymbolicLink, k104_8311eaf7-a12f-470d-b81f-83a12697ddbe.xml, IoCreateSymbolicLink routine [Kernel-Mode Driver Architecture], wdm/IoCreateSymbolicLink, kernel.iocreatesymboliclink
+ms.keywords : kernel.iocreatesymboliclink, IoCreateSymbolicLink routine [Kernel-Mode Driver Architecture], wdm/IoCreateSymbolicLink, IoCreateSymbolicLink, k104_8311eaf7-a12f-470d-b81f-83a12697ddbe.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,12 +76,11 @@ For more information about when to use <b>IoCreateSymbolicLink</b>, see <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlIoPassive3, PowerIrpDDis, HwStorPortProhibitedDDIs |
 
@@ -89,9 +88,9 @@ For more information about when to use <b>IoCreateSymbolicLink</b>, see <a href=
 
 <a href="..\wdm\nf-wdm-iocreateunprotectedsymboliclink.md">IoCreateUnprotectedSymbolicLink</a>
 
-<a href="..\ntddk\nf-ntddk-ioassignarcname.md">IoAssignArcName</a>
-
 <a href="..\wdm\nf-wdm-iodeletesymboliclink.md">IoDeleteSymbolicLink</a>
+
+<a href="..\ntddk\nf-ntddk-ioassignarcname.md">IoAssignArcName</a>
 
 <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
 

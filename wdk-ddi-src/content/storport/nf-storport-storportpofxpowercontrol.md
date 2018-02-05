@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 1EBEBD5D-E0E5-48A3-8CDA-C336575E53C6
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : StorPortPoFxPowerControl, StorPortPoFxPowerControl routine [Storage Devices], storport/StorPortPoFxPowerControl, storage.storportpofxpowercontrol
+ms.keywords : storport/StorPortPoFxPowerControl, storage.storportpofxpowercontrol, StorPortPoFxPowerControl routine [Storage Devices], StorPortPoFxPowerControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -174,14 +174,11 @@ Similarly, The PEP can send a power control request directly to the miniport. Th
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | storport.h |
-| **Library** |  |
+| **Library** | Storport.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 958d6f1f-e8e8-43e6-a4d4-73bae4b2be21
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PFINVOCATION, PFINVOCATION, print_unidrv-pscript_rendering_9937cdea-eacb-457c-af51-d8963ffd59e9.xml, print.finvocation, printoem/FINVOCATION, FINVOCATION structure [Print Devices], FINVOCATION, printoem/PFINVOCATION, _FINVOCATION, PFINVOCATION structure pointer [Print Devices]"
+ms.keywords : print_unidrv-pscript_rendering_9937cdea-eacb-457c-af51-d8963ffd59e9.xml, printoem/PFINVOCATION, PFINVOCATION structure pointer [Print Devices], FINVOCATION, print.finvocation, _FINVOCATION, PFINVOCATION, printoem/FINVOCATION, FINVOCATION structure [Print Devices], *PFINVOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FINVOCATION, *PFINVOCATION
+req.typenames : "*PFINVOCATION, FINVOCATION"
 req.product : Windows 10 or later.
 ---
 
@@ -65,9 +65,6 @@ Unidrv-supplied pointer to a string containing the printer's font selection comm
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | printoem.h (include Printoem.h) |
 
 ## See Also

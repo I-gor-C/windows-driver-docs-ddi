@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_MINIPORT IOCTL
@@ -72,9 +72,7 @@ The <b>Information</b> field contains the number of bytes returned in the output
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntddscsi.h (include Ntddscsi.h) |
-| **IRQL** |  |
 
 ## See Also
 

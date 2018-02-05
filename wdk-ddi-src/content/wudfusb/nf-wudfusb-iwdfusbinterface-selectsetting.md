@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : c47b025b-1be9-4fdc-965a-a9a82a394177
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface, SelectSetting, wdf.iwdfusbinterface_selectsetting, UMDFUSBref_2de47773-a511-42e2-b6bb-289cc5fbebb6.xml, SelectSetting method, IWDFUsbInterface interface, IWDFUsbInterface interface, SelectSetting method, IWDFUsbInterface::SelectSetting, wudfusb/IWDFUsbInterface::SelectSetting, umdf.iwdfusbinterface_selectsetting, SelectSetting method
+ms.keywords : IWDFUsbInterface, wdf.iwdfusbinterface_selectsetting, IWDFUsbInterface interface, SelectSetting method, umdf.iwdfusbinterface_selectsetting, SelectSetting method, SelectSetting method, IWDFUsbInterface interface, UMDFUSBref_2de47773-a511-42e2-b6bb-289cc5fbebb6.xml, wudfusb/IWDFUsbInterface::SelectSetting, SelectSetting, IWDFUsbInterface::SelectSetting
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -114,14 +114,12 @@ For more info <a href="https://msdn.microsoft.com/library/windows/hardware/ff539
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfusb.h (include Wudfusb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfusb.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 

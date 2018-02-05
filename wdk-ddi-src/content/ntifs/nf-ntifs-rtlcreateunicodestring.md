@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : f101fc66-40a9-4077-b651-cef0a0e247d4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlCreateUnicodeString routine [Installable File System Drivers], RtlCreateUnicodeString, ifsk.rtlcreateunicodestring, ntifs/RtlCreateUnicodeString, rtlref_8d7cd5ce-a1c9-48a0-86a9-86120954d328.xml
+ms.keywords : RtlCreateUnicodeString routine [Installable File System Drivers], RtlCreateUnicodeString, ifsk.rtlcreateunicodestring, rtlref_8d7cd5ce-a1c9-48a0-86a9-86120954d328.xml, ntifs/RtlCreateUnicodeString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,20 +75,18 @@ For information about other string-handling routines, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | This routine is available on Microsoft Windows 2000 and later. This routine is available on Microsoft Windows 2000 and later. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe (kernel mode); Ntdll.dll (user mode) |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
 <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : f8ab3914-c83e-4bfd-94b5-f4c409236b95
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : PcRegisterPhysicalConnection, audpc-routines_d806f159-7b56-428c-8780-f95d3c5f3b14.xml, portcls/PcRegisterPhysicalConnection, PcRegisterPhysicalConnection function [Audio Devices], audio.pcregisterphysicalconnection
+ms.keywords : PcRegisterPhysicalConnection, PcRegisterPhysicalConnection function [Audio Devices], portcls/PcRegisterPhysicalConnection, audio.pcregisterphysicalconnection, audpc-routines_d806f159-7b56-428c-8780-f95d3c5f3b14.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -96,22 +96,19 @@ An adapter driver can call the <a href="https://msdn.microsoft.com/library/windo
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcRegisterPhysicalConnection function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcRegisterPhysicalConnection function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
 
 <a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
 
 <a href="..\portcls\nf-portcls-pcregisterphysicalconnectiontoexternal.md">PcRegisterPhysicalConnectionToExternal</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537024">IUnregisterPhysicalConnection::UnregisterPhysicalConnection</a>
 

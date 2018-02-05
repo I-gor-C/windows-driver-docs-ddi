@@ -8,7 +8,7 @@ old-project : biometric
 ms.assetid : edfd5b49-f658-46c7-a3f3-221afb35abb7
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : WINBIO_SENSOR_ATTRIBUTES structure [Biometric Devices], biometric.winbio_sensor_attributes, biometric_ref_958b511b-a855-4897-87d8-f0d7bb4970ce.xml, winbio_ioctl/WINBIO_SENSOR_ATTRIBUTES, _WINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/PWINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES structure pointer [Biometric Devices]
+ms.keywords : PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES structure [Biometric Devices], winbio_ioctl/PWINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES structure pointer [Biometric Devices], *PWINBIO_SENSOR_ATTRIBUTES, biometric_ref_958b511b-a855-4897-87d8-f0d7bb4970ce.xml, WINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/WINBIO_SENSOR_ATTRIBUTES, biometric.winbio_sensor_attributes, _WINBIO_SENSOR_ATTRIBUTES
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -307,9 +307,7 @@ A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md"
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | winbio_ioctl.h |
 
 ## See Also

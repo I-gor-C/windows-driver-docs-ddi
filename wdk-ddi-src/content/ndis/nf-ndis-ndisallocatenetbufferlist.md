@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 9c821aac-9abd-4041-a15e-64306ada1c02
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatenetbufferlist, ndis_netbuf_functions_ref_85e4ad07-739d-4c37-b436-d9ca95c9db92.xml, NdisAllocateNetBufferList, ndis/NdisAllocateNetBufferList, NdisAllocateNetBufferList function [Network Drivers Starting with Windows Vista]
+ms.keywords : ndis_netbuf_functions_ref_85e4ad07-739d-4c37-b436-d9ca95c9db92.xml, NdisAllocateNetBufferList function [Network Drivers Starting with Windows Vista], NdisAllocateNetBufferList, ndis/NdisAllocateNetBufferList, netvista.ndisallocatenetbufferlist
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -60,8 +60,8 @@ PNET_BUFFER_LIST NdisAllocateNetBufferList(
 `PoolHandle`
 
 A NET_BUFFER_LIST structure pool handle that was previously returned from a call to 
-     <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-     NdisAllocateNetBufferListPool</b></mshelp:link>.
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+     NdisAllocateNetBufferListPool</a>.
 
 `ContextSize`
 
@@ -88,16 +88,16 @@ The amount of
 
 You can call the 
     <b>NdisAllocateNetBufferList</b> or 
-    <mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
-    NdisAllocateNetBufferAndNetBufferList</b></mshelp:link> function to allocate a 
+    <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
+    NdisAllocateNetBufferAndNetBufferList</a> function to allocate a 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure from a pool.
 <div class="alert"><b>Note</b>  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> and 
     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures must be allocated
     from an NDIS buffer pool. A driver must not allocate and initialize a NET_BUFFER_LIST or NET_BUFFER
     structure from its private memory pool or the stack.</div><div> </div>If you call 
     <b>NdisAllocateNetBufferList</b> and the NET_BUFFER_LIST structure pool was allocated by calling the 
-    <mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-    NdisAllocateNetBufferListPool</b></mshelp:link> function with the 
+    <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+    NdisAllocateNetBufferListPool</a> function with the 
     <b>fAllocateNetBuffer</b> member of the 
     <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure set to <b>TRUE</b>, NDIS allocates a
     NET_BUFFER_LIST, 
@@ -110,30 +110,28 @@ Call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferlistpool" tabindex="0"><b>
-   NdisAllocateNetBufferListPool</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferandnetbufferlist" tabindex="0"><b>
-   NdisAllocateNetBufferAndNetBufferList</b></mshelp:link>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
+   NdisAllocateNetBufferListPool</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
+   NdisAllocateNetBufferAndNetBufferList</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
 
 <a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
-
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 

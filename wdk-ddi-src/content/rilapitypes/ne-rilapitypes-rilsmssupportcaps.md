@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 38dac27d-1415-44bb-8dd6-2a6b6bd2a774
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_CAPS_SMSSUPPORT_ALL, netvista.rilsmssupportcaps_2, RILSMSSUPPORTCAPS, RIL_CAPS_SMSSUPPORT_16BITREFERENCENUMBER, rilapitypes/RIL_CAPS_SMSSUPPORT_16BITREFERENCENUMBER, RIL_CAPS_SMSSUPPORT_ALL, RILSMSSUPPORTCAPS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILSMSSUPPORTCAPS
+ms.keywords : RIL_CAPS_SMSSUPPORT_16BITREFERENCENUMBER, RILSMSSUPPORTCAPS enumeration [Network Drivers Starting with Windows Vista], netvista.rilsmssupportcaps_2, rilapitypes/RIL_CAPS_SMSSUPPORT_16BITREFERENCENUMBER, rilapitypes/RILSMSSUPPORTCAPS, RILSMSSUPPORTCAPS, rilapitypes/RIL_CAPS_SMSSUPPORT_ALL, RIL_CAPS_SMSSUPPORT_ALL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILSMSSUPPORTCAPS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

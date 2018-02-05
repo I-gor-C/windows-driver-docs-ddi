@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 456712c9-720c-436c-b1db-a6d53c358e22
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : 1394stct_84bb3968-39fc-4b3b-90cb-a4e917b8310a.xml, IRB, 1394/IRB, *PIRB, PIRB, _IRB, 1394/PIRB, PIRB structure pointer [Buses], IEEE.irb, IRB structure [Buses]
+ms.keywords : 1394/PIRB, IRB structure [Buses], PIRB structure pointer [Buses], 1394/IRB, _IRB, *PIRB, IEEE.irb, PIRB, IRB, 1394stct_84bb3968-39fc-4b3b-90cb-a4e917b8310a.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PIRB, IRB"
+req.typenames : IRB, *PIRB
 ---
 
 # _IRB structure
@@ -213,9 +213,6 @@ The <b>Parameters-&gt;Others.Arguments1</b> member of an <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

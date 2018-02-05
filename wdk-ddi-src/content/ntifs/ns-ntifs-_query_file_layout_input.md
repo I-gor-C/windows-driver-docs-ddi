@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 7404BFC3-8942-4927-9F5B-9FA860F9F95F
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT, ntifs/PQUERY_FILE_LAYOUT_INPUT, ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, QUERY_FILE_LAYOUT_RESTART, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_STREAMS, QUERY_FILE_LAYOUT_INCLUDE_EXTENTS, QUERY_FILE_LAYOUT_FILTER_TYPE_NONE, QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_NAMES, PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], ntifs/QUERY_FILE_LAYOUT_INPUT, _QUERY_FILE_LAYOUT_INPUT"
+ms.keywords : ntifs/QUERY_FILE_LAYOUT_INPUT, ntifs/PQUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_NAMES, ifsk.query_file_layout_input, QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS, QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID, QUERY_FILE_LAYOUT_INCLUDE_EXTENTS, PQUERY_FILE_LAYOUT_INPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_INCLUDE_STREAMS, _QUERY_FILE_LAYOUT_INPUT, PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO, QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED, QUERY_FILE_LAYOUT_INPUT structure [Installable File System Drivers], QUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_FILTER_TYPE_NONE, QUERY_FILE_LAYOUT_RESTART
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : QUERY_FILE_LAYOUT_INPUT, *PQUERY_FILE_LAYOUT_INPUT
+req.typenames : "*PQUERY_FILE_LAYOUT_INPUT, QUERY_FILE_LAYOUT_INPUT"
 ---
 
 # _QUERY_FILE_LAYOUT_INPUT structure
@@ -194,16 +194,14 @@ When <b>FilterType</b> is <b>QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS</b>, the <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting in Windows 8. Available starting in Windows 8. |
 | **Header** | ntifs.h (include Ntifs.h) |
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_query_file_layout_output.md">QUERY_FILE_LAYOUT_OUTPUT</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451133">FSCTL_QUERY_FILE_LAYOUT</a>
+
+<a href="..\ntifs\ns-ntifs-_query_file_layout_output.md">QUERY_FILE_LAYOUT_OUTPUT</a>
 
  
 

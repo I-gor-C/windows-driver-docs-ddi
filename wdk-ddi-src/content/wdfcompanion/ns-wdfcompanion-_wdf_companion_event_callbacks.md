@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 6a9c5420-1847-4145-aea5-9e9c58d86ea1
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "_WDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS structure, PWDF_COMPANION_EVENT_CALLBACKS, wdfcompanion/PWDF_COMPANION_EVENT_CALLBACKS, wdfcompanion/WDF_COMPANION_EVENT_CALLBACKS, wdf.wdf_companion_event_callbacks, *PWDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS, PWDF_COMPANION_EVENT_CALLBACKS structure pointer"
+ms.keywords : "_WDF_COMPANION_EVENT_CALLBACKS, PWDF_COMPANION_EVENT_CALLBACKS structure pointer, *PWDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS, wdfcompanion/PWDF_COMPANION_EVENT_CALLBACKS, PWDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS structure, wdf.wdf_companion_event_callbacks, wdfcompanion/WDF_COMPANION_EVENT_CALLBACKS"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS"
+req.typenames : WDF_COMPANION_EVENT_CALLBACKS, *PWDF_COMPANION_EVENT_CALLBACKS
 req.product : Windows 10 or later.
 ---
 
@@ -80,7 +80,5 @@ typedef struct _WDF_COMPANION_EVENT_CALLBACKS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
 | **Minimum UMDF version** | 2.23 |
 | **Header** | wdfcompanion.h |

@@ -8,7 +8,7 @@ old-project : pos
 ms.assetid : A1287386-E831-474A-858C-89787741FD57
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : pos.pos_cx_attributes_init, poscx/POS_CX_ATTRIBUTES_INIT, POS_CX_ATTRIBUTES_INIT, POS_CX_ATTRIBUTES_INIT function
+ms.keywords : POS_CX_ATTRIBUTES_INIT function, POS_CX_ATTRIBUTES_INIT, pos.pos_cx_attributes_init, poscx/POS_CX_ATTRIBUTES_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,9 @@ This function does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | poscx.h (include Poscx.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

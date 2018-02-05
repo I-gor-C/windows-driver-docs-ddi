@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 614ECB39-E1D0-4BF0-B3C8-635BADD05508
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kernel.ioreportinterruptinactive, IoReportInterruptInactive routine [Kernel-Mode Driver Architecture], IoReportInterruptInactive, wdm/IoReportInterruptInactive
+ms.keywords : IoReportInterruptInactive, wdm/IoReportInterruptInactive, IoReportInterruptInactive routine [Kernel-Mode Driver Architecture], kernel.ioreportinterruptinactive
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,24 +75,22 @@ For more information about <b>IoReportInterruptInactive</b>, see <a href="https:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 
-<a href="..\wdm\ns-wdm-_io_report_interrupt_active_state_parameters.md">IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS</a>
+<a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a>
 
 <a href="..\wdm\nf-wdm-iodisconnectinterruptex.md">IoDisconnectInterruptEx</a>
 
-<a href="..\wdm\nf-wdm-ioreportinterruptactive.md">IoReportInterruptActive</a>
+<a href="..\wdm\ns-wdm-_io_report_interrupt_active_state_parameters.md">IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS</a>
 
  
 

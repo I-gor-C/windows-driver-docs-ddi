@@ -8,7 +8,7 @@ old-project : SPB
 ms.assetid : 65C3DF3D-812D-44ED-B471-2D29ADBC2BBA
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : SPB.spb_request_parameters_init, SPB_REQUEST_PARAMETERS_INIT function [Buses], SPB_REQUEST_PARAMETERS_INIT, spbcx/SPB_REQUEST_PARAMETERS_INIT
+ms.keywords : spbcx/SPB_REQUEST_PARAMETERS_INIT, SPB_REQUEST_PARAMETERS_INIT function [Buses], SPB_REQUEST_PARAMETERS_INIT, SPB.spb_request_parameters_init
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE"
+req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product : Windows 10 or later.
 ---
 
@@ -69,20 +69,16 @@ Your SPB controller driver must use this function to initialize an <b>SPB_REQUES
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | spbcx.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any IRQL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
+
+<a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
 
  
 

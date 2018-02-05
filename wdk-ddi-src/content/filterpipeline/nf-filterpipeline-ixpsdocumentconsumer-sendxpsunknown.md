@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 5e2880c6-0f5a-4098-a97e-809ad75ddfd0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : SendXpsUnknown method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer::SendXpsUnknown, print.ixpsdocumentconsumer_sendxpsunknown, filterpipeline_bb57facb-5b47-4cf5-9f06-76c06d294a58.xml, IXpsDocumentConsumer interface [Print Devices], SendXpsUnknown method, IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer::SendXpsUnknown, SendXpsUnknown method [Print Devices], SendXpsUnknown
+ms.keywords : SendXpsUnknown method [Print Devices], IXpsDocumentConsumer, print.ixpsdocumentconsumer_sendxpsunknown, IXpsDocumentConsumer interface [Print Devices], SendXpsUnknown method, filterpipeline/IXpsDocumentConsumer::SendXpsUnknown, filterpipeline_bb57facb-5b47-4cf5-9f06-76c06d294a58.xml, SendXpsUnknown, SendXpsUnknown method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer::SendXpsUnknown
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,11 +68,6 @@ If the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556324">IX
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | filterpipeline.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | filterpipeline.h |

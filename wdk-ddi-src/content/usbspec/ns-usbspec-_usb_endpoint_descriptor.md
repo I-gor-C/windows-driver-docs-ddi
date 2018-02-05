@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : fb4f25e4-cf72-4308-9685-edc62b1cc510
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : usbspec/PUSB_ENDPOINT_DESCRIPTOR, usbstrct_3e135b0b-f2a1-4d7a-92b8-4a9e2724726c.xml, PUSB_ENDPOINT_DESCRIPTOR, USB_ENDPOINT_DESCRIPTOR, *PUSB_ENDPOINT_DESCRIPTOR, buses.usb_endpoint_descriptor, usbspec/USB_ENDPOINT_DESCRIPTOR, _USB_ENDPOINT_DESCRIPTOR, USB_ENDPOINT_DESCRIPTOR structure [Buses], PUSB_ENDPOINT_DESCRIPTOR structure pointer [Buses]
+ms.keywords : PUSB_ENDPOINT_DESCRIPTOR, PUSB_ENDPOINT_DESCRIPTOR structure pointer [Buses], usbspec/USB_ENDPOINT_DESCRIPTOR, buses.usb_endpoint_descriptor, *PUSB_ENDPOINT_DESCRIPTOR, _USB_ENDPOINT_DESCRIPTOR, usbspec/PUSB_ENDPOINT_DESCRIPTOR, usbstrct_3e135b0b-f2a1-4d7a-92b8-4a9e2724726c.xml, USB_ENDPOINT_DESCRIPTOR, USB_ENDPOINT_DESCRIPTOR structure [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -228,16 +228,13 @@ Specifies the maximum packet size that can be sent from or to this endpoint.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbspec.h (include Usb100.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
 <a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
 

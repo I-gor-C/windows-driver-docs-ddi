@@ -8,7 +8,7 @@ old-project : smartcrd
 ms.assetid : f55b74d0-d545-419a-87fb-c320f789aaf4
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : smartcrd.scard_reader_capabilities, _SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], scstruct_bf7b8868-e647-42c5-8e1d-18681db95b08.xml, smclib/*PSCARD_READER_CAPABILITIES, smclib/SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES structure [Smart Card Reader Devices]
+ms.keywords : "*PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, smclib/SCARD_READER_CAPABILITIES, smclib/*PSCARD_READER_CAPABILITIES, _SCARD_READER_CAPABILITIES, scstruct_bf7b8868-e647-42c5-8e1d-18681db95b08.xml, *PSCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], SCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], smartcrd.scard_reader_capabilities"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,11 +79,11 @@ typedef struct {
 
 `_CLKFrequenciesSupported`
 
-
+A structure with the following members:
 
 `_DataRatesSupported`
 
-
+A structure with the following members:
 
 `CardConfiscated`
 
@@ -415,7 +415,4 @@ This structure must be maintained by the smart card reader driver.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | smclib.h (include Smclib.h) |

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cfaa6068-979c-49c3-b671-c51ede023776
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/IoQueryFileInformation, IoQueryFileInformation function [Installable File System Drivers], ioref_7dc69c37-bd12-4857-ae49-69d0d29d8e72.xml, ifsk.ioqueryfileinformation, IoQueryFileInformation
+ms.keywords : IoQueryFileInformation function [Installable File System Drivers], IoQueryFileInformation, ntifs/IoQueryFileInformation, ifsk.ioqueryfileinformation, ioref_7dc69c37-bd12-4857-ae49-69d0d29d8e72.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

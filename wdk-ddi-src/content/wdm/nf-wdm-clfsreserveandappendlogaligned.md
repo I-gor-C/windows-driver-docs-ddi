@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4502c9bd-d03c-4f29-b46e-ba4532b838bb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ClfsReserveAndAppendLogAligned, kernel.clfsreserveandappendlogaligned, ClfsReserveAndAppendLogAligned routine [Kernel-Mode Driver Architecture], Clfs_aef34ba7-9276-41a4-8136-b20ae8e8531d.xml, wdm/ClfsReserveAndAppendLogAligned
+ms.keywords : ClfsReserveAndAppendLogAligned, Clfs_aef34ba7-9276-41a4-8136-b20ae8e8531d.xml, ClfsReserveAndAppendLogAligned routine [Kernel-Mode Driver Architecture], kernel.clfsreserveandappendlogaligned, wdm/ClfsReserveAndAppendLogAligned
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -232,24 +232,22 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | wdm.h (include Wdm.h) |
-| **Library** |  |
+| **Library** | Clfs.lib |
+| **DLL** | Clfs.sys |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
-
-<a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a>
 
 <a href="..\wdm\nf-wdm-clfsreserveandappendlog.md">ClfsReserveAndAppendLog</a>
 
 <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
+
+<a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a>
+
+<a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
 
  
 

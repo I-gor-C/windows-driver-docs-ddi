@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 57B41604-0189-48ED-847F-74C09C7746E8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WWAN_DEVICE_SERVICE_SESSION_CAPABILITY enumeration [Network Drivers Starting with Windows Vista], wwan/WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, WwanDeviceServiceSessionReadSupported, *PWWAN_DEVICE_SERVICE_SESSION_CAPABILITY, WwanDeviceServiceSessionNotSupported, wwan/WwanDeviceServiceSessionWriteSupported, wwan/WwanDeviceServiceSessionNotSupported, WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, netvista.wwan_device_service_session_capability, WwanDeviceServiceSessionWriteSupported, _WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, wwan/WwanDeviceServiceSessionReadSupported
+ms.keywords : wwan/WwanDeviceServiceSessionReadSupported, WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, *PWWAN_DEVICE_SERVICE_SESSION_CAPABILITY, wwan/WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, wwan/WwanDeviceServiceSessionWriteSupported, WwanDeviceServiceSessionReadSupported, WwanDeviceServiceSessionNotSupported, wwan/WwanDeviceServiceSessionNotSupported, WWAN_DEVICE_SERVICE_SESSION_CAPABILITY enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_device_service_session_capability, _WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, WwanDeviceServiceSessionWriteSupported
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_DEVICE_SERVICE_SESSION_CAPABILITY, WWAN_DEVICE_SERVICE_SESSION_CAPABILITY"
+req.typenames : WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, *PWWAN_DEVICE_SERVICE_SESSION_CAPABILITY
 req.product : Windows 10 or later.
 ---
 
@@ -75,9 +75,7 @@ typedef enum _WWAN_DEVICE_SERVICE_SESSION_CAPABILITY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 8. Available in Windows 8. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also

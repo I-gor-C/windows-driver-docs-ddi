@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 262d511d-2846-415d-b1b8-2687f12f9f78
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_ARCHITECTURE_INFO_DATA, d3d10umddi/D3D11_1DDI_ARCHITECTURE_INFO_DATA, display.d3d11_1ddi_architecture_info_data, D3D11_1DDI_ARCHITECTURE_INFO_DATA structure [Display Devices]
+ms.keywords : d3d10umddi/D3D11_1DDI_ARCHITECTURE_INFO_DATA, D3D11_1DDI_ARCHITECTURE_INFO_DATA, display.d3d11_1ddi_architecture_info_data, D3D11_1DDI_ARCHITECTURE_INFO_DATA structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -59,7 +59,5 @@ Specifies whether a rendering device batches rendering commands and performs mul
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |

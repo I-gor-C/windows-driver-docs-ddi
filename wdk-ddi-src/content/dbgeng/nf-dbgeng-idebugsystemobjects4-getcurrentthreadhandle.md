@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : edbda821-8016-48db-a2f5-7f615428da0c
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects4::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadHandle method, dbgeng/IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects4::GetCurrentThreadHandle, IDebugSystemObjects4, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadHandle method, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadHandle method, dbgeng/IDebugSystemObjects3::GetCurrentThreadHandle, IDebugSystemObjects3::GetCurrentThreadHandle, GetCurrentThreadHandle, IDebugSystemObjects::GetCurrentThreadHandle, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadHandle method, dbgeng/IDebugSystemObjects::GetCurrentThreadHandle, IDebugSystemObjects2::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], debugger.getcurrentthreadhandle, IDebugSystemObjects_6c615962-bf20-4cdb-8bab-8afc142e8c65.xml
+ms.keywords : IDebugSystemObjects3::GetCurrentThreadHandle, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadHandle method, dbgeng/IDebugSystemObjects3::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects4::GetCurrentThreadHandle, debugger.getcurrentthreadhandle, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadHandle method, IDebugSystemObjects::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadHandle method, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects4, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects::GetCurrentThreadHandle, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadHandle method, IDebugSystemObjects_6c615962-bf20-4cdb-8bab-8afc142e8c65.xml, dbgeng/IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects4::GetCurrentThreadHandle
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -87,11 +87,6 @@ For more information about threads, see <a href="https://msdn.microsoft.com/libr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

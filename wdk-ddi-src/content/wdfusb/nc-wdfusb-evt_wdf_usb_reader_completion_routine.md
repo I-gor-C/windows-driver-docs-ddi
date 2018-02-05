@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_TRI_STATE, *PWDF_TRI_STATE
+req.typenames : "*PWDF_TRI_STATE, WDF_TRI_STATE"
 req.product : Windows 10 or later.
 ---
 
@@ -119,14 +119,11 @@ For more information about the <i>EvtUsbTargetPipeReadComplete</i> callback func
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdf.h) |
-| **Library** |  |
 | **IRQL** | "<=DISPATCH_LEVEL  (See Remarks section.)" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

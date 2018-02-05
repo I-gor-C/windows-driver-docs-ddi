@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 8ed224eb-c1f6-4793-ae32-36f96d3af9ab
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_GPUENGINETOPOLOGY, display.dxgk_gpuenginetopology, _DXGK_GPUENGINETOPOLOGY, DXGK_GPUENGINETOPOLOGY, DmStructs_21e5ab51-877b-4b52-9762-cbaf3e82d2f0.xml, DXGK_GPUENGINETOPOLOGY structure [Display Devices]
+ms.keywords : "_DXGK_GPUENGINETOPOLOGY, display.dxgk_gpuenginetopology, DXGK_GPUENGINETOPOLOGY structure [Display Devices], DXGK_GPUENGINETOPOLOGY, d3dkmddi/DXGK_GPUENGINETOPOLOGY, DmStructs_21e5ab51-877b-4b52-9762-cbaf3e82d2f0.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct _DXGK_GPUENGINETOPOLOGY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 42dc9bbe-b00d-4187-ab07-0c268a061298
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue interface, GetState method, wdf.iwdfioqueue_getstate, GetState method, IWDFIoQueue interface, IWDFIoQueue, umdf.iwdfioqueue_getstate, GetState method, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml, GetState, IWDFIoQueue::GetState, wudfddi/IWDFIoQueue::GetState
+ms.keywords : umdf.iwdfioqueue_getstate, wudfddi/IWDFIoQueue::GetState, IWDFIoQueue::GetState, wdf.iwdfioqueue_getstate, GetState method, IWDFIoQueue interface, GetState method, GetState, GetState method, IWDFIoQueue interface, IWDFIoQueue, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -76,20 +76,18 @@ The total number of requests that are associated with the I/O queue is the sum o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.5 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
-
 <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
 
  
 

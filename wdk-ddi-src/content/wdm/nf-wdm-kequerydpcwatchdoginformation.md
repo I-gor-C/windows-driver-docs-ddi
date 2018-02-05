@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : d776b815-815b-491d-b84b-5bf1944c9fac
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_0a2f37cc-0062-4315-b7f1-9bbe814d69b4.xml, KeQueryDpcWatchdogInformation routine [Kernel-Mode Driver Architecture], kernel.kequerydpcwatchdoginformation, KeQueryDpcWatchdogInformation, wdm/KeQueryDpcWatchdogInformation
+ms.keywords : KeQueryDpcWatchdogInformation routine [Kernel-Mode Driver Architecture], wdm/KeQueryDpcWatchdogInformation, k105_0a2f37cc-0062-4315-b7f1-9bbe814d69b4.xml, KeQueryDpcWatchdogInformation, kernel.kequerydpcwatchdoginformation
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,14 +101,12 @@ DPC routines should run only for brief periods, and should delegate as much proc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

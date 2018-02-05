@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 592c7f8d-0a39-45af-a9b8-14ddd55e2835
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : CcIsThereDirtyData routine [Installable File System Drivers], CcIsThereDirtyData, ntifs/CcIsThereDirtyData, ccref_86c4a327-a13e-49b3-89d1-abf976973000.xml, ifsk.ccistheredirtydata
+ms.keywords : ntifs/CcIsThereDirtyData, CcIsThereDirtyData, ccref_86c4a327-a13e-49b3-89d1-abf976973000.xml, ifsk.ccistheredirtydata, CcIsThereDirtyData routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,14 +68,10 @@ Pointer to a volume parameter block (VPB) for the volume.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 
 ## See Also
 

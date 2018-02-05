@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bd6e9583-774f-4ca2-9c23-4d32b233daff
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFIOQUEUEPURGE, wdfio/WdfIoQueuePurge, kmdf.wdfioqueuepurge, wdf.wdfioqueuepurge, WdfIoQueuePurge, WdfIoQueuePurge method, DFQueueObjectRef_611371f2-862e-41c5-9f8f-d0a61c7e731e.xml
+ms.keywords : kmdf.wdfioqueuepurge, WdfIoQueuePurge, PFN_WDFIOQUEUEPURGE, DFQueueObjectRef_611371f2-862e-41c5-9f8f-d0a61c7e731e.xml, WdfIoQueuePurge method, wdf.wdfioqueuepurge, wdfio/WdfIoQueuePurge
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,22 +94,21 @@ For more information about the <b>WdfIoQueuePurge</b> method, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove |
 
 ## See Also
 
+<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
+
 <a href="..\wdfio\nf-wdfio-wdfioqueuedrain.md">WdfIoQueueDrain</a>
 
 <a href="..\wdfio\nf-wdfio-wdfioqueuepurgesynchronously.md">WdfIoQueuePurgeSynchronously</a>
-
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b0c6f733-2d8b-4140-bb2a-2a28212d3e69
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FILE_FS_VOLUME_INFORMATION, PFILE_FS_VOLUME_INFORMATION, fileinformationstructures_97bfe785-4c25-4402-91be-0fd2bda36c5d.xml, FILE_FS_VOLUME_INFORMATION structure [Installable File System Drivers], ifsk.file_fs_volume_information, *PFILE_FS_VOLUME_INFORMATION, _FILE_FS_VOLUME_INFORMATION, PFILE_FS_VOLUME_INFORMATION structure pointer [Installable File System Drivers], ntddk/PFILE_FS_VOLUME_INFORMATION, ntddk/FILE_FS_VOLUME_INFORMATION
+ms.keywords : ntddk/FILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION, PFILE_FS_VOLUME_INFORMATION structure pointer [Installable File System Drivers], FILE_FS_VOLUME_INFORMATION structure [Installable File System Drivers], *PFILE_FS_VOLUME_INFORMATION, ntddk/PFILE_FS_VOLUME_INFORMATION, ifsk.file_fs_volume_information, PFILE_FS_VOLUME_INFORMATION, fileinformationstructures_97bfe785-4c25-4402-91be-0fd2bda36c5d.xml, _FILE_FS_VOLUME_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -97,18 +97,15 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h, Fltkernel.h) |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
 
  
 

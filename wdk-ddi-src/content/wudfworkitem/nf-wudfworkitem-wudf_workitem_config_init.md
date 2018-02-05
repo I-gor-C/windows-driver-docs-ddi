@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : A75AE18F-802F-462B-BF96-5C03408F53CA
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wudfworkitem/WUDF_WORKITEM_CONFIG_INIT, wdf.wudf_workitem_config_init, umdf.wudf_workitem_config_init, WUDF_WORKITEM_CONFIG_INIT function, WUDF_WORKITEM_CONFIG_INIT
+ms.keywords : umdf.wudf_workitem_config_init, wdf.wudf_workitem_config_init, WUDF_WORKITEM_CONFIG_INIT, wudfworkitem/WUDF_WORKITEM_CONFIG_INIT, WUDF_WORKITEM_CONFIG_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -79,14 +79,11 @@ The <b>WUDF_WORKITEM_CONFIG_INIT</b> function stores the pointer that the <i>OnW
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfworkitem.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

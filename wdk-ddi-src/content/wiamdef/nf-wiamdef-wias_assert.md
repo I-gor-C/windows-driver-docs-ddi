@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 74dac8e1-a909-4c22-a650-af8a43421c5c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : WIAS_ASSERT, image.wias_assert, wiamdef/WIAS_ASSERT, WIAS_ASSERT macro [Imaging Devices], IWiaLog_91198444-77d8-4f41-957b-de4c3262988a.xml
+ms.keywords : IWiaLog_91198444-77d8-4f41-957b-de4c3262988a.xml, wiamdef/WIAS_ASSERT, WIAS_ASSERT macro [Imaging Devices], WIAS_ASSERT, image.wias_assert
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -78,14 +78,9 @@ To enable asserts in free builds, drivers must define the WIA_DEBUG macro by add
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wiamdef.h |
 
 ## See Also
 

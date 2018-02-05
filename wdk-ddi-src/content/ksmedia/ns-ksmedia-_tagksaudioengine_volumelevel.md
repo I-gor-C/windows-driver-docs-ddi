@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : E29E6F8B-F708-493B-94C3-A9DEE691ED3C
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.ksaudioengine_volumelevel, KSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL, PKSAUDIOENGINE_VOLUMELEVEL structure pointer [Audio Devices], ksmedia/KSAUDIOENGINE_VOLUMELEVEL, PKSAUDIOENGINE_VOLUMELEVEL, ksmedia/PKSAUDIOENGINE_VOLUMELEVEL, _tagKSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL structure [Audio Devices]
+ms.keywords : PKSAUDIOENGINE_VOLUMELEVEL, PKSAUDIOENGINE_VOLUMELEVEL structure pointer [Audio Devices], _tagKSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL, ksmedia/PKSAUDIOENGINE_VOLUMELEVEL, ksmedia/KSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL structure [Audio Devices], audio.ksaudioengine_volumelevel
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,16 +69,14 @@ Specifies the desired final volume level using the scale defined for the <b>KSPR
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>
-
 <a href="..\ksmedia\ne-ksmedia-audio_curve_type.md">AUDIO_CURVE_TYPE</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>
 
  
 

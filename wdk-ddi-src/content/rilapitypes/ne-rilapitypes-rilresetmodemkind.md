@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 622f9629-f172-469c-aba5-50a4eec78ab0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RIL_RESETMODEMKIND_ABRUPT, RILRESETMODEMKIND enumeration [Network Drivers Starting with Windows Vista], RILRESETMODEMKIND, RIL_RESETMODEMKIND_MAX, rilapitypes/RIL_RESETMODEMKIND_MAX, rilapitypes/RIL_RESETMODEMKIND_ABRUPT, netvista.rilresetmodemkind_2, rilapitypes/RILRESETMODEMKIND
+ms.keywords : netvista.rilresetmodemkind_2, RILRESETMODEMKIND, rilapitypes/RIL_RESETMODEMKIND_MAX, RIL_RESETMODEMKIND_MAX, rilapitypes/RILRESETMODEMKIND, RIL_RESETMODEMKIND_ABRUPT, RILRESETMODEMKIND enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_RESETMODEMKIND_ABRUPT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -74,7 +74,4 @@ typedef enum _RILRESETMODEMKIND {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

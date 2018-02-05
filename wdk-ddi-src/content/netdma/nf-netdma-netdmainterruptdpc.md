@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 93d7e4dd-70ee-4490-bffd-9b07511ee9fe
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NetDmaInterruptDpc function [Network Drivers Starting with Windows Vista], netvista.netdmainterruptdpc, netdma_ref_112a0d48-213e-4b5c-a776-11d5dcb83e1b.xml, NetDmaInterruptDpc, netdma/NetDmaInterruptDpc
+ms.keywords : NetDmaInterruptDpc, netdma/NetDmaInterruptDpc, NetDmaInterruptDpc function [Network Drivers Starting with Windows Vista], netdma_ref_112a0d48-213e-4b5c-a776-11d5dcb83e1b.xml, netvista.netdmainterruptdpc
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
+req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 
@@ -61,8 +61,8 @@ VOID NetDmaInterruptDpc(
 
 A handle that identifies the DMA channel. The DMA provider driver received this handle from NetDMA
      in a call to the 
-     <mshelp:link keywords="netvista.providerallocatedmachannel" tabindex="0"><b>
-     ProviderAllocateDmaChannel</b></mshelp:link> function.
+     <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
+     ProviderAllocateDmaChannel</a> function.
 
 `DmaDescriptor`
 
@@ -81,14 +81,11 @@ DMA providers call the
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 1.0 drivers in Windows Vista. Supported for NetDMA 1.0 drivers in Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | netdma.h (include Netdma.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

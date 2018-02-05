@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 444f7264-6072-4ee2-b3fd-030affa502b7
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : OutputRegisters2, OutputRegisters2 method [Windows Debugging], IDebugRegisters_ecc2b40a-622b-4f1f-867b-2eb6b575559d.xml, dbgeng/IDebugRegisters2::OutputRegisters2, IDebugRegisters2 interface [Windows Debugging], OutputRegisters2 method, debugger.outputregisters2, IDebugRegisters2::OutputRegisters2, IDebugRegisters2, OutputRegisters2 method [Windows Debugging], IDebugRegisters2 interface
+ms.keywords : IDebugRegisters2::OutputRegisters2, OutputRegisters2 method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], OutputRegisters2 method, IDebugRegisters2, debugger.outputregisters2, IDebugRegisters_ecc2b40a-622b-4f1f-867b-2eb6b575559d.xml, dbgeng/IDebugRegisters2::OutputRegisters2, OutputRegisters2, OutputRegisters2 method [Windows Debugging], IDebugRegisters2 interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -175,20 +175,15 @@ For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRe
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include DbgEng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553242">OutputRegisters</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 
  
 

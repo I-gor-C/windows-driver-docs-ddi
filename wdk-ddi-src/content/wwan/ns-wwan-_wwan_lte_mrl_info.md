@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 49C3D862-EB78-4C44-A7B7-CE15E79EB021
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : PWWAN_LTE_MRL_INFO, *PWWAN_LTE_MRL_INFO, wwan/WWAN_LTE_MRL_INFO, WWAN_LTE_MRL_INFO, netvista.wwan_lte_mrl_info, PWWAN_LTE_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], _WWAN_LTE_MRL_INFO, WWAN_LTE_MRL_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_LTE_MRL_INFO
+ms.keywords : PWWAN_LTE_MRL_INFO, wwan/WWAN_LTE_MRL_INFO, PWWAN_LTE_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_LTE_MRL_INFO, netvista.wwan_lte_mrl_info, wwan/PWWAN_LTE_MRL_INFO, WWAN_LTE_MRL_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_LTE_MRL_INFO, WWAN_LTE_MRL_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -100,16 +100,14 @@ The Tracking Area Code (0-65535). Use 0xFFFFFFFF when this information is not av
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_lte_serving_cell_info.md">WWAN_LTE_SERVING_CELL_INFO</a>
-
 <a href="..\wwan\ns-wwan-_wwan_lte_mrl.md">WWAN_LTE_MRL</a>
+
+<a href="..\wwan\ns-wwan-_wwan_lte_serving_cell_info.md">WWAN_LTE_SERVING_CELL_INFO</a>
 
 <a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
 

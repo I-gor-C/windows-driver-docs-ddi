@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 29e78bc3-0dc2-4e76-b683-c1e9a2d454d4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterGetChildPinCount, ks/KsFilterGetChildPinCount, KsFilterGetChildPinCount function [Streaming Media Devices], stream.ksfiltergetchildpincount, avfunc_cddbf6bc-da19-47a6-96d5-0d4151e70ff8.xml
+ms.keywords : ks/KsFilterGetChildPinCount, avfunc_cddbf6bc-da19-47a6-96d5-0d4151e70ff8.xml, KsFilterGetChildPinCount, stream.ksfiltergetchildpincount, KsFilterGetChildPinCount function [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -75,22 +75,19 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
 
 <a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
 
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
-
-<a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
 
 <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 

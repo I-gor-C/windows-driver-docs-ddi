@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 432e1d25-b7f4-4897-99dc-27ea14c851e2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_PIN_INFO, PNDIS_WWAN_PIN_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_PIN_INFO, netvista.ndis_wwan_pin_info, ndiswwan/PNDIS_WWAN_PIN_INFO, WwanRef_9095fdd7-5593-439c-897a-1def216d3374.xml, NDIS_WWAN_PIN_INFO, *PNDIS_WWAN_PIN_INFO, NDIS_WWAN_PIN_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PIN_INFO
+ms.keywords : "_NDIS_WWAN_PIN_INFO, PNDIS_WWAN_PIN_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_pin_info, PNDIS_WWAN_PIN_INFO, WwanRef_9095fdd7-5593-439c-897a-1def216d3374.xml, NDIS_WWAN_PIN_INFO structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_PIN_INFO, *PNDIS_WWAN_PIN_INFO, ndiswwan/NDIS_WWAN_PIN_INFO, ndiswwan/PNDIS_WWAN_PIN_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -207,16 +207,14 @@ The operation failed because a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | ndiswwan.h (include Ndiswwan.h) |
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_pin_info.md">WWAN_PIN_INFO</a>
-
 <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+
+<a href="..\wwan\ns-wwan-_wwan_pin_info.md">WWAN_PIN_INFO</a>
 
  
 

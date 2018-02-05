@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 147CE46A-315D-4B75-B345-A7C0B01B2078
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxEndpointNotifySetup, UfxEndpointNotifySetup, buses.ufxendpointnotifysetup, UfxEndpointNotifySetup method [Buses]
+ms.keywords : ufxclient/UfxEndpointNotifySetup, buses.ufxendpointnotifysetup, UfxEndpointNotifySetup, UfxEndpointNotifySetup method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -93,11 +93,8 @@ The following example shows how to handle setup packet completion.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |

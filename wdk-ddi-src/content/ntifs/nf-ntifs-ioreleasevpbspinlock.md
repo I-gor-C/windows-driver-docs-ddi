@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c0b93f32-4c5c-472c-8c13-3e441f86475f
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IoReleaseVpbSpinLock, ntifs/IoReleaseVpbSpinLock, IoReleaseVpbSpinLock routine [Installable File System Drivers], ifsk.ioreleasevpbspinlock, ioref_6ccdef5f-9874-4e93-8d91-a05b80d5cecf.xml
+ms.keywords : IoReleaseVpbSpinLock routine [Installable File System Drivers], IoReleaseVpbSpinLock, ifsk.ioreleasevpbspinlock, ioref_6ccdef5f-9874-4e93-8d91-a05b80d5cecf.xml, ntifs/IoReleaseVpbSpinLock
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -72,14 +72,11 @@ The holder of the VPB spin lock executes at IRQL DISPATCH_LEVEL after calling <a
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

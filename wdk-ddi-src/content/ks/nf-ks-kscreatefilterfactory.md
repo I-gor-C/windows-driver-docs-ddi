@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : ebfdae87-febc-4383-93f4-5d613df273a9
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : stream.kscreatefilterfactory, KsCreateFilterFactory, KsCreateFilterFactory function [Streaming Media Devices], ks/KsCreateFilterFactory, avfunc_0867c824-52e2-475a-9f36-05e6fba4cdd9.xml
+ms.keywords : avfunc_0867c824-52e2-475a-9f36-05e6fba4cdd9.xml, stream.kscreatefilterfactory, KsCreateFilterFactory function [Streaming Media Devices], KsCreateFilterFactory, ks/KsCreateFilterFactory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -177,14 +177,11 @@ This function should be used by minidrivers that either initialize themselves wi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Universal |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | Ks.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
@@ -192,9 +189,9 @@ This function should be used by minidrivers that either initialize themselves wi
 
 <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 
-<a href="..\ks\nf-ks-ksdeletefilterfactory.md">KsDeleteFilterFactory</a>
-
 <a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
+
+<a href="..\ks\nf-ks-ksdeletefilterfactory.md">KsDeleteFilterFactory</a>
 
  
 

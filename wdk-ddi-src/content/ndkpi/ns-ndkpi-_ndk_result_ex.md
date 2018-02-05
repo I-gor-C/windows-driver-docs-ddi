@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : C79BF9FC-4836-48AD-8E9F-41278BB01E11
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ndk_result_ex, ndkpi/NDK_RESULT_EX, NDK_RESULT_EX, PNDK_RESULT_EX, NDK_RESULT_EX structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_RESULT_EX, PNDK_RESULT_EX structure pointer [Network Drivers Starting with Windows Vista], _NDK_RESULT_EX
+ms.keywords : NDK_RESULT_EX structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_RESULT_EX, PNDK_RESULT_EX, PNDK_RESULT_EX structure pointer [Network Drivers Starting with Windows Vista], NDK_RESULT_EX, _NDK_RESULT_EX, netvista.ndk_result_ex, ndkpi/NDK_RESULT_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,18 +84,16 @@ The type-specific completion output, if any. If the  <b>Type</b> member is <b>Nd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | None supported,Supported in NDIS 6.40 and later. None supported,Supported in NDIS 6.40 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_qp.md">NDK_FN_CREATE_QP</a>
-
 <a href="..\ndkpi\ne-ndkpi-_ndk_operation_type.md">NDK_OPERATION_TYPE</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
+
+<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_qp.md">NDK_FN_CREATE_QP</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
 

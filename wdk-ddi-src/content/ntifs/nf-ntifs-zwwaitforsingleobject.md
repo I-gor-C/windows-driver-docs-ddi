@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5eea0877-329d-4fa3-847e-365d6a545b07
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : NtWaitForSingleObject, ntifs/NtWaitForSingleObject, kernel.zwwaitforsingleobject, ntifs/ZwWaitForSingleObject, ZwWaitForSingleObject routine [Kernel-Mode Driver Architecture], ZwWaitForSingleObject, k111_44a7540a-fbf5-4f2e-92d1-0d23cc41a081.xml
+ms.keywords : ZwWaitForSingleObject, NtWaitForSingleObject, ntifs/ZwWaitForSingleObject, kernel.zwwaitforsingleobject, k111_44a7540a-fbf5-4f2e-92d1-0d23cc41a081.xml, ntifs/NtWaitForSingleObject, ZwWaitForSingleObject routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -186,36 +186,35 @@ Time-out intervals are measured relative to the system clock, and the accuracy o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h, FltKernel.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | HwStorPortProhibitedDDIs, SpNoWait |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
-
-<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 
 <a href="..\ntifs\nf-ntifs-zwsetevent.md">ZwSetEvent</a>
 
-<a href="..\ntifs\nf-ntifs-zwcreateevent.md">ZwCreateEvent</a>
-
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
-<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
 
 <a href="..\wdm\nf-wdm-iocreatesynchronizationevent.md">IoCreateSynchronizationEvent</a>
+
+<a href="..\ntifs\nf-ntifs-zwcreateevent.md">ZwCreateEvent</a>
+
+<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
+
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 
 <a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
 
 <a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
 
-<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
  
 

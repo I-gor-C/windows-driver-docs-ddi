@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 2b77853d-2c34-4902-90e3-b9a58d56e88e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_AER_ENDPOINT_DESCRIPTOR, whea.whea_aer_endpoint_descriptor, PWHEA_AER_ENDPOINT_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_06cb1486-51b0-457d-a0d0-b902c6c43cfc.xml, WHEA_AER_ENDPOINT_DESCRIPTOR, *PWHEA_AER_ENDPOINT_DESCRIPTOR, _WHEA_AER_ENDPOINT_DESCRIPTOR, ntddk/PWHEA_AER_ENDPOINT_DESCRIPTOR, PWHEA_AER_ENDPOINT_DESCRIPTOR, WHEA_AER_ENDPOINT_DESCRIPTOR structure [WHEA Drivers and Applications]
+ms.keywords : "*PWHEA_AER_ENDPOINT_DESCRIPTOR, ntddk/WHEA_AER_ENDPOINT_DESCRIPTOR, _WHEA_AER_ENDPOINT_DESCRIPTOR, WHEA_AER_ENDPOINT_DESCRIPTOR structure [WHEA Drivers and Applications], whearef_06cb1486-51b0-457d-a0d0-b902c6c43cfc.xml, whea.whea_aer_endpoint_descriptor, ntddk/PWHEA_AER_ENDPOINT_DESCRIPTOR, WHEA_AER_ENDPOINT_DESCRIPTOR, PWHEA_AER_ENDPOINT_DESCRIPTOR, PWHEA_AER_ENDPOINT_DESCRIPTOR structure pointer [WHEA Drivers and Applications]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWHEA_AER_ENDPOINT_DESCRIPTOR, WHEA_AER_ENDPOINT_DESCRIPTOR"
+req.typenames : WHEA_AER_ENDPOINT_DESCRIPTOR, *PWHEA_AER_ENDPOINT_DESCRIPTOR
 ---
 
 # _WHEA_AER_ENDPOINT_DESCRIPTOR structure
@@ -105,6 +105,26 @@ An AER_ENDPOINT_DESCRIPTOR_FLAGS union that indicates which of the members of th
 </table></span></div>
 
 
+#### AdvancedCapsAndControlRW
+
+A single bit that indicates that the operating system can write to the <b>AdvancedCapsAndControl</b> member of the WHEA_AER_ENDPOINT_DESCRIPTOR structure.
+
+
+#### AsUSHORT
+
+A USHORT representation of the contents of the AER_ENDPOINT_DESCRIPTOR_FLAGS union.
+
+
+#### CorrectableErrorMaskRW
+
+A single bit that indicates that the operating system can write to the <b>CorrectableErrorMask</b> member of the WHEA_AER_ENDPOINT_DESCRIPTOR structure.
+
+
+#### Reserved
+
+Reserved for system use.
+
+
 #### UncorrectableErrorMaskRW
 
 A single bit that indicates that the operating system can write to the <b>UncorrectableErrorMask</b> member of the WHEA_AER_ENDPOINT_DESCRIPTOR structure.
@@ -113,26 +133,6 @@ A single bit that indicates that the operating system can write to the <b>Uncorr
 #### UncorrectableErrorSeverityRW
 
 A single bit that indicates that the operating system can write to the <b>UncorrectableErrorSeverity</b> member of the WHEA_AER_ENDPOINT_DESCRIPTOR structure.
-
-
-#### CorrectableErrorMaskRW
-
-A single bit that indicates that the operating system can write to the <b>CorrectableErrorMask</b> member of the WHEA_AER_ENDPOINT_DESCRIPTOR structure.
-
-
-#### AdvancedCapsAndControlRW
-
-A single bit that indicates that the operating system can write to the <b>AdvancedCapsAndControl</b> member of the WHEA_AER_ENDPOINT_DESCRIPTOR structure.
-
-
-#### Reserved
-
-Reserved for system use.
-
-
-#### AsUSHORT
-
-A USHORT representation of the contents of the AER_ENDPOINT_DESCRIPTOR_FLAGS union.
 
 `Reserved`
 
@@ -160,16 +160,14 @@ A WHEA_AER_ENDPOINT_DESCRIPTOR structure is contained within the <a href="..\ntd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
-
 <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a>
+
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
  
 

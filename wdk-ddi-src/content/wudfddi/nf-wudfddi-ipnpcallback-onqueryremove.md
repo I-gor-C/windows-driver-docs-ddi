@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : ae95a22d-7b5b-4854-b2f5-76b46cf268f9
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : OnQueryRemove method, IPnpCallback interface, wdf.ipnpcallback_onqueryremove, OnQueryRemove method, OnQueryRemove, IPnpCallback::OnQueryRemove, IPnpCallback, UMDFDeviceObjectRef_27404593-38b6-46cc-8dcc-809d159822b6.xml, wudfddi/IPnpCallback::OnQueryRemove, IPnpCallback interface, OnQueryRemove method, umdf.ipnpcallback_onqueryremove
+ms.keywords : OnQueryRemove, IPnpCallback::OnQueryRemove, OnQueryRemove method, wudfddi/IPnpCallback::OnQueryRemove, IPnpCallback, wdf.ipnpcallback_onqueryremove, OnQueryRemove method, IPnpCallback interface, UMDFDeviceObjectRef_27404593-38b6-46cc-8dcc-809d159822b6.xml, IPnpCallback interface, OnQueryRemove method, umdf.ipnpcallback_onqueryremove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -77,22 +77,17 @@ For more information about the <b>OnQueryRemove</b> callback method, see <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
+<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
 
 <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 
  
 

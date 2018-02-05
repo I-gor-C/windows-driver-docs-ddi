@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : a565627a-4a70-4255-9a88-c39a3db11d25
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.geteventfiltercommandwide, GetEventFilterCommandWide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetEventFilterCommandWide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4, IDebugControl4 interface [Windows Debugging], GetEventFilterCommandWide method, dbgeng/IDebugControl4::GetEventFilterCommandWide
+ms.keywords : debugger.geteventfiltercommandwide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetEventFilterCommandWide method, dbgeng/IDebugControl4::GetEventFilterCommandWide, GetEventFilterCommandWide, IDebugControl4::GetEventFilterCommandWide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -100,24 +100,19 @@ For more information about event filters, see <a href="https://msdn.microsoft.co
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
 <a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556678">SetEventFilterCommand</a>
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546653">GetExceptionFilterSecondCommand</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556678">SetEventFilterCommand</a>
 
  
 

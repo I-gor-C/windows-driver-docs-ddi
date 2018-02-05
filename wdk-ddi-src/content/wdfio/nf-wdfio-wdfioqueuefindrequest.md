@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 379fc7ec-577a-48a4-83b0-4be4e8cfe1bf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : wdf.wdfioqueuefindrequest, kmdf.wdfioqueuefindrequest, wdfio/WdfIoQueueFindRequest, DFQueueObjectRef_c0d57542-6256-4502-ad31-8b388857296f.xml, WdfIoQueueFindRequest, PFN_WDFIOQUEUEFINDREQUEST, WdfIoQueueFindRequest method
+ms.keywords : WdfIoQueueFindRequest, DFQueueObjectRef_c0d57542-6256-4502-ad31-8b388857296f.xml, wdf.wdfioqueuefindrequest, WdfIoQueueFindRequest method, PFN_WDFIOQUEUEFINDREQUEST, wdfio/WdfIoQueueFindRequest, kmdf.wdfioqueuefindrequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -166,12 +166,11 @@ For more information about the <b>WdfIoQueueFindRequest</b> method, see <a href=
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfio.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueuefindrequestfailed, wdfioqueueretrievefoundrequest, wdfioqueueretrievenextrequest |
 
@@ -181,9 +180,9 @@ For more information about the <b>WdfIoQueueFindRequest</b> method, see <a href=
 
 <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a>
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548739">WdfObjectDereference</a>
+
+<a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>
 
  
 

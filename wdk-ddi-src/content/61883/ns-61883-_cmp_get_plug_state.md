@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 76BC179A-7484-433C-8467-B13BA7008B90
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : CMP_GET_PLUG_STATE structure [Buses], PCMP_GET_PLUG_STATE structure pointer [Buses], _CMP_GET_PLUG_STATE, *PCMP_GET_PLUG_STATE, CMP_GET_PLUG_STATE, PCMP_GET_PLUG_STATE, IEEE.cmp_get_plug_state, 61883/PCMP_GET_PLUG_STATE, 61883/CMP_GET_PLUG_STATE
+ms.keywords : PCMP_GET_PLUG_STATE, IEEE.cmp_get_plug_state, *PCMP_GET_PLUG_STATE, 61883/CMP_GET_PLUG_STATE, PCMP_GET_PLUG_STATE structure pointer [Buses], _CMP_GET_PLUG_STATE, CMP_GET_PLUG_STATE structure [Buses], CMP_GET_PLUG_STATE, 61883/PCMP_GET_PLUG_STATE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -102,9 +102,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 61883.h |
 
 ## See Also

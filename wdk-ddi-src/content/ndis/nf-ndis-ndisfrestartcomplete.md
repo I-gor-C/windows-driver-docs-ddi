@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 84685763-e7d8-4184-afa3-83efb4a0d3d7
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisFRestartComplete function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_592af2b7-2172-4a8d-aa7b-315f7c321705.xml, ndis/NdisFRestartComplete, NdisFRestartComplete, netvista.ndisfrestartcomplete
+ms.keywords : NdisFRestartComplete function [Network Drivers Starting with Windows Vista], NdisFRestartComplete, netvista.ndisfrestartcomplete, ndis/NdisFRestartComplete, filter_ndis_functions_ref_592af2b7-2172-4a8d-aa7b-315f7c321705.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,9 +70,12 @@ The final status of the restart operation. The following status values are suppo
 
 
 
-#### NDIS_STATUS_SUCCESS
+#### NDIS_STATUS_FAILURE
 
-The driver successfully restarted the flow of network data.
+The driver indicates NDIS_STATUS_FAILURE if none of the preceding values applies. The driver
+       should call the 
+       <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a> function
+       together with parameters that specify the reason for the failure.
 
 
 #### NDIS_STATUS_RESOURCES
@@ -80,12 +83,9 @@ The driver successfully restarted the flow of network data.
 The restart failed because of insufficient resources.
 
 
-#### NDIS_STATUS_FAILURE
+#### NDIS_STATUS_SUCCESS
 
-The driver indicates NDIS_STATUS_FAILURE if none of the preceding values applies. The driver
-       should call the 
-       <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a> function
-       together with parameters that specify the reason for the failure.
+The driver successfully restarted the flow of network data.
 
 
 ## Return Value
@@ -111,22 +111,20 @@ A filter driver can resume indicating received network data immediately after ND
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | Irql_Filter_Driver_Function |
 
 ## See Also
 
+<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+
 <a href="..\ndis\nc-ndis-filter_restart.md">FilterRestart</a>
 
 <a href="..\ndis\nf-ndis-ndiswriteeventlogentry.md">NdisWriteEventLogEntry</a>
-
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 
  
 

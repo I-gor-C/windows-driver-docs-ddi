@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : D55A8B5A-4133-4CE8-AD08-F551A3AEA42C
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_HISTORYBUFFERPRECISION, d3dkmddi/DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION structure [Display Devices], display.dxgkarg_historybufferprecision"
+ms.keywords : display.dxgkarg_historybufferprecision, d3dkmddi/DXGKARG_HISTORYBUFFERPRECISION, _DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -120,9 +120,7 @@ In a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">D
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

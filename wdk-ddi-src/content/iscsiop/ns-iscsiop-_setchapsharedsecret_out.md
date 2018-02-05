@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : a169a5b2-5303-41fc-80d2-69b44fd45c47
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : "*PSetCHAPSharedSecret_OUT, iscsiop/SetCHAPSharedSecret_OUT, SetCHAPSharedSecret_OUT structure [Storage Devices], PSetCHAPSharedSecret_OUT structure pointer [Storage Devices], _SetCHAPSharedSecret_OUT, iscsiop/PSetCHAPSharedSecret_OUT, SetCHAPSharedSecret_OUT, structs-iSCSI_f11f03d2-424a-4537-9cbd-f4fd3ca0e59d.xml, storage.setchapsharedsecret_out, PSetCHAPSharedSecret_OUT"
+ms.keywords : "*PSetCHAPSharedSecret_OUT, PSetCHAPSharedSecret_OUT, PSetCHAPSharedSecret_OUT structure pointer [Storage Devices], structs-iSCSI_f11f03d2-424a-4537-9cbd-f4fd3ca0e59d.xml, iscsiop/PSetCHAPSharedSecret_OUT, iscsiop/SetCHAPSharedSecret_OUT, SetCHAPSharedSecret_OUT structure [Storage Devices], _SetCHAPSharedSecret_OUT, storage.setchapsharedsecret_out, SetCHAPSharedSecret_OUT"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetCHAPSharedSecret_OUT, SetCHAPSharedSecret_OUT"
+req.typenames : SetCHAPSharedSecret_OUT, *PSetCHAPSharedSecret_OUT
 ---
 
 # _SetCHAPSharedSecret_OUT structure
@@ -61,18 +61,15 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565585">SetCHAPSharedSecret</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 <a href="..\iscsiop\ns-iscsiop-_setchapsharedsecret_in.md">SetCHAPSharedSecret_IN</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565585">SetCHAPSharedSecret</a>
 
  
 

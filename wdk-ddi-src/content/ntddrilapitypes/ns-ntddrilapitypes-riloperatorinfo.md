@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 213a4d4e-d19a-40c4-9bc4-8cf6f8aa2d07
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RILOPERATORINFO, RILOPERATORINFO structure [Network Drivers Starting with Windows Vista], *LPRILOPERATORINFO, RILOPERATORINFO, netvista.riloperatorinfo
+ms.keywords : netvista.riloperatorinfo, RILOPERATORINFO structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILOPERATORINFO, RILOPERATORINFO, *LPRILOPERATORINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ typedef struct _RILOPERATORINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

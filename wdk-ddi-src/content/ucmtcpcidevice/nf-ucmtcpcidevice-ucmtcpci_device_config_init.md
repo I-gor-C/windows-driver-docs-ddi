@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 8845f8f7-683e-487b-924b-596dbbfb98f2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ucmtcpci_device_config_init, UCMTCPCI_DEVICE_CONFIG_INIT method [Buses], UCMTCPCI_DEVICE_CONFIG_INIT, ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG_INIT
+ms.keywords : UCMTCPCI_DEVICE_CONFIG_INIT method [Buses], UCMTCPCI_DEVICE_CONFIG_INIT, buses.ucmtcpci_device_config_init, ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -66,14 +66,11 @@ This method does not return a value.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ucmtcpcidevice.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

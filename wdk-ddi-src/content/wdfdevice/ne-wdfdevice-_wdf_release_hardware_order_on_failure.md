@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 534B1E39-6B11-4954-8792-41A25FCA31B2
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfReleaseHardwareOrderOnFailureAfterDescendants, WdfReleaseHardwareOrderOnFailureInvalid, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration pointer, wdfdevice/PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureEarly, wdfdevice/WdfReleaseHardwareOrderOnFailureEarly, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration, *PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, wdfdevice/WdfReleaseHardwareOrderOnFailureAfterDescendants, wdf.wdf_release_hardware_order_on_failure, wdfdevice/WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, kmdf.wdf_release_hardware_order_on_failure, wdfdevice/WdfReleaseHardwareOrderOnFailureInvalid
+ms.keywords : WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration, wdfdevice/WdfReleaseHardwareOrderOnFailureEarly, wdfdevice/WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, wdfdevice/PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureInvalid, wdfdevice/WdfReleaseHardwareOrderOnFailureAfterDescendants, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration pointer, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, wdfdevice/WdfReleaseHardwareOrderOnFailureInvalid, _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, *PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureEarly, kmdf.wdf_release_hardware_order_on_failure, wdf.wdf_release_hardware_order_on_failure, WdfReleaseHardwareOrderOnFailureAfterDescendants, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, *PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
+req.typenames : "*PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE"
 req.product : Windows 10 or later.
 ---
 
@@ -85,7 +85,6 @@ If a driver specifies <b>WdfReleaseHardwareOrderOnFailureAfterDescendants</b>, t
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Minimum KMDF version** | 1.11 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |

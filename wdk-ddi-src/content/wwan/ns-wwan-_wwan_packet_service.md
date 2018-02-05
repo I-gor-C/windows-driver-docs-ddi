@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, WwanRef_ce147c69-a83d-42fd-9b08-7a12e6ecaf1a.xml, netvista.wwan_packet_service, PWWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], _WWAN_PACKET_SERVICE, wwan/WWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista]
+ms.keywords : wwan/WWAN_PACKET_SERVICE, _WWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista], WwanRef_ce147c69-a83d-42fd-9b08-7a12e6ecaf1a.xml, netvista.wwan_packet_service, wwan/PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE"
+req.typenames : WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
 req.product : Windows 10 or later.
 ---
 
@@ -163,17 +163,15 @@ Miniport drivers must report the cause code at the earliest possible instance. F
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndis_wwan_packet_service_state" tabindex="0"><b>
-   NDIS_WWAN_PACKET_SERVICE_STATE</b></mshelp:link>
-
 <a href="..\wwan\ne-wwan-_wwan_packet_service_state.md">WWAN_PACKET_SERVICE_STATE</a>
+
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_packet_service_state.md">
+   NDIS_WWAN_PACKET_SERVICE_STATE</a>
 
  
 

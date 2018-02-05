@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 0871EA8C-4F59-451E-89FB-8A0D44219456
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsGetSiloMonitorContextSlot, PsGetSiloMonitorContextSlot routine [Kernel-Mode Driver Architecture], ntddk/PsGetSiloMonitorContextSlot, kernel.psgetsilomonitorcontextslot
+ms.keywords : ntddk/PsGetSiloMonitorContextSlot, PsGetSiloMonitorContextSlot, kernel.psgetsilomonitorcontextslot, PsGetSiloMonitorContextSlot routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,7 @@ A valid silo context slot.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

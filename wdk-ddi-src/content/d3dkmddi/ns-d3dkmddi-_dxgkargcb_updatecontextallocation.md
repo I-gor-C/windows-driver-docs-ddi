@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 07BFCA6C-4E75-4BB5-9F6A-22E1FFAFFF6F
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGKARGCB_UPDATECONTEXTALLOCATION structure [Display Devices], display.dxgkargcb_updatecontextallocation, d3dkmddi/DXGKARGCB_UPDATECONTEXTALLOCATION, _DXGKARGCB_UPDATECONTEXTALLOCATION, DXGKARGCB_UPDATECONTEXTALLOCATION
+ms.keywords : DXGKARGCB_UPDATECONTEXTALLOCATION, display.dxgkargcb_updatecontextallocation, d3dkmddi/DXGKARGCB_UPDATECONTEXTALLOCATION, DXGKARGCB_UPDATECONTEXTALLOCATION structure [Display Devices], _DXGKARGCB_UPDATECONTEXTALLOCATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ Specify the size of the driver private data.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
 ## See Also

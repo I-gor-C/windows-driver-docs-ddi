@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 8a7e136a-fc87-481c-bb35-270408cb5071
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FILE_FS_CONTROL_INFORMATION structure [Installable File System Drivers], PFILE_FS_CONTROL_INFORMATION structure pointer [Installable File System Drivers], ntifs/PFILE_FS_CONTROL_INFORMATION, fileinformationstructures_387e4fd0-c3a2-4472-b29d-79f8a5d876f8.xml, FILE_FS_CONTROL_INFORMATION, *PFILE_FS_CONTROL_INFORMATION, _FILE_FS_CONTROL_INFORMATION, ifsk.file_fs_control_information, ntifs/FILE_FS_CONTROL_INFORMATION, PFILE_FS_CONTROL_INFORMATION
+ms.keywords : "_FILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION structure [Installable File System Drivers], ntifs/FILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION, ntifs/PFILE_FS_CONTROL_INFORMATION, ifsk.file_fs_control_information, PFILE_FS_CONTROL_INFORMATION, fileinformationstructures_387e4fd0-c3a2-4472-b29d-79f8a5d876f8.xml, PFILE_FS_CONTROL_INFORMATION structure pointer [Installable File System Drivers], *PFILE_FS_CONTROL_INFORMATION"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -246,24 +246,21 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntifs.h (include Ntifs.h, Fltkernel.h) |
 
 ## See Also
 
 <a href="..\ntifs\nf-ntifs-zwsetvolumeinformationfile.md">ZwSetVolumeInformationFile</a>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
 
-<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
-
 <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
 
  
 

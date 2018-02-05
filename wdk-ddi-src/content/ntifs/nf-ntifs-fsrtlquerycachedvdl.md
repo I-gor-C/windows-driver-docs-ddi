@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 5D4F3D70-6E2B-4B2E-91A4-6852AF8FEAD0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlquerycachedvdl, ntifs/FsRtlQueryCachedVdl, FsRtlQueryCachedVdl routine [Installable File System Drivers], FsRtlQueryCachedVdl
+ms.keywords : ntifs/FsRtlQueryCachedVdl, FsRtlQueryCachedVdl routine [Installable File System Drivers], ifsk.fsrtlquerycachedvdl, FsRtlQueryCachedVdl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,11 +73,9 @@ The <b>FsRtlQueryCachedVdl</b> routine will return the VDL for a full span file 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in starting with Windows 8. Available in starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

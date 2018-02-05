@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5ae60715-ba51-4814-ae34-34967cdbab78
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WDF_DEVICE_PNP_CAPABILITIES_INIT function, WDF_DEVICE_PNP_CAPABILITIES_INIT, kmdf.wdf_device_pnp_capabilities_init, DFDeviceObjectGeneralRef_630e05dc-1566-4dc4-b35c-d9b756629c99.xml, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES_INIT, wdf.wdf_device_pnp_capabilities_init
+ms.keywords : wdf.wdf_device_pnp_capabilities_init, DFDeviceObjectGeneralRef_630e05dc-1566-4dc4-b35c-d9b756629c99.xml, kmdf.wdf_device_pnp_capabilities_init, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES_INIT, WDF_DEVICE_PNP_CAPABILITIES_INIT, WDF_DEVICE_PNP_CAPABILITIES_INIT function
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,11 +71,8 @@ The <b>WDF_DEVICE_PNP_CAPABILITIES_INIT</b> function zeros the specified <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

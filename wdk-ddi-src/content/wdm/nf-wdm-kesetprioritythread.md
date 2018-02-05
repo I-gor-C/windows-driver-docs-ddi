@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 400176a1-9192-424b-be37-9386cc3ffbb2
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : KeSetPriorityThread routine [Kernel-Mode Driver Architecture], wdm/KeSetPriorityThread, kernel.kesetprioritythread, k105_b767dc2c-39ec-41de-8888-177d83de67c4.xml, KeSetPriorityThread
+ms.keywords : k105_b767dc2c-39ec-41de-8888-177d83de67c4.xml, wdm/KeSetPriorityThread, KeSetPriorityThread routine [Kernel-Mode Driver Architecture], kernel.kesetprioritythread, KeSetPriorityThread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -74,14 +74,12 @@ If a call to <b>KeSetPriorityThread</b> resets the thread's priority to a lower 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

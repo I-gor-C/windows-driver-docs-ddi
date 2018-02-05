@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : 70efd8d7-c275-440e-a4df-f41b799a63f0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RxIndicateChangeOfBufferingStateForSrvOpen, rxref_6fc017ff-369c-47c3-8a5c-45f808d1d86c.xml, ifsk.rxindicatechangeofbufferingstateforsrvopen, rxprocs/RxIndicateChangeOfBufferingStateForSrvOpen, RxIndicateChangeOfBufferingStateForSrvOpen function [Installable File System Drivers]
+ms.keywords : rxprocs/RxIndicateChangeOfBufferingStateForSrvOpen, ifsk.rxindicatechangeofbufferingstateforsrvopen, RxIndicateChangeOfBufferingStateForSrvOpen, rxref_6fc017ff-369c-47c3-8a5c-45f808d1d86c.xml, RxIndicateChangeOfBufferingStateForSrvOpen function [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,22 +94,18 @@ If a buffering state request can be processed immediately instead of being queue
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | rxprocs.h (include Rxprocs.h, Struchdr.h, Fcb.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstate.md">RxIndicateChangeOfBufferingState</a>
 
 <a href="..\rxprocs\nf-rxprocs-rxchangebufferingstate.md">RxChangeBufferingState</a>
+
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 
  
 

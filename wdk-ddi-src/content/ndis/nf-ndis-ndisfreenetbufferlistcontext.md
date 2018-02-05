@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e5554790-a7a2-4c0d-a6ae-585ea909cd3d
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : ndis/NdisFreeNetBufferListContext, netvista.ndisfreenetbufferlistcontext, NdisFreeNetBufferListContext function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_ee330dac-2453-46e7-a298-7d4a59caf0ab.xml, NdisFreeNetBufferListContext
+ms.keywords : ndis_netbuf_functions_ref_ee330dac-2453-46e7-a298-7d4a59caf0ab.xml, ndis/NdisFreeNetBufferListContext, NdisFreeNetBufferListContext, NdisFreeNetBufferListContext function [Network Drivers Starting with Windows Vista], netvista.ndisfreenetbufferlistcontext
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -73,8 +73,8 @@ None
 ## Remarks
 
 <b>NdisFreeNetBufferListContext</b> releases context space that was allocated in a previous call to 
-    <mshelp:link keywords="netvista.ndisallocatenetbufferlistcontext" tabindex="0"><b>
-    NdisAllocateNetBufferListContext</b></mshelp:link>. If 
+    <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
+    NdisAllocateNetBufferListContext</a>. If 
     <b>NdisAllocateNetBufferListContext</b> allocated memory to satisfy in the call to 
     <b>NdisAllocateNetBufferListContext</b>, 
     <b>NdisFreeNetBufferListContext</b> frees the allocated memory.
@@ -82,23 +82,21 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Universal |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_NetBuffer_Function |
 
 ## See Also
 
-<mshelp:link keywords="netvista.ndisallocatenetbufferlistcontext" tabindex="0"><b>
-   NdisAllocateNetBufferListContext</b></mshelp:link>
-
 <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 
 <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
+   NdisAllocateNetBufferListContext</a>
 
  
 

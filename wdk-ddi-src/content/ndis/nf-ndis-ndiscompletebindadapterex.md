@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e52c7aeb-bbd8-402e-94af-f74df6deb23c
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NdisCompleteBindAdapterEx, NdisCompleteBindAdapterEx function [Network Drivers Starting with Windows Vista], protocol_ndis_functions_ref_11cc35a5-fa39-4922-a00d-c4ccb634ea88.xml, netvista.ndiscompletebindadapterex, ndis/NdisCompleteBindAdapterEx
+ms.keywords : protocol_ndis_functions_ref_11cc35a5-fa39-4922-a00d-c4ccb634ea88.xml, NdisCompleteBindAdapterEx function [Network Drivers Starting with Windows Vista], netvista.ndiscompletebindadapterex, NdisCompleteBindAdapterEx, ndis/NdisCompleteBindAdapterEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -101,20 +101,18 @@ If the open operation was successful, the protocol driver is ready to accept rec
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Desktop |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
+| **Library** | Ndis.lib |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | Irql_Protocol_Driver_Function |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
-
 <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+
+<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
 
  
 

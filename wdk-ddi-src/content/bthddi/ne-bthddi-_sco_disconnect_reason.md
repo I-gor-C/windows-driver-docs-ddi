@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : bca4bfc6-d44f-4b10-a30a-ba2acefad7a9
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : ScoHardwareRemoval, bthddi/ScoDisconnectRequest, bltooth.sco_disconnect_reason, bthddi/ScoRadioPoweredDown, PSCO_DISCONNECT_REASON, *PSCO_DISCONNECT_REASON, ScoDisconnectRequest, bthddi/SCO_DISCONNECT_REASON, bth_enums_ea951efc-1250-4414-9592-2bffe239dc95.xml, _SCO_DISCONNECT_REASON, ScoHciDisconnect, SCO_DISCONNECT_REASON enumeration [Bluetooth Devices], bthddi/PSCO_DISCONNECT_REASON, bthddi/ScoHardwareRemoval, PSCO_DISCONNECT_REASON enumeration pointer [Bluetooth Devices], ScoRadioPoweredDown, SCO_DISCONNECT_REASON, bthddi/ScoHciDisconnect
+ms.keywords : SCO_DISCONNECT_REASON, bthddi/SCO_DISCONNECT_REASON, bltooth.sco_disconnect_reason, bthddi/PSCO_DISCONNECT_REASON, bthddi/ScoRadioPoweredDown, ScoHardwareRemoval, bthddi/ScoHardwareRemoval, ScoDisconnectRequest, PSCO_DISCONNECT_REASON enumeration pointer [Bluetooth Devices], PSCO_DISCONNECT_REASON, _SCO_DISCONNECT_REASON, *PSCO_DISCONNECT_REASON, bthddi/ScoHciDisconnect, ScoHciDisconnect, bth_enums_ea951efc-1250-4414-9592-2bffe239dc95.xml, SCO_DISCONNECT_REASON enumeration [Bluetooth Devices], ScoRadioPoweredDown, bthddi/ScoDisconnectRequest
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -84,8 +84,8 @@ typedef enum _SCO_DISCONNECT_REASON {
 
 A value from this enumeration is used as the 
     <b>Reason</b> member of the 
-    <mshelp:link keywords="bltooth.sco_indication_parameters" tabindex="0"><b>
-    SCO_INDICATION_PARAMETERS</b></mshelp:link> structure.
+    <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">
+    SCO_INDICATION_PARAMETERS</a> structure.
 
 Hardware limitations may prevent the Bluetooth driver stack from distinguishing between 
     <b>ScoRadioPoweredDown</b> and 
@@ -98,16 +98,14 @@ Currently,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista and later versions of Windows. Versions:\_Supported in Windows Vista and later versions of Windows. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
-<a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
-
 <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
+
+<a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
 
  
 

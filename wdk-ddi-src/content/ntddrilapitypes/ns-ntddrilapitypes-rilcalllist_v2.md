@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4cf94a04-dbb4-4e24-954b-3a5a720ef963
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCALLLIST_V2, netvista.rilcalllist_v2, RILCALLLIST_V2 structure [Network Drivers Starting with Windows Vista], *LPRILCALLLIST_V2, ntddrilapitypes/RILCALLLIST_V2
+ms.keywords : "*LPRILCALLLIST_V2, ntddrilapitypes/RILCALLLIST_V2, RILCALLLIST_V2 structure [Network Drivers Starting with Windows Vista], RILCALLLIST_V2, netvista.rilcalllist_v2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILCALLLIST_V2, RILCALLLIST_V2"
+req.typenames : RILCALLLIST_V2, *LPRILCALLLIST_V2
 ---
 
 # RILCALLLIST_V2 structure
@@ -64,7 +64,4 @@ typedef struct _RILCALLLIST_V2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

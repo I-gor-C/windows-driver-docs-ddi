@@ -79,23 +79,6 @@ The reason for halting the miniport adapter. It can be one of the following valu
 NDIS is halting the miniport adapter in response to a Plug and Play (PnP) remove message.
 
 
-#### NdisHaltDeviceInstanceDeInitialized
-
-NDIS is halting the miniport adapter in response to an intermediate driver calling the 
-       <mshelp:link keywords="netvista.ndisimdeinitializedeviceinstance" tabindex="0"><b>
-       NdisIMDeInitializeDeviceInstance</b></mshelp:link> function.
-
-
-#### NdisHaltDevicePoweredDown
-
-NDIS is halting the miniport adapter because the system is going to a sleeping state.
-
-
-#### NdisHaltDeviceSurpriseRemoved
-
-The miniport adapter has been surprise removed and the hardware is not present.
-
-
 #### NdisHaltDeviceFailed
 
 The miniport adapter is being removed because of a hardware failure. Either the miniport driver
@@ -110,9 +93,26 @@ NDIS could not initialize the miniport adapter for an unknown reason after the
        <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function completed successfully.
 
 
+#### NdisHaltDeviceInstanceDeInitialized
+
+NDIS is halting the miniport adapter in response to an intermediate driver calling the 
+       <a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
+       NdisIMDeInitializeDeviceInstance</a> function.
+
+
+#### NdisHaltDevicePoweredDown
+
+NDIS is halting the miniport adapter because the system is going to a sleeping state.
+
+
 #### NdisHaltDeviceStopped
 
 NDIS is halting the miniport adapter in response to a PnP stop device message.
+
+
+#### NdisHaltDeviceSurpriseRemoved
+
+The miniport adapter has been surprise removed and the hardware is not present.
 
 
 ## Return Value
@@ -123,16 +123,16 @@ None
 
 A driver specifies the 
     <i>MiniportHaltEx</i> entry point when it calls the 
-    <mshelp:link keywords="netvista.ndismregisterminiportdriver" tabindex="0"><b>
-    NdisMRegisterMiniportDriver</b></mshelp:link> function.
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
+    NdisMRegisterMiniportDriver</a> function.
 
 NDIS can call 
     <i>MiniportHaltEx</i> at any time after a driver's 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
     returns successfully. If the driver controls a physical NIC, 
     <i>MiniportHaltEx</i> should stop the NIC. If an NDIS intermediate driver calls the 
-    <mshelp:link keywords="netvista.ndisimdeinitializedeviceinstance" tabindex="0"><b>
-    NdisIMDeInitializeDeviceInstance</b></mshelp:link> function, NDIS calls the 
+    <a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
+    NdisIMDeInitializeDeviceInstance</a> function, NDIS calls the 
     <i>MiniportHaltEx</i> function for the driver's virtual device.
 
 <i>MiniportHaltEx</i> must free all resources that were allocated in 
@@ -149,8 +149,8 @@ If a NIC generates interrupts, a miniport driver's
     <i>MiniportHaltEx</i> function can be preempted by the driver's 
     <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function until the 
     <i>MiniportHaltEx</i> call to the 
-    <mshelp:link keywords="netvista.ndismderegisterinterruptex" tabindex="0"><b>
-    NdisMDeregisterInterruptEx</b></mshelp:link> function returns. Such a driver's 
+    <a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">
+    NdisMDeregisterInterruptEx</a> function returns. Such a driver's 
     <i>MiniportHaltEx</i> function should disable interrupts, and call 
     <b>
     NdisMDeregisterInterruptEx</b> as soon as possible. Note that a driver can keep getting interrupts
@@ -219,50 +219,47 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in NDIS 6.0 and later. Supported in NDIS 6.0 and later. |
+| **Target Platform** | Windows |
 | **Header** | ndis.h (include Ndis.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | WlanAssociation, WlanConnectionRoaming, WlanDisassociation, WlanTimedAssociation, WlanTimedConnectionRoaming, WlanTimedConnectRequest, WlanTimedLinkQuality, WlanTimedScan |
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 
-<a href="https://msdn.microsoft.com/fd57a2b1-593d-412b-96b5-eabd3ea392e0">Halting a Miniport Adapter</a>
-
-<a href="..\ndis\nf-ndis-ndismremoveminiport.md">NdisMRemoveMiniport</a>
-
-<a href="https://msdn.microsoft.com/20047ee2-ba37-47c2-858f-36e31ae19154">Miniport Driver Reset and Halt Functions</a>
-
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-
-<a href="https://msdn.microsoft.com/3ca03511-a912-4ee3-bd9f-1bd8e6996c48">Adapter States of a Miniport Driver</a>
-
-<mshelp:link keywords="netvista.miniportreturnnetbufferlists" tabindex="0"><i>
-   MiniportReturnNetBufferLists</i></mshelp:link>
-
-<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
-
-<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
-
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
+<a href="..\ndis\nf-ndis-ndisimdeinitializedeviceinstance.md">
+   NdisIMDeInitializeDeviceInstance</a>
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 
-<a href="..\ndis\nf-ndis-ndismsleep.md">NdisMSleep</a>
+<a href="https://msdn.microsoft.com/fd57a2b1-593d-412b-96b5-eabd3ea392e0">Halting a Miniport Adapter</a>
 
-<mshelp:link keywords="netvista.ndisimdeinitializedeviceinstance" tabindex="0"><b>
-   NdisIMDeInitializeDeviceInstance</b></mshelp:link>
+<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
+
+<a href="https://msdn.microsoft.com/3ca03511-a912-4ee3-bd9f-1bd8e6996c48">Adapter States of a Miniport Driver</a>
+
+<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
 
 <a href="https://msdn.microsoft.com/b47e2cbe-9da3-4600-9afe-b082e60b87fb">Miniport Adapter States and Operations</a>
 
 <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 
-<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
+
+<a href="..\ndis\nc-ndis-miniport_return_net_buffer_lists.md">
+   MiniportReturnNetBufferLists</a>
+
+<a href="https://msdn.microsoft.com/20047ee2-ba37-47c2-858f-36e31ae19154">Miniport Driver Reset and Halt Functions</a>
+
+<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
+
+<a href="..\ndis\nf-ndis-ndismsleep.md">NdisMSleep</a>
+
+<a href="..\ndis\nf-ndis-ndismremoveminiport.md">NdisMRemoveMiniport</a>
+
+<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 
  
 

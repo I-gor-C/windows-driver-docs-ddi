@@ -69,15 +69,13 @@ The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-moun
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | mountdev.h (include Mountdev.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="..\mountdev\ns-mountdev-_mountdev_unique_id.md">MOUNTDEV_UNIQUE_ID</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560443">IOCTL_MOUNTDEV_UNIQUE_ID_CHANGE_NOTIFY</a>
+
+<a href="..\mountdev\ns-mountdev-_mountdev_unique_id.md">MOUNTDEV_UNIQUE_ID</a>
 
  
 

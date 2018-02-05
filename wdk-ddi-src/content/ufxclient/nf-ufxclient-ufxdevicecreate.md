@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : BA86280E-8324-4D98-B16C-504D427A6A4B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.ufxdevicecreate, UfxDeviceCreate method [Buses], UfxDeviceCreate, ufxclient/UfxDeviceCreate
+ms.keywords : ufxclient/UfxDeviceCreate, UfxDeviceCreate, UfxDeviceCreate method [Buses], buses.ufxdevicecreate
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
+req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
 req.product : Windows 10 or later.
 ---
 
@@ -185,11 +185,8 @@ Return Value:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | ufxclient.h |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

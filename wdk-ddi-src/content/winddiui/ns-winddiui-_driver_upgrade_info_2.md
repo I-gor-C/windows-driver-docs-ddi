@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 691554c5-5c99-40f0-b0d6-3556e004dd30
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : winddiui/DRIVER_UPGRADE_INFO_2, winddiui/PDRIVER_UPGRADE_INFO_2, _DRIVER_UPGRADE_INFO_2, DRIVER_UPGRADE_INFO_2 structure [Print Devices], DRIVER_UPGRADE_INFO_2, print_interface-graphics_3db7d8d4-1f0c-4b76-9e22-bc55aac9b6c7.xml, PDRIVER_UPGRADE_INFO_2 structure pointer [Print Devices], print.driver_upgrade_info_2, *PDRIVER_UPGRADE_INFO_2, PDRIVER_UPGRADE_INFO_2
+ms.keywords : "*PDRIVER_UPGRADE_INFO_2, print.driver_upgrade_info_2, winddiui/PDRIVER_UPGRADE_INFO_2, winddiui/DRIVER_UPGRADE_INFO_2, _DRIVER_UPGRADE_INFO_2, PDRIVER_UPGRADE_INFO_2 structure pointer [Print Devices], DRIVER_UPGRADE_INFO_2, print_interface-graphics_3db7d8d4-1f0c-4b76-9e22-bc55aac9b6c7.xml, DRIVER_UPGRADE_INFO_2 structure [Print Devices], PDRIVER_UPGRADE_INFO_2"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -170,9 +170,6 @@ To see how this can occur, suppose that a computer is connected to two printers,
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | winddiui.h (include Winddiui.h) |
 
 ## See Also

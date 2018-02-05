@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : B6C61023-F840-4517-83C1-BC9CBDFC27B0
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.fwpsopentoken0, fwpsk/FwpsOpenToken0, FwpsOpenToken0 function [Network Drivers Starting with Windows Vista], FwpsOpenToken0
+ms.keywords : FwpsOpenToken0, fwpsk/FwpsOpenToken0, FwpsOpenToken0 function [Network Drivers Starting with Windows Vista], netvista.fwpsopentoken0
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -112,14 +112,11 @@ An error occurred.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with  Windows 7. Available starting with  Windows 7. |
+| **Target Platform** | Universal |
 | **Header** | fwpsk.h (include Fwpsk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<= PASSIVE_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

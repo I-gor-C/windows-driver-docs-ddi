@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : c8f0e47c-4d06-445f-a6dd-9bd80fc490bc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortGetSrb, scsiprt_28205a6f-8758-4aed-8fae-94a12c216cf4.xml, storage.scsiportgetsrb, ScsiPortGetSrb routine [Storage Devices], ScsiPortGetSrb
+ms.keywords : ScsiPortGetSrb, storage.scsiportgetsrb, srb/ScsiPortGetSrb, ScsiPortGetSrb routine [Storage Devices], scsiprt_28205a6f-8758-4aed-8fae-94a12c216cf4.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG"
+req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product : Windows 10 or later.
 ---
 
@@ -87,14 +87,9 @@ Specifies the queue tag if the miniport driver handles tagged requests; SP_UNTAG
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | srb.h (include Miniport.h, Scsi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Scsiport.lib |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : e8b0a1c0-c018-4556-b43c-fae4f7cf43de
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : IKsPin, IKsPin interface [Streaming Media Devices], KsQueryInterfaces method, KsQueryInterfaces, ksproxy_6a22f676-b7bd-4212-a79a-3a02da890e9f.xml, KsQueryInterfaces method [Streaming Media Devices], IKsPin interface, KsQueryInterfaces method [Streaming Media Devices], IKsPin::KsQueryInterfaces, stream.ikspin_ksqueryinterfaces, ksproxy/IKsPin::KsQueryInterfaces
+ms.keywords : KsQueryInterfaces method [Streaming Media Devices], KsQueryInterfaces, stream.ikspin_ksqueryinterfaces, KsQueryInterfaces method [Streaming Media Devices], IKsPin interface, ksproxy_6a22f676-b7bd-4212-a79a-3a02da890e9f.xml, IKsPin interface [Streaming Media Devices], KsQueryInterfaces method, IKsPin::KsQueryInterfaces, ksproxy/IKsPin::KsQueryInterfaces, IKsPin
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -68,14 +68,9 @@ The returned interfaces are ordered by preference.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ksproxy.h (include Ksproxy.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | ksproxy.h |
 
 ## See Also
 

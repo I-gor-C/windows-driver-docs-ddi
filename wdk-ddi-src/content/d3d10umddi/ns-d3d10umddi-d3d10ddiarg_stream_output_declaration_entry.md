@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 42d01b63-ca3b-4348-bf50-a1d648548266
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, display.d3d10ddiarg_stream_output_declaration_entry, UMDisplayDriver_Dx10param_Structs_bdfafade-cf99-4cbb-9ae1-d1bd57997dac.xml, D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure [Display Devices]
+ms.keywords : d3d10umddi/D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure [Display Devices], display.d3d10ddiarg_stream_output_declaration_entry, UMDisplayDriver_Dx10param_Structs_bdfafade-cf99-4cbb-9ae1-d1bd57997dac.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,7 @@ typedef struct D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 49231293-286b-486d-b8f9-b44bdb845e7b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : vidcapstruct_c081668e-9e81-4c30-89d1-b4c26dc9a300.xml, ksmedia/KS_RGBQUAD, stream.ks_rgbquad, KS_RGBQUAD, PKS_RGBQUAD, PKS_RGBQUAD structure pointer [Streaming Media Devices], *PKS_RGBQUAD, tagKS_RGBQUAD, ksmedia/PKS_RGBQUAD, KS_RGBQUAD structure [Streaming Media Devices]
+ms.keywords : tagKS_RGBQUAD, PKS_RGBQUAD, ksmedia/PKS_RGBQUAD, PKS_RGBQUAD structure pointer [Streaming Media Devices], vidcapstruct_c081668e-9e81-4c30-89d1-b4c26dc9a300.xml, KS_RGBQUAD, *PKS_RGBQUAD, stream.ks_rgbquad, ksmedia/KS_RGBQUAD, KS_RGBQUAD structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : KS_RGBQUAD, *PKS_RGBQUAD
+req.typenames : "*PKS_RGBQUAD, KS_RGBQUAD"
 ---
 
 # tagKS_RGBQUAD structure
@@ -74,7 +74,4 @@ Reserved. This member must be zero.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksmedia.h (include Ksmedia.h) |

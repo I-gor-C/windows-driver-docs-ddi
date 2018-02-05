@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 67f75696-dee4-43ec-90fd-96fd1a91ec16
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : print.oemcommand, print_obsoletefunctions_f6d1a0f9-6560-4e4c-9826-c2714b7c1ad3.xml, OEMCommand, printoem/OEMCommand, OEMCommand function [Print Devices]
+ms.keywords : OEMCommand, printoem/OEMCommand, print.oemcommand, OEMCommand function [Print Devices], print_obsoletefunctions_f6d1a0f9-6560-4e4c-9826-c2714b7c1ad3.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

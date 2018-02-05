@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 1e0e6313-1dfa-4b68-8f58-bfa79f3124d6
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_UNLOCK, _D3DDDICB_UNLOCK, D3DDDICB_UNLOCK structure [Display Devices], display.d3dddicb_unlock, D3DDDICB_UNLOCK, D3D_param_Structs_91515cd5-00b4-4ad6-a8a5-ff216ddec171.xml
+ms.keywords : display.d3dddicb_unlock, D3DDDICB_UNLOCK, D3D_param_Structs_91515cd5-00b4-4ad6-a8a5-ff216ddec171.xml, d3dumddi/D3DDDICB_UNLOCK, _D3DDDICB_UNLOCK, D3DDDICB_UNLOCK structure [Display Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,16 +64,14 @@ typedef struct _D3DDDICB_UNLOCK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a>
-
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a>
 
  
 

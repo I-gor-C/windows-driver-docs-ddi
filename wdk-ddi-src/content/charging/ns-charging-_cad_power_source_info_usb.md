@@ -8,7 +8,7 @@ old-project : battery
 ms.assetid : 578D33E5-685A-48E9-BFE2-CE4C3FD18056
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : charging/BATTERY_INFORMATION, CAD_POWER_SOURCE_INFO_USB structure [Battery Devices], CAD_POWER_SOURCE_INFO_USB, battery.cad_power_source_info_usb, _CAD_POWER_SOURCE_INFO_USB, *PCAD_POWER_SOURCE_INFO_USB
+ms.keywords : charging/BATTERY_INFORMATION, *PCAD_POWER_SOURCE_INFO_USB, battery.cad_power_source_info_usb, CAD_POWER_SOURCE_INFO_USB structure [Battery Devices], CAD_POWER_SOURCE_INFO_USB, _CAD_POWER_SOURCE_INFO_USB
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : CAD_POWER_SOURCE_INFO_USB, *PCAD_POWER_SOURCE_INFO_USB
+req.typenames : "*PCAD_POWER_SOURCE_INFO_USB, CAD_POWER_SOURCE_INFO_USB"
 ---
 
 # _CAD_POWER_SOURCE_INFO_USB structure
@@ -51,7 +51,4 @@ This structure is for internal use only.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | charging.h (include Charging.h) |

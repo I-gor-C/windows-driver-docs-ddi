@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 979eef24-e53b-476c-b9db-e56c43630913
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : MmUnsecureVirtualMemory, k106_0bfc6e9e-a4e9-4868-b1fb-da6714146dbf.xml, kernel.mmunsecurevirtualmemory, MmUnsecureVirtualMemory routine [Kernel-Mode Driver Architecture], ntddk/MmUnsecureVirtualMemory
+ms.keywords : MmUnsecureVirtualMemory, ntddk/MmUnsecureVirtualMemory, k106_0bfc6e9e-a4e9-4868-b1fb-da6714146dbf.xml, kernel.mmunsecurevirtualmemory, MmUnsecureVirtualMemory routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,12 +65,11 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 2000 and later versions of Windows. This routine is not available in Windows 98/Me. Available in Windows 2000 and later versions of Windows. This routine is not available in Windows 98/Me. |
+| **Target Platform** | Universal |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
 | **DDI compliance rules** | IrqlMmApcLte, HwStorPortProhibitedDDIs |
 

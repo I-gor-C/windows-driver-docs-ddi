@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9dfd1894-c9b5-43c2-8377-c28577898754
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbVPrintfA, RtlStringCbVPrintfW, safestrings_8b0897a4-24fb-4375-80aa-4148ca6815ce.xml, ntstrsafe/RtlStringCbVPrintfW, RtlStringCbVPrintf, RtlStringCbVPrintfA, RtlStringCbVPrintfW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbvprintf
+ms.keywords : kernel.rtlstringcbvprintf, ntstrsafe/RtlStringCbVPrintfA, RtlStringCbVPrintfA, safestrings_8b0897a4-24fb-4375-80aa-4148ca6815ce.xml, RtlStringCbVPrintf, RtlStringCbVPrintfW, ntstrsafe/RtlStringCbVPrintfW, RtlStringCbVPrintfW function [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -197,14 +197,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows XP with Service Pack 1 (SP1). Available starting with Windows XP with Service Pack 1 (SP1). |
+| **Target Platform** | Desktop |
 | **Header** | ntstrsafe.h (include Ntstrsafe.h) |
-| **Library** |  |
+| **Library** | Ntstrsafe.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

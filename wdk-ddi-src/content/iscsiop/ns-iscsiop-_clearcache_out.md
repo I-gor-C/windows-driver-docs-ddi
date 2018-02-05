@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : ab97d0b0-00fc-499c-9b1b-83731fe8e935
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.clearcache_out, structs-iSCSI_e96c134a-dfb1-474a-b730-1fb6e8d8f86f.xml, ClearCache_OUT structure [Storage Devices], PClearCache_OUT, iscsiop/PClearCache_OUT, ClearCache_OUT, *PClearCache_OUT, iscsiop/ClearCache_OUT, PClearCache_OUT structure pointer [Storage Devices], _ClearCache_OUT
+ms.keywords : iscsiop/PClearCache_OUT, *PClearCache_OUT, PClearCache_OUT, iscsiop/ClearCache_OUT, storage.clearcache_out, PClearCache_OUT structure pointer [Storage Devices], structs-iSCSI_e96c134a-dfb1-474a-b730-1fb6e8d8f86f.xml, ClearCache_OUT structure [Storage Devices], ClearCache_OUT, _ClearCache_OUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -61,16 +61,13 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552442">ClearCache</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552442">ClearCache</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 

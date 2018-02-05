@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 4dcc198f-5e42-4c60-bfec-19702c9ab674
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILMSGINSTATUS, rilapitypes/RILMSGINSTATUS, netvista.rilmsginstatus_2, RILMSGINSTATUS structure [Network Drivers Starting with Windows Vista], *LPRILMSGINSTATUS
+ms.keywords : "*LPRILMSGINSTATUS, rilapitypes/RILMSGINSTATUS, RILMSGINSTATUS, netvista.rilmsginstatus_2, RILMSGINSTATUS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -115,7 +115,4 @@ typedef struct _RILMSGINSTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

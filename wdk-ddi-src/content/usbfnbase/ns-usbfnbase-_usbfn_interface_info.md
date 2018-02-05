@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 54647A9E-E0AB-4DE7-93FB-D0232D6AC646
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : buses.usbfn_interface_info, PUSBFN_INTERFACE_INFO, PUSBFN_INTERFACE_INFO structure pointer [Buses], USBFN_INTERFACE_INFO structure [Buses], usbfnbase/PUSBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO, _USBFN_INTERFACE_INFO, *PUSBFN_INTERFACE_INFO, usbfnbase/USBFN_INTERFACE_INFO
+ms.keywords : "_USBFN_INTERFACE_INFO, buses.usbfn_interface_info, PUSBFN_INTERFACE_INFO structure pointer [Buses], PUSBFN_INTERFACE_INFO, *PUSBFN_INTERFACE_INFO, usbfnbase/USBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO structure [Buses], usbfnbase/PUSBFN_INTERFACE_INFO"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : USBFN_INTERFACE_INFO, *PUSBFN_INTERFACE_INFO
+req.typenames : "*PUSBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO"
 req.product : Windows 10 or later.
 ---
 
@@ -75,9 +75,6 @@ The operating bus speed indicated by <a href="..\usbfnbase\ne-usbfnbase-_usbfn_b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbfnbase.h |
 
 ## See Also

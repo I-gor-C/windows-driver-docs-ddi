@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e29f6710-0ca1-4420-b0e7-957ba020254b
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.riladditionalcallerinfo_2, RILADDITIONALCALLERINFO, rilapitypes/RILADDITIONALCALLERINFO, *LPRILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO structure [Network Drivers Starting with Windows Vista]
+ms.keywords : rilapitypes/RILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO, *LPRILADDITIONALCALLERINFO, netvista.riladditionalcallerinfo_2, RILADDITIONALCALLERINFO structure [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -85,7 +85,4 @@ typedef struct _RILADDITIONALCALLERINFO {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

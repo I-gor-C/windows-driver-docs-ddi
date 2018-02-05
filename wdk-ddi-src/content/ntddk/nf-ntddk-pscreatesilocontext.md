@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 54FD0308-7E40-40C7-BA3A-FF1EFFBE0DB6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntddk/PsCreateSiloContext, PsCreateSiloContext routine [Kernel-Mode Driver Architecture], PsCreateSiloContext, kernel.pscreatesilocontext
+ms.keywords : ntddk/PsCreateSiloContext, kernel.pscreatesilocontext, PsCreateSiloContext, PsCreateSiloContext routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -124,11 +124,7 @@ The operation completed successfully.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10, version 1607 Windows 10, version 1607 |
+| **Target Platform** | Windows |
 | **Header** | ntddk.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

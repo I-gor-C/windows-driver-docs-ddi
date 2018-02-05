@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 883a7a56-ecb9-428f-a15a-ba428a626bed
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : GetPersistentBinding2_OUT structure [Storage Devices], hbapiwmi/GetPersistentBinding2_OUT, PGetPersistentBinding2_OUT, structs-Fibre_e6ffe5e2-f1e2-4b40-836c-954eb31301de.xml, storage.getpersistentbinding2_out, *PGetPersistentBinding2_OUT, hbapiwmi/PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT, _GetPersistentBinding2_OUT, PGetPersistentBinding2_OUT structure pointer [Storage Devices]
+ms.keywords : PGetPersistentBinding2_OUT, *PGetPersistentBinding2_OUT, hbapiwmi/GetPersistentBinding2_OUT, hbapiwmi/PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT structure [Storage Devices], GetPersistentBinding2_OUT, PGetPersistentBinding2_OUT structure pointer [Storage Devices], structs-Fibre_e6ffe5e2-f1e2-4b40-836c-954eb31301de.xml, _GetPersistentBinding2_OUT, storage.getpersistentbinding2_out
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GetPersistentBinding2_OUT, *PGetPersistentBinding2_OUT
+req.typenames : "*PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT"
 ---
 
 # _GetPersistentBinding2_OUT structure
@@ -76,9 +76,6 @@ The WMI tool suite generates a declaration of the GetPersistentBinding2_OUT stru
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | hbapiwmi.h (include Hbapiwmi.h) |
 
 ## See Also

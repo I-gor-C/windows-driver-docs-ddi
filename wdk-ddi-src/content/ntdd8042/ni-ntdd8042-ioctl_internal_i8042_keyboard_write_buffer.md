@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PMOUSE_STATE, MOUSE_STATE"
+req.typenames : MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER IOCTL
@@ -71,15 +71,13 @@ The <b>Status</b> member is set to one of the following values:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdd8042.h (include Ntdd8042.h) |
-| **IRQL** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542067">IOCTL_KEYBOARD_SET_INDICATORS</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542076">IOCTL_KEYBOARD_SET_TYPEMATIC</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542067">IOCTL_KEYBOARD_SET_INDICATORS</a>
 
  
 

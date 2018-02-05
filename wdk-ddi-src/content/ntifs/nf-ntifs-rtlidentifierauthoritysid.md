@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : cf81a653-19fd-45fc-ad38-3f701241fd80
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlIdentifierAuthoritySid, RtlIdentifierAuthoritySid function [Installable File System Drivers], ifsk.rtlidentifierauthoritysid, rtlref_e4f051a9-6a6d-4008-b134-9a255b6764c0.xml, ntifs/RtlIdentifierAuthoritySid
+ms.keywords : RtlIdentifierAuthoritySid function [Installable File System Drivers], ntifs/RtlIdentifierAuthoritySid, ifsk.rtlidentifierauthoritysid, RtlIdentifierAuthoritySid, rtlref_e4f051a9-6a6d-4008-b134-9a255b6764c0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

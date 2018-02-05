@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : a6534917-5fe6-449b-8e85-398d26730f66
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : RevokeMappings method [Audio Devices], audmp-routines_f995bc15-917a-416d-9066-3d5667866973.xml, IMiniportWavePciStream interface [Audio Devices], RevokeMappings method, RevokeMappings method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::RevokeMappings, RevokeMappings, portcls/IMiniportWavePciStream::RevokeMappings, IMiniportWavePciStream, audio.iminiportwavepcistream_revokemappings
+ms.keywords : portcls/IMiniportWavePciStream::RevokeMappings, RevokeMappings method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream, RevokeMappings, audio.iminiportwavepcistream_revokemappings, audmp-routines_f995bc15-917a-416d-9066-3d5667866973.xml, IMiniportWavePciStream interface [Audio Devices], RevokeMappings method, IMiniportWavePciStream::RevokeMappings, RevokeMappings method [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -94,28 +94,24 @@ For more information about mappings, see <a href="https://msdn.microsoft.com/6d8
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
-
-<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
-
 <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
-
-<a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a>
 
 <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
+
+<a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
+
+<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
 
  
 

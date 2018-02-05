@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 7ec2c54d-3974-43e9-9ef8-63393b2d02cd
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audmp-routines_e37a9a63-eaeb-4827-b534-4d73dead44fb.xml, audio.iminiportmidi_service, Service, IMiniportMidi, Service method [Audio Devices], IMiniportMidi interface, IMiniportMidi::Service, IMiniportMidi interface [Audio Devices], Service method, portcls/IMiniportMidi::Service, Service method [Audio Devices]
+ms.keywords : audio.iminiportmidi_service, Service method [Audio Devices], Service, IMiniportMidi::Service, portcls/IMiniportMidi::Service, audmp-routines_e37a9a63-eaeb-4827-b534-4d73dead44fb.xml, IMiniportMidi interface [Audio Devices], Service method, IMiniportMidi, Service method [Audio Devices], IMiniportMidi interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -67,24 +67,20 @@ When the miniport driver's ISR calls the port driver's <a href="https://msdn.mic
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
 <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
 
 <a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
+
+<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536709">IMiniportMidi::Init</a>
 

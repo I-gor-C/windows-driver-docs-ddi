@@ -69,6 +69,4 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field can be set 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
-| **IRQL** |  |

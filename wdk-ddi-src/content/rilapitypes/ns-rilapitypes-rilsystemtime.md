@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 436fd67e-6696-4079-9bcf-7260de3bbc00
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILSYSTEMTIME, RILSYSTEMTIME, rilapitypes/RILSYSTEMTIME, RILSYSTEMTIME structure [Network Drivers Starting with Windows Vista], netvista.rilsystemtime_2"
+ms.keywords : RILSYSTEMTIME, *LPRILSYSTEMTIME, RILSYSTEMTIME structure [Network Drivers Starting with Windows Vista], netvista.rilsystemtime_2, rilapitypes/RILSYSTEMTIME
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILSYSTEMTIME, RILSYSTEMTIME"
+req.typenames : RILSYSTEMTIME, *LPRILSYSTEMTIME
 req.product : Windows 10 or later.
 ---
 
@@ -95,7 +95,4 @@ typedef struct _RILSYSTEMTIME {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

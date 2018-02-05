@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 2104BF68-DF35-44DE-AD83-3026FF9314B4
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_presentsurface, d3dumddi/D3DDDIARG_PRESENTSURFACE, D3DDDIARG_PRESENTSURFACE, D3DDDIARG_PRESENTSURFACE structure [Display Devices]
+ms.keywords : display.d3dddiarg_presentsurface, D3DDDIARG_PRESENTSURFACE structure [Display Devices], D3DDDIARG_PRESENTSURFACE, d3dumddi/D3DDDIARG_PRESENTSURFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -64,9 +64,7 @@ typedef struct D3DDDIARG_PRESENTSURFACE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1,WDDM 1.3 and later Windows 8.1,WDDM 1.3 and later |
 | **Header** | d3dumddi.h (include D3d10umddi.h) |
 
 ## See Also

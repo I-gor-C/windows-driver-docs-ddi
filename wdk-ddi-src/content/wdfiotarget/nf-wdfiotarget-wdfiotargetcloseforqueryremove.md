@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 5fa93ac6-8aee-4248-b0a6-ab82bc5486bf
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfIoTargetCloseForQueryRemove method, wdf.wdfiotargetcloseforqueryremove, WdfIoTargetCloseForQueryRemove, wdfiotarget/WdfIoTargetCloseForQueryRemove, DFIOTargetRef_ea857ade-1dcd-4e58-b198-50186a536159.xml, kmdf.wdfiotargetcloseforqueryremove, PFN_WDFIOTARGETCLOSEFORQUERYREMOVE
+ms.keywords : kmdf.wdfiotargetcloseforqueryremove, WdfIoTargetCloseForQueryRemove, DFIOTargetRef_ea857ade-1dcd-4e58-b198-50186a536159.xml, wdf.wdfiotargetcloseforqueryremove, WdfIoTargetCloseForQueryRemove method, PFN_WDFIOTARGETCLOSEFORQUERYREMOVE, wdfiotarget/WdfIoTargetCloseForQueryRemove
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -77,12 +77,11 @@ For more information about I/O targets, see <a href="https://msdn.microsoft.com/
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfiotarget.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 

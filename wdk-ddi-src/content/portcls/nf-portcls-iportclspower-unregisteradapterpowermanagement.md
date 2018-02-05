@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 4c8734b1-d7f5-476b-a85f-1d3f4df888b9
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : UnregisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, portcls/IPortClsPower::UnregisterAdapterPowerManagement, audmp-routines_3dca5fa9-542d-437d-a2d9-9eef51b5f2ea.xml, UnregisterAdapterPowerManagement method [Audio Devices], IPortClsPower, UnregisterAdapterPowerManagement, audio.iportclspower_unregisteradapterpowermanagement, IPortClsPower::UnregisterAdapterPowerManagement, IPortClsPower interface [Audio Devices], UnregisterAdapterPowerManagement method
+ms.keywords : IPortClsPower::UnregisterAdapterPowerManagement, audio.iportclspower_unregisteradapterpowermanagement, UnregisterAdapterPowerManagement, audmp-routines_3dca5fa9-542d-437d-a2d9-9eef51b5f2ea.xml, IPortClsPower, IPortClsPower interface [Audio Devices], UnregisterAdapterPowerManagement method, UnregisterAdapterPowerManagement method [Audio Devices], UnregisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, portcls/IPortClsPower::UnregisterAdapterPowerManagement
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -54,7 +54,7 @@ NTSTATUS UnregisterAdapterPowerManagement(
 
 `_DeviceObject`
 
-
+Specifies a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## Return Value
@@ -68,14 +68,11 @@ The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of Windwows. Available in Windows 7 and later versions of Windwows. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | portcls.h |
 | **IRQL** | PASSIVE_LEVEL. |
-| **DDI compliance rules** |  |
 
 ## See Also
 

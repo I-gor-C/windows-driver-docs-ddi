@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 3beafad2-7157-434a-a073-2b47026c8fc5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILCONFPARTICIPANTSTATUS, *LPRILCONFPARTICIPANTSTATUS, rilapitypes/RILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS structure [Network Drivers Starting with Windows Vista], netvista.rilconfparticipantstatus_2
+ms.keywords : "*LPRILCONFPARTICIPANTSTATUS, rilapitypes/RILCONFPARTICIPANTSTATUS, RILCONFPARTICIPANTSTATUS, netvista.rilconfparticipantstatus_2, RILCONFPARTICIPANTSTATUS structure [Network Drivers Starting with Windows Vista]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -95,7 +95,4 @@ typedef struct _RILCONFPARTICIPANTSTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

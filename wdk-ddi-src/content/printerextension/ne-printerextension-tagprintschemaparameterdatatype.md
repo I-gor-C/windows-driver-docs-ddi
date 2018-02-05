@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 3276C273-C950-4DC9-B338-E6E7E30DEB77
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printerextension/PrintSchemaParameterDataType_Integer, printerextension/PrintSchemaParameterDataType, PrintSchemaParameterDataType enumeration [Print Devices], PrintSchemaParameterDataType_Integer, printerextension/PrintSchemaParameterDataType_String, tagPrintSchemaParameterDataType, PrintSchemaParameterDataType, PrintSchemaParameterDataType_String, PrintSchemaParameterDataType_NumericString, printerextension/PrintSchemaParameterDataType_NumericString, print.tagprintschemaparameterdatatype
+ms.keywords : print.tagprintschemaparameterdatatype, PrintSchemaParameterDataType enumeration [Print Devices], printerextension/PrintSchemaParameterDataType, tagPrintSchemaParameterDataType, PrintSchemaParameterDataType_String, PrintSchemaParameterDataType_NumericString, PrintSchemaParameterDataType, printerextension/PrintSchemaParameterDataType_String, PrintSchemaParameterDataType_Integer, printerextension/PrintSchemaParameterDataType_Integer, printerextension/PrintSchemaParameterDataType_NumericString
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -78,9 +78,7 @@ This maps to the Print Schema’s StringParamType parameters, with UnitType not 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | printerextension.h |
 
 ## See Also

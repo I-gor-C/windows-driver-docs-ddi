@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PVERIFY_INFORMATION, VERIFY_INFORMATION"
+req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 
@@ -83,22 +83,17 @@ To safely modify the data for the dump write, a filter driver should allocate a 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista and Windows Server 2008. Available starting with Windows Vista and Windows Server 2008. |
+| **Target Platform** | Desktop |
 | **Header** | ntdddump.h (include Ntdddump.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\ntdddump\ns-ntdddump-_filter_extension.md">FILTER_EXTENSION</a>
 
-<a href="..\ntdddump\nc-ntdddump-dump_read.md">Dump_Read</a>
-
 <a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a>
+
+<a href="..\ntdddump\nc-ntdddump-dump_read.md">Dump_Read</a>
 
  
 

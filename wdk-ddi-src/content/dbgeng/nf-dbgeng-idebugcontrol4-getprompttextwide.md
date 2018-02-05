@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : 10d5da82-8fbe-45fa-8051-42f6a1e3adce
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : GetPromptTextWide, GetPromptTextWide method [Windows Debugging], IDebugControl4 interface, debugger.getprompttextwide, GetPromptTextWide method [Windows Debugging], IDebugControl4::GetPromptTextWide, dbgeng/IDebugControl4::GetPromptTextWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetPromptTextWide method
+ms.keywords : debugger.getprompttextwide, dbgeng/IDebugControl4::GetPromptTextWide, IDebugControl4::GetPromptTextWide, GetPromptTextWide, GetPromptTextWide method [Windows Debugging], GetPromptTextWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetPromptTextWide method, IDebugControl4
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -106,20 +106,15 @@ For more information about prompting the user, see <a href="https://msdn.microso
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553231">OutputPromptVaList</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553231">OutputPromptVaList</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553227">OutputPrompt</a>
 

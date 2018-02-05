@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : b4bdfa93-3db5-4dfa-b539-112927cbedb0
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : fltuserstructures/FLT_FSTYPE_BSUDF, fltuserstructures/FLT_FSTYPE_PSFS, FLT_FSTYPE_MSFS, *PFLT_FILESYSTEM_TYPE, FLT_FILESYSTEM_TYPE, fltuserstructures/FLT_FSTYPE_EXFAT, fltuserstructures/FLT_FSTYPE_ROXIO_UDF2, fltuserstructures/FLT_FSTYPE_RSFX, fltuserstructures/FLT_FSTYPE_MUP, fltuserstructures/FLT_FSTYPE_NETWARE, fltuserstructures/FLT_FSTYPE_MS_NETWARE, fltuserstructures/FLT_FSTYPE_ROXIO_UDF3, FLT_FSTYPE_WEBDAV, FLT_FSTYPE_EXFAT, FLT_FSTYPE_FAT, FLT_FSTYPE_UDFS, FLT_FSTYPE_NETWARE, FLT_FSTYPE_ROXIO_UDF1, fltuserstructures/FLT_FSTYPE_INCD_FAT, FLT_FSTYPE_OPENAFS, FLT_FSTYPE_GPFS, FLT_FSTYPE_NTFS, FLT_FSTYPE_CDFS, FLT_FSTYPE_INCD, FLT_FSTYPE_ROXIO_UDF3, FLT_FSTYPE_BSUDF, fltuserstructures/FLT_FSTYPE_WEBDAV, fltuserstructures/FLT_FSTYPE_NPFS, FLT_FSTYPE_RDPDR, fltuserstructures/FLT_FSTYPE_CSVFS, fltuserstructures/FLT_FSTYPE_TACIT, FLT_FILESYSTEM_TYPE enumeration [Installable File System Drivers], FLT_FSTYPE_MUP, FLT_FSTYPE_NFS, fltuserstructures/FLT_FSTYPE_RDPDR, fltuserstructures/FLT_FSTYPE_UNKNOWN, FLT_FSTYPE_MS_NETWARE, fltuserstructures/FLT_FSTYPE_INCD, FLT_FSTYPE_NPFS, fltuserstructures/FLT_FILESYSTEM_TYPE, FLT_FSTYPE_RAW, fltuserstructures/FLT_FSTYPE_FAT, fltuserstructures/FLT_FSTYPE_MSFS, fltuserstructures/FLT_FSTYPE_NFS, FLT_FSTYPE_CSVFS, fltuserstructures/FLT_FSTYPE_REFS, FLT_FSTYPE_LANMAN, fltuserstructures/FLT_FSTYPE_OPENAFS, fltuserstructures/FLT_FSTYPE_LANMAN, ifsk.flt_filesystem_type, FLT_FSTYPE_RSFX, fltuserstructures/PFLT_FILESYSTEM_TYPE, fltuserstructures/FLT_FSTYPE_UDFS, fltuserstructures/FLT_FSTYPE_GPFS, fltuserstructures/FLT_FSTYPE_RAW, FLT_FSTYPE_FS_REC, FLT_FSTYPE_INCD_FAT, fltuserstructures/FLT_FSTYPE_ROXIO_UDF1, PFLT_FILESYSTEM_TYPE enumeration pointer [Installable File System Drivers], FLT_FSTYPE_PSFS, fltuserstructures/FLT_FSTYPE_NTFS, fltuserstructures/FLT_FSTYPE_FS_REC, FLT_FSTYPE_ROXIO_UDF2, FLT_FSTYPE_REFS, _FLT_FILESYSTEM_TYPE, PFLT_FILESYSTEM_TYPE, FLT_FSTYPE_TACIT, FLT_FSTYPE_UNKNOWN, fltuserstructures/FLT_FSTYPE_CDFS
+ms.keywords : fltuserstructures/FLT_FILESYSTEM_TYPE, FLT_FSTYPE_UNKNOWN, fltuserstructures/FLT_FSTYPE_WEBDAV, *PFLT_FILESYSTEM_TYPE, fltuserstructures/FLT_FSTYPE_REFS, FLT_FILESYSTEM_TYPE enumeration [Installable File System Drivers], FLT_FSTYPE_UDFS, FLT_FSTYPE_MUP, FLT_FSTYPE_RAW, fltuserstructures/FLT_FSTYPE_ROXIO_UDF2, FLT_FSTYPE_OPENAFS, fltuserstructures/FLT_FSTYPE_RSFX, fltuserstructures/FLT_FSTYPE_RAW, FLT_FSTYPE_LANMAN, FLT_FSTYPE_NPFS, fltuserstructures/FLT_FSTYPE_INCD, fltuserstructures/FLT_FSTYPE_CDFS, FLT_FSTYPE_CSVFS, FLT_FSTYPE_EXFAT, FLT_FSTYPE_RDPDR, fltuserstructures/FLT_FSTYPE_UDFS, fltuserstructures/FLT_FSTYPE_NETWARE, fltuserstructures/FLT_FSTYPE_INCD_FAT, fltuserstructures/FLT_FSTYPE_NFS, fltuserstructures/FLT_FSTYPE_RDPDR, fltuserstructures/FLT_FSTYPE_ROXIO_UDF1, FLT_FSTYPE_NFS, PFLT_FILESYSTEM_TYPE enumeration pointer [Installable File System Drivers], fltuserstructures/FLT_FSTYPE_ROXIO_UDF3, fltuserstructures/FLT_FSTYPE_LANMAN, fltuserstructures/FLT_FSTYPE_BSUDF, fltuserstructures/FLT_FSTYPE_OPENAFS, fltuserstructures/FLT_FSTYPE_FAT, FLT_FSTYPE_REFS, fltuserstructures/FLT_FSTYPE_MSFS, FLT_FSTYPE_NTFS, FLT_FSTYPE_FAT, FLT_FSTYPE_WEBDAV, FLT_FSTYPE_CDFS, FLT_FSTYPE_NETWARE, FLT_FSTYPE_BSUDF, FLT_FSTYPE_PSFS, FLT_FSTYPE_ROXIO_UDF1, fltuserstructures/FLT_FSTYPE_NTFS, fltuserstructures/PFLT_FILESYSTEM_TYPE, fltuserstructures/FLT_FSTYPE_NPFS, fltuserstructures/FLT_FSTYPE_GPFS, fltuserstructures/FLT_FSTYPE_UNKNOWN, FLT_FILESYSTEM_TYPE, FLT_FSTYPE_MS_NETWARE, fltuserstructures/FLT_FSTYPE_MS_NETWARE, fltuserstructures/FLT_FSTYPE_FS_REC, FLT_FSTYPE_ROXIO_UDF3, ifsk.flt_filesystem_type, FLT_FSTYPE_INCD, FLT_FSTYPE_FS_REC, fltuserstructures/FLT_FSTYPE_PSFS, FLT_FSTYPE_MSFS, fltuserstructures/FLT_FSTYPE_TACIT, FLT_FSTYPE_RSFX, fltuserstructures/FLT_FSTYPE_MUP, _FLT_FILESYSTEM_TYPE, FLT_FSTYPE_INCD_FAT, FLT_FSTYPE_GPFS, FLT_FSTYPE_ROXIO_UDF2, PFLT_FILESYSTEM_TYPE, fltuserstructures/FLT_FSTYPE_CSVFS, FLT_FSTYPE_TACIT, fltuserstructures/FLT_FSTYPE_EXFAT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FLT_FILESYSTEM_TYPE, *PFLT_FILESYSTEM_TYPE
+req.typenames : "*PFLT_FILESYSTEM_TYPE, FLT_FILESYSTEM_TYPE"
 ---
 
 # _FLT_FILESYSTEM_TYPE Enumeration
@@ -239,16 +239,14 @@ New file systems that are not part of the <b>FLT_FILESYSTEM_TYPE</b> enumeration
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later versions of the Windows operating system. Available in Windows XP and later versions of the Windows operating system. |
 | **Header** | fltuserstructures.h (include FltUser.h, FltKernel.h) |
 
 ## See Also
 
-<a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
-
 <a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_standard_information.md">FILTER_VOLUME_STANDARD_INFORMATION</a>
+
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
 
 <a href="..\fltkernel\nf-fltkernel-fltgetfilesystemtype.md">FltGetFileSystemType</a>
 

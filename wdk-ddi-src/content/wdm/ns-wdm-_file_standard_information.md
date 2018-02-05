@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9ff7efec-4844-4abf-89c2-472afc959697
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : kstruct_b_86abcab8-11e5-45de-983a-e78c6cb40a93.xml, wdm/FILE_STANDARD_INFORMATION, _FILE_STANDARD_INFORMATION, FILE_STANDARD_INFORMATION structure [Kernel-Mode Driver Architecture], *PFILE_STANDARD_INFORMATION, wdm/PFILE_STANDARD_INFORMATION, PFILE_STANDARD_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_STANDARD_INFORMATION, kernel.file_standard_information, PFILE_STANDARD_INFORMATION
+ms.keywords : "_FILE_STANDARD_INFORMATION, *PFILE_STANDARD_INFORMATION, FILE_STANDARD_INFORMATION, wdm/PFILE_STANDARD_INFORMATION, kstruct_b_86abcab8-11e5-45de-983a-e78c6cb40a93.xml, kernel.file_standard_information, PFILE_STANDARD_INFORMATION, FILE_STANDARD_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/FILE_STANDARD_INFORMATION, PFILE_STANDARD_INFORMATION structure pointer [Kernel-Mode Driver Architecture]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_STANDARD_INFORMATION, *PFILE_STANDARD_INFORMATION
+req.typenames : "*PFILE_STANDARD_INFORMATION, FILE_STANDARD_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -82,18 +82,15 @@ The number of hard links to the file.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
  
 

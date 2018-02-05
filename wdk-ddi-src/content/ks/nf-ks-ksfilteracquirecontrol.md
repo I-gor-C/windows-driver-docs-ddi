@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 93dfe9fe-e1af-45db-ab28-fd166f511fcc
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : KsFilterAcquireControl, stream.ksfilteracquirecontrol, ks/KsFilterAcquireControl, KsFilterAcquireControl function [Streaming Media Devices], avfunc_63930ae0-491f-4916-a24f-7de5c8fa1ad3.xml
+ms.keywords : avfunc_63930ae0-491f-4916-a24f-7de5c8fa1ad3.xml, stream.ksfilteracquirecontrol, KsFilterAcquireControl, KsFilterAcquireControl function [Streaming Media Devices], ks/KsFilterAcquireControl
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,20 +68,17 @@ This function is an inline call to <a href="..\ks\nf-ks-ksacquirecontrol.md">KsA
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
-
 <a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
+
+<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
 
 <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
 

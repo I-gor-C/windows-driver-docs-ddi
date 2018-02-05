@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : f6c595f2-a493-453a-a744-7ce6577ae29e
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : AtaPortGetPhysicalAddress routine [Storage Devices], atartns_8067117e-f163-4fe9-a3f4-24b32b5bcf63.xml, AtaPortGetPhysicalAddress, storage.ataportgetphysicaladdress, irb/AtaPortGetPhysicalAddress
+ms.keywords : AtaPortGetPhysicalAddress routine [Storage Devices], storage.ataportgetphysicaladdress, AtaPortGetPhysicalAddress, atartns_8067117e-f163-4fe9-a3f4-24b32b5bcf63.xml, irb/AtaPortGetPhysicalAddress
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,9 @@ Returns the number of mapped bytes starting at the returned physical address.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | irb.h (include Ata.h, Irb.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Ataport.lib; Pciidex.lib |
 
 ## See Also
 

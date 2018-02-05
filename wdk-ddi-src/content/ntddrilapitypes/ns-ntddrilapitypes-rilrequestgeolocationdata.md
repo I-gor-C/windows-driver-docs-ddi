@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 814e00c5-7248-4853-a61b-e70be86bca0e
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : RILREQUESTGEOLOCATIONDATA structure [Network Drivers Starting with Windows Vista], netvista.rilrequestgeolocationdata, ntddrilapitypes/RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA
+ms.keywords : netvista.rilrequestgeolocationdata, RILREQUESTGEOLOCATIONDATA structure [Network Drivers Starting with Windows Vista], ntddrilapitypes/RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -84,7 +84,4 @@ typedef struct _RILREQUESTGEOLOCATIONDATA {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

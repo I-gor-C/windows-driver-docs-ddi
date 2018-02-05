@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 3ce6286a-6805-491d-85fc-b2c7b0a9a1fb
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure [Kernel-Mode Driver Architecture], *PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_callback_context_cleanup_information, kstruct_d_949535da-0c9e-474c-9d68-1e8795c7203a.xml, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, wdm/REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, wdm/PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, _REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
+ms.keywords : wdm/REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, _REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_949535da-0c9e-474c-9d68-1e8795c7203a.xml, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_callback_context_cleanup_information, *PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, wdm/PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, *PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
+req.typenames : "*PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -76,9 +76,7 @@ For more information about registry filtering operations, see <a href="https://m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also

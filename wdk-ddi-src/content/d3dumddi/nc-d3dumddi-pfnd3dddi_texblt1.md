@@ -84,22 +84,17 @@ The pixel formats of the source and destination textures are identical and, in g
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_texblt1.md">D3DDDIARG_TEXBLT1</a>
+
+<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
 
  
 

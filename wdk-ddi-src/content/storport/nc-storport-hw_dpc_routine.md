@@ -108,26 +108,21 @@ HW_DPC_ROUTINE (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | DISPATCH_LEVEL (See Remarks section.) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
 <a href="..\storport\nf-storport-storportacquirespinlock.md">StorPortAcquireSpinLock</a>
 
-<a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
+<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
 
 <a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
 
-<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
-
 <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>
+
+<a href="..\storport\nc-storport-hw_interrupt.md">HwStorInterrupt</a>
 
  
 

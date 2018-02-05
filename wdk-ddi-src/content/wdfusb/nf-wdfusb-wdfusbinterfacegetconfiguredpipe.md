@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0836a969-e484-485f-9b65-202c177b4f43
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfUsbInterfaceGetConfiguredPipe, wdfusb/WdfUsbInterfaceGetConfiguredPipe, DFUsbRef_65a97d99-39c5-4750-95e1-6c9c20c169bb.xml, kmdf.wdfusbinterfacegetconfiguredpipe, PFN_WDFUSBINTERFACEGETCONFIGUREDPIPE, WdfUsbInterfaceGetConfiguredPipe method, wdf.wdfusbinterfacegetconfiguredpipe
+ms.keywords : PFN_WDFUSBINTERFACEGETCONFIGUREDPIPE, WdfUsbInterfaceGetConfiguredPipe method, wdfusb/WdfUsbInterfaceGetConfiguredPipe, WdfUsbInterfaceGetConfiguredPipe, wdf.wdfusbinterfacegetconfiguredpipe, kmdf.wdfusbinterfacegetconfiguredpipe, DFUsbRef_65a97d99-39c5-4750-95e1-6c9c20c169bb.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -85,12 +85,11 @@ For more information about the <b>WdfUsbInterfaceGetConfiguredPipe</b> method an
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | "<=DISPATCH_LEVEL" |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2 |
 
@@ -98,11 +97,11 @@ For more information about the <b>WdfUsbInterfaceGetConfiguredPipe</b> method an
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetnumconfiguredpipes.md">WdfUsbInterfaceGetNumConfiguredPipes</a>
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
-
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
 
 <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
 
  
 

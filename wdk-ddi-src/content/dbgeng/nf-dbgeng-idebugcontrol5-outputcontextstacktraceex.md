@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : B0C1E602-83CE-4F4E-9198-B1B1CDAFF4BF
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl5::OutputContextStackTraceEx, IDebugControl5 interface [Windows Debugging], OutputContextStackTraceEx method, OutputContextStackTraceEx method [Windows Debugging], IDebugControl5 interface, dbgeng/IDebugControl5::OutputContextStackTraceEx, IDebugControl5, debugger.idebugcontrol5_outputcontextstacktraceex, OutputContextStackTraceEx, OutputContextStackTraceEx method [Windows Debugging]
+ms.keywords : OutputContextStackTraceEx, IDebugControl5 interface [Windows Debugging], OutputContextStackTraceEx method, IDebugControl5, OutputContextStackTraceEx method [Windows Debugging], IDebugControl5 interface, dbgeng/IDebugControl5::OutputContextStackTraceEx, IDebugControl5::OutputContextStackTraceEx, OutputContextStackTraceEx method [Windows Debugging], debugger.idebugcontrol5_outputcontextstacktraceex
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -228,14 +228,9 @@ The method was successful.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 

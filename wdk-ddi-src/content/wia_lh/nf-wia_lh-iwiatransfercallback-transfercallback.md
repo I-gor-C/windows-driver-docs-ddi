@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : dc6c2057-9617-4c69-ac79-2a8f910a1ee2
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : TransferCallback, TransferCallback method [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], TransferCallback method, TransferCallback method [Imaging Devices], IWiaTransferCallback interface, IWiaTransfercallback_8e8bdc78-ce93-4fe1-98aa-91ffe608ee52.xml, wia_lh/IWiaTransferCallback::TransferCallback, IWiaTransferCallback::TransferCallback, IWiaTransferCallback, image.iwiatransfercallback_transfercallback
+ms.keywords : IWiaTransferCallback, TransferCallback, TransferCallback method [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], TransferCallback method, wia_lh/IWiaTransferCallback::TransferCallback, IWiaTransferCallback::TransferCallback, image.iwiatransfercallback_transfercallback, IWiaTransfercallback_8e8bdc78-ce93-4fe1-98aa-91ffe608ee52.xml, TransferCallback method [Imaging Devices], IWiaTransferCallback interface
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -77,11 +77,6 @@ An image processing filter's <b>IWiaTransferCallback::TransferCallback</b> metho
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | wia_lh.h (include Wia.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wia_lh.h |

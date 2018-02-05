@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : C9707F47-75DF-4CDE-B88B-24323FC8C94B
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATECONTEXTVIRTUAL, _D3DKMT_CREATECONTEXTVIRTUAL, d3dkmthk/D3DKMT_CREATECONTEXTVIRTUAL, display.d3dkmt_createcontextvirtual, D3DKMT_CREATECONTEXTVIRTUAL structure [Display Devices]
+ms.keywords : D3DKMT_CREATECONTEXTVIRTUAL structure [Display Devices], display.d3dkmt_createcontextvirtual, D3DKMT_CREATECONTEXTVIRTUAL, _D3DKMT_CREATECONTEXTVIRTUAL, d3dkmthk/D3DKMT_CREATECONTEXTVIRTUAL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -94,9 +94,7 @@ typedef struct _D3DKMT_CREATECONTEXTVIRTUAL {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also

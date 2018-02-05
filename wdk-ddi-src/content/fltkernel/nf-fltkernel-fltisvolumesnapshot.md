@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : eb35e108-577e-4897-8f8c-f3c54753c1f7
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FltIsVolumeSnapshot, ifsk.fltisvolumesnapshot, FltIsVolumeSnapshot routine [Installable File System Drivers], FltApiRef_e_to_o_652c8b18-8114-460b-852f-9c6bc8ff687f.xml, fltkernel/FltIsVolumeSnapshot
+ms.keywords : FltIsVolumeSnapshot routine [Installable File System Drivers], FltIsVolumeSnapshot, ifsk.fltisvolumesnapshot, fltkernel/FltIsVolumeSnapshot, FltApiRef_e_to_o_652c8b18-8114-460b-852f-9c6bc8ff687f.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -123,11 +123,9 @@ If the volume or instance object does not support snapshots, <b>FltIsVolumeSnaps
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | fltkernel.h (include Fltkernel.h) |
-| **Library** |  |
+| **Library** | Fltmgr.lib |
+| **DLL** | FltMgr.sys |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

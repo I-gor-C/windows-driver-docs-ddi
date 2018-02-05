@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 7a10b7e0-b062-4ec9-9883-7042f6e55505
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11DDI_CORELAYER_DEVICECALLBACKS, display.d3d11ddi_corelayer_devicecallbacks, UMDisplayDriver_Dx11param_Structs_182fd279-98be-4418-b7ca-658d038cb39a.xml, D3D11DDI_CORELAYER_DEVICECALLBACKS, D3D11DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices]
+ms.keywords : d3d10umddi/D3D11DDI_CORELAYER_DEVICECALLBACKS, D3D11DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3d11ddi_corelayer_devicecallbacks, UMDisplayDriver_Dx11param_Structs_182fd279-98be-4418-b7ca-658d038cb39a.xml, D3D11DDI_CORELAYER_DEVICECALLBACKS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -260,9 +260,7 @@ The driver uses the functions with "State" in their name to retrieve the current
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | D3D11DDI_CORELAYER_DEVICECALLBACKS is supported beginning with the Windows 7 operating system. D3D11DDI_CORELAYER_DEVICECALLBACKS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

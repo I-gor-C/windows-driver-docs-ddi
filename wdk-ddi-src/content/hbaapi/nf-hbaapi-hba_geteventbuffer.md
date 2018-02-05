@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 0f06b154-7d85-4a60-b354-bd61fbc597dc
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : storage.hba_geteventbuffer, fibreHBA_rtns_782019e1-826f-486d-b8c7-6d58c097aa1d.xml, HBA_GetEventBuffer routine [Storage Devices], hbaapi/HBA_GetEventBuffer, HBA_GetEventBuffer
+ms.keywords : fibreHBA_rtns_782019e1-826f-486d-b8c7-6d58c097aa1d.xml, storage.hba_geteventbuffer, HBA_GetEventBuffer, hbaapi/HBA_GetEventBuffer, HBA_GetEventBuffer routine [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -103,22 +103,18 @@ Returned if an unspecified error occurred that prevented the retrieval of the ev
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | hbaapi.h (include Hbaapi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Hbaapi.lib |
+| **DLL** | Hbaapi.dll |
 
 ## See Also
+
+<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
 
 <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
 
  
 

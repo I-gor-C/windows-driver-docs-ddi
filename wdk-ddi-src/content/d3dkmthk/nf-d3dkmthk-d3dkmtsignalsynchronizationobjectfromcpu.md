@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 23DC5EB1-E606-499D-B78A-AFF95E6B00A3
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMTSignalSynchronizationObjectFromCpu function [Display Devices], D3DKMTSignalSynchronizationObjectFromCpu, display.d3dkmtsignalsynchronizationobjectfromcpu, d3dkmthk/D3DKMTSignalSynchronizationObjectFromCpu
+ms.keywords : d3dkmthk/D3DKMTSignalSynchronizationObjectFromCpu, display.d3dkmtsignalsynchronizationobjectfromcpu, D3DKMTSignalSynchronizationObjectFromCpu function [Display Devices], D3DKMTSignalSynchronizationObjectFromCpu
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -91,11 +91,8 @@ However, the caller cannot assume that the signal operation will be completed up
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Universal |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | GDI32.lib |
+| **DLL** | GDI32.dll |

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a76d9549-d182-437f-a570-7d24fd6a5488
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_setpalette, DmStructs_d5720608-bc3d-437a-b080-6cd8b9635391.xml, DXGKARG_SETPALETTE structure [Display Devices], d3dkmdt/DXGKARG_SETPALETTE, DXGKARG_SETPALETTE, _DXGKARG_SETPALETTE
+ms.keywords : d3dkmdt/DXGKARG_SETPALETTE, DmStructs_d5720608-bc3d-437a-b080-6cd8b9635391.xml, DXGKARG_SETPALETTE, display.dxgkarg_setpalette, DXGKARG_SETPALETTE structure [Display Devices], _DXGKARG_SETPALETTE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,16 +74,14 @@ typedef struct _DXGKARG_SETPALETTE {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
 ## See Also
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_palettedata.md">D3DKMDT_PALETTEDATA</a>
-
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setpalette.md">DxgkDdiSetPalette</a>
+
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_palettedata.md">D3DKMDT_PALETTEDATA</a>
 
  
 

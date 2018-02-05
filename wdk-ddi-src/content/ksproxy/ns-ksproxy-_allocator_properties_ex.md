@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 6edb8af4-a5c9-430f-800a-8a6f47a9cce4
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "_ALLOCATOR_PROPERTIES_EX, stream.allocator_properties_ex, *PALLOCATOR_PROPERTIES_EX, PALLOCATOR_PROPERTIES_EX, PALLOCATOR_PROPERTIES_EX structure pointer [Streaming Media Devices], ksproxy/ALLOCATOR_PROPERTIES_EX, ksproxy_6d16a85e-e11b-46e1-a9ab-b8f099e32d57.xml, ksproxy/PALLOCATOR_PROPERTIES_EX, ALLOCATOR_PROPERTIES_EX structure [Streaming Media Devices], ALLOCATOR_PROPERTIES_EX"
+ms.keywords : ALLOCATOR_PROPERTIES_EX, PALLOCATOR_PROPERTIES_EX structure pointer [Streaming Media Devices], *PALLOCATOR_PROPERTIES_EX, _ALLOCATOR_PROPERTIES_EX, ksproxy/ALLOCATOR_PROPERTIES_EX, ksproxy_6d16a85e-e11b-46e1-a9ab-b8f099e32d57.xml, ksproxy/PALLOCATOR_PROPERTIES_EX, stream.allocator_properties_ex, ALLOCATOR_PROPERTIES_EX structure [Streaming Media Devices], PALLOCATOR_PROPERTIES_EX
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -159,7 +159,4 @@ typedef struct _ALLOCATOR_PROPERTIES_EX {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ksproxy.h (include Ksproxy.h) |

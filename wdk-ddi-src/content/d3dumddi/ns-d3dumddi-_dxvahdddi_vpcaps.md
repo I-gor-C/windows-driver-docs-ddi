@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 3e7e3280-3176-4bec-95ab-4dd203fce419
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_d3780f70-71f7-4105-a79e-df3abda62417.xml, DXVAHDDDI_VPCAPS, display.dxvahdddi_vpcaps, d3dumddi/DXVAHDDDI_VPCAPS, DXVAHDDDI_VPCAPS structure [Display Devices], _DXVAHDDDI_VPCAPS
+ms.keywords : d3dumddi/DXVAHDDDI_VPCAPS, display.dxvahdddi_vpcaps, DXVAHDDDI_VPCAPS, DXVAHDDDI_VPCAPS structure [Display Devices], DXVA2_Structs_d3780f70-71f7-4105-a79e-df3abda62417.xml, _DXVAHDDDI_VPCAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -264,22 +264,20 @@ The user-mode display driver returns a pointer to a populated DXVAHDDDI_VPCAPS s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | DXVAHDDDI_VPCAPS is supported beginning with the Windows 7 operating system. DXVAHDDDI_VPCAPS is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
-
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
 
 <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
+
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
 
  
 

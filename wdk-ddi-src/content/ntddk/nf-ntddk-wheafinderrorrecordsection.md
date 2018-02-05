@@ -8,7 +8,7 @@ old-project : whea
 ms.assetid : 57c94f04-82e2-4790-b198-d415e494d70b
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : whea.wheafinderrorrecordsection, WheaFindErrorRecordSection, whearef2_fe7f8220-081d-475c-9230-d59cff81164d.xml, ntddk/WheaFindErrorRecordSection, WheaFindErrorRecordSection function [WHEA Drivers and Applications]
+ms.keywords : whea.wheafinderrorrecordsection, whearef2_fe7f8220-081d-475c-9230-d59cff81164d.xml, WheaFindErrorRecordSection, WheaFindErrorRecordSection function [WHEA Drivers and Applications], ntddk/WheaFindErrorRecordSection
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -131,14 +131,11 @@ The format of the hardware error data is dependent upon the <b>SectionType </b>m
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
+| **Target Platform** | Desktop |
 | **Header** | ntddk.h (include Ntddk.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | "<=DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

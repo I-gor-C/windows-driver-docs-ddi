@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 41A8B278-3735-41CB-B8D1-45FBF04465AD
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PoFxRegisterDevice, wdm/PoFxRegisterDevice, kernel.pofxregisterdevice, PoFxRegisterDevice routine [Kernel-Mode Driver Architecture]
+ms.keywords : PoFxRegisterDevice, PoFxRegisterDevice routine [Kernel-Mode Driver Architecture], wdm/PoFxRegisterDevice, kernel.pofxregisterdevice
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -135,30 +135,28 @@ For information about how the KMDF driver for a multiple-component device regist
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 8. Available starting with Windows 8. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h |
-| **Library** |  |
+| **Library** | Ntoskrnl.lib |
+| **DLL** | Ntoskrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
-
-<a href="..\wdm\nf-wdm-pofxidlecomponent.md">PoFxIdleComponent</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
+<a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
 
 <a href="..\wdm\nf-wdm-pofxstartdevicepowermanagement.md">PoFxStartDevicePowerManagement</a>
 
-<a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
+<a href="..\wdm\nf-wdm-pofxidlecomponent.md">PoFxIdleComponent</a>
 
 <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 
 <a href="..\wdm\nf-wdm-pofxactivatecomponent.md">PoFxActivateComponent</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
+
+<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device.md">EvtDeviceWdmPostPoFxRegisterDevice</a>
 
  
 

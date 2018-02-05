@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : e9e20d9c-0f2f-4ab1-a249-3e09bb6a7a22
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/RtlZeroMemory, RtlZeroMemory, kernel.rtlzeromemory, RtlZeroMemory routine [Kernel-Mode Driver Architecture], k109_63d9f0fb-d698-4707-9018-de2fa851a94b.xml
+ms.keywords : RtlZeroMemory routine [Kernel-Mode Driver Architecture], k109_63d9f0fb-d698-4707-9018-de2fa851a94b.xml, wdm/RtlZeroMemory, kernel.rtlzeromemory, RtlZeroMemory
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : macro
@@ -76,20 +76,19 @@ Callers of <b>RtlZeroMemory</b> can be running at any IRQL if the destination me
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level (See Remarks section) |
 | **DDI compliance rules** | BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlsecurezeromemory.md">RtlSecureZeroMemory</a>
-
 <a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
+
+<a href="..\wdm\nf-wdm-rtlsecurezeromemory.md">RtlSecureZeroMemory</a>
 
  
 

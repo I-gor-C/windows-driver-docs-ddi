@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8f79a3cf-9bc7-4135-a90e-d9dce86cf5f6
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PFILE_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _FILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION, kernel.file_basic_information, PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/FILE_BASIC_INFORMATION, kstruct_b_3de98e8c-d842-45e9-a9bd-948276ef1b87.xml, *PFILE_BASIC_INFORMATION, wdm/PFILE_BASIC_INFORMATION
+ms.keywords : "*PFILE_BASIC_INFORMATION, PFILE_BASIC_INFORMATION, _FILE_BASIC_INFORMATION, wdm/PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_BASIC_INFORMATION, wdm/FILE_BASIC_INFORMATION, kernel.file_basic_information, kstruct_b_3de98e8c-d842-45e9-a9bd-948276ef1b87.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : FILE_BASIC_INFORMATION, *PFILE_BASIC_INFORMATION
+req.typenames : "*PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION"
 req.product : Windows 10 or later.
 ---
 
@@ -90,20 +90,17 @@ To set the members of this structure, the caller must have FILE_WRITE_ATTRIBUTES
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 
 <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 
-<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
-
 <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
+
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 
  
 

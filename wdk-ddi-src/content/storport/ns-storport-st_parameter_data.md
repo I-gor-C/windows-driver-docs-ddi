@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : C50F45EC-433C-421D-BD02-4C86CB44D5A4
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : scsi/PST_PARAMETER_DATA, ST_PARAMETER_DATA structure [Storage Devices], PST_PARAMETER_DATA structure pointer [Storage Devices], PST_PARAMETER_DATA, storage.st_parameter_data, ST_PARAMETER_DATA, *PST_PARAMETER_DATA, scsi/ST_PARAMETER_DATA
+ms.keywords : ST_PARAMETER_DATA structure [Storage Devices], PST_PARAMETER_DATA, PST_PARAMETER_DATA structure pointer [Storage Devices], scsi/PST_PARAMETER_DATA, storage.st_parameter_data, ST_PARAMETER_DATA, scsi/ST_PARAMETER_DATA, *PST_PARAMETER_DATA
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -73,14 +73,12 @@ should be the number of milliseconds that have elapsed since midnight, 1 January
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 10, version 1709 and later versions of Windows. Available in Windows 10, version 1709 and later versions of Windows. |
 | **Header** | storport.h (include Minitape.h, Storport.h) |
 
 ## See Also
 
-<a href="..\minitape\ns-minitape-rt_parameter_data.md">RT_PARAMETER_DATA</a>
+<a href="..\storport\ns-storport-rt_parameter_data.md">RT_PARAMETER_DATA</a>
 
  
 

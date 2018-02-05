@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8e7713a5-534d-42b4-a719-7b7ce911245a
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/IoUninitializeWorkItem, IoUninitializeWorkItem, k104_05634a73-eb65-4572-a776-4dcd6b116f52.xml, IoUninitializeWorkItem routine [Kernel-Mode Driver Architecture], kernel.iouninitializeworkitem
+ms.keywords : IoUninitializeWorkItem, kernel.iouninitializeworkitem, k104_05634a73-eb65-4572-a776-4dcd6b116f52.xml, wdm/IoUninitializeWorkItem, IoUninitializeWorkItem routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,20 +71,18 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of Windows. Available in Windows Vista and later versions of Windows. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a>
+
+<a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>
 
  
 

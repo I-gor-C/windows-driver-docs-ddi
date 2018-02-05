@@ -8,7 +8,7 @@ old-project : sensors
 ms.assetid : A97DE517-26ED-452F-9066-94F73BC47BDE
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_PLATFORM_CAPABILITY, sensors.gnss_platform_capability, *PGNSS_PLATFORM_CAPABILITY, PGNSS_PLATFORM_CAPABILITY structure pointer [Sensor Devices], GNSS_PLATFORM_CAPABILITY, gnssdriver/PGNSS_PLATFORM_CAPABILITY, PGNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY structure [Sensor Devices]
+ms.keywords : GNSS_PLATFORM_CAPABILITY structure [Sensor Devices], gnssdriver/GNSS_PLATFORM_CAPABILITY, PGNSS_PLATFORM_CAPABILITY structure pointer [Sensor Devices], sensors.gnss_platform_capability, gnssdriver/PGNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY, PGNSS_PLATFORM_CAPABILITY, *PGNSS_PLATFORM_CAPABILITY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : GNSS_PLATFORM_CAPABILITY, *PGNSS_PLATFORM_CAPABILITY
+req.typenames : "*PGNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY"
 ---
 
 # GNSS_PLATFORM_CAPABILITY structure
@@ -82,7 +82,4 @@ This is a list of individual capability support of the GNSS adapter. The platfor
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | gnssdriver.h |

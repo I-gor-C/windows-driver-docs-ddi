@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : afa900fc-7297-425b-8308-18806d7d97d3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*PUSBSCAN_TIMEOUT, usbscan/USBSCAN_TIMEOUT, usbscan/PUSBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT, image.usbscan_timeout, USBSCAN_TIMEOUT, _USBSCAN_TIMEOUT, USBSCAN_TIMEOUT structure [Imaging Devices], PUSBSCAN_TIMEOUT structure pointer [Imaging Devices], stifnc_ebdd7bda-2eb0-446c-a52c-e9a80f6478da.xml"
+ms.keywords : image.usbscan_timeout, stifnc_ebdd7bda-2eb0-446c-a52c-e9a80f6478da.xml, *PUSBSCAN_TIMEOUT, _USBSCAN_TIMEOUT, USBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT structure pointer [Imaging Devices], PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT structure [Imaging Devices], usbscan/PUSBSCAN_TIMEOUT, usbscan/USBSCAN_TIMEOUT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -74,9 +74,6 @@ The USBSCAN_TIMEOUT structure is used as a parameter to <a href="https://msdn.mi
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | usbscan.h (include Usbscan.h) |
 
 ## See Also

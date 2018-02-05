@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : c9d019da-a05b-4c60-99e9-06b8537fa78e
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : portcls/PcInitializeAdapterDriver, audio.pcinitializeadapterdriver, PcInitializeAdapterDriver function [Audio Devices], audpc-routines_57c7e54d-ab27-4752-b13b-9d7de107322c.xml, PcInitializeAdapterDriver
+ms.keywords : portcls/PcInitializeAdapterDriver, audpc-routines_57c7e54d-ab27-4752-b13b-9d7de107322c.xml, audio.pcinitializeadapterdriver, PcInitializeAdapterDriver, PcInitializeAdapterDriver function [Audio Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -142,24 +142,21 @@ An adapter driver that overwrites one or more of the pointers above with a point
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcInitializeAdapterDriver function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. The PortCls system driver implements the PcInitializeAdapterDriver function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
+| **Library** | Portcls.lib |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 
 <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+<a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>
 
 <a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a>
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 5189ffad-e5dc-4f5a-a7e3-481d36332c81
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PNP_LOCATION_INTERFACE structure [Kernel-Mode Driver Architecture], kernel.pnp_location_interface, *PPNP_LOCATION_INTERFACE, ntddk/PNP_LOCATION_INTERFACE, PNP_LOCATION_INTERFACE, PPNP_LOCATION_INTERFACE, ntddk/PPNP_LOCATION_INTERFACE, PPNP_LOCATION_INTERFACE structure pointer [Kernel-Mode Driver Architecture], _PNP_LOCATION_INTERFACE, drvr_interface_06c9b5c0-359b-4b14-9ade-8f88f04ee534.xml
+ms.keywords : kernel.pnp_location_interface, ntddk/PNP_LOCATION_INTERFACE, PPNP_LOCATION_INTERFACE, drvr_interface_06c9b5c0-359b-4b14-9ade-8f88f04ee534.xml, PPNP_LOCATION_INTERFACE structure pointer [Kernel-Mode Driver Architecture], PNP_LOCATION_INTERFACE structure [Kernel-Mode Driver Architecture], _PNP_LOCATION_INTERFACE, PNP_LOCATION_INTERFACE, *PPNP_LOCATION_INTERFACE, ntddk/PPNP_LOCATION_INTERFACE
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,20 +86,18 @@ A driver obtains a pointer to the <b>PNP_LOCATION_INTERFACE</b> structure by sen
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows Server 2003 and later versions of the Windows operating system. Windows Server 2003 and later versions of the Windows operating system. |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
-
 <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>
 
-<a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>
-
 <a href="..\ntddk\nc-ntddk-pget_location_string.md">PnpGetLocationString</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
+
+<a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 54a5009d-9893-4766-b9fd-7e7474b55949
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : InitializePrintProvidor, spoolfnc_b67588a9-bccb-4181-8fd0-cbdc1b7af7c5.xml, print.initializeprintprovidor, InitializePrintProvidor function [Print Devices], winsplp/InitializePrintProvidor
+ms.keywords : print.initializeprintprovidor, winsplp/InitializePrintProvidor, spoolfnc_b67588a9-bccb-4181-8fd0-cbdc1b7af7c5.xml, InitializePrintProvidor function [Print Devices], InitializePrintProvidor
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,14 +81,9 @@ Print providers are required to define an <b>InitializePrintProvidor</b> functio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | winsplp.h (include Winsplp.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

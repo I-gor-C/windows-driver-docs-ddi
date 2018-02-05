@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : 2bd4f3f6-94a4-47a6-8c15-a8f9bef5d2b5
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : bthddi/BRB_VERSION, bth_enums_d14431ac-24e9-4a27-90b9-a8aef7e38769.xml, BLUETOOTH_V1, BLUETOOTH_V2, BRB_VERSION enumeration [Bluetooth Devices], bltooth.brb_version, bthddi/BLUETOOTH_V1, BRB_VERSION, _BRB_VERSION, bthddi/BLUETOOTH_V2
+ms.keywords : BLUETOOTH_V1, bthddi/BLUETOOTH_V2, BRB_VERSION, bthddi/BLUETOOTH_V1, bth_enums_d14431ac-24e9-4a27-90b9-a8aef7e38769.xml, bltooth.brb_version, bthddi/BRB_VERSION, BRB_VERSION enumeration [Bluetooth Devices], BLUETOOTH_V2, _BRB_VERSION
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -69,22 +69,20 @@ enum BRB_VERSION {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported in Windows Vista, and later. Versions:\_Supported in Windows Vista, and later. |
 | **Header** | bthddi.h (include Bthddi.h) |
 
 ## See Also
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
 
 <a href="..\bthddi\ns-bthddi-_brb.md">BRB</a>
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
 
-<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+
+<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 
  
 

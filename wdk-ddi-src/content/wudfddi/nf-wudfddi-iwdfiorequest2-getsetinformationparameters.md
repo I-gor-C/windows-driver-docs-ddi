@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 44872d92-4a71-4cc7-9f7c-c95477ac3264
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2, GetSetInformationParameters, GetSetInformationParameters method, IWDFIoRequest2 interface, IWDFIoRequest2 interface, GetSetInformationParameters method, wudfddi/IWDFIoRequest2::GetSetInformationParameters, IWDFIoRequest2::GetSetInformationParameters, GetSetInformationParameters method, UMDFRequestObjectRef_ed4dd211-1a7c-4ca3-9450-ab4320ece88d.xml, umdf.iwdfiorequest2_getsetinformationparameters, wdf.iwdfiorequest2_getsetinformationparameters
+ms.keywords : UMDFRequestObjectRef_ed4dd211-1a7c-4ca3-9450-ab4320ece88d.xml, GetSetInformationParameters, wdf.iwdfiorequest2_getsetinformationparameters, GetSetInformationParameters method, IWDFIoRequest2 interface, IWDFIoRequest2, IWDFIoRequest2::GetSetInformationParameters, GetSetInformationParameters method, umdf.iwdfiorequest2_getsetinformationparameters, wudfddi/IWDFIoRequest2::GetSetInformationParameters, IWDFIoRequest2 interface, GetSetInformationParameters method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -58,7 +58,7 @@ void GetSetInformationParameters(
 
 `pInformationClass`
 
-A pointer to a driver-allocated variable that receives a <a href="..\wdffileobject\ne-wdffileobject-_wdf_file_information_class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value. This pointer is optional and can be <b>NULL</b>.
+A pointer to a driver-allocated variable that receives a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_file_information_class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value. This pointer is optional and can be <b>NULL</b>.
 
 `pSizeInBytes`
 
@@ -78,20 +78,18 @@ Your driver must verify that the specified buffer size is large enough to contai
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558997">IWDFIoRequest2::GetQueryInformationParameters</a>
+
+<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 
  
 

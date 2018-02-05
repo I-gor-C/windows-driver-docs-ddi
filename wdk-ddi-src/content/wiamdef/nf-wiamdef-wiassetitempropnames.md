@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 4140a6c6-60e8-41ec-8de0-cfb56e757e34
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiamdef/wiasSetItemPropNames, wiasSetItemPropNames function [Imaging Devices], wiasSetItemPropNames, image.wiassetitempropnames, wiasFncs_e8f17c14-47a7-42bc-ad85-cdd52ecbab79.xml
+ms.keywords : wiasSetItemPropNames, wiasFncs_e8f17c14-47a7-42bc-ad85-cdd52ecbab79.xml, wiasSetItemPropNames function [Imaging Devices], wiamdef/wiasSetItemPropNames, image.wiassetitempropnames
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *LPDEVICEDIALOGDATA2"
+req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
 req.product : Windows 10 or later.
 ---
 
@@ -84,14 +84,11 @@ Minidrivers typically use this function when initializing item properties. The o
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems. |
+| **Target Platform** | Desktop |
 | **Header** | wiamdef.h (include Wiamdef.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Wiaservc.lib |
+| **DLL** | Wiaservc.dll |
 
 ## See Also
 

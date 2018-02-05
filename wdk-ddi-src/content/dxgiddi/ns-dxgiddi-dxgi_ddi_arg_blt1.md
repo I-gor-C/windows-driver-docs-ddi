@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : bc7c2693-6a18-4335-8921-363981a830f1
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_BLT1 structure [Display Devices], dxgiddi/DXGI_DDI_ARG_BLT1, DXGI_DDI_ARG_BLT1, display.dxgi_ddi_arg_blt1
+ms.keywords : display.dxgi_ddi_arg_blt1, DXGI_DDI_ARG_BLT1, DXGI_DDI_ARG_BLT1 structure [Display Devices], dxgiddi/DXGI_DDI_ARG_BLT1
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -131,20 +131,18 @@ The source rectangle specified by the members <b>SrcLeft</b>, <b>SrcTop</b>, <b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8,WDDM 1.2 and later Windows 8,WDDM 1.2 and later |
 | **Header** | dxgiddi.h (include D3d10umddi.h) |
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
+<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt_flags.md">DXGI_DDI_ARG_BLT_FLAGS</a>
 
 <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_mode_rotation.md">DXGI_DDI_MODE_ROTATION</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createdevice.md">D3D10DDIARG_CREATEDEVICE</a>
 
-<a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_arg_blt_flags.md">DXGI_DDI_ARG_BLT_FLAGS</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
 
  
 

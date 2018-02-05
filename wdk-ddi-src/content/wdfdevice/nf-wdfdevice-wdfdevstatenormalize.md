@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 0243de8b-0f47-4f0a-af25-beb6365386dd
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVSTATENORMALIZE, DFDeviceObjectGeneralRef_24d4e166-f4b0-4696-b775-62d0df565a8a.xml, WdfDevStateNormalize method, kmdf.wdfdevstatenormalize, WdfDevStateNormalize, wdf.wdfdevstatenormalize, wdfdevice/WdfDevStateNormalize
+ms.keywords : wdf.wdfdevstatenormalize, DFDeviceObjectGeneralRef_24d4e166-f4b0-4696-b775-62d0df565a8a.xml, wdfdevice/WdfDevStateNormalize, PFN_WDFDEVSTATENORMALIZE, WdfDevStateNormalize method, kmdf.wdfdevstatenormalize, WdfDevStateNormalize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -68,11 +68,9 @@ A state machine value that is returned from <a href="..\wdfdevice\nf-wdfdevice-w
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF) |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |

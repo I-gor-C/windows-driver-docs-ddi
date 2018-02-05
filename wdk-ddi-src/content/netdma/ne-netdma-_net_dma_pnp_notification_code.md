@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 1c9c09ae-5b7a-4482-8f6b-1ad5ede5b3f5
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NetDmaNotificationProviderRemoval, NET_DMA_PNP_NOTIFICATION_CODE, PNET_DMA_PNP_NOTIFICATION_CODE enumeration pointer [Network Drivers Starting with Windows Vista], netdma/NetDmaNotificationProviderRemoval, netdma/NetDmaNotificationChannelArrival, _NET_DMA_PNP_NOTIFICATION_CODE, netdma/PNET_DMA_PNP_NOTIFICATION_CODE, NetDmaNotificationProviderPowerUp, netdma_ref_ce8373ae-1547-410d-b33e-d95eb42d649e.xml, NetDmaNotificationProviderRegistered, netdma/NetDmaNotificationProviderArrival, NetDmaNotificationMax, netvista.net_dma_pnp_notification_code, NetDmaNotificationChannelArrival, *PNET_DMA_PNP_NOTIFICATION_CODE, PNET_DMA_PNP_NOTIFICATION_CODE, netdma/NetDmaNotificationMax, netdma/NetDmaNotificationProviderRegistered, NET_DMA_PNP_NOTIFICATION_CODE enumeration [Network Drivers Starting with Windows Vista], netdma/NET_DMA_PNP_NOTIFICATION_CODE, NetDmaNotificationProviderArrival, netdma/NetDmaNotificationProviderPowerUp, NetDmaNotificationProviderPowerDown, netdma/NetDmaNotificationProviderPowerDown
+ms.keywords : PNET_DMA_PNP_NOTIFICATION_CODE, netdma/PNET_DMA_PNP_NOTIFICATION_CODE, netdma/NetDmaNotificationProviderRemoval, netdma_ref_ce8373ae-1547-410d-b33e-d95eb42d649e.xml, netdma/NetDmaNotificationMax, netvista.net_dma_pnp_notification_code, netdma/NetDmaNotificationProviderPowerUp, _NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE, NetDmaNotificationProviderRemoval, netdma/NetDmaNotificationProviderRegistered, NetDmaNotificationProviderPowerUp, netdma/NetDmaNotificationChannelArrival, NET_DMA_PNP_NOTIFICATION_CODE enumeration [Network Drivers Starting with Windows Vista], netdma/NET_DMA_PNP_NOTIFICATION_CODE, netdma/NetDmaNotificationProviderPowerDown, NetDmaNotificationProviderRegistered, NET_DMA_PNP_NOTIFICATION_CODE, NetDmaNotificationProviderPowerDown, NetDmaNotificationChannelArrival, PNET_DMA_PNP_NOTIFICATION_CODE enumeration pointer [Network Drivers Starting with Windows Vista], netdma/NetDmaNotificationProviderArrival, NetDmaNotificationProviderArrival, NetDmaNotificationMax
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
+req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 # _NET_DMA_PNP_NOTIFICATION_CODE Enumeration
@@ -104,15 +104,13 @@ typedef enum _NET_DMA_PNP_NOTIFICATION_CODE {
 ## Remarks
 
 The NET_DMA_PNP_NOTIFICATION_CODE enumeration is used in the 
-    <mshelp:link keywords="netvista.net_dma_pnp_notification" tabindex="0"><b>
-    NET_DMA_PNP_NOTIFICATION</b></mshelp:link> structure.
+    <a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">
+    NET_DMA_PNP_NOTIFICATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008. |
 | **Header** | netdma.h (include Netdma.h) |
 
 ## See Also

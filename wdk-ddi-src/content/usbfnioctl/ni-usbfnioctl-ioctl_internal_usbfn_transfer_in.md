@@ -74,6 +74,4 @@ UFX forwards this IOCTL request to the transfer queue created for the endpoint b
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
 | **Header** | usbfnioctl.h |
-| **IRQL** |  |

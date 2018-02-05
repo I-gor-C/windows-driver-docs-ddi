@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -74,8 +74,8 @@ The handle used by the operating system to reference the wireless LAN (WLAN) ada
 
 The handle used by the operating system to reference the connection session with the BSS network.
      This handle value was specified through a previous call to the 
-     <mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-     Dot11ExtIhvPerformPreAssociate</i></mshelp:link> IHV Handler function.
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+     Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
 `dwSessionID`
 
@@ -110,38 +110,33 @@ For every wireless WLAN profile used by the Native Wifi AutoConfig service, Wind
     the 
     <i>Dot11ExtSetProfileCustomUserData</i> function. The custom user data gets reset to empty any time the
     profile is modified by calling the 
-    <mshelp:link keywords="netvista.dot11extsetcurrentprofile" tabindex="0"><b>
-    Dot11ExtSetCurrentProfile</b></mshelp:link> function.
+    <a href="..\wlanihv\nc-wlanihv-dot11ext_set_current_profile.md">
+    Dot11ExtSetCurrentProfile</a> function.
 
 After custom user data has been set, this data can be accessed using the 
-    <mshelp:link keywords="netvista.dot11extgetprofilecustomuserdata" tabindex="0"><b>
-    Dot11ExtGetProfileCustomUserData</b></mshelp:link> function. The operating system stores the data under the system
+    <a href="..\wlanihv\nc-wlanihv-dot11ext_get_profile_custom_user_data.md">
+    Dot11ExtGetProfileCustomUserData</a> function. The operating system stores the data under the system
     registry HKEY_CURRENT_USER key for the user that is referenced by the handle passed in the 
     <i>dwSessionID</i> parameter.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
-
-<mshelp:link keywords="netvista.dot11extgetprofilecustomuserdata" tabindex="0"><b>
-   Dot11ExtGetProfileCustomUserData</b></mshelp:link>
-
-<mshelp:link keywords="netvista.dot11extihvperformpreassociate" tabindex="0"><i>
-   Dot11ExtIhvPerformPreAssociate</i></mshelp:link>
+<a href="..\wlanihv\nc-wlanihv-dot11ext_get_profile_custom_user_data.md">
+   Dot11ExtGetProfileCustomUserData</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_set_current_profile.md">Dot11ExtSetCurrentProfile</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
+   Dot11ExtIhvPerformPreAssociate</a>
+
+<a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
 
  
 

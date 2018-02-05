@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : c3afb073-feb4-47ad-96a1-c9b580626026
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : RtlFreeSid function [Installable File System Drivers], RtlFreeSid, rtlref_4cdaafe3-70fa-4a22-be05-019e6b06cc15.xml, ntifs/RtlFreeSid, ifsk.rtlfreesid
+ms.keywords : RtlFreeSid, ntifs/RtlFreeSid, RtlFreeSid function [Installable File System Drivers], ifsk.rtlfreesid, rtlref_4cdaafe3-70fa-4a22-be05-019e6b06cc15.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -65,11 +65,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

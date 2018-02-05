@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 84258422-A2AE-449F-97C8-41336FEA5D8B
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : "_PEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL, PPEP_WORK_POWER_CONTROL structure pointer [Kernel-Mode Driver Architecture], PPEP_WORK_POWER_CONTROL, kernel.pep_work_power_control, pepfx/PEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL structure [Kernel-Mode Driver Architecture], *PPEP_WORK_POWER_CONTROL, pepfx/PPEP_WORK_POWER_CONTROL"
+ms.keywords : pepfx/PEP_WORK_POWER_CONTROL, PPEP_WORK_POWER_CONTROL structure pointer [Kernel-Mode Driver Architecture], PPEP_WORK_POWER_CONTROL, kernel.pep_work_power_control, PEP_WORK_POWER_CONTROL structure [Kernel-Mode Driver Architecture], _PEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL, pepfx/PPEP_WORK_POWER_CONTROL
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL"
+req.typenames : PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL
 ---
 
 # _PEP_WORK_POWER_CONTROL structure
@@ -93,22 +93,20 @@ The PEP issues a power control request from a worker thread. The Windows <a href
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
 
-<a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a>
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439564">PowerControlCallback</a>
 
-<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
+<a href="http://msdn.microsoft.com/library/windows/desktop/aa373931(v=vs.85).aspx">GUID</a>
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
 
  
 

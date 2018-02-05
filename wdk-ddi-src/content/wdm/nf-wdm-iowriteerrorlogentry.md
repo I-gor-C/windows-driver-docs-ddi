@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 1259c344-584c-410a-a152-5de1f433082c
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoWriteErrorLogEntry routine [Kernel-Mode Driver Architecture], kernel.iowriteerrorlogentry, k104_1822a499-059a-41c8-b97b-aa3a5bfd22e3.xml, IoWriteErrorLogEntry, wdm/IoWriteErrorLogEntry
+ms.keywords : wdm/IoWriteErrorLogEntry, k104_1822a499-059a-41c8-b97b-aa3a5bfd22e3.xml, kernel.iowriteerrorlogentry, IoWriteErrorLogEntry, IoWriteErrorLogEntry routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -69,22 +69,21 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
 | **DDI compliance rules** | IrqlDispatch |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
+
 <a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>
 
 <a href="..\wdm\ns-wdm-_io_error_log_packet.md">IO_ERROR_LOG_PACKET</a>
-
-<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
 
  
 

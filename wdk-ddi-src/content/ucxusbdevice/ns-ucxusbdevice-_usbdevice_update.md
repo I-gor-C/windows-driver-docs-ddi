@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 7E990E9A-5BF5-4D6B-A5E2-4968FBD1CEBC
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : USBDEVICE_UPDATE, USBDEVICE_UPDATE structure [Buses], P_USBDEVICE_UPDATE, _USBDEVICE_UPDATE, *PUSBDEVICE_UPDATE, ucxusbdevice/P_USBDEVICE_UPDATE, P_USBDEVICE_UPDATE structure pointer [Buses], ucxusbdevice/_USBDEVICE_UPDATE, buses._usbdevice_update
+ms.keywords : "*PUSBDEVICE_UPDATE, P_USBDEVICE_UPDATE structure pointer [Buses], buses._usbdevice_update, ucxusbdevice/P_USBDEVICE_UPDATE, P_USBDEVICE_UPDATE, USBDEVICE_UPDATE structure [Buses], USBDEVICE_UPDATE, ucxusbdevice/_USBDEVICE_UPDATE, _USBDEVICE_UPDATE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PUSBDEVICE_UPDATE, USBDEVICE_UPDATE"
+req.typenames : USBDEVICE_UPDATE, *PUSBDEVICE_UPDATE
 req.product : Windows 10 or later.
 ---
 
@@ -105,20 +105,17 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_20_hardware_lpm_par
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
 
 ## See Also
 
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_failure_flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_flags.md">USBDEVICE_UPDATE_FLAGS</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 
 <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_20_hardware_lpm_parameters.md">USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS</a>
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_flags.md">USBDEVICE_UPDATE_FLAGS</a>
 
  
 

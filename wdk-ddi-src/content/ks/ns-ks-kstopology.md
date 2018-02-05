@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 8dbd37ed-5d71-43bd-a3ca-caa5b0d08075
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : "*PKSTOPOLOGY, KSTOPOLOGY, stream.kstopology, KSTOPOLOGY structure [Streaming Media Devices], ks/PKSTOPOLOGY, ks-struct_1d55c5f9-18d4-43d0-9fe9-291134e84115.xml, ks/KSTOPOLOGY, PKSTOPOLOGY structure pointer [Streaming Media Devices], PKSTOPOLOGY"
+ms.keywords : KSTOPOLOGY structure [Streaming Media Devices], *PKSTOPOLOGY, ks/KSTOPOLOGY, KSTOPOLOGY, PKSTOPOLOGY, stream.kstopology, PKSTOPOLOGY structure pointer [Streaming Media Devices], ks-struct_1d55c5f9-18d4-43d0-9fe9-291134e84115.xml, ks/PKSTOPOLOGY
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PKSTOPOLOGY, KSTOPOLOGY"
+req.typenames : KSTOPOLOGY, *PKSTOPOLOGY
 ---
 
 # KSTOPOLOGY structure
@@ -96,20 +96,17 @@ A stream class minidriver creates and passes this structure as part of its <a hr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ks.h (include Ks.h) |
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
-
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+
+<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
 
 <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>
 
-<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
+<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8b17ae4a-b3ea-48b6-8269-f947e1d74b86
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_OPSTATUS_FORBIDDEN, RIL_OPSTATUS_MAX, RIL_OPSTATUS_FORBIDDEN, RILOPERATORINFOSTATUS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_OPSTATUS_CURRENT, rilapitypes/RIL_OPSTATUS_MAX, RIL_OPSTATUS_AVAILABLE, rilapitypes/RIL_OPSTATUS_AVAILABLE, RIL_OPSTATUS_CURRENT, rilapitypes/RILOPERATORINFOSTATUS, RILOPERATORINFOSTATUS, netvista.riloperatorinfostatus_2
+ms.keywords : rilapitypes/RIL_OPSTATUS_CURRENT, rilapitypes/RIL_OPSTATUS_FORBIDDEN, rilapitypes/RIL_OPSTATUS_MAX, RIL_OPSTATUS_MAX, RIL_OPSTATUS_CURRENT, RILOPERATORINFOSTATUS, RILOPERATORINFOSTATUS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILOPERATORINFOSTATUS, RIL_OPSTATUS_AVAILABLE, rilapitypes/RIL_OPSTATUS_AVAILABLE, netvista.riloperatorinfostatus_2, RIL_OPSTATUS_FORBIDDEN
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -86,7 +86,4 @@ typedef enum _RILOPERATORINFOSTATUS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

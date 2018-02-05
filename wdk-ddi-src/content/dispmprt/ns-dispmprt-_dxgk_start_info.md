@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 4d28bc79-5145-48a0-99e8-3f81b2ec4a05
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : DmStructs_c2f6faad-cd05-43ea-ab58-b296bc130e09.xml, dispmprt/DXGK_START_INFO, display.dxgk_start_info, _DXGK_START_INFO, DXGK_START_INFO structure [Display Devices], PDXGK_START_INFO, PDXGK_START_INFO structure pointer [Display Devices], *PDXGK_START_INFO, dispmprt/PDXGK_START_INFO, DXGK_START_INFO
+ms.keywords : dispmprt/PDXGK_START_INFO, DmStructs_c2f6faad-cd05-43ea-ab58-b296bc130e09.xml, PDXGK_START_INFO, dispmprt/DXGK_START_INFO, _DXGK_START_INFO, display.dxgk_start_info, *PDXGK_START_INFO, PDXGK_START_INFO structure pointer [Display Devices], DXGK_START_INFO structure [Display Devices], DXGK_START_INFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -77,7 +77,5 @@ The <i>DxgkStartInfo</i> parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkd
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |

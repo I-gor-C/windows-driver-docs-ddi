@@ -8,7 +8,7 @@ old-project : IEEE
 ms.assetid : 4eeb543b-0c23-4119-8e42-ff086b4b7682
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : IEEE.address_range, 1394/ADDRESS_RANGE, 1394stct_e03538df-3b91-483d-99da-95645f017bef.xml, 1394/PADDRESS_RANGE, ADDRESS_RANGE structure [Buses], PADDRESS_RANGE structure pointer [Buses], _ADDRESS_RANGE, PADDRESS_RANGE, *PADDRESS_RANGE, ADDRESS_RANGE
+ms.keywords : "_ADDRESS_RANGE, *PADDRESS_RANGE, PADDRESS_RANGE, 1394stct_e03538df-3b91-483d-99da-95645f017bef.xml, IEEE.address_range, ADDRESS_RANGE structure [Buses], ADDRESS_RANGE, 1394/ADDRESS_RANGE, PADDRESS_RANGE structure pointer [Buses], 1394/PADDRESS_RANGE"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,9 +69,6 @@ Specifies the low order bits of the 1394 address within the buffer.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | 1394.h (include 1394.h) |
 
 ## See Also

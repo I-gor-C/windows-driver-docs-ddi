@@ -113,11 +113,8 @@ The type ID of the type relative to the module specified by <b>m_TypeModBase</b>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | engextcpp.hpp (include Engextcpp.hpp) |
-| **DLL** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : cc052b73-8837-4756-a192-620dcd5cacb5
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_INPUT_ELEMENT_DESC, UMDisplayDriver_Dx10param_Structs_c640f88f-3031-4412-a9bc-a8058cf8dab0.xml, d3d10umddi/D3D10DDIARG_INPUT_ELEMENT_DESC, display.d3d10ddiarg_input_element_desc, D3D10DDIARG_INPUT_ELEMENT_DESC structure [Display Devices]
+ms.keywords : D3D10DDIARG_INPUT_ELEMENT_DESC structure [Display Devices], display.d3d10ddiarg_input_element_desc, d3d10umddi/D3D10DDIARG_INPUT_ELEMENT_DESC, D3D10DDIARG_INPUT_ELEMENT_DESC, UMDisplayDriver_Dx10param_Structs_c640f88f-3031-4412-a9bc-a8058cf8dab0.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -110,9 +110,7 @@ D3D10_DDI_INPUT_PER_INSTANCE_DATA (1)
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
 ## See Also

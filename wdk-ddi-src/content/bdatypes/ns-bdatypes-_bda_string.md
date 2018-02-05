@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 69E2090F-02A6-43FB-85CB-E482B9142645
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : bdatypes/PBDA_STRING, _BDA_STRING, BDA_STRING, bdatypes/BDA_STRING, stream.bda_string, BDA_STRING structure [Streaming Media Devices], PBDA_STRING structure pointer [Streaming Media Devices], PBDA_STRING, *PBDA_STRING
+ms.keywords : bdatypes/BDA_STRING, PBDA_STRING, *PBDA_STRING, stream.bda_string, bdatypes/PBDA_STRING, _BDA_STRING, BDA_STRING, PBDA_STRING structure pointer [Streaming Media Devices], BDA_STRING structure [Streaming Media Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -69,7 +69,4 @@ typedef struct _BDA_STRING {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | bdatypes.h |

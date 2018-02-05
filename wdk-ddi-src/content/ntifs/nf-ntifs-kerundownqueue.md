@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : fc496af8-0b4b-4de4-8890-f2290970ced5
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : ntifs/KeRundownQueue, KeRundownQueue routine [Installable File System Drivers], keref_d1ad3c47-a2e8-40d9-b59d-bcedd6e4314a.xml, ifsk.kerundownqueue, KeRundownQueue
+ms.keywords : ntifs/KeRundownQueue, KeRundownQueue, KeRundownQueue routine [Installable File System Drivers], keref_d1ad3c47-a2e8-40d9-b59d-bcedd6e4314a.xml, ifsk.kerundownqueue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,11 @@ For more information about using driver-managed internal queues, see <a href="ht
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= DISPATCH_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 

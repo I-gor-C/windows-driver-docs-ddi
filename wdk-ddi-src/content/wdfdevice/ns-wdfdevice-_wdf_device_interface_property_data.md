@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 2AC9E23B-928E-480F-A208-5A2DE92AEF4B
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : "_WDF_DEVICE_INTERFACE_PROPERTY_DATA, wdfdevice/WDF_DEVICE_INTERFACE_PROPERTY_DATA, wdfdevice/PWDF_DEVICE_INTERFACE_PROPERTY_DATA, wdf.wdf_device_interface_property_data, PWDF_DEVICE_INTERFACE_PROPERTY_DATA, *PWDF_DEVICE_INTERFACE_PROPERTY_DATA, WDF_DEVICE_INTERFACE_PROPERTY_DATA structure, WDF_DEVICE_INTERFACE_PROPERTY_DATA, PWDF_DEVICE_INTERFACE_PROPERTY_DATA structure pointer"
+ms.keywords : PWDF_DEVICE_INTERFACE_PROPERTY_DATA structure pointer, PWDF_DEVICE_INTERFACE_PROPERTY_DATA, *PWDF_DEVICE_INTERFACE_PROPERTY_DATA, wdfdevice/PWDF_DEVICE_INTERFACE_PROPERTY_DATA, WDF_DEVICE_INTERFACE_PROPERTY_DATA, wdfdevice/WDF_DEVICE_INTERFACE_PROPERTY_DATA, WDF_DEVICE_INTERFACE_PROPERTY_DATA structure, _WDF_DEVICE_INTERFACE_PROPERTY_DATA, wdf.wdf_device_interface_property_data
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PWDF_DEVICE_INTERFACE_PROPERTY_DATA, WDF_DEVICE_INTERFACE_PROPERTY_DATA"
+req.typenames : WDF_DEVICE_INTERFACE_PROPERTY_DATA, *PWDF_DEVICE_INTERFACE_PROPERTY_DATA
 req.product : Windows 10 or later.
 ---
 
@@ -103,8 +103,7 @@ The <b>WDF_DEVICE_INTERFACE_PROPERTY_DATA</b> structure is used as input to the 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
@@ -112,9 +111,9 @@ The <b>WDF_DEVICE_INTERFACE_PROPERTY_DATA</b> structure is used as input to the 
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
-
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty.md">WdfDeviceAllocAndQueryInterfaceProperty</a>
+
+<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
 

@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPDRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W"
+req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
 req.product : Windows 10 or later.
 ---
 
@@ -71,11 +71,16 @@ A handle used by the operating system to reference the primary physical wireless
 
 `*pbIsVirtualStation`
 
-
+A pointer to a Boolean value that indicates whether the primary physical WLAN adapter pointed to
+     by the 
+     <i>hDot11SvcHandle</i> parameter is a virtual station adapter or not. If the value is <b>TRUE</b>, the queried
+     adapter is a virtual station, otherwise it is not a virtual station.
 
 `*pgPrimary`
 
-
+A pointer to a GUID value that identifies the primary physical WLAN adapter that hosts a virtual
+     station. This parameter is valid only if 
+     <i>pbIsVirtualStation</i> points to a value that is <b>TRUE</b>.
 
 `pvReserved`
 
@@ -92,14 +97,9 @@ If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows 7 and later versions of the Windows operating   systems. Available in Windows 7 and later versions of the Windows operating   systems. |
+| **Target Platform** | Desktop |
 | **Header** | wlanihv.h (include Wlanihv.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : image
 ms.assetid : 5bf56435-df81-4555-91ca-5419883bb1e8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wiauSetImageItemSize, wiauSetImageItemSize function [Imaging Devices], image.wiausetimageitemsize, wiautil/wiauSetImageItemSize, wiauFncs_9def0e29-20fe-4e9b-b473-a2dbca9088da.xml
+ms.keywords : wiauFncs_9def0e29-20fe-4e9b-b473-a2dbca9088da.xml, wiauSetImageItemSize function [Imaging Devices], wiauSetImageItemSize, wiautil/wiauSetImageItemSize, image.wiausetimageitemsize
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -94,11 +94,7 @@ If the format is not BMP, this function assumes that the value passed in the <i>
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows XP and later. Available in Windows XP and later. |
+| **Target Platform** | Desktop |
 | **Header** | wiautil.h (include Wiautil.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

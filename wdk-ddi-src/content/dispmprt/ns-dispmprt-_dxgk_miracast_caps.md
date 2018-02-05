@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 63ED28D9-654F-45CC-BFDC-89C9E73DCF95
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : dispmprt/DXGK_MIRACAST_CAPS, _DXGK_MIRACAST_CAPS, dispmprt/PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS structure [Display Devices], display.dxgk_miracast_caps, *PDXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS structure pointer [Display Devices], DXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS
+ms.keywords : display.dxgk_miracast_caps, DXGK_MIRACAST_CAPS, _DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS structure [Display Devices], dispmprt/DXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS structure pointer [Display Devices], PDXGK_MIRACAST_CAPS, dispmprt/PDXGK_MIRACAST_CAPS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS
+req.typenames : "*PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS"
 ---
 
 # _DXGK_MIRACAST_CAPS structure
@@ -70,9 +70,7 @@ The maximum size, in bytes, of the private data that the display miniport driver
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 8832adbc-c2ab-4742-94a0-4e33d03eaaf1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : NetDmaDeregisterProvider function [Network Drivers Starting with Windows Vista], netdma/NetDmaDeregisterProvider, netvista.netdmaderegisterprovider, NetDmaDeregisterProvider, netdma_ref_0fac8a7e-7721-4854-8d0e-6926243ff2ea.xml
+ms.keywords : netdma/NetDmaDeregisterProvider, NetDmaDeregisterProvider function [Network Drivers Starting with Windows Vista], NetDmaDeregisterProvider, netdma_ref_0fac8a7e-7721-4854-8d0e-6926243ff2ea.xml, netvista.netdmaderegisterprovider
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PNET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE"
+req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 
@@ -59,8 +59,8 @@ VOID NetDmaDeregisterProvider(
 
 A handle that identifies a DMA provider. The DMA provider driver received this handle from the
      NetDMA interface in a call to the 
-     <mshelp:link keywords="netvista.netdmaregisterprovider" tabindex="0"><b>
-     NetDmaRegisterProvider</b></mshelp:link> function.
+     <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
+     NetDmaRegisterProvider</a> function.
 
 
 ## Return Value
@@ -72,8 +72,8 @@ None
 DMA provider drivers call the 
     <b>NetDmaDeregisterProvider</b> function to deregister a DMA provider that was previously registered by
     calling the 
-    <mshelp:link keywords="netvista.netdmaregisterprovider" tabindex="0"><b>
-    NetDmaRegisterProvider</b></mshelp:link> function.
+    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
+    NetDmaRegisterProvider</a> function.
 
 The DMA provider driver must call the 
     <a href="..\netdma\nf-netdma-netdmaproviderstop.md">NetDmaProviderStop</a> function before it
@@ -92,22 +92,19 @@ Call
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported for NetDMA 1.0 drivers in Windows Vista. Supported for NetDMA 1.0 drivers in Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | netdma.h (include Netdma.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
+
+<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 
 <a href="..\netdma\nf-netdma-netdmaproviderstop.md">NetDmaProviderStop</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a>
-
-<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
 
  
 

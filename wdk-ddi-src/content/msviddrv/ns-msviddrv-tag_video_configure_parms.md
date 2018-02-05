@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 58FE3B56-AFC6-46DE-BBE1-CCFA8FF1390A
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : LPVIDEOCONFIGPARMS, VIDEOCONFIGPARMS, msviddrv/LPVIDEOCONFIGPARMS, *LPVIDEOCONFIGPARMS, LPVIDEOCONFIGPARMS structure pointer [Streaming Media Devices], tag_video_configure_parms, VIDEOCONFIGPARMS structure [Streaming Media Devices], stream.videoconfigparms, msviddrv/VIDEOCONFIGPARMS
+ms.keywords : stream.videoconfigparms, VIDEOCONFIGPARMS structure [Streaming Media Devices], LPVIDEOCONFIGPARMS, tag_video_configure_parms, *LPVIDEOCONFIGPARMS, msviddrv/LPVIDEOCONFIGPARMS, LPVIDEOCONFIGPARMS structure pointer [Streaming Media Devices], msviddrv/VIDEOCONFIGPARMS, VIDEOCONFIGPARMS
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ Specifies the return parameter from the configure MSG.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | msviddrv.h |

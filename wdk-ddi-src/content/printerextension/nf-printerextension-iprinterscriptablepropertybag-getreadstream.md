@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : 493E6C55-DC3B-4160-9642-BDABADD575B8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : GetReadStream method [Print Devices], IPrinterScriptablePropertyBag interface, print.iprinterscriptablepropertybag_getreadstream, IPrinterScriptablePropertyBag::GetReadStream, IPrinterScriptablePropertyBag, GetReadStream method [Print Devices], GetReadStream, printerextension/IPrinterScriptablePropertyBag::GetReadStream, IPrinterScriptablePropertyBag interface [Print Devices], GetReadStream method
+ms.keywords : IPrinterScriptablePropertyBag::GetReadStream, IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag interface [Print Devices], GetReadStream method, GetReadStream method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetReadStream, GetReadStream, GetReadStream method [Print Devices], IPrinterScriptablePropertyBag interface, print.iprinterscriptablepropertybag_getreadstream
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -76,20 +76,16 @@ A call to <b>GetReadStream</b> will throw an exception, if the specified propert
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 8 Windows 8 |
+| **Target Platform** | Desktop |
 | **Header** | printerextension.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablestream.md">IPrinterScriptableStream</a>
-
 <a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+
+<a href="..\printerextension\nn-printerextension-iprinterscriptablestream.md">IPrinterScriptableStream</a>
 
  
 

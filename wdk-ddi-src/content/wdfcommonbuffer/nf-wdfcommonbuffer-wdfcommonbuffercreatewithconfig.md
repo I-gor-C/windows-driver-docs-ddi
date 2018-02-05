@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 3ed8b7df-9c7d-44de-a49d-10221acf71e3
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : WdfCommonBufferCreateWithConfig method, DFCommonBufferObjectRef_4e009b5f-a2a4-4be5-84d6-308c1558e702.xml, wdfcommonbuffer/WdfCommonBufferCreateWithConfig, kmdf.wdfcommonbuffercreatewithconfig, wdf.wdfcommonbuffercreatewithconfig, WdfCommonBufferCreateWithConfig
+ms.keywords : WdfCommonBufferCreateWithConfig, wdfcommonbuffer/WdfCommonBufferCreateWithConfig, WdfCommonBufferCreateWithConfig method, wdf.wdfcommonbuffercreatewithconfig, kmdf.wdfcommonbuffercreatewithconfig, DFCommonBufferObjectRef_4e009b5f-a2a4-4be5-84d6-308c1558e702.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -143,28 +143,26 @@ For more information about common buffers, see <a href="https://msdn.microsoft.c
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.1 |
-| **Minimum UMDF version** |  |
 | **Header** | wdfcommonbuffer.h (include WdfCommonBuffer.h) |
-| **Library** |  |
+| **Library** | Wdf01000.sys (see Framework Library Versioning.) |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | DriverCreate, KmdfIrql, KmdfIrql2 |
 
 ## See Also
 
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>
-
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
 <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedvirtualaddress.md">WdfCommonBufferGetAlignedVirtualAddress</a>
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
 <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>
+
+<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>
+
+<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 
 <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffergetalignedlogicaladdress.md">WdfCommonBufferGetAlignedLogicalAddress</a>
 

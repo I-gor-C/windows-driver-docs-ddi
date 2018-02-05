@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : E536B66D-EAF2-4377-8452-7D37A277E7C8
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : VmbChannelSetPointer, vmbuskernelmodeclientlibapi/VmbChannelSetPointer, netvista.vmbchannelsetpointer, VmbChannelSetPointer function [Network Drivers Starting with Windows Vista]
+ms.keywords : VmbChannelSetPointer function [Network Drivers Starting with Windows Vista], vmbuskernelmodeclientlibapi/VmbChannelSetPointer, netvista.vmbchannelsetpointer, VmbChannelSetPointer
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : VIDEO_PORT_AGP_SERVICES, *PVIDEO_PORT_AGP_SERVICES
+req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
 req.product : Windows 10 or later.
 ---
 
@@ -77,14 +77,12 @@ This is intended to be a more efficient way for a client driver to retrieve clie
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 8.1 Windows 8.1 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.13 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | vmbuskernelmodeclientlibapi.h (include VmbusKernelModeClientLibApi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Vmbkmcl.lib |
 
 ## See Also
 

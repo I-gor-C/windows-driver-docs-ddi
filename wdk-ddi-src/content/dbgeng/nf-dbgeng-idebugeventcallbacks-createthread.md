@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : c3b2cbaa-33b9-4784-922d-d1209fc23dfd
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : debugger.idebugeventcallbacks_createthread, IDebugEventCallbacks, IDebugEventCallbacks interface [Windows Debugging], CreateThread method, ComCallbacks_db1fe5dc-8392-4c79-a1ed-9752170eed3c.xml, dbgeng/IDebugEventCallbacks::CreateThread, IDebugEventCallbacks::CreateThread, CreateThread method [Windows Debugging], IDebugEventCallbacks interface, CreateThread, CreateThread method [Windows Debugging]
+ms.keywords : IDebugEventCallbacks::CreateThread, ComCallbacks_db1fe5dc-8392-4c79-a1ed-9752170eed3c.xml, CreateThread, dbgeng/IDebugEventCallbacks::CreateThread, IDebugEventCallbacks, CreateThread method [Windows Debugging], debugger.idebugeventcallbacks_createthread, CreateThread method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging], CreateThread method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -80,11 +80,6 @@ For more information about handling events, see <a href="https://msdn.microsoft.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |

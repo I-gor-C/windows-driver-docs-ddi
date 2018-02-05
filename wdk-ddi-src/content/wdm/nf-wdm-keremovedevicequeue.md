@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9cad7d89-bcaa-47d6-b3e5-51653cbef318
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : k105_3e26b41e-7e9c-4fc9-8496-f107f3450dd7.xml, kernel.keremovedevicequeue, KeRemoveDeviceQueue, wdm/KeRemoveDeviceQueue, KeRemoveDeviceQueue routine [Kernel-Mode Driver Architecture]
+ms.keywords : KeRemoveDeviceQueue, kernel.keremovedevicequeue, wdm/KeRemoveDeviceQueue, k105_3e26b41e-7e9c-4fc9-8496-f107f3450dd7.xml, KeRemoveDeviceQueue routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -71,26 +71,25 @@ It is an error to call <b>KeRemoveDeviceQueue</b> when the device queue object i
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | DISPATCH_LEVEL |
 | **DDI compliance rules** | IrqlDispatch, HwStorPortProhibitedDDIs, IrqlDispatch(storport) |
 
 ## See Also
 
+<a href="..\wdm\nf-wdm-keinitializedevicequeue.md">KeInitializeDeviceQueue</a>
+
 <a href="..\wdm\nf-wdm-keremoveentrydevicequeue.md">KeRemoveEntryDeviceQueue</a>
 
 <a href="..\wdm\nf-wdm-keinsertdevicequeue.md">KeInsertDeviceQueue</a>
 
-<a href="..\wdm\nf-wdm-keinsertbykeydevicequeue.md">KeInsertByKeyDeviceQueue</a>
-
 <a href="..\wdm\nf-wdm-keremovebykeydevicequeue.md">KeRemoveByKeyDeviceQueue</a>
 
-<a href="..\wdm\nf-wdm-keinitializedevicequeue.md">KeInitializeDeviceQueue</a>
+<a href="..\wdm\nf-wdm-keinsertbykeydevicequeue.md">KeInsertByKeyDeviceQueue</a>
 
  
 

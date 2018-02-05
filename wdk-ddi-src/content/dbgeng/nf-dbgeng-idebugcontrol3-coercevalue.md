@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : db037fc8-d503-4a72-b6bc-d5189f6786d4
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3, CoerceValue method [Windows Debugging], IDebugControl2 interface, IDebugControl2::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl3 interface, IDebugControl3::CoerceValue, CoerceValue, CoerceValue method [Windows Debugging], IDebugControl interface, CoerceValue method [Windows Debugging], dbgeng/IDebugControl2::CoerceValue, IDebugControl interface [Windows Debugging], CoerceValue method, debugger.coercevalue, IDebugControl::CoerceValue, dbgeng/IDebugControl3::CoerceValue, IDebugControl_034a690e-25bb-40a1-b788-7b148ba0d9cd.xml, IDebugControl3 interface [Windows Debugging], CoerceValue method, dbgeng/IDebugControl::CoerceValue, IDebugControl2 interface [Windows Debugging], CoerceValue method
+ms.keywords : IDebugControl_034a690e-25bb-40a1-b788-7b148ba0d9cd.xml, dbgeng/IDebugControl2::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl2::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl3 interface, IDebugControl3::CoerceValue, IDebugControl3, IDebugControl::CoerceValue, CoerceValue method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], CoerceValue method, IDebugControl2 interface [Windows Debugging], CoerceValue method, CoerceValue, CoerceValue method [Windows Debugging], IDebugControl interface, debugger.coercevalue, dbgeng/IDebugControl3::CoerceValue, dbgeng/IDebugControl::CoerceValue, IDebugControl interface [Windows Debugging], CoerceValue method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -96,14 +96,9 @@ This method converts a value of one type into a value of another type.  If the s
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
@@ -111,9 +106,9 @@ This method converts a value of one type into a value of another type.  If the s
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+
+<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 
  
 

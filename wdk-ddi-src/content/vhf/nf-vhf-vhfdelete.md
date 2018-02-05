@@ -8,7 +8,7 @@ old-project : hid
 ms.assetid : 85252A53-E653-4D14-B1FE-72CA9AFA1F10
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : hid.vhfdelete, VhfDelete, VhfDelete method [Human Input Devices], vhf/VhfDelete
+ms.keywords : VhfDelete method [Human Input Devices], vhf/VhfDelete, VhfDelete, hid.vhfdelete
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -82,14 +82,10 @@ There are no restrictions on when a KMDF driver should call this function. It is
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | vhf.h |
-| **Library** |  |
+| **Library** | VhfKm.lib |
 | **IRQL** | If Wait is TRUE, PASSIVE_LEVEL; if Wait is FALSE <= DISPATCH_LEVEL |
-| **DDI compliance rules** |  |
 
 ## See Also
 

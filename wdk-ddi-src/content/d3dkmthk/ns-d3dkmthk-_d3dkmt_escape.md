@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : db57ae5e-7060-4d45-99a5-e54c82b0aa05
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_ESCAPE, OpenGL_Structs_b17fc4f1-d9cc-4ebe-a29a-66f9a93b9462.xml, D3DKMT_ESCAPE structure [Display Devices], d3dkmthk/D3DKMT_ESCAPE, display.d3dkmt_escape, D3DKMT_ESCAPETYPE, _D3DKMT_ESCAPE
+ms.keywords : "_D3DKMT_ESCAPE, D3DKMT_ESCAPE structure [Display Devices], D3DKMT_ESCAPE, d3dkmthk/D3DKMT_ESCAPE, D3DKMT_ESCAPETYPE, display.d3dkmt_escape, OpenGL_Structs_b17fc4f1-d9cc-4ebe-a29a-66f9a93b9462.xml"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -533,26 +533,24 @@ For testing purposes, the OpenGL ICD can pass a pointer to a D3DKMT_ESCAPE struc
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
 ## See Also
-
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dmm_escape.md">D3DKMT_DMM_ESCAPE</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_debug_snapshot_escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a>
 
-<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidmm_escape.md">D3DKMT_VIDMM_ESCAPE</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidsch_escape.md">D3DKMT_VIDSCH_ESCAPE</a>
 
+<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a>
+
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_device_escape.md">D3DKMT_DEVICE_ESCAPE</a>
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidmm_escape.md">D3DKMT_VIDMM_ESCAPE</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
 
  
 

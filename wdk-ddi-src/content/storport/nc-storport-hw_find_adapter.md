@@ -170,24 +170,19 @@ HW_FIND_ADAPTER (
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Universal |
 | **Header** | storport.h (include Storport.h) |
-| **Library** |  |
 | **IRQL** | PASSIVE_LEVEL (See Remarks section.) |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
 
 <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 
 <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a>
 
-<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
+<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
 
  
 

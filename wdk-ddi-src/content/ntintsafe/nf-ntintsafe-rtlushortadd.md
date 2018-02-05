@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 07167C7E-E8EB-41E3-B2E3-7B9E9CCC5465
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlUShortAdd, RtlUShortAdd, kernel.rtlushortadd, RtlUShortAdd function [Kernel-Mode Driver Architecture]
+ms.keywords : kernel.rtlushortadd, ntintsafe/RtlUShortAdd, RtlUShortAdd function [Kernel-Mode Driver Architecture], RtlUShortAdd
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -78,11 +78,6 @@ This is one of a set of inline functions designed to provide arithmetic operatio
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

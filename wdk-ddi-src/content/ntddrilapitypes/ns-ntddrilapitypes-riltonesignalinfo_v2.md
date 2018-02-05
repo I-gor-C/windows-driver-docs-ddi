@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : e0c40d65-d290-4fae-9fa7-57a9bf047f13
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : "*LPRILTONESIGNALINFO_V2, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, ntddrilapitypes/RILTONESIGNALINFO_V2, RILTONESIGNALINFO_V2 structure [Network Drivers Starting with Windows Vista], RILTONESIGNALINFO, netvista.riltonesignalinfo_v2"
+ms.keywords : RILTONESIGNALINFO, RILTONESIGNALINFO_V2 structure [Network Drivers Starting with Windows Vista], netvista.riltonesignalinfo_v2, *LPRILTONESIGNALINFO_V2, ntddrilapitypes/RILTONESIGNALINFO_V2, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*LPRILTONESIGNALINFO, RILTONESIGNALINFO, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO_V2"
+req.typenames : RILTONESIGNALINFO, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO
 ---
 
 # RILTONESIGNALINFO_V2 structure
@@ -84,7 +84,4 @@ typedef struct _RILTONESIGNALINFO_V2 {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddrilapitypes.h |

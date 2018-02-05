@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : 1a4b2708-efe2-47c0-b5b7-4e56f33e0266
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_888be612-b20f-427f-a098-e6b0f73f8704.xml, WDF_DEVICE_POWER_CAPABILITIES_INIT function, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES_INIT, kmdf.wdf_device_power_capabilities_init, WDF_DEVICE_POWER_CAPABILITIES_INIT, wdf.wdf_device_power_capabilities_init
+ms.keywords : DFDeviceObjectGeneralRef_888be612-b20f-427f-a098-e6b0f73f8704.xml, kmdf.wdf_device_power_capabilities_init, WDF_DEVICE_POWER_CAPABILITIES_INIT function, wdf.wdf_device_power_capabilities_init, WDF_DEVICE_POWER_CAPABILITIES_INIT, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES_INIT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -97,14 +97,11 @@ Sets the <b>IdealDxStateForSx</b> member to <b>PowerDeviceMaximum</b>.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
+| **Target Platform** | Universal |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

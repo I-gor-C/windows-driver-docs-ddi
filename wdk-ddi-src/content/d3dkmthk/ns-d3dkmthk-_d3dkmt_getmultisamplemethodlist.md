@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : 138f6f75-3986-42f8-840c-d48edb271203
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : D3DKMT_GETMULTISAMPLEMETHODLIST structure [Display Devices], D3DKMT_GETMULTISAMPLEMETHODLIST, display.d3dkmt_getmultisamplemethodlist, d3dkmthk/D3DKMT_GETMULTISAMPLEMETHODLIST, OpenGL_Structs_ccb62d63-4a70-4fb4-b6db-d8a5e585b222.xml, _D3DKMT_GETMULTISAMPLEMETHODLIST
+ms.keywords : OpenGL_Structs_ccb62d63-4a70-4fb4-b6db-d8a5e585b222.xml, display.d3dkmt_getmultisamplemethodlist, D3DKMT_GETMULTISAMPLEMETHODLIST, _D3DKMT_GETMULTISAMPLEMETHODLIST, D3DKMT_GETMULTISAMPLEMETHODLIST structure [Display Devices], d3dkmthk/D3DKMT_GETMULTISAMPLEMETHODLIST
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -91,18 +91,16 @@ If the runtime returns a non-<b>NULL</b> value in <b>pMethodList</b>, the runtim
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dumddi.h) |
 
 ## See Also
 
 <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a>
-
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetmultisamplemethodlist.md">D3DKMTGetMultisampleMethodList</a>
+
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a>
 
  
 

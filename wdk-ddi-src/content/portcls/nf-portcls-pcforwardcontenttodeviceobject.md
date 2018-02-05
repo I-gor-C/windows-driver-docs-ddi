@@ -8,7 +8,7 @@ old-project : audio
 ms.assetid : 24891f90-422f-4104-97f4-395205e2b862
 ms.author : windowsdriverdev
 ms.date : 12/14/2017
-ms.keywords : audio.pcforwardcontenttodeviceobject, PcForwardContentToDeviceObject, audpc-routines_1dec7e58-07b2-41ce-82d3-5f0670bbc273.xml, PcForwardContentToDeviceObject function [Audio Devices], portcls/PcForwardContentToDeviceObject
+ms.keywords : PcForwardContentToDeviceObject, audpc-routines_1dec7e58-07b2-41ce-82d3-5f0670bbc273.xml, PcForwardContentToDeviceObject function [Audio Devices], portcls/PcForwardContentToDeviceObject, audio.pcforwardcontenttodeviceobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
+req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 
@@ -74,14 +74,10 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmforwardcon
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | The PortCls system driver implements the PcForwardContentToDeviceObject function in Microsoft Windows XP and later operating systems. The PortCls system driver implements the PcForwardContentToDeviceObject function in Microsoft Windows XP and later operating systems. |
+| **Target Platform** | Universal |
 | **Header** | portcls.h (include Portcls.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | Portcls.lib |
 
 ## See Also
 

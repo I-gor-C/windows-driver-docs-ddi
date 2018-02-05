@@ -8,7 +8,7 @@ old-project : stream
 ms.assetid : 47e7fd44-b98f-4e0a-80c8-cc9b6dcc483b
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : avfunc_18bdc4eb-2823-481e-ba51-e4103ff10d8c.xml, KsGetPinFromFileObject, KsGetPinFromFileObject function [Streaming Media Devices], ks/KsGetPinFromFileObject, stream.ksgetpinfromfileobject
+ms.keywords : avfunc_18bdc4eb-2823-481e-ba51-e4103ff10d8c.xml, KsGetPinFromFileObject function [Streaming Media Devices], ks/KsGetPinFromFileObject, KsGetPinFromFileObject, stream.ksgetpinfromfileobject
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -70,14 +70,11 @@ This call is an inline call to <a href="..\ks\nf-ks-ksgetobjectfromfileobject.md
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions. |
+| **Target Platform** | Desktop |
 | **Header** | ks.h (include Ks.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.exe |
 | **IRQL** | Any level |
-| **DDI compliance rules** |  |
 
 ## See Also
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 9fecf57b-e77a-458e-80ce-118eed2d48b4
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PKBUGCHECK_DATA structure pointer [Kernel-Mode Driver Architecture], aux_klib_ced3c2df-3d09-45d8-8ae8-049d2bc46160.xml, KBUGCHECK_DATA structure [Kernel-Mode Driver Architecture], kernel.kbugcheck_data, _KBUGCHECK_DATA, KBUGCHECK_DATA, PKBUGCHECK_DATA, aux_klib/KBUGCHECK_DATA, *PKBUGCHECK_DATA, aux_klib/PKBUGCHECK_DATA
+ms.keywords : "_KBUGCHECK_DATA, aux_klib/PKBUGCHECK_DATA, aux_klib_ced3c2df-3d09-45d8-8ae8-049d2bc46160.xml, KBUGCHECK_DATA, KBUGCHECK_DATA structure [Kernel-Mode Driver Architecture], *PKBUGCHECK_DATA, PKBUGCHECK_DATA structure pointer [Kernel-Mode Driver Architecture], PKBUGCHECK_DATA, aux_klib/KBUGCHECK_DATA, kernel.kbugcheck_data"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -86,9 +86,6 @@ The <b>KBUGCHECK_DATA</b> structure is used as a parameter to <a href="..\aux_kl
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | aux_klib.h (include Aux_klib.h) |
 
 ## See Also

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : 773490EE-ECFC-4089-869D-19683A76E4FA
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : wwan/WwanUssdRequestContinue, wwan/WWAN_USSD_REQUEST_TYPE, _WWAN_USSD_REQUEST_TYPE, WwanUssdRequestContinue, *PWWAN_USSD_REQUEST_TYPE, WwanUssdRequestCancel, WWAN_USSD_REQUEST_TYPE, WwanUssdRequestInitiate, wwan/WwanUssdRequestCancel, wwan/WwanUssdRequestInitiate, WWAN_USSD_REQUEST_TYPE enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_ussd_request_type
+ms.keywords : wwan/WWAN_USSD_REQUEST_TYPE, WwanUssdRequestCancel, wwan/WwanUssdRequestCancel, *PWWAN_USSD_REQUEST_TYPE, _WWAN_USSD_REQUEST_TYPE, WWAN_USSD_REQUEST_TYPE, wwan/WwanUssdRequestInitiate, wwan/WwanUssdRequestContinue, netvista.wwan_ussd_request_type, WwanUssdRequestInitiate, WWAN_USSD_REQUEST_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanUssdRequestContinue
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -80,7 +80,5 @@ When responding to a <i>WwanUssdRequestCancel</i> request, miniport drivers must
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wwan.h |

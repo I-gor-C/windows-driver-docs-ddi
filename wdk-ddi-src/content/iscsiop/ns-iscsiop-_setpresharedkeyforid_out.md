@@ -8,7 +8,7 @@ old-project : storage
 ms.assetid : 839041be-bb8c-4e02-a260-e9adcec98ff3
 ms.author : windowsdriverdev
 ms.date : 1/10/2018
-ms.keywords : SetPresharedKeyForId_OUT structure [Storage Devices], iscsiop/SetPresharedKeyForId_OUT, structs-iSCSI_c0146684-fe9e-4bca-81d2-2a09b554d006.xml, *PSetPresharedKeyForId_OUT, _SetPresharedKeyForId_OUT, storage.setpresharedkeyforid_out, PSetPresharedKeyForId_OUT structure pointer [Storage Devices], iscsiop/PSetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT
+ms.keywords : structs-iSCSI_c0146684-fe9e-4bca-81d2-2a09b554d006.xml, PSetPresharedKeyForId_OUT, iscsiop/PSetPresharedKeyForId_OUT, iscsiop/SetPresharedKeyForId_OUT, _SetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT structure pointer [Storage Devices], *PSetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT, storage.setpresharedkeyforid_out, SetPresharedKeyForId_OUT structure [Storage Devices]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PSetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT"
+req.typenames : SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT
 ---
 
 # _SetPresharedKeyForId_OUT structure
@@ -61,18 +61,15 @@ You must implement this method.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 <a href="..\iscsiop\ns-iscsiop-_setpresharedkeyforid_in.md">SetPresharedKeyForId_IN</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : eb422fec-8cc3-42b8-9caf-21fd135df7a1
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.ril_setuicclockenabled, RIL_SetUiccLockEnabled method [Network Drivers Starting with Windows Vista], RIL_SetUiccLockEnabled, rilapi/RIL_SetUiccLockEnabled
+ms.keywords : RIL_SetUiccLockEnabled method [Network Drivers Starting with Windows Vista], RIL_SetUiccLockEnabled, rilapi/RIL_SetUiccLockEnabled, netvista.ril_setuicclockenabled
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -81,11 +81,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Header** | rilapi.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

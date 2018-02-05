@@ -8,7 +8,7 @@ old-project : netvista
 ms.assetid : aa728681-fe86-40f1-853d-ad37abe924b3
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : netvista.rilerrordetailsparammask_2, rilapitypes/RILERRORDETAILSPARAMMASK, RILERRORDETAILSPARAMMASK, RILERRORDETAILSPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
+ms.keywords : rilapitypes/RILERRORDETAILSPARAMMASK, netvista.rilerrordetailsparammask_2, RILERRORDETAILSPARAMMASK, RILERRORDETAILSPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : enum
@@ -57,7 +57,4 @@ typedef enum _RILERRORDETAILSPARAMMASK {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | rilapitypes.h |

@@ -8,7 +8,7 @@ old-project : bltooth
 ms.assetid : EC31A704-A264-4A77-B979-BFA59B42BA94
 ms.author : windowsdriverdev
 ms.date : 12/21/2017
-ms.keywords : PBTHX_HCI_READ_WRITE_CONTEXT structure pointer [Bluetooth Devices], BTHX_HCI_READ_WRITE_CONTEXT, _BTHX_HCI_READ_WRITE_CONTEXT, bltooth.bthx_hci_read_write_context, bthxddi/PBTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT structure [Bluetooth Devices], PBTHX_HCI_READ_WRITE_CONTEXT, bthxddi/BTHX_HCI_READ_WRITE_CONTEXT
+ms.keywords : bthxddi/PBTHX_HCI_READ_WRITE_CONTEXT, PBTHX_HCI_READ_WRITE_CONTEXT structure pointer [Bluetooth Devices], _BTHX_HCI_READ_WRITE_CONTEXT, PBTHX_HCI_READ_WRITE_CONTEXT, bltooth.bthx_hci_read_write_context, *PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT structure [Bluetooth Devices], bthxddi/BTHX_HCI_READ_WRITE_CONTEXT
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -75,7 +75,5 @@ This structure is packed to 1-byte boundary.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Versions:\_Supported starting with  Windows 8. Versions:\_Supported starting with  Windows 8. |
 | **Header** | bthxddi.h (include BthXDDI.h) |

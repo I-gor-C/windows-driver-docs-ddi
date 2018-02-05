@@ -8,7 +8,7 @@ old-project : print
 ms.assetid : a61081ad-308e-49c5-a428-1142520d38e4
 ms.author : windowsdriverdev
 ms.date : 1/18/2018
-ms.keywords : printoem/OEMEscape, print_unidrv-pscript_rendering_0c8783bf-0e73-4b66-98a2-b71ee177549b.xml, OEMFillPath, print.oemfillpath, OEMEscape, OEMEscape function [Print Devices]
+ms.keywords : OEMEscape, OEMFillPath, print.oemfillpath, OEMEscape function [Print Devices], print_unidrv-pscript_rendering_0c8783bf-0e73-4b66-98a2-b71ee177549b.xml, printoem/OEMEscape
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -96,11 +96,6 @@ None
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Windows |
 | **Header** | printoem.h (include Printoem.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

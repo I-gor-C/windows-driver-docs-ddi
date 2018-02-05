@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : D0E23A94-515B-4225-A8AC-390CDD3BEA60
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlUIntPtrSub, RtlUIntPtrSub function [Kernel-Mode Driver Architecture], kernel.rtluintptrsub, RtlUIntPtrSub
+ms.keywords : RtlUIntPtrSub function [Kernel-Mode Driver Architecture], RtlUIntPtrSub, ntintsafe/RtlUIntPtrSub, kernel.rtluintptrsub
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -98,11 +98,6 @@ This function uses the following alternate name:
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | ntintsafe.h |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |

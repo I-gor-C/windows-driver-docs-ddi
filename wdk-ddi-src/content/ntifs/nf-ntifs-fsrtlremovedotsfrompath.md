@@ -8,7 +8,7 @@ old-project : ifsk
 ms.assetid : af6ecdb7-8713-460d-8fd9-ef027ac15b39
 ms.author : windowsdriverdev
 ms.date : 1/9/2018
-ms.keywords : FsRtlRemoveDotsFromPath, ntifs/FsRtlRemoveDotsFromPath, ifsk.fsrtlremovedotsfrompath, FsRtlRemoveDotsFromPath routine [Installable File System Drivers], fsrtlref_93b15313-3292-4122-9852-731b995e9d20.xml
+ms.keywords : FsRtlRemoveDotsFromPath, ifsk.fsrtlremovedotsfrompath, ntifs/FsRtlRemoveDotsFromPath, fsrtlref_93b15313-3292-4122-9852-731b995e9d20.xml, FsRtlRemoveDotsFromPath routine [Installable File System Drivers]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -110,11 +110,9 @@ This routine would take a path as <i>OriginalString</i> like the following examp
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available in Windows Vista and later versions of the Windows operating system. Available in Windows Vista and later versions of the Windows operating system. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include FltKernel.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
-| **DDI compliance rules** |  |

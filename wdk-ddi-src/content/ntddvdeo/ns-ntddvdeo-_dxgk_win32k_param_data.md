@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : a6bb2127-64f7-402d-906e-199d5ec1b313
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : display.dxgk_win32k_param_data, *PDXGK_WIN32K_PARAM_DATA, PDXGK_WIN32K_PARAM_DATA, ntddvdeo/PDXGK_WIN32K_PARAM_DATA, DXGK_WIN32K_PARAM_DATA structure [Display Devices], _DXGK_WIN32K_PARAM_DATA, Video_Structs_40ff171a-ad28-44ae-bcad-bf93aba4ad6e.xml, ntddvdeo/DXGK_WIN32K_PARAM_DATA, PDXGK_WIN32K_PARAM_DATA structure pointer [Display Devices], DXGK_WIN32K_PARAM_DATA
+ms.keywords : "*PDXGK_WIN32K_PARAM_DATA, ntddvdeo/PDXGK_WIN32K_PARAM_DATA, DXGK_WIN32K_PARAM_DATA, Video_Structs_40ff171a-ad28-44ae-bcad-bf93aba4ad6e.xml, display.dxgk_win32k_param_data, ntddvdeo/DXGK_WIN32K_PARAM_DATA, PDXGK_WIN32K_PARAM_DATA structure pointer [Display Devices], _DXGK_WIN32K_PARAM_DATA, PDXGK_WIN32K_PARAM_DATA, DXGK_WIN32K_PARAM_DATA structure [Display Devices]"
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -79,7 +79,4 @@ Reserved for system use.
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | ntddvdeo.h (include Ntddvdeo.h) |

@@ -8,7 +8,7 @@ old-project : debugger
 ms.assetid : cee254a5-7b77-4cab-b02c-69b1f9e3fe02
 ms.author : windowsdriverdev
 ms.date : 1/19/2018
-ms.keywords : IDebugControl3::GetProcessorTypeNames, IDebugControl3, IDebugControl::GetProcessorTypeNames, dbgeng/IDebugControl2::GetProcessorTypeNames, IDebugControl2::GetProcessorTypeNames, IDebugControl2 interface [Windows Debugging], GetProcessorTypeNames method, GetProcessorTypeNames, GetProcessorTypeNames method [Windows Debugging], IDebugControl2 interface, debugger.getprocessortypenames, dbgeng/IDebugControl::GetProcessorTypeNames, GetProcessorTypeNames method [Windows Debugging], IDebugControl3 interface, IDebugControl_f14b5f52-cf94-458b-bd1e-61c3ad66a597.xml, IDebugControl3 interface [Windows Debugging], GetProcessorTypeNames method, dbgeng/IDebugControl3::GetProcessorTypeNames, GetProcessorTypeNames method [Windows Debugging], IDebugControl interface [Windows Debugging], GetProcessorTypeNames method, GetProcessorTypeNames method [Windows Debugging], IDebugControl interface
+ms.keywords : IDebugControl2::GetProcessorTypeNames, GetProcessorTypeNames, GetProcessorTypeNames method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetProcessorTypeNames method, IDebugControl3, GetProcessorTypeNames method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::GetProcessorTypeNames, dbgeng/IDebugControl3::GetProcessorTypeNames, IDebugControl_f14b5f52-cf94-458b-bd1e-61c3ad66a597.xml, debugger.getprocessortypenames, IDebugControl2 interface [Windows Debugging], GetProcessorTypeNames method, IDebugControl::GetProcessorTypeNames, GetProcessorTypeNames method [Windows Debugging], GetProcessorTypeNames method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::GetProcessorTypeNames, IDebugControl3::GetProcessorTypeNames, IDebugControl interface [Windows Debugging], GetProcessorTypeNames method
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -126,20 +126,15 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Target Platform** | Desktop |
 | **Header** | dbgeng.h (include Dbgeng.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | dbgeng.h |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548438">GetSupportedProcessorTypes</a>
-
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548438">GetSupportedProcessorTypes</a>
 
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 

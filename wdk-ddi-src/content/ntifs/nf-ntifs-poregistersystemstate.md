@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 851c694f-6c47-498c-8035-132a63c0fa62
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : wdm/PoRegisterSystemState, kernel.poregistersystemstate, PoRegisterSystemState routine [Kernel-Mode Driver Architecture], portn_477a2d72-00f7-45a1-b7ca-504b741c5fe0.xml, PoRegisterSystemState
+ms.keywords : wdm/PoRegisterSystemState, kernel.poregistersystemstate, portn_477a2d72-00f7-45a1-b7ca-504b741c5fe0.xml, PoRegisterSystemState, PoRegisterSystemState routine [Kernel-Mode Driver Architecture]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -64,9 +64,9 @@ Indicates the type of activity, as specified by a bitwise OR of one or more of t
 
 
 
-#### ES_SYSTEM_REQUIRED
+#### ES_CONTINUOUS
 
-The system is not idle, regardless of apparent load.
+The settings are continuous and should remain in effect until explicitly changed.
 
 
 #### ES_DISPLAY_REQUIRED
@@ -74,14 +74,14 @@ The system is not idle, regardless of apparent load.
 Use of the display is required.
 
 
+#### ES_SYSTEM_REQUIRED
+
+The system is not idle, regardless of apparent load.
+
+
 #### ES_USER_PRESENT
 
 A user is present.
-
-
-#### ES_CONTINUOUS
-
-The settings are continuous and should remain in effect until explicitly changed.
 
 
 ## Return Value
@@ -90,7 +90,7 @@ The settings are continuous and should remain in effect until explicitly changed
 
 ## Remarks
 
-<b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>.
+<b>PoRegisterSystemState</b> registers the system busy state as indicated by the flags. The registration persists until the caller explicitly changes it with another call to <b>PoRegisterSystemState</b> or cancels it with a call to <a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>.
 
 The <i>Flags</i> parameter specifies the type of activity in progress. Drivers can specify any combination of the flags.
 
@@ -103,20 +103,18 @@ To set the system power state, call <a href="..\wdm\nf-wdm-posetsystemstate.md">
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | ntifs.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<=APC_LEVEL" |
-| **DDI compliance rules** |  |
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
+<a href="..\wdm\nf-wdm-pounregistersystemstate.md">PoUnregisterSystemState</a>
 
-<a href="..\ntifs\nf-ntifs-pounregistersystemstate.md">PoUnregisterSystemState</a>
+<a href="..\wdm\nf-wdm-posetsystemstate.md">PoSetSystemState</a>
 
  
 

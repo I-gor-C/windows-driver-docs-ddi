@@ -8,7 +8,7 @@ old-project : wdf
 ms.assetid : bc34d86b-fa0e-419e-9342-61df12a8e484
 ms.author : windowsdriverdev
 ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2, wudfddi/IWDFIoRequest2::GetCreateParametersEx, GetCreateParametersEx, GetCreateParametersEx method, IWDFIoRequest2 interface, wdf.iwdfiorequest2_getcreateparametersex, IWDFIoRequest2::GetCreateParametersEx, umdf.iwdfiorequest2_getcreateparametersex, GetCreateParametersEx method, IWDFIoRequest2 interface, GetCreateParametersEx method, UMDFRequestObjectRef_02864469-8022-4412-8de9-639dcd0b4f42.xml
+ms.keywords : wdf.iwdfiorequest2_getcreateparametersex, GetCreateParametersEx method, UMDFRequestObjectRef_02864469-8022-4412-8de9-639dcd0b4f42.xml, GetCreateParametersEx method, IWDFIoRequest2 interface, IWDFIoRequest2, IWDFIoRequest2 interface, GetCreateParametersEx method, GetCreateParametersEx, IWDFIoRequest2::GetCreateParametersEx, umdf.iwdfiorequest2_getcreateparametersex, wudfddi/IWDFIoRequest2::GetCreateParametersEx
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : method
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PPOWER_ACTION, POWER_ACTION"
+req.typenames : POWER_ACTION, *PPOWER_ACTION
 req.product : Windows 10 or later.
 ---
 
@@ -100,20 +100,18 @@ For more information, see <a href="https://msdn.microsoft.com/1ba1fdcf-99bd-44e3
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Desktop |
-| **Minimum KMDF version** |  |
+| **End of support** | Unavailable in UMDF 2.0 and later.  |
+| **Target Platform** | Desktop |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | wudfddi.h |
+| **DLL** | WUDFx.dll |
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a>
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559088">IWDFIoRequest::GetCreateParameters</a>
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a>
 
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
 

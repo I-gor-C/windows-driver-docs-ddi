@@ -8,7 +8,7 @@ old-project : usbref
 ms.assetid : 913F96FD-9C51-4A45-86A9-8830E1A395EE
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : UcxUsbDeviceInitSetEventCallbacks method [Buses], buses._ucxusbdeviceinitseteventcallbacks, UcxUsbDeviceInitSetEventCallbacks
+ms.keywords : buses._ucxusbdeviceinitseteventcallbacks, UcxUsbDeviceInitSetEventCallbacks, UcxUsbDeviceInitSetEventCallbacks method [Buses]
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -76,14 +76,12 @@ For a code example, see <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_contr
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Windows |
+| **Windows version** | Windows 10 Windows 10 |
+| **Target Platform** | Windows |
 | **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 2.0 |
 | **Header** | ucxusbdevice.h (include Ucxclass.h) |
-| **Library** |  |
-| **IRQL** |  |
-| **DDI compliance rules** |  |
+| **Library** | NtosKrnl.exe |
 
 ## See Also
 

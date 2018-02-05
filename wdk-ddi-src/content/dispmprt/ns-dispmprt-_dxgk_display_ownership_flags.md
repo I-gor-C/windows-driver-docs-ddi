@@ -8,7 +8,7 @@ old-project : display
 ms.assetid : F5CA04FD-5E2A-4C68-97CF-F3D425A958AA
 ms.author : windowsdriverdev
 ms.date : 12/29/2017
-ms.keywords : "*PDXGK_DISPLAY_OWNERSHIP_FLAGS, DXGK_DISPLAY_OWNERSHIP_FLAGS structure [Display Devices], display.dxgk_display_ownership_flags, _DXGK_DISPLAY_OWNERSHIP_FLAGS, DXGK_DISPLAY_OWNERSHIP_FLAGS, dispmprt/DXGK_DISPLAY_OWNERSHIP_FLAGS, PDXGK_DISPLAY_OWNERSHIP_FLAGS, dispmprt/PDXGK_DISPLAY_OWNERSHIP_FLAGS, PDXGK_DISPLAY_OWNERSHIP_FLAGS structure pointer [Display Devices]"
+ms.keywords : dispmprt/PDXGK_DISPLAY_OWNERSHIP_FLAGS, _DXGK_DISPLAY_OWNERSHIP_FLAGS, DXGK_DISPLAY_OWNERSHIP_FLAGS structure [Display Devices], dispmprt/DXGK_DISPLAY_OWNERSHIP_FLAGS, DXGK_DISPLAY_OWNERSHIP_FLAGS, PDXGK_DISPLAY_OWNERSHIP_FLAGS, PDXGK_DISPLAY_OWNERSHIP_FLAGS structure pointer [Display Devices], *PDXGK_DISPLAY_OWNERSHIP_FLAGS, display.dxgk_display_ownership_flags
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : struct
@@ -35,7 +35,7 @@ apilocation :
 apiname : 
 product : Windows
 targetos : Windows
-req.typenames : "*PDXGK_DISPLAY_OWNERSHIP_FLAGS, DXGK_DISPLAY_OWNERSHIP_FLAGS"
+req.typenames : DXGK_DISPLAY_OWNERSHIP_FLAGS, *PDXGK_DISPLAY_OWNERSHIP_FLAGS
 ---
 
 # _DXGK_DISPLAY_OWNERSHIP_FLAGS structure
@@ -60,7 +60,4 @@ typedef struct _DXGK_DISPLAY_OWNERSHIP_FLAGS {
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
 | **Header** | dispmprt.h |

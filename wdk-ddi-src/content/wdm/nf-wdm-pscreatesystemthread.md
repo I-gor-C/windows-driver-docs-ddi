@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 4f6bfae4-8515-4fc4-aab3-9e16dbeda6da
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : PsCreateSystemThread, k108_858fe76b-471d-42c9-8844-c14ae33bd235.xml, PsCreateSystemThread routine [Kernel-Mode Driver Architecture], kernel.pscreatesystemthread, wdm/PsCreateSystemThread
+ms.keywords : wdm/PsCreateSystemThread, k108_858fe76b-471d-42c9-8844-c14ae33bd235.xml, PsCreateSystemThread, PsCreateSystemThread routine [Kernel-Mode Driver Architecture], kernel.pscreatesystemthread
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -119,12 +119,11 @@ For more information about the <i>StartContext</i> parameter, see <a href="https
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows 2000. Available starting with Windows 2000. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | PASSIVE_LEVEL |
 | **DDI compliance rules** | IrqlPsPassive, HwStorPortProhibitedDDIs |
 
@@ -132,15 +131,15 @@ For more information about the <i>StartContext</i> parameter, see <a href="https
 
 <a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
 
-<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
-
 <a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a>
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564627">ThreadStart</a>
 
 <a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564627">ThreadStart</a>
+
 <a href="..\ntddk\nf-ntddk-zwsetinformationthread.md">ZwSetInformationThread</a>
+
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 
  
 

@@ -8,7 +8,7 @@ old-project : kernel
 ms.assetid : 8e535a6a-9b17-4ef6-b068-43042a589ac0
 ms.author : windowsdriverdev
 ms.date : 1/4/2018
-ms.keywords : IoSetDevicePropertyData, wdm/IoSetDevicePropertyData, kernel.iosetdevicepropertydata, IoSetDevicePropertyData routine [Kernel-Mode Driver Architecture], k104_a7cd308b-4d43-4364-80fb-ae773d0de101.xml
+ms.keywords : IoSetDevicePropertyData routine [Kernel-Mode Driver Architecture], IoSetDevicePropertyData, kernel.iosetdevicepropertydata, wdm/IoSetDevicePropertyData, k104_a7cd308b-4d43-4364-80fb-ae773d0de101.xml
 ms.prod : windows-hardware
 ms.technology : windows-devices
 ms.topic : function
@@ -121,12 +121,11 @@ Callers of <b>IoSetDeviceProperty</b> must be running at IRQL &lt;= APC_LEVEL in
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Windows Driver kit version** |  |
-| **Target platform** | Universal |
-| **Minimum KMDF version** |  |
-| **Minimum UMDF version** |  |
+| **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
+| **Target Platform** | Universal |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
-| **Library** |  |
+| **Library** | NtosKrnl.lib |
+| **DLL** | NtosKrnl.exe |
 | **IRQL** | "<= APC_LEVEL" |
 | **DDI compliance rules** | PowerIrpDDis, HwStorPortProhibitedDDIs |
 
