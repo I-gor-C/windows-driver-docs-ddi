@@ -32,7 +32,8 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows-hardware/drivers/ddi/breadcrumb/toc.json",
-      "extendBreadcrumb": true
+      "extendBreadcrumb": true,
+      "product": "Windows"
     },
     "fileMetadata": {},
     "template": [],
